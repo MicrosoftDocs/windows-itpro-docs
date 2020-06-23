@@ -1,7 +1,7 @@
 ---
 title: Setup the Microsoft Defender ATP for macOS policies in Jamf Pro
 description: Learn how to setup the Microsoft Defender ATP for macOS policies in Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Setup the Microsoft Defender ATP for macOSpolicies in Jamf Pro
+# Setup the Microsoft Defender ATP for macOS policies in Jamf Pro
 
 **Applies to:**
 
@@ -428,8 +428,181 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration settings](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 9. Select **Done**. You'll see the new **Configuration profile**.
-    ![A screenshot of a social media post Description automatically generated](images/633ad26b8bf24ec683c98b2feb884bdf.png)
+    ![Image of configuration setting](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## Step 4: Configure Microsoft AutoUPdate (MAU)
 
 
+1. In the Jamf Pro dashboard, select **General**. 
+
+    ![Image of configuration setting](images/eaba2a23dd34f73bf59e826217ba6f15.png)
+
+
+  - Name: MDATP MDAV MAU settings
+  - Description: Microsoft AutoUpdate settings for MDATP for macOS
+  - Category: None (default)
+  - Distribution Method: Install Automatically(default)
+  - Level: Computer Level(default)
+
+2. In **Application & Custom Settings** select **Configure**.
+
+    ![Image of configuration setting](images/1f72e9c15eaafcabf1504397e99be311.png)
+
+3. Select **Upload File (PLIST file)**.
+
+    ![Image of configuration setting](images/bcd4920afadbc158f8d7de88c11096fb.png)
+
+4. In **Preference Domain** enter: `com.microsoft.autoupdate2`.
+
+    ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)
+
+5. Select **Upload PLIST File**.
+
+    ![Image of configuration setting](images/335aff58950ce62d1dabc289ecdce9ed.png)
+
+6. Select **Choose File** > **MDATP_MDAV_settings.plist**.
+
+    ![Image of configuration setting](images/a26bd4967cd54bb113a2c8d32894c3de.png)
+
+7. Select **Upload**.
+    ![Image of configuration setting](images/4239ca0528efb0734e4ca0b490bfb22d.png)
+
+    ![Image of configuration setting](images/4ec20e72c8aed9a4c16912e01692436a.png)
+
+8. Select **Save**.
+
+    ![Image of configuration setting](images/253274b33e74f3f5b8d475cf8692ce4e.png)
+
+9. Select the **Scope** tab.
+   
+     ![Image of configuration setting](images/10ab98358b2d602f3f67618735fa82fb.png)
+
+10. Select **Add**.
+    
+    ![Image of configuration setting](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
+
+    ![Image of configuration setting](images/38c67ee1905c4747c3b26c8eba57726b.png)
+
+    ![Image of configuration setting](images/321ba245f14743c1d5d51c15e99deecc.png)
+
+11. Select **Done**.
+    
+    ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
+
+## Step 5:  Grant full disk access to Microsoft Defender ATP
+
+1. In the Jamf Pro dashboard, select the **Scope** tab.
+
+    ![Image of configuration setting](images/264493cd01e62c7085659d6fdc26dc91.png)
+
+2. Select **+ New**. 
+
+3. Enter the following details:
+
+    - Name: MDATP MDAV - grnat Full Disk Access to EDR and AV
+    - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control
+    - Category: None
+    - Distribution method: Install Automatically
+    - Level: Computer level
+
+
+    ![Image of configuration setting](images/ba3d40399e1a6d09214ecbb2b341923f.png)
+
+4. In **Application & Custom Settings** select **Configure**.
+
+    ![Image of configuration setting](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
+
+5. In **Privacy Preferences Policy Control**, enter the following details:
+
+    - Identifier: `com.microsoft.wdav`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier `com.microsoft.wdav` and anchor apple generic and
+certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate
+leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate
+leaf[subject.OU] = UBF8T346G9
+
+
+    ![Image of configuration setting](images/22cb439de958101c0a12f3038f905b27.png)
+
+6. Select **+ Add**.
+
+    ![Image of configuration setting](images/bd93e78b74c2660a0541af4690dd9485.png)
+
+
+  - Under App or service: Set to **SystemPolicyAllFiles**
+
+  - Under "access": Set to **Allow**
+
+7. Select **Save** (not the one at the bottom right).
+
+    ![Image of configuration setting](images/6de50b4a897408ddc6ded56a09c09fe2.png)
+
+8. Select the **Scope** tab.
+
+    ![Image of configuration setting](images/2c49b16cd112729b3719724f581e6882.png)
+
+ 9. Select **+ Add**.
+
+    ![Image of configuration setting](images/57cef926d1b9260fb74a5f460cee887a.png)
+
+10. Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**. 
+
+    ![Image of configuration setting](images/368d35b3d6179af92ffdbfd93b226b69.png)
+
+11. Select **Add**. 
+
+12. Select **Save**. 
+    
+13. Select **Done**.
+    
+    ![Image of configuration setting](images/809cef630281b64b8f07f20913b0039b.png)
+    
+    ![Image of configuration setting](images/6c8b406ee224335a8c65d06953dc756e.png)
+
+
+## Step 6: Approve Kernel extension for Microsoft Defender ATP
+
+1. In the **Configuration Profiles**, select **+ New**.
+
+    ![A screenshot of a social media post Description automatically generated](images/6c8b406ee224335a8c65d06953dc756e.png)
+
+2. Enter the following values:
+
+  - Name: MDATP MDAV Kernel Extension
+  - Description: MDATP kernel extension (kext)
+  - Category: None
+  - Distribution Method: Install Automatically
+  - Level: Computer Level
+
+    ![A screenshot of a computer Description automatically generated](images/24e290f5fc309932cf41f3a280d22c14.png)
+
+3. In **Configure Approved Kernel Extensions** select **Configure**.
+
+    ![A screenshot of a cell phone Description automatically generated](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
+
+    ![A screenshot of a cell phone Description automatically generated](images/39cf120d3ac3652292d8d1b6d057bd60.png)
+
+4. In **Approved Kernel Extensions** enter the following values:
+
+  - Display Name: Microsoft Corp.
+  - Team ID: UBF8T346G9
+
+5. Select the **Scope** tab.
+
+    ![A screenshot of a computer Description automatically generated](images/0df36fc308ba569db204ee32db3fb40a.png)
+
+6. Select **+ Add**.
+
+7. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
+
+8. Select **+ Add**.
+
+    ![A screenshot of a computer Description automatically generated](images/0dde8a4c41110dbc398c485433a81359.png)
+
+Select on “Save”
+
+![A screenshot of a cell phone Description automatically generated](images/0add8019b85a453b47fa5c402c72761b.png)
+
+Select on “Done”
+
+![A screenshot of a cell phone Description automatically generated](images/1c9bd3f68db20b80193dac18f33c22d0.png)
