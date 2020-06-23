@@ -18,7 +18,9 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 2004
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. 
+
+To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
 
 > [!NOTE]
 > The month indicator for this release is 04 instead of 03 to avoid confusion with Windows releases in the year 2003.
@@ -120,6 +122,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) enhancements in this release include:
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
+- Update less: Last year, Microsoft [changed our update installation policies](https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/#l2jH7KMkOkfcWdBs.97) to only target devices that are nearing end of service with the latest feature update, resulting in many devices only updating once a year. To enable all devices to make the most of this policy change, and to prevent confusion, we have removed deferrals from the Windows Update settings **Advanced Options** page starting on Windows 10, version 2004. If you wish to continue leveraging deferrals, you can use local Group Policy (**Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Specify when Preview builds and Feature Updates are received or Specify when Quality Updates are received**).  
 
 ## Virtualization
 
