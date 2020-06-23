@@ -300,7 +300,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
 ## Step 2: Configure Microsoft Defender ATP settings
 
-1. In Jamf Pro dashboard, select **General**.
+1. In the Jamf Pro dashboard, select **General**.
 
 2. Enter the following values:
 
@@ -357,22 +357,77 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of configuration settings](images/a422e57fe8d45689227e784443e51bd1.png)
 
-12. Select the **Scope** tab.
-
-13. Select **Add**.
+12. Select the **Scope** tab, then select **Add**.
 
     ![Image of configuration settings](images/9fc17529e5577eefd773c658ec576a7d.png)
 
-14. Select **Computer Groups** next to **Contoso's Machine Group**. 
+13. Select **Contoso's Machine Group**. 
 
-15. Select **Add**, then select **Save**.
+14. Select **Add**, then select **Save**.
 
     ![Image of configuration settings](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
     ![Image of configuration settings](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-16. Select **Done**. You'll see the new **Configuration profile**.
+15. Select **Done**. You'll see the new **Configuration profile**.
 
     ![Image of configuration settings](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
 
+## Step 3: Configure notifications settings
+
+These steps are applicable of macOS 10.15 (Catalina) or newer.
+
+1. In the Jamf Pro dashboard, select **General**. 
+    
+    ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+
+2. Enter the following values:
+
+  - Name: MDATP MDAV Notification settings
+  - Description: macOS 10.15 (Catalina) or newer
+  - Category: None (default)
+  - Distribution Method: Install Automatically(default)
+  - Level: Computer Level(default)
+
+    ![Image of configuration settings](images/abccba0b620cec06b03d219832667fe1.png)
+
+3. In **Application & Custom Settings**, select the radio button **Upload File (PLIST file)**.
+
+    ![Image of configuration settings](images/7f9138053dbcbf928e5182ee7b295ebe.png)
+ 
+
+4. Select **Choose File** > **MDATP_MDAV_Notification_Settings.plist**.
+
+
+    ![Image of configuration settings](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
+
+
+    ![Image of configuration settings](images/20e33b98eb54447881dc6c89e58b890f.png)
+
+5. Select **Open** > **Upload**.
+
+    ![Image of configuration settings](images/7697c33b9fd376ae5a8023d01f9d3857.png)
+
+
+    ![Image of configuration settings](images/2bda9244ec25d1526811da4ea91b1c86.png)
+
+6. Select the **Scope** tab, then select **Add**.
+
+    ![Image of configuration settings](images/441aa2ecd36abadcdd8aed03556080b5.png)
+
+
+
+7. Select **Contoso's Machine Group**. 
+
+8. Select **Add**, then select **Save**.
+    
+    ![Image of configuration settings](images/09a275e321268e5e3ac0c0865d3e2db5.png)
+
+    
+    ![Image of configuration settings](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
+
+9. Select **Done**. You'll see the new **Configuration profile**.
+    ![A screenshot of a social media post Description automatically generated](images/633ad26b8bf24ec683c98b2feb884bdf.png)
+
+## Step 4: 
