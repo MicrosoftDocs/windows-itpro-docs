@@ -126,7 +126,7 @@ Next, validate that the VPN configuration (Win32 app, certs, and any other requi
 For VPN configurations that automatically connect, the validation steps may be different.
 
 > [!NOTE]
-> Always On VPN can be used for this scenario.  See the [Deploy Always On VPN](https://docs.microsoft.com/en-us/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment) documentation for more information.  Note that Intune cannot yet deploy the needed per-machine VPN profile. 
+> Always On VPN can be used for this scenario.  See the [Deploy Always On VPN](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment) documentation for more information.  Note that Intune cannot yet deploy the needed per-machine VPN profile. 
 
 To validate the end-to-end process, ensure the needed Windows 10 cumulative update has been installed on Windows 10 1903 or Windows 10 1909. This can be done manually during OOBE by first downloading the latest cumulative from https://catalog.update.microsoft.com and then manually installing it:
 
