@@ -47,7 +47,7 @@ For more information on the available join options, see the following sections:
 
 - [Azure Active Directory join](#user-driven-mode-for-azure-active-directory-join) is available if devices do not need to be joined to an on-prem Active Directory domain.
 - [Hybrid Azure Active Directory join](#user-driven-mode-for-hybrid-azure-active-directory-join) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain.
-- [Hybrid Azure Active Directory join with VPN support](#user-driven-mode-for-hybrid-azure-active-directory-join-with-VPN-support) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain, but are not connected to the corporate network and must use VPN connectivity.
+- [Hybrid Azure Active Directory join with VPN support](#user-driven-mode-for-hybrid-azure-active-directory-join-with-vpn-support) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain, but are not connected to the corporate network and must use VPN connectivity.
 
 ## User-driven mode for Azure Active Directory join
 
@@ -126,9 +126,9 @@ Next, validate that the VPN configuration (Win32 app, certs, and any other requi
 For VPN configurations that automatically connect, the validation steps may be different.
 
 > [!NOTE]
-> Always On VPN can be used for this scenario.  See the [Deploy Always On VPN](https://docs.microsoft.com/en-us/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment) documentation for more information.  Note that Intune cannot yet deploy the needed per-machine VPN profile. 
+> Always On VPN can be used for this scenario.  See the [Deploy Always On VPN](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment) documentation for more information.  Note that Intune cannot yet deploy the needed per-machine VPN profile. 
 
-To validate the end-to-end process, ensure the needed Windows 10 cumulative update has been installed on Windows 10 1903 or Windows 10 1909.  This can be done manually during OOBE by first downloading the latest cumulative from http://catalog.update.microsoft.com and then manually installing it:
+To validate the end-to-end process, ensure the needed Windows 10 cumulative update has been installed on Windows 10 1903 or Windows 10 1909. This can be done manually during OOBE by first downloading the latest cumulative from https://catalog.update.microsoft.com and then manually installing it:
 
 - Press Shift-F10 to open a command prompt.
 - Insert a USB key containing the donwloaded update.
