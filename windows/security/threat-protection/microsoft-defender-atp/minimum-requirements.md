@@ -93,6 +93,10 @@ The hardware requirements for Microsoft Defender ATP on machines is the same as 
 
 > [!NOTE]
 > Machines running mobile versions of Windows are not supported.
+>
+> Virtual Machines running Windows 10 Enterprise 2016 LTSC (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
+>
+> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 (which is based on Windows 10, version 1809) or later.
 
 
 ### Other supported operating systems

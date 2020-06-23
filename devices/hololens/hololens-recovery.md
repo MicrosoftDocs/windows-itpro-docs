@@ -49,11 +49,11 @@ Under certain circumstances the customer may be required to manually reset the d
 ### Standard procedure
 1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable.
 
-2. Press and hold the power button for 15 seconds. All LEDs should be off.
+2. Press and hold the **power button** for 15 seconds. All LEDs should be off.
 
-3. Wait 2-3 seconds and Short press the power button, the LEDs close to the power button will light up and the device will start to boot. 
+3. Wait 2-3 seconds and Short press the **power button**, the LEDs close to the power button will light up and the device will start to boot. 
 
-4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below:
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the **“Windows” key** and then the **“x” key** and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below:
 
 ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
@@ -63,13 +63,13 @@ If the standard reset procedure does not work, you can use the hard-reset proced
 
 1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable.
 
-2. Hold volume down + power for 15 seconds.
+2. Hold **volume down + power button** for 15 seconds.
 
 3. The device will automatically reboot. 
 
-4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below.
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the **“Windows” key** and then the **“x” key** and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the pictures below.
 
-![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Clean reflash the device
 
@@ -97,11 +97,11 @@ If the device does not boot correctly you may need to put the HoloLens 2 device 
 
 1. Disconnect the device from the power supply or the host PC by unplugging the Type-C cable. 
 
-2. Press and hold the power button for 15 seconds. All LEDs should turn off. 
+2. Press and hold the **power button** for 15 seconds. All LEDs should turn off. 
 
-3. While pressing the volume up button, press and release the power button to boot the device. Wait 10 seconds before releasing the volume up button. Out of the 5 LEDs on the device, only the middle LED will light up.
+3. While pressing the **volume up button**, press and release the **power button** to boot the device. Wait 15 seconds before releasing the volume up button. Out of the 5 LEDs on the device, only the middle LED will light up.
 
-4. Connect the device to the host PC, open Device Manager (for Windows 10 press the “Windows” key and then the “x” key and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the image below.
+4. Connect the device to the host PC, open Device Manager (for Windows 10 press the **“Windows” key** and then the **“x” key** and click on “Device Manager”) and make sure the device enumerates correctly as Microsoft HoloLens as shown in the image below.
 
 ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
