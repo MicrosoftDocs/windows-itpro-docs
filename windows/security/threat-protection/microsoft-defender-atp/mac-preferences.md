@@ -277,6 +277,16 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+#### Enable / disable automatic security intelligence updates
+
+Determines whether security intelligence updates are installed automatically:
+
+|||
+|:---|:---|
+| **Key** | automaticDefinitionUpdateEnabled |
+| **Data type** | Boolean |
+| **Possible values** | true (default) <br/> false |
+
 ### User interface preferences
 
 Manage the preferences for the user interface of Microsoft Defender ATP for Mac.
@@ -358,6 +368,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
   - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender ATP logs
+- Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
@@ -393,6 +404,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
         <key>enabled</key>
         <true/>
         <key>automaticSampleSubmission</key>
+        <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
         <true/>
     </dict>
 </dict>
@@ -470,6 +483,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
                     <key>enabled</key>
                     <true/>
                     <key>automaticSampleSubmission</key>
+                    <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
                 </dict>
             </dict>
@@ -562,6 +577,8 @@ The following templates contain entries for all settings described in this docum
         <key>diagnosticLevel</key>
         <string>optional</string>
         <key>automaticSampleSubmission</key>
+        <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
         <true/>
     </dict>
     <key>edr</key>
@@ -700,6 +717,8 @@ The following templates contain entries for all settings described in this docum
                     <key>diagnosticLevel</key>
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
+                    <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
                 </dict>
                 <key>edr</key>
