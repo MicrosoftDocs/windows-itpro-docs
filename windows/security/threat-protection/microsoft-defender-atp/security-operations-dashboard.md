@@ -66,7 +66,7 @@ This tile shows you a list of devices with the highest number of active alerts. 
 
 Click the name of the device to see details about that device. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
-You can also click **Machines list** at the top of the tile to go directly to the **Machines list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
+You can also click **Devices list** at the top of the tile to go directly to the **Devices list**, sorted by the number of active alerts. For more information see, [Investigate devices in the Microsoft Defender Advanced Threat Protection Devices list](investigate-machines.md).
 
 ## Devices with sensor issues
 The **Devices with sensor issues** tile provides information on the individual device’s ability to provide sensor data to the Microsoft Defender ATP service. It reports how many devices require attention and helps you identify problematic devices.
