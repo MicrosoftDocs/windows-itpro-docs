@@ -574,13 +574,13 @@ leaf[subject.OU] = UBF8T346G9
   - Distribution Method: Install Automatically
   - Level: Computer Level
 
-    ![A screenshot of a computer Description automatically generated](images/24e290f5fc309932cf41f3a280d22c14.png)
+    ![Image of configuration settings](images/24e290f5fc309932cf41f3a280d22c14.png)
 
 3. In **Configure Approved Kernel Extensions** select **Configure**.
 
-    ![A screenshot of a cell phone Description automatically generated](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
+    ![Image of configuration settings](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-    ![A screenshot of a cell phone Description automatically generated](images/39cf120d3ac3652292d8d1b6d057bd60.png)
+    ![Image of configuration settings](images/39cf120d3ac3652292d8d1b6d057bd60.png)
 
 4. In **Approved Kernel Extensions** enter the following values:
 
@@ -589,7 +589,7 @@ leaf[subject.OU] = UBF8T346G9
 
 5. Select the **Scope** tab.
 
-    ![A screenshot of a computer Description automatically generated](images/0df36fc308ba569db204ee32db3fb40a.png)
+    ![Image of configuration settings](images/0df36fc308ba569db204ee32db3fb40a.png)
 
 6. Select **+ Add**.
 
@@ -597,12 +597,131 @@ leaf[subject.OU] = UBF8T346G9
 
 8. Select **+ Add**.
 
-    ![A screenshot of a computer Description automatically generated](images/0dde8a4c41110dbc398c485433a81359.png)
+    ![Image of configuration settings](images/0dde8a4c41110dbc398c485433a81359.png)
 
-Select on “Save”
+9. Select **Save**.
 
-![A screenshot of a cell phone Description automatically generated](images/0add8019b85a453b47fa5c402c72761b.png)
+    ![Image of configuration settings](images/0add8019b85a453b47fa5c402c72761b.png)
 
-Select on “Done”
+10. Select **Done**.
 
-![A screenshot of a cell phone Description automatically generated](images/1c9bd3f68db20b80193dac18f33c22d0.png)
+    ![Image of configuration settings](images/1c9bd3f68db20b80193dac18f33c22d0.png)
+
+
+## Step 7: Deploy Microsoft Defender ATP for macOS
+
+1. Navigate to where you saved `wdav.pkg`.
+
+    ![A screenshot of a computer screen Description automatically generated](images/8dde76b5463047423f8637c86b05c29d.png)
+
+2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
+
+    ![A screenshot of a computer screen Description automatically generated](images/fb2220fed3a530f4b3ef36f600da0c27.png)
+
+3. Open the Jamf Pro dashboard.
+
+    ![Image of configuration settings](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
+
+4. Navigate to **Advanced Computer Searches**.
+    
+    ![A screenshot of a social media post Description automatically generated](images/95313facfdd5e1ea361981e0a2478fec.png)
+
+5. Select **Computer Management**. 
+
+    ![Image of configuration settings](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
+
+6. In **Packages**, select **+ New**. 
+    ![A picture containing bird Description automatically generated](images/57aa4d21e2ccc65466bf284701d4e961.png)
+
+    ![Image of configuration settings](images/21de3658bf58b1b767a17358a3f06341.png)
+
+7. In **New Package** enter the following values:
+
+    **General tab**
+    - Display Name: Leave it blank for now. Because it will be reset when you choose your pkg.
+    - Category: None (default)
+    - Filename: Choose File
+
+    Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.
+
+    Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**
+
+    - Manifest File: Select **Upload Manifest File**. 
+
+    **Options tab** 
+    Keep default values.
+
+    **Limitations tab** 
+    Keep default values.
+
+
+8. Select **Save**. 
+
+    ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
+
+    ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
+
+    ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
+
+    ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
+
+![Image of configuration settings](images/846ca6a7a4be5be7111744091d539cba.png)
+
+![Image of configuration settings](images/77d14ea36bea97c4607af0f70c88b812.png)
+
+![Image of configuration settings](images/770827925b3f572fc027e7d50dcc415d.png)
+
+![Image of configuration settings](images/9f09cc4cd841559dd389fba7dc57e5e0.png)
+
+![A screenshot of a social media post Description automatically generated](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
+
+![A screenshot of a social media post Description automatically generated](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+
+![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
+
+
+9. In **New Policy** > **General** enter the following values:
+
+    - Display name: MDATP Onboarding Contoso 200329 v100.86.92
+
+    ![Image of configuration settings](images/625ba6d19e8597f05e4907298a454d28.png)
+
+    
+
+10. Select **Recurring Check-in**. 
+    
+    ![Image of configuration settings](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
+
+   
+11. Select **Save**. 
+ 
+12. Select **Configure**.
+ 
+    ![Image of configuration settings](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
+
+    ![Image of configuration settings](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+ 
+    ![Image of configuration settings](images/9d6e5386e652e00715ff348af72671c6.png)
+   
+    ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
+
+13. In **New Policy**, enter the following values:
+
+    **Options**
+    - Select **Install**.
+    ![A screenshot of a computer screen Description automatically generated](images/6eda18a64a660fa149575454e54e7156.png)
+
+    **Scope**
+    - Select **Add**.
+    ![A screenshot of a computer screen Description automatically generated](images/1c08d097829863778d562c10c5f92b67.png)
+
+    **Self Service** 
+    ![Image of configuration settings](images/216253cbfb6ae738b9f13496b9c799fd.png)
+
+
+    ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
+
+14. Select **Done**. 
+    ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
+
+    ![A screenshot of a social media post Description automatically generated](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
