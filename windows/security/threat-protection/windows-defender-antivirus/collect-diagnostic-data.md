@@ -38,7 +38,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 2. Navigate to the Microsoft Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> If you're running an updated Microsoft Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+> If you're running an [updated Microsoft Defender Platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Type the following command, and then press **Enter**  
 
