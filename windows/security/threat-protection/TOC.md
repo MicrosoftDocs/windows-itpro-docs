@@ -248,6 +248,18 @@
 #### [Privacy](microsoft-defender-atp/linux-privacy.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
+
+### [Microsoft Defender Advanced Threat Protection for Android]()
+#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp/microsoft-defender-atp-android.md)
+
+#### [Deploy]()
+##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](microsoft-defender-atp/android-intune.md)
+
+#### [Configure]()
+##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
+
+
+
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ## [Security operations]()
