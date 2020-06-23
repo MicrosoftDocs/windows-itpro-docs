@@ -96,9 +96,8 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 > [!NOTE]
 > Customers with Premier Support subscription mapped to their Office 365 license can track the status of their Experts on Demand cases through Microsoft Services Hub. Watch this video for a quick overview of the Microsoft Services Hub.
-<BR></BR>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f] 
-<BR></BR>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f] 
+
    
 ## Sample investigation topics that you can consult with Microsoft Threat Experts
 
