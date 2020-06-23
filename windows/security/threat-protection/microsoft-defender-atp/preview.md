@@ -36,7 +36,7 @@ For more information on new capabilities that are generally available, see [What
 
 ## Turn on preview features
 
-You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
+You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
@@ -47,6 +47,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 
 The following features are included in the preview release:
+- [Microsoft Defender ATP for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, and use Microsoft Defender ATP for Android.
 
 - [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
 
