@@ -50,7 +50,9 @@ Note: [Application Guard for Office](https://support.office.com/article/applicat
 
 ### Windows Setup
 
-Improvements in Windows Setup with this release include:
+Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language ](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
+
+Improvements in Windows Setup with this release also include:
 - Reduced offline time during feature updates
 - Improved controls for reserved storage
 - Improved controls and diagnostics
@@ -86,7 +88,7 @@ For information about what's new in the ADK, see [What's new in the Windows ADK 
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  This issue is currently under investigation.
+MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  There is an [update available](https://support.microsoft.com/help/4564442/windows-10-deployments-fail-with-microsoft-deployment-toolkit) for MDT to address this issue.
 
 For the latest information about MDT, see the [MDT release notes](https://docs.microsoft.com/mem/configmgr/mdt/release-notes).
 
