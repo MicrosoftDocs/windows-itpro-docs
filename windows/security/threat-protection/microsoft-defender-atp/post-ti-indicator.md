@@ -29,7 +29,7 @@ Submits or Updates new [Indicator](ti-indicator.md) entity.
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
-2. There is a limit of 5,000 active indicators per tenant. 
+2. There is a limit of 15,000 active indicators per tenant. 
 
 
 ## Permissions

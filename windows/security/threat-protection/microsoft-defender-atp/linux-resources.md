@@ -110,3 +110,12 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
+
+### Known issues
+
+- Logged on users do not appear in the Microsoft Defender Security Center portal.
+- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
+
+    ```bash
+    $ sudo SUSEConnect --status-text
+    ```

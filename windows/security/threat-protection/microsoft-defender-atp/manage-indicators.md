@@ -148,7 +148,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 5. Review the details in the Summary tab, then click **Save**.
 
-## Create indicators for certificates (preview)
+## Create indicators for certificates
 
 You can create indicators for certificates. Some common use cases include:
 
