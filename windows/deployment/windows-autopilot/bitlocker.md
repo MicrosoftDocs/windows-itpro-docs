@@ -23,9 +23,9 @@ ms.topic: article
 
 -   Windows 10
 
-With Windows Autopilot, you can configure the BitLocker encryption settings to be applied before automatic encryption is started. This ensures that the default encrytion algorithm is not applied automatically when this is not the desired setting. Other BitLocker policies that must be applied prior to encryption can also be delivered before automatic BitLocker encryption begins. 
+With Windows Autopilot, you can configure the BitLocker encryption settings to be applied before automatic encryption is started. This ensures that the default encryption algorithm isn't applied automatically when this is not the desired setting. Other BitLocker policies that must be applied prior to encryption can also be delivered before automatic BitLocker encryption begins. 
 
-The BitLocker encryption algorithm is used when BitLocker is first enabled, and sets the strength to which full volume encryption should occur. Available encryption algorithms are: AES-CBC 128-bit, AES-CBC 256-bit, XTS-AES 128-bit or XTS-AES 256-bit encryption. The default value is XTS-AES 128-bit encryption. See [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) for information about the recommended encryption algorithms to use.
+The BitLocker encryption algorithm is used when BitLocker is first enabled, and sets the strength to which full volume encryption should occur. Available encryption algorithms are: AES-CBC 128-bit, AES-CBC 256-bit, XTS-AES 128-bit, or XTS-AES 256-bit encryption. The default value is XTS-AES 128-bit encryption. See [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) for information about the recommended encryption algorithms to use.
 
 To ensure the desired BitLocker encryption algorithm is set before automatic encryption occurs for Autopilot devices:
 
@@ -39,11 +39,11 @@ An example of Microsoft Intune Windows Encryption settings is shown below.
 
    ![BitLocker encryption settings](images/bitlocker-encryption.png)
 
-Note that a device which is encrypted automatically will need to be decrypted prior to changing the encryption algorithm.
+**Note**: A device that is encrypted automatically will need to be decrypted prior to changing the encryption algorithm.
 
 The settings are available under Device Configuration -> Profiles -> Create profile -> Platform = Windows 10 and later, Profile type = Endpoint protection -> Configure -> Windows Encryption -> BitLocker base settings, Configure encryption methods = Enable.
 
-Note: It is also recommended to set Windows Encryption -> Windows Settings -> Encrypt = **Require**.
+**Note**: It is also recommended to set Windows Encryption -> Windows Settings -> Encrypt = **Require**.
 
 ## Requirements
 
@@ -51,4 +51,4 @@ Windows 10, version 1809 or later.
 
 ## See also
 
-[Bitlocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+[BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
