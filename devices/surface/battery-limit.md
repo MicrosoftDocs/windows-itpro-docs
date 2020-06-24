@@ -25,7 +25,7 @@ Setting the device on Battery Limit changes the protocol for charging the device
 
 ## Supported devices
 The Battery Limit UEFI setting is built into the latest Surface devices including Surface Pro 7 and Surface Laptop 3. Earlier devices require a
- [Surface UEFI firmware update](update.md), available through Windows Update or via the MSI driver and firmware packages on the [Surface Support site](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface). Check [Enable "Battery Limit" for Surface devices that have to be plugged in for extended periods of time](https://support.microsoft.com/help/4464941) for the specific Surface UEFI version required for each supported device. 
+ [Surface UEFI firmware update](manage-surface-driver-and-firmware-updates.md), available through Windows Update or via the MSI driver and firmware packages on the [Surface Support site](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface). Check [Enable "Battery Limit" for Surface devices that have to be plugged in for extended periods of time](https://support.microsoft.com/help/4464941) for the specific Surface UEFI version required for each supported device. 
 
 ## Enabling Battery Limit in Surface UEFI (Surface Pro 4 and later)
 

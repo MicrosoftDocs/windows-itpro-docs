@@ -9,7 +9,6 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/04/2019
 ms.localizationpriority: Medium
 ---
 
@@ -19,7 +18,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 1 - Training overview
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Jud>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
 - Welcome and introduction
 - Training overview and agenda
@@ -31,7 +30,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 2 - Getting started with Surface Hub
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Ejt>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
 - What is Surface Hub?
 - Technical overview
@@ -42,7 +41,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 3 - Navigating Surface Hub
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46OFW>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
 - Welcome screen
 - Start menu
@@ -54,7 +53,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 4 - Whiteboarding and collaboration
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4v>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
 - Whiteboard introduction
 - Starting the Whiteboard
@@ -66,7 +65,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
  
 ## Chapter 5 - Exploring Surface Hub apps
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Ejz>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
 - Surface Hub apps introduction
 - PowerPoint overview
@@ -76,7 +75,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 6 - Advanced apps and Office 365
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46EjA>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
 - Advanced apps introduction
 - Microsoft Maps
@@ -88,7 +87,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 7 - Connecting devices
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4w>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
 - Connect introduction
 - Miracast overview
@@ -99,7 +98,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
  
 ## Chapter 8 - Skype for Business meetings
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4x>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
 - Introduction to Skype for Business
 -Scheduling Skype for Business meetings
@@ -111,7 +110,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 	
 ## Chapter 9 - Microsoft Teams meetings
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46OFZ>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
 - Introduction to Microsoft Teams
 - Scheduling Microsoft Teams meetings
@@ -124,7 +123,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter 10 - Basic troubleshooting
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46z65>]<br>
+> [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 
 - Introduction to Surface Hub troubleshooting
 - Application troubleshooting

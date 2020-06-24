@@ -85,9 +85,9 @@ One way in which developing for HoloLens differs from developing for Desktop is 
 
 ## Frequently asked questions
 
-### Is Windows Hello for Business supported on HoloLens?
+### Is Windows Hello for Business supported on HoloLens (1st Gen)?
 
-Windows Hello for Business (which supports using a PIN to sign in) is supported for HoloLens. To allow Windows Hello for Business PIN sign-in on HoloLens:
+Windows Hello for Business (which supports using a PIN to sign in) is supported for HoloLens (1st Gen). To allow Windows Hello for Business PIN sign-in on HoloLens:
 
 1. The HoloLens device must be [managed by MDM](hololens-enroll-mdm.md).
 1. You must enable Windows Hello for Business for the device. ([See instructions for Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
@@ -96,13 +96,19 @@ Windows Hello for Business (which supports using a PIN to sign in) is supported 
 > [!NOTE]
 > Users who sign in by using a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
-#### Does the type of account change the sign-in behavior?
+### How is Iris biometric authentication implemented on HoloLens 2?
 
-Yes, the behavior for the type of account affects the sign-in behavior. If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
+HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves biometrics security FAR of 1/100K.
 
-- **Microsoft account**: signs in automatically
-- **Local account**: always asks for password, not configurable in **Settings**
-- **Azure AD**: asks for password by default, and configurable by **Settings** to no longer ask for password.
+You can learn more about biometric requirements and specifications for Windows Hello [here](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+
+### How does the type of account affect sign-in behavior?
+
+If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
+
+- **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
+- **Microsoft account**: lock behavior is different allowing automatic unlock, however sign in authentication is still required on reboot.
+- **Local account**: always asks for authentication in the form of a password, not configurable in **Settings**
 
 > [!NOTE]
 > Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is only respected when the device goes into StandBy.

@@ -399,7 +399,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ## Related topics
 
-- [Attack surface reduction FAQ](attack-surface-reduction.md)
+- [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
 
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 
