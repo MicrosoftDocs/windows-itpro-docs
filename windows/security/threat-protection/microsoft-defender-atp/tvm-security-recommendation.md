@@ -33,7 +33,7 @@ Each security recommendation includes an actionable remediation recommendation w
 
 ## How it works
 
-Each machine in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
+Each device in the organization is scored based on three important factors to help customers to focus on the right things at the right time.
 
 - **Threat** - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations shows the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports.
 
@@ -51,7 +51,7 @@ Access the Security recommendations page a few different ways:
 View related security recommendations in the following places:
 
 - Software page
-- Machine page
+- Device page
 
 ### Navigation menu
 
@@ -67,15 +67,18 @@ The top security recommendations lists the improvement opportunities prioritized
 
 ## Security recommendations overview
 
-View recommendations, the number of weaknesses found, related components, threat insights, number of exposed machines, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
+View recommendations, the number of weaknesses found, related components, threat insights, number of exposed devices, status, remediation type, remediation activities, impact to your exposure and configuration scores, and associated tags.
 
-The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the number of exposed machines, the color of the graph will change into green.
+The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
 
-Useful icons also quickly calls your attention to: <ul><li> ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts</li><li>![red bug](images/tvm_bug_icon.png) associated public exploits</li><li>![light bulb](images/tvm_insight_icon.png) recommendation insights</li></ul><br>
+Useful icons also quickly calls your attention to:  
+- ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
+- ![red bug](images/tvm_bug_icon.png) associated public exploits
+- ![light bulb](images/tvm_insight_icon.png) recommendation insights
 
 ### Investigate
 
@@ -85,14 +88,14 @@ Select the security recommendation that you want to investigate or process.
 
 From the flyout, you can do any of the following:
 
-- **Open software page** - Open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, software or software version end-of-support, and charts of the exposure trend over time.
+- **Open software page** - Open the software page to get more context on the software and how it is distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
 - **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
 - **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet.
 
 >[!NOTE]
->When a change is made on a machine, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
+>When a change is made on a device, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
 
 ## Request remediation
 
@@ -108,7 +111,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 
 1. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
-2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within Threat & Vulnerability Management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to machines.
+2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within Threat & Vulnerability Management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
 
 3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
 
@@ -117,7 +120,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
->If your request involves remediating more than 10,000 machines, we can only send 10,000 machines for remediation to Intune.
+>If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
 
 ## File for exception
 
@@ -136,7 +139,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
     The following list details the justifications behind the exception options:
 
-    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
+    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a device, third party antivirus
     - **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow
     - **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
     - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
@@ -154,7 +157,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 2. Select the three dots beside the security recommendation that you want to report,  then select **Report inaccuracy**.
 
-![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
+    ![Showing where the "Report inaccuracy" button is in a security recommendation flyout.](images/report-inaccuracy500.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
 

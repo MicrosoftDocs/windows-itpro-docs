@@ -15,9 +15,11 @@ ms.topic: conceptual
 ---
 # Security intelligence
 
-Here you will find information about different types of malware, safety tips on how you can protect your organization, and resources for industry collaboration programs
+Here you will find information about different types of malware, safety tips on how you can protect your organization, and resources for industry collaboration programs.
 
 * [Understand malware & other threats](understanding-malware.md)
+* [Prevent malware infection](prevent-malware-infection.md)
+* [Malware naming convention](malware-naming.md)
 * [How Microsoft identifies malware and PUA](criteria.md)
 * [Submit files for analysis](submission-guide.md)
 * [Safety Scanner download](safety-scanner-download.md)

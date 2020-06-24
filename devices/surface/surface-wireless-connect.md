@@ -7,7 +7,7 @@ ms.sitesec: library
 author: coveminer
 ms.audience: itpro
 ms.localizationpriority: medium
-ms.author: v-jokai
+ms.author: greglin
 ms.topic: article
 ms.reviewer: tokatz
 manager: laurawi

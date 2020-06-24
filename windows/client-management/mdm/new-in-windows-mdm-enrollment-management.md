@@ -24,6 +24,7 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
+  - [What’s new in MDM for Windows 10, version 2004](#whats-new-in-mdm-for-windows-10-version-2004)
   - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
@@ -43,8 +44,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Server-initiated unenrollment failure](#server-initiated-unenrollment-failure)
   - [Certificates causing issues with Wi-Fi and VPN](#certificates-causing-issues-with-wi-fi-and-vpn)
   - [Version information for mobile devices](#version-information-for-mobile-devices)
-  - [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#upgrading-windows-phone-81-devices-with-app-whitelisting-using-applicationrestriction-policy-has-issues)
-  - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
+    - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
   - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#multiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
@@ -58,6 +58,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [June 2020](#june-2020)
+    - [May 2020](#may-2020)
     - [February 2020](#february-2020)
     - [January 2020](#january-2020)
     - [November 2019](#november-2019)
@@ -86,6 +88,58 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
+
+## What’s new in MDM for Windows 10, version 2004
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall" data-raw-source="[ApplicationManagement/BlockNonAdminUserInstall](policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall)">ApplicationManagement/BlockNonAdminUserInstall</a></li>
+<li><a href="policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize" data-raw-source="[Bluetooth/SetMinimumEncryptionKeySize](policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize)">Bluetooth/SetMinimumEncryptionKeySize</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource" data-raw-source="[DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource)">DeliveryOptimization/DOCacheHostSource</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth)">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth)">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a></li>
+<li><a href="policy-csp-education.md#education-allowgraphingcalculator" data-raw-source="[Education/AllowGraphingCalculator](policy-csp-education.md#education-allowgraphingcalculator)">Education/AllowGraphingCalculator</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configurejapaneseimeversion" data-raw-source="[TextInput/ConfigureJapaneseIMEVersion](policy-csp-textinput.md#textinput-configurejapaneseimeversion)">TextInput/ConfigureJapaneseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion" data-raw-source="[TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)">TextInput/ConfigureSimplifiedChineseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion" data-raw-source="[TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)">TextInput/ConfigureTraditionalChineseIMEVersion</a></li></ul>
+
+<p>Updated the following policy in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" data-raw-source="[DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)">DeliveryOptimization/DOCacheHost</a></li></ul>
+
+<p>Deprecated the following policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth)">DeliveryOptimization/DOMaxDownloadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxUploadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth)">DeliveryOptimization/DOMaxUploadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a></li></ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>Ext/Microsoft/DNSComputerName</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>IsStub</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="supl-csp.md" data-raw-source="[SUPL CSP](supl-csp.md)">SUPL CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>FullVersion</p>
+</td></tr>
+</tbody>
+</table>
 
 ## What’s new in MDM for Windows 10, version 1909
 <table class="mx-tdBreakAll">
@@ -429,6 +483,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>TextInput/TouchKeyboardSplitModeAvailability</li>
 <li>TextInput/TouchKeyboardWideModeAvailability</li>
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>Update/TargetReleaseVersion</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li>
@@ -709,6 +764,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
 <li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
@@ -1690,7 +1746,7 @@ Currently in Windows 10, version 1511, when using the ClientCertificateInstall
 
 The software version information from **DevDetail/SwV** does not match the version in **Settings** under **System/About**.
 
-### Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
+### Upgrading Windows Phone 8.1 devices with app allow-listing using ApplicationRestriction policy has issues
 
 -   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
 
@@ -1937,6 +1993,18 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### June 2020
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added SKU support table for **AllowStandardUserEncryption**.|
+|[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description from Boolean to Integer for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative.|
+
+### May 2020
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
+|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with additional details. Added policy timeline table. 
+
 
 ### February 2020
 |New or updated topic | Description|
@@ -2563,6 +2631,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
@@ -2876,7 +2945,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#whitelist-examples" data-raw-source="[Whitelist examples](applocker-csp.md#whitelist-examples)">Whitelist examples</a>.</p>
+<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#allow-list-examples" data-raw-source="[Allowlist examples](applocker-csp.md#allow-list-examples)">Allow list examples</a>.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>

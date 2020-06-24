@@ -40,7 +40,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have 'View Data' AD role
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

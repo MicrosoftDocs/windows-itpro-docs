@@ -27,18 +27,18 @@ ms.topic: conceptual
 Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
-- Invaluable machine vulnerability context during incident investigations
+- Invaluable device vulnerability context during incident investigations
 - Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager  
   
 You can use the Threat & Vulnerability Management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 
-- View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
+- View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices
 - Correlate EDR insights with endpoint vulnerabilities and process them
 - Select remediation options, triage and track the remediation tasks
 - Select exception options and track active exceptions
 
 > [!NOTE]
-> Machines that are not active in the last 30 days are not factored in on the data that reflects your organization's Threat & Vulnerability Management exposure score and configuration score.
+> Devices that are not active in the last 30 days are not factored in on the data that reflects your organization's Threat & Vulnerability Management exposure score and configuration score.
 
 Watch this video for a quick overview of what is in the Threat & Vulnerability Management dashboard.
 
@@ -62,24 +62,24 @@ You can navigate through the portal using the menu options available in all sect
 
 Area | Description
 :---|:---
-**Dashboard**   | Get a high-level view of the organization exposure score, organization configuration score, machine exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed machines data.
-[**Security recommendations**](tvm-remediation.md) | See the list of security recommendations, their related components, whether software or software versions in your network have reached end-of-support, insights, number or exposed devices, impact, and request for remediation. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your machines are joined through Azure Active Directory and you have enabled your Intune connections in Microsoft Defender ATP.
+**Dashboard**   | Get a high-level view of the organization exposure score, organization configuration score, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed devices data.
+[**Security recommendations**](tvm-remediation.md) | See the list of security recommendations, their related components, whether software or software versions in your network have reached end-of-support, insights, number or exposed devices, impact, and request for remediation. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you have enabled your Intune connections in Microsoft Defender ATP.
 [**Remediation**](tvm-remediation.md) | See the remediation activity, related component, remediation type, status, due date, option to export the remediation and process data to CSV, and active exceptions.
-[**Software inventory**](tvm-software-inventory.md) | See the list of software, versions, weaknesses, whether there's an exploit found on the software, whether the software or software version has reached end-of-support, prevalence in the organization, how many were installed, how many exposed devices there are, and the numerical value of the impact. You can select each item in the list and opt to open the software page which shows the associated vulnerabilities, misconfigurations, affected machine, version distribution details, and missing KBs or security updates.
-[**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures, the severity, the common vulnerability scoring system (CVSS) V3 score, related software, age, when it was published, related threat alerts, and how many exposed machines there are. You can select each item in the list to see a flyout panel with the vulnerability description and other details.
+[**Software inventory**](tvm-software-inventory.md) | See the list of software, versions, weaknesses, whether there's an exploit found on the software, whether the software or software version has reached end-of-support, prevalence in the organization, how many were installed, how many exposed devices there are, and the numerical value of the impact. You can select each item in the list and opt to open the software page which shows the associated vulnerabilities, misconfigurations, affected device, version distribution details, and missing KBs or security updates.
+[**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures, the severity, the common vulnerability scoring system (CVSS) V3 score, related software, age, when it was published, related threat alerts, and how many exposed devices there are. You can select each item in the list to see a flyout panel with the vulnerability description and other details.
 
 ## Threat & Vulnerability Management dashboard
 
 Area | Description
 :---|:---
-**Selected machine groups (#/#)**   | Filter the Threat & Vulnerability Management data you want to see in the dashboard and cards by machine groups. What you select in the filter applies throughout the Threat & Vulnerability management pages.
+**Selected device groups (#/#)**   | Filter the Threat & Vulnerability Management data you want to see in the dashboard and cards by device groups. What you select in the filter applies throughout the Threat & Vulnerability management pages.
 [**Exposure score**](tvm-exposure-score.md)   | See the current state of your organization's device exposure to threats and vulnerabilities. Several factors affect your organization's exposure score: weaknesses discovered in your devices, likelihood of your devices to be breached, value of the devices to your organization, and relevant alerts discovered with your devices. The goal is to lower the exposure score of your organization to be more secure. To reduce the score, you need to remediate the related security configuration issues listed in the security recommendations.
 [**Configuration score**](configuration-score.md) | See the security posture of the operating system, applications, network, accounts and security controls of your organization. The goal is to remediate the related security configuration issues to increase your configuration score. Selecting the bars will take you to the **Security recommendation** page.
-**Machine exposure distribution** | See how many machines are exposed based on their exposure level. Select a section in the doughnut chart to go to the **Machines list** page and view the affected machine names, exposure level, risk level, and other details such as domain, operating system platform, its health state, when it was last seen, and its tags.
+**Device exposure distribution** | See how many devices are exposed based on their exposure level. Select a section in the doughnut chart to go to the **Devices list** page and view the affected device names, exposure level, risk level, and other details such as domain, operating system platform, its health state, when it was last seen, and its tags.
 **Top security recommendations** | See the collated security recommendations which are sorted and prioritized based on your organization's risk exposure and the urgency that it requires. Select **Show more** to see the rest of the security recommendations in the list or **Show exceptions** for the list of recommendations that have an exception.
 **Top vulnerable software** | Get real-time visibility into your organization's software inventory with a stack-ranked list of vulnerable software installed on your network's devices and how they impact your organizational exposure score. Select an item for details or **Show more** to see the rest of the vulnerable software list in the **Software inventory** page.
 **Top remediation activities** | Track the remediation activities generated from the security recommendations. You can select each item on the list to see the details in the **Remediation** page or select **Show more** to view the rest of the remediation activities, and active exceptions.
-**Top exposed machines** | View exposed machine names and their exposure level. Select a machine name from the list to go to the machine page where you can view the alerts, risks, incidents, security recommendations, installed software, and discovered vulnerabilities associated with the exposed machines. Select **Show more** to see the rest of the exposed machines list. From the machines list, you can manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate machine.
+**Top exposed devices** | View exposed device names and their exposure level. Select a device name from the list to go to the device page where you can view the alerts, risks, incidents, security recommendations, installed software, and discovered vulnerabilities associated with the exposed devices. Select **Show more** to see the rest of the exposed devices list. From the devices list, you can manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate device.
 
 See [Microsoft Defender ATP icons](portal-overview.md#microsoft-defender-atp-icons) for more information on the icons used throughout the portal.
 

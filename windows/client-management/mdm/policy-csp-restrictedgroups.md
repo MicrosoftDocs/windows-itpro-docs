@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - RestrictedGroups
 
-> [!WARNING]
-> Some information in this article relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -155,7 +153,7 @@ where:
 
 ### Policy timeline
 
-The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For the latest release of Windows 10, you can use name or SID for both the elements, as described in this topic. 
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in this topic. 
 
 The following table describes how this policy setting behaves in different Windows 10 versions:
 
@@ -163,7 +161,7 @@ The following table describes how this policy setting behaves in different Windo
 | ------------------ | --------------- |
 |Windows 10, version 1803 | Added this policy setting. <br> XML accepts group and member only by name. <br> Supports configuring the administrators group using the group name. <br> Expects member name to be in the account name format. |
 | Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or an SID. <br> This is useful when you want to ensure a certain local group always has a well-known SID as member. |
-| The latest release of Windows 10 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate. | 
+| Windows 10, version 2004 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate. | 
 
 
 <!--/Validation-->
@@ -178,5 +176,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->

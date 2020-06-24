@@ -1,6 +1,6 @@
 ---
 title: Offboard machine API
-description: Use this API to offboard a machine from WDATP.
+description: Use this API to offboard a device from WDATP.
 keywords: apis, graph api, supported apis, collect investigation package
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -24,7 +24,7 @@ ms.topic: article
 
 
 ## API description
-Offboard machine from Microsoft Defender ATP.
+Offboard device from Microsoft Defender ATP.
 
 
 ## Limitations
@@ -34,7 +34,8 @@ Offboard machine from Microsoft Defender ATP.
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> This does not support offboarding macOS Devices.
+> This API is supported on Windows 10, version 1703 and later, or Windows Server 2019 and later. 
+> This API is not supported on MacOS or Linux devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -47,7 +48,7 @@ Delegated (work or school account) |	Machine.Offboard |	'Offboard machine'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to 'Global Admin' AD role
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

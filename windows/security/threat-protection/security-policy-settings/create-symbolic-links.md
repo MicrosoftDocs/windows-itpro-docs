@@ -82,7 +82,7 @@ When a local setting is greyed out, it indicates that a GPO currently controls t
 
 ### Command-line tools
 
-This setting can be used in conjunction with a symbolic link file system setting that can be manipulated with the command-line tool to control the kinds of symlinks that are allowed on the device. For more info, type **fsutil behavior set symlinkevalution /?** at the command prompt.
+This setting can be used in conjunction with a symbolic link file system setting that can be manipulated with the command-line tool to control the kinds of symlinks that are allowed on the device. For more info, type **fsutil behavior set symlinkevaluation /?** at the command prompt.
 
 ## Security considerations
 

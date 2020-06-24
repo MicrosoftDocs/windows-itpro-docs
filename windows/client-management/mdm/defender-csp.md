@@ -1,6 +1,6 @@
 ---
 title: Defender CSP
-description: Defender CSP
+description: See how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.reviewer: 
 manager: dansimp
@@ -14,9 +14,6 @@ ms.date: 10/21/2019
 ---
 
 # Defender CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -123,8 +120,6 @@ The following table describes the supported values:
 | 50    | Ransomware                  |
 | 51    | ASR Rule                    |
 
- 
-
 Supported operation is Get.
 
 <a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
@@ -182,9 +177,9 @@ An interior node to group information about Windows Defender health status.
 Supported operation is Get.
 
 <a href="" id="health-productstatus"></a>**Health/ProductStatus**  
-Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. 
+Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list.
 
-Data type is integer. Supported operation is Get. 
+Data type is integer. Supported operation is Get.
 
 Supported product status values:  
 -  No status                                                        = 0
@@ -251,60 +246,60 @@ Supported operation is Get.
 <a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**  
 Indicates whether the Windows Defender service is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**  
 Indicates whether real-time protection is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-nisenabled"></a>**Health/NisEnabled**  
 Indicates whether network protection is running.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default)
+A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) are disabled (default).
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default)
+A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) are disabled (default).
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**  
 Indicates whether the Windows Defender signature is outdated.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-rebootrequired"></a>**Health/RebootRequired**  
 Indicates whether a device reboot is needed.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
 <a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**  
 Indicates whether a Windows Defender full scan is required.
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
@@ -360,7 +355,7 @@ Supported operation is Get.
 <a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**  
 Indicates whether the Windows Defender tamper protection feature is enabled.​
 
-The data type is a boolean.
+The data type is a Boolean.
 
 Supported operation is Get.
 
@@ -419,11 +414,10 @@ Node that can be used to perform signature updates for Windows Defender.
 Supported operations are Get and Execute.
 
 <a href="" id="offlinescan"></a>**OfflineScan**  
-Added in Windows 10, version 1803. OfflineScan action starts a Windows Defender offline scan on the computer where you run the command. After the next OS reboot, the device will start in Windows Defender offline mode to begin the scan.
+Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
