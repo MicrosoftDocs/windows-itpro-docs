@@ -78,5 +78,5 @@ Each time a system starts, it loads the notification package DLLs from **HKEY\_L
 
 For 4614(S): A notification package has been loaded by the Security Account Manager.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Notification Packages in the system, then you can check is “**Notification Package Name”** field value in the whitelist or not.
+-   Typically this event has an informational purpose. If you defined the list of allowed Notification Packages in the system, then you can check is “**Notification Package Name”** field value in the allow list or not.
 

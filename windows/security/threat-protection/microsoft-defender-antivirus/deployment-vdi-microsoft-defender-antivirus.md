@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Antivirus Virtual Desktop Infrastructure deployment guide
-description: Learn how to deploy Windows Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
+title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
+description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment
+# Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
+In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
 See [Windows Virtual Desktop Documentation](https://docs.microsoft.com/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
 
@@ -41,10 +41,10 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
-You can also download the whitepaper [Windows Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
+You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
 > [!IMPORTANT]
-> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.<br/>There are performance and feature improvements to the way in which Windows Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.<br/>There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ### Set up a dedicated VDI file share
 
@@ -116,7 +116,7 @@ The profile will now be deployed to the impacted devices. This may take some tim
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Security Intelligence Updates**.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
 
 5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
@@ -194,7 +194,7 @@ If you would prefer to do everything manually, this what you would need to do to
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Windows Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Microsoft Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -211,7 +211,7 @@ Quick scans are the preferred approach as they are designed to look in all place
 
 ### Prevent notifications
 
-Sometimes, Windows Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Windows Defender Antivirus user interface.
+Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Microsoft Defender Antivirus user interface.
 
 1. Expand the tree to **Windows components > Windows Defender > Client Interface**. 
 
@@ -219,7 +219,7 @@ Sometimes, Windows Defender Antivirus notifications may be sent to or persist ac
 
 3. Click **OK**. 
 
-This prevents notifications from Windows Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
+This prevents notifications from Microsoft Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
 
 ### Disable scans after an update
 
@@ -253,11 +253,11 @@ This forces a scan if the VM has missed two or more consecutive scheduled scans.
 
 2. Click **OK**. 
 
-This hides the entire Windows Defender AV user interface from users.
+This hides the entire Microsoft Defender AV user interface from users.
 
 ### Exclusions
 
-On Windows Server 2016, Windows Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, see [Configure Windows Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus).
+On Windows Server 2016, Microsoft Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus).
 
 
 ## Additional resources

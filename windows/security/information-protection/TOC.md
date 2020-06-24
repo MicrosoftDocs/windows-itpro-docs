@@ -38,7 +38,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [Kernel DMA Protection for Thunderbolt&trade; 3](kernel-dma-protection-for-thunderbolt.md)
+## [Kernel DMA Protection](kernel-dma-protection-for-thunderbolt.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a WIP policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)

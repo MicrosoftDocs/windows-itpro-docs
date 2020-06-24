@@ -1,7 +1,7 @@
 ---
 title: Add additional folders and apps to be protected 
-description: Add additional folders that should be protected by Controlled folder access, or whitelist apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, whitelist, add executable
+description: Add additional folders that should be protected by Controlled folder access, or allow apps that are incorrectly blocking changes to important files.
+keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -63,7 +63,7 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
 
 4. Double-click **Configured protected folders** and set the option to **Enabled**. Click **Show** and enter each folder.
 
@@ -117,7 +117,7 @@ An allowed application or service only has write access to a controlled folder a
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
 
 4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Click **Show** and enter each app.
 

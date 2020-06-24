@@ -198,8 +198,8 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 </tr>
 <tr>
 <td>27</td>
-<td>Microsoft Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender Antivirus. Onboarding process failed. Failure code: <code>variable</code>.</td>
-<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
+<td>Microsoft Defender Advanced Threat Protection service failed to enable SENSE aware mode in Microsoft Defender Antivirus. Onboarding process failed. Failure code: <code>variable</code>.</td>
+<td>Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machines](configure-endpoints.md)">Onboard Windows 10 machines</a>.<br>
 Ensure real-time antimalware protection is running properly.</td>
@@ -220,8 +220,8 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 </tr>
 <tr>
 <td>30</td>
-<td>Microsoft Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender Antivirus. Failure code: <code>variable</code>.</td>
-<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
+<td>Microsoft Defender Advanced Threat Protection service failed to disable SENSE aware mode in Microsoft Defender Antivirus. Failure code: <code>variable</code>.</td>
+<td>Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the machine, and the machine is reporting to Microsoft Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machines](configure-endpoints.md)">Onboard Windows 10 machines</a><br>
 Ensure real-time antimalware protection is running properly.</td>

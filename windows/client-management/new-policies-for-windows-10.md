@@ -175,8 +175,8 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Remove remote desktop wallpaper
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
-- Windows Components\Windows Defender Antivirus\Configure detection for potentially unwanted applications
-- Windows Components\Windows Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
+- Windows Components\Microsoft Defender Antivirus\Configure detection for potentially unwanted applications
+- Windows Components\Microsoft Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
 - Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user’s device
@@ -318,12 +318,12 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Search\Allow Cloud Search
 - Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow auditing events in Windows Defender Application Guard
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
 - Windows Components\Windows Defender Exploit Guard\Exploit Protection\Use a common set of exploit protection settings
 - Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Virus and threat protection area
 - Windows Components\Windows Defender Security Center\Firewall and network protection\Hide the Firewall and network protection area
@@ -458,9 +458,9 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Smart Card\Turn on certificate propagation from smart card
 - Windows Components\Tablet PC\Pen UX Behaviors\Prevent flicks
 - Windows Components\BitLocker Drive Encryption\Choose drive encryption method and cipher strength (Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2, Windows 10 [Version 1507])
-- Windows Components\Windows Defender Antivirus\Real-time Protection\Turn on behavior monitoring
-- Windows Components\Windows Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
-- Windows Components\Windows Defender Antivirus\Signature Updates\Turn on scan after signature update
+- Windows Components\Microsoft Defender Antivirus\Real-time Protection\Turn on behavior monitoring
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Turn on scan after signature update
 - Windows Components\File Explorer\Display confirmation dialog when deleting files
 - Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone\Allow OpenSearch queries in File Explorer
 - Windows Components\Windows Update\Remove access to use all Windows Update features

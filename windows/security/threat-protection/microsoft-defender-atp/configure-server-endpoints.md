@@ -85,9 +85,9 @@ You'll need to take the following steps if you choose to onboard servers through
 Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
 The following steps are required to enable this integration:
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
-- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
+- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
 
 
 ### Turn on Server monitoring from the Microsoft Defender Security Center portal
@@ -151,11 +151,12 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md).
 
-2. If you're running a third-party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings. Verify that it was configured correctly:
+2. If you're running a third-party antimalware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
        - Name: ForceDefenderPassiveMode
+       - Type: REG_DWORD
        - Value: 1
 
     1. Run the following PowerShell command to verify that the passive mode was configured:
@@ -168,11 +169,11 @@ Support for Windows Server, provide deeper insight into activities happening on 
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
-3. Run the following command to check if Windows Defender AV is installed:
+3. Run the following command to check if Microsoft Defender AV is installed:
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service does not exist as an installed service', then you'll need to install Windows Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
+    If the result is 'The specified service does not exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
 
 ## Integration with Azure Security Center
@@ -185,7 +186,7 @@ The following capabilities are included in this integration:
     > Automated onboarding is only applicable for Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Microsoft Defender ATP - Azure Security Center seamlessly connects to the Microsoft Defender ATP tenant, providing a single view across clients and servers.  In addition, Microsoft Defender ATP alerts will be available in the Azure Security Center console.
-- Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
+- Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 > - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
@@ -233,7 +234,7 @@ To offboard the server, you can use either of the following methods:
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
-    ```
+    ```powershell
     # Load agent scripting object
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace

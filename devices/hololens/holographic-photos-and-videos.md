@@ -44,7 +44,9 @@ To take a quick photo of your current view, press the volume up and volume down 
 
 ### Voice commands to take photos
 
-Cortana can also take a picture. Say: "Hey Cortana, take a picture."
+On HoloLens 2, version 2004 (and later), say: "Take a picture."
+
+On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, take a picture."
 
 ### Start menu to take photos
 
@@ -67,7 +69,9 @@ The quickest way to record a video is to press and hold the **volume up** and **
 
 ### Voice to record videos
 
-Cortana can also record a video. Say: "Hey Cortana, start recording." To stop a video, say "Hey Cortana, stop recording."
+On HoloLens 2, version 2004 (and later), say: "Start recording." To stop recording, say "Stop recording."
+
+On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, start recording." To stop recording, say "Hey Cortana, stop recording."
 
 ### Start menu to record videos
 
