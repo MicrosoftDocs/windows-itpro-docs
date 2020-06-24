@@ -46,7 +46,7 @@ At this point, you are ready to grant access to those who'll use the Microsoft D
 
 ## Grant access to the Microsoft Defender Security Center
 
-The Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) is where you access and configure features and capabilities of Microsoft Defender ATP. [Get an overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
+The Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) is where you access and configure features and capabilities of Microsoft Defender ATP. To learn more, see [Overview of Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
