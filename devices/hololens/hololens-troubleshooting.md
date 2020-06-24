@@ -27,14 +27,14 @@ This article describes how to resolve several common HoloLens issues.
 
 If your HoloLens won't start:
 
-- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to charge your HoloLens.
-- If the LEDs light up when you press the power button but you can't see anything on the displays, hold the power button until all five of the LEDs turn off.
+- If the LEDs next to the power button don't light up, or only one LED briefly blinks, you may need to [charge your HoloLens.](hololens-recovery.md#charging-the-device)
+- If the LEDs light up when you press the power button but you can't see anything on the displays, [preform a hard reset of the device](hololens-recovery.md#hard-reset-procedure).
 
 If your HoloLens becomes frozen or unresponsive:
 
-- Turn off your HoloLens by pressing the power button until all five of the LEDs turn themselves off, or for 10 seconds if the LEDs are unresponsive. To start your HoloLens, press the power button again.
+- Turn off your HoloLens by pressing the power button until all five of the LEDs turn themselves off, or for 15 seconds if the LEDs are unresponsive. To start your HoloLens, press the power button again.
 
-If these steps don't work, you can try [recovering your device](hololens-recovery.md).
+If these steps don't work, you can try [recovering your HoloLens 2 device](hololens-recovery.md) or [HoloLens (1st gen) device.](hololens1-recovery.md)
 
 ## Holograms don't look good
 
@@ -92,6 +92,6 @@ You'll need to free up some storage space by doing one or more of the following:
 
 The most likely problem is that you're running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
 
-## The HoloLens emulators isn't working
+## The HoloLens emulator isn't working
 
 Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).

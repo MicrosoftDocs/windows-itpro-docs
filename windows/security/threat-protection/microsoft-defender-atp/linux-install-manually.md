@@ -236,8 +236,8 @@ In order to preview new features and provide early feedback, it is recommended t
 
 Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 machines)** as the deployment method.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
@@ -263,9 +263,9 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Client configuration
 
-1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target machine.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
 
-    Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
+    Initially the client device is not associated with an organization. Note that the *orgId* attribute is blank:
 
     ```bash
     mdatp health --field org_id
@@ -277,7 +277,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
+3. Verify that the device is now associated with your organization and reports a valid organization identifier:
 
     ```bash
     mdatp health --field org_id
@@ -296,7 +296,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     > ```
     > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
-5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
+5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 

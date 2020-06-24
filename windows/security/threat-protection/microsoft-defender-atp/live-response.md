@@ -1,6 +1,6 @@
 ---
-title: Investigate entities on machines using live response in Microsoft Defender ATP
-description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real time.
+title: Investigate entities on devices using live response in Microsoft Defender ATP
+description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -60,8 +60,8 @@ You'll need to enable the live response capability in the [Advanced features set
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
     
-- **Ensure that the machine has an Automation Remediation level assigned to it**.<br>
-You'll need to enable, at least, the minimum Remediation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+- **Ensure that the device has an Automation Remediation level assigned to it**.<br>
+You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
 - **Enable live response unsigned script execution** (optional). <br>
 
@@ -92,11 +92,11 @@ The dashboard also gives you access to:
 - Command log
 
 
-## Initiate a live response session on a machine 
+## Initiate a live response session on a device 
 
 1. Log in to Microsoft Defender Security Center.
 
-2. Navigate to the devices list page and select a machine to investigate. The machines page opens.
+2. Navigate to the devices list page and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 
@@ -152,7 +152,7 @@ The commands that you can use in the console follow similar principles as [Windo
 
 The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
 
-### Get a file from the machine
+### Get a file from the device
 
 For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 

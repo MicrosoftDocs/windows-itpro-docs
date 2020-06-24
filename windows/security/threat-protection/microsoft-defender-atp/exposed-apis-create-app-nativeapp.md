@@ -2,7 +2,7 @@
 title: Use Microsoft Defender Advanced Threat Protection APIs  
 ms.reviewer: 
 description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender ATP without a user.
-keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file, advanced hunting, query
+keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -77,7 +77,7 @@ This page explains how to create an AAD application, get an access token to Micr
       For instance,
 
       - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-      - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+      - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
       - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
     - Click **Grant consent**

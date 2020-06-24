@@ -27,7 +27,7 @@ This section guides you through the steps you need to take to configure Threat &
 
 ### Before you begin
 > [!IMPORTANT]
-> Threat & Vulnerability Management data currently supports Windows 10 machines. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
+> Threat & Vulnerability Management data currently supports Windows 10 devices. Upgrade to Windows 10 to account for the rest of your devices’ threat and vulnerability exposure data.</br>
 
 Ensure that you have the right RBAC permissions to configure your Threat & Vulnerability Management integration with Microsoft Intune or Microsoft Endpoint Configuration Manager.   
 

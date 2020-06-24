@@ -97,11 +97,11 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
 - Antivirus alerts, including:
   - Severity
   - Scan type
-  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
+  - Device information (hostname, device identifier, tenant identifier, app version, and OS type)
   - File information (name, path, size, and hash)
   - Threat information (name, type, and state)
 - Device information, including:
-  - Machine identifier
+  - Device identifier
   - Tenant identifier
   - App version
   - Hostname
@@ -110,3 +110,12 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
+
+### Known issues
+
+- Logged on users do not appear in the Microsoft Defender Security Center portal.
+- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
+
+    ```bash
+    $ sudo SUSEConnect --status-text
+    ```
