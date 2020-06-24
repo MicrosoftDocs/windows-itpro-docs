@@ -33,9 +33,7 @@ When you switch from Symantec to Microsoft Defender ATP, you follow a process th
 
 ## What's included in Microsoft Defender ATP?
 
-In this migration guide, we focus on endpoint protection and antivirus as a starting point. However, Microsoft Defender ATP is more than those capabilities. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response. 
-
-The following table lists features and capabilities of Microsoft Defender ATP:
+In this migration guide, we focus on [next-generation protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) and [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities as a starting point for moving to Microsoft Defender ATP. However, Microsoft Defender ATP includes much more than antivirus and endpoint protection. Microsoft Defender ATP is a unified platform for preventative protection, post-breach detection, automated investigation, and response, as summarized in the following table: 
 
 | Feature/Capability | Description |
 |---|---|
