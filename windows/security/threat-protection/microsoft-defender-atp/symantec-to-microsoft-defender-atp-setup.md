@@ -131,7 +131,7 @@ To add exclusions to Microsoft Defender ATP, you create [indicators](https://doc
 3.  On the **File hashes** tab, choose **Add indicator**.
 
 3. On the **Indicator** tab, specify the following settings:
-   - File hash (Need help? See [How to find the file hashes of your security solutions](#how-to-find-the-file-hashes-of-your-security-solutions) in this article.)
+   - File hash (Need help? See [Find a file hash using CMPivot](#find-a-file-hash-using-cmpivot) in this article.)
    - Under **Expires on (UTC)**, choose **Never**.
 
 4. On the **Action** tab, specify the following settings:
@@ -142,31 +142,7 @@ To add exclusions to Microsoft Defender ATP, you create [indicators](https://doc
 
 6. On the **Summary** tab, review the settings, and then click **Save**.
 
-### How to find the file hashes of your security solutions
-
-You can find the file hashes of your third-party security products by using one of the following methods:
-- [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) in Microsoft Defender ATP
-- [CMPivot](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview) in Configuration Manager
-
-#### Find a file hash using Advanced Hunting
- 
-Advanced hunting is a query-based threat-hunting tool that lets you explore raw data for the last 30 days. You can use Kusto syntax and operators to construct queries that locate information in the schema specifically structured for advanced hunting. To learn more, see [Learn the advanced hunting query language](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language).
-
-Here's an example query that you can use to find the file hashes for your security solutions: 
- 
-```kusto
-find in (FileCreationEvents, ProcessCreationEvents, MiscEvents, RegistryEvents, NetworkCommunicationEvents, ImageLoadEvents)
-where InitiatingProcessFileName has 'notepad.exe'
-| project EventTime, ComputerName, InitiatingProcessSHA256, InitiatingProcessFolderPath, InitiatingProcessCommandLine
-| distinct InitiatingProcessSHA256
-```
-
-> [!NOTE]
-> In the query above, replace *notepad.exe* with the your third-party security product process name. 
->
-> In our example query, we added the *distinct* query which shows just the unique SHA256’s.
-              
-#### Find a file hash using CMPivot
+### Find a file hash using CMPivot
 
 CMPivot is an in-console utility for Configuration Manager. CMPivot provides access to the real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](https://docs.microsoft.com/mem/configmgr/core/servers/manage/cmpivot-overview).
 
