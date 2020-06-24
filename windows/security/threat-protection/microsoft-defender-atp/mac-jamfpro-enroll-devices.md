@@ -65,7 +65,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     ![A screenshot of a social media post Description automatically generated](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-Enrollment Method 2: Prestage Enrollments
+## Enrollment Method 2: Prestage Enrollments
 
 1. In the Jamf Pro dashboard, navigate to **Prestage enrollments**.
 
