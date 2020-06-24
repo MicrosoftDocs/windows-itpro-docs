@@ -1,7 +1,7 @@
 ---
-title: List exposure score by machine group
-description: Retrieves a list of exposure scores by machine group.
-keywords: apis, graph api, supported apis, get, exposure score, machine group, machine group exposure score
+title: List exposure score by device group
+description: Retrieves a list of exposure scores by device group.
+keywords: apis, graph api, supported apis, get, exposure score, device group, device group exposure score
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# List exposure score by machine group
+# List exposure score by device group
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -49,7 +49,7 @@ GET /api/exposureScore/ByMachineGroups
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with a list of exposure score per machine group data in the response body. 
+If successful, this method returns 200 OK, with a list of exposure score per device group data in the response body. 
 
 
 ## Example

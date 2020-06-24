@@ -48,7 +48,7 @@ Now you have a Flow that is triggered every time a new Alert occurs.
 ![Image of edit credentials](images/api-flow-3.png)
 
 All you need to do now is choose your next steps.
-For example, you can isolate the machine if the Severity of the Alert is High and send an email about it.
+For example, you can isolate the device if the Severity of the Alert is High and send an email about it.
 The Alert trigger provides only the Alert ID and the Machine ID. You can use the connector to expand these entities.
 
 ### Get the Alert entity using the connector
@@ -61,7 +61,7 @@ The Alert trigger provides only the Alert ID and the Machine ID. You can use the
 
     ![Image of edit credentials](images/api-flow-4.png)
 
-### Isolate the machine if the Alert's severity is High
+### Isolate the device if the Alert's severity is High
 
 1. Add **Condition** as a new step.
 

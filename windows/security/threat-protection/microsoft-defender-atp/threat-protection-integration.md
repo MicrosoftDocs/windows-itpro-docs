@@ -38,11 +38,11 @@ Microsoft Defender ATP provides a comprehensive server protection solution, incl
 Keep sensitive data secure while enabling productivity in the workplace through data discovery and data protection.
 
 ### Conditional Access
-Microsoft Defender ATP's dynamic machine risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
+Microsoft Defender ATP's dynamic device risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
 
 
 ### Microsoft Cloud App Security
-Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender ATP monitored machines.
+Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender ATP monitored devices.
 
 ### Office 365 Advanced Threat Protection (Office 365 ATP)
 [Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through ATP Safe Links, ATP Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Office 365 ATP and Microsoft Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 

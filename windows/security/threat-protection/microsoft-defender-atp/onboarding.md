@@ -142,30 +142,28 @@ Manager and deploy that policy to Windows 10 devices.
 
 9. Navigate to the location of the downloaded file from step 4 above.
 
-    ![Image of configuration settings](images/1b9f85316170cfe24b46330afa8517d5.png)
-
 10. Click **Next**.
 11. Configure the Agent with the appropriate samples (**None** or **All file types**).
 
-    ![Image of configuration settings](images/1b9f85316170cfe24b46330afa8517d5.png)
+    ![Image of configuration settings](images/configmgr-config-settings.png)
 
 12. Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.
 
-    ![Image of configuration settings](images/13201b477bc9a9ae0020814915fe80cc.png)
+    ![Image of configuration settings](images/configmgr-telemetry.png)
 
 14. Verify the configuration, then click **Next**.
 
-     ![Image of configuration settings](images/adc17988b0984ca2aa3ff8f41ddacaf9.png)
+     ![Image of configuration settings](images/configmgr-verify-configuration.png)
 
 15. Click **Close** when the Wizard completes.
 
 16.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP policy you just created and select **Deploy**.
 
-     ![Image of configuration settings](images/4a37f3687e6ff53a593d3670b1dad3aa.png)
+     ![Image of configuration settings](images/configmgr-deploy.png)
 
 17. On the right panel, select the previously created collection and click **OK**.
 
-    ![Image of configuration settings](images/26efa2711bca78f6b6d73712f86b5bd9.png)
+    ![Image of configuration settings](images/configmgr-select-collection.png)
 
 
 ### Previous versions of Windows Client (Windows 7 and Windows 8.1)
@@ -175,9 +173,9 @@ Follow the steps below to identify the Microsoft Defender ATP Workspace ID and W
 
 2. Under operating system choose **Windows 7 SP1 and 8.1**.
 
-    ![Image of onboarding](images/91b738e4b97c4272fd6d438d8c2d5269.png)
-
 3. Copy the **Workspace ID** and **Workspace Key** and save them. They will be used later in the process.
+
+    ![Image of onboarding](images/91b738e4b97c4272fd6d438d8c2d5269.png)
 
 4. Install the Microsoft Monitoring Agent (MMA). <br>
     MMA is currently (as of January 2019) supported on the following Windows Operating
@@ -261,7 +259,7 @@ needs on how Antivirus is configured.
 
 4. Target the new antimalware policy to your Windows 10 collection and click **OK**.
 
-     ![Image of next generation protection pane](images/26efa2711bca78f6b6d73712f86b5bd9.png)
+     ![Image of next generation protection pane](images/configmgr-select-collection.png)
 
 After completing this task, you now have successfully configured Windows
 Defender Antivirus.
@@ -315,13 +313,11 @@ endpoints. (This may take few minutes)
 
 2.  Select **Configuration management** from left side menu.
 
-    ![A screenshot of a cell phone Description automatically generated](images/653db482c7ccaf31d06f29fb2aa24b7a.png)
-
 3. Click **Go to attack surface management** in the Attack surface management panel. 
     
-    ![Image of attack surface management](images/3a01c7970ce3ec977a35883c0a01f0a2.png)
+    ![Image of attack surface management](images/security-center-attack-surface-mgnt-tile.png)
 
-4. Click **Configuration** tab in Attack Surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each devices.
+4. Click **Configuration** tab in Attack surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each devices.
 
     ![A screenshot of attack surface reduction rules reports](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
@@ -336,7 +332,7 @@ detections](https://docs.microsoft.com/windows/security/threat-protection/micros
 ### To set Network Protection rules in Audit mode:
 1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-    ![A screenshot System Center Confirugatiom Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![A screenshot System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Select **Network protection**.
 
@@ -391,5 +387,5 @@ Protection in audit mode.
 
     ![A screenshot of Microsoft Endpoint Configuration Manager ](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
-After completing this task, you now have successfully configured Controlled folder access in audit mode.
+You have now successfully configured Controlled folder access in audit mode.
 

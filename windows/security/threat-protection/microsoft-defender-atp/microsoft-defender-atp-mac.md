@@ -34,7 +34,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac machines), configure your macOS machine running Microsoft Defender ATP to be an "Insider" machine. See [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender ATP to be an "Insider" device. See [Enable Microsoft Defender ATP Insider Device](endpoint-detection-response-mac-preview.md). 
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -105,7 +105,7 @@ The output from this command should be similar to the following:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
+> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
 Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
 ```bash

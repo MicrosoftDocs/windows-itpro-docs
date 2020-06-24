@@ -37,7 +37,7 @@ To configure automated investigation and remediation, you [turn on the features]
 ## Set up device groups
 
 1. In the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
-2. Select **+ Add machine group**.
+2. Select **+ Add device group**.
 3. Create at least one device group, as follows:
    - Specify a name and description for the device group.
    - In the **Automation level list**, select a level, such as **Full – remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
