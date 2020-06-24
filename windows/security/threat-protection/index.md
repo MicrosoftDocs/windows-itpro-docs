@@ -94,7 +94,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 - [Alerts](microsoft-defender-atp/alerts-queue.md)
 - [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#timeline)
 - [Response orchestration](microsoft-defender-atp/response-actions.md)
-- [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
+- [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Threat intelligence](microsoft-defender-atp/threat-indicator-concepts.md)
 - [Advanced detonation and analysis service](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 - [Advanced hunting](microsoft-defender-atp/advanced-hunting-overview.md)

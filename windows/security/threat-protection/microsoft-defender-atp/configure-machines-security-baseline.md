@@ -1,7 +1,7 @@
 ---
 title: Increase compliance to the Microsoft Defender ATP security baseline
 description: The Microsoft Defender ATP security baseline sets Microsoft Defender ATP security controls to provide optimal protection.
-keywords: Intune management, MDATP, WDATP, Microsoft Defender, Windows Defender, advanced threat protection ASR, security baseline
+keywords: Intune management, MDATP, WDATP, Microsoft Defender, advanced threat protection ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -29,42 +29,42 @@ Security baselines ensure that security features are configured according to gui
 To understand security baselines and how they are assigned on Intune using configuration profiles, [read this FAQ](https://docs.microsoft.com/intune/security-baselines#q--a).
 
 Before you can deploy and track compliance to security baselines:
-- [Enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management)
+- [Enroll your devices to Intune management](configure-machines.md#enroll-devices-to-intune-management)
 - [Ensure you have the necessary permissions](configure-machines.md#obtain-required-permissions)
 
 ## Compare the Microsoft Defender ATP and the Windows Intune security baselines
-The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure machines running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Microsoft Defender Antivirus. In contrast, the Microsoft Defender ATP baseline provides settings that optimize all the security controls in the Microsoft Defender ATP stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
+The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Microsoft Defender Antivirus. In contrast, the Microsoft Defender ATP baseline provides settings that optimize all the security controls in the Microsoft Defender ATP stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
 
 - [Windows security baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 - [Microsoft Defender ATP baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
-Ideally, machines onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls. To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they are released.
+Ideally, devices onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls. To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they are released.
 
 >[!NOTE]
->The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.
+>The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machine (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.
 
 ## Monitor compliance to the Microsoft Defender ATP security baseline
 
-The **Security baseline** card on [machine configuration management](configure-machines.md) provides an overview of compliance across Windows 10 machines that have been assigned the Microsoft Defender ATP security baseline.
+The **Security baseline** card on [device configuration management](configure-machines.md) provides an overview of compliance across Windows 10 devices that have been assigned the Microsoft Defender ATP security baseline.
 
 ![Security baseline card](images/secconmgmt_baseline_card.png)<br>
 *Card showing compliance to the Microsoft Defender ATP security baseline*
 
-Each machine is given one of the following status types:
+Each device is given one of the following status types:
 
-- **Matches baseline**—machine settings match all the settings in the baseline
-- **Does not match baseline**—at least one machine setting doesn't match the baseline
-- **Misconfigured**—at least one baseline setting isn't properly configured on the machine and is in a conflict, error, or pending state
-- **Not applicable**—At least one baseline setting isn't applicable on the machine
+- **Matches baseline**—device settings match all the settings in the baseline
+- **Does not match baseline**—at least one device setting doesn't match the baseline
+- **Misconfigured**—at least one baseline setting isn't properly configured on the device and is in a conflict, error, or pending state
+- **Not applicable**—At least one baseline setting isn't applicable on the device
 
-To review specific machines, select **Configure security baseline** on the card. This takes you to Intune device management. From there, select **Device status** for the names and statuses of the machines.
+To review specific devices, select **Configure security baseline** on the card. This takes you to Intune device management. From there, select **Device status** for the names and statuses of the devices.
 
 >[!NOTE]
->You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
+>You might experience discrepancies in aggregated data displayed on the device configuration management page and those displayed on overview screens in Intune.
 
 ## Review and assign the Microsoft Defender ATP security baseline
 
-Machine configuration management monitors baseline compliance only of Windows 10 machines that have been specifically assigned the Microsoft Defender ATP security baseline. You can conveniently review the baseline and assign it to machines on Intune device management.
+Device configuration management monitors baseline compliance only of Windows 10 devices that have been specifically assigned the Microsoft Defender ATP security baseline. You can conveniently review the baseline and assign it to devices on Intune device management.
 
 1. Select **Configure security baseline** on the **Security baseline** card to go to Intune device management. A similar overview of baseline compliance is displayed.
 
@@ -82,22 +82,22 @@ Machine configuration management monitors baseline compliance only of Windows 10
    ![Security baseline options during profile creation on Intune](images/secconmgmt_baseline_intuneprofile2.png)<br>
    *Security baseline options during profile creation on Intune*
 
-4. Assign the profile to the appropriate machine group.
+4. Assign the profile to the appropriate device group.
 
    ![Security baseline profiles on Intune](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Assigning the security baseline profile on Intune*
 
-5. Create the profile to save it and deploy it to the assigned machine group.
+5. Create the profile to save it and deploy it to the assigned device group.
 
    ![Assigning the security baseline on Intune](images/secconmgmt_baseline_intuneprofile4.png)<br>
    *Creating the security baseline profile on Intune*
 
 >[!TIP]
->Security baselines on Intune provide a convenient way to comprehensively secure and protect your machines. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).
+>Security baselines on Intune provide a convenient way to comprehensively secure and protect your devices. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## Related topics
-- [Ensure your machines are configured properly](configure-machines.md)
-- [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
+- [Ensure your devices are configured properly](configure-machines.md)
+- [Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
 - [Optimize ASR rule deployment and detections](configure-machines-asr.md)

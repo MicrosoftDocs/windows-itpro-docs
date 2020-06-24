@@ -52,7 +52,7 @@ Other information available in the details pane when the alert opens includes MI
 
 Clicking on a device or a user card in the affected assets sections will switch to the details of the device or user in the details pane.
 
-- **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the machine page to investigate from the device's point of view.
+- **For devices** the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the device page to investigate from the device's point of view.
 - **For users** the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can click *Open user page* to continue the investigation from that user's point of view.
 
    ![A snippet of the details pane when a device is selected](images/alert-device-details.png)

@@ -1,7 +1,7 @@
 ---
-title: Find machines by internal IP API
-description: Find machines seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
-keywords: apis, graph api, supported apis, get, machine, IP, find, find machine, by ip, ip
+title: Find devices by internal IP API
+description: Find devices seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp 
+keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Find machines by internal IP API
+# Find devices by internal IP API
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -44,9 +44,9 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
-> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
