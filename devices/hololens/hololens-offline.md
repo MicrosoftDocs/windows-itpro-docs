@@ -22,7 +22,7 @@ appliesto:
 
 # Manage connection endpoints for HoloLens
 
-Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be whitelisted in your network configuration (e.g. proxy or firewall) for those components to be functional.    
+Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be allowed in your network configuration (e.g. proxy or firewall) for those components to be functional.    
 
 ## Near-offline setup
 

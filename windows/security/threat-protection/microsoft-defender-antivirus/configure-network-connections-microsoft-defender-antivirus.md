@@ -53,7 +53,7 @@ Because your protection is a cloud service, computers must have access to the in
 | **Service**| **Description** |**URL** |
 | :--: | :-- | :-- |
 | Microsoft Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)|Used by Microsoft Defender Antivirus to provide cloud-delivered protection|`*.wdcp.microsoft.com` <br/> `*.wdcpalt.microsoft.com` <br/> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU)|	Security intelligence and product updates	|`*.update.microsoft.com`|
+| Microsoft Update Service (MU) <br/> Windows Update Service (WU)|	Security intelligence and product updates	|`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/> for details see [Connection endpoints for Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints#windows-update)|
 |Security intelligence updates Alternate Download Location (ADL)|	Alternate location for Microsoft Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	`*.download.microsoft.com`|
 | Malware submission storage|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	| `ussus1eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `ussas1eastprod.blob.core.windows.net` <br/>    `ussas1southeastprod.blob.core.windows.net` <br/>    `ussau1eastprod.blob.core.windows.net` <br/>    `ussau1southeastprod.blob.core.windows.net` |
 | Certificate Revocation List (CRL)|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| `https://www.microsoft.com/pkiops/crl/` <br/> `https://www.microsoft.com/pkiops/certs` <br/>   `https://crl.microsoft.com/pki/crl/products` <br/> `https://www.microsoft.com/pki/certs` |
@@ -62,13 +62,13 @@ Because your protection is a cloud service, computers must have access to the in
 
 ## Validate connections between your network and the cloud
 
-After whitelisting the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
+After allowing the URLs listed above, you can test if you are connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
 Use the following argument with the Microsoft Defender Antivirus command-line utility (`mpcmdrun.exe`) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service:
 
-```DOS
+```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
@@ -87,9 +87,7 @@ Download the file by visiting the following link:
 >[!NOTE]
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
 
-If you are properly connected, you will see a warning Microsoft Defender Antivirus notification:
-
-![Microsoft Defender Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
+If you are properly connected, you will see a warning Microsoft Defender Antivirus notification.
 
 If you are using Microsoft Edge, you'll also see a notification message:
 
@@ -107,14 +105,12 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
     ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
 
-3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
+3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware.
 
-    ![Screenshot of quarantined items in the Windows Security app](images/defender/wdav-quarantined-history-wdsc.png)
+   > [!NOTE]
+   > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
->[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
-
-The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
+   The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
 
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.

@@ -59,7 +59,7 @@ See the following examples.
 >[!TIP]
 >To run the following commands on a computer running Windows Server 2012/2012 R2 or Windows 7/8.1, you must first download and install the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616).
 
-1. On an Internet connected Windows PC or Server open an elevated Windows PowerShell command window
+1. On an Internet connected Windows PC or server, open an elevated Windows PowerShell command window
 2. Enter the following lines to install the necessary modules
 
     #### Install required modules
@@ -118,7 +118,7 @@ See the following examples.
    |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                 Version (number, optional)                 |                                                                                                                 The version number that identifies the format of the JSON file.  For Windows 10 1809, the version specified must be 2049.                                                                                                                  |
    |           CloudAssignedTenantId (guid, required)           |                                                                                      The Azure Active Directory tenant ID that should be used.  This is the GUID for the tenant, and can be found in properties of the tenant.  The value should not include braces.                                                                                       |
-   |        CloudAssignedTenantDomain (string, required)        |                                                                                                                                  The Azure Active Directory tenant name that should be used, e.g. tenant.onmicrosoft.com.                                                                                                                                  |
+   |        CloudAssignedTenantDomain (string, required)        |                                                                                                                                  The Azure Active Directory tenant name that should be used, for example: tenant.onmicrosoft.com.                                                                                                                                  |
    |         CloudAssignedOobeConfig (number, required)         |                                                                           This is a bitmap that shows which Autopilot settings were configured. Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16                                                                           |
    |      CloudAssignedDomainJoinMethod (number, required)      |                                                                                                                                    This property specifies whether the device should join Azure Active Directory or Active Directory (Hybrid Azure AD Join).  Values include: Active AD Join = 0, Hybrid Azure AD Join = 1                                                        |
    |      CloudAssignedForcedEnrollment (number, required)      |                                                                                                                         Specifies that the device should require AAD Join and MDM enrollment.  <br>0 = not required, 1 = required.                                                                                                                         |
@@ -175,7 +175,7 @@ See the following examples.
 
 4. Click **Next**, then enter the following **Membership Rules** details:
    - Click **Add Rule** and specify either a direct or query based collection rule to add the target test Windows 7 devices to the new collection.
-   - For example, if the hostname of the computer to be wiped and reloaded is PC-01 and you wish to use Name as the attribute, click **Add Rule > Direct Rule > (wizard opens) > Next** and then enter **PC-01** next to **Value**. Click **Next** and then choose **PC-01** under **Resources**. See the following examples.
+   - For example, if the hostname of the computer to be wiped and reloaded is PC-01 and you wish to use Name as the attribute, click **Add Rule > Direct Rule > (wizard opens) > Next** and then enter **PC-01** next to **Value**. Click **Next**, and then choose **PC-01** under **Resources**. See the following examples.
 
      ![Named resource1](images/pc-01a.png)
      ![Named resource2](images/pc-01b.png)
@@ -198,7 +198,7 @@ See the following examples.
    - <u>Boot Image</u>: Click **Browse** and select a Windows 10 boot image (1803 or later)
    - Click **Next**, and then on the Install Windows page click **Browse** and select a Windows 10 **Image package** and **Image Index**, version 1803 or later.
    - Select the **Partition and format the target computer before installing the operating system** checkbox.
-   - Select or clear **Configure task sequence for use with Bitlocker** checkbox. This is optional.
+   - Select or clear **Configure task sequence for use with BitLocker** checkbox. This is optional.
    - <u>Product Key</u> and <u>Server licensing mode</u>: Optionally enter a product key and server licensing mode.
    - <u>Randomly generate the local administrator password and disable the account on all support platforms (recommended)</u>: Optional.
    - <u>Enable the account and specify the local administrator password</u>: Optional.
@@ -210,7 +210,7 @@ See the following examples.
      >[!IMPORTANT]
      > The System Preparation Tool (sysprep) will run with the /Generalize parameter which, on Windows 10 versions 1903 and 1909, will delete the Autopilot profile file and the machine will boot into OOBE phase instead of Autopilot phase. To fix this issue, please see [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues).
 
-5. Click **Next** and then click **Next** again to accept the default settings on the Install Configuration Manager page.
+5. Click **Next**, and then click **Next** again to accept the default settings on the Install Configuration Manager page.
 6. On the State Migration page, enter the following details:
    - Clear the **Capture user settings and files** checkbox.
    - Clear the **Capture network settings** checkbox.
@@ -222,7 +222,7 @@ See the following examples.
 
 7. On the Include Updates page, choose one of the three available options. This selection is optional.
 8. On the Install applications page, add applications if desired. This is optional.
-9. Click **Next**, confirm settings, click **Next** and then click **Close**.
+9. Click **Next**, confirm settings, click **Next**, and then click **Close**.
 10. Right click on the Autopilot for existing devices task sequence and click **Edit**.
 11. In the Task Sequence Editor under the **Install Operating System** group, click the **Apply Windows Settings** action.
 12. Click **Add** then click **New Group**.
@@ -245,7 +245,7 @@ See the following examples.
 24. Add a second step by clicking **Add**, pointing to **Images**, and clicking **Prepare Windows for Capture**. Use the following settings in this step:
     - <u>Automatically build mass storage driver list</u>: **Not selected**
     - <u>Do not reset activation flag</u>: **Not selected**
-    - <u>Shutdown the computer after running this action</u>: **Optional**
+    - <u>Shut down the computer after running this action</u>: **Optional**
 
     ![Autopilot task sequence](images/ap-ts-1.png)
 
@@ -259,9 +259,9 @@ See the following examples.
 Next, ensure that all content required for the task sequence is deployed to distribution points.
 
 1. Right click on the **Autopilot for existing devices** task sequence and click **Distribute Content**.
-2. Click **Next**, **Review the content to distribute** and then click **Next**.
+2. Click **Next**, **Review the content to distribute**, and then click **Next**.
 3. On the Specify the content distribution page click **Add** to specify either a **Distribution Point** or **Distribution Point Group**.
-4. On the a Add Distribution Points or Add Distribution Point Groups wizard specify content destinations that will allow the JSON file to be retrieved when the task sequence is run.
+4. On the Add Distribution Points or Add Distribution Point Groups wizard specify content destinations that will allow the JSON file to be retrieved when the task sequence is run.
 5. When you are finished specifying content distribution, click **Next** twice then click **Close**.
 
 ### Deploy the OS with Autopilot Task Sequence

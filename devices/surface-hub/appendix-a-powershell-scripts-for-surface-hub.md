@@ -16,7 +16,6 @@ ms.localizationpriority: medium
 
 # PowerShell for Surface Hub
 
-
 PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 
 -   [PowerShell scripts for Surface Hub admins](#scripts-for-admins)
@@ -30,7 +29,6 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub.
     -   [Auto-accepting and declining meeting requests](#auto-accept-meetings-cmdlet)
     -   [Accepting external meeting requests](#accept-ext-meetings-cmdlet)
 
-
 ## Prerequisites
 
 To successfully execute these PowerShell scripts, you will need to install the following prerequisites:
@@ -40,7 +38,6 @@ To successfully execute these PowerShell scripts, you will need to install the f
 - [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
 ## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators
-
 
 What do the scripts do?
 
@@ -53,13 +50,10 @@ What do you need in order to run the scripts?
 -   Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 -   Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 
->[!NOTE]
->Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
-
- 
+> [!NOTE]
+> Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
 
 ## Running the scripts
-
 
 The account creation scripts will:
 
@@ -178,10 +172,7 @@ These are the attributes that are set by the scripts:
 </tbody>
 </table>
 
- 
-
 ## Account creation scripts
-
 
 These scripts will create a device account for you. You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.
 
@@ -257,7 +248,6 @@ if (!$credNewAccount -Or [System.String]::IsNullOrEmpty($strDisplayName) -Or [Sy
     exit 1
 }
 
-
 ## Sign in to remote powershell for exchange and lync online ##
 
 $credExchange = $null
@@ -307,7 +297,8 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessLync -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
-# Note: These exchange commandlets do not always throw their errors as exceptions
+> [!Note]
+> These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -323,7 +314,6 @@ $status["Mailbox Setup"] = "Successfully created a mailbox for the new account"
 
 $strEmail = $mailbox.WindowsEmailAddress
 PrintSuccess "The following mailbox has been created for this room: $strEmail"
-
 
 ## Create or retrieve a policy that will be applied to surface hub devices ##
 # The policy disables requiring a device password so that the SurfaceHub does not need to be lockable to use Active Sync
@@ -674,7 +664,8 @@ Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessCS -AllowClobber -WarningAction SilentlyContinue
 
 ## Create the Exchange mailbox ##
-# Note: These exchange commandlets do not always throw their errors as exceptions
+> [!Note]
+> These exchange commandlets do not always throw their errors as exceptions
 
 # Because Get-Mailbox will throw an error if the mailbox is not found
 $Error.Clear()
@@ -993,7 +984,6 @@ else
 ```
 
 ## <a href="" id="acct-verification-ps-scripts"></a>Account verification script
-
 
 This script will validate the previously-created device account on a Surface Hub, no matter which method was used to create it. This script is basically pass/fail. If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report. For example, you might see:
 
@@ -1446,7 +1436,6 @@ Cleanup
 
 ## <a href="" id="enable-sfb-ps-scripts"></a>Enable Skype for Business
 
-
 This script will enable Skype for Business on a device account. Use it only if Skype for Business wasn't previously enabled during account creation.
 
 ```PowerShell
@@ -1607,7 +1596,6 @@ Cleanup
 
 ## Useful cmdlets
 
-
 ### <a href="" id="create-compatible-as-policy"></a>Creating a Surface Hub-compatible ActiveSync policy
 
 For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device. This policy has the following requirements:
@@ -1674,19 +1662,9 @@ Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 
 For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests. Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.
 
->**Note**  If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
-
- 
+> [!Note]
+> If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
 ```
-
- 
-
- 
-
-
-
-
-

@@ -44,8 +44,8 @@ productDirectory:
     - title: Required diagnostic data
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
-      summary: Learn more about required Windows diagnostic data events and fields collected
-      url: basic-level-windows-diagnostic-events-and-fields.md
+      summary: Learn more about basic Windows diagnostic data events and fields collected.
+      url: required-windows-diagnostic-data-events-and-fields-2004.md
     # Card
     - title: Optional diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg

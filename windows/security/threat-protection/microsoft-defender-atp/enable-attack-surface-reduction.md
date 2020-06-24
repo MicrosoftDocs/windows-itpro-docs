@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/29/2020
+ms.date: 06/04/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -201,7 +201,3 @@ Example:
 
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
 
-* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
-* [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
-* [Attack surface reduction FAQ](attack-surface-reduction.md)
-* [Enable cloud-delivered protection](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)

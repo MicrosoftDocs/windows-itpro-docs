@@ -48,10 +48,10 @@ Process | A specific process (specified either by the full path or file name) an
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard | Description | Example | Matches
----|---|---|---
-\* |	Matches any number of any characters including none | `/var/\*/\*.log` | `/var/log/system.log`
-? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log`
+Wildcard | Description | Example | Matches | Does not match
+---|---|---|---|---
+\* |	Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ## How to configure the list of exclusions
 
@@ -64,7 +64,7 @@ For more information on how to configure exclusions from Puppet, Ansible, or ano
 Run the following command to see the available switches for managing exclusions:
 
 ```bash
-$ mdatp --exclusion
+$ mdatp exclusion
 ```
 
 Examples:
@@ -72,29 +72,29 @@ Examples:
 - Add an exclusion for a file extension:
 
     ```bash
-    $ mdatp --exclusion --add-extension .txt
-    Configuration updated successfully
+    $ mdatp exclusion extension add --name .txt
+    Extension exclusion configured successfully
     ```
 
 - Add an exclusion for a file:
 
     ```bash
-    $ mdatp --exclusion --add-folder /var/log/dummy.log
-    Configuration updated successfully
+    $ mdatp exclusion file add --path /var/log/dummy.log
+    File exclusion configured successfully
     ```
 
 - Add an exclusion for a folder:
 
     ```bash
-    $ mdatp --exclusion --add-folder /var/log/
-    Configuration updated successfully
+    $ mdatp exclusion folder add --path /var/log/
+    Folder exclusion configured successfully
     ```
 
 - Add an exclusion for a process:
 
     ```bash
-    $ mdatp --exclusion --add-process cat
-    Configuration updated successfully
+    $ mdatp exclusion process add --name cat
+    Process exclusion configured successfully
     ```
 
 ## Validate exclusions lists with the EICAR test file

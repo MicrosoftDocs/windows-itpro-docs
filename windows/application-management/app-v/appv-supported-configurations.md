@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # App-V Supported Configurations
 
->Applies to: Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2
+>Applies to: Windows 10, version 1607; Window Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 (Extended Security Update)
 
 This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
@@ -34,7 +34,7 @@ The App-V server does not support the following scenarios:
 
 ### Management server operating system requirements
 
-You can install the App-V Management server on a server running Windows Server 2008 R2 with SP1 or later.
+You can install the App-V Management server on a server running Windows Server 2008 R2 with SP1 (Extended Security Update) or later.
 
 >[!IMPORTANT]
 >Deploying a Management server role to a computer with Remote Desktop Services enabled is not supported.

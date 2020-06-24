@@ -60,7 +60,6 @@
 
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
-
 #### [Device control]()
 ##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -249,6 +248,18 @@
 #### [Privacy](microsoft-defender-atp/linux-privacy.md)
 #### [Resources](microsoft-defender-atp/linux-resources.md)
 
+
+### [Microsoft Defender Advanced Threat Protection for Android]()
+#### [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp/microsoft-defender-atp-android.md)
+
+#### [Deploy]()
+##### [Deploy Microsoft Defender ATP for Android with Microsoft Intune](microsoft-defender-atp/android-intune.md)
+
+#### [Configure]()
+##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
+
+
+
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ## [Security operations]()
@@ -264,6 +275,7 @@
  
 #### [Alerts queue]()
 ##### [View and organize the Alerts queue](microsoft-defender-atp/alerts-queue.md)
+##### [Review alerts](microsoft-defender-atp/review-alerts.md)
 ##### [Manage alerts](microsoft-defender-atp/manage-alerts.md)
 ##### [Investigate alerts](microsoft-defender-atp/investigate-alerts.md)
 ##### [Investigate files](microsoft-defender-atp/investigate-files.md)

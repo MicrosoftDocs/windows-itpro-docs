@@ -16,6 +16,9 @@ appliesto:
 
 # Unlock Windows Holographic for Business features
 
+> [!IMPORTANT]
+> This page only applies to HoloLens 1st Gen.
+
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 that is designed for HoloLens), and in the [Commercial Suite](hololens-commercial-features.md), which provides extra features designed for business.
 
 When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. You can apply this license to the device either by using the organization's [mobile device management (MDM) provider](#edition-upgrade-by-using-mdm) or a [provisioning package](#edition-upgrade-by-using-a-provisioning-package).
