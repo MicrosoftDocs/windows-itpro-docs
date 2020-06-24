@@ -29,7 +29,7 @@ ms.topic: article
 
 ## APIs
 
-Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 See the following topics for related APIs:
 
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
@@ -39,7 +39,7 @@ See the following topics for related APIs:
 - [Software APIs](software.md)
 - [Vulnerability APIs](vulnerability.md)
 
-## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit
+## Use advanced hunting query to search for devices with High active alerts or critical CVE public exploit
 
 1. Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.
 
@@ -85,15 +85,15 @@ To view a list of version that have reached end of support, or end or support so
 
 1. For software that has versions which have reached end of support, or will reach end of support soon, a message will appear in the flyout once the security recommendation is selected.
 
-    ![Screenshot of version distribution link](images/eos-upcoming-eos.png) <br><br>
+    ![Screenshot of version distribution link](images/eos-upcoming-eos.png)
 
 2. Select the **version distribution** link to go to the software drill down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
 
-    ![Screenshot of version distribution link](images/software-drilldown-eos.png) <br><br>
+    ![Screenshot of version distribution link](images/software-drilldown-eos.png)
 
-3. Select one of the versions in the table to open. For example, version 3.5.2150.0. A flyout will appear with the end of support date.
+3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
 
-![Screenshot of version distribution link](images/version-eos-date.png)<br><br>
+    ![Screenshot of version distribution link](images/version-eos-date.png)
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 

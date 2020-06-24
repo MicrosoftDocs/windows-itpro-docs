@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmSoftwareVulnerabilitiesKB  table in the advanced hunting schema
 description: Learn about the software vulnerabilities tracked by Threat & Vulnerability Management in the DeviceTvmSoftwareVulnerabilitiesKB table of the advanced hunting schema. 
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB 
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

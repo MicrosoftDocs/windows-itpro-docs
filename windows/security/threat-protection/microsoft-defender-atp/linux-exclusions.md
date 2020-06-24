@@ -41,7 +41,7 @@ The follow table shows the exclusion types supported by Microsoft Defender ATP f
 
 Exclusion | Definition | Examples
 ---|---|---
-File extension | All files with the extension, anywhere on the machine | `.test`
+File extension | All files with the extension, anywhere on the device | `.test`
 File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder | All files under the specified folder | `/var/log/`<br/>`/var/*/`
 Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
