@@ -316,7 +316,7 @@ The deep link used for connecting your device to work will always use the follow
 
 ### Connect to MDM using a deep link
 
-> [!Note]
+> [!NOTE]
 > Deep links only work with Internet Explorer or Microsoft Edge browsers. When connecting to MDM using a deep link, the URI you should use is:
 > **ms-device-enrollment:?mode=mdm** 
 > **ms-device-enrollment:?mode=mdm&username=someone@example.com&servername=<https://example.server.com>**
