@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus compatibility with Microsoft Defender ATP
 description: Learn about how Windows Defender works with Microsoft Defender ATP and how it functions when a third-party antimalware client is used.  
-keywords: windows defender compatibility, defender, windows defender atp
+keywords: windows defender compatibility, defender, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -35,12 +35,12 @@ The Microsoft Defender Advanced Threat Protection agent depends on Microsoft Def
 >[!IMPORTANT]
 >Microsoft Defender ATP does not adhere to the Microsoft Defender Antivirus Exclusions settings. 
 
-You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+You must configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-If an onboarded machine is protected by a third-party antimalware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
+If an onboarded device is protected by a third-party antimalware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
 
 Microsoft Defender Antivirus will continue to receive updates, and the *mspeng.exe* process will be listed as a running a service, but it will not perform scans and will not replace the running third-party antimalware client.
 
-The Microsoft Defender Antivirus interface will be disabled, and users on the machine will not be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
+The Microsoft Defender Antivirus interface will be disabled, and users on the device will not be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
 
 For more information, see the [Microsoft Defender Antivirus and Microsoft Defender ATP compatibility topic](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).

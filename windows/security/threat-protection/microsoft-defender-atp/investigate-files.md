@@ -30,7 +30,7 @@ ms.date: 04/24/2018
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
-There are many ways to access the detailed profile page of a specific file. For example, you can  use the search feature, click on a link from the **Alert process tree**, **Incident graph**, **Artifact timeline**, or select an event listed in the **Machine timeline**.
+There are many ways to access the detailed profile page of a specific file. For example, you can  use the search feature, click on a link from the **Alert process tree**, **Incident graph**, **Artifact timeline**, or select an event listed in the **Device timeline**.
 
 Once on the detailed profile page, you can switch between the new and old page layouts by toggling **new File page**. The rest of this article describes the newer page layout.
 
@@ -67,7 +67,7 @@ You'll see details such as the file’s MD5, the Virus Total detection ratio, an
 
 ## Alerts
 
-The **Alerts** tab provides a list of alerts that are associated with the file. This list covers much of the same information as the Alerts queue, except for the machine group, if any, the affected machine belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
+The **Alerts** tab provides a list of alerts that are associated with the file. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
 ![Image of alerts related to the file section](images/atp-alerts-related-to-file.png)
 
@@ -76,9 +76,9 @@ The **Alerts** tab provides a list of alerts that are associated with the file. 
 The **Observed in organization** tab allows you to specify a date range to see which devices have been observed with the file.
 
 >[!NOTE]
->This tab will show a maximum number of 100 machines. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
+>This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
 
-![Image of most recent observed machine with the file](images/atp-observed-machines.png)
+![Image of most recent observed device with the file](images/atp-observed-machines.png)
 
 Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
@@ -92,14 +92,14 @@ The **Deep analysis** tab allows you to [submit the file for deep analysis](resp
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
-![Image of file names tab](images/atp-file-names.PNG)
+![Image of file names tab](images/atp-file-names.png)
 
 ## Related topics
 
 - [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
 - [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

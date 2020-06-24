@@ -1,7 +1,7 @@
 ---
 title: Overview of advanced hunting in Microsoft Defender ATP
 description: Use threat hunting capabilities in Microsoft Defender ATP to build queries that find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -25,7 +25,7 @@ ms.topic: article
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore raw data for the last 30 days. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured machines.
+You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured devices.
 
 ## Get started with advanced hunting
 Watch this video for a quick overview of advanced hunting and a short tutorial that will get you started fast.

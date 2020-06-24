@@ -97,8 +97,8 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
 |Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
 |EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]` OR `mdatp --edr --earlyPreview [true/false]` for versions earlier than 100.78.0                                |
-|EDR          |Add group tag to machine. EDR tags are used for managing machine groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
-|EDR          |Remove group tag from machine              |`mdatp --edr --remove-tag [name]`                                            |
+|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
+|EDR          |Remove group tag from device              |`mdatp --edr --remove-tag [name]`                                            |
 
 ## Client Microsoft Defender ATP quarantine directory
 

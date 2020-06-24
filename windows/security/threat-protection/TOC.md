@@ -279,26 +279,26 @@
 ##### [Manage alerts](microsoft-defender-atp/manage-alerts.md)
 ##### [Investigate alerts](microsoft-defender-atp/investigate-alerts.md)
 ##### [Investigate files](microsoft-defender-atp/investigate-files.md)
-##### [Investigate machines](microsoft-defender-atp/investigate-machines.md)
+##### [Investigate devices](microsoft-defender-atp/investigate-machines.md)
 ##### [Investigate an IP address](microsoft-defender-atp/investigate-ip.md)
 ##### [Investigate a domain](microsoft-defender-atp/investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](microsoft-defender-atp/investigate-behind-proxy.md)
 ##### [Investigate a user account](microsoft-defender-atp/investigate-user.md)
  
-#### [Machines list]()
-##### [View and organize the Machines list](microsoft-defender-atp/machines-view-overview.md)
-##### [Manage machine group and tags](microsoft-defender-atp/machine-tags.md)
+#### [Devices list]()
+##### [View and organize the Devices list](microsoft-defender-atp/machines-view-overview.md)
+##### [Manage device group and tags](microsoft-defender-atp/machine-tags.md)
  
 #### [Take response actions]()
-##### [Take response actions on a machine]()
-###### [Response actions on machines](microsoft-defender-atp/respond-machine-alerts.md)
+##### [Take response actions on a device]()
+###### [Response actions on devices](microsoft-defender-atp/respond-machine-alerts.md)
 ###### [Manage tags](microsoft-defender-atp/respond-machine-alerts.md#manage-tags)
 ###### [Initiate an automated investigation](microsoft-defender-atp/respond-machine-alerts.md#initiate-automated-investigation)
 ###### [Initiate Live Response session](microsoft-defender-atp/respond-machine-alerts.md#initiate-live-response-session)
-###### [Collect investigation package](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
-###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-machines)
+###### [Collect investigation package](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-devices)
+###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
 ###### [Restrict app execution](microsoft-defender-atp/respond-machine-alerts.md#restrict-app-execution)
-###### [Isolate machines from the network](microsoft-defender-atp/respond-machine-alerts.md#isolate-machines-from-the-network)
+###### [Isolate devices from the network](microsoft-defender-atp/respond-machine-alerts.md#isolate-devices-from-the-network)
 ###### [Consult a threat expert](microsoft-defender-atp/respond-machine-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
  
@@ -319,7 +319,7 @@
 ##### [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
 
 #### [Investigate entities using Live response]()
-##### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
+##### [Investigate entities on devices](microsoft-defender-atp/live-response.md)
 ##### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 
@@ -330,7 +330,7 @@
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
 ##### [Create and build Power BI reports using Microsoft Defender ATP data connectors (deprecated)](microsoft-defender-atp/powerbi-reports.md)
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
-#### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
+#### [Device health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
 
 #### [Custom detections]()
@@ -387,21 +387,21 @@
 
 ## [How-to]()
 ### [Onboard devices to the service]()
-#### [Onboard machines to Microsoft Defender ATP](microsoft-defender-atp/onboard-configure.md)
+#### [Onboard devices to Microsoft Defender ATP](microsoft-defender-atp/onboard-configure.md)
 #### [Onboard previous versions of Windows](microsoft-defender-atp/onboard-downlevel.md)
-#### [Onboard Windows 10 machines]()
+#### [Onboard Windows 10 devices]()
 ##### [Onboarding tools and methods](microsoft-defender-atp/configure-endpoints.md)
-##### [Onboard machines using Group Policy](microsoft-defender-atp/configure-endpoints-gp.md)
-##### [Onboard machines using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/configure-endpoints-sccm.md)
-##### [Onboard machines using Mobile Device Management tools](microsoft-defender-atp/configure-endpoints-mdm.md)
-##### [Onboard machines using a local script](microsoft-defender-atp/configure-endpoints-script.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) machines](microsoft-defender-atp/configure-endpoints-vdi.md)
+##### [Onboard devices using Group Policy](microsoft-defender-atp/configure-endpoints-gp.md)
+##### [Onboard devices using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/configure-endpoints-sccm.md)
+##### [Onboard devices using Mobile Device Management tools](microsoft-defender-atp/configure-endpoints-mdm.md)
+##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
+##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
  
 #### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
-#### [Onboard non-Windows machines](microsoft-defender-atp/configure-endpoints-non-windows.md)
-#### [Onboard machines without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
-#### [Run a detection test on a newly onboarded machine](microsoft-defender-atp/run-detection-test.md)
-#### [Run simulated attacks on machines](microsoft-defender-atp/attack-simulations.md)
+#### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
+#### [Onboard devices without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
+#### [Run a detection test on a newly onboarded device](microsoft-defender-atp/run-detection-test.md)
+#### [Run simulated attacks on devices](microsoft-defender-atp/attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](microsoft-defender-atp/configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](microsoft-defender-atp/onboarding-notification.md)
  
@@ -409,9 +409,9 @@
 ##### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
 ##### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
 
-### [Manage machine configuration]()
-#### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
-#### [Monitor and increase machine onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
+### [Manage device configuration]()
+#### [Ensure your devices are configured properly](microsoft-defender-atp/configure-machines.md)
+#### [Monitor and increase device onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
 #### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
 #### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
 
@@ -428,8 +428,8 @@
 ##### [Use basic permissions to access the portal](microsoft-defender-atp/basic-permissions.md)
 ##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ###### [Create and manage roles](microsoft-defender-atp/user-roles.md)
-###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
-###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
+###### [Create and manage device groups](microsoft-defender-atp/machine-groups.md)
+###### [Create and manage device tags](microsoft-defender-atp/machine-tags.md)
 
 
 #### [Rules]()
@@ -438,9 +438,9 @@
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
 
-#### [Machine management]()
-##### [Onboarding machines](microsoft-defender-atp/onboard-configure.md)
-##### [Offboarding machines](microsoft-defender-atp/offboard-machines.md)
+#### [Device management]()
+##### [Onboarding devices](microsoft-defender-atp/onboard-configure.md)
+##### [Offboarding devices](microsoft-defender-atp/offboard-machines.md)
 
 #### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
 
@@ -476,7 +476,7 @@
 ####### [Get alert related domains information](microsoft-defender-atp/get-alert-related-domain-info.md)
 ####### [Get alert related file information](microsoft-defender-atp/get-alert-related-files-info.md)
 ####### [Get alert related IPs information](microsoft-defender-atp/get-alert-related-ip-info.md)
-####### [Get alert related machine information](microsoft-defender-atp/get-alert-related-machine-info.md)
+####### [Get alert related device information](microsoft-defender-atp/get-alert-related-machine-info.md)
 ####### [Get alert related user information](microsoft-defender-atp/get-alert-related-user-info.md)
 
 ###### [Machine]()
@@ -599,9 +599,9 @@
 #### [Role-based access control]()
 ##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ##### [Create and manage roles](microsoft-defender-atp/user-roles.md)
-##### [Create and manage machine groups]()
-###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
-###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
+##### [Create and manage device groups]()
+###### [Using device groups](microsoft-defender-atp/machine-groups.md)
+###### [Create and manage device tags](microsoft-defender-atp/machine-tags.md)
 
 #### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
@@ -630,8 +630,8 @@
 #### [Troubleshoot sensor state]()
 ##### [Check sensor state](microsoft-defender-atp/check-sensor-status.md)
 ##### [Fix unhealthy sensors](microsoft-defender-atp/fix-unhealthy-sensors.md)
-##### [Inactive machines](microsoft-defender-atp/fix-unhealthy-sensors.md#inactive-machines)
-##### [Misconfigured machines](microsoft-defender-atp/fix-unhealthy-sensors.md#misconfigured-machines)
+##### [Inactive devices](microsoft-defender-atp/fix-unhealthy-sensors.md#inactive-devices)
+##### [Misconfigured devices](microsoft-defender-atp/fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Review sensor events and errors on machines with Event Viewer](microsoft-defender-atp/event-error-codes.md)
   
 #### [Troubleshoot Microsoft Defender ATP service issues]()
