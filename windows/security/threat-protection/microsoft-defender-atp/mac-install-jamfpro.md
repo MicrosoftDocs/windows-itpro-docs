@@ -27,7 +27,7 @@ Learn how to deploy Microsoft Defender ATP for macOS with Jamf Pro.
 
 This is a multi step process. You'll need to complete all of the following steps:
 
-- [Login to the JamF Portal](mac-install-jamfpro-login.md)
+- [Login to the Jamf Portal](mac-install-jamfpro-login.md)
 - [Setup the Microsoft Defender ATP for macOS device groups in Jamf Pro](mac-jamfpro-device-groups.md)
 - [Setup the Microsoft Defender ATP for macOS policies in Jamf Pro](mac-jamfpro-policies.md)
   - Step 1: Onboard the package
@@ -37,9 +37,9 @@ This is a multi step process. You'll need to complete all of the following steps
   - Step 5: Grant full disk access to Microsoft Defender ATP
   - Step 6: Approve Kernel extension for Microsoft Defender ATP
   - Step 7: Deploy Microsoft Defender ATP for macOS
-  - 
-- [Enroll the Microsoft Defender ATP for macOS devices into JamF]()
-- [Enroll your macOS]()
+  
+- [Enroll the Microsoft Defender ATP for macOS devices into Jamf Pro](mac-jamfpro-enroll-devices.md)
+
 
 
 
