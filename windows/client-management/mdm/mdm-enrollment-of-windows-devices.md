@@ -342,7 +342,6 @@ To connect your devices to MDM using deep links:
 3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
 After you complete the flow, your device will be connected to your organization’s MDM.
-
     ![corporate sign in](images/deeplinkenrollment4.png)
 
 ## Manage connections
