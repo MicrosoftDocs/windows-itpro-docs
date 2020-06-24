@@ -25,7 +25,7 @@ ms.topic: article
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Set Microsoft Defender Antivirus to passive mode](#set-microsoft-defender-av-to-passive-mode) (on certain versions of Windows).
+1. [Enable Microsoft Defender Antivirus on certain versions of Windows](#set-microsoft-defender-av-to-passive-mode) (on certain versions of Windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
@@ -33,12 +33,12 @@ ms.topic: article
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
-## Set Microsoft Defender Antivirus to passive mode
+## Enable or reinstall Microsoft Defender Antivirus (applies only to certain versions of Windows)
 
 > [!TIP]
 > If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
 
-On certain versions of Windows, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product, such as Symantec. (See [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)) However, you can enable passive mode by setting a registry key. 
+On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. (See [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)). This procedure involves enabling or reinstalling Microsoft Defender Antivirus and setting it to passive mode. 
 
 The following procedure applies to endpoints or devices that are running the following versions of Windows:
 - Windows Server 2019
