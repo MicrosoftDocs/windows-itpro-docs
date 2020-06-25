@@ -139,7 +139,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
-- Install the `gpg` package (called `gnupg` on Ubuntu 16.04) if not already installed:
+- Install the `gpg` package (`gnupg` on Ubuntu 16.04) if not already installed:
 
     ```bash
     sudo apt-get install gpg
