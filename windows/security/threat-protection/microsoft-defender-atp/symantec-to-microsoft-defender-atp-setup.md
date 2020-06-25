@@ -25,7 +25,7 @@ ms.topic: article
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Enable Microsoft Defender Antivirus on certain versions of Windows](#set-microsoft-defender-av-to-passive-mode) (on certain versions of Windows).
+1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
 4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-av). 
@@ -33,7 +33,7 @@ ms.topic: article
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
-## Enable or reinstall Microsoft Defender Antivirus (applies only to certain versions of Windows)
+## Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)
 
 > [!TIP]
 > If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
