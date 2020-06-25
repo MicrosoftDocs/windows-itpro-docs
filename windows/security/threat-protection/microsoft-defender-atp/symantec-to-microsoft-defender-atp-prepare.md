@@ -40,7 +40,7 @@ To get started, you must have Microsoft Defender ATP, with licenses assigned and
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
  
-At this point, you are ready to grant access to your security administrators and security operators who'll use the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
 
 > [!NOTE]
 > The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal. 
@@ -53,7 +53,7 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment#role-based-access-control).
 
-2. Set up and configure RBAC. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to do this, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+2. Set up and configure RBAC. We recommend using [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to configure RBAC, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
     If your organization requires a method other than Intune, choose one of the following options:
     - [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
