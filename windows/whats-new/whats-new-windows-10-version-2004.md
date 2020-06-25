@@ -68,6 +68,8 @@ In Windows 10, version 2004, SetupDiag is now automatically installed.
 
 [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues.
 
+Download SetupDiag manually from [here](https://download.microsoft.com/download/d/8/1/d8149356-6590-4bec-b1bd-a2adcf84ace9/SetupDiag.exe)
+
 During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there is an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
 
 ### Windows Autopilot
@@ -84,7 +86,7 @@ Also see [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+Download the Windows ADK [here](https://download.microsoft.com/download/8/6/c/86c218f3-4349-4aa5-beba-d05e48bbc286/adk/adksetup.exe) and Windows PE add-on for Windows 10, version 2004 [here](https://download.microsoft.com/download/3/c/2/3c2b23b2-96a0-452c-b9fd-6df72266e335/adkwinpeaddons/adkwinpesetup.exe).
 
 For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
 
