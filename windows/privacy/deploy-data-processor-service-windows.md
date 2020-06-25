@@ -90,30 +90,5 @@ If your environment is cloud-only and managed in Azure, or all your devices are 
 If your environment uses on-premises Active Directory to manage identities - Azure AD Connect synchronization is required, and your environment needs to be configured for hybrid Azure AD join. 
 To learn more, visit [How To: Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) and [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis). 
 
-### Deleting Data Processor Service for Windows data from a Windows Client 
-A user with local admins rights can delete diagnostic data for your device.
-
->[!Important] 
->Using this option will not impact user data, collected from other devices or that is only linked to the user. 
-
-Additionally, selecting this option does not stop data collection. 
-1. Go to Start, then select Settings  > Privacy > Diagnostics & feedback. 
-2. Under Delete diagnostic data, select Delete. 
-
-### Deleting Data Processor Service for Windows data from a Windows Server System  
-For diagnostic data collected on servers through the Data Processor Service for Windows, you can send a request to delete all uploaded diagnostic data to Microsoft. 
-
-In order to do that, you need to utilize the Clear-WindowsDiagnosticData cmdlet. For more information see the [cmdlet reference](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/clear-windowsdiagnosticdata?view=win10-ps).  
-
->[!Note]
->This cmdlet requires the pre-installation of the [WindowsDiagnosticData](https://www.powershellgallery.com/packages/WindowsDiagnosticData) PowerShell module.
-
-### Control diagnostic data deletion on devices 
-You can control a user’s ability to delete their device’s diagnostic data, by using either Group Policy or an MDM policy: 
-
-**Group Policy:** Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > Disable deleting diagnostic data 
-
-**MDM:** System\DisableDeviceDelete 
-
 ## Geo-location 
-Windows Diagnostic Data collected through DPSW is hosted in our datacenter in the United States.  
+Windows Diagnostic Data collected through DPSW is hosted in our datacenter in the United States.
