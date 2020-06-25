@@ -19,11 +19,7 @@ ms.topic: article
 
 # Migrate from Symantec - Phase 3: Onboard to Microsoft Defender ATP
 
-
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
-|--|--|--|
-|| |*You are here!* |
-
+:::image type="content" source="images/SymantecMigration-DefenderATP-phase3.png" alt-text="Phase 3: Onboard":::
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
