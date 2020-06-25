@@ -23,13 +23,9 @@ If you are planning to switch from Symantec Endpoint Protection (Symantec) to [M
 
 ## The migration process
 
-When you switch from Symantec to Microsoft Defender ATP, you follow a process that can be divided into three phases. The following table lists the three phases and what happens during each phase. 
+When you switch from Symantec to Microsoft Defender ATP, you follow a process that can be divided into three phases, as depicted in the following image:
 
-|Phase |Description |
-|--|--|
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During the **Prepare** phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender ATP. |
-|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During the **Setup** phase, you configure settings and exclusions for Microsoft Defender Antivirus, Microsoft Defender ATP, and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
-|[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md) |During the **Onboard** phase, you onboard your devices to Microsoft Defender ATP and verify that those devices are communicating with Microsoft Defender ATP. Last, you uninstall Symantec and make sure protection through Microsoft Defender ATP is in place. |
+
 
 ## What's included in Microsoft Defender ATP?
 
