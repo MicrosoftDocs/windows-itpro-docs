@@ -19,9 +19,7 @@ ms.topic: article
 
 # Migrate from Symantec - Phase 1: Prepare for your migration
 
-|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
-|--|--|--|
-|*You are here!*| | |
+:::image type="content" source="images/SymantecMigration-DefenderATP-phase1.png" alt-text="Prepare to migrate":::
 
 **Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
 
