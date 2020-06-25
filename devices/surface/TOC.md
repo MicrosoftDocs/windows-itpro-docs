@@ -10,9 +10,9 @@
 ### [Surface Pro 7 for Business](https://www.microsoft.com/surface/business/surface-pro-7)
 ### [Surface Pro X for Business](https://www.microsoft.com/surface/business/surface-pro-x)
 ### [Surface Laptop 3 for Business](https://www.microsoft.com/surface/business/surface-laptop-3)
-### [Surface Book 2 for Business](https://www.microsoft.com/surface/business/surface-book-2)
+### [Surface Book 2 for Business](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Surface Studio 2 for Business](https://www.microsoft.com/surface/business/surface-studio-2)
-### [Surface Go](https://www.microsoft.com/surface/business/surface-go)
+### [Surface Go](https://www.microsoft.com/surface/business/surface-go-2)
 ### [Secure, work-anywhere mobility with LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## Plan
