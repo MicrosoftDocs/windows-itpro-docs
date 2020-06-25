@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
-## 
+## 101.02.55
 
 - Fixed an issue where the product sometimes does not start following a reboot / upgrade
 - Fixed an issue where proxy settings are not persisted across product upgrades

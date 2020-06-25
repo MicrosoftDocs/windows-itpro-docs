@@ -68,11 +68,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    ```
-
-    ```bash
-    sudo rpm --import microsoft.asc
+    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
 - Install `yum-utils` if it is not already installed:
@@ -106,11 +102,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    ```
-
-    ```bash
-    rpm --import microsoft.asc
+    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
 ### Ubuntu and Debian systems
@@ -147,7 +139,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
-- Install the gpg package if not already installed:
+- Install the `gpg` package (called `gnupg` on Ubuntu 16.04) if not already installed:
 
     ```bash
     sudo apt-get install gpg
@@ -179,7 +171,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install mdatp
     ```
 
-    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device. Note that, depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.
 
     ```bash
     # list all repositories
