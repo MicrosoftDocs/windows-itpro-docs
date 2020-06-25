@@ -67,7 +67,7 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
-   - Under **Base**, select **Hexidecimal**.
+   - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
 > You can use other methods to set the registry key, such as the following:
@@ -109,7 +109,7 @@ You can use either [Command Prompt](#use-command-prompt) or [PowerShell](#use-po
 
 ## Add Microsoft Defender ATP to the exclusion list for Symantec
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to add depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
