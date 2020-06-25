@@ -25,7 +25,7 @@ In today’s cloud-first world, enterprise IT departments increasingly want to l
 
 ## Connect corporate-owned Windows 10-based devices
 
-Corporate-owned devices can be connected to work either by joining the device to an Active Directory domain or an Azure Active Directory (Azure AD) domain. Windows 10 does not require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
+You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to an Azure Active Directory (Azure AD) domain. Windows 10 does not require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
 
 ![active directory azure ad signin](images/unifiedenrollment-rs1-1.png)
 
@@ -48,7 +48,7 @@ Joining your device to an Active Directory domain during the out-of-box-experien
 
     ![select domain or azure ad](images/unifiedenrollment-rs1-3.png)
 
-3.  You'll next see a prompt to set up a local account on the device. Enter your local account details, and then select **Next** to continue.
+3.  You'll see a prompt to set up a local account on the device. Enter your local account details, and then select **Next** to continue.
 
     ![create pc account](images/unifiedenrollment-rs1-4.png)
 
@@ -76,7 +76,7 @@ To create a local account and connect the device:
 
     ![join account to active directory domain](images/unifiedenrollment-rs1-9.png)
 
-6.  Type in your domain name, follow the instructions, and then select **Next** to continue. After you complete the flow and restart your device, it should be connected to your Active Directory domain. You can now log into the device using your domain credentials.
+6.  Type in your domain name, follow the instructions, and then select **Next** to continue. After you complete the flow and restart your device, it should be connected to your Active Directory domain. You can now sign in to the device using your domain credentials.
 
     ![type in domain name](images/unifiedenrollment-rs1-10.png)
 
@@ -105,7 +105,7 @@ To join a domain:
 
     ![oobe local account creation](images/unifiedenrollment-rs1-11.png)
 
-2.  Select **Join Azure AD**, then select **Next.**
+2.  Select **Join Azure AD**, and then select **Next.**
 
     ![select domain or azure ad](images/unifiedenrollment-rs1-12.png)
 
@@ -145,7 +145,7 @@ To create a local account and connect the device:
 
     ![azure ad sign in](images/unifiedenrollment-rs1-19.png)
 
-7.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+7.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you can enter your password directly on this page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
@@ -199,7 +199,7 @@ To create a local account and connect the device:
 
     ![join work or school account to azure ad](images/unifiedenrollment-rs1-25-b.png)
 
-5.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+5.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and can enter your password directly into the page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
@@ -333,7 +333,7 @@ To connect your devices to MDM using deep links:
 
     - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 
-2.  After selecting the link or running it, Windows 10 will launch the enrollment app in a special mode that only allows MDM enrollments (similar to the Enroll into device management option in Windows 10, version 1511).
+2.  After you select the link or run it, Windows 10 launches the enrollment app in a special mode that only allows MDM enrollments (similar to the Enroll into device management option in Windows 10, version 1511).
 
     Type in your work email address.
 
@@ -381,7 +381,7 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 ## Collecting diagnostic logs
 
 
-You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export** and follow the path displayed to retrieve your management log files.
+You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export**, and follow the path displayed to retrieve your management log files.
 
 Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you will see the button to create a report, as shown here.
 
