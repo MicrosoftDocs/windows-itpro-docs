@@ -20,12 +20,12 @@
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
-### [Migration guides]()
-#### [Migrate from Symantec to Microsoft Defender ATP]()
-##### [Get an overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
-##### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
-##### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
-##### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
+## [Migration guides]()
+### [Migrate from Symantec to Microsoft Defender ATP]()
+#### [Get an overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
+#### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
+#### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
+#### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
 
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
