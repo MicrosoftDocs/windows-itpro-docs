@@ -91,23 +91,12 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 
 ### Verify that Microsoft Defender Antivirus is in passive mode
 
-You can use either [Command Prompt](#use-command-prompt) or [PowerShell](#use-powershell) to perform this task.
+You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
-#### Use Command Prompt
-
-1. On a Windows device, open Command Prompt as an administrator.
-
-2. Type `sc query windefend`, and then press Enter.
-
-3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.
-
-#### Use PowerShell
-
-1. On a Windows device, open Windows PowerShell as an administrator.
-
-2. Run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/Get-MpComputerStatus?view=win10-ps) cmdlet. 
-
-3. In the list of results, look for **AntivirusEnabled: True**. 
+|Method  |Procedure  |
+|---------|---------|
+|Command Prompt     |1. On a Windows device, open Command Prompt as an administrator. <br/><br/>2. Type `sc query windefend`, and then press Enter.<br/><br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
+|PowerShell     |1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/Get-MpComputerStatus?view=win10-ps) cmdlet. <br/><br/>3. In the list of results, look for **AntivirusEnabled: True**.          |
 
 ## Add Microsoft Defender ATP to the exclusion list for Symantec
 
