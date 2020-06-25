@@ -42,6 +42,8 @@ On certain versions of Windows, Microsoft Defender Antivirus might have been uni
 
 Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and then set it to passive mode. 
 
+### Reinstall Microsoft Defender Antivirus on Windows Server
+
 > [!NOTE]
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 > - Windows Server 2019
@@ -49,14 +51,22 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 > - Windows Server 2016
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
- 
+
 2. Run the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
-3. Open Registry Editor, and then navigate to <br/>
+3. To verify Microsoft Defender Antivirus is running, run the following PowerShell cmdlet: <br/>
+   `Get-Service -Name windefend`
+
+> [!TIP]
+> Need help? See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+
+### 
+
+2. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
 
-4. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+3. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexidecimal**.
 
