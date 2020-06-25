@@ -38,18 +38,25 @@ ms.topic: article
 > [!TIP]
 > If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
 
-On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. (See [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)). This procedure involves enabling or reinstalling Microsoft Defender Antivirus and setting it to passive mode. 
+On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. To learn more, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)). 
 
-The following procedure applies to endpoints or devices that are running the following versions of Windows:
-- Windows Server 2019
-- Windows Server, version 1803 (core-only mode)
-- Windows Server 2016;
+Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and then set it to passive mode. 
 
-1. As an administrator on the endpoint or device, open Registry Editor.
+> [!NOTE]
+> The following procedure applies only to endpoints or devices that are running the following versions of Windows:
+> - Windows Server 2019
+> - Windows Server, version 1803 (core-only mode)
+> - Windows Server 2016
 
-2. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
+1. As a local administrator on the endpoint or device, open Windows PowerShell.
+ 
+2. Run the following PowerShell cmdlet: <br/>
+   `Get-Service -Name windefend`
 
-3. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+3. Open Registry Editor, and then navigate to <br/>
+   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
+
+4. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexidecimal**.
 
