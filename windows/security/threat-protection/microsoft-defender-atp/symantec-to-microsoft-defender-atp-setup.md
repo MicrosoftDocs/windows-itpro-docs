@@ -49,24 +49,26 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 > - Windows Server 2019
 > - Windows Server, version 1803 (core-only mode)
 > - Windows Server 2016
+> 
+> Microsoft Defender Antivirus is built into Windows 10, but it might be disabled. In this case, proceed to [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
 2. Run the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
-3. To verify Microsoft Defender Antivirus is running, run the following PowerShell cmdlet: <br/>
+3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
 > [!TIP]
 > Need help? See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
 
-### 
+### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-2. Open Registry Editor, and then navigate to <br/>
+1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
 
-3. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexidecimal**.
 
