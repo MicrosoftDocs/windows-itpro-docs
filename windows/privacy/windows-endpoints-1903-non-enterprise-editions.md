@@ -39,6 +39,7 @@ The following methodology was used to derive the network endpoints:
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
+> There are no new raw traffic points created since there were no new endpoints discovered in Windows 10 version 1909. So the Windows 10 version 1903 raw traffic points are applicable to 1909 release. 
 
 ## Windows 10 Family
 
