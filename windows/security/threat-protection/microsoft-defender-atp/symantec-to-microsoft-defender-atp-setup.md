@@ -172,7 +172,7 @@ To use CMPivot to get your file hash, follow these steps:
 
 4. Select the **Query** tab.
  
-5. Select **Device Collection** drop down, and choose **All Systems (default)**.
+5. In the **Device Collection** list, and choose **All Systems (default)**.
 
 6. In the query box, type the following query:<br/>
 
