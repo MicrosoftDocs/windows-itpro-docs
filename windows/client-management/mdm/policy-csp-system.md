@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 06/24/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -224,16 +224,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy setting applies only to the Windows operating system and apps included with Windows, it does not apply to third-party apps or services running on Windows 10.
+This policy setting controls whether Microsoft is a processor or controller for Windows diagnostic data collected from devices. 
 
-This policy setting opts the device into the Windows enterprise data pipeline.
+If you enable this policy and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
 
-If you enable this setting, data collected from the device is opted into the Windows enterprise data pipeline.
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
 
-If you disable or do not configure this setting, all data from the device is collected and processed in accordance with the policies for the Windows standard data pipeline.
-
-Configuring this setting does not change the telemetry collection level or the ability of the user to change the level.
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -306,9 +304,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1809 through 1909. This policy setting allows IT admins to enable diagnostic data from this device to be processed by Desktop Analytics.
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Desktop Analytics service is configured to use Windows diagnostic data collected from devices.
 
-If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Desktop Analytics.
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 
 <!--/Description-->
 <!--ADMXBacked-->
@@ -323,7 +326,6 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 (default) – Diagnostic data is not processed by Desktop Analytics.
-
 - 2 – Diagnostic data is allowed to be processed by Desktop Analytics.
 
 <!--/SupportedValues-->
@@ -733,9 +735,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1809 through 1909. This policy setting allows diagnostic data from this device to be processed by Microsoft Managed Desktop.
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Microsoft Managed Desktop service is configured to use Windows diagnostic data collected from devices.
 
-If this policy is disabled or not configured, diagnostic data from this device will not be processed by Microsoft Managed Desktop.
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+> [!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 <!--/Description-->
 
 <!--SupportedValues-->
@@ -991,9 +998,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1809 through 1909. This setting allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Update Compliance service is configured to use Windows diagnostic data collected from devices.
 
-If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) setting to limit the diagnostic data that can be collected from the device.
 
 <!--/Description-->
 <!--ADMXBacked-->
@@ -1118,9 +1130,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1809 through 1909. This policy setting allows IT admins to enable diagnostic data from this device to be processed by Windows Update for Business cloud.
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Windows Update for Business cloud service is configured to use Windows diagnostic data collected from devices.
 
-If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Windows Update for Business cloud.
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note] 
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
