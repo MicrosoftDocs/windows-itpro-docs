@@ -23,56 +23,58 @@ ms.collection:
 
 These Terms govern your use of the preview described below (“**Preview**”). In order to access the Preview, you must be a current Microsoft Windows customer with an Azure Active Directory (“**AAD**”) subscription. The Preview consists of features and services that are in preview, beta, or other pre-release form for use with Windows and AAD.
 
-**Section 1. Definitions**. The following terms have the following meanings:</br></br>
->(a) "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.</br></br>
-(b) "**Feedback**" means, collectively, suggestions, comments, feedback, ideas, or know-how, in any form, that you or your users provide to Microsoft about Microsoft’s business, products, or services.</br></br>
-(c) "**Personal Data**" means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</br></br>
-(d) "**Preview Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through use of the Services.</br></br>
+**Section 1. Definitions**. The following terms have the following meanings:
+
+(a) "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.</
+
+(b) "**Feedback**" means, collectively, suggestions, comments, feedback, ideas, or know-how, in any form, that you or your users provide to Microsoft about Microsoft’s business, products, or services.
+
+(c) "**Personal Data**" means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+
+(d) "**Preview Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through use of the Services.
+
 (e) "**Subprocessor**" means other processors used by Microsoft to process Personal Data.
 
- **Section 2. Scope of Services**. The Preview is for a service that enables organizations to become controllers of Windows diagnostic data on supported versions of Windows, with Microsoft operating as processor of the data (collectively, the “**_Services_**”). You will collaborate with Microsoft in order to provide Microsoft the ability to enable the Services for you. To access the Services, you will need to configure participating Windows devices; Microsoft will assist you in such configuration via documentation or other communications.
+**Section 2. Scope of Services**. The Preview is for a service that enables organizations to become controllers of Windows diagnostic data on supported versions of Windows, with Microsoft operating as processor of the data (collectively, the “**_Services_**”). You will collaborate with Microsoft in order to provide Microsoft the ability to enable the Services for you. To access the Services, you will need to configure participating Windows devices; Microsoft will assist you in such configuration via documentation or other communications.
 
 **Section 3. Intellectual Property**.
 
 a. **License Grant**. During the term of this Preview (“**Term**”), Microsoft grants you and authorized users in your tenant for Windows a non-exclusive, non-transferable, non-sublicensable right and license to access and use the Services in accordance with these Terms.
- 
+
 b. **Use Terms**. These Terms supersede any Microsoft terms and conditions or other agreement. You acknowledge that (i) the Services may not work correctly or in the manner that a commercial service may function; Microsoft may change the Services for the final, commercial version or choose not to release a commercial version; (ii) Microsoft may not provide support for the Services; (iii) the Online Services Terms (OST), including any obligations Microsoft may have regarding Customer Data, do not apply to the Services or Preview Data; (iv) Microsoft has no obligation to hold, export, or return Preview Data, except as described in these Terms; (v) Microsoft has no liability for the deletion of Preview Data, except as described in these Terms; and (vi) you may lose access to the Services and Preview Data after the Term.
 
 c. **Acceptable Use**.  Neither you, nor those that access the Services through you, may: (a) use the Services: (i) in a way prohibited by law, regulation, governmental order or decree; (ii) to violate the rights of others; (iii) to try to gain unauthorized access to or disrupt any service, device, data, account or network; (iv) to spam or distribute malware; or (v) in a way that could harm the Services or impair anyone else’s use of it; or (b) reverse engineer, decompile, disassemble, or work around any technical limitations in the Services, or use the Services to create a competing product. You are responsible for responding to any third-party request regarding your use of the Services or Preview Data, such as a request to take down Preview Data under the U.S. Digital Millennium Copyright Act or other applicable laws.
 
 d. **Data Collection, Use and Location**. The Microsoft Privacy Statement https://privacy.microsoft.com/privacystatement applies to the collection, use and location of Preview Data. In the event of a conflict between Privacy Statement and the terms of these Terms, the terms of these Terms will control.
 
-
-
-
-
 **Section 4. Confidentiality**. The following confidentiality terms apply to the Preview:
 
 a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: 
-    (i) a party’s released or unreleased software or hardware products;</br></br>
-    (ii) a party’s source code;</br></br>
-    (iii) a party’s product marketing or promotion;</br></br>
-    (iv) a party’s business policies or practices;</br></br>
-    (v) a party’s customers or suppliers;</br></br>
-    (vi) information received from others that a party must treat as confidential; and</br></br>
-    (viii) information provided, obtained, or created by a party under these Terms, including:</br></br>
-   * information in reports; 
-   * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
-   * Personal Data; and 
-   * Transactional, sales, and marketing information. 
+(i) a party’s released or unreleased software or hardware products;</br></br>
+(ii) a party’s source code;</br></br>
+(iii) a party’s product marketing or promotion;</br></br>
+(iv) a party’s business policies or practices;</br></br>
+(v) a party’s customers or suppliers;</br></br>
+(vi) information received from others that a party must treat as confidential; and</br></br>
+(viii) information provided, obtained, or created by a party under these Terms, including:
+ * information in reports; 
+ * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
+ * Personal Data; and 
+ * Transactional, sales, and marketing information. 
 
 b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information.  
 
 c. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
-    (i) system access;</br></br>
-    (ii) system and application development and maintenance;</br></br>
-    (iii) change management;</br></br>
-    (iv) asset classification and control;</br></br>
-    (v) incident response, physical and environmental security;</br></br>
-    (vi) disaster recovery/business continuity; and</br></br>
-    (vii) employee training.
+(i) system access;</br></br>
+(ii) system and application development and maintenance;</br></br>
+(iii) change management;</br></br>
+(iv) asset classification and control;</br></br>
+(v) incident response, physical and environmental security;</br></br>
+(vi) disaster recovery/business continuity; and</br></br>
+(vii) employee training.
 
 **Section 5. Data Protection.**
+
 a. **Generally**. To the extent Microsoft is a processor of Personal Data, the General Data Protection Regulation (GDPR) Terms in Appendix 1 govern that processing and the parties also agree to the following terms:
 
 i. Processing Details:  The parties agree that: 
@@ -109,7 +111,7 @@ e. **Assignment**. You may not assign these Terms or delegate any of your rights
 f. **Entire Agreement.** These Terms are the entire agreement between the parties regarding its subject matter and replaces all prior agreements, communications, and representations between the parties regarding its subject matter.</br></br>
 g. **Survival.** Sections 3.b, 4, 7 (with respect to post-termination obligations), and 8-10 will survive these Terms’ expiration or termination. 
 
-## <p style="text-align: center;">Appendix 1: GDPR Terms</p>
+### <p style="text-align: center;">Appendix 1: GDPR Terms</p>
 
 For purposes of these GDPR Terms, you and Microsoft agree that you are the controller of Personal Data and Microsoft is the processor of such data, except when you act as a processor of Personal Data, in which case Microsoft is a subprocessor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on your behalf. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to you in other agreement between Microsoft and you. These GDPR Terms do not apply where Microsoft is a controller of Personal Data. 
 
@@ -117,16 +119,17 @@ For purposes of these GDPR Terms, you and Microsoft agree that you are the contr
 
 1. Microsoft shall not engage another processor without prior specific or your general written authorization. In the case of general written authorization, Microsoft shall inform you of any intended changes concerning the addition or replacement of other processors, thereby giving you the opportunity to object to such changes. (Article 28(2)) 
 
-2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to you. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and your obligations and rights are set forth in the Terms above, including these GDPR Terms. In particular, Microsoft shall:</br></br>
-(a) process the Personal Data only on your documented instructions, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;</br></br>
-(b) ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;</br></br>
-(c) take all measures required pursuant to Article 32 of the GDPR;</br></br>
-(d) respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;</br></br>
-(e) taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;</br></br>
-(f) assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;</br></br>
-(g) at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;</br></br>
-(h) make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.</br></br>
-(i) immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
+2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to you. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and your obligations and rights are set forth in the Terms above, including these GDPR Terms. In particular, Microsoft shall:
+
+    (a) process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;</br></br>
+    (b) ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;</br></br>
+    (c) take all measures required pursuant to Article 32 of the GDPR;</br></br>
+    (d) respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;</br></br>
+    (e) taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;</br></br>
+    (f) assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;</br></br>
+    (g) at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;</br></br>
+    (h) make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.</br></br>
+    (i) immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
 
 3. Where Microsoft engages another processor for carrying out specific processing activities on your behalf, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to you for the performance of that other processor's obligations. (Article 28(4)) 
 
