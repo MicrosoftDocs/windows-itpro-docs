@@ -23,8 +23,7 @@ ms.collection:
 
 These Terms govern your use of the preview described below (“**Preview**”). In order to access the Preview, you must be a current Microsoft Windows customer with an Azure Active Directory (“**AAD**”) subscription. The Preview consists of features and services that are in preview, beta, or other pre-release form for use with Windows and AAD.
 
-Section 1 **Definitions**. The following terms have the following meanings:
-
+**Section 1. Definitions**. The following terms have the following meanings:
    (a) "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.</br></br>
    (b) "**Feedback**" means, collectively, suggestions, comments, feedback, ideas, or know-how, in any form, that you or your users provide to Microsoft about Microsoft’s business, products, or services.</br></br>
    (c) "**Personal Data**" means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</br></br>
@@ -34,40 +33,34 @@ Section 1 **Definitions**. The following terms have the following meanings:
 **Section 2. Scope of Services**. Preview is for a service that enables organizations to become controllers of Windows diagnostic data on supported versions of Windows, with Microsoft operating as processor of the data (collectively, the “**_Services_**”). You will collaborate with Microsoft in order to provide Microsoft the ability to enable the Services for you. To access the Services, you will need to configure participating Windows devices; Microsoft will assist you in such configuration via documentation or other communications.
 
 **Section 3. Intellectual Property**.
-
-a. **License Grant**. During the term of this Preview (“**Term**”), Microsoft grants you and authorized users in your tenant for Windows a non-exclusive, non-transferable, non-sublicensable right and license to access and use the Services in accordance with these Terms.
-
-b. **Use Terms**. These Terms supersede any Microsoft terms and conditions or other agreement. You acknowledge that (i) the Services may not work correctly or in the manner that a commercial service may function; Microsoft may change the Services for the final, commercial version or choose not to release a commercial version; (ii) Microsoft may not provide support for the Services; (iii) the Online Services Terms (OST), including any obligations Microsoft may have regarding Customer Data, do not apply to the Services or Preview Data; (iv) Microsoft has no obligation to hold, export, or return Preview Data, except as described in these Terms; (v) Microsoft has no liability for the deletion of Preview Data, except as described in these Terms; and (vi) you may lose access to the Services and Preview Data after the Term.
-
-c. **Acceptable Use**.  Neither you, nor those that access the Services through you, may: (a) use the Services: (i) in a way prohibited by law, regulation, governmental order or decree; (ii) to violate the rights of others; (iii) to try to gain unauthorized access to or disrupt any service, device, data, account or network; (iv) to spam or distribute malware; or (v) in a way that could harm the Services or impair anyone else’s use of it; or (b) reverse engineer, decompile, disassemble, or work around any technical limitations in the Services, or use the Services to create a competing product. You are responsible for responding to any third-party request regarding your use of the Services or Preview Data, such as a request to take down Preview Data under the U.S. Digital Millennium Copyright Act or other applicable laws.
-
-d. **Data Collection, Use and Location**. The Microsoft Privacy Statement https://privacy.microsoft.com/privacystatement applies to the collection, use and location of Preview Data. In the event of a conflict between Privacy Statement and the terms of these Terms, the terms of these Terms will control.
+    a. **License Grant**. During the term of this Preview (“**Term**”), Microsoft grants you and authorized users in your tenant for Windows a non-exclusive, non-transferable, non-sublicensable right and license to access and use the Services in accordance with these Terms.</br></br>
+    b. **Use Terms**. These Terms supersede any Microsoft terms and conditions or other agreement. You acknowledge that (i) the Services may not work correctly or in the manner that a commercial service may function; Microsoft may change the Services for the final, commercial version or choose not to release a commercial version; (ii) Microsoft may not provide support for the Services; (iii) the Online Services Terms (OST), including any obligations Microsoft may have regarding Customer Data, do not apply to the Services or Preview Data; (iv) Microsoft has no obligation to hold, export, or return Preview Data, except as described in these Terms; (v) Microsoft has no liability for the deletion of Preview Data, except as described in these Terms; and (vi) you may lose access to the Services and Preview Data after the Term.</br></br>
+    c. **Acceptable Use**.  Neither you, nor those that access the Services through you, may: (a) use the Services: (i) in a way prohibited by law, regulation, governmental order or decree; (ii) to violate the rights of others; (iii) to try to gain unauthorized access to or disrupt any service, device, data, account or network; (iv) to spam or distribute malware; or (v) in a way that could harm the Services or impair anyone else’s use of it; or (b) reverse engineer, decompile, disassemble, or work around any technical limitations in the Services, or use the Services to create a competing product. You are responsible for responding to any third-party request regarding your use of the Services or Preview Data, such as a request to take down Preview Data under the U.S. Digital Millennium Copyright Act or other applicable laws.</br></br>
+    d. **Data Collection, Use and Location**. The Microsoft Privacy Statement https://privacy.microsoft.com/privacystatement applies to the collection, use and location of Preview Data. In the event of a conflict between Privacy Statement and the terms of these Terms, the terms of these Terms will control.
 
 **Section 4. Confidentiality**. The following confidentiality terms apply to the Preview:
-a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: 
+    a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: 
+    (i) a party’s released or unreleased software or hardware products;</br></br>
+    (ii) a party’s source code;</br></br>
+    (iii) a party’s product marketing or promotion;</br></br>
+    (iv) a party’s business policies or practices;</br></br>
+    (v) a party’s customers or suppliers;</br></br>
+    (vi) information received from others that a party must treat as confidential; and</br></br>
+    (viii) information provided, obtained, or created by a party under these Terms, including:</br></br>
+   * information in reports; 
+   * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
+   * Personal Data; and 
+   * Transactional, sales, and marketing information. 
 
-(i) a party’s released or unreleased software or hardware products;</br></br>
-(ii) a party’s source code;</br></br>
-(iii) a party’s product marketing or promotion;</br></br>
-(iv) a party’s business policies or practices;</br></br>
-(v) a party’s customers or suppliers;</br></br>
-(vi) information received from others that a party must treat as confidential; and</br></br>
-(viii) information provided, obtained, or created by a party under these Terms, including:
- * information in reports; 
- * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
- * Personal Data; and 
- * Transactional, sales, and marketing information. 
-
-b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information.  
-
-c. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
-(i) system access;</br></br>
-(ii) system and application development and maintenance;</br></br>
-(iii) change management;</br></br>
-(iv) asset classification and control;</br></br>
-(v) incident response, physical and environmental security;</br></br>
-(vi) disaster recovery/business continuity; and</br></br>
-(vii) employee training.
+    b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information.  
+    c. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
+    (i) system access;</br></br>
+    (ii) system and application development and maintenance;</br></br>
+    (iii) change management;</br></br>
+    (iv) asset classification and control;</br></br>
+    (v) incident response, physical and environmental security;</br></br>
+    (vi) disaster recovery/business continuity; and</br></br>
+    (vii) employee training.
 
 **Section 5. Data Protection.**
 a. **Generally**. To the extent Microsoft is a processor of Personal Data, the General Data Protection Regulation (GDPR) Terms in Appendix 1 govern that processing and the parties also agree to the following terms:
