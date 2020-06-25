@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender Advanced Threat Protection.
-keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, windows defender atp
+keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -50,10 +50,10 @@ For both cases you should contact Microsoft support at [General Microsoft Defend
 
 If while accessing Microsoft Defender Security Center you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender ATP subscription, like any other online service subscription, has an expiration date. 
 
-You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the machine offboarding package, should you choose to not renew the license.
+You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the device offboarding package, should you choose to not renew the license.
 
 > [!NOTE]
-> For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+> For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 ![Image of subscription expired](images/atp-subscription-expired.png)
 

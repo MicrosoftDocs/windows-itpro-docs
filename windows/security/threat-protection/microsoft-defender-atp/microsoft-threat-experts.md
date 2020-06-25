@@ -44,10 +44,10 @@ Microsoft Threat Experts provides proactive hunting for the most important threa
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response. 
  
 ## Collaborate with experts, on demand 
-Customers can engage our security experts directly from within Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised machines, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
+Customers can engage our security experts directly from within Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get additional clarification on alerts including root cause or scope of the incident 
-- Gain clarity into suspicious machine behavior and next steps if faced with an advanced attacker  
+- Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker  
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques 
 - Seamlessly transition to Microsoft Incident Response (IR) or other third-party Incident Response services when necessary 
 
@@ -56,8 +56,8 @@ The option to **Consult a threat expert** is available in several places in the 
 - <i>**Help and support menu**</i><BR>
 ![Screenshot of MTE-EOD menu option](images/mte-eod-menu.png)
 
-- <i>**Machine page actions menu**</i><BR>
-![Screenshot of MTE-EOD machine page action menu option](images/mte-eod-machines.png)
+- <i>**Device page actions menu**</i><BR>
+![Screenshot of MTE-EOD device page action menu option](images/mte-eod-machines.png)
 
 - <i>**Alerts page actions menu**</i><BR>
 ![Screenshot of MTE-EOD alert page action menu option](images/mte-eod-alerts.png)

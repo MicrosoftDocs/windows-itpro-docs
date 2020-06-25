@@ -1,7 +1,7 @@
 ---
 title: Query best practices for advanced hunting
 description: Learn how to construct fast, efficient, and error-free threat hunting queries when using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -40,7 +40,7 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 ## Query tips and pitfalls
 
 ### Queries with process IDs
-Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`).
+Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes. To get a unique identifier for a process on a specific device, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the device identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`).
 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
