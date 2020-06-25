@@ -40,7 +40,10 @@ To get started, you must have Microsoft Defender ATP, with licenses assigned and
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
  
-At this point, you are ready to grant access to those who'll use the Microsoft Defender Security Center, which is sometimes referred to as the Microsoft Defender ATP portal. 
+At this point, you are ready to grant access to your security administrators and security operators who'll use the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+
+> [!NOTE]
+> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal. 
 
 ## Grant access to the Microsoft Defender Security Center
 
