@@ -25,7 +25,7 @@ These Terms govern your use of the preview described below (“**Preview**”). 
 
 **Section 1. Definitions**. The following terms have the following meanings:
 
-(a) "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.</
+(a) "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.
 
 (b) "**Feedback**" means, collectively, suggestions, comments, feedback, ideas, or know-how, in any form, that you or your users provide to Microsoft about Microsoft’s business, products, or services.
 
@@ -49,7 +49,7 @@ d. **Data Collection, Use and Location**. The Microsoft Privacy Statement https:
 
 **Section 4. Confidentiality**. The following confidentiality terms apply to the Preview:
 
-a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: 
+a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: </br></br>
 (i) a party’s released or unreleased software or hardware products;</br></br>
 (ii) a party’s source code;</br></br>
 (iii) a party’s product marketing or promotion;</br></br>
@@ -62,7 +62,7 @@ a. During the Term plus 5 years, the parties will hold in strictest confidence a
  * Personal Data; and 
  * Transactional, sales, and marketing information. 
 
-b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information.  
+b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information. 
 
 c. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
 (i) system access;</br></br>
@@ -97,21 +97,30 @@ i. Data Transfers:
 
 **Section 9. Representations and Warranties; Limitation of Liability.** 
 
-a. **By the Parties.**  Each party represents and warrants to the other party that (a) it has all necessary rights, title, and authority to enter into and perform under these Terms; (b) its performance under these Terms will not breach any agreement with a third party; and (c) it will comply with any and all laws, rules, and regulations that are applicable to its performance under these Terms.</br></br>
-b. **Disclaimer.**  EXCEPT AS OTHERWISE PROVIDED IN THESE TERMS AND TO THE EXTENT APPLICABLE LAW PERMITS, MICROSOFT (a) PROVIDES THE SERVICES AS-IS; (b) PROVIDES NO WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE; AND (c) DOES NOT GUARANTEE THAT THE SERVICES WILL BE AVAILABLE, UNINTERRUPTED, OR ERROR-FREE, OR THAT LOSS OF PREVIEW DATA WILL NOT OCCUR.</br></br>
+a. **By the Parties.**  Each party represents and warrants to the other party that (a) it has all necessary rights, title, and authority to enter into and perform under these Terms; (b) its performance under these Terms will not breach any agreement with a third party; and (c) it will comply with any and all laws, rules, and regulations that are applicable to its performance under these Terms.
+
+b. **Disclaimer.**  EXCEPT AS OTHERWISE PROVIDED IN THESE TERMS AND TO THE EXTENT APPLICABLE LAW PERMITS, MICROSOFT (a) PROVIDES THE SERVICES AS-IS; (b) PROVIDES NO WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE; AND (c) DOES NOT GUARANTEE THAT THE SERVICES WILL BE AVAILABLE, UNINTERRUPTED, OR ERROR-FREE, OR THAT LOSS OF PREVIEW DATA WILL NOT OCCUR.
+
 c. **Limitation of Liability.**  Except as otherwise described in this Section 9, the only remedy either party has for claims relating to these Terms or participation in the Preview is to terminate these Terms or your participation in the Preview. NEITHER PARTY WILL BE LIABLE TO THE OTHER PARTY FOR ANY DAMAGES, INCLUDING DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, OR DAMAGES FOR LOST REVENUE, LOST PROFIT, LOST BUSINESS INFORMATION, OR BUSINESS INTERRUPTION, EVEN IF THE PARTY KNEW OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES. The limitations in this Section 9 do not apply to claims arising from any breach of confidentiality obligations under Section 4.
 
 **Section 10. General.** 
 
-a. **Non-Exclusivity.** These Terms are nonexclusive. These Terms do not restrict either party from entering into the same or similar arrangement with any third party.</br></br>
-b. **Jurisdiction and Governing Law.** The laws of the State of Washington, excluding conflicts of law provisions, govern these Terms. If federal jurisdiction exists, then each party consents to exclusive jurisdiction and venue in the federal courts in King County, Washington. If no federal jurisdiction exists, then each party consents to exclusive jurisdiction and venue in the Superior Court of King County, Washington.</br></br>
-c. **Force Majeure.** A party will not be liable for failure to perform an obligation under these Terms to the extent that failure is due to a cause beyond that party’s reasonable control, including natural disaster, war, civil disturbance, or governmental action.</br></br>
-d. **Attorneys’ fees.** If a party employs attorneys to enforce any rights arising out of or relating to these Terms, the prevailing party will be entitled to recover its reasonable attorneys’ fees, costs, and other expenses.</br></br>
-e. **Assignment**. You may not assign these Terms or delegate any of your rights or obligations under these Terms to a third party without Microsoft’s prior written consent.</br></br>
-f. **Entire Agreement.** These Terms are the entire agreement between the parties regarding its subject matter and replaces all prior agreements, communications, and representations between the parties regarding its subject matter.</br></br>
-g. **Survival.** Sections 3.b, 4, 7 (with respect to post-termination obligations), and 8-10 will survive these Terms’ expiration or termination. 
+a. **Non-Exclusivity.** These Terms are nonexclusive. These Terms do not restrict either party from entering into the same or similar arrangement with any third party.
 
-### <p style="text-align: center;">Appendix 1: GDPR Terms</p>
+b. **Jurisdiction and Governing Law.** The laws of the State of Washington, excluding conflicts of law provisions, govern these Terms. If federal jurisdiction exists, then each party consents to exclusive jurisdiction and venue in the federal courts in King County, Washington. If no federal jurisdiction exists, then each party consents to exclusive jurisdiction and venue in the Superior Court of King County, Washington.
+
+c. **Force Majeure.** A party will not be liable for failure to perform an obligation under these Terms to the extent that failure is due to a cause beyond that party’s reasonable control, including natural disaster, war, civil disturbance, or governmental action.
+
+d. **Attorneys’ fees.** If a party employs attorneys to enforce any rights arising out of or relating to these Terms, the prevailing party will be entitled to recover its reasonable attorneys’ fees, costs, and other expenses.
+
+e. **Assignment**. You may not assign these Terms or delegate any of your rights or obligations under these Terms to a third party without Microsoft’s prior written consent.
+
+f. **Entire Agreement.** These Terms are the entire agreement between the parties regarding its subject matter and replaces all prior agreements, communications, and representations between the parties regarding its subject matter.
+
+g. **Survival.** Sections 3.b, 4, 7 (with respect to post-termination obligations), and 8-10 will survive these Terms’ expiration or termination.</br></br>
+
+<p align="center">
+  <b>Appendix 1: GDPR Terms</b><br>
 
 For purposes of these GDPR Terms, you and Microsoft agree that you are the controller of Personal Data and Microsoft is the processor of such data, except when you act as a processor of Personal Data, in which case Microsoft is a subprocessor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on your behalf. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to you in other agreement between Microsoft and you. These GDPR Terms do not apply where Microsoft is a controller of Personal Data. 
 
@@ -121,23 +130,35 @@ For purposes of these GDPR Terms, you and Microsoft agree that you are the contr
 
 2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to you. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and your obligations and rights are set forth in the Terms above, including these GDPR Terms. In particular, Microsoft shall:
 
-    (a) process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;</br></br>
-    (b) ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;</br></br>
-    (c) take all measures required pursuant to Article 32 of the GDPR;</br></br>
-    (d) respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;</br></br>
-    (e) taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;</br></br>
-    (f) assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;</br></br>
-    (g) at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;</br></br>
-    (h) make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.</br></br>
+    (a) process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
+
+    (b) ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
+
+    (c) take all measures required pursuant to Article 32 of the GDPR;
+
+    (d) respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;
+
+    (e) taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
+
+    (f) assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
+
+    (g) at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;
+
+    (h) make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.
+
     (i) immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
 
 3. Where Microsoft engages another processor for carrying out specific processing activities on your behalf, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to you for the performance of that other processor's obligations. (Article 28(4)) 
 
-4. Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, you and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:</br></br>
-(a) the pseudonymisation and encryption of Personal Data;</br></br>
-(b) the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;</br></br>
-(c) the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and</br></br>
-(d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1)) 
+4. Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, you and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:
+
+    (a) the pseudonymisation and encryption of Personal Data;
+
+    (b) the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;
+
+    (c) the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
+
+    (d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
 
 5. In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored or otherwise processed. (Article 32(2)) 
 
