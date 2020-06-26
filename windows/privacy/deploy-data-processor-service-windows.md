@@ -62,7 +62,7 @@ For additional information, see the “device authentication” and “diagnosti
 [Windows 10, version 1903 endpoints](https://docs.microsoft.com/Windows/privacy/manage-Windows-1903-endpoints)
 
 ### Deploying data processor service for Windows
-You can use either Group Policy or an MDM solution to deploy the processor service for Windows to your supported devices.
+You can use either Group Policy or an MDM solution to deploy the data processor service for Windows to your supported devices.
 
 In Group Policy, to enable data collection through the data processor service for Windows, go to **Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds** and switch the **Allow commercial data pipeline** setting to **enabled**. 
 
