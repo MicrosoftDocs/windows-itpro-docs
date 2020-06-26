@@ -39,7 +39,7 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-In the this example, the actual reason is prefixed with `[ERROR]`.
+In this example, the actual reason is prefixed with `[ERROR]`.
 The installation failed because a downgrade between these versions is not supported.
 
 ## MDATP install log fails to record installation
