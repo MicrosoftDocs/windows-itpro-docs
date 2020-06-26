@@ -42,7 +42,7 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 In this example, the actual reason is prefixed with `[ERROR]`.
 The installation failed because a downgrade between these versions is not supported.
 
-## MDATP install log fails to record installation
+## MDATP install log missing or not updated
 
 In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.
 You can verify that an installation happened and analyze possible errors by querying macOS logs (this is helpful in case of MDM deployment, when there is no client UI). We recommend that you use a narrow time window to run a query, and that you filter by the logging process name, as there will be a huge amount of information.
