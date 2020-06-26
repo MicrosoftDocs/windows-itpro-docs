@@ -88,7 +88,9 @@ To perform user-based DSRs, the data processor service for Windows requires your
 If your environment is cloud-only and managed in Azure, or all your devices are Azure AD joined - you don’t need to take any further action. 
 
 If your environment uses on-premises Active Directory to manage identities - Azure AD Connect synchronization is required, and your environment needs to be configured for hybrid Azure AD join. 
-To learn more, visit [How To: Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) and [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis). 
+To learn more, visit [How To: Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) and [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+
+Once you have Azure AD join or hybrid Azure AD join in place, you can learn more about executing user-based DSRs, by visiting this [page](https://review.docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows?branch=siosulli-wps&view=o365-worldwide).
 
 ## Geo-location 
 Windows Diagnostic Data collected through the data processor service for Windows is hosted in our datacenter in the United States.
