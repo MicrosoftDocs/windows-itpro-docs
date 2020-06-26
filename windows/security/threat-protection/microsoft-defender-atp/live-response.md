@@ -63,6 +63,10 @@ You'll need to enable the live response capability in the [Advanced features set
 - **Ensure that the device has an Automation Remediation level assigned to it**.<br>
 You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
+    You'll receive the following error:
+
+    ![Image of error message](images/live-response-error.png)
+
 - **Enable live response unsigned script execution** (optional). <br>
 
     >[!WARNING]
