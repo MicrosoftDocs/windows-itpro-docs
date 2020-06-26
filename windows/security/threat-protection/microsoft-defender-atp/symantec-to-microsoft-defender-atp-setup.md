@@ -81,7 +81,7 @@ Because your organization is still using Symantec, you must set Microsoft Defend
 
 Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender Antivirus. 
 
-To enable Microsoft Defender Antivirus, we recommend using Microsoft Endpoint Manager (ths is replacing Intune soon). However, you can also use one of the methods that are listed in the following table:
+To enable Microsoft Defender Antivirus, we recommend using Intune. However, you can any of the methods that are listed in the following table:
 
 |Method  |What to do  |
 |---------|---------|
