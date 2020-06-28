@@ -22,7 +22,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Require smart card** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Require smart card** security policy setting.
 
 [Note]
 > You may need to download the ADMX templete for your version of Windows for this policy to be applied. 
