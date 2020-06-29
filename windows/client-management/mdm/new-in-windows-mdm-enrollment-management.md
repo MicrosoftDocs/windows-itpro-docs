@@ -2899,7 +2899,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>User knows what policies, profiles, apps MDM has configured</li>
 <li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
 </ul>
-<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#managing-connections" data-raw-source="[Managing connections](mdm-enrollment-of-windows-devices.md#managing-connections)">Managing connections</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
+<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#manage-connections" data-raw-source="[Manage connections](mdm-enrollment-of-windows-devices.md#manage-connections)">Managing connections</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
 </td></tr>
 </tbody>
 </table>
