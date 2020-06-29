@@ -72,7 +72,7 @@ In the event of an Enterprise Reset, these migrated settings are automatically p
 After the upgrade to Windows 10 is complete, if you decide to push down a new wehlockdown.xml, you need to take the following steps to ensure that the updated settings are persisted through an Enterprise Reset:
 
 1.  Delete the TPK\*ppkg and push down a new ppkg with your new configuration to the persistent folder.
-2.  Push down a new ppkg with your new configuration with higher priority. (Be aware that in ICD, Owner=Microsoft, Rank=0 is the lowest priority, and vise versa. With this step, the old assigned access lockdown configuration is overwritten.)
+2.  Push down a new ppkg with your new configuration with higher priority. (Be aware that in ICD, Owner=Microsoft, Rank=0 is the lowest priority, and vice versa. With this step, the old assigned access lockdown configuration is overwritten.)
 
 **Requirements:**
 
@@ -514,7 +514,7 @@ Use this procedure for pre-GDR1 devices:
 25. Select the appropriate device collection and define the schedule.
 
     ![device update](images/windowsembedded-update15.png)
-26. To view the DUReport content, select the appropriate deployment for the configuration saseline that you created. Right-click on the deployment, and then select **View Status**.
+26. To view the DUReport content, select the appropriate deployment for the configuration baseline that you created. Right-click on the deployment, and then select **View Status**.
 27. Select **Run Summarization**, and then select **Refresh**. The test device(s) should be listed on the **Non-Compliant** tab.
 28. Under **Asset Details**, right-click on the test device, and then select **Mode Details**.
 
