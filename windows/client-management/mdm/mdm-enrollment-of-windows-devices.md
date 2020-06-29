@@ -259,7 +259,7 @@ To create a local account and connect the device:
 
     ![phone settings](images/unifiedenrollment-rs1-39.png)
 
-3.  Select the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+3.  Select the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
     ![access work or school page](images/unifiedenrollment-rs1-40.png)
 
