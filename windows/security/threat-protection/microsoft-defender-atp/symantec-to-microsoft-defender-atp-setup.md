@@ -51,8 +51,9 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
-2. Run the following PowerShell cmdlet: <br/>
-   `Get-Service -Name windefend`
+2. Run the following PowerShell cmdlets: <br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
