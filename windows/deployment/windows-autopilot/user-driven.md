@@ -47,6 +47,7 @@ For more information on the available join options, see the following sections:
 
 - [Azure Active Directory join](#user-driven-mode-for-azure-active-directory-join) is available if devices do not need to be joined to an on-prem Active Directory domain.
 - [Hybrid Azure Active Directory join](#user-driven-mode-for-hybrid-azure-active-directory-join) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain.
+- [Hybrid Azure Active Directory join with VPN support](#user-driven-mode-for-hybrid-azure-active-directory-join-with-vpn-support) is available for devices that must be joined to both Azure Active Directory and your on-prem Active Directory domain, but are not connected to the corporate network and must use VPN connectivity.
 
 ## User-driven mode for Azure Active Directory join
 
@@ -83,11 +84,65 @@ To perform a user-driven hybrid Azure AD joined deployment using Windows Autopil
   - Note: The Intune Connector will perform an on-prem AD join, therefore users do not need on-prem AD-join permission, assuming the Connector is [configured to perform this action](https://docs.microsoft.com/intune/windows-autopilot-hybrid#increase-the-computer-account-limit-in-the-organizational-unit) on the user's behalf. 
 - If using Proxy, WPAD Proxy settings option must be enabled and configured.
 
-**Azure AD device join**: The hybrid Azure AD join process uses the system context to perform device Azure AD join, therefore it is not affected by user based Azure AD join permission settings. In addition, all users are enabled to join devices to Azure AD by default.
+The hybrid Azure AD join process uses the system context to register the device to Azure AD, therefore it is not affected by user based Azure AD join permission settings.
 
-### Step by step instructions
+## User-driven mode for hybrid Azure Active Directory join with VPN support
+
+Devices that are joined to Active Directory require connectivity to an Active Directory domain controller for a variety of activities, such as user sign-in (validating the user's credentials) and Group Policy application.  As a result, the Windows Autopilot user-driven Hybrid Azure AD Join process would validate that the device is able to contact an Active Directory domain controller by pinging that domain controller.
+
+With the additional of VPN support for this scenario, it is now possible for you to specify to skip that connectivity check during the Hybrid Azure AD Join.  This does not eliminate the need for communicating with an Active Directory domain controller, but rather enables the device to be first prepared with a needed VPN configuration delivered via Intune prior to the user attempting to sign into Windows, allowing connectivity to the organization's network.
+
+### Requirements
+
+The following additional requirements apply for Hybrid Azure AD Join with VPN support:
+
+- A supported version of Windows 10:
+  - Windows 10 1903 + December 10th Cumulative update (KB4530684, OS build 18362.535) or higher 
+  - Windows 10 1909 + December 10th Cumulative update (KB4530684, OS build 18363.535) or higher  
+  - Windows 10 2004 or later 
+- Enable the new “Skip domain connectivity check” toggle in the Hybrid Azure AD Join Autopilot profile.
+- A VPN configuration that can be deployed via Intune that enables the user to manualy establish a VPN connection from the Windows logon screen, or one that automatically establishes a VPN connection as needed.  
+
+The specific VPN configuration required depends on the VPN software and authentication being used.  For third-party (non-Microsoft) VPN solutions, this typically would involve deploying a Win32 app (containing the VPN client software itself as well as any specific connection information, e.g. VPN endpoint host names) via Intune Management Extensions.  Consult your VPN provider's documentation for configuration details specific to that provider.
+
+> [!NOTE]
+> The VPN requirements are not specific to Windows Autopilot. For example, if you have already implemented a VPN configuration to enable remote password resets, where a user needs to log on to Windows with a new password when not on the organization's network, that same configuration can be used with Windows Autopilot.  Once the user has signed in to cache their credentials, subsequent log-on attempts do not need connectivity since the cached credentials can be used. 
+
+In cases where certificate authentication is required by the VPN software, the needed machine certificate should also be deployed via Intune.  This can be done using the Intune certificate enrollment capabilities, targeting the certificate profiles to the device.
+
+Note that user certificates are not supported because these certificates cannot be deployed until the user logs in.  Also, third-party UWP VPN plug-ins delivered from the Windows Store are also not supported because these are not installed until after the user signs in.
+
+### Validation
+
+Before attempting a hybrid Azure AD Join using VPN, it is important to first confirm that a user-driven Hybrid Azure AD Join process can be performed on the organization's network, before adding in the additional requirements described below.  This simplifies troubleshooting by making sure the core process works fine before adding the additional VPN configuration required.
+
+Next, validate that the VPN configuration (Win32 app, certs, and any other requirements) can be deployed via Intune to an existing device that has already been hybrid Azure AD joined.  For example, some VPN clients create a per-machine VPN connection as part of the installation process, so you can validate the configuration using steps such as these:
+
+- From PowerShell, verify that at least one per-machine VPN connection has been created using the "Get-VpnConnection -AllUserConnection" command.
+- Attempt to manually start the VPN connection using the command: RASDIAL.EXE "ConnectionName"
+- Log out and verify that the "VPN connection" icon can be seen on the Windows logon page.
+- Move the device off the corporate network and attempt to establish the connection using the icon on the Windows logon page, signing into an account that does not have cached credentials.
+
+For VPN configurations that automatically connect, the validation steps may be different.
+
+> [!NOTE]
+> Always On VPN can be used for this scenario.  See the [Deploy Always On VPN](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment) documentation for more information.  Note that Intune cannot yet deploy the needed per-machine VPN profile. 
+
+To validate the end-to-end process, ensure the needed Windows 10 cumulative update has been installed on Windows 10 1903 or Windows 10 1909. This can be done manually during OOBE by first downloading the latest cumulative from https://catalog.update.microsoft.com and then manually installing it:
+
+- Press Shift-F10 to open a command prompt.
+- Insert a USB key containing the donwloaded update.
+- Install the update using the command (substituting the real file name): WUSA.EXE <filename>.msu /quiet
+- Reboot the computer using the command: shutdown.exe /r /t 0
+
+Alternatively, you can invoke Windows Update to install the latest updates through this process:
+
+- Press Shift-F10 to open a command prompt.
+- Run the command "start ms-settings:"
+- Navigate to the "Update & Security" node and check for updates.
+- Reboot after the updates are installed.
+
+## Step by step instructions
 
 See [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](https://docs.microsoft.com/intune/windows-autopilot-hybrid).
-
-
 

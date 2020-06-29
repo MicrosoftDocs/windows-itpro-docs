@@ -1,7 +1,7 @@
 ---
 title: Configure managed security service provider support
 
-description: Take the necessary steps to configure the MSSP integration with Windows Defender ATP 
+description: Take the necessary steps to configure the MSSP integration with Microsoft Defender ATP 
  
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
@@ -24,9 +24,9 @@ ms.date: 09/03/2018
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -44,7 +44,7 @@ The integration will allow MSSPs to take the following actions:
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 
-Before MSSPs can take these actions, the MSSP customer will need to grant access to their Windows Defender ATP tenant so that the MSSP can access the portal. 
+Before MSSPs can take these actions, the MSSP customer will need to grant access to their Microsoft Defender ATP tenant so that the MSSP can access the portal. 
  
 
 Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
@@ -54,7 +54,7 @@ In general, the following configuration steps need to be taken:
 
 
 - **Grant the MSSP access to Microsoft Defender Security Center** <br>
-This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Windows Defender ATP tenant.
+This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Microsoft Defender ATP tenant.
  
 
 - **Configure alert notifications sent to MSSPs** <br>
@@ -97,7 +97,7 @@ Granting access to guest user is done the same way as granting access to a user 
 
 If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role in **your** tenant. For more information, see [Use basic permissions to access the portal](basic-permissions.md).
 
-If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups in **your** tenant. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac.md).
+If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups in **your** tenant. Fore more information on RBAC in Microsoft Defender ATP, see [Manage portal access using RBAC](rbac.md).
  
 
 >[!NOTE]
@@ -166,7 +166,7 @@ Step 3: allow your application on Microsoft Defender Security Center
 
 ### Step 1: Create an application in Azure Active Directory (Azure AD)
  
-You'll need to create an application and grant it permissions to fetch alerts from your customer's Windows Defender ATP tenant.
+You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender ATP tenant.
  
 
 1. Sign in to the [Azure AD portal](https://aad.portal.azure.com/).
@@ -296,7 +296,7 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 5. Click **Authorize application**. 
 
  
-You can now download the relevant configuration file for your SIEM and connect to the Windows Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem.md).
+You can now download the relevant configuration file for your SIEM and connect to the Microsoft Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem.md).
  
 
 - In the ArcSight configuration file / Splunk Authentication Properties file  you will have to write your application key manually by settings the secret value.

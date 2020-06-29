@@ -227,12 +227,14 @@ In most cases, an IT Pro does not need to define this policy. Instead, it is exp
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.
+- 7 - Added in Windows 10, version 1909.
+- 8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 

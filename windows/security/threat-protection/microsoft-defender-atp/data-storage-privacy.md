@@ -30,16 +30,16 @@ This section covers some of the most frequently asked questions regarding privac
 
 ## What data does Microsoft Defender ATP collect?
 
-Microsoft Defender ATP will collect and store information from your configured machines in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
+Microsoft Defender ATP will collect and store information from your configured devices in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
 
-Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as machine identifiers, names, and the operating system version).
+Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and device details (such as device identifiers, names, and the operating system version).
 
 Microsoft stores this data securely in Microsoft Azure and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://go.microsoft.com/fwlink/?linkid=827578).
 
 This data enables Microsoft Defender ATP to:
 - Proactively identify indicators of attack (IOAs) in your organization
 - Generate alerts if a possible attack was detected
-- Provide your security operations with a view into machines, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
+- Provide your security operations with a view into devices, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
 
 Microsoft does not use your data for advertising.
 

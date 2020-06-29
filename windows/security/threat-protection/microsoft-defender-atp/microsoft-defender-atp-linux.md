@@ -20,20 +20,7 @@ ms.topic: conceptual
 
 # Microsoft Defender ATP for Linux
 
-> [!IMPORTANT]
-> **PUBLIC PREVIEW EDITION**
-> 
-> This documentation is for a pre-release solution. The guidelines and the solution are subject to change between now and its general availability.
-> 
-> As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
-> 
-> If you have preview features turned on in the Microsoft Defender Security Center, you should be able to access the Linux onboarding page immediately. If you have not yet opted into previews, we encourage you to [turn on preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview) in the Microsoft Defender Security Center today.
-
-This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
-
-<p></p>
+This topic describes how to install, configure, update, and use Microsoft Defender ATP for Linux.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
@@ -45,16 +32,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Access to the Microsoft Defender Security Center portal
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
-
-### Known issues
-
-- Logged on users do not appear in the ATP portal.
-- Running the product on CentOS / RHEL / Oracle Linux 7.0 or 7.1 with kernel versions lower than 3.10.0-327 can result in hanging the operating system. We recommend that you upgrade to version 7.2 or newer.
-- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
-
-    ```bash
-    $ sudo SUSEConnect --status-text
-    ```
 
 ### Installation instructions
 
@@ -91,14 +68,22 @@ If you experience any installation failures, refer to [Troubleshooting installat
 - Disk space: 650 MB
 - The solution currently provides real-time protection for the following file system types:
 
-  - btrfs
-  - ext2
-  - ext3
-  - ext4
-  - tmpfs
-  - xfs
-
-  More file system types will be added in the future.
+  - `btrfs`
+  - `ecryptfs`
+  - `ext2`
+  - `ext3`
+  - `ext4`
+  - `fuse`
+  - `fuseblk`
+  - `jfs`
+  - `nfs`
+  - `overlay`
+  - `ramfs`
+  - `reiserfs`
+  - `tmpfs`
+  - `udf`
+  - `vfat`
+  - `xfs`
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 

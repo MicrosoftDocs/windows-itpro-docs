@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your machines are less vulnerable from exploitation.
+Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
@@ -30,7 +30,7 @@ The card gives you a high-level view of your exposure score trend over time. Any
 
 ## How it works
 
-Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
+Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your devices are to imminent threats.
 
 The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
 
