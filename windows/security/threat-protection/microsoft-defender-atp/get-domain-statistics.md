@@ -1,7 +1,7 @@
 ---
 title: Get domain statistics API
 description: Retrieves the prevalence for the given domain.
-keywords: apis, graph api, supported apis, get, domain, domain related machines
+keywords: apis, graph api, supported apis, get, domain, domain related devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

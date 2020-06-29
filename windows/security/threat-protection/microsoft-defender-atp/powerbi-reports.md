@@ -30,7 +30,7 @@ ms.topic: article
  
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
-Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
+Understand the security status of your organization, including the status of devices, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
 Microsoft Defender ATP supports the use of Power BI data connectors to enable you to connect and access Microsoft Defender ATP data using Microsoft Graph.
 
@@ -74,7 +74,7 @@ Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing
     ![Image of importing data](images/atp-powerbi-importing.png)
     
     >[!NOTE]
-    >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
+    >Depending on the number of onboarded devices, loading your data in the Power BI service can take several minutes. A larger number of devices might take longer to load. 
 
     When importing data is completed and the dataset is ready, you’ll the following notification:
 
@@ -117,7 +117,7 @@ For more information, see [Create a Power BI dashboard from a report](https://po
    ![Image of importing data](images/atp-powerbi-importing.png)
     
    >[!NOTE]
-   >Depending on the number of onboarded machines, loading your data in the Power BI service can take several minutes. A larger number of machines might take longer to load. 
+   >Depending on the number of onboarded devices, loading your data in the Power BI service can take several minutes. A larger number of devices might take longer to load. 
 
    When importing data is completed and the dataset is ready, you’ll the following notification:
 
@@ -197,11 +197,11 @@ You can use Power BI Desktop to analyze data from Microsoft Defender ATP and mas
 ## Using the Power BI reports
 There are a couple of tabs on the report that's generated:
 
-- Machine and alerts 
+- Device and alerts 
 - Investigation results and action center
 - Secure Score
 
-In general, if you know of a specific threat name, CVE, or KB, you can identify machines with unpatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether machine-level mitigations are configured correctly on the machines and prioritize those that might need attention.
+In general, if you know of a specific threat name, CVE, or KB, you can identify devices with unpatched vulnerabilities that might be leveraged by threats. This report also helps you determine whether device-level mitigations are configured correctly on the devices and prioritize those that might need attention.
 
 
 ## Related topic

@@ -37,12 +37,14 @@ For more information preview features, see [Preview features](https://docs.micro
 
 
 ## June 2020
+- [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
+
 - [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender ATP has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
 
 
 ## April 2020
 
-- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 ## November-December 2019
 
@@ -70,9 +72,9 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Tamper Protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
-- [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
+- [Live response](live-response.md)<BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
 
-- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
+- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can
  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
 - [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2008 R2 SP1.
@@ -82,7 +84,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
   
-- [Machine health and compliance report](machine-reports.md)  The machine health and compliance report provides high-level information about the devices in your organization.
+- [Device health and compliance report](machine-reports.md)  The device health and compliance report provides high-level information about the devices in your organization.
 
 ## May 2019
 
@@ -107,7 +109,7 @@ For more information preview features, see [Preview features](https://docs.micro
 ## February 2019
 - [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Microsoft Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows machines so that they can send sensor data to the Microsoft Defender ATP sensor.
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows devices so that they can send sensor data to the Microsoft Defender ATP sensor.
 
 
 ## October 2018
@@ -164,7 +166,7 @@ Query data using advanced hunting in Microsoft Defender ATP.
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 You can now block untrusted processes from writing to disk sectors using Controlled Folder Access.
 
-- [Onboard non-Windows machines](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [Onboard non-Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
     Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network.
 
 - [Role-based access control (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>

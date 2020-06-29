@@ -73,15 +73,15 @@ The following image shows an instance of unwanted software that was detected and
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-No. EDR in block mode does not affect third-party antivirus protection running on users' machines. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
+No. EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest machine learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
-Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and machine learning models.
+Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and device learning models.
 
 ## Related articles
 

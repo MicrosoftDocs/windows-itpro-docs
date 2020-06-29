@@ -52,7 +52,7 @@ View **Top remediation activities** in the [Threat & Vulnerability Management da
 When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the Threat & Vulnerability Management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
-![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and machine remediation progress.](images/remediation_flyouteolsw.png)
+![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
 
 ## Exceptions
 
