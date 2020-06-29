@@ -47,7 +47,7 @@ Set-MpPreference -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
 > [!TIP]
-> If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to machines in your network(s).
+> If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to devices in your network(s).
 
 You can also use Group Policy, Intune, or MDM CSPs to configure and deploy the setting, as described in the main [Attack surface reduction rules topic](attack-surface-reduction.md).
 

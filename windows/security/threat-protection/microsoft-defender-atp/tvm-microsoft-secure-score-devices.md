@@ -1,6 +1,6 @@
 ---
 title: Overview of Microsoft Secure Score for Devices in Microsoft Defender Security Center
-description: Your score for devices shows the collective security configuration state of your machines across application, operating system, network, accounts, and security controls
+description: Your score for devices shows the collective security configuration state of your devices across application, operating system, network, accounts, and security controls
 keywords: Microsoft Secure Score for Devices, mdatp Microsoft Secure Score for Devices, secure score, configuration score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.topic: conceptual
 >[!NOTE]
 > Configuration score is now part of Threat & Vulnerability Management as Microsoft Secure Score for Devices.
 
-Your score for devices is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your machines across the following categories:
+Your score for devices is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
 
 - Application
 - Operating system
@@ -60,7 +60,7 @@ You can improve your security configuration when you remediate issues from the s
 3. Read the description to understand the context of the issue and what to do next. Select a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up.
 
 4. **Submit request**. You will see a confirmation message that the remediation task has been created.
-   >![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
+   ![Remediation task creation confirmation](images/tvm_remediation_task_created.png)
 
 5. Save your CSV file.
    ![Save csv file](images/tvm_save_csv_file.png)

@@ -34,7 +34,7 @@ You can enable controlled folder access by using any of these methods:
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
-[Audit mode](evaluate-controlled-folder-access.md) allows you to test how the feature would work (and review events) without impacting the normal use of the machine.
+[Audit mode](evaluate-controlled-folder-access.md) allows you to test how the feature would work (and review events) without impacting the normal use of the device.
 
 Group Policy settings that disable local administrator list merging will override controlled folder access settings. They also override protected folders and allowed apps set by the local administrator through controlled folder access. These policies include:
 
@@ -91,7 +91,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
 
 ## Group Policy
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management device, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 

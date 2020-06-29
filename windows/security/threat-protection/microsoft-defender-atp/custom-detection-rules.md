@@ -23,7 +23,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 > [!NOTE]
 > To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
@@ -36,9 +36,9 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 #### Required columns in the query results
 To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each machine. 
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each device. 
 
-The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
+The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto
 DeviceEvents
@@ -72,19 +72,19 @@ When saved, a new or edited custom detection rule immediately runs and checks fo
 
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
-### 3. Specify actions on files or machines.
-Your custom detection rule can automatically take actions on files or machines that are returned by the query.
+### 3. Specify actions on files or devices.
+Your custom detection rule can automatically take actions on files or devices that are returned by the query.
 
-#### Actions on machines
-These actions are applied to machines in the `DeviceId` column of the query results:
-- **Isolate machine** — applies full network isolation, preventing the machine from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
-- **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
-- **Run antivirus scan** — performs a full Microsoft Defender Antivirus scan on the machine
-- **Initiate investigation** — initiates an [automated investigation](automated-investigations.md) on the machine
+#### Actions on devices
+These actions are applied to devices in the `DeviceId` column of the query results:
+- **Isolate device** — applies full network isolation, preventing the device from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about device isolation](respond-machine-alerts.md#isolate-devices-from-the-network)
+- **Collect investigation package** — collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
+- **Run antivirus scan** — performs a full Microsoft Defender Antivirus scan on the device
+- **Initiate investigation** — initiates an [automated investigation](automated-investigations.md) on the device
 
 #### Actions on files
 These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` column of the query results:
-- **Allow/Block** — automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
+- **Allow/Block** — automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
 ### 4. Click **Create** to save and turn on the rule.

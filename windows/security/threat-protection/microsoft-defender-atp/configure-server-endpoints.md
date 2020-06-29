@@ -1,7 +1,7 @@
 ---
 title: Onboard servers to the Microsoft Defender ATP service
 description: Onboard servers so that they can send sensor data to the Microsoft Defender ATP sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, machine management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender Advanced Threat Protection servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -78,23 +78,23 @@ You'll need to take the following steps if you choose to onboard servers through
     Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 > [!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ### Configure and update System Center Endpoint Protection clients
 
 Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
 The following steps are required to enable this integration:
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
-- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
+- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
 
 
 ### Turn on Server monitoring from the Microsoft Defender Security Center portal
 
-1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+1. In the navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
-2. Select Windows Server 2012 R2 and 2016 as the operating system.
+2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
 
 3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment setup. When the setup completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
@@ -123,7 +123,7 @@ Once completed, you should see onboarded servers in the portal within an hour.
 
 
 ### Option 2: Onboard servers through Azure Security Center
-1. In the navigation pane, select **Settings** > **Machine management** > **Onboarding**.
+1. In the navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
 2. Select Windows Server 2008 R2 SP1, 2012 R2 and 2016 as the operating system.
 
@@ -143,19 +143,20 @@ Supported tools include:
 - Group Policy
 - Microsoft Endpoint Configuration Manager
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
-- VDI onboarding scripts for non-persistent machines
+- VDI onboarding scripts for non-persistent devices
 
-For more information, see  [Onboard Windows 10 machines](configure-endpoints.md).
+For more information, see  [Onboard Windows 10 devices](configure-endpoints.md).
 
 Support for Windows Server, provide deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well.
 
-1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md).
+1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
 2. If you're running a third-party antimalware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
        - Name: ForceDefenderPassiveMode
+       - Type: REG_DWORD
        - Value: 1
 
     1. Run the following PowerShell command to verify that the passive mode was configured:
@@ -185,7 +186,7 @@ The following capabilities are included in this integration:
     > Automated onboarding is only applicable for Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016.
 
 - Servers monitored by  Azure Security Center will also be available in Microsoft Defender ATP - Azure Security Center seamlessly connects to the Microsoft Defender ATP tenant, providing a single view across clients and servers.  In addition, Microsoft Defender ATP alerts will be available in the Azure Security Center console.
-- Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach
+- Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 > - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
@@ -194,7 +195,7 @@ The following capabilities are included in this integration:
 
 
 ## Offboard servers
-You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client machines.
+You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 For other server versions, you have two options to offboard servers from the service:
 - Uninstall the MMA agent
@@ -227,13 +228,13 @@ To offboard the server, you can use either of the following methods:
 
    1. In the navigation pane, select **Settings** > **Onboarding**.
 
-   1. Select **Windows Server 2012 R2 and 2016** as the operating system and get your Workspace ID:
+   1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
 
       ![Image of server onboarding](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
-    ```
+    ```powershell
     # Load agent scripting object
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace
@@ -243,8 +244,8 @@ To offboard the server, you can use either of the following methods:
     ```
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints.md)
-- [Onboard non-Windows machines](configure-endpoints-non-windows.md)
+- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md)
 - [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

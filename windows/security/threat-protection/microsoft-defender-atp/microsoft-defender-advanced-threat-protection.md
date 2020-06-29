@@ -34,7 +34,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
 
 
--   **Cloud security analytics**: Leveraging big-data, machine-learning, and
+-   **Cloud security analytics**: Leveraging big-data, device-learning, and
     unique Microsoft optics across the Windows ecosystem,
     enterprise cloud products (such as Office 365), and online assets, behavioral signals
     are translated into insights, detections, and recommended responses

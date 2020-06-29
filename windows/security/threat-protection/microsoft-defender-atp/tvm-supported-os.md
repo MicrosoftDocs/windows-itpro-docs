@@ -24,8 +24,6 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 Before you begin, ensure that you meet the following operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for.
 
 Operating system | Security assessment support

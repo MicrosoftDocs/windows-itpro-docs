@@ -35,11 +35,11 @@ Since it is real-time, in a matter of minutes, you will see vulnerability inform
 
 You can access the Software inventory page by selecting **Software inventory** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).
 
-View software on specific machines in the individual machines pages from the [machines list](machines-view-overview.md).
+View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
 ## Software inventory overview
 
-The **Software inventory** page opens with a list of software installed in your network, vendor name, weaknesses found, threats associated with them, exposed machines, impact to exposure score, and tags. You can also filter the software inventory list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
+The **Software inventory** page opens with a list of software installed in your network, vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags. You can also filter the software inventory list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
 ![Example of the landing page for software inventory.](images/software_inventory_filter.png)
 
 Select the software that you want to investigate and a flyout panel opens up with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
@@ -50,20 +50,20 @@ Select the software that you want to investigate and a flyout panel opens up wit
 
 Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Open software page** (see image in the previous section). A full page will appear with all the details of a specific software and the following information:
 
-- Side panel with vendor information, prevalence of the software in the organization (including number of machines it is installed on, and exposed machines that are not patched), whether and exploit is available, and impact to your exposure score
-- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed machines
-- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the machines that the software is installed on, and the specific versions of the software with the number of machines that have each version installed and number of vulnerabilities.
+- Side panel with vendor information, prevalence of the software in the organization (including number of devices it is installed on, and exposed devices that are not patched), whether and exploit is available, and impact to your exposure score
+- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed devices
+- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
 
-![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
+    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 
 ## Software evidence
 
-We now show evidence of where we detected a specific software on a machine from the registry, disk or both.
-You can find it on any machines found in the [machines list](machines-view-overview.md) in a section called "Software Evidence."
+We now show evidence of where we detected a specific software on a device from the registry, disk or both.
+You can find it on any devices found in the [devices list](machines-view-overview.md) in a section called "Software Evidence."
 
-From the Microsoft Defender Security Center navigation panel, go to **Machines list** > select the name of a machine to open the machine page (like Computer1) > select the **Software inventory** tab > select the software name to open the flyout and view software evidence.
+From the Microsoft Defender Security Center navigation panel, go to **Devices list** > select the name of a device to open the device page (like Computer1) > select the **Software inventory** tab > select the software name to open the flyout and view software evidence.
 
-![Software evidence example of Windows 10 from the machines list, showing software evidence registry path.](images/tvm-software-evidence.png)
+![Software evidence example of Windows 10 from the devices list, showing software evidence registry path.](images/tvm-software-evidence.png)
 
 ## Report inaccuracy
 
