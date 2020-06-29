@@ -17,7 +17,6 @@ ms.date: 11/15/2017
 
 # MDM enrollment of Windows 10-based devices
 
-
 In today’s cloud-first world, enterprise IT departments increasingly want to let employees use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization’s resources, such as apps, the corporate network, and email.
 
 > [!NOTE]
@@ -233,7 +232,7 @@ To create a local account and connect the device:
 
    ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
    ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
