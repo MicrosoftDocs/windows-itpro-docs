@@ -1374,7 +1374,7 @@ To validate on Desktop, do the following:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
+Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jump lists from appearing.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1389,13 +1389,13 @@ To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
 2.   Pin Photos to the taskbar, and open some images in the photos app.
-3.   Right click the pinned photos app and verify that a jumplist of recently opened items pops up.
+3.   Right click the pinned photos app and verify that a jump list of recently opened items pops up.
 4.   Toggle "Show recently opened items in Jump Lists on Start of the taskbar" in Settings to clear jump lists.
 5.   Enable policy.
 6.   Restart explorer.exe
 7.   Check that Settings toggle is grayed out.
 8.   Repeat Step 2.
-9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
+9.   Right Click pinned photos app and verify that there is no jump list of recent items.
 
 <!--/Validation-->
 <!--/Policy-->
