@@ -251,15 +251,9 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-   **Options tab**
-   - Select **Application & Custom Settings**
-   - Select **Configure**.
+4. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration profile](images/jamfpro-mac-profile.png)
-
-4. Select **Upload File (PLIST file)**.
-
-    ![Image of profile](images/jamfpro-plist.png)
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
 
@@ -267,32 +261,32 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of upload file](images/jamfpro-plist-file.png)
 
-6. Select **Open** and select the onboarding file.
+7. Select **Open** and select the onboarding file.
 
     ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
 
-7. Select **Upload**. 
+8. Select **Upload**. 
 
     ![Image of uploading plist file](images/jamfpro-upload-plist.png)
 
 
-8. Select the **Scope** tab.
+9. Select the **Scope** tab.
 
     ![Image of scope tab](images/jamfpro-scope-tab.png)
 
-9. Select the target computers.
+10. Select the target computers.
 
     ![Image of target computers](images/jamfpro-target-computer.png)
 
     ![Image of target computers](images/jamfpro-targets.png) 
 
-10. Select **Save**.
+11. Select **Save**.
 
     ![Image of target computers](images/jamfpro-deployment-target.png)
 
     ![Image of target computers selected](images/jamfpro-target-selected.png)
 
-11. Select **Done**.
+12. Select **Done**.
 
     ![Image of target computers](images/jamfpro-target-group.png)
 
@@ -302,7 +296,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
 1. In the Jamf Pro dashboard, select **General**.
 
-2. Enter the following values:
+2. Enter the following details:
 
   - Name: MDATP MDAV configuration settings
   - Description:\<blank\>
@@ -312,11 +306,11 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of configuration settings](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-3. Select **Application & Custom Settings** > **Configure**.
+3. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration settings](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-4. In **Application & Custom Settings**, select the radio button **Upload File (PLIST file)**.
+4. Select **Upload File (PLIST file)**.
 
     ![Image of configuration settings](images/6f85269276b2278eca4bce84f935f87b.png)
 
@@ -327,8 +321,6 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 6. Select **Upload PLIST File**.
 
     ![Image of configuration settings](images/526e978761fc571cca06907da7b01fd6.png)
-
-    ![Image of configuration settings](images/d8254adf4bd30290f9a8a0c131830a1f.png)
 
 7. Select **Choose File**.
 
@@ -357,7 +349,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of configuration settings](images/a422e57fe8d45689227e784443e51bd1.png)
 
-12. Select the **Scope** tab, then select **Add**.
+12. Select the **Scope** tab.
 
     ![Image of configuration settings](images/9fc17529e5577eefd773c658ec576a7d.png)
 
@@ -382,7 +374,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     
     ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
-2. Enter the following values:
+2. Enter the following details:
 
   - Name: MDATP MDAV Notification settings
   - Description: macOS 10.15 (Catalina) or newer
@@ -392,7 +384,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration settings](images/abccba0b620cec06b03d219832667fe1.png)
 
-3. In **Application & Custom Settings**, select the radio button **Upload File (PLIST file)**.
+3. Select **Upload File (PLIST file)**.
 
     ![Image of configuration settings](images/7f9138053dbcbf928e5182ee7b295ebe.png)
  
@@ -566,7 +558,7 @@ leaf[subject.OU] = UBF8T346G9
 
     ![A screenshot of a social media post Description automatically generated](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-2. Enter the following values:
+2. Enter the following details:
 
   - Name: MDATP MDAV Kernel Extension
   - Description: MDATP kernel extension (kext)
@@ -582,7 +574,7 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/39cf120d3ac3652292d8d1b6d057bd60.png)
 
-4. In **Approved Kernel Extensions** enter the following values:
+4. In **Approved Kernel Extensions** Enter the following details:
 
   - Display Name: Microsoft Corp.
   - Team ID: UBF8T346G9
@@ -635,7 +627,7 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/21de3658bf58b1b767a17358a3f06341.png)
 
-7. In **New Package** enter the following values:
+7. In **New Package** Enter the following details:
 
     **General tab**
     - Display Name: Leave it blank for now. Because it will be reset when you choose your pkg.
@@ -680,7 +672,7 @@ leaf[subject.OU] = UBF8T346G9
 ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
 
-9. In **New Policy** > **General** enter the following values:
+9. In **New Policy** > **General** Enter the following details:
 
     - Display name: MDATP Onboarding Contoso 200329 v100.86.92
 
@@ -705,7 +697,7 @@ leaf[subject.OU] = UBF8T346G9
    
     ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
-13. In **New Policy**, enter the following values:
+13. In **New Policy**, Enter the following details:
 
     **Options**
     - Select **Install**.
