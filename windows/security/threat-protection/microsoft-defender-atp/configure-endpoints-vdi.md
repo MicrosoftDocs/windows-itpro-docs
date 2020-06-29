@@ -1,7 +1,7 @@
 ---
-title: Onboard non-persistent virtual desktop infrastructure (VDI) machines
-description: Deploy the configuration package on virtual desktop infrastructure (VDI) machine so that they are onboarded to Microsoft Defender ATP the service.
-keywords: configure virtual desktop infrastructure (VDI) machine, vdi, machine management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
+title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender ATP the service.
+keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Windows ATP endpoints, configure Microsoft Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,30 +18,37 @@ ms.topic: article
 ms.date: 04/16/2020
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) machines
+# Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
 **Applies to:**
-- Virtual desktop infrastructure (VDI) machines
+- Virtual desktop infrastructure (VDI) devices
 
 >[!WARNING]
-> Micrsosoft Defender ATP currently does not support Windows Virtual Desktop multi-user session.
+> Microsoft Defender ATP support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
-## Onboard non-persistent virtual desktop infrastructure (VDI) machines
+## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
-Microsoft Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
+Microsoft Defender ATP supports non-persistent VDI session onboarding. 
+
+>[!Note]
+>To onboard non-persistent VDI sessions, VDI machines must be on Windows 10.
+>
+>While other Windows versions might work, only Windows 10 is supported.
+
+There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft Defender ATP prior to the actual provisioning.
-- The machine name is typically reused for new sessions.
+- The device name is typically reused for new sessions.
 
-VDI machines can appear in Microsoft Defender ATP portal as either:
+VDI devices can appear in Microsoft Defender ATP portal as either:
 
-- Single entry for each machine.  
-Note that in this case, the *same* machine name must be configured when the session is created, for example using an unattended answer file.
-- Multiple entries for each machine - one for each session.
+- Single entry for each device.  
+Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
+- Multiple entries for each device - one for each session.
 
-The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
+The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 >[!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding. 
@@ -61,8 +68,8 @@ The following steps will guide you through onboarding VDI machines and will high
     >[!NOTE]
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
-3. The following step is only applicable if you're implementing a single entry for each machine: <br>
-    **For single entry for each machine**:<br>
+3. The following step is only applicable if you're implementing a single entry for each device: <br>
+    **For single entry for each device**:<br>
         a. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
     >[!NOTE]
@@ -71,30 +78,30 @@ The following steps will guide you through onboarding VDI machines and will high
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
     >[!NOTE]
-    >Domain Group Policy may also be used for onboarding non-persistent VDI machines.
+    >Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
 5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
-  **For single entry for each machine**:<br>
+  **For single entry for each device**:<br>
   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. <br><br>
-  **For multiple entries for each machine**:<br>
+  **For multiple entries for each device**:<br>
   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 6. Test your solution:
 
-    a. Create a pool with one machine.
+    a. Create a pool with one device.
       
-    b. Logon to machine.
+    b. Logon to device.
       
-    c. Logoff from machine.
+    c. Logoff from device.
 
-    d. Logon to machine with another user.
+    d. Logon to device with another user.
       
-    e. **For single entry for each machine**: Check only one entry in Microsoft Defender Security Center.<br>
-    **For multiple entries for each machine**: Check multiple entries in Microsoft Defender Security Center.
+    e. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
+    **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
-7. Click **Machines list** on the Navigation pane.
+7. Click **Devices list** on the Navigation pane.
 
-8. Use the search function by entering the machine name and select **Machine** as search type.
+8. Use the search function by entering the device name and select **Device** as search type.
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
@@ -113,7 +120,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script).
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
@@ -129,14 +136,15 @@ If offline servicing is not a viable option for your non-persistent VDI environm
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
+    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
 5. Re-seal the golden/master image as you normally would.
 
 ## Related topics
-- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
+- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

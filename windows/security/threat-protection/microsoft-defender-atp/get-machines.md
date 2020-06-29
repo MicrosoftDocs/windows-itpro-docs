@@ -1,7 +1,7 @@
 ---
 title: List machines API
-description: Retrieves a collection of recently seen machines.
-keywords: apis, graph api, supported apis, get, machines
+description: Retrieves a collection of recently seen devices.
+keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -31,7 +31,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated with  Mi
 
 
 ## Limitations
-1. You can get machines last seen in the past 30 days.
+1. You can get devices last seen in the past 30 days.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
@@ -48,7 +48,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only machines,that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

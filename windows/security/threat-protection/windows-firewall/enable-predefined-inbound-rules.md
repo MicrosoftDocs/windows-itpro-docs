@@ -1,6 +1,6 @@
 ---
 title: Enable Predefined Inbound Rules (Windows 10)
-description: Enable Predefined Inbound Rules
+description: Learn the rules for Windows Defender Firewall with Advanced Security for common networking roles and functions.
 ms.assetid: a4fff086-ae81-4c09-b828-18c6c9a937a7
 ms.reviewer: 
 ms.author: dansimp

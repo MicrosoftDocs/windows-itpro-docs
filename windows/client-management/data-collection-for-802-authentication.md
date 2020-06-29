@@ -2,7 +2,7 @@
 title: Data collection for troubleshooting 802.1X authentication
 ms.reviewer: 
 manager: dansimp
-description: Data needed for reviewing 802.1X Authentication issues
+description: Use the steps in this article to collect data that can be used to troubleshoot 802.1X authentication issues. 
 keywords: troubleshooting, data collection, data, 802.1X authentication, authentication, data
 ms.prod: w10
 ms.mktglfcycl:

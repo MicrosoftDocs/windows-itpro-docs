@@ -42,7 +42,7 @@ Microsoft Defender ATP adds support for this scenario in the following forms:
 - Once an alert is generated, the signal is shared across all Microsoft Defender ATP protected endpoints in the enterprise. Microsoft Defender ATP takes immediate automated or operator-assisted response to address the alert.
 
 ## Scenario 2: Security orchestration and automation response (SOAR) integration
-Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs exposes to orchestrate responses, such as query for device data, trigger machine isolation, block/allow, resolve alert and others.
+Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs exposes to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others.
 
 ## Scenario 3: Indicators matching 
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability is available in Microsoft Defender ATP and gives the ability to set a list of indicators for prevention, detection and exclusion of entities. One can define the action to be taken as well as the duration for when to apply the action.

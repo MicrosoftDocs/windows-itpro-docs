@@ -26,6 +26,12 @@ ms.topic: conceptual
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
+> [!WARNING]
+> Each version of Microsoft Defender ATP for Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
+> ```bash
+> mdatp health --field product_expiration
+> ```
+
 To update Microsoft Defender ATP for Linux manually, execute one of the following commands:
 
 ## RHEL and variants (CentOS and Oracle Linux)

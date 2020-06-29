@@ -1,6 +1,6 @@
 ---
 title: Indicator resource type
-description: Indicator entity description.
+description: Specify the entity details and define the expiration of the indicator using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, supported apis, get, TiIndicator, Indicator, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -50,7 +50,7 @@ severity | Enum | The severity of the indicator. possible values are: "Informati
 title | String | Indicator title.
 description | String | Description of the indicator.
 recommendedActions | String | Recommended actions for the indicator.
-rbacGroupNames | List of strings | RBAC machine group names where the indicator is exposed and active. Empty list in case it exposed to all machines.
+rbacGroupNames | List of strings | RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
 
 
 ## Json representation

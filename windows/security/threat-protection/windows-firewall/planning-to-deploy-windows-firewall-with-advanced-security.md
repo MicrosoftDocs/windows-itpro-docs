@@ -1,6 +1,6 @@
 ---
 title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows 10)
-description: Planning to Deploy Windows Defender Firewall with Advanced Security
+description: Use the design information in this article to plan for the deployment of Windows Defender Firewall with Advanced Security in your organization.
 ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.reviewer: 
 ms.author: dansimp
@@ -27,30 +27,42 @@ After you collect information about your environment and decide on a design by f
 
 ## Reviewing your Windows Defender Firewall with Advanced Security Design
 
-If the design team that created the Windows Defender Firewall design for your organization is different from the deployment team that will implement it, make sure that the deployment team reviews the final design with the design team. Review the following points:
+If the design team that created the Windows Defender Firewall design for your organization is different from the deployment team that will implement it, make sure the deployment team reviews the final design with the design team. Review the following information before starting your deployment.
 
--   The design team's strategy for determining how WMI and security group filters attached to the GPOs will determine which devices apply to which GPO. The deployment team can refer to the following topics in the Windows Defender Firewall with Advanced Security Design Guide:
+### Decide which devices apply to which GPO
 
-    -   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
+The design team's strategy for determining how WMI and security group filters attached to the GPOs will determine which devices apply to which GPO. The deployment team can refer to the following topics in the Windows Defender Firewall with Advanced Security Design Guide:
 
-    -   [Planning the GPOs](planning-the-gpos.md)
+-   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
 
-    -   [Planning GPO Deployment](planning-gpo-deployment.md)
+-   [Planning the GPOs](planning-the-gpos.md)
 
--   The communication to be allowed between members of each of the zones in the isolated domain and devices that are not part of the isolated domain or members of the isolated domain's exemption list.
+-   [Planning GPO Deployment](planning-gpo-deployment.md)
 
--   The recommendation that domain controllers are exempted from IPsec authentication requirements. If they are not exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
+### Configure communication between members and devices
 
--   The rationale for configuring all IPsec authentication rules to request, not require, authentication until the successful negotiation of IPsec has been confirmed. If the rules are set to require authentication before confirming that authentication is working correctly, then communications between devices might fail. If the rules are set to request authentication only, then an IPsec authentication failure results in fall-back-to-clear behavior, so communications can continue while the authentication failures are investigated.
+Decide what communication is to be allowed between members of each of the zones in the isolated domain and devices that are not part of the isolated domain or members of the isolated domain's exemption list.
 
--   The requirement that all devices that must communicate with each other share a common set of:
+### Exempt domain controllers from IPsec authentication requirements
 
-    -   Authentication methods
+It is recommended that domain controllers are exempt from IPsec authentication requirements. If they are not exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
 
-    -   Main mode key exchange algorithms
+### Configure IPsec authentication rules
 
-    -   Quick mode data integrity algorithms
+The rationale for configuring all IPsec authentication rules to request, not require, authentication until the successful negotiation of IPsec has been confirmed. If the rules are set to require authentication before confirming that authentication is working correctly, then communications between devices might fail. If the rules are set to request authentication only, then an IPsec authentication failure results in fall-back-to-clear behavior. Communications can continue while the authentication failures are investigated.
 
-    If at least one set of each does not match between two devices, then the devices cannot successfully communicate.
+### Make sure all devices can communicate with each other
+
+For all devices to communicate with each other, they must share a common set of:
+
+-   Authentication methods
+
+-   Main mode key exchange algorithms
+
+-   Quick mode data integrity algorithms
+
+If at least one set of each does not match between two devices, then the devices cannot successfully communicate.
+
+## Deploy your Windows Firewall Design Plan
 
 After the design and deployment teams agree on these issues, they can proceed with the deployment of the Windows Defender Firewall design. For more information, see [Implementing Your Windows Defender Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md).

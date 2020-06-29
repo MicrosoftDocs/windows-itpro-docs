@@ -29,7 +29,7 @@ ms.topic: article
 To benefit from Microsoft Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
 
 >[!NOTE]
->This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
 
 > See [Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration) for detailed integration of Microsoft Defender ATP with Microsoft Cloud App Security. 
 
@@ -43,7 +43,7 @@ Once activated, Microsoft Defender ATP will immediately start forwarding discove
 
 ## View the data collected
 
-To view and access Microsoft Defender ATP data in Microsoft Cloud Apps Security, see [Investigate machines in Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
+To view and access Microsoft Defender ATP data in Microsoft Cloud Apps Security, see [Investigate devices in Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
 
 
 For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).

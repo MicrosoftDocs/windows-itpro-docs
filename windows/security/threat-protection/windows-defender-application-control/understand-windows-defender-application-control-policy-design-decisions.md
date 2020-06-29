@@ -1,7 +1,7 @@
 ---
 title: Understand Windows Defender Application Control policy design decisions  (Windows 10)
 description: Understand Windows Defender Application Control policy design decisions. 
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp
@@ -62,7 +62,7 @@ Organizations with well-defined, centrally-managed app management and deployment
 | - | - |
 | All apps are centrally managed and deployed using endpoint management tools like [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). | Organizations that centrally manage all apps are best-suited for application control. WDAC options like [managed installer](use-windows-defender-application-control-with-managed-installer.md) can make it easy to authorize apps that are deployed by the organization's app distribution management solution. |
 | Some apps are centrally managed and deployed, but teams can install additional apps for their members. | [Supplemental policies](deploy-multiple-windows-defender-application-control-policies.md) can be used to allow team-specific exceptions to your core organization-wide WDAC policy. Alternatively, teams can leverage managed installers to install their team-specific apps or admin-only file path rules can be used to allow apps installed by admin users. |
-| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | WDAC can integrate with Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md) (the same source of intelligence that powers Windows Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
+| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | WDAC can integrate with Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md) (the same source of intelligence that powers Microsoft Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
 | Users and teams are free to download and install apps without restriction. | WDAC policies can be deployed in audit mode to gain insight into the apps and binaries running in your organization without impacting user and team productivity.|
 
 ### Are internally-developed line-of-business (LOB) apps and apps developed by 3rd parties digitally signed?

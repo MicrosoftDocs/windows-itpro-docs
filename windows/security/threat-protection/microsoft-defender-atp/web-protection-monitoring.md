@@ -47,9 +47,9 @@ Select a specific web threat category in the **Web threat protection summary** c
 - **Blocks** — number of times requests were blocked
 - **Access trend** — change in number of access attempts
 - **Threat category** — type of web threat
-- **Machines** — number of machines with access attempts
+- **Devices** — number of devices with access attempts
 
-Select a domain to view the list of machines that have attempted to access URLs in that domain as well as the list of URLs.
+Select a domain to view the list of devices that have attempted to access URLs in that domain as well as the list of URLs.
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)

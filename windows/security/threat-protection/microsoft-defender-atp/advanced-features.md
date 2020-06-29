@@ -35,7 +35,7 @@ Turn on this feature to take advantage of the automated investigation and remedi
 
 ## Live response
 
-Turn on this feature so that users with the appropriate permissions can start a live response session on machines.
+Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
 
@@ -52,17 +52,17 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 
 >[!NOTE]
 >
->- The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
+>- The result of the auto-resolve action may influence the Device risk level calculation which is based on the active alerts found on a device.  
 >- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 ## Allow or block file
 
 Blocking is only available if your organization fulfills these requirements:
 
-- Uses Windows Defender Antivirus as the active antimalware solution and,
+- Uses Microsoft Defender Antivirus as the active antimalware solution and,
 - The cloud-based protection feature is enabled
 
-This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on machines in your organization.
+This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on devices in your organization.
 
 To turn **Allow or block** files on:
 
@@ -80,7 +80,7 @@ After turning on this feature, you can [block files](respond-file-alerts.md#allo
 
 Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they will be allowed or blocked based on your custom indicator list.
 
-To use this feature, machines must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
+To use this feature, devices must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 For more information, see [Manage indicators](manage-indicators.md).
 
@@ -93,7 +93,7 @@ Turn on this feature so that you can see user details stored in Azure Active Dir
 
 - Security operations dashboard
 - Alert queue
-- Machine details page
+- Device details page
 
 For more information, see [Investigate a user account](investigate-user.md).
 
@@ -102,11 +102,11 @@ For more information, see [Investigate a user account](investigate-user.md).
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
 >[!NOTE]
-> When a machine is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when machines are in isolation mode.
+> When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
 
 ## Azure Advanced Threat Protection integration
 
-The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the machine-based investigation capability by pivoting across the network from an identify point of view.
+The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature.
@@ -117,7 +117,7 @@ Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microso
 
 ### Enable the Microsoft Defender ATP integration from the Azure ATP portal
 
-To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
+To receive contextual device integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
 
 1. Log in to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
@@ -125,18 +125,18 @@ To receive contextual machine integration in Azure ATP, you'll also need to enab
 
 3. Toggle the Integration setting to **On** and click **Save**.
 
-After completing the integration steps on both portals, you'll be able to see relevant alerts in the machine details or user details page.
+After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
 
 ## Office 365 Threat Intelligence connection
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows machines.
+When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
 
-To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Microsoft Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Microsoft Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 
 ## Microsoft Threat Experts
 
@@ -150,11 +150,11 @@ Out of the two Microsoft Threat Expert components, targeted attack notification 
 Enabling this setting forwards Microsoft Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
 
 >[!NOTE]
->This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
+>This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
 
 ## Azure Information Protection
 
-Turning on this setting allows signals to be forwarded to Azure Information Protection. It gives data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
+Turning on this setting allows signals to be forwarded to Azure Information Protection. It gives data owners and administrators visibility into protected data on onboarded devices and device risk ratings.
 
 ## Microsoft Intune connection
 

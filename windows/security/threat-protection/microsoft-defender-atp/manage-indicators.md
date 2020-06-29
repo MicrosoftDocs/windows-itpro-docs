@@ -2,7 +2,7 @@
 title: Manage indicators 
 ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
-keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
+keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -28,15 +28,15 @@ ms.topic: article
 
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
 
-Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action as well as the scope of the machine group to apply it to.
+Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken as well as the duration for when to apply the action as well as the scope of the device group to apply it to.
 
-Currently supported sources are the cloud detection engine of Microsoft Defender ATP, the automated investigation and remediation engine, and the endpoint prevention engine (Windows Defender AV).
+Currently supported sources are the cloud detection engine of Microsoft Defender ATP, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender AV).
 
 **Cloud detection engine**<br>
 The cloud detection engine of Microsoft Defender ATP regularly scans collected data and tries to match the indicators you set. When there is a match, action will be taken according to the settings you specified for the IoC.
 
 **Endpoint prevention engine**<br>
-The same list of indicators is honored by the prevention agent. Meaning, if Windows Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Windows Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Windows Defender AV  will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender AV  will not detect nor block the file from being run.
 
 **Automated investigation and remediation engine**<BR>
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
@@ -61,7 +61,7 @@ You can create an indicator for:
 
 
 ## Create indicators for files
-You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
 
 There are two ways you can create indicators for files:
 - By creating an indicator through the settings page
@@ -70,9 +70,9 @@ There are two ways you can create indicators for files:
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for files:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 - The Antimalware client version must be 4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later.
+- Supported on devices on Windows 10, version 1703 or later.
 - To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
 - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
 
@@ -82,7 +82,7 @@ It's important to understand the following prerequisites prior to creating indic
 
  
 >[!NOTE]
->There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
+>Typically, file blocks are enforced within a couple of minutes, but can take upwards of 30 minutes.
 
 ### Create an indicator for files from the settings page
 
@@ -95,14 +95,14 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group according to your [user permissions](machine-groups.md).
 
 5. Review the details in the Summary tab, then click **Save**.
 
 ### Create a contextual indicator from the file details page
 One of the options when taking [response actions on a file](respond-file-alerts.md) is adding an indicator for the file. 
 
-When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a machine in your organization attempts to run it.
+When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
@@ -111,13 +111,13 @@ Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs, thr
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by device groups if you deem certain groups to be more or less at risk than others.
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 - URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
-- Supported on machines on Windows 10, version 1709 or later. 
+- Supported on devices on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 
@@ -131,7 +131,7 @@ It's important to understand the following prerequisites prior to creating indic
 >- Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
->There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
+>There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
 
 ### Create an indicator for IPs, URLs, or domains from the settings page
 
@@ -144,25 +144,25 @@ It's important to understand the following prerequisites prior to creating indic
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group.
 
 5. Review the details in the Summary tab, then click **Save**.
 
-## Create indicators for certificates (preview)
+## Create indicators for certificates
 
 You can create indicators for certificates. Some common use cases include:
 
 - Scenarios when you need to deploy blocking technologies, such as [attack surface reduction rules](attack-surface-reduction.md) and [controlled folder access](controlled-folders.md) but need to allow behaviors from signed applications by adding the certificate in the allow list.
-- Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
+- Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Microsoft Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
 
 
 ### Before you begin
 
 It's important to understand the following requirements prior to creating indicators for certificates:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later.
+- Supported on devices on Windows 10, version 1703 or later.
 - The virus and threat protection definitions must be up-to-date.
 - This feature currently supports entering .CER or .PEM file extensions.
 
@@ -185,7 +185,7 @@ It's important to understand the following requirements prior to creating indica
 4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - Scope - Define the scope of the device group.
 
 5. Review the details in the Summary tab, then click **Save**.
 
