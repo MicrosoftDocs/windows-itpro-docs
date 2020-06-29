@@ -26,6 +26,7 @@ ms.topic: article
 1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
 2. [Run a detection test](#run-a-detection-test).
 3. [Uninstall Symantec](#uninstall-symantec).
+4. [Make sure Microsoft Defender ATP is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender ATP
 
@@ -80,6 +81,15 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
 > -  Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040).
 > - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387).
 > - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054). 
+
+## Make sure Microsoft Defender ATP is in active mode
+
+Now that you have uninstalled Symantec, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
+
+To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
+- Cloud-delivered protection
+- Potentially Unwanted Applications (PUA)
+- Network Protection (NP)
 
 ## Next steps
 
