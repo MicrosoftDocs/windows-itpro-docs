@@ -96,3 +96,5 @@ To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.
 **Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
+
+- To learn more about Microsoft Defender ATP and how to configure or adjust various features and capabilities, see [Microsoft Defender ATP documentation](https://docs.microsoft.com/windows/security/threat-protection). 
