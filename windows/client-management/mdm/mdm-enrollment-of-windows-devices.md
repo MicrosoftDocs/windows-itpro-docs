@@ -324,7 +324,7 @@ To connect your devices to MDM using deep links:
 
 1.  Starting with Windows 10, version 1607, create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm**, and user-friendly display text, such as **Click here to connect Windows to work**:
 
-    > (Be aware that this will launch the flow equivalent to the Enroll into the device management option in Windows 10, version 1511.)
+    (Be aware that this will launch the flow equivalent to the Enroll into the device management option in Windows 10, version 1511.)
 
     - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
@@ -340,7 +340,8 @@ To connect your devices to MDM using deep links:
 
 3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-After you complete the flow, your device will be connected to your organization’s MDM.
+    After you complete the flow, your device will be connected to your organization's MDM.
+
     ![corporate sign in](images/deeplinkenrollment4.png)
 
 ## Manage connections
@@ -374,7 +375,7 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 -   Devices that enforce the AllowManualMDMUnenrollment policy will not allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
 -   On mobile devices, you cannot disconnect from Azure AD. These connections can only be removed by wiping the device.
 
-> [!WARNING]  
+> [!WARNING]
 > Disconnecting might result in the loss of data on the device.
 
 ## Collecting diagnostic logs
