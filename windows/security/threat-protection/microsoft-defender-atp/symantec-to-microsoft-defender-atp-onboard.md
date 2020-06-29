@@ -29,7 +29,7 @@ ms.topic: article
 
 ## Onboard devices to Microsoft Defender ATP
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
 2. Choose **Settings** > **Device management** > **Onboarding**. 
 
@@ -85,4 +85,4 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
 
 **Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
 
-- [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
+- [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
