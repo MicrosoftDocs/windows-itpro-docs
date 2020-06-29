@@ -1,6 +1,6 @@
 ---
 title: Hybrid Windows Hello for Business Prerequisites
-description: Prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
+description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
