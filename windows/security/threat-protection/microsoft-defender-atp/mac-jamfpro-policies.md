@@ -251,7 +251,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-   **General**
+   **Options tab**
    - Select **Application & Custom Settings**
    - Select **Configure**.
 
@@ -261,7 +261,7 @@ Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDAT
 
     ![Image of profile](images/jamfpro-plist.png)
 
-5. Select **Upload File (PLIST file) then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
+5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
 
     ![Image of upload file](images/jamfpro-plist-upload.png)
 
