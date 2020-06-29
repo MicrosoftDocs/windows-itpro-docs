@@ -189,7 +189,7 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 - See [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies).
 
-- While you create and configure your antimalware policies, make sure to review the [real-time protection settings](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) and [enable block at first sight](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
+- While you create and configure your antimalware policies, make sure to review the [real-time protection settings](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) and [enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
 
 > [!TIP]
 > You can deploy the policies before your organization's devices on onboarded.
