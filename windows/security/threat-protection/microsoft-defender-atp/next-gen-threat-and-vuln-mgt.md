@@ -91,7 +91,19 @@ Ensure that your devices:
 
 - Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the device page
-- Are tagged or marked as co-managed
+- Are tagged or marked as co-managed 
+
+## APIs
+
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+See the following topics for related APIs:
+
+- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
 
 ## Related topics
 
