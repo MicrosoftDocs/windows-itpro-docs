@@ -196,7 +196,7 @@ To view a list of version that have reached end of support, or end or support so
 
     ![Screenshot of version distribution link](images/version-eos-date.png)
 
-After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. 
+After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats.
 
 
 ## Related topics
