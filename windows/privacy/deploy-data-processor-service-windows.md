@@ -31,7 +31,7 @@ The data processor service for Windows will serve as a foundation for other Micr
 The data processor service for Windows offering enables you to store and manage your Windows diagnostic data in the cloud, on top of an end-to-end data platform designed and built with compliance in mind, to help you meet your compliance obligations. 
 Your data is routed and stored inside an enterprise compliance boundary, operating under a prescriptive and focused set of compliance requirements, in accordance with industry standards. 
 
-The data processor service for Windows provides you with controls that help respond to delete data subject requests (DSRs) on diagnostic data, either for a specific device, or at user account closure, for a specific Azure AD User ID. Additionally, you’re able to execute an export DSR for a specific Azure AD User ID. 
+The data processor service for Windows provides you with controls that help respond to delete data subject requests (DSRs) on diagnostic data, at user account closure, for a specific Azure AD User ID. Additionally, you’re able to execute an export DSR for a specific Azure AD User ID. 
 Should you desire so, Microsoft will accommodate a data processor service for Windows tenant account closure, either because you decide to close your Azure or Azure AD tenant account, or because you decide you no longer wish to be the data controller for diagnostic data, but still wish to remain an Azure customer. 
 
 >[!Note]
