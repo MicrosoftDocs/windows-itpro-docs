@@ -61,7 +61,7 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
