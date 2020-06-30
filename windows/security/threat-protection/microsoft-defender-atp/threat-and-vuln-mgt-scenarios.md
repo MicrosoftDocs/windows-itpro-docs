@@ -50,8 +50,6 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ```
 
-
-
 ## Related topics
 
 - [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
