@@ -97,6 +97,29 @@ To view a list of version that have reached end of support, or end or support so
 
 After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
+## Define a device's value to the organization
+
+Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation, so devices marked as “high value” will receive more weight.
+
+Device value options:
+
+- Low
+- Normal (Default)
+- High
+
+Examples of machines that should be mark as high value:
+
+- Domain controllers, Active Directory
+- Internet facing machines
+- VIP machines
+- Machines hosting internal/external production services
+
+### Set device value
+
+1. Navigate into any machine page
+2. Select Machine Value and define a value
+3. Review the value in the machine tag area
+
 ## Related topics
 
 - [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
