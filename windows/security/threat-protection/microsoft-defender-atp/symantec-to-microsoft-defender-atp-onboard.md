@@ -72,7 +72,7 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
    3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
 
-3. Remove Symantec from your devices. You can use SEP Manager to perform this task. See [Configuring client packages to uninstall existing security software](https://techdocs.broadcom.com/content/broadcom/techdocs/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Managing-a-custom-installation/preparing-for-client-installation-v16742985-d21e7/configuring-client-packages-to-uninstall-existing-v73569396-d21e2634.html).
+3. Remove Symantec from your devices. You can use SEP Manager to perform this task. See [Configuring client packages to uninstall existing security software](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Managing-a-custom-installation/preparing-for-client-installation-v16742985-d21e7/configuring-client-packages-to-uninstall-existing-v73569396-d21e2634.html).
   
 
 > [!TIP]
