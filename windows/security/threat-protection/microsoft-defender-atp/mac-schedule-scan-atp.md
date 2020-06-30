@@ -68,7 +68,7 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
 4. To load your file into **launchd**, enter the following commands:
 
     ```bash
-    `$ launchctl load ~/Library/LaunchDaemons/<your file name.plist>`
+    `$ launchctl load /Library/LaunchDaemons/<your file name.plist>`
     `$ launchctl start <your file name>`
     ```
 
