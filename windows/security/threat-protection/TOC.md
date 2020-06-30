@@ -20,6 +20,13 @@
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
+## [Migration guides]()
+### [Migrate from Symantec to Microsoft Defender ATP]()
+#### [Get an overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
+#### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
+#### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
+#### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
+
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
 #### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
@@ -575,7 +582,6 @@
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
 
-
 #### [Raw data streaming API]()
 ##### [Raw data streaming](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
@@ -589,7 +595,6 @@
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
- 
 
 #### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
