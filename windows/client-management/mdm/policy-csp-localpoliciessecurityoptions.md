@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - LocalPoliciesSecurityOptions
-description: Policy CSP - LocalPoliciesSecurityOptions
+description: These settings prevents users from adding new Microsoft accounts on a specific computer using LocalPoliciesSecurityOptions.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
