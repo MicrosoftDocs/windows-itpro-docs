@@ -145,7 +145,7 @@ If the connection is identified as a VPN, Delivery Optimization will suspend upl
 
 If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected via VPN, it can still leverage peer-to-peer with the default of LAN.
 
-With split tunnelling, make sure to allow direct access to these endpoints:
+With split tunneling, make sure to allow direct access to these endpoints:
 
 Delivery Optimization service endpoint:
 - `https://*.prod.do.dsp.mp.microsoft.com`
