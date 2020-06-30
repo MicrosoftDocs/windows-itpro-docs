@@ -141,11 +141,11 @@ For the payloads (optional):
 **How does Delivery Optimization handle VPNs?**
 Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
-If the connection is identified as a VPN, Delivery Optimization will not use any peer-to-peer activity. However, you can allow peer-to-peer activity over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn)	policy.
+If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn)	policy.
 
-If you have defined a boundary group in Configuration Manager and have for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN.
+If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected via VPN, it can still leverage peer-to-peer with the default of LAN.
 
-With split tunnelling, it's best to exclude the boundary group for the VPN devices to exclude it from using peer-to-peer. (In this case, those devices won't get the policy and will default to using LAN.) If you're using split tunnelling, you should allow direct access for these endpoints:
+With split tunnelling, make sure to allow direct access to these endpoints:
 
 Delivery Optimization service endpoint:
 - `https://*.prod.do.dsp.mp.microsoft.com`
@@ -161,7 +161,7 @@ Windows Update and Microsoft Store backend services and Windows Update and Micro
 - `https://*.update.microsoft.com`
 - `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
 
-For more information about this if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
+For more information about remote work if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
 
 ## Troubleshooting
 
