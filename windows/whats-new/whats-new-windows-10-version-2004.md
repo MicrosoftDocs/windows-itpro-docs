@@ -150,7 +150,7 @@ Windows Sandbox also has improved accessibility in this release, including:
 
 With this release, memory that is no longer in use in a Linux VM will be freed back to Windows. Previously, a WSL VM's memory could grow, but would not shrink when no longer needed.
 
-[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) support is has been added for ARM64 devices if your device supports virtualization.
+[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) support has been added for ARM64 devices if your device supports virtualization.
 
 For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
 
