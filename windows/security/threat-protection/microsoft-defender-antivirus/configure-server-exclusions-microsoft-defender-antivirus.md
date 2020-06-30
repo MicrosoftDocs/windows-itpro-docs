@@ -356,7 +356,7 @@ This section lists the file type exclusions, folder exclusions, and the process 
 
 This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
 
-- `%system32%\spool\printers\*
+- `%system32%\spool\printers\*`
 
 #### Process exclusions
 
