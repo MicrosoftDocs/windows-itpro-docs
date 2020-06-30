@@ -64,7 +64,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 6. Click **OK** to return to **Active Directory Users and Computers**.
 7. Restart the AD FS server.
 
-> [!NOTE] For AD FS 2019, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
+> [!NOTE] 
+>For AD FS 2019, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
 >
 > 1. Launch AD FS management console. Brose to "Services > Scope Descriptions"
 > 2. Right click "Scope Descriptions" and select "Add Scope Description"
