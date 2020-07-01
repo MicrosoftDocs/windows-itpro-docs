@@ -22,7 +22,13 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
 Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
+
+- Quickly understand and identify high-level takeaways about the state of security in your organization.
+- Detect and respond to areas that require investigation or action to improve the current state.
+- Communicate with peers and management about the impact of security efforts.
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
@@ -61,6 +67,7 @@ Lower your threat and vulnerability exposure by remediating [security recommenda
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

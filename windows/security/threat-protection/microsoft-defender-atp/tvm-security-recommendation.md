@@ -22,8 +22,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -80,7 +79,7 @@ Useful icons also quickly calls your attention to:
 - ![red bug](images/tvm_bug_icon.png) associated public exploits
 - ![light bulb](images/tvm_insight_icon.png) recommendation insights
 
-### Investigate
+### Explore security recommendation options
 
 Select the security recommendation that you want to investigate or process.
 
@@ -96,6 +95,14 @@ From the flyout, you can do any of the following:
 
 >[!NOTE]
 >When a change is made on a device, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
+
+### Investigate changes in machine exposure or impact
+
+If there is a large jump in the number of exposed machines, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+
+1. Select the recommendation and **Open software page**
+2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
+3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request
 
 ## Request remediation
 
@@ -207,6 +214,7 @@ After you have identified which software and software versions are vulnerable du
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
