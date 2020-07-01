@@ -74,3 +74,10 @@ It can export local policy to a GPO backup.
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
 Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## What do the Split-PolicyRules and Merge-Policy Rules PowerShell scripts do?
+Split-PolicyRules.ps1 splits the content of a “PolicyRules” file that represents multiple GPOs into separate files – one for each GPO.
+Merge-PolicyRules.ps1 combines the content of two PolicyRules files into a one PolicyRules set, which is written to the pipeline.
+
+## What does the Baseline-ADImport.ps1 PowerShell script do?
+Baseline-ADImport.ps1 Imports all GPOs in this baseline into Active Directory Group Policy
