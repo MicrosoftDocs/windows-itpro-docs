@@ -219,6 +219,7 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
 ##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
+##### [Schedule scans](microsoft-defender-atp/mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
