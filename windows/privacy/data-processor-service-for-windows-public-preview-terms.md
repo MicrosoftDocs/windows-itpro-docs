@@ -60,7 +60,7 @@ These Terms govern your use of the preview described below (“**Preview**”). 
             * information in reports; 
             * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
             * Personal Data; and 
-          * Transactional, sales, and marketing information. 
+            * Transactional, sales, and marketing information. 
 
     2. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information. 
 
