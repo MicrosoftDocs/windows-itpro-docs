@@ -319,7 +319,7 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> The following steps are only relevant when using Microsoft Endpoint Configuration Manager
+> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)
 
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
