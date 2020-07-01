@@ -90,9 +90,9 @@ From the flyout, you can do any of the following:
 
 - **Open software page** - Open the software page to get more context on the software and how it is distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
-- **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
+- [**Remediation options**](tvm-security-recommendation.md#request-remediation) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
-- **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet.
+- [**Exception options**](tvm-security-recommendation.md#file-for-exception) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet.
 
 >[!NOTE]
 >When a change is made on a device, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
@@ -171,6 +171,42 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
 
+## Find and remediate software or software versions which have reached end-of-support (EOS)
+
+End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced, and will not receive security updates. When you use software or software versions which have reached end-of-support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
+
+It is crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end of support, and update versions that have reached end of support. It is best to create and implement a plan **before** the end of support dates.
+
+To find software or software versions which have reached end-of-support:
+
+1. From the Threat & Vulnerability Management menu, navigate to **Security recommendations**.
+2. Go to the **Filters** panel and look for the tags section. Select one or more of the EOS tag options. Then **Apply**.
+
+    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tag.png)
+
+3. You will see a list recommendations related to software that is end of support, software versions that are end of support, or upcoming end of support versions. These tags are also visible in the [software inventory](tvm-software-inventory.md) page.
+
+    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
+
+### List of versions and dates
+
+To view a list of version that have reached end of support, or end or support soon, and those dates, follow the below steps:
+
+1. For software that has versions which have reached end of support, or will reach end of support soon, a message will appear in the flyout once the security recommendation is selected.
+
+    ![Screenshot of version distribution link](images/eos-upcoming-eos.png)
+
+2. Select the **version distribution** link to go to the software drill down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
+
+    ![Screenshot of version distribution link](images/software-drilldown-eos.png)
+
+3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
+
+    ![Screenshot of version distribution link](images/version-eos-date.png)
+
+After you have identified which software and software versions are vulnerable due to its end-of-support status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats.
+
+
 ## Related topics
 
 - [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
@@ -183,5 +219,5 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 - [Weaknesses](tvm-weaknesses.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
