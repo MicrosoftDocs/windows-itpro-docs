@@ -127,38 +127,27 @@ For purposes of these GDPR Terms, you and Microsoft agree that you are the contr
 **Relevant GDPR Obligations: Articles 28, 32, and 33**
 
 1. Microsoft shall not engage another processor without prior specific or your general written authorization. In the case of general written authorization, Microsoft shall inform you of any intended changes concerning the addition or replacement of other processors, thereby giving you the opportunity to object to such changes. (Article 28(2)) 
-
 2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to you. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and your obligations and rights are set forth in the Terms above, including these GDPR Terms. In particular, Microsoft shall:
 
-    (a) process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
+    1. process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
+    2. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
+    3. take all measures required pursuant to Article 32 of the GDPR;
 
-    (b) ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
-
-    (c) take all measures required pursuant to Article 32 of the GDPR;
-
-    (d) respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;
-
-    (e) taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
-
-    (f) assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
-
-    (g) at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;
-
-    (h) make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.
-
-    (i) immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
+    4. respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;
+    5. taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
+    6. assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
+    7. at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;
+    8. make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.
+    9. immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
 
 3. Where Microsoft engages another processor for carrying out specific processing activities on your behalf, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to you for the performance of that other processor's obligations. (Article 28(4)) 
 
 4. Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, you and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:
 
-    (a) the pseudonymisation and encryption of Personal Data;
-
-    (b) the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;
-
-    (c) the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
-
-    (d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
+    1. the pseudonymisation and encryption of Personal Data;
+    2. the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;
+    3. the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
+    4. a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
 
 5. In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored or otherwise processed. (Article 32(2)) 
 
