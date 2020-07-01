@@ -23,7 +23,7 @@ ms.collection:
 
 These Terms govern your use of the preview described below (“**Preview**”). In order to access the Preview, you must be a current Microsoft Windows customer with an Azure Active Directory (“**AAD**”) subscription. The Preview consists of features and services that are in preview, beta, or other pre-release form for use with Windows and AAD.
 
-1. **Definitions**. The following terms have the following meanings:
+ **1. Definitions**. The following terms have the following meanings:
 
     1. "**Customer Data**" means all data, including all text, sound, video, or image files that are provided to Microsoft by, or on behalf of, you through your use of Windows or AAD.
 
@@ -35,9 +35,9 @@ These Terms govern your use of the preview described below (“**Preview**”). 
 
     5. "**Subprocessor**" means other processors used by Microsoft to process Personal Data.
 
-2. **Scope of Services**. The Preview is for a service that enables organizations to become controllers of Windows diagnostic data on supported versions of Windows, with Microsoft operating as processor of the data (collectively, the “**_Services_**”). You will collaborate with Microsoft in order to provide Microsoft the ability to enable the Services for you. To access the Services, you will need to configure participating Windows devices; Microsoft will assist you in such configuration via documentation or other communications.
+**2. Scope of Services**. The Preview is for a service that enables organizations to become controllers of Windows diagnostic data on supported versions of Windows, with Microsoft operating as processor of the data (collectively, the “**_Services_**”). You will collaborate with Microsoft in order to provide Microsoft the ability to enable the Services for you. To access the Services, you will need to configure participating Windows devices; Microsoft will assist you in such configuration via documentation or other communications.
 
-3. **Intellectual Property**.
+**3. Intellectual Property**.
 
     1. **License Grant**. During the term of this Preview (“**Term**”), Microsoft grants you and authorized users in your tenant for Windows a non-exclusive, non-transferable, non-sublicensable right and license to access and use the Services in accordance with these Terms.
 
@@ -47,7 +47,7 @@ These Terms govern your use of the preview described below (“**Preview**”). 
 
     4. **Data Collection, Use and Location**. The Microsoft Privacy Statement https://privacy.microsoft.com/privacystatement applies to the collection, use and location of Preview Data. In the event of a conflict between Privacy Statement and the terms of these Terms, the terms of these Terms will control.
 
-4. **Confidentiality**. The following confidentiality terms apply to the Preview:
+**4. Confidentiality**. The following confidentiality terms apply to the Preview:
 
     1. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: </br></br>
         1. a party’s released or unreleased software or hardware products;</br></br>
@@ -73,7 +73,7 @@ These Terms govern your use of the preview described below (“**Preview**”). 
         6. disaster recovery/business continuity; and</br></br>
         7. employee training.
 
-5. **Data Protection.**
+**5. Data Protection.**
 
     **Generally**. To the extent Microsoft is a processor of Personal Data, the General Data Protection Regulation (GDPR) Terms in Appendix 1 govern that processing and the parties also agree to the following terms:
 
@@ -89,13 +89,13 @@ These Terms govern your use of the preview described below (“**Preview**”). 
         * Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention, and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR. 
         * In addition, Microsoft is certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify you in the event that it makes a determination that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.  
 
-6. **No Support or Incident Response.** Microsoft will have no obligation under these Terms to correct any bugs, defects or errors in the Services or AAD, provide any updates, upgrades or new releases, or otherwise provide any technical support or maintenance for any Services or AAD. You will make reasonable efforts to promptly report to Microsoft any defects you find in the Services, as an aid to creating improved revisions of the Services. Microsoft will have no obligation under these Terms to provide you with incident response as part of the Services.
+**6. No Support or Incident Response.** Microsoft will have no obligation under these Terms to correct any bugs, defects or errors in the Services or AAD, provide any updates, upgrades or new releases, or otherwise provide any technical support or maintenance for any Services or AAD. You will make reasonable efforts to promptly report to Microsoft any defects you find in the Services, as an aid to creating improved revisions of the Services. Microsoft will have no obligation under these Terms to provide you with incident response as part of the Services.
 
-7. **Term and Termination.** The term of the Preview begins when you accept these Terms and continues until: (a) either party terminates this Preview by providing the other party: (i) 2 days’ notice for any reason (or no reason), or (ii) notice of such party’s breach of these Terms and such party fails to cure within 15 days, or (b) upon the general availability of the Services. When the Term ends, you will no longer have access to the Services, and Microsoft will no longer have the rights to access Customer Data granted herein. Each party will, on request, return or destroy the other’s Confidential Information provided under the Preview.
+**7. Term and Termination.** The term of the Preview begins when you accept these Terms and continues until: (a) either party terminates this Preview by providing the other party: (i) 2 days’ notice for any reason (or no reason), or (ii) notice of such party’s breach of these Terms and such party fails to cure within 15 days, or (b) upon the general availability of the Services. When the Term ends, you will no longer have access to the Services, and Microsoft will no longer have the rights to access Customer Data granted herein. Each party will, on request, return or destroy the other’s Confidential Information provided under the Preview.
 
-8. **Feedback.** Providing Feedback is voluntary. Microsoft is under no obligation to post or use any Feedback. By providing Feedback to Microsoft, you (and anyone providing Feedback through your use of the Preview) irrevocably and perpetually grant to Microsoft and its affiliates, under all of its (and their) owned or controlled intellectual property rights, a worldwide, non-exclusive, fully paid-up, royalty-free, transferable, sub-licensable right and license to make, use, reproduce, prepare derivative works based upon, distribute, publicly perform, publicly display, transmit, and otherwise commercialize the Feedback (including by combining or interfacing products, services or technologies that depend on or incorporate Feedback with other products, services or technologies of Microsoft or others), without attribution in any way and for any purpose. You warrant that (a) you will not provide Feedback that is subject to a license requiring Microsoft to license anything to third parties because Microsoft exercises any of the above rights in your Feedback; and (b) you own or otherwise control all of the rights to such Feedback and that no such Feedback is subject to any third-party rights (including any personality or publicity rights).
+**8. Feedback.** Providing Feedback is voluntary. Microsoft is under no obligation to post or use any Feedback. By providing Feedback to Microsoft, you (and anyone providing Feedback through your use of the Preview) irrevocably and perpetually grant to Microsoft and its affiliates, under all of its (and their) owned or controlled intellectual property rights, a worldwide, non-exclusive, fully paid-up, royalty-free, transferable, sub-licensable right and license to make, use, reproduce, prepare derivative works based upon, distribute, publicly perform, publicly display, transmit, and otherwise commercialize the Feedback (including by combining or interfacing products, services or technologies that depend on or incorporate Feedback with other products, services or technologies of Microsoft or others), without attribution in any way and for any purpose. You warrant that (a) you will not provide Feedback that is subject to a license requiring Microsoft to license anything to third parties because Microsoft exercises any of the above rights in your Feedback; and (b) you own or otherwise control all of the rights to such Feedback and that no such Feedback is subject to any third-party rights (including any personality or publicity rights).
 
-9. **Representations and Warranties; Limitation of Liability.** 
+**9. Representations and Warranties; Limitation of Liability.** 
 
     1. **By the Parties.**  Each party represents and warrants to the other party that (a) it has all necessary rights, title, and authority to enter into and perform under these Terms; (b) its performance under these Terms will not breach any agreement with a third party; and (c) it will comply with any and all laws, rules, and regulations that are applicable to its performance under these Terms.
 
@@ -103,7 +103,7 @@ These Terms govern your use of the preview described below (“**Preview**”). 
 
     3. **Limitation of Liability.**  Except as otherwise described in this Section 9, the only remedy either party has for claims relating to these Terms or participation in the Preview is to terminate these Terms or your participation in the Preview. NEITHER PARTY WILL BE LIABLE TO THE OTHER PARTY FOR ANY DAMAGES, INCLUDING DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, OR DAMAGES FOR LOST REVENUE, LOST PROFIT, LOST BUSINESS INFORMATION, OR BUSINESS INTERRUPTION, EVEN IF THE PARTY KNEW OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES. The limitations in this Section 9 do not apply to claims arising from any breach of confidentiality obligations under Section 4.
 
-10. **General.** 
+**10. General.** 
 
     1. **Non-Exclusivity.** These Terms are nonexclusive. These Terms do not restrict either party from entering into the same or similar arrangement with any third party.
 
