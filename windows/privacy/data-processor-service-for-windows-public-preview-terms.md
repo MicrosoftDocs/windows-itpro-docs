@@ -49,29 +49,29 @@ d. **Data Collection, Use and Location**. The Microsoft Privacy Statement https:
 
 **Section 4. Confidentiality**. The following confidentiality terms apply to the Preview:
 
-a. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: </br></br>
-(i) a party’s released or unreleased software or hardware products;</br></br>
-(ii) a party’s source code;</br></br>
-(iii) a party’s product marketing or promotion;</br></br>
-(iv) a party’s business policies or practices;</br></br>
-(v) a party’s customers or suppliers;</br></br>
-(vi) information received from others that a party must treat as confidential; and</br></br>
-(viii) information provided, obtained, or created by a party under these Terms, including:
- * information in reports; 
- * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
- * Personal Data; and 
- * Transactional, sales, and marketing information. 
+1. During the Term plus 5 years, the parties will hold in strictest confidence and not use or disclose to any third party any Confidential Information of the other party. “Confidential Information” means all non-public information a party designates in writing or orally as being confidential, or which under the circumstances of disclosure ought to be treated as confidential. Confidential Information includes information relating to: </br></br>
+    1. a party’s released or unreleased software or hardware products;</br></br>
+    2. a party’s source code;</br></br>
+    3. a party’s product marketing or promotion;</br></br>
+    4. a party’s business policies or practices;</br></br>
+    5. a party’s customers or suppliers;</br></br>
+    6. information received from others that a party must treat as confidential; and</br></br>
+    7. information provided, obtained, or created by a party under these Terms, including:
+        * information in reports; 
+        * the parties’ electronic or written correspondence, customer lists and customer information, regardless of source; 
+        * Personal Data; and 
+        * Transactional, sales, and marketing information. 
 
-b. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information. 
+2. A party will consult with the other if it questions what comprises Confidential Information. Confidential Information excludes information (i) known to a party before the disclosing party’s disclosure to the receiving party, (ii) information publicly available through no fault of the receiving party, (iii) received from a third party without breach of an obligation owed to the disclosing party, or (iv) independently developed by a party without reference to or use of the disclosing party’s Confidential Information. 
 
-c. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
-(i) system access;</br></br>
-(ii) system and application development and maintenance;</br></br>
-(iii) change management;</br></br>
-(iv) asset classification and control;</br></br>
-(v) incident response, physical and environmental security;</br></br>
-(vi) disaster recovery/business continuity; and</br></br>
-(vii) employee training.
+3. Each party will employ security procedures to prevent disclosure of the other party’s Confidential Information to unauthorized third parties. The receiving party’s security procedures must include risk assessment and controls for:</br></br>
+    1. system access;</br></br>
+    2. system and application development and maintenance;</br></br>
+    3. change management;</br></br>
+    4. asset classification and control;</br></br>
+    5. incident response, physical and environmental security;</br></br>
+    6. disaster recovery/business continuity; and</br></br>
+    7. employee training.
 
 **Section 5. Data Protection.**
 
@@ -130,14 +130,21 @@ For purposes of these GDPR Terms, you and Microsoft agree that you are the contr
 2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to you. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and your obligations and rights are set forth in the Terms above, including these GDPR Terms. In particular, Microsoft shall:
 
     1. process the Personal Data only on your documented instructions, including with  regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform you of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
+
     2. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
+
     3. take all measures required pursuant to Article 32 of the GDPR;
 
     4. respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;
+
     5. taking into account the nature of the processing, assist you by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of your obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
+
     6. assist you in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
+
     7. at your choice, delete or return all the Personal Data to you after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;
+
     8. make available to you all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you.
+
     9. immediately inform you if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions.  (Article 28(3)) 
 
 3. Where Microsoft engages another processor for carrying out specific processing activities on your behalf, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to you for the performance of that other processor's obligations. (Article 28(4)) 
@@ -145,8 +152,11 @@ For purposes of these GDPR Terms, you and Microsoft agree that you are the contr
 4. Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, you and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:
 
     1. the pseudonymisation and encryption of Personal Data;
+
     2. the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;
+
     3. the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
+
     4. a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
 
 5. In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored or otherwise processed. (Article 32(2)) 
