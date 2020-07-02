@@ -50,7 +50,12 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 - Ensure DNS name resolution for internet DNS names.
 - Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP).
 
-In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to allow access to the required services. For additional details about each of these services and their specific requirements, review the following details:
+In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to allow access to the required services. 
+
+> [!NOTE]
+> Smart card and certificate based authentication is not supported during OOBE. For more information, see [Smartcards and certificate-based authentication](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#smartcards-and-certificate-based-authentication).
+
+For additional details about each of these services and their specific requirements, review the following details:
 
 <table><th>Service<th>Information
 <tr><td><b>Windows Autopilot Deployment Service<b><td>After a network connection is in place, each Windows 10 device will contact the Windows Autopilot Deployment Service.  With Windows 10 version 1903 and above, the following URLs are used: https://ztd.dds.microsoft.com, https://cs.dds.microsoft.com. <br>
