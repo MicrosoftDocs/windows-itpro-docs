@@ -29,7 +29,7 @@ Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk levels. Microsoft Defender ATP is a Mobile Threat Defense
 (MTD) solution that you can deploy to leverage this capability via Intune.
 
-For more infomation on how to setup Microsoft Defender ATP for Android and Conditional Access, see [Microsoft Defender ATP and
+For more information on how to setup Microsoft Defender ATP for Android and Conditional Access, see [Microsoft Defender ATP and
 Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#configure-web-protection-on-devices-that-run-android).
 
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP for Android enables admins to configure custom indicators
 ## Configure web protection
 Microsoft Defender ATP for Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Endpoint Manager Admin center.
 
-For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#configure-web-protection-on-devices-that-run-android).
 
 ## Related topics
 - [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp-android.md)
