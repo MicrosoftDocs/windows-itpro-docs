@@ -72,9 +72,3 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 - [Configure alert notifications](configure-mssp-notifications.md)
 - [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 
-
-- [Manage portal access using RBAC](rbac.md) 
-- [Pull alerts to your SIEM tools](configure-siem.md)
-- [Pull alerts using REST API](pull-alerts-using-rest-api.md)
- 
-

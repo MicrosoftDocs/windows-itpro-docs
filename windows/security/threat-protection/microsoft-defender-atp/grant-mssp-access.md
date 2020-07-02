@@ -117,7 +117,7 @@ To implement a multi-tenant delegated access solution take the following steps:
     To do so, access the customer’s myaccess using: 
     `https://myaccess.microsoft.com/@<Customer Domain >`. 
 
-    Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/    
+    Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approve or deny requests in the **Approvals** section of the UI.
 
     At this point, analyst access has been provisioned, and each analyst should be able to access the customer’s Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
