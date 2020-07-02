@@ -122,7 +122,6 @@ A full page will appear with all the details of a specific software, including a
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
