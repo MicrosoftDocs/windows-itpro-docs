@@ -3,7 +3,7 @@ title: Windows Autopilot requirements
 ms.reviewer: 
 manager: laurawi
 description: See the requirements you need to run Windows Autopilot in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune. 
-keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, Autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ ms.custom:
 Windows Autopilot depends on specific capabilities available in Windows 10, Azure Active Directory, and MDM services such as Microsoft Intune.  In order to use Windows Autopilot and leverage these capabilities, some requirements must be met.
 
 > [!NOTE]
-> For a list of OEMs that currently support Windows Autopilot, see the Participant device manufacturers section at [Windows Autopilot](https://aka.ms/windowsautopilot).
+> For a list of OEMs that currently support Windows Autopilot, see the Participant device manufacturers section at [Windows Autopilot](https://aka.ms/windowsAutopilot).
 
 ## Software requirements
 
@@ -66,11 +66,11 @@ For additional details about each of these services and their specific requireme
 <tr><td><b>Intune<b><td>Once authenticated, Azure Active Directory will trigger enrollment of the device into the Intune MDM service. See the following link for details about network communication requirements: <a href="https://docs.microsoft.com/intune/network-bandwidth-use#network-communication-requirements">Intune network configuration requirements and bandwidth</a>.
 <tr><td><b>Windows Update<b><td>During the OOBE process, as well as after the Windows 10 OS is fully configured, the Windows Update service is leveraged to retrieve needed updates. If there are problems connecting to Windows Update, see <a href="https://support.microsoft.com/help/818018/how-to-solve-connection-problems-concerning-windows-update-or-microsof">How to solve connection problems concerning Windows Update or Microsoft Update</a>.<br>
 
-If Windows Update is inaccessible, the AutoPilot process will still continue but critical updates will not be available.
+If Windows Update is inaccessible, the Autopilot process will still continue but critical updates will not be available.
 
 <tr><td><b>Delivery Optimization<b><td>When downloading Windows Updates, Microsoft Store apps and app updates, Office Updates and Intune Win32 Apps, the <a href="https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization">Delivery Optimization</a> service is contacted to enable peer-to-peer sharing of content so that only a few devices need to download it from the internet.<br>
 
-If the Delivery Optimization Service is inaccessible, the AutoPilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
+If the Delivery Optimization Service is inaccessible, the Autopilot process will still continue with Delivery Optimization downloads from the cloud (without peer-to-peer).
 
 <tr><td><b>Network Time Protocol (NTP) Sync<b><td>When a Windows device starts up, it will talk to a network time server to ensure that the time on the device is accurate. Ensure that UDP port 123 to time.windows.com is accessible.
 <tr><td><b>Domain Name Services (DNS)<b><td>To resolve DNS names for all services, the device communicates with a DNS server, typically provided via DHCP.  This DNS server must be able to resolve internet names.
@@ -85,11 +85,11 @@ If diagnostic data cannot be sent, the Autopilot process will still continue, bu
 If the WNS services are not available, the Autopilot process will still continue without notifications.
 <tr><td><b>Microsoft Store, Microsoft Store for Business<b><td>Apps in the Microsoft Store can be pushed to the device, triggered via Intune (MDM).  App updates and additional apps may also be needed when the user first logs in. For more information, see <a href="https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business">Prerequisites for Microsoft Store for Business and Education</a> (also includes Azure AD and Windows Notification Services).<br>
 
-If the Microsoft Store is not accessible, the AutoPilot process will still continue without Microsoft Store apps.
+If the Microsoft Store is not accessible, the Autopilot process will still continue without Microsoft Store apps.
 
 <tr><td><b>Office 365<b><td>As part of the Intune device configuration, installation of Microsoft 365 Apps for enterprise may be required. For more information, see <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2">Office 365 URLs and IP address ranges</a> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
 <tr><td><b>Certificate revocation lists (CRLs)<b><td>Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl">Office 365 URLs and IP address ranges</a> and <a href="https://aka.ms/o365chains">Office 365 Certificate Chains</a>.
-<tr><td><b>Hybrid AAD join<b><td>The device can be hybrid AAD joined. The computer should be on corporate network for hybrid AAD join to work. See details at <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven-hybrid">Windows Autopilot user-driven mode</a>
+<tr><td><b>Hybrid AAD join<b><td>The device can be hybrid AAD joined. The computer should be on corporate network for hybrid AAD join to work. See details at <a href="https://docs.microsoft.com/windows/deployment/windows-Autopilot/user-driven-hybrid">Windows Autopilot user-driven mode</a>
 <tr><td><b>Autopilot Self-Deploying mode and Autopilot White Glove<b><td>Firmware TPM devices, which are only provided by Intel, AMD, or Qualcomm, do not include all needed certificates at boot time and must be able to retrieve them from the manufacturer on first use. Devices with discrete TPM chips (including devices from any other manufacturer) come with these certificates preinstalled. See <a href="https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-recommendations">TPM recommendations</a> for more details. Make sure that these URLs are accessible for each firmware TPM provider so that certificates can be successfully requested:
 
   <br>Intel- https://ekop.intel.com/ekcertservice 
@@ -129,9 +129,9 @@ Before Windows Autopilot can be used, some configuration tasks are required to s
 Specific scenarios will then have additional requirements. Generally, there are two specific tasks:
 
 - Device registration.  Devices need to be added to Windows Autopilot to support most Windows Autopilot scenarios.  See [Adding devices to Windows Autopilot](add-devices.md) for more details.
-- Profile configuration.  Once devices have been added to Windows Autopilot, a profile of settings needs to be applied to each device.  See [Configure Autopilot profiles](profiles.md) for details.  Note that Microsoft Intune can automate this profile assignment; see [Create an AutoPilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an AutoPilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group) for more information.
+- Profile configuration.  Once devices have been added to Windows Autopilot, a profile of settings needs to be applied to each device.  See [Configure Autopilot profiles](profiles.md) for details.  Note that Microsoft Intune can automate this profile assignment; see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-Autopilot#create-an-Autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-Autopilot#assign-an-Autopilot-deployment-profile-to-a-device-group) for more information.
 
-See [Windows Autopilot Scenarios](windows-autopilot-scenarios.md) for additional details.
+See [Windows Autopilot Scenarios](windows-Autopilot-scenarios.md) for additional details.
 
 For a walkthrough for some of these and related steps, see this video:
 
@@ -143,4 +143,4 @@ There are no additional hardware requirements to use Windows 10 Autopilot, beyon
 
 ## Related topics
 
-[Configure Autopilot deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/)
+[Configure Autopilot deployment](https://docs.microsoft.com/windows/deployment/windows-Autopilot/)
