@@ -34,7 +34,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
 
 
--   **Cloud security analytics**: Leveraging big-data, machine-learning, and
+-   **Cloud security analytics**: Leveraging big-data, device-learning, and
     unique Microsoft optics across the Windows ecosystem,
     enterprise cloud products (such as Office 365), and online assets, behavioral signals
     are translated into insights, detections, and recommended responses
@@ -102,11 +102,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 <a name="ss"></a>
 
-**[Configuration score](configuration-score.md)**<br>
-> [!NOTE]
-> Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md).
+**[Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)**<br>
 
-Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+Microsoft Defender ATP includes Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>
 

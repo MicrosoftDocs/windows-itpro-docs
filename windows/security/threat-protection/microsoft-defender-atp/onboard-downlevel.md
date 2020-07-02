@@ -1,6 +1,6 @@
 ---
 title: Onboard previous versions of Windows on Microsoft Defender ATP
-description: Onboard supported previous versions of Windows machines so that they can send sensor data to the Microsoft Defender ATP sensor
+description: Onboard supported previous versions of Windows devices so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,7 +40,7 @@ To onboard down-level Windows client endpoints to Microsoft Defender ATP, you'll
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP as instructed below.
 
 > [!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
 > [!IMPORTANT]
@@ -77,7 +77,7 @@ Review the following details to verify minimum system requirements:
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtain the workspace ID:
-   - In the Microsoft Defender ATP navigation pane, select **Settings > Machine management > Onboarding**
+   - In the Microsoft Defender ATP navigation pane, select **Settings > Device management > Onboarding**
    - Select **Windows 7 SP1 and 8.1** as the operating system
    - Copy the workspace ID and workspace key
 

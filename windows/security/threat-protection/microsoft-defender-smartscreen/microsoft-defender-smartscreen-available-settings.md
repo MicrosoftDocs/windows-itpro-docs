@@ -33,27 +33,29 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <th align="left">Description</th>
 </tr>
 <tr>
+<td><strong>Windows 10, version 2004:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p>
 <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
 <td>At least Windows Server 2012, Windows 8 or Windows RT</td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether Microsoft Defender SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
-<td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
-<td>Windows 10, version 1703</td>
+<td><strong>Windows 10, version 2004:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
+<td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
+<td><strong>Windows 10, version 1703</td>
 <td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br>This setting does not protect against malicious content from USB devices, network shares or other non-internet sources.</p><p><strong>Important:</strong> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
 </tr>
 <tr>
-<td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
+<td><strong>Windows 10, version 2004:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
 <td>Microsoft Edge on Windows 10 or later</td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off.<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
-<td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
+<td><strong>Windows 10, version 2004:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
 <td>Microsoft Edge on Windows 10, version 1511 or later</td>
 <td>This policy setting stops employees from bypassing the Microsoft Defender SmartScreen warnings about potentially malicious files.<p>If you enable this setting, it stops employees from bypassing the warning, stopping the file download.<p>If you disable or don't configure this setting, your employees can bypass the warnings and continue to download potentially malicious files.</td>
 </tr>
 <tr>
-<td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
+<td><strong>Windows 10, version 2004:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
 <td>Microsoft Edge on Windows 10, version 1511 or later</td>
 <td>This policy setting stops employees from bypassing the Microsoft Defender SmartScreen warnings about potentially malicious sites.<p>If you enable this setting, it stops employees from bypassing the warning, stopping them from going to the site.<p>If you disable or don't configure this setting, your employees can bypass the warnings and continue to visit a potentially malicious site.</td>
 </tr>

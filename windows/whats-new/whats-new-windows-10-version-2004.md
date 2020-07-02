@@ -18,7 +18,9 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 2004
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909. 
+
+To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, see this [video](https://aka.ms/Windows-10-May-2020-Update).
 
 > [!NOTE]
 > The month indicator for this release is 04 instead of 03 to avoid confusion with Windows releases in the year 2003.
@@ -50,7 +52,9 @@ Note: [Application Guard for Office](https://support.office.com/article/applicat
 
 ### Windows Setup
 
-Improvements in Windows Setup with this release include:
+Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language ](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
+
+Improvements in Windows Setup with this release also include:
 - Reduced offline time during feature updates
 - Improved controls for reserved storage
 - Improved controls and diagnostics
@@ -86,7 +90,7 @@ For information about what's new in the ADK, see [What's new in the Windows ADK 
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  This issue is currently under investigation.
+MDT version 8456 supports Windows 10, version 2004, but there is currently an issue that causes MDT to incorrectly detect that UEFI is present.  There is an [update available](https://support.microsoft.com/help/4564442/windows-10-deployments-fail-with-microsoft-deployment-toolkit) for MDT to address this issue.
 
 For the latest information about MDT, see the [MDT release notes](https://docs.microsoft.com/mem/configmgr/mdt/release-notes).
 
@@ -118,6 +122,7 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) enhancements in this release include:
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
+- Update less: Last year, we [changed update installation policies](https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/#l2jH7KMkOkfcWdBs.97) for Windows 10 to only target devices running a feature update version that is nearing end of service. As a result, many devices are only updating once a year. To enable all devices to make the most of this policy change, and to prevent confusion, we have removed deferrals from the Windows Update settings **Advanced Options** page starting on Windows 10, version 2004. If you wish to continue leveraging deferrals, you can use local Group Policy (**Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview builds and Feature Updates are received** or **Select when Quality Updates are received**).  
 
 ## Virtualization
 
@@ -145,7 +150,7 @@ Windows Sandbox also has improved accessibility in this release, including:
 
 With this release, memory that is no longer in use in a Linux VM will be freed back to Windows. Previously, a WSL VM's memory could grow, but would not shrink when no longer needed.
 
-[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) support is has been added for ARM64 devices if your device supports virtualization.
+[WSL2](https://docs.microsoft.com/windows/wsl/wsl2-index) support has been added for ARM64 devices if your device supports virtualization.
 
 For a full list of updates to WSL, see the [WSL release notes](https://docs.microsoft.com/windows/wsl/release-notes).
 

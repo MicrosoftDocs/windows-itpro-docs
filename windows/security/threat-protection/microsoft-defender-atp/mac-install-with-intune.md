@@ -51,20 +51,20 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Grant full disk access to Microsoft Defender ATP](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
-| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdavtray |
+| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download installation and onboarding packages
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.
-2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS, or Android** and the deployment method to **Mobile Device Management / Microsoft Intune**.
-3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
-4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
+2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
+
+    ![Onboarding settings screenshot](images/atp-mac-install.png)
+
+3. Select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+4. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
-
-    ![Microsoft Defender Security Center screenshot](../microsoft-defender-antivirus/images/MDATP-2-DownloadPackages.png)
-
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:
 
@@ -110,11 +110,11 @@ You do not need any special provisioning for a Mac device beyond a standard [Com
 
 1. Confirm device management.
 
-![Confirm device management screenshot](../microsoft-defender-antivirus/images/MDATP-3-ConfirmDeviceMgmt.png)
+    ![Confirm device management screenshot](../microsoft-defender-antivirus/images/MDATP-3-ConfirmDeviceMgmt.png)
 
-Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
+    Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-![Management profile screenshot](../microsoft-defender-antivirus/images/MDATP-4-ManagementProfile.png)
+    ![Management profile screenshot](../microsoft-defender-antivirus/images/MDATP-4-ManagementProfile.png)
 
 2. Select **Continue** and complete the enrollment.
 
@@ -207,7 +207,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
    </plist>
    ```
 
-9. To allow Defender and Auto Update for displaying notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload: <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. To allow Defender and Auto Update to display notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload: <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -245,7 +245,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
                <key>BadgesEnabled</key>
                <true/>
                <key>BundleIdentifier</key>
-               <string>com.microsoft.wdavtray</string>
+               <string>com.microsoft.wdav.tray</string>
                <key>CriticalAlertEnabled</key>
                <false/>
                <key>GroupingType</key>
@@ -320,7 +320,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
     > [!CAUTION]
     > Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated.
     >
-    > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Defender. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Defender with *Ignore app version* set to **No**, please change it to **Yes**. If Defender still cannot be installed on a client machine, then uninstall Defender and push the updated policy.
+    > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Defender. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Defender with *Ignore app version* set to **No**, please change it to **Yes**. If Defender still cannot be installed on a client device, then uninstall Defender and push the updated policy.
 
     ![Device status blade screenshot](../microsoft-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 

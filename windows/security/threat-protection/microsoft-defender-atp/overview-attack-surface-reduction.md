@@ -38,7 +38,7 @@ Article | Description
 [Application control](../windows-defender-application-control/windows-defender-application-control.md) | Use application control so that your applications must earn trust in order to run.
 [Exploit protection](./exploit-protection.md) | Help protect operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions.
 [Network protection](./network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus)
-[Web protection](./web-protection-overview.md) | Secure your machines against web threats and help you regulate unwanted content.
+[Web protection](./web-protection-overview.md) | Secure your devices against web threats and help you regulate unwanted content.
 [Controlled folder access](./controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus)
 [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md) | Prevent unauthorized traffic from flowing to or from your organization's devices with two-way network traffic filtering.
 [Attack surface reduction FAQ](./attack-surface-reduction-faq.md) | Frequently asked questions about Attack surface reduction rules, licensing, and more.

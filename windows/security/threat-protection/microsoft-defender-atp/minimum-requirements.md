@@ -1,6 +1,6 @@
 ---
 title: Minimum requirements for Microsoft Defender ATP
-description: Understand the licensing requirements and requirements for onboarding machines to the service
+description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-There are some minimum requirements for onboarding machines to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
+There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
@@ -87,12 +87,16 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
   - Windows Server, version 1803 or later
   - Windows Server 2019
 
-Machines on your network must be running one of these editions.
+Devices on your network must be running one of these editions.
 
-The hardware requirements for Microsoft Defender ATP on machines is the same as those for the supported editions.
+The hardware requirements for Microsoft Defender ATP on devices is the same as those for the supported editions.
 
 > [!NOTE]
 > Machines running mobile versions of Windows are not supported.
+>
+> Virtual Machines running Windows 10 Enterprise 2016 LTSC (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
+>
+> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 (which is based on Windows 10, version 1809) or later.
 
 
 ### Other supported operating systems
@@ -118,12 +122,12 @@ When you run the onboarding wizard for the first time, you must choose where you
 > [!NOTE]
 > Microsoft Defender ATP doesn't require any specific diagnostic level as long as it's enabled.
 
-You must ensure that the diagnostic data service is enabled on all the machines in your organization.
+You must ensure that the diagnostic data service is enabled on all the devices in your organization.
 By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
-1. Open an elevated command-line prompt on the machine:
+1. Open an elevated command-line prompt on the device:
 
    a.  Go to **Start** and type **cmd**.
 
@@ -164,21 +168,21 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 
 
 #### Internet connectivity
-Internet connectivity on machines is required either directly or through proxy.
+Internet connectivity on devices is required either directly or through proxy.
 
 The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Microsoft Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
-For more information on additional proxy configuration settings, see [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md).
+For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
 
 
 ## Microsoft Defender Antivirus configuration requirement
 The Microsoft Defender ATP agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
 
-You must configure Security intelligence updates on the Microsoft Defender ATP machines whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+You must configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. If your organization has disabled Microsoft Defender Antivirus through group policy or other methods, machines that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. If your organization has disabled Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
 
 If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Microsoft Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
@@ -189,11 +193,11 @@ If you are onboarding servers and Microsoft Defender Antivirus is not the active
 For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
-If you're running Microsoft Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
+If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Microsoft Defender ATP agent will successfully onboard.
 
 If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 ## Related topics
 - [Validate licensing and complete setup](licensing.md)
-- [Onboard machines](onboard-configure.md)
+- [Onboard devices](onboard-configure.md)
