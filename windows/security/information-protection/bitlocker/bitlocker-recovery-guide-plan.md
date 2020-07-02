@@ -282,7 +282,7 @@ BitLocker metadata has been enhanced in Windows 10, version 1903 to include info
 ![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
 
 > [!IMPORTANT]
-> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and managed service accounts (MSAs).
+> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft Account.
 
 
 There are rules governing which hint is shown during the recovery (in order of processing):
@@ -291,7 +291,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 2. Always display generic hint: "For more information go to http://aka.ms/recoverykeyfaq."
 3. If multiple recovery keys exist on the volume, prioritize the last created (and successfully backed up) recovery key.
 4. Prioritize keys with successful backup over keys that have never been backed up.
-5. Prioritize backup hints in the following order for remote backup locations: MSA > Azure AD > Active Directory 
+5. Prioritize backup hints in the following order for remote backup locations: Microsoft Account > Azure AD > Active Directory 
 6. If a key has been printed and saved to file, display a combined hint, “Look for a printout or a text file with the key,” instead of two separate hints.
 7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed up date.
 8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” will be displayed. 
@@ -302,7 +302,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 |     Custom URL       |     Yes    |
 |----------------------|------------|
-|     Saved to MSA     |     Yes    |
+|     Saved to Microsoft Account     |     Yes    |
 |     Saved to Azure AD     |     No     |
 |     Saved to Active Directory      |     No     |
 |     Printed          |     No     |
@@ -316,7 +316,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 |     Custom URL       |     Yes    |
 |----------------------|------------|
-|     Saved to MSA     |     No     |
+|     Saved to Microsoft Account     |     No     |
 |     Saved to Azure AD     |     No     |
 |     Saved to Active Directory      |     Yes    |
 |     Printed          |     No     |
@@ -330,7 +330,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 |     Custom URL       |     No     |
 |----------------------|------------|
-|     Saved to MSA     |     Yes    |
+|     Saved to Microsoft Account     |     Yes    |
 |     Saved to Azure AD     |     Yes    |
 |     Saved to Active Directory      |     No     |
 |     Printed          |     Yes    |
@@ -344,7 +344,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
-|     Saved to MSA     |     No          |
+|     Saved to Microsoft Account     |     No          |
 |     Saved to Azure AD     |     No          |
 |     Saved to Acive Directory      |     No          |
 |     Printed          |     No          |
@@ -355,7 +355,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 &nbsp;
 |     Custom URL       |     No          |
 |----------------------|-----------------|
-|     Saved to MSA     |     No          |
+|     Saved to Microsoft Account     |     No          |
 |     Saved to Azure AD     |     No          |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
@@ -372,7 +372,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
-|     Saved to MSA     |     Yes         |
+|     Saved to Microsoft Account     |     Yes         |
 |     Saved to Azure AD     |     Yes         |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
@@ -381,9 +381,8 @@ There are rules governing which hint is shown during the recovery (in order of p
 |     Key ID           |     99631A34    |
 &nbsp;
 &nbsp;
-|     Custom URL       |     No          |
-|----------------------|-----------------|
-|     Saved to MSA     |     No          |
+|     Custom URL       |     **No**          |
+|     Saved to Microsoft Account     |     No          |
 |     Saved to Azure AD     |     Yes         |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
