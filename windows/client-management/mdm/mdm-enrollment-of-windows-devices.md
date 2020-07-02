@@ -17,7 +17,6 @@ ms.date: 11/15/2017
 
 # MDM enrollment of Windows 10-based devices
 
-
 In today’s cloud-first world, enterprise IT departments increasingly want to let employees use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization’s resources, such as apps, the corporate network, and email.
 
 > [!NOTE]
@@ -233,7 +232,7 @@ To create a local account and connect the device:
 
    ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
    ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
@@ -260,7 +259,7 @@ To create a local account and connect the device:
 
     ![phone settings](images/unifiedenrollment-rs1-39.png)
 
-3.  Select the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+3.  Select the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
     ![access work or school page](images/unifiedenrollment-rs1-40.png)
 
@@ -325,7 +324,7 @@ To connect your devices to MDM using deep links:
 
 1.  Starting with Windows 10, version 1607, create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm**, and user-friendly display text, such as **Click here to connect Windows to work**:
 
-    > (Be aware that this will launch the flow equivalent to the Enroll into the device management option in Windows 10, version 1511.)
+    (Be aware that this will launch the flow equivalent to the Enroll into the device management option in Windows 10, version 1511.)
 
     - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
@@ -341,7 +340,8 @@ To connect your devices to MDM using deep links:
 
 3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-After you complete the flow, your device will be connected to your organization’s MDM.
+    After you complete the flow, your device will be connected to your organization's MDM.
+
     ![corporate sign in](images/deeplinkenrollment4.png)
 
 ## Manage connections
@@ -375,7 +375,7 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 -   Devices that enforce the AllowManualMDMUnenrollment policy will not allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
 -   On mobile devices, you cannot disconnect from Azure AD. These connections can only be removed by wiping the device.
 
-> [!WARNING]  
+> [!WARNING]
 > Disconnecting might result in the loss of data on the device.
 
 ## Collecting diagnostic logs

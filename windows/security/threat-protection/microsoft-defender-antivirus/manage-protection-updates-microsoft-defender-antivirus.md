@@ -52,13 +52,13 @@ There are five locations where you can specify where an endpoint should obtain u
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
 - [Windows Server Update Service](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 - [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-- [Network file share](https://docs.microsoft.com/windows-server/storage/nfs/nfs-overview)
+- [Network file share](#unc-share)
 - [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
 
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads. 
 
 > [!IMPORTANT]
-> If you have set [Microsoft Malware Protection Center Security intelligence page](https://www.microsoft.com/security/portal/definitions/adl.aspx) (MMPC) updates as a fallback source after Windows Server Update Service or Microsoft Update, updates are only downloaded from security intelligence updates when the current update is considered out-of-date. (By default, this is 14 consecutive days of not being able to apply updates from the Windows Server Update Service or Microsoft Update services).
+> If you have set [Microsoft Security intelligence page](https://www.microsoft.com/security/portal/definitions/adl.aspx) updates as a fallback source after Windows Server Update Service or Microsoft Update, updates are only downloaded from security intelligence updates when the current update is considered out-of-date. (By default, this is seven consecutive days of not being able to apply updates from the Windows Server Update Service or Microsoft Update services).
 > You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
 > Starting Monday, October 21, 2019, security intelligence updates will be SHA-2 signed exclusively. Devices must be updated to support SHA-2 in order to get the latest security intelligence updates. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
@@ -150,6 +150,105 @@ For example, suppose that Contoso has hired Fabrikam to manage their security so
 
 > [!NOTE]
 > Microsoft does not test third-party solutions for managing Microsoft Defender Antivirus.
+
+<a id="unc-share"></a>
+## Create a UNC share for security intelligence updates
+
+Set up a network file share (UNC/mapped drive) to download security intelligence updates from the MMPC site by using a scheduled task.
+
+1. On the system on which you want to provision the share and download the updates, create a folder to which you will save the script.
+    ```DOS
+    Start, CMD (Run as admin)
+    MD C:\Tool\PS-Scripts\
+    ```
+
+2. Create the folder to which you will save the signature updates.
+    ```DOS
+    MD C:\Temp\TempSigs\x64
+    MD C:\Temp\TempSigs\x86
+    ```
+
+3. Download the Powershell script from [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
+
+4. Click **Manual Download**.
+
+5. Click **Download the raw nupkg file**.
+
+6. Extract the file.
+
+7. Copy the file SignatureDownloadCustomTask.ps1 to the folder you previously created, C:\Tool\PS-Scripts\ .
+
+8. Use the command line to set up the scheduled task.
+    > [!NOTE]
+    > There are two types of updates: full and delta.
+   - For x64 delta:
+
+       ```DOS
+       Powershell (Run as admin)
+    
+       C:\Tool\PS-Scripts\
+    
+       “.\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $true -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
+       ```
+
+   - For x64 full:
+
+       ```DOS
+       Powershell (Run as admin)
+    
+       C:\Tool\PS-Scripts\
+    
+       “.\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $false -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
+       ```
+
+   - For x86 delta:
+
+       ```DOS
+       Powershell (Run as admin)
+    
+       C:\Tool\PS-Scripts\
+    
+       “.\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $true -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
+       ```
+
+   - For x86 full:
+
+       ```DOS
+       Powershell (Run as admin)
+    
+       C:\Tool\PS-Scripts\
+    
+       “.\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1”
+       ```
+
+    > [!NOTE]
+    > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+9. Run each task manually and verify that you have data (mpam-d.exe, mpam-fe.exe, and nis_full.exe) in the following folders (you might have chosen different locations):
+
+   - C:\Temp\TempSigs\x86
+   - C:\Temp\TempSigs\x64
+
+   If the scheduled task fails, run the following commands:
+
+    ```DOS
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64″
+    
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64″
+    
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x86 -isDelta $False -destDir C:\Temp\TempSigs\x86″
+    
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command “&\”C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\” -action run -arch x86 -isDelta $True -destDir C:\Temp\TempSigs\x86″
+    ```
+    > [!NOTE]
+    > Issues could also be due to execution policy.
+    
+10. Create a share pointing to C:\Temp\TempSigs (e.g. \\server\updates).
+    > [!NOTE]
+    > At a minimum, authenticated users must have “Read” access.
+11. Set the share location in the policy to the share.
+
+    > [!NOTE]
+    > Do not add the x64 (or x86) folder in the path. The mpcmdrun.exe process adds it automatically.
 
 ## Related articles
 
