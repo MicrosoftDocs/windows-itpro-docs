@@ -83,7 +83,7 @@ Perform the following steps to onboard Windows servers through Microsoft Defende
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
-#### Configure and update System Center Endpoint Protection clients
+### Configure and update System Center Endpoint Protection clients
 
 Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
@@ -93,7 +93,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
 
 
-#### Turn on Server monitoring from the Microsoft Defender Security Center portal
+### Turn on Server monitoring from the Microsoft Defender Security Center portal
 
 1. In the navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
@@ -103,7 +103,7 @@ The following steps are required to enable this integration:
 
 <span id="server-mma"/>
 
-#### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP
+### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
@@ -118,11 +118,10 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 <span id="server-proxy"/>
 
-#### Configure Windows server proxy and Internet connectivity settings
+### Configure Windows server proxy and Internet connectivity settings
 
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway" data-raw-source="[OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)">OMS Gateway</a>.
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Microsoft Defender ATP service URLs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
-
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
@@ -134,7 +133,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
 ### Option 3: Onboard Windows servers through Microsoft Endpoint Configuration Manager version 2002 and later
-You can onboard Windows Server 2012 R2 and Windows Server 2016 using Microsoft Endpoint Configuration Manager version 2002 and later. For more information, see [Microsoft Defender Advanced Threat Protection in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Configuration Manager version 2002 and later. For more information, see [Microsoft Defender Advanced Threat Protection in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
@@ -191,10 +190,9 @@ The following capabilities are included in this integration:
 - Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
-> - When you use Azure Security Center to monitor Windows servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
+> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created (in the US for US users, in the EU for European and UK users).
 > - If you use Microsoft Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
 > - When you use Azure Security Center to monitor Windows servers, a Microsoft Defender ATP tenant is automatically created and the Microsoft Defender ATP data is stored in Europe by default. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
-
 
 ## Offboard Windows servers
 You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.

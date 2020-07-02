@@ -33,11 +33,12 @@
 #### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Configuration score](microsoft-defender-atp/configuration-score.md)
+#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
 #### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 #### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 #### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
+#### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
 #### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 ### [Attack surface reduction]()
@@ -218,6 +219,7 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
 ##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
+##### [Schedule scans](microsoft-defender-atp/mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
@@ -441,7 +443,11 @@
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
+##### [Create indicators](microsoft-defender-atp/manage-indicators.md)
+###### [Create indicators for files](microsoft-defender-atp/indicator-file.md)
+###### [Create indicators for IPs and URLs/domains](microsoft-defender-atp/indicator-ip-domain.md)
+###### [Create indicators for certificates](microsoft-defender-atp/indicator-certificates.md)
+###### [Manage indicators](microsoft-defender-atp/indicator-manage.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
 
