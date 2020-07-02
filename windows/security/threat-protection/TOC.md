@@ -446,6 +446,7 @@
 ##### [Create indicators](microsoft-defender-atp/manage-indicators.md)
 ###### [Create indicators for files](microsoft-defender-atp/indicator-file.md)
 ###### [Create indicators for IPs and URLs/domains](microsoft-defender-atp/indicator-ip-domain.md)
+###### [Create indicators for certificates](microsoft-defender-atp/indicator-certificate.md)
 ###### [Manage indicators](microsoft-defender-atp/indicator-manage.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)

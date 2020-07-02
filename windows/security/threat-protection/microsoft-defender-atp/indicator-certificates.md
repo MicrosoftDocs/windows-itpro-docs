@@ -36,16 +36,15 @@ You can create indicators for certificates. Some common use cases include:
 
 It's important to understand the following requirements prior to creating indicators for certificates:
 
-- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later.
-- Supported on Windows Server 2016 and Windows Server 2019 and later
 - The virus and threat protection definitions must be up-to-date.
 - This feature currently supports entering .CER or .PEM file extensions.
 
 >[!IMPORTANT]
-> - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it’s trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
->- The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality – only leaf certificates are supported.
+> - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
+>- The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.
 >- Microsoft signed certificates cannot be blocked.
 
 #### Create an indicator for certificates from the settings page:
