@@ -316,9 +316,9 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 <!--/Description-->
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Desktop Analytics Monitoring*
--   GP name: *AllowDesktopAnalyticsMonitoring*
--   GP path: *Windows Components/Data Collection and Preview Builds*
+-   GP English name: *Allow Desktop Analytics Processing*
+-   GP name: *AllowDesktopAnalyticsProcessing*
+-   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXBacked-->
@@ -1010,9 +1010,9 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 <!--/Description-->
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Update Compliance monitoring*
--   GP name: *AllowUpdateComplianceMonitoring*
--   GP path: *Windows Components/Data Collection and Preview Builds*
+-   GP English name: *Enable Update Compliance Processing*
+-   GP name: *AllowUpdateComplianceProcessing*
+-   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *DataCollection.admx*
 
 <!--/ADMXBacked-->
@@ -1140,12 +1140,6 @@ If you disable or don't configure this policy setting, Microsoft will be the con
 > This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not enforce safeguards for Feature Updates*
--   GP name: *DisableWUfBSafeguards*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
-
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:  
