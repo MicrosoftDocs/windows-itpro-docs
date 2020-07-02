@@ -29,9 +29,9 @@ To implement a multi-tenant delegated access solution take the following steps:
 
 1. Enable [role-based access control](rbac.md) in Microsoft Defender ATP and connect with Active Directory (AD) groups.
 
-2. Configure [Governance Access Packages](https://docs.microsoft.com/en-us/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
+2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
-3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-request-approve).
+3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## Enable role-based access controls in Microsoft Defender ATP
 
