@@ -57,7 +57,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
 
 ## Check license state
 
@@ -88,7 +88,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -140,12 +140,12 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender ATP URL exclusions in the proxy, see the
-Appendix section in this document for the URLs Whitelisting or on
+Appendix section in this document for the URLs allow list or on
 [Microsoft
 Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
 > [!NOTE]
-> For a detailed list of URLs that need to be whitelisted, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus).
+> For a detailed list of URLs that need to be allowed, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 **Manual static proxy configuration:**
 
@@ -214,27 +214,27 @@ Use netsh to configure a system-wide static proxy.
    For example: netsh winhttp set proxy 10.0.0.6:8080
 
 
-###  Proxy Configuration for down-level machines
+###  Proxy Configuration for down-level devices
 
-Down-Level machines include Windows 7 SP1 and Windows 8.1 workstations as well
+Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well
 as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
 versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
 systems will have the proxy configured as part of the Microsoft Management Agent
 to handle communication from the endpoint to Azure. Refer to the
 Microsoft Management Agent Fast Deployment Guide for information on how a proxy
-is configured on these machines.
+is configured on these devices.
 
 ### Proxy Service URLs
 URLs that include v20 in them are only needed if you have Windows 10, version
-1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only
-needed if the machine is on Windows 10, version 1803 or later.
+1803 or later devices. For example, ```us-v20.events.data.microsoft.com``` is only
+needed if the device is on Windows 10, version 1803 or later.
 
- Service location | Microsoft.com DNS record
+  Service location | Microsoft.com DNS record
 -|-
 Common URLs for all locations | ```crl.microsoft.com/pki/crl/*```<br> ```ctldl.windowsupdate.com``` <br>```www.microsoft.com/pkiops/*```<br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` 
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` 
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net```
+European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` <br>```automatedirstrprdweu.blob.core.windows.net``` <br>```automatedirstrprdneu.blob.core.windows.net```
+United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` <br>```automatedirstrprduks.blob.core.windows.net``` <br>```automatedirstrprdukw.blob.core.windows.net```  
+United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net``` <br> ```automatedirstrprdcus.blob.core.windows.net``` <br> ```automatedirstrprdeus.blob.core.windows.net```
 
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.

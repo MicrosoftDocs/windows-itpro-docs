@@ -49,9 +49,8 @@ To have your company listed as a partner in the in-product partner page, you wil
 6. We'd like to request that you include the User-Agent field in each API call made to Microsoft Defender ATP public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
     Follow these steps:
     1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender ATP integrated product with the version of the product that includes this integration. 
-
-      - ISV nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`.
-      - Security partner nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}`. 
+      - ISV Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`
+      - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}` 
 
     2.	Set the User-Agent field in each HTTP request header to the name based on the above nomenclature. 
     For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43). For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`

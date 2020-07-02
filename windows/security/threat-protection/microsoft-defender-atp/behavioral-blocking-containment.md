@@ -26,7 +26,7 @@ ms.collection:
 
 ## Overview
 
-Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised machines. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security). 
+Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Microsoft Defender ATP](https://docs.microsoft.com/windows/security). 
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Microsoft Defender ATP components and features work together in behavioral blocking and containment capabilities. 
 
@@ -34,7 +34,7 @@ Behavioral blocking and containment capabilities can help identify and stop thre
 
 Behavioral blocking and containment capabilities work with multiple components and features of Microsoft Defender ATP to stop attacks immediately and prevent attacks from progressing.
 
-- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
+- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
 
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
@@ -54,7 +54,7 @@ The following image shows an example of an alert that was triggered by behaviora
 
 - **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.) 
 
-- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Windows Defender Antivirus is not the primary antivirus solution. (EDR in block mode, currently in preview, is not enabled by default; you turn it on in the Microsoft Defender Security Center.) 
+- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Microsoft Defender Antivirus is not the primary antivirus solution. (EDR in block mode, currently in preview, is not enabled by default; you turn it on in the Microsoft Defender Security Center.) 
 
 Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities. To see what's planned and rolling out now, visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -80,15 +80,15 @@ Below are two real-life examples of behavioral blocking and containment in actio
 
 As described in [In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks), a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. Spear-phishing email messages that contained a lure document were sent to the targeted organizations. If a recipient opened the attachment, a related remote document was able to execute code on the user’s device and load Lokibot malware, which stole credentials, exfiltrated stolen data, and waited for further instructions from a command-and-control server. 
 
-Behavior-based machine learning models in Microsoft Defender ATP caught and stopped the attacker’s techniques at two points in the attack chain:
-- The first protection layer detected the exploit behavior. Machine learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
+Behavior-based device learning models in Microsoft Defender ATP caught and stopped the attacker’s techniques at two points in the attack chain:
+- The first protection layer detected the exploit behavior. Device learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
 - The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot). 
 
 While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)):
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender Security Center":::
 
-This example shows how behavior-based machine learning models in the cloud add new layers of protection against attacks, even after they have started running.
+This example shows how behavior-based device learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
 ### Example 2: NTML relay - Juicy Potato malware variant
 

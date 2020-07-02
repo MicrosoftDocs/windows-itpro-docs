@@ -1,7 +1,7 @@
 ---
 title: ApplicationControl CSP
 description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from a MDM server.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -123,7 +123,7 @@ For customers using Intune standalone or hybrid management with Configuration Ma
 
 In order to leverage the ApplicationControl CSP without using Intune, you must:
 
-1. Know a generated policy's GUID, which can be found in the policy xml as <PolicyID> or <PolicyTypeID> for pre-1903 systems.
+1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 2. Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 3. Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
 

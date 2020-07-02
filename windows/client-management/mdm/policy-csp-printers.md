@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Printers
-description: Policy CSP - Printers
+description: Use this policy setting to control the client Point and Print behavior, including  security prompts for Windows Vista computers. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -293,6 +293,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 

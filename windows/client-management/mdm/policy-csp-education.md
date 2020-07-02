@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Education
-description: Policy CSP - Education
+description: Control graphing functionality in the Windows Calculator app. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,9 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - Education
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>

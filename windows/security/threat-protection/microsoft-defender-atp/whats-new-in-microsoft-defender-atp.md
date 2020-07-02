@@ -35,9 +35,16 @@ For more information preview features, see [Preview features](https://docs.micro
 > https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
 > ```
 
+
+## June 2020
+- [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
+
+- [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender ATP has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
+
+
 ## April 2020
 
-- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and machine vulnerability inventory, software version distribution, machine vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 ## November-December 2019
 
@@ -63,11 +70,11 @@ For more information preview features, see [Preview features](https://docs.micro
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
+- [Tamper Protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
-- [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
+- [Live response](live-response.md)<BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
 
-- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
+- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can
  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
 - [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2008 R2 SP1.
@@ -77,7 +84,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
   
-- [Machine health and compliance report](machine-reports.md)  The machine health and compliance report provides high-level information about the devices in your organization.
+- [Device health and compliance report](machine-reports.md)  The device health and compliance report provides high-level information about the devices in your organization.
 
 ## May 2019
 
@@ -102,7 +109,7 @@ For more information preview features, see [Preview features](https://docs.micro
 ## February 2019
 - [Incidents](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident is a new entity in Microsoft Defender ATP that brings together all relevant alerts and related entities to narrate the broader attack story, giving analysts better perspective on the purview of complex threats. 
 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows machines so that they can send sensor data to the Microsoft Defender ATP sensor.
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboard supported versions of Windows devices so that they can send sensor data to the Microsoft Defender ATP sensor.
 
 
 ## October 2018
@@ -127,10 +134,10 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes.
   
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-    - Windows Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
-    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-advanced-scan-types-windows-defender-antivirus) for Windows Defender Antivirus scans.
+    - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://cloudblogs.microsoft.com/microsoftsecure/2018/10/26/microsoft-defender-antivirus-can-now-run-in-a-sandbox/) (preview), increasing its security.
+    - [Configure CPU priority settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus) for Microsoft Defender Antivirus scans.
 
 
   
@@ -159,16 +166,16 @@ Query data using advanced hunting in Microsoft Defender ATP.
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 You can now block untrusted processes from writing to disk sectors using Controlled Folder Access.
 
-- [Onboard non-Windows machines](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [Onboard non-Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
     Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network.
 
 - [Role-based access control (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>
     Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal.
 
 
-- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)<BR>
-Windows Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
+- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
+Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender ATP. For more information, see [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
-    Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus).
+    Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
 
 

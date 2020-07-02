@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.date: 12/05/2018
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -42,7 +41,7 @@ Save your files to your favorite cloud, like OneDrive or Dropbox, and access the
 
 ## Deployment
 
-Windows 10 in S mode is built for [modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management) which means using [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through mobile device management to customize the device to the user and the desired environment. Devices are shipped in S mode; you can either keep them in S mode or use Windows Autopilot to switch the device out of S mode during the first run process or later using mobile device management, if desired.
+Windows 10 in S mode is built for [modern management](https://docs.microsoft.com/windows/client-management/manage-windows-10-in-your-organization-modern-management) which means using [Windows Autopilot](windows-autopilot/windows-autopilot.md). Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through mobile device management to customize the device to the user and the desired environment. Devices are shipped in S mode; you can either keep them in S mode or use Windows Autopilot to switch the device out of S mode during the first run process or later using mobile device management, if desired.
 
 ## Keep line of business apps functioning with Desktop Bridge
 

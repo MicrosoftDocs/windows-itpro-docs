@@ -1,6 +1,6 @@
 ---
 title: Get started with Windows 10, version 1709
-description: All the information to get you started with Windows 10, version 1709.
+description: Learn the dos and don'ts for getting started with Windows 10, version 1709.
 keywords: ["get started", "windows 10", "fall creators update", "1709"]
 ms.prod: w10
 ms.mktglfcycl: deploy

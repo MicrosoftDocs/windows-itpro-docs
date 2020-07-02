@@ -116,7 +116,7 @@ To trigger a remote Windows Autopilot Reset via Intune, follow these steps:
 -   Select **Autopilot Reset** to kick-off the reset task. 
 
 >[!NOTE]
->The Autopilot Reset option will not be enabled in Microsoft Intune for devices not running Windows 10 build 17672 or higher.
+>The Autopilot Reset option will only be enabled in Microsoft Intune for devices running Windows 10 build 17672 or higher.
 
 >[!IMPORTANT]
 >The feature for Autopilot Reset will stay grayed out, **unless** you reset the device using Autopilot (either using Fresh Reset or manually sysprep the device).

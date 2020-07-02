@@ -228,7 +228,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!--/Scope-->
 <!--Description-->
-Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
+Integer value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -468,7 +468,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
+Integer value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -550,6 +550,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 

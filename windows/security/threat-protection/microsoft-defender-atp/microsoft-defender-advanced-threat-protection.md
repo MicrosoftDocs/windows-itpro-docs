@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
-description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise security platform that helps defend against advanced persistent threats.
+description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise endpoint security platform that helps defend against advanced persistent threats.
 keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.topic: conceptual
 >
 > For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
-Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
+Microsoft Defender Advanced Threat Protection is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 <p></p>
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wDob]
@@ -34,7 +34,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
     collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
 
 
--   **Cloud security analytics**: Leveraging big-data, machine-learning, and
+-   **Cloud security analytics**: Leveraging big-data, device-learning, and
     unique Microsoft optics across the Windows ecosystem,
     enterprise cloud products (such as Office 365), and online assets, behavioral signals
     are translated into insights, detections, and recommended responses
@@ -87,7 +87,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)**<br>
+**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
@@ -102,11 +102,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 <a name="ss"></a>
 
-**[Configuration score](configuration-score.md)**<br>
-> [!NOTE]
-> Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md).
+**[Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)**<br>
 
-Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+Microsoft Defender ATP includes Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>
 

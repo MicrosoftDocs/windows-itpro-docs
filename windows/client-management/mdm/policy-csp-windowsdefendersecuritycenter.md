@@ -14,9 +14,6 @@ manager: dansimp
 
 # Policy CSP - WindowsDefenderSecurityCenter
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
@@ -1611,6 +1608,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 
