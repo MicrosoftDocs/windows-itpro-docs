@@ -123,8 +123,6 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 
-- [Run a Microsoft Defender Antivirus scan from the command line](command-line-arguments-microsoft-defender-antivirus.md)
-
 - [Command line arguments](command-line-arguments-microsoft-defender-antivirus.md)
 
 - [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
