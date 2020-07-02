@@ -253,6 +253,148 @@ This error might occur if you updated the firmware. As a best practice you shoul
 
 Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair will automatically start. When Startup Repair is launched automatically due to boot failures, it will only execute operating system and driver file repairs, provided that the boot logs or any available crash dump point to a specific corrupted file. In Windows 8.1 and later, devices that include firmware to support specific TPM measurements for PCR\[7\] the TPM can validate that Windows RE is a trusted operating environment and will unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example the TPM has been disabled, the drives will stay locked until the BitLocker recovery key is provided. If Startup Repair is not able to be run automatically from the PC and instead Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
 
+
+## BitLocker recovery screen
+
+During BitLocker recovery, Windows can display a custom recovery message and hints that identify where a key can be retrieved from. These improvements can help a user during BitLocker recovery.
+
+### Custom recovery message
+
+BitLocker Group Policy settings in Windows 10, version 1511, let you confiure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+
+This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
+
+It can also be configured using Intune mobile device management (MDM) in the BitLocker CSP:
+*<LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>*
+
+![Custom URL](./images/bl-intune-custom-url.png)
+
+Example of customized recovery screen:
+
+![Customized BitLocker Recovery Screen](./images/bl-password-hint1.png)
+
+
+
+### BitLocker recovery key hints
+
+BitLocker metadata has been enhanced in Windows 10, version 1903 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume’s recovery key. Hints are displayed on the recovery screen and refer to the location where key has been saved. Hints are displayed in both the modern (blue) and legacy (black) recovery screen. This applies to both the bootmanager recovery screen and the WinRE unlock screen.
+
+![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
+
+> [!IMPORTANT]
+> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft Account.
+
+
+There are rules governing which hint is shown during the recovery (in order of processing):
+
+1. Always display custom recovery message if it has been configured (using GPO or MDM).
+2. Always display generic hint: "For more information go to http://aka.ms/recoverykeyfaq."
+3. If multiple recovery keys exist on the volume, prioritize the last created (and successfully backed up) recovery key.
+4. Prioritize keys with successful backup over keys that have never been backed up.
+5. Prioritize backup hints in the following order for remote backup locations: Microsoft Account > Azure AD > Active Directory 
+6. If a key has been printed and saved to file, display a combined hint, “Look for a printout or a text file with the key,” instead of two separate hints.
+7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed up date.
+8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” will be displayed. 
+9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system will ask for a key that has been backed up, even if another key is newer. 
+
+
+#### Example 1 (single recovery key with single backup)
+
+|     Custom URL       |     Yes    |
+|----------------------|------------|
+|     Saved to Microsoft Account     |     Yes    |
+|     Saved to Azure AD     |     No     |
+|     Saved to Active Directory      |     No     |
+|     Printed          |     No     |
+|     Saved to file    |     No     |
+
+**Result:** The hint for the Microsoft Account and custom URL are displayed.
+
+![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
+
+#### Example 2 (single recovery key with single backup)
+
+|     Custom URL       |     Yes    |
+|----------------------|------------|
+|     Saved to Microsoft Account     |     No     |
+|     Saved to Azure AD     |     No     |
+|     Saved to Active Directory      |     Yes    |
+|     Printed          |     No     |
+|     Saved to file    |     No     |
+
+**Result:** Only the custom URL is displayed.
+
+![Example 2 of customized BitLocker recovery screen](./images/rp-example2.PNG)
+
+#### Example 3 (single recovery key with multiple backups)
+
+|     Custom URL       |     No     |
+|----------------------|------------|
+|     Saved to Microsoft Account     |     Yes    |
+|     Saved to Azure AD     |     Yes    |
+|     Saved to Active Directory      |     No     |
+|     Printed          |     Yes    |
+|     Saved to file    |     Yes    |
+
+**Result:** Only the Microsoft Account hint is displayed.
+
+![Example 3 of customized BitLocker recovery screen](./images/rp-example3.PNG)
+
+#### Example 4  (multiple recovery passwords)
+
+|     Custom URL       |     No          |
+|----------------------|-----------------|
+|     Saved to Microsoft Account     |     No          |
+|     Saved to Azure AD     |     No          |
+|     Saved to Acive Directory      |     No          |
+|     Printed          |     No          |
+|     Saved to file    |     Yes         |
+|     Creation time    |     **1PM**     |
+|     Key ID           |     A564F193    |
+&nbsp;
+&nbsp;
+|     Custom URL       |     No          |
+|----------------------|-----------------|
+|     Saved to Microsoft Account     |     No          |
+|     Saved to Azure AD     |     No          |
+|     Saved to Active Directory      |     No          |
+|     Printed          |     No          |
+|     Saved to file    |     No          |
+|     Creation time    |     **3PM**     |
+|     Key ID           |     T4521ER5    |
+
+**Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
+
+![Example 4 of customized BitLocker recovery screen](./images/rp-example4.PNG)
+
+
+#### Example 5  (multiple recovery passwords)
+
+|     Custom URL       |     No          |
+|----------------------|-----------------|
+|     Saved to Microsoft Account     |     Yes         |
+|     Saved to Azure AD     |     Yes         |
+|     Saved to Active Directory      |     No          |
+|     Printed          |     No          |
+|     Saved to file    |     No          |
+|     Creation time    |     **1PM**     |
+|     Key ID           |     99631A34    |
+&nbsp;
+&nbsp;
+|     Custom URL       |     **No**          |
+|     Saved to Microsoft Account     |     No          |
+|     Saved to Azure AD     |     Yes         |
+|     Saved to Active Directory      |     No          |
+|     Printed          |     No          |
+|     Saved to file    |     No          |
+|     Creation time    |     **3PM**     |
+|     Key ID           |     9DF70931    |
+
+**Result:** The hint for the most recent key is displayed.
+
+![Example 5 of customized BitLocker recovery screen](./images/rp-example5.PNG)
+
+
 ## <a href="" id="bkmk-usingaddrecovery"></a>Using additional recovery information
 
 Besides the 48-digit BitLocker recovery password, other types of recovery information are stored in Active Directory. This section describes how this additional information can be used.
