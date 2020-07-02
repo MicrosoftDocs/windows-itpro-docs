@@ -308,7 +308,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 |     Printed          |     No     |
 |     Saved to file    |     No     |
 
-**Result:** The hint for the MSA and custom URL are displayed.
+**Result:** The hint for the Microsoft Account and custom URL are displayed.
 
 ![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
 
@@ -336,7 +336,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 |     Printed          |     Yes    |
 |     Saved to file    |     Yes    |
 
-**Result:** Only the MSA hint is displayed.
+**Result:** Only the Microsoft Account hint is displayed.
 
 ![Example 3 of customized BitLocker recovery screen](./images/rp-example3.PNG)
 
