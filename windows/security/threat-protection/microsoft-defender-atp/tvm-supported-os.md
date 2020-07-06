@@ -1,7 +1,7 @@
 ---
 title: Threat & Vulnerability Management supported operating systems and platforms
 description: Before you begin, ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your all devices are properly accounted for. 
-keywords: threat & vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
+keywords: threat & vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm, risk-based threat & vulnerability management, security configuration, Microsoft Secure Score for Devices, exposure score    
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -46,11 +46,12 @@ Some of the above prerequisites might be different from the [Minimum requirement
 - [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

@@ -282,6 +282,10 @@ If the verification fails and your environment is using a proxy to connect to th
 
     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
+   > [!NOTE]
+   > In addition, you must ensure that wdfilter.sys and wdboot.sys are set to their default start values of "0".
+   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## Troubleshoot onboarding issues on a server
 
@@ -319,7 +323,7 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> The following steps are only relevant when using Microsoft Endpoint Configuration Manager
+> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
@@ -445,4 +449,3 @@ The steps below provide guidance for the following scenario:
 - [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
-
