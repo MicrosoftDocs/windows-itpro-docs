@@ -81,4 +81,4 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    See [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md) for details.
+    For more details, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).

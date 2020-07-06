@@ -27,7 +27,11 @@ Microsoft maintains an active commitment to meeting the requirements of the FIPS
 
 ## Using Windows in a FIPS 140-2 approved mode of operation
 
-Windows 10 and Windows server may be configured to run in a FIPS 140-2 approved mode of operation.  This is commonly referred to as “FIPS mode.”  Achieving this mode of operation requires administrators to complete all four steps outlined below.
+Windows 10 and Windows Server may be configured to run in a FIPS 140-2 approved mode of operation. This is commonly referred to as “FIPS mode.”  When this mode is enabled, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows cryptographic operations are run. These self-tests are run in accordance with FIPS 140-2 Section 4.9 and are utilized to ensure that the modules are functioning properly. The Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library are the only modules affected by this mode of operation. The FIPS 140-2 approved mode of operation will not prevent Windows and its subsystems from using non-FIPS validated cryptographic algorithms. For applications or components beyond the Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library, FIPS mode is merely advisory.
+ 
+While US government regulations continue to mandate that FIPS mode be enabled on government computers running Windows, our recommendation is that it is each customer’s decision to make when considering enabling FIPS mode. There are many applications and protocols that look to the FIPS mode policy to determine which cryptographic functionality should be utilized in a given solution. We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode. 
+ 
+Achieving this FIPS 140-2 approved mode of operation of Windows requires administrators to complete all four steps outlined below.
 
 ### Step 1: Ensure FIPS 140-2 validated cryptographic modules are installed
 
@@ -74,6 +78,10 @@ These are two separate security standards with different, but complementary, pur
 ### How does FIPS 140 relate to Suite B?
 
 Suite B is a set of cryptographic algorithms defined by the U.S. National Security Agency (NSA) as part of its Cryptographic Modernization Program. The set of Suite B cryptographic algorithms are to be used for both unclassified information and most classified information. The Suite B cryptographic algorithms are a subset of the FIPS Approved cryptographic algorithms as allowed by the FIPS 140-2 standard.
+
+### Is SMB3 (Server Message Block) FIPS 140 compliant in Windows?
+
+When Windows is configured to operate in FIPS 140 approved mode on both client and server, SMB3 is FIPS 140 compliant and relies on the underlying Windows FIPS 140 validated cryptographic modules for cryptographic operations. 
 
 ## Microsoft FIPS 140-2 validated cryptographic modules
 
@@ -7182,6 +7190,9 @@ Version 6.3.9600</p></td>
 </tbody>
 </table>
 
+## Contact
+
+fips@microsoft.com
 
 ## References
 

@@ -51,7 +51,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Grant full disk access to Microsoft Defender ATP](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
-| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdavtray |
+| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download installation and onboarding packages
 
@@ -245,7 +245,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
                <key>BadgesEnabled</key>
                <true/>
                <key>BundleIdentifier</key>
-               <string>com.microsoft.wdavtray</string>
+               <string>com.microsoft.wdav.tray</string>
                <key>CriticalAlertEnabled</key>
                <false/>
                <key>GroupingType</key>
