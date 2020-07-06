@@ -19,7 +19,10 @@ ms.topic: article
 
 # Migrate from Symantec - Phase 2: Set up Microsoft Defender ATP
 
-:::image type="content" source="images/SymantecMigration-DefenderATP-phase2.png" alt-text="Phase 2 - Setup":::
+|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|--|--|--|
+||*You are here!* | |
+
 
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
