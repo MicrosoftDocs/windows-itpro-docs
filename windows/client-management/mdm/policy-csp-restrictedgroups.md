@@ -144,7 +144,7 @@ Here's an example:
 where:
 - `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
 - `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. For best results, use SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
-- In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` - is a domain group.
+- In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
 > [!Note]
 > Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the above example.
