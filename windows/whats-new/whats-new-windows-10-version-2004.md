@@ -184,7 +184,7 @@ For updated information, see the [Microsoft 365 blog](https://aka.ms/CortanaUpda
 
 ### Windows Search
 
-Windows Search is improved in several ways. For more information, see [Supercharging Windows Search](https://aka.ms/AA8kllm).
+Windows Search is improved in several ways. For more information, see [Supercharging Windows Search](https://insider.windows.com/community-news/desktop-search).
 
 ### Virtual Desktops
 
