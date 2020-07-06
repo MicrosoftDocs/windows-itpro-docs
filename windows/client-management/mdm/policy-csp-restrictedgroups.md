@@ -147,7 +147,7 @@ where:
 - In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
 > [!NOTE]
-> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the above example.
+> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the previous example.
 <!--/Example-->
 <!--Validation-->
 
