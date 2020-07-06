@@ -1763,7 +1763,7 @@ The software version information from **DevDetail/SwV** does not match the versi
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
 
 
--   Silverlight xaps may not install even if publisher policy is specified using Windows Phone 8.1 publisher rule. For example, Silverlight app "Level" will not install even if you specify &lt;Publisher PublisherName=”Microsoft Corporation” /&gt;.
+-   Silverlight apps may not install even if publisher policy is specified using Windows Phone 8.1 publisher rule. For example, Silverlight app "Level" will not install even if you specify &lt;Publisher PublisherName=”Microsoft Corporation” /&gt;.
 
     To workaround this issue, remove the Windows Phone 8.1 publisher rule and add the specific product ID for each Silverlight app you want to allow to the allowed app list.
 
@@ -1946,7 +1946,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     ![configure certificate selection window](images/certfiltering3.png)
 6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
-7.  Close the rasphone dialog box.
+7.  Close the rasphone.exe dialog box.
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
