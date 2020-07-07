@@ -71,7 +71,7 @@ landingContent:
             url: https://go.microsoft.com/fwlink/p/?LinkId=760644
           - text: Internet Explorer Administration Kit 11 (IEAK 11)
             url: /internet-explorer/ie11-ieak
-       - linkListType: download
+      - linkListType: download
         links:
           - text: Download Internet Explorer 11
             url: https://go.microsoft.com/fwlink/p/?linkid=290956
