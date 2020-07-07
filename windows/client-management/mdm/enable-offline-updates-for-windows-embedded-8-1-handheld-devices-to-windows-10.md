@@ -141,7 +141,7 @@ There are two ways to retrieve this file from the device; one pre-GDR1 and one p
 3.  After the report XML is sent to the device, Microsoft Endpoint Configuration Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
 4.  Parse this log for the report XML content.
 
-For a step-by-step walkthrough, see [How to retrieve a device update report using Microsoft Endpoint Configuration Manager logs](#how-to-retrieve-a-device-update-report-using-microsoft-endpoint-configuration-manager-logs).
+For a step-by-step walkthrough, see [Retrieve a device update report using Microsoft Endpoint Configuration Manager logs](#retrieve-a-device-update-report-using-microsoft-endpoint-configuration-manager-logs).
 
 **Post-GDR1: Retrieve the report xml file using an SD card**
 
@@ -197,7 +197,7 @@ Here are the two files.
 
  
 
-For a walkthrough of these steps, see [How to deploy controlled updates](#how-to-deploy-controlled-updates). Ensure that the Trigger Scan configuration baseline has NOT been deployed.
+For a walkthrough of these steps, see [Deploy controlled updates](#deploy-controlled-updates). Ensure that the Trigger Scan configuration baseline has NOT been deployed.
 
 <a href="" id="deploy-controlled-updates"></a>
 
