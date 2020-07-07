@@ -30,7 +30,7 @@ You can either run your installer interactively (through the UI) or create a pac
 
 - Windows 10, version 1809 (or later)
 - Participation in the Windows Insider Program (if you're using an Insider build)
-- A valid Microsoft Work/School account to access the app from the Microsoft Store 
+- A valid Microsoft work or school account to access the app from the Microsoft Store 
 - Admin privileges on your PC account 
 
 ### Get the app from the Microsoft Store
