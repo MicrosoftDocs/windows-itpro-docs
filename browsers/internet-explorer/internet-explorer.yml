@@ -131,7 +131,7 @@ landingContent:
           - text: Out-of-date ActiveX control blocking
             url: /internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking
           - text: Update to block out-of-date ActiveX controls in Internet Explorer
-            url: /help/2991000/update-to-block-out-of-date-activex-controls-in-internet-explorer
+            url: https://support.microsoft.com/help/2991000/update-to-block-out-of-date-activex-controls-in-internet-explorer
           - text: Script to join user to AD with automatic Local user Profile Migration
             url: https://gallery.technet.microsoft.com/scriptcenter/script-to-join-active-7b16d9d3
           - text: Scripts for IT professionals
