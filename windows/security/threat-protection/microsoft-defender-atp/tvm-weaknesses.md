@@ -1,7 +1,7 @@
 ---
-title: Weaknesses
+title: Weaknesses found by threat and vulnerability management
 description: Microsoft Defender Security Center offers a Weaknesses page, which lists vulnerabilities found in the infected software running in your organization. 
-keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
+keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Weaknesses
+# Weaknesses found by threat and vulnerability management
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
+Threat and vulnerability management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, and threat insights.
 
@@ -40,12 +40,12 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
 - Global search
 
 ### Navigation menu
 
-Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open the list of CVEs.
+Go to the threat and vulnerability management navigation menu and select **Weaknesses** to open the list of CVEs.
 
 ### Vulnerabilities in global search
 
@@ -80,7 +80,7 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 ### Top vulnerable software in the dashboard
 
-1. Go to the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
+1. Go to the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
 
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
@@ -119,13 +119,13 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 1. Open the CVE on the Weaknesses page.
 2. Select **Report inaccuracy**.
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
-4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
+4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related topics
 
-- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -134,4 +134,4 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
