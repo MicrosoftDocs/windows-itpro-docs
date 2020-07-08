@@ -35,6 +35,9 @@ There are a significant number of policy settings available for Windows 10, both
 <br>Windows 10 Security Baseline / <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions">Require admin approval mode for administrators</a></td>
 <td>When modifying user account control (UAC) settings during the OOBE using the device Enrollment Status Page (ESP), additional UAC prompts may result, especially if the device reboots after these policies are applied, enabling them to take effect.  To work around this issue, the policies can be targeted to users instead of devices so that they apply later in the process.</td>
 
+<tr><td width="50%">Device restrictions / Cloud and Storage / <a href="https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#cloud-and-storage">Microsoft Account sign-in assistant</a></td>
+<td>Setting this policy to "disabled" will disable the Microsoft Sign-in Assistant service (wlidsvc).  This service is required by Windows Autopilot to obtain the Windows Autopilot profile.</td>
+
 </table>
 
 ## Related topics
