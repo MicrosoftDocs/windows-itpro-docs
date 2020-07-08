@@ -102,19 +102,21 @@ See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/
 
 ## Enable access to Microsoft Defender ATP service URLs in the proxy server
 
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed below to the allowed domains list.
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
+
+
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  | The spreadsheet provides specific DNS records for service locations, geographies, and OS. 
+
+
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
 > URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
 
- Service location | Microsoft.com DNS record
--|-
-Common URLs for all locations | ```crl.microsoft.com/pki/crl/*```<br> ```ctldl.windowsupdate.com``` <br>```www.microsoft.com/pkiops/*```<br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` <br>```automatedirstrprdweu.blob.core.windows.net``` <br>```automatedirstrprdneu.blob.core.windows.net```
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` <br>```automatedirstrprduks.blob.core.windows.net``` <br>```automatedirstrprdukw.blob.core.windows.net```  
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net``` <br> ```automatedirstrprdcus.blob.core.windows.net``` <br> ```automatedirstrprdeus.blob.core.windows.net```
 
 > [!NOTE]
 > If you are using Microsoft Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Microsoft Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus
