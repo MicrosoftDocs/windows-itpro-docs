@@ -48,7 +48,13 @@ Select the software that you want to investigate and a flyout panel opens up wit
 
 ## Software pages
 
-Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Open software page** (see image in the previous section). A full page will appear with all the details of a specific software and the following information:
+You can view software pages a few different ways:
+
+- Software inventory page > Select a software name > Select **Open software page** in the flyout
+- [Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout
+- [Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout
+
+ A full page will appear with all the details of a specific software and the following information:
 
 - Side panel with vendor information, prevalence of the software in the organization (including number of devices it is installed on, and exposed devices that are not patched), whether and exploit is available, and impact to your exposure score
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed devices
@@ -80,10 +86,11 @@ You can report a false positive when you see any vague, inaccurate version, inco
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

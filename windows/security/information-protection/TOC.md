@@ -61,7 +61,6 @@
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with WIP](windows-information-protection\using-owa-with-wip.md)
 ### [Fine-tune WIP Learning](windows-information-protection\wip-learning.md)
-### [How WIP works with sensitivity labels](windows-information-protection\how-wip-works-with-labels.md)
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 
