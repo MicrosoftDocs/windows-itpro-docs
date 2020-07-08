@@ -75,15 +75,11 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
    3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
 
-3. Remove Symantec from your devices. You can use SEP Manager to perform this task. See [Configuring client packages to uninstall existing security software](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Managing-a-custom-installation/preparing-for-client-installation-v16742985-d21e7/configuring-client-packages-to-uninstall-existing-v73569396-d21e2634.html).
-  
-
-> [!TIP]
-> Need help? See the following Broadcom resources: 
-> - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html).
-> -  Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040).
-> - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387).
-> - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054). 
+3. Remove Symantec from your devices. If you need help with this, see the following Broadcom resources: 
+   - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
+   - Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040)
+   - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
+   - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054)
 
 ## Make sure Microsoft Defender ATP is in active mode
 
