@@ -86,6 +86,8 @@ This can only be done in Group Policy.
 
 5.  Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below the path would       be **Windows components > Windows Defender Security Center > Notifications**
 
+   [**NOTE**   For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**]
+
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
 7.  Use the following registry key and DWORD value to **Hide all notifications**.
