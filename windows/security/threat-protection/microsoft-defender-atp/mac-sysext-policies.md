@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # New configuration profiles for macOS Catalina and newer versions of macOS
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15) and newer version of macOS.
+In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
 If you have deployed Microsoft Defender ATP for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do this will result in users getting approval prompts to run these new components.
 
@@ -36,7 +36,6 @@ To approve the system extensions, create the following payload:
 
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
-    - **com.microsoft.wdav.tunnelext**
 
     ![Approved system extensions screenshot](images/mac-approved-system-extensions.png)
 
@@ -109,7 +108,7 @@ A web content filtering policy is needed to run the network extension. Add the f
                     <key>UserDefinedName</key>
                     <string>Microsoft Defender ATP Content Filter</string>
                     <key>PluginBundleID</key>
-                    <string>com.microsoft.wdav.daemon</string>
+                    <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
                     <true/>
                     <key>FilterDataProviderBundleIdentifier</key>
@@ -193,7 +192,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>UserDefinedName</key>
                 <string>Microsoft Defender ATP Content Filter</string>
                 <key>PluginBundleID</key>
-                <string>com.microsoft.wdav.daemon</string>
+                <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>
                 <true/>
                 <key>FilterDataProviderBundleIdentifier</key>
@@ -262,7 +261,6 @@ Save the following content to a file named **sysext.xml**:
                     <array>
                         <string>com.microsoft.wdav.epsext</string>
                         <string>com.microsoft.wdav.netext</string>
-                        <string>com.microsoft.wdav.tunnelext</string>
                     </array>
                 </dict>
             </dict>
