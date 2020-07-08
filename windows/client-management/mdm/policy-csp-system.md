@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - System
-description: Policy CSP - System
+description: Learn policy settings that determines whether users can access the Insider build controls in the advanced options for Windows Update.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 06/25/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="#system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a>
+  </dd>
+  <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -44,13 +47,22 @@ manager: dansimp
     <a href="#system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="#system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
+    <a href="#system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+  <dd>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -212,16 +224,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy setting applies only to the Windows operating system and apps included with Windows, it does not apply to third-party apps or services running on Windows 10.
+This policy setting controls whether Microsoft is a processor or controller for Windows diagnostic data collected from devices. 
 
-This policy setting opts the device into the Windows enterprise data pipeline.
+If you enable this policy and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
 
-If you enable this setting, data collected from the device is opted into the Windows enterprise data pipeline.
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
 
-If you disable or do not configure this setting, all data from the device is collected and processed in accordance with the policies for the Windows standard data pipeline.
-
-Configuring this setting does not change the telemetry collection level or the ability of the user to change the level.
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -238,6 +248,85 @@ The following list shows the supported values:
 
 -   0 (default) - Do not use the Windows Commercial Data Pipeline
 -   1 - Use the Windows Commercial Data Pipeline
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Desktop Analytics service is configured to use Windows diagnostic data collected from devices.
+
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
+
+<!--/Description-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow Desktop Analytics Processing*
+-   GP name: *AllowDesktopAnalyticsProcessing*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) – Diagnostic data is not processed by Desktop Analytics.
+- 2 – Diagnostic data is allowed to be processed by Desktop Analytics.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -600,6 +689,70 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Microsoft Managed Desktop service is configured to use Windows diagnostic data collected from devices.
+
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+> [!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+-  0 (default)– Diagnostic data is not processed by Microsoft Managed Desktop.
+-  32 – Diagnostic data is processed by Microsoft Managed Desktop.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
@@ -802,6 +955,78 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowppdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Update Compliance service is configured to use Windows diagnostic data collected from devices.
+
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note]
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) setting to limit the diagnostic data that can be collected from the device.
+
+<!--/Description-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Enable Update Compliance Processing*
+-   GP name: *AllowUpdateComplianceProcessing*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXBacked-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+- 0 (default)– Diagnostic data is not processed by Update Compliance.
+- 16 – Diagnostic data is allowed to be processed by Update Compliance.
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
 <!--SupportedSKUs-->
@@ -860,6 +1085,70 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1809 through 1909. This policy setting controls whether the Windows Update for Business cloud service is configured to use Windows diagnostic data collected from devices.
+
+If you enable this policy setting and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+
+If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+
+>[!Note] 
+> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
+<!--/Description-->
+<!--ADMXMapped-->
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+- 0 (default) – Diagnostic data is not processed by Windows Update for Business cloud.
+- 8 – Diagnostic data is allowed to be processed by Windows Update for Business cloud.
+<!--/SupportedValues-->
+<!--/Policy-->
+
+</hr>
 
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
@@ -1775,6 +2064,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 

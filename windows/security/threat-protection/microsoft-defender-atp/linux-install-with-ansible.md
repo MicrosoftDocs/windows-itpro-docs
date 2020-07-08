@@ -35,14 +35,15 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
+In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Please refer to the [Ansible documentation](https://docs.ansible.com/) for details.
+
 - Ansible needs to be installed on at least on one computer (we will call it the master).
 - SSH must be configured for an administrator account between the master and all clients, and it is recommended be configured with public key authentication.
 - The following software must be installed on all clients:
   - curl
   - python-apt
-  - unzip
 
-- All hosts must be listed in the following format in the `/etc/ansible/hosts` file:
+- All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 
     ```bash
     [servers]
@@ -60,7 +61,7 @@ Before you get started, please see [the main Microsoft Defender ATP for Linux pa
 
 Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
@@ -79,55 +80,32 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create subtask or role files that contribute to an actual task. First create the `download_copy_blob.yml` file under the `/etc/ansible/roles` directory:
+Create a subtask or role files that contribute to an playbook or task.
 
-- Copy the onboarding package to all client machines:
-
-    ```bash
-    - name: Copy the zip file
-        copy:
-            src:  /root/WindowsDefenderATPOnboardingPackage.zip
-            dest: /root/WindowsDefenderATPOnboardingPackage.zip
-            owner: root
-            group: root
-            mode: '0644'
-
-    - name: Add Microsoft apt signing key
-      apt_key:
-        url: https://packages.microsoft.com/keys/microsoft.asc
-        state: present
-      when: ansible_os_family == "Debian"
-    ```
-
-- Create the `setup.sh` script that operates on the onboarding file, in this example located in the `/root` directory:
+- Create the onboarding task, `onboarding_setup.yml`:
 
     ```bash
-    #!/bin/bash
-    # We assume WindowsDefenderATPOnboardingPackage.zip is stored in /root
-    cd /root || exit 1
-    # Unzip the archive and create the onboarding file
-    mkdir -p /etc/opt/microsoft/mdatp/
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    cp mdatp_onboard.json /etc/opt/microsoft/mdatp/mdatp_onboard.json
-    ```
+    - name: Create MDATP directories
+      file:
+        path: /etc/opt/microsoft/mdatp/
+        recurse: true
+        state: directory
+        mode: 0755
+        owner: root
+        group: root
 
-- Create the onboarding task, `onboarding_setup.yml`, under the `/etc/ansible/roles` directory:
-
-    ```bash
     - name: Register mdatp_onboard.json
-      stat: path=/etc/opt/microsoft/mdatp/mdatp_onboard.json
+      stat:
+        path: /etc/opt/microsoft/mdatp/mdatp_onboard.json
       register: mdatp_onboard
 
-    - name: Copy the setup script file
-        copy:
-            src: /root/setup.sh
-            dest: /root/setup.sh
-            owner: root
-            group: root
-            mode: '0744'
-
-    - name: Run a script to create the onboarding file
-      script: /root/setup.sh
+    - name: Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
+      unarchive:
+        src: WindowsDefenderATPOnboardingPackage.zip
+        dest: /etc/opt/microsoft/mdatp
+        mode: 0600
+        owner: root
+        group: root
       when: not mdatp_onboard.stat.exists
     ```
 
@@ -149,33 +127,33 @@ Create subtask or role files that contribute to an actual task. First create the
     > [!NOTE]
     > In case of Oracle Linux, replace *[distro]* with “rhel”.
 
-        ```bash
-        - name: Add Microsoft apt repository for MDATP
-            apt_repository:
-                repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
-                update_cache: yes
-                state: present
-                filename: microsoft-[channel].list
-            when: ansible_os_family == "Debian"
+  ```bash
+  - name: Add Microsoft APT key
+      apt_key:
+          keyserver: https://packages.microsoft.com/
+          id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      when: ansible_os_family == "Debian"
 
-        - name: Add Microsoft APT key
-            apt_key:
-                keyserver: https://packages.microsoft.com/
-                id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
-            when: ansible_os_family == "Debian"
+  - name: Add Microsoft apt repository for MDATP
+      apt_repository:
+          repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+          update_cache: yes
+          state: present
+          filename: microsoft-[channel].list
+      when: ansible_os_family == "Debian"
 
-        - name: Add  Microsoft yum repository for MDATP
-            yum_repository:
-                name: packages-microsoft-com-prod-[channel]
-                description: Microsoft Defender ATP
-                file: microsoft-[channel]
-                baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
-                gpgcheck: yes
-                enabled: Yes
-            when: ansible_os_family == "RedHat"
-        ```
+  - name: Add  Microsoft yum repository for MDATP
+      yum_repository:
+          name: packages-microsoft-com-prod-[channel]
+          description: Microsoft Defender ATP
+          file: microsoft-[channel]
+          baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+          gpgcheck: yes
+          enabled: Yes
+      when: ansible_os_family == "RedHat"
+  ```
 
-- Create the actual install/uninstall YAML files under `/etc/ansible/playbooks`.
+- Create the Ansible install and uninstall YAML files.
 
     - For apt-based distributions use the following YAML file:
 
@@ -183,8 +161,7 @@ Create subtask or role files that contribute to an actual task. First create the
         $ cat install_mdatp.yml
         - hosts: servers
             tasks:
-                - include: ../roles/download_copy_blob.yml
-                - include: ../roles/setup_blob.yml
+                - include: ../roles/onboarding_setup.yml
                 - include: ../roles/add_apt_repo.yml
                 - apt:
                     name: mdatp
@@ -207,8 +184,7 @@ Create subtask or role files that contribute to an actual task. First create the
         $ cat install_mdatp_yum.yml
         - hosts: servers
         tasks:
-            - include: ../roles/download_copy_blob.yml
-            - include: ../roles/setup_blob.yml
+            - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
             - yum:
                 name: mdatp
@@ -227,7 +203,7 @@ Create subtask or role files that contribute to an actual task. First create the
 
 ## Deployment
 
-Now run the tasks files under `/etc/ansible/playbooks/`.
+Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
 - Installation:
 
@@ -241,8 +217,8 @@ Now run the tasks files under `/etc/ansible/playbooks/`.
 - Validation/configuration:
 
     ```bash
-    $ ansible -m shell -a 'mdatp --connectivity-test' all
-    $ ansible -m shell -a 'mdatp --health' all
+    $ ansible -m shell -a 'mdatp connectivity test' all
+    $ ansible -m shell -a 'mdatp health' all
     ```
 
 - Uninstallation:

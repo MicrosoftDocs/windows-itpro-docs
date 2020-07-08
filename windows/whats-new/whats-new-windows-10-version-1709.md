@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1709
-description: New and updated IT Pro content about new features in Windows 10, version 1709 (also known as the Fall Creators Update).
+description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
 keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1709 IT Pro content
+# What's new in Windows 10, version 1709 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1709
@@ -130,7 +130,7 @@ Upgrade Readiness provides insights into application and driver compatibility is
 
 ### Update Compliance
 
-New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Windows Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
+New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Microsoft Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
 
 ### Device Health
 

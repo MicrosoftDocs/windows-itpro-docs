@@ -299,7 +299,7 @@ This example configures the same as example 2 using compounding And elements.  T
 #### Example 4 
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 ```
-<rule version="1.0"> 
+<rule schemaVersion="1.0"> 
   <signal type="wifi"> 
     <ssid>contoso</ssid> 
     <bssid>12-ab-34-ff-e5-46</bssid> 

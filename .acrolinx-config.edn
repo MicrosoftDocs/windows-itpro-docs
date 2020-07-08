@@ -1,5 +1,8 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["windows/"]
+ 
+ :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
+ 
  :acrolinx-check-settings
  {
   "languageId" "en"
@@ -33,6 +36,6 @@ Click the scorecard links for each article to review the Acrolinx feedback on gr
  "
 **More info about Acrolinx**
  
-You are helping M365 test Acrolinx while we merge to the Microsoft instance. We have set the minimum score to 20 to test that the minimum score script works. This is effectively *not* setting a minimum score. If you need to bypass this score, please contact krowley or go directly to the marveldocs-admins. Thanks for your patience while we continue with roll out!
+We have set the minimum score to 20. This is effectively *not* setting a minimum score. If you need to bypass this score, please contact MARVEL PubOps.
 "
 }

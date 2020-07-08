@@ -33,7 +33,7 @@ There are a few things to be aware of before you start using Cortana in Windows 
 
 - **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](https://go.microsoft.com/fwlink/p/?LinkId=620763).
 
-### Turn on Cortana enterprise services on employees devices
+### Turn on Cortana enterprise services on employees' devices
 Your employees must connect Cortana to their Microsoft 365 account to be able to use skills like email and calendar.
 
 #### Turn on Cortana enterprise services
@@ -51,6 +51,6 @@ Cortana in Windows 10, versions 1909 and earlier can only access data in your Mi
 
 2. Select the app launcher icon in the upper-left and choose  **Admin**.
 
-3. Expand **Settings** and select **Settings**.
+3. Expand **Settings** and select **Org Settings**.
 
 4. Select **Cortana** to toggle Cortana&#39;s access to Microsoft 365 data off.

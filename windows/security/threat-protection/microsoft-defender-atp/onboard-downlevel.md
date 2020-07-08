@@ -1,6 +1,6 @@
 ---
 title: Onboard previous versions of Windows on Microsoft Defender ATP
-description: Onboard supported previous versions of Windows machines so that they can send sensor data to the Microsoft Defender ATP sensor
+description: Onboard supported previous versions of Windows devices so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,7 +40,7 @@ To onboard down-level Windows client endpoints to Microsoft Defender ATP, you'll
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP as instructed below.
 
 > [!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ Microsoft Defender ATP integrates with System Center Endpoint Protection to prov
 The following steps are required to enable this integration: 
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
-- Configure your network to allow connections to the Windows Defender Antivirus cloud. For more information, see [Allow connections to the Windows Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud)
+- Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Allow connections to the Microsoft Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP
 
@@ -77,7 +77,7 @@ Review the following details to verify minimum system requirements:
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtain the workspace ID:
-   - In the Microsoft Defender ATP navigation pane, select **Settings > Machine management > Onboarding**
+   - In the Microsoft Defender ATP navigation pane, select **Settings > Device management > Onboarding**
    - Select **Windows 7 SP1 and 8.1** as the operating system
    - Copy the workspace ID and workspace key
 

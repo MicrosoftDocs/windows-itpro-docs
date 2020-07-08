@@ -22,7 +22,13 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your machines are less vulnerable from exploitation.
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+Your Exposure score is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
+
+- Quickly understand and identify high-level takeaways about the state of security in your organization.
+- Detect and respond to areas that require investigation or action to improve the current state.
+- Communicate with peers and management about the impact of security efforts.
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
@@ -30,7 +36,7 @@ The card gives you a high-level view of your exposure score trend over time. Any
 
 ## How it works
 
-Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
+Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your devices are to imminent threats.
 
 The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
 
@@ -49,37 +55,19 @@ You can remediate the issues based on prioritized [security recommendations](tvm
 
 ## Reduce your threat and vulnerability exposure
 
-To lower your threat and vulnerability exposure, follow these steps.
-
-1. Review the **Top security recommendations** from your [**Threat & Vulnerability Management dashboard**](tvm-dashboard-insights.md) and select an item on the list.  
-
-   ![Example of Top security recommendations card, with four security recommendations.](images/top-security-recommendations350.png)
-
-      Always prioritize recommendations that are associated with ongoing threats:
-
-   - ![Red bug](images/tvm_bug_icon.png) Threat insight icon
-   - ![Arrow hitting a target](images/tvm_alert_icon.png) Active alert icon
-
-2. The **Security recommendations** page will open, and a flyout for the recommendation you selected will open. The flyout panel will display a description of what you need to remediate, number of vulnerabilities, associated exploits in machines, number of exposed machines and their machine names, business impact, and a list of CVEs. Select **Open software page** option from the flyout panel.  ![Example of security recommendations page with the flyout "Update Windows Server 2019" open.](images/tvm_security_recommendations_page.png)
-
-3. Select **Installed machines** and then the affected machine from the list. A flyout panel will open with the relevant machine details, exposure and risk levels, alert and incident activities. ![Example of the software page for Git, and a flyout open for a selected machine.](images/tvm_software_page_details.png)
-
-4. Click **Open machine page** to connect to the machine and apply the selected recommendation. See [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md) for details. ![Example of a machine page.](images/tvm_machine_page_details.png)
-
-5. Allow a few hours for the changes to propagate in the system.
-
-6. Review the machine **Security recommendation** tab again. The recommendation you've chosen to remediate is removed from the security recommendation list, and the exposure score decreases.
+Lower your threat and vulnerability exposure by remediating [security recommendations](tvm-security-recommendation.md). Make the most impact to your exposure score by remediating the top security recommendations, which can be viewed in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
 
 ## Related topics
 
 - [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

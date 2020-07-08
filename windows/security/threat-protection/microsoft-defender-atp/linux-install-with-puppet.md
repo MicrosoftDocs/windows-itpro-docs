@@ -33,7 +33,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Puppet
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+ For a description of prerequisites and system requirements for the current software version, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md).
 
 In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
@@ -41,7 +41,7 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 
 Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
@@ -171,13 +171,13 @@ Enrolled agent devices periodically poll the Puppet Server, and install new conf
 
 ## Monitor Puppet deployment
 
-On the agent machine, you can also check the onboarding status by running:
+On the agent device, you can also check the onboarding status by running:
 
 ```bash
-$ mdatp --health
+$ mdatp health
 ...
 licensed                                : true
-orgId                                   : "[your organization identifier]"
+org_id                                  : "[your organization identifier]"
 ...
 ```
 
@@ -190,7 +190,7 @@ orgId                                   : "[your organization identifier]"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-mdatp --health healthy
+mdatp health --field healthy
 ```
 
 The above command prints `1` if the product is onboarded and functioning as expected.
@@ -205,7 +205,7 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Log installation issues
 
-See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+ For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
 
 ## Operating system upgrades
 

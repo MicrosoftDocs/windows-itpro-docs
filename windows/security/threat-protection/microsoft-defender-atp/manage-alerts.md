@@ -26,7 +26,7 @@ ms.topic: article
 
 Microsoft Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
-You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Machine page for an individual device.
+You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Device page for an individual device.
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
@@ -48,7 +48,7 @@ When a suppression rule is created, it will take effect from the point when the 
 
 There are two contexts for a suppression rule that you can choose from:
 
-- **Suppress alert on this machine**
+- **Suppress alert on this device**
 - **Suppress alert in my organization**
 
 The context of the rule lets you tailor what gets surfaced into the portal and ensure that only real security alerts are surfaced into the portal.
@@ -57,8 +57,8 @@ You can use the examples in the following table to help you choose the context f
 
 | **Context**                           | **Definition**                                                                                                                                              | **Example scenarios**                                                                                                                                                                                                  |
 |:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Suppress alert on this machine**    | Alerts with the same alert title and on that specific machine only will be suppressed. <br /><br />All other alerts on that machine will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other machines in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul> |
-| **Suppress alert in my organization** | Alerts with the same alert title on any machine will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
+| **Suppress alert on this device**    | Alerts with the same alert title and on that specific device only will be suppressed. <br /><br />All other alerts on that device will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other devices in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul> |
+| **Suppress alert in my organization** | Alerts with the same alert title on any device will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
 ### Suppress an alert and create a new suppression rule:
 Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
@@ -76,10 +76,10 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
     * URL - wildcard supported
     * Command line - wildcard supported
 
-3. Select the **Trigerring IOC**.
+3. Select the **Triggering IOC**.
     
 4. Specify the action and scope on the alert. <br>
-   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and machine timeline and will appear as resolved across Microsoft Defender ATP APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard and will not be streamed across Microsoft Defender ATP APIs.
+   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue, alert page, and device timeline and will appear as resolved across Microsoft Defender ATP APIs. <br><br> Alerts that are marked as hidden will be suppressed from the entire system, both on the device's associated alerts and from the dashboard and will not be streamed across Microsoft Defender ATP APIs.
 
 
 5. Enter a rule name and a comment.
@@ -100,7 +100,7 @@ You can categorize alerts (as **New**, **In Progress**, or **Resolved**) by chan
 
 For example, a team leader can review all **New** alerts, and decide to assign them to the **In Progress** queue for further analysis.
 
-Alternatively, the team leader might assign the alert to the **Resolved** queue if they know the alert is benign, coming from a machine that is irrelevant (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
+Alternatively, the team leader might assign the alert to the **Resolved** queue if they know the alert is benign, coming from a device that is irrelevant (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
 
 
 
@@ -120,7 +120,7 @@ Added comments instantly appear on the pane.
 - [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
 - [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

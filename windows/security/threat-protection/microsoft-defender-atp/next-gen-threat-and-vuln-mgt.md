@@ -1,7 +1,7 @@
 ---
 title: Threat & Vulnerability Management
 description: This new capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-keywords: threat & vulnerability management, threat and vulnerability management, MDATP TVM, MDATP-TVM, vulnerability management, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, windows defender atp, microsoft defender atp, endpoint vulnerabilities, next generation
+keywords: threat & vulnerability management, threat and vulnerability management, MDATP TVM, MDATP-TVM, vulnerability management, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, microsoft defender atp, microsoft defender atp, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -42,7 +42,7 @@ It is the first solution in the industry to bridge the gap between security admi
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication.
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
-- Linked machine vulnerability and security configuration assessment data in the context of exposure discovery
+- Linked device vulnerability and security configuration assessment data in the context of exposure discovery
 - Built-in remediation processes through Microsoft Intune and Configuration Manager
 
 ### Real-time discovery
@@ -60,7 +60,7 @@ Threat & Vulnerability Management helps customers prioritize and focus on those 
 
 - Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, Threat & Vulnerability Management dynamically aligns the prioritization of its security recommendations to focus on vulnerabilities that are currently being exploited in the wild and emerging threats that pose the highest risk.
 - Pinpointing active breaches. Microsoft Defender ATP correlates Threat & Vulnerability Management and EDR insights to provide the unique ability to prioritize vulnerabilities that are currently being exploited in an active breach within the organization.
-- Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows Threat & Vulnerability Management to identify the exposed machines with business-critical applications, confidential data, or high-value users.
+- Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows Threat & Vulnerability Management to identify the exposed devices with business-critical applications, confidential data, or high-value users.
 
 ### Seamless remediation
 
@@ -72,13 +72,13 @@ Microsoft Defender ATP's Threat & Vulnerability Management allows security admin
 
 ## Before you begin
 
-Ensure that your machines:
+Ensure that your devices:
 
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Run with Windows 10 1709 (Fall Creators Update) or later
 
 >[!NOTE]
->Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
+>Threat & Vulnerability Management can also scan devices that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
 - Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
 
@@ -90,20 +90,33 @@ Ensure that your machines:
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
-- Have at least one security recommendation that can be viewed in the machine page
-- Are tagged or marked as co-managed
+- Have at least one security recommendation that can be viewed in the device page
+- Are tagged or marked as co-managed 
+
+## APIs
+
+Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+See the following topics for related APIs:
+
+- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- [Machine APIs](machine.md)
+- [Recommendation APIs](vulnerability.md)
+- [Score APIs](score.md)
+- [Software APIs](software.md)
+- [Vulnerability APIs](vulnerability.md)
 
 ## Related topics
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](threat-and-vuln-mgt-scenarios.md#apis)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [BLOG: Microsoft's Threat & Vulnerability Management now helps thousands of customers to discover, prioritize, and remediate vulnerabilities in real time](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

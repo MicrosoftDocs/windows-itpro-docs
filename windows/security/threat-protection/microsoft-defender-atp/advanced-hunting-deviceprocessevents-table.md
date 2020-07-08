@@ -32,8 +32,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `ActionType` | string | Type of activity that triggered the event |
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
@@ -48,11 +48,11 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
-| `LogonId` | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
+| `LogonId` | string | Identifier for a logon session. This identifier is unique on the same device only between restarts |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts. |
+| `InitiatingProcessLogonId` | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts. |
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |

@@ -36,7 +36,7 @@ Before you get started, see [the main Microsoft Defender ATP for macOS page](mic
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
@@ -47,60 +47,58 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     
 ## Application installation
 
-To complete this process, you must have admin privileges on the machine.
+To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-28-AppInstall.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-28-AppInstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot](../windows-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
+    ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-29-AppInstallLogin.png)
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot](../windows-defender-antivirus/images/MDATP-30-SystemExtension.png)
+   ![App install screenshot](../microsoft-defender-antivirus/images/MDATP-30-SystemExtension.png)
 
 3. Select **Open Security Preferences**  or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](../windows-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
+    ![Security and privacy window screenshot](../microsoft-defender-antivirus/images/MDATP-31-SecurityPrivacySettings.png)
 
-The installation proceeds.
+   The installation proceeds.
 
-> [!CAUTION]
-> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
+   > [!CAUTION]
+   > If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
 
 > [!NOTE]
-> macOS may request to reboot the machine upon the first installation of Microsoft Defender. Real-time protection will not be available until the machine is rebooted.
+> macOS may request to reboot the device upon the first installation of Microsoft Defender. Real-time protection will not be available until the device is rebooted.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the machine where you deploy Microsoft Defender ATP for macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender ATP for macOS.
 
-    The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
+    The client device is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    $ mdatp --health orgId
+    mdatp --health orgId
     ```
 
 2. Run the Python script to install the configuration file:
 
     ```bash
-    $ /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
-    Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
+    /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
+3. Verify that the device is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    $ mdatp --health orgId
-    E6875323-A6C0-4C60-87AD-114BBE7439B8
+    mdatp --health orgId
     ```
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-   ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+   ![Microsoft Defender icon in status bar screenshot](../microsoft-defender-antivirus/images/MDATP-Icon-Bar.png)
    
 
 ## How to Allow Full Disk Access

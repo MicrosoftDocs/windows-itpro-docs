@@ -1,7 +1,7 @@
 ---
 title: Add additional folders and apps to be protected 
-description: Add additional folders that should be protected by Controlled folder access, or whitelist apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, whitelist, add executable
+description: Add additional folders that should be protected by Controlled folder access, or allow apps that are incorrectly blocking changes to important files.
+keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -43,7 +43,7 @@ You can add additional folders to be protected, but you cannot remove the defaul
 
 Adding other folders to controlled folder access can be useful, for example, if you don't store files in the default Windows libraries or you've changed the location of the libraries away from the defaults.
 
-You can also enter network shares and mapped drives. Environment variables and wildcards are supported. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+You can also enter network shares and mapped drives. Environment variables and wildcards are supported. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 You can use the Windows Security app or Group Policy to add and remove additional protected folders.
 
@@ -63,7 +63,7 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
 
 4. Double-click **Configured protected folders** and set the option to **Enabled**. Click **Show** and enter each folder.
 
@@ -113,11 +113,11 @@ An allowed application or service only has write access to a controlled folder a
 
 ### Use Group Policy to allow specific apps
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management device, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
 
 4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Click **Show** and enter each app.
 

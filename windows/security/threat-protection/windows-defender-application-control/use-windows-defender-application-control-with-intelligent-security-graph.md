@@ -1,7 +1,7 @@
 ---
 title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

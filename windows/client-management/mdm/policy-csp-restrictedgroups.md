@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - RestrictedGroups
 
-> [!WARNING]
-> Some information in this article relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -139,23 +137,23 @@ Here's an example:
     </accessgroup>
     <accessgroup desc = "Group2">
         <member name = "S-1-15-1233433-23423432423-234234324"/>
-        <member name = "Group1"/>
+        <member name = "contoso\Group3"/>
     </accessgroup>
 </groupmembership>
 ```
 where:
 - `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
 - `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. For best results, use SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
-- In this example, `Group1` and `Group2` are local groups on the device being configured.
+- In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
-> [!Note]
-> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a local group as a member to another local group by using the member portion, as shown in the above example.
+> [!NOTE]
+> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the previous example.
 <!--/Example-->
 <!--Validation-->
 
 ### Policy timeline
 
-The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For the latest release of Windows 10, you can use name or SID for both the elements, as described in this topic. 
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in this topic. 
 
 The following table describes how this policy setting behaves in different Windows 10 versions:
 
@@ -163,7 +161,7 @@ The following table describes how this policy setting behaves in different Windo
 | ------------------ | --------------- |
 |Windows 10, version 1803 | Added this policy setting. <br> XML accepts group and member only by name. <br> Supports configuring the administrators group using the group name. <br> Expects member name to be in the account name format. |
 | Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or an SID. <br> This is useful when you want to ensure a certain local group always has a well-known SID as member. |
-| The latest release of Windows 10 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate. | 
+| Windows 10, version 2004 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate. | 
 
 
 <!--/Validation-->
@@ -178,5 +176,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
