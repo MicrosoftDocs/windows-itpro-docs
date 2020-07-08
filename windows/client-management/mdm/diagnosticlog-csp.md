@@ -83,7 +83,7 @@ The ID value uniquely identifies this data-gathering request. To avoid accidenta
 **SasUrl**  
 The SasUrl value is the target URI to which the CSP uploads the zip file containing the gathered data. It is the responsibility of the management server to provision storage in such a way that the storage server accepts the device's HTTP PUT to this URL. For example, the device management service could:
 - Provision cloud storage reachable by the target device, such as a Microsoft Azure blob storage container
-- Generate a Shared Access Signature URL granting the posessor (the target device) time-limited write access to the storage container
+- Generate a Shared Access Signature URL granting the possessor (the target device) time-limited write access to the storage container
 - Pass this value to the CSP on the target device through the `Collection` XML as the `SasUrl` value. 
 
 **One or more data gathering directives, which may include any of the following:**  
