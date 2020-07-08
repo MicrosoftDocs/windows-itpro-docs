@@ -52,11 +52,10 @@ You can hide notifications that describe regular events related to the health an
 This can only be done in Group Policy.
 
 >[!IMPORTANT]
->### Requirements
 >
->You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> Requirement: You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1. Download the latest [Administrative Templates (.admx) for Windows 10, v1809](https://www.microsoft.com/download/details.aspx?id=57576).
+1. Download the latest [Administrative Templates (.admx) for Windows 10, v2004](https://www.microsoft.com/download/101445).
 
 2.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -76,15 +75,17 @@ You can hide all notifications that are sourced from the Windows Security app. T
 This can only be done in Group Policy.
 
 >[!IMPORTANT]
->### Requirements
 >
->You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> Requirement: You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below the path would       be **Windows components > Windows Defender Security Center > Notifications**
+5.  Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below the path would       be **Windows components > Windows Defender Security Center > Notifications**.
+
+    > [!NOTE]
+    > For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
@@ -93,7 +94,7 @@ This can only be done in Group Policy.
     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
     **"DisableNotifications"=dword:00000001**
     
-8.  Use the following registry key and DWORD value to **Hide not-critical notifications**
+8.  Use the following registry key and DWORD value to **Hide not-critical notifications**.
 
      **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
      **"DisableEnhancedNotifications"=dword:00000001**

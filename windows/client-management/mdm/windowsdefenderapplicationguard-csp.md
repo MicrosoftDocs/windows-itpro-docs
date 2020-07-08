@@ -36,6 +36,15 @@ Turn on Windows Defender Application Guard in Enterprise Mode. Value type is int
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Configure Windows Defender Application Guard clipboard settings
+-   GP name: AppHVSIClipboardFileType
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 - Disables content copying. 
 - 1 - Allow text copying.
@@ -44,6 +53,15 @@ Determines the type of content that can be copied from the host to Application G
 
 <a href="" id="clipboardsettings"></a>**Settings/ClipboardSettings**  
 This policy setting allows you to decide how the clipboard behaves while in Application Guard. Value type is integer. Supported operations are Add, Get, Replace, and Delete
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Configure Windows Defender Application Guard clipboard settings
+-   GP name: AppHVSIClipboardSettings
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 (default) - Completely turns Off the clipboard functionality for the Application Guard.
 - 1 - Turns On clipboard operation from an isolated session to the host
@@ -55,6 +73,15 @@ This policy setting allows you to decide how the clipboard behaves while in Appl
 
 <a href="" id="printingsettings"></a>**Settings/PrintingSettings**  
 This policy setting allows you to decide how the print functionality behaves while in Application Guard. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Configure Windows Defender Application Guard Print Settings
+-   GP name: AppHVSIPrintingSettings
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 - Disables all print functionality (default)
 - 1 - Enables only XPS printing
@@ -74,24 +101,60 @@ This policy setting allows you to decide how the print functionality behaves whi
 
 <a href="" id="blocknonenterprisecontent"></a>**Settings/BlockNonEnterpriseContent**  
 This policy setting allows you to decide whether websites can load non-enterprise content in Microsoft Edge and Internet Explorer. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Prevent enterprise websites from loading non-enterprise content in Microsoft Edge and Internet Explorer
+-   GP name: BlockNonEnterpriseContent
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 (default) -  Non-enterprise content embedded in enterprise sites is allowed to open outside of the Windows Defender Application Guard container, directly in Internet Explorer and Microsoft Edge..
 - 1  - Non-enterprise content embedded on enterprise sites are stopped from opening in Internet Explorer or Microsoft Edge outside of Windows Defender Application Guard.
 
 <a href="" id="allowpersistence"></a>**Settings/AllowPersistence**  
 This policy setting allows you to decide whether data should persist across different sessions in Application Guard. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow data persistence for Windows Defender Application Guard
+-   GP name: AllowPersistence
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 - Application Guard discards user-downloaded files and other items (such as, cookies, Favorites, and so on) during machine restart or user log-off.
 - 1 - Application Guard saves user-downloaded files and other items (such as, cookies, Favorites, and so on) for use in future Application Guard sessions.
 
 <a href="" id="allowvirtualgpu"></a>**Settings/AllowVirtualGPU**  
 Added in Windows 10, version 1803. This policy setting allows you to determine whether Application Guard can use the virtual GPU to process graphics. Supported operations are Add, Get, Replace, and Delete. Value type is integer.  
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow hardware-accelerated rendering for Windows Defender Application Guard
+-   GP name: AllowVirtualGPU
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 (default) - Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0).
 - 1 - Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. 
 
 <a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
 Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. Supported operations are Add, Get, Replace, and Delete. Value type is integer. 
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow files to download and save to the host operating system from Windows Defender Application Guard
+-   GP name: SaveFilesToHost
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 (default) - The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0).
 - 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
@@ -110,7 +173,14 @@ Placeholder for future use. Do not use in production code.
 
 <a href="" id="certificatethumbprints"></a>**Settings/CertificateThumbprints**  
 Added in Windows 10, version 1809. This policy setting allows certain Root Certificates to  be shared with the Windows Defender Application Guard container. 
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow Windows Defender Application Guard to use Root Certificate Authorities from the user's device
+-   GP name: CertificateThumbprints
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
 
+<!--/ADMXMapped-->
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. You can specify multiple certificates using a comma to separate the thumbprints for each certificate you want to transfer.
@@ -121,7 +191,14 @@ If you disable or don’t configure this setting, certificates are not shared wi
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
 Added in Windows 10, version 1809. The policy allows you to determine whether applications inside Windows Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow camera and microphone access in Windows Defender Application Guard
+-   GP name: AllowCameraMicrophoneRedirection
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
 
+<!--/ADMXMapped-->
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 If you enable this policy, applications inside Windows Defender Application Guard will be able to access the camera and microphone on the user’s device.
@@ -152,6 +229,15 @@ Interior node. Supported operation is Get
 
 <a href="" id="auditapplicationguard"></a>**Audit/AuditApplicationGuard**  
 This policy setting allows you to decide whether auditing events can be collected from Application Guard. Value type in integer. Supported operations are Add, Get, Replace, and Delete.
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: Allow auditing events in Windows Defender Application Guard
+-   GP name: AuditApplicationGuard
+-   GP path: Windows Components/Windows Defender Application Guard
+-   GP ADMX file name: AppHVSI.admx
+
+<!--/ADMXMapped-->
+The following list shows the supported values:
 
 - 0 (default) - - Audit event logs aren't collected for Application Guard.
 - 1 - Application Guard inherits its auditing policies from Microsoft Edge and starts to audit system events specifically for Application Guard.
