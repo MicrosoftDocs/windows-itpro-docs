@@ -1813,7 +1813,7 @@ By default, PCs running Windows 10 Enterprise and Windows 10 Education will only
 
 Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
-In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (100), as described below.
+In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (99), as described below.
 
 ### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
@@ -1839,7 +1839,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 -or-
 
-- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **100 (one hundred)**. 
+- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**. 
 
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
