@@ -1,6 +1,6 @@
 ---
 title: New configuration profiles for macOS Catalina and newer versions of macOS
-description: This topic describes the changes that are need to be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Catalina and newer versions of macOS.
+description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Catalina and newer versions of macOS.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
-If you have deployed Microsoft Defender ATP for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do this will result in users getting approval prompts to run these new components.
+If you have deployed Microsoft Defender ATP for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
 
 ## JAMF
 
@@ -41,7 +41,7 @@ To approve the system extensions, create the following payload:
 
 ### Privacy Preferences Policy Control
 
-Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender ATP Endpoint Security Extension. This is a pre-requisite for running the extension on your device.
+Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender ATP Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
 
 1. Select **Options** > **Privacy Preferences Policy Control**.
 2. Use `com.microsoft.wdav.epsext` as the **Identifier** and `Bundle ID` as **Bundle type**.
@@ -130,7 +130,7 @@ A web content filtering policy is needed to run the network extension. Add the f
 
 3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
 
-4. After the certificate is created and installed to your device, run the following from the Terminal:
+4. After the certificate is created and installed to your device, run the following command from the Terminal:
 
     ```bash
     $ security cms -S -N "<certificate name>" -i com.apple.webcontent-filter.mobileconfig -o com.apple.webcontent-filter.signed.mobileconfig
