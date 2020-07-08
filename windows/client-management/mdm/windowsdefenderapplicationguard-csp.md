@@ -48,10 +48,10 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Configure Microsoft Defender Application Guard clipboard settings
--   GP name: AppHVSIClipboardFileType
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Configure Microsoft Defender Application Guard clipboard settings*
+- GP name: *AppHVSIClipboardFileType*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="clipboardsettings"></a>**Settings/ClipboardSettings**  
@@ -62,20 +62,20 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 This policy setting is supported on Microsoft Edge on Windows 10 Enterprise or Windows 10 Education with Microsoft Defender Application Guard in Enterprise mode.
 
 The following list shows the supported values:  
-- 0 (default) - Completely turns Off the clipboard functionality for the Application Guard
-- 1 - Turns On clipboard operation from an isolated session to the host
-- 2 - Turns On clipboard operation from the host to an isolated session
-- 3 - Turns On clipboard operation in both the directions
+- 0 (default) - Completely turns Off the clipboard functionality for the Application Guard.
+- 1 - Turns On clipboard operation from an isolated session to the host.
+- 2 - Turns On clipboard operation from the host to an isolated session.
+- 3 - Turns On clipboard operation in both the directions.
 
 > [!IMPORTANT]
 > Allowing copied content to go from Microsoft Edge into Application Guard can cause potential security risks and isn't recommended. 
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Configure Microsoft Defender Application Guard clipboard settings
--   GP name: AppHVSIClipboardSettings
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Configure Microsoft Defender Application Guard clipboard settings*
+- GP name: *AppHVSIClipboardSettings*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="printingsettings"></a>**Settings/PrintingSettings**  
@@ -86,29 +86,29 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 This policy setting is supported on Microsoft Edge on Windows 10 Enterprise or Windows 10 Education with Microsoft Defender Application Guard in Enterprise mode.
 
 The following list shows the supported values:  
-- 0 - Disables all print functionality (default)
-- 1 - Enables only XPS printing
-- 2 - Enables only PDF printing
-- 3 - Enables both PDF and XPS printing
-- 4 - Enables only local printing
-- 5 - Enables both local and XPS printing
-- 6 - Enables both local and PDF printing
-- 7 - Enables local, PDF, and XPS printing
-- 8 - Enables only network printing
-- 9 - Enables both network and XPS printing
-- 10 - Enables both network and PDF printing
-- 11 - Enables network, PDF, and XPS printing
-- 12 - Enables both network and local printing
-- 13 - Enables network, local, and XPS printing
-- 14 - Enables network, local, and PDF printing
-- 15 - Enables all printing
+- 0 (default) - Disables all print functionality.
+- 1 - Enables only XPS printing.
+- 2 - Enables only PDF printing.
+- 3 - Enables both PDF and XPS printing.
+- 4 - Enables only local printing.
+- 5 - Enables both local and XPS printing.
+- 6 - Enables both local and PDF printing.
+- 7 - Enables local, PDF, and XPS printing.
+- 8 - Enables only network printing.
+- 9 - Enables both network and XPS printing.
+- 10 - Enables both network and PDF printing.
+- 11 - Enables network, PDF, and XPS printing.
+- 12 - Enables both network and local printing.
+- 13 - Enables network, local, and XPS printing.
+- 14 - Enables network, local, and PDF printing.
+- 15 - Enables all printing.
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Configure Microsoft Defender Application Guard print settings
--   GP name: AppHVSIPrintingSettings
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Configure Microsoft Defender Application Guard print settings*
+- GP name: *AppHVSIPrintingSettings*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="blocknonenterprisecontent"></a>**Settings/BlockNonEnterpriseContent**  
@@ -127,10 +127,10 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Prevent enterprise websites from loading non-enterprise content in Microsoft Edge and Internet Explorer
--   GP name: BlockNonEnterpriseContent
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Prevent enterprise websites from loading non-enterprise content in Microsoft Edge and Internet Explorer*
+- GP name: *BlockNonEnterpriseContent*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="allowpersistence"></a>**Settings/AllowPersistence**  
@@ -146,10 +146,10 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow data persistence for Microsoft Defender Application Guard
--   GP name: AllowPersistence
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow data persistence for Microsoft Defender Application Guard*
+- GP name: *AllowPersistence*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="allowvirtualgpu"></a>**Settings/AllowVirtualGPU**  
@@ -165,15 +165,15 @@ The following list shows the supported values:
 - 0 (default) - Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0).
 - 1 - Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. 
 
-> [!IMPORTANT]
+> [!WARNING]
 > Enabling this setting with potentially compromised graphics devices or drivers might pose a risk to the host device.
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow hardware-accelerated rendering for Microsoft Defender Application Guard
--   GP name: AllowVirtualGPU
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow hardware-accelerated rendering for Microsoft Defender Application Guard*
+- GP name: *AllowVirtualGPU*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
@@ -189,14 +189,14 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow files to download and save to the host operating system from Microsoft Defender Application Guard
--   GP name: SaveFilesToHost
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow files to download and save to the host operating system from Microsoft Defender Application Guard*
+- GP name: *SaveFilesToHost*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="certificatethumbprints"></a>**Settings/CertificateThumbprints**  
-Added in Windows 10, version 1809. This policy setting allows certain device level Root Certificates to  be shared with the Microsoft Defender Application Guard container. 
+Added in Windows 10, version 1809. This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container. 
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -211,10 +211,10 @@ If you disable or don’t configure this setting, certificates are not shared wi
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow Microsoft Defender Application Guard to use Root Certificate Authorities from the user's device
--   GP name: CertificateThumbprints
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow Microsoft Defender Application Guard to use Root Certificate Authorities from the user's device*
+- GP name: *CertificateThumbprints*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
@@ -237,10 +237,10 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow camera and microphone access in Microsoft Defender Application Guard
--   GP name: AllowCameraMicrophoneRedirection
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow camera and microphone access in Microsoft Defender Application Guard*
+- GP name: *AllowCameraMicrophoneRedirection*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
 
 <a href="" id="status"></a>**Status**  
@@ -248,38 +248,42 @@ Returns bitmask that indicates status of Application Guard installation and pre-
 
 Value type is integer. Supported operation is Get.
 
-- Bit 0 - Set to 1 when	WDAG is enabled into enterprise manage mode
-- Bit 1	- Set to 1 when	the client machine is Hyper-V capable
-- Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU 
-- Bit 3	- Set to 1 when	WDAG installed on the client machine
-- Bit 4	- Set to 1 when	required Network Isolation Policies are configured
-- Bit 5	- Set to 1 when the client machine meets minimum hardware requirements
-- Bit 6 - Set to 1 when system reboot is required
+- Bit 0 - Set to 1 when	Application Guard is enabled into enterprise manage mode.
+- Bit 1	- Set to 1 when	the client machine is Hyper-V capable.
+- Bit 2	- Set to 1 when	the client machine has a valid OS license and SKU.
+- Bit 3	- Set to 1 when	Application Guard installed on the client machine.
+- Bit 4	- Set to 1 when	required Network Isolation Policies are configured.
+- Bit 5	- Set to 1 when the client machine meets minimum hardware requirements.
+- Bit 6 - Set to 1 when system reboot is required.
 
 <a href="" id="platformstatus"></a>**PlatformStatus**  
-Returns bitmask that indicates status of Application Guard platform installation and pre-requisites on the device. 
+Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
 
 Value type is integer. Supported operation is Get.
 
-- Bit 0 - Set to 1 when WDAG is enabled into enterprise manage mode
-- Bit 1 - Set to 1 when the client machine is Hyper-V capable
-- Bit 2 - Reserved for MS
-- Bit 3 - Set to 1 when WDAG installed on the client machine
-- Bit 4 - Reserved for MS
-- Bit 5 - Set to 1 when the client machine meets minimum hardware requirements
+- Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode.
+- Bit 1 - Set to 1 when the client machine is Hyper-V capable.
+- Bit 2 - Reserved for Microsoft.
+- Bit 3 - Set to 1 when Application Guard is installed on the client machine.
+- Bit 4 - Reserved for Microsoft.
+- Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.
 
 <a href="" id="installwindowsdefenderapplicationguard"></a>**InstallWindowsDefenderApplicationGuard**  
-Initiates remote installation of Application Guard feature. Supported operations are Get and Execute.
+Initiates remote installation of Application Guard feature. 
+
+Supported operations are Get and Execute.
 
 The following list shows the supported values: 
-- Install - Will initiate feature install
-- Uninstall - Will initiate feature uninstall
+- Install - Will initiate feature install.
+- Uninstall - Will initiate feature uninstall.
 
 <a href="" id="audit"></a>**Audit**  
 Interior node. Supported operation is Get.
 
 <a href="" id="auditapplicationguard"></a>**Audit/AuditApplicationGuard**  
-This policy setting allows you to decide whether auditing events can be collected from Application Guard. Value type in integer. Supported operations are Add, Get, Replace, and Delete.
+This policy setting allows you to decide whether auditing events can be collected from Application Guard. 
+
+Value type in integer. Supported operations are Add, Get, Replace, and Delete.
 
 This policy setting is supported on Windows 10 Enterprise or Windows 10 Education with Microsoft Defender Application Guard in Enterprise mode.
 
@@ -289,8 +293,8 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: Allow auditing events in Microsoft Defender Application Guard
--   GP name: AuditApplicationGuard
--   GP path: Windows Components/Microsoft Defender Application Guard
--   GP ADMX file name: AppHVSI.admx
+- GP English name: *Allow auditing events in Microsoft Defender Application Guard*
+- GP name: *AuditApplicationGuard*
+- GP path: *Windows Components/Microsoft Defender Application Guard*
+- GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
