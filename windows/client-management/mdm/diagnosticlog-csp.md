@@ -1475,4 +1475,4 @@ To read a log file:
 5.  Set **BlockIndexToRead** to initialize read start point.
 6.  Get **BlockData** for upload log block.
 7.  Increase **BlockIndexToRead**.
-8.  Repeat step 5 to 7 until **BlockIndexToRead == (BlockIndexToRead – 1)**.
+8.  Repeat steps 5 to 7 until **BlockIndexToRead == (BlockIndexToRead – 1)**.
