@@ -39,6 +39,20 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
 
 - Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#microsoft-connected-cache).
+- New options for [`Get-DeliveryOptimizationPerfSnap`](waas-delivery-optimization-setup.md#analyze-usage).
+- New cmdlets:
+    - `Enable-DeliveryOptimizationVerboseLogs`
+    - `Disable-DliveryOptimizationVerboseLogs`
+    - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
+- New policy settings (for details see ):
+    - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
+    - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
+    - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+    - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+- Support for new types of downloads:
+    - Office installations and updates
+    - Xbox game pass games
+    - MSIX apps (HTTP downloads only)
 
 
 ## Requirements

@@ -24,7 +24,7 @@ ms.topic: article
 
 ## Recommended Delivery Optimization settings
 
-Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment:
+Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md).
 
 - Does your topology include multiple breakouts to the internet (i.e., a "hybrid WAN") or are there only a few connections to the internet, so that all requests appear to come from a single external IP address (a "hub and spoke" topology)?
 - If you use boundary groups in your topology, how many devices are present in a given group?
@@ -129,7 +129,6 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
 
-Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
  
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
@@ -147,7 +146,7 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
-Starting in Windows 10, version 2004, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 Starting in Windows 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
 
@@ -178,7 +177,10 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 
 **Starting in Windows 10, version 2004:**
 
-`Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
+- `Enable-DeliveryOptimizationVerboseLogs`
+- `Disable-DliveryOptimizationVerboseLogs`
+
+- `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
 
 With no options, this cmdlet returns these data:
 
