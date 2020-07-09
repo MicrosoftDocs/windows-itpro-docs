@@ -570,6 +570,7 @@
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
 ####### [List vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
+####### [List vulnerabilities by Machine and Software](microsoft-defender-atp/get-all-vulnerabilities-by-machines.md)
 ####### [Get vulnerability by Id](microsoft-defender-atp/get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](microsoft-defender-atp/get-machines-by-vulnerability.md)
 
