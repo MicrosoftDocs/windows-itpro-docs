@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ROBOTS: noindex,nofollow
 ---
 
 # New configuration profiles for macOS Catalina and newer versions of macOS
@@ -55,7 +56,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 A web content filtering policy is needed to run the network extension. Add the following web content filtering policy:
 
 >[!NOTE]
->Note: JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed. 
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the web content filtering configuration profile.
 
 1. Save the following content to your device as `com.apple.webcontent-filter.mobileconfig`
@@ -140,7 +141,28 @@ A web content filtering policy is needed to run the network extension. Add the f
 
 ## Intune
 
-### Create the Custom Configuration Profile
+### System Extensions Policy
+
+To approve the system extensions:
+
+1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
+2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
+3. In the `Basics` tab, give a name to this new profile.
+4. In the `Configuration settings` tab, add the following entries in the `Allowed system extensions` section:
+
+    Bundle identifier         | Team identifier
+    --------------------------|----------------
+    com.microsoft.wdav.epsext | UBF8T346G9
+    com.microsoft.wdav.netext | UBF8T346G9
+
+    ![System configuration profiles screenshot](images/mac-system-extension-intune2.png)
+
+5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+6. Review and create this configuration profile.
+
+### Create and deploy the Custom Configuration Profile
+
+The following configuration profile enables the web content filter and grants Full Disk Access to the Endpoint Security system extension. 
 
 Save the following content to a file named **sysext.xml**:
 
@@ -236,46 +258,23 @@ Save the following content to a file named **sysext.xml**:
                     </array>
                 </dict>
             </dict>
-            <dict>
-                <key>PayloadUUID</key>
-                <string>E6F96207-631F-462C-994A-37A6AD7BDED8</string>
-                <key>PayloadType</key>
-                <string>com.apple.system-extension-policy</string>
-                <key>PayloadOrganization</key>
-                <string>Microsoft Corporation</string>
-                <key>PayloadIdentifier</key>
-                <string>E6F96207-631F-462C-994A-37A6AD7BDED8</string>
-                <key>PayloadDisplayName</key>
-                <string>System Extensions</string>
-                <key>PayloadDescription</key>
-                <string/>
-                <key>PayloadVersion</key>
-                <integer>1</integer>
-                <key>PayloadEnabled</key>
-                <true/>
-                <key>AllowUserOverrides</key>
-                <true/>
-                <key>AllowedSystemExtensions</key>
-                <dict>
-                    <key>UBF8T346G9</key>
-                    <array>
-                        <string>com.microsoft.wdav.epsext</string>
-                        <string>com.microsoft.wdav.netext</string>
-                    </array>
-                </dict>
-            </dict>
         </array>
     </dict>
 </plist>
 ```
 
-### Deploy the Custom Configuration Profile
+Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs `OK`:
 
-To configure the system extensions in Intune:
+    ```bash
+    $ plutil -lint sysext.xml
+    sysext.xml: OK
+    ```
+
+To deploy this custom configuration profile:
 
 1.	In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
 2. Choose a name for the profile. Change **Platform=macOS** and **Profile type=Custom**. Select **Configure**.
-3.	Open the configuration profile and upload sysext.xml. This file was created in the preceding step.
+3.	Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4.	Select **OK**.
 
     ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
