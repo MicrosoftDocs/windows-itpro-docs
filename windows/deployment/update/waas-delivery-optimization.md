@@ -1,5 +1,5 @@
 ---
-title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
+title: Delivery Optimization for Windows 10 updates
 ms.reviewer: 
 manager: laurawi
 description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
