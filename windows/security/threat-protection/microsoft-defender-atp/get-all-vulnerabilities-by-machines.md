@@ -25,7 +25,7 @@ Retrieves a list of all the vulnerabilities affecting the organization per [Mach
 <br>The OData ```$filter``` is supported on all properties.
 
 >[!Tip]
->This is great API for [Power BI](api-power-bi.md) integration.
+>This is great API for [Power BI integration](api-power-bi.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
