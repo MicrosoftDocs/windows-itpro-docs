@@ -59,6 +59,28 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
+
+&ensp;Security intelligence update version: **1.319.20.0**  
+&ensp;Released: **June 22, 2020**  
+&ensp;Platform: **4.18.2006.10**  
+&ensp;Engine: **1.1.17200.2**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+* Skipping aggressive catchup scan in Passive mode.
+* Allow Defender to update on metered connections
+* Fixed performance tuning when caching is disabled 
+* Fixed registry query 
+* Fixed scantime randomization in ADMX
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
 <summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
 
 &ensp;Security intelligence update version: **1.317.20.0**  

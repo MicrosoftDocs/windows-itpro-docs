@@ -86,10 +86,10 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration         |Turn on/off product diagnostics                         |`mdatp config cloud-diagnostic --value [enabled|disabled]`             |
 |Configuration         |Turn on/off automatic sample submission                 |`mdatp config cloud-automatic-sample-submission [enabled|disabled]`    |
 |Configuration         |Turn on/off AV passive mode                             |`mdatp config passive-mode [enabled|disabled]`                         |
-|Configuration         |Add/remove an antivirus exclusion for a file extension  |`mdatp exclusion extension [add|remove] --name <extension>`            |
-|Configuration         |Add/remove an antivirus exclusion for a file            |`mdatp exclusion file [add|remove] --path <path-to-file>`              |
-|Configuration         |Add/remove an antivirus exclusion for a directory       |`mdatp exclusion folder [add|remove] --path <path-to-directory>`       |
-|Configuration         |Add/remove an antivirus exclusion for a process         |`mdatp exclusion process [add|remove] --path <path-to-process>`<br/>`mdatp exclusion process [add|remove] --name <process-name>`   |
+|Configuration         |Add/remove an antivirus exclusion for a file extension  |`mdatp exclusion extension [add|remove] --name [extension]`            |
+|Configuration         |Add/remove an antivirus exclusion for a file            |`mdatp exclusion file [add|remove] --path [path-to-file]`              |
+|Configuration         |Add/remove an antivirus exclusion for a directory       |`mdatp exclusion folder [add|remove] --path [path-to-directory]`       |
+|Configuration         |Add/remove an antivirus exclusion for a process         |`mdatp exclusion process [add|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add|remove] --name [process-name]`   |
 |Configuration         |List all antivirus exclusions                           |`mdatp exclusion list`                                                 |
 |Configuration         |Turn on PUA protection                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuration         |Turn off PUA protection                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
@@ -103,12 +103,12 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Protection            |Cancel an ongoing on-demand scan                        |`mdatp scan cancel`                                                    |
 |Protection            |Request a security intelligence update                  |`mdatp definitions update`                                             |
 |Protection history    |Print the full protection history                       |`mdatp threat list`                                                    |
-|Protection history    |Get threat details                                      |`mdatp threat get --id <threat-id>`                                    |
+|Protection history    |Get threat details                                      |`mdatp threat get --id [threat-id]`                                    |
 |Quarantine management |List all quarantined files                              |`mdatp threat quarantine list`                                         |
 |Quarantine management |Remove all files from the quarantine                    |`mdatp threat quarantine remove-all`                                   |
-|Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id <threat-id>`                         |
-|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine add --id <threat-id>`                         |
-|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine add --id <threat-id>`                         |
+|Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id [threat-id]`                         |
+|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine add --id [threat-id]`                         |
+|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine add --id [threat-id]`                         |
 
 ## Microsoft Defender ATP portal information
 

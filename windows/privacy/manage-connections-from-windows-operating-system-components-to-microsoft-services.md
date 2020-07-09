@@ -14,7 +14,7 @@ ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/3/2020
+ms.date: 7/7/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -57,18 +57,18 @@ The following table lists management options for each setting, beginning with Wi
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: | 
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [8. Internet Explorer](#bkmk-ie) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [9. License Manager](#bkmk-licmgr) | | |  ![Check mark](images/checkmark.png) |
 | [10. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [11. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [12. Microsoft Account](#bkmk-microsoft-account) | | |  ![Check mark](images/checkmark.png) |
-| [13. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [13. Microsoft Edge](#bkmk-edge) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -613,6 +613,10 @@ You can turn off NCSI by doing one of the following:
 
 You can turn off the ability to download and update offline maps.
 
+- Turn **Off** the feature in the UI by going to **Settings -> Apps -> Offline maps -> Map updates**, toggle the **Automatically update maps** switch to **Off**
+
+  -or-
+
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
   -or-
@@ -929,7 +933,7 @@ To turn off **Location for this device**:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -942,7 +946,7 @@ To turn off **Location**:
   
   -or-
   
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
 
   -or-
 
