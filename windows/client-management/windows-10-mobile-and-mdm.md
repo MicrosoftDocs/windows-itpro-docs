@@ -24,7 +24,7 @@ ms.topic: article
 This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 
 Employees increasingly depend on smartphones to complete daily work tasks, but these devices introduce unique management and security challenges. Whether providing corporate devices or allowing people to use their personal devices, IT needs to deploy and manage mobile devices and apps quickly to meet business goals. However, they also need to ensure that the apps and data on those mobile devices are protected against cybercrime or loss. Windows 10 Mobile helps organizations directly address these challenges with robust, flexible, built-in mobile device and app management technologies.
-Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement using a comprehensive mobile device management solution.
+Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement, by using a comprehensive mobile device management solution.
 
 **In this article**
 - [Deploy](#deploy)
@@ -36,8 +36,8 @@ Windows 10 supports end-to-end device lifecycle management to give companies con
 
 ## Deploy
 
-Windows 10 Mobile has a built-in device management client to deploy, configure, maintain, and support smartphones. Common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT), this client provides a single interface through which Mobile Device Management (MDM) solutions can manage any device that runs Windows 10. Because the MDM client integrates with identity management, the effort required to manage devices throughout the lifecycle is greatly reduced.
-Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or Microsoft Endpoint Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050).
+Windows 10 Mobile has a built-in device management client to deploy, configure, maintain, and support smartphones. Common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT), this client provides a single interface through which mobile device management (MDM) solutions can manage any device that runs Windows 10. Because the MDM client integrates with identity management, the effort required to manage devices throughout the lifecycle is greatly reduced.
+Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or Microsoft Endpoint Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select the system that best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050).
 
 ### <a href="" id="deployment-scenarios"></a>Deployment scenarios
 
@@ -47,7 +47,7 @@ The built-in MDM client is common to all editions of the Windows 10 operating s
 
 Organizations typically have two scenarios to consider when it comes to device deployment: Bring Your Own (BYO) personal devices and Choose Your Own (CYO) company-owned devices. In both cases, the device must be enrolled in an MDM system, which would configure it with settings appropriate for the organization and the employee.
 Windows 10 Mobile device management capabilities support both personal devices used in the BYO scenario and corporate devices used in the CYO scenario. The operating system offers a flexible approach to registering devices with directory services and MDM systems. IT organizations can provision comprehensive device-configuration profiles based on their business needs to control and protect mobile business data. Apps can be provisioned easily to personal or corporate devices through the Microsoft Store for Business, or by using their MDM system, which can also work with the Microsoft Store for Business for public store apps.
-Knowing who owns the device and what the employee will use it for are the major factors in determining your management strategy and which controls your organization should put in place. Whether personal devices, corporate devices, or a mixture of the two, deployment processes and configuration policies may differ.
+Knowing who owns the device and what the employee uses it for are the major factors in determining your management strategy and which controls your organization should put in place. Whether personal devices, corporate devices, or a mixture of the two, deployment processes and configuration policies may differ.
 
 For **personal devices**, companies need to be able to manage corporate apps and data on the device without impeding the employee’s ability to personalize it to meet their individual needs. The employee owns the device and corporate policy allows them to use it for both business and personal purposes, with the ability to add personal apps at their discretion. The main concern with personal devices is how organizations can prevent corporate data from being compromised, while still keeping personal data private and under the sole control of the employee. This requires that the device be able to support separation of apps and data with strict control of business and personal data traffic.
 
@@ -81,34 +81,35 @@ The way in which personal and corporate devices are enrolled into an MDM system 
 <tr class="odd">
 <td align="left"><strong>Device Initialization</strong>
 
-In the Out-of-the-Box Experience (OOBE), the first time the employee starts the device, they are requested to add a cloud identity to the device.</td>
+In the out-of-box experience (OOBE), the first time the employee starts the device, they are requested to add a cloud identity to the device.</td>
 <td align="left">The primary identity on the device is a personal identity. Personal devices are initiated with a Microsoft Account (MSA), which uses a personal email address. </td>
 <td align="left">The primary identity on the device is an organizational identity. Corporate devices are initialized with an organizational account (account@corporatedomain.ext).
-Initialization of a device with a corporate account is unique to Windows 10. No other mobile platform currently offers this capability. The default option is to use an Azure Active Directory organizational identity.
-Skipping the account setup in OOBE will result in the creation of a local account. The only option to add a cloud account later is to add an MSA, putting this device into a personal device deployment scenario. To start over, the device will have to be reset.
+Initialization of a device with a corporate account is unique to Windows 10. No other mobile platform currently offers this capability. The default option is to use an Azure Active Directory (Azure AD) organizational identity.
+Skipping the account setup in OOBE results in the creation of a local account. The only option to add a cloud account later is to add an MSA, putting this device into a personal device deployment scenario. To start over, the device must be reset.
 </td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Device Enrollment</strong>
 
 Enrolling devices in an MDM system helps control and protect corporate data while keeping workers productive. </td>
-<td align="left">Device enrollment can be initiated by employees. They can add an Azure account as a secondary account to the Windows 10 Mobile device. Provided the MDM system is registered with your Azure AD, the device is automatically enrolled in the MDM system when the user adds an Azure AD account as a secondary account (MSA+AAD+MDM). If your organization does not have Azure AD, the employee’s device will automatically be enrolled into your organization’s MDM system (MSA+MDM).
+<td align="left">Device enrollment can be initiated by employees. They can add an Azure account as a secondary account to the Windows 10 Mobile device. Provided the MDM system is registered with your Azure AD, the device is automatically enrolled in the MDM system when the user adds an Azure AD account as a secondary account (MSA+Azure AD+MDM). If your organization does not have Azure AD, the employee’s device is automatically enrolled into your organization’s MDM system (MSA+MDM).
 MDM enrollment can also be initiated with a provisioning package. This option enables IT to offer easy-to-use self-service enrollment of personal devices. Provisioning is currently only supported for MDM-only enrollment (MSA+MDM).
 </td>
-<td align="left">The user initiates MDM enrollment by joining the device to the Azure AD instance of their organization. The device is automatically enrolled in the MDM system when the device registers in Azure AD. This requires your MDM system to be registered with your Azure AD (AAD+MDM).</td>
+<td align="left">The user initiates MDM enrollment by joining the device to the Azure AD instance of their organization. The device is automatically enrolled in the MDM system when the device registers in Azure AD. This requires your MDM system to be registered with your Azure AD (Azure AD+MDM).</td>
 </tr>
 </tbody>
 </table>
 
-**Recommendation:** Microsoft recommends Azure AD registration and automatic MDM enrollment for corporate devices (AAD+MDM) and personal devices (MSA+AAD+MDM). This requires Azure AD Premium.
+Microsoft recommends Azure AD registration and automatic MDM enrollment for corporate devices (Azure AD+MDM) and personal devices (MSA+Azure AD+MDM). This requires Azure AD Premium.
 
 ### <a href="" id="identity-management"></a>Identity management
 
 *Applies to: Corporate and personal devices*
 
-Employees can use only one account to initialize a device so it’s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
+Employees can use only one account to initialize a device so it’s imperative that your organization controls which account is enabled first. The account chosen determines who controls the device and influences your management capabilities.
 
->**Note:** Why must the user add an account to the device in OOBE? Windows 10 Mobile are single user devices and the user accounts give access to a number of default cloud services that enhance the productivity and entertainment value of the phone for the user. Such services are: Store for downloading apps, Groove for music and entertainment, Xbox for gaming, etc. Both an [MSA](https://www.microsoft.com/account/) and an [Azure AD account](https://www.microsoft.com/server-cloud/products/azure-active-directory/?WT.srch=1&WT.mc_id=SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=azure%20ad&utm_campaign=Enterprise_Mobility_Suite) give access to these services.
+> [!NOTE]
+> Why must the user add an account to the device in OOBE? Windows 10 Mobile are single user devices and the user accounts give access to a number of default cloud services that enhance the productivity and entertainment value of the phone for the user. Such services are: Store for downloading apps, Groove for music and entertainment, Xbox for gaming, and so on. Both an [MSA](https://www.microsoft.com/account/) and an [Azure AD account](https://www.microsoft.com/server-cloud/products/azure-active-directory/?WT.srch=1&WT.mc_id=SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=azure%20ad&utm_campaign=Enterprise_Mobility_Suite) provide access to these services.
 
 The following table describes the impact of identity choice on device management characteristics of the personal and corporate device scenarios.
 
@@ -133,13 +134,13 @@ The following table describes the impact of identity choice on device management
 </tr>
 <tr class="odd">
 <td align="left"><strong>Ease of enrollment</td>
-<td align="left">Employees use their Microsoft Account to activate the device. Then, they use their Azure AD account (organizational identity) to register the device in Azure AD and enroll it with the company’s MDM solution (MSA+AAD+MDM).</td>
-<td align="left">Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization’s MDM solution (AAD+MDM – requires Azure AD Premium).</td>
+<td align="left">Employees use their Microsoft Account to activate the device. Then, they use their Azure AD account (organizational identity) to register the device in Azure AD and enroll it with the company’s MDM solution (MSA+Azure AD+MDM).</td>
+<td align="left">Employees use their Azure AD account to register the device in Azure AD and automatically enroll it with the organization’s MDM solution (Azure AD+MDM – requires Azure AD Premium).</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Credential management</strong></td>
 <td align="left">Employees sign in to the device with Microsoft Account credentials.
-Users cannot sign in to devices with Azure AD credentials, even if they add the credentials after initial activation with a Microsoft account.
+Users cannot sign in to devices with Azure AD credentials, even if they add the credentials after initial activation with a Microsoft Account.
 </td>
 <td align="left">Employees sign in to the device with Azure AD credentials.
 IT can block the addition of a personal identity, such as an MSA or Google Account. IT controls all devices access policies, without limitations.
@@ -153,7 +154,7 @@ IT can block the addition of a personal identity, such as an MSA or Google Accou
 <tr class="even">
 <td align="left"><strong>User settings and data roaming across multiple Windows devices</td>
 <td align="left">User and app settings roam across all devices activated with the same personal identity through OneDrive.</td>
-<td align="left">If the device is activated with an MSA, then adds an Azure AD account, user an app settings roam. If you add your MSA to an Azure AD- joined device, this will not be the case. Microsoft is investigating Enterprise roaming for a future release.</td>
+<td align="left">If the device is activated with an MSA, then adds an Azure AD account, user an app settings roam. If you add your MSA to an Azure AD-joined device, this is not the case. Microsoft is investigating Enterprise roaming for a future release.</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Level of control</strong></td>
@@ -174,13 +175,14 @@ IT can block the addition of a personal identity, such as an MSA or Google Accou
 </table>
 
 
->**Note:** In the context of [Windows-as-a-Service](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing), differentiation of MDM capabilities will change in the future.
+> [!NOTE]
+> In the context of [Windows-as-a-Service](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing), differentiation of MDM capabilities may change in the future.
 
 ### <a href="" id="Infrastructure choices"></a>Infrastructure choices
 
 *Applies to: Corporate and personal devices*
 
-For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Mobile devices. An Azure AD premium subscription is recommended as an identity provider and required to support certain capabilities. Windows 10 Mobile allows you to have a pure cloud-based infrastructure or a hybrid infrastructure that combines Azure AD identity management with an on-premises management system to manage devices. Microsoft now also supports a pure on-premises solution to manage Windows 10 Mobile devices with [Configuration Manager](https://technet.microsoft.com/library/mt627908.aspx).
+For both personal and corporate deployment scenarios, an MDM system is the essential infrastructure required to deploy and manage Windows 10 Mobile devices. An Azure AD Premium subscription is recommended as an identity provider and required to support certain capabilities. Windows 10 Mobile allows you to have a pure cloud-based infrastructure or a hybrid infrastructure that combines Azure AD identity management with an on-premises management system to manage devices. Microsoft now also supports a pure on-premises solution to manage Windows 10 Mobile devices with [Configuration Manager](https://technet.microsoft.com/library/mt627908.aspx).
 
 **Azure Active Directory**
 Azure AD is a cloud-based directory service that provides identity and access management. You can integrate it with existing on-premises directories to create a hybrid identity solution. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free Basic, and Premium (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). All editions support Azure AD device registration, but the Premium edition is required to enable MDM auto-enrollment and conditional access based on device state.
@@ -189,7 +191,8 @@ Azure AD is a cloud-based directory service that provides identity and access ma
 Microsoft [Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Like Office 365, Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
 Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Mobile currently include: AirWatch, Citrix, MobileIron, SOTI, Blackberry and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/). If your organization doesn’t use Azure AD, the user must use an MSA during OOBE before enrolling the device in your MDM using a corporate account.
 
->**Note:** Although not covered in this guide, you can use Exchange ActiveSync (EAS) to manage mobile devices instead of using a full-featured MDM system. EAS is available in Microsoft Exchange Server 2010 or later and Office 365.
+> [!NOTE]
+> Although not covered in this guide, you can use Exchange ActiveSync (EAS) to manage mobile devices instead of using a full-featured MDM system. EAS is available in Microsoft Exchange Server 2010 or later and Office 365.
 In addition, Microsoft recently added MDM capabilities powered by Intune to Office 365. MDM for Office 365 supports mobile devices only, such as those running Windows 10 Mobile, iOS, and Android. MDM for Office 365 offers a subset of the management capabilities found in Intune, including the ability to remotely wipe a device, block a device from accessing Exchange Server email, and configure device policies (e.g., passcode requirements). For more information about MDM for Office 365 capabilities, see [Overview of Mobile Device Management for Office 365](https://technet.microsoft.com/library/ms.o365.cc.devicepolicy.aspx).
 
 **Cloud services**
@@ -210,19 +213,20 @@ The Microsoft Store for Business is the place where IT administrators can find, 
 
 ## Configure
 
-MDM administrators can define and implement policy settings on any personal or corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario, and corporate devices will offer IT the broadest range of control.
+MDM administrators can define and implement policy settings on any personal or corporate device enrolled in an MDM system. The configuration settings you use depend on the deployment scenario, and corporate devices offer IT the broadest range of control.
 
->**Note:** This guide helps IT professionals understand management options available for the Windows 10 Mobile OS. Please consult your MDM system documentation to understand how these policies are enabled by your MDM vendor.
+> [!NOTE]
+> This guide helps IT professionals understand management options available for the Windows 10 Mobile OS. Please consult your MDM system documentation to understand how these policies are enabled by your MDM vendor.
 Not all MDM systems support every setting described in this guide. Some support custom policies through OMA-URI XML files. See [Microsoft Intune support for Custom Policies](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#custom-uri-settings-for-windows-10-devices). Naming conventions may also vary among MDM vendors.
 
 ### <a href="" id="account-profile"></a>Account profile
 
 *Applies to: Corporate devices*
 
-Enforcing what accounts employees can use on a corporate device is important for avoiding data leaks and protecting privacy. Limiting the device to just one account controlled by the organization will reduce the risk of a data breach. However, you can choose to allow employees to add a personal Microsoft Account or other consumer email accounts.
+Enforcing what accounts employees can use on a corporate device is important for avoiding data leaks and protecting privacy. Limiting the device to just one account controlled by the organization reduces the risk of a data breach. However, you can choose to allow employees to add a personal Microsoft Account or other consumer email accounts.
 
 -   **Allow Microsoft Account** Specifies whether users are allowed to add a Microsoft Account to the device and use this account to authenticate to cloud services, such as purchasing apps in Microsoft Store, Xbox, or Groove.
--   **Allow Adding Non-Microsoft Accounts** Specifies whether users are allowed to add email accounts other than Microsoft accounts.
+-   **Allow Adding Non-Microsoft Accounts** Specifies whether users are allowed to add email accounts other than a Microsoft Account.
 
 ### <a href="" id="email-account"></a>Email accounts
 
@@ -239,41 +243,42 @@ Email and associated calendar and contacts are the primary apps that users acces
 
 It’s common practice to protect a device that contains corporate information with a passcode when it is not in use. As a best practice, Microsoft recommends that you implement a device lock policy for Windows 10 Mobile devices for securing apps and data. You can use a complex password or numeric PIN to lock devices. Introduced with Windows 10, [Windows Hello](https://windows.microsoft.com/en-us/windows-10/getstarted-what-is-hello) allows you to use a PIN, a companion device (like Microsoft band), or biometrics to validate your identity to unlock Windows 10 Mobile devices.
 
->**Note:** When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
-To use Windows Hello with biometrics, specialized hardware, including fingerprint reader, illuminated IR sensor, or other biometric sensors is required. Hardware based protection of the Windows Hello credentials requires TPM 1.2 or greater; if no TPM exists or is configured, credentials/keys protection will be software-based.
-Companion devices must be paired with Windows 10 PC’s via Bluetooth. To use a Windows Hello companion device that enables the user to roam with their Windows Hello credentials requires Pro or Enterprise edition on the Windows 10 PC being signed into.
+> [!NOTE]
+> When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+To use Windows Hello with biometrics, specialized hardware, including fingerprint reader, illuminated IR sensor, or other biometric sensors is required. Hardware-based protection of the Windows Hello credentials requires TPM 1.2 or greater; if no TPM exists or is configured, credentials/keys protection will be software-based.
+Companion devices must be paired with a Windows 10 PC using Bluetooth. To use a Windows Hello companion device that enables the user to roam with their Windows Hello credentials requires the Pro or Enterprise edition of Windows 10.
 
-Most of the device lock restriction policies have been available via ActiveSync and MDM since Windows Phone 7 and are still available today for Windows 10 Mobile. If you are deploying Windows 10 devices in a personal device deployment scenario, these settings would apply.
+Most of the device lock restriction policies have been available through ActiveSync and MDM since Windows Phone 7 and are still available today for Windows 10 Mobile. If you are deploying Windows 10 devices in a personal device deployment scenario, these settings would apply:
 
 -   **Device Password Enabled** Specifies whether users are required to use a device lock password.
--   **Allow Simple Device Password** Whether users can use a simple password (e.g., 1111 or 1234).
--   **Alphanumeric Device Password Required** Whether users need to use an alphanumeric password. When configured, Windows prompts the user with a full device keyboard to enter a complex password. When not configured, the user will be able to enter a numeric PIN on the keyboard.
--   **Min Device Password Complex Characters** The number of password element types (i.e., uppercase letters, lowercase letters, numbers, or punctuation) required to create strong passwords.
--   **Device Password History** The number of passwords Windows 10 Mobile remembers in the password history (Users cannot reuse passwords in the history to create new passwords.)
+-   **Allow Simple Device Password** Specifies whether users can use a simple password (for example, 1111 or 1234).
+-   **Alphanumeric Device Password Required** Specifies whether users need to use an alphanumeric password. When configured, Windows prompts the user with a full device keyboard to enter a complex password. When not configured, the user can enter a numeric PIN on the keyboard.
+-   **Min Device Password Complex Characters** The number of password element types (uppercase letters, lowercase letters, numbers, or punctuation) required to create strong passwords.
+-   **Device Password History** The number of passwords Windows 10 Mobile remembers in the password history. (Users cannot reuse passwords in the history to create new passwords.)
 -   **Min Device Password Length** The minimum number of characters required to create new passwords.
 -   **Max Inactivity Time Device Lock** The number of minutes of inactivity before devices are locked and require a password to unlock.
--   **Allow Idle Return Without Password** Whether users are required to re-authenticate when their devices return from a sleep state before the inactivity time was reached.
--   **Max Device Password Failed Attempts** The number of authentication failures allowed before a device is wiped (A value of zero disables device wipe functionality.)
--   **Screen Timeout While Locked** The number of minutes before the lock screen times out (this policy influences device power management).
--   **Allow Screen Timeout While Locked User Configuration** Whether users can manually configure screen timeout while the device is on the lock screen (Windows 10 Mobile ignores the **Screen Timeout While Locked** setting if you disable this setting).
+-   **Allow Idle Return Without Password** Specifies whether users are required to re-authenticate when their devices return from a sleep state before the inactivity time was reached.
+-   **Max Device Password Failed Attempts** The number of authentication failures allowed before a device is wiped. (A value of zero disables device wipe functionality.)
+-   **Screen Timeout While Locked** The number of minutes before the lock screen times out. (This policy influences device power management.)
+-   **Allow Screen Timeout While Locked User Configuration** Specifies whether users can manually configure screen timeout while the device is on the lock screen. (Windows 10 Mobile ignores the **Screen Timeout While Locked** setting if you disable this setting.)
 
 Settings related to Windows Hello would be important device lock settings to configure if you are deploying devices using the corporate deployment scenario.
-Microsoft made it a requirement for all users to create a numeric passcode as part of Azure AD Join. This policy default requires users to select a four-digit passcode, but this can be configured with an AAD-registered MDM system to whatever passcode complexity your organization desires. If you are using Azure AD with an automatic MDM enrollment mechanism, these policy settings are automatically applied during device enrollment.
+Microsoft made it a requirement for all users to create a numeric passcode as part of Azure AD Join. This policy default requires users to select a four-digit passcode, but this can be configured with an Azure AD-registered MDM system to whatever passcode complexity your organization desires. If you are using Azure AD with an automatic MDM enrollment mechanism, these policy settings are automatically applied during device enrollment.
 
-You will notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies will be applied, with the strongest policy retained. Read [PassportForWork CSP](https://msdn.microsoft.com/library/windows/hardware/dn987099(v=vs.85).aspx), [DeviceLock CSP](https://msdn.microsoft.com/library/windows/hardware/dn904945(v=vs.85).aspx) (Windows Phone 8.1), and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#DeviceLock_AllowIdleReturnWithoutPassword) for more detailed information.
+You may notice that some of the settings are very similar, specifically those related to passcode length, history, expiration, and complexity. If you set the policy in multiple places, both policies are applied, with the strongest policy retained. Read [PassportForWork CSP](https://msdn.microsoft.com/library/windows/hardware/dn987099(v=vs.85).aspx), [DeviceLock CSP](https://msdn.microsoft.com/library/windows/hardware/dn904945(v=vs.85).aspx) (Windows Phone 8.1), and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#DeviceLock_AllowIdleReturnWithoutPassword) for more detailed information.
 
 ### <a href="" id="prevent-of-settings"></a>Prevent changing of settings
 
 *Applies to: Corporate devices*
 
-Employees are usually allowed to change certain personal device settings that you may want to lock down on corporate devices. Employees can interactively adjust certain settings of the phone through the settings applets. Using MDM, you can limit what users are allowed to change.
+Employees are usually allowed to change certain personal device settings that you may want to lock down on corporate devices. Employees can interactively adjust certain settings of the phone through the settings applets. Using MDM, you can limit what users are allowed to change, including:
 
--   **Allow Your Account** Specifies whether users are able to change account configuration in the Your Email and Accounts panel in Settings
--   **Allow VPN** Allows the user to change VPN settings</td>
--   **Allow Data Sense** Allows the user to change Data Sense settings</td>
--   **Allow Date Time** Allows the user to change data and time setting
--   **Allow Edit Device Name** Allows users to change the device name
--   **Allow Speech Model Update** Specifies whether the device will receive updates to the speech recognition and speech synthesis models (to improve accuracy and performance)
+-   **Allow Your Account** Specifies whether users are allowed to change account configuration in the **Your Email and Accounts** panel in Settings
+-   **Allow VPN** Specifies whether users are allowed to change VPN settings</td>
+-   **Allow Data Sense** Specifies whether users are allowed to change Data Sense settings</td>
+-   **Allow Date Time** Specifies whether users are allowed to change data and time setting
+-   **Allow Edit Device Name** Specifies whether users are allowed to change the device name
+-   **Allow Speech Model Update** Specifies whether the device receives updates to the speech recognition and speech synthesis models (to improve accuracy and performance)
 
 ### <a href="" id="hardware-restrictions"></a>Hardware restrictions
 
@@ -281,35 +286,37 @@ Employees are usually allowed to change certain personal device settings that yo
 
 Windows 10 Mobile devices use state-of-the-art technology that includes popular hardware features such as cameras, global positioning system (GPS) sensors, microphones, speakers, near-field communication (NFC) radios, storage card slots, USB interfaces, Bluetooth interfaces, cellular radios, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
 
-The following lists the MDM settings that Windows 10 Mobile supports to configure hardware restrictions.
+The following is a list of the MDM settings that Windows 10 Mobile supports to configure hardware restrictions:
 
->**Note:** Some of these hardware restrictions provide connectivity and assist in data protection.
+> [!NOTE]
+> Some of these hardware restrictions provide connectivity and assist in data protection.
 
--   **Allow NFC:** Whether the NFC radio is enabled
--   **Allow USB Connection:** Whether the USB connection is enabled (doesn’t affect USB charging)
--   **Allow Bluetooth:** Whether users can enable and use the Bluetooth radio on their devices
--   **Allow Bluetooth Advertising:** Whether the device can act as a source for Bluetooth advertisements and be discoverable to other devices
--   **Allow Bluetooth Discoverable Mode:** Whether the device can discover other devices (e.g., headsets)
--   **Allow Bluetooth pre-pairing** Whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device
+-   **Allow NFC:** Specifies whether the NFC radio is enabled
+-   **Allow USB Connection:** Specifies whether the USB connection is enabled (doesn’t affect USB charging)
+-   **Allow Bluetooth:** Specifies whether users can enable and use the Bluetooth radio on their devices
+-   **Allow Bluetooth Advertising:** Specifies whether the device can act as a source for Bluetooth advertisements and be discoverable to other devices
+-   **Allow Bluetooth Discoverable Mode:** Specifies whether the device can discover other devices (such as headsets)
+-   **Allow Bluetooth pre-pairing** Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device
 -   **Bluetooth Services Allowed List:** The list of Bluetooth services and profiles to which the device can connect
 -   **Set Bluetooth Local Device Name:** The local Bluetooth device name
--   **Allow Camera:** Whether the camera is enabled
--   **Allow Storage Card:** Whether the storage card slot is enabled
--   **Allow Voice Recording:** Whether the user can use the microphone to create voice recordings
--   **Allow Location:** Whether the device can use the GPS sensor or other methods to determine location so applications can use location information
+-   **Allow Camera:** Specifies whether the camera is enabled
+-   **Allow Storage Card:** Specifies whether the storage card slot is enabled
+-   **Allow Voice Recording:** Specifies whether the user can use the microphone to create voice recordings
+-   **Allow Location:** Specifies whether the device can use the GPS sensor or other methods to determine location so applications can use location information
 
 ### <a href="" id="certificates"></a>Certificates
 
 *Applies to: Personal and corporate devices*
 
 Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although users can manage certificates on devices manually, it’s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation.
-To install certificates manually, you can post them on Microsoft Edge website or send them directly via email, which is ideal for testing purposes.
-Using SCEP and MDM systems, certificate management is completely transparent and requires no user intervention, helping improve user productivity, and reduce support calls. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Personal Information Exchange (PFX)). The MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
+To install certificates manually, you can post them on Microsoft Edge website or send them directly by using email, which is ideal for testing purposes.
+Using Simple Certificate Enrollment Protocol (SCEP) and MDM systems, certificate management is completely transparent and requires no user intervention, helping improve user productivity, and reduce support calls. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device, as long as the MDM system supports the SCEP or Personal Information Exchange (PFX). The MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
 In addition to SCEP certificate management, Windows 10 Mobile supports deployment of PFX certificates. The table below lists the Windows 10 Mobile PFX certificate deployment settings.
-Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
+For more detailed information about MDM certificate management, see [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
 Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidentally.
 
-> **Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
+> [!NOTE]
+> To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
 > -   View a summary of all personal certificates
 > -   View the details of individual certificates
 > -   View the certificates used for VPN, Wi-Fi, and email authentication
@@ -322,7 +329,7 @@ Use the Allow Manual Root Certificate Installation setting to prevent users from
 *Applies to: Corporate and personal devices*
 
 Wi-Fi is used on mobile devices as much as, or more than, cellular data connections. Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention.
-You can create multiple Wi-Fi profiles in your MDM system. The below table lists the Windows 10 Mobile Wi Fi connection profile settings that can be configured by administrators.
+You can create multiple Wi-Fi profiles in your MDM system. The Windows 10 Mobile Wi-Fi connection profile settings that can be configured by administrators include:
 
 -   **SSID** The case-sensitive name of the Wi-Fi network Service Set Identifier
 -   **Security type** The type of security the Wi-Fi network uses; can be one of the following authentication types:
@@ -345,14 +352,14 @@ You can create multiple Wi-Fi profiles in your MDM system. The below table lists
 -   **Proxy auto-configuration URL** A URL that specifies the proxy auto-configuration file
 -   **Enable Web Proxy Auto-Discovery Protocol (WPAD)** Specifies whether WPAD is enabled
 
-In addition, you can set a few device wide Wi-Fi settings.
--   **Allow Auto Connect to Wi-Fi Sense Hotspots** Whether the device will automatically detect and connect to Wi-Fi  networks
--   **Allow Manual Wi-Fi Configuration** Whether the user can manually configure Wi-Fi  settings
--   **Allow Wi-Fi** Whether the Wi-Fi hardware is enabled
--   **Allow Internet Sharing** Allow or disallow Internet sharing
--   **WLAN Scan Mode** How actively the device scans for Wi-Fi  networks
+In addition, you can set the following device wide Wi-Fi settings:
+-   **Allow Auto Connect to Wi-Fi Sense Hotspots** Specifies whether the device automatically detects and connects to Wi-Fi networks
+-   **Allow Manual Wi-Fi Configuration** Specifies whether the user can manually configure Wi-Fi settings
+-   **Allow Wi-Fi** Specifies whether the Wi-Fi hardware is enabled
+-   **Allow Internet Sharing** Allows or disallows Internet sharing
+-   **WLAN Scan Mode** Specifies how actively the device scans for Wi-Fi networks
 
-Get more detailed information about Wi-Fi connection profile settings in the [Wi-Fi CSP](https://msdn.microsoft.com/library/windows/hardware/dn904981(v=vs.85).aspx) and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx).
+For more detailed information about Wi-Fi connection profile settings, see [Wi-Fi CSP](https://msdn.microsoft.com/library/windows/hardware/dn904981(v=vs.85).aspx) and [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx).
 
 ### <a href="" id="apn-profiles"></a>APN profiles
 
@@ -360,7 +367,7 @@ Get more detailed information about Wi-Fi connection profile settings in the [Wi
 
 An Access Point Name (APN) defines network paths for cellular data connectivity. Typically, you define just one APN for a device in collaboration with a mobile operator, but you can define multiple APNs if your company uses multiple mobile operators.
 An APN provides a private connection to the corporate network that is unavailable to other companies on the mobile operator network.
-You can define and deploy APN profiles in MDM systems that configure cellular data connectivity for Windows 10 Mobile. Devices running Windows 10 Mobile can have only one APN profile. The following lists the MDM settings that Windows 10 Mobile supports for APN profiles.
+You can define and deploy APN profiles in MDM systems that configure cellular data connectivity for Windows 10 Mobile. Devices running Windows 10 Mobile can have only one APN profile. The following lists the MDM settings that Windows 10 Mobile supports for APN profiles:
 
 -   **APN name** The APN name
 -   *IP connection type* The IP connection type; set to one of the following values:
@@ -368,7 +375,7 @@ You can define and deploy APN profiles in MDM systems that configure cellular da
     - IPv6 only
     - IPv4 and IPv6 concurrently
     - IPv6 with IPv4 provided by 46xlat
--   **LTE attached** Whether the APN should be attached as part of an LTE Attach
+-   **LTE attached** Specifies whether the APN should be attached as part of an LTE Attach
 -   **APN class ID** The globally unique identifier that defines the APN class to the modem
 -   **APN authentication type** The APN authentication type; set to one of the following values:
     - None
@@ -379,18 +386,18 @@ You can define and deploy APN profiles in MDM systems that configure cellular da
 -   **User name** The user account when users select Password Authentication Protocol (PAP), CHAP, or MSCHAPv2 authentication in APN authentication type
 -   **Password** The password for the user account specified in User name
 -   **Integrated circuit card ID** The integrated circuit card ID associated with the cellular connection profile
--   **Always on** Whether the connection manager will automatically attempt to connect to the APN whenever it is available
+-   **Always on** Specifies whether the connection manager automatically attempts to connect to the APN when it is available
 -   **Connection enabled** Specifies whether the APN connection is enabled
 -   **Allow user control** Allows users to connect with other APNs than the enterprise APN
--   **Hide view** Whether the cellular UX will allow the user to view enterprise APNs
+-   **Hide view** Specifies whether the cellular UX allows the user to view enterprise APNs
 
-Get more detailed information about APN settings in the [APN CSP](https://msdn.microsoft.com/library/windows/hardware/dn958617(v=vs.85).aspx).
+For more detailed information about APN settings, see [APN CSP](https://msdn.microsoft.com/library/windows/hardware/dn958617(v=vs.85).aspx).
 
 ### <a href="" id="proxy"></a>Proxy
 
 *Applies to: Corporate devices*
 
-The below lists the Windows 10 Mobile settings for managing APN proxy settings for Windows 10 Mobile device connectivity.
+The following lists the Windows 10 Mobile settings for managing APN proxy settings for Windows 10 Mobile device connectivity:
 
 -   **Connection name** Specifies the name of the connection the proxy is associated with (this is the APN name of a configured connection)
 -   **Bypass Local** Specifies if the proxy should be bypassed when local hosts are accessed by the device
@@ -424,7 +431,8 @@ To create a VPN profile that uses native Windows 10 Mobile VPN protocols (such a
 -   **L2tpPsk** The pre-shared key used for an L2TP connection
 -   **Cryptography Suite** Enable the selection of cryptographic suite attributes used for IPsec tunneling
 
->**Note:** The easiest way to create a profile for a single sign-on experience with an EAP configuration XML is through the rasphone tool on a Windows 10 PC. Once you run the rasphone.exe, the configuration wizard will walk you through the necessary steps. For step-by-step instructions on creating the EAP configuration XML blob, see EAP configuration. You can use the resulting XML blob in the MDM system to create the VPN profile on Windows 10 Mobile phone. If you have multiple certificates on the devices, you may want to configure filtering conditions for automatic certificate selection, so the employee does not need to select an authentication certificate every time the VPN is turned on. See this article for details. Windows 10 for PCs and Windows 10 Mobile have the same VPN client.
+> [!NOTE]
+> The easiest way to create a profile for a single sign-on experience with an EAP configuration XML is through the rasphone tool on a Windows 10 PC. Once you run the rasphone.exe, the configuration wizard walks you through the necessary steps. For step-by-step instructions on creating the EAP configuration XML blob, see EAP configuration. You can use the resulting XML blob in the MDM system to create the VPN profile on Windows 10 Mobile phone. If you have multiple certificates on the devices, you may want to configure filtering conditions for automatic certificate selection, so the employee does not need to select an authentication certificate every time the VPN is turned on. See this article for details. Windows 10 for PCs and Windows 10 Mobile have the same VPN client.
 
 Microsoft Store–based VPN plugins for the VPN connection allow you to create a VPN plugin profile with the following attributes:
 
@@ -434,7 +442,7 @@ Microsoft Store–based VPN plugins for the VPN connection allow you to create a
 
 In addition, you can specify per VPN Profile:
 
--   **App Trigger List** You can add an App Trigger List to every VPN profile. The app specified in the list will automatically trigger the VPN profile for intranet connectivity. When multiple VPN profiles are needed to serve multiple apps, the operating system automatically establishes the VPN connection when the user switches between apps. Only one VPN connection at a time can be active. In the event the device drops the VPN connection, Windows 10 Mobile automatically reconnects to the VPN without user intervention.
+-   **App Trigger List** You can add an App Trigger List to every VPN profile. The app specified in the list automatically triggers the VPN profile for intranet connectivity. When multiple VPN profiles are needed to serve multiple apps, the operating system automatically establishes the VPN connection when the user switches between apps. Only one VPN connection at a time can be active. In the event the device drops the VPN connection, Windows 10 Mobile automatically reconnects to the VPN without user intervention.
 -   **Route List** List of routes to be added to the routing table for the VPN interface. This is required for split tunneling cases where the VPN server site has more subnets that the default subnet based on the IP assigned to the interface.
 -   **Domain Name Information List** Name Resolution Policy Table (NRPT) rules for the VPN profile.
 -   **Traffic Filter List** Specifies a list of rules. Only traffic that matches these rules can be sent via the VPN Interface.
@@ -513,11 +521,11 @@ Azure AD authenticated managers have access to Microsoft Store for Business func
 Microsoft Store for Business supports app distribution under two licensing models: online and offline.
 
 The online model (store-managed) is the recommended method, and supports both personal device and corporate device management scenarios. To install online apps, the device must have Internet access at the time of installation. On corporate devices, an employee can be authenticated with an Azure AD account to install online apps. On personal devices, an employee must register their device with Azure AD to be able to install corporate licensed online apps.
-Corporate device users will find company licensed apps in the Store app on their phone in a private catalog. When an MDM system is associated with the Store for Business, IT administrators can present Store apps within the MDM system app catalog where users can find and install their desired apps. IT administrators can also push required apps directly to employee devices without the employee’s intervention.
+Corporate device users can find company licensed apps in the Store app on their phone in a private catalog. When an MDM system is associated with the Store for Business, IT administrators can present Store apps within the MDM system app catalog where users can find and install their desired apps. IT administrators can also push required apps directly to employee devices without the employee’s intervention.
 
 Employees with personal devices can install apps licensed by their organization using the Store app on their device. They can use either the Azure AD account or Microsoft Account within the Store app if they wish to purchase personal apps. If you allow employees with corporate devices to add a secondary Microsoft Account (MSA), the Store app on the device provides a unified method for installing personal and corporate apps.
 
-Online licensed apps do not need to be transferred or downloaded from the Microsoft Store to the MDM system to be distributed and managed. When an employee chooses a company-owned app, it will automatically be installed from the cloud. Also, apps will be automatically updated when a new version is available or can be removed if needed. When an app is removed from a device by the MDM system or the user, Microsoft Store for Business reclaims the license so it can be used for another user or on another device.
+Online licensed apps do not need to be transferred or downloaded from the Microsoft Store to the MDM system to be distributed and managed. When an employee chooses a company-owned app, it's automatically installed from the cloud. Also, apps are automatically updated when a new version is available or can be removed if needed. When an app is removed from a device by the MDM system or the user, Microsoft Store for Business reclaims the license so it can be used for another user or on another device.
 
 To distribute an app offline (organization-managed), the app must be downloaded from the Microsoft Store for Business. This can be accomplished in the Microsoft Store for Business portal by an authorized administrator. Offline licensing requires the app developer to opt-in to the licensing model, as the Microsoft Store is no longer able to track licenses for the developer. If the app developer doesn’t allow download of the app from Microsoft Store, then you must obtain the files directly from the developer or use the online licensing method.
 
@@ -543,7 +551,7 @@ In addition to controlling which apps are allowed, IT professionals can also imp
 -   **Allow App Store Auto Update** Whether automatic updates of apps from Microsoft Store are allowed.
 -   **Allow Developer Unlock** Whether developer unlock is allowed.
 -   **Allow Shared User App Data** Whether multiple users of the same app can share data.
--   **Allow Store** Whether Microsoft Store app is allowed to run. This will completely block the user from installing apps from the Store, but will still allow app distribution through an MDM system.
+-   **Allow Store** Whether Microsoft Store app is allowed to run. This completely blocks the user from installing apps from the Store, but still allows app distribution through an MDM system.
 -   **Application Restrictions** An XML blob that defines the app restrictions for a device. The XML blob can contain an app allow or deny list. You can allow or deny apps based on their app ID or publisher. See AppLocker above.
 -   **Disable Store Originated Apps** Disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded before the policy was applied.
 -   **Require Private Store Only** Whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
@@ -561,7 +569,7 @@ One of the biggest challenges in protecting corporate information on mobile devi
 
 Windows 10 Mobile includes Windows Information Protection to transparently keep corporate data protected and personal data private. It automatically tags personal and corporate data and applies policies for those apps that can access data classified as corporate. This includes when data is at rest on local or removable storage. Because corporate data is always protected, users cannot copy it to public locations like social media or personal email.
 
-Windows Information Protection works with all apps, which are classified into two categories: enlightened and unenlightened. Enlighted apps can differentiate between corporate and personal data, correctly determining which to protect based on policies. Corporate data will be encrypted at all times and attempts to copy/paste or share this information with non-corporate apps or users will fail. Unenlightened apps consider all data corporate and encrypt everything by default.
+Windows Information Protection works with all apps, which are classified into two categories: enlightened and unenlightened. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on policies. Corporate data is encrypted at all times and any attempt to copy/paste or share this information with non-corporate apps or users fails. Unenlightened apps consider all data corporate and encrypt everything by default.
 
 Any app developed on the UWA platform can be enlightened. Microsoft has made a concerted effort to enlighten several of its most popular apps, including:
 -   Microsoft Edge
@@ -581,7 +589,7 @@ The following table lists the settings that can be configured for Windows Inform
     -   Override mode (encrypt, prompt, and audit)
     -   Block mode (encrypt, block, and audit)
 -   **Enterprise protected domain names*** A list of domains used by the enterprise for its user identities. User identities from one of these domains is considered an enterprise managed account and data associated with it should be protected.
--   **Allow user decryption** Allows the user to decrypt files. If not allowed, the user will not be able to remove protection from enterprise content through the OS or app user experience.
+-   **Allow user decryption** Allows the user to decrypt files. If not allowed, the user is not able to remove protection from enterprise content through the OS or app user experience.
 -   **Require protection under lock configuration** Specifies whether the protection under lock feature (also known as encrypt under PIN) should be configured.
 -   **Data recovery certificate*** Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through MDM instead of Group Policy.
 -   **Revoke on unenroll** Whether to revoke the information protection keys when a device unenrolls from the management service.
@@ -589,11 +597,11 @@ The following table lists the settings that can be configured for Windows Inform
 -   **Allow Azure RMS for information protection** Specifies whether to allow Azure RMS encryption for information protection.
 -   **Show information protection icons** Determines whether overlays are added to icons for information protection secured files in web browser and enterprise-only app tiles in the Start menu.
 -   **Status** A read-only bit mask that indicates the current state of information protection on the device. The MDM service can use this value to determine the current overall state of information protection.
--   **Enterprise IP Range*** The enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected.
--   **Enterprise Network Domain Names*** the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected.
+-   **Enterprise IP Range*** The enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers is considered part of the enterprise and protected.
+-   **Enterprise Network Domain Names*** the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device is considered enterprise data and is protected.
 -   **Enterprise Cloud Resources** A list of Enterprise resource domains hosted in the cloud that need to be protected.
 
->**Note:** * Are mandatory Windows Information Protection policies. To make Windows Information Protection functional, AppLocker and network isolation settings - specifically Enterprise IP Range and Enterprise Network Domain Names –  must be configured. This defines the source of all corporate data that needs protection and also ensures data written to these locations won’t be encrypted by the user’s encryption key (so that others in the company can access it.
+(* Mandatory Windows Information Protection policies. To make Windows Information Protection functional, AppLocker and network isolation settings - specifically Enterprise IP Range and Enterprise Network Domain Names –  must be configured. This defines the source of all corporate data that needs protection and also ensures data written to these locations won’t be encrypted by the user’s encryption key so that others in the company can access it.)
 
 For more information on Windows Information Protection, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634(v=vs.85).aspx) and the following in-depth article series [Protect your enterprise data using Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
@@ -682,11 +690,11 @@ Microsoft has streamlined the Windows product engineering and release cycle so n
 </tbody>
 </table>
 
-Microsoft will also deliver and install monthly updates for security and stability directly to Windows 10 Mobile devices. These <strong>Quality Updates</strong>, released under Microsoft control via Windows Update, are available for all devices running Windows 10 Mobile. Windows 10 Mobile devices consume Feature Updates and Quality Updates as part of the same standard update process.
+Microsoft also delivers and installs monthly updates for security and stability directly to Windows 10 Mobile devices. These <strong>Quality Updates</strong>, released under Microsoft control via Windows Update, are available for all devices running Windows 10 Mobile. Windows 10 Mobile devices consume Feature Updates and Quality Updates as part of the same standard update process.
 
-Quality Updates are usually smaller than Feature Updates, but the installation process and experience is very similar, though larger updates will take more time to install.  Enterprise customers can manage the update experience and process on Windows 10 Mobile devices using an MDM system, after upgrading the devices to Enterprise edition. In most cases, policies to manage the update process will apply to both feature and quality updates.
+Quality Updates are usually smaller than Feature Updates, but the installation process and experience is very similar, though larger updates take more time to install.  Enterprise customers can manage the update experience and process on Windows 10 Mobile devices using an MDM system, after upgrading the devices to Enterprise edition. In most cases, policies to manage the update process apply to both feature and quality updates.
 
-Microsoft aspires to update Windows 10 Mobile devices with the latest updates automatically and without being disruptive for all customers. Out-of-the-box, a Windows 10 Mobile device will Auto Scan for available updates. However, depending on the device’s network and power status, update methods and timing will vary.
+Microsoft aspires to update Windows 10 Mobile devices with the latest updates automatically and without being disruptive for all customers. Out-of-the-box, a Windows 10 Mobile device uses Auto Scan to search for available updates. However, depending on the device’s network and power status, update methods and timing may vary.
 
 <table>
 <colgroup>
@@ -717,8 +725,8 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 <tr class="odd">
 <td align="left"><strong>Cellular</strong></td>
 <td align="left">Device is only connected to a cellular network (standard data charges apply)</td>
-<td align="left">Will skip a daily scan if scan was successfully completed in the last 5 days</td>
-<td align="left">Will only occur if update package is small and does not exceed the mobile operator data limit.</td>
+<td align="left">Skips a daily scan if scan was successfully completed in the last 5 days</td>
+<td align="left">Only occurs if update package is small and does not exceed the mobile operator data limit.</td>
 <td align="left">Yes</td>
 <td align="left">Idem</td>
 </tr>
@@ -739,8 +747,8 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 
 Microsoft publishes new feature updates for Windows 10 and Windows 10 Mobile on a regular basis. The [Windows release information page](https://technet.microsoft.com/windows/release-info) is designed to help you determine if your devices are current with the latest Windows 10 feature and quality updates. The release information published on this page, covers both Windows 10 for PCs and Windows 10 Mobile. In addition, the [Windows update history page](https://windows.microsoft.com/en-us/windows-10/update-history-windows-10) helps you understand what these updates are about.
 
->**Note:**
-We invite IT Professionals to participate in the Windows Insider Program to test updates before they are officially released to make Windows 10 Mobile even better. If you find any issues, please send us feedback via the Feedback Hub
+> [!NOTE]
+> We invite IT Professionals to participate in the Windows Insider Program to test updates before they are officially released to make Windows 10 Mobile even better. If you find any issues, please send us feedback via the Feedback Hub
 
 **Windows as a Service**
 
@@ -845,11 +853,11 @@ The following table summarizes applicable update policy settings by version of W
 <td align="left"><strong>Subscribe device to CBB, to defer Feature Updates</strong></td>
 <td align="left">RequireDeferUpgrade
 
-Defers Feature Update until next CBB release. Device will receive quality updates from Current Branch for Business (CBB).
+Defers Feature Update until next CBB release. Device receives quality updates from Current Branch for Business (CBB).
 Defers feature update for minimum of 4 months after Current Branch was release.</td>
 <td align="left">BranchReadinessLevel
 
-Defers Feature Update until next CBB release. Device will receive quality updates from Current Branch for Business (CBB).
+Defers Feature Update until next CBB release. Device receives quality updates from Current Branch for Business (CBB).
 Defers feature update for minimum of 4 months after Current Branch was release.</td></tr>
 <tr class="odd">
 <td align="left"><strong>Defer Updates</strong></td>
@@ -892,7 +900,7 @@ This can include:
 -   Automatically downloading and restarting devices with user notification.
 -   Automatically downloading and restarting devices at a specified time.
 -   Automatically downloading and restarting devices without user interaction.
--   Turning off automatic updates. This option should be used only for systems under regulatory compliance. The device will not receive any updates.
+-   Turning off automatic updates. This option should be used only for systems under regulatory compliance. The device does not receive any updates.
 
 In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, etc.) or on a specific what [day of the week](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, etc.).
 
@@ -953,7 +961,8 @@ DHA-enabled device management solutions help IT managers create a unified securi
 -   Trigger further investigation and monitoring (route the device to a honeypot for further monitoring)
 -   Simply alert the user or the admin to fix the issue
 
->**Note:** Windows Device Health Attestation Service can be used for conditional access scenarios which may be enabled by Mobile Device Management solutions (e.g.: Microsoft Intune) and other types of management systems (e.g.: SCCM) purchased separately.
+> [!NOTE]
+> Windows Device Health Attestation Service can be used for conditional access scenarios which may be enabled by Mobile Device Management solutions (e.g.: Microsoft Intune) and other types of management systems (e.g.: SCCM) purchased separately.
 
 For more information about health attestation in Windows 10 Mobile, see the [Windows 10 Mobile security guide](/windows/device-security/windows-10-mobile-security-guide).
 
@@ -990,7 +999,7 @@ Here is what occurs when a smartphone is turned on:
 
 Device inventory helps organizations better manage devices because it provides in-depth information about those devices. MDM systems collect inventory information remotely and provide reporting capabilities to analyze device resources and information. This data informs IT about the current hardware and software resources of the device (e.g., installed updates).
 
-The following list shows examples of the Windows 10 Mobile software and hardware information that a device inventory provides. In addition to this information, the MDM system can read any of the configuration settings described in this guide.
+The following list shows examples of the Windows 10 Mobile software and hardware information that a device inventory provides. In addition to this information, the MDM system can read any of the configuration settings described in this guide:
 
 -   **Installed enterprise apps** List of the enterprise apps installed on the device
 -   **Device name** The device name configured for the device
@@ -1004,7 +1013,7 @@ The following list shows examples of the Windows 10 Mobile software and hardware
 -   **Device language** Language in use on the device
 -   **Phone number** Phone number assigned to the device
 -   **Roaming status** Indicates whether the device has a roaming cellular connection
--   **International mobile equipment identity (IMEI) and international mobile subscriber identity (IMSI)	Unique identifiers for the cellular connection for the phone; Global System for Mobile Communications networks identify valid devices by using the IMEI, and all cellular networks use the IMSI to identify the device and user
+-   **International mobile equipment identity (IMEI) and international mobile subscriber identity (IMSI)** Unique identifiers for the cellular connection for the phone (Global System for Mobile Communications networks identify valid devices by using the IMEI, and all cellular networks use the IMSI to identify the device and user)
 -   **Wi-Fi IP address** IPv4 and IPv6 addresses currently assigned to the Wi-Fi adapter in the device
 -   **Wi-Fi media access control (MAC) address** MAC address assigned to the Wi-Fi adapter in the device
 -   **Wi-Fi DNS suffix and subnet mask** DNS suffix and IP subnet mask assigned to the Wi-Fi adapter in the device
@@ -1021,7 +1030,8 @@ You can control the level of data that diagnostic data systems collect. To confi
 
 For more information, see [Configure Windows diagnostic data in Your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
->**Note:** Diagnostic data can only be managed when the device is upgraded to Windows 10 Mobile Enterprise edition.
+> [!NOTE]
+> Diagnostic data can only be managed when the device is upgraded to Windows 10 Mobile Enterprise edition.
 
 ### <a href="" id="mremote-assistance"></a>Remote assistance
 
@@ -1050,15 +1060,16 @@ Device retirement is the last phase of the device lifecycle, which in today’s 
 
 Windows 10 Mobile IT supports device retirement in both personal and corporate scenarios, allowing IT to be confident that corporate data remains confidential and user privacy is protected.
 
->**Note:** All these MDM capabilities are in addition to the device’s software and hardware factory reset features, which employees can use to restore devices to their factory configuration.
+> [!NOTE]
+> All these MDM capabilities are in addition to the device’s software and hardware factory reset features, which employees can use to restore devices to their factory configuration.
 
 **Personal devices:** Windows 10 mobile supports the USA regulatory requirements for a “kill switch” in case your phone is lost or stolen. Reset protection is a free service on account.microsoft.com that helps ensure that the phone cannot be easily reset and reused. All you need to do to turn on **Reset Protection** is sign in with your Microsoft account and accept the recommended settings. To manually turn it on, you can find it under Settings > Updates & security > Find my phone. At this point, Reset Protection is only available with an MSA, not with Azure AD account. It is also only available in the USA and not in other regions of the world.
 
 If you choose to completely wipe a device when lost or when an employee leaves the company, make sure you obtain consent from the user and follow any local legislation that protects the user’s personal data.
 
-A better option than wiping the entire device is to use Windows Information Protection to clean corporate-only data from a personal device. As explained in the Apps chapter, all corporate data will be tagged and when the device is unenrolled from your MDM system of your choice, all enterprise encrypted data, apps, settings and profiles will immediately be removed from the device without affecting the employee’s existing personal data. A user can initiate unenrollment via the settings screen or unenrollment action can be taken by IT from within the MDM management console. Unenrollment is a management event and will be reported to the MDM system.
+A better option than wiping the entire device is to use Windows Information Protection to clean corporate-only data from a personal device. As explained in the Apps chapter, all corporate data is tagged and when the device is unenrolled from your MDM system of your choice, all enterprise encrypted data, apps, settings and profiles are immediately removed from the device without affecting the employee’s existing personal data. A user can initiate unenrollment via the settings screen or unenrollment action can be taken by IT from within the MDM management console. Unenrollment is a management event and is reported to the MDM system.
 
-**Corporate device:** You can certainly remotely expire the user’s encryption key in case of device theft, but please remember that will also make the encrypted data on other Windows devices unreadable for the user. A better approach for retiring a discarded or lost device is to execute a full device wipe. The help desk or device users can initiate a full device wipe. When the wipe is complete, Windows 10 Mobile returns the device to a clean state and restarts the OOBE process.
+**Corporate device:** You can certainly remotely expire the user’s encryption key in case of device theft, but please remember that also makes the encrypted data on other Windows devices unreadable for the user. A better approach for retiring a discarded or lost device is to execute a full device wipe. The help desk or device users can initiate a full device wipe. When the wipe is complete, Windows 10 Mobile returns the device to a clean state and restarts the OOBE process.
 
 **Settings for personal or corporate device retirement**
 -   **Allow manual MDM unenrollment** Whether users are allowed to delete the workplace account (i.e., unenroll the device from the MDM system)
