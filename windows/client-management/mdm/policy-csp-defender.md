@@ -1725,14 +1725,14 @@ Valid values: 0–90
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you disable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
 
-If you enable or do not configure this setting, catch-up scans for scheduled full scans will be disabled.
+If you enable this setting, catch-up scans for scheduled full scans will be disabled.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 0 - Disabled (default)
+- 1 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
@@ -1805,14 +1805,14 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you disable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-If you enable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+If you enable this setting, catch-up scans for scheduled quick scans will be turned off.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 0 - Disabled (default)
+- 1 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
