@@ -16,7 +16,7 @@ ms.date: 12/04/2019
 ms.reviewer: 
 ---
 
-# Windows 10, version 1709 and newer diagnostic data for the Full level
+# Windows 10, version 1709 and newer optional diagnostic data
 
 Applies to:
 - Windows 10, version 1909
