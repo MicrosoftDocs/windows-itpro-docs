@@ -96,7 +96,7 @@ Here's the list of default protected folders:
 - %PUBLIC%\Pictures
 - %PUBLIC%\Videos
 
-You can use the Windows Security app to display the list of default folders protected by controlled folder access:
+You can use the Windows Security app to view the list of default folders protected by controlled folder access:
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
