@@ -41,9 +41,12 @@ Application Guard itself is required for the extension to work. It has its own s
 
 ## Installing the extension
 
-Enterprise administrators running Application Guard under [managed mode](install-md-app-guard.md#enterprise-managed-mode) can follow these recommended steps:
+Application Guard can be run under [managed mode](install-md-app-guard.md#enterprise-managed-mode) or [standalone mode](install-md-app-guard.md#atandalone-mode). The main difference between the two modes is whether policies have been set to define the organization's boundaries.
 
-1. Define Application Guard's [network isolation settings](configure-md-app-guard.md#network-isolation-settings), so a set of enterprise sites is already in place.
+Enterprise administrators running Application Guard under managed mode should first define Application Guard's [network isolation settings](configure-md-app-guard.md#network-isolation-settings), so a set of enterprise sites is already in place.
+
+From there, the steps for installing the extension are similar whether Application Guard is running in managed or standalone mode.
+
 1. On the local device, download and install the Application Guard extension for Google [Chrome](https://chrome.google.com/webstore/detail/application-guard-extensi/mfjnknhkkiafjajicegabkbimfhplplj/) and/or Mozilla [Firefox](https://addons.mozilla.org/en-US/firefox/addon/application-guard-extension/).
 1. Install the [Windows Defender Application Guard companion app](https://www.microsoft.com/p/windows-defender-application-guard-companion/9n8gnlc8z9c8#activetab=pivot:overviewtab) from the Microsoft Store. This companion app enables Application Guard to work with web browsers other than Microsoft Edge or Internet Explorer.
 1. Restart the device.
