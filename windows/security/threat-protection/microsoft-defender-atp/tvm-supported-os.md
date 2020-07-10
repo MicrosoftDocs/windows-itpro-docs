@@ -36,8 +36,8 @@ Windows Server 2008 R2 | Operating System (OS) vulnerabilities<br/>Software prod
 Windows Server 2012 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-MacOS | Not supported (planned)
-Linux | Not supported (planned)
+MacOS | Detect and block potentially unwanted applications<br/>Software product vulnerabilities<br/>
+Linux | Detect and block potentially unwanted applications<br/>Software product vulnerabilities<br/>
 
 Some of the above prerequisites might be different from the [Minimum requirements for Microsoft Defender ATP](minimum-requirements.md) list.
 
@@ -55,3 +55,5 @@ Some of the above prerequisites might be different from the [Minimum requirement
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)
+- [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux)
