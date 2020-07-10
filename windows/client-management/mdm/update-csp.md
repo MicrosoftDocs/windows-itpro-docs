@@ -16,6 +16,9 @@ ms.date: 02/23/2018
 
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
+> [!Note]
+> All aspects of the Update CSP aside from Rollback are not recommended for managing desktop devices. To manage desktop devices from Windows Update please see the Policy CSP - Updates section of the Mobile Device Management documentation. Rollback can be used for desktop devices on 1803 and above. 
+
 The following diagram shows the Update configuration service provider in tree format.
 
 ![update csp diagram](images/provisioning-csp-update.png)
