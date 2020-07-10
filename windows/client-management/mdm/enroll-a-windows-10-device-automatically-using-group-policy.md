@@ -80,7 +80,7 @@ The following steps demonstrate required settings using the Intune service:
 
     ![Mobility setting MDM intune](images/auto-enrollment-microsoft-intune-setting.png)
 
-7. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is properly deployed to all devices which should be enrolled into Intune. 
+7. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices which should be enrolled into Intune. 
 You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
 8. Verify that the device is not enrolled with the old Intune client used on the Intune Silverlight Portal (this is the Intune portal used before the Azure portal).
@@ -194,7 +194,7 @@ Investigate the log file if you have issues even after performing all the mandat
 To collect Event Viewer logs:
 
 1. Open Event Viewer.
-2. Navigate to Applications and Services Logs > Microsoft > Windows > DeviceManagement-Enterprise-Diagnostic-Provider > Admin.
+2. Navigate to **Applications and Services Logs > Microsoft > Windows > DeviceManagement-Enterprise-Diagnostic-Provider > Admin**.
 
     > [!Tip]
     > For guidance on how to collect event logs for Intune, see [Collect MDM Event Viewer Log YouTube video](https://www.youtube.com/watch?v=U_oCe2RmQEc).
@@ -208,14 +208,14 @@ To collect Event Viewer logs:
     To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-ph/help/4469913/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for more information.
     - The auto-enrollment did not trigger at all. In this case, you will not find either event ID 75 or event ID 76. To know the reason, you must understand the internal mechanisms happening on the device as described in the following section.
 
-    The auto-enrollment process is triggered by a task (Microsoft > Windows > EnterpriseMgmt) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is successfully deployed to the target machine as shown in the following screenshot:
+    The auto-enrollment process is triggered by a task (**Microsoft > Windows > EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (**Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is successfully deployed to the target machine as shown in the following screenshot:
     ![Task scheduler](images/auto-enrollment-task-scheduler.png)
 
     > [!Note]
     > This task isn't visible to standard users - run Scheduled Tasks with administrative credentials to find the task.
 
     This task runs every 5 minutes for the duration of 1 day. To confirm if the task succeeded, check the task scheduler event logs:
-    Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational.
+    **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**.
     Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from AAD is triggered by event ID 107.
 
     ![Event ID 107](images/auto-enrollment-event-id-107.png)
@@ -226,11 +226,11 @@ To collect Event Viewer logs:
     Note that the task scheduler log displays event ID 102 (task completed) regardless of the auto-enrollment success or failure. This means that the task scheduler log is only useful to confirm if the auto-enrollment task is triggered or not. It does not indicate the success or failure of auto-enrollment.
 
     If you cannot see from the log that task Schedule created by enrollment client for automatically enrolling in MDM from AAD is initiated, there is possibly issue with the group policy. Immediately run the command `gpupdate /force` in command prompt to get the GPO applied. If this still does not help, further troubleshooting on the Active Directory is required. 
-    One frequently seen error is related to some outdated enrollment entries in the registry on the target client device (HKLM > Software > Microsoft > Enrollments). If a device has been enrolled (can be any MDM solution and not only Intune), some enrollment information added into the registry is seen:
+    One frequently seen error is related to some outdated enrollment entries in the registry on the target client device (**HKLM > Software > Microsoft > Enrollments**). If a device has been enrolled (can be any MDM solution and not only Intune), some enrollment information added into the registry is seen:
 
     ![Outdated enrollment entries](images/auto-enrollment-outdated-enrollment-entries.png)
 
-    By default, these entries are removed when the device is un-enrolled, but occasionally the registry key remains even after un-enrollment. In this case, `gpupdate /force` fails to initiate the auto-enrollment task and error code 2149056522 is displayed in the Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational event log file under event ID 7016. 
+    By default, these entries are removed when the device is un-enrolled, but occasionally the registry key remains even after un-enrollment. In this case, `gpupdate /force` fails to initiate the auto-enrollment task and error code 2149056522 is displayed in the **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational** event log file under event ID 7016. 
     A resolution to this issue is to remove the registry key manually. If you do not know which registry key to remove, go for the key which displays most entries as the screenshot above. All other keys will display less entries as shown in the following screenshot:
 
     ![Manually deleted entries](images/auto-enrollment-activation-verification-less-entries.png)
