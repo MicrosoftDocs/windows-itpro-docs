@@ -47,4 +47,4 @@ This is not related to Microsoft Defender Antivirus and other Microsoft antimalw
 
 ## Why does the Windows Defender SmartScreen say my program is not commonly downloaded?
 
-This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more from the SmartScreen website.
+This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more from the [SmartScreen website.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
