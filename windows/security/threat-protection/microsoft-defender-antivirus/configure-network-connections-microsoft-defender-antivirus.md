@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/25/2020
+ms.date: 07/08/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -47,13 +47,15 @@ See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defend
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. The table below lists the services and their associated URLs. Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
+Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. 
+
+The table below lists the services and their associated URLs. Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
 
 
 | **Service**| **Description** |**URL** |
 | :--: | :-- | :-- |
 | Microsoft Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)|Used by Microsoft Defender Antivirus to provide cloud-delivered protection|`*.wdcp.microsoft.com` <br/> `*.wdcpalt.microsoft.com` <br/> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) <br/> Windows Update Service (WU)|	Security intelligence and product updates	|`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/> for details see [Connection endpoints for Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+| Microsoft Update Service (MU) <br/> Windows Update Service (WU)|	Security intelligence and product updates	|`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/><br/> For details see [Connection endpoints for Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints#windows-update)|
 |Security intelligence updates Alternate Download Location (ADL)|	Alternate location for Microsoft Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	`*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | Malware submission storage|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	| `ussus1eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `ussas1eastprod.blob.core.windows.net` <br/>    `ussas1southeastprod.blob.core.windows.net` <br/>    `ussau1eastprod.blob.core.windows.net` <br/>    `ussau1southeastprod.blob.core.windows.net` |
 | Certificate Revocation List (CRL)|Used by Windows when creating the SSL connection to MAPS for updating the CRL	| `https://www.microsoft.com/pkiops/crl/` <br/> `https://www.microsoft.com/pkiops/certs` <br/>   `https://crl.microsoft.com/pki/crl/products` <br/> `https://www.microsoft.com/pki/certs` |

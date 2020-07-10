@@ -228,16 +228,15 @@ is configured on these devices.
 URLs that include v20 in them are only needed if you have Windows 10, version
 1803 or later devices. For example, ```us-v20.events.data.microsoft.com``` is only
 needed if the device is on Windows 10, version 1803 or later.
+ 
 
-  Service location | Microsoft.com DNS record
--|-
-Common URLs for all locations | ```crl.microsoft.com/pki/crl/*```<br> ```ctldl.windowsupdate.com``` <br>```www.microsoft.com/pkiops/*```<br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` <br>```automatedirstrprdweu.blob.core.windows.net``` <br>```automatedirstrprdneu.blob.core.windows.net```
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` <br>```automatedirstrprduks.blob.core.windows.net``` <br>```automatedirstrprdukw.blob.core.windows.net```  
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net``` <br> ```automatedirstrprdcus.blob.core.windows.net``` <br> ```automatedirstrprdeus.blob.core.windows.net```
+If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
 
-If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
 
 ###  Microsoft Defender ATP service backend IP range
 

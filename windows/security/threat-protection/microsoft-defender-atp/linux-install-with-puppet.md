@@ -33,7 +33,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Puppet
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+ For a description of prerequisites and system requirements for the current software version, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md).
 
 In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
@@ -205,7 +205,7 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Log installation issues
 
-See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+ For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
 
 ## Operating system upgrades
 
