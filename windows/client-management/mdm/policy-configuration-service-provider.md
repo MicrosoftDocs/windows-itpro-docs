@@ -562,11 +562,11 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Bitlocker policies
+### BitLocker policies
 
 <dl>
   <dd>
-    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">BitLocker/EncryptionMethod</a>
   </dd>
 </dl>
 
