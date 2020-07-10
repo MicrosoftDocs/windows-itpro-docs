@@ -47,9 +47,9 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 |
 | [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 |
 | [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 |
-| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 |
-| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 |
-| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
+| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
+| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
+| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) |
 | [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
 | [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 |

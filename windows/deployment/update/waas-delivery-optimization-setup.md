@@ -178,7 +178,7 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 **Starting in Windows 10, version 2004:**
 
 - `Enable-DeliveryOptimizationVerboseLogs`
-- `Disable-DliveryOptimizationVerboseLogs`
+- `Disable-DeliveryOptimizationVerboseLogs`
 
 - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
 

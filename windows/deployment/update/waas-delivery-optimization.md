@@ -40,17 +40,21 @@ For information about setting up Delivery Optimization, including tips for the b
 
 ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
 
-- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#microsoft-connected-cache).
+- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 - New options for [`Get-DeliveryOptimizationPerfSnap`](waas-delivery-optimization-setup.md#analyze-usage).
 - New cmdlets:
     - `Enable-DeliveryOptimizationVerboseLogs`
-    - `Disable-DliveryOptimizationVerboseLogs`
+    - `Disable-DeliveryOptimizationVerboseLogs`
     - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
-- New policy settings (for details see ):
+- New policy settings:
     - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
     - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
-    - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+    - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs); replaces DOPercentageMaxDownloadBandwidth
     - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+- Removed policy settings (if you set these policies in Windows 10, 2004, they will have no effect):
+    - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOMaxUploadBandwidth
 - Support for new types of downloads:
     - Office installations and updates
     - Xbox game pass games
