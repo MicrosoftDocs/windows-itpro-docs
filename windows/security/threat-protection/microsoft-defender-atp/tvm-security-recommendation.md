@@ -144,11 +144,12 @@ When an exception is created for a recommendation, the recommendation is no long
 
     The following list details the justifications behind the exception options:
 
-    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a device, third party antivirus
-    - **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow
-    - **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
+    - **Third party control** - A third party product or software already addresses this recommendation
+        - This justification type will give you point for completing the recommendation, which affects your exposure score and secure score
+    - **Alternate mitigation** - An internal tool already addresses this recommendation
+        - This justification type will give you point for completing the recommendation, which affects your exposure score and secure score
+    - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
     - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
-    - **Other** - False positive
 
 3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 
