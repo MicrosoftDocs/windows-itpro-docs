@@ -96,9 +96,9 @@ From the flyout, you can do any of the following:
 >[!NOTE]
 >When a change is made on a device, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
 
-### Investigate changes in machine exposure or impact
+### Investigate changes in device exposure or impact
 
-If there is a large jump in the number of exposed machines, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
 
 1. Select the recommendation and **Open software page**
 2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
@@ -141,24 +141,27 @@ When an exception is created for a recommendation, the recommendation is no long
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-option.png)
 
 2. Select your exception scope. There are two types of exceptions:
-    - **Global exception**: Global admins will be able to create a global exception. It affects all current and future machine groups in your organization. It can only be cancelled by someone with admin privileges.
-    - **Exception by machine groups**: Apply the exception to all machine groups, or choose specific machine groups. Machine groups that already have an exception will not be displayed. If you have filtered by machine group, just your filtered machine groups will appear as options.
+    - **Global exception**: Global admins will be able to create a global exception. It affects all current and future device groups in your organization. It can only be cancelled by someone with admin privileges.
+    - **Exception by device groups**: Apply the exception to all device groups, or choose specific device groups. Device groups that already have an exception will not be displayed. If you have filtered by device group, just your filtered device groups will appear as options.
 
-    If a recommendation is under global exception, then new exceptions for machine groups will be suspended until the global exception has expired.
+    Some things to keep in mind:
+    - If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired.
+    - If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
 
 3. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
     The following list details the justifications behind the exception options:
 
-    - **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a device, third party antivirus
-    - **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow
-    - **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
+    - **Third party control** - A third party product or software already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
+    - **Alternate mitigation** - An internal tool already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
+    - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
     - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
-    - **Other** - False positive
 
-3. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+4. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 
-4. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab to view all your exceptions (current and past).
+5. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab to view all your exceptions (current and past).
 
 ## Report inaccuracy
 
