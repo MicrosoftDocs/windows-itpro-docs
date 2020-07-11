@@ -309,7 +309,8 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
+<td><p><a href="/windows/security/threat-protection/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account" data-raw-source="[
+User Account Control: Admin Approval Mode for the Built-in Administrator account](/windows/security/threat-protection/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)">User Account Control: Admin Approval Mode for the Built-in Administrator account</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -531,7 +532,7 @@ The following table shows the Group Policy settings that are used to deny networ
 
 11. Create links to all other OUs that contain servers.
 
-    **Note**  
+    **Note** 
     You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
 
 
