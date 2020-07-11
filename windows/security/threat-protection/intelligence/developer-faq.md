@@ -31,7 +31,7 @@ Submit the file in question as a software developer. Wait until your submission 
 
 If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
 
-We encourage all software vendors and developers to read about [how Microsoft identifies malware and pua.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria)
+We encourage all software vendors and developers to read about [how Microsoft identifies malware and Potentially Unwanted Applications (PUA)](https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria).
 
 ## Why is Microsoft asking for a copy of my program?
 
