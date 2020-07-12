@@ -400,8 +400,8 @@ For more detailed information about APN settings, see [APN CSP](https://msdn.mic
 The following lists the Windows 10 Mobile settings for managing APN proxy settings for Windows 10 Mobile device connectivity:
 
 -   **Connection name** Specifies the name of the connection the proxy is associated with (this is the APN name of a configured connection)
--   **Bypass Local** Specifies if the proxy should be bypassed when local hosts are accessed by the device
--   **Enable** Specifies if the proxy is enabled
+-   **Bypass Local** Specifies whether the proxy should be bypassed when local hosts are accessed by the device
+-   **Enable** Specifies whether the proxy is enabled
 -   **Exception** Specifies a semi-colon delimited list of external hosts which should bypass the proxy when accessed
 -   **User Name** Specifies the username used to connect to the proxy
 -   **Password** Specifies the password used to connect to the proxy
@@ -415,15 +415,15 @@ For more details on proxy settings, see [CM_ProxyEntries CSP](https://msdn.micro
 
 *Applies to: Corporate and personal devices*
 
-Organizations often use a VPN to control access to apps and resources on their company’s intranet. In addition to native Microsoft Point to Point Tunneling Protocol (PPTP), Layer 2 Tunneling Protocol (L2TP), and Internet Key Exchange Protocol version 2 (IKEv2) VPNs, Windows 10 Mobile supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice. These plugins work like apps and can be installed directly from the Microsoft Store using your MDM system (see App Management).
+Organizations often use a VPN to control access to apps and resources on their company’s intranet. In addition to native Microsoft Point-to-Point Tunneling Protocol (PPTP), Layer 2 Tunneling Protocol (L2TP), and Internet Key Exchange Protocol version 2 (IKEv2) VPNs, Windows 10 Mobile supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice. These plugins work like apps and can be installed directly from the Microsoft Store using your MDM system (see App Management).
 
 You can create and provision multiple VPN connection profiles and then deploy them to managed devices that run Windows 10 Mobile.
 To create a VPN profile that uses native Windows 10 Mobile VPN protocols (such as IKEv2, PPTP, or L2TP), you can use the following settings:
 
 -   **VPN Servers** The VPN server for the VPN profile
 -   **Routing policy type** The type of routing policy the VPN profile uses can be set to one of the following values:
-    -   Split tunnel. Only network traffic destined to the intranet goes through the VPN connection
-    -   Force tunnel. All traffic goes through the VPN connection
+    -   Split tunnel: Only network traffic destined to the intranet goes through the VPN connection
+    -   Force tunnel: All traffic goes through the VPN connection
 -   **Tunneling protocol type** The tunneling protocol used for VPN profiles that use native Windows 10 Mobile VPN protocols can be one the following values: PPTP, L2TP, IKEv2, Automatic
 -   **User authentication method** The user authentication method for the VPN connection can have a value of EAP or MSChapv2 (Windows 10 Mobile does not support the value MSChapv2 for IKEv2-based VPN connections)
 -   **Machine certificate** The machine certificate used for IKEv2-based VPN connections
@@ -437,10 +437,10 @@ To create a VPN profile that uses native Windows 10 Mobile VPN protocols (such a
 Microsoft Store–based VPN plugins for the VPN connection allow you to create a VPN plugin profile with the following attributes:
 
 -   **VPN server** A comma-separated list of VPN servers; you can specify the servers with a URL, fully qualified host name, or IP address
--   **Custom configuration** An HTML-encoded XML blob for SSL–VPN plugin–specific configuration information (e.g., authentication information) that the plugin provider requires
+-   **Custom configuration** An HTML-encoded XML blob for SSL–VPN plugin–specific configuration information (such as authentication information) that the plugin provider requires
 -   **Microsoft Store VPN plugin family name** Specifies the Microsoft Store package family name for the Microsoft Store–based VPN plugin
 
-In addition, you can specify per VPN Profile:
+In addition, you can specify per VPN profile:
 
 -   **App Trigger List** You can add an App Trigger List to every VPN profile. The app specified in the list automatically triggers the VPN profile for intranet connectivity. When multiple VPN profiles are needed to serve multiple apps, the operating system automatically establishes the VPN connection when the user switches between apps. Only one VPN connection at a time can be active. In the event the device drops the VPN connection, Windows 10 Mobile automatically reconnects to the VPN without user intervention.
 -   **Route List** List of routes to be added to the routing table for the VPN interface. This is required for split tunneling cases where the VPN server site has more subnets that the default subnet based on the IP assigned to the interface.
@@ -449,7 +449,7 @@ In addition, you can specify per VPN Profile:
 -   **DNS suffixes** A comma-separated list of DNS suffixes for the VPN connection. Any DNS suffixes in this list are automatically added to Suffix Search List.
 -   **Proxy** Any post-connection proxy support required for the VPN connection; including Proxy server name and Automatic proxy configuration URL. Specifies the URL for automatically retrieving proxy server settings.
 -   **Always on connection** Windows 10 Mobile features always-on VPN, which makes it possible to automatically start a VPN connection when a user signs in. The VPN stays connected until the user manually disconnects it.
--   **Remember credentials** Whether the VPN connection caches credentials.
+-   **Remember credentials** Specifies whether the VPN connection caches credentials.
 -   **Trusted network detection** A comma-separated list of trusted networks that causes the VPN not to connect when the intranet is directly accessible (Wi-Fi).
 -   **Enterprise Data Protection Mode ID** Enterprise ID, which is an optional field that allows the VPN to automatically trigger based on an app defined with a Windows Information Protection policy.
 -   **Device Compliance** To set up Azure AD-based Conditional Access for VPN and allow that SSO with a certificate different from the VPN Authentication certificate for Kerberos Authentication in the case of Device Compliance.
@@ -460,12 +460,12 @@ In addition, you can specify per VPN Profile:
     -   No other VPN profiles can be connected or modified.
 -   **ProfileXML** In case your MDM system does not support all the VPN settings you want to configure, you can create an XML file that defines the VPN profile you want to apply to all the fields you require.
 
-For more details about VPN profiles, see the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)
+For more details about VPN profiles, see [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx).
 
-Some device-wide settings for managing VPN connections can help you manage VPNs over cellular data connections, which in turn helps reduce costs associated with roaming or data plan charges.
--   **Allow VPN** Whether users can change VPN settings
--   **Allow VPN Over Cellular** Whether users can establish VPN connections over cellular networks
--   **Allow VPN Over Cellular when Roaming** Whether users can establish VPN connections over cellular networks when roaming
+Some device-wide settings for managing VPN connections can help you manage VPNs over cellular data connections, which in turn helps reduce costs associated with roaming or data plan charges:
+-   **Allow VPN** Specifies whether users can change VPN settings
+-   **Allow VPN Over Cellular** Specifies whether users can establish VPN connections over cellular networks
+-   **Allow VPN Over Cellular when Roaming** Specifies whether users can establish VPN connections over cellular networks when roaming
 
 ### <a href="" id="storage-management"></a>Storage management
 
@@ -479,16 +479,16 @@ The SD card is uniquely paired with a device. No other devices can see the apps 
 
 You can disable the **Allow Storage Card** setting if you wish to prevent users from using SD cards entirely. If you choose not to encrypt storage, you can help protect your corporate apps and data by using the Restrict app data to the system volume and Restrict apps to the system volume settings. These help ensure that users cannot copy your apps and data to SD cards.
 
-Here is a list of MDM storage management settings that Windows 10 Mobile provides.
+Here is a list of MDM storage management settings that Windows 10 Mobile provides:
 
--   **Allow Storage Card** Whether the use of storage cards for data storage is allowed
--   **Require Device Encryption** Whether internal storage is encrypted (when a device is encrypted, you cannot use a policy to turn encryption off)
+-   **Allow Storage Card** Specifies whether the use of storage cards for data storage is allowed
+-   **Require Device Encryption** Specifies whether internal storage is encrypted (when a device is encrypted, you cannot use a policy to turn encryption off)
 -   **Encryption method** Specifies the BitLocker drive encryption method and cipher strength; can be one of the following values:
     -   AES-Cipher Block Chaining (CBC) 128-bit
     -   AES-CBC 256-bit
     -   XEX-based tweaked-codebook mode with cipher text stealing (XTS)–AES (XTS-AES) 128-bit (this is the default)
     -   XTS-AES-256-bit
--   **Allow Federal Information Processing Standard (FIPS) algorithm policy** Whether the device allows or disallows the FIPS algorithm policy
+-   **Allow Federal Information Processing Standard (FIPS) algorithm policy** Specifies whether the device allows or disallows the FIPS algorithm policy
 -   **SSL cipher suites** Specifies a list of the allowed cryptographic cipher algorithms for SSL connections
 -   **Restrict app data to the system volume** Specifies whether app data is restricted to the system drive
 -   **Restrict apps to the system volume** Specifies whether apps are restricted to the system drive
@@ -533,7 +533,7 @@ To install acquired Microsoft Store or LOB apps offline on a Windows 10 Mobile d
 
 Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 Mobile Enterprise edition.
 
-Learn more about the [Microsoft Store for Business](/microsoft-store/index).
+For more information, see [Microsoft Store for Business](/microsoft-store/index).
 
 ### <a href="" id="managing-apps"></a>Managing apps
 
@@ -543,21 +543,21 @@ IT administrators can control which apps are allowed to be installed on Windows 
 
 Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
 
-For more details, see [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019(v=vs.85).aspx).
+For more information, see [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019(v=vs.85).aspx).
 
-In addition to controlling which apps are allowed, IT professionals can also implement additional app management settings on Windows 10 Mobile, using an MDM.
+In addition to controlling which apps are allowed, IT professionals can also implement additional app management settings on Windows 10 Mobile, using an MDM:
 
--   **Allow All Trusted Apps** Whether users can sideload apps on the device.
--   **Allow App Store Auto Update** Whether automatic updates of apps from Microsoft Store are allowed.
--   **Allow Developer Unlock** Whether developer unlock is allowed.
--   **Allow Shared User App Data** Whether multiple users of the same app can share data.
--   **Allow Store** Whether Microsoft Store app is allowed to run. This completely blocks the user from installing apps from the Store, but still allows app distribution through an MDM system.
+-   **Allow All Trusted Apps** Specifies whether users can sideload apps on the device.
+-   **Allow App Store Auto Update** Specifies whether automatic updates of apps from Microsoft Store are allowed.
+-   **Allow Developer Unlock** Specifies whether developer unlock is allowed.
+-   **Allow Shared User App Data** Specifies whether multiple users of the same app can share data.
+-   **Allow Store** Specifies whether Microsoft Store app is allowed to run. This completely blocks the user from installing apps from the Store, but still allows app distribution through an MDM system.
 -   **Application Restrictions** An XML blob that defines the app restrictions for a device. The XML blob can contain an app allow or deny list. You can allow or deny apps based on their app ID or publisher. See AppLocker above.
 -   **Disable Store Originated Apps** Disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded before the policy was applied.
--   **Require Private Store Only** Whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
--   **Restrict App Data to System Volume** Whether app data is allowed only on the system drive or can be stored on an SD card.
--   **Restrict App to System Volume** Whether app installation is allowed only to the system drive or can be installed on an SD card.
--   **Start screen layout** An XML blob used to configure the Start screen (see [Start layout for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/mt171093(v=vs.85).aspx) for more information).
+-   **Require Private Store Only** Specifies whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
+-   **Restrict App Data to System Volume** Specifies whether app data is allowed only on the system drive or can be stored on an SD card.
+-   **Restrict App to System Volume** Specifies whether app installation is allowed only to the system drive or can be installed on an SD card.
+-   **Start screen layout** An XML blob used to configure the Start screen (for more information, see [Start layout for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/mt171093(v=vs.85).aspx)).
 
 Find more details on application management options in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#ApplicationManagement_AllowAllTrustedApps)
 
@@ -592,16 +592,16 @@ The following table lists the settings that can be configured for Windows Inform
 -   **Allow user decryption** Allows the user to decrypt files. If not allowed, the user is not able to remove protection from enterprise content through the OS or app user experience.
 -   **Require protection under lock configuration** Specifies whether the protection under lock feature (also known as encrypt under PIN) should be configured.
 -   **Data recovery certificate*** Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through MDM instead of Group Policy.
--   **Revoke on unenroll** Whether to revoke the information protection keys when a device unenrolls from the management service.
+-   **Revoke on unenroll** Specifies whether to revoke the information protection keys when a device unenrolls from the management service.
 -   **RMS template ID for information protection** Allows the IT admin to configure the details about who has access to RMS-protected files and for how long.
 -   **Allow Azure RMS for information protection** Specifies whether to allow Azure RMS encryption for information protection.
--   **Show information protection icons** Determines whether overlays are added to icons for information protection secured files in web browser and enterprise-only app tiles in the Start menu.
+-   **Show information protection icons** Determines whether overlays are added to icons for information protection secured files in web browser and enterprise-only app tiles in the **Start** menu.
 -   **Status** A read-only bit mask that indicates the current state of information protection on the device. The MDM service can use this value to determine the current overall state of information protection.
 -   **Enterprise IP Range*** The enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers is considered part of the enterprise and protected.
 -   **Enterprise Network Domain Names*** the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device is considered enterprise data and is protected.
 -   **Enterprise Cloud Resources** A list of Enterprise resource domains hosted in the cloud that need to be protected.
 
-(* Mandatory Windows Information Protection policies. To make Windows Information Protection functional, AppLocker and network isolation settings - specifically Enterprise IP Range and Enterprise Network Domain Names –  must be configured. This defines the source of all corporate data that needs protection and also ensures data written to these locations won’t be encrypted by the user’s encryption key so that others in the company can access it.)
+* Mandatory Windows Information Protection policies. To make Windows Information Protection functional, AppLocker and network isolation settings (specifically Enterprise IP Range and Enterprise Network Domain Names) must be configured. This defines the source of all corporate data that needs protection and also ensures data written to these locations won’t be encrypted by the user’s encryption key so that others in the company can access it.
 
 For more information on Windows Information Protection, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634(v=vs.85).aspx) and the following in-depth article series [Protect your enterprise data using Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
@@ -609,18 +609,18 @@ For more information on Windows Information Protection, see the [EnterpriseDataP
 
 *Applies to: Corporate devices*
 
-On corporate devices, some user activities expose corporate data to unnecessary risk. For example, users might create a screen capture of corporate information out of an internal LOB app. To mitigate the risk, you can restrict the Windows 10 Mobile user experience to help protect corporate data and prevent data leaks. The following demonstrates those capabilities that can be used to help prevent data leaks.
+On corporate devices, some user activities expose corporate data to unnecessary risk. For example, users might create a screen capture of corporate information out of an internal LOB app. To mitigate the risk, you can restrict the Windows 10 Mobile user experience to help protect corporate data and prevent data leaks. The following demonstrates those capabilities that can be used to help prevent data leaks:
 
--   **Allow copy and paste** Whether users can copy and paste content
--   **Allow Cortana** Whether users can use Cortana on the device (where available)
--   **Allow device discovery** Whether the device discovery user experience is available on the lock screen (for example, controlling whether a device could discover a projector [or other devices] when the lock screen is displayed)
--   **Allow input personalization** Whether personally identifiable information can leave the device or be saved locally (e.g., Cortana learning, inking, dictation)
--   **Allow manual MDM unenrollment** Whether users are allowed to delete the workplace account (i.e., unenroll the device from the MDM system)
--   **Allow screen capture** Whether users are allowed to capture screenshots on the device
+-   **Allow copy and paste** Specifies whether users can copy and paste content
+-   **Allow Cortana** Specifies whether users can use Cortana on the device (where available)
+-   **Allow device discovery** Specifies whether the device discovery user experience is available on the lock screen (for example, controlling whether a device could discover a projector [or other devices] when the lock screen is displayed)
+-   **Allow input personalization** Specifies whether personally identifiable information can leave the device or be saved locally (e.g., Cortana learning, inking, dictation)
+-   **Allow manual MDM unenrollment** Specifies whether users are allowed to delete the workplace account (i.e., unenroll the device from the MDM system)
+-   **Allow screen capture** Specifies whether users are allowed to capture screenshots on the device
 -   **Allow SIM error dialog prompt** Specifies whether to display a dialog prompt when no SIM card is installed
--   **Allow sync my settings** Whether the user experience settings are synchronized between devices (works with Microsoft accounts only)
--   **Allow toasts notifications above lock screen** Whether users are able to view toast notification on the device lock screen
--   **Allow voice recording** Whether users are allowed to perform voice recordings
+-   **Allow sync my settings** Specifies whether the user experience settings are synchronized between devices (works with Microsoft accounts only)
+-   **Allow toasts notifications above lock screen** Specifies whether users are able to view toast notification on the device lock screen
+-   **Allow voice recording** Specifies whether users are allowed to perform voice recordings
 -   **Do Not Show Feedback Notifications** Prevents devices from showing feedback questions from Microsoft
 -   **Allow Task Switcher** Allows or disallows task switching on the device to prevent visibility of App screen tombstones in the task switcher
 -   **Enable Offline Maps Auto Update** Disables the automatic download and update of map data
@@ -634,19 +634,19 @@ You can find more details on the experience settings in Policy CSP.
 
 MDM systems also give you the ability to manage Microsoft Edge on mobile devices. Microsoft Edge is the only browser available on Windows 10 Mobile devices. It differs slightly from the desktop version as it does not support Flash or Extensions. Edge is also an excellent PDF viewer as it can be managed and integrates with Windows Information Protection.
 
-The following settings for Microsoft Edge on Windows 10 Mobile can be managed.
+The following settings for Microsoft Edge on Windows 10 Mobile can be managed:
 
--   **Allow Browser** Whether users can run Microsoft Edge on the device
--   **Allow Do Not Track headers** Whether Do Not Track headers are allowed
--   **Allow InPrivate** Whether users can use InPrivate browsing
--   **Allow Password Manager** Whether users can use Password Manager to save and manage passwords locally
--   **Allow Search Suggestions in Address Bar** Whether search suggestions are shown in the address bar
--   **Allow Windows Defender SmartScreen** Whether Windows Defender SmartScreen is enabled
--   **Cookies**	Whether cookies are allowed
+-   **Allow Browser** Specifies whether users can run Microsoft Edge on the device
+-   **Allow Do Not Track headers** Specifies whether Do Not Track headers are allowed
+-   **Allow InPrivate** Specifies whether users can use InPrivate browsing
+-   **Allow Password Manager** Specifies whether users can use Password Manager to save and manage passwords locally
+-   **Allow Search Suggestions in Address Bar** Specifies whether search suggestions are shown in the address bar
+-   **Allow Windows Defender SmartScreen** Specifies whether Windows Defender SmartScreen is enabled
+-   **Cookies**	Specifies whether cookies are allowed
 -   **Favorites** Configure Favorite URLs
 -   **First Run URL** The URL to open when a user launches Microsoft Edge for the first time
--   **Prevent Windows Defender SmartScreen Prompt Override** Whether users can override the Windows Defender SmartScreen warnings for URLs
--   **Prevent Smart Screen Prompt Override for Files** Whether users can override the Windows Defender SmartScreen warnings for files
+-   **Prevent Windows Defender SmartScreen Prompt Override** Specifies whether users can override the Windows Defender SmartScreen warnings for URLs
+-   **Prevent Smart Screen Prompt Override for Files** Specifies whether users can override the Windows Defender SmartScreen warnings for files
 
 ## Manage
 
@@ -748,7 +748,7 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 Microsoft publishes new feature updates for Windows 10 and Windows 10 Mobile on a regular basis. The [Windows release information page](https://technet.microsoft.com/windows/release-info) is designed to help you determine if your devices are current with the latest Windows 10 feature and quality updates. The release information published on this page, covers both Windows 10 for PCs and Windows 10 Mobile. In addition, the [Windows update history page](https://windows.microsoft.com/en-us/windows-10/update-history-windows-10) helps you understand what these updates are about.
 
 > [!NOTE]
-> We invite IT Professionals to participate in the Windows Insider Program to test updates before they are officially released to make Windows 10 Mobile even better. If you find any issues, please send us feedback via the Feedback Hub
+> We invite IT Professionals to participate in the Windows Insider Program to test updates before they are officially released to make Windows 10 Mobile even better. If you find any issues, please send us feedback by using the Feedback Hub.
 
 **Windows as a Service**
 
@@ -756,7 +756,7 @@ Microsoft publishes new feature updates for Windows 10 and Windows 10 Mobile on 
 
 Microsoft created a new way to deliver and install updates to Windows 10 Mobile directly to devices without Mobile Operator approval. This capability helps to simplify update deployments and ongoing management, broadens the base of employees who can be kept current with the latest Windows features and experiences, and lowers total cost of ownership for organizations who no longer have to manage updates to keep devices secure.
 
-Update availability depends on what servicing option you choose for the device. These servicing options are outlined in the chart below:
+Update availability depends on what servicing option you choose for the device. These servicing options are outlined in the following chart.
 
 <table>
 <colgroup>
@@ -798,7 +798,7 @@ Update availability depends on what servicing option you choose for the device. 
 </tbody>
 </table>
 
-**Enterprise Edition**
+**Enterprise edition**
 
 *Applies to: Corporate devices*
 
@@ -813,11 +813,12 @@ To learn more about diagnostic, see [Configure Windows diagnostic data in your o
 
 To activate Windows 10 Mobile Enterprise, use your MDM system or a provisioning package to inject the Windows 10 Enterprise license on a Windows 10 Mobile device. Licenses can be obtained from the Volume Licensing portal. For testing purposes, you can obtain a licensing file from the MSDN download center. A valid MSDN subscription is required.
 
-Details on updating a device to Enterprise edition with [WindowsLicensing CSP](https://msdn.microsoft.com/library/windows/hardware/dn904983(v=vs.85).aspx)
+For more information on updating a device to Enterprise edition, see [WindowsLicensing CSP](https://msdn.microsoft.com/library/windows/hardware/dn904983(v=vs.85).aspx).
 
->**Recommendation:** Microsoft recommends using Enterprise edition only on corporate devices. Once a device has been upgraded, it cannot be downgraded. Even a device wipe or reset will not remove the enterprise license from personal devices.
+> [!NOTE]
+> We recommend using Enterprise edition only on corporate devices. Once a device has been upgraded, it cannot be downgraded. Even a device wipe or reset will not remove the enterprise license from personal devices.
 
-**Deferring and Approving Updates with MDM**
+**Deferring and approving updates with MDM**
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -888,7 +889,7 @@ Pause Feature Updates for up to 35 days</td>
 </tbody>
 </table>
 
-**Managing the Update Experience**
+**Managing the update experience**
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -902,7 +903,7 @@ This can include:
 -   Automatically downloading and restarting devices without user interaction.
 -   Turning off automatic updates. This option should be used only for systems under regulatory compliance. The device does not receive any updates.
 
-In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, etc.) or on a specific what [day of the week](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, etc.).
+In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, and so on) or on a specific [day of the week](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, and so on).
 
 **Managing the source of updates with MDM**
 
@@ -910,9 +911,9 @@ In addition, in version 1607, you can configure when the update is applied to th
 
 Although Windows 10 Enterprise enables IT administrators to defer installation of new updates from Windows Update, enterprises may also want additional control over update processes. With this in mind, Microsoft created Windows Update for Business. Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates. If you are using a MDM system, the use of Windows Update for Business is not a requirement, as you can manage these features from your MDM system.
 
-Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
+For more information, see [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
 
-IT administrators can specify where the device gets updates from with AllowUpdateService. This could be Microsoft Update, Windows Update for Business, or Windows Server Update Services (WSUS.
+IT administrators can specify where the device gets updates from with AllowUpdateService. This could be Microsoft Update, Windows Update for Business, or Windows Server Update Services (WSUS).
 
 **Managing Updates with Windows Update Server**
 
@@ -920,13 +921,13 @@ IT administrators can specify where the device gets updates from with AllowUpdat
 
 When using WSUS, set **UpdateServiceUrl** to allow the device to check for updates from a WSUS server instead of Windows Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet, usually handheld devices used for task completion, or other Windows IoT devices.
 
-Learn more about [managing updates with Windows Server Update Services (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
+For more information, see [managing updates with Windows Server Update Services (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx).
 
 **Querying the device update status**
 
 *Applies to: Personal and corporate devices*
 
-In addition to configuring how Windows 10 Mobile Enterprise obtains updates, the MDM administrator can query devices for Windows 10 Mobile update information so that update status can be checked against a list of approved updates.
+In addition to configuring how Windows 10 Mobile Enterprise obtains updates, the MDM administrator can query devices for Windows 10 Mobile update information so that update status can be checked against a list of approved updates:
 
 The device update status query provides an overview of:
 -   Installed updates: A list of updates that are installed on the device.
@@ -944,7 +945,7 @@ Device Health Attestation (DHA) is another line of defense that is new to Window
 
 Windows 10 Mobile makes it easy to integrate with Microsoft Intune or third-party MDM solutions for an overall view of device health and compliance. Using these solutions together, you can detect jailbroken devices, monitor device compliance, generate compliance reports, alert users or administrators to issues, initiate corrective action, and manage conditional access to resources like Office 365 or VPN.
 
-The first version of Device Health Attestation (DHA) was released in June 2015 for Windows 10 devices that supported TPM 2.0 and operated in an enterprise cloud-based topology. In the Windows 10 anniversary release, Device Health Attestation (DHA) capabilities are extended to legacy devices that support TPM 1.2, hybrid, and on-premises environments that have access to the Internet or operate in an air-gapped network.
+The first version of DHA was released in June 2015 for Windows 10 devices that supported TPM 2.0 and operated in an enterprise cloud-based topology. In the Windows 10 anniversary release, DHA capabilities are extended to legacy devices that support TPM 1.2, hybrid, and on-premises environments that have access to the Internet or operate in an air-gapped network.
 
 The health attestation feature is based on Open Mobile Alliance (OMA) standards. IT managers can use DHA to validate devices that:
 -   Run Windows 10 operating system (mobile phone or PC)
@@ -962,23 +963,23 @@ DHA-enabled device management solutions help IT managers create a unified securi
 -   Simply alert the user or the admin to fix the issue
 
 > [!NOTE]
-> Windows Device Health Attestation Service can be used for conditional access scenarios which may be enabled by Mobile Device Management solutions (e.g.: Microsoft Intune) and other types of management systems (e.g.: SCCM) purchased separately.
+> Windows Device Health Attestation Service can be used for conditional access scenarios that may be enabled by Mobile Device Management solutions (such as Microsoft Intune) and other types of management systems (such as SCCM) purchased separately.
 
 For more information about health attestation in Windows 10 Mobile, see the [Windows 10 Mobile security guide](/windows/device-security/windows-10-mobile-security-guide).
 
-This is a list of attributes that are supported by DHA and can trigger the corrective actions mentioned above.
+This is a list of attributes that are supported by DHA and can trigger the corrective actions mentioned above:
 -   **Attestation Identity Key (AIK) present** Indicates that an AIK is present (i.e., the device can be trusted more than a device without an AIK).
--   **Data Execution Prevention (DEP) enabled** Whether a DEP policy is enabled for the device, indicating that the device can be trusted more than a device without a DEP policy.
+-   **Data Execution Prevention (DEP) enabled** Specifies whether a DEP policy is enabled for the device, indicating that the device can be trusted more than a device without a DEP policy.
 -   **BitLocker status** BitLocker helps protect the storage on the device. A device with BitLocker can be trusted more than a device without BitLocker.
--   **Secure Boot enabled** Whether Secure Boot is enabled on the device. A device with Secure Boot enabled can be trusted more than a device without Secure Boot. Secure Boot is always enabled on Windows 10 Mobile devices.
--   **Code integrity enabled** Whether the code integrity of a drive or system file is validated each time it’s loaded into memory. A device with code integrity enabled can be trusted more than a device without code integrity.
--   **Safe mode** Whether Windows is running in safe mode. A device that is running Windows in safe mode isn’t as trustworthy as a device running in standard mode.
--   **Boot debug enabled** Whether the device has boot debug enabled. A device that has boot debug enabled is less secure (trusted) than a device without boot debug enabled.
--   **OS kernel debugging enabled** Whether the device has operating system kernel debugging enabled. A device that has operating system kernel debugging enabled is less secure (trusted) than a device with operating system kernel debugging disabled.
--   **Test signing enabled** Whether test signing is disabled. A device that has test signing disabled is more trustworthy than a device that has test signing enabled.
+-   **Secure Boot enabled** Specifies whether Secure Boot is enabled on the device. A device with Secure Boot enabled can be trusted more than a device without Secure Boot. Secure Boot is always enabled on Windows 10 Mobile devices.
+-   **Code integrity enabled** Specifies whether the code integrity of a drive or system file is validated each time it’s loaded into memory. A device with code integrity enabled can be trusted more than a device without code integrity.
+-   **Safe mode** Specifies whether Windows is running in safe mode. A device that is running Windows in safe mode isn’t as trustworthy as a device running in standard mode.
+-   **Boot debug enabled** Specifies whether the device has boot debug enabled. A device that has boot debug enabled is less secure (trusted) than a device without boot debug enabled.
+-   **OS kernel debugging enabled** Specifies whether the device has operating system kernel debugging enabled. A device that has operating system kernel debugging enabled is less secure (trusted) than a device with operating system kernel debugging disabled.
+-   **Test signing enabled** Specifies whether test signing is disabled. A device that has test signing disabled is more trustworthy than a device that has test signing enabled.
 -   **Boot Manager Version** The version of the Boot Manager running on the device. The HAS can check this version to determine whether the most current Boot Manager is running, which is more secure (trusted).
 -   **Code integrity version** Specifies the version of code that is performing integrity checks during the boot sequence. The HAS can check this version to determine whether the most current version of code is running, which is more secure (trusted).
--   **Secure Boot Configuration Policy (SBCP) present** Whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
+-   **Secure Boot Configuration Policy (SBCP) present** Specifies whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
 -   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
 
 **Example scenario**
@@ -997,7 +998,7 @@ Here is what occurs when a smartphone is turned on:
 
 *Applies to: Corporate devices with Enterprise edition*
 
-Device inventory helps organizations better manage devices because it provides in-depth information about those devices. MDM systems collect inventory information remotely and provide reporting capabilities to analyze device resources and information. This data informs IT about the current hardware and software resources of the device (e.g., installed updates).
+Device inventory helps organizations better manage devices because it provides in-depth information about those devices. MDM systems collect inventory information remotely and provide reporting capabilities to analyze device resources and information. This data informs IT about the current hardware and software resources of the device (such as installed updates).
 
 The following list shows examples of the Windows 10 Mobile software and hardware information that a device inventory provides. In addition to this information, the MDM system can read any of the configuration settings described in this guide:
 
@@ -1038,7 +1039,7 @@ For more information, see [Configure Windows diagnostic data in Your organizatio
 *Applies to: Personal and corporate devices*
 
 The remote assistance features in Windows 10 Mobile help resolve issues that users might encounter even when the help desk does not have physical access to the device. These features include:
--   **Remote lock** Support personnel can remotely lock a device. This ability can help when a user loses his or her mobile device and can retrieve it, but not immediately (e.g., leaving the device at a customer site).
+-   **Remote lock** Support personnel can remotely lock a device. This ability can help when a user loses his or her mobile device and can retrieve it, but not immediately (such as leaving the device at a customer site).
 -   **Remote PIN reset** Support personnel can remotely reset the PIN, which helps when users forget their PIN and are unable to access their device. No corporate or user data is lost and users are able to quickly gain access to their devices.
 -   **Remote ring** Support personnel can remotely make devices ring. This ability can help users locate misplaced devices and, in conjunction with the Remote Lock feature, help ensure that unauthorized users are unable to access the device if they find it.
 -   **Remote find** Support personnel can remotely locate a device on a map, which helps identify the geographic location of the device. Remote find parameters can be configured via phone settings (see table below). The remote find feature returns the most current latitude, longitude, and altitude of the device.
@@ -1050,7 +1051,8 @@ The remote assistance features in Windows 10 Mobile help resolve issues that use
 
 These remote management features help organizations reduce the IT effort required to manage devices. They also help users quickly regain use of their device should they misplace it or forget the device password.
 
->**Remote control software** Microsoft does not provide build-in remote control software, but works with partners to deliver these capabilities and services. With version 1607, remote assistant and control applications are available in the Microsoft Store.
+> [!NOTE]
+> Microsoft does not provide build-in remote control software, but works with partners to deliver these capabilities and services. With version 1607, remote assistant and control applications are available in the Microsoft Store.
 
 ## Retire
 
@@ -1072,8 +1074,8 @@ A better option than wiping the entire device is to use Windows Information Prot
 **Corporate device:** You can certainly remotely expire the user’s encryption key in case of device theft, but please remember that also makes the encrypted data on other Windows devices unreadable for the user. A better approach for retiring a discarded or lost device is to execute a full device wipe. The help desk or device users can initiate a full device wipe. When the wipe is complete, Windows 10 Mobile returns the device to a clean state and restarts the OOBE process.
 
 **Settings for personal or corporate device retirement**
--   **Allow manual MDM unenrollment** Whether users are allowed to delete the workplace account (i.e., unenroll the device from the MDM system)
--   **Allow user to reset phone** Whether users are allowed to use Settings or hardware key combinations to return the device to factory defaults
+-   **Allow manual MDM unenrollment** Specifies whether users are allowed to delete the workplace account (unenroll the device from the MDM system)
+-   **Allow user to reset phone** Specifies whether users are allowed to use Settings or hardware key combinations to return the device to factory defaults
 
 
 ## Related topics
