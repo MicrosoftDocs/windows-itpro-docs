@@ -234,7 +234,7 @@ Enforcing what accounts employees can use on a corporate device is important for
 
 Email and associated calendar and contacts are the primary apps that users access on their smartphones. Configuring them properly is key to the success of any mobility program. In both corporate and personal device deployment scenarios, these email account settings get deployed immediately after enrollment. Using your corporate MDM system, you can define corporate email account profiles, deploy them to devices, and manage inbox policies.
 
--   Most corporate email systems leverage **Exchange ActiveSync (EAS)**. For more details on configuring EAS email profiles, see the [ActiveSync CSP](https://msdn.microsoft.com/library/windows/hardware/dn920017(v=vs.85).aspx).
+-   Most corporate email systems leverage **Exchange ActiveSync (EAS)**. For more details on configuring EAS email profiles, see the [Exchange ActiveSync CSP](https://msdn.microsoft.com/library/windows/hardware/dn920017(v=vs.85).aspx).
 -   **Simple Mail Transfer Protocol (SMTP)** email accounts can also be configured with your MDM system. For more detailed information on SMTP email profile configuration, see the [Email CSP](https://msdn.microsoft.com/library/windows/hardware/dn904953(v=vs.85).aspx). Microsoft Intune does not currently support the creation of an SMTP email profile.
 
 ### <a href="" id="device-lock-restrictions"></a>Device Lock restrictions
@@ -248,7 +248,7 @@ It’s common practice to protect a device that contains corporate information w
 To use Windows Hello with biometrics, specialized hardware, including fingerprint reader, illuminated IR sensor, or other biometric sensors is required. Hardware-based protection of the Windows Hello credentials requires TPM 1.2 or greater; if no TPM exists or is configured, credentials/keys protection will be software-based.
 Companion devices must be paired with a Windows 10 PC using Bluetooth. To use a Windows Hello companion device that enables the user to roam with their Windows Hello credentials requires the Pro or Enterprise edition of Windows 10.
 
-Most of the device lock restriction policies have been available through ActiveSync and MDM since Windows Phone 7 and are still available today for Windows 10 Mobile. If you are deploying Windows 10 devices in a personal device deployment scenario, these settings would apply:
+Most of the device lock restriction policies have been available through Exchange ActiveSync and MDM since Windows Phone 7 and are still available today for Windows 10 Mobile. If you are deploying Windows 10 devices in a personal device deployment scenario, these settings would apply:
 
 -   **Device Password Enabled** Specifies whether users are required to use a device lock password.
 -   **Allow Simple Device Password** Specifies whether users can use a simple password (for example, 1111 or 1234).
@@ -521,7 +521,7 @@ Azure AD authenticated managers have access to Microsoft Store for Business func
 Microsoft Store for Business supports app distribution under two licensing models: online and offline.
 
 The online model (store-managed) is the recommended method, and supports both personal device and corporate device management scenarios. To install online apps, the device must have Internet access at the time of installation. On corporate devices, an employee can be authenticated with an Azure AD account to install online apps. On personal devices, an employee must register their device with Azure AD to be able to install corporate licensed online apps.
-Corporate device users can find company licensed apps in the Store app on their phone in a private catalog. When an MDM system is associated with the Store for Business, IT administrators can present Store apps within the MDM system app catalog where users can find and install their desired apps. IT administrators can also push required apps directly to employee devices without the employee’s intervention.
+Corporate device users can find company licensed apps in the Store app on their phone in a private catalog. When an MDM system is associated with the Store for Business, IT administrators can present Store apps within the MDM system App Catalog where users can find and install their desired apps. IT administrators can also push required apps directly to employee devices without the employee’s intervention.
 
 Employees with personal devices can install apps licensed by their organization using the Store app on their device. They can use either the Azure AD account or Microsoft Account within the Store app if they wish to purchase personal apps. If you allow employees with corporate devices to add a secondary Microsoft Account (MSA), the Store app on the device provides a unified method for installing personal and corporate apps.
 
