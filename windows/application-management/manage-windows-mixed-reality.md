@@ -44,8 +44,8 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
     Add-Package
     Dism /Online /add-package /packagepath:(path)
     ```
-    >[!NOTE]
-    >You must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
+    > [!NOTE]
+    > You must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
 
    c. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
