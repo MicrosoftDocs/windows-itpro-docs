@@ -1731,8 +1731,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled fu
 
 Supported values:
 
-- 0 - Disabled (default)
-- 1 - Enabled 
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
@@ -1811,8 +1811,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 
 Supported values:
 
-- 0 - Disabled (default)
-- 1 - Enabled 
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
