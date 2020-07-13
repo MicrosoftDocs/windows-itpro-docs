@@ -101,7 +101,7 @@ The following additional requirements apply for Hybrid Azure AD Join with VPN su
   - Windows 10 1909 + December 10th Cumulative update (KB4530684, OS build 18363.535) or higher  
   - Windows 10 2004 or later 
 - Enable the new “Skip domain connectivity check” toggle in the Hybrid Azure AD Join Autopilot profile.
-- A VPN configuration that can be deployed via Intune that enables the user to manualy establish a VPN connection from the Windows logon screen, or one that automatically establishes a VPN connection as needed.  
+- A VPN configuration that can be deployed via Intune that enables the user to manually establish a VPN connection from the Windows logon screen, or one that automatically establishes a VPN connection as needed.  
 
 The specific VPN configuration required depends on the VPN software and authentication being used.  For third-party (non-Microsoft) VPN solutions, this typically would involve deploying a Win32 app (containing the VPN client software itself as well as any specific connection information, e.g. VPN endpoint host names) via Intune Management Extensions.  Consult your VPN provider's documentation for configuration details specific to that provider.
 
