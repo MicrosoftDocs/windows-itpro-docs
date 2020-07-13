@@ -36,7 +36,7 @@ ms.topic: article
 3. Enter the following queries:
 
 ```kusto
-// Search for machines with High active alerts or Critical CVE public exploit
+// Search for devices with High active alerts or Critical CVE public exploit
 DeviceTvmSoftwareInventoryVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
@@ -49,6 +49,35 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 | order by NumOfVulnerabilities desc
 
 ```
+
+## Define a device's value to the organization
+
+Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation, so devices marked as “high value” will receive more weight.
+
+Device value options:
+
+- Low
+- Normal (Default)
+- High
+
+Examples of devices that should be marked as high value:
+
+- Domain controllers, Active Directory
+- Internet facing devices
+- VIP devices
+- Devices hosting internal/external production services
+
+### Set device value
+
+1. Navigate to any device page, the easiest place is from the device inventory.
+
+2. Select **Device Value** from three dots next to the actions bar at the top of the page.
+    ![Example of the device value dropdown.](images/tvm-device-value-dropdown.png)
+
+<br><br>
+
+3. A flyout will appear with the current device value and what it means. Review the value of the device and choose the one that best fits your device.
+![Example of the device value flyout.](images/tvm-device-value-flyout.png)
 
 ## Related topics
 
