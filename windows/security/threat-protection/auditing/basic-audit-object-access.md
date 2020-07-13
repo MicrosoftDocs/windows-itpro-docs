@@ -28,7 +28,8 @@ If you define this policy setting, you can specify whether to audit successes, a
 
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the Define these policy settings check box and clear the **Success** and **Failure** check boxes.
 
-> **Note:**  You can set a SACL on a file system object using the **Security** tab in that object's **Properties** dialog box.
+> [!NOTE]
+> You can set a SACL on a file system object using the **Security** tab in that object's **Properties** dialog box.
 
 **Default:** No auditing.
 
