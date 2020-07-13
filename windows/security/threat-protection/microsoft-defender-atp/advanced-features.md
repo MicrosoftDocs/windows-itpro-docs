@@ -176,8 +176,7 @@ When you enable Intune integration, Intune will automatically create a classic C
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
 
-
-### Insider risk management integration
+## Insider risk management integration
 
 Enabling Insider risk management integration gives you the ability to share Microsoft Defender ATP alerts and their triage status with insider risk management user alerts. This helps link Microsoft Defender ATP activities with other risky user activities identified by insider risk management security violation policies. 
 
