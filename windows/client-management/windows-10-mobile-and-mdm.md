@@ -654,7 +654,7 @@ In enterprise IT environments, the need for security and cost control must be ba
 
 ### <a href="" id="servicing-options"></a>Servicing options
 
-**A streamlined update process**
+#### A streamlined update process
 
 *Applies to: Corporate and personal devices*
 
@@ -750,7 +750,7 @@ Microsoft publishes new feature updates for Windows 10 and Windows 10 Mobile on 
 > [!NOTE]
 > We invite IT Professionals to participate in the Windows Insider Program to test updates before they are officially released to make Windows 10 Mobile even better. If you find any issues, please send us feedback by using the Feedback Hub.
 
-**Windows as a Service**
+#### Windows as a Service
 
 *Applies to: Corporate and Personal devices*
 
@@ -798,7 +798,7 @@ Update availability depends on what servicing option you choose for the device. 
 </tbody>
 </table>
 
-**Enterprise edition**
+#### Enterprise edition
 
 *Applies to: Corporate devices*
 
@@ -818,7 +818,7 @@ For more information on updating a device to Enterprise edition, see [WindowsLic
 > [!NOTE]
 > We recommend using Enterprise edition only on corporate devices. Once a device has been upgraded, it cannot be downgraded. Even a device wipe or reset will not remove the enterprise license from personal devices.
 
-**Deferring and approving updates with MDM**
+#### Deferring and approving updates with MDM
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -889,7 +889,7 @@ Pause Feature Updates for up to 35 days</td>
 </tbody>
 </table>
 
-**Managing the update experience**
+#### Managing the update experience
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -905,7 +905,7 @@ This can include:
 
 In addition, in version 1607, you can configure when the update is applied to the employee device to ensure updates installs or reboots don’t interrupt business or worker productivity. Update installs and reboots can be scheduled [outside of active hours](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ActiveHoursEnd) (supported values are 0-23, where 0 is 12am, 1 is 1am, and so on) or on a specific [day of the week](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Update_ScheduledInstallDay) (supported values are 0-7,  where 0 is every day, 1  is Sunday, 2 is Monday, and so on).
 
-**Managing the source of updates with MDM**
+#### Managing the source of updates with MDM
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -915,7 +915,7 @@ For more information, see [Windows Update for Business](/windows/deployment/upda
 
 IT administrators can specify where the device gets updates from with AllowUpdateService. This could be Microsoft Update, Windows Update for Business, or Windows Server Update Services (WSUS).
 
-**Managing Updates with Windows Update Server**
+#### Managing Updates with Windows Update Server
 
 *Applies to: Corporate devices with Enterprise edition*
 
@@ -923,7 +923,7 @@ When using WSUS, set **UpdateServiceUrl** to allow the device to check for updat
 
 For more information, see [managing updates with Windows Server Update Services (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx).
 
-**Querying the device update status**
+#### Querying the device update status
 
 *Applies to: Personal and corporate devices*
 
@@ -982,7 +982,7 @@ This is a list of attributes that are supported by DHA and can trigger the corre
 -   **Secure Boot Configuration Policy (SBCP) present** Specifies whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
 -   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
 
-**Example scenario**
+#### Example scenario
 
 Windows 10 mobile has protective measures that work together and integrate with Microsoft Intune or third-party Mobile Device Management (MDM) solutions. IT administrators can monitor and verify compliance to ensure corporate resources are protected end-to–end with the security and trust rooted in the physical hardware of the device.
 
