@@ -29,7 +29,7 @@ The tools in the folder might vary depending on which edition of Windows you are
 
 ![Screenshot of folder of admin tools](images/admin-tools-folder.png)
 
-These tools were included in previous versions of Windows and the associated documentation for each tool should help you use these tools in Windows 10. The following list links to documentation for each tool.
+These tools were included in previous versions of Windows. The associated documentation for each tool should help you use these tools in Windows 10. The following list provides links to documentation for each tool. The tools are located within the folder C:\Windows\System32\ or its subfolders.
 
  
 
@@ -43,6 +43,8 @@ These tools were included in previous versions of Windows and the associated doc
 -   [ODBC Data Sources]( https://go.microsoft.com/fwlink/p/?LinkId=708494)
 -   [Performance Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708495)
 -   [Print Management](https://go.microsoft.com/fwlink/p/?LinkId=708496)
+-   [Recovery Drive](https://support.microsoft.com/help/4026852/windows-create-a-recovery-drive)
+-   [Registry Editor](https://docs.microsoft.com/windows/win32/sysinfo/registry)
 -   [Resource Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708497)
 -   [Services](https://go.microsoft.com/fwlink/p/?LinkId=708498)
 -   [System Configuration](https://go.microsoft.com/fwlink/p/?LinkId=708499)
@@ -59,8 +61,4 @@ These tools were included in previous versions of Windows and the associated doc
 [Diagnostic Data Viewer](https://docs.microsoft.com/windows/privacy/diagnostic-data-viewer-overview)
 
  
-
-
-
-
 

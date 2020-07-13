@@ -29,7 +29,7 @@ Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for ma
 - **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
 
 Each alert provides the following information: 
-- Machine that attempted to access the blocked website
+- Device that attempted to access the blocked website
 - Application or program used to send the web request
 - Malicious URL or URL in the custom indicator list
 - Recommended actions for responders
@@ -37,22 +37,22 @@ Each alert provides the following information:
 ![Image of an alert related to web threat protection](images/wtp-alert.png)
 
 >[!Note]
->To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
+>To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same device each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
 
 ## Inspect website details
 You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular URL or domain with various information, including:
-- Machines that attempted to access website
+- Devices that attempted to access website
 - Incidents and alerts related to the website
 - How frequent the website was seen in events in your organization
 
-![Image of the domain or URL entity details page](images/wtp-website-details.png)
+    ![Image of the domain or URL entity details page](images/wtp-website-details.png)
 
 [Learn more about URL or domain entity pages](investigate-domain.md)
 
-## Inspect the machine
-You can also check the machine that attempted to access a blocked URL. Selecting the name of the machine on the alert page opens a page with comprehensive information about the machine.
+## Inspect the device
+You can also check the device that attempted to access a blocked URL. Selecting the name of the device on the alert page opens a page with comprehensive information about the device.
 
-[Learn more about machine entity pages](investigate-machines.md)
+[Learn more about device entity pages](investigate-machines.md)
 
 ## Web browser and Windows notifications for end users
 

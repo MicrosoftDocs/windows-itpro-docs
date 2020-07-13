@@ -1,7 +1,7 @@
 ---
 title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows 10)
 description: Using WDAC supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

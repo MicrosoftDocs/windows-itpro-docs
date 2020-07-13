@@ -40,7 +40,6 @@ Remove access to the context menus for the task bar	| Enabled
 Clear history of recently opened documents on exit |	Enabled
 Prevent users from customizing their Start Screen |	Enabled
 Prevent users from uninstalling applications from Start |		Enabled
-Remove All Programs list from the Start menu |		Enabled
 Remove Run menu from Start Menu	 |	Enabled
 Disable showing balloon notifications as toast |		Enabled
 Do not allow pinning items in Jump Lists |		Enabled

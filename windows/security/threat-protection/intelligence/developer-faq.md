@@ -31,7 +31,7 @@ Submit the file in question as a software developer. Wait until your submission 
 
 If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
 
-We encourage all software vendors and developers to read about how Microsoft identifies malware and unwanted software. 
+We encourage all software vendors and developers to read about [how Microsoft identifies malware and Potentially Unwanted Applications (PUA)](criteria.md).
 
 ## Why is Microsoft asking for a copy of my program?
 
@@ -43,8 +43,8 @@ It contains instructions to offer a program classified as unwanted software. You
 
 ## Why is the Windows Firewall blocking my program?
 
-This is not related to Windows Defender Antivirus and other Microsoft antimalware. You can find out more about Windows Firewall from the Microsoft Developer Network.
+This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more about Windows Firewall from the Microsoft Developer Network.
 
 ## Why does the Windows Defender SmartScreen say my program is not commonly downloaded?
 
-This is not related to Windows Defender Antivirus and other Microsoft antimalware. You can find out more from the SmartScreen website.
+This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. You can find out more from the [SmartScreen website.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)

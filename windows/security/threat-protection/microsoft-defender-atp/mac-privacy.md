@@ -43,7 +43,7 @@ There are two levels of diagnostic data for Microsoft Defender ATP client softwa
 
 * **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
-By default, both optional and required diagnostic data are sent to Microsoft.
+By default, only required diagnostic data is sent to Microsoft.
 
 ### Cloud delivered protection data
 
@@ -80,7 +80,7 @@ The following fields are considered common for all events:
 | machine_guid            | Unique identifier associated with the device. Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | sense_guid              | Unique identifier associated with the device. Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
-| hostname                | Local machine name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
+| hostname                | Local device name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
 | app_version             | Version of the Microsoft Defender ATP for Mac application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
 | sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
@@ -122,10 +122,25 @@ The following fields are collected:
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
-| edr.early_preview                                   | Whether the machine should run EDR early preview features. |
+| edr.early_preview                                   | Whether the device should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
 | edr.tags                                            | User-defined tags. |
 | features.\[optional feature name\]                  | List of preview features, along with whether they are enabled or not. |
+
+#### Product and service usage data events
+
+**Security intelligence update report**
+
+The following fields are collected:
+
+| Field            | Description |
+| ---------------- | ----------- |
+| from_version     | Original security intelligence version. |
+| to_version       | New security intelligence version. |
+| status           | Status of the update indicating success or failure. |
+| using_proxy      | Whether the update was done over a proxy. |
+| error            | Error code if the update failed. |
+| reason           | Error message if the updated filed. |
 
 #### Product and service performance data events
 
@@ -138,6 +153,7 @@ The following fields are collected:
 | version          | Version of Microsoft Defender ATP for Mac. |
 | instance_id      | Unique identifier generated on kernel extension startup. |
 | trace_level      | Trace level of the kernel extension. |
+| subsystem        | The underlying subsystem used for real-time protection. |
 | ipc.connects     | Number of connection requests received by the kernel extension. |
 | ipc.rejects      | Number of connection requests rejected by the kernel extension. |
 | ipc.connected    | Whether there is any active connection to the kernel extension. |
@@ -259,7 +275,13 @@ The following fields are collected:
 | ipc.kauth.vnode.read_sec         | |
 | ipc.kauth.vnode.write_sec        | |
 | ipc.kauth.vnode.take_own         | |
+| ipc.kauth.vnode.link             | |
+| ipc.kauth.vnode.create           | |
+| ipc.kauth.vnode.move             | |
+| ipc.kauth.vnode.mount            | |
 | ipc.kauth.vnode.denied           | |
+| ipc.kauth.vnode.ackd_before_deadline | |
+| ipc.kauth.vnode.missed_deadline  | |
 | ipc.kauth.file_op.mask           | |
 | ipc.kauth_file_op.open           | |
 | ipc.kauth.file_op.close          | |
@@ -268,6 +290,7 @@ The following fields are collected:
 | ipc.kauth.file_op.link           | |
 | ipc.kauth.file_op.exec           | |
 | ipc.kauth.file_op.remove         | |
+| ipc.kauth.file_op.unmount        | |
 | ipc.kauth.file_op.fork           | |
 | ipc.kauth.file_op.create         | |
 

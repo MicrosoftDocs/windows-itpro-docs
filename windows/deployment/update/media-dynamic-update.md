@@ -8,7 +8,7 @@ itproauthor: jaimeo
 author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -42,7 +42,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 
 ![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
-The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the s. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
 
 |To find this Dynamic Update packages, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
@@ -88,7 +88,7 @@ The main operating system file (install.wim) contains multiple editions of Windo
 
 ### Additional languages and features
 
-You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image. 
+You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
 Optional Components, along with the .Net feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that will result in a larger install.wim. Another option is to install the .Net and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you will have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
@@ -108,7 +108,7 @@ These examples are for illustration only, and therefore lack error handling. The
 The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there is a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they are not read-only.
 
 ```
-function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) } 
+function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) }
 
 Write-Host "$(Get-TS): Starting media refresh"
 
@@ -121,19 +121,19 @@ $LANG = "ja-jp"
 $LANG_FONT_CAPABILITY = "jpan"
 
 # Declare Dynamic Update packages
-$LCU_PATH = “C:\mediaRefresh\packages\LCU.msu”
-$SSU_PATH = “C:\mediaRefresh\packages\SSU_DU.msu”
+$LCU_PATH = "C:\mediaRefresh\packages\LCU.msu"
+$SSU_PATH = "C:\mediaRefresh\packages\SSU_DU.msu"
 $SETUP_DU_PATH = "C:\mediaRefresh\packages\Setup_DU.cab"
-$SAFE_OS_DU_PATH = “C:\mediaRefresh\packages\SafeOS_DU.cab”
-$DOTNET_CU_PATH = "C:\mediaRefresh\packages\DotNet_CU.msu”
+$SAFE_OS_DU_PATH = "C:\mediaRefresh\packages\SafeOS_DU.cab"
+$DOTNET_CU_PATH = "C:\mediaRefresh\packages\DotNet_CU.msu"
 
 # Declare folders for mounted images and temp files
 $WORKING_PATH = "C:\mediaRefresh\temp"
 $MEDIA_OLD_PATH = "C:\mediaRefresh\oldMedia"
 $MEDIA_NEW_PATH = "C:\mediaRefresh\newMedia"
-$MAIN_OS_MOUNT = $WORKING_PATH + "\MainOSMount”
-$WINRE_MOUNT = $WORKING_PATH + "\WinREMount”
-$WINPE_MOUNT = $WORKING_PATH + "\WinPEMount”
+$MAIN_OS_MOUNT = $WORKING_PATH + "\MainOSMount"
+$WINRE_MOUNT = $WORKING_PATH + "\WinREMount"
+$WINPE_MOUNT = $WORKING_PATH + "\WinPEMount"
 
 # Mount the language pack ISO
 Write-Host "$(Get-TS): Mounting LP ISO"
@@ -152,7 +152,7 @@ $OS_LP_PATH = $LP_ISO_DRIVE_LETTER + ":\x64\langpacks\" + "Microsoft-Windows-Cli
 # Mount the Features on Demand ISO
 Write-Host "$(Get-TS): Mounting FOD ISO"
 $FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
-$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\" 
+$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
 
 # Create folders for mounting images and storing temporary files
 New-Item -ItemType directory -Path $WORKING_PATH -ErrorAction Stop | Out-Null
@@ -162,7 +162,7 @@ New-Item -ItemType directory -Path $WINPE_MOUNT -ErrorAction stop | Out-Null
 
 # Keep the original media, make a copy of it for the new, updateed media.
 Write-Host "$(Get-TS): Copying original media to new media path"
-Copy-Item -Path $MEDIA_OLD_PATH“\*” -Destination $MEDIA_NEW_PATH -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $MEDIA_OLD_PATH"\*" -Destination $MEDIA_NEW_PATH -Force -Recurse -ErrorAction stop | Out-Null
 Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContainer -and $_.IsReadOnly } | ForEach-Object { $_.IsReadOnly = $false }
 ```
 ### Update WinRE
@@ -177,14 +177,14 @@ It finishes by cleaning and exporting the image to reduce the image size.
 ```
 # Mount the main operating system, used throughout the script
 Write-Host "$(Get-TS): Mounting main OS"
-Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim” -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
+Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
 
 #
 # update Windows Recovery Environment (WinRE)
 #
-Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim” -Destination $WORKING_PATH"\winre.wim” -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
 Write-Host "$(Get-TS): Mounting WinRE"
-Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim” -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null 
+Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
 # Add servicing stack update
 Write-Host "$(Get-TS): Adding package $SSU_PATH"
@@ -226,10 +226,10 @@ if ( (Test-Path -Path $WINPE_FONT_SUPPORT_PATH) ) {
 # Add TTS support for the new language
 if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
     if ( (Test-Path -Path $WINPE_SPEECH_TTS_LANG_PATH) ) {
-            
+
         Write-Host "$(Get-TS): Adding package $WINPE_SPEECH_TTS_PATH"
         Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_PATH -ErrorAction stop | Out-Null
-            
+
         Write-Host "$(Get-TS): Adding package $WINPE_SPEECH_TTS_LANG_PATH"
         Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_LANG_PATH -ErrorAction stop | Out-Null
     }
@@ -244,35 +244,35 @@ Write-Host "$(Get-TS): Performing image cleanup on WinRE"
 DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
 # Dismount
-Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null 
+Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null
 
 # Export
-Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\winre2.wim”
-Export-WindowsImage -SourceImagePath $WORKING_PATH"\winre.wim” -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\winre2.wim” -ErrorAction stop | Out-Null
-Move-Item -Path $WORKING_PATH"\winre2.wim” -Destination $WORKING_PATH"\winre.wim” -Force -ErrorAction stop | Out-Null
+Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\winre2.wim"
+Export-WindowsImage -SourceImagePath $WORKING_PATH"\winre.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\winre2.wim" -ErrorAction stop | Out-Null
+Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
 ```
 ### Update WinPE
 
 This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
 
 ```
-# 
+#
 # update Windows Preinstallation Environment (WinPE)
-# 
+#
 
 # Get the list of images contained within WinPE
-$WINPE_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH“\sources\boot.wim”
+$WINPE_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim"
 
 Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # update WinPE
     Write-Host "$(Get-TS): Mounting WinPE"
-    Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH“\sources\boot.wim” -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
+    Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
     # Add SSU
     Write-Host "$(Get-TS): Adding package $SSU_PATH"
     Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
-        
+
     # Install lp.cab cab
     Write-Host "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
     Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null  
@@ -287,7 +287,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
             $INDEX = $PACKAGE.PackageName.IndexOf("-Package")
             if ($INDEX -ge 0) {
-                
+
                 $OC_CAB = $PACKAGE.PackageName.Substring(0, $INDEX) + "_" + $LANG + ".cab"
                 if ($WINPE_OC_LANG_CABS.Contains($OC_CAB)) {
                     $OC_CAB_PATH = Join-Path $WINPE_OC_LANG_PATH $OC_CAB
@@ -307,10 +307,10 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     # Add TTS support for the new language
     if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
         if ( (Test-Path -Path $WINPE_SPEECH_TTS_LANG_PATH) ) {
-            
+
             Write-Host "$(Get-TS): Adding package $WINPE_SPEECH_TTS_PATH"
             Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $WINPE_SPEECH_TTS_PATH -ErrorAction stop | Out-Null
-            
+
             Write-Host "$(Get-TS): Adding package $WINPE_SPEECH_TTS_LANG_PATH"
             Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $WINPE_SPEECH_TTS_LANG_PATH -ErrorAction stop | Out-Null
         }
@@ -321,7 +321,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
         Write-Host "$(Get-TS): Updating lang.ini"
         DISM /image:$WINPE_MOUNT /Gen-LangINI /distribution:$WINPE_MOUNT | Out-Null
     }    
-    
+
     # Add latest cumulative update
     Write-Host "$(Get-TS): Adding package $LCU_PATH"
     Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null  
@@ -331,28 +331,28 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
     # Dismount
-    Dismount-WindowsImage -Path $WINPE_MOUNT -Save -ErrorAction stop | Out-Null 
+    Dismount-WindowsImage -Path $WINPE_MOUNT -Save -ErrorAction stop | Out-Null
 
     #Export WinPE
-    Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\boot2.wim”
-    Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH“\sources\boot.wim” -SourceIndex $IMAGE.ImageIndex -DestinationImagePath $WORKING_PATH"\boot2.wim" -ErrorAction stop | Out-Null
+    Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\boot2.wim"
+    Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -SourceIndex $IMAGE.ImageIndex -DestinationImagePath $WORKING_PATH"\boot2.wim" -ErrorAction stop | Out-Null
 
 }
 
-Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH“\sources\boot.wim” -Force -ErrorAction stop | Out-Null
+Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\boot.wim" -Force -ErrorAction stop | Out-Null
 ```
 ### Update the main operating system
 
 For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 
 Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .Net), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
- 
+
 You can install Optional Components, along with the .Net feature, offline, but that will require the device to be restarted. This is why the script installs .Net and Optional Components after cleanup and before export.
 
 ```
-# 
+#
 # update Main OS
-# 
+#
 
 # Add servicing stack update
 Write-Host "$(Get-TS): Adding package $SSU_PATH"
@@ -385,20 +385,20 @@ Add-WindowsCapability -Name "Language.Speech~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOU
 
 # Add latest cumulative update
 Write-Host "$(Get-TS): Adding package $LCU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null 
+Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null
 
 # Copy our updated recovery image from earlier into the main OS
-# Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file 
+# Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file
 # into each edition to enable single instancing
-Copy-Item -Path $WORKING_PATH"\winre.wim” -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim” -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Host "$(Get-TS): Performing image cleanup on main OS"
 DISM /image:$MAIN_OS_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
 #
-# Note: If I wanted to enable additional Optional Components, I'd add these here. 
-# In addition, we'll add .Net 3.5 here as well. Both .Net and Optional Components might require 
+# Note: If I wanted to enable additional Optional Components, I'd add these here.
+# In addition, we'll add .Net 3.5 here as well. Both .Net and Optional Components might require
 # the image to be booted, and thus if we tried to cleanup after installation, it would fail.
 #
 
@@ -413,9 +413,9 @@ Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $DOTNET_CU_PATH -ErrorActio
 Dismount-WindowsImage -Path $MAIN_OS_MOUNT -Save -ErrorAction stop | Out-Null
 
 # Export
-Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\install2.wim”
-Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH“\sources\install.wim” -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\install2.wim” -ErrorAction stop | Out-Null
-Move-Item -Path $WORKING_PATH"\install2.wim” -Destination $MEDIA_NEW_PATH“\sources\install.wim” -Force -ErrorAction stop | Out-Null
+Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\install2.wim"
+Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH"\sources\install.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\install2.wim" -ErrorAction stop | Out-Null
+Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sources\install.wim" -Force -ErrorAction stop | Out-Null
 ```
 
 ### Update remaining media files
@@ -446,8 +446,7 @@ Remove-Item -Path $WORKING_PATH -Recurse -Force -ErrorAction stop | Out-Null
 # Dismount ISO images
 Write-Host "$(Get-TS): Dismounting ISO images"
 Dismount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction stop | Out-Null
-Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Out-Null 
+Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Out-Null
 
 Write-Host "$(Get-TS): Media refresh completed!"
 ```
-

@@ -1,5 +1,5 @@
 ---
-title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
+title: Delivery Optimization for Windows 10 updates
 ms.reviewer: 
 manager: laurawi
 description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
@@ -28,9 +28,43 @@ Windows updates, upgrades, and applications can contain packages with very large
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
+For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
+
 
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
+
+## New in Windows 10, version 2004
+
+- Enterprise network throttling: new settings have been added in Group Policy and MDM to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
+
+  ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
+
+- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+
+- New options for [`Get-DeliveryOptimizationPerfSnap`](waas-delivery-optimization-setup.md#analyze-usage).
+
+- New cmdlets:
+    - `Enable-DeliveryOptimizationVerboseLogs`
+    - `Disable-DeliveryOptimizationVerboseLogs`
+    - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
+    
+- New policy settings:
+    - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
+    - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
+    - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs); replaces DOPercentageMaxDownloadBandwidth
+    - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs)
+    
+- Removed policy settings (if you set these policies in Windows 10, 2004, they will have no effect):
+    - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) or [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
+    - DOMaxUploadBandwidth
+    
+- Support for new types of downloads:
+    - Office installations and updates
+    - Xbox game pass games
+    - MSIX apps (HTTP downloads only)
+
 
 ## Requirements
 
@@ -54,11 +88,16 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Defender definition updates | 1511 |
 | Office Click-to-Run updates | 1709 |
 | Win32 apps for Intune | 1709 |
-| SCCM Express Updates | 1709 + Configuration Manager version 1711 |
+| Office installations and updates | 2004 |
+| Xbox game pass games | 2004 |
+| MSIX apps (HTTP downloads only) | 2004 |
+| Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
 
-<!-- ### Network requirements
+> [!NOTE]
+> Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
 
-{can you share with me what the network requirements are?}-->
+
+
 
 
 
@@ -124,6 +163,30 @@ For the payloads (optional):
 
 **How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?**: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more details see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
 
+**How does Delivery Optimization handle VPNs?**
+Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
+
+If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn)	policy.
+
+If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected via VPN, it can still leverage peer-to-peer with the default of LAN.
+
+With split tunneling, make sure to allow direct access to these endpoints:
+
+Delivery Optimization service endpoint:
+- `https://*.prod.do.dsp.mp.microsoft.com`
+
+Delivery Optimization metadata:
+- `http://emdl.ws.microsoft.com`
+- `http://*.dl.delivery.mp.microsoft.com`
+
+Windows Update and Microsoft Store backend services and Windows Update and Microsoft Store payloads
+
+- `http://*.windowsupdate.com`
+- `https://*.delivery.mp.microsoft.com`
+- `https://*.update.microsoft.com`
+- `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
+
+For more information about remote work if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
 
 ## Troubleshooting
 

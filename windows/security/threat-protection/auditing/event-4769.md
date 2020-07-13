@@ -280,9 +280,9 @@ For 4769(S, F): A Kerberos service ticket was requested.
 
 -   You can track all [4769](event-4769.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
 
--   If you know that **Account Name** should be able to request tickets (should be used) only from a known whitelist of IP addresses, track all **Client Address** values for this **Account Name** in [4769](event-4769.md) events. If **Client Address** is not from your whitelist of IP addresses, generate the alert.
+-   If you know that **Account Name** should be able to request tickets (should be used) only from a known allow list of IP addresses, track all **Client Address** values for this **Account Name** in [4769](event-4769.md) events. If **Client Address** is not from your allow list of IP addresses, generate the alert.
 
--   All **Client Address** = ::1 means local TGS requests, which means that the **Account Name** logged on to a domain controller before making the TGS request. If you have a whitelist of accounts allowed to log on to domain controllers, monitor events with **Client Address** = ::1 and any **Account Name** outside the whitelist.
+-   All **Client Address** = ::1 means local TGS requests, which means that the **Account Name** logged on to a domain controller before making the TGS request. If you have an allow list of accounts allowed to log on to domain controllers, monitor events with **Client Address** = ::1 and any **Account Name** outside the allow list.
 
 -   All [4769](event-4769.md) events with **Client Port** field value &gt; 0 and &lt; 1024 should be examined, because a well-known port was used for outbound connection.
 

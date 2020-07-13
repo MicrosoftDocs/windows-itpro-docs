@@ -11,7 +11,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-ms.date: 11/06/2018
 audience: itpro
 author: greg-lindsay
 ms.topic: article
@@ -26,6 +25,7 @@ To successfully deploy the Windows 10 operating system in your organization, it
 
 The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
+  - Note: Once you have deployed Windows 10 in your organization, it is important to stay up to date by [creating a deployment plan](update/create-deployment-plan.md) for Windows 10 feature updates.
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
@@ -55,7 +55,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
     </td>
     <td align="center" style="width:16%; border:1;"> 
-<a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
+<a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Deploy a new device, or wipe an existing device and deploy with a fresh image. 
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="https://docs.microsoft.com/configmgr/osd/deploy-use/install-new-windows-version-new-computer-bare-metal">Install a new version of Windows on a new computer with Microsoft Endpoint Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager">Deploy Windows 10 using PXE and Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -121,7 +121,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. 
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
 </table>
@@ -206,16 +206,14 @@ While the initial Windows 10 release includes a variety of provisioning setting
 
 ## Traditional deployment: 
 
-New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [Microsoft Endpoint Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
+New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [Microsoft Endpoint Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
 With the release of Windows 10, all of these tools are being updated to fully support Windows 10. Although newer scenarios such as in-place upgrade and dynamic provisioning may reduce the need for traditional deployment capabilities in some organizations, these traditional methods remain important and will continue to be available to organizations that need them.
 
 The traditional deployment scenario can be divided into different sub-scenarios. These are explained in detail in the following sections, but the following provides a brief summary:
 
 -   **New computer.** A bare-metal deployment of a new machine.
-
 -   **Computer refresh.** A reinstall of the same machine (with user-state migration and an optional full Windows Imaging (WIM) image backup).
-
 -   **Computer replace.** A replacement of the old machine with a new machine (with user-state migration and an optional full WIM image backup).
 
 ### New computer

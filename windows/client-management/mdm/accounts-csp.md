@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 04/17/2018
+ms.date: 03/27/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -38,6 +38,9 @@ Available naming macros:
 |%SERIAL%|Generates the serial number derived from the device. If the serial number causes the new name to exceed the 15 character limit, the serial number will be truncated from the beginning of the sequence.|Test-Device-%SERIAL%|Test-Device-456|
 
 Supported operation is Add.
+
+> [!Note]
+> For desktop PCs on Windows 10, version 2004 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
 
 <a href="" id="users"></a>**Users**  
 Interior node for the user account information.

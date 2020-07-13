@@ -1,6 +1,6 @@
 ---
 title: VAMT known issues (Windows 10)
-description: Volume Activation Management Tool (VAMT) known issues
+description: Find out the current known issues with the Volume Activation Management Tool (VAMT), versions 3.0. and 3.1.
 ms.assetid: 8992f1f3-830a-4ce7-a248-f3a6377ab77f
 ms.reviewer: 
 manager: laurawi
@@ -48,13 +48,13 @@ On the KMS host computer, perform the following steps:
 
 1. To extract the contents of the update, run the following command:
 
-   ```cmd
+   ```console
    expand c:\KB3058168\Windows8.1-KB3058168-x64.msu -f:* C:\KB3058168\
    ```
 
 1. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command:
 
-   ```cmd
+   ```console
    expand c:\KB3058168\Windows8.1-KB3058168-x64.cab -f:pkeyconfig-csvlk.xrm-ms c:\KB3058168
    ```
 

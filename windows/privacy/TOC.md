@@ -8,6 +8,7 @@
 ### [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
 ### [Diagnostic Data Viewer for PowerShell Overview](Microsoft-DiagnosticDataViewer.md)
 ## Basic level Windows diagnostic data events and fields
+### [Windows 10, version 2004 required Windows diagnostic data events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 ### [Windows 10, version 1903 and Windows 10, version 1909 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 ### [Windows 10, version 1809 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 ### [Windows 10, version 1803 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
@@ -21,10 +22,12 @@
 ## Manage Windows 10 connection endpoints
 ### [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 ### [Manage connections from Windows operating system components to Microsoft services using MDM](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md)
+### [Connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
 ### [Connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
+### [Connection endpoints for non-Enterprise editions of Windows 10, version 2004](windows-endpoints-2004-non-enterprise-editions.md)
 ### [Connection endpoints for non-Enterprise editions of Windows 10, version 1903](windows-endpoints-1903-non-enterprise-editions.md)
 ### [Connection endpoints for non-Enterprise editions of Windows 10, version 1809](windows-endpoints-1809-non-enterprise-editions.md)
 ### [Connection endpoints for non-Enterprise editions of Windows 10, version 1803](windows-endpoints-1803-non-enterprise-editions.md)

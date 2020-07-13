@@ -21,7 +21,7 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
  
 ## Register your free Azure Active Directory subscription
 
-1.  Sign in to the Office 365 portal at <https://portal.office.com> using your organization's account.
+1.  Sign in to the Microsoft 365 admin center at <https://portal.office.com> using your organization's account.
 
     ![register azuread](images/azure-ad-add-tenant10.png)
 

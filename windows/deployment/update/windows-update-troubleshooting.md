@@ -162,9 +162,9 @@ Check that your device can access these Windows Update endpoints:
 - `http://wustat.windows.com`
 - `http://ntservicepack.microsoft.com`
  
- Whitelist these endpoints for future use.
+ Allow these endpoints for future use.
  
-## Updates aren't downloading from the intranet endpoint (WSUS/SCCM) 
+## Updates aren't downloading from the intranet endpoint (WSUS or Configuration Manager) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  
 1. Start Windows PowerShell as an administrator 
 2. Run \$MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager". 
@@ -204,7 +204,7 @@ From the WU logs:
 
 In the above log snippet, we see that the Criteria = "IsHidden = 0 AND DeploymentAction=*". "*" means there is nothing specified from the server. So, the scan happens but there is no direction to download or install to the agent. So it just scans the update and provides the results. 
 
-Now if you look at the below logs, the Automatic update runs the scan and finds no update approved for it. So it reports there are 0 updates to install or download. This is due to bad setup or configuration in the environment. The WSUS side should approve the patches for WU so that it fetches the updates and installs it on the specified time according to the policy. Since this scenario doesn't include SCCM, there's no way to install unapproved updates. And that is the problem you are facing. You expect that the scan should be done by the operational insight agent and automatically trigger download and install but that won’t happen here.  
+Now if you look at the below logs, the Automatic update runs the scan and finds no update approved for it. So it reports there are 0 updates to install or download. This is due to bad setup or configuration in the environment. The WSUS side should approve the patches for WU so that it fetches the updates and installs it on the specified time according to the policy. Since this scenario doesn't include Configuration Manager, there's no way to install unapproved updates. And that is the problem you are facing. You expect that the scan should be done by the operational insight agent and automatically trigger download and install but that won’t happen here.  
 
 ```console
 2018-08-06 10:58:45:992  480 5d8 Agent ** START **  Agent: Finding updates [CallerId = AutomaticUpdates  Id = 57] 

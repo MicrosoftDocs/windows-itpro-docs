@@ -1,6 +1,6 @@
 ---
 title: Get KB collection API
-description: Retrieves a collection of KB's.
+description: Retrieve a collection of knowledge bases (KB's) and KB details with Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

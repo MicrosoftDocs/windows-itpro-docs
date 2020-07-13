@@ -280,6 +280,9 @@ You can manually approve updates and set deadlines for installation within the W
 
 To simplify the manual approval process, start by creating a software update view that contains only Windows 10 updates.
 
+> [!NOTE]
+> If you approve more than one feature update for a computer, an error can result with the client. Approve only one feature update per computer.  
+
 **To approve and deploy feature updates manually**
 
 1.	 In the WSUS Administration Console, go to Update Services\\*Server_Name*\Updates. In the **Action** pane, click **New Update View**.

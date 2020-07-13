@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: medgarmedgar
-ms.author: v-medgar
-manager: sanashar
-ms.date: 9/10/2019
+ms.author: dansimp
+manager: robsize
+ms.date: 3/25/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -30,6 +30,9 @@ This article describes the network connections that Windows 10 components make t
 >- For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we do not recommend disabling any of these features.
 >- To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
 >- The **Get Help** and **Give us Feedback** links in Windows may no longer work after applying some or all of the MDM/CSP settings.
+
+>[!Warning]
+>If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Remove Everything" option the >Windows Restricted Traffic Limited Functionality settings will need to be re-applied in order re-restrict the device's egress traffic. >To do this the client must be re-enrolled to the Microsoft Intune service. Egress traffic may occur during the period prior to the re->application of the Restricted Traffic Limited Functionality settings.  If the user executes a "Reset this PC" with the "Keep my files" >option the Restricted Traffic Limited Functionality settings are retained on the device, and therefore the client will remain in a >Restricted Traffic configuration during and after the "Keep my files" reset, and no re-enrollment is required. 
 
 For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
@@ -139,8 +142,8 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection). Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
    1. [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent). Stop sending file samples back to Microsoft. **Set to 2 (two)**
    1. [Defender/EnableSmartScreenInShell](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#mdm-settings). Turns off SmartScreen in Windows for app and file execution. **Set to 0 (zero)**
-   1. Windows Defender Smartscreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender Smartscreen. **Set to 0 (zero)**
-   1. Windows Defender Smartscreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
+   1. Windows Defender SmartScreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender SmartScreen. **Set to 0 (zero)**
+   1. Windows Defender SmartScreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
    1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
    1. [Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm). Allows you to define the order in which different definition update sources should be contacted. The OMA-URI for this is: **./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder**, Data type: **String**, Value: **FileShares**
 1. **Windows Spotlight** - [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**

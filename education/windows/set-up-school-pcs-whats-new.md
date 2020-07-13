@@ -21,7 +21,7 @@ Learn what’s new with the Set up School PCs app each week. Find out about new 
 ## Week of September 23, 2019  
 
 ### Easier way to deploy Office 365 to your classroom devices 
- Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Office 365 ProPlus. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
+ Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
 
 
 ## Week of June 24, 2019  

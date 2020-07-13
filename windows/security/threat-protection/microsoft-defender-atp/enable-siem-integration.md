@@ -27,9 +27,10 @@ ms.topic: article
 
 Enable security information and event management (SIEM) integration so you can pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API.
 
->[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+>[!NOTE]
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+>- The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Prerequisites
 - The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is typically someone with a **Global administrator** role.
@@ -67,13 +68,14 @@ Enable security information and event management (SIEM) integration so you can p
    > [!NOTE]
    > You'll need to generate a new Refresh token every 90 days. 
 
+6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
+
 You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft Defender Security Center.
 
 ## Integrate Microsoft Defender ATP with IBM QRadar 
 You can configure IBM QRadar to collect detections from Microsoft Defender ATP. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 ## Related topics
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
 - [Configure HP ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
 - [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
 - [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)

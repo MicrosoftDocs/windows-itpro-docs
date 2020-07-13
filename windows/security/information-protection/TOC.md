@@ -38,7 +38,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [Kernel DMA Protection for Thunderbolt™ 3](kernel-dma-protection-for-thunderbolt.md)
+## [Kernel DMA Protection](kernel-dma-protection-for-thunderbolt.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a WIP policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
@@ -47,8 +47,8 @@
 ##### [Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)
 #### [Create and verify an EFS Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in WIP](windows-information-protection\wip-app-enterprise-context.md)
-### [Create a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\overview-create-wip-policy-sccm.md)
-#### [Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\create-wip-policy-using-sccm.md)
+### [Create a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\overview-create-wip-policy-configmgr.md)
+#### [Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager](windows-information-protection\create-wip-policy-using-configmgr.md)
 #### [Create and verify an EFS Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in WIP](windows-information-protection\wip-app-enterprise-context.md)
 ### [Mandatory tasks and settings required to turn on WIP](windows-information-protection\mandatory-settings-for-wip.md)
@@ -61,7 +61,6 @@
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with WIP](windows-information-protection\using-owa-with-wip.md)
 ### [Fine-tune WIP Learning](windows-information-protection\wip-learning.md)
-### [How WIP works with sensitivity labels](windows-information-protection\how-wip-works-with-labels.md)
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 

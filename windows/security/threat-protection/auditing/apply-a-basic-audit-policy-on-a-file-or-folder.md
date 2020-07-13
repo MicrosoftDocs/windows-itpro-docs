@@ -23,25 +23,26 @@ ms.date: 07/25/2018
 -   Windows 10
 
 You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log.
-To complete this procedure, you must be logged on as a member of the built-in Administrators group or you must have been granted the **Manage auditing and security log** right.
+
+To complete this procedure, you must be signed in as a member of the built-in Administrators group or have **Manage auditing and security log** rights.
 
 **To apply or modify auditing policy settings for a local file or folder**
 
-1.  Right-click the file or folder that you want to audit, click **Properties**, and then click the **Security** tab.
-2.  Click **Advanced**.
-3.  In the **Advanced Security Settings** dialog box, click the **Auditing** tab, and then click **Continue**.
+1.  Select and hold (or right-click) the file or folder that you want to audit, select **Properties**, and then select the **Security** tab.
+2.  Select **Advanced**.
+3.  In the **Advanced Security Settings** dialog box, select the **Auditing** tab, and then select **Continue**.
 4.  Do one of the following:
-    -   To set up auditing for a new user or group, click **Add**. Click **Select a principal**, type the name of the user or group that you want, and then click **OK**.
-    -   To remove auditing for an existing group or user, click the group or user name, click **Remove**, click **OK**, and then skip the rest of this procedure.
-    -   To view or change auditing for an existing group or user, click its name, and then click **Edit.**
+    -   To set up auditing for a new user or group, select **Add**. Select **Select a principal**, type the name of the user or group that you want, and then select **OK**.
+    -   To remove auditing for an existing group or user, select the group or user name, select **Remove**, select **OK**, and then skip the rest of this procedure.
+    -   To view or change auditing for an existing group or user, select its name, and then select **Edit.**
 5.  In the **Type** box, indicate what actions you want to audit by selecting the appropriate check boxes:
-    -   To audit successful events, click **Success.**
-    -   To audit failure events, click **Fail.**
-    -   To audit all events, click **All.**
+    -   To audit successful events, select **Success.**
+    -   To audit failure events, select **Fail.**
+    -   To audit all events, select **All.**
 
  
 
-6.  In the **Applies to** box, select the object(s) that the audit of events will apply to. These include:
+6.  In the **Applies to** box, select the object(s) to which the audit of events will apply. These include:
  
     -   **This folder only**
     -   **This folder, subfolders and files**
@@ -55,16 +56,18 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   **Read and execute**
     -   **List folder contents**
     -   **Read**
-    -   Additionally, you can choose **Full control**, **Modify**, and/or **Write** permissions with your selected audit combination.
+    -   Additionally, with your selected audit combination, you can select any combination of the following permissions:
+          - **Full control**
+          - **Modify**
+          - **Write**
     
-    
-
-> **Important:**  Before setting up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md) by defining auditing policy settings for the object access event category. If you do not enable object access auditing, you will receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
+> [!IMPORTANT]    
+> Before you set up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md). To do this, define auditing policy settings for the object access event category. If you don't enable object access auditing, you'll receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
 ## Additional considerations
 
--   After object access auditing is enabled, view the security log in Event Viewer to review the results of your changes.
+-   After you turn on object access auditing, view the security log in Event Viewer to review the results of your changes.
 -   You can set up file and folder auditing only on NTFS drives.
--   Because the security log is limited in size, select the files and folders to be audited carefully. Also, consider the amount of disk space that you want to devote to the security log. The maximum size for the security log is defined in Event Viewer.
+-   Because the security log is limited in size, carefully select the files and folders to be audited. Also, consider the amount of disk space that you want to devote to the security log. The maximum size for the security log is defined in Event Viewer.
  
  

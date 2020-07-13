@@ -23,10 +23,8 @@ ms.reviewer:
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
-* Azure AD joined device (Cloud and Hybrid deployments)
-* Hybrid Azure AD joined (Hybrid deployments)
-* Domain Joined (on-premises deployments) 
-* Windows 10, version 1709
+* Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
+* Windows 10, version 1709 or newer
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
@@ -301,7 +299,7 @@ This example configures the same as example 2 using compounding And elements.  T
 #### Example 4 
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 ```
-<rule version="1.0"> 
+<rule schemaVersion="1.0"> 
   <signal type="wifi"> 
     <ssid>contoso</ssid> 
     <bssid>12-ab-34-ff-e5-46</bssid> 

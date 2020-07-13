@@ -25,6 +25,7 @@ ms.topic: article
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Methods
+
 Method|Return Type |Description
 :---|:---|:---
 [List machines](get-machines.md) | [machine](machine.md) collection | List set of [machine](machine.md) entities in the org.
@@ -36,9 +37,11 @@ Method|Return Type |Description
 [Get security recommendations](get-security-recommendations.md) | [recommendation](recommendation.md) collection | Retrieves a collection of security recommendations related to a given machine ID.
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
+[Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
 
 ## Properties
-Property |	Type	|	Description
+
+Property |   Type   |   Description
 :---|:---|:---
 id | String | [machine](machine.md) identity.
 computerDnsName | String | [machine](machine.md) fully qualified name.
