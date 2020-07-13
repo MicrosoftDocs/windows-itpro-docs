@@ -43,6 +43,9 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
 
+
+Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP).
+
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
 - [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
@@ -89,7 +92,7 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
 
 Devices on your network must be running one of these editions.
 
-The hardware requirements for Microsoft Defender ATP on devices is the same as those for the supported editions.
+The hardware requirements for Microsoft Defender ATP on devices are the same for the supported editions.
 
 > [!NOTE]
 > Machines running mobile versions of Windows are not supported.
@@ -122,8 +125,8 @@ When you run the onboarding wizard for the first time, you must choose where you
 > [!NOTE]
 > Microsoft Defender ATP doesn't require any specific diagnostic level as long as it's enabled.
 
-You must ensure that the diagnostic data service is enabled on all the devices in your organization.
-By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
+Make sure that the diagnostic data service is enabled on all the devices in your organization.
+By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
@@ -143,7 +146,8 @@ By default, this service is enabled, but it&#39;s good practice to check to ensu
 
     ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
+
+You'll need to set the service to automatically start if the **START_TYPE** is not set to **AUTO_START**.
 
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
@@ -170,7 +174,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 #### Internet connectivity
 Internet connectivity on devices is required either directly or through proxy.
 
-The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB to communicate with the Microsoft Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
+The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5 MB to communicate with the Microsoft Defender ATP cloud service and report cyber data. One-off activities such as file uploads and investigation package collection are not included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -180,9 +184,11 @@ Before you onboard devices, the diagnostic data service must be enabled. The ser
 ## Microsoft Defender Antivirus configuration requirement
 The Microsoft Defender ATP agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
 
-You must configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+Configure Security intelligence updates on the Microsoft Defender ATP devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. If your organization has disabled Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded to Microsoft Defender ATP must be excluded from this group policy.
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Microsoft Defender ATP service, Microsoft Defender Antivirus goes on passive mode. 
+
+If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
 If you are onboarding servers and Microsoft Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Microsoft Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 

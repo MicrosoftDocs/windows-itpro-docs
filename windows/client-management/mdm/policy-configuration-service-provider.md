@@ -562,11 +562,11 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Bitlocker policies
+### BitLocker policies
 
 <dl>
   <dd>
-    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">BitLocker/EncryptionMethod</a>
   </dd>
 </dl>
 
@@ -3380,6 +3380,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-allowdevicenameindiagnosticdata" id="system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -3395,13 +3398,22 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowlocation" id="system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-allowstoragecard" id="system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-allowtelemetry" id="system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
+   <dd>
+    <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
+  </dd>
   <dd>
     <a href="./policy-csp-system.md#system-allowusertoresetphone" id="system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -4048,6 +4060,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## Policy CSPs supported by Group Policy and ADMX-backed policy CSPs
 - [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
 - [ADMX-backed policy CSPs](policy-csps-admx-backed.md)
+
+> [!NOTE]
+> Not all Policy CSPs supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
 ## Policy CSPs supported by HoloLens devices
 - [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
