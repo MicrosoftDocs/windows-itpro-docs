@@ -76,7 +76,7 @@ The minimum required Enterprise certificate authority that can be used with Wind
 * The certificate template must have an extension that has the value "DomainController", encoded as a [BMPstring](https://docs.microsoft.com/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template.
 * The domain controller certificate must be installed in the local computer's certificate store.
 
- 
+See [Step-by-step example deployment of the PKI certificates](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/network/example-deployment-of-pki-certificates).
 
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
