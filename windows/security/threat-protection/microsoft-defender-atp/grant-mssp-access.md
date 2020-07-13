@@ -25,7 +25,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
-To implement a multi-tenant delegated access solution take the following steps:
+To implement a multi-tenant delegated access solution, take the following steps:
 
 1. Enable [role-based access control](rbac.md) in Microsoft Defender ATP and connect with Active Directory (AD) groups.
 
@@ -37,14 +37,14 @@ To implement a multi-tenant delegated access solution take the following steps:
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Microsoft Defender ATP. To do so, in the customer AD tenant, create 3 groups:  
+    These groups will be linked to the Roles you create in Microsoft Defender ATP. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst 
     - Tier 2 Analyst 
     - MSSP Analyst Approvers  
 
 
-2. Create Microsoft Defender ATP roles for appropriate access levels in Customer Micorosft Defender ATP.
+2. Create Microsoft Defender ATP roles for appropriate access levels in Customer Microsoft Defender ATP.
 
     To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
@@ -58,7 +58,7 @@ To implement a multi-tenant delegated access solution take the following steps:
       Perform all actions except for live response and manage security settings.
 
     - **Tier 2 Analysts** <br>
-      Tier 1 capabilities with the addition to [ive response](live-response.md)
+      Tier 1 capabilities with the addition to [live response](live-response.md)
 
     For more information, see [Use role-based access control](rbac.md).
 
@@ -70,7 +70,7 @@ To implement a multi-tenant delegated access solution take the following steps:
     
     Adding the MSSP as a connected organization will allow the MSSP to request and have accesses provisioned. 
 
-    To do so, in the customer AD tenant, access Identity Governance: Connected organization. Add a new organization and search for your MSSP Analyst tenant via Tenant ID or Domain. It is recommended to create a separate AD tenant for your MSSP Analysts.
+    To do so, in the customer AD tenant, access Identity Governance: Connected organization. Add a new organization and search for your MSSP Analyst tenant via Tenant ID or Domain. We suggest creating a separate AD tenant for your MSSP Analysts.
 
 2. **Create a resource catalog in Customer AAD: Identity Governance**
 
