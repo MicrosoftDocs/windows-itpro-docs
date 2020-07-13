@@ -48,6 +48,8 @@ The following video shows the process of setting up Windows Autopilot:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+This video is also available [here](https://www.microsoft.com/videoplayer/embed/RE4ATOx).
+
 ## Benefits of Windows Autopilot
 
 Traditionally, IT pros spend a lot of time building and customizing images that will later be deployed to devices. Windows Autopilot introduces a new approach.
