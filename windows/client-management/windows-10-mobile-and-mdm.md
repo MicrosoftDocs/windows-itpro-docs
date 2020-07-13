@@ -69,12 +69,12 @@ The way in which personal and corporate devices are enrolled into an MDM system 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"></td>
-<td align="left"><strong>Personal devices</strong></td>
-<td align="left">Corporate devices</strong></td>
+<th align="left"></th>
+<th align="left">Personal devices</th>
+<th align="left">Corporate devices</th>
 </tr>
 <tr class="even">
-<td align="left"><strong>Ownership</strong></td>
+<th align="left">Ownership</th>
 <td align="left">Employee</td>
 <td align="left">Organization</td>
 </tr>
@@ -559,7 +559,7 @@ In addition to controlling which apps are allowed, IT professionals can also imp
 -   **Restrict App to System Volume** Specifies whether app installation is allowed only to the system drive or can be installed on an SD card.
 -   **Start screen layout** An XML blob used to configure the Start screen (for more information, see [Start layout for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/mt171093(v=vs.85).aspx)).
 
-Find more details on application management options in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#ApplicationManagement_AllowAllTrustedApps)
+Find more details on application management options in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#ApplicationManagement_AllowAllTrustedApps).
 
 ### <a href="" id="data-leak-prevention"></a>Data leak prevention
 
@@ -741,7 +741,7 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 </tbody>
 </table>
 
-**Keeping track of updates releases**
+#### Keeping track of updates releases
 
 *Applies to: Corporate and Personal devices*
 
