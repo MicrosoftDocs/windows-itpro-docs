@@ -41,7 +41,7 @@ This can help us with our analysis. Participants of the [Microsoft Active Protec
 
 It contains instructions to offer a program classified as unwanted software. You can review the [criteria](criteria.md) we use to check applications for behaviors that are considered unwanted.
 
-## Why is the Windows Firewall blocking my program?
+## Why is the Windows Defender Firewall blocking my program?
 
 This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
