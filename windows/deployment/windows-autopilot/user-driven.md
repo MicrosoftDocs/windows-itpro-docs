@@ -131,7 +131,7 @@ For VPN configurations that automatically connect, the validation steps may be d
 To validate the end-to-end process, ensure the needed Windows 10 cumulative update has been installed on Windows 10 1903 or Windows 10 1909. This can be done manually during OOBE by first downloading the latest cumulative from https://catalog.update.microsoft.com and then manually installing it:
 
 - Press Shift-F10 to open a command prompt.
-- Insert a USB key containing the donwloaded update.
+- Insert a USB key containing the downloaded update.
 - Install the update using the command (substituting the real file name): WUSA.EXE <filename>.msu /quiet
 - Reboot the computer using the command: shutdown.exe /r /t 0
 
