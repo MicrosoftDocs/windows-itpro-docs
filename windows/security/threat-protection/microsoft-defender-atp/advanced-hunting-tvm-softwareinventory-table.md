@@ -40,7 +40,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `OSArchitecture` | string | Architecture of the operating system running on the machine |
-| `SoftwareVendor` | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |
+| `SoftwareVendor` | string | Name of the software vendor |
 | `SoftwareName` | string | Name of the software product |
 | `SoftwareVersion` | string | Version number of the software product |
 | `CveId` | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system |

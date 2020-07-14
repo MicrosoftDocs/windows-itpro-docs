@@ -25,13 +25,13 @@ ms.custom: asr
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. It protects your data by checking against a list of known, trusted apps. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients. It can be turned on via the Windows Security App, or from the System Center Configuration Manager (SCCM) and Intune, for managed devices. Controlled folder access works best with [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. It protects your data by checking against a list of known, trusted apps. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients. It can be turned on via the Windows Security App, or from the Microsoft Endpoint Configuration Manager and Intune, for managed devices. Controlled folder access works best with [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
 Controlled folder access works by only allowing apps to access protected folders if the app is included on a list of trusted software. If an app isn't on the list, Controlled folder access will block it from making changes to files inside protected folders.
 
 Apps are added to the trusted list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization, and that have never displayed any malicious behavior, are deemed trustworthy and automatically added to the list.
 
-Apps can also be manually added to the trusted list via SCCM and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
+Apps can also be manually added to the trusted list via Configuration Manager and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
 
 Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) that can attempt to encrypt your files and hold them hostage.
 

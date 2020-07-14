@@ -19,7 +19,7 @@ This section provides an example of the mobile device enrollment protocol using 
 
 The &lt;AuthenticationServiceURL&gt; element the discovery response message specifies web authentication broker page start URL.
 
-For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
+For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 ## In this topic
 

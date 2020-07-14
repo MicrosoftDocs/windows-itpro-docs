@@ -1,6 +1,6 @@
 ---
 title: Authorize apps deployed with a WDAC managed installer (Windows 10)
-description: Learn how to use a managed installer to automatically authorize apps added by  a designated software distribution solution, such as SCCM. 
+description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -28,7 +28,7 @@ ms.date: 06/13/2018
 Creating and maintaining application execution control policies has always been challenging, and finding ways to address this issue has been a frequently-cited request for customers of AppLocker and Windows Defender Application Control (WDAC). 
 This is especially true for enterprises with large, ever changing software catalogs. 
 
-Windows 10, version 1703 (also known as the Windows 10 Creators Update) provides a new option, known as a managed installer, that allows IT administrators to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
+Windows 10, version 1703 (also known as the Windows 10 Creators Update) provides a new option, known as a managed installer, that allows IT administrators to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
 A managed installer helps an IT admin balance security and manageability requirements when employing application execution control policies by providing an option that does not require specifying explicit rules for software that is being managed through a software distribution solution.
 
 ## How does a managed installer work?
@@ -159,7 +159,7 @@ Specify `-mionly` if you will not use the Intelligent Security Graph (ISG).
 ## Security considerations with managed installer
 
 Since managed installer is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. 
-It is best suited for deployment to systems where each user is configured as a standard user and where all software is deployed and installed by a software distribution solution, such as System Center Configuration Manager. 
+It is best suited for deployment to systems where each user is configured as a standard user and where all software is deployed and installed by a software distribution solution, such as  Microsoft Endpoint Configuration Manager. 
 
 Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed. 
 If the authorized managed installer process performs installations in the context of a user with standard privileges, then it is possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control. 

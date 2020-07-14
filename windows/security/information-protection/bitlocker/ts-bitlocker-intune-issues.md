@@ -109,9 +109,9 @@ list volume
 ```
 ![Output of the list volume command in the Diskpart app](./images/4509195-en-1.png)
 
-If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from System Center Configuration Manager).
+If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Endpoint Configuration Manager).
 
-![Windows image configuration in System Center Configuration Manager](./images/sccm-imageconfig.jpg)
+![Windows image configuration in Microsoft Endpoint Configuration Manager](./images/configmgr-imageconfig.jpg)
 
 #### Step 2: Verify the status of WinRE
 
@@ -171,7 +171,7 @@ To verify the BIOS mode, use the System Information app. To do this, follow thes
 
 You receive an error message that resembles the following:
 
-> **Error:** BitLocker cannot use Secure Boot for integrity because the UEFI variable ‘SecureBoot’ could not be read. A required privilege is not held by the client.
+> **Error:** BitLocker cannot use Secure Boot for integrity because the UEFI variable 'SecureBoot' could not be read. A required privilege is not held by the client.
 
 ### Cause
 
@@ -305,7 +305,7 @@ The OMA-URI references for these settings are as follows:
 > Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
 
 > [!NOTE]
-> If the **Waiting for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
+> If the **Warning for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
 
 If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
 

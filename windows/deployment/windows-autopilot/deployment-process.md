@@ -1,6 +1,6 @@
 ---
 title: Windows 10 deployment process posters
-description: View and download Windows 10 deployment process flows for System Center Configuration Manager and Windows Autopilot.
+description: View and download Windows 10 deployment process flows for Microsoft Endpoint Configuration Manager and Windows Autopilot.
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -24,4 +24,4 @@ Windows Autopilot deployment processes are summarized in the poster below. The p
 
 [![Deploy Windows 10 with Autopilot](../media/windows10-autopilot-flowchart.png)](../media/Windows10AutopilotFlowchart.pdf)
 
-**Note**: The Windows Autopilot for existing devices process is included in the [System Center Configuration Manager deployment poster](../windows-10-deployment-posters.md#deploy-windows-10-with-system-center-configuration-manager).
+**Note**: The Windows Autopilot for existing devices process is included in the [Microsoft Endpoint Configuration Manager deployment poster](../windows-10-deployment-posters.md#deploy-windows-10-with-microsoft-endpoint-configuration-manager). 

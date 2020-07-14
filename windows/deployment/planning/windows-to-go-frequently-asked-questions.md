@@ -165,7 +165,7 @@ Yes, if the user has administrator permissions they can self-provision a Windows
 ## <a href="" id="wtg-faq-mng"></a>How can Windows To Go be managed in an organization?
 
 
-Windows To Go can be deployed and managed like a traditional desktop PC using standard Windows enterprise software distribution tools like System Center Configuration Manager. Computer and user settings for Windows To Go workspaces can be managed using Group Policy setting also in the same manner that you manage Group Policy settings for other PCs in your organization. Windows To Go workspaces can be configured to connect to the organizational resources remotely using DirectAccess or a virtual private network connection so that they can connect securely to your network.
+Windows To Go can be deployed and managed like a traditional desktop PC using standard Windows enterprise software distribution tools like Microsoft Endpoint Configuration Manager. Computer and user settings for Windows To Go workspaces can be managed using Group Policy setting also in the same manner that you manage Group Policy settings for other PCs in your organization. Windows To Go workspaces can be configured to connect to the organizational resources remotely using DirectAccess or a virtual private network connection so that they can connect securely to your network.
 
 ## <a href="" id="wtf-faq-startup"></a>How do I make my computer boot from USB?
 

@@ -1,9 +1,12 @@
 ---
-title: Mapping physical spaces with HoloLens
+title: Map physical spaces with HoloLens
 description: HoloLens learns what a space looks like over time. Users can facilitate this process by moving the HoloLens in certain ways through the space.
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 author: dorreneb
 ms.author: dobrown
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.date: 09/16/2019
 keywords: hololens, Windows Mixed Reality, design, spatial mapping, HoloLens, surface reconstruction, mesh, head tracking, mapping
 ms.prod: hololens
@@ -15,14 +18,14 @@ appliesto:
 - HoloLens 2
 ---
 
-# Mapping physical spaces with HoloLens
+# Map physical spaces with HoloLens
 
 HoloLens blends holograms with your physical world. To do that, HoloLens has to learn about the physical world around you and remember where you place holograms within that space.
 
 Over time, the HoloLens builds up a *spatial map* of the environment that it has seen.  HoloLens updates the map as the environment changes. As long as you are logged in and the device is turned on, HoloLens creates and updates your spatial maps. If you hold or wear the device with the cameras pointed at a space, the HoloLens tries to map the area. While the HoloLens learns a space naturally over time, there are ways in which you can help HoloLens map your space more quickly and efficiently.  
 
 > [!NOTE]
-> If your HoloLens can’t map your space or is out of calibration, HoloLens may enter Limited mode. In Limited mode, you won’t be able to place holograms in your surroundings.
+> If your HoloLens can't map your space or is out of calibration, HoloLens may enter Limited mode. In Limited mode, you won't be able to place holograms in your surroundings.
 
 This article explains how HoloLens maps spaces, how to improve spatial mapping, and how to manage the spatial data that HoloLens collects.
 

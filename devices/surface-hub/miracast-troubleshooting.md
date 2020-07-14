@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ---
 
@@ -21,13 +21,13 @@ In traditional Miracast, the projecting device will connect the access point set
 - The first step is an initial connection using 2.4GHz. 
 - After that initial handshake, the projecting device sends traffic to the monitor using the wireless channel settings on the monitor. If Surface Hub is connected to a Wi-Fi network, the access point, it will use the same channel as the connected network, otherwise it will use the Miracast channel from Settings.
 
-There are generally two types of issues with Miracast to Surface Hub: [connection](#connect-issues) and [performance](#performance-issues). In either case, it is a good idea to get a general picture of wireless network activity in the Surface Hub’s location. Running a network scanning tool will show you the available networks and channel usage in the environment.
+There are generally two types of issues with Miracast to Surface Hub: [connection](#connect-issues) and [performance](#performance-issues). In either case, it is a good idea to get a general picture of wireless network activity in the Surface Hub's location. Running a network scanning tool will show you the available networks and channel usage in the environment.
 
 ## Connect issues
 
 Ensure both Wi-Fi and Miracast are both enabled in Settings on Surface Hub. 
 
-If you ran a network scan, you should see Surface Hub Miracast listed as an access point. If Surface Hub’s Miracast network shows up on the scan, but you cannot not see it as an available device, you can try to adjust the Miracast channel used by Surface Hub. 
+If you ran a network scan, you should see Surface Hub Miracast listed as an access point. If Surface Hub's Miracast network shows up on the scan, but you cannot not see it as an available device, you can try to adjust the Miracast channel used by Surface Hub. 
 
 When Surface Hub is connected to a Wi-Fi network it will use the same channel settings as the Wi-Fi access point for its Miracast access point. For troubleshooting purposes, disconnect Surface Hub from any Wi-Fi networks (but keep Wi-Fi enabled), so you can control the channel used for Miracast. You can manually select the Miracast channel in Settings. You will need to restart Surface Hub after each change. Generally speaking, you will want to use channels that do not show heavy utilization from the network scan.
 
@@ -42,7 +42,7 @@ It is also a good idea to ensure the latest drivers and updates are installed on
 Next, ensure Miracast is supported on the device. 
 
 1. Press Windows Key + R and type `dxdiag`. 
-2. Click “Save all information”. 
+2. Click "Save all information". 
 3. Open the saved dxdiag.txt and find **Miracast**. It should say **Available, with HDCP**. 
     
 ### Check firewall
@@ -63,7 +63,7 @@ On domain-joined devices, Group Policy can also block Miracast.
 
 ### Check event logs
 
-The last place to check is in the Event logs. Miracast events will be logged to **Wlanautoconfig**. This is true on both Surface Hub and the projecting device. If you export Surface Hub logs, you can view Surface Hub’s Wlanautoconfig in the **WindowsEventLog** folder. Errors in the event log can provide some additional details on where the connection fails.
+The last place to check is in the Event logs. Miracast events will be logged to **Wlanautoconfig**. This is true on both Surface Hub and the projecting device. If you export Surface Hub logs, you can view Surface Hub's Wlanautoconfig in the **WindowsEventLog** folder. Errors in the event log can provide some additional details on where the connection fails.
 
 ## Performance issues
 
@@ -75,7 +75,10 @@ Channel switching is caused when the Wi-Fi adapter needs to send traffic to mult
 
 If Surface Hub and the projecting device are both connected to Wi-Fi but using different access points with different channels, this will force Surface Hub and the projecting device to channel switch while Miracast is connected. This will result in both poor wireless project and poor network performance over Wi-Fi. The channel switching will affect the performance of all wireless traffic, not just wireless projection. 
 
-Channel switching will also occur if the projecting device is connected to an Wi-Fi network using a different channel than the channel that Surface Hub uses for Miracast. So, a best practice is to set Surface Hub’s Miracast channel to the same channel as the most commonly used access point. 
+Channel switching will also occur if the projecting device is connected to an Wi-Fi network using a different channel than the channel that Surface Hub uses for Miracast. So, a best practice is to set Surface Hub's Miracast channel to the same channel as the most commonly used access point. 
 
 If there are multiple Wi-Fi networks or access points in the environment, some channel switching is unavoidable. This is best addressed by ensuring all Wi-Fi drivers are up to date.
 
+## Contact Support
+
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).

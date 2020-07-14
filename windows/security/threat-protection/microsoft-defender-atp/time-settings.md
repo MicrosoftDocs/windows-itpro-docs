@@ -72,11 +72,12 @@ IE and Microsoft Edge use the **Region** settings configured in the **Clocks, La
 #### Known issues with regional formats
 
 **Date and time formats**<br>
-There are some known issues with the time and date formats. 
+There are some known issues with the time and date formats. If you configure your regional settings to anything other than the supported formats, the portal may not correctly reflect your settings.
 
-The following date formats are supported:
-- MM/dd/yyyy
-- dd/MM/yyyy
+The following date and time formats are supported:
+- Date format MM/dd/yyyy
+- Date format dd/MM/yyyy
+- Time format hh:mm:ss (12 hour format)
 
 The following date and time formats are currently not supported:
 - Date format yyyy-MM-dd
@@ -84,7 +85,7 @@ The following date and time formats are currently not supported:
 - Date format dd/MM/yy
 - Date format MM/dd/yy
 - Date format with yy. Will only show yyyy.
-- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
+- Time format HH:mm:ss (24 hour format)
 
 **Decimal symbol used in numbers**<br>
 Decimal symbol used is always a dot, even if a comma is selected in  the **Numbers** format settings in **Region** settings. For example, 15,5K is displayed as 15.5K.

@@ -21,7 +21,13 @@ Microsoft Application Virtualization (App-V) 5 lets administrators make applicat
 
 [Microsoft Application Virtualization 5.1 Administrator's Guide](microsoft-application-virtualization-51-administrators-guide.md)
 
+> [!NOTE]
+> Application Virtualization 5.1 for Remote Desktop Services will be end of life on January 10, 2023. Please upgrade to a supported version, such as App-V 5.0 with Service Pack 3 prior to this date.
+
 [Microsoft Application Virtualization 5.0 Administrator's Guide](microsoft-application-virtualization-50-administrators-guide.md)
+
+> [!NOTE] 
+> Application Virtualization 5.0 for Windows Desktops will be end of life on January 10, 2023. Please upgrade to a supported version, such as App-V 5.0 with Service Pack 3 prior to this date.
 
 ## More Information
 

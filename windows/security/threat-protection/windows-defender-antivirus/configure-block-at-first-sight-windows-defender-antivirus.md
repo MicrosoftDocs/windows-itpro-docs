@@ -50,7 +50,7 @@ Block at first sight requires a number of settings to be configured correctly or
 
 ### Confirm block at first sight is enabled with Intune
 
-1. In Intune, navigate to **Device configuration - Profiles > *Profile name* > Device restrictions > Windows Defender Antivirus**.
+1. In Intune, navigate to **Device configuration - Profiles** > *Profile name* > **Device restrictions** > **Windows Defender Antivirus**.
 
    > [!NOTE]
    > The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
@@ -71,9 +71,9 @@ For more information about configuring Windows Defender Antivirus device restric
 
 For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
 
-### Enable block at first sight with SCCM
+### Enable block at first sight with Microsoft Endpoint Configuration Manager
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
 
 2. Click **Home** > **Create Antimalware Policy**.
 
@@ -96,7 +96,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 ### Confirm block at first sight is enabled with Group Policy
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**. 
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -119,19 +119,19 @@ If you had to change any of the settings, you should re-deploy the Group Policy 
 
 ### Confirm block at first sight is enabled with the Windows Security app
 
-You can confirm that block at first sight is enabled in Windows Settings.
+You can confirm that block at first sight is enabled in your Windows security settings.
 
-Block at first sight is automatically enabled as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
+Block at first sight is automatically enabled as long as **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
 ### Confirm Block at First Sight is enabled on individual clients
 
-1. Open the Windows Security app by clicking the shield icon in the task bar.
+1. Open the Windows Security app.
 
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Manage Settings** under **Virus & threat protection settings**:
+2. Select **Virus & threat protection**, and then, under **Virus & threat protection settings**, select **Manage Settings**.
 
    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
+3. Confirm that **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
 > [!NOTE]
 > If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.

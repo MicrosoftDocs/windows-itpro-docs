@@ -3,16 +3,15 @@ title: Microsoft Surface Deployment Accelerator (Surface)
 description: Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
 ms.assetid: E7991E90-4AAE-44B6-8822-58BFDE3EADE4
 ms.reviewer: hachidan
-manager: dansimp
-ms.date: 10/31/2019
+manager: laurawi
 ms.localizationpriority: medium
 keywords: deploy, install, tool
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.audience: itpro
 ---
@@ -80,7 +79,7 @@ For environments where the SDA server will not be able to connect to the Interne
 
 *Figure 2. Specify a local source for Surface driver and app files*
 
-You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+You can find a full list of available driver downloads at [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
 
 >[!NOTE]
 >Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.

@@ -190,7 +190,7 @@ Starting with Windows 10, version 1709, you can set policies to manage preview b
 The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
 * MDM: **Update/ManagePreviewBuilds**
-* System Center Configuration Manager: **Enable dual scan, manage through Windows Update for Business policy**
+* Microsoft Endpoint Configuration Manager: **Enable dual scan, manage through Windows Update for Business policy**
 
 >[!IMPORTANT]
 >This policy replaces the "Toggle user control over Insider builds" policy under that is only supported up to Windows 10, version 1703. You can find the older policy here:
@@ -273,5 +273,5 @@ When a device running a newer version sees an update available on Windows Update
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)

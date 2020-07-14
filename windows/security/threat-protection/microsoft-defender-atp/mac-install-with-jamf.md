@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ms.date: 04/10/2020
 ---
 
 # JAMF-based deployment for Microsoft Defender ATP for Mac
@@ -24,11 +25,12 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
-- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Create JAMF policies](#create-jamf-policies)
-- [Client device setup](#client-device-setup)
-- [Deployment](#deployment)
-- [Check onboarding status](#check-onboarding-status)
+
+1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+1. [Create JAMF policies](#create-jamf-policies)
+1. [Client device setup](#client-device-setup)
+1. [Deployment](#deployment)
+1. [Check onboarding status](#check-onboarding-status)
 
 ## Prerequisites and system requirements
 
@@ -36,18 +38,36 @@ Before you get started, please see [the main Microsoft Defender ATP for Mac page
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
+## Overview
+
+The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender ATP for Macs, via JAMF. More detailed steps are available below.
+
+| Step | Sample file names | BundleIdentifier |
+|-|-|-|
+| [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
+| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
+| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdavtray |
+| [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#jamf) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
+| [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
+| [Approve Kernel Extension for Microsoft Defender ATP](#approved-kernel-extension) | Note: If there was one, MDATP_KExt.plist | N/A |
+
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Windows Defender Security Center:
+Download the installation and onboarding packages from Microsoft Defender Security Center:
 
-1. In Windows Defender Security Center, go to **Settings > device Management > Onboarding**.
-2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android** and deployment method to **Mobile Device Management / Microsoft Intune**.
-3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
-4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
+1. In Microsoft Defender Security Center, go to **Settings > Machine management > Onboarding**.
+2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android**.
+3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
 
-    ![Windows Defender Security Center screenshot](../windows-defender-antivirus/images/MDATP-2-DownloadPackages.png)
+    > [!NOTE]
+    > Jamf falls under **Mobile Device Management**.
 
-5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
+4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
+
+    ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/jamf-onboarding.png)
+
+6. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash
     $ ls -l
@@ -68,17 +88,18 @@ You need to create a configuration profile and a policy to start deploying Micro
 
 ### Configuration Profile
 
-The configuration profile contains a custom settings payload that includes:
+The configuration profile contains a custom settings payload that includes the following:
 
 - Microsoft Defender ATP for Mac onboarding information
-- Approved Kernel Extensions payload, to enable running the Microsoft kernel driver
+- Approved Kernel Extensions payload to enable running the Microsoft kernel driver
 
-To set the onboarding information, add a property list file with the name, _jamf/WindowsDefenderATPOnboarding.plist_, as a custom setting. You can do this by navigating to **Computers**>**Configuration Profiles**, selecting **New**, then choosing **Custom Settings**>**Configure**. From there, you can upload the property list.
+To set the onboarding information, add a property list file that is named **jamf/WindowsDefenderATPOnboarding.plist** as a custom setting. To do this, select **Computers** > **Configuration Profiles** > **New**, and then select **Application & Custom Settings** > **Configure**. From there, you can upload the property list.
+
 
   >[!IMPORTANT]
-  > You must set the Preference Domain as "com.microsoft.wdav.atp"
+  > You have to set the **Preference Domain** to **com.microsoft.wdav.atp**. There are some changes to the Custom Payloads and also to the Jamf Pro user interface in version 10.18 and later versions. For more information about the changes, see [Configuration Profile Payload Settings Specific to Jamf Pro](https://www.jamf.com/jamf-nation/articles/217/configuration-profile-payload-settings-specific-to-jamf-pro).
 
-![Configuration profile screenshot](../windows-defender-antivirus/images/MDATP-16-PreferenceDomain.png)
+![Configuration profile screenshot](./images/msdefender-mac-config-profile.png)
 
 ### Approved Kernel Extension
 
@@ -87,7 +108,7 @@ To approve the kernel extension:
 1. In **Computers > Configuration Profiles** select **Options > Approved Kernel Extensions**.
 2. Use **UBF8T346G9** for Team Id.
 
-![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
+    ![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
 
 ### Privacy Preferences Policy Control
 
@@ -103,7 +124,7 @@ Add the following JAMF policy to grant Full Disk Access to Microsoft Defender AT
 3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
 4. Set app or service to SystemPolicyAllFiles and access to Allow.
 
-![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
+    ![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
 
 #### Configuration Profile's Scope
 
@@ -153,16 +174,16 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 > [!NOTE]
 > After a computer is enrolled, it will show up in the Computers inventory (All Computers).
 
-1. Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
+ - Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
-![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
-![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
+    ![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
+    ![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
 
-After a moment, the device's User Approved MDM status will change to **Yes**.
+    After a moment, the device's User Approved MDM status will change to **Yes**.
 
-![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
+    ![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
 
-You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
+    You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 
@@ -225,6 +246,7 @@ $ mdatp --health healthy
 The above command prints "1" if the product is onboarded and functioning as expected.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
+
 - 0 if the device is not yet onboarded
 - 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
 

@@ -28,9 +28,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
+-   <https://www.microsoft.com/download/details.aspx?id=1251>
 
--   <http://www.microsoft.com/en-us/download/details.aspx?id=30688>
+-   <https://www.microsoft.com/download/details.aspx?id=30688>
 
 This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
 

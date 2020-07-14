@@ -31,12 +31,15 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 ![BitLocker csp](images/provisioning-csp-bitlocker.png)
 
+
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
-
+<!--Policy-->
 <a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
+<!--Description-->
 Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.
-
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -57,12 +60,13 @@ Allows the administrator to require storage card encryption on the device. This 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
 
 Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
-
+<!--SupportedValues-->
 - 0 (default) – Storage cards do not need to be encrypted.
 - 1 – Require storage cards to be encrypted.  
-
+<!--/SupportedValues-->
 Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.
 
 If you want to disable this policy use the following SyncML:
@@ -87,11 +91,13 @@ If you want to disable this policy use the following SyncML:
 ```
 
 Data type is integer. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
-
+<!--Description-->
 Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.
-
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -112,7 +118,7 @@ Allows the administrator to require encryption to be turned on by using BitLocke
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table> 
-
+<!--/SupportedSKUs-->
 Data type is integer. Sample value for this node to enable this policy: 1.
 Supported operations are Add, Get, Replace, and Delete.
 
@@ -126,12 +132,12 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 - It must not be a system partition.
 - It must not be backed by virtual storage.
 - It must not have a reference in the BCD store.
-
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) — Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes.
 -   1 – Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
-
+<!--/SupportedValues-->
 If you want to disable this policy, use the following SyncML:
 
 ```xml
@@ -152,10 +158,13 @@ If you want to disable this policy, use the following SyncML:
     </SyncBody>
 </SyncML>        
 ```
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
-
-Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;. 
+<!--Description-->
+Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;.
+<!--/Description-->
+<!--SupportedValues-->
 <table>
 <tr>
     <th>Home</th>
@@ -176,6 +185,8 @@ Allows you to set the default encryption method for each of the different drive 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedValues-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</em></li>
@@ -183,6 +194,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -202,14 +214,14 @@ If you disable or do not configure this policy setting, BitLocker will use the d
 EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives
 EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
 EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for removable data drives.
-
+<!--SupportedValues-->
  The possible values for &#39;xx&#39; are:
 
 - 3 = AES-CBC 128
 - 4 = AES-CBC 256
 - 6 = XTS-AES 128
 - 7 = XTS-AES 256
-
+<!--/SupportedValues-->
 > [!NOTE]
 > When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
 
@@ -231,9 +243,13 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Require additional authentication at startup&quot;.
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -254,6 +270,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Require add
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Require additional authentication at startup</em></li>
@@ -261,6 +279,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -297,7 +316,7 @@ Data id:
 <li>ConfigureTPMPINKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key and PIN.</li>
 <li>ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.</li>
 </ul>
-
+<!--SupportedValues-->
 The possible values for &#39;xx&#39; are:
 <ul>
 <li>true = Explicitly allow</li>
@@ -310,7 +329,7 @@ The possible values for &#39;yy&#39; are:
 <li>1 = Required</li>
 <li>0 = Disallowed</li>
 </ul>
-
+<!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
@@ -328,9 +347,13 @@ Disabling the policy will let the system choose the default behaviors. If you wa
                          </Replace>
 ```
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure minimum PIN length for startup&quot;.
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -351,6 +374,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure m
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name:<em>Configure minimum PIN length for startup</em></li>
@@ -358,6 +383,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -397,9 +423,14 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
-<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage**  
-This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure pre-boot recovery message and URL&quot; (PrebootRecoveryInfo_Name).
+<!--/Policy-->
+<!--Policy-->
+<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
+<!--Description-->
+This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure pre-boot recovery message and URL&quot;
+(PrebootRecoveryInfo_Name).
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -420,6 +451,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Configure p
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Configure pre-boot recovery message and URL</em></li>
@@ -427,6 +460,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -445,6 +479,7 @@ Sample value for this node to enable this policy is:
 ```xml
 <enabled/><data id="PrebootRecoveryInfoDropDown_Name" value="xx"/><data id="RecoveryMessage_Input" value="yy"/><data id="RecoveryUrl_Input" value="zz"/>
 ```
+<!--SupportedValues-->
 The possible values for &#39;xx&#39; are:
 
 -  0 = Empty
@@ -453,7 +488,7 @@ The possible values for &#39;xx&#39; are:
 -  3 = Custom recovery URL is set.
 -  'yy' = string of max length 900.
 -  'zz' = string of max length 500.
-
+<!--/SupportedValues-->
 > [!NOTE]
 > When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.
 
@@ -478,9 +513,13 @@ Disabling the policy will let the system choose the default behaviors.  If you w
 > Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how BitLocker-protected operating system drives can be recovered&quot; (OSRecoveryUsage_Name).
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -501,6 +540,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Choose how BitLocker-protected operating system drives can be recovered</em></li>
@@ -508,6 +549,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -536,7 +578,7 @@ Sample value for this node to enable this policy is:
 ```xml
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
-
+<!--SupportedValues-->
 The possible values for &#39;xx&#39; are:  
 - true = Explicitly allow
 - false = Policy not set
@@ -549,7 +591,7 @@ The possible values for &#39;yy&#39; are:
 The possible values for &#39;zz&#39; are:  
 - 2 = Store recovery passwords only
 - 1 = Store recovery passwords and key packages
-
+<!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
@@ -568,9 +610,13 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how BitLocker-protected fixed drives can be recovered&quot; ().
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -591,6 +637,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose how 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Choose how BitLocker-protected fixed drives can be recovered</em></li>
@@ -598,6 +646,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -627,7 +676,7 @@ Sample value for this node to enable this policy is:
 ```xml
 <enabled/><data id="FDVAllowDRA_Name" value="xx"/><data id="FDVRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="FDVRecoveryKeyUsageDropDown_Name" value="yy"/><data id="FDVHideRecoveryPage_Name" value="xx"/><data id="FDVActiveDirectoryBackup_Name" value="xx"/><data id="FDVActiveDirectoryBackupDropDown_Name" value="zz"/><data id="FDVRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
-
+<!--SupportedValues-->
 The possible values for &#39;xx&#39; are:
 <ul>
 <li>true = Explicitly allow</li>
@@ -647,7 +696,7 @@ The possible values for &#39;zz&#39; are:
 <li>2 = Store recovery passwords only</li>
 <li>1 = Store recovery passwords and key packages</li>
 </ul>
-
+<!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
@@ -666,9 +715,13 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write access to fixed drives not protected by BitLocker&quot; (FDVDenyWriteAccess_Name).
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -689,6 +742,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Deny write access to fixed drives not protected by BitLocker</em></li>
@@ -696,6 +751,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -728,9 +784,13 @@ If you disable or do not configure this setting, all fixed data drives on the co
 ```
 
 Data type is string. Supported operations are Add, Get, Replace, and Delete.
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
+<!--Description-->
 This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write access to removable drives not protected by BitLocker&quot; (RDVDenyWriteAccess_Name).
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -751,6 +811,8 @@ This setting is a direct mapping to the Bitlocker Group Policy &quot;Deny write 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
+<!--/SupportedSKUs-->
+<!--ADMXMapped-->
 ADMX Info:
 <ul>
 <li>GP English name: <em>Deny write access to removable drives not protected by BitLocker</em></li>
@@ -758,6 +820,7 @@ ADMX Info:
 <li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Removeable Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
+<!--/ADMXMapped-->
 
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
@@ -777,13 +840,13 @@ Sample value for this node to enable this policy is:
 ```xml
  <enabled/><data id="RDVCrossOrg" value="xx"/>
 ```
-
+<!--SupportedValues-->
 The possible values for &#39;xx&#39; are:
 <ul>
 <li>true = Explicitly allow</li>
 <li>false = Policy not set</li>
 </ul>
-
+<!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
 ```xml
@@ -800,17 +863,18 @@ Disabling the policy will let the system choose the default behaviors. If you wa
                            </Item>
                          </Replace>
 ```
-
+<!--/Policy-->
+<!--Policy-->
 <a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
-
+<!--Description-->
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.
-
+<!--/Description-->
 > [!IMPORTANT]
 > Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
 > When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
-
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -831,12 +895,13 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
-
+<!--/SupportedSKUs-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
-
+<!--/SupportedValues-->
 ```xml
 <Replace>
     <CmdID>110</CmdID>
@@ -846,7 +911,6 @@ The following list shows the supported values:
         </Target>
         <Meta>
             <Format xmlns="syncml:metinf">int</Format>
-        </Meta>
         <Data>0</Data>
     </Item>
 </Replace>
@@ -861,22 +925,24 @@ The following list shows the supported values:
   >3. The user's personal OneDrive (MDM/MAM only).
 >
 >Encryption will wait until one of these three locations backs up successfully.
-
-<a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**  
+<!--/Policy-->
+<!--Policy-->
+<a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**
+<!--Description-->
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
-
+<!--/Description-->
 > [!NOTE]
 > This policy is only supported in Azure AD accounts.
 
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
 
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
-
+<!--SupportedValues-->
 The expected values for this policy are:
 
 - 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
 - 0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive.
-
+<!--/SupportedValues-->
 If you want to disable this policy use the following SyncML:
 
 ```xml
@@ -893,9 +959,18 @@ If you want to disable this policy use the following SyncML:
    </Item>
  </Replace>
 ```
+<!--/Policy-->
+
+<!--Policy-->
 
 <a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+
+<!--Description-->
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+
+<!--/Description-->
+
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -916,15 +991,28 @@ This setting initiates a client-driven recovery password refresh after an OS dri
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
+
 Value type is int. Supported operations are Add, Delete, Get, and Replace.
+
+<!--SupportedValues-->
 
 Supported values are:
 - 0 – Refresh off (default)
 - 1 – Refresh on for Azure AD-joined devices 
 - 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
 
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<!--Policy-->
+
 <a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+
+<!--Description-->
+
 This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
+<!--/Description-->
 
 The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
 
@@ -937,6 +1025,7 @@ Recovery password refresh will only occur for devices that are joined to Azure A
 Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
 - RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
 - RotateRecoveryPasswordsRotationStatus: Returns status of last request processed.
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -957,14 +1046,21 @@ Each server-side recovery key rotation is represented by a request ID. The serve
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
+
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
 
-<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**  
-This node reports compliance state of device encryption on the system.
+<!--/Policy-->
 
+<!--Policy-->
+<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
+<!--Description-->
+This node reports compliance state of device encryption on the system.
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -985,15 +1081,25 @@ This node reports compliance state of device encryption on the system.
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
 
+<!--SupportedValues-->
 Supported values:  
 - 0 - Indicates that the device is compliant.
 - Any other value represents a non-compliant device.
 
+<!--/SupportedValues-->
 Value type is int. Supported operation is Get.
 
+<!--/Policy-->
+
+<!--Policy-->
+
 <a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
+<!--Description-->
+
 This node reports the status of RotateRecoveryPasswords request. 
+<!--/Description-->
 
 Status code can be one of the following:  
 
@@ -1001,6 +1107,7 @@ Status code can be one of the following:
 - 1 - Pending
 - 0 - Pass
 - Any other code - Failure HRESULT
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -1021,11 +1128,21 @@ Status code can be one of the following:
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+<!--/SupportedSKUs-->
+
 Value type is int. Supported operation is Get.
 
+<!--/Policy-->
+
+<!--Policy-->
+
 <a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+
+<!--Description-->
 This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
+<!--/Description-->
+<!--SupportedSKUs-->
 <table>
 <tr>
     <th>Home</th>
@@ -1046,6 +1163,9 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
+
+<!--/SupportedSKUs-->
+
 Value type is string. Supported operation is Get.
 
 ### SyncML example
@@ -1211,3 +1331,4 @@ The following example is provided to show proper format and should not be taken 
     </SyncBody>
 </SyncML>
 ```
+<!--/Policy-->

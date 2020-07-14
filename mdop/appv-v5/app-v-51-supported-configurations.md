@@ -10,17 +10,15 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 09/27/2016
+ms.date: 04/02/2020
 ---
 
 
 # App-V 5.1 Supported Configurations
 
-
 This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) 5.1 in your environment.
 
 ## App-V Server system requirements
-
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
@@ -117,6 +115,12 @@ The following table lists the SQL Server versions that are supported for the App
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2019</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p></p></td>
@@ -145,7 +149,7 @@ The following table lists the SQL Server versions that are supported for the App
 </tbody>
 </table>
 
- 
+For more information on user configuration files with SQL server 2016 or later, see the [support article](https://support.microsoft.com/help/4548751/app-v-server-publishing-might-fail-when-you-apply-user-configuration-f).
 
 ### Publishing server operating system requirements
 
@@ -303,7 +307,6 @@ The following table lists the SQL Server versions that are supported for the App
 
 ## <a href="" id="bkmk-client-supp-cfgs"></a>App-V client system requirements
 
-
 The following table lists the operating systems that are supported for the App-V 5.1 client installation.
 
 **Note:** With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
@@ -416,7 +419,6 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ## Sequencer system requirements
 
-
 The following table lists the operating systems that are supported for the App-V 5.1 Sequencer installation.
 
 <table>
@@ -478,7 +480,6 @@ The following table lists the operating systems that are supported for the App-V
 See the Windows or Windows Server documentation for the hardware requirements. App-V adds no additional hardware requirements.
 
 ## <a href="" id="bkmk-supp-ver-sccm"></a>Supported versions of System Center Configuration Manager
-
 
 The App-V client supports the following versions of System Center Configuration Manager:
 
@@ -543,23 +544,8 @@ The following App-V and System Center Configuration Manager version matrix shows
 
 For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx).
 
-
-
-
-
-
 ## Related topics
-
 
 [Planning to Deploy App-V](planning-to-deploy-app-v51.md)
 
 [App-V 5.1 Prerequisites](app-v-51-prerequisites.md)
-
- 
-
- 
-
-
-
-
-

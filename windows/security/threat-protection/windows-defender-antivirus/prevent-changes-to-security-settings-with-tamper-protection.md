@@ -35,15 +35,7 @@ With tamper protection, malicious apps are prevented from taking actions like th
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 
-Tamper protection now integrates with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Security recommendations include a check to make sure tamper protection is turned on.
-
-![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
-
-In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
-
-![Turn on tamper protection](images/turnontamperprotection.png)
-
-## How it works
+### How it works
 
  Tamper protection essentially locks Windows Defender Antivirus and prevents your security settings from being changed through apps and methods like these:
 - Configuring settings in Registry Editor on your Windows machine 
@@ -55,9 +47,15 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ### What do you want to do?
 
-[Turn tamper protection on (or off) for an individual machine using Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine)
+1. Turn tamper protection on <br/>
+    - [For an individual machine, use Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine).
+    - [For your organization, use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
 
-[Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune)
+2. [View information about tampering attempts](#view-information-about-tampering-attempts).
+
+3. [Review your security recommendations](#review-your-security-recommendations).
+
+4. [Browse the frequently asked questions](#view-information-about-tampering-attempts).
 
 ## Turn tamper protection on (or off) for an individual machine
 
@@ -68,7 +66,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 > 
 > Once you’ve made this update, tamper protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
 
-If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
+If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to do this.
 
 1. Click **Start**, and start typing *Defender*. In the search results, select **Windows Security**.
 
@@ -76,39 +74,54 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
+Here's what you see in the Windows Security app:
+
+![Tamper protection turned on in Windows 10 Home](images/tamperprotectionturnedon.png)
+
 ## Turn tamper protection on (or off) for your organization using Intune
 
-If you are part of your organization's security team, you can turn tamper protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune). (This feature is rolling out now; if you don't have it yet, you should very soon, assuming your organization has [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md) (Microsoft Defender ATP) and that you meet the prerequisites listed below.) 
+If you are part of your organization's security team, and your subscription includes [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the Microsoft 365 Device Management portal ([https://aka.ms/intuneportal](https://aka.ms/intuneportal)). 
+
+> [!NOTE]
+> The ability to manage tamper protection in Intune is rolling out now; if you don't have it yet, you should very soon, assuming your organization has [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md) (Microsoft Defender ATP) and that you meet the prerequisites listed below. 
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
-1. Make sure your organization meets all of the following requirements:
+1. Make sure your organization meets all of the following requirements to manage tamper protection using Intune:
 
-    - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
-    - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
-    - Your Windows machines must be running [Windows OS 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later.
-    - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above)
-    - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). (See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md).)
+    - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in [Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)). 
+    - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; this is included in Microsoft 365 E5.)
+    - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
+    - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
+    - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md).)
 
 2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
 
 3. Select **Device configuration** > **Profiles**.
 
-4. Create a profile that includes the following settings:
+4. Create a profile as follows:
 
-    - **Platform**: Windows 10 and later
+    - Platform: **Windows 10 and later**
 
-    - **ProfileType**: Endpoint protection
-    
-    - **Settings** > Windows Defender Security Center > Tamper Protection 
+    - Profile type: **Endpoint protection**
+
+    - Category: **Microsoft Defender Security Center**
+
+    - Tamper Protection: **Enabled**
+
+    ![Turn tamper protection on with Intune](images/turnontamperprotect-intune.png)
 
 5. Assign the profile to one or more groups.
 
-### Are you using Windows OS 1709?
+Here's what you see in the Windows Security app:
 
-If you are using Windows OS 1709, you don't have the Windows Security app on your computer. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)
 
-#### To determine whether tamper protection is turned on by using PowerShell
+### Are you using Windows OS 1709, 1803, or 1809?
+
+If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
+
+#### Use PowerShell to determine whether tamper protection is turned on
 
 1. Open the Windows PowerShell app.
 
@@ -116,21 +129,33 @@ If you are using Windows OS 1709, you don't have the Windows Security app on you
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
-#### To determine whether tamper protection is turned on by viewing a registry key
+## View information about tampering attempts
 
-1. Open the Registry Editor app.
+Tampering attempts typically indicate bigger cyberattacks. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats. 
 
-2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
+When a tampering attempt is detected, an alert is raised in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
 
-3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
-    - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
-    - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
+![Microsoft Defender Security Center](images/tamperattemptalert.png)
+
+Using [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) and [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in Microsoft Defender ATP, your security operations team can investigate and address such attempts. 
+
+## Review your security recommendations
+
+Tamper protection integrates with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) capabilities. [Security recommendations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) include making sure tamper protection is turned on. For example, you can search on *tamper*, as shown in the following image: 
+
+![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
+
+In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
+
+![Turn on tamper protection](images/tamperprotectsecurityrecos.png)
+
+To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
 ## Frequently asked questions
 
 ### To which Windows OS versions is configuring tamper protection is applicable?
 
-[Windows 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 ### Is configuring tamper protection in Intune supported on servers?
 
@@ -138,7 +163,7 @@ No
 
 ### Will tamper protection have any impact on third party antivirus registration?
 
-No, third-party antivirus will continue to register with the Windows Security application.
+No. Third-party antivirus offerings will continue to register with the Windows Security application.
 
 ### What happens if Windows Defender Antivirus is not active on a device?
 
@@ -150,11 +175,9 @@ If you are a home user, see [Turn tamper protection on (or off) for an individua
 
 If you are an organization using [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
 
- 
 ### How does configuring tamper protection in Intune affect how I manage Windows Defender Antivirus through my group policy?
 
-Your regular group policy doesn’t apply to tamper protection, and changes to Windows Defender Antivirus settings will be ignored when tamper protection is on.
-
+Your regular group policy doesn’t apply to tamper protection, and changes to Windows Defender Antivirus settings are ignored when tamper protection is on.
 
 >[!NOTE]
 >A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Windows Defender Antivirus features protected by tamper protection. To avoid any potential delays, we recommend that you remove settings that control Windows Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Windows Defender Antivirus settings. <br><br>
@@ -166,22 +189,22 @@ Value DisableAntiSpyware = 0 <br><br>
 Computer Configuration\Administrative Templates\Windows Components\Windows Defender Antivirus\Real-time Protection\
 Value DisableRealtimeMonitoring = 0
 
-
 ### For Microsoft Defender ATP E5, is configuring tamper protection in Intune targeted to the entire organization only?
 
-Configuring tamper protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
+Configuring tamper protection in Intune can be targeted to your entire organization as well as to specific devices and user groups.
 
-### Can I configure tamper protection in System Center Configuration Manager?
 
-Currently we do not have support to manage tamper protection through System Center Configuration Manager.
+### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
+
+Currently we do not have support to manage Tamper Protection through Microsoft Endpoint Configuration Manager.
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
 Currently, configuring tamper protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-### What happens if I try to change Microsoft Defender ATP settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when tamper protection is enabled on a device?
+### What happens if I try to change Microsoft Defender ATP settings in Intune, Microsoft Endpoint Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
-You won’t be able to change the features that are protected by tamper protection; those change requests are ignored.
+You won’t be able to change the features that are protected by tamper protection; such change requests are ignored.
 
 ### I’m an enterprise customer. Can local admins change tamper protection on their devices?
 
@@ -197,18 +220,18 @@ Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securi
 
 In addition, your security operations team can use hunting queries, such as the following:
 
-`AlertEvents | where Title == "Tamper Protection bypass"`
+`DeviceAlertEvents | where Title == "Tamper Protection bypass"`
+
+[View information about tampering attempts](#view-information-about-tampering-attempts).
 
 ### Will there be a group policy setting for tamper protection?
 
 No.
 
-## Related resources
-
-[Windows 10 Enterprise Security](https://docs.microsoft.com/windows/security/index)
+## Related articles
 
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
-[Microsoft 365 Enterprise overview (at a glance)](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#at-a-glance)
+[Get an overview of Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 
-[Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](why-use-microsoft-antivirus.md)

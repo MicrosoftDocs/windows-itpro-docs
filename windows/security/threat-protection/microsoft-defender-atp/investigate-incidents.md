@@ -30,6 +30,9 @@ When you investigate an incident, you'll see:
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUV]
+
+
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, investigations, evidence, graph). 
 

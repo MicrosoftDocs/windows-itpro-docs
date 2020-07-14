@@ -3,7 +3,7 @@ title: Install apps on your Microsoft Surface Hub
 description: Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.
 ms.assetid: 3885CB45-D496-4424-8533-C9E3D0EDFD94
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: install apps, Microsoft Store, Microsoft Store for Business
 ms.prod: surface-hub
 ms.sitesec: library
@@ -129,17 +129,16 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 
 | MDM provider                | Supports offline-licensed app packages |
 |-----------------------------|----------------------------------------|
-| On-premises MDM with System Center Configuration Manager (beginning in version 1602) | Yes |
-| Hybrid MDM with System Center Configuration Manager and Microsoft Intune | Yes |
-| [Microsoft Intune standalone](https://docs.microsoft.com/intune/windows-store-for-business) | Yes |
+| On-premises MDM with  Configuration Manager (beginning in version 1602) | Yes |
+|
 | Third-party MDM provider    | Check to make sure your MDM provider supports deploying offline-licensed app packages. |
 
-**To deploy apps remotely using System Center Configuration Manager (either on-prem MDM or hybrid MDM)**
+**To deploy apps remotely using Microsoft Endpoint Configuration Manager**
 
 > [!NOTE]
-> These instructions are based on the current branch of System Center Configuration Manager.
+> These instructions are based on the current branch of Microsoft Endpoint Configuration Manager.
 
-1. Enroll your Surface Hubs to System Center Configuration Manager. For more information, see [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm).
+1. Enroll your Surface Hubs to Configuration Manager. For more information, see [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm).
 2. Download the offline-licensed app package, the *encoded* license file, and any necessary dependency files from the Store for Business. For more information, see [Download an offline-licensed app](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app). Place the downloaded files in the same folder on a network share.
 3. In the **Software Library** workspace of the Configuration Manager console, click **Overview** > **Application Management** > **Applications**.
 4. On the **Home** tab, in the **Create** group, click **Create Application**.
@@ -150,11 +149,11 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 9. On the **General Information** page, complete additional details about the app. Some of this information might already be populated if it was automatically obtained from the app package.
 10. Click **Next**, review the application information on the Summary page, and then complete the Create Application Wizard. 
 11. Create a deployment type for the application. For more information, see [Create deployment types for the application](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application).
-12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
-13. As needed, update the app by downloading a new package from the Store for Business, and publishing an application revision in Configuration Manager. For more information, see [Update and retire applications with System Center Configuration Manager](https://technet.microsoft.com/library/mt595704.aspx). 
+12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
+13. As needed, update the app by downloading a new package from the Store for Business, and publishing an application revision in Configuration Manager. For more information, see [Update and retire applications with Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt595704.aspx). 
 
 > [!NOTE] 
-> If you are using System Center Configuration Manager (current branch), you can bypass the above steps by connecting the Store for Business to System Center Configuration Manager. By doing so, you can synchronize the list of apps you've purchased with System Center Configuration Manager, view these in the Configuration Manager console, and deploy them like you would any other app. For more information, see [Manage apps from the Microsoft Store for Business with System Center Configuration Manager](https://technet.microsoft.com/library/mt740630.aspx).
+> If you are using Microsoft Endpoint Configuration Manager (current branch), you can bypass the above steps by connecting the Store for Business to Configuration Manager. By doing so, you can synchronize the list of apps you've purchased with Configuration Manager, view these in the Configuration Manager console, and deploy them like you would any other app. For more information, see [Manage apps from the Microsoft Store for Business with Configuration Manager](https://technet.microsoft.com/library/mt740630.aspx).
 
 
 ## Summary

@@ -89,7 +89,7 @@ The following diagram shows the EnterpriseAppVManagement configuration service p
 - SYNC\_ERR\_PUBLISH\_GROUP_PACKAGES (3) - Publish group packages failed during publish.
 - SYNC\_ERR\_UNPUBLISH_PACKAGES (4) - Unpublish packages failed during publish.
 - SYNC\_ERR\_NEW_POLICY_WRITE (5) - New policy write failed during publish.
-- SYNC\_ERR\_MULTIPLE\_DURING_PUBLISH (6) - Multiple non-fatal errors occured during publish.
+- SYNC\_ERR\_MULTIPLE\_DURING_PUBLISH (6) - Multiple non-fatal errors occurred during publish.
 
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 

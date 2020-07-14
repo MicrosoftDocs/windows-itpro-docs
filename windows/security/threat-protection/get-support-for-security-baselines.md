@@ -40,7 +40,7 @@ The toolkit supports formats created by the Windows GPO backup feature (.pol, .i
 
 Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently developing a tool to provide customers with these features.
 
-**Does SCT support the creation of System Center Configuration Manager (SCCM) DCM packs?**
+**Does SCT support the creation of Microsoft Endpoint Configuration Manager DCM packs?**
 
 No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 

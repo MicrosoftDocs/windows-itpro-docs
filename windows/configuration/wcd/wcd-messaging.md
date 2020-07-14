@@ -81,7 +81,7 @@ SyncSender | Specify a value for SyncSender that is greater than 3 characters bu
 
 ## PerSimSettings 
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click **Add**, and then configure the folowing settings.
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click **Add**, and then configure the following settings.
 
 ### AllowMmsIfDataIsOff
 

@@ -1,5 +1,5 @@
 ---
-title: Configure how attack surface reduction rules work to finetune protection in your network
+title: Configure how attack surface reduction rules work to fine-tune protection in your network
 description: You can individually set rules in audit, block, or disabled modes, and add files and folders that should be excluded from ASR
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, customize, configure, exclude
 search.product: eADQiWindows 10XVcnh
@@ -26,11 +26,11 @@ manager: dansimp
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
+Attack surface reduction rules help prevent software behaviors that are often abused to compromise your device or network. For example, an attacker might try to run an unsigned script off of a USB drive, or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve your organization's defensive posture.
 
-This topic describes how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
+Learn how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
 
-You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
+Attack surface reduction rules are supported on Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019. You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
 
 ## Exclude files and folders
 
@@ -39,12 +39,12 @@ You can exclude files and folders from being evaluated by attack surface reducti
 > [!WARNING]
 > This could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion applies to all rules that allow exclusions. You can specify an individual file, folder path, or the fully qualified domain name for a resource, but you cannot limit an exclusion to certain rules.
+An exclusion applies to all rules that allow exclusions. You can specify an individual file, folder path, or the fully qualified domain name for a resource, but you cannot limit an exclusion to a specific rule.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
 Attack surface reduction supports environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
-If you are encountering problems with rules detecting files that you believe should not be detected, you should [use audit mode first to test the rule](evaluate-attack-surface-reduction.md).
+If you are encountering problems with rules detecting files that you believe should not be detected, you should [use audit mode to test the rule](evaluate-attack-surface-reduction.md).
 
 Rule description | GUID
 -|-|-
@@ -76,6 +76,9 @@ See the [attack surface reduction](attack-surface-reduction.md) topic for detail
 
 4. Double-click the **Exclude files and paths from Attack surface reduction Rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+
 ### Use PowerShell to exclude files and folders
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
@@ -103,3 +106,4 @@ See the [Windows Security](../windows-defender-security-center/windows-defender-
 * [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)

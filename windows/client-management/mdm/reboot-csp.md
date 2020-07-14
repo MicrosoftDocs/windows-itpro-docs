@@ -45,11 +45,15 @@ Setting a null (empty) date will delete the existing schedule. In accordance wit
 
 <p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
 
+<p style="margin-left: 20px">The supported data type is "String".</p>
+
 <a href="" id="schedule-dailyrecurrent"></a>**Schedule/DailyRecurrent**  
 <p style="margin-left: 20px">This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. The CSP will return the date time in the following format: 2018-06-29T10:00:00+01:00.  </br>
 Example to configure: 2018-10-25T18:00:00</p>
 
 <p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
+
+<p style="margin-left: 20px">The supported data type is "String".</p>
 
 ## Related topics
 

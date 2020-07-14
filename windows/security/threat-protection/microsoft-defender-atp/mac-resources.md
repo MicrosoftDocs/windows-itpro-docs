@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -59,7 +59,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 If an error occurs during installation, the installer will only report a general failure.
 
-The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
+The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
 ## Uninstalling
 
@@ -72,6 +72,7 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 ### From the command line
 
 - ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
+- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
 
 ## Configuring from the command line
 
@@ -98,29 +99,10 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |EDR          |Add group tag to machine. EDR tags are used for managing machine groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
 |EDR          |Remove group tag from machine              |`mdatp --edr --remove-tag [name]`                                            |
 
+## Client Microsoft Defender ATP quarantine directory
+
+`/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
+
 ## Microsoft Defender ATP portal information
 
-In the Microsoft Defender ATP portal, you'll see two categories of information.
-
-Antivirus alerts, including:
-
-  - Severity
-  - Scan type
-  - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
-  - File information (name, path, size, and hash)
-  - Threat information (name, type, and state)
-
-Device information, including:
-
-  - Machine identifier
-  - Tenant identifier
-  - App version
-  - Hostname
-  - OS type
-  - OS version
-  - Computer model
-  - Processor architecture
-  - Whether the device is a virtual machine
-  
-  > [!NOTE]
-  > Certain device information might be subject to upcoming releases. To send us feedback, use the Microsoft Defender ATP for Mac app and select **Help** > **Send feedback** on your device. Optionally, use the **Feedback** button in the Microsoft Defender Security Center.
+[This blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) provides detailed guidance on what to expect in Microsoft Defender ATP Security Center.

@@ -48,7 +48,7 @@ For detailed instructions on how to create virtual application packages using Ap
 
 You can deploy Office 2010 packages by using any of the following App-V deployment methods:
 
-* System Center Configuration Manager
+* Microsoft Endpoint Configuration Manager
 * App-V server
 * Stand-alone through Windows PowerShell commands
 

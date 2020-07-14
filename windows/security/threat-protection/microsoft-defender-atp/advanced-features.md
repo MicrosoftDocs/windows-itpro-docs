@@ -20,6 +20,7 @@ ms.topic: article
 # Configure advanced features in Microsoft Defender ATP
 
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
@@ -30,32 +31,36 @@ Use the following advanced features to get better protected from potentially mal
 
 ## Automated investigation
 
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigation](automated-investigations.md).
+Turn on this feature to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigation](automated-investigations.md).
 
 ## Live response
 
-When you enable this feature, users with the appropriate permissions can initiate a live response session on machines.
+Turn on this feature so that users with the appropriate permissions can start a live response session on machines.
 
-For more information on role assignments see, [Create and manage roles](user-roles.md).
+For more information about role assignments, see [Create and manage roles](user-roles.md).
 
 ## Live response unsigned script execution
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
-## Auto-resolve remediated alerts
+## Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809 the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809 the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
 >[!TIP]
 >For tenants created prior that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
 
 >[!NOTE]
-> - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
+>
+>- The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
 >- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
 ## Allow or block file
 
-Blocking is only available if your organization uses Windows Defender Antivirus as the active antimalware solution, and if the cloud-based protection feature is enabled.
+Blocking is only available if your organization fulfills these requirements:
+
+- Uses Windows Defender Antivirus as the active antimalware solution and,
+- The cloud-based protection feature is enabled
 
 This feature enables you to block potentially malicious files in your network. Blocking a file will prevent it from being read, written, or executed on machines in your organization.
 
@@ -69,24 +74,22 @@ To turn **Allow or block** files on:
 
 1. Select **Save preferences** at the bottom of the page.
 
-Once you have enabled this feature, you can [block files](respond-file-alerts.md#allow-or-block-file) via the **Add Indicator** tab on a file's profile page.
-
+After turning on this feature, you can [block files](respond-file-alerts.md#allow-or-block-file) via the **Add Indicator** tab on a file's profile page.
 
 ## Custom network indicators
 
-Enabling this feature allows you to create indicators for IP addresses, domains, or URLs which determine whether they will be allowed or blocked based on your custom indicator list. 
+Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they will be allowed or blocked based on your custom indicator list.
 
-To use this feature, machines must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834). 
+To use this feature, machines must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 For more information, see [Manage indicators](manage-indicators.md).
 
 >[!NOTE]
 >Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Microsoft Defender ATP data.
 
-
 ## Show user details
 
-When you enable this feature, you'll be able to see user details stored in Azure Active Directory including a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
+Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
 
 - Security operations dashboard
 - Alert queue
@@ -108,23 +111,27 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature.
 
+## Microsoft Secure Score
+
+Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+
 ### Enable the Microsoft Defender ATP integration from the Azure ATP portal
 
 To receive contextual machine integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
 
-1. Login to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+1. Log in to the [Azure portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
-2. Click **Create a workspace** or use your primary workspace.
+2. Click **Create your instance**.
 
 3. Toggle the Integration setting to **On** and click **Save**.
 
-When you complete the integration steps on both portals, you'll be able to see relevant alerts in the machine details or user details page.
+After completing the integration steps on both portals, you'll be able to see relevant alerts in the machine details or user details page.
 
 ## Office 365 Threat Intelligence connection
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
+When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows machines.
 
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
@@ -133,7 +140,7 @@ To receive contextual machine integration in Office 365 Threat Intelligence, you
 
 ## Microsoft Threat Experts
 
-Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability, while  experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Microsoft Defender ATP portal's alerts dashboard and via email if you configure it.
+Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Microsoft Defender ATP portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
 >The Microsoft Threat Experts capability in Microsoft Defender ATP is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
@@ -147,11 +154,11 @@ Enabling this setting forwards Microsoft Defender ATP signals to Microsoft Cloud
 
 ## Azure Information Protection
 
-Turning this setting on forwards signals to Azure Information Protection, giving data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
+Turning on this setting allows signals to be forwarded to Azure Information Protection. It gives data owners and administrators visibility into protected data on onboarded machines and machine risk ratings.
 
 ## Microsoft Intune connection
 
-Microsoft Defender ATP can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [enable this feature](configure-conditional-access.md), you'll be able to share Microsoft Defender ATP device information with Intune, enhancing policy enforcement.
+Microsoft Defender ATP can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Microsoft Defender ATP device information with Intune, enhancing policy enforcement.
 
 >[!IMPORTANT]
 >You'll need to enable the integration on both Intune and Microsoft Defender ATP to use this feature. For more information on specific steps, see [Configure Conditional Access in Microsoft Defender ATP](configure-conditional-access.md).
@@ -172,7 +179,7 @@ When you enable Intune integration, Intune will automatically create a classic C
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
-You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
+You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 
 ## Enable advanced features
 
@@ -185,4 +192,3 @@ You'll have access to upcoming features which you can provide feedback on to hel
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
 - [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Enable Secure Score security controls](enable-secure-score.md)

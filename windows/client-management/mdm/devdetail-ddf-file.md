@@ -21,7 +21,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -474,6 +474,28 @@ The XML below is for Windows 10, version 1809.
               <Replace />
             </AccessType>
             <Description>User-specified device name</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DNSComputerName</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This node specifies the DNS name for a device. This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution: %RAND:&lt;# of digits&gt;% and %SERIAL%. Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. If both macros are in the string, the RANDOM macro will take priority over the SERIAL macro (SERIAL will be ignored). The server must explicitly reboot the device for this value to take effect. This value has a maximum allowed length of 63 characters as per DNS standards.</Description>
             <DFFormat>
               <chr />
             </DFFormat>

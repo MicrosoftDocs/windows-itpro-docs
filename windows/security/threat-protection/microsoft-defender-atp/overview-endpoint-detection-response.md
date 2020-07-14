@@ -32,12 +32,10 @@ Inspired by the "assume breach" mindset, Microsoft Defender ATP continuously col
 
 The response capabilities give you the power to promptly remediate threats by acting on the affected entities.
 
-## In this section
 
-Topic | Description
-:---|:---
-[Security operations dashboard](security-operations-dashboard.md) | Explore a high level overview of detections, highlighting where response actions are needed.
-[Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) | View and organize the incidents queue, and manage and investigate alerts.
-[Alerts queue](alerts-queue.md) | View and organize the machine alerts queue, and manage and investigate alerts.
-[Machines list](machines-view-overview.md) | Investigate machines with generated alerts and search for specific events over time.
-[Take response actions](response-actions.md) | Learn about the available response actions and apply them to machines and files.
+## Related topics
+- [Security operations dashboard](security-operations-dashboard.md)
+- [Incidents queue](view-incidents-queue.md)
+- [Alerts queue](alerts-queue.md)
+- [Machines list](machines-view-overview.md)
+

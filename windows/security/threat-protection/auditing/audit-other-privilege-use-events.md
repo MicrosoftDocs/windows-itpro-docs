@@ -2,7 +2,7 @@
 title: Audit Other Privilege Use Events (Windows 10)
 description: This security policy setting is not used.
 ms.assetid: 5f7f5b25-42a6-499f-8aa2-01ac79a2a63c
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
@@ -17,8 +17,8 @@ ms.date: 04/19/2017
 # Audit Other Privilege Use Events
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows Server 2016
 
 
 This auditing subcategory should not have any events in it, but for some reason Success auditing will enable generation of event 4985(S): The state of a transaction has changed.
@@ -31,7 +31,7 @@ This auditing subcategory should not have any events in it, but for some reason 
 
 **Events List:**
 
--   [4985](event-4674.md)(S): The state of a transaction has changed.
+-   [4985](event-4985.md)(S): The state of a transaction has changed.
 
 
 

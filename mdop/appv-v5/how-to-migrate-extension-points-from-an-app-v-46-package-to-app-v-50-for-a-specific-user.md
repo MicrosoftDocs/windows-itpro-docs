@@ -29,7 +29,7 @@ Use the following procedure to migrate packages created with App-V using the use
 
    &lt;UserConfiguration PackageId=&lt;Package ID&gt; DisplayName=&lt;Name of the Package&gt;
 
-   xmlns="<http://schemas.microsoft.com/appv/2010/userconfiguration"&gt>; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
+   xmlns="<https://schemas.microsoft.com/appv/2010/userconfiguration"&gt>; &lt;ManagingAuthority TakeoverExtensionPointsFrom46="true"
 
    PackageName=&lt;Package ID&gt;
 

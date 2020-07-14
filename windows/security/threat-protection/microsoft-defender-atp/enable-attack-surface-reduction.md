@@ -1,6 +1,6 @@
 ---
 title: Enable ASR rules individually to protect your organization
-description: Enable ASR rules to protect your devices from attacks the use macros, scripts, and common injection techniques
+description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,7 +19,7 @@ manager: dansimp
 
 # Enable attack surface reduction rules
 
-[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions and apps that malware often uses to infect computers. You can set attack surface reduction rules for computers running Windows 10 or Windows Server 2019.
+[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions that malware often abuse to compromise devices and networks. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
 
 Each ASR rule contains three settings:
 
@@ -33,11 +33,11 @@ You can enable attack surface reduction rules by using any of these methods:
 
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or SCCM is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Endpoint Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
@@ -54,15 +54,15 @@ You can exclude files and folders from being evaluated by most attack surface re
 > * Block process creations originating from PSExec and WMI commands
 > * Block JavaScript or VBScript from launching downloaded executable content
 
-You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
+You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
-ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 The following procedures for enabling ASR rules include instructions for how to exclude files and folders.
 
 ## Intune
 
-1. In Intune, select **Device configuration** > **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
+1. Select **Device configuration** > **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
 
@@ -76,7 +76,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-The following is a sample for reference, using [GUID values for ASR rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules).
+The following is a sample for reference, using [GUID values for ASR rules](attack-surface-reduction.md#attack-surface-reduction-rules).
 
 OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules
 
@@ -99,9 +99,9 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.
 
-## SCCM
+## Microsoft Endpoint Configuration Manager
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
 1. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
 1. Choose which rules will block or audit actions and click **Next**.
@@ -111,7 +111,7 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 ## Group Policy
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, SCCM, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -131,10 +131,13 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
+> [!WARNING]
+> Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+
 ## PowerShell
 
->[!WARNING]
->If you manage your computers and devices with Intune, SCCM, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> [!WARNING]
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
 
@@ -186,4 +189,5 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 * [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
 * [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
-* [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+* [Attack surface reduction FAQ](attack-surface-reduction.md)
+* [Enable cloud-delivered protection](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md)

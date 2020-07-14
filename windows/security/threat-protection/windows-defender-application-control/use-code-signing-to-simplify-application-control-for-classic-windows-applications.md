@@ -31,7 +31,7 @@ This topic covers guidelines for using code signing control classic Windows apps
 
 ## Reviewing your applications: application signing and catalog files 
 
-Typically, WDAC policies are configured to use the application's signing certificate as part or all of what identifies the application as trusted. This means that applications must either use embedded signing—where the signature is part of the binary—or catalog signing, where you generate a “catalog file” from the applications, sign it, and through the signed catalog file, configure the WDAC policy to recognize the applications as signed.
+Typically, WDAC policies are configured to use the application's signing certificate as part or all of what identifies the application as trusted. This means that applications must either use embedded signing—where the signature is part of the binary—or catalog signing, where you generate a "catalog file" from the applications, sign it, and through the signed catalog file, configure the WDAC policy to recognize the applications as signed.
 
 Catalog files can be very useful for unsigned LOB applications that cannot easily be given an embedded signature. However, catalogs need to be updated each time an application is updated. In contrast, with embedded signing, your WDAC policies typically do not have to be updated when an application is updated. For this reason, if code-signing is or can be included in your in-house application development process, it can simplify the management of WDAC (compared to using catalog signing).
 
@@ -45,7 +45,7 @@ To obtain signed applications or embed signatures in your in-house applications,
 
 To use catalog signing, you can choose from the following options:
 
-- Use the Windows Defender Device Guard signing portal available in the Microsoft Store for Business and Education. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. For more information, see [Device Guard signing](https://technet.microsoft.com/itpro/windows/manage/device-guard-signing-portal).
+- Use the Windows Defender signing portal available in the Microsoft Store for Business and Education. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. 
 
 - Create your own catalog files, which are described in the next section. 
 
@@ -53,12 +53,12 @@ To use catalog signing, you can choose from the following options:
 
 Catalog files (which you can create in Windows 10 with a tool called Package Inspector) contain information about all deployed and executed binary files associated with your trusted but unsigned applications. When you create catalog files, you can also include signed applications for which you do not want to trust the signer but rather the specific application. After creating a catalog, you must sign the catalog file itself by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. Then you can distribute the catalog, so that your trusted applications can be handled by WDAC in the same way as any other signed application.
 
-Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries’ hash values are updated each time an application is updated, which requires the catalog file to be updated also.
+Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries' hash values are updated each time an application is updated, which requires the catalog file to be updated also.
 
 After you have created and signed your catalog files, you can configure your WDAC policies to trust the signer or signing certificate of those files.
 
 > [!NOTE]
-> Package Inspector only works on operating systems that support Windows Defender Device Guard, such as Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT.
+> Package Inspector only works on operating systems that support Windows Defender, such as Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT.
 
 For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
 

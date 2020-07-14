@@ -8,7 +8,8 @@ keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2016
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -79,9 +80,9 @@ Additional changes for Windows Hello in Windows 10 Enterprise 2016 LTSC:
 
 [Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
 
-### Bitlocker
+### BitLocker
 
-#### New Bitlocker features
+#### New BitLocker features
 
 - **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
   It provides the following benefits:

@@ -7,7 +7,6 @@ ms.sitesec: library
 author: coveminer
 ms.author: v-jokai
 ms.topic: article
-ms.date: 03/12/2019
 ---
 # Surface System SKU Reference
 This document provides a reference of System SKU names that you can use to quickly determine the machine state of a specific device using PowerShell, WMI, and related tools. 
@@ -43,7 +42,7 @@ You can also find the System SKU and System Model for a device in System Informa
 - Click **Start** >  **MSInfo32**.  
 
 ### WMI
-You can use System SKU variables in a Task Sequence WMI Condition in the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. For example: 
+You can use System SKU variables in a Task Sequence WMI Condition in the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. For example: 
 
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"

@@ -26,21 +26,25 @@ ms.topic: article
 ## Before you begin 
 Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up.
 
->[!NOTE]
->Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
+Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
+
+If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on Demand subscription. 
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts**.
 
-2. Click **Apply**. 
+2. Click **Apply**.
+
 ![Image of Microsoft Threat Experts settings](images/mte-collaboratewithmte.png)
 
-3. Enter your name and email address so that Microsoft can get back to you on your application. 
+3. Enter your name and email address so that Microsoft can get back to you on your application.
+
 ![Image of Microsoft Threat Experts application](images/mte-apply.png)
 
-4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved.   
+4. Read the [privacy statement](https://privacy.microsoft.com/en-us/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
+
 ![Image of Microsoft Threat Experts application confirmation](images/mte-applicationconfirmation.png)
 
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
@@ -73,15 +77,17 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
->![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
->A flyout screen opens. The following screen shows when you are on a trial subscription. 
->![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+    A flyout screen opens. The following screen shows when you are on a trial subscription.
 
-> The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription. 
->![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+    ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
 
->The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
+    The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
+
+    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+
+    The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
 3.  In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
   

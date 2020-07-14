@@ -100,8 +100,8 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="http://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="http://www.microsoft.com/download/details.aspx?id=34595">http://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="https://www.microsoft.com/download/details.aspx?id=34595">https://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Note</strong><br/><p>Installing PowerShell 3.0 requires a restart.</p>
@@ -109,7 +109,7 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <div>
 
 </div></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong><br/><p>You can download and install the previous KB article. However, it may have been replaced with a more recent version.</p>
@@ -120,12 +120,12 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <li><p>The client installer (.exe) will detect if it is necessary to install the following prerequisites, and it will do so accordingly:</p>
 <p></p>
 <ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="http://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="http://www.microsoft.com/download/details.aspx?id=40784">http://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="https://www.microsoft.com/download/details.aspx?id=40784">https://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
 <p>This prerequisite is only required if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
 <li><p><a href="https://www.microsoft.com/download/details.aspx?id=26999" data-raw-source="[The Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=26999)">The Microsoft Visual C++ 2010 Redistributable</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=26999" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=26999">https://go.microsoft.com/fwlink/?LinkId=26999</a>)</p>
 <p></p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638)">Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="http://www.microsoft.com/download/details.aspx?id=5638">http://www.microsoft.com/download/details.aspx?id=5638</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638)">Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="https://www.microsoft.com/download/details.aspx?id=5638">https://www.microsoft.com/download/details.aspx?id=5638</a>)</p></li>
 </ul></li>
 </ul></td>
 </tr>
@@ -158,8 +158,8 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft.NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft.NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="http://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="http://www.microsoft.com/download/details.aspx?id=34595">http://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft.NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft.NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="https://www.microsoft.com/download/details.aspx?id=34595">https://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Note</strong><br/><p>Installing PowerShell 3.0 requires a restart.</p>
@@ -178,12 +178,12 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <li><p>The client (.exe) installer will detect if it is necessary to install the following prerequisites, and it will do so accordingly:</p>
 <p></p>
 <ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="http://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="http://www.microsoft.com/download/details.aspx?id=40784">http://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="https://www.microsoft.com/download/details.aspx?id=40784">https://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
 <p>This prerequisite is required only if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
 <li><p><a href="https://www.microsoft.com/download/details.aspx?id=26999" data-raw-source="[The Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=26999)">The Microsoft Visual C++ 2010 Redistributable</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=26999" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=26999">https://go.microsoft.com/fwlink/?LinkId=26999</a>)</p>
 <p></p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638)">Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="http://www.microsoft.com/download/details.aspx?id=5638">http://www.microsoft.com/download/details.aspx?id=5638</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://www.microsoft.com/download/details.aspx?id=5638)">Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=5638" data-raw-source="https://www.microsoft.com/download/details.aspx?id=5638">https://www.microsoft.com/download/details.aspx?id=5638</a>)</p></li>
 </ul></li>
 </ul></td>
 </tr>
@@ -221,14 +221,14 @@ If the system requirements of a locally installed application exceed the require
 <tr class="odd">
 <td align="left"><p><strong>Software requirements</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="http://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="http://www.microsoft.com/download/details.aspx?id=40784">http://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="[Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)">Visual C++ Redistributable Packages for Visual Studio 2013</a> (<a href="https://www.microsoft.com/download/details.aspx?id=40784" data-raw-source="https://www.microsoft.com/download/details.aspx?id=40784">https://www.microsoft.com/download/details.aspx?id=40784</a>)</p>
 <p>This prerequisite is required only if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2.</p>
 <p></p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p>
 <p></p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="http://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="http://www.microsoft.com/download/details.aspx?id=34595">http://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="https://www.microsoft.com/download/details.aspx?id=34595">https://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
 <p></p></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p></li>
 <li><p>For computers running Microsoft Windows Server 2008 R2 SP1, download and install <a href="https://go.microsoft.com/fwlink/?LinkId=286102" data-raw-source="[KB2533623](https://go.microsoft.com/fwlink/?LinkId=286102 )">KB2533623</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=286102" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=286102">https://go.microsoft.com/fwlink/?LinkId=286102</a>)</p>
 <p></p>
@@ -254,7 +254,7 @@ The following prerequisites are already installed for computers that run Windows
 
 -   Windows PowerShell 3.0
 
--   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)
+-   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (https://support.microsoft.com/kb/2533623)
 
     **Important**  
     You can still download install the previous KB. However, it may have been replaced with a more recent version.
@@ -292,8 +292,8 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Management Server</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="http://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="http://www.microsoft.com/download/details.aspx?id=34595">http://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="https://www.microsoft.com/download/details.aspx?id=34595">https://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
 <div class="alert">
 <strong>Note</strong><br/><p>Installing PowerShell 3.0 requires a restart.</p>
 </div>
@@ -301,7 +301,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 
 </div></li>
 <li><p>Windows Web Server with the IIS role enabled and the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console).</p></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong><br/><p>You can still download install the previous KB. However, it may have been replaced with a more recent version.</p>
@@ -309,7 +309,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <div>
 
 </div></li>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=13523" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://www.microsoft.com/download/details.aspx?id=13523)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=13523" data-raw-source="http://www.microsoft.com/download/details.aspx?id=13523">http://www.microsoft.com/download/details.aspx?id=13523</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=13523" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://www.microsoft.com/download/details.aspx?id=13523)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=13523" data-raw-source="https://www.microsoft.com/download/details.aspx?id=13523">https://www.microsoft.com/download/details.aspx?id=13523</a>)</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=267110">https://go.microsoft.com/fwlink/?LinkId=267110</a>)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>
 </ul>
@@ -339,7 +339,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 
 </div>
 <ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a>(<a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=267110">https://go.microsoft.com/fwlink/?LinkId=267110</a>)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 management database.</p>
@@ -355,7 +355,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Reporting Server</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a>(<a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=267110">https://go.microsoft.com/fwlink/?LinkId=267110</a>)</p></li>
 <li><div class="alert">
 <strong>Note</strong><br/><p>To help reduce the risk of unwanted or malicious data being sent to the reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.</p>
@@ -380,7 +380,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 
 </div>
 <ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a>(<a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=267110">https://go.microsoft.com/fwlink/?LinkId=267110</a>)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 reporting database.</p>
@@ -396,7 +396,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <tr class="odd">
 <td align="left"><p><strong>Publishing Server</strong></p></td>
 <td align="left"><ul>
-<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="http://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="http://www.microsoft.com/download/details.aspx?id=17718">http://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
+<li><p><a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="[Microsoft .NET Framework 4 (Full Package)](https://www.microsoft.com/download/details.aspx?id=17718)">Microsoft .NET Framework 4 (Full Package)</a> (<a href="https://www.microsoft.com/download/details.aspx?id=17718" data-raw-source="https://www.microsoft.com/download/details.aspx?id=17718">https://www.microsoft.com/download/details.aspx?id=17718</a>)</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a>(<a href="https://go.microsoft.com/fwlink/?LinkId=267110" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=267110">https://go.microsoft.com/fwlink/?LinkId=267110</a>)</p></li>
 <li><p>Windows Web Server with the IIS role with the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>

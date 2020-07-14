@@ -35,6 +35,8 @@ In general, to onboard devices to the service:
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+
 ## In this section
 Topic | Description
 :---|:---

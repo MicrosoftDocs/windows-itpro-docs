@@ -36,18 +36,6 @@ Windows Hello addresses the following problems with passwords:
 
 ## Prerequisites
 
-> [!Important]
-> 1. Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>. 
-> **Requirements:**</br>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
->
-> 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
-> **Requirements:**</br>
-> Reset from settings - Windows 10, version 1703, Professional</br>
-> Reset above lock screen - Windows 10, version 1709, Professional</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
-
 ### Cloud Only Deployment
 
 * Windows 10, version 1511 or later
@@ -74,6 +62,18 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | Azure Active Directory | Azure Active Directory | Azure Active Directory | Azure Active Directory |
 | Azure AD Connect | Azure AD Connect | Azure AD Connect | Azure AD Connect | 
 | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional for automatic MDM enrollment | Azure AD Premium, optional for automatic MDM enrollment |
+
+> [!Important]
+> 1. Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models. </br> 
+> **Requirements:**</br>
+> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+>
+> 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
+> **Requirements:**</br>
+> Reset from settings - Windows 10, version 1703, Professional</br>
+> Reset above lock screen - Windows 10, version 1709, Professional</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ### On-premises Deployments
 

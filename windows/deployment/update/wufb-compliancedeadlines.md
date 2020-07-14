@@ -16,15 +16,15 @@ ms.topic: article
 
 Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions. 
 
-The compliance options have changed with the release of Windows 10, version 1903:
+The compliance options have changed for devices on Windows 10, version 1709 and above:
 
-- [Starting with Windows 10, version 1903](#starting-with-windows-10-version-1903)
-- [Prior to Windows 10, version 1903](#prior-to-windows-10-version-1903)
+- [For Windows 10, version 1709 and above](#for-windows-10-version-1709-and-above)
+- [For prior to Windows 10, version 1709](#prior-to-windows-10-version-1709)
 
 
-## Starting with Windows 10, version 1903
+## For Windows 10, version 1709 and above
 
-With a current version of Windows 10, it's best to use the new policy introduced in Windows 10, version 1903: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as four separate settings:
+With a current version of Windows 10, it's best to use the new policy introduced in June 2019 to Windows 10, version 1709 and above: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as four separate settings:
 
 - Update/ConfigureDeadlineForFeatureUpdates 
 - Update/ConfigureDeadlineForQualityUpdates 
@@ -43,7 +43,7 @@ Further, the policy includes the option to opt out of automatic restarts until t
 
 |Policy|Description |
 |-|-|
-| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to the older "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
+| (For Windows 10, version 1709 and above) Specify deadlines for automatic updates and restarts | Similar to the older "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
 
 
 
@@ -51,31 +51,34 @@ Further, the policy includes the option to opt out of automatic restarts until t
 
 |Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
 |-|-|-|-|-|
-|(starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 7 | 7 | 2 |
+|(For Windows 10, version 1709 and above) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 7 | 7 | 2 |
 
-When **Specify deadlines for automatic updates and restarts** is set (starting in Windows 10, version 1903):
+When **Specify deadlines for automatic updates and restarts** is set (For Windows 10, version 1709 and above):
 
-**While restart is pending, before the deadline occurs:**
-- For the first few days, the user receives a toast notification
-- After this period, the user receives this dialog:
+ - **While restart is pending, before the deadline occurs:**
 
-![The notification users get for an impending restart prior to deadline](images/wufb-update-deadline-warning.png)
-- If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
+   - For the first few days, the user receives a toast notification
 
-![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
+   - After this period, the user receives this dialog:
 
-**If the restart is still pending after the deadline passes:**
-- Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
+     ![The notification users get for an impending restart prior to deadline](images/wufb-update-deadline-warning.png)
 
-![The notification users get for an approaching restart deadline](images/wufb-pastdeadline-restart-warning.png)
-- Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
+   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
 
-![The notification users get for an imminent restart after the deadline](images/wufb-pastdeadline-restartnow.png)
+     ![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
+
+ - **If the restart is still pending after the deadline passes:**
+ 
+   - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
+
+     ![The notification users get for an approaching restart deadline](images/wufb-pastdeadline-restart-warning.png)
+
+   - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
+
+     ![The notification users get for an imminent restart after the deadline](images/wufb-pastdeadline-restartnow.png)
 
 
-
-
-## Prior to Windows 10, version 1903
+## Prior to Windows 10, version 1709
 
 
 Two compliance flows are available: 
@@ -119,9 +122,11 @@ Once the device is in the pending restart state, it will attempt to restart the 
 #### Notification experience for deadline
 
 Notification users get for a quality update deadline:
+
 ![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
 
 Notification users get for a feature update deadline:
+
 ![The notification users get for an impending feature update deadline](images/wufb-feature-notification.png)
 
 ### Deadline with user engagement 

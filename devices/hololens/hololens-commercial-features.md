@@ -5,6 +5,9 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.topic: article
 audience: ITPro
 ms.prod: hololens
@@ -40,7 +43,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 - **Windows Update for Business.** Windows Update for Business provides controlled operating system updates to devices and support for the long-term servicing channel.
 - **Data security.** BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device.
 - **Work access.** Anyone in your organization can remotely connect to the corporate network through virtual private network (VPN) on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials.
-- **Microsoft Store for Business.** Your IT department can also set up an enterprise private store, containing only your company’s apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users.
+- **Microsoft Store for Business.** Your IT department can also set up an enterprise private store, containing only your company's apps for your specific HoloLens usage. Securely distribute your enterprise software to selected group of enterprise users.
 
 ## Feature comparison between editions
 
@@ -48,7 +51,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 |---|:---:|:---:|:---:|
 |Device Encryption (BitLocker) | |✔️ |✔️ |
 |Virtual Private Network (VPN) | |✔️ |✔️ |
-|[Kiosk mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#kiosk-mode) | |✔️ |✔️ |
+|[Kiosk mode](hololens-kiosk.md) | |✔️ |✔️ |
 |**Management and deployment** | | | |
 |Mobile Device Management (MDM) | |✔️ |✔️ |
 |Ability to block unenrollment | |✔️ |✔️ |
@@ -67,12 +70,12 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 
 ## Enabling commercial features
 
-Your organization's IT admin can set up commercial features such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. The [Microsoft HoloLens](https://docs.microsoft.com/hololens) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
+Your organization's IT admin can set up commercial features such as Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access. The [Microsoft HoloLens](index.md) documentation provides step-by-step instructions for enrolling devices and installing apps from Microsoft Store for Business.
 
 ## See also
 
-- [Microsoft HoloLens](https://docs.microsoft.com/hololens)
-- [Kiosk mode](/windows/mixed-reality/using-the-windows-device-portal.md#kiosk-mode)
+- [Microsoft HoloLens](index.md)
+- [Kiosk mode](hololens-kiosk.md)
 - [CSPs supported in HoloLens devices](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store For Business and line of business applications](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
 - [Working with line-of-business apps](/microsoft-store/working-with-line-of-business-apps)

@@ -3,7 +3,7 @@ title: Troubleshoot Microsoft Surface Hub
 description: Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: Troubleshoot common problems, setup issues, Exchange ActiveSync errors
 ms.prod: surface-hub
 ms.sitesec: library
@@ -456,15 +456,15 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="even">
 <td align="left"><p>0x80072EFD</p></td>
 <td align="left"><p>WININET_E_CANNOT_CONNECT</p></td>
-<td align="left"><p>Can’t connect to the server right now. Wait a while and try again, or check the account settings.</p></td>
+<td align="left"><p>Can't connect to the server right now. Wait a while and try again, or check the account settings.</p></td>
 <td align="left"><p>Verify that the server name is correct and reachable. Verify that the device is connected to the network.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x86000C29</p></td>
-<td align="left"><p>E_NEXUS_STATUS_DEVICE_NOTPROVISIONED (policies don’t match)</p></td>
+<td align="left"><p>E_NEXUS_STATUS_DEVICE_NOTPROVISIONED (policies don't match)</p></td>
 <td align="left"><p>The account is configured with policies not compatible with Surface Hub.</p></td>
 <td align="left"><p>Disable the <strong>PasswordEnabled</strong> policy for this account.</p>
-<p>We have a bug were we may surface policy errors if the account doesn’t receive any server notifications within the policy refresh interval.</p></td>
+<p>We have a bug were we may surface policy errors if the account doesn't receive any server notifications within the policy refresh interval.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x86000C4C</p></td>
@@ -475,7 +475,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="odd">
 <td align="left"><p>0x86000C0A</p></td>
 <td align="left"><p>E_NEXUS_STATUS_SERVERERROR_RETRYLATER</p></td>
-<td align="left"><p>Can’t connect to the server right now.</p></td>
+<td align="left"><p>Can't connect to the server right now.</p></td>
 <td align="left"><p>Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="even">
@@ -487,7 +487,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="odd">
 <td align="left"><p>0x8505000D</p></td>
 <td align="left"><p>E_AIRSYNC_RESET_RETRY</p></td>
-<td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
+<td align="left"><p>Can't connect to the server right now. Wait a while or check the account's settings.</p></td>
 <td align="left"><p>This is normally a transient error but if the issue persists check the number of devices associated with the account and delete some of them if the number is large.</p></td>
 </tr>
 <tr class="even">
@@ -499,13 +499,13 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="odd">
 <td align="left"><p>0x85010004</p></td>
 <td align="left"><p>E_HTTP_FORBIDDEN</p></td>
-<td align="left"><p>Can’t connect to the server right now. Wait a while and try again, or check the account’s settings.</p></td>
+<td align="left"><p>Can't connect to the server right now. Wait a while and try again, or check the account's settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. If the account is using cert based authentication make sure the certificate is still valid and update it if not.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x85030028</p></td>
 <td align="left"><p>E_ACTIVESYNC_PASSWORD_OR_GETCERT</p></td>
-<td align="left"><p>The account’s password or client certificate are missing or invalid.</p></td>
+<td align="left"><p>The account's password or client certificate are missing or invalid.</p></td>
 <td align="left"><p>Update the password and/or deploy the client certificate.</p></td>
 </tr>
 <tr class="odd">
@@ -523,7 +523,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="odd">
 <td align="left"><p>0x80072EE2</p></td>
 <td align="left"><p>WININET_E_TIMEOUT</p></td>
-<td align="left"><p>The network doesn’t support the minimum idle timeout required to receive server notification, or the server is offline.</p></td>
+<td align="left"><p>The network doesn't support the minimum idle timeout required to receive server notification, or the server is offline.</p></td>
 <td align="left"><p>Verify that the server is running. Verify the NAT settings.</p></td>
 </tr>
 <tr class="even">
@@ -535,13 +535,13 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="odd">
 <td align="left"><p>0x85010017</p></td>
 <td align="left"><p>E_HTTP_SERVICE_UNAVAIL</p></td>
-<td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
+<td align="left"><p>Can't connect to the server right now. Wait a while or check the account's settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x86000C0D</p></td>
 <td align="left"><p>E_NEXUS_STATUS_MAILBOX_SERVEROFFLINE</p></td>
-<td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
+<td align="left"><p>Can't connect to the server right now. Wait a while or check the account's settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="odd">
@@ -555,7 +555,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <td align="left"><p>E_NEXUS_STATUS_INVALID_POLICYKEY</p></td>
 <td align="left"><p>The account is configured with policies not compatible with Surface Hub.</p></td>
 <td align="left"><p>Disable the PasswordEnabled policy for this account.</p>
-<p>We have a bug were we may surface policy errors if the account doesn’t receive any server notifications within the policy refresh interval.</p></td>
+<p>We have a bug were we may surface policy errors if the account doesn't receive any server notifications within the policy refresh interval.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x85010005</p></td>
@@ -566,7 +566,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <tr class="even">
 <td align="left"><p>0x85010014</p></td>
 <td align="left"><p>E_HTTP_SERVER_ERROR</p></td>
-<td align="left"><p>Can’t connect to the server.</p></td>
+<td align="left"><p>Can't connect to the server.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Trigger a sync and, if the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="odd">
@@ -602,7 +602,10 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 </tbody>
 </table>
 
- 
+## Contact Support
+
+If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).
+
 
  
 ## Related content

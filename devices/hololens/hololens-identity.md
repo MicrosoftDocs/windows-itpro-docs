@@ -1,12 +1,15 @@
 ---
-title: Managing user identity and login on HoloLens
-description: Manage user identity, security, and login on HoloLens.
+title: Manage user identity and sign-in for HoloLens
+description: Manage user identity, security, and sign-in for HoloLens.
 keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credentials, reference
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
-ms.date: 1/6/2019
+ms.date: 1/6/2020
 ms.prod: hololens
+ms.custom: 
+- CI 111456
+- CSSTroubleshooting
 ms.topic: article
 ms.sitesec: library
 ms.topic: article
@@ -18,7 +21,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# User identity and signin
+# Manage user identity and sign-in for HoloLens
 
 > [!NOTE]
 > This article is a technical reference for IT Pros and tech enthusiasts. If you're looking for HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".

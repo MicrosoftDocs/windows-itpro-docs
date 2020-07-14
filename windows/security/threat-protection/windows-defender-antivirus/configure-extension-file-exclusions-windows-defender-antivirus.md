@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/10/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -33,11 +32,11 @@ You can exclude certain files from Windows Defender Antivirus scans by modifying
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
 
-This topic describes how to configure exclusion lists for the files and folders.
+This article  describes how to configure exclusion lists for the files and folders.
 
 Exclusion | Examples | Exclusion list
 ---|---|---
-Any file with a specific extension | All files with the `.test` extension, anywhere on the machine | Extension exclusions
+Any file with a specific extension | All files with the specified extension, anywhere on the machine.<br/>Valid syntax: `.test` and `test`  | Extension exclusions
 Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions
 A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions
 A specific process | The executable file `c:\test\process.exe` | File and folder exclusions
@@ -77,7 +76,7 @@ See the following articles:
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ### Use Group Policy to configure folder or file extension exclusions
 
@@ -90,21 +89,22 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 3. Expand the tree to **Windows components > Windows Defender Antivirus > Exclusions**.
 
-4. Double-click the **Path Exclusions** setting and add the exclusions:
+4. Double-click the **Path Exclusions** setting and add the exclusions.
 
-    1. Set the option to **Enabled**. 
-    2. Under the **Options** section, click **Show...**.
-    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
+    - Set the option to **Enabled**. 
+    - Under the **Options** section, click **Show...**.
+    - Specify each folder on its own line under the **Value name** column. 
+    - If you are specifying a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column. 
 
 5. Click **OK**.
 
     ![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
 
-6. Double-click the **Extension Exclusions** setting and add the exclusions:
+6. Double-click the **Extension Exclusions** setting and add the exclusions.
 
-    1. Set the option to **Enabled**.
-    2. Under the **Options** section, click **Show...**.
-    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
+    - Set the option to **Enabled**.
+    - Under the **Options** section, click **Show...**.
+    - Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
 7. Click **OK**.
 
@@ -116,13 +116,13 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
 
-The format for the cmdlets is:
+The format for the cmdlets is as follows:
 
 ```PowerShell
 <cmdlet> -<exclusion list> "<item>"
 ```
 
-The following are allowed as the \<cmdlet>:
+The following are allowed as the `<cmdlet>`:
 
 Configuration action | PowerShell cmdlet
 ---|---
@@ -130,7 +130,7 @@ Create or overwrite the list | `Set-MpPreference`
 Add to the list | `Add-MpPreference`
 Remove item from the list | `Remove-MpPreference`
 
-The following are allowed as the \<exclusion list>:
+The following are allowed as the `<exclusion list>`:
 
 Exclusion type | PowerShell parameter
 ---|---
@@ -168,6 +168,7 @@ For more information, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.c
 See [Add exclusions in the Windows Security app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
 <a id="wildcards"></a>
+
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
 You can use the asterisk `*`, question mark `?`, or environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages. Make sure to read this section to understand their specific limitations.
@@ -180,91 +181,21 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 >- An asterisk `*` in a folder exclusion will stand in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 
 The following table describes how the wildcards can be used and provides some examples.
-<table>
-    <tr>
-        <th>Wildcard</th>
-        <th>Use in file name and file extension exclusions</th>
-        <th>Use in folder exclusions</th>
-        <th>Example use</th>
-        <th>Example matches</th>
-    </tr>
-    <tr>
-        <td><b>*</b> (asterisk)</td>
-        <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wild carded and named folders, all subfolders will also be included.</td>
-        <td>
-            <ol>
-                <li>C:\MyData\<b>*</b>.txt</li>
-                <li>C:\somepath\<b>*</b>\Data</li>
-                <li>C:\Serv\<b>*</b>\<b>*</b>\Backup
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>C:\MyData\<b>notes</b>.txt</li>
-                <li>Any file in:
-                    <ul>
-                        <li>C:\somepath\<b>Archives</b>\Data and its subfolders</li>
-                        <li>C:\somepath\<b>Authorized</b>\Data and its subfolders</li>
-                    </ul>
-                <li>Any file in:
-                <ul>
-                    <li>C:\Serv\<b>Primary</b>\<b>Denied</b>\Backup and its subfolders</li>
-                    <li>C:\Serv\<b>Secondary</b>\<b>Allowed</b>\Backup and its subfolders</li>
-                </ul>
-            </ol>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>?</b> (question mark)
-        </td>
-        <td>
-            Replaces a single character. <br />
-            Only applies to files in the last folder defined in the argument.
-        </td>
-        <td>
-            Replaces a single character in a folder name. </br>
-            After matching the number of wild carded and named folders, all subfolders will also be included.
-        </td>
-        <td>
-            <ol>
-                <li>C:\MyData\my<b>?</b>.zip</li>
-                <li>C:\somepath\<b>?</b>\Data</li>
-                <li>C:\somepath\test0<b>?</b>\Data</li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>C:\MyData\my<b>1</b>.zip</li>
-                <li>Any file in C:\somepath\<b>P</b>\Data and its subfolders</li>
-                <li>Any file in C:\somepath\test0<b>1</b>\Data and its subfolders</li>
-            </ol>
-        </td>
-    </tr>
-    <tr>
-        <td>Environment variables</td>
-        <td>The defined variable will be populated as a path when the exclusion is evaluated.</td>
-        <td>Same as file and extension use. </td>
-        <td>
-            <ol>
-                <li><b>%ALLUSERSPROFILE%</b>\CustomLogFiles</li>
-            </ol> 
-        </td>
-        <td>
-            <ol>
-                <li><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</li>
-            </ol>
-        </td>
-    </tr>
-</table>
+
+
+|Wildcard  |Examples  |
+|---------|---------|
+|`*` (asterisk) <br/><br/>In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple, nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` would include `C:\MyData\notes.txt`<br/><br/>`C:\somepath\*\Data` would include any file in `C:\somepath\Archives\Data and its subfolders` and `C:\somepath\Authorized\Data and its subfolders` <br/><br/>`C:\Serv\*\*\Backup` would include any file in `C:\Serv\Primary\Denied\Backup and its subfolders` and `C:\Serv\Secondary\Allowed\Backup and its subfolders`     |
+|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
+|Environment variables <br/><br/>The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
+        
 
 >[!IMPORTANT]
 >If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
 >
->For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
+>For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
 >
->This argument, however, will not match any files in **subfolders** under `c:\data\final\marked` or `c:\data\review\marked`.
+>This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
@@ -272,7 +203,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 You can retrieve the items in the exclusion list using one of the following methods:
 - [Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-- [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
 - MpCmdRun
 - PowerShell
 - [Windows Security app](windows-defender-security-center-antivirus.md#exclusions)
@@ -362,5 +293,3 @@ You can also copy the string into a blank text file and attempt to save it with 
 - [Configure and validate exclusions in Windows Defender Antivirus scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
 - [Configure Windows Defender Antivirus exclusions on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

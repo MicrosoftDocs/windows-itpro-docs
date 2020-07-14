@@ -45,11 +45,15 @@ For a CSP to register Windows Autopilot devices on behalf of a customer, the cus
     ![Request a reseller relationship](images/csp1.png)
     - Select the checkbox indicating whether or not you want delegated admin rights:
     ![Delegated rights](images/csp2.png)
-    - NOTE: Depending on your partner, they might request Delegated Admin Permissions (DAP) when requesting this consent.  You should ask them to use the newer DAP-free process (shown in this document) if possible. If not, you can easily remove their DAP status either from Microsoft Store for Business or the Office 365 admin portal:  https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges
+    - NOTE: Depending on your partner, they might request Delegated Admin Permissions (DAP) when requesting this consent.  You should ask them to use the newer DAP-free process (shown in this document) if possible. If not, you can easily remove their DAP status either from Microsoft Admin Center or the Office 365 admin portal:  https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges
     - Send the template above to the customer via email.
-2. Customer with global administrator privileges in Microsoft Store for Business (MSfB) clicks the link in the body of the email once they receive it from the CSP, which takes them directly to the following MSfB page:
+2. Customer with global administrator privileges in Microsoft Admin Center clicks the link in the body of the email once they receive it from the CSP, which takes them directly to the following Microsoft 365 admin center page:
 
-    ![Global admin](images/csp3.png)
+    ![Global admin](images/csp3a.png)
+
+    The image above is what the customer will see if they requested delegated admin rights (DAP). Note that the page says what Admin roles are being requested.  If the customer did not request delegated admin rights they would see the following page:
+
+    ![Global admin](images/csp3b.png)   
 
     > [!NOTE]
     > A user without global admin privileges who clicks the link will see a message similar to the following:

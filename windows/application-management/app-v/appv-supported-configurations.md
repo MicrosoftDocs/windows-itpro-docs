@@ -51,11 +51,14 @@ The following table lists the SQL Server versions that the App-V Management data
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
+|Microsoft SQL Server 2019||32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
 |Microsoft SQL Server 2012|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2008 R2|SP3|32-bit or 64-bit|
+
+For more information on user configuration files with SQL server 2016 or later, see the [support article](https://support.microsoft.com/help/4548751/app-v-server-publishing-might-fail-when-you-apply-user-configuration-f).
 
 ### Publishing server operating system requirements
 
@@ -117,9 +120,9 @@ The following table lists the operating systems that the App-V Sequencer install
 
 See the Windows or Windows Server documentation for the hardware requirements.
 
-## Supported versions of System Center Configuration Manager
+## Supported versions of Microsoft Endpoint Configuration Manager
 
-The App-V client works with System Center Configuration Manager versions starting with Technical Preview for System Center Configuration Manager, version 1606.
+The App-V client works with Configuration Manager versions starting with Technical Preview for System Center Configuration Manager, version 1606.
 
 ## Related topics
 

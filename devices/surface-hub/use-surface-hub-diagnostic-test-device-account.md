@@ -89,11 +89,11 @@ The Surface Hub Hardware Diagnostic tool is an easy-to-navigate tool that lets t
 
 Field |Success |Failure |Comment |Reference
 |------|------|------|------|------|
-Internet Connectivity |Device does have Internet connectivity |Device does not have Internet connectivity |Verifies internet connectivity, including proxy connection |[Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
+Internet Connectivity |Device does have Internet connectivity |Device does not have Internet connectivity |Verifies internet connectivity, including proxy connection |
 HTTP Version |1.1 |1.0 |If HTTP 1.0 found, it will cause issue with WU and Store |
 Direct Internet Connectivity |Device has a Proxy configured Device has no Proxy configured |N/A |Informational. Is your device behind a proxy? |
 Proxy Address | | |If configured, returns proxy address. |
-Proxy Authentication |Proxy does not require Authentication |Proxy requires Proxy Auth |Result may be a false positive if a user already has an open session in Edge and has authenticated thru the proxy. |[Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
+Proxy Authentication |Proxy does not require Authentication |Proxy requires Proxy Auth |Result may be a false positive if a user already has an open session in Edge and has authenticated through the proxy. |
 Proxy Auth Types | | |If proxy authentication is used, return the Authentication methods advertised by the proxy.  |
 
 #### Environment
@@ -131,5 +131,5 @@ SIP Pool Cert Root CA | | |Information. Display the SIP Pool Cert Root CA, if av
 
 Field |Success |Failure |Comment |Reference
 |------|------|------|------|------|
-Trust Model Status |No Trust Model Issue Detected. |SIP Domain and server domain are different please add the following domains. |Check the LD FQDN/ LD Server Name/ Pool Server name for Trust model issue. |[Surface Hub and the Skype for Business Trusted Domain List](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
+Trust Model Status |No Trust Model Issue Detected. |SIP Domain and server domain are different please add the following domains. |Check the LD FQDN/ LD Server Name/ Pool Server name for Trust model issue. 
 Domain Name(s) | | |Return the list of domains that should be added for SFB to connect. |

@@ -6,14 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
 ms.reviewer: scottmca
-manager: dansimp
+manager: laurawi
 ---
 
 # Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)
@@ -61,4 +60,4 @@ Before you choose to use Windows 10 Enterprise LTSC edition on Surface devices, 
 
 Surface devices running Windows 10 Enterprise LTSC edition will not receive new features. In many cases these features are requested by customers to improve the usability and capabilities of Surface hardware. For example, new improvements for High DPI applications in Windows 10, version 1703. Customers that use Surface devices in the LTSC configuration will not see the improvements until they either update to a new Windows 10 Enterprise LTSC release or upgrade to a version of Windows 10 with support for the SAC servicing option.
 
-Devices can be changed from Windows 10 Enterprise LTSC to a more recent version of Windows 10 Enterprise, with support for the SAC servicing option, without the loss of user data by performing an upgrade installation. You can also perform an upgrade installation on multiple devices by leveraging the Upgrade Task Sequence Templates available in the Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager. For more information, see [Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/upgrade-surface-devices-to-windows-10-with-mdt).
+Devices can be changed from Windows 10 Enterprise LTSC to a more recent version of Windows 10 Enterprise, with support for the SAC servicing option, without the loss of user data by performing an upgrade installation. You can also perform an upgrade installation on multiple devices by leveraging the Upgrade Task Sequence Templates available in the Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. For more information, see [Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/upgrade-surface-devices-to-windows-10-with-mdt).

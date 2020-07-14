@@ -34,6 +34,9 @@ Microsoft Cloud App Security (Cloud App Security) is a comprehensive solution th
 
 Cloud App Security discovery relies on cloud traffic logs being forwarded to it from enterprise firewall and proxy servers. Microsoft Defender ATP integrates with Cloud App Security by collecting and forwarding all cloud app networking activities, providing unparalleled visibility to cloud app usage. The monitoring functionality is built into the device, providing complete coverage of network activity.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yQ]
+
+
 The integration provides the following major improvements to the existing Cloud App Security discovery: 
 
 - Available everywhere - Since the network activity is collected directly from the endpoint, it's available wherever the device is, on or off corporate network, as it's no longer depended on traffic routed through the enterprise firewall or proxy servers. 

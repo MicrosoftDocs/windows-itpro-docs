@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/18/2018
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ---
 

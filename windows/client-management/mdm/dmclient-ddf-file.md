@@ -957,7 +957,7 @@ The XML below is for Windows 10, version 1803.
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Number of days after last sucessful sync to unenroll</Description>
+                <Description>Number of days after last successful sync to unenroll</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>

@@ -3,7 +3,7 @@
  :acrolinx-check-settings
  {
   "languageId" "en"
-  "ruleSetName" "Standard Commercial"
+  "ruleSetName" "Standard"
   "requestedFlagTypes" ["SPELLING" "GRAMMAR" "STYLE"
                         "TERMINOLOGY_DEPRECATED"
                         "TERMINOLOGY_VALID"

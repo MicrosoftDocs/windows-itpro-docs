@@ -33,7 +33,7 @@ In Windows 10, version 1709 and later, the app also shows information from third
 
 In Windows 10, version 1803, the app has two new areas, **Account protection** and **Device security**.
 
-![Screen shot of the Windows Security app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
+![Screenshot of the Windows Security app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 > [!NOTE]
 > The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
@@ -63,16 +63,16 @@ You can find more information about each section, including options for configur
 
 - Click the icon in the notification area on the taskbar.
 
-    ![Screen shot of the icon for the Windows Security app on the Windows task bar](images/security-center-taskbar.png)
+    ![Screenshot of the icon for the Windows Security app on the Windows task bar](images/security-center-taskbar.png)
 - Search the Start menu for **Windows Security**.
 
-    ![Screen shot of the Start menu showing the results of a search for the Windows Security app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
+    ![Screenshot of the Start menu showing the results of a search for the Windows Security app, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
 - Open an area from Windows **Settings**.
 
-    ![Screen shot of Windows Settings showing the different areas available in the Windows Security](images/settings-windows-defender-security-center-areas.png)
+    ![Screenshot of Windows Settings showing the different areas available in the Windows Security](images/settings-windows-defender-security-center-areas.png)
 
 > [!NOTE]
-> Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Security. See the topics for each of the sections for links to configuring the associated features or products.
+> Settings configured with management tools, such as Group Policy, Microsoft Intune, or Microsoft Endpoint Configuration Manager, will generally take precedence over the settings in the Windows Security. See the topics for each of the sections for links to configuring the associated features or products.
 
 ## How the Windows Security app works with Windows security features
 
@@ -98,7 +98,7 @@ The Windows Security app operates as a separate app or process from each of the 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
-Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
+Disabling any of the individual features (through Group Policy or other management tools, such as Microsoft Endpoint Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
 
 > [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.

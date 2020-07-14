@@ -1,6 +1,16 @@
 {
 "redirections": [
 {
+"source_path": "security/threat-protection/windows-defender-application-control/signing-policies-with-signtool.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/hololens/hololens-whats-new.md",
+"redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
 "redirect_url": "https://docs.microsoft.com/hololens/hololens-requirements#upgrade-to-windows-holographic-for-business",
 "redirect_document_id": true
@@ -58,7 +68,7 @@
 {
 "source_path": "devices/surface/manage-surface-pro-3-firmware-updates.md",
 "redirect_url": "https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "devices/surface/update.md",
@@ -74,6 +84,11 @@
 "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/information-protection/windows-information-protection/how-wip-works-with-labels.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune.md",
@@ -103,6 +118,11 @@
 {
 "source_path": "windows/deployment/update/windows-update-sources.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/update/how-windows-update-works",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/update-compliance-perspectives.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-using",
 "redirect_document_id": true
 },
 {
@@ -742,17 +762,17 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings",
+"redirect_url": "hhttps://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview",
+"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device",
+"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
 "redirect_document_id": true
 },
 {
@@ -981,6 +1001,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-alertevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-filecreationevents-table.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefileevents-table",
 "redirect_document_id": true
@@ -1149,7 +1174,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md",
@@ -1372,11 +1397,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-secure-score",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/enable-siem-integration-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
@@ -1485,6 +1505,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-config.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-config",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-config.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview.md",
@@ -1702,6 +1727,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/overview.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction",
 "redirect_document_id": true
@@ -1719,7 +1749,17 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-secure-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/partner-applications.md",
@@ -6202,6 +6242,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/update/update-compliance-wdav-status.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/update-compliance-using.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/update/update-compliance-using",
 "redirect_document_id": true
@@ -7787,11 +7832,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit",
 "redirect_document_id": true
@@ -7839,16 +7879,6 @@
 {
 "source_path": "windows/deploy/install-vamt.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/volume-activation/install-vamt",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/deploy/integrate-configuration-manager-with-mdt-2013.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/integrate-configuration-manager-with-mdt-2013",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/deploy/integrate-configuration-manager-with-mdt.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/integrate-configuration-manager-with-mdt",
 "redirect_document_id": true
 },
 {
@@ -7929,11 +7959,6 @@
 {
 "source_path": "windows/deploy/monitor-activation-client.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/volume-activation/monitor-activation-client",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/deploy/monitor-windows-10-deployment-with-configuration-manager.md",
-"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager",
 "redirect_document_id": true
 },
 {
@@ -13068,7 +13093,7 @@
 },
 {
 "source_path": "windows/keep-secure/windows-defender-smartscreen-available-settings.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings",
+"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
 "redirect_document_id": true
 },
 {
@@ -13078,7 +13103,7 @@
 },
 {
 "source_path": "windows/keep-secure/windows-defender-smartscreen-set-individual-device.md",
-"redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device",
+"redirect_url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device",
 "redirect_document_id": true
 },
 {
@@ -14009,6 +14034,11 @@
 {
 "source_path": "store-for-business/update-windows-store-for-business-account-settings.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings",
+"redirect_document_id": false
+},
+{
+"source_path": "store-for-business/work-with-partner-microsoft-store-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-partners",
 "redirect_document_id": false
 },
 {
@@ -15547,6 +15577,16 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/product-brief.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/licensing.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/release-information/status-windows-10-1703.yml",
 "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
 "redirect_document_id": true
@@ -15572,6 +15612,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "devices/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices.md",
+"redirect_url": "/surface/manage-surface-driver-and-firmware-updates",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/planning/windows-10-1809-removed-features.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features",
 "redirect_document_id": false
@@ -15580,6 +15625,235 @@
 "source_path": "windows/deployment/planning/windows-10-1903-removed-features.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-azure-portal.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-FAQ-troubleshooting.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-overview.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/windows-analytics-privacy.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-monitor.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/device-health-using.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-additional-insights.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-architecture.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-data-sharing.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-deployment-script.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-deploy-windows.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-get-started.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-identify-apps.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-monitor-deployment.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-requirements.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-resolve-issues.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-target-new-OS.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-readiness-upgrade-overview.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/mdt-lite-touch-components.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager#procedures",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/get-started-with-configuraton-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-configuration-manager.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",    "redirect_document_id": false
 }
 ]
 }

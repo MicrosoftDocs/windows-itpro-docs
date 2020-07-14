@@ -3,7 +3,7 @@ title: Admin group management (Surface Hub)
 description: Every Microsoft Surface Hub can be configured individually by opening the Settings app on the device.
 ms.assetid: FA67209E-B355-4333-B903-482C4A3BDCCE
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 keywords: admin group management, Settings app, configure Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library

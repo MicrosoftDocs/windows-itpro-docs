@@ -1,6 +1,6 @@
 ---
-title: Using 3D Viewer on HoloLens
-description: Describes the types of files and features that 3D Viewer Beta on HoloLens supports, and how to use and troubleshoot the app.
+title: Using 3D Viewer Beta on HoloLens
+description: Describes the types of files and features that 3D Viewer Beta on HoloLens (1st gen) supports, and how to use and troubleshoot the app.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -15,15 +15,18 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Using 3D Viewer on HoloLens
+# Using 3D Viewer Beta on HoloLens
 
-3D Viewer lets you view 3D models on HoloLens. You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
+3D Viewer Beta lets you view 3D models on HoloLens (1st gen). You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
 
-If you're having trouble opening a 3D model in 3D Viewer, or certain features of your 3D model are unsupported, see [Supported content specifications](#supported-content-specifications).
+>[!NOTE]
+>This article applies to the immersive Unity **3D Viewer Beta** app, which supports .fbx files and is only available on HoloLens (1st gen). The pre-installed **3D Viewer** app on HoloLens 2 supports opening custom .glb 3D models in the mixed reality home (see [Asset requirements overview](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) for more details. 
 
-To build or optimize 3D models for use with 3D Viewer, see [Optimizing 3D models for 3D Viewer](#optimizing-3d-models-for-3d-viewer-beta).
+If you're having trouble opening a 3D model in 3D Viewer Beta, or certain features of your 3D model are unsupported, see [Supported content specifications](#supported-content-specifications).
 
-There are two ways to open a 3D model on HoloLens. See [Viewing 3D models on HoloLens](#viewing-3d-models-on-hololens) to learn more.
+To build or optimize 3D models for use with 3D Viewer Beta, see [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-models-for-3d-viewer-beta).
+
+There are two ways to open a 3D model on HoloLens. See [Viewing FBX files on HoloLens](#viewing-fbx-files-on-hololens) to learn more.
 
 If you're having trouble after reading these topics, see [Troubleshooting](#troubleshooting).
 
@@ -122,7 +125,7 @@ By default, 3D Viewer Beta displays 3D models at a comfortable size and position
 
 To prevent scaling of the model, add a Boolean custom attribute to any object in the scene named Microsoft_DisableScale and set it to true. 3D Viewer Beta will then respect the FbxSystemUnit information baked into the FBX file. Scale in 3D Viewer Beta is 1 meter per FBX unit.
 
-## Viewing 3D models on HoloLens
+## Viewing FBX files on HoloLens
 
 ### Open an FBX file from Microsoft Edge
 

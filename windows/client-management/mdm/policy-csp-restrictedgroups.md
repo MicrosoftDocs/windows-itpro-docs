@@ -7,7 +7,8 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 04/07/2020
+
 ms.reviewer: 
 manager: dansimp
 ---
@@ -74,9 +75,16 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This security setting allows an administrator to define the members of a security-sensitive (restricted) group. When a Restricted Groups Policy is enforced, any current member of a restricted group that is not on the Members list is removed. Any user on the Members list who is not currently a member of the restricted group is added. You can use Restricted Groups policy to control group membership. Using the policy, you can specify what members are part of a group. Any members that are not specified in the policy are removed during configuration or refresh. For example, you can create a Restricted Groups policy to only allow specified users (for example, Alice and John) to be members of the Administrators group. When policy is refreshed, only Alice and John will remain as members of the Administrators group.  
+This security setting allows an administrator to define the members that are part of a security-sensitive (restricted) group. When a Restricted Groups policy is enforced, any current member of a restricted group that is not on the Members list is removed, except for the built-in administrator in the built-in Administrators group. Any user on the Members list who is not currently a member of the restricted group is added. An empty Members list means that the restricted group has no members. The membership configuration is based on SIDS, therefore renaming these built-in groups does not affect retention of this special membership.
 
-Caution: If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
+For example, you can create a Restricted Groups policy to allow only specified users, Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group and all other members will be removed.  
+
+> [!CAUTION]
+> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
+>
+> | Error Code  | Symbolic Name | Error Description | Header |
+> |----------|----------|----------|----------|
+> |  0x55b (Hex)  <br>  1371 (Dec)  |ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|  winerror.h  |
 
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of 0 members when applying the policy implies clearing the access group and should be used with caution.
 
@@ -121,25 +129,28 @@ Starting in Windows 10, version 1809, you can use this schema for retrieval and 
 
 <!--/SupportedValues-->
 <!--Example-->
-Here is an example:
 
+Here's an example:
 ```
 <groupmembership>
-    <accessgroup desc = "Administrators">
-        <member name = "AzureAD\CSPTest@contoso.com" />
-        <member name = "CSPTest22306\administrator" />
-        <member name = "AzureAD\patlewis@contoso.com" />
+    <accessgroup desc = "Group1">
+        <member name = "S-1-15-6666767-76767676767-666666777"/>
+        <member name = "contoso\Alice"/>
     </accessgroup>
-    <accessgroup desc = "testcsplocal">
-        <member name = "CSPTEST22306\patlewis" />
-        <member name = "AzureAD\CSPTest@contoso.com" />
+    <accessgroup desc = "Group2">
+        <member name = "S-1-15-1233433-23423432423-234234324"/>
+        <member name = "Group1"/>
     </accessgroup>
 </groupmembership>
 ```
+where:
+- `<accessgroup desc>` contains the local group SID or group name to configure. If an SID is specified here, the policy uses the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
+- `<member name>` contains the members to add to the group in `<accessgroup desc>`. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. (**Note:** This doesn't query Azure AD). For best results, use SID for `<member name>`. As groups can be renamed and account name lookups are limited to AD/local machine, hence SID is the best and most deterministic way to configure.
+The member SID can be a user account or a group in AD, Azure AD, or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](https://docs.microsoft.com/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+- In this example, `Group1` and `Group2` are local groups on the device being configured.
 
 > [!Note]
-> * You should include the local administrator while modifying the administrators group to prevent accidental loss of access
-> * Include the entire UPN after AzureAD
+> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a local group as a member to another local group by using the member portion, as shown in the above example.
 <!--/Example-->
 <!--Validation-->
 
@@ -157,4 +168,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-

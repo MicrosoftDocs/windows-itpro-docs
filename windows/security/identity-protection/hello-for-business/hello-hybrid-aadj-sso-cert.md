@@ -644,28 +644,28 @@ Sign-in a workstation with access equivalent to a _domain user_.
 3. Select **Device Configuration**, and then click **Profiles**.
 4. Select **Create Profile**.
    ![Intune Device Configuration Create Profile](images/aadjcert/intunedeviceconfigurationcreateprofile.png)
-5. Next to **Name**, type **WHFB Certificate Enrollment**.
-6. Next to **Description**, provide a description meaningful for your environment.
-7. Select **Windows 10 and later** from the **Platform** list.
-8. Select **SCEP certificate** from the **Profile** list.
-   ![WHFB Scep Profile Blade](images/aadjcert/intunewhfbscepprofile-00.png)
-9. The **SCEP Certificate** blade should open. Configure **Certificate validity period** to match your organization.
+5. Select **Windows 10 and later** from the **Platform** list.
+6. Choose **SCEP certificate** from the **Profile** list, and select **Create**.
+7. The **SCEP Certificate** wizard should open. Next to **Name**, type **WHFB Certificate Enrollment**.
+8. Next to **Description**, provide a description meaningful for your environment, then select **Next**.
+9. Select **User** as a certificate type.
+10. Configure **Certificate validity period** to match your organization.
    > [!IMPORTANT]
-    > Remember that you need to configure your certificate authority to allow Microsoft Intune to configure certificate validity.
+   > Remember that you need to configure your certificate authority to allow Microsoft Intune to configure certificate validity.
 
-10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
-11. Select **Custom** from the **Subject name format** list.
-12. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
-13. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value.
-14. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
-15. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
+11. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
+12. Select **Custom** from the **Subject name format** list.
+13. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
+14. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value.
+15. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
+16. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
     ![WHFB SCEP certificate profile Trusted Certificate selection](images/aadjcert/intunewhfbscepprofile-01.png)
-16. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**. Click **Add**.
-17. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
+17. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**. Click **Add**.
+18. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
-18. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
-19. Click **OK**.
-20. Click **Create**.
+19. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
+20. Click **Next**.
+21. Click **Next** two more times to skip the **Scope tags** and **Assignments** steps of the wizard and click **Create**.
 
 ### Assign Group to the WHFB Certificate Enrollment Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.

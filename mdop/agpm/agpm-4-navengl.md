@@ -25,7 +25,8 @@ ms.date: 06/16/2016
 
 -   [Release Notes for Microsoft Advanced Group Policy Management 4.0](release-notes-for-microsoft-advanced-group-policy-management-40.md)
 
- 
+> [!NOTE]
+> Advanced Group Policy Management (AGPM) 4.0 will be end of life on January 12, 2021. Please upgrade to a supported version, such as AGPM 4.0 with Service Pack 3 prior to this date.
 
  
 

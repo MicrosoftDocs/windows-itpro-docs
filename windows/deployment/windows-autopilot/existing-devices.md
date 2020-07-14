@@ -29,12 +29,12 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 
 ## Prerequisites
 
-- System Center Configuration Manager Current Branch (1806) OR System Center Configuration Manager Technical Preview (1808)
+- A currently supported version of Microsoft Endpoint Configuration Manager current branch or technical preview branch. 
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
-    - Note: Config Mgr 1806 or later is required to [support](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk) the Windows ADK 1809.
+    - For more information on Configuration Manager support, see [Support for Windows 10 ADK](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk).
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
-- Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
+- Windows 10 version 1809 or later imported into Configuration Manager as an Operating System Image
   - **Important**: See [Known issues](known-issues.md) if you are using Windows 10 1903 with Configuration Manager’s built-in **Windows Autopilot existing device** task sequence template. Currently, one of the steps in this task sequence must be edited to work properly with Windows 10, version 1903.
 
 ## Procedures
@@ -47,7 +47,7 @@ To enable and configure the enrollment and status page:
 
 1. Open [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Access **Intune > Device enrollment > Windows enrollment** and [Set up an enrollment status page](https://docs.microsoft.com/intune/windows-enrollment-status). 
-3. Access **Azure Active Directory > Mobility (MDM and MAM) > Microsoft Intune** and [Configure automatic MDM enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-windows#enable-windows-10-automatic-enrollment) and configure the MDM user scope for some or all users. 
+3. Access **Azure Active Directory > Mobility (MDM and MAM) > Microsoft Intune** and [Configure automatic MDM enrollment](https://docs.microsoft.com/configmgr/mdm/deploy-use/enroll-hybrid-windows#enable-windows-10-automatic-enrollment) and configure the MDM user scope for some or all users. 
 
 See the following examples.
 
@@ -138,7 +138,7 @@ See the following examples.
 
     ![Notepad JSON](images/notepad.png)
 
-    After saving the file, move the file to a location suitable as an SCCM package source.
+    After saving the file, move the file to a location suitable as a Microsoft Endpoint Configuration Manager package source.
 
     >[!IMPORTANT]
     >Multiple JSON profile files can be used, but each must be named **AutopilotConfigurationFile.json** in order for OOBE to follow the Autopilot experience. The file also must be encoded as ANSI. <br><br>**Saving the file with Unicode or UTF-8 encoding or saving it with a different file name will cause Windows 10 OOBE to not follow the Autopilot experience**.<br>
@@ -156,7 +156,7 @@ See the following examples.
     - <u>Program Type</u>: **Do not create a program**
 4. Click **Next** twice and then click **Close**.
 
-**NOTE**: If you change user-driven Autopilot profile settings in Intune at a later date, you must also update the JSON file and redistribute the associated Config Mgr package.
+**NOTE**: If you change user-driven Autopilot profile settings in Intune at a later date, you must also update the JSON file and redistribute the associated Configuration Manager package.
 
 ### Create a target collection
 
@@ -204,8 +204,11 @@ See the following examples.
    - <u>Enable the account and specify the local administrator password</u>: Optional.
    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
 
+     > [!IMPORTANT]
+     > The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which uses the System Preparation Tool (sysprep). This action will fail if the target machine is joined to a domain.
+     
      >[!IMPORTANT]
-     >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (syeprep). This action will fail if the target machine is joined to a domain.
+     > The System Preparation Tool (sysprep) will run with the /Generalize parameter which, on Windows 10 versions 1903 and 1909, will delete the Autopilot profile file and the machine will boot into OOBE phase instead of Autopilot phase. To fix this issue, please see [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues).
 
 5. Click **Next** and then click **Next** again to accept the default settings on the Install Configuration Manager page.
 6. On the State Migration page, enter the following details:
@@ -215,7 +218,7 @@ See the following examples.
    - Click **Next**.
 
      >[!NOTE]
-     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined or hybrid AAD joined devices.
+     >Because the Autopilot for existing devices task sequence completes while in Windows PE, User State Migration Toolkit (USMT) data migration is not supported as there is no way to restore the user state into the new OS.  Also, the User State Migration Toolkit (USMT) does not support Azure AD-joined devices.
 
 7. On the Include Updates page, choose one of the three available options. This selection is optional.
 8. On the Install applications page, add applications if desired. This is optional.
@@ -247,6 +250,9 @@ See the following examples.
     ![Autopilot task sequence](images/ap-ts-1.png)
 
 25. Click **OK** to close the Task Sequence Editor.
+
+> [!NOTE]
+> On Windows 10 1903 and 1909, the **AutopilotConfigurationFile.json** is deleted by the **Prepare Windows for Capture** step. See [Windows Autopilot - known issues](https://docs.microsoft.com/windows/deployment/windows-autopilot/known-issues) for more information and a workaround.
 
 ### Deploy Content to Distribution Points
 

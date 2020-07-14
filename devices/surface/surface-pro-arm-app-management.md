@@ -5,12 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: high
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: coveminer
+ms.author: v-jokai
 ms.topic: article
-ms.date: 11/20/2019
+ms.date: 4/15/2020
 ms.reviewer: jessko
-manager: dansimp
+manager: laurawi
 ms.audience: itpro
 ---
 # Deploying, managing, and servicing Surface Pro X
@@ -44,7 +44,7 @@ Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager 
 
 A component of Microsoft Enterprise Mobility + Security, Intune integrates with Azure Active Directory for identity and access control and provides granular management of enrolled Surface Pro X devices. Intune mobile device management (MDM) policies have a number of advantages over older on-premises tools such as Windows Group Policy. This includes faster device login times and a more streamlined catalog of policies enabling full device management from the cloud. For example, you can manage LTE using eSIM profiles to configure data plans and deploy activation codes to multiple devices.<br> 
 
-For more information about setting up Intune, refer to the [Intune documentation](https://docs.microsoft.com/intune/).
+For more information about using Intune, refer to the [Intune documentation](https://docs.microsoft.com/intune/).
 
 ### Co-management
 
@@ -73,7 +73,7 @@ Surface Pro X was designed to use Windows Update to simplify the process of keep
 
 - Use Windows Update or Windows Update for Business for maintaining the latest drivers and firmware. For more information, see [Deploy Updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 - If your procedures require using a Windows Installer .msi file, contact [Surface for Business support](https://support.microsoft.com/help/4037645). 
-- For more information about deploying and managing updates on Surface devices, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+- For more information about deploying and managing updates on Surface devices, see [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).
 - Note that Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X.
 
 ## Running apps on Surface Pro X
@@ -109,9 +109,9 @@ Popular browsers run on Surface Pro X:
 ## Installing and using Microsoft Office
 
 - Use Office 365 for the best experience on a Windows 10 PC on an ARM-based processor.
-- Office 365 “click-to-run” installs Outlook, Word, Excel, and PowerPoint, optimized to run on a Windows 10 PC on an ARM-based processor.
+- Office 365 "click-to-run" installs Outlook, Word, Excel, and PowerPoint, optimized to run on a Windows 10 PC on an ARM-based processor.
 - Microsoft Teams runs great on Surface Pro X.
-- For “perpetual versions” of Office such as Office 2019, install the 32-bit version.
+- For "perpetual versions" of Office such as Office 2019, install the 32-bit version.
 
 ## VPN
 
@@ -124,7 +124,7 @@ The following tables show the availability of selected key features on Surface P
 | Deployment                              | Surface Pro 7 | Surface Pro X | Notes                                                                                                                           |
 | --------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Windows Autopilot                       | Yes           | Yes           |                                                                                                                                 |
-| Support for Network Boot (PXE)          | Yes           | Yes           |                                                                                                                                 |
+| Support for Network Boot (PXE)          | Yes           | No           |                                                                                                                                 |
 | Windows Configuration Designer          | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
 | WinPE                                   | Yes           | Yes           | Not recommended for Surface Pro X. Microsoft does not provide the necessary .ISO and drivers to support WinPE with Surface Pro X. |
 | Endpoint Configuration Manager: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |

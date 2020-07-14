@@ -8,14 +8,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 08/30/2019
 ---
 
 # Respond to web threats
@@ -67,4 +66,6 @@ With web protection in Microsoft Defender ATP, your end users will be prevented 
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)
+- [Web content filtering](web-content-filtering.md)
+- [Web threat protection](web-threat-protection.md)
 - [Monitor web security](web-protection-monitoring.md)

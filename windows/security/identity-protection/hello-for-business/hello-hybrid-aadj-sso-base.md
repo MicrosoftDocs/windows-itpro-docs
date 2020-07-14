@@ -154,6 +154,9 @@ These procedures configure NTFS and share permissions on the web server to allow
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
 
+> [!Tip]
+> Make sure that users can access **\\\Server FQDN\sharename**.
+
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
 2. Right-click the **cdp** folder and click **Properties**.  Click the **Sharing** tab.  Click **Advanced Sharing**.
@@ -324,6 +327,9 @@ Sign-in a workstation with access equivalent to a _domain user_.
 13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.
 14. Click **Save**
 15. Sign-out of the Azure portal.
+
+> [!IMPORTANT]
+> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
 
 ## Section Review
 > [!div class="checklist"]

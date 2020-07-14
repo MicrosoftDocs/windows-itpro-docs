@@ -1657,10 +1657,10 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
 - How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- Manage apps from the Microsoft Store for Business with Microsoft Endpoint Configuration Manager  (https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
@@ -11034,10 +11034,10 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
 - How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- Manage apps from the Microsoft Store for Business with Microsoft Endpoint Configuration Manager  (https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
@@ -23032,10 +23032,10 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
 - How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- Manage apps from the Microsoft Store for Business with Microsoft Endpoint Configuration Manager  (https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>
@@ -51686,10 +51686,10 @@ If disabled or not configured, extensions defined as part of this policy get ign
 Default setting:  Disabled or not configured
 Related policies: Allow Developer Tools
 Related Documents:
-- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn)
+- Find a package family name (PFN) for per-app VPN (https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 - How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune (https://docs.microsoft.com/intune/windows-store-for-business)
 - How to assign apps to groups with Microsoft Intune (https://docs.microsoft.com/intune/apps-deploy)
-- Manage apps from the Microsoft Store for Business with System Center Configuration Manager  (https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+- Manage apps from the Microsoft Store for Business with Microsoft Endpoint Configuration Manager  (https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - How to add Windows line-of-business (LOB) apps to Microsoft Intune (https://docs.microsoft.com/intune/lob-apps-windows)</Description>
             <DFFormat>
               <chr/>

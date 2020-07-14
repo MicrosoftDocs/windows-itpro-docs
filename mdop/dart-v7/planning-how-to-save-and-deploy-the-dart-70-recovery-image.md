@@ -65,7 +65,7 @@ The following table shows some advantages and disadvantages of each method of us
 <tr class="even">
 <td align="left"><p>From a recovery partition</p></td>
 <td align="left"><p>Lets you boot into DaRT without needing a CD, DVD, or UFD that includes instances in which there is no network connectivity.</p>
-<p>Also, can be implemented and managed as part of your standard Windows image process by using automated distribution tools, such as System Center Configuration Manager.</p></td>
+<p>Also, can be implemented and managed as part of your standard Windows image process by using automated distribution tools, such as Microsoft Endpoint Configuration Manager.</p></td>
 <td align="left"><p>When updating DaRT, requires you to update all computers in your enterprise instead of just one partition (on the network) or device (CD, DVD, or UFD).</p></td>
 </tr>
 </tbody>

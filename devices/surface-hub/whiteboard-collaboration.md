@@ -1,6 +1,6 @@
 ---
 title: Set up and use Microsoft Whiteboard
-description: Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.
+description: Microsoft Whiteboard's latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -8,13 +8,13 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/18/2019
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ---
 
 # Set up and use Microsoft Whiteboard
 
-The Microsoft Whiteboard app includes the capability for Surface Hubs and other devices to collaborate in real time on the same board.
+The Microsoft Whiteboard app includes the capability for Surface Hubs and other devices with the Microsoft Whiteboard app installed to collaborate in real time on the same board.
 
 ## Prerequisites
 
@@ -48,14 +48,16 @@ On the other device, such as a Surface Hub, when you are signed in, the shared b
 - You can also change the background color and design from solid to grid or dots. Pick the background, then choose the color from the wheel around it.
 - You can export a copy of the Whiteboard collaboration for yourself through the Share charm and leave the board for others to continue working.
 
+For more information, see [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d).
+
 > [!NOTE]
->  If you are using Whiteboard and cannot sign in, you can collaborate by joining a Teams or Skype for Business meeting, and then sharing your screen. After you’re done, tap **Settings** > **Export to email** or save a copy of the board. The SVG export provides higher resolution than PNG and can be opened in a web browser.
+>  If you are using Whiteboard and cannot sign in, you can collaborate by joining a Teams or Skype for Business meeting, and then sharing your screen. After you're done, tap **Settings** > **Export to email** or save a copy of the board. If you choose to export to SVG, it exports vector graphics and provides higher resolution than PNG and can be opened in a web browser.
 
 ## New features in Whiteboard
 
 The Microsoft Whiteboard app, updated for Surface Hub on July 1, 2019 includes a host of new features including:
 
-- **Automatic Saving** - Boards are saved to the cloud automatically when you sign in, and can be found in the board gallery. 
+- **Automatic Saving** - Boards are saved to the cloud automatically when you sign in, and can be found in the board gallery. There is no local folder name or directory.
 - **Extended collaboration across devices** - You can collaborate using new apps for Windows 10 PC and iOS, and a web version for other devices.
 - **Richer canvas** - In addition to ink and images, Whiteboard now includes sticky notes, text and GIFs, with more objects coming soon.
 - **Intelligence** – In addition to ink to shape and table, Whiteboard now includes ink beautification to improve handwriting and ink grab to convert images to ink.
@@ -68,3 +70,5 @@ The Microsoft Whiteboard app, updated for Surface Hub on July 1, 2019 includes a
 - [Windows 10 Creators Update for Surface Hub](https://www.microsoft.com/surface/support/surface-hub/windows-10-creators-update-surface-hub)
 
 - [Support documentation for Microsoft Whiteboard](https://support.office.com/article/Whiteboard-Help-0c0f2aa0-b1bb-491c-b814-fd22de4d7c01)
+
+- [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)

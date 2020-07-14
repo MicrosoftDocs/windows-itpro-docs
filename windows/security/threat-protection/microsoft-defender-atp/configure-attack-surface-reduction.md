@@ -23,7 +23,7 @@ ms.date: 07/01/2018
 You can configure attack surface reduction with a number of tools, including:
 
 * Microsoft Intune
-* System Center Configuration Manager
+* Microsoft Endpoint Configuration Manager
 * Group Policy
 * PowerShell cmdlets
 

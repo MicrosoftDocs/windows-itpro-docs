@@ -32,5 +32,6 @@
 #### [Advanced troubleshooting for stop error or blue screen error](troubleshoot-stop-errors.md)
 #### [Advanced troubleshooting for stop error 7B or Inaccessible_Boot_Device](troubleshoot-inaccessible-boot-device.md)
 #### [Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"](troubleshoot-event-id-41-restart.md)
+#### [Stop error occurs when you update the in-box Broadcom network adapter driver](troubleshoot-stop-error-on-broadcom-driver-update.md)
 ## [Mobile device management for solution providers](mdm/index.md)
 ## [Change history for Client management](change-history-for-client-management.md)

@@ -71,21 +71,18 @@ Request
 
 Here is an example of the request.
 
->[!NOTE]
->For better performance, you can use server closer to your geo location:
-> - api-us.securitycenter.windows.com
-> - api-eu.securitycenter.windows.com
-> - api-uk.securitycenter.windows.com
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ```
 POST https://api.securitycenter.windows.com/api/advancedqueries/run
 Content-type: application/json
 {
-	"Query":"ProcessCreationEvents  
-| where InitiatingProcessFileName =~ \"powershell.exe\"
-| where ProcessCommandLine contains \"appdata\"
-| project EventTime, FileName, InitiatingProcessFileName 
-| limit 2"
+	"Query":"DeviceProcessEvents  
+    | where InitiatingProcessFileName =~ 'powershell.exe'
+    | where ProcessCommandLine contains 'appdata'
+    | project Timestamp, FileName, InitiatingProcessFileName, DeviceId
+    | limit 2"
 }
 ```
 
@@ -96,32 +93,40 @@ Here is an example of the response.
 >[!NOTE]
 >The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-```
-HTTP/1.1 200 OK
-Content-Type: application/json​
+```json
 {
-	"Schema": [{
-		"Name": "EventTime",
-		"Type": "DateTime"
-	},
-	{
-		"Name": "FileName",
-		"Type": "String"
-	},
-	{
-		"Name": "InitiatingProcessFileName",
-		"Type": "String"
-	}],
-	"Results": [{
-		"EventTime": "2018-07-09T07:16:26.8017265",
-		"FileName": "csc.exe",
-		"InitiatingProcessFileName": "powershell.exe"
-	},
-	{
-		"EventTime": "2018-07-08T19:00:02.7798905",
-		"FileName": "gpresult.exe",
-		"InitiatingProcessFileName": "powershell.exe"
-	}]
+	"Schema": [
+		{
+			"Name": "Timestamp",
+			"Type": "DateTime"
+		},
+		{
+			"Name": "FileName",
+			"Type": "String"
+		},
+		{
+			"Name": "InitiatingProcessFileName",
+			"Type": "String"
+		},
+		{
+			"Name": "DeviceId",
+			"Type": "String"
+		}
+	],
+	"Results": [
+		{
+			"Timestamp": "2020-02-05T01:10:26.2648757Z",
+			"FileName": "csc.exe",
+			"InitiatingProcessFileName": "powershell.exe",
+			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+		},
+		{
+			"Timestamp": "2020-02-05T01:10:26.5614772Z",
+			"FileName": "csc.exe",
+			"InitiatingProcessFileName": "powershell.exe",
+			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+		}
+	]
 }
 ```
 

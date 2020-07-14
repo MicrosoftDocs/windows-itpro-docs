@@ -61,7 +61,7 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Office 365 ProPlus</p>
+<td align="left"><p>Microsoft 365 Apps for enterprise</p>
 <p>Also supported:</p>
 <ul>
 <li><p>Visio Pro for Office 365</p></li>

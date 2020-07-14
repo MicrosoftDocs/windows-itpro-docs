@@ -73,7 +73,7 @@ You'll need to whitelist the `securitycenter.windows.com` and all sub-domains un
 
 
 ## Portal communication issues
-If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are whitelisted and open for communciation.
+If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are whitelisted and open for communication.
 
 - `*.blob.core.windows.net 
 crl.microsoft.com`
