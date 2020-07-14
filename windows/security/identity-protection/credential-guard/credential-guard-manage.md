@@ -155,7 +155,7 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 -   You should perform regular reviews of the PCs that have Windows Defender Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
     -   **Event ID 13** Windows Defender Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
     -   **Event ID 14** Windows Defender Credential Guard (LsaIso.exe) configuration: 0x1, 0
-        -   The first variable: 0x1 means Windows Defender Credential Guard is configured to run. 0x0 means it's not configured to run.
+        -   The first variable: 0x1 means Windows Defender Credential Guard is configured to run. 0x0 means it's not configured to run. 0x2 means Windows Defender Credential Guard is configured to run with UEFI lock
         -   The second variable: 0 means it's configured to run in protect mode. 1 means it's configured to run in test mode. This variable should always be 0.
     -   **Event ID 15** Windows Defender Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Windows Defender Credential Guard.
     -   **Event ID 16** Windows Defender Credential Guard (LsaIso.exe) failed to launch: \[error code\]
