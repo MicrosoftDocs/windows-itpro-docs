@@ -8,11 +8,14 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dansimp
+ms.author: v-tea
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.reviewer: 
+ms.custom: 
+- CI 120967
+- CSSTroubleshooting
 ---
 
 # Manage Windows Defender Credential Guard
@@ -154,14 +157,25 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
 -   You should perform regular reviews of the PCs that have Windows Defender Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
     -   **Event ID 13** Windows Defender Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
-    -   **Event ID 14** Windows Defender Credential Guard (LsaIso.exe) configuration: 0x1, 0
-        -   The first variable: 0x1 means Windows Defender Credential Guard is configured to run. 0x0 means it's not configured to run.
+    -   **Event ID 14** Windows Defender Credential Guard (LsaIso.exe) configuration: \[**0x0** \| **0x1** \| **0x2**\], **0**
+        -   The first variable: **0x1** or **0x2** means that Windows Defender Credential Guard is configured to run. 0x0 means that it's not configured to run.
         -   The second variable: 0 means it's configured to run in protect mode. 1 means it's configured to run in test mode. This variable should always be 0.
     -   **Event ID 15** Windows Defender Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Windows Defender Credential Guard.
     -   **Event ID 16** Windows Defender Credential Guard (LsaIso.exe) failed to launch: \[error code\]
-    -   **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]
+    -   **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]  
     You can also verify that TPM is being used for key protection by checking Event ID 51 in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
-        -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
+        -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.  
+  - You can use Windows Powershell to determine whether credential guard is running on a client computer. On the computer in question, open an elevated Powershell window and run the following command:
+  
+    ```powershell
+    (Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).SecurityServicesRunning
+    ```
+
+    This command generates the following output:  
+    - **0**: Windows Defender Credential Guard is disabled (not running)
+    - **1**: Windows Defender Credential Guard is enabled (running)
+    > [!NOTE]  
+    > Checking the task list or Task Manager to see if LSAISO.exe is running is not a recommended method for determining whether Windows Defender Credential Guard is running.
 
 ## Disable Windows Defender Credential Guard
 
