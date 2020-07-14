@@ -53,7 +53,7 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to allow access to the required services. 
 
 > [!NOTE]
-> Smart card and certificate based authentication are not supported during OOBE. For more information, see [Smartcards and certificate-based authentication](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#smartcards-and-certificate-based-authentication).
+> Smart card and certificate based authentication is not supported during OOBE. For more information, see [Smartcards and certificate-based authentication](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#smartcards-and-certificate-based-authentication).
 
 For additional details about each of these services and their specific requirements, review the following details:
 
