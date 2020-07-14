@@ -1,6 +1,6 @@
 ---
 title: Weaknesses found by threat and vulnerability management
-description: Microsoft Defender Security Center offers a Weaknesses page, which lists vulnerabilities found in the infected software running in your organization. 
+description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender ATP threat and vulnerability management capability. 
 keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

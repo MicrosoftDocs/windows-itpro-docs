@@ -1,6 +1,6 @@
 ---
-title: Threat and vulnerability management security recommendations
-description: Get actionable security recommendations prioritized by threat, likelihood to be breached, and value.
+title: Security recommendations by threat and vulnerability management
+description: Get actionable security recommendations prioritized by threat, likelihood to be breached, and value, in threat and vulnerability management.
 keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

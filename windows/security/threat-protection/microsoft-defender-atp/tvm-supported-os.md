@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ---
-# Supported operating systems and platforms for threat and vulnerability management
+# Supported operating systems and platforms - threat and vulnerability management
 
 **Applies to:**
 

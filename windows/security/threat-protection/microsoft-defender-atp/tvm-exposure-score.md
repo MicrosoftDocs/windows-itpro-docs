@@ -1,5 +1,5 @@
 ---
-title: Threat and vulnerability management  xxposure score
+title: Exposure score in threat and vulnerability management
 description: The threat and vulnerability management exposure score reflects how vulnerable your organization is to cybersecurity threats.
 keywords: exposure score, mdatp exposure score, mdatp tvm exposure score, organization exposure score, tvm organization exposure score, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Threat and vulnerability management exposure score
+# Exposure score - threat and vulnerability management
 
 **Applies to:**
 

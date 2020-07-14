@@ -1,5 +1,5 @@
 ---
-title: Threat and vulnerability management remediation and exceptions
+title: Remediation activities and exceptions - threat and vulnerability management
 description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management. 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
