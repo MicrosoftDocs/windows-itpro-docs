@@ -22,7 +22,14 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, you can choose from among several methods to manage your features and capabilities. 
+After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, you can choose from among several methods to manage your features and capabilities. These methods include the following:
+- Intune
+- Configuration Manager (formerly System Center Configuration Manager)
+- Group Policy Objects
+- Windows PowerShell
+- Windows Management Instrumentation
+- Microsoft Malware Protection Command Line Utility
+
 
 
 
