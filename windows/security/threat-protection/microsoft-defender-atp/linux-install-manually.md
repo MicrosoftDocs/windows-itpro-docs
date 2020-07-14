@@ -68,11 +68,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    ```
-
-    ```bash
-    sudo rpm --import microsoft.asc
+    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
 - Install `yum-utils` if it is not already installed:
@@ -106,11 +102,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc > microsoft.asc
-    ```
-
-    ```bash
-    rpm --import microsoft.asc
+    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
 ### Ubuntu and Debian systems
@@ -147,11 +139,13 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
-- Install the gpg package if not already installed:
+- Install the `gpg` package if not already installed:
 
     ```bash
     sudo apt-get install gpg
     ```
+
+  If `gpg` is not available, then install `gnupg`.
 
 - Install the Microsoft GPG public key:
 
@@ -179,10 +173,39 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install mdatp
     ```
 
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device. Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.
+
+    ```bash
+    # list all repositories
+    $ yum repolist
+    ...
+    packages-microsoft-com-prod               packages-microsoft-com-prod        316
+    packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
+    ...
+
+    # install the package from the production repository
+    $ sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
+    ```
+
 - SLES and variants:
 
     ```bash
     sudo zypper install mdatp
+    ```
+
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+    ```bash
+    # list all repositories
+    $ zypper repos
+    ...
+    #  | Alias | Name | ...
+    XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
+    XX | packages-microsoft-com-prod | microsoft-prod | ...
+    ...
+
+    # install the package from the production repository
+    $ sudo zypper install packages-microsoft-com-prod:mdatp
     ```
 
 - Ubuntu and Debian system:
@@ -191,12 +214,24 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install mdatp
     ```
 
+    If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+    ```bash
+    # list all repositories
+    $ cat /etc/apt/sources.list.d/*
+    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
+    deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+
+    # install the package from the production repository
+    $ sudo apt -t bionic install mdatp
+    ```
+
 ## Download the onboarding package
 
 Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 machines)** as the deployment method.
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
@@ -204,74 +239,84 @@ Download the onboarding package from Microsoft Defender Security Center:
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
 
-```bash
-ls -l
-```
+    ```bash
+    ls -l
+    ```
 
-`total 8`
-`-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
+    `total 8`
+    `-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
 
-```bash
-unzip WindowsDefenderATPOnboardingPackage.zip
-```
+    ```bash
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    Archive:  WindowsDefenderATPOnboardingPackage.zip
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
 
-`Archive:  WindowsDefenderATPOnboardingPackage.zip`
-`inflating: WindowsDefenderATPOnboarding.py`
+    `Archive:  WindowsDefenderATPOnboardingPackage.zip`
+    `inflating: WindowsDefenderATPOnboarding.py`
 
 ## Client configuration
 
-1. Copy WindowsDefenderATPOnboarding.py to the target machine.
+1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
 
-    Initially the client machine is not associated with an organization. Note that the *orgId* attribute is blank:
+    Initially the client device is not associated with an organization. Note that the *orgId* attribute is blank:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
-2. Run WindowsDefenderATPOnboarding.py, and note that, in order to run this command, you must have `python` installed on the device:
+2. Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:
 
     ```bash
-    python WindowsDefenderATPOnboarding.py
+    python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. Verify that the machine is now associated with your organization and reports a valid organization identifier:
+3. Verify that the device is now associated with your organization and reports a valid organization identifier:
 
     ```bash
-    mdatp --health orgId
+    mdatp health --field org_id
     ```
 
 4. A few minutes after you complete the installation, you can see the status by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
     ```bash
-    mdatp --health healthy
+    mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
+    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
+    > ```bash
+    > mdatp health --field definitions_status
+    > ```
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
-5. Run a detection test to verify that the machine is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded machine:
+5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
     - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-    ```bash
-    mdatp --health realTimeProtectionEnabled
-    ```
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
 
     - Open a Terminal window. Copy and execute the following command:
 
-    ``` bash
-    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-    ```
+        ``` bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
 
     - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
 
-    ```bash
-    mdatp --threat --list --pretty
-    ```
+        ```bash
+        mdatp threat list
+        ```
 
 ## Log installation issues
 
 See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+## Operating system upgrades
+
+When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
 
 ## Uninstallation
 

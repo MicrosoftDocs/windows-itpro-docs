@@ -1,6 +1,6 @@
 ---
 title: Get user related alerts API
-description: Retrieves a collection of alerts related to a given user ID.
+description: Retrieve a collection of alerts related to a given user ID using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, user, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -44,7 +44,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only alerts, associated with machines, that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

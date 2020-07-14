@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ActiveXControls
-description: Policy CSP - ActiveXControls
+description: Learn the ins and outs of various Policy CSP - ActiveXControls settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL. 
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
 If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
@@ -109,6 +109,8 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in Windows 10, version 1909.
+-   8 - Added in Windows 10, version 2004.
 
 <!--/Policies-->
 

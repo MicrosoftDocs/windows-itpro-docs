@@ -34,7 +34,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac machines), configure your macOS machine running Microsoft Defender ATP to be an "Insider" machine. See [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender ATP to be an "Insider" device. See [Enable Microsoft Defender ATP Insider Device](endpoint-detection-response-mac-preview.md). 
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -69,14 +69,15 @@ After you've enabled the service, you may need to configure your network or fire
 
 ### Network connections
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-| Service location                         | DNS record              |
-| ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
+
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
+
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Proxy auto-config (PAC)
@@ -105,7 +106,7 @@ The output from this command should be similar to the following:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
+> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
 Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
 ```bash

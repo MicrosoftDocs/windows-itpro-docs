@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Security Center time zone settings
-description: Use the menu to configure the time zone and view license information.
-keywords: settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
+description: Use the info contained here to configure the Microsoft Defender Security Center time zone settings and view license information.
+keywords: settings, Microsoft Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -47,7 +47,7 @@ Setting the Microsoft Defender ATP time zone to UTC will display all system time
 ### Local time zone
 You can choose to have Microsoft Defender ATP use local time zone settings. All alerts and events will be displayed using your local time zone.
 
-The local time zone is taken from your machine’s regional settings. If you change your regional settings, the Microsoft Defender ATP time zone will also change. Choosing this setting means that the timestamps displayed in Microsoft Defender ATP will be aligned to local time for all Microsoft Defender ATP users. Analysts located in different global locations will now see the Microsoft Defender ATP alerts according to their regional settings.
+The local time zone is taken from your device’s regional settings. If you change your regional settings, the Microsoft Defender ATP time zone will also change. Choosing this setting means that the timestamps displayed in Microsoft Defender ATP will be aligned to local time for all Microsoft Defender ATP users. Analysts located in different global locations will now see the Microsoft Defender ATP alerts according to their regional settings.
 
 Choosing to use local time can be useful if the analysts are located in a single location. In this case it might be easier to correlate events to local time, for example – when a local user clicked on a suspicious email link.
 

@@ -1,7 +1,7 @@
 ---
 title: Use shared queries in advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -51,6 +51,9 @@ You can save a new or existing query so that it is only accessible to you or sha
     ![Image of delete query](images/atp_advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
+
+## Create a direct link to a query
+To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.
 
 ## Access queries in the GitHub repository  
 Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 

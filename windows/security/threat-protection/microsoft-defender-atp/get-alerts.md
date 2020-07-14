@@ -26,7 +26,7 @@ ms.topic: article
 ## API description
 Retrieves a collection of Alerts.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's ```$filter``` query is supported on: ```alertCreationTime```, ```incidentId```, ```InvestigationId```, ```status```, ```severity``` and ```category``` properties.
+<br>The OData's ```$filter``` query is supported on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
@@ -49,7 +49,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The response will include only alerts that are associated with machines that the user can access, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

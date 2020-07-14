@@ -45,7 +45,7 @@ Before you get started, be sure to review these best practices and requirements:
 
 **Best practices**
 
-- **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Configuration Manager in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+- **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Microsoft Endpoint Configuration Manager in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
 - **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create-ci-policy) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
 
 Copy the commands for each step into an elevated Windows PowerShell session. You'll use Package Inspector to find and trust all binaries in the app.
