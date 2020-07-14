@@ -19,3 +19,10 @@ ms.topic: article
 
 # Manage Microsoft Defender Advanced Threat Protection post migration
 
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, you can choose from among several methods to manage your features and capabilities. 
+
+
+
