@@ -532,7 +532,7 @@ The following table shows the Group Policy settings that are used to deny networ
 11. Create links to all other OUs that contain servers.
 
     > [!NOTE]
-    > You might have to create a separate GPO, if the user name of the default Administrator account is different on workstations and servers.
+    > You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
 
 
 ### <a href="" id="sec-create-unique-passwords"></a>Create unique passwords for local accounts with administrative rights
