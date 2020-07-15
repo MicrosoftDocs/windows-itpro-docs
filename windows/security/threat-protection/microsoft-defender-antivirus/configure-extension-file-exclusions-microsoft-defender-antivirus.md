@@ -564,6 +564,124 @@ If you do not have Internet access, you can create your own EICAR test file by w
 
 You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
+## Common mistakes to avoid when configuring exclusion lists
+This section describes some common mistakes that you should avoid making when adding exclusions to Microsoft Defender Antivirus scans.
+
+### Excluding certain trusted items
+If you trust a file, file type, folder, or a process, you can add that to the exclusion list for Microsoft Defender Antivirus scans. However, there are certain items that you should not exclude from scanning even though you trust them. 
+
+The following lists provide the , including:  
+- Paths
+- File extension
+- Processes
+
+### Paths not to be excluded
+The following table provides the paths that you should not add in the exclusion list:
+
+| File path | Comments |
+|-----------| --------- |
+|- %systemdrive% </br>- C: </br>- C:\ </br>- C:\* | |
+|- %ProgramFiles%\Java </br>- C:\Program Files\Java | |
+|- %ProgramFiles%\Contoso\ </br>- C:\Program Files\Contoso\ | It’s common to see applications and/or services have documentation to open up the whole folder and subfolders. |
+|- %ProgramFiles(x86)%\Contoso\ </br>- C:\Program Files (x86)\Contoso\ | It’s common to see applications and/or services have documentation to open up the whole folder and subfolders. |
+|- C:\Temp </br>- C:\Temp\ </br>- C:\Temp\* | |
+|- C:\Users\ </br>- C:\Users\* | |
+|C:\Users\<UserProfileName>\AppData\Local\Temp\ | |
+|C:\Users\<UserProfileName>\AppData\LocalLow\Temp\ | |
+|C:\Users\<UserProfileName>\AppData\Roaming\Temp\ | |
+|- %Windir%\Prefetch </br>- C:\Windows\Prefetch </br>- C:\Windows\Prefetch\ </br>- C:\Windows\Prefetch\* | |
+|- %Windir%\System32\Spool </br>- C:\Windows\System32\Spool | |
+|C:\Windows\System32\CatRoot2 | |
+|- %Windir%\Temp </br>- C:\Windows\Temp </br>- C:\Windows\Temp\ </br>- C:\Windows\Temp\* | |
+
+### File extensions that should not be excluded
+The following is the list of file extensions that you should not add to the exclusion list:
+
+- .7zip
+- .bat
+- .bin
+- .cab
+- .cmd
+- .com
+- .cpl
+- .dll
+- .exe
+- .fla
+- .gif
+- .gz
+- .hta
+- .inf
+- .java
+- .jar
+- .job
+- .jpeg
+- .jpg
+- .js
+- .ko
+- .ko.gz
+- .msi
+- .ocx
+- .png
+- .ps1
+- .py
+- .rar
+- .reg
+- .scr
+- .sys
+- .tar
+- .tmp
+- .url
+- .vbe
+- .vbs
+- .wsf
+- .zip
+
+### Processes that should not be excluded
+The following is the list of processes that should not be added to the exclusion list:  
+- AcroRd32.exe
+- bitsadmin.exe
+- excel.exe
+- iexplore.exe
+- java.exe
+- outlook.exe
+- psexec.exe
+- powerpnt.exe
+- powershell.exe
+- schtasks.exe
+- svchost.exe
+- wmic.exe
+- winword.exe
+- wuauclt.exe
+- addinprocess.exe
+- addinprocess32.exe
+- addinutil.exe
+- bash.exe
+- bginfo.exe[1]
+- cdb.exe
+- csi.exe
+- dbghost.exe
+- dbgsvc.exe
+- dnx.exe
+- fsi.exe
+- fsiAnyCpu.exe
+- kd.exe
+- ntkd.exe
+- lxssmanager.dll
+- msbuild.exe[2]
+- mshta.exe
+- ntsd.exe
+- rcsi.exe
+- system.management.automation.dll
+- windbg.exe
+
+### Using only the file name in the exclusion list
+It is possible that a malware is named exactly same as the file that you trust and want to exclude from scanning. In such cases, to avoid excluding the malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude `Filename.exe` from scanning, use the complete path to the file, such as `C:\program files\contoso\Filename.exe`.
+
+### On Server workloads, using a single exclusion for multiple exceptions
+
+Do not include every single application/service into just ‘1’ exclusion. You don’t want to include exceptions for IIS on your SQL server, or File Server, etc. You should split different application/service workloads to multiple exceptions.
+
+
 ## Related topics
 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
