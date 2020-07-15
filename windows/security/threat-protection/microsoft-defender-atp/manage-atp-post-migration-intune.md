@@ -26,4 +26,5 @@ We recommend using Intune to manage threat protection features for the devices (
 |Manage your organization's devices using Intune     |[Protect devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
 |Integrate Microsoft Defender ATP with Microsoft Intune as a Mobile Threat Defense solution for Android devices and devices running Windows 10 or later   |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)         |
 |Configure Conditional Access to control the devices and apps that can connect to your email and company resources |[Configure Conditional Access in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access) |
+|Configure Microsoft Defender Antivirus settings using the Policy configuration service provider ([Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider))
  
