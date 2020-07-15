@@ -28,4 +28,5 @@ The following table lists various tasks and resources to manage features and cap
 |---------|---------|
 |Manage devices using Intune     |[Protect devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
 |Integrate Microsoft Defender ATP with Microsoft Intune as a Mobile Threat Defense solution for Android devices and devices running Windows 10 or later   |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)         |
+|Configure Conditional Access to control the devices and apps that can connect to your email and company resources |[Configure Conditional Access in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access) |
  
