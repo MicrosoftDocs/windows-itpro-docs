@@ -74,6 +74,9 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
+> [!NOTE]
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more details about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows 10 device settings to enable Windows Hello for Business in Intune](https://docs.microsoft.com/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp).
+
 #### Enable Windows Hello for Business
 
 The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should be attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.  
