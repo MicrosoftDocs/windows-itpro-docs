@@ -199,9 +199,9 @@ The following table describes how the wildcards can be used and provides some ex
 
 <a id="review"></a>
 
-### System environmental variables
+### System environment variables
 
-The following table lists and describes the system account environmental variables. 
+The following table lists and describes the system account environment variables. 
 
 <table border="0" cellspacing="0" cellpadding="20">
 <thead>
@@ -564,21 +564,17 @@ If you do not have Internet access, you can create your own EICAR test file by w
 
 You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
-## Common mistakes to avoid when configuring exclusion lists
-This section describes some common mistakes that you should avoid making when adding exclusions to Microsoft Defender Antivirus scans.
+## Common mistakes to avoid when defining exclusions
+This section describes some common mistakes that you should avoid making when defining exclusions for Microsoft Defender Antivirus scans.
 
 ### Excluding certain trusted items
 If you trust a file, file type, folder, or a process, you can add that to the exclusion list for Microsoft Defender Antivirus scans. However, there are certain items that you should not exclude from scanning even though you trust them. 
 
-The following lists provide the , including:  
-- Paths
-- File extension
-- Processes
+The following lists contain the items that you should not add as exclusions.
 
-### Paths not to be excluded
-The following table provides the paths that you should not add in the exclusion list:
+**Do not add exclusions for the following folder locations:**
 
-| File path | Comments |
+| Folder location | Comments |
 |-----------| --------- |
 |- %systemdrive% </br>- C: </br>- C:\ </br>- C:\* | |
 |- %ProgramFiles%\Java </br>- C:\Program Files\Java | |
@@ -594,9 +590,7 @@ The following table provides the paths that you should not add in the exclusion 
 |C:\Windows\System32\CatRoot2 | |
 |- %Windir%\Temp </br>- C:\Windows\Temp </br>- C:\Windows\Temp\ </br>- C:\Windows\Temp\* | |
 
-### File extensions that should not be excluded
-The following is the list of file extensions that you should not add to the exclusion list:
-
+**Do not add exclusions for the following file extensions:**  
 - .7zip
 - .bat
 - .bin
@@ -636,8 +630,7 @@ The following is the list of file extensions that you should not add to the excl
 - .wsf
 - .zip
 
-### Processes that should not be excluded
-The following is the list of processes that should not be added to the exclusion list:  
+**Do not add exclusions for the following processes:**  
 - AcroRd32.exe
 - bitsadmin.exe
 - excel.exe
@@ -674,13 +667,14 @@ The following is the list of processes that should not be added to the exclusion
 - system.management.automation.dll
 - windbg.exe
 
-### Using only the file name in the exclusion list
-It is possible that a malware is named exactly same as the file that you trust and want to exclude from scanning. In such cases, to avoid excluding the malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude `Filename.exe` from scanning, use the complete path to the file, such as `C:\program files\contoso\Filename.exe`.
+### Using just the file name in the exclusion list
+It is possible that the name of a malware is same as the file that you trust and want to exclude from scanning. Therefore, to avoid excluding a potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude **Filename.exe** from scanning, use the complete path to the file, such as **C:\program files\contoso\Filename.exe**.
 
-### On Server workloads, using a single exclusion for multiple exceptions
+### Using a single exclusion for multiple exceptions on Server workloads
+Do not include every application or service into a single exclusion. You don’t want to include exceptions for IIS on your SQL server, or File Server, etc. You should split different application and service workloads into multiple exceptions.
 
-Do not include every single application/service into just ‘1’ exclusion. You don’t want to include exceptions for IIS on your SQL server, or File Server, etc. You should split different application/service workloads to multiple exceptions.
-
+### Using incorrect environment variables as wildcards in the file name and folder path or extension exclusion lists
+Microsoft Defender Antivirus Service runs as a Local System account, which means it gets information from the "system" environment variable instead of the "user" environment variable. Therefore, you must use "system" environment variables when defining Microsoft Defender Antivirus folder or process exclusions. See the table under [System environment variables](#system-environment-variables) for a complete list of system account environment variables.
 
 ## Related topics
 
