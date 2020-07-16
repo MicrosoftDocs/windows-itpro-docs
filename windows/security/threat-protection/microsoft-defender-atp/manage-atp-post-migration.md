@@ -24,15 +24,22 @@ ms.topic: article
 
 After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. Use this article as a guide to getting started managing your threat protection features in Microsoft Defender ATP post migration. 
 
-Depending on what you want to configure, you can use one of several methods/tools:
-- Intune (part of Microsoft Endpoint Manager)
-- Configuration Manager (formerly System Center Configuration Manager)
-- Group Policy Objects (in Azure Active Directory Domain Services)
-- PowerShell (Windows, Linux, and macOS)
-- Windows Management Instrumentation (for Windows devices only)
-- Microsoft Malware Protection Command Line Utility (this is often referred to as *MPCmdRun.exe*)
+Depending on what you want to configure, you can use one of several methods/tools, as listed in the following table:
 
-However, not all methods can be used to configure all the capabilities of Microsoft Defender ATP.
+| Use this tool/method...  | To configure these Microsoft Defender ATP settings |
+|---|---|
+|Intune (part of Microsoft Endpoint Manager) |list |
+| Configuration Manager (formerly System Center Configuration Manager) |  |
+| Group Policy Objects (in Azure Active Directory Domain Services) |  |
+| PowerShell (Windows, Linux, and macOS)  |  |
+| Windows Management Instrumentation (for Windows devices only)  |  |
+| Microsoft Malware Protection Command Line Utility (this is often referred to as *MPCmdRun.exe*) |  |
+
+## Additional resources
+
+|Subject | Resources |
+|---|---|
+|General resources |- [Microsoft Defender Antivirus documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) ([http://aka.ms/wdavtechnet](http://aka.ms/wdavtechnet)) <br/><br/>- [Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi) ([http://www.microsoft.com/mmpc](http://www.microsoft.com/mmpc)) |
 
 
 
