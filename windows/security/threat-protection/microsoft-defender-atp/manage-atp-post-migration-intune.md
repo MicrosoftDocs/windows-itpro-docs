@@ -38,7 +38,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 |  |  |
 
 
-## Configure threat protection settings in Intune
+## Find your Microsoft Defender ATP settings in Intune
 
 > [!IMPORTANT]
 > You must be a global administrator or service administrator in Intune to configure the settings described in this article. To learn more, see [Types of administrators (Intune)](https://docs.microsoft.com/mem/intune/fundamentals/users-add#types-of-administrators).
