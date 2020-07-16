@@ -39,10 +39,5 @@ Depending on what you want to configure, you can use one of several methods/tool
 
 |Subject | Resources |
 |---|---|
-|General resources |- [Microsoft Defender Antivirus documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) ([http://aka.ms/wdavtechnet](http://aka.ms/wdavtechnet)) <br/><br/>- [Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi) ([http://www.microsoft.com/mmpc](http://www.microsoft.com/mmpc)) |
-
-
-
-
-
-
+|General resources |- Microsoft Defender Antivirus documentation ([http://aka.ms/wdavtechnet](http://aka.ms/wdavtechnet)) <br/><br/>- Microsoft Security Intelligence ([http://www.microsoft.com/mmpc](http://www.microsoft.com/mmpc)) <br/><br/>- Microsoft Security blog ([https://aka.ms/mmpcblog](https://aka.ms/mmpcblog)) |
+|Endpoint Protection (Configuration Manager) |[Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)  |
