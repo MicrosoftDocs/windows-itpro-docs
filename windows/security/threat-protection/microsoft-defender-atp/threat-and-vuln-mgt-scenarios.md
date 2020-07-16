@@ -1,6 +1,6 @@
 ---
-title: Threat & Vulnerability Management scenarios
-description: Learn how Threat & Vulnerability Management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
+title: Scenarios - threat and vulnerability management
+description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Threat & Vulnerability Management scenarios
+# Scenarios - threat and vulnerability management
 
 **Applies to:**
 
@@ -81,9 +81,9 @@ Examples of devices that should be marked as high value:
 
 ## Related topics
 
-- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -92,6 +92,6 @@ Examples of devices that should be marked as high value:
 - [Weaknesses](tvm-weaknesses.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)

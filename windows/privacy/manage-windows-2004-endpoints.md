@@ -85,6 +85,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|*ow1.res.office365.com|
 |||HTTPS|office.com|
 |||HTTPS|blobs.officehome.msocdn.com|
+|||HTTPS|self.events.data.microsoft.com|
 |OneDrive|The following endpoints are related to OneDrive. If you turn off traffic for these endpoints, anything that relies on g.live.com to get updated URL information will no longer work.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-onedrive)|
 |||TLSv1.2|*g.live.com|
 |||TLSv1.2|oneclient.sfx.ms|
