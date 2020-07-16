@@ -1,7 +1,7 @@
 ---
 title: Overview of Microsoft Secure Score for Devices in Microsoft Defender Security Center
 description: Your score for devices shows the collective security configuration state of your devices across application, operating system, network, accounts, and security controls
-keywords: Microsoft Secure Score for Devices, mdatp Microsoft Secure Score for Devices, secure score, configuration score, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+keywords: Microsoft Secure Score for Devices, mdatp Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -23,9 +23,9 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >[!NOTE]
-> Configuration score is now part of Threat & Vulnerability Management as Microsoft Secure Score for Devices.
+> Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
 
-Your score for devices is visible in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
+Your score for devices is visible in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
 
 - Application
 - Operating system
@@ -51,7 +51,7 @@ The data in the Microsoft Secure Score for Devices card is the product of meticu
 
 You can improve your security configuration when you remediate issues from the security recommendations list. As you do so, your Microsoft Secure Score for Devices improves, which means your organization becomes more resilient against cybersecurity threats and vulnerabilities.
 
-1. From the Microsoft Secure Score for Devices card in the Threat & Vulnerability Management dashboard, select the one of the categories to view the list of recommendations related to that category. It will take you to the [**Security recommendations**](tvm-security-recommendation.md) page. If you want to see all security recommendations, once you get to the Security recommendations page, clear the search field.
+1. From the Microsoft Secure Score for Devices card in the threat and vulnerability management dashboard, select the one of the categories to view the list of recommendations related to that category. It will take you to the [**Security recommendations**](tvm-security-recommendation.md) page. If you want to see all security recommendations, once you get to the Security recommendations page, clear the search field.
 
 2. Select an item on the list. The flyout panel will open with details related to the recommendation. Select **Remediation options**.
 
@@ -82,9 +82,9 @@ You can improve your security configuration when you remediate issues from the s
 
 ## Related topics
 
-- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
@@ -92,4 +92,4 @@ You can improve your security configuration when you remediate issues from the s
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configure data access for threat and vulnerability management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

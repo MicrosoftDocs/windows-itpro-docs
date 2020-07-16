@@ -1,5 +1,5 @@
 ---
-title: Event timeline
+title: Event timeline in threat and vulnerability management
 description: Event timeline is a "risk news feed" which will help you interpret how risk is introduced into the organization and which mitigations happened to reduce it.
 keywords: event timeline, mdatp event timeline, mdatp tvm event timeline, threat and vulnerability management, Microsoft Defender Advanced Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Event timeline
+# Event timeline - threat and vulnerability management
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -33,23 +33,23 @@ Event timeline also tells the story of your [exposure score](tvm-exposure-score.
 
 You can access Event timeline mainly through three ways:
 
-- In the Threat & Vulnerability Management navigation menu in the Microsoft Defender Security Center
-- Top events card in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
-- Hovering over the Exposure Score graph in the [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- In the threat and vulnerability management navigation menu in the Microsoft Defender Security Center
+- Top events card in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most machines or critical vulnerabilities)
+- Hovering over the Exposure Score graph in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 
 ### Navigation menu
 
-Go to the Threat & Vulnerability Management navigation menu and select **Event timeline** to view impactful events.
+Go to the threat and vulnerability management navigation menu and select **Event timeline** to view impactful events.
 
 ### Top events card
 
-In the Threat & Vulnerability Management dashboard, the "Top events" card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event timeline page.
+In the Tthreat and vulnerability management dashboard, the "Top events" card displays the three most impactful events in the last 7 days. Select **Show more** to go to the Event timeline page.
 
 ![Event timeline page](images/tvm-top-events-card.png)
 
 ### Exposure score graph
 
-In the Threat & Vulnerability Management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then none will be shown.
+In the threat and vulnerability management dashboard, hover over the Exposure score graph to view top events from that day that impacted your machines. If there are no events, then none will be shown.
 
 ![Event timeline page](images/tvm-event-timeline-exposure-score400.png)
 
@@ -118,9 +118,9 @@ A full page will appear with all the details of a specific software, including a
 
 ## Related topics
 
-- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
@@ -130,6 +130,6 @@ A full page will appear with all the details of a specific software, including a
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
