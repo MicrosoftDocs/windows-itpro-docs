@@ -184,7 +184,7 @@ Forwards endpoint security alerts and their triage status to Microsoft Complianc
 
 1.	Log in to the Azure portal with a Global Administrator or Security Administrator role.
 
-2.	Click <Insider risk management??>.
+2.	Click <insider risk management??>.
 
 3.	Toggle the Integration setting to **On** and click **Save**.
 
