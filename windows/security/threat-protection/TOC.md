@@ -27,6 +27,12 @@
 #### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
 #### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
 ### [Manage Microsoft Defender ATP post migration](microsoft-defender-atp/manage-atp-post-migration.md)
+#### [Use Intune](microsoft-defender-atp/manage-atp-post-migration-intune.md)
+#### [Use Configuration Manager](microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md)
+#### [Use PowerShell](microsoft-defender-atp/manage-atp-post-migration-group-policy-objects.md)
+#### [Use Group Policy Objects](microsoft-defender-atp/manage-atp-post-migration-powershell.md)
+#### [Use Windows Management Instrumentation](microsoft-defender-atp/manage-atp-post-migration-wmi.md)
+#### [Use the Microsoft Malware Protection Command Line Utility](microsoft-defender-atp/manage-atp-post-migration-mpcmdrun.md)
 
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
