@@ -570,8 +570,6 @@ This section describes some common mistakes that you should avoid making when de
 ### Excluding certain trusted items
 If you trust a file, file type, folder, or a process, you can add that to the exclusion list for Microsoft Defender Antivirus scans. However, there are certain items that you should not exclude from scanning even though you trust them. 
 
-The following lists contain the items that you should not add as exclusions.
-
 **Do not add exclusions for the following folder locations:**
 
 | Folder location | Comments |
@@ -668,13 +666,13 @@ The following lists contain the items that you should not add as exclusions.
 - windbg.exe
 
 ### Using just the file name in the exclusion list
-It is possible that the name of a malware is same as the file that you trust and want to exclude from scanning. Therefore, to avoid excluding a potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude **Filename.exe** from scanning, use the complete path to the file, such as **C:\program files\contoso\Filename.exe**.
+A malware may have the same name as that of the file that you trust and want to exclude from scanning. Therefore, to avoid excluding a potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude **Filename.exe** from scanning, use the complete path to the file, such as **C:\program files\contoso\Filename.exe**.
 
-### Using a single exclusion for multiple exceptions on Server workloads
-Do not include every application or service into a single exclusion. You don’t want to include exceptions for IIS on your SQL server, or File Server, etc. You should split different application and service workloads into multiple exceptions.
+### Using a single exclusion for multiple server workloads
+Do not add every application or service into a single exclusion. For example, do not add exclusions for IIS to your SQL server or File server exclusions. On server workloads, split different application and service workloads into multiple exclusions.
 
 ### Using incorrect environment variables as wildcards in the file name and folder path or extension exclusion lists
-Microsoft Defender Antivirus Service runs as a Local System account, which means it gets information from the "system" environment variable instead of the "user" environment variable. Therefore, you must use "system" environment variables when defining Microsoft Defender Antivirus folder or process exclusions. See the table under [System environment variables](#system-environment-variables) for a complete list of system account environment variables.
+Microsoft Defender Antivirus Service runs as a Local System account, which means it gets information from the system environment variable instead of the user environment variable. Environment variable usage as a wildcard is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](#system-environment-variables) for a complete list of system account environment variables.
 
 ## Related topics
 
