@@ -17,10 +17,13 @@ manager: dansimp
 ---
 
 # Common mistakes to avoid when defining exclusions
-This article describes some common mistakes that you should avoid when defining exclusions for Microsoft Defender Antivirus scans.
+You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
+See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md) for more information.
+
+This article describes some common mistakes that you should avoid when defining exclusions from Microsoft Defender Antivirus scans. 
 
 ## Excluding certain trusted items
-There are certain file, file type, folder, or a process that you should not exclude from scanning even though you trust them. Refer to the following section for items that you should not exclude from scanning.
+There are certain files, file types, folders, or processes that you should not exclude from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.
 
 **Do not add exclusions for the following folder locations:**
 
@@ -134,11 +137,12 @@ There are certain file, file type, folder, or a process that you should not excl
 ## Using just the file name in the exclusion list
 A malware may have the same name as that of the file that you trust and want to exclude from scanning. Therefore, to avoid excluding a potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude **Filename.exe** from scanning, use the complete path to the file, such as **C:\program files\contoso\Filename.exe**.
 
-## Using a single exclusion for multiple server workloads
-Do not use a single exclusion list to define exclusions for multiple server workloads. On Server workloads, split the different application or service workloads into multiple exceptions. For example, create separate exclusion lists for workloads on IIS Server and File Server.
+## Using a single exclusion list for multiple server workloads
+Do not use a single exclusion list to define exclusions for multiple server workloads. Split the exclusions for different application or service workloads into multiple exclusion lists. For example, the exclusion list for your IIS Server workload must be different from the exclusion list for your SQL Server workload.
 
 ## Using incorrect environment variables as wildcards in the file name and folder path or extension exclusion lists
-Microsoft Defender Antivirus Service runs as a Local System account, which means it gets information from the system environment variable instead of the user environment variable. Environment variable usage as a wildcard is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system account environment variables.
+Microsoft Defender Antivirus Service runs in system context using the LocalSystem account, which means it gets information from the system environment variable, and not from the user environment variable. Use of environment variables as a wildcard in exclusion lists is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables as wildcards when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system environment variables.
+See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
 
 ## Related topics
 
