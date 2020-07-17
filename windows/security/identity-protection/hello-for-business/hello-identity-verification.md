@@ -29,6 +29,8 @@ Windows Hello addresses the following problems with passwords:
 - Server breaches can expose symmetric network credentials (passwords).
 - Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
 - Users can inadvertently expose their passwords due to [phishing attacks](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+> [!IMPORTANT]
+> Windows devices may prompt users for enrollment if unmanaged. Please review the section on [Managing Windows Hello in your Organization](hello-manage-in-organization.md) for more information
 
 > | | | |
 > | :---: | :---: | :---: |
