@@ -107,3 +107,7 @@ Windows Defender Application Guard accesses files from a VHD mounted on the host
 
 If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
 
+### Why am I getting the error message ("ERROR_VIRTUAL_DISK_LIMITATION")?
+
+Application Guard may not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
+
