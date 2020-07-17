@@ -95,7 +95,7 @@ Microsoft Defender Application Guard accesses files from a VHD mounted on the ho
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
-There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatary network isolation policies to deploy WDAG are different between CSP and GP.
+There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
 
 Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
 Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
