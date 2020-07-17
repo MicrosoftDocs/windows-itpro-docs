@@ -1,5 +1,5 @@
 ---
-title: Get all vulnerabilities by Machine and Software
+title: Get all vulnerabilities by machine and software
 description: Retrieves a list of all the vulnerabilities affecting the organization by Machine and Software
 keywords: apis, graph api, supported apis, get, vulnerability information, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
@@ -16,13 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# List vulnerabilities by Machine and Software
+# List vulnerabilities by machine and software
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves a list of all the vulnerabilities affecting the organization per [Machine](machine.md) and [Software](software.md).
-<br>If the vulnerability has a fixing KB, it will appear in the response.
-<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData ```$filter``` is supported on all properties.
+Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).
+- If the vulnerability has a fixing KB, it will appear in the response.
+- Supports [OData V4 queries](https://www.odata.org/documentation/).
+- The OData ```$filter``` is supported on all properties.
 
 >[!Tip]
 >This is great API for [Power BI integration](api-power-bi.md).
@@ -100,5 +101,6 @@ Here is an example of the response.
 ```
 
 ## Related topics
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+
+- [Risk-based threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)
