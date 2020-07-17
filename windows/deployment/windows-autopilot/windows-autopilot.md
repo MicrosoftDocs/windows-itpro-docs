@@ -25,9 +25,13 @@ ms.topic: article
 
 Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. You can also use Windows Autopilot to reset, repurpose and recover devices. This solution enables an IT department to achieve the above with little to no infrastructure to manage, with a process that's easy and simple.
 
-Windows Autopilot is designed to simplify all parts of the lifecycle of Windows devices, for both IT and end users, from initial deployment through the eventual end of life. Leveraging cloud-based services, it can reduce the overall costs for deploying, managing, and retiring devices by reducing the amount of time that IT needs to spend on these processes and the amount of infrastructure that they need to maintain, while ensuring ease of use for all types of end users. See the following diagram:
+Windows Autopilot is designed to simplify all parts of the lifecycle of Windows devices, for both IT and end users, from initial deployment through the eventual end of life. Leveraging cloud-based services, it can reduce the overall costs for deploying, managing, and retiring devices by reducing the amount of time that IT needs to spend on these processes and the amount of infrastructure that they need to maintain, while ensuring ease of use for all types of end users. See the following video and diagram:
 
-   ![Process overview](images/image1.png)
+&nbsp;
+
+> [!video https://www.microsoft.com/videoplayer/embed/RE4C7G9?autoplay=false]
+
+![Process overview](images/image1.png)
 
 When initially deploying new Windows devices, Windows Autopilot leverages the OEM-optimized version of Windows 10 that is preinstalled on the device, saving organizations the effort of having to maintain custom images and drivers for every model of device being used. Instead of re-imaging the device, your existing Windows 10 installation can be transformed into a “business-ready” state, applying settings and policies, installing apps, and even changing the edition of Windows 10 being used (e.g. from Windows 10 Pro to Windows 10 Enterprise) to support advanced features.
 
@@ -39,16 +43,6 @@ Windows Autopilot enables you to:
 * Restrict the Administrator account creation.
 * Create and auto-assign devices to configuration groups based on a device's profile.
 * Customize OOBE content specific to the organization.
-
-## Windows Autopilot walkthrough
-
-The following video shows the process of setting up Windows Autopilot:
-
-</br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-This video is also available [here](https://www.microsoft.com/videoplayer/embed/RE4ATOx).
 
 ## Benefits of Windows Autopilot
 
