@@ -25,3 +25,13 @@ Windows Autopilot deployment processes are summarized in the poster below. The p
 [![Deploy Windows 10 with Autopilot](../media/windows10-autopilot-flowchart.png)](../media/Windows10AutopilotFlowchart.pdf)
 
 **Note**: The Windows Autopilot for existing devices process is included in the [Microsoft Endpoint Configuration Manager deployment poster](../windows-10-deployment-posters.md#deploy-windows-10-with-microsoft-endpoint-configuration-manager). 
+
+## Windows Autopilot walkthrough
+
+The following video shows the process of setting up Windows Autopilot:
+
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+This video is also available [here](https://www.microsoft.com/videoplayer/embed/RE4ATOx).
