@@ -110,6 +110,7 @@ See the following topics for related APIs:
 - [Score APIs](score.md)
 - [Software APIs](software.md)
 - [Vulnerability APIs](vulnerability.md)
+- [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 
 ## Related topics
 
