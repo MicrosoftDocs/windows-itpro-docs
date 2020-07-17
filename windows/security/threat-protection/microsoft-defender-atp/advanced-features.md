@@ -180,14 +180,6 @@ When you enable Intune integration, Intune will automatically create a classic C
 
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
-### Enable the Microsoft Defender ATP integration for insider risk management from the Azure ATP portal
-
-1.	Log in to the Azure portal with a Global Administrator or Security Administrator role.
-
-2.	Click <insider risk management??>.
-
-3.	Toggle the Integration setting to **On** and click **Save**.
-
 After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Microsoft Defender ATP alerts will be shared with insider risk management for applicable users.
 
 ## Preview features
