@@ -437,7 +437,7 @@ There are more Group Policy objects that are used by Internet Explorer:
 
 | Path | Policy | Description |
 | - | - | - |
-| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Choose whether employees can configure Compatibility View. | Choose whether an employee can fix website display problems that he or she may encounter while browsing. <br /> **Set to: Enabled** |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Turn off Compatibility View. | Choose whether an employee can fix website display problems that he or she may encounter while browsing. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Allow Online Tips** | Allow Online Tips | Enables or disables the retrieval of online tips and help for the Settings app. <br /> **Set to: Disabled** |
@@ -1622,11 +1622,11 @@ You can stop sending file samples back to Microsoft.
 
 You can stop downloading **Definition Updates**:
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
   -and-
 
-- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
+- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
 
   -or-
 
