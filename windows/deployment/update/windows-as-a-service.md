@@ -114,4 +114,4 @@ Secure your organization's deployment investment.
 ## Microsoft Ignite 2018
 <img src="images/ignite-land.jpg" alt="" width="640" height="320"/>
 
-Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See, [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).
+Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).
