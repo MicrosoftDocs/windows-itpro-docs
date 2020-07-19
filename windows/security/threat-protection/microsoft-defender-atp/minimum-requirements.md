@@ -54,7 +54,7 @@ Microsoft Defender Advanced Threat Protection, on Windows Server, requires one o
 > [!NOTE]
 > Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Microsoft Defender Advanced Threat Protection, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender ATP for Linux.
 
-For detailed licensing information, see the [Product terms page](https://www.microsoft.com/licensing/product-licensing/products) and work with your account team to learn the detailed terms and conditions for the product.
+For detailed licensing information, see the [Product terms page](https://www.microsoft.com/licensing/terms/) and work with your account team to learn the detailed terms and conditions for the product.
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
