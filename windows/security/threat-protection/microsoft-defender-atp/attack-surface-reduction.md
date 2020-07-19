@@ -391,7 +391,7 @@ This rule was introduced in:
 - [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
-Intune name: Block persistence through WMI event subscription
+Intune name: Not yet available
 
 Configuration Manager name: Not yet available
 
