@@ -35,6 +35,6 @@ You can either run your installer interactively (through the UI) or create a pac
 
 ### Get the app from the Microsoft Store
 
-1. Use the work of school account login associated with your Windows Insider Program credentials in the [Microsoft Store](https://www.microsoft.com/store/r/9N5LW3JBCXKF). 
+1. Use the Microsoft work or school account login associated with your Windows Insider Program credentials in the [Microsoft Store](https://www.microsoft.com/store/r/9N5LW3JBCXKF). 
 2. Open the product description page.
 3. Click the install icon to begin installation.
