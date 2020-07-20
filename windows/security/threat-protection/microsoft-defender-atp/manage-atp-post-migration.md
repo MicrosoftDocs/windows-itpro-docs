@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. We recommend using Microsoft Endpoint Manager, which includes Intune and Configuration Manager, to manage your organization's devices and security settings. However, you can use other tools/methods, such as Group Policy Objects. The following table lists various tools/methods you can use, with links to learn more. 
+After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), which includes Intune and Configuration Manager, to manage your organization's devices and security settings. However, you can use other tools/methods, such as Group Policy Objects. The following table lists various tools/methods you can use, with links to learn more. 
 <br/><br/>
 |Tool/Method  |Description  |
 |---------|---------|
