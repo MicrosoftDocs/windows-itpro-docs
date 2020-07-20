@@ -136,4 +136,4 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 
 ## Related topic
-[Microsoft Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
+[Microsoft Defender ATP helps detect sophisticated threats](https://www.microsoft.com/en-us/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)
