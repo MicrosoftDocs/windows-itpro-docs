@@ -130,22 +130,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "surface",
-      "build_source_folder": "devices/surface",
-      "build_output_subfolder": "surface",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "win-access-protection",
       "build_source_folder": "windows/access-protection",
       "build_output_subfolder": "win-access-protection",
