@@ -23,12 +23,8 @@ We recommend using Intune to manage your threat protection features in Microsoft
 
 ## Configuring Microsoft Defender ATP with PowerShell
 
-The following table lists various tasks you can perform to configure Microsoft Defender ATP with PowerShell.
+You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
 
-|Task  |Resources to learn more  |
-|---------|---------|
-|task     |link        |
-|task   |link       |
 
 
 ## Configuring Microsoft Defender ATP with Windows Management Instrumentation (WMI)
