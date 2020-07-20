@@ -19,12 +19,12 @@ ms.topic: article
 
 # Manage Microsoft Defender Advanced Threat Protection with Intune
 
-We recommend using Intune to manage threat protection features for the devices (also referred to as endpoints) within your organization. 
+We recommend using Microsoft Intune to manage threat protection features for your organization's devices (also referred to as endpoints). Intune is a component of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
 
 ## Find your Microsoft Defender ATP settings in Intune
 
 > [!IMPORTANT]
-> You must be a global administrator or service administrator in Intune to configure the settings described in this article. To learn more, see [Types of administrators (Intune)](https://docs.microsoft.com/mem/intune/fundamentals/users-add#types-of-administrators).
+> You must be a global administrator or service administrator in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](https://docs.microsoft.com/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
 1. Go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) and sign in.
 
@@ -35,11 +35,11 @@ We recommend using Intune to manage threat protection features for the devices (
 4. Select an existing profile, or create a new one.
 
 > [!TIP]
-> Need help? See [Using Microsoft Defender ATP with Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune).  
+> Need help? See **[Using Microsoft Defender ATP with Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**.  
 
 ## Configure Microsoft Defender ATP with Intune
 
-The following table lists various tasks you can perform to configure Microsoft Defender ATP with Intune.
+The following table lists various tasks you can perform to configure Microsoft Defender ATP with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and proceed from there.
 
 |Task  |Resources to learn more  |
 |---------|---------|
