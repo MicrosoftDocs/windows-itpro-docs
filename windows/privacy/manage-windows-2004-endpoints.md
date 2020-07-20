@@ -65,7 +65,7 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.|HTTPS|*.telecommand.telemetry.microsoft.com|
 |||TLS v1.2|watson.*.microsoft.com|
 |Font Streaming|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
-||The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand. .|HTTPS|fs.microsoft.com*|
+||The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand. |HTTPS|fs.microsoft.com*|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager)|
 |||HTTPS|*licensing.mp.microsoft.com|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
