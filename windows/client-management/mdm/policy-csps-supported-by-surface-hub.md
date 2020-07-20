@@ -9,11 +9,15 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 07/18/2019
+ms.date: 07/21/2020
 ---
 
 # Policy CSPs supported by Microsoft Surface Hub
 
+
+- [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
+- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
