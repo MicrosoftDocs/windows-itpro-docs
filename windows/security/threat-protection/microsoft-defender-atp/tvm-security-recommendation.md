@@ -94,7 +94,7 @@ From the flyout, you can do any of the following:
 - [**Exception options**](tvm-security-recommendation.md#file-for-exception) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet.
 
 >[!NOTE]
->When a change is made on a device, it may take up to two hours for the data to be reflected in the Microsoft Defender Security Center.
+>When a change is made on a device, it typically takes two hours for the data to be reflected in the Microsoft Defender Security Center. However, it may sometimes take longer.
 
 ### Investigate changes in machine exposure or impact
 
