@@ -95,7 +95,7 @@ Microsoft Defender Application Guard accesses files from a VHD mounted on the ho
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
-There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatary network isolation policies to deploy WDAG are different between CSP and GP.
+There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
 
 Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
 Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
@@ -106,4 +106,8 @@ Windows Defender Application Guard accesses files from a VHD mounted on the host
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
 If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
+
+### Why am I getting the error message ("ERROR_VIRTUAL_DISK_LIMITATION")?
+
+Application Guard may not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
 

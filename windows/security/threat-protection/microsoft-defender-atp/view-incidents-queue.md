@@ -63,6 +63,17 @@ You can choose to limit the list of incidents shown based on their status to see
 ### Data sensitivity
 Use this filter to show incidents that contain sensitivity labels.
 
+## Incident naming
+
+To understand the incident's scope at-a-glance, automatic incident naming, currently in public preview, generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.
+
+For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+> [!NOTE]
+> Incidents that existed prior the rollout of automatic incident naming will not have their name changed.
+
+Learn more about [turning on preview features](preview.md#turn-on-preview-features).
+
 ## Related topics
 - [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [Manage incidents](manage-incidents.md)
