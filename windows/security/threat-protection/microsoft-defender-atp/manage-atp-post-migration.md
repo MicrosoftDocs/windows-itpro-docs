@@ -22,18 +22,16 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. Use this article as a guide to getting started managing your threat protection features in Microsoft Defender ATP post migration. 
+After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. We recommend using Intune to manage your organization's devices and security settings. However, you can use other tools/methods, such as Configuration Manager or Group Policy Objects.
 
-Depending on what you want to configure, you can use one of several methods/tools, as listed in the following table:
 
-| Use this tool/method...  | To configure these Microsoft Defender ATP settings |
-|---|---|
-|Intune (part of Microsoft Endpoint Manager) |list |
-| Configuration Manager (formerly System Center Configuration Manager) |  |
-| Group Policy Objects (in Azure Active Directory Domain Services) |  |
-| PowerShell (Windows, Linux, and macOS)  |  |
-| Windows Management Instrumentation (for Windows devices only)  |  |
-| Microsoft Malware Protection Command Line Utility (this is often referred to as *MPCmdRun.exe*) |  |
+|Tool/Method  |Description  |
+|---------|---------|
+|[Intune](manage-atp-post-migration-intune.md)     |         |
+|[Configuration Manager](manage-atp-post-migration-configuration-manager.md)     |         |
+|[Group Policy Objects](manage-atp-post-migration-group-policy-objects.md) | |
+|[PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md) | |
+
 
 ## Additional resources
 
