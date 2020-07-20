@@ -43,7 +43,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|**Manage your organization's devices using Intune**     |[Protect devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
+|**Manage your organization's devices using Intune** to protect those devices and data stored on them     |[Protect devices with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
 |**Integrate Microsoft Defender ATP with Microsoft Intune** as a Mobile Threat Defense solution <br/>*(for Android devices and devices running Windows 10 or later)*   |[Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)         |
 |**Use Conditional Access** to control the devices and apps that can connect to your email and company resources |[Configure Conditional Access in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access) |
 |**Configure Microsoft Defender Antivirus settings** using the Policy configuration service provider ([Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)) |[Device restrictions: Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)<br/><br/>[Policy CSP - Microsoft Defender ATP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)  | 
