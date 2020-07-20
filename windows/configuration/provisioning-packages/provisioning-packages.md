@@ -148,7 +148,7 @@ Windows ICD in Windows 10, version 1607, supported the following scenarios for I
 
 For more information about provisioning, watch the following videos: 
 
-- [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
+- [Provisioning Windows 10 devices with new tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 - [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
