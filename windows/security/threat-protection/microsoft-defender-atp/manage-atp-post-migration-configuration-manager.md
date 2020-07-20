@@ -21,7 +21,7 @@ ms.topic: article
 
 We recommend using Configuration Manager to manage threat protection features for the devices (also referred to as endpoints) within your organization. 
 
-## Configuring Microsoft Defender ATP with Configuration Manager
+## Configure Microsoft Defender ATP with Configuration Manager
 
 The following table lists various tasks you can perform to configure Microsoft Defender ATP with Configuration Manager.
 
@@ -31,18 +31,3 @@ The following table lists various tasks you can perform to configure Microsoft D
 |task   |link       |
 
 
-## Find your Microsoft Defender ATP settings in Configuration Manager
-
-> [!IMPORTANT]
-> You must be a global administrator or service administrator in Configuration Manager to configure the settings described in this article. To learn more, see link.
-
-1. Go to the where and sign in.
-
-2. Under what choose what.
-
-3. next
-
-4. and next
-
-> [!TIP]
-> Need help? See link.  

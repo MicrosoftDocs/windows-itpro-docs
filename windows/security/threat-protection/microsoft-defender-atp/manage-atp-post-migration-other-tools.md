@@ -21,17 +21,17 @@ ms.topic: article
 
 We recommend using Intune to manage your threat protection features in Microsoft Defender ATP. However, you can 
 
-## Configuring Microsoft Defender ATP with PowerShell
+## Configure Microsoft Defender ATP with PowerShell
 
 You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
 
 
 
-## Configuring Microsoft Defender ATP with Windows Management Instrumentation (WMI)
+## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
 
 steps
 
-## Configuring Microsoft Defender ATP with Microsoft Malware Protection Command Line Utility (MPCmdRun.exe)
+## Configure Microsoft Defender ATP with Microsoft Malware Protection Command Line Utility (MPCmdRun.exe)
 
 steps
 
