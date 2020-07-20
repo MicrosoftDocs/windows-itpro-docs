@@ -22,15 +22,12 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. We recommend using Intune to manage your organization's devices and security settings. However, you can use other tools/methods, such as Configuration Manager or Group Policy Objects.
-
-The following table lists several ways to manage your Microsoft Defender ATP features and capabilities:
-
+After you have moved from your previous endpoint protection and antivirus solution to Microsoft Defender ATP, your next step is to manage your features and capabilities. We recommend using Intune to manage your organization's devices and security settings. However, you can use other tools/methods, such as Configuration Manager or Group Policy Objects, as listed in the following table:
 
 |Tool/Method  |Description  |
 |---------|---------|
-|[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)     |Microsoft Intune, a component of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). You control how your organization’s devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. <br/><br/>See [Manage Microsoft Defender ATP using Intune](manage-atp-post-migration-intune.md).         |
-|[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)     |Configuration Manager, formerly known as System Center Configuration Manager, is a component of Microsoft Endpoint Manager.         |
+|[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)     |Microsoft Intune, a component of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), focuses on mobile device management (MDM) and mobile application management (MAM). With Intune, you control how your organization’s devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. <br/><br/>See [Manage Microsoft Defender ATP using Intune](manage-atp-post-migration-intune.md).         |
+|[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)     |Configuration Manager, formerly known as System Center Configuration Manager, is a component of Microsoft Endpoint Manager. Configuration Manager is a complex and powerful tool to manage your users, devices, and software. <br/><br/>See [Manage Microsoft Defender ATP with Configuration Manager](manage-atp-post-migration-configuration-manager.md).        |
 |[Group Policy Objects in Azure Active Directory Domain Services](manage-atp-post-migration-group-policy-objects.md) |Azure Active Directory Domain Services includes built-in Group Policy Objects for users and devices. You can customize the built-in Group Policy Objects as needed for your environment, as well as create custom Group Policy Objects and organizational units (OUs). To learn more, see [Administer Group Policy in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy). |
 |[PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md) | |
 
