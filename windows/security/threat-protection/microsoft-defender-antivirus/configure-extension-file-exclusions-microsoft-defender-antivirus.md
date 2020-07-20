@@ -32,7 +32,7 @@ You can exclude certain files from Microsoft Defender Antivirus scans by modifyi
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
 
-This article  describes how to configure exclusion lists for the files and folders.
+This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 Exclusion | Examples | Exclusion list
 ---|---|---

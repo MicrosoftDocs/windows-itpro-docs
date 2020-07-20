@@ -22,7 +22,7 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. 
+You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 This topic describes how to configure exclusion lists for the following:
 
