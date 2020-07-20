@@ -31,7 +31,7 @@
 #### [Intune](microsoft-defender-atp/manage-atp-post-migration-intune.md)
 #### [Configuration Manager](microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md)
 #### [Group Policy Objects](microsoft-defender-atp/manage-atp-post-migration-powershell.md)
-#### [Other methods]()
+#### [PowerShell, WMI, and MPCmdRun.exe](microsoft-defender-atp/manage-atp-post-migration-other-tools.md)
 
 ## [Security administration]()
 ### [Threat & Vulnerability Management]()
