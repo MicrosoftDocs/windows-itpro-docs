@@ -601,6 +601,7 @@
 ##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Fetch alerts from customer tenant](microsoft-defender-atp/fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -616,11 +617,11 @@
 ###### [Create and manage device tags](microsoft-defender-atp/machine-tags.md)
 
 #### [Managed security service provider (MSSP) integration]()
-#####[Configure managed security service provider integration](microsoft-defender-atp/configure-mssp-support.md)
+##### [Configure managed security service provider integration](microsoft-defender-atp/configure-mssp-support.md)
 ##### [Grant MSSP access to the portal](microsoft-defender-atp/grant-mssp-access.md)
 ##### [Access the MSSP customer portal](microsoft-defender-atp/access-mssp-portal.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-mssp-notifications.md)
-##### [Fetch alerts from customer tenant](microsoft-defender-atp/fetch-alerts-mssp.md)
+##### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
