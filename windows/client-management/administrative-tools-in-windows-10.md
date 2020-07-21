@@ -29,7 +29,7 @@ The tools in the folder might vary depending on which edition of Windows you are
 
 ![Screenshot of folder of admin tools](images/admin-tools-folder.png)
 
-These tools were included in previous versions of Windows and the associated documentation for each tool should help you use these tools in Windows 10. The following list provides links to documentation for each tool. The tools are located within the folder C:\Windows\System32\ or its subfolders.
+These tools were included in previous versions of Windows. The associated documentation for each tool should help you use these tools in Windows 10. The following list provides links to documentation for each tool. The tools are located within the folder C:\Windows\System32\ or its subfolders.
 
  
 

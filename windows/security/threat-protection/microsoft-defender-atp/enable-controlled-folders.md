@@ -60,19 +60,21 @@ For more information about disabling local list merging, see [Prevent or allow u
 ## Intune
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and open Intune.
-1. Click **Device configuration** > **Profiles** > **Create profile**.
-1. Name the profile, choose **Windows 10 and later** and **Endpoint protection**.
-   ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png)
-1. Click **Configure** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Enable**.
-1. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection and click **Add**.
 
-   ![Enable controlled folder access in Intune](../images/enable-cfa-intune.png)
+2. Click **Device configuration** > **Profiles** > **Create profile**.
+
+3. Name the profile, choose **Windows 10 and later** and **Endpoint protection**. <br/> ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png) <br/>
+
+4. Click **Configure** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Enable**.
+
+5. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection and click **Add**.<br/> ![Enable controlled folder access in Intune](../images/enable-cfa-intune.png)<br/>
 
    > [!NOTE]
    > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
-1. Click **OK** to save each open blade and click **Create**.
-1. Click the profile **Assignments**, assign to **All Users & All Devices**, and click **Save**.
+6. Click **OK** to save each open blade and click **Create**.
+
+7. Click the profile **Assignments**, assign to **All Users & All Devices**, and click **Save**.
 
 ## MDM
 
@@ -81,12 +83,17 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
 ## Microsoft Endpoint Configuration Manager
 
 1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+
 2. Click **Home** > **Create Exploit Guard Policy**.
+
 3. Enter a name and a description, click **Controlled folder access**, and click **Next**.
+
 4. Choose whether block or audit changes, allow other apps, or add other folders, and click **Next**.
    > [!NOTE]
    > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
+
 5. Review the settings and click **Next** to create the policy.
+
 6. After the policy is created, click **Close**.
 
 ## Group Policy

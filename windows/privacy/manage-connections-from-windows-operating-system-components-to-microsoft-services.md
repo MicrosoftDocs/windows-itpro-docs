@@ -14,7 +14,7 @@ ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/3/2020
+ms.date: 7/7/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -57,18 +57,18 @@ The following table lists management options for each setting, beginning with Wi
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: | 
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [8. Internet Explorer](#bkmk-ie) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [9. License Manager](#bkmk-licmgr) | | |  ![Check mark](images/checkmark.png) |
 | [10. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [11. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [12. Microsoft Account](#bkmk-microsoft-account) | | |  ![Check mark](images/checkmark.png) |
-| [13. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [13. Microsoft Edge](#bkmk-edge) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -613,6 +613,10 @@ You can turn off NCSI by doing one of the following:
 
 You can turn off the ability to download and update offline maps.
 
+- Turn **Off** the feature in the UI by going to **Settings -> Apps -> Offline maps -> Map updates**, toggle the **Automatically update maps** switch to **Off**
+
+  -or-
+
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
   -or-
@@ -929,7 +933,7 @@ To turn off **Location for this device**:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -942,7 +946,7 @@ To turn off **Location**:
   
   -or-
   
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
 
   -or-
 
@@ -1546,11 +1550,10 @@ You can control if your settings are synchronized:
 
 To turn off Messaging cloud sync:
 
--   Note: There is no Group Policy corresponding to this registry key.
+> [!NOTE]
+> There is no Group Policy corresponding to this registry key.
 
-  -or-
-
--   Create a REG_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Messaging** and set to a **value of 0 (zero)**.
+-  Create a REG_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Messaging** and set to a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-teredo"></a>22. Teredo
 
@@ -1638,7 +1641,8 @@ You can turn off **Malicious Software Reporting Tool (MSRT) diagnostic data**:
 
 - Set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to **1**.
 
-**Note:** There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data. 
+> [!NOTE]
+> There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data. 
 
 
 You can turn off **Enhanced Notifications** as follows:
@@ -1733,11 +1737,11 @@ If you're running Windows 10, version 1607 or later, you need to:
        > This will only take effect if the policy is applied before the first logon. 
        > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, 
        > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** 
-
+       >
        > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** 
        > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in 
        > **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **1 (one)**.
-
+       >
        > The Group Policy for the **LockScreenOverlaysDisabled** regkey is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**. 
 
 
@@ -1809,7 +1813,7 @@ By default, PCs running Windows 10 Enterprise and Windows 10 Education will only
 
 Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
-In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (100), as described below.
+In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (99), as described below.
 
 ### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
@@ -1835,7 +1839,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
 -or-
 
-- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **100 (one hundred)**. 
+- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**. 
 
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
@@ -1896,7 +1900,7 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
-|**Allowed traffic endpoints** | 
+|Allowed traffic endpoints| 
 | --- | 
 |activation-v2.sls.microsoft.com/*|
 |crl.microsoft.com/pki/crl/*|
