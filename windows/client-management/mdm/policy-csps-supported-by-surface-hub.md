@@ -17,7 +17,7 @@ ms.date: 07/21/2020
 
 - [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection
+- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -65,6 +65,7 @@ ms.date: 07/21/2020
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [RestrictedGroups/ConfigureGroupMembership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-restrictedgroups)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
@@ -76,7 +77,24 @@ ms.date: 07/21/2020
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208)
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
+- [Wifi/AllowInternetSharing]policy-csp-wifi#wifi-allowinternetsharing)
+- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi#wifi-allowmanualwificonfiguration)
+- [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
 - [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [Wifi/AllowWiFiDirect](policy-csp-wifi#wifi-allowwifidirect)
+[WirelessDisplay/AllowMdnsAdvertisement](
+policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsadvertisement)
+[WirelessDisplay/AllowMdnsDiscovery](
+policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsdiscovery)
+[WirelessDisplay/AllowProjectionFromPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompc)
+[WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
+[WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopc)
+[WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopcoverinfrastructure)
+[WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](
+policy-csp-wirelessdisplay#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
+[WirelessDisplay/RequirePinForPairing](
+policy-csp-wirelessdisplay#wirelessdisplay-requirepinforpairing)
+
 
 ## Related topics
 
