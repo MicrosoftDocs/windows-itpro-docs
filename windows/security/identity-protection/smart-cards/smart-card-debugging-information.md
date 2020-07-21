@@ -91,7 +91,7 @@ To enable tracing for the SCardSvr service:
 
 To enable tracing for scfilter.sys:
 
-**tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1**
+ - **tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1**
 
 ### Stop the trace
 
@@ -101,7 +101,7 @@ Using WPP, use one of the following commands to stop the tracing:
 
 -   **logman -stop** &lt;*FriendlyName*&gt; **-ets**
 
-Examples
+#### Examples
 
 To stop a trace:
 
@@ -125,31 +125,31 @@ To begin tracing, you can use Tracelog. Different components use different contr
 
 To enable tracing for NTLM authentication, run the following at the command line:
 
-**tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
+> **tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
 
 To stop tracing for NTLM authentication, run this command:
 
-**tracelog -stop ntlm**
+> **tracelog -stop ntlm**
 
 ### Kerberos authentication
 
 To enable tracing for Kerberos authentication, run this command:
 
-**tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
+> **tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
 
 To stop tracing for Kerberos authentication, run this command:
 
-**tracelog.exe -stop kerb**
+> **tracelog.exe -stop kerb**
 
 ### KDC
 
 To enable tracing for the Key Distribution Center (KDC), run the following at the command line:
 
-**tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
+> **tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
 
 To stop tracing for the KDC, run the following at the command line:
 
-**tracelog.exe -stop kdc**
+> **tracelog.exe -stop kdc**
 
 To stop tracing from a remote computer, run this command: logman.exe -s *&lt;ComputerName&gt;*.
 
@@ -234,7 +234,8 @@ As with any device connected to a computer, Device Manager can be used to view p
 
 4.  In Device Manager, expand **Smart card readers**, select the name of the smart card reader you want to check, and then click **Properties**.
 
-> **Note**&nbsp;&nbsp;If the smart card reader is not listed in Device Manager, in the **Action** menu, click **Scan for hardware changes**.
+> [!NOTE]
+> If the smart card reader is not listed in Device Manager, in the **Action** menu, click **Scan for hardware changes**.
 
 ## CryptoAPI 2.0 Diagnostics
 
