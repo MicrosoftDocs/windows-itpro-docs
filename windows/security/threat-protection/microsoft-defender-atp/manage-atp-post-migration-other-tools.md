@@ -42,7 +42,7 @@ steps
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Manage Microsoft Defender Antivirus     |[Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
+|Manage Microsoft Defender Antivirus     |[Configure and manage Microsoft Defender Antivirus with the Microsoft Malware Protection Command Line Utility (mpcmdrun.exe) command-line tool](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
 |Row2     |         |
 
 
