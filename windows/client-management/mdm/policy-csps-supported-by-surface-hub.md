@@ -15,8 +15,8 @@ ms.date: 07/22/2020
 # Policy CSPs supported by Microsoft Surface Hub
 
 
-- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
+-[ApplicationManagement/AllowAppStoreAutoUpdate] (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
@@ -65,7 +65,7 @@ ms.date: 07/22/2020
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
-- [RestrictedGroups/ConfigureGroupMembership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-restrictedgroups)
+- [RestrictedGroups/ConfigureGroupMembership](https://docs.microsoft.com/windows/client-management/https://docs.microsoft.com/windows/client-management/mdm/policy-csp-restrictedgroups)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
@@ -79,7 +79,7 @@ ms.date: 07/22/2020
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
 - [Wifi/AllowInternetSharing](policy-csp-wifi#wifi-allowinternetsharing)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi#wifi-allowmanualwificonfiguration)
-- [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
+- [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
 - [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
 - [Wifi/AllowWiFiDirect](policy-csp-wifi#wifi-allowwifidirect)
 - [WirelessDisplay/AllowMdnsAdvertisement](
