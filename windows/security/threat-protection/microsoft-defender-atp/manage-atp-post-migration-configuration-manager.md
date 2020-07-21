@@ -27,7 +27,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Manage your organization's devices using Configuration Manager     |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)        |
+|Manage your organization's devices using Configuration Manager <br/><br/>    |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)  <br/><br/>[Onboarding to Microsoft Defender ATP with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
 |task   |link       |
 
 
