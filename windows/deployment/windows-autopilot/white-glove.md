@@ -57,7 +57,7 @@ If these scenarios cannot be completed, Windows Autopilot for white glove deploy
 
 To enable white glove deployment, an additional Autopilot profile setting must be configured by the customer or IT Admin via their Intune account, prior to beginning the white glove process in the provisioning service facility:
 
- ![allow white glove](images/allow-white-glove-oobe.png)
+![allow white glove](images/allow-white-glove-oobe.png)
 
 The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device. Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed. Please make sure not to target both win32 and LOB apps to the same device, as this can make troubleshooting difficult if there are app installation failures. For more information, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows).
 
