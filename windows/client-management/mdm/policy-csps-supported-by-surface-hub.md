@@ -15,7 +15,7 @@ ms.date: 07/21/2020
 # Policy CSPs supported by Microsoft Surface Hub
 
 
-- [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
