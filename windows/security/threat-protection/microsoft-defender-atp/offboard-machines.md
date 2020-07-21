@@ -37,7 +37,7 @@ Follow the corresponding instructions depending on your preferred deployment met
 - [Offboard devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 
 ## Offboard Servers
-- [Offboard servers](configure-server-endpoints.md#offboard-servers)
+- [Offboard servers](configure-server-endpoints.md#offboard-windows-servers)
 
 ## Offboard non-Windows devices
 - [Offboard non-Windows devices](configure-endpoints-non-windows.md#offboard-non-windows-devices)
