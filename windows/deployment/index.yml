@@ -85,6 +85,8 @@ landingContent:
             url: https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely
           - text: Top 12 tasks for security teams to support working from home
             url: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work
+          - text: Support your remote workforce
+            url: https://docs.microsoft.com/microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
   - title: Microsoft Learn
