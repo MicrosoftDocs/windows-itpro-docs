@@ -44,7 +44,8 @@ For a complete description of Certutil including examples that show how to use i
 
 To list certificates that are available on the smart card, type certutil -scinfo.
 
-> **Note**&nbsp;&nbsp;Entering a PIN is not required for this operation. You can press ESC if you are prompted for a PIN.
+> [!NOTE]
+> Entering a PIN is not required for this operation. You can press ESC if you are prompted for a PIN.
 
 ### Delete certificates on the smart card
 
@@ -68,7 +69,7 @@ Using WPP, use one of the following commands to enable tracing:
 
 You can use the parameters in the following table.
 
-| **Friendly name** | **GUID**          | **Flags** |
+| Friendly name | GUID           | Flags |
 |-------------------|--------------------------------------|-----------|
 | scardsvr          | 13038e47-ffec-425d-bc69-5707708075fe | 0xffff    |
 | winscard          | 3fce7c5f-fb3b-4bce-a9d8-55cc0ce1cf01 | 0xffff    |
@@ -84,13 +85,13 @@ Examples
 
 To enable tracing for the SCardSvr service:
 
--   tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\\scardsvr.etl -flags 0xffff -ft 1
+-   **tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\\scardsvr.etl -flags 0xffff -ft 1**
 
--   logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\\scardsvr.etl -mode 0x00080000
+-   **logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\\scardsvr.etl -mode 0x00080000**
 
 To enable tracing for scfilter.sys:
 
-tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1
+**tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1**
 
 ### Stop the trace
 
@@ -104,9 +105,9 @@ Examples
 
 To stop a trace:
 
--   tracelog.exe -stop scardsvr
+-   **tracelog.exe -stop scardsvr**
 
--   logman -stop scardsvr -ets
+-   **logman -stop scardsvr -ets**
 
 ## Kerberos protocol, KDC and NTLM debugging and tracing
 
@@ -114,9 +115,9 @@ To stop a trace:
 
 You can use these resources to troubleshoot these protocols and the KDC:
 
--   [Kerberos and LDAP Troubleshooting Tips](https://technet.microsoft.com/library/bb463167.aspx)
+-   [Kerberos and LDAP Troubleshooting Tips](https://technet.microsoft.com/library/bb463167.aspx).
 
--   [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit)  You can use the trace log tool in this SDK to debug Kerberos authentication failures.
+-   [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit).  You can use the trace log tool in this SDK to debug Kerberos authentication failures.
 
 To begin tracing, you can use Tracelog. Different components use different control GUIDs as explained in these examples. For more information, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
 
@@ -124,41 +125,42 @@ To begin tracing, you can use Tracelog. Different components use different contr
 
 To enable tracing for NTLM authentication, run the following at the command line:
 
-tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1
+**tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
 
 To stop tracing for NTLM authentication, run this command:
 
-tracelog -stop ntlm
+**tracelog -stop ntlm**
 
 ### Kerberos authentication
 
 To enable tracing for Kerberos authentication, run this command:
 
-tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1
+**tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
 
 To stop tracing for Kerberos authentication, run this command:
 
-tracelog.exe -stop kerb
+**tracelog.exe -stop kerb**
 
 ### KDC
 
 To enable tracing for the Key Distribution Center (KDC), run the following at the command line:
 
-tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1
+**tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
 
 To stop tracing for the KDC, run the following at the command line:
 
-tracelog.exe -stop kdc
+**tracelog.exe -stop kdc**
 
 To stop tracing from a remote computer, run this command: logman.exe -s *&lt;ComputerName&gt;*.
 
-> **Note**&nbsp;&nbsp;The default location for logman.exe is %systemroot%system32\\. Use the **-s** option to supply a computer name.
+> [!NOTE]
+> The default location for logman.exe is %systemroot%system32\\. Use the **-s** option to supply a computer name.
 
 ### Configure tracing with the registry
 
 You can also configure tracing by editing the Kerberos registry values shown in the following table.
 
-| **Element** | **Registry Key Setting**       |
+| Element | Registry Key Setting       |
 |-------------|----------------------------------------------------|
 | NTLM        | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1\_0<br>Value name: NtLmInfoLevel<br>Value type: DWORD<br>Value data: c0015003          |
 | Kerberos    | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: KerbDebugLevel<br>Value type: DWORD<br>Value data: c0000043<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001 |
@@ -204,7 +206,7 @@ You can use the following command at the command prompt to check whether the ser
 
 This is an example output from this command:
 
-```
+```console
 SERVICE_NAME: scardsvr
     TYPE        : 20 WIN32_SHARE_PROCESS
     STATE       : 4 RUNNING
