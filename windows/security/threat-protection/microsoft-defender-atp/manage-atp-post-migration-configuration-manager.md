@@ -19,7 +19,11 @@ ms.topic: article
 
 # Manage Microsoft Defender Advanced Threat Protection with Configuration Manager
 
-We recommend using Configuration Manager to manage threat protection features for the devices (also referred to as endpoints) within your organization. 
+You can use [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) to manage your organization's threat protection features for devices (also referred to as endpoints) within your organization. Configuration Manager is part of Microsoft Endpoint Manager, along with Intune, Desktop Analytics, and other features and capabilities. [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
+
+## Find your Microsoft Defender ATP settings in Configuration Manager
+
+1. 
 
 ## Configure Microsoft Defender ATP with Configuration Manager
 
