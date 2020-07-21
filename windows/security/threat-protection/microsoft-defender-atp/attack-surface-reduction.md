@@ -343,7 +343,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes, while till allowing legitimate Outlook functions.
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
 This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
