@@ -125,31 +125,31 @@ To begin tracing, you can use Tracelog. Different components use different contr
 
 To enable tracing for NTLM authentication, run the following at the command line:
 
-> **tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
+ - **tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
 
 To stop tracing for NTLM authentication, run this command:
 
-> **tracelog -stop ntlm**
+ - **tracelog -stop ntlm**
 
 ### Kerberos authentication
 
 To enable tracing for Kerberos authentication, run this command:
 
-> **tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
+ - **tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
 
 To stop tracing for Kerberos authentication, run this command:
 
-> **tracelog.exe -stop kerb**
+ - **tracelog.exe -stop kerb**
 
 ### KDC
 
 To enable tracing for the Key Distribution Center (KDC), run the following at the command line:
 
-> **tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
+ - **tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
 
 To stop tracing for the KDC, run the following at the command line:
 
-> **tracelog.exe -stop kdc**
+ - **tracelog.exe -stop kdc**
 
 To stop tracing from a remote computer, run this command: logman.exe -s *&lt;ComputerName&gt;*.
 
