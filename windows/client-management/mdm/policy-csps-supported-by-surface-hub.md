@@ -78,22 +78,18 @@ ms.date: 07/22/2020
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
 - [Wifi/AllowInternetSharing](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowinternetsharing)
-- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi#wifi-allowmanualwificonfiguration)
+- [Wifi/AllowManualWiFiConfiguration](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
 - [WiFi/AllowWiFiHotSpotReporting](https://docs.microsoft.com/windows/client-management/policy-csp-wifi.md#wifi-allowwifihotspotreporting)
 - [Wifi/AllowWiFiDirect](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowwifidirect)
-- [WirelessDisplay/AllowMdnsAdvertisement](https://docs.microsoft.com/windows/client-management/
-policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsadvertisement)
-- [WirelessDisplay/AllowMdnsDiscovery](
-policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsdiscovery)
+- [WirelessDisplay/AllowMdnsAdvertisement](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsadvertisement)
+- [WirelessDisplay/AllowMdnsDiscovery](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsdiscovery)
 - [WirelessDisplay/AllowProjectionFromPC](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompc)
-- [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
+- [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
 - [WirelessDisplay/AllowProjectionToPC](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopc)
 - [WirelessDisplay/AllowProjectionToPCOverInfrastructure](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopcoverinfrastructure)
-- [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](
-https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
-- [WirelessDisplay/RequirePinForPairing](
-https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-requirepinforpairing)
+- [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
+- [WirelessDisplay/RequirePinForPairing](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-requirepinforpairing)
 
 
 ## Related topics
