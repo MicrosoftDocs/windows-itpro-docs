@@ -27,7 +27,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Manage your organization's devices using Configuration Manager     |link        |
+|Manage your organization's devices using Configuration Manager     |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)        |
 |task   |link       |
 
 
