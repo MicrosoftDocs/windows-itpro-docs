@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP for Mac - System Extensions (Private Preview)
-description: This topic contains instructions for trying out the system extensions functionality of Microsoft Defender ATP for Mac. This functionality is currently in private preview.
+description: This article contains instructions for trying out the system extensions functionality of Microsoft Defender ATP for Mac. This functionality is currently in private preview.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,14 +22,14 @@ ROBOTS: noindex,nofollow
 
 In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
-This functionality is currently in private preview. This topic contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely thorugh a management tool.
+This functionality is currently in private preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.
 
-These steps assume you already have Microsoft Defender ATP running on your device. Refer to [this page](microsoft-defender-atp-mac.md) for additional information on Microsoft Defender ATP for Mac.
+These steps assume you already have Microsoft Defender ATP running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
 
 ## Known issues
 
-- We’ve received reports of the web content filter interfering with Apple SSO Kerberos extension and are actively investigating this.
-- The current version of the product still installs a kernel extension. This is only used as a fallback mechanism and will be removed before this feature reaches public preview.
+- We’ve received reports of the web content filter interfering with Apple SSO Kerberos extension and are actively investigating this issue.
+- The current version of the product still installs a kernel extension. The kernel extension is only used as a fallback mechanism and will be removed before this feature reaches public preview.
 - We are still working on a product version that deploys and functions properly on macOS 11 Big Sur.
 
 ## Deployment prerequisites
@@ -42,21 +42,21 @@ These steps assume you already have Microsoft Defender ATP running on your devic
     $ mdatp --health releaseRing
     ```
 
-    If your device is not already in the Insider Fast update channel, execute the following command from the Terminal. This will update the channel next time the product starts (when the next product update is installed or when the device is rebooted).
+    If your device is not already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
     ```bash
     $ defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
     ```
 
-    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. Refer to [this page](mac-updates.md#set-the-channel-name) for additional information.
+    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md#set-the-channel-name).
 
-- For the duration of the private preview, your device must be in the `SystemExtensions` group. This is a temporary prerequisite that will be removed when this feature reaches public preview. From the Terminal, run:
+- For the duration of the private preview, your device must be in the `SystemExtensions` group. This temporary prerequisite will be removed when this feature reaches public preview. From the Terminal, run:
  
     ```bash
     $ sudo mdatp --edr --groupids SystemExtensions
     ```
 
-    Alternatively, if you are in a managed environment (JAMF or Intune), you can cofigure the device group remotely. Refer to [this page](mac-preferences.md#device-tags) for additional information.
+    Alternatively, if you are in a managed environment (JAMF or Intune), you can cofigure the device group remotely. For more information, see [this page](mac-preferences.md#device-tags).
 
 ## Deployment steps
 
@@ -142,7 +142,7 @@ If this command prints `endpoint_security_extension`, then the product is using 
     $ curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
     ```
 
-    Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarions.
+    Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarios.
 
 ## Frequently asked questions
 
