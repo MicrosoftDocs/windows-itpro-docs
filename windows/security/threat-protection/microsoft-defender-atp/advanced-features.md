@@ -176,17 +176,17 @@ When you enable Intune integration, Intune will automatically create a classic C
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
 
-## Share endpoint alerts with Microsoft Compliance Center
-
-Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
-
-After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Microsoft Defender ATP alerts will be shared with insider risk management for applicable users.
-
 ## Preview features
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
+
+## Share endpoint alerts with Microsoft Compliance Center
+
+Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
+
+After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Microsoft Defender ATP alerts will be shared with insider risk management for applicable users.
 
 ## Enable advanced features
 
