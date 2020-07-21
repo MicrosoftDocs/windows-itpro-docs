@@ -77,22 +77,22 @@ ms.date: 07/21/2020
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208)
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
-- [Wifi/AllowInternetSharing]policy-csp-wifi#wifi-allowinternetsharing)
+- [Wifi/AllowInternetSharing](policy-csp-wifi#wifi-allowinternetsharing)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
 - [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
 - [Wifi/AllowWiFiDirect](policy-csp-wifi#wifi-allowwifidirect)
-[WirelessDisplay/AllowMdnsAdvertisement](
+- [WirelessDisplay/AllowMdnsAdvertisement](
 policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsadvertisement)
-[WirelessDisplay/AllowMdnsDiscovery](
+- [WirelessDisplay/AllowMdnsDiscovery](
 policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsdiscovery)
-[WirelessDisplay/AllowProjectionFromPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompc)
-[WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
-[WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopc)
-[WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopcoverinfrastructure)
-[WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](
+- [WirelessDisplay/AllowProjectionFromPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompc)
+- [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
+- [WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopc)
+- [WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopcoverinfrastructure)
+- [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](
 policy-csp-wirelessdisplay#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
-[WirelessDisplay/RequirePinForPairing](
+- [WirelessDisplay/RequirePinForPairing](
 policy-csp-wirelessdisplay#wirelessdisplay-requirepinforpairing)
 
 
