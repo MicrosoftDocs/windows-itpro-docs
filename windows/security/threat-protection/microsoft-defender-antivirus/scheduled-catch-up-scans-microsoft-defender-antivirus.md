@@ -109,9 +109,12 @@ See the following for more information and allowed parameters:
 
 
 
-## Start scheduled scans only when the endpoint is not in use
+## tart scheduled scans only when the endpoint is not in use
 
 You can set the scheduled scan to only occur when the endpoint is turned on but not in use with Group Policy, PowerShell, or WMI.
+
+> [!NOTE]
+> These scans will not honor the CPU throttling configuration and take full advantage of the resources available to complete the scan as fast as possible.
 
 **Use Group Policy to schedule scans**
 
