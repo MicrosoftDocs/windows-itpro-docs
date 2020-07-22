@@ -17,7 +17,7 @@ ms.date: 07/22/2020
 
 - [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
+- [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
