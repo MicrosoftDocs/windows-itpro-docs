@@ -42,9 +42,9 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+> Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
 
-Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP).
 
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
@@ -97,7 +97,7 @@ The hardware requirements for Microsoft Defender ATP on devices are the same for
 > [!NOTE]
 > Machines running mobile versions of Windows are not supported.
 >
-> Virtual Machines running Windows 10 Enterprise 2016 LTSC (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
+> Virtual Machines running Windows 10 Enterprise 2016 LTSB (which is based on Windows 10, version 1607) may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 (which is based on Windows 10, version 1809) or later.
 
