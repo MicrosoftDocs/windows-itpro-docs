@@ -21,7 +21,7 @@ ms.collection:
 
 >[!NOTE]
 >This topic is intended for participants in the data processor service for Windows Enterprise preview program and requires acceptance of specific terms of use. To learn
-more about the program and agree to the terms of use, see [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview).
+more about the program and agree to the terms of use, see [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 The privacy landscape keeps evolving, and with it, we make changes to our services to meet our customers’ needs. 
 The data processor service for Windows Enterprise empowers you to be in control of diagnostic data from Windows devices, and act as data controllers for that data, under the definition of the European Union General Data Protection Regulation (GDPR). 
