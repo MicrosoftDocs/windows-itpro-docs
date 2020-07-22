@@ -42,9 +42,9 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+> Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
 
-Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP).
 
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
