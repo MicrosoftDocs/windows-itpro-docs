@@ -32,7 +32,7 @@ You can exclude certain files from Microsoft Defender Antivirus scans by modifyi
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-This article  describes how to configure exclusion lists for the files and folders.
+This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 Exclusion | Examples | Exclusion list
 ---|---|---
@@ -199,9 +199,9 @@ The following table describes how the wildcards can be used and provides some ex
 
 <a id="review"></a>
 
-### System environmental variables
+### System environment variables
 
-The following table lists and describes the system account environmental variables. 
+The following table lists and describes the system account environment variables. 
 
 <table border="0" cellspacing="0" cellpadding="20">
 <thead>
@@ -569,3 +569,4 @@ You can also copy the string into a blank text file and attempt to save it with 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

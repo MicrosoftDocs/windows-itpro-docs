@@ -113,7 +113,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -327,7 +327,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include:
 
 * Executable files (such as .exe, .dll, or .scr)
-* Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+* Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)

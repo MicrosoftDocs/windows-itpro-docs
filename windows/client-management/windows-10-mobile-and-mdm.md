@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 01/26/2019
+ms.date:
 ms.topic: article
 ---
 
@@ -188,12 +188,12 @@ For both personal and corporate deployment scenarios, an MDM system is the essen
 Azure AD is a cloud-based directory service that provides identity and access management. You can integrate it with existing on-premises directories to create a hybrid identity solution. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free Basic, and Premium (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). All editions support Azure AD device registration, but the Premium edition is required to enable MDM auto-enrollment and conditional access based on device state.
 
 **Mobile Device Management**
-Microsoft [Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Like Office 365, Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
-Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Mobile currently include: AirWatch, Citrix, MobileIron, SOTI, Blackberry and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/). If your organization doesn’t use Azure AD, the user must use an MSA during OOBE before enrolling the device in your MDM using a corporate account.
+Microsoft [Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Microsoft 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
+Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/). If your organization doesn’t use Azure AD, the user must use an MSA during OOBE before enrolling the device in your MDM using a corporate account.
 
 > [!NOTE]
-> Although not covered in this guide, you can use Exchange ActiveSync (EAS) to manage mobile devices instead of using a full-featured MDM system. EAS is available in Microsoft Exchange Server 2010 or later and Office 365.
-In addition, Microsoft recently added MDM capabilities powered by Intune to Office 365. MDM for Office 365 supports mobile devices only, such as those running Windows 10 Mobile, iOS, and Android. MDM for Office 365 offers a subset of the management capabilities found in Intune, including the ability to remotely wipe a device, block a device from accessing Exchange Server email, and configure device policies (e.g., passcode requirements). For more information about MDM for Office 365 capabilities, see [Overview of Mobile Device Management for Office 365](https://technet.microsoft.com/library/ms.o365.cc.devicepolicy.aspx).
+> Although not covered in this guide, you can use Exchange ActiveSync (EAS) to manage mobile devices instead of using a full-featured MDM system. EAS is available in Microsoft Exchange Server 2010 or later and Microsoft 365.
+In addition, Microsoft recently added MDM capabilities powered by Intune to Microsoft 365, called Basic Mobility and Security for Microsoft 365. Basic Mobility and Security for Microsoft 365 supports mobile devices only, such as those running Windows 10 Mobile, iOS, and Android. Basic Mobility and Security for Microsoft 365 offers a subset of the management capabilities found in Intune, including the ability to remotely wipe a device, block a device from accessing Exchange Server email, and configure device policies (e.g., passcode requirements). For more information, see [Overview of Basic Mobility and Security for Microsoft 365](https://technet.microsoft.com/library/ms.o365.cc.devicepolicy.aspx).
 
 **Cloud services**
 On mobile devices that run Windows 10 Mobile, users can easily connect to cloud services that provide user notifications and collect diagnostic and usage data. Windows 10 Mobile enables organizations to manage how devices consume these cloud services.
