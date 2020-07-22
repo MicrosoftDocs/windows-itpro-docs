@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create indicators based on certificates (preview)
+# Create indicators based on certificates
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
