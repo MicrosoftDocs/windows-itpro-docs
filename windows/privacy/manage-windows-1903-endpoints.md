@@ -7,12 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: dansimp
-manager: sanashar
+author: obezeajo
+ms.author: obezeajo
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 5/3/2019
+ms.date: 7/22/2020
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1903
 
