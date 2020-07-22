@@ -1,6 +1,6 @@
 ---
 title: Configuration service providers for IT pros (Windows 10)
-description: Configuration service providers (CSPs) expose device configuration settings in Windows 10. 
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
 ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
 ms.reviewer: 
 manager: dansimp
@@ -72,7 +72,7 @@ Many settings in Windows Configuration Designer will display documentation for t
 
 ### CSPs in MDM
 
-Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might simply be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
+Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
 
 When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](https://go.microsoft.com/fwlink/p/?LinkID=616316) to deploy settings. Intune documents [a partial list of settings](https://go.microsoft.com/fwlink/p/?LinkID=616317) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](https://go.microsoft.com/fwlink/p/?LinkId=717390) to locate that information.
 
@@ -114,13 +114,13 @@ The documentation for most CSPs will also include an XML example.
 
 ## CSP examples
 
-CSPs provide access to a number of settings useful to enterprises. This section introduces the CSPs that an enterprise might find particularly useful.
+CSPs provide access to a number of settings useful to enterprises. This section introduces the CSPs that an enterprise might find useful.
 
 -   [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601)
 
     The EnterpriseAssignedAccess CSP lets IT administrators configure settings on a Windows 10 Mobile device. An enterprise can make use of this CSP to create single-use or limited-use mobile devices, such as a handheld device that only runs a price-checking app.
 
-    In addition to lockscreen wallpaper, theme, time zone, and language, the EnterpriseAssignedAccess CSP includes AssignedAccessXml that can be used to lock down the device through the following settings:
+    In addition to lock screen wallpaper, theme, time zone, and language, the EnterpriseAssignedAccess CSP includes AssignedAccessXml that can be used to lock down the device through the following settings:
 
     -   Enabling or disabling the Action Center.
     -   Configuring the number of tile columns in the Start layout.
