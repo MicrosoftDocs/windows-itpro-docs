@@ -8,11 +8,11 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
-ms.author: v-hakima
-manager: joshbr
+ms.author: obezeajo
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/15/2020
+ms.date: 7/22/2020
 ---
 # Windows 10, version 1909, connection endpoints for non-Enterprise editions
 
