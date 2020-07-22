@@ -42,7 +42,7 @@ For a CSP to register Windows Autopilot devices on behalf of a customer, the cus
     - Click **Dashboard** on the top menu
     - Click **Customer** on the side menu
     - Click the **Request a reseller relationship** link:
-    ![Request a reseller relationship](images/csp1.png)
+    ![Request a reseller relationship](images/csp1)
     - Select the checkbox indicating whether or not you want delegated admin rights:
     ![Delegated rights](images/csp2.png)
     - NOTE: Depending on your partner, they might request Delegated Admin Permissions (DAP) when requesting this consent.  You should ask them to use the newer DAP-free process (shown in this document) if possible. If not, you can easily remove their DAP status either from Microsoft Admin Center or the Office 365 admin portal:  https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges
