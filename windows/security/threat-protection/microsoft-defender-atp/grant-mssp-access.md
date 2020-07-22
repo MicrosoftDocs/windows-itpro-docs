@@ -17,13 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Grant managed security service provider (MSSP) access
+# Grant managed security service provider (MSSP) access (preview)
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+
+>[!IMPORTANT] 
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
