@@ -1,5 +1,5 @@
 ---
-title: Data processor service for Windows public preview terms 
+title: Data processor service for Windows Enterprise public preview terms 
 description: Use this article to understand Windows public preview terms of service.
 keywords: privacy, GDPR
 ms.localizationpriority: high
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Data processor service for Windows public preview terms
+# Data processor service for Windows Enterprise public preview terms
 
 **These terms (“Terms”) must be read and accepted by a tenant admin with appropriate access rights and authority. By participating in this public preview, you: (a) agree to the following Terms, and (b) represent and warrant that you have such rights and authority.**
 
