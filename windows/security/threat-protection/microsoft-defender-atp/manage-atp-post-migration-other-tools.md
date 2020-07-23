@@ -31,6 +31,9 @@ You can, however, use other tools/methods to perform some tasks, such as managin
 - [Windows Management Instrumentation](#configure-microsoft-defender-atp-with-windows-management-instrumentation-wmi) (WMI)
 - [The Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-atp-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe)
 
+> [!NOTE]
+> Threat protection features that you configure by using PowerShell, WMI, or MCPmdRun.exe can be overwritten by configuration settings that are deployed with Intune or Configuration Manager.
+
 ## Configure Microsoft Defender ATP with PowerShell
 
 You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
@@ -38,8 +41,8 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 |Task  |Resources to learn more  |
 |---------|---------|
 |Manage Microsoft Defender Antivirus     |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)         |
-|Configure exploit protection     |         |
-|Configure attack surface reduction rules | |
+|Configure exploit protection     | [Customize exploit protection: PowerShell reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
+|Configure attack surface reduction rules <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
 
 
 ## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
@@ -60,3 +63,5 @@ steps
 - [Get an overview of threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 
 - [Visit the Microsoft Defender Security Center security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)
+
+- [Manage Microsoft Defender ATP with Intune](manage-atp-post-migration-intune.md)
