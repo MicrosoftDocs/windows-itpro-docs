@@ -30,6 +30,14 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|task     |link        |
-|task   |link       |
+|**Manage settings for user and computer objects** <br/><br/>*Customize built-in Group Policy Objects, or create custom Group Policy Objects and organizational units to suit your organizational needs.*     |[Administer Group Policy in an Azure Active Directory Domain Services managed domain](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
+|**Configure Microsoft Defender Antivirus** <br/><br/>*Configure antivirus features & capabilities, including policy settings, exclusions, remediation, and scheduled scans on your organization's devices (also referred to as endpoints).*   |[Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)       |
+|**Manage your organization's attack surface reduction rules** <br/><br/>*Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on a users' devices.* |[Customize attack surface reduction rules with Group Policy Objects](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
 
+## Next steps
+
+- [Get an overview of threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+
+- [Visit the Microsoft Defender Security Center security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)
+
+- [Manage Microsoft Defender ATP with Intune](manage-atp-post-migration-intune.md)
