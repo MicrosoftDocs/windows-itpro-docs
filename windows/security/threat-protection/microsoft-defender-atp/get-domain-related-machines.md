@@ -28,7 +28,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated to or fr
 
 
 ## Limitations
-1. You can query on devices last seen in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
