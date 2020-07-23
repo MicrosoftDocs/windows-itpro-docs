@@ -65,7 +65,7 @@ ms.date: 07/22/2020
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
-- [RestrictedGroups/ConfigureGroupMembership](https://docs.microsoft.com/windows/client-management/https://docs.microsoft.com/windows/client-management/mdm/policy-csp-restrictedgroups)
+- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
