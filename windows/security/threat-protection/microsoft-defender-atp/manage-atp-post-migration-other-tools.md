@@ -37,17 +37,16 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|**Manage Microsoft Defender Antivirus**     |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)         |
-|**Configure exploit protection**     | [Customize exploit protection: PowerShell reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
-|**Configure attack surface reduction rules** <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
+|**Manage Microsoft Defender Antivirus** with PowerShell cmdlets    |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Use PowerShell cmdlets to enable cloud-delivered protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
+|**Configure exploit protection** with PowerShell     | [Customize exploit protection: PowerShell reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
+|**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
 
 
 ## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
 
-
 |Task  |Resources to learn more  |
 |---------|---------|
-|task 1     |  link       |
+|**Enable cloud-delivered protection**     |[Use Windows Management Instruction (WMI) to enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
 |task 2     |  link       |
 
 
