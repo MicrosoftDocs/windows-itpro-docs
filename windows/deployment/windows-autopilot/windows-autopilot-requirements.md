@@ -95,7 +95,6 @@ If the Microsoft Store is not accessible, the Autopilot process will still conti
   <br>Intel- https://ekop.intel.com/ekcertservice 
   <br>Qualcomm- https://ekcert.spserv.microsoft.com/EKCertificate/GetEKCertificate/v1
   <br>AMD- https://ftpm.amd.com/pki/aia
-  <br>Infineon- https://pki.infineon.com
 </table>
 
 ## Licensing requirements
