@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-We recommend using PowerShell to manage threat protection features for the devices (also referred to as endpoints) within your organization. 
+We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to manage your organization's threat protection features for devices (also referred to as endpoints). However, you can also use Group Policy Objects in Azure Active Directory Domain Services.
 
 ## Configuring Microsoft Defender ATP with Group Policy Objects
 
