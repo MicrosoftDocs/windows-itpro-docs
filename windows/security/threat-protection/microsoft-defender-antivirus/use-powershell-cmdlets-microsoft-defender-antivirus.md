@@ -59,3 +59,4 @@ Omit the `-online` parameter to get locally cached help.
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus Cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps)
