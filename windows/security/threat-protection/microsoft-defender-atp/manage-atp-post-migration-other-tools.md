@@ -26,10 +26,7 @@ When it comes to managing your organization's threat protection features in Micr
 - [Manage Microsoft Defender ATP with Intune](manage-atp-post-migration-intune.md)
 - [Manage Microsoft Defender ATP with Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 
-You can, however, use other tools/methods to perform some tasks, such as managing Microsoft Defender Antivirus settings. These tools/methods include:
-- [PowerShell](#configure-microsoft-defender-atp-with-powershell)
-- [Windows Management Instrumentation](#configure-microsoft-defender-atp-with-windows-management-instrumentation-wmi) (WMI)
-- [The Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-atp-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe)
+You can, however, use other tools/methods to perform some tasks. Examples include managing Microsoft Defender Antivirus settings and customizing attack surface reduction rules. These other tools/methods include [PowerShell](#configure-microsoft-defender-atp-with-powershell),  [Windows Management Instrumentation](#configure-microsoft-defender-atp-with-windows-management-instrumentation-wmi) (WMI), and [The Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-atp-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe).
 
 > [!NOTE]
 > Threat protection features that you configure by using PowerShell, WMI, or MCPmdRun.exe can be overwritten by configuration settings that are deployed with Intune or Configuration Manager.
