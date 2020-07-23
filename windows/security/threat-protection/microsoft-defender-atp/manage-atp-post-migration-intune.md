@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-We recommend using Microsoft Intune to manage your organization's threat protection features for devices (also referred to as endpoints). Intune is part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), along with Configuration Manager, Desktop Analytics, and other features & capabilities. [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
+We recommend using Microsoft Intune to manage your organization's threat protection features for devices (also referred to as endpoints). Intune is part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), along with Configuration Manager, Desktop Analytics, and other features & capabilities. [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
 
 
 ## Find your Microsoft Defender ATP settings in Intune
