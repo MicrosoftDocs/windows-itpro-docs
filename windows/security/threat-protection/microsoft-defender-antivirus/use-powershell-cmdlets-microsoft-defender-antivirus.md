@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/24/2020
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -59,3 +59,4 @@ Omit the `-online` parameter to get locally cached help.
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus Cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps)
