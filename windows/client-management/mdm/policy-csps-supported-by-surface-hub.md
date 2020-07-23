@@ -86,8 +86,8 @@ ms.date: 07/22/2020
 - [WirelessDisplay/AllowMdnsDiscovery](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery)
 - [WirelessDisplay/AllowProjectionFromPC](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc)
 - [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
-- [WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay.mdwirelessdisplay-allowprojectiontopc)
-- [WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay.mdwirelessdisplay-allowprojectiontopcoverinfrastructure)
+- [WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
+- [WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopcoverinfrastructure)
 - [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](policy-csp-wirelessdisplay.md#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
 - [WirelessDisplay/RequirePinForPairing](policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
