@@ -30,9 +30,9 @@ We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fund
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Install the Configuration Manager console  |[Get the installation media](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/get-install-media)<br/><br/>[Install the Configuration Manager console](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/install-consoles)  |
-|Manage your organization's devices using Configuration Manager <br/><br/>    |[Onboard to Microsoft Defender ATP with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
-|Manage antimalware policies and Windows Firewall security for client computers   |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)       |
+|**Install the Configuration Manager console**  |[Get the installation media](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/get-install-media)<br/><br/>[Install the Configuration Manager console](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/install-consoles)  |
+|**Manage your organization's devices using Configuration Manager** <br/><br/>    |[Onboard to Microsoft Defender ATP with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
+|**Manage antimalware policies and Windows Firewall security for client computers**   |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)       |
 
 ## Next steps
 

@@ -37,22 +37,27 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Manage Microsoft Defender Antivirus     |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)         |
-|Configure exploit protection     | [Customize exploit protection: PowerShell reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
-|Configure attack surface reduction rules <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
+|**Manage Microsoft Defender Antivirus**     |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)         |
+|**Configure exploit protection**     | [Customize exploit protection: PowerShell reference](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
+|**Configure attack surface reduction rules** <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
 
 
 ## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
 
-steps
+
+|Task  |Resources to learn more  |
+|---------|---------|
+|task 1     |  link       |
+|task 2     |  link       |
+
 
 ## Configure Microsoft Defender ATP with Microsoft Malware Protection Command Line Utility (MPCmdRun.exe)
 
 
 |Task  |Resources to learn more  |
 |---------|---------|
-|Manage Microsoft Defender Antivirus     |[Configure and manage Microsoft Defender Antivirus with the Microsoft Malware Protection Command Line Utility (mpcmdrun.exe) command-line tool](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
-|Row2     |         |
+|**Manage Microsoft Defender Antivirus**     |[Configure and manage Microsoft Defender Antivirus with the Microsoft Malware Protection Command Line Utility (mpcmdrun.exe) command-line tool](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
+|Row2     | link        |
 
 
 ## Next steps
