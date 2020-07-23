@@ -50,6 +50,12 @@ The Security Compliance Toolkit consists of:
     -   Policy Analyzer tool
     -   Local Group Policy Object (LGPO) tool
 
+-   Scripts
+    -   Baseline-ADImport.ps1
+    -   Baseline-LocalInstall.ps1
+    -   Remove-EPBaselineSettings.ps1
+    -   MapGuidsToGpoNames.ps1
+
 
 You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/bg-p/Microsoft-Security-Baselines).
 
