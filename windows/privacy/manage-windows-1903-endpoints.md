@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: obezeajo
+author: linque1
 ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
