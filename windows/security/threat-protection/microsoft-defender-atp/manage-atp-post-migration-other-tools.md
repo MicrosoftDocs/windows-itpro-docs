@@ -22,8 +22,14 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), which includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection), to manage your organization's threat protection features in Microsoft Defender ATP. However, you can use PowerShell, Windows Management Instrumentation (WMI), and the Microsoft Malware Protection Command Line Utility (MPCmdRun.exe) to perform some tasks, such as managing Microsoft Defender Antivirus, or configuring some settings on a device.
+When it comes to managing your organization's threat protection features in Microsoft Defender ATP, we recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview), which includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection). To learn more, see the following articles:
+- [Manage Microsoft Defender ATP with Intune](manage-atp-post-migration-intune.md)
+- [Manage Microsoft Defender ATP with Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 
+You can, however, use other tools/methods to perform some tasks, such as managing Microsoft Defender Antivirus settings. These tools/methods include:
+- [PowerShell](#configure-microsoft-defender-atp-with-powershell)
+- [Windows Management Instrumentation](#configure-microsoft-defender-atp-with-windows-management-instrumentation-wmi) (WMI)
+- [The Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-atp-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe)
 
 ## Configure Microsoft Defender ATP with PowerShell
 
