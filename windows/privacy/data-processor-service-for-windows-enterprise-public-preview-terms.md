@@ -190,7 +190,7 @@ The details of the transfer and in particular the special categories of personal
 
 1. The data subject can enforce against the data exporter this Clause, Clause 4(2) to (9), Clause 5(1) to (5), and (7) to (10), Clause 6(1) and (2), Clause 7, Clause 8(2), and Clauses 9 to 12 as third-party beneficiary. 
 2.1.exist in law unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law, as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity. 
-1. The data subject can enforce against the subprocessor this Clause, Clause 5(a) to (e) and (g), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses. 
+1. The data subject can enforce against the subprocessor this Clause, Clause 5(1) to (5) and (7), Clause 6, Clause 7, Clause 8(2), and Clauses 9 to 12, in cases where both the data exporter and the data importer have factually disappeared or ceased to exist in law or have become insolvent, unless any successor entity has assumed the entire legal obligations of the data exporter by contract or by operation of law as a result of which it takes on the rights and obligations of the data exporter, in which case the data subject can enforce them against such entity. Such third-party liability of the subprocessor shall be limited to its own processing operations under the Clauses. 
 1. The parties do not object to a data subject being represented by an association or other body if the data subject so expressly wishes and if permitted by national law. 
 
 **Clause 4: Obligations of the data exporter**
@@ -203,10 +203,10 @@ The data exporter agrees and warrants:
 1. that after assessment of the requirements of the applicable data protection law, the security measures are appropriate to protect personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorised disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing, and that these measures ensure a level of security appropriate to the risks presented by the processing and the nature of the data to be protected having regard to the state of the art and the cost of their implementation; 
 1. that it will ensure compliance with the security measures; 
 1. that, if the transfer involves special categories of data, the data subject has been informed or will be informed before, or as soon as possible after, the transfer that its data could be transmitted to a third country not providing adequate protection within the meaning of Directive 95/46/EC; 
-1. to forward any notification received from the data importer or any subprocessor pursuant to Clause 5(b) and Clause 8(3) to the data protection supervisory authority if the data exporter decides to continue the transfer or to lift the suspension; 
+1. to forward any notification received from the data importer or any subprocessor pursuant to Clause 5(2) and Clause 8(3) to the data protection supervisory authority if the data exporter decides to continue the transfer or to lift the suspension; 
 1. to make available to the data subjects upon request a copy of the Clauses, with the exception of Appendix 2, and a summary description of the security measures, as well as a copy of any contract for subprocessing services which has to be made in accordance with the Clauses, unless the Clauses or the contract contain commercial information, in which case it may remove such commercial information; 
 1. that, in the event of subprocessing, the processing activity is carried out in accordance with Clause 11 by a subprocessor providing at least the same level of protection for the personal data and the rights of data subject as the data importer under the Clauses; and 
-1. that it will ensure compliance with Clause 4(a) to (i).
+1. that it will ensure compliance with Clause 4(1) to (9).
 
 **Clause 5: Obligations of the data importer**
 
@@ -244,7 +244,7 @@ The data importer may not rely on a breach by a subprocessor of its obligations 
 
 1. The data exporter agrees to deposit a copy of this contract with the supervisory authority if it so requests or if such deposit is required under the applicable data protection law. 
 1. The parties agree that the supervisory authority has the right to conduct an audit of the data importer, and of any subprocessor, which has the same scope and is subject to the same conditions as would apply to an audit of the data exporter under the applicable data protection law. 
-1. The data importer shall promptly inform the data exporter about the existence of legislation applicable to it or any subprocessor preventing the conduct of an audit of the data importer, or any subprocessor, pursuant to paragraph 2. In such a case the data exporter shall be entitled to take the measures foreseen in Clause 5 (b). 
+1. The data importer shall promptly inform the data exporter about the existence of legislation applicable to it or any subprocessor preventing the conduct of an audit of the data importer, or any subprocessor, pursuant to paragraph 2. In such a case the data exporter shall be entitled to take the measures foreseen in Clause 5 (2). 
 
 **Clause 9: Governing Law**
 
@@ -317,7 +317,7 @@ The parties undertake not to vary or modify the Clauses. This does not preclude 
 
 **Appendix 2 to the Standard Contractual Clauses**
 
-Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(d) and 5(c):
+Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(4) and 5(3):
 
 1. **Personnel**. Data importer’s personnel will not process Preview Data or personal data without authorization. Personnel are obligated to maintain the confidentiality of any such Preview Data and personal data and this obligation continues even after their engagement ends. 
 2. **Data Privacy Contact**. The data privacy officer of the data importer can be reached at the following address: 
