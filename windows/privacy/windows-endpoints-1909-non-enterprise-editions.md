@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
-ms.author: obezeajo
-manager: robsize
+ms.author: v-hakima
+manager: obezeajo
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 7/22/2020
