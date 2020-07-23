@@ -41,3 +41,8 @@ Follow the corresponding instructions depending on your preferred deployment met
 
 ## Offboard non-Windows devices
 - [Offboard non-Windows devices](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+
+>[!NOTE]
+> Offboarded devices will remain in the portal until [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) for the device's data expires. The status will be switched to ['Inactive'](fix-unhealthy-sensors.md#inactive-devices) 7 days after offboarding. <br> 
+> In addition, [Devices that are not active in the last 30 days are not factored in on the data that reflects your organization's threat and vulnerability management exposure score and Microsoft Secure Score for Devices.](tvm-dashboard-insights.md) <br>
+> To view only active devices, you can filter by [health state](machines-view-overview.md#health-state) or by [device tags](machine-tags.md) and [groups](machine-groups.md) etc. 

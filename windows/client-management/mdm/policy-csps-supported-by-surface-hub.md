@@ -9,11 +9,15 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 07/18/2019
+ms.date: 07/22/2020
 ---
 
 # Policy CSPs supported by Microsoft Surface Hub
 
+
+- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
+- [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -61,6 +65,7 @@ ms.date: 07/18/2019
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [RestrictedGroups/ConfigureGroupMembership](https://docs.microsoft.com/windows/client-management/https://docs.microsoft.com/windows/client-management/mdm/policy-csp-restrictedgroups)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
@@ -72,7 +77,20 @@ ms.date: 07/18/2019
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208)
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
-- [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [Wifi/AllowInternetSharing](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowinternetsharing)
+- [Wifi/AllowManualWiFiConfiguration](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowmanualwificonfiguration)
+- [Wifi/AllowWiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
+- [WiFi/AllowWiFiHotSpotReporting](https://docs.microsoft.com/windows/client-management/policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [Wifi/AllowWiFiDirect](https://docs.microsoft.com/windows/client-management/policy-csp-wifi#wifi-allowwifidirect)
+- [WirelessDisplay/AllowMdnsAdvertisement](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsadvertisement)
+- [WirelessDisplay/AllowMdnsDiscovery](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowmdnsdiscovery)
+- [WirelessDisplay/AllowProjectionFromPC](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompc)
+- [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
+- [WirelessDisplay/AllowProjectionToPC](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopc)
+- [WirelessDisplay/AllowProjectionToPCOverInfrastructure](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowprojectiontopcoverinfrastructure)
+- [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
+- [WirelessDisplay/RequirePinForPairing](https://docs.microsoft.com/windows/client-management/policy-csp-wirelessdisplay#wirelessdisplay-requirepinforpairing)
+
 
 ## Related topics
 
