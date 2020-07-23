@@ -320,9 +320,5 @@ The parties undertake not to vary or modify the Clauses. This does not preclude 
 Description of the technical and organizational security measures implemented by the data importer in accordance with Clauses 4(4) and 5(3):
 
 1. **Personnel**. Data importer’s personnel will not process Preview Data or personal data without authorization. Personnel are obligated to maintain the confidentiality of any such Preview Data and personal data and this obligation continues even after their engagement ends. 
-2. **Data Privacy Contact**. The data privacy officer of the data importer can be reached at the following address: 
-Microsoft Corporation 
-Attn: Chief Privacy Officer 
-1 Microsoft Way 
-Redmond, WA 98052 USA 
+2. **Data Privacy Contact**. The data privacy officer of the data importer can be reached at the following address: </br>Microsoft Corporation </br>Attn: Chief Privacy Officer</br>1 Microsoft Way</br>Redmond, WA 98052 USA
 3. **Technical and Organization Measures**. The data importer has implemented and will maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect Preview Data and personal data, as defined in Attachment 1 of this agreement, against accidental loss, destruction, or alteration; unauthorized disclosure or access; or unlawful destruction as follows: The technical and organizational measures, internal controls, and information security routines set forth in Attachment 1 of this agreement are hereby incorporated into this Appendix 2 by this reference and are binding on the data importer as if they were set forth in this Appendix 2 in their entirety.
