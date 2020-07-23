@@ -23,7 +23,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-There are a great many details you can set in Delivery Optimization to customize it to do just what you need it to. This topic summarizes them for your reference.
+There are a great many details you can set in Delivery Optimization to customize it to do just what you need it to. This topic summarizes them for your reference. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md).
 
 ## Delivery Optimization options
 
@@ -47,9 +47,9 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 |
 | [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 |
 | [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 |
-| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 |
-| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 |
-| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
+| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
+| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (removed in Windows 10, version 2004; use [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)|
+| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (removed in Windows 10, version 2004) |
 | [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
 | [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 |
@@ -64,6 +64,10 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 | [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
 | [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
+| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 2004  |
+| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004  |
+| [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)         | DOMaxForegroundDownloadBandwidth | 2004 |
+| [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 |
 
 ### More detail on Delivery Optimization settings:
 
@@ -131,7 +135,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 0 = not set
 - 1 = AD Site
 - 2 = Authenticated domain SID
-- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID)
+- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 235 and use the returned GUID value as the Group ID)
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
@@ -232,4 +236,33 @@ The device can download from peers while on battery regardless of this policy.
 >[!IMPORTANT]
 > By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
+### Cache Server Hostname 
 
+Set this policy to to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma separated, for example: myhost.somerandomhost.com,myhost2.somrandomhost.com,10.10.1.7.
+
+
+### Cache Server Hostname Source
+
+This policy allows you to specify how your client(s) can discover Delivery Optimization in Network Cache servers dynamically. There are two options:
+- 1 = DHCP Option 235.
+- 2 = DHCP Option 235 Force.
+
+with either option, the client will query DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if set.
+
+Set this policy to designate one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. You can add one or more value either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address by commas.
+
+> [!NOTE]
+> If you format the DHCP Option ID incorrectly, the client will fall back to the Cache Server Hostname policy value if that value has been set.
+
+### Maximum Foreground Download Bandwidth (in KB/s)
+
+Specifies the maximum foreground download bandwidth in kilobytes/second that the device can use across all concurrent download activities using Delivery Optimization.
+ 
+The default value of 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+
+
+### Maximum Background Download Bandwidth (in KB/s)
+
+Specifies the maximum background download bandwidth in kilobytes/second that the device can use across all concurrent download activities using Delivery Optimization.
+ 
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.

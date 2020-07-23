@@ -33,11 +33,12 @@
 #### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Configuration score](microsoft-defender-atp/configuration-score.md)
+#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
 #### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
 #### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 #### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
+#### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
 #### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 ### [Attack surface reduction]()
@@ -152,7 +153,7 @@
 ####### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ####### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ####### [Configure antivirus exclusions Windows Server 2016](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
-   
+####### [Common mistakes when defining exclusions](microsoft-defender-antivirus/common-exclusion-mistakes-microsoft-defender-antivirus.md)
 ###### [Configure scanning antivirus options](microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus.md)
 ###### [Configure remediation for scans](microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus.md)
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
@@ -218,6 +219,7 @@
 ##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
 ##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
+##### [Schedule scans](microsoft-defender-atp/mac-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/mac-support-install.md)
@@ -441,7 +443,11 @@
 
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
+##### [Create indicators](microsoft-defender-atp/manage-indicators.md)
+###### [Create indicators for files](microsoft-defender-atp/indicator-file.md)
+###### [Create indicators for IPs and URLs/domains](microsoft-defender-atp/indicator-ip-domain.md)
+###### [Create indicators for certificates](microsoft-defender-atp/indicator-certificates.md)
+###### [Manage indicators](microsoft-defender-atp/indicator-manage.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
 
@@ -564,6 +570,7 @@
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
 ####### [List vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
+####### [List vulnerabilities by Machine and Software](microsoft-defender-atp/get-all-vulnerabilities-by-machines.md)
 ####### [Get vulnerability by Id](microsoft-defender-atp/get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](microsoft-defender-atp/get-machines-by-vulnerability.md)
 

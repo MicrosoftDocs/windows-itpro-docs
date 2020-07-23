@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -226,6 +226,6 @@ For 4771(F): Kerberos pre-authentication failed.
 | **Pre-Authentication Type** | Value is **not 15** when account must use a smart card for authentication. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                                        |
 | **Pre-Authentication Type** | Value is **not 2** when only standard password authentication is in use in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                      |
 | **Pre-Authentication Type** | Value is **not 138** when Kerberos Armoring is enabled for all Kerberos communications in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).       |
-| **Result Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
-| **Result Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This can be an indicator of brute-force attack on the account password, especially for highly critical accounts. |
+| **Failure Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
+| **Failure Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This can be an indicator of brute-force attack on the account password, especially for highly critical accounts. |
 

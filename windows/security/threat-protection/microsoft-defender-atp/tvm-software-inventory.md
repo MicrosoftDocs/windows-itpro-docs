@@ -1,7 +1,7 @@
 ---
-title: Software inventory
-description: Microsoft Defender ATP Threat & Vulnerability Management's software inventory page shows how many weaknesses and vulnerabilities have been detected in software.
-keywords: microsoft defender atp, microsoft defender atp software inventory, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
+title: Software inventory in threat and vulnerability management
+description: Microsoft Defender ATP threat and vulnerability management's software inventory page shows how many weaknesses and vulnerabilities have been detected in software.
+keywords: threat and vulnerability management, microsoft defender atp, microsoft defender atp software inventory, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
-# Software inventory
+# Software inventory - threat and vulnerability management
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Microsoft Defender ATP Threat & Vulnerability management's discovery capability shows in the **Software inventory** page. The software inventory includes the name of the product or vendor, the latest version it is in, and the number of weaknesses and vulnerabilities detected with it.
+The software inventory in threat and vulnerability management is a list of all the software in your organization, including details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
@@ -33,7 +33,7 @@ Since it is real-time, in a matter of minutes, you will see vulnerability inform
 
 ## Navigate to the Software inventory page
 
-You can access the Software inventory page by selecting **Software inventory** from the Threat & Vulnerability Management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).
+You can access the Software inventory page by selecting **Software inventory** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).
 
 View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
@@ -48,7 +48,13 @@ Select the software that you want to investigate and a flyout panel opens up wit
 
 ## Software pages
 
-Once you are in the Software inventory page and have opened the flyout panel by selecting a software to investigate, select **Open software page** (see image in the previous section). A full page will appear with all the details of a specific software and the following information:
+You can view software pages a few different ways:
+
+- Software inventory page > Select a software name > Select **Open software page** in the flyout
+- [Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout
+- [Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout
+
+ A full page will appear with all the details of a specific software and the following information:
 
 - Side panel with vendor information, prevalence of the software in the organization (including number of devices it is installed on, and exposed devices that are not patched), whether and exploit is available, and impact to your exposure score
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs of the number of exposed devices
@@ -72,18 +78,19 @@ You can report a false positive when you see any vague, inaccurate version, inco
 1. Open the software flyout on the Software inventory page.
 2. Select **Report inaccuracy**.
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
-4. Select **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts.
+4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related topics
 
-- [Threat & Vulnerability Management overview](next-gen-threat-and-vuln-mgt.md)
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for Threat & Vulnerability Management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

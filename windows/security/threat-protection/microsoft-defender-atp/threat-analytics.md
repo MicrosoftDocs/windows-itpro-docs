@@ -41,28 +41,30 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 ![Image of a threat analytics dashboard](images/ta_dashboard.png)
 
-Select a threat on any of the overviews or on the table to view the report for that threat.
+Select a threat from any of the overviews or from the table to view the report for that threat.
 
 ## View a threat analytics report
 
-Each threat report generally provides an overview of the threat and an analysis of the techniques and tools used by the threat. It also provides worldwide impact information, mitigation recommendations, and detection information. It includes several cards that show dynamic data about how your organization is impacted by the threat and how prepared it is to stop the threat. 
+Each threat report generally provides an overview of the threat and an analysis of the techniques and tools used by the threat. It also provides mitigation recommendations and detection information. It includes several cards that show dynamic data about how your organization is impacted by the threat and how prepared it is to stop the threat. 
 
 ![Image of a threat analytics report](images/ta.png)
 
 ### Organizational impact
 Each report includes cards designed to provide information about the organizational impact of a threat:
-- **Devices with alerts** — shows the current number of distinct devices in your organization that have been impacted by the threat. A device is categorized as **Active** if there is at least 1 alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
+- **Devices with alerts** — shows the current number of distinct devices that have been impacted by the threat. A device is categorized as **Active** if there is at least one alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
 - **Devices with alerts over time** — shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
 ### Organizational resilience
 Each report also includes cards that provide an overview of how resilient your organization can be against a given threat:
-- **Mitigation status** — shows the number of devices that have and have not applied mitigations for the threat. Devices are considered mitigated if they have all the measurable mitigations in place.
+- **Security configuration status** — shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status** — shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
-- **Mitigation recommendations** — lists specific actionable recommendations to improve your visibility into the threat and increase your organizational resilience. This card lists only measurable mitigations along with the number of devices that don't have these mitigations in place.
+- **Mitigation details** — lists specific actionable recommendations that can help you increase your organizational resilience. This card lists tracked mitigations, including recommended settings and vulnerability patches, along with the number of devices that don't have the mitigations in place.
 
->[!IMPORTANT]
->- Charts only reflect mitigations that are measurable, meaning an evaluation can be made on whether a device has applied the mitigations or not. Check the report overview for additional mitigations that are not reflected in the charts.
->- Even if all mitigations were measurable, they don't guarantee complete resilience. They reflect the best possible actions needed to improve resiliency.
+### Additional report details and limitations
+When using the reports, keep the following in mind: 
 
->[!NOTE]
->Devices are counted as "unavailable" if they have been unable to transmit data to the service.
+- Data is scoped based on your RBAC permissions. You will only see the status of devices that you have been granted access to on the RBAC.
+- Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not reflected in the charts.
+- Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
+- Devices are counted as "unavailable" if they have been unable to transmit data to the service.
+- Antivirus related statistics are based on Microsoft Defender Antivirus settings. Devices with third-party antivirus solutions can appear as "exposed".
