@@ -842,6 +842,8 @@
 ####### [Event 4689 S: A process has exited.](auditing/event-4689.md)
 ###### [Audit RPC Events](auditing/audit-rpc-events.md)
 ####### [Event 5712 S: A Remote Procedure Call, RPC, was attempted.](auditing/event-5712.md)
+###### [Audit Token Right Adjusted](auditing/audit-token-right-adjusted.md)
+####### [Event 4703 S: A user right was adjusted.](auditing/event-4703.md)
 ###### [Audit Detailed Directory Service Replication](auditing/audit-detailed-directory-service-replication.md)
 ####### [Event 4928 S, F: An Active Directory replica source naming context was established.](auditing/event-4928.md)
 ####### [Event 4929 S, F: An Active Directory replica source naming context was removed.](auditing/event-4929.md)
