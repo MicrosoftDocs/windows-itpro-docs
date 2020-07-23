@@ -28,13 +28,11 @@ We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fund
 
 ## Configure Microsoft Defender ATP with Configuration Manager
 
-The following table lists various tasks you can perform to configure Microsoft Defender ATP with Intune. Choose a task, read the corresponding resources, and then proceed from there, at your pace.
-
-
 |Task  |Resources to learn more  |
 |---------|---------|
+|Install the Configuration Manager console  |[Get the installation media](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/get-install-media)<br/><br/>[Install the Configuration Manager console](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/install/install-consoles)  |
 |Manage your organization's devices using Configuration Manager <br/><br/>    |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)  <br/><br/>[Onboarding to Microsoft Defender ATP with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
-|task   |link       |
+|manages antimalware policies and Windows Firewall security for client computers   |link       |
 
 ## Related articles
 
