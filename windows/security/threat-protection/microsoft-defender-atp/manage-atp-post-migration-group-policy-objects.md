@@ -19,6 +19,9 @@ ms.topic: article
 
 # Manage Microsoft Defender Advanced Threat Protection with Group Policy Objects
 
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 We recommend using PowerShell to manage threat protection features for the devices (also referred to as endpoints) within your organization. 
 
 ## Configuring Microsoft Defender ATP with Group Policy Objects
