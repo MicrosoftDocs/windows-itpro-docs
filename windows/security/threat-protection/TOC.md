@@ -153,7 +153,7 @@
 ####### [Configure and validate exclusions based on file name, extension, and folder location](microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ####### [Configure and validate exclusions for files opened by processes](microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ####### [Configure antivirus exclusions Windows Server 2016](microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus.md)
-   
+####### [Common mistakes when defining exclusions](microsoft-defender-antivirus/common-exclusion-mistakes-microsoft-defender-antivirus.md)
 ###### [Configure scanning antivirus options](microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus.md)
 ###### [Configure remediation for scans](microsoft-defender-antivirus/configure-remediation-microsoft-defender-antivirus.md)
 ###### [Configure scheduled scans](microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus.md)
@@ -601,6 +601,7 @@
 ##### [Configure Micro Focus ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Fetch alerts from customer tenant](microsoft-defender-atp/fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -615,7 +616,12 @@
 ###### [Using device groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage device tags](microsoft-defender-atp/machine-tags.md)
 
-#### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
+#### [Managed security service provider (MSSP) integration]()
+##### [Configure managed security service provider integration](microsoft-defender-atp/configure-mssp-support.md)
+##### [Grant MSSP access to the portal](microsoft-defender-atp/grant-mssp-access.md)
+##### [Access the MSSP customer portal](microsoft-defender-atp/access-mssp-portal.md)
+##### [Configure alert notifications](microsoft-defender-atp/configure-mssp-notifications.md)
+##### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)

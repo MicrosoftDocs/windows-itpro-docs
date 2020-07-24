@@ -26,12 +26,12 @@ ms.topic: article
 ## API description
 Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```lastIpAddress```, ```healthStatus```, ```osPlatform```, ```riskScore```, ```rbacGroupId``` and ```machineTags``` properties.
+<br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```healthStatus```, ```osPlatform```, ```riskScore``` and ```rbacGroupId```.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
 ## Limitations
-1. You can get devices last seen in the past 30 days.
+1. You can get devices last seen in according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 

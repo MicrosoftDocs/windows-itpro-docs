@@ -9,11 +9,15 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 07/18/2019
+ms.date: 07/22/2020
 ---
 
 # Policy CSPs supported by Microsoft Surface Hub
 
+
+- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
+- [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -61,6 +65,7 @@ ms.date: 07/18/2019
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
@@ -72,7 +77,21 @@ ms.date: 07/18/2019
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208)
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
+- [Wifi/AllowInternetSharing](policy-csp-wifi.md#wifi-allowinternetsharing)
+- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+- [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
 - [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [WiFi/WLANScanMode](policy-csp-wifi.md#wifi-wlanscanmode)
+- [Wifi/AllowWiFiDirect](policy-csp-wifi.md#wifi-allowwifidirect)
+- [WirelessDisplay/AllowMdnsAdvertisement](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsadvertisement)
+- [WirelessDisplay/AllowMdnsDiscovery](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery)
+- [WirelessDisplay/AllowProjectionFromPC](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc)
+- [WirelessDisplay/AllowProjectionFromPCOverInfrastructure](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompcoverinfrastructure)
+- [WirelessDisplay/AllowProjectionToPC](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
+- [WirelessDisplay/AllowProjectionToPCOverInfrastructure](policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopcoverinfrastructure)
+- [WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver](policy-csp-wirelessdisplay.md#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver)
+- [WirelessDisplay/RequirePinForPairing](policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
+
 
 ## Related topics
 
