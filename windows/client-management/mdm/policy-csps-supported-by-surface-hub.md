@@ -80,8 +80,8 @@ ms.date: 07/22/2020
 - [Wifi/AllowInternetSharing](policy-csp-wifi.md#wifi-allowinternetsharing)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
-- [WiFi/AllowWiFiHotSpotReporting]policy-csp-wifi.md#wifi-allowwifihotspotreporting)
-- [WiFi/WLANScanMode]policy-csp-wifi#wifi-wlanscanmode
+- [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [WiFi/WLANScanMode](policy-csp-wifi#wifi-wlanscanmode)
 - [Wifi/AllowWiFiDirect](policy-csp-wifi.md#wifi-allowwifidirect)
 - [WirelessDisplay/AllowMdnsAdvertisement](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsadvertisement)
 - [WirelessDisplay/AllowMdnsDiscovery](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery)
