@@ -26,7 +26,7 @@ We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fund
 
 Both Configuration Manager and Microsoft Intune are part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), along with Desktop Analytics, and other features & capabilities. 
 - [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)
-- [See how you can co-manage Microsoft Defender ATP on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
+- [Co-manage Microsoft Defender ATP on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 
 ## Configure Microsoft Defender ATP with Configuration Manager
 
