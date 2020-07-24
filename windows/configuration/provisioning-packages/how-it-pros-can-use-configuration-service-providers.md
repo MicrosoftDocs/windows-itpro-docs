@@ -21,7 +21,7 @@ ms.date: 07/27/2017
 -   Windows 10
 -   Windows 10 Mobile
 
-This article explains how IT pros and system administrators can take advantage of many settings available through configuration service providers (CSPs) to configure devices running Windows 10 and Windows 10 Mobile in their organizations. CSPs expose device configuration settings in Windows 10. The CSPs are used by mobile device management (MDM) service providers and are documented on the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390). 
+This article explains how IT pros and system administrators can take advantage of many settings available through configuration service providers (CSPs) to configure devices running Windows 10 and Windows 10 Mobile in their organizations. CSPs expose device configuration settings in Windows 10. The CSPs are used by mobile device management (MDM) service providers and are documented in the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390). 
 
 > [!NOTE]
 > The information provided here about CSPs and CSP documentation also applies to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
@@ -30,7 +30,7 @@ This article explains how IT pros and system administrators can take advantage o
 
 ## What is a CSP?
 
-In the client operating system, a CSP is the interface between configuration settings specified in a provisioning document and configuration settings on the device. CSPs are similar to Group Policy client-side extensions in that they provide an interface to read, set, modify, or delete configuration settings for a given feature. Typically, these settings map to registry keys, files, or permissions. Some of these settings are configurable, and some are read-only.
+In the client operating system, a CSP is the interface between configuration settings that are specified in a provisioning document and configuration settings that are on the device. CSPs are similar to Group Policy client-side extensions in that they provide an interface to read, set, modify, or delete configuration settings for a given feature. Typically, these settings map to registry keys, files, or permissions. Some of these settings are configurable, and some are read-only.
 
 Starting with Windows Mobile 5.0, CSPs were used to manage Windows mobile devices. On the Windows 10 platform, the management approach for both desktop and mobile devices converges, taking advantage of the same CSPs to configure and manage all devices running Windows 10.
 
