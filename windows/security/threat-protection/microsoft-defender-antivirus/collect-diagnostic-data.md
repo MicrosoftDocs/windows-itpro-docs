@@ -26,7 +26,7 @@ manager: dansimp
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
 
 > [!NOTE]
-> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
