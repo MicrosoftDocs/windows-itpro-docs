@@ -249,6 +249,11 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 
+> [!TIP]
+> The following only applies to devices that have **not** yet received the August 2020 update to Microsoft Defender Antivirus.
+>
+> The August 2020 update ensures that Microsoft Defender Antivirus cannot be disabled via a policy.
+
 **Problem**: The Microsoft Defender ATP service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 or error 1058 when trying to start the service.
