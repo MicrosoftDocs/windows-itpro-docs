@@ -28,11 +28,9 @@ ms.topic: troubleshooting
 You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
 
-
 ## Troubleshoot issues with onboarding tools
 
 If you have completed the onboarding process and don't see devices in the [Devices list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
-
 
 ### Troubleshoot onboarding when deploying with Group Policy
 
@@ -41,7 +39,6 @@ Deployment with Group Policy is done by running the onboarding script on the dev
 If you have completed the onboarding process and don't see devices in the [Devices list](investigate-machines.md) after an hour, you can check the output of the script on the devices. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the devices](#troubleshoot-onboarding-issues-on-the-device) for additional errors that might occur.
-
 
 ### Troubleshoot onboarding issues when deploying with Microsoft Endpoint Configuration Manager
 
@@ -57,10 +54,10 @@ If the deployment fails, you can check the output of the script on the devices.
 
 If the onboarding completed successfully but the devices are not showing up in the **Devices list** after an hour, see [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device) for additional errors that might occur.
 
-
 ### Troubleshoot onboarding when deploying with a script
 
 **Check the result of the script on the device:**
+
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
@@ -68,6 +65,7 @@ If the onboarding completed successfully but the devices are not showing up in t
 3. Look for an event from **WDATPOnboarding** event source.
 
 If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
+
 > [!NOTE]
 > The following event IDs are specific to the onboarding script only.
 
@@ -81,7 +79,6 @@ Event ID | Error Type | Resolution steps
 `35` |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 `40` | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 `65` | Insufficient privileges| Run the script again with administrator privileges.
-
 
 ### Troubleshoot onboarding issues using Microsoft Intune
 
@@ -97,7 +94,7 @@ Use the following tables to understand the possible causes of issues while onboa
 
 If none of the event logs and troubleshooting steps work, download the Local script from the **Device management** section of the portal, and run it in an elevated command prompt.
 
-**Microsoft Intune error codes and OMA-URIs**:
+#### Microsoft Intune error codes and OMA-URIs
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---:|:---|:---|:---|:---
@@ -107,8 +104,7 @@ Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause a
  | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
  0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
 
-
-**Known issues with non-compliance**
+#### Known issues with non-compliance
 
 The following table provides information on issues with non-compliance and how you can address the issues.
 
@@ -118,8 +114,7 @@ Case | Symptoms | Possible cause and troubleshooting steps
  `2` |  Device is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  **Possible cause:** Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the device as non-compliant by SenseIsRunning when DM session occurs on system start. <br><br> **Troubleshooting steps:** The issue should automatically be fixed within 24 hours.
  `3` | Device is non-compliant | **Troubleshooting steps:** Ensure that Onboarding and Offboarding policies are not deployed on the same device at same time.
 
-
-**Mobile Device Management (MDM) event logs**
+#### Mobile Device Management (MDM) event logs
 
 View the MDM event logs to troubleshoot issues that might arise during onboarding:
 
@@ -131,16 +126,15 @@ ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
-
 ## Troubleshoot onboarding issues on the device
 
-If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender ATP agent:
+If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender ATP agent.
+
 - [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the device has an Internet connection](#ensure-the-device-has-an-internet-connection)
 - [Ensure that Microsoft Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
-
 
 ### View agent onboarding errors in the device event log
 
@@ -176,23 +170,22 @@ Event ID | Message | Resolution steps
 `30` | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender Advanced Threat Protection. Failure code: %1 | Contact support.
 `32` | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the device.
 `55` | Failed to create the Secure ETW autologger. Failure code: %1 | Reboot the device.
-`63` | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4	| Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
+`63` | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4 | Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
 `64` | Starting stopped external service. Name: %1, exit code: %2 | Contact support if the event keeps re-appearing.
 `68` | The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3 | Identify what is causing changes in start type. Fix mentioned service start type.
-`69` |	The service is stopped. Service name: %1	| Start the mentioned service. Contact support if persists.
+`69` | The service is stopped. Service name: %1 | Start the mentioned service. Contact support if persists.
 
-<br>
+<br />
+
 There are additional components on the device that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
-
 
 ### Ensure the diagnostic data service is enabled
 
 If the devices aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
-
 
 ### Ensure the service is set to start
 
@@ -215,7 +208,6 @@ First, you should check that the service is set to start automatically when Wind
    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
-
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
@@ -255,7 +247,6 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
-
 ### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 
 **Problem**: The Microsoft Defender ATP service does not start after onboarding.
@@ -284,8 +275,9 @@ If the verification fails and your environment is using a proxy to connect to th
 
    > [!NOTE]
    > In addition, you must ensure that wdfilter.sys and wdboot.sys are set to their default start values of "0".
-   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
-   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   >
+   > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## Troubleshoot onboarding issues on a server
 
@@ -295,6 +287,7 @@ If you encounter issues while onboarding a server, go through the following veri
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
 
 You might also need to check the following:
+
 - Check that there is a Microsoft Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
 
     ![Image of process view with Microsoft Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
@@ -311,12 +304,12 @@ You might also need to check the following:
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 
-
 ## Confirming onboarding of newly built devices
 
 There may be instances when onboarding is deployed on a newly built device but not completed.
 
 The steps below provide guidance for the following scenario:
+
 - Onboarding package is deployed to newly built devices
 - Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
 - Device is turned off or restarted before the end user performs a first logon
@@ -324,7 +317,6 @@ The steps below provide guidance for the following scenario:
 
 > [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
-
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
@@ -444,8 +436,8 @@ The steps below provide guidance for the following scenario:
 
     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
 
-
 ## Related topics
+
 - [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
