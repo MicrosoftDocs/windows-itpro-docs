@@ -27,6 +27,9 @@ ms.topic: article
 
 Investigate the details of an alert raised on a specific device to identify other behaviors or events that might be related to the alert or the potential scope of the breach.
 
+> [!NOTE]
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
+
 You can click on affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
 
 - [Devices list](investigate-machines.md)
