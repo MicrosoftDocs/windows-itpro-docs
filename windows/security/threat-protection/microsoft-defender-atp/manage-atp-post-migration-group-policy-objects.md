@@ -22,9 +22,9 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to manage your organization's threat protection features for devices (also referred to as endpoints). However, you can also use Group Policy Objects in Azure Active Directory Domain Services.
+We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to manage your organization's threat protection features for devices (also referred to as endpoints). However, you can also use Group Policy Objects in Azure Active Directory Domain Services to manage some settings in Microsoft Defender ATP.
 
-## Configuring Microsoft Defender ATP with Group Policy Objects
+## Configure Microsoft Defender ATP with Group Policy Objects
 
 The following table lists various tasks you can perform to configure Microsoft Defender ATP with Group Policy Objects.
 
