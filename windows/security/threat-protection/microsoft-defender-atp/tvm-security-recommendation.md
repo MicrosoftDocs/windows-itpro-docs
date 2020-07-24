@@ -131,37 +131,83 @@ If you want to check how the ticket shows up in Intune, see [Use Intune to remed
 
 ## File for exception
 
-As an alternative to a remediation request, you can create exceptions for recommendations.
+As an alternative to a remediation request, you can create exceptions for recommendations. Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md)
 
-There are many reasons why organizations create exceptions for a recommendation. For example, if there's a business justification that prevents the company from applying the recommendation, the existence of a compensating or alternative control that provides as much protection than the recommendation would, a false positive, among other reasons.
+If your organization has device groups, you will now be able to scope the exception to specific groups. If you have global administrator permission (called Microsoft Defender ATP administrator), then you can choose to set the exception for all current and future device groups.  
 
-When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state changes to **Exception**, and it no longer shows up in the security recommendations list.
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception (by device group)**.
 
-1. Select a security recommendation you would like create an exception for, and then **Exception options**.
-![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-option.png)
+### How to create an exception
 
-2. Select your exception scope. There are two types of exceptions:
-    - **Global exception**: Global admins will be able to create a global exception. It affects all current and future device groups in your organization. It can only be cancelled by someone with admin privileges.
-    - **Exception by device groups**: Apply the exception to all device groups, or choose specific device groups. Device groups that already have an exception will not be displayed. If you have filtered by device group, just your filtered device groups will appear as options.
+Select a security recommendation you would like create an exception for, and then select **Exception options**.  
 
-    Some things to keep in mind:
-    - If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired.
-    - If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
+![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
-3. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+Then choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab. 
 
-    The following list details the justifications behind the exception options:
+### Exception scope
 
-    - **Third party control** - A third party product or software already addresses this recommendation
+Exceptions can either be created for selected device groups, or for all device groups past and present.  
+
+#### Exception by device group
+
+Apply the exception to all device groups, or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.”
+
+If you have filtered by device group, just your filtered device groups will appear as options.
+
+If your organization has more than 20 device groups, select Edit next to the filtered device.
+
+A flyout will appear where you can search and choose device groups you want included. Select the check mark icon below Search to check/uncheck all. 
+
+#### Global exceptions
+
+Some things to keep in mind:
+
+- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired.
+- If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
+
+### Justification
+
+Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+
+The following list details the justifications behind the exception options:
+
+- **Third party control** - A third party product or software already addresses this recommendation
         - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
-    - **Alternate mitigation** - An internal tool already addresses this recommendation
+- **Alternate mitigation** - An internal tool already addresses this recommendation
         - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
-    - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
-    - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+- **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
+- **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
 
-4. Select **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+### How to cancel an exception
 
-5. Navigate to the [**Remediation**](tvm-remediation.md) page under the **Threat and vulnerability management** menu and select the **Exceptions** tab to view all your exceptions (current and past).
+To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
+
+![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
+
+#### Cancel the exception for a specific device group
+
+If the exception is per device group, then you will need to select a specific device group to cancel the exception for.  
+
+![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
+
+A flyout will appear for the device group, and you can select **Cancel exception**.
+
+#### Cancel a global exception
+
+If it is a global exception, select an exception from the list and then select Cancel exception from the flyout.
+
+![Showing how to cancel the exception for a global exception.](images/tvm-exception-cancel-global-400.png)
+
+### View impact after exceptions are applied
+
+In the Security Recommendations page, select **Customize columns** and check the boxes for **Exposed devices (after exceptions)** and **Impact (after exceptions)**.
+
+![Showing customize columns options.](images/tvm-after-exceptions.png)
+
+The exposed devices (after exceptions) column shows the remaining devices that are still exposed to vulnerabilities after exceptions are applied. Exception justifications that affect the exposure include ‘third party control’ and ‘alternate mitigation’. Other justifications do not reduce the exposure of a device, and they are still considered exposed.
+
+The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
 
 ## Report inaccuracy
 
