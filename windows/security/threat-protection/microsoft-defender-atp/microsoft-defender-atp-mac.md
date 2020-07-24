@@ -80,8 +80,8 @@ The following downloadable spreadsheet lists the services and their associated U
 
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
-- Proxy auto-config (PAC)
-- Web Proxy Auto-discovery Protocol (WPAD)
+- Proxy autoconfig (PAC)
+- Web Proxy Autodiscovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
