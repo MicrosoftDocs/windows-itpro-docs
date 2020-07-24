@@ -36,6 +36,9 @@ For more information preview features, see [Preview features](https://docs.micro
 > ```
 
 
+## July 2020
+- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
+
 ## June 2020
 - [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender ATP now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender ATP for Linux.
 
