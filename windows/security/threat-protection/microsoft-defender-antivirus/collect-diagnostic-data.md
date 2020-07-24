@@ -24,6 +24,8 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
+[!NOTE]
+> The diagnostic data is collected as part of the investigation package. For more information see: [Investigate devices in the Microsoft Defender ATP Devices list](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-machines)
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
