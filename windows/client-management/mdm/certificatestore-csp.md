@@ -17,7 +17,9 @@ ms.date: 02/28/2020
 
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
-> **Note**   The CertificateStore configuration service provider does not support installing client certificates.
+> [!Note]
+> The CertificateStore configuration service provider does not support installing client certificates.
+> Microsoft protocol version of OMA is case insensitive.
 
  
 
