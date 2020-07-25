@@ -143,7 +143,7 @@ Select a security recommendation you would like create an exception for, and the
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
-Then choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab. 
+Then choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab.
 
 ### Exception scope
 
@@ -151,15 +151,31 @@ Exceptions can either be created for selected device groups, or for all device g
 
 #### Exception by device group
 
-Apply the exception to all device groups, or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.”
+Apply the exception to all device groups or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.”
+
+![Showing device group dropdown.](images/tvm-exception-device-group-500.png)
+
+##### Filtered
 
 If you have filtered by device group, just your filtered device groups will appear as options.
 
-If your organization has more than 20 device groups, select Edit next to the filtered device.
+![Showing filtered device group dropdown.](images/tvm-exception-device-filter500.png)
 
-A flyout will appear where you can search and choose device groups you want included. Select the check mark icon below Search to check/uncheck all. 
+##### Large number of device groups
+
+If your organization has more than 20 device groups, select **Edit** next to the filtered device group option.
+
+![Showing how to edit large numbers of groups.](images/tvm-exception-edit-groups.png)
+
+A flyout will appear where you can search and choose device groups you want included. Select the check mark icon below Search to check/uncheck all.
+
+![Showing large device group flyout.](images/tvm-exception-device-group-flyout-400.png)
 
 #### Global exceptions
+
+If you have global administrator permissions (called Microsoft Defender ATP administrator), you will be able to create and cancel a global exception. It affects all current and future device groups in your organization. The recommendation state will change from “active” to “full exception.”
+
+![Showing global exception option.](images/tvm-exception-global.png)
 
 Some things to keep in mind:
 
@@ -208,6 +224,8 @@ In the Security Recommendations page, select **Customize columns** and check the
 The exposed devices (after exceptions) column shows the remaining devices that are still exposed to vulnerabilities after exceptions are applied. Exception justifications that affect the exposure include ‘third party control’ and ‘alternate mitigation’. Other justifications do not reduce the exposure of a device, and they are still considered exposed.
 
 The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
+
+![Showing the columns in the table.](images/tvm-after-exceptions-table.png)
 
 ## Report inaccuracy
 
