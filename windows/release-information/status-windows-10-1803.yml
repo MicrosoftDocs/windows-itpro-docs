@@ -20,9 +20,9 @@ sections:
     text: "
       Find information on known issues for Windows 10, version 1803. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
- <table border = '0' class='box-info'><tr>
-<td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div>Windows&nbsp;10,&nbsp;version&nbsp;1803&nbsp;(the April 2018 Update) Home and Pro editions have reached end of service. For&nbsp;Windows&nbsp;10&nbsp;devices that are at, or within several months of reaching end of service,&nbsp;Windows&nbsp;Update will automatically initiate a feature update (with users having the ability to choose a convenient time); keeping those devices supported and receiving the monthly updates that are critical to device security and ecosystem health.</div>
-</td></tr></table>
+      <table border = '0' class='box-info'><tr>
+      <td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div>Windows&nbsp;10,&nbsp;version&nbsp;1803&nbsp;(the April 2018 Update) Home and Pro editions have reached end of service. For&nbsp;Windows&nbsp;10&nbsp;devices that are at, or within several months of reaching end of service,&nbsp;Windows&nbsp;Update will automatically initiate a feature update (with users having the ability to choose a convenient time); keeping those devices supported and receiving the monthly updates that are critical to device security and ecosystem health.</div>
+      </td></tr></table>
 
       " 
 
