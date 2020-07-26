@@ -19,7 +19,7 @@ The CertificateStore configuration service provider is used to add secure socket
 
 > [!Note]
 > The CertificateStore configuration service provider does not support installing client certificates.
-> Microsoft protocol version of OMA is case insensitive.
+> The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
  
 
@@ -640,7 +640,6 @@ Configure the device to automatically renew an MDM client certificate with the s
  
 
  
-
 
 
 
