@@ -50,7 +50,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 
-```
+```console
 POST https://api.securitycenter.windows.com/api/machines/{id}/tags
 ```
 
@@ -83,7 +83,7 @@ Here is an example of a request that adds machine tag.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```console
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
 Content-type: application/json
 {
