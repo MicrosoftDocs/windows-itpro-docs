@@ -86,7 +86,7 @@ When a pending action is approved, the entity is then remediated and this new st
 
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
 
-- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)(https://aka.ms/MDATP-IR-Interactive-Guide)
+- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## Related articles
 
