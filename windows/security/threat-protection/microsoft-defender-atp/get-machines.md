@@ -31,7 +31,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated with  Mi
 
 
 ## Limitations
-1. You can get devices last seen in according to your configured retention period.
+1. You can get devices last seen according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 

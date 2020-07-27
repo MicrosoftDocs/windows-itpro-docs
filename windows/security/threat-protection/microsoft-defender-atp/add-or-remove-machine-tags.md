@@ -28,7 +28,7 @@ Adds or remove tag to a specific [Machine](machine.md).
 
 ## Limitations
 
-1. You can post on machines according to your configured retention period.
+1. You can post on machines last seen according to your configured retention period.
 
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
