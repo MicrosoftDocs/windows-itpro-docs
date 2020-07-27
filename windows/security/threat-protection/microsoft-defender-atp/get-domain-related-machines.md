@@ -48,7 +48,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- Response will include only devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```console
+```http
 GET /api/domains/{domain}/machines
 ```
 
@@ -75,6 +75,6 @@ Here is an example of the request.
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-```console
+```http
 GET https://api.securitycenter.windows.com/api/domains/api.securitycenter.windows.com/machines
 ```
