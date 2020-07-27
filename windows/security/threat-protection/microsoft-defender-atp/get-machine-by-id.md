@@ -65,7 +65,7 @@ Empty
 
 ## Response
 If successful and device exists - 200 OK with the [machine](machine.md) entity in the body.
-If machine with the specified id was not found - 404 Not Found.
+If machine with the specified ID was not found - 404 Not Found.
 
 
 ## Example
