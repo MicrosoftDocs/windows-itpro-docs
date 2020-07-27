@@ -82,9 +82,11 @@ The default device group is configured for semi-automatic remediation. This mean
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 
-## Next step
+## Next steps
 
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
+
+- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## Related articles
 
