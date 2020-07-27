@@ -90,5 +90,6 @@ Content-type: application/json
   "Value" : "test Tag 2",
   "Action": "Add"
 }
+```
 
 - To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
