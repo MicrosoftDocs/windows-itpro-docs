@@ -31,7 +31,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated with  Mi
 
 
 ## Limitations
-1. You can get devices last seen in according to your configured retention period.
+1. You can get devices last seen according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
@@ -51,7 +51,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```console
+
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -77,7 +78,8 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```console
+
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -85,8 +87,7 @@ GET https://api.securitycenter.windows.com/api/machines
 
 Here is an example of the response.
 
-
-```console
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
