@@ -26,7 +26,7 @@ ms.topic: article
 ## API description
 Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```healthStatus```, ```osPlatform```, ```riskScore``` and ```rbacGroupId```.
+<br>The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
@@ -51,7 +51,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -77,7 +77,7 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -86,7 +86,7 @@ GET https://api.securitycenter.windows.com/api/machines
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
