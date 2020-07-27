@@ -14,7 +14,7 @@ metadata:
   author: danihalfin
   ms.author: daniha
   manager: dansimp
-  ms.date: 02/21/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -55,7 +55,7 @@ productDirectory:
     - title: Changes to Windows diagnostic data collection
       imageSrc: https://docs.microsoft.com/media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
-      url: windows-diagnostic-data.md  
+      url: changes-to-windows-diagnostic-data-collection.md  
 
 # conceptualContent section (optional)
 # conceptualContent:
