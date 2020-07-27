@@ -174,17 +174,25 @@ If you are an organization using [Microsoft Defender ATP E5](https://www.microso
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
-Your regular group policy doesn’t apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on.
+Your regular group policy doesn’t apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on. 
 
->[!NOTE]
->A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Microsoft Defender Antivirus features protected by tamper protection. To avoid any potential delays, we recommend that you remove settings that control Microsoft Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Microsoft Defender Antivirus settings. <br><br>
-> Sample Microsoft Defender Antivirus settings:<br>
-> Turn off Microsoft Defender Antivirus (**Note:** Only applies to devices that have not received the August 2020 update to Microsoft Defender Antivirus) <br>
-> Computer Configuration\Administrative Templates\Windows Components\Windows Defender\
-Value DisableAntiSpyware = 0 <br><br>
->Turn off real-time protection<br>
-Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\Real-time Protection\
-Value DisableRealtimeMonitoring = 0
+> [!NOTE]
+> A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Microsoft Defender Antivirus features protected by tamper protection.
+
+To avoid any potential delays, we recommend that you remove settings that control Microsoft Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Microsoft Defender Antivirus settings.
+
+Some sample Microsoft Defender Antivirus settings:
+
+- *Turn off Microsoft Defender Antivirus* <br />
+  Computer Configuration\Administrative Templates\Windows Components\Windows Defender\\<br />
+Value `DisableAntiSpyware` = 0
+
+  > [!IMPORTANT]
+  > The `DisableAntiSpyware` setting above is ignored in devices that have received the August 2020 update to Microsoft Defender Antivirus.
+
+- *Turn off real-time protection* <br />
+  Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\Real-time Protection\\<br />
+  Value `DisableRealtimeMonitoring` = 0
 
 ### For Microsoft Defender ATP E5, is configuring tamper protection in Intune targeted to the entire organization only?
 
