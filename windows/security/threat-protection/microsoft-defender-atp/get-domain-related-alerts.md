@@ -48,7 +48,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >- Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```console
 GET /api/domains/{domain}/alerts
 ```
 
@@ -73,6 +73,6 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```console
 GET https://api.securitycenter.windows.com/api/domains/client.wns.windows.com/alerts
 ```
