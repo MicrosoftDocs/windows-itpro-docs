@@ -160,5 +160,5 @@ When you click on the pending actions link, you'll be taken to the Action center
 
 - [View and approve remediation actions](manage-auto-investigation.md)
 
-- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)(https://aka.ms/MDATP-IR-Interactive-Guide)
+- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
  
