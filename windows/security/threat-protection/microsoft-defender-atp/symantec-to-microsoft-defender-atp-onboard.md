@@ -98,5 +98,5 @@ To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.
 
 - To learn more about Microsoft Defender ATP and how to configure or adjust various features and capabilities, see [Microsoft Defender ATP documentation](https://docs.microsoft.com/windows/security/threat-protection). 
 
-- [See the interactive guide: Manage devices with Microsoft Endpoint Manager](https://aka.ms/Manage_Devices-InteractiveGuide)(https://aka.ms/Manage_Devices-InteractiveGuide)
+- [See the interactive guide: Manage devices with Microsoft Endpoint Manager](https://aka.ms/Manage_Devices-InteractiveGuide)
  
