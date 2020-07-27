@@ -183,13 +183,6 @@ To avoid any potential delays, we recommend that you remove settings that contro
 
 Some sample Microsoft Defender Antivirus settings:
 
-- *Turn off Microsoft Defender Antivirus* <br />
-  Computer Configuration\Administrative Templates\Windows Components\Windows Defender\\<br />
-Value `DisableAntiSpyware` = 0
-
-  > [!IMPORTANT]
-  > The `DisableAntiSpyware` setting above is ignored in devices that have received the August 2020 update to Microsoft Defender Antivirus.
-
 - *Turn off real-time protection* <br />
   Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\Real-time Protection\\<br />
   Value `DisableRealtimeMonitoring` = 0

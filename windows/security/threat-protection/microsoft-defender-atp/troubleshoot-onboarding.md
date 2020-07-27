@@ -249,16 +249,16 @@ If the verification fails and your environment is using a proxy to connect to th
 
 ### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 
-> [!TIP]
+> [!IMPORTANT]
 > The following only applies to devices that have **not** yet received the August 2020 update to Microsoft Defender Antivirus.
 >
-> The August 2020 update ensures that Microsoft Defender Antivirus cannot be disabled via a policy.
+> The update ensures that Microsoft Defender Antivirus cannot be disabled via a policy.
 
 **Problem**: The Microsoft Defender ATP service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 or error 1058 when trying to start the service.
 
-**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
+**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
@@ -269,12 +269,13 @@ If the verification fails and your environment is using a proxy to connect to th
 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>`
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
+
+> [!IMPORTANT]
+> The `disableAntiSpyware` setting is discontinued and will be ignored, as of the August 2020 update to Microsoft Defender Antivirus.
+
 - After clearing the policy, run the onboarding steps again.
 
-- You can also check the following registry key values to verify that the policy is disabled:
-
-  1. Open the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-  2. Ensure that the value `DisableAntiSpyware` is not present.
+- You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
