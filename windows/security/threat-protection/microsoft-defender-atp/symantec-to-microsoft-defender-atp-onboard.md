@@ -97,6 +97,3 @@ To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 
 - To learn more about Microsoft Defender ATP and how to configure or adjust various features and capabilities, see [Microsoft Defender ATP documentation](https://docs.microsoft.com/windows/security/threat-protection). 
-
-- [See the interactive guide: Manage devices with Microsoft Endpoint Manager](https://aka.ms/Manage_Devices-InteractiveGuide)
- 
