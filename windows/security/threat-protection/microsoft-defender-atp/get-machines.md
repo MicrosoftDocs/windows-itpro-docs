@@ -24,7 +24,7 @@ ms.topic: article
 
 
 ## API description
-Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
+Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```healthStatus```, ```osPlatform```, ```riskScore``` and ```rbacGroupId```.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
