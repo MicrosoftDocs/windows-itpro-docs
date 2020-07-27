@@ -49,7 +49,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}
 ```
 
@@ -76,7 +76,7 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
 ```
 
@@ -85,7 +85,7 @@ GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
