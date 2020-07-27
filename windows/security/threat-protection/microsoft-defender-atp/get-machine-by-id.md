@@ -28,7 +28,7 @@ Retrieves specific [Machine](machine.md) by its device ID or computer name.
 
 
 ## Limitations
-1. You can get devices last seen in the past 30 days.
+1. You can get devices last seen according to your configured retention policy.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
