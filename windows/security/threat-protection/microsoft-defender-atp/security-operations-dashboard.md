@@ -100,7 +100,7 @@ You can view the overall number of automated investigations from the last 30 day
 
 
 ## Automated investigations statistics
-This tile shows statistics related to automated investigations in the last 30 days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigation to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
+This tile shows statistics related to automated investigations in the last seven days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigation to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
 
 ![Image of automated investigations statistics](images/atp-automated-investigations-statistics.png)
 
