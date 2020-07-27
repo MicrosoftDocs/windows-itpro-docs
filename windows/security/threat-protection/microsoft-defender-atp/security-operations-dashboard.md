@@ -104,7 +104,7 @@ This tile shows statistics related to automated investigations in the last seven
 
 ![Image of automated investigations statistics](images/atp-automated-investigations-statistics.png)
 
-You can click on **Automated investigations**, **Remidated investigations**, and **Alerts investigated** to navigate to the **Investigations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
+You can click on **Automated investigations**, **Remediated investigations**, and **Alerts investigated** to navigate to the **Investigations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
 
 ## Users at risk
 The tile shows you a list of user accounts with the most active alerts and the number of alerts seen on high, medium, or low alerts. 
