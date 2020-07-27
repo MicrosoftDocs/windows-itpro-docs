@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Edge Group Legacy Policy configuration options # < 60 chars
-summary: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Learn how to deploy and configure group policies in Microsoft Edge Legacy on Windows 10. Some of the features coming to Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. # < 160 chars
+summary: Learn how to deploy and configure group policies in Microsoft Edge Legacy on Windows 10. Some of the features coming to Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. # < 160 chars
 
 metadata:
   title: Microsoft Edge Group Legacy Policy configuration options # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -25,6 +25,8 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: /DeployEdge
           - text: Latest group policies and features added to Microsoft Edge
             url: /microsoft-edge/deploy/change-history-for-microsoft-edge
       - linkListType: overview
