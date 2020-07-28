@@ -114,7 +114,7 @@ Application Guard may not work correctly on NTFS compressed volumes. If this iss
 ### Why am I getting the error message ("ERR_NAME_NOT_RESOLVED") after not being able to reach PAC file?
 
 This is a known issue. To mitigate this you need to create two firewall rules.
-For guidance on how to create a firewall rule via GP see:
+For guidance on how to create a firewall rule by using group policy, see:
 
 https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule
 https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security
@@ -125,18 +125,18 @@ First rule (DHCP Server):
 3. Protocol UDP
 4. Port 67
 
-Second rule (DHCP Client): Same as the above, but scoped to local port 68
-
-In the UI go through the following steps:
-1.	Right click on inbound rules, create a new rule
-2.	Choose “custom rule”
-3.	Program path: “%SystemRoot%\System32\svchost.exe"
-4.	Protocol Type: UDP, Specific ports: 67, Remote port: any
-5.	Any IP addresses
-6.	Allow the connection
-7.	All profiles
-8.	The rule should be present in the UI. Right click on the rule > properties
-9.	“Programs and services” tab, Under the Services section click on “settings”. Choose “Apply to this Service” and select “Internet Connection Sharing (ICS) Shared Access”
+Second rule (DHCP Client)
+This is the same as the first rule, but scoped to local port 68.
+In the Microsoft Defender Firewall user interface go through the following steps:
+1.	Right click on inbound rules, create a new rule.
+2.	Choose **custom rule**.
+3.	Program path: **%SystemRoot%\System32\svchost.exe**.
+4.	Protocol Type: UDP, Specific ports: 67, Remote port: any.
+5.	Any IP addresses.
+6.	Allow the connection.
+7.	All profiles.
+8.	The new rule should show up in the user interface. Right click on the **rule** > **properties**.
+9.	In the **Programs and services** tab, Under the **Services** section click on **settings**. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
