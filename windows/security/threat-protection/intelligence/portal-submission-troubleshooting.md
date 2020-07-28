@@ -41,10 +41,13 @@ This process requires a global or application admin in the tenant.
 > This is currently a preview feature.
 
 Azure Active Directory admins will need to allow for users to request admin consent to apps. Verify the setting is configured to **Yes** in [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/).
+![Enterprise applications user settings](images/msi-enterprise-app-user-setting.jpg)
 
 More information is available in [Configure Admin consent workflow](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
 Once this setting is verified, users can go through the enterprise customer sign-in at [Microsoft security intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission), and submit a request for admin consent, including justification.
+
+![Contoso sign in flow](images/msi-contoso-approval-required.png)
 
 Admin will be able to review and approve the application permissions [Azure admin consent requests](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/).
 
@@ -52,23 +55,29 @@ After providing consent, all users in the tenant will be able to use the applica
   
 ## Option 2: Provide admin consent by authenticating the application as an admin 
 This process requires that global admins go through the Enterprise customer sign-in flow at [Microsoft security intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission).
+![Consent sign in flow](images/msi-microsoft-permission-required.jpg)
 Then, admins review the permissions and make sure to select **Consent on behalf of your organization**, and click **Accept**.
 
 All users in the tenant will now be able to use this application.
 
+## Option 3: Delete and re-add app permissions
 If neither of these options resolve the issue, try the following steps (as an admin):
 
 1. Remove previous configurations for the application. Go to [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/982e94b2-fea9-4d1f-9fca-318cda92f90b)
 and click **delete**.
-
+![Delete app permissions](images/msi-properties.png)
 2. Capture TenantID from [Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 
 3. Replace {tenant-id} with the specific tenant that needs to grant consent to this application in the URL below. Copy this URL into browser. The rest of the parameters are already completed. 
 ``https://login.microsoftonline.com/{tenant-id}/v2.0/adminconsent?client_id=f0cf43e5-8a9b-451c-b2d5-7285c785684d&state=12345&redirect_uri=https%3a%2f%2fwww.microsoft.com%2fen-us%2fwdsi%2ffilesubmission&scope=openid+profile+email+offline_access``
 
+![Permissions needed](images/msi-microsoft-permission-requested-your-organization.png)
+
 4. Review the permissions required by the application, and then click **Accept**. 
 
 5. Confirm the permissions are applied in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
+
+![Review that permissions are applied](images/msi-permissions.jpg)
 
 4. Sign in to [Microsoft security intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission) as an enterprise user with a non-admin account to see if you have access.
 
