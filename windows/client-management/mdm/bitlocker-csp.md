@@ -1075,15 +1075,15 @@ Value type is string. Supported operation is Execute. Request ID is expected as 
 > [!TIP]
 > Key rotation feature will only work when:
 >
-> For Operating system drives:
-> OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
+> - For Operating system drives:
+>    OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
 >
-> For Fixed data drives:
-> FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
+> - For Fixed data drives:
+>    FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
 >
 > Although not required, we recommend configuring:
-> OSActiveDirectoryBackup_Name to true
-> FDVActiveDirectoryBackup_Name to true
+> - OSActiveDirectoryBackup_Name to true
+> - FDVActiveDirectoryBackup_Name to true
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
