@@ -43,7 +43,7 @@ Microsoft Defender ATP for Android enables admins to configure custom indicators
 ## Configure web protection
 Microsoft Defender ATP for Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Endpoint Manager Admin center.
 
-For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#configure-web-protection-on-devices-that-run-android).
+For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Related topics
 - [Overview of Microsoft Defender ATP for Android](microsoft-defender-atp-android.md)
