@@ -27,6 +27,9 @@ ms.author: dansimp
 
 This event generates every time a new scheduled task is created.
 
+
+
+
 text
 
 <br clear="all">
