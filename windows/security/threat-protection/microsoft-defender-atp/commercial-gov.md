@@ -39,10 +39,15 @@ The following OS versions are supported:
 >[!NOTE]
 >A patch must be deployed before device onboarding in order to configure Microsoft Defender ATP to the correct environment.
 
-The following OS versions are not supported:
+The following OS versions are supported via Azure Security Center:
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
+
+The following OS versions are not supported:
+- Windows Server 2008 R2 SP1 (standalone, not via ASC)
+- Windows Server 2012 R2 (standalone, not via ASC)
+- Windows Server 2016 (standalone, not via ASC)
 - Windows Server, version 1803
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
@@ -51,6 +56,9 @@ The following OS versions are not supported:
 - macOS
 
 The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government (GCC High) customers, there are some capabilities not yet available that we'd like to highlight. These are the known gaps as of August 2019:
+
+## Threat Analytics
+Not currently available.
 
 ## Threat & Vulnerability Management
 Not currently available.
