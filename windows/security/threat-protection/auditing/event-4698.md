@@ -19,16 +19,15 @@ ms.author: dansimp
 -   Windows 10
 -   Windows Server 2016
 
-
 <img src="images/event-4698.png" alt="Event 4698 illustration" width="361" height="555" hspace="10" align="left" />
 
-***Subcategory:***&nbsp;[Audit Other Object Access Events](audit-other-object-access-events.md)
+***Subcategory:***&nbsp;[Audit Other Object Access Events](audit-other-object-access-events.md)   
 
 ***Event Description:***
 
 This event generates every time a new scheduled task is created.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+text
 
 <br clear="all">
 
