@@ -115,9 +115,8 @@ Application Guard may not work correctly on NTFS compressed volumes. If this iss
 
 This is a known issue. To mitigate this you need to create two firewall rules.
 For guidance on how to create a firewall rule by using group policy, see:
-
-https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule
-https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security
+- [Create an inbound icmp rule](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
+- [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
 
 First rule (DHCP Server):
 1. Program path: %SystemRoot%\System32\svchost.exe
