@@ -136,7 +136,7 @@ Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
 As Microsoft Defender ATP for Android is deployed via managed Google Play,
 updates to the app are automatic via Google Play.
 
-Currently only Work Profile enrolled devices are supported for deployment.
+Currently only Personal devices with Work Profile enrolled  are supported for deployment. 
 
 
 >[!NOTE]

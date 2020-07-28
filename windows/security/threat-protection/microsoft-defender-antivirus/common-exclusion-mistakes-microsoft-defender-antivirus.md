@@ -18,9 +18,10 @@ manager: dansimp
 
 # Common mistakes to avoid when defining exclusions
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
-See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md) for more information.
 
-Also, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
+This topic describes some common mistake that you should avoid when defining exclusions. 
+
+Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## Excluding certain trusted items
 There are certain files, file types, folders, or processes that you should not exclude from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.

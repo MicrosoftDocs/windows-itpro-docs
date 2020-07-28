@@ -86,7 +86,7 @@ ms.topic: conceptual
 - Fixed an issue where Microsoft Defender ATP for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  $ mdatp --connectivity-test
+  mdatp --connectivity-test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

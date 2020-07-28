@@ -73,7 +73,6 @@ landingContent:
           - text: Overview of Windows Autopilot
             url:  windows-autopilot/windows-autopilot.md
 
-
   # Card
   - title: Support remote work
     linkLists:
