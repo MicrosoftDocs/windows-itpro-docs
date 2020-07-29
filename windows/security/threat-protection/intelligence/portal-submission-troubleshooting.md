@@ -34,7 +34,7 @@ This process requires a global or application admin in the tenant.
 
 ![grant consent image](images/msi-grant-admin-consent.jpg)
 
-  4. If the administrator receives an error while attempting to provide consent manually, try either [Option 1](#Option-1-Approve-enterprise-application-permissions-by-user-request) or [Option 2](#Option-2-Provide-admin-consent-by-authenticating-the-application-as-an-admin) as possible workarounds.
+  4. If the administrator receives an error while attempting to provide consent manually, try either [Option 1](#option-1-approve-enterprise-application-permissions-by-user-request) or [Option 2](#option-2-provide-admin-consent-by-authenticating-the-application-as-an-admin) as possible workarounds.
   
 ## Option 1 Approve enterprise application permissions by user request
 > [!Note]
