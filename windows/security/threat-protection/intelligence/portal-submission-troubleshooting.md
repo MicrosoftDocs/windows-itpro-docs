@@ -56,6 +56,7 @@ After providing consent, all users in the tenant will be able to use the applica
 ## Option 2 Provide admin consent by authenticating the application as an admin 
 This process requires that global admins go through the Enterprise customer sign-in flow at [Microsoft security intelligence](https://www.microsoft.com/wdsi/filesubmission).
 ![Consent sign in flow](images/msi-microsoft-permission-required.jpg)
+
 Then, admins review the permissions and make sure to select **Consent on behalf of your organization**, and click **Accept**.
 
 All users in the tenant will now be able to use this application.
