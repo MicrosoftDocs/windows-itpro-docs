@@ -16,7 +16,7 @@ ms.topic: article
 search.appverid: met150
 ---
 
-# Resolving malware submission errors caused by Administrator block
+# Troubleshooting malware submission errors caused by administrator block
 In some instances, an administrator block might cause submission issues when you try to submit a potentially infected file to the [Microsoft Security intelligence website](https://www.microsoft.com/wdsi) for analysis. The following process shows how to resolve this.
 
 ## Review your settings
