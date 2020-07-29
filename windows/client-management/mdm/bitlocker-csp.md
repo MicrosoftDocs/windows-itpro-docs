@@ -985,7 +985,7 @@ If you want to disable this policy use the following SyncML:
 
 <!--Policy-->
 
-<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+<a href="" id="configurerecoverypassword"></a>**ConfigureRecoveryPasswordRotation**  
 
 <!--Description-->
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
@@ -1077,13 +1077,10 @@ Value type is string. Supported operation is Execute. Request ID is expected as 
 >
 > - For Operating system drives:
 >    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
->
+>    - OSActiveDirectoryBackup_Name is set to true
 > - For Fixed data drives:
 >    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
->
-> Although not required, we recommend configuring:
-> - OSActiveDirectoryBackup_Name to true
-> - FDVActiveDirectoryBackup_Name to true
+>    - FDVActiveDirectoryBackup_Name is set to true
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
