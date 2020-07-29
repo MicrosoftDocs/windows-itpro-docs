@@ -58,7 +58,7 @@ Additionally, if a data drive is password-protected, it can be accessed by a FIP
 
 We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode.
 
-For a complete list of Microsoft-recommended configuration settings, see [Windows security baselines](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines). For more information about Windows and FIPS 140-2, see [FIPS 140 Validation](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation).
+For a complete list of Microsoft-recommended configuration settings, see [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines). For more information about Windows and FIPS 140-2, see [FIPS 140 Validation](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation).
 
 ### Location
 
