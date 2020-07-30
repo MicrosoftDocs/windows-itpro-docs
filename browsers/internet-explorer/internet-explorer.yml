@@ -38,8 +38,6 @@ landingContent:
             url: https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
           - text: Enterprise Mode Site List Manager (schema, v.2)
             url: https://www.microsoft.com/download/details.aspx?id=49974
-          - text: Web Application Compatibility Lab Kit
-            url: /internet-explorer/web-app-compat-lab-kit
           - text: Cumulative security updates for Internet Explorer 11
             url: https://www.catalog.update.microsoft.com/Search.aspx?q=cumulative%20security%20update%20for%20internet%20explorer%2011
       - linkListType: learn
@@ -157,7 +155,7 @@ landingContent:
           - text: Support options for Microsoft Partners
             url: https://mspartner.microsoft.com/Pages/Support/get-support.aspx
           - text: Microsoft Services Premier Support
-            url: https://www.microsoft.com/microsoftservices/support.aspx
+            url: https://www.microsoft.com/en-us/microsoftservices/support.aspx
           - text: Microsoft Small Business Support Center
             url: https://smallbusiness.support.microsoft.com/product/internet-explorer
           - text: General support
