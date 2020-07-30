@@ -117,9 +117,9 @@ If the peripherals do have class drivers provided by Windows 10, please use thes
 
 ### My system's Kernel DMA Protection is off. Can DMA-remapping for a specific device be turned on?
 
-Yes. DMA remapping for a specific device can be turned on independent from Kernel DMA Protection. (i.e. if the driver opts in and VT-d is turned on, then DMA remapping will be enabled for the devices driver, even if Kernel DMA Protection is off).
+Yes. DMA remapping for a specific device can be turned on independent from Kernel DMA Protection. For example, if the driver opts in and VT-d (Virtualization Technology for Directed I/O) is turned on, then DMA remapping will be enabled for the devices driver even if Kernel DMA Protection is turned off.
 
-Kernel DMA Protection is a policy that allows/disallows devices to perform DMA, based on their remapping state/capabilities.
+Kernel DMA Protection is a policy that allows or blocks devices to perform DMA, based on their remapping state and capabilities.
 
 ### Do Microsoft drivers support DMA-remapping?
 In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA Remapping.
