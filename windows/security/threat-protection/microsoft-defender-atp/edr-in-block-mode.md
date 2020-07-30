@@ -18,43 +18,43 @@ ms.custom:
 ms.collection: 
 ---
 
-# Endpoint detection and response (EDR) in block mode
+# Allow or block file
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-## What is EDR in block mode?
+## What is Allow or block file?
 
-When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is enabled, Microsoft Defender ATP leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post-breach. 
+When Allow or block file is enabled, Microsoft Defender ATP leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors that are observed through post-breach protection. Allow or block file works behind the scenes to remediate malicious artifacts that are detected post-breach. 
 
 > [!NOTE]
-> EDR in block mode is currently in private preview. To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
+> To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#check-activity-details-in-action-center).
+When Allow or block file is turned on, and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as **Blocked** or **Remediated** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#check-activity-details-in-action-center).
 
-The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
+The following image shows an instance of unwanted software that was detected and blocked through Allow or block file:
 
 :::image type="content" source="images/edr-in-block-mode.jpg" alt-text="EDR in block mode detected something":::
 
 
-## Enable EDR in block mode
+## Enable Allow or block file
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
+> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on Allow or block file.
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
 
-3. Turn on **EDR in block mode**.
+3. Turn on **Allow or block file**.
 
 > [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
+> Allow or block file can be turned on only in the Microsoft Defender Security Center. You cannot use registry keys, Intune, or group policies to enable or disable EDR in block mode.
 
-## Requirements for EDR in block mode
+## Requirements for Allow or block file
 
 |Requirement  |Details  |
 |---------|---------|
@@ -71,13 +71,13 @@ The following image shows an instance of unwanted software that was detected and
 
 ## Frequently asked questions 
 
-### Will EDR in block mode have any impact on a user's antivirus protection? 
+### Will Allow or block file have any impact on a user's antivirus protection? 
 
-No. EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
+No. Allow or block file does not affect third-party antivirus protection running on users' devices. Allow or block file kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. Allow or block file works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for Allow or block file to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
