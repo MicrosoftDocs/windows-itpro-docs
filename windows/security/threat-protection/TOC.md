@@ -325,7 +325,7 @@
 ###### [Consult a threat expert](microsoft-defender-atp/respond-file-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
-###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
+###### [[Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)](#deep-analysismicrosoft-defender-atprespond-file-alertsmddeep-analysis)
 ###### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
 
