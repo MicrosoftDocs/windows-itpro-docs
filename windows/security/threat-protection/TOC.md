@@ -825,7 +825,7 @@
 ####### [Event 4765 S: SID History was added to an account.](auditing/event-4765.md)
 ####### [Event 4766 F: An attempt to add SID History to an account failed.](auditing/event-4766.md)
 ####### [Event 4767 S: A user account was unlocked.](auditing/event-4767.md)
-####### [Event 4780 S: The ACL was set on accounts which are members of administrators groups.](auditing/event-4780.md)
+####### [Event 4780 S: The ACL was set on accounts that are members of administrators groups.](auditing/event-4780.md)
 ####### [Event 4781 S: The name of an account was changed.](auditing/event-4781.md)
 ####### [Event 4794 S, F: An attempt was made to set the Directory Services Restore Mode administrator password.](auditing/event-4794.md)
 ####### [Event 4798 S: A user's local group membership was enumerated.](auditing/event-4798.md)
