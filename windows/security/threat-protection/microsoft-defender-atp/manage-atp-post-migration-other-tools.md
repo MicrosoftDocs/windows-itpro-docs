@@ -41,7 +41,13 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 |---------|---------|
 |**Manage Microsoft Defender Antivirus** <br/><br/>*View status of antimalware protection, configure preferences for antivirus scans & updates, and make other changes to your antivirus protection.*    |[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Use PowerShell cmdlets to enable cloud-delivered protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
 |**Configure exploit protection** to mitigate threats on your organization's devices<br/><br/> *We recommend using exploit protection in [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection#powershell) at first. That way, you can see how exploit protection affects apps your organization is using.*     | [Customize exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection)<br/><br/>[PowerShell cmdlets for exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection#powershell-reference)        |
-|**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) |
+|**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI). |
+|**Enable Network Protection** with PowerShell <br/><br/>*You can use PowerShell to enable Network Protection.* |[Turn on Network Protection with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection#powershell) |
+|**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) is also referred to as antiransomware protection.* |[Enable controlled folder access with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#powershell) |
+|**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
+|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps) |
+
+
 
 
 ## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
@@ -61,6 +67,16 @@ On an individual device, you can run a scan, start diagnostic tracing, check for
 |Task  |Resources to learn more  |
 |---------|---------|
 |**Manage Microsoft Defender Antivirus**  |[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
+
+## Configure your Microsoft Defender Security Center
+
+If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. 
+
+You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+
+- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)
+
+- [Endpoint protection: Microsoft Defender Security Center](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 
 ## Next steps
