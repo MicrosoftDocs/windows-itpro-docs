@@ -34,6 +34,8 @@
 
 ## [Submit files for analysis](submission-guide.md)
 
+## [Troubleshoot malware submission](portal-submission-troubleshooting.md)
+
 ## [Safety Scanner download](safety-scanner-download.md)
 
 ## [Industry collaboration programs](cybersecurity-industry-partners.md)

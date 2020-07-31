@@ -34,7 +34,7 @@ This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. 
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 In addition, for JAMF deployment, you need to be familiar with JAMF administration tasks, have a JAMF tenant, and know how to deploy packages. This includes having a properly configured distribution point. JAMF has many ways to complete the same task. These instructions provide an example for most common processes. Your organization might use a different workflow.
 
@@ -45,7 +45,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 | Step | Sample file names | BundleIdentifier |
 |-|-|-|
 | [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
+| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#property-list-for-jamf-configuration-profile-1)<br/><br/> **Note:** If you are planning to run a third party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.plist | com.microsoft.wdav |
 | [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#notification-settings) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.wdav.tray |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#jamf) | MDATP_Microsoft_AutoUpdate.mobileconfig | com.microsoft.autoupdate2 |
 | [Grant Full Disk Access to Microsoft Defender ATP](#privacy-preferences-policy-control) | Note: If there was one, MDATP_tcc_Catalina_or_newer.plist | com.microsoft.wdav.tcc |
@@ -67,11 +67,11 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash
-    $ ls -l
+    ls -l
     total 721160
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
     inflating: intune/kext.xml
@@ -208,7 +208,7 @@ Once the policy is applied, you'll see the Microsoft Defender ATP icon in the ma
 You can monitor policy installation on a device by following the JAMF log file:
 
 ```bash
-    $ tail -f /var/log/jamf.log
+    tail -f /var/log/jamf.log
     Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
     Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
     Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
@@ -221,7 +221,7 @@ You can monitor policy installation on a device by following the JAMF log file:
 You can also check the onboarding status:
 
 ```bash
-$ mdatp --health
+mdatp --health
 ...
 licensed                                : true
 orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
@@ -237,7 +237,7 @@ orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-$ mdatp --health healthy
+mdatp --health healthy
 ```
 
 The above command prints "1" if the product is onboarded and functioning as expected.
