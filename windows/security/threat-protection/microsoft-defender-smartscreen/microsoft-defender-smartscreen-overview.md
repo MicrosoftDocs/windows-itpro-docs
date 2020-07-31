@@ -66,6 +66,9 @@ When submitting Microsoft Defender Smartscreen products, make sure to select **M
 
 ## Viewing Microsoft Defender SmartScreen anti-phishing events
 
+> [!NOTE]
+> No Smartscreen events will be logged when using  Microsoft Edge version 77 or later.
+
 When Microsoft Defender SmartScreen warns or blocks a user from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/scriptcenter/dd565657(v=msdn.10).aspx).
 
 ## Viewing Windows event logs for Microsoft Defender SmartScreen
