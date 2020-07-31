@@ -22,7 +22,7 @@ ms.date: 06/13/2018
 **Applies to:**
 
 - Windows 10
-- Windows Server 2016 and above
+- Windows Server 2019
 
 Creating and maintaining application execution control policies has always been challenging, and finding ways to address this issue has been a frequently-cited request for customers of AppLocker and Windows Defender Application Control (WDAC).
 This is especially true for enterprises with large, ever changing software catalogs.
