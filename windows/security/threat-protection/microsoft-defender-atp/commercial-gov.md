@@ -54,6 +54,7 @@ The following OS versions are not supported:
 - Windows 8 Pro
 - Windows 8.1 Enterprise
 - macOS
+- Linux
 
 The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government (GCC High) customers, there are some capabilities not yet available that we'd like to highlight. These are the known gaps as of August 2019:
 
