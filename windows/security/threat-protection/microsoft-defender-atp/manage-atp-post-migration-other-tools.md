@@ -44,11 +44,8 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 |**Configure attack surface reduction rules** with PowerShell <br/><br/>*You can use PowerShell to exclude files and folders from attack surface reduction rules.* |[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI). |
 |**Enable Network Protection** with PowerShell <br/><br/>*You can use PowerShell to enable Network Protection.* |[Turn on Network Protection with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection#powershell) |
 |**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) is also referred to as antiransomware protection.* |[Enable controlled folder access with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#powershell) |
-|**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
-|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps) |
-
-
-
+|**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
+|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker PowerShell reference guide](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps) |
 
 ## Configure Microsoft Defender ATP with Windows Management Instrumentation (WMI)
 
@@ -57,7 +54,7 @@ WMI is a scripting interface that allows you to retrieve, modify, and update set
 |Task  |Resources to learn more  |
 |---------|---------|
 |**Enable cloud-delivered protection** on a device    |[Use Windows Management Instruction (WMI) to enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
-|**Retrieve, modify, and update settings** for Microsoft Defender Antivirus     | [Use WMI to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[Review the list of available WMI classes and example scripts](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)    |
+|**Retrieve, modify, and update settings** for Microsoft Defender Antivirus     | [Use WMI to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[Review the list of available WMI classes and example scripts](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>Also see the archived [Windows Defender WMIv2 Provider reference information](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
 
 
 ## Configure Microsoft Defender ATP with Microsoft Malware Protection Command Line Utility (MPCmdRun.exe)
