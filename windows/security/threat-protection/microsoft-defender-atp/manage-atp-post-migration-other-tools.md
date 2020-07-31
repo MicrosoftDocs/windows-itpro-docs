@@ -57,9 +57,9 @@ WMI is a scripting interface that allows you to retrieve, modify, and update set
 |**Retrieve, modify, and update settings** for Microsoft Defender Antivirus     | [Use WMI to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[Review the list of available WMI classes and example scripts](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>Also see the archived [Windows Defender WMIv2 Provider reference information](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
 
 
-## Configure Microsoft Defender ATP with Microsoft Malware Protection Command Line Utility (MPCmdRun.exe)
+## Configure Microsoft Defender ATP with Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
-On an individual device, you can run a scan, start diagnostic tracing, check for security intellligence updates, and more using the mpcmdrun.exe command line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
+On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 
 |Task  |Resources to learn more  |
 |---------|---------|
