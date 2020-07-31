@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 This topic describes deploying Microsoft Defender ATP for Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
-device](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/aka.ms/enrollAndroid).
+device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
 
 
 > [!NOTE]
@@ -45,7 +45,7 @@ This topic describes how to deploy Microsoft Defender ATP for Android on Intune 
 Download the onboarding package from Microsoft Defender Security Center.
 
 1. In [Microsoft Defender Security
-Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/securitycenter.microsoft.com), go to **Settings** \> **Machine Management** \> **Onboarding**.
+Center](https://securitycenter.microsoft.com), go to **Settings** \> **Machine Management** \> **Onboarding**.
 
 2. In the first drop-down, select **Android** as the Operating system.
 
@@ -283,7 +283,7 @@ and then your onboarding should be successful.
 
 4. At this stage the device is successfully onboarded onto Microsoft Defender
 ATP for Android. You can verify this on the [Microsoft Defender Security
-Center](https://microsoft.sharepoint.com/teams/WDATPIndia/Shared%20Documents/General/PM%20Docs/External%20Documentation/securitycenter.microsoft.com)
+Center](https://securitycenter.microsoft.com)
 by navigating to the **Devices** page.
 
     ![Image of Microsoft Defender ATP portal](images/9fe378a1dce0f143005c3aa53d8c4f51.png)

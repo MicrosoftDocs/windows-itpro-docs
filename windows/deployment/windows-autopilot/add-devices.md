@@ -31,13 +31,19 @@ When you purchase devices directly from an OEM, that OEM can automatically regis
 
 Before an OEM can register devices on behalf of an organization, the organization must grant the OEM permission to do so.  This process is initiated by the OEM, with approval granted by an Azure AD global administrator from the organization.  See the "Customer Consent" section of the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
+> [!Note]
+> While the hardware hashes are generated as part of the OEM device manufacturing process, these should not be provided directly to customers or CSP partners.  Instead, the OEM should register devices on the customer's behalf.  In cases where devices are being registered by CSP partners, OEMs may provide PKID information to those partners to support the device registration process.
+
 ## Reseller, distributor, or partner registration
 
-Customers may purchase devices from resellers, distributors, or other partners.  As long as these resellers, distributors, and partners are part of the [Cloud Solution Partners (CSP) program](https://partner.microsoft.com/en-us/cloud-solution-provider), they too can register devices on behalf of the customer.  
+Customers may purchase devices from resellers, distributors, or other partners.  As long as these resellers, distributors, and partners are part of the [Cloud Solution Partners (CSP) program](https://partner.microsoft.com/cloud-solution-provider), they too can register devices on behalf of the customer.  
 
-As with OEMs, CSP partners must be granted permission to register devices on behalf of an organization.  This follows the process described on the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization).  The CSP partner initiates a request to establish a relationship with the organization, with approval granted by a global administrator from the organization.  Once approved, CSP partners add devices using [Partner Center](https://partner.microsoft.com/en-us/pcv/dashboard/overview), either directly through the web site or via available APIs that can automate the same tasks.
+As with OEMs, CSP partners must be granted permission to register devices on behalf of an organization.  This follows the process described on the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization).  The CSP partner initiates a request to establish a relationship with the organization, with approval granted by a global administrator from the organization.  Once approved, CSP partners add devices using [Partner Center](https://partner.microsoft.com/pcv/dashboard/overview), either directly through the web site or via available APIs that can automate the same tasks.
 
 Windows Autopilot does not require delegated administrator permissions when establishing the relationship between the CSP partner and the organization.  As part of the approval process performed by the global administrator, the global administrator can choose to uncheck the "Include delegated administration permissions" checkbox.
+
+> [!Note]
+> While resellers, distributors, or partners could boot each new Windows device to obtain the hardware hash (for purposes of providing them to customers or direct registration by the partner), this is not recommended.  Instead, these partners should register devices using the PKID information obtained from the device packaging (barcode) or obtained electronically from the OEM or upstream partner (e.g. distributor).
 
 ## Automatic registration of existing devices
 
@@ -50,6 +56,9 @@ Also note that when using the [Windows Autopilot for existing devices](https://d
 ## Manual registration
 
 To perform manual registration of a device, you must first capture its hardware ID (also known as a hardware hash).  Once this process has completed, the resulting hardware ID can be uploaded to the Windows Autopilot service.  Because this process requires booting the device into Windows 10 in order to obtain the hardware ID, this is intended primarily for testing and evaluation scenarios.
+
+> [!Note]
+> Customers can only register devices with a hardware hash.  Other methods (PKID, tuple) are available through OEMs or CSP partners as described in the previous sections.
 
 ## Device identification
 
