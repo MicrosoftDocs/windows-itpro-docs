@@ -27,7 +27,7 @@ ms.topic: conceptual
 
 Threat and vulnerability management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
-The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, and threat insights.
+The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
@@ -52,7 +52,7 @@ Go to the threat and vulnerability management navigation menu and select **Weakn
 1. Go to the global search drop-down menu.
 2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
 ![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates.
+3. Select the CVE and a flyout panel opens up with more information, including the vulnerability description, details, threat insights, and exposed devices.
 
 To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
 
@@ -60,11 +60,11 @@ To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, the
 
 If the **Exposed Devices** column shows 0, that means you are not at risk. If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization.
 
-![tvm-breach-insights](images/tvm-weaknesses-overview.png)
+![Weaknesses landing page.](images/tvm-weaknesses-overview.png)
 
 ### Breach and threat insights
 
-You can view the related breach and threat insights in the **Threat** column when the icons are colored red.
+View related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
@@ -76,6 +76,10 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 ![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
+### Gain vulnerability insights
+
+If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices. 
+
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
 ### Top vulnerable software in the dashboard
@@ -84,9 +88,9 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
-2. Select the software that you want to investigate to go a drill down page.
+2. Select the software you want to investigate to go to a drill down page.
 3. Select the **Discovered vulnerabilities** tab.
-4. Select the vulnerability that you want to investigate. A flyout panel will appear with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+4. Select the vulnerability you want to investigate for more information on vulnerability details
 
     ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
 
