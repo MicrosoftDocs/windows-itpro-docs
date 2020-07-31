@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Threat and vulnerability management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
+Threat and vulnerability management uses the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
@@ -50,15 +50,15 @@ Go to the threat and vulnerability management navigation menu and select **Weakn
 ### Vulnerabilities in global search
 
 1. Go to the global search drop-down menu.
-2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you are looking for.
+2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you're looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you're looking for.
 ![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
 3. Select the CVE and a flyout panel opens up with more information, including the vulnerability description, details, threat insights, and exposed devices.
 
-To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search.
+To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then select search.
 
 ## Weaknesses overview
 
-If the **Exposed Devices** column shows 0, that means you are not at risk. If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization.
+If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization. If the **Exposed Devices** column shows 0, that means you are not at risk.
 
 ![Weaknesses landing page.](images/tvm-weaknesses-overview.png)
 
@@ -78,7 +78,11 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 ### Gain vulnerability insights
 
-If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices. 
+If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices.
+
+The "OS Feature" category is shown in relevant scenarios.
+
+ ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
 
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
@@ -106,7 +110,7 @@ View related weaknesses information in the device page.
 3. The device page will open with details and response options for the device you want to investigate.
 4. Select **Discovered vulnerabilities**.
 
-    [Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
+    ![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -114,7 +118,9 @@ View related weaknesses information in the device page.
 
 Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the device page) that shows the detection logic and source.
 
-![Detection Logic example which lists the software detected on the device and the KBs.](images/cve-detection-logic.png)
+The "OS Feature" category is also shown in relevant scenarios. For example, a CVE affects devices that run a vulnerable OS, only if a specific OS component is enabled on these devices. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll attach this CVE only to the Windows Server 2019 devices with DNS capability enabled in their OS.
+
+![Detection Logic example which lists the software detected on the device and the KBs.](images/tvm-cve-detection-logic.png)
 
 ## Report inaccuracy
 
