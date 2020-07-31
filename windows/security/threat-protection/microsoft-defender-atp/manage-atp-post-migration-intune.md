@@ -44,7 +44,7 @@ This article describes how to find your Microsoft Defender ATP settings in Intun
 
 ## Configure Microsoft Defender ATP with Intune
 
-The following table lists various tasks you can perform to configure Microsoft Defender ATP with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed from there, at your pace.
+The following table lists various tasks you can perform to configure Microsoft Defender ATP with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed from there.
 
 |Task  |Resources to learn more  |
 |---------|---------|
