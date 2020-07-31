@@ -115,7 +115,7 @@
 #### [Configure next-generation protection]()
 ##### [Configure Microsoft Defender Antivirus features](microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features.md)
    
-##### [Utilize Microsoft cloud-delivered protection](microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
+##### [Use Microsoft cloud-delivered protection](microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
 ###### [Enable cloud-delivered protection](microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md)
 ###### [Specify the cloud-delivered protection level](microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ###### [Configure and validate network connections](microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus.md)
