@@ -1,6 +1,6 @@
 ---
 title: Manage Microsoft Defender ATP using Group Policy Objects
-description: Learn how to manage Microsoft Defender ATP with PowerShell
+description: Learn how to manage Microsoft Defender ATP with Group Policy Objects
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
