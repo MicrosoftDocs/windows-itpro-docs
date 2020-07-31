@@ -23,7 +23,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
-> We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to manage your organization's threat protection features for devices (also referred to as endpoints). See [Manage Microsoft Defender ATP with Intune](manage-atp-post-migration-intune.md). 
+> We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction). **[Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)**. 
 
 You can use Group Policy Objects in Azure Active Directory Domain Services to manage some settings in Microsoft Defender ATP.
 
@@ -37,6 +37,17 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure Microsoft Defender Antivirus** <br/><br/>*Configure antivirus features & capabilities, including policy settings, exclusions, remediation, and scheduled scans on your organization's devices (also referred to as endpoints).*   |[Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[Use Group Policy to enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
 |**Manage your organization's attack surface reduction rules** <br/><br/>*Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on a users' devices.* |[Customize attack surface reduction rules with Group Policy Objects](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
 |**Manage exploit protection settings**<br/><br/>*You can customize your exploit protection settings, import a configuration file, and then use Group Policy to deploy that configuration file.*  |[Customize exploit protection settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection) <br/><br/>[Import, export, and deploy exploit protection configurations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml)<br/><br/>[Use Group Policy to distribute the configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/>*We recommend using [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.* |  |
+
+## Configure your Microsoft Defender Security Center
+
+If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. 
+
+You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+
+- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)
+
+- [Endpoint protection: Microsoft Defender Security Center](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 

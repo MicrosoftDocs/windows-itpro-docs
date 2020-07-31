@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) to manage your organization's threat protection features for devices (also referred to as endpoints). You can also use [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) to manage some settings in Microsoft Defender ATP. Both Configuration Manager and Microsoft Intune are part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), along with Desktop Analytics, and other features & capabilities. 
+We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). You can also use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) (Configuration Manager) to manage some settings in Microsoft Defender ATP. Both Configuration Manager and Microsoft Intune are part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), along with Desktop Analytics, and other features & capabilities. 
 - [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)
 - [Co-manage Microsoft Defender ATP on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 
@@ -34,6 +34,18 @@ We recommend using [Microsoft Intune](https://docs.microsoft.com/mem/intune/fund
 |**Use Configuration Manager to onboard devices** to Microsoft Defender ATP <br/><br/> *If you have devices (or endpoints) not already onboarded to Microsoft Defender ATP, you can do that with Configuration Manager.*   |[Onboard to Microsoft Defender ATP with Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager)      |
 |**Manage antimalware policies and Windows Firewall security** for client computers (endpoints)<br/><br/>*Configure endpoint protection features, including Microsoft Defender ATP, exploit protection, application control, antimalware, firewall settings, and more.*  |[Configuration Manager: Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection)       |
 |**Choose methods for updating antimalware updates** on your organization's devices <br/><br/>*With Endpoint Protection in Configuration Manager, you can choose from several methods to keep antimalware definitions up to date on your organization's devices.* |[Configure definition updates for Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <br/><br/>[Use Configuration Manager to deliver definition updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr) |
+|**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/>*We recommend using [audit mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.* |[Turn on network protection with Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection#microsoft-endpoint-configuration-manager)  |
+|**Configure controlled folder access** to protect against ransomware <br/><br/>*Controlled folder access is also referred to as antiransomware protection.*   |[Endpoint protection: Controlled folder access](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[Enable controlled folder access in Microsoft Endpoint Configuration Manage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#microsoft-endpoint-configuration-manager) |
+
+## Configure your Microsoft Defender Security Center
+
+If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. 
+
+You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+
+- [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)
+
+- [Endpoint protection: Microsoft Defender Security Center](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
