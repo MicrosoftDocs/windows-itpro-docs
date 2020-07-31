@@ -425,7 +425,7 @@
 #### [Ensure your devices are configured properly](microsoft-defender-atp/configure-machines.md)
 #### [Monitor and increase device onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
 #### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
-#### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
+#### [Optimize attack surface reduction rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
 
 ### [Configure portal settings]()
 #### [Set up preferences](microsoft-defender-atp/preferences-setup.md)
@@ -1218,7 +1218,7 @@
 ###### [System cryptography: Force strong key protection for user keys stored on the computer](security-policy-settings/system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer.md)
 ###### [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md)
 ###### [System objects: Require case insensitivity for non-Windows subsystems](security-policy-settings/system-objects-require-case-insensitivity-for-non-windows-subsystems.md)
-###### [System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)](security-policy-settings/system-objects-strengthen-default-permissions-of-internal-system-objects.md)
+###### [System objects: Strengthen default permissions of internal system objects (Symbolic Links)](security-policy-settings/system-objects-strengthen-default-permissions-of-internal-system-objects.md)
 ###### [System settings: Optional subsystems](security-policy-settings/system-settings-optional-subsystems.md)
 ###### [System settings: Use certificate rules on Windows executables for Software Restriction Policies](security-policy-settings/system-settings-use-certificate-rules-on-windows-executables-for-software-restriction-policies.md)
 ###### [User Account Control: Admin Approval Mode for the Built-in Administrator account](security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account.md)
