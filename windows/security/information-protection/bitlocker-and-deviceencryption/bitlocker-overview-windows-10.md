@@ -78,7 +78,10 @@ Exercise caution when encrypting only used space on an existing volume on which 
 When it comes to system drive encryption, BitLocker supports three different ways of unlocking the encrypted disk:
 
 1. With a Trusted Platform Module (TPM)
-1. With a password or PIN (A PIN does only contain numbers, while a password can contain letters and special characters as well)
+1. With a PIN, enhanced PIN or Password
+     * PIN: Can contain only numeric characters
+     * Enhanced PIN: Can contain numeric characters, letters and symbols
+     * Password: Allow of the above, but a minimum length can be defined, which is at least 8 characters
 1. With a removable storage device
 
 
