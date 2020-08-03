@@ -17,6 +17,8 @@ ms.topic: article
 ---
 
 # Microsoft Defender ATP device timeline event flags
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 Event flags in the Microsoft Defender ATP device timeline help you filter and organize specific events when you're  investigate potential attacks.
 
 The Microsoft Defender ATP device timeline provides a chronological view of the events and associated alerts observed on a device. This list of events provides full visibility into any events, files, and IP addresses observed on the device. The list can sometimes be lengthy. Device timeline event flags help you track events that could be related. 
@@ -29,13 +31,15 @@ While navigating the device timeline, you can search and filter for specific eve
 - Marking events that requires deep dive 
 - Building a clean breach timeline
 
+
+
 ## Flag an event
 1. Find the event that you want to flag
 2. Click the flag icon in the Flag column. 
-
+![Image of device timeline flag](images/device-flags.png)
 
 ## View flagged events  
-
 1. In the timeline **Filters** section, enable **Flagged events**.
 2. Click **Apply**. Only flagged events are displayed.
 You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
+![Image of device timeline flag with filter on](images/device-flag-filter.png)
