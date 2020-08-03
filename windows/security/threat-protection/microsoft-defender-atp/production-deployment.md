@@ -13,7 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- m365solution-endpointprotect 
 ms.topic: article 
 ---
 
@@ -57,7 +59,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
 
 ## Check license state
 
@@ -88,7 +90,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -140,9 +142,12 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender ATP URL exclusions in the proxy, see the
-Appendix section in this document for the URLs Whitelisting or on
+Appendix section in this document for the URLs allow list or on
 [Microsoft
 Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
+
+> [!NOTE]
+> For a detailed list of URLs that need to be allowed, please see [this article](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 **Manual static proxy configuration:**
 
@@ -198,9 +203,9 @@ Use netsh to configure a system-wide static proxy.
 
 1. Open an elevated command-line:
 
-    a. Go to **Start** and type **cmd**.
+    1. Go to **Start** and type **cmd**.
 
-    b. Right-click **Command prompt** and select **Run as administrator**.
+    1. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**:
 
@@ -211,30 +216,29 @@ Use netsh to configure a system-wide static proxy.
    For example: netsh winhttp set proxy 10.0.0.6:8080
 
 
-###  Proxy Configuration for down-level machines
+###  Proxy Configuration for down-level devices
 
-Down-Level machines include Windows 7 SP1 and Windows 8.1 workstations as well
+Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well
 as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
 versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
 systems will have the proxy configured as part of the Microsoft Management Agent
 to handle communication from the endpoint to Azure. Refer to the
 Microsoft Management Agent Fast Deployment Guide for information on how a proxy
-is configured on these machines.
+is configured on these devices.
 
 ### Proxy Service URLs
 URLs that include v20 in them are only needed if you have Windows 10, version
-1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only
-needed if the machine is on Windows 10, version 1803 or later.
+1803 or later devices. For example, ```us-v20.events.data.microsoft.com``` is only
+needed if the device is on Windows 10, version 1803 or later.
+ 
 
- Service location | Microsoft.com DNS record
--|-
-Common URLs for all locations | ```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` 
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` 
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net```
+If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
 
-If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
 
 ###  Microsoft Defender ATP service backend IP range
 
@@ -253,9 +257,9 @@ Microsoft Defender ATP is built on Azure cloud, deployed in the following region
 You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
 
 > [!NOTE]
-> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
+> As a cloud-based solution, the IP address range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them
+|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so that the Microsoft Defender ATP service can get sensor data from them.

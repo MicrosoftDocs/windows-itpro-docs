@@ -1,6 +1,6 @@
 ---
 title: Deploying Microsoft Office 2010 by Using App-V (Windows 10)
-description: Deploying Microsoft Office 2010 by Using App-V
+description: See the methods for creating Microsoft Office 2010 packages by Using App-V.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

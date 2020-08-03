@@ -20,9 +20,9 @@ sections:
     text: "
       Find information on known issues and the status of the rollout for Windows 10, version 1903 and Windows Server, version 1903. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
- <table border = '0' class='box-info'><tr>
-<td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong>&nbsp;&nbsp;&nbsp;</div><div>Windows 10, version 1903 (the May 2019 Update) is designated ready for broad deployment for all users via Windows Update.</div><div><br></div><div>We recommend commercial customers running earlier versions of Windows 10 begin broad deployments of Windows 10, version 1903 in their organizations.</div><div><br></div><div><strong>Note </strong>Follow <a href=\"https://twitter.com/windowsupdate\" rel=\"noopener noreferrer\" target=\"_blank\">@WindowsUpdate</a> to find out when new content is published to the release information dashboard.</div>
-</td></tr></table>
+      <table border = '0' class='box-info'><tr>
+      <td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong>&nbsp;&nbsp;&nbsp;</div><div>Windows 10, version 1903 (the May 2019 Update) is designated ready for broad deployment for all users via Windows Update.</div><div><br></div><div>We recommend commercial customers running earlier versions of Windows 10 begin broad deployments of Windows 10, version 1903 in their organizations.</div><div><br></div><div><strong>Note </strong>Follow <a href=\"https://twitter.com/windowsupdate\" rel=\"noopener noreferrer\" target=\"_blank\">@WindowsUpdate</a> to find out when new content is published to the release information dashboard.</div>
+      </td></tr></table>
 
       " 
 

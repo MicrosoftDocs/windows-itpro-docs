@@ -2,7 +2,7 @@
 title: Supported Microsoft Defender Advanced Threat Protection APIs  
 ms.reviewer: 
 description: Learn about the specific supported Microsoft Defender Advanced Threat Protection entities where you can create API calls to. 
-keywords: apis, supported apis, actor, alerts, machine, user, domain, ip, file, advanced queries, advanced hunting
+keywords: apis, supported apis, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -50,16 +50,16 @@ Topic | Description
 :---|:---
 Advanced Hunting | Run queries from API.
 Alerts | Run API calls such as get alerts, create alert, update alert and more.
-Domains | Run API calls such as get domain related machines, domain statistics and more.
-Files | Run API calls such as get file information, file related alerts, file related machines, and file statistics.
+Domains | Run API calls such as get domain related devices, domain statistics and more.
+Files | Run API calls such as get file information, file related alerts, file related devices, and file statistics.
 IPs | Run API calls such as get IP related alerts and get IP statistics.
-Machines | Run API calls such as get machines, get machines by ID, information about logged on users, edit tags and more.
+Machines | Run API calls such as get devices, get devices by ID, information about logged on users, edit tags and more.
 Machine Actions | Run API call such as Isolation, Run anti-virus scan and more.
 Indicators | Run API call such as create Indicator, get Indicators and delete Indicators.
-Users | Run API calls such as get user related alerts and user related machines.
+Users | Run API calls such as get user related alerts and user related devices.
 Score | Run API calls such as get exposure score or get device secure score.
 Software | Run API calls such as list vulnerabilities by software.
-Vulnerability | Run API calls such as list machines by vulnerability.
+Vulnerability | Run API calls such as list devices by vulnerability.
 Recommendation | Run API calls such as Get recommendation by Id.
 
 ## Related topic

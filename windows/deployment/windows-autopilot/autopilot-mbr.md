@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -93,7 +94,7 @@ Because the repair facility will not have access to the user’s login credentia
 
 Technicians replace the motherboard (or other hardware) on the broken device.  A replacement DPK is injected.
 
-Repair and key replacement processes vary between facilities.  Sometimes repair facilities receive motherboard spare parts from OEMs that have replacement DPKs already injected, but sometimes not.  Sometimes repair facilities receive fully-functional BIOS tools from OEMs, but sometimes not.  This means that the quality of the data in the BIOS after a MBR varies.  To ensure the repaired device will still be Autopilot-capable following its repair, the new (post-repair) BIOS should be able to successfully gather and populate  the following information at a minimum:
+Repair and key replacement processes vary between facilities.  Sometimes repair facilities receive motherboard spare parts from OEMs that have replacement DPKs already injected, but sometimes not.  Sometimes repair facilities receive fully-functional BIOS tools from OEMs, but sometimes not.  This means that the quality of the data in the BIOS after an MBR varies.  To ensure the repaired device will still be Autopilot-capable following its repair, the new (post-repair) BIOS should be able to successfully gather and populate  the following information at a minimum:
 
 - DiskSerialNumber
 - SmbiosSystemSerialNumber
@@ -105,13 +106,13 @@ Repair and key replacement processes vary between facilities.  Sometimes repair 
 - ProductKeyID
 - OSType
 
-**NOTE**: For simplicity, and because processes vary between repair facilities, we have excluded many of the additional steps often used in a MBR, such as:
+**NOTE**: For simplicity, and because processes vary between repair facilities, we have excluded many of the additional steps often used in an MBR, such as:
 - Verify that the device is still functional
 - Disable BitLocker*
 - Repair the Boot Configuration Data (BCD)
 - Repair and verify the network driver operation
 
-*BitLocker can be suspended rather than disbled if the technician has the ability to resume it after the repair.
+*BitLocker can be suspended rather than disabled if the technician has the ability to resume it after the repair.
 
 ## Capture a new Autopilot device ID (4K HH) from the device
 
@@ -128,7 +129,7 @@ Repair technicians must sign in to the repaired device to capture the new device
 
 Those repair facilities with access to the OA3 Tool (which is part of the ADK) can use the tool to capture the 4K Hardware Hash (4K HH).
 
-Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) can be used to capture the 4K HH by following these steps:
+Alternatively, the [WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) can be used to capture the 4K HH by following these steps:
 
 1. Install the script from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) or from the command line (command line installation is shown below).
 2. Navigate to the script directory and run it on the device when the device is either in Full OS or Audit Mode. See the following example.
@@ -175,7 +176,7 @@ To reregister an Autopilot device from MPC, an OEM or CSP would:
 ![device](images/device2.png)<br>
 ![device](images/device3.png)
 
-In the case of reregistering a repaired device through MPC, the uploaded csv file must contain the 4K HH for the device, and not just the PKID or Tuple (SerialNumber + OEMName + ModelName).  If only the PKID or Tuple were used, the Autopilot service would be unable to find a match in the Autopilot database, since no 4K HH info was ever previously submitted for this essentially “new” device, and the upload will fail, likely returning a ZtdDeviceNotFound error.  So, again, only upload the 4K HH, not the Tuple or PKID.
+In the case of reregistering a repaired device through MPC, the uploaded csv file must contain the 4K HH for the device, and not just the PKID or Tuple (SerialNumber + OEMName + ModelName).  If only the PKID or Tuple was used, the Autopilot service would be unable to find a match in the Autopilot database, since no 4K HH info was ever previously submitted for this essentially “new” device, and the upload will fail, likely returning a ZtdDeviceNotFound error.  So, again, only upload the 4K HH, not the Tuple or PKID.
 
 **NOTE**: When including the 4K HH in the csv file, you do NOT also need to include the PKID or Tuple.  Those columns may be left blank, as shown below:
 
@@ -189,7 +190,7 @@ On the device, go to Settings > Update & Security > Recovery and click on Get st
 
 ![reset](images/reset.png)
 
-However, it’s likely the repair facility won’t have access to Windows because they lack the user credentials to login, in which case they need to use other means to reimage the device, such as the [Deployment Image Servicing and Management tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#use-a-deployment-script-to-apply-your-image).
+However, it’s likely the repair facility won’t have access to Windows because they lack the user credentials to sign in, in which case they need to use other means to reimage the device, such as the [Deployment Image Servicing and Management tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#use-a-deployment-script-to-apply-your-image).
 
 ## Return the repaired device to the customer
 
@@ -207,7 +208,7 @@ NOTES ON TEST RESULTS:
 
 - Scenarios below were tested using Intune only (no other MDMs were tested).
 - In most test scenarios below, the repaired and reregistered device needed to go through OOBE again for Autopilot to be enabled.
-- Motherboard replacement scenarios often result in lost data, so repair centers or customers should be reminded to backup data (if possible) prior to repair.
+- Motherboard replacement scenarios often result in lost data, so repair centers or customers should be reminded to back up data (if possible) prior to repair.
 - In the cases where a repair facility does not have the ability to write device info into the BIOS of the repaired device, new processes need to be created to successfully enable Autopilot.
 - Repaired device should have the Product Key (DPK) preinjected in the BIOS before capturing the new 4K HH (device ID)
 
@@ -233,7 +234,7 @@ In the following table:<br>
 
 1. Deregister damaged device
 2. Replace motherboard
-3. Reimage device (to gain access), unless have access to customers’ login credentials
+3. Reimage device (to gain access), unless you have access to customers’ login credentials
 4. Write device info into BIOS
 5. Capture new 4K HH
 6. Reregister repaired device
@@ -246,7 +247,7 @@ In the following table:<br>
 
 1. Deregister damaged device
 2. Replace motherboard (with new RDPK preinjected in BIOS)
-3. Reimage device (to gain access), unless have access to customers’ login credentials
+3. Reimage device (to gain access), unless you have access to customers’ login credentials
 4. Write old device info into BIOS (same s/n, model, etc.)*
 5. Capture new 4K HH
 6. Reregister repaired device
@@ -284,7 +285,7 @@ In the following table:<br>
 
 1. Deregister damaged device
 2. Replace motherboard (with new RDPK preinjected in BIOS)
-3. Reimage device (to gain access), unless have access to customers’ login credentials
+3. Reimage device (to gain access), unless you have access to customers’ login credentials
 4. Write old device info into BIOS (same s/n, model, etc.)
 5. Capture new 4K HH
 6. Reregister repaired device
@@ -297,7 +298,7 @@ In the following table:<br>
 1. Deregister old device from which MB will be taken
 2. Deregister damaged device (that you want to repair)
 3. Replace motherboard in repair device with MB from other Autopilot device (with new RDPK preinjected in BIOS)
-4. Reimage device (to gain access), unless have access to customers’ login credentials
+4. Reimage device (to gain access), unless you have access to customers’ login credentials
 5. Write old device info into BIOS (same s/n, model, etc.)
 6. Capture new 4K HH
 7. Reregister repaired device
@@ -318,11 +319,11 @@ In the following table:<br>
 7. Go through Autopilot OOBE (customer)
 8. Autopilot FAILS to recognize repaired device
 
-<tr><td>MBR when there is no TPM chip<td>Yes<td>Though we do not recommend enabling an Autopilot devices without a TPM chip (which is recommended for BitLocker encryption), it is possible to enable an Autopilot devices in “standard user” mode (but NOT Self-deploying mode) that does not have a TPM chip.  In this case, you would:
+<tr><td>MBR when there is no TPM chip<td>Yes<td>Though we do not recommend enabling Autopilot devices without a TPM chip (which is recommended for BitLocker encryption), it is possible to enable an Autopilot device in “standard user” mode (but NOT Self-deploying mode) that does not have a TPM chip.  In this case, you would:
 
 1. Deregister damaged device
 2. Replace motherboard
-3. Reimage device (to gain access), unless have access to customers’ login credentials
+3. Reimage device (to gain access), unless you have access to customers’ login credentials
 4. Write old device info into BIOS (same s/n, model, etc.)
 5. Capture new 4K HH
 6. Reregister repaired device
@@ -334,7 +335,7 @@ In the following table:<br>
 
 1. Deregister damaged device
 2. Replace motherboard – BIOS does NOT contain DPK info
-3. Reimage device (to gain access), unless have access to customers’ login credentials
+3. Reimage device (to gain access), unless you have access to customers’ login credentials
 4. Write device info into BIOS (same s/n, model, etc.)
 5. Capture new 4K HH
 6. Reset or reimage device to pre-OOBE and write DPK into image
@@ -342,7 +343,7 @@ In the following table:<br>
 8. Go through Autopilot OOBE
 9. Autopilot successfully enabled
 
-<tr><td>New Repair Product Key (RDPK)<td>Yes<td>Using a MB with a new RDPK preinjected results in a successful Autopilot refurbishment scenario. 
+<tr><td>New Repair Product Key (RDPK)<td>Yes<td>Using a motherboard with a new RDPK preinjected results in a successful Autopilot refurbishment scenario. 
 
 1. Deregister damaged device
 2. Replace motherboard (with new RDPK preinjected in BIOS)
@@ -380,7 +381,7 @@ Assuming the used HDD was previously deregistered (before being used in this rep
 4. Go through Autopilot OOBE (customer)
 5. Autopilot successfully enabled
 
-<tr><td>Third party network card replacement <td>No<td>Whether from a non-Autopilot device to an Autopilot device, from one Autopilot device to another Autopilot device, or from an Autopilot device to a non-Autopilot device, any scenario where a 3rd party (not onboard) Network card is replaced will break the Autopilot experience, and is not recommended.
+<tr><td>Non-Microsoft network card replacement <td>No<td>Whether from a non-Autopilot device to an Autopilot device, from one Autopilot device to another Autopilot device, or from an Autopilot device to a non-Autopilot device, any scenario where a 3rd party (not onboard) Network card is replaced will break the Autopilot experience, and is not recommended.
 <tr><td>A device repaired more than 3 times<td>No<td>Autopilot is not supported when a device is repeatedly repaired, so that whatever parts NOT replaced become associated with too many parts that have been replaced, which would make it difficult to uniquely identify that device in the future.
 <tr><td>Memory replacement<td>Yes<td>Replacing the memory on a damaged device does not negatively affect the Autopilot experience on that device.  No de/reregistration is needed.  The repair technician simply needs to replace the memory.
 <tr><td>GPU replacement<td>Yes<td>Replacing the GPU(s) on a damaged device does not negatively affect the Autopilot experience on that device.  No de/reregistration is needed.  The repair technician simply needs to replace the GPU.

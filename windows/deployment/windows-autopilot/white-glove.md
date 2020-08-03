@@ -57,11 +57,12 @@ If these scenarios cannot be completed, Windows Autopilot for white glove deploy
 
 To enable white glove deployment, an additional Autopilot profile setting must be configured by the customer or IT Admin via their Intune account, prior to beginning the white glove process in the provisioning service facility:
 
- ![allow white glove](images/allow-white-glove-oobe.png)
+![allow white glove](images/allow-white-glove-oobe.png)
 
-The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device.  Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed. Please make sure not to target both win32 and LOB apps to the same device. 
+The Windows Autopilot for white glove deployment pre-provisioning process will apply all device-targeted policies from Intune.  That includes certificates, security templates, settings, apps, and more – anything targeting the device. Additionally, any apps (Win32 or LOB) that are configured to install in the device context and targeted to the user that has been pre-assigned to the Autopilot device will also be installed. Please make sure not to target both win32 and LOB apps to the same device, as this can make troubleshooting difficult if there are app installation failures. For more information, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows).
 
 > [!NOTE]
+> Select the language mode as the user specified in Autopilot profiles to ensure easy access into white glove provisioning mode. 
 > The white glove technician phase will install all device-targeted apps as well as any user-targeted, device-context apps that are targeted to the assigned user. If there is no assigned user, then it will only install the device-targeted apps. Other user-targeted policies will not apply until the user signs into the device. To verify these behaviors, be sure to create appropriate apps and policies targeted to devices and users.
 
 ## Scenarios
@@ -109,7 +110,7 @@ If the pre-provisioning process completed successfully and the device was reseal
 
 - Power on the device.
 - Select the appropriate language, locale, and keyboard layout.
-- Connect to a network (if using Wi-Fi).  If using Hybrid Azure AD Join, there must be connectivity to a domain controller; if using Azure AD Join, internet connectivity is required.
+- Connect to a network (if using Wi-Fi).  Internet access is always required.  If using Hybrid Azure AD Join, there must also be connectivity to a domain controller.
 - On the branded sign-on screen, enter the user’s Azure Active Directory credentials.
 - If using Hybrid Azure AD Join, the device will reboot; after the reboot, enter the user’s Active Directory credentials.
 - Additional policies and apps will be delivered to the device, as tracked by the Enrollment Status Page (ESP).  Once complete, the user will be able to access the desktop.

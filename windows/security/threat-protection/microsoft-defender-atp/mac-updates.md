@@ -27,7 +27,7 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
 
-![MAU screenshot](../windows-defender-antivirus/images/MDATP-34-MAU.png)
+![MAU screenshot](../microsoft-defender-antivirus/images/MDATP-34-MAU.png)
 
 If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates. You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 
@@ -64,7 +64,7 @@ The `Production` channel contains the most stable version of the product.
 >[!WARNING]
 >This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender ATP for Mac, execute the following command after replacing `[channel-name]` with the desired channel:
 > ```bash
-> $ defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### Set update check frequency

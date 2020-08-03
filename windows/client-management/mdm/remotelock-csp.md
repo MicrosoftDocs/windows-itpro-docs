@@ -1,6 +1,6 @@
 ---
 title: RemoteLock CSP
-description: RemoteLock CSP
+description: Learn how RemoteLock CSP supports the ability to lock a device that has a PIN set on the device or reset the PIN on a device that may or may not have a PIN set.
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
 ms.reviewer: 
 manager: dansimp

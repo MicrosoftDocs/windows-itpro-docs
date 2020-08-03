@@ -24,7 +24,25 @@ ms.topic: conceptual
 > 
 > In the meantime, starting with macOS Catalina update 10.15.4, Apple introduced a user facing *Legacy System Extension* warning to signal applications that rely on kernel extensions.
 > 
-> If you have previously whitelisted the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to whitelist the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to whitelist the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+> If you have previously allowed the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to allow the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to allow the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+
+## 101.03.12
+
+- Performance improvements & bug fixes
+
+## 101.01.54
+
+- Improvements around compatibility with Time Machine
+- Accessibility improvements
+- Performance improvements & bug fixes
+
+## 101.00.31
+
+- Improved [product onboarding experience for Intune users](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)
+- Added the ability to trigger antivirus scans from the macOS contextual menu. You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender ATP**
+- In-place product downgrades are now explicitly disallowed by the installer. If you need to downgrade, first uninstall the existing version and reconfigure your device
+- Other performance improvements & bug fixes
 
 ## 100.90.27
 
@@ -68,7 +86,7 @@ ms.topic: conceptual
 - Fixed an issue where Microsoft Defender ATP for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  $ mdatp --connectivity-test
+  mdatp --connectivity-test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

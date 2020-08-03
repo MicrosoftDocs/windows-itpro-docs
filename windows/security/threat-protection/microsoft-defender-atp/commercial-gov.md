@@ -37,20 +37,29 @@ The following OS versions are supported:
 - Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
 
 >[!NOTE]
->A patch must be deployed before machine onboarding in order to configure Microsoft Defender ATP to the correct environment.
+>A patch must be deployed before device onboarding in order to configure Microsoft Defender ATP to the correct environment.
 
-The following OS versions are not supported:
+The following OS versions are supported via Azure Security Center:
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
+
+The following OS versions are not supported:
+- Windows Server 2008 R2 SP1 (standalone, not via ASC)
+- Windows Server 2012 R2 (standalone, not via ASC)
+- Windows Server 2016 (standalone, not via ASC)
 - Windows Server, version 1803
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8 Pro
 - Windows 8.1 Enterprise
 - macOS
+- Linux
 
 The initial release of Microsoft Defender ATP will not have immediate parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government (GCC High) customers, there are some capabilities not yet available that we'd like to highlight. These are the known gaps as of August 2019:
+
+## Threat Analytics
+Not currently available.
 
 ## Threat & Vulnerability Management
 Not currently available.
@@ -67,7 +76,7 @@ The following capabilities are not currently available:
 The following capabilities are not currently available:
 
 - Threat protection report
-- Machine health and compliance report
+- Device health and compliance report
 - Integration with third-party products
 
 
@@ -92,7 +101,7 @@ You'll need to ensure that traffic from the following are allowed:
 
 Service location | DNS record
 :---|:---
-Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 machines running version 1803 or earlier.
+Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
 Microsoft Defender ATP GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
 
 

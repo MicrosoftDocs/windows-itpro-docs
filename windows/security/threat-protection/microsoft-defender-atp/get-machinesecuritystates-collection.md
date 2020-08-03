@@ -1,7 +1,7 @@
 ---
 title: Get machines security states collection API
-description: Retrieves a collection of machines security states.
-keywords: apis, graph api, supported apis, get, machine, security, state
+description: Retrieve a collection of device security states using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP.
+keywords: apis, graph api, supported apis, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves a collection of machines security states.
+Retrieves a collection of devices security states.
 
 ## Permissions
 User needs read permissions.
@@ -60,7 +60,7 @@ Content-type: application/json
 **Response**
 
 Here is an example of the response.
-Field *id* contains machine id and equal to the field *id** in machines info. 
+Field *id* contains device id and equal to the field *id** in devices info. 
 
 ```
 HTTP/1.1 200 OK

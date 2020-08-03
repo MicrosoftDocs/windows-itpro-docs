@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 08/31/2017
+ms.date: 
 ms.reviewer: 
 manager: dansimp
 ---
@@ -32,7 +32,7 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
 | **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. |
 | **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |
-| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
+| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge. See [Ad-free search with Bing](#ad-free-search-with-bing | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
 | **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
 
 
@@ -152,9 +152,6 @@ For example:
 ## Ad-free search with Bing
 Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
 
-> [!NOTE]  
-> Since 2017, Microsoft’s Bing in the Classroom solution has been integrated with Microsoft office 365 Education and requires users to be signed in into Microsoft Edge using their student Azure Active Directory Identity for an ad free experience. For more information on all the possible Bing configuration methods, see [https://aka.ms/e4ahor](https://aka.ms/e4ahor).
-
 ### Configurations
 
 #### Azure AD and Office 365 Education tenant
@@ -173,8 +170,6 @@ To suppress ads only when the student signs into Bing with their Office 365 acco
 1. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 2. Have students sign into Bing with their Office 365 account.
 
-### More information
-For more information on all the possible Bing configuration methods, see https://aka.ms/e4ahor. 
 
 ## Related topics
 [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)

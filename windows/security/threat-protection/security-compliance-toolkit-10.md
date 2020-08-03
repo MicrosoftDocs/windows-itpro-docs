@@ -26,44 +26,50 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 
 The Security Compliance Toolkit consists of:
 
--   Windows 10 security baselines
-    -   Windows 10 Version 1909 (November 2019 Update)
-    -   Windows 10 Version 1903 (May 2019 Update)
-    -   Windows 10 Version 1809 (October 2018 Update)
-    -   Windows 10 Version 1803 (April 2018 Update)
-    -   Windows 10 Version 1709 (Fall Creators Update)
-    -   Windows 10 Version 1607 (Anniversary Update)
-    -   Windows 10 Version 1507
+- Windows 10 security baselines
+    - Windows 10 Version 1909 (November 2019 Update)
+    - Windows 10 Version 1903 (May 2019 Update)
+    - Windows 10 Version 1809 (October 2018 Update)
+    - Windows 10 Version 1803 (April 2018 Update)
+    - Windows 10 Version 1709 (Fall Creators Update)
+    - Windows 10 Version 1607 (Anniversary Update)
+    - Windows 10 Version 1507
 
--   Windows Server security baselines
-    -   Windows Server 2019
-    -   Windows Server 2016
-    -   Windows Server 2012 R2
+- Windows Server security baselines
+    - Windows Server 2019
+    - Windows Server 2016
+    - Windows Server 2012 R2
 
--   Microsoft Office security baseline
-    -   Microsoft 365 Apps for enterprise (Sept 2019)
+- Microsoft Office security baseline
+    - Microsoft 365 Apps for enterprise (Sept 2019)
 
--   Microsoft Edge security baseline
-    -   Version 80
+- Microsoft Edge security baseline
+    - Version 80
 
--   Tools
-    -   Policy Analyzer tool
-    -   Local Group Policy Object (LGPO) tool
+- Tools
+    - Policy Analyzer tool
+    - Local Group Policy Object (LGPO) tool
+
+-   Scripts
+    -   Baseline-ADImport.ps1
+    -   Baseline-LocalInstall.ps1
+    -   Remove-EPBaselineSettings.ps1
+    -   MapGuidsToGpoNames.ps1
 
 
-You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/bg-p/Microsoft-Security-Baselines).
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/bg-p/Microsoft-Security-Baselines).
 
 ## What is the Policy Analyzer tool?
 
 The Policy Analyzer is a utility for analyzing and comparing sets of Group Policy Objects (GPOs). Its main features include:
--   Highlight when a set of Group Policies has redundant settings or internal inconsistencies
--   Highlight the differences between versions or sets of Group Policies
--   Compare GPOs against current local policy and local registry settings
--   Export results to a Microsoft Excel spreadsheet
+- Highlight when a set of Group Policies has redundant settings or internal inconsistencies
+- Highlight the differences between versions or sets of Group Policies
+- Compare GPOs against current local policy and local registry settings
+- Export results to a Microsoft Excel spreadsheet
 
 Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
-More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/22/new-tool-policy-analyzer/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+More information on the Policy Analyzer tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-tool-policy-analyzer/ba-p/701049) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
@@ -73,4 +79,64 @@ LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files
 It can export local policy to a GPO backup. 
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
-Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+Documentation for the LGPO tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/lgpo-exe-local-group-policy-object-utility-v1-0/ba-p/701045) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## List of PowerShell scripts
+
+This list of PowerShell script names, divided into categories by the name of the ZIP file containing those scripts, is based on the download page content listing of the full package download (12 files).
+
+1. **Windows 10 Version 1909 and Windows Server Version 1909 Security Baseline.zip**
+
+    - Baseline-ADImport.ps1
+    - Baseline-LocalInstall.ps1
+    - Remove-EPBaselineSettings.ps1
+    - MapGuidsToGpoNames.ps1
+
+2. **LGPO.zip**
+    - (none)
+
+3. **Microsoft Edge v80.zip**
+
+    - Baseline-ADImport.ps1
+    - Baseline-LocalInstall.ps1
+    - MapGuidsToGpoNames.ps1
+
+4. **Office365-ProPlus-Sept2019-FINAL.zip**
+
+    - Baseline-ADImport.ps1
+    - Baseline-LocalInstall.ps1
+    - MapGuidsToGpoNames.ps1
+
+5. **PolicyAnalyzer.zip**
+
+    - Merge-PolicyRules.ps1
+    - Split-PolicyRules.ps1
+
+6. **Windows 10 Version 1507 Security Baseline.zip**
+    - (none)
+
+7. **Windows 10 Version 1607 and Windows Server 2016 Security Baseline.zip**
+
+    - MapGuidsToGpoNames.ps1
+
+8. **Windows 10 Version 1709 Security Baseline.zip**
+
+    - MapGuidsToGpoNames.ps1
+
+9. **Windows 10 Version 1803 Security Baseline.zip**
+
+    - MapGuidsToGpoNames.ps1
+
+10. **Windows 10 Version 1809 and Windows Server 2019 Security Baseline.zip**
+
+    - BaselineLocalInstall.ps1
+    - MapGuidsToGpoNames.ps1
+
+11. **Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline - Sept2019Update.zip**
+
+    - Baseline-ADImport.ps1
+    - Baseline-LocalInstall.ps1
+    - MapGuidsToGpoNames.ps1
+
+12. **Windows Server 2012 R2 Security Baseline.zip**
+    - (none)

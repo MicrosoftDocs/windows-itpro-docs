@@ -1,7 +1,7 @@
 ---
 title: Review and approve actions following automated investigations in the Microsoft Defender Security Center
 description: Review and approve (or reject) remediation actions following an automated investigation.
-keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, machines, duration, filter export
+keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, devices, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -62,6 +62,8 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 4. Select an item to view more details about that remediation action.
  
 ## Next steps
+
+- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 - [View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center)
 

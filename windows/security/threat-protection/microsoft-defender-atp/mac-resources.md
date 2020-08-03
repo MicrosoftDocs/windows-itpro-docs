@@ -30,7 +30,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
    ```bash
-   $ mdatp --log-level verbose
+   mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -38,10 +38,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp --diagnostic --create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   $ sudo mdatp --diagnostic --create
+   sudo mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    ```
@@ -49,7 +49,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 4. Restore logging level:
 
    ```bash
-   $ mdatp --log-level info
+   mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -87,6 +87,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
 |Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
+|Configuration|Turn on/off passiveMode                    |`mdatp --config passiveMode [on/off]`                                  |
 |Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
 |Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
@@ -96,8 +97,8 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
 |Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
 |EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]` OR `mdatp --edr --earlyPreview [true/false]` for versions earlier than 100.78.0                                |
-|EDR          |Add group tag to machine. EDR tags are used for managing machine groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
-|EDR          |Remove group tag from machine              |`mdatp --edr --remove-tag [name]`                                            |
+|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
+|EDR          |Remove group tag from device              |`mdatp --edr --remove-tag [name]`                                            |
 
 ## Client Microsoft Defender ATP quarantine directory
 

@@ -1,7 +1,7 @@
 ---
 title: Get alert related machine information 
-description: Retrieves all machines related to a specific alert.
-keywords: apis, graph api, supported apis, get alert information, alert information, related machine
+description: Retrieve all devices related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+keywords: apis, graph api, supported apis, get alert information, alert information, related device
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -24,11 +24,11 @@ ms.topic: article
 
 
 ## API description
-Retrieves [Machine](machine.md) related to a specific alert.
+Retrieves [Device](machine.md) related to a specific alert.
 
 
 ## Limitations
-1. You can query on alerts last updated in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -45,7 +45,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -63,7 +63,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and alert and machine exist - 200 OK. If alert not found or machine not found - 404 Not Found.
+If successful and alert and device exist - 200 OK. If alert not found or device not found - 404 Not Found.
 
 ## Example
 

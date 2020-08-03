@@ -35,6 +35,12 @@ The following Windows Autopilot scenarios are described in this guide:
 | Pre-provision a device with up-to-date applications, policies and settings.| [White glove](white-glove.md) |
 | Deploy Windows 10 on an existing Windows 7 or 8.1 device | [Windows Autopilot for existing devices](existing-devices.md) |
 
+These scenarios are summarized in the following video.
+
+&nbsp;
+
+> [!video https://www.microsoft.com/videoplayer/embed/RE4Ci1b?autoplay=false]
+
 ## Windows Autopilot capabilities
 
 ### Windows Autopilot is self-updating during OOBE

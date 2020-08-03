@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -208,12 +208,12 @@ For 4771(F): Kerberos pre-authentication failed.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Security ID”** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Security ID”** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“Security ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific whitelist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“Security ID”** for accounts that are outside the whitelist.                                  |
+| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“Security ID”** for accounts that are outside the allow list.                                  |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                           |
 
 -   You can track all [4771](event-4771.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
 
--   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4771](event-4771.md) events. If **Client Address** is not from the whitelist, generate the alert.
+-   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4771](event-4771.md) events. If **Client Address** is not from the allow list, generate the alert.
 
 -   All **Client Address** = ::1 means local authentication. If you know the list of accounts which should log on to the domain controllers, then you need to monitor for all possible violations, where **Client Address** = ::1 and **Account Name** is not allowed to log on to any domain controller.
 
@@ -226,6 +226,6 @@ For 4771(F): Kerberos pre-authentication failed.
 | **Pre-Authentication Type** | Value is **not 15** when account must use a smart card for authentication. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                                        |
 | **Pre-Authentication Type** | Value is **not 2** when only standard password authentication is in use in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                      |
 | **Pre-Authentication Type** | Value is **not 138** when Kerberos Armoring is enabled for all Kerberos communications in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).       |
-| **Result Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
-| **Result Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This can be an indicator of brute-force attack on the account password, especially for highly critical accounts. |
+| **Failure Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
+| **Failure Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This can be an indicator of brute-force attack on the account password, especially for highly critical accounts. |
 

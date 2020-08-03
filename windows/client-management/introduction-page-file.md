@@ -7,8 +7,8 @@ ms.topic: troubleshooting
 author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
-ms.reviewer: greglin
-manager: dcscontentpm
+ms.reviewer: dcscontentpm
+manager: dansimp
 ---
 
 # Introduction to page files
