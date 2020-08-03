@@ -21,12 +21,12 @@ manager: dansimp
 -   Windows 10
 -   Windows 10 Mobile
 
-You use Windows Configuration Designer to create a provisioning package (.ppkg) that contains customization settings. You can apply the provisioning package to a device running Windows 10 or Windows 10 Mobile. 
+You can use Windows Configuration Designer to create a provisioning package (.ppkg) that contains customization settings, and then apply the provisioning package to a device running Windows 10 or Windows 10 Mobile. 
 
 >[Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
 
->[!TIP]
->We recommend creating a local admin account when developing and testing your provisioning package. We also recommend using a “least privileged” domain user account to join devices to the Active Directory domain.
+> [!TIP]
+> We recommend creating a local admin account when developing and testing your provisioning package. We also recommend using a “least privileged” domain user account to join devices to the Active Directory domain.
 
 ## Start a new project
 
