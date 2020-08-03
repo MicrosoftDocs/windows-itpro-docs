@@ -28,7 +28,7 @@ Retrieves a collection of [Alerts](alerts.md) related to a given domain address.
 
 
 ## Limitations
-1. You can query on alerts last updated in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -48,7 +48,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >- Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/domains/{domain}/alerts
 ```
 
@@ -73,6 +73,6 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/domains/client.wns.windows.com/alerts
 ```

@@ -1072,6 +1072,16 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
 
+> [!TIP]
+> Key rotation feature will only work when:
+>
+> - For Operating system drives:
+>    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
+>    - OSActiveDirectoryBackup_Name is set to true
+> - For Fixed data drives:
+>    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
+>    - FDVActiveDirectoryBackup_Name is set to true
+
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
 

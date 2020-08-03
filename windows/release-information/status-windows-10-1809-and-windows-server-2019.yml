@@ -20,9 +20,9 @@ sections:
     text: "
       Find information on known issues for Windows 10, version 1809 and Windows Server 2019. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
- <table border = '0' class='box-info'><tr>
-<td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong></div><div>Windows 10, version 1809 is designated for broad deployment. The recommended servicing status is Semi-Annual Channel.</div>
-</td></tr></table>
+      <table border = '0' class='box-info'><tr>
+      <td bgcolor='#d3f1fb' class='alert is-primary'><div><strong>Current status as of November 12, 2019:</strong></div><div>Windows 10, version 1809 is designated for broad deployment. The recommended servicing status is Semi-Annual Channel.</div>
+      </td></tr></table>
 
       " 
 
