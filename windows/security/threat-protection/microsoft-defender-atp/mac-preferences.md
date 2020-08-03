@@ -747,7 +747,7 @@ The following templates contain entries for all settings described in this docum
 The property list must be a valid *.plist* file. This can be checked by executing:
 
 ```bash
-$ plutil -lint com.microsoft.wdav.plist
+plutil -lint com.microsoft.wdav.plist
 com.microsoft.wdav.plist: OK
 ```
 
