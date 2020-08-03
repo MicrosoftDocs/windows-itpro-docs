@@ -112,7 +112,11 @@ From there, select **Go to related security recommendation** to go to the [secur
 
 To open a software page, select an event > select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout. [Learn more about software pages](tvm-software-inventory.md#software-pages)
 
-A full page will appear with all the details of a specific software, including an event timeline tab. From there you can view all the events related to that software, along with security recommendations, discovered vulnerabilities, installed machines, and version distribution.
+A full page will appear with all the details of a specific software. Mouse over the graph to see the timeline of events for that specific software.
+
+![Software page with an Event timeline graph](images/tvm-event-timeline-software.png)
+
+ You can also navigate to the event timeline tab to view all the events related to that software, along with security recommendations, discovered vulnerabilities, installed machines, and version distribution.
 
 ![Software page with an Event timeline tab](images/tvm-event-timeline-software-pages.png)
 
