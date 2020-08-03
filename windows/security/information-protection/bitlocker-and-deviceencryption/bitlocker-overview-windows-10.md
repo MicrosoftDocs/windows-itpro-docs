@@ -75,14 +75,17 @@ But why encrypt a new drive when you can simply encrypt the data as it is being 
 Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state, however, because those sectors can be recovered through disk-recovery tools until they are overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it is written to the disk.
 
 ## Special features of the system drive encryption
-When it comes to system drive encryption, BitLocker supports three different ways of unlocking the encrypted disk:
+When it comes to system drive encryption, BitLocker supports different ways of unlocking the encrypted disk:
 
-1. With a Trusted Platform Module (TPM)
-1. With a PIN, enhanced PIN or Password
-     * PIN: Can contain only numeric characters
-     * Enhanced PIN: Can contain numeric characters, letters and symbols
-     * Password: Allow of the above, but a minimum length can be defined, which is at least 8 characters
-1. With a removable storage device
+| Authentication method | Requires user interaction | Description |
+| - | - | - |
+| TPM only| No| TPM validates early boot components.|
+| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM will enter lockout if the incorrect PIN is entered repeatedly to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
+| TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
+| TPM + startup key| Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
+| Startup key only | Yes| The user is prompted to insert the USB flash drive that holds the recovery key and/or startup key and reboot the computer.|
+
+If no TPM is installed, then a password with at least eight characters or a startup key is supported as key protector.
 
 
 ### Preboot information protection
