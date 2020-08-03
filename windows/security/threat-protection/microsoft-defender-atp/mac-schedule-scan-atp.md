@@ -36,8 +36,8 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
         <key>ProgramArguments</key>
         <array>
             <string>sh</string>
-            <string>-c<string>
-            <string>/usr/local/bin/mdatp --scan --quick<string>
+            <string>-c</string>
+            <string>/usr/local/bin/mdatp --scan --quick</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
