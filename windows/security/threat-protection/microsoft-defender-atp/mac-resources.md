@@ -30,7 +30,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
    ```bash
-   $ mdatp --log-level verbose
+   mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -38,10 +38,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp --diagnostic --create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   $ sudo mdatp --diagnostic --create
+   sudo mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    ```
@@ -49,7 +49,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 4. Restore logging level:
 
    ```bash
-   $ mdatp --log-level info
+   mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
