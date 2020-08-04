@@ -23,6 +23,7 @@ ms.topic: conceptual
 
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](/windows/uwp/get-started/)
 
 
 
