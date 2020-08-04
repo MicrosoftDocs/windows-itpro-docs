@@ -36,7 +36,7 @@ A managed installer uses a new rule collection in AppLocker to specify one or mo
 Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority. The Managed Installer rule collection is currently supported for AppLocker rules in Group Policy and in Configuration Manager, but not in the AppLocker CSP for OMA-URI policies.
 
 Once the IT administrator adds the Allow: Managed Installer option to a WDAC policy, the WDAC component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy.
-If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.+
+If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.
 
 Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer.
 Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps.
@@ -46,9 +46,9 @@ Examples of WDAC policies available in C:\Windows\schemas\CodeIntegrity\ExampleP
 Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled. 
 There are three primary steps to keep in mind:
 
-- Specify managed installers using the Managed Installer rule collection in AppLocker policy
-- Enable service enforcement in AppLocker policy
-- Enable the managed installer option in a WDAC policy
+- Specify managed installers by using the Managed Installer rule collection in AppLocker policy.
+- Enable service enforcement in AppLocker policy.
+- Enable the managed installer option in a WDAC policy.
 
 ### Specify managed installers using the Managed Installer rule collection in AppLocker policy
 
@@ -60,7 +60,7 @@ For more information about creating an AppLocker policy that includes a managed 
 As mentioned above, the AppLocker CSP for OMA-URI policies does not currently support the Managed Installer rule collection or the Service Enforcement rule extensions mentioned below.
 
 
-```code
+```xml
 <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
     <FilePublisherRule Id="6cc9a840-b0fd-4f86-aca7-8424a22b4b93" Name="CMM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
@@ -82,10 +82,10 @@ As mentioned above, the AppLocker CSP for OMA-URI policies does not currently su
 ## Enable service enforcement in AppLocker policy
 
 Since many installation processes rely on services, it is typically necessary to enable tracking of services. 
-Correct tracking of services requires the presence of at least one rule in the rule collection – a simple audit only rule will suffice.
+Correct tracking of services requires the presence of at least one rule in the rule collection — a simple audit only rule will suffice.
 For example:
 
-```code
+```xml
 <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
     <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
@@ -124,7 +124,7 @@ In order to enable trust for the binaries laid down by managed installers, the E
 This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com/powershell/module/configci/set-ruleoption).
 An example of the managed installer option being set in policy is shown below.
 
-```code
+```xml
 <Rules>  
     <Rule>  
       <Option>Enabled:Unsigned System Integrity Policy</Option>  
@@ -149,7 +149,7 @@ An example of the managed installer option being set in policy is shown below.
 To enable the managed installer, you need to set the AppLocker filter driver to autostart and start it. 
 Run the following command as an Administrator:
 
-```code
+```console
 appidtel.exe start [-mionly]
 ```
 
