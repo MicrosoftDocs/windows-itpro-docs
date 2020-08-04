@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article
@@ -46,16 +47,17 @@ To enable KMS functionality, a KMS key is installed on a KMS host; then, the hos
 
 **Configure KMS in Windows 10**
 
-1.  Open an elevated command prompt.
-2.  Enter one of the following commands.
-    -   To install a KMS key, type **slmgr.vbs /ipk &lt;KmsKey&gt;**.
-    -   To activate online, type **slmgr.vbs /ato**.
-    -   To activate by using the telephone, type **slui.exe 4**.
-3.  After activating the KMS key, restart the Software Protection Service.
+To activate by using the telephone, use the slmgr.vbs script.
+
+1. Run **slmgr.vbs /dti** and confirm the installation ID.
+2. Call [Microsoft Licensing Activation Centers worldwide telephone numbers](https://www.microsoft.com/licensing/existing-customer/activation-centers) and follow the voice prompts to enter the installation ID that you obtained in step 1 on your telephone.
+3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
+4. Run **slmgr.vbs /atp \<confirmation ID\>**.
 
 For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
 
 ## Key Management Service in Windows Server 2012 R2
+
 Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
 
 **Note**  
