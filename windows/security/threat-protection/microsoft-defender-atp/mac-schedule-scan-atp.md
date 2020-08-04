@@ -41,7 +41,8 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
         </array>
         <key>RunAtLoad</key>
         <true/>
-        <key>StartCalendarInterval</key><dict>
+        <key>StartCalendarInterval</key>
+        <dict>
             <key>Day</key>
             <integer>3</integer>
             <key>Hour</key>
@@ -68,8 +69,8 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
 4. To load your file into **launchd**, enter the following commands:
 
     ```bash
-    `$ launchctl load /Library/LaunchDaemons/<your file name.plist>`
-    `$ launchctl start <your file name>`
+    launchctl load /Library/LaunchDaemons/<your file name.plist>`
+    launchctl start <your file name>`
     ```
 
 5. Your scheduled scan runs at the date, time, and frequency you defined in your .plist file. In the example, the scan runs at 2:00 AM every 7 days on a Friday, with the StartInterval using 604800 seconds for one week.
