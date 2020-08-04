@@ -41,7 +41,8 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
         </array>
         <key>RunAtLoad</key>
         <true/>
-        <key>StartCalendarInterval</key><dict>
+        <key>StartCalendarInterval</key>
+        <dict>
             <key>Day</key>
             <integer>3</integer>
             <key>Hour</key>
