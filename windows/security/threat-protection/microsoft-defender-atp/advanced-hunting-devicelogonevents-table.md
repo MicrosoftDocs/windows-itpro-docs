@@ -28,7 +28,7 @@ ms.topic: article
 The `DeviceLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from the table.
 
 > [!NOTE]
-> Collection of DeviceLogonEvents is not supported for Windows 7 or Windows Server 2008 R2.
+> Collection of DeviceLogonEvents is not supported on Windows 7 or Windows Server 2008 R2.
 > We recommend upgrading to Windows 10 or Windows Server 2019 for optimal visibility into user logon activity.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
