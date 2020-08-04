@@ -169,14 +169,6 @@
    
 ##### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
-##### [Manage antivirus in your business]()
-###### [Management overview](microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus.md)
-###### [Use Group Policy settings to configure and manage antivirus](microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
-###### [Use Microsoft Endpoint Configuration Manager and Microsoft Intune to configure and manage antivirus](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
-###### [Use PowerShell cmdlets to configure and manage antivirus](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
-###### [Use Windows Management Instrumentation (WMI) to configure and manage antivirus](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
-###### [Use the mpcmdrun.exe commandline tool to configure and manage antivirus](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-   
 ##### [Manage scans and remediation]()
 ###### [Management overview](microsoft-defender-antivirus/customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
    
@@ -197,14 +189,13 @@
 ###### [Restore quarantined files](microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
    
 ##### [Manage next-generation protection in your business]()
-###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
 ###### [Management overview](microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus.md)
 ###### [Use Microsoft Intune and Microsoft Endpoint Configuration Manager to manage next-generation protection](microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
 ###### [Use Group Policy settings to manage next-generation protection](microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
 ###### [Use PowerShell cmdlets to manage next-generation protection](microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ###### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
 ###### [Use the mpcmdrun.exe command line tool to manage next-generation protection](microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
-
+###### [Handle false positives/negatives in Microsoft Defender Antivirus](microsoft-defender-antivirus/antivirus-false-positives-negatives.md)
 
 #### [Better together: Microsoft Defender Antivirus and Microsoft Defender ATP](microsoft-defender-antivirus/why-use-microsoft-defender-antivirus.md)
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
