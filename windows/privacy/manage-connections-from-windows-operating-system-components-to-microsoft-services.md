@@ -933,19 +933,6 @@ To turn off **Location for this device**:
 - Click the **Change** button in the UI.
 
   -or-
-
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
-
-  -or-
-
-- Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
-
-
-To turn off **Location**:
-
-- Turn off the feature in the UI.
-  
-  -or-
   
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
 
@@ -953,7 +940,19 @@ To turn off **Location**:
 
 - Create a REG_DWORD registry setting named **DisableLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
 
+To turn off **Allow apps to access your location**:
 
+- Turn off the feature in the UI.
+  
+   -or-
+
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
+
+  -or-
+
+- Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
+
+ 
 To turn off **Location history**:
 
 - Erase the history using the **Clear** button in the UI.
@@ -1622,6 +1621,10 @@ You can stop sending file samples back to Microsoft.
 
 
 You can stop downloading **Definition Updates**:
+
+> [!NOTE]
+> The Group Policy path for 1809 and earlier builds is **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates**
+
 
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
