@@ -1623,6 +1623,10 @@ You can stop sending file samples back to Microsoft.
 
 You can stop downloading **Definition Updates**:
 
+> [!NOTE]
+> The Group Policy path for 1809 and earlier builds is **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates**
+
+
 - **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
   -and-
