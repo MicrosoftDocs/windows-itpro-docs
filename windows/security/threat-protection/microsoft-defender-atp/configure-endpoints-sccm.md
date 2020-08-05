@@ -28,17 +28,24 @@ ms.date: 02/07/2020
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
-<span id="sccm1606"/>
+## Supported client operating systems
 
-## Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager current branch
+Based on the version of Configuration Manager you're running, the following client operating systems can be onboarded:
 
-Configuration Manager current branch has integrated support to configure and manage Microsoft Defender ATP on managed devices. For more information, see [Microsoft Defender Advanced Threat Protection in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+#### Configuration Manager version 1910 and prior
 
-<span id="sccm1602"/>
+- Clients computers running Windows 10, version 1607 and later
 
-## Onboard Windows 10 devices using earlier versions of System Center Configuration Manager
+#### Configuration Manager version 2002 and later
 
-You can use existing Configuration Manager functionality to create a policy to configure your devices. This action is supported in System Center 2012 R2 Configuration Manager.
+Starting in Configuration Manager version 2002, you can onboard the following operating systems:
+
+- Windows 8.1
+- Windows 10, version 1607 or later
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2016, version 1803 or later
+- Windows Server 2019
 
 ### Onboard devices using System Center Configuration Manager
 
@@ -95,6 +102,44 @@ The default value in case the registry key doesn’t exist is 1.
 
 For more information about System Center Configuration Manager Compliance see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
+
+## Other recommended configuration settings
+After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration setttings.
+
+### Device collection configuration
+If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
+
+
+### Next generation protection configuration
+The following configuration settings are recommended:
+
+**Scan** <br>
+    - Scan removable storage devices such as USB drives: Yes
+
+**Real-time Protection** <br>
+- Enable Behavioral Monitoring: Yes
+- Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes
+
+**Cloud Protection Service**
+- Cloud Protection Service membership type: Advanced membership
+
+**Attack surface reduction**
+Configure all available rules to Audit.
+
+>[!NOTE]
+> Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
+
+
+**Network protection** <br>
+To avoid network outage, configuring network protection during deployment immediately after configuring endpoint protection is not recommended. 
+
+After the antimalware platform update (which supports network protection) is installed on endpoints - this is safe to turn on.
+
+For more information, see [the support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+
+
+**Controlled folder access**<br>
+Ensure audit mode is selected. Monitor detections and determine whether you need to customize the list of applications allowed to write to controlled folders and block others.
 
 
 ## Offboard devices using Configuration Manager
