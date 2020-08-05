@@ -92,7 +92,7 @@
         - name: Deploy Windows 10
           items:
             - name: Deploy Windows 10 with Autopilot
-              href: windows-autopilot/index.md
+              href: windows-autopilot/index.yml
             - name: Deploy Windows 10 with Configuration Manager
               items:
                 - name: Deploy to a new device
