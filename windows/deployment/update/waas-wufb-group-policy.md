@@ -118,7 +118,7 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 
 If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the **Select the target Feature Update version** setting instead of  using the **Specify when Preview Builds and Feature Updates are received** setting for feature update deferrals. When you use this policy, specify the version that you want your device(s) to use. If you don't update this before the device reaches end of service, the device will automatically be updated once it is 60 days past end of service for its edition.
 
-When configuring the Target Version policy, if you specify a Feature Update version that is older than your current version or is an invalid value the device will not receive any Feature Updates until the policy is updated. When the Target Version policy is specified your Feature Update deferrals will not be in effect.
+When you set the target version policy, if you specify a feature update version that is older than your current version or set a value that isn't valid, the device will not receive any feature updates until the policy is updated. When you specify target version policy, feature update deferrals will not be in effect.
 
 ### Manage how users experience updates
 
