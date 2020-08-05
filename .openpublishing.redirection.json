@@ -16294,6 +16294,126 @@
       "source_path": "windows/privacy/windows-personal-data-services-configuration.md",
       "redirect_url": "https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/add-devices.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/add-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-device-guidelines.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-device-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-faq.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-mbr.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-mbr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/utopilot-support.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/utopilot-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-update.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/bitlocker.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/bitlocker",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/deployment-process.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/deployment-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/dfci-management.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/dfci-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/enrollment-status.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/enrollment-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/existing-devices.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/existing-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/known-issues.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/known-issues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/policy-conflicts.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/policy-conflicts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/profiles.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/profiles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/registration-auth.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/registration-auth",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/self-deploying.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/self-deploying",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/troubleshooting.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/troubleshooting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/user-driven.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/user-driven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/white-glove.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/white-glove",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-reset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-scenarios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-whats-new.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot",
+      "redirect_document_id": true
     }
   ]
 }
