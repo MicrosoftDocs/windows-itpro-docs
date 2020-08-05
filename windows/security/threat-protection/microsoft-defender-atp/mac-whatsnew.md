@@ -38,6 +38,12 @@ ms.topic: conceptual
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
 
+## 101.05.16
+
+- Improvements to quick scan logic to significantly reduce the number of scanned files
+- Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool
+- Bug fixes
+
 ## 101.03.12
 
 - Performance improvements & bug fixes
