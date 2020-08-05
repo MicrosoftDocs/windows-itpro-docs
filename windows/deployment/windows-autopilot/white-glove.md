@@ -70,6 +70,7 @@ The Windows Autopilot for white glove deployment pre-provisioning process will a
 Windows Autopilot for white glove deployment supports two distinct scenarios:
 - User-driven deployments with Azure AD Join.  The device will be joined to an Azure AD tenant.
 - User-driven deployments with Hybrid Azure AD Join.  The device will be joined to an on-premises Active Directory domain, and separately registered with Azure AD.
+
 Each of these scenarios consists of two parts, a technician flow and a user flow.  At a high level, these parts are the same for Azure AD Join and Hybrid Azure AD join; differences are primarily seen by the end user in the authentication steps.
 
 ### Technician flow
