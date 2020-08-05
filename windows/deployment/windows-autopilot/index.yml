@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows Autopilot deployment resources and documentation # < 60 chars
-summary: 'Note: Windows Autopilot documentation has moved to https://docs.microsoft.com/mem/autopilot/windows-autopilot. See the links on this page for additional resources.'  # < 160 chars
+summary: 'Note: Windows Autopilot documentation has moved <a href="https://docs.microsoft.com/mem/autopilot/windows-autopilot">here</a>! A few additional resources will also be available here. See the links on this page for more information.'  # < 160 chars
 
 metadata:
   title: Windows Autopilot deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
