@@ -53,7 +53,7 @@ Windows Autopilot depends on a variety of internet-based services. Access to the
 In environments that have more restrictive Internet access, or for those that require authentication before internet access can be obtained, additional configuration may be required to allow access to the required services. 
 
 > [!NOTE]
-> Smart card and certificate based authentication are not supported during OOBE. For more information, see [Smartcards and certificate-based authentication](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#smartcards-and-certificate-based-authentication).
+> Smart card and certificate based authentication is not supported during OOBE. For more information, see [Smartcards and certificate-based authentication](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#smartcards-and-certificate-based-authentication).
 
 For additional details about each of these services and their specific requirements, review the following details:
 
@@ -95,20 +95,19 @@ If the Microsoft Store is not accessible, the Autopilot process will still conti
   <br>Intel- https://ekop.intel.com/ekcertservice 
   <br>Qualcomm- https://ekcert.spserv.microsoft.com/EKCertificate/GetEKCertificate/v1
   <br>AMD- https://ftpm.amd.com/pki/aia
-  <br>Infineon- https://pki.infineon.com
 </table>
 
 ## Licensing requirements
 
-Windows Autopilot depends on specific capabilities available in Windows 10 and Azure Active Directory. It also requires an MDM service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs:
+Windows Autopilot depends on specific capabilities available in Windows 10 and Azure Active Directory. It also requires an MDM service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs.
 
 To provide needed Azure Active Directory (automatic MDM enrollment and company branding features) and MDM functionality, one of the following is required:
-- [Microsoft 365 Business Premium subscriptions](https://www.microsoft.com/microsoft-365/business).
-- [Microsoft 365 F1 subscriptions](https://www.microsoft.com/microsoft-365/enterprise/firstline).
-- [Microsoft 365 Academic A1, A3, or A5 subscriptions](https://www.microsoft.com/education/buy-license/microsoft365/default.aspx).
-- [Microsoft 365 Enterprise E3 or E5 subscriptions](https://www.microsoft.com/microsoft-365/enterprise), which include all Windows 10, Office 365, and EM+S features (Azure AD and Intune).
-- [Enterprise Mobility + Security E3 or E5 subscriptions](https://www.microsoft.com/cloud-platform/enterprise-mobility-security), which include all needed Azure AD and Intune features.
-- [Intune for Education subscriptions](https://docs.microsoft.com/intune-education/what-is-intune-for-education), which include all needed Azure AD and Intune features.
+- [Microsoft 365 Business Premium subscription](https://www.microsoft.com/microsoft-365/business).
+- [Microsoft 365 F1 or F3 subscription](https://www.microsoft.com/microsoft-365/enterprise/firstline).
+- [Microsoft 365 Academic A1, A3, or A5 subscription](https://www.microsoft.com/education/buy-license/microsoft365/default.aspx).
+- [Microsoft 365 Enterprise E3 or E5 subscription](https://www.microsoft.com/microsoft-365/enterprise), which include all Windows 10, Office 365, and EM+S features (Azure AD and Intune).
+- [Enterprise Mobility + Security E3 or E5 subscription](https://www.microsoft.com/cloud-platform/enterprise-mobility-security), which include all needed Azure AD and Intune features.
+- [Intune for Education subscription](https://docs.microsoft.com/intune-education/what-is-intune-for-education), which include all needed Azure AD and Intune features.
 - [Azure Active Directory Premium P1 or P2](https://azure.microsoft.com/services/active-directory/) and [Microsoft Intune subscriptions](https://www.microsoft.com/cloud-platform/microsoft-intune) (or an alternative MDM service).
 
 > [!NOTE]
