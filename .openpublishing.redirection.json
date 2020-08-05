@@ -16316,8 +16316,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopilot/utopilot-support.md",
-      "redirect_url": "https://docs.microsoft.com/mem/autopilot/utopilot-support",
+      "source_path": "windows/deployment/windows-autopilot/autopilot-support.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-support",
       "redirect_document_id": true
     },
     {
