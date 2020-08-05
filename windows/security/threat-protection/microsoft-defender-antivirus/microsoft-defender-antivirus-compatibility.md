@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -97,3 +96,5 @@ If you uninstall the other product, and choose to use Microsoft Defender Antivir
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)
+- [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+- [Configure Endpoint Protection on a standalone client](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure-standalone-client)
