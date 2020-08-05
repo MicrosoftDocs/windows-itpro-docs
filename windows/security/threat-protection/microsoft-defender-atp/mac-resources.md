@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 ## Collecting diagnostic information
 
-If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
+If you can reproduce a problem, increase the logging level, run the system for some time, and restore the logging level to the default.
 
 1. Increase logging level:
 
@@ -63,7 +63,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender ATP for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
