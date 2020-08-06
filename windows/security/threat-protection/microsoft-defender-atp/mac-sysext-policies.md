@@ -265,10 +265,10 @@ Save the following content to a file named **sysext.xml**:
 
 Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs `OK`:
 
-    ```bash
-    $ plutil -lint sysext.xml
-    sysext.xml: OK
-    ```
+```bash
+$ plutil -lint sysext.xml
+sysext.xml: OK
+```
 
 To deploy this custom configuration profile:
 
