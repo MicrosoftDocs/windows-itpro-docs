@@ -82,7 +82,8 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
-You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on a device.
+This is typically done through Configuration Manager. You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
+
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they’re complaint.
 
 The configuration is set through the following registry key entry:
@@ -131,15 +132,13 @@ Configure all available rules to Audit.
 
 
 **Network protection** <br>
-To avoid network outage, configuring network protection during deployment immediately after configuring endpoint protection is not recommended. 
-
-After the antimalware platform update (which supports network protection) is installed on endpoints - this is safe to turn on.
-
-For more information, see [the support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
 
 **Controlled folder access**<br>
-Ensure audit mode is selected. Monitor detections and determine whether you need to customize the list of applications allowed to write to controlled folders and block others.
+Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
+
+For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
 
 ## Offboard devices using Configuration Manager
