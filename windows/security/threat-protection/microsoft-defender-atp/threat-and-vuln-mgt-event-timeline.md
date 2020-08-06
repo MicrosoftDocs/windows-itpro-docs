@@ -75,6 +75,9 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 
 ![Event timeline page](images/tvm-event-timeline-overview-mixed-type.png)
 
+>[!NOTE]
+>New configuration assessments are coming soon.
+
 ### Columns
 
 - **Date**: month, day, year
@@ -97,9 +100,6 @@ The following icons show up next to events:
 - ![report warning icon](images/report-warning-icon.png) New vulnerability was published
 - ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
 - ![bug icon](images/bug-caution-icon2.png) Exploit verified
-
->[!NOTE]
->New configuration assessments are coming soon.
 
 ### Drill down to a specific event
 
