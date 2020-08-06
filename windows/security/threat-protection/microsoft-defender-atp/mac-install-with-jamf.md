@@ -140,9 +140,83 @@ Use the **Logs** tab to monitor deployment status for each enrolled device.
 Starting in macOS 10.15 (Catalina) a user must manually allow to display notifications in UI. To auto-enable notifications from Defender and Auto Update, you can import the .mobileconfig below into a separate configuration profile and assign it to all devices with Defender:
 
    ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-   <plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdav.tray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+            <array>
+                <dict>
+                    <key>NotificationSettings</key>
+                    <array>
+                        <dict>
+                            <key>AlertType</key>
+                            <integer>2</integer>
+                            <key>BadgesEnabled</key>
+                            <true/>
+                            <key>BundleIdentifier</key>
+                            <string>com.microsoft.autoupdate2</string>
+                            <key>CriticalAlertEnabled</key>
+                            <false/><key>GroupingType</key>
+                            <integer>0</integer>
+                            <key>NotificationsEnabled</key>
+                            <true/>
+                            <key>ShowInLockScreen</key>
+                            <false/>
+                            <key>ShowInNotificationCenter</key>
+                            <true/>
+                            <key>SoundsEnabled</key>
+                            <true/>
+                        </dict>
+                        <dict>
+                            <key>AlertType</key>
+                            <integer>2</integer><key>BadgesEnabled</key>
+                            <true/><key>BundleIdentifier</key>
+                            <string>com.microsoft.wdav.tray</string>
+                            <key>CriticalAlertEnabled</key>
+                            <false/><key>GroupingType</key>
+                            <integer>0</integer>
+                            <key>NotificationsEnabled</key>
+                            <true/><key>ShowInLockScreen</key>
+                            <false/><key>ShowInNotificationCenter</key>
+                            <true/><key>SoundsEnabled</key>
+                            <true/>
+                        </dict>
+                    </array>
+                    <key>PayloadDescription</key>
+                    <string/><key>PayloadDisplayName</key>
+                    <string>notifications</string>
+                    <key>PayloadEnabled</key>
+                    <true/><key>PayloadIdentifier</key>
+                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+                    <key>PayloadOrganization</key>
+                    <string>Microsoft</string>
+                    <key>PayloadType</key>
+                    <string>com.apple.notificationsettings</string>
+                    <key>PayloadUUID</key>
+                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+                    <key>PayloadVersion</key>
+                    <integer>1</integer>
+                </dict>
+            </array>
+            <key>PayloadDescription</key>
+            <string/><key>PayloadDisplayName</key>
+            <string>mdatp - allow notifications</string>
+            <key>PayloadEnabled</key><true/>
+            <key>PayloadIdentifier</key>
+            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft</string>
+            <key>PayloadRemovalDisallowed</key>
+            <false/><key>PayloadScope</key>
+            <string>System</string>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadUUID</key>
+            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+    </dict>
+ </plist>   
    ```
 
 ### Package
