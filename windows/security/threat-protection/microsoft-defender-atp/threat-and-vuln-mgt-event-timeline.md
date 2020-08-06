@@ -98,6 +98,9 @@ The following icons show up next to events:
 - ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
 - ![bug icon](images/bug-caution-icon2.png) Exploit verified
 
+>[!NOTE]
+>New configuration assessments are coming soon.
+
 ### Drill down to a specific event
 
 Once you select an event, a flyout will appear listing the details and current CVEs that affect your machines. You can show more CVEs or view the related recommendation.
@@ -114,7 +117,7 @@ To open a software page, select an event > select the hyperlinked software name 
 
 A full page will appear with all the details of a specific software. Mouse over the graph to see the timeline of events for that specific software.
 
-![Software page with an Event timeline graph](images/tvm-event-timeline-software.png)
+![Software page with an Event timeline graph](images/tvm-event-timeline-software2.png)
 
  You can also navigate to the event timeline tab to view all the events related to that software, along with security recommendations, discovered vulnerabilities, installed machines, and version distribution.
 
