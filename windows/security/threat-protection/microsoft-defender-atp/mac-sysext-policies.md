@@ -51,15 +51,15 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
     ![Privacy Preferences Policy Control](images/mac-system-extension-privacy.png)
 
-### Web Content Filtering Policy
+### Network Extension Policy
 
-A web content filtering policy is needed to run the network extension. Add the following web content filtering policy:
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
 >JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
->As such, the following steps provide a workaround that involve signing the web content filtering configuration profile.
+>As such, the following steps provide a workaround that involve signing the configuration profile.
 
-1. Save the following content to your device as `com.apple.webcontent-filter.mobileconfig`
+1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig`
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -74,7 +74,7 @@ A web content filtering policy is needed to run the network extension. Add the f
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Content Filter</string>
+            <string>Microsoft Defender ATP Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -97,7 +97,7 @@ A web content filtering policy is needed to run the network extension. Add the f
                     <key>PayloadIdentifier</key>
                     <string>CEBF7A71-D9A1-48BD-8CCF-BD9D18EC155A</string>
                     <key>PayloadDisplayName</key>
-                    <string>Approved Content Filter</string>
+                    <string>Approved Network Extension</string>
                     <key>PayloadDescription</key>
                     <string/>
                     <key>PayloadVersion</key>
@@ -107,7 +107,7 @@ A web content filtering policy is needed to run the network extension. Add the f
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Content Filter</string>
+                    <string>Microsoft Defender ATP Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -125,8 +125,8 @@ A web content filtering policy is needed to run the network extension. Add the f
 2. Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs `OK`:
 
     ```bash
-    $ plutil -lint com.apple.webcontent-filter.mobileconfig
-    com.apple.webcontent-filter.mobileconfig: OK
+    $ plutil -lint com.microsoft.network-extension.mobileconfig
+    com.microsoft.network-extension.mobileconfig: OK
     ```
 
 3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
@@ -134,10 +134,10 @@ A web content filtering policy is needed to run the network extension. Add the f
 4. After the certificate is created and installed to your device, run the following command from the Terminal:
 
     ```bash
-    $ security cms -S -N "<certificate name>" -i com.apple.webcontent-filter.mobileconfig -o com.apple.webcontent-filter.signed.mobileconfig
+    $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
     ```
 
-5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.apple.webcontent-filter.signed.mobileconfig` when prompted for the file.
+5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.
 
 ## Intune
 
@@ -162,7 +162,7 @@ To approve the system extensions:
 
 ### Create and deploy the Custom Configuration Profile
 
-The following configuration profile enables the web content filter and grants Full Disk Access to the Endpoint Security system extension. 
+The following configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension. 
 
 Save the following content to a file named **sysext.xml**:
 
@@ -202,7 +202,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>PayloadIdentifier</key>
                 <string>CEBF7A71-D9A1-48BD-8CCF-BD9D18EC155A</string>
                 <key>PayloadDisplayName</key>
-                <string>Approved Content Filter</string>
+                <string>Approved Network Extension</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -212,7 +212,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Content Filter</string>
+                <string>Microsoft Defender ATP Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>
