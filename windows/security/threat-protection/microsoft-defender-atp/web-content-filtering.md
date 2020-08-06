@@ -28,7 +28,7 @@ Web content filtering is part of [Web protection](web-protection-overview.md) ca
 
 You can configure policies across your device groups to block certain categories, effectively preventing users within specified device groups from accessing URLs that are associated with the category. For any category that's not blocked, they are automatically audited i.e. your users will be able to access the URLs without disruption and you will continue to gather access statistics to help create a more custom policy decision. If an element on the page you’re viewing is making calls to a resource which is blocked, your users will see a block notification.
 
-Web content filtering is available on the major web browsers, with blocks performed by SmartScreen (Edge) and Network Protection (Chrome and Firefox). See the prerequisites section for more information about browser support.
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Edge) and Network Protection (Chrome and Firefox). See the prerequisites section for more information about browser support.
 
 To summarize the benefits:
 
@@ -49,7 +49,7 @@ Before trying out this feature, make sure you have the following:
 - Windows 10 Enterprise E5 license
 - Access to Microsoft Defender Security Center portal
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update. 
-Note that if SmartScreen is not turned on, Network Protection will take over the blocking. This requires [enabling Network Protection](enable-network-protection.md) on the device.
+Note that if Windows Defender SmartScreen is not turned on, Network Protection will take over the blocking. This requires [enabling Network Protection](enable-network-protection.md) on the device.
 
 ## Data handling
 
@@ -123,7 +123,7 @@ Use the time range filter at the top left of the page to select a time period. Y
 ## Errors and issues
 
 ### Limitations and known issues in this preview
-- Only Edge is supported if your device's OS configuraiton is Server (cmd > Systeminfo > OS Configuration). This is because Network Protection is only supported in Inspect mode on Server devices which is responsible for securing traffic across Chrome/Firefox.
+- Only Edge is supported if your device's OS configuration is Server (cmd > Systeminfo > OS Configuration). This is because Network Protection is only supported in Inspect mode on Server devices which is responsible for securing traffic across Chrome/Firefox.
 
 - Unassigned devices will have incorrect data shown within the report. In the Report details > Device groups pivot, you may see a row with a blank Device Group field. This group contains your unassigned devices in the interim before they get put into your specified group. The report for this row may not contain an accurate count of devices or access counts.
 
