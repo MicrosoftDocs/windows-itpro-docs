@@ -82,7 +82,10 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
-This is typically done through Configuration Manager. You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
+>[!NOTE]
+>These configuration settings are typically done through Configuration Manager. 
+
+You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they’re complaint.
 
