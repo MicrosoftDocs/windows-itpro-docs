@@ -64,7 +64,7 @@ The `Production` channel contains the most stable version of the product.
 >[!WARNING]
 >This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender ATP for Mac, execute the following command after replacing `[channel-name]` with the desired channel:
 > ```bash
-> $ defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### Set update check frequency

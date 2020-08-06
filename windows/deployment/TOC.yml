@@ -43,6 +43,8 @@
           href: update/plan-determine-app-readiness.md 
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
+        - name: Delivery Optimization for Windows 10 updates
+          href: update/waas-delivery-optimization-reference.md
         - name: Best practices for feature updates on mission-critical devices
           href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
@@ -72,8 +74,6 @@
           href: update/waas-branchcache.md
         - name: Prepare your deployment tools
           items:
-            - name: Register devices for deployment with Windows Autopilot
-              href: windows-autopilot/add-devices.md
             - name: Prepare for deployment with MDT
               href: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
             - name: Prepare for deployment with Configuration Manager
@@ -92,7 +92,7 @@
         - name: Deploy Windows 10
           items:
             - name: Deploy Windows 10 with Autopilot
-              href: windows-autopilot/windows-autopilot-scenarios.md
+              href: windows-autopilot/index.yml
             - name: Deploy Windows 10 with Configuration Manager
               items:
                 - name: Deploy to a new device

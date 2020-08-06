@@ -25,12 +25,12 @@ ms.topic: conceptual
 
 ## Collecting diagnostic information
 
-If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
+If you can reproduce a problem, increase the logging level, run the system for some time, and restore the logging level to the default.
 
 1. Increase logging level:
 
    ```bash
-   $ mdatp --log-level verbose
+   mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -38,10 +38,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp --diagnostic --create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   $ sudo mdatp --diagnostic --create
+   sudo mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    ```
@@ -49,7 +49,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 4. Restore logging level:
 
    ```bash
-   $ mdatp --log-level info
+   mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -63,7 +63,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender ATP for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
@@ -99,6 +99,36 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]` OR `mdatp --edr --earlyPreview [true/false]` for versions earlier than 100.78.0                                |
 |EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
 |EDR          |Remove group tag from device              |`mdatp --edr --remove-tag [name]`                                            |
+
+### How to enable autocompletion
+
+To enable autocompletion in `Bash`, run the following command and restart the Terminal session:
+
+```bash
+$ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+```
+
+To enable autocompletion in `zsh`:
+
+- Check whether autocompletion is enabled on your device:
+
+   ```zsh
+   $ cat ~/.zshrc | grep autoload
+   ```
+
+- If the above command does not produce any output, you can enable autocompletion using the following command:
+
+   ```zsh
+   $ echo "autoload -Uz compinit && compinit" >> ~/.zshrc
+   ```
+
+- Run the following command to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+
+   ```zsh
+   sudo mkdir -p /usr/local/share/zsh/site-functions
+
+   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   ```
 
 ## Client Microsoft Defender ATP quarantine directory
 
