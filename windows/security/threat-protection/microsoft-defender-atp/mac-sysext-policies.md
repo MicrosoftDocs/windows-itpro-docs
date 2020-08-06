@@ -115,7 +115,7 @@ A web content filtering policy is needed to run the network extension. Add the f
                     <key>FilterDataProviderBundleIdentifier</key>
                     <string>com.microsoft.wdav.netext</string>
                     <key>FilterDataProviderDesignatedRequirement</key>
-                    <string>identifier &quot;com.microsoft.wdav.netext&quot; and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                    <string>identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
                 </dict>
             </array>
         </dict>
