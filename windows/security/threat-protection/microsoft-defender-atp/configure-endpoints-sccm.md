@@ -114,7 +114,7 @@ If you're using Endpoint Configuration Manager, version 2002 or later, you can c
 The following configuration settings are recommended:
 
 **Scan** <br>
-    - Scan removable storage devices such as USB drives: Yes
+- Scan removable storage devices such as USB drives: Yes
 
 **Real-time Protection** <br>
 - Enable Behavioral Monitoring: Yes
