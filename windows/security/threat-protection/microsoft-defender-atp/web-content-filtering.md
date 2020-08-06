@@ -49,7 +49,7 @@ Before trying out this feature, make sure you have the following:
 - Windows 10 Enterprise E5 license
 - Access to Microsoft Defender Security Center portal
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update. 
-Note that if SmartScreen is not turned on, Network Protection will take over the blocking. This requires enabling Network Protection [on the device](enable-network-protection.md).
+Note that if SmartScreen is not turned on, Network Protection will take over the blocking. This requires [enabling Network Protection](enable-network-protection.md) on the device.
 
 ## Data handling
 
