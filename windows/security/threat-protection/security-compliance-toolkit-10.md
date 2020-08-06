@@ -27,6 +27,7 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 - Windows 10 security baselines
+    - Windows 10 Version 2004 (May 2020 Update)
     - Windows 10 Version 1909 (November 2019 Update)
     - Windows 10 Version 1903 (May 2019 Update)
     - Windows 10 Version 1809 (October 2018 Update)
@@ -80,63 +81,3 @@ It can export local policy to a GPO backup.
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
 Documentation for the LGPO tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/lgpo-exe-local-group-policy-object-utility-v1-0/ba-p/701045) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
-
-## List of PowerShell scripts
-
-This list of PowerShell script names, divided into categories by the name of the ZIP file containing those scripts, is based on the download page content listing of the full package download (12 files).
-
-1. **Windows 10 Version 1909 and Windows Server Version 1909 Security Baseline.zip**
-
-    - Baseline-ADImport.ps1
-    - Baseline-LocalInstall.ps1
-    - Remove-EPBaselineSettings.ps1
-    - MapGuidsToGpoNames.ps1
-
-2. **LGPO.zip**
-    - (none)
-
-3. **Microsoft Edge v80.zip**
-
-    - Baseline-ADImport.ps1
-    - Baseline-LocalInstall.ps1
-    - MapGuidsToGpoNames.ps1
-
-4. **Office365-ProPlus-Sept2019-FINAL.zip**
-
-    - Baseline-ADImport.ps1
-    - Baseline-LocalInstall.ps1
-    - MapGuidsToGpoNames.ps1
-
-5. **PolicyAnalyzer.zip**
-
-    - Merge-PolicyRules.ps1
-    - Split-PolicyRules.ps1
-
-6. **Windows 10 Version 1507 Security Baseline.zip**
-    - (none)
-
-7. **Windows 10 Version 1607 and Windows Server 2016 Security Baseline.zip**
-
-    - MapGuidsToGpoNames.ps1
-
-8. **Windows 10 Version 1709 Security Baseline.zip**
-
-    - MapGuidsToGpoNames.ps1
-
-9. **Windows 10 Version 1803 Security Baseline.zip**
-
-    - MapGuidsToGpoNames.ps1
-
-10. **Windows 10 Version 1809 and Windows Server 2019 Security Baseline.zip**
-
-    - BaselineLocalInstall.ps1
-    - MapGuidsToGpoNames.ps1
-
-11. **Windows 10 Version 1903 and Windows Server Version 1903 Security Baseline - Sept2019Update.zip**
-
-    - Baseline-ADImport.ps1
-    - Baseline-LocalInstall.ps1
-    - MapGuidsToGpoNames.ps1
-
-12. **Windows Server 2012 R2 Security Baseline.zip**
-    - (none)

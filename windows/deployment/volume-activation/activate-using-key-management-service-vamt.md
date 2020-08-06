@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article
@@ -46,12 +47,12 @@ To enable KMS functionality, a KMS key is installed on a KMS host; then, the hos
 
 **Configure KMS in Windows 10**
 
-1.  Open an elevated command prompt.
-2.  Enter one of the following commands.
-    -   To install a KMS key, type **slmgr.vbs /ipk &lt;KmsKey&gt;**.
-    -   To activate online, type **slmgr.vbs /ato**.
-    -   To activate by using the telephone, type **slui.exe 4**.
-3.  After activating the KMS key, restart the Software Protection Service.
+To activate by using the telephone, use the slmgr.vbs script.
+
+1. Run **slmgr.vbs /dti** and confirm the installation ID.
+2. Call [Microsoft Licensing Activation Centers worldwide telephone numbers](https://www.microsoft.com/licensing/existing-customer/activation-centers) and follow the voice prompts to enter the installation ID that you obtained in step 1 on your telephone.
+3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
+4. Run **slmgr.vbs /atp \<confirmation ID\>**.
 
 For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
 
@@ -114,9 +115,9 @@ Now that the KMS host is configured, it will begin to listen for activation requ
 ## Verifying the configuration of Key Management Service
 
 You can verify KMS volume activation from the KMS host server or from the client computer. KMS volume activation requires a minimum threshold of 25 computers before activation requests will be processed. The verification process described here will increment the activation count each time a client computer contacts the KMS host, but unless the activation threshold is reached, the verification will take the form of an error message rather than a confirmation message.
-**Note**  
 
-If you configured Active Directory-based activation before configuring KMS activation, you must use a client computer that will not first try to activate itself by using Active Directory-based activation. You could use a workgroup computer that is not joined to a domain or a computer running Windows 7 or Windows Server 2008 R2.
+> [!NOTE]
+> If you configured Active Directory-based activation before configuring KMS activation, you must use a client computer that will not first try to activate itself by using Active Directory-based activation. You could use a workgroup computer that is not joined to a domain or a computer running Windows 7 or Windows Server 2008 R2.
 
 To verify that KMS volume activation works, complete the following steps:
 
