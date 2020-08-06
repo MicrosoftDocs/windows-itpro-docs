@@ -1,6 +1,21 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["windows/"]
  
+  :targets 
+   {
+     :counts {
+              ;;:spelling 10
+              ;;:grammar 3
+              ;;:total 15 ;; absolute flag count but i don't know the difference between this and issues
+              ;;:issues 15 ;; coming from the platform, will need to be tested.
+             }
+     :scores {
+              ;;:terminology 100
+              :min-score 20 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              ;;:spelling 40
+             }
+   }
+ 
  :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
  
  :acrolinx-check-settings
@@ -12,7 +27,7 @@
                         "TERMINOLOGY_VALID"
                         "VOICE_GUIDANCE"
                         ]
-  "termSetNames" ["M365"]
+  "termSetNames" ["M365" "Products" "Microsoft"] 
  }
  
  :template-header
