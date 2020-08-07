@@ -27,8 +27,6 @@ manager: dansimp
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
-<a id="ref1"></a>
-
 ## Use Microsoft Endpoint Configuration Manager to configure scanning options:
 
 See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
@@ -69,6 +67,8 @@ See [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell
 ## Use WMI to configure scanning options
 
 For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
+
+<a id="ref1"></a>
 
 ## Email scanning limitations
 
