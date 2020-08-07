@@ -24,37 +24,37 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic due to compliance regulations, bandwidth usage, or other concerns.
+Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-You can configure policies across your device groups to block certain categories, effectively preventing users within specified device groups from accessing URLs that are associated with the category. For any category that's not blocked, they are automatically audited i.e. your users will be able to access the URLs without disruption and you will continue to gather access statistics to help create a more custom policy decision. If an element on the page you’re viewing is making calls to a resource which is blocked, your users will see a block notification.
+You can configure policies across your device groups to block certain categories, effectively preventing users within specified device groups from accessing URLs that are associated with the category. For any category that's not blocked, they are automatically audited. That means your users will be able to access the URLs without disruption, and you will continue to gather access statistics to help create a more custom policy decision. If an element on the page you’re viewing is making calls to a resource that is blocked, your users will see a block notification.
 
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Edge) and Network Protection (Chrome and Firefox). See the prerequisites section for more information about browser support.
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome and Firefox). For more information about browser support, see the prerequisites section.
 
-To summarize the benefits:
+Summarizing the benefits:
 
-- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
-- You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- You can access web reports in the same central location, with visibility over actual blocks and web usage
+- Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
+- Conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- Access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
 
 The blocking experience for Chrome/Firefox is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. 
 
-For a more user-friendly in-browser experience, consider using Edge.
+For a more user-friendly in-browser experience, consider using Microsoft Edge.
 
 ## Prerequisites
 
 Before trying out this feature, make sure you have the following:
 
-- Windows 10 Enterprise E5 license
+- Windows 10 Enterprise E5 license OR Microsoft 365 E3 + Microsoft 365 E5 Security add-on.
 - Access to Microsoft Defender Security Center portal
-- Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update. 
-Note that if Windows Defender SmartScreen is not turned on, Network Protection will take over the blocking. This requires [enabling Network Protection](enable-network-protection.md) on the device.
+- Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
+
+If Windows Defender SmartScreen is not turned on, Network Protection will take over the blocking. It requires [enabling Network Protection](enable-network-protection.md) on the device.
 
 ## Data handling
 
 For this feature, we will follow whichever region you have elected to use as part of your [Microsoft Defender ATP data handling settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
-
 
 ## Turn on web content filtering
 
@@ -79,7 +79,7 @@ To add a new policy:
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
->ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy. 
+>ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
 
 ## Web content filtering cards and details
 
@@ -119,11 +119,11 @@ You can access the **Report details** for each card by selecting a table row or 
 
 Use the time range filter at the top left of the page to select a time period. You can also filter the information or customize the columns. Select a row to open a flyout pane with even more information about the selected item.
 
-
 ## Errors and issues
 
 ### Limitations and known issues in this preview
-- Only Edge is supported if your device's OS configuration is Server (cmd > Systeminfo > OS Configuration). This is because Network Protection is only supported in Inspect mode on Server devices which is responsible for securing traffic across Chrome/Firefox.
+
+- Only Edge is supported if your device's OS configuration is Server (cmd > Systeminfo > OS Configuration). This is because Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across Chrome/Firefox.
 
 - Unassigned devices will have incorrect data shown within the report. In the Report details > Device groups pivot, you may see a row with a blank Device Group field. This group contains your unassigned devices in the interim before they get put into your specified group. The report for this row may not contain an accurate count of devices or access counts.
 
