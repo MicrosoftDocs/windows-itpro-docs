@@ -115,6 +115,9 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
+
+
+> [!NOTE]
 > URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
 
 
