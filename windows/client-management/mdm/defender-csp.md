@@ -399,6 +399,26 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
+<a href="" id="configuration-supportLogLocation"></a>**Configuration/SupportLogLocation**  
+The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (MpCmdRun.exe) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
+
+Data type is: String 
+
+Supported operations are Add, Delete, Get, Replace.
+
+Intune Support log location setting UX supports three states:  
+
+- Not configured (default): Does not have any impact on the default state of the device. 
+- 1 - Enabled: Enables the Support log location feature. -> requires Admin to set custom file path 
+- 0 - Disabled: Turns off the Support log location feature. 
+
+When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+
+More details:  
+
+-   [Microsoft Defender AV diagnostic data](https://review.docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data?branch=master)  
+-   [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
 
