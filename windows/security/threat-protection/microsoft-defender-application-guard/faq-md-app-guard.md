@@ -111,3 +111,51 @@ If hyperthreading is disabled (because of an update applied through a KB article
 
 Application Guard may not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
 
+### Why am I getting the error message ("ERR_NAME_NOT_RESOLVED") after not being able to reach PAC file?
+
+This is a known issue. To mitigate this you need to create two firewall rules.
+For guidance on how to create a firewall rule by using group policy, see:
+- [Create an inbound icmp rule](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
+- [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
+
+First rule (DHCP Server):
+1. Program path: %SystemRoot%\System32\svchost.exe
+2. Local Service: Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))
+3. Protocol UDP
+4. Port 67
+
+Second rule (DHCP Client)
+This is the same as the first rule, but scoped to local port 68.
+In the Microsoft Defender Firewall user interface go through the following steps:
+1.	Right click on inbound rules, create a new rule.
+2.	Choose **custom rule**.
+3.	Program path: **%SystemRoot%\System32\svchost.exe**.
+4.	Protocol Type: UDP, Specific ports: 67, Remote port: any.
+5.	Any IP addresses.
+6.	Allow the connection.
+7.	All profiles.
+8.	The new rule should show up in the user interface. Right click on the **rule** > **properties**.
+9.	In the **Programs and services** tab, Under the **Services** section click on **settings**. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
+
+### Why can I not launch Application Guard when Exploit Guard is enabled?
+
+There is a known issue where if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to Windows Security-> App and Browser control -> Exploit Protection Setting -> switch CFG to the “use default".
+
+
+### How can I have ICS in enabled state yet still use Application Guard?
+
+This is a two step process.
+
+Step 1:
+
+Enable Internet Connection sharing by changing the Group Policy setting “Prohibit use of Internet Connection Sharing on your DNS domain network” which is part of the MS Security baseline from Enabled to Disabled.
+ 
+Step 2:
+ 
+1. Disable IpNat.sys from ICS load
+System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1
+2. Configure ICS (SharedAccess) to enabled
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3
+3. Disabling IPNAT (Optional)
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4
+4. Reboot.

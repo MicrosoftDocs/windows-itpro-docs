@@ -26,6 +26,9 @@ ms.topic: article
 
 Before you begin, ensure that you meet the following operating system or platform requisites for threat and vulnerability management so the activities in your devices are properly accounted for.
 
+>[!NOTE]
+>Operating systems supported by Microsoft Defender ATP are not necessarily supported by threat and vulnerability management (like MacOS and Linux).
+
 Operating system | Security assessment support
 :---|:---
 Windows 7 | Operating System (OS) vulnerabilities
