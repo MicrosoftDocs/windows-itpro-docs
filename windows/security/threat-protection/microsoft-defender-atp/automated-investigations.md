@@ -65,22 +65,24 @@ If an incriminated entity is seen in another device, the automated investigation
 
 Depending on how you set up the device groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
 
+> [!NOTE]
+> Microsoft Defender ATP tenants created on or after August 16, 2020 will have **Full - remediate threats automatically** selected by default. You can keep the default setting, or change it according to your organizational needs. To change your settings, [adjust your device group settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
+
 You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|No automated response | Devices do not get any automated investigations run on them. |
-|Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. |
-|Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
-|Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.|
-|Full - remediate threats automatically | All remediation actions will be performed automatically.|
+|**Full - remediate threats automatically** | All remediation actions will be performed automatically.<br/><br/>Microsoft Defender ATP tenants will have **Full - remediate threats automatically** selected by default.|
+|**Semi - require approval for core folders remediation** | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br/><br/> Files or executables in all other folders will  automatically be remediated if needed.|
+|**Semi - require approval for non-temp folders remediation** | An approval is required on files or executables that are not in temporary folders. <br/><br/> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
+|**Semi - require approval for any remediation** | This is the default automation level.<br/><br/>  An approval is needed for any remediation action. |
+|**No automated response** | Devices do not get any automated investigations run on them. |
 
-> [!TIP]
-> For more information on how to configure these automation levels, see [Create and manage device groups](machine-groups.md).
+### A few points to keep in mind
 
-The default device group is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
-
-When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
+- Your level of automation is determined by your device group settings. See [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
+- If your Microsoft Defender ATP tenant was created prior to August 16, 2020, you have a default device group that is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). This can be changed to fully automatic so that no user approval is needed. 
+- If your Microsoft Defender ATP tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. This means that remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
 
 ## Next steps
 
