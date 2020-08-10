@@ -33,13 +33,13 @@ Watch this video for a quick overview of threat and vulnerability management.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
 
-## Next generation capabilities
+## Bridging the workflow gaps
 
-Threat and vulnerability management is built-in, real time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
+Threat and vulnerability management is built in, real time, and cloud powered. It is fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
 
-It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Endpoint Configuration Manager.
+Vulnerability management is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Endpoint Configuration Manager.
 
-It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication.
+It provides the following solutions to frequently cited gaps across security operations, security administration, and IT administration workflows and communication.
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Linked device vulnerability and security configuration assessment data in the context of exposure discovery
