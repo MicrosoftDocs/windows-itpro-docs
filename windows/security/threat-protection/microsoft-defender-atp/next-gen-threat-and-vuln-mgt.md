@@ -27,17 +27,17 @@ ms.topic: conceptual
 
 Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. Threat and vulnerability management serves as an infrastructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience.
 
-It helps organizations discover vulnerabilities and misconfigurations in real-time, based on sensors, without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
+Discover vulnerabilities and misconfigurations in real time with sensors, and without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
 
 Watch this video for a quick overview of threat and vulnerability management.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
 
-## Next-generation capabilities
+## Next generation capabilities
 
-Threat and vulnerability management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
+Threat and vulnerability management is built-in, real time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
 
-It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Microsoft Endpoint Configuration Manager.
+It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Endpoint Configuration Manager.
 
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication.
 
@@ -95,7 +95,7 @@ Ensure that your devices:
 > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
+- Are onboarded to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure). If you are using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the device page
 - Are tagged or marked as co-managed
 

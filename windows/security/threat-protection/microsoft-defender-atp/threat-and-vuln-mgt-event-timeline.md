@@ -76,7 +76,7 @@ The two large numbers at the top of the page show the number of new vulnerabilit
 ![Event timeline page](images/tvm-event-timeline-overview-mixed-type.png)
 
 >[!NOTE]
->New configuration assessments are coming soon.
+>Event type called "New configuration assessment" coming soon.
 
 ### Columns
 
