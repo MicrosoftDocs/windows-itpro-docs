@@ -81,7 +81,9 @@ You can configure the following levels of automation:
 ### A few points to keep in mind
 
 - Your level of automation is determined by your device group settings. See [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
+
 - If your Microsoft Defender ATP tenant was created prior to August 16, 2020, you have a default device group that is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). This can be changed to fully automatic so that no user approval is needed. 
+
 - If your Microsoft Defender ATP tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. This means that remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
 
 ## Next steps
