@@ -26,9 +26,9 @@ ms.topic: article
 In this section we will be using Microsoft Endpoint Manager (MEM) to deploy
 Microsoft Defender ATP to your endpoints.
 
-For more information about MEM, see:
+For more information about MEM, check out the following:
 - [Microsoft Entpoint Manager page](https://docs.microsoft.com/en-us/mem/)
-- The [blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
+- [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
 
@@ -42,8 +42,8 @@ This process is a multi-step process, you'll need to:
 
     -   In MEM we'll guide you in creating a separate policy for each feature
 
-Resources
----------
+## Resources
+
 
 Here are the links you'll need for the rest of the process:
 
@@ -53,8 +53,8 @@ Here are the links you'll need for the rest of the process:
 
 -   [Intune Security baselines](https://docs.microsoft.com/en-us/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
-## Idenfity target devices or users
-In this section we will create a testing group to assign your configurations.
+## Identify target devices or users
+In this section we will create a test group to assign your configurations on.
 
 >[!NOTE]
 >Intune uses Azure Active Directory (Azure AD) groups to manage devices and
@@ -62,7 +62,7 @@ users. As an Intune admin, you can set up groups to suit your organizational
 needs.<br>
 > For more information, see [Add groups to organize users and devices](https://docs.microsoft.com/en-us/mem/intune/fundamentals/groups-add).
 
-### Group creation
+### Create a group
 
 1.  Open the MEM portal.
 
@@ -74,7 +74,7 @@ needs.<br>
 
     ![Image of Microsoft Endpoint Manager portal](images/b1e0206d675ad07db218b63cd9b9abc3.png)
 
-4.  Add your test user / device
+4.  Add your test user or device.
 
     >[!NOTE]
     >Azure Active Directory groups can contain users or devices, not combinations of both.
@@ -83,271 +83,264 @@ needs.<br>
 
 6.  Click on **Members > Add members**.
 
-7.  Find your test user/device and select it.
+7.  Find your test user or device and select it.
 
-    ![](images/149cbfdf221cdbde8159d0ab72644cd0.png)
+    ![Image of Microsoft Endpoint Manager portal](images/149cbfdf221cdbde8159d0ab72644cd0.png)
 
 8.  Your testing group now has a member to test.
 
-Create a Configuration Policy
------------------------------
-
-In the following section, you will create a number of configuration policies.
+## Create a configuration policy
+In the following section, you'll create a number of configuration policies.
 First is a configuration policy to select which groups of users or devices will
-be onboarded to Defender ATP. Then you will continue by creating several
+be onboarded to Microsoft Defender ATP. Then you will continue by creating several
 different types of Endpoint Security policies.
 
-### Endpoint Detection and Response
+### Endpoint detection and response
 
-1.  Open the MEM portal
+1.  Open the MEM portal.
 
-2.  Navigate to Endpoint security > Endpoint detection and response > Click
-    on Create Profile
+2.  Navigate to **Endpoint security > Endpoint detection and response**. Click
+    on **Create Profile**.
 
-    ![](images/58dcd48811147feb4ddc17212b7fe840.png)
+    ![Image of Microsoft Endpoint Manager portal](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3.  Under Platform, select Windows 10 and Later, Profile - Endpoint detection
-    and response > Create
+3.  Under** Platform, select Windows 10 and Later, Profile - Endpoint detection
+    and response > Create**.
 
-4.  Enter name and description > Next
+4.  Enter name and description, then click **Next**.
 
-    ![](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
+    ![Image of Microsoft Endpoint Manager portal](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
 
-5.  Select settings as required > Next
+5.  Select settings as required, then click **Next**.
 
-    ![](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
-    NOTE: this has been auto populated as I have integrated MDATP and Intune as
-    per this
-    [section](https://docs.microsoft.com/en-us/mem/intune/protect/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).
-    If you have not integrated MDATP and Intune, complete [these
-    steps](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm#onboard-machines-using-microsoft-intune)
+    >[!NOTE]
+    >In this instance, this has been auto populated Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).
+    If you have not integrated Microsoft Defender ATP h and Intune, complete [these
+    steps](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm#onboard-machines-using-microsoft-intune)
     to create and upload an onboarding blob.
 
-    ![](images/2466460812371ffae2d19a10c347d6f4.png)
+    ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
 
-6.  Add scope tags if required > Next
+6.  Add scope tags if required, then click **Next**.
 
-    ![](images/ef844f52ec2c0d737ce793f68b5e8408.png)
+    ![Image of Microsoft Endpoint Manager portal](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7.  Add test group by clicking on Select groups to include and choose your group
-    > Next
+7.  Add test group by clicking on Select groups to include and choose your group, then click **Next**.
 
-    ![](images/fc3525e20752da026ec9f46ab4fec64f.png)
+    ![Image of Microsoft Endpoint Manager portal](images/fc3525e20752da026ec9f46ab4fec64f.png)
 
-8.  Review and accept > Create
+8.  Review and accept, then click **Create**.
 
-    ![](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    ![Image of Microsoft Endpoint Manager portal](images/289172dbd7bd34d55d24810d9d4d8158.png)
 
-9.  You can view your completed policy here
+9.  You can view your completed policy.
 
-    ![](images/5a568b6878be8243ea2b9d82d41ed297.png)
+    ![Image of Microsoft Endpoint Manager portal](images/5a568b6878be8243ea2b9d82d41ed297.png)
 
-### Antivirus
+### Next-generation protection
 
-1.  Open the MEM portal
+1.  Open the MEM portal.
 
-2.  Navigate to Endpoint security > Antivirus > Click on Create Policy
+2.  Navigate to **Endpoint security > Antivirus > Create Policy**.
 
-    ![](images/6b728d6e0d71108d768e368b416ff8ba.png)
+    ![Image of Microsoft Endpoint Manager portal](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3.  Select Platform - Windows 10 and Later - Windows and Profile – Microsoft
-    Defender Antivirus > Create
+3.  Select** Platform - Windows 10 and Later - Windows and Profile – Microsoft
+    Defender Antivirus > Create**.
 
-4.  Enter Name and Description - \> Next
+4.  Enter name and description, then click **Next**.
 
-    ![](images/a7d738dd4509d65407b7d12beaa3e917.png)
+    ![Image of Microsoft Endpoint Manager portal](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
 5.  In the Configuration settings page: Set the configurations you require for
     Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real Time
     Protection, and Remediation).
 
-    ![](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
+    ![Image of Microsoft Endpoint Manager portal](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
 
-6.  Add scope tags if required> Next
+6.  Add scope tags if required, then click **Next**.
 
-    ![](images/2055e4f9b9141525c0eb681e7ba19381.png)
+    ![Image of Microsoft Endpoint Manager portal](images/2055e4f9b9141525c0eb681e7ba19381.png)
 
 7.  Select groups to include, assign to your test group > Next
 
-    ![](images/48318a51adee06bff3908e8ad4944dc9.png)
+    ![Image of Microsoft Endpoint Manager portal](images/48318a51adee06bff3908e8ad4944dc9.png)
 
-8.  Review and create > create
+8.  Review and create, then click **Create**.
 
-    ![](images/dfdadab79112d61bd3693d957084b0ec.png)
+    ![Image of Microsoft Endpoint Manager portal](images/dfdadab79112d61bd3693d957084b0ec.png)
 
 9.  You can see the configuration policy you created as per below
 
-    ![](images/38180219e632d6e4ec7bd25a46398da8.png)
+    ![Image of Microsoft Endpoint Manager portal](images/38180219e632d6e4ec7bd25a46398da8.png)
 
 ### Attack Surface Reduction – Attack surface reduction rules
 
-1.  Open the MEM portal
+1.  Open the MEM portal.
 
-2.  Navigate to Endpoint security > Attack surface reduction
+2.  Navigate to **Endpoint security > Attack surface reduction**.
 
-3.  Click on Create Policy
+3.  Click on **Create Policy**.
 
-4.  NOTE: I will be setting these as audit
+    >[!NOTE]
+    >We will be setting these as Audit.
 
-5.  Select Platform - Windows 10 and Later – Profile - Attack surface reduction
-    rules > Create
+5.  Select **Platform - Windows 10 and Later – Profile - Attack surface reduction
+    rules > Create**.
 
-    ![](images/522d9bb4288dc9c1a957392b51384fdd.png)
+    ![Image of Microsoft Endpoint Manager portal](images/522d9bb4288dc9c1a957392b51384fdd.png)
 
-6.  Enter Name and Description > Next
+6.  Enter a name and description, then click **Next**.
 
-    ![](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
+    ![Image of Microsoft Endpoint Manager portal](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
 7.  In the Configuration settings page: Set the configurations you require for
     Attack surface reduction rules > Next
 
-    NOTE: I am configuring all of my Attack surface reduction rules to Audit.
+    >[!NOTE]
+    >We will be configuring all of the Attack surface reduction rules to Audit.
 
-    Details on Attack surface reduction rules:
-    <https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction>
+    For more information, see [Attack surface reduction rules](attack-surface-reduction.md).
 
-    ![](images/dd0c00efe615a64a4a368f54257777d0.png)
+    ![Image of Microsoft Endpoint Manager portal](images/dd0c00efe615a64a4a368f54257777d0.png)
 
-8.  Add Scope Tags as required > Next
+8.  Add Scope Tags as required, then click **Next**.
 
-    ![](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    ![Image of Microsoft Endpoint Manager portal](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
-9.  Select groups to include and assign to test group > Next
+9.  Select groups to include and assign to test group, then click **Next**.
 
-    ![](images/45cefc8e4e474321b4d47b4626346597.png)
+    ![Image of Microsoft Endpoint Manager portal](images/45cefc8e4e474321b4d47b4626346597.png)
 
-10. Review and Create - \> Create
+10. Review the details, then click **Create**.
 
-    ![](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
+    ![Image of Microsoft Endpoint Manager portal](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
 
-11. You can View the policy
+11. View the policy.
 
-![](images/7a631d17cc42500dacad4e995823ffef.png)
+    ![Image of Microsoft Endpoint Manager portal](images/7a631d17cc42500dacad4e995823ffef.png)
 
 ### Attack Surface Reduction – Web Protection
 
-1.  Open the MEM portal
+1.  Open the MEM portal.
 
-2.  Navigate to Endpoint security > Attack surface reduction
+2.  Navigate to **Endpoint security > Attack surface reduction**.
 
-3.  Click on Create Policy
+3.  Click on **Create Policy**.
 
-4.  Select Windows 10 and Later – Web protection > Create
+4.  Select **Windows 10 and Later – Web protection > Create**.
 
-    ![](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
+    ![Image of Microsoft Endpoint Manager portal](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
 
-5.  Enter Name and Description > Next
+5.  Enter name and description, then click **Next**.
 
-    ![](images/5be573a60cd4fa56a86a6668b62dd808.png)
+    ![Image of Microsoft Endpoint Manager portal](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
 6.  In the Configuration settings page: Set the configurations you require for
-    Web Protection> Next
+   ** Web Protection > Next**.
 
-    NOTE: I am configuring Web Protection to Block.
+    >[!NOTE]
+    >We are configuring Web Protection to Block.
 
-    Details on Web Protection:
-    <https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview>
+    For more information, see [Web Protection](web-protection-overview.md).
 
-    ![](images/6104aa33a56fab750cf30ecabef9f5b6.png)
+    ![Image of Microsoft Endpoint Manager portal](images/6104aa33a56fab750cf30ecabef9f5b6.png)
 
-7.  Add Scope Tags as required > Next
+7.  Add **Scope Tags as required > Next**.
 
-    ![](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    ![Image of Microsoft Endpoint Manager portal](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
-8.  Assign to test group > Next
+8.  Select **Assign to test group > Next**.
 
-    ![](images/45cefc8e4e474321b4d47b4626346597.png)
+    ![Image of Microsoft Endpoint Manager portal](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9.  Review and Create - \> Create
+9.  Select **Review and Create > Create**.
 
-    ![](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    ![Image of Microsoft Endpoint Manager portal](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
-10. You can View the policy
+10. View the policy.
 
-    ![](images/e74f6f6c150d017a286e6ed3dffb7757.png)
+    ![Image of Microsoft Endpoint Manager portal](images/e74f6f6c150d017a286e6ed3dffb7757.png)
 
-Validate
-========
+## Validate configuration settings
 
-Confirm Policies have applied
------------------------------
+
+### Confirm Policies have applied
+
 
 Once the Configuration policy has been assigned it will take some time to apply.
 
-You can see the timing for Intune at this link:
+For information on timing, see [Intune configuration information](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-<https://docs.microsoft.com/en-us/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned>
-
-To confirm that the configuration policy have been applied to your test device
-follow the below process for each Configuration policy.
+To confirm that the configuration policy has been applied to your test device
+follow the following process for each configuration policy.
 
 1.  Open the MEM portal and navigate to the relevant policy as shown in the
-    steps above. I will use Antivirus for this example
+    steps above. The following example shows the next generation protection settings.
 
-    ![](images/43ab6aa74471ee2977e154a4a5ef2d39.png)
+    ![Image of Microsoft Endpoint Manager portal](images/43ab6aa74471ee2977e154a4a5ef2d39.png)
 
-2.  Click on the Configuration Policy to view the policy status
+2.  Click on the **Configuration Policy** to view the policy status.
 
-    ![](images/55ecaca0e4a022f0e29d45aeed724e6c.png)
+    ![Image of Microsoft Endpoint Manager portal](images/55ecaca0e4a022f0e29d45aeed724e6c.png)
 
-3.  Click on “Device Status” to see the per device status
+3.  Click on **Device Status** to see the status.
 
-    ![](images/18a50df62cc38749000dbfb48e9a4c9b.png)
+    ![Image of Microsoft Endpoint Manager portal](images/18a50df62cc38749000dbfb48e9a4c9b.png)
 
-4.  Click on “User Status” to see the per user status
+4.  Click on **User Status** to see the status.
 
-    ![](images/4e965749ff71178af8873bc91f9fe525.png)
+    ![Image of Microsoft Endpoint Manager portal](images/4e965749ff71178af8873bc91f9fe525.png)
 
-5.  Click on “Per-setting status” to see the Per-setting status
+5.  Click on **Per-setting status** to see the status.
 
-    Note: This View is very useful to identify any settings that conflict with
-    another policy
+    >[!TIP]
+    >This view is very useful to identify any settings that conflict with another policy.
 
-    ![](images/42acc69d0128ed09804010bdbdf0a43c.png)
+    ![Image of Microsoft Endpoint Manager portal](images/42acc69d0128ed09804010bdbdf0a43c.png)
 
-Endpoint Detection and Response
--------------------------------
+### Endpoint Detection and Response
 
-1.  Before applying the configuration, the Windows Defender Advanced Threat
-    Protection Service should not be started.
 
-    ![](images/b418a232a12b3d0a65fc98248dbb0e31.png)
+1.  Before applying the configuration, the Microsoft Defender ATP
+    Protection service should not be started.
 
-2.  After the config has been applied the Windows Defender Advanced Threat
-    Protection Service should be started
+    ![Image of Services panel](images/b418a232a12b3d0a65fc98248dbb0e31.png)
 
-    ![](images/a621b699899f1b41db211170074ea59e.png)
+2.  After the configuration has been applied the Microsoft Defender ATP
+    Protection Service should be started.
+
+    ![Image of Services panel](images/a621b699899f1b41db211170074ea59e.png)
 
 3.  After the services is running on the device, the device appears in Microsoft
-    Defender Security Center
+    Defender Security Center.
 
-    ![](images/df0c64001b9219cfbd10f8f81a273190.png)
+    ![Image of Microsoft Defender Security Center](images/df0c64001b9219cfbd10f8f81a273190.png)
 
-Antivirus
----------
+### Next-generation protection
 
 1.  Before applying the policy on a test device, you should be able to manually
-    manage the settings as per below.
+    manage the settings as shown below.
 
-![](images/88efb4c3710493a53f2840c3eac3e3d3.png)
+    ![Image of setting page](images/88efb4c3710493a53f2840c3eac3e3d3.png)
 
-1.  After the policy has been applied, you should not be able to manually manage
-    the settings as per below.
+2.  After the policy has been applied, you should not be able to manually manage
+    the settings.
 
-    NOTE: In the below image “**Turn on cloud-delivered protection”** and
-    **“Turn on real-time protection”** are being shown as managed.
+    >[!NOTE]
+    > In the following image **Turn on cloud-delivered protection** and
+    **Turn on real-time protection** are being shown as managed.
 
-![](images/9341428b2d3164ca63d7d4eaa5cff642.png)
+    ![Image of setting page](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-Attack Surface Reduction – Attack surface reduction rules
----------------------------------------------------------
+### Attack Surface Reduction – Attack surface reduction rules
 
-1.  Before applying the policy on A test device
 
-2.  Open a PowerShell Window and type “Get-MpPreference”
+1.  Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
 
-3.  This should respond with the following lines with no content
+2.  This should respond with the following lines with no content
 
     1.  AttackSurfaceReductionOnlyExclusions :
 
@@ -355,33 +348,26 @@ Attack Surface Reduction – Attack surface reduction rules
 
     3.  AttackSurfaceReductionRules_Ids :
 
-![](images/cb0260d4b2636814e37eee427211fe71.png)
+    ![Image of command line](images/cb0260d4b2636814e37eee427211fe71.png)
 
-1.  After applying the policy on A test device
+3.  After applying the policy on a test device, open a PowerShell Windows and type `Get-MpPreference`.
 
-2.  Open a PowerShell Windows and type “Get-MpPreference”
+4.  This should respond with the following lines with content as shown below:
 
-3.  This should respond with the following lines with content as shown below
+    ![Image of command line](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-    ![](images/619fb877791b1fc8bc7dfae1a579043d.png)
+### Attack Surface Reduction – Web Protection
 
-Attack Surface Reduction – Web Protection
------------------------------------------
+1.  On the test device, open a PowerShell Windows and type
+    `(Get-MpPreference).EnableNetworkProtection`.
 
-1.  On the test device
+2.  This should respond with a 0 as shown below.
 
-2.  Open a PowerShell Windows and type
-    “(Get-MpPreference).EnableNetworkProtection”
+    ![Image of command line](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3.  This should respond with a “0” as shown below
+3.  After applying the policy, open a PowerShell Windows and type
+    `(Get-MpPreference).EnableNetworkProtection`.
 
-    ![](images/196a8e194ac99d84221f405d0f684f8c.png)
+4.  This should respond with a 1 as shown below.
 
-4.  After Applying the Policy
-
-5.  Open a PowerShell Windows and type
-    “(Get-MpPreference).EnableNetworkProtection”
-
-6.  This should respond with a “1” as shown below
-
-![](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)
+    ![Image of command line](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)
