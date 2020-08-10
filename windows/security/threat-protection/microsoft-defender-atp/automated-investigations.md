@@ -72,7 +72,7 @@ You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|**Full - remediate threats automatically** | All remediation actions will be performed automatically.<br/><br/>Microsoft Defender ATP tenants will have **Full - remediate threats automatically** selected by default.|
+|**Full - remediate threats automatically** | All remediation actions will be performed automatically.<br/><br/>*This is the default setting for Microsoft Defender ATP tenants created on or after August 16, 2020.*|
 |**Semi - require approval for core folders remediation** | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br/><br/> Files or executables in all other folders will  automatically be remediated if needed.|
 |**Semi - require approval for non-temp folders remediation** | An approval is required on files or executables that are not in temporary folders. <br/><br/> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
 |**Semi - require approval for any remediation** | This is the default automation level.<br/><br/>  An approval is needed for any remediation action. |
