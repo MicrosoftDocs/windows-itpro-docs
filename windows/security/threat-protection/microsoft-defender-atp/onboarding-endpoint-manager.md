@@ -104,7 +104,7 @@ different types of Endpoint Security policies.
 
     ![Image of Microsoft Endpoint Manager portal](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3.  Under** Platform, select Windows 10 and Later, Profile - Endpoint detection
+3.  Under **Platform, select Windows 10 and Later, Profile - Endpoint detection
     and response > Create**.
 
 4.  Enter name and description, then click **Next**.
@@ -116,8 +116,8 @@ different types of Endpoint Security policies.
     ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     >[!NOTE]
-    >In this instance, this has been auto populated Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).
-    If you have not integrated Microsoft Defender ATP h and Intune, complete [these
+    >In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#enable-microsoft-defender-atp-in-intune). <br>
+    >If you have not integrated Microsoft Defender ATP h and Intune, complete [these
     steps](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm#onboard-machines-using-microsoft-intune)
     to create and upload an onboarding blob.
 
@@ -127,7 +127,7 @@ different types of Endpoint Security policies.
 
     ![Image of Microsoft Endpoint Manager portal](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7.  Add test group by clicking on Select groups to include and choose your group, then click **Next**.
+7.  Add test group by clicking on **Select groups to include** and choose your group, then click **Next**.
 
     ![Image of Microsoft Endpoint Manager portal](images/fc3525e20752da026ec9f46ab4fec64f.png)
 
@@ -147,7 +147,7 @@ different types of Endpoint Security policies.
 
     ![Image of Microsoft Endpoint Manager portal](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3.  Select** Platform - Windows 10 and Later - Windows and Profile – Microsoft
+3.  Select **Platform - Windows 10 and Later - Windows and Profile – Microsoft
     Defender Antivirus > Create**.
 
 4.  Enter name and description, then click **Next**.
@@ -197,7 +197,7 @@ different types of Endpoint Security policies.
     ![Image of Microsoft Endpoint Manager portal](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
 7.  In the Configuration settings page: Set the configurations you require for
-    Attack surface reduction rules > Next
+    Attack surface reduction rules, then click **Next**.
 
     >[!NOTE]
     >We will be configuring all of the Attack surface reduction rules to Audit.
@@ -239,7 +239,7 @@ different types of Endpoint Security policies.
     ![Image of Microsoft Endpoint Manager portal](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
 6.  In the Configuration settings page: Set the configurations you require for
-   ** Web Protection > Next**.
+   Web Protection, then click **Next**.
 
     >[!NOTE]
     >We are configuring Web Protection to Block.
