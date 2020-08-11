@@ -10,10 +10,13 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/21/2019
+ms.date: 08/11/2020
 ---
 
 # Defender CSP
+
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -399,25 +402,25 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
-<a href="" id="configuration-supportLogLocation"></a>**Configuration/SupportLogLocation**  
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**  
 The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (MpCmdRun.exe) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
 
-Data type is: String 
+Data type is string.
 
 Supported operations are Add, Delete, Get, Replace.
 
 Intune Support log location setting UX supports three states:  
 
-- Not configured (default): Does not have any impact on the default state of the device. 
-- 1 - Enabled: Enables the Support log location feature. -> requires Admin to set custom file path 
-- 0 - Disabled: Turns off the Support log location feature. 
+- Not configured (default) - Does not have any impact on the default state of the device. 
+- 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
+- 0 - Disabled. Turns off the Support log location feature. 
 
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
 
 More details:  
 
--   [Microsoft Defender AV diagnostic data](https://review.docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data?branch=master)  
--   [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
+- [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
