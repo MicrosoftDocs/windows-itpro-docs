@@ -55,13 +55,13 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a.  In the navigation pane, select **Settings** > **Onboarding**.
+    1.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+    1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
 2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
 
@@ -69,35 +69,39 @@ The following steps will guide you through onboarding VDI devices and will highl
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
 3. The following step is only applicable if you're implementing a single entry for each device: <br>
-    **For single entry for each device**:<br>
-        a. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` and `WindowsDefenderATPOnboardingScript.cmd` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
+   **For single entry for each device**:
+    
+   1. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` and `WindowsDefenderATPOnboardingScript.cmd` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
-    >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
+   > [!NOTE]
+   > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
-    >[!NOTE]
-    >Domain Group Policy may also be used for onboarding non-persistent VDI devices.
+   > [!NOTE]
+   > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
 5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
-  **For single entry for each device**:<br>
-  Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. <br><br>
-  **For multiple entries for each device**:<br>
-  Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+   **For single entry for each device**:<br>
+   
+   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`.
+   
+   **For multiple entries for each device**:
+   
+   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 6. Test your solution:
 
-    a. Create a pool with one device.
+   1. Create a pool with one device.
       
-    b. Logon to device.
+   1. Logon to device.
       
-    c. Logoff from device.
+   1. Logoff from device.
 
-    d. Logon to device with another user.
+   1. Logon to device with another user.
       
-    e. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
-    **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
+   1. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
+      **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
 7. Click **Devices list** on the Navigation pane.
 
@@ -107,7 +111,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
 For example, you can use the below commands to install an update while the image remains offline:
 
-```
+```console
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
@@ -124,15 +128,15 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
-    ```
-    sc query sense
-    ```
+   ```console
+   sc query sense
+   ```
 
 3. Service the image as needed.
 
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
 
-    ```
+    ```console
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
