@@ -1,6 +1,6 @@
 ---
 title: Group Policy Management of Windows Firewall with Advanced Security (Windows 10)
-description: Group Policy Management of Windows Firewall with Advanced Securit
+description: Group Policy Management of Windows Firewall with Advanced Security
 ms.assetid: 28afab36-8768-4938-9ff2-9d6dab702e98
 ms.reviewer: 
 ms.author: dansimp
