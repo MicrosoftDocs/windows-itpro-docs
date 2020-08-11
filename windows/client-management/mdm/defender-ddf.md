@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/21/2019
+ms.date: 08/11/2020
 ---
 
 # Defender DDF file
@@ -45,7 +45,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.2/MDM/Defender</MIME>
+            <MIME>com.microsoft/1.3/MDM/Defender</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -722,6 +722,29 @@ The XML below is the current version for this CSP.
               </AccessType>
               <DFFormat>
                 <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SupportLogLocation</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <chr />
               </DFFormat>
               <Occurrence>
                 <One />

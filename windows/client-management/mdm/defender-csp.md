@@ -403,7 +403,7 @@ Valid values are:
 - 0 (default) – Disable.
 
 <a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**  
-The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (MpCmdRun.exe) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
+The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (**MpCmdRun.exe**) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
 
 Data type is string.
 
