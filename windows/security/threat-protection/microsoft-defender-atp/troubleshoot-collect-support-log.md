@@ -63,4 +63,4 @@ This topic provides instructions on how to run the tool via Live Response, or lo
 >Run MDATPLiveAnalyzer.ps1
 >GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
 >```
-> - For more information on gathering data locally on a machine in case the machine isn’t communicating with Microsoft Defender ATP cloud services, or does not appear in MDATP portal as expected, see [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
+> - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender ATP cloud services, or does not appear in MDATP portal as expected, see [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
