@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # Schedule scans with Microsoft Defender ATP for Mac
 
-While you can start a threat scan at any time with Microsoft Defender ATP, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. Create a scanning schedule using launchd on a macOS computer.
+While you can start a threat scan at any time with Microsoft Defender ATP, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. Create a scanning schedule using launchd on a macOS computer. 
 
 ## Schedule a scan with launchd
 
