@@ -35,6 +35,8 @@ You can also run ```mdatp --health```. It reports if real-time protection is ena
 
 ```bash
 mdatp --health
+```
+```Output
 ...
 realTimeProtectionAvailable             : false
 realTimeProtectionEnabled               : true
@@ -64,6 +66,9 @@ In this case, you need to perform the following steps to trigger the approval fl
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
+    ```
+    
+    ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
@@ -75,16 +80,19 @@ In this case, you need to perform the following steps to trigger the approval fl
 
 4. In Terminal, install the driver again. This time the operation will succeed:
 
-```bash
-sudo kextutil /Library/Extensions/wdavkext.kext
-```
+    ```bash
+    sudo kextutil /Library/Extensions/wdavkext.kext
+    ```
 
-The banner should disappear from the Defender application, and ```mdatp --health``` should now report that real-time protection is both enabled and available:
+    The banner should disappear from the Defender application, and ```mdatp --health``` should now report that real-time protection is both enabled and available:
 
-```bash
-mdatp --health
-...
-realTimeProtectionAvailable             : true
-realTimeProtectionEnabled               : true
-...
-```
+    ```bash
+    mdatp --health
+    ```
+
+    ```Output
+    ...
+    realTimeProtectionAvailable             : true
+    realTimeProtectionEnabled               : true
+    ...
+    ```
