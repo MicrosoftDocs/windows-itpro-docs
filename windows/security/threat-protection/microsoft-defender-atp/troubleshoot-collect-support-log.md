@@ -25,7 +25,7 @@ ms.topic: troubleshooting
 
 When approaching support you will often be requested to provide  Microsoft Defender ATP  Client Analyzer tool output. 
 
-This topic provides instructions on how to run the tool via Live Response, or locally if the machine isn’t communicating with  Microsoft Defender ATP cloud services.
+This topic provides instructions on how to run the tool via Live Response, or locally if the machine isn't communicating with  Microsoft Defender ATP cloud services.
 
 1. Download the [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
  
@@ -55,7 +55,7 @@ This topic provides instructions on how to run the tool via Live Response, or lo
     ![Image of commands](images/analyzer-commands.png)
 
 
->[!NOTES]
+>[!NOTE]
 >- The latest preview version of MDATPClientAnalyzer can be downloaded [here](https://aka.ms/Betamdatpanalyzer). <br>
 >- The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: https://mdatpclientanalyzer.blob.core.windows.net. <br>
 > If you cannot allow the machine to reach the above URL, then upload MDATPClientAnalyzerPreview.zip file to the library before running the LiveAnalyzer script:
