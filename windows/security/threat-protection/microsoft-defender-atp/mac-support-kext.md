@@ -23,15 +23,15 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender ATP for Mac.
+This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender ATP for Mac.
 
 Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they are allowed to run on the device.
 
-If you did not approve the kernel extension during the deployment / installation of Microsoft Defender ATP for Mac, then the application displays a banner prompting you to enable it:
+If you did not approve the kernel extension during the deployment/installation of Microsoft Defender ATP for Mac, the application displays a banner prompting you to enable it:
 
    ![RTP disabled screenshot](../microsoft-defender-antivirus/images/MDATP-32-Main-App-Fix.png)
 
-You can also run ```mdatp --health```. It reports if real-time protection is enabled but not available. This is an indication that the kernel extension is not approved to run on your device.
+You can also run ```mdatp --health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
 
 ```bash
 mdatp --health
@@ -62,7 +62,7 @@ If you don't see this prompt, it means that 30 or more minutes have passed, and 
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 
-1. In Terminal, attempt to install the driver. The following operation will fail, because the kernel extension was not approved to run on the device, however it will trigger the approval flow again.
+1. In Terminal, attempt to install the driver. The following operation will fail, because the kernel extension was not approved to run on the device. However, it will trigger the approval flow again.
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
