@@ -748,6 +748,8 @@ The property list must be a valid *.plist* file. This can be checked by executin
 
 ```bash
 plutil -lint com.microsoft.wdav.plist
+```
+```Output
 com.microsoft.wdav.plist: OK
 ```
 
