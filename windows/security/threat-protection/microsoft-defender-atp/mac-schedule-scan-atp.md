@@ -70,6 +70,8 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
 
     ```bash
     launchctl load /Library/LaunchDaemons/<your file name.plist>
+    ```
+    ```bash
     launchctl start <your file name>
     ```
 
