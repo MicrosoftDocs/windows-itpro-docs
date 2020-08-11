@@ -27,7 +27,7 @@ In this section, we will be using Microsoft Endpoint Manager (MEM) to deploy
 Microsoft Defender ATP to your endpoints.
 
 For more information about MEM, check out these resources:
-- [Microsoft Endpoint Manager page](https://docs.microsoft.com/en-us/mem/)
+- [Microsoft Endpoint Manager page](https://docs.microsoft.com/mem/)
 - [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -51,7 +51,7 @@ Here are the links you'll need for the rest of the process:
 
 -   [Security Center](https://securitycenter.windows.com/)
 
--   [Intune Security baselines](https://docs.microsoft.com/en-us/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune Security baselines](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 ## Identify target devices or users
 In this section, we will create a test group to assign your configurations on.
@@ -60,7 +60,7 @@ In this section, we will create a test group to assign your configurations on.
 >Intune uses Azure Active Directory (Azure AD) groups to manage devices and
 users. As an Intune admin, you can set up groups to suit your organizational
 needs.<br>
-> For more information, see [Add groups to organize users and devices](https://docs.microsoft.com/en-us/mem/intune/fundamentals/groups-add).
+> For more information, see [Add groups to organize users and devices](https://docs.microsoft.com/mem/intune/fundamentals/groups-add).
 
 ### Create a group
 
