@@ -23,7 +23,7 @@ ms.topic: troubleshooting
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-When contacting support you will often be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
+When contacting support, you will often be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
 
 This topic provides instructions on how to run the tool via Live Response.
 
