@@ -57,7 +57,7 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Click **Download package**, and save the .zip file.
+    d. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -104,11 +104,11 @@ Possible values are:
 
 The default value in case the registry key doesn’t exist is 1.
 
-For more information about System Center Configuration Manager Compliance see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 
 ## Other recommended configuration settings
-After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration setttings.
+After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
 
 ### Device collection configuration
 If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
@@ -135,7 +135,7 @@ Configure all available rules to Audit.
 
 
 **Network protection** <br>
-Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
 
 **Controlled folder access**<br>
@@ -146,7 +146,7 @@ For more information, see [Evaluate controlled folder access](evaluate-controlle
 
 ## Offboard devices using Configuration Manager
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package, you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
@@ -165,7 +165,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Click **Download package**, and save the .zip file.
+    d. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -191,13 +191,13 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
 1. In the Configuration Manager console, click **Monitoring** at the bottom of the navigation pane.
 
-2. Click **Overview** and then **Deployments**.
+2. Select **Overview** and then **Deployments**.
 
-3. Click on the deployment with the package name.
+3. Select on the deployment with the package name.
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-    If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+    If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
 
     ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
 
