@@ -1,7 +1,7 @@
 ---
-title: Collect support logs in Microsoft Defender ATP using LiveAnalyzer 
-description: Learn how to collect logs using LiveAnalyzer to troubleshoot Microsoft Defender ATP issues
-keywords: support, log, collect, troubleshoot, liveanalyzer, analyzer, live, response
+title: Collect support logs in Microsoft Defender ATP using live response
+description: Learn how to collect logs using live response to troubleshoot Microsoft Defender ATP issues
+keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Collect support logs in Microsoft Defender ATP using LiveAnalyzer 
+# Collect support logs in Microsoft Defender ATP using live response 
 
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-When approaching support you will often be requested to provide  Microsoft Defender ATP  Client Analyzer tool output. 
+When contacting support you will often be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
 
-This topic provides instructions on how to run the tool via Live Response, or locally if the machine isn't communicating with  Microsoft Defender ATP cloud services.
+This topic provides instructions on how to run the tool via Live Response.
 
 1. Download the [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
  
-2.	Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) oo the machine you need to investigate.
+2.	Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
 
 3.	Select **Upload file to library**.
 
