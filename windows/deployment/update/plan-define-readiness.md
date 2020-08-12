@@ -10,7 +10,7 @@ audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
+jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

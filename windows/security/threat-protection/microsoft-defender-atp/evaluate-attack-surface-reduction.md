@@ -3,7 +3,6 @@ title: Use a demo to see how ASR rules can help protect your devices
 description: The custom demo tool lets you create sample malware infection scenarios so you can see how ASR would block and prevent attacks
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, evaluate, test, demo
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

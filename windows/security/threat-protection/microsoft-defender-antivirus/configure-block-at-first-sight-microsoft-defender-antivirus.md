@@ -3,7 +3,6 @@ title: Enable Block at First Sight to detect malware in seconds
 description: Enable the Block at First sight feature to detect and block malware within seconds, and validate that it is configured correctly.
 keywords: scan, BAFS, malware, first seen, first sight, cloud, defender
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

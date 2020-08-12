@@ -3,7 +3,6 @@ title: Configure how attack surface reduction rules work to fine-tune protection
 description: You can individually set rules in audit, block, or disabled modes, and add files and folders that should be excluded from ASR
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, customize, configure, exclude
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

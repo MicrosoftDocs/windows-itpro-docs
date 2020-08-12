@@ -3,7 +3,6 @@ title: "Why you should use Microsoft Defender Antivirus together with Microsoft 
 description: "For best results, use Microsoft Defender Antivirus together with your other Microsoft offerings."
 keywords: windows defender, antivirus, third party av
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

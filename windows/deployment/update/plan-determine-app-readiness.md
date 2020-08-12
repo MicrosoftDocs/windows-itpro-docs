@@ -7,7 +7,6 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 author: jaimeo

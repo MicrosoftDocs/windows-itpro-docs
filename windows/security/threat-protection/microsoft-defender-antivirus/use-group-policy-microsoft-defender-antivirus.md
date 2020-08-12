@@ -3,7 +3,6 @@ title: Configure Microsoft Defender Antivirus with Group Policy
 description: Configure Microsoft Defender Antivirus settings with Group Policy
 keywords: group policy, GPO, configuration, settings
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

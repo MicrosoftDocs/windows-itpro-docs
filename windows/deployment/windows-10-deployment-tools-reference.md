@@ -15,7 +15,7 @@ ms.date: 07/12/2017
 ms.topic: article
 ---
 
-# Windows 10 deployment tools
+# Windows 10 deployment tools reference
 
 Learn about the tools available to deploy Windows 10.
 

@@ -7,7 +7,6 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-
 ms.date: 08/18/2017
 ms.reviewer: 
 manager: laurawi
