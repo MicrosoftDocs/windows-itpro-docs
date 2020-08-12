@@ -27,6 +27,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
+| Rinna and Japanese Address suggestion | The Rinna and Japanese Address suggestion service for Microsoft Japanese Input Method Editor (IME) will end on August 13th, 2020. For more information, see [Rinna and Japanese Address suggestion will no longer be offered](https://support.microsoft.com/help/4576767/windows-10-rinna-and-japanese-address-suggestion) | 8/13/2020 |
 | Cortana | Cortana has been updated and enhanced in the Windows 10 May 2020 Update. With [these changes](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-2004#cortana), some previously available consumer skills such as music, connected home, and other non-Microsoft skills are no longer available. | 2004 |
 | Windows To Go | Windows To Go was announced as deprecated in Windows 10, version 1903 and is removed in this release. | 2004 |
 | Mobile Plans and Messaging apps | Both apps are still supported, but are now distributed in a different way. OEMs can now include these apps in Windows images for cellular enabled devices.  The apps are removed for non-cellular devices.| 2004 |
