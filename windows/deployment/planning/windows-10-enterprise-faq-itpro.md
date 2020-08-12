@@ -11,7 +11,6 @@ ms.date: 08/18/2017
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---

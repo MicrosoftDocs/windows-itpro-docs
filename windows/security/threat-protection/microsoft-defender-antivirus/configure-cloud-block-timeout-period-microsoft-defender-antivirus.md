@@ -14,7 +14,6 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
-ms.custom: nextgen
 ---
 
 # Configure the cloud block timeout period
