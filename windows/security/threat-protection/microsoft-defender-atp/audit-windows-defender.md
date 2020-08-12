@@ -3,7 +3,6 @@ title: Test how Microsoft Defender ATP features work
 description: Audit mode lets you use the event log to see how Microsoft Defender ATP would protect your devices if it were enabled
 keywords: exploit guard, audit, auditing, mode, enabled, disabled, test, demo, evaluate, lab
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
