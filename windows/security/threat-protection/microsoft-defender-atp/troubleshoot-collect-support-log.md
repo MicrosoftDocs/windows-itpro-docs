@@ -59,7 +59,8 @@ This topic provides instructions on how to run the tool via Live Response.
 >- The latest preview version of MDATPClientAnalyzer can be downloaded [here](https://aka.ms/Betamdatpanalyzer). <br>
 >- The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: https://mdatpclientanalyzer.blob.core.windows.net. <br>
 > If you cannot allow the machine to reach the above URL, then upload MDATPClientAnalyzerPreview.zip file to the library before running the LiveAnalyzer script:
->```PutFile MDATPClientAnalyzerPreview.zip -overwrite
+>```
+>PutFile MDATPClientAnalyzerPreview.zip -overwrite
 >Run MDATPLiveAnalyzer.ps1
 >GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
 >```
