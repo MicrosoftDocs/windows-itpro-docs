@@ -48,7 +48,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
 - The `HTTPS_PROXY` variable is prepended to the installation or uninstallation commands. For example, with the APT package manager, prepend the variable as follows when installing Microsoft Defender ATP: 
 
     ```bash  
-    $ HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
+    HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
     ```
 
     > [!NOTE]
@@ -56,7 +56,7 @@ During installation, the ```HTTPS_PROXY``` environment variable must be passed t
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
-Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take significantly longer due to network timeouts.
+Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take much longer due to network timeouts.
 
 ## Post installation configuration
   
@@ -73,5 +73,5 @@ After installation, the `HTTPS_PROXY` environment variable must be defined in th
 After modifying the `mdatp.service` file, save and close it. Restart the service so the changes can be applied. In Ubuntu, this involves two commands:  
 
 ```bash
-$ systemctl daemon-reload; systemctl restart mdatp
+systemctl daemon-reload; systemctl restart mdatp
 ```
