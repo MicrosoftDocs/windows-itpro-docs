@@ -286,13 +286,13 @@
 ##### [Run and review the results of an offline scan](../microsoft-defender-antivirus/windows-defender-offline.md)
 ##### [Restore quarantined files](../microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus.md)
 
-#### [Manage next generation protection in your business]()
+#### [Manage next-generation protection in your business]()
 ##### [Management overview](../microsoft-defender-antivirus/configuration-management-reference-microsoft-defender-antivirus.md)
-##### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](../microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
-##### [Use Group Policy settings to manage next generation protection](../microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
-##### [Use PowerShell cmdlets to manage next generation protection](../microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
-##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](../microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
-##### [Use the mpcmdrun.exe command line tool to manage next generation protection](../microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
+##### [Use Microsoft Intune and System Center Configuration Manager to manage next-generation protection](../microsoft-defender-antivirus/use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Use Group Policy settings to manage next-generation protection](../microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus.md)
+##### [Use PowerShell cmdlets to manage next-generation protection](../microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](../microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus.md)
+##### [Use the mpcmdrun.exe command line tool to manage next-generation protection](../microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus.md)
 
 
 
@@ -525,4 +525,4 @@
 #### [Collect diagnostic data for files](../windows-defender-exploit-guard/troubleshoot-np.md)
 
  
-### [Troubleshoot next generation protection issues](../microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
+### [Troubleshoot next-generation protection issues](../microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
