@@ -45,7 +45,7 @@ This topic provides instructions on how to run the tool via Live Response.
    ![Image of choose file button](images/analyzer-file.png)
 
 
-6. While still in the LiveResponse session, use the commands below run the analyzer and collect the result file:
+6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
     ```
     Run MDATPLiveAnalyzer.ps1
