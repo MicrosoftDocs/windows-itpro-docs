@@ -47,7 +47,7 @@ To help keep the Application Guard Edge session secure and isolated from the hos
 
 ### Are extensions supported in the Application Guard?
 
-Extension installs in the container is supported starting from Microsoft Edge version 81. For more details, see [Extension support inside the container](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard#extension-support-inside-the-container).
+Extension installs in the container are supported from Microsoft Edge version 81. For more details, see [Extension support inside the container](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard#extension-support-inside-the-container).
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
