@@ -23,7 +23,7 @@ ms.topic: troubleshooting
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-When contacting support, you will often be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
+When contacting support, you may be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
 
 This topic provides instructions on how to run the tool via Live Response.
 
@@ -39,7 +39,7 @@ This topic provides instructions on how to run the tool via Live Response.
 
     ![Image of choose file button](images/choose-file.png)
 
-5. Select the downloaded file named MDATPLiveAnalyzer.ps1 and then select on **Confirm**
+5. Select the downloaded file named MDATPLiveAnalyzer.ps1 and then click on **Confirm**
 
 
    ![Image of choose file button](images/analyzer-file.png)
