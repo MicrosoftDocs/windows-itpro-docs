@@ -9,7 +9,6 @@ ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
-ms.topic: article
 ---
 # Windows as a service - More news
 

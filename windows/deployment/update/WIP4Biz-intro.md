@@ -8,7 +8,6 @@ audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.audience: itpro
-author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article

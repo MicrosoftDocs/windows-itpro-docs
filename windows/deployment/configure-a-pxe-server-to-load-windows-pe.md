@@ -11,7 +11,6 @@ audience: itpro
 author: greg-lindsay
 ms.reviewer: 
 manager: laurawi
-audience: itpro
 ms.author: greglin
 ms.topic: article
 ---
