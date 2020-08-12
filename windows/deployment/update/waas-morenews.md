@@ -4,7 +4,6 @@ ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.reviewer: 
