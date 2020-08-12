@@ -63,7 +63,7 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
-Depending on how you set up the device groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the device groups and their level of automation, each automated investigation either requires user approval (default) or automatically remediates threats.
 
 > [!NOTE]
 > Microsoft Defender ATP tenants created on or after August 16, 2020 have **Full - remediate threats automatically** selected by default. You can keep the default setting, or change it according to your organizational needs. To change your settings, [adjust your device group settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
