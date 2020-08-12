@@ -31,6 +31,9 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
    ```bash
    mdatp --log-level verbose
+   ```
+
+   ```Output
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -42,6 +45,8 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
    ```bash
    sudo mdatp --diagnostic --create
+   ```
+   ```Output
    Creating connection to daemon
    Connection established
    ```
@@ -50,6 +55,8 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
    ```bash
    mdatp --log-level info
+   ```
+   ```Output
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -105,7 +112,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 To enable autocompletion in `Bash`, run the following command and restart the Terminal session:
 
 ```bash
-$ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 To enable autocompletion in `zsh`:
@@ -113,20 +120,21 @@ To enable autocompletion in `zsh`:
 - Check whether autocompletion is enabled on your device:
 
    ```zsh
-   $ cat ~/.zshrc | grep autoload
+   cat ~/.zshrc | grep autoload
    ```
 
 - If the above command does not produce any output, you can enable autocompletion using the following command:
 
    ```zsh
-   $ echo "autoload -Uz compinit && compinit" >> ~/.zshrc
+   echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following command to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-
+   ```
+   ```zsh
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
