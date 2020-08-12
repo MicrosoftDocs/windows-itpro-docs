@@ -31,7 +31,7 @@ Use this guide to determine how well Microsoft Defender Antivirus protects you f
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
-It explains the important next generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
+It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
 
 You can choose to configure and evaluate each setting independently, or all at once. We have grouped similar settings based upon typical evaluation scenarios, and include instructions for using PowerShell to enable the settings.
 
