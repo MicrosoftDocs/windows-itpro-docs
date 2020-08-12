@@ -1,9 +1,8 @@
 ---
 title: Add additional folders and apps to be protected 
-description: Add additional folders that should be protected by Controlled folder access, or allow apps that are incorrectly blocking changes to important files.
+description: Add additional folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
 keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,7 +11,6 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/13/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -23,9 +21,9 @@ manager: dansimp
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients.
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
-This topic describes how to customize the following settings of the controlled folder access feature with the Windows Security app, Group Policy, PowerShell, and mobile device management (MDM) configuration service providers (CSPs):
+This article describes how to customize the following settings of the controlled folder access feature with the Windows Security app, Group Policy, PowerShell, and mobile device management (MDM) configuration service providers (CSPs):
 
 * [Add additional folders to be protected](#protect-additional-folders)
 * [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -37,9 +35,9 @@ This topic describes how to customize the following settings of the controlled f
 
 ## Protect additional folders
 
-Controlled folder access applies to a number of system folders and default locations, including folders such as Documents, Pictures, Movies, and Desktop.
+Controlled folder access applies to a number of system folders and default locations, such as Documents, Pictures, Movies, and Desktop.
 
-You can add additional folders to be protected, but you cannot remove the default folders in the default list.
+You can add additional folders to be protected, but you can't remove the default folders in the default list.
 
 Adding other folders to controlled folder access can be useful, for example, if you don't store files in the default Windows libraries or you've changed the location of the libraries away from the defaults.
 
@@ -49,7 +47,7 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 ### Use the Windows Security app to protect additional folders
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by selecting the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then click **Ransomware protection**:
 
@@ -69,7 +67,7 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 ### Use PowerShell to protect additional folders
 
-1. Type **powershell** in the Start menu, right click **Windows PowerShell** and click **Run as administrator**
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
 2. Enter the following cmdlet:
 
     ```PowerShell
