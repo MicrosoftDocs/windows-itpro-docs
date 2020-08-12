@@ -115,6 +115,9 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
+
+
+> [!NOTE]
 > URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
 
 
@@ -198,6 +201,9 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 > [!NOTE]
 > The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+
+
+> [!NOTE]
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
 
 ## Related topics

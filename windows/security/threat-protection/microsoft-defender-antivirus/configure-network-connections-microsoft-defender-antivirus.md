@@ -114,9 +114,6 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
    The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-microsoft-defender-antivirus.md).
 
->[!IMPORTANT]
->You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
-
 ## Related articles
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

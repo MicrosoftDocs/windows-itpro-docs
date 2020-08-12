@@ -28,7 +28,7 @@ Retrieves all [Alerts](alerts.md) related to a specific device.
 
 
 ## Limitations
-1. You can query on devices last seen in the past 30 days.
+1. You can query on devices last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -45,7 +45,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >- User needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}/alerts
 ```
 

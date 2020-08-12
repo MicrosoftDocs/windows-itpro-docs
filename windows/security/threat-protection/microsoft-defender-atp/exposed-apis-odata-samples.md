@@ -29,98 +29,172 @@ Not all properties are filterable.
 
 ## Properties that supports $filter:
 
-- [Alert](alerts.md): Id, IncidentId, AlertCreationTime, Status, Severity and Category.
-- [Machine](machine.md): Id, ComputerDnsName, LastSeen, LastIpAddress, HealthStatus, OsPlatform, RiskScore, MachineTags and RbacGroupId.
-- [MachineAction](machineaction.md): Id, Status, MachineId, Type, Requestor and CreationDateTimeUtc.
+- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
+- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
+- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
+- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
 
 ### Example 1
 
-Get all the devices with the tag 'ExampleTag'
+Get 10 latest Alerts with related Evidence
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=machineTags/any(tag: tag eq 'ExampleTag')
+HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
     "value": [
-        {
-            "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-			"computerDnsName": "mymachine1.contoso.com",
-			"firstSeen": "2018-08-02T14:55:03.7791856Z",
-			"lastSeen": "2018-08-02T14:55:03.7791856Z",
-			"osPlatform": "Windows10",
-			"version": "1709",
-			"osProcessor": "x64",
-			"lastIpAddress": "172.17.230.209",
-			"lastExternalIpAddress": "167.220.196.71",
-			"osBuild": 18209,
-			"healthStatus": "Active",
-			"rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
-			"riskScore": "Low",
-			"exposureLevel": "Medium",
-			"isAadJoined": true,
-			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "ExampleTag" ]
-        },
-        ...
-    ]
+		{
+			"id": "da637306396589640224_1753239473",
+			"incidentId": 875832,
+			"investigationId": 478434,
+			"assignedTo": null,
+			"severity": "Low",
+			"status": "New",
+			"classification": null,
+			"determination": null,
+			"investigationState": "PendingApproval",
+			"detectionSource": "WindowsDefenderAv",
+			"category": "UnwantedSoftware",
+			"threatFamilyName": "InstallCore",
+			"title": "An active 'InstallCore' unwanted software was detected",
+			"description": "Potentially unwanted applications (PUA) often impact productivity and performance and are often unwanted in enterprise environments. This category of applications include torrent downloaders, cryptocurrency miners, browser advertising software, and evasion software.\n\nAn application is considered active if it is found running on the machine or it already has persistence mechanisms in place.\n\nBecause this PUA was active, take precautionary measures and check for residual signs of infection.",
+			"alertCreationTime": "2020-07-18T03:27:38.9483995Z",
+			"firstEventTime": "2020-07-18T03:25:39.6124549Z",
+			"lastEventTime": "2020-07-18T03:26:18.4362304Z",
+			"lastUpdateTime": "2020-07-18T03:28:19.76Z",
+			"resolvedTime": null,
+			"machineId": "97868b864dc8fa09cc8726c37a1fcd8ab582f3aa",
+			"computerDnsName": "temp2.redmond.corp.microsoft.com",
+			"rbacGroupName": "Ring0",
+			"aadTenantId": "12f988bf-1234-1234-91ab-2d7cd011db47",
+			"relatedUser": {
+				"userName": "temp2",
+				"domainName": "REDMOND"
+			},
+			"comments": [],
+			"evidence": [
+				{
+					"entityType": "File",
+					"sha1": "ff02786682af8a6ae2842b64c8da543c4d76823c",
+					"sha256": "16dafd771171b619a472bb23cd55bc069625be8de5ee01b37b41de1216b2bbb2",
+					"fileName": "Your File Is Ready To Download_1911150169.exe",
+					"filePath": "C:\\Users\\temp2\\Downloads",
+					"processId": null,
+					"processCommandLine": null,
+					"processCreationTime": null,
+					"parentProcessId": null,
+					"parentProcessCreationTime": null,
+					"ipAddress": null,
+					"url": null,
+					"accountName": null,
+					"domainName": null,
+					"userSid": null,
+					"aadUserId": null,
+					"userPrincipalName": null
+				},
+				{
+					"entityType": "Process",
+					"sha1": "ff02786682af8a6ae2842b64c8da543c4d76823c",
+					"sha256": "16dafd771171b619a472bb23cd55bc069625be8de5ee01b37b41de1216b2bbb2",
+					"fileName": "Your File Is Ready To Download_1911150169.exe",
+					"filePath": "C:\\Users\\temp2\\Downloads",
+					"processId": 24348,
+					"processCommandLine": "\"Your File Is Ready To Download_1911150169.exe\" ",
+					"processCreationTime": "2020-07-18T03:25:38.5269993Z",
+					"parentProcessId": 16840,
+					"parentProcessCreationTime": "2020-07-18T02:12:32.8616797Z",
+					"ipAddress": null,
+					"url": null,
+					"accountName": null,
+					"domainName": null,
+					"userSid": null,
+					"aadUserId": null,
+					"userPrincipalName": null
+				},
+				{
+					"entityType": "User",
+					"sha1": null,
+					"sha256": null,
+					"fileName": null,
+					"filePath": null,
+					"processId": null,
+					"processCommandLine": null,
+					"processCreationTime": null,
+					"parentProcessId": null,
+					"parentProcessCreationTime": null,
+					"ipAddress": null,
+					"url": null,
+					"accountName": "temp2",
+					"domainName": "REDMOND",
+					"userSid": "S-1-5-21-1127532184-1642412920-1887927527-75363",
+					"aadUserId": "319dc320-4ce3-4cd7-a0de-c476d146342d",
+					"userPrincipalName": "temp2@microsoft.com"
+				}
+			]
+		},
+		...
+	]
 }
 ```
 
 ### Example 2
 
-Get all the alerts that created after 2018-10-20 00:00:00
+Get all the alerts last updated after 2019-10-20 00:00:00
 
 ```
-HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=alertCreationTime+gt+2018-11-22T00:00:00Z
+HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "value": [
         {
-            "id": "da637084217856368682_-292920499",
-			"incidentId": 66860,
-			"investigationId": 4416234,
-			"investigationState": "Running",
-			"assignedTo": "secop@contoso.com",
-			"severity": "Low",
-			"status": "New",
-			"classification": "TruePositive",
-			"determination": null,
-			"detectionSource": "WindowsDefenderAtp",
-			"category": "CommandAndControl",
-			"threatFamilyName": null,
-			"title": "Network connection to a risky host",
-			"description": "A network connection was made to a risky host which has exhibited malicious activity.",
-			"alertCreationTime": "2019-11-03T23:49:45.3823185Z",
-			"firstEventTime": "2019-11-03T23:47:16.2288822Z",
-			"lastEventTime": "2019-11-03T23:47:51.2966758Z",
-			"lastUpdateTime": "2019-11-03T23:55:52.6Z",
-			"resolvedTime": null,
-			"machineId": "986e5df8b73dacd43c8917d17e523e76b13c75cd",
+            "id": "da637308392288907382_-880718168",
+            "incidentId": 7587,
+            "investigationId": 723156,
+            "assignedTo": "secop123@contoso.com",
+            "severity": "Low",
+            "status": "New",
+            "classification": "TruePositive",
+            "determination": null,
+            "investigationState": "Queued",
+            "detectionSource": "WindowsDefenderAv",
+            "category": "SuspiciousActivity",
+            "threatFamilyName": "Meterpreter",
+            "title": "Suspicious 'Meterpreter' behavior was detected",
+            "description": "Malware and unwanted software are undesirable applications that perform annoying, disruptive, or harmful actions on affected machines. Some of these undesirable applications can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyber attacks.\n\nA malware is considered active if it is found running on the machine or it already has persistence mechanisms in place. Active malware detections are assigned higher severity ratings.\n\nBecause this malware was active, take precautionary measures and check for residual signs of infection.",
+            "alertCreationTime": "2020-07-20T10:53:48.7657932Z",
+            "firstEventTime": "2020-07-20T10:52:17.6654369Z",
+            "lastEventTime": "2020-07-20T10:52:18.1362905Z",
+            "lastUpdateTime": "2020-07-20T10:53:50.19Z",
+            "resolvedTime": null,
+            "machineId": "12ee6dd8c833c8a052ea231ec1b19adaf497b625",
+            "computerDnsName": "temp123.middleeast.corp.microsoft.com",
+            "rbacGroupName": "MiddleEast",
+            "aadTenantId": "a839b112-1253-6432-9bf6-94542403f21c",
+            "relatedUser": {
+                "userName": "temp123",
+                "domainName": "MIDDLEEAST"
+            },
 			"comments": [
 				{
 					"comment": "test comment for docs",
-					"createdBy": "secop@contoso.com",
-					"createdTime": "2019-11-05T14:08:37.8404534Z"
+					"createdBy": "secop123@contoso.com",
+					"createdTime": "2020-07-21T01:00:37.8404534Z"
 				}
-		  ]
-        },
-        ...
-    ]
+			],
+            "evidence": []
+		}
+		...
+	]
 }
 ```
 
@@ -134,9 +208,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
@@ -175,9 +247,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStat
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
@@ -216,9 +286,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen g
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
     "value": [
@@ -257,10 +325,8 @@ HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requ
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
-{
+```json
+json{
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
     "value": [
         {
@@ -291,10 +357,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415
 
 **Response:**
 
-```
-HTTP/1.1 200 OK
-Content-type: application/json
-
+```json
 4
 ```
 

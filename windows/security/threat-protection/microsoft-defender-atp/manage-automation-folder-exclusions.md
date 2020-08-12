@@ -67,6 +67,9 @@ You can specify the file names that you want to be excluded in a specific direct
 
 4. Click **Save**.
 
+>[!NOTE]
+> Live Response commands to collect or examine excluded files will fail with error: "File is excluded". In addition, automated investigations will ignore the excluded items.
+
 ## Edit an automation folder exclusion 
 1. In the navigation pane, select **Settings** > **Automation folder exclusions**. 
 
