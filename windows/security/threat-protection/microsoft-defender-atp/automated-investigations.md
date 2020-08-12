@@ -50,7 +50,7 @@ During and after an automated investigation, you can view details about the inve
 |**Evidence** |Shows the entities that were found to be malicious during the investigation.|
 |**Entities** |Provides details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
 |**Log** |Shows the chronological detailed view of all the investigation actions taken on the alert.|
-|**Pending actions** |If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. |
+|**Pending actions** |If there are any actions awaiting approval as a result of the investigation, the **Pending actions** tab is displayed. On the **Pending actions** tab, you can approve or reject each action. |
 
 > [!IMPORTANT]
 > Go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions. 
