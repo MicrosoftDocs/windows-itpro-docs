@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender ATP for Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Ansible YAML files](#create-ansible-yaml-files)
@@ -33,12 +33,12 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Ansibl
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Please refer to the [Ansible documentation](https://docs.ansible.com/) for details.
+In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
-- Ansible needs to be installed on at least on one computer (we will call it the master).
-- SSH must be configured for an administrator account between the master and all clients, and it is recommended be configured with public key authentication.
+- Ansible needs to be installed on at least one computer (we will call it the primary computer).
+- SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.
 - The following software must be installed on all clients:
   - curl
   - python-apt
@@ -54,7 +54,7 @@ In addition, for Ansible deployment, you need to be familiar with Ansible admini
 - Ping test:
 
     ```bash
-    $ ansible -m ping all
+    ansible -m ping all
     ```
 
 ## Download the onboarding package
@@ -70,10 +70,16 @@ Download the onboarding package from Microsoft Defender Security Center:
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
     ```bash
-    $ ls -l
+    ls -l
+    ```
+    ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```bash
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -158,7 +164,9 @@ Create a subtask or role files that contribute to an playbook or task.
     - For apt-based distributions use the following YAML file:
 
         ```bash
-        $ cat install_mdatp.yml
+        cat install_mdatp.yml
+        ```
+        ```Output
         - hosts: servers
             tasks:
                 - include: ../roles/onboarding_setup.yml
@@ -170,7 +178,9 @@ Create a subtask or role files that contribute to an playbook or task.
         ```
 
         ```bash
-        $ cat uninstall_mdatp.yml
+        cat uninstall_mdatp.yml
+        ```
+        ```Output
         - hosts: servers
         tasks:
             - apt:
@@ -181,7 +191,9 @@ Create a subtask or role files that contribute to an playbook or task.
     - For yum-based distributions use the following YAML file:
 
         ```bash
-        $ cat install_mdatp_yum.yml
+        cat install_mdatp_yum.yml
+        ```
+        ```Output
         - hosts: servers
         tasks:
             - include: ../roles/onboarding_setup.yml
@@ -193,7 +205,9 @@ Create a subtask or role files that contribute to an playbook or task.
         ```
 
         ```bash
-        $ cat uninstall_mdatp_yum.yml
+        cat uninstall_mdatp_yum.yml
+        ```
+        ```Output
         - hosts: servers
         tasks:
             - yum:
@@ -208,7 +222,7 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 - Installation:
 
     ```bash
-    $ ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
+    ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
@@ -217,14 +231,16 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 - Validation/configuration:
 
     ```bash
-    $ ansible -m shell -a 'mdatp connectivity test' all
-    $ ansible -m shell -a 'mdatp health' all
+    ansible -m shell -a 'mdatp connectivity test' all
+    ```
+    ```bash
+    ansible -m shell -a 'mdatp health' all
     ```
 
 - Uninstallation:
 
     ```bash
-    $ ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
+    ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
 ## Log installation issues
