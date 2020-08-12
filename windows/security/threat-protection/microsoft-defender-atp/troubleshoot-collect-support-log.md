@@ -45,9 +45,10 @@ This topic provides instructions on how to run the tool via Live Response.
    ![Image of choose file button](images/analyzer-file.png)
 
 
-6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
+6. While still in the LiveResponse session, use the commands below to upload, run the analyzer and collect the result file:
 
     ```
+    PutFile MDATPClientAnalyzerPreview.zip -overwrite
     Run MDATPLiveAnalyzer.ps1
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
     ```
