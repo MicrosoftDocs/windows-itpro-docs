@@ -196,163 +196,84 @@ allowed by Filter \#125918 which is from the InternetClient Default Rule.
 **InternetClient Default Rule Filter \#125918, Wfpdiag-Case-1.xml**
 ```
 \<item\>
-
 >   \<filterKey\>{3389708e-f7ae-4ebc-a61a-f659065ab24e}\</filterKey\>
-
 >   \<displayData\>
-
 >   \<name\>InternetClient Default Rule\</name\>
-
 >   \<description\>InternetClient Default Rule\</description\>
-
 >   \</displayData\>
-
 >   \<flags/\>
-
 >   \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 >   \<providerData\>
-
 >   \<data\>ad2b000000000000\</data\>
-
 >   \<asString\>.+......\</asString\>
-
 >   \</providerData\>
-
 >   \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V6\</layerKey\>
-
 >   \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 >   \<weight\>
-
 >   \<type\>FWP_EMPTY\</type\>
-
 >   \</weight\>
-
 >   \<filterCondition numItems="5"\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SID\</type\>
-
 >   \<sid\>S-1-0-0\</sid\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_IP_REMOTE_ADDRESS\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_RANGE\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_RANGE_TYPE\</type\>
-
 >   \<rangeValue\>
-
 >   \<valueLow\>
-
 >   \<type\>FWP_BYTE_ARRAY16_TYPE\</type\>
-
 >   \<byteArray16\>::\</byteArray16\>
-
 >   \</valueLow\>
-
 >   \<valueHigh\>
-
 >   \<type\>FWP_BYTE_ARRAY16_TYPE\</type\>
-
 >   \<byteArray16\>ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff\</byteArray16\>
-
 >   \</valueHigh\>
-
 >   \</rangeValue\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ORIGINAL_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_CURRENT_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 >   \<sd\>O:LSD:(A;;CC;;;S-1-15-3-1)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \</filterCondition\>
-
 >   \<action\>
-
 >   \<type\>FWP_ACTION_PERMIT\</type\>
-
 >   \<filterType/\>
-
 >   \</action\>
-
 >   \<rawContext\>0\</rawContext\>
-
 >   \<reserved/\>
-
 >   \<filterId\>125918\</filterId\>
-
 >   \<effectiveWeight\>
-
 >   \<type\>FWP_UINT64\</type\>
-
 >   \<uint64\>103079219136\</uint64\>
-
 >   \</effectiveWeight\>
-
 \</item\>
 ```
 One condition is
@@ -360,19 +281,12 @@ One condition is
 **Capabilities Condition in Filter \#125918, Wfpdiag-Case-1.xml**
 ```
 \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 >   \<sd\>O:LSD:(A;;CC;;;S-1-15-3-1)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 >   \</conditionValue\>
-
 \</item\>
 ```
 which is the condition for checking capabilities in this filter.
@@ -381,15 +295,12 @@ The important part of this condition is S-1-15-3-1, which is the capability SID
 for INTERNET_CLIENT privileges.
 
 From the netEvent’s capabilities section,
-```
+
 Capabilities from netEvent, Wfpdiag-Case-1.xml
-
+```
 \<capabilities numItems="3"\>				
-
 >   **\<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>**			\<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
-
 \<item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
-
 \</capabilities\>
 ```
 it shows the packet came from an app with an Internet client token
@@ -665,842 +576,439 @@ In this example, the UWP app is unable to reach the Intranet target address,
 10.50.50.50, because it does not have a Private Network capability.
 
 **Classify Drop netEvent, Wfpdiag-Case-4.xml**
-
+```
 \<netEvent\>
-
 \<header\>
-
 >   \<timeStamp\>2020-05-22T21:29:28.601Z\</timeStamp\>
-
 >   \<flags numItems="9"\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
-
 >   \</flags\>
-
 >   \<ipVersion\>FWP_IP_VERSION_V4\</ipVersion\>
-
 >   \<ipProtocol\>6\</ipProtocol\>
-
 >   \<localAddrV4\>10.216.117.17\</localAddrV4\>
-
 >   \<remoteAddrV4\>10.50.50.50\</remoteAddrV4\>
-
 >   \<localPort\>52998\</localPort\>
-
 >   \<remotePort\>53\</remotePort\>
-
 >   \<scopeId\>0\</scopeId\>
-
 >   \<appId\>				
-
 >   \<data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310031002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
-
 >   \<asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
 >   .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.1...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
-
 >   \</appId\>
-
 >   \<userId\>S-1-5-21-2993214446-1947230185-131795049-1000\</userId\>
-
 >   \<addressFamily\>FWP_AF_INET\</addressFamily\>
-
 >   \<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
-
 >   \<enterpriseId/\>
-
 >   \<policyFlags\>0\</policyFlags\>
-
 >   \<effectiveName/\>
-
 \</header\>
-
 >   \<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_DROP\</type\>
-
 >   \<classifyDrop\>
-
 >   \<filterId\>121180\</filterId\>
-
 >   \<layerId\>48\</layerId\>
-
 >   \<reauthReason\>0\</reauthReason\>
-
 >   \<originalProfile\>1\</originalProfile\>
-
 >   \<currentProfile\>1\</currentProfile\>
-
 >   \<msFwpDirection\>MS_FWP_DIRECTION_OUT\</msFwpDirection\>
-
 >   \<isLoopback\>false\</isLoopback\>
-
 >   \<vSwitchId/\>
-
 >   \<vSwitchSourcePort\>0\</vSwitchSourcePort\>
-
 >   \<vSwitchDestinationPort\>0\</vSwitchDestinationPort\>
-
 \</classifyDrop\>
-
 \<internalFields\>
-
 >   \<internalFlags/\>
-
 >   \<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
-
 >   \<capabilities numItems="2"\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
-
 >   \</capabilities\>
-
 >   \<fqbnVersion\>0\</fqbnVersion\>
-
 >   \<fqbnName/\>
-
 >   \<terminatingFiltersInfo numItems="2"\>
-
 >   \<item\>
-
 >   \<filterId\>121180\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_BLOCK\</actionType\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<filterId\>121165\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_PERMIT\</actionType\>
-
 >   \</item\>
-
 >   \</terminatingFiltersInfo\>
-
 \</internalFields\>
-
 \</netEvent\>
-
+```
 ## Case 5: UWP app cannot reach “Intranet” target address with Private Network capability
 
 In this example, the UWP app is unable to reach the Intranet target address,
 10.1.1.1, even though it has a Private Network capability token.
 
 **Classify Drop netEvent, Wfpdiag-Case-5.xml**
-
+```
 \<netEvent\>
-
 >   \<header\>
-
 >   \<timeStamp\>2020-05-22T20:54:53.499Z\</timeStamp\>
-
 >   \<flags numItems="9"\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
-
 >   \</flags\>
-
 >   \<ipVersion\>FWP_IP_VERSION_V4\</ipVersion\>
-
 >   \<ipProtocol\>6\</ipProtocol\>
-
 >   \<localAddrV4\>10.216.117.17\</localAddrV4\>
-
 >   \<remoteAddrV4\>10.1.1.1\</remoteAddrV4\>
-
 >   \<localPort\>52956\</localPort\>
-
 >   \<remotePort\>53\</remotePort\>
-
 >   \<scopeId\>0\</scopeId\>
-
 >   \<appId\>	
-
 >   \<data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310033002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
-
 >   \<asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
 >   .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.3...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
-
 >   \</appId\>
-
 >   \<userId\>S-1-5-21-2993214446-1947230185-131795049-1000\</userId\>
-
 >   \<addressFamily\>FWP_AF_INET\</addressFamily\>
-
 >   \<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
-
 >   \<enterpriseId/\>
-
 >   \<policyFlags\>0\</policyFlags\>
-
 >   \<effectiveName/\>
-
 \</header\>
-
 >   \<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_DROP\</type\>
-
 >   \<classifyDrop\>
-
 >   \<filterId\>121180\</filterId\>
-
 >   \<layerId\>48\</layerId\>
-
 >   \<reauthReason\>0\</reauthReason\>
-
 >   \<originalProfile\>1\</originalProfile\>
-
 >   \<currentProfile\>1\</currentProfile\>
-
 >   \<msFwpDirection\>MS_FWP_DIRECTION_OUT\</msFwpDirection\>
-
 >   \<isLoopback\>false\</isLoopback\>
-
 >   \<vSwitchId/\>
-
 >   \<vSwitchSourcePort\>0\</vSwitchSourcePort\>
-
 >   \<vSwitchDestinationPort\>0\</vSwitchDestinationPort\>
-
 >   \</classifyDrop\>
-
 >   \<internalFields\>
-
 >   \<internalFlags/\>
-
 >   \<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
-
 >   \<capabilities numItems="1"\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
-
 >   \</capabilities\>
-
 >   \<fqbnVersion\>0\</fqbnVersion\>
-
 >   \<fqbnName/\>
-
 >   \<terminatingFiltersInfo numItems="2"\>
-
 >   \<item\>
-
 >   \<filterId\>121180\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_BLOCK\</actionType\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<filterId\>121165\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_PERMIT\</actionType\>
-
 >   \</item\>
-
 >   \</terminatingFiltersInfo\>
-
 >   \</internalFields\>
-
 \</netEvent\>
-
+```
 The following shows the filter that blocked the event:
 
 **Block Outbound Default Rule Filter \#121180, Wfpdiag-Case-5.xml**
 
+```
 \<item\>
-
 >   \<filterKey\>{e62a1a22-c80a-4518-a7f8-e7d1ef3a9ff6}\</filterKey\>
-
 >   \<displayData\>
-
 >   \<name\>Block Outbound Default Rule\</name\>
-
 >   \<description\>Block Outbound Default Rule\</description\>
-
 >   \</displayData\>
-
 >   \<flags/\>
-
 >   \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 >   \<providerData\>
-
 >   \<data\>c029000000000000\</data\>
-
 >   \<asString\>.)......\</asString\>
-
 >   \</providerData\>
-
 >   \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 >   \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 >   \<weight\>
-
 >   \<type\>FWP_EMPTY\</type\>
-
 >   \</weight\>
-
 >   \<filterCondition numItems="1"\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SID\</type\>
-
 >   \<sid\>S-1-0-0\</sid\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \</filterCondition\>
-
 >   \<action\>
-
 >   \<type\>FWP_ACTION_BLOCK\</type\>
-
 >   \<filterType/\>
-
 >   \</action\>
-
 >   \<rawContext\>0\</rawContext\>
-
 >   \<reserved/\>
-
 >   \<filterId\>121180\</filterId\>
-
 >   \<effectiveWeight\>
-
 >   \<type\>FWP_UINT64\</type\>
-
 >   \<uint64\>274877906944\</uint64\>
-
 >   \</effectiveWeight\>
-
 \</item\>
-
+```
 If the target was in the private range, then it should have been allowed by a
 PrivateNetwork Outbound Default Rule filter.
 
-The following PrivateNetwork Outbound Default Rule filters have conditions for
-matching Intranet IP addresses. Since the expected Intranet target address,
-10.1.1.1, is not included in these filters it becomes clear that the address is
-not in the private range. Check the policies which configure the private range
-on the machine (MDM, GP, etc) and make sure it includes the private target
-address you wanted to reach.
+The following PrivateNetwork Outbound Default Rule filters have conditions for matching Intranet IP addresses. Since the expected Intranet target address,
+10.1.1.1, is not included in these filters it becomes clear that the address isnot in the private range. Check the policies which configure the private range
+on the machine (MDM, GP, etc) and make sure it includes the private targetaddress you wanted to reach.
 
 **PrivateNetwork Outbound Default Rule Filters, Wfpdiag-Case-5.xml**
-
+```
 \<item\>
-
 >   \<filterKey\>{fd65507b-e356-4e2f-966f-0c9f9c1c6e78}\</filterKey\>
-
 >   \<displayData\>
-
 >   \<name\>PrivateNetwork Outbound Default Rule\</name\>
-
 >   \<description\>PrivateNetwork Outbound Default Rule\</description\>
-
 >   \</displayData\>
-
 >   \<flags/\>
-
 >   \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 >   \<providerData\>
-
 >   \<data\>f22d000000000000\</data\>
-
 >   \<asString\>.-......\</asString\>
-
 >   \</providerData\>
-
 >   \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 >   \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 >   \<weight\>
-
 >   \<type\>FWP_EMPTY\</type\>
-
 >   \</weight\>
-
 >   \<filterCondition numItems="5"\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SID\</type\>
-
 >   \<sid\>S-1-0-0\</sid\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_IP_REMOTE_ADDRESS\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1.1.1.1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ORIGINAL_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_CURRENT_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 >   \<sd\>O:LSD:(A;;CC;;;S-1-15-3-3)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \</filterCondition\>
-
 >   \<action\>
-
 >   \<type\>FWP_ACTION_PERMIT\</type\>
-
 >   \<filterType/\>
-
 >   \</action\>
-
 >   \<rawContext\>0\</rawContext\>
-
 >   \<reserved/\>
-
 >   \<filterId\>129656\</filterId\>
-
 >   \<effectiveWeight\>
-
 >   \<type\>FWP_UINT64\</type\>
-
 >   \<uint64\>144115600392724416\</uint64\>
-
 >   \</effectiveWeight\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<filterKey\>{b11b4f8a-222e-49d6-8d69-02728681d8bc}\</filterKey\>
-
 >   \<displayData\>
-
 >   \<name\>PrivateNetwork Outbound Default Rule\</name\>
-
 >   \<description\>PrivateNetwork Outbound Default Rule\</description\>
-
 >   \</displayData\>
-
 >   \<flags/\>
-
 >   \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 >   \<providerData\>
-
 >   \<data\>f22d000000000000\</data\>
-
 >   \<asString\>.-......\</asString\>
-
 >   \</providerData\>
-
 >   \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 >   \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 >   \<weight\>
-
 >   \<type\>FWP_EMPTY\</type\>
-
 >   \</weight\>
-
 >   \<filterCondition numItems="5"\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SID\</type\>
-
 >   \<sid\>S-1-0-0\</sid\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_IP_REMOTE_ADDRESS\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_RANGE\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_RANGE_TYPE\</type\>
-
 >   \<rangeValue\>
-
 >   \<valueLow\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>172.16.0.0\</uint32\>
-
 >   \</valueLow\>
-
 >   \<valueHigh\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>172.31.255.255\</uint32\>
-
 >   \</valueHigh\>
-
 >   \</rangeValue\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ORIGINAL_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_CURRENT_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 >   \<sd\>O:LSD:(A;;CC;;;S-1-15-3-3)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \</filterCondition\>
-
 >   \<action\>
-
 >   \<type\>FWP_ACTION_PERMIT\</type\>
-
 >   \<filterType/\>
-
 >   \</action\>
-
 >   \<rawContext\>0\</rawContext\>
-
 >   \<reserved/\>
-
 >   \<filterId\>129657\</filterId\>
-
 >   \<effectiveWeight\>
-
 >   \<type\>FWP_UINT64\</type\>
-
 >   \<uint64\>36029209335832512\</uint64\>
-
 >   \</effectiveWeight\>
-
 \</item\>
-
 \<item\>
-
 >   \<filterKey\>{21cd82bc-6077-4069-94bf-750e5a43ca23}\</filterKey\>
-
 >   \<displayData\>
-
 >   \<name\>PrivateNetwork Outbound Default Rule\</name\>
-
 >   \<description\>PrivateNetwork Outbound Default Rule\</description\>
-
 >   \</displayData\>
-
 >   \<flags/\>
-
 >   \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 >   \<providerData\>
-
 >   \<data\>f22d000000000000\</data\>
-
 >   \<asString\>.-......\</asString\>
-
 >   \</providerData\>
-
 >   \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 >   \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 >   \<weight\>
-
 >   \<type\>FWP_EMPTY\</type\>
-
 >   \</weight\>
-
 >   \<filterCondition numItems="5"\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SID\</type\>
-
 >   \<sid\>S-1-0-0\</sid\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_IP_REMOTE_ADDRESS\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_RANGE\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_RANGE_TYPE\</type\>
-
 >   \<rangeValue\>
-
 >   \<valueLow\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>192.168.0.0\</uint32\>
-
 >   \</valueLow\>
-
 >   \<valueHigh\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>192.168.255.255\</uint32\>
-
 >   \</valueHigh\>
-
 >   \</rangeValue\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ORIGINAL_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_CURRENT_PROFILE_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_UINT32\</type\>
-
 >   \<uint32\>1\</uint32\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 >   \<conditionValue\>
-
 >   \<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 >   \<sd\>O:LSD:(A;;CC;;;S-1-15-3-3)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 >   \</conditionValue\>
-
 >   \</item\>
-
 >   \</filterCondition\>
-
 >   \<action\>
-
 >   \<type\>FWP_ACTION_PERMIT\</type\>
-
 >   \<filterType/\>
-
 >   \</action\>
-
 >   \<rawContext\>0\</rawContext\>
-
 >   \<reserved/\>
-
 >   \<filterId\>129658\</filterId\>
-
 >   \<effectiveWeight\>
-
 >   \<type\>FWP_UINT64\</type\>
-
 >   \<uint64\>36029209335832512\</uint64\>
-
 >   \</effectiveWeight\>
-
 \</item\>
-
+```
 # Debugging Past Drops 
 
 If you are debugging a network drop from the past or from a remote machine, you
