@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender ATP for Linux.
+This article provides some general steps that can be used to narrow down performance issues related to Microsoft Defender ATP for Linux.
 
 Real-time protection (RTP) is a feature of Microsoft Defender ATP for Linux that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
@@ -36,7 +36,9 @@ The following steps can be used to troubleshoot and mitigate these issues:
     If your device is not managed by your organization, real-time protection can be disabled from the command line:
 
     ```bash
-    $ mdatp config real-time-protection --value disabled
+    mdatp config real-time-protection --value disabled
+    ```
+    ```Output
     Configuration property updated
     ```
 
@@ -50,26 +52,28 @@ The following steps can be used to troubleshoot and mitigate these issues:
     This feature is enabled by default on the `Dogfood` and `InsisderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
  
     ```bash
-    $ mdatp config real-time-protection-statistics --value enabled
+    mdatp config real-time-protection-statistics --value enabled
     ```
 
     This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
     ```bash
-    $ mdatp health --field real_time_protection_enabled
+    mdatp health --field real_time_protection_enabled
     ```
 
     Verify that the `real_time_protection_enabled` entry is `true`. Otherwise, run the following command to enable it:
 
     ```bash
-    $ mdatp config real-time-protection --value enabled
+    mdatp config real-time-protection --value enabled
+    ```
+    ```Output
     Configuration property updated
     ```
 
     To collect current statistics, run:
 
     ```bash
-    $ mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
+    mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
     ```
 
     The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).

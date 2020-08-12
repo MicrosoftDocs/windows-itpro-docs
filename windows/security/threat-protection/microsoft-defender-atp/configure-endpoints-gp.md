@@ -101,6 +101,75 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 > If you don't set a value, the default value is to enable sample collection.
 
 
+## Other recommended configuration settings
+
+### Update endpoint protection configuration
+
+After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
+
+All policies are located under `Computer Configuration\Policies\Administrative Templates`.
+
+**Policy location:** \Windows Components\Windows Defender ATP
+
+Policy | Setting 
+:---|:---
+Enable\Disable Sample collection|	Enabled - "Enable sample collection on machines" checked
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus
+
+Policy | Setting 
+:---|:---
+Configure detection for potentially unwanted applications | Enabled, Block
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
+
+Policy | Setting 
+:---|:---
+Join Microsoft MAPS | Enabled, Advanced MAPS
+Send file samples when further analysis is required | Enabled, Send safe samples
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
+
+Policy | Setting 
+:---|:---
+Turn off real-time protection|Disabled
+Turn on behavior monitoring|Enabled
+Scan all downloaded files and attachments|Enabled
+Monitor file and program activity on your computer|Enabled
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
+
+These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
+
+Policy | Setting 
+:---|:---
+Check for the latest virus and spyware security intelligence before running a scheduled scan |Enabled
+
+
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+
+Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+
+1. Open the **Configure Attack Surface Reduction** policy.
+2. Select **Enabled**.
+3. Select the **Show…** button.
+4. Add each GUID in the **Value Name** field with a Value of 2.
+
+This will set each up for audit only.
+
+![Image of attack surface reduction configuration](images/asr-guid.png)
+
+
+
+Policy | Setting 
+:---|:---
+Configure Controlled folder access|	Enabled, Audit Mode
+
+
+
 ## Offboard devices using Group Policy
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 

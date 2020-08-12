@@ -129,7 +129,7 @@ To enable autocompletion in `zsh`:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following command to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

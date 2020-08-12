@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender ATP for Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Puppet manifest](#create-a-puppet-manifest)
@@ -35,7 +35,7 @@ This topic describes how to deploy Microsoft Defender ATP for Linux using Puppet
 
  For a description of prerequisites and system requirements for the current software version, see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md).
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to the [Puppet documentation](https://puppet.com/docs) for details.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
 ## Download the onboarding package
 
@@ -47,13 +47,20 @@ Download the onboarding package from Microsoft Defender Security Center:
 
     ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
 
-4. From a command prompt, verify that you have the file. Extract the contents of the archive:
+4. From a command prompt, verify that you have the file. 
 
     ```bash
-    $ ls -l
+    ls -l
+    ```
+    ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+5. Extract the contents of the archive.
+    ```bash
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -62,13 +69,19 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 You need to create a Puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by a Puppet server. This example makes use of the *apt* and *yumrepo* modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
 
-Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This is typically located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created above to the *install_mdatp/files* folder. Create an *init.pp* file that contains the deployment instructions:
+Create the folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your Puppet installation. This folder is typically located in */etc/puppetlabs/code/environments/production/modules* on your Puppet server. Copy the mdatp_onboard.json file created above to the *install_mdatp/files* folder. Create an *init.pp* file that contains the deployment instructions:
 
 ```bash
-$ pwd
+pwd
+```
+```Output
 /etc/puppetlabs/code/environments/production/modules
+```
 
-$ tree install_mdatp
+```bash
+tree install_mdatp
+```
+```Output
 install_mdatp
 ├── files
 │   └── mdatp_onboard.json
@@ -161,20 +174,24 @@ $version = undef
 Include the above manifest in your site.pp file:
 
 ```bash
-$ cat /etc/puppetlabs/code/environments/production/manifests/site.pp
+cat /etc/puppetlabs/code/environments/production/manifests/site.pp
+```
+```Output
 node "default" {
     include install_mdatp
 }
 ```
 
-Enrolled agent devices periodically poll the Puppet Server, and install new configuration profiles and policies as soon as they are detected.
+Enrolled agent devices periodically poll the Puppet Server and install new configuration profiles and policies as soon as they are detected.
 
 ## Monitor Puppet deployment
 
 On the agent device, you can also check the onboarding status by running:
 
 ```bash
-$ mdatp health
+mdatp health
+```
+```Output
 ...
 licensed                                : true
 org_id                                  : "[your organization identifier]"
@@ -200,7 +217,7 @@ The above command prints `1` if the product is onboarded and functioning as expe
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
 
-- 1 if the device is not yet onboarded.
+- 1 if the device isn't onboarded yet.
 - 3 if the connection to the daemon cannot be established.
 
 ## Log installation issues
