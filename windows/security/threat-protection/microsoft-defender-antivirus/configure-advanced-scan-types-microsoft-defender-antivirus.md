@@ -23,11 +23,11 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-**Use Microsoft Intune to configure scanning options**
+## Use Microsoft Intune to configure scanning options
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
-## Use Microsoft Endpoint Configuration Manager to configure scanning options:
+## Use Microsoft Endpoint Configuration Manager to configure scanning options
 
 See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
