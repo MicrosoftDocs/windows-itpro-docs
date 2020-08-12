@@ -72,7 +72,7 @@ Examples:
 - Add an exclusion for a file extension:
 
     ```bash
-    $ mdatp exclusion extension add --name .txt
+    mdatp exclusion extension add --name .txt
     ```
     ```Output
     Extension exclusion configured successfully
