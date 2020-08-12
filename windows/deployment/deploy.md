@@ -5,7 +5,7 @@ ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
-author: greg-lindsay
+
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

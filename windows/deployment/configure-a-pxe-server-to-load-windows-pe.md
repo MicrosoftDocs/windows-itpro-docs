@@ -12,7 +12,7 @@ author: greg-lindsay
 ms.reviewer: 
 manager: laurawi
 audience: itpro
-author: greg-lindsay
+
 ms.author: greglin
 ms.topic: article
 ---
