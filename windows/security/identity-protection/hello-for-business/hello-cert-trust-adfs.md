@@ -152,6 +152,9 @@ Sign-in a domain controller with _Enterprise Admin_ equivalent credentials.
 1. Start an elevated Windows PowerShell console.
 2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`.
 
+>[!NOTE]
+> If the [default object creation quota for security principles](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
+
 ### Windows Server 2008 or 2008 R2 Domain Controllers
 
 Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key Distribution Service, nor do they support Group Managed Service Accounts.  Therefore, you must use create a normal user account as a service account where you are responsible for changing the password on a regular basis.
