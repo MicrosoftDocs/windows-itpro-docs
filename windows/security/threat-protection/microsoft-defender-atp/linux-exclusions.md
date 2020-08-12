@@ -64,7 +64,7 @@ For more information on how to configure exclusions from Puppet, Ansible, or ano
 Run the following command to see the available switches for managing exclusions:
 
 ```bash
-$ mdatp exclusion
+mdatp exclusion
 ```
 
 Examples:
@@ -73,27 +73,35 @@ Examples:
 
     ```bash
     $ mdatp exclusion extension add --name .txt
+    ```
+    ```Output
     Extension exclusion configured successfully
     ```
 
 - Add an exclusion for a file:
 
     ```bash
-    $ mdatp exclusion file add --path /var/log/dummy.log
+    mdatp exclusion file add --path /var/log/dummy.log
+    ```
+    ```Output
     File exclusion configured successfully
     ```
 
 - Add an exclusion for a folder:
 
     ```bash
-    $ mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /var/log/
+    ```
+    ```Output
     Folder exclusion configured successfully
     ```
 
 - Add an exclusion for a process:
 
     ```bash
-    $ mdatp exclusion process add --name cat
+    mdatp exclusion process add --name cat
+    ```
+    ```Output    
     Process exclusion configured successfully
     ```
 
@@ -104,7 +112,7 @@ You can validate that your exclusion lists are working by using `curl` to downlo
 In the following Bash snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
-$ curl -o test.txt https://www.eicar.org/download/eicar.com.txt
+curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
 If Microsoft Defender ATP for Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
