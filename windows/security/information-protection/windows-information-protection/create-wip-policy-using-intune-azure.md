@@ -461,10 +461,10 @@ contoso.sharepoint.com|contoso.visualstudio.com
 
 Specify the domains used for identities in your environment. 
 All traffic to the fully-qualified domains appearing in this list will be protected.
-Separate multiple domains with the "," delimiter.
+Separate multiple domains with the "|" delimiter.
 
 ```code
-exchange.contoso.com,contoso.com,region.contoso.com
+exchange.contoso.com|contoso.com|region.contoso.com
 ```
 
 ### Network domains
