@@ -34,7 +34,7 @@
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
 
 
-### [Next generation protection](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
+### [Next-generation protection](../microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10.md)
 
 
 ### [Endpoint detection and response]()
@@ -203,7 +203,7 @@
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
 
-### [Configure next generation protection]()
+### [Configure next-generation protection]()
 #### [Configure Microsoft Defender Antivirus features](../microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection]()
 ##### [Understand cloud-delivered protection](../microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
