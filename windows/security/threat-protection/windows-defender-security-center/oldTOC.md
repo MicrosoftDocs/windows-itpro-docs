@@ -1,6 +1,7 @@
 ---
 ms.author: dansimp
 author: dansimp
+title: The Microsoft Defender Security Center app
 ---
 
 # [The Microsoft Defender Security Center app](windows-defender-security-center.md)
