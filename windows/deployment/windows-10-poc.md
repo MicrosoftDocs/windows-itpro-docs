@@ -12,7 +12,6 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
