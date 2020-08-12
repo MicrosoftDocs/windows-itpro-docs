@@ -45,9 +45,9 @@ Depending on your organization's settings, employees can copy and paste images (
 
 To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
 
-### Why aren’t employees able to see their Extensions in the Application Guard Edge session?
+### Are Extensions supported in the Application Guard?
 
-Currently, the Application Guard Edge session doesn't support Extensions. However, we're closely monitoring your feedback about this. 
+Extension installs in the container is supported starting from Microsoft Edge version 81. For more details, see [Extension support inside the container](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard#extension-support-inside-the-container).
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
