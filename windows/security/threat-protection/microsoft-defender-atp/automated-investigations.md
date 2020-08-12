@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, and to reduce teh volume of alerts that must be investigated individually,  Microsoft Defender ATP includes automated investigation and remediation capabilities. 
+Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, and to reduce the volume of alerts that must be investigated individually,  Microsoft Defender ATP includes automated investigation and remediation capabilities. 
 
 Automated investigation leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. Automated investigation and remediation capabilities significantly reduce alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when each investigation was initiated.
 
@@ -82,9 +82,9 @@ You can configure the following levels of automation:
 
 - Your level of automation is determined by your device group settings. See [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
 
-- If your Microsoft Defender ATP tenant was created prior to August 16, 2020, you have a default device group that is configured for semi-automatic remediation. This means that any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). This can be changed to fully automatic so that no user approval is needed. 
+- If your Microsoft Defender ATP tenant was created before August 16, 2020, you have a default device group that is configured for semi-automatic remediation. Any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). You can configure your device groups to use full automation so that no user approval is needed. 
 
-- If your Microsoft Defender ATP tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. This means that remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
+- If your Microsoft Defender ATP tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. Remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
 
 ## Next steps
 
