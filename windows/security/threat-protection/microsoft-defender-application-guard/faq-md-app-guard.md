@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 06/02/2020
+ms.date: 08/12/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -45,7 +45,7 @@ Depending on your organization's settings, employees can copy and paste images (
 
 To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
 
-### Are Extensions supported in the Application Guard?
+### Are extensions supported in the Application Guard?
 
 Extension installs in the container is supported starting from Microsoft Edge version 81. For more details, see [Extension support inside the container](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard#extension-support-inside-the-container).
 
@@ -119,8 +119,8 @@ For guidance on how to create a firewall rule by using group policy, see:
 - [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
 
 First rule (DHCP Server):
-1. Program path: %SystemRoot%\System32\svchost.exe
-2. Local Service: Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))
+1. Program path: `%SystemRoot%\System32\svchost.exe`
+2. Local Service: Sid:  `S-1-5-80-2009329905-444645132-2728249442-922493431-93864177`  (Internet Connection Service (SharedAccess))
 3. Protocol UDP
 4. Port 67
 
@@ -148,14 +148,14 @@ This is a two step process.
 
 Step 1:
 
-Enable Internet Connection sharing by changing the Group Policy setting “Prohibit use of Internet Connection Sharing on your DNS domain network” which is part of the MS Security baseline from Enabled to Disabled.
+Enable Internet Connection sharing by changing the Group Policy setting **Prohibit use of Internet Connection Sharing on your DNS domain network.** This setting is part of the Microsoft security baseline. Change it from Enabled to Disabled.
  
 Step 2:
  
-1. Disable IpNat.sys from ICS load
-System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1
-2. Configure ICS (SharedAccess) to enabled
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3
-3. Disabling IPNAT (Optional)
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4
-4. Reboot.
+1. Disable IpNat.sys from ICS load: 
+`System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`.
+2. Configure ICS (SharedAccess) to enabled: 
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3`.
+3. Disable IPNAT (Optional): 
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`.
+4. Restart the device.
