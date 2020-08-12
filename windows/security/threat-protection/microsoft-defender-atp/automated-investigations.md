@@ -41,7 +41,7 @@ When an alert is triggered, a security playbook goes into effect. Depending on t
 
 ## Details of an automated investigation
 
-During and after an automated investigation, you can view details about the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Devices**, **Evidence**, **Entities**, and **Log** tabs.
+During and after an automated investigation, you can view details about the investigation. Select a triggering alert to view the investigation details. From there, you can go to the **Investigation graph**, **Alerts**, **Devices**, **Evidence**, **Entities**, and **Log** tabs.
 
 |Tab |Description |
 |--|--|
