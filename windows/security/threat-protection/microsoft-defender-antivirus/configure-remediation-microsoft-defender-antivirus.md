@@ -3,7 +3,6 @@ title: Remediate and resolve infections detected by Microsoft Defender Antivirus
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

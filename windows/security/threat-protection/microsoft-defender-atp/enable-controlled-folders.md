@@ -3,7 +3,6 @@ title: Turn on the protected folders feature in Windows 10
 keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

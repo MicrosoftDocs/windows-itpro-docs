@@ -3,7 +3,6 @@ title: "Better together - Microsoft Defender Antivirus and Office 365 (including
 description: "Office 365, which includes OneDrive, goes together wonderfully with Microsoft Defender Antivirus. Read this article to learn more."
 keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

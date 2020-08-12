@@ -3,7 +3,6 @@ title: Apply Microsoft Defender AV protection updates to out of date endpoints
 description: Define when and how updates should be applied for endpoints that have not updated in a while.
 keywords: updates, protection, out-of-date, outdated, old, catch-up
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

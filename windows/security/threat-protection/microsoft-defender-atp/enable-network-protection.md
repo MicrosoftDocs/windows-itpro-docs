@@ -3,7 +3,6 @@ title: Turn on network protection
 description: Enable Network protection with Group Policy, PowerShell, or MDM CSPs
 keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,7 +12,6 @@ audience: ITPro
 author: levinec
 ms.author: ellevin
 ms.reviewer: 
-audience: ITPro
 manager: dansimp
 ---
 

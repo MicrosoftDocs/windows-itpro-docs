@@ -7,7 +7,6 @@ audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
