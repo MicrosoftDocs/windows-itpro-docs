@@ -30,7 +30,7 @@ Automated investigation leverages various inspection algorithms, and processes u
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered. The automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
+When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
 
 >[!NOTE]
 >Currently, automated investigation only supports the following OS versions:
