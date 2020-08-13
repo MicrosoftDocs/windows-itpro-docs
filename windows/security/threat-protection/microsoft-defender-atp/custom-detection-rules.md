@@ -104,7 +104,7 @@ Set the scope to specify which devices are covered by the rule:
 Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
 ### 5. Review and turn on the rule.
-After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
+After reviewing the rule, select **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 
 ## Related topics

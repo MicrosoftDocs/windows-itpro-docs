@@ -23,7 +23,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Manage your existing [custom detection rules](custom-detection-rules.md) to ensure they are effectively finding threats and taking actions on threats you want to address proactively. Learn how to view the list of rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
+Manage your existing [custom detection rules](custom-detection-rules.md) to ensure they are effectively finding threats and taking actions. Explore how to view the list of rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
 ## Required permissions
 
@@ -40,7 +40,7 @@ To view all existing custom detection rules, navigate to **Settings** > **Custom
 
 ## View rule details, modify rule, and run rule
 
-To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Settings** > **Custom detections**. A page about the selected rule displays the the following information:
+To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Settings** > **Custom detections**. A page about the selected rule displays the following information:
 
 - General information about the rule, including the details of the alert, run status, and scope
 - List of triggered alerts
