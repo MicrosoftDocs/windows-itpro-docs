@@ -19,174 +19,164 @@ ms.topic: troubleshooting
 This document is intended to help network admins, support engineers, and developers to
 investigate UWP app network connectivity issues.
 
-# Introduction
+This document guides you through steps to debug  Universal Windows Platform (UWP) app network connectivity issues by providing practical examples.
 
-This document guides you through steps to debug different Universal Windows Platform (UWP) app network connectivity issues by providing practical case examples.
+## Typical causes of connectivity issues
 
-UWP app network connectivity issues typically stem from one of the following causes:
+UWP app network connectivity issues are typically caused by: 
 
-1. The UWP app was not permitted to receive loopback traffic (this must be configured as, by default, a UWP app is not allowed to receive loopback traffic).
+1. The UWP app was not permitted to receive loopback traffic. This must be configured. By default, UWP apps are not allowed to receive loopback traffic.
 2. The UWP app is missing the proper capability tokens.
-3. The private range is configured incorrectly (i.e. set incorrectly through GP/MDM policies, etc.)
+3. The private range is configured incorrectly. For example, the private ranges is set incorrectly through GP/MDM policies, etc.
 
-To understand these causes more thoroughly, there are several concepts that should be reviewed.
+To understand these causes more thoroughly, there are several concepts to review.
 
-The traffic of network packets (e.g. what's permitted and what’s not) on Windows is ultimately determined by the Windows Filtering Platform (WFP). When a UWP app
+The traffic of network packets (what's permitted and what’s not) on Windows is determined by the Windows Filtering Platform (WFP). When a UWP app
 or the private range is configured incorrectly, it affects how the UWP app’s network traffic will be processed by WFP.
 
-When a packet is processed by WFP, the characteristics of that packet must explicitly match all the conditions of a filter to either be permitted or dropped to its target address. Connectivity issues typically happen when the packet does not match the filter conditions of any filters, leading the packet to be dropped by a default block filter. The presence of the default block
-filters ensures network isolation for UWP applications. Specifically, it guarantees a network drop for a packet that does not have the correct capabilities for the resource it is trying to reach, ensuring the application’s granular access to each resource type and preventing the application from “escaping” its environment.
+When a packet is processed by WFP, the characteristics of that packet must explicitly match all the conditions of a filter to either be permitted or dropped to its target address. Connectivity issues typically happen when the packet does not match any of the filter conditions, leading the packet to be dropped by a default block filter. The presence of the default block
+filters ensures network isolation for UWP applications. Specifically, it guarantees a network drop for a packet that does not have the correct capabilities for the resource it is trying to reach. This ensures the application’s granular access to each resource type and preventing the application from escaping its environment.
 
 For more information on the filter arbitration algorithm and network isolation,
-please read [Filter
+see [Filter
 Arbitration](https://docs.microsoft.com/en-us/windows/win32/fwp/filter-arbitration)
 and
 [Isolation](https://docs.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation).
 
-The next sections will cover debugging case examples for loopback and
-non-loopback UWP app network connectivity issues.
+The following sections cover debugging case examples for loopback and non-loopback UWP app network connectivity issues.
 
 > [!NOTE] 
-> As improvements to debugging and diagnostics around the Windows Filtering Platform are made, the trace examples in this document may not exactly match the
-traces collected on an older Windows build.
+> As improvements to debugging and diagnostics in the Windows Filtering Platform are made, the trace examples in this document may not exactly match the
+traces collected on previous releases of Windows.
 
 # Debugging UWP App Loopback scenarios
 
-If you have a scenario where you are establishing a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
+If you need to establis a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
 
-To enable loopback for client outbound connections, run the following in a command prompt:
+To enable loopback for client outbound connections, run the following at a command prompt:
 
-`CheckNetIsolation.exe LoopbackExempt -a -n=\<AppContainer or Package Family\>`
+```dos
+CheckNetIsolation.exe LoopbackExempt -a -n=\<AppContainer or Package Family\>
+```
 
-To enable loopback for server inbound connections, please run the following in a
+To enable loopback for server inbound connections,  run the following at a
 command prompt:
+```dos
+CheckNetIsolation.exe LoopbackExempt -is -n=\<AppContainer or Package Family\>
+```
+You can ensure loopback is enabled by checking the appx manifests of both the sender and receiver.
 
-`CheckNetIsolation.exe LoopbackExempt -is -n=\<AppContainer or Package Family\>`
-
-You can ensure loopback is enabled by checking the appx manifests of both the
-sender and receiver.
-
-For more information about loopback scenarios, please read [Communicating with
+For more information about loopback scenarios, see [Communicating with
 localhost
 (loopback)](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/loopback)
 
 # Debugging Live Drops
 
-If the issue happened recently, but you find you are not able to reproduce the
-issue, go to Debugging Past Drops for the appropriate trace commands.
+If the issue happened recently, but you find you are not able to reproduce the issue, go to Debugging Past Drops for the appropriate trace commands.
 
-If you can consistently reproduce the issue, then you can run the following in
-an admin command prompt to gather a fresh trace:
+If you can consistently reproduce the issue, then you can run the following in an admin command prompt to gather a fresh trace:
 
-```
+```DOS
 Netsh wfp capture start keywords=19
 \<Run UWP app\>
 Netsh wfp capture stop
 ```
 
-The above commands will generate a wfpdiag.cab. Inside the .cab exists a
-wfpdiag.xml, which contains any allow or drop netEvents and filters that existed
-during that repro. Without “keywords=19”, the trace will only collect drop
-netEvents.
+These commands generate a wfpdiag.cab. Inside the .cab exists a wfpdiag.xml, which contains any allow or drop netEvents and filters that existed during that repro. Without “keywords=19”, the trace will only collect drop netEvents.
 
 Inside the wfpdiag.xml, search for netEvents which have
-FWPM_NET_EVENT_TYPE_CLASSIFY_DROP as the netEvent type. To find the relevant
-drop events, search for the drop events with matching destination IP address,
+FWPM_NET_EVENT_TYPE_CLASSIFY_DROP as the netEvent type. To find the relevant drop events, search for the drop events with matching destination IP address,
 package SID, or application ID name. The characters in the application ID name
 will be separated by periods:
-```
+
+```XML
 (ex) 					
 
-\<asString\>
-
+<asString\>
 \\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.w.i.n.d.o.w.s.\\.s.y.s.t.e.m.3.2.\\.s.v.c.h.o.s.t...e.x.e...
 
 \</asString\>
 ```
-The netEvent will have more information about the packet that was dropped
-including information about its capabilities, the filter that dropped the
-packet, and much more.
+
+The netEvent will have more information about the packet that was dropped including information about its capabilities, the filter that dropped the packet, and much more.
 
 ## Case 1: UWP app connects to Internet target address with all capabilities
 
 In this example, the UWP app successfully connects to bing.com
 [2620:1ec:c11::200].
 
-A packet from a UWP app needs the correct networking capability token for the
-resource it is trying to reach.
+A packet from a UWP app needs the correct networking capability token for the resource it is trying to reach.
 
-In this scenario, the app could successfully send a packet to the Internet
-target because it had an Internet capability token.
+In this scenario, the app could successfully send a packet to the Internet target because it had an Internet capability token.
 
-The following shows the allow netEvent of the app connecting to the target IP.
-The netEvent contains information about the packet including its local address,
+The following shows the allow netEvent of the app connecting to the target IP. The netEvent contains information about the packet including its local address,
 remote address, capabilities, etc.
 
 **Classify Allow netEvent, Wfpdiag-Case-1.xml**
 ```xml
-\<netEvent\>
-\<header\>
->   \<timeStamp\>2020-05-21T17:25:59.070Z\</timeStamp\>
->   \<flags numItems="9"\>
->   \<item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>	
->   \<item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
->   \<item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
->   \</flags\>
->   \<ipVersion\>FWP_IP_VERSION_V6\</ipVersion\>
->   \<ipProtocol\>6\</ipProtocol\>				
->   \<localAddrV6.byteArray16\>2001:4898:30:3:256c:e5ba:12f3:beb1\</localAddrV6.byteArray16\>	\<remoteAddrV6.byteArray16\>2620:1ec:c11::200\</remoteAddrV6.byteArray16\>
-\<localPort\>52127\</localPort\>
-\<remotePort\>443\</remotePort\>
-\<scopeId\>0\</scopeId\>
-\<appId\>				
->   \<data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310030002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
->   \<asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
->   .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.0...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
-\</appId\>
-\<userId\>S-1-5-21-2993214446-1947230185-131795049-1000\</userId\>
-\<addressFamily\>FWP_AF_INET6\</addressFamily\>
-\<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
-\<enterpriseId/\>
-\<policyFlags\>0\</policyFlags\>
-\<effectiveName/\>
-\</header\>
-\<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_ALLOW\</type\>
-\<classifyAllow\>
->   \<filterId\>125918\</filterId\>
->   \<layerId\>50\</layerId\>
->   \<reauthReason\>0\</reauthReason\>
->   \<originalProfile\>1\</originalProfile\>
->   \<currentProfile\>1\</currentProfile\>
-\</classifyAllow\>
-\<internalFields\>
-\<internalFlags/\>
-\<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
-\<capabilities numItems="3"\>				
->   \<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>			\<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
->   \<item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
-\</capabilities\>
-\<fqbnVersion\>0\</fqbnVersion\>
-\<fqbnName/\>
-\<terminatingFiltersInfo numItems="2"\>
->   \<item\>
-		\<filterId\>125918\</filterId\>					
->   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
-		\<actionType\>FWP_ACTION_PERMIT\</actionType\>
->   \</item\>
->   \<item\>
-		\<filterId\>121167\</filterId\>
-		\<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
-		\<actionType\>FWP_ACTION_PERMIT\</actionType\>
-    \</item\>
-\</terminatingFiltersInfo\>
-\</internalFields\>
-\</netEvent\>
+<netEvent\>
+<header\>
+    <timeStamp\>2020-05-21T17:25:59.070Z\</timeStamp\>
+    <flags numItems="9"\>
+    <item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>	
+    <item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
+    <item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
+    </flags\>
+    <ipVersion\>FWP_IP_VERSION_V6\</ipVersion\>
+    <ipProtocol\>6\</ipProtocol\>				
+    <localAddrV6.byteArray16\>2001:4898:30:3:256c:e5ba:12f3:beb1\</localAddrV6.byteArray16\>	\<remoteAddrV6.byteArray16\>2620:1ec:c11::200\</remoteAddrV6.byteArray16\>
+<localPort\>52127\</localPort\>
+<remotePort\>443\</remotePort\>
+<scopeId\>0\</scopeId\>
+<appId\>				
+    <data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310030002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
+    <asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
+       .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.0...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
+</appId\>
+<userId\>S-1-5-21-2993214446-1947230185-131795049-1000\</userId\>
+<addressFamily\>FWP_AF_INET6\</addressFamily\>
+<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
+<enterpriseId/\>
+<policyFlags\>0\</policyFlags\>
+<effectiveName/\>
+</header\>
+<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_ALLOW\</type\>
+<classifyAllow\>
+    <filterId\>125918\</filterId\>
+    <layerId\>50\</layerId\>
+    <reauthReason\>0\</reauthReason\>
+    <originalProfile\>1\</originalProfile\>
+    <currentProfile\>1\</currentProfile\>
+</classifyAllow\>
+<internalFields\>
+<internalFlags/\>
+<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
+<capabilities numItems="3"\>				
+    <item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>			<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
+    <item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
+</capabilities\>
+<fqbnVersion\>0\</fqbnVersion\>
+<fqbnName/\>
+<terminatingFiltersInfo numItems="2"\>
+    <item\>
+		<filterId\>125918\</filterId\>					
+    <subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
+		<actionType\>FWP_ACTION_PERMIT\</actionType\>
+    </item\>
+    <item\>
+		<filterId\>121167\</filterId\>
+		<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
+		<actionType\>FWP_ACTION_PERMIT\</actionType\>
+    </item\>
+</terminatingFiltersInfo\>
+</internalFields\>
+</netEvent\>
 ```
 
 The following is the filter that permitted the packet to be sent to the target
