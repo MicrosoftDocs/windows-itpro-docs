@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy management tools
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Group Policy, based on Microsoft Active Directory Domain Services (AD DS), lets you manage your organization's computer and user settings as part of your Group Policy objects (GPOs), which are added and changed in the Group Policy Management Console (GPMC). GPOs can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. The most effective way to target a specific GPO is to use Windows Management Instrumentation (WMI) filters. Like, creating a WMI filter that applies a GPO only to computers with a specific make and model.
 
 By using Group Policy, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple Internet Explorer 11 security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.

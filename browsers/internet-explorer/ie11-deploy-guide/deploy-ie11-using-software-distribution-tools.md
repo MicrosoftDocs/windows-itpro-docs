@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Deploy Internet Explorer 11 using software distribution tools
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 If you already manage software distribution and updates on your network through software distribution tools, you can also use these tools for ongoing deployments of Internet Explorer. Software distribution tools include:
 
 -   **System Center R2 2012 System Center 2012 R2 Configuration Manager.** Deploy and install Internet Explorer 11 on your user's computers through a software distribution package. For more information about using this tool, see [System Center R2 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=276664).

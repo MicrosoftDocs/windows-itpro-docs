@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy, Windows Powershell, and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Your domain-joined Group Policy Objects (GPOs) can use any of Group Policy-related “cmdlets” that run within Windows PowerShell.
 
 Each cmdlet is a single-function command-line tool that can:
