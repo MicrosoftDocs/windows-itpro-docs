@@ -8,7 +8,7 @@
     {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
@@ -28,7 +28,7 @@
     {
       "source_path": "devices/hololens/hololens-setup.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-use-apps.md",
@@ -38,17 +38,17 @@
     {
       "source_path": "devices/hololens/hololens-get-apps.md",
       "redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-spaces-on-hololens.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-clicker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
@@ -108,7 +108,7 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-containers-help-protect-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
@@ -173,12 +173,12 @@
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
