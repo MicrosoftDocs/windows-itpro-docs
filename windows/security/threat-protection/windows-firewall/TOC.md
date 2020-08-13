@@ -7,7 +7,6 @@
 ### [Design Process](understanding-the-windows-firewall-with-advanced-security-design-process.md)
 
 ### [Deployment Goals]()
-
 #### [Identify deployment goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
 #### [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)
 #### [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)
@@ -15,7 +14,6 @@
 #### [Restrict Access](restrict-access-to-only-specified-users-or-devices.md)
 
 ### [Deployment designs]()
-
 #### [Mapping Goals to a Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
 #### [Basic Design](basic-firewall-policy-design.md)
 #### [Domain Isolation Design](domain-isolation-policy-design.md)
@@ -23,12 +21,9 @@
 #### [Certificate-based Isolation Design](certificate-based-isolation-policy-design.md)
 
 ### [Design plans]()
-
 #### [Planning Your Design](planning-your-windows-firewall-with-advanced-security-design.md)
 #### [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
-
 ##### [Planning Domain Isolation Zones]()
-
 ###### [Domain Isolation Zones](planning-domain-isolation-zones.md)
 ###### [Exemption List](exemption-list.md)
 ###### [Isolated Domain](isolated-domain.md)
@@ -60,7 +55,6 @@
 
 
 ## [Deployment guide]()
-
 #### [Planning to Deploy](planning-to-deploy-windows-firewall-with-advanced-security.md)
 #### [Implementing Your Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
 
@@ -112,9 +106,6 @@
 ### [Enable Windows Firewall](turn-on-windows-firewall-and-configure-default-behavior.md)
 ### [Verify Network Traffic](verify-that-network-traffic-is-authenticated.md)
 ### [Verify Network Traffic](verify-that-network-traffic-is-authenticated.md)
-
-
-
 
 ## [References]()
 ### [Checklist: Creating Group Policy Objects](checklist-creating-group-policy-objects.md)
