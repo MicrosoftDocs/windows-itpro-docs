@@ -23,6 +23,8 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>[!NOTE] This article applies to Microsoft Defender ATP. [Read about this capability in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detections-overview)
+
 Manage your existing [custom detection rules](custom-detection-rules.md) to ensure they are effectively finding threats and taking actions. Explore how to view the list of rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
 ## Required permissions
