@@ -39,7 +39,7 @@ Windows Server 2008 R2 | Operating System (OS) vulnerabilities<br/>Software prod
 Windows Server 2012 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
 Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-MacOS | Not supported (planned)
+macOS | Not supported (planned)
 Linux | Not supported (planned)
 
 ## Related topics
