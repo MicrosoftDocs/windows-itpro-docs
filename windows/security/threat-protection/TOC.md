@@ -338,8 +338,9 @@
 
 
 #### [Custom detections]()
-##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
+##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)

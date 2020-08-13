@@ -1,7 +1,7 @@
 ---
-title: Create and manage custom detection rules in Microsoft Defender ATP
+title: Create detection rules in Microsoft Defender ATP
 ms.reviewer: 
-description: Learn how to create and manage custom detection rules based on advanced hunting queries
+description: Learn how to create custom detection rules based on advanced hunting queries
 keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,10 +23,13 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
-> [!NOTE]
-> To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
+Read this article to learn how to create new custom detection rules, or [see viewing and managing existing rules](custom-detections-manage.md). 
+
+## Required permissions
+
+To create or manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
 ## Create a custom detection rule
 ### 1. Prepare the query.
@@ -61,6 +64,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title** — title displayed with alerts triggered by the rule
 - **Severity** — potential risk of the component or activity identified by the rule. [Read about alert severities](alerts-queue.md#severity)
 - **Category** — type of threat component or activity, if any. [Read about alert categories](alerts-queue.md#understanding-alert-categories)
+- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section does not apply and is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
 - **Description** — more information about the component or activity identified by the rule 
 - **Recommended actions** — additional actions that responders might take in response to an alert 
 
@@ -91,44 +95,20 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 - **Allow/Block** — automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
-### 4. Click **Create** to save and turn on the rule.
+### 4. Set the rule scope.
+Set the scope to specify which devices are covered by the rule:
+
+- All devices
+- Specific device groups
+
+Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
+
+### 5. Review and turn on the rule.
 After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
-## Manage existing custom detection rules
-In **Settings** > **Custom detections**, you can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
-### View existing rules
-
-To view all existing custom detection rules, navigate to **Settings** > **Custom detections**. The page lists all the rules with the following run information:
-
-- **Last run** — when a rule was last run to check for query matches and generate alerts
-- **Last run status** — whether a rule ran successfully
-- **Next run** — the next scheduled run
-- **Status** — whether a rule has been turned on or off
-
-### View rule details, modify rule, and run rule
-
-To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Settings** > **Custom detections**. This opens a page about the custom detection rule with the following information:
-
-- General information about the rule, including the details of the alert, run status, and scope
-- List of triggered alerts
-- List of triggered actions
-
-![Custom detection rule page](images/atp-custom-detection-rule-details.png)<br>
-*Custom detection rule page*
-
-You can also take the following actions on the rule from this page:
-
-- **Run** — run the rule immediately. This also resets the interval for the next run.
-- **Edit** — modify the rule without changing the query
-- **Modify query** — edit the query in advanced hunting
-- **Turn on** / **Turn off** — enable the rule or stop it from running
-- **Delete** — turn off the rule and remove it
-
->[!TIP]
->To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
-
-## Related topic
+## Related topics
+- [View and manage detection rules](custom-detections-manage.md)
 - [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
