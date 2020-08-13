@@ -16,7 +16,8 @@ ms.topic: article
 
 # Feature Update Status
 
-![The Feature Update Status report](images/UC_workspace_FU_status.png)
+[ ![The Feature Update Status report](images/UC_workspace_FU_status.png)
+[ ![Cute Kitten](images/UC_workspace_FU_status.png) ](images/UC_workspace_FU_status.png#lightbox)
 
 The Feature Update Status section provides information about the status of [feature updates](waas-quick-start.md#definitions) across all devices. This section tile in the [Overview Blade](update-compliance-using.md#overview-blade) gives a percentage of devices that are on the latest applicable feature update; [Servicing Channel](waas-overview.md#servicing-channels) is considered in determining applicability. Within this section are two blades; one providing a holistic view of feature updates, the other containing three **Deployment Status** tiles, each charged with tracking the deployment for a different [Servicing Channel](waas-overview.md#servicing-channels). 
 
