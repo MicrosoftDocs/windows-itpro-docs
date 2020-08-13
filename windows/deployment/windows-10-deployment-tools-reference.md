@@ -5,6 +5,7 @@ ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +15,7 @@ ms.date: 07/12/2017
 ms.topic: article
 ---
 
-# Windows 10 deployment tools
+# Windows 10 deployment tools reference
 
 Learn about the tools available to deploy Windows 10.
 
