@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-
+author: greg-lindsay
+ms.author: greglin
 ms.date: 02/13/2018
 ms.reviewer: 
 manager: laurawi

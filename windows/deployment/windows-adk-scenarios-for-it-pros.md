@@ -11,10 +11,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e2e455e105ceb5e17d04cbe4524d621b13b03ba
 ms.date: 07/27/2017
 ms.topic: article
 ---

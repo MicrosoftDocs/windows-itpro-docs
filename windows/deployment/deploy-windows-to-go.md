@@ -5,7 +5,8 @@ ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
-
+author: greg-lindsay
+ms.author: greglin
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -5,7 +5,8 @@ ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
-
+ms.author: greglin
+author: greg-lindsay
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy

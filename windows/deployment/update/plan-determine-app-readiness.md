@@ -11,6 +11,8 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+author: jaimeo
 ---
 
 # Determine application readiness
