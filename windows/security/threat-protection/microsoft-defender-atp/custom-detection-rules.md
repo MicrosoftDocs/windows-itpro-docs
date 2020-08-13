@@ -18,20 +18,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-
 # Create custom detection rules
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-> [Learn about this feature in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detections-overview)
-
-
 Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 Read this article to learn how to create new custom detection rules. Or [see viewing and managing existing rules](custom-detections-manage.md). 
-
->[!NOTE] This article applies to Microsoft Defender ATP. [Read about this capability in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detections-overview)
-
 
 ## 1. Check required permissions
 
@@ -69,7 +62,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title**—title displayed with alerts triggered by the rule
 - **Severity**—potential risk of the component or activity identified by the rule. [Read about alert severities](alerts-queue.md#severity)
 - **Category**—type of threat component or activity, if any. [Read about alert categories](alerts-queue.md#understanding-alert-categories)
-- **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section is not available with alert categories, such as malware, ransomware, suspicious activity, and unwanted software
+- **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section is not available with certain alert categories, such as malware, ransomware, suspicious activity, and unwanted software
 - **Description**—more information about the component or activity identified by the rule 
 - **Recommended actions**—additional actions that responders might take in response to an alert 
 
