@@ -12,7 +12,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 

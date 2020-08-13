@@ -12,7 +12,6 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

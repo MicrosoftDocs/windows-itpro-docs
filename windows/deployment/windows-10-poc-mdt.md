@@ -13,7 +13,6 @@ manager: laurawi
 ms.audience: itpro
 
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 

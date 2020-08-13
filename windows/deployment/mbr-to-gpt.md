@@ -12,7 +12,6 @@ ms.date: 02/13/2018
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
-author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---

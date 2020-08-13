@@ -9,7 +9,6 @@ ms.mktglfcycl: manage
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

@@ -3,8 +3,6 @@ title: Create a code signing cert for Windows Defender Application Control  (Win
 description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-manager: dansimp
-ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

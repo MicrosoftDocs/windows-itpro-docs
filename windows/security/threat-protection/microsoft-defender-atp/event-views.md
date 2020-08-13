@@ -7,8 +7,6 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
-ms.date: 04/16/2018
 ms.localizationpriority: medium
 audience: ITPro
 author: levinec
