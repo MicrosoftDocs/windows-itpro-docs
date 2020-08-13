@@ -3,7 +3,6 @@ title: Conduct a demo to see how network protection works
 description: Quickly see how Network protection works by performing common scenarios that it protects against
 keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
