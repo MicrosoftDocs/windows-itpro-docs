@@ -122,8 +122,8 @@ The following shows the allow netEvent of the app connecting to the target IP.
 The netEvent contains information about the packet including its local address,
 remote address, capabilities, etc.
 
-```**Classify Allow netEvent, Wfpdiag-Case-1.xml**
-
+**Classify Allow netEvent, Wfpdiag-Case-1.xml**
+```xml
 \<netEvent\>
 \<header\>
 >   \<timeStamp\>2020-05-21T17:25:59.070Z\</timeStamp\>
@@ -194,7 +194,7 @@ address according to the terminatingFiltersInfo in the netEvent. This packet was
 allowed by Filter \#125918 which is from the InternetClient Default Rule.
 
 **InternetClient Default Rule Filter \#125918, Wfpdiag-Case-1.xml**
-```
+```xml
 \<item\>
 >   \<filterKey\>{3389708e-f7ae-4ebc-a61a-f659065ab24e}\</filterKey\>
 >   \<displayData\>
@@ -279,7 +279,7 @@ allowed by Filter \#125918 which is from the InternetClient Default Rule.
 One condition is
 
 **Capabilities Condition in Filter \#125918, Wfpdiag-Case-1.xml**
-```
+```xml
 \<item\>
 >   \<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
 >   \<matchType\>FWP_MATCH_EQUAL\</matchType\>
@@ -297,7 +297,7 @@ for INTERNET_CLIENT privileges.
 From the netEvent’s capabilities section,
 
 Capabilities from netEvent, Wfpdiag-Case-1.xml
-```
+```xml
 \<capabilities numItems="3"\>				
 >   **\<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>**			\<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
 \<item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
@@ -321,7 +321,7 @@ The following is a drop netEvent that was captured in the traces during this
 repro.
 
 **Classify Drop netEvent, Wfpdiag-Case-2.xml**
-```
+```xml
 \<netEvent\>
 \<header\>
 \<timeStamp\>2020-03-30T23:53:09.720Z\</timeStamp\>
@@ -395,7 +395,7 @@ UWP app was not configured with any capability tokens to allow it to connect to
 a network.
 
 **Internal Fields from netEvent, Wfpdiag-Case-2.xml**
-```
+```xml
 \<internalFields\>
 \<internalFlags/\>
 \<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
@@ -420,7 +420,7 @@ The netEvent also gives us information about the filter that explicitly dropped
 this packet, like the FilterId, listed under classify drop
 
 **Classify Drop from netEvent, Wfpdiag-Case-2.xml**
-```
+```xml
 \<classifyDrop\>
 **\<filterId\>68893\</filterId\>**
 \<layerId\>50\</layerId\>
@@ -439,7 +439,7 @@ the packet was dropped by a Block Outbound Default Rule filter.
 
 **Block Outbound Default Rule Filter \#68893, Wfpdiag-Case-2.xml**
 
-```
+```xml
 \<item\>
 >   \<filterKey\>{6d51582f-bcf8-42c4-afc9-e2ce7155c11b}\</filterKey\>
 >   \<displayData\>
@@ -499,7 +499,7 @@ Server). The app is trying to connect to an Internet resource (bing.com), but
 only has a private network token. Therefore, the packet will be dropped.
 
 **Classify Drop netEvent, Wfpdiag-Case-3.xml**
-```
+```xml
 \<netEvent\>
 \<header\>
 \<timeStamp\>2020-03-31T16:57:18.570Z\</timeStamp\>
@@ -576,7 +576,7 @@ In this example, the UWP app is unable to reach the Intranet target address,
 10.50.50.50, because it does not have a Private Network capability.
 
 **Classify Drop netEvent, Wfpdiag-Case-4.xml**
-```
+```xml
 \<netEvent\>
 \<header\>
 >   \<timeStamp\>2020-05-22T21:29:28.601Z\</timeStamp\>
@@ -653,7 +653,7 @@ In this example, the UWP app is unable to reach the Intranet target address,
 10.1.1.1, even though it has a Private Network capability token.
 
 **Classify Drop netEvent, Wfpdiag-Case-5.xml**
-```
+```xml
 \<netEvent\>
 >   \<header\>
 >   \<timeStamp\>2020-05-22T20:54:53.499Z\</timeStamp\>
@@ -727,7 +727,7 @@ The following shows the filter that blocked the event:
 
 **Block Outbound Default Rule Filter \#121180, Wfpdiag-Case-5.xml**
 
-```
+```xml
 \<item\>
 >   \<filterKey\>{e62a1a22-c80a-4518-a7f8-e7d1ef3a9ff6}\</filterKey\>
 >   \<displayData\>
@@ -776,7 +776,7 @@ The following PrivateNetwork Outbound Default Rule filters have conditions for m
 on the machine (MDM, GP, etc) and make sure it includes the private targetaddress you wanted to reach.
 
 **PrivateNetwork Outbound Default Rule Filters, Wfpdiag-Case-5.xml**
-```
+```xml
 \<item\>
 >   \<filterKey\>{fd65507b-e356-4e2f-966f-0c9f9c1c6e78}\</filterKey\>
 >   \<displayData\>
@@ -1021,11 +1021,11 @@ If you **do not** have a live repro or traces already collected, you can still
 collect traces after the UWP network connectivity issue has happened by running
 these commands in an Admin command prompt
 
+```xml
 >   \<Run UWP app\>
-
 >   Netsh wfp show netevents
-
 >   Netsh wfp show state
+```
 
 “Netsh wfp show netevents” will generate netevents.xml, which contains the past
 net events. “Netsh wfp show state” will generate wfpstate.xml, which contains
@@ -1057,136 +1057,74 @@ In this example, the UWP app is unable to connect to bing.com.
 
 Classify Drop Net Event, NetEvents-Case-7.xml
 
+```xml
 \<item\>
-
 \<header\>
-
 \<timeStamp\>2020-05-04T22:04:07.039Z\</timeStamp\>
-
 \<flags numItems="9"\>
-
 \<item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
-
 \<item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
-
 \</flags\>
-
 \<ipVersion\>FWP_IP_VERSION_V4\</ipVersion\>
-
 \<ipProtocol\>6\</ipProtocol\>
-
 \<localAddrV4\>10.195.36.30\</localAddrV4\>
-
 \<remoteAddrV4\>204.79.197.200\</remoteAddrV4\>
-
 \<localPort\>57062\</localPort\>
-
 \<remotePort\>443\</remotePort\>
-
 \<scopeId\>0\</scopeId\>
-
 \<appId\>
-
 \<data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310032002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
-
 \<asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
 .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.2...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
-
 \</appId\>
-
 \<userId\>S-1-5-21-1578316205-4060061518-881547182-1000\</userId\>
-
 \<addressFamily\>FWP_AF_INET\</addressFamily\>
-
 \<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
-
 \<enterpriseId/\>
-
 \<policyFlags\>0\</policyFlags\>
-
 \<effectiveName/\>
-
 \</header\>
-
 \<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_DROP\</type\>
-
 \<classifyDrop\>
-
 \<filterId\>206064\</filterId\>
-
 \<layerId\>48\</layerId\>
-
 \<reauthReason\>0\</reauthReason\>
-
 \<originalProfile\>1\</originalProfile\>
-
 \<currentProfile\>1\</currentProfile\>
-
 \<msFwpDirection\>MS_FWP_DIRECTION_OUT\</msFwpDirection\>
-
 \<isLoopback\>false\</isLoopback\>
-
 \<vSwitchId/\>
-
 \<vSwitchSourcePort\>0\</vSwitchSourcePort\>
-
 \<vSwitchDestinationPort\>0\</vSwitchDestinationPort\>
-
 \</classifyDrop\>
-
 \<internalFields\>
-
 \<internalFlags/\>
-
 \<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
-
 \<capabilities/\>
-
 \<fqbnVersion\>0\</fqbnVersion\>
-
 \<fqbnName/\>
-
 \<terminatingFiltersInfo numItems="2"\>
-
 \<item\>
-
 \<filterId\>206064\</filterId\>
-
 \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
-
 \<actionType\>FWP_ACTION_BLOCK\</actionType\>
-
 \</item\>
-
 \<item\>
-
 \<filterId\>206049\</filterId\>
-
 \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
-
 \<actionType\>FWP_ACTION_PERMIT\</actionType\>
-
 \</item\>
-
 \</terminatingFiltersInfo\>
-
 \</internalFields\>
-
 \</item\>
+```
 
 The Internal fields lists no active capabilities, and the packet is dropped at
 filter 206064.
@@ -1198,385 +1136,207 @@ Security Descriptor doesn’t match.
 
 **Block Outbound Default Rule Filter \#206064, FilterState-Case-7.xml**
 
+```xml
 \<item\>
-
 \<filterKey\>{f138d1ad-9293-478f-8519-c3368e796711}\</filterKey\>
-
 \<displayData\>
-
 \<name\>Block Outbound Default Rule\</name\>
-
 \<description\>Block Outbound Default Rule\</description\>
-
 \</displayData\>
-
 \<flags/\>
-
 \<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 \<providerData\>
-
 \<data\>2e65000000000000\</data\>
-
 \<asString\>.e......\</asString\>
-
 \</providerData\>
-
 \<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 \<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 \<weight\>
-
 \<type\>FWP_EMPTY\</type\>
-
 \</weight\>
-
 \<filterCondition numItems="1"\>
-
 \<item\>
-
 \<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 \<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 \<conditionValue\>
-
 \<type\>FWP_SID\</type\>
-
 \<sid\>S-1-0-0\</sid\>
-
 \</conditionValue\>
-
 \</item\>
-
 \</filterCondition\>
-
 \<action\>
-
 \<type\>FWP_ACTION_BLOCK\</type\>
-
 \<filterType/\>
-
 \</action\>
-
 \<rawContext\>0\</rawContext\>
-
 \<reserved/\>
-
 \<filterId\>206064\</filterId\>
-
 \<effectiveWeight\>
-
 \<type\>FWP_UINT64\</type\>
-
 \<uint64\>274877906944\</uint64\>
-
 \</effectiveWeight\>
-
 \</item\>
-
+```
 ## Case 8: Debugging Past Drop - UWP app connects to Internet target address with all capabilities
 
 In this example, the UWP app successfully connects to bing.com [204.79.197.200].
 
 **Classify Allow Net Event, NetEvents-Case-8.xml**
 
+```xml
 \<item\>
-
 >   \<header\>
-
 >   \<timeStamp\>2020-05-04T18:49:55.101Z\</timeStamp\>
-
 >   \<flags numItems="9"\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_PROTOCOL_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_ADDR_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_APP_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_USER_ID_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_IP_VERSION_SET\</item\>
-
 >   \<item\>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET\</item\>
-
 >   \</flags\>
-
 >   \<ipVersion\>FWP_IP_VERSION_V4\</ipVersion\>
-
 >   \<ipProtocol\>6\</ipProtocol\>
-
 >   \<localAddrV4\>10.195.36.30\</localAddrV4\>
-
 >   \<remoteAddrV4\>204.79.197.200\</remoteAddrV4\>
-
 >   \<localPort\>61673\</localPort\>
-
 >   \<remotePort\>443\</remotePort\>
-
 >   \<scopeId\>0\</scopeId\>
-
 >   \<appId\>
-
 >   \<data\>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310030002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000\</data\>
-
 >   \<asString\>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
 >   .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.0...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...\</asString\>
-
 >   \</appId\>
-
 >   \<userId\>S-1-5-21-1578316205-4060061518-881547182-1000\</userId\>
-
 >   \<addressFamily\>FWP_AF_INET\</addressFamily\>
-
 >   \<packageSid\>S-1-15-2-4163697451-3176919390-1155390458-2883473650-3020241727-522149888-4067122936\</packageSid\>
-
 >   \<enterpriseId/\>
-
 >   \<policyFlags\>0\</policyFlags\>
-
 >   \<effectiveName/\>
-
 >   \</header\>
-
 >   \<type\>FWPM_NET_EVENT_TYPE_CLASSIFY_ALLOW\</type\>
-
 >   \<classifyAllow\>
-
 >   \<filterId\>208757\</filterId\>
-
 >   \<layerId\>48\</layerId\>
-
 >   \<reauthReason\>0\</reauthReason\>
-
 >   \<originalProfile\>1\</originalProfile\>
-
 >   \<currentProfile\>1\</currentProfile\>
-
 >   \</classifyAllow\>
-
 >   \<internalFields\>
-
 >   \<internalFlags/\>
-
 >   \<remoteAddrBitmap\>0000000000000000\</remoteAddrBitmap\>
-
 >   \<capabilities numItems="3"\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT\</item\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER\</item\>
-
 >   \<item\>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK\</item\>
-
 >   \</capabilities\>
-
 >   \<fqbnVersion\>0\</fqbnVersion\>
-
 >   \<fqbnName/\>
-
 >   \<terminatingFiltersInfo numItems="2"\>
-
 >   \<item\>
-
 >   \<filterId\>208757\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WSH\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_PERMIT\</actionType\>
-
 >   \</item\>
-
 >   \<item\>
-
 >   \<filterId\>206049\</filterId\>
-
 >   \<subLayer\>FWPP_SUBLAYER_INTERNAL_FIREWALL_WF\</subLayer\>
-
 >   \<actionType\>FWP_ACTION_PERMIT\</actionType\>
-
 >   \</item\>
-
 >   \</terminatingFiltersInfo\>
-
 >   \</internalFields\>
-
 \</item\>
-
+```
 Important things to note: all capabilities are enabled and the resulting filter
 determining the flow of the packet is 208757.
 
 The filter stated above with action permit:
 
 **InternetClient Default Rule Filter \#208757, FilterState-Case-8.xml**
-
-				\<item\>
-
-					\<filterKey\>{e0f6f24e-1f0a-4f1a-bdd8-b9277c144fb5}\</filterKey\>
-
-					\<displayData\>
-
-						\<name\>InternetClient Default Rule\</name\>
-
-						\<description\>InternetClient Default Rule\</description\>
-
+```xml
+\<item\>
+	\<filterKey\>{e0f6f24e-1f0a-4f1a-bdd8-b9277c144fb5}\</filterKey\>
+	\<displayData\>
+	\<name\>InternetClient Default Rule\</name\>
+		\<description\>InternetClient Default Rule\</description\>
 					\</displayData\>
-
 					\<flags/\>
-
 					\<providerKey\>FWPM_PROVIDER_MPSSVC_WSH\</providerKey\>
-
 					\<providerData\>
-
 						\<data\>e167000000000000\</data\>
-
 						\<asString\>.g......\</asString\>
-
 					\</providerData\>
-
 					\<layerKey\>FWPM_LAYER_ALE_AUTH_CONNECT_V4\</layerKey\>
-
 					\<subLayerKey\>FWPM_SUBLAYER_MPSSVC_WSH\</subLayerKey\>
-
 					\<weight\>
-
 						\<type\>FWP_EMPTY\</type\>
-
 					\</weight\>
-
 					\<filterCondition numItems="5"\>
-
 						\<item\>
-
 							\<fieldKey\>FWPM_CONDITION_ALE_PACKAGE_ID\</fieldKey\>
-
 							\<matchType\>FWP_MATCH_NOT_EQUAL\</matchType\>
-
 							\<conditionValue\>
-
 								\<type\>FWP_SID\</type\>
-
 								\<sid\>S-1-0-0\</sid\>
-
 							\</conditionValue\>
-
 						\</item\>
-
 						\<item\>
-
 							\<fieldKey\>FWPM_CONDITION_IP_REMOTE_ADDRESS\</fieldKey\>
-
 							\<matchType\>FWP_MATCH_RANGE\</matchType\>
-
 							\<conditionValue\>
-
 								\<type\>FWP_RANGE_TYPE\</type\>
-
 								\<rangeValue\>
-
 									\<valueLow\>
-
 										\<type\>FWP_UINT32\</type\>
-
 										\<uint32\>0.0.0.0\</uint32\>
-
 									\</valueLow\>
-
 									\<valueHigh\>
-
 										\<type\>FWP_UINT32\</type\>
-
 										\<uint32\>255.255.255.255\</uint32\>
-
 									\</valueHigh\>
-
 								\</rangeValue\>
-
 							\</conditionValue\>
-
 						\</item\>
-
 						\<item\>
-
 							\<fieldKey\>FWPM_CONDITION_ORIGINAL_PROFILE_ID\</fieldKey\>
-
 							\<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 							\<conditionValue\>
-
 								\<type\>FWP_UINT32\</type\>
-
 								\<uint32\>1\</uint32\>
-
 							\</conditionValue\>
-
 						\</item\>
-
 						\<item\>
-
 							\<fieldKey\>FWPM_CONDITION_CURRENT_PROFILE_ID\</fieldKey\>
-
 							\<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 							\<conditionValue\>
-
 								\<type\>FWP_UINT32\</type\>
-
 								\<uint32\>1\</uint32\>
-
 							\</conditionValue\>
-
 						\</item\>
-
 						\<item\>
-
 							\<fieldKey\>FWPM_CONDITION_ALE_USER_ID\</fieldKey\>
-
 							\<matchType\>FWP_MATCH_EQUAL\</matchType\>
-
 							\<conditionValue\>
-
 								\<type\>FWP_SECURITY_DESCRIPTOR_TYPE\</type\>
-
 								\<sd\>O:LSD:(A;;CC;;;S-1-15-3-1)(A;;CC;;;WD)(A;;CC;;;AN)\</sd\>
-
 							\</conditionValue\>
-
 						\</item\>
-
 					\</filterCondition\>
-
 					\<action\>
-
 						\<type\>FWP_ACTION_PERMIT\</type\>
-
 						\<filterType/\>
-
 					\</action\>
-
 					\<rawContext\>0\</rawContext\>
-
 					\<reserved/\>
-
 					\<filterId\>208757\</filterId\>
-
 					\<effectiveWeight\>
-
 						\<type\>FWP_UINT64\</type\>
-
 						\<uint64\>412316868544\</uint64\>
-
 					\</effectiveWeight\>
-
 				\</item\>
-
-\*The capabilities field in a netEvent was added to the traces in the Windows 10
+```
+The capabilities field in a netEvent was added to the traces in the Windows 10
 May 2019 Update
