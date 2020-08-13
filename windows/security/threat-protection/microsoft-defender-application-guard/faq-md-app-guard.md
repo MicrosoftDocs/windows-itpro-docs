@@ -159,3 +159,15 @@ Step 2:
 3. Disable IPNAT (Optional): 
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`.
 4. Restart the device.
+
+### Why doesn't Application guard work, although it is enabled via GPO?
+
+Application Guard must meet all these pre-requisites to be enabled in enterprise mode:
+https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard
+To understand why it is not being enabled in enterprise mode you need to check the status of the evaluation to find out what is missing.
+
+For CSP (Intune) you can query the status node via a Get as mentioned in this document:
+https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp 
+In this page you will see the “status” node as well as the meaning of each bit.  If the status is not 63, you are missing a pre-requisite.
+
+For Group Policy you need to look at the registry.  Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP  Status. The meaning of each bit is the same as the CSP.
