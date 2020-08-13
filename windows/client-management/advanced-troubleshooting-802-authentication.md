@@ -2,7 +2,7 @@
 title: Advanced Troubleshooting 802.1X Authentication
 ms.reviewer: 
 manager: dansimp
-description: Learn how 802.1X Authentication works
+description: Troubleshoot authentication flow by learning how 802.1X Authentication works for wired and wireless clients.
 keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl: 
@@ -59,7 +59,7 @@ First, validate the type of EAP method being used:
  
 ![eap authentication type comparison](images/comparisontable.png)
 
-If a certificate is used for its authentication method, check if the certificate is valid. For server (NPS) side, you can confirm what certificate is being used from the EAP property menu:
+If a certificate is used for its authentication method, check if the certificate is valid. For server (NPS) side, you can confirm what certificate is being used from the EAP property menu. In **NPS snap-in**, go to **Policies** > **Network Policies**. Right click on the policy and select **Properties**. In the pop-up window, go to the **Constraints** tab and select the **Authentication Methods** section.
 
 ![Constraints tab of the secure wireless connections properties](images/eappropertymenu.png)
  
@@ -73,7 +73,7 @@ The following article explains how to analyze CAPI2 event logs:
 
 When troubleshooting complex 802.1X authentication issues, it is important to understand the 802.1X authentication process. The following figure is an example of wireless connection process with 802.1X authentication:
 
-![authenticatior flow chart](images/authenticator_flow_chart.png)
+![authenticator flow chart](images/authenticator_flow_chart.png)
  
 If you [collect a network packet capture](troubleshoot-tcpip-netmon.md) on both the client and the server (NPS) side, you can see a flow like the one below. Type **EAPOL** in the Display Filter in for a client side capture, and **EAP** for an NPS side capture. See the following examples:
 
@@ -118,4 +118,3 @@ Even if audit policy appears to be fully enabled, it sometimes helps to disable 
 
 [Troubleshooting Windows Vista 802.11 Wireless Connections](https://technet.microsoft.com/library/cc766215%28v=ws.10%29.aspx)<br>
 [Troubleshooting Windows Vista Secure 802.3 Wired Connections](https://technet.microsoft.com/library/cc749352%28v=ws.10%29.aspx)
-

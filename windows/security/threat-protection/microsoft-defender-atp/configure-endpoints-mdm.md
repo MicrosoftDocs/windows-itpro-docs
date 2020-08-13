@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows 10 machines using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy the configuration package on machines so that they are onboarded to the service.
-keywords: onboard machines using mdm, machine management, onboard Windows ATP machines, onboard Microsoft Defender Advanced Threat Protection machines, mdm
+title: Onboard Windows 10 devices using Mobile Device Management tools
+description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
+keywords: onboard devices using mdm, device management, onboard Windows ATP devices, onboard Microsoft Defender Advanced Threat Protection devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,10 +15,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/06/2018
 ---
 
-# Onboard Windows 10 machines using Mobile Device Management tools
+# Onboard Windows 10 devices using Mobile Device Management tools
 
 **Applies to:**
 
@@ -27,16 +26,16 @@ ms.date: 12/06/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-You can use mobile device management (MDM) solutions to configure machines. Microsoft Defender ATP supports MDMs by providing OMA-URIs to create policies to manage machines.
+You can use mobile device management (MDM) solutions to configure devices. Microsoft Defender ATP supports MDMs by providing OMA-URIs to create policies to manage devices.
 
 For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Before you begin
 If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
 
-For more information on enabling MDM with Microsoft Intune, see [Setup Windows Device Management](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
-## Onboard machines using Microsoft Intune
+## Onboard devices using Microsoft Intune
 
 Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
@@ -44,18 +43,20 @@ For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedTh
 
 
 > [!NOTE]
-> - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
-> - Configuration of diagnostic data reporting frequency is only available for machines on Windows 10, version 1703.
+> - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
+> - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
 
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that a machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
 
-## Offboard and monitor machines using Mobile Device Management tools
-For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+
+
+## Offboard and monitor devices using Mobile Device Management tools
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -79,15 +80,15 @@ For more information on Microsoft Intune policy settings see, [Windows 10 policy
 
 
 > [!NOTE]
-> The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
+> The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
 
 > [!IMPORTANT]
-> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
-- [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 machines using System Center Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md)
+- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

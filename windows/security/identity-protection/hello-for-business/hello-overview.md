@@ -44,19 +44,12 @@ As an administrator in an enterprise or educational organization, you can create
 
 ## Biometric sign-in
  
- Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras. Fingerprint reader hardware can be used or added to devices that don’t currently have it. On devices that support Windows Hello, an easy biometric gesture unlocks users’ credentials.
+ Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras. Fingerprint reader hardware can be used or added to devices that don't currently have it. On devices that support Windows Hello, an easy biometric gesture unlocks users' credentials.
  
 - **Facial recognition**. This type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major laptop manufacturers are incorporating it into their devices, as well. 
 - **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is significantly more reliable and less error-prone. Most existing fingerprint readers (whether external or integrated into laptops or USB keyboards) work with Windows 10. 
 
-Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data. 
-
-## From Windows 10 version 1803, the Windows Hello feature can be used as a safe and secure sign-in method.
-Fingerprint scan can be enabled on laptop computers using a built-in fingerprint reader or an external USB fingerprint reader, as follows:
-1. Go to **Settings** > **Accounts** > **Sign-in-options** > **Windows Hello Fingerprint** > **Add fingerprint**
-2. Users will need to add a PIN after adding their fingerprint(s) to the reader configuration.
-3. Windows Biometric data is located in the `C:\Windows\System32\WinBioDatabase\` folder (fingerprint data is stored with the .DAT file name extension).
-4. If you are unable to sign in with previously registered fingerprints, delete the entire content of this folder and register your fingerprints again.
+Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data. For more information about biometric authentication with Windows Hello for Business, see [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md).
 
 ## The difference between Windows Hello and Windows Hello for Business
 
@@ -106,7 +99,9 @@ Windows Hello for Business with a key does not support RDP. RDP does not support
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/implementing-windows-hello-for-business-at-microsoft)
+[Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/en-us/itshowcase/implementing-strong-user-authentication-with-windows-hello-for-business)
+
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 

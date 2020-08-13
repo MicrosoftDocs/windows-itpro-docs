@@ -1,6 +1,6 @@
 ---
 title: Deploying App-V (Windows 10)
-description: Install the App-V sequencer used to virtualize applications, and enable the App-V client that runs on target computers to facilitate virtualized packages. 
+description: App-V supports several different deployment options. Learn how to complete App-V deployment at different stages in your App-V deployment.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

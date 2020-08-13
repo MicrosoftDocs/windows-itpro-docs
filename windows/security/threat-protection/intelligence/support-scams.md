@@ -45,13 +45,13 @@ It is also important to keep the following in mind:
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 
-* Enable [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
+* Enable [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) in Windows 10. It detects and removes known support scam malware.
 
 ## What to do if information has been given to a tech support person
 
 * Uninstall applications that scammers asked to be install. If access has been granted, consider resetting the device
 
-* Run a full scan with Windows Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
+* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
 
 * Change passwords.
 

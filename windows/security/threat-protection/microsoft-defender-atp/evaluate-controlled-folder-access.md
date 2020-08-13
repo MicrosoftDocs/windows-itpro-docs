@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: levinec
@@ -45,8 +44,8 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> If you want to fully audit how controlled folder access will work in your organization, you'll need to use a management tool to deploy this setting to machines in your network(s).
-You can also use Group Policy, Intune, MDM, or System Center Configuration Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
+> If you want to fully audit how controlled folder access will work in your organization, you'll need to use a management tool to deploy this setting to devices in your network(s).
+You can also use Group Policy, Intune, MDM, or Microsoft Endpoint Configuration Manager to configure and deploy the setting, as described in the main [controlled folder access topic](controlled-folders.md).
 
 ## Review controlled folder access events in Windows Event Viewer
 
@@ -57,6 +56,9 @@ Event ID | Description
  5007 | Event when settings are changed
  1124 | Audited controlled folder access event
  1123 | Blocked controlled folder access event
+
+> [!TIP]
+> You can configure a [Windows Event Forwarding subscription](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) to collect the logs centrally. 
 
 ## Customize protected folders and apps
 

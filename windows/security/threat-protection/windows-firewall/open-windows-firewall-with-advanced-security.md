@@ -31,7 +31,7 @@ To complete this procedure, you must be a member of the Administrators group. Fo
 
 ## To open Windows Defender Firewall using the UI
 
-Click Start, type **Windows Defender Firewall**, and the press ENTER.
+Click Start, type **Windows Defender Firewall**, and then press ENTER.
 
 ## To open Windows Defender Firewall from a command prompt
 

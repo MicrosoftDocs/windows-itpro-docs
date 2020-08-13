@@ -34,11 +34,12 @@ Defines restrictions for applications.
 >
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
+> [!NOTE]
+> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
 
 Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
@@ -867,7 +868,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Whitelist examples
+## <a href="" id="allow-list-examples"></a>Allow list examples
 
 The following example disables the calendar application.
 
@@ -1754,7 +1755,7 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
         <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="WINWORD.EXE">
           <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>	
+      </Exceptions>    
   </FilePublisherRule>
   <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
     <Conditions>

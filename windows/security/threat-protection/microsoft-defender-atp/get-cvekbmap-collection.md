@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # Get CVE-KB map API

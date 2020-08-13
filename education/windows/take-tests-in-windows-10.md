@@ -34,8 +34,12 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ![Set up and user flow for the Take a Test app](images/take_a_test_flow_dark.png)
 
-There are several ways to configure devices for assessments. You can:
-- **Configure an assessment URL and a dedicated testing account**
+There are several ways to configure devices for assessments, depending on your use case:
+
+- For higher stakes testing such as mid-term exams, you can set up a device with a dedicated testing account and URL. 
+- For lower stakes assessments such as a quick quiz in a class, you can quickly create and distribute the assessment URL through any method of your choosing.
+
+1. **Configure an assessment URL and a dedicated testing account**
 
     In this configuration, a user signs into in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
 
@@ -48,7 +52,7 @@ There are several ways to configure devices for assessments. You can:
   - **For multiple PCs**
     
       You can use any of these methods:
-    - Mobile device management (MDM) or Microsoft System Center Configuration Manager
+    - Mobile device management (MDM) or Microsoft Endpoint Configuration Manager
     - A provisioning package created in Windows Configuration Designer
     - Group Policy to deploy a scheduled task that runs a Powershell script
 
@@ -58,9 +62,9 @@ There are several ways to configure devices for assessments. You can:
 
       For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
 
-- **Distribute the assessment URL through the web, email, OneNote, or any other method of your choosing. You can also create shortcuts to distribute the link**
+2. **Create and distribute the assessment URL through the web, email, OneNote, or any other method** 
 
-    This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+    This allows teachers and test administrators an easier way to deploy assessments quickly and simply. We recommend this method for lower stakes assessments. You can also create shortcuts to distribute the link.
 
     You can enable this using a schema activation.
 

@@ -1,11 +1,9 @@
 ---
 title: Understand Windows Defender Application Control policy design decisions  (Windows 10)
 description: Understand Windows Defender Application Control policy design decisions. 
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +14,6 @@ ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
-manager: dansimp
 ms.date: 02/08/2018
 ---
 
@@ -35,7 +32,7 @@ You should consider using WDAC as part of your organization's application contro
 
 -   You have deployed or plan to deploy the supported versions of Windows in your organization.
 -   You need improved control over the access to your organization's applications and the data your users access.
--   Your organization has a well-defined process for application management and deployed.
+-   Your organization has a well-defined process for application management and deployment.
 -   You have resources to test policies against the organization's requirements.
 -   You have resources to involve Help Desk or to build a self-help process for end-user application access issues.
 -   The group's requirements for productivity, manageability, and security can be controlled by restrictive policies.
@@ -48,7 +45,7 @@ The first step is to define the desired "circle-of-trust" for your WDAC policies
 
 For example, the DefaultWindows policy, which can be found under %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies, establishes a "circle-of-trust" that allows Windows, 3rd-party hardware and software kernel drivers, and applications from the Microsoft Store.
 
-Microsoft Endpoint Configuration Manager (previously known as System Center Configuration Manager (SCCM)), uses the DefaultWindows policy as the basis for its policy but then modifies the policy rules to allow SCCM and its dependencies, sets the managed installer policy rule, and additionally configures SCCM as a managed installer. It also can optionally authorize apps with positive reputation and perform a one-time scan of folder paths specified by the SCCM administrator which adds rules for any apps found in the specified paths on the managed endpoint. This establishes the "circle-of-trust" for SCCM's native WDAC integration.
+Microsoft Endpoint Configuration Manager, previously known as System Center Configuration Manager, uses the DefaultWindows policy as the basis for its policy but then modifies the policy rules to allow Configuration Manager and its dependencies, sets the managed installer policy rule, and additionally configures Configuration Manager as a managed installer. It also can optionally authorize apps with positive reputation and perform a one-time scan of folder paths specified by the Configuration Manager administrator which adds rules for any apps found in the specified paths on the managed endpoint. This establishes the "circle-of-trust" for Configuration Manager's native WDAC integration.
 
 The following questions can help you plan your WDAC deployment and determine the right "circle-of-trust" for your policies. They are not in priority or sequential order and are not meant to be an exhaustive set of design considerations.
 
@@ -62,7 +59,7 @@ Organizations with well-defined, centrally-managed app management and deployment
 | - | - |
 | All apps are centrally managed and deployed using endpoint management tools like [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). | Organizations that centrally manage all apps are best-suited for application control. WDAC options like [managed installer](use-windows-defender-application-control-with-managed-installer.md) can make it easy to authorize apps that are deployed by the organization's app distribution management solution. |
 | Some apps are centrally managed and deployed, but teams can install additional apps for their members. | [Supplemental policies](deploy-multiple-windows-defender-application-control-policies.md) can be used to allow team-specific exceptions to your core organization-wide WDAC policy. Alternatively, teams can leverage managed installers to install their team-specific apps or admin-only file path rules can be used to allow apps installed by admin users. |
-| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | WDAC can integrate with Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md) (the same source of intelligence that powers Windows Defender Antivirus and SmartScreen) to allow only apps and binaries that have positive reputation. |
+| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | WDAC can integrate with Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md) (the same source of intelligence that powers Microsoft Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
 | Users and teams are free to download and install apps without restriction. | WDAC policies can be deployed in audit mode to gain insight into the apps and binaries running in your organization without impacting user and team productivity.|
 
 ### Are internally-developed line-of-business (LOB) apps and apps developed by 3rd parties digitally signed?
@@ -72,7 +69,7 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
 | Possible answers | Design considerations |
 | - | - |
 | All apps used in your organization must be signed. | Organizations that enforce [codesigning](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. WDAC rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
-| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows 10 tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific app catalog signatures to existing apps as a part of the app deployment process which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed app catalogs. | 
+| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows 10 tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed App Catalogs. | 
  
 ### Are there specific groups in your organization that need customized application control policies?
 

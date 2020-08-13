@@ -22,8 +22,8 @@ ms.topic: reference
 
 Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads. 
 
->[!NOTE]
->New tab pages do not load while running InPrivate mode. 
+> [!NOTE]
+> New tab pages do not load while running InPrivate mode. 
 
 ## Relevant group policies
 

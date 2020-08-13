@@ -34,7 +34,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac machines), configure your macOS machine running Microsoft Defender ATP to be an "Insider" machine. See [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender ATP to be an "Insider" device. See [Enable Microsoft Defender ATP Insider Device](endpoint-detection-response-mac-preview.md). 
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -63,33 +63,40 @@ The three most recent major releases of macOS are supported.
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
-Beta versions of macOS are not supported. macOS Sierra (10.12) support will end on January 1, 2020.
+Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 ### Network connections
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-| Service location                         | DNS record              |
-| ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
+
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
+
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
-- Web Proxy Auto-discovery Protocol (WPAD)
+- Proxy autoconfig (PAC)
+- Web Proxy Autodiscovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
+
+> [!WARNING]
+> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
+>
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 The output from this command should be similar to the following:
@@ -99,11 +106,11 @@ The output from this command should be similar to the following:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
+> We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
 Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
-$ mdatp --connectivity-test
+mdatp --connectivity-test
 ```
 
 ## How to update Microsoft Defender ATP for Mac
@@ -113,6 +120,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 ## How to configure Microsoft Defender ATP for Mac
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
+
+## macOS kernel and system extensions
+
+In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender Advanced Threat Protection for Mac](mac-whatsnew.md) for relevant details.
 
 ## Resources
 

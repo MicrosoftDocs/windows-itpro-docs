@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 
+ms.date: 2/3/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -51,3 +51,5 @@ These articles will walk you through the resources you need to troubleshoot Wind
 - [Advanced troubleshooting for Stop error or blue screen error](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
 
 - [Advanced troubleshooting for Windows-based computer freeze issues](https://docs.microsoft.com/windows/client-management/troubleshoot-windows-freeze)
+
+- [Stop error occurs when you update the in-box Broadcom network adapter driver](troubleshoot-stop-error-on-broadcom-driver-update.md)

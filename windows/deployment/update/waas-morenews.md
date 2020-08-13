@@ -4,13 +4,11 @@ ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
-ms.topic: article
 ---
 # Windows as a service - More news
 
@@ -45,7 +43,6 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Reduced-Windows-10-package-size-downloads-for-x64-systems/ba-p/262386">Reducing Windows 10 Package Size Downloads for x64 Systems</a> - September 26, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-7-servicing-stack-updates-managing-change-and/ba-p/260434">Windows 7 Servicing Stack Updates: Managing Change and Appreciating Cumulative Updates</a> - September 21, 2018</li>
 <li><a href="https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-amp-Windows-Analytics-a-real-world/ba-p/242417#M228">Windows Update for Business &amp; Windows Analytics: a real-world experience</a> - September 5, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What&#39;s next for Windows 10 and Windows Server quality updates</a> - August 16, 2018</li>
 <li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (<strong>video</strong>)</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376">Windows 10 update servicing cadence</a> - August 1, 2018</li>

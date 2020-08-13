@@ -3,7 +3,6 @@ title: Test how Microsoft Defender ATP features work
 description: Audit mode lets you use the event log to see how Microsoft Defender ATP would protect your devices if it were enabled
 keywords: exploit guard, audit, auditing, mode, enabled, disabled, test, demo, evaluate, lab
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -31,7 +30,7 @@ While the features will not block or prevent apps, scripts, or files from being 
 
 To find the audited entries, go to **Applications and Services** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
 
-You can use Windows Defender Advanced Threat Protection to get greater details for each event, especially for investigating attack surface reduction rules. Using the Microsoft Defender ATP console lets you [investigate issues as part of the alert timeline and investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
+You can use Microsoft Defender Advanced Threat Protection to get greater details for each event, especially for investigating attack surface reduction rules. Using the Microsoft Defender ATP console lets you [investigate issues as part of the alert timeline and investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
 This topic provides links that describe how to enable the audit functionality for each feature and how to view events in the Windows Event Viewer.
 

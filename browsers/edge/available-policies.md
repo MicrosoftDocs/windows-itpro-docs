@@ -1,5 +1,5 @@
 ---
-description: You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many.
+description: You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many.
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 ms.reviewer: 
 author: dansimp
@@ -18,7 +18,10 @@ ms.localizationpriority: medium
 
 > Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
 
-You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain. 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+
+You can customize your organization's browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. For example, you can set up multiple security settings in a Group Policy Object (GPO) linked to a domain, and then apply those settings to every computer in the domain. 
 
 Other policy settings in Microsoft Edge include allowing Adobe Flash content to play automatically, provision a favorites list, set default search engine, and more. You configure a Group Policy setting in the Administrative Templates folders, which are registry-based policy settings that Group Policy enforces. Group Policy stores these settings in a specific registry location, which users cannot change. Also, Group Policy-aware Windows features and applications look for these settings in the registry, and if found the policy setting gets used instead of the regular settings. 
 

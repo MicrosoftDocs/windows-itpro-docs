@@ -1,7 +1,7 @@
 ---
-title: Common WDAC deployment scenarios (Windows 10)
-description: Typically, deployment of Windows Defender Application Control happens best in phases, rather than being a feature that you simply “turn on.” The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices.
-keywords: whitelisting, security, malware
+title: Policy creation for common WDAC usage scenarios (Windows 10)
+description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,8 +20,9 @@ ms.date: 03/01/2018
 # Windows Defender Application Control deployment in different scenarios: types of devices
 
 **Applies to**
--   Windows 10
--   Windows Server 2016 and above
+
+- Windows 10
+- Windows Server 2016 and above
 
 Typically, deployment of Windows Defender Application Control (WDAC) happens best in phases, rather than being a feature that you simply “turn on.” The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying WDAC in your organization. It is very common for organizations to have device use cases across each of the categories described.
 
@@ -43,7 +44,7 @@ Lamna Healthcare Company (Lamna) is a large healthcare provider operating in the
 Lamna uses [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) (MEM) in hybrid mode with both Configuration Manager (MEMCM) and Intune. Although they use MEM to deploy many applications, Lamna has always had very relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (MDATP) for better endpoint detection and response.
 
 > [!NOTE]
-> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 
+> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 
 
 Recently, Lamna experienced a ransomware event that required an expensive recovery process and may have included data exfiltration by the unknown attacker. Part of the attack included installing and running malicious binaries that evaded detection by Lamna's antivirus solution but would have been blocked by an application control policy. In response, Lamna's executive board has authorized a number of new security IT responses, including tightening policies for application use and introducing application control.
 

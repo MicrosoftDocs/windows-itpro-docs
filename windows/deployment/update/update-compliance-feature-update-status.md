@@ -2,7 +2,7 @@
 title: Update Compliance - Feature Update Status report
 ms.reviewer: 
 manager: laurawi
-description: an overview of the Feature Update Status report
+description: Find the latest status of feature updates with an overview of the Feature Update Status report.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -37,9 +37,7 @@ Refer to the following list for what each state means:
 
 ## Compatibility holds
 
-Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *compatibility hold* is generated to delay the device’s upgrade and safeguard the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all compatibility holds on the Windows 10 release information page for any given release. 
-
-To learn how compatibility holds are reflected in the experience, see [Update compliance perspectives](update-compliance-perspectives.md#deployment-status). 
+Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *compatibility hold* is generated to delay the device's upgrade and safeguard the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all compatibility holds on the Windows 10 release information page for any given release. 
 
 ### Opting out of compatibility hold
 

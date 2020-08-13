@@ -17,7 +17,7 @@ ms.topic: article
 
 # Delivery Optimization in Update Compliance
 ![DO status](images/UC_workspace_DO_status.png)
-The Update Compliance solution of Windows Analytics provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
+The Update Compliance solution provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ## Delivery Optimization Status
  

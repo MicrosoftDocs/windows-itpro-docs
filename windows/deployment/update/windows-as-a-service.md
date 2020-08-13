@@ -1,9 +1,8 @@
 ---
 title: Windows as a service  
-ms.prod: windows-10
-layout: LandingPage  
+ms.prod: w10 
 ms.topic: landing-page
-ms.manager: elizapo
+ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
@@ -74,7 +73,6 @@ Learn more about Windows as a service and its value to your organization.
 
 <a href="waas-quick-start.md">Quick guide to Windows as a service</a>
 
-<a href="windows-analytics-overview.md">Windows Analytics overview</a>
 
 <a href="../deploy-whats-new.md">What's new in Windows 10 deployment</a>
 
@@ -116,22 +114,4 @@ Secure your organization's deployment investment.
 ## Microsoft Ignite 2018
 <img src="images/ignite-land.jpg" alt="" width="640" height="320"/>
 
-Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service.
-
-[BRK2417: What’s new in Windows Analytics: An Intro to Desktop Analytics](https://myignite.techcommunity.microsoft.com/sessions/64324#ignite-html-anchor)
-
-[BRK3018: Deploying Windows 10 in the enterprise using traditional and modern techniques](https://myignite.techcommunity.microsoft.com/sessions/64509#ignite-html-anchor)
-
-[BRK3019: Delivery Optimization deep dive: How to reduce internet bandwidth impact on your network](https://myignite.techcommunity.microsoft.com/sessions/64510#ignite-html-anchor)
-
-[BRK3020: Using AI to automate Windows and Office update staging with Windows Update for Business](https://myignite.techcommunity.microsoft.com/sessions/64513#ignite-html-anchor)
-
-[BRK3027: Deploying Windows 10: Making the update experience smooth and seamless](https://myignite.techcommunity.microsoft.com/sessions/64612#ignite-html-anchor)
-
-[BRK3039: Windows 10 and Microsoft Office 365 ProPlus lifecycle and servicing update](https://myignite.techcommunity.microsoft.com/sessions/66763#ignite-html-anchor)
-
-[BRK3211: Ask the Experts: Successfully deploying, servicing, managing Windows 10](https://myignite.techcommunity.microsoft.com/sessions/65963#ignite-html-anchor)
-
-[THR2234: Windows servicing and delivery fundamentals](https://myignite.techcommunity.microsoft.com/sessions/66741#ignite-html-anchor)
-
-[THR3006: The pros and cons of LTSC in the enterprise](https://myignite.techcommunity.microsoft.com/sessions/64512#ignite-html-anchor)
+Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).

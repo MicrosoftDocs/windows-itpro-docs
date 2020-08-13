@@ -1,7 +1,7 @@
 ---
 title: Remove app restriction API
 description: Use this API to create calls related to removing a restriction from applications from executing.
-keywords: apis, graph api, supported apis, remove machine from isolation
+keywords: apis, graph api, supported apis, remove device from isolation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,13 +18,20 @@ ms.topic: article
 
 # Remove app restriction API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Enable execution of any application on the machine.
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+## API description
+Enable execution of any application on the device.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -37,7 +44,7 @@ Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code 
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -78,26 +85,5 @@ Content-type: application/json
 
 ```
 
-**Response**
 
-Here is an example of the response.
-
-```
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "44cffc15-0e3d-4cbf-96aa-bf76f9b27f5e",
-    "type": "UnrestrictCodeExecution",
-    "requestor": "Analyst@contoso.com",
-    "requestorComment": "Unrestrict code execution since machine was cleaned and validated ",
-    "status": "InProgress",
-    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2018-12-04T12:15:40.6052029Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:15:40.6052029Z",
-	"relatedFileInfo": null
-}
-
-```
-
-To restrict code execution on a machine, see [Restrict app execution](restrict-code-execution.md).
+To restrict code execution on a device, see [Restrict app execution](restrict-code-execution.md).

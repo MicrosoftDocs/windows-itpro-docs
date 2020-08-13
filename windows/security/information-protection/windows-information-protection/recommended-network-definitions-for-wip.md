@@ -33,12 +33,14 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 
 |If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s)|
 |-----------------------------|---------------------------------------------------------------------|
-|Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
+|Sharepoint Online |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li></ul> |
 |Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
-|Outlook Web Access (OWA) |attachments.office.net |
+|Outlook Web Access (OWA) |<ul><li>outlook.office.com</li><li>outlook.office365.com</li><li>attachments.office.net</li></ul> |
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
 |Power BI |contoso.powerbi.com |
+|Microsoft Teams |teams.microsoft.com |
+|Other Office 365 services |<ul><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>project.microsoft.com</li></ul> |
 
 You can add other work-only apps to the Cloud Resource list, or you can create a packaged app rule for the .exe file to protect every file the app creates or modifies. Depending on how the app is accessed, you might want to add both.
 

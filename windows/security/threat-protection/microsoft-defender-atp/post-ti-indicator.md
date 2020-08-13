@@ -18,18 +18,19 @@ ms.topic: article
 
 # Submit or Update Indicator API
 
-**Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
->[!NOTE]
-> Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
+## API description
+Submits or Updates new [Indicator](ti-indicator.md) entity.
+<br>CIDR notation for IPs is supported.
 
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+2. There is a limit of 15,000 active indicators per tenant. 
 
-- Submits or Updates new [Indicator](ti-indicator.md) entity.
-
->[!NOTE]
->There is a limit of 5000 indicators per tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -38,6 +39,7 @@ Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Ti.ReadWrite |	'Read and write Indicators'
 Application |	Ti.ReadWrite.All |	'Read and write All Indicators'
+Delegated (work or school account) |	Ti.ReadWrite |	'Read and write Indicators'
 
 
 ## HTTP request
@@ -63,16 +65,18 @@ Parameter |	Type	| Description
 indicatorValue | String | Identity of the [Indicator](ti-indicator.md) entity. **Required**
 indicatorType | Enum | Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
 action | Enum | The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
-title | String | Indicator alert title. **Optional**
+application | String | The application associated with the indicator. **Optional**
+title | String | Indicator alert title. **Required**
+description | String | Description of the indicator. **Required**
 expirationTime | DateTimeOffset | The expiration time of the indicator. **Optional**
 severity | Enum | The severity of the indicator. possible values are: "Informational", "Low", "Medium" and "High". **Optional**
-description | String | Description of the indicator. **Optional**
 recommendedActions | String | TI indicator alert recommended actions. **Optional**
+rbacGroupNames | String | Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 
 
 ## Response
 - If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator.md) entity in the response body.
-- If not successful: this method return 400 - Bad Request / 409 - Conflict with the failure reason. Bad request usually indicates incorrect body and Conflict can happen if you try to submit an Indicator that conflicts with an existing Indicator type or Action.  
+- If not successful: this method return 400 - Bad Request. Bad request usually indicates incorrect body.
 
 ## Example
 
@@ -84,39 +88,17 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/api/indicators
 Content-type: application/json
 {
-	"indicatorValue": "220e7d15b0b3d7fac48f2bd61114db1022197f7f",
-	"indicatorType": "FileSha1",
-	"title": "test",
-	"expirationTime": "2020-12-12T00:00:00Z",
-	"action": "AlertAndBlock",
-	"severity": "Informational",
-	"description": "test",
-	"recommendedActions": "TEST"
-}
-
-```
-**Response**
-
-Here is an example of the response.
-
-```
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators/$entity",
-    "indicatorValue": "220e7d15b0b3d7fac48f2bd61114db1022197f7f",
+    "indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",
     "indicatorType": "FileSha1",
     "title": "test",
-    "creationTimeDateTimeUtc": "2018-10-24T10:54:23.2009016Z",
-    "createdBy": "45097602-1234-5678-1234-9f453233e62c",
+    "application": "demo-test",
     "expirationTime": "2020-12-12T00:00:00Z",
     "action": "AlertAndBlock",
     "severity": "Informational",
     "description": "test",
-    "recommendedActions": "TEST",
-	"rbacGroupNames": []
+    "recommendedActions": "nothing",
+    "rbacGroupNames": ["group1", "group2"]
 }
-
 ```
 
 ## Related topic

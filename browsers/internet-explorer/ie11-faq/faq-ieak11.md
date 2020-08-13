@@ -36,22 +36,22 @@ You can customize and install IEAK 11 on the following supported operating syste
 
 -   Windows Server 2008 R2 Service Pack 1 (SP1)
 
->[!Note]
->IEAK 11 does not support building custom packages for Windows RT.
+> [!NOTE]
+> IEAK 11 does not support building custom packages for Windows RT.
 
 
 **What can I customize with IEAK 11?**
 
 The IEAK 11 enables you to customize branding and settings for Internet Explorer 11. For PCs running Windows 7, the custom package also includes the Internet Explorer executable.
 
->[!Note]
->Internet Explorer 11 is preinstalled on PCs running Windows 8. Therefore, the executable is not included in the customized package.
+> [!NOTE]
+> Internet Explorer 11 is preinstalled on PCs running Windows 8. Therefore, the executable is not included in the customized package.
 
 **Can IEAK 11 build custom Internet Explorer 11 packages in languages other than the language of the in-use IEAK 11 version?**
 Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.
 
->[!Note]
->IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
+> [!NOTE]
+> IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
 
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:

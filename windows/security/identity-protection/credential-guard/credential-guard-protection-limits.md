@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Credential Guard protection limits (Windows 10)
-description: Scenarios not protected by Windows Defender Credential Guard in Windows 10.
+description: Some ways to store credentials are not protected by Windows Defender Credential Guard in Windows 10. Learn more with this guide.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

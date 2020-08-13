@@ -1,6 +1,6 @@
 ---
 title: How Windows Update works 
-description: Learn how Windows Update works, including architecture and troubleshooting
+description: Learn how Windows Update works, including architecture and troubleshooting.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -80,7 +80,7 @@ Windows Update takes the following sets of actions when it runs a scan.
 #### Starts the scan for updates  
 When users start scanning in Windows Update through the Settings panel, the following occurs:  
 
-- The scan first generates a “ComApi” message. The caller (Windows Defender Antivirus) tells the WU engine to scan for updates. 
+- The scan first generates a “ComApi” message. The caller (Microsoft Defender Antivirus) tells the WU engine to scan for updates. 
 - "Agent" messages: queueing the scan, then actually starting the work: 
    - Updates are identified by the different IDs ("Id = 10", "Id = 11") and from the different thread ID numbers. 
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 
@@ -106,7 +106,7 @@ When users start scanning in Windows Update through the Settings panel, the foll
 |MU|7971f918-a847-4430-9279-4a52d1efe18d| 
 |Store|855E8A7C-ECB4-4CA3-B045-1DFA50104289| 
 |OS Flighting|8B24B027-1DEE-BABB-9A95-3517DFB9C552| 
-|WSUS or SCCM|Via ServerSelection::ssManagedServer <br>3DA21691-E39D-4da6-8A4B-B43877BCB1B7 |
+|WSUS or Configuration Manager|Via ServerSelection::ssManagedServer <br>3DA21691-E39D-4da6-8A4B-B43877BCB1B7 |
 |Offline scan service|Via IUpdateServiceManager::AddScanPackageService| 
 
 #### Finds network faults
@@ -117,9 +117,9 @@ Common update failure is caused due to network issues. To find the root of the i
 - The WU client uses SLS (Service Locator Service) to discover the configurations and endpoints of Microsoft network update sources – WU, MU, Flighting. 
 
    > [!NOTE]
-   > Warning messages for SLS can be ignored if the search is against WSUS/SCCM. 
+   > Warning messages for SLS can be ignored if the search is against WSUS or Configuration Manager. 
 
-- On sites that only use WSUS/SCCM, the SLS may be blocked at the firewall. In this case the SLS request will fail, and can’t scan against Windows Update or Microsoft Update but can still scan against WSUS/SCCM, since it’s locally configured.
+- On sites that only use WSUS or Configuration Manager, the SLS may be blocked at the firewall. In this case the SLS request will fail, and can’t scan against Windows Update or Microsoft Update but can still scan against WSUS or Configuration Manager, since it’s locally configured.
    ![Windows Update scan log 3](images/update-scan-log-3.png)
    
 ## Downloading updates 

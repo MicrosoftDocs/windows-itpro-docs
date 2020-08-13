@@ -1,6 +1,6 @@
 ---
 title: Configure access to Microsoft Store (Windows 10)
-description: IT Pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
+description: Learn how to configure access to Microsoft Store for client computers and mobile devices in your organization.
 ms.assetid: 7AA60D3D-2A69-45E7-AAB0-B8AFC29C2E97
 ms.reviewer: 
 manager: dansimp
@@ -78,14 +78,14 @@ You can also use Group Policy to manage access to Microsoft Store.
 
 1.  Type gpedit in the search bar to find and start Group Policy Editor.
 
-2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates** , click **Windows Components**, and then click **Store**.
+2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates**, click **Windows Components**, and then click **Store**.
 
-3.  In the Setting pane, click **Turn off Store application**, and then click **Edit policy setting**.
+3.  In the Setting pane, click **Turn off the Store application**, and then click **Edit policy setting**.
 
-4.  On the **Turn off Store application** setting page, click **Enabled**, and then click **OK**.
+4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> Enabling **Turn off Store application** policy turns off app updates from Microsoft Store.  
+> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.  
 
 ## <a href="" id="block-store-mdm"></a>Block Microsoft Store using management tool
 

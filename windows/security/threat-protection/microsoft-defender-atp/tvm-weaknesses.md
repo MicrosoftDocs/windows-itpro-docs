@@ -1,33 +1,33 @@
 ---
-title: Weaknesses
-description: The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, breach, and threat insights.    
-keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
+title: Weaknesses found by threat and vulnerability management
+description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender ATP threat and vulnerability management capability. 
+keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 10/31/2019
 ---
-# Weaknesses
+# Weaknesses found by threat and vulnerability management
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
+Threat and vulnerability management uses the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
-The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights.
+The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
@@ -36,100 +36,112 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 
+## Navigate to the Weaknesses page
 
-## Navigate through your organization's weaknesses page
-You can access the list of vulnerabilities in a few places in the portal:
+Access the Weaknesses page a few different ways:
+
+- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
 - Global search
-- Weaknesses option in the navigation menu
-- Top vulnerable software widget in the dashboard
-- Discovered vulnerabilities page in the machine page
 
-*Vulnerabilities in global search*
-1. Click the global search drop-down menu.
-2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you are looking for, then click the search icon. The **Weaknesses** page opens with the CVE information that you are looking for. 
-![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
+### Navigation menu
 
->[!NOTE]
->To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search. 
+Go to the threat and vulnerability management navigation menu and select **Weaknesses** to open the list of CVEs.
 
-*Weaknesses page in the menu* 
-1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, dates when it was published and updated, related software, exploit kits available, vulnerability type, link to useful reference, and number of exposed machines which users can also export.    
-![Screenshot of the CVE details in the flyout pane in the Weaknesses page](images/tvm-weaknesses-page.png)
+### Vulnerabilities in global search
 
-*Top vulnerable software widget in the dashboard* 
-1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time. 
-![tvm-top-vulnerable-software](images/tvm-top-vulnerable-software.png)
-2. Click the software that you want to investigate and it takes you to the software page. You will see the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
-3. Select the **Discovered vulnerabilities** tab. 
-4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+1. Go to the global search drop-down menu.
+2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you're looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you're looking for.
+![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
+3. Select the CVE and a flyout panel opens up with more information, including the vulnerability description, details, threat insights, and exposed devices.
 
-*Discovered vulnerabilities in the machine page*
-1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens. 
-<br>![Screenshot of Machines list page](images/tvm_machineslist.png)</br>
-2. In the **Machines list** page, select the machine that you want to investigate. 
-<br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
-<br>A flyout pane opens with machine details and response action options.</br>
-![Screenshot of the flyout pane with machine details and response options](images/tvm_machine_page_flyout.png)
-3. In the flyout pane, select **Open machine page**. A page opens with details and response options for the machine you want to investigate. 
-<br>![Screenshot of the machine page with details and response options](images/tvm_machines_discoveredvuln.png)</br>
-4. Select **Discovered vulnerabilities**.
-5. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.
+To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then select search.
 
-## How it works
-When new vulnerabilities are released, you would want to know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
+## Weaknesses overview
 
-If the **Exposed Machines** column shows 0, that means you are not at risk. 
+If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization. If the **Exposed Devices** column shows 0, that means you are not at risk.
 
-If exposed machines exist, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
+![Weaknesses landing page.](images/tvm-weaknesses-overview.png)
 
-You can also see the related alert and threat insights in the **Threat** column.
+### Breach and threat insights
 
-The breach insights icon is highlighted if there is a vulnerability found in your organization. Prioritize an investigation because it  means there might be a breach in your organization.  
-
-![tvm-breach-insights](images/tvm-breach-insights.png)
-
-The threat insights icons are highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has zero-day exploitation news, disclosures, or related security advisories.  
-
-![tvm-threat-insights](images/tvm-threat-insights.png)
-
+View related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
- > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and breach insight ![possible active alert](images/tvm_alert_icon.png) icon.  
+ > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
+
+The breach insights icon is highlighted if there is a vulnerability found in your organization.
+![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
+
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit or connected to specific advanced persistent campaigns or activity groups. Threat Analytics report links are provided that you can read with zero-day exploitation news, disclosures, or related security advisories.  
+
+![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
+
+### Gain vulnerability insights
+
+If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices.
+
+The "OS Feature" category is shown in relevant scenarios.
+
+ ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
+
+## View Common Vulnerabilities and Exposures (CVE) entries in other places
+
+### Top vulnerable software in the dashboard
+
+1. Go to the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
+
+    ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
+
+2. Select the software you want to investigate to go to a drill down page.
+3. Select the **Discovered vulnerabilities** tab.
+4. Select the vulnerability you want to investigate for more information on vulnerability details
+
+    ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
+
+### Discover vulnerabilities in the device page
+
+View related weaknesses information in the device page.
+
+1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
+2. In the **Devices list** page, select the device name that you want to investigate.
+
+    ![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)
+
+3. The device page will open with details and response options for the device you want to investigate.
+4. Select **Discovered vulnerabilities**.
+
+    ![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
+
+5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
+
+#### CVE Detection logic
+
+Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the device page) that shows the detection logic and source.
+
+The "OS Feature" category is also shown in relevant scenarios. For example, a CVE affects devices that run a vulnerable OS, only if a specific OS component is enabled on these devices. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll attach this CVE only to the Windows Server 2019 devices with DNS capability enabled in their OS.
+
+![Detection Logic example which lists the software detected on the device and the KBs.](images/tvm-cve-detection-logic.png)
 
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate, missing, or already remediated vulnerability information in the machine page.
+You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated security recommendation information.
 
-1. Select the **Discovered vulnerabilities** tab. 
-
-2. Click **:** beside the vulnerability that you want to report about, and then select **Report inaccuracy**. 
-![Screenshot of Report inaccuracy control from the machine page in the Discovered vulnerabilities tab](images/tvm_report_inaccuracy_vuln.png)
-<br>A flyout pane opens.</br>
-![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_vulnflyout.png)
-
-3. From the flyout pane, select the inaccuracy category from the **Discovered vulnerability inaccuracy reason** drop-down menu. 
-<br>![Screenshot of discovered vulnerability inaccuracy reason drop-down menu](images/tvm_report_inaccuracy_vulnoptions.png)</br>
-
-4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
-
-5. Include your machine name for investigation context.
-
->[!NOTE]
-> You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
-
-6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
-
+1. Open the CVE on the Weaknesses page.
+2. Select **Report inaccuracy**.
+3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
+4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related topics
+
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
+- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
-- [Security recommendation](tvm-security-recommendation.md)
+- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
+- [Security recommendations](tvm-security-recommendation.md)
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
+- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
+- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

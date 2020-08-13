@@ -38,7 +38,7 @@ This hardware-based root of trust comes from the device’s Secure Boot feature,
 This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
 
 As there are thousands of PC vendors that produce numerous models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
-Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blacklist), or a list of known 'good' SRTM measurements (also known as a whitelist). 
+Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a block list), or a list of known 'good' SRTM measurements (also known as an allow list). 
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
@@ -83,5 +83,5 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 ![Boot time integrity](images/windows-defender-system-guard-boot-time-integrity.png)
 
-After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or System Center Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Endpoint Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 

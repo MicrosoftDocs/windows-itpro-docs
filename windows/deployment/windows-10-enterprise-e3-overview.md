@@ -10,8 +10,9 @@ ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
+audience: itpro
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -103,7 +104,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 </tr>
 <tr class="odd">
 <td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device (also known as “whitelisting”). The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
+<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
 <p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview" data-raw-source="[AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)">AppLocker</a>.</p></td>
 </tr>
 <tr class="even">
@@ -161,7 +162,7 @@ You can implement Credential Guard on Windows 10 Enterprise devices by turning 
 
     -   Configure Credential Guard registry settings by using the Registry Editor or the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
-    You can automate these manual steps by using a management tool such as System Center Configuration Manager.
+    You can automate these manual steps by using a management tool such as Microsoft Endpoint Configuration Manager.
 
 For more information about implementing Credential Guard, see the following resources:
 

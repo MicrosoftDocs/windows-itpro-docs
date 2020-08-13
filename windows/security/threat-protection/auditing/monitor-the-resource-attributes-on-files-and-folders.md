@@ -1,6 +1,6 @@
 ---
 title: Monitor the resource attributes on files and folders (Windows 10)
-description: This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects.
+description: Learn how to use advanced security auditing options to monitor attempts to change settings on the resource attributes of files.
 ms.assetid: 4944097b-320f-44c7-88ed-bf55946a358b
 ms.reviewer: 
 ms.author: dansimp

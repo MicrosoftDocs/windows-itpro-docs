@@ -91,7 +91,7 @@ The following tables provide the corresponding phase and operation for values of
 <br>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><font color="#000000"><b>Extend code: phase</b></td>
 <tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
 <tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
 <tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
@@ -103,7 +103,7 @@ The following tables provide the corresponding phase and operation for values of
 
 
 <table border="0" style='border-collapse:collapse;border:none'>
-<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><font color="#000000"><B>Extend code: operation</B></td>
 <tr><td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <table>
 <tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>

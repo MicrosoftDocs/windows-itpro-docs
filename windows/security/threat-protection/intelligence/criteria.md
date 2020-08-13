@@ -1,7 +1,7 @@
 ---
 title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
-description: Learn how Microsoft reviews software for unwanted behavior, advertising, privacy violations, and negative consumer opinion to determine if it is malware (malicious software) or potentially unwanted applications.
+description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it is malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -18,11 +18,22 @@ search.appverid: met150
 
 # How Microsoft identifies malware and potentially unwanted applications
 
-Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. When you download, install, and run software, you have access to information and tools to do so safely. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. That information is then compared against criteria described in this article.
+Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you are protected against known threats and warned about software that is unknown to us.  
 
-You can participate in this process by [submitting software for analysis](submission-guide.md) to ensure undesirable software is covered by our security solutions.
+You can assist Microsoft by [submitting unknown or suspicious software for analysis](https://www.microsoft.com/wdsi/filesubmission/). This will help ensure that unknown or suspicious software is scanned by our system to start establishing reputation. [Learn more about submitting files for analysis](submission-guide.md)
 
-Because new forms of malware and potentially unwanted applications are being developed and distributed rapidly, Microsoft reserves the right to adjust, expand, and update these criteria without prior notice or announcements.
+The next sections provide an overview of the classifications we use for applications and the types of behaviors that lead to that classification.
+
+>[!NOTE]
+> New forms of malware and potentially unwanted applications are being developed and distributed rapidly. The following list may not be comprehensive, and Microsoft reserves the right to adjust, expand, and update these without prior notice or announcement.
+
+## Unknown – Unrecognized software  
+
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program.
+
+You can think of Unknown/Uncommonly downloaded warnings as an early warning system for potentially undetected malware, as there is generally a delay from the time new malware is released until it is identified. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
+
+Once enough data is gathered, Microsoft's security solutions can make a determination. Either no threats are found, or an application or software is categorized as malware or potentially unwanted software.
 
 ## Malware
 
@@ -38,7 +49,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Downloader:** A type of malware that downloads other malware onto your device. It must connect to the internet to download files.
 
-* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn’t have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
+* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
 * **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
 
@@ -48,7 +59,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Obfuscator:** A type of malware that hides its code and purpose, making it more difficult for security software to detect or remove.
 
-* **Password stealer:** A type of malware that gathers your personal information, such as user names and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
+* **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
 
 * **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note which states you must pay money, complete surveys, or perform other actions before you can use your device again. [See more information about ransomware](ransomware-malware.md).
 
@@ -84,7 +95,7 @@ Software that exhibits lack of choice might:
 
 Software must not mislead or coerce you into making decisions about your device. This is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
 
-* Display exaggerated claims about your device’s health.
+* Display exaggerated claims about your device's health.
 
 * Make misleading or inaccurate claims about files, registry entries, or other items on your device.
 
@@ -148,11 +159,11 @@ Advertisements shown to you must:
 
 #### Consumer opinion
 
-Microsoft maintains a worldwide network of analysts and intelligence systems where you can [submit software for analysis](https://www.microsoft.com/wdsi/filesubmission). Your participation helps Microsoft identify new malware quickly. After analysis, Microsoft creates Security intelligence for software that meets the described criteria. This Security intelligence identifies the software as malware and are available to all users through Windows Defender Antivirus and other Microsoft antimalware solutions.
+Microsoft maintains a worldwide network of analysts and intelligence systems where you can [submit software for analysis](https://www.microsoft.com/wdsi/filesubmission). Your participation helps Microsoft identify new malware quickly. After analysis, Microsoft creates Security intelligence for software that meets the described criteria. This Security intelligence identifies the software as malware and are available to all users through Microsoft Defender Antivirus and other Microsoft antimalware solutions.
 
 ## Potentially unwanted application (PUA)
 
-Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Windows Defender Antivirus, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
+Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](../microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
 
 *PUAs are not considered malware.*
 
@@ -164,7 +175,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Cryptomining software:** Software that uses your device resources to mine cryptocurrencies.
 
-* **Bundling software:** Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
+* **Bundling software:** Software that offers to install other software that is not developed by the same entity or not required for the software to run. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
 
 * **Marketing software:** Software that monitors and transmits the activities of users to applications or services other than itself for marketing research.
 

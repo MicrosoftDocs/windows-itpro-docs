@@ -23,7 +23,7 @@ ms.topic: article
 - Windows 10
 
 > [!IMPORTANT]
-> Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 From the start, Windows To Go was designed to minimize differences between the user experience of working on a laptop and Windows To Go booted from a USB drive. Given that Windows To Go was designed as an enterprise solution, extra consideration was given to the deployment workflows that enterprises already have in place. Additionally, there has been a focus on minimizing the number of differences in deployment between Windows To Go workspaces and laptop PCs.
 
@@ -60,7 +60,7 @@ DirectAccess can be used to ensure that the user can login with their domain cre
 
 ### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
 
-The Image Deployment process can be accomplished either by a centralized IT process for your organization or by individual users creating their own Windows To Go workspaces. You must have local Administrator access and access to a Windows 10 Enterprise or Windows 10 Education image to create a Windows To Go workspace, or you must be using System Center Configuration Manager 2012 Service Pack 1 or later to distribute Windows To Go workspaces to users. The image deployment process takes a blank USB drive and a Windows 10 Enterprise image (WIM) and turns it into a Windows To Go drive.
+The Image Deployment process can be accomplished either by a centralized IT process for your organization or by individual users creating their own Windows To Go workspaces. You must have local Administrator access and access to a Windows 10 Enterprise or Windows 10 Education image to create a Windows To Go workspace, or you must be using System Center 2012 Configuration Manager Service Pack 1 or later to distribute Windows To Go workspaces to users. The image deployment process takes a blank USB drive and a Windows 10 Enterprise image (WIM) and turns it into a Windows To Go drive.
 
 ![windows to go image deployment](images/wtg-image-deployment.gif)
 

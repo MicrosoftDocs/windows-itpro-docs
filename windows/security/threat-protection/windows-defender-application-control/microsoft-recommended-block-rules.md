@@ -1,7 +1,7 @@
 ---
 title: Microsoft recommended block rules (Windows 10)
-description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Control, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
-keywords: whitelisting, security, malware
+description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.  
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.date: 04/09/2019
 
 # Microsoft recommended block rules
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
--   Windows Server 2019
+**Applies to:**
+
+- Windows 10
+- Windows Server 2016 and above
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application whitelisting policies, including Windows Defender Application Control:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
 
 - addinprocess.exe
 - addinprocess32.exe
@@ -53,7 +53,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup>Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -160,9 +160,8 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
 
-  <!-- msxml3.dll pick correct version based on release you are supporting -->
-  <!-- msxml6.dll pick correct version based on release you are supporting -->     
-  <!-- jscript9.dll pick correct version based on release you are supporting -->
+  <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
+  <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
   <!-- RS1 Windows 1607
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
@@ -893,7 +892,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
-  <!-- Uncomment the relevant line(s) below if you have uncommented them in the rule definitions above.
+  <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />

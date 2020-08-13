@@ -1,7 +1,7 @@
 ---
 title: Create a WDAC policy for lightly-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -22,8 +22,8 @@ ms.date: 11/15/2019
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy for **lightly-managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC managed devices as described in later topics.
 
@@ -43,8 +43,8 @@ Alice identifies the following key factors to arrive at the "circle-of-trust" fo
 - All clients are running Windows 10 version 1903 or above;
 - All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
 
-> [!NOTE]
-> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 
+    > [!NOTE]
+    > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM). 
 
 - Some, but not all, apps are deployed using MEMCM;
 - Most users are local administrators on their devices;
@@ -117,7 +117,7 @@ Alice follows these steps to complete this task:
       $PathRules += New-CIPolicyRule -FilePathRule "%windir%\*"
       $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files\*"
       $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files (x86)\*"
-      Merge-CIPolicy -OutputFilePath = $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
+      Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
       ```
 
 7. If appropriate, add additional signer or file rules to further customize the policy for your organization.

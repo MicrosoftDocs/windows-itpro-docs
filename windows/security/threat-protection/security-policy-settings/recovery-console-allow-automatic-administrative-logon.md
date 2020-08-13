@@ -1,6 +1,6 @@
 ---
 title: Recovery console Allow automatic administrative logon (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Recovery console Allow automatic administrative logon security policy setting.
+description: Best practices, location, values, policy management and security considerations for the policy setting, Recovery console Allow automatic administrative logon.
 ms.assetid: be2498fc-48f4-43f3-ad09-74664e45e596
 ms.reviewer: 
 ms.author: dansimp

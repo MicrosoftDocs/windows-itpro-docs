@@ -1,14 +1,12 @@
 ---
 title: Managing feature and quality updates with policies in Windows Update for Business (Windows 10)
-description: Learn how to get started using Windows Update for Business.
+description: Learn how to manage feature and quality updates using group policies in Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-ms.localizationprioauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
 ms.date: 06/20/2018
 ms.reviewer: 
 manager: laurawi

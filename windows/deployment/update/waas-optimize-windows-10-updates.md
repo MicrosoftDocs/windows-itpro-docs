@@ -33,7 +33,7 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.
 
-    Windows Server Update Services (WSUS) and System Center Configuration Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content.
+    Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content.
 
 </br></br>
 
@@ -43,9 +43,9 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 | BranchCache | ![no](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 > [!NOTE]
-> System Center Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use System Center Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/client-peer-cache).
+> Microsoft Endpoint Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Microsoft Endpoint Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache).
 >
-> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with System Center Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in System Center Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
+> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Microsoft Endpoint Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
 
 ## Express update delivery
 
@@ -55,7 +55,7 @@ Windows 10 quality update downloads can be large because every package contains 
 > Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
-- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
+- **Express on Microsoft Endpoint Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).
@@ -93,7 +93,7 @@ At this point, the download is complete and the update is ready to be installed.
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this topic) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
 
 
 ## Related topics

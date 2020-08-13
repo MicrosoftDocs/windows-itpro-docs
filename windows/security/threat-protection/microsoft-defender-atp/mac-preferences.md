@@ -24,7 +24,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see the [Resources](mac-resources.md#configuring-from-the-command-line) page.
+>This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## Summary
 
@@ -79,6 +79,18 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
+
+#### Exclusion merge policy
+
+Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | exclusionsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 #### Scan exclusions
 
@@ -138,9 +150,9 @@ Specify content excluded from being scanned by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-##### Name of excluded content
+##### Process excluded from the scan
 
-Specify content excluded from being scanned by file name.
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
 
 |||
 |:---|:---|
@@ -159,6 +171,18 @@ Specify threats by name that are not blocked by Microsoft Defender ATP for Mac. 
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
+
+#### Disallowed threat actions
+
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | disallowedThreatActions |
+| **Data type** | Array of strings |
+| **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 #### Threat type settings
 
@@ -196,6 +220,18 @@ Specify what action to take when a threat of the type specified in the preceding
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
+
+#### Threat type settings merge policy
+
+Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | threatTypeSettingsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 ### Cloud-delivered protection preferences
 
@@ -241,6 +277,16 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+#### Enable / disable automatic security intelligence updates
+
+Determines whether security intelligence updates are installed automatically:
+
+|||
+|:---|:---|
+| **Key** | automaticDefinitionUpdateEnabled |
+| **Data type** | Boolean |
+| **Possible values** | true (default) <br/> false |
+
 ### User interface preferences
 
 Manage the preferences for the user interface of Microsoft Defender ATP for Mac.
@@ -274,20 +320,11 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-#### Enable / disable early preview
-
-Specify whether to enable EDR early preview features.
-
-|||
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | earlyPreview |
-| **Data type** | Boolean |
-| **Possible values** | true (default) <br/> false |
-
 #### Device tags
 
 Specify a tag name and its value. 
+
+- The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 |||
 |:---|:---|
@@ -318,19 +355,24 @@ Specifies the value of tag
 | **Data type** | String |
 | **Possible values** | any string |
 
+> [!IMPORTANT]  
+> - Only one value per tag type can be set.
+> - Type of tags are unique, and should not be repeated in the same configuration profile.
+
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
+To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
-The following configuration profile will:
+The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
   - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender ATP logs
+- Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
-### JAMF profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -362,6 +404,8 @@ The following configuration profile will:
         <key>enabled</key>
         <true/>
         <key>automaticSampleSubmission</key>
+        <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
         <true/>
     </dict>
 </dict>
@@ -440,6 +484,8 @@ The following configuration profile will:
                     <true/>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
+                    <true/>
                 </dict>
             </dict>
         </array>
@@ -449,9 +495,9 @@ The following configuration profile will:
 
 ## Full configuration profile example
 
-The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
+The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
 
-### JAMF profile
+### Property list for JAMF configuration profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -488,10 +534,23 @@ The following configuration profile contains entries for all settings described 
                 <key>extension</key>
                 <string>pdf</string>
             </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedFileName</string>
+                <key>name</key>
+                <string>cat</string>
+            </dict>
         </array>
+        <key>exclusionsMergePolicy</key>
+        <string>merge</string>
         <key>allowedThreats</key>
         <array>
             <string>EICAR-Test-File (not a virus)</string>
+        </array>
+        <key>disallowedThreatActions</key>
+        <array>
+            <string>allow</string>
+            <string>restore</string>
         </array>
         <key>threatTypeSettings</key>
         <array>
@@ -508,6 +567,8 @@ The following configuration profile contains entries for all settings described 
                 <string>audit</string>
             </dict>
         </array>
+        <key>threatTypeSettingsMergePolicy</key>
+        <string>merge</string>
     </dict>
     <key>cloudService</key>
     <dict>
@@ -517,6 +578,20 @@ The following configuration profile contains entries for all settings described 
         <string>optional</string>
         <key>automaticSampleSubmission</key>
         <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
+        <true/>
+    </dict>
+    <key>edr</key>
+    <dict>
+        <key>tags</key>
+        <array>
+            <dict>
+                <key>key</key>
+                <string>GROUP</string>
+                <key>value</key>
+                <string>ExampleTag</string>
+            </dict>
+        </array>
     </dict>
     <key>userInterface</key>
     <dict>
@@ -530,10 +605,6 @@ The following configuration profile contains entries for all settings described 
 ### Intune profile
 
 ```XML
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1">
-    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -603,10 +674,23 @@ The following configuration profile contains entries for all settings described 
                             <key>extension</key>
                             <string>pdf</string>
                         </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedFileName</string>
+                            <key>name</key>
+                            <string>cat</string>
+                        </dict>
                     </array>
+                    <key>exclusionsMergePolicy</key>
+                    <string>merge</string>
                     <key>allowedThreats</key>
                     <array>
                         <string>EICAR-Test-File (not a virus)</string>
+                    </array>
+                    <key>disallowedThreatActions</key>
+                    <array>
+                        <string>allow</string>
+                        <string>restore</string>
                     </array>
                     <key>threatTypeSettings</key>
                     <array>
@@ -623,6 +707,8 @@ The following configuration profile contains entries for all settings described 
                             <string>audit</string>
                         </dict>
                     </array>
+                    <key>threatTypeSettingsMergePolicy</key>
+                    <string>merge</string>
                 </dict>
                 <key>cloudService</key>
                 <dict>
@@ -632,6 +718,20 @@ The following configuration profile contains entries for all settings described 
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
+                    <true/>
+                </dict>
+                <key>edr</key>
+                <dict>
+                    <key>tags</key>
+                    <array>
+                        <dict>
+                            <key>key</key>
+                            <string>GROUP</string>
+                            <key>value</key>
+                            <string>ExampleTag</string>
+                        </dict>
+                    </array>
                 </dict>
                 <key>userInterface</key>
                 <dict>
@@ -640,9 +740,20 @@ The following configuration profile contains entries for all settings described 
                 </dict>
             </dict>
         </array>
-    </dict>
-</plist>
 ```
+
+## Property list validation
+
+The property list must be a valid *.plist* file. This can be checked by executing:
+
+```bash
+plutil -lint com.microsoft.wdav.plist
+```
+```Output
+com.microsoft.wdav.plist: OK
+```
+
+If the file is well-formed, the above command outputs `OK` and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
 
 ## Configuration profile deployment
 
@@ -650,7 +761,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 ### JAMF deployment
 
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the .plist produced earlier.
+From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the *.plist* produced earlier.
 
 >[!CAUTION]
 >You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender ATP.

@@ -1,7 +1,7 @@
 ---
 title: Investigate Microsoft Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
-keywords: investigate, investigation, machines, machine, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
+keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -40,13 +40,13 @@ You'll also see a status of the automated investigation on the upper right corne
 
 ![Image of the alert page](images/atp-alert-view.png)
 
-The alert context tile shows the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
+The alert context tile shows the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the device or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
 
 For more information about managing alerts, see [Manage alerts](manage-alerts.md).
 
 The alert details page also shows the alert process tree, an incident graph, and an artifact timeline.
 
-You can click on the machine link from the alert view to navigate to the machine. The alert will be highlighted automatically, and the timeline will display the appearance of the alert and its evidence in the **Machine timeline**. If the alert appeared more than once on the machine, the latest occurrence will be displayed in the **Machine timeline**.
+You can click on the device link from the alert view to navigate to the device. The alert will be highlighted automatically, and the timeline will display the appearance of the alert and its evidence in the **Device timeline**. If the alert appeared more than once on the device, the latest occurrence will be displayed in the **Device timeline**.
 
 Alerts attributed to an adversary or actor display a colored tile with the actor's name.
 
@@ -68,7 +68,7 @@ The **Alert process tree** takes alert triage and investigation to the next leve
 The **Alert process tree** expands to display the execution path of the alert and related evidence that occurred around the same period. Items marked with a thunderbolt icon should be given priority during investigation.
 
 >[!NOTE]
->The alert process tree might not be available in some alerts.
+>The alert process tree might not show for some alerts, including alerts not triggered directly by process activity.
 
 Clicking in the circle immediately to the left of the indicator displays its details.
 
@@ -78,7 +78,7 @@ The alert details pane helps you take a deeper look at the details about the ale
 
 
 ## Incident graph
-The **Incident Graph**  provides a visual representation of the organizational footprint of the alert and its evidence: where the evidence that triggered the alert was observed on other machines. It provides a graphical mapping from the original machine and evidence expanding to show other machines in the organization where the triggering evidence was also observed.
+The **Incident Graph**  provides a visual representation of the organizational footprint of the alert and its evidence: where the evidence that triggered the alert was observed on other devices. It provides a graphical mapping from the original device and evidence expanding to show other devices in the organization where the triggering evidence was also observed.
 
 ![Image of the Incident graph](images/atp-incident-graph.png)
 
@@ -86,10 +86,10 @@ The **Incident Graph** supports expansion by File, Process, command line, or Des
 
 The **Incident Graph** expansion by destination IP Address, shows the organizational footprint of communications with this IP Address without having to change context by navigating to the IP Address page.
 
-You can click the full circles on the incident graph to expand the nodes and view the expansion to other machines where the matching criteria were observed.
+You can click the full circles on the incident graph to expand the nodes and view the expansion to other devices where the matching criteria were observed.
 
 ## Artifact timeline
-The **Artifact timeline** feature provides an additional view of the evidence that triggered the alert on the machine, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the machine. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the machine earlier - without triggering an alert.
+The **Artifact timeline** feature provides an additional view of the evidence that triggered the alert on the device, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the device. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the device earlier - without triggering an alert.
 
 ![Image of artifact timeline](images/atp-alert-timeline.png)
 
@@ -99,7 +99,7 @@ Selecting an alert detail brings up the **Details pane** where you'll be able to
 - [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)
+- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
 - [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender ATP](investigate-user.md)

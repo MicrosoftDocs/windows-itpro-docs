@@ -8,7 +8,6 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi
@@ -45,6 +44,7 @@ This section lists the error codes for Microsoft Windows Update.
 | 0x80243FFD |              `WU_E_NON_UI_MODE`             |                    Unable to show UI when in non-UI mode; WU client UI modules may not be installed.                     |
 | 0x80243FFE |     `WU_E_WUCLTUI_UNSUPPORTED_VERSION`      |                                 Unsupported version of WU client UI exported functions.                                  |
 | 0x80243FFF |          `WU_E_AUCLIENT_UNEXPECTED`         |                   There was a user interface error not covered by another `WU_E_AUCLIENT_*` error code.                  |
+| 0x8024043D |          `WU_E_SERVICEPROP_NOTAVAIL`         |                   The requested service property is not available.                  |
 
 ## Inventory errors
 

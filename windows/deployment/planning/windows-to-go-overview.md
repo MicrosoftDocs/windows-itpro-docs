@@ -1,6 +1,6 @@
 ---
 title: Windows To Go feature overview (Windows 10)
-description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
+description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that lets you create a workspace that can be booted from a USB-connected drive.
 ms.assetid: 9df82b03-acba-442c-801d-56db241f8d42
 ms.reviewer: 
 manager: laurawi
@@ -23,7 +23,7 @@ ms.topic: article
 - Windows 10
 
 > [!IMPORTANT]
-> Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
@@ -56,7 +56,7 @@ The applications that you want to use from the Windows To Go workspace should be
 
 ## <a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go
 
-Enterprises install Windows on a large group of computers either by using configuration management software (such as System Center Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
+Enterprises install Windows on a large group of computers either by using configuration management software (such as Microsoft Endpoint Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
 
 These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) to review deployment tools available.
 
@@ -92,9 +92,9 @@ As of the date of publication, the following are the USB drives currently certif
 > [!WARNING]
 > Using a USB drive that has not been certified is not supported.
 
-- IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
-- IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
-- IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://go.microsoft.com/fwlink/p/?LinkId=618718))
+- IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://www.kingston.com/support/technical/products?model=dtws))
+- IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://www.kingston.com/support/technical/products?model=dtws))
+- IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://www.kingston.com/support/technical/products?model=dtws))
 - Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
 - Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 

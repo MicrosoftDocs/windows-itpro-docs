@@ -61,7 +61,7 @@ People in your org can request license for apps that they need, or that others n
 
 ## Acquire apps
 **To acquire an app**  
-1. Sign in to http://businessstore.microsoft.com
+1. Sign in to https://businessstore.microsoft.com
 2. Select **Shop for my group**, or use Search to find an app. 
 3. Select the app you want to purchase. 
 4. On the product description page, choose your license type - either online or offline. 

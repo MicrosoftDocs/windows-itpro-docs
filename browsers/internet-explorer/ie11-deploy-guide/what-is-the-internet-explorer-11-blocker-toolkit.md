@@ -29,8 +29,8 @@ ms.date: 05/10/2018
 
 The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the **Automatic Updates** feature of Windows Update.
 
->[!IMPORTANT]
->The IE11 Blocker Toolkit does not stop users from manually installing IE11 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=327753). Also, even if you have installed previous versions of the toolkit before, like for Internet Explorer 10, you still need to install this version to prevent the installation of IE11.
+> [!IMPORTANT]
+> The IE11 Blocker Toolkit does not stop users from manually installing IE11 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=327753). Also, even if you have installed previous versions of the toolkit before, like for Internet Explorer 10, you still need to install this version to prevent the installation of IE11.
 
 ## Install the toolkit
 
@@ -69,13 +69,13 @@ If you use Automatic Updates in your company, but want to stop your users from a
 
 -   **Download and use the Internet Explorer 11 Blocker Toolkit.**  Includes a Group Policy template and a script that permanently blocks Internet Explorer 11 from being offered by Windows Update or Microsoft Update as a high-priority update. You can download this kit from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).
 
-    >[!NOTE]
+    > [!NOTE]
     >The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](https://docs.microsoft.com/internet-explorer/ie11-faq/faq-for-it-pros-ie11).
 
 -   **Use an update management solution to control update deployment.** If you already use an update management solution, like [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/?LinkID=276664), you should use that instead of the Internet Explorer Blocker Toolkit.
 
->[!NOTE]
->If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company.
+> [!NOTE]
+> If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company.
 
 
 ### Prevent automatic installation of Internet Explorer 11 with WSUS
@@ -90,13 +90,13 @@ Internet Explorer 11 will be released to WSUS as an Update Rollup package. There
 
 4.  Click the rule that automatically approves an update that is classified as Update Rollup, and then click **Edit.**
 
-    >[!NOTE]
-    >If you don’t see a rule like this, you most likely haven’t configured WSUS to automatically approve Update Rollups for installation. In this situation, you don’t have to do anything else.
+    > [!NOTE]
+    > If you don’t see a rule like this, you most likely haven’t configured WSUS to automatically approve Update Rollups for installation. In this situation, you don’t have to do anything else.
 
 5.  Click the **Update Rollups** property under the **Step 2: Edit the properties (click an underlined value)** section.
 
-    >[!NOTE]
-    >The properties for this rule will resemble the following:<ul><li>When an update is in Update Rollups</li><li>Approve the update for all computers</li></ul>
+    > [!NOTE]
+    > The properties for this rule will resemble the following:<ul><li>When an update is in Update Rollups</li><li>Approve the update for all computers</li></ul>
 
 6.  Clear the **Update Rollup** check box, and then click **OK**.
 
@@ -116,8 +116,8 @@ After the new Internet Explorer 11 package is available for download, you should
 
 6.  Check to make sure that Microsoft Internet Explorer 11 is listed as an unapproved update.
 
->[!NOTE]
->There may be multiple updates, depending on the imported language and operating system updates.
+> [!NOTE]
+> There may be multiple updates, depending on the imported language and operating system updates.
 
 ### Optional - Reset update rollups packages to auto-approve
 
@@ -135,8 +135,8 @@ After the new Internet Explorer 11 package is available for download, you should
 
 7.  Click **OK** to close the **Automatic Approvals** dialog box.
 
->[!NOTE]
->Because auto-approval rules are only evaluated when an update is first imported into WSUS, turning this rule back on after the Internet Explorer 11 update has been imported and synchronized to the server won’t cause this update to be auto-approved.
+> [!NOTE]
+> Because auto-approval rules are only evaluated when an update is first imported into WSUS, turning this rule back on after the Internet Explorer 11 update has been imported and synchronized to the server won’t cause this update to be auto-approved.
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: EnterpriseDesktopAppManagement CSP
-description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+description: The EnterpriseDesktopAppManagement CSP handles enterprise desktop application management tasks, such as installing or removing applications.
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
 ms.reviewer: 
 manager: dansimp

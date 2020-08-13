@@ -3,9 +3,7 @@ title: Manage additional Windows Update settings (Windows 10)
 description: Additional settings to control the behavior of Windows Update (WU) in Windows 10
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 author: jaimeo
@@ -26,16 +24,13 @@ ms.topic: article
 
 You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
 
->[!IMPORTANT]
->In Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported on this platform.
-
 ## Summary of Windows Update settings
 
 | Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
 | [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
 | [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
-| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | | All |
+| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
 | [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | All |
 | [Enable client-side targeting](#enable-client-side-targeting) | | All |
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
@@ -112,7 +107,7 @@ Use **Computer Configuration\Administrative Templates\Windows Components\Windows
 
 ### Enable client-side targeting
 
-Specifies the target group name or names that should be used to receive updates from an intranet Microsoft update service. This allows admins to configure device groups that will receive different updates from sources like WSUS or SCCM.
+Specifies the target group name or names that should be used to receive updates from an intranet Microsoft update service. This allows admins to configure device groups that will receive different updates from sources like WSUS or Configuration Manager.
 
 This Group Policy setting can be found under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Enable client-side targeting**.
 If the setting is set to **Enabled**, the specified target group information is sent to the intranet Microsoft update service which uses it to determine which updates should be deployed to this computer.

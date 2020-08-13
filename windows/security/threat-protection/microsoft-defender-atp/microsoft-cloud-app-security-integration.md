@@ -1,7 +1,7 @@
 ---
 title: Microsoft Cloud App Security integration overview
 ms.reviewer: 
-description: Microsoft Defender ATP integrates with Cloud App Security by collecting and forwarding all cloud app networking activities, providing unparalleled visibility to cloud app usage
+description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) integrates with Cloud App Security by forwarding all cloud app networking activities.
 keywords: cloud, app, networking, visibility, usage
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,11 +28,14 @@ ms.date: 10/18/2018
 Microsoft Cloud App Security (Cloud App Security) is a comprehensive solution that gives visibility into cloud apps and services by allowing you to control and limit access to cloud apps, while enforcing compliance requirements on data stored in the cloud. For more information, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
 >[!NOTE]
->This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10 version 1809 or later.
+>This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10 version 1809 or later.
 
 ## Microsoft Defender ATP and Cloud App Security integration 
 
 Cloud App Security discovery relies on cloud traffic logs being forwarded to it from enterprise firewall and proxy servers. Microsoft Defender ATP integrates with Cloud App Security by collecting and forwarding all cloud app networking activities, providing unparalleled visibility to cloud app usage. The monitoring functionality is built into the device, providing complete coverage of network activity.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yQ]
+
 
 The integration provides the following major improvements to the existing Cloud App Security discovery: 
 

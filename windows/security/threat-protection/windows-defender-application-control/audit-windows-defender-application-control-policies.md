@@ -1,7 +1,7 @@
 ---
 title: Audit Windows Defender Application Control policies (Windows 10)
 description: Audits allow admins to discover apps that were missed during an initial policy scan and to identify new apps that were installed since the policy was created.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -40,7 +40,7 @@ Before you begin this process, you need to create a WDAC policy binary file. If 
    > 
    > - An alternative method to test a policy is to rename the test file to SIPolicy.p7b and drop it into C:\\Windows\\System32\\CodeIntegrity, rather than deploy it by using the Local Group Policy Editor.
     
-3. Navigate to **Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
+3. Navigate to **Computer Configuration\\Administrative Templates\\System\\Device Guard**, and then select **Deploy Windows Defender Application Control**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
 
    > [!Note]
    > 

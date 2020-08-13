@@ -1,6 +1,6 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
-description: Prepare your organization for Windows To Go
+description: Though Windows To Go is no longer being developed, you can find info here about the the “what”, “why”, and “when” of deployment.
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
 ms.reviewer: 
 manager: laurawi
@@ -22,8 +22,8 @@ ms.topic: article
 
 -   Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the “what”, “why”, and “when” questions an IT professional might have when planning to deploy Windows To Go.
 
@@ -55,7 +55,7 @@ The following scenarios are examples of situations in which Windows To Go worksp
 
 -   **Managed free seating.** The employee is issued a Windows To Go drive that is then used with the host computer assigned to that employee for a given session (this could be a vehicle, workspace, or standalone laptop). When the employee leaves the session, the next time they return they use the same USB flash drive but use a different host computer.
 
--   **Work from home.** In this situation, the Windows To Go drive can be provisioned for employees using various methods including System Center Configuration Manager or other deployment tools and then distributed to employees. The employee is instructed to boot the Windows To Go drive initially at work, which caches the employee’s credentials on the Windows To Go workspace and allows the initial data synchronization between the enterprise network and the Windows To Go workspace. The user can then bring the Windows To Go drive home where it can be used with their home computer, with or without enterprise network connectivity.
+-   **Work from home.** In this situation, the Windows To Go drive can be provisioned for employees using various methods including Microsoft Endpoint Configuration Manager or other deployment tools and then distributed to employees. The employee is instructed to boot the Windows To Go drive initially at work, which caches the employee’s credentials on the Windows To Go workspace and allows the initial data synchronization between the enterprise network and the Windows To Go workspace. The user can then bring the Windows To Go drive home where it can be used with their home computer, with or without enterprise network connectivity.
 
 -   **Travel lightly.** In this situation you have employees who are moving from site to site, but who always will have access to a compatible host computer on site. Using Windows To Go workspaces allows them to travel without the need to pack their PC.
 
@@ -74,7 +74,7 @@ Because Windows To Go requires no additional software and minimal configuration,
 
 Windows To Go uses volume activation. You can use either Active Directory-based activation or KMS activation with Windows To Go. The Windows To Go workspace counts as another installation when assessing compliance with application licensing agreements.
 
-Microsoft software, such as Microsoft Office, distributed to a Windows To Go workspace must also be activated. Office deployment is fully supported on Windows To Go. Please note, due to the retail subscription activation method associated with Office 365 ProPlus, Office 365 ProPlus subscribers are provided volume licensing activation rights for Office Professional Plus 2013 MSI for local installation on the Windows To Go drive. This is available to organizations who purchase Office 365 ProPlus or Office 365 Enterprise SKUs containing Office 365 ProPlus via volume licensing channels. For more information about activating Microsoft Office, see [Volume activation methods in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=618922).
+Microsoft software, such as Microsoft Office, distributed to a Windows To Go workspace must also be activated. Office deployment is fully supported on Windows To Go. Please note, due to the retail subscription activation method associated with Microsoft 365 Apps for enterprise, Microsoft 365 Apps for enterprise subscribers are provided volume licensing activation rights for Office Professional Plus 2013 MSI for local installation on the Windows To Go drive. This is available to organizations who purchase Microsoft 365 Apps for enterprise or Office 365 Enterprise SKUs containing Microsoft 365 Apps for enterprise via volume licensing channels. For more information about activating Microsoft Office, see [Volume activation methods in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=618922).
 
 You should investigate other software manufacturer’s licensing requirements to ensure they are compatible with roaming usage before deploying them to a Windows To Go workspace.
 

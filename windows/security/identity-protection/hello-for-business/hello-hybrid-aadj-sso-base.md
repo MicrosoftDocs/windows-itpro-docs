@@ -1,6 +1,6 @@
 ---
 title: Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
-description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
+description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -33,6 +33,7 @@ Before adding Azure Active Directory (Azure AD) joined devices to your existing 
 - Certificate Revocation List (CRL) Distribution Point (CDP)
 - 2016 Domain Controllers
 - Domain Controller certificate
+- Network infrastructure in place to reach your on-premises domain controller. If the machines are external, this can be achieved using any VPN solution.
 
 ### Azure Active Directory Connect synchronization
 Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
@@ -57,6 +58,9 @@ The preceding domain controller certificate shows a CRL distribution path (CDP) 
 To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
+
+> [!NOTE]
+> If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
 
 ### Windows Server 2016 Domain Controllers
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
@@ -150,6 +154,9 @@ These procedures configure NTFS and share permissions on the web server to allow
 8. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
+
+> [!Tip]
+> Make sure that users can access **\\\Server FQDN\sharename**.
 
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
@@ -287,6 +294,8 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
+> [!NOTE]
+> After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
 
 ## Configure Windows Hello for Business Device Enrollment
 
@@ -322,6 +331,9 @@ Sign-in a workstation with access equivalent to a _domain user_.
 14. Click **Save**
 15. Sign-out of the Azure portal.
 
+> [!IMPORTANT]
+> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
+
 ## Section Review
 > [!div class="checklist"]
 > * Configure Internet Information Services to host CRL distribution point
@@ -335,6 +347,3 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  
-
-
-

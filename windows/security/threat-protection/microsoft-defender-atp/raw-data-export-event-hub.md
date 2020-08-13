@@ -63,6 +63,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 - Each event hub message in Azure Event Hubs contains list of records.
 - Each record contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
 - For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
 
@@ -78,7 +79,7 @@ To get the data types for event properties do the following:
 
 ```
 
-- Here is an example for Machine Info event: 
+- Here is an example for Device Info event: 
 
 ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 

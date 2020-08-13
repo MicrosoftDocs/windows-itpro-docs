@@ -1,13 +1,12 @@
 ---
 title: Troubleshoot problems with attack surface reduction rules
-description: Check prerequisites, use audit mode, add exclusions, or collect diagnostic data to help troubleshoot issues
-keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking
+description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender atp, microsoft defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
@@ -46,9 +45,9 @@ Attack surface reduction rules will only work on devices with the following cond
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 
-- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
-- [Real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) is enabled.
+- [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
 
 - Audit mode is not enabled. Use Group Policy to set the rule to **Disabled** (value: **0**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Application Compatibility Toolkit (ACT) Technical Reference (Windows 10)
-description: The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system.
+description: The Microsoft Application Compatibility Toolkit (ACT) helps you see if the apps and devices in your org are compatible with different versions of Windows.
 ms.assetid: d90d38b2-2718-4481-90eb-4480719627ba
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -33,7 +34,7 @@ Use Windows Analytics to get:
 - Guidance and insights into application and driver compatibility issues, with suggested fixes 
 - Data driven application rationalization tools
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools, including System Center Configuration Manager
+- Data export to commonly used software deployment tools, including Microsoft Endpoint Configuration Manager
 
 The Windows Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 

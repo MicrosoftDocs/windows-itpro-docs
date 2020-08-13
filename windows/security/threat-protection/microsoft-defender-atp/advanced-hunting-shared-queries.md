@@ -1,7 +1,7 @@
 ---
-title: Use shared queries in Advanced hunting
+title: Use shared queries in advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,10 +15,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2019
 ---
 
-# Use shared queries in Advanced hunting
+# Use shared queries in advanced hunting
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -53,11 +52,14 @@ You can save a new or existing query so that it is only accessible to you or sha
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
+## Create a direct link to a query
+To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.
+
 ## Access queries in the GitHub repository  
-Microsoft security researchers regularly share Advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 
+Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 
 
 >[!TIP]
->Microsoft security researchers also provide Advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](threat-analytics.md) reports in Microsoft Defender Security Center.
+>Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](threat-analytics.md) reports in Microsoft Defender Security Center.
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

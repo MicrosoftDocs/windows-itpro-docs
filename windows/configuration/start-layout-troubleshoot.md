@@ -7,7 +7,6 @@ ms.sitesec: library
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 12/03/18
 ms.reviewer: 
 manager: dansimp
 ms.topic: troubleshooting
@@ -33,8 +32,6 @@ When troubleshooting basic Start issues (and for the most part, all other Window
 - Did the issue start immediately after an update? Ways to check:
   - Powershell:[System.Environment]::OSVersion.Version
   - WinVer from CMD.exe
-
-
 
 ### Check if Start is installed
 
@@ -65,7 +62,6 @@ If it is installed but not running, test booting into safe mode or use MSCONFIG 
   - Run `test-path "$env:windir\panther\miglog.xml"`
   - If that file does not exist, the system is a clean install.
 - Upgrade issues can be found by running `test-path "$env:windir\panther\miglog.xml"`
-
 
 ### Check if Start is registered or activated
 

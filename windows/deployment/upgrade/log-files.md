@@ -35,7 +35,7 @@ The following table describes some log files and how to use them for troubleshoo
 <br>
 
 <table>
-<tr><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Log file</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>When to use</td>
 <tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
 <td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
 <tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>
@@ -52,7 +52,7 @@ setupapi.dev.log<br>
 Event logs (*.evtx)</td>
 <td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
 <td>
-Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<br>
+Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>
 Setupapi: Device install issues - 0x30018<br>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 </table>

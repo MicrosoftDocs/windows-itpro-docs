@@ -6,12 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+author: greg-lindsay
 ms.date: 08/18/2017
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-audience: itproauthor: greg-lindsay
+audience: itpro
 ms.topic: article
 ---
 
@@ -44,7 +44,7 @@ Yes, a 90-day evaluation of Windows 10 Enterprise is available through the [Tech
 For many devices, drivers will be automatically installed in Windows 10 and there will be no need for additional action.
 - For some devices, Windows 10 may be unable to install drivers that are required for operation. If your device drivers are not automatically installed, visit the manufacturer’s support website for your device to download and manually install the drivers. If Windows 10 drivers are not available, the most up-to-date drivers for Windows 8.1 will often work in Windows 10.
 - For some devices, the manufacturer may provide more up-to-date drivers or drivers that enable additional functionality than the drivers installed by Windows 10. Always follow the recommendations of the device manufacturer for optimal performance and stability.
-- Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft System Center Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
+- Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
     - [HP driver pack](http://www8.hp.com/us/en/ads/clientmanagement/drivers-pack.html)
     - [Dell driver packs for enterprise client OS deployment](http://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
     - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/documents/ht074984)
@@ -64,12 +64,12 @@ Many existing Win32 and Win64 applications already run reliably on Windows 10 wi
 
 Updated versions of Microsoft deployment tools, including MDT, Configuration Manager, and the Windows Assessment and Deployment Kit (Windows ADK) have been released to support Windows 10.
 - [MDT](https://www.microsoft.com/mdt) is Microsoft’s recommended collection of tools, processes, and guidance for automating desktop and server deployment.
-- Configuration Manager simplifies the deployment and management of Windows 10. If you are not currently using Configuration Manager, you can download a free 180-day trial of [System Center Configuration Manager and Endpoint Protection (current branch)](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) from the TechNet Evaluation Center.
+- Configuration Manager simplifies the deployment and management of Windows 10. If you are not currently using Configuration Manager, you can download a free 180-day trial of [Microsoft Endpoint Configuration Manager and Endpoint Protection (current branch)](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) from the TechNet Evaluation Center.
 - The [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) has tools that allow you to customize Windows images for large-scale deployment, and test system quality and performance. You can download the latest version of the Windows ADK for Windows 10 from the Hardware Dev Center.
 
 ### Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
 
-Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with System Center Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
+Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
 
 ### Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
 
@@ -97,7 +97,7 @@ There are many tools are available. You can choose from these:
 - Windows Update
 - Windows Update for Business
 - Windows Server Update Services
-- System Center Configuration Manager
+- Microsoft Endpoint Configuration Manager
 
 For more information on pros and cons for these tools, see [Servicing Tools](/windows/deployment/update/waas-overview#servicing-tools).
 

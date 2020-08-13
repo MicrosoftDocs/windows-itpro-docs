@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get alert related user information API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Retrieves the user associated to a specific alert.
+
+## API description
+Retrieves the User related to a specific alert.
+
+
+## Limitations
+1. You can query on alerts last updated according to your configured retention period.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -35,7 +43,7 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -80,13 +88,16 @@ Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
     "id": "contoso\\user1",
-    "firstSeen": "2018-08-02T00:00:00Z",
-    "lastSeen": "2018-08-04T00:00:00Z",
-    "mostPrevalentMachineId": null,
-    "leastPrevalentMachineId": null,
+    "accountName": "user1",
+    "accountDomain": "contoso",
+    "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
+    "firstSeen": "2019-12-08T06:33:39Z",
+    "lastSeen": "2020-01-05T06:58:34Z",
+    "mostPrevalentMachineId": "0111b647235c26159bec3e5eb6c8c3a0cc3ab766",
+    "leastPrevalentMachineId": "0111b647235c26159bec3e5eb6c8c3a0cc3ab766",
     "logonTypes": "Network",
-    "logOnMachinesCount": 3,
+    "logOnMachinesCount": 1,
     "isDomainAdmin": false,
-    "isOnlyNetworkUser": null
+    "isOnlyNetworkUser": false
 }
 ```

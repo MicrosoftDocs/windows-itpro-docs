@@ -1,6 +1,6 @@
 ---
 title: Document your AppLocker rules (Windows 10)
-description: Learn how to document your Applocker rules with this planning guide. Associate rule conditions with files, permissions, rule source, and implementation.
+description: Learn how to document your AppLocker rules and associate rule conditions with files, permissions, rule source, and implementation.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
 ms.reviewer: 
 ms.author: dansimp
@@ -23,7 +23,7 @@ ms.date: 09/21/2017
 - Windows 10
 - Windows Server
 
-This topic describes what rule conditions to associate with each file, how to associate the rule conditions with each file, the source of the rule, and whether the file should be included or excluded.
+This topic describes what AppLocker rule conditions to associate with each file, how to associate these rule conditions, the source of the rule, and whether the file should be included or excluded.
 
 ## Record your findings
 
@@ -119,9 +119,10 @@ The following table details sample data for documenting rule type and rule condi
 </tbody>
 </table>
  
+
 ## Next steps
 
-For each rule, determine whether to use the allow or deny option. Then, three tasks remain:
+For each rule, determine whether to use the allow or deny option, and then complete the following tasks:
 
 -   [Determine Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
