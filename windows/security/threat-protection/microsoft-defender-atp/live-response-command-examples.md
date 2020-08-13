@@ -1,6 +1,6 @@
 ---
 title: Live response command examples
-description: Learn about common commands and see examples on how it's used
+description: Learn about common commands used in live response and see examples on how the commands are typically used.
 keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,6 +1,6 @@
 ---
 title: Change history for Application management in Windows 10 (Windows 10)
-description: This topic lists changes to documentation for configuring Windows 10.
+description: Learn about the new and updated topics in the Configure Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage
