@@ -55,8 +55,8 @@
 
 
 ## [Deployment guide]()
-#### [Planning to Deploy](planning-to-deploy-windows-firewall-with-advanced-security.md)
-#### [Implementing Your Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
+### [Planning to Deploy](planning-to-deploy-windows-firewall-with-advanced-security.md)
+### [Implementing Your Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
 
 
 
