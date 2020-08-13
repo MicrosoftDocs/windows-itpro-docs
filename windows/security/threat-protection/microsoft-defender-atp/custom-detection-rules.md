@@ -1,5 +1,5 @@
 ---
-title: Create detection rules in Microsoft Defender ATP
+title: Create custom detection rules in Microsoft Defender ATP
 ms.reviewer: 
 description: Learn how to create custom detection rules based on advanced hunting queries
 keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
