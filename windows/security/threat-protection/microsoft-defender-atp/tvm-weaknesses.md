@@ -27,7 +27,7 @@ ms.topic: conceptual
 
 Threat and vulnerability management uses the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
-The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID, the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
+The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization by listing the Common Vulnerabilities and Exposures (CVE) ID. You can also view the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
@@ -52,13 +52,13 @@ Go to the threat and vulnerability management navigation menu and select **Weakn
 1. Go to the global search drop-down menu.
 2. Select **Vulnerability** and key-in the Common Vulnerabilities and Exposures (CVE) ID that you're looking for, then select the search icon. The **Weaknesses** page opens with the CVE information that you're looking for.
 ![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
-3. Select the CVE and a flyout panel opens up with more information, including the vulnerability description, details, threat insights, and exposed devices.
+3. Select the CVE to open a flyout panel with more information, including the vulnerability description, details, threat insights, and exposed devices.
 
 To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then select search.
 
 ## Weaknesses overview
 
-If exposed devices exist, the next step is to remediate the vulnerabilities in those devices to reduce the risk to your assets and organization. If the **Exposed Devices** column shows 0, that means you are not at risk.
+Remediate the vulnerabilities in exposed devices to reduce the risk to your assets and organization. If the **Exposed Devices** column shows 0, that means you aren't at risk.
 
 ![Weaknesses landing page.](images/tvm-weaknesses-overview.png)
 
@@ -69,10 +69,10 @@ View related breach and threat insights in the **Threat** column when the icons 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
 
-The breach insights icon is highlighted if there is a vulnerability found in your organization.
+The breach insights icon is highlighted if there's a vulnerability found in your organization.
 ![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
 
-The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit or connected to specific advanced persistent campaigns or activity groups. Threat Analytics report links are provided that you can read with zero-day exploitation news, disclosures, or related security advisories.  
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there is a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
 
 ![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
@@ -88,11 +88,11 @@ The "OS Feature" category is shown in relevant scenarios.
 
 ### Top vulnerable software in the dashboard
 
-1. Go to the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time.
+1. Go to the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software, along with threat information and a high-level view of device exposure over time.
 
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
-2. Select the software you want to investigate to go to a drill down page.
+2. Select the software you want to investigate to go to a drilldown page.
 3. Select the **Discovered vulnerabilities** tab.
 4. Select the vulnerability you want to investigate for more information on vulnerability details
 
@@ -116,19 +116,19 @@ View related weaknesses information in the device page.
 
 #### CVE Detection logic
 
-Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. This is a new section called "Detection Logic" (in any discovered vulnerability in the device page) that shows the detection logic and source.
+Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. The new section is called "Detection Logic" (in any discovered vulnerability in the device page) and shows the detection logic and source.
 
-The "OS Feature" category is also shown in relevant scenarios. For example, a CVE affects devices that run a vulnerable OS, only if a specific OS component is enabled on these devices. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll attach this CVE only to the Windows Server 2019 devices with DNS capability enabled in their OS.
+The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll only attach this CVE to the Windows Server 2019 devices with the DNS capability enabled in their OS.
 
 ![Detection Logic example which lists the software detected on the device and the KBs.](images/tvm-cve-detection-logic.png)
 
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated security recommendation information.
+Report a false positive when you see any vague, inaccurate, or incomplete information. You can also report on security recommendations that have already been remediated.
 
 1. Open the CVE on the Weaknesses page.
-2. Select **Report inaccuracy**.
-3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details regarding the inaccuracy.
+2. Select **Report inaccuracy** and a flyout pane will open.
+3. Select the inaccuracy category from the drop-down menu and fill in your email address and inaccuracy details.
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related topics
