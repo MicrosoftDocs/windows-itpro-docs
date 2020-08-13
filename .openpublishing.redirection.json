@@ -6213,27 +6213,27 @@
     {
       "source_path": "devices/surface/surface-diagnostic-toolkit.md",
       "redirect_url": "https://docs.microsoft.com/surface/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
       "redirect_url": "https://docs.microsoft.com/surface/indexdevices/surface/update",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
       "redirect_url": "https://docs.microsoft.com/surface-hub/finishing-your-surface-hub-meeting",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",
