@@ -3,7 +3,6 @@ title: Memory integrity
 keywords: mitigations, vulnerabilities, vulnerability, mitigation, exploit, exploits, emet
 description: Memory integrity.
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

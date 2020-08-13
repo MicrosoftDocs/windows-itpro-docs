@@ -3,7 +3,6 @@ title: Schedule regular quick and full scans with Microsoft Defender AV
 description: Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 keywords: quick scan, full scan, quick vs full, schedule scan, daily, weekly, time, scheduled, recurring, regular
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -4,7 +4,6 @@ description: Learn how unenlightened and enlightened apps might behave, based on
 keywords: WIP, Enterprise Data Protection, EDP, Windows Information Protection, unenlightened apps, enlightened apps
 ms.prod: w10
 ms.mktglfcycl: explore
-ms.pagetype: security
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium

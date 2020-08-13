@@ -1022,7 +1022,6 @@ The XML below is for Windows 10, version 1803.
                 <DFProperties>
                   <AccessType>
                     <Add />
-                    <Delete />
                     <Get />
                     <Replace />
                   </AccessType>

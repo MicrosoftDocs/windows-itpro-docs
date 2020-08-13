@@ -12,7 +12,6 @@ ms.audience: itpro
 author: greg-lindsay
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
