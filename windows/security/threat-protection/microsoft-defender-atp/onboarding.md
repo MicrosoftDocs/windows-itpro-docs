@@ -219,8 +219,8 @@ Follow the steps below to identify the Microsoft Defender ATP Workspace ID and W
 
 Once completed, you should see onboarded endpoints in the portal within an hour.
 
-## Next generation protection 
-Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
+## next-generation protection 
+Microsoft Defender Antivirus is a built-in antimalware solution that provides next-generation protection for desktops, portable computers, and servers.
 
 1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
@@ -228,7 +228,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 
 2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.
 
-    ![Image of next generation protection pane](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
+    ![Image of next-generation protection pane](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
 
     In certain industries or some select enterprise customers might have specific
 needs on how Antivirus is configured.
@@ -239,29 +239,29 @@ needs on how Antivirus is configured.
     For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     
-    ![Image of next generation protection pane](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
+    ![Image of next-generation protection pane](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
-    ![Image of next generation protection pane](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+    ![Image of next-generation protection pane](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
 
-    ![Image of next generation protection pane](images/a28afc02c1940d5220b233640364970c.png)
+    ![Image of next-generation protection pane](images/a28afc02c1940d5220b233640364970c.png)
 
-    ![Image of next generation protection pane](images/5420a8790c550f39f189830775a6d4c9.png)
+    ![Image of next-generation protection pane](images/5420a8790c550f39f189830775a6d4c9.png)
 
-    ![Image of next generation protection pane](images/33f08a38f2f4dd12a364f8eac95e8c6b.png)
+    ![Image of next-generation protection pane](images/33f08a38f2f4dd12a364f8eac95e8c6b.png)
 
-    ![Image of next generation protection pane](images/41b9a023bc96364062c2041a8f5c344e.png)
+    ![Image of next-generation protection pane](images/41b9a023bc96364062c2041a8f5c344e.png)
 
-    ![Image of next generation protection pane](images/945c9c5d66797037c3caeaa5c19f135c.png)
+    ![Image of next-generation protection pane](images/945c9c5d66797037c3caeaa5c19f135c.png)
 
-    ![Image of next generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
+    ![Image of next-generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
 
 3. Right-click on the newly created antimalware policy and select **Deploy**.
 
-    ![Image of next generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
+    ![Image of next-generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
 4. Target the new antimalware policy to your Windows 10 collection and click **OK**.
 
-     ![Image of next generation protection pane](images/configmgr-select-collection.png)
+     ![Image of next-generation protection pane](images/configmgr-select-collection.png)
 
 After completing this task, you now have successfully configured Windows
 Defender Antivirus.

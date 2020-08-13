@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/06/2018
 ---
 
 # Onboard Windows 10 devices using Mobile Device Management tools
@@ -50,6 +49,8 @@ For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedTh
 
 >[!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
+
+
 
 ## Offboard and monitor devices using Mobile Device Management tools
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.

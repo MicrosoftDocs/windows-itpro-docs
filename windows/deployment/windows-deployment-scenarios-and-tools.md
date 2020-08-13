@@ -11,7 +11,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
