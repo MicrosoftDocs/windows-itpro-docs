@@ -78,7 +78,7 @@ Enable network protection by using any of these methods:
 
 5. Select **OK** to save each open section and **Create**.
 
-6. Select the profile **Assignments**, assign to **All Users & All Devices**, and **Save**.
+6. Select the profile called **Assignments**, assign to **All Users & All Devices**, and **Save**.
 
 ### Mobile Device Management (MMD)
 

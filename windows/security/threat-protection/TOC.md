@@ -82,6 +82,7 @@
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
+##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
 
 
 #### [Network protection]()
@@ -100,6 +101,7 @@
 #### [Controlled folder access]()
 ##### [Protect folders](microsoft-defender-atp/controlled-folders.md)
 ##### [Controlled folder access evaluation](microsoft-defender-atp/evaluate-controlled-folder-access.md)
+##### [Enable controlled folder access](microsoft-defender-atp/enable-controlled-folders.md)
 
 
 
@@ -457,7 +459,7 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
-
+### [Use audit mode](microsoft-defender-atp/audit-windows-defender)
 
 ## Reference
 ### [Management and APIs]()

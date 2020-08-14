@@ -861,6 +861,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection-exploit-guard",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction",
       "redirect_document_id": true
@@ -1433,6 +1438,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
       "redirect_document_id": true
     },
     {
