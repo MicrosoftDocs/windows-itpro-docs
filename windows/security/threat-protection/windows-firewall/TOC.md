@@ -163,7 +163,7 @@
 
 
 ## [Troubleshooting]()
-
+### [Troubleshooting UWP App Connectivity Issues in Windows Firewall](troubleshooting-uwp-firewall.md)
 
 
 
