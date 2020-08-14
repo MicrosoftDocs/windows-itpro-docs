@@ -35,6 +35,18 @@ Your score for devices is visible in the [threat and vulnerability management da
 
 Select a category to go to the [**Security recommendations**](tvm-security-recommendation.md) page and view the relevant recommendations.
 
+## Turn on the Microsoft Secure Score connector
+
+Forward Microsoft Defender ATP signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+
+Changes might take up to a few hours to reflect in the dashboard.
+
+1. In the navigation pane, go to **Settings** > **Advanced features** 
+
+2. Scroll down to **Microsoft Secure Score** and toggle the setting to **On**.
+
+3. Select **Save preferences**.
+
 ## How it works
 
 >[!NOTE]
