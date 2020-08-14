@@ -211,9 +211,9 @@ Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equ
 
 If the template was changed successfully, the output of the command will contain old and new values of the template parameters. The new value must contain the **CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY** parameter. Example:
 
+```console
 CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=[yourdomain]:WHFBAuthentication
 
-```console
 Old Value:
 msPKI-Private-Key-Flag REG_DWORD = 5050080 (84213888)
 CTPRIVATEKEY_FLAG_REQUIRE_SAME_KEY_RENEWAL -- 80 (128)
