@@ -1,10 +1,8 @@
 ---
-ms.reviewer: 
-title: Import custom views to see attack surface reduction events
-description: Use Windows Event Viewer to import individual views for each of the features.
+title: View attack surface reduction events
+description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 03/26/2019
+ms.reviewer: 
 manager: dansimp
 ---
 
@@ -129,7 +127,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 ## List of attack surface reduction events
 
-All attack surface reductiond events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
+All attack surface reduction events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
 
 You can access these events in Windows Event viewer:
 

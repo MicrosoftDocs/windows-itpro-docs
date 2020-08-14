@@ -49,7 +49,7 @@
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
-#### [Attack surface reduction evaluation](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
+#### [Evaluate attack surface reduction rules](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](microsoft-defender-atp/attack-surface-reduction-faq.md)
 
@@ -57,6 +57,7 @@
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
 ##### [Enable attack surface reduction rules](microsoft-defender-atp/enable-attack-surface-reduction.md)
 ##### [Customize attack surface reduction rules](microsoft-defender-atp/customize-attack-surface-reduction.md)
+##### [View attack surface reduction events](microsoft-defender-atp/event-views.md)
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
@@ -82,12 +83,14 @@
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
+##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+##### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 
 
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
-##### [Network protection evaluation](microsoft-defender-atp/evaluate-network-protection.md)
-##### [Enable network protection](microsoft-defender-atp/enable-network-protection.md)
+##### [Evaluate network protection](microsoft-defender-atp/evaluate-network-protection.md)
+##### [Turning on network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
@@ -99,7 +102,9 @@
  
 #### [Controlled folder access]()
 ##### [Protect folders](microsoft-defender-atp/controlled-folders.md)
-##### [Controlled folder access evaluation](microsoft-defender-atp/evaluate-controlled-folder-access.md)
+##### [Evaluate controlled folder access](microsoft-defender-atp/evaluate-controlled-folder-access.md)
+##### [Enable controlled folder access](microsoft-defender-atp/enable-controlled-folders.md)
+##### [Customize controlled folder access](microsoft-defender-atp/customize-controlled-folders.md)
 
 
 
@@ -338,8 +343,9 @@
 
 
 #### [Custom detections]()
-##### [Understand custom detections](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create and manage detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
+##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
 
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
@@ -456,7 +462,7 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
-
+### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
 ### [Management and APIs]()

@@ -3,7 +3,6 @@ title: Evaluate Microsoft Defender Antivirus
 description: Businesses of all sizes can use this guide to evaluate and test the protection offered by Microsoft Defender Antivirus in Windows 10.
 keywords: Microsoft Defender Antivirus, cloud protection, cloud, antimalware, security, defender, evaluate, test, protection, compare, real-time protection
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
