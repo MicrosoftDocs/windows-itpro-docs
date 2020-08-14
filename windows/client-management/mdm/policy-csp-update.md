@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - Update
-description: Policy CSP - Update
+description: Manage a range of active hours for when update reboots are not scheduled.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/04/2019
+ms.date: 02/10/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -193,6 +193,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd> 
+    <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
   </dd>
   <dd>
     <a href="#update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
@@ -3253,7 +3256,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
+> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
@@ -4131,6 +4134,74 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="update-targetreleaseversion"></a>**Update/TargetReleaseVersion**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select the target Feature Update version*
+-   GP name: *TargetReleaseVersion*
+-   GP element: *TargetReleaseVersionId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Value type is a string containing Windows 10 version number. For example, 1809, 1903.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
 
 <!--SupportedSKUs-->
@@ -4371,11 +4442,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
+
 <!--/Policies-->
 

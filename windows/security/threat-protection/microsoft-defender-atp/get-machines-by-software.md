@@ -1,7 +1,7 @@
 ---
-title: List machines by software
-description: Retrieve a list of machines that has this software installed.
-keywords: apis, graph api, supported apis, get, list machines, machines list, list machines by software, mdatp tvm api
+title: List devices by software
+description: Retrieve a list of devices that has this software installed.
+keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# List machines by software
+# List devices by software
 
 **Applies to:**
 
@@ -24,7 +24,7 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieve a list of machine references that has this software installed.
+Retrieve a list of device references that has this software installed.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
@@ -49,7 +49,7 @@ GET /api/Software/{Id}/machineReferences
 Empty
 
 ## Response
-If successful, this method returns 200 OK and a list of machines with the software installed in the body. 
+If successful, this method returns 200 OK and a list of devices with the software installed in the body. 
 
 
 ## Example

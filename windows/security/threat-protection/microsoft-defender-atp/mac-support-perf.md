@@ -37,12 +37,12 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender ATP for Mac and navigate to **Manage settings**.
 
-    ![Manage real-time protection screenshot](../windows-defender-antivirus/images/mdatp-36-rtp.png)
+    ![Manage real-time protection screenshot](../microsoft-defender-antivirus/images/mdatp-36-rtp.png)
 
     - From the Terminal. For security purposes, this operation requires elevation.
 
     ```bash
-    $ mdatp --config realTimeProtectionEnabled false
+    mdatp --config realTimeProtectionEnabled false
     ```
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).

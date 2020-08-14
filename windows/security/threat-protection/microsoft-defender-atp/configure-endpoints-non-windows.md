@@ -1,7 +1,7 @@
 ---
-title: Onboard non-Windows machines to the Microsoft Defender ATP service
-description: Configure non-Windows machines so that they can send sensor data to the Microsoft Defender ATP service.
-keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines
+title: Onboard non-Windows devices to the Microsoft Defender ATP service
+description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender ATP service.
+keywords: onboard non-Windows devices, macos, linux, device management, configure Windows ATP devices, configure Microsoft Defender Advanced Threat Protection devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard non-Windows machines
+# Onboard non-Windows devices
 
 **Applies to:**
 
@@ -29,14 +29,16 @@ ms.topic: article
 
 Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. 
 
-You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
+You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. For more information, see:
+- [Microsoft Defender ATP for Linux system requirements](microsoft-defender-atp-linux.md#system-requirements)  
+- [Microsoft Defender ATP for Mac system requirements](microsoft-defender-atp-mac.md#system-requirements).
 
-## Onboarding non-Windows machines
-You'll need to take the following steps to onboard non-Windows machines:
+## Onboarding non-Windows devices
+You'll need to take the following steps to onboard non-Windows devices:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac).
-   - For other non-Windows devices choose **Onboard non-Windows machines through third-party integration**.   
+   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-atp-mac).
+   - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
        
      1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
 
@@ -49,7 +51,7 @@ You'll need to take the following steps to onboard non-Windows machines:
         
 2. Run a detection test by following the instructions of the third-party solution.
 
-## Offboard non-Windows machines
+## Offboard non-Windows devices
 
 1. Follow the third-party's documentation to disconnect the third-party solution from Microsoft Defender ATP.
 
@@ -61,7 +63,7 @@ You'll need to take the following steps to onboard non-Windows machines:
 
 
 ## Related topics
-- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshooting Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

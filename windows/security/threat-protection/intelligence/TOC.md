@@ -2,10 +2,6 @@
 
 ## [Understand malware & other threats](understanding-malware.md)
 
-### [Prevent malware infection](prevent-malware-infection.md)
-
-### [Malware names](malware-naming.md)
-
 ### [Coin miners](coinminer-malware.md)
 
 ### [Exploits and exploit kits](exploits-malware.md)
@@ -30,13 +26,17 @@
 
 ### [Worms](worms-malware.md)
 
+## [Prevent malware infection](prevent-malware-infection.md)
+
+## [Malware naming convention](malware-naming.md)
+
 ## [How Microsoft identifies malware and PUA](criteria.md)
 
 ## [Submit files for analysis](submission-guide.md)
 
-## [Safety Scanner download](safety-scanner-download.md)
+## [Troubleshoot malware submission](portal-submission-troubleshooting.md)
 
-## [Industry tests](top-scoring-industry-antivirus-tests.md)
+## [Safety Scanner download](safety-scanner-download.md)
 
 ## [Industry collaboration programs](cybersecurity-industry-partners.md)
 

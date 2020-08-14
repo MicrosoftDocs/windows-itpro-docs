@@ -3,7 +3,6 @@ title: Troubleshoot problems with Network protection
 description: Resources and sample code to troubleshoot issues with Network protection in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender atp, microsoft defender advanced threat protection
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -43,9 +42,9 @@ Network protection will only work on devices with the following conditions:
 
 >[!div class="checklist"]
 > * Endpoints are running Windows 10 Enterprise edition, version 1709 or higher (also known as the Fall Creators Update).
-> * Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
-> * [Real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) is enabled.
-> * [Cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) is enabled.
+> * Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+> * [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
+> * [Cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) is enabled.
 > * Audit mode is not enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
 
 ## Use audit mode
@@ -74,7 +73,7 @@ If you've tested the feature with the demo site and with audit mode, and network
 
 ## Exclude website from network protection scope
 
-To whitelist the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
+To allow the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
 
 ## Collect diagnostic data for file submissions
 

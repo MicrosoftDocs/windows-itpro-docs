@@ -1,6 +1,6 @@
 ---
 title: Upgrade to UE-V for Windows 10
-description: Explains how to upgrade to the latest version of UE-V.
+description: Use these few adjustments to upgrade from User Experience Virtualization (UE-V) 2.x to the latest version of UE-V.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -30,7 +30,8 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 5. Install the UE-V template generator if you want to synchronize application settings for custom applications.
 
-> **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10, version 1607 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10, version 1607..   
+> [!IMPORTANT]
+> You can upgrade your existing UE-V installation to Windows 10, version 1607 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10, version 1607.
 
 ## Upgrade user devices to Windows 10, version 1607
 
@@ -38,7 +39,7 @@ Performing an in-place upgrade on user devices automatically installs the UE-V s
 
 ## Verify that UE-V settings were migrated correctly 
 
-After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows Powershell or the device’s registry.
+After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows PowerShell or the device’s registry.
 
 **To verify UE-V settings using Windows PowerShell**
 
@@ -48,7 +49,8 @@ After upgrading a user device to Windows 10, version 1607, it’s important to v
 
 3. Type **Get-UEVTemplate** and press ENTER to check that your templates are still registered.
 
-    > **Note** You’ll need to register the NotePad template again after you upgrade the device to Windows 10. 
+    > [!NOTE]
+    > You’ll need to register the NotePad template again after you upgrade the device to Windows 10. 
 
 **To verify UE-V settings using the device’s registry**
 
@@ -68,7 +70,8 @@ The UE-V service is the client-side component that captures user-personalized ap
 
 With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell. 
 
-> **Important**&nbsp;&nbsp;The UE-V Agent used in prior releases of UE-V is replaced with the UE service. The UE-V service included with Windows 10, version 1607 and later releases, does not include the agent user interface and is configurable through cmdlets or registry settings only.
+> [!IMPORTANT]
+> The UE-V Agent used in prior releases of UE-V is replaced with the UE service. The UE-V service included with Windows 10, version 1607 and later releases, does not include the agent user interface and is configurable through cmdlets or registry settings only.
 
 **To enable the UE-V service with Group Policy**
 

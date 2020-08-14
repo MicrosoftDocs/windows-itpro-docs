@@ -40,7 +40,7 @@ This policy isn't configured by default on domain-joined devices. This would dis
 -   **Enabled**: This setting allows authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use of online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
     > [!NOTE]
-    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server.
+    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server and the client.
 
 -   **Disabled**: This setting prevents online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
 

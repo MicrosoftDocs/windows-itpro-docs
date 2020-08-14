@@ -5,6 +5,7 @@ ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
@@ -12,7 +13,6 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
@@ -25,6 +25,7 @@ To successfully deploy the Windows 10 operating system in your organization, it
 
 The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
+  - Note: Once you have deployed Windows 10 in your organization, it is important to stay up to date by [creating a deployment plan](update/create-deployment-plan.md) for Windows 10 feature updates.
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 

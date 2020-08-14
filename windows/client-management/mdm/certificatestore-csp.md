@@ -1,6 +1,6 @@
 ---
 title: CertificateStore CSP
-description: CertificateStore CSP
+description: Use the The CertificateStore configuration service provider (CSP) to add secure socket layers (SSL), intermediate, and self-signed certificates.
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
 ms.reviewer: 
 manager: dansimp
@@ -17,7 +17,9 @@ ms.date: 02/28/2020
 
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
-> **Note**   The CertificateStore configuration service provider does not support installing client certificates.
+> [!Note]
+> The CertificateStore configuration service provider does not support installing client certificates.
+> The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
  
 
@@ -638,7 +640,6 @@ Configure the device to automatically renew an MDM client certificate with the s
  
 
  
-
 
 
 

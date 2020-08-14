@@ -11,7 +11,6 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.topic: reference
 ms.sitesec: library
-title: Microsoft Edge for IT Pros
 ms.localizationpriority: medium
 ms.date: 10/02/2018
 ---

@@ -24,6 +24,7 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
+  - [What’s new in MDM for Windows 10, version 2004](#whats-new-in-mdm-for-windows-10-version-2004)
   - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
@@ -43,8 +44,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [Server-initiated unenrollment failure](#server-initiated-unenrollment-failure)
   - [Certificates causing issues with Wi-Fi and VPN](#certificates-causing-issues-with-wi-fi-and-vpn)
   - [Version information for mobile devices](#version-information-for-mobile-devices)
-  - [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#upgrading-windows-phone-81-devices-with-app-whitelisting-using-applicationrestriction-policy-has-issues)
-  - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
+    - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
   - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#multiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
   - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
   - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
@@ -58,6 +58,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [July 2020](#july-2020)
+    - [June 2020](#june-2020)
+    - [May 2020](#may-2020)
     - [February 2020](#february-2020)
     - [January 2020](#january-2020)
     - [November 2019](#november-2019)
@@ -86,6 +89,58 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
+
+## What’s new in MDM for Windows 10, version 2004
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall" data-raw-source="[ApplicationManagement/BlockNonAdminUserInstall](policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall)">ApplicationManagement/BlockNonAdminUserInstall</a></li>
+<li><a href="policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize" data-raw-source="[Bluetooth/SetMinimumEncryptionKeySize](policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize)">Bluetooth/SetMinimumEncryptionKeySize</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource" data-raw-source="[DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource)">DeliveryOptimization/DOCacheHostSource</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth)">DeliveryOptimization/DOMaxBackgroundDownloadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth)">DeliveryOptimization/DOMaxForegroundDownloadBandwidth</a></li>
+<li><a href="policy-csp-education.md#education-allowgraphingcalculator" data-raw-source="[Education/AllowGraphingCalculator](policy-csp-education.md#education-allowgraphingcalculator)">Education/AllowGraphingCalculator</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configurejapaneseimeversion" data-raw-source="[TextInput/ConfigureJapaneseIMEVersion](policy-csp-textinput.md#textinput-configurejapaneseimeversion)">TextInput/ConfigureJapaneseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion" data-raw-source="[TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)">TextInput/ConfigureSimplifiedChineseIMEVersion</a></li>
+<li><a href="policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion" data-raw-source="[TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)">TextInput/ConfigureTraditionalChineseIMEVersion</a></li></ul>
+
+<p>Updated the following policy in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" data-raw-source="[DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)">DeliveryOptimization/DOCacheHost</a></li></ul>
+
+<p>Deprecated the following policies in Windows 10, version 2004:</p>
+<ul>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth)">DeliveryOptimization/DOMaxDownloadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth" data-raw-source="[DeliveryOptimization/DOMaxUploadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth)">DeliveryOptimization/DOMaxUploadBandwidth</a></li>
+<li><a href="policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" data-raw-source="[DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a></li></ul>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>Ext/Microsoft/DNSComputerName</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>IsStub</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="supl-csp.md" data-raw-source="[SUPL CSP](supl-csp.md)">SUPL CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new node:<br>FullVersion</p>
+</td></tr>
+</tbody>
+</table>
 
 ## What’s new in MDM for Windows 10, version 1909
 <table class="mx-tdBreakAll">
@@ -259,7 +314,11 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
 <li>Security/RecoveryEnvironmentAuthentication</li>
+<li>System/AllowDesktopAnalyticsProcessing</li>
 <li>System/AllowDeviceNameInDiagnosticData</li>
+<li>System/AllowMicrosoftManagedDesktopProcessing</li>
+<li>System/AllowUpdateComplianceProcessing</li>
+<li>System/AllowWUfBCloudProcessing</li>
 <li>System/ConfigureMicrosoft365UploadEndpoint</li>
 <li>System/DisableDeviceDelete</li>
 <li>System/DisableDiagnosticDataViewer</li>
@@ -429,6 +488,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>TextInput/TouchKeyboardSplitModeAvailability</li>
 <li>TextInput/TouchKeyboardWideModeAvailability</li>
 <li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
+<li>Update/TargetReleaseVersion</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li>
@@ -658,7 +718,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policies-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policies-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
+<td style="vertical-align:top"><a href="policy-csps-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
@@ -672,7 +732,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>User knows what policies, profiles, apps MDM has configured</li>
 <li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
 </ul>
-<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#managing-connections" data-raw-source="[Managing connection](mdm-enrollment-of-windows-devices.md#managing-connections)">Managing connection</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
+<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#manage-connections" data-raw-source="[Manage connection](mdm-enrollment-of-windows-devices.md#manage-connections)">Managing connection</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="enroll-a-windows-10-device-automatically-using-group-policy.md" data-raw-source="[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)">Enroll a Windows 10 device automatically using Group Policy</a></td>
@@ -709,6 +769,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
 <li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
@@ -1170,7 +1231,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)">Connecting your Windows 10-based device to work using a deep link</a></td>
+<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link" data-raw-source="[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link)">Connect your Windows 10-based device to work using a deep link</a></td>
 <td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
 <ul>
 <li>Username</li>
@@ -1690,7 +1751,7 @@ Currently in Windows 10, version 1511, when using the ClientCertificateInstall
 
 The software version information from **DevDetail/SwV** does not match the version in **Settings** under **System/About**.
 
-### Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
+### Upgrading Windows Phone 8.1 devices with app allow-listing using ApplicationRestriction policy has issues
 
 -   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
 
@@ -1874,7 +1935,8 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     ![vpn selfhost properties window](images/certfiltering1.png)
 
-    > **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
+    > [!NOTE]
+    > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
 3.  Click the **Properties** button underneath the drop down menu.
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
@@ -1888,7 +1950,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
->You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
+> You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx).
 
 
 ### Remote PIN reset not supported in Azure Active Directory joined mobile devices
@@ -1936,6 +1998,23 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### July 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - System](policy-csp-system.md)|Added the following new policy settings:<br> - <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a><br>- <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing </a> <br> - <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a> <br> - <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a> <br><br>Updated the following policy setting:<br>-  <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
+
+### June 2020
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added SKU support table for **AllowStandardUserEncryption**.|
+|[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description from Boolean to Integer for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative.|
+
+### May 2020
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
+|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with additional details. Added policy timeline table. 
+
 
 ### February 2020
 |New or updated topic | Description|
@@ -2433,7 +2512,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </ul>
 <p>Added a new section:</p>
 <ul>
-<li><a href="policies-supported-by-group-policy.md" data-raw-source="[Policies supported by Group Policy](policies-supported-by-group-policy.md)">Policies supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+<li><a href="policy-csps-supported-by-group-policy.md" data-raw-source="[[Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)">[Policy CSPs supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
 </ul>
 </td></tr>
 <tr>
@@ -2562,6 +2641,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_LANManagerAuthenticationLevel</li>
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
 <li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
@@ -2829,7 +2909,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>User knows what policies, profiles, apps MDM has configured</li>
 <li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
 </ul>
-<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#managing-connections" data-raw-source="[Managing connections](mdm-enrollment-of-windows-devices.md#managing-connections)">Managing connections</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
+<p>For details, see <a href="mdm-enrollment-of-windows-devices.md#manage-connections" data-raw-source="[Manage connections](mdm-enrollment-of-windows-devices.md#manage-connections)">Managing connections</a> and <a href="mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs" data-raw-source="[Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)">Collecting diagnostic logs</a></p>
 </td></tr>
 </tbody>
 </table>
@@ -2875,7 +2955,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#whitelist-examples" data-raw-source="[Whitelist examples](applocker-csp.md#whitelist-examples)">Whitelist examples</a>.</p>
+<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#allow-list-examples" data-raw-source="[Allowlist examples](applocker-csp.md#allow-list-examples)">Allow list examples</a>.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top"><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>

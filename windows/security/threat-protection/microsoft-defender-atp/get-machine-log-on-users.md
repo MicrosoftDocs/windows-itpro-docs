@@ -1,7 +1,7 @@
 ---
 title: Get machine log on users API
-description: Retrieves a collection of logged on users.
-keywords: apis, graph api, supported apis, get, machine, log on, users
+description: Retrieve a collection of logged on users on a specific device using Microsoft Defender ATP APIs.
+keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -24,11 +24,11 @@ ms.topic: article
 
 
 ## API description
-Retrieves a collection of logged on users on a specific machine.
+Retrieves a collection of logged on users on a specific device.
 
 
 ## Limitations
-1. You can query on machines last seen in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -43,10 +43,10 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include users only if the machine is visible to the user, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- Response will include users only if the device is visible to the user, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}/logonusers
 ```
 
@@ -61,7 +61,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and machine exist - 200 OK with list of [user](user.md) entities in the body. If machine was not found - 404 Not Found.
+If successful and device exist - 200 OK with list of [user](user.md) entities in the body. If device was not found - 404 Not Found.
 
 
 ## Example
@@ -72,8 +72,8 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
-GET https://api.securitycenter.windows.com/api/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
+```http
+GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
 **Response**
@@ -81,7 +81,7 @@ GET https://api.securitycenter.windows.com/api/1e5bc9d7e413ddd7902c2932e418702b8
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

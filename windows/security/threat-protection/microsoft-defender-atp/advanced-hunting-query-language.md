@@ -1,7 +1,7 @@
 ---
 title: Learn the advanced hunting query language
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

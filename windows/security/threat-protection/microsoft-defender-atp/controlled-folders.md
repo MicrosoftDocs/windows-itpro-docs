@@ -3,13 +3,11 @@ title: Prevent ransomware and threats from encrypting and changing files
 description: Files in default folders can be protected from being changed by malicious apps. This can help prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
@@ -37,7 +35,7 @@ Controlled folder access is especially useful in helping to protect your documen
 
 With Controlled folder access in place, a notification will appear on the computer where the app attempted to make changes to a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
-The protected folders include common system folders, and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow or whitelist apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
+The protected folders include common system folders, and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
 You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
@@ -45,7 +43,7 @@ Controlled folder access is supported on Windows 10, version 1709 and later and 
 
 ## Requirements
 
-Controlled folder access requires enabling [Windows Defender Antivirus real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md).
+Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## Review controlled folder access events in the Microsoft Defender ATP Security Center
 
@@ -64,7 +62,7 @@ DeviceEvents
 
 You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
-1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the machine.
+1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the device.
 
 2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
 
