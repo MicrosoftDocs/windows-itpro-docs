@@ -1,6 +1,6 @@
 ---
 title: Sideload LOB apps in Windows 10 (Windows 10)
-description: Sideload line-of-business apps in Windows 10.
+description: Learn how to sideload line-of-business (LOB) apps in Windows 10. When you sideload an app, you deploy a signed app package to a device.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
 manager: dansimp
