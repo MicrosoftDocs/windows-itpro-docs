@@ -6,6 +6,7 @@ ms.reviewer:
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
