@@ -1,6 +1,6 @@
 ---
-title: Restrict Access to Only Trusted Devices (Windows 10)
-description: Restrict Access to Only Trusted Devices
+title: Restrict access to only trusted devices (Windows 10)
+description: estrict access to only trusted devices
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
 ms.author: dansimp
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 
-# Restrict Access to Only Trusted Devices
+# Restrict access to only trusted devices
 
 **Applies to**
 -   Windows 10

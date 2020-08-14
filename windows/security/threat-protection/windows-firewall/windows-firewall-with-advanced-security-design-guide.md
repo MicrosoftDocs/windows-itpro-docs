@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Firewall with Advanced Security Design Guide (Windows 10)
-description: Windows Defender Firewall with Advanced Security Design Guide
+title: Windows Defender Firewall with Advanced Security design guide (Windows 10)
+description: Windows Defender Firewall with Advanced Security design guide
 ms.assetid: 5c631389-f232-4b95-9e48-ec02b8677d51
 ms.reviewer: 
 ms.author: dansimp
@@ -17,8 +17,7 @@ ms.topic: conceptual
 ms.date: 10/05/2017
 ---
 
-# Windows Defender Firewall with Advanced Security
-Design Guide
+# Windows Defender Firewall with Advanced Security design guide
 
 **Applies to**
 -   Windows 10
