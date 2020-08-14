@@ -1,38 +1,51 @@
 # [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
-## [Plan/Design]()
+## [Plan deployment]()
 
-### [Design Guide](windows-firewall-with-advanced-security-design-guide.md)
+### [Design guide](windows-firewall-with-advanced-security-design-guide.md)
 
-### [Design Process](understanding-the-windows-firewall-with-advanced-security-design-process.md)
+### [Design process](understanding-the-windows-firewall-with-advanced-security-design-process.md)
 
-### [Deployment Goals]()
-#### [Identify deployment goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
+### [Implementation goals]()
+#### [Identify implementation goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
 #### [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)
 #### [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)
 #### [Require Encryption](require-encryption-when-accessing-sensitive-network-resources.md)
 #### [Restrict Access](restrict-access-to-only-specified-users-or-devices.md)
 
-### [Deployment designs]()
-#### [Mapping Goals to a Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
-#### [Basic Design](basic-firewall-policy-design.md)
-#### [Domain Isolation Design](domain-isolation-policy-design.md)
-#### [Server Isolation Design](server-isolation-policy-design.md)
-#### [Certificate-based Isolation Design](certificate-based-isolation-policy-design.md)
+### [Implementation designs]()
+#### [Mapping goals to a design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
 
-### [Design plans]()
-#### [Planning Your Design](planning-your-windows-firewall-with-advanced-security-design.md)
-#### [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
-##### [Planning Domain Isolation Zones]()
-###### [Domain Isolation Zones](planning-domain-isolation-zones.md)
-###### [Exemption List](exemption-list.md)
-###### [Isolated Domain](isolated-domain.md)
-###### [Boundary Zone](boundary-zone.md)
-###### [Encryption Zone](encryption-zone.md)
+#### [Basic design](basic-firewall-policy-design.md)
+##### [Basic Design Example](firewall-policy-design-example.md)
 
-#### [Planning Server Isolation Zones](planning-server-isolation-zones.md)
 
-#### [Planning Certificate-based Authentication](planning-certificate-based-authentication.md)
+#### [Domain isolation design](domain-isolation-policy-design.md)
+##### [Domain Isolation Design Example](domain-isolation-policy-design-example.md)
+
+
+#### [Server isolation design](server-isolation-policy-design.md)
+##### [Server Isolation Design Example](server-isolation-policy-design-example.md)
+
+
+#### [Certificate-based isolation design](certificate-based-isolation-policy-design.md)
+##### [Certificate-based Isolation Design Example](certificate-based-isolation-policy-design-example.md)
+
+### [Design planning]()
+#### [Planning your design](planning-your-windows-firewall-with-advanced-security-design.md)
+
+#### [Planning settings for a basic firewall policy](planning-settings-for-a-basic-firewall-policy.md)
+
+#### [Planning domain isolation zones]()
+##### [Domain isolation zones](planning-domain-isolation-zones.md)
+##### [Exemption list](exemption-list.md)
+##### [Isolated domain](isolated-domain.md)
+##### [Boundary zone](boundary-zone.md)
+##### [Encryption zone](encryption-zone.md)
+
+#### [Planning server isolation zones](planning-server-isolation-zones.md)
+
+#### [Planning certificate-based authentication](planning-certificate-based-authentication.md)
 ##### [Documenting the Zones](documenting-the-zones.md)
 
 ##### [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)
@@ -54,9 +67,31 @@
 ###### [Planning GPO Deployment](planning-gpo-deployment.md)
 
 
+### [Planning to deploy](planning-to-deploy-windows-firewall-with-advanced-security.md)
+
+
 ## [Deployment guide]()
-### [Planning to Deploy](planning-to-deploy-windows-firewall-with-advanced-security.md)
-### [Implementing Your Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
+### [Deployment overview](windows-firewall-with-advanced-security-deployment-guide.md)
+
+### [Implementing your plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
+
+### [Basic firewall deployment]()
+#### [Checklist: Implementing a basic firewall policy design](checklist-implementing-a-basic-firewall-policy-design.md)
+
+
+
+### [Domain isolation deployment]()
+#### [Checklist: Implementing a Domain Isolation Policy Design](checklist-implementing-a-domain-isolation-policy-design.md)
+
+
+
+### [Server isolation deployment]()
+#### [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md)
+
+
+
+### [Certificate-based authentication]()
+#### [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md)
 
 
 
@@ -109,20 +144,19 @@
 
 ## [References]()
 ### [Checklist: Creating Group Policy Objects](checklist-creating-group-policy-objects.md)
-### [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md)
-### [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md)
 ### [Checklist: Creating Inbound Firewall Rules](checklist-creating-inbound-firewall-rules.md)
 ### [Checklist: Creating Outbound Firewall Rules](checklist-creating-outbound-firewall-rules.md)
-### [Checklist: Implementing a Domain Isolation Policy Design](checklist-implementing-a-domain-isolation-policy-design.md)
-#### [Checklist: Configuring Rules for the Isolated Domain](checklist-configuring-rules-for-the-isolated-domain.md)
-#### [Checklist: Configuring Rules for the Boundary Zone](checklist-configuring-rules-for-the-boundary-zone.md)
-#### [Checklist: Configuring Rules for the Encryption Zone](checklist-configuring-rules-for-the-encryption-zone.md)
-#### [Checklist: Configuring Rules for an Isolated Server Zone](checklist-configuring-rules-for-an-isolated-server-zone.md)
-### [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md)
-#### [Checklist: Configuring Rules for Servers in a Standalone Isolated Server Zone](checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md)
-#### [Checklist: Creating Rules for Clients of a Standalone Isolated Server Zone](checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md)
+### [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md)
 
-### [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md)
+
+### [Checklist: Configuring Rules for the Isolated Domain](checklist-configuring-rules-for-the-isolated-domain.md)
+### [Checklist: Configuring Rules for the Boundary Zone](checklist-configuring-rules-for-the-boundary-zone.md)
+### [Checklist: Configuring Rules for the Encryption Zone](checklist-configuring-rules-for-the-encryption-zone.md)
+### [Checklist: Configuring Rules for an Isolated Server Zone](checklist-configuring-rules-for-an-isolated-server-zone.md)
+
+### [Checklist: Configuring Rules for Servers in a Standalone Isolated Server Zone](checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md)
+### [Checklist: Creating Rules for Clients of a Standalone Isolated Server Zone](checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md)
+
 
 ### [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md)
 

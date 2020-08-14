@@ -1,6 +1,6 @@
 ---
-title: Deploy Windows Defender Firewall with Advanced Security (Windows 10)
-description: Windows Defender Firewall with Advanced Security Deployment Guide
+title: Windows Defender Firewall with Advanced Security deployment overview (Windows 10)
+description: Windows Defender Firewall with Advanced Security deployment overview
 ms.assetid: 56b51b97-1c38-481e-bbda-540f1216ad56
 ms.reviewer: 
 ms.author: dansimp
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 
-# Windows Defender Firewall with Advanced Security Deployment Guide
+# Windows Defender Firewall with Advanced Security deployment overview
 
 **Applies to**
 -   Windows 10
@@ -60,11 +60,5 @@ This guide does not provide:
 -   Guidance for setting up Active Directory Domain Services (AD DS) to support Group Policy.
 
 -   Guidance for setting up certification authorities (CAs) to create certificates for certificate-based authentication.
-
-## Overview of Windows Defender Firewall with Advanced Security
-
-Windows Defender Firewall in Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2 is a stateful host firewall that helps secure the device by allowing you to create rules that determine which network traffic is permitted to enter the device from the network and which network traffic the device is allowed to send to the network. Windows Defender Firewall also supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that cannot be authenticated as a trusted device cannot communicate with your device. You can also use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by a malicious user.
-
-The Windows Defender Firewall with Advanced Security MMC snap-in is more flexible and provides much more functionality than the consumer-friendly Windows Defender Firewall interface found in the Control Panel. Both interfaces interact with the same underlying services, but provide different levels of control over those services. While the Windows Defender Firewall Control Panel program can protect a single device in a home environment, it does not provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
 
 For more information about Windows Defender Firewall with Advanced Security, see [Windows Defender Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md).
