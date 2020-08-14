@@ -160,7 +160,7 @@ Step 2:
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`.
 4. Restart the device.
 
-### Why doesn't Application guard work, even though it's enabled through Group Policy?
+### Why doesn't Application Guard work, even though it's enabled through Group Policy?
 
 Application Guard must meet all these prerequisites to be enabled in enterprise mode: [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). 
 To understand why it is not enabled in enterprise mode, check the status of the evaluation to understand what's missing.
