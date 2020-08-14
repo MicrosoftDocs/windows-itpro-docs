@@ -153,6 +153,26 @@ Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equ
 1. Open an elevated command prompt.
 2. Run `certutil -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
 
+If the template was changed successfully, the output of the command will contain old and new values of the template parameters. The new value must contain the **CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY** parameter. Example:
+
+CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=[yourdomain]:WHFBAuthentication
+
+Old Value:
+msPKI-Private-Key-Flag REG_DWORD = 5050080 (84213888)
+CTPRIVATEKEY_FLAG_REQUIRE_SAME_KEY_RENEWAL -- 80 (128)
+CTPRIVATEKEY_FLAG_ATTEST_NONE -- 0
+TEMPLATE_SERVER_VER_WINBLUE<<CTPRIVATEKEY_FLAG_SERVERVERSION_SHIFT -- 50000 (327680)
+TEMPLATE_CLIENT_VER_WINBLUE<<CTPRIVATEKEY_FLAG_CLIENTVERSION_SHIFT -- 5000000 (83886080)
+
+New Value:
+msPKI-Private-Key-Flag REG_DWORD = 5250080 (86311040)
+CTPRIVATEKEY_FLAG_REQUIRE_SAME_KEY_RENEWAL -- 80 (128)
+CTPRIVATEKEY_FLAG_ATTEST_NONE -- 0
+TEMPLATE_SERVER_VER_WINBLUE<<CTPRIVATEKEY_FLAG_SERVERVERSION_SHIFT -- 50000 (327680)
+CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY -- 200000 (2097152)
+TEMPLATE_CLIENT_VER_WINBLUE<<CTPRIVATEKEY_FLAG_CLIENTVERSION_SHIFT -- 5000000 (83886080)
+CertUtil: -dsTemplate command completed successfully."
+
 > [!NOTE]
 > If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
 
@@ -214,4 +234,3 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. Configure Windows Hello for Business settings: PKI (*You are here*)
 6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
-
