@@ -39,9 +39,9 @@ filters ensures network isolation for UWP applications. Specifically, it guarant
 
 For more information on the filter arbitration algorithm and network isolation,
 see [Filter
-Arbitration](https://docs.microsoft.com/en-us/windows/win32/fwp/filter-arbitration)
+Arbitration](https://docs.microsoft.com/windows/win32/fwp/filter-arbitration)
 and
-[Isolation](https://docs.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation).
+[Isolation](https://docs.microsoft.com/windows/win32/secauthz/appcontainer-isolation).
 
 The following sections cover debugging case examples for loopback and non-loopback UWP app network connectivity issues.
 
@@ -49,7 +49,7 @@ The following sections cover debugging case examples for loopback and non-loopba
 > As improvements to debugging and diagnostics in the Windows Filtering Platform are made, the trace examples in this document may not exactly match the
 traces collected on previous releases of Windows.
 
-# Debugging UWP App Loopback scenarios
+## Debugging UWP App Loopback scenarios
 
 If you need to establis a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
 
@@ -68,9 +68,9 @@ You can ensure loopback is enabled by checking the appx manifests of both the se
 
 For more information about loopback scenarios, see [Communicating with
 localhost
-(loopback)](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/loopback)
+(loopback)](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback)
 
-# Debugging Live Drops
+## Debugging Live Drops
 
 If the issue happened recently, but you find you are not able to reproduce the issue, go to Debugging Past Drops for the appropriate trace commands.
 
@@ -996,7 +996,7 @@ on the device (MDM, Group Policy, etc) and make sure it includes the private tar
 	</effectiveWeight>
 </item>
 ```
-# Debugging Past Drops 
+## Debugging Past Drops 
 
 If you are debugging a network drop from the past or from a remote machine, you
 may have traces already collected from Feedback Hub, such as nettrace.etl and
