@@ -1,5 +1,5 @@
 ---
-title: Turn on network protection 
+title: Turning on network protection
 description: Enable Network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager
 keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
 search.product: eADQiWindows 10XVcnh
@@ -78,7 +78,7 @@ Enable network protection by using any of these methods:
 
 5. Select **OK** to save each open section and **Create**.
 
-6. Select the profile **Assignments**, assign to **All Users & All Devices**, and **Save**.
+6. Select the profile called **Assignments**, assign to **All Users & All Devices**, and **Save**.
 
 ### Mobile Device Management (MMD)
 
@@ -131,7 +131,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
    * 1=On
    * 2=Audit
 
-## Related topics
+## See also
 
 * [Network protection](network-protection.md)
 * [Evaluate network protection](evaluate-network-protection.md)

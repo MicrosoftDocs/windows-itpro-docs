@@ -1,5 +1,5 @@
 ---
-title: Configure how attack surface reduction rules work to fine-tune protection in your network
+title: Customize attack surface reduction rules
 description: Individually set rules in audit, block, or disabled modes, and add files and folders that should be excluded from attack surface reduction rules
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, customize, configure, exclude
 search.product: eADQiWindows 10XVcnh
