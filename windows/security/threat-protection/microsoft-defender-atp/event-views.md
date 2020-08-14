@@ -44,33 +44,33 @@ You can also manually navigate to the event area that corresponds to the feature
     - Attack surface reduction events custom view: *asr-events.xml*
     - Network/ protection events custom view: *np-events.xml*
 
-1. Type **event viewer** in the Start menu and open **Event Viewer**.
+2. Type **event viewer** in the Start menu and open **Event Viewer**.
 
-1. Click **Action** > **Import Custom View...**
+3. Select **Action** > **Import Custom View...**
 
     ![Animation highlighting Import custom view on the left of the Even viewer window](../images/events-import.gif)
 
-1. Navigate to where you extracted XML file for the custom view you want and select it.
+4. Navigate to where you extracted XML file for the custom view you want and select it.
 
-1. Click **Open**.
+5. Select **Open**.
 
-1. This will create a custom view that filters to only show the events related to that feature.
+6. This will create a custom view that filters to only show the events related to that feature.
 
 ### Copy the XML directly
 
 1. Type **event viewer** in the Start menu and open the Windows **Event Viewer**.
 
-1. On the left panel, under **Actions**, click **Create Custom View...**
+2. On the left panel, under **Actions**, select **Create Custom View...**
 
     ![Animation highlighting the create custom view option on the Event viewer window](../images/events-create.gif)
 
-1. Go to the XML tab and click **Edit query manually**. You'll see a warning that you won't be able to edit the query using the **Filter** tab if you use the XML option. Click **Yes**.
+3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you won't be able to edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
-1. Paste the XML code for the feature you want to filter events from into the XML section.
+4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-1. Click **OK**. Specify a name for your filter.
+5. Select **OK**. Specify a name for your filter.
 
-1. This will create a custom view that filters to only show the events related to that feature.
+6. This will create a custom view that filters to only show the events related to that feature.
 
 ### XML for attack surface reduction rule events
 
