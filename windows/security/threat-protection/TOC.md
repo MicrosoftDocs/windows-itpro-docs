@@ -462,7 +462,7 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
-### [Use audit mode](microsoft-defender-atp/audit-windows-defender)
+### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
 ### [Management and APIs]()
