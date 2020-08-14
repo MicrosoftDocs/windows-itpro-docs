@@ -163,7 +163,7 @@ Step 2:
 ### Why doesn't Application Guard work, even though it's enabled through Group Policy?
 
 Application Guard must meet all these prerequisites to be enabled in Enterprise mode: [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). 
-To understand why it is not enabled in enterprise mode, check the status of the evaluation to understand what's missing.
+To understand why it is not enabled in Enterprise mode, check the status of the evaluation to understand what's missing.
 
 For CSP (Intune) you can query the status node by using **Get**. This is described in the [Application Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp). 
 In this page you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
