@@ -59,7 +59,7 @@ In order to expand the isolated domain to include Devices that cannot be part of
 
 For more info about this design:
 
--   This design coincides with the deployment goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+-   This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
 -   To learn more about this design, see the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md).
 

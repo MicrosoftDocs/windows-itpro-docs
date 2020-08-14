@@ -8,28 +8,28 @@
 
 ### [Implementation goals]()
 #### [Identify implementation goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
-#### [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)
-#### [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)
-#### [Require Encryption](require-encryption-when-accessing-sensitive-network-resources.md)
-#### [Restrict Access](restrict-access-to-only-specified-users-or-devices.md)
+#### [Protect devices from unwanted network traffic](protect-devices-from-unwanted-network-traffic.md)
+#### [Restrict access to only trusted devices](restrict-access-to-only-trusted-devices.md)
+#### [Require encryption](require-encryption-when-accessing-sensitive-network-resources.md)
+#### [Restrict access](restrict-access-to-only-specified-users-or-devices.md)
 
 ### [Implementation designs]()
 #### [Mapping goals to a design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
 
-#### [Basic design](basic-firewall-policy-design.md)
-##### [Basic Design Example](firewall-policy-design-example.md)
+#### [Basic firewall design](basic-firewall-policy-design.md)
+##### [Basic firewall design example](firewall-policy-design-example.md)
 
 
 #### [Domain isolation design](domain-isolation-policy-design.md)
-##### [Domain Isolation Design Example](domain-isolation-policy-design-example.md)
+##### [Domain isolation design example](domain-isolation-policy-design-example.md)
 
 
 #### [Server isolation design](server-isolation-policy-design.md)
-##### [Server Isolation Design Example](server-isolation-policy-design-example.md)
+##### [Server Isolation design example](server-isolation-policy-design-example.md)
 
 
 #### [Certificate-based isolation design](certificate-based-isolation-policy-design.md)
-##### [Certificate-based Isolation Design Example](certificate-based-isolation-policy-design-example.md)
+##### [Certificate-based Isolation design example](certificate-based-isolation-policy-design-example.md)
 
 ### [Design planning]()
 #### [Planning your design](planning-your-windows-firewall-with-advanced-security-design.md)
@@ -145,8 +145,8 @@
 ## [References]()
 ### [Checklist: Creating Group Policy objects](checklist-creating-group-policy-objects.md)
 ### [Checklist: Creating inbound firewall rules](checklist-creating-inbound-firewall-rules.md)
-### [Checklist: Creating Outbound Firewall Rules](checklist-creating-outbound-firewall-rules.md)
-### [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md)
+### [Checklist: Creating outbound firewall rules](checklist-creating-outbound-firewall-rules.md)
+### [Checklist: Configuring basic firewall settings](checklist-configuring-basic-firewall-settings.md)
 
 
 ### [Checklist: Configuring rules for the isolated domain](checklist-configuring-rules-for-the-isolated-domain.md)

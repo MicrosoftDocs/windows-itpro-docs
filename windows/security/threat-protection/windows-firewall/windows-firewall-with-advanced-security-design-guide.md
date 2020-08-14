@@ -39,7 +39,7 @@ Windows Defender Firewall should be part of a comprehensive security solution th
 
 To successfully use this guide, you need a good understanding of both the capabilities provided by Windows Defender Firewall, and how to deliver configuration settings to your managed devices by using Group Policy in Active Directory.
 
-You can use the deployment goals to form one of these Windows Defender Firewall with Advanced Security designs, or a custom design that combines elements from those presented here:
+You can use the implementation goals to form one of these Windows Defender Firewall with Advanced Security designs, or a custom design that combines elements from those presented here:
 
 -   **Basic firewall policy design**. Restricts network traffic in and out of your devices to only that which is needed and authorized.
 
@@ -67,9 +67,8 @@ Deployment Guide at these locations:
 | Topic | Description
 | - | - |
 | [Understanding the Windows Defender Firewall with Advanced Security Design Process](understanding-the-windows-firewall-with-advanced-security-design-process.md) | Learn how to get started with the Windows Defender Firewall with Advanced Security design process. |
-| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md) | Learn how to identify your Windows Defender Firewall with Advanced Security deployment goals. |
-| [Mapping Your Deployment Goals to a Windows Defender Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md) | After you finish reviewing the existing Windows Defender Firewall with Advanced Security deployment goals and you determine which goals are important to your specific deployment, you can map those goals to a specific Windows Defender Firewall with Advanced Security design. |
-| [Evaluating Windows Defender Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md) | Learn how to use Windows Defender Firewall to improve the security of the computers connected to the network. |
+| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md) | Learn how to identify your Windows Defender Firewall with Advanced Security implementation goals. |
+| [Mapping Your Deployment Goals to a Windows Defender Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md) | After you finish reviewing the existing Windows Defender Firewall with Advanced Security implementation goals and you determine which goals are important to your specific deployment, you can map those goals to a specific Windows Defender Firewall with Advanced Security design. |
 | [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md) | To select the most effective design for helping to protect the network, you must spend time collecting key information about your current computer environment. |
 | [Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md) | After you have gathered the relevant information in the previous sections, and understand the basics of the designs as described earlier in this guide, you can select the design (or combination of designs) that meet your needs. |
 | [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) | You can import an XML file containing customized registry preferences into a Group Policy Object (GPO) by using the Preferences feature of the Group Policy Management Console (GPMC). |

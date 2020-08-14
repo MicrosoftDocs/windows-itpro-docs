@@ -49,7 +49,7 @@ This design can be applied to devices that are part of an Active Directory fores
 
 For more info about this design:
 
--   This design coincides with the deployment goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md), and [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+-   This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md), and [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
 -   To learn more about this design, see [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
 
