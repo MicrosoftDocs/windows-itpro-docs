@@ -3,11 +3,9 @@ title: See how controlled folder access can help protect files from being change
 description: Use a custom tool to see how Controlled folder access works in Windows 10.
 keywords: Exploit protection, windows 10, windows defender, ransomware, protect, evaluate, test, demo, try
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: levinec
