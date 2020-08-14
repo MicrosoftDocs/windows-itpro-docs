@@ -1,7 +1,6 @@
 ---
-ms.reviewer: 
-title: Import custom views to see attack surface reduction events
-description: Use Windows Event Viewer to import individual views for each of the features.
+title: View attack surface reduction events
+description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 03/26/2019
+ms.reviewer: 
 manager: dansimp
 ---
 
