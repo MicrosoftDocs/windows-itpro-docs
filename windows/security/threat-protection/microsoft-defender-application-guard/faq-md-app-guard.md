@@ -166,6 +166,6 @@ Application Guard must meet all these prerequisites to be enabled in Enterprise 
 To understand why it is not enabled in Enterprise mode, check the status of the evaluation to understand what's missing.
 
 For CSP (Intune) you can query the status node by using **Get**. This is described in the [Application Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp). 
-In this page you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
+On this page, you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
 
 For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP** Status. The meaning of each bit is the same as the CSP.
