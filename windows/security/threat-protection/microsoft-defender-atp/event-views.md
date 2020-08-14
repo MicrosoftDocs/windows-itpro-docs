@@ -127,7 +127,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 ## List of attack surface reduction events
 
-All attack surface reductiond events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
+All attack surface reduction events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
 
 You can access these events in Windows Event viewer:
 
