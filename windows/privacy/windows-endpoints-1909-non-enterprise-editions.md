@@ -83,6 +83,7 @@ The following methodology was used to derive the network endpoints:
 |*.blob.core.windows.net|HTTP/TLS v1.2|Windows Telemetry
 |storage.live.com|HTTP/TLS v1.2|OneDrive
 |skydrivesync.policies.live.net|TLS v1.2|OneDrive
+|dm2302.settings.live.net|HTTP|OneDrive
 |slscr.update.microsoft.com|HTTPS/TLS V1.2|Windows Update
 |tile-service.weather.microsoft.com|HTTP|Used for the Weather app
 |tsfe.trafficshaping.dsp.mp.microsoft.com|HTTP|This endpoint is used for content regulation
@@ -153,6 +154,7 @@ The following methodology was used to derive the network endpoints:
 |outlook.office365.com|HTTP|Microsoft Office
 |storage.live.com|HTTP/TLS v1.2|One Drive
 |skydrivesync.policies.live.net|TLS v1.2|One Drive
+|windows.policies.live.net|HTTP|One Drive
 
 ## Windows 10 Education
 
