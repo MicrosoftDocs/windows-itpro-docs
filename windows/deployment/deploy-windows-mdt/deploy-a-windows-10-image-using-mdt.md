@@ -170,13 +170,16 @@ The key to successful management of drivers for MDT, as well as for any other de
 
 On **MDT01**:
 
+> [!IMPORTANT]
+> In the steps below, it is critical that the folder names used for various computer makes and models exactly match the results of **wmic computersystem get model,manufacturer** on the target system.
+
 1.  Using File Explorer, create the **D:\\drivers** folder.
 2.  In the **D:\\drivers** folder, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the new Windows 10 x64 folder, create the following folder structure:
-    -   Dell
+    -   Dell Inc
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -185,8 +188,8 @@ On **MDT01**:
     -   Microsoft Corporation
         -   Surface Laptop
 
->[!NOTE]
->Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
+> [!NOTE]
+> Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
  
 ### Create the logical driver structure in MDT
 
@@ -197,7 +200,7 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the **Windows 10 x64** folder, create the following folder structure:
-    -   Dell
+    -   Dell Inc
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -281,12 +284,12 @@ The folder you select and all sub-folders will be checked for drivers, expanding
 
 For the Dell Latitude E7450 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell\\Latitude E7450** folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell Inc\\Latitude E7450** folder.
 
 On **MDT01**:
 
-1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell** node.
-2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E7450**
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc** node.
+2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell Inc\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
