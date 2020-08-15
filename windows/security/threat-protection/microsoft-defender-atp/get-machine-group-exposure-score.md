@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+author: levinec
+ms.author: ellevin
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -27,6 +27,7 @@ ms.topic: article
 Retrieves a collection of alerts related to a given domain address.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |   Permission  |   Permission display name
@@ -35,6 +36,7 @@ Application | Score.Read.All | 'Read Threat and Vulnerability Management score'
 Delegated (work or school account) | Score.Read | 'Read Threat and Vulnerability Management score'
 
 ## HTTP request
+
 ```
 GET /api/exposureScore/ByMachineGroups
 ```
@@ -46,15 +48,16 @@ GET /api/exposureScore/ByMachineGroups
 | Authorization | String | Bearer {token}.**Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with a list of exposure score per device group data in the response body. 
 
+If successful, this method returns 200 OK, with a list of exposure score per device group data in the response body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -62,7 +65,7 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/exposureScore/ByMachineGroups
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
 
@@ -87,5 +90,6 @@ Here is an example of the response.
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability exposure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-exposure-score)
