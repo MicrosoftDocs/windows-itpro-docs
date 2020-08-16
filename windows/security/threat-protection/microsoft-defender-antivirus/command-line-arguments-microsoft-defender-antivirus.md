@@ -53,6 +53,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | `-ListAllDynamicSignatures` | Lists the loaded dynamic Security intelligence |
 | `-RemoveDynamicSignature [-SignatureSetID]` | Removes dynamic Security intelligence |
 | `-CheckExclusion -path <path>` | Checks whether a path is excluded |
+| `-ValidateMapsConnection` | Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
 
 ## Related topics
 
