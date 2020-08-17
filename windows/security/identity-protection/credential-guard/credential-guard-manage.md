@@ -27,7 +27,7 @@ ms.custom:
 
 
 ## Enable Windows Defender Credential Guard
-Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard [hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
+Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard [hardware readiness tool](dg-readiness-tool.md). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
 The same set of procedures used to enable Windows Defender Credential Guard on physical machines applies also to virtual machines.
 
 
