@@ -140,7 +140,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
     If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, select **Back** to change the output package name and path, and then select **Next** to start another build.
 
-7. When you are done, select **Finish** to close the wizard and go back to the Customizations page.
+7. When you are done, select **Finish** to close the wizard and go back to the **Customizations** page.
 
 **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)
 
