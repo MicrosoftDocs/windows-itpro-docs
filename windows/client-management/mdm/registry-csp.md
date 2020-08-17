@@ -32,7 +32,7 @@ For OMA Client Provisioning, the follows notes apply:
 
 -   This documentation describes the default characteristics. Additional characteristics may be added.
 
--   Because the **Registry** configuration service provider uses the backslash (\) character as a separator between key names, backslashes which occur in the name of a registry key must be escaped. Backslashes can be escaped by using two sequential backslashes (\\\).
+-   Because the **Registry** configuration service provider uses the backslash (\\) character as a separator between key names, backslashes which occur in the name of a registry key must be escaped. Backslashes can be escaped by using two sequential backslashes (\\\\).
 
 The default security role maps to each subnode unless specific permission is granted to the subnode. The security role for subnodes is implementation specific, and can be changed by OEMs and mobile operators.
 
