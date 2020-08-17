@@ -51,7 +51,10 @@ Extension installs in the container are supported from Microsoft Edge version 81
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
-Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. If Application Guard is used with network proxies, they need to be specified by fully qualified domain name (FQDN) in the system proxy settings (likewise in a PAC script if that is the type of proxy configuration used). Additionally these proxies need to be marked as ‘neutral’ in the Application trust list. The FQDNs for the “PAC file” and the “proxy servers the PAC file redirects to” must be added as Neutral Resources in the Network Isolation policies used by Application Guard. You can verify this by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verify that it says “Neutral”.
+Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the Enterprise IP Ranges in the Network Isolation policies used by Application Guard.
+Additionally, on edge://application-guard-internals/#utilities the Application Guard proxy configuration could be seen.
+This step can be done in both the Host and within Application Guard to verify that each side is using the proxy setup you expect.
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
