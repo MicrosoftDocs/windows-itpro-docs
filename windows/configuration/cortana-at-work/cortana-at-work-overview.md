@@ -32,7 +32,7 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 >[!NOTE]
 >A microphone isn't required to use Cortana.
 
-|**Software**  |**Minimum version**  |
+| Software | Minimum version |
 |---------|---------|
 |Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#how-is-my-data-processed-by-cortana) below. |
 |Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn't required.        |
@@ -55,7 +55,7 @@ Cortana enterprise services that can be accessed using Azure AD through Cortana 
 The table below describes the data handling for Cortana enterprise services.
 
 
-|**Name**  |**Description**  |
+| Name | Description |
 |---------|---------|
 |**Storage**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. Speech audio is not retained.         |
 |**Stays in Geo**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.         |
