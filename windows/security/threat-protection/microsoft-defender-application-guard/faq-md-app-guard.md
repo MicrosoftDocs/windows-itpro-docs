@@ -43,7 +43,7 @@ Depending on your organization's settings, employees can copy and paste images (
 
 ### Why don't employees see their Favorites in the Application Guard Edge session?
 
-To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in an Application Guard Edge session aer not copied to the host device. 
+To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in an Application Guard Edge session are not copied to the host device. 
 
 ### Are extensions supported in the Application Guard?
 
