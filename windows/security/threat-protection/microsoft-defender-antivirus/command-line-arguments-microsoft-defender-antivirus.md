@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens 
 manager: dansimp
+ms.date: 08/17/2020
 ---
 
 # Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
