@@ -1,6 +1,6 @@
 ---
 title: Policy CSP
-description: Policy CSP
+description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10.
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
