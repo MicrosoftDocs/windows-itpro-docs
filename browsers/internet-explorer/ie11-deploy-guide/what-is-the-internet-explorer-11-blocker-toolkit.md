@@ -19,6 +19,9 @@ ms.date: 05/10/2018
 
 # What is the Internet Explorer 11 Blocker Toolkit?
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
