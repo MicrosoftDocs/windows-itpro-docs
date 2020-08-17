@@ -2,7 +2,7 @@
 title: Fileless threats
 ms.reviewer: 
 description: Learn about the categories of fileless threats and malware that "live off the land"
-keywords: fileless, fileless malware, living off the land, lolbins, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP, next generation protection
+keywords: fileless, fileless malware, living off the land, lolbins, amsi, behavior monitoring, memory scanning, boot sector protection, security, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP, next-generation protection
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library

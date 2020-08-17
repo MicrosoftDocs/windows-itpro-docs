@@ -1,7 +1,7 @@
 ---
 title: Score methods and properties
-description: Retrieves your organization's exposure score, device secure score, and exposure score by machine group
-keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by machine group
+description: Retrieves your organization's exposure score, device secure score, and exposure score by device group
+keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ Method |Return Type |Description
 :---|:---|:---
 [Get exposure score](get-exposure-score.md) | [Score](score.md) | Get the organizational exposure score.
 [Get device secure score](get-device-secure-score.md) | [Score](score.md) | Get the organizational device secure score.
-[List exposure score by machine group](get-machine-group-exposure-score.md)| [Score](score.md) | List scores by machine group.
+[List exposure score by device group](get-machine-group-exposure-score.md)| [Score](score.md) | List scores by device group.
 
 
 ## Properties
@@ -37,4 +37,4 @@ Property |	Type	|	Description
 :---|:---|:---
 Score | Double | The current score.
 Time | DateTime | The date and time in which the call for this API was made.
-RbacGroupName | String | The machine group name.
+RbacGroupName | String | The device group name.

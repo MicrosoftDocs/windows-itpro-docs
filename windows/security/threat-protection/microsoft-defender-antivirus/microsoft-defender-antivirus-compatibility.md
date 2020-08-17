@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -27,7 +26,7 @@ manager: dansimp
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - If your organization's endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, then Microsoft Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/shadow-protection) (currently in private preview) enabled, then Microsoft Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in private preview) enabled, then Microsoft Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
 
 ## Antivirus and Microsoft Defender ATP
 
@@ -50,6 +49,7 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 If you are Using Windows Server, version 1803 and Windows 2019, you can enable passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: ForceDefenderPassiveMode
+- Type: REG_DWORD
 - Value: 1
 
 See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
@@ -83,7 +83,7 @@ If you are enrolled in Microsoft Defender ATP and you are using a third party an
 
 When Microsoft Defender Antivirus is automatic disabled, it can automatically re-enable if the protection offered by a third-party antivirus product expires or otherwise stops providing real-time protection from viruses, malware or other threats. This is to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
 
-In passive and automatic disabled mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
+In passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
 
 If you uninstall the other product, and choose to use Microsoft Defender Antivirus to provide protection to your endpoints, Microsoft Defender Antivirus will automatically return to its normal active mode.
 
@@ -96,3 +96,5 @@ If you uninstall the other product, and choose to use Microsoft Defender Antivir
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)
+- [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+- [Configure Endpoint Protection on a standalone client](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure-standalone-client)

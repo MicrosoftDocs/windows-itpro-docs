@@ -27,20 +27,24 @@ ms.topic: article
 
 The `DeviceLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from the table.
 
+> [!NOTE]
+> Collection of DeviceLogonEvents is not supported on Windows 7 or Windows Server 2008 R2.
+> We recommend upgrading to Windows 10 or Windows Server 2019 for optimal visibility into user logon activity.
+
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string	| Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string	| Fully qualified domain name (FQDN) of the device |
 | `ActionType` | string |Type of activity that triggered the event |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
-| `LogonType` | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> |
-| `LogonId` | string | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
-| `RemoteDeviceName` | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name  or a host name without domain information |
+| `LogonType` | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the device using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the device remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the device is accessed using PsExec or when shared resources on the device, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start<br> |
+| `LogonId` | string | Identifier for a logon session. This identifier is unique on the same device only between restarts |
+| `RemoteDeviceName` | string | Name of the device that performed a remote operation on the affected device. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name  or a host name without domain information |
 | `RemoteIP` | string | IP address that was being connected to |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemotePort` | int | TCP port on the remote device that was being connected to |
@@ -63,7 +67,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the `DeviceName` and `Timestamp` columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
-| `IsLocalAdmin` | boolean | Boolean indicator of whether the user is a local administrator on the machine |
+| `IsLocalAdmin` | boolean | Boolean indicator of whether the user is a local administrator on the device |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

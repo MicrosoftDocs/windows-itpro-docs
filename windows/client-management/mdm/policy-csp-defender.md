@@ -1725,14 +1725,14 @@ Valid values: 0–90
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
 
-If you enable this setting, catch-up scans for scheduled full scans will be disabled.
+If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
@@ -1811,8 +1811,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
@@ -3101,12 +3101,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

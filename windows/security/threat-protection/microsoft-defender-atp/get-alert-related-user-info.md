@@ -28,7 +28,7 @@ Retrieves the User related to a specific alert.
 
 
 ## Limitations
-1. You can query on alerts last updated in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -43,7 +43,7 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```

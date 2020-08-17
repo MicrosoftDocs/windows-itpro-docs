@@ -53,13 +53,13 @@ You can configure how PUA files are handled from the command line or from the ma
 In Terminal, execute the following command to configure PUA protection:
 
 ```bash
-$ mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
+mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
 ```
 
 ### Use the management console to configure PUA protection:
 
-In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see the [Threat type settings](linux-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md) topic.
+In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see the [Threat type settings](linux-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md) article.
 
-## Related topics
+## Related articles
 
 - [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md)

@@ -5,8 +5,6 @@ ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
-author: jaimeo
-ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.date: 06/21/2018

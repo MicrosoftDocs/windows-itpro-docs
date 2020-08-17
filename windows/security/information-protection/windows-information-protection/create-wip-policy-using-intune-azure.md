@@ -214,6 +214,8 @@ Path                   Publisher
 
 Where `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the **Publisher** name and `WORDPAD.EXE` is the **File** name.
 
+Regarding to how to get the Product Name for the Apps you wish to Add, please reach out to our Windows Support Team to request the guidelines
+
 ### Import a list of apps 
 
 This section covers two examples of using an AppLocker XML file to the **Protected apps** list. You’ll use this option if you want to add multiple apps at the same time. 
@@ -461,10 +463,10 @@ contoso.sharepoint.com|contoso.visualstudio.com
 
 Specify the domains used for identities in your environment. 
 All traffic to the fully-qualified domains appearing in this list will be protected.
-Separate multiple domains with the "," delimiter.
+Separate multiple domains with the "|" delimiter.
 
 ```code
-exchange.contoso.com,contoso.com,region.contoso.com
+exchange.contoso.com|contoso.com|region.contoso.com
 ```
 
 ### Network domains

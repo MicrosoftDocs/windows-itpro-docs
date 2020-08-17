@@ -1,6 +1,6 @@
 ---
 title: Get Machine Secure score
-description: Retrieves the organizational machine secure score.
+description: Retrieves the organizational device secure score.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -50,7 +50,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with the with device secure score data in the response body.
+If successful, this method returns 200 OK, with the device secure score data in the response body.
 
 
 ## Example
