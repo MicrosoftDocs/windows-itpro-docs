@@ -17,7 +17,8 @@ ms.date: 06/26/2017
 
 The Registry configuration service provider is used to update registry settings. However, if there is configuration service provider that is specific to the settings that need to be updated, use the specific configuration service provider.
 
->  **Note**   The Registry CSP is only supported in Windows 10 Mobile for OEM configuration. Do not use this CSP for enterprise remote management.
+> [!NOTE]
+> The Registry CSP is only supported in Windows 10 Mobile for OEM configuration. Do not use this CSP for enterprise remote management.
 For Windows 10 Mobile only, this configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
  
@@ -37,7 +38,6 @@ For OMA Client Provisioning, the follows notes apply:
 The default security role maps to each subnode unless specific permission is granted to the subnode. The security role for subnodes is implementation specific, and can be changed by OEMs and mobile operators.
 
 ## Microsoft Custom Elements
-
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
@@ -75,11 +75,10 @@ The following table shows the Microsoft custom elements that this configuration 
 </table>
 
  
-
 Use these elements to build standard OMA Client Provisioning configuration XML. For information about specific elements, see MSPROV DTD elements.
 
-## Supported Data Types
 
+## Supported Data Types
 
 The following table shows the data types this configuration service provider supports.
 
