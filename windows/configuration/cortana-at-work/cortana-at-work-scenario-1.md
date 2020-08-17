@@ -15,7 +15,7 @@ manager: dansimp
 # Test scenario 1 – Sign into Azure AD, enable the wake word, and try a voice query
 
 >[!NOTE]
->The wake word has been temporarily disabled in the latest version of Cortana in Windows but will be restored soon.
+>The wake word has been re-enabled in the latest version of Cortana in Windows. If you're on Windows 10, version 2004, be sure that you've updated to build 19041.329 or later to use the wake word with Cortana. For earlier builds, you can still click on the microphone button to use your voice with Cortana.
 
 1. Select the **Cortana** icon in the task bar and sign in using your Azure AD account.
 
