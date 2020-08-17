@@ -30,11 +30,12 @@ You can perform various Microsoft Defender Antivirus functions with the dedicate
 
 The utility has the following commands:
 
-```DOS
+```console
 MpCmdRun.exe [command] [-options]
 ```
 Here's an example:
-```
+
+```console
 MpCmdRun.exe -Scan -ScanType 2
 ``` 
 
