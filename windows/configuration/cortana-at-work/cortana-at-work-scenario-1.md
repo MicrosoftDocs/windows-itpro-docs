@@ -1,5 +1,5 @@
 ---
-title: Sign-in to Azure AD and manage notebook with Cortana (Windows 10)
+title: Sign into Azure AD, enable the wake word, and try a voice query
 description: A test scenario walking you through signing in and managing the notebook.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -7,7 +7,6 @@ ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp
 ---
