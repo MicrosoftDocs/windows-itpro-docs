@@ -35,8 +35,8 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 |**Software**  |**Minimum version**  |
 |---------|---------|
 |Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#how-is-my-data-processed-by-cortana) below. |
-|Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isnâ€™t required.        |
-|Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word (â€œCortanaâ€) for hands-free activation or voice commands to easily ask for help.  |
+|Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn't required.        |
+|Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word ("Cortana") for hands-free activation or voice commands to easily ask for help.  |
 
 ## Signing in using Azure AD
 
