@@ -27,6 +27,8 @@ landingContent:
         links:
           - text: Documentation for Microsoft Edge version 77 or later
             url: /DeployEdge
+          - text: Microsoft 365 apps say farewell to Internet Explorer 11 and Windows 10 sunsets Microsoft Edge Legacy
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
           - text: Latest group policies and features added to Microsoft Edge
             url: /microsoft-edge/deploy/change-history-for-microsoft-edge
       - linkListType: overview
