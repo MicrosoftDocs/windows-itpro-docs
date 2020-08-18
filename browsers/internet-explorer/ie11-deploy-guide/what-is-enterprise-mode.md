@@ -18,6 +18,9 @@ ms.date: 10/25/2018
 
 # Enterprise Mode and the Enterprise Mode Site List
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 - Windows 10
@@ -61,7 +64,10 @@ Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microso
 
 - **Data gathering.** You can configure Enterprise Mode to collect local override data, posting back to a named server. This lets you "crowd source" compatibility testing from key users; gathering their findings to add to your central site list.
 
-## Enterprise Mode and the Enterprise Mode Site List XML file
+## Enterprise Mode and the Enterprise Mode Site List
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+ XML file
 The Enterprise Mode Site List is an XML document that specifies a list of sites, their compat mode, and their intended browser. Using [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853), you can automatically start a webpage using a specific browser. In the case of IE11, the webpage can also be launched in a specific compat mode, so it always renders correctly. Your employees can easily view this site list by typing _about:compat_ in either Microsoft Edge or IE11.
 
 Starting with Windows 10, version 1511 (also known as the Anniversary Update), you can also [restrict IE11 to only the legacy web apps that need it](https://blogs.windows.com/msedgedev/2016/05/19/edge14-ie11-better-together/), automatically sending sites not included in the Enterprise Mode Site List to Microsoft Edge.

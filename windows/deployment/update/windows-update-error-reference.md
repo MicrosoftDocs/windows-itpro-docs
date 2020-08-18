@@ -8,7 +8,6 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi

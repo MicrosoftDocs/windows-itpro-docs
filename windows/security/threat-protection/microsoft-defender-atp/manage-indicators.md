@@ -1,6 +1,6 @@
 ---
-title: Create indicators 
-ms.reviewer: 
+title: Create indicators
+ms.reviewer:
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
@@ -14,11 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create indicators 
+# Create indicators
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -40,10 +40,10 @@ The same list of indicators is honored by the prevention agent. Meaning, if Micr
 
 **Automated investigation and remediation engine**<BR>
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
- 
+
 
 The current supported actions are:
-- Allow 
+- Allow
 - Alert only
 - Alert and block
 
@@ -55,7 +55,7 @@ You can create an indicator for:
 
 
 >[!NOTE]
->There is a limit of 15,000 indicators per tenant. 
+>There is a limit of 15,000 indicators per tenant.
 
 
 ## Related topics

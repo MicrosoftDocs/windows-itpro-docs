@@ -3,17 +3,16 @@ title: Use the command line to manage Microsoft Defender Antivirus
 description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens 
 manager: dansimp
+ms.date: 08/17/2020
 ---
 
 # Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
@@ -31,11 +30,12 @@ You can perform various Microsoft Defender Antivirus functions with the dedicate
 
 The utility has the following commands:
 
-```DOS
+```console
 MpCmdRun.exe [command] [-options]
 ```
 Here's an example:
-```
+
+```console
 MpCmdRun.exe -Scan -ScanType 2
 ``` 
 
@@ -55,6 +55,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | `-ListAllDynamicSignatures` | Lists the loaded dynamic Security intelligence |
 | `-RemoveDynamicSignature [-SignatureSetID]` | Removes dynamic Security intelligence |
 | `-CheckExclusion -path <path>` | Checks whether a path is excluded |
+| `-ValidateMapsConnection` | Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
 
 ## Related topics
 

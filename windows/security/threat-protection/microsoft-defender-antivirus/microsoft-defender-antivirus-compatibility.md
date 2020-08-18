@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -27,7 +26,7 @@ manager: dansimp
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - If your organization's endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, then Microsoft Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/shadow-protection) (currently in private preview) enabled, then Microsoft Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in private preview) enabled, then Microsoft Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
 
 ## Antivirus and Microsoft Defender ATP
 
@@ -97,3 +96,5 @@ If you uninstall the other product, and choose to use Microsoft Defender Antivir
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md)
+- [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+- [Configure Endpoint Protection on a standalone client](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure-standalone-client)
