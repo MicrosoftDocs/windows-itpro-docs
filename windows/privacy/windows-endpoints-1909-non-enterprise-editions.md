@@ -12,7 +12,7 @@ ms.author: v-hakima
 manager: obezeajo
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/22/2020
+ms.date: 08/18/2020
 ---
 # Windows 10, version 1909, connection endpoints for non-Enterprise editions
 
@@ -99,7 +99,7 @@ The following methodology was used to derive the network endpoints:
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
 |*.prod.do.dsp.mp.microsoft.com|HTTP/TLS v1.2|Windows Update
-|api.onedrive.com|HTTP|One Drive
+|api.onedrive.com|HTTP|OneDrive
 |smartscreen-prod.microsoft.com|HTTP|Used for Windows Defender SmartScreen reporting and notifications
 |nav.smartscreen.microsoft.com|HTTPS/TLS v1.2|Windows Defender
 |*.update.microsoft.com|HTTP|Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store  
