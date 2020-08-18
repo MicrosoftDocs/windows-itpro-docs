@@ -25,7 +25,7 @@ ms.topic: article
 
 Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
 
-Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
+Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
@@ -224,7 +224,7 @@ Some commands have prerequisite commands to run. If you don't run the prerequisi
 
 You can use the auto flag to automatically run prerequisite commands, for example:
 
-```
+```console
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
@@ -273,7 +273,7 @@ Live response supports output piping to CLI and file. CLI is the default output 
 
 Example:
 
-```
+```console
 processes > output.txt
 ```
 
@@ -299,11 +299,3 @@ Each command is tracked with full details such as:
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
-
-
-
-
-
-
-
-
