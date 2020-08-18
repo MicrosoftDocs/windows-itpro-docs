@@ -30,19 +30,21 @@ ms.topic: article
 
 The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
 
-1. In the navigation pane, select **Settings > Roles**.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with a Security administrator or Global administrator role assigned.
 
-2. Select **Add item**.
+2. In the navigation pane, select **Settings > Roles**.
 
-3. Enter the role name, description, and permissions you'd like to assign to the role.
+3. Select **Add item**.
 
-4. Select **Next** to assign the role to an Azure AD Security group.
+4. Enter the role name, description, and permissions you'd like to assign to the role.
 
-5. Use the filter to select the Azure AD group that you'd like to add to this role to.
+5. Select **Next** to assign the role to an Azure AD Security group.
 
-6. **Save and close**.
+6. Use the filter to select the Azure AD group that you'd like to add to this role to.
 
-7. Apply the configuration settings.
+7. **Save and close**.
+
+8. Apply the configuration settings.
 
 > [!IMPORTANT]
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
@@ -81,19 +83,27 @@ For more information on the available commands, see [Investigate devices using L
   
 ## Edit roles
 
-1. Select the role you'd like to edit.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
 
-2. Click **Edit**.
+2. In the navigation pane, select **Settings > Roles**.
 
-3. Modify the details or the groups that are assigned to the role. 
+3. Select the role you'd like to edit.
 
-4. Click **Save and close**.
+4. Click **Edit**.
+
+5. Modify the details or the groups that are assigned to the role. 
+
+6. Click **Save and close**.
 
 ## Delete roles
 
-1. Select the role you'd like to delete.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
 
-2. Click the drop-down button and select **Delete role**.
+2. In the navigation pane, select **Settings > Roles**.
+
+3. Select the role you'd like to delete.
+
+4. Click the drop-down button and select **Delete role**.
 
 ## Related topic
 
