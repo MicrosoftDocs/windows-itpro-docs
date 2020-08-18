@@ -14,6 +14,9 @@ manager: dansimp
 
 # Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 The Internet Explorer Administration Kit (IEAK) simplifies the creation, deployment, and management of customized Internet Explorer packages. You can use the IEAK to configure the out-of-box Internet Explorer experience or to manage user settings after Internet Explorer deployment.
 
 Use this guide to learn about the several options and processes you'll need to consider while you're using the Internet Explorer Administration Kit 11 (IEAK 11) to customize, deploy, and manage Internet Explorer 11 for your employee's devices.

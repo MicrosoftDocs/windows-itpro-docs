@@ -5,8 +5,6 @@ ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
 itproauthor: jaimeo
-author: jaimeo
-ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.reviewer: 
@@ -162,7 +160,7 @@ Check that your device can access these Windows Update endpoints:
 - `http://wustat.windows.com`
 - `http://ntservicepack.microsoft.com`
  
- Whitelist these endpoints for future use.
+ Allow these endpoints for future use.
  
 ## Updates aren't downloading from the intranet endpoint (WSUS or Configuration Manager) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  

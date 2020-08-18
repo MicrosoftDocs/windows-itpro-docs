@@ -3,11 +3,9 @@ title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -30,9 +28,9 @@ manager: dansimp
 You can exclude certain files from Microsoft Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Microsoft Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
-> Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
+> Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-This article  describes how to configure exclusion lists for the files and folders.
+This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 Exclusion | Examples | Exclusion list
 ---|---|---
@@ -199,6 +197,279 @@ The following table describes how the wildcards can be used and provides some ex
 
 <a id="review"></a>
 
+### System environment variables
+
+The following table lists and describes the system account environment variables. 
+
+<table border="0" cellspacing="0" cellpadding="20">
+<thead>
+<tr>
+<th valign="top">System environment variables</th>
+<th valign="top">Will redirect to:</th>
+</tr>
+</thead><tbody>
+<tr>
+<td valign="top">%APPDATA%</td>
+<td valign="top">C:\Users\UserName.DomainName\AppData\Roaming</td>
+</tr>
+<tr>
+<td valign="top">%APPDATA%\Microsoft\Internet Explorer\Quick Launch</td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch</td>
+</tr>
+<tr>
+<td valign="top">%APPDATA%\Microsoft\Windows\Start Menu</td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu</td>
+</tr>
+<tr>
+<td valign="top">%APPDATA%\Microsoft\Windows\Start Menu\Programs</td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</td>
+</tr>
+<tr>
+<td valign="top">%LOCALAPPDATA% </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local</td>
+</tr>
+<tr>
+<td valign="top">%ProgramData%</td>
+<td valign="top">C:\ProgramData</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles%</td>
+<td valign="top">C:\Program Files</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles%\Common Files </td>
+<td valign="top">C:\Program Files\Common Files</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles%\Windows Sidebar\Gadgets </td>
+<td valign="top">C:\Program Files\Windows Sidebar\Gadgets</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles%\Common Files</td>
+<td valign="top">C:\Program Files\Common Files</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles(x86)% </td>
+<td valign="top">C:\Program Files (x86)</td>
+</tr>
+<tr>
+<td valign="top">%ProgramFiles(x86)%\Common Files </td>
+<td valign="top">C:\Program Files (x86)\Common Files</td>
+</tr>
+<tr>
+<td valign="top">%SystemDrive%</td>
+<td valign="top">C:</td>
+</tr>
+<tr>
+<td valign="top">%SystemDrive%\Program Files</td>
+<td valign="top">C:\Program Files</td>
+</tr>
+<tr>
+<td valign="top">%SystemDrive%\Program Files (x86) </td>
+<td valign="top">C:\Program Files (x86)</td>
+</tr>
+<tr>
+<td valign="top">%SystemDrive%\Users </td>
+<td valign="top">C:\Users</td>
+</tr>
+<tr>
+<td valign="top">%SystemDrive%\Users\Public</td>
+<td valign="top">C:\Users\Public</td>
+</tr>
+<tr>
+<td valign="top">%SystemRoot%</td>
+<td valign="top"> C:\Windows</td>
+</tr>
+<tr>
+<td valign="top">%windir%</td>
+<td valign="top">C:\Windows</td>
+</tr>
+<tr>
+<td valign="top">%windir%\Fonts</td>
+<td valign="top">C:\Windows\Fonts</td>
+</tr>
+<tr>
+<td valign="top">%windir%\Resources </td>
+<td valign="top">C:\Windows\Resources</td>
+</tr>
+<tr>
+<td valign="top">%windir%\resources\0409</td>
+<td valign="top">C:\Windows\resources\0409</td>
+</tr>
+<tr>
+<td valign="top">%windir%\system32</td>
+<td valign="top">C:\Windows\System32</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%</td>
+<td valign="top">C:\ProgramData</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Application Data</td>
+<td valign="top">C:\ProgramData\Application Data</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents</td>
+<td valign="top">C:\ProgramData\Documents</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents\My Music\Sample Music</td>
+<td valign="top">
+<p>C:\ProgramData\Documents\My Music\Sample Music</p>
+<p>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents\My Music </td>
+<td valign="top">C:\ProgramData\Documents\My Music</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents\My Pictures </td>
+<td valign="top">
+<p>C:\ProgramData\Documents\My Pictures
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures </td>
+<td valign="top">C:\ProgramData\Documents\My Pictures\Sample Pictures</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Documents\My Videos </td>
+<td valign="top">C:\ProgramData\Documents\My Videos</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\DeviceMetadataStore</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\GameExplorer</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Ringtones</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs </td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Templates </td>
+<td valign="top">C:\ProgramData\Microsoft\Windows\Templates</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Start Menu </td>
+<td valign="top">C:\ProgramData\Start Menu</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Start Menu\Programs </td>
+<td valign="top">C:\ProgramData\Start Menu\Programs</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools </td>
+<td valign="top">C:\ProgramData\Start Menu\Programs\Administrative Tools</td>
+</tr>
+<tr>
+<td valign="top">%ALLUSERSPROFILE%\Templates </td>
+<td valign="top">C:\ProgramData\Templates</td>
+</tr>
+<tr>
+<td valign="top">%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates</td>
+</tr>
+<tr>
+<td valign="top">%LOCALAPPDATA%\Microsoft\Windows\History </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History</td>
+</tr>
+<tr>
+<td valign="top">
+<p>
+%PUBLIC% </p>
+</td>
+<td valign="top">C:\Users\Public</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\AccountPictures </td>
+<td valign="top">C:\Users\Public\AccountPictures</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Desktop </td>
+<td valign="top">C:\Users\Public\Desktop</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Documents </td>
+<td valign="top">C:\Users\Public\Documents</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Downloads </td>
+<td valign="top">C:\Users\Public\Downloads</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Music\Sample Music </td>
+<td valign="top">
+<p>C:\Users\Public\Music\Sample Music</p>
+<p>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Music\Sample Playlists </td>
+<td valign="top">
+<p>C:\Users\Public\Music\Sample Playlists</p>
+<p>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Pictures\Sample Pictures </td>
+<td valign="top">C:\Users\Public\Pictures\Sample Pictures</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\RecordedTV.library-ms</td>
+<td valign="top">C:\Users\Public\RecordedTV.library-ms</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Videos</td>
+<td valign="top">C:\Users\Public\Videos</td>
+</tr>
+<tr>
+<td valign="top">%PUBLIC%\Videos\Sample Videos</td>
+<td valign="top">
+<p>C:\Users\Public\Videos\Sample Videos</p>
+<p>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">%USERPROFILE% </td>
+<td valign="top">C:\Windows\System32\config\systemprofile</td>
+</tr>
+<tr>
+<td valign="top">%USERPROFILE%\AppData\Local </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local</td>
+</tr>
+<tr>
+<td valign="top">%USERPROFILE%\AppData\LocalLow </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\LocalLow</td>
+</tr>
+<tr>
+<td valign="top">%USERPROFILE%\AppData\Roaming </td>
+<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming</td>
+</tr>
+</tbody>
+</table>
+
+
 ## Review the list of exclusions
 
 You can retrieve the items in the exclusion list using one of the following methods:
@@ -223,6 +494,9 @@ If you use PowerShell, you can retrieve the list in two ways:
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
 ```DOS
+Start, CMD (Run as admin)
+cd "%programdata%\microsoft\windows defender\platform"
+cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
@@ -293,3 +567,4 @@ You can also copy the string into a blank text file and attempt to save it with 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

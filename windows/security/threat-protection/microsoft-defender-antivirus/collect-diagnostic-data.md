@@ -3,7 +3,6 @@ title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2020
+ms.date: 06/29/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -24,6 +23,9 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
+
+> [!NOTE]
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
@@ -38,7 +40,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 2. Navigate to the Microsoft Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> If you're running an updated Microsoft Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+> If you're running an [updated Microsoft Defender Platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Type the following command, and then press **Enter**  
 

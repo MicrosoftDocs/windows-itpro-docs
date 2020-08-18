@@ -1,7 +1,7 @@
 ---
-title: List machines by recommendation
-description: Retrieves a list of machines associated with the security recommendation. 
-keywords: apis, graph api, supported apis, get, security recommendation for vulnerable machines, threat and vulnerability management, threat and vulnerability management api 
+title: List devices by recommendation
+description: Retrieves a list of devices associated with the security recommendation. 
+keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# List machines by recommendation
+# List devices by recommendation
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a list of machines associated with the security recommendation.
+Retrieves a list of devices associated with the security recommendation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
@@ -48,7 +48,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the list of machines associated with the security recommendation.
+If successful, this method returns 200 OK with the list of devices associated with the security recommendation.
 
 
 ## Example

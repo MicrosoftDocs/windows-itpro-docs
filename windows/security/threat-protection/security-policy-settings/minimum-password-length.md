@@ -26,16 +26,16 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-The **Minimum password length** policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 20 characters, or you can establish that no password is required by setting the number of characters to 0.
+The **Minimum password length** policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
 
 ### Possible values
 
-- User-specified number of characters between 0 and 20
+- User-specified number of characters between 0 and 14
 - Not defined
 
 ### Best practices
 
-Set Minimum password length to at least a value of 8. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it is long enough to provide adequate security and still short enough for users to easily remember. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
+Set Minimum password length to at least a value of 8. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it is long enough to provide adequate security and still short enough for users to easily remember. A minimum password length greater than 14 is not supported at this time. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
 
 Permitting short passwords reduces security because short passwords can be easily broken with tools that perform dictionary or brute force attacks against the passwords. Requiring very long passwords can result in mistyped passwords that might cause an account lockout and subsequently increase the volume of Help Desk calls.
 

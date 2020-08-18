@@ -1,7 +1,7 @@
 ---
 title: WDAC and AppLocker Overview
 description: Compare Windows application control technologies.
-keywords: whitelisting, security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -46,7 +46,7 @@ WDAC policies apply to the managed computer as a whole and affects all users of 
 ### WDAC System Requirements
 
 WDAC policies can only be created on computers running Windows 10 build 1903+ on any SKU, pre-1903 Windows 10 Enterprise, or Windows Server 2016 and above.
-WDAC policies can be applied to computers running any edition of Windows 10 or Windows Server 2016 via a Mobile Device Management (MDM) solution like Intune, a management interface like Configuration Manager, or a script host like PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above, but cannot deploy policies to machines running non-Enterprise SKUs of Windows 10.
+WDAC policies can be applied to computers running any edition of Windows 10 or Windows Server 2016 and above via a Mobile Device Management (MDM) solution like Intune, a management interface like Configuration Manager, or a script host like PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above, but cannot deploy policies to machines running non-Enterprise SKUs of Windows 10.
 
 ## AppLocker
 

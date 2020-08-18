@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the ConnectionSettings .INS file to review the network connections for install
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about the network connection settings used to install your custom package. This section creates a common configuration on all of your employee’s computers.
 
 |Name       |Value                      |Description  |

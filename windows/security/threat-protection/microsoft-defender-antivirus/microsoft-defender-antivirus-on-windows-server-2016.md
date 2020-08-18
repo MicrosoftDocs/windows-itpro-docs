@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -20,7 +19,8 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Windows Server 2016
+- Windows Server 2019
 
 Microsoft Defender Antivirus is available on Windows Server 2016 and Windows Server 2019. In some instances, Microsoft Defender Antivirus is referred to as Endpoint Protection; however, the protection engine is the same.
 
@@ -61,9 +61,7 @@ In Windows Server 2016, the **Add Roles and Features Wizard** looks like this:
 
 ![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
-In Windows Server 2019, the **Add Roles and Feature Wizard** looks like this:
-
-![Add roles and features wizard Windows Server 2019](images/WDAV-WinSvr2019-turnfeatureson.jpg)
+In Windows Server 2019, the **Add Roles and Feature Wizard** looks much the same.
 
 ### Turn on the GUI using PowerShell
 
@@ -110,7 +108,7 @@ Get-Service -Name mpssvc
 
 As an alternative to PowerShell, you can use Command Prompt to verify that Microsoft Defender Antivirus is running. To do that, run the following command from a command prompt: 
 
-```DOS
+```console
 sc query Windefend
 ```
 

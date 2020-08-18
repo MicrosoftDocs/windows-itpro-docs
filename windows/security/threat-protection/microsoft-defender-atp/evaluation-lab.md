@@ -12,18 +12,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365solution-evalutatemtp
 ms.topic: article
 ---
 
 # Microsoft Defender ATP evaluation lab
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and machine configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
+Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
-The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
+The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLUM]
 
@@ -31,7 +33,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
 
-You can add Windows 10 or Windows Server 2019 machines that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10 or Windows Server 2019 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities without having to leave the portal.
 
@@ -43,7 +45,7 @@ You'll need to fulfill the [licensing requirements](minimum-requirements.md#lice
 
 You must have **Manage security settings** permissions to:
 - Create the lab
-- Create machines
+- Create devices
 - Reset password
 - Create simulations 
  
@@ -58,12 +60,12 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 ![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Each environment is provisioned with a limited set of test machines.
->- Depending the type of environment structure you select, machines will be available for the specified number of hours from the day of activation.
->- When you've used up the provisioned machines, no new machines are provided. A deleted machine does not refresh the available test machine count.
->- Given the limited resources, it’s advisable to use the machines carefully.
+>- Each environment is provisioned with a limited set of test devices.
+>- Depending the type of environment structure you select, devices will be available for the specified number of hours from the day of activation.
+>- When you've used up the provisioned devices, no new devices are provided. A deleted device does not refresh the available test device count.
+>- Given the limited resources, it’s advisable to use the devices carefully.
 
-Already have a lab? Make sure to enable the new threat simulators and have active machines.
+Already have a lab? Make sure to enable the new threat simulators and have active devices.
 
 ## Setup the evaluation lab
 
@@ -71,7 +73,7 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
     ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
 
-2. Depending on your evaluation needs, you can choose to setup an environment with fewer machines for a longer period or more machines for a shorter period. Select your preferred lab configuration then select **Next**.
+2. Depending on your evaluation needs, you can choose to setup an environment with fewer devices for a longer period or more devices for a shorter period. Select your preferred lab configuration then select **Next**.
 
     ![Image of lab configuration options](images/lab-creation-page.png) 
 
@@ -83,28 +85,28 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
     >[!IMPORTANT]
     >You'll first need to accept and provide consent to the terms and information sharing statements. 
 
-4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the machines you add.  
+4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the devices you add.  
     
     ![Image of summary page](images/lab-setup-summary.png)
 
 5.  Review the summary and select **Setup lab**.  
 
-After the lab setup process is complete, you can add machines and run simulations. 
+After the lab setup process is complete, you can add devices and run simulations. 
 
 
-## Add machines
-When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. You can add Windows 10 or Windows Server 2019 machines.
+## Add devices
+When you add a device to your environment, Microsoft Defender ATP sets up a well-configured device with connection details. You can add Windows 10 or Windows Server 2019 devices.
 
-The machine will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
+The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
 
    >[!TIP]
-   > Need more machines in your lab? Submit a support ticket to have your request reviewed by the Microsoft Defender ATP team. 
+   > Need more devices in your lab? Submit a support ticket to have your request reviewed by the Microsoft Defender ATP team. 
 
-If you chose to add a threat simulator during the lab setup, all machines will have the threat simulator agent installed in the machines that you add.
+If you chose to add a threat simulator during the lab setup, all devices will have the threat simulator agent installed in the devices that you add.
 
-The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
+The device will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
-  The following security components are pre-configured in the test machines:
+  The following security components are pre-configured in the test devices:
 
 - [Attack Surface Reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [Block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
@@ -116,35 +118,35 @@ The machine will automatically be onboarded to your tenant with the recommended 
 - [Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus will be on (not in audit). If Microsoft Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the machine through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus will be on (not in audit). If Microsoft Defender Antivirus blocks you from running your simulation, you may turn off real-time protection on the device through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
 >[!NOTE]
->The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
+>The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
 
-1. From the dashboard, select **Add machine**. 
+1. From the dashboard, select **Add device**. 
 
-2. Choose the type of machine to add. You can choose to add Windows 10 or Windows Server 2019.
+2. Choose the type of device to add. You can choose to add Windows 10 or Windows Server 2019.
 
-    ![Image of lab setup with machine options](images/add-machine-options.png)
+    ![Image of lab setup with device options](images/add-machine-options.png)
 
 
     >[!NOTE]
-    >If something goes wrong with the machine creation process, you'll be notified and you'll need to submit a new request. If the machine creation fails, it will not be counted against the overall allowed quota. 
+    >If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota. 
 
-3. The connection details are displayed. Select **Copy** to save the password for the machine.
+3. The connection details are displayed. Select **Copy** to save the password for the device.
 
     >[!NOTE]
     >The password is only displayed once. Be sure to save it for later use.
 
-    ![Image of machine added with connection details](images/add-machine-eval-lab.png)
+    ![Image of device added with connection details](images/add-machine-eval-lab.png)
 
-4. Machine set up begins. This can take up to approximately 30 minutes. 
+4. Device set up begins. This can take up to approximately 30 minutes. 
 
-5. See the status of test machines, the risk and exposure levels, and the status of simulator installations by selecting the **Machines** tab. 
+5. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the **Devices** tab. 
 
-    ![Image of machines tab](images/machines-tab.png)
+    ![Image of devices tab](images/machines-tab.png)
     
 
     >[!TIP]
@@ -153,7 +155,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 
 ## Simulate attack scenarios
-Use the test machines to run your own attack simulations by connecting to them. 
+Use the test devices to run your own attack simulations by connecting to them. 
 
 You can simulate attack scenarios using:
 - The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
@@ -166,11 +168,11 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 
 >[!NOTE]
->The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
+>The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
 
-1. Connect to your machine and run an attack simulation by selecting **Connect**. 
+1. Connect to your device and run an attack simulation by selecting **Connect**. 
 
-    ![Image of the connect button for test machines](images/test-machine-table.png)
+    ![Image of the connect button for test devices](images/test-machine-table.png)
 
 2. Save the RDP file and launch it by selecting **Connect**.
 
@@ -179,24 +181,24 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
     >[!NOTE]
     >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     > ![Image of reset password](images/reset-password-test-machine.png)<br>
-    > The machine will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
+    > The device will change it’s state to “Executing password reset", then you’ll be presented with your new password in a few minutes.
 
-3. Enter the password that was displayed during the machine creation step. 
+3. Enter the password that was displayed during the device creation step. 
 
    ![Image of window to enter credentials](images/enter-password.png)
 
-4. Run Do-it-yourself attack simulations on the machine. 
+4. Run Do-it-yourself attack simulations on the device. 
 
 
 ### Threat simulator scenarios
-If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab machines. 
+If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab devices. 
 
 
 Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender ATP capabilities within the confines of a lab environment.
 
 >[!NOTE]
 >Before you can run simulations, ensure the following requirements are met:
->- Machines must be added  to the evaluation lab
+>- Devices must be added  to the evaluation lab
 >- Threat simulators must be installed in the evaluation lab
 
 1. From the portal select **Create simulation**.
@@ -220,8 +222,6 @@ Running threat simulations using third-party platforms is a good way to evaluate
     ![Image of simulations tab](images/simulations-tab.png)
     
 After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if the attack simulations you ran triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
-
-
 
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
@@ -249,7 +249,7 @@ Each simulation comes with an in-depth description of the attack scenario and re
 
 
 ## Evaluation report
-The lab reports summarize the results of the simulations conducted on the machines. 
+The lab reports summarize the results of the simulations conducted on the devices. 
 
 ![Image of the evaluation report](images/eval-report.png)
 

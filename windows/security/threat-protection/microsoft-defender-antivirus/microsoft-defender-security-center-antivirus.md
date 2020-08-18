@@ -3,7 +3,6 @@ title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender AV now included in the Windows Security app, you can review, compare, and perform common tasks.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -27,10 +26,13 @@ In Windows 10, version 1703 and later, the Windows Defender app is part of the W
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
 > [!IMPORTANT]
-> Disabling the Windows Security Center service will not disable Microsoft Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.<br/>If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
->It may also prevent Microsoft Defender AV from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed. 
->This will significantly lower the protection of your device and could lead to malware infection.
-
+> Disabling the Windows Security Center service will not disable Microsoft Defender AV or [Windows Defender Firewall](https://docs.microsoft.com/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
+>
+> If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
+>
+> It may also prevent Microsoft Defender AV from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed.
+>
+> This will significantly lower the protection of your device and could lead to malware infection.
 
 See the [Windows Security article](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
@@ -46,7 +48,7 @@ The Windows Security app is a client interface on Windows 10, version 1703 and l
     
 ## Comparison of settings and functions of the old app and the new app
 
-All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
+All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app.
 
 The following diagrams compare the location of settings and functions between the old and new apps:
 
@@ -95,7 +97,6 @@ This section describes how to perform some of the most common tasks when reviewi
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 
-
 ### Ensure Microsoft Defender Antivirus is enabled in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
@@ -106,10 +107,10 @@ This section describes how to perform some of the most common tasks when reviewi
 
 4. Toggle the **Real-time protection** switch to **On**.
 
-    >[!NOTE]
-    >If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
-    >If you install another antivirus product, Microsoft Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
-
+    > [!NOTE]
+    > If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.
+    >
+    > If you install another antivirus product, Microsoft Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 <a id="exclusions"></a>
 
@@ -135,21 +136,19 @@ The following table summarizes exclusion types and what happens:
 |**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Microsoft Defender Antivirus.         |
 |**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Microsoft Defender Antivirus.         |
 
-To learn more, see: 
+To learn more, see:
 - [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus) 
 - [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-process-opened-file-exclusions-microsoft-defender-antivirus)
 
 ### Review threat detection history in the Windows Defender Security Center app
 
-  1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or 
-  searching the start menu for **Defender**.
- 
-  2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
-
-  3. Click **Threat history**
+  1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
   
-  4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, 
-  **Allowed threats**).
+  2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+  3. Click **Threat history**
+  
+  4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
 
 <a id="ransomware"></a>
 
@@ -168,5 +167,3 @@ To learn more, see:
 ## Related articles
 
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
-
-

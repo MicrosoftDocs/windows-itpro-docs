@@ -3,11 +3,9 @@ title: "Why you should use Microsoft Defender Antivirus together with Microsoft 
 description: "For best results, use Microsoft Defender Antivirus together with your other Microsoft offerings."
 keywords: windows defender, antivirus, third party av
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro 
 ms.topic: article 
@@ -32,8 +30,8 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 
 | |Advantage  |Why it matters |
 |--|--|--|
-|1|Antivirus signal sharing |Microsoft applications and services share signals across your enterprise organization, providing a stronger single platform. See [Insights from the MITRE ATT&CK-based evaluation of Windows Defender ATP](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/). |
-|2|Threat analytics and your configuration score |Microsoft Defender Antivirus collects underlying system data used by [threat analytics](../microsoft-defender-atp/threat-analytics.md) and [configuration score](../microsoft-defender-atp/configuration-score.md). This provides your organization's security team with more meaningful information, such as recommendations and opportunities to improve your organization's security posture. |
+|1|Antivirus signal sharing |Microsoft applications and services share signals across your enterprise organization, providing a stronger single platform. See [Insights from the MITRE ATT&CK-based evaluation of Microsoft Defender ATP](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/). |
+|2|Threat analytics and your score for devices |Microsoft Defender Antivirus collects underlying system data used by [threat analytics](../microsoft-defender-atp/threat-analytics.md) and [Microsoft Secure Score for Devices](../microsoft-defender-atp/tvm-microsoft-secure-score-devices.md). This provides your organization's security team with more meaningful information, such as recommendations and opportunities to improve your organization's security posture. |
 |3|Performance |Microsoft Defender ATP is designed to work with Microsoft Defender Antivirus, so you get better performance when you use these offerings together. [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md) and [Microsoft Defender ATP](../microsoft-defender-atp/evaluate-atp.md).|
 |4|Details about blocked malware |More details and actions for blocked malware are available with Microsoft Defender Antivirus and Microsoft Defender ATP. [Understand malware & other threats](../intelligence/understanding-malware.md).|
 |5|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. [Protect your network](../microsoft-defender-atp/network-protection.md).|

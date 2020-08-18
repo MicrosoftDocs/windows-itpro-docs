@@ -6,7 +6,6 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.localizationpriority: medium
 author: dansimp
 ms.date: 09/17/2018
 ms.reviewer: 

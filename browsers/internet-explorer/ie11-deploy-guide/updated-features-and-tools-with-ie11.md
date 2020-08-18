@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # List of updated features and tools - Internet Explorer 11 (IE11)
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
