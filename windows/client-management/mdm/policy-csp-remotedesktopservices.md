@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - RemoteDesktopServices
-description: Policy CSP - RemoteDesktopServices
+description: Learn how the Policy CSP - RemoteDesktopServices setting allows you to configure remote access to computers by using Remote Desktop Services.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
