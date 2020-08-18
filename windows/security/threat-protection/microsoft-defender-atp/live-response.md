@@ -23,7 +23,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats — in real time. 
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
@@ -98,7 +98,7 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device 
 
-1. Log in to Microsoft Defender Security Center.
+1. Sign in to Microsoft Defender Security Center.
 
 2. Navigate to the devices list page and select a device to investigate. The devices page opens.
 
@@ -111,6 +111,10 @@ The dashboard also gives you access to:
 ## Live response commands
 
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md). 
+
+
+>[!NOTE]
+>Live response is a cloud-based interactive shell, as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
@@ -137,7 +141,7 @@ drivers |  Shows all drivers installed on the device. |
 |`trace` | Sets the terminal's logging mode to debug. |
 
 ### Advanced commands
-The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
 | Command | Description |
 |---|---|
@@ -201,7 +205,7 @@ You can have a collection of PowerShell scripts that can run on devices that you
 
 4. Specify if you'd like to overwrite a file with the same name.
 
-5. If you'd like to be know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
+5. If you'd like to be,  know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
 
 6. Click **Confirm**. 
 
@@ -285,7 +289,7 @@ Each command is tracked with full details such as:
 ## Limitations
 
 - Live response sessions are limited to 10 live response sessions at a time.
-- Large scale command execution is not supported.
+- Large-scale command execution is not supported.
 - A user can only initiate one session at a time.
 - A device can only be in one session at a time.
 - The following file size limits apply:
