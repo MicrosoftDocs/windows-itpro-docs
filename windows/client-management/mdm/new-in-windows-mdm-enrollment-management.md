@@ -1999,12 +1999,12 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### August 2020
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - System](policy-csp-system.md)|Removed the following policy settings:<br> - <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a><br>- <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing </a> <br> - <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a> <br> - <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a> <br>|
+|[Policy CSP - System](policy-csp-system.md)|Removed the following policy settings:<br> - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br>|
 
 ### July 2020
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - System](policy-csp-system.md)|Added the following new policy settings:<br> - <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a><br>- <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing </a> <br> - <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a> <br> - <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a> <br><br>Updated the following policy setting:<br>-  <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
+|[Policy CSP - System](policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
 
 ### June 2020
 |New or updated topic | Description|
