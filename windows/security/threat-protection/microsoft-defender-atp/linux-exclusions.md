@@ -67,6 +67,9 @@ Run the following command to see the available switches for managing exclusions:
 mdatp exclusion
 ```
 
+> [!TIP]
+> When configuring exclusions with wildcards, enclose the parameter in double-quotes to prevent globbing.
+
 Examples:
 
 - Add an exclusion for a file extension:
@@ -91,6 +94,15 @@ Examples:
 
     ```bash
     mdatp exclusion folder add --path /var/log/
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+- Add an exclusion for a folder with a wildcard in it:
+
+    ```bash
+    mdatp exclusion folder add --path "/var/*/"
     ```
     ```Output
     Folder exclusion configured successfully
