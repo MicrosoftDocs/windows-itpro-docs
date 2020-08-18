@@ -66,11 +66,11 @@ MpCmdRun.exe -Scan -ScanType 2
 | `0x80070667` | You're running the `-ValidateMapsConnection` command from a computer that is Windows 10 version 1607 or older, or Windows Server 2016 or older. Run the command from a machine that is Windows 10 version 1703 or newer, or Windows Server 2019 or newer.|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | The tool needs to be run from either: `%ProgramFiles%\Windows Defender` or `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2008.4-0` (where `2008.4-0` might differ since platform updates are monthly except for December)|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Not enough privileges. Use the command prompt (cmd.exe) as an administrator.|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | The firewall is blocking the connection or conducting an SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80004005 httpcode=450)` | Possible network-related issues, like name resolution problems|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015` | The firewall is blocking the connection or conducting an SSL inspection. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | The firewall is blocking the connection or conducting an SSL inspection. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | The firewall is blocking the connection or conducting an SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015` | The firewall is blocking the connection or conducting SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | The firewall is blocking the connection or conducting SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
 
 ## Related topics
 
