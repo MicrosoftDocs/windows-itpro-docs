@@ -143,7 +143,7 @@ Example:
 ## PowerShell
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow end users to define the value using PowerShell, use "User Defined" option for the rule in the management platform.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
