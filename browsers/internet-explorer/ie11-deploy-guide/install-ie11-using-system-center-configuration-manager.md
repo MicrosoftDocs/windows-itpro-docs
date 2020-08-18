@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Install Internet Explorer 11 (IE11) using System Center 2012 R2 Configuration Manager
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?linkid=276664). Complete these steps for each operating system and platform combination.
 
  **To install IE11**

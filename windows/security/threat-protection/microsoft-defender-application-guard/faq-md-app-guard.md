@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/12/2020
+ms.date: 08/17/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -43,7 +43,7 @@ Depending on your organization's settings, employees can copy and paste images (
 
 ### Why don't employees see their Favorites in the Application Guard Edge session?
 
-To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
+To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in an Application Guard Edge session are not copied to the host device. 
 
 ### Are extensions supported in the Application Guard?
 
@@ -52,6 +52,10 @@ Extension installs in the container are supported from Microsoft Edge version 81
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
 Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+
+If Application Guard is used with network proxies, they need to be specified by fully qualified domain name (FQDN) in the system proxy settings (likewise in a PAC script if that is the type of proxy configuration used). Additionally these proxies need to be marked as *neutral* in the **Application trust** list. The FQDNs for the PAC file and the proxy servers the PAC file redirects to must be added as neutral resources in the network isolation policies that are used by Application Guard. You can verify this by going to `edge://application-guard-internals/#utilities` and entering the FQDN for the pac/proxy in the **check url trust** field. Verify that it says *Neutral.*
+
+Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the enterprise IP ranges in the network isolation policies that are used by Application Guard. Additionally, go to `edge://application-guard-internals/#utilities` to view the Application Guard proxy configuration. This step can be done in both the host and within Application Guard to verify that each side is using the proxy setup you expect.
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
@@ -83,29 +87,29 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
+When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's standalone mode. However, when using Windows Enterprise you will have access to Application Guard's enterprise-managed mode. This mode has some extra features that the standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
-Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383B limit.
+Yes, both the enterprise resource domains hosted in the cloud and the domains categorized as both work and personal have a 16383B limit.
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT").  
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Microsoft Defender Application Guard will not work, and will result in an error message (*0x80070013 ERROR_WRITE_PROTECT*).  
 
-### Why do the Network Isolation policies in Group Policy and CSP look different?
+### Why do the network isolation policies in Group Policy and CSP look different?
 
-There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
+There is not a one-to-one mapping among all the network isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
 
 Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
 Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
 For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (*0x80070013 ERROR_WRITE_PROTECT*). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
-If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
+If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility that Microsoft Defender Application Guard no longer meets the minimum requirements. 
 
 ### Why am I getting the error message ("ERROR_VIRTUAL_DISK_LIMITATION")?
 
@@ -139,7 +143,7 @@ In the Microsoft Defender Firewall user interface go through the following steps
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
-There is a known issue where if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to Windows Security-> App and Browser control -> Exploit Protection Setting -> switch CFG to the “use default".
+There is a known issue where if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to the **use default**.
 
 
 ### How can I have ICS in enabled state yet still use Application Guard?
@@ -148,7 +152,7 @@ This is a two step process.
 
 Step 1:
 
-Enable Internet Connection sharing by changing the Group Policy setting **Prohibit use of Internet Connection Sharing on your DNS domain network.** This setting is part of the Microsoft security baseline. Change it from Enabled to Disabled.
+Enable Internet Connection sharing by changing the Group Policy setting **Prohibit use of Internet Connection Sharing on your DNS domain network.** This setting is part of the Microsoft security baseline. Change it from **Enabled** to **Disabled**.
  
 Step 2:
  
@@ -159,3 +163,12 @@ Step 2:
 3. Disable IPNAT (Optional): 
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`.
 4. Restart the device.
+
+### Why doesn't Application Guard work, even though it's enabled through Group Policy?
+
+Application Guard must meet all these prerequisites to be enabled in Enterprise mode: [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). 
+To understand why it is not enabled in Enterprise mode, check the status of the evaluation to understand what's missing.
+
+For CSP (Intune) you can query the status node by using **Get**. This is described in the [Application Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp). On this page, you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
+
+For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP** Status. The meaning of each bit is the same as the CSP.
