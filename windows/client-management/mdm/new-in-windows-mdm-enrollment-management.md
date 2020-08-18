@@ -13,7 +13,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 07/01/2019
+ms.date: 08/18/2020
 ---
 
 # What's new in mobile device enrollment and management
@@ -58,6 +58,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [August 2020](#august-2020)
     - [July 2020](#july-2020)
     - [June 2020](#june-2020)
     - [May 2020](#may-2020)
@@ -314,11 +315,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>Privacy/DisablePrivacyExperience</li>
 <li>Privacy/UploadUserActivities</li>
 <li>Security/RecoveryEnvironmentAuthentication</li>
-<li>System/AllowDesktopAnalyticsProcessing</li>
 <li>System/AllowDeviceNameInDiagnosticData</li>
-<li>System/AllowMicrosoftManagedDesktopProcessing</li>
-<li>System/AllowUpdateComplianceProcessing</li>
-<li>System/AllowWUfBCloudProcessing</li>
 <li>System/ConfigureMicrosoft365UploadEndpoint</li>
 <li>System/DisableDeviceDelete</li>
 <li>System/DisableDiagnosticDataViewer</li>
@@ -1998,6 +1995,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### August 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - System](policy-csp-system.md)|Removed the following policy settings:<br> - <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a><br>- <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing </a> <br> - <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a> <br> - <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a> <br>|
+
 ### July 2020
 |New or updated topic | Description|
 |--- | ---|

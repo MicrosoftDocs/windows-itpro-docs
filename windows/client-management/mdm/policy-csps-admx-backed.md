@@ -406,8 +406,6 @@ ms.date: 07/18/2019
 - [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
 - [ServiceControlManager/SvchostProcessMitigation](./policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)
 - [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
-- [System/AllowDesktopAnalyticsProcessing](./policy-csp-system.md#system-allowdesktopanalyticsprocessing)
-- [System/AllowUpdateComplianceProcessing](./policy-csp-system.md#system-allowppdatecomplianceprocessing)
 - [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 - [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
 - [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
