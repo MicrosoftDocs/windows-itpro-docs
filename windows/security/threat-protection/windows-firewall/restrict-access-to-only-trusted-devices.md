@@ -1,6 +1,6 @@
 ---
 title: Restrict Access to Only Trusted Devices (Windows 10)
-description: Restrict Access to Only Trusted Devices
+description: Windows Defender Firewall with Advanced Security enables you to isolate devices you trust and restrict access of untrusted devices to trusted devices.
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
 ms.author: dansimp

@@ -1,6 +1,6 @@
 ---
 title: Protect Devices from Unwanted Network Traffic (Windows 10)
-description: Protect Devices from Unwanted Network Traffic
+description: Learn how running a host-based firewall on every device in your organization can help protect against attacks as part of a defense-in-depth security strategy.
 ms.assetid: 307d2b38-e8c4-4358-ae16-f2143af965dc
 ms.reviewer: 
 ms.author: dansimp

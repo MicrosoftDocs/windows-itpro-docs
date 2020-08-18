@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows Defender Firewall with Advanced Security (Windows 10)
-description: Windows Defender Firewall with Advanced Security Deployment Guide
+description: Learn how to use the Windows Defender Firewall with Advanced Security MMC snap-in to control access to the device from the network.
 ms.assetid: 56b51b97-1c38-481e-bbda-540f1216ad56
 ms.reviewer: 
 ms.author: dansimp
