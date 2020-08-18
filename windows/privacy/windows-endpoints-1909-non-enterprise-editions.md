@@ -152,9 +152,9 @@ The following methodology was used to derive the network endpoints:
 |www.bing.com|HTTPS/TLS v1.2|Cortana and Live Tiles
 |www.msftconnecttest.com|HTTP|Network Connection Status Indicator (NCSI)
 |outlook.office365.com|HTTP|Microsoft Office
-|storage.live.com|HTTP/TLS v1.2|One Drive
-|skydrivesync.policies.live.net|TLS v1.2|One Drive
-|windows.policies.live.net|HTTP|One Drive
+|storage.live.com|HTTP/TLS v1.2|OneDrive
+|skydrivesync.policies.live.net|TLS v1.2|OneDrive
+|windows.policies.live.net|HTTP|OneDrive
 
 ## Windows 10 Education
 
@@ -168,7 +168,7 @@ The following methodology was used to derive the network endpoints:
 |dmd.metaservices.microsoft.com|HTTP|Device metadata
 |Inference.location.live.net|TLS v1.2|Location
 |oneclient.sfx.ms|HTTPS|OneDrive
-|storage.live.com|HTTP/TLS v1.2|One Drive
+|storage.live.com|HTTP/TLS v1.2|OneDrive
 |skydrivesync.policies.live.net|TLS v1.2|OneDrive
 |slscr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
