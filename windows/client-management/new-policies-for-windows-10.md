@@ -1,6 +1,6 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Windows 10 includes the following new policies for management.
+description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp

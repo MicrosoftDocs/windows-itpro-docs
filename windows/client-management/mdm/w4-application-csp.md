@@ -1,6 +1,6 @@
 ---
 title: w4 APPLICATION CSP
-description: w4 APPLICATION CSP
+description: Use an APPLICATION configuration service provider (CSP) that has an APPID of w4 to configure Multimedia Messaging Service (MMS).
 ms.assetid: ef42b82a-1f04-49e4-8a48-bd4e439fc43a
 ms.reviewer: 
 manager: dansimp
