@@ -422,7 +422,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 9. Select **Done**. You'll see the new **Configuration profile**.
     ![Image of configuration setting](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
-## Step 4: Configure Microsoft AutoUPdate (MAU)
+## Step 4: Configure Microsoft AutoUpdate (MAU)
 
 
 1. In the Jamf Pro dashboard, select **General**. 
