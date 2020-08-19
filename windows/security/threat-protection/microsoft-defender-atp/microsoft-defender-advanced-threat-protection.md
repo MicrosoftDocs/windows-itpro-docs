@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
 description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
+keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -52,7 +52,7 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
 <td><center><a href="#mte"><img src="images/mte-icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
@@ -87,8 +87,8 @@ The attack surface reduction set of capabilities provide the first line of defen
 
 <a name="ngp"></a>
 
-**[Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next generation protection designed to catch all types of emerging threats.
+**[Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next-generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
 
@@ -102,11 +102,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 <a name="ss"></a>
 
-**[Configuration score](configuration-score.md)**<br>
-> [!NOTE]
-> Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md).
+**[Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)**<br>
 
-Microsoft Defender ATP includes a configuration score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
+Microsoft Defender ATP includes Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>
 
@@ -138,4 +136,4 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 
 ## Related topic
-[Microsoft Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
+[Microsoft Defender ATP helps detect sophisticated threats](https://www.microsoft.com/en-us/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)

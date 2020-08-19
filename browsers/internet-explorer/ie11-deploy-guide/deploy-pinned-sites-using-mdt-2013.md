@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

@@ -19,6 +19,10 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
+## 101.03.48
+
+- Bug fixes
+
 ## 101.02.55
 
 - Fixed an issue where the product sometimes does not start following a reboot / upgrade
@@ -27,7 +31,7 @@ ms.topic: conceptual
 ## 101.00.75
 
 - Added support for the following file system types: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`, `udf`, and `vfat`
-- New syntax for the command-line tool. For more information, see [this page](linux-resources.md#configure-from-the-command-line).
+- New syntax for the [command-line tool](linux-resources.md#configure-from-the-command-line).
 - Performance improvements & bug fixes
 
 ## 100.90.70

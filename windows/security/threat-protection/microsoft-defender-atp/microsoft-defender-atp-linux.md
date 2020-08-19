@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP for Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -39,7 +39,7 @@ There are several methods and deployment tools that you can use to install and c
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender ATP subscription, and that you have access to the Microsoft Defender ATP portal.
+- Ensure that you have a Microsoft Defender ATP subscription, and that you have access to the [Microsoft Defender ATP portal](microsoft-defender-security-center.md).
 - Deploy Microsoft Defender ATP for Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
@@ -51,7 +51,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and versions: 
+- Supported Linux server distributions and versions:
 
   - Red Hat Enterprise Linux 7.2 or higher
   - CentOS 7.2 or higher
@@ -65,7 +65,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > [!CAUTION]
   > Running Microsoft Defender ATP for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
-- Disk space: 650 MB
+- Disk space: 1GB
 - The solution currently provides real-time protection for the following file system types:
 
   - `btrfs`
@@ -89,14 +89,15 @@ After you've enabled the service, you may need to configure your network or fire
 
 ### Network connections
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
-| Service location                         | DNS record              |
-| ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
+
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
+
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).

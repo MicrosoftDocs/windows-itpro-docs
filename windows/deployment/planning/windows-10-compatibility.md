@@ -11,7 +11,8 @@ ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 

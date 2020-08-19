@@ -1,6 +1,6 @@
 ---
 title: Repackage your existing win32 applications to the MSIX format.
-description: Learn how to install and use the MSIX packaging tool.
+description: Learn how to install and use the MSIX packaging tool to repackage your existing win32 applications to the MSIX format.
 keywords: ["MSIX", "application", "app", "win32", "packaging tool"]
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -30,11 +30,11 @@ You can either run your installer interactively (through the UI) or create a pac
 
 - Windows 10, version 1809 (or later)
 - Participation in the Windows Insider Program (if you're using an Insider build)
-- A valid Microsoft account (MSA) alias to access the app from the Microsoft Store 
+- A valid Microsoft work or school account to access the app from the Microsoft Store 
 - Admin privileges on your PC account 
 
 ### Get the app from the Microsoft Store
 
-1. Use the MSA login associated with your Windows Insider Program credentials in the [Microsoft Store](https://www.microsoft.com/store/r/9N5LW3JBCXKF). 
+1. Use the Microsoft work or school account login associated with your Windows Insider Program credentials in the [Microsoft Store](https://www.microsoft.com/store/r/9N5LW3JBCXKF). 
 2. Open the product description page.
 3. Click the install icon to begin installation.

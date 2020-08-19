@@ -1,6 +1,6 @@
 ---
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
-description: User State Migration Tool (USMT) Troubleshooting
+description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to assist in troubleshooting.
 ms.assetid: 770f45bb-2284-463f-a29c-69c04f437533
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

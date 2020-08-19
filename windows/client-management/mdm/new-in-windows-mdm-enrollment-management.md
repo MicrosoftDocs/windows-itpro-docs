@@ -13,7 +13,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 07/01/2019
+ms.date: 08/18/2020
 ---
 
 # What's new in mobile device enrollment and management
@@ -58,6 +58,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [August 2020](#august-2020)
+    - [July 2020](#july-2020)
     - [June 2020](#june-2020)
     - [May 2020](#may-2020)
     - [February 2020](#february-2020)
@@ -1993,6 +1995,17 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### August 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - System](policy-csp-system.md)|Removed the following policy settings:<br> - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br>|
+
+### July 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - System](policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
+
 ### June 2020
 |New or updated topic | Description|
 |--- | ---|

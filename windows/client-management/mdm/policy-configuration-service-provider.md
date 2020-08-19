@@ -562,11 +562,11 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### Bitlocker policies
+### BitLocker policies
 
 <dl>
   <dd>
-    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+    <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">BitLocker/EncryptionMethod</a>
   </dd>
 </dl>
 
@@ -4048,6 +4048,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## Policy CSPs supported by Group Policy and ADMX-backed policy CSPs
 - [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
 - [ADMX-backed policy CSPs](policy-csps-admx-backed.md)
+
+> [!NOTE]
+> Not all Policy CSPs supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
 ## Policy CSPs supported by HoloLens devices
 - [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
