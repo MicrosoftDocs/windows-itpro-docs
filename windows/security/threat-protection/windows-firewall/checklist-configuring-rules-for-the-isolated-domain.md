@@ -1,6 +1,6 @@
 ---
 title: Checklist Configuring Rules for the Isolated Domain (Windows 10)
-description: Checklist Configuring Rules for the Isolated Domain
+description: Use these tasks to configure connection security rules and IPsec settings in your GPOs to implement the main zone in the isolated domain.
 ms.assetid: bfd2d29e-4011-40ec-a52e-a67d4af9748e
 ms.reviewer: 
 ms.author: dansimp
