@@ -24,39 +24,39 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx_appcompat-appcompatprevent16bitmach">ADMX_AppCompat/AppCompatPrevent16BitMach
+    <a href="#admx-appcompat-appcompatprevent16bitmach">ADMX_AppCompat/AppCompatPrevent16BitMach
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatremoveprogramcompatproppage">ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage
+    <a href="#admx-appcompat-appcompatremoveprogramcompatproppage">ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffapplicationimpacttelemetry">ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry
+    <a href="#admx-appcompat-appcompatturnoffapplicationimpacttelemetry">ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffswitchback">ADMX_AppCompat/AppCompatTurnOffSwitchBack
+    <a href="#admx-appcompat-appcompatturnoffswitchback">ADMX_AppCompat/AppCompatTurnOffSwitchBack
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffengine">ADMX_AppCompat/AppCompatTurnOffEngine
+    <a href="#admx-appcompat-appcompatturnoffengine">ADMX_AppCompat/AppCompatTurnOffEngine
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffprogramcompatibilityassistant_1">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1
+    <a href="#admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffprogramcompatibilityassistant_2">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2
+    <a href="#admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffuseractionrecord">ADMX_AppCompat/AppCompatTurnOffUserActionRecord
+    <a href="#admx-appcompat-appcompatturnoffuseractionrecord">ADMX_AppCompat/AppCompatTurnOffUserActionRecord
     </a>
   </dd>
   <dd>
-    <a href="#admx_appcompat-appcompatturnoffprograminventory">ADMX_AppCompat/AppCompatTurnOffProgramInventory
+    <a href="#admx-appcompat-appcompatturnoffprograminventory">ADMX_AppCompat/AppCompatTurnOffProgramInventory
     </a>
   </dd>
 </dl>
@@ -65,7 +65,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatprevent16bitmach"></a>**ADMX_AppCompat/AppCompatPrevent16BitMach**  
+<a href="" id="admx-appcompat-appcompatprevent16bitmach"></a>**ADMX_AppCompat/AppCompatPrevent16BitMach**  
 
 <!--SupportedSKUs-->
 <table>
@@ -142,7 +142,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatremoveprogramcompatproppage"></a>**ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage**  
+<a href="" id="admx-appcompat-appcompatremoveprogramcompatproppage"></a>**ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage**  
 
 <!--SupportedSKUs-->
 <table>
@@ -213,7 +213,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffapplicationimpacttelemetry"></a>**ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry**  
+<a href="" id="admx-appcompat-appcompatturnoffapplicationimpacttelemetry"></a>**ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry**  
 
 <!--SupportedSKUs-->
 <table>
@@ -288,7 +288,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffswitchback"></a>**ADMX_AppCompat/AppCompatTurnOffSwitchBack**  
+<a href="" id="admx-appcompat-appcompatturnoffswitchback"></a>**ADMX_AppCompat/AppCompatTurnOffSwitchBack**  
 
 <!--SupportedSKUs-->
 <table>
@@ -364,7 +364,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffengine"></a>**ADMX_AppCompat/AppCompatTurnOffEngine**  
+<a href="" id="admx-appcompat-appcompatturnoffengine"></a>**ADMX_AppCompat/AppCompatTurnOffEngine**  
 
 <!--SupportedSKUs-->
 <table>
@@ -442,7 +442,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffprogramcompatibilityassistant_1"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1**  
+<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -509,7 +509,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffprogramcompatibilityassistant_2"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2**  
+<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -583,7 +583,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffuseractionrecord"></a>**ADMX_AppCompat/AppCompatTurnOffUserActionRecord**  
+<a href="" id="admx-appcompat-appcompatturnoffuseractionrecord"></a>**ADMX_AppCompat/AppCompatTurnOffUserActionRecord**  
 
 <!--SupportedSKUs-->
 <table>
@@ -656,7 +656,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_appcompat-appcompatturnoffprograminventory"></a>**ADMX_AppCompat/AppCompatTurnOffProgramInventory**  
+<a href="" id="admx-appcompat-appcompatturnoffprograminventory"></a>**ADMX_AppCompat/AppCompatTurnOffProgramInventory**  
 
 <!--SupportedSKUs-->
 <table>

@@ -1,18 +1,18 @@
 ---
-title: Policy CSP - ADMX_CipherSuiteOrder
-description: Policy CSP - ADMX_CipherSuiteOrder
+title: Policy CSP - ADMX_COM
+description: Policy CSP - ADMX_COM
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/17/2020
+ms.date: 08/18/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_CipherSuiteOrder
+# Policy CSP - ADMX_COM
 
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
@@ -20,14 +20,14 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## ADMX_CipherSuiteOrder policies  
+## ADMX_COM policies  
 
 <dl>
   <dd>
-    <a href="#admx-ciphersuiteorder-sslciphersuiteorder">ADMX_CipherSuiteOrder/SSLCipherSuiteOrder</a>
+    <a href="#admx-com-appmgmt-com-searchforclsid-1">ADMX_COM/AppMgmt_COM_SearchForCLSID_1</a>
   </dd>
   <dd>
-    <a href="#admx-ciphersuiteorder-sslcurveorder">ADMX_CipherSuiteOrder/SSLCurveOrder</a>
+    <a href="#admx-com-appmgmt-com-searchforclsid-2">ADMX_COM/AppMgmt_COM_SearchForCLSID_2</a>
   </dd>
 </dl>
 
@@ -35,7 +35,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ciphersuiteorder-sslciphersuiteorder"></a>**ADMX_CipherSuiteOrder/SSLCipherSuiteOrder**  
+<a href="" id="admx-com-appmgmt-com-searchforclsid-1"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -72,19 +72,21 @@ manager: dansimp
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
+Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
 
-If you disable or do not configure this policy setting, default cipher suite order is used.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
 
-For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://go.microsoft.com/fwlink/?LinkId=517265).
+If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 <!--/Description-->
 > [!TIP]
@@ -96,10 +98,10 @@ For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Sc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *SSL Cipher Suite Order*
--   GP name: *Functions*
--   GP path: *Network/SSL Configuration Settings*
--   GP ADMX file name: *CipherSuiteOrder.admx*
+-   GP English name: *Download missing COM components*
+-   GP name: *COMClassStore*
+-   GP path: *System*
+-   GP ADMX file name: *COM.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
@@ -108,7 +110,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ciphersuiteorder-sslcurveorder"></a>**ADMX_CipherSuiteOrder/SSLCurveOrder**  
+<a href="" id="admx-com-appmgmt-com-searchforclsid-2"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -151,23 +153,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
+Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-If you enable this policy setting, ECC curves are prioritized in the order specified. Enter one curve name per line.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
 
-If you disable or do not configure this policy setting, the default ECC curve order is used.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
 
-The default curve order is as follows:
+If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
 
-- curve25519
-- NistP256
-- NistP384
-
-To see all the curves supported on the system, enter the following command:
-
-``` cmd
-CertUtil.exe -DisplayEccCurve
-```
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 <!--/Description-->
 > [!TIP]
@@ -179,10 +173,10 @@ CertUtil.exe -DisplayEccCurve
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *ECC Curve Order*
--   GP name: *EccCurves*
--   GP path: *Network/SSL Configuration Settings*
--   GP ADMX file name: *CipherSuiteOrder.admx*
+-   GP English name: *Download missing COM components*
+-   GP name: *COMClassStore*
+-   GP path: *System*
+-   GP ADMX file name: *COM.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
