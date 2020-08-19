@@ -1,6 +1,6 @@
 ---
 title: Configuring UE-V with Group Policy Objects
-description: Configuring UE-V with Group Policy Objects
+description: In this article, learn how to configure User Experience Virtualization (UE-V) with Group Policy objects.
 author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
