@@ -46,8 +46,8 @@ After you select your design and gather the required information about the zones
 -   [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
 
 Use the checklists in [Implementing Your Windows Defender Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md) to determine how best to use the instructions in this guide to deploy your particular design.
-
->**Caution:**  We recommend that you use the techniques documented in this guide only for GPOs that must be deployed to the majority of the devices in your organization, and only when the OU hierarchy in your Active Directory domain does not match the deployment needs of these GPOs. These characteristics are typical of GPOs for server and domain isolation scenarios, but are not typical of most other GPOs. When the OU hierarchy supports it, deploy a GPO by linking it to the lowest level OU that contains all of the accounts to which the GPO applies.
+> [!CAUTION]
+> We recommend that you use the techniques documented in this guide only for GPOs that must be deployed to the majority of the devices in your organization, and only when the OU hierarchy in your Active Directory domain does not match the deployment needs of these GPOs. These characteristics are typical of GPOs for server and domain isolation scenarios, but are not typical of most other GPOs. When the OU hierarchy supports it, deploy a GPO by linking it to the lowest level OU that contains all of the accounts to which the GPO applies.
 
 In a large enterprise environment with hundreds or thousands of GPOs, using this technique with too many GPOs can result in user or device accounts that are members of an excessive number of groups; this can result in network connectivity problems if network protocol limits are exceeded. 
  
