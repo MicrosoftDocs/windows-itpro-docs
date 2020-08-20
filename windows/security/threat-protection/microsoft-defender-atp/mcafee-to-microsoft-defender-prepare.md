@@ -26,7 +26,7 @@ ms.topic: article
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
