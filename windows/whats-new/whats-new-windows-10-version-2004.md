@@ -126,7 +126,11 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 
 ## Networking
 
+### Wi-Fi 6 and WPA3
+
 Windows now supports the latest Wi-Fi standards with [Wi-Fi 6 and WPA3](https://support.microsoft.com/help/4562575/windows-10-faster-more-secure-wifi). Wi-Fi 6 gives you better wireless coverage and performance with added security. WPA3 provides improved Wi-Fi security and secures open networks. 
+
+### TEAP
 
 In this release, Tunnel Extensible Authentication Protocol (TEAP) has been added as an authentication method to allow chaining together multiple credentials into a single EAP transaction. TEAP networks can be configured by [enterprise policy](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/94cf6896-c28e-4865-b12a-d83ee38cd3ea).   
 
