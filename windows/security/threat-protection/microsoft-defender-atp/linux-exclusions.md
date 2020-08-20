@@ -43,7 +43,7 @@ Exclusion | Definition | Examples
 ---|---|---
 File extension | All files with the extension, anywhere on the device | `.test`
 File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | All files under the specified folder | `/var/log/`<br/>`/var/*/`
+Folder | All files under the specified folder (recursively) | `/var/log/`<br/>`/var/*/`
 Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 File, folder, and process exclusions support the following wildcards:
@@ -66,6 +66,9 @@ Run the following command to see the available switches for managing exclusions:
 ```bash
 mdatp exclusion
 ```
+
+> [!TIP]
+> When configuring exclusions with wildcards, enclose the parameter in double-quotes to prevent globbing.
 
 Examples:
 
@@ -91,6 +94,15 @@ Examples:
 
     ```bash
     mdatp exclusion folder add --path /var/log/
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+- Add an exclusion for a folder with a wildcard in it:
+
+    ```bash
+    mdatp exclusion folder add --path "/var/*/"
     ```
     ```Output
     Folder exclusion configured successfully
@@ -124,3 +136,25 @@ echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > te
 ```
 
 You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
+
+## Allow threats
+
+In addition to excluding certain content from being scanned, you can also configure the product not to detect some classes of threats (identified by the threat name). You should exercise caution when using this functionality, as it can leave your device unprotected.
+
+To add a threat name to the allowed list, execute the following command:
+
+```bash
+mdatp threat allowed add --name [threat-name]
+```
+
+The threat name associated with a detection on your device can be obtained using the following command:
+
+```bash
+mdatp threat list
+```
+
+For example, to add `EICAR-Test-File (not a virus)` (the threat name associated with the EICAR detection) to the allowed list, execute the following command:
+
+```bash
+mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
+```

@@ -1,5 +1,5 @@
 ---
-title: Enable attack surface reduction rules individually to protect your organization
+title: Enable attack surface reduction rules
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 06/04/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -68,11 +67,11 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 2. In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
 
-3. Under **Attack Surface Reduction exceptions**, you can enter individual files and folders, or you can select **Import** to import a CSV file that contains files and folders to exclude from ASR rules. Each line in the CSV file should be formatted as follows:
+3. Under **Attack Surface Reduction exceptions**, enter individual files and folders. You can also select **Import** to import a CSV file that contains files and folders to exclude from ASR rules. Each line in the CSV file should be formatted as follows:
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
-4. Select **OK** on the three configuration panes and then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
+4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
 ## MDM
 
@@ -103,32 +102,32 @@ Example:
 
 ## Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 
-2. Click **Home** > **Create Exploit Guard Policy**.
+2. Select **Home** > **Create Exploit Guard Policy**.
 
-3. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
+3. Enter a name and a description, select **Attack Surface Reduction**, and select **Next**.
 
-4. Choose which rules will block or audit actions and click **Next**.
+4. Choose which rules will block or audit actions and select **Next**.
 
-5. Review the settings and click **Next** to create the policy.
+5. Review the settings and select **Next** to create the policy.
 
-6. After the policy is created, click **Close**.
+6. After the policy is created, **Close**.
 
 ## Group Policy
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Attack surface reduction**.
 
 4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section.
 
-   Click **Show...** and enter the rule ID in the **Value name** column and your desired state in the **Value** column as follows:
+   Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
 
    - Disable = 0
    - Block (enable ASR rule) = 1
@@ -136,7 +135,7 @@ Example:
 
    ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](../images/asr-rules-gp.png)
 
-5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Click **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
+5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
 > [!WARNING]
 > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
@@ -144,9 +143,9 @@ Example:
 ## PowerShell
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
 2. Enter the following cmdlet:
 
@@ -199,4 +198,3 @@ Example:
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
-

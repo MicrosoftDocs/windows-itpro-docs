@@ -50,7 +50,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with the with device secure score data in the response body.
+If successful, this method returns 200 OK, with the device secure score data in the response body.
 
 
 ## Example

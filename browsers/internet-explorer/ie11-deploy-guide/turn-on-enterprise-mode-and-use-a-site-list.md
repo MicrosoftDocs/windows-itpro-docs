@@ -18,6 +18,9 @@ ms.localizationpriority: medium
 
 # Turn on Enterprise Mode and use a site list
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

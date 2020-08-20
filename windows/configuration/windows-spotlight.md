@@ -44,7 +44,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 
 -   **Feature suggestions, fun facts, tips**
 
-    The lock screen background will occasionally make reccomendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
+    The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
     
     ![fun facts](images/funfacts.png)
 

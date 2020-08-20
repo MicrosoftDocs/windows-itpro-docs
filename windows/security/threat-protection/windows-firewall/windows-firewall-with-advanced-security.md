@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Firewall with Advanced Security (Windows 10)
-description: Windows Defender Firewall with Advanced Security
+description: Learn overview information about the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

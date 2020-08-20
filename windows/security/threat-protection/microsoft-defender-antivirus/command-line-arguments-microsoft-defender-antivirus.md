@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens 
 manager: dansimp
+ms.date: 08/17/2020
 ---
 
 # Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
@@ -29,11 +30,12 @@ You can perform various Microsoft Defender Antivirus functions with the dedicate
 
 The utility has the following commands:
 
-```DOS
+```console
 MpCmdRun.exe [command] [-options]
 ```
 Here's an example:
-```
+
+```console
 MpCmdRun.exe -Scan -ScanType 2
 ``` 
 
@@ -53,6 +55,22 @@ MpCmdRun.exe -Scan -ScanType 2
 | `-ListAllDynamicSignatures` | Lists the loaded dynamic Security intelligence |
 | `-RemoveDynamicSignature [-SignatureSetID]` | Removes dynamic Security intelligence |
 | `-CheckExclusion -path <path>` | Checks whether a path is excluded |
+| `-ValidateMapsConnection` | Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
+
+
+## Common errors in running commands via mpcmdrun.exe 
+
+|Error message | Possible reason
+|:----|:----|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | The Microsoft Defender Antivirus service is disabled. Enable the service and try again. <br> 	**Note:**  In Windows 10 1909 or older, and Windows Server 2019 or older, the service used to be called "Windows Defender Antivirus" service.|
+| `0x80070667` | You're running the `-ValidateMapsConnection` command from a computer that is Windows 10 version 1607 or older, or Windows Server 2016 or older. Run the command from a machine that is Windows 10 version 1703 or newer, or Windows Server 2019 or newer.|
+| `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | The tool needs to be run from either: `%ProgramFiles%\Windows Defender` or `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2008.4-0` (where `2008.4-0` might differ since platform updates are monthly except for December)|
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Not enough privileges. Use the command prompt (cmd.exe) as an administrator.|
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80004005 httpcode=450)` | Possible network-related issues, like name resolution problems|
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015` | The firewall is blocking the connection or conducting SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | The firewall is blocking the connection or conducting SSL inspection. |
+| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
 
 ## Related topics
 

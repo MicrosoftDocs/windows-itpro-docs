@@ -1,6 +1,6 @@
 ---
 title: Creating and managing App-V virtualized applications (Windows 10)
-description: Creating and managing App-V virtualized applications
+description: Create and manage App-V virtualized applications to monitor and record the installation process for an application to be run as a virtualized application.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
