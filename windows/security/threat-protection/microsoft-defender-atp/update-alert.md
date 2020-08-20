@@ -1,6 +1,6 @@
 ---
 title: Update alert entity API
-description: Update a Microsoft Defender ATP alert via this API.
+description: Learn how to update a Microsoft Defender ATP alert by using this API. You can update the status, determination, classification and assignedTo properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
