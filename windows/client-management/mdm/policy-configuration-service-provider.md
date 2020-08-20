@@ -1,6 +1,6 @@
 ---
 title: Policy CSP
-description: Policy CSP
+description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10.
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
@@ -3380,9 +3380,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
-    <a href="./policy-csp-system.md#system-allowdesktopanalyticsprocessing" id="system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-system.md#system-allowdevicenameindiagnosticdata" id="system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -3398,22 +3395,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-allowlocation" id="system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
-    <a href="./policy-csp-system.md#system-allowmicrosoftmanageddesktopprocessing" id="system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-system.md#system-allowstoragecard" id="system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-allowtelemetry" id="system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
-   <dd>
-    <a href="./policy-csp-system.md#system-allowppdatecomplianceprocessing" id="system-allowppdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
-  </dd>
   <dd>
     <a href="./policy-csp-system.md#system-allowusertoresetphone" id="system-allowusertoresetphone">System/AllowUserToResetPhone</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-system.md#system-allowwufbcloudprocessing" id="system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-bootstartdriverinitialization" id="system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>

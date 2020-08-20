@@ -1,6 +1,6 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
-description: Enroll a Windows 10 device automatically using Group Policy
+description: Learn how to use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
