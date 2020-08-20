@@ -63,7 +63,7 @@ ms.date: 08/18/2020
 - [ADMX_DnsClient/DNS_UpdateSecurityLevel](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-updatesecuritylevel)
 - [ADMX_DnsClient/DNS_UpdateTopLevelDomainZones](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-updatetopleveldomainzones)
 - [ADMX_DnsClient/DNS_UseDomainNameDevolution](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-usedomainnamedevolution)
-- [ADMX_DnsClient/Turn_Off_Multicast](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-Offmulticast)
+- [ADMX_DnsClient/Turn_Off_Multicast](./policy-csp-admx-dnsclient.md#admx-dnsclient-turn-off-multicast)
 - [ADMX_EventForwarding/ForwarderResourceUsage](./policy-csp-admx-eventforwarding.md#admx_eventforwarding-forwarderresourceusage)
 - [ADMX_EventForwarding/SubscriptionManager](./policy-csp-admx-eventforwarding.md#admx_eventforwarding-subscriptionmanager)
 - [AppRuntime/AllowMicrosoftAccountsToBeOptional](./policy-csp-appruntime.md#appruntime-allowmicrosoftaccountstobeoptional)

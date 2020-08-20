@@ -312,7 +312,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-usedomainnamedevolution" id="admx-dnsclient-dns-usedomainnamedevolution">ADMX_DnsClient/DNS_UseDomainNameDevolution</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-Offmulticast" id="admx-dnsclient-dns-Offmulticast">ADMX_DnsClient/Turn_Off_Multicast</a>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-turn-off-multicast" id="admx-dnsclient-turn-off-multicast">ADMX_DnsClient/Turn_Off_Multicast</a>
   </dd>
 </dl>
 

@@ -87,7 +87,7 @@ manager: dansimp
     <a href="#admx-dnsclient-dns-usedomainnamedevolution">ADMX_DnsClient/DNS_UseDomainNameDevolution</a>
   </dd>
   <dd>
-    <a href="#admx-dnsclient-turn-Offmulticast">ADMX_DnsClient/Turn_Off_Multicast</a>
+    <a href="#admx-dnsclient-turn-off-multicast">ADMX_DnsClient/Turn_Off_Multicast</a>
   </dd>
 </dl>
 
@@ -1642,7 +1642,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-dnsclient-turn-Offmulticast"></a>**ADMX_DnsClient/Turn_Off_Multicast**
+<a href="" id="admx-dnsclient-turn-off-multicast"></a>**ADMX_DnsClient/Turn_Off_Multicast**
 <!--SupportedSKUs-->
 <table>
 <tr>

@@ -180,7 +180,7 @@
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
 #### [AppVirtualization](policy-csp-appvirtualization.md)
-#### [AttachmentManager](policy-csp-attachmentmanager.md))
+#### [AttachmentManager](policy-csp-attachmentmanager.md)
 #### [Audit](policy-csp-audit.md)
 #### [Authentication](policy-csp-authentication.md)
 #### [Autoplay](policy-csp-autoplay.md)
