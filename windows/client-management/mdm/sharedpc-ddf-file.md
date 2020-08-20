@@ -1,6 +1,6 @@
 ---
 title: SharedPC DDF file
-description: SharedPC DDF file
+description: Learn how the OMA DM device description framework (DDF) for the SharedPC configuration service provider (CSP).
 ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
 ms.reviewer: 
 manager: dansimp
