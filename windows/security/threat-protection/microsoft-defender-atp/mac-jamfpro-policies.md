@@ -27,21 +27,21 @@ This page will guide you through the steps you need to take to set up macOS poli
 
 You'll need to take the following steps:
 
-1. [Get the Microsoft Defender ATP onboarding package](#)
+1. [Get the Microsoft Defender ATP onboarding package](#step-1-get-the-microsoft-defender-atp-onboarding-package)
 
-2. [Create a configuration profile in Jamf Pro using the onboarding package](#)
+2. [Create a configuration profile in Jamf Pro using the onboarding package](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
-2. [Configure Microsoft  Defender ATP settings](#)
+4. [Configure Microsoft  Defender ATP settings](#step-3-configure-microsoft-defender-atp-settings)
 
-3. [Configure Microsoft Defender ATP notification settings](#)
+5. [Configure Microsoft Defender ATP notification settings](#)
 
-4. [Configure Microsoft AutoUpdate (MAU)](#)
+6. [Configure Microsoft AutoUpdate (MAU)](#)
 
-5. [Grant full disk access to Microsoft Defender ATP](#)
+7. [Grant full disk access to Microsoft Defender ATP](#)
 
-6. [Approve Kernel extension for Microsoft Defender ATP](#)
+8. [Approve Kernel extension for Microsoft Defender ATP](#)
 
-7. [Deploy Microsoft Defender ATP for macOS](#)
+9. [Deploy Microsoft Defender ATP for macOS](#)
 
 
 ## Step 1: Get the Microsoft Defender ATP onboarding package
@@ -194,7 +194,7 @@ You'll need to take the following steps:
     ![Image of configuration settings](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
 
-## Step 3: Configure notifications settings
+## Step 4: Configure notifications settings
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
@@ -251,7 +251,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 9. Select **Done**. You'll see the new **Configuration profile**.
     ![Image of configuration setting](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
-## Step 4: Configure Microsoft AutoUpdate (MAU)
+## Step 5: Configure Microsoft AutoUpdate (MAU)
 
 
 1. In the Jamf Pro dashboard, select **General**. 
@@ -312,7 +312,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     
     ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
-## Step 5:  Grant full disk access to Microsoft Defender ATP
+## Step 6:  Grant full disk access to Microsoft Defender ATP
 
 1. In the Jamf Pro dashboard, select **Configuration Profiles**.
 
@@ -384,7 +384,7 @@ leaf[subject.OU] = UBF8T346G9
     ![Image of configuration setting](images/6c8b406ee224335a8c65d06953dc756e.png)
 
 
-## Step 6: Approve Kernel extension for Microsoft Defender ATP
+## Step 7: Approve Kernel extension for Microsoft Defender ATP
 
 1. In the **Configuration Profiles**, select **+ New**.
 
@@ -435,7 +435,7 @@ leaf[subject.OU] = UBF8T346G9
     ![Image of configuration settings](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
 
-## Step 7: Deploy Microsoft Defender ATP for macOS
+## Step 8: Deploy Microsoft Defender ATP for macOS
 
 1. Navigate to where you saved `wdav.pkg`.
 
@@ -551,7 +551,7 @@ leaf[subject.OU] = UBF8T346G9
 14. Select **Done**. 
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
-    ![A screenshot of a social media post Description automatically generated](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
+    ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
 
 
 
