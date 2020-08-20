@@ -29,8 +29,8 @@ There are multiple methods of getting enrolled to JamF.
 
 This article will guide you on two methods:
 
-- Method 1:  Enrollment Invitations
-- Method 2:  Prestage Enrollments
+- [Method 1:  Enrollment Invitations](#enrollment-method-1-enrollment-invitations)
+- [Method 2:  Prestage Enrollments](#enrollment-method-2-prestage-enrollments)
 
 For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)
 
