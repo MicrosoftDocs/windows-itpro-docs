@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DataProtection
-description: Policy CSP - DataProtection
+description: Use the Policy CSP - DataProtection setting to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
