@@ -22,9 +22,17 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Cyberthreats are emerging more frequently and prevalently. It is critical for organizations to quickly assess their security posture, covering the impact of emerging threats and their organizational resilience.  
+With adversaries becoming more sophisticated and threats like human-operated ransomware emerging frequently and prevalently, it is critical to quickly assess impact and resilience against new threats. 
 
-Threat analytics is a set of reports published by Microsoft security researchers as soon as emerging threats and outbreaks are identified. The reports help you assess the impact of threats to your environment and identify actions that can contain them.
+Threat analytics is a set of reports from Microsoft security researchers covering the most relevant threats, including:
+
+- Active cybercrime groups and their campaigns
+- Heavily utilized attack techniques
+- New vulnerabilities
+- Common attack surfaces
+- Prevalent malware
+
+Each report is prepare by Microsoft security experts and provides a detailed analysis of the threat as well as guidance on how to mitigate and stop the threat. It also provides dynamic data from your network, indicating whether the threat is active and if you have mitigations, such as security updates and recommended settings, in place. Use the reports to assess the impact of threats to your network and identify actions you can take to contain them.
 
 Watch this short video to quickly understand how threat analytics can help you track the latest threats and stop them.
 <p></p>
