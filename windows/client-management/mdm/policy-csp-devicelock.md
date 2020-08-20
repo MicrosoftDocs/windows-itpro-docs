@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceLock
-description: Policy CSP - DeviceLock
+description: Learn how to use the Policy CSP - DeviceLock setting to specify whether the user must input a PIN or password when the device resumes from an idle state.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
