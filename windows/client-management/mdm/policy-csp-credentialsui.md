@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialsUI
-description: Policy CSP - CredentialsUI
+description: Learn how to use the Policy CSP - CredentialsUI setting to configure the display of the password reveal button in password entry user experiences.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
