@@ -24,19 +24,19 @@ ms.topic: article
 
 With more sophisticated adversaries and new threats emerging frequently and prevalently, it is critical to be able to quickly:
 
-- Assess the impact of a new threat
-- Review your resilience against or exposure to the threat
-- Identify the actions you can take to stop or contain the threat
+- Assess the impact of new threats
+- Review your resilience against or exposure to the threats
+- Identify the actions you can take to stop or contain the threats
 
 Threat analytics is a set of reports from expert Microsoft security researchers covering the most relevant threats, including:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
-- New and critical vulnerabilities
+- Critical vulnerabilities
 - Common attack surfaces
 - Prevalent malware
 
-Each report provides detailed analysis of a threat and extensive guidance on how to defend against the threat. It also provides dynamic data from your network, indicating whether the threat is active and if you have applicable security updates and recommended settings in place.
+Each report provides a detailed analysis of a threat and extensive guidance on how to defend against the threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable security updates and recommended settings in place.
 
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 <p></p>
@@ -45,15 +45,15 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 ## View the threat analytics dashboard
 
-The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It provides several overviews about the threats covered in the reports:
+The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
 - **Latest threats**—lists the most recently published threat reports, along with the number of devices with active and resolved alerts.
 - **High-impact threats**—lists the threats that have had the highest impact to the organization. This card ranks threats by the number of devices that have active alerts.
-- **Threat summary**—shows overall impact of the threats reported in threat analytics by showing the number of threats with active and resolved alerts.
+- **Threat summary**—shows the overall impact of all the threats reported in threat analytics by showing the number of threats with active and resolved alerts.
 
 ![Image of a threat analytics dashboard](images/ta_dashboard.png)
 
-Select a threat from any of the overviews or from the table to view the report for that threat.
+Select a threat from the dashboard to view the report for that threat.
 
 ## View a threat analytics report
 
@@ -61,7 +61,7 @@ Each threat analytics report provides information in three sections: **Overview*
 
 ### Quickly understand a threat and assess its impact to your network in the overview
 
-The **Overview** section provides a quick preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your network and your network's exposure through misconfigured and unpatched devices.
+The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
 ![Image of the overview section of a threat analytics report](images/ta-overview.png)
 _Overview section of a threat analytics report_
@@ -72,7 +72,7 @@ Each report includes cards designed to provide information about the organizatio
 - **Devices with alerts over time**—shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
 #### Organizational resilience and exposure
-Each report also includes cards that provide an overview of how resilient your organization can be against a given threat:
+Each report includes cards that provide an overview of how resilient your organization can be against a given threat:
 - **Security configuration status**—shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
 
@@ -83,7 +83,7 @@ Go to the **Analyst report** section to read through the detailed expert write-u
 _Analyst report section of a threat analytics report_
 
 ### Review list of mitigations and the status of your devices
-In the **Mitigations** section, you can review the list of specific actionable recommendations that can help you increase your organizational resilience. This card lists tracked mitigations, including recommended settings and vulnerability patches, along with the number of devices that don't have the mitigations in place.
+In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes recommended settings and vulnerability patches, along with the number of devices that don't have the mitigations in place.
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
@@ -91,10 +91,10 @@ Mitigation information in this section incorporates data from [threat and vulner
 _Mitigations section of a threat analytics report_
 
 
-### Additional report details and limitations
+## Additional report details and limitations
 When using the reports, keep the following in mind: 
 
-- Data is scoped based on your RBAC permissions. You will only see the status of devices that you have been granted access to on the RBAC.
+- Data is scoped based on your role-based access control (RBAC) scope. You will only see the status of devices in [groups that you can access](machine-groups.md).
 - Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not reflected in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
 - Devices are counted as "unavailable" if they have been unable to transmit data to the service.
