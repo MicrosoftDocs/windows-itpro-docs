@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Troubleshooting
-description: Policy CSP - Troubleshooting
+description: The Policy CSP - Troubleshooting setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

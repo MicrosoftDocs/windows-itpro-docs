@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceHealthMonitoring
-description: Learn which DeviceHealthMonitoring policies are supported for your edition of Windows.
+description: Learn how the Policy CSP - DeviceHealthMonitoring setting is used as an opt-in health monitoring connection between the device and Microsoft.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - LockDown
-description: Policy CSP - LockDown
+description: Use the Policy CSP - LockDown setting to allow the user to invoke any system user interface by swiping in from any screen edge using touch.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
