@@ -1,6 +1,6 @@
 ---
 title: Isolate machine API
-description: Use this API to create calls related isolating a device.
+description: Learn how to use the Isolate machine API to isolate a device from accessing external network in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, isolate device
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

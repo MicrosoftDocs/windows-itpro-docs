@@ -1,6 +1,6 @@
 ---
 title: Get machine by ID API
-description: Retrieves a device entity by ID.
+description: Learn how to use the Get machine by ID API retrieves specific machine by its device ID or computer name in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, devices, entity, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
