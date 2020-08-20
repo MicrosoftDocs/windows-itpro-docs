@@ -1,6 +1,6 @@
 ---
 title: Registry CSP
-description: Registry CSP
+description: In this article, learn how to use the Registry configuration service provider (CSP) to update registry settings.
 ms.assetid: 2307e3fd-7b61-4f00-94e1-a639571f2c9d
 ms.reviewer: 
 manager: dansimp

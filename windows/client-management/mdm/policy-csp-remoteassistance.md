@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - RemoteAssistance
-description: Policy CSP - RemoteAssistance
+description: Learn how the Policy CSP - RemoteAssistance setting allows you to specify a custom message to display.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
