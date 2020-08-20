@@ -411,12 +411,34 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
 
+1. Use the following Microsoft Defender ATP configuration settings:
 
-1. In the Jamf Pro dashboard, select **General**. 
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChannelName</key>
+	<string>InsiderFast</string>
+	<key>HowToCheck</key>
+	<string>AutomaticDownload</string>
+	<key>EnableCheckForUpdatesButton</key>
+	<true/>
+    <key>DisableInsiderCheckbox</key>
+    <false/>
+	<key>SendAllTelemetryEnabled</key>
+	<true/>
+</dict>
+</plist>
+```
+
+2. Save it as `MDATP_MDAV_MAU_settings.plist`.
+
+3. In the Jamf Pro dashboard, select **General**. 
 
     ![Image of configuration setting](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
-2. Enter the following details:
+4. Enter the following details:
 
     **General** 
   - Name: MDATP MDAV MAU settings
@@ -425,40 +447,40 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
   - Distribution Method: Install Automatically(default)
   - Level: Computer Level(default)
 
-3. In **Application & Custom Settings** select **Configure**.
+4. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration setting](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-4. Select **Upload File (PLIST file)**.
+5. Select **Upload File (PLIST file)**.
 
     ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)  
 
-5. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**
+6. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.
 
     ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)
 
-6. Select **Choose File**.
+7. Select **Choose File**.
 
     ![Image of configuration setting](images/335aff58950ce62d1dabc289ecdce9ed.png)
 
-7. Select **MDATP_MDAV_settings.plist**.
+8. Select **MDATP_MDAV_MAU_settings.plist**.
 
     ![Image of configuration setting](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-8. Select **Upload**.
+9. Select **Upload**.
     ![Image of configuration setting](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Image of configuration setting](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-9. Select **Save**.
+10. Select **Save**.
 
     ![Image of configuration setting](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
-10. Select the **Scope** tab.
+11. Select the **Scope** tab.
    
      ![Image of configuration setting](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-11. Select **Add**.
+12. Select **Add**.
     
     ![Image of configuration setting](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -466,7 +488,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-12. Select **Done**.
+13. Select **Done**.
     
     ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
