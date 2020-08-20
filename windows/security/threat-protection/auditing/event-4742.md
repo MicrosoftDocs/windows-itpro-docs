@@ -243,7 +243,7 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 - **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. If the SPN list of a computer account changed, you will see the new SPN list in **Service Principal Names** field (note that you will see the new list instead of changes). If the value of **servicePrincipalName** attribute of computer object was changed, you will see the new value here.
 
-  Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots<strong>:</strong>
+  Here is an example of **Service Principal Names** field for new domain joined workstation in event 4742 on domain controller, after workstation reboots<b>:</b>
 
   HOST/Win81.contoso.local
 
