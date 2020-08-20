@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-symantecmigrate 
+- m365solution-McAfeemigrate 
 ms.topic: article
 ---
 
 # Migrate from McAfee - Phase 2: Set up Microsoft Defender ATP
 
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![Phase 1: Prepare](images/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
 
-**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp).
+3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-McAfee).
+4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-McAfee-to-the-exclusion-list-for-microsoft-defender-antivirus).
+5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-McAfee-to-the-exclusion-list-for-microsoft-defender-atp).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
@@ -40,9 +40,9 @@ ms.topic: article
 > [!TIP]
 > If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
 
-On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. To learn more, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
+On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as McAfee. To learn more, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
 
-Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
+Now that you're moving from McAfee to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
@@ -68,7 +68,7 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender ATP.
+Because your organization is still using McAfee, you must set Microsoft Defender Antivirus to passive mode. That way, McAfee and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender ATP.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
@@ -85,7 +85,7 @@ Because your organization is still using Symantec, you must set Microsoft Defend
 
 ## Enable Microsoft Defender Antivirus
 
-Because your organization has been using Symantec as your primary antivirus solution, Microsoft Defender Antivirus is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender Antivirus. 
+Because your organization has been using McAfee as your primary antivirus solution, Microsoft Defender Antivirus is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender Antivirus. 
 
 To enable Microsoft Defender Antivirus, we recommend using Intune. However, you can any of the methods that are listed in the following table:
 
@@ -97,7 +97,7 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 
 ### Verify that Microsoft Defender Antivirus is in passive mode
 
-Microsoft Defender Antivirus can run alongside Symantec if you set Microsoft Defender Antivirus to passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+Microsoft Defender Antivirus can run alongside McAfee if you set Microsoft Defender Antivirus to passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
 |Method  |What to do  |
 |---------|---------|
@@ -107,18 +107,18 @@ Microsoft Defender Antivirus can run alongside Symantec if you set Microsoft Def
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
 
-## Add Microsoft Defender ATP to the exclusion list for Symantec
+## Add Microsoft Defender ATP to the exclusion list for McAfee
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for McAfee and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
 |- Windows 10, [version 1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803) or later (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information))<br/>- Windows 10, version 1703 or [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server, version 1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
 |- [Windows 8.1](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2) <br/>- [Windows 7](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows Server 2016](https://docs.microsoft.com/windows/release-information/status-windows-10-1607-and-windows-server-2016)<br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-information/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-information/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOTE**: Where Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
-## Add Symantec to the exclusion list for Microsoft Defender Antivirus
+## Add McAfee to the exclusion list for Microsoft Defender Antivirus
 
-During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender Antivirus exclusion list. 
+During this step of the setup process, you add McAfee and your other security solutions to the Microsoft Defender Antivirus exclusion list. 
 
 When you add [exclusions to Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.
@@ -136,7 +136,7 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <br/><br/>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <br/>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<br/><br/>3. Specify your path and process exclusions. |
 |Registry key |1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
-## Add Symantec to the exclusion list for Microsoft Defender ATP
+## Add McAfee to the exclusion list for Microsoft Defender ATP
 
 To add exclusions to Microsoft Defender ATP, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
 
@@ -204,6 +204,6 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)
+- [Proceed to Phase 3: Onboard to Microsoft Defender ATP](mcafee-to-microsoft-defender-onboard.md)
