@@ -23,9 +23,13 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-To set up policies in Jamf Pro for macOS, you'll need to take the following steps:
+This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
-1. [Onboard the Microsoft Defender ATP package](#)
+You'll need to take the following steps:
+
+1. [Get the Microsoft Defender ATP onboarding package](#)
+
+2. [Create a configuration profile in Jamf Pro using the onboarding package](#)
 
 2. [Configure Microsoft  Defender ATP settings](#)
 
@@ -40,7 +44,7 @@ To set up policies in Jamf Pro for macOS, you'll need to take the following step
 7. [Deploy Microsoft Defender ATP for macOS](#)
 
 
-## Step 1: Onboard the Microsoft Defender ATP package
+## Step 1: Get the Microsoft Defender ATP onboarding package
 
 1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**. 
 
@@ -55,16 +59,7 @@ To set up policies in Jamf Pro for macOS, you'll need to take the following step
 5. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 
-
-
-
-
-
-
-
-
-
-## Step 1: Onboard the package
+## Step 2: Create a configuration profile in Jamf Pro using the onboarding package
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist`.
 
@@ -124,12 +119,15 @@ To set up policies in Jamf Pro for macOS, you'll need to take the following step
 
     ![List of configuration profiles](images/jamfpro-configuration-policies.png)
 
-## Step 2: Configure Microsoft Defender ATP settings
+## Step 3: Configure Microsoft Defender ATP settings
 
 1. In the Jamf Pro dashboard, select **General**.
 
+    ![Image of Jamf Pro dashboard](images/644e0f3af40c29e80ca1443535b2fe32.png)
+
 2. Enter the following details:
 
+    **General**
   - Name: MDATP MDAV configuration settings
   - Description:\<blank\>
   - Category: None (default)
@@ -146,36 +144,34 @@ To set up policies in Jamf Pro for macOS, you'll need to take the following step
 
     ![Image of configuration settings](images/6f85269276b2278eca4bce84f935f87b.png)
 
-5. In **Preferences Domain**, enter `com.microsoft.wdav`.
+5. In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.
 
     ![Image of configuration settings](images/db15f147dd959e872a044184711d7d46.png)
 
-6. Select **Upload PLIST File**.
+6. Select **Choose File**.
 
     ![Image of configuration settings](images/526e978761fc571cca06907da7b01fd6.png)
 
-7. Select **Choose File**.
+7. Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.
 
     ![Image of configuration settings](images/98acea3750113b8dbab334296e833003.png)
 
-8. Select the **MDATP_MDAV_configuration_settings.plist**.
-
-9. Select **Open**.
+9. Select **Upload**.
 
     ![Image of configuration settings](images/0adb21c13206861ba9b30a879ade93d3.png)
 
     ![Image of configuration settings](images/f624de59b3cc86e3e2d32ae5de093e02.png)
 
     >[!NOTE]
-    >If you end-up uploading the Intune file, you get the following error:<br>
+    >If you happen to upload the Intune file, you'll get the following error:<br>
     >![Image of configuration settings](images/8e69f867664668796a3b2904896f0436.png)
 
 
-10. Select **Upload**. 
+10. Select **Save**. 
 
     ![Image of configuration settings](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
-11. Select **Save**.
+11. The file is uploaded.
 
     ![Image of configuration settings](images/33e2b2a1611fdddf6b5b79e54496e3bb.png)
 
@@ -208,6 +204,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 2. Enter the following details:
 
+    **General** 
   - Name: MDATP MDAV Notification settings
   - Description: macOS 10.15 (Catalina) or newer
   - Category: None (default)
@@ -261,47 +258,49 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
+2. Enter the following details:
 
+    **General** 
   - Name: MDATP MDAV MAU settings
   - Description: Microsoft AutoUpdate settings for MDATP for macOS
   - Category: None (default)
   - Distribution Method: Install Automatically(default)
   - Level: Computer Level(default)
 
-2. In **Application & Custom Settings** select **Configure**.
+3. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration setting](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-3. Select **Upload File (PLIST file)**.
+4. Select **Upload File (PLIST file)**.
 
-    ![Image of configuration setting](images/bcd4920afadbc158f8d7de88c11096fb.png)
+    ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)  
 
-4. In **Preference Domain** enter: `com.microsoft.autoupdate2`.
+5. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**
 
     ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)
 
-5. Select **Upload PLIST File**.
+6. Select **Choose File**.
 
     ![Image of configuration setting](images/335aff58950ce62d1dabc289ecdce9ed.png)
 
-6. Select **Choose File** > **MDATP_MDAV_settings.plist**.
+7. Select **MDATP_MDAV_settings.plist**.
 
     ![Image of configuration setting](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-7. Select **Upload**.
+8. Select **Upload**.
     ![Image of configuration setting](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Image of configuration setting](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-8. Select **Save**.
+9. Select **Save**.
 
     ![Image of configuration setting](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
-9. Select the **Scope** tab.
+10. Select the **Scope** tab.
    
      ![Image of configuration setting](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-10. Select **Add**.
+11. Select **Add**.
     
     ![Image of configuration setting](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -309,13 +308,13 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-11. Select **Done**.
+12. Select **Done**.
     
     ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
 ## Step 5:  Grant full disk access to Microsoft Defender ATP
 
-1. In the Jamf Pro dashboard, select the **Scope** tab.
+1. In the Jamf Pro dashboard, select **Configuration Profiles**.
 
     ![Image of configuration setting](images/264493cd01e62c7085659d6fdc26dc91.png)
 
@@ -323,7 +322,8 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 3. Enter the following details:
 
-    - Name: MDATP MDAV - grnat Full Disk Access to EDR and AV
+    **General** 
+    - Name: MDATP MDAV - grant Full Disk Access to EDR and AV
     - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control
     - Category: None
     - Distribution method: Install Automatically
@@ -332,7 +332,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/ba3d40399e1a6d09214ecbb2b341923f.png)
 
-4. In **Application & Custom Settings** select **Configure**.
+4. In **Configure Privacy Preferences Policy Control** select **Configure**.
 
     ![Image of configuration setting](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
 
@@ -392,6 +392,7 @@ leaf[subject.OU] = UBF8T346G9
 
 2. Enter the following details:
 
+    **General** 
   - Name: MDATP MDAV Kernel Extension
   - Description: MDATP kernel extension (kext)
   - Category: None
@@ -404,12 +405,14 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-    ![Image of configuration settings](images/39cf120d3ac3652292d8d1b6d057bd60.png)
+   
 
 4. In **Approved Kernel Extensions** Enter the following details:
 
   - Display Name: Microsoft Corp.
   - Team ID: UBF8T346G9
+
+    ![Image of configuration settings](images/39cf120d3ac3652292d8d1b6d057bd60.png)
 
 5. Select the **Scope** tab.
 
@@ -436,11 +439,11 @@ leaf[subject.OU] = UBF8T346G9
 
 1. Navigate to where you saved `wdav.pkg`.
 
-    ![A screenshot of a computer screen Description automatically generated](images/8dde76b5463047423f8637c86b05c29d.png)
+    ![Image of file explorer](images/8dde76b5463047423f8637c86b05c29d.png)
 
 2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
 
-    ![A screenshot of a computer screen Description automatically generated](images/fb2220fed3a530f4b3ef36f600da0c27.png)
+    ![Image of file explorer](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
 3. Open the Jamf Pro dashboard.
 
@@ -497,9 +500,9 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/9f09cc4cd841559dd389fba7dc57e5e0.png)
 
-    ![A screenshot of a social media post Description automatically generated](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
+    ![Image of configuration settings](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
 
-    ![A screenshot of a social media post Description automatically generated](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+    ![Image of configuration settings](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
     ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
@@ -554,15 +557,3 @@ leaf[subject.OU] = UBF8T346G9
 
 
 
-------------------------
-
-
-Possible end step:
-
-
-
-1. In the Jamf Pro dashboard, navigate to **Configuration Profiles**. 
-
-2. Select **New**.
-
-    ![Image of configuration policies](images/jamfpro-policies.png)
