@@ -23,213 +23,45 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-1. In the Jamf Pro dashboard, navigate to **Configuration Profiles**. 
+To set up policies in Jamf Pro for macOS, you'll need to take the following steps:
 
-2. Select **New**.
+1. [Onboard the Microsoft Defender ATP package](#)
 
-    ![Image of configuration policies](images/jamfpro-policies.png)
+2. [Configure Microsoft  Defender ATP settings](#)
 
-3. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**. 
+3. [Configure Microsoft Defender ATP notification settings](#)
 
-4. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
+4. [Configure Microsoft AutoUpdate (MAU)](#)
+
+5. [Grant full disk access to Microsoft Defender ATP](#)
+
+6. [Approve Kernel extension for Microsoft Defender ATP](#)
+
+7. [Deploy Microsoft Defender ATP for macOS](#)
+
+
+## Step 1: Onboard the Microsoft Defender ATP package
+
+1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**. 
+
+2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
     ![Image of Microsoft Defender Security Center](images/onboarding-macos.png)
 
-5. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
+3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
-6. Extract `WindowsDefenderATPOnboardingPackage.zip` such as `WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso`.
+4. Extract `WindowsDefenderATPOnboardingPackage.zip` such as `WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso`.
 
-7. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
-
-8. Use the following Microsoft Defender ATP configuration settings:
-
-    - enableRealTimeProtection
-    - passiveMode
-    
-    >[!NOTE]
-    >Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
-
-    - exclusions
-    - excludedPath
-    - excludedFileExtension
-    - excludedFileName
-    - exclusionsMergePolicy
-    - allowedThreats
-    
-    >[!NOTE]
-    >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
-        
-    - disallowedThreatActions
-    - potentially_unwanted_application
-    - archive_bomb
-    - cloudService
-    - automaticSampleSubmission
-    - tags
-    - hideStatusMenuIcon
-    
-     For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
-
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>antivirusEngine</key>
-    <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
-        <key>exclusions</key>
-        <array>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <false/>
-                <key>path</key>
-                <string>/var/log/system.log</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <true/>
-                <key>path</key>
-                <string>/home</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedFileExtension</string>
-                <key>extension</key>
-                <string>pdf</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedFileName</string>
-                <key>name</key>
-                <string>cat</string>
-            </dict>
-        </array>
-        <key>exclusionsMergePolicy</key>
-        <string>merge</string>
-        <key>allowedThreats</key>
-        <array>
-            <string>EICAR-Test-File (not a virus)</string>
-        </array>
-        <key>disallowedThreatActions</key>
-        <array>
-            <string>allow</string>
-            <string>restore</string>
-        </array>
-        <key>threatTypeSettings</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>potentially_unwanted_application</string>
-                <key>value</key>
-                <string>block</string>
-            </dict>
-            <dict>
-                <key>key</key>
-                <string>archive_bomb</string>
-                <key>value</key>
-                <string>audit</string>
-            </dict>
-        </array>
-        <key>threatTypeSettingsMergePolicy</key>
-        <string>merge</string>
-    </dict>
-    <key>cloudService</key>
-    <dict>
-        <key>enabled</key>
-        <true/>
-        <key>diagnosticLevel</key>
-        <string>optional</string>
-        <key>automaticSampleSubmission</key>
-        <true/>
-    </dict>
-    <key>edr</key>
-    <dict>
-        <key>tags</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>GROUP</string>
-                <key>value</key>
-                <string>ExampleTag</string>
-            </dict>
-        </array>
-    </dict>
-    <key>userInterface</key>
-    <dict>
-        <key>hideStatusMenuIcon</key>
-        <false/>
-    </dict>
-</dict>
-</plist>
-```
-
-10. Configure the notification settings (macOS 10.15 (Catalina) or newer). For more information, see [Notification settings](mac-install-with-jamf.md#notification-settings).
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>ChannelName</key>
-	<string>InsiderFast</string>
-	<key>HowToCheck</key>
-	<string>AutomaticDownload</string>
-	<key>EnableCheckForUpdatesButton</key>
-	<true/>
-    <key>DisableInsiderCheckbox</key>
-    <false/>
-	<key>SendAllTelemetryEnabled</key>
-	<true/>
-</dict>
-</plist>
-
-```
-
-Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDATP_MDAV_notification_settings.plist`.
+5. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 
-12. Configure Microsoft AutoUpdate (MAU).
 
-    - JAMF - Set preferences for Microsoft AutoUpdate. For more infomation, see [JAMF](mac-updates.md#jamf).
-    - Save the file as e.g. MDATP_MDAV_MAU_settings.plist
 
-    >[!IMPORTANT]
-    >Set the Preference Domain to `com.microsoft.autoupdate2`
 
-    Add path to the location of `com.microsoft.autoupdate2.plist`
 
-    `plutil -lint com.microsoft.autoupdate2.plist`
-    `com.microsoft.autoupdate2.plist: OK`
 
-13. Grant full disk access to Microsoft Defender ATP. 
-    
-    Privacy Preferences Policy Control (TCC,  Full Disk Access for macOS 10.15 (Catalina) and newer).
 
-    For more information, see [Privacy preferences policy control](mac-install-with-jamf.md#privacy-preferences-policy-control).
 
-    a. Select **Options > Privacy Preferences Policy Control**.
-
-    b. Use any identifier and identifier type = Bundle.
-
-    c. Set Code Requirement to identifier 'com.microsoft.wdav' and `anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
-
-    d. Set app or service to `SystemPolicyAllFiles` and access to `Allow`.
-
-14. Approve Kernel Extension for Microsoft Defender ATP.
-
-    a. In **Computers > Configuration Profiles select Options > Approved Kernel Extensions**.
-  
-    b. Use **UBF8T346G9** for **Team Id**.
 
 
 ## Step 1: Onboard the package
@@ -657,19 +489,19 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
-![Image of configuration settings](images/846ca6a7a4be5be7111744091d539cba.png)
+    ![Image of configuration settings](images/846ca6a7a4be5be7111744091d539cba.png)
 
-![Image of configuration settings](images/77d14ea36bea97c4607af0f70c88b812.png)
+    ![Image of configuration settings](images/77d14ea36bea97c4607af0f70c88b812.png)
 
-![Image of configuration settings](images/770827925b3f572fc027e7d50dcc415d.png)
+    ![Image of configuration settings](images/770827925b3f572fc027e7d50dcc415d.png)
 
-![Image of configuration settings](images/9f09cc4cd841559dd389fba7dc57e5e0.png)
+    ![Image of configuration settings](images/9f09cc4cd841559dd389fba7dc57e5e0.png)
 
-![A screenshot of a social media post Description automatically generated](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
+    ![A screenshot of a social media post Description automatically generated](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
 
-![A screenshot of a social media post Description automatically generated](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+    ![A screenshot of a social media post Description automatically generated](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
-![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
+    ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
 
 9. In **New Policy** > **General** Enter the following details:
@@ -717,3 +549,20 @@ leaf[subject.OU] = UBF8T346G9
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![A screenshot of a social media post Description automatically generated](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
+
+
+
+
+
+------------------------
+
+
+Possible end step:
+
+
+
+1. In the Jamf Pro dashboard, navigate to **Configuration Profiles**. 
+
+2. Select **New**.
+
+    ![Image of configuration policies](images/jamfpro-policies.png)
