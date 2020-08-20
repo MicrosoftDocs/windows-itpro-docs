@@ -21,7 +21,7 @@ ms.topic: article
 
 # Migrate from McAfee - Phase 1: Prepare for your migration
 
-|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](McAfee-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |[![Phase 3: Onboard](images/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
 |*You are here!*| | |
 
@@ -82,6 +82,6 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md).
+- [Proceed to set up Microsoft Defender ATP](mcafee-to-microsoft-defender-setup.md).
