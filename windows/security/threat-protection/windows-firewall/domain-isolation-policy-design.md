@@ -50,8 +50,8 @@ Characteristics of this design, as shown in the diagram, include the following:
 -   Untrusted non-domain members (area D) - Devices that are not managed by your organization and have an unknown security configuration must have access only to those devices required for your organization to correctly conduct its business. Domain isolation exists to put a logical barrier between these untrusted Devices and your organization's devices.
 
 After implementing this design, your administrative team will have centralized management of the firewall and connection security rules applied to the devices in your organization.
-
->**Important:**  This design builds on the [Basic Firewall Policy Design](basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
+> [!IMPORTANT]
+> This design builds on the [Basic Firewall Policy Design](basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
 
 This design can be applied to Devices that are part of an Active Directory forest. Active Directory is required to provide the centralized management and deployment of Group Policy objects that contain the connection security rules.
 
