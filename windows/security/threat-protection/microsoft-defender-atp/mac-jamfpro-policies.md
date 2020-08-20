@@ -56,15 +56,145 @@ You'll need to take the following steps:
 
 4. Extract `WindowsDefenderATPOnboardingPackage.zip` such as `WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso`.
 
-5. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
+5. Copy the file from `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist` to your preferred location.
 
 
 ## Step 2: Create a configuration profile in Jamf Pro using the onboarding package
 
-1. Locate the file `WindowsDefenderATPOnboarding.plist`.
+1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-    ![Image of file](images/plist-onboarding-file.png)
+   ![Image of file](images/plist-onboarding-file.png)
 
+2. Use the following Microsoft Defender ATP configuration settings:
+
+    - enableRealTimeProtection
+    - passiveMode
+    
+    >[!NOTE]
+    >Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.
+
+    - exclusions
+    - excludedPath
+    - excludedFileExtension
+    - excludedFileName
+    - exclusionsMergePolicy
+    - allowedThreats
+    
+    >[!NOTE]
+    >EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.
+        
+    - disallowedThreatActions
+    - potentially_unwanted_application
+    - archive_bomb
+    - cloudService
+    - automaticSampleSubmission
+    - tags
+    - hideStatusMenuIcon
+    
+     For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
+
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>antivirusEngine</key>
+    <dict>
+        <key>enableRealTimeProtection</key>
+        <true/>
+        <key>passiveMode</key>
+        <false/>
+        <key>exclusions</key>
+        <array>
+            <dict>
+                <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <false/>
+                <key>path</key>
+                <string>/var/log/system.log</string>
+            </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/home</string>
+            </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedFileExtension</string>
+                <key>extension</key>
+                <string>pdf</string>
+            </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedFileName</string>
+                <key>name</key>
+                <string>cat</string>
+            </dict>
+        </array>
+        <key>exclusionsMergePolicy</key>
+        <string>merge</string>
+        <key>allowedThreats</key>
+        <array>
+            <string>EICAR-Test-File (not a virus)</string>
+        </array>
+        <key>disallowedThreatActions</key>
+        <array>
+            <string>allow</string>
+            <string>restore</string>
+        </array>
+        <key>threatTypeSettings</key>
+        <array>
+            <dict>
+                <key>key</key>
+                <string>potentially_unwanted_application</string>
+                <key>value</key>
+                <string>block</string>
+            </dict>
+            <dict>
+                <key>key</key>
+                <string>archive_bomb</string>
+                <key>value</key>
+                <string>audit</string>
+            </dict>
+        </array>
+        <key>threatTypeSettingsMergePolicy</key>
+        <string>merge</string>
+    </dict>
+    <key>cloudService</key>
+    <dict>
+        <key>enabled</key>
+        <true/>
+        <key>diagnosticLevel</key>
+        <string>optional</string>
+        <key>automaticSampleSubmission</key>
+        <true/>
+    </dict>
+    <key>edr</key>
+    <dict>
+        <key>tags</key>
+        <array>
+            <dict>
+                <key>key</key>
+                <string>GROUP</string>
+                <key>value</key>
+                <string>ExampleTag</string>
+            </dict>
+        </array>
+    </dict>
+    <key>userInterface</key>
+    <dict>
+        <key>hideStatusMenuIcon</key>
+        <false/>
+    </dict>
+</dict>
+</plist>
+```
+
+ 
 2. In the Jamf Pro dashboard, select **New**.
 
     ![Image of Jamf Pro dashboard](images/jamf-pro-configure-profile.png)
@@ -121,11 +251,39 @@ You'll need to take the following steps:
 
 ## Step 3: Configure Microsoft Defender ATP settings
 
-1. In the Jamf Pro dashboard, select **General**.
+1. Use the following Microsoft Defender ATP notification configuration settings:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChannelName</key>
+	<string>InsiderFast</string>
+	<key>HowToCheck</key>
+	<string>AutomaticDownload</string>
+	<key>EnableCheckForUpdatesButton</key>
+	<true/>
+    <key>DisableInsiderCheckbox</key>
+    <false/>
+	<key>SendAllTelemetryEnabled</key>
+	<true/>
+</dict>
+</plist>
+
+```
+
+2.  Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDATP_MDAV_notification_settings.plist`.
+
+
+3.  In the Jamf Pro dashboard, select **General**.
 
     ![Image of Jamf Pro dashboard](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
-2. Enter the following details:
+4. Enter the following details:
 
     **General**
   - Name: MDATP MDAV configuration settings
@@ -136,27 +294,27 @@ You'll need to take the following steps:
 
     ![Image of configuration settings](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-3. In **Application & Custom Settings** select **Configure**.
+5. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration settings](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-4. Select **Upload File (PLIST file)**.
+6. Select **Upload File (PLIST file)**.
 
     ![Image of configuration settings](images/6f85269276b2278eca4bce84f935f87b.png)
 
-5. In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.
+7. In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.
 
     ![Image of configuration settings](images/db15f147dd959e872a044184711d7d46.png)
 
-6. Select **Choose File**.
+8. Select **Choose File**.
 
     ![Image of configuration settings](images/526e978761fc571cca06907da7b01fd6.png)
 
-7. Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.
+9. Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.
 
     ![Image of configuration settings](images/98acea3750113b8dbab334296e833003.png)
 
-9. Select **Upload**.
+10. Select **Upload**.
 
     ![Image of configuration settings](images/0adb21c13206861ba9b30a879ade93d3.png)
 
@@ -167,29 +325,29 @@ You'll need to take the following steps:
     >![Image of configuration settings](images/8e69f867664668796a3b2904896f0436.png)
 
 
-10. Select **Save**. 
+11. Select **Save**. 
 
     ![Image of configuration settings](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
-11. The file is uploaded.
+12. The file is uploaded.
 
     ![Image of configuration settings](images/33e2b2a1611fdddf6b5b79e54496e3bb.png)
 
     ![Image of configuration settings](images/a422e57fe8d45689227e784443e51bd1.png)
 
-12. Select the **Scope** tab.
+13. Select the **Scope** tab.
 
     ![Image of configuration settings](images/9fc17529e5577eefd773c658ec576a7d.png)
 
-13. Select **Contoso's Machine Group**. 
+14. Select **Contoso's Machine Group**. 
 
-14. Select **Add**, then select **Save**.
+15. Select **Add**, then select **Save**.
 
     ![Image of configuration settings](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
     ![Image of configuration settings](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-15. Select **Done**. You'll see the new **Configuration profile**.
+16. Select **Done**. You'll see the new **Configuration profile**.
 
     ![Image of configuration settings](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
