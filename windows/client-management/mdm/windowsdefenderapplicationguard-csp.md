@@ -30,8 +30,7 @@ Turn on Microsoft Defender Application Guard in Enterprise Mode.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
-The following list shows the supported values:  
-Options:
+The following list shows the supported values:
 - 0 - Disable Microsoft Defender Application Guard
 - 1 - Enable Microsoft Defender Application Guard for Microsoft Edge ONLY
 - 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY
