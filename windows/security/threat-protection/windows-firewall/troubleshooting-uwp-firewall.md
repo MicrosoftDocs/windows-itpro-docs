@@ -27,7 +27,7 @@ UWP app network connectivity issues are typically caused by:
 
 1. The UWP app was not permitted to receive loopback traffic. This must be configured. By default, UWP apps are not allowed to receive loopback traffic.
 2. The UWP app is missing the proper capability tokens.
-3. The private range is configured incorrectly. For example, the private ranges is set incorrectly through GP/MDM policies, etc.
+3. The private range is configured incorrectly. For example, the private range is set incorrectly through GP/MDM policies, etc.
 
 To understand these causes more thoroughly, there are several concepts to review.
 
@@ -51,24 +51,24 @@ traces collected on previous releases of Windows.
 
 ## Debugging UWP App Loopback scenarios
 
-If you need to establis a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
+If you need to establish a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
 
 To enable loopback for client outbound connections, run the following at a command prompt:
 
-```dos
+```console
 CheckNetIsolation.exe LoopbackExempt -a -n=<AppContainer or Package Family>
 ```
 
 To enable loopback for server inbound connections,  run the following at a
 command prompt:
-```dos
+```console
 CheckNetIsolation.exe LoopbackExempt -is -n=<AppContainer or Package Family>
 ```
 You can ensure loopback is enabled by checking the appx manifests of both the sender and receiver.
 
 For more information about loopback scenarios, see [Communicating with
 localhost
-(loopback)](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback)
+(loopback)](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback).
 
 ## Debugging Live Drops
 
@@ -76,7 +76,7 @@ If the issue happened recently, but you find you are not able to reproduce the i
 
 If you can consistently reproduce the issue, then you can run the following in an admin command prompt to gather a fresh trace:
 
-```DOS
+```console
 Netsh wfp capture start keywords=19
 <Run UWP app>
 Netsh wfp capture stop
@@ -760,7 +760,7 @@ PrivateNetwork Outbound Default Rule filter.
 
 The following PrivateNetwork Outbound Default Rule filters have conditions for matching Intranet IP addresses. Since the expected Intranet target address,
 10.1.1.1, is not included in these filters it becomes clear that the address is not in the private range. Check the policies that configure the private range
-on the device (MDM, Group Policy, etc) and make sure it includes the private targetaddress you wanted to reach.
+on the device (MDM, Group Policy, etc.) and make sure it includes the private target address you wanted to reach.
 
 **PrivateNetwork Outbound Default Rule Filters, Wfpdiag-Case-5.xml**
 ```xml
