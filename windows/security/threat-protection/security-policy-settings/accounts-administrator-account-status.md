@@ -81,16 +81,13 @@ None. Changes to this policy become effective without a device restart when they
 
 ### Safe mode considerations
 
-When you start a device in safe mode, the disabled administrator account is enabled only if the computer is non-domain joined and there are no other active local administrator accounts. If the computer is joined to a domain, the disabled administrator account is not enabled.
-If the administrator account is disabled, you can still access the computer by using safe mode with the current administrative credentials. For example, if a failure occurs using a secure channel with a domain-joined computer, and there is no other local administrator account, you must restart the device in safe mode to fix the failure.
+When you start a device in safe mode, the disabled administrator account is enabled only if the computer is non-domain joined and there are no other active local administrator accounts. In this case, you can access the computer by using safe mode with the current administrative credentials. If the computer is joined to a domain, the disabled administrator account is not enabled.
 
 ### How to access a disabled Administrator account
 
 You can use the following methods to access a disabled Administrator account:
--   When there is only one local administrator account that is disabled, start the device in safe mode (locally or over a network), and sign in by using the credentials for the administrator account on that computer.
--   When there are local administrator accounts in addition to the built-in account, start the computer in safe mode (locally or over a network), and sign in by using the credentials for the administrator account on that device. An alternate method is to sign in to Windows by using another local 
-Administrator account that was created.
--   When multiple domain-joined servers have a disabled local Administrator account that can be accessed in safe mode, you can remotely run psexec by using the following command: **net user administrator /active: no**.
+-   For non-domain joined computers: when all the local administrator accounts are disabled, start the device in safe mode (locally or over a network), and sign in by using the credentials for the default local administrator account on that computer. 
+-   For domain joined computers: remotely run the command **net user administrator /active: yes** by using psexec to enable the default local administrator account.
 
 ## Security considerations
 
