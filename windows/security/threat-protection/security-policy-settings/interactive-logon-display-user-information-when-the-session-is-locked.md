@@ -66,7 +66,7 @@ This setting has these possible values:
     For a domain logon only, the domain\username is displayed.
     The **Privacy** setting is automatically on and grayed out.
     
--   Blank.
+-   **Blank**
 
     Default setting.
     This translates to “Not defined,” but it will display the user’s full name in the same manner as the option **User display name only**.
