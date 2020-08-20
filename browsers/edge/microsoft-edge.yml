@@ -102,7 +102,7 @@ landingContent:
             url: https://www.microsoft.com/itpro/microsoft-edge/web-app-compat-toolkit
 
   # Card (optional)
-  - title: Deployment
+  - title: End user readiness
     linkLists:
       - linkListType: video
         links:
