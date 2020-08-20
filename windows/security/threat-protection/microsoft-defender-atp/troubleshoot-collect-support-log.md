@@ -27,7 +27,9 @@ When contacting support, you may be asked to provide the output package of the M
 
 This topic provides instructions on how to run the tool via Live Response.
 
-1. Download the [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
+1. Download the appropriate script
+    * Sense: [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
+    * Microsoft Defender AV: [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
  
 2.	Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
 
