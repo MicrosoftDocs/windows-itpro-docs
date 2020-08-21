@@ -56,7 +56,7 @@ Select the deployment steps corresponding to your environment and your preferred
 
 ### Manual deployment
 
-#### Approve the system extensions & enable network extension
+#### Approve the system extensions & enable the network extension
 
 Once all deployment prerequisites are met, restart your device to start the system extension approval and activation process.
 
