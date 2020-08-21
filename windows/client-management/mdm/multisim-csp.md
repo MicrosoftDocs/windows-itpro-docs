@@ -1,6 +1,6 @@
 ---
 title: MultiSIM CSP
-description: MultiSIM CSP allows the enterprise to manage devices with dual SIM single active configuration.
+description: MultiSIM configuration service provider (CSP) allows the enterprise to manage devices with dual SIM single active configuration.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
