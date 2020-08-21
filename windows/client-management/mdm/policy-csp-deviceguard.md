@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceGuard
-description: Policy CSP - DeviceGuard
+description: Learn how to use the Policy CSP - DeviceGuard setting to allow the IT admin to configure the launch of System Guard.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

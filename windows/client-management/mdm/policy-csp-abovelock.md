@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - AboveLock
-description: Learn the various AboveLock Policy CSP for Windows editions of Home, Pro, Business, and more. 
+description: Learn the various AboveLock Policy configuration service provider (CSP) for Windows editions of Home, Pro, Business, and more. 
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article

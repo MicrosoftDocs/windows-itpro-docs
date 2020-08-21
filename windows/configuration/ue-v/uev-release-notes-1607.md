@@ -1,6 +1,6 @@
 ---
 title: User Experience Virtualization (UE-V) Release Notes
-description: Read the latest information required to successfully install and use UE-V that is not included in the User Experience Virtualization (UE-V) documentation.
+description: Read the latest information required to successfully install and use User Experience Virtualization (UE-V) that is not included in the UE-V documentation.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

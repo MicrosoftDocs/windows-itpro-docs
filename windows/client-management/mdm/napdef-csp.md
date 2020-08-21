@@ -1,6 +1,6 @@
 ---
 title: NAPDEF CSP
-description: NAPDEF CSP
+description: Learn how the NAPDEF configuration service provider (CSP) is used to add, modify, or delete WAP network access points (NAPs).
 ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
 ms.reviewer: 
 manager: dansimp

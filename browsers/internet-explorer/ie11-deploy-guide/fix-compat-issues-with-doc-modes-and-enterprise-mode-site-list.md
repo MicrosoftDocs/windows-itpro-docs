@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Fix web compatibility issues using document modes and the Enterprise Mode site list
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site. This addition to the site list is a continuation of our commitment to help you upgrade and stay up-to-date on the latest version of Internet Explorer, while still preserving your investments in existing apps.
 
 ## What does this mean for me?
