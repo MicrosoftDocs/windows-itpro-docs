@@ -1,6 +1,6 @@
 ---
-title: Restrict Access to Only Trusted Devices (Windows 10)
-description: Restrict Access to Only Trusted Devices
+title: Restrict access to only trusted devices (Windows 10)
+description: Restrict access to only trusted devices
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
 ms.author: dansimp
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 
-# Restrict Access to Only Trusted Devices
+# Restrict access to only trusted devices
 
 **Applies to**
 -   Windows 10
@@ -27,7 +27,8 @@ Your organizational network likely has a connection to the Internet. You also li
 
 To mitigate this risk, you must be able to isolate the devices you trust, and restrict their ability to receive unsolicited network traffic from untrusted devices. By using connection security and firewall rules available in Windows Defender Firewall with Advanced Security, you can logically isolate the devices that you trust by requiring that all unsolicited inbound network traffic be authenticated. Authentication ensures that each device or user can positively identify itself by using credentials that are trusted by the other device. Connection security rules can be configured to use IPsec with the Kerberos V5 protocol available in Active Directory, or certificates issued by a trusted certification authority as the authentication method.
 
->**Note:**  Because the primary authentication method recommended for devices that are running Windows is to use the Kerberos V5 protocol with membership in an Active Directory domain, this guide refers to this logical separation of computers as *domain isolation*, even when certificates are used to extend the protection to devices that are not part of an Active Directory domain.
+> [!NOTE]
+> Because the primary authentication method recommended for devices that are running Windows is to use the Kerberos V5 protocol with membership in an Active Directory domain, this guide refers to this logical separation of computers as *domain isolation*, even when certificates are used to extend the protection to devices that are not part of an Active Directory domain.
 
 The protection provided by domain isolation can help you comply with regulatory and legislative requirements, such as those found in the Federal Information Security Management Act of 2002 (FISMA), the Sarbanes-Oxley Act of 2002, the Health Insurance Portability and Accountability Act of 1996 (HIPAA), and other government and industry regulations.
 
