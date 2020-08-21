@@ -697,8 +697,6 @@ leaf[subject.OU] = UBF8T346G9
 6. In **Packages**, select **+ New**. 
     ![A picture containing bird Description automatically generated](images/57aa4d21e2ccc65466bf284701d4e961.png)
 
-    ![Image of configuration settings](images/21de3658bf58b1b767a17358a3f06341.png)
-
 7. In **New Package** Enter the following details:
 
     **General tab**
@@ -706,24 +704,23 @@ leaf[subject.OU] = UBF8T346G9
     - Category: None (default)
     - Filename: Choose File
 
+    ![Image of configuration settings](images/21de3658bf58b1b767a17358a3f06341.png)
+
     Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.
     
     ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-    Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+8. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
     - Manifest File: Select **Upload Manifest File**. 
 
     **Options tab**<br> Keep default values.
 
     **Limitations tab**<br> Keep default values.
-
+    
+     ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. Select **Save**. 
-
-    ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
-
-9. The package is uploaded to Jamf Pro. 
+9. Select **Save**. The package is uploaded to Jamf Pro. 
     ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
     It can take a few minutes for the package to be available for deployment.
@@ -733,7 +730,7 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration settings](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
-11. Select **New** to create a new policy.
+11. Select **+ New** to create a new policy.
 
     ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
@@ -751,7 +748,7 @@ leaf[subject.OU] = UBF8T346G9
   
 14. Select **Save**. 
  
-15. Select **Configure**.
+15. Select **Packages > Configure**.
  
     ![Image of configuration settings](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
