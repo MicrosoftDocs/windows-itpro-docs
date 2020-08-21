@@ -38,17 +38,17 @@ These steps assume you already have Microsoft Defender ATP running on your devic
 - Minimum product version: **101.03.73**
 - Your device must be in the **Insider Fast update channel**. You can check the update channel using the following command:
 
-    ```bash
-    $ mdatp --health releaseRing
-    ```
+```bash
+mdatp --health releaseRing
+```
 
-    If your device is not already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
+If your device is not already in the Insider Fast update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
-    ```bash
-    $ defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
-    ```
+```bash
+defaults write com.microsoft.autoupdate2 ChannelName -string InsiderFast
+```
 
-    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md#set-the-channel-name).
+Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md#set-the-channel-name).
 
 ## Deployment steps
 
@@ -95,7 +95,7 @@ In order for the changes to take effect, you must reboot your device.
 From the Terminal, run the following command:
 
 ```bash
-$ mdatp health --field real_time_protection_subsystem
+mdatp health --field real_time_protection_subsystem
 ```
 
 Terminal output `endpoint_security_extension` indicates the product is using the system extensions functionality.
@@ -118,21 +118,21 @@ If this command prints `endpoint_security_extension`, then the product is using 
 
 1. Test EICAR detection. From a Terminal window, run:
 
-    ```bash
-    $ curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
-    ```
+```bash
+curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
+```
 
-    Verify that the EICAR file is quarantined. This can be done from the user interface (from the Protection History page) or command line using the following command:
+Verify that the EICAR file is quarantined. This can be done from the user interface (from the Protection History page) or command line using the following command:
 
-    ```bash
-    $ mdatp threat list
-    ```
+```bash
+mdatp threat list
+```
 
-2.	Test EDR DIY scenario. From a terminal window, run:
+2. Test EDR DIY scenario. From a terminal window, run:
 
-    ```bash
-    $ curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
-    ```
+```bash
+curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
+```
 
     Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarios.
 
