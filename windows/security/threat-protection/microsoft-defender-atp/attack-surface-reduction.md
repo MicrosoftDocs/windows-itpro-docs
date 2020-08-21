@@ -3,7 +3,6 @@ title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -113,7 +112,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -327,7 +326,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include:
 
 * Executable files (such as .exe, .dll, or .scr)
-* Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+* Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -343,7 +342,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes, while till allowing legitimate Outlook functions.
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
 This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
@@ -391,7 +390,7 @@ This rule was introduced in:
 - [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
-Intune name: Block persistence through WMI event subscription
+Intune name: Not yet available
 
 Configuration Manager name: Not yet available
 

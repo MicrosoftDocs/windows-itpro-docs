@@ -5,12 +5,12 @@ ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
 ms.date: 10/16/2017
 ms.topic: article
 ---

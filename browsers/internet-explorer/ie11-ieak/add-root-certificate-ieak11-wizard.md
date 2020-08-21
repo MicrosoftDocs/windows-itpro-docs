@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Add a Root Certificate page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 We’re sorry. While we continue to recommend that you digitally sign your package, we’ve removed all of the functionality that allowed you to add a root certificate using the Internet Explorer Customization Wizard 11. The wizard page itself will be removed in a future version of the IEAK.
 
 Click **Next** to go to the [Programs](programs-ieak11-wizard.md) page or **Back** to go to the [Security and Privacy Settings](security-and-privacy-settings-ieak11-wizard.md) page.

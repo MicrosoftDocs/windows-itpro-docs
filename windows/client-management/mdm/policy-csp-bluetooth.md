@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Bluetooth
-description: Policy CSP - Bluetooth
+description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -460,14 +460,14 @@ For more information on allowed key sizes, refer to Bluetooth Core Specification
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in Windows 10, version 1909.
--   8 - Added in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 <!--/Policies-->
 
 <hr/>

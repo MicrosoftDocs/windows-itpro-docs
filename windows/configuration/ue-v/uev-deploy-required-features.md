@@ -1,6 +1,6 @@
 ---
 title: Deploy required UE-V features
-description: Deploy required UE-V features
+description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example a network share that stores and retrieves user settings.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

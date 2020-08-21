@@ -35,7 +35,7 @@ Retrieves a collection of Alerts.
 
 
 ## Limitations
-1. You can get alerts last updated in the past 30 days.
+1. You can get alerts last updated according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 

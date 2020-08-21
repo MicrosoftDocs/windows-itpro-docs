@@ -61,7 +61,7 @@ There are several methods and deployment tools that you can use to install and c
 The three most recent major releases of macOS are supported.
 
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
-- Disk space: 650 MB
+- Disk space: 1GB
 
 Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 
@@ -80,8 +80,8 @@ The following downloadable spreadsheet lists the services and their associated U
 
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
-- Proxy auto-config (PAC)
-- Web Proxy Auto-discovery Protocol (WPAD)
+- Proxy autoconfig (PAC)
+- Web Proxy Autodiscovery Protocol (WPAD)
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
@@ -96,7 +96,7 @@ To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/ap
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 The output from this command should be similar to the following:
@@ -110,7 +110,7 @@ The output from this command should be similar to the following:
 
 Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
-$ mdatp --connectivity-test
+mdatp --connectivity-test
 ```
 
 ## How to update Microsoft Defender ATP for Mac

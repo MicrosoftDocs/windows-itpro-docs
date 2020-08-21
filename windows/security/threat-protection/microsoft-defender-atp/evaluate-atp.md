@@ -37,7 +37,7 @@ These capabilities help prevent attacks and exploitations from infecting your or
 - [Evaluate application guard](../microsoft-defender-application-guard/test-scenarios-md-app-guard.md)
 - [Evaluate network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
-## Evaluate next generation protection
+## Evaluate next-generation protection
 
 Next gen protections help detect and block the latest threats.
 
