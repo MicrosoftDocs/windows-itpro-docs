@@ -252,11 +252,11 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
-<td align="left"><p><strong>Parameters</strong></p></td>
+<td align="left"><p><b>Name</b></p></td>
+<td align="left"><p><b>Parameters</b></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Add-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-ADAccountOrGroup</p>
 <p>-ADAccountOrGroupProtector</p>
 <p>-Confirm</p>
@@ -278,26 +278,26 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Backup-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Backup-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-KeyProtectorId</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Disable-BitLocker</strong></p></td>
+<td align="left"><p><b>Disable-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Disable-BitLockerAutoUnlock</strong></p></td>
+<td align="left"><p><b>Disable-BitLockerAutoUnlock</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Enable-BitLocker</strong></p></td>
+<td align="left"><p><b>Enable-BitLocker</b></p></td>
 <td align="left"><p>-AdAccountOrGroup</p>
 <p>-AdAccountOrGroupProtector</p>
 <p>-Confirm</p>
@@ -322,44 +322,44 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Enable-BitLockerAutoUnlock</strong></p></td>
+<td align="left"><p><b>Enable-BitLockerAutoUnlock</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Get-BitLockerVolume</strong></p></td>
+<td align="left"><p><b>Get-BitLockerVolume</b></p></td>
 <td align="left"><p>-MountPoint</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Lock-BitLocker</strong></p></td>
+<td align="left"><p><b>Lock-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-ForceDismount</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Remove-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Remove-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-KeyProtectorId</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Resume-BitLocker</strong></p></td>
+<td align="left"><p><b>Resume-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Suspend-BitLocker</strong></p></td>
+<td align="left"><p><b>Suspend-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-RebootCount</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Unlock-BitLocker</strong></p></td>
+<td align="left"><p><b>Unlock-BitLocker</b></p></td>
 <td align="left"><p>-AdAccountOrGroup</p>
 <p>-Confirm</p>
 <p>-MountPoint</p>
@@ -374,7 +374,7 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
  
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
 A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLocker</code> volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
-Occasionally, all protectors may not be shown when using <strong>Get-BitLockerVolume</strong> due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
+Occasionally, all protectors may not be shown when using <b>Get-BitLockerVolume</b> due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
 
 > **Note:**  In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
  
