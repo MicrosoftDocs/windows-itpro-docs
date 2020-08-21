@@ -1,6 +1,6 @@
 ---
 title: Server Isolation Policy Design (Windows 10)
-description: Server Isolation Policy Design
+description: Learn about server isolation policy design, where you assign servers to a zone that allows access only to members of an approved network access group.
 ms.assetid: f93f65cd-b863-461e-ab5d-a620fd962c9a
 ms.reviewer: 
 ms.author: dansimp
