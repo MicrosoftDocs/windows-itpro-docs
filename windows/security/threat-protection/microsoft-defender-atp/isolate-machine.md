@@ -84,13 +84,13 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```console
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/isolate
 Content-type: application/json
 {
   "Comment": "Isolate machine due to alert 1234",
   “IsolationType”: “Full” 
 }
-
+```
 
 - To unisolate a device, see [Release device from isolation](unisolate-machine.md).
