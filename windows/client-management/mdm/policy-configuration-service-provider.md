@@ -1,6 +1,6 @@
 ---
 title: Policy CSP
-description: Policy CSP
+description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10.
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
@@ -165,6 +165,165 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites" id="activexcontrols-approvedinstallationsites">ActiveXControls/ApprovedInstallationSites</a>
+  </dd>
+</dl>
+
+### ADMX_AddRemovePrograms policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-defaultcategory" id="admx-addremoveprograms-defaultcategory">ADMX_AddRemovePrograms/DefaultCategory</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfromcdorfloppy" id="admx-addremoveprograms-noaddfromcdorfloppy">ADMX_AddRemovePrograms/NoAddFromCDorFloppy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfrominternet" id="admx-addremoveprograms-noaddfrominternet">ADMX_AddRemovePrograms/NoAddFromInternet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfromnetwork" id="admx-addremoveprograms-noaddfromnetwork">ADMX_AddRemovePrograms/NoAddFromNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddpage" id="admx-addremoveprograms-noaddpage">ADMX_AddRemovePrograms/NoAddPage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddremoveprograms" id="admx-addremoveprograms-noaddremoveprograms">ADMX_AddRemovePrograms/NoAddRemovePrograms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-nochooseprogramspage" id="admx-addremoveprograms-nochooseprogramspage">ADMX_AddRemovePrograms/NoChooseProgramsPage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noremovepage" id="admx-addremoveprograms-noremovepage">ADMX_AddRemovePrograms/NoRemovePage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noservices" id="admx-addremoveprograms-noservices">ADMX_AddRemovePrograms/NoServices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-nosupportinfo" id="admx-addremoveprograms-nosupportinfo">ADMX_AddRemovePrograms/NoSupportInfo</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-nowindowssetuppage" id="admx-addremoveprograms-nowindowssetuppage">ADMX_AddRemovePrograms/NoWindowsSetupPage</a>
+  </dd>
+</dl>
+
+### ADMX_AppCompat policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatprevent16bitmach" id="admx-appcompat-appcompatprevent16bitmach">ADMX_AppCompat/AppCompatPrevent16BitMach</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatremoveprogramcompatproppage" id="admx-appcompat-appcompatremoveprogramcompatproppage">ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffapplicationimpacttelemetry" id="admx-appcompat-appcompatturnoffapplicationimpacttelemetry">ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffswitchback" id="admx-appcompat-appcompatturnoffswitchback">ADMX_AppCompat/AppCompatTurnOffSwitchBack</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffengine" id="admx-appcompat-appcompatturnoffengine">ADMX_AppCompat/AppCompatTurnOffEngine</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2">ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffuseractionrecord" id="admx-appcompat-appcompatturnoffuseractionrecord">ADMX_AppCompat/AppCompatTurnOffUserActionRecord</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appcompat.md#admx-appcompat-appcompatturnoffprograminventory" id="admx-appcompat-appcompatturnoffprograminventory">ADMX_AppCompat/AppCompatTurnOffProgramInventory</a>
+  </dd>
+</dl>
+
+### ADMX_AuditSettings policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-auditsettings.md#admx-auditsettings-includecmdline" id="admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
+  </dd>
+</dl>
+
+### ADMX_DnsClient policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-allowfqdnnetbiosqueries" id="admx-dnsclient-dns-allowfqdnnetbiosqueries">ADMX_DnsClient/DNS_AllowFQDNNetBiosQueries</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-appendtomultilabelname" id="admx-dnsclient-dns-appendtomultilabelname">ADMX_DnsClient/DNS_AppendToMultiLabelName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-domain" id="admx-dnsclient-dns-domain">ADMX_DnsClient/DNS_Domain</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-domainnamedevolutionlevel" id="admx-dnsclient-dns-domainnamedevolutionlevel">ADMX_DnsClient/DNS_DomainNameDevolutionLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-idnencoding" id="admx-dnsclient-dns-idnencoding">ADMX_DnsClient/DNS_IdnEncoding</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-idnmapping" id="admx-dnsclient-dns-idnmapping">ADMX_DnsClient/DNS_IdnMapping</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-nameserver" id="admx-dnsclient-dns-nameserver">ADMX_DnsClient/DNS_NameServer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-preferlocalresponsesoverlowerorderdns" id="admx-dnsclient-dns-preferlocalresponsesoverlowerorderdns">ADMX_DnsClient/DNS_PreferLocalResponsesOverLowerOrderDns</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-primarydnssuffix" id="admx-dnsclient-dns-primarydnssuffix">ADMX_DnsClient/DNS_PrimaryDnsSuffix</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registeradaptername" id="admx-dnsclient-dns-registeradaptername">ADMX_DnsClient/DNS_RegisterAdapterName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registerreverselookup" id="admx-dnsclient-dns-registerreverselookup">ADMX_DnsClient/DNS_RegisterReverseLookup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registrationenabled" id="admx-dnsclient-dns-registrationenabled">ADMX_DnsClient/DNS_RegistrationEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registrationoverwritesinconflict" id="admx-dnsclient-dns-registrationoverwritesinconflict">ADMX_DnsClient/DNS_RegistrationOverwritesInConflict</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registrationrefreshinterval" id="admx-dnsclient-dns-registrationrefreshinterval">ADMX_DnsClient/DNS_RegistrationRefreshInterval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-registrationttl" id="admx-dnsclient-dns-registrationttl">ADMX_DnsClient/DNS_RegistrationTtl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-searchlist" id="admx-dnsclient-dns-searchlist">ADMX_DnsClient/DNS_SearchList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-smartmultihomednameresolution" id="admx-dnsclient-dns-smartmultihomednameresolution">ADMX_DnsClient/DNS_SmartMultiHomedNameResolution</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-smartprotocolreorder" id="admx-dnsclient-dns-smartprotocolreorder">ADMX_DnsClient/DNS_SmartProtocolReorder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-updatesecuritylevel" id="admx-dnsclient-dns-updatesecuritylevel">ADMX_DnsClient/DNS_UpdateSecurityLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-updatetopleveldomainzones" id="admx-dnsclient-dns-updatetopleveldomainzones">ADMX_DnsClient/DNS_UpdateTopLevelDomainZones</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-usedomainnamedevolution" id="admx-dnsclient-dns-usedomainnamedevolution">ADMX_DnsClient/DNS_UseDomainNameDevolution</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dnsclient.md#admx-dnsclient-turn-off-multicast" id="admx-dnsclient-turn-off-multicast">ADMX_DnsClient/Turn_Off_Multicast</a>
+  </dd>
+</dl>
+
+### ADMX_EventForwarding policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventforwarding.md#admx_eventforwarding-forwarderresourceusage" id="admx_eventforwarding-forwarderresourceusage">ADMX_EventForwarding/ForwarderResourceUsage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventforwarding.md#admx_eventforwarding-subscriptionmanager" id="admx_eventforwarding-subscriptionmanager">ADMX_EventForwarding/SubscriptionManager</a>
   </dd>
 </dl>
 

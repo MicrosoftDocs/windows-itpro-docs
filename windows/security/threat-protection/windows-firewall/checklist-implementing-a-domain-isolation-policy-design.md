@@ -25,7 +25,8 @@ ms.date: 08/17/2017
 
 This parent checklist includes cross-reference links to important concepts about the domain isolation policy design. It also contains links to subordinate checklists that will help you complete the tasks that are required to implement this design.
 
->**Note:**  Complete the tasks in this checklist in order. When a reference link takes you to a procedure, return to this topic after you complete the steps in that procedure so that you can proceed with the remaining tasks in this checklist.
+> [!NOTE]
+> Complete the tasks in this checklist in order. When a reference link takes you to a procedure, return to this topic after you complete the steps in that procedure so that you can proceed with the remaining tasks in this checklist.
 
 The procedures in this section use the Group Policy MMC snap-ins to configure the GPOs, but you can also use Windows PowerShell to configure GPOs. For more info, see [Windows Defender Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md).
 
@@ -33,7 +34,7 @@ The procedures in this section use the Group Policy MMC snap-ins to configure th
 
 | Task | Reference |
 | - | - |
-| Review important concepts and examples for the domain isolation policy design, determine your Windows Defender Firewall with Advanced Security deployment goals, and customize this design to meet the needs of your organization.| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)<br/>[Domain Isolation Policy Design](domain-isolation-policy-design.md)<br/>[Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md)<br/>[Planning Domain Isolation Zones](planning-domain-isolation-zones.md) |
+| Review important concepts and examples for the domain isolation policy design, determine your Windows Defender Firewall with Advanced Security implementation goals, and customize this design to meet the needs of your organization.| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)<br/>[Domain Isolation Policy Design](domain-isolation-policy-design.md)<br/>[Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md)<br/>[Planning Domain Isolation Zones](planning-domain-isolation-zones.md) |
 | Create the GPOs and connection security rules for the isolated domain.| [Checklist: Configuring Rules for the Isolated Domain](checklist-configuring-rules-for-the-isolated-domain.md)| 
 | Create the GPOs and connection security rules for the boundary zone.| [Checklist: Configuring Rules for the Boundary Zone](checklist-configuring-rules-for-the-boundary-zone.md)| 
 | Create the GPOs and connection security rules for the encryption zone.| [Checklist: Configuring Rules for the Encryption Zone](checklist-configuring-rules-for-the-encryption-zone.md)| 

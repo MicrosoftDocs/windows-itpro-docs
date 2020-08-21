@@ -1,6 +1,6 @@
 ---
 title: EnterpriseExt DDF
-description: EnterpriseExt DDF
+description: Learn about the OMA DM device description framework (DDF) for the EnterpriseExt configuration service provider (CSP).
 ms.assetid: 71BF81D4-FBEC-4B03-BF99-F7A5EDD4F91B
 ms.reviewer: 
 manager: dansimp
