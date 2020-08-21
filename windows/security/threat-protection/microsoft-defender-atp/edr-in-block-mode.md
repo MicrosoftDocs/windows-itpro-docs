@@ -87,7 +87,9 @@ Because Microsoft Defender Antivirus detects and remediates malicious items, it'
 
 Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and device learning models.
 
-## Related articles
+## See also
+
+[Tech Community blog: Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 
 [Behavioral blocking and containment](behavioral-blocking-containment.md)
 
