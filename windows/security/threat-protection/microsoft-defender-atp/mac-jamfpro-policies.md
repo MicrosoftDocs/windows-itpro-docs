@@ -334,34 +334,89 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 1. Use the following Microsoft Defender ATP notification configuration settings:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>ChannelName</key>
-	<string>InsiderFast</string>
-	<key>HowToCheck</key>
-	<string>AutomaticDownload</string>
-	<key>EnableCheckForUpdatesButton</key>
-	<true/>
-    <key>DisableInsiderCheckbox</key>
-    <false/>
-	<key>SendAllTelemetryEnabled</key>
-	<true/>
-</dict>
-</plist>
-
-```
+    <dict>
+        <key>PayloadContent</key>
+            <array>
+                <dict>
+                    <key>NotificationSettings</key>
+                    <array>
+                        <dict>
+                            <key>AlertType</key>
+                            <integer>2</integer>
+                            <key>BadgesEnabled</key>
+                            <true/>
+                            <key>BundleIdentifier</key>
+                            <string>com.microsoft.autoupdate2</string>
+                            <key>CriticalAlertEnabled</key>
+                            <false/><key>GroupingType</key>
+                            <integer>0</integer>
+                            <key>NotificationsEnabled</key>
+                            <true/>
+                            <key>ShowInLockScreen</key>
+                            <false/>
+                            <key>ShowInNotificationCenter</key>
+                            <true/>
+                            <key>SoundsEnabled</key>
+                            <true/>
+                        </dict>
+                        <dict>
+                            <key>AlertType</key>
+                            <integer>2</integer><key>BadgesEnabled</key>
+                            <true/><key>BundleIdentifier</key>
+                            <string>com.microsoft.wdav.tray</string>
+                            <key>CriticalAlertEnabled</key>
+                            <false/><key>GroupingType</key>
+                            <integer>0</integer>
+                            <key>NotificationsEnabled</key>
+                            <true/><key>ShowInLockScreen</key>
+                            <false/><key>ShowInNotificationCenter</key>
+                            <true/><key>SoundsEnabled</key>
+                            <true/>
+                        </dict>
+                    </array>
+                    <key>PayloadDescription</key>
+                    <string/><key>PayloadDisplayName</key>
+                    <string>notifications</string>
+                    <key>PayloadEnabled</key>
+                    <true/><key>PayloadIdentifier</key>
+                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+                    <key>PayloadOrganization</key>
+                    <string>Microsoft</string>
+                    <key>PayloadType</key>
+                    <string>com.apple.notificationsettings</string>
+                    <key>PayloadUUID</key>
+                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+                    <key>PayloadVersion</key>
+                    <integer>1</integer>
+                </dict>
+            </array>
+            <key>PayloadDescription</key>
+            <string/><key>PayloadDisplayName</key>
+            <string>mdatp - allow notifications</string>
+            <key>PayloadEnabled</key><true/>
+            <key>PayloadIdentifier</key>
+            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft</string>
+            <key>PayloadRemovalDisallowed</key>
+            <false/><key>PayloadScope</key>
+            <string>System</string>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadUUID</key>
+            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+    </dict>
+ </plist>   
+   ```
 
 2.  Save it as `MDATP_MDAV_notification_settings.plist`.
 
 3. In the Jamf Pro dashboard, select **General**. 
-    
-    ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
-
+       
 4. Enter the following details:
 
     **General** 
@@ -371,7 +426,8 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
   - Distribution Method: Install Automatically(default)
   - Level: Computer Level(default)
 
-    ![Image of configuration settings](images/abccba0b620cec06b03d219832667fe1.png)
+    ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+
 
 5. Select **Upload File (PLIST file)**.
 
@@ -448,40 +504,40 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
   - Distribution Method: Install Automatically(default)
   - Level: Computer Level(default)
 
-4. In **Application & Custom Settings** select **Configure**.
+5. In **Application & Custom Settings** select **Configure**.
 
     ![Image of configuration setting](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-5. Select **Upload File (PLIST file)**.
+6. Select **Upload File (PLIST file)**.
 
     ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)  
 
-6. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.
+7. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.
 
     ![Image of configuration setting](images/1213872db5833aa8be535da57653219f.png)
 
-7. Select **Choose File**.
+8. Select **Choose File**.
 
     ![Image of configuration setting](images/335aff58950ce62d1dabc289ecdce9ed.png)
 
-8. Select **MDATP_MDAV_MAU_settings.plist**.
+9. Select **MDATP_MDAV_MAU_settings.plist**.
 
     ![Image of configuration setting](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-9. Select **Upload**.
+10. Select **Upload**.
     ![Image of configuration setting](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Image of configuration setting](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-10. Select **Save**.
+11. Select **Save**.
 
     ![Image of configuration setting](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
-11. Select the **Scope** tab.
+12. Select the **Scope** tab.
    
      ![Image of configuration setting](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-12. Select **Add**.
+13. Select **Add**.
     
     ![Image of configuration setting](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -489,7 +545,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-13. Select **Done**.
+14. Select **Done**.
     
     ![Image of configuration setting](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
@@ -651,85 +707,78 @@ leaf[subject.OU] = UBF8T346G9
     - Filename: Choose File
 
     Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.
+    
+    ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-    Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**
+    Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
     - Manifest File: Select **Upload Manifest File**. 
 
-    **Options tab** 
-    Keep default values.
+    **Options tab**<br> Keep default values.
 
-    **Limitations tab** 
-    Keep default values.
+    **Limitations tab**<br> Keep default values.
 
-
+   
 8. Select **Save**. 
-
-    ![A screenshot of a computer screen Description automatically generated](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
     ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
+9. The package is uploaded to Jamf Pro. 
     ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
+    It can take a few minutes for the package to be available for deployment.
     ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
-    ![Image of configuration settings](images/846ca6a7a4be5be7111744091d539cba.png)
-
-    ![Image of configuration settings](images/77d14ea36bea97c4607af0f70c88b812.png)
-
-    ![Image of configuration settings](images/770827925b3f572fc027e7d50dcc415d.png)
-
-    ![Image of configuration settings](images/9f09cc4cd841559dd389fba7dc57e5e0.png)
-
-    ![Image of configuration settings](images/7acc1b24846d3388d3b29c1d7a2dd141.png)
+10. Navigate to the **Policies** page.
 
     ![Image of configuration settings](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+
+11. Select **New** to create a new policy.
 
     ![Image of configuration settings](images/847b70e54ed04787e415f5180414b310.png)
 
 
-9. In **New Policy** > **General** Enter the following details:
+12. In **General** Enter the following details:
 
-    - Display name: MDATP Onboarding Contoso 200329 v100.86.92
+    - Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later
 
     ![Image of configuration settings](images/625ba6d19e8597f05e4907298a454d28.png)
 
-    
-
-10. Select **Recurring Check-in**. 
+13. Select **Recurring Check-in**. 
     
     ![Image of configuration settings](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-   
-11. Select **Save**. 
+  
+14. Select **Save**. 
  
-12. Select **Configure**.
+15. Select **Configure**.
  
     ![Image of configuration settings](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
+16. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
+
     ![Image of configuration settings](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
- 
+
+17. Select **Save**.
     ![Image of configuration settings](images/9d6e5386e652e00715ff348af72671c6.png)
-   
+
+18. Select the **Scope** tab.   
     ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
-13. In **New Policy**, Enter the following details:
+19. Select the target computers.
 
-    **Options**
-    - Select **Install**.
-    ![A screenshot of a computer screen Description automatically generated](images/6eda18a64a660fa149575454e54e7156.png)
+    ![Image of configuration settings](images/6eda18a64a660fa149575454e54e7156.png)
 
-    **Scope**
-    - Select **Add**.
-    ![A screenshot of a computer screen Description automatically generated](images/1c08d097829863778d562c10c5f92b67.png)
+    **Scope**<br>
+    Select **Add**.
+    ![Image of configuration settings](images/1c08d097829863778d562c10c5f92b67.png)
 
-    **Self Service** 
     ![Image of configuration settings](images/216253cbfb6ae738b9f13496b9c799fd.png)
 
-
+    **Self Service** <br>
     ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-14. Select **Done**. 
+20. Select **Done**. 
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
