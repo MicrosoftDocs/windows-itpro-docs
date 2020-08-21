@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - MSSLegacy
-description: Policy CSP - MSSLegacy
+description: Learn how Policy CSP - MSSLegacy, an ADMX-backed policy, requires a special SyncML format to enable or disable. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

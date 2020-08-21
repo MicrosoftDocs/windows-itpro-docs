@@ -1,6 +1,6 @@
 ---
 title: WiFi DDF file
-description: WiFi DDF file
+description: Learn about the OMA DM device description framework (DDF) for the WiFi configuration service provider (CSP).
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
 ms.reviewer: 
 manager: dansimp

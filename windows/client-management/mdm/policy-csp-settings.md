@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Settings
-description: Policy CSP - Settings
+description: Learn how to use the Policy CSP - Settings setting so that you can allow the user to change Auto Play settings.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
