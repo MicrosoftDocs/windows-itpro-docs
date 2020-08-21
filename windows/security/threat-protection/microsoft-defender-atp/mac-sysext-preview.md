@@ -122,7 +122,7 @@ If this command prints `endpoint_security_extension`, then the product is using 
 curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
 ```
 
-Verify that the EICAR file is quarantined. This can be done from the user interface (from the Protection History page) or command line using the following command:
+Verify that the EICAR file is quarantined. This verification can be done from the user interface (from the Protection History page) or command line using the following command:
 
 ```bash
 mdatp threat list
