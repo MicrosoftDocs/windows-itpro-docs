@@ -1,5 +1,5 @@
 ---
-title: Firewall Policy Design Example (Windows 10)
+title: Basic Firewall Policy Design Example (Windows 10)
 description: Firewall Policy Design Example
 ms.assetid: 0dc3bcfe-7a4d-4a15-93a9-64b13bd775a7
 ms.reviewer: 
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ---
 
-# Firewall Policy Design Example
+# Basic Firewall Policy Design Example
 
 **Applies to**
 -   Windows 10
