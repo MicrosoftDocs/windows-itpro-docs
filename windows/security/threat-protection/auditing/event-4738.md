@@ -1,6 +1,6 @@
 ---
 title: 4738(S) A user account was changed. (Windows 10)
-description: Describes security event 4738(S) A user account was changed. This event is generated every time user object is changed.
+description: Describes security event 4738(S) A user account was changed. This event is generated when a user object is changed.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

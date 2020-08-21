@@ -1,6 +1,6 @@
 ---
 title: 4725(S) A user account was disabled. (Windows 10)
-description: Describes security event 4725(S) A user account was disabled. This event is generated every time user or computer object is disabled.
+description: Describes security event 4725(S) A user account was disabled. This event is generated when a user or computer object is disabled.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
