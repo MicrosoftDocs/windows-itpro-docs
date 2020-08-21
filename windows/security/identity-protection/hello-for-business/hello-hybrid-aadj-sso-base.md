@@ -225,7 +225,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 
 Validate your new CRL distribution point is working. 
 
-1. Open a web browser.  Navigate to <b>http://crl.[yourdomain].com/cdp</b>.  You should see two files created from publishing your new CRL.
+1. Open a web browser. Navigate to <b>http://crl.[yourdomain].com/cdp</b>.  You should see two files created from publishing your new CRL.
    ![Validate the new CRL](images/aadj/validate-cdp-using-browser.png)
 
 ### Reissue domain controller certificates
