@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Mac - System Extensions (Private Preview)
+title: Microsoft Defender ATP for Mac - System Extensions (Public Preview)
 description: This article contains instructions for trying out the system extensions functionality of Microsoft Defender ATP for Mac. This functionality is currently in private preview.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
@@ -18,17 +18,17 @@ ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ---
 
-# Microsoft Defender ATP for Mac - System Extensions (Private Preview)
+# Microsoft Defender ATP for Mac - System Extensions (Public Preview)
 
 In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
-This functionality is currently in private preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.
+This functionality is currently in public preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.
 
 These steps assume you already have Microsoft Defender ATP running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
 
 ## Known issues
 
-- We’ve received reports of the web content filter interfering with Apple SSO Kerberos extension and are actively investigating this issue.
+- We’ve received reports of the network extension interfering with Apple SSO Kerberos extension.
 - The current version of the product still installs a kernel extension. The kernel extension is only used as a fallback mechanism and will be removed before this feature reaches public preview.
 - We are still working on a product version that deploys and functions properly on macOS 11 Big Sur.
 
@@ -50,21 +50,13 @@ These steps assume you already have Microsoft Defender ATP running on your devic
 
     Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [this page](mac-updates.md#set-the-channel-name).
 
-- For the duration of the private preview, your device must be in the `SystemExtensions` group. This temporary prerequisite will be removed when this feature reaches public preview. From the Terminal, run:
- 
-    ```bash
-    $ sudo mdatp --edr --groupids SystemExtensions
-    ```
-
-    Alternatively, if you are in a managed environment (JAMF or Intune), you can cofigure the device group remotely. For more information, see [this page](mac-preferences.md#device-tags).
-
 ## Deployment steps
 
 Select the deployment steps corresponding to your environment and your preferred method of trying out this feature.
 
 ### Manual deployment
 
-#### Approve the system extensions & enable web content filter
+#### Approve the system extensions & enable network extension
 
 Once all deployment prerequisites are met, restart your device to start the system extension approval and activation process.
 
@@ -86,7 +78,7 @@ For each approval, click **Open Security Preferences** and then click **Allow** 
 
 Following the approval of the system extensions, macOS will prompt for an approval to allow network traffic to be filtered. Click **Allow**.
 
-![Web content filter approval pop-up](images/mac-system-extension-filter.png)
+![Network extension approval pop-up](images/mac-system-extension-filter.png)
 
 #### Grant Full Disk Access to the Endpoint Security system extension
 
@@ -112,7 +104,7 @@ Terminal output `endpoint_security_extension` indicates the product is using the
 
 Refer to [this page](mac-sysext-policies.md#jamf) for the new configuration profiles that must be deployed for this new feature.
 
-In addition to those profiles, make sure the target devices are also configured to be in the Insider Fast update channel and in the `SystemExtensions` group, as described in [this section](#deployment-prerequisites).
+In addition to those profiles, make sure the target devices are also configured to be in the Insider Fast update channel, as described in [this section](#deployment-prerequisites).
 
 On a device where all prerequisites are met and the new configuration profiles have been deployed, run:
 
