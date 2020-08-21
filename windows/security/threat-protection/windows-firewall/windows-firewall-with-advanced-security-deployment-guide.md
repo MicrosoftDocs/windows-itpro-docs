@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Firewall with Advanced Security deployment overview (Windows 10)
-description: Windows Defender Firewall with Advanced Security deployment overview
+description: Use this guide to deploy Windows Defender Firewall with Advanced Security for your enterprise to help protect devices and data that they share across a network.
 ms.assetid: 56b51b97-1c38-481e-bbda-540f1216ad56
 ms.reviewer: 
 ms.author: dansimp
