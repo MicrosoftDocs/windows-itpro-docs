@@ -1,6 +1,6 @@
 ---
 title: 4608(S) Windows is starting up. (Windows 10)
-description: Describes security event 4608(S) Windows is starting up.
+description: Describes security event 4608(S) Windows is starting up. This event is logged when LSASS.EXE process starts and the auditing subsystem is initialized.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,6 +1,6 @@
 ---
 title: VPN auto-triggered profile options (Windows 10)
-description: tbd
+description: Learn about the types of auto-trigger rules for VPNs in Windows 10, which start a VPN when it is needed to access a resource.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
