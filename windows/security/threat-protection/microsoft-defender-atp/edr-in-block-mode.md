@@ -37,7 +37,7 @@ When EDR in block mode is turned on, and a malicious artifact is detected, block
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode.jpg" alt-text="EDR in block mode detected something":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR in block mode detected something":::
 
 
 ## Enable EDR in block mode
