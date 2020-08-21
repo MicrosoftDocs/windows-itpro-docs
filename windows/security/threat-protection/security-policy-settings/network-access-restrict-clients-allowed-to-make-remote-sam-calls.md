@@ -90,9 +90,9 @@ In other words, the hotfix in each KB article provides the necessary code and fu
 
 | |Default SDDL	|Translated SDDL| Comments
 |---|---|---|---|
-|Windows Server 2016 domain controller (reading Active Directory)|“”|-|Everyone has read permissions to preserve compatibility.|
+|Windows Server 2016 (or later) domain controller (reading Active Directory)|“”|-|Everyone has read permissions to preserve compatibility.|
 |Earlier domain controller |-|-|No access check is performed by default.|
-|Windows 10, version 1607 non-domain controller|O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- <br> &nbsp;&nbsp;AceType:0x00 <br> &nbsp;&nbsp;(ACCESS\_ALLOWED_ACE_TYPE)<br> &nbsp;&nbsp;AceSize:0x0018 <br> &nbsp;&nbsp;InheritFlags:0x00 <br> &nbsp;&nbsp;Access Mask:0x00020000 <br> &nbsp;&nbsp;AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> &nbsp;&nbsp;SACL: Not present |Grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group. |
+|Windows 10, version 1607 (or later) non-domain controller|O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- <br> &nbsp;&nbsp;AceType:0x00 <br> &nbsp;&nbsp;(ACCESS\_ALLOWED_ACE_TYPE)<br> &nbsp;&nbsp;AceSize:0x0018 <br> &nbsp;&nbsp;InheritFlags:0x00 <br> &nbsp;&nbsp;Access Mask:0x00020000 <br> &nbsp;&nbsp;AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> &nbsp;&nbsp;SACL: Not present |Grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group. |
 |Earlier non-domain controller |-|-|No access check is performed by default.|
 
 ## Policy management
