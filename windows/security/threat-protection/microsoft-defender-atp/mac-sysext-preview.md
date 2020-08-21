@@ -108,9 +108,9 @@ In addition to those profiles, make sure the target devices are also configured 
 
 On a device where all prerequisites are met and the new configuration profiles have been deployed, run:
 
-    ```bash
-	$ mdatp health --field real_time_protection_subsystem
-    ```
+```bash
+$ mdatp health --field real_time_protection_subsystem
+```
 
 If this command prints `endpoint_security_extension`, then the product is using the system extensions functionality.
 
@@ -122,7 +122,7 @@ If this command prints `endpoint_security_extension`, then the product is using 
 curl -o eicar.txt https://secure.eicar.org/eicar.com.txt
 ```
 
-Verify that the EICAR file is quarantined. This verification can be done from the user interface (from the Protection History page) or command line using the following command:
+  Verify that the EICAR file is quarantined. This verification can be done from the user interface (from the Protection History page) or command line using the following command:
 
 ```bash
 mdatp threat list
@@ -134,7 +134,7 @@ mdatp threat list
 curl -o "MDATP MacOS DIY.zip" https://aka.ms/mdatpmacosdiy
 ```
 
-    Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarios.
+  Validate that two alerts have popped up in the portal in the machine page for EICAR and EDR DIY scenarios.
 
 ## Frequently asked questions
 
