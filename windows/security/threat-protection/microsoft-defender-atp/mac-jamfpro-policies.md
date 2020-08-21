@@ -54,7 +54,7 @@ You'll need to take the following steps:
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
-4. Extract `WindowsDefenderATPOnboardingPackage.zip` such as `WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso`.
+4. Extract `WindowsDefenderATPOnboardingPackage.zip`.
 
 5. Copy the file to your preferred location. For example,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
@@ -65,7 +65,64 @@ You'll need to take the following steps:
 
    ![Image of file](images/plist-onboarding-file.png)
 
-2. Use the following Microsoft Defender ATP configuration settings:
+ 
+2. In the Jamf Pro dashboard, select **New**.
+
+    ![Image of Jamf Pro dashboard](images/jamf-pro-configure-profile.png)
+
+3. Enter the following details:
+
+   **General**
+   - Name: MDATP onboarding for macOS
+   - Description: MDATP EDR onboarding for macOS
+   - Category: None
+   - Distribution Method: Install Automatically
+   - Level: Computer Level
+
+4. In **Application & Custom Settings** select **Configure**.
+
+    ![Image of configuration profile](images/jamfpro-mac-profile.png)
+
+5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
+
+    ![Image of upload file](images/jamfpro-plist-upload.png)
+
+    ![Image of upload file](images/jamfpro-plist-file.png)
+
+7. Select **Open** and select the onboarding file.
+
+    ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
+
+8. Select **Upload**. 
+
+    ![Image of uploading plist file](images/jamfpro-upload-plist.png)
+
+
+9. Select the **Scope** tab.
+
+    ![Image of scope tab](images/jamfpro-scope-tab.png)
+
+10. Select the target computers.
+
+    ![Image of target computers](images/jamfpro-target-computer.png)
+
+    ![Image of target computers](images/jamfpro-targets.png) 
+
+11. Select **Save**.
+
+    ![Image of target computers](images/jamfpro-deployment-target.png)
+
+    ![Image of target computers selected](images/jamfpro-target-selected.png)
+
+12. Select **Done**.
+
+    ![Image of target computers](images/jamfpro-target-group.png)
+
+    ![List of configuration profiles](images/jamfpro-configuration-policies.png)
+
+## Step 3: Configure Microsoft Defender ATP settings
+
+1.  Use the following Microsoft Defender ATP configuration settings:
 
     - enableRealTimeProtection
     - passiveMode
@@ -194,89 +251,7 @@ You'll need to take the following steps:
 </plist>
 ```
 
- 
-2. In the Jamf Pro dashboard, select **New**.
-
-    ![Image of Jamf Pro dashboard](images/jamf-pro-configure-profile.png)
-
-3. Enter the following details:
-
-   **General**
-   - Name: MDATP onboarding for macOS
-   - Description: MDATP EDR onboarding for macOS
-   - Category: None
-   - Distribution Method: Install Automatically
-   - Level: Computer Level
-
-4. In **Application & Custom Settings** select **Configure**.
-
-    ![Image of configuration profile](images/jamfpro-mac-profile.png)
-
-5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`. 
-
-    ![Image of upload file](images/jamfpro-plist-upload.png)
-
-    ![Image of upload file](images/jamfpro-plist-file.png)
-
-7. Select **Open** and select the onboarding file.
-
-    ![Image of onboarding file](images/jamfpro-plist-file-onboard.png)
-
-8. Select **Upload**. 
-
-    ![Image of uploading plist file](images/jamfpro-upload-plist.png)
-
-
-9. Select the **Scope** tab.
-
-    ![Image of scope tab](images/jamfpro-scope-tab.png)
-
-10. Select the target computers.
-
-    ![Image of target computers](images/jamfpro-target-computer.png)
-
-    ![Image of target computers](images/jamfpro-targets.png) 
-
-11. Select **Save**.
-
-    ![Image of target computers](images/jamfpro-deployment-target.png)
-
-    ![Image of target computers selected](images/jamfpro-target-selected.png)
-
-12. Select **Done**.
-
-    ![Image of target computers](images/jamfpro-target-group.png)
-
-    ![List of configuration profiles](images/jamfpro-configuration-policies.png)
-
-## Step 3: Configure Microsoft Defender ATP settings
-
-1. Use the following Microsoft Defender ATP notification configuration settings:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>ChannelName</key>
-	<string>InsiderFast</string>
-	<key>HowToCheck</key>
-	<string>AutomaticDownload</string>
-	<key>EnableCheckForUpdatesButton</key>
-	<true/>
-    <key>DisableInsiderCheckbox</key>
-    <false/>
-	<key>SendAllTelemetryEnabled</key>
-	<true/>
-</dict>
-</plist>
-
-```
-
-2.  Save it as `AutoEnable_notifications_for_MDATP_AutoUpdate.mobileconfig` or `MDATP_MDAV_notification_settings.plist`.
+2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
 
 3.  In the Jamf Pro dashboard, select **General**.
@@ -356,11 +331,38 @@ You'll need to take the following steps:
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
-1. In the Jamf Pro dashboard, select **General**. 
+1. Use the following Microsoft Defender ATP notification configuration settings:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict><key>PayloadContent</key><array><dict><key>NotificationSettings</key><array><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.autoupdate2</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict><dict><key>AlertType</key><integer>2</integer><key>BadgesEnabled</key><true/><key>BundleIdentifier</key><string>com.microsoft.wdavtray</string><key>CriticalAlertEnabled</key><false/><key>GroupingType</key><integer>0</integer><key>NotificationsEnabled</key><true/><key>ShowInLockScreen</key><false/><key>ShowInNotificationCenter</key><true/><key>SoundsEnabled</key><true/></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadType</key><string>com.apple.notificationsettings</string><key>PayloadUUID</key><string>BB977315-E4CB-4915-90C7-8334C75A7C64</string><key>PayloadVersion</key><integer>1</integer></dict></array><key>PayloadDescription</key><string/><key>PayloadDisplayName</key><string>mdatp - allow notifications</string><key>PayloadEnabled</key><true/><key>PayloadIdentifier</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadOrganization</key><string>Microsoft</string><key>PayloadRemovalDisallowed</key><false/><key>PayloadScope</key><string>System</string><key>PayloadType</key><string>Configuration</string><key>PayloadUUID</key><string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string><key>PayloadVersion</key><integer>1</integer></dict></plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChannelName</key>
+	<string>InsiderFast</string>
+	<key>HowToCheck</key>
+	<string>AutomaticDownload</string>
+	<key>EnableCheckForUpdatesButton</key>
+	<true/>
+    <key>DisableInsiderCheckbox</key>
+    <false/>
+	<key>SendAllTelemetryEnabled</key>
+	<true/>
+</dict>
+</plist>
+
+```
+
+2.  Save it as `MDATP_MDAV_notification_settings.plist`.
+
+3. In the Jamf Pro dashboard, select **General**. 
     
     ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
-2. Enter the following details:
+4. Enter the following details:
 
     **General** 
   - Name: MDATP MDAV Notification settings
@@ -371,12 +373,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration settings](images/abccba0b620cec06b03d219832667fe1.png)
 
-3. Select **Upload File (PLIST file)**.
+5. Select **Upload File (PLIST file)**.
 
     ![Image of configuration settings](images/7f9138053dbcbf928e5182ee7b295ebe.png)
  
 
-4. Select **Choose File** > **MDATP_MDAV_Notification_Settings.plist**.
+6. Select **Choose File** > **MDATP_MDAV_Notification_Settings.plist**.
 
 
     ![Image of configuration settings](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
@@ -384,29 +386,28 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration settings](images/20e33b98eb54447881dc6c89e58b890f.png)
 
-5. Select **Open** > **Upload**.
+7. Select **Open** > **Upload**.
 
     ![Image of configuration settings](images/7697c33b9fd376ae5a8023d01f9d3857.png)
 
 
     ![Image of configuration settings](images/2bda9244ec25d1526811da4ea91b1c86.png)
 
-6. Select the **Scope** tab, then select **Add**.
+8. Select the **Scope** tab, then select **Add**.
 
     ![Image of configuration settings](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
 
+9. Select **Contoso's Machine Group**. 
 
-7. Select **Contoso's Machine Group**. 
-
-8. Select **Add**, then select **Save**.
+10. Select **Add**, then select **Save**.
     
     ![Image of configuration settings](images/09a275e321268e5e3ac0c0865d3e2db5.png)
 
     
     ![Image of configuration settings](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-9. Select **Done**. You'll see the new **Configuration profile**.
+11. Select **Done**. You'll see the new **Configuration profile**.
     ![Image of configuration setting](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
