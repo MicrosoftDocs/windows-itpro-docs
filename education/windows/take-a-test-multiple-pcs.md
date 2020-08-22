@@ -166,7 +166,7 @@ This sample PowerShell script configures the tester account and the assessment U
 - Use your tester account for **-UserName**
 
 >[!NOTE]
->The account that you specify for the tester account must already exist on the device.
+>The account that you specify for the tester account must already exist on the device. For steps to create the tester account click [here](https://docs.microsoft.com/en-us/education/windows/take-a-test-single-pc#set-up-a-dedicated-test-account).
 
 ```
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
