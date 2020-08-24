@@ -89,6 +89,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
     ![Image of stop and quarantine file modal window](images/atp-stop-quarantine400.png)
 
     The Action center shows the submission information:
+
     ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file400.png)
 
     - **Submission time** - Shows when the action was submitted.
