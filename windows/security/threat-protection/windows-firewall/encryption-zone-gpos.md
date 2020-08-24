@@ -1,6 +1,6 @@
 ---
 title: Encryption Zone GPOs (Windows 10)
-description: Encryption Zone GPOs
+description: Learn how to add a device to an encryption zone by adding the device account to the encryption zone group in Windows Defender Firewall with Advanced Security.
 ms.assetid: eeb973dd-83a5-4381-9af9-65c43c98c29b
 ms.reviewer: 
 ms.author: dansimp

@@ -1,6 +1,6 @@
 ---
 title: Domain Isolation Policy Design (Windows 10)
-description: Domain Isolation Policy Design
+description: Learn how to design a domain isolation policy, based on which devices accept only connections from authenticated members of the same isolated domain.
 ms.assetid: 7475084e-f231-473a-9357-5e1d39861d66
 ms.reviewer: 
 ms.author: dansimp
