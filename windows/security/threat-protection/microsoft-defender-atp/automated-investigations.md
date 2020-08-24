@@ -78,6 +78,15 @@ You can configure the following levels of automation:
 |**Semi - require approval for any remediation** | An approval is needed for any remediation action. <br/><br/>*This option is selected by default for Microsoft Defender ATP tenants created before August 16, 2020.*|
 |**No automated response** | Devices do not get any automated investigations run on them. <br/><br/>*This option is not recommended, because it fully disables automated investigation and remediation capabilities, and reduces the security posture of your organization's devices.* |
 
+
+> [!IMPORTANT]
+> A few points of clarification regarding automation levels and default settings:
+> - If your tenant already has device groups defined, the automation level settings are not changed.
+> - If your tenant was onboarded to Microsoft Defender ATP before August 16, 2020, your organization's first device group is set to **Semi - require approval for any remediation** by default. 
+> - If your tenant is onboarded on or after August 16, 2020, when your organization's first device group is set to **Full - remediate threats automatically**.
+> - To change an automation level, edit your [device groups](configure-automated-investigations-remediation.md#set-up-device-groups).
+
+
 ### A few points to keep in mind
 
 - Your level of automation is determined by your device group settings. See [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
