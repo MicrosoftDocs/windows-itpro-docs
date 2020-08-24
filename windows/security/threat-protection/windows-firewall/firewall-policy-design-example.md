@@ -1,6 +1,6 @@
 ---
 title: Basic Firewall Policy Design Example (Windows 10)
-description: Firewall Policy Design Example
+description: This example features a fictitious company and illustrates firewall policy design for Windows Defender Firewall with Advanced Security.
 ms.assetid: 0dc3bcfe-7a4d-4a15-93a9-64b13bd775a7
 ms.reviewer: 
 ms.author: dansimp
