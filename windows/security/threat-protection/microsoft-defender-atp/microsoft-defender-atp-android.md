@@ -78,8 +78,8 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 ### Installation instructions
 
 Microsoft Defender ATP for Android supports installation on both modes of
-enrolled devices - the legacy Device Administrator and Android Enterprise modes
-**Currently, only Work Profile enrolled devices are supported in Android Enterprise. Support for other Android Enterprise modes will be announced when ready**
+enrolled devices - the legacy Device Administrator and Android Enterprise modes.
+**Currently, only Work Profile enrolled devices are supported in Android Enterprise. Support for other Android Enterprise modes will be announced when ready.**
 
 Deployment of Microsoft Defender ATP for Android is via Microsoft Intune (MDM).
 For more information, see [Deploy Microsoft Defender ATP for Android with Microsoft Intune](android-intune.md).
