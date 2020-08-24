@@ -27,7 +27,11 @@ When contacting support, you may be asked to provide the output package of the M
 
 This topic provides instructions on how to run the tool via Live Response.
 
-1. Download the [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer ).
+1. Download the appropriate script
+    * Microsoft Defender ATP client sensor logs only: [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer).
+      - Result package approximate size: ~100Kb 
+    *  Microsoft Defender ATP client sensor and Antivirus logs: [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDATPLiveAnalyzerAV).
+       - Result package approximate size: ~10Mb 
  
 2.	Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
 
