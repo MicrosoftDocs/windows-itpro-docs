@@ -22,7 +22,12 @@ ms.topic: article
 
 -   Windows 10
 
-This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
+This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. 
+
+> [!NOTE]
+> Microsoft also offers a pre-configured labusing an evaluation version of Configuration Manager. For more information, see [Windows and Office deployment and management lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab). 
+
+This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
 - [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
