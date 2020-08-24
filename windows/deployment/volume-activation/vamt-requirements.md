@@ -1,6 +1,6 @@
 ---
 title: VAMT Requirements (Windows 10)
-description: VAMT Requirements
+description: In this article, learn about the product key and system requierements for Volume Activation Management Tool (VAMT).
 ms.assetid: d14d152b-ab8a-43cb-a8fd-2279364007b9
 ms.reviewer: 
 manager: laurawi
