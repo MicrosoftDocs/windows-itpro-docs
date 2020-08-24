@@ -1,6 +1,6 @@
 ---
 title: Add Test Devices to the Membership Group for a Zone (Windows 10)
-description: Add Test Devices to the Membership Group for a Zone
+description: Learn how to add devices to the group for a zone to test whether your Windows Defender Firewall with Advanced Security implementation works as expected.
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
 ms.reviewer: 
 ms.author: dansimp
