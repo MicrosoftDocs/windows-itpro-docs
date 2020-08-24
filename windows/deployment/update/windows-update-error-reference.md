@@ -1,6 +1,6 @@
 ---
 title: Windows Update error code list by component 
-description: Reference information for Windows Update error codes
+description: Learn about reference information for Windows Update error codes, including automatic update errors, UI errors, and reporter errors.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro

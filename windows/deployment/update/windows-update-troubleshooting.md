@@ -1,6 +1,6 @@
 ---
 title: Windows Update troubleshooting 
-description: Learn how to troubleshoot Windows Update
+description: Learn about troubleshooting Windows Update, issues related to HTTP/Proxy, and why some features are offered and others aren't.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
