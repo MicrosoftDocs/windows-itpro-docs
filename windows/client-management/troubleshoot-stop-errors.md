@@ -2,7 +2,7 @@
 title: Advanced troubleshooting for Stop error or blue screen error issue
 ms.reviewer: 
 manager: dansimp
-description: Learn how to troubleshoot Stop error or blue screen issues.
+description: Learn advanced options for troubleshooting Stop errors, also known as blue screen errors or bug check errors.
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library

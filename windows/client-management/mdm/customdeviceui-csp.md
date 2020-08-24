@@ -1,6 +1,6 @@
 ---
 title: CustomDeviceUI CSP
-description: CustomDeviceUI CSP
+description: Learn how the CustomDeviceUI configuration service provider (CSP) allows OEMs to implement their custom foreground application.
 ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 ms.reviewer: 
 manager: dansimp
