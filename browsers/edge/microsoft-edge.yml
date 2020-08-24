@@ -26,6 +26,10 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: https://docs.microsoft.com/DeployEdge/
+          - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
           - text: The latest in Microsoft Edge
             url: https://blogs.windows.com/msedgedev/2018/04/30/edgehtml-17-april-2018-update/#C7jCBdbPSG6bCXHr.97
           - text: Microsoft Edge for iOS and Android
