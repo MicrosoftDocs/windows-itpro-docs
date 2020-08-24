@@ -18,8 +18,8 @@ ms.topic: article
 
 USMT includes two tools that migrate settings and data: ScanState and LoadState. ScanState collects information from the source computer, and LoadState applies that information to the destination computer.
 
--   [ScanState Process](#bkmk-ssprocess)
--   [LoadState Process](#bkmk-lsprocess)
+-   [ScanState Process](#the-scanstate-process)
+-   [LoadState Process](#the-loadstate-process)
 
     **Note**  
     For more information about how USMT processes the rules and the XML files, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).   
