@@ -117,8 +117,8 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management |List all quarantined files                              |`mdatp threat quarantine list`                                         |
 |Quarantine management |Remove all files from the quarantine                    |`mdatp threat quarantine remove-all`                                   |
 |Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id [threat-id]`                         |
-|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine add --id [threat-id]`                         |
-|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine add --id [threat-id]`                         |
+|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine remove --id [threat-id]`                      |
+|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine restore --id [threat-id]`                     |
 
 ## Microsoft Defender ATP portal information
 
