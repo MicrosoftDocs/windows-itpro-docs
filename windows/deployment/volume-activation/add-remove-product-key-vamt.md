@@ -1,6 +1,6 @@
 ---
 title: Add and Remove a Product Key (Windows 10)
-description: Add and Remove a Product Key
+description: Add a product key to the Volume Activation Management Tool (VAMT) database. Also, learn how to remove the key from the database.
 ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
 ms.reviewer: 
 manager: laurawi
