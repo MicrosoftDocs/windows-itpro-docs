@@ -51,7 +51,7 @@ The following table lists the SQL Server versions that the App-V Management data
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
-|Microsoft SQL Server 2019||32-bit or 64-bit|
+|Microsoft SQL Server 2019|CU4|32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
@@ -90,6 +90,7 @@ The following table lists the SQL Server versions that are supported for the App
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
+|Microsoft SQL Server 2019|CU4|32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
