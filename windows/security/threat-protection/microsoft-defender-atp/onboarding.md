@@ -60,12 +60,12 @@ After onboarding the devices, you'll then configure the various capabilities suc
 
 This article provides resources to guide you on:
 - Using various management tools to onboard devices
-    - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuraiton-manager.md)
+    - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
     - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 - Endpoint detection and response configuration
 - Next-generation protection configuration
 - Attack surface reduction configuration
 
 ## Related topics
-- [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuraiton-manager.md)
+- [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
