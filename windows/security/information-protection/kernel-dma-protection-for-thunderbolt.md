@@ -84,7 +84,7 @@ Beginning with Windows 10 version 1809, you can use Security Center to check if 
 1. Launch MSINFO32.exe in a command prompt, or in the Windows search bar.
 2. Check the value of **Kernel DMA Protection**.
    ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
-3. If the current state of **Kernel DMA Protection** is OFF and **Virtualization Technology in Firmware** is NO:
+3. If the current state of **Kernel DMA Protection** is OFF and **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is NOT shown (this means Virtualization technology in Firmware is disabled):
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
    - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
