@@ -41,7 +41,7 @@ Application Guard itself is required for the extension to work. It has its own s
 
 ## Installing the extension
 
-Application Guard can be run under [managed mode](install-md-app-guard.md#enterprise-managed-mode) or [standalone mode](install-md-app-guard.md#atandalone-mode). The main difference between the two modes is whether policies have been set to define the organization's boundaries.
+Application Guard can be run under [managed mode](install-md-app-guard.md#enterprise-managed-mode) or [standalone mode](install-md-app-guard.md#standalone-mode). The main difference between the two modes is whether policies have been set to define the organization's boundaries.
 
 Enterprise administrators running Application Guard under managed mode should first define Application Guard's [network isolation settings](configure-md-app-guard.md#network-isolation-settings), so a set of enterprise sites is already in place.
 
