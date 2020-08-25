@@ -48,6 +48,12 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### RHEL and variants (CentOS and Oracle Linux)
 
+- Install `yum-utils` if it isn't installed yet:
+
+    ```bash
+    sudo yum install yum-utils
+    ```
+
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
     In the below commands, replace *[distro]* and *[version]* with the information you've identified:
@@ -69,12 +75,6 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
-
-- Install `yum-utils` if it isn't installed yet:
-
-    ```bash
-    sudo yum install yum-utils
     ```
 
 - Download and make usable all the metadata for the currently enabled yum repositories:
