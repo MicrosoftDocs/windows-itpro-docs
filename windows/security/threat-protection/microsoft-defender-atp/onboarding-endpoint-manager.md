@@ -76,9 +76,6 @@ needs.<br>
 
 4.  Add your test user or device.
 
-    >[!NOTE]
-    >Azure Active Directory groups can contain users or devices, not combinations of both.
-
 5.  From the **Groups > All groups** pane, open your new group.
 
 6.  Select  **Members > Add members**.
@@ -89,7 +86,7 @@ needs.<br>
 
 8.  Your testing group now has a member to test.
 
-## Create a configuration policy
+## Create configuration policies
 In the following section, you'll create a number of configuration policies.
 First is a configuration policy to select which groups of users or devices will
 be onboarded to Microsoft Defender ATP. Then you will continue by creating several
@@ -116,10 +113,8 @@ different types of Endpoint security policies.
     ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     >[!NOTE]
-    >In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#enable-microsoft-defender-atp-in-intune). <br>
-    >If you have not integrated Microsoft Defender ATP and Intune, complete [these
-    steps](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm#onboard-machines-using-microsoft-intune)
-    to create and upload an onboarding blob.
+    >In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp). <br>
+    
 
     ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -183,9 +178,6 @@ different types of Endpoint security policies.
 2.  Navigate to **Endpoint security > Attack surface reduction**.
 
 3.  Select  **Create Policy**.
-
-    >[!NOTE]
-    >We will be setting these as Audit.
 
 4.  Select **Platform - Windows 10 and Later – Profile - Attack surface reduction
     rules > Create**.
@@ -339,13 +331,13 @@ To confirm that the configuration policy has been applied to your test device, f
 
 1.  Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
 
-2.  This should respond with the following lines with no content
+2.  This should respond with the following lines with no content:
 
-    1.  AttackSurfaceReductionOnlyExclusions:
+    AttackSurfaceReductionOnlyExclusions:
 
-    2.  AttackSurfaceReductionRules_Actions:
+    AttackSurfaceReductionRules_Actions:
 
-    3.  AttackSurfaceReductionRules_Ids:
+    AttackSurfaceReductionRules_Ids:
 
     ![Image of command line](images/cb0260d4b2636814e37eee427211fe71.png)
 
