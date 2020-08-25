@@ -89,14 +89,17 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
 |Configuration|Turn on/off real-time protection           |`mdatp --config realTimeProtectionEnabled [true/false]`                |
 |Configuration|Turn on/off cloud protection               |`mdatp --config cloudEnabled [true/false]`                             |
-|Configuration|Turn on/off product diagnostics            |`mdatp --config cloudDiagnosticEnabled [true/false]`                               |
+|Configuration|Turn on/off product diagnostics            |`mdatp --config cloudDiagnosticEnabled [true/false]`                   |
 |Configuration|Turn on/off automatic sample submission    |`mdatp --config cloudAutomaticSampleSubmission [true/false]`           |
+|Configuration|Add a threat name to the allowed list      |`mdatp threat allowed add --name [threat-name]`                        |
+|Configuration|Remove a threat name from the allowed list |`mdatp threat allowed remove --name [threat-name]`                     |
+|Configuration|List all allowed threat names              |`mdatp threat allowed list`                                            |
 |Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
 |Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
 |Configuration|Turn on/off passiveMode                    |`mdatp --config passiveMode [on/off]`                                  |
 |Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
 |Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
 |Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
@@ -129,7 +132,7 @@ To enable autocompletion in `zsh`:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following command to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

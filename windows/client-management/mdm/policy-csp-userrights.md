@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - UserRights
-description: Policy CSP - UserRights
+description: Learn how user rights are assigned for user accounts or groups, and how the name of the policy defines the user right in question.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

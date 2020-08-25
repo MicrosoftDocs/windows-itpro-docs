@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Administrative templates and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Administrative templates and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 Administrative Templates are made up of a hierarchy of policy categories and subcategories that define how your policy settings appear in the Local Group Policy Editor, including:
 

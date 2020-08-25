@@ -1,6 +1,6 @@
 ---
 title: Modify GPO Filters (Windows 10)
-description: Modify GPO Filters to Apply to a Different Zone or Version of Windows
+description: Learn how to modify GPO filters to apply to a different zone or version of windows in Windows Defender Firewall with Advanced Security.
 ms.assetid: 24ede9ca-a501-4025-9020-1129e2cdde80
 ms.reviewer: 
 ms.author: dansimp

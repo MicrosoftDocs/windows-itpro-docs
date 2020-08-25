@@ -274,5 +274,5 @@ For file system and registry objects, the following recommendations apply.
 
 - If you have critical registry objects for which you need to monitor all modifications (especially permissions changes and owner changes), monitor for the specific **Object\\Object Name.**
 
-- If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<strong>.</strong> For example, you could monitor the **ntds.dit** file on domain controllers.
+- If you have high-value computers for which you need to monitor all changes for all or specific objects (for example, file system or registry objects), monitor for all [4670](event-4670.md) events on these computers<b>.</b> For example, you could monitor the **ntds.dit** file on domain controllers.
 

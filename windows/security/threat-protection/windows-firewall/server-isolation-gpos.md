@@ -1,6 +1,6 @@
 ---
 title: Server Isolation GPOs (Windows 10)
-description: Server Isolation GPOs
+description: Learn about required GPOs for isolation zones and how many server isolation zones you need in Windows Defender Firewall with Advanced Security.
 ms.assetid: c97b1f2f-51d8-4596-b38a-8a3f6f706be4
 ms.reviewer: 
 ms.author: dansimp

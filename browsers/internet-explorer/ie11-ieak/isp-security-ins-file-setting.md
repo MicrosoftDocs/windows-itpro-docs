@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the ISP_Security .INS file to add your root certificate
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about where you store the root certificate you’re adding to your custom package.
 
 |Name           |Value                  |Description                                                                               |

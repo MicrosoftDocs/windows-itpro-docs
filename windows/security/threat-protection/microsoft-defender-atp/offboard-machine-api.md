@@ -1,6 +1,6 @@
 ---
 title: Offboard machine API
-description: Use this API to offboard a device from WDATP.
+description: Learn how to use an API to offboard a device from Windows Defender Advanced Threat Protection (WDATP).
 keywords: apis, graph api, supported apis, collect investigation package
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

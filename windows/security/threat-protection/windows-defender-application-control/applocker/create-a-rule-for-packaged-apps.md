@@ -59,12 +59,12 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><p><strong>Use an installed packaged app as a reference</strong></p></td>
+    <td align="left"><p><b>Use an installed packaged app as a reference</b></p></td>
     <td align="left"><p>If selected, AppLocker requires you to choose an app that is already installed on which to base your new rule. AppLocker uses the publisher, package name and package version to define the rule.</p></td>
     <td align="left"><p>You want the Sales group only to use the app named Microsoft.BingMaps for its outside sales calls. The Microsoft.BingMaps app is already installed on the device where you are creating the rule, so you choose this option, and select the app from the list of apps installed on the computer and create the rule using this app as a reference.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><strong>Use a packaged app installer as a reference</strong></p></td>
+    <td align="left"><p><b>Use a packaged app installer as a reference</b></p></td>
     <td align="left"><p>If selected, AppLocker requires you to choose an app installer on which to base your new rule. A packaged app installer has the .appx extension. AppLocker uses the publisher, package name and package version of the installer to define the rule.</p></td>
     <td align="left"><p>Your company has developed a number of internal line-of-business packaged apps. The app installers are stored on a common file share. Employees can install the required apps from that file share. You want to allow all your employees to install the Payroll app from this share. So you choose this option from the wizard, browse to the file share and choose the installer for the Payroll app as a reference to create your rule.</p></td>
     </tr>
@@ -87,30 +87,30 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><p>Applies to <strong>Any publisher</strong></p></td>
-    <td align="left"><p>This is the least restrictive scope condition for an <strong>Allow</strong> rule. It permits every packaged app to run or install.</p>
-    <p>Conversely, if this is a <strong>Deny</strong> rule, then this option is the most restrictive because it denies all apps from installing or running.</p></td>
+    <td align="left"><p>Applies to <b>Any publisher</b></p></td>
+    <td align="left"><p>This is the least restrictive scope condition for an <b>Allow</b> rule. It permits every packaged app to run or install.</p>
+    <p>Conversely, if this is a <b>Deny</b> rule, then this option is the most restrictive because it denies all apps from installing or running.</p></td>
     <td align="left"><p>You want the Sales group to use any packaged app from any signed publisher. You set the permissions to allow the Sales group to be able to run any app.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p>Applies to a specific <strong>Publisher</strong></p></td>
+    <td align="left"><p>Applies to a specific <b>Publisher</b></p></td>
     <td align="left"><p>This scopes the rule to all apps published by a particular publisher.</p></td>
     <td align="left"><p>You want to allow all your users to install apps published by the publisher of Microsoft.BingMaps. You could select Microsoft.BingMaps as a reference and choose this rule scope.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p>Applies to a <strong>Package name</strong></p></td>
+    <td align="left"><p>Applies to a <b>Package name</b></p></td>
     <td align="left"><p>This scopes the rule to all packages that share the publisher name and package name as the reference file.</p></td>
     <td align="left"><p>You want to allow your Sales group to install any version of the Microsoft.BingMaps app. You could select the Microsoft.BingMaps app as a reference and choose this rule scope.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p>Applies to a <strong>Package version</strong></p></td>
+    <td align="left"><p>Applies to a <b>Package version</b></p></td>
     <td align="left"><p>This scopes the rule to a particular version of the package.</p></td>
     <td align="left"><p>You want to be very selective in what you allow. You do not want to implicitly trust all future updates of the Microsoft.BingMaps app. You can limit the scope of your rule to the version of the app currently installed on your reference computer.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>Applying custom values to the rule</p></td>
-    <td align="left"><p>Selecting the <strong>Use custom values</strong> check box allows you to adjust the scope fields for your particular circumstance.</p></td>
-    <td align="left"><p>You want to allow users to install all Microsoft.Bing* applications which include Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the <strong>Use custom values</strong> check box and edit the package name field by adding “Microsoft.Bing*” as the Package name.</p></td>
+    <td align="left"><p>Selecting the <b>Use custom values</b> check box allows you to adjust the scope fields for your particular circumstance.</p></td>
+    <td align="left"><p>You want to allow users to install all Microsoft.Bing* applications which include Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the <b>Use custom values</b> check box and edit the package name field by adding “Microsoft.Bing*” as the Package name.</p></td>
     </tr>
     </tbody>
     </table>

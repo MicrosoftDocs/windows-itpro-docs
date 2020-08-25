@@ -61,7 +61,7 @@ There are several methods and deployment tools that you can use to install and c
 The three most recent major releases of macOS are supported.
 
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
-- Disk space: 650 MB
+- Disk space: 1GB
 
 Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 

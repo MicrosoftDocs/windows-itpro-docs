@@ -1,6 +1,6 @@
 ---
 title: Submit or Update Indicator API
-description: Use this API to submit or Update Indicator.
+description: Learn how to use the Submit or Update Indicator API to submit or update a new Indicator entity in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, submit, ti, indicator, update
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

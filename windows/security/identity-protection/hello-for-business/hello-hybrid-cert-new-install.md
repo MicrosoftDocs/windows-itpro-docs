@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Trust New Installation (Windows Hello for Business)
-description: Windows Hello for Business Hybrid baseline deployment
+description: Learn about new installations for Windows Hello for Business certificate trust and the various technologies hybrid certificate trust depoyments rely on.
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
