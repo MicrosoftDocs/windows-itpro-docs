@@ -87,7 +87,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-![Image of the analyst report section of a threat analytics report](images/ta-mitigations.png)
+![Image of the mitigations section of a threat analytics report](images/ta-mitigations.png)
 _Mitigations section of a threat analytics report_
 
 
