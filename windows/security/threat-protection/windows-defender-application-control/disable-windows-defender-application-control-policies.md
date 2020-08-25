@@ -1,6 +1,6 @@
 ---
 title: Disable Windows Defender Application Control policies  (Windows 10)
-description: This topic covers how to disable unsigned or signed WDAC policies. 
+description: Learn how to disable both signed and unsigned Windows Defender Application Control policies, within Windows and within the BIOS.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
