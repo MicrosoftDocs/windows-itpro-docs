@@ -456,7 +456,7 @@ contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,conto
 Value format without proxy:
 
 ```code
-contoso.sharepoint.com|contoso.visualstudio.com
+contoso.sharepoint.com,|contoso.visualstudio.com,|contoso.onedrive.com
 ```
 
 ### Protected domains
