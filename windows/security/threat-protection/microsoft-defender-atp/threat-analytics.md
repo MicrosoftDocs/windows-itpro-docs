@@ -48,12 +48,12 @@ Watch this short video to learn more about how threat analytics can help you tra
 The threat analytics dashboard is a great jump off point for getting to the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
 - **Latest threats**—lists the most recently published threat reports, along with the number of devices with active and resolved alerts.
-- **High-impact threats**—lists the threats that have had the highest impact to the organization. This card ranks threats by the number of devices that have active alerts.
+- **High-impact threats**—lists the threats that have had the highest impact to the organization. This section ranks threats by the number of devices that have active alerts.
 - **Threat summary**—shows the overall impact of all the threats reported in threat analytics by showing the number of threats with active and resolved alerts.
 
-![Image of a threat analytics dashboard](images/ta_dashboard.png)
-
 Select a threat from the dashboard to view the report for that threat.
+
+![Image of a threat analytics dashboard](images/ta_dashboard.png)
 
 ## View a threat analytics report
 
@@ -67,12 +67,12 @@ The **Overview** section provides a preview of the detailed analyst report. It a
 _Overview section of a threat analytics report_
 
 #### Organizational impact
-Each report includes chart designed to provide information about the organizational impact of a threat:
+Each report includes charts designed to provide information about the organizational impact of a threat:
 - **Devices with alerts**—shows the current number of distinct devices that have been impacted by the threat. A device is categorized as **Active** if there is at least one alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
 - **Devices with alerts over time**—shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
 #### Organizational resilience and exposure
-Each report includes charts that provide an overview of how resilient your organization can be against a given threat:
+Each report includes charts that provide an overview of how resilient your organization is against a given threat:
 - **Security configuration status**—shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
 
