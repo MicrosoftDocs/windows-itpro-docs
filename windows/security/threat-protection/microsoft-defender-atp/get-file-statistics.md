@@ -1,6 +1,6 @@
 ---
 title: Get file statistics API
-description: Retrieves the prevalence for the given file.
+description: Learn how to use the Get file statistics API to retrieve the statistics for the given file in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, file, statistics
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: Manage Microsoft Defender Advanced Threat Protection suppression rules
-description: Manage suppression rules 
+description: You might need to prevent alerts from appearing in the portal by using suppression rules. Learn how to manage your suppression rules in Microsoft Defender ATP.
 keywords: manage suppression, rules, rule name, scope, action, alerts, turn on, turn off
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

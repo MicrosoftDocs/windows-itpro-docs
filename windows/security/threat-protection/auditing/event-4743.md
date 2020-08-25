@@ -1,6 +1,6 @@
 ---
 title: 4743(S) A computer account was deleted. (Windows 10)
-description: Describes security event 4743(S) A computer account was deleted.
+description: Describes security event 4743(S) A computer account was deleted. This event is generated every time a computer object is deleted.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

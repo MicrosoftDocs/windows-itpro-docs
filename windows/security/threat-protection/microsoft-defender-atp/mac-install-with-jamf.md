@@ -1,6 +1,6 @@
 ---
 title: JAMF-based deployment for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac, using JAMF.
+description: Learn about all the steps needed to deploy Microsoft Defender Advanced Threat Protection for Mac through JAMF.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

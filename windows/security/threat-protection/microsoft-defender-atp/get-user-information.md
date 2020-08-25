@@ -1,6 +1,6 @@
 ---
 title: Get user information API
-description: Retrieve a User entity by key such as user name or domain.
+description: Learn how to use the Get user information API to retrieve a User entity by key, or user name, in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, user, user information
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
