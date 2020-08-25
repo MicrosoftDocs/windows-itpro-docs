@@ -37,11 +37,11 @@ Controlled folder access works with a list of trusted software. If an app is inc
 
 Apps can also be manually added to the trusted list via Configuration Manager and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
 
-Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) that can attempt to encrypt your files and hold them hostage. With controlled folder access in place, a notification will appear on the computer where the app attempted to make changes to a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
+Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
 The protected folders include common system folders, and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
-You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 Controlled folder access is supported on Windows 10, version 1709 and later and Windows Server 2019.
 
@@ -70,13 +70,13 @@ You can review the Windows event log to see events that are created when control
 
 2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
 
-3. On the left panel, under **Actions**, click **Import custom view...**.
+3. On the left panel, under **Actions**, select **Import custom view...**.
 
 4. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
 
 5. Click **OK**.
 
-This creates a custom view that shows the following events related to controlled folder access:
+After following the procedure, you have created a custom view that shows events related to controlled folder access, as listed in the following table:
 
 |Event ID | Description |
 |---|---|
@@ -96,7 +96,7 @@ This creates a custom view that shows the following events related to controlled
 
 4. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.
 
-5. Do one of the following:
+5. Do one of the following steps:
 
    - To add a folder, select **+ Add a protected folder**.
    
