@@ -1,6 +1,6 @@
 ---
 title: Configure a WDAC managed installer (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
+description: Explains how to configure a custom Manged Installer.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 06/13/2018
+ms.date: 08/14/2020
 ---
 
 # Configuring a managed installer with AppLocker and Windows Defender Application Control
@@ -63,16 +63,16 @@ An example of a valid Managed Installer rule collection using Microsoft Endpoint
 
 ```xml
 <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-    <FilePublisherRule Id="6cc9a840-b0fd-4f86-aca7-8424a22b4b93" Name="CMM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="6cc9a840-b0fd-4f86-aca7-8424a22b4b93" Name="MEMCM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="SYSTEM CENTER CONFIGURATION MANAGER" BinaryName="CCMEXEC.EXE">
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
           <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
-    <FilePublisherRule Id="780ae2d3-5047-4240-8a57-767c251cbb12" Name="CCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="780ae2d3-5047-4240-8a57-767c251cbb12" Name="MEMCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="SYSTEM CENTER CONFIGURATION MANAGER" BinaryName="CCMSETUP.EXE">
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMSETUP.EXE">
           <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
