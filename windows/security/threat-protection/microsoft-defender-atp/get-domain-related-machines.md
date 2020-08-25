@@ -1,6 +1,6 @@
 ---
 title: Get domain related machines API
-description: Retrieves a collection of devices related to a given domain address.
+description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

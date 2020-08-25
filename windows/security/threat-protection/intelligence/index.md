@@ -1,6 +1,6 @@
 ---
 title: Security intelligence
-description: Safety tips about malware and how you can protect your organization
+description: Learn about different types of malware, safety tips on how you can protect your organization, and resources for industry collaboration programs.
 keywords: security, malware
 ms.prod: w10
 ms.mktglfcycl: secure
