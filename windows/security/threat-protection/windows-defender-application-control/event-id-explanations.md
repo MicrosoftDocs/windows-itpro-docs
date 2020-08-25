@@ -70,11 +70,12 @@ Below are the fields which help to diagnose what a 3090, 3091, or 3092 event ind
 
 In order to enable 3091 audit events and 3092 block events, you must create a TestFlags regkey with a value of 0x100. You can do so using the following PowerShell command:
 
-    ```powershell
-    reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x100
-    ```
+```powershell
+reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x100
+```
+    
 In order to enable 3090 allow events as well as 3091 and 3092 events, you must instead create a TestFlags regkey with a value of 0x300. You can do so using the following PowerShell command:
 
-    ```powershell
-    reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x300
-    ```
+```powershell
+reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x300
+```
