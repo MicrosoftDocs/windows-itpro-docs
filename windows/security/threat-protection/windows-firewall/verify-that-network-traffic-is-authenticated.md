@@ -1,6 +1,6 @@
 ---
 title: Verify That Network Traffic Is Authenticated (Windows 10)
-description: Verify That Network Traffic Is Authenticated
+description: Learn how to confirm that network traffic is being protected by IPsec authentication after you configure your domain isolation rule to require authentication.
 ms.assetid: cc1fb973-aedf-4074-ad4a-7376b24f03d2
 ms.reviewer: 
 ms.author: dansimp

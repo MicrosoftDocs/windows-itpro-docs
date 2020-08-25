@@ -106,5 +106,5 @@ For 5144(S): A network share object was deleted.
 
 - If you have critical network shares for which you need to monitor all changes (especially, the deletion of that share), monitor for specific “**Share Information\\Share Name”.**
 
-- If you have high-value computers for which you need to monitor all changes (especially, deletion of file shares), monitor for all [5144](event-5144.md) events on these computers<strong>.</strong> For example, you could monitor file shares on domain controllers.
+- If you have high-value computers for which you need to monitor all changes (especially, deletion of file shares), monitor for all [5144](event-5144.md) events on these computers<b>.</b> For example, you could monitor file shares on domain controllers.
 

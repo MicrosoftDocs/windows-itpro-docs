@@ -1,6 +1,6 @@
 ---
 title: PolicyManager CSP
-description: PolicyManager CSP
+description: Learn how PolicyManager CSP is deprecated. For Windows 10 devices you should use Policy CSP, which replaces PolicyManager CSP.
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
 ms.reviewer: 
 manager: dansimp

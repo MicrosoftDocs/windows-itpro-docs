@@ -206,9 +206,9 @@ For 4688(S): A new process has been created.
 
 - It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<strong>.</strong> Typically this means that UAC is disabled for this account for some reason.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<b>.</b> Typically this means that UAC is disabled for this account for some reason.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<strong>.</strong> This means that a user ran a program using administrative privileges.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<b>.</b> This means that a user ran a program using administrative privileges.
 
 - You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
 

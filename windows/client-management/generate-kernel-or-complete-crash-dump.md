@@ -1,6 +1,6 @@
 ---
 title: Generate a kernel or complete crash dump
-description: Learn how to generate a kernel or complete crash dump.
+description: Learn how to generate a kernel or complete crash dump, and then use the output to troubleshoot several issues.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
