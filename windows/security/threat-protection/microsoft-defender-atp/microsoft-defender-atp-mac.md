@@ -67,6 +67,18 @@ Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on 
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
+### Licensing requirements
+
+Microsoft Defender Advanced Threat Protection for Mac requires one of the following Microsoft Volume Licensing offers:
+
+- Microsoft 365 E5 (M365 E5)
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 (M365 A5)
+
+> [!NOTE]
+> Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+> Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
+
 ### Network connections
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
