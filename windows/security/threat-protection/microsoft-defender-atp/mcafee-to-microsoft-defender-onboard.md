@@ -70,14 +70,7 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 
 Now that you have onboarded your organization's devices to Microsoft Defender ATP, your next step is to uninstall McAfee.
 
-1. [Disable Tamper Protection](https://knowledge.broadcom.com/external/article?legacyId=tech192023) in McAfee.
-
-2. Delete the uninstall password for McAfee:
-   1. On your Windows devices, open Registry Editor as an administrator.
-   2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\McAfee\McAfee Endpoint Protection\SMC`.
-   3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
-
-3. Remove McAfee from your devices. If you need help with this, see the following resources: 
+To get help with this step, go to your McAfee support ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com)).
 
 ## Make sure Microsoft Defender ATP is in active mode
 
