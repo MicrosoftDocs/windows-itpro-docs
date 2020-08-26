@@ -1,6 +1,6 @@
 ---
 title: Migrate from McAfee to Microsoft Defender ATP
-description: Make the switch from McAfee to Microsoft Defender ATP
+description: Make the switch from McAfee to Microsoft Defender ATP. Read this article for an overview.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
