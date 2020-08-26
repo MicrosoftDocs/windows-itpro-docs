@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.date: 08/26/2020
 ---
 
 # Turn on block at first sight
@@ -31,10 +32,10 @@ You can [specify how long the file should be prevented from running](configure-c
 
 When Microsoft Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or not a threat.
 
-Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender ATP next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection. To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender ATP next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 ![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
-In Windows 10, version 1803, block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+In Windows 10, version 1803 or later, block at first sight can block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
 Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
@@ -86,7 +87,7 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 5. Click **Advanced**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
    ![Enable Advanced settings](images/defender/sccm-advanced-settings.png)
 
-6. Click **Cloud Protection Service**, set **Cloud Protection Service membership type** to **Advanced membership**, set **Level for blocking malicious files** to **High**, and set **Allow extended cloud check to block and scan suspicious files for up to (seconds)** to **50** seconds.
+6. Click **Cloud Protection Service**, set **Cloud Protection Service membership type** to **Advanced membership**, set **Level for blocking suspicious files** to **High**, and set **Allow extended cloud check to block and scan suspicious files for up to (seconds)** to **50** seconds.
    ![Enable Cloud Protection Service](images/defender/sccm-cloud-protection-service.png)
 
 7. Click **OK** to create the policy.
@@ -99,9 +100,9 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MAPS**, configure the following Group Policies, and then click **OK**:
 
-   -  Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
+    1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
 
-   - Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
+    2. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
 
     > [!WARNING]
     > Setting to **Always prompt (0)** will lower the protection state of the device. Setting to **Never send (2)** means block at first sight will not function.
@@ -112,6 +113,12 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 
     2. Double-click **Turn off real-time protection** and ensure the option is set to **Disabled**, and then click **OK**.
 
+5. In the **Group Policy Management Editor**, expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MpEngine**:
+
+    1. Double-click **Select cloud protection level** and ensure the option is set to **Enabled**. 
+
+    2. Ensure that **Select cloud blocking level** section on the same page is set to **High blocking level**, and then click **OK**.
+    
 If you had to change any of the settings, you should redeploy the Group Policy Object across your network to ensure all endpoints are covered.
 
 ### Confirm block at first sight is turned on with Registry editor
@@ -129,7 +136,9 @@ If you had to change any of the settings, you should redeploy the Group Policy O
     1. **DisableIOAVProtection** key is set to **0**
 
     2. **DisableRealtimeMonitoring** key is set to **0**
-
+    
+4. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\MpEngine`, and make sure that the **MpCloudBlockLevel** key is set to **2**
+    
 ### Confirm Block at First Sight is enabled on individual clients
 
 You can confirm that block at first sight is enabled on individual clients using Windows security settings.
@@ -169,7 +178,7 @@ You may choose to disable block at first sight if you want to retain the prerequ
 4. Double-click **Configure the 'Block at First Sight' feature** and set the option to **Disabled**.
 
     > [!NOTE]
-    > Disabling block at first sight will not disable or alter the prerequisite group policies.
+    > Disabling block at first sight does not disable or alter the prerequisite group policies.
 
 ## See also
 

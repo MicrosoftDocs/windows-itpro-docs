@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker: How to enable Network Unlock
@@ -367,7 +368,7 @@ The following steps can be used to configure Network Unlock on these older syste
 6.  Configure registry settings for Network Unlock:
 
     Apply the registry settings by running the following certutil script (assuming your network unlock certificate file is called **BitLocker-NetworkUnlock.cer**) on each computer running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
-
+```console
         certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f
@@ -376,6 +377,7 @@ The following steps can be used to configure Network Unlock on these older syste
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPM /t REG_DWORD /d 2 /f
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKey /t REG_DWORD /d 2 /f
         reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
+```
 
 7.  Set up a TPM protector on the clients
 8.  Reboot the clients to add the Network (Certificate Based) protector
