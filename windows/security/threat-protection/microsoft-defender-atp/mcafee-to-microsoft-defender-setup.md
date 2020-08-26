@@ -1,5 +1,5 @@
 ---
-title: Phase 2 - Set up Microsoft Defender ATP
+title: McAfee to Microsoft Defender ATP - Setup
 description: This is phase 2, Setup, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
