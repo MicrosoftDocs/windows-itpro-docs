@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
+ms.date: 08/26/2020
 ---
 
 # Turn on block at first sight
@@ -31,10 +32,10 @@ You can [specify how long the file should be prevented from running](configure-c
 
 When Microsoft Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or not a threat.
 
-Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender ATP next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection. To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender ATP next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 ![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
-In Windows 10, version 1803, block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+In Windows 10, version 1803 or later, block at first sight can block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
 Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
@@ -177,7 +178,7 @@ You may choose to disable block at first sight if you want to retain the prerequ
 4. Double-click **Configure the 'Block at First Sight' feature** and set the option to **Disabled**.
 
     > [!NOTE]
-    > Disabling block at first sight will not disable or alter the prerequisite group policies.
+    > Disabling block at first sight does not disable or alter the prerequisite group policies.
 
 ## See also
 
