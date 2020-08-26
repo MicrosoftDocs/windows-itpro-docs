@@ -76,7 +76,7 @@ Microsoft Defender Advanced Threat Protection for Mac requires one of the follow
 - Microsoft 365 A5 (M365 A5)
 
 > [!NOTE]
-> Eligible Licensed Users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+> Eligible licensed users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
 > Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
 ### Network connections
