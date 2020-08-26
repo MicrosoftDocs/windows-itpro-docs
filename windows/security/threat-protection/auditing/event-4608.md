@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-<img src="images/event-4608.png" alt="Event 4608 illustration" width="449" height="317" hspace="10" align="left" />
+<img src="images/event-4608.png" alt="Event 4608 illustration" width="449" height="317" hspace="10" align="left" /><br/><br/>
 
 ***Subcategory:***&nbsp;[Audit Security State Change](audit-security-state-change.md)
 
