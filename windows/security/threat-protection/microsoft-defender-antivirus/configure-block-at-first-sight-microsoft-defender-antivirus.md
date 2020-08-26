@@ -137,7 +137,7 @@ If you had to change any of the settings, you should redeploy the Group Policy O
 
     2. **DisableRealtimeMonitoring** key is set to **0**
     
-4. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\MpEngine`, and make sure that **MpCloudBlockLevel** key is set to **2**
+4. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\MpEngine`, and make sure that the **MpCloudBlockLevel** key is set to **2**
     
 ### Confirm Block at First Sight is enabled on individual clients
 
