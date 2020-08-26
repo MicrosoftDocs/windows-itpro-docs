@@ -44,7 +44,7 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
-1. Mount ISO file (or enter the DVD) of Windows Server 2016 or later installation media.
+1. Mount the ISO file (or insert the DVD) containing the Windows Server 2016 or later installation media.
 2. Open an elevated command prompt.
 3. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
 4. To update the schema, type ```adprep /forestprep```.
