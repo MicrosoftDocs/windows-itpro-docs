@@ -1,6 +1,6 @@
 ---
 title: 4634(S) An account was logged off. (Windows 10)
-description: Describes security event 4634(S) An account was logged off.
+description: Describes security event 4634(S) An account was logged off. This event is generated when a logon session is terminated and no longer exists.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
