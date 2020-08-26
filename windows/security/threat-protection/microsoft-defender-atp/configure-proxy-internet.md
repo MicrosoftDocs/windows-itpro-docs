@@ -150,7 +150,7 @@ Microsoft Defender ATP is built on Azure cloud, deployed in the following region
 - \+\<Region Name="uksouth">
 - \+\<Region Name="ukwest">
 
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
