@@ -21,6 +21,10 @@ The following diagram shows the DMClient CSP in tree format.
 
 ![dmclient csp](images/provisioning-csp-dmclient-th2.png)
 
+
+<a href="" id="msft"></a>**./Vendor/MSFT**  
+All the nodes in this CSP are supported in device context, except for the ExchangeID node, which is supported in user context. For device context, use the **./Device/Vendor/MSFT** path and for user context, use the **./User/Vendor/MSFT** path.
+
 <a href="" id="dmclient"></a>**DMClient**  
 Root node for the CSP.
 
