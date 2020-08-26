@@ -144,11 +144,28 @@ Data in advanced hunting tables are generally classified into the following data
 | `int` | 32-bit numeric value  |
 | `long` | 64-bit numeric value |
 
+## Get help as you write queries
+Take advantage of the following functionality to write queries faster:
+
+- **Autosuggest**—as you write queries, advanced hunting provides suggestions from IntelliSense.
+- **Schema tree**—a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+- **[Schema reference](advanced-hunting-schema-reference.md#get-schema-information-in-the-security-center)**—in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
+
+## Work with multiple queries in the editor
+The query editor can serve as your scratch pad for experimenting with multiple queries. To use multiple queries:
+
+- Separate each query with an empty line.
+- Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
+
+![Image of the advanced hunting query editor with multiple queries](images/ah-multi-query.png)
+_Query editor with multiple queries_
+
+
 ## Use sample queries
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of advanced hunting window](images/atp-advanced-hunting.png)
+![Image of the advanced hunting get started tab](images/atp-advanced-hunting.png)
 
 > [!NOTE]
 > Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
