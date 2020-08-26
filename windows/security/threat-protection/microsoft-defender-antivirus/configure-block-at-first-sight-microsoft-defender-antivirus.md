@@ -100,7 +100,7 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MAPS**, configure the following Group Policies, and then click **OK**:
 
-   1 Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
+    1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
 
    2 Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
 
