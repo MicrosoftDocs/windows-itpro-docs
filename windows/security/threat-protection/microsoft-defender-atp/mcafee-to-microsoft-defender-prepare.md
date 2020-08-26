@@ -1,6 +1,6 @@
 ---
 title: Phase 1 - Prepare for your migration to Microsoft Defender ATP
-description: Phase 1 of "Make the switch from McAfee to Microsoft Defender ATP". Prepare for your migration.
+description: This is phase 1, Prepare, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
