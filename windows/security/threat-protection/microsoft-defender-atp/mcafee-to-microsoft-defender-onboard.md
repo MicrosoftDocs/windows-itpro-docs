@@ -30,7 +30,7 @@ ms.topic: article
 
 1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
 2. [Run a detection test](#run-a-detection-test).
-3. [Uninstall McAfee](#uninstall-McAfee).
+3. [Uninstall McAfee](#uninstall-mcafee).
 4. [Make sure Microsoft Defender ATP is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender ATP
