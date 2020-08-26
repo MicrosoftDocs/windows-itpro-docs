@@ -119,7 +119,7 @@ If your organization supports multiple Windows operating systems, app control po
 </ul></td>
 <td align="left"><p>AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
+<b>Note</b><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
 </div>
 <div>
 

@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.reviewer: 
+ms.custom: bitlocker
 ---
 
 # BitLocker Upgrading FAQ

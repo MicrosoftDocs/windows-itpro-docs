@@ -120,6 +120,9 @@ This step of the setup process involves adding Microsoft Defender ATP to the exc
 
 During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender Antivirus exclusion list. 
 
+> [!NOTE]
+> To get an idea of which processes and services to exclude, see Broadcom's [Processes and services used by Endpoint Protection 14](https://knowledge.broadcom.com/external/article/170706/processes-and-services-used-by-endpoint.html).
+
 When you add [exclusions to Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.
 - Process exclusions exclude whatever a process touches, but does not exclude the process itself.

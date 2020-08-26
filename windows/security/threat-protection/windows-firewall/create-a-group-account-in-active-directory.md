@@ -1,6 +1,6 @@
 ---
 title: Create a Group Account in Active Directory (Windows 10)
-description: Create a Group Account in Active Directory
+description: Learn how to create a security group for the computers that are to receive Group Policy settings by using the Active Directory Users and Computers console.
 ms.assetid: c3700413-e02d-4d56-96b8-7991f97ae432
 ms.reviewer: 
 ms.author: dansimp

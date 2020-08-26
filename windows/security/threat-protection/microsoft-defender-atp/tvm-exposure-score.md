@@ -30,7 +30,7 @@ Your exposure score is visible in the [Threat and vulnerability management dashb
 - Detect and respond to areas that require investigation or action to improve the current state.
 - Communicate with peers and management about the impact of security efforts.
 
-The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart gives you a visual indication of a high cybersecurity threat exposure that you can investigate further.
+The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart give you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
 ![Exposure score card](images/tvm_exp_score.png)
 
@@ -38,7 +38,7 @@ The card gives you a high-level view of your exposure score trend over time. Any
 
 Threat and vulnerability management  introduces a new exposure score metric, which visually represents how exposed your devices are to imminent threats.
 
-The exposure score is continuously calculated on each device in the organization and influenced by the following factors:
+The exposure score is continuously calculated on each device in the organization. It is influenced by the following factors:
 
 - Weaknesses, such as vulnerabilities discovered on the device
 - External and internal threats such as public exploit code and security alerts
