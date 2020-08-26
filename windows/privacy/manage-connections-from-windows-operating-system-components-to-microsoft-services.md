@@ -415,7 +415,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
->When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/en-us/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+>When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -1664,7 +1664,7 @@ You can turn off **Enhanced Notifications** as follows:
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen
 
-To disable Windows Defender Smartscreen:
+To disable Windows Defender SmartScreen:
 
 In Group Policy, configure: 
 
@@ -1838,7 +1838,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
 
-For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization-reference).
+For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
 
 ### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
@@ -1852,7 +1852,7 @@ For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimi
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
 For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates]
-(https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization).
+(https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
 ### <a href="" id="bkmk-wu"></a>29. Windows Update
 
