@@ -1,6 +1,6 @@
 ---
 title: Phase 3 - Onboard to Microsoft Defender ATP
-description: Switch from McAfee to onboard with Microsoft Defender ATP
+description: This is phase 3, Onboard, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
