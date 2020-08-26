@@ -1,6 +1,6 @@
 ---
 title: Require Encryption When Accessing Sensitive Network Resources (Windows 10)
-description: Require Encryption When Accessing Sensitive Network Resources
+description: Windows Defender Firewall with Advanced Security allows you to require that all network traffic in an isolated domain be encrypted.
 ms.assetid: da980d30-a68b-4e2a-ba63-94726355ce6f
 ms.reviewer: 
 ms.author: dansimp

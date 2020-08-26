@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Proxy Settings page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Proxy Settings** page of the Internet Explorer Customization Wizard 11 lets you pick the proxy servers used by your employees to connect for services required by the custom install package.
 
 Using a proxy server lets you limit access to the Internet. You can also use the **Additional Settings** page of the wizard to further restrict your employees from changing the proxy settings.

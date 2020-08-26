@@ -1,6 +1,6 @@
 ---
 title: JAMF-based deployment for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac, using JAMF.
+description: Learn about all the steps needed to deploy Microsoft Defender Advanced Threat Protection for Mac through JAMF.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.date: 04/10/2020
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
+This article describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
 
 1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 1. [Create JAMF policies](#create-jamf-policies)
@@ -64,17 +64,25 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
 3. Select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
-5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
+5. From the command prompt, verify that you have the two files. 
 
     ```bash
     ls -l
+    ```
+    ```Output
     total 721160
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
+    ```
+6. Extract the contents of the .zip files like so:
+ 
+    ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
-    inflating: intune/kext.xml
+     inflating: intune/kext.xml
      inflating: intune/WindowsDefenderATPOnboarding.xml
      inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
@@ -283,6 +291,9 @@ You can monitor policy installation on a device by following the JAMF log file:
 
 ```bash
     tail -f /var/log/jamf.log
+```
+
+```Output
     Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
     Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
     Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
@@ -296,6 +307,9 @@ You can also check the onboarding status:
 
 ```bash
 mdatp --health
+```
+
+```Output
 ...
 licensed                                : true
 orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"

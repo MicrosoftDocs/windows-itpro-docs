@@ -8,7 +8,7 @@
     {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
@@ -28,7 +28,7 @@
     {
       "source_path": "devices/hololens/hololens-setup.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-use-apps.md",
@@ -38,17 +38,17 @@
     {
       "source_path": "devices/hololens/hololens-get-apps.md",
       "redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-spaces-on-hololens.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-clicker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
@@ -108,7 +108,7 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-containers-help-protect-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
@@ -173,12 +173,12 @@
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
@@ -861,6 +861,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection-exploit-guard",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction",
       "redirect_document_id": true
@@ -1028,6 +1033,11 @@
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-and-manage-tvm.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os",
       "redirect_document_id": true
     },
     {
@@ -1428,6 +1438,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
       "redirect_document_id": true
     },
     {
@@ -6208,27 +6223,27 @@
     {
       "source_path": "devices/surface/surface-diagnostic-toolkit.md",
       "redirect_url": "https://docs.microsoft.com/surface/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
       "redirect_url": "https://docs.microsoft.com/surface/indexdevices/surface/update",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
       "redirect_url": "https://docs.microsoft.com/surface-hub/finishing-your-surface-hub-meeting",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",

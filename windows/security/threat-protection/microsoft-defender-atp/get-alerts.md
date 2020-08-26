@@ -1,6 +1,6 @@
 ---
 title: List alerts API
-description: Retrieve a collection of recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
+description: Learn how to use the List alerts API to retrieve a collection of alerts in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

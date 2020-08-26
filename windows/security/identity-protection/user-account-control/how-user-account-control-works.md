@@ -270,7 +270,7 @@ To better understand each component, review the table below:
 </tr>
 </table>
  
-The slider will never turn UAC completely off. If you set it to <strong>Never notify</strong>, it will:
+The slider will never turn UAC completely off. If you set it to <b>Never notify</b>, it will:
 
 -   Keep the UAC service running.
 -   Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt.

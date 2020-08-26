@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Virtualization and compatibility with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 If your company is considering upgrading to the latest version of Internet Explorer, but is hesitant because of a large number of web apps that need to be tested and moved, we recommend that you consider virtualization. Virtualization lets you set up a virtual environment where you can run earlier versions of IE.
 
 **Important**<br>

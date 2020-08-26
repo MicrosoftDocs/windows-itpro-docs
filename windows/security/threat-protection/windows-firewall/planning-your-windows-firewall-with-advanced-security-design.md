@@ -1,6 +1,6 @@
 ---
 title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows 10)
-description: Planning Your Windows Defender Firewall with Advanced Security Design
+description: After you gather the relevant information, select the design or combination of designs for Windows Defender Firewall with Advanced Security in your environment.
 ms.assetid: f3ac3d49-ef4c-4f3c-a16c-e107284e169f
 ms.reviewer: 
 ms.author: dansimp

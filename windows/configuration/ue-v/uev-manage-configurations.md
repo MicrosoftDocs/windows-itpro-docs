@@ -1,6 +1,6 @@
 ---
 title: Manage Configurations for UE-V
-description: Manage Configurations for UE-V
+description: Learn to manage the configuration of the User Experience Virtualization (UE-V) service and also learn to manage storage locations for UE-V resources.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

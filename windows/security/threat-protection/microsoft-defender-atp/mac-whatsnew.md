@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: List of major changes for Microsoft Defender ATP for Mac.
+description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -37,6 +37,20 @@ ms.topic: conceptual
 > 
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+
+## 101.06.63
+
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.
+
+## 101.05.17
+
+> [!IMPORTANT]
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> 
+> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
+
+- Addressed a kernel panic that occurred sometimes when accessing SMB file shares
+- Performance improvements & bug fixes
 
 ## 101.05.16
 

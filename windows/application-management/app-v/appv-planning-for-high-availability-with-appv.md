@@ -1,6 +1,6 @@
 ---
 title: Planning for High Availability with App-V Server
-description: Planning for High Availability with App-V Server
+description: Learn what you need to know so you can plan for high availability with Application Virtualization (App-V) server.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.topic: article
 
 Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high available service level.
 
-The following sections will he following sections to help you understand the options to deploy App-V in a highly available configuration.
+The following sections will help you understand the options to deploy App-V in a highly available configuration.
 
 ## Support for Microsoft SQL Server clustering
 

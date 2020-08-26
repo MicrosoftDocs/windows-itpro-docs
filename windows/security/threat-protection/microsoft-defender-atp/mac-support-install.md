@@ -31,7 +31,8 @@ While we do not display an exact error to the end user, we keep a log file with 
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
-
+```
+```Output
 preinstall com.microsoft.wdav begin [2020-03-11 13:08:49 -0700] 804
 INSTALLER_SECURE_TEMP=/Library/InstallerSandboxes/.PKInstallSandboxManager/CB509765-70FC-4679-866D-8A14AD3F13CC.activeSandbox/89FA879B-971B-42BF-B4EA-7F5BB7CB5695
 correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
@@ -49,6 +50,7 @@ You can verify that an installation happened and analyze possible errors by quer
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log
-
+```
+```Output
 log show --start '2020-03-11 13:00:00' --end '2020-03-11 13:08:50' --info --debug --source --predicate 'processImagePath CONTAINS[C] "install"' --style syslog
 ```

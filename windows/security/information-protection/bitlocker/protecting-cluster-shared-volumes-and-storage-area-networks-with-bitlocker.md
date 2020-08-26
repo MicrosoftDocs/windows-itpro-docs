@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker
@@ -168,91 +169,91 @@ The following table contains information about both Physical Disk Resources (i.e
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Action</strong></p></td>
-<td align="left"><p><strong>On owner node of failover volume</strong></p></td>
-<td align="left"><p><strong>On Metadata Server (MDS) of CSV</strong></p></td>
-<td align="left"><p><strong>On (Data Server) DS of CSV</strong></p></td>
-<td align="left"><p><strong>Maintenance Mode</strong></p></td>
+<td align="left"><p><b>Action</b></p></td>
+<td align="left"><p><b>On owner node of failover volume</b></p></td>
+<td align="left"><p><b>On Metadata Server (MDS) of CSV</b></p></td>
+<td align="left"><p><b>On (Data Server) DS of CSV</b></p></td>
+<td align="left"><p><b>Maintenance Mode</b></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Manage-bde –on</strong></p></td>
+<td align="left"><p><b>Manage-bde –on</b></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Manage-bde –off</strong></p></td>
+<td align="left"><p><b>Manage-bde –off</b></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Manage-bde Pause/Resume</strong></p></td>
+<td align="left"><p><b>Manage-bde Pause/Resume</b></p></td>
 <td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked<strong></p></td>
+<td align="left"><p>Blocked<b></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Manage-bde –lock</strong></p></td>
+<td align="left"><p><b>Manage-bde –lock</b></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>manage-bde –wipe</strong></p></td>
+<td align="left"><p><b>manage-bde –wipe</b></p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Unlock</strong></p></td>
+<td align="left"><p><b>Unlock</b></p></td>
 <td align="left"><p>Automatic via cluster service</p></td>
 <td align="left"><p>Automatic via cluster service</p></td>
 <td align="left"><p>Automatic via cluster service</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>manage-bde –protector –add</strong></p></td>
+<td align="left"><p><b>manage-bde –protector –add</b></p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>manage-bde -protector -delete</strong></p></td>
+<td align="left"><p><b>manage-bde -protector -delete</b></p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>manage-bde –autounlock</strong></p></td>
+<td align="left"><p><b>manage-bde –autounlock</b></p></td>
 <td align="left"><p>Allowed (not recommended)</p></td>
 <td align="left"><p>Allowed (not recommended)</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed (not recommended)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Manage-bde -upgrade</strong></p></td>
+<td align="left"><p><b>Manage-bde -upgrade</b></p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Shrink</strong></p></td>
+<td align="left"><p><b>Shrink</b></p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Blocked</p></td>
 <td align="left"><p>Allowed</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Extend</strong></p></td>
+<td align="left"><p><b>Extend</b></p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Allowed</p></td>
 <td align="left"><p>Blocked</p></td>
@@ -261,7 +262,7 @@ The following table contains information about both Physical Disk Resources (i.e
 </tbody>
 </table>
  
-&gt;</strong>Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
+&gt;</b>Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
  
 In the case where a physical disk resource experiences a failover event during conversion, the new owning node will detect the conversion is not complete and will complete the conversion process.
 
