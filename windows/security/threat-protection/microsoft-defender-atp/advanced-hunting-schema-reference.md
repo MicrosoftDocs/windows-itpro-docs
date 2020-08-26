@@ -33,7 +33,7 @@ The [advanced hunting](advanced-hunting-overview.md) schema is made up of multip
 While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
 
 - **Tables description**—type of data contained in the table and the source of that data.
-- **Columns**—*all the columns in the table.
+- **Columns**—all the columns in the table.
 - **Action types**—possible values in the `ActionType` column representing the event types supported by the table. This is provided only for tables that contain event information.
 - **Sample query**—example queries that feature how the table can be utilized.
 
