@@ -157,7 +157,7 @@ The query editor can serve as your scratch pad for experimenting with multiple q
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-![Image of advanced hunting window](images/ah-multi-query.png)
+![Image of the advanced hunting query editor with multiple queries](images/ah-multi-query.png)
 _Query editor with multiple queries_
 
 
@@ -165,7 +165,7 @@ _Query editor with multiple queries_
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of advanced hunting window](images/atp-advanced-hunting.png)
+![Image of the advanced hunting get started tab](images/atp-advanced-hunting.png)
 
 > [!NOTE]
 > Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
