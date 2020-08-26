@@ -1,6 +1,6 @@
 ---
 title: Passwordless Strategy
-description: Reducing Password Usage Surface
+description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10.
 keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: w10
 ms.mktglfcycl: deploy
