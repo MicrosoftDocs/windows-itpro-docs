@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-<img src="images/event-4625.png" alt="Event 4625 illustration" width="449" height="780" hspace="10" align="left" /><br/><br/>
+<img src="images/event-4625.png" alt="Event 4625 illustration" width="449" height="780" hspace="10" align="top" />
 
 ***Subcategories:***&nbsp;[Audit Account Lockout](audit-account-lockout.md) and [Audit Logon](audit-logon.md)
 
