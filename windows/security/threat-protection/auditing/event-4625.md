@@ -32,12 +32,13 @@ It generates on the computer where logon attempt was made, for example, if logon
 
 This event generates on domain controllers, member servers, and workstations.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
@@ -93,7 +94,8 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Security ID** \[Type = SID\]**:** SID of account that reported information about logon failure. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+> [!NOTE]
+> A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that reported information about logon failure.
 
@@ -129,7 +131,8 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Security ID** \[Type = SID\]**:** SID of the account that was specified in the logon attempt. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+> [!NOTE]
+> A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that was specified in the logon attempt.
 
@@ -151,35 +154,36 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Failure Reason** \[Type = UnicodeString\]**:** textual explanation of **Status** field value. For this event it typically has “**Account locked out**” value.
 
--   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event it typically has “**0xC0000234**” value. The most common status codes are listed in “Table 12. Windows logon status codes.”
+-   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event it typically has “**0xC0000234**” value. The most common status codes are listed in Table 12. Windows logon status codes.
 
-| Status\\Sub-Status Code | Description                                                                                                                                                      |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0XC000005E              | There are currently no logon servers available to service the logon request.                                                                                     |
-| 0xC0000064              | User logon with misspelled or bad user account                                                                                                                   |
-| 0xC000006A              | User logon with misspelled or bad password                                                                                                                       |
-| 0XC000006D              | This is either due to a bad username or authentication information                                                                                               |
-| 0XC000006E              | Unknown user name or bad password.                                                                                                                               |
-| 0xC000006F              | User logon outside authorized hours                                                                                                                              |
-| 0xC0000070              | User logon from unauthorized workstation                                                                                                                         |
-| 0xC0000071              | User logon with expired password                                                                                                                                 |
-| 0xC0000072              | User logon to account disabled by administrator                                                                                                                  |
-| 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                                                                                |
-| 0XC0000133              | Clocks between DC and other computer too far out of sync                                                                                                         |
-| 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine                                                                         |
-| 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.                                                |
-| 0XC0000192              | An attempt was made to logon, but the N**etlogon** service was not started.                                                                                      |
-| 0xC0000193              | User logon with expired account                                                                                                                                  |
-| 0XC0000224              | User is required to change password at next logon                                                                                                                |
-| 0XC0000225              | Evidently a bug in Windows and not a risk                                                                                                                        |
-| 0xC0000234              | User logon with account locked                                                                                                                                   |
-| 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                                                                                   |
-| 0XC0000413              | Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
-| 0x0                     | Status OK.                                                                                                                                                       |
+    <span id="_Ref433822658" class="anchor"></span>**Table 12: Windows logon status codes.**
 
-> <span id="_Ref433822658" class="anchor"></span>Table: Windows logon status codes.
-> 
-> **Note**&nbsp;&nbsp;To see the meaning of other status\\sub-status codes you may also check for status code in the Window header file ntstatus.h in Windows SDK.
+    | Status\\Sub-Status Code | Description                                                                      |
+    |-------------------------|------------------------------------------------------------------------------------------------------|
+    | 0XC000005E              | There are currently no logon servers available to service the logon request.                         |
+    | 0xC0000064              | User logon with misspelled or bad user account                                                       |
+    | 0xC000006A              | User logon with misspelled or bad password                                                           |
+    | 0XC000006D              | This is either due to a bad username or authentication information                                   |
+    | 0XC000006E              | Unknown user name or bad password.                                                                   |
+    | 0xC000006F              | User logon outside authorized hours                                                                  |
+    | 0xC0000070              | User logon from unauthorized workstation                                                             |
+    | 0xC0000071              | User logon with expired password                                                                     |
+    | 0xC0000072              | User logon to account disabled by administrator                                                      |
+    | 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                    |
+    | 0XC0000133              | Clocks between DC and other computer too far out of sync                                             |
+    | 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine             |
+    | 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.      |
+    | 0XC0000192              | An attempt was made to logon, but the N**etlogon** service was not started.                                            |
+    | 0xC0000193              | User logon with expired account                                                                      |
+    | 0XC0000224              | User is required to change password at next logon                                                    |
+    | 0XC0000225              | Evidently a bug in Windows and not a risk                                                            |
+    | 0xC0000234              | User logon with account locked                                                                       |
+    | 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                       |
+    | 0XC0000413              | Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
+    | 0x0                     | Status OK.  |
+
+> [!NOTE]
+> To see the meaning of other status\\sub-status codes you may also check for status code in the Window header file ntstatus.h in Windows SDK.
 
 More information: <https://dev.windows.com/en-us/downloads>
 
@@ -241,7 +245,8 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 For 4625(F): An account failed to log on.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
+> [!IMPORTANT]
+> For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a pre-defined “**Process Name**” for the process reported in this event, monitor all events with “**Process Name**” not equal to your defined value.
 
