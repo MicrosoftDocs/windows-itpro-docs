@@ -102,7 +102,7 @@ For a list of Microsoft Defender Antivirus device restrictions in Intune, see [D
 
     1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
 
-   2 Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
+    2. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
 
     > [!WARNING]
     > Setting to **Always prompt (0)** will lower the protection state of the device. Setting to **Never send (2)** means block at first sight will not function.
