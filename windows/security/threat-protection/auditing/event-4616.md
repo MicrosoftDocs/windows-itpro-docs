@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-<img src="images/event-4616.png" alt="Event 4616 illustration" width="522" height="518" hspace="10" align="left" />
+<img src="images/event-4616.png" alt="Event 4616 illustration" width="522" height="518" hspace="10" align="left" /><br/><br/>
 
 ***Subcategory:***&nbsp;[Audit Security State Change](audit-security-state-change.md)
 
