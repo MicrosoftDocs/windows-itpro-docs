@@ -64,6 +64,7 @@ When a device has multiple profiles with Always On triggers, the user can specif
 ## Preserving user Always On preference
 
 Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value **AutoTriggerDisabledProfilesList**.  
+
 Should a management tool remove or add the same profile name back and set **AlwaysOn** to **true**, Windows will not check the box if the profile name exists in the following registry value in order to preserve user preference.
 
 **Key:** HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config<br/>
