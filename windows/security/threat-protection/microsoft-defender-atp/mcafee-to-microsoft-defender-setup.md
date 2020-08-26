@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-McAfeemigrate 
+- m365solution-mcafeemigrate 
 ms.topic: article
 ---
 
@@ -109,7 +109,12 @@ Microsoft Defender Antivirus can run alongside McAfee if you set Microsoft Defen
 
 ## Add Microsoft Defender ATP to the exclusion list for McAfee
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for McAfee and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for McAfee and any other security products your organization is using. 
+
+> [!TIP]
+> To get help configuring exclusions, refer to McAfee documentation, such as the following article: [McAfee Endpoint Security 10.5.0 - Threat Prevention Module Product Guide (McAfee ePolicy Orchestrator) - Windows: Configuring exclusions](https://docs.mcafee.com/bundle/endpoint-security-10.5.0-threat-prevention-product-guide-epolicy-orchestrator-windows/page/GUID-71C5FB4B-A143-43E6-8BF0-8B2C16ABE6DA.html).
+
+The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
