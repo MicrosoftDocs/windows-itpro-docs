@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365solution-McAfeemigrate
+- m365solution-mcafeemigrate
 ms.topic: article
 ---
 
