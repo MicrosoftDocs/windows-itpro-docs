@@ -27,7 +27,7 @@ ms.date: 08/26/2020
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - If your organization's endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, then Microsoft Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in preview) enabled, then whenever a malicious artifact is detected, blocking and remediation actions are taken.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in preview) enabled, then whenever a malicious artifact is detected, Microsoft Defender ATP takes action to block and remediate the artifact.
 
 ## Antivirus and Microsoft Defender ATP
 
