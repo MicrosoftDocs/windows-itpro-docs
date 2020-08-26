@@ -30,8 +30,8 @@ ms.topic: article
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
-4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-McAfee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-McAfee-to-the-exclusion-list-for-microsoft-defender-atp).
+4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
+5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
