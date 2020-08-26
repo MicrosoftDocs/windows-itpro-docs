@@ -245,6 +245,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Cpls policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-cpls.md##admx-cpls-usedefaulttile" id="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
+  </dd>
+</dl>
+
 ### ADMX_DnsClient policies
 
 <dl>
