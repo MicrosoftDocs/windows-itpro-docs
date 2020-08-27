@@ -57,8 +57,11 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 - **Name** 
 - **Description**
 - **Publisher** 
-as **Microsoft**.
-Enter **Appstore URL** as **Microsoft Defender ATP Preview** app Google Play Store URL: https://play.google.com/store/apps/details?id=com.microsoft.scmx
+
+as Microsoft.
+
+- **Appstore URL** as **Microsoft Defender ATP Preview app** 
+- **Google Play Store URL** https://play.google.com/store/apps/details?id=com.microsoft.scmx
 
 Other fields are optional. Select **Next**.
 
