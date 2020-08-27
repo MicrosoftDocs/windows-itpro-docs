@@ -50,7 +50,7 @@ This topic describes how to deploy Microsoft Defender ATP for Android on Intune 
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 **Android Apps** \> **Add \> Android store app** and click **Select**.
 
-    ![Image of Microsoft Endpoint Manager Admin Center](images/AddAndroidStoreApp.png)
+    ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addandroidstoreapp.png)
 
 
 2. On the **Add app** page and in the *App Information* section enter **Name, Description**,
@@ -58,7 +58,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 **Appstore URL** as **Microsoft Defender ATP Preview** app Google Play Store URL: https://play.google.com/store/apps/details?id=com.microsoft.scmx
 Other fields are optional and then select **Next**.
 
-    ![Image of Microsoft Endpoint Manager Admin Center](images/AddAppAppInfo.png)
+    ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addappinfo.png)
 
 3. In the *Assignments* section, go to the **Required** section and select **Add
 group.** You can then choose the user group(s) that you would like to target
@@ -221,7 +221,7 @@ Defender ATP should be visible in the apps list.
 10. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
 
-    ![Image of list of apps](images/MDATPProperties.png)
+    ![Image of list of apps](images/mda-properties.png)
 
 
 11. Assign the app as a *Required* app to a user group. It is automatically installed in the *work profile* during the next sync of
@@ -253,7 +253,7 @@ confirm that Microsoft Defender ATP is available.
 3. When the app is installed, open the app and accept the permissions
 and then your onboarding should be successful.
 
-    ![Image of mobile device with Microsoft Defender ATP app](images/DeviceSafe.png)
+    ![Image of mobile device with Microsoft Defender ATP app](images/mda-devicesafe.png)
 
 4. At this stage the device is successfully onboarded onto Microsoft Defender
 ATP for Android. You can verify this on the [Microsoft Defender Security
