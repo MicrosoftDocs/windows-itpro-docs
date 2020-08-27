@@ -54,8 +54,8 @@ For more information about onboarding methods, see the following articles:
 ## Azure virtual machines
 - Configure and enable [Azure Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
 
-    - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
-      - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
+      - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
       - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp) point to Microsoft Defender ATP Workspace key & ID
     - Offline Azure VMs in the same network of OMS Gateway
       - Configure Azure Log Analytics IP as a proxy
