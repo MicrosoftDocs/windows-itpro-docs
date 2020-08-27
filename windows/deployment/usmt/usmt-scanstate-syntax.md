@@ -720,7 +720,7 @@ The following table indicates which command-line options are not compatible with
 <td align="left"><p>/<strong>nocompress</strong></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
-<td align="left"><p>X</p></td>
+<td align="left"><p></p></td>
 <td align="left"><p>N/A</p></td>
 </tr>
 <tr class="odd">
