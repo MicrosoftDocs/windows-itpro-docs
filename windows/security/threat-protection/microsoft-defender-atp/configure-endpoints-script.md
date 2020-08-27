@@ -34,7 +34,7 @@ You can also manually onboard individual devices to Microsoft Defender ATP. You 
 > [!IMPORTANT]
 > This script has been optimized for use on up to 10 devices.
 >
-> To deploy at scale, use [other deployment options](configure-endpoints.md) For example, you can deploy an onboarding script to more than 10 devices in production by using [Group Policy](configure-endpoints-gp.md).
+> To deploy at scale, use [other deployment options](configure-endpoints.md) For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).
 
 ## Onboard devices 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
