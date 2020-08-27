@@ -208,7 +208,7 @@ Defender ATP should be visible in the apps list.
        Then select **OK**.
 
        > [!div class="mx-imgBorder"]
-       ![Image of create app configuration policy](images/android-create-app-config.png)
+       > ![Image of create app configuration policy](images/android-create-app-config.png)
 
     
     1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.

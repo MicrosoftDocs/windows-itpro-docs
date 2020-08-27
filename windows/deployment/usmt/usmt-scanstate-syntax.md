@@ -64,11 +64,9 @@ This section explains the syntax and usage of the **ScanState** command-line opt
 
 The **ScanState** command's syntax is:
 
-scanstate \[*StorePath*\] \[/apps\] \[/ppkg:*FileName*\] \[/i:\[*Path*\\\]*FileName*\] \[/o\] \[/v:*VerbosityLevel*\] \[/nocompress\] \[/localonly\] \[/encrypt /key:*KeyString*|/keyfile:\[Path\\\]*FileName*\] \[/l:\[*Path*\\\]*FileName*\] \[/progress:\[*Path*\\\]*FileName*\] \[/r:*TimesToRetry*\] \[/w:*SecondsBeforeRetry*\] \[/c\] \[/p\] \[/all\] \[/ui:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/ue:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/uel:*NumberOfDays*|*YYYY/MM/DD*|0\] \[/efs:abort|skip|decryptcopy|copyraw\] \[/genconfig:\[*Path*\\\]*FileName*\[/config:\[*Path*\\\]*FileName*\] \[/?|help\]
+> scanstate \[*StorePath*\] \[/apps\] \[/ppkg:*FileName*\] \[/i:\[*Path*\\\]*FileName*\] \[/o\] \[/v:*VerbosityLevel*\] \[/nocompress\] \[/localonly\] \[/encrypt /key:*KeyString*|/keyfile:\[Path\\\]*FileName*\] \[/l:\[*Path*\\\]*FileName*\] \[/progress:\[*Path*\\\]*FileName*\] \[/r:*TimesToRetry*\] \[/w:*SecondsBeforeRetry*\] \[/c\] \[/p\] \[/all\] \[/ui:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/ue:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/uel:*NumberOfDays*|*YYYY/MM/DD*|0\] \[/efs:abort|skip|decryptcopy|copyraw\] \[/genconfig:\[*Path*\\\]*FileName*\[/config:\[*Path*\\\]*FileName*\] \[/?|help\]
 
-For example:
-
-To create a Config.xml file in the current directory, use:
+For example, to create a Config.xml file in the current directory, use:
 
 `scanstate /i:migapp.xml /i:migdocs.xml /genconfig:config.xml /v:13`
 
@@ -622,7 +620,7 @@ For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-
 
 
 > [!CAUTION] 
-Take caution when migrating encrypted files. If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
+> Take caution when migrating encrypted files. If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
 
 
 
