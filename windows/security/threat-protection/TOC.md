@@ -85,6 +85,7 @@
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
 ##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
 ##### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
+##### [Import, export, and deploy exploit protection configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
 
 #### [Network protection]()
@@ -462,7 +463,7 @@
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
 
-### [Use audit mode](microsoft-defender-atp/audit-windows-defender)
+### [Use audit mode](microsoft-defender-atp/audit-windows-defender.md)
 
 ## Reference
 ### [Management and APIs]()
@@ -557,7 +558,7 @@
 ####### [Score methods and properties](microsoft-defender-atp/score.md)
 ####### [List exposure score by machine group](microsoft-defender-atp/get-machine-group-exposure-score.md)
 ####### [Get exposure score](microsoft-defender-atp/get-exposure-score.md)
-####### [Get machine secure score](microsoft-defender-atp/get-device-secure-score.md)
+####### [Get device secure score](microsoft-defender-atp/get-device-secure-score.md)
 
 ###### [Software]()
 ####### [Software methods and properties](microsoft-defender-atp/software.md)

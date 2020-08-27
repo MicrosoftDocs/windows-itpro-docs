@@ -32,11 +32,11 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 >[!NOTE]
 >A microphone isn't required to use Cortana.
 
-|**Software**  |**Minimum version**  |
+| Software | Minimum version |
 |---------|---------|
 |Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#how-is-my-data-processed-by-cortana) below. |
-|Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn’t required.        |
-|Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word (“Cortana”) for hands-free activation or voice commands to easily ask for help.  |
+|Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn't required.        |
+|Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word ("Cortana") for hands-free activation or voice commands to easily ask for help.  |
 
 ## Signing in using Azure AD
 
@@ -55,7 +55,7 @@ Cortana enterprise services that can be accessed using Azure AD through Cortana 
 The table below describes the data handling for Cortana enterprise services.
 
 
-|**Name**  |**Description**  |
+| Name | Description |
 |---------|---------|
 |**Storage**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. Speech audio is not retained.         |
 |**Stays in Geo**     |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.         |
@@ -66,7 +66,7 @@ The table below describes the data handling for Cortana enterprise services.
 #### How does the wake word (Cortana) work? If I enable it, is Cortana always listening?
 
 >[!NOTE]
->The wake word has been temporarily disabled in the latest version of Cortana in Windows but will be restored soon. You can still click on the microphone button to use your voice with Cortana.
+>The wake word has been re-enabled in the latest version of Cortana in Windows. If you're on Windows 10, version 2004, be sure that you've updated to build 19041.329 or later to use the wake word with Cortana. For earlier builds, you can still click on the microphone button to use your voice with Cortana.
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 

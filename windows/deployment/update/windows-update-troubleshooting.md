@@ -1,6 +1,6 @@
 ---
 title: Windows Update troubleshooting 
-description: Learn how to troubleshoot Windows Update
+description: Learn about troubleshooting Windows Update, issues related to HTTP/Proxy, and why some features are offered and others aren't.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -19,9 +19,13 @@ ms.topic: article
 If you run into problems when using Windows Update, start with the following steps: 
  
 1. Run the built-in Windows Update troubleshooter to fix common issues. Navigate to **Settings > Update & Security > Troubleshoot > Windows Update**. 
+
 2. Install the most recent Servicing Stack Update (SSU) that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on SSU. 
+
 3. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system: 
 
+   - [Windows 10, version 2004 and Windows Server, version 2004](https://support.microsoft.com/help/4555932)
+   - [Windows 10, version 1909 and Windows Server, version 1909](https://support.microsoft.com/help/4529964)
    - [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/help/4498140)
    - [Windows 10, version 1809 and Windows Server 2019](https://support.microsoft.com/help/4464619/windows-10-update-history)
    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479/windows-10-update-history) 
@@ -49,8 +53,11 @@ If the update you're offered isn't the most current available, it might be becau
  
 ## My device is frozen at scan. Why? 
 The Settings UI is talking to the Update Orchestrator service which in turn is talking to Windows Update service. If these services stop unexpectedly then you might see this behavior. In such cases, do the following:  
+
 1. Close the Settings app and reopen it.  
+
 2. Launch Services.msc and check if the following services are running:  
+
    - Update State Orchestrator 
    - Windows Update 
 
@@ -164,7 +171,7 @@ Check that your device can access these Windows Update endpoints:
  
 ## Updates aren't downloading from the intranet endpoint (WSUS or Configuration Manager) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  
-1. Start Windows PowerShell as an administrator 
+1. Start Windows PowerShell as an administrator.
 2. Run \$MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager". 
 3. Run \$MUSM.Services.  
  

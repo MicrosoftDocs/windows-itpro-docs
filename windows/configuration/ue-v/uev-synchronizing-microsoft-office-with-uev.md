@@ -1,6 +1,6 @@
 ---
 title: Synchronizing Microsoft Office with UE-V
-description: Synchronizing Office with UE-V
+description: Learn how User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

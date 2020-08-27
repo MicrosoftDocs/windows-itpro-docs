@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Frequently Asked Questions
-description: Windows Hello for Business FAQ 
+description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.   
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

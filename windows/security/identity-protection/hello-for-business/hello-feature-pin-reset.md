@@ -1,6 +1,6 @@
 ---
 title: Pin Reset
-description: Pin Reset
+description: Learn how Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.
 keywords: identity, PIN, Hello, passport, WHFB, hybrid, cert-trust, device, reset
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -84,7 +84,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 1. In the **Custom OMA-URI Settings** blade, Click **Add**.
 1. In the **Add Row** blade, type **PIN Reset Settings** in the **Name** field. In the **OMA-URI** field, type **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery** where <b>*tenant ID*</b> is your Azure Active Directory tenant ID from step 2.
 1. Select **Boolean** from the **Data type** list and select **True** from the **Value** list.
-1. Click **OK** to save the row configuration. Click **OK** to close the <strong>Custom OMA-URI Settings blade.  Click **Create</strong> to save the profile.
+1. Click **OK** to save the row configuration. Click **OK** to close the <b>Custom OMA-URI Settings blade.  Click **Create</b> to save the profile.
  
 #### Assign the PIN Reset Device configuration profile using Microsoft Intune
 

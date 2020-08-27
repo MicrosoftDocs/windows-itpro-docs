@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ApplicationManagement
-description: Policy CSP - ApplicationManagement
+description: Learn about various Policy configuration service provider (CSP) - ApplicationManagement, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

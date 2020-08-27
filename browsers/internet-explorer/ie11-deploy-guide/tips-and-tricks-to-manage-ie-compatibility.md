@@ -17,6 +17,9 @@ ms.date: 05/10/2018
 
 # Tips and tricks to manage Internet Explorer compatibility
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
 
 Jump to:

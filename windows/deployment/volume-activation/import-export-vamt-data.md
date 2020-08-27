@@ -1,6 +1,6 @@
 ---
 title: Import and Export VAMT Data (Windows 10)
-description: Import and Export VAMT Data
+description: Learn how to use the Volume Activation Management Tool (VAMT) to import product-activation data from a .cilx or .cil file into SQL Server.
 ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
 ms.reviewer: 
 manager: laurawi

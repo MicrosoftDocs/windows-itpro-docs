@@ -1,6 +1,6 @@
 ---
 title: GPO\_DOMISO\_Boundary (Windows 10)
-description: GPO\_DOMISO\_Boundary
+description: This example GPO supports devices that are not part of the isolated domain to access specific servers that must be available to those untrusted devices.
 ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
 ms.reviewer: 
 ms.author: dansimp

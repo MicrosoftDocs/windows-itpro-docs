@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialsDelegation
-description: Policy CSP - CredentialsDelegation
+description: Learn how to use the Policy CSP - CredentialsDelegation setting so that remote host can allow delegation of non-exportable credentials.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

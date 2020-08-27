@@ -1,6 +1,6 @@
 ---
 title: NodeCache DDF file
-description: NodeCache DDF file
+description: Learn about the OMA DM device description framework (DDF) for the NodeCache configuration service provider (CSP).
 ms.assetid: d7605098-12aa-4423-89ae-59624fa31236
 ms.reviewer: 
 manager: dansimp

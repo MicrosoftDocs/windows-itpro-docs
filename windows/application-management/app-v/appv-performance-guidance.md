@@ -1,6 +1,6 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10)
-description: Performance Guidance for Application Virtualization
+description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

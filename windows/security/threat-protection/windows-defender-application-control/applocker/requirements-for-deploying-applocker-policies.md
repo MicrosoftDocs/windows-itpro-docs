@@ -131,7 +131,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tbody>
 </table>
  
-<strong>Event processing policy</strong>
+<b>Event processing policy</b>
 
 <table>
 <colgroup>
@@ -169,7 +169,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tbody>
 </table>
  
-<strong>Policy maintenance policy</strong>
+<b>Policy maintenance policy</b>
 
 <table>
 <colgroup>

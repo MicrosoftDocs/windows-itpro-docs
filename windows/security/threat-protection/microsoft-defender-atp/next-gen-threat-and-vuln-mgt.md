@@ -105,7 +105,7 @@ Ensure that your devices:
 
 Run threat and vulnerability management-related API calls to automate vulnerability management workflows. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
-See the following topics for related APIs:
+See the following articles for related APIs:
 
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - [Machine APIs](machine.md)
@@ -115,7 +115,7 @@ See the following topics for related APIs:
 - [Vulnerability APIs](vulnerability.md)
 - [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 
-## Related topics
+## See also
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)

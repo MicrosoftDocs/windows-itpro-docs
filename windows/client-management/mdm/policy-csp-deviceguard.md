@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceGuard
-description: Policy CSP - DeviceGuard
+description: Learn how to use the Policy CSP - DeviceGuard setting to allow the IT admin to configure the launch of System Guard.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -90,7 +90,7 @@ Secure Launch configuration:
 - 1 - Enables Secure Launch if supported by hardware
 - 2 - Disables Secure Launch.
 
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How hardware-based containers help protect Windows 10](https://docs.microsoft.com/windows/security/hardware-protection/how-hardware-based-containers-help-protect-windows).
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
 
 <!--/Description-->
 <!--ADMXMapped-->

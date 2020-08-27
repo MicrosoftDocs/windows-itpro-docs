@@ -12,7 +12,7 @@ ms.author: v-hakima
 manager: obezeajo
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/22/2020
+ms.date: 08/18/2020
 ---
 # Windows 10, version 1909, connection endpoints for non-Enterprise editions
 
@@ -83,6 +83,7 @@ The following methodology was used to derive the network endpoints:
 |*.blob.core.windows.net|HTTP/TLS v1.2|Windows Telemetry
 |storage.live.com|HTTP/TLS v1.2|OneDrive
 |skydrivesync.policies.live.net|TLS v1.2|OneDrive
+|dm2302.settings.live.net|HTTP|OneDrive
 |slscr.update.microsoft.com|HTTPS/TLS V1.2|Windows Update
 |tile-service.weather.microsoft.com|HTTP|Used for the Weather app
 |tsfe.trafficshaping.dsp.mp.microsoft.com|HTTP|This endpoint is used for content regulation
@@ -98,7 +99,7 @@ The following methodology was used to derive the network endpoints:
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
 |*.prod.do.dsp.mp.microsoft.com|HTTP/TLS v1.2|Windows Update
-|api.onedrive.com|HTTP|One Drive
+|api.onedrive.com|HTTP|OneDrive
 |smartscreen-prod.microsoft.com|HTTP|Used for Windows Defender SmartScreen reporting and notifications
 |nav.smartscreen.microsoft.com|HTTPS/TLS v1.2|Windows Defender
 |*.update.microsoft.com|HTTP|Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store  
@@ -151,8 +152,9 @@ The following methodology was used to derive the network endpoints:
 |www.bing.com|HTTPS/TLS v1.2|Cortana and Live Tiles
 |www.msftconnecttest.com|HTTP|Network Connection Status Indicator (NCSI)
 |outlook.office365.com|HTTP|Microsoft Office
-|storage.live.com|HTTP/TLS v1.2|One Drive
-|skydrivesync.policies.live.net|TLS v1.2|One Drive
+|storage.live.com|HTTP/TLS v1.2|OneDrive
+|skydrivesync.policies.live.net|TLS v1.2|OneDrive
+|windows.policies.live.net|HTTP|OneDrive
 
 ## Windows 10 Education
 
@@ -166,7 +168,7 @@ The following methodology was used to derive the network endpoints:
 |dmd.metaservices.microsoft.com|HTTP|Device metadata
 |Inference.location.live.net|TLS v1.2|Location
 |oneclient.sfx.ms|HTTPS|OneDrive
-|storage.live.com|HTTP/TLS v1.2|One Drive
+|storage.live.com|HTTP/TLS v1.2|OneDrive
 |skydrivesync.policies.live.net|TLS v1.2|OneDrive
 |slscr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
