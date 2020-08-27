@@ -249,9 +249,27 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-cpls.md##admx-cpls-usedefaulttile" id="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disablechangepassword" id="#admx-ctrlaltdel-disablechangepassword">ADMX_CtrlAltDel/DisableChangePassword</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disablelockcomputer" id="#admx-ctrlaltdel-disablelockcomputer">ADMX_CtrlAltDel/DisableLockComputer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disabletaskmgr" id="#admx-ctrlaltdel-disabletaskmgr">ADMX_CtrlAltDel/DisableTaskMgr</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-nologoff" id="#admx-ctrlaltdel-nologoff">ADMX_CtrlAltDel/NoLogoff</a>
   </dd>
 </dl>
+
+
+###  ADMX_CtrlAltDel policies  
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-cpls.md#admx-cpls-usedefaulttile" id="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
+  </dd>
+</dl>
+
 
 ### ADMX_DnsClient policies
 
