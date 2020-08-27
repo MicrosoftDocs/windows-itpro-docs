@@ -33,6 +33,9 @@ The threat intelligence data set for this has been managed by Microsoft.
 
 By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
 
+> [!NOTE]
+> Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported. 
+
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 - URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
