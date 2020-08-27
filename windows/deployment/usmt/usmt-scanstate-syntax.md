@@ -313,8 +313,8 @@ USMT provides the following options to specify what files you want to migrate.
 
 USMT provides several options that you can use to analyze problems that occur during migration.
 
-**Note**  
-The ScanState log is created by default, but you can specify the name and location of the log with the **/l** option.
+> [!NOTE] 
+> The ScanState log is created by default, but you can specify the name and location of the log with the **/l** option.
 
 
 
@@ -617,12 +617,11 @@ You can use the following options to migrate encrypted files. In all cases, by d
 
 For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
 
-**Note**  
-EFS certificates will be migrated automatically when migrating to Windows 7, Windows 8 or Windows 10. Therefore, you should specify the /**efs:copyraw** option with the **ScanState** command to migrate the encrypted files
+> [!NOTE] 
+> EFS certificates will be migrated automatically when migrating to Windows 7, Windows 8 or Windows 10. Therefore, you should specify the /**efs:copyraw** option with the **ScanState** command to migrate the encrypted files
 
 
-
-**Caution**  
+> [!CAUTION] 
 Take caution when migrating encrypted files. If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
 
 
@@ -853,9 +852,8 @@ The following table indicates which command-line options are not compatible with
 </table>
 
 
-
-**Note**  
-You must specify either the /**key** or /**keyfile** option with the /**encrypt** option.
+> [!NOTE] 
+> You must specify either the /**key** or /**keyfile** option with the /**encrypt** option.
 
 
 
@@ -863,12 +861,4 @@ You must specify either the /**key** or /**keyfile** option with the /**encrypt*
 
 
 [XML Elements Library](usmt-xml-elements-library.md)
-
-
-
-
-
-
-
-
 
