@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ActiveXControls
-description: Learn the ins and outs of various Policy CSP - ActiveXControls settings, including SyncML, for Windows 10.
+description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article

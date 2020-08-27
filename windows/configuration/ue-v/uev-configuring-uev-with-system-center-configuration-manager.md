@@ -1,6 +1,6 @@
 ---
 title: Configuring UE-V with Microsoft Endpoint Configuration Manager
-description: Configuring UE-V with Microsoft Endpoint Configuration Manager 
+description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Endpoint Configuration Manager. 
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

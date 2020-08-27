@@ -1,6 +1,6 @@
 ---
 title: Certificate Renewal
-description: Find all the resources needed to provide continuous access to client certificates.
+description: Learn how to find all the resources that you need to provide continuous access to client certificates.
 MS-HAID: 
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'

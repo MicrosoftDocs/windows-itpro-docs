@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: DiagnosticLog CSP
-description: DiagnosticLog CSP
+description: Learn about the feature areas of the DiagnosticLog configuration service provider (CSP), including the DiagnosticLog area and Policy area.
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
 ms.reviewer: 
 manager: dansimp

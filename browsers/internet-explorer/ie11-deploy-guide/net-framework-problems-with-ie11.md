@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # .NET Framework problems with Internet Explorer 11
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 ## Summary
 
 If you’re having problems launching your legacy apps while running Internet Explorer 11, it’s most likely because Internet Explorer no longer starts apps that use managed browser hosting controls, like in .NET Framework 1.1 and 2.0.

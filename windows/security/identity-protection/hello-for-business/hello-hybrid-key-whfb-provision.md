@@ -1,6 +1,6 @@
 ---
 title: Hybrid Windows Hello for Business key trust Provisioning (Windows Hello for Business)
-description: Provisioning for hybrid key trust deployments of  Windows Hello for Business.
+description: Learn about provisioning for hybrid key trust deployments of Windows Hello for Business and learn where to find the hybrid key trust deployment guide.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.reviewer:
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-![Event358](images/Event358.png)
+![Event358](images/Event358-2.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 

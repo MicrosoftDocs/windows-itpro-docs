@@ -1,6 +1,6 @@
 ---
 title: EMAIL2 DDF file
-description: EMAIL2 DDF file
+description: Learn how the OMA DM device description framework (DDF) for the EMAIL2 configuration service provider (CSP).
 ms.assetid: 7e266db0-2fd9-4412-b428-4550f41a1738
 ms.reviewer: 
 manager: dansimp

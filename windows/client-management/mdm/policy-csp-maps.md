@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Maps
-description: Policy CSP - Maps
+description: Use the Policy CSP - Maps setting to allow the download and update of map data over metered connections.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

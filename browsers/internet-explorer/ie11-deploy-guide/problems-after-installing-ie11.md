@@ -16,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Problems after installing Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 After you install Internet Explorer 11 in your organization, you might run into the following issues. By following these suggestions, you should be able to fix them.
 
 ## Internet Explorer is in an unusable state

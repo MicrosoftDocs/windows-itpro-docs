@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Deployment Guide
-description: A guide to Windows Hello for Business deployment 
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

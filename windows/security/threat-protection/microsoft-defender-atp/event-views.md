@@ -1,20 +1,16 @@
 ---
-ms.reviewer: 
-title: Import custom views to see attack surface reduction events
-description: Use Windows Event Viewer to import individual views for each of the features.
+title: View attack surface reduction events
+description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
-ms.date: 04/16/2018
 ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 03/26/2019
+ms.reviewer: 
 manager: dansimp
 ---
 
@@ -24,19 +20,17 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can review attack surface reduction events in Event Viewer. This is useful so you can monitor what rules or settings are working, and determine if any settings are too "noisy" or impacting your day to day workflow.
+Review attack surface reduction events in Event Viewer to monitor what rules or settings are working. You can also determine if any settings are too "noisy" or impacting your day to day workflow.
 
-Reviewing the events is also handy when you are evaluating the features, as you can enable audit mode for the features or settings, and then review what would have happened if they were fully enabled.
+Reviewing events is handy when you're evaluating the features. You can enable audit mode for features or settings, and then review what would have happened if they were fully enabled.
 
-This topic lists all the events, their associated feature or setting, and describes how to create custom views to filter to specific events.
+This article lists all the events, their associated feature or setting, and describes how to create custom views to filter to specific events.
 
-You can also get detailed reporting into events and blocks as part of Windows Security, which you access if you have an E5 subscription and use [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
+Get detailed reporting into events and blocks as part of Windows Security if you have an E5 subscription and use [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 ## Use custom views to review attack surface reduction capabilities
 
-You can create custom views in the Windows Event Viewer to only see events for specific capabilities and settings.
-
-The easiest way to do this is to import a custom view as an XML file. You can copy the XML directly from this page.
+Create custom views in the Windows Event Viewer to only see events for specific capabilities and settings. The easiest way is to import a custom view as an XML file. You can copy the XML directly from this page.
 
 You can also manually navigate to the event area that corresponds to the feature.
 
@@ -48,33 +42,33 @@ You can also manually navigate to the event area that corresponds to the feature
     - Attack surface reduction events custom view: *asr-events.xml*
     - Network/ protection events custom view: *np-events.xml*
 
-1. Type **event viewer** in the Start menu and open **Event Viewer**.
+2. Type **event viewer** in the Start menu and open **Event Viewer**.
 
-1. Click **Action** > **Import Custom View...**
+3. Select **Action** > **Import Custom View...**
 
     ![Animation highlighting Import custom view on the left of the Even viewer window](../images/events-import.gif)
 
-1. Navigate to where you extracted XML file for the custom view you want and select it.
+4. Navigate to where you extracted XML file for the custom view you want and select it.
 
-1. Click **Open**.
+5. Select **Open**.
 
-1. This will create a custom view that filters to only show the events related to that feature.
+6. It will create a custom view that filters to only show the events related to that feature.
 
 ### Copy the XML directly
 
 1. Type **event viewer** in the Start menu and open the Windows **Event Viewer**.
 
-1. On the left panel, under **Actions**, click **Create Custom View...**
+2. On the left panel, under **Actions**, select **Create Custom View...**
 
     ![Animation highlighting the create custom view option on the Event viewer window](../images/events-create.gif)
 
-1. Go to the XML tab and click **Edit query manually**. You'll see a warning that you won't be able to edit the query using the **Filter** tab if you use the XML option. Click **Yes**.
+3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
-1. Paste the XML code for the feature you want to filter events from into the XML section.
+4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-1. Click **OK**. Specify a name for your filter.
+5. Select **OK**. Specify a name for your filter.
 
-1. This will create a custom view that filters to only show the events related to that feature.
+6. It will create a custom view that filters to only show the events related to that feature.
 
 ### XML for attack surface reduction rule events
 
@@ -131,13 +125,13 @@ You can also manually navigate to the event area that corresponds to the feature
 
 ## List of attack surface reduction events
 
-All attack surface reductiond events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
+All attack surface reduction events are located under **Applications and Services Logs > Microsoft > Windows** and then the folder or provider as listed in the following table.
 
 You can access these events in Windows Event viewer:
 
-1. Open the **Start** menu and type **event viewer**, and then click on the **Event Viewer** result.
+1. Open the **Start** menu and type **event viewer**, and then select the **Event Viewer** result.
 2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table below.
-3. Double-click on the sub item to see events. Scroll through the events to find the one you are looking.
+3. Double-click on the sub item to see events. Scroll through the events to find the one you're looking.
 
    ![Animation showing using Event Viewer](../images/event-viewer.gif)
 

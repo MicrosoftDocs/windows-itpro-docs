@@ -1,6 +1,6 @@
 ---
 title: GPO\_DOMISO\_Firewall (Windows 10)
-description: GPO\_DOMISO\_Firewall
+description: Learn about the settings and rules in this example GPO, which is authored by using the Group Policy editing tools.
 ms.assetid: 318467d2-5698-4c5d-8000-7f56f5314c42
 ms.reviewer: 
 ms.author: dansimp

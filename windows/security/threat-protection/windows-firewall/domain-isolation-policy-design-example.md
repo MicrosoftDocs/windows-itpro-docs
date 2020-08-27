@@ -1,6 +1,6 @@
 ---
 title: Domain Isolation Policy Design Example (Windows 10)
-description: Domain Isolation Policy Design Example
+description: This example uses a fictitious company to illustrate domain isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.assetid: 704dcf58-286f-41aa-80af-c81720aa7fc5
 ms.reviewer: 
 ms.author: dansimp

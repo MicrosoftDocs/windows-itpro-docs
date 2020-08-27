@@ -1,6 +1,6 @@
 ---
 title: High-level architecture for App-V (Windows 10)
-description: High-level Architecture for App-V.
+description: Use the information in this article to simplify your Microsoft Application Virtualization (App-V) deployment.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
