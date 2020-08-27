@@ -30,56 +30,40 @@ device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-co
 
 
 > [!NOTE]
-> During public preview, instructions to deploy Microsoft Defender ATP for Android on Intune enrolled Android devices are different across Device Administrator and Android Enterprise entrollment modes. <br>
-> **When Microsoft Defender ATP for Android reaches General Availability (GA), the app will be available on Google Play.**
+> **Microsoft Defender ATP for Android is now available on Google Play.**
+You can connect to Google Play from Intune to deploy app across Device Administrator and Android Enterprise entrollment modes. Updates to the app are automatic via Google Play.
 
 ## Deploy on Device Administrator enrolled devices
 
 **Deploy Microsoft Defender ATP for Android on Intune Company Portal - Device
 Administrator enrolled devices**
 
-This topic describes how to deploy Microsoft Defender ATP for Android on Intune Company Portal - Device Administrator enrolled devices. Upgrade from the Preview APK to the GA version on Google Play would be supported.
+This topic describes how to deploy Microsoft Defender ATP for Android on Intune Company Portal - Device Administrator enrolled devices. 
 
-### Download the onboarding package
+> [!NOTE]
+> If you have already deployed **Preview APK as "Line of Business (LOB)" app**, you need to redeploy by adding new app as "Android store app" 
 
-Download the onboarding package from Microsoft Defender Security Center.
 
-1. In [Microsoft Defender Security
-Center](https://securitycenter.microsoft.com), go to **Settings** \> **Machine Management** \> **Onboarding**.
-
-2. In the first drop-down, select **Android** as the Operating system.
-
-3. Select **Download Onboarding package** and save the downloaded .APK file.
-
-    ![Image of onboarding package page](images/onboarding_package_1.png)
-
-### Add as Line of Business (LOB) App
-
-The downloaded Microsoft Defender ATP for Android onboarding package. It is a
-.APK file can be deployed to user groups as a Line of Business app during the
-preview from Microsoft Endpoint Manager Admin Center.
+### Add as Android store app
 
 1. In [Microsoft Endpoint Manager admin
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
-**Android Apps** \> **Add \> Line-of-business app** and click **Select**.
+**Android Apps** \> **Add \> Android store app** and click **Select**.
 
-    ![Image of Microsoft Endpoint Manager Admin Center](images/eba67e1a3adfec2c77c35a34cb030fba.png)
-
-
-2. On the **Add app** page and in the *App Information* section, click **Select
-add package file** and then click the ![Icon](images/1a62eac0222a9ba3c2fd62744bece76e.png) icon and select the MDATP Universal APK file that was downloaded from the *Download Onboarding package* step.
-
-    ![Image of Microsoft Endpoint Manager Admin Center](images/e78d36e06495c2f70eb14230de6f7429.png)
+    ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addandroidstoreapp.png)
 
 
-3. Select **OK**.
+2. On the **Add app** page and in the *App Information* section enter: 
+- **Name** 
+- **Description**
+- **Publisher** as Microsoft.
+- **Appstore URL** as Microsoft Defender ATP Preview app Google Play Store URL https://play.google.com/store/apps/details?id=com.microsoft.scmx
 
-4. In the *App Information* section that comes up, enter the **Publisher** as
-Microsoft. Other fields are optional and then select **Next**.
+Other fields are optional. Select **Next**.
 
-    ![Image of Microsoft Endpoint Manager Admin Center](images/190a979ec5b6a8f57c9067fe1304cda8.png)
+    ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addappinfo.png)
 
-5. In the *Assignments* section, go to the **Required** section and select **Add
+3. In the *Assignments* section, go to the **Required** section and select **Add
 group.** You can then choose the user group(s) that you would like to target
 Microsoft Defender ATP for Android app. Click **Select** and then **Next**.
 
@@ -105,12 +89,6 @@ completed successfully.
     ![Image of Microsoft Endpoint Manager Admin Center](images/513cf5d59eaaef5d2b5bc122715b5844.png)
 
 
-During Public Preview, to **update** Microsoft Defender ATP for Android deployed
-as a Line of Business app, download the latest APK. Following the steps in
-*Download the onboarding package* section and follow instructions on how to [update
-a Line of Business
-App](https://docs.microsoft.com/mem/intune/apps/lob-apps-android#step-5-update-a-line-of-business-app).
-
 ### Complete onboarding and check status
 
 1. Once Microsoft Defender ATP for Android has been installed on the device, you'll see the app icon.
@@ -119,6 +97,9 @@ App](https://docs.microsoft.com/mem/intune/apps/lob-apps-android#step-5-update-a
 
 2. Tap the Microsoft Defender ATP app icon and follow the on-screen instructions
 to complete onboarding the app. The details include end-user acceptance of Android permissions required by Microsoft Defender ATP for Android.
+
+>[!NOTE]
+>If you already have **preview version of Microsoft Defender ATP app** installed, follow onboarding instruction to replace the existing version of app
 
 3. Upon successful onboarding, the device will start showing up on the Devices
 list in Microsoft Defender Security Center.
@@ -133,20 +114,16 @@ For more information on the enrollment options supported by Intune, see
 [Enrollment
 Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
 
-As Microsoft Defender ATP for Android is deployed via managed Google Play,
-updates to the app are automatic via Google Play.
-
 Currently only Personal devices with Work Profile enrolled  are supported for deployment. 
 
 
 >[!NOTE]
->During Public Preview, to access Microsoft Defender ATP in your managed Google Play, contact [atpm@microsoft.com](mailto:atpm@microsoft.com) with the organization ID of your managed Google Play for next steps. This can be found under the **Admin Settings** of [managed Google Play](https://play.google.com/work/).<br>
-> At General Availability (GA), Microsoft Defender ATP for Android will be available as a public app. Upgrades from preview to GA version will be supported.
+> If you have already deployed **Preview version of Microsoft Defender for Android app**, you need to redeploy by adding new app as 'managed Google Play App'
 
-## Add Microsoft Defender ATP for Android as a managed Google Play app
 
-After receiving a confirmation e-mail from Microsoft that your managed Google
-Play organization ID has been approved, follow the steps below to add Microsoft
+## Add Microsoft Defender ATP for Android as a Managed Google Play app
+
+Follow the steps below to add Microsoft
 Defender ATP app into your managed Google Play.
 
 1. In [Microsoft Endpoint Manager admin
@@ -247,7 +224,7 @@ Defender ATP should be visible in the apps list.
 10. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
 
-    ![Image of list of apps](images/9336bbd778cff5e666328bb3db7c76fd.png)
+    ![Image of list of apps](images/mda-properties.png)
 
 
 11. Assign the app as a *Required* app to a user group. It is automatically installed in the *work profile* during the next sync of
@@ -279,7 +256,7 @@ confirm that Microsoft Defender ATP is available.
 3. When the app is installed, open the app and accept the permissions
 and then your onboarding should be successful.
 
-    ![Image of mobile device with Microsoft Defender ATP app](images/23c125534852dcef09b8e37c98e82148.png)
+    ![Image of mobile device with Microsoft Defender ATP app](images/mda-devicesafe.png)
 
 4. At this stage the device is successfully onboarded onto Microsoft Defender
 ATP for Android. You can verify this on the [Microsoft Defender Security
