@@ -32,8 +32,9 @@ WDAC generates and logs events when a policy is loaded as well as when a binary 
 
 WDAC events are generated under two locations:
 
-1. Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
-2. Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
+ - Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
+ 
+ - Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
 
 ## In this section
 
