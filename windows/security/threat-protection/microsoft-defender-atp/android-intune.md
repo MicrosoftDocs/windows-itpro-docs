@@ -56,12 +56,8 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 2. On the **Add app** page and in the *App Information* section enter: 
 - **Name** 
 - **Description**
-- **Publisher** 
-
-as Microsoft.
-
-- **Appstore URL** as **Microsoft Defender ATP Preview app** 
-- **Google Play Store URL** https://play.google.com/store/apps/details?id=com.microsoft.scmx
+- **Publisher** as Microsoft.
+- **Appstore URL** as Microsoft Defender ATP Preview app Google Play Store URL https://play.google.com/store/apps/details?id=com.microsoft.scmx
 
 Other fields are optional. Select **Next**.
 
