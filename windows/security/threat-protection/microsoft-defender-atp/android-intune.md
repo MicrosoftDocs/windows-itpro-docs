@@ -53,10 +53,14 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
     ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addandroidstoreapp.png)
 
 
-2. On the **Add app** page and in the *App Information* section enter **Name, Description**,
-**Publisher** as Microsoft and 
-**Appstore URL** as **Microsoft Defender ATP Preview** app Google Play Store URL: https://play.google.com/store/apps/details?id=com.microsoft.scmx
-Other fields are optional and then select **Next**.
+2. On the **Add app** page and in the *App Information* section enter: 
+- **Name** 
+- **Description**
+- **Publisher** 
+as **Microsoft**.
+Enter **Appstore URL** as **Microsoft Defender ATP Preview** app Google Play Store URL: https://play.google.com/store/apps/details?id=com.microsoft.scmx
+
+Other fields are optional. Select **Next**.
 
     ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addappinfo.png)
 
