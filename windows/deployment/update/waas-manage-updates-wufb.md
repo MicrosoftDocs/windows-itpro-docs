@@ -120,11 +120,12 @@ A compliance deadline policy (released in June 2019) enables you to set separate
 This policy enables you to specify the number of days from an update's publication date that it must be installed on the device. The policy also includes a configurable grace period that specifies the number of days from when the update is installed on the device until the device is forced to restart. This is extremely beneficial in a vacation scenario as it allows, for example, users who have been away to have a bit of time before being forced to restart their devices when they return from vacation.
 
 #### Update Baseline
-The large number of different policies offered for Windows 10 can be overwhelming. Update Baseline provides a clear list of recommended Windows update policy settings for IT administrators that are looking to achieve the best end user experience while also meeting their update compliance goals. The Update Baseline for Windows 10 includes policy settings recommendations covering deadline configuration, restart behavior, power policies, and more. Whether you are an IT administrator who is just beginning with Windows update policies or one who has an overwhelming set of potentially conflicting policies from Windows 7 and who wants to reset to a clean state, Update Baseline is a tool for you.
+The large number of different policies offered for Windows 10 can be overwhelming. Update Baseline provides a clear list of recommended Windows update policy settings for IT administrators who want the best user experience while also meeting their update compliance goals. The Update Baseline for Windows 10 includes policy settings recommendations covering deadline configuration, restart behavior, power policies, and more.
 
-The Update Baseline toolkit makes it easy by providing a single command for IT Admins to apply the Update Baseline to devices. Download the Update Baseline toolkit [here](https://www.microsoft.com/en-us/download/details.aspx?id=101056).
+The Update Baseline toolkit makes it easy by providing a single command for IT Admins to apply the Update Baseline to devices. You can get the Update Baseline toolkit from the [Download Center](https://www.microsoft.com/download/details.aspx?id=101056).
 
-Note: Update Baseline toolkit is currently only available for Group Policy. Update Baseline does not impact your offering policies, regardless of if you’re using deferrals or target version to manage which updates are offered to your devices when.
+>[!NOTE]
+>The Update Baseline toolkit is available only for Group Policy. Update Baseline does not affect your offering policies, whether you’re using deferrals or target version to manage which updates are offered to your devices when.
 
 <!--
 
