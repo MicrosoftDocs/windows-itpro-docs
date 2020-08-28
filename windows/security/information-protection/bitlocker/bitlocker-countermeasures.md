@@ -43,7 +43,7 @@ Before Windows starts, you must rely on security features implemented as part of
 
 ### Trusted Platform Module
 
-A TPM is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
+A trusted platform module (TPM) is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
 On some platforms, TPM can alternatively be implemented as a part of secure firmware. 
 BitLocker binds encryption keys with the TPM to ensure that a computer has not been tampered with while the system was offline. 
 For more info about TPM, see [Trusted Platform Module](https://docs.microsoft.com/windows/device-security/tpm/trusted-platform-module-overview).

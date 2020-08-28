@@ -27,7 +27,7 @@ This topic for the IT professional explains how BitLocker features can be used t
 
 ## Using BitLocker to encrypt volumes
 
-BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data volumes. To support fully encrypted operating system volumes, BitLocker uses an unencrypted system volume for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
+BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
@@ -99,7 +99,7 @@ Once a strong password has been created for the volume, a recovery key will be g
 
 You should store the recovery key by printing it, saving it on removable media, or saving it as a file in a network folder or on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot be stored on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.
 
-When the recovery key has been properly stored, the BitLocker Drive Encryption Wizard will prompt the user to choose how to encrypt the drive. There are two options:
+When the recovery key has been properly stored, the BitLocker System Drive Encryption Wizard will prompt the user to choose how to encrypt the drive. There are two options:
 
 -   Encrypt used disk space only - Encrypts only disk space that contains data
 -   Encrypt entire drive - Encrypts the entire volume including free space
@@ -114,7 +114,7 @@ After completing the system check (if selected), the BitLocker Drive Encryption 
 
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning BitLocker off.
 
-### Data volume
+### Internal Data volume
 
 Encrypting data volumes using the BitLocker control panel interface works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the control panel to begin the BitLocker Drive Encryption wizard.
 Unlike for operating system volumes, data volumes are not required to pass any configuration tests for the wizard to proceed. Upon launching the wizard, a choice of authentication methods to unlock the drive appears. The available options are **password** and **smart card** and **automatically unlock this drive on this computer**. Disabled by default, the latter option will unlock the data volume without user input when the operating system volume is unlocked.
