@@ -36,23 +36,23 @@ landingContent:
       - linkListType: reference
         links:
           - text: All group policies
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/available-policies
+            url: /microsoft-edge/deploy/available-policies
           - text: Address bar
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/address-bar-settings-gp
+            url: /microsoft-edge/deploy/group-policies/address-bar-settings-gp
           - text: Adobe Flash
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/adobe-settings-gp
+            url: /microsoft-edge/deploy/group-policies/adobe-settings-gp
           - text: Books Library
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/books-library-management-gp
+            url: /microsoft-edge/deploy/group-policies/books-library-management-gp
           - text: Browser experience
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/browser-settings-management-gp
+            url: /microsoft-edge/deploy/group-policies/browser-settings-management-gp
           - text: Developer tools
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/developer-settings-gp
+            url: /microsoft-edge/deploy/group-policies/developer-settings-gp
           - text: Extensions
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/extensions-management-gp
+            url: /microsoft-edge/deploy/group-policies/extensions-management-gp
           - text: Favorites
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/favorites-management-gp
+            url: /microsoft-edge/deploy/group-policies/favorites-management-gp
           - text: Home button
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/home-button-gp
+            url: /microsoft-edge/deploy/group-policies/home-button-gp
 
   # Card (optional)
   - title: Group policies configure guidance part 2
@@ -60,21 +60,21 @@ landingContent:
       - linkListType: reference
         links:
           - text: Interoperability and enterprise mode
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+            url: /microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
           - text: New Tab page
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
+            url: /microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
           - text: Kiosk mode deployment in Microsoft Edge
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+            url: /microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
           - text: Prelaunch Microsoft Edge and preload tabs
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
+            url: /microsoft-edge/deploy/group-policies/prelaunch-preload-gp
           - text: Search engine customization
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/search-engine-customization-gp
+            url: /microsoft-edge/deploy/group-policies/search-engine-customization-gp
           - text: Security and privacy
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/security-privacy-management-gp
+            url: /microsoft-edge/deploy/group-policies/security-privacy-management-gp
           - text: Start page
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/start-pages-gp
+            url: /microsoft-edge/deploy/group-policies/start-pages-gp
           - text: Sync browser
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
+            url: /microsoft-edge/deploy/group-policies/sync-browser-settings-gp
           - text: Telemetry and data collection
-            url: https://docs.microsoft.com/en-us/microsoft-edge/deploy/group-policies/telemetry-management-gp
+            url: /microsoft-edge/deploy/group-policies/telemetry-management-gp
           
