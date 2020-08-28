@@ -18,9 +18,9 @@ search.appverid: met150
 
 # Fileless threats
 
-What exactly are fileless threats? The term "fileless" suggests that a threat does not come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no generally accepted definition for fileless malware. The term is used broadly; it's also used to describe malware families that do rely on files to operate.
+What exactly are fileless threats? The term "fileless" suggests that a threat doesn't come in a file, such as a backdoor that lives only in the memory of a machine. However, there's no one definition for fileless malware. The term is used broadly, and sometimes to describe malware families that do rely on files to operate.
 
-Given that attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK_Matrix) for functionalities like execution, persistence, or information theft, some parts of the attack chain may be fileless, while others may involve the filesystem in some form.
+Attacks involve [several stages](https://attack.mitre.org/wiki/ATT&CK_Matrix) for functionalities like execution, persistence, or information theft. Some parts of the attack chain may be fileless, while others may involve the file system in some form.
 
 For clarity, fileless threats are grouped into different categories.
 
@@ -29,9 +29,9 @@ For clarity, fileless threats are grouped into different categories.
 
 Fileless threats can be classified by their entry point, which indicates how fileless malware can arrive on a machine. They can arrive via an exploit, through compromised hardware, or via regular execution of applications and scripts.
 
-Next, list the form of entry point. For example, exploits can be based on files or network data, PCI peripherals are a type of hardware vector, and scripts and executables are sub-categories of the execution vector.
+Next, list the form of entry point. For example, exploits can be based on files or network data, PCI peripherals are a type of hardware vector, and scripts and executables are subcategories of the execution vector.
 
-Finally, classify the host of the infection. For example, a Flash application that may contain an exploit, a simple executable, malicious firmware from a hardware device, or an infected MBR, which could bootstrap the execution of a malware before the operating system even loads.
+Finally, classify the host of the infection. For example, a Flash application may contain a variety of threats such as an exploit, a simple executable, and malicious firmware from a hardware device.
 
 This helps you divide and categorize the various kinds of fileless threats. Clearly, the categories are not all the same: some are more dangerous but also more difficult to implement, while others are more commonly used despite (or precisely because of) not being very advanced.
 
