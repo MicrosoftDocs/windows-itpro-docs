@@ -30,7 +30,7 @@ This capability is supported beginning with Windows version 1607.
 Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender ATP:
 
 ```
-MiscEvents
+DeviceEvents
 | where EventTime > ago(7d) and
 ActionType startswith "AppControl"
 | summarize Machines=dcount(ComputerName) by ActionType
