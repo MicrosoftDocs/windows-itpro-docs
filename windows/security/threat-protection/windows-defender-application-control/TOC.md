@@ -41,7 +41,8 @@
 
 
 ## [Windows Defender Application Control operational guide](windows-defender-application-control-operational-guide.md)
-### [Understanding Application Control events](event-id-explanations.md)
+### [Understanding Application Control event IDs](event-id-explanations.md)
+### [Understanding Application Control event tags](event-tag-explanations.md)
 ### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
