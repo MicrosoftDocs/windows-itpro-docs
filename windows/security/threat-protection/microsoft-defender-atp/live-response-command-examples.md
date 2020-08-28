@@ -155,7 +155,7 @@ registry HKEY_CURRENT_USER\Console
 
 ```
 # Show information about a specific registry value
-registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
+registry HKEY_CURRENT_USER\Console\ScreenBufferSize
 ```
 
 
