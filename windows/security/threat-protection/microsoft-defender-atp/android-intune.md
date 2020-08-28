@@ -127,7 +127,7 @@ Defender ATP app into your managed Google Play.
 
 1. In [Microsoft Endpoint Manager admin
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
-**Android Apps** \> **Add** and select **managed Google Play app**.
+**Android Apps** \> **Add** and select **Managed Google Play app**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager admin center](images/579ff59f31f599414cedf63051628b2e.png)
