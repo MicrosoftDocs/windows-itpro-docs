@@ -65,7 +65,7 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
 2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
 
     > [!TIP]
-    > To run a full scan instead of a quick scan, change line 8 to read `/usr/local/bin/mdatp --scan --full` and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
+    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp --scan --quick</string>`, to use the `--full` option instead of `--quick` (i.e. `<string>/usr/local/bin/mdatp --scan --full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
 
 3. Open **Terminal**.
 4. Enter the following commands to load your file:
