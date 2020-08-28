@@ -168,7 +168,7 @@ If a user signs in to a Windows experience or app on their device with their Mic
 
 ## 4. Cross-border data transfers
 
-Microsoft complies with the EU-U.S. Privacy Shield Framework and Swiss-U.S. Privacy Shield Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union, the United Kingdom, and Switzerland to the United States.
+Microsoft complies with applicable law regarding the collection, use, and retention of personal information, including its transfer across borders
 
 Microsoft’s [Privacy Statement](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) provides details on how we store and process personal data.
 
