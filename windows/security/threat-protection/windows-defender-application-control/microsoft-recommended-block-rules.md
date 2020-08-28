@@ -24,7 +24,7 @@ ms.date: 04/09/2019
 - Windows 10
 - Windows Server 2016 and above
 
-Members of the security community<sup>1</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
 
@@ -33,7 +33,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - addinutil.exe
 - aspnet_compiler.exe
 - bash.exe
-- bginfo.exe<sup>2</sup>
+- bginfo.exe<sup>1</sup>
 - cdb.exe
 - csi.exe
 - dbghost.exe
@@ -50,7 +50,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - Microsoft.Build.dll
 - Microsoft.Build.Framework.dll
 - Microsoft.Workflow.Compiler.exe
-- msbuild.exe<sup>3</sup>
+- msbuild.exe<sup>2</sup>
 - msbuild.dll
 - mshta.exe
 - ntkd.exe
@@ -68,11 +68,11 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - wslconfig.exe
 - wslhost.exe
 
-<sup>1</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
+<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
-<sup>3</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
 <br />
 
