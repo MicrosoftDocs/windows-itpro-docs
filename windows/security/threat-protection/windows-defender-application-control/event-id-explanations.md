@@ -1,6 +1,6 @@
 ---
-title: Understanding Application Control events (Windows 10)
-description: Learn what different Windows Defender Application Control events signify.
+title: Understanding Application Control event IDs (Windows 10)
+description: Learn what different Windows Defender Application Control event IDs signify.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -21,8 +21,9 @@ ms.date: 3/17/2020
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
-1. Event IDs beginning with 30 appear in Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
-2. Event IDs beginning with 80 appear in Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
+ - Event IDs beginning with 30 appear in Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
+
+ - Event IDs beginning with 80 appear in Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
 
 ## Microsoft Windows CodeIntegrity Operational log event IDs
 
