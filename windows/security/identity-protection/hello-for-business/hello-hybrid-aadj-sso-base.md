@@ -309,7 +309,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
    ![Create Windows Hello for Business Policy](images/aadj/MEM.png)
 6. Select **Enabled** from the **Configure Windows Hello for Business** list.
 7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software-based keys.
-8. Type the desired **Minimum PIN length** and **Maximum PIN length**.
+8. Enter the desired **Minimum PIN length** and **Maximum PIN length**.
     > [!IMPORTANT]
     > The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
 
