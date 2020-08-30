@@ -305,7 +305,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 2. Select **Devices**.
 3. Choose **Enroll devices**.
 4. Select **Windows enrollment**.
-5. Under **Windows enrollment**, click **Windows Hello for Business**.
+5. Under **Windows enrollment**, select **Windows Hello for Business**.
    ![Create Windows Hello for Business Policy](images/aadj/MEM.png)
 6. Select **Enabled** from the **Configure Windows Hello for Business** list.
 7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software-based keys.
