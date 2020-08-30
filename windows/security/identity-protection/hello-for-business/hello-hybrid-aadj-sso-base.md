@@ -313,7 +313,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
     > [!IMPORTANT]
     > The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
 
-9. Select the appropriate configuration for the following settings.
+9. Select the appropriate configuration for the following settings:
     * **Lowercase letters in PIN**
     * **Uppercase letters in PIN**
     * **Special characters in PIN**
