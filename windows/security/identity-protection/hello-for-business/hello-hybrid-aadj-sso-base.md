@@ -304,7 +304,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Devices**.
 3. Click **Enroll devices**.
-4. Click **Windows enrollment**
+4. Select **Windows enrollment**.
 5. Under **Windows enrollment**, click **Windows Hello for Business**.
    ![Create Windows Hello for Business Policy](images/aadj/MEM.png)
 6. Select **Enabled** from the **Configure Windows Hello for Business** list.
