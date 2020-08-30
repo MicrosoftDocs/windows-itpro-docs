@@ -324,7 +324,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 10. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 11. Select **No** to **Allow phone sign-in**. This feature has been deprecated.
-12. Click **Save**
+12. Choose **Save**.
 13. Sign-out of the Microsoft Endpoint Manager admin center.
 
 > [!IMPORTANT]
