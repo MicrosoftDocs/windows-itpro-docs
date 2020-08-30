@@ -301,7 +301,7 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 
 Sign-in a workstation with access equivalent to a _domain user_.
 
-1. Sign-in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Devices**.
 3. Click **Enroll devices**.
 4. Select **Windows enrollment**.
