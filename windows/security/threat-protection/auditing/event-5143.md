@@ -1,6 +1,6 @@
 ---
 title: 5143(S) A network share object was modified. (Windows 10)
-description: Describes security event 5143(S) A network share object was modified.
+description: Describes security event 5143(S) A network share object was modified. This event is generated when a network share object is modified.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -259,5 +259,5 @@ For 5143(S): A network share object was modified.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
-- If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event<strong>.</strong> For example, you could monitor all changes to the SYSVOL share on domain controllers.
+- If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event<b>.</b> For example, you could monitor all changes to the SYSVOL share on domain controllers.
 

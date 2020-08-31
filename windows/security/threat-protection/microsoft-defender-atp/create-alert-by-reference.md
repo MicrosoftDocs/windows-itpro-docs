@@ -1,6 +1,6 @@
 ---
 title: Create alert from event API
-description: Creates an alert using event details
+description: Learn how to use the Create alert API to create a new Alert on top of Event in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

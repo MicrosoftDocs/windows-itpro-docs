@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Troubleshoot custom package and IEAK 11 problems
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 While the Internet Explorer Customization Wizard has been around for quite a while, there are still some known issues that you might encounter while deploying or managing your custom IE install package.
 
 ## I am unable to locate some of the wizard pages

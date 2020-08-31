@@ -9,6 +9,7 @@
 #### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
 #### [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md)
 #### [Authorize apps deployed with a WDAC managed installer](use-windows-defender-application-control-with-managed-installer.md)
+##### [Configure a WDAC managed installer](configure-wdac-managed-installer.md)
 #### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
@@ -40,7 +41,8 @@
 
 
 ## [Windows Defender Application Control operational guide](windows-defender-application-control-operational-guide.md)
-### [Understanding Application Control events](event-id-explanations.md)
+### [Understanding Application Control event IDs](event-id-explanations.md)
+### [Understanding Application Control event tags](event-tag-explanations.md)
 ### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 

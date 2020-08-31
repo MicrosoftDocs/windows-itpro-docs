@@ -62,8 +62,7 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
     
     <!--Sample EAP profile (PEAP)--> 
     <Authentication>  
-      <UserMethod>Eap</UserMethod>  
-      <MachineMethod>Eap</MachineMethod>  
+      <UserMethod>Eap</UserMethod> 
       <Eap>  
        <Configuration>
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">

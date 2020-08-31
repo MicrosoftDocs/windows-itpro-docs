@@ -1,6 +1,6 @@
 ---
 title: Scenarios - threat and vulnerability management
-description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
+description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -52,7 +52,7 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## Define a device's value to the organization
 
-Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation, so devices marked as “high value” will receive more weight.
+Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation. Devices marked as “high value” will receive more weight.
 
 Device value options:
 

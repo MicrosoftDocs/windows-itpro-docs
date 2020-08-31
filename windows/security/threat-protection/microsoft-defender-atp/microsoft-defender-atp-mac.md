@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ATP for Mac
 ms.reviewer:
-description: Describes how to install and use Microsoft Defender ATP for Mac.
+description: Learn how to install, configure, update, and use Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -61,7 +61,7 @@ There are several methods and deployment tools that you can use to install and c
 The three most recent major releases of macOS are supported.
 
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
-- Disk space: 650 MB
+- Disk space: 1GB
 
 Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 

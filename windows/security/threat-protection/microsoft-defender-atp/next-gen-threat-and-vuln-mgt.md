@@ -27,19 +27,19 @@ ms.topic: conceptual
 
 Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. Threat and vulnerability management serves as an infrastructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience.
 
-It helps organizations discover vulnerabilities and misconfigurations in real-time, based on sensors, without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
+Discover vulnerabilities and misconfigurations in real time with sensors, and without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
 
 Watch this video for a quick overview of threat and vulnerability management.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
 
-## Next-generation capabilities
+## Bridging the workflow gaps
 
-Threat and vulnerability management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
+Threat and vulnerability management is built in, real time, and cloud powered. It's fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledge base.  
 
-It is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Microsoft Endpoint Configuration Manager.
+Vulnerability management is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. Create a security task or ticket by integrating with Microsoft Intune and Microsoft Endpoint Configuration Manager.
 
-It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication.
+It provides the following solutions to frequently cited gaps across security operations, security administration, and IT administration workflows and communication:
 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Linked device vulnerability and security configuration assessment data in the context of exposure discovery
@@ -47,7 +47,9 @@ It provides the following solutions to frequently-cited gaps across security ope
 
 ### Real-time discovery
 
-To discover endpoint vulnerabilities and misconfiguration, threat and vulnerability management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead, and provides:
+To discover endpoint vulnerabilities and misconfiguration, threat and vulnerability management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead.
+
+It also provides:
 
 - Real-time device inventory. Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
 - Visibility into software and vulnerabilities. Optics into the organization's software inventory, and software changes like installations, uninstalls, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
@@ -56,10 +58,10 @@ To discover endpoint vulnerabilities and misconfiguration, threat and vulnerabil
 
 ### Intelligence-driven prioritization
 
-Threat and vulnerability management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, threat and vulnerability management in Microsoft Defender ATP highlights the most critical weaknesses that need attention by fusing its security recommendations with dynamic threat and business context:
+Threat and vulnerability management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, threat and vulnerability management highlights the most critical weaknesses that need attention. It fuses security recommendations with dynamic threat and business context:
 
-- Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, threat and vulnerability management dynamically aligns the prioritization of its security recommendations to focus on vulnerabilities that are currently being exploited in the wild and emerging threats that pose the highest risk.
-- Pinpointing active breaches. Microsoft Defender ATP correlates threat and vulnerability management and EDR insights to provide the unique ability to prioritize vulnerabilities that are currently being exploited in an active breach within the organization.
+- Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, threat and vulnerability management dynamically aligns the prioritization of its security recommendations. It focuses on vulnerabilities currently being exploited in the wild and emerging threats that pose the highest risk.
+- Pinpointing active breaches. Microsoft Defender ATP correlates threat and vulnerability management and EDR insights to prioritize vulnerabilities being exploited in an active breach within the organization.
 - Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows threat and vulnerability management to identify the exposed devices with business-critical applications, confidential data, or high-value users.
 
 ### Seamless remediation
@@ -95,14 +97,15 @@ Ensure that your devices:
 > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
+- Are onboarded to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure). If you're using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the device page
 - Are tagged or marked as co-managed
 
 ## APIs
 
-Run threat and vulnerability management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, security recommendation information. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
-See the following topics for related APIs:
+Run threat and vulnerability management-related API calls to automate vulnerability management workflows. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+
+See the following articles for related APIs:
 
 - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - [Machine APIs](machine.md)
@@ -112,7 +115,7 @@ See the following topics for related APIs:
 - [Vulnerability APIs](vulnerability.md)
 - [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 
-## Related topics
+## See also
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)

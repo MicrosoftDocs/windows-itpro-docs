@@ -1,18 +1,15 @@
 ---
-title: Conduct a demo to see how network protection works
-description: Quickly see how Network protection works by performing common scenarios that it protects against
+title: Evaluate network protection
+description: See how network protection works by testing common scenarios that it protects against.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/10/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,18 +22,16 @@ manager: dansimp
 
 [Network protection](network-protection.md) helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
-This topic helps you evaluate Network protection by enabling the feature and guiding you to a testing site. The site in this evaluation topic are not malicious, they are specially created websites that pretend to be malicious. The site will replicate the behavior that would happen if a user visited a malicious site or domain.
+This article helps you evaluate Network protection by enabling the feature and guiding you to a testing site. The sites in this evaluation article aren't malicious. They're specially created websites that pretend to be malicious. The site will replicate the behavior that would happen if a user visited a malicious site or domain.
 
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
 
 ## Enable network protection in audit mode
 
-You can enable network protection in audit mode to see which IP addresses and domains would have been blocked if it was enabled.
+Enable network protection in audit mode to see which IP addresses and domains would have been blocked. You can make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur.
 
-You might want to do this to make sure it doesn't affect line-of-business apps or to get an idea of how often blocks occur.
-
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -63,7 +58,7 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 |1125 | Windows Defender (Operational) | Event when a network connection is audited |
 |1126 | Windows Defender (Operational) | Event when a network connection is blocked |
 
-## Related topics
+## See also
 
 * [Network protection](network-protection.md)
 * [Enable network protection](enable-network-protection.md)

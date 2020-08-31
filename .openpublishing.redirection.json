@@ -8,7 +8,7 @@
     {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
@@ -28,7 +28,7 @@
     {
       "source_path": "devices/hololens/hololens-setup.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-use-apps.md",
@@ -38,17 +38,17 @@
     {
       "source_path": "devices/hololens/hololens-get-apps.md",
       "redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-spaces-on-hololens.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-clicker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
@@ -108,7 +108,7 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-containers-help-protect-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
@@ -173,12 +173,12 @@
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
@@ -857,7 +857,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
       "redirect_document_id": true
     },
     {
@@ -1028,6 +1033,11 @@
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configure-and-manage-tvm.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os",
       "redirect_document_id": true
     },
     {
@@ -1428,6 +1438,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
       "redirect_document_id": true
     },
     {
@@ -6208,27 +6223,27 @@
     {
       "source_path": "devices/surface/surface-diagnostic-toolkit.md",
       "redirect_url": "https://docs.microsoft.com/surface/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
       "redirect_url": "https://docs.microsoft.com/surface/indexdevices/surface/update",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
       "redirect_url": "https://docs.microsoft.com/surface-hub/finishing-your-surface-hub-meeting",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",
@@ -15698,7 +15713,7 @@
     {
       "source_path": "windows/release-information/resolved-issues-windows-10-1703.yml",
       "redirect_url": "https://docs.microsoft.com/windows/release-information/windows-message-center",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/planning/windows-10-1703-removed-features.md",
@@ -16294,6 +16309,126 @@
       "source_path": "windows/privacy/windows-personal-data-services-configuration.md",
       "redirect_url": "https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/add-devices.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/add-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-device-guidelines.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-device-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-faq.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-mbr.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-mbr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-support.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-update.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/autopilot-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/bitlocker.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/bitlocker",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/deployment-process.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/deployment-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/dfci-management.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/dfci-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/enrollment-status.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/enrollment-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/existing-devices.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/existing-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/known-issues.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/known-issues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/policy-conflicts.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/policy-conflicts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/profiles.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/profiles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/registration-auth.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/registration-auth",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/self-deploying.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/self-deploying",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/troubleshooting.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/troubleshooting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/user-driven.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/user-driven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/white-glove.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/white-glove",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-reset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-scenarios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-whats-new.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
+      "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot",
+      "redirect_document_id": true
     }
   ]
 }
