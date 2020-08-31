@@ -162,7 +162,7 @@ The following sections cover mitigations for different types of attackers.
 
 Physical access may be limited by a form factor that does not expose buses and memory. 
 For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard. 
-This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software.  
+This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software. 
 
 Mitigation: 
 - Pre-boot authentication set to TPM only (the default)
