@@ -126,7 +126,7 @@ For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” sectio
  
 ## Attack countermeasures
 
-This section covers countermeasures for specific types attacks. 
+This section covers countermeasures for specific types of attacks. 
 
 ### Bootkits and rootkits
 
@@ -172,7 +172,7 @@ Mitigation:
 Targeted attack with plenty of time; this attacker will open the case, will solder, and will use sophisticated hardware or software.
 
 Mitigation:
-- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN to help the TPM anti-hammering mitigation).
+- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN [enhanced pin] to help the TPM anti-hammering mitigation).
 
   -And-
 
