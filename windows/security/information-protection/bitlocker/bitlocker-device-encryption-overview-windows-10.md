@@ -23,7 +23,7 @@ ms.custom: bitlocker
 -   Windows 10
 
 This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
-For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
+For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
 When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and by providing new strategies.
 
