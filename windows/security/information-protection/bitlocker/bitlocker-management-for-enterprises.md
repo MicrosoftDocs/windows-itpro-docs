@@ -89,14 +89,14 @@ Subsequently, you can use PowerShell to enable BitLocker.
 
 *Example: Use PowerShell to enable BitLocker with a TPM protector*
 ```powershell
-Enable-BitLocker -MountPoint "D:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
+Enable-BitLocker -MountPoint "D:" -EncryptionMethod Aes256 -UsedSpaceOnly -TpmProtector 
 ```
 
 *Example: Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to 123456*
 ```powershell
 $SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
 
-Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
+Enable-BitLocker -MountPoint "C:" -EncryptionMethod Aes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
 ``` 
 
 ## Related Articles
