@@ -270,6 +270,15 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DigitalLocker policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2" id="admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
+  </dd>
+</dl>
 
 ### ADMX_DnsClient policies
 

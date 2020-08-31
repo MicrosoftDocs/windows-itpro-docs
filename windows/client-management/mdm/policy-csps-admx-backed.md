@@ -47,6 +47,8 @@ ms.date: 08/18/2020
 - [ADMX_CtrlAltDel/DisableLockComputer](./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disablelockcomputer)
 - [ADMX_CtrlAltDel/DisableTaskMgr](./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disabletaskmgr)
 - [ADMX_CtrlAltDel/NoLogoff](./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-nologoff)
+- [ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1](./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1)
+- [ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2](./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2)
 - [ADMX_DnsClient/DNS_AllowFQDNNetBiosQueries](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-allowfqdnnetbiosqueries)
 - [ADMX_DnsClient/DNS_AppendToMultiLabelName](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-appendtomultilabelname)
 - [ADMX_DnsClient/DNS_Domain](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-domain)
