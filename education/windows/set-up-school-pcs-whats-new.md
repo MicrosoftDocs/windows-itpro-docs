@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 09/25/2019
+ms.date: 08/31/2020
 ms.reviewer: 
 manager: dansimp
 ---  
@@ -17,6 +17,11 @@ manager: dansimp
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
 
+
+## Week of August 24, 2020
+
+Give longer names to Windows 10 devices running Windows 10, version 2004 or later
+You can now create a device name that's up to 53 characters long.  
 
 ## Week of September 23, 2019  
 
