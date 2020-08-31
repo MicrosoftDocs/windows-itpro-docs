@@ -18,14 +18,14 @@ ms.date: 02/28/2019
 ms.custom: bitlocker
 ---
 
-# BCD settings and BitLocker
+# Boot Configuration Data settings and BitLocker
 
 **Applies to**
 -   Windows 10
 
-This topic for IT professionals describes the BCD settings that are used by BitLocker.
+This topic for IT professionals describes the Boot Configuration Data (BCD) settings that are used by BitLocker.
 
-When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive boot configuration data (BCD) settings have not changed since BitLocker was last enabled, resumed, or recovered.
+When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
 
 ## BitLocker and BCD Settings
 
