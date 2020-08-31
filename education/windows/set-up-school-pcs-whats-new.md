@@ -20,8 +20,8 @@ Learn what’s new with the Set up School PCs app each week. Find out about new 
 
 ## Week of August 24, 2020
 
-Give longer names to Windows 10 devices running Windows 10, version 2004 or later
-You can now create a device name that's up to 53 characters long.  
+Longer device names supported in Set up School PCs
+You can now give devices running Windows 10, version 2004 or later a name that's up to 53 characters long.  
 
 ## Week of September 23, 2019  
 
