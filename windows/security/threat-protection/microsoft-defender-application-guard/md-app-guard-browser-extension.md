@@ -57,23 +57,23 @@ Both Chrome and Firefox have their own browser-specific group policies. We recom
 
 #### Chrome policies
 
-These policies can be found along the filepath, *Software\Policies\Google\Chrome\\*, followed by the policy name (e.g., *Software\Policies\Google\Chrome\IncognitoModeEnabled*).
+These policies can be found along the filepath, *Software\Policies\Google\Chrome\\*, with each policy name corresponding to the file name (e.g., IncognitoModeAvailability is located at *Software\Policies\Google\Chrome\IncognitoModeAvailability*).
 
-Policy name  | Possible values | Recommended setting | Reason
+Policy name  | Values | Recommended setting | Reason
 -|-|-|-
 [IncognitoModeAvailability](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=IncognitoModeAvailability) | `0` = Enabled <br /> `1` = Disabled <br /> `2` = Forced (i.e. forces pages to only open in Incognito mode) | Disabled | This policy allows users to start Chrome in Incognito mode. In this mode, all extensions are turned off by default.
 [BrowserGuestModeEnabled](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserGuestModeEnabled) | `false` or `0` = Disabled <br /> `true`, `1`, or not configured = Enabled | Disabled | This policy allows users to login as *Guest*, which opens a session in Incognito mode. In this mode, all extensions are turned off by default.
-[BackgroundModeEnabled](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BackgroundModeEnabled) | `false` or `0` = Disabled <br /> `true` or `1` = Enabled <br /> <br /> **Note:** If this policy is not set, the user can enable or disable background mode through local browser settings. | Enabled | This policy keeps Chrome running in the background, ensuring that all navigation is passed to the extension.
+[BackgroundModeEnabled](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BackgroundModeEnabled) | `false` or `0` = Disabled <br /> `true` or `1` = Enabled <br /> <br /> **Note:** If this policy is not set, the user can enable or disable background mode through local browser settings. | Enabled | This policy keeps Chrome running in the background, ensuring that navigation is always passed to the extension.
 [ExtensionSettings](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionSettings) | This policy accepts a dictionary that configures multiple other management settings for Chrome. See the [Google Cloud documentation](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionSettings) for complete schema. | Include an entry for `force_installed` | This policy prevents users from manually removing the extension.
 
 #### Firefox policies
 
-These policies can be found along the filepath, *Software\Policies\Mozilla\Firefox\\*, followed by the policy name (e.g., *Software\Policies\Mozilla\Firefox\DisableSafeMode*).
+These policies can be found along the filepath, *Software\Policies\Mozilla\Firefox\\*, with each policy name corresponding to the file name (e.g., DisableSafeMode is located at *Software\Policies\Mozilla\Firefox\DisableSafeMode*).
 
-Policy name | Possible values | Recommended setting | Reason
--|-|-|-|-
+Policy name | Values | Recommended setting | Reason
+-|-|-|-
 [DisableSafeMode](https://github.com/mozilla/policy-templates/blob/master/README.md#DisableSafeMode) | `false` or `0` = Safe mode is enabled <br /> `true` or `1` = Safe mode is disabled | True (i.e. the policy is enabled and Safe mode is *not* allowed to run) | Safe mode can allow users to circumvent Application Guard
-[BlockAboutConfig](https://github.com/mozilla/policy-templates/blob/master/README.md#BlockAboutConfig) | `false` or `0` = User access to about:config is allowed <br /> `true` or `1` = User access to about:config is *not* allowed | True (i.e. the policy is enabled and access to about:config is *not* allowed) | About:config is a special page within Firefox that offers control over many settings that may compromise security
+[BlockAboutConfig](https://github.com/mozilla/policy-templates/blob/master/README.md#BlockAboutConfig) | `false` or `0` = User access to *about:config* is allowed <br /> `true` or `1` = User access to *about:config* is not allowed | True (i.e. the policy is enabled and access to about:config is *not* allowed) | *About:config* is a special page within Firefox that offers control over many settings that may compromise security
 [Extensions - Locked](https://github.com/mozilla/policy-templates/blob/master/README.md#Extensions) | This setting accepts a list of UUIDs for extensions (these can be found by searching `extensions.webextensions.uuids` within the about:config page) | Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "`ApplicationGuardRel@microsoft.com`" | This setting allows you to lock the extension, so the user cannot disable or uninstall it.
 
 ## Troubleshooting guide
