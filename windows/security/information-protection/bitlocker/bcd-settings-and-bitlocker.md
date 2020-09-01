@@ -69,7 +69,7 @@ When specifying BCD values in the **Use enhanced Boot Configuration Data validat
 
 For example, either “`winload:hypervisordebugport`” or “`winload:0x250000f4`” yield the same value.
 
-A setting that applies to all boot applications may be applied only to an individual application; however, the reverse is not true. For example, one can specify either “`all:locale`” or “`winresume:locale`”, but as the bcd setting “`win-pe`” does not apply to all boot applications, “`winload:winpe`” is valid, but “`all:winpe`” is not valid. The setting that controls boot debugging (“`bootdebug`” or 0x16000010) will always be validated and will have no effect if it is included in the provided fields.
+A setting that applies to all boot applications may be applied only to an individual application; however, the reverse is not true. For example, one can specify either “`all:locale`” or “`winresume:locale`”, but as the BCD setting “`win-pe`” does not apply to all boot applications, “`winload:winpe`” is valid, but “`all:winpe`” is not valid. The setting that controls boot debugging (“`bootdebug`” or 0x16000010) will always be validated and will have no effect if it is included in the provided fields.
 
 > **Note:**  Take care when configuring BCD entries in the Group Policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the specified Group Policy setting is invalid.
  
