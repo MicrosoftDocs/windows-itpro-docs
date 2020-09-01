@@ -76,7 +76,7 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
 #### [Device control]()
-##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+##### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
 
 
