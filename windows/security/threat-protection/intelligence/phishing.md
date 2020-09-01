@@ -24,16 +24,35 @@ Cybercriminals often attempt to steal usernames, passwords, credit card details,
 
 ## What to do if you've been a victim of a phishing scam
 
-If you feel you've been a victim of a phishing attack, contact your IT admin. Immediately change all passwords associated with the accounts, and report any fraudulent activity to your bank and credit card company.
+If you feel you've been a victim of a phishing attack:
+
+1. Contact your IT admin if you are on a work computer. 
+2. Immediately change all passwords associated with the accounts.
+3. Report any fraudulent activity to your bank and credit card company.
 
 ### Reporting spam
 
-Submit phishing scam emails to **Microsoft** by sending an email with the scam as an attachment to: phish@office365.microsoft.com. For more information on submitting messages to Microsoft, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+- **Outlook.com**: If you receive a suspicious email message that asks for personal information, select the check box next to the message in your Outlook inbox. Select the arrow next to **Junk**, and then select **Phishing**.
 
-For Outlook and Outlook on the web users, use the **Report Message Add-in** for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).
+- **Microsoft Office Outlook**: While in the suspicious message, select **Report message** from the ribbon, and then select **Phishing**.
 
-Send an email with the phishing scam to **The Anti-Phishing Working Group**: reportphishing@apwg.org. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
- 
+- **Microsoft**: Create a new, blank email message with the one of the following recipients:
+    - Junk: junk@office365.microsoft.com
+    - Phishing: phish@office365.microsoft.com
+
+    Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers). For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+
+- **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
+
+If you’re on a suspicious website:
+
+- **Microsoft Edge**: While you’re on a suspicious site, select the **More (…) icon** > **Help and feedback** > **Report Unsafe site**. Follow the instructions on the webpage that displays to report the website.
+
+- **Internet Explorer**: While you’re on a suspicious site, select the gear icon, point to **Safety**, and then select **Report Unsafe Website**. Follow the instructions on the webpage that displays to report the website.
+
+>[!NOTE]
+>For more information, see [Protect yourself from phishing](https://support.microsoft.com/en-us/help/4033787/windows-protect-yourself-from-phishing).
+
 ## How phishing works
 
 Phishing attacks are scams that often use social engineering bait or lure content. For example, during tax season bait content can be tax-filing announcements that attempt to lure you into providing personal information such as your SSN or bank account information.
