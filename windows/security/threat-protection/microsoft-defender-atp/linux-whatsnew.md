@@ -21,7 +21,6 @@ ms.topic: conceptual
 
 ## 101.04.76
 
-- Added the ability to change the path where antivirus defitions are stored
 - Bug fixes
 
 ## 101.03.48
