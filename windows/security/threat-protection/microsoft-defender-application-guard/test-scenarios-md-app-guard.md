@@ -79,7 +79,7 @@ Before you can use Application Guard in enterprise mode, you must install Window
    >[!NOTE]
    >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
 
-6. Start Microsoft Edge and type *www.microsoft.com*. <!-- The build engine is adding an insecure 'http://' to the front of the sample url, then complaining that it is an insecure link -->
+6. Start Microsoft Edge and type *https://www.microsoft.com*.
 
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you've marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
@@ -215,7 +215,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled**, set **Options** to 2, and click **OK**.
 
-    ![Group Policy editor Download options](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
+    ![Group Policy editor File trust options](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -229,7 +229,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor Download options](images/appguard-gp-allow-camera-and-mic.png)
+    ![Group Policy editor Camera and microphone options](images/appguard-gp-allow-camera-and-mic.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -243,7 +243,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled**, copy the thumbprint of each certificate to share, separated by a comma, and click **OK**.
 
-    ![Group Policy editor Download options](images/appguard-gp-allow-root-certificates.png)
+    ![Group Policy editor Root certificate options](images/appguard-gp-allow-root-certificates.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
