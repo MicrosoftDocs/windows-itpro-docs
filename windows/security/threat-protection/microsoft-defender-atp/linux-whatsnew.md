@@ -19,6 +19,10 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
+## 101.04.76
+
+- Bug fixes
+
 ## 101.03.48
 
 - Bug fixes
