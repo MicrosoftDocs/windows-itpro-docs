@@ -66,7 +66,8 @@
 ##### [Application isolation]()
 ###### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
 ###### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
-###### [Install Windows Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard Extension](microsoft-defender-application-guard/md-app-guard-browser-extension.md)
 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ###### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
