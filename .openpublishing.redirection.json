@@ -857,12 +857,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
       "redirect_document_id": true
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection-exploit-guard",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
       "redirect_document_id": true
     },
     {
