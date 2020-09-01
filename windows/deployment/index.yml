@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows 10 deployment resources and documentation # < 60 chars
-summary: Learn about deploying and and keeping Windows 10 up to date.  # < 160 chars
+summary: Learn about deploying and keeping Windows 10 up to date.  # < 160 chars
 
 metadata:
   title: Windows 10 deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -53,7 +53,7 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Deploy Windows 10 with Autopilot
-            url: windows-autopilot/windows-autopilot-scenarios.md
+            url: https://docs.microsoft.com/mem/autopilot
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
           - text: Deploy Windows updates with Configuration Manager
@@ -71,8 +71,7 @@ landingContent:
           - text: Basics of Windows updates, channels, and tools
             url:  update/get-started-updates-channels-tools.md
           - text: Overview of Windows Autopilot
-            url:  windows-autopilot/windows-autopilot.md
-
+            url:  https://docs.microsoft.com/mem/autopilot/windows-autopilot
 
   # Card
   - title: Support remote work
@@ -85,6 +84,8 @@ landingContent:
             url: https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely
           - text: Top 12 tasks for security teams to support working from home
             url: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work
+          - text: Support your remote workforce
+            url: https://docs.microsoft.com/microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
   - title: Microsoft Learn

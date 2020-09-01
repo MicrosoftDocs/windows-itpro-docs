@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business Overview (Windows 10)
 ms.reviewer: An overview of Windows Hello for Business
-description: An overview of Windows Hello for Business 
+description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

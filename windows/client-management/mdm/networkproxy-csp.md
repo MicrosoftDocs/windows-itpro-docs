@@ -1,6 +1,6 @@
 ---
 title: NetworkProxy CSP
-description: NetworkProxy CSP
+description: Learn how the NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

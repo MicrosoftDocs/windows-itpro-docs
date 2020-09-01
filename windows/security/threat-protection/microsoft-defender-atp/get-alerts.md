@@ -1,6 +1,6 @@
 ---
 title: List alerts API
-description: Retrieve a collection of recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
+description: Learn how to use the List alerts API to retrieve a collection of alerts in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -35,7 +35,7 @@ Retrieves a collection of Alerts.
 
 
 ## Limitations
-1. You can get alerts last updated in the past 30 days.
+1. You can get alerts last updated according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 

@@ -1,6 +1,6 @@
 ---
 title: Hybrid Certificate Trust Deployment (Windows Hello for Business)
-description: Hybrid Certificate Trust Deployment Overview
+description: Learn the information you need to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust
 ms.prod: w10
 ms.mktglfcycl: deploy

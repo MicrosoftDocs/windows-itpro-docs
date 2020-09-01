@@ -3,7 +3,6 @@ title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -113,7 +112,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -290,7 +289,7 @@ This rule helps prevent credential stealing, by locking down Local Security Auth
 LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
-> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 This rule was introduced in:
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -327,7 +326,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include:
 
 * Executable files (such as .exe, .dll, or .scr)
-* Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+* Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -343,7 +342,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes, while till allowing legitimate Outlook functions.
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
 This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
@@ -391,7 +390,7 @@ This rule was introduced in:
 - [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
-Intune name: Block persistence through WMI event subscription
+Intune name: Not yet available
 
 Configuration Manager name: Not yet available
 

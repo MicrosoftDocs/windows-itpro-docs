@@ -38,6 +38,6 @@ Go to the [MVI program page](virus-initiative-criteria.md) for more information.
 
 CME is open to organizations who are involved in cybersecurity and antimalware or interested in fighting cybercrime.
 
-The program aims to bring organizations in cybersecurity and other industries together to pool tools, information and actions to drive coordinated campaigns against malware. The ultimate goal is to create efficient and long-lasting results for better protection of our collective communities, customers, and businesses.
+The program aims to bring organizations in cybersecurity and other industries together to pool tools, information, and actions to drive coordinated campaigns against malware. The ultimate goal is to create efficient and long-lasting results for better protection of our communities, customers, and businesses.
 
 Go to the [CME program page](coordinated-malware-eradication.md) for more information.

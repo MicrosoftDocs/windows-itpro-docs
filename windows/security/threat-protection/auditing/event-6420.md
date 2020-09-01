@@ -1,6 +1,6 @@
 ---
 title: 6420(S) A device was disabled. (Windows 10)
-description: Describes security event 6420(S) A device was disabled.
+description: Describes security event 6420(S) A device was disabled. This event is generated when a specific device is disabled.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

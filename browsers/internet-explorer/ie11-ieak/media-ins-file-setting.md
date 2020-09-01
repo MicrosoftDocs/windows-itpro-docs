@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Media .INS file to specify your install media
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The types of media on which your custom install package is available.
 
 |Name |Value |Description      |

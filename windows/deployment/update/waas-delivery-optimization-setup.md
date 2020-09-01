@@ -148,8 +148,6 @@ Using the `-Verbose` option returns additional information:
 
 **Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
-Starting in Windows 10, version 1903, `get-DeliveryOptimizationPerfSnap` has a new option `-CacheSummary` which provides a summary of the cache status.
-
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
 #### Manage the Delivery Optimization cache

@@ -1,6 +1,6 @@
 ---
 title: How USMT Works (Windows 10)
-description: How USMT Works
+description: Learn how USMT works and how it includes two tools that migrate settings and data - ScanState and LoadState.
 ms.assetid: 5c8bd669-9e1e-473d-81e6-652f40b24171
 ms.reviewer: 
 manager: laurawi
@@ -8,8 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.date: 04/19/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -18,17 +18,13 @@ ms.topic: article
 
 USMT includes two tools that migrate settings and data: ScanState and LoadState. ScanState collects information from the source computer, and LoadState applies that information to the destination computer.
 
--   [ScanState Process](#bkmk-ssprocess)
-
--   [LoadState Process](#bkmk-lsprocess)
+-   [ScanState Process](#the-scanstate-process)
+-   [LoadState Process](#the-loadstate-process)
 
     **Note**  
-    For more information about how USMT processes the rules and the XML files, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
+    For more information about how USMT processes the rules and the XML files, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).   
 
-     
-
-## <a href="" id="bkmk-ssprocess"></a>The ScanState Process
-
+## The ScanState Process
 
 When you run the ScanState tool on the source computer, it goes through the following process:
 
@@ -39,9 +35,7 @@ When you run the ScanState tool on the source computer, it goes through the foll
     There are three types of components:
 
     -   Components that migrate the operating system settings
-
     -   Components that migrate application settings
-
     -   Components that migrate users’ files
 
     The ScanState tool collects information about the application settings and user data components from the .xml files that are specified on the command line.
@@ -57,8 +51,6 @@ When you run the ScanState tool on the source computer, it goes through the foll
         **Note**  
         From this point on, ScanState does not distinguish between components that migrate operating-system settings, those that migrate application settings, and those that migrate users’ files. ScanState processes all components in the same way.
 
-         
-
     2.  Each component that is selected in the previous step is processed further. Any profile-specific variables (such as CSIDL\_PERSONAL) are evaluated in the context of the current profile. For example, if the profile that is being processed belongs to “User1”, then CSIDL\_PERSONAL would expand to C:\\Users\\User1\\Documents, assuming that the user profiles are stored in the C:\\Users directory.
 
     3.  For each selected component, ScanState evaluates the &lt;detects&gt; section. If the condition in the &lt;detects&gt; section evaluates to false, the component is not processed any further. Otherwise, the processing of this component continues.
@@ -72,8 +64,6 @@ When you run the ScanState tool on the source computer, it goes through the foll
         **Note**  
         ScanState ignores some subsections such as &lt;destinationCleanup&gt; and &lt;locationModify&gt;. These sections are evaluated only on the destination computer.
 
-         
-
 5.  In the "Collecting" phase, ScanState creates a master list of the migration units by combining the lists that were created for each selected user profile.
 
 6.  In the "Saving" phase, ScanState writes the migration units that were collected to the store location.
@@ -81,9 +71,7 @@ When you run the ScanState tool on the source computer, it goes through the foll
     **Note**  
     ScanState does not modify the source computer in any way.
 
-     
-
-## <a href="" id="bkmk-lsprocess"></a>The LoadState Process
+## The LoadState Process
 
 
 The LoadState process is very similar to the ScanState process. The ScanState tool collects migration units such as file, registry key, or registry values from the source computer and saves them to the store. Similarly, the LoadState tool collects migration units from the store and applies them to the destination computer.
@@ -131,12 +119,9 @@ The LoadState process is very similar to the ScanState process. The ScanState to
        **Important**  
        It is important to specify the .xml files with the LoadState command if you want LoadState to use them. Otherwise, any destination-specific rules, such as &lt;locationModify&gt;, in these .xml files are ignored, even if the same .xml files were provided when the ScanState command ran.
 
-         
-
 5. In the "Apply" phase, LoadState writes the migration units that were collected to the various locations on the destination computer. If there are conflicts and there is not a &lt;merge&gt; rule for the object, the default behavior for the registry is for the source to overwrite the destination. The default behavior for files is for the source to be renamed incrementally, for example, OriginalFileName(1).OriginalExtension. Some settings, such as fonts, wallpaper, and screen-saver settings, do not take effect until the next time the user logs on. For this reason, you should log off when the LoadState command actions have completed.
 
 ## Related topics
-
 
 [User State Migration Tool (USMT) Command-line Syntax](usmt-command-line-syntax.md)
 

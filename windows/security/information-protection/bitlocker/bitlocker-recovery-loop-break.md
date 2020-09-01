@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/28/2019
+ms.custom: bitlocker
 ---
 
 # Breaking out of a Bitlocker recovery loop

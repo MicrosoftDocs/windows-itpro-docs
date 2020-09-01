@@ -6,7 +6,6 @@ description: Delivery Optimization is a peer-to-peer distribution method in Wind
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -36,7 +35,7 @@ For information about setting up Delivery Optimization, including tips for the b
 
 ## New in Windows 10, version 2004
 
-- Enterprise network throttling: new settings have been added in Group Policy and MDM to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
+- Enterprise network throttling: new settings have been added in Group Policy and mobile device management (MDM) to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
 
   ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
 
@@ -86,9 +85,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Store files | 1511 |
 | Windows Store for Business files | 1511 |
 | Windows Defender definition updates | 1511 |
-| Office Click-to-Run updates | 1709 |
+| Microsoft 365 Apps and updates | 1709 (for more information, see [Delivery Optimization and Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/delivery-optimization)) |
 | Win32 apps for Intune | 1709 |
-| Office installations and updates | 2004 |
 | Xbox game pass games | 2004 |
 | MSIX apps (HTTP downloads only) | 2004 |
 | Configuration Manager Express Updates | 1709 + Configuration Manager version 1711 |
@@ -98,13 +96,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 
 
-
-
-
-
 In Windows 10 Enterprise, Professional, and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
-For more details, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
+For more information, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
 
 
 ## Set up Delivery Optimization
@@ -116,7 +110,7 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
 
 **Starting with Windows 10, version 1903,** you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
@@ -206,7 +200,7 @@ If you don’t see any bytes coming from peers the cause might be one of the fol
 If you suspect this is the problem, try these steps:
 
 1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
-2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
 3. If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
 
 
@@ -216,8 +210,8 @@ If you suspect this is the problem, try these steps:
 If you suspect this is the problem, try these steps:
 
 1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
-2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
-3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **DownloadMode** is 1 or 2 on both devices.
+3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
 4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
 
 
@@ -237,7 +231,7 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 [Windows 10, Delivery Optimization, and WSUS](https://blogs.technet.microsoft.com/mniehaus/2016/08/16/windows-10-delivery-optimization-and-wsus-take-2/)
 
 
-## Related topics
+## Related articles
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)

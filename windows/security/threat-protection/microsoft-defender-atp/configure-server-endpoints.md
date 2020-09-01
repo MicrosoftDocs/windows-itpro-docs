@@ -140,8 +140,8 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 - [Local script](configure-endpoints-script.md) 
 - [Group Policy](configure-endpoints-gp.md)
-- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md#onboard-windows-10-devices-using-microsoft-endpoint-configuration-manager-current-branch)
-- [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-windows-10-devices-using-earlier-versions-of-system-center-configuration-manager)
+- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
 - [VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md)
 
 > [!NOTE]
@@ -191,9 +191,12 @@ The following capabilities are included in this integration:
 - Server investigation -  Azure Security Center customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
-> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created (in the US for US users, in the EU for European and UK users).
+> - When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created (in the US for US users, in the EU for European and UK users).<br>
+Data collected by Microsoft Defender ATP is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Microsoft Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
-> - When you use Azure Security Center to monitor Windows servers, a Microsoft Defender ATP tenant is automatically created and the Microsoft Defender ATP data is stored in Europe by default. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
+Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+
 
 ## Offboard Windows servers
 You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.

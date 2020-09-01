@@ -1,6 +1,6 @@
 ---
 title: MDM enrollment of Windows 10-based devices
-description: MDM enrollment of Windows 10-based devices
+description: Learn about mobile device management (MDM) enrollment of Windows 10-based devices to simplify access to your organization’s resources.
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'

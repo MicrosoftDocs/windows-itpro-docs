@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: List of major changes for Microsoft Defender ATP for Mac.
+description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,44 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
-> [!NOTE]
-> In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions.
+> [!IMPORTANT]
+> In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
 > 
-> In the meantime, starting with macOS Catalina update 10.15.4, Apple introduced a user facing *Legacy System Extension* warning to signal applications that rely on kernel extensions.
+> The update is applicable to devices running macOS version 10.15.4 or later.
 > 
-> If you have previously allowed the kernel extension as part of your remote deployment, that warning should not be presented to the end user. If you have not previously deployed a policy to allow the kernel extension, your users will be presented with the warning. To proactively silence the warning, you can still deploy a configuration to allow the kernel extension. Refer to the instructions in the [JAMF-based deployment](mac-install-with-jamf.md#approved-kernel-extension) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+> To ensure that the Microsoft Defender ATP for Mac update is delivered and applied seamlessly from an end-user experience perspective, a new remote configuration must be deployed to all eligible macOS devices before Microsoft publishes the new agent version. If the configuration is not deployed prior to the Microsoft Defender ATP for Mac agent update, end-users will be presented with a series of system dialogs asking to grant the agent all necessary permissions associated with the new system extensions.
+> 
+> Timing: 
+> - Organizations that previously opted into Microsoft Defender ATP preview features in Microsoft Defender Security Center, must be ready for Microsoft Defender ATP for Mac agent update **by August 10, 2020**.
+> - Organizations that do not participate in public previews for Microsoft Defender ATP features, must be ready **by September 07, 2020**.
+> 
+> Action is needed by IT administrator. Review the steps below and assess the impact on your organization:
+> 
+> 1. Deploy the specified remote configuration to eligible macOS devices before Microsoft publishes the new agent version. <br/>
+> Even though Microsoft Defender ATP for Mac new implementation based on system extensions is only applicable to devices running macOS version 10.15.4 or later, deploying configuration proactively across the entire macOS fleet will ensure that even down-level devices are prepared for the day when Apple releases macOS 11 Big Sur and will ensure that Microsoft Defender ATP for Mac continues protecting all macOS devices regardless OS version they were running prior to the Big Sur upgrade.
+> 
+> 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
+> 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+
+## 101.06.63
+
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.
+
+## 101.05.17
+
+> [!IMPORTANT]
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> 
+> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
+
+- Addressed a kernel panic that occurred sometimes when accessing SMB file shares
+- Performance improvements & bug fixes
+
+## 101.05.16
+
+- Improvements to quick scan logic to significantly reduce the number of scanned files
+- Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool
+- Bug fixes
 
 ## 101.03.12
 
@@ -86,7 +118,7 @@ ms.topic: conceptual
 - Fixed an issue where Microsoft Defender ATP for Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
-  $ mdatp --connectivity-test
+  mdatp --connectivity-test
   ```
 - Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)
 - Performance improvements & bug fixes

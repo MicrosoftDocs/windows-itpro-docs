@@ -1,6 +1,6 @@
 ---
 title: Get domain related machines API
-description: Retrieves a collection of devices related to a given domain address.
+description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -28,7 +28,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated to or fr
 
 
 ## Limitations
-1. You can query on devices last seen in the past 30 days.
+1. You can query on devices last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -48,7 +48,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >- Response will include only devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/domains/{domain}/machines
 ```
 
@@ -75,6 +75,6 @@ Here is an example of the request.
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/domains/api.securitycenter.windows.com/machines
 ```

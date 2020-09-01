@@ -1,6 +1,6 @@
 ---
 title: Get alert information by ID API
-description: Retrieve a Microsoft Defender ATP alert by its ID.
+description: Learn how to use the Get alert information by ID API to retrieve a specific alert by its ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -28,7 +28,7 @@ Retrieves specific [Alert](alerts.md) by its ID.
 
 
 ## Limitations
-1. You can get alerts last updated in the past 30 days.
+1. You can get alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 

@@ -1,6 +1,6 @@
 ---
 title: 4720(S) A user account was created. (Windows 10)
-description: Describes security event 4720(S) A user account was created.
+description: Describes security event 4720(S) A user account was created. This event is generated a user object is created.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
