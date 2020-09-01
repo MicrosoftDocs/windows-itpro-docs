@@ -76,6 +76,7 @@
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
 ##### [Exploit protection evaluation](microsoft-defender-atp/evaluate-exploit-protection.md)
+##### [Exploit protection reference](microsoft-defender-atp/exploit-protection-reference.md )
 
 
 #### [Network protection]()
