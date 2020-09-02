@@ -80,7 +80,7 @@ Enable network protection by using any of these methods:
 
 6. Select the profile called **Assignments**, assign to **All Users & All Devices**, and **Save**.
 
-### Mobile Device Management (MMD)
+### Mobile Device Management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
