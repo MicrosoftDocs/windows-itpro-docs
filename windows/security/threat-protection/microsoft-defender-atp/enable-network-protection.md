@@ -41,7 +41,7 @@ Enable network protection by using any of these methods:
 
 * [PowerShell](#powershell)
 * [Microsoft Intune](#intune)
-* [Mobile Device Management (MDM)](#mobile-device-management-mmd)
+* [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 
