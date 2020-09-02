@@ -29,28 +29,27 @@ When protecting data at rest on an operating system volume, during the boot proc
 
 ## BitLocker and BCD Settings
 
-In Windows 7 and Windows Server 2008 R2, BitLocker validated BCD settings with the winload, winresume, and memtest prefixes to a large degree. However, this high degree of validation caused BitLocker to go into recovery mode for benign setting changes, for example, when applying a language pack BitLocker would enter recovery mode.
+In Windows 7 and Windows Server 2008 R2, BitLocker validated BCD settings with the winload, winresume, and memtest prefixes to a large degree. However, this high degree of validation caused BitLocker to go into recovery mode for benign setting changes, for example, when applying a language pack, BitLocker would enter recovery mode.
 
-In Windows 8, Windows Server 2012, and subsequent versions, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If you believe that there is a risk in excluding a particular BCD setting from the validation profile—Include that BCD setting in the BCD validation coverage to suit your validation preferences. 
-If a default BCD setting is found to persistently trigger a recovery for benign changes—Exclude that BCD setting from the validation coverage.
+In Windows 8, Windows Server 2012, and subsequent versions, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If you believe that there is a risk in excluding a particular BCD setting from the validation profile, include that BCD setting in the BCD validation coverage to suit your validation preferences. 
+If a default BCD setting is found to persistently trigger a recovery for benign changes, exclude that BCD setting from the validation coverage.
 
 ### When secure boot is enabled
 
-Computers with UEFI firmware can use Secure Boot to provide enhanced boot security. When BitLocker is able to use Secure Boot for platform and BCD integrity validation, as defined by the **Allow Secure Boot for integrity validation** group policy setting, the **Use enhanced Boot Configuration Data validation profile** group policy is ignored.
+Computers with UEFI firmware can use secure boot to provide enhanced boot security. When BitLocker is able to use secure boot for platform and BCD integrity validation, as defined by the **Allow Secure Boot for integrity validation** group policy setting, the **Use enhanced Boot Configuration Data validation profile** group policy is ignored.
 
-One of the benefits of using Secure Boot is that it can correct BCD settings during boot without triggering recovery events. Secure Boot enforces the same BCD settings as BitLocker. Secure Boot BCD enforcement is not configurable from within the operating system.
+One of the benefits of using secure boot is that it can correct BCD settings during boot without triggering recovery events. Secure boot enforces the same BCD settings as BitLocker. Secure boot BCD enforcement is not configurable from within the operating system.
 
 ## Customizing BCD validation settings
 
-To modify the BCD settings BitLocker validates the IT Pro will add or exclude BCD settings from the platform validation profile by enabling and configuring the **Use enhanced Boot Configuration Data validation profile** Group Policy setting.
+To modify the BCD settings that are validated by BitLocker, the administrator will add or exclude BCD settings from the platform validation profile by enabling and configuring the **Use enhanced Boot Configuration Data validation profile** group policy setting.
 
-For the purposes of BitLocker validation, BCD settings are associated with a specific set of Microsoft boot applications, by default. In addition to this default association with a specific set of boot applications (or a specific boot application), BCD settings extend coverage to all boot applications by attaching any of the following prefixes:
+For the purposes of BitLocker validation, BCD settings are associated with a specific set of Microsoft boot applications. These BCD settings can also be applied to the other Microsoft boot applications that are not part of the set to which the BCD settings are already applicable to. This can be done by attaching any of the following prefixes to the BCD settings which are being entered in the group policy settings dialog:
 
 -   winload
 -   winresume
 -   memtest
 -   all of the above
-**Note:** The inclusion of prefix(es) is done when the BCD settings are being entered in the Group Policy setting.
 
 All BCD settings are specified by combining the prefix value with either a hexadecimal (hex) value or a “friendly name.”
 
@@ -60,18 +59,18 @@ You can quickly obtain the friendly name for the BCD settings on your computer b
 
 Not all BCD settings have friendly names; for those settings without a friendly name, the hex value is the only way to configure an exclusion policy.
 
-When specifying BCD values in the **Use enhanced Boot Configuration Data validation profile** Group Policy setting, use the following syntax:
+When specifying BCD values in the **Use enhanced Boot Configuration Data validation profile** group policy setting, use the following syntax:
 
 -   Prefix the setting with the boot application prefix
 -   Append a colon ‘:’
 -   Append either the hex value or the friendly name
 -   If entering more than one BCD setting, you will need to enter each BCD setting on a new line
 
-For example, either “`winload:hypervisordebugport`” or “`winload:0x250000f4`” yield the same value.
+For example, either “`winload:hypervisordebugport`” or “`winload:0x250000f4`” yields the same value.
 
 A setting that applies to all boot applications may be applied only to an individual application; however, the reverse is not true. For example, one can specify either “`all:locale`” or “`winresume:locale`”, but as the BCD setting “`win-pe`” does not apply to all boot applications, “`winload:winpe`” is valid, but “`all:winpe`” is not valid. The setting that controls boot debugging (“`bootdebug`” or 0x16000010) will always be validated and will have no effect if it is included in the provided fields.
 
-> **Note:**  Take care when configuring BCD entries in the Group Policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the specified Group Policy setting is invalid.
+> **Note:**  Take care when configuring BCD entries in the group policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the specified group policy setting is invalid.
  
 ### Default BCD validation profile
 
@@ -107,7 +106,7 @@ The following table contains the default BCD validation profile used by BitLocke
 
 ### Full list of friendly names for ignored BCD settings
 
-This following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
+The following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
 > **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
 
 | Hex Value | Prefix | Friendly Name |
