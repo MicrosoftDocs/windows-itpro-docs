@@ -121,6 +121,8 @@ The following methodology was used to derive the network endpoints:
 | `www.bing.com`* | HTTP | Used for updates for Cortana, apps, and Live Tiles
 | `www.msftconnecttest.com` | HTTP | Network Connection (NCSI)
 | `www.office.com` | HTTPS | Microsoft Office
+| adl.windows.com | HTTP | Used for compatibility database updates for Windows
+| windows.policies.live.net | HTTP | OneDrive
 
 
 ## Windows 10 Pro
