@@ -96,6 +96,6 @@ Yes, if the drive is a data drive, you can unlock it from the **BitLocker Drive 
 Some drives cannot be encrypted with BitLocker. The reasons include insufficient disk size, an incompatible file system, the drive being a dynamic disk, or a drive being designated as the system partition. By default, the system drive (or system partition) is hidden from display. However, if it is not created as a hidden drive during the installation of the operating system was installed, due to a custom installation process, that drive might be displayed but cannot be encrypted.
 
 ## What types of disk configurations are supported by BitLocker?
-Any number of internal, fixed data drives can be protected with BitLocker. On some versions, ATA and SATA-based, direct-attached storage devices are also supported.
+Any number of internal, fixed data drives can be protected with BitLocker. On some versions, ATA and SATA-based, and direct-attached storage devices are also supported.
 
 
