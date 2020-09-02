@@ -25,13 +25,13 @@ ms.custom: bitlocker
 
 This topic for IT professionals describes the Boot Configuration Data (BCD) settings that are used by BitLocker.
 
-When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
+When protecting data at rest on an operating system volume, during the boot process, BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
 
 ## BitLocker and BCD Settings
 
 In Windows 7 and Windows Server 2008 R2, BitLocker validated BCD settings with the winload, winresume, and memtest prefixes to a large degree. However, this high degree of validation caused BitLocker to go into recovery mode for benign setting changes, for example, when applying a language pack, BitLocker would enter recovery mode.
 
-In Windows 8, Windows Server 2012, and subsequent versions, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If you believe that there is a risk in excluding a particular BCD setting from the validation profile, include that BCD setting in the BCD validation coverage to suit your validation preferences. 
+In Windows 8, Windows Server 2012, and later operating systems, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If you believe that there is a risk in excluding a particular BCD setting from the validation profile, include that BCD setting in the BCD validation coverage to suit your validation preferences. 
 If a default BCD setting is found to persistently trigger a recovery for benign changes, exclude that BCD setting from the validation coverage.
 
 ### When secure boot is enabled
