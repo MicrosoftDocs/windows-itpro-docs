@@ -259,4 +259,4 @@ Once a user has the extension and its companion app installed on their enterpris
 1. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
    ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge](images/app-guard-chrome-extension-launchIng-edge.png)
 1. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
-   ![The "New Application Guard Window" option is highlighted in red]()
+   ![The "New Application Guard Window" option is highlighted in red](images/app-guard-chrome-extension-new-app-guard-page.png)
