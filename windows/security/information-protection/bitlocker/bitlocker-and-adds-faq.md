@@ -38,7 +38,7 @@ If BitLocker is enabled on a drive before Group Policy has been applied to enfor
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
-The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, you would use the following command script from an elevated command prompt:
+The BitLocker Windows Management Instrumentation (WMI) interface allows administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, you would use the following command script from an elevated command prompt:
 
 ```PowerShell
 $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
@@ -59,7 +59,7 @@ Ultimately, determining whether a legitimate backup exists in AD DS requires qu
 
 ## If I change the BitLocker recovery password on my computer and store the new password in AD DS, will AD DS overwrite the old password?
 
-No. By design, BitLocker recovery password entries do not get deleted from AD DS; therefore, you might see multiple passwords for each drive. To identify the latest password, check the date on the object.
+No, by design, BitLocker recovery password entries do not get deleted from AD DS; therefore, you might see multiple passwords for each drive. To identify the latest password, check the date on the object.
 
 ## What happens if the backup initially fails? Will BitLocker retry the backup?
 
