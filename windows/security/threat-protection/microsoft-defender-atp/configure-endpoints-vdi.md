@@ -65,7 +65,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-    1. If you are not implementing a single entry for each device: copy WindowsDefenderATPOnboardingScript.cmd.
+    1. If you are not implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
 
     1. If you are implementing a single entry for each device: copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
     
