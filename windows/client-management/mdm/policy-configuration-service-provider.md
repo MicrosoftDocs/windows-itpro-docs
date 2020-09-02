@@ -383,6 +383,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_EncryptFilesonMove policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove" id="admx-encryptfilesonmove-noencryptonmove">ADMX_EncryptFilesonMove/NoEncryptOnMove</a>
+  </dd>
+</dl>
+
 ### ADMX_EventForwarding policies
 
 <dl>
@@ -391,6 +398,66 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-eventforwarding.md#admx_eventforwarding-subscriptionmanager" id="admx_eventforwarding-subscriptionmanager">ADMX_EventForwarding/SubscriptionManager</a>
+  </dd>
+</dl>
+
+### ADMX_FileServerVSSProvider policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-fileservervssprovider.md#admx-fileservervssprovider-pol-encryptprotocol" id="admx-fileservervssprovider-pol-encryptprotocol">ADMX_FileServerVSSProvider/Pol_EncryptProtocol</a>
+  </dd>
+</dl>
+
+### ADMX_FileSys policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disablecompression" id="admx-filesys-disablecompression">ADMX_FileSys/DisableCompression</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disabledeletenotification" id="admx-filesys-disabledeletenotification">ADMX_FileSys/DisableDeleteNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disableencryption" id="admx-filesys-disableencryption">ADMX_FileSys/DisableEncryption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-enablepagefileencryption" id="admx-filesys-enablepagefileencryption">ADMX_FileSys/EnablePagefileEncryption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-longpathsenabled" id="admx-filesys-longpathsenabled">ADMX_FileSys/LongPathsEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-shortnamecreationsettings" id="admx-filesys-shortnamecreationsettings">ADMX_FileSys/ShortNameCreationSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-symlinkevaluation" id="admx-filesys-symlinkevaluation">ADMX_FileSys/SymlinkEvaluation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-txfdeprecatedfunctionality" id="admx-filesys-txfdeprecatedfunctionality">ADMX_FileSys/TxfDeprecatedFunctionality</a>
+  </dd>
+</dl>
+
+### ADMX_FolderRedirection policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpin" id="admx-folderredirection-disablefradminpin">ADMX_FolderRedirection/DisableFRAdminPin</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpinbyfolder" id="admx-folderredirection-disablefradminpinbyfolder">ADMX_FolderRedirection/DisableFRAdminPinByFolder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-folderredirectionenablecacherename" id="admx-folderredirection-folderredirectionenablecacherename">ADMX_FolderRedirection/FolderRedirectionEnableCacheRename</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-localizexprelativepaths-1" id="admx-folderredirection-localizexprelativepaths-1">ADMX_FolderRedirection/LocalizeXPRelativePaths_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-localizexprelativepaths-2" id="admx-folderredirection-localizexprelativepaths-2">ADMX_FolderRedirection/LocalizeXPRelativePaths_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-1" id="admx-folderredirection-primarycomputer-fr-1">ADMX_FolderRedirection/PrimaryComputer_FR_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-2" id="admx-folderredirection-primarycomputer-fr-2">ADMX_FolderRedirection/PrimaryComputer_FR_2</a>
   </dd>
 </dl>
 
