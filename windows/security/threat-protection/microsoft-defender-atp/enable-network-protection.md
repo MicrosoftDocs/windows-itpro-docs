@@ -28,7 +28,7 @@ Check if network protection has been enabled on a local device by using Registry
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
 1. Choose **HKEY_LOCAL_MACHINE** from the side menu
-1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** **Windows Defender** > **Policy Manager**
+1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Policy Manager**
 1. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
     * 0, or **Off**
@@ -41,7 +41,7 @@ Enable network protection by using any of these methods:
 
 * [PowerShell](#powershell)
 * [Microsoft Intune](#intune)
-* [Mobile Device Management (MDM)](#mobile-device-management-mmd)
+* [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 
@@ -80,7 +80,7 @@ Enable network protection by using any of these methods:
 
 6. Select the profile called **Assignments**, assign to **All Users & All Devices**, and **Save**.
 
-### Mobile Device Management (MMD)
+### Mobile Device Management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 

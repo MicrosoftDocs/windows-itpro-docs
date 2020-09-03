@@ -39,7 +39,8 @@ To create a new GPO
 
 4. In the **Name** text box, type the name for your new GPO.
 
-   >**Note:**  Be sure to use a name that clearly indicates the purpose of the GPO. Check to see if your organization has a naming convention for GPOs.
+   > [!NOTE]
+   > Be sure to use a name that clearly indicates the purpose of the GPO. Check to see if your organization has a naming convention for GPOs.
 
 5. Leave **Source Starter GPO** set to **(none)**, and then click **OK**.
 

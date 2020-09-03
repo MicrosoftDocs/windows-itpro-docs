@@ -81,7 +81,7 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
  
 #### [Device control]()
-##### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+##### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
 
 
@@ -91,7 +91,7 @@
 ##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
 ##### [Customize exploit protection](microsoft-defender-atp/customize-exploit-protection.md)
 ##### [Import, export, and deploy exploit protection configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
-
+##### [Exploit protection reference](microsoft-defender-atp/exploit-protection-reference.md )
 
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)

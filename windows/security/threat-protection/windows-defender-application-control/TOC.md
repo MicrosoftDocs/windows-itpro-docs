@@ -1,6 +1,7 @@
 # [Application Control for Windows](windows-defender-application-control.md)
 ## [WDAC and AppLocker Overview](wdac-and-applocker-overview.md)
 ### [WDAC and AppLocker Feature Availability](feature-availability.md)
+### [Virtualization-based code integrity](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 
 ## [WDAC design guide](windows-defender-application-control-design-guide.md)
@@ -41,7 +42,8 @@
 
 
 ## [Windows Defender Application Control operational guide](windows-defender-application-control-operational-guide.md)
-### [Understanding Application Control events](event-id-explanations.md)
+### [Understanding Application Control event IDs](event-id-explanations.md)
+### [Understanding Application Control event tags](event-tag-explanations.md)
 ### [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
