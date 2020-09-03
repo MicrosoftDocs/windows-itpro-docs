@@ -461,6 +461,38 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Help policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-disablehhdep" id="admx-help-disablehhdep">ADMX_Help/DisableHHDEP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-helpqualifiedrootdir-comp" id="admx-help-helpqualifiedrootdir-comp">ADMX_Help/HelpQualifiedRootDir_Comp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp" id="admx-help-restrictrunfromhelp">ADMX_Help/RestrictRunFromHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp-comp" id="admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
+  </dd>
+</dl>
+
+### ADMX_HelpAndSupport policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-activehelp" id="admx-helpandsupport-activehelp">ADMX_HelpAndSupport/ActiveHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpexplicitfeedback" id="admx-helpandsupport-hpexplicitfeedback">ADMX_HelpAndSupport/HPExplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpimplicitfeedback" id="admx-helpandsupport-hpimplicitfeedback">ADMX_HelpAndSupport/HPImplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hponlineassistance" id="admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
