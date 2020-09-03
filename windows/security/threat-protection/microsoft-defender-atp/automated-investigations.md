@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm
+ms.custom: AIR
 ---
 
 # Overview of automated investigations
