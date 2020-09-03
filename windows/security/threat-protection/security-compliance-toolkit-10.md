@@ -45,7 +45,7 @@ The Security Compliance Toolkit consists of:
     - Microsoft 365 Apps for enterprise (Sept 2019)
 
 - Microsoft Edge security baseline
-    - Version 80
+    - Version 85
 
 - Tools
     - Policy Analyzer tool
