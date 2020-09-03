@@ -81,29 +81,29 @@ This event generates every time a new process starts.
 
 -   1 - Windows Server 2012 R2, Windows 8.1.
 
-    -   Added “Process Command Line” field.
+    -   Added "Process Command Line" field.
 
 -   2 - Windows 10.
 
     -   **Subject** renamed to **Creator Subject**.
 
-    -   Added “**Target Subject**” section.
+    -   Added "**Target Subject**" section.
 
-    -   Added “**Mandatory Label**” field.
+    -   Added "**Mandatory Label**" field.
 
-    -   Added “**Creator Process Name**” field.
+    -   Added "**Creator Process Name**" field.
 
 ***Field Descriptions:***
 
 **Creator Subject** \[Value for versions 0 and 1 – **Subject**\]**:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested the “create process” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested the "create process" operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
--   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the “create process” operation.
+-   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the "create process" operation.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject's domain or computer name. Formats vary, and include the following:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -111,11 +111,11 @@ This event generates every time a new process starts.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is "NT AUTHORITY".
 
-    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
+    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: "Win81".
 
--   **Logon ID** \[Type = HexInt64\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, “[4624](event-4624.md): An account was successfully logged on.”
+-   **Logon ID** \[Type = HexInt64\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, "[4624](event-4624.md): An account was successfully logged on."
 
 **Target Subject** \[Version 2\]**:**
 
@@ -127,7 +127,7 @@ This event generates every time a new process starts.
 
 -   **Account Name** \[Type = UnicodeString\] \[Version 2\]**:** the name of the target account.
 
--   **Account Domain** \[Type = UnicodeString\] \[Version 2\]**:** target account’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\] \[Version 2\]**:** target account's domain or computer name. Formats vary, and include the following:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -135,11 +135,11 @@ This event generates every time a new process starts.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is "NT AUTHORITY".
 
-    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
+    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: "Win81".
 
--   **Logon ID** \[Type = HexInt64\] \[Version 2\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, “[4624](event-4624.md): An account was successfully logged on.”
+-   **Logon ID** \[Type = HexInt64\] \[Version 2\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, "[4624](event-4624.md): An account was successfully logged on."
 
 **Process Information:**
 
@@ -173,11 +173,11 @@ This event generates every time a new process starts.
 
 -   **Creator Process ID** \[Type = Pointer\]**:** hexadecimal Process ID of the process which ran the new process. If you convert the hexadecimal value to decimal, you can compare it to the values in Task Manager.
 
-> You can also correlate this process ID with a process ID in other events, for example, “[4688](event-4688.md): A new process has been created” **Process Information\\New Process ID**.
+> You can also correlate this process ID with a process ID in other events, for example, "[4688](event-4688.md): A new process has been created" **Process Information\\New Process ID**.
 
 -   **Creator Process Name** \[Version 2\] \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
 
--   **Process Command Line** \[Version 1, 2\] \[Type = UnicodeString\]**:** contains the name of executable and arguments which were passed to it. You must enable “Administrative Templates\\System\\Audit Process Creation\\Include command line in process creation events” group policy to include command line in process creation events:
+-   **Process Command Line** \[Version 1, 2\] \[Type = UnicodeString\]**:** contains the name of executable and arguments which were passed to it. You must enable "Administrative Templates\\System\\Audit Process Creation\\Include command line in process creation events" group policy to include command line in process creation events:
 
     <img src="images/group-policy.png" alt="Group policy illustration" width="490" height="448" />
 
@@ -189,28 +189,27 @@ For 4688(S): A new process has been created.
 
 | **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor all events with the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** that corresponds to the high-value account or accounts.                                                              |
-| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** (with other information) to monitor how or when a particular account is being used. |
-| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor all events with the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“Creator Subject\\Security ID”** and **“Target Subject\\Security ID”** for accounts that are outside the allow list.                                 |
-| **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** to see whether the account type is as expected. |
-| **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor the specific events for the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** corresponding to accounts from another domain or “external” accounts.                                        |
-| **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** that you are concerned about.                             |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor **“Creator Subject\\Security ID”** or **“Target Subject\\Security ID”** for names that don’t comply with naming conventions.                                                                                     |
+| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor all events with the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that corresponds to the high-value account or accounts.                                                              |
+| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** (with other information) to monitor how or when a particular account is being used. |
+| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor all events with the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that corresponds to the accounts that should never be used.                                                          |
+| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a "whitelist-only" action, review the **"Creator Subject\\Security ID"** and **"Target Subject\\Security ID"** for accounts that are outside the allow list.                                 |
+| **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** to see whether the account type is as expected. |
+| **External accounts**: You might be monitoring accounts from another domain, or "external" accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor the specific events for the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** corresponding to accounts from another domain or "external" accounts.                                        |
+| **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that you are concerned about.                             |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** for names that don't comply with naming conventions.                                                                                     |
 
-- If you have a pre-defined “**New** **Process Name**” or **“Creator Process Name**” for the process reported in this event, monitor all events with “**New** **Process Name**” or **“Creator Process Name**” not equal to your defined value.
+- If you have a pre-defined "**New** **Process Name**" or **"Creator Process Name**" for the process reported in this event, monitor all events with "**New** **Process Name**" or **"Creator Process Name**" not equal to your defined value.
 
-- You can monitor to see if “**New** **Process Name**” or **“Creator Process Name**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+- You can monitor to see if "**New** **Process Name**" or **"Creator Process Name**" is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
-- If you have a pre-defined list of restricted substrings or words in process names (for example “**mimikatz**” or “**cain.exe**”), check for these substrings in “**New** **Process Name**” or **“Creator Process Name**.”
+- If you have a pre-defined list of restricted substrings or words in process names (for example "**mimikatz**" or "**cain.exe**"), check for these substrings in "**New** **Process Name**" or **"Creator Process Name**."
 
 - It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<b>.</b> Typically this means that UAC is disabled for this account for some reason.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. Typically this means that UAC is disabled for this account for some reason.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn’t contain the $ symbol<b>.</b> This means that a user ran a program using administrative privileges.
+- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. This means that a user ran a program using administrative privileges.
 
 - You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
 
-- If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the “**Mandatory Label**” in this event.
-
+- If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the "**Mandatory Label**" in this event.
