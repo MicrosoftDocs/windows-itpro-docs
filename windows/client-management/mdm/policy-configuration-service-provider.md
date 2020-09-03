@@ -493,6 +493,28 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_kdc policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-cbacandarmor" id="admx-kdc-cbacandarmor">ADMX_kdc/CbacAndArmor</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-forestsearch" id="admx-kdc-forestsearch">ADMX_kdc/ForestSearch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-pkinitfreshness" id="admx-kdc-pkinitfreshness">ADMX_kdc/PKINITFreshness</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-requestcompoundid" id="admx-kdc-requestcompoundid">ADMX_kdc/RequestCompoundId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-ticketsizethreshold" id="admx-kdc-ticketsizethreshold">ADMX_kdc/TicketSizeThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-emitlili" id="admx-kdc-emitlili">ADMX_kdc/emitlili</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>

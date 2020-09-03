@@ -188,6 +188,7 @@
 #### [ADMX_FolderRedirection](policy-csp-admx-folderredirection.md)
 #### [ADMX_Help](policy-csp-admx-help.md)
 #### [ADMX_HelpAndSupport](policy-csp-admx-helpandsupport.md)
+#### [ADMX_kdc](policy-csp-admx-kdc.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
