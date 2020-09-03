@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.reviewer: ramarom, evaldm, isco, mabraitm
 ---
 
 # View details and results of automated investigations
