@@ -18,6 +18,8 @@ ms.collection:
 - m365solution-mcafeemigrate
 - m365solution-overview 
 ms.topic: article
+ms.date: 09/03/2020
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Migrate from McAfee to Microsoft Defender Advanced Threat Protection

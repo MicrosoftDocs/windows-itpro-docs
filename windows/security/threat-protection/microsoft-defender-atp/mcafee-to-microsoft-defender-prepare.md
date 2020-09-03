@@ -17,6 +17,8 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-mcafeemigrate
 ms.topic: article
+ms.date: 09/03/2020
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Migrate from McAfee - Phase 1: Prepare for your migration
