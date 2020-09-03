@@ -10,11 +10,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
+ms.date: 09/03/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ms.reviewer: ramarom, evaldm, isco, mabraitm
 ---
 
 # Overview of automated investigations
