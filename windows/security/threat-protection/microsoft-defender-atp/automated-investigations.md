@@ -72,19 +72,21 @@ You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|**Full - remediate threats automatically** | All remediation actions are performed automatically.<br/><br/>*This option is selected by default for Microsoft Defender ATP tenants created on or after August 16, 2020.*|
+|**Full - remediate threats automatically** | All remediation actions are performed automatically.<br/><br/>***This option is recommended** and is selected by default for Microsoft Defender ATP tenants created on or after August 16, 2020, and have no device groups defined. <br/>If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Full - remediate threats automatically**.*|
 |**Semi - require approval for core folders remediation** | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br/><br/> Files or executables in all other folders are automatically remediated, if needed.|
 |**Semi - require approval for non-temp folders remediation** | An approval is required on files or executables that are not in temporary folders. <br/><br/> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, are automatically be remediated (if needed).|
-|**Semi - require approval for any remediation** | An approval is needed for any remediation action. <br/><br/>*This option is selected by default for Microsoft Defender ATP tenants created before August 16, 2020.*|
-|**No automated response** | Devices do not get any automated investigations run on them. <br/><br/>*This option is not recommended, because it fully disables automated investigation and remediation capabilities, and reduces the security posture of your organization's devices.* |
+|**Semi - require approval for any remediation** | An approval is needed for any remediation action. <br/><br/>*This option is selected by default for Microsoft Defender ATP tenants created before August 16, 2020, and have no device groups defined. <br/>If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Semi - require approval for any remediation**.*|
+|**No automated response** | Devices do not get any automated investigations run on them. <br/><br/>***This option is not recommended**, because it fully disables automated investigation and remediation capabilities, and reduces the security posture of your organization's devices.* |
 
 
 > [!IMPORTANT]
 > A few points of clarification regarding automation levels and default settings:
-> - If your tenant already has device groups defined, the automation level settings are not changed.
-> - If your tenant was onboarded to Microsoft Defender ATP before August 16, 2020, your organization's first device group is set to **Semi - require approval for any remediation** by default. 
-> - If your tenant is onboarded on or after August 16, 2020, when your organization's first device group is set to **Full - remediate threats automatically**.
-> - To change an automation level, edit your [device groups](configure-automated-investigations-remediation.md#set-up-device-groups).
+> - If your tenant already has device groups defined, the automation level settings are not changed for those device groups.
+> - If your tenant was onboarded to Microsoft Defender ATP *before* August 16, 2020, and you have not defined a device group, your organization's default setting is **Semi - require approval for any remediation**.
+> - If your tenant was onboarded to Microsoft Defender ATP *before* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Semi - require approval for any remediation**. 
+> - If your tenant was onboarded to Microsoft Defender ATP *on or after* August 16, 2020, and you have not defined a device group, your orgnaization's default setting is **Full - remediate threats automatically**.
+> - If your tenant was onboarded to Microsoft Defender ATP *on or after* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Full - remediate threats automatically**.
+> - To change an automation level, **[edit your device groups](configure-automated-investigations-remediation.md#set-up-device-groups)**.
 
 
 ### A few points to keep in mind
