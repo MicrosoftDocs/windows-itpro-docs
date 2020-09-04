@@ -1,6 +1,6 @@
 ---
-title: Migrate from Symantec to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+title: Migrate from McAfee to Microsoft Defender ATP
+description: Make the switch from McAfee to Microsoft Defender ATP. Read this article for an overview.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,26 +15,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-symantecmigrate
+- m365solution-mcafeemigrate
 - m365solution-overview 
 ms.topic: conceptual
-ms.date: 09/04/2020
-ms.reviewer: depicker, yongrhee, chriggs
+ms.date: 09/03/2020
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection
+# Migrate from McAfee to Microsoft Defender Advanced Threat Protection
 
-If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration.  
+If you are planning to switch from McAfee Endpoint Security (McAfee) to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## The migration process
 
-When you switch from Symantec to Microsoft Defender ATP, you follow a process that can be divided into three phases, as described in the following table:
+When you switch from McAfee to Microsoft Defender ATP, you follow a process that can be divided into three phases, as described in the following table:
 
 |Phase |Description |
 |--|--|
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During the **Prepare** phase, you get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender ATP. |
-|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md) |During the **Setup** phase, you configure settings and exclusions for Microsoft Defender Antivirus, Microsoft Defender ATP, and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
-|[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md) |During the **Onboard** phase, you onboard your devices to Microsoft Defender ATP and verify that those devices are communicating with Microsoft Defender ATP. Last, you uninstall Symantec and make sure protection through Microsoft Defender ATP is in active mode. |
+|[![Phase 1: Prepare](images/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Prepare for your migration](mcafee-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](mcafee-to-microsoft-defender-prepare.md), you update your organization's devices, get Microsoft Defender ATP, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender ATP. |
+|[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Set up Microsoft Defender ATP](mcafee-to-microsoft-defender-setup.md) |During [the **Setup** phase](mcafee-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender ATP, and McAfee. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
+|[![Phase 3: Onboard](images/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Onboard to Microsoft Defender ATP](mcafee-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](mcafee-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender ATP and verify that those devices are communicating with Microsoft Defender ATP. Last, you uninstall McAfee and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender ATP is in active mode. |
 
 ## What's included in Microsoft Defender ATP?
 
@@ -42,7 +42,7 @@ In this migration guide, we focus on [next-generation protection](https://docs.m
 
 | Feature/Capability | Description |
 |---|---|
-| [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & Vulnerability Management capabilities helps identify, assess, and remediate weaknesses across your endpoints (such as devices). |
+| [Threat & vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & vulnerability management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices). |
 | [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) | Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks. |
 | [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware. |
 | [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) | Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.  |
@@ -55,4 +55,4 @@ In this migration guide, we focus on [next-generation protection](https://docs.m
 
 ## Next step
 
-- Proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
+- Proceed to [Prepare for your migration](mcafee-to-microsoft-defender-prepare.md).
