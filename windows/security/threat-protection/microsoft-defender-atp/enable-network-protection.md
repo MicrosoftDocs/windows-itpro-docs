@@ -22,7 +22,7 @@ manager: dansimp
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
 
-[Learn more about network filtering configuration options](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Learn more about network filtering configuration options](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## Check if network protection is enabled
 
