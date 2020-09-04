@@ -46,7 +46,7 @@ ms.topic: conceptual
 > `mdatp --health` will be replaced with `mdatp health` in a future product update.
 
 - Fixed a bug where automatic sample submission was not marked as managed in the user interface
-- Added new settings for controlling the retention of items in the antivirus threat history. You can now [specify the number of days to retain items in the threat history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
 - Bug fixes
 
 ## 101.06.63
