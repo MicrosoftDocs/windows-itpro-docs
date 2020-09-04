@@ -172,3 +172,11 @@ To understand why it is not enabled in Enterprise mode, check the status of the 
 For CSP (Intune) you can query the status node by using **Get**. This is described in the [Application Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp). On this page, you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
 
 For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP** Status. The meaning of each bit is the same as the CSP.
+
+### I'm encountering TCP fragmentation issue, and cannot enable my VPN connection. How do I fix this?
+
+WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix through these steps:
+
+a.	Ensure that the FragmentAware DWORD is set to 1 in this registry settings: "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\Winnat"
+
+b.	Reboot.
