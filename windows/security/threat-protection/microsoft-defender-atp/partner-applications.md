@@ -31,6 +31,36 @@ The support for third-party solutions help to further streamline, integrate, and
 
 Microsoft Defender ATP seamlessly integrates with existing security solutions - providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
 
+## Supported partner applications
+
+Partner name   | Description |Category 
+:---|:---|:---
+|AzureSentinel | Stream alerts from Microsoft Defender Advanced Threat Protection into Azure Sentinel |Security information and analytics 
+|Elastic Security | Elastic Security is a free and open solution for preventing, detecting, and responding to threats.|Security information and analytics 
+|AttackIQ Platform | AttackIQ Platform validates MDATP is configured properly by launching continuous attacks safely on production assets|Security information and analytics 
+|Skybox® Vulnerability Control | Skybox® Vulnerability Control cuts through the noise of vulnerability management, correlating business, network threat context to uncover your riskiest vulnerabilities.|Security information and analytics
+| Splunk | The Microsoft Defender ATP Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk |Security information and analytics 
+|IBM QRadar | Configure IBM QRadar to collect detections from Microsoft Defender ATP |Security information and analytics 
+|Cymulate | Correlate Defender ATP findings with simulated attacks to validate accurate detection and effective response actions |Security information and analytics 
+| HP ArcSight |Use HP ArcSight to pull Microsoft Defender ATP detections |Security information and analytics 
+|SafeBreach | Gain visibility into Microsoft Defender ATP security events that are automatically correlated with SafeBreach simulations|Security information and analytics 
+| RSA NetWitness| Steam Microsoft Defender ATP Alerts to RSA NetWitness leveraging Microsoft Graph Security API|Security information and analytics 
+| XM Cyber| Prioritize your response to an alert based on risk factors and high value assets.|Security information and analytics 
+ Demisto, a Palo Alto Networks Company|Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response|Orchestration and automation
+ |||Orchestration and automation
+ |||Orchestration and automation
+ |||Orchestration and automation
+ |||Orchestration and automation
+ |||Orchestration and automation
+ |||Orchestration and automation
+Palo Alto Networks |Enrich your endpoint protection by extending Autofocus and other threat feeds to Microsoft Defender ATP using MineMeld|Threat intelligence  
+ThreatConnect | Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Microsoft Defender ATP connectors |Threat intelligence  
+MISP (Malware Information Sharing Platform) | Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Microsoft Defender ATP environment| Threat intelligence  
+ |||Network security
+ ||| Cross platform
+||| Additional integrations 
+ ||| Manages security service providers
+
 ## SIEM integration
 Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
 
