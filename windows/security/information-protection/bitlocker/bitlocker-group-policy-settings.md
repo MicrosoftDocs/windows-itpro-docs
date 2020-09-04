@@ -1550,7 +1550,7 @@ This policy is only applicable to computers running Windows Server 2008 or Windo
 
 Two recovery options can be used to unlock BitLocker-encrypted data in the absence of the required startup key information. Users can type a 48-digit numerical recovery password, or they can insert a USB drive that contains a 256-bit recovery key.
 
-Saving the recovery password to a USB drive stores the 48-digit recovery password as a text file and the 256-bit recovery key as a hidden file. Saving it to a folder stores the 48-digit recovery password as a text file. Printing it sends the 48-digit recovery password to the default printer. For example, not allowing the 48-digit recovery password prevents users from printing or saving recovery information to a folder.
+Saving the recovery password to a USB drive stores the 48-digit recovery password as a text file and the 256-bit recovery key as a hidden file. Saving the recovery password to a folder stores the 48-digit recovery password as a text file. Printing the recovery password sends the 48-digit recovery password to the default printer. For example, not allowing the 48-digit recovery password prevents users from printing or saving recovery information to a folder.
 
 > **Important:**  If TPM initialization is performed during the BitLocker setup, TPM owner information is saved or printed with the BitLocker recovery information.
 > The 48-digit recovery password is not available in FIPS-compliance mode.
@@ -1695,7 +1695,7 @@ This policy setting is used to configure recovery methods for fixed data drives.
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>You can control the methods that are available to users to recover data from BitLocker-protected fixed data drives.</p></td>
+<td align="left"><p>You can control the methods that are available for users to recover data from BitLocker-protected fixed data drives.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -1710,12 +1710,12 @@ This policy setting is applied when you turn on BitLocker.
 
 The **Allow data recovery agent** check box is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used, it must be added from **Public Key Policies**, which is located in the Group Policy Management Console (GPMC) or in the Local Group Policy Editor.
 
-In **Configure user storage of BitLocker recovery information**, select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
+In **Configure user storage of BitLocker recovery information**, select whether users can be allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
 Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you cannot specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for the drive are determined by the policy setting.
 
-In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS.
-Storing the key package supports recovering data from a drive that has been physically corrupted. To recover this data, you can use the **Repair-bde** command-line tool. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
+In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information is to be stored in AD DS for fixed data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS.
+Storing the key package supports recovery of data from a drive that has been physically corrupted. To recover this data, you can use the **Repair-bde** command-line tool. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
 
 For more information about the BitLocker repair tool, see [Repair-bde](https://technet.microsoft.com/library/ff829851.aspx).
 
@@ -1756,7 +1756,7 @@ This policy setting is used to configure recovery methods for removable data dri
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>You can control the methods that are available to users to recover data from BitLocker-protected removable data drives.</p></td>
+<td align="left"><p>You can control the methods that are available for users to recover data from BitLocker-protected removable data drives.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -1771,11 +1771,11 @@ This policy setting is applied when you turn on BitLocker.
 
 The **Allow data recovery agent** check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used, it must be added from **Public Key Policies** , which is accessed using the GPMC or the Local Group Policy Editor.
 
-In **Configure user storage of BitLocker recovery information**, select whether users are allowed, required, or not allowed to generate a 48-digit recovery password.
+In **Configure user storage of BitLocker recovery information**, select whether users can be allowed, required, or not allowed to generate a 48-digit recovery password.
 
 Select **Omit recovery options from the BitLocker setup wizard** to prevent users from specifying recovery options when they enable BitLocker on a drive. This means that you cannot specify which recovery option to use when you enable BitLocker. Instead, BitLocker recovery options for the drive are determined by the policy setting.
 
-In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information to store in AD DS for removable data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
+In **Save BitLocker recovery information to Active Directory Domain Services**, choose which BitLocker recovery information is to be stored in AD DS for removable data drives. If you select **Backup recovery password and key package**, the BitLocker recovery password and the key package are stored in AD DS. If you select **Backup recovery password only**, only the recovery password is stored in AD DS.
 
 Select the **Do not enable BitLocker until recovery information is stored in AD DS for removable data drives** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
@@ -1817,7 +1817,7 @@ This policy setting is used to configure the entire recovery message and to repl
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
-<td align="left"><p>If the setting has not been previously enabled the default pre-boot recovery screen is displayed for BitLocker recovery. If the setting previously was enabled and is subsequently disabled the last message in Boot Configuration Data (BCD) is displayed whether it was the default recovery message or the custom message.</p></td>
+<td align="left"><p>If the setting has not been previously enabled, the default pre-boot recovery screen is displayed for BitLocker recovery. If the setting was previously enabled and is subsequently disabled, the last message in Boot Configuration Data (BCD) is displayed whether it was the default recovery message or the custom message.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1826,19 +1826,19 @@ This policy setting is used to configure the entire recovery message and to repl
 
 Enabling the **Configure the pre-boot recovery message and URL** policy setting allows you to customize the default recovery screen message and URL to assist customers in recovering their key.
 
-Once you enable the setting you have three options:
+Once you enable the setting, you have three options:
 
 -   If you select the **Use default recovery message and URL** option, the default BitLocker recovery message and URL will be displayed on the pre-boot recovery screen.
 -   If you select the **Use custom recovery message** option, type the custom message in the **Custom recovery message option** text box. The message that you type in the **Custom recovery message option** text box will be displayed on the pre-boot recovery screen. If a recovery URL is available, include it in the message.
 -   If you select the **Use custom recovery URL** option, type the custom message URL in the **Custom recovery URL option** text box. The URL that you type in the **Custom recovery URL option** text box replaces the default URL in the default recovery message, which will be displayed on the pre-boot recovery screen.
 
-> **Important:**  Not all characters and languages are supported in the pre-boot environment. We strongly recommended that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
+> **Important:**  Not all characters and languages are supported in the pre-boot environment. We strongly recommend that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
 > 
-> **Important:**  Because you can alter the BCDEdit commands manually before you have set Group Policy settings, you cannot return the policy setting to the default setting by selecting the **Not Configured** option after you have configured this policy setting. To return to the default pre-boot recovery screen leave the policy setting enabled and select the **Use default message** options from the **Choose an option for the pre-boot recovery message** drop-down list box.
+> **Important:**  Because you can alter the BCDEdit commands manually before you have set group policy settings, you cannot return the policy setting to the default setting by selecting the **Not Configured** option after you have configured this policy setting. To return to the default pre-boot recovery screen, leave the policy setting enabled and select the **Use default message** options from the **Choose an option for the pre-boot recovery message** drop-down list box.
 
-### <a href="" id="bkmk-secboot"></a>Allow Secure Boot for integrity validation
+### <a href="" id="bkmk-secboot"></a>Allow secure boot for integrity validation
 
-This policy controls how BitLocker-enabled system volumes are handled in conjunction with the Secure Boot feature. Enabling this feature forces Secure Boot validation during the boot process and verifies Boot Configuration Data (BCD) settings according to the Secure Boot policy.
+This policy controls how BitLocker-enabled system volumes are handled in conjunction with the secure boot feature. Enabling this feature forces secure boot validation during the boot process and verifies Boot Configuration Data (BCD) settings according to the secure boot policy.
 
 <table>
 <colgroup>
@@ -1848,7 +1848,7 @@ This policy controls how BitLocker-enabled system volumes are handled in conjunc
 <tbody>
 <tr class="odd">
 <td align="left"><p><b>Policy description</b></p></td>
-<td align="left"><p>With this policy setting, you can configure whether Secure Boot will be allowed as the platform integrity provider for BitLocker operating system drives.</p></td>
+<td align="left"><p>With this policy setting, you can configure whether secure boot will be allowed as the platform integrity provider for BitLocker operating system drives.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>Introduced</b></p></td>
@@ -1864,24 +1864,24 @@ This policy controls how BitLocker-enabled system volumes are handled in conjunc
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
-<td align="left"><p>If you enable <b>Allow Secure Boot for integrity validation</b>, make sure the <b>Configure TPM platform validation profile for native UEFI firmware configurations</b> Group Policy setting is not enabled or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation.</p>
+<td align="left"><p>If you enable <b>Allow Secure Boot for integrity validation</b>, make sure the <b>Configure TPM platform validation profile for native UEFI firmware configurations</b> group policy setting is not enabled or include PCR 7 to allow BitLocker to use secure boot for platform or BCD integrity validation.</p>
 <p>For more information about PCR 7, see <a href="#bkmk-pcr" data-raw-source="[Platform Configuration Register (PCR)](#bkmk-pcr)">Platform Configuration Register (PCR)</a> in this topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled or not configured</b></p></td>
-<td align="left"><p>BitLocker uses Secure Boot for platform integrity if the platform is capable of Secure Boot-based integrity validation.</p></td>
+<td align="left"><p>BitLocker uses secure boot for platform integrity if the platform is capable of secure boot-based integrity validation.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled</b></p></td>
-<td align="left"><p>BitLocker uses legacy platform integrity validation, even on systems that are capable of Secure Boot-based integrity validation.</p></td>
+<td align="left"><p>BitLocker uses legacy platform integrity validation even on systems that are capable of secure boot-based integrity validation.</p></td>
 </tr>
 </tbody>
 </table>
 
 <b>Reference</b>
 
-Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. Secure Boot also provides more flexibility for managing preboot configurations than BitLocker integrity checks prior to Windows Server 2012 and Windows 8.
-When this policy is enabled and the hardware is capable of using Secure Boot for BitLocker scenarios, the **Use enhanced Boot Configuration Data validation profile** Group Policy setting is ignored, and Secure Boot verifies BCD settings according to the Secure Boot policy setting, which is configured separately from BitLocker.
+Secure boot ensures that the computer's pre-boot environment loads only firmware that is digitally signed by authorized software publishers. Secure boot also started providing more flexibility for managing pre-boot configurations than BitLocker integrity checks prior to Windows Server 2012 and Windows 8.
+When this policy is enabled and the hardware is capable of using secure boot for BitLocker scenarios, the **Use enhanced Boot Configuration Data validation profile** group policy setting is ignored, and secure boot verifies BCD settings according to the secure boot policy setting, which is configured separately from BitLocker.
 
 >**Warning:**  Disabling this policy might result in BitLocker recovery when manufacturer-specific firmware is updated. If you disable this policy, suspend BitLocker prior to applying firmware updates.
 
@@ -1913,7 +1913,7 @@ This policy setting is used to establish an identifier that is applied to all dr
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
-<td align="left"><p>Identification fields are required to manage certificate-based data recovery agents on BitLocker-protected drives. BitLocker manages and updates certificate-based data recovery agents only when the identification field is present on a drive and it is identical to the value that is configured on the computer.</p></td>
+<td align="left"><p>Identification fields are required to manage certificate-based data recovery agents on BitLocker-protected drives. BitLocker manages and updates certificate-based data recovery agents only when the identification field is present on a drive and its value is identical to the value that is configured on the computer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
@@ -1930,7 +1930,7 @@ This policy setting is used to establish an identifier that is applied to all dr
 
 These identifiers are stored as the identification field and the allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives, and it can be updated on existing BitLocker-protected drives by using the [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx) command-line tool.
 
-An identification field is required to manage certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker manages and updates data recovery agents only when the identification field on the drive matches the value that is configured in the identification field. In a similar manner, BitLocker updates the BitLocker To Go Reader only when the identification field on the drive matches the value that is configured for the identification field.
+An identification field is required to manage certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker manages and updates data recovery agents only when the identification field on the drive matches the value that is configured in the identification field. In a similar manner, BitLocker updates the BitLocker To Go Reader only when the identification field's value on the drive matches the value that is configured for the identification field.
 
 For more information about the tool to manage BitLocker, see [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx).
 
@@ -1938,9 +1938,9 @@ The allowed identification field is used in combination with the **Deny write ac
 
 You can configure the identification fields on existing drives by using the [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx) command-line tool.
 
-When a BitLocker-protected drive is mounted on another BitLocker-enabled computer, the identification field and the allowed identification field are used to determine whether the drive is from an outside organization.
+When a BitLocker-protected drive is mounted on another BitLocker-enabled computer, the identification field and the allowed identification field are used to determine whether the drive is from an external organization.
 
-Multiple values separated by commas can be entered in the identification and allowed identification fields. The identification field can be any value up to 260 characters.
+Multiple values separated by commas can be entered in the identification and allowed identification fields. The identification field can be any value upto 260 characters.
 
 ### <a href="" id="bkmk-depopt2"></a>Prevent memory overwrite on restart
 
@@ -1989,7 +1989,7 @@ This policy setting is applied when you turn on BitLocker. BitLocker secrets inc
 
 ### <a href="" id="bkmk-tpmbios"></a>Configure TPM platform validation profile for BIOS-based firmware configurations
 
-This policy setting determines what values the TPM measures when it validates early boot components before it unlocks an operating system drive on a computer with a BIOS configuration or with UEFI firmware that has the Compatibility Support Module (CSM) enabled.
+This policy setting determines the values that are measured by TPM when it validates early boot components before it unlocks an operating system drive on a computer with a BIOS configuration or with UEFI firmware that has the Compatibility Support Module (CSM) enabled.
 
 <table>
 <colgroup>
@@ -2019,7 +2019,7 @@ This policy setting determines what values the TPM measures when it validates ea
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>You can configure the boot components that the TPM validates before unlocking access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and requires that the recovery password or the recovery key is provided to unlock the drive.</p></td>
+<td align="left"><p>You can configure the boot components that are validated by the TPM before unlocking access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and makes it mandatory to provide the recovery password or the recovery key to unlock the drive.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -2032,7 +2032,7 @@ This policy setting determines what values the TPM measures when it validates ea
 
 This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.
 
->**Important:**  This Group Policy setting only applies to computers with BIOS configurations or to computers with UEFI firmware with the CSM enabled. Computers that use a native UEFI firmware configuration store different values in the Platform Configuration Registers (PCRs). Use the **Configure TPM platform validation profile for native UEFI firmware configurations** Group Policy setting to configure the TPM PCR profile for computers that use native UEFI firmware.
+>**Important:**  This group policy setting only applies to computers with BIOS configurations or to computers with UEFI firmware with the CSM enabled. Computers that use a native UEFI firmware configuration store different values in the Platform Configuration Registers (PCRs). Use the **Configure TPM platform validation profile for native UEFI firmware configurations** group policy setting to configure the TPM PCR profile for computers that use native UEFI firmware.
 
 A platform validation profile consists of a set of PCR indices that range from 0 to 23. The default platform validation profile secures the encryption key against changes to the following:
 
@@ -2046,9 +2046,9 @@ A platform validation profile consists of a set of PCR indices that range from 0
 
 >**Note:**  Changing from the default platform validation profile affects the security and manageability of your computer. BitLocker’s sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
 
-The following list identifies all of the PCRs available:
+The following list identifies all of the available PCRs:
 
--   PCR 0: Core root-of-trust for measurement, BIOS, and Platform extensions
+-   PCR 0: Core root-of-trust for measurement, BIOS, and platform extensions
 -   PCR 1: Platform and motherboard configuration and data.
 -   PCR 2: Option ROM code
 -   PCR 3: Option ROM data and configuration
@@ -2064,7 +2064,7 @@ The following list identifies all of the PCRs available:
 
 ### <a href="" id="bkmk-depopt3"></a>Configure TPM platform validation profile (Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2)
 
-This policy setting determines what values the TPM measures when it validates early boot components before unlocking a drive on a computer running Windows Vista, Windows Server 2008, or Windows 7.
+This policy setting determines the values that are measured by the TPM when it validates early boot components before unlocking a drive on a computer running Windows Vista, Windows Server 2008, or Windows 7.
 
 <table>
 <colgroup>
@@ -2094,7 +2094,7 @@ This policy setting determines what values the TPM measures when it validates ea
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>You can configure the boot components that the TPM validates before unlocking access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and requires that the recovery password or the recovery key is provided to unlock the drive.</p></td>
+<td align="left"><p>You can configure the boot components that are validated by the TPM before it unlocks access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and makes it mandatory to provide the recovery password or the recovery key to unlock the drive.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -2119,7 +2119,7 @@ A platform validation profile consists of a set of PCR indices that range from 0
 
 >**Note:**  The default TPM validation profile PCR settings for computers that use an Extensible Firmware Interface (EFI) are the PCRs 0, 2, 4, and 11 only.
 
-The following list identifies all of the PCRs available:
+The following list identifies all of the available PCRs:
 
 -   PCR 0: Core root-of-trust for measurement, EFI boot and run-time services, EFI drivers embedded in system ROM, ACPI static tables, embedded SMM code, and BIOS code
 -   PCR 1: Platform and motherboard configuration and data. Hand-off tables and EFI variables that affect system configuration
@@ -2139,7 +2139,7 @@ The following list identifies all of the PCRs available:
 
 ### <a href="" id="bkmk-tpmvaluefi"></a>Configure TPM platform validation profile for native UEFI firmware configurations
 
-This policy setting determines what values the TPM measures when it validates early boot components before unlocking an operating system drive on a computer with native UEFI firmware configurations.
+This policy setting determines the values to be measured by the TPM when it validates early boot components before unlocking an operating system drive on a computer with native UEFI firmware configurations.
 
 <table>
 <colgroup>
@@ -2149,7 +2149,7 @@ This policy setting determines what values the TPM measures when it validates ea
 <tbody>
 <tr class="odd">
 <td align="left"><p><b>Policy description</b></p></td>
-<td align="left"><p>With this policy setting, you can configure how the computer&#39;s Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key.</p></td>
+<td align="left"><p>With this policy setting, you can configure how the computer&#39;s TPM security hardware secures the BitLocker encryption key.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>Introduced</b></p></td>
@@ -2165,13 +2165,13 @@ This policy setting determines what values the TPM measures when it validates ea
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
-<td align="left"><p>Setting this policy with PCR 7 omitted, overrides the <b>Allow Secure Boot for integrity validation</b> Group Policy setting, and it prevents BitLocker from using Secure Boot for platform or Boot Configuration Data (BCD) integrity validation.</p>
-<p>If your environments use TPM and Secure Boot for platform integrity checks, this policy should not be configured.</p>
+<td align="left"><p>Setting this policy with PCR 7 omitted results in an override of the <b>Allow Secure Boot for integrity validation</b> group policy setting, and this new setting prevents BitLocker from using secure boot for platform or Boot Configuration Data (BCD) integrity validation.</p>
+<p>If your environments use TPM and secure boot for platform integrity checks, this policy should not be configured.</p>
 <p>For more information about PCR 7, see <a href="#bkmk-pcr" data-raw-source="[Platform Configuration Register (PCR)](#bkmk-pcr)">Platform Configuration Register (PCR)</a> in this topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>Before you turn on BitLocker, you can configure the boot components that the TPM validates before it unlocks access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and requires that the recovery password or the recovery key is provided to unlock the drive.</p></td>
+<td align="left"><p>Before you turn on BitLocker, you can configure the boot components that are to be validated by the TPM before it unlocks access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and makes it mandatory to provide the recovery password or the recovery key to unlock the drive.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -2184,11 +2184,11 @@ This policy setting determines what values the TPM measures when it validates ea
 
 This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker is already turned on with TPM protection.
 
->**Important:**  This Group Policy setting only applies to computers with a native UEFI firmware configuration. Computers with BIOS or UEFI firmware with a Compatibility Support Module (CSM) enabled store different values in the Platform Configuration Registers (PCRs). Use the **Configure TPM platform validation profile for BIOS-based firmware configurations** Group Policy setting to configure the TPM PCR profile for computers with BIOS configurations or for computers with UEFI firmware with a CSM enabled.
+>**Important:**  This group policy setting only applies to computers with a native UEFI firmware configuration. Computers with BIOS or UEFI firmware with a Compatibility Support Module (CSM) enabled store different values in the Platform Configuration Registers (PCRs). Use the **Configure TPM platform validation profile for BIOS-based firmware configurations** group policy setting to configure the TPM PCR profile for computers with BIOS configurations or for computers with UEFI firmware with a CSM enabled.
 
-A platform validation profile consists of a set of Platform Configuration Register (PCR) indices ranging from 0 to 23. The default platform validation profile secures the encryption key against changes to the core system firmware executable code (PCR 0), extended or pluggable executable code (PCR 2), boot manager (PCR 4), and the BitLocker access control (PCR 11).
+A platform validation profile consists of a set of PCR indices ranging from 0 to 23. The default platform validation profile secures the encryption key against changes to the core system firmware executable code (PCR 0), extended or pluggable executable code (PCR 2), boot manager (PCR 4), and the BitLocker access control (PCR 11).
 
-The following list identifies all of the PCRs available:
+The following list identifies all of the available PCRs:
 
 -   PCR 0: Core System Firmware executable code
 -   PCR 1: Core System Firmware data
@@ -2214,7 +2214,7 @@ The following list identifies all of the PCRs available:
 
 ### <a href="" id="bkmk-resetrec"></a>Reset platform validation data after BitLocker recovery
 
-This policy setting determines if you want platform validation data to refresh when Windows is started following a BitLocker recovery. A platform validation data profile consists of the values in a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
+This policy setting determines if you want platform validation data to refresh when Windows is started following a BitLocker recovery. A platform validation data profile consists of the values in a set of PCR indices that range from 0 to 23.
 
 <table>
 <colgroup>
@@ -2263,7 +2263,7 @@ For more information about the recovery process, see the [BitLocker recovery gui
 
 ### <a href="" id="bkmk-enbcd"></a>Use enhanced Boot Configuration Data validation profile
 
-This policy setting determines specific Boot Configuration Data (BCD) settings to verify during platform validation. A platform validation uses the data in the platform validation profile, which consists of a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
+This policy setting determines specific Boot Configuration Data (BCD) settings to be verified during platform validation. A platform validation uses the data in the platform validation profile, which consists of a set of PCR indices that range from 0 to 23.
 
 <table>
 <colgroup>
@@ -2273,7 +2273,7 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 <tbody>
 <tr class="odd">
 <td align="left"><p><b>Policy description</b></p></td>
-<td align="left"><p>With this policy setting, you can specify Boot Configuration Data (BCD) settings to verify during platform validation.</p></td>
+<td align="left"><p>With this policy setting, you can specify Boot Configuration Data (BCD) settings to be verified during platform validation.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>Introduced</b></p></td>
@@ -2289,7 +2289,7 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
-<td align="left"><p>When BitLocker is using Secure Boot for platform and Boot Configuration Data integrity validation, the <b>Use enhanced Boot Configuration Data validation profile</b> Group Policy setting is ignored (as defined by the <b>Allow Secure Boot for integrity validation</b> Group Policy setting).</p></td>
+<td align="left"><p>When BitLocker is using Secure Boot for platform and BCD integrity validation, the <b>Use enhanced Boot Configuration Data validation profile</b> group policy setting is ignored (as defined by the <b>Allow Secure Boot for integrity validation</b> group policy setting).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
@@ -2308,11 +2308,11 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 
 <b>Reference</b>
 
->**Note:**  The setting that controls boot debugging (0x16000010) is always validated, and it has no effect if it is included in the inclusion or the exclusion list.
+>**Note:**  The setting that controls boot debugging (0x16000010) is always validated, and it has no effect if it is included in the inclusion or exclusion list.
 
 ### <a href="" id="bkmk-depopt4"></a>Allow access to BitLocker-protected fixed data drives from earlier versions of Windows
 
-This policy setting is used to control whether access to drives is allowed by using the BitLocker To Go Reader, and if the application is installed on the drive.
+This policy setting is used to control whether access to drives is allowed by using the BitLocker To Go Reader, and whether BitLocker To Go Reader can be installed on the drive.
 
 <table>
 <colgroup>
@@ -2357,6 +2357,8 @@ This policy setting is used to control whether access to drives is allowed by us
 
 When this policy setting is enabled, select the **Do not install BitLocker To Go Reader on FAT formatted fixed drives** check box to help prevent users from running BitLocker To Go Reader from their fixed drives. If BitLocker To Go Reader (bitlockertogo.exe) is present on a drive that does not have an identification field specified, or if the drive has the same identification field as specified in the **Provide unique identifiers for your organization** policy setting, the user is prompted to update BitLocker, and BitLocker To Go Reader is deleted from the drive. In this situation, for the fixed drive to be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2, BitLocker To Go Reader must be installed on the computer. If this check box is not selected, BitLocker To Go Reader will be installed on the fixed drive to enable users to unlock the drive on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2.
 
+**Question**: "If BitLocker To Go Reader (bitlockertogo.exe) is present on a drive that does not have an identification field specified, or if the drive has the same identification field as specified in the **Provide unique identifiers for your organization** policy setting". Does this sentence indicate that "BitLocker To Go Reader" may also be present on a dtive that has the same identification field as specified in the **Provide unique identifiers for your organization** policy setting?
+
 ### <a href="" id="bkmk-depopt5"></a>Allow access to BitLocker-protected removable data drives from earlier versions of Windows
 
 This policy setting controls access to removable data drives that are using the BitLocker To Go Reader and whether the BitLocker To Go Reader can be installed on the drive.
@@ -2393,7 +2395,7 @@ This policy setting controls access to removable data drives that are using the 
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled</b></p></td>
-<td align="left"><p>Removable data drives that are formatted with the FAT file system that are BitLocker-protected cannot be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2. BitLocker To Go Reader (bitlockertogo.exe) is not installed.</p></td>
+<td align="left"><p>Removable data drives that are formatted with the FAT file system and are BitLocker-protected cannot be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2. BitLocker To Go Reader (bitlockertogo.exe) is not installed.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2432,11 +2434,11 @@ You can configure the Federal Information Processing Standard (FIPS) setting for
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
-<td align="left"><p>Some applications, such as Terminal Services, do not support FIPS-140 on all operating systems.</p></td>
+<td align="left"><p>Some applications, such as terminal services, do not support FIPS-140 on all operating systems.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>Users will be unable to save a recovery password to any location. This includes AD DS and network folders. In addition, you cannot use WMI or the BitLocker Drive Encryption Setup wizard to create a recovery password.</p></td>
+<td align="left"><p>Users will be unable to save a recovery password to any location, including AD DS and network folders. In addition, you cannot use WMI or the BitLocker Drive Encryption Setup wizard to create a recovery password.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -2447,21 +2449,21 @@ You can configure the Federal Information Processing Standard (FIPS) setting for
 
 <b>Reference</b>
 
-This policy needs to be enabled before any encryption key is generated for BitLocker. Note that when this policy is enabled, BitLocker prevents creating or using recovery passwords, so recovery keys should be used instead.
+This policy needs to be enabled before any encryption key is generated for BitLocker. Note that when this policy is enabled, BitLocker prevents creating or using recovery passwords; therefore, recovery keys should be used, instead.
 
-You can save the optional recovery key to a USB drive. Because recovery passwords cannot be saved to AD DS when FIPS is enabled, an error is caused if AD DS backup is required by Group Policy.
+You can save the optional recovery key to a USB drive. Because recovery passwords cannot be saved to AD DS when FIPS is enabled, an error is caused if AD DS backup is required by group policy.
 
 You can edit the FIPS setting by using the Security Policy Editor (Secpol.msc) or by editing the Windows registry. You must be an administrator to perform these procedures.
 
 For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](https://technet.microsoft.com/library/jj852197.aspx).
 
-## Power management Group Policy settings: Sleep and Hibernate
+## Power management group policy settings: Sleep and Hibernate
 
 PCs default power settings for a computer will cause the computer to enter Sleep mode frequently to conserve power when idle and to help extend the system’s battery life. When a computer transitions to Sleep, open programs and documents are persisted in memory. When a computer resumes from Sleep, users are not required to re-authenticate with a PIN or USB startup key to access encrypted data. This might lead to conditions where data security is compromised.
 
-However, when a computer hibernates the drive is locked, and when it resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting does not have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
+However, when a computer hibernates, the drive is locked, and when the computer resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting does not have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
 
-You can use disable the following Group Policy settings, which are located in **Computer Configuration\\Administrative Templates\\System\\Power Management** to disable all available sleep states:
+You can use disable the following group policy settings, which are located in **Computer Configuration\\Administrative Templates\\System\\Power Management**, to disable all available sleep states:
 
 -   Allow Standby States (S1-S3) When Sleeping (Plugged In)
 -   Allow Standby States (S1-S3) When Sleeping (Battery)
@@ -2474,12 +2476,12 @@ Changing from the default platform validation profile affects the security and m
 
 **About PCR 7**
 
-PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can leverage Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4 which have the measurements of the exact firmware and Bootmgr images loaded. This
-reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides you with greater flexibility to manage the preboot configuration.
+PCR 7 measures the state of secure boot. With PCR 7, BitLocker can leverage secure boot for integrity validation. Secure boot ensures that the computer's pre-boot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether secure boot is on and which keys are trusted on the platform. If secure boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4 which have the measurements of the exact firmware and Bootmgr images loaded. This
+reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides you with greater flexibility to manage the pre-boot configuration.
 
 PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](https://msdn.microsoft.com/library/windows/hardware/jj923068.aspx).
 
-PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and Secure Boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
+PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and secure boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
 
 ## See also
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
