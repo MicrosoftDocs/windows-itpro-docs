@@ -13,6 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.date: 09/04/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -58,6 +59,44 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> August-2020 (Platform: 4.18.2008.3 | Engine: 1.1.17400.5)</summary>
+
+&ensp;Security intelligence update version: **1.323.9.0**  
+&ensp;Released: **August 27, 2020**  
+&ensp;Platform: **4.18.2008.3**  
+&ensp;Engine: **1.1.17400.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Add more telemetry events
+* Improved scan event telemetry
+* Improved behavior monitoring for memory scans
+* Improved macro streams scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</summary>
+
+&ensp;Security intelligence update version: **1.321.30.0**  
+&ensp;Released: **July 28, 2020**  
+&ensp;Platform: **4.18.2007.8**  
+&ensp;Engine: **1.1.17300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Improved telemetry for BITS
+* Improved Authenticode code signing certificate validation
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
 <summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
 
 &ensp;Security intelligence update version: **1.319.20.0**  
@@ -86,7 +125,7 @@ No known issues
 &ensp;Released: **May 26, 2020**  
 &ensp;Platform: **4.18.2005.4**  
 &ensp;Engine: **1.1.17100.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * Improved logging for scan events
@@ -108,7 +147,7 @@ No known issues
 &ensp;Released: **April 30, 2020**  
 &ensp;Platform: **4.18.2004.6**  
 &ensp;Engine: **1.1.17000.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * WDfilter improvements
