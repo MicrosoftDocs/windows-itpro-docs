@@ -68,6 +68,8 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 > [!TIP]
 > To learn more, see [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
+Proceed to the next task (reinstalling Microsoft Defender Antivirus).
+
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
 > [!NOTE]
