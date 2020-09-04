@@ -28,7 +28,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
 2. [Run a detection test](#run-a-detection-test).
