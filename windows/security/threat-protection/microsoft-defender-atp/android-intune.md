@@ -30,7 +30,7 @@ device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-co
 
 
 > [!NOTE]
-> **Microsoft Defender ATP for Android is now available on Google Play.**
+> **Microsoft Defender ATP for Android is now available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.** <br>
 > You can connect to Google Play from Intune to deploy Microsoft Defender ATP app across Device Administrator and Android Enterprise entrollment modes.
   Updates to the app are automatic via Google Play.
 
