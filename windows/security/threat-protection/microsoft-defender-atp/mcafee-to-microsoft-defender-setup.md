@@ -41,10 +41,32 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as McAfee. (To learn more about this, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).)
 
 This step of the migration process includes the following tasks:
+- [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server)
 - [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server);
--  [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+- [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
 - [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices); and
 - [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
+
+### Set DisableAntiSpyware to false on Windows Server
+
+The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee. In general, you should not have this registry key on your Windows devices and endpoints; however, here's how to make sure `DisableAntiSpyware` is set to false.
+
+1. On your Windows Server device, open Registry Editor.
+
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+
+3. In that folder, look for a DWORD entry called **DisableAntiSpyware**.
+
+   - If you do not see that entry, you're all set.
+
+   - If you do see **DisableAntiSpyware**, proceed to step 4.
+
+4. Right-click the DisableAntiSpyware DWORD, and then choose **Modify**.
+
+5. Set the value to `0`. (This sets the registry key's value to *false*.)
+
+> [!TIP]
+> To learn more, see [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
