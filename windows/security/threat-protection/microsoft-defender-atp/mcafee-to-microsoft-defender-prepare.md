@@ -46,9 +46,6 @@ Before you begin to prepare for Microsoft Defender ATP and Microsoft Defender An
 
 - [McAfee Knowledge Center Technical Article: Windows Security Center reports Endpoint Security is disabled when Endpoint Security is running](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
 
-> [!NOTE]
-> McAfee documentation links are included in this guide; however, Microsoft makes no warranties or promises for accuracy.
-
 ## Get Microsoft Defender ATP
 
 To get started, you must have Microsoft Defender ATP, with licenses assigned and provisioned.
