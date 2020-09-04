@@ -17,7 +17,9 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate
 - m365solution-overview 
-ms.topic: article
+ms.topic: conceptual
+ms.date: 09/04/2020
+ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection

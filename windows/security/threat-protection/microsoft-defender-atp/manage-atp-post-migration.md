@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/04/2020
 ms.reviewer: chventou
 ---
