@@ -515,6 +515,51 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_LanmanServer policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-ciphersuiteorder" id="admx-lanmanserver-pol-ciphersuiteorder">ADMX_LanmanServer/Pol_CipherSuiteOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-hashpublication" id="admx-lanmanserver-pol-hashpublication">ADMX_LanmanServer/Pol_HashPublication</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-hashsupportversion" id="admx-lanmanserver-pol-hashsupportversion">ADMX_LanmanServer/Pol_HashSupportVersion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-honorciphersuiteorder" id="admx-lanmanserver-pol-honorciphersuiteorder">ADMX_LanmanServer/Pol_HonorCipherSuiteOrder</a>
+  </dd>
+</dl>
+
+### ADMX_LinkLayerTopologyDiscovery policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablelltdio" id="admx-linklayertopologydiscovery-lltd-enablelltdio">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr" id="admx-linklayertopologydiscovery-lltd-enablerspndr">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr</a>
+  </dd>
+</dl>
+
+### ADMX_MMC policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-activexcontrol" id="admx-mmc-mmc-activexcontrol">ADMX_MMC/MMC_ActiveXControl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-extendview" id="admx-mmc-mmc-extendview">ADMX_MMC/MMC_ExtendView</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-linktoweb" id="admx-mmc-mmc-linktoweb">ADMX_MMC/MMC_LinkToWeb</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-restrict-author" id="admx-mmc-mmc-restrict-author">ADMX_MMC/MMC_Restrict_Author</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-restrict-to-permitted-snapins" id="admx-mmc-mmc-restrict-to-permitted-snapins">ADMX_MMC/MMC_Restrict_To_Permitted_Snapins</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
