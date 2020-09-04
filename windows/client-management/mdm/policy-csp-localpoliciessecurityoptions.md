@@ -1373,6 +1373,8 @@ Default: No message.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
+NOTE: When targeting this policy to a device the initial login at OOBE may hang. To prevent the initial OOBE login from hanging you must also disable the First Login Animation: https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enablefirstlogonanimation 
+
 <!--/Description-->
 <!--RegistryMapped-->
 GP Info:  
@@ -1435,6 +1437,8 @@ This security setting allows the specification of a title to appear in the title
 Default: No message.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+NOTE: When targeting this policy to a device the initial login at OOBE may hang. To prevent the initial OOBE login from hanging you must also disable the First Login Animation: https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enablefirstlogonanimation 
 
 <!--/Description-->
 <!--RegistryMapped-->
