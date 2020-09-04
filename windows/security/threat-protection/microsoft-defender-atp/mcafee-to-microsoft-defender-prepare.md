@@ -54,9 +54,21 @@ Keep McAfee up to date, and make sure that your organization's devices have the 
 
 ### Make sure your organization's devices are up to date
 
+Need help updating your organization's devices? See the following resources:
+
+- For Windows devices, see [Microsoft Update](https://www.update.microsoft.com)
+
+- For macOS devices, see [How to update the software on your Mac](https://support.apple.com/HT201541)
+
+- For iOS devices, see [Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)
+
+- For Android devices, see [Check & update your Android version](https://support.google.com/android/answer/7680439)
+
+- For Linux devices, see [Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system)
+
 ## Get Microsoft Defender ATP
 
-To get started, you must have Microsoft Defender ATP, with licenses assigned and provisioned.
+Now that you've updated your organization's devices, the next step is to get Microsoft Defender ATP, assign licenses, and make sure the service is provisioned.
 
 1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a free trial or request a quote](https://aka.ms/mdatp). 
 
