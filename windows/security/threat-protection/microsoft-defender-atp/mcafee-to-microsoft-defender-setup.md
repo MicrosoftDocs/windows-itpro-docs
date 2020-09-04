@@ -28,7 +28,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ||*You are here!* | |
 
 
-**Welcome to the Setup phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
