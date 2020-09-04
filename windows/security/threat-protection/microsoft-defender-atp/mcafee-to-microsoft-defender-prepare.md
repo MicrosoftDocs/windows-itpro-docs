@@ -31,20 +31,28 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 **Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
-1. [Make sure your McAfee solution is up to date](#make-sure-your-mcafee-solution-is-up-to-date)
+1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
 3. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
-## Make sure your McAfee solution is up to date
+## Get and deploy updates across your organization's devices
 
-Before you begin to prepare for Microsoft Defender ATP and Microsoft Defender Antivirus, make sure McAfee Endpoint Security (McAfee) is up to date. Make sure your organization's devices have the latest security updates. Need help? Here are a few McAfee resources:
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your McAfee Endpoint Security (McAfee) solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Microsoft Defender ATP and Microsoft Defender Antivirus.
+
+### Make sure your McAfee solution is up to date
+
+Keep McAfee up to date, and make sure that your organization's devices have the latest security updates. Need help? Here are some McAfee resources:
 
 - [McAfee Enterprise Product Documentation: How Endpoint Security Works](https://docs.mcafee.com/bundle/endpoint-security-10.7.x-common-product-guide-windows/page/GUID-1207FF39-D1D2-481F-BBD9-E4079112A8DD.html)
 
 - [McAfee Knowledge Center Technical Article: Windows Security Center intermittently incorrectly reports that Endpoint Security is disabled when running on Windows 10](https://kc.mcafee.com/corporate/index?page=content&id=KB91830) 
 
 - [McAfee Knowledge Center Technical Article: Windows Security Center reports Endpoint Security is disabled when Endpoint Security is running](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
+
+- Your McAfee support ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com))
+
+### Make sure your organization's devices are up to date
 
 ## Get Microsoft Defender ATP
 

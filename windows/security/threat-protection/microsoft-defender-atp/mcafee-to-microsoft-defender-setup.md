@@ -81,10 +81,13 @@ Proceed to the next task (reinstalling Microsoft Defender Antivirus).
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
 2. Run the following PowerShell cmdlets: <br/>
+   
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
+   
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
+   
    `Get-Service -Name windefend`
 
 > [!TIP]
@@ -98,7 +101,9 @@ Because your organization is still using McAfee, you must set Microsoft Defender
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+   
    - Set the DWORD's value to **1**.
+   
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
