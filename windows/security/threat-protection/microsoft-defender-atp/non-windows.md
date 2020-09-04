@@ -49,7 +49,7 @@ benefits, read our
 [announcement](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801).
 
 For more details on how to get started, visit the Microsoft Defender ATP for Mac
-[documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).
+[documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).
 
 ## Microsoft Defender ATP for Linux
 
@@ -65,7 +65,7 @@ the key features and benefits, read our
 
 For more details on how to get started, visit the Microsoft Defender ATP for
 Linux
-[documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux).
+[documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux).
 
 ## Microsoft Defender ATP for Android
 
@@ -80,7 +80,7 @@ information about the key features and benefits, read our
 
 For more details on how to get started, visit the Microsoft Defender ATP for
 Android
-[documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android).
+[documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android).
 
 ## Licensing requirements for non-Windows platforms
 
