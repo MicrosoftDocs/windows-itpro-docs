@@ -28,7 +28,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Make sure your McAfee solution is up to date](#make-sure-your-mcafee-solution-is-up-to-date)
