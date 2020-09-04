@@ -30,12 +30,12 @@ soon iOS.
 Organizations face threats across a variety of platforms and devices. Our teams
 have committed to building security solutions not just *for* Microsoft, but also
 *from* Microsoft to enable our customers to protect and secure their entire
-organizations. We’re listening to customer feedback and partnering closely with
+organizations. We're listening to customer feedback and partnering closely with
 our customers to build solutions that meet their needs.
 
 Customers benefit from getting a unified view of all threats and alerts in the
 Microsoft Defender Security Center, across Windows and all our cross platform
-solutions, enabling them to get a full picture of what’s happening in their
+solutions, enabling them to get a full picture of what's happening in their
 environment, which empowers them to more quickly assess and respond to threats.
 
 ## Microsoft Defender ATP for Mac 
