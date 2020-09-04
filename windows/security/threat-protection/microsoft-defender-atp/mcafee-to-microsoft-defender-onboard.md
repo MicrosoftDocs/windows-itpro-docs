@@ -1,6 +1,6 @@
 ---
-title: Phase 3 - Onboard to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+title: McAfee to Microsoft Defender ATP - Onboard
+description: This is phase 3, Onboard, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,24 +15,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365solution-symantecmigrate
+- m365solution-McAfeemigrate
 ms.topic: article
-ms.date: 09/04/2020
-ms.reviewer: depicker, yongrhee, chriggs
+ms.date: 09/03/2020
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from Symantec - Phase 3: Onboard to Microsoft Defender ATP
+# Migrate from McAfee - Phase 3: Onboard to Microsoft Defender ATP
 
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
+|[![Phase 1: Prepare](images/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
 2. [Run a detection test](#run-a-detection-test).
-3. [Uninstall Symantec](#uninstall-symantec).
+3. [Uninstall McAfee](#uninstall-mcafee).
 4. [Make sure Microsoft Defender ATP is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender ATP
@@ -68,26 +68,15 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).        |
 |Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS, or higher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux). |
 
-## Uninstall Symantec
+## Uninstall McAfee
 
-Now that you have onboarded your organization's devices to Microsoft Defender ATP, your next step is to uninstall Symantec.
+Now that you have onboarded your organization's devices to Microsoft Defender ATP, your next step is to uninstall McAfee.
 
-1. [Disable Tamper Protection](https://knowledge.broadcom.com/external/article?legacyId=tech192023) in Symantec.
-
-2. Delete the uninstall password for Symantec:
-   1. On your Windows devices, open Registry Editor as an administrator.
-   2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
-   3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
-
-3. Remove Symantec from your devices. If you need help with this, see the following Broadcom resources: 
-   - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
-   - Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040)
-   - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
-   - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054)
+To get help with this step, go to your McAfee support ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com)).
 
 ## Make sure Microsoft Defender ATP is in active mode
 
-Now that you have uninstalled Symantec, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
+Now that you have uninstalled McAfee, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
 
 To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
@@ -96,7 +85,7 @@ To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 - [Manage Microsoft Defender Advanced Threat Protection, post migration](manage-atp-post-migration.md).
