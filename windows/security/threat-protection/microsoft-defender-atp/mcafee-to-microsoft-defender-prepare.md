@@ -31,9 +31,20 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 **Welcome to the Prepare phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
-1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
-2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
-3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
+1. 
+2. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
+3. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
+4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
+
+## Make sure your McAfee solution is up to date
+
+Before you begin to prepare for Microsoft Defender ATP and Microsoft Defender Antivirus, make sure McAfee Endpoint Security (McAfee) is up to date. Make sure your organization's devices have the latest security updates. To learn more, see the following resources:
+
+- [McAfee Enterprise Product Documentation: How Endpoint Security Works](https://docs.mcafee.com/bundle/endpoint-security-10.7.x-common-product-guide-windows/page/GUID-1207FF39-D1D2-481F-BBD9-E4079112A8DD.html)
+
+- [McAfee Knowledge Center Technical Article: Windows Security Center intermittently incorrectly reports that Endpoint Security is disabled when running on Windows 10](https://kc.mcafee.com/corporate/index?page=content&id=KB91830) 
+
+- [McAfee Knowledge Center Technical Article: Windows Security Center reports Endpoint Security is disabled when Endpoint Security is running](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
 
 ## Get Microsoft Defender ATP
 
