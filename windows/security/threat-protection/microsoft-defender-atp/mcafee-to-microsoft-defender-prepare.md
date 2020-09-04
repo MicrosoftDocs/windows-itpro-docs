@@ -56,15 +56,13 @@ Keep McAfee up to date, and make sure that your organization's devices have the 
 
 Need help updating your organization's devices? See the following resources:
 
-- For Windows devices, see [Microsoft Update](https://www.update.microsoft.com)
-
-- For macOS devices, see [How to update the software on your Mac](https://support.apple.com/HT201541)
-
-- For iOS devices, see [Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)
-
-- For Android devices, see [Check & update your Android version](https://support.google.com/android/answer/7680439)
-
-- For Linux devices, see [Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system)
+|OS | Resource |
+|:--|:--|
+|Windows |[Microsoft Update](https://www.update.microsoft.com) |
+|macOS | [How to update the software on your Mac](https://support.apple.com/HT201541)|
+|iOS |[Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)|
+|Android |[Check & update your Android version](https://support.google.com/android/answer/7680439) |
+|Linux | [Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
 
 ## Get Microsoft Defender ATP
 
