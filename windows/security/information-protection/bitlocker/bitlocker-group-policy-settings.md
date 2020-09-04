@@ -23,7 +23,7 @@ ms.custom: bitlocker
 **Applies to**
 -   Windows 10
 
-This topic for IT professionals describes the function, location, and effect of each group policy setting that is used to manage BitLocker Drive Encryption.
+This topic describes the function, location, and effect of each group policy setting that is used to manage BitLocker Drive Encryption.
 
 To control what drive encryption tasks the user can perform from the Windows Control Panel or to modify other configuration options, you can use group policy administrative templates or local computer policy settings. How you configure these policy settings depends on how you implement BitLocker and what level of user interaction will be allowed.
 
@@ -130,7 +130,7 @@ This policy setting allows users of devices that are compliant with Modern Stand
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>Users of Modern Standby- and HSTI-compliant devices will have the choice to turn on BitLocker without preboot authentication.</p></td>
+<td align="left"><p>Users of Modern Standby- and HSTI-compliant devices will have the choice to turn on BitLocker without pre-boot authentication.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -318,7 +318,7 @@ This policy setting permits the use of enhanced PINs when you use an unlock meth
 
 Enhanced startup PINs permit the use of characters (including uppercase and lowercase letters, symbols, numbers, and spaces). This policy setting is applied when you turn on BitLocker.
 
->**Important:**  Not all computers support enhanced PIN characters in the preboot environment. It is strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
+>**Important:**  Not all computers support enhanced PIN characters in the pre-boot environment. It is strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
 
 ### <a href="" id="bkmk-unlockpol3"></a>Configure minimum PIN length for startup
 
@@ -383,7 +383,7 @@ In that case, the lockout duration between each guess can be shortened to allow 
 
 Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
 To help organizations with the transition, beginning with Windows 10, version 1709, and Windows 10, version 1703, with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
-If the minimum PIN length is reduced from the default of 6 characters, then the TPM 2.0 lockout period will be extended.
+If the minimum PIN length is reduced from the default of 6 characters, then the TPM 2.0 lockout period is extended.
 
 ### Disable new DMA devices when this computer is locked
 
@@ -396,7 +396,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 | **Drive type**         | Operating system drives  |
 | **Policy path**        | Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption|
 | **Conflicts**          | None                     |
-| **When enabled**       | Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs-in again. |
+| **When enabled**       | Every time the user locks the screen, DMA is blocked on hot pluggable PCI ports until the user signs-in again. |
 | **When disabled or not configured** | DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed-in.|
 
 **Reference**
@@ -794,9 +794,9 @@ Passwords must be at least 8 characters. To configure a greater minimum length f
 
 When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity of the password.
 
-When set to **Allow complexity**, a connection to a domain controller will be attempted to validate that the complexity adheres to the rules set by the policy. However, if no domain controllers are found, the password will still be accepted regardless of actual password complexity and the drive will be encrypted by using that password as a protector.
+When set to **Allow complexity**, a connection to a domain controller is be attempted to validate that the complexity adheres to the rules set by the policy. However, if no domain controllers are found, the password is still be accepted regardless of actual password complexity and the drive is encrypted by using that password as a protector.
 
-When set to **Do not allow complexity**, no password complexity validation will be done.
+When set to **Do not allow complexity**, no password complexity validation is done.
 
 >**Note:**  Passwords cannot be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** specifies whether FIPS compliance is enabled.
 
@@ -853,9 +853,9 @@ The default object identifier is 1.3.6.1.4.1.311.67.1.1.
 
 >**Note:**  BitLocker does not make it mandatory for a certificate to have an EKU attribute; however, if one is configured for the certificate, it must be set to an object identifier that matches the object identifier configured for BitLocker.
 
-### <a href="" id="bkmk-slates"></a>Enable use of BitLocker authentication requiring preboot keyboard input on slates
+### <a href="" id="bkmk-slates"></a>Enable use of BitLocker authentication requiring pre-boot keyboard input on slates
 
-This policy setting allows users to enable authentication options that require user input from the preboot environment even if the platform indicates a lack of preboot input capability.
+This policy setting allows users to enable authentication options that require user input from the pre-boot environment even if the platform indicates a lack of pre-boot input capability.
 
 <table>
 <colgroup>
@@ -865,7 +865,7 @@ This policy setting allows users to enable authentication options that require u
 <tbody>
 <tr class="odd">
 <td align="left"><p><b>Policy description</b></p></td>
-<td align="left"><p>With this policy setting, you can allow users to enable authentication options that require user input from the preboot environment, even if the platform indicates a lack of preboot input capability.</p></td>
+<td align="left"><p>With this policy setting, you can allow users to enable authentication options that require user input from the pre-boot environment, even if the platform indicates a lack of pre-boot input capability.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><b>Introduced</b></p></td>
@@ -885,7 +885,7 @@ This policy setting allows users to enable authentication options that require u
 </tr>
 <tr class="even">
 <td align="left"><p><b>When enabled</b></p></td>
-<td align="left"><p>Devices must have an alternative means of preboot input (such as an attached USB keyboard).</p></td>
+<td align="left"><p>Devices must have an alternative means of pre-boot input (such as an attached USB keyboard).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>When disabled or not configured</b></p></td>
@@ -896,9 +896,9 @@ This policy setting allows users to enable authentication options that require u
 
 <b>Reference</b>
 
-The Windows touch keyboard (used by tablets) is not available in the preboot environment where BitLocker requires additional information, such as a PIN or password.
+The Windows touch keyboard (used by tablets) is not available in the pre-boot environment where BitLocker requires additional information, such as a PIN or password.
 
-It is recommended that administrators enable this policy only for devices that are verified to have an alternative means of preboot input, such as attaching a USB keyboard.
+It is recommended that administrators enable this policy only for devices that are verified to have an alternative means of pre-boot input, such as attaching a USB keyboard.
 
 When the Windows Recovery Environment is not enabled and this policy is not enabled, you cannot turn on BitLocker on a device that uses the Windows touch keyboard.
 
@@ -1829,8 +1829,8 @@ Enabling the **Configure the pre-boot recovery message and URL** policy setting 
 Once you enable the setting, you have three options:
 
 -   If you select the **Use default recovery message and URL** option, the default BitLocker recovery message and URL will be displayed on the pre-boot recovery screen.
--   If you select the **Use custom recovery message** option, type the custom message in the **Custom recovery message option** text box. The message that you type in the **Custom recovery message option** text box will be displayed on the pre-boot recovery screen. If a recovery URL is available, include it in the message.
--   If you select the **Use custom recovery URL** option, type the custom message URL in the **Custom recovery URL option** text box. The URL that you type in the **Custom recovery URL option** text box replaces the default URL in the default recovery message, which will be displayed on the pre-boot recovery screen.
+-   If you select the **Use custom recovery message** option, type the custom message in the **Custom recovery message option** text box. The message that you type in the **Custom recovery message option** text box is displayed on the pre-boot recovery screen. If a recovery URL is available, include it in the message.
+-   If you select the **Use custom recovery URL** option, type the custom message URL in the **Custom recovery URL option** text box. The URL that you type in the **Custom recovery URL option** text box replaces the default URL in the default recovery message, which is displayed on the pre-boot recovery screen.
 
 > **Important:**  Not all characters and languages are supported in the pre-boot environment. We strongly recommend that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
 > 
@@ -2459,9 +2459,9 @@ For more information about setting this policy, see [System cryptography: Use FI
 
 ## Power management group policy settings: Sleep and Hibernate
 
-PCs default power settings for a computer will cause the computer to enter Sleep mode frequently to conserve power when idle and to help extend the system’s battery life. When a computer transitions to Sleep, open programs and documents are persisted in memory. When a computer resumes from Sleep, users are not required to re-authenticate with a PIN or USB startup key to access encrypted data. This might lead to conditions where data security is compromised.
+PCs default power settings for a computer causes the computer to enter Sleep mode frequently to conserve power when idle and to help extend the system’s battery life. When a computer transitions to Sleep, open programs and documents are persisted in memory. When a computer resumes from Sleep, users are not required to re-authenticate with a PIN or USB startup key to access encrypted data. This might lead to conditions where data security is compromised.
 
-However, when a computer hibernates, the drive is locked, and when the computer resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting does not have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
+However, when a computer hibernates, the drive is locked, and when the computer resumes from hibernation the drive is unlocked, which means that users need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting does not have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
 
 You can use disable the following group policy settings, which are located in **Computer Configuration\\Administrative Templates\\System\\Power Management**, to disable all available sleep states:
 
