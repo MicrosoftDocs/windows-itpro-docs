@@ -95,23 +95,25 @@ Upon launch, the BitLocker Drive Encryption Wizard verifies whether the computer
 </table>
  
 Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
-Once a strong password has been created for the volume, a recovery key will be generated. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
+Once a strong password has been created for the volume, a recovery key is generated. The BitLocker Drive Encryption Wizard prompts for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
 
-You should store the recovery key by printing it; saving it on a removable media; or saving it as a file in a network folder, on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot store it on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on a removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.(Please check if this para can be put in as an Important note, as this information is critical).
+**Note:** You should store the recovery key by printing it; saving it on a removable media; or saving it as a file in a network folder, on your OneDrive, or on another drive of your computer that you are not encrypting. You cannot save the recovery key to the root directory of a non-removable drive and cannot store it on the encrypted volume. You cannot save the recovery key for a removable data drive (such as a USB flash drive) on a removable media. Ideally, you should store the recovery key separate from your computer. After you create a recovery key, you can use the BitLocker control panel to make additional copies.
 
 Once the recovery key has been properly stored, the BitLocker Drive Encryption Wizard prompts the user to choose from one of the following options to encrypt the drive:
   Encrypt used disk space only—Encrypts only disk space that contains data
   Encrypt entire drive—Encrypts the entire volume including free space
 
-It is recommended that drives with little-to-no data utilize the **used disk space only** encryption option and that drives with data or an operating system utilize the **encrypt entire drive** option.
+It is recommended that drives with little-to-no data utilize the **used disk space only** encryption option and that the drives with data or an operating system utilize the **encrypt entire drive** option.
 
 > **Note:**  Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
  
-Selecting an encryption type and choosing **Next** gives user the option of running a BitLocker system check (selected by default) which ensures that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. It is recommended to run this system check before starting the encryption process. If the system check is not run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
+Selecting an encryption type and choosing **Next** gives user the option of running a BitLocker system check (selected by default) which ensures that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. It is recommended to run this system check before starting the encryption process. If the system check is not run and a problem is encountered when the operating system attempts to start, the user needs to provide the recovery key to start Windows.
 
 **Question - In the previous para, the BitLocker system check is selected by default. The following paragraph, states if system check has been selected. Is there an option for the user to deselect system check. Under what circumstance they would deselect the system check, what would be the repercussions of that?**
 
 After completing the system check (if selected), the BitLocker Drive Encryption Wizard restarts the computer to begin encryption. Upon reboot, users are required to enter the password chosen to boot into the operating system volume. Users can check encryption status by checking the system notification area or the BitLocker control panel.
+
+**Question - Can "password chosen to boot into the operating system volume" be rephrased? The rephrase depends on the response for the query "at what stage is the password chosen; is that password only for the purpose of booting into the operating system volume; and are there different passwords for different types of logons ? **
 
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning BitLocker off.
 
@@ -121,7 +123,7 @@ Encrypting data volumes using the BitLocker control panel interface works in a f
 Unlike for operating system volumes, data volumes are not required to pass any configuration tests for the wizard to proceed. Upon launching the wizard, a choice of authentication methods to unlock the drive appears. The available options are **password** and **smart card** and **automatically unlock this drive on this computer**. Disabled by default, the latter option will unlock the data volume without user input when the operating system volume is unlocked.
 
 After selecting the desired authentication method and choosing **Next**, the wizard presents options for storage of the recovery key. These options are the same as for operating system volumes.
-With the recovery key saved, selecting **Next** in the wizard displays available options for encryption. These options are the same as for operating system volumes—**used disk space only** and **full drive encryption**. If the volume being encrypted is new or empty, it is recommended to selecte **used disk space only** option.
+With the recovery key saved, selecting **Next** in the wizard displays available options for encryption. These options are the same as for operating system volumes—**used disk space only** and **full drive encryption**. If the volume being encrypted is new or empty, it is recommended to select **used disk space only** option.
 
 With an encryption method chosen, a final confirmation screen is displayed before the encryption process begins. Selecting **Start encrypting** begins encryption.
 
@@ -194,7 +196,7 @@ Command line users need to determine the appropriate syntax for a given situatio
 
 ### Operating system volume
 
-Listed below are examples of basic valid commands for operating system volumes. In general, using only the `manage-bde -on <drive letter>` command will encrypt the operating system volume with a TPM-only protector and no recovery key. However, many environments require more secure protectors such as passwords or PIN and expect to be able to recover information with a recovery key.
+Listed below are examples of basic valid commands for operating system volumes. In general, using only the `manage-bde -on <drive letter>` command encrypts the operating system volume with a TPM-only protector and no recovery key. However, many environments require more secure protectors such as passwords or PIN and expect to be able to recover information with a recovery key.
 
 **Determining volume status**
 
@@ -202,7 +204,7 @@ A good practice when using manage-bde is to determine the volume status on the t
 
 `manage-bde -status`
 
-This command returns the volumes on the target, current encryption statu, and volume type (operating system or data) for each volume. Using this information, users can determine the best encryption method for their environment.
+This command returns the volumes on the target, current encryption status, and volume type (operating system or data) for each volume. Using this information, users can determine the best encryption method for their environment.
 
 **Enabling BitLocker without a TPM**
 
@@ -450,7 +452,7 @@ To check the BitLocker status of a particular volume, administrators can look at
 
 ### Checking BitLocker status with the control panel
 
-Checking BitLocker status with the control panel is the most common method used by most users. Once opened, the status for each volume will display next to the volume description and drive letter. Available status return values with the control panel include:
+Checking BitLocker status with the control panel is the most common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with the control panel include:
 
 | Status | Description |
 | - | - |
@@ -491,6 +493,8 @@ This command displays information about the encryption method, volume type, key 
 
 Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation environment. This is done with a randomly generated clear key protector applied to the formatted volume and by encrypting the volume prior to running the Windows setup process. If the encryption uses the **Used Disk Space Only** option described later in this document, this step takes only a few seconds and incorporates well into regular deployment processes.
 
+**Question: Is the clear key protector automatically generated or manually generated?** 
+
 ### Decrypting BitLocker volumes
 
 Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required. BitLocker decryption should not occur as a troubleshooting step. BitLocker can be removed from a volume using the BitLocker control panel applet, manage-bde, or Windows PowerShell cmdlets. We will discuss each method further below.
@@ -498,7 +502,7 @@ Decrypting volumes removes BitLocker and any associated protectors from the volu
 ### Decrypting volumes using the BitLocker control panel applet
 
 BitLocker decryption using the control panel is done using a wizard. The control panel can be called from Windows Explorer or by opening it directly. After opening the BitLocker control panel, users will select the **Turn off BitLocker** option to begin the process.
-Once selected, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the control panel.
+After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the control panel.
 
 The control panel does not report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon opens a modal dialog with progress.
 
