@@ -198,4 +198,4 @@ After configuring the [Security policy violation indicators](https://docs.micros
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
+
