@@ -49,7 +49,7 @@ This step of the migration process includes the following tasks:
 
 ### Set DisableAntiSpyware to false on Windows Server
 
-The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee. In general, you should not have this registry key on your Windows devices and endpoints; however, here's how to make sure `DisableAntiSpyware` is set to false.
+The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee. In general, you should not have this registry key on your Windows devices and endpoints; however, if you do have `DisableAntiSpyware` configured, here's how to set its value to false:
 
 1. On your Windows Server device, open Registry Editor.
 
@@ -66,7 +66,7 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 5. Set the value to `0`. (This sets the registry key's value to *false*.)
 
 > [!TIP]
-> To learn more, see [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+> To learn more about this registry key, see [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
 Proceed to the next task (reinstalling Microsoft Defender Antivirus).
 
