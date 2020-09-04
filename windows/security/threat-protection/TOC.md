@@ -343,7 +343,6 @@
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
-##### [Create and build Power BI reports using Microsoft Defender ATP data connectors (deprecated)](microsoft-defender-atp/powerbi-reports.md)
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 #### [Device health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
@@ -436,8 +435,6 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-##### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
