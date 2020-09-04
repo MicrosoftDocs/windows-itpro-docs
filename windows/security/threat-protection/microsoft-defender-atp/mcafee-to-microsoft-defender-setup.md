@@ -29,7 +29,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 
 **Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
+1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows Server)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
 4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
@@ -37,14 +37,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
-## Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)
+## Enable Microsoft Defender Antivirus and set it to passive mode
 
-> [!TIP]
-> If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
+On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as McAfee. (To learn more about this, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).)
 
-On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as McAfee. To learn more, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
-
-Now that you're moving from McAfee to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
+This step of the migration process involves reinstalling Microsoft Defender Antivirus on Windows Server, enabling Microsoft Defender Antivirus on your Windows client devices, and setting Microsoft Defender Antivirus to passive mode.  
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
@@ -54,7 +51,7 @@ Now that you're moving from McAfee to Microsoft Defender ATP, you'll need to ena
 > - Windows Server, version 1803 (core-only mode)
 > - Windows Server 2016
 > 
-> Microsoft Defender Antivirus is built into Windows 10, but it might be disabled. In this case, proceed to [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus is built into Windows 10, but it might be disabled. In this case, see [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
@@ -85,7 +82,7 @@ Because your organization is still using McAfee, you must set Microsoft Defender
 >- [Local Group Policy Object tool](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-## Enable Microsoft Defender Antivirus
+## Enable Microsoft Defender Antivirus on your Windows client devices
 
 Because your organization has been using McAfee as your primary antivirus solution, Microsoft Defender Antivirus is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender Antivirus. 
 
