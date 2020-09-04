@@ -84,8 +84,7 @@ For more information, see [Deploy Microsoft Defender ATP for Android with Micros
 
 
 > [!NOTE]
-> **Microsoft Defender ATP for Android is available on Google Play now.**
-> You can connect to Google Play from Intune to deploy Microsoft Defender ATP app, across Device Administrator and Android Enterprise entrollment modes. 
+> **Microsoft Defender ATP for Android is available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.** <br> You can connect to Google Play from Intune to deploy Microsoft Defender ATP app, across Device Administrator and Android Enterprise entrollment modes. 
 
 ## How to Configure Microsoft Defender ATP for Android
 
