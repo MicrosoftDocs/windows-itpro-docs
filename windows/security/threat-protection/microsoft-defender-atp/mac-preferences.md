@@ -233,7 +233,7 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
-### Antivirus scan history retention (in days)
+#### Antivirus scan history retention (in days)
 
 Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.
 
@@ -245,7 +245,7 @@ Specify the number of days that results are retained in the scan history on the 
 | **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
 | **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
 
-### Maximum number of items in the antivirus scan history
+#### Maximum number of items in the antivirus scan history
 
 Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.
 
