@@ -133,7 +133,7 @@ DO NOT USE THE APPLICATION.**
     export laws and regulations that apply to the application. These laws
     include restrictions on destinations, end users and end use. For additional
     information,
-    see�[www.microsoft.com/exporting](https://www.microsoft.com/exporting).
+    see [www.microsoft.com/exporting](https://www.microsoft.com/exporting).
 
 7.  **SUPPORT SERVICES.** Because this application is "as is," we may not
     provide support services for it. If you have any issues or questions about
