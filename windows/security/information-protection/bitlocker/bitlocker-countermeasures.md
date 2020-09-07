@@ -71,7 +71,7 @@ The next sections cover pre-boot authentication and DMA policies that can provid
 
 ### Pre-boot authentication
 
-Pre-boot authentication with BitLocker is a policy setting that requires the use of either of the user input, such as a PIN, or a startup key, or both to authenticate prior to making the contents of the system drive accessible. 
+Pre-boot authentication with BitLocker is a policy setting that requires the use of user input, such as a PIN, or a startup key, or both to authenticate prior to making the contents of the system drive accessible. 
 The group policy setting is [Require additional authentication at startup](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#a-href-idbkmk-unlockpol1arequire-additional-authentication-at-startup) and the corresponding setting in the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
 
 BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. 
@@ -112,9 +112,10 @@ You can use the System Information desktop app (MSINFO32) to check if a device h
 
 ![Kernel DMA protection](images/kernel-dma-protection.png)
 
-If kernel DMA protection is *not* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
+If kernel DMA protection is *not* enabled, follow these steps to protect Thunderbolt™ 3-enabled ports:
 
 1. Require a password for BIOS changes.
+**Question: What is the source from which the user can get this password?**
 2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
 3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
 
