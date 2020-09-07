@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/04/2020
+ms.date: 09/07/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -63,7 +63,7 @@ All our updates contain:
 
 &ensp;Security intelligence update version: **1.323.9.0**  
 &ensp;Released: **August 27, 2020**  
-&ensp;Platform: **4.18.2008.3**  
+&ensp;Platform: **4.18.2008.9**  
 &ensp;Engine: **1.1.17400.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
