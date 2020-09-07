@@ -145,15 +145,15 @@ Windows Server 2012 or later domain controllers support Group Managed Service Ac
 
 GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
 
+>[!NOTE]
+> If the [default object creation quota for security principles](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
+
 #### Create KDS Root Key
 
 Sign-in a domain controller with _Enterprise Admin_ equivalent credentials.
 
 1. Start an elevated Windows PowerShell console.
 2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`.
-
->[!NOTE]
-> If the [default object creation quota for security principles](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
 
 ### Windows Server 2008 or 2008 R2 Domain Controllers
 
