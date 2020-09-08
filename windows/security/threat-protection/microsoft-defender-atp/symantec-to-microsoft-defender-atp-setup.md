@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-symantecmigrate 
 ms.topic: article
 ms.date: 09/04/2020
+ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 

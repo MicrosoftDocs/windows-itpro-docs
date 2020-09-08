@@ -11,7 +11,6 @@ ms.date: 09/08/2020
 ms.prod: w10
 ms.localizationpriority: medium
 ms.collection: 
-- m365solution-overview
 - M365-security-compliance
 ms.custom: migrationguides
 ms.reviewer: 
