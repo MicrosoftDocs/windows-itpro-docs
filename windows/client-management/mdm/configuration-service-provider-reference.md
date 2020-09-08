@@ -1119,6 +1119,9 @@ Additional lists:
 </table>
 
 <!--EndSKU-->
+> [!NOTE]
+
+> The EnterpriseDataProtection CSP is supported in Home edition only for [mobile application management (MAM)](https://docs.microsoft.com/en-us/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps).
 <!--EndCSP-->
 
 <!--StartCSP-->
