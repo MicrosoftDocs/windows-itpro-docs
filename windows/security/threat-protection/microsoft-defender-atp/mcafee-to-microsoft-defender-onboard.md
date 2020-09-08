@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - M365-security-compliance 
 - m365solution-McAfeemigrate
+ms.custom: migrationguides
 ms.topic: article
 ms.date: 09/03/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho

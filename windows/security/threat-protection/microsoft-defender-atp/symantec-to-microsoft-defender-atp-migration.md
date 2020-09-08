@@ -1,6 +1,6 @@
 ---
 title: Migrate from Symantec to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+description: Get an overview of how to make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,7 @@ ms.collection:
 - m365solution-overview 
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
