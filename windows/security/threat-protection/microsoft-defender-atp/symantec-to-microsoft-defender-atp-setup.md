@@ -1,6 +1,6 @@
 ---
-title: Phase 2 - Set up Microsoft Defender ATP
-description: This is Phase 2, Setup, of switching from Symantec to Microsoft Defender ATP
+title: Symantec to Microsoft Defender ATP - Phase 2, Setting Up
+description: This is Phase 2, Setup, of migrating from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
