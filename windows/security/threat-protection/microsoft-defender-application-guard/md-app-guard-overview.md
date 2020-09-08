@@ -18,7 +18,7 @@ ms.custom: asr
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete. 
+Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
 ## What is Application Guard and how does it work?
 
@@ -42,10 +42,11 @@ Application Guard has been created to target several types of systems:
 
 ## Related articles
 
-|Article |Description |
-|------|------------|
+|Article | Description |
+|--------|-------------|
 |[System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) |Specifies the prerequisites necessary to install and use Application Guard.|
 |[Prepare and install Microsoft Defender Application Guard](install-md-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
 |[Configure the Group Policy settings for Microsoft Defender Application Guard](configure-md-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
 |[Testing scenarios using Microsoft Defender Application Guard in your business or organization](test-scenarios-md-app-guard.md)|Provides a list of suggested testing scenarios that you can use to test Application Guard in your organization.|
+| [Microsoft Defender Application Guard Extension for web browsers](md-app-guard-browser-extension.md) | Describes the Application Guard extension for Chrome and Firefox, including known issues, and a trouble-shooting guide |
 |[Frequently asked questions - Microsoft Defender Application Guard](faq-md-app-guard.md)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
