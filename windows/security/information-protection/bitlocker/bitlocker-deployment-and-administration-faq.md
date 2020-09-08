@@ -25,7 +25,7 @@ ms.custom: bitlocker
 
 ## Can BitLocker deployment be automated in an enterprise environment?
 
-Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps).
+Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more information about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more information about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps).
 
 ## Can BitLocker encrypt more than just the operating system drive?
 
@@ -33,7 +33,7 @@ Yes. BitLocker can encrypt non-system drives and removable storage devices with 
 
 ## Is there a noticeable performance impact when BitLocker is enabled on a computer?
 
-Generally it imposes a single-digit percentage performance overhead.
+Generally, it imposes a single-digit percentage performance overhead.
 
 ## How long will initial encryption take when BitLocker is turned on?
 
@@ -51,7 +51,7 @@ No, BitLocker does not encrypt and decrypt the entire drive when reading and wri
 
 ## How can I prevent users on a network from storing data on an unencrypted drive?
 
-You can configure group policy settings to make it mandatory for data drives to become BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+You can configure group policy settings to make it mandatory for data drives to become BitLocker-protected before a BitLocker-protected computer can write data to them. For more information, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that are not protected by BitLocker as read-only.
 
 ## What is Used Disk Space Only encryption?
