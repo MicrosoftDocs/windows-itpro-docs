@@ -1108,7 +1108,8 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" />
+<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps">Only in mobile application management</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1119,9 +1120,6 @@ Additional lists:
 </table>
 
 <!--EndSKU-->
-> [!NOTE]
-
-> The EnterpriseDataProtection CSP is supported in Home edition only for [mobile application management (MAM)](https://docs.microsoft.com/en-us/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps).
 <!--EndCSP-->
 
 <!--StartCSP-->
