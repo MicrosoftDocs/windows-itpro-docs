@@ -118,7 +118,7 @@ different types of Endpoint security policies.
 
     ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
 
-6.  Add scope tags if required, then select  **Next**.
+6.  Add scope tags if necessary, then select  **Next**.
 
     ![Image of Microsoft Endpoint Manager portal](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
@@ -155,7 +155,7 @@ different types of Endpoint security policies.
 
     ![Image of Microsoft Endpoint Manager portal](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
 
-6.  Add scope tags if required, then select  **Next**.
+6.  Add scope tags if necessary, then select  **Next**.
 
     ![Image of Microsoft Endpoint Manager portal](images/2055e4f9b9141525c0eb681e7ba19381.png)
 
@@ -259,7 +259,7 @@ different types of Endpoint security policies.
 ## Validate configuration settings
 
 
-### Confirm Policies have applied
+### Confirm Policies have been applied
 
 
 Once the Configuration policy has been assigned, it will take some time to apply.
@@ -300,7 +300,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
     ![Image of Services panel](images/b418a232a12b3d0a65fc98248dbb0e31.png)
 
-2.  After the configuration has been applied the Microsoft Defender ATP
+2.  After the configuration has been applied, the Microsoft Defender ATP
     Protection Service should be started.
 
     ![Image of Services panel](images/a621b699899f1b41db211170074ea59e.png)
