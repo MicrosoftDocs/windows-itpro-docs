@@ -1109,7 +1109,7 @@ Additional lists:
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" />
-<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps">Only in mobile application management</td>
+<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
