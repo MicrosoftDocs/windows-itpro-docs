@@ -50,5 +50,4 @@ You can verify the data location by navigating to **Settings** > **Data retentio
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Configure advanced features](advanced-features.md)

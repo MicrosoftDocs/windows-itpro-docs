@@ -1,6 +1,6 @@
 ---
 title: Get MachineAction object API
-description: Use this API to create calls related to get machineaction object
+description: Learn how to use the Get MachineAction API to retrieve a specific Machine Action by its ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, machineaction object
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

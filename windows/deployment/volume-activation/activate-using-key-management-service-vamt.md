@@ -4,7 +4,7 @@ ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: 
+description: How to activate using Key Management Service in Windows 10.
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -45,14 +45,16 @@ Installing a KMS host key on a computer running Windows 10 allows you to activa
 Clients locate the KMS server by using resource records in DNS, so some configuration of DNS may be required. This scenario can be beneficial if your organization uses volume activation for clients and MAK-based activation for a smaller number of servers.
 To enable KMS functionality, a KMS key is installed on a KMS host; then, the host is activated over the Internet or by phone using Microsoft’s activation services.
 
-**Configure KMS in Windows 10**
+**Configure KMS in Windows 10**
 
-To activate by using the telephone, use the slmgr.vbs script.
-
-1. Run **slmgr.vbs /dti** and confirm the installation ID.
-2. Call [Microsoft Licensing Activation Centers worldwide telephone numbers](https://www.microsoft.com/licensing/existing-customer/activation-centers) and follow the voice prompts to enter the installation ID that you obtained in step 1 on your telephone.
-3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
-4. Run **slmgr.vbs /atp \<confirmation ID\>**.
+To activate , use the slmgr.vbs command. Open an elevated command prompt and run one of the following commands:
+- To install the KMS key, type `slmgr.vbs /ipk <KmsKey>`.
+- To activate online, type `slmgr.vbs /ato`.
+- To activate by telephone , follow these steps:
+  1. Run `slmgr.vbs /dti` and confirm the installation ID.
+  2. Call [Microsoft Licensing Activation Centers worldwide telephone numbers](https://www.microsoft.com/licensing/existing-customer/activation-centers) and follow the voice prompts to enter the installation ID that you obtained in step 1 on your telephone.
+  3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
+  4. Run `slmgr.vbs /atp \<confirmation ID\>`.
 
 For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
 

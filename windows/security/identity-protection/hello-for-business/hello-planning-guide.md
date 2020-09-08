@@ -1,6 +1,6 @@
 ---
 title: Planning a Windows Hello for Business Deployment
-description: A guide to planning a Windows Hello for Business deployment 
+description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

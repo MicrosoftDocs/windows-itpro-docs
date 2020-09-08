@@ -1,6 +1,6 @@
 ---
 title: Get machine related alerts API
-description: Retrieves a collection of alerts related to a given device ID.
+description: Learn how to use the Get machine related alerts API to retrieve all alerts related to a specific device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, devices, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

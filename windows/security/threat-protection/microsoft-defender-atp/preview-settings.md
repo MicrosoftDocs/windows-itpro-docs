@@ -37,5 +37,4 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 - [Turn on advanced features in Microsoft Defender ATP](advanced-features.md)
 - [Configure email notifications in Microsoft Defender ATP](configure-email-notifications.md)
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Enable the custom threat intelligence API in Microsoft Defender ATP](enable-custom-ti.md)
-- [Create and build Power BI reports](powerbi-reports.md)
+

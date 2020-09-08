@@ -17,6 +17,8 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-symantecmigrate
 ms.topic: article
+ms.date: 09/04/2020
+ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec - Phase 1: Prepare for your migration

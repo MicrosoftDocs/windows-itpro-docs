@@ -1,6 +1,6 @@
 ---
 title: 5051(-) A file was virtualized. (Windows 10)
-description: Describes security event 5051(-) A file was virtualized.
+description: Describes security event 5051(-) A file was virtualized. This event is generated when a file is virtualized using LUAFV.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

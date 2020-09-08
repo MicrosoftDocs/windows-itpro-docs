@@ -23,19 +23,19 @@ This page provides answers to common questions we receive from software develope
 
 ## Does Microsoft accept files for a known list or false-positive prevention program?
 
-No. We do not accept these requests from software developers. Signing your program's files in a consistent manner, with a digital certificate issued by a trusted root authority, helps our research team quickly identify the source of a program and apply previously gained knowledge. In some cases, this might result in your program being quickly added to the known list or, far less frequently, in adding your digital certificate to a list of trusted publishers.
+No. We don't accept these requests from software developers. Signing your program's files in a consistent manner, with a digital certificate issued by a trusted root authority, helps our research team quickly identify the source of a program and apply previously gained knowledge. In some cases, this might result in your program being quickly added to the known list. Far less frequently, in will add your digital certificate to a list of trusted publishers.
 
 ## How do I dispute the detection of my program?
 
 Submit the file in question as a software developer. Wait until your submission has a final determination.
 
-If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
+If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We'll use the information you provide to investigate further if necessary.
 
 We encourage all software vendors and developers to read about [how Microsoft identifies malware and Potentially Unwanted Applications (PUA)](criteria.md).
 
 ## Why is Microsoft asking for a copy of my program?
 
-This can help us with our analysis. Participants of the [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) may occasionally receive these requests. The requests will stop once our systems have received and processed the file.
+Providing copies can help us with our analysis. Participants of the [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) may occasionally receive these requests. The requests will stop once our systems have received and processed the file.
 
 ## Why does Microsoft classify my installer as a software bundler?
 
@@ -43,8 +43,8 @@ It contains instructions to offer a program classified as unwanted software. You
 
 ## Why is the Windows Defender Firewall blocking my program?
 
-This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
-## Why does the Microsoft Defender SmartScreen say my program is not commonly downloaded?
+## Why does the Microsoft Defender Windows Defender SmartScreen say my program isn't commonly downloaded?
 
-This is not related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+This isn't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender Windows Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)

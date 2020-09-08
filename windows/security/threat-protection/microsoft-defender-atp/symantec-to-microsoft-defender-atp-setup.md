@@ -17,6 +17,8 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate 
 ms.topic: article
+ms.date: 09/04/2020
+ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec - Phase 2: Set up Microsoft Defender ATP
@@ -119,6 +121,9 @@ This step of the setup process involves adding Microsoft Defender ATP to the exc
 ## Add Symantec to the exclusion list for Microsoft Defender Antivirus
 
 During this step of the setup process, you add Symantec and your other security solutions to the Microsoft Defender Antivirus exclusion list. 
+
+> [!NOTE]
+> To get an idea of which processes and services to exclude, see Broadcom's [Processes and services used by Endpoint Protection 14](https://knowledge.broadcom.com/external/article/170706/processes-and-services-used-by-endpoint.html).
 
 When you add [exclusions to Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 - Path exclusions exclude specific files and whatever those files access.

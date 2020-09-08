@@ -1,6 +1,6 @@
 ---
 title: Get RBAC machine groups collection API
-description: Retrieves a collection of RBAC device groups.
+description: Learn how to use the Get KB collection API to retrieve a collection of RBAC device groups in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
