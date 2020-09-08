@@ -20,7 +20,7 @@
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
-## [Migration guides]()
+## [Migration guides](microsoft-defender-atp/migration-guides.md)
 ### [Switch from McAfee to Microsoft Defender ATP]()
 #### [Get an overview of migration](microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md)
 #### [Prepare for your migration](microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md) 
