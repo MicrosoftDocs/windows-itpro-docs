@@ -1,6 +1,6 @@
 ---
 title: Family options in the Windows Security app
-description: Hide the Family options section in enterprise environments
+description: Learn how to hide the Family options section of Windows Security for enterprise environments. Family options are not intended for business environments.
 keywords: wdsc, family options, hide, suppress, remove, disable, uninstall, kids, parents, safety, parental, child, screen time
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

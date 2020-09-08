@@ -27,8 +27,6 @@ ms.topic: conceptual
 > 
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 > 
-> If you have preview features turned on in the Microsoft Defender Security Center, you should be able to access the Android onboarding page immediately. If you have not yet opted into previews, we encourage you to [turn on preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview) in the Microsoft Defender Security Center today. 
-
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Android.
 
 > [!CAUTION]
@@ -86,8 +84,7 @@ For more information, see [Deploy Microsoft Defender ATP for Android with Micros
 
 
 > [!NOTE]
-> During public preview, instructions to deploy Microsoft Defender ATP for Android on Intune enrolled Android devices are different across Device Administrator and Android Enterprise entrollment modes. <br>
-> **When Microsoft Defender ATP for Android reaches General Availability (GA), the app will be available on Google Play.**
+> **Microsoft Defender ATP for Android is available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.** <br> You can connect to Google Play from Intune to deploy Microsoft Defender ATP app, across Device Administrator and Android Enterprise entrollment modes. 
 
 ## How to Configure Microsoft Defender ATP for Android
 

@@ -50,3 +50,4 @@ The Command Prompt window will close automatically. If successful, the detection
 ## Related topics
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

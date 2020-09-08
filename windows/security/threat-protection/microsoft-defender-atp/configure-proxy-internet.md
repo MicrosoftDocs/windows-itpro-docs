@@ -111,7 +111,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 |[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
 
 
-If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
@@ -150,7 +150,7 @@ Microsoft Defender ATP is built on Azure cloud, deployed in the following region
 - \+\<Region Name="uksouth">
 - \+\<Region Name="ukwest">
 
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.

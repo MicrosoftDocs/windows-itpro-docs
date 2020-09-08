@@ -14,6 +14,7 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
+ms.date: 08/31/2020
 ---
 
 # Protect security settings with tamper protection
@@ -80,24 +81,20 @@ If you are a home user, or you are not subject to settings managed by a security
 
 ## Turn tamper protection on (or off) for your organization using Intune
 
-If you are part of your organization's security team, and your subscription includes [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the Microsoft 365 Device Management portal ([https://aka.ms/intuneportal](https://aka.ms/intuneportal)).
-
-> [!NOTE]
-> The ability to manage tamper protection in Intune is rolling out now; if you don't have it yet, you should very soon, assuming your organization has [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md) (Microsoft Defender ATP) and that you meet the prerequisites listed below.
+If you are part of your organization's security team, and your subscription includes [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) portal.
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task.
 
 1. Make sure your organization meets all of the following requirements to manage tamper protection using Intune:
 
-    - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in [Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)).
     - Your organization uses [Intune to manage devices](https://docs.microsoft.com/intune/fundamentals/what-is-device-management). ([Intune licenses](https://docs.microsoft.com/intune/fundamentals/licenses) are required; this is included in Microsoft 365 E5.)
     - Your Windows machines must be running Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
     - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
-2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account.
+2. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) and sign in with your work or school account.
 
-3. Select **Device configuration** > **Profiles**.
+3. Select **Devices** > **Configuration Profiles**.
 
 4. Create a profile as follows:
 
@@ -109,7 +106,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
     - Tamper Protection: **Enabled**
 
-    ![Turn tamper protection on with Intune](images/turnontamperprotect-intune.png)
+    ![Turn tamper protection on with Intune](images/turnontamperprotect-MEM.png)
 
 5. Assign the profile to one or more groups.
 

@@ -1,6 +1,6 @@
 ---
 title: 4741(S) A computer account was created. (Windows 10)
-description: Describes security event 4741(S) A computer account was created.
+description: Describes security event 4741(S) A computer account was created. This event is generated every time a computer object is created.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
