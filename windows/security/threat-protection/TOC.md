@@ -97,7 +97,7 @@
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
 ##### [Evaluate network protection](microsoft-defender-atp/evaluate-network-protection.md)
-##### [Turning on network protection](microsoft-defender-atp/enable-network-protection.md)
+##### [Turn on network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
