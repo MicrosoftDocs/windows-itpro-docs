@@ -192,7 +192,7 @@ manager: dansimp
     <a href="#update-setdisableuxwuaccess">Update/SetDisableUXWUAccess</a>
   </dd>
   <dd>
-    <a href="#update-setedurestart">Update/f</a>
+    <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
