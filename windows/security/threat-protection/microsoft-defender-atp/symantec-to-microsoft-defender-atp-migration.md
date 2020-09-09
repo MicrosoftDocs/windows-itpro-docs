@@ -1,6 +1,6 @@
 ---
 title: Migrate from Symantec to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+description: Get an overview of how to make the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,7 @@ ms.collection:
 - m365solution-overview 
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
@@ -42,7 +43,7 @@ In this migration guide, we focus on [next-generation protection](https://docs.m
 
 | Feature/Capability | Description |
 |---|---|
-| [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & Vulnerability Management capabilities helps identify, assess, and remediate weaknesses across your endpoints (such as devices). |
+| [Threat & vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Threat & vulnerability management capabilities help identify, assess, and remediate weaknesses across your endpoints (such as devices). |
 | [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) | Attack surface reduction rules help protect your organization's devices and applications from cyberthreats and attacks. |
 | [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Next-generation protection includes Microsoft Defender Antivirus to help block threats and malware. |
 | [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) | Endpoint detection and response capabilities detect, investigate, and respond to intrusion attempts and active breaches.  |

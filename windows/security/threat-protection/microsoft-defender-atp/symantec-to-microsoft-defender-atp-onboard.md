@@ -1,6 +1,6 @@
 ---
 title: Phase 3 - Onboard to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+description: This is Phase 3, Onboarding, of making the switch from Symantec to Microsoft Defender ATP
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.date: 09/04/2020
+ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
