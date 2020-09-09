@@ -50,7 +50,7 @@ to secure devices against web threats and protect users from phishing attacks.
 including CPU and Network usage. Microsoft Defender ATP uses VPN in the
 background to check web traffic for any malicious websites or connections. Every
 network packet from any app goes through this check and iOS
-wrongly accounts this in computing the battery usage of Microsoft Defender ATP.
+wrongly accounts this in computing the battery usage of Microsoft Defender ATP.
 This gives a false impression to the user. The actual battery consumption of
-Microsoft Defender ATP is much less than what is shown on the Battery Settings
+Microsoft Defender ATP is much less than what is shown on the Battery Settings
 page on the device.

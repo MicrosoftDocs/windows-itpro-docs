@@ -29,7 +29,7 @@ ms.topic: conceptual
 
 
 During Public Preview, Microsoft Defender ATP for iOS will be available on
-TestFlight (Apple’s Beta testing platform). End-users can directly deploy the
+TestFlight (Apple's Beta testing platform). End-users can directly deploy the
 app from TestFlight.
 
 Deployment devices need to be enrolled on Intune Company portal. Refer to
