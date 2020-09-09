@@ -58,6 +58,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [September 2020](#september-2020)
     - [August 2020](#august-2020)
     - [July 2020](#july-2020)
     - [June 2020](#june-2020)
@@ -1414,6 +1415,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>Update/ExcludeWUDriversInQualityUpdate</li>
 <li>Update/PauseFeatureUpdates</li>
 <li>Update/PauseQualityUpdates</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 <li>Update/UpdateServiceUrlAlternate (Added in the January service release of Windows 10, version 1607)</li>
 <li>WindowsInkWorkspace/AllowWindowsInkWorkspace</li>
 <li>WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</li>
@@ -1995,6 +1997,11 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### September 2020
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Update](policy-csp-update.md)|Added the following policy setting:<br> Update/SetAutoRestartNotificationDisable <br>|
 
 ### August 2020
 |New or updated topic | Description|
