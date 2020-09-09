@@ -249,7 +249,7 @@
 ##### [App-based deployment](microsoft-defender-atp/ios-install.md)
 
 #### [Configure]()
-##### [Configure iOS features](microsoft-defender-atp/ios-features.md)
+##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
