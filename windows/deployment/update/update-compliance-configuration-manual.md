@@ -80,10 +80,10 @@ Many Windows and Microsoft services are required to ensure that not only the dev
 
 ## Run a full Census sync
 
-Census is a service that runs on a regular cadence on Windows machines. A number of key device attributes, like what OS Edition is installed on the device, are included in the Census payload. However, to save network load and system resources, data that tends to be more static (like OS Edition) is sent around once per week rather than on every daily run. Because of this, these attributes can take longer to appear in Update Compliance unless a full Census sync is initiated. The Update Compliance Configuration Script does this. 
+Census is a service that runs on a regular schedule on Windows devices. A number of key device attributes, like what opearting system edition is installed on the device, are included in the Census payload. However, to save network load and system resources, data that tends to be more static (like edition) is sent approximately once per week rather than on every daily run. Because of this, these attributes can take longer to appear in Update Compliance unless you start a full Census sync. The Update Compliance Configuration Script does this. 
 
-A full Census sync is accomplished by adding a new registry value to Census's path. When this registry value is added, Census's configuration is overridden to force a full sync. It is recommended that this registry value is enabled, Census is manually invoked, and then the registry value is disabled to allow Census to operate normally. The steps to accomplish this are below:
+A full Census sync adds a new registry value to Census's path. When this registry value is added, Census's configuration is overridden to force a full sync. For Census to work normally, this registry value should be enabled, Census should be started manually, and then the registry value should be disabled. Follow these steps:
 
-1. For every device you are manually configuring for Update Compliance, add or modify the registry key located at **HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Census** to include a new **DWORD value** named **FullSync** and set to 1. 
-2. Run devicecensus.exe with administrator privileges on every device. devicecensus.exe is located in the System32 folder. No additional run parameters are required. 
-3. After devicecensus.exe has run, the FullSync value can be removed or set to 0. 
+1. For every device you are manually configuring for Update Compliance, add or modify the registry key located at **HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Census** to include a new **DWORD value** named **FullSync** and set to **1**. 
+2. Run Devicecensus.exe with administrator privileges on every device. Devicecensus.exe is in the System32 folder. No additional run parameters are required. 
+3. After Devicecensus.exe has run, the **FullSync** registry value can be removed or set to **0**. 
