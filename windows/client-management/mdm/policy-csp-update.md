@@ -4152,19 +4152,19 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -4181,23 +4181,24 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
+Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
 
 This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
--   GP name: **
--   GP path: *Windows Components/Windows Update/SpecifyintranetMicrosoftupdateserviceLocation*
+-   GP English name: *Select the proxy behavior for Windows Update client for detecting updates with non-TLS (HTTP) based service*
+-   GP name: *Select the proxy behavior*
+-   GP element: *Select the proxy behavior*
+-   GP path: *Windows Components/Windows Update/Specify intranet Microsoft update service location*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Allow system proxy only for HTTP scans.
+- 0 (default) - Allow system proxy only for HTTP scans.
 - 1 - Allow user proxy to be used as a fallback if detection using system proxy fails. 
 > [!NOTE]
 > Configuring this policy setting to 1 exposes your environment to potential security risk and makes scans unsecure.
