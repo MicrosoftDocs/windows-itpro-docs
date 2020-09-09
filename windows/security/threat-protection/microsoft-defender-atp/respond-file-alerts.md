@@ -129,6 +129,24 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > 
 > Microsoft Defender ATP will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
+## Download or collect file
+
+Selecting **Download file** from the response actions allows you to download a local, password-protected .zip archive containing your file. A flyout will appear where you can record a reason for downloading the file, and set a password.
+
+By default, you will not be able to download files that are in quarantine.
+
+![Image of download file action](images/atp-download-file-action.png)
+
+### Download quarantined files
+
+You can turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available.
+
+Go to **Settings** > **Advanced features** > **Download quarantined files** and switch the toggle to **On**.
+
+### Collect files
+
+If a file is not already stored by Microsoft Defender ATP, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+
 ## Add indicator to block or allow a file
 
 Prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
@@ -162,28 +180,6 @@ For more information on blocking and raising alerts on files, see [manage indica
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action will be visible in the same position as the **Add Indicator** action, before you added the indicator.
 
 You can also edit indicators from  the **Settings** page, under **Rules** > **Indicators**. Indicators are listed in this area by their file's hash.
-
-## Download or collect file
-
-Selecting **Download file** from the response actions allows you to download a local, password-protected .zip archive containing your file.
-
-![Image of download file action](images/atp-download-file-action.png)
-
-When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you're downloading the file. You can also set a password to open the file.
-
-![Image of download file fly-out](images/atp-download-file-reason400.png)
-
-### Download quarantined files
-
-By default, you will not be able to download files that are in quarantine.
-
-However, you can turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available.
-
-Go to **Settings** > **Advanced features** > **Download quarantined files** and switch the toggle to **On**.
-
-### Collect files
-
-If a file is not already stored by Microsoft Defender ATP, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
 
 ## Consult a threat expert
 
