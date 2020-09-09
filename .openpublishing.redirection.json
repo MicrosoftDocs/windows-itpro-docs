@@ -1850,6 +1850,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/powerbi-reports",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/windows-defender-atp/powerbi-reports.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi",
+      "redirect_document_id": true
+    },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection",

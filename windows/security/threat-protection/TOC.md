@@ -20,13 +20,18 @@
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
 
-## [Migration guides]()
-### [Migrate from Symantec to Microsoft Defender ATP]()
+## [Migration guides](microsoft-defender-atp/migration-guides.md)
+### [Switch from McAfee to Microsoft Defender ATP]()
+#### [Get an overview of migration](microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md)
+#### [Prepare for your migration](microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md) 
+#### [Set up Microsoft Defender ATP](microsoft-defender-atp/mcafee-to-microsoft-defender-setup.md)
+#### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/mcafee-to-microsoft-defender-onboard.md)
+### [Switch from Symantec to Microsoft Defender ATP]()
 #### [Get an overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
 #### [Prepare for your migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
 #### [Set up Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
 #### [Onboard to Microsoft Defender ATP](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
-### [Manage Microsoft Defender ATP post migration]()
+### [Manage Microsoft Defender ATP after migration]()
 #### [Overview](microsoft-defender-atp/manage-atp-post-migration.md)
 #### [Intune (recommended)](microsoft-defender-atp/manage-atp-post-migration-intune.md)
 #### [Configuration Manager](microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md)
@@ -66,7 +71,8 @@
 ##### [Application isolation]()
 ###### [Application guard overview](microsoft-defender-application-guard/md-app-guard-overview.md)
 ###### [System requirements](microsoft-defender-application-guard/reqs-md-app-guard.md)
-###### [Install Windows Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard](microsoft-defender-application-guard/install-md-app-guard.md)
+###### [Install Microsoft Defender Application Guard Extension](microsoft-defender-application-guard/md-app-guard-browser-extension.md)
 
 ##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 ###### [Audit Application control policies](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
@@ -338,7 +344,6 @@
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
-##### [Create and build Power BI reports using Microsoft Defender ATP data connectors (deprecated)](microsoft-defender-atp/powerbi-reports.md)
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 #### [Device health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
@@ -431,8 +436,6 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-##### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
 ##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
 #### [Permissions]()
