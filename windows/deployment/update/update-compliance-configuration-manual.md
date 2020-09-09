@@ -80,7 +80,7 @@ Many Windows and Microsoft services are required to ensure that not only the dev
 
 ## Run a full Census sync
 
-Census is a service that runs on a regular schedule on Windows devices. A number of key device attributes, like what opearting system edition is installed on the device, are included in the Census payload. However, to save network load and system resources, data that tends to be more static (like edition) is sent approximately once per week rather than on every daily run. Because of this, these attributes can take longer to appear in Update Compliance unless you start a full Census sync. The Update Compliance Configuration Script does this. 
+Census is a service that runs on a regular schedule on Windows devices. A number of key device attributes, like what operating system edition is installed on the device, are included in the Census payload. However, to save network load and system resources, data that tends to be more static (like edition) is sent approximately once per week rather than on every daily run. Because of this, these attributes can take longer to appear in Update Compliance unless you start a full Census sync. The Update Compliance Configuration Script does this. 
 
 A full Census sync adds a new registry value to Census's path. When this registry value is added, Census's configuration is overridden to force a full sync. For Census to work normally, this registry value should be enabled, Census should be started manually, and then the registry value should be disabled. Follow these steps:
 
