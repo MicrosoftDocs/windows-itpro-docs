@@ -46,65 +46,7 @@ You can also download the whitepaper [Microsoft Defender Antivirus on Virtual De
 
 ### Set up a dedicated VDI file share
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with [Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune), Group Policy, or PowerShell.
-
-> [!TIP]
-> If you don't already have Intune, [try it for free](https://docs.microsoft.com/intune/fundamentals/free-trial-sign-up)! 
-
-Open the Intune Management Portal either by searching for Intune on [https://portal.azure.com](https://portal.azure.com) or going to [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com) and logging in.
-
-#### To create a group with only the devices or users you specify
-
-1. Go to **Groups** > **New group**. 
-
-2. Specify the following values:
-   - Group type: **Security**
-   - Group name: **VDI test VMs**
-   - Group description: *Optional*
-   - Membership type: **Assigned**
-
-3. Add the devices or users you want to be a part of this test and then click **Create** to save the group. 
-
-It’s a good idea to create a couple of groups, one with VMs running the latest Insider Preview build and with the shared security intelligence update feature enabled, and another with VMs that are running Windows 10 1809 or earlier versions. This will help when you create dashboards to test the performance changes.
-
-#### To create a group that will include any machine in your tenant that is a VM, even when they are newly created
-
-1. Go to **Groups** > **New group**. 
-
-2. Specify the following values:
-   - Group type: **Security**
-   - Group name: **VDI test VMs**
-   - Group description: *Optional*
-   - Membership type: **Dynamic Device**
-
-3. Click **Simple rule**, and select **deviceModel**, **Equals**, and enter **Virtual Machine**. 
-
-4. Click **Add query** and then **Create** to save the group.
-
-5. Go to **Device configuration**, then **Profiles**. You can modify an existing custom profile or create a new one. 
-
-#### Create a new device configuration profile
-
-In this example, we create a new device configuration profile by clicking **Create profile**.
-
-1. Name it, choose **Windows 10 and later** as the Platform and – most importantly – select **Custom** as the profile type.
-
-2. The **Custom OMA-URI Settings** blade is opened automatically. Click **Add** then enter the following values:
-   - Name: **VDI shared sig location**
-   - Description: *Optional*
-   - OMA-URI: **./Vendor/MSFT/Defender/SharedSignatureRoot**
-   - Data type: **String**
-   - `\\<sharedlocation\>\wdav-update\` (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be)
-
-3. Click **Ok** to close the details blade, then **OK** again to close the **Custom OMA-URI Settings** blade. 
-
-4. Click **Create** to save the new profile. The profile details page now appears.
-
-5. Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
-
-6. Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
-
-The profile will now be deployed to the impacted devices. This may take some time.
+In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with a Group Policy, or PowerShell.
 
 #### Use Group Policy to enable the shared security intelligence feature:
 
