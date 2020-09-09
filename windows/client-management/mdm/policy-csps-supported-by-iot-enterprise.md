@@ -66,7 +66,7 @@ ms.date: 07/18/2019
 - [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#update-configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineNoAutoReboot](policy-csp-update.md#update-configuredeadlinenoautoreboot)
-- [Update/SetAutoRestartNotificationDisable](policy-csp-update.md#update-setautorestartnotificationdisable)
+- [Update/SetProxyBehaviorForUpdateDetection](policy-csp-update.md#update-setproxybehaviorforupdatedetection)
 
 ## Related topics
 

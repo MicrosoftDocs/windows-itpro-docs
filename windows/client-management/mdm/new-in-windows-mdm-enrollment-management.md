@@ -1415,7 +1415,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>Update/ExcludeWUDriversInQualityUpdate</li>
 <li>Update/PauseFeatureUpdates</li>
 <li>Update/PauseQualityUpdates</li>
-<li>Update/SetAutoRestartNotificationDisable</li>
+<li>Update/SetProxyBehaviorForUpdateDetection</li>
 <li>Update/UpdateServiceUrlAlternate (Added in the January service release of Windows 10, version 1607)</li>
 <li>WindowsInkWorkspace/AllowWindowsInkWorkspace</li>
 <li>WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</li>
@@ -2001,7 +2001,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### September 2020
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - Update](policy-csp-update.md)|Added the following policy setting:<br> Update/SetAutoRestartNotificationDisable <br>|
+|[Policy CSP - Update](policy-csp-update.md)|Added the following policy setting:<br> Update/SetProxyBehaviorForUpdateDetection <br>|
 
 ### August 2020
 |New or updated topic | Description|
