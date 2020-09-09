@@ -26,7 +26,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
-The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
+The **Service health** provides information on the current status of the Microsoft Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
 You'll also see information on historical issues that have been resolved and details such as the date and time when the issue was resolved. When there are no issues on the service, you'll see a healthy status.
 

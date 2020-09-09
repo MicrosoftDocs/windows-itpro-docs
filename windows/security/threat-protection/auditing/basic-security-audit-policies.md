@@ -1,6 +1,6 @@
 ---
 title: Basic security audit policies (Windows 10)
-description: Before you implement auditing, you must decide on an auditing policy.
+description: Learn about basic security audit policies that specify the categories of security-related events that you want to audit for the needs of your organization.
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
 ms.reviewer: 
 ms.author: dansimp

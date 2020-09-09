@@ -1,6 +1,6 @@
 ---
 title: How to configure Diffie Hellman protocol over IKEv2 VPN connections (Windows 10)
-description: Explains how to secure VPN connections for Diffie Hellman Group 2
+description: Learn how to update the Diffie Hellman configuration of VPN servers and clients by running VPN cmdlets to secure connections.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
