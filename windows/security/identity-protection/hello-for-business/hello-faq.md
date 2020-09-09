@@ -77,9 +77,7 @@ Communicating with Azure Active Directory uses the following URLs:
 - login.windows.net
 
 If your environment uses Microsoft Intune, you need these additional URLs:
-- enrollment.manage-beta.microsoft.com
 - enrollment.manage.microsoft.com
-- portal.manage-beta.microsoft.com
 - portal.manage.microsoft.com
 
 ## What is the difference between non-destructive and destructive PIN reset?

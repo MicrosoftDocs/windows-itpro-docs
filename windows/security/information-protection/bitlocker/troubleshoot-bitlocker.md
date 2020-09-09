@@ -28,7 +28,7 @@ Open Event Viewer and review the following logs under Applications and Services 
    - Microsoft-Windows-BitLocker/BitLocker Operational
    - Microsoft-Windows-BitLocker/BitLocker Management
 
-- **BitLocker-DrivePreparationTool**. Review the Admin log,  the **Operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
+- **BitLocker-DrivePreparationTool**. Review the Admin log,  the Operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
    - Microsoft-Windows-BitLocker-DrivePreparationTool/Operational
    - Microsoft-Windows-BitLocker-DrivePreparationTool/Admin
 
