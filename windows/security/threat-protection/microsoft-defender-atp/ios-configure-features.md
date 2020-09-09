@@ -36,8 +36,8 @@ on how to configure custom indicators
 
 ## Web Protection
 By default, Microsoft Defender ATP for iOS includes and enables the web
-protection feature. [Web
-protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview) helps
+protection feature. [Web
+protection](web-protection-overview.md) helps
 to secure devices against web threats and protect users from phishing attacks.
 
 >[!NOTE]

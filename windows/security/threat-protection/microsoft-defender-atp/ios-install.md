@@ -34,7 +34,7 @@ app from TestFlight.
 
 Deployment devices need to be enrolled on Intune Company portal. Refer to
 [Enroll your
-device](https://docs.microsoft.com/en-us/mem/intune/enrollment/ios-enroll) to
+device](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll) to
 learn more about Intune device enrollment
 
 ## Before you begin
@@ -42,8 +42,8 @@ learn more about Intune device enrollment
 -   Ensure you have access to [Microsoft Endpoint manager admin
     center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
--   Ensure iOS enrollment is done for your users. Users need to have MDATP
-    license assigned in order to use MDATP for iOS. Refer [Assign licenses to
+-   Ensure iOS enrollment is done for your users. Users need to have Microsoft Defender ATP
+    license assigned in order to use Microsoft Defender ATP for iOS. Refer [Assign licenses to
     users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
     for instructions on how to assign licenses
 
