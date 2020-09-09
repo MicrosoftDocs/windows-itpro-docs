@@ -85,5 +85,5 @@ Census is a service that runs on a regular cadence on Windows machines. A number
 A full Census sync is accomplished by adding a new registry value to Census's path. When this registry value is added, Census's configuration is overridden to force a full sync. It is recommended that this registry value is enabled, Census is manually invoked, and then the registry value is disabled to allow Census to operate normally. The steps to accomplish this are below:
 
 1. For every device you are manually configuring for Update Compliance, add or modify the registry key located at **HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Census** to include a new **DWORD value** named **FullSync** and set to 1. 
-2. Run devicecensus.exe with administrator priviledges on every device. devicecensus.exe is located in the System32 folder. No additional parameters are required. 
-3. After devicecensus.exe has run, the FullSync value can be removed or set back to 0. 
+2. Run devicecensus.exe with administrator privileges on every device. devicecensus.exe is located in the System32 folder. No additional run parameters are required. 
+3. After devicecensus.exe has run, the FullSync value can be removed or set to 0. 
