@@ -24,7 +24,7 @@ Sometimes, following a crash, you might be unable to successfully boot into your
 If you've entered the correct Bitlocker recovery key multiple times, and are still unable to continue past the initial recovery screen, follow these steps to break out of the loop.
 
 > [!NOTE]
-> Only try these steps after you have restarted your device at least once.
+> Try these steps only after you have restarted your device at least once.
 
 1. On the initial recovery screen, don't enter your recovery key. Instead, select **Skip this drive**.
 
