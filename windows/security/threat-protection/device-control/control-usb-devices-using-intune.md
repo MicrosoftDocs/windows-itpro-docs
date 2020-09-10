@@ -97,14 +97,14 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is  based on the vendor ID and product ID values for a device. 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers). 
 
-To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
+To find the vendor or product IDs, see [Look up device v](#look-up-device-vendor-id-or-product-id). 
 
 For example:
 
 1. Remove class USBDevice from the **Allow installation of devices using drivers that match these device setup**.
-2. Add the vendor ID or product ID to allow in the **Allow installation of device that match any of these device IDs**. 
+2. Add the device ID to allow in the **Allow installation of device that match any of these device IDs**. 
 
 
 #### Prevent installation and usage of USB drives and other peripherals
@@ -121,12 +121,12 @@ The **Prevent installation of devices that match any of these device IDs** polic
 
 To prevent installation of devices that match any of these device IDs: 
 
-1. [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id) for devices that you want Windows to prevent from installing.
+1. [Look up device ID](#look-up-device-id) for devices that you want Windows to prevent from installing.
 ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
 2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
 ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
 
-#### Look up device vendor ID or product ID
+#### Look up device ID
 You can use Device Manager to look up a device vendor or product ID.
 
 1. Open Device Manager.
