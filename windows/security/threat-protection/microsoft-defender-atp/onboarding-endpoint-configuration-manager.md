@@ -170,7 +170,7 @@ Follow the steps below to identify the Microsoft Defender ATP Workspace ID and W
         [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
     -   Install either [.NET Framework
-        4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or
+        4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or
         later) **or**
         [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
         Do not install both on the same system.
