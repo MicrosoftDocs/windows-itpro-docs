@@ -19,8 +19,11 @@
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
 ### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
+#### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
+#### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
 
-## [Migration guides]()
+
+## [Migration guides](microsoft-defender-atp/migration-guides.md)
 ### [Switch from McAfee to Microsoft Defender ATP]()
 #### [Get an overview of migration](microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md)
 #### [Prepare for your migration](microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md) 
@@ -97,7 +100,7 @@
 #### [Network protection]()
 ##### [Protect your network](microsoft-defender-atp/network-protection.md)
 ##### [Evaluate network protection](microsoft-defender-atp/evaluate-network-protection.md)
-##### [Turning on network protection](microsoft-defender-atp/enable-network-protection.md)
+##### [Turn on network protection](microsoft-defender-atp/enable-network-protection.md)
  
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)

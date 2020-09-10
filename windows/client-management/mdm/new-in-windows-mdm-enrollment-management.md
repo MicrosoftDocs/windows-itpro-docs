@@ -58,6 +58,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [September 2020](#september-2020)
     - [August 2020](#august-2020)
     - [July 2020](#july-2020)
     - [June 2020](#june-2020)
@@ -768,7 +769,6 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
-<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li>
@@ -1414,6 +1414,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>Update/ExcludeWUDriversInQualityUpdate</li>
 <li>Update/PauseFeatureUpdates</li>
 <li>Update/PauseQualityUpdates</li>
+<li>Update/SetProxyBehaviorForUpdateDetection</li>
 <li>Update/UpdateServiceUrlAlternate (Added in the January service release of Windows 10, version 1607)</li>
 <li>WindowsInkWorkspace/AllowWindowsInkWorkspace</li>
 <li>WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</li>
@@ -1995,6 +1996,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### September 2020
+|New or updated topic | Description|
+|--- | ---|
+
+|[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following policy setting from the documentation because it is not supported in Windows 10:<br> LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon <br>|
 
 ### August 2020
 |New or updated topic | Description|
@@ -3018,7 +3025,6 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li>
-<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li>
