@@ -2000,8 +2000,8 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### September 2020
 |New or updated topic | Description|
 |--- | ---|
+
 |[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following policy setting from the documentation because it is not supported in Windows 10:<br> LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon <br>|
-|[Policy CSP - Update](policy-csp-update.md)|Added the following policy setting:<br> Update/SetProxyBehaviorForUpdateDetection <br>|
 
 ### August 2020
 |New or updated topic | Description|
