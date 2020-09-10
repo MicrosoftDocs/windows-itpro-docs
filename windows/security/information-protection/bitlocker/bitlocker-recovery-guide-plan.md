@@ -360,7 +360,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |----------------------|-----------------|
 |     Saved to Microsoft Account     |     No          |
 |     Saved to Azure AD     |     No          |
-|     Saved to Acive Directory      |     No          |
+|     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
 |     Saved to file    |     Yes         |
 |     Creation time    |     **1PM**     |
