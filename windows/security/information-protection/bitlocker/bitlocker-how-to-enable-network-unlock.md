@@ -65,7 +65,7 @@ The Network Unlock server component is installed on supported versions of Window
 
 Network Unlock requires Windows Deployment Services (WDS) in the environment where the feature will be utilized. Configuration of the WDS installation is not required; however, the WDS service must be running on the server.
 
-The network key is stored on the system drive along with an AES 256 session key and encrypted with the 2048-bit RSA public key of the unlock server's (**should this be "unlocked server's certificate or Unlock server certificate**) certificate. The network key is decrypted with the help of a provider on a supported version of Windows Server running WDS, and returned encrypted with its corresponding session key.
+The network key is stored on the system drive along with an AES 256 session key and encrypted with the 2048-bit RSA public key of the Unlock server certificate. The network key is decrypted with the help of a provider on a supported version of Windows Server running WDS, and returned encrypted with its corresponding session key.
 
 ## <a href="" id="bkmk-networkunlockseq"></a>Network Unlock sequence
 
