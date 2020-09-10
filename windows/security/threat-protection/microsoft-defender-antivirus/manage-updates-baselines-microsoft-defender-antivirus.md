@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/07/2020
+ms.date: 09/10/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -30,6 +30,10 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > This also applies to devices where Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+> [!NOTE]
+> You can use the below URL to find out what are the current versions:
+> [https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 
 ## Security intelligence updates
 
@@ -59,7 +63,7 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
-<summary> August-2020 (Platform: 4.18.2008.3 | Engine: 1.1.17400.5)</summary>
+<summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.9.0**  
 &ensp;Released: **August 27, 2020**  
@@ -72,6 +76,7 @@ All our updates contain:
 * Improved scan event telemetry
 * Improved behavior monitoring for memory scans
 * Improved macro streams scanning
+* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
 
 ### Known Issues
 No known issues  
