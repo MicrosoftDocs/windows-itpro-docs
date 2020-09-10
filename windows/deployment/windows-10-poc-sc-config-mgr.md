@@ -45,23 +45,21 @@ This guide provides end-to-end instructions to install and configure Microsoft E
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-<div style='font-size:9.0pt'>
-<table border="1" cellspacing="0" cellpadding="0">
-<tr><td BGCOLOR="#a0e4fa"><b>Topic</b><td BGCOLOR="#a0e4fa"><b>Description</b><td BGCOLOR="#a0e4fa"><b>Time</b>
-
-<tr><td><a href="#install-prerequisites" data-raw-source="[Install prerequisites](#install-prerequisites)">Install prerequisites</a><td>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<td>60 minutes
-<tr><td><a href="#install-microsoft-endpoint-configuration-manager" data-raw-source="[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)">Install Microsoft Endpoint Configuration Manager</a><td>Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.<td>45 minutes
-<tr><td><a href="#download-mdop-and-install-dart" data-raw-source="[Download MDOP and install DaRT](#download-mdop-and-install-dart)">Download MDOP and install DaRT</a><td>Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.<td>15 minutes
-<tr><td><a href="#prepare-for-zero-touch-installation" data-raw-source="[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)">Prepare for Zero Touch installation</a><td>Prerequisite procedures to support Zero Touch installation.<td>60 minutes
-<tr><td><a href="#create-a-boot-image-for-configuration-manager" data-raw-source="[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)">Create a boot image for Configuration Manager</a><td>Use the MDT wizard to create the boot image in Configuration Manager.<td>20 minutes
-<tr><td><a href="#create-a-windows-10-reference-image" data-raw-source="[Create a Windows 10 reference image](#create-a-windows-10-reference-image)">Create a Windows 10 reference image</a><td>This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.<td>0-60 minutes
-<tr><td><a href="#add-a-windows-10-operating-system-image" data-raw-source="[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)">Add a Windows 10 operating system image</a><td>Add a Windows 10 operating system image and distribute it.<td>10 minutes<tr><td><a href="#create-a-task-sequence" data-raw-source="[Create a task sequence](#create-a-task-sequence)">Create a task sequence</a><td>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<td>15 minutes
-<tr><td><a href="#finalize-the-operating-system-configuration" data-raw-source="[Finalize the operating system configuration](#finalize-the-operating-system-configuration)">Finalize the operating system configuration</a><td>Enable monitoring, configure rules, and distribute content.<td>30 minutes
-<tr><td><a href="#deploy-windows-10-using-pxe-and-configuration-manager" data-raw-source="[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)">Deploy Windows 10 using PXE and Configuration Manager</a><td>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<td>60 minutes
-<tr><td><a href="#replace-a-client-with-windows-10-using-configuration-manager" data-raw-source="[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)">Replace a client with Windows 10 using Configuration Manager</a><td>Replace a client computer with Windows 10 using Configuration Manager.<td>90 minutes
-<tr><td><a href="#refresh-a-client-with-windows-10-using-configuration-manager" data-raw-source="[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)">Refresh a client with Windows 10 using Configuration Manager</a><td>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<td>90 minutes
-</table>
-</div>
+||||
+|--- |--- |--- |
+|Topic|Description|Time|
+|[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
+|[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
+|[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
+|[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)|Prerequisite procedures to support Zero Touch installation.|60 minutes|
+|[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)|Use the MDT wizard to create the boot image in Configuration Manager.|20 minutes|
+|[Create a Windows 10 reference image](#create-a-windows-10-reference-image)|This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.|0-60 minutes|
+|[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)|Add a Windows 10 operating system image and distribute it.|10 minutes|
+|[Create a task sequence](#create-a-task-sequence)|Create a Configuration Manager task sequence with MDT integration using the MDT wizard|15 minutes|
+|[Finalize the operating system configuration](#finalize-the-operating-system-configuration)|Enable monitoring, configure rules, and distribute content.|30 minutes|
+|[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)|Deploy Windows 10 using Configuration Manager deployment packages and task sequences.|60 minutes|
+|[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)|Replace a client computer with Windows 10 using Configuration Manager.|90 minutes|
+|[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)|Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT|90 minutes|
 
 ## Install prerequisites
 
@@ -219,7 +217,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 > [!IMPORTANT]
 > This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
-> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](https://blogs.msdn.microsoft.com/zainnab/2011/03/14/bizspark-free-msdn-subscription-for-start-up-companies/).
+> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](https://docs.microsoft.com/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
 
 1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
