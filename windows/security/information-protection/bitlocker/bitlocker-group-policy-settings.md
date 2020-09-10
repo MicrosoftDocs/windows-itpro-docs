@@ -344,7 +344,7 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
 </tr>
 <tr class="even">
 <td align="left"><p><b>Policy path</b></p></td>
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives</p></td>
+<td align="left"><p><b>Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives</b></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
@@ -427,7 +427,7 @@ This policy setting allows you to configure whether standard users are allowed t
 </tr>
 <tr class="even">
 <td align="left"><p><b>Policy path</b></p></td>
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives</p></td>
+<td align="left"><p><b>Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives</b></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><b>Conflicts</b></p></td>
