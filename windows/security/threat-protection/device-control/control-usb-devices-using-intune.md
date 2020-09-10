@@ -8,7 +8,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
-ms.date: 10/04/2019
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
@@ -23,7 +22,7 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 1. [Discover plug and play connected events for peripherals in Microsoft Defender ATP advanced hunting](#discover-plug-and-play-connected-events). Identify or investigate suspicious usage activity.
 
 2. Configure to allow or block only certain removable devices and prevent threats.
-    1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor IDs, product IDs, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
+    1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by using USB device IDs. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
     2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
            - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
@@ -98,7 +97,9 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is  based on the vendor ID and product ID values for a device. 
+
+To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
 
 For example:
 
@@ -116,7 +117,7 @@ If you want to prevent the installation of a device class or certain devices, yo
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
 
-The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of vendor or product IDs for devices that Windows is prevented from installing. 
+The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of devices that Windows is prevented from installing. 
 
 To prevent installation of devices that match any of these device IDs: 
 
@@ -139,7 +140,7 @@ For information on vendor and product ID formats, see [Standard USB Identifiers]
 
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
-The following is an example for looking up a device vendor ID or product ID using PowerShell: 
+The following is an example for looking up a device vendor ID or product ID (which is part of the device ID) using PowerShell: 
 ``` PowerShell
 Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
