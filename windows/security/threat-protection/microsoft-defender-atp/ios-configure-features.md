@@ -43,14 +43,13 @@ to secure devices against web threats and protect users from phishing attacks.
 >[!NOTE]
 >Microsoft Defender ATP for iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device. 
 
-
->[!NOTE]
->**Battery Consumption by Microsoft Defender ATP for iOS**<br>
-> Battery usage by an app is computed by Apple based on a multitude of factors
-including CPU and Network usage. Microsoft Defender ATP uses VPN in the
+## Battery Consumption by Microsoft Defender ATP for iOS
+Battery usage by an app is computed by Apple based on a multitude of factors
+including CPU and Network usage. Microsoft Defender ATP uses a self-looping VPN in the
 background to check web traffic for any malicious websites or connections. Every
 network packet from any app goes through this check and iOS
 wrongly accounts this in computing the battery usage of Microsoft Defender ATP.
 This gives a false impression to the user. The actual battery consumption of
 Microsoft Defender ATP is much less than what is shown on the Battery Settings
 page on the device.
+
