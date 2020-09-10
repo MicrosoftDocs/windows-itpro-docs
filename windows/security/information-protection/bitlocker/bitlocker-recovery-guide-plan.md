@@ -273,7 +273,7 @@ During BitLocker recovery, Windows displays a custom recovery message and a few 
 
 ### Custom recovery message
 
-BitLocker group policy settings in Windows 10, version 1511, let you confiure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+BitLocker group policy settings in Windows 10, version 1511, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
 
 This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
 
@@ -290,25 +290,25 @@ Example of customized recovery screen:
 
 ### BitLocker recovery key hints
 
-BitLocker metadata has been enhanced in Windows 10, version 1903 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume’s recovery key. Hints are displayed on the recovery screen and refer to the location where key has been saved. Hints are displayed in both the modern (blue) and legacy (black) recovery screen. This applies to both the bootmanager recovery screen and the WinRE unlock screen.
+BitLocker metadata has been enhanced in Windows 10, version 1903, to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume’s recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the bootmanager recovery screen and the WinRE unlock screen.
 
 ![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
 
 > [!IMPORTANT]
-> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft Account.
+> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft account.
 
 
-There are rules governing which hint is shown during the recovery (in order of processing):
+There are rules governing which hint is shown during the recovery (in the order of processing):
 
 1. Always display custom recovery message if it has been configured (using GPO or MDM).
 2. Always display generic hint: "For more information, go to https://aka.ms/recoverykeyfaq."
-3. If multiple recovery keys exist on the volume, prioritize the last created (and successfully backed up) recovery key.
+3. If multiple recovery keys exist on the volume, prioritize the last-created (and successfully backed up) recovery key.
 4. Prioritize keys with successful backup over keys that have never been backed up.
 5. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Azure AD > Active Directory**. 
 6. If a key has been printed and saved to file, display a combined hint, “Look for a printout or a text file with the key,” instead of two separate hints.
-7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed up date.
-8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” will be displayed. 
-9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system will ask for a key that has been backed up, even if another key is newer. 
+7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed-up date.
+8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” is displayed. 
+9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system asks for a key that has been backed up, even if another key is newer. 
 
 
 #### Example 1 (single recovery key with single backup)
@@ -321,7 +321,8 @@ There are rules governing which hint is shown during the recovery (in order of p
 |     Printed          |     No     |
 |     Saved to file    |     No     |
 
-**Result:** The hint for the Microsoft Account and custom URL are displayed.
+**Result:** The hints for the Microsoft account and custom URL are displayed.
+
 
 ![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
 
@@ -424,38 +425,38 @@ If the recovery methods discussed earlier in this document do not unlock the vol
 > [!NOTE]
 > You must use the BitLocker Repair tool **repair-bde** to use the BitLocker key package.
  
-The BitLocker key package is not saved by default. To save the package along with the recovery password in AD DS you must select the **Backup recovery password and key package** option in the Group Policy settings that control the recovery method. You can also export the key package from a working volume. For more details on how to export key packages, see [Retrieving the BitLocker Key Package](#bkmk-appendixc).
+The BitLocker key package is not saved, by default. To save the package along with the recovery password in AD DS, you must select the **Backup recovery password and key package** option in the group policy settings that control the recovery method. You can also export the key package from a working volume. For more details on how to export key packages, see [Retrieving the BitLocker Key Package](#bkmk-appendixc).
 
 ## <a href="" id="bkmk-appendixb"></a>Resetting recovery passwords
 
-You should invalidate a recovery password after it has been provided and used. It should also be done when you intentionally want to invalidate an existing recovery password for any reason.
+You must invalidate a recovery password after it has been provided and used, and when you intentionally want to invalidate an existing recovery password for any reason.
 
 You can reset the recovery password in two ways:
 
--   **Use manage-bde** You can use manage-bde to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
--   **Run a script** You can run a script to reset the password without decrypting the volume. The sample script in the procedure illustrates this functionality. The sample script creates a new recovery password and invalidates all other passwords.
+-   **Use manage-bde**. You can use manage-bde to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
+-   **Run a script**. You can run a script to reset the password without decrypting the volume. The sample script in the procedure illustrates this functionality. The sample script creates a new recovery password and invalidates all other passwords.
 
 **To reset a recovery password using manage-bde**
 
-1.  Remove the previous recovery password
+1.  Remove the previous recovery password.
 
     ```powershell
     Manage-bde –protectors –delete C: –type RecoveryPassword
     ```
 
-2.  Add the new recovery password
+2.  Add the new recovery password.
 
     ```powershell
     Manage-bde –protectors –add C: -RecoveryPassword
     ```
 
-3.  Get the ID of the new recovery password. From the screen copy the ID of the recovery password.
+3.  Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
 
     ```powershell
     Manage-bde –protectors –get C: -Type RecoveryPassword
     ```
 
-4.  Backup the new recovery password to AD DS
+4.  Backup the new recovery password to AD DS.
 
     ```powershell
     Manage-bde –protectors –adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
@@ -466,6 +467,7 @@ You can reset the recovery password in two ways:
 **To run the sample recovery password script**
 
 1.  Save the following sample script in a VBScript file. For example: ResetPassword.vbs.
+**Question: The sample script seems missing**.
 2.  At the command prompt, type a command similar to the following:
 
     **cscript ResetPassword.vbs**
@@ -474,7 +476,7 @@ You can reset the recovery password in two ways:
     > This sample script is configured to work only for the C volume. You must customize the script to match the volume where you want to test password reset.
 
 > [!NOTE]
-> To manage a remote computer, you can specify the remote computer name rather than the local computer name.
+> To manage a remote computer, you must specify the remote computer name rather than the local computer name.
  
 You can use the following sample script to create a VBScript file to reset the recovery passwords.
 
@@ -553,10 +555,11 @@ WScript.Echo "A new recovery password has been added. Old passwords have been re
 
 You can use two methods to retrieve the key package, as described in [Using Additional Recovery Information](#bkmk-usingaddrecovery):
 
--   **Export a previously-saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
+-   **Export a previously saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
 -   **Export a new key package from an unlocked, BitLocker-protected volume.** You must have local administrator access to the working volume, before any damage has occurred.
 
-The following sample script exports all previously-saved key packages from AD DS.
+The following sample script exports all previously saved key packages from AD DS.
+**Question: Sample script seems missing**
 
 **To run the sample key package retrieval script**
 
