@@ -99,7 +99,7 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers). 
 
-To find the vendor or product IDs, see [Look up device ID](#look-up-device-id). 
+To find the device IDs, see [Look up device ID](#look-up-device-id). 
 
 For example:
 
@@ -111,7 +111,7 @@ For example:
 
 If you want to prevent the installation of a device class or certain devices, you can use the prevent device installation policies:
 
-1. Enable **Prevent installation of devices that match any of these device IDs**.
+1. Enable **Prevent installation of devices that match any of these device IDs** and add these devices to the list.
 2. Enable **Prevent installation of devices using drivers that match these device setup classes**.
 
 > [!Note]
@@ -127,7 +127,7 @@ To prevent installation of devices that match any of these device IDs:
 ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
 
 #### Look up device ID
-You can use Device Manager to look up a device vendor or product ID.
+You can use Device Manager to look up a device ID.
 
 1. Open Device Manager.
 2. Click **View** and select **Devices by connection**.
