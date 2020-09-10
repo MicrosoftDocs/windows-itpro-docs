@@ -1996,7 +1996,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### September 2020
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following unsupported policy settings from the documentation:<br>- LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon <br>- LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways<br>- LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible<br>- LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges<br>- LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems<br>|
+|[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following unsupported LocalPoliciesSecurityOptions policy settings from the documentation:<br>- RecoveryConsole_AllowAutomaticAdministrativeLogon <br>- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways<br>- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible<br>- DomainMember_DisableMachineAccountPasswordChanges<br>- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems<br>|
 
 ### August 2020
 |New or updated topic | Description|
