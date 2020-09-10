@@ -136,7 +136,7 @@ You can use Device Manager to look up a device vendor or product ID.
 5. Click the **Property** drop-down list and select **Hardware Ids**.
 6. Right-click the top ID value and select **Copy**.
 
-For information on vendor and product ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers).
+For information about Device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers).
 
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
