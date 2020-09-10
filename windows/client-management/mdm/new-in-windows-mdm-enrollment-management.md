@@ -439,9 +439,6 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/Devices_AllowedToFormatAndEjectRemovableMedia</li>
 <li>LocalPoliciesSecurityOptions/Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</li>
 <li>LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>
 <li>LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</li>
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees</li>
 <li>LocalPoliciesSecurityOptions/MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers</li>
@@ -459,7 +456,6 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
-<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
 <li>Notifications/DisallowCloudNotification</li>
@@ -2000,8 +1996,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 ### September 2020
 |New or updated topic | Description|
 |--- | ---|
-
-|[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following policy setting from the documentation because it is not supported in Windows 10:<br> LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon <br>|
+|[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following unsupported LocalPoliciesSecurityOptions policy settings from the documentation:<br>- RecoveryConsole_AllowAutomaticAdministrativeLogon <br>- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways<br>- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible<br>- DomainMember_DisableMachineAccountPasswordChanges<br>- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems<br>|
 
 ### August 2020
 |New or updated topic | Description|
@@ -2443,9 +2438,6 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <ul>
 <li>Bluetooth/AllowPromptedProximalConnections</li>
 <li>KioskBrowser/EnableEndSessionButton</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</li>
-<li>LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic</li>
@@ -2654,7 +2646,6 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</li>
 <li>LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</li>
 <li>LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</li>
-<li>LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</li>
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li>
 <li>RestrictedGroups/ConfigureGroupMembership</li>
