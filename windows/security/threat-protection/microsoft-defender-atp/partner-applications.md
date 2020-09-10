@@ -38,7 +38,7 @@ Partner name   | Description |Category
 |AzureSentinel | Stream alerts from Microsoft Defender Advanced Threat Protection into Azure Sentinel |Security information and analytics 
 |Elastic Security | Elastic Security is a free and open solution for preventing, detecting, and responding to threats.|Security information and analytics 
 |AttackIQ Platform | AttackIQ Platform validates MDATP is configured properly by launching continuous attacks safely on production assets|Security information and analytics 
-|Skybox® Vulnerability Control | Skybox® Vulnerability Control cuts through the noise of vulnerability management, correlating business, network threat context to uncover your riskiest vulnerabilities.|Security information and analytics
+|Skybox Vulnerability Control | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network threat context to uncover your riskiest vulnerabilities.|Security information and analytics
 | Splunk | The Microsoft Defender ATP Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk |Security information and analytics 
 |IBM QRadar | Configure IBM QRadar to collect detections from Microsoft Defender ATP |Security information and analytics 
 |Cymulate | Correlate Defender ATP findings with simulated attacks to validate accurate detection and effective response actions |Security information and analytics 
