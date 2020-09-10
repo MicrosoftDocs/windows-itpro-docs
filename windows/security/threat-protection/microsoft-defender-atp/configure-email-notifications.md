@@ -95,5 +95,4 @@ This section lists various issues that you may encounter when using email notifi
 
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Configure advanced features](advanced-features.md)
