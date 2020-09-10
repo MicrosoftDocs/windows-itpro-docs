@@ -99,7 +99,7 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers). 
 
-To find the vendor or product IDs, see [Look up device ID](#look-up-device-vendor-id-or-product-id). 
+To find the vendor or product IDs, see [Look up device ID](#look-up-device-id). 
 
 For example:
 
