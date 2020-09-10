@@ -2499,15 +2499,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly" id="localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly">LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways" id="localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible" id="localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges" id="localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges">LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked">LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</a>
   </dd>
   <dd>
@@ -2590,9 +2581,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile" id="localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile">LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems" id="localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems">LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
