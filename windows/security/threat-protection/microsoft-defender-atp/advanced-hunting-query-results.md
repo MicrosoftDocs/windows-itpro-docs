@@ -113,6 +113,12 @@ After running a query, select **Export** to save the results to local file. Your
 ## Drill down from query results
 To view more information about entities, such as devices, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity.
 
+To quickly inspect a record in your query results, select the corresponding row to open the Inspect record panel. The panel provides the following information based on the selected record:
+
+- **Assets** — A summarized view of the main assets (mailboxes, devices, and users) found in the record, enriched with available information, such as risk and exposure levels
+- **Process tree** — A chart generated for records with process information and enriched using available contextual information; in general, queries that return more columns can result in richer process trees.
+- **All details** — Lists all the values from the columns in the record
+
 ## Tweak your queries from the results
 Right-click a value in the result set to quickly enhance your query. You can use the options to:
 
@@ -123,9 +129,9 @@ Right-click a value in the result set to quickly enhance your query. You can use
 ![Image of advanced hunting result set](images/advanced-hunting-results-filter.png)
 
 ## Filter the query results
-The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
+The filters displayed in the right pane provide a summary of the result set. Every column has its own section in the pane, each of which lists the values found in that column, and the number of instances.
 
-Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude and then selecting **Run query**.
+Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude. Then selecting **Run query**.
 
 ![Image of advanced hunting filter](images/advanced-hunting-filter.png)
 
