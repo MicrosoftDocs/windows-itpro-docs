@@ -175,7 +175,11 @@ If your organization does not have cloud resources, write **On-Premises** in box
 > * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.
 > * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
 >   * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
->     * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
+>   * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
+> [!IMPORTANT]
+>  * On-premises deployment is for environments without Azure AD presence. 
+>  * Migration from on-premise to hybrid deployment will require redeployment.
+> Main use case is for "Enhanced Security Administrative Environments" also known as "Red Forests".
 
 ### Trust type
 
