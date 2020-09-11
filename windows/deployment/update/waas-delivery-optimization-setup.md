@@ -191,7 +191,7 @@ With no options, this cmdlet returns these data:
 - overall efficiency
 - efficiency in the peered files
 
-Using the `-ListConnections` option returns these detauls about peers:
+Using the `-ListConnections` option returns these details about peers:
 
 - destination IP address
 - peer type
