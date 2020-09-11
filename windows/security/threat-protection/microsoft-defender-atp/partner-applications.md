@@ -31,7 +31,7 @@ The support for third-party solutions help to further streamline, integrate, and
 
 Microsoft Defender ATP seamlessly integrates with existing security solutions - providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
 
-## Supported partner applications
+## Supported applications
 
 Partner name   | Description |Category 
 :---|:---|:---
@@ -85,4 +85,4 @@ Microsoft Defender ATP allows you to integrate with such solutions and act on Io
 Microsoft Defender ATP currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.  
 
 ## Support for non-Windows platforms
-Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data giving you a unified experience.
+Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. 
