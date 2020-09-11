@@ -169,17 +169,10 @@ If your organization does not have on-premises resources, write **Cloud Only** i
 If your organization is federated with Azure or uses any service, such as Azure AD connect, Office365 or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
+
 > [!NOTE]
-> If you're unsure if your organization uses Azure, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
-> ```Get-AdObject "CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
-> * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.
-> * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
->   * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
->   * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
-> [!IMPORTANT]
->  * On-premises deployment is for environments without Azure AD presence. 
->  * Migration from on-premise to hybrid deployment will require redeployment.
-> Main use case is for "Enhanced Security Administrative Environments" also known as "Red Forests".
+>  * Main use case of On-premises deployment is for "Enhanced Security Administrative Environments" also known as "Red Forests".  
+>  * Migration from On-premise to hybrid deployment will require redeployment.
 
 ### Trust type
 
