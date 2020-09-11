@@ -39,7 +39,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 1. In the Jamf Pro dashboard, navigate to **Enrollment invitations**.
 
-    ![A screenshot of a social media post Description automatically generated](images/a347307458d6a9bbfa88df7dbe15398f.png)
+    ![Image of configuration settings](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
 2. Select **+ New**.
 
@@ -47,46 +47,54 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
-    ![A screenshot of a cell phone Description automatically generated](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
+    ![Image of configuration settings](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
-    ![A screenshot of a cell phone Description automatically generated](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
+    ![Image of configuration settings](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
 
     For example: janedoe@contoso.com
 
-    ![A screenshot of a cell phone Description automatically generated](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
+    ![Image of configuration settings](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
 
 4. Configure the message for the invitation.
 
-    ![A screenshot of a cell phone Description automatically generated](images/ce580aec080512d44a37ff8e82e5c2ac.png)
+    ![Image of configuration settings](images/ce580aec080512d44a37ff8e82e5c2ac.png)
 
-    ![A screenshot of a computer screen Description automatically generated](images/5856b765a6ce677caacb130ca36b1a62.png)
+    ![Image of configuration settings](images/5856b765a6ce677caacb130ca36b1a62.png)
 
-    ![A screenshot of a computer screen Description automatically generated](images/3ced5383a6be788486d89d407d042f28.png)
+    ![Image of configuration settings](images/3ced5383a6be788486d89d407d042f28.png)
 
-    ![A screenshot of a social media post Description automatically generated](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
+    ![Image of configuration settings](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
 ## Enrollment Method 2: Prestage Enrollments
 
 1. In the Jamf Pro dashboard, navigate to **Prestage enrollments**.
 
-    ![A screenshot of a cell phone Description automatically generated](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
+    ![Image of configuration settings](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
 2. Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)
 
 ## Enroll macOS device
 
-![Image of Jamf Pro enrollment](images/jamfpro-ca-certificate.png)
+1. Select **Continue** and install the CA certificate from a **System Preferences** window.
 
+    ![Image of Jamf Pro enrollment](images/jamfpro-ca-certificate.png)
 
-![Image of Jamf Pro enrollment](images/jamfpro-install-mdm-profile.png)
+2. Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile. 
 
+    ![Image of Jamf Pro enrollment](images/jamfpro-install-mdm-profile.png)
 
-![Image of Jamf Pro enrollment](images/jamfpro-download.png)
+3. Select **Allow** to downloads from JAMF.
 
+    ![Image of Jamf Pro enrollment](images/jamfpro-download.png)
 
-![Image of Jamf Pro enrollment](images/jamfpro-install-mdm.png)
+4. Select **Continue** to proceed with the MDM Profile installation. 
 
+    ![Image of Jamf Pro enrollment](images/jamfpro-install-mdm.png)
 
-![Image of Jamf Pro enrollment](images/jamfpro-mdm-unverified.png)
+5. Select **Continue** to install the MDM Profile.
 
-![Image of Jamf Pro enrollment](images/jamfpro-mdm-profile.png)
+    ![Image of Jamf Pro enrollment](images/jamfpro-mdm-unverified.png)
+
+6. Select **Continue**  to complete the configuration. 
+
+    ![Image of Jamf Pro enrollment](images/jamfpro-mdm-profile.png)
