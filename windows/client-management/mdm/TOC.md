@@ -192,6 +192,7 @@
 #### [ADMX_LanmanServer](policy-csp-admx-lanmanserver.md)
 #### [ADMX_LinkLayerTopologyDiscovery](policy-csp-admx-linklayertopologydiscovery.md)
 #### [ADMX_MMC](policy-csp-admx-mmc.md)
+#### [ADMX_MMCSnapins](policy-csp-admx-mmcsnapins.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
