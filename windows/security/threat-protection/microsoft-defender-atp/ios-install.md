@@ -27,10 +27,7 @@ ms.topic: conceptual
 > 
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 
-
-During Public Preview, Microsoft Defender ATP for iOS will be available on
-TestFlight (Apple's Beta testing platform). End-users can directly deploy the
-app from TestFlight.
+Microsoft Defender ATP is be available on the Apple App store. 
 
 Deployment devices need to be enrolled on Intune Company portal. Refer to
 [Enroll your
@@ -45,10 +42,8 @@ learn more about Intune device enrollment
 -   Ensure iOS enrollment is done for your users. Users need to have Microsoft Defender ATP
     license assigned in order to use Microsoft Defender ATP for iOS. Refer [Assign licenses to
     users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
-    for instructions on how to assign licenses
+    for instructions on how to assign licenses.
 
->[!NOTE]
->During Public Preview Microsoft Defender ATP for iOS will be available on TestFlight. In GA, Microsoft Defender ATP will be available on the Apple App store. 
 
 ## Deployment steps
 
@@ -61,7 +56,7 @@ Defender ATP.
 ## Complete onboarding and check status
 
 1.  Once Microsoft Defender ATP for iOS has been installed on the device, you
-    will see the app icon
+    will see the app icon.
 
     ![A screen shot of a smart phone Description automatically generated](images/41627a709700c324849bf7e13510c516.png)
 
