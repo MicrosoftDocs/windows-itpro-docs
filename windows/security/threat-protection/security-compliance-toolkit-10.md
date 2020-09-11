@@ -86,7 +86,7 @@ Documentation for the LGPO tool can be found on the [Microsoft Security Baseline
 
 ## What is the Set Object Security tool?
 
-SetObjectSecurity.exe enables you to set the security descriptor for just about any type of Windows securable object (files, directories, registry keys, event logs, services, SMB shares, etc). For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a .reg-file-compatible representation of the security descriptor for a REG_BINARY registry value.
+SetObjectSecurity.exe enables you to set the security descriptor for just about any type of Windows securable object (files, directories, registry keys, event logs, services, SMB shares, etc.). For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a .reg-file-compatible representation of the security descriptor for a REG_BINARY registry value.
 
 Documentation for the Set Object Security tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
