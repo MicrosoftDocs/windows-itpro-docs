@@ -127,7 +127,7 @@ Test your individual hardware platforms with the **BitLocker system check** opti
 To function correctly, BitLocker requires a specific disk configuration. BitLocker requires two partitions that meet the following requirements:
 
 - The operating system partition contains the operating system and its support files; it must be formatted with the NTFS file system.
-- The system partition (or boot partition) contains the files that are needed to load Windows after the BIOS or UEFI firware has prepared the system hardware. BitLocker is not enabled on this partition. For BitLocker to work, the system partition must not be encrypted and must be on a different partition than the operating system. On UEFI platforms, the system partition must be formatted with the FAT 32 file system. On BIOS platforms, the system partition must be formatted with the NTFS file system. It should be at least 350 MB in size.
+- The system partition (or boot partition) contains the files that are needed to load Windows after the BIOS or UEFI firmware has prepared the system hardware. BitLocker is not enabled on this partition. For BitLocker to work, the system partition must not be encrypted and must be on a different partition than the operating system. On UEFI platforms, the system partition must be formatted with the FAT 32 file system. On BIOS platforms, the system partition must be formatted with the NTFS file system. It should be at least 350 MB in size.
 
 Windows setup automatically configures the disk drives of your computer to support BitLocker encryption.
 
