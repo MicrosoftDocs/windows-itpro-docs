@@ -26,7 +26,7 @@ You can send us files that you think might be malware or files that have been in
 
 We receive a large number of samples from many sources. Our analysis is prioritized by the number of file detections and the type of submission. You can help us complete a quick analysis by providing detailed information about the product you were using and what you were doing when you found the file.
 
-If you sign in before you submit a sample, you will be able to track your submissions.
+After you sign in, you will be able to track your submissions.
 
 ## Can I send a sample by email?
 
@@ -34,9 +34,7 @@ No, we only accept submissions through our [sample submission portal](https://ww
 
 ## Can I submit a sample without signing in?
 
-Yes, you many submit a file as an anonymous home customer. You will get a link to a webpage where you can view the status of the submission.
-
-If you're an enterprise customer, you need to sign in so that we can prioritize your submission appropriately. If you are currently experiencing a virus outbreak or security-related incident, you should contact your designated Microsoft support professional or go to [Microsoft Support](https://support.microsoft.com/) for immediate assistance.
+No. If you're an enterprise customer, you need to sign in so that we can prioritize your submission appropriately. If you are currently experiencing a virus outbreak or security-related incident, you should contact your designated Microsoft support professional or go to [Microsoft Support](https://support.microsoft.com/) for immediate assistance.
 
 ## What is the Software Assurance ID (SAID)?
 
@@ -52,9 +50,7 @@ We encourage all software vendors and developers to read about [how Microsoft id
 
 ## How do I track or view past sample submissions?
 
-You can track your submissions through the [submission history page](https://www.microsoft.com/wdsi/submissionhistory). Your submission will only appear on this page if you were signed in when you submitted it.
-
-If you’re not signed in when you submit a sample, you will be redirected to a tracking page. Bookmark this page if you want to come back and check on the status of your submission.
+You can track your submissions through the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
 
 ## What does the submission status mean?
 
@@ -66,7 +62,7 @@ Each submission is shown to be in one of the following status types:
 
 * Closed—a final determination has been given by an analyst
 
-If you are signed in, you can see the status of any files you submit to us on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
+You can see the status of any files you submit to us on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
 
 ## How does Microsoft prioritize submissions
 

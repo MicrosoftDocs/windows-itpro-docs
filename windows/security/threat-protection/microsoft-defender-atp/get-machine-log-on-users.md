@@ -1,6 +1,6 @@
 ---
 title: Get machine log on users API
-description: Retrieve a collection of logged on users on a specific device using Microsoft Defender ATP APIs.
+description: Learn how to use the Get machine log on users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

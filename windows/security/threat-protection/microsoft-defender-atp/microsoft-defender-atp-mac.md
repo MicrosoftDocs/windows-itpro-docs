@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ATP for Mac
 ms.reviewer:
-description: Describes how to install and use Microsoft Defender ATP for Mac.
+description: Learn how to install, configure, update, and use Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

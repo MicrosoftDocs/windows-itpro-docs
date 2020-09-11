@@ -1,6 +1,6 @@
 ---
 title: Exclude Files and Settings (Windows 10)
-description: Exclude Files and Settings
+description: In this article, learn how to exclude files and settings when creating a custom .xml file and a config.xml file.
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
 ms.reviewer: 
 manager: laurawi

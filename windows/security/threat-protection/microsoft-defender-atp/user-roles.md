@@ -60,21 +60,22 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
     - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
     - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
-- **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags.
+- **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files 
 
-- **Manage portal system settings** - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups.
+- **Manage portal system settings** - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups
 
     > [!NOTE]
     > This setting is only available in the Microsoft Defender ATP administrator (default) role.
 
-- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab.
+- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
 - **Live response capabilities**
     - **Basic** commands:
         - Start a live response session
         - Perform read only live response commands on remote device (excluding file copy and execution
     - **Advanced** commands:
-        - Download a file from the remote device
+        - Download a file from the remote device via live response
+        - Download PE and non-PE files from the file page
         - Upload a file to the remote device
         - View a script from the files library
         - Execute a script on the remote device from the files library

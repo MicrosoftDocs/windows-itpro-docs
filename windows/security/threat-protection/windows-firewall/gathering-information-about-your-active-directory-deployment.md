@@ -1,6 +1,6 @@
 ---
 title: Gathering Information about Your Active Directory Deployment (Windows 10)
-description: Gathering Information about Your Active Directory Deployment
+description: Learn about gathering Active Directory information, including domain layout, organizational unit architecture, and site topology, for your firewall deployment.
 ms.assetid: b591b85b-12ac-4329-a47e-bc1b03e66eb0
 ms.reviewer: 
 ms.author: dansimp

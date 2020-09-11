@@ -1,6 +1,6 @@
 ---
 title: 4625(F) An account failed to log on. (Windows 10)
-description: Describes security event 4625(F) An account failed to log on.
+description: Describes security event 4625(F) An account failed to log on. This event is generated if an account logon attempt failed for a locked out account.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-<img src="images/event-4625.png" alt="Event 4625 illustration" width="449" height="780" hspace="10" align="left" />
+<img src="images/event-4625.png" alt="Event 4625 illustration" width="449" height="780" hspace="10" align="top" />
 
 ***Subcategories:***&nbsp;[Audit Account Lockout](audit-account-lockout.md) and [Audit Logon](audit-logon.md)
 
@@ -32,12 +32,13 @@ It generates on the computer where logon attempt was made, for example, if logon
 
 This event generates on domain controllers, member servers, and workstations.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
@@ -93,7 +94,8 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Security ID** \[Type = SID\]**:** SID of account that reported information about logon failure. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+    > [!NOTE]
+    > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that reported information about logon failure.
 
@@ -109,27 +111,30 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
-**Logon Type** \[Type = UInt32\]**:** the type of logon which was performed. “Table 11. Windows Logon Types” contains the list of possible values for this field.
+-   **Logon Type** \[Type = UInt32\]**:** the type of logon which was performed. “Table 11. Windows Logon Types” contains the list of possible values for this field.
 
-| <span id="Windows_Logon_Types" class="anchor"></span>Logon Type | Logon Title       | Description                                                                                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2                                                               | Interactive       | A user logged on to this computer.                                                                                                                                                                                                                                                                                         |
-| 3                                                               | Network           | A user or computer logged on to this computer from the network.                                                                                                                                                                                                                                                            |
-| 4                                                               | Batch             | Batch logon type is used by batch servers, where processes may be executing on behalf of a user without their direct intervention.                                                                                                                                                                                         |
-| 5                                                               | Service           | A service was started by the Service Control Manager.                                                                                                                                                                                                                                                                      |
-| 7                                                               | Unlock            | This workstation was unlocked.                                                                                                                                                                                                                                                                                             |
-| 8                                                               | NetworkCleartext  | A user logged on to this computer from the network. The user's password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext). |
-| 9                                                               | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
-| 10                                                              | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
-| 11                                                              | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
 
-> <span id="_Ref433822321" class="anchor"></span>Table: Windows Logon Types
+    <span id="_Ref433822321" class="anchor"></span>**Table 11: Windows Logon Types**
+
+    | <span id="Windows_Logon_Types" class="anchor"></span>Logon Type | Logon Title       | Description                                                                                                                                                                                                                                                                                                                |
+    |-----------------------------------------------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | 2                                                               | Interactive       | A user logged on to this computer.                                                                                                                                                                                                                                                                                         |
+    | 3                                                               | Network           | A user or computer logged on to this computer from the network.                                                                                                                                                                                                                                                            |
+    | 4                                                               | Batch             | Batch logon type is used by batch servers, where processes may be executing on behalf of a user without their direct intervention.                                                                                                                                                                                         |
+    | 5                                                               | Service           | A service was started by the Service Control Manager.                                                                                                                                                                                                                                                                      |
+    | 7                                                               | Unlock            | This workstation was unlocked.                                                                                                                                                                                                                                                                                             |
+    | 8                                                               | NetworkCleartext  | A user logged on to this computer from the network. The user's password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext). |
+    | 9                                                               | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
+    | 10                                                              | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
+    | 11                                                              | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
+
 
 **Account For Which Logon Failed:**
 
 -   **Security ID** \[Type = SID\]**:** SID of the account that was specified in the logon attempt. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+    > [!NOTE]
+    > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that was specified in the logon attempt.
 
@@ -151,35 +156,36 @@ This event generates on domain controllers, member servers, and workstations.
 
 -   **Failure Reason** \[Type = UnicodeString\]**:** textual explanation of **Status** field value. For this event it typically has “**Account locked out**” value.
 
--   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event it typically has “**0xC0000234**” value. The most common status codes are listed in “Table 12. Windows logon status codes.”
+-   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event it typically has “**0xC0000234**” value. The most common status codes are listed in Table 12. Windows logon status codes.
 
-| Status\\Sub-Status Code | Description                                                                                                                                                      |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0XC000005E              | There are currently no logon servers available to service the logon request.                                                                                     |
-| 0xC0000064              | User logon with misspelled or bad user account                                                                                                                   |
-| 0xC000006A              | User logon with misspelled or bad password                                                                                                                       |
-| 0XC000006D              | This is either due to a bad username or authentication information                                                                                               |
-| 0XC000006E              | Unknown user name or bad password.                                                                                                                               |
-| 0xC000006F              | User logon outside authorized hours                                                                                                                              |
-| 0xC0000070              | User logon from unauthorized workstation                                                                                                                         |
-| 0xC0000071              | User logon with expired password                                                                                                                                 |
-| 0xC0000072              | User logon to account disabled by administrator                                                                                                                  |
-| 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                                                                                |
-| 0XC0000133              | Clocks between DC and other computer too far out of sync                                                                                                         |
-| 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine                                                                         |
-| 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.                                                |
-| 0XC0000192              | An attempt was made to logon, but the N**etlogon** service was not started.                                                                                      |
-| 0xC0000193              | User logon with expired account                                                                                                                                  |
-| 0XC0000224              | User is required to change password at next logon                                                                                                                |
-| 0XC0000225              | Evidently a bug in Windows and not a risk                                                                                                                        |
-| 0xC0000234              | User logon with account locked                                                                                                                                   |
-| 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                                                                                   |
-| 0XC0000413              | Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
-| 0x0                     | Status OK.                                                                                                                                                       |
+    <span id="_Ref433822658" class="anchor"></span>**Table 12: Windows logon status codes.**
 
-> <span id="_Ref433822658" class="anchor"></span>Table: Windows logon status codes.
-> 
-> **Note**&nbsp;&nbsp;To see the meaning of other status\\sub-status codes you may also check for status code in the Window header file ntstatus.h in Windows SDK.
+    | Status\\Sub-Status Code | Description                                                                      |
+    |-------------------------|------------------------------------------------------------------------------------------------------|
+    | 0XC000005E              | There are currently no logon servers available to service the logon request.                         |
+    | 0xC0000064              | User logon with misspelled or bad user account                                                       |
+    | 0xC000006A              | User logon with misspelled or bad password                                                           |
+    | 0XC000006D              | This is either due to a bad username or authentication information                                   |
+    | 0XC000006E              | Unknown user name or bad password.                                                                   |
+    | 0xC000006F              | User logon outside authorized hours                                                                  |
+    | 0xC0000070              | User logon from unauthorized workstation                                                             |
+    | 0xC0000071              | User logon with expired password                                                                     |
+    | 0xC0000072              | User logon to account disabled by administrator                                                      |
+    | 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                    |
+    | 0XC0000133              | Clocks between DC and other computer too far out of sync                                             |
+    | 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine             |
+    | 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.      |
+    | 0XC0000192              | An attempt was made to logon, but the N**etlogon** service was not started.                                            |
+    | 0xC0000193              | User logon with expired account                                                                      |
+    | 0XC0000224              | User is required to change password at next logon                                                    |
+    | 0XC0000225              | Evidently a bug in Windows and not a risk                                                            |
+    | 0xC0000234              | User logon with account locked                                                                       |
+    | 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                       |
+    | 0XC0000413              | Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
+    | 0x0                     | Status OK.  |
+
+> [!NOTE]
+> To see the meaning of other status\\sub-status codes you may also check for status code in the Window header file ntstatus.h in Windows SDK.
 
 More information: <https://dev.windows.com/en-us/downloads>
 
@@ -187,7 +193,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 **Process Information:**
 
--   **Caller Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that attempted the logon. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Caller Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that attempted the logon. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):<br/><br/>
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -241,7 +247,8 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 For 4625(F): An account failed to log on.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
+> [!IMPORTANT]
+> For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a pre-defined “**Process Name**” for the process reported in this event, monitor all events with “**Process Name**” not equal to your defined value.
 
@@ -277,17 +284,17 @@ For 4625(F): An account failed to log on.
 
 -   Monitor for all events with the fields and values in the following table:
 
-| **Field**                                                                        | Value to monitor for                                                                                                                                                                                |
-|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This is typically not a security issue but it can be an infrastructure or availability issue. |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                             |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006A – “User logon with misspelled or bad password” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.                               |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000006D – “This is either due to a bad username or authentication information” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.       |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006F – “User logon outside authorized hours”.                                                                                                                                                 |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000070 – “User logon from unauthorized workstation”.                                                                                                                                            |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000072 – “User logon to account disabled by administrator”.                                                                                                                                     |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000015B – “The user has not been granted the requested logon type (aka logon right) at this machine”.                                                                                            |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”. <br>This is typically not a security issue but it can be an infrastructure or availability issue.      |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – “User logon with expired account”.                                                                                                                                                     |
-| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”.                     |
+    | **Field**                                                                        | Value to monitor for                                                                                                                                                                                |
+    |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This is typically not a security issue but it can be an infrastructure or availability issue. |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                             |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006A – “User logon with misspelled or bad password” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.                               |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000006D – “This is either due to a bad username or authentication information” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.       |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006F – “User logon outside authorized hours”.                                                                                                                                                 |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000070 – “User logon from unauthorized workstation”.                                                                                                                                            |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000072 – “User logon to account disabled by administrator”.                                                                                                                                     |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000015B – “The user has not been granted the requested logon type (aka logon right) at this machine”.                                                                                            |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”. <br>This is typically not a security issue but it can be an infrastructure or availability issue.      |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – “User logon with expired account”.                                                                                                                                                     |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”.                     |
 

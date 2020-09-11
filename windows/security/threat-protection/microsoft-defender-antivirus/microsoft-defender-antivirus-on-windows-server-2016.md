@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus on Windows Server 2016 and 2019
-description: Enable and configure Microsoft Defender AV on Windows Server 2016 and 2019 
+description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

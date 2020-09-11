@@ -1,6 +1,6 @@
 ---
 title: Recognized Environment Variables (Windows 10)
-description: Recognized Environment Variables
+description: Learn how to use environment variables to identify folders that may be different on different computers.
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
 ms.reviewer: 
 manager: laurawi

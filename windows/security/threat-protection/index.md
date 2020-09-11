@@ -1,6 +1,6 @@
 ---
 title: Threat Protection (Windows 10)
-description: Learn how Microsoft Defender ATP helps protect against threats.
+description: Microsoft Defender Advanced Threat Protection is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next-generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, Microsoft Secure Score for Devices, advanced hunting, cyber threat hunting, web threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -135,7 +135,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
 - [Exposed APIs](microsoft-defender-atp/apis-intro.md)
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
-- [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
+- [Reporting and trends](microsoft-defender-atp/threat-protection-reports.md)
 
 <a name="integration"></a>
 **[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>

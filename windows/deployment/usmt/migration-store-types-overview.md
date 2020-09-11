@@ -1,6 +1,6 @@
 ---
 title: Migration Store Types Overview (Windows 10)
-description: Migration Store Types Overview
+description: Learn about the migration store types and how to determine which migration store type best suits your needs.
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
 ms.reviewer: 
 manager: laurawi

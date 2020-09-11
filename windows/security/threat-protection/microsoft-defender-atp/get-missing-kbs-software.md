@@ -1,6 +1,6 @@
 ---
 title: Get missing KBs by software ID
-description: Retrieves missing KBs by software ID
+description: Retrieves missing security updates by software ID
 keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -22,7 +22,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Retrieves missing KBs by software ID
+Retrieves missing KBs (security updates) by software ID
 
 ## Permissions
 

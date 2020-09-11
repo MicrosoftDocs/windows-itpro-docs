@@ -1,6 +1,6 @@
 ---
-title: Turning on network protection
-description: Enable Network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager
+title: Turn on network protection
+description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
 keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Turning on network protection
+# Turn on network protection
 
 **Applies to:**
 
@@ -22,13 +22,15 @@ manager: dansimp
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
 
+[Learn more about network filtering configuration options](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+
 ## Check if network protection is enabled
 
 Check if network protection has been enabled on a local device by using Registry editor.
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
 1. Choose **HKEY_LOCAL_MACHINE** from the side menu
-1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** **Windows Defender** > **Policy Manager**
+1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Policy Manager**
 1. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
     * 0, or **Off**
@@ -40,9 +42,8 @@ Check if network protection has been enabled on a local device by using Registry
 Enable network protection by using any of these methods:
 
 * [PowerShell](#powershell)
-* [Microsoft Intune](#intune)
-* [Mobile Device Management (MDM)](#mobile-device-management-mmd)
-* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+* [Mobile Device Management (MDM)](#mobile-device-management-mdm)
+* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 * [Group Policy](#group-policy)
 
 ### PowerShell
@@ -62,41 +63,17 @@ Enable network protection by using any of these methods:
 
     Use `Disabled` instead of `AuditMode` or `Enabled` to turn off the feature.
 
-### Intune
-
-1. Sign in to the [Azure portal](https://portal.azure.com) and open Intune.
-
-2. Go to **Device configuration** > **Profiles** > **Create profile**.
-
-3. Name the profile, choose **Windows 10 and later** and **Endpoint protection**.
-   
-    ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png)
-
-4. Select **Configure** > **Windows Defender Exploit Guard** > **Network filtering** > **Enable**.  
-   
-    ![Enable network protection in Intune](../images/enable-np-intune.png)
-
-5. Select **OK** to save each open section and **Create**.
-
-6. Select the profile called **Assignments**, assign to **All Users & All Devices**, and **Save**.
-
-### Mobile Device Management (MMD)
+### Mobile device management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-## Microsoft Endpoint Configuration Manager
+### Microsoft Endpoint Manager (formerly Intune)
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com)
 
-2. Then go to **Home** > **Create Exploit Guard Policy**.
+2. Create or edit an [endpoint protection configuration profile](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
 
-3. Enter a name and a description, select **Network protection**, and then **Next**.
-
-4. Choose whether to block or audit access to suspicious domains and select **Next**.
-
-5. Review the settings and select **Next** to create the policy.
-
-6. After the policy is created, **Close**.
+3. Under "Configuration Settings" in the profile flow, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit only**
 
 ### Group Policy
 
@@ -111,6 +88,9 @@ Use the following procedure to enable network protection on domain-joined comput
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Network protection**.
+
+> [!NOTE]
+> On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
 
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
     * **Block** - Users can't access malicious IP addresses and domains

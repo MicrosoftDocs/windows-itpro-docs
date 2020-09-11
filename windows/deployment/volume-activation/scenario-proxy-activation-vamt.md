@@ -1,6 +1,6 @@
 ---
 title: Scenario 2 Proxy Activation (Windows 10)
-description: Scenario 2 Proxy Activation
+description: Use the Volume Activation Management Tool (VAMT) to activate products that are installed on workgroup computers in an isolated lab environment.
 ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
 ms.reviewer: 
 manager: laurawi

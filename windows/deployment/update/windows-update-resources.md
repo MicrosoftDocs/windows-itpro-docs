@@ -1,6 +1,6 @@
 ---
 title: Windows Update - Additional resources
-description: Use these resource to troubleshoot and reset Windows Update.
+description: In this article, learn details about to troubleshooting WSUS and resetting Windows Update components manually.
 ms.prod: w10
 ms.mktglfcycl:
 audience: itpro
