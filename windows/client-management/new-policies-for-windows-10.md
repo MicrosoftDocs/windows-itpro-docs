@@ -26,7 +26,7 @@ As of September 2020 This page will no longer be updated. To find the Group Poli
 
 For example, searching for "Windows 2004" + "Group Policy Settings Reference Spreadsheet" in a web browser will return to you the link to download the Group Policy Settings Reference Spreadsheet for Windows 2004.
 
-The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/en-us/download/101451).
+The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/download/101451).
 
 ## New Group Policy settings in Windows 10, version 1903
 
