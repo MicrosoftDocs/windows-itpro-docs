@@ -226,7 +226,7 @@ Support phase: **Technical upgrade Support (Only)**
 * Support platform updates when TMP is redirected to network path
 * Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
 * extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-* Fix 4.18.1911.10 hang
+* Fix 4.18.1911.3 hang
    
 ### Known Issues
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
@@ -234,14 +234,17 @@ Support phase: **Technical upgrade Support (Only)**
 > [!IMPORTANT]
 > This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
 <br/>
+> [!IMPORTANT]
+> This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
+<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.2 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
 Security intelligence update version: **1.307.13.0**  
 Released: **December 7, 2019**  
-Platform: **4.18.1911.2**  
+Platform: **4.18.1911.3**  
 Engine: **1.1.17000.7**  
 Support phase: **No support**  
      
@@ -253,7 +256,7 @@ Support phase: **No support**
 * add MRT logs to support files
    
 ### Known Issues
-No known issues
+When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 
