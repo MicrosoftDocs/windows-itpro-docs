@@ -18,6 +18,7 @@ ms.topic: article
 ---
 
 # Proactively hunt for threats with advanced hunting
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -25,15 +26,17 @@ ms.topic: article
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore raw data for the last 30 days. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured devices.
-
-## Get started with advanced hunting
 Watch this video for a quick overview of advanced hunting and a short tutorial that will get you started fast.
-<p></p>
+<br />
+<br />
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqo]
 
-You can also go through each of the following steps to ramp up your advanced hunting knowledge.
+You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured devices.
+
+## Get started with advanced hunting
+
+Go through the following steps to ramp up your advanced hunting knowledge.
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -44,15 +47,18 @@ You can also go through each of the following steps to ramp up your advanced hun
 | **Learn about custom detections** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](overview-custom-detections.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
 ## Data freshness and update frequency
+
 Advanced hunting data can be categorized into two distinct types, each consolidated differently:
 
 - **Event or activity data**—populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to Microsoft Defender ATP.
 - **Entity data**—populates tables with consolidated information about users and devices. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Time zone
+
 All time information in advanced hunting is currently in the UTC time zone.
 
 ## Related topics
+
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
