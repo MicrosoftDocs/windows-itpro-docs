@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-## Enroll you macOS devices
+## Enroll macOS devices
 
 There are multiple methods of getting enrolled to JamF.
 
@@ -32,7 +32,7 @@ This article will guide you on two methods:
 - [Method 1:  Enrollment Invitations](#enrollment-method-1-enrollment-invitations)
 - [Method 2:  Prestage Enrollments](#enrollment-method-2-prestage-enrollments)
 
-For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)
+For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).
 
 
 ## Enrollment Method 1: Enrollment Invitations
@@ -71,7 +71,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     ![Image of configuration settings](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
-2. Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)
+2. Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).
 
 ## Enroll macOS device
 
