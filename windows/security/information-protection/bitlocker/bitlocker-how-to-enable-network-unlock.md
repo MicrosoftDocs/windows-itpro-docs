@@ -312,9 +312,6 @@ To turn off the unlock server, the PXE provider can be unregistered from the WDS
 
 To update the certificates used by Network Unlock, administrators need to import or generate the new certificate for the server and then update the Network Unlock certificate Group Policy setting on the domain controller.
 
-> [!NOTE]
-> Machines that do not get the GPO will ask for the PIN when booting. In this case one needs to investigate and understand why the machine could not get the GPO and update the certificate.
-
 ## <a href="" id="bkmk-troubleshoot"></a>Troubleshoot Network Unlock
 
 Troubleshooting Network Unlock issues begins by verifying the environment. Many times, a small configuration issue will be the root cause of the failure. Items to verify include:
