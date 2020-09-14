@@ -1,29 +1,29 @@
 ---
-title: Policy CSP - ADMX_AuditSettings
-description: Policy CSP - ADMX_AuditSettings
+title: Policy CSP - ADMX_Cpls
+description: Policy CSP - ADMX_Cpls
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/13/2020
+ms.date: 08/26/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_AuditSettings
+# Policy CSP - ADMX_Cpls
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AuditSettings policies  
+## ADMX_Cpls policies  
 
 <dl>
   <dd>
-    <a href="#admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
+    <a href="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
   </dd>
 </dl>
 
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-cpls-usedefaulttile"></a>**ADMX_Cpls/UseDefaultTile**  
 
 <!--SupportedSKUs-->
 <table>
@@ -74,16 +74,14 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines what information is logged in security audit events when a new process has been created. This setting only applies when the Audit Process Creation policy is enabled.
+Available in Windows 10 Insider Preview Build 20185. This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
-If you enable this policy setting, the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+> [!NOTE] 
+> The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures do not exist, an empty frame is displayed.
 
-If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.  
+If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
 
-Default is Not configured.
-
-> [!NOTE]
-> When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information, such as passwords or user data.
+If you disable or do not configure this policy setting, users will be able to customize their account pictures.
 
 <!--/Description-->
 > [!TIP]
@@ -91,14 +89,14 @@ Default is Not configured.
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
--   GP name: *IncludeCmdLine*
--   GP path: *System/Audit Process Creation*
--   GP ADMX file name: *AuditSettings.admx*
+-   GP English name: *Apply the default account picture to all users*
+-   GP name: *UseDefaultTile*
+-   GP path: *Control Panel/User Accounts*
+-   GP ADMX file name: *Cpls.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
