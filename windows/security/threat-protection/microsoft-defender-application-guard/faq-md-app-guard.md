@@ -173,7 +173,7 @@ For CSP (Intune) you can query the status node by using **Get**. This is describ
 
 For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP** Status. The meaning of each bit is the same as the CSP.
 
-### I'm encountering TCP fragmentation issue, and cannot enable my VPN connection. How do I fix this?
+### I'm encountering TCP fragmentation issues, and cannot enable my VPN connection. How do I fix this?
 
 WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix through these steps:
 
