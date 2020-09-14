@@ -177,6 +177,6 @@ For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MAC
 
 WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix through these steps:
 
-a.	Ensure that the FragmentAware DWORD is set to 1 in this registry settings: "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\Winnat"
+1.	Ensure that the FragmentAware DWORD is set to 1 in this registry setting: "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\Winnat".
 
 b.	Reboot.
