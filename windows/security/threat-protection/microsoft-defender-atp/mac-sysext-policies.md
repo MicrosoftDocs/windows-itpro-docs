@@ -279,3 +279,5 @@ To deploy this custom configuration profile:
 
     ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
 
+5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+6. Review and create this configuration profile.
