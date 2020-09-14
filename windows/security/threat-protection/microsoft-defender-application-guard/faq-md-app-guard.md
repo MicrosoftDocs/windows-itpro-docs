@@ -179,4 +179,4 @@ WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default 
 
 1.	Ensure that the FragmentAware DWORD is set to 1 in this registry setting: "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\Winnat".
 
-b.	Reboot.
+2.	Reboot.
