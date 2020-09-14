@@ -10,6 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
+ms.date: 09/14/2020
 ms.custom: asr
 ---
 
@@ -29,7 +30,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 1. [Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
+2. Restart the device, start Microsoft Edge, and then select **New Application Guard window** from the menu.
 
     ![New Application Guard window setting option](images/appguard-new-window.png)
 
@@ -48,29 +49,29 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 
 ### Install, set up, and turn on Application Guard
 
-Before you can use Application Guard in enterprise mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
+Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
 1. [Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard#install-application-guard).
 
-2. Restart the device and then start Microsoft Edge.
+2. Restart the device, and then start Microsoft Edge.
 
 3. Set up the Network Isolation settings in Group Policy:
 
-   a.  Click on the **Windows** icon, type _Group Policy_, and then click **Edit Group Policy**.
+   a.  Click on the **Windows** icon, type `Group Policy`, and then click **Edit Group Policy**.
 
    b.  Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
 
-   c.  For the purposes of this scenario, type _.microsoft.com_ into the **Enterprise cloud resources** box.
+   c.  For the purposes of this scenario, type `.microsoft.com` into the **Enterprise cloud resources** box.
 
    ![Group Policy editor with Enterprise cloud resources setting](images/appguard-gp-network-isolation.png)
 
    d. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
 
-   e. For the purposes of this scenario, type _bing.com_ into the **Neutral resources** box.
+   e. For the purposes of this scenario, type `bing.com` into the **Neutral resources** box.
 
    ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
 
-4. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Turn on Microsoft Defender Application Guard in Enterprise Mode** setting.
+4. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Turn on Microsoft Defender Application Guard in Managed Mode** setting.
 
 5. Click **Enabled**, choose Option **1**, and click **OK**.
 
@@ -79,7 +80,7 @@ Before you can use Application Guard in enterprise mode, you must install Window
    >[!NOTE]
    >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
 
-6. Start Microsoft Edge and type *https://www.microsoft.com*.
+6. Start Microsoft Edge and type `https://www.microsoft.com`.
 
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you've marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
@@ -254,9 +255,12 @@ The [Application Guard Extension](md-app-guard-browser-extension.md) available f
 Once a user has the extension and its companion app installed on their enterprise device, you can run through the following scenarios.
 
 1. Open either Firefox or Chrome — whichever browser you have the extension installed on.
-1. Navigate to an enterprise website, i.e. an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
+
+2. Navigate to an enterprise website, i.e. an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
    ![The evaluation page displayed while the page is being loaded, explaining that the user must wait](images/app-guard-chrome-extension-evaluation-page.png)
-1. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
+
+3. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
    ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge](images/app-guard-chrome-extension-launchIng-edge.png)
-1. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
+
+4. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
    ![The "New Application Guard Window" option is highlighted in red](images/app-guard-chrome-extension-new-app-guard-page.png)
