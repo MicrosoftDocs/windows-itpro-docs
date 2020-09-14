@@ -33,6 +33,48 @@ Microsoft Defender ATP seamlessly integrates with existing security solutions - 
 
 ## Supported applications
 
+
+### Security information and analytics
+
+Logo |Partner name   | Description 
+:---|:---|:---
+![Image of AttackIQ logo](images/attackiq-logo.png)| AttackIQ Platform | AttackIQ Platform validates MDATP is configured properly by launching continuous attacks safely on production assets
+![Image of Azure Sentinel logo](images/sentinel-logo.png)|AzureSentinel | Stream alerts from Microsoft Defender Advanced Threat Protection into Azure Sentinel 
+![Image of Cymulate logo](images/cymulate-logo.png) | Cymulate| Correlate Defender ATP findings with simulated attacks to validate accurate detection and effective response actions
+![Image of Elastic security logo](images/elastic-security-logo.png) | Elastic Security | Elastic Security is a free and open solution for preventing, detecting, and responding to threats
+![Image of IBM QRadar logo](images/ibm-qradar-logo.png) | IBM QRadar | Configure IBM QRadar to collect detections from Microsoft Defender ATP 
+![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | Micro Focus ArcSight | Use Micro Focus ArcSight to pull Microsoft Defender ATP detections
+![Image of logo](images/-logo.png) |
+![Image of logo](images/-logo.png) |
+![Image of logo](images/-logo.png) |
+
+
+
+
+
+
+
+
+
+![Image of logo](images/-logo.png) |
+
+![Image of logo](images/-logo.png) |
+
+![Image of logo](images/-logo.png) |
+
+
+![Image of logo](images/-logo.png) |
+
+
+![Image of logo](images/-logo.png) |
+
+
+
+
+
+
+
+
 Partner name   | Description |Category 
 :---|:---|:---
 |AzureSentinel | Stream alerts from Microsoft Defender Advanced Threat Protection into Azure Sentinel |Security information and analytics 
