@@ -245,7 +245,7 @@ If you disable or do not configure this policy setting, users can run all applic
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-
+> 
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 
 <!--/Description-->
@@ -319,7 +319,7 @@ If you disable or do not configure this policy setting, users can run all applic
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-
+> 
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 <!--/Description-->
 > [!TIP]
