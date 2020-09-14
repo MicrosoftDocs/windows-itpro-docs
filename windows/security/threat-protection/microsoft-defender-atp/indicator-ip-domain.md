@@ -1,4 +1,4 @@
-﻿---
+---
 title:  Create indicators for IPs and URLs/domains 
 ms.reviewer: 
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
