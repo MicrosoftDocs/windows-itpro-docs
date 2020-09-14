@@ -64,3 +64,7 @@ Microsoft security researchers regularly share advanced hunting queries in a [de
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](overview-custom-detections.md)
