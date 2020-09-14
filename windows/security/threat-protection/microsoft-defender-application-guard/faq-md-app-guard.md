@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/17/2020
+ms.date: 09/14/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -175,8 +175,8 @@ For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MAC
 
 ### I'm encountering TCP fragmentation issues, and cannot enable my VPN connection. How do I fix this?
 
-WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix through these steps:
+WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix by following these steps:
 
-1.	Ensure that the FragmentAware DWORD is set to 1 in this registry setting: "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\Winnat".
+1.	Ensure that the FragmentAware DWORD is set to 1 in this registry setting: `\Registry\Machine\SYSTEM\CurrentControlSet\Services\Winnat`.
 
-2.	Reboot.
+2.	Reboot the device.
