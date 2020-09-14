@@ -99,10 +99,11 @@ If you disable or do not configure this policy setting, redirected shell folders
 
 > [!NOTE]
 > This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.  
-
+>
 > Do not enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
-
+>
 > If one or more valid folder GUIDs are specified in the policy setting "Do not automatically make specific redirected folders available offline", that setting will override the configured value of "Do not automatically make all redirected folders available offline".
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -173,7 +174,7 @@ If you disable or do not configure this policy setting, all redirected shell fol
 
 > [!NOTE]
 > This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
-
+>
 > The configuration of this policy for any folder will override the configured value of "Do not automatically make all redirected folders available offline".
 
 <!--/Description-->
