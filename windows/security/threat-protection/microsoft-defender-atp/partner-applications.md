@@ -128,4 +128,4 @@ Microsoft Defender ATP allows you to integrate with such solutions and act on Io
 Microsoft Defender ATP currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.  
 
 ## Support for non-Windows platforms
-Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. 
+Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms, including mobile devices. You'll be able to see alerts from various supported operating systems (OS) in the portal and better protect your organization's network. 
