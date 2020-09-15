@@ -47,7 +47,7 @@ Whether taken automatically or upon approval, remediation actions include the fo
 
 ### Automated investigation results and remediation actions
 
-The following table summarizes remediation actions following an automated investigation, and how device group settings affect whether actions are taken automatically or upon approval. 
+The following table summarizes remediation actions following an automated investigation, how device group settings affect whether actions are taken automatically or upon approval, and what to do in each case. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
