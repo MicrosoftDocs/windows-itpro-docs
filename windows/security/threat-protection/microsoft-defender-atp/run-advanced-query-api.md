@@ -26,7 +26,7 @@ ms.topic: article
 ## Limitations
 1. You can only run a query on data from the last 30 days.
 2. The results will include a maximum of 100,000 rows.
-3. The number of executions is limited per tenant: up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day.
+3. The number of executions is limited per tenant: up to 10 calls per minute, 10 minutes of running time every hour and 4 hours of running time a day.
 4. The maximal execution time of a single request is 10 minutes.
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. The 429 response body will also indicate the time until the quota is renewed. 
 
