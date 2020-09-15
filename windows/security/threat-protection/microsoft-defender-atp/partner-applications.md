@@ -38,9 +38,9 @@ Microsoft Defender ATP seamlessly integrates with existing security solutions - 
 
 Logo |Partner name   | Description 
 :---|:---|:---
-![Image of AttackIQ logo](images/attackiq-logo.png)| [AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502) | AttackIQ Platform validates MDATP is configured properly by launching continuous attacks safely on production assets
+![Image of AttackIQ logo](images/attackiq-logo.png)| [AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502) | AttackIQ Platform validates Microsoft Defender ATP is configured properly by launching continuous attacks safely on production assets
 ![Image of Azure Sentinel logo](images/sentinel-logo.png)| [AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705) | Stream alerts from Microsoft Defender Advanced Threat Protection into Azure Sentinel 
-![Image of Cymulate logo](images/cymulate-logo.png) | [Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)| Correlate Defender ATP findings with simulated attacks to validate accurate detection and effective response actions
+![Image of Cymulate logo](images/cymulate-logo.png) | [Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)| Correlate Microsoft Defender ATP findings with simulated attacks to validate accurate detection and effective response actions
 ![Image of Elastic security logo](images/elastic-security-logo.png) | [Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303) | Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Configure IBM QRadar to collect detections from Microsoft Defender ATP 
 ![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Use Micro Focus ArcSight to pull Microsoft Defender ATP detections
@@ -48,7 +48,7 @@ Logo |Partner name   | Description
 ![Image of SafeBreach logo](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Gain visibility into Microsoft Defender ATP security events that are automatically correlated with SafeBreach simulations
 ![Image of Skybox Vulnerability Control logo](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network and threat context to uncover your riskiest vulnerabilities
 ![Image of Splunk logo](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | The Microsoft Defender ATP Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
-![Image of XM Cyber logo](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Prioritize your response to an alert based on risk factors and high value assets.
+![Image of XM Cyber logo](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Prioritize your response to an alert based on risk factors and high value assets
 
 ### Orchestration and automation
 
