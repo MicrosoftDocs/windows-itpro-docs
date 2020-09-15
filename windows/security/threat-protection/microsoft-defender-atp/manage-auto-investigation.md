@@ -34,7 +34,7 @@ Read this article to learn more about remediation actions and what to do when an
 
 - Example 2: Contoso's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, Contoso's security operations team must review and approve all remediation actions. (See [Review pending actions](#review-pending-actions).)
 
-- Example 3: Tailspin Toys has their device groups set to **No automated response** (this is not recommended). In this case, automated investigations do not occur. As a result, no remediation actions are taken or pending, and no actions are logged in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center) for their devices.
+- Example 3: Tailspin Toys has their device groups set to **No automated response** (this is not recommended). In this case, automated investigations do not occur. As a result, no remediation actions are taken or pending, and no actions are logged in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center) for their devices. (See [Manage device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups#manage-device-groups))
 
 Whether taken automatically or upon approval, remediation actions include the following:
 - Quarantine a file
