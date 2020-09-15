@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-mcafeemigrate 
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/03/2020
+ms.date: 09/15/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -31,11 +31,12 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
-2. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
-3. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-4. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
-5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
+4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
+5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
+6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Enable Microsoft Defender Antivirus and confirm it's in passive mode
 
@@ -134,6 +135,16 @@ Microsoft Defender Antivirus can run alongside McAfee if you set Microsoft Defen
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
+
+## Get updates for Microsoft Defender Antivirus
+
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+- Security intelligence updates
+- Product updates
+
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 ## Add Microsoft Defender ATP to the exclusion list for McAfee
 
