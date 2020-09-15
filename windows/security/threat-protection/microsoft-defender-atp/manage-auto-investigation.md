@@ -22,15 +22,15 @@ ms.date: 09/15/2020
 
 ## Remediation actions
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. Here are two examples:
 
-For example, suppose that your organization's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, your security operations team must review and approve all remediation actions. (See [Review pending actions](#review-pending-actions).)
+- Example 1: Contoso's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, Contoso's security operations team must review and approve all remediation actions. (See [Review pending actions](#review-pending-actions).)
 
-Now suppose that you've changed your organization's device groups so that they are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. (See [Review completed actions](#review-completed-actions).)
+- Example 2: Fabrikam's device groups are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. (See [Review completed actions](#review-completed-actions).)
 
 ### Automated investigation results and remediation actions
 
-The following table summarizes remediation actions following an automated investigation with several examples.
+The following table summarizes remediation actions following an automated investigation, and how device group settings affect whether actions are taken automatically or upon approval. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
