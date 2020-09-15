@@ -28,13 +28,22 @@ When an automated investigation runs, a verdict is generated for each piece of e
 
 - Example 2: Fabrikam's device groups are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. (See [Review completed actions](#review-completed-actions).)
 
+Whether taken automatically or upon approval, remediation actions include the following:
+- Quarantine a file
+- Remove a registry key 
+- Kill a process 
+- Stop a service 
+- Remove a registry key 
+- Disable a driver 
+- Remove a scheduled task
+
 ### Automated investigation results and remediation actions
 
 The following table summarizes remediation actions following an automated investigation, and how device group settings affect whether actions are taken automatically or upon approval. 
 
 |Device group setting | Automated investigation results | What to do |
 |:---|:---|:---|
-|**Full - remediate threats automatically** (this is the recommended setting) |A verdict of *Malicious* is reached for a piece of evidence. <br/><br/>Depending on the artifact, one of the following remediation actions are taken automatically: <br/>- Quarantine a file <br/>- Remove a registry key <br/>- Kill a process <br/>- Stop a service <br/>- Remove a registry key <br/>- Disable a driver <br/>- Remove a scheduled task |[Review completed actions](#review-completed-actions). |
+|**Full - remediate threats automatically** (this is the recommended setting) |A verdict of *Malicious* is reached for a piece of evidence. <br/><br/>Appropriate remediation actions are taken automatically. |[Review completed actions](#review-completed-actions). |
 |**Full - remediate threats automatically** |A verdict of *Suspicious* is reached for a piece of evidence. <br/><br/>Remediation actions are pending approval to proceed. | [Approve (or reject) pending actions](#review-pending-actions). |
 |**Semi - require approval for any remediation**  |A verdict of either *Malicious* or *Suspicious* is reached for a piece of evidence. <br/><br/>Remediation actions are pending approval to proceed.  |[Approve (or reject) pending actions](#review-pending-actions). |
 |**Semi - require approval for core folders remediation** |A verdict of *Malicious* is reached for a piece of evidence. <br/><br/>If the artifact is a file or executable and is in an operating system directory, such as the Windows folder or the Program files folder, then remediation actions are pending approval. <br/><br/>If the artifact is **not** in an operating system directory, remediation actions are taken automatically. |1. [Approve (or reject) pending actions](#review-pending-actions).<br/><br/>2. [Review completed actions](#review-completed-actions). |
