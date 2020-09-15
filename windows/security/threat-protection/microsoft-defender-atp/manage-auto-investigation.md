@@ -57,10 +57,9 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 3. Review any items on the **Pending** tab. 
 
-   - Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions. 
-   - Other details such as file or service details, investigation details, and alert details are displayed. 
-   - From the panel, you can click on the **Open investigation page** link to see the investigation details.
-   - You can also select multiple investigations to approve or reject actions on multiple investigations. 
+4. Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions. 
+
+   Other details such as file or service details, investigation details, and alert details are displayed. From the panel, you can click on the **Open investigation page** link to see the investigation details. You can also select multiple investigations to approve or reject actions on multiple investigations. 
 
 ## Review completed actions
 
