@@ -1,9 +1,8 @@
 ---
 title: Configure Microsoft Defender Antivirus with WMI
-description: Use WMI scripts to configure Microsoft Defender AV.
+description: Learn how to configure and manage Microsoft Defender Antivirus by using WMI scripts to retrieve, modify, and update settings in Microsoft Defender ATP.
 keywords: wmi, scripts, windows management instrumentation, configuration
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

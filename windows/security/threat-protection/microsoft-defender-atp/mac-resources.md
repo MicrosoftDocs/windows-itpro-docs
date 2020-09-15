@@ -25,34 +25,36 @@ ms.topic: conceptual
 
 ## Collecting diagnostic information
 
-If you can reproduce a problem, please increase the logging level, run the system for some time, and restore the logging level to the default.
+If you can reproduce a problem, increase the logging level, run the system for some time, and restore the logging level to the default.
 
 1. Increase logging level:
 
    ```bash
-   $ mdatp --log-level verbose
-   Creating connection to daemon
-   Connection established
-   Operation succeeded
+   mdatp log level set --level verbose
+   ```
+
+   ```Output
+   Log level configured successfully
    ```
 
 2. Reproduce the problem
 
-3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp diagnostic create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   $ sudo mdatp --diagnostic --create
-   Creating connection to daemon
-   Connection established
+   sudo mdatp diagnostic create
+   ```
+   ```Output
+   Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
 
 4. Restore logging level:
 
    ```bash
-   $ mdatp --log-level info
-   Creating connection to daemon
-   Connection established
-   Operation succeeded
+   mdatp log level set --level info
+   ```
+   ```Output
+   Log level configured successfully
    ```
 
 ## Logging installation issues
@@ -63,7 +65,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender ATP for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
@@ -78,27 +80,63 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 
 Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
 
-|Group        |Scenario                                   |Command                                                                |
-|-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp --config realTimeProtectionEnabled [true/false]`                |
-|Configuration|Turn on/off cloud protection               |`mdatp --config cloudEnabled [true/false]`                             |
-|Configuration|Turn on/off product diagnostics            |`mdatp --config cloudDiagnosticEnabled [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp --config cloudAutomaticSampleSubmission [true/false]`           |
-|Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
-|Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
-|Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
-|Configuration|Turn on/off passiveMode                    |`mdatp --config passiveMode [on/off]`                                  |
-|Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
-|Health       |Check the product's health                 |`mdatp --health`                                                       |
-|Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
-|Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
-|Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
-|Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
-|EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]` OR `mdatp --edr --earlyPreview [true/false]` for versions earlier than 100.78.0                                |
-|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
-|EDR          |Remove group tag from device              |`mdatp --edr --remove-tag [name]`                                            |
+|Group        |Scenario                                   |Command                                                                           |
+|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
+|Configuration|Turn on/off real-time protection           |`mdatp config real-time-protection [enabled/disabled]`                            |
+|Configuration|Turn on/off cloud protection               |`mdatp config cloud --value [enabled/disabled]`                                   |
+|Configuration|Turn on/off product diagnostics            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
+|Configuration|Turn on/off automatic sample submission    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
+|Configuration|Add a threat name to the allowed list      |`mdatp threat allowed add --name [threat-name]`                                   |
+|Configuration|Remove a threat name from the allowed list |`mdatp threat allowed remove --name [threat-name]`                                |
+|Configuration|List all allowed threat names              |`mdatp threat allowed list`                                                       |
+|Configuration|Turn on PUA protection                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
+|Configuration|Turn off PUA protection                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
+|Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
+|Configuration|Turn on/off passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
+|Diagnostics  |Change the log level                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create`                                                         |
+|Health       |Check the product's health                 |`mdatp health`                                                                    |
+|Health       |Check for a spefic product attribute       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
+|Protection   |Scan a path                                |`mdatp scan custom --path [path]`                                                 |
+|Protection   |Do a quick scan                            |`mdatp scan quick`                                                                |
+|Protection   |Do a full scan                             |`mdatp scan full`                                                                 |
+|Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                               |
+|Protection   |Request a security intelligence update     |`mdatp definitions update`                                                        |
+|EDR          |Turn on/off EDR preview for Mac            |`mdatp edr early-preview [enabled/disabled]`                                      |
+|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
+|EDR          |Add Group Id                               |`mdatp edr group-ids --group-id [group]`                                          |
+
+### How to enable autocompletion
+
+To enable autocompletion in `Bash`, run the following command and restart the Terminal session:
+
+```bash
+echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+```
+
+To enable autocompletion in `zsh`:
+
+- Check whether autocompletion is enabled on your device:
+
+   ```zsh
+   cat ~/.zshrc | grep autoload
+   ```
+
+- If the above command does not produce any output, you can enable autocompletion using the following command:
+
+   ```zsh
+   echo "autoload -Uz compinit && compinit" >> ~/.zshrc
+   ```
+
+- Run the following commands to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+
+   ```zsh
+   sudo mkdir -p /usr/local/share/zsh/site-functions
+   ```
+   ```zsh
+   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   ```
 
 ## Client Microsoft Defender ATP quarantine directory
 

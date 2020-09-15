@@ -49,9 +49,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 The following features are included in the preview release:
 - [Microsoft Defender ATP for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, and use Microsoft Defender ATP for Android.
 
-- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
-
-
  - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019.
 
 - [Threat & Vulnerability Management granular exploit details](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) <BR> You can now see a comprehensive set of details on the vulnerabilities found in your device to give you informed decision on your next steps. The threat insights icon now shows more granular details, such as if the exploit is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has associated zero-day exploitation news, disclosures, or related security advisories.
@@ -73,8 +70,6 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client devices.
 
-- [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
-Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal.
 
 > [!TIP] 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

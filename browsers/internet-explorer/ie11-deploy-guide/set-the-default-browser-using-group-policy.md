@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Set the default browser using Group Policy
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can use the Group Policy setting, **Set a default associations configuration file**, to set the default browser for your company devices running Windows 10.
 
  **To set the default browser as Internet Explorer 11**

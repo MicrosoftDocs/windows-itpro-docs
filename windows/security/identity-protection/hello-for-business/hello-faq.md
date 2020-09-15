@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Frequently Asked Questions
-description: Windows Hello for Business FAQ 
+description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.   
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -77,9 +77,7 @@ Communicating with Azure Active Directory uses the following URLs:
 - login.windows.net
 
 If your environment uses Microsoft Intune, you need these additional URLs:
-- enrollment.manage-beta.microsoft.com
 - enrollment.manage.microsoft.com
-- portal.manage-beta.microsoft.com
 - portal.manage.microsoft.com
 
 ## What is the difference between non-destructive and destructive PIN reset?

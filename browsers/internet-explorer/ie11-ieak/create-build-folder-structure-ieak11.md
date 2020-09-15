@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Create the build computer folder structure using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Create your build environment on the computer that you’ll use to build your custom browser package. Your license agreement determines your folder structure and which version of Internet Explorer Administration Kit 11 (IEAK 11) you’ll use: **Internal** or **External**.
 
 |Name             |Version               |Description                                              |

@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business Overview (Windows 10)
 ms.reviewer: An overview of Windows Hello for Business
-description: An overview of Windows Hello for Business 
+description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -99,7 +99,9 @@ Windows Hello for Business with a key does not support RDP. RDP does not support
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/implementing-windows-hello-for-business-at-microsoft)
+[Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/en-us/itshowcase/implementing-strong-user-authentication-with-windows-hello-for-business)
+
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 

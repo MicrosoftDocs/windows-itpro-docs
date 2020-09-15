@@ -1,6 +1,6 @@
 ---
 title: Gathering the Information You Need (Windows 10)
-description: Gathering the Information You Need
+description: Collect and analyze information about your network, directory services, and devices to prepare for Windows Defender Firewall with Advanced Security deployment.
 ms.assetid: 545fef02-5725-4b1e-b67a-a32d94c27d15
 ms.reviewer: 
 ms.author: dansimp

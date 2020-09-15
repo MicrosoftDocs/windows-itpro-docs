@@ -3,7 +3,6 @@ title: Enable and configure Microsoft Defender Antivirus protection capabilities
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine-learning
 keywords: antivirus, real-time protection, rtp, machine-learning, behavior monitoring, heuristics
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

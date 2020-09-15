@@ -1,6 +1,6 @@
 ---
 title: Remote Desktop
-description: Remote Desktop
+description: Learn how Windows Hello for Business supports using a certificate deployed to a WHFB container to a remote desktop to a server or another device.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
 ms.prod: w10
 ms.mktglfcycl: deploy

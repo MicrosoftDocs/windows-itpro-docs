@@ -1,6 +1,6 @@
 ---
 title: Investigate connection events that occur behind forward proxies
-description: Investigate connection events that occur behind forward proxies
+description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender ATP, which surfaces a real target, instead of a proxy.
 keywords: proxy, network protection, forward proxy, network events, audit, block, domain names, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

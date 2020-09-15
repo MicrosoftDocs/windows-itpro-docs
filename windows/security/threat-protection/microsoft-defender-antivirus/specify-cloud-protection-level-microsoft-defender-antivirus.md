@@ -7,11 +7,10 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 09/03/2018
+ms.date: 08/12/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -21,7 +20,7 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Microsoft Defender Antivirus
 
 You can specify the level of cloud-protection offered by Microsoft Defender Antivirus with Group Policy and Microsoft Endpoint Configuration Manager.
 
@@ -62,7 +61,8 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > MpEngine**.
 
 6.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
-    - **Default Microsoft Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.
+    - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
+    - **Moderate blocking level** provides moderate only for high confidence detections
     - **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
     - **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.

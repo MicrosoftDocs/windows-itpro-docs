@@ -19,13 +19,17 @@ ms.topic: conceptual
 
 # Schedule scans with Microsoft Defender ATP for Mac
 
-While you can start a threat scan at any time with Microsoft Defender ATP, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. Create a scanning schedule using launchd on a macOS computer.
+While you can start a threat scan at any time with Microsoft Defender ATP, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
 
-## Schedule a scan with launchd
+## Schedule a scan with *launchd*
 
-1. Create a new .xml file. Use the following example to create your scanning schedule file.
+You can create a scanning schedule using the *launchd* daemon on a macOS device.
 
-    ```xml
+1. The following code shows the schema you need to use to schedule a scan. Open a text editor and use this example as a guide for your own scheduled scan file.
+
+    For more information on the *.plist* file format used here, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) at the official Apple developer website.
+
+    ```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
       "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -36,12 +40,13 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
         <key>ProgramArguments</key>
         <array>
             <string>sh</string>
-            <string>-c<string>
-            <string>/usr/local/bin/mdatp --scan --quick<string>
+            <string>-c</string>
+            <string>/usr/local/bin/mdatp --scan --quick</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
-        <key>StartCalendarInterval</key><dict>
+        <key>StartCalendarInterval</key>
+        <dict>
             <key>Day</key>
             <integer>3</integer>
             <key>Hour</key>
@@ -59,20 +64,30 @@ While you can start a threat scan at any time with Microsoft Defender ATP, your 
     </plist>
      ```
 
-2. Save the file as a program configuration file (.plist) with the name com.microsoft.wdav.schedquickscan.plist.
+2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
 
-    >[!NOTE]
-    >To change a quick scan to a full scan, use /usr/local/bin/mdatp --scan –full in the array string and update your .plist filename.
+    > [!TIP]
+    > To run a full scan instead of a quick scan, change line 12, `<string>/usr/local/bin/mdatp --scan --quick</string>`, to use the `--full` option instead of `--quick` (i.e. `<string>/usr/local/bin/mdatp --scan --full</string>`) and save the file as *com.microsoft.wdav.sched**full**scan.plist* instead of *com.microsoft.wdav.sched**quick**scan.plist*.
 
-3. Search for, and then open **Terminal**.
-4. To load your file into **launchd**, enter the following commands:
+3. Open **Terminal**.
+4. Enter the following commands to load your file:
 
     ```bash
-    `$ launchctl load /Library/LaunchDaemons/<your file name.plist>`
-    `$ launchctl start <your file name>`
+    launchctl load /Library/LaunchDaemons/<your file name.plist>
+    launchctl start <your file name>
     ```
 
-5. Your scheduled scan runs at the date, time, and frequency you defined in your .plist file. In the example, the scan runs at 2:00 AM every 7 days on a Friday, with the StartInterval using 604800 seconds for one week.
+5. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the example, the scan runs at 2:00 AM every Friday. 
 
- > [!NOTE]
- > Agents executed with launchd will not run at the scheduled time if the computer is asleep, but will run once the computer is awake. If the computer is off, the scan will not run until the computer is on at the next scheduled time.
+    Note that the `StartInterval` value is in seconds, indicating that scans should run every 604,800 seconds (one week), while the `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
+
+ > [!IMPORTANT]
+ > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
+ >
+ > If the device is turned off, the scan will run at the next scheduled scan time.
+
+## Schedule a scan with Intune
+
+You can also schedule scans with Microsoft Intune. The [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell script available at [Scripts for Microsoft Defender Advanced Threat Protection](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) will persist when the device resumes from sleep mode. 
+
+See [Use shell scripts on macOS devices in Intune](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.

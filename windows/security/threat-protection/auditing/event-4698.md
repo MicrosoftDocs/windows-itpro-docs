@@ -1,6 +1,6 @@
 ---
 title: 4698(S) A scheduled task was created. (Windows 10)
-description: Describes security event 4698(S) A scheduled task was created.
+description: Describes security event 4698(S) A scheduled task was created. This event is generated when a scheduled task is created.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -62,6 +62,17 @@ This event generates every time a new scheduled task is created.
  </Event>
 
 ```
+>[!NOTE]
+> Windows 10 Versions 1903 and above augments the event with these additional properties:
+> Event Version 1.
+>  ***Event XML:***
+>```
+>  <Data Name="ClientProcessStartKey">5066549580796854</Data> 
+>  <Data Name="ClientProcessId">3932</Data> 
+>  <Data Name="ParentProcessId">5304</Data> 
+>  <Data Name="RpcCallClientLocality">0</Data> 
+>  <Data Name="FQDN">DESKTOP-Name</Data> 
+
 
 ***Required Server Roles:*** None.
 

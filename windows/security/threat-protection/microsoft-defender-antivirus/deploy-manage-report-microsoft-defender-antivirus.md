@@ -3,7 +3,6 @@ title: Deploy, manage, and report on Microsoft Defender Antivirus
 description: You can deploy and manage Microsoft Defender Antivirus with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell, or WMI
 keywords: deploy, manage, update, protection, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

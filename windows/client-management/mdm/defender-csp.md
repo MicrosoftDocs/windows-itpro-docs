@@ -1,6 +1,6 @@
 ---
 title: Defender CSP
-description: See how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
+description: Learn how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.reviewer: 
 manager: dansimp
@@ -10,10 +10,13 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/21/2019
+ms.date: 08/11/2020
 ---
 
 # Defender CSP
+
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
@@ -48,7 +51,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**  
 Threat severity ID.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -63,7 +66,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**  
 Threat category ID.
 
-The data type is a integer.
+The data type is integer.
 
 The following table describes the supported values:
 
@@ -125,7 +128,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
 Information about the current status of the threat.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -146,7 +149,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**  
 Information about the execution status of the threat.
 
-The data type is a integer.
+The data type is integer.
 
 Supported operation is Get.
 
@@ -167,7 +170,7 @@ Supported operation is Get.
 <a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**  
 Number of times this threat has been detected on a particular client.
 
-The data type is a integer.
+The data type is integer.
 
 Supported operation is Get.
 
@@ -179,7 +182,7 @@ Supported operation is Get.
 <a href="" id="health-productstatus"></a>**Health/ProductStatus**  
 Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list.
 
-Data type is integer. Supported operation is Get.
+The data type is integer. Supported operation is Get.
 
 Supported product status values:  
 -  No status                                                        = 0
@@ -230,7 +233,7 @@ Example:
 <a href="" id="health-computerstate"></a>**Health/ComputerState**  
 Provide the current state of the device.
 
-The data type is a integer.
+The data type is integer.
 
 The following list shows the supported values:
 
@@ -391,13 +394,33 @@ When enabled or disabled exists on the client and admin moves the setting to not
 Enables or disables file hash computation feature.
 When this feature is enabled Windows defender will compute hashes for files it scans.
 
-The data type is a integer.
+The data type is integer.
 
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:  
 - 1 – Enable.
 - 0 (default) – Disable.
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**  
+The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (**MpCmdRun.exe**) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
+
+Data type is string.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Intune Support log location setting UX supports three states:  
+
+- Not configured (default) - Does not have any impact on the default state of the device. 
+- 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
+- 0 - Disabled. Turns off the Support log location feature. 
+
+When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+
+More details:  
+
+- [Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)  
+- [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

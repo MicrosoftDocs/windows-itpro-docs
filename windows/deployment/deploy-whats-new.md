@@ -3,7 +3,7 @@ title: What's new in Windows 10 deployment
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Changes and new features related to Windows 10 deployment
+description: Use this article to learn about new solutions and online content related to deploying Windows 10 in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium

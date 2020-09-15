@@ -16,6 +16,9 @@ ms.date: 05/10/2018
 
 # Internet Explorer 11 Blocker Toolkit - Frequently Asked Questions
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 Get answers to commonly asked questions about the Internet Explorer 11 Blocker Toolkit.
 
 > [!Important]

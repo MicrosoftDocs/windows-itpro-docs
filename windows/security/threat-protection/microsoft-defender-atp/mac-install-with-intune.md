@@ -20,10 +20,8 @@ ms.topic: conceptual
 # Intune-based deployment for Microsoft Defender ATP for Mac
 
 > [!NOTE]
-> This documentation explains the legacy method for deploying and configuring Microsoft Defender ATP on macOS devices. The native experience is now available in the MEM console. The release of the native UI in the MEM console provide admins with a much simpler way to configure and dfeploy the application and send it down to macOS devices. 
-> This blog post explains the new features: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995
-> To configure the app go here: https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos
-> To deploy the app go here: https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos
+> This documentation explains the legacy method for deploying and configuring Microsoft Defender ATP on macOS devices. The native experience is now available in the MEM console. The release of the native UI in the MEM console provide admins with a much simpler way to configure and deploy the application and send it down to macOS devices. <br> <br>
+>The blog post [MEM simplifies deployment of Microsoft Defender ATP for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explains the new features. To configure the app, go to [Settings for Microsoft Defender ATP for Mac in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). To deploy the app, go to [Add Microsoft Defender ATP to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
 
 **Applies to:**
 
@@ -50,7 +48,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Approve Kernel Extension for Microsoft Defender ATP](#download-installation-and-onboarding-packages) | MDATP_KExt.xml | N/A |
 | [Grant full disk access to Microsoft Defender ATP](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
-| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a 3rd party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
+| [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a third party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download installation and onboarding packages
@@ -66,15 +64,24 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 4. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
 6. From a command prompt, verify that you have the three files.
-    Extract the contents of the .zip files:
+  
 
     ```bash
-    $ ls -l
+    ls -l
+    ```
+
+    ```Output
     total 721688
     -rw-r--r--  1 test  staff     269280 Mar 15 11:25 IntuneAppUtil
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    $ unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+7. Extract the contents of the .zip files:
+
+    ```bash
+    unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
       inflating: intune/kext.xml
@@ -82,16 +89,18 @@ Download the installation and onboarding packages from Microsoft Defender Securi
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
 
-7. Make IntuneAppUtil an executable:
+8. Make IntuneAppUtil an executable:
 
     ```bash
-    $ chmod +x IntuneAppUtil
+    chmod +x IntuneAppUtil
     ```
 
-8. Create the wdav.pkg.intunemac package from wdav.pkg:
+9. Create the wdav.pkg.intunemac package from wdav.pkg:
 
     ```bash
-    $ ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
+    ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
+    ```
+    ```Output
     Microsoft Intune Application Utility for Mac OS X
     Version: 1.0.0.0
     Copyright 2018 Microsoft Corporation

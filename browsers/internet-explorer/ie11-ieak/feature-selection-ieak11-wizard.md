@@ -15,6 +15,9 @@ ms.sitesec: library
 
 
 # Use the Feature Selection page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Feature Selection** page of the Internet Explorer Customization Wizard 11 lets you choose which parts of the setup processes and Internet Explorer 11 to change for your company, including:
 
 -   **Setup Customizations.** Lets you add custom components, decide which components to install, provide your download site information, and modify the Setup title bar and graphics.
