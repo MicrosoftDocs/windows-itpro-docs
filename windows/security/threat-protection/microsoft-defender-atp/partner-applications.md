@@ -29,7 +29,7 @@ Microsoft Defender ATP supports third-party applications to help enhance the det
 
 The support for third-party solutions help to further streamline, integrate, and orchestrate defenses from other vendors with Microsoft Defender ATP; enabling security teams to effectively respond better to modern threats.
 
-Microsoft Defender ATP seamlessly integrates with existing security solutions - providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
+Microsoft Defender ATP seamlessly integrates with existing security solutions — providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
 
 ## Supported applications
 
@@ -88,7 +88,7 @@ Logo |Partner name   | Description
 :---|:---|:---
 ![Image of Bitdefender logo](images/bitdefender-logo.png)| [Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)| Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats
 ![Image of Better Mobile logo](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| AI based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy 
-![Image of Corrata logo](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobile solution - Protect your mobile devices with granular visibility and control from Corrata 
+![Image of Corrata logo](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobile solution — Protect your mobile devices with granular visibility and control from Corrata 
 ![Image of Lookout logo](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Get Lookout Mobile Threat Protection telemetry for Android and iOS mobile devices
 ![Image of Symantec Endpoint Protection Mobile logo](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile helps businesses predict, detect and prevent security threats and vulnerabilities on mobile devices 
 ![Image of Zimperium logo](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Microsoft Defender ATP to iOS and Android with Machine Learning-based Mobile Threat Defense
@@ -105,7 +105,7 @@ Logo |Partner name   | Description
 
 
 ## SIEM integration
-Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Microsoft Defender ATP supports SIEM integration through a variety of methods — specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
 
 ## Ticketing and IT service management 
 Ticketing solution integration helps to implement manual and automatic response processes. Microsoft Defender ATP can help to create tickets automatically when an alert is generated and resolve the alerts when tickets are closed using the alerts API. 
@@ -118,7 +118,7 @@ Microsoft Defender ATP offers unique automated investigation and remediation cap
   
 Integrating the automated investigation and response capability with other solutions such as IDS and firewalls help to address alerts and minimize the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.  
 
-External alerts can be pushed into Microsoft Defender ATP and is presented side-by-side with additional device-based alerts from Microsoft Defender ATP. This view provides a full context of the alert - with the real process and the full story of attack.  
+External alerts can be pushed into Microsoft Defender ATP and is presented side-by-side with additional device-based alerts from Microsoft Defender ATP. This view provides a full context of the alert — with the real process and the full story of attack.  
 
 ## Indicators matching
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
