@@ -15,13 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ms.date: 09/15/2020
 ---
 
 # Review and approve actions following an automated investigation
 
 ## Remediation actions
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's device groups are configured, remediation actions occur automatically or upon approval by your organization’s security operations team. 
+
+For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
 
 When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defender Advanced Threat Protection takes one of the following remediation actions automatically:
 - Quarantine a file
