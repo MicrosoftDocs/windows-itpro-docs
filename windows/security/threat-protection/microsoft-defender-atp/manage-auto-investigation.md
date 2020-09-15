@@ -80,10 +80,3 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 - [Get an overview of live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
-## Related articles
-
-- [How threats are remediated in automated investigation & remediation (Microsoft Defender Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-
-- [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-
-- [Self-healing in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
