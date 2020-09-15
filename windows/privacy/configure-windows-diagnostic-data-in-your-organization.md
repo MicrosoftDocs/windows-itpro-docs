@@ -213,3 +213,5 @@ Use [Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/win
 ## Limit optional diagnostic data for Desktop Analytics
 
 For more information about how to limit the diagnostic data to the minimum required by Desktop Analytics, see [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing).
+
+## Change privacy settings on a single server
