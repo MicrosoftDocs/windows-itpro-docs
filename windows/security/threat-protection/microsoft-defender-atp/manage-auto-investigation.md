@@ -22,7 +22,11 @@ ms.date: 09/15/2020
 
 ## Remediation actions
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
+When an [automated investigation](automated-investigations.md) runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
+
+Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
+
+Read this article to learn more about remediation actions and what to do when an automated investigation has completed.
 
 ### Examples showing how device groups affect remediation actions
 
