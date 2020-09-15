@@ -44,9 +44,24 @@ Logo |Partner name   | Description
 ![Image of Elastic security logo](images/elastic-security-logo.png) | Elastic Security | Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo](images/ibm-qradar-logo.png) | IBM QRadar | Configure IBM QRadar to collect detections from Microsoft Defender ATP 
 ![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | Micro Focus ArcSight | Use Micro Focus ArcSight to pull Microsoft Defender ATP detections
-![Image of logo](images/-logo.png) |
-![Image of logo](images/-logo.png) |
-![Image of logo](images/-logo.png) |
+![Image of RSA NetWitness logo](images/rsa-netwitness-logo.png) | RSA NetWitness | Stream Microsoft Defender ATP Alerts to RSA NetWitness leveraging Microsoft Graph Security API
+![Image of SafeBreach logo](images/safebreach-logo.png) |SafeBreach| Gain visibility into Microsoft Defender ATP security events that are automatically correlated with SafeBreach simulations
+![Image of Skybox Vulnerability Control logo](images/skybox-logo.png) | Skybox Vulnerability Control | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network and threat context to uncover your riskiest vulnerabilities
+![Image of Splunk logo](images/splunk-logo.png) | Splunk | The Microsoft Defender ATP Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
+![Image of XM Cyber logo](images/xmcyber-logo.png) | XM Cyber | Prioritize your response to an alert based on risk factors and high value assets.
+
+### Orchestration and automation
+
+
+Logo |Partner name   | Description 
+:---|:---|:---
+![Image of CyberSponse CyOps logo](images/-logo.png) | CyberSponse CyOps | CyOps integrates with Microsoft Defender ATP to automate customers' high-speed incident response playbooks
+![Image of Delta Risk ActiveEye logo](images/-logo.png) | Delta Risk ActiveEye | Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Microsoft Defender ATP with its cloud-native SOAR platform. ActiveEye
+![Image of Demisto, a Palo Alto Networks Company logo](images/-logo.png) | Demisto, a Palo Alto Networks Company | Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response
+![Image of Microsoft Flow & Azure Functions logo](images/-logo.png) | Microsoft Flow & Azure Functions | Use the Microsoft Defender ATP connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
+![Image of Rapid7 InsightConnect logo](images/-logo.png) | Rapid7 InsightConnect | InsightConnect integrates with Microsoft Defender ATP to accelerate, streamline, and integrate your time-intensive security processes
+![Image of ServiceNow logo](images/-logo.png) | ServiceNow | Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
+![Image of Swimlane logo](images/-logo.png) | Swimlane | Maximize incident response capabilities utilizing Swimlane and Microsoft Defender ATP together
 
 
 
@@ -56,9 +71,6 @@ Logo |Partner name   | Description
 
 
 
-![Image of logo](images/-logo.png) |
-
-![Image of logo](images/-logo.png) |
 
 ![Image of logo](images/-logo.png) |
 
