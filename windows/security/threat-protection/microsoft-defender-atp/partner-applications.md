@@ -55,13 +55,13 @@ Logo |Partner name   | Description
 
 Logo |Partner name   | Description 
 :---|:---|:---
-![Image of CyberSponse CyOps logo](images/-logo.png) | CyberSponse CyOps | CyOps integrates with Microsoft Defender ATP to automate customers' high-speed incident response playbooks
-![Image of Delta Risk ActiveEye logo](images/-logo.png) | Delta Risk ActiveEye | Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Microsoft Defender ATP with its cloud-native SOAR platform. ActiveEye
-![Image of Demisto, a Palo Alto Networks Company logo](images/-logo.png) | Demisto, a Palo Alto Networks Company | Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response
-![Image of Microsoft Flow & Azure Functions logo](images/-logo.png) | Microsoft Flow & Azure Functions | Use the Microsoft Defender ATP connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
-![Image of Rapid7 InsightConnect logo](images/-logo.png) | Rapid7 InsightConnect | InsightConnect integrates with Microsoft Defender ATP to accelerate, streamline, and integrate your time-intensive security processes
-![Image of ServiceNow logo](images/-logo.png) | ServiceNow | Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
-![Image of Swimlane logo](images/-logo.png) | Swimlane | Maximize incident response capabilities utilizing Swimlane and Microsoft Defender ATP together
+![Image of CyberSponse CyOps logo](images/cybersponse-logo.png) | CyberSponse CyOps | CyOps integrates with Microsoft Defender ATP to automate customers' high-speed incident response playbooks
+![Image of Delta Risk ActiveEye logo](images/delta-risk-activeeye-logo.png) | Delta Risk ActiveEye | Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Microsoft Defender ATP with its cloud-native SOAR platform. ActiveEye
+![Image of Demisto, a Palo Alto Networks Company logo](images/demisto-logo.png) | Demisto, a Palo Alto Networks Company | Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response
+![Image of Microsoft Flow & Azure Functions logo](images/ms-flow-logo.png) | Microsoft Flow & Azure Functions | Use the Microsoft Defender ATP connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
+![Image of Rapid7 InsightConnect logo](images/rapid7-logo.png) | Rapid7 InsightConnect | InsightConnect integrates with Microsoft Defender ATP to accelerate, streamline, and integrate your time-intensive security processes
+![Image of ServiceNow logo](images/servicenow-logo.png) | ServiceNow | Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
+![Image of Swimlane logo](images/swimlane-logo.png) | Swimlane | Maximize incident response capabilities utilizing Swimlane and Microsoft Defender ATP together
 
 
 
