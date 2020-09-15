@@ -106,7 +106,7 @@ You can configure the following levels of automation:
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
 
-## Related articles
+## See also
 
 - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 

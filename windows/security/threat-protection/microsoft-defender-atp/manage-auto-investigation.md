@@ -88,5 +88,3 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 - [View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center)
 
-- [Get an overview of live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
-
