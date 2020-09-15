@@ -22,11 +22,13 @@ ms.date: 09/15/2020
 
 ## Remediation actions
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's device groups are configured, remediation actions occur automatically or upon approval by your organization’s security operations team. 
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. 
 
-For example, some actions, such as removing malware, are taken automatically. Other actions require review and approval to proceed.  
+For example, suppose that your organization's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, your security operations team must review and approve all remediation actions. 
 
-When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defender Advanced Threat Protection takes one of the following remediation actions automatically:
+Now suppose that you've changed your organization's device groups so that they are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. 
+
+When an automated investigation determines an artifact is malicious, the following remediation actions are taken or recommended:
 - Quarantine a file
 - Remove a registry key
 - Kill a process
@@ -35,7 +37,7 @@ When a verdict of *Malicious* is reached for a piece of evidence, Microsoft Defe
 - Disable a driver
 - Remove a scheduled task
 
-Evidence determined as *Suspicious* results in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible so that you automated investigations complete in a timely manner. 
+Artifacts that are determined to be *Suspicious* result in pending actions that require approval. As a best practice, make sure to [approve (or reject) pending actions](#review-pending-actions) as soon as possible so that you automated investigations complete in a timely manner. 
 
 No actions are taken when a verdict of *No threats found* is reached for a piece of evidence. 
 
@@ -43,22 +45,22 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 ## Review pending actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the Security dashboard.
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the [Security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard).
 
-2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
+2. On the Security operations dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
 
 3. Review any items on the **Pending** tab. 
 
-    Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions. Other details such as file or service details, investigation details, and alert details are displayed. From the panel, you can click on the **Open investigation page** link to see the investigation details.
-
-    You can also select multiple investigations to approve or reject actions on multiple investigations. 
-
+   - Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions. 
+   - Other details such as file or service details, investigation details, and alert details are displayed. 
+   - From the panel, you can click on the **Open investigation page** link to see the investigation details.
+   - You can also select multiple investigations to approve or reject actions on multiple investigations. 
 
 ## Review completed actions
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the Security dashboard.
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. You'll see the [Security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard).
 
-2. On the Security dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
+2. On the Security operations dashboard, in the navigation pane on the left, choose **Automated investigations** > **Action center**.
 
 3. Select the **History** tab. (If need be, expand the time period to display more data.)
 
@@ -74,6 +76,8 @@ In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and 
 
 ## Related articles
 
+- [How threats are remediated in automated investigation & remediation (Microsoft Defender Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
+
 - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Self-healing in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
