@@ -22,11 +22,13 @@ ms.date: 09/15/2020
 
 ## Remediation actions
 
-When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. Here are two examples:
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. Depending on the type of threat, the resulting verdict, and how your organization's [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) are configured, remediation actions can occur automatically or only upon approval by your organization’s security operations team. Here are a few examples:
 
-- Example 1: Contoso's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, Contoso's security operations team must review and approve all remediation actions. (See [Review pending actions](#review-pending-actions).)
+- Example 1: Fabrikam's device groups are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. (See [Review completed actions](#review-completed-actions).)
 
-- Example 2: Fabrikam's device groups are set to **Full - remediate threats automatically** (this is the recommended setting). In this case, remediation actions are taken automatically for artifacts that are considered to be malicious. (See [Review completed actions](#review-completed-actions).)
+- Example 2: Contoso's devices are included in a device group that is set for **Semi - require approval for any remediation**. In this case, Contoso's security operations team must review and approve all remediation actions. (See [Review pending actions](#review-pending-actions).)
+
+- Example 3: Tailspin Toys has their device groups set to **No automated response** (this is not recommended). In this case, automated investigations do not occur. As a result, no remediation actions are taken or pending, and no actions are logged in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center) for their devices.
 
 Whether taken automatically or upon approval, remediation actions include the following:
 - Quarantine a file
