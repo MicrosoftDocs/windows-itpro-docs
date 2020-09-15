@@ -1,29 +1,29 @@
 ---
-title: Policy CSP - ADMX_AuditSettings
-description: Policy CSP - ADMX_AuditSettings
+title: Policy CSP - ADMX_FileServerVSSProvider
+description: Policy CSP - ADMX_FileServerVSSProvider
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/13/2020
+ms.date: 09/02/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_AuditSettings
+# Policy CSP - ADMX_FileServerVSSProvider
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AuditSettings policies  
+## ADMX_FileServerVSSProvider policies  
 
 <dl>
   <dd>
-    <a href="#admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
+    <a href="#admx-fileservervssprovider-pol-encryptprotocol">ADMX_FileServerVSSProvider/Pol_EncryptProtocol</a>
   </dd>
 </dl>
 
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-fileservervssprovider-pol-encryptprotocol"></a>**ADMX_FileServerVSSProvider/Pol_EncryptProtocol**  
 
 <!--SupportedSKUs-->
 <table>
@@ -74,16 +74,14 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines what information is logged in security audit events when a new process has been created. This setting only applies when the Audit Process Creation policy is enabled.
+Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled.
 
-If you enable this policy setting, the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares.
 
-If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.  
-
-Default is Not configured.
+By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted. 
 
 > [!NOTE]
-> When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information, such as passwords or user data.
+> To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
 
 <!--/Description-->
 > [!TIP]
@@ -95,10 +93,10 @@ Default is Not configured.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
--   GP name: *IncludeCmdLine*
--   GP path: *System/Audit Process Creation*
--   GP ADMX file name: *AuditSettings.admx*
+-   GP English name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers.*
+-   GP name: *EncryptProtocol*
+-   GP path: *System/File Share Shadow Copy Provider*
+-   GP ADMX file name: *FileServerVSSProvider.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
