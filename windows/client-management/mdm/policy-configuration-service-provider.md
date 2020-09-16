@@ -598,7 +598,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### ADMX_NCSI policies
 <dl>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpdnsprobecontent" id="admx-ncsi-ncsi-corpdnsprobecontent">ADMX_NCSI/NCSI_CorpDnsProbeContent</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-corpdnsprobecontent" id="admx-ncsi-ncsi-corpdnsprobecontent">ADMX_NCSI/NCSI_CorpDnsProbeContent</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-corpdnsprobehost" id="admx-ncsi-ncsi-corpdnsprobehost">ADMX_NCSI/NCSI_CorpDnsProbeHost</a>
