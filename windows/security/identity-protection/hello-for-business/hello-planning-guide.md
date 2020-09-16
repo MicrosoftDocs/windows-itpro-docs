@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: conceptual
-ms.date: 08/19/2018
+ms.date: 09/16/2020
 ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
@@ -24,6 +24,8 @@ ms.reviewer:
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you'll use that information to select the correct deployment guide for your needs.
+
+If you have an Azure tenant, you can use our online, interactive Passwordless Wizard which walks through the same choices instead of using our manual guide below. The Passwordless Wizard is available in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/modernonboarding/passwordlesssetup).
 
 ## Using this guide
 
