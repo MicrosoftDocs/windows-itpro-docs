@@ -33,9 +33,8 @@ have committed to building security solutions not just *for* Microsoft, but also
 organizations. We're listening to customer feedback and partnering closely with
 our customers to build solutions that meet their needs.
 
-Customers benefit from getting a unified view of all threats and alerts in the
-Microsoft Defender Security Center, across Windows and all our cross platform
-solutions, enabling them to get a full picture of what's happening in their
+Customers highly value the unified view of all threats and alerts in the
+Microsoft Defender Security Center, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their
 environment, which empowers them to more quickly assess and respond to threats.
 
 ## Microsoft Defender ATP for Mac 
@@ -81,6 +80,15 @@ information about the key features and benefits, read our
 For more details on how to get started, visit the Microsoft Defender ATP for
 Android
 [documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android).
+
+
+## Microsoft Defender ATP for iOS 
+
+Microsoft Defender ATP for iOS is our mobile threat defense solution for devices running iOS xxx and higher. On iOS, we offer web protection which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators. For more information about the key features and benefits, read our announcement.  
+
+For more details on how to get started, visit the Microsoft Defender ATP for iOS documentation. 
+
+
 
 ## Licensing requirements for non-Windows platforms
 
