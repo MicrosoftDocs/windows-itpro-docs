@@ -135,7 +135,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 0 = not set
 - 1 = AD Site
 - 2 = Authenticated domain SID
-- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 235 and use the returned GUID value as the Group ID)
+- 3 = DHCP Option ID (with this option, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID)
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
