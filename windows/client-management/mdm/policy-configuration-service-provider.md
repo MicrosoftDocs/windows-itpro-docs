@@ -598,25 +598,25 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### ADMX_NCSI policies
 <dl>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpdnsprobecontent" id="admx-ncsi-corpdnsprobecontent">ADMX_NCSI/NCSI_CorpDnsProbeContent</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpdnsprobecontent" id="admx-ncsi-ncsi-corpdnsprobecontent">ADMX_NCSI/NCSI_CorpDnsProbeContent</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpdnsprobehost" id="admx-ncsi-corpdnsprobehost">ADMX_NCSI/NCSI_CorpDnsProbeHost</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-corpdnsprobehost" id="admx-ncsi-ncsi-corpdnsprobehost">ADMX_NCSI/NCSI_CorpDnsProbeHost</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpsiteprefixes" id="admx-ncsi-corpsiteprefixes">ADMX_NCSI/NCSI_CorpSitePrefixes</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-corpsiteprefixes" id="admx-ncsi-ncsi-corpsiteprefixes">ADMX_NCSI/NCSI_CorpSitePrefixes</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-corpwebprobeurl" id="admx-ncsi-corpwebprobeurl">ADMX_NCSI/NCSI_CorpWebProbeUrl</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-corpwebprobeurl" id="admx-ncsi-ncsi-corpwebprobeurl">ADMX_NCSI/NCSI_CorpWebProbeUrl</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-domainlocationdeterminationurl" id="admx-ncsi-domainlocationdeterminationurl">ADMX_NCSI/NCSI_DomainLocationDeterminationUrl</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-domainlocationdeterminationurl" id="admx-ncsi-ncsi-domainlocationdeterminationurl">ADMX_NCSI/NCSI_DomainLocationDeterminationUrl</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-globaldns" id="admx-ncsi-globaldns">ADMX_NCSI/NCSI_GlobalDns</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-globaldns" id="admx-ncsi-ncsi-globaldns">ADMX_NCSI/NCSI_GlobalDns</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-passivepolling" id="admx-ncsi-passivepolling">ADMX_NCSI/NCSI_PassivePolling</a>
+    <a href="./policy-csp-admx-ncsi.md#admx-ncsi-ncsi-passivepolling" id="admx-ncsi-ncsi-passivepolling">ADMX_NCSI/NCSI_PassivePolling</a>
   </dd>
 </dl>
 
