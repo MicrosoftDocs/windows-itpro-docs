@@ -76,10 +76,18 @@ To add a new policy:
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected devices.
 
+Tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
->ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+### Allow specific websites
+
+It is possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it is applied to the device group in question.
+
+1. Create a custom indicator in the Microsoft Defender Security Center by going to **Settings** > **Indicators** > **URL/Domain** > **Add Item**
+2. Enter the domain of the site
+3. Set the policy action to **Allow**.  
 
 ## Web content filtering cards and details
 

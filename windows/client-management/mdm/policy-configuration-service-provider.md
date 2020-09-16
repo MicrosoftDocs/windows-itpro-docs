@@ -245,6 +245,41 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Cpls policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disablechangepassword" id="#admx-ctrlaltdel-disablechangepassword">ADMX_CtrlAltDel/DisableChangePassword</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disablelockcomputer" id="#admx-ctrlaltdel-disablelockcomputer">ADMX_CtrlAltDel/DisableLockComputer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disabletaskmgr" id="#admx-ctrlaltdel-disabletaskmgr">ADMX_CtrlAltDel/DisableTaskMgr</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-nologoff" id="#admx-ctrlaltdel-nologoff">ADMX_CtrlAltDel/NoLogoff</a>
+  </dd>
+</dl>
+
+
+###  ADMX_CtrlAltDel policies  
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-cpls.md#admx-cpls-usedefaulttile" id="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
+  </dd>
+</dl>
+
+### ADMX_DigitalLocker policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2" id="admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
+  </dd>
+</dl>
+
 ### ADMX_DnsClient policies
 
 <dl>
@@ -316,6 +351,45 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DWM policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-1" id="admx-dwm-dwmdefaultcolorizationcolor-1">ADMX_DWM/DwmDefaultColorizationColor_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-2" id="admx-dwm-dwmdefaultcolorizationcolor-2">ADMX_DWM/DwmDefaultColorizationColor_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisableaccentandgradient" id="admx-dwm-dwmdisableaccentandgradient">ADMX_DWM/DwmDisableAccentAndGradient</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowanimations-1" id="admx-dwm-dwmdisallowanimations-1">ADMX_DWM/DwmDisallowAnimations_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowanimations-2" id="admx-dwm-dwmdisallowanimations-2">ADMX_DWM/DwmDisallowAnimations_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowcolorizationcolorchanges-1" id="admx-dwm-dwmdisallowcolorizationcolorchanges-1">ADMX_DWM/DwmDisallowColorizationColorChanges_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowcolorizationcolorchanges-2" id="admx-dwm-dwmdisallowcolorizationcolorchanges-2">ADMX_DWM/DwmDisallowColorizationColorChanges_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowflip3d-1" id="admx-dwm-dwmdisallowflip3d-1">ADMX_DWM/DwmDisallowFlip3D_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowflip3d-2" id="admx-dwm-dwmdisallowflip3d-2">ADMX_DWM/DwmDisallowFlip3D_2</a>
+  </dd>
+</dl>
+
+### ADMX_EncryptFilesonMove policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove" id="admx-encryptfilesonmove-noencryptonmove">ADMX_EncryptFilesonMove/NoEncryptOnMove</a>
+  </dd>
+</dl>
+
 ### ADMX_EventForwarding policies
 
 <dl>
@@ -324,6 +398,165 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-eventforwarding.md#admx_eventforwarding-subscriptionmanager" id="admx_eventforwarding-subscriptionmanager">ADMX_EventForwarding/SubscriptionManager</a>
+  </dd>
+</dl>
+
+### ADMX_FileServerVSSProvider policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-fileservervssprovider.md#admx-fileservervssprovider-pol-encryptprotocol" id="admx-fileservervssprovider-pol-encryptprotocol">ADMX_FileServerVSSProvider/Pol_EncryptProtocol</a>
+  </dd>
+</dl>
+
+### ADMX_FileSys policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disablecompression" id="admx-filesys-disablecompression">ADMX_FileSys/DisableCompression</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disabledeletenotification" id="admx-filesys-disabledeletenotification">ADMX_FileSys/DisableDeleteNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-disableencryption" id="admx-filesys-disableencryption">ADMX_FileSys/DisableEncryption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-enablepagefileencryption" id="admx-filesys-enablepagefileencryption">ADMX_FileSys/EnablePagefileEncryption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-longpathsenabled" id="admx-filesys-longpathsenabled">ADMX_FileSys/LongPathsEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-shortnamecreationsettings" id="admx-filesys-shortnamecreationsettings">ADMX_FileSys/ShortNameCreationSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-symlinkevaluation" id="admx-filesys-symlinkevaluation">ADMX_FileSys/SymlinkEvaluation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-filesys.md#admx-filesys-txfdeprecatedfunctionality" id="admx-filesys-txfdeprecatedfunctionality">ADMX_FileSys/TxfDeprecatedFunctionality</a>
+  </dd>
+</dl>
+
+### ADMX_FolderRedirection policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpin" id="admx-folderredirection-disablefradminpin">ADMX_FolderRedirection/DisableFRAdminPin</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-disablefradminpinbyfolder" id="admx-folderredirection-disablefradminpinbyfolder">ADMX_FolderRedirection/DisableFRAdminPinByFolder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-folderredirectionenablecacherename" id="admx-folderredirection-folderredirectionenablecacherename">ADMX_FolderRedirection/FolderRedirectionEnableCacheRename</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-localizexprelativepaths-1" id="admx-folderredirection-localizexprelativepaths-1">ADMX_FolderRedirection/LocalizeXPRelativePaths_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-localizexprelativepaths-2" id="admx-folderredirection-localizexprelativepaths-2">ADMX_FolderRedirection/LocalizeXPRelativePaths_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-1" id="admx-folderredirection-primarycomputer-fr-1">ADMX_FolderRedirection/PrimaryComputer_FR_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-2" id="admx-folderredirection-primarycomputer-fr-2">ADMX_FolderRedirection/PrimaryComputer_FR_2</a>
+  </dd>
+</dl>
+
+### ADMX_Help policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-disablehhdep" id="admx-help-disablehhdep">ADMX_Help/DisableHHDEP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-helpqualifiedrootdir-comp" id="admx-help-helpqualifiedrootdir-comp">ADMX_Help/HelpQualifiedRootDir_Comp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp" id="admx-help-restrictrunfromhelp">ADMX_Help/RestrictRunFromHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp-comp" id="admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
+  </dd>
+</dl>
+
+### ADMX_HelpAndSupport policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-activehelp" id="admx-helpandsupport-activehelp">ADMX_HelpAndSupport/ActiveHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpexplicitfeedback" id="admx-helpandsupport-hpexplicitfeedback">ADMX_HelpAndSupport/HPExplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpimplicitfeedback" id="admx-helpandsupport-hpimplicitfeedback">ADMX_HelpAndSupport/HPImplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hponlineassistance" id="admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
+  </dd>
+</dl>
+
+### ADMX_kdc policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-cbacandarmor" id="admx-kdc-cbacandarmor">ADMX_kdc/CbacAndArmor</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-forestsearch" id="admx-kdc-forestsearch">ADMX_kdc/ForestSearch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-pkinitfreshness" id="admx-kdc-pkinitfreshness">ADMX_kdc/PKINITFreshness</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-requestcompoundid" id="admx-kdc-requestcompoundid">ADMX_kdc/RequestCompoundId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-ticketsizethreshold" id="admx-kdc-ticketsizethreshold">ADMX_kdc/TicketSizeThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kdc.md#admx-kdc-emitlili" id="admx-kdc-emitlili">ADMX_kdc/emitlili</a>
+  </dd>
+</dl>
+
+### ADMX_LanmanServer policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-ciphersuiteorder" id="admx-lanmanserver-pol-ciphersuiteorder">ADMX_LanmanServer/Pol_CipherSuiteOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-hashpublication" id="admx-lanmanserver-pol-hashpublication">ADMX_LanmanServer/Pol_HashPublication</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-hashsupportversion" id="admx-lanmanserver-pol-hashsupportversion">ADMX_LanmanServer/Pol_HashSupportVersion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanserver.md#admx-lanmanserver-pol-honorciphersuiteorder" id="admx-lanmanserver-pol-honorciphersuiteorder">ADMX_LanmanServer/Pol_HonorCipherSuiteOrder</a>
+  </dd>
+</dl>
+
+### ADMX_LinkLayerTopologyDiscovery policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablelltdio" id="admx-linklayertopologydiscovery-lltd-enablelltdio">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr" id="admx-linklayertopologydiscovery-lltd-enablerspndr">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr</a>
+  </dd>
+</dl>
+
+### ADMX_MMC policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-activexcontrol" id="admx-mmc-mmc-activexcontrol">ADMX_MMC/MMC_ActiveXControl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-extendview" id="admx-mmc-mmc-extendview">ADMX_MMC/MMC_ExtendView</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-linktoweb" id="admx-mmc-mmc-linktoweb">ADMX_MMC/MMC_LinkToWeb</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-restrict-author" id="admx-mmc-mmc-restrict-author">ADMX_MMC/MMC_Restrict_Author</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-restrict-to-permitted-snapins" id="admx-mmc-mmc-restrict-to-permitted-snapins">ADMX_MMC/MMC_Restrict_To_Permitted_Snapins</a>
   </dd>
 </dl>
 
@@ -2499,15 +2732,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly" id="localpoliciessecurityoptions-devices-restrictcdromaccesstolocallyloggedonuseronly">LocalPoliciesSecurityOptions/Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways" id="localpoliciessecurityoptions-domainmember-digitallyencryptorsignsecurechanneldataalways">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible" id="localpoliciessecurityoptions-domainmember-digitallyencryptsecurechanneldatawhenpossible">LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges" id="localpoliciessecurityoptions-domainmember-disablemachineaccountpasswordchanges">LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked">LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</a>
   </dd>
   <dd>
@@ -2586,16 +2810,10 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers" id="localpoliciessecurityoptions-networksecurity-restrictntlm-outgoingntlmtraffictoremoteservers">LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon">LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon">LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile" id="localpoliciessecurityoptions-shutdown-clearvirtualmemorypagefile">LocalPoliciesSecurityOptions/Shutdown_ClearVirtualMemoryPageFile</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems" id="localpoliciessecurityoptions-systemobjects-requirecaseinsensitivityfornonwindowssubsystems">LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
@@ -3917,6 +4135,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd> 
+    <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 
   </dd>
   <dd> 
     <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a> 

@@ -70,8 +70,6 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client devices.
 
-- [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
-Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal.
 
 > [!TIP] 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
