@@ -1,5 +1,5 @@
 ---
-title: Supported managed security service provider 
+title: Supported managed security service providers 
 description: See the list of MSSPs that Microsoft Defender ATP integrates with
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Supported managed security service provider 
+# Supported managed security service providers
 
 **Applies to:**
 
