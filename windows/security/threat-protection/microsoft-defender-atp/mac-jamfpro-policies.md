@@ -41,7 +41,9 @@ You'll need to take the following steps:
 
 7. [Approve Kernel extension for Microsoft Defender ATP](#step-7-approve-kernel-extension-for-microsoft-defender-atp)
 
-8. [Deploy Microsoft Defender ATP for macOS](#step-8-deploy-microsoft-defender-atp-for-macos)
+8. [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
+9. [Deploy Microsoft Defender ATP for macOS](#step-9-deploy-microsoft-defender-atp-for-macos)
 
 
 ## Step 1: Get the Microsoft Defender ATP onboarding package
@@ -476,7 +478,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 <plist version="1.0">
 <dict>
 	<key>ChannelName</key>
-	<string>InsiderFast</string>
+	<string>Production</string>
 	<key>HowToCheck</key>
 	<string>AutomaticDownload</string>
 	<key>EnableCheckForUpdatesButton</key>
@@ -672,7 +674,10 @@ leaf[subject.OU] = UBF8T346G9
     ![Image of configuration settings](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
 
-## Step 8: Deploy Microsoft Defender ATP for macOS
+## Step 8: Schedule scans with Microsoft Defender ATP for Mac
+Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+
+## Step 9: Deploy Microsoft Defender ATP for macOS
 
 1. Navigate to where you saved `wdav.pkg`.
 
