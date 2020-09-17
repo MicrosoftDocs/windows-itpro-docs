@@ -65,6 +65,9 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!NOTE]
 > If your AD forest has multiple domains, make sure you add the ADConnect sync service account (ie. MSOL_12121212) into "Enterprise Key Admins" group to gain permission across the domains in the forest.
 
+> [!NOTE]
+> Transfer the PDC emulator FSMO role to a domain controller running Windows Server 2016 (or later) to be able to search the Key Admins and Enterprise Key Admins groups (domain controllers running previous versions of Windows Server cannot translate the security identifier to a name for these groups).
+
 ### Section Review
 
 > [!div class="checklist"]
