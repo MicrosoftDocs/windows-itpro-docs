@@ -196,7 +196,7 @@
 #### [ADMX_MSAPolicy](policy-csp-admx-msapolicy.md)
 #### [ADMX_nca](policy-csp-admx-nca.md)
 #### [ADMX_NCSI](policy-csp-admx-ncsi.md)
-#### [ADMX_Netlog](policy-csp-admx-netlogon.md)
+#### [ADMX_Netlogon](policy-csp-admx-netlogon.md)
 #### [ADMX_PeerToPeerCaching](policy-csp-admx-peertopeercaching.md)
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)

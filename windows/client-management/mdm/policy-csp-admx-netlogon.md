@@ -1149,6 +1149,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting determi
 If you enable this policy setting, select Enabled and specify a list of space-delimited mnemonics (instructions) for the DC Locator DNS records that will not be registered by the DCs to which this setting is applied.
 
 Select the mnemonics from the following table:
+
 |Mnemonic|Type|DNS Record|
 |--------|---------|-----------|
 |LdapIpAddress|A|`<DnsDomainName>`|
