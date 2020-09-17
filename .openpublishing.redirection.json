@@ -2531,9 +2531,9 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/threat-protection/wannacrypt-ransomware-worm-targets-out-of-date-systems-wdsi.md",
+      "source_path": "windows/security/threat-protection/wannacrypt-ransomware-worm-targets-out-of-date-systems-wdsi.md",
       "redirect_url": "https://www.microsoft.com/security/blog/2017/05/12/wannacrypt-ransomware-worm-targets-out-of-date-systems/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-defender-application-control.md",
