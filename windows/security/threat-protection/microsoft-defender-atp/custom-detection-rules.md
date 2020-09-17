@@ -16,10 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.date: 09/20/2020
 ---
 
 # Create custom detection rules
+
 **Applies to:**
+
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
