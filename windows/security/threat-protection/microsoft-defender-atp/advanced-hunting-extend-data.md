@@ -8,8 +8,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
