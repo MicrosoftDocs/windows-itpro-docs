@@ -82,7 +82,7 @@ You can use Group Policy to force Microsoft Defender Antivirus to check and down
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
 
 5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**. 
 
@@ -140,7 +140,7 @@ If you have enabled cloud-delivered protection, Microsoft Defender AV will send 
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
 
 5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
 
