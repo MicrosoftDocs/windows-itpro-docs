@@ -49,7 +49,7 @@ The following sections provide guidance on how to address this issue, depending 
 
 See the instructions corresponding to the management tool that you used to deploy the product:
 
-- [JAMF-based deployment](mac-install-with-jamf.md#configuration-profile)
+- [JAMF-based deployment](mac-install-with-jamf.md)
 - [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles)
 
 ## Manual deployment
