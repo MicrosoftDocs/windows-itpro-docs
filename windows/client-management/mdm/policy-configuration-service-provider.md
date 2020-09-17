@@ -787,6 +787,47 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>  
 
+### ADMX_Scripts policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-allow-logon-script-netbiosdisabled" id"admx-scripts-allow-logon-script-netbiosdisabled">ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-maxgposcriptwaitpolicy" id="admx-scripts-maxgposcriptwaitpolicy">ADMX_Scripts/MaxGPOScriptWaitPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-computer-ps-scripts-first" id="admx-scripts-run-computer-ps-scripts-first">ADMX_Scripts/Run_Computer_PS_Scripts_First</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-legacy-logon-script-hidden" id="admx-scripts-run-legacy-logon-script-hidden">ADMX_Scripts/Run_Legacy_Logon_Script_Hidden</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-logoff-script-visible" id="admx-scripts-run-logoff-script-visible">ADMX_Scripts/Run_Logoff_Script_Visible</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-logon-script-sync-1" id="admx-scripts-run-logon-script-sync-1">ADMX_Scripts/Run_Logon_Script_Sync_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-logon-script-sync-2" id="admx-scripts-run-logon-script-sync-2">ADMX_Scripts/Run_Logon_Script_Sync_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-logon-script-visible" id="admx-scripts-run-logon-script-visible">ADMX_Scripts/Run_Logon_Script_Visible</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-shutdown-script-visible" id="admx-scripts-run-shutdown-script-visible">ADMX_Scripts/Run_Shutdown_Script_Visible</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-startup-script-sync" id="admx-scripts-run-startup-script-sync">ADMX_Scripts/Run_Startup_Script_Sync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-startup-script-visible" id="admx-scripts-run-startup-script-visible">ADMX_Scripts/Run_Startup_Script_Visible</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-scripts.md#admx-scripts-run-user-ps-scripts-first" id="admx-scripts-run-user-ps-scripts-first">ADMX_Scripts/Run_User_PS_Scripts_First</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>

@@ -200,6 +200,7 @@
 #### [ADMX_PeerToPeerCaching](policy-csp-admx-peertopeercaching.md)
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)
+#### [ADMX_Scripts](policy-csp-admx-scripts.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
