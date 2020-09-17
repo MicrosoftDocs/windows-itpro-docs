@@ -1,5 +1,5 @@
 ---
-title: Phase 1 - Prepare for your migration to Microsoft Defender ATP
+title: Symantec to Microsoft Defender ATP - Phase 1, Preparing
 description: This is Phase 1, Prepare, of migrating from Symantec to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
