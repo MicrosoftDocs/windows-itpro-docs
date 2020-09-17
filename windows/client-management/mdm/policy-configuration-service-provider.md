@@ -753,6 +753,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_PerformanceDiagnostics policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-1" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-1">ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-2" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-2">ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-3" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-3">ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-4" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-4">ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_4</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
