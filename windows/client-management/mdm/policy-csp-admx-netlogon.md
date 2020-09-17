@@ -628,7 +628,8 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting allows 
 
 NetBIOS-based discovery uses a WINS server and mailslot messages but does not use site information. Hence it does not ensure that clients will discover the closest DC. It also allows a hub-site client to discover a branch-site DC even if the branch-site DC only registers site-specific DNS records (as recommended). For these reasons, NetBIOS-based discovery is not recommended.
 
-Note that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
+> [!NOTE]
+> This policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
 
 If you enable or do not configure this policy setting, the DC location algorithm does not use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
 
@@ -784,7 +785,8 @@ This setting is relevant only to those callers of DsGetDcName that have specifie
 
 If the value of this setting is less than the value specified in the NegativeCachePeriod subkey, the value in the NegativeCachePeriod subkey is used.
 
-Warning: If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC is not available, the traffic caused by periodic DC discoveries may be excessive.
+> [!WARNING]
+> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC is not available, the traffic caused by periodic DC discoveries may be excessive.
 
 <!--/Description-->
 > [!TIP]
@@ -861,7 +863,8 @@ The maximum value for this setting is 49 days (0x49*24*60*60=4233600). The minim
 
 If the value for this setting is smaller than the value specified for the Initial DC Discovery Retry Setting, the Initial DC Discovery Retry Setting is used.
 
-Warning: If the value for this setting is too large, a client may take very long periods to try to find a DC.
+> [!WARNING]
+> If the value for this setting is too large, a client may take very long periods to try to find a DC.
 
 If the value for this setting is too small and the DC is not available, the frequent retries may produce excessive network traffic.
 
@@ -1247,7 +1250,8 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting specifi
 
 DCs configured to perform dynamic registration of the DC Locator DNS resource records periodically reregister their records with DNS servers, even if their records’ data has not changed. If authoritative DNS servers are configured to perform scavenging of the stale records, this reregistration is required to instruct the DNS servers configured to automatically remove (scavenge) stale records that these records are current and should be preserved in the database.
 
-Warning: If the DNS resource records are registered in zones with scavenging enabled, the value of this setting should never be longer than the Refresh Interval configured for these zones. Setting the Refresh Interval of the DC Locator DNS records to longer than the Refresh Interval of the DNS zones may result in the undesired deletion of DNS resource records.
+> [!WARNING]
+> If the DNS resource records are registered in zones with scavenging enabled, the value of this setting should never be longer than the Refresh Interval configured for these zones. Setting the Refresh Interval of the DC Locator DNS records to longer than the Refresh Interval of the DNS zones may result in the undesired deletion of DNS resource records.
 
 To specify the Refresh Interval of the DC records, click Enabled, and then enter a value larger than 1800. This value specifies the Refresh Interval of the DC records in seconds (for example, the value 3600 is 60 minutes).
 
@@ -1685,7 +1689,8 @@ ADMX Info:
 <!--Description-->
 Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to control the processing of incoming mailslot messages by a local domain controller (DC).
 
-Note: To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that is configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
+> [!NOTE]
+> To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that is configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
 
 This policy setting is recommended to reduce the attack surface on a DC, and can be used in an environment without WINS, in an IPv6-only environment, and whenever DC location based on a NetBIOS domain name is not required. This policy setting does not affect DC location based on DNS names.
 
@@ -2052,7 +2057,8 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting specifi
 
 The default value for this setting is 45 seconds. The maximum value for this setting is 7 days (7*24*60*60). The minimum value for this setting is 0.
 
-Warning: If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
+> [!WARNING]
+> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
 
 <!--/Description-->
 > [!TIP]
@@ -2575,7 +2581,8 @@ When this setting is disabled or not configured, the SYSVOL share will grant sha
 
 By default, the SYSVOL share will grant shared read access to files on the share when exclusive access is requested.
 
-Note: The SYSVOL share is a share created by the Net Logon service for use by Group Policy clients in the domain. The default behavior of the SYSVOL share ensures that no application with only read permission to files on the sysvol share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the SYSVOL share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the SYSVOL share on the domain will be decreased.
+> [!NOTE]
+> The SYSVOL share is a share created by the Net Logon service for use by Group Policy clients in the domain. The default behavior of the SYSVOL share ensures that no application with only read permission to files on the sysvol share can lock the files by requesting exclusive read access, which might prevent Group Policy settings from being updated on clients in the domain. When this setting is enabled, an application that relies on the ability to lock files on the SYSVOL share with only read permission will be able to deny Group Policy clients from reading the files, and in general the availability of the SYSVOL share on the domain will be decreased.
 
 If you enable this policy setting, domain administrators should ensure that the only applications using the exclusive read capability in the domain are those approved by the administrator.
 
