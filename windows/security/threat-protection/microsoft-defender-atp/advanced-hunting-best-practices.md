@@ -21,7 +21,9 @@ ms.topic: article
 
 **Applies to:**
 
-- Microsoft Threat Protection
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
@@ -39,7 +41,7 @@ Apply these recommendations to get results faster and avoid timeouts while runni
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Has beats contains**—To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- ***Has* beats *contains*** —To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 
 - **Look in specific columns**—Look in a specific column rather than running full text searches across all columns. Don't use `*` to check all columns.
 
