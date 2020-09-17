@@ -1,6 +1,6 @@
 ---
 title: Set up the Microsoft Defender ATP for macOS policies in Jamf Pro
-description: Learn how to setup the Microsoft Defender ATP for macOS policies in Jamf Pro
+description: Learn how to set up the Microsoft Defender ATP for macOS policies in Jamf Pro
 keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -777,7 +777,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
 
     ![Image of configuration settings](images/216253cbfb6ae738b9f13496b9c799fd.png)
 
-    **Self Service** <br>
+    **Self-Service** <br>
     ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
 20. Select **Done**. 

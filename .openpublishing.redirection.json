@@ -15620,6 +15620,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-jamf",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/mac-install-with-jamf.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-jamfpro",
+      "redirect_document_id": true
+    },
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-other-mdm",
