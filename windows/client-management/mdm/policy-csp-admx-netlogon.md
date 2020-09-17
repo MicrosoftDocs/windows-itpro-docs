@@ -1317,16 +1317,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the type of IP address that is returned for a domain controller. The DC Locator APIs return the IP address of the DC with the other parts of information. Before the support of IPv6, the returned DC IP address was IPv4. But with the support of IPv6, the DC Locator APIs can return IPv6 DC address. The returned IPv6 DC address may not be correctly handled by some of the existing applications. So this policy is provided to support such scenarios.
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures whether the domain controllers to which this setting is applied will lowercase their DNS host name when registering SRV records.
 
-By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applications are broken due to the returned IPv6 DC address, this policy can be used to disable the default behavior and enforce to return only IPv4 DC address. Once applications are fixed, this policy can be used to enable the default behavior.
+If enabled, domain controllers will lowercase their DNS host name when registering domain controller SRV records. A best-effort attempt will be made to delete any previously registered SRV records that contain mixed-case DNS host names. For more information and potential manual cleanup procedures, see the link below.
 
-If you enable this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
+If disabled, domain controllers will use their configured DNS host name as-is when registering domain controller SRV records.
 
-If you disable this policy setting, DC Locator APIs will ONLY return IPv4 DC address if any. So if the domain controller supports both IPv4 and IPv6 addresses, DC Locator APIs will return IPv4 address. But if the domain controller supports only IPv6 address, then DC Locator APIs will fail.
+If not configured, domain controllers will default to using their local configuration.
 
-If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
+The default local configuration is enabled.
 
+A reboot is not required for changes to this setting to take effect.
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1337,8 +1338,8 @@ If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Return domain controller address type*
--   GP name: *AddressTypeReturned*
+-   GP English name: *Use lowercase DNS host names when registering domain controller SRV records*
+-   GP name: *DnsSrvRecordUseLowerCaseHostNames*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
 

@@ -770,6 +770,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Reliability policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-reliability.md#admx-reliability-ee-enablepersistenttimestamp" id="admx-reliability-ee-enablepersistenttimestamp">ADMX_Reliability/EE_EnablePersistentTimeStamp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-reliability.md#admx-reliability-pch-reportshutdownevents" id="admx-reliability-pch-reportshutdownevents">ADMX_Reliability/PCH_ReportShutdownEvents</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-reliability.md#admx-reliability-shutdowneventtrackerstatefile" id="admx-reliability-shutdowneventtrackerstatefile">ADMX_Reliability/ShutdownEventTrackerStateFile</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-reliability.md#admx-reliability-shutdownreason" id="admx-reliability-shutdownreason">ADMX_Reliability/ShutdownReason</a>
+  </dd>
+</dl>  
+
 ### ApplicationDefaults policies
 
 <dl>
