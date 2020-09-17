@@ -70,3 +70,7 @@ iOS devices along with other platforms.
     forum](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=84f6755e-e0da-e44b-748e-cfa3273b4997)
     or on the in-app feedback system.
 
+## Next Steps
+
+[Deploy Microsoft Defender ATP on iOS](ios-install.md)
+
