@@ -224,7 +224,7 @@
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
 ##### [JAMF Pro-based deployment]()
-###### [Deploying Microsoft Defender ATP for macOS using Jamf Pro](microsoft-defender-atp/mac-install-jamfpro.md)
+###### [Deploying Microsoft Defender ATP for macOS using Jamf Pro](microsoft-defender-atp/mac-install-with-jamf.md)
 ###### [Login to Jamf Pro](microsoft-defender-atp/mac-install-jamfpro-login.md)
 ###### [Set up device groups](microsoft-defender-atp/mac-jamfpro-device-groups.md)
 ###### [Set up policies](microsoft-defender-atp/mac-jamfpro-policies.md)
