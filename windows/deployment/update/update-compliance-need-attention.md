@@ -1,6 +1,5 @@
 ---
 title: Update Compliance - Need Attention! report
-ms.reviewer: 
 manager: laurawi
 description: Learn how the Needs attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 ms.mktglfcycl: deploy
