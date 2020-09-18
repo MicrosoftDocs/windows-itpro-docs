@@ -40,7 +40,7 @@ Unexpected error, try later
 
 **Cause:**
 
-You have an older version of “Microsoft Authenticator” app installed on your
+You have an older version of "Microsoft Authenticator" app installed on your
 device.
 
 **Solution:**
@@ -85,8 +85,8 @@ on these devices.
 Xiaomi devices introduced a new permission that prevents Microsoft Defender ATP
 for Android app from displaying pop-up windows while running in the background.
 
-Xiaomi devices permission: “Display pop-up windows while running in the
-background.”
+Xiaomi devices permission: "Display pop-up windows while running in the
+background."
 
 ![Image of pop up setting](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
