@@ -204,6 +204,7 @@
 #### [ADMX_sdiageng](policy-csp-admx-sdiageng.md)
 #### [ADMX_Securitycenter](policy-csp-admx-securitycenter.md)
 #### [ADMX_Servicing](policy-csp-admx-servicing.md)
+#### [ADMX_Setup](policy-csp-admx-setup.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
