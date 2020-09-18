@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 06/03/2020
+ms.date: 09/18/2020
 ---
 
 # Configuration service provider reference
@@ -1108,7 +1108,8 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" />
+<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#supported-csps">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
