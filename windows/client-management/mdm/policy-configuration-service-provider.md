@@ -828,6 +828,36 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_sdiageng policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sdiageng.md#admx-sdiageng-betterwhenconnected" id="admx-sdiageng-betterwhenconnected">ADMX_sdiageng/BetterWhenConnected</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticsexecutionpolicy" id="admx-sdiageng-scripteddiagnosticsexecutionpolicy">ADMX_sdiageng/ScriptedDiagnosticsExecutionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticssecuritypolicy" id="admx-sdiageng-scripteddiagnosticssecuritypolicy">ADMX_sdiageng/ScriptedDiagnosticsSecurityPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_Securitycenter policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-securitycenter.md#admx-securitycenter-securitycenter-securitycenterindomain" id="admx-securitycenter-securitycenter-securitycenterindomain">ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain</a>
+  </dd>
+</dl>
+
+### ADMX_Servicing policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-servicing#admx-servicing-servicing" id="admx-servicing-servicing">ADMX_Servicing/Servicing</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
