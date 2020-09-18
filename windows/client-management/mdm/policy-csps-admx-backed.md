@@ -205,7 +205,7 @@ ms.date: 08/18/2020
 - [ADMX_sdiageng/ScriptedDiagnosticsExecutionPolicy](./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticsexecutionpolicy)
 - [ADMX_sdiageng/ScriptedDiagnosticsSecurityPolicy](./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticssecuritypolicy)
 - [ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain](/policy-csp-admx-securitycenter.md#admx-securitycenter-securitycenter-securitycenterindomain)
-- [ADMX_Servicing/Servicing](./policy-csp-admx-servicing#admx-servicing-servicing)
+- [ADMX_Servicing/Servicing](./policy-csp-admx-servicing.md#admx-servicing-servicing)
 - [AppRuntime/AllowMicrosoftAccountsToBeOptional](./policy-csp-appruntime.md#appruntime-allowmicrosoftaccountstobeoptional)
 - [AppVirtualization/AllowAppVClient](./policy-csp-appvirtualization.md#appvirtualization-allowappvclient)
 - [AppVirtualization/AllowDynamicVirtualization](./policy-csp-appvirtualization.md#appvirtualization-allowdynamicvirtualization)

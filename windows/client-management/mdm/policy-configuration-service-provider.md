@@ -854,7 +854,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-servicing#admx-servicing-servicing" id="admx-servicing-servicing">ADMX_Servicing/Servicing</a>
+    <a href="./policy-csp-admx-servicing.md#admx-servicing-servicing" id="admx-servicing-servicing">ADMX_Servicing/Servicing</a>
   </dd>
 </dl>
 
