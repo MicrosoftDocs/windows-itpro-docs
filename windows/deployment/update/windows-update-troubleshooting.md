@@ -115,7 +115,8 @@ If downloads through a proxy server fail with a 0x80d05001 DO_E_HTTP_BLOCKSIZE_M
 You may choose to apply a rule to permit HTTP RANGE requests for the following URLs: 
 
 *.download.windowsupdate.com  
-*.dl.delivery.mp.microsoft.com  
+*.dl.delivery.mp.microsoft.com
+*.delivery.mp.microsoft.com
 *.emdl.ws.microsoft.com
 
 If you cannot permit RANGE requests, keep in mind that this means you are downloading more content than needed in updates (as delta patching will not work).
@@ -166,6 +167,10 @@ Check that your device can access these Windows Update endpoints:
 - `http://*.download.windowsupdate.com`
 - `http://wustat.windows.com`
 - `http://ntservicepack.microsoft.com`
+- `https://*.prod.do.dsp.mp.microsoft.com`
+- `http://*.dl.delivery.mp.microsoft.com`
+- `https://*.delivery.mp.microsoft.com`
+- `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
  
  Allow these endpoints for future use.
  
