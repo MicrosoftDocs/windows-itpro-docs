@@ -13,7 +13,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 07/21/2020
+ms.date: 09/18/2020
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -215,3 +215,20 @@ Use [Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/win
 For more information about how to limit the diagnostic data to the minimum required by Desktop Analytics, see [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/enable-data-sharing).
 
 ## Change privacy settings on a single server
+
+Here’s how to change the privacy settings on a server running either Windows Server or Azure Stack HCI. To manage privacy settings in your enterprise as a whole, see [Manage enterprise diagnostic data](configure-windows-diagnostic-data-in-your-organization#manage-enterprise-diagnostic-data).
+
+If the server has Full Desktop installation option, use the following steps:
+1. steps
+
+If the server uses Server Core, use the following steps:
+1. Log on to the server running Azure Stack HCI.
+
+    This could be locally via a keyboard and monitor, or using a remote management (headless or BMC) controller, or Remote Desktop. The Sconfig tool opens automatically when you log on to the server.
+
+1. On the **Welcome to Azure Stack HCI** screen, at the **Enter a number to select an option:** prompt, type **10** and press Enter.
+1. On the **Change Telemetry** confirmation prompt, select **Yes** to display:
+
+    Available Telemetry settings: **1 Security**, **2 Basic**, **3 Enhanced**, **4 Full**
+
+1. At the **Enter new telemetry setting:** prompt, type the option you want, and then press Enter.
