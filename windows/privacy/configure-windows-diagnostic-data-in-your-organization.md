@@ -216,7 +216,7 @@ For more information about how to limit the diagnostic data to the minimum requi
 
 ## Change privacy settings on a single server
 
-Here’s how to change the privacy settings on a server running either Windows Server or Azure Stack HCI. To manage privacy settings in your enterprise as a whole, see [Manage enterprise diagnostic data](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#manage-enterprise-diagnostic-data).
+Here’s how to change the privacy settings on a server running either Windows Server or Azure Stack HCI. To manage privacy settings in your enterprise as a whole, see [Manage enterprise diagnostic data](#manage-enterprise-diagnostic-data).
 
 If the server has Full Desktop installation option, use the following steps:
 1. steps
