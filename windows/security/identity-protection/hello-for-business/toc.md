@@ -16,10 +16,10 @@
 
 ## [How Windows Hello for Business works](hello-how-it-works.md)
 ### [Technical Deep Dive](hello-how-it-works.md#technical-deep-dive)
-#### [Technology and Terminology](hello-how-it-works-technology.md)
 #### [Device Registration](hello-how-it-works-device-registration.md)
 #### [Provisioning](hello-how-it-works-provisioning.md)
 #### [Authentication](hello-how-it-works-authentication.md)
+#### [Technology and Terminology](hello-how-it-works-technology.md)
 
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
