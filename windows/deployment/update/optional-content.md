@@ -103,17 +103,15 @@ You can customize the Windows image in these ways:
 - Applying updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
 - Adding or removing languages
 - Adding or removing Features on Demand
-- 
-The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where Setup.exe is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updating-windows-10-media-with-dynamic-update-packages/ba-p/982477) and our [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073).  Also like to Option 2, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there is a variation of this option in which media is updated *on the device* just before installation. This allows for device-specific image customization based on what's currently installed.
+
+The benefit of this option is that the Windows image can include those additional languages, language experience features, and other Features on Demand through one-time updates to the image. Then you can use them in an existing task sequence or custom deployment where Setup.exe is involved. The downside of this approach is that it requires some preparation of the image in advance, including scripting with DISM to install the additional packages. It also means the image is the same for all devices that consume it and might contain more features than some users need. For more information on customizing your media, see [Updating Windows 10 media with Dynamic Update packages](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/updating-windows-10-media-with-dynamic-update-packages/ba-p/982477) and our [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073). Also like Option 2, you still have a solution for migration of optional content, but not supporting user-initiated optional content acquisition. Also, there is a variation of this option in which media is updated *on the device* just before installation. This allows for device-specific image customization based on what's currently installed.
 
 
 ### Option 4: Install language features during deployment
 
 A partial solution to address the first pain point of failing to migrate optional content during upgrade is to inject a subset of optional content during the upgrade process. This approach uses the Windows 10 Setup option [/InstallLangPacks](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks) to add Language Packs and language capabilities such as text-to-speech recognition from a folder that contains the packages. This approach lets an IT pro take a subset of optional content and stage them within their network. If you use the servicing-based approach, you can configure InstallLangPacks using setupconfig.ini. See [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview) for details.
 
-When Setup runs, it will inject these packages into the new operating system during installation. This means it can be an alternative to enabling Dynamic Update or customizing the operating system image before deployment. You must take care with this approach, because the packages cannot be renamed. Further, the content is coming from two separate release media ISOs. The key is to copy both the FOD packages and the FOD metadata .cab from the FOD ISO into the folder, as well as the architecture-specific Language Pack .cabs from the LPLIP ISO. Also, starting with Windows 10, version 1903, the behavior changed. In Windows 10, version 1809 and earlier, failure to install the packages wasn’t a fatal error. Starting with Windows 10, version 1903, we treat InstallLangPacks failures as fatal, and roll back the entire upgrade.
-
-The idea is to not leave the user in a bad state since media-based upgrades don’t FOD and languages (unless Dynamic Update is enabled).
+When Setup runs, it will inject these packages into the new operating system during installation. This means it can be an alternative to enabling Dynamic Update or customizing the operating system image before deployment. You must take care with this approach, because the packages cannot be renamed. Further, the content is coming from two separate release media ISOs. The key is to copy both the FOD packages and the FOD metadata .cab from the FOD ISO into the folder, as well as the architecture-specific Language Pack .cabs from the LPLIP ISO. Also, starting with Windows 10, version 1903, the behavior changed. In Windows 10, version 1809 and earlier, failure to install the packages wasn’t a fatal error. Starting with Windows 10, version 1903, we treat InstallLangPacks failures as fatal, and roll back the entire upgrade. The idea is to not leave the user in a bad state since media-based upgrades don’t migrate FOD and languages (unless Dynamic Update is enabled).
 
 This approach has some interesting benefits. The original Windows image doesn’t need to be modified, possibly saving time and scripting. For some commercial customers, this is implemented as their primary pain point has to do with language support immediately after the update. 
 
@@ -130,6 +128,22 @@ Several of the options address ways to address optional content migration issues
 - If this setting is not configured or disabled, files will be downloaded from the default Windows Update location, for example Windows Update for Business or WSUS).
 
 See [Configure a Windows Repair Source](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) for more information.
+
+
+## Learn more
+
+For more information about the Unified Update Platform and the approaches outlined in this article, see the following resources:
+
+- [/InstallLangPacks](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#installlangpacks)
+- [/DynamicUpdate](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options#dynamicupdate)
+- [Configure a Windows Repair Source](https://docs.microsoft.com/windows-hardware/manufacture/desktop/configure-a-windows-repair-source)
+- [Ignite 2019 theater session THR3073](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR3073)  
+- [Ignite 2019 theater session THR4002](https://medius.studios.ms/video/asset/HIGHMP4/IG19-THR4002)
+- [Run custom actions during feature update](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions)
+- [Unified Update Platform](https://blogs.windows.com/windowsexperience/2016/11/03/introducing-unified-update-platform-uup/)
+- [Updating Windows 10 media with Dynamic Update packages](media-dynamic-update.md)
+- [Windows Setup Automation Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-automation-overview) 
+
 
 ## Sample scripts
 
