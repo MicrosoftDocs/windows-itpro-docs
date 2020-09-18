@@ -13,7 +13,7 @@ ms.topic: article
 
 # Update baseline
 
-Applies to: Windows 10
+**Applies to:** Windows 10
 
 With the large number of different policies offered for Windows 10, Update Baseline provides a clear list of recommended Windows Update policy settings for IT administrators who want the best user experience while also meeting their monthly update compliance goals. See [Policies included in the Update Baseline](#policies-included-in-the-update-baseline) for the full list of policy configurations. 
 
