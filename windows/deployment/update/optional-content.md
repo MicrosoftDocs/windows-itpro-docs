@@ -88,7 +88,7 @@ In addition to these updates for the new operating system, Dynamic Update will a
 
 Starting in Windows 10, version 2004, Dynamic Update can be configured with additional options. For example, you might want to have the benefits of optional content migration without automatically acquiring the latest quality update. You can do that with the /DynamicUpdate NoLCU option of Windows Setup. Afterward, you would separately follow your existing process for testing and approving monthly updates. The downside of this approach is the device will go through an additional reboot for the latest cumulative update since it was not available during the feature update.
 
-One additional consideration when using Dynamic Update is the impact to your network. One of the top blockers for this approach is the concern that each device will separately fetch this content from Microsoft. Windows 10, version 2004 setup now downloads Dynamic Update content using Delivery Optimization when available. .
+One additional consideration when using Dynamic Update is the impact to your network. One of the top blockers for this approach is the concern that each device will separately fetch this content from Microsoft. Windows 10, version 2004 setup now downloads Dynamic Update content using Delivery Optimization when available.
  For devices that aren’t connected to the internet, a subset of the Dynamic Update content is available by using WSUS and the Microsoft catalog. 
 
 ### Option 3: Customize the Windows Image before deployment
