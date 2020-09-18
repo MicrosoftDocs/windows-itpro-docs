@@ -138,7 +138,7 @@
             - name: Update Windows 10 media with Dynamic Update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
-            - href: update/optional-content
+              href: update/optional-content
             - name: Manage the Windows 10 update experience
               items:              
                 - name: Manage device restarts after updates
