@@ -1,28 +1,28 @@
 ---
 title: Best practices for configuring Windows Defender Firewall
 description: Learn about best practices for configuring Windows Defender Firewall
-keywords: firewall, best practices
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+
+keywords: firewall, best practices, security, network security, network, rules, filters,
+
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: maccruz
-author: maccruz
+ms.author: schmurky
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 01/22/2020
+
 ---
 
 # Best practices for configuring Windows Defender Firewall
 
 **Applies to**
 
--   Windows Operating Systems including Windows 10
+-   Windows operating systems including Windows 10
 
 -   Windows Server Operating Systems
 
@@ -40,11 +40,11 @@ type **WF.msc**, and then click **OK**.
 
 When you open the Windows Defender Firewall for the first time, you can see the
 default settings applicable to the local computer. The Overview panel displays
-security settings for each type of network the device can connect to.
+security settings for each type of network to which the device can connect.
 
-![A screenshot of a social media post Description automatically generated](images/fw01-profiles.png)
+![Windows Defender Firewall with Advanced Security first time opening](images/fw01-profiles.png)
 
-**Figure 1: Windows Defender Firewall**
+*Figure 1: Windows Defender Firewall*
 
 1.  **Domain profile**: Security settings in this profile are designed for a
     network where there is a system of account authentication against a domain
@@ -61,108 +61,65 @@ You can view detailed settings for each profile by right-clicking (or selecting
 and holding) the top-level **Windows Defender Firewall with Advanced Security**
 node in the left pane and then selecting **Properties**.
 
-**Best practice:** You should maintain the default settings shipped with the Windows Defender
+You should maintain the default settings shipped with the Windows Defender
 Firewall whenever possible. These settings have been designed to safeguard your
 computer for use in most common network scenarios.
 
-One key example is the default Block behavior for Inbound connections (shown
-below). In order to maintain maximum security, changing this setting is highly
+One key example is the default Block behavior for Inbound connections. In order to maintain maximum security, changing this setting is highly
 discouraged.
-
-## Creating new rules
-
-In many cases, a next step for administrators will be to customize these
-profiles so that they can work with user apps or other types of software. For
-example, an administrator or user may choose to add a rule to accommodate a
-program, open a port or protocol, or allow a predefined type of traffic.
-
-This can be accomplished by selecting either **Inbound Rules** or **Outbound
-Rules** and right clicking to select **New Rule**. The interface for adding a
-new rule looks like this:
-
-![A screenshot of a computer Description automatically generated](images/fw02-createrule.png)
-
-**Figure 2: Rule Creation Wizard**
-
-NOTE – It is not the purpose of this document to cover the step-by-step of rule
-configuration. See the [Windows Firewall with Advanced Security Deployment
-Guide](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)
-for general guidance on policy creation.
-
-The remainder of this articles deals with best practices when creating these
-rules.
 
 ![A screenshot of a cell phone Description automatically generated](images/fw03-defaults.png)
 
-**Figure 3: Default Inbound/Outbound connection behavior**
+*Figure 2: Default Inbound/Outbound connection behavior*
 
-### Creating inbound rules
+## Creating firewall rules
+
+In many cases, a next step for administrators will be to customize these
+profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a
+program, open a port or protocol, or allow a predefined type of traffic.
+
+This can be accomplished by right-clicking (or selecting and holding) either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
+
+![Rule creation wizard](images/fw02-createrule.png)
+
+*Figure 3: Rule Creation Wizard*
+
+> [!NOTE]
+This article does not cover step-by-step rule
+configuration. See the [Windows Firewall with Advanced Security Deployment
+Guide](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)
+for general guidance on policy creation.
+
+
+
+
+
+### Rule precedence in creating inbound rules
 
 In many cases, allowing specific types of inbound traffic will be required for
-applications to function on the network.
-
-Administrators should keep the following rule precedence behaviors in mind when
+applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when
 allowing these inbound exceptions.
 
-1.  Explicitly defined allow rules will take precedence over the default Block
-    setting.
+1.  Explicitly defined allow rules will take precedence over the default block setting.
 
-2.  Explicit block rules will take precedence over any conflicting explicating
-    allow rules.
+2.  Block rules will take precedence over any conflicting    allow rules.
 
 3.  More specific rules will take precedence over less specific rules, except in
     the case of explicit block rules as mentioned in 2. (For example, if the
     parameters of rule 1 includes an IP address range, while the parameters of
-    rule 2 include a single IP host address; rule 2 will take precedence.)
+    rule 2 include a single IP host address, rule 2 will take precedence.)
 
 Because of 1 and 2, it is important that, when designing a set of policies, you
 make sure that there are no other active block rules in place that could
 inadvertently overlap, thus preventing the traffic flow you wish to allow.
 
-**Best practice:** That said, general security best practice dictates that a
-rule should be as specific as possible. However, when new rules must be made
-that use ports or IP addresses, consider using consecutive ranges or subnets
-instead of individual addresses or ports where possible. This avoids creation of
-multiple filters under the hood, thus reducing complexity and helping to avoid
+A general security best practice in creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This avoids creation of multiple filters under the hood, thus reducing complexity and helping to avoid
 performance degradation.
 
-### **NOTE:** 
+> [!NOTE] 
+Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above.
 
-The Windows Defender Firewall does not support rule ordering in the traditional
-sense whereby a weighting value is administratively assigned to a rule to
-determine its order of precedence. That said, an effective policy set with
-expected behaviors can be created by keeping in mind the few consistent and
-logical rule behaviors described above.
-
-### Understanding user query behaviors
-
-When designing a set of firewall policies for your network, it is a best
-practice to configure allow rules for any networked applications deployed on the
-host. Having these rules in place before the user first launches the application
-will help ensure a seamless experience.
-
-The absence of these staged rules does not necessarily mean that in the end an
-application will be unable to communicate on the network. However, the behaviors
-involved in the automatic creation of application rules at runtime can sometimes
-be problematic due to the need for user interaction. The source of confusion
-around this process can typically be boiled down to a few primary causes:
-
-1.  A user with sufficient privileges receives a query notification advising
-    them that the application needs to make a change to the firewall policy. Not
-    fully understanding the meaning of the prompt, the user then cancels or
-    otherwise dismisses the prompt.
-
-2.  A user lacking sufficient privileges and is therefore not prompted to allow
-    the application to make the appropriate policy changes.
-
-3.  Local Policy Merge is disabled, preventing the application or network
-    service from plumbing local rules.
-
-![A screenshot of a cell phone Description automatically generated](images/fw04-userquery.png)
-
-**Figure 4: User Query Notification**
-
-### Additional Background
+### Creating rules for new applications at first launch
 
 When first installed, networked applications and services issue a ‘listen call’
 specifying the protocol/port information required for them to function properly.
@@ -195,6 +152,34 @@ into the machine. Hence, it is up to the developer of the app, the user (or the
 admin acting on behalf of the user) to allow appropriate inbound firewall
 exceptions.
 
+####  Known issues with user query behaviors
+
+When designing a set of firewall policies for your network, it is a best
+practice to configure allow rules for any networked applications deployed on the
+host. Having these rules in place before the user first launches the application
+will help ensure a seamless experience.
+
+The absence of these staged rules does not necessarily mean that in the end an
+application will be unable to communicate on the network. However, the behaviors
+involved in the automatic creation of application rules at runtime can sometimes
+be problematic due to the need for user interaction. The source of confusion
+around this process can typically be boiled down to a few primary causes:
+
+1.  A user with sufficient privileges receives a query notification advising
+    them that the application needs to make a change to the firewall policy. Not
+    fully understanding the meaning of the prompt, the user then cancels or
+    otherwise dismisses the prompt.
+
+2.  A user lacking sufficient privileges and is therefore not prompted to allow
+    the application to make the appropriate policy changes.
+
+3.  Local Policy Merge is disabled, preventing the application or network
+    service from plumbing local rules.
+
+![A screenshot of a cell phone Description automatically generated](images/fw04-userquery.png)
+
+*Figure 4: User query notification*
+
 ### Local Policy Merge and Application Rules
 
 Firewall rules can be deployed locally using the Firewall snap-in (wf.msc) or
@@ -210,7 +195,7 @@ Group Policy.
 
 ![A screenshot of a cell phone Description automatically generated](images/fw05-rulemerge.png)
 
-**Figure 5: Rule Merge Setting**
+*Figure 5: Rule merge setting*
 
 The equivalent setting *AllowLocalPolicyMerge* is used when configuring the
 firewall using the Firewall CSP and is exposed under each respective profile
@@ -235,7 +220,8 @@ be made using network packet capture tools. In any event, to maintain maximum
 security administrators should only push firewall exceptions for apps and
 services determined to serve legitimate purposes.
 
-NOTE: Currently the use of wildcard patterns, such as C:\*\\teams.exe is not
+> [!NOTE]
+Currently the use of wildcard patterns, such as C:\*\\teams.exe is not
 supported in application rules. Currently we only support created using the full
 path to an application(s).
 
@@ -252,12 +238,11 @@ exposed in either the Windows Setting App or the legacy firewall.cpl.
 
 ![A picture containing flower, bird Description automatically generated](images/fw06-block.png)
 
-**Figure 6: Windows Settings App/ Windows Security / Firewall Protection /
-Network Type**
+*Figure 6: Windows settings App/Windows Security/Firewall Protection/Network Type*
 
 ![A screenshot of a cell phone Description automatically generated](images/fw07-legacy.png)
 
-**Figure 7: Legacy firewall.cpl**
+*Figure 7: Legacy firewall.cpl*
 
 By default, the Windows Defender Firewall will block everything unless there is
 an exception rule created. Consider an example involving Remote Desktop. If
@@ -278,16 +263,16 @@ One the emergency is over, uncheck the setting to resume normal operations.
 
 What follows are a few general guidelines for configuring outbound filters.
 
--   The default configuration of Blocked for Outbound rules should and may be
+- The default configuration of Blocked for Outbound rules should and may be
     considered for certain highly secure environments; however, the Inbound rule
     configuration should never be changed in a way that Allows traffic by
     default.
 
--   It is recommended to Allow Outbound by default for most deployments for the
+- It is recommended to Allow Outbound by default for most deployments for the
     sake of simplification around app deployments, and unless the enterprise is
     one that must have tight security controls.
 
-    -   In high security environments, an inventory of all enterprise-spanning
+- In high security environments, an inventory of all enterprise-spanning
         apps must be taken and logged by the administrator or administrators.
         Records must include whether an app used requires network connectivity.
         Administrators will need to create new rules specific to each app that
@@ -295,7 +280,7 @@ What follows are a few general guidelines for configuring outbound filters.
         policy (GP), Mobile Device Management (MDM), or both (for hybrid or
         co-management environments).
 
-## Document Your Changes
+## Document your changes
 
 When creating an Inbound or Outbound rule, you should specify details about the
 app itself, the port range used, and important notes like the date of creation.
