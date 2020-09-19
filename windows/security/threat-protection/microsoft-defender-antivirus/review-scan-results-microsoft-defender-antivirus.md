@@ -25,12 +25,6 @@ manager: dansimp
 After an Microsoft Defender Antivirus scan completes, whether it is an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results. 
 
 
-## Use Microsoft Intune to review scan results
-
-1. In Intune, go to **Devices > All Devices** and select the device you want to scan.
-
-2. Click the scan results in **Device actions status**.
-
 ## Use Configuration Manager to review scan results
 
 See [How to monitor Endpoint Protection status](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
