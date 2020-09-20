@@ -91,6 +91,8 @@ If you uninstall the other product, and choose to use Microsoft Defender Antivir
 > [!WARNING]
 > You should not attempt to disable, stop, or modify any of the associated services used by Microsoft Defender Antivirus, Microsoft Defender ATP, or the Windows Security app. This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks. It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
+> [!IMPORTANT]
+> If you are using [Microsoft endpoint data loss prevention (Endpoint DLP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview), Microsoft Defender Antivirus Real-time protection feature will be enabled even when Microsoft Defender Antivirus is running in Passive mode. Endpoint DLP depends on Real-time protection (RTP) to operate.
 
 ## Related topics
 
