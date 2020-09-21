@@ -69,4 +69,4 @@ iOS devices along with other platforms.
 
 ## Next steps
 
-Watch out for updates to this page as Microsoft Defender for iOS goes to preview to learn about deployment and configuration steps.
+Microsoft Defender for Endpoint capabilities for iOS will be released into public preview in the coming weeks. At that time, we will publish additional deployment and configuration information. Please check back here in a few weeks.  
