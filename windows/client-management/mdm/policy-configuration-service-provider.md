@@ -858,6 +858,45 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_SharedFolders policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sharedfolders.md#admx-sharedfolders-publishdfsroots" id="admx-sharedfolders-publishdfsroots">ADMX_SharedFolders/PublishDfsRoots</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sharedfolders.md#admx-sharedfolders-publishsharedfolders" id="admx-sharedfolders-publishsharedfolders">ADMX_SharedFolders/PublishSharedFolders</a>
+  </dd>
+</dl>
+
+### ADMX_Sharing policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sharing.md#admx-sharing-disablehomegroup" id="admx-sharing-disablehomegroup">ADMX_Sharing/DisableHomeGroup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sharing.md#admx-sharing-noinplacesharing" id="admx-sharing-noinplacesharing">ADMX_Sharing/NoInplaceSharing</a>
+  </dd>
+</dl>
+
+###  ADMX_ShellCommandPromptRegEditTools policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-disablecmd">ADMX_ShellCommandPromptRegEditTools/DisableCMD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disableregedit" id="admx-shellcommandpromptregedittools-disableregedit">ADMX_ShellCommandPromptRegEditTools/DisableRegedit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disallowapps" id="admx-shellcommandpromptregedittools-disallowapps">ADMX_ShellCommandPromptRegEditTools/DisallowApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
