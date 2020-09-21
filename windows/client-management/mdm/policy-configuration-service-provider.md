@@ -858,17 +858,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_Setup policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-setup.md#admx-setup-servicepacksourcepath" id="admx-setup-servicepacksourcepath">ADMX_Setup/ServicePackSourcePath</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-setup.md#admx-setup-setupsourcepath" id="admx-setup-setupsourcepath">ADMX_Setup/SetupSourcePath</a>
-  </dd>
-</dl>
-
 ### ApplicationDefaults policies
 
 <dl>
