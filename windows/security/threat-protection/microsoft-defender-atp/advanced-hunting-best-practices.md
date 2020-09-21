@@ -61,17 +61,17 @@ The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
 
 - **Smaller table to your left**—The `join` operator matches records in the table on the left side of your join statement to records on the right. By having the smaller table on the left, fewer records will need to be matched, thus speeding up the query.
 
-    In the table below, we reduce the left table `DeviceLogonEvents` to cover only three specific devices before joining it with `IdentityLogonEvents` by account SIDs.
+    In the table below, we reduce the left table `DeviceLogonEvents` to cover only three specific devices before joining it with `DeviceNetworkEvents` by device IDs.
 
     ```kusto
     DeviceLogonEvents
     | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
     | where ActionType == "LogonFailed"
     | join
-        (IdentityLogonEvents
-        | where ActionType == "LogonFailed"
-        | where Protocol == "Kerberos")
-    on AccountSid
+        (DeviceNetworkEvents
+        | where Protocol == "Kerberos"
+        | where ActionType == "LogonFailed")
+    on DeviceId
     ```
 
 - **Use the inner-join flavor**—The default [join flavor](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) or the [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicates rows in the left table by the join key before returning a row for each match to the right table. If the left table has multiple rows with the same value for the `join` key, those rows will be deduplicated to leave a single random row for each unique value.
@@ -96,29 +96,33 @@ The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
 
 - **Join records from a time window**—When investigating security events, analysts look for related events that occur around the same time period. Applying the same approach when using `join` also benefits performance by reducing the number of records to check.
     
-    The query below checks for logon events within 30 minutes of receiving a malicious file:
+    The query below checks for logon events within 30 minutes of a credential access alert being raised:
 
     ```kusto
-    EmailEvents
+    DeviceAlertEvents
     | where Timestamp > ago(7d)
-    | where MalwareFilterVerdict == "Malware" 
-    | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
+    | where Severity == "High"
+    | where Category == "CredentialAccess"
+    | project AlertRaised = Timestamp, DeviceName, AlertId, Title, AttackTechniques
     | join (
     DeviceLogonEvents 
     | where Timestamp > ago(7d)
-    | project LogonTime = Timestamp, AccountName, DeviceName
-    ) on AccountName 
-    | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
+    | project LogonTime = Timestamp, DeviceName, AccountName
+    ) on DeviceName 
+    | where (LogonTime - AlertRaised) between (0min .. 30min)
     ```
 
 - **Apply time filters on both sides**—Even if you're not investigating a specific time window, applying time filters on both the left and right tables can reduce the number of records to check and improve `join` performance. The query below applies `Timestamp > ago(1h)` to both tables so that it joins only records from the past hour:
 
     ```kusto
-    EmailAttachmentInfo
+    DeviceAlertEvents
     | where Timestamp > ago(1h)
-    | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
-    ```  
+    | where Severity == "High"
+    | join (DeviceFileEvents 
+    | where Timestamp > ago(1h)
+    | where ActionType == "FileCreated"
+    ) on SHA1
+    ```
 
 - **Use hints for performance**—Use hints with the `join` operator to instruct the backend to distribute load when running resource-intensive operations. [Learn more about join hints](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
