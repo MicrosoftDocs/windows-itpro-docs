@@ -34,13 +34,11 @@ network. These recommendations cover a wide range of deployments including home
 networks and enterprise desktop/server systems.
 
 To open Windows Firewall, go to the **Start** menu, click **Run**,
-type **WF.msc**, and then click **OK**.
+type **WF.msc**, and then click **OK**. See also [Open Windows Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-windows-firewall-with-advanced-security).
 
-## Understanding default settings
+## Keep default settings
 
-When you open the Windows Defender Firewall for the first time, you can see the
-default settings applicable to the local computer. The Overview panel displays
-security settings for each type of network to which the device can connect.
+When you open the Windows Defender Firewall for the first time, you can see the default settings applicable to the local computer. The Overview panel displays security settings for each type of network to which the device can connect.
 
 ![Windows Defender Firewall with Advanced Security first time opening](images/fw01-profiles.png)
 
@@ -57,25 +55,23 @@ security settings for each type of network to which the device can connect.
     for public networks like Wi-Fi hotspots, coffee shops, airports, hotels, and
     stores.
 
-You can view detailed settings for each profile by right-clicking (or selecting
+View detailed settings for each profile by right-clicking (or selecting
 and holding) the top-level **Windows Defender Firewall with Advanced Security**
 node in the left pane and then selecting **Properties**.
 
-You should maintain the default settings shipped with the Windows Defender
-Firewall whenever possible. These settings have been designed to safeguard your
-computer for use in most common network scenarios.
-
-One key example is the default Block behavior for Inbound connections. In order to maintain maximum security, changing this setting is highly
-discouraged.
+Maintain the default settings in Windows Defender
+Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections. 
 
 ![A screenshot of a cell phone Description automatically generated](images/fw03-defaults.png)
 
 *Figure 2: Default Inbound/Outbound connection behavior*
 
-## Creating firewall rules
+> [!IMPORTANT]
+> To maintain maximum security, do not change the default Block setting for inbound connections.
 
-In many cases, a next step for administrators will be to customize these
-profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a
+## Understand rule precedence
+
+In many cases, a next step for administrators will be to customize these profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a
 program, open a port or protocol, or allow a predefined type of traffic.
 
 This can be accomplished by right-clicking (or selecting and holding) either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
@@ -90,11 +86,6 @@ configuration. See the [Windows Firewall with Advanced Security Deployment
 Guide](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)
 for general guidance on policy creation.
 
-
-
-
-
-### Rule precedence in creating inbound rules
 
 In many cases, allowing specific types of inbound traffic will be required for
 applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when
@@ -119,40 +110,29 @@ performance degradation.
 > [!NOTE] 
 Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above.
 
-### Creating rules for new applications at first launch
+## Create rules for new applications before first launch
 
-When first installed, networked applications and services issue a ‘listen call’
-specifying the protocol/port information required for them to function properly.
-As there is a default block action in place on the Windows Defender Firewall, it
-is necessary to create inbound exception rules to allow this traffic. In such a
-scenario it is common for the app or the app-installer itself to add this
-firewall rule. Failing that, the responsibility falls to the user (or firewall
-admin on behalf of the user) to manually create them.
+### Inbound allow rules
 
-Assuming there are no active application or administratively defined allow
-rule(s) already present to allow the traffic, creation will have to be dealt
-with the first time the application is launched or otherwise tries to
-communicate on the network. In such a case a query popup will be triggered
-prompting the user to either allow or block the packets.
+When first installed, networked applications and services issue a 'listen call' specifying the protocol/port information required for them to function properly. As there is a default block action in place on the Windows Defender Firewall, it
+is necessary to create inbound exception rules to allow this traffic. In such a scenario it is common for the app or the app installer itself to add this firewall rule. Failing that, the responsibility falls to the user (or firewall admin on behalf of the user) to manually create a rule.
 
--   If the user has admin level permissions, they will be prompted. If they
-    respond ‘no’ or otherwise cancel the prompt, block rules will be created
-    (typically two; one for TCP traffic and one for UDP traffic).
+Assuming there are no active application or administrator-defined allow rule(s) already present, creation will have to be dealt with the first time the application is launched or otherwise tries to communicate on the network. In such a case a dialog box will prompt the user to either allow or block the packets.
 
--   If the user is not a local admin they will not be prompted and, in most
-    cases, block rules will be created.
+- If the user has admin permissions, they will be prompted. If they respond ‘no’ or otherwise cancel the prompt, block rules will be created (typically two; one for TCP traffic and one for UDP traffic).
 
-In either of the scenarios above, once these rules are added they must be
-deleted in order to generate the prompt again. If not, the traffic will continue
-to be blocked.
+- If the user is not a local admin they will not be prompted and, in most cases, block rules will be created.
 
-As regards third-party software. Microsoft cannot know in advance [and should
+In either of the scenarios above, once these rules are added they must be deleted in order to generate the prompt again. If not, the traffic will continue to be blocked.
+
+> [!NOTE]
+> As regards third-party software. Microsoft cannot know in advance [and should
 not even assume] whether we should let all packets for the application just come
 into the machine. Hence, it is up to the developer of the app, the user (or the
 admin acting on behalf of the user) to allow appropriate inbound firewall
 exceptions.
 
-####  Known issues with user query behaviors
+### Known issues with user query behaviors
 
 When designing a set of firewall policies for your network, it is a best
 practice to configure allow rules for any networked applications deployed on the
@@ -180,26 +160,26 @@ around this process can typically be boiled down to a few primary causes:
 
 *Figure 4: User query notification*
 
-### Local Policy Merge and Application Rules
+## Establish local policy merge and application rules
 
-Firewall rules can be deployed locally using the Firewall snap-in (wf.msc) or
-PowerShell, or remotely using Group Policy (if member of an Active Directory
-Name, SCCM, or Intune (if Workplace joined). Rule merging settings can be used
-to control how rules from these two policy sources can be combined.
-Administrators can configure different merge behaviors for Domain, Private, and
-Public profiles.
+Firewall rules can be deployed:
+1. Locally using the Firewall snap-in (**WF.msc**) 
+2. Locally using PowerShell 
+3. Remotely using Group Policy if the device is a member of:
+    1. an Active Directory Name
+    2. SCCM
+    3. Intune (using workplace join)
 
-The setting is used if you want to allow/disallow local administrators the
-ability to create their own firewall rules in addition to those obtained from
-Group Policy.
+Rule merging settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for Domain, Private, and Public profiles.
 
-![A screenshot of a cell phone Description automatically generated](images/fw05-rulemerge.png)
+The rule merging settings either allow or prevent local admins from creating their own firewall rules in addition to those obtained from Group Policy.
 
-*Figure 5: Rule merge setting*
+![Customize settings](images/fw05-rulemerge.png)
 
-The equivalent setting *AllowLocalPolicyMerge* is used when configuring the
-firewall using the Firewall CSP and is exposed under each respective profile
-node, DomainProfile, PrivateProfile, PublicProfile.
+*Figure 5: Rule merging setting*
+
+The equivalent setting *AllowLocalPolicyMerge* is used when configuring using the firewall [configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) and is exposed under each respective profile
+node, *DomainProfile*, *PrivateProfile*, and *PublicProfile*.
 
 In a case where the merging of local policies is disabled, centralized
 deployment of rules will be required for any app that needs inbound
@@ -225,7 +205,7 @@ Currently the use of wildcard patterns, such as C:\*\\teams.exe is not
 supported in application rules. Currently we only support created using the full
 path to an application(s).
 
-### **Shields Up Mode**
+## Know how to use "shields up" mode for active attacks
 
 A discussion of inbound connections presents a good time to discuss a firewall
 option that can be used to help mitigate damage in the face of an active attack.
@@ -259,7 +239,7 @@ nature of the setting.
 
 One the emergency is over, uncheck the setting to resume normal operations.
 
-### Creating outbound rules
+## Create outbound rules
 
 What follows are a few general guidelines for configuring outbound filters.
 
