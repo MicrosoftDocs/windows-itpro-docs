@@ -287,6 +287,8 @@
 #### [Configure]()
 ##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
 
+#### [Troubleshoot]()
+##### [Troubleshoot sign in issues](microsoft-defender-atp/android-support-signin.md)
 
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
