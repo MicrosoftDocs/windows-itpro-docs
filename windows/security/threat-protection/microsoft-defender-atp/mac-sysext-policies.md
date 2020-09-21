@@ -59,7 +59,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 >JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
-1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig`
+1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -122,21 +122,38 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     </plist>
     ```
 
-2. Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs `OK`:
+2. Verify that the above file was copied correctly by running `plutil` utility in the Terminal:
 
     ```bash
-    $ plutil -lint com.microsoft.network-extension.mobileconfig
-    com.microsoft.network-extension.mobileconfig: OK
+    $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
     ```
 
+    For example, if the file was stored in the Documents:
+
+    ```bash
+    $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
+    ```
+    
+    Verify that the command outputs `OK`
+        
+    ```bash
+    <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
+    ```
+    
 3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
 
-4. After the certificate is created and installed to your device, run the following command from the Terminal:
+4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
     ```bash
-    $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
+    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.apple.webcontent-filter.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-
+    
+    For example, if the certificate name is **SigningCertificate** and the signed file is going to be stored in Documents:
+    
+    ```bash
+    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.apple.webcontent-filter.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
+    ```
+    
 5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.
 
 ## Intune
