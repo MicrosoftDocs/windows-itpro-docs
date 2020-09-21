@@ -182,6 +182,7 @@ ADMX Info:
 <!--/Policy-->
 
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-shellcommandpromptregedittools-disallowapps"></a>**ADMX_ShellCommandPromptRegEditTools/DisallowApps**  
 
@@ -236,7 +237,7 @@ This policy setting only prevents users from running programs that are started b
 
 > [!NOTE]
 > Non-Microsoft applications with Windows 2000 or later certification are required to comply with this policy setting.
-Note: To create a list of allowed applications, click Show.  In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
+> To create a list of allowed applications, click Show.  In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
 
 <!--/Description-->
 > [!TIP]
