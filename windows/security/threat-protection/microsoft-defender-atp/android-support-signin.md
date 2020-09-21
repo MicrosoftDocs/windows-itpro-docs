@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to:**
 
 -   [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for
-    Android](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android)
+    Android](microsoft-defender-atp-android.md)
 
 During onboarding, you might encounter sign in issues after the app is installed on your device. 
 
