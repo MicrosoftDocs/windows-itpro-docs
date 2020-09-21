@@ -126,17 +126,17 @@ The absence of these staged rules does not necessarily mean that in the end an a
 
 To determine why some applications are blocked from communicating in the network, check for the following:
 
-1.  A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the meaning of the prompt, the user then cancels or otherwise dismisses the prompt.
+1.  A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt.
 
 2.  A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes.
 
 3.  Local Policy Merge is disabled, preventing the application or network service from creating local rules.
 
-![A screenshot of a cell phone Description automatically generated](images/fw04-userquery.png)
+![Windows Firewall prompt](images/fw04-userquery.png)
 
 *Figure 4: Dialog box to allow access*
 
-See also [Checklist: Creating Inbound Firewwall Rules](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/checklist-creating-inbound-firewall-rules).
+See also [Checklist: Creating Inbound Firewall Rules](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/checklist-creating-inbound-firewall-rules).
 
 ## Establish local policy merge and application rules
 
@@ -187,7 +187,7 @@ incoming connections, including those in the list of allowed apps** setting foun
 
 By default, the Windows Defender Firewall will block everything unless there is an exception rule created. This setting overrides the exceptions. 
 
-Consider an example involving Remote Desktop. If Remote Desktop is enabled, but no firewall rules were created beforehand, users cannot remotely access the device. This is why the Remote Desktop feature automatically creates filters when the feature is enabled. Meanwhile, if there is an exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions. The Remote Desktop rules are intact but remote access will not work as long as shields up is activated. 
+For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there is an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access will not work as long as shields up is activated.
 
 Once the emergency is over, uncheck the setting to restore regular network traffic.
 
