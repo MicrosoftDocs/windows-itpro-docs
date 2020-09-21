@@ -53,6 +53,9 @@ TestFlight application on their device or prompt them to install TestFlight. On
 the TestFlight app, follow the onscreen instructions to install Microsoft
 Defender ATP.
 
+
+![Image of deployment steps](images/testflight-get.png)
+
 ## Complete onboarding and check status
 
 1.  Once Microsoft Defender ATP for iOS has been installed on the device, you
