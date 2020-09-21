@@ -20,18 +20,10 @@ ms.topic: conceptual
 
 # Microsoft Defender Advanced Threat Protection for Android
 
-> [!IMPORTANT]
-> **PUBLIC PREVIEW EDITION**
-> 
-> This documentation is for a pre-release solution. The guidelines and the solution are subject to change between now and its general availability.
-> 
-> As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
-> 
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Android.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Android is likely to cause performance problems and unpredictable system errors.
-
 
 
 ## How to install Microsoft Defender ATP for Android
