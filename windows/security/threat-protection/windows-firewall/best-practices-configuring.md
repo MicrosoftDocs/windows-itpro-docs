@@ -98,7 +98,7 @@ Because of 1 and 2, it is important that, when designing a set of policies, you 
 A general security best practice when creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This avoids creation of multiple filters under the hood, reduces complexity, and helps to avoid performance degradation.
 
 > [!NOTE] 
-Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above.
+> Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above.
 
 ## Create rules for new applications before first launch
 
