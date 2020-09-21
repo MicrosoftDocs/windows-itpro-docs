@@ -35,8 +35,8 @@ For more information preview features, see [Preview features](https://docs.micro
 > https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
 > ```
 
-## Sep 2020
-- [Microsoft Defender ATP for Android](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender ATP for Android.
+## September 2020
+- [Microsoft Defender ATP for Android](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender ATP for Android.
 
 ## July 2020
 - [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
