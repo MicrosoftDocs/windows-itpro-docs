@@ -27,7 +27,7 @@ ms.topic: conceptual
 > 
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 
-Microsoft Defender ATP is be available on the Apple App store. 
+Microsoft Defender ATP for iOS is currently available as a preview app on TestFlight, Apple's beta testing platform. In GA, it will be available on the Apple App store.
 
 Deployment devices need to be enrolled on Intune Company portal. Refer to
 [Enroll your
