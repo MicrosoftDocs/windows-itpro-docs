@@ -46,7 +46,7 @@ You can also download the whitepaper [Microsoft Defender Antivirus on Virtual De
 
 ## Set up a dedicated VDI file share
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine - thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with a Group Policy, or PowerShell.
+In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine — thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with a Group Policy, or PowerShell.
 
 ### Use Group Policy to enable the shared security intelligence feature:
 
@@ -60,7 +60,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
-6. Enter `\\<sharedlocation\>\wdav-update` (see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be).
+6. Enter `\\<sharedlocation\>\wdav-update` (for what this will be, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
 7. Click **OK**.
 
@@ -95,11 +95,11 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update. 
-We suggest starting with once a day – but you should experiment with increasing or decreasing the frequency to understand the impact. 
+We suggest starting with once a day — but you should experiment with increasing or decreasing the frequency to understand the impact. 
 
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn’t advised because it will increase the network overhead on your management machine for no benefit.
 
-### Set a scheduled task to run the powershell script
+### Set a scheduled task to run the PowerShell script
 
 1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
 
@@ -121,19 +121,21 @@ If you would prefer to do everything manually, this what you would need to do to
 
 2. Create a subfolder under *wdav_update* with a GUID name, such as `{00000000-0000-0000-0000-000000000000}`; for example `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`.
 
-  Note: In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
+   > [!NOTE]
+   > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
 
 3. Download a security intelligence package from [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  into the GUID folder. The file should be named `mpam-fe.exe`.
 
 4. Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example `mpam-fe.exe /X`.
 
-   Note: The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
+   > [!NOTE]
+   > The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
 
 ## Randomize scheduled scans
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Microsoft Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy — ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Microsoft Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
