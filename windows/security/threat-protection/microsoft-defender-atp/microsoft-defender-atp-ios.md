@@ -66,10 +66,6 @@ iOS devices along with other platforms.
 -   Provide feedback through in-app feedback system or through [SecOps
     portal](https://secuirtycenter.microsoft.com).
 
--   Seek help by posting your query/issue on [Microsoft Defender ATP Support
-    forum](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=84f6755e-e0da-e44b-748e-cfa3273b4997)
-    or on the in-app feedback system.
-
 ## Next Steps
 
 [Deploy Microsoft Defender ATP on iOS](ios-install.md)
