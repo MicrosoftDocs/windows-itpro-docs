@@ -197,7 +197,9 @@ This hides the entire Microsoft Defender AV user interface from users.
 
 ### Exclusions
 
-On Windows Server 2016, Microsoft Defender Antivirus will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus).
+Exclusions can be added, removed, or customized to suit your needs.
+
+For more details, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 
 ## Additional resources
