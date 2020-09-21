@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: schmurky
+ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
@@ -33,8 +33,8 @@ following best practices can help you optimize protection for devices in your
 network. These recommendations cover a wide range of deployments including home
 networks and enterprise desktop/server systems.
 
-To open Windows Firewall, go to the **Start** menu, click **Run**,
-type **WF.msc**, and then click **OK**. See also [Open Windows Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-windows-firewall-with-advanced-security).
+To open Windows Firewall, go to the **Start** menu, select **Run**,
+type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-windows-firewall-with-advanced-security).
 
 ## Keep default settings
 
@@ -44,20 +44,15 @@ When you open the Windows Defender Firewall for the first time, you can see the 
 
 *Figure 1: Windows Defender Firewall*
 
-1.  **Domain profile**: Security settings in this profile are designed for a
-    network where there is a system of account authentication against a domain
-    controller (DC), such as an Azure Active Directory DC.
+1.  **Domain profile**: Used for networks where there is a system of account authentication against a domain controller (DC), such as an Azure Active Directory DC
 
-2.  **Private profile**: This profile’s settings are designed for and best used
-    in private networks such as a home network.
+2.  **Private profile**: Designed for and best used
+    in private networks such as a home network
 
-3.  **Public profile**: This profile is designed with higher security in mind
-    for public networks like Wi-Fi hotspots, coffee shops, airports, hotels, and
-    stores.
+3.  **Public profile**: Designed with higher security in mind
+    for public networks like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
 
-View detailed settings for each profile by right-clicking (or selecting
-and holding) the top-level **Windows Defender Firewall with Advanced Security**
-node in the left pane and then selecting **Properties**.
+View detailed settings for each profile by right-clicking the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then selecting **Properties**.
 
 Maintain the default settings in Windows Defender
 Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections. 
@@ -69,10 +64,11 @@ Firewall whenever possible. These settings have been designed to secure your dev
 > [!IMPORTANT]
 > To maintain maximum security, do not change the default Block setting for inbound connections.
 
+For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior) and [Checklist: Configuring Basic Firewall Settings](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/checklist-configuring-basic-firewall-settings).
+
 ## Understand rule precedence
 
-In many cases, a next step for administrators will be to customize these profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a
-program, open a port or protocol, or allow a predefined type of traffic.
+In many cases, a next step for administrators will be to customize these profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
 
 This can be accomplished by right-clicking (or selecting and holding) either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
 
@@ -81,7 +77,7 @@ This can be accomplished by right-clicking (or selecting and holding) either **I
 *Figure 3: Rule Creation Wizard*
 
 > [!NOTE]
-This article does not cover step-by-step rule
+>This article does not cover step-by-step rule
 configuration. See the [Windows Firewall with Advanced Security Deployment
 Guide](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)
 for general guidance on policy creation.
@@ -95,14 +91,9 @@ allowing these inbound exceptions.
 
 2.  Block rules will take precedence over any conflicting    allow rules.
 
-3.  More specific rules will take precedence over less specific rules, except in
-    the case of explicit block rules as mentioned in 2. (For example, if the
-    parameters of rule 1 includes an IP address range, while the parameters of
-    rule 2 include a single IP host address, rule 2 will take precedence.)
+3.  More specific rules will take precedence over less specific rules, except in the case of explicit block rules as mentioned in 2. (For example, if the parameters of rule 1 includes an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 will take precedence.)
 
-Because of 1 and 2, it is important that, when designing a set of policies, you
-make sure that there are no other active block rules in place that could
-inadvertently overlap, thus preventing the traffic flow you wish to allow.
+Because of 1 and 2, it is important that, when designing a set of policies, you make sure that there are no other active block rules in place that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
 
 A general security best practice in creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This avoids creation of multiple filters under the hood, thus reducing complexity and helping to avoid
 performance degradation.
@@ -126,11 +117,8 @@ Assuming there are no active application or administrator-defined allow rule(s) 
 In either of the scenarios above, once these rules are added they must be deleted in order to generate the prompt again. If not, the traffic will continue to be blocked.
 
 > [!NOTE]
-> As regards third-party software. Microsoft cannot know in advance [and should
-not even assume] whether we should let all packets for the application just come
-into the machine. Hence, it is up to the developer of the app, the user (or the
-admin acting on behalf of the user) to allow appropriate inbound firewall
-exceptions.
+> The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user. 
+
 
 ### Known issues with user query behaviors
 
@@ -159,6 +147,8 @@ around this process can typically be boiled down to a few primary causes:
 ![A screenshot of a cell phone Description automatically generated](images/fw04-userquery.png)
 
 *Figure 4: User query notification*
+
+See also [Checklist: Creating Inbound Firewwall Rules](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/checklist-creating-inbound-firewall-rules).
 
 ## Establish local policy merge and application rules
 
@@ -191,12 +181,12 @@ As a best practice, it is important to list and log such apps, including the net
 In any event, to maintain maximum security administrators should only push firewall exceptions for apps and services determined to serve legitimate purposes.
 
 > [!NOTE]
-The use of wildcard patterns, such as C:\*\\teams.exe is not
-supported in application rules. We currently only support rules created using the full path to an application.
+The use of wildcard patterns, such as *C:\*\\teams.exe* is not
+supported in application rules. We currently only support rules created using the full path to the application(s).
 
 ## Know how to use "shields up" mode for active attacks
 
-An important firewall option you can use to mitigate damage during an active attack is the "shields up" mode. It is an informal term referring to an easy method a firewall administrator can use to achieve a temporarily heightened state of security in the face of an active attack.
+An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It is an informal term referring to an easy method a firewall administrator can use to achieve a temporarily heightened state of security in the face of an active attack.
 
 Shields up can be achieved by checking **Block all
 incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or the legacy file *firewall.cpl*.
@@ -225,6 +215,8 @@ What follows are a few general guidelines for configuring outbound rules.
 - It is recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use.
 
 - In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments).
+
+For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/checklist-creating-outbound-firewall-rules).
 
 ## Document your changes
 
