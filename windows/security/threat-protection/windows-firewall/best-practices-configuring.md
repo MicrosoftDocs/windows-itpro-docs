@@ -181,91 +181,52 @@ The rule merging settings either allow or prevent local admins from creating the
 The equivalent setting *AllowLocalPolicyMerge* is used when configuring using the firewall [configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) and is exposed under each respective profile
 node, *DomainProfile*, *PrivateProfile*, and *PublicProfile*.
 
-In a case where the merging of local policies is disabled, centralized
-deployment of rules will be required for any app that needs inbound
-connectivity.
+If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
 
-Admins may disable LocalPolicyMerge in high security environments to maintain
-tighter control over their device endpoints. This can impact some apps and
-services that automatically generate a local firewall policy upon installation
-as discussed above. For these types of apps and services to work network
-administrators should push rules centrally via group policy (GP), Mobile Device
+Admins may disable *LocalPolicyMerge* in high security environments to maintain tighter control over endpoints. This can impact some apps and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
 Management (MDM), or both (for hybrid or co-management environments).
 
-As a best practice, it is important that to list and log such apps, including
-the network ports used for communications. Typically, you can find what ports
-must be open for a given service on the vendor’s website. For more complex or
-customer application deployments however, a more thorough analysis may need to
-be made using network packet capture tools. In any event, to maintain maximum
-security administrators should only push firewall exceptions for apps and
-services determined to serve legitimate purposes.
+As a best practice, it is important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments however, a more thorough analysis may be needed using network packet capture tools. 
+
+In any event, to maintain maximum security administrators should only push firewall exceptions for apps and services determined to serve legitimate purposes.
 
 > [!NOTE]
-Currently the use of wildcard patterns, such as C:\*\\teams.exe is not
-supported in application rules. Currently we only support created using the full
-path to an application(s).
+The use of wildcard patterns, such as C:\*\\teams.exe is not
+supported in application rules. We currently only support rules created using the full path to an application.
 
 ## Know how to use "shields up" mode for active attacks
 
-A discussion of inbound connections presents a good time to discuss a firewall
-option that can be used to help mitigate damage in the face of an active attack.
+An important firewall option you can use to mitigate damage during an active attack is the "shields up" mode. It is an informal term referring to an easy method a firewall administrator can use to achieve a temporarily heightened state of security in the face of an active attack.
 
-‘Shields Up Mode’ is an informal term referring to an easy method a firewall
-administrator can use to achieve a temporarily heightened state of security in
-the face of an active attack. It can be achieved by checking the ‘Block all
-incoming connections, including those in the list of allowed apps’ setting
-exposed in either the Windows Setting App or the legacy firewall.cpl.
+Shields up can be achieved by checking **Block all
+incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or the legacy file *firewall.cpl*.
 
-![A picture containing flower, bird Description automatically generated](images/fw06-block.png)
+![Incoming connections](images/fw06-block.png)
 
 *Figure 6: Windows settings App/Windows Security/Firewall Protection/Network Type*
 
-![A screenshot of a cell phone Description automatically generated](images/fw07-legacy.png)
+![Firewall cpl](images/fw07-legacy.png)
 
 *Figure 7: Legacy firewall.cpl*
 
-By default, the Windows Defender Firewall will block everything unless there is
-an exception rule created. Consider an example involving Remote Desktop. If
-Remote Desktop is enabled, but no firewall rules were plumbed, then you cannot
-RDP to that machine. This is why the Remote Desktop feature automatically plumbs
-the filters when the feature is enabled. With the policy plumbed, RDP works!
+By default, the Windows Defender Firewall will block everything unless there is an exception rule created. This setting overrides the exceptions. 
 
-Now let us say there is an exploit that is attacking multiple ports and services
-on a host. Rather than disable each individual rule, the ‘Block all incoming
-connections…’ check box can be used block ALL inbound connections regardless of
-these exceptions. In this case, the RDP rules are still present, however RDP
-will not work because those rules are being overridden by the block EVERYTHING
-nature of the setting.
+Consider an example involving Remote Desktop. If Remote Desktop is enabled, but no firewall rules were created beforehand, users cannot remotely access the device. This is why the Remote Desktop feature automatically creates filters when the feature is enabled. Meanwhile, if there is an exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions. The Remote Desktop rules are intact but remote access will not work as long as shields up is activated. 
 
-One the emergency is over, uncheck the setting to resume normal operations.
+Once the emergency is over, uncheck the setting to restore regular network traffic.
 
 ## Create outbound rules
 
-What follows are a few general guidelines for configuring outbound filters.
+What follows are a few general guidelines for configuring outbound rules.
 
-- The default configuration of Blocked for Outbound rules should and may be
-    considered for certain highly secure environments; however, the Inbound rule
-    configuration should never be changed in a way that Allows traffic by
-    default.
+- The default configuration of Blocked for Outbound rules can be
+    considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that Allows traffic by default.
 
-- It is recommended to Allow Outbound by default for most deployments for the
-    sake of simplification around app deployments, and unless the enterprise is
-    one that must have tight security controls.
+- It is recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use.
 
-- In high security environments, an inventory of all enterprise-spanning
-        apps must be taken and logged by the administrator or administrators.
-        Records must include whether an app used requires network connectivity.
-        Administrators will need to create new rules specific to each app that
-        needs network connectivity and push those rules centrally, via group
-        policy (GP), Mobile Device Management (MDM), or both (for hybrid or
-        co-management environments).
+- In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments).
 
 ## Document your changes
 
-When creating an Inbound or Outbound rule, you should specify details about the
-app itself, the port range used, and important notes like the date of creation.
-The goal of creating any new rule is for it to be tightly secured and explicitly
-documented so that its existence is easily grasped by new administrators, or
-existing administrators who may not revisit the rule for a quarter year or more.
-Take pains to make the work of reviewing your firewall rules at a later date
-easier. And *never* create unnecessary holes in your firewall.
+When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. The goal of creating any new rule is for it to be tightly secured and explicitly
+documented so that its existence is easily grasped by new administrators, or existing administrators who may not revisit the rule for a quarter year or more. We highly encourage taking the time  to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
