@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Enroll Microsoft Defender ATP for macOS devices into Jamf Pro 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
