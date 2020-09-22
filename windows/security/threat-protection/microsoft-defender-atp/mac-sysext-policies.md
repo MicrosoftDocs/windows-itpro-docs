@@ -59,7 +59,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 >JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
-1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor
+1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
