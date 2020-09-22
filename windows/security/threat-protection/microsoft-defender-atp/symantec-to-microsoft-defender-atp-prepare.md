@@ -1,6 +1,6 @@
 ---
-title: Symantec to Microsoft Defender ATP - Phase 1, Preparing
-description: This is Phase 1, Prepare, of migrating from Symantec to Microsoft Defender ATP.
+title: Symantec to Microsoft Defender for Endpoint - Phase 1, Preparing
+description: This is Phase 1, Prepare, of migrating from Symantec to Microsoft Defender for Endpoint.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 09/04/2020
+ms.date: 09/22/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -32,33 +32,33 @@ ms.reviewer: depicker, yongrhee, chriggs
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
-1. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
+1. [Get Microsoft Defender for Endpoint](#get-microsoft-defender-atp).
 2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
-## Get Microsoft Defender ATP
+## Get Microsoft Defender for Endpoint
 
-To get started, you must have Microsoft Defender ATP, with licenses assigned and provisioned.
+To get started, you must have Microsoft Defender for Endpoint, with licenses assigned and provisioned.
 
-1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a free trial or request a quote](https://aka.ms/mdatp). 
+1. Buy or try Microsoft Defender for Endpoint today. [Visit Microsoft Defender for Endpoint to start a free trial or request a quote](https://aka.ms/mdatp). 
 
 2. Verify that your licenses are properly provisioned. [Check your license state](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
 
-3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender ATP. See [Microsoft Defender ATP setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
+3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender for Endpoint. See [Microsoft Defender for Endpoint setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
 
-4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
+4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender for Endpoint setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
  
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 
 > [!NOTE]
-> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal. 
+> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender for Endpoint portal. 
 
 ## Grant access to the Microsoft Defender Security Center
 
-The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) is where you access and configure features and capabilities of Microsoft Defender ATP. To learn more, see [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
+The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) is where you access and configure features and capabilities of Microsoft Defender for Endpoint. To learn more, see [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
@@ -75,7 +75,7 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
 
 ## Configure device proxy and internet connectivity settings
 
-To enable communication between your devices and Microsoft Defender ATP, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
+To enable communication between your devices and Microsoft Defender for Endpoint, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
 
 |Capabilities  | Operating System | Resources |
 |--|--|--|
@@ -88,6 +88,6 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
 
-- [Proceed to set up Microsoft Defender ATP](symantec-to-microsoft-defender-atp-setup.md).
+- [Proceed to set up Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md).
