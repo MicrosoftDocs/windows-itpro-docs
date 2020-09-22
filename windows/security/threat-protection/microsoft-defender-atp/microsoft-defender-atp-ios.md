@@ -61,10 +61,10 @@ iOS devices along with other platforms.
 
 ## Resources
 
--   Stay informed about upcoming releases by visiting our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
+-   Stay informed about upcoming releases by visiting our [blog](https://aka.ms/mdatpiosblog)
 
 -   Provide feedback through in-app feedback system or through [SecOps
-    portal](https://secuirtycenter.microsoft.com)
+    portal](https://securitycenter.microsoft.com)
 
 
 ## Next steps
