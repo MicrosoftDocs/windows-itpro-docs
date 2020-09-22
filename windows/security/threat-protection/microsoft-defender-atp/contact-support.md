@@ -65,8 +65,7 @@ It's important to know the specific roles that have permission to open support c
 
 Only those with an **Admin role (including security admins)** can create support cases. 
 
-
-Users that have not been assigned a global AAD role with “Manage service requests” will no longer be able to submit support requests via the portal. 
+Users that have not been assigned a global AAD role with "Manage service requests" will no longer be able to submit support requests via the portal. 
 
 Anyone who has the `microsoft.office365.supportTickets/allEntities/allTasks`  can submit a case.
 
