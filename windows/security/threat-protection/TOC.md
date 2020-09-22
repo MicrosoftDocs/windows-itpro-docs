@@ -251,6 +251,10 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
+### [Microsoft Defender Advanced Threat Protection for iOS]()
+#### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
+
+
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
 #### [Overview of Microsoft Defender ATP for Linux](microsoft-defender-atp/microsoft-defender-atp-linux.md)
 #### [What's New](microsoft-defender-atp/linux-whatsnew.md)
@@ -289,6 +293,10 @@
 
 #### [Privacy]()
 ##### [Microsoft Defender ATP for Android - Privacy information](microsoft-defender-atp/android-privacy.md)
+
+#### [Troubleshoot]()
+##### [Troubleshoot sign in issues](microsoft-defender-atp/android-support-signin.md)
+
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
