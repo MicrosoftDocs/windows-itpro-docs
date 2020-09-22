@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/03/2020
+ms.date: 09/22/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -34,7 +34,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-atp).
 2. [Run a detection test](#run-a-detection-test).
 3. [Uninstall your non-Microsoft solution](#uninstall-mcafee).
-4. [Make sure Microsoft Defender ATP is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
+4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
