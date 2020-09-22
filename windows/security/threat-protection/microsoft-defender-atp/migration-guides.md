@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 09/08/2020 
 ms.prod: w10
 ms.localizationpriority: medium
 ms.collection: 
