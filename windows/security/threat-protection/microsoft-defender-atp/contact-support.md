@@ -63,9 +63,7 @@ Learn how to open support tickets by contacting Microsoft Defender ATP support.
 ### Prerequisites
 It's important to know the specific roles that have permission to open support cases.
 
-Only those with an **Admin role (including security admins)** can create support cases. 
-
-Users that have not been assigned a global AAD role with "Manage service requests" will no longer be able to submit support requests via the portal. 
+Only those with an Azure Active Directory role with *”Create/Manage service requests” will be able to submit support requests via the portal.  
 
 Anyone who has the `microsoft.office365.supportTickets/allEntities/allTasks`  can submit a case.
 
