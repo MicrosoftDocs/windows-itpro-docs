@@ -23,11 +23,13 @@ f1.keywords: NOCSH
 
 If you're considering switching from a non-Microsoft threat protection solution to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) with Microsoft Defender Antivirus, check out our migration guidance.
 
-- [McAfee Endpoint Security (McAfee) to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md)
+|If you're using this... |See this guide... |
+|:--|:--|
+|McAfee Endpoint Security (McAfee)  |[McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md) |
+|Symantec Endpoint Protection (Symantec) |[Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md) |
+|An non-Microsoft endpoint protection solution not listed above |[Make the switch to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
 
-- [Symantec Endpoint Protection (Symantec) to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md)
-
-- [Manage Microsoft Defender Advanced Threat Protection, after you've migrated](manage-atp-post-migration.md)
+After you have completed your migration, you can manage your endpoint protection. See [Manage Microsoft Defender Advanced Threat Protection, after you've migrated](manage-atp-post-migration.md).
 
 
 ## Got feedback?
