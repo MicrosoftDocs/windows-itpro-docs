@@ -122,7 +122,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     </plist>
     ```
 
-2. Verify that the above file was copied correctly by running `plutil` utility in the Terminal:
+2. Verify that the above file was copied correctly by running the `plutil` utility in the Terminal:
 
     ```bash
     $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
