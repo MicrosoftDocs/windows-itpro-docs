@@ -129,7 +129,7 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
-### Log analytics agent requirements
+### Configuring downlevel Windows proxy and firewall - Log analytics agent requirements
 
 The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
@@ -139,24 +139,13 @@ The information below list the proxy and firewall configuration information requ
 |*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
 |*.blob.core.windows.net |Port 443 |Outbound|Yes |  
 
-## Microsoft Defender ATP service backend IP range
-
-If your network devices don't support the URLs added to an "allow" list in the prior section, you can use the following information.
-
-Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
-
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
-
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
+
+## NEW SECTION - INSTRUCTIONS ON HOW TO USE TESTCLOUD.EXE - get instructions from Mark T.
+
+
 
 ## Verify client connectivity to Microsoft Defender ATP service URLs
 
