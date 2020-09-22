@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -146,9 +146,9 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-## Add Microsoft Defender ATP to the exclusion list for your existing solution
+## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. 
+This step of the setup process involves adding Microsoft Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. 
 
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
@@ -180,9 +180,9 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <br/><br/>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <br/>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<br/><br/>3. Specify your path and process exclusions. |
 |Registry key |1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
-## Add your existing solution to the exclusion list for Microsoft Defender ATP
+## Add your existing solution to the exclusion list for Microsoft Defender for Endpoint
 
-To add exclusions to Microsoft Defender ATP, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
+To add exclusions to Microsoft Defender for Endpoint, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
