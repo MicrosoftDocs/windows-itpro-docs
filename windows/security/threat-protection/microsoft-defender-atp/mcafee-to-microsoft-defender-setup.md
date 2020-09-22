@@ -36,9 +36,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 **Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
+3. [Add Microsoft Defender ATP to the exclusion list for McAfee](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee).
 4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
+5. [Add McAfee to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
