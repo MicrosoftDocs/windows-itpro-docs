@@ -21,6 +21,9 @@ hideEdit: true
 
 # Microsoft Defender ATP for iOS note on Privacy
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## What information can my organization see when I use Microsoft Defender ATP on iOS
 
 Your organization cannot see your personal information when you use Microsoft Defender ATP. Microsoft Defender ATP sends certain pieces of information from your device to the ATP portal, such as device threat level, device model, and serial number. Your organization uses this information to help protect you from web-based attacks.

@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard previous versions of Windows
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows 7 SP1 Enterprise

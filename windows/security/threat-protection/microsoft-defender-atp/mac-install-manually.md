@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Manual deployment for Microsoft Defender ATP for macOS
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for macOS](microsoft-defender-atp-mac.md)

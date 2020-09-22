@@ -19,6 +19,9 @@ ms.topic: article
 
 # Web content filtering
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -89,7 +92,10 @@ It is possible to override the blocked category in web content filtering to allo
 2. Enter the domain of the site
 3. Set the policy action to **Allow**.  
 
-## Web content filtering cards and details
+## Web content filtering
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+ cards and details
 
 Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
 
@@ -101,7 +107,10 @@ In the first 30 days of using this feature, your organization might not have suf
 
 ![Image of web activity by category card](images/web-activity-by-category600.png)
 
-### Web content filtering summary card
+### Web content filtering
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+ summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
