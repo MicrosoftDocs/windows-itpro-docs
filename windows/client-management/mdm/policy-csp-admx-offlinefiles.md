@@ -1753,7 +1753,6 @@ If you enable this policy setting, users cannot designate files to be saved on t
 If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
 > [!NOTE]
-
 > - This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 > - The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
@@ -1826,12 +1825,9 @@ If you enable this policy setting, users cannot designate files to be saved on t
 
 If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-> [!NOTES]
-
+> [!NOTE]
 > - This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
-
 > - The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
-      
 
 <!--/Description-->
 > [!TIP]
@@ -1905,13 +1901,9 @@ If you disable this policy setting, the list of files and folders is deleted, in
 If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
 > [!NOTE]
-
 > - This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
-
 > - The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
-
 > - This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
-
 > - If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 
 <!--/Description-->
@@ -1986,13 +1978,9 @@ If you disable this policy setting, the list of files and folders is deleted, in
 If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
 > [!NOTE]
-
 > - This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
-
 > - The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
-
 > - This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
-
 > - If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 
 <!--/Description-->
