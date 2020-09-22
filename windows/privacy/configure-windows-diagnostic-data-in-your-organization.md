@@ -23,6 +23,7 @@ ms.date: 09/22/2020
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows Server 2016 and newer
+- Azure Stack HCI, version 20H2
 
 This article applies to Windows 10, Windows Server, Surface Hub, and Hololens diagnostic data only. It describes the types of diagnostic data that’s sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -221,9 +222,9 @@ Here’s how to change the privacy settings on a server running either Windows S
 If the server has the Full Desktop installation option, use the following steps:
 1. Connect to the Server Manager Dashboard of the Windows Server.
 
-    This could be locally via a keyboard and monitor, or using a remote management (headless or BMC) controller, or Remote Desktop. 
+    This could be locally by using a keyboard and monitor, or using a remote management (headless or BMC) controller, or Remote Desktop. 
 
-1. In Server Manage, under **Dashboard**, select **Local Server**.
+1. In Server Manager, under **Dashboard**, select **Local Server**.
 1. On the **Properties** page of the server, next to **Feedback & Diagonstics**, select **Settings**.
 
     On the **Setting** page, the **Feedback frequency** and **Diagnotic and usage data** settings display. 
@@ -234,7 +235,7 @@ If the server has the Full Desktop installation option, use the following steps:
     - **Optional diagnostic data**
 
     >[!NOTE]
-    > On the **Settings** page, if the notice **Some settings are managed by your organization** displays, then the **Diagnotic and usage data** setting may not be available.
+    > On the **Settings** page, if you see the notice **Some settings are managed by your organization**, then the **Diagnotic and usage data** setting may not be available.
 
 If the server is running Azure Stack HCI and uses Server Core, use the following steps:
 1. Log on to the server running Azure Stack HCI.
