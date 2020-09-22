@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-symantecmigrate
 - m365solution-overview 
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 09/22/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -28,11 +28,11 @@ ms.reviewer: depicker, yongrhee, chriggs
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration.  
+If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## The migration process
 
-When you switch from Symantec to Microsoft Defender ATP, you follow a process that can be divided into three phases, as described in the following table:
+When you switch from Symantec to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
 |Phase |Description |
 |--|--|
