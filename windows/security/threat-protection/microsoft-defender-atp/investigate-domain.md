@@ -19,6 +19,9 @@ ms.date: 04/24/2018
 ---
 # Investigate a domain associated with a Microsoft Defender ATP alert
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

@@ -17,6 +17,9 @@ manager: dansimp
 
 # Microsoft Defender Antivirus on Windows Server 2016 and 2019
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows Server 2016
