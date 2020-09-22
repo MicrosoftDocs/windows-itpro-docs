@@ -148,7 +148,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 ## Add Microsoft Defender ATP to the exclusion list for your existing solution
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for your existing solution and any other security products your organization is using. 
+This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. 
 
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
