@@ -19,6 +19,9 @@ ms.topic: article
 
 # Web content filtering
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -76,12 +79,23 @@ To add a new policy:
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 5. Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected devices.
 
+Tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
->ProTip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+### Allow specific websites
 
-## Web content filtering cards and details
+It is possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it is applied to the device group in question.
+
+1. Create a custom indicator in the Microsoft Defender Security Center by going to **Settings** > **Indicators** > **URL/Domain** > **Add Item**
+2. Enter the domain of the site
+3. Set the policy action to **Allow**.  
+
+## Web content filtering
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+ cards and details
 
 Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
 
@@ -93,7 +107,10 @@ In the first 30 days of using this feature, your organization might not have suf
 
 ![Image of web activity by category card](images/web-activity-by-category600.png)
 
-### Web content filtering summary card
+### Web content filtering
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+ summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 

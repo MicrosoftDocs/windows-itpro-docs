@@ -18,6 +18,9 @@ ms.custom: nextgen
 
 # Specify the cloud-delivered protection level
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Microsoft Defender Antivirus

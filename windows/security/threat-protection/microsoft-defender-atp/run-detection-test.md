@@ -19,6 +19,9 @@ ms.topic: article
 
 # Run a detection test on a newly onboarded Microsoft Defender ATP device 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Supported Windows 10 versions
 - Windows Server 2012 R2
