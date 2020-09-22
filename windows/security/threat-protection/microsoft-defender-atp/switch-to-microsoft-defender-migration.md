@@ -19,13 +19,17 @@ ms.collection:
 - m365solution-overview 
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Make the switch to Microsoft Defender for Endpoint
 
 If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
+
+> [!TIP]
+> - If you're currently using McAfee Endpoint Security (McAfee), see [Migrate from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
+> - If you're currently using Symantec Endpoint Protection (Symantec), see [Migrate from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md).
 
 ## The migration process
 
