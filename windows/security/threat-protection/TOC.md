@@ -291,6 +291,9 @@
 #### [Configure]()
 ##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
 
+#### [Privacy]()
+##### [Microsoft Defender ATP for Android - Privacy information](microsoft-defender-atp/android-privacy.md)
+
 #### [Troubleshoot]()
 ##### [Troubleshoot sign in issues](microsoft-defender-atp/android-support-signin.md)
 
