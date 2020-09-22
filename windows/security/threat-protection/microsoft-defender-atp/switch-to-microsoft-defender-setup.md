@@ -32,9 +32,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 **Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-3. [Add Microsoft Defender for Endpoint to the exclusion list for McAfee](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
-4. [Add your existing threat protection solution to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add your existing threat protection solution to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
+3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
+4. [Add your existing endpoint protection solution to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
+5. [Add your existing endpoint protection solution to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
@@ -95,7 +95,7 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-Because your organization is still using your existing threat protection solution, you must set Microsoft Defender Antivirus to passive mode. That way, your existing solution and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
+Because your organization is still using your existing endpoint protection solution, you must set Microsoft Defender Antivirus to passive mode. That way, your existing solution and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
@@ -126,7 +126,7 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 
 ### Confirm that Microsoft Defender Antivirus is in passive mode
 
-Microsoft Defender Antivirus can run alongside your existing threat protection solution if you set Microsoft Defender Antivirus to passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+Microsoft Defender Antivirus can run alongside your existing endpoint protection solution if you set Microsoft Defender Antivirus to passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
 |Method  |What to do  |
 |---------|---------|
