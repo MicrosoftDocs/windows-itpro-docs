@@ -26,12 +26,12 @@
 
 
 ## [Migration guides](microsoft-defender-atp/migration-guides.md)
-### [Switch from McAfee Endpoint Security to Microsoft Defender for Endpoint]()
+### [Switch from McAfee to Microsoft Defender for Endpoint]()
 #### [Overview of migration](microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md) 
 #### [Phase 2: Setup](microsoft-defender-atp/mcafee-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](microsoft-defender-atp/mcafee-to-microsoft-defender-onboard.md)
-### [Switch from Symantec Endpoint Protection to Microsoft Defender for Endpoint]()
+### [Switch from Symantec to Microsoft Defender for Endpoint]()
 #### [Overview of migration](microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md)
 #### [Phase 1: Prepare](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
