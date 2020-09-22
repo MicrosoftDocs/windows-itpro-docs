@@ -82,6 +82,20 @@ Examples of devices that should be marked as high value:
 3. A flyout will appear with the current device value and what it means. Review the value of the device and choose the one that best fits your device.
 ![Example of the device value flyout.](images/tvm-device-value-flyout.png)
 
+## Get or set device value
+
+HTTP GET request
+```http
+GET /api/machines/{machineId}/getDeviceValue
+```
+
+HTTP set request
+```http
+POST /api/machines/{machineId}/setDeviceValue
+```
+
+**Possible values**: Normal/Low/High
+
 ## Related topics
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)

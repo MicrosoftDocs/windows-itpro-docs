@@ -41,6 +41,7 @@ Method|Return Type |Description
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
+[Get or set device value](get-or-set-device-value.md)| [machine](machine.md) collection | Get or set the value of a device
 
 ## Properties
 
