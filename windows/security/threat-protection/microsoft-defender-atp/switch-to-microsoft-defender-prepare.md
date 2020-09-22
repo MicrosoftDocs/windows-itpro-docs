@@ -1,6 +1,6 @@
 ---
-title: McAfee to Microsoft Defender ATP - Prepare
-description: This is phase 1, Prepare, for migrating from McAfee to Microsoft Defender ATP.
+title: Switch to Microsoft Defender ATP - Prepare
+description: This is phase 1, Prepare, for migrating to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -29,7 +29,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [switching to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
@@ -39,19 +39,12 @@ This migration phase includes the following steps:
 
 ## Get and deploy updates across your organization's devices
 
-As a best practice, keep your organization's devices and endpoints up to date. Make sure your McAfee Endpoint Security (McAfee) solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Microsoft Defender ATP and Microsoft Defender Antivirus.
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Microsoft Defender ATP and Microsoft Defender Antivirus.
 
-### Make sure your McAfee solution is up to date
+### Make sure your existing solution is up to date
 
-Keep McAfee up to date, and make sure that your organization's devices have the latest security updates. Need help? Here are some McAfee resources:
+Keep your existing threat protection solution up to date, and make sure that your organization's devices have the latest security updates. Need help? See your solution provider's documentation.
 
-- [McAfee Enterprise Product Documentation: How Endpoint Security Works](https://docs.mcafee.com/bundle/endpoint-security-10.7.x-common-product-guide-windows/page/GUID-1207FF39-D1D2-481F-BBD9-E4079112A8DD.html)
-
-- [McAfee Knowledge Center Technical Article: Windows Security Center intermittently incorrectly reports that Endpoint Security is disabled when running on Windows 10](https://kc.mcafee.com/corporate/index?page=content&id=KB91830) 
-
-- [McAfee Knowledge Center Technical Article: Windows Security Center reports Endpoint Security is disabled when Endpoint Security is running](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
-
-- Your McAfee support ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com))
 
 ### Make sure your organization's devices are up to date
 
