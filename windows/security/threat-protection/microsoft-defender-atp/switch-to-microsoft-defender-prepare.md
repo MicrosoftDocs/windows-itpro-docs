@@ -43,7 +43,7 @@ As a best practice, keep your organization's devices and endpoints up to date. M
 
 ### Make sure your existing solution is up to date
 
-Keep your existing threat protection solution up to date, and make sure that your organization's devices have the latest security updates. 
+Keep your existing endpoint protection solution up to date, and make sure that your organization's devices have the latest security updates. 
 
 Need help? See your solution provider's documentation.
 
@@ -59,7 +59,7 @@ Need help updating your organization's devices? See the following resources:
 |Android |[Check & update your Android version](https://support.google.com/android/answer/7680439) |
 |Linux | [Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
 
-## Get Microsoft Defender ATP
+## Get Microsoft Defender for Endpoint
 
 Now that you've updated your organization's devices, the next step is to get Microsoft Defender for Endpoint, assign licenses, and make sure the service is provisioned.
 
