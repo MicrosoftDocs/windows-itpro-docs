@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-migratetomdfor Endpoint
+- m365solution-migratetomdatp
 - m365solution-overview 
 ms.topic: conceptual
 ms.custom: migrationguides
@@ -25,7 +25,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 # Make the switch to Microsoft Defender for Endpoint
 
-If you are planning to switch from a non-Microsoft threat protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
+If you are planning to switch from a non-Microsoft threat protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
 
 ## The migration process
 

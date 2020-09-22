@@ -1,6 +1,6 @@
 ---
-title: McAfee to Microsoft Defender ATP - Setup
-description: This is phase 2, Setup, for migrating from McAfee to Microsoft Defender ATP.
+title: Switch to Microsoft Defender for Endpoint - Setup
+description: This is phase 2, Setup, for switching to Microsoft Defender for Endpoint.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,7 +22,7 @@ ms.date: 09/21/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from McAfee - Phase 2: Set up Microsoft Defender ATP
+# Switch to Microsoft Defender for Endpoint - Phase 2: Set up Microsoft Defender for Endpoint
 
 |[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
