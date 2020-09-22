@@ -20,6 +20,9 @@ ms.date: 09/03/2018
 ---
 
 # Alerts queue in Microsoft Defender Security Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 Learn how you can view and manage the queue so that you can effectively investigate threats seen on entities such as devices, files, or user accounts.
 
 

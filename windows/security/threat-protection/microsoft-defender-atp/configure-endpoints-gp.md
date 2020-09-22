@@ -20,6 +20,9 @@ ms.date: 04/24/2018
 
 # Onboard Windows 10 devices using Group Policy 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Group Policy

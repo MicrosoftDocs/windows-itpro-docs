@@ -18,6 +18,9 @@ ms.topic: article
 
 # Microsoft Defender ATP API license and terms of use
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## APIs
 
 Microsoft Defender ATP APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).

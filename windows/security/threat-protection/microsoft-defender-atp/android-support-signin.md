@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Troubleshooting issues on Microsoft Defender ATP for Android
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 -   [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for
