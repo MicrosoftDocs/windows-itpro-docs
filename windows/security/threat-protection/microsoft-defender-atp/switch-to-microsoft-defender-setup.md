@@ -35,7 +35,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
 3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-atp-to-the-exclusion-list-for-mcafee).
 4. [Add your existing endpoint protection solution to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add your existing endpoint protection solution to the exclusion list for Microsoft Defender ATP](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-atp).
+5. [Add your existing endpoint protection solution to the exclusion list for Microsoft Defender ATP](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
