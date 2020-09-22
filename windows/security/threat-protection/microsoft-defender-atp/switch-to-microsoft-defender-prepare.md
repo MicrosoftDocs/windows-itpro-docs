@@ -15,21 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365solution-mcafeemigrate
+- m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Migrate from McAfee - Phase 1: Prepare for your migration
 
-|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |[![Phase 3: Onboard](images/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md) |
+|![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |[![Phase 3: Onboard](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
@@ -114,6 +114,6 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [migrating from McAfee to Microsoft Defender ATP](switch-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to set up Microsoft Defender ATP](mcafee-to-microsoft-defender-setup.md).
+- [Proceed to set up Microsoft Defender ATP](switch-to-microsoft-defender-setup.md).
