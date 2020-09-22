@@ -128,7 +128,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
     ```
 
-    For example, if the file was stored in the Documents:
+    For example, if the file was stored in Documents:
 
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
