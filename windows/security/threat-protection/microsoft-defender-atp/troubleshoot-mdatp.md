@@ -19,6 +19,9 @@ ms.topic: troubleshooting
 
 # Troubleshoot service issues
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 This section addresses issues that might arise as you use the Microsoft Defender Advanced Threat service.
 
 ## Server error - Access is denied due to invalid credentials

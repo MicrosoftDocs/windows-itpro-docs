@@ -17,6 +17,9 @@ ms.date: 08/26/2020
 
 # Turn on block at first sight
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Microsoft Defender Antivirus
@@ -70,7 +73,10 @@ For more information about configuring Microsoft Defender Antivirus device restr
 
 For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-### Turn on block at first sight with Microsoft Endpoint Configuration Manager
+### Turn on block at first sight
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+ with Microsoft Endpoint Configuration Manager
 
 1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
 

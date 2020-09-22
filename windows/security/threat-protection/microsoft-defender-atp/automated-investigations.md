@@ -22,6 +22,9 @@ ms.custom: AIR
 
 # Overview of automated investigations
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
 Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, and to reduce the volume of alerts that must be investigated individually,  Microsoft Defender ATP includes automated investigation and remediation capabilities. 
