@@ -32,10 +32,10 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to Phase 3 of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
-1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-atp).
+1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
 3. [Uninstall your non-Microsoft solution](#uninstall-mcafee).
-4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
+4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
