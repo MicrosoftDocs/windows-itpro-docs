@@ -19,6 +19,9 @@ ms.topic: article
 
 # Manage automation folder exclusions 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

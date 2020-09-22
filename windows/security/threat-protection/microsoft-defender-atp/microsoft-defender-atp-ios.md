@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Advanced Threat Protection for iOS
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
 > 
@@ -64,7 +67,7 @@ iOS devices along with other platforms.
 -   Stay informed about upcoming releases by visiting our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
 
 -   Provide feedback through in-app feedback system or through [SecOps
-    portal](https://secuirtycenter.microsoft.com)
+    portal](https://securitycenter.microsoft.com)
 
 
 ## Next steps
