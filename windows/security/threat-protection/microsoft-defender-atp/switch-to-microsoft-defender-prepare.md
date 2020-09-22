@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -39,7 +39,7 @@ This migration phase includes the following steps:
 
 ## Get and deploy updates across your organization's devices
 
-As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Microsoft Defender ATP and Microsoft Defender Antivirus.
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Microsoft Defender for Endpoint and Microsoft Defender Antivirus.
 
 ### Make sure your existing solution is up to date
 
@@ -74,11 +74,11 @@ Now that you've updated your organization's devices, the next step is to get Mic
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 
 > [!NOTE]
-> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal, and can be accessed at [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal). 
+> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender for Endpoint portal, and can be accessed at [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal). 
 
 ## Grant access to the Microsoft Defender Security Center
 
-The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) is where you access and configure features and capabilities of Microsoft Defender ATP. To learn more, see [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
+The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) is where you access and configure features and capabilities of Microsoft Defender for Endpoint. To learn more, see [Overview of the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use).
 
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
