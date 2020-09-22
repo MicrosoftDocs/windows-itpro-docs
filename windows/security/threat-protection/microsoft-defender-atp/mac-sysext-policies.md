@@ -140,7 +140,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
     
-3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
+3. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority.
 
 4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
