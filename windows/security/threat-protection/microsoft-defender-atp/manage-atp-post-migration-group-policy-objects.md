@@ -5,6 +5,7 @@ keywords: post-migration, manage, operations, maintenance, utilization, PowerShe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
