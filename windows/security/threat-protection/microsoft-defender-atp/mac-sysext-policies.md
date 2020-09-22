@@ -134,7 +134,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
     
-    Verify that the command outputs `OK`
+    Verify that the command outputs `OK`.
         
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
