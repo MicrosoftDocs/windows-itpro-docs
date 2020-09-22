@@ -42,7 +42,7 @@
 #### [Phase 2: Setup](microsoft-defender-atp/switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](microsoft-defender-atp/switch-to-microsoft-defender-onboard.md)
 ### [Manage Microsoft Defender for Endpoint after migration]()
-#### [Overview](microsoft-defender-atp/manage-atp-post-migration.md)
+#### [Overview of migration](microsoft-defender-atp/manage-atp-post-migration.md)
 #### [Intune (recommended)](microsoft-defender-atp/manage-atp-post-migration-intune.md)
 #### [Configuration Manager](microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md)
 #### [Group Policy Objects](microsoft-defender-atp/manage-atp-post-migration-group-policy-objects.md)

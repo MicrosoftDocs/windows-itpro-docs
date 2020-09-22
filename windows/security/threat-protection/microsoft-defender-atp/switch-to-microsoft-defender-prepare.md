@@ -74,7 +74,7 @@ Now that you've updated your organization's devices, the next step is to get Mic
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 
 > [!NOTE]
-> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal. 
+> The Microsoft Defender Security Center is sometimes referred to as the Microsoft Defender ATP portal, and can be accessed at [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal). 
 
 ## Grant access to the Microsoft Defender Security Center
 
