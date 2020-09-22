@@ -36,7 +36,7 @@
 #### [Phase 1: Prepare](microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md)
-### [Switch from another endpoint security solution to Microsoft Defender for Endpoint]()
+### [Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint]()
 #### [Overview](microsoft-defender-atp/switch-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](microsoft-defender-atp/switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](microsoft-defender-atp/switch-to-microsoft-defender-setup.md)
