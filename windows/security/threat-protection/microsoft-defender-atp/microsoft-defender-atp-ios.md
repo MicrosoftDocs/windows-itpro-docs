@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Advanced Threat Protection for iOS
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
 > 

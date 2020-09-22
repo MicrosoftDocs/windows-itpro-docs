@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!IMPORTANT]
 > In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
 > 
