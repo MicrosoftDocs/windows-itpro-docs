@@ -84,6 +84,6 @@ This option is available by clicking the icon that looks like a headset. You wil
 3. Select your time zone and an alternative language, if applicable. The request will be sent to Microsoft Support Team. The team will respond to your service request shortly.
 
 
-## Related topic
+## Related topics
 - [Troubleshoot service issues](troubleshoot-mdatp.md)
 - [Check service health](service-status.md)
