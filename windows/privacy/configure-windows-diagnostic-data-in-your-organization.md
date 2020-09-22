@@ -239,7 +239,7 @@ If the server has the Full Desktop installation option, use the following steps:
 If the server is running Azure Stack HCI and uses Server Core, use the following steps:
 1. Log on to the server running Azure Stack HCI.
 
-    This could be locally via a keyboard and monitor, or using a remote management (headless or BMC) controller, or Remote Desktop. The Sconfig tool opens automatically when you log on to the server.
+    This could be locally via a keyboard and monitor, or using a remote management (headless or BMC) controller, or Remote Desktop. The Server Configuration tool (Sconfig) opens automatically when you log on to the server.
 
 1. On the **Welcome to Azure Stack HCI** screen, at the **Enter a number to select an option:** prompt, type **10** and press Enter.
 1. On the **Change Telemetry** confirmation prompt, select **Yes** to display the following options:
