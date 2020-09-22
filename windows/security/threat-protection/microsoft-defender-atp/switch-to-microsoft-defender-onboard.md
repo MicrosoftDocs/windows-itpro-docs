@@ -1,6 +1,6 @@
 ---
-title: McAfee to Microsoft Defender for Endpoint - Onboard
-description: This is phase 3, Onboard, for migrating from McAfee to Microsoft Defender ATP.
+title: Switch to Microsoft Defender for Endpoint - Onboard
+description: This is phase 3, Onboard, for migrating from a non-Microsoft solution to Microsoft Defender for Endpoint.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
