@@ -44,7 +44,5 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 ## See also
 
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
-
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?) 
+- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?) 
