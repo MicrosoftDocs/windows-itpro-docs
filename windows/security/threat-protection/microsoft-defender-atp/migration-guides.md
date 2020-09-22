@@ -29,11 +29,11 @@ If you're considering switching from a non-Microsoft threat protection solution 
 
 |Scenario |Guidance |
 |:--|:--|
-|You do not have an endpoint protection solution yet, and you want to know more about how Microsoft Defender for Endpoint works.  |[Microsoft Defender ATP evaluation lab](evaluation-lab.md)   |
-|You have Microsoft Defender for Endpoint and need some help getting everything set up and configured.  |[Microsoft Defender Advanced Threat Protection deployment guide](deployment-phases.md)  |
-|You're planning to migrate from McAfee Endpoint Security (McAfee) to Microsoft Defender for Endpoint |[Switch from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md) |
-|You're planning to migrate from Symantec Endpoint Protection (Symantec) to Microsoft Defender for Endpoint |[Switch from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md) |
-|You're planning to migrate from a non-Microsoft endpoint protection solution other than McAfee or Symantec to Microsoft Defender for Endpoint |[Make the switch to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
+|You do not have an endpoint protection solution yet, and you want to know more about how Microsoft Defender for Endpoint & Microsoft Defender Antivirus work.  |[Microsoft Defender ATP evaluation lab](evaluation-lab.md)   |
+|You have Microsoft Defender for Endpoint & Microsoft Defender Antivirus and need some help getting everything set up and configured.  |[Microsoft Defender Advanced Threat Protection deployment guide](deployment-phases.md)  |
+|You're planning to migrate from McAfee Endpoint Security (McAfee) to Microsoft Defender for Endpoint. |[Switch from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md) |
+|You're planning to migrate from Symantec Endpoint Protection (Symantec) to Microsoft Defender for Endpoint. |[Switch from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md) |
+|You're planning to migrate from a non-Microsoft endpoint protection solution (other than McAfee or Symantec) to Microsoft Defender for Endpoint. |[Make the switch to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
 |You've migrated to Microsoft Defender for Endpoint, and need with your next steps, such as configuring additional features or fine-tuning your security settings. | [Manage Microsoft Defender for Endpoint, post-migration](manage-atp-post-migration.md) |
 
 
