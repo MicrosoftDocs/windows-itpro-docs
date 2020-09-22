@@ -130,7 +130,7 @@ The Action center will show the scan information and the device timeline will in
 >[!NOTE]
 >When triggering a scan using Microsoft Defender ATP response action, Microsoft Defender antivirus 'ScanAvgCPULoadFactor' value still applies and limits the CPU impact of the scan.<br> 
 >If ScanAvgCPULoadFactor is not configured, the default value is a limit of 50% maximum CPU load during a scan.<br>
->For more information, see [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
+>For more information, see [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## Restrict app execution
 
