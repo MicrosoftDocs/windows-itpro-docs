@@ -246,4 +246,4 @@ If the server is running Azure Stack HCI and uses Server Core, use the following
 
     Available Telemetry settings: **1 Security**, **2 Basic**, **3 Enhanced**, **4 Full**
 
-1. At the **Enter new telemetry setting:** prompt, type the option you want, and press Enter.
+1. At the **Enter new telemetry setting:** prompt, type the option you want and press Enter.
