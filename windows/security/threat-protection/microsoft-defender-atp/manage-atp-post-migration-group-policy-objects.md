@@ -19,7 +19,7 @@ ms.date: 09/22/2020
 ms.reviewer: chventou
 ---
 
-# Manage Microsoft Defender Advanced Threat Protection with Group Policy Objects
+# Manage Microsoft Defender for Endpoint with Group Policy Objects
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

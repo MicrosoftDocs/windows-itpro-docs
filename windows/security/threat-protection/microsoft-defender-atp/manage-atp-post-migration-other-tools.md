@@ -19,7 +19,7 @@ ms.date: 09/22/2020
 ms.reviewer: chventou
 ---
 
-# Manage Microsoft Defender Advanced Threat Protection with PowerShell, WMI, and MPCmdRun.exe
+# Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

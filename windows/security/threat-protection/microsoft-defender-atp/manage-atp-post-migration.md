@@ -19,7 +19,7 @@ ms.date: 09/22/2020
 ms.reviewer: chventou
 ---
 
-# Manage Microsoft Defender Advanced Threat Protection, post migration
+# Manage Microsoft Defender for Endpoint, post migration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
