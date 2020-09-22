@@ -23,7 +23,7 @@ ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
-# Migrate from Symantec to Microsoft Defender Advanced Threat Protection
+# Migrate from Symantec to Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
