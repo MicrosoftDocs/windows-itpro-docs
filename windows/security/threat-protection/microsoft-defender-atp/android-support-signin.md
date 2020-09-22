@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot sign in issues on Microsoft Defender ATP for Android
+title: Troubleshoot issues on Microsoft Defender ATP for Android
 ms.reviewer:
-description: Troubleshoot sign in issues for Microsoft Defender ATP for Android
+description: Troubleshoot issues for Microsoft Defender ATP for Android
 keywords: microsoft, defender, atp, android, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Troubleshooting sign in issues on Microsoft Defender ATP for Android
+# Troubleshooting issues on Microsoft Defender ATP for Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -69,19 +69,17 @@ have a license for Microsoft 365 Enterprise subscription.
 
 Contact your administrator for help.
 
-## Phishing pages and harmful web connections are not blocked on specific OEM devices
+## Phishing pages are not blocked on specific OEM devices
 
 **Applies to:** Specific OEMs only
 
 -   **Xiaomi**
 
 Phishing and harmful web connection threats detected by Microsoft Defender ATP
-for Android are not blocked on Xiaomi devices. The following functionality does not work
-on these devices.
+for Android are not blocked on some Xiaomi devices. The following functionality does not work on these devices.
 
 ![Image of site reported unsafe](images/0c04975c74746a5cdb085e1d9386e713.png)
 
-![Image of connection blocked](images/2f66647cbcefaa4088a5df19d9203afb.png)
 
 **Cause:**
 
