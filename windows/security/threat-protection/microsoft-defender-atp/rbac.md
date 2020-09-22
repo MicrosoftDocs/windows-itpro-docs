@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Manage portal access using role-based access control
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 - Azure Active Directory
 - Office 365

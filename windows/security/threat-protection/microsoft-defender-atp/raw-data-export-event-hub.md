@@ -19,6 +19,9 @@ ms.topic: article
 
 # Configure Microsoft Defender ATP to stream Advanced Hunting events to your Azure Event Hubs
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
