@@ -1,7 +1,7 @@
 ---
 title: Make the switch to Microsoft Defender for Endpoint
 description: Make the switch to Microsoft Defender for Endpoint. Read this article for an overview.
-keywords: migration, windows defender advanced threat protection, for Endpoint, edr
+keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -25,17 +25,17 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 # Make the switch to Microsoft Defender for Endpoint
 
-If you are planning to switch from a non-Microsoft threat protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
+If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
 
 ## The migration process
 
-When you switch fto Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
+When you switch to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
 |Phase |Description |
 |--|--|
 |[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Prepare for your migration](switch-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md), you update your organization's devices, get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
-|[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Set up Microsoft Defender for Endpoint](switch-to-microsoft-defender-setup.md) |During [the **Setup** phase](switch-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and your existing threat protection solution. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
-|[![Phase 3: Onboard](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Onboard to Microsoft Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall your existing threat protection solution and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender for Endpoint is in active mode. |
+|[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Set up Microsoft Defender for Endpoint](switch-to-microsoft-defender-setup.md) |During [the **Setup** phase](switch-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and your existing endpoint protection solution. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
+|[![Phase 3: Onboard](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Onboard to Microsoft Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall your existing endpoint protection solution and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender for Endpoint is in active mode. |
 
 ## What's included in Microsoft Defender for Endpoint?
 
