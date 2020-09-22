@@ -1,5 +1,5 @@
 ---
-title: McAfee to Microsoft Defender ATP - Onboard
+title: McAfee to Microsoft Defender for Endpoint - Onboard
 description: This is phase 3, Onboard, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.date: 09/03/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from McAfee - Phase 3: Onboard
+# Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
 
 |[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
@@ -60,12 +60,12 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 
 ## Run a detection test
 
-To verify that your onboarded devices are properly connected to Microsoft Defender ATP, you can run a detection test.
+To verify that your onboarded devices are properly connected to Microsoft Defender for Endpoint, you can run a detection test.
 
 
 |Operating system  |Guidance  |
 |---------|---------|
-|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |See [Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). <br/><br/>Visit the Microsoft Defender ATP demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.         |
+|- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |See [Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). <br/><br/>Visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.         |
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).        |
 |Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS, or higher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux). |
 
@@ -89,4 +89,4 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 **Congratulations**! You have completed your [migration to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
-- [Manage Microsoft Defender Advanced Threat Protection, post migration](manage-atp-post-migration.md).
+- [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).
