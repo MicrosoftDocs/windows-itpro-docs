@@ -26,7 +26,7 @@ ms.reviewer: chventou
 
 
 **Applies to:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
 > We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction). 
@@ -34,7 +34,7 @@ ms.reviewer: chventou
 > - [Co-manage Microsoft Defender for Endpoint on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 > - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md) 
 
-You can manage some Microsoft Defender Antivirus settings on devices with [PowerShell](#configure-microsoft-defender-atp-with-powershell),  [Windows Management Instrumentation](#configure-microsoft-defender-atp-with-windows-management-instrumentation-wmi) (WMI), and the [Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-atp-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). For example, you can manage some Microsoft Defender Antivirus settings. And, in some cases, you can customize your attack surface reduction rules and exploit protection settings. 
+You can manage some Microsoft Defender Antivirus settings on devices with [PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell),  [Windows Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI), and the [Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). For example, you can manage some Microsoft Defender Antivirus settings. And, in some cases, you can customize your attack surface reduction rules and exploit protection settings. 
 
 > [!IMPORTANT]
 > Threat protection features that you configure by using PowerShell, WMI, or MCPmdRun.exe can be overwritten by configuration settings that are deployed with Intune or Configuration Manager.
