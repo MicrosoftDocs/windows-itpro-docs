@@ -681,6 +681,8 @@
 #### [Troubleshoot Microsoft Defender ATP service issues]()
 ##### [Troubleshoot service issues](microsoft-defender-atp/troubleshoot-mdatp.md)
 ##### [Check service health](microsoft-defender-atp/service-status.md)
+##### [Contact Microsoft Defender ATP support](microsoft-defender-atp/contact-support.md)
+
 
 #### [Troubleshoot live response issues](microsoft-defender-atp/troubleshoot-live-response.md)
  
