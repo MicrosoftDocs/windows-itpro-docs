@@ -34,7 +34,8 @@ The new widget allows customers to:
 ## Prerequisites
 It's important to know the specific roles that have permission to open support cases.
 
-Anyone who has a **Security Admin** and **Security Operator** roles have permission. 
+You must at a minimum, have Service support admin **OR** Helpdesk administrator role.
+
 
 For more information on which roles have permission see, [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
