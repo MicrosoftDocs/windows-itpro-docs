@@ -36,7 +36,7 @@ Enable security information and event management (SIEM) integration so you can p
 >- The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Prerequisites
-- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is typically someone with a **Global administrator** role.
+- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is someone with the following roles: Security Administrator and either Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
 - During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
 
 ## Enabling SIEM integration 
