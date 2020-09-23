@@ -27,11 +27,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: What's new in Windows 10, version 2004
-            url: /windows/whats-new/whats-new-windows-10-version-2004.md
+            url: /windows/whats-new/whats-new-windows-10-version-2004
           - text: What's new in Windows 10, version 1909
-            url: /windows/whats-new/whats-new-windows-10-version-1909.md
+            url: /windows/whats-new/whats-new-windows-10-version-1909
           - text: What's new in Windows 10, version 1903
-            url: /windows/whats-new/whats-new-windows-10-version-1903.md
+            url: /windows/whats-new/whats-new-windows-10-version-1903
           - text: Windows 10 release information
             url:  https://docs.microsoft.com/windows/release-information/
 
@@ -41,13 +41,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Configure Windows 10
-            url: /windows/configuration/index.md
+            url: /windows/configuration/index
           - text: Accesasibility information for IT Pros
-            url: /windows/configuration/windows-10-accessibility-for-itpros.md
+            url: /windows/configuration/windows-10-accessibility-for-itpros
           - text: Configure access to Microsoft Store
-            url: /windows/configuration/stop-employees-from-using-microsoft-store.md
+            url: /windows/configuration/stop-employees-from-using-microsoft-store
           - text: Set up a shared or guest PC
-            url: /windows/configuration/set-up-shared-or-guest-pc.md
+            url: /windows/configuration/set-up-shared-or-guest-pc
 
   # Card (optional)
   - title: Deployment
@@ -57,11 +57,11 @@ landingContent:
           - text: Deploy and update Windows 10
             url: /windows/deployment/index.yml
           - text: Windows 10 deployment scenarios
-            url: /windows/deployment/windows-10-deployment-scenarios.md
+            url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
-            url: /windows/deployment/update/create-deployment-plan.md
+            url: /windows/deployment/update/create-deployment-plan
           - text: Prepare to deploy Windows 10
-            url: /windows/deployment/update/prepare-deploy-windows.md
+            url: /windows/deployment/update/prepare-deploy-windows
 
  
   # Card
@@ -70,13 +70,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Windows 10 application management
-            url: /windows/application-management/index.md
+            url: /windows/application-management/index
           - text: Understand the different apps included in Windows 10
-            url: /windows/application-management/apps-in-windows-10.md
+            url: /windows/application-management/apps-in-windows-10
           - text: Get started with App-V for Windows 10
-            url:  /windows/application-management/app-v/appv-getting-started.md
+            url:  /windows/application-management/app-v/appv-getting-started
           - text: Keep removed apps from returning during an update
-            url:  /windows/application-management/remove-provisioned-apps-during-update.md
+            url:  /windows/application-management/remove-provisioned-apps-during-update
 
   # Card
   - title: Client management
@@ -84,13 +84,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Windows 10 client management
-            url: /windows/client-management/index.md
+            url: /windows/client-management/index
           - text: Administrative tools in Windows 10
-            url: /windows/client-management/administrative-tools-in-windows-10.md
+            url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
-            url: /windows/client-management/mandatory-user-profile.md
+            url: /windows/client-management/mandatory-user-profile
           - text: New policies for Windows 10
-            url: /windows/client-management/new-policies-for-windows-10.md
+            url: /windows/client-management/new-policies-for-windows-10
 
   # Card (optional)
   - title: Security
@@ -100,8 +100,8 @@ landingContent:
           - text: Windows 10 Enterprise Security
             url: /windows/security/index.yml
           - text: Identity and access management
-            url: /windows/security/identity-protection/index.md
+            url: /windows/security/identity-protection/index
           - text: Threat protection
-            url: /windows/security/threat-protection/index.md
+            url: /windows/security/threat-protection/index
           - text: Information protection
-            url: /windows/security/information-protection/index.md
+            url: /windows/security/information-protection/index
