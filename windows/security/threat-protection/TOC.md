@@ -387,7 +387,7 @@
 ##### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 ##### [Handle errors](microsoft-defender-atp/advanced-hunting-errors.md)
 ##### [Service limits](microsoft-defender-atp/advanced-hunting-limits.md)
-#### [Advanced hunting schema reference]()
+#### [Data schema]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
 ##### [DeviceAlertEvents](microsoft-defender-atp/advanced-hunting-devicealertevents-table.md)
 ##### [DeviceFileEvents](microsoft-defender-atp/advanced-hunting-devicefileevents-table.md)
