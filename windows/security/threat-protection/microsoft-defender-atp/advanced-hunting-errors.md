@@ -19,6 +19,14 @@ ms.topic: article
 
 # Handle advanced hunting errors
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+
+
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined limits](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors. 
 
 | Error type | Cause | Resolution | Error message examples |
