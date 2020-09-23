@@ -687,6 +687,8 @@
 
 
 #### [Troubleshoot live response issues](microsoft-defender-atp/troubleshoot-live-response.md)
+
+#### [Collect support logs using LiveAnalyzer ](microsoft-defender-atp/troubleshoot-collect-support-log.md)
  
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
