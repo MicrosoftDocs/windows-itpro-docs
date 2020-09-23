@@ -55,7 +55,7 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Deploy and update Windows 10
-            url: /windows/deployment/index.yml
+            url: /windows/deployment/index
           - text: Windows 10 deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
