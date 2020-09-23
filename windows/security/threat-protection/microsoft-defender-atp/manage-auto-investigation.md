@@ -20,6 +20,9 @@ ms.date: 09/15/2020
 
 # Review and approve remediation actions following an automated investigation
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## Remediation actions
 
 When an [automated investigation](automated-investigations.md) runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
