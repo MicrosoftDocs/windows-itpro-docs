@@ -31,7 +31,17 @@ The new widget allows customers to:
 - Find solutions to common problems
 - Submit a support case to the Microsoft support team
 
+## Prerequisites
+It's important to know the specific roles that have permission to open support cases.
 
+Anyone who has an Azure Active Directory role that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+
+For more information on which roles have permission see, [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).
+
+For general information on admin roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+
+
+## Access the widget
 Accessing the new support widget can be done in one of two ways:
 
 1.  Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
@@ -60,14 +70,6 @@ In case the suggested articles are not sufficient, you can open a service reques
 Learn how to open support tickets by contacting Microsoft Defender ATP support. 
 
 
-### Prerequisites
-It's important to know the specific roles that have permission to open support cases.
-
-Anyone who has an Azure Active Directory role that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
-
-For more information on which roles have permission see, [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).
-
-For general information on admin roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 
 ### Contact support
