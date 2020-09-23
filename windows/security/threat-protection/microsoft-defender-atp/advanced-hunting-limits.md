@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting limits in Microsoft Defender ATP
 description: Understand various service limits that keep the advanced hunting service responsive
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
