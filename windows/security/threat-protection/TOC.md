@@ -367,12 +367,6 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 #### [Device health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-
-#### [Custom detections]()
-##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
-##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
-
 ### [Behavioral blocking and containment]()
 #### [Behavioral blocking and containment](microsoft-defender-atp/behavioral-blocking-containment.md)
 #### [Client behavioral blocking](microsoft-defender-atp/client-behavioral-blocking.md)
@@ -385,9 +379,14 @@
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
-#### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+#### [Learn, train, & get examples]()
+##### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
+##### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Work with query results](microsoft-defender-atp/advanced-hunting-query-results.md)
-#### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
+#### [Optimize & handle errors]()
+##### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+##### [Handle errors](microsoft-defender-atp/advanced-hunting-errors.md)
+##### [Service limits](microsoft-defender-atp/advanced-hunting-limits.md)
 #### [Advanced hunting schema reference]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
 ##### [DeviceAlertEvents](microsoft-defender-atp/advanced-hunting-devicealertevents-table.md)
@@ -405,7 +404,10 @@
 ##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
 ##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
 ##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)
-#### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+#### [Custom detections]()
+##### [Custom detections overview](microsoft-defender-atp/overview-custom-detections.md)
+##### [Create detection rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [View & manage detection rules](microsoft-defender-atp/custom-detections-manage.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
