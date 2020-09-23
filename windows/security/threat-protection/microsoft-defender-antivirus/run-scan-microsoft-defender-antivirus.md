@@ -33,7 +33,7 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
 
 > [!IMPORTANT] 
-> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share. 
+> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share. 
 
 Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
