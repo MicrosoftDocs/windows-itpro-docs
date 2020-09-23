@@ -51,7 +51,7 @@ This topic provides instructions on how to run the tool via Live Response.
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
-    ```
+    ```console
     Run MDATPLiveAnalyzer.ps1
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
     ```
@@ -60,12 +60,16 @@ This topic provides instructions on how to run the tool via Live Response.
 
 
 >[!NOTE]
->- The latest preview version of MDATPClientAnalyzer can be downloaded [here](https://aka.ms/Betamdatpanalyzer). <br>
->- The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: https://mdatpclientanalyzer.blob.core.windows.net. <br>
-> If you cannot allow the machine to reach the above URL, then upload MDATPClientAnalyzerPreview.zip file to the library before running the LiveAnalyzer script:
->```
->PutFile MDATPClientAnalyzerPreview.zip -overwrite
->Run MDATPLiveAnalyzer.ps1
->GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
->```
+>- The latest preview version of MDATPClientAnalyzer can be downloaded here: [https://aka.ms/Betamdatpanalyzer](https://aka.ms/Betamdatpanalyzer).
+> 
+>- The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: https://mdatpclientanalyzer.blob.core.windows.net.
+> 
+>  If you cannot allow the machine to reach the above URL, then upload MDATPClientAnalyzerPreview.zip file to the library before running the LiveAnalyzer script:
+>
+>  ```console
+>  PutFile MDATPClientAnalyzerPreview.zip -overwrite
+>  Run MDATPLiveAnalyzer.ps1
+>  GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
+>  ```
+> 
 > - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender ATP cloud services, or does not appear in MDATP portal as expected, see [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
