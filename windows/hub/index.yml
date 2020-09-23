@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows 10 resources and documentation for IT Pros # < 60 chars
-summary: Configure, plan, deploy, secure and manage devices running Windows 10.  # < 160 chars
+summary: Plan, deploy, secure, and manage devices running Windows 10.  # < 160 chars
 
 metadata:
   title: Windows 10 documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -98,7 +98,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Windows 10 Enterprise Security
-            url: /windows/security/index.yml
+            url: /windows/security/index
           - text: Identity and access management
             url: /windows/security/identity-protection/index
           - text: Threat protection
