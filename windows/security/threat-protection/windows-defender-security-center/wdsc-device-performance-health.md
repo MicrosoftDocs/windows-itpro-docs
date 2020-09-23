@@ -3,7 +3,6 @@ title: Device & performance health in the Windows Security app
 description: Use the Device & performance health section to see the status of the machine and note any storage, update, battery, driver, or hardware configuration issues
 keywords: wdsc, windows update, storage, driver, device, installation, battery, health, status
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 06/03/2020
+ms.date: 09/18/2020
 ---
 
 # Configuration service provider reference
@@ -1108,7 +1108,8 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" />
+<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2744,6 +2745,7 @@ The following list shows the CSPs supported in HoloLens devices:
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
+-   [Accounts CSP](accounts-csp.md)<sup>9</sup> **Note:** Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
@@ -2757,18 +2759,21 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [DMAcc CSP](dmacc-csp.md)
 -   [DMClient CSP](dmclient-csp.md)
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
+-   [Firewall-CSP](firewall-csp.md)<sup>9</sup> 
 -   [HealthAttestation CSP](healthattestation-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
 -   [Policy CSP](policy-configuration-service-provider.md)
 -   [Reboot CSP](reboot-csp.md)
--   [RemoteWipe CSP](remotewipe-csp.md)
+-   [RemoteWipe CSP](remotewipe-csp.md)<sup>9</sup> 
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [UEFI CSP](uefi-csp.md)
+-   [Wifi-CSP](wifi-csp.md)<sup>9</sup> 
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
+-   [Wirednetwork-CSP](wirednetwork-csp.md)<sup>9</sup> 
 
 
 ## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core
@@ -2807,3 +2812,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - 6 - Added in Windows 10, version 1903.
 - 7 - Added in Windows 10, version 1909.
 - 8 - Added in Windows 10, version 2004.
+- 9 - Added in Windows 10 Team 2020 Update

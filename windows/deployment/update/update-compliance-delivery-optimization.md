@@ -2,7 +2,7 @@
 title: Delivery Optimization in Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: new Delivery Optimization data displayed in Update Compliance
+description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy

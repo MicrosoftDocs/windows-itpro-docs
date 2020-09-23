@@ -19,6 +19,9 @@ ms.topic: article
 
 # Investigate devices in the Microsoft Defender ATP Devices list
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -26,6 +29,9 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Investigate the details of an alert raised on a specific device to identify other behaviors or events that might be related to the alert or the potential scope of the breach.
+
+> [!NOTE]
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 You can click on affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
 

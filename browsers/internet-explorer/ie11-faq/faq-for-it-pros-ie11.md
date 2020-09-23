@@ -16,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Internet Explorer 11 - FAQ for IT Pros
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
 
 ## Frequently Asked Questions

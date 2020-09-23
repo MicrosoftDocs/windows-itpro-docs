@@ -1,6 +1,6 @@
 ---
 title: Change history for Client management (Windows 10)
-description: View changes to documentation for client management in Windows 10.
+description: Learn about new and updated topics in the Client management documentation for Windows 10 and Windows 10 Mobile.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage

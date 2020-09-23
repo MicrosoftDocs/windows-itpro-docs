@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Troubleshoot performance issues for Microsoft Defender ATP for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
@@ -42,7 +45,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     - From the Terminal. For security purposes, this operation requires elevation.
 
     ```bash
-    $ mdatp --config realTimeProtectionEnabled false
+    mdatp --config realTimeProtectionEnabled false
     ```
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).

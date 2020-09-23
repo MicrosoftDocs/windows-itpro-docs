@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard previous versions of Windows
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows 7 SP1 Enterprise
@@ -31,9 +34,6 @@ ms.topic: article
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink).
 
 Microsoft Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
-
-> [!IMPORTANT]
-> This capability is currently in preview. You'll need to turn on the preview features to take advantage of this feature. For more information, see [Preview features](preview.md).
 
 To onboard down-level Windows client endpoints to Microsoft Defender ATP, you'll need to:
 - Configure and update System Center Endpoint Protection clients.

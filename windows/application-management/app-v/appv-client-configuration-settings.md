@@ -1,6 +1,6 @@
 ---
 title: About Client Configuration Settings (Windows 10)
-description: About Client Configuration Settings
+description: Learn about the App-V client configuration settings and how to use Windows PowerShell to modify the client configuration settings.
 author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

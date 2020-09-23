@@ -1,6 +1,6 @@
 ---
 title: 4658(S) The handle to an object was closed. (Windows 10)
-description: Describes security event 4658(S) The handle to an object was closed.
+description: Describes security event 4658(S) The handle to an object was closed. This event is generated when the handle to an object is closed.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

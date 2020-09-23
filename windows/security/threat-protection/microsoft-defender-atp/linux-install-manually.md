@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Deploy Microsoft Defender ATP for Linux manually
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -71,7 +74,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- Install `yum-utils` if it is not already installed:
+- Install `yum-utils` if it isn't installed yet:
 
     ```bash
     sudo yum install yum-utils
@@ -107,13 +110,13 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### Ubuntu and Debian systems
 
-- Install `curl` if it is not already installed:
+- Install `curl` if it isn't installed yet:
 
     ```bash
     sudo apt-get install curl
     ```
 
-- Install `libplist-utils` if it is not already installed:
+- Install `libplist-utils` if it isn't installed yet:
 
     ```bash
     sudo apt-get install libplist-utils
@@ -177,14 +180,17 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```bash
     # list all repositories
-    $ yum repolist
+    yum repolist
+    ```
+    ```Output
     ...
     packages-microsoft-com-prod               packages-microsoft-com-prod        316
     packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
     ...
-
+    ```
+    ```bash
     # install the package from the production repository
-    $ sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
+    sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
     ```
 
 - SLES and variants:
@@ -196,16 +202,18 @@ In order to preview new features and provide early feedback, it is recommended t
     If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
     ```bash
-    # list all repositories
-    $ zypper repos
+    zypper repos
+    ```
+
+    ```Output
     ...
     #  | Alias | Name | ...
     XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
     XX | packages-microsoft-com-prod | microsoft-prod | ...
     ...
-
-    # install the package from the production repository
-    $ sudo zypper install packages-microsoft-com-prod:mdatp
+    ```
+    ```bash
+    sudo zypper install packages-microsoft-com-prod:mdatp
     ```
 
 - Ubuntu and Debian system:
@@ -217,13 +225,14 @@ In order to preview new features and provide early feedback, it is recommended t
     If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
     ```bash
-    # list all repositories
-    $ cat /etc/apt/sources.list.d/*
+    cat /etc/apt/sources.list.d/*
+    ```
+    ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
     deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
-
-    # install the package from the production repository
-    $ sudo apt -t bionic install mdatp
+    ```
+    ```bash
+    sudo apt -t bionic install mdatp
     ```
 
 ## Download the onboarding package
@@ -243,17 +252,19 @@ Download the onboarding package from Microsoft Defender Security Center:
     ls -l
     ```
 
-    `total 8`
-    `-rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip`
+    ```Output
+    total 8
+    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+    ```
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
+    ```
+    ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    `Archive:  WindowsDefenderATPOnboardingPackage.zip`
-    `inflating: WindowsDefenderATPOnboarding.py`
 
 ## Client configuration
 

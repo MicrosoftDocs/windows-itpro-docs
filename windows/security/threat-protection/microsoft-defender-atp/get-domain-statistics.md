@@ -1,6 +1,6 @@
 ---
 title: Get domain statistics API
-description: Retrieves the prevalence for the given domain.
+description: Learn how to use the Get domain statistics API to retrieve the statistics on the given domain in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, domain, domain related devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Get domain statistics API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

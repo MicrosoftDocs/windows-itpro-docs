@@ -15,9 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+ms.reviewer: ramarom, evaldm, isco, mabraitm
 ---
 
 # Configure automated investigation and remediation capabilities in Microsoft Defender Advanced Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to**
 

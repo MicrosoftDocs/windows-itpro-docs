@@ -1,6 +1,6 @@
 ---
 title: Get machine log on users API
-description: Retrieve a collection of logged on users on a specific device using Microsoft Defender ATP APIs.
+description: Learn how to use the Get machine log on users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Get machine log on users API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -28,7 +31,7 @@ Retrieves a collection of logged on users on a specific device.
 
 
 ## Limitations
-1. You can query on devices last seen in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -46,7 +49,7 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 >- Response will include users only if the device is visible to the user, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}/logonusers
 ```
 
@@ -72,7 +75,7 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
@@ -81,7 +84,7 @@ GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

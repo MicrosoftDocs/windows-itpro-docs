@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeliveryOptimization
-description: Policy CSP - DeliveryOptimization
+description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -2027,14 +2027,14 @@ This policy allows an IT Admin to define the following:
 
 Footnotes:
 
--   1 - Available in Windows 10, version 1607.
--   2 - Available in Windows 10, version 1703.
--   3 - Available in Windows 10, version 1709.
--   4 - Available in Windows 10, version 1803.
--   5 - Available in Windows 10, version 1809.
--   6 - Available in Windows 10, version 1903.
--   7 - Available in Windows 10, version 1909.
--   8 - Available in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

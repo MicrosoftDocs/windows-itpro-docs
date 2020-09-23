@@ -13,7 +13,6 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 audience: itpro
-author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

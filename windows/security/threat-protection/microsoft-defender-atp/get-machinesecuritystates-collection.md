@@ -1,6 +1,6 @@
 ---
 title: Get machines security states collection API
-description: Retrieve a collection of device security states using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP.
+description: Retrieve a collection of device security states using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Get Machines security states collection API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 

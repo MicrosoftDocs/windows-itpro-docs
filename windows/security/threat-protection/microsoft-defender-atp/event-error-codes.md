@@ -21,6 +21,9 @@ ms.date: 05/21/2018
 
 # Review events and errors using Event Viewer
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Event Viewer
@@ -108,15 +111,15 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 <tr>
 <td>8</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to clean its configuration. Failure code: <code>variable</code>.</td>
-<td><strong>During onboarding:</strong> The service failed to clean its configuration during the onboarding. The onboarding process continues. <br><br> <strong>During offboarding:</strong> The service failed to clean its configuration during the offboarding. The offboarding process finished but the service keeps running.
+<td><b>During onboarding:</b> The service failed to clean its configuration during the onboarding. The onboarding process continues. <br><br> <b>During offboarding:</b> The service failed to clean its configuration during the offboarding. The offboarding process finished but the service keeps running.
  </td>
-<td><strong>Onboarding:</strong> No action required. <br><br> <strong>Offboarding:</strong> Reboot the system.<br>
+<td><b>Onboarding:</b> No action required. <br><br> <b>Offboarding:</b> Reboot the system.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: <code>variable</code>.</td>
-<td><strong>During onboarding:</strong> The device did not onboard correctly and will not be reporting to the portal. <br><br><strong>During offboarding:</strong> Failed to change the service start type. The offboarding process continues. </td>
+<td><b>During onboarding:</b> The device did not onboard correctly and will not be reporting to the portal. <br><br><b>During offboarding:</b> Failed to change the service start type. The offboarding process continues. </td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 devices</a>.</td>
 </tr>

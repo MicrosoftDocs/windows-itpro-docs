@@ -12,11 +12,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance
+- m365solution-endpointprotect
+- m365solution-overview  
 ms.topic: article
 ---
 
 # Deployment phases
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -38,13 +44,15 @@ There are several methods you can use to onboard to the service. For information
 ## In Scope
 
 The following is in scope for this deployment guide:
+
 -   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service
+
 -   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
     capabilities
 
-    -   Next Generation Protection
+    -   Next-generation protection
 
-    -   Attack Surface Reduction
+    -   Attack surface reduction
 
 -   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
     capabilities including automatic investigation and remediation

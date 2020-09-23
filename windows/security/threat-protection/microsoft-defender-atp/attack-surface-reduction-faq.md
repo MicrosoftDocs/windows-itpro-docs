@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: martyav
@@ -18,6 +17,9 @@ ms.custom: asr
 ---
 
 # Attack surface reduction frequently asked questions (FAQ)
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -51,7 +53,7 @@ ASR currently supports all of the rules below:
 * [Block all Office applications from creating child processes](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
 * [Block Office applications from creating executable content](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
 * [Block Office applications from injecting code into other processes](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
-* [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md##block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+* [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 * [Block execution of potentially obfuscated scripts](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
 * [Block Win32 API calls from Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
 * [Use advanced protection against ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)

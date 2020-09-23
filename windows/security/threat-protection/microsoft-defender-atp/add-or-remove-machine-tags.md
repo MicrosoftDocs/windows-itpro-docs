@@ -1,6 +1,6 @@
 ---
 title: Add or Remove Machine Tags API
-description: Use this API to Add or Remove machine tags.
+description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, tags, machine tags
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Add or Remove Machine Tags API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -28,7 +31,7 @@ Adds or remove tag to a specific [Machine](machine.md).
 
 ## Limitations
 
-1. You can post on machines last seen in the past 30 days.
+1. You can post on machines last seen according to your configured retention period.
 
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
@@ -50,7 +53,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 ## HTTP request
 
-```
+```http
 POST https://api.securitycenter.windows.com/api/machines/{id}/tags
 ```
 
@@ -83,12 +86,13 @@ Here is an example of a request that adds machine tag.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
 Content-type: application/json
 {
   "Value" : "test Tag 2",
   "Action": "Add"
 }
+```
 
 - To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.

@@ -2189,7 +2189,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 IIS\_IUSRS is a built-in group that is used by Internet Information Services beginning with IIS 7.0. A built-in account and group are guaranteed by the operating system to always have a unique SID. IIS 7.0 replaces the IUSR\_MachineName account and the IIS\_WPG group with the IIS\_IUSRS group to ensure that the actual names that are used by the new account and group will never be localized. For example, regardless of the language of the Windows operating system that you install, the IIS account name will always be IUSR, and the group name will be IIS\_IUSRS.
 
-For more information, see [Understanding Built-In User and Group Accounts in IIS 7](http://www.iis.net/learn/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
+For more information, see [Understanding Built-In User and Group Accounts in IIS 7](https://docs.microsoft.com/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 This security group has not changed since Windows Server 2008.
 

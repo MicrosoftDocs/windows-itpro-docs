@@ -1,6 +1,6 @@
 ---
 title: Open the Group Policy Management Console to IP Security Policies (Windows 10)
-description: Open the Group Policy Management Console to IP Security Policies
+description: Learn how to open the Group Policy Management Console to IP Security Policies to configure GPOs for earlier versions of the Windows operating system.
 ms.assetid: 235f73e4-37b7-40f4-a35e-3e7238bbef43
 ms.reviewer: 
 ms.author: dansimp

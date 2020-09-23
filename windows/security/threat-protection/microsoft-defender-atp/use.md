@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Overview of Microsoft Defender Security Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -39,5 +42,5 @@ Topic | Description
 :---|:---
 [Portal overview](portal-overview.md) | Understand the portal layout and area descriptions.
 [View the Security operations dashboard](security-operations-dashboard.md) | The Microsoft Defender ATP  **Security operations dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the devices on your network, investigate devices, files, and URLs, and see snapshots of threats seen on devices.
-[View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) | The **Threat & Vulnerability Management dashboard** lets you view exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices.
+[View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) | The **Threat & Vulnerability Management dashboard** lets you view exposure and Microsoft Secure Score for Devices side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices.
 [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md) | The **Threat analytics** dashboard helps you continually assess and control risk exposure to threats. Use the charts to quickly identify devices for the presence or absence of mitigations.

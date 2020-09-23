@@ -68,7 +68,7 @@ Drivers are automatically enabled because they are beneficial to device systems.
 #### I want to receive pre-release versions of the next feature update
 
 1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
-2. Use Group Policy Management Console to go to: C**omputer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Manage preview builds** and set the policy to **Enable preview builds** for any of test devices you want to install pre-release builds.
+2. Use Group Policy Management Console to go to: **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Manage preview builds** and set the policy to **Enable preview builds** for any of test devices you want to install pre-release builds.
 3. Use Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and Feature Updates are received**. In the **Options** pane, use the pulldown menu to select one of the preview builds. We recomment **Windows Insider Program Slow** for commercial customers using pre-release builds for validation.
 4. Select **OK**. 
 
@@ -117,6 +117,8 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 #### I want to stay on a specific version
 
 If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the **Select the target Feature Update version** setting instead of  using the **Specify when Preview Builds and Feature Updates are received** setting for feature update deferrals. When you use this policy, specify the version that you want your device(s) to use. If you don't update this before the device reaches end of service, the device will automatically be updated once it is 60 days past end of service for its edition.
+
+When you set the target version policy, if you specify a feature update version that is older than your current version or set a value that isn't valid, the device will not receive any feature updates until the policy is updated. When you specify target version policy, feature update deferrals will not be in effect.
 
 ### Manage how users experience updates
 

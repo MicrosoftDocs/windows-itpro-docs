@@ -1,6 +1,6 @@
 ---
 title: Update Product Status (Windows 10)
-description: Update Product Status
+description: Learn how to use the Update license status function to add the products that are installed on the computers.
 ms.assetid: 39d4abd4-801a-4e8f-9b8c-425a24a96764
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

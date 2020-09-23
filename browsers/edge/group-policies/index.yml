@@ -1,231 +1,80 @@
-### YamlMime:YamlDocument
+### YamlMime:Landing
 
-documentType: LandingData
-
-title: Microsoft Edge Legacy group policies 
+title: Microsoft Edge Legacy group policies  # < 60 chars
+summary: Microsoft Edge Legacy works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. # < 160 chars
 
 metadata:
-
-  document_id: 
-
-  title: Microsoft Edge Legacy group policies  
-
-  description: Learn how to configure group policies in Microsoft Edge Legacy on Windows 10.
-
-  text: Some of the features in Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. (To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).)
-
+  title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
   keywords: Microsoft Edge Legacy, Windows 10, Windows 10 Mobile
-
   ms.localizationpriority: medium
-
+  ms.prod: edge
   author: shortpatti
-
   ms.author: pashort
-
-  ms.date: 10/02/2018
-
-  ms.topic: article
-
+  ms.topic: landing-page
   ms.devlang: na
-
-sections:
-
-- title: 
-
-- items:
-
-  - type: markdown
-
-    text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Microsoft Edge Legacy works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsE
-
-    columns: 3
-
-    items:
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/address-bar-settings-gp
-
-      html: <p>Learn how you can configure Microsoft Edge to show search suggestions in the address bar.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_http.svg
-      
-      title: Address bar 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/adobe-settings-gp
-
-      html: <p>Learn how you can configure Microsoft Edge to load Adobe Flash content automatically.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: Adobe Flash
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/books-library-management-gp
-
-      html: <p>Learn how you can set up and use the books library, such as using a shared books folder for students and teachers.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_library.svg
-      
-      title: Books Library 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/browser-settings-management-gp
-
-      html: <p>Learn how you can customize the browser settings, such as printing and saving browsing history, plus more.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_management.svg
-      
-      title: Browser experience
-
-    - href:  https://docs.microsoft.com/microsoft-edge/deploy/group-policies/developer-settings-gp
-
-      html: <p>Learn how to configure Microsoft Edge for development and testing.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      
-      title: Developer tools  
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/extensions-management-gp
-
-      html: <p>Learn how you can configure Microsoft Edge to either prevent or allow users to install and run unverified extensions.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_extensions.svg
-      
-      title: Extensions 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/favorites-management-gp
-
-      html: <p>Learn how you can provision a standard favorites list as well as keep the favorites lists in sync between IE11 and Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_link.svg
-
-      title: Favorites 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/home-button-gp
-
-      html: <p>Learn how you can customize the home button or hide it.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: Home button 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
-
-      html: <p>Learn how you use Microsoft Edge and Internet Explorer together for a full browsing experience.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_management.svg
-      
-      title: Interoperability and enterprise guidance      
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
-
-      html: <p>Learn how Microsoft Edge kiosk mode works with assigned access to let IT administrators create a tailored browsing experience designed for kiosk devices.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_categorize.svg
-      
-      title: Kiosk mode deployment in Microsoft Edge
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
-
-      html: <p>Learn how to configure the New Tab page in Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: New Tab page 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/prelaunch-preload-gp
-
-      html: <p>Learn how pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: Prelaunch Microsoft Edge and preload tabs 
-  
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/search-engine-customization-gp
-
-      html: <p>Learn how you can set the default search engine and configure additional ones.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_search.svg
-      
-      title: Search engine customization  
-  
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/security-privacy-management-gp
-
-      html: <p>Learn how you can keep your environment and users safe from attacks.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_security-management.svg
-      
-      title: Security and privacy 
-  
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/start-pages-gp
-
-      html: <p>Learn how to configure the Start pages in Microsoft Edge.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      
-      title: Start page 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/sync-browser-settings-gp
-
-      html: <p>Learn how to you can prevent the "browser" group from syncing and prevent users from turning on the Sync your Settings toggle.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_sync.svg
-      
-      title: Sync browser 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/group-policies/telemetry-management-gp
-
-      html: <p>Learn how you can configure Microsoft Edge to collect certain data.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_data-collection.svg
-      
-      title: Telemetry and data collection 
-
-    - href: https://docs.microsoft.com/microsoft-edge/deploy/available-policies
-
-      html: <p>View all available group policies for Microsoft Edge on Windows 10.</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_policy.svg
-      
-      title: All group policies 
+  ms.date: 08/28/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: What's new
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Documentation for Microsoft Edge version 77 or later
+            url: https://docs.microsoft.com/DeployEdge/
+          - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
+            url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
+
+  # Card (optional)
+  - title: Group policies configure guidance part 1
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: All group policies
+            url: /microsoft-edge/deploy/available-policies
+          - text: Address bar
+            url: /microsoft-edge/deploy/group-policies/address-bar-settings-gp
+          - text: Adobe Flash
+            url: /microsoft-edge/deploy/group-policies/adobe-settings-gp
+          - text: Books Library
+            url: /microsoft-edge/deploy/group-policies/books-library-management-gp
+          - text: Browser experience
+            url: /microsoft-edge/deploy/group-policies/browser-settings-management-gp
+          - text: Developer tools
+            url: /microsoft-edge/deploy/group-policies/developer-settings-gp
+          - text: Extensions
+            url: /microsoft-edge/deploy/group-policies/extensions-management-gp
+          - text: Favorites
+            url: /microsoft-edge/deploy/group-policies/favorites-management-gp
+          - text: Home button
+            url: /microsoft-edge/deploy/group-policies/home-button-gp
+
+  # Card (optional)
+  - title: Group policies configure guidance part 2
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Interoperability and enterprise mode
+            url: /microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp
+          - text: New Tab page
+            url: /microsoft-edge/deploy/group-policies/new-tab-page-settings-gp
+          - text: Kiosk mode deployment in Microsoft Edge
+            url: /microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy
+          - text: Prelaunch Microsoft Edge and preload tabs
+            url: /microsoft-edge/deploy/group-policies/prelaunch-preload-gp
+          - text: Search engine customization
+            url: /microsoft-edge/deploy/group-policies/search-engine-customization-gp
+          - text: Security and privacy
+            url: /microsoft-edge/deploy/group-policies/security-privacy-management-gp
+          - text: Start page
+            url: /microsoft-edge/deploy/group-policies/start-pages-gp
+          - text: Sync browser
+            url: /microsoft-edge/deploy/group-policies/sync-browser-settings-gp
+          - text: Telemetry and data collection
+            url: /microsoft-edge/deploy/group-policies/telemetry-management-gp
+          

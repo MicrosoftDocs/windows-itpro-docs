@@ -1,6 +1,6 @@
 ---
 title: Prepare a device for kiosk configuration (Windows 10)
-description: Some tips for device settings on kiosks.
+description: Learn how to prepare a device for kiosk configuration. Also, learn about the recommended kiosk configuration changes.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp
@@ -158,7 +158,7 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>Key sequences blocked by assigned access</p></td>
 <td><p>When in assigned access, some key combinations are blocked for assigned access users.</p>
-<p>Alt+F4, Alt+Shift+TaB, Alt+Tab are not blocked by Assigned Access, it is recommended you use <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter" data-raw-source="[Keyboard Filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter)">Keyboard Filter</a> to block these key combinations.</p>
+<p>Alt+F4, Alt+Shift+Tab, Alt+Tab are not blocked by Assigned Access, it is recommended you use <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter" data-raw-source="[Keyboard Filter](https://docs.microsoft.com/windows-hardware/customize/enterprise/keyboardfilter)">Keyboard Filter</a> to block these key combinations.</p>
 <p>Ctrl+Alt+Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/wekf-settings" data-raw-source="[WEKF_Settings](https://docs.microsoft.com/windows-hardware/customize/enterprise/wekf-settings)">WEKF_Settings</a>.</p>
 <table>
 <colgroup>

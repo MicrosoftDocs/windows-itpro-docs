@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Score resource type
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -25,14 +28,15 @@ ms.topic: article
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Methods
+
 Method |Return Type |Description
 :---|:---|:---
 [Get exposure score](get-exposure-score.md) | [Score](score.md) | Get the organizational exposure score.
 [Get device secure score](get-device-secure-score.md) | [Score](score.md) | Get the organizational device secure score.
 [List exposure score by device group](get-machine-group-exposure-score.md)| [Score](score.md) | List scores by device group.
 
-
 ## Properties
+
 Property |	Type	|	Description
 :---|:---|:---
 Score | Double | The current score.

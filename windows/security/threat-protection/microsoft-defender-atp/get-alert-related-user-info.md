@@ -1,6 +1,6 @@
 ---
 title: Get alert related user information 
-description: Retrieves the user associated to a specific alert.
+description: Learn how to use the Get alert related user information API to retrieve the user related to a specific alert in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Get alert related user information API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -28,7 +31,7 @@ Retrieves the User related to a specific alert.
 
 
 ## Limitations
-1. You can query on alerts last updated in the past 30 days.
+1. You can query on alerts last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 

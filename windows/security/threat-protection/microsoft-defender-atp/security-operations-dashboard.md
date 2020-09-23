@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Security Center Security operations dashboard
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -100,11 +103,11 @@ You can view the overall number of automated investigations from the last 30 day
 
 
 ## Automated investigations statistics
-This tile shows statistics related to automated investigations in the last 30 days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigation to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
+This tile shows statistics related to automated investigations in the last seven days. It shows the number of investigations completed, the number of successfully remediated investigations, the average pending time it takes for an investigation to be initiated, the average time it takes to remediate an alert, the number of alerts investigated, and the number of hours of automation saved from a typical manual investigation. 
 
 ![Image of automated investigations statistics](images/atp-automated-investigations-statistics.png)
 
-You can click on **Automated investigations**, **Remidated investigations**, and **Alerts investigated** to navigate to the **Investigations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
+You can click on **Automated investigations**, **Remediated investigations**, and **Alerts investigated** to navigate to the **Investigations** page, filtered by the appropriate category. This lets you see a detailed breakdown of investigations in context.
 
 ## Users at risk
 The tile shows you a list of user accounts with the most active alerts and the number of alerts seen on high, medium, or low alerts. 
