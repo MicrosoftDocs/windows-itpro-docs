@@ -38,33 +38,12 @@ You can configure this security setting by opening the appropriate policy under 
 
 | Logon events | Description |
 | - | - |
-| 528          | A user successfully logged on to a computer. For information about the type of logon, see the Logon Types table below.                                                                                          |
-| 529          | Logon failure. A logon attempt was made with an unknown user name or a known user name with a bad password.                                                                                                     |
-| 530          | Logon failure. A logon attempt was made user account tried to log on outside of the allowed time.                                                                                                               |
-| 531          | Logon failure. A logon attempt was made using a disabled account.                                                                                                                                               |
-| 532          | Logon failure. A logon attempt was made using an expired account.                                                                                                                                               |
-| 533          | Logon failure. A logon attempt was made by a user who is not allowed to log on at this computer.                                                                                                                |
-| 534          | Logon failure. The user attempted to log on with a type that is not allowed.                                                                                                                                    |
-| 535          | Logon failure. The password for the specified account has expired.                                                                                                                                              |
-| 536          | Logon failure. The Net Logon service is not active.                                                                                                                                                             |
-| 537          | Logon failure. The logon attempt failed for other reasons.                                                                                                                                                      |
-| 538          | The logoff process was completed for a user.                                                                                                                                                                    |
-| 539          | Logon failure. The account was locked out at the time the logon attempt was made.                                                                                                                               |
-| 540          | A user successfully logged on to a network.                                                                                                                                                                     |
-| 541          | Main mode Internet Key Exchange (IKE) authentication was completed between the local computer and the listed peer identity (establishing a security association), or quick mode has established a data channel. |
-| 542          | A data channel was terminated.                                                                                                                                                                                  |
-| 543          | Main mode was terminated.                                                                                                                                                                                       |
-| 544          | Main mode authentication failed because the peer did not provide a valid certificate or the signature was not validated.                                                                                        |
-| 545          | Main mode authentication failed because of a Kerberos failure or a password that is not valid.                                                                                                                  |
-| 546          | IKE security association establishment failed because the peer sent a proposal that is not valid. A packet was received that contained data that is not valid.                                                  |
-| 547          | A failure occurred during an IKE handshake.                                                                                                                                                                     |
-| 548          | Logon failure. The security ID (SID) from a trusted domain does not match the account domain SID of the client.                                                                                                 |
-| 549          | Logon failure. All SIDs corresponding to untrusted namespaces were filtered out during an authentication across forests.                                                                                        |
-| 550          | Notification message that could indicate a possible denial-of-service attack.                                                                                                                                   |
-| 551          | A user initiated the logoff process.                                                                                                                                                                            |
-| 552          | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
-| 682          | A user has reconnected to a disconnected terminal server session.                                                                                                                                               |
-| 683          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
+| 4624          | A user successfully logged on to a computer. For information about the type of logon, see the Logon Types table below.                                                                                          |
+| 4625          | Logon failure. A logon attempt was made with an unknown user name or a known user name with a bad password.                                                                                                     |
+| 4634          | The logoff process was completed for a user.                                                                                                                                                                    |                                                                                                                               
+| 4647          | A user initiated the logoff process.                                                                                                                                                                            |
+| 4648         | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
+| 4779          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
  
 
 When event 528 is logged, a logon type is also listed in the event log. The following table describes each logon type.
