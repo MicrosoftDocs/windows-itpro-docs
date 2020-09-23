@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Defender Advanced Threat Protection for Mac
-description: List of major changes for Microsoft Defender ATP for Mac.
+description: Learn about the major changes for previous versions of Microsoft Defender Advanced Threat Protection for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,6 +18,9 @@ ms.topic: conceptual
 ---
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 > [!IMPORTANT]
 > In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
@@ -37,6 +40,31 @@ ms.topic: conceptual
 > 
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+
+## 101.07.23
+
+- Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID
+
+  > [!NOTE]
+  > `mdatp --health` will be replaced with `mdatp health` in a future product update.
+
+- Fixed a bug where automatic sample submission was not marked as managed in the user interface
+- Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Bug fixes
+
+## 101.06.63
+
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.
+
+## 101.05.17
+
+> [!IMPORTANT]
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> 
+> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
+
+- Addressed a kernel panic that occurred sometimes when accessing SMB file shares
+- Performance improvements & bug fixes
 
 ## 101.05.16
 
@@ -132,6 +160,6 @@ ms.topic: conceptual
   > The mechanism for granting this consent depends on how you deployed Microsoft Defender ATP:
   >
   > - For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.
-  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md#privacy-preferences-policy-control) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes

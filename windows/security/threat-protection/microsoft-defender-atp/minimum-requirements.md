@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Minimum requirements for Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -103,8 +106,9 @@ The hardware requirements for Microsoft Defender ATP on devices are the same for
 
 
 ### Other supported operating systems
-- macOS
+- Android
 - Linux (currently, Microsoft Defender ATP is only available in the Public Preview Edition for Linux)
+- macOS
 
 > [!NOTE]
 > You'll need to know the exact Linux distributions and versions of Android and macOS that are compatible with Microsoft Defender ATP for the integration to work.

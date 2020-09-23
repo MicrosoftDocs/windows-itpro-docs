@@ -20,6 +20,9 @@ ms.date: 04/16/2020
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Virtual desktop infrastructure (VDI) devices
 
@@ -29,6 +32,9 @@ ms.date: 04/16/2020
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 Microsoft Defender ATP supports non-persistent VDI session onboarding. 
 
@@ -63,25 +69,21 @@ The following steps will guide you through onboarding VDI devices and will highl
 
     1. Click **Download package** and save the .zip file.
 
-2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-    >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
+    1. If you are not implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
 
-3. The following step is only applicable if you're implementing a single entry for each device: <br>
-   **For single entry for each device**:
+    1. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
     
-   1. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` and `WindowsDefenderATPOnboardingScript.cmd` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
+    > [!NOTE]
+    > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from File Explorer.
 
-   > [!NOTE]
-   > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
-
-4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
+3. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
    > [!NOTE]
    > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
-5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
+4. Depending on the method you'd like to implement, follow the appropriate steps: <br>
    **For single entry for each device**:<br>
    
    Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`.
@@ -90,7 +92,7 @@ The following steps will guide you through onboarding VDI devices and will highl
    
    Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
-6. Test your solution:
+5. Test your solution:
 
    1. Create a pool with one device.
       
@@ -103,9 +105,9 @@ The following steps will guide you through onboarding VDI devices and will highl
    1. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
       **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
-7. Click **Devices list** on the Navigation pane.
+6. Click **Devices list** on the Navigation pane.
 
-8. Use the search function by entering the device name and select **Device** as search type.
+7. Use the search function by entering the device name and select **Device** as search type.
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>

@@ -1,6 +1,6 @@
 ---
 title: 6407(-) 1%. (Windows 10)
-description: Describes security event 6407(-) 1%.
+description: Describes security event 6407(-) 1%. This is a BranchCache event, which is outside the scope of this document.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

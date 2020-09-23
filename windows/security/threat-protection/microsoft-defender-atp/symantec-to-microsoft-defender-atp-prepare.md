@@ -1,6 +1,6 @@
 ---
-title: Phase 1 - Prepare for your migration to Microsoft Defender ATP
-description: Phase 1 of "Make the switch from Symantec to Microsoft Defender ATP". Prepare for your migration.
+title: Symantec to Microsoft Defender ATP - Phase 1, Preparing
+description: This is Phase 1, Prepare, of migrating from Symantec to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,9 +17,15 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-symantecmigrate
 ms.topic: article
+ms.date: 09/04/2020
+ms.custom: migrationguides
+ms.reviewer: depicker, yongrhee, chriggs
 ---
 
 # Migrate from Symantec - Phase 1: Prepare for your migration
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 |![Phase 1: Prepare](images/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|

@@ -3,7 +3,6 @@ title: Next-generation protection in Windows 10, Windows Server 2016, and Window
 description: Learn how to manage, configure, and use Microsoft Defender AV, the built-in antimalware and antivirus product available in Windows 10 and Windows Server 2016
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,9 +18,12 @@ ms.custom: nextgen
 
 # Next-generation protection in Windows 10, Windows Server 2016, and Windows Server 2019
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 

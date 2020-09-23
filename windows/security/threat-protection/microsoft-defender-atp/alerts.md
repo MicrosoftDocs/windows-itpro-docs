@@ -1,6 +1,6 @@
 ---
 title: Get alerts API
-description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
+description: Learn about the methods and properties of the Alert resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Alert resource type
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

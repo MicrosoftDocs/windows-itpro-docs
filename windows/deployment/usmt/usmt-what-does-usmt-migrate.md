@@ -1,6 +1,6 @@
 ---
 title: What does USMT migrate (Windows 10)
-description: What does USMT migrate
+description: Learn how User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language.
 ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 09/12/2017
 ms.topic: article
 ---

@@ -1,6 +1,6 @@
 ---
 title: Add or Remove Machine Tags API
-description: Use this API to Add or Remove machine tags.
+description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, tags, machine tags
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Add or Remove Machine Tags API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

@@ -3,7 +3,6 @@ title: Run and customize on-demand scans in Microsoft Defender AV
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,6 +18,9 @@ manager: dansimp
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -29,6 +31,9 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 ## Quick scan versus full scan
 
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+
+> [!IMPORTANT] 
+> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share. 
 
 Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 

@@ -1,6 +1,6 @@
 ---
 title: Planning Certificate-based Authentication (Windows 10)
-description: Planning Certificate-based Authentication
+description: Learn how a device unable to join an Active Directory domain can still participate in an isolated domain by using certificate-based authentication.
 ms.assetid: a55344e6-d0df-4ad5-a6f5-67ccb6397dec
 ms.reviewer: 
 ms.author: dansimp

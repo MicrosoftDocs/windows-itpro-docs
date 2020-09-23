@@ -4,13 +4,11 @@ ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
-ms.topic: article
 ---
 # Windows as a service - More news
 

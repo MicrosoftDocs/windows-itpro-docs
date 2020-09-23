@@ -1,7 +1,7 @@
 ---
 title: OData queries with Microsoft Defender ATP
 ms.reviewer: 
-description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP
+description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP.
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # OData queries with Microsoft Defender ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 

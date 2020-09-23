@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - FileExplorer
-description: Policy CSP - FileExplorer
+description: Use the Policy CSP - FileExplorer setting so you can allow certain legacy plug-in applications to function without terminating Explorer.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

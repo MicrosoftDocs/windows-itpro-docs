@@ -20,6 +20,9 @@ ms.collection:
 
 # Behavioral blocking and containment
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -90,7 +93,7 @@ While the attack was detected and stopped, alerts, such as an "initial access al
 
 This example shows how behavior-based device learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
-### Example 2: NTML relay - Juicy Potato malware variant
+### Example 2: NTLM relay - Juicy Potato malware variant
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Microsoft Defender ATP detected a privilege escalation activity on a device in an organization. An alert called “Possible privilege escalation using NTLM relay” was triggered.
 

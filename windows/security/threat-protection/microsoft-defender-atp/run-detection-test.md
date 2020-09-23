@@ -19,6 +19,9 @@ ms.topic: article
 
 # Run a detection test on a newly onboarded Microsoft Defender ATP device 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Supported Windows 10 versions
 - Windows Server 2012 R2
@@ -50,3 +53,4 @@ The Command Prompt window will close automatically. If successful, the detection
 ## Related topics
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

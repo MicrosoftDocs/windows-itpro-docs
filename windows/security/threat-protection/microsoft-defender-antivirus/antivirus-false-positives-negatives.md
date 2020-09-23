@@ -3,7 +3,6 @@ title: What to do with false positives/negatives in Microsoft Defender Antivirus
 description: Did Microsoft Defender Antivirus miss or wrongly detect something? Find out what you can do.
 keywords: Microsoft Defender Antivirus, false positives, false negatives, exclusions
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -20,6 +19,9 @@ ms.topic: article
 ---
 
 # What to do with false positives/negatives in Microsoft Defender Antivirus
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 

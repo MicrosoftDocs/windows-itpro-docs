@@ -40,7 +40,7 @@ Transparency is an important part of the data collection process in Windows 10. 
 
 ### 1.1 Device set up experience and support for layered transparency
 
-When setting up a device, a user can configure their privacy settings. Those privacy settings are key in determining the amount of personal data collected. For each privacy setting, the user is provided information about the setting along with the links to supporting information. This information explains what data is collected, how the data is used, and how to manage the setting after the device setup is complete. When connected to the network during this portion of setup, the user can also review the privacy statement. A brief overview of the set up experience for privacy settings is described in [this blog](https://blogs.windows.com/windowsexperience/2018/03/06/windows-insiders-get-first-look-new-privacy-screen-settings-layout-coming-windows-10/#uCC2bKYP8M5BqrDP.97).
+When setting up a device, a user can configure their privacy settings. Those privacy settings are key in determining the amount of personal data collected. For each privacy setting, the user is provided information about the setting along with the links to supporting information. This information explains what data is collected, how the data is used, and how to manage the setting after the device setup is complete. When connected to the network during this portion of setup, the user can also review the privacy statement. A brief overview of the set up experience for privacy settings is described in [Windows Insiders get first look at new privacy screen settings layout coming to Windows 10](https://blogs.windows.com/windowsexperience/2018/03/06/windows-insiders-get-first-look-new-privacy-screen-settings-layout-coming-windows-10/#uCC2bKYP8M5BqrDP.97), a blog entry on Windows Blogs.
 
 The following table provides an overview of the Windows 10 privacy settings presented during the device setup experience that involve processing personal data and where to find additional information.
 
@@ -168,7 +168,7 @@ If a user signs in to a Windows experience or app on their device with their Mic
 
 ## 4. Cross-border data transfers
 
-Microsoft complies with the EU-U.S. Privacy Shield Framework and Swiss-U.S. Privacy Shield Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union, the United Kingdom, and Switzerland to the United States.
+Microsoft complies with applicable law regarding the collection, use, and retention of personal information, including its transfer across borders
 
 Microsoft’s [Privacy Statement](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) provides details on how we store and process personal data.
 
