@@ -18,7 +18,7 @@ ms.topic: article
 
 **Applies to**: Windows 10
 
-This topic explains how to acquire and apply Dynamic Update packages to existing Windows 10 images <em>prior to deployment</em> and includes Windows PowerShell scripts you can use to automate this process.
+This topic explains how to acquire and apply Dynamic Update packages to existing Windows 10 images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
 Volume-licensed media is available for each release of Windows 10 in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows 10 devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
 
@@ -42,7 +42,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 
 ![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
-The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in *bold* the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
 
 |To find this Dynamic Update packages, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
@@ -96,7 +96,6 @@ Optional Components, along with the .Net feature, can be installed offline, howe
 
 These examples are for illustration only, and therefore lack error handling. The script assumes that the following packages is stored locally in this folder structure:
 
-
 |Folder  |Description  |
 |---------|---------|
 |C:\mediaRefresh     |  Parent folder that contains the PowerShell script       |
@@ -107,7 +106,7 @@ These examples are for illustration only, and therefore lack error handling. The
 
 The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there is a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they are not read-only.
 
-```
+```powershell
 function Get-TS { return "{0:HH:mm:ss}" -f (Get-Date) }
 
 Write-Host "$(Get-TS): Starting media refresh"
@@ -160,11 +159,12 @@ New-Item -ItemType directory -Path $MAIN_OS_MOUNT -ErrorAction stop | Out-Null
 New-Item -ItemType directory -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 New-Item -ItemType directory -Path $WINPE_MOUNT -ErrorAction stop | Out-Null
 
-# Keep the original media, make a copy of it for the new, updateed media.
+# Keep the original media, make a copy of it for the new, updated media.
 Write-Host "$(Get-TS): Copying original media to new media path"
 Copy-Item -Path $MEDIA_OLD_PATH"\*" -Destination $MEDIA_NEW_PATH -Force -Recurse -ErrorAction stop | Out-Null
 Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContainer -and $_.IsReadOnly } | ForEach-Object { $_.IsReadOnly = $false }
 ```
+
 ### Update WinRE
 
 The script assumes that only a single edition is being updated, indicated by Index = 1 (Windows 10 Education Edition). Then the script mounts the image, saves Winre.wim to the working folder, and mounts it. It then applies servicing stack Dynamic Update, since its s are used for updating other s. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package.
@@ -174,7 +174,7 @@ It finishes by cleaning and exporting the image to reduce the image size.
 > [!NOTE]
 > Skip adding the latest cumulative update to Winre.wim because it contains unnecessary s in the recovery environment. The s that are updated and applicable are contained in the safe operating system Dynamic Update package. This also helps to keep the image small.
 
-```
+```powershell
 # Mount the main operating system, used throughout the script
 Write-Host "$(Get-TS): Mounting main OS"
 Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
@@ -237,7 +237,7 @@ if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
 
 # Add Safe OS
 Write-Host "$(Get-TS): Adding package $SAFE_OS_DU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null   
+Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Host "$(Get-TS): Performing image cleanup on WinRE"
@@ -251,11 +251,12 @@ Write-Host "$(Get-TS): Exporting image to $WORKING_PATH\winre2.wim"
 Export-WindowsImage -SourceImagePath $WORKING_PATH"\winre.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\winre2.wim" -ErrorAction stop | Out-Null
 Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
 ```
+
 ### Update WinPE
 
 This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
 
-```
+```powershell
 #
 # update Windows Preinstallation Environment (WinPE)
 #
@@ -320,7 +321,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     if ( (Test-Path -Path $WINPE_MOUNT"\sources\lang.ini") ) {
         Write-Host "$(Get-TS): Updating lang.ini"
         DISM /image:$WINPE_MOUNT /Gen-LangINI /distribution:$WINPE_MOUNT | Out-Null
-    }    
+    }
 
     # Add latest cumulative update
     Write-Host "$(Get-TS): Adding package $LCU_PATH"
@@ -341,6 +342,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
 Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\boot.wim" -Force -ErrorAction stop | Out-Null
 ```
+
 ### Update the main operating system
 
 For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
@@ -349,7 +351,7 @@ Now is the time to enable other Optional Components or add other Features on Dem
 
 You can install Optional Components, along with the .Net feature, offline, but that will require the device to be restarted. This is why the script installs .Net and Optional Components after cleanup and before export.
 
-```
+```powershell
 #
 # update Main OS
 #
@@ -422,7 +424,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup.exe as needed, along with the latest compatibility database, and replacement component manifests.
 
-```
+```powershell
 #
 # update remaining files on media
 #
@@ -431,11 +433,12 @@ This part of the script updates the Setup files. It simply copies the individual
 Write-Host "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
 ```
+
 ### Finish up
 
 As a last step, the script removes the working folder of temporary files, and unmounts our language pack and Features on Demand ISOs.
 
-```
+```powershell
 #
 # Perform final cleanup
 #
