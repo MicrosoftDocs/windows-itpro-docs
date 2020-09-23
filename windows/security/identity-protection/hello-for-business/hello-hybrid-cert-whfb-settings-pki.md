@@ -95,8 +95,7 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
 > [!NOTE]
-> * The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. 
-> * If you are using a 3rd party CA, add the certificate to the NTAuth store. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
+> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
 
 ### Enrollment Agent certificate template
 
