@@ -34,6 +34,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
+      "ms.prod": "w10",
       "ms.topic": "article",
       "manager": "dansimp",
       "audience": "ITPro",
