@@ -25,6 +25,9 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 # Migrate from Symantec to Microsoft Defender Advanced Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP), you're in the right place. Use this article as a guide to plan your migration.  
 
 ## The migration process

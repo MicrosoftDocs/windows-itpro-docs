@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Microsoft Defender ATP device timeline event flags
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Event flags in the Microsoft Defender ATP device timeline help you filter and organize specific events when you're  investigate potential attacks.

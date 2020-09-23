@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Deploy Microsoft Defender ATP for Linux with Ansible
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
