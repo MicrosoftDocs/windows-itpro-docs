@@ -37,9 +37,17 @@ There are three phases in deploying Microsoft Defender ATP:
 
 
 
- The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
+The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
 
 There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
+
+## Deployment strategy
+The [Plan deployment](deployment-strategy.md) topic provides high-level information on prerequisites, design, and configuration options. 
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
+
+[![Screenshot of the the various deployment paths](images/mdatp-deployment-strategy.png) ](images/deployment-strategy-big.png#lightbox)
+
 
 ## In Scope
 
