@@ -45,6 +45,23 @@ Depending on your environment, some tools are better suited for certain architec
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
+
+## Phased deployment approach
+Regardless of the deployment strategy you decide to implement, deploying Microsoft Defender ATP can be done in a phased approach. 
+
+Enterprises can deploy the service on a pilot collection, and then incrementally roll the service out to a larger set of devices.
+
+Adopting a phased approach helps reduce potential issues or conflicts that could arise while rolling the service out.
+
+|**Pilot and deployment phases**|**Description**|
+|:-----|:-----|
+Pilot and deployment planning | Phase 1: Identify 50 systems for pilot testing - Focus on the security team, IT team and maybe Helpdesk
+Full scale pilot | Phase 2: 100  systems <br> 	Phase 3: 150 systems <br> Phase 4: 500 systems <br> Phase 5: 1000 systems <br><br> Review and assess if there required tweaks to deployment. 
+Full deployment | Roll out service to the rest of environment in larger increments.
+
+
+
+
   
 ## Related topics
 - [Deployment phases](deployment-phases.md)

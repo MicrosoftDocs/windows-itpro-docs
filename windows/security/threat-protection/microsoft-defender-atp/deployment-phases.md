@@ -29,7 +29,7 @@ ms.topic: article
 
 There are three phases in deploying Microsoft Defender ATP:
 
-|Phase | Desription | 
+|Phase | Description | 
 |:-------|:-----|
 | ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Microsoft Defender ATP: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
 |  ![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
@@ -46,7 +46,7 @@ The [Plan deployment](deployment-strategy.md) topic provides high-level informat
 
 Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
 
-[![Screenshot of the the various deployment paths](images/mdatp-deployment-strategy.png) ](images/deployment-strategy-big.png#lightbox)
+[![Image of the PDF showing the various deployment paths](images/mdatp-deployment-strategy.png) ](images/deployment-strategy-big.png#lightbox)
 
 
 ## In Scope
