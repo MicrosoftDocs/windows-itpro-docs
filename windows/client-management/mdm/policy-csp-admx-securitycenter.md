@@ -1,29 +1,29 @@
 ---
-title: Policy CSP - ADMX_AuditSettings
-description: Policy CSP - ADMX_AuditSettings
+title: Policy CSP - ADMX_Securitycenter
+description: Policy CSP - ADMX_Securitycenter
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/13/2020
+ms.date: 09/18/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_AuditSettings
+# Policy CSP - ADMX_Securitycenter
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AuditSettings policies  
+## ADMX_Securitycenter policies  
 
 <dl>
   <dd>
-    <a href="#admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
+    <a href="#admx-securitycenter-securitycenter-securitycenterindomain">ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain</a>
   </dd>
 </dl>
 
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-securitycenter-securitycenter-securitycenterindomain"></a>**ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain**  
 
 <!--SupportedSKUs-->
 <table>
@@ -74,16 +74,23 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines what information is logged in security audit events when a new process has been created. This setting only applies when the Audit Process Creation policy is enabled.
+Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether Security Center is turned on or off for computers that are joined to an Active Directory domain. When Security Center is turned on, it monitors essential security settings and notifies the user when the computer might be at risk. The Security Center Control Panel category view also contains a status section, where the user can get recommendations to help increase the computer's security. When Security Center is not enabled on the domain, neither the notifications nor the Security Center status section are displayed. 
 
-If you enable this policy setting, the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+Note that Security Center can only be turned off for computers that are joined to a Windows domain. When a computer is not joined to a Windows domain, the policy setting will have no effect.
 
-If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.  
+If you do not configure this policy setting, the Security Center is turned off for domain members. 
 
-Default is Not configured.
+If you enable this policy setting, Security Center is turned on for all users. 
 
-> [!NOTE]
-> When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information, such as passwords or user data.
+If you disable this policy setting, Security Center is turned off for domain members.
+
+**Windows XP SP2**
+
+In Windows XP SP2, the essential security settings that are monitored by Security Center include firewall, antivirus, and Automatic Updates.  Note that Security Center might not be available following a change to this policy setting until after the computer is restarted for Windows XP SP2 computers. 
+
+**Windows Vista**
+
+In Windows Vista, this policy setting monitors essential security settings to include firewall, antivirus, antispyware, Internet security settings, User Account Control, and Automatic Updates. Windows Vista computers do not require a reboot for this policy setting to take effect.
 
 <!--/Description-->
 > [!TIP]
@@ -95,10 +102,10 @@ Default is Not configured.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
--   GP name: *IncludeCmdLine*
--   GP path: *System/Audit Process Creation*
--   GP ADMX file name: *AuditSettings.admx*
+-   GP English name: *Turn on Security Center (Domain PCs only)*
+-   GP name: *SecurityCenterInDomain*
+-   GP path: *Windows Components\Security Center*
+-   GP ADMX file name: *Securitycenter.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->

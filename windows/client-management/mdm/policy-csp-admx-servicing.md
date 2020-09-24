@@ -1,29 +1,29 @@
 ---
-title: Policy CSP - ADMX_AuditSettings
-description: Policy CSP - ADMX_AuditSettings
+title: Policy CSP - ADMX_Servicing
+description: Policy CSP - ADMX_Servicing
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/13/2020
+ms.date: 09/18/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_AuditSettings
+# Policy CSP - ADMX_Servicing
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AuditSettings policies  
+## ADMX_Servicing policies  
 
 <dl>
   <dd>
-    <a href="#admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
+    <a href="#admx-servicing-servicing">ADMX_Servicing/Servicing</a>
   </dd>
 </dl>
 
@@ -31,7 +31,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-servicing-servicing"></a>**ADMX_Servicing/Servicing**  
 
 <!--SupportedSKUs-->
 <table>
@@ -74,16 +74,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines what information is logged in security audit events when a new process has been created. This setting only applies when the Audit Process Creation policy is enabled.
+Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the network locations that will be used for the repair of operating system corruption and for enabling optional features that have had their payload files removed.
 
-If you enable this policy setting, the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the ""Alternate source file path"" text box. Multiple locations can be specified when each path is separated by a semicolon. 
 
-If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.  
+The network location can be either a folder, or a WIM file. If it is a WIM file, the location should be specified by prefixing the path with “wim:” and include the index of the image to use in the WIM file. For example “wim:\\server\share\install.wim:3”.
 
-Default is Not configured.
-
-> [!NOTE]
-> When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information, such as passwords or user data.
+If you disable or do not configure this policy setting, or if the required files cannot be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that is allowed by the policy settings for the computer.
 
 <!--/Description-->
 > [!TIP]
@@ -95,10 +92,10 @@ Default is Not configured.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
--   GP name: *IncludeCmdLine*
--   GP path: *System/Audit Process Creation*
--   GP ADMX file name: *AuditSettings.admx*
+-   GP English name: *Specify settings for optional component installation and component repair*
+-   GP name: *RepairContentServerSource*
+-   GP path: *System*
+-   GP ADMX file name: *Servicing.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
