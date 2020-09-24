@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Become a Microsoft Defender ATP partner
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -29,7 +32,7 @@ To become a Microsoft Defender ATP solution partner, you'll need to follow and c
 Subscribing to the [Microsoft Defender ATP Developer license](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9) allows you to use a Microsoft Defender ATP tenant with up to 10 devices for developing solutions to integrate with Microsoft Defender ATP. 
 
 ## Step 2: Fulfill the solution validation and certification requirements
-The best way for technology partners to certify their integration works, is to have a joint customer approve the suggested integration design and have it tested and demoed to the Microsoft Defender ATP team.
+The best way for technology partners to certify that their integration works is to have a joint customer approve the suggested integration design (the customer can use the **Recommend a partner** option in the [Partner Application page](https://securitycenter.microsoft.com/interoperability/partners) in the Microsoft Defender Security Center) and have it tested and demoed to the Microsoft Defender ATP team.
 
 Once the Microsoft Defender ATP team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
 
