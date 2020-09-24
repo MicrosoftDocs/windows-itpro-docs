@@ -1,6 +1,6 @@
 ---
-title: McAfee to Microsoft Defender for Endpoint - Onboard
-description: This is phase 3, Onboard, for migrating from McAfee to Microsoft Defender for Endpoint.
+title: Switch to Microsoft Defender for Endpoint - Onboard
+description: This is phase 3, Onboard, for migrating from a non-Microsoft solution to Microsoft Defender for Endpoint.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,28 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365solution-McAfeemigrate
+- m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
 ms.date: 09/24/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from McAfee - Phase 3: Onboard to Microsoft Defender for Endpoint
+# Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
-|[![Phase 1: Prepare](images/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](mcafee-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
+|[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
-3. [Uninstall McAfee](#uninstall-mcafee).
+3. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution).
 4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
@@ -70,18 +67,18 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 |Operating system  |Guidance  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |See [Run a detection test](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test). <br/><br/>Visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).        |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac).        |
 |Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS, or higher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Microsoft Defender ATP for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux). |
 
-## Uninstall McAfee
+## Uninstall your non-Microsoft solution
 
-Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall McAfee.
+Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall your non-Microsoft endpoint protection solution.
 
-To get help with this step, go to your McAfee ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com)).
+To get help with this step, reach out to your solution provider's technical support team.
 
 ## Make sure Microsoft Defender for Endpoint is in active mode
 
-Now that you have uninstalled McAfee, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
+Now that you have uninstalled your non-Microsoft endpoint protection solution, your next step is to make sure that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are enabled and in active mode.
 
 To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
@@ -90,7 +87,7 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
-- [Manage Microsoft Defender Advanced Threat Protection, post migration](manage-atp-post-migration.md).
+- [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).

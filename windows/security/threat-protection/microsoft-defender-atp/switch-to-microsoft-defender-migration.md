@@ -1,11 +1,10 @@
 ---
-title: Migrate from Symantec to Microsoft Defender for Endpoint
-description: Get an overview of how to make the switch from Symantec to Microsoft Defender for Endpoint
-keywords: migration, windows defender advanced threat protection, atp, edr
+title: Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
+description: Make the switch to Microsoft Defender for Endpoint. Read this article for an overview.
+keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
-ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,30 +15,31 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-symantecmigrate
+- m365solution-migratetomdatp
 - m365solution-overview 
 ms.topic: conceptual
-ms.date: 09/22/2020
 ms.custom: migrationguides
-ms.reviewer: depicker, yongrhee, chriggs
+ms.date: 09/24/2020
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Migrate from Symantec to Microsoft Defender for Endpoint
+# Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
 
-
-If you are planning to switch from Symantec Endpoint Protection (Symantec) to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), you're in the right place. Use this article as a guide to plan your migration.  
+> [!TIP]
+> - If you're currently using McAfee Endpoint Security (McAfee), see [Migrate from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
+> - If you're currently using Symantec Endpoint Protection (Symantec), see [Migrate from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md).
 
 ## The migration process
 
-When you switch from Symantec to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
+When you switch to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
 |Phase |Description |
 |--|--|
-|[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During the **Prepare** phase, you get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
-|[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Set up Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |During the **Setup** phase, you configure settings and exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
-|[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Onboard to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md) |During the **Onboard** phase, you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall Symantec and make sure protection through Microsoft Defender for Endpoint is in active mode. |
+|[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Prepare for your migration](switch-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md), you update your organization's devices, get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
+|[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Set up Microsoft Defender for Endpoint](switch-to-microsoft-defender-setup.md) |During [the **Setup** phase](switch-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and your existing endpoint protection solution. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
+|[![Phase 3: Onboard](images/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Onboard to Microsoft Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall your existing endpoint protection solution and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender for Endpoint is in active mode. |
 
 ## What's included in Microsoft Defender for Endpoint?
 
@@ -60,4 +60,4 @@ In this migration guide, we focus on [next-generation protection](https://docs.m
 
 ## Next step
 
-- Proceed to [Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md).
+- Proceed to [Prepare for your migration](switch-to-microsoft-defender-prepare.md).
