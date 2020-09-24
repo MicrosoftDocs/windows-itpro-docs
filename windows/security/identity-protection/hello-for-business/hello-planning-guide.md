@@ -166,7 +166,7 @@ Choose the deployment model based on the resources your users access.  Use the f
 
 If your organization does not have on-premises resources, write **Cloud Only** in box **1a** on your planning worksheet.
 
-If your organization is federated with Azure or uses any service, such as AD Connect, Office365 or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
+If your organization is federated with Azure or uses any service, such as AD Connect, Office365, or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
 
