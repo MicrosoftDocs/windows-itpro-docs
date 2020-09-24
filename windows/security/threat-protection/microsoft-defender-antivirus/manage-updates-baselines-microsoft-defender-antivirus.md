@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/10/2020
+ms.date: 09/24/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -64,6 +64,31 @@ All our updates contain:
 * performance improvements
 * serviceability improvements
 * integration improvements (Cloud, MTP)  
+<br/>
+<details>
+<summary> September-2020 (Platform:  | Engine: )</summary>
+
+&ensp;Security intelligence update version: ****  
+&ensp;Released: ****  
+&ensp;Platform: ****  
+&ensp;Engine: ****  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Require administrative privileges for quarantine restore
+- Support for XML formatted events
+- Provide CSP support to ignore exclusion merge
+- New management interfaces for: <br/>
+   - UDP Inspection
+   - Network Protection on Server 2019
+   - IP Address exclusions for Network Protection
+- Improve visibility into TPM logs
+- Improved Office VBA script scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
 <br/>
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
