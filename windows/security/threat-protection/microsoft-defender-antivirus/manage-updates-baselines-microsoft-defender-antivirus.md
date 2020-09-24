@@ -61,17 +61,17 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 For information how to update or how to install the platform update, please see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 All our updates contain:
-* performance improvements
-* serviceability improvements
-* integration improvements (Cloud, MTP)  
+- performance improvements
+- serviceability improvements
+- integration improvements (Cloud, MTP)  
 <br/>
 <details>
 <summary> September-2020 (Platform:  | Engine: )</summary>
 
-&ensp;Security intelligence update version: ****  
-&ensp;Released: ****  
-&ensp;Platform: ****  
-&ensp;Engine: ****  
+&ensp;Security intelligence update version: **versionnumber**  
+&ensp;Released: **releasedate**  
+&ensp;Platform: **platformnumber**  
+&ensp;Engine: **enginenumber**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
@@ -104,7 +104,7 @@ No known issues
 * Improved scan event telemetry
 * Improved behavior monitoring for memory scans
 * Improved macro streams scanning
-* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
+* Added `AMRunningMode` to Get-MpComputerStatus PowerShell CmdLet
 
 ### Known Issues
 No known issues  
