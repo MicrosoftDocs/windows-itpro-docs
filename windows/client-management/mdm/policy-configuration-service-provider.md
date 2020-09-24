@@ -721,6 +721,148 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_OfflineFiles policies
+
+<dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-alwayspinsubfolders" id="admx-offlinefiles-pol-alwayspinsubfolders">ADMX_OfflineFiles/Pol_AlwaysPinSubFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-assignedofflinefiles-1" id="admx-offlinefiles-pol-assignedofflinefiles-1">ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-assignedofflinefiles-2" id="admx-offlinefiles-pol-assignedofflinefiles-2">ADMX_OfflineFiles/Pol_AssignedOfflineFiles_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-backgroundsyncsettings" id="admx-offlinefiles-pol-backgroundsyncsettings">ADMX_OfflineFiles/Pol_BackgroundSyncSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-cachesize" id="admx-offlinefiles-pol-cachesize">ADMX_OfflineFiles/Pol_CacheSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-customgoofflineactions-1" id="admx-offlinefiles-pol-customgoofflineactions-1">ADMX_OfflineFiles/Pol_CustomGoOfflineActions_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-customgoofflineactions-2" id="admx-offlinefiles-pol-customgoofflineactions-2">ADMX_OfflineFiles/Pol_CustomGoOfflineActions_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-defcachesize" id="admx-offlinefiles-pol-defcachesize">ADMX_OfflineFiles/Pol_DefCacheSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-enabled" id="admx-offlinefiles-pol-enabled">ADMX_OfflineFiles/Pol_Enabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-encryptofflinefiles" id="admx-offlinefiles-pol-encryptofflinefiles">ADMX_OfflineFiles/Pol_EncryptOfflineFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-eventlogginglevel-1" id="admx-offlinefiles-pol-eventlogginglevel-1">ADMX_OfflineFiles/Pol_EventLoggingLevel_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-eventlogginglevel-2" id="admx-offlinefiles-pol-eventlogginglevel-2">ADMX_OfflineFiles/Pol_EventLoggingLevel_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-exclusionlistsettings" id="admx-offlinefiles-pol-exclusionlistsettings">ADMX_OfflineFiles/Pol_ExclusionListSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-extexclusionlist" id="admx-offlinefiles-pol-extexclusionlist">ADMX_OfflineFiles/Pol_ExtExclusionList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-goofflineaction-1" id="admx-offlinefiles-pol-goofflineaction-1">ADMX_OfflineFiles/Pol_GoOfflineAction_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-goofflineaction-2" id="admx-offlinefiles-pol-goofflineaction-2">ADMX_OfflineFiles/Pol_GoOfflineAction_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nocacheviewer-1" id="admx-offlinefiles-pol-nocacheviewer-1">ADMX_OfflineFiles/Pol_NoCacheViewer_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nocacheviewer-2" id="admx-offlinefiles-pol-nocacheviewer-2">ADMX_OfflineFiles/Pol_NoCacheViewer_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-noconfigcache-1" id="admx-offlinefiles-pol-noconfigcache-1">ADMX_OfflineFiles/Pol_NoConfigCache_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-noconfigcache-2" id="admx-offlinefiles-pol-noconfigcache-2">ADMX_OfflineFiles/Pol_NoConfigCache_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nomakeavailableoffline-1" id="admx-offlinefiles-pol-nomakeavailableoffline-1">ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nomakeavailableoffline-2" id="admx-offlinefiles-pol-nomakeavailableoffline-2">ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nopinfiles-1" id="admx-offlinefiles-pol-nopinfiles-1">ADMX_OfflineFiles/Pol_NoPinFiles_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-nopinfiles-2" id="admx-offlinefiles-pol-nopinfiles-2">ADMX_OfflineFiles/Pol_NoPinFiles_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-noreminders-1" id="admx-offlinefiles-pol-noreminders-1">ADMX_OfflineFiles/Pol_NoReminders_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-noreminders-2" id="admx-offlinefiles-pol-noreminders-2">ADMX_OfflineFiles/Pol_NoReminders_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-onlinecachingsettings" id="admx-offlinefiles-pol-onlinecachingsettings">ADMX_OfflineFiles/Pol_OnlineCachingSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-purgeatlogoff" id="admx-offlinefiles-pol-purgeatlogoff">ADMX_OfflineFiles/Pol_PurgeAtLogoff</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-quickadimpin" id="admx-offlinefiles-pol-quickadimpin">ADMX_OfflineFiles/Pol_QuickAdimPin</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-reminderfreq-1" id="admx-offlinefiles-pol-reminderfreq-1">ADMX_OfflineFiles/Pol_ReminderFreq_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-reminderfreq-2" id="admx-offlinefiles-pol-reminderfreq-2">ADMX_OfflineFiles/Pol_ReminderFreq_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-reminderinittimeout-1" id="admx-offlinefiles-pol-reminderinittimeout-1">ADMX_OfflineFiles/Pol_ReminderInitTimeout_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-reminderinittimeout-2" id="admx-offlinefiles-pol-reminderinittimeout-2">ADMX_OfflineFiles/Pol_ReminderInitTimeout_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-remindertimeout-1" id="admx-offlinefiles-pol-remindertimeout-1">ADMX_OfflineFiles/Pol_ReminderTimeout_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-remindertimeout-2" id="admx-offlinefiles-pol-remindertimeout-2">ADMX_OfflineFiles/Pol_ReminderTimeout_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-slowlinksettings" id="admx-offlinefiles-pol-slowlinksettings">ADMX_OfflineFiles/Pol_SlowLinkSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-slowlinkspeed" id="admx-offlinefiles-pol-slowlinkspeed">ADMX_OfflineFiles/Pol_SlowLinkSpeed</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatlogoff-1" id="admx-offlinefiles-pol-syncatlogoff-1">ADMX_OfflineFiles/Pol_SyncAtLogoff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatlogoff-2" id="admx-offlinefiles-pol-syncatlogoff-2">ADMX_OfflineFiles/Pol_SyncAtLogoff_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatlogon-1" id="admx-offlinefiles-pol-syncatlogon-1">ADMX_OfflineFiles/Pol_SyncAtLogon_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatlogon-2" id="admx-offlinefiles-pol-syncatlogon-2">ADMX_OfflineFiles/Pol_SyncAtLogon_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatsuspend-1" id="admx-offlinefiles-pol-syncatsuspend-1">ADMX_OfflineFiles/Pol_SyncAtSuspend_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-syncatsuspend-2" id="admx-offlinefiles-pol-syncatsuspend-2">ADMX_OfflineFiles/Pol_SyncAtSuspend_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-synconcostednetwork" id="admx-offlinefiles-pol-synconcostednetwork">ADMX_OfflineFiles/Pol_SyncOnCostedNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-workofflinedisabled-1" id="admx-offlinefiles-pol-workofflinedisabled-1">ADMX_OfflineFiles/Pol_WorkOfflineDisabled_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-offlinefiles.md#admx-offlinefiles-pol-workofflinedisabled-2" id="admx-offlinefiles-pol-workofflinedisabled-2">ADMX_OfflineFiles/Pol_WorkOfflineDisabled_2</a>
+  </dd>
+</dl>
+
 ### ADMX_PeerToPeerCaching policies
 
 <dl>
