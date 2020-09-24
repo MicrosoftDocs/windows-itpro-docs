@@ -34,7 +34,7 @@ Ensure that you have Microsoft Defender ATP deployed in your environment with de
 
 Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
 
-If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on Demand subscription. 
+If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on-Demand subscription. 
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
@@ -82,7 +82,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request. 
 
-2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
+2. From the upper right-hand menu, click the **?** icon. Then, select **Consult a threat expert**. 
 
     ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
@@ -90,7 +90,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
 
-    The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription.
+    The following screen shows when you are on a full Microsoft Threat Experts - Experts on-Demand subscription.
 
     ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
 
@@ -113,7 +113,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 **Alert information**
 - We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
-- We’ve observed two similar attacks, which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious Powershell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
+- We’ve observed two similar attacks, which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
 - I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Microsoft Defender ATP see these attempts? What type of sign-ins are being monitored?
 - Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
@@ -122,7 +122,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**
-- This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events, which triggered multiple Microsoft Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
+- We detected a phishing email that delivered a malicious Word document to a user. The malicious Word document caused a series of suspicious events, which triggered multiple Microsoft Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
 - I recently saw a [social media reference, for example, Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Microsoft Defender ATP provides against this threat actor? 
 
 **Microsoft Threat Experts’ alert communications** 
