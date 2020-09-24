@@ -24,7 +24,7 @@ ms.date: 09/22/2020
 
 ## Migration guides
 
-If you're considering switching from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint with Microsoft Defender Antivirus, check out our migration guidance.
+If you're considering switching from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint with Microsoft Defender Antivirus, check out our migration guidance. Select the scenario that best represents where you are in your deployment process, and see the guidance.
 
 |Scenario |Guidance |
 |:--|:--|
