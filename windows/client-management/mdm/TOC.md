@@ -193,6 +193,7 @@
 #### [ADMX_LinkLayerTopologyDiscovery](policy-csp-admx-linklayertopologydiscovery.md)
 #### [ADMX_MMC](policy-csp-admx-mmc.md)
 #### [ADMX_MMCSnapins](policy-csp-admx-mmcsnapins.md)
+#### [ADMX_Smartcard](policy-csp-admx-smartcard.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
