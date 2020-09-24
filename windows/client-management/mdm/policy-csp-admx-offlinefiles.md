@@ -3382,7 +3382,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchonized before a computer is suspended.
+Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchronized before a computer is suspended.
 
 If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
@@ -3454,7 +3454,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchonized before a computer is suspended.
+Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether offline files are synchronized before a computer is suspended.
 
 If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 

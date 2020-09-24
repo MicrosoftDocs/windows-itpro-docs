@@ -1472,7 +1472,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting specifi
 
 To specify the expected dial-up delay at logon, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
 
-If you do not confihgure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
 
 <!--/Description-->
 > [!TIP]
