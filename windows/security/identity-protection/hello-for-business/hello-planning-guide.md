@@ -171,7 +171,7 @@ If your organization is federated with Azure or uses any service, such as AD Con
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
 
 > [!NOTE]
->  * Main use case of On-premises deployment is for "Enhanced Security Administrative Environments" also known as "Red Forests".   
+>  * The main use case of on-premises deployment is for Enhanced Security Administrative Environments, also known as Red Forests.   
 >  * Migration from on-premise to hybrid deployment will require redeployment.
 
 
