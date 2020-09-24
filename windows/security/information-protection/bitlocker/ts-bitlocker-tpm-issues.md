@@ -18,7 +18,7 @@ ms.custom: bitlocker
 
 # BitLocker and TPM: other known issues
 
-This article describes common issues that relate directly to the Trusted Platform Module (TPM), and provides guidance to address these issues.
+This article describes common issues that relate directly to the trusted platform module (TPM), and provides guidance to address these issues.
 
 ## Azure AD: Windows Hello for Business and single sign-on do not work
 
@@ -52,21 +52,21 @@ Additionally, the behavior indicates that the client computer cannot obtain a [P
 
 ### Resolution
 
-To verify the status of the PRT, use the [dsregcmd /status command](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd) to collect information. In the tool output, verify that either **User state** or **SSO state** contains the **AzureAdPrt** attribute. If the value of this attribute is **No**, the PRT was not issued. This may indicate that the computer could not present its certificate for authentication.
+To verify the status of the PRT, use the [dsregcmd /status command](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd) to collect information. In the tool output, verify that either **User state** or **SSO state** contains the **AzureAdPrt** attribute. If the value of this attribute is **No**, the PRT was not issued. This indicates that the computer could not present its certificate for authentication.
 
 To resolve this issue, follow these steps to troubleshoot the TPM:
 
-1. Open the TPM management console (tpm.msc). To do this, select **Start**, and enter **tpm.msc** in the **Search** box.
-1. If you see a notice to either unlock the TPM or reset the lockout, follow those instructions.  
-1. If you do not see such a notice, review the BIOS settings of the computer for any setting that you can use to reset or disable the lockout.
-1. Contact the hardware vendor to determine whether there is a known fix for the issue.
-1. If you still cannot resolve the issue, clear and re-initialize the TPM. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
+1. Select **Start**, and enter **tpm.msc** in the **Search** box to open the TPM management console (tpm.msc).
+2. If you see a notice to either unlock the TPM or reset the lockout, follow those instructions.  
+3. If you do not see such a notice, review the BIOS settings of the computer for any setting that you can use to reset or disable the lockout.
+4. Contact the hardware vendor to determine whether there is a known fix for the issue.
+5. If you still cannot resolve the issue, clear and re-initialize the TPM. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
    > [!WARNING]
    > Clearing the TPM can cause data loss.  
 
 ## TPM 1.2 Error: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
-You have a Windows 10 version 1703-based computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
+You have a Windows 10, version 1703-based computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
 
 > Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.  
 > HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY  
@@ -89,12 +89,12 @@ If this does not resolve the issue, consider replacing the device motherboard. A
 
 You have a device that you are trying to join to a hybrid Azure AD. However, the join operation appears to fail.
 
-To verify that the join succeeded, use the [dsregcmd /status command](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd). In the tool output, the following attributes indicate that the join succeeded:
+To verify whether the join operation succeeded, use the [dsregcmd /status command](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd). In the tool output, the following attributes indicate that the join operation succeeded:
 
 - **AzureAdJoined: YES**
 - **DomainName: \<*on-prem Domain name*\>**
 
-If the value of **AzureADJoined** is **No**, the join failed.  
+If the value of **AzureADJoined** is **No**, the join operation failed.  
 
 ### Causes and Resolutions
 
