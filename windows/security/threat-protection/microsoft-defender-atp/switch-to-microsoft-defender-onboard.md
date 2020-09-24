@@ -19,7 +19,7 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/24/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -45,7 +45,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
 
-4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods).
+4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
  
