@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/24/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -48,7 +48,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
 
-4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods).
+4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
  
