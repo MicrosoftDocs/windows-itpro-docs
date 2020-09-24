@@ -148,7 +148,7 @@
     {
       "source_path": "windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/top-scoring-industry-tests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/information-protection/bitlocker/protect-bitlocker-from-pre-boot-attacks.md",
