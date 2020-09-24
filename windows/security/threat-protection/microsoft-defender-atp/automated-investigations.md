@@ -1,16 +1,17 @@
 ---
 title: Use automated investigations to investigate and remediate threats
-description: Understand the automated investigation flow in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+description: Understand the automated investigation flow in Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
 keywords: automated, investigation, detection, source, threat types, id, tags, devices, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/03/2020
+ms.date: 09/24/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -27,16 +28,16 @@ ms.custom: AIR
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
-Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, and to reduce the volume of alerts that must be investigated individually,  Microsoft Defender ATP includes automated investigation and remediation capabilities. 
+Microsoft Defender for Endpoint offers a wide breadth of visibility on multiple devices. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address. To address this challenge, and to reduce the volume of alerts that must be investigated individually, Microsoft Defender for Endpoint includes automated investigation and remediation capabilities. 
 
 Automated investigation leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. Automated investigation and remediation capabilities significantly reduce alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when each investigation was initiated.
 
 > [!TIP]
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## How the automated investigation starts
 
-When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender ATP checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
+When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender for Endpoint checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
 
 >[!NOTE]
 >Currently, automated investigation only supports the following OS versions:
@@ -72,26 +73,26 @@ If an incriminated entity is seen in another device, the automated investigation
 Depending on how you set up the device groups and their level of automation, each automated investigation either requires user approval (default) or automatically remediates threats.
 
 > [!NOTE]
-> Microsoft Defender ATP tenants created on or after August 16, 2020 have **Full - remediate threats automatically** selected by default. You can keep the default setting, or change it according to your organizational needs. To change your settings, [adjust your device group settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
+> Microsoft Defender for Endpoint tenants created on or after August 16, 2020 have **Full - remediate threats automatically** selected by default. You can keep the default setting, or change it according to your organizational needs. To change your settings, [adjust your device group settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
 
 You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|**Full - remediate threats automatically** | All remediation actions are performed automatically.<br/><br/>***This option is recommended** and is selected by default for Microsoft Defender ATP tenants that were created on or after August 16, 2020, and that have no device groups defined. <br/>If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Full - remediate threats automatically**.*|
-|**Semi - require approval for core folders remediation** | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br/><br/> Files or executables in all other folders are automatically remediated, if needed.|
-|**Semi - require approval for non-temp folders remediation** | An approval is required on files or executables that are not in temporary folders. <br/><br/> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, are automatically be remediated (if needed).|
-|**Semi - require approval for any remediation** | An approval is needed for any remediation action. <br/><br/>*This option is selected by default for Microsoft Defender ATP tenants that were created before August 16, 2020, and that have no device groups defined. <br/>If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Semi - require approval for any remediation**.*|
+|**Full - remediate threats automatically** | All remediation actions are performed automatically.<br/><br/>***This option is recommended** and is selected by default for tenants that were created on or after August 16, 2020 with Microsoft Defender for Endpoint, and that have no device groups defined. If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Full - remediate threats automatically**.*|
+|**Semi - require approval for core folders remediation** | An approval is required on files or executables that are in the operating system directories, such as your **Windows** and **Program files** folders. <br/><br/> Files or executables in other folders are automatically remediated, if those files or executables are determined to be malicious.<br/><br/>|
+|**Semi - require approval for non-temp folders remediation** | An approval is required on files or executables that are not in temporary folders. <br/><br/> Examples of temporary folders include the user's **Downloads** folder, the user's `\AppData\Local\Temp` folder, and local settings for documents. Files or executables in temporary folders are automatically be remediated if they are determined to be malicious. |
+|**Semi - require approval for any remediation** | An approval is needed for any remediation action. <br/><br/>*This option is selected by default for tenants that were created before August 16, 2020 with Microsoft Defender ATP, and that have no device groups defined. If you do have a device group defined, you will also have a device group called **Ungrouped devices (default)**, which will be set to **Semi - require approval for any remediation**.*|
 |**No automated response** | Devices do not get any automated investigations run on them. <br/><br/>***This option is not recommended**, because it fully disables automated investigation and remediation capabilities, and reduces the security posture of your organization's devices.* |
 
 
 > [!IMPORTANT]
 > Regarding automation levels and default settings:
 > - If your tenant already has device groups defined, the automation level settings are not changed for those device groups.
-> - If your tenant was onboarded to Microsoft Defender ATP *before* August 16, 2020, and you have not defined a device group, your organization's default setting is **Semi - require approval for any remediation**.
-> - If your tenant was onboarded to Microsoft Defender ATP *before* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Semi - require approval for any remediation**. 
-> - If your tenant was onboarded to Microsoft Defender ATP *on or after* August 16, 2020, and you have not defined a device group, your orgnaization's default setting is **Full - remediate threats automatically**.
-> - If your tenant was onboarded to Microsoft Defender ATP *on or after* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Full - remediate threats automatically**.
+> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you have not defined a device group, your organization's default setting is **Semi - require approval for any remediation**.
+> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Semi - require approval for any remediation**. 
+> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you have not defined a device group, your orgnaization's default setting is **Full - remediate threats automatically**.
+> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Full - remediate threats automatically**.
 > - To change an automation level, **[edit your device groups](configure-automated-investigations-remediation.md#set-up-device-groups)**.
 
 
@@ -99,18 +100,18 @@ You can configure the following levels of automation:
 
 - Your level of automation is determined by your device group settings. See [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
 
-- If your Microsoft Defender ATP tenant was created before August 16, 2020, you have a default device group that is configured for semi-automatic remediation. Any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). You can configure your device groups to use full automation so that no user approval is needed. 
+- If your Microsoft Defender for Endpoint tenant was created before August 16, 2020, you have a default device group that is configured for semi-automatic remediation. Any malicious entity that calls for remediation requires an approval and the investigation is added to the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). You can configure your device groups to use full automation so that no user approval is needed. 
 
-- If your Microsoft Defender ATP tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. Remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
+- If your Microsoft Defender for Endpoint tenant was created on or after August 16, 2020, you have a default device group that is configured for full automation. Remediation actions are taken automatically for entities that are considered to be malicious. Remediation actions that were taken can be viewed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
 
 ## Next steps
 
 - [Learn about the automated investigations dashboard](manage-auto-investigation.md)
 
-- [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## See also
 
-- [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Automated investigation and response in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
