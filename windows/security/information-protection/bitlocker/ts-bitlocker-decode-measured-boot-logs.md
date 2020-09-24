@@ -16,25 +16,25 @@ ms.date: 10/17/2019
 ms.custom: bitlocker
 ---
 
-# Decode Measured Boot logs to track PCR changes
+# Decode measured boot logs to track PCR changes
 
-Platform Configuration Registers (PCRs) are memory locations in the Trusted Platform Module (TPM). BitLocker and its related technologies depend on specific PCR configurations. Additionally, specific change in PCRs can cause a device or computer to enter BitLocker recovery mode.  
+Platform configuration registers (PCRs) are memory locations in the trusted platform module (TPM). BitLocker and its related technologies depend on specific PCR configurations. Additionally, specific changes in PCRs can cause a device or computer to enter BitLocker recovery mode.  
 
-By tracking changes in the PCRs, and identifying when they changed, you can gain insight into issues that occur or learn why a device or computer entered BitLocker recovery mode. The Measured Boot logs record PCR changes and other information. These logs are located in the C:\\Windows\\Logs\\MeasuredBoot\\ folder.
+By tracking changes in the PCRs, and identifying when they changed, you can gain insight into issues that occur or can learn why a device or computer entered BitLocker recovery mode. The measured boot logs record PCR changes and other information. These logs are located in the C:\\Windows\\Logs\\MeasuredBoot\\ folder.
 
 This article describes tools that you can use to decode these logs: TBSLogGenerator and PCPTool.
 
-For more information about Measured Boot and PCRs, see the following articles:
+For more information about measured boot and PCRs, see the following articles:
 
 - [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
 - [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
-## Use TBSLogGenerator to decode Measured Boot logs
+## Use TBSLogGenerator to decode measured boot logs
 
-Use TBSLogGenerator to decode Measured Boot logs that you have collected from Windows 10 and earlier versions. You can install this tool on the following systems:
+Use TBSLogGenerator to decode measured boot logs that you have collected from Windows 10 and earlier versions. You can install this tool on the following systems:
 
 - A computer that is running Windows Server 2016 and that has a TPM enabled
-- A Gen 2 virtual machine (running on Hyper-V) that is running Windows Server 2016 (you can use the virtual TPM)
+- A gen-2 virtual machine (running on Hyper-V) that is running Windows Server 2016 (you can use the virtual TPM)
 
 To install the tool, follow these steps:
 
@@ -43,15 +43,15 @@ To install the tool, follow these steps:
    - [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)
    - Direct download link for Windows Server 2016: [Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)
 
-1. Accept the default installation path.
+2. Accept the default installation path.
 
    ![Specify Location page of the Windows Hardware Lab Kit installation wizard](./images/ts-tpm-1.png)
 
-1. Under **Select the features you want to install**, select **Windows Hardware Lab Kit&mdash;Controller + Studio**.
+3. Under **Select the features you want to install**, select **Windows Hardware Lab Kit&mdash;Controller + Studio**.
 
    ![Select features page of the Windows Hardware Lab Kit installation wizard](./images/ts-tpm-2.png)
 
-1. Finish the installation.
+4. Finish the installation.
 
 To use TBSLogGenerator, follow these steps:
 
@@ -67,12 +67,12 @@ To use TBSLogGenerator, follow these steps:
    TBSLogGenerator.exe -LF <LogFolderName>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.txt
    ```
    where the variables represent the following values:
-   - \<*LogFolderName*> = the name of the folder that contains the file to be decoded
-   - \<*LogFileName*> = the name of the file to be decoded
-   - \<*DestinationFolderName*> = the name of the folder for the decoded text file
-   - \<*DecodedFileName*> = the name of the decoded text file
+   - \<*LogFolderName*> = The name of the folder that contains the file to be decoded
+   - \<*LogFileName*> = The name of the file to be decoded
+   - \<*DestinationFolderName*> = The name of the folder for the decoded text file
+   - \<*DecodedFileName*> = The name of the decoded text file
 
-   For example, the following figure shows Measured Boot logs that were collected from a Windows 10 computer and put into the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
+   For example, the following figure shows measured boot logs that were collected from a Windows 10 computer and put into the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
 
     ```cmd
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
@@ -92,9 +92,9 @@ To find the PCR information, go to the end of the file.
 
    ![View of NotePad that shows the PCR information at the end of the text file](./images/ts-tpm-7.png)
 
-## Use PCPTool to decode Measured Boot logs
+## Use PCPTool to decode measured boot logs
 
-PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a Measured Boot log file and converts it into an XML file.
+PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a measured boot log file and converts it into an XML file.
 
 To download and install PCPTool, go to the Toolkit page, select **Download**, and follow the instructions.
 
@@ -104,10 +104,10 @@ PCPTool.exe decodelog <LogFolderPath>\<LogFileName>.log > <DestinationFolderName
 ```  
 
 where the variables represent the following values:
-- \<*LogFolderPath*> = the path to the folder that contains the file to be decoded
-- \<*LogFileName*> = the name of the file to be decoded
-- \<*DestinationFolderName*> = the name of the folder for the decoded text file
-- \<*DecodedFileName*> = the name of the decoded text file
+- \<*LogFolderPath*> = The path to the folder that contains the file to be decoded
+- \<*LogFileName*> = The name of the file to be decoded
+- \<*DestinationFolderName*> = The name of the folder for the decoded text file
+- \<*DecodedFileName*> = The name of the decoded text file
 
 The content of the XML file resembles the following.
 
