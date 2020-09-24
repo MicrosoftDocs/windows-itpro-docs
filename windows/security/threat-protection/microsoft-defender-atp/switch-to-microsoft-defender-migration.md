@@ -1,5 +1,5 @@
 ---
-title: Make the switch to Microsoft Defender for Endpoint
+title: Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
 description: Make the switch to Microsoft Defender for Endpoint. Read this article for an overview.
 keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
@@ -19,11 +19,11 @@ ms.collection:
 - m365solution-overview 
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 09/22/2020
+ms.date: 09/24/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
-# Make the switch to Microsoft Defender for Endpoint
+# Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
 
 If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection), and you're looking for help, you're in the right place. Use this article as a guide to plan your migration.  
 
