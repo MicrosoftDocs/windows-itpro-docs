@@ -51,7 +51,7 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 |**Enable Network Protection** with PowerShell <br/><br/>*You can use PowerShell to enable Network Protection.* |[Turn on Network Protection with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection#powershell) |
 |**Configure controlled folder access** to protect against ransomware <br/><br/>*[Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) is also referred to as antiransomware protection.* |[Enable controlled folder access with PowerShell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders#powershell) |
 |**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices |[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
-|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker PowerShell reference guide](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps) |
+|**Configure encryption and BitLocker** to protect information on your organization's devices running Windows |[BitLocker PowerShell reference guide](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps&preserve-view=true) |
 
 ## Configure Microsoft Defender for Endpoint with Windows Management Instrumentation (WMI)
 
