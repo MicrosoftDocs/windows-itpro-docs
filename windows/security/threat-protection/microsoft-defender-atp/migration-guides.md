@@ -1,5 +1,5 @@
 ---
-title: Make the switch to Microsoft Defender for Endpoint
+title: Migration guides to make the switch to Microsoft Defender for Endpoint
 description: Learn how to make the switch from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint
 search.appverid: MET150    
 author: denisebmsft
