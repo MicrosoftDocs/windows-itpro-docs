@@ -1,10 +1,11 @@
 ---
 title: Configure automated investigation and remediation capabilities
-description: Set up your automated investigation and remediation capabilities in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: conceptual
-ms.reviewer: ramarom, evaldm, isco, mabraitm
+ms.topic: article
+ms.date: 09/24/2020
+ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ---
 
-# Configure automated investigation and remediation capabilities in Microsoft Defender Advanced Threat Protection
+# Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
