@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate 
 ms.topic: article
-ms.date: 09/04/2020
+ms.date: 09/24/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -36,11 +36,12 @@ ms.reviewer: depicker, yongrhee, chriggs
 **Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add Symantec to the exclusion list for Microsoft Defender for Endpoint](#add-symantec-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+3. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+4. [Add Microsoft Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
+5. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
+6. [Add Symantec to the exclusion list for Microsoft Defender for Endpoint](#add-symantec-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
+7. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+8. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)
 
@@ -113,6 +114,16 @@ Microsoft Defender Antivirus can run alongside Symantec if you set Microsoft Def
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
+
+## Get updates for Microsoft Defender Antivirus
+
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+- Security intelligence updates
+- Product updates
+
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for Symantec
 
