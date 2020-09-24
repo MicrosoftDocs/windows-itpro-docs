@@ -34,7 +34,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
-3. [Uninstall your non-Microsoft solution](#uninstall-mcafee).
+3. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution).
 4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
