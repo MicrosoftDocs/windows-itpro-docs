@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH 
-ms.date: 09/22/2020
+ms.date: 09/24/2020
 ---
 
 # Make the switch to Microsoft Defender for Endpoint and Microsoft Defender Antivirus
