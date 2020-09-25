@@ -34,6 +34,8 @@ If no user is signed in, even if both the Internet Explorer proxy and netsh conf
 
 You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie `) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply. 
 
+### Summary of settings behavior
+
 These tables summarize the behavior for various combinations of settings:
 
 With an interactive user signed in:
@@ -66,9 +68,9 @@ This policy is meant to ensure that proxy settings apply uniformly to the same c
 
 ## Using a proxy with Microsoft Connected Cache
 
-Starting with Windows 10, version 2004, you can use Microsoft Connected Cache behind a proxy. In older versions, when you set Delivery Optimization to download from Microsoft Connected Cache, it will bypass the proxy and try to connect directly to the Connected Cache server. This can cause failure to download.
+Starting with Windows 10, version 2004, you can use Connected Cache behind a proxy. In older versions, when you set Delivery Optimization to download from Connected Cache, it will bypass the proxy and try to connect directly to the Connected Cache server. This can cause failure to download.
 
-However, you can set the Microsoft Connected Cache server to use an unauthenticated proxy. For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#prerequisites-and-limitations) for more information. 
+However, you can set the Connected Cache server to use an unauthenticated proxy. For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#prerequisites-and-limitations). 
 
  ## Related articles
 
