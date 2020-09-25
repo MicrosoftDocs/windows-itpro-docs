@@ -1150,6 +1150,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+## ADMX_Thumbnails policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbnails" id="admx-thumbnails-disablethumbnails">ADMX_Thumbnails/DisableThumbnails</a>
+  </dd>  
+  <dd>
+    <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbnailsonnetworkfolders" id="admx-thumbnails-disablethumbnailsonnetworkfolders">ADMX_Thumbnails/DisableThumbnailsOnNetworkFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbsdbonnetworkfolders" id="admx-thumbnails-disablethumbsdbonnetworkfolders">ADMX_Thumbnails/DisableThumbsDBOnNetworkFolders</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
