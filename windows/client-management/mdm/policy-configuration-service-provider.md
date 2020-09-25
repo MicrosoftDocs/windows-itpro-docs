@@ -1113,40 +1113,40 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-tcpip.md#admx-tcpip-6to4-router-name" id="admx-tcpip-6to4-router-name">ADMX_tcpip/6to4_Router_Name</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-6to4-router-name-resolution-interval" id="admx-tcpip-6to4-router-name-resolution-interval">ADMX_tcpip/6to4_Router_Name_Resolution_Interval</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-6to4-router-name-resolution-interval" id="admx-tcpip-6to4-router-name-resolution-interval">ADMX_tcpip/6to4_Router_Name_Resolution_Interval</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-6to4-state" id="admx-tcpip-6to4-state">ADMX_tcpip/6to4_State</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-6to4-state" id="admx-tcpip-6to4-state">ADMX_tcpip/6to4_State</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-iphttps-clientstate" id="admx-tcpip-iphttps-clientstate">ADMX_tcpip/IPHTTPS_ClientState</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-iphttps-clientstate" id="admx-tcpip-iphttps-clientstate">ADMX_tcpip/IPHTTPS_ClientState</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-ip-stateless-autoconfiguration-limits-state" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state">ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-ip-stateless-autoconfiguration-limits-state" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state">ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-isatap-router-name" id="admx-tcpip-isatap-router-name">ADMX_tcpip/ISATAP_Router_Name</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-isatap-router-name" id="admx-tcpip-isatap-router-name">ADMX_tcpip/ISATAP_Router_Name</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-isatap-state" id="admx-tcpip-isatap-state">ADMX_tcpip/ISATAP_State</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-isatap-state" id="admx-tcpip-isatap-state">ADMX_tcpip/ISATAP_State</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-teredo-client-port" id="admx-tcpip-teredo-client-port">ADMX_tcpip/Teredo_Client_Port</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-teredo-client-port" id="admx-tcpip-teredo-client-port">ADMX_tcpip/Teredo_Client_Port</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-teredo-default-qualified" id="admx-tcpip-teredo-default-qualified">ADMX_tcpip/Teredo_Default_Qualified</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-teredo-default-qualified" id="admx-tcpip-teredo-default-qualified">ADMX_tcpip/Teredo_Default_Qualified</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-teredo-refresh-rate" id="admx-tcpip-teredo-refresh-rate">ADMX_tcpip/Teredo_Refresh_Rate</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-teredo-refresh-rate" id="admx-tcpip-teredo-refresh-rate">ADMX_tcpip/Teredo_Refresh_Rate</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-teredo-server-name" id="admx-tcpip-teredo-server-name">ADMX_tcpip/Teredo_Server_Name</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-teredo-server-name" id="admx-tcpip-teredo-server-name">ADMX_tcpip/Teredo_Server_Name</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-teredo-state" id="admx-tcpip-teredo-state">ADMX_tcpip/Teredo_State</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-teredo-state" id="admx-tcpip-teredo-state">ADMX_tcpip/Teredo_State</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-tcpip#admx-tcpip-windows-scaling-heuristics-state" id="admx-tcpip-windows-scaling-heuristics-state">ADMX_tcpip/Windows_Scaling_Heuristics_State</a>
+    <a href="./policy-csp-admx-tcpip.md#admx-tcpip-windows-scaling-heuristics-state" id="admx-tcpip-windows-scaling-heuristics-state">ADMX_tcpip/Windows_Scaling_Heuristics_State</a>
   </dd>
 </dl>
 
