@@ -39,7 +39,8 @@ For more information preview features, see [Preview features](https://docs.micro
 > ```
 
 ## September 2020
-- [Microsoft Defender ATP for Android](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender ATP for Android.
+- [Microsoft Defender ATP for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, update, and use Microsoft Defender ATP for Android.
+- [Threat and vulnerability management macOS support](tvm-supported-os.md)<br> Threat and vulnerability management for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 ## July 2020
 - [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates. 
