@@ -43,7 +43,9 @@ To troubleshoot Stop error messages, follow these general steps:
 2. As a best practice, we recommend that you do the following:
 
     a. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
-    
+   - [Windows 10, version 2004](https://support.microsoft.com/help/4555932)  
+   - [Windows 10, version 1909](https://support.microsoft.com/help/4529964)
+   - [Windows 10, version 1903](https://support.microsoft.com/help/4498140)
    - [Windows 10, version 1809](https://support.microsoft.com/help/4464619)
    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479)
    - [Windows 10, version 1709](https://support.microsoft.com/help/4043454)
