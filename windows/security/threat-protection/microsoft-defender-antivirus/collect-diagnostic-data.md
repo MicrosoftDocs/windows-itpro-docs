@@ -94,6 +94,19 @@ When the SupportLogLocation parameter is used, a folder structure as below will 
 > [!NOTE]
 > When using a File share please make sure that account used to collect the diagnostic package has write access to the share.  
 
+You can also specify where the diagnostic .cab file will be created using a Group Policy Object (GPO). 
+
+1. Open the Local Group Policy Editor and find the SupportLogLocation GPO at: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
+2. Select **Define the directory path to copy support log files**.
+<br>
+<br>
+    ![Screenshot of local group policy editor](images/GPO-diagpath.png)  
+
+
+3. Inside the policy editor, select **Enabled**.
+4. Specify the directory path where you want to copy the support log files in the **Options** field.
+5. Select **Apply**.
+
 ## See also
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
