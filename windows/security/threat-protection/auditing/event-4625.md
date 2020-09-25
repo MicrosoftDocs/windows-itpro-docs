@@ -166,7 +166,7 @@ This event generates on domain controllers, member servers, and workstations.
     | 0xC0000064              | User logon with misspelled or bad user account                                                       |
     | 0xC000006A              | User logon with misspelled or bad password                                                           |
     | 0XC000006D              | This is either due to a bad username or authentication information                                   |
-    | 0XC000006E              | Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions).                                                               |
+    | 0XC000006E              | Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions).     |
     | 0xC000006F              | User logon outside authorized hours                                                                  |
     | 0xC0000070              | User logon from unauthorized workstation                                                             |
     | 0xC0000071              | User logon with expired password                                                                     |
