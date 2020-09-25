@@ -62,7 +62,7 @@ The Settings UI is talking to the Update Orchestrator service which in turn is t
    - Windows Update 
 
 ## Feature updates are not being offered while other updates are
-On computers running [Windows 10 1709 or higher](#BKMK_DCAT) configured to update from Windows Update (usually WUfB scenario) servicing and definition updates are being installed successfully, but feature updates are never offered.
+Devices running Windows 10, version 1709 through Windows 10, version 1803 that are [configured to update from Windows Update](#BKMK_DCAT) (including Windows Update for Business scenarios) are able to install servicing and definition updates but are never offered feature updates.
 
 Checking the WindowsUpdate.log reveals the following error:
 ```console
