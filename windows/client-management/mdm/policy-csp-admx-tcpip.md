@@ -205,7 +205,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="#admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**  
+<a href="" id="admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**  
 
 <!--SupportedSKUs-->
 <table>
