@@ -212,6 +212,7 @@
 #### [ADMX_Snmp](policy-csp-admx-snmp.md)
 #### [ADMX_tcpip](policy-csp-admx-tcpip.md)
 #### [ADMX_Thumbnails](policy-csp-admx-thumbnails.md)
+#### [ADMX_TPM](policy-csp-admx-tpm.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)

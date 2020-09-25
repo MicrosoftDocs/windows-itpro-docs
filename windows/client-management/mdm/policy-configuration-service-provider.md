@@ -1164,6 +1164,41 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_TPM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-blockedcommandslist-name" id="admx-tpm-blockedcommandslist-name">ADMX_TPM/BlockedCommandsList_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-cleartpmifnotready-name" id="admx-tpm-cleartpmifnotready-name">ADMX_TPM/ClearTPMIfNotReady_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-ignoredefaultlist-name" id="admx-tpm-ignoredefaultlist-name">ADMX_TPM/IgnoreDefaultList_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-ignorelocallist-name" id="admx-tpm-ignorelocallist-name">ADMX_TPM/IgnoreLocalList_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-osmanagedauth-name" id="admx-tpm-osmanagedauth-name">ADMX_TPM/OSManagedAuth_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-optintodsha-name" id="admx-tpm-optintodsha-name">ADMX_TPM/OptIntoDSHA_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-standarduserauthorizationfailureduration-name" id="admx-tpm-standarduserauthorizationfailureduration-name">ADMX_TPM/StandardUserAuthorizationFailureDuration_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-standarduserauthorizationfailureindividualthreshold-name" id="admx-tpm-standarduserauthorizationfailureindividualthreshold-name">ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-standarduserauthorizationfailuretotalthreshold-name" id="admx-tpm-standarduserauthorizationfailuretotalthreshold-name">ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tpm.md#admx-tpm-uselegacydap-name" id="admx-tpm-uselegacydap-name">ADMX_TPM/UseLegacyDAP_Name</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
