@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Configure and validate exclusions for Microsoft Defender ATP for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
