@@ -50,7 +50,7 @@ WDAC policies can be applied to devices running any edition of Windows 10 or Win
 
 ## AppLocker
 
-AppLocker was introduced with Windows 7 and allows organizations to control what applications their users are allowed to run on their Windows clients. AppLocker helps to prevent end users avoid running unapproved software on their computers, but it does not meet the servicing criteria for being a security feature.
+AppLocker was introduced with Windows 7 and allows organizations to control what applications are allowed to run on their Windows clients. AppLocker helps to prevent end users from running unapproved software on their computers, but it does not meet the servicing criteria for being a security feature.
 
 AppLocker policies can apply to all users on a computer or to individual users and groups. AppLocker rules can be defined based on:
 
