@@ -1199,6 +1199,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_W32Time policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-w32time.md#admx-w32time-policy-config" id="admx-w32time-policy-config">ADMX_W32Time/W32TIME_POLICY_CONFIG</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-w32time.md#admx-w32time-policy-configure-ntpclient" id="admx-w32time-policy-configure-ntpclient">ADMX_W32Time/W32TIME_POLICY_CONFIGURE_NTPCLIENT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-w32time.md#admx-w32time-policy-enable-ntpclient" id="admx-w32time-policy-enable-ntpclient">ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPCLIENT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-w32time.md#admx-w32time-policy-enable-ntpserver" id="admx-w32time-policy-enable-ntpserver">ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPSERVER</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
