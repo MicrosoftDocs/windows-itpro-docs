@@ -40,7 +40,7 @@ WDAC policies apply to the managed computer as a whole and affects all users of 
 - The path from which the app or file is launched (beginning with Windows 10 version 1903);
 - The process that launched the app or binary.
 
-Note that prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity (CCI) policies. WDAC was also one of the features which comprised the now-defunct term 'Device Guard'.
+Note that prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity (CCI). WDAC was also one of the features which comprised the now-defunct term 'Device Guard'.
 
 ### WDAC System Requirements
 
@@ -50,7 +50,7 @@ WDAC policies can be applied to devices running any edition of Windows 10 or Win
 
 ## AppLocker
 
-AppLocker was introduced with Windows 7 and allows organizations to control what applications their users are allowed to run on their Windows clients. AppLocker provides security value as a defense in depth feature and helps end users avoid running unapproved software on their computers.
+AppLocker was introduced with Windows 7 and allows organizations to control what applications their users are allowed to run on their Windows clients. AppLocker helps to prevent end users avoid running unapproved software on their computers, but it does not meet the servicing criteria for being a security feature.
 
 AppLocker policies can apply to all users on a computer or to individual users and groups. AppLocker rules can be defined based on:
 
@@ -72,7 +72,5 @@ In some cases, however, AppLocker may be the more appropriate technology for you
 - You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
 - You need to apply different policies for different users or groups on shared computers.
 
-## When to use both WDAC and AppLocker together
-
-AppLocker can also be deployed as a complement to WDAC to add user- or group-specific rules for shared device scenarios where its important to prevent some users from running specific apps.
-As a best practice, you should enforce WDAC at the most restrictive level possible for your organization, and then you can use AppLocker to fine-tune the restrictions to an even lower level.
+AppLocker can also be deployed as a complement to WDAC to add user- or group-specific rules for shared device scenarios where it is important to prevent some users from running specific apps.
+As a best practice, you should enforce WDAC at the most restrictive level possible for your organization, and then you can use AppLocker to further fine-tune the restrictions.
