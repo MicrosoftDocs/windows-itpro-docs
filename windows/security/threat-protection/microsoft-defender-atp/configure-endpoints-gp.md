@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices to Microsoft Defender ATP via Group Policy
-description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
-keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Microsoft Defender Advanced Threat Protection machines, group policy
+description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+keywords: configure devices using group policy, device management, configure Windows ATP devices, onboard Microsoft Defender Advanced Threat Protection devices, group policy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +18,10 @@ ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# Onboard Windows 10 machines using Group Policy 
+# Onboard Windows 10 devices using Group Policy 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -37,7 +40,7 @@ ms.date: 04/24/2018
 
 > For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
-## Onboard machines using Group Policy
+## Onboard devices using Group Policy
 1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
  
     a.  In the navigation pane, select **Settings** > **Onboarding**.
@@ -48,7 +51,7 @@ ms.date: 04/24/2018
     
     d. Click **Download package** and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -65,15 +68,15 @@ ms.date: 04/24/2018
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the machine, you can choose to run a detection test to verify that the machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
 
 ## Additional Microsoft Defender ATP configuration settings
-For each machine, you can state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
 ### Configure sample collection settings
-1.  On your GP management machine, copy the following files from the
+1.  On your GP management device, copy the following files from the
     configuration package:
 
     a.  Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
@@ -95,17 +98,86 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 5.  Click **Windows components** and then **Windows Defender ATP**.
 
-6.  Choose to enable or disable sample sharing from your machines.
+6.  Choose to enable or disable sample sharing from your devices.
 
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
 
 
-## Offboard machines using Group Policy
-For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+## Other recommended configuration settings
+
+### Update endpoint protection configuration
+
+After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
+
+All policies are located under `Computer Configuration\Policies\Administrative Templates`.
+
+**Policy location:** \Windows Components\Windows Defender ATP
+
+Policy | Setting 
+:---|:---
+Enable\Disable Sample collection|	Enabled - "Enable sample collection on machines" checked
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus
+
+Policy | Setting 
+:---|:---
+Configure detection for potentially unwanted applications | Enabled, Block
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
+
+Policy | Setting 
+:---|:---
+Join Microsoft MAPS | Enabled, Advanced MAPS
+Send file samples when further analysis is required | Enabled, Send safe samples
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
+
+Policy | Setting 
+:---|:---
+Turn off real-time protection|Disabled
+Turn on behavior monitoring|Enabled
+Scan all downloaded files and attachments|Enabled
+Monitor file and program activity on your computer|Enabled
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
+
+These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
+
+Policy | Setting 
+:---|:---
+Check for the latest virus and spyware security intelligence before running a scheduled scan |Enabled
+
+
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+
+Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+
+1. Open the **Configure Attack Surface Reduction** policy.
+2. Select **Enabled**.
+3. Select the **Show…** button.
+4. Add each GUID in the **Value Name** field with a Value of 2.
+
+This will set each up for audit only.
+
+![Image of attack surface reduction configuration](images/asr-guid.png)
+
+
+
+Policy | Setting 
+:---|:---
+Configure Controlled folder access|	Enabled, Audit Mode
+
+
+
+## Offboard devices using Group Policy
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -117,7 +189,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
     d. Click **Download package** and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -134,25 +206,25 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 9. Click **OK** and close any open GPMC windows.
 
 > [!IMPORTANT]
-> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
 
-## Monitor machine configuration
-With Group Policy there isn’t an option to monitor deployment of policies on the machines. Monitoring can be done directly on the portal, or by using the different deployment tools.
+## Monitor device configuration
+With Group Policy there isn’t an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
-## Monitor machines using the portal
+## Monitor devices using the portal
 1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Click **Machines list**.
-3. Verify that machines are appearing.
+2. Click **Devices list**.
+3. Verify that devices are appearing.
 
 > [!NOTE]
-> It can take several days for machines to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the machine, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> It can take several days for devices to start showing on the **Devices list**. This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics
-- [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 machines using a local script](configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP machines](run-detection-test.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+- [Run a detection test on a newly onboarded Microsoft Defender ATP devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

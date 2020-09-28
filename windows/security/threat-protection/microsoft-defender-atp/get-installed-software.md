@@ -1,7 +1,7 @@
 ---
 title: Get installed software
-description: Retrieves a collection of installed software related to a given machine ID.
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, installed software per machine, threat & vulnerability management api, mdatp tvm api
+description: Retrieves a collection of installed software related to a given device ID.
+keywords: apis, graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,17 +12,20 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
 # Get installed software
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a collection of installed software related to a given machine ID.
+Retrieves a collection of installed software related to a given device ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)

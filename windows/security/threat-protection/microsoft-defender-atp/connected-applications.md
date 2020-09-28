@@ -19,8 +19,11 @@ ms.topic: conceptual
 ---
 
 # Connected applications in Microsoft Defender ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 Connected applications integrates with the Microsoft Defender ATP platform using APIs. 

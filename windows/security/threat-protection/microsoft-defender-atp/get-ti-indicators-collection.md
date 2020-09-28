@@ -1,6 +1,6 @@
 ---
 title: List Indicators API
-description: Use this API to create calls related to get Indicators collection
+description: Learn how to use the List Indicators API to retrieve a collection of all active Indicators in Microsoft Defender Advanced Threat Protection.
 keywords: apis, public api, supported apis, Indicators collection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # List Indicators API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

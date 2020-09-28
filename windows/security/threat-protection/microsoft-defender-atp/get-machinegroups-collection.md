@@ -1,6 +1,6 @@
 ---
 title: Get RBAC machine groups collection API
-description: Retrieves a collection of RBAC machine groups.
+description: Learn how to use the Get KB collection API to retrieve a collection of RBAC device groups in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,11 +20,14 @@ ms.date: 10/07/2018
 
 # Get KB collection API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves a collection of RBAC machine groups.
+Retrieves a collection of RBAC device groups.
 
 ## Permissions
 User needs read permissions.
@@ -61,8 +64,8 @@ Content-type: application/json
 **Response**
 
 Here is an example of the response.
-Field id contains machine group **id** and equal to field **rbacGroupId** in machines info. 
-Field **ungrouped** is true only for one group for all machines that have not been assigned to any group. This group as usual has name "UnassignedGroup".
+Field id contains device group **id** and equal to field **rbacGroupId** in devices info. 
+Field **ungrouped** is true only for one group for all devices that have not been assigned to any group. This group as usual has name "UnassignedGroup".
 
 ```
 HTTP/1.1 200 OK

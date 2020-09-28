@@ -1,5 +1,11 @@
-# [The Microsoft Defender Security Center app](windows-defender-security-center.md)
+---
+ms.author: dansimp
+author: dansimp
+ms.prod: w10
+title: The Microsoft Defender Security Center app
+---
 
+# [The Microsoft Defender Security Center app](windows-defender-security-center.md)
 
 ## [Customize the Microsoft Defender Security Center app for your organization](wdsc-customize-contact-information.md)
 ## [Hide Microsoft Defender Security Center app notifications](wdsc-hide-notifications.md)

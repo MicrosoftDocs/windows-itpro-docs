@@ -1,29 +1,33 @@
 ---
-title: Block potentially unwanted applications with Windows Defender Antivirus
+title: Block potentially unwanted applications with Microsoft Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
-keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Windows Defender Antivirus
+keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: detect
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 02/12/2020
+ms.date:
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Detect and block potentially unwanted applications
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
+
+> [!NOTE]
+> Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices.
 
 Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
@@ -64,20 +68,20 @@ Defender SmartScreen available, including [one for blocking PUA](https://docs.mi
 
 Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
 
-### Windows Defender Antivirus
+### Microsoft Defender Antivirus
 
-The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.
 
 > [!NOTE]
 > This feature is only available in Windows 10.
 
-Windows Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
+Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
-When a PUA file is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
+When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
-The notification appears in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
+The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history).
 
-#### Configure PUA protection in Windows Defender Antivirus
+#### Configure PUA protection in Microsoft Defender Antivirus
 
 You can enable PUA protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
@@ -90,7 +94,7 @@ PUA audit mode is useful if your company is conducting an internal software secu
 
 ##### Use Intune to configure PUA protection
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
 ##### Use Configuration Manager to configure PUA protection
 
@@ -101,7 +105,7 @@ See [How to create and deploy antimalware policies: Scheduled scans settings](ht
 For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
 > [!NOTE]
-> PUA events blocked by Windows Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
+> PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
 
 ##### Use Group Policy to configure PUA protection
 
@@ -109,7 +113,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus**.
+3. Expand the tree to **Windows components > Microsoft Defender Antivirus**.
 
 4. Double-click **Configure protection for potentially unwanted applications**.
 
@@ -142,7 +146,7 @@ Set-MpPreference -PUAProtection disable
 ```
 Setting the value for this cmdlet to `Disabled` will turn the feature off if it has been enabled.
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 #### View PUA events
 
@@ -150,11 +154,11 @@ PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoi
 
 You can turn on email notifications to receive mail about PUA detections.
 
-See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
+See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 #### Allow-listing apps
 
-Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Microsoft Defender Antivirus.
 
 ## Related articles
 

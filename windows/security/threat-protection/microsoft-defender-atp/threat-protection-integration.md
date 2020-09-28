@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Defender ATP with other Microsoft solutions
 ms.reviewer: 
-description: Learn how Microsoft Defender ATP integrations with other Microsoft solutions 
+description: Learn how Microsoft Defender ATP integrates with other Microsoft solutions, including Azure Advanced Threat Protection and Azure Security Center.
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,9 @@ ms.topic: conceptual
 ---
 
 # Microsoft Defender ATP and other Microsoft solutions
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -38,11 +41,11 @@ Microsoft Defender ATP provides a comprehensive server protection solution, incl
 Keep sensitive data secure while enabling productivity in the workplace through data discovery and data protection.
 
 ### Conditional Access
-Microsoft Defender ATP's dynamic machine risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
+Microsoft Defender ATP's dynamic device risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
 
 
 ### Microsoft Cloud App Security
-Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender ATP monitored machines.
+Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender ATP monitored devices.
 
 ### Office 365 Advanced Threat Protection (Office 365 ATP)
 [Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through ATP Safe Links, ATP Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Office 365 ATP and Microsoft Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 

@@ -1,6 +1,6 @@
 ---
 title: Choose a Migration Store Type (Windows 10)
-description: Choose a Migration Store Type
+description: Learn how to choose a migration store type and estimate the amount of disk space needed for computers in your organization.
 ms.assetid: 4e163e90-9c57-490b-b849-2ed52ab6765f
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

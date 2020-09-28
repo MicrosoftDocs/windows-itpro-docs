@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Configure attack surface reduction
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 You can configure attack surface reduction with a number of tools, including:
 
 * Microsoft Intune
@@ -28,7 +31,7 @@ You can configure attack surface reduction with a number of tools, including:
 
 Article | Description
 -|-
-[Enable hardware-based isolation for Microsoft Edge](../windows-defender-application-guard/install-wd-app-guard.md) | How to prepare for and install Application Guard, including hardware and software requirements
+[Enable hardware-based isolation for Microsoft Edge](../microsoft-defender-application-guard/install-md-app-guard.md) | How to prepare for and install Application Guard, including hardware and software requirements
 [Enable application control](../windows-defender-application-control/windows-defender-application-control.md)|How to control applications run by users and protect kernel mode processes
 [Exploit protection](./enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
 [Network protection](./enable-network-protection.md)|How to prevent users from using any apps to access dangerous domains

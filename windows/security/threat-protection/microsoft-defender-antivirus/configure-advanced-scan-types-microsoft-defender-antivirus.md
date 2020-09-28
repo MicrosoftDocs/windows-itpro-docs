@@ -1,13 +1,12 @@
 ---
-title: Configure scanning options for Windows Defender AV
-description: You can configure Windows Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
+title: Configure scanning options for Microsoft Defender AV
+description: You can configure Microsoft Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -17,19 +16,20 @@ manager: dansimp
 
 ---
 
-# Configure Windows Defender Antivirus scanning options
+# Configure Microsoft Defender Antivirus scanning options
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-**Use Microsoft Intune to configure scanning options**
+## Use Microsoft Intune to configure scanning options
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
-<a id="ref1"></a>
-
-## Use Microsoft Endpoint Configuration Manager to configure scanning options:
+## Use Microsoft Endpoint Configuration Manager to configure scanning options
 
 See [How to create and deploy antimalware policies: Scan settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
@@ -41,7 +41,7 @@ To configure the Group Policy settings described in the following table:
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
+3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
 
 4. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
 
@@ -64,11 +64,13 @@ Specify the level of subfolders within an archive folder to scan | Scan > Specif
 
 ## Use PowerShell to configure scanning options
 
-See [Manage Windows Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Use WMI to configure scanning options
 
 For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
+
+<a id="ref1"></a>
 
 ## Email scanning limitations
 
@@ -80,14 +82,14 @@ Email scanning enables scanning of  email files used by Outlook and other mail c
 
 PST files used by Outlook 2003 or older (where the archive type is set to non-unicode) will also be scanned, but Windows Defender cannot remediate threats detected inside PST files.
 
-If Windows Defender Antivirus detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat manually:
+If Microsoft Defender Antivirus detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat manually:
 
 - Email subject
 - Attachment name
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Configure and run on-demand Windows Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
-- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
+- [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: Enable Microsoft Defender ATP Insider Machine
+title: Enable Microsoft Defender ATP Insider Device
 description: Install and use Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
@@ -17,9 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Enable Microsoft Defender ATP Insider Machine
+# Enable Microsoft Defender ATP Insider Device
 
-Endpoint detection and response capabilities in Microsoft Defender ATP for Mac are now in preview. To get these and other preview features, you must set up your Mac machine to be an "Insider" machine as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+Endpoint detection and response capabilities in Microsoft Defender ATP for Mac are now in preview. To get these and other preview features, you must set up your Mac device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
 >[!IMPORTANT]
 >Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
@@ -125,7 +128,7 @@ h. Select  **Manage > Assignments**. In the  **Include**  tab, select  *
 >[!WARNING]
 >You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
 
-## Enable the Insider program manually on a single machine
+## Enable the Insider program manually on a single device
 
 In terminal, run:
 
@@ -145,16 +148,16 @@ For versions earlier than 100.78.0, run:
 
 To get the latest version of the Microsoft Defender ATP for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
-To verify you are running the correct version, run ‘mdatp --health’ on the machine.
+To verify you are running the correct version, run ‘mdatp --health’ on the device.
 
 * The required version is 100.72.15 or later.
 * If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running ‘defaults read com.microsoft.autoupdate2’ from terminal.
 * To change update settings use documentation in [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
 * If you are not using Office for Mac, download and run the AutoUpdate tool.
 
-### A machine still does not appear on Microsoft Defender Security Center
+### A device still does not appear on Microsoft Defender Security Center
 
-After a successful deployment and onboarding of the correct version, check that the machine has connectivity to the cloud service by running ‘mdatp --connectivity-test’.
+After a successful deployment and onboarding of the correct version, check that the device has connectivity to the cloud service by running ‘mdatp --connectivity-test’.
 
 * Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 

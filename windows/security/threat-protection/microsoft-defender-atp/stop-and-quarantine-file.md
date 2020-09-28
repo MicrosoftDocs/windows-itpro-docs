@@ -1,6 +1,6 @@
 ---
 title: Stop and quarantine file API
-description: Use this API to stop and quarantine file.
+description: Learn how to stop running a file on a device and delete the file in Microsoft Defender Advanced Threat Protection. See an example.
 keywords: apis, graph api, supported apis, stop and quarantine file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,20 +18,23 @@ ms.topic: article
 
 # Stop and quarantine file API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
-Stop execution of a file on a machine and delete it.
+Stop execution of a file on a device and delete it.
 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -44,7 +47,7 @@ Delegated (work or school account) | Machine.StopAndQuarantine | 'Stop And Quara
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -64,7 +67,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-Sha1 |	String	 | Sha1 of the file to stop and quarantine on the machine. **Required**.
+Sha1 |	String	 | Sha1 of the file to stop and quarantine on the device. **Required**.
 
 ## Response
 If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.

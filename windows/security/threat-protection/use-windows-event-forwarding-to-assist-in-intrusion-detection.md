@@ -24,8 +24,7 @@ Learn about an approach to collect events from devices in your organization. Thi
 
 Windows Event Forwarding (WEF) reads any operational or administrative event log on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
 
-To accomplish this, there are two different of subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The
-Suspect subscription collects additional events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
+To accomplish this, there are two different subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The Suspect subscription collects additional events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
 
 This implementation helps differentiate where events are ultimately stored. Baseline events can be sent to devices with online analytical capability, such as Security Event Manager (SEM), while also sending events to a MapReduce system, such as HDInsight or Hadoop, for long-term storage and deeper analysis. Events from the Suspect subscription are sent directly to a MapReduce system due to volume and lower signal/noise ratio, they are largely used for host forensic analysis.
 
@@ -174,7 +173,7 @@ To gain the most value out of the baseline subscription we recommend to have the
 -   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A – Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This ensures that the security event log is generating the required events.
 -   Apply at least an Audit-Only AppLocker policy to devices.
 
-    -   If you are already whitelisting or blacklisting events by using AppLocker, then this requirement is met.
+    -   If you are already allowing or restricting events by using AppLocker, then this requirement is met.
     -   AppLocker events contain extremely useful information, such as file hash and digital signature information for executables and scripts.
 
 -   Enable disabled event channels and set the minimum size for modern event files.

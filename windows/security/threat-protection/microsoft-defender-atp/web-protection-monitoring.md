@@ -19,6 +19,9 @@ ms.topic: article
 
 # Monitor web browsing security
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains cards that provide web threat detection statistics.
@@ -47,9 +50,9 @@ Select a specific web threat category in the **Web threat protection summary** c
 - **Blocks** — number of times requests were blocked
 - **Access trend** — change in number of access attempts
 - **Threat category** — type of web threat
-- **Machines** — number of machines with access attempts
+- **Devices** — number of devices with access attempts
 
-Select a domain to view the list of machines that have attempted to access URLs in that domain as well as the list of URLs.
+Select a domain to view the list of devices that have attempted to access URLs in that domain as well as the list of URLs.
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)

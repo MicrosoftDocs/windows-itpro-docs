@@ -1,7 +1,7 @@
 ---
 title: Work with advanced hunting query results in Microsoft Defender ATP
 description: Make the most of the query results returned by advanced hunting in Microsoft Defender ATP
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill down
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -19,12 +19,13 @@ ms.topic: article
 
 # Work with advanced hunting query results
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
-
-[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 While you can construct your [advanced hunting](advanced-hunting-overview.md) queries to return very precise information, you can also work with the query results to gain further insight and investigate specific activities and indicators. You can take the following actions on your query results:
 
@@ -77,8 +78,8 @@ These results are best visualized using a stacked column chart:
 ![Image of advanced hunting query results displayed as a stacked chart](images/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by OS and severity displayed as a stacked chart*
 
-#### Top ten machine groups with alerts
-If you're dealing with a list of values that isn’t finite, you can use the `Top` operator to chart only the values with the most instances. For example, to get the top ten machine groups with the most alerts, use the query below:
+#### Top ten device groups with alerts
+If you're dealing with a list of values that isn’t finite, you can use the `Top` operator to chart only the values with the most instances. For example, to get the top ten device groups with the most alerts, use the query below:
 
 ```kusto
 DeviceAlertEvents
@@ -89,7 +90,7 @@ DeviceAlertEvents
 Use the pie chart view to effectively show distribution across the top groups:
 
 ![Image of advanced hunting query results displayed as a pie chart](images/advanced-hunting-pie-chart.jpg)
-*Pie chart showing distribution of alerts across machine groups*
+*Pie chart showing distribution of alerts across device groups*
 
 #### Malware detections over time
 Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts detections of an EICAR test file at 30 minute intervals to show spikes in detections of that file:
@@ -113,7 +114,7 @@ After running a query, select **Export** to save the results to local file. Your
 - **Any chart** — the query results are exported as a JPEG image of the rendered chart
 
 ## Drill down from query results
-To view more information about entities, such as machines, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity.
+To view more information about entities, such as devices, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity.
 
 ## Tweak your queries from the results
 Right-click a value in the result set to quickly enhance your query. You can use the options to:

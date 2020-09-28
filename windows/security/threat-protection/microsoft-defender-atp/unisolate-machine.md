@@ -1,7 +1,7 @@
 ---
-title: Release machine from isolation API
-description: Use this API to create calls related to release a machine from isolation.
-keywords: apis, graph api, supported apis, remove machine from isolation
+title: Release device from isolation API
+description: Use this API to create calls related to release a device from isolation.
+keywords: apis, graph api, supported apis, remove device from isolation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,7 +17,10 @@ ms.topic: article
 
 ---
 
-# Release machine from isolation API
+# Release device from isolation API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -25,14 +28,14 @@ ms.topic: article
 
 
 ## API description
-Undo isolation of a machine.
+Undo isolation of a device.
 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -45,7 +48,7 @@ Delegated (work or school account) |	Machine.Isolate |	'Isolate machine'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -89,5 +92,5 @@ Content-type: application/json
 ```
 
 
-- To isolate a machine, see [Isolate machine](isolate-machine.md).
+- To isolate a device, see [Isolate device](isolate-machine.md).
 

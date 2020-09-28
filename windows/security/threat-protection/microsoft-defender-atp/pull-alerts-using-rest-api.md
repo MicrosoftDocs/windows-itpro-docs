@@ -1,6 +1,6 @@
 ---
 title: Pull Microsoft Defender ATP detections using REST API
-description: Pull detections from Microsoft Defender ATP REST API.
+description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,9 @@ ms.topic: article
 
 # Pull Microsoft Defender ATP detections using SIEM REST API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -28,7 +31,7 @@ ms.topic: article
 
 >[!Note]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
 >-The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 Microsoft Defender ATP supports the OAuth 2.0 protocol to pull detections from the API.
@@ -114,9 +117,9 @@ sinceTimeUtc | DateTime | Defines the lower time bound alerts are retrieved from
 untilTimeUtc | DateTime | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
 ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
 limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
-machinegroups | string | Specifies machine groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | Single machine tag from the registry.
-CloudCreatedMachineTags | string | Machine tags that were created in Microsoft Defender Security Center.
+machinegroups | string | Specifies device groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all device groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | string | Single device tag from the registry.
+CloudCreatedMachineTags | string | Device tags that were created in Microsoft Defender Security Center.
 
 ### Request example
 The following example demonstrates how to retrieve all the detections in your organization.

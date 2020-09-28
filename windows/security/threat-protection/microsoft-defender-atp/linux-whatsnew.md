@@ -19,6 +19,28 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+## 101.04.76
+
+- Bug fixes
+
+## 101.03.48
+
+- Bug fixes
+
+## 101.02.55
+
+- Fixed an issue where the product sometimes does not start following a reboot / upgrade
+- Fixed an issue where proxy settings are not persisted across product upgrades
+
+## 101.00.75
+
+- Added support for the following file system types: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`, `udf`, and `vfat`
+- New syntax for the [command-line tool](linux-resources.md#configure-from-the-command-line).
+- Performance improvements & bug fixes
+
 ## 100.90.70
 
 > [!WARNING]

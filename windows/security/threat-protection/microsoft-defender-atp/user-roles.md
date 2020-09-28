@@ -1,6 +1,6 @@
 ---
 title: Create and manage roles for role-based access control
-description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation 
+description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft Defender Security Center
 keywords: user roles, roles, access rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,6 +18,10 @@ ms.topic: article
 ---
 
 # Create and manage roles for role-based access control
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -26,80 +30,86 @@ ms.topic: article
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Create roles and assign the role to an Azure Active Directory group
+
 The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
 
-1. In the navigation pane, select **Settings > Roles**.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with a Security administrator or Global administrator role assigned.
 
-2. Click **Add role**. 
+2. In the navigation pane, select **Settings > Roles**.
 
-3. Enter the role name, description, and permissions you'd like to assign to the role.
+3. Select **Add item**.
 
-    - **Role name**
-    - **Description**
-    - **Permissions**
-        - **View data** - Users can view information in the portal.
-         >[!NOTE]
-         >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**.
-      
-        - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
-         - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
-            - Security operations - Take response actions
-              - Approve or dismiss pending remediation actions
-              - Manage allowed/blocked lists for automation
-              - Manage allowed/blocked create Indicators
+4. Enter the role name, description, and permissions you'd like to assign to the role.
 
-         >[!NOTE]
-         >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
-        
-        - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
+5. Select **Next** to assign the role to an Azure AD Security group.
 
-        > [!NOTE]
-        > This setting is only available in the Microsoft Defender ATP administrator (default) role.
+6. Use the filter to select the Azure AD group that you'd like to add to this role to.
 
-        - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
+7. **Save and close**.
 
-        - **Live response capabilities** - Users can take basic or advanced live response commands.
-            - Basic commands allow users to:
-                - Start a live response session
-                - Run read only live response commands on a remote machine 
-             - Advanced commands allow users to:
-                - Run basic actions
-                - Download a file from the remote machine
-                - View a script from the files library
-                - Run a script on the remote machine from the files library take read and write commands. 
+8. Apply the configuration settings.
 
-        For more information on the available commands, see [Investigate machines using Live response](live-response.md).
+> [!IMPORTANT]
+> After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
+
+### Permission options
+
+- **View data**
+    - **Security operations** - View all security operations data in the portal
+    - **Threat and vulnerability management** - View threat and vulnerability management data in the portal
+
+- **Active remediation actions**
+    - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
+    - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
+    - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+
+- **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files 
+
+- **Manage portal system settings** - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups
+
+    > [!NOTE]
+    > This setting is only available in the Microsoft Defender ATP administrator (default) role.
+
+- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+
+- **Live response capabilities**
+    - **Basic** commands:
+        - Start a live response session
+        - Perform read only live response commands on remote device (excluding file copy and execution
+    - **Advanced** commands:
+        - Download a file from the remote device via live response
+        - Download PE and non-PE files from the file page
+        - Upload a file to the remote device
+        - View a script from the files library
+        - Execute a script on the remote device from the files library
+
+For more information on the available commands, see [Investigate devices using Live response](live-response.md).
   
-4. Click **Next** to assign the role to an Azure AD Security group.
+## Edit roles
 
-5. Use the filter to select the Azure AD group that you'd like to add to this role.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings > Roles**.
+
+3. Select the role you'd like to edit.
+
+4. Click **Edit**.
+
+5. Modify the details or the groups that are assigned to the role. 
 
 6. Click **Save and close**.
 
-7. Apply the configuration settings.
-
-
-> [!IMPORTANT]
-> After creating roles, you'll need to create a machine group and provide access to the machine group by assigning it to a role that you just created. 
-
-
-## Edit roles
-
-1. Select the role you'd like to edit.
-
-2. Click **Edit**.
-
-3. Modify the details or the groups that are assigned to the role. 
-
-4. Click **Save and close**.
-
 ## Delete roles
 
-1. Select the role you'd like to delete.
+1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
 
-2. Click the drop-down button and select **Delete role**.
+2. In the navigation pane, select **Settings > Roles**.
 
+3. Select the role you'd like to delete.
+
+4. Click the drop-down button and select **Delete role**.
 
 ## Related topic
+
 - [User basic permissions to access the portal](basic-permissions.md)
-- [Create and manage machine groups](machine-groups.md)
+- [Create and manage device groups](machine-groups.md)

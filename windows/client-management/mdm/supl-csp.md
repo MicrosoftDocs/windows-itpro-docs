@@ -1,6 +1,6 @@
 ---
 title: SUPL CSP
-description: SUPL CSP
+description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
 ms.reviewer: 
 manager: dansimp

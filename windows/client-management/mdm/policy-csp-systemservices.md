@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - SystemServices
-description: Policy CSP - SystemServices
+description: Learn how to use the Policy CSP - SystemServices setting to determine whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -388,12 +388,14 @@ GP Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

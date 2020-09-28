@@ -7,7 +7,6 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
@@ -19,6 +18,9 @@ ms.custom: asr
 ---
 
 # Troubleshoot attack surface reduction rules
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -46,7 +48,7 @@ Attack surface reduction rules will only work on devices with the following cond
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 
-- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 - [Real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
 

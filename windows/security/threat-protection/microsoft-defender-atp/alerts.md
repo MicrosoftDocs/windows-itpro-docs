@@ -1,6 +1,6 @@
 ---
 title: Get alerts API
-description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
+description: Learn about the methods and properties of the Alert resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Alert resource type
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -45,13 +48,13 @@ id | String | Alert ID.
 title | String | Alert title.
 description | String | Alert description.
 alertCreationTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was created.
-lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
-firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
+lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same device.
+firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that device.
 lastUpdateTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was last updated.
 resolvedTime | Nullable DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-incidentId | Nullable Long | The [Incident](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert.
-investigationId | Nullable Long | The [Investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) ID related to the Alert.
-investigationState | Nullable Enum | The current state of the [Investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+incidentId | Nullable Long | The [Incident](view-incidents-queue.md) ID of the Alert.
+investigationId | Nullable Long | The [Investigation](automated-investigations.md) ID related to the Alert.
+investigationState | Nullable Enum | The current state of the [Investigation](automated-investigations.md). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 assignedTo | String | Owner of the alert.
 severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
 status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
@@ -61,6 +64,8 @@ category| String | Category of the alert.
 detectionSource | String | Detection source.
 threatFamilyName | String | Threat family.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
+computerDnsName | String | [machine](machine.md) fully qualified name.
+aadTenantId | String | The Azure Active Directory ID.
 comments | List of Alert comments | Alert Comment is an object that contains: comment string, createdBy string and createTime date time.
 
 ### Response example for getting single alert:

@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Manage portal access using role-based access control
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 - Azure Active Directory
 - Office 365
@@ -35,16 +38,16 @@ Large geo-distributed security operations teams typically adopt a tier-based mod
 Tier | Description
 :---|:---
 Tier 1 | **Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
-Tier 2 | **Regional security operations team** <br> This team can see all the machines for their region and perform remediation actions.
+Tier 2 | **Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.
 Tier 3 | **Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
 
-Microsoft Defender ATP RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, machines they can access, and actions they can take. The RBAC framework is centered around the following controls:
+Microsoft Defender ATP RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
 - **Control who can take specific action**
   - Create custom roles and control what Microsoft Defender ATP capabilities they can access with granularity.
  
-- **Control who can see information on specific machine group or groups**
-  - [Create machine groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
+- **Control who can see information on specific device group or groups**
+  - [Create device groups](machine-groups.md) by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific  Azure Active Directory (Azure AD) user group.
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
@@ -58,7 +61,7 @@ Before using RBAC, it's important that you understand the roles that can grant p
 
 When you first log in to Microsoft Defender Security Center, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
-Someone with a Microsoft Defender ATP Global administrator role has unrestricted access to all machines, regardless of their machine group association and the Azure AD user groups assignments
+Someone with a Microsoft Defender ATP Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
 
 > [!WARNING]
 > Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in Microsoft Defender Security Center, therefore, having the right groups ready in Azure AD is important.
@@ -72,4 +75,4 @@ Someone with a Microsoft Defender ATP Global administrator role has unrestricted
 
 
 ## Related topic
-- [Create and manage machine groups in Microsoft Defender ATP](machine-groups.md)
+- [Create and manage device groups in Microsoft Defender ATP](machine-groups.md)

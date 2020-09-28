@@ -1,7 +1,7 @@
 ---
 title: Supported Microsoft Defender Advanced Threat Protection response APIs  
 description: Learn about the specific response related Microsoft Defender Advanced Threat Protection API calls. 
-keywords: response apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
+keywords: response apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Supported Microsoft Defender ATP query APIs 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -30,16 +33,16 @@ Learn about the supported response related API calls you can run and details suc
 ## In this section
 Topic | Description
 :---|:---
-Collect investigation package | Run this to collect an investigation package from a machine.
-Isolate machine | Run this to isolate a machine from the network.
-Unisolate machine | Remove a machine from isolation. 
+Collect investigation package | Run this to collect an investigation package from a device.
+Isolate device | Run this to isolate a device from the network.
+Unisolate device | Remove a device from isolation. 
 Restrict code execution | Run this to contain an attack by stopping malicious processes. You can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
-Unrestrict code execution | Run this to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
-Run antivirus scan | Remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
+Unrestrict code execution | Run this to reverse the restriction of applications policy after you have verified that the compromised device has been remediated.
+Run antivirus scan | Remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 Stop and quarantine file |  Run this call to stop running processes, quarantine  files, and delete persistency such as registry keys.
-Request sample | Run this call to request a sample of a file from a specific machine. The file will be collected from the machine and uploaded to a secure storage.
+Request sample | Run this call to request a sample of a file from a specific device. The file will be collected from the device and uploaded to a secure storage.
 Block file | Run this to prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
-Unblock file | Allow a file run in the organization using Windows Defender Antivirus.
+Unblock file | Allow a file run in the organization using Microsoft Defender Antivirus.
 Get package SAS URI | Run this to get a URI that allows downloading an investigation package.
 Get MachineAction object | Run this to get MachineAction object.
 Get MachineActions collection | Run this to get MachineAction collection.

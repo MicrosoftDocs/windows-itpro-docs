@@ -1,7 +1,7 @@
 ---
 title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
-description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it is malware or a potentially unwanted application.
+description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it's malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -18,7 +18,7 @@ search.appverid: met150
 
 # How Microsoft identifies malware and potentially unwanted applications
 
-Microsoft aims to provide a delightful and productive Windows experience by working to ensure you are safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you are protected against known threats and warned about software that is unknown to us.  
+Microsoft aims to provide a delightful and productive Windows experience by working to ensure you're safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you're protected against known threats. You are also warned about software that is unknown to us.  
 
 You can assist Microsoft by [submitting unknown or suspicious software for analysis](https://www.microsoft.com/wdsi/filesubmission/). This will help ensure that unknown or suspicious software is scanned by our system to start establishing reputation. [Learn more about submitting files for analysis](submission-guide.md)
 
@@ -29,9 +29,9 @@ The next sections provide an overview of the classifications we use for applicat
 
 ## Unknown – Unrecognized software  
 
-No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously being updated and released, it's impossible to have information about every single site and program.
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously updated and released, it's impossible to have information about every single site and program.
 
-You can think of Unknown/Uncommonly downloaded warnings as an early warning system for potentially undetected malware, as there is generally a delay from the time new malware is released until it is identified. Not all uncommon programs are malicious, but the risk in the unknown category is significantly higher for the typical user. Warnings for unknown software are not blocks, and users can choose to download and run the application normally if they wish to.
+Think of Unknown/Uncommonly downloaded warnings as an early warning system for potentially undetected malware. There's generally a delay from the time new malware is released until it's identified. Not all uncommon programs are malicious, but the risk in the unknown category is much higher for the typical user. Warnings for unknown software aren't blocks. Users can choose to download and run the application normally if they wish to.
 
 Once enough data is gathered, Microsoft's security solutions can make a determination. Either no threats are found, or an application or software is categorized as malware or potentially unwanted software.
 
@@ -61,11 +61,11 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
 
-* **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note which states you must pay money, complete surveys, or perform other actions before you can use your device again. [See more information about ransomware](ransomware-malware.md).
+* **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note that states you must pay money or perform other actions before you can use your device again. [See more information about ransomware](ransomware-malware.md).
 
 * **Rogue security software:** Malware that pretends to be security software but doesn't provide any protection. This type of malware usually displays alerts about nonexistent threats on your device. It also tries to convince you to pay for its services.
 
-* **Trojan:** A type of malware that attempts to appear harmless. Unlike a virus or a worm, a trojan doesn't spread by itself. Instead, it tries to look legitimate and tricks users into downloading and installing it. Once installed, trojans perform various malicious activities such as stealing personal information, downloading other malware, or giving attackers access to your device.
+* **Trojan:** A type of malware that attempts to appear harmless. Unlike a virus or a worm, a trojan doesn't spread by itself. Instead, it tries to look legitimate to tricks users into downloading and installing it. Once installed, trojans perform various malicious activities such as stealing personal information, downloading other malware, or giving attackers access to your device.
 
 * **Trojan clicker:** A type of trojan that automatically clicks buttons or similar controls on websites or applications. Attackers can use this trojan to click on online advertisements. These clicks can skew online polls or other tracking systems and can even install applications on your device.
 
@@ -73,17 +73,17 @@ Microsoft classifies most malicious software into one of the following categorie
 
 ### Unwanted software
 
-Microsoft believes that you should have control over your Windows experience. Software running on Windows should keep you in control of your device through informed choices and accessible controls. Microsoft identifies software behaviors that ensure you stay in control. We classify software that does not fully demonstrate these behaviors as "unwanted software".
+Microsoft believes that you should have control over your Windows experience. Software running on Windows should keep you in control of your device through informed choices and accessible controls. Microsoft identifies software behaviors that ensure you stay in control. We classify software that doesn't fully demonstrate these behaviors as "unwanted software".
 
 #### Lack of choice
 
-You must be notified about what is happening on your device, including what software does and whether it is active.
+You must be notified about what is happening on your device, including what software does and whether it's active.
 
 Software that exhibits lack of choice might:
 
 * Fail to provide prominent notice about the behavior of the software and its purpose and intent.
 
-* Fail to clearly indicate when the software is active and might also attempt to hide or disguise its presence.
+* Fail to clearly indicate when the software is active. It might also attempt to hide or disguise its presence.
 
 * Install, reinstall, or remove software without your permission, interaction, or consent.
 
@@ -93,7 +93,7 @@ Software that exhibits lack of choice might:
 
 * Falsely claim to be software from Microsoft.
 
-Software must not mislead or coerce you into making decisions about your device. This is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
+Software must not mislead or coerce you into making decisions about your device. It is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
 
 * Display exaggerated claims about your device's health.
 
@@ -103,7 +103,7 @@ Software must not mislead or coerce you into making decisions about your device.
 
 Software that stores or transmits your activities or data must:
 
-* Give you notice and get consent to do so. Software should not include an option that configures it to hide activities associated with storing or transmitting your data.
+* Give you notice and get consent to do so. Software shouldn't include an option that configures it to hide activities associated with storing or transmitting your data.
 
 #### Lack of control
 
@@ -119,7 +119,7 @@ Software that exhibits lack of control might:
 
 * Modify or manipulate webpage content without your consent.
 
-Software that changes your browsing experience must only use the browser's supported extensibility model for installation, execution, disabling, or removal. Browsers that do not provide supported extensibility models are considered non-extensible and should not be modified.
+Software that changes your browsing experience must only use the browser's supported extensibility model for installation, execution, disabling, or removal. Browsers that don't provide supported extensibility models are considered non-extensible and shouldn't be modified.
 
 #### Installation and removal
 
@@ -175,7 +175,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Cryptomining software:** Software that uses your device resources to mine cryptocurrencies.
 
-* **Bundling software:** Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
+* **Bundling software:** Software that offers to install other software that is not developed by the same entity or not required for the software to run. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
 
 * **Marketing software:** Software that monitors and transmits the activities of users to applications or services other than itself for marketing research.
 

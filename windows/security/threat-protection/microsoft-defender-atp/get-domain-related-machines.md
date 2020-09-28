@@ -1,7 +1,7 @@
 ---
 title: Get domain related machines API
-description: Retrieves a collection of machines related to a given domain address.
-keywords: apis, graph api, supported apis, get, domain, related, machines
+description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender Advanced Threat Protection.
+keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Get domain related machines API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -28,7 +31,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated to or fr
 
 
 ## Limitations
-1. You can query on machines last seen in the past 30 days.
+1. You can query on devices last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -45,10 +48,10 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only machines that the user can access, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- Response will include only devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/domains/{domain}/machines
 ```
 
@@ -75,6 +78,6 @@ Here is an example of the request.
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/domains/api.securitycenter.windows.com/machines
 ```

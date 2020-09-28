@@ -1,13 +1,11 @@
 ---
-title: Enable cloud-delivered protection in Windows Defender Antivirus
+title: Enable cloud-delivered protection in Microsoft Defender Antivirus
 description: Enable cloud-delivered protection to benefit from fast and advanced protection features.
-keywords: windows defender antivirus, antimalware, security, cloud, block at first sight
+keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -18,19 +16,22 @@ ms.custom: nextgen
 
 # Enable cloud-delivered protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Microsoft Defender Antivirus
 
 > [!NOTE]
-> The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+> The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud; rather, it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
-Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
-![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
-You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
+You can enable or disable Microsoft Defender Antivirus cloud-delivered protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
-See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-delivered protection.
+See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for an overview of Microsoft Defender Antivirus cloud-delivered protection.
 
 There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-delivered protection service. See [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md) for more details.
 
@@ -42,7 +43,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services > Intune**.
 3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
-4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
+4. Select **Properties**, select **Settings: Configure**, and then select **Microsoft Defender Antivirus**.
 5. On the **Cloud-delivered protection** switch, select **Enable**.
 6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**.
 7. In the **Submit samples consent** dropdown, select one of the following:
@@ -56,7 +57,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
         > [!WARNING]
         > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender ATP won't work.
 
-8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
+8. Click **OK** to exit the **Microsoft Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
@@ -72,7 +73,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 3. Select **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > MAPS**
+4. Expand the tree to **Windows components > Microsoft Defender Antivirus > MAPS**
 
 5. Double-click **Join Microsoft MAPS**. Ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
 
@@ -98,7 +99,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus. [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Microsoft Defender Antivirus. [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 >[!NOTE]
 > You can also set **-SubmitSamplesConsent** to `SendSafeSamples` (the default setting), `NeverSend`, or `AlwaysPrompt`. The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
@@ -139,9 +140,9 @@ See the following for more information and allowed parameters:
 
 - [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
 - [Configure block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
 - [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
-- [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
+- [Utilize Microsoft cloud-delivered protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,9 +1,8 @@
 ---
-title: Windows Defender Offline in Windows 10
-description: You can use Windows Defender Offline straight from the Windows Defender Antivirus app. You can also manage how it is deployed in your network.
+title: Microsoft Defender Offline in Windows 10
+description: You can use Microsoft Defender Offline straight from the Windows Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,21 +15,24 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Run and review the results of a Windows Defender Offline scan
+# Run and review the results of a Microsoft Defender Offline scan
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
+Microsoft Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
-You can use Windows Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
+You can use Microsoft Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
 
-In Windows 10, Windows Defender Offline can be run with one click directly from the [Windows Security app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
+In Windows 10, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## prerequisites and requirements
 
-Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10. 
+Microsoft Defender Offline in Windows 10 has the same hardware requirements as Windows 10. 
 
 For more information about Windows 10 requirements, see the following topics:
 
@@ -39,52 +41,50 @@ For more information about Windows 10 requirements, see the following topics:
 - [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049(v=vs.85).aspx)
 
 > [!NOTE]
-> Windows Defender Offline is not supported on machines with ARM processors, or on Windows Server Stock Keeping Units.
+> Microsoft Defender Offline is not supported on machines with ARM processors, or on Windows Server Stock Keeping Units.
 
-To run Windows Defender Offline from the endpoint, the user must be logged in with administrator privileges.
+To run Microsoft Defender Offline from the endpoint, the user must be logged in with administrator privileges.
  
-## Windows Defender Offline updates
+## Microsoft Defender Offline updates
 
-Windows Defender Offline uses the most recent protection updates available on the endpoint; it's updated whenever Windows Defender Antivirus is updated. 
+Microsoft Defender Offline uses the most recent protection updates available on the endpoint; it's updated whenever Windows Defender Antivirus is updated. 
 
 > [!NOTE]
-> Before running an offline scan, you should attempt to update Windows Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Before running an offline scan, you should attempt to update Microsoft Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-See the [Manage Windows Defender Antivirus Security intelligence  updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
+See the [Manage Microsoft Defender Antivirus Security intelligence  updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
 
 ## Usage scenarios
 
-In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Windows Defender Offline needs to run, it will prompt the user on the endpoint. 
+In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Microsoft Defender Offline needs to run, it will prompt the user on the endpoint. 
 
 The need to perform an offline scan will also be revealed in Microsoft Endpoint Configuration Manager if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
-![Windows notification showing the requirement to run Windows Defender Offline](images/defender/notification.png)
+![Windows notification showing the requirement to run Microsoft Defender Offline](images/defender/notification.png)
 
-The user will also be notified within the Windows Defender client:
-
-![Windows Defender showing the requirement to run Windows Defender Offline](images/defender/client.png)
+The user will also be notified within the Windows Defender client.
 
 In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**. 
 
-Windows Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
+Microsoft Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
 
-![Microsoft Endpoint Configuration Manager indicating a Windows Defender Offline scan is required](images/defender/sccm-wdo.png)
+![Microsoft Endpoint Configuration Manager indicating a Microsoft Defender Offline scan is required](images/defender/sccm-wdo.png)
 
 ## Configure notifications
 <a name="manage-notifications"></a>
 
-Windows Defender Offline notifications are configured in the same policy setting as other Windows Defender AV notifications.
+Microsoft Defender Offline notifications are configured in the same policy setting as other Microsoft Defender AV notifications.
 
 For more information about notifications in Windows Defender, see the [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md) topic.
 
 ## Run a scan 
 
 > [!IMPORTANT]
-> Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
+> Before you use Microsoft Defender Offline, make sure you save any files and shut down running programs. The Microsoft Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
 
-You can run a Windows Defender Offline scan with the following:
+You can run a Microsoft Defender Offline scan with the following:
 
 - PowerShell
 - Windows Management Instrumentation (WMI)
@@ -100,15 +100,15 @@ Use the following cmdlets:
 Start-MpWDOScan
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to run an offline scan
 
 Use the [**MSFT_MpWDOScan**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class to run an offline scan.
 
-The following WMI script snippet will immediately run a Windows Defender Offline scan, which will cause the endpoint to restart, run the offline scan, and then restart and boot into Windows.
+The following WMI script snippet will immediately run a Microsoft Defender Offline scan, which will cause the endpoint to restart, run the offline scan, and then restart and boot into Windows.
 
-```WMI
+```console
 wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start 
 ```
 
@@ -121,10 +121,8 @@ See the following for more information:
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Advanced scan** label:
-
     
-3. Select **Windows Defender Offline scan** and click **Scan now**.
-
+3. Select **Microsoft Defender Offline scan** and click **Scan now**.
 
     > [!NOTE]
     > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** > **Update & security** > **Windows Defender** or from the Windows Defender client.
@@ -132,10 +130,10 @@ See the following for more information:
 
 ## Review scan results
 
-Windows Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](windows-defender-security-center-antivirus.md#detection-history). 
+Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history). 
 
 
 ## Related articles
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

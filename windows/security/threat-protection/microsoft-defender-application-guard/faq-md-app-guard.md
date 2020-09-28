@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 06/02/2020
+ms.date: 09/14/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -44,15 +44,19 @@ Depending on your organization's settings, employees can copy and paste images (
 
 ### Why don't employees see their Favorites in the Application Guard Edge session?
 
-To help keep the Application Guard Edge session secure and isolated from the host device, we don't copy the Favorites stored in the Application Guard Edge session back to the host device. 
+To help keep the Application Guard Edge session secure and isolated from the host device, favorites that are stored in an Application Guard Edge session are not copied to the host device. 
 
-### Why aren’t employees able to see their Extensions in the Application Guard Edge session?
+### Are extensions supported in the Application Guard?
 
-Currently, the Application Guard Edge session doesn't support Extensions. However, we're closely monitoring your feedback about this. 
+Extension installs in the container are supported from Microsoft Edge version 81. For more details, see [Extension support inside the container](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard#extension-support-inside-the-container).
 
 ### How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
 Microsoft Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+
+If Application Guard is used with network proxies, they need to be specified by fully qualified domain name (FQDN) in the system proxy settings (likewise in a PAC script if that is the type of proxy configuration used). Additionally these proxies need to be marked as *neutral* in the **Application trust** list. The FQDNs for the PAC file and the proxy servers the PAC file redirects to must be added as neutral resources in the network isolation policies that are used by Application Guard. You can verify this by going to `edge://application-guard-internals/#utilities` and entering the FQDN for the pac/proxy in the **check url trust** field. Verify that it says *Neutral.*
+
+Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the enterprise IP ranges in the network isolation policies that are used by Application Guard. Additionally, go to `edge://application-guard-internals/#utilities` to view the Application Guard proxy configuration. This step can be done in both the host and within Application Guard to verify that each side is using the proxy setup you expect.
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
@@ -88,7 +92,7 @@ When using Windows Pro or Windows Enterprise, you will have access to using Appl
 
 ### Is there a size limit to the domain lists that I need to configure?
 
-Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383B limit.
+Yes, both the enterprise resource domains hosted in the cloud and the domains categorized as both work and personal have a 16383B limit.
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 

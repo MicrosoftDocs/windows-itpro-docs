@@ -1,7 +1,7 @@
 ---
-title: Onboarding tools and methods for Windows 10 machines
-description: Onboard Windows 10 machines so that they can send sensor data to the Microsoft Defender ATP sensor
-keywords: Onboard Windows 10 machines, group policy, endpoint configuration manager, mobile device management, local script, gp, sccm, mdm, intune
+title: Onboarding tools and methods for Windows 10 devices
+description: Onboard Windows 10 devices so that they can send sensor data to the Microsoft Defender ATP sensor
+keywords: Onboard Windows 10 devices, group policy, endpoint configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,16 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Onboarding tools and methods for Windows 10 machines
+# Onboarding tools and methods for Windows 10 devices
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 
-
-
-Machines in your organization must be configured so that the Microsoft Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the machines in your organization.
+Devices in your organization must be configured so that the Microsoft Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
 The following deployment tools and methods are supported:
 
@@ -38,11 +40,11 @@ The following deployment tools and methods are supported:
 ## In this section
 Topic | Description
 :---|:---
-[Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on machines.
-[Onboard Windows machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on machines.
-[Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on machine.
-[Onboard Windows 10 machines using a local script](configure-endpoints-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
-[Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI machines.
+[Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on devices.
+[Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
+[Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
+[Onboard Windows 10 devices using a local script](configure-endpoints-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

@@ -19,6 +19,9 @@ ms.topic: article
 
 # Threat protection report in Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -85,4 +88,4 @@ For example, to show data about high-severity alerts only:
 3. Select **Apply**. 
 
 ## Related topic
-- [Machine health and compliance report](machine-reports.md)
+- [Device health and compliance report](machine-reports.md)

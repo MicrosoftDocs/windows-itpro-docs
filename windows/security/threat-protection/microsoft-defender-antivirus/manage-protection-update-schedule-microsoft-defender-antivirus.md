@@ -1,9 +1,8 @@
 ---
-title: Schedule Windows Defender Antivirus protection updates
+title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded 
 keywords: updates, security baselines, schedule updates
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 search.appverid: met150
 ms.mktglfcycl: manage
@@ -20,11 +19,14 @@ manager: dansimp
 
 # Manage the schedule for when protection updates should be downloaded and applied
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus lets you determine when it should look for and download updates.
+Microsoft Defender Antivirus lets you determine when it should look for and download updates.
 
 You can schedule updates for your endpoints by: 
 
@@ -51,7 +53,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 ## Use Group Policy to schedule protection updates
 
 > [!IMPORTANT]
-> By default, Windows Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
+> By default, Microsoft Defender Antivirus will check for an update 15 minutes before the time of any scheduled scans. Enabling these settings will override that default.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -59,7 +61,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
+5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
 
     1.  Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
     2. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
@@ -76,7 +78,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Use Windows Management Instruction (WMI) to schedule protection updates
 
@@ -94,12 +96,12 @@ See the following for more information and allowed parameters:
 
 ## Related articles
 
-- [Deploy Windows Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
 
 

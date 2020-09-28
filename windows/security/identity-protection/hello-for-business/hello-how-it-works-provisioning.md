@@ -17,7 +17,7 @@ ms.reviewer:
 ---
 # Windows Hello for Business Provisioning
 <span id="windows-hello-for-business-provisioning" />
-<strong>Applies to:</strong>
+<b>Applies to:</b>
 -   Windows 10
 
 Windows Hello for Business provisioning enables a user to enroll a new, strong, two-factor credential that they can use for passwordless authentication.  Provisioning experience vary based on:

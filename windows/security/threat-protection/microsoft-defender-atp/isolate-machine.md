@@ -1,7 +1,7 @@
 ---
 title: Isolate machine API
-description: Use this API to create calls related isolating a machine.
-keywords: apis, graph api, supported apis, isolate machine
+description: Learn how to use the Isolate machine API to isolate a device from accessing external network in Microsoft Defender Advanced Threat Protection.
+keywords: apis, graph api, supported apis, isolate device
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,20 +18,23 @@ ms.topic: article
 
 # Isolate machine API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
-Isolates a machine from accessing external network.
+Isolates a device from accessing external network.
 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -44,7 +47,7 @@ Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 
 ## HTTP request
@@ -69,7 +72,7 @@ IsolationType	| String |	Type of the isolation. Allowed values are: 'Full' or 'S
 
 **IsolationType** controls the type of isolation to perform and can be one of the following:
 - Full – Full isolation
-- Selective – Restrict only limited set of applications from accessing the network (see [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network) for more details)
+- Selective – Restrict only limited set of applications from accessing the network (see [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network) for more details)
 
 
 ## Response
@@ -84,13 +87,13 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```console
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/isolate
 Content-type: application/json
 {
   "Comment": "Isolate machine due to alert 1234",
   “IsolationType”: “Full” 
 }
+```
 
-
-- To unisolate a machine, see [Release machine from isolation](unisolate-machine.md).
+- To unisolate a device, see [Release device from isolation](unisolate-machine.md).

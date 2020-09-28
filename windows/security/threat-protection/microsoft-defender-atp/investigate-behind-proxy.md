@@ -1,6 +1,6 @@
 ---
 title: Investigate connection events that occur behind forward proxies
-description: Investigate connection events that occur behind forward proxies
+description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender ATP, which surfaces a real target, instead of a proxy.
 keywords: proxy, network protection, forward proxy, network events, audit, block, domain names, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,9 @@ ms.topic: article
 
 # Investigate connection events that occur behind forward proxies
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -32,7 +35,7 @@ The proxy acts as if it was the target endpoint.  In these cases, simple network
 Microsoft Defender ATP supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
 
 ## Use network protection to monitor network connection behind a firewall
-Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a machine timeline, turn network protection on (at the minimum in audit mode). 
+Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a device timeline, turn network protection on (at the minimum in audit mode). 
 
 Network protection can be controlled using the following modes:
 
@@ -47,9 +50,9 @@ If you do not configure it, network blocking will be turned off by default.
 For more information, see [Enable network protection](enable-network-protection.md).
 
 ## Investigation impact
-When network protection is turned on, you'll see that on a machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
+When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.
 
-![Image of network events on machine's timeline](images/atp-proxy-investigation.png)
+![Image of network events on device's timeline](images/atp-proxy-investigation.png)
 
 Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 

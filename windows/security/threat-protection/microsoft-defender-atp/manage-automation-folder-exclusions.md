@@ -1,7 +1,7 @@
 ---
 title: Manage automation folder exclusions
 description: Add automation folder exclusions to control the files that are excluded from an automated investigation. 
-keywords: manage, automation, exclusion, whitelist, blacklist, block, clean, malicious
+keywords: manage, automation, exclusion, block, clean, malicious
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Manage automation folder exclusions 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -66,6 +69,9 @@ You can specify the file names that you want to be excluded in a specific direct
     
 
 4. Click **Save**.
+
+>[!NOTE]
+> Live Response commands to collect or examine excluded files will fail with error: "File is excluded". In addition, automated investigations will ignore the excluded items.
 
 ## Edit an automation folder exclusion 
 1. In the navigation pane, select **Settings** > **Automation folder exclusions**. 

@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -29,7 +32,7 @@ ms.topic: conceptual
 
 In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
-This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
+This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
 
 ## Configuration profile structure
 
@@ -141,7 +144,7 @@ Used to exclude content from the scan by file extension.
 
 **Process excluded from the scan**
 
-Specifies a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
+Specifies a process for which all file activity is excluded from scanning. The process can be specified either by its name (for example, `cat`) or full path (for example, `/bin/cat`).
 
 |||
 |:---|:---|
@@ -215,6 +218,28 @@ Specifies the merge policy for threat type settings. This can be a combination o
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
+#### Antivirus scan history retention (in days)
+
+Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.
+
+|||
+|:---|:---|
+| **Key** | scanResultsRetentionDays |
+| **Data type** | String |
+| **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
+| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
+
+#### Maximum number of items in the antivirus scan history
+
+Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.
+
+|||
+|:---|:---|
+| **Key** | scanHistoryMaximumItems |
+| **Data type** | String |
+| **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
+| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
+
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
@@ -247,11 +272,25 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 #### Enable / disable automatic sample submissions
 
-Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You are prompted if the submitted file is likely to contain personal information.
+Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. There are three levels for controlling sample submission:
+
+- **None**: no suspicious samples are submitted to Microsoft.
+- **Safe**: only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
+- **All**: all suspicious samples are submitted to Microsoft.
 
 |||
 |:---|:---|
-| **Key** | automaticSampleSubmission |
+| **Key** | automaticSampleSubmissionConsent |
+| **Data type** | String |
+| **Possible values** | none <br/> safe (default) <br/> all |
+
+#### Enable / disable automatic security intelligence updates
+
+Determines whether security intelligence updates are installed automatically:
+
+|||
+|:---|:---|
+| **Key** | automaticDefinitionUpdateEnabled |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
@@ -261,12 +300,13 @@ To get started, we recommend the following configuration profile for your enterp
 
 The following configuration profile will:
 
-- Enable real-time protection (RTP).
+- Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
-  - **Potentially unwanted applications (PUA)** are blocked.
-  - **Archive bombs** (file with a high compression rate) are audited to the product logs.
-- Enable cloud-delivered protection.
-- Enable automatic sample submission.
+  - **Potentially unwanted applications (PUA)** are blocked
+  - **Archive bombs** (file with a high compression rate) are audited to the product logs
+- Enable automatic security intelligence updates
+- Enable cloud-delivered protection
+- Enable automatic sample submission at `safe` level
 
 ### Sample profile
 
@@ -286,7 +326,8 @@ The following configuration profile will:
       ]
    },
    "cloudService":{
-      "automaticSampleSubmission":true,
+      "automaticDefinitionUpdateEnabled":true,
+      "automaticSampleSubmissionConsent":"safe",
       "enabled":true
    }
 }
@@ -346,7 +387,8 @@ The following configuration profile contains entries for all settings described 
    "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
-      "automaticSampleSubmission":true
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
    }
 }
 ```
@@ -356,7 +398,7 @@ The following configuration profile contains entries for all settings described 
 The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
 
 ```bash
-$ python -m json.tool mdatp_managed.json
+python -m json.tool mdatp_managed.json
 ```
 
 If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.

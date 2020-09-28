@@ -1,7 +1,7 @@
 ---
 title: Remove app restriction API
 description: Use this API to create calls related to removing a restriction from applications from executing.
-keywords: apis, graph api, supported apis, remove machine from isolation
+keywords: apis, graph api, supported apis, remove device from isolation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,20 +18,23 @@ ms.topic: article
 
 # Remove app restriction API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
-Enable execution of any application on the machine.
+Enable execution of any application on the device.
 
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -44,7 +47,7 @@ Delegated (work or school account) | Machine.RestrictExecution | 'Restrict code 
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -86,4 +89,4 @@ Content-type: application/json
 ```
 
 
-To restrict code execution on a machine, see [Restrict app execution](restrict-code-execution.md).
+To restrict code execution on a device, see [Restrict app execution](restrict-code-execution.md).

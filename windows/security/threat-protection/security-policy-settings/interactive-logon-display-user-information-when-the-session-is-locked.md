@@ -61,7 +61,12 @@ This setting has these possible values:
     This change makes this setting consistent with the functionality of the new **Privacy** setting.
     To display no user information, enable the Group Policy setting **Interactive logon: Don't display last signed-in**.
 
--   Blank.
+-   **Domain and user names only**
+
+    For a domain logon only, the domain\username is displayed.
+    The **Privacy** setting is automatically on and grayed out.
+    
+-   **Blank**
 
     Default setting.
     This translates to “Not defined,” but it will display the user’s full name in the same manner as the option **User display name only**.
@@ -89,7 +94,7 @@ For all versions of Windows 10, only the user display name is shown by default.
 If **Block user from showing account details on sign-in** is enabled, then only the user display name is shown regardless of any other Group Policy settings.
 Users will not be able to show details.
 
-If **Block user from showing account details on sign-in** is not enabled, then you can set **Interactive logon: Display user information when the session is locked** to **User display name, domain and user names** to show additional details such as domain\username.
+If **Block user from showing account details on sign-in** is not enabled, then you can set **Interactive logon: Display user information when the session is locked** to **User display name, domain and user names** or **Domain and user names only** to show additional details such as domain\username.
 In this case, clients that run Windows 10 version 1607 need [KB 4013429](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4013429) applied.
 Users will not be able to hide additional details.
 

@@ -1,6 +1,6 @@
 ---
 title: Submit or Update Indicator API
-description: Use this API to submit or Update Indicator.
+description: Learn how to use the Submit or Update Indicator API to submit or update a new Indicator entity in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, submit, ti, indicator, update
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,6 +18,9 @@ ms.topic: article
 
 # Submit or Update Indicator API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -29,7 +32,7 @@ Submits or Updates new [Indicator](ti-indicator.md) entity.
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
-2. There is a limit of 5,000 active indicators per tenant. 
+2. There is a limit of 15,000 active indicators per tenant. 
 
 
 ## Permissions

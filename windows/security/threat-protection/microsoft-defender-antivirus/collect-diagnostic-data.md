@@ -1,9 +1,8 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, windows defender av
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,18 +11,24 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/01/2020
+ms.date: 06/29/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Collect Windows Defender AV diagnostic data
+# Collect Microsoft Defender AV diagnostic data
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
+
+> [!NOTE]
+> As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
@@ -35,10 +40,10 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 
     c. Enter administrator credentials or approve the prompt.
 
-2. Navigate to the Windows Defender directory. By default, this is `C:\Program Files\Windows Defender`.
+2. Navigate to the Microsoft Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> If you're running an updated Windows Defender Platform version, please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+> If you're running an [updated Microsoft Defender Platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), please run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Type the following command, and then press **Enter**  
 
@@ -46,7 +51,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
     mpcmdrun.exe -GetFiles
     ```
   
-4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
+4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
 > [!NOTE]
 > To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).

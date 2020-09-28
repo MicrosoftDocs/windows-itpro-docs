@@ -1,14 +1,14 @@
 ---
 title: Get discovered vulnerabilities
-description: Retrieves a collection of discovered vulnerabilities related to a given machine ID.
+description: Retrieves a collection of discovered vulnerabilities related to a given device ID.
 keywords: apis, graph api, supported apis, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+author: levinec
+ms.author: ellevin
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,22 +17,26 @@ ms.topic: article
 ---
 
 # Get discovered vulnerabilities
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
-Retrieves a collection of discovered vulnerabilities related to a given machine ID.
+Retrieves a collection of discovered vulnerabilities related to a given device ID.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |Vulnerability.Read.All |	'Read Threat and Vulnerability Management vulnerability information'
-Delegated (work or school account) | Vulnerability.Read |	'Read Threat and Vulnerability Management vulnerability information'
+Application |Vulnerability.Read.All | 'Read Threat and Vulnerability Management vulnerability information'
+Delegated (work or school account) | Vulnerability.Read | 'Read Threat and Vulnerability Management vulnerability information'
 
 ## HTTP request
+
 ```
 GET /api/machines/{machineId}/vulnerabilities
 ```
@@ -43,17 +47,17 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the discovered vulnerability information in the body.
 
+If successful, this method returns 200 OK with the discovered vulnerability information in the body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -61,10 +65,9 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
-
 
 ```
 {
@@ -89,5 +92,6 @@ Here is an example of the response.
 ```
 
 ## Related topics
+
 - [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)

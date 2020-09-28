@@ -19,6 +19,9 @@ ms.topic: article
 
 # Create custom reports using Power BI
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -123,8 +126,10 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 
 ## Power BI dashboard samples in GitHub
-For more information see the [Power BI report templates](https://github.com/microsoft/MDATP-PowerBI-Templates).
+For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
+## Sample reports
+View the Microsoft Defender ATP Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## Related topic

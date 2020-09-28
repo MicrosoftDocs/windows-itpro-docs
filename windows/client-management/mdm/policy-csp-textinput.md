@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TextInput
-description: Policy CSP - TextInput
+description: The Policy CSP - TextInput setting allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -14,10 +14,6 @@ manager: dansimp
 
 # Policy CSP - TextInput
 
-
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -1712,14 +1708,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in Windows 10, version 1909.
--   8 - Added in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

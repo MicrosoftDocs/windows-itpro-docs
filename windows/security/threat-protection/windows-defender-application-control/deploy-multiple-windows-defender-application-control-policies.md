@@ -1,7 +1,7 @@
 ---
 title: Use multiple Windows Defender Application Control Policies  (Windows 10)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/15/2020
+ms.date: 09/16/2020
 ---
 
 # Use multiple Windows Defender Application Control Policies
@@ -24,7 +24,7 @@ ms.date: 04/15/2020
 - Windows 10
 - Windows Server 2016
 
-The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios:
+The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 
 1. Enforce and Audit Side-by-Side
     - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side-by-side with an existing enforcement-mode base policy
@@ -44,7 +44,7 @@ The restriction of only having a single code integrity policy active on a system
 - Multiple base policies: intersection
   - Only applications allowed by both policies run without generating block events
 - Base + supplemental policy: union
-  - Files that are allowed by the base policy or the supplemental policy are not blocked
+  - Files that are allowed by either the base policy or the supplemental policy are not blocked
 
 ## Creating WDAC policies in Multiple Policy Format
 

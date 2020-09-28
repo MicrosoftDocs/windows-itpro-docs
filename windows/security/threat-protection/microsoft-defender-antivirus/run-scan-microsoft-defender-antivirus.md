@@ -1,9 +1,8 @@
 ---
-title: Run and customize on-demand scans in Windows Defender AV
+title: Run and customize on-demand scans in Microsoft Defender AV
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,7 +16,10 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Configure and run on-demand Windows Defender Antivirus scans
+# Configure and run on-demand Microsoft Defender Antivirus scans
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -29,6 +31,9 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 ## Quick scan versus full scan
 
 Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+
+> [!IMPORTANT] 
+> Microsoft Defender Antivirus runs in the context of the [LocalSystem](https://docs.microsoft.com/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share. 
 
 Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they are opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
@@ -50,7 +55,7 @@ Use the following `-scan` parameter:
 ```DOS
 mpcmdrun.exe -scan -scantype 1
 ```
-See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
+See [Use the mpcmdrun.exe commandline tool to configure and manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
 
 ## Use Microsoft Intune to run a scan
 
@@ -61,7 +66,7 @@ See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defen
 
 ## Use the Windows Security app to run a scan
 
-See [Run a scan in the Windows Security app](windows-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
+See [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md#scan) for instructions on running a scan on individual endpoints.
 
 ## Use PowerShell cmdlets to run a scan
 
@@ -70,7 +75,7 @@ Use the following cmdlet:
 ```PowerShell
 Start-MpScan
 ```
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Use Windows Management Instruction (WMI) to run a scan
 
@@ -82,6 +87,6 @@ See the following for more information and allowed parameters:
 
 ## Related articles
 
-- [Configure Windows Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Configure scheduled Windows Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

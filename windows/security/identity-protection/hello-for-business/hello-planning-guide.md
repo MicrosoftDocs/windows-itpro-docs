@@ -1,6 +1,6 @@
 ---
 title: Planning a Windows Hello for Business Deployment
-description: A guide to planning a Windows Hello for Business deployment 
+description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: conceptual
-ms.date: 08/19/2018
+ms.date: 09/16/2020
 ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
@@ -24,6 +24,8 @@ ms.reviewer:
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you'll use that information to select the correct deployment guide for your needs.
+
+If you have an Azure tenant, you can use our online, interactive Passwordless Wizard which walks through the same choices instead of using our manual guide below. The Passwordless Wizard is available in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/modernonboarding/passwordlesssetup).
 
 ## Using this guide
 
@@ -88,10 +90,10 @@ A deployment's trust type defines how each Windows Hello for Business client aut
 
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
-The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
+The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 or later Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
 > [!NOTE]
-> RDP does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time.
+> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
 
 #### Device registration
 
@@ -166,16 +168,13 @@ Choose the deployment model based on the resources your users access.  Use the f
 
 If your organization does not have on-premises resources, write **Cloud Only** in box **1a** on your planning worksheet.
 
-If your organization is federated with Azure or uses any online service, such as Office365 or OneDrive, or your users' access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
+If your organization is federated with Azure or uses any service, such as AD Connect, Office365 or OneDrive, or your users access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization does not have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
 > [!NOTE]
-> If you're unsure if your organization is federated, run the following Active Directory Windows PowerShell command from an elevated Windows PowerShell prompt and evaluate the results.  
-> ```Get-AdObject "CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=corp,DC=[forest_root_CN_name],DC=com" -Properties keywords```
-> * If the command returns an error stating it could not find the object, then you have yet to configured AAD Connect or on-premises Device Registration Services using AD FS.  Ensure the name is accurate and validate the object does not exist with another Active Directory Management tool such as **ADSIEdit.msc**.  If the object truly does not exist, then your environment does not bind you to a specific deployment or require changes to accommodate the desired deployment type.
-> * If the command returns a value, compare that value with the values below.  The value indicates the deployment model you should implement
->   * If the value begins with **azureADName:**  – write **Hybrid** in box **1a**on your planning worksheet.
->     * If the value begins with **enterpriseDrsName:** – write **On-Premises** in box **1a** on your planning worksheet.
+>  * Main use case of On-Premises deployment is for "Enhanced Security Administrative Environments" also known as "Red Forests". 
+>  * Migration from on-premise to hybrid deployment will require redeployment.
+
 
 ### Trust type
 

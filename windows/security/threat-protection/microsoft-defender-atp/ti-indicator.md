@@ -18,6 +18,9 @@ ms.topic: article
 
 # Indicator resource type
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -50,7 +53,7 @@ severity | Enum | The severity of the indicator. possible values are: "Informati
 title | String | Indicator title.
 description | String | Description of the indicator.
 recommendedActions | String | Recommended actions for the indicator.
-rbacGroupNames | List of strings | RBAC machine group names where the indicator is exposed and active. Empty list in case it exposed to all machines.
+rbacGroupNames | List of strings | RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
 
 
 ## Json representation

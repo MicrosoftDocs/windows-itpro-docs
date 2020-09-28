@@ -1,9 +1,8 @@
 ---
-title: Manage Windows Defender Antivirus updates and apply baselines
-description: Manage how Windows Defender Antivirus receives protection and product updates.
+title: Manage Microsoft Defender Antivirus updates and apply baselines
+description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,37 +13,50 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.date: 09/28/2020
 ---
 
-# Manage Windows Defender Antivirus updates and apply baselines
+# Manage Microsoft Defender Antivirus updates and apply baselines
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-There are two types of updates related to keeping Windows Defender Antivirus up to date:
+There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
  - Security intelligence updates
  - Product updates
 
 > [!IMPORTANT]
-> Keeping Windows Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
-> This also applies to devices where Windows Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
+> This also applies to devices where Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+> [!NOTE]
+> You can use the below URL to find out what are the current versions:
+> [https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 
 ## Security intelligence updates
 
-Windows Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
+Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+> [!NOTE]
+> Updates are released under the below KB numbers:  
+> Microsoft Defender Antivirus: KB2267602  
+> System Center Endpoint Protection: KB2461484
+
+The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
 Engine updates are included with the security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
-Windows Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
+Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
 You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
-For more information, see [Manage the sources for Windows Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
 > We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
@@ -59,13 +71,74 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
+
+&ensp;Security intelligence update version: **1.323.9.0**  
+&ensp;Released: **August 27, 2020**  
+&ensp;Platform: **4.18.2008.9**  
+&ensp;Engine: **1.1.17400.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Add more telemetry events
+* Improved scan event telemetry
+* Improved behavior monitoring for memory scans
+* Improved macro streams scanning
+* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</summary>
+
+&ensp;Security intelligence update version: **1.321.30.0**  
+&ensp;Released: **July 28, 2020**  
+&ensp;Platform: **4.18.2007.8**  
+&ensp;Engine: **1.1.17300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Improved telemetry for BITS
+* Improved Authenticode code signing certificate validation
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
+
+&ensp;Security intelligence update version: **1.319.20.0**  
+&ensp;Released: **June 22, 2020**  
+&ensp;Platform: **4.18.2006.10**  
+&ensp;Engine: **1.1.17200.2**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+* Skipping aggressive catchup scan in Passive mode.
+* Allow Defender to update on metered connections
+* Fixed performance tuning when caching is disabled 
+* Fixed registry query 
+* Fixed scantime randomization in ADMX
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
 <summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
 
 &ensp;Security intelligence update version: **1.317.20.0**  
 &ensp;Released: **May 26, 2020**  
 &ensp;Platform: **4.18.2005.4**  
 &ensp;Engine: **1.1.17100.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * Improved logging for scan events
@@ -87,7 +160,7 @@ No known issues
 &ensp;Released: **April 30, 2020**  
 &ensp;Platform: **4.18.2004.6**  
 &ensp;Engine: **1.1.17000.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * WDfilter improvements
@@ -121,7 +194,7 @@ No known issues
 * Improve notification for process blocking
    
 ### Known Issues
-[**Fixed**] Windows Defender Antivirus is skipping files when running a scan.
+[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
 
 <br/>
 </details>
@@ -161,7 +234,7 @@ Support phase: **Technical upgrade Support (Only)**
 * Support platform updates when TMP is redirected to network path
 * Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
 * extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-* Fix 4.18.1911.10 hang
+* Fix 4.18.1911.3 hang
    
 ### Known Issues
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
@@ -169,14 +242,17 @@ Support phase: **Technical upgrade Support (Only)**
 > [!IMPORTANT]
 > This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
 <br/>
+> [!IMPORTANT]
+> This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
+<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.2 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
 Security intelligence update version: **1.307.13.0**  
 Released: **December 7, 2019**  
-Platform: **4.18.1911.2**  
+Platform: **4.18.1911.3**  
 Engine: **1.1.17000.7**  
 Support phase: **No support**  
      
@@ -188,11 +264,11 @@ Support phase: **No support**
 * add MRT logs to support files
    
 ### Known Issues
-No known issues
+When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 
-## Windows Defender Antivirus platform support
+## Microsoft Defender Antivirus platform support
 As stated above, platform and engine updates are provided on a monthly cadence.
 Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version:
 
@@ -207,7 +283,7 @@ Customers must stay current with the latest platform update to be fully supporte
 During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft’s managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
 ### Platform version included with Windows 10 releases
-The below table provides the Windows Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
+The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |-|-|-|-|

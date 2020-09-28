@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting schema reference
-description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on 
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, data
+description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on.
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -20,6 +20,9 @@ ms.date: 01/14/2020
 
 # Understand the advanced hunting schema
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -27,9 +30,22 @@ ms.date: 01/14/2020
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
+The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about devices and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
-## Schema tables
+## Get schema information in the security center
+While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
+
+- **Tables description**—type of data contained in the table and the source of that data.
+- **Columns**—all the columns in the table.
+- **Action types**—possible values in the `ActionType` column representing the event types supported by the table. This is provided only for tables that contain event information.
+- **Sample query**—example queries that feature how the table can be utilized.
+
+### Access the schema reference
+To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
+
+![Image showing how to access in-portal schema reference](images/ah-reference.png)
+
+## Learn the schema tables
 
 The following reference lists all the tables in the advanced hunting schema. Each table name links to a page describing the column names for that table.
 
@@ -38,8 +54,8 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | Table name | Description |
 |------------|-------------|
 | **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Alerts on Microsoft Defender Security Center |
-| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Machine information, including OS information |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Device information, including OS information |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Network properties of devices, including adapters, IP and MAC addresses, as well as connected networks and domains |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Network connection and related events |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | File creation, modification, and other file system events |
@@ -57,3 +73,4 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Advanced hunting data schema changes](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

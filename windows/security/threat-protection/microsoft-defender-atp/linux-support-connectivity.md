@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -29,10 +32,10 @@ ms.topic: conceptual
 To test if Microsoft Defender ATP for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```bash
-$ mdatp --connectivity-test
+mdatp connectivity test
 ```
 
-If the connectivity test fails, check if the machine has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
+If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 
@@ -44,7 +47,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
 
 The output from this command should be similar to:
 
-```
+```Output
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
@@ -59,7 +62,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
 ```bash
-$ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
@@ -78,13 +81,13 @@ Also ensure that the correct static proxy address is filled in to replace `addre
 If this file is correct, try running the following command in the terminal to reload Microsoft Defender ATP for Linux and propagate the setting:
 
 ```bash
-$ sudo systemctl daemon-reload; sudo systemctl restart mdatp
+sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 
 Upon success, attempt another connectivity test from the command line:
 
 ```bash
-$ mdatp --connectivity-test
+mdatp connectivity test
 ```
 
 If the problem persists, contact customer support.

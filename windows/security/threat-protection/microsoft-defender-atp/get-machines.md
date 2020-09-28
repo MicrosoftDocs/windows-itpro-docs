@@ -1,7 +1,7 @@
 ---
 title: List machines API
-description: Retrieves a collection of recently seen machines.
-keywords: apis, graph api, supported apis, get, machines
+description: Learn how to use the List machines API to retrieve a collection of machines that have communicated with Microsoft Defender ATP cloud.
+keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,20 +18,23 @@ ms.topic: article
 
 # List machines API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
-Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
+Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```lastIpAddress```, ```healthStatus```, ```osPlatform```, ```riskScore```, ```rbacGroupId``` and ```machineTags``` properties.
+<br>The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
 ## Limitations
-1. You can get machines last seen in the past 30 days.
+1. You can get devices last seen according to your configured retention period.
 2. Maximum page size is 10,000.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
@@ -48,10 +51,11 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only machines,that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -77,7 +81,8 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+
+```http
 GET https://api.securitycenter.windows.com/api/machines
 ```
 
@@ -85,8 +90,7 @@ GET https://api.securitycenter.windows.com/api/machines
 
 Here is an example of the response.
 
-
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

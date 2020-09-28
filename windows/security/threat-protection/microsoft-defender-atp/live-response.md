@@ -1,6 +1,6 @@
 ---
-title: Investigate entities on machines using live response in Microsoft Defender ATP
-description: Access a machine using a secure remote shell connection to do investigative work and take immediate response actions on a machine in real time.
+title: Investigate entities on devices using live response in Microsoft Defender ATP
+description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,13 +19,16 @@ ms.topic: article
 
 # Investigate entities on devices using live response
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Live response is a capability that gives your security operations team instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats — in real time. 
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
 
-Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
+Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
@@ -60,8 +63,12 @@ You'll need to enable the live response capability in the [Advanced features set
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
     
-- **Ensure that the machine has an Automation Remediation level assigned to it**.<br>
-You'll need to enable, at least, the minimum Remediation Level for a given Machine Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+- **Ensure that the device has an Automation Remediation level assigned to it**.<br>
+You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+
+    You'll receive the following error:
+
+    ![Image of error message](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional). <br>
 
@@ -92,11 +99,11 @@ The dashboard also gives you access to:
 - Command log
 
 
-## Initiate a live response session on a machine 
+## Initiate a live response session on a device 
 
-1. Log in to Microsoft Defender Security Center.
+1. Sign in to Microsoft Defender Security Center.
 
-2. Navigate to the devices list page and select a machine to investigate. The machines page opens.
+2. Navigate to the devices list page and select a device to investigate. The devices page opens.
 
 3. Launch the live response session by selecting **Initiate live response session**. A command console is displayed. Wait while the session connects to the device.
 
@@ -107,6 +114,10 @@ The dashboard also gives you access to:
 ## Live response commands
 
 Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. For more information on role assignments, see [Create and manage roles](user-roles.md). 
+
+
+>[!NOTE]
+>Live response is a cloud-based interactive shell, as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
@@ -133,7 +144,7 @@ drivers |  Shows all drivers installed on the device. |
 |`trace` | Sets the terminal's logging mode to debug. |
 
 ### Advanced commands
-The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments see [Create and manage roles](user-roles.md). 
+The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md). 
 
 | Command | Description |
 |---|---|
@@ -152,7 +163,7 @@ The commands that you can use in the console follow similar principles as [Windo
 
 The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
 
-### Get a file from the machine
+### Get a file from the device
 
 For scenarios when you'd like get a file from a device you're investigating, you can use the `getfile` command. This allows you to save the file from the device for further investigation.
 
@@ -197,7 +208,7 @@ You can have a collection of PowerShell scripts that can run on devices that you
 
 4. Specify if you'd like to overwrite a file with the same name.
 
-5. If you'd like to be know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
+5. If you'd like to be,  know what parameters are needed for the script, select the script parameters check box. In the text field, enter an example and a description.
 
 6. Click **Confirm**. 
 
@@ -216,7 +227,7 @@ Some commands have prerequisite commands to run. If you don't run the prerequisi
 
 You can use the auto flag to automatically run prerequisite commands, for example:
 
-```
+```console
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
@@ -265,7 +276,7 @@ Live response supports output piping to CLI and file. CLI is the default output 
 
 Example:
 
-```
+```console
 processes > output.txt
 ```
 
@@ -281,7 +292,7 @@ Each command is tracked with full details such as:
 ## Limitations
 
 - Live response sessions are limited to 10 live response sessions at a time.
-- Large scale command execution is not supported.
+- Large-scale command execution is not supported.
 - A user can only initiate one session at a time.
 - A device can only be in one session at a time.
 - The following file size limits apply:
@@ -291,11 +302,3 @@ Each command is tracked with full details such as:
 
 ## Related article
 - [Live response command examples](live-response-command-examples.md)
-
-
-
-
-
-
-
-

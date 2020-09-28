@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender ATP for Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,26 +14,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
 # Microsoft Defender ATP for Linux
 
-> [!IMPORTANT]
-> **PUBLIC PREVIEW EDITION**
-> 
-> This documentation is for a pre-release solution. The guidelines and the solution are subject to change between now and its general availability.
-> 
-> As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
-> 
-> If you have preview features turned on in the Microsoft Defender Security Center, you should be able to access the Linux onboarding page immediately. If you have not yet opted into previews, we encourage you to [turn on preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview) in the Microsoft Defender Security Center today.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-This topic describes how to install, configure, update, and use Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q3yP]
-
-<p></p>
+This topic describes how to install, configure, update, and use Microsoft Defender ATP for Linux.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to cause performance problems and unpredictable system errors.
@@ -46,23 +36,13 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
-### Known issues
-
-- Logged on users do not appear in the ATP portal.
-- Running the product on CentOS / RHEL / Oracle Linux 7.0 or 7.1 with kernel versions lower than 3.10.0-327 can result in hanging the operating system. We recommend that you upgrade to version 7.2 or newer.
-- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
-
-    ```bash
-    $ sudo SUSEConnect --status-text
-    ```
-
 ### Installation instructions
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Linux.
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender ATP subscription, and that you have access to the Microsoft Defender ATP portal.
+- Ensure that you have a Microsoft Defender ATP subscription, and that you have access to the [Microsoft Defender ATP portal](microsoft-defender-security-center.md).
 - Deploy Microsoft Defender ATP for Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
@@ -74,7 +54,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and versions: 
+- Supported Linux server distributions and versions:
 
   - Red Hat Enterprise Linux 7.2 or higher
   - CentOS 7.2 or higher
@@ -88,30 +68,39 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > [!CAUTION]
   > Running Microsoft Defender ATP for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
-- Disk space: 650 MB
+- Disk space: 1GB
 - The solution currently provides real-time protection for the following file system types:
 
-  - btrfs
-  - ext2
-  - ext3
-  - ext4
-  - tmpfs
-  - xfs
-
-  More file system types will be added in the future.
+  - `btrfs`
+  - `ecryptfs`
+  - `ext2`
+  - `ext3`
+  - `ext4`
+  - `fuse`
+  - `fuseblk`
+  - `jfs`
+  - `nfs`
+  - `overlay`
+  - `ramfs`
+  - `reiserfs`
+  - `tmpfs`
+  - `udf`
+  - `vfat`
+  - `xfs`
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 ### Network connections
 
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
-| Service location                         | DNS record              |
-| ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
-| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com <br/> usseu1northprod.blob.core.windows.net <br/> usseu1westprod.blob.core.windows.net |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com <br/> ussuk1southprod.blob.core.windows.net <br/> ussuk1westprod.blob.core.windows.net |
-| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com <br/> ussus1eastprod.blob.core.windows.net <br/> ussus1westprod.blob.core.windows.net |
+
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+
+
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
