@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!IMPORTANT]
 > In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
 > 
@@ -37,6 +40,17 @@ ms.topic: conceptual
 > 
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+
+## 101.07.23
+
+- Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID
+
+  > [!NOTE]
+  > `mdatp --health` will be replaced with `mdatp health` in a future product update.
+
+- Fixed a bug where automatic sample submission was not marked as managed in the user interface
+- Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Bug fixes
 
 ## 101.06.63
 
@@ -146,6 +160,6 @@ ms.topic: conceptual
   > The mechanism for granting this consent depends on how you deployed Microsoft Defender ATP:
   >
   > - For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.
-  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md#privacy-preferences-policy-control) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes

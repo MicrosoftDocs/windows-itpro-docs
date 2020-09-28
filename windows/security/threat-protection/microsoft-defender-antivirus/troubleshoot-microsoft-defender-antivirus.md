@@ -17,6 +17,9 @@ manager: dansimp
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -48,7 +51,7 @@ The table in this section lists the main Microsoft Defender Antivirus event IDs 
 ## To view a Microsoft Defender Antivirus event
 
 1.  Open **Event Viewer**.
-2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Microsoft Defender Antivirus**.
+2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.

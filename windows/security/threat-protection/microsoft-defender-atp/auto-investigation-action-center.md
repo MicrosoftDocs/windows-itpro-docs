@@ -14,9 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.reviewer: ramarom, evaldm, isco, mabraitm
 ---
 
 # View details and results of automated investigations
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 During and after an automated investigation, certain remediation actions can be identified. Depending on the threat and how [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP) is configured for your organization, some remediation actions are taken automatically. 
 

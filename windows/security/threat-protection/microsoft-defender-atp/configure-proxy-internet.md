@@ -19,6 +19,9 @@ ms.topic: article
 
 # Configure device proxy and Internet connectivity settings
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -111,7 +114,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 |[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
 
 
-If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>

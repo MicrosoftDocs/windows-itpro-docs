@@ -25,14 +25,14 @@ This article addresses common issues in BitLocker and provides guidelines to tro
 Open Event Viewer and review the following logs under Applications and Services logs\\Microsoft\\Windows:
 
 - **BitLocker-API**. Review the Management log, the Operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
-   - Microsoft-Windows-BitLocker/BitLocker Operational
-   - Microsoft-Windows-BitLocker/BitLocker Management
+   - Microsoft-Windows-BitLocker-API/BitLocker Operational
+   - Microsoft-Windows-BitLocker-API/BitLocker Management
 
-- **BitLocker-DrivePreparationTool**. Review the Admin log,  the **Operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
+- **BitLocker-DrivePreparationTool**. Review the Admin log,  the Operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
    - Microsoft-Windows-BitLocker-DrivePreparationTool/Operational
    - Microsoft-Windows-BitLocker-DrivePreparationTool/Admin
 
-Additionally, review the Windows logs\\System log for events that were produced by the TCM and TCM-WMI event sources.
+Additionally, review the Windows logs\\System log for events that were produced by the TPM and TPM-WMI event sources.
 
 To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
 

@@ -17,9 +17,12 @@ ms.date: 08/26/2020
 
 # Turn on block at first sight
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Microsoft Defender Antivirus
 
 Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are also enabled. In most cases, these prerequisite settings are also enabled by default, so the feature is running without any intervention. 
 

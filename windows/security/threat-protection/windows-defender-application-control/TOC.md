@@ -1,6 +1,7 @@
 # [Application Control for Windows](windows-defender-application-control.md)
 ## [WDAC and AppLocker Overview](wdac-and-applocker-overview.md)
 ### [WDAC and AppLocker Feature Availability](feature-availability.md)
+### [Virtualization-based code integrity](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 
 ## [WDAC design guide](windows-defender-application-control-design-guide.md)
