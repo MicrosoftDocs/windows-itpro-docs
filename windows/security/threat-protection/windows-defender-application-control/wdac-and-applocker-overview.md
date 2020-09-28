@@ -31,8 +31,7 @@ Windows 10 includes two technologies that can be used for application control de
 
 WDAC was introduced with Windows 10 and allows organizations to control what drivers and applications are allowed to run on their Windows 10 clients. WDAC was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria) defined by the Microsoft Security Response Center (MSRC).
 
-> [!NOTE]
-> Prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity (CCI) policies.
+Note that prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity (CCI) policies. WDAC was also one feature that comprised the now-defunct term 'Device Guard'.
 
 WDAC policies apply to the managed computer as a whole and affects all users of the device. WDAC rules can be defined based on:
 
@@ -60,25 +59,23 @@ AppLocker policies can apply to all users on a computer or to individual users a
 
 ### AppLocker System Requirements
 
-AppLocker policies can only be configured on and applied to computers that are running on the supported versions and editions of the Windows operating system. For more info, see [Requirements to Use AppLocker](applocker/requirements-to-use-applocker.md). 
+AppLocker policies can only be configured on and applied to computers that are running on the supported versions and editions of the Windows operating system. For more info, see [Requirements to Use AppLocker](applocker/requirements-to-use-applocker.md).
 AppLocker policies can be deployed using Group Policy or MDM.
 
 ## Choose when to use WDAC or AppLocker
 
-Although either AppLocker or WDAC can be used to control application execution on Windows 10 clients, the following factors can help you decide when to use each of the technologies. 
+Generally, it is recommended that customers who are able to implement application control using WDAC rather than AppLocker do so. WDAC is undergoing continual improvements and will be getting added support from Microsoft management platforms. AppLocker, on the other hand, will receive security fixes but no new feature improvements.
+In some cases, however, AppLocker may be the more appropriate technology for your organization. The following factors can help you decide when to use each of the technologies.
 
-### WDAC is best when:
+**WDAC is best when:**
 
-- You are adopting application control primarily for security reasons.
-- Your application control policy can be applied to all users on the managed computers.
 - All of the devices you wish to manage are running Windows 10.
+- Your application control policy can be applied to all users on the managed computers.
 
-### AppLocker is best when:
+**AppLocker is best when:**
 
 - You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
-- You need to apply different policies for different users or groups on a shared computer.
-- You are using application control to help users avoid running unapproved software, but you do not require a solution designed as a security feature.
-- You do not wish to enforce application control on application files such as DLLs or drivers.
+- You need to apply different policies for different users or groups on shared computers.
 
 ## When to use both WDAC and AppLocker together
 
