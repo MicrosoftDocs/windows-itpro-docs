@@ -41,6 +41,12 @@ ms.topic: conceptual
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
 
+## 101.09.49
+
+- User interface improvements to differentiate exclusions that are managed by the IT administrator versus exclusions defined by the local user
+- Improved CPU utilization during on-demand scans
+- Performance improvements & bug fixes
+
 ## 101.07.23
 
 - Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID
