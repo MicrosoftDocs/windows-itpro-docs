@@ -147,7 +147,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### Example 2
 
-Get all the alerts last updated after 2019-10-20 00:00:00
+Get all the alerts last updated after 2019-11-22 00:00:00
 
 ```
 HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
