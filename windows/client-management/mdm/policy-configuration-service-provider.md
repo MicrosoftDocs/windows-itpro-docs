@@ -1015,9 +1015,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-sharing.md#admx-sharing-disablehomegroup" id="admx-sharing-disablehomegroup">ADMX_Sharing/DisableHomeGroup</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-sharing.md#admx-sharing-noinplacesharing" id="admx-sharing-noinplacesharing">ADMX_Sharing/NoInplaceSharing</a>
   </dd>
 </dl>
