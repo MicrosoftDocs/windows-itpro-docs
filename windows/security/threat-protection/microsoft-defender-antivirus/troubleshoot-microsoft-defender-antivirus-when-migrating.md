@@ -97,13 +97,13 @@ The report may contain the following text, indicating that Microsoft Defender An
 
 ###### If security settings are set in Windows or your Windows Server image
 
-Your imagining admin might have set the security policy, **[DisableAntiSpyware](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Defender.
+Your imagining admin might have set the security policy, **[DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Defender.
 
 ### Turn Microsoft Defender Antivirus back on
 
 Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active.
 
-If you want to keep your third-party antivirus active alongside Microsoft Defender, you can  turn on [limited periodic scanning](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/limited-periodic-scanning-microsoft-defender-antivirus). This enables a subset of Microsoft Defender Antivirus features.
+If you want to keep your third-party antivirus active alongside Microsoft Defender, you can  turn on [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md). This enables a subset of Microsoft Defender Antivirus features.
 
 > [!IMPORTANT] 
 > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced to prevent confusion and aid with compatibility.
