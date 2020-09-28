@@ -76,7 +76,7 @@ Types of password attacks include dictionary attacks (which attempt to use commo
 
 ### Countermeasure
 
-Configure the **** policy setting to a value of 8 or more. If the number of characters is set to 0, no password will be required.
+Configure the **Password** policy setting to a value of 8 or more. If the number of characters is set to 0, no password will be required.
 
 In most environments, we recommend an eight-character password because it is long enough to provide adequate security, but not too difficult for users to easily remember. This configuration provides adequate defense against a brute force attack. Using the [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) policy setting in addition to the **Minimum password length** setting helps reduce the possibility of a dictionary attack.
 
