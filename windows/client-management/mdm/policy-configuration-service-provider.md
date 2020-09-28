@@ -1216,6 +1216,17 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WinCal policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wincal.md#admx-wincal-turnoffwincal-1" id="admx-wincal-turnoffwincal-1">ADMX_WinCal/TurnOffWinCal_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wincal.md#admx-wincal-turnoffwincal-2" id="admx-wincal-turnoffwincal-2">ADMX_WinCal/TurnOffWinCal_2</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>

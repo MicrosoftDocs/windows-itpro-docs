@@ -309,6 +309,8 @@ ms.date: 08/18/2020
 - [ADMX_W32Time/W32TIME_POLICY_CONFIGURE_NTPCLIENT](./policy-csp-admx-w32time.md#admx-w32time-policy-configure-ntpclient)
 - [ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPCLIENT](./policy-csp-admx-w32time.md#admx-w32time-policy-enable-ntpclient)
 - [ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPSERVER](./policy-csp-admx-w32time.md#admx-w32time-policy-enable-ntpserver)
+- [ADMX_WinCal/TurnOffWinCal_1](./policy-csp-admx-wincal.md#admx-wincal-turnoffwincal-1)
+- [ADMX_WinCal/TurnOffWinCal_2](./policy-csp-admx-wincal.md#admx-wincal-turnoffwincal-2)
 - [AppRuntime/AllowMicrosoftAccountsToBeOptional](./policy-csp-appruntime.md#appruntime-allowmicrosoftaccountstobeoptional)
 - [AppVirtualization/AllowAppVClient](./policy-csp-appvirtualization.md#appvirtualization-allowappvclient)
 - [AppVirtualization/AllowDynamicVirtualization](./policy-csp-appvirtualization.md#appvirtualization-allowdynamicvirtualization)
