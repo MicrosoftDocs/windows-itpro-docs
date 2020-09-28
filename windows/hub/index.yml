@@ -93,15 +93,23 @@ landingContent:
             url: /windows/client-management/new-policies-for-windows-10
 
   # Card (optional)
-  - title: Security
+  - title: Security and Privacy
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Windows 10 Enterprise Security
             url: /windows/security/index
+          - text: Windows Privacy
+            url: /windows/privacy/index
           - text: Identity and access management
             url: /windows/security/identity-protection/index
           - text: Threat protection
             url: /windows/security/threat-protection/index
           - text: Information protection
             url: /windows/security/information-protection/index
+          - text: Required diagnostic data
+            url: /windows/privacy/required-windows-diagnostic-data-events-and-fields-2004
+          - text: Optional diagnostic data
+            url: /windows/privacy/windows-diagnostic-data
+          - text: Changes to Windows diagnostic data collection
+            url: /windows/privacy/changes-to-windows-diagnostic-data-collection
