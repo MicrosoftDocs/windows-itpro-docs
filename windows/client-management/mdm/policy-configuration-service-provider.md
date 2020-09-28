@@ -1227,6 +1227,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsAnytimeUpgrade policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsanytimeupgrade.md#admx-windowsanytimeupgrade-disabled" id="admx-windowsanytimeupgrade-disabled">ADMX_WindowsAnytimeUpgrade/Disabled</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>

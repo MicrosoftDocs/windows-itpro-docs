@@ -215,6 +215,7 @@
 #### [ADMX_TPM](policy-csp-admx-tpm.md)
 #### [ADMX_W32Time](policy-csp-admx-w32time.md)
 #### [ADMX_WinCal](policy-csp-admx-wincal.md)
+#### [ADMX_WindowsAnytimeUpgrade](policy-csp-admx-windowsanytimeupgrade.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
