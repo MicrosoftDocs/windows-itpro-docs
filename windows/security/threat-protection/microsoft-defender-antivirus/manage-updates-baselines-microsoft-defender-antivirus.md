@@ -74,9 +74,9 @@ All our updates contain:
 <summary> September-2020 (Platform:  | Engine: )</summary>
 
 &ensp;Security intelligence update version: **versionnumber**  
-&ensp;Released: **releasedate**  
-&ensp;Platform: **platformnumber**  
-&ensp;Engine: **enginenumber**  
+&ensp;Released: **September 28, 2020**  
+&ensp;Platform: **4.18.xxxx.x**  
+&ensp;Engine: **1.1.14500.2**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
