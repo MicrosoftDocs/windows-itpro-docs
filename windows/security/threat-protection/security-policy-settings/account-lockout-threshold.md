@@ -87,6 +87,9 @@ For more information about Windows security baseline recommendations for account
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
+> [!NOTE]
+> A lockout threshold policy will apply to both local member computer users and Domain Users, in order to allow mitigation of issues as described under "Vulnerability". The Built-In Administrator account however, whilst a highly privileged account, has a different risk profile and is excluded from this policy. This ensures there is no scenario where an administrator cannot logon to remediate an issue. As an administrator, there are additional mitigation strategies available, such as a strong password. See also [Appendix D: Securing Built-In Administrator Accounts in Active Directory](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/appendix-d--securing-built-in-administrator-accounts-in-active-directory).
+
 ### Vulnerability
 
 Brute force password attacks can use automated methods to try millions of password combinations for any user account. The effectiveness of such attacks can be almost eliminated if you limit the number of failed sign-in attempts that can be performed.
