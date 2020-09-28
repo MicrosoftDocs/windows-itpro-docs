@@ -1235,6 +1235,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+## ADMX_WindowsConnectNow policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsconnectnow.md#admx-windowsconnectnow-wcn-disablewcnui-1" id="admx-windowsconnectnow-wcn-disablewcnui-1">ADMX_WindowsConnectNow/WCN_DisableWcnUi_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsconnectnow.md#admx-windowsconnectnow-wcn-disablewcnui-2" id="admx-windowsconnectnow-wcn-disablewcnui-2">ADMX_WindowsConnectNow/WCN_DisableWcnUi_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsconnectnow.md#admx-windowsconnectnow-wcn-enableregistrar" id="admx-windowsconnectnow-wcn-enableregistrar">ADMX_WindowsConnectNow/WCN_EnableRegistrar</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
