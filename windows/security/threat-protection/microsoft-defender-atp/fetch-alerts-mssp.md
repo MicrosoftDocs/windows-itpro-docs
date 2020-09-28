@@ -1,4 +1,4 @@
-﻿---
+---
 title: Fetch alerts from MSSP customer tenant
 description: Learn how to fetch alerts from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Fetch alerts from MSSP customer tenant
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -182,7 +185,7 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 You can now download the relevant configuration file for your SIEM and connect to the Microsoft Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem.md).
  
 
-- In the ArcSight configuration file / Splunk Authentication Properties file  you will have to write your application key manually by settings the secret value.
+- In the ArcSight configuration file / Splunk Authentication Properties file ? you will have to write your application key manually by settings the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
 
 ## Fetch alerts from MSSP customer's tenant using APIs

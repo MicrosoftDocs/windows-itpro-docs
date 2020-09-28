@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Intune-based deployment for Microsoft Defender ATP for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!NOTE]
 > This documentation explains the legacy method for deploying and configuring Microsoft Defender ATP on macOS devices. The native experience is now available in the MEM console. The release of the native UI in the MEM console provide admins with a much simpler way to configure and deploy the application and send it down to macOS devices. <br> <br>
 >The blog post [MEM simplifies deployment of Microsoft Defender ATP for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explains the new features. To configure the app, go to [Settings for Microsoft Defender ATP for Mac in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). To deploy the app, go to [Add Microsoft Defender ATP to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).

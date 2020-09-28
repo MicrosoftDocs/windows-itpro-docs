@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Configure and validate exclusions for Microsoft Defender ATP for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -45,6 +48,9 @@ File extension | All files with the extension, anywhere on the device | `.test`
 File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder | All files under the specified folder (recursively) | `/var/log/`<br/>`/var/*/`
 Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> The paths above must be hard links, not symbolic links, in order to be successfully excluded. You can check if a path is a symbolic link by running `file <path-name>`.
 
 File, folder, and process exclusions support the following wildcards:
 
@@ -104,6 +110,16 @@ Examples:
     ```bash
     mdatp exclusion folder add --path "/var/*/"
     ```
+
+    > [!NOTE]
+    > This will only exclude paths one level below */var/*, but not folders which are more deeply nested; for example, */var/this-subfolder/but-not-this-subfolder*.
+    
+    ```bash
+    mdatp exclusion folder add --path "/var/"
+    ```
+    > [!NOTE]
+    > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
+
     ```Output
     Folder exclusion configured successfully
     ```

@@ -45,11 +45,13 @@ The Security Compliance Toolkit consists of:
     - Microsoft 365 Apps for enterprise (Sept 2019)
 
 - Microsoft Edge security baseline
-    - Version 80
+    - Version 85
 
 - Tools
     - Policy Analyzer tool
     - Local Group Policy Object (LGPO) tool
+    - Set Object Security tool
+    - GPO to PolicyRules tool
 
 -   Scripts
     -   Baseline-ADImport.ps1
@@ -81,3 +83,15 @@ It can export local policy to a GPO backup.
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
 Documentation for the LGPO tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/lgpo-exe-local-group-policy-object-utility-v1-0/ba-p/701045) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## What is the Set Object Security tool?
+
+SetObjectSecurity.exe enables you to set the security descriptor for just about any type of Windows securable object (files, directories, registry keys, event logs, services, SMB shares, etc.). For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a .reg-file-compatible representation of the security descriptor for a REG_BINARY registry value.
+
+Documentation for the Set Object Security tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## What is the GPO to Policy Rules tool?
+
+Automate the conversion of GPO backups to Policy Analyzer .PolicyRules files and skip the GUI. GPO2PolicyRules is a command-line tool that is included with the Policy Analyzer download. 
+
+Documentation for the GPO to PolicyRules tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
