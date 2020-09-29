@@ -1249,6 +1249,28 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsMediaDRM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediadrm.md#admx-windowsmediadrm-disableonline" id="admx-windowsmediadrm-disableonline">ADMX_WindowsMediaDRM/DisableOnline</a>
+  </dd>
+</dl>
+
+### ADMX_WinInit policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wininit.md#admx-wininit-disablenamedpipeshutdownpolicydescription" id="admx-wininit-disablenamedpipeshutdownpolicydescription">ADMX_WinInit/DisableNamedPipeShutdownPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wininit.md#admx-wininit-hiberboot" id="admx-wininit-hiberboot">ADMX_WinInit/Hiberboot</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wininit.md#admx-wininit-shutdowntimeouthungsessionsdescription" id="admx-wininit-shutdowntimeouthungsessionsdescription">ADMX_WinInit/ShutdownTimeoutHungSessionsDescription</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>

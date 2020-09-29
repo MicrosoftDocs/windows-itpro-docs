@@ -217,6 +217,8 @@
 #### [ADMX_WinCal](policy-csp-admx-wincal.md)
 #### [ADMX_WindowsAnytimeUpgrade](policy-csp-admx-windowsanytimeupgrade.md)
 #### [ADMX_WindowsConnectNow](policy-csp-admx-windowsconnectnow.md)
+#### [ADMX_WindowsMediaDRM](policy-csp-admx-windowsmediadrm.md)
+#### [ADMX_WinInit](policy-csp-admx-wininit.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)
