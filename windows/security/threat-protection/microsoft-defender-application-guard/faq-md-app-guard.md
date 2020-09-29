@@ -22,7 +22,8 @@ Answering frequently asked questions about Microsoft Defender Application Guard 
 
 ## Frequently Asked Questions
 
-### Can I enable Application Guard on machines equipped with 4GB RAM?                                                                   |
+### Can I enable Application Guard on machines equipped with 4GB RAM?
+
 We recommend 8GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is 4 cores.)                                                   
@@ -87,7 +88,7 @@ To trust a subdomain, you must precede your domain with two dots, for example: `
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's standalone mode. However, when using Windows Enterprise you will have access to Application Guard's enterprise-managed mode. This mode has some extra features that the standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
+When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
@@ -95,88 +96,8 @@ Yes, both the enterprise resource domains hosted in the cloud and the domains ca
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Microsoft Defender Application Guard will not work, and will result in an error message (*0x80070013 ERROR_WRITE_PROTECT*).  
-
-### Why do the network isolation policies in Group Policy and CSP look different?
-
-There is not a one-to-one mapping among all the network isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
-
-Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
-Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
-For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
-
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (*0x80070013 ERROR_WRITE_PROTECT*). 
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Microsoft Defender Application Guard will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
-If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility that Microsoft Defender Application Guard no longer meets the minimum requirements. 
-
-### Why am I getting the error message ("ERROR_VIRTUAL_DISK_LIMITATION")?
-
-Application Guard may not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
-
-### Why am I getting the error message ("ERR_NAME_NOT_RESOLVED") after not being able to reach PAC file?
-
-This is a known issue. To mitigate this you need to create two firewall rules.
-For guidance on how to create a firewall rule by using group policy, see:
-- [Create an inbound icmp rule](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
-- [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
-
-First rule (DHCP Server):
-1. Program path: `%SystemRoot%\System32\svchost.exe`
-2. Local Service: Sid:  `S-1-5-80-2009329905-444645132-2728249442-922493431-93864177`  (Internet Connection Service (SharedAccess))
-3. Protocol UDP
-4. Port 67
-
-Second rule (DHCP Client)
-This is the same as the first rule, but scoped to local port 68.
-In the Microsoft Defender Firewall user interface go through the following steps:
-1.	Right click on inbound rules, create a new rule.
-2.	Choose **custom rule**.
-3.	Program path: **%SystemRoot%\System32\svchost.exe**.
-4.	Protocol Type: UDP, Specific ports: 67, Remote port: any.
-5.	Any IP addresses.
-6.	Allow the connection.
-7.	All profiles.
-8.	The new rule should show up in the user interface. Right click on the **rule** > **properties**.
-9.	In the **Programs and services** tab, Under the **Services** section click on **settings**. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
-
-### Why can I not launch Application Guard when Exploit Guard is enabled?
-
-There is a known issue where if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to the **use default**.
-
-
-### How can I have ICS in enabled state yet still use Application Guard?
-
-This is a two step process.
-
-Step 1:
-
-Enable Internet Connection sharing by changing the Group Policy setting **Prohibit use of Internet Connection Sharing on your DNS domain network.** This setting is part of the Microsoft security baseline. Change it from **Enabled** to **Disabled**.
- 
-Step 2:
- 
-1. Disable IpNat.sys from ICS load: 
-`System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`.
-2. Configure ICS (SharedAccess) to enabled: 
-`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3`.
-3. Disable IPNAT (Optional): 
-`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`.
-4. Restart the device.
-
-### Why doesn't Application Guard work, even though it's enabled through Group Policy?
-
-Application Guard must meet all these prerequisites to be enabled in Enterprise mode: [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). 
-To understand why it is not enabled in Enterprise mode, check the status of the evaluation to understand what's missing.
-
-For CSP (Intune) you can query the status node by using **Get**. This is described in the [Application Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp). On this page, you will see the **status** node as well as the meaning of each bit.  If the status is not 63, you are missing a prerequisite.
-
-For Group Policy you need to look at the registry. See **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HVSIGP** Status. The meaning of each bit is the same as the CSP.
-
-### I'm encountering TCP fragmentation issues, and cannot enable my VPN connection. How do I fix this?
-
-WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix by following these steps:
-
-1.	Ensure that the FragmentAware DWORD is set to 1 in this registry setting: `\Registry\Machine\SYSTEM\CurrentControlSet\Services\Winnat`.
-
-2.	Reboot the device.
+If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
