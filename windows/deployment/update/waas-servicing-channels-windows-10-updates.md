@@ -162,10 +162,11 @@ During the life of a device, it might be necessary or desirable to switch betwee
 ## Block user access to Windows Update settings
 
 In Windows 10, administrators can control user access to Windows Update.
-By enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features**, administrators can disable the "Check for updates" option for users. Any background update scans, downloads and installations will continue to work as configured. This is not recommended if you have configured the device to "notify" to download or install as this policy will prevent the end user from being able to do so.
+
+Administrators can disable the "Check for updates" option for users by enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features** . Any background update scans, downloads and installations will continue to work as configured. We don't recomment this setting if you have configured the device to "notify" to download or install as this policy will prevent the user from being able to do so.
 
 >[!NOTE]
-> In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
+> Starting with Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported.
 
 ## Steps to manage updates for Windows 10
 
