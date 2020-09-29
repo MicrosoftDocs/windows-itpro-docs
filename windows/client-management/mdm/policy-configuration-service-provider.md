@@ -1257,6 +1257,74 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsMediaPlayer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-configurehttpproxysettings" id="admx-windowsmediaplayer-configurehttpproxysettings">ADMX_WindowsMediaPlayer/ConfigureHTTPProxySettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-configuremmsproxysettings" id="admx-windowsmediaplayer-configuremmsproxysettings">ADMX_WindowsMediaPlayer/ConfigureMMSProxySettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-configurertspproxysettings" id="admx-windowsmediaplayer-configurertspproxysettings">ADMX_WindowsMediaPlayer/ConfigureRTSPProxySettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-disableautoupdate" id="admx-windowsmediaplayer-disableautoupdate">ADMX_WindowsMediaPlayer/DisableAutoUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-disablenetworksettings" id="admx-windowsmediaplayer-disablenetworksettings">ADMX_WindowsMediaPlayer/DisableNetworkSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-disablesetupfirstuseconfiguration" id="admx-windowsmediaplayer-disablesetupfirstuseconfiguration">ADMX_WindowsMediaPlayer/DisableSetupFirstUseConfiguration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-donotshowanchor" id="admx-windowsmediaplayer-donotshowanchor">ADMX_WindowsMediaPlayer/DoNotShowAnchor</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-dontuseframeinterpolation" id="admx-windowsmediaplayer-dontuseframeinterpolation">ADMX_WindowsMediaPlayer/DontUseFrameInterpolation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-enablescreensaver" id="admx-windowsmediaplayer-enablescreensaver">ADMX_WindowsMediaPlayer/EnableScreenSaver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-hideprivacytab" id="admx-windowsmediaplayer-hideprivacytab">ADMX_WindowsMediaPlayer/HidePrivacyTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-hidesecuritytab" id="admx-windowsmediaplayer-hidesecuritytab">ADMX_WindowsMediaPlayer/HideSecurityTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-networkbuffering" id="admx-windowsmediaplayer-networkbuffering">ADMX_WindowsMediaPlayer/NetworkBuffering</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-policycodecupdate" id="admx-windowsmediaplayer-policycodecupdate">ADMX_WindowsMediaPlayer/PolicyCodecUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventcddvdmetadataretrieval" id="admx-windowsmediaplayer-preventcddvdmetadataretrieval">ADMX_WindowsMediaPlayer/PreventCDDVDMetadataRetrieval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventlibrarysharing" id="admx-windowsmediaplayer-preventlibrarysharing">ADMX_WindowsMediaPlayer/PreventLibrarySharing</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventmusicfilemetadataretrieval" id="admx-windowsmediaplayer-preventmusicfilemetadataretrieval">ADMX_WindowsMediaPlayer/PreventMusicFileMetadataRetrieval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventquicklaunchshortcut" id="admx-windowsmediaplayer-preventquicklaunchshortcut">ADMX_WindowsMediaPlayer/PreventQuickLaunchShortcut</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventradiopresetsretrieval" id="admx-windowsmediaplayer-preventradiopresetsretrieval">ADMX_WindowsMediaPlayer/PreventRadioPresetsRetrieval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventwmpdesktopshortcut" id="admx-windowsmediaplayer-preventwmpdesktopshortcut">ADMX_WindowsMediaPlayer/PreventWMPDeskTopShortcut</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-skinlockdown" id="admx-windowsmediaplayer-skinlockdown">ADMX_WindowsMediaPlayer/SkinLockDown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-windowsstreamingmediaprotocols" id="admx-windowsmediaplayer-windowsstreamingmediaprotocols">ADMX_WindowsMediaPlayer/WindowsStreamingMediaProtocols</a>
+  </dd>
+</dl>
+
 ### ADMX_WinInit policies  
 
 <dl>
