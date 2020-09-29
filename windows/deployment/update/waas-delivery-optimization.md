@@ -74,7 +74,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Computers running Windows 10 | 1511 |
 | Computers running Server Core installations of Windows Server | 1709 |
 | IoT devices | 1803 |
-| HoloLens devices | 1803 |
 
 **Types of download packages supported by Delivery Optimization**
 

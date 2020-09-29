@@ -64,7 +64,6 @@ Detailed Tracking security policy settings and audit events can be used to monit
 - [Audit Process Creation](audit-process-creation.md)
 - [Audit Process Termination](audit-process-termination.md)
 - [Audit RPC Events](audit-rpc-events.md)
-- [Audit Credential Validation](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation)
 - [Audit Token Right Adjusted](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-token-right-adjusted)
 
 ## DS Access

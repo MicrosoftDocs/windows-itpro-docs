@@ -95,7 +95,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 In a lab situation, you typically have a large number of devices that are plugged in and have a lot of free disk space. By increasing the content expiration interval, you can take advantage of these devices, using them as excellent upload sources in order to upload much more content over a longer period.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **6048000** (7 days) or more (up to 30 days).
+To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
@@ -146,7 +146,7 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
-**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
@@ -191,7 +191,7 @@ With no options, this cmdlet returns these data:
 - overall efficiency
 - efficiency in the peered files
 
-Using the `-ListConnections` option returns these detauls about peers:
+Using the `-ListConnections` option returns these details about peers:
 
 - destination IP address
 - peer type

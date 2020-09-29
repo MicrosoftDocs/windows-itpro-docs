@@ -20,6 +20,9 @@ ms.date: 11/20/2018
 
 # Experience Microsoft Defender ATP through simulated attacks 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

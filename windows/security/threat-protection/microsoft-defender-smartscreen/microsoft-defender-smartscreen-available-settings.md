@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 1/26/2018
+ms.date: 09/28/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -78,7 +78,7 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 
 ## MDM settings
 If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.  <br><br> 
-For Microsoft Defender SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer).
+For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser).
 <table>
 <tr>
 <th align="left">Setting</th>
@@ -220,5 +220,3 @@ To better help you protect your organization, we recommend turning on and using 
 
 - [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies)
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
