@@ -110,7 +110,6 @@ You must configure the WDS server so that it can communicate with DHCP (and opti
 ### <a href="" id="bkmk-confirmwdsrunning"><a/>Confirm the WDS Service is running
 
 To confirm that the WDS service is running, use the Services Management Console or Windows PowerShell. To confirm that the service is running in Services Management Console, open the console using **services.msc** and check the status of the Windows Deployment Services service.
-**Question: Is "Windows Deployment" a service or is the service name itself "Windows Deployment Services"?
 
 To confirm that the service is running using Windows PowerShell, use the following command:
 
