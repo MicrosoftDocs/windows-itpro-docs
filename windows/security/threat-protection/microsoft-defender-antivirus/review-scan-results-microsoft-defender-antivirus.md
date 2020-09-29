@@ -40,7 +40,7 @@ The following cmdlet will return each detection on the endpoint. If there are mu
 Get-MpThreatDetection
 ```
 
-![IMAGEALT](images/defender/wdav-get-mpthreatdetection.png)
+![screenshot of PowerShell cmdlets and outputs](images/defender/wdav-get-mpthreatdetection.png)
 
 You can specify `-ThreatID` to limit the output to only show the detections for a specific threat.
 
@@ -50,7 +50,7 @@ If you want to list threat detections, but combine detections of the same threat
 Get-MpThreat
 ```
 
-![IMAGEALT](images/defender/wdav-get-mpthreat.png)
+![screenshot of PowerShell](images/defender/wdav-get-mpthreat.png)
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 

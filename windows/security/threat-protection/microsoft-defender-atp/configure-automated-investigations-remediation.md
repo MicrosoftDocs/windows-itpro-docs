@@ -1,10 +1,11 @@
 ---
 title: Configure automated investigation and remediation capabilities
-description: Set up your automated investigation and remediation capabilities in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
+description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,20 +15,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: conceptual
-ms.reviewer: ramarom, evaldm, isco, mabraitm
+ms.topic: article
+ms.date: 09/24/2020
+ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ---
 
-# Configure automated investigation and remediation capabilities in Microsoft Defender Advanced Threat Protection
+# Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) (Microsoft Defender ATP), [automated investigation and remediation capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) can save your security operations team time and effort. As outlined in [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946), these capabilities mimic the ideal steps that a security analyst takes to investigate and remediate threats. [Learn more about automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). 
+If your organization is using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) (Microsoft Defender ATP), [automated investigation and remediation capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) can save your security operations team time and effort. As outlined in [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946), these capabilities mimic the ideal steps that a security analyst takes to investigate and remediate threats. [Learn more about automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). 
 
 To configure automated investigation and remediation, you [turn on the features](#turn-on-automated-investigation-and-remediation), and then you [set up device groups](#set-up-device-groups).
 
