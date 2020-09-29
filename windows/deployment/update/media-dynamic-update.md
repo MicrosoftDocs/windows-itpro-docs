@@ -435,7 +435,7 @@ cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PA
 
 As a last step, the script removes the working folder of temporary files, and unmounts our language pack and Features on Demand ISOs.
 
-```
+```powershell
 #
 # Perform final cleanup
 #
