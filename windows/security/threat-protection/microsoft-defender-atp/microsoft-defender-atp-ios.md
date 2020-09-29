@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for iOS 
+title: Microsoft Defender ATP for iOS overview
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender ATP for iOS
 keywords: microsoft, defender, atp, ios, overview, installation, deploy, uninstallation, intune
@@ -19,6 +19,9 @@ ms.topic: conceptual
 ---
 
 # Microsoft Defender Advanced Threat Protection for iOS
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
@@ -42,7 +45,7 @@ iOS devices along with other platforms.
 -   Microsoft Defender ATP license assigned to the end user(s) of the app. Refer
     [Assign licenses to
     users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
-    for instructions on how to assign licenses
+    for instructions on how to assign licenses.
 
 **For Administrators**
 
@@ -57,16 +60,16 @@ iOS devices along with other platforms.
 -   iOS devices running iOS 11.0 and above
 
 -   Device is enrolled with Intune Company Portal
-    [app](https://apps.apple.com/us/app/intune-company-portal/id719171358).
+    [app](https://apps.apple.com/us/app/intune-company-portal/id719171358)
 
 ## Resources
 
--   Stay informed about upcoming releases by visiting our [blog](https://aka.ms/mdatpiosblog)
+-   Stay informed about upcoming releases by visiting our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
 
 -   Provide feedback through in-app feedback system or through [SecOps
-    portal](https://secuirtycenter.microsoft.com).
+    portal](https://securitycenter.microsoft.com)
 
-## Next Steps
 
-[Deploy Microsoft Defender ATP on iOS](ios-install.md)
+## Next steps
 
+Microsoft Defender for Endpoint capabilities for iOS will be released into public preview in the coming weeks. At that time, we will publish additional deployment and configuration information. Please check back here in a few weeks.  

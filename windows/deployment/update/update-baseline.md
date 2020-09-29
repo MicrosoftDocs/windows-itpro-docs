@@ -1,5 +1,5 @@
 ---
-title: Update baseline
+title: Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, tools, group policy
 ms.prod: w10
@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Update baseline
+# Update Baseline
 
 **Applies to:** Windows 10
 

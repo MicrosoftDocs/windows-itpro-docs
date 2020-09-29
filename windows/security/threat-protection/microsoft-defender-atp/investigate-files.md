@@ -20,6 +20,9 @@ ms.date: 04/24/2018
 
 # Investigate a file associated with a Microsoft Defender ATP alert
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
