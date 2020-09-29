@@ -28,7 +28,7 @@ ms.custom: AIR
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
 
-Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. It can be challenging for a security operations team to address the multitude of alerts that can arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation capabilities that can help your security operations team address threats more efficiently and effectively. 
+Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. It can be challenging for a security operations team to address the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation capabilities that can help your security operations team address such threats more efficiently and effectively. 
 
 Automated investigation leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. Automated investigation and remediation capabilities significantly reduce alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The [Action center](auto-investigation-action-center.md) keeps track of all the investigations that were initiated automatically, along with details, such as investigation status, detection source, and pending or completed actions.
 
