@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Microsoft Defender Antivirus when migrating from a third-party solution
+title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
 search.product: eADQiWindows 10XVcnh
@@ -15,7 +15,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Troubleshoot Microsoft Defender Antivirus when migrating from a third-party solution
+# Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -25,11 +25,21 @@ manager: dansimp
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
 
+## Review event logs
+
+Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
+
+Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender**. 
+
+From there, select **Open** underneath **Operational**.
+
+Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
+
 ## Microsoft Defender Antivirus won't start
 
-### Event IDs
-
 This issue can manifest in the form of  several different event IDs, all of which have the same underlying cause.
+
+### Associated event IDs
 
  Event ID | Log name | Description | Source
 -|-|-|-
@@ -108,13 +118,15 @@ Your imagining admin might have set the security policy, **[DisableAntiSpyware](
 
 Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You'll need to turn the third-party antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
 
-If you want to keep your third-party antivirus active alongside Microsoft Defender, you can  turn on [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md). This enables a subset of Microsoft Defender Antivirus features.
-
-> [!IMPORTANT] 
-> Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced to prevent confusion and aid with compatibility.
-
 > [!WARNING]
-> Solutions suggesting that you edit the *Windows Defender* start value for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
+> Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
+
+If you want to keep your third-party antivirus active alongside Microsoft Defender Antivirus, and you aren't using Microsoft Defender ATP, you can  turn on [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md). This enables a subset of Microsoft Defender Antivirus features. Limited periodic scanning is only available when Microsoft Defender Antivirus has been automatically disabled.
+
+> [!IMPORTANT]
+> Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced.
+
+You can also run Microsoft Defender Antivirus in passive mode if you start using Microsoft Defender ATP and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode has a larger feature-set than limited periodic scanning, although you will not enjoy capabilities such as [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ### See also
 
