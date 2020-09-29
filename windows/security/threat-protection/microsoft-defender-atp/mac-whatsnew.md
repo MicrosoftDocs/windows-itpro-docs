@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 > [!IMPORTANT]
 > In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender ATP for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender ATP for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
 > 
@@ -157,6 +160,6 @@ ms.topic: conceptual
   > The mechanism for granting this consent depends on how you deployed Microsoft Defender ATP:
   >
   > - For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.
-  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md#privacy-preferences-policy-control) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
+  > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes

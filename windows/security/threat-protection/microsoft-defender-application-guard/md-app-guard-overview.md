@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/28/2019
+ms.date: 09/07/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -17,6 +17,7 @@ ms.custom: asr
 # Microsoft Defender Application Guard overview
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 
 Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
@@ -42,8 +43,8 @@ Application Guard has been created to target several types of systems:
 
 ## Related articles
 
-|Article | Description |
-|--------|-------------|
+|Article |Description |
+|------|------------|
 |[System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) |Specifies the prerequisites necessary to install and use Application Guard.|
 |[Prepare and install Microsoft Defender Application Guard](install-md-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
 |[Configure the Group Policy settings for Microsoft Defender Application Guard](configure-md-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
