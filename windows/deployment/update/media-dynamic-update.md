@@ -160,7 +160,7 @@ New-Item -ItemType directory -Path $MAIN_OS_MOUNT -ErrorAction stop | Out-Null
 New-Item -ItemType directory -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 New-Item -ItemType directory -Path $WINPE_MOUNT -ErrorAction stop | Out-Null
 
-# Keep the original media, make a copy of it for the new, updateed media.
+# Keep the original media, make a copy of it for the new, updated media.
 Write-Host "$(Get-TS): Copying original media to new media path"
 Copy-Item -Path $MEDIA_OLD_PATH"\*" -Destination $MEDIA_NEW_PATH -Force -Recurse -ErrorAction stop | Out-Null
 Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContainer -and $_.IsReadOnly } | ForEach-Object { $_.IsReadOnly = $false }
