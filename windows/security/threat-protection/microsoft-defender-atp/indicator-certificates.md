@@ -20,6 +20,9 @@ ms.topic: article
 
 # Create indicators based on certificates
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -38,7 +41,7 @@ It's important to understand the following requirements prior to creating indica
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later.
+- Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
 - The virus and threat protection definitions must be up-to-date.
 - This feature currently supports entering .CER or .PEM file extensions.
 

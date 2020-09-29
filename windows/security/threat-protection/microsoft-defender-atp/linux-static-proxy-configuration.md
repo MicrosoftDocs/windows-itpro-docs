@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Configure Microsoft Defender ATP for Linux for static proxy discovery
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)

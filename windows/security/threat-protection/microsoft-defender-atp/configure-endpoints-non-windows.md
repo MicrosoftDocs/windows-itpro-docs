@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard non-Windows devices
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - macOS
