@@ -35,7 +35,7 @@ For more information, see [BitLocker overview] (bitlocker-deviceencryption-overv
 
 **How does BitLocker work with fixed and removable data drives**
 
-You can use BitLocker to encrypt the entire content of a data drive. You can use group policy to make it mandatory for BitLocker to be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock-methods for data drives, and a data drive supports multiple unlock-methods. For more information, see [BitLocker overview](bitlocker-deviceencryption-overview.md).
+You can use BitLocker to encrypt the entire content of a data drive. You can use group policy to make it mandatory for BitLocker to be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock-methods for data drives, and a data drive supports multiple unlock-methods. For more information, see [BitLocker overview](bitlocker-device-encryption-overview-windows-10.md).
 
 ## Does BitLocker support multifactor authentication?
 
@@ -43,7 +43,7 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 ## What are the BitLocker hardware and software requirements?
 
-For requirements, see [System requirements](bitlocker-deviceencryption-overview.md#system-requirements-BitLocker).
+For requirements, see [System requirements](bitlocker-device-encryption-overview-windows-10.md#system-requirements-BitLocker).
 
 > [!NOTE]
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes are not displayed in the Control Panel. Although the operating system volume is always displayed in the Control Panel, regardless of whether it is a dynamic disk, it cannot be protected by BitLocker if it is a dynamic disk.
