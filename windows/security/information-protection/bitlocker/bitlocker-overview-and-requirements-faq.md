@@ -47,7 +47,6 @@ For requirements, see [System requirements](bitlocker-overview.md#system-require
 
 > [!NOTE]
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes are not displayed in the Control Panel. Although the operating system volume is always displayed in the Control Panel, regardless of whether it is a dynamic disk, it cannot be protected by BitLocker if it is a dynamic disk.
-**Question - The above statement is not clear**.
  
 ## Why are two partitions required? Why does the system drive have to be so large?
 
