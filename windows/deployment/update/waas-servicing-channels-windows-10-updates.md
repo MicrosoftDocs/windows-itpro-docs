@@ -52,10 +52,7 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 >[!IMPORTANT]
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-**To assign a single devices locally to the Semi-Annual Channel**
-
-1. Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options**.
-2. Select **Defer feature updates**.
+Note: Devices will automatically recieve updates from the Semi-Annual Channel, unless they are configured to recieve preview updates through the Windows Insider Program.
 
 **To assign devices to the Semi-Annual Channel by using Group Policy**
 
@@ -164,7 +161,7 @@ During the life of a device, it might be necessary or desirable to switch betwee
 ## Block user access to Windows Update settings
 
 In Windows 10, administrators can control user access to Windows Update.
-By enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features**, administrators can disable the "Check for updates" option for users. Any background update scans, downloads and installations will continue to work as configured.
+By enabling the Group Policy setting under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Remove access to use all Windows update features**, administrators can disable the "Check for updates" option for users. Any background update scans, downloads and installations will continue to work as configured. This is not recommended if you have configured the device to "notify" to download or install as this policy will prevent the end user from being able to do so.
 
 >[!NOTE]
 > In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
