@@ -49,7 +49,7 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 |**System/**[**AllowDeviceNameInDiagnosticData**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 
 > [!NOTE]
-> If using Intune, *ProviderID* should be `MS DM Server`, otherwise check with your MDM vendor. See also [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
+> If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
 ### Group Policies
 
