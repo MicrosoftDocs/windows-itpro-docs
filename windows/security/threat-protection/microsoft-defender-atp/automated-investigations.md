@@ -52,15 +52,15 @@ During and after an automated investigation, you can view details about the inve
 
 |Tab |Description |
 |--|--|
-|**Alerts**| Shows the alert that started the investigation.|
-|**Devices** |Shows where the alert was seen.|
-|**Evidence** |Shows the entities that were found to be malicious during the investigation.|
-|**Entities** |Provides details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
-|**Log** |Shows the chronological detailed view of all the investigation actions taken on the alert.|
+|**Alerts**| The alert(s) that started the investigation.|
+|**Devices** |The device(s) where the threat was seen.|
+|**Evidence** |The entities that were found to be malicious during an investigation.|
+|**Entities** |Details about each analyzed entity, including a determination for each entity type (*Malicious*, *Suspicious*, or *No threats found*). |
+|**Log** |The chronological, detailed view of all the investigation actions taken on the alert.|
 |**Pending actions** |If there are any actions awaiting approval as a result of the investigation, the **Pending actions** tab is displayed. On the **Pending actions** tab, you can approve or reject each action. |
 
 > [!IMPORTANT]
-> Go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions. 
+> Go to the **[Action center](auto-investigation-action-center.md)** to get an aggregated view all pending actions and manage remediation actions. The **Action center** also acts as an audit trail for all automated investigation actions. 
 
 ## How an automated investigation expands its scope
 
@@ -70,7 +70,7 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
-Depending on how you set up the device groups and their level of automation, each automated investigation either requires user approval (default) or automatically remediates threats.
+Depending on how you set up the device groups and their level of automation, each automated investigation either requires user approval (default) or automatically takes action to remediate threats.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint tenants created on or after August 16, 2020 have **Full - remediate threats automatically** selected by default. You can keep the default setting, or change it according to your organizational needs. To change your settings, [adjust your device group settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
