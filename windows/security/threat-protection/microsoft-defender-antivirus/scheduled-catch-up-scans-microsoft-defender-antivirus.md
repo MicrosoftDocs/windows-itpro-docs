@@ -201,7 +201,7 @@ Scan | Specify the time for a daily quick scan | Specify the number of minutes a
 Use the following cmdlets:
 
 ```PowerShell
-Set-MpPreference -ScanScheduleQuickTime
+Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
