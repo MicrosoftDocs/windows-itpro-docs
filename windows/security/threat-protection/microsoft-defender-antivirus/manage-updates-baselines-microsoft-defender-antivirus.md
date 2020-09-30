@@ -193,7 +193,7 @@ No known issues
     
 ### What's new
 * WDfilter improvements
-* Add more actionable event data to ASR detection events
+* Add more actionable event data to attack surface reduction detection events
 * Fixed version information in diagnostic data and WMI
 * Fixed incorrect platform version in UI after platform update
 * Dynamic URL intel for Fileless threat protection
@@ -218,7 +218,7 @@ No known issues
 
 * CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
 * Improve diagnostic capability
-* reduce Security intelligence timeout (5min)
+* reduce Security intelligence timeout (5 min)
 * Extend AMSI engine internal log capability
 * Improve notification for process blocking
    
@@ -298,8 +298,7 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 </details>
 
 ## Microsoft Defender Antivirus platform support
-As stated above, platform and engine updates are provided on a monthly cadence.
-Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version:
+Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
 
 * **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
@@ -333,6 +332,6 @@ Article | Description
 ---|---
 [Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources.
 [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded.
-[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next log on.
+[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next logon.
 [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.
 [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.
