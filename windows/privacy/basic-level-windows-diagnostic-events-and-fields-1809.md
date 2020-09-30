@@ -7979,7 +7979,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCreate
 
-This event sends simple Product and Service usage data when a user is using the Windows System Kit to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends data when the Windows System Kit is used to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -7994,7 +7994,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCustomization
 
-This event sends simple Product and Service usage data when a user is using the Windows System Kit to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends data when the Windows System Kit is used to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -8010,7 +8010,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskWorkspaceCreate
 
-This event sends simple Product and Service usage data when a user is using the Windows System Kit to create new workspace for generating OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate workspace creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends data when the Windows System Kit is used to create new workspace for generating OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate workspace creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
