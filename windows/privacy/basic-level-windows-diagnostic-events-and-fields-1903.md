@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/29/2020
+ms.date: 09/30/2020
 ---
 
 
@@ -38,7 +38,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 2010 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 2004 and Windows 10, version 2010 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -5065,7 +5065,7 @@ The following fields are available:
 - **SourceOSVersion**  The source version of the operating system.
 
 
-## Other events
+## ONNX runtime events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5091,6 +5091,8 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
+
+## Other events
 
 ### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
 

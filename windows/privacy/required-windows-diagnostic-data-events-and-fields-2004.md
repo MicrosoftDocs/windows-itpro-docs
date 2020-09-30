@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/29/2020
+ms.date: 09/30/2020
 ---
 
 
@@ -4332,6 +4332,31 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
+## Other events
+
+### GameCoreController.LaunchLifetimeSummary
+
+No content is currently available.
+
+The following fields are available:
+
+- **gameos**  The OS version of the game.
+- **isSuspended**  A flag that indicates if account is suspended.
+- **launchInstanceId**  A launch identification.
+- **msaAppId**  The MSA app identification.
+- **pfn**  Stands for Package Full Name and  includes the package name, version, and publisher identifier.
+- **prevLaunchesOnVm**  The previous launch count on a virtual machine.
+- **suspendCount**  The total launch suspend count.
+- **systemType**  A type of console.
+- **terminateReason**  An error code indicating the reasons for launch termination.
+
+
+### SFR.XvdStreamingStart
+
+No content is currently available.
+
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -7503,6 +7528,30 @@ The following fields are available:
 ### Microsoft.Windows.Security.Winlogon.SetupCompleteLogon
 
 This event signals the completion of the setup process. It happens only once during the first logon.
+
+
+
+## XBOX events
+
+### Microsoft.Xbox.EraControl.EraVmTerminationReason
+
+No content is currently available.
+
+The following fields are available:
+
+- **pfn**  A package full name.
+- **reasonNumber**  A number associated with reason.
+
+
+### Microsoft.Xbox.XceBridge.CS.1.0.0.9.0.1.SFR.XvdStreamingStart
+
+No content is currently available.
+
+
+
+### Microsoft.Xbox.XceBridge.CS.1.0.0.9.0.2.SFR.XvdStreamingStart
+
+No content is currently available.
 
 
 

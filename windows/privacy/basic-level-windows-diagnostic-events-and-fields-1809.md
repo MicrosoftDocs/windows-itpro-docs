@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/29/2020
+ms.date: 09/30/2020
 ms.reviewer:
 ---
 
@@ -33,7 +33,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 2010 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 2004 and Windows 10, version 2010 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -3568,6 +3568,80 @@ The following fields are available:
 
 ## DISM events
 
+### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
+
+This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMInstalledLCUPackageName**  Package name of LCU that's uninstalled by using DISM
+
+
+### Microsoft.Windows.StartRep.DISMPendingInstall
+
+This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMPendingInstallPackageName**  The name of the pending package.
+
+
+### Microsoft.Windows.StartRep.DISMRevertPendingActions
+
+This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The result from the operation to revert pending packages.
+
+
+### Microsoft.Windows.StartRep.DISMUninstallLCU
+
+This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is being reported by DISM.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionEnd
+
+This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is reported.
+- **SRTRepairAction**  The action that was taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionStart
+
+This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRepairAction**  The action that is being taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
+
+This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The final result code for the root cause operation.
+- **SRTRootCauseDiag**  The name of the root cause operation that ran.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
+
+This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRootCauseDiag**  The name of a specific diagnostic.
+
+
 ### Microsoft.Windows.StartRepairCore.DISMLatestInstalledLCU
 
 The DISM Latest Installed LCU sends information to report result of search for latest installed LCU after last successful boot. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
@@ -5447,7 +5521,7 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## Other events
+## ONNX runtime events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5472,80 +5546,6 @@ The following fields are available:
 - **sessionId**  Identifier for each created session.
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
-
-
-### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
-
-This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **DISMInstalledLCUPackageName** Package name of LCU that's uninstalled by using DISM.
-
-
-### Microsoft.Windows.StartRep.DISMPendingInstall
-
-This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **DISMPendingInstallPackageName**  The name of the pending package.
-
-
-### Microsoft.Windows.StartRep.DISMRevertPendingActions
-
-This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The result from the operation to revert pending packages.
-
-
-### Microsoft.Windows.StartRep.DISMUninstallLCU
-
-This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The error code that is being reported by DISM.
-
-
-### Microsoft.Windows.StartRep.SRTRepairActionEnd
-
-This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The error code that is reported.
-- **SRTRepairAction**  The action that was taken by SRT.
-
-
-### Microsoft.Windows.StartRep.SRTRepairActionStart
-
-This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **SRTRepairAction**  The action that is being taken by SRT.
-
-
-### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
-
-This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The final result code for the root cause operation.
-- **SRTRootCauseDiag**  The name of the root cause operation that ran.
-
-
-### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
-
-This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **SRTRootCauseDiag**  The name of a specific diagnostic.
 
 
 ## Privacy consent logging events

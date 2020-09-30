@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/29/2020
+ms.date: 09/30/2020
 ms.reviewer:
 ---
 
@@ -33,7 +33,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 2010 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 2004 and Windows 10, version 2010 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
@@ -3224,24 +3224,6 @@ This event determines the error code that was returned when verifying Internet c
 The following fields are available:
 
 - **winInetError**  The HResult of the operation.
-
-
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
 
 
 ## Privacy logging notification events
