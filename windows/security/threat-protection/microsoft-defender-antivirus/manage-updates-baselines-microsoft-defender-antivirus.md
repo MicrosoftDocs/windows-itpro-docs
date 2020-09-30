@@ -77,7 +77,7 @@ All our updates contain:
 <details>
 <summary> September-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
-&ensp;Security intelligence update version: **1.323.2248.0**  
+&ensp;Security intelligence update version: **1.323.2254.0**  
 &ensp;Released: **September 30, 2020**  
 &ensp;Platform: **4.18.2008.9**  
 &ensp;Engine: **1.1.17400.5**  
