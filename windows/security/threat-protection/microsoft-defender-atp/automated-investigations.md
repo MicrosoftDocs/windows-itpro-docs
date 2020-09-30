@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/28/2020
+ms.date: 09/30/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -87,13 +87,7 @@ You can configure the following levels of automation:
 
 
 > [!IMPORTANT]
-> Regarding automation levels and default settings:
-> - If your tenant already has device groups defined, then the automation level settings are not changed for those device groups.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you have not defined a device group, your organization's default setting is **Semi - require approval for any remediation**.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Semi - require approval for any remediation**. 
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you have not defined a device group, your orgnaization's default setting is **Full - remediate threats automatically**.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Full - remediate threats automatically**.
-> - To change an automation level, **[edit your device groups](configure-automated-investigations-remediation.md#set-up-device-groups)**.
+> If your tenant already has device groups defined, then the automation level settings are not changed for those device groups.
 
 
 ### A few points to keep in mind
