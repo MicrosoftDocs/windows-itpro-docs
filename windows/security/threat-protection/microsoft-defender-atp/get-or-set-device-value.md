@@ -26,10 +26,29 @@ ms.topic: article
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ## API description
+
 Set or GET specific [Machine](machine.md) device value to define it's value to the organization. [Learn more about device value](threat-and-vuln-mgt-scenarios.md#define-a-devices-value-to-the-organization)
 
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+
+### Get machines
+
+Permission type |	Permission	|	Permission display name
+:---|:---|:---
+User  |ViewData |	?
+Application |Machine.Read  |	?
+
+### Get device value
+
+Permission type |	Permission	|	Permission display name
+:---|:---|:---
+User |ViewData |	>
+Application | Machine.ReadWrite |	?
 
 ## HTTP GET request
+
 ```http
 GET /api/machines/{machineId}/getDeviceValue
 ```
