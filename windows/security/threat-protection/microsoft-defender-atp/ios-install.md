@@ -72,7 +72,8 @@ Defender ATP.
 3.  Upon successful onboarding, the device will start showing up on the Devices
     list in Microsoft Defender Security Center.
 
-    ![A screenshot of a cell phone Description automatically generated](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
+    > [!div class="mx-imgBorder"]
+    > ![A screenshot of a cell phone Description automatically generated](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
 
 ## Next Steps
 
