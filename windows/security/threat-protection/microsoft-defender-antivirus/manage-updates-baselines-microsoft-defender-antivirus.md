@@ -84,8 +84,8 @@ All our updates contain:
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- Require administrative privileges for quarantine restore
-- Support for XML formatted events
+- Admin permissions are required to restore files in quarantine
+- XML formatted events are now supported
 - Provide CSP support to ignore exclusion merge
 - New management interfaces for: <br/>
    - UDP Inspection
