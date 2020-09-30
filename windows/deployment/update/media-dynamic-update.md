@@ -79,7 +79,7 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add latest cumulative update     |         | 15        | 21        |
 |Clean up the image     |  7       | 16        | 22        |
 |Add Optional Components     |         |         |  23       |
-|Add .Net and .Net cumulative updates     |         |        | 24        |
+|Add .NET and .NET cumulative updates     |         |        | 24        |
 |Export image     | 8        |  17       | 25        |
 
 ### Multiple Windows editions
@@ -90,7 +90,7 @@ The main operating system file (install.wim) contains multiple editions of Windo
 
 You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
-Optional Components, along with the .Net feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that will result in a larger install.wim. Another option is to install the .Net and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you will have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that will result in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you will have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
@@ -345,9 +345,9 @@ Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\
 
 For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 
-Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .Net), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
+Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
 
-You can install Optional Components, along with the .Net feature, offline, but that will require the device to be restarted. This is why the script installs .Net and Optional Components after cleanup and before export.
+You can install Optional Components, along with the .NET feature, offline, but that will require the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
 
 ```powershell
 #
@@ -398,14 +398,14 @@ DISM /image:$MAIN_OS_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
 #
 # Note: If I wanted to enable additional Optional Components, I'd add these here.
-# In addition, we'll add .Net 3.5 here as well. Both .Net and Optional Components might require
+# In addition, we'll add .NET 3.5 here as well. Both .NET and Optional Components might require
 # the image to be booted, and thus if we tried to cleanup after installation, it would fail.
 #
 
 Write-Host "$(Get-TS): Adding NetFX3~~~~"
 Add-WindowsCapability -Name "NetFX3~~~~" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
 
-# Add .Net Cumulative Update
+# Add .NET Cumulative Update
 Write-Host "$(Get-TS): Adding package $DOTNET_CU_PATH"
 Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $DOTNET_CU_PATH -ErrorAction stop | Out-Null
 
