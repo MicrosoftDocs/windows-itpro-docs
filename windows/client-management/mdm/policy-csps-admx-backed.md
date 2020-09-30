@@ -254,7 +254,6 @@ ms.date: 08/18/2020
 - [ADMX_Servicing/Servicing](./policy-csp-admx-servicing.md#admx-servicing-servicing)
 - [ADMX_SharedFolders/PublishDfsRoots](./policy-csp-admx-sharedfolders.md#admx-sharedfolders-publishdfsroots)
 - [ADMX_SharedFolders/PublishSharedFolders](./policy-csp-admx-sharedfolders.md#admx-sharedfolders-publishsharedfolders)
-- [ADMX_Sharing/DisableHomeGroup](./policy-csp-admx-sharing.md#admx-sharing-disablehomegroup)
 - [ADMX_Sharing/NoInplaceSharing](./policy-csp-admx-sharing.md#admx-sharing-noinplacesharing)
 - [ADMX_ShellCommandPromptRegEditTools/DisableCMD](./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd)
 - [ADMX_ShellCommandPromptRegEditTools/DisableRegedit](./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disableregedit)
