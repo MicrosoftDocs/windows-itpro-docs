@@ -84,6 +84,9 @@ Tip: You can deploy a policy without selecting any category on a device group. T
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 
+>[!IMPORTANT]
+>Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
+
 ### Allow specific websites
 
 It is possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it is applied to the device group in question.
