@@ -63,11 +63,11 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
+> We release these monthly updates in phases. This results in multiple packages visible in your WSUS server.
 
 ## Monthly platform and engine versions
 
-For information how to update or how to install the platform update, please see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 All our updates contain:
 - performance improvements
