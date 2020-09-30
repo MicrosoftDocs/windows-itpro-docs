@@ -46,7 +46,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 > Microsoft Defender Antivirus: KB2267602  
 > System Center Endpoint Protection: KB2461484
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for more details about enabling and configuring cloud-provided protection. 
+Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). See [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for more details about enabling and configuring cloud-provided protection. 
 
 Engine updates are included with the security intelligence updates and are released on a monthly cadence.
 
