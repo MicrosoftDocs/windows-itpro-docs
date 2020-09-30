@@ -1,7 +1,7 @@
 ---
 title: Configure Microsoft Defender ATP for iOS features
 ms.reviewer:
-description: Describes how to deploy Microsoft Defender ATP for iOS using an app
+description: Describes how to deploy Microsoft Defender ATP for iOS features
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
