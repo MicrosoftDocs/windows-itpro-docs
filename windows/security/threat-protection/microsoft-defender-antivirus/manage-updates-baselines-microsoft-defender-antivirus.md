@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/28/2020
+ms.date: 09/30/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -33,8 +33,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > This also applies to devices where Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
-
-> [!NOTE]
+> 
 > You can use the below URL to find out what are the current versions:
 > [https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 
@@ -47,7 +46,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 > Microsoft Defender Antivirus: KB2267602  
 > System Center Endpoint Protection: KB2461484
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for more details about enabling and configuring cloud-provided protection. 
 
 Engine updates are included with the security intelligence updates and are released on a monthly cadence.
 
@@ -73,10 +72,10 @@ All our updates contain:
 <details>
 <summary> September-2020 (Platform:  | Engine: )</summary>
 
-&ensp;Security intelligence update version: **1.xxx.x.x**  
-&ensp;Released: **September 28, 2020**  
-&ensp;Platform: **4.18.xxxx.x**  
-&ensp;Engine: **1.1.14500.2**  
+&ensp;Security intelligence update version: **1.323.2248.0**  
+&ensp;Released: **September 30, 2020**  
+&ensp;Platform: **4.18.2008.9**  
+&ensp;Engine: **1.1.17400.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
