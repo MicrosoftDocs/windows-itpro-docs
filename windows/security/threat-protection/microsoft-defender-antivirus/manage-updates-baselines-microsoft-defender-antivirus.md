@@ -48,13 +48,18 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
-Engine updates are included with the security intelligence updates and are released on a monthly cadence.
+Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
 Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through one of the following methods: 
+
+- [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction)
+- The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.
+
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
