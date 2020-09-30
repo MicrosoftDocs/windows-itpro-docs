@@ -4332,7 +4332,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4423,7 +4423,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4929,7 +4929,7 @@ The following fields are available:
 
 This event represents the basic metadata about the OS indicators installed on the system. The data collected with this event helps ensure the device is up to date and keeps Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4954,6 +4954,15 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 
 ## Kernel events
+
+### IO
+
+This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
+
+The following fields are available:
+
+- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
+- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
@@ -7592,6 +7601,18 @@ The following fields are available:
 - **IsValidDumpFile**  True if the dump file is valid for the debugger, false otherwise
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
+### Value
+
+This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
+
+The following fields are available:
+
+- **Algorithm**  The algorithm used to preserve privacy.
+- **DPRange**  The upper bound of the range being measured.
+- **DPValue**  The randomized response returned by the client.
+- **Epsilon**  The level of privacy to be applied.
+- **HistType**  The histogram type if the algorithm is a histogram algorithm.
+- **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
 
 ## Windows Error Reporting MTT events
 
