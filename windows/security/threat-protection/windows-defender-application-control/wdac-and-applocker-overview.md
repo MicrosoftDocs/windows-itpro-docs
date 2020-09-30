@@ -1,7 +1,7 @@
 ---
 title: WDAC and AppLocker Overview
 description: Compare Windows application control technologies.
-keywords: security, malware, whitelisting, allow-list, block-list
+keywords: security, malware, allow-list, block-list
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ author: denisebmsft
 ms.reviewer: isbrahm
 ms.author: deniseb
 manager: dansimp
-ms.date: 09/28/2020
+ms.date: 09/30/2020
 ms.custom: asr
 ---
 
