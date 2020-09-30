@@ -44,9 +44,13 @@ You'll need to take the following steps:
 
 7. [Approve Kernel extension for Microsoft Defender ATP](#step-7-approve-kernel-extension-for-microsoft-defender-atp)
 
-8. [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+8. [Approve System extensions for Microsoft Defender ATP](#step-8-approve-system-extensions-for-microsoft-defender-atp)
 
-9. [Deploy Microsoft Defender ATP for macOS](#step-9-deploy-microsoft-defender-atp-for-macos)
+9. [Configure Network Extension](#step-9-configure-network-extension)
+
+10. [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
+11. [Deploy Microsoft Defender ATP for macOS](#step-11-deploy-microsoft-defender-atp-for-macos)
 
 
 ## Step 1: Get the Microsoft Defender ATP onboarding package
@@ -582,10 +586,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     - Identifier: `com.microsoft.wdav`
     - Identifier Type: Bundle ID
-    - Code Requirement: identifier `com.microsoft.wdav` and anchor apple generic and
-certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate
-leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate
-leaf[subject.OU] = UBF8T346G9
+    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
 
 
     ![Image of configuration setting](images/22cb439de958101c0a12f3038f905b27.png)
@@ -603,23 +604,45 @@ leaf[subject.OU] = UBF8T346G9
 
     ![Image of configuration setting](images/6de50b4a897408ddc6ded56a09c09fe2.png)
 
-8. Select the **Scope** tab.
+8. Click the `+` sign next to **App Access** to add a new entry.
+
+    ![Image of configuration setting](images/tcc-add-entry.png)
+
+9. Enter the following details:
+
+    - Identifier: `com.microsoft.wdav.epsext`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+
+10. Select **+ Add**.
+
+    ![Image of configuration setting](images/tcc-epsext-entry.png)
+
+  - Under App or service: Set to **SystemPolicyAllFiles**
+
+  - Under "access": Set to **Allow**
+
+11. Select **Save** (not the one at the bottom right).
+
+    ![Image of configuration setting](images/tcc-epsext-entry2.png)
+
+12. Select the **Scope** tab.
 
     ![Image of configuration setting](images/2c49b16cd112729b3719724f581e6882.png)
 
- 9. Select **+ Add**.
+13. Select **+ Add**.
 
     ![Image of configuration setting](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-10. Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**. 
+14. Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**. 
 
     ![Image of configuration setting](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-11. Select **Add**. 
+15. Select **Add**. 
 
-12. Select **Save**. 
+16. Select **Save**. 
     
-13. Select **Done**.
+17. Select **Done**.
     
     ![Image of configuration setting](images/809cef630281b64b8f07f20913b0039b.png)
     
@@ -677,10 +700,179 @@ leaf[subject.OU] = UBF8T346G9
     ![Image of configuration settings](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
 
-## Step 8: Schedule scans with Microsoft Defender ATP for Mac
+## Step 8: Approve System extensions for Microsoft Defender ATP
+
+1. In the **Configuration Profiles**, select **+ New**.
+
+    ![A screenshot of a social media post Description automatically generated](images/6c8b406ee224335a8c65d06953dc756e.png)
+
+2. Enter the following details:
+
+    **General**
+  - Name: MDATP MDAV System Extensions
+  - Description: MDATP system extensions
+  - Category: None
+  - Distribution Method: Install Automatically
+  - Level: Computer Level
+
+    ![Image of configuration settings](images/sysext-new-profile.png)
+
+3. In **System Extensions** select **Configure**.
+
+    ![Image of configuration settings](images/sysext-configure.png)
+
+4. In **System Extensions** enter the following details:
+
+  - Display Name: Microsoft Corp. System Extensions
+  - System Extension Types: Allowed System Extensions
+  - Team Identifier: UBF8T346G9
+  - Allowed System Extensions:
+    - **com.microsoft.wdav.epsext**
+    - **com.microsoft.wdav.netext**
+
+    ![Image of configuration settings](images/sysext-configure2.png)
+
+5. Select the **Scope** tab.
+
+    ![Image of configuration settings](images/0df36fc308ba569db204ee32db3fb40a.png)
+
+6. Select **+ Add**.
+
+7. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
+
+8. Select **+ Add**.
+
+    ![Image of configuration settings](images/0dde8a4c41110dbc398c485433a81359.png)
+
+9. Select **Save**.
+
+    ![Image of configuration settings](images/sysext-scope.png)
+
+10. Select **Done**.
+
+    ![Image of configuration settings](images/sysext-final.png)
+
+## Step 9: Configure Network Extension
+
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+
+>[!NOTE]
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+>As such, the following steps provide a workaround that involve signing the configuration profile.
+
+1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig`
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1">
+        <dict>
+            <key>PayloadUUID</key>
+            <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft Corporation</string>
+            <key>PayloadIdentifier</key>
+            <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
+            <key>PayloadDisplayName</key>
+            <string>Microsoft Defender ATP Network Extension</string>
+            <key>PayloadDescription</key>
+            <string/>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadRemovalDisallowed</key>
+            <true/>
+            <key>PayloadScope</key>
+            <string>System</string>
+            <key>PayloadContent</key>
+            <array>
+                <dict>
+                    <key>PayloadUUID</key>
+                    <string>2BA070D9-2233-4827-AFC1-1F44C8C8E527</string>
+                    <key>PayloadType</key>
+                    <string>com.apple.webcontent-filter</string>
+                    <key>PayloadOrganization</key>
+                    <string>Microsoft Corporation</string>
+                    <key>PayloadIdentifier</key>
+                    <string>CEBF7A71-D9A1-48BD-8CCF-BD9D18EC155A</string>
+                    <key>PayloadDisplayName</key>
+                    <string>Approved Network Extension</string>
+                    <key>PayloadDescription</key>
+                    <string/>
+                    <key>PayloadVersion</key>
+                    <integer>1</integer>
+                    <key>PayloadEnabled</key>
+                    <true/>
+                    <key>FilterType</key>
+                    <string>Plugin</string>
+                    <key>UserDefinedName</key>
+                    <string>Microsoft Defender ATP Network Extension</string>
+                    <key>PluginBundleID</key>
+                    <string>com.microsoft.wdav</string>
+                    <key>FilterSockets</key>
+                    <true/>
+                    <key>FilterDataProviderBundleIdentifier</key>
+                    <string>com.microsoft.wdav.netext</string>
+                    <key>FilterDataProviderDesignatedRequirement</key>
+                    <string>identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                </dict>
+            </array>
+        </dict>
+    </plist>
+    ```
+
+2. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
+
+3. After the certificate is created and installed to your device, run the following command from the Terminal from a macOS device:
+
+    ```bash
+    $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
+    ```
+
+    ![Terminal window with command to create signed configuration](images/netext-create-profile.png)
+
+4. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. 
+
+    ![Image of upload window](images/netext-upload-file.png)
+
+5. Select **Choose File** and select `microsoft.network-extension.signed.mobileconfig`.
+
+    ![Image of upload window](images/netext-choose-file.png)
+
+6. Select **Upload**.
+
+    ![Image of upload window](images/netext-upload-file2.png)
+
+7. After uploading the file, you are redirected to a new page to finalize the creation of this profile.
+
+    ![Image of new configuration profile](images/netext-profile-page.png)
+
+8. Select the **Scope** tab.
+
+    ![Image of configuration settings](images/0df36fc308ba569db204ee32db3fb40a.png)
+
+9. Select **+ Add**.
+
+10. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
+
+11. Select **+ Add**.
+
+    ![Image of configuration settings](images/0dde8a4c41110dbc398c485433a81359.png)
+
+12. Select **Save**.
+
+    ![Image of configuration settings](images/netext-scope.png)
+
+13. Select **Done**.
+
+    ![Image of configuration settings](images/netext-final.png)
+
+## Step 10: Schedule scans with Microsoft Defender ATP for Mac
 Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## Step 9: Deploy Microsoft Defender ATP for macOS
+## Step 11: Deploy Microsoft Defender ATP for macOS
 
 1. Navigate to where you saved `wdav.pkg`.
 

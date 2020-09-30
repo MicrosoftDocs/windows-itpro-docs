@@ -34,6 +34,7 @@ This topic describes how to deploy Microsoft Defender ATP for Mac through Intune
 
 1. [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 1. [Client device setup](#client-device-setup)
+1. [Approve system extensions](#approve-system-extensions)
 1. [Create System Configuration profiles](#create-system-configuration-profiles)
 1. [Publish application](#publish-application)
 
@@ -48,11 +49,13 @@ The following table summarizes the steps you would need to take to deploy and ma
 | Step | Sample file names | BundleIdentifier |
 |-|-|-|
 | [Download installation and onboarding packages](#download-installation-and-onboarding-packages) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
+| [Approve System Extension for Microsoft Defender ATP](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
 | [Approve Kernel Extension for Microsoft Defender ATP](#download-installation-and-onboarding-packages) | MDATP_KExt.xml | N/A |
 | [Grant full disk access to Microsoft Defender ATP](#create-system-configuration-profiles-step-8) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
+| [Network Extension policy](#create-system-configuration-profiles-step-9) | MDATP_NetExt.xml | N/A |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender ATP configuration settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you are planning to run a third party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
-| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-9) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
+| [Configure Microsoft Defender ATP and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-10) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download installation and onboarding packages
 
@@ -136,6 +139,25 @@ You may now enroll more devices. You can also enroll them later, after you have 
 
 ![Add Devices screenshot](../microsoft-defender-antivirus/images/MDATP-5-allDevices.png)
 
+## Approve System Extensions
+
+To approve the system extensions:
+
+1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
+2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
+3. In the `Basics` tab, give a name to this new profile.
+4. In the `Configuration settings` tab, add the following entries in the `Allowed system extensions` section:
+
+    Bundle identifier         | Team identifier
+    --------------------------|----------------
+    com.microsoft.wdav.epsext | UBF8T346G9
+    com.microsoft.wdav.netext | UBF8T346G9
+
+    ![System configuration profiles screenshot](images/mac-system-extension-intune2.png)
+
+5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
+6. Review and create this configuration profile.
+
 ## Create System Configuration profiles
 
 1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
@@ -212,6 +234,21 @@ You may now enroll more devices. You can also enroll them later, after you have 
                    <string>bundleID</string>
                </dict>
                </array>
+                <key>SystemPolicyAllFiles</key>
+                <array>
+                    <dict>
+                        <key>Identifier</key>
+                        <string>com.microsoft.wdav.epsext</string>
+                        <key>CodeRequirement</key>
+                        <string>identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                        <key>IdentifierType</key>
+                        <string>bundleID</string>
+                        <key>StaticCode</key>
+                        <integer>0</integer>
+                        <key>Allowed</key>
+                        <integer>1</integer>
+                    </dict>
+                </array>
            </dict>
        </dict>
        </array>
@@ -219,7 +256,70 @@ You may now enroll more devices. You can also enroll them later, after you have 
    </plist>
    ```
 
-9. To allow Defender and Auto Update to display notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload: <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality. Save the following content as netext.xml and deploy it using the same steps as in the previous sections. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1">
+        <dict>
+            <key>PayloadUUID</key>
+            <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft Corporation</string>
+            <key>PayloadIdentifier</key>
+            <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
+            <key>PayloadDisplayName</key>
+            <string>Microsoft Defender ATP System Extensions</string>
+            <key>PayloadDescription</key>
+            <string/>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadRemovalDisallowed</key>
+            <true/>
+            <key>PayloadScope</key>
+            <string>System</string>
+            <key>PayloadContent</key>
+            <array>
+                <dict>
+                    <key>PayloadUUID</key>
+                    <string>2BA070D9-2233-4827-AFC1-1F44C8C8E527</string>
+                    <key>PayloadType</key>
+                    <string>com.apple.webcontent-filter</string>
+                    <key>PayloadOrganization</key>
+                    <string>Microsoft Corporation</string>
+                    <key>PayloadIdentifier</key>
+                    <string>CEBF7A71-D9A1-48BD-8CCF-BD9D18EC155A</string>
+                    <key>PayloadDisplayName</key>
+                    <string>Approved Network Extension</string>
+                    <key>PayloadDescription</key>
+                    <string/>
+                    <key>PayloadVersion</key>
+                    <integer>1</integer>
+                    <key>PayloadEnabled</key>
+                    <true/>
+                    <key>FilterType</key>
+                    <string>Plugin</string>
+                    <key>UserDefinedName</key>
+                    <string>Microsoft Defender ATP Network Extension</string>
+                    <key>PluginBundleID</key>
+                    <string>com.microsoft.wdav</string>
+                    <key>FilterSockets</key>
+                    <true/>
+                    <key>FilterDataProviderBundleIdentifier</key>
+                    <string>com.microsoft.wdav.netext</string>
+                    <key>FilterDataProviderDesignatedRequirement</key>
+                    <string>identifier &quot;com.microsoft.wdav.netext&quot; and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                </dict>
+            </array>
+        </dict>
+    </plist>
+    ```
+
+10. To allow Defender and Auto Update to display notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload: <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -314,7 +414,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
    </plist>
    ```
 
-10. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+11. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
