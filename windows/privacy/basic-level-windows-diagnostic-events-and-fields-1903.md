@@ -5092,27 +5092,7 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
-- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installationType**  Identifies if the gateway was installed as a VM extension.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
-
+## Surface events
 
 ### Microsoft.Surface.Health.Binary.Prod.McuHealthLog
 
@@ -5125,6 +5105,7 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
+## Update health events
 
 ### Microsoft.Windows.UpdateHealthTools.ExpediteBlocked
 
