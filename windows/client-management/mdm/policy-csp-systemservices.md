@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - SystemServices
-description: Policy CSP - SystemServices
+description: Learn how to use the Policy CSP - SystemServices setting to determine whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

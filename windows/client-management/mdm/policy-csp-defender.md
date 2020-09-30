@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Defender
-description: Policy CSP - Defender
+description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -2312,6 +2312,9 @@ ADMX Info:
 
 
 Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
+
+> [!NOTE]
+> Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices. For more information about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 <!--/Description-->
 <!--SupportedValues-->

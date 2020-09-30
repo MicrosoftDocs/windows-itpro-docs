@@ -96,7 +96,7 @@ Because Secure Boot has protected the bootloader and Trusted Boot has protected 
 
 Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn’t started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it’s not trusted, Windows won’t load it.
 
-An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx) and several non-Microsoft anti-malware apps.
+An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://docs.microsoft.com/lifecycle/products/microsoft-system-center-2012-endpoint-protection) and several non-Microsoft anti-malware apps.
 
 ## Measured Boot
 If a PC in your organization does become infected with a rootkit, you need to know about it. Enterprise anti-malware apps can report malware infections to the IT department, but that doesn’t work with rootkits that hide their presence. In other words, you can’t trust the client to tell you whether it’s healthy.
@@ -129,4 +129,4 @@ Measured Boot uses the power of UEFI, TPM, and Windows 10 to give you a way to 
 Secure Boot, Trusted Boot, and Measured Boot create an architecture that is fundamentally resistant to bootkits and rootkits. In Windows 10, these features have the potential to eliminate kernel-level malware from your network. This is the most ground-breaking anti-malware solution that Windows has ever had; it’s leaps and bounds ahead of everything else. With Windows 10, you can truly trust the integrity of your operating system.
 
 ## Additional resources
--  [Windows 10 Enterprise Evaluation](https://technet.microsoft.com/evalcenter/hh699156.aspx?ocid=wc-tn-wctc)
+-  [Windows 10 Enterprise LTSC 2019 or v2004 Evaluation](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)

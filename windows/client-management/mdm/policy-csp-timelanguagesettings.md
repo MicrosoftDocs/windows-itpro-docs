@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TimeLanguageSettings
-description: Learn which TimeLanguageSettings policies are supported for your edition of Windows.
+description: Learn to use the Policy CSP - TimeLanguageSettings setting to specify the time zone to be applied to the device.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

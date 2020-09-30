@@ -351,7 +351,7 @@ The following table details the hardware requirements for both virtualization-ba
 <td align="left"><p>Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled</p></td>
 <td align="left"><p>Required to support virtualization-based security.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>Device Guard can be enabled without using virtualization-based security.</p>
+<b>Note</b><br/><p>Device Guard can be enabled without using virtualization-based security.</p>
 </div>
 <div>
 
@@ -533,7 +533,7 @@ If the TPM ownership is not known but the EK exists, the client library will pro
 
 As part of the provisioning process, Windows 10 will create an AIK with the TPM. When this operation is performed, the resulting AIK public portion is stored in the registry at the following location: **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\WindowsAIKPub**
 
-> **Note:**  For provisioning AIK certificates and filtering Internet access, you must authorize the following wildcard URL: <strong>https://\*.microsoftaik.azure.net</strong>
+> **Note:**  For provisioning AIK certificates and filtering Internet access, you must authorize the following wildcard URL: <b>https://\*.microsoftaik.azure.net</b>
 
 ### Windows 10 Health Attestation CSP
 

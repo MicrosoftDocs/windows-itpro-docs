@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - RemoteShell
-description: Policy CSP - RemoteShell
+description: Learn details about the Policy CSP - RemoteShell setting so that you can configure access to remote shells.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

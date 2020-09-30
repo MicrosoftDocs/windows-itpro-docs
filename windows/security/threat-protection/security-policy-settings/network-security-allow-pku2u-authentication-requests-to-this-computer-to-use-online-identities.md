@@ -83,6 +83,8 @@ Set this policy to *Disabled* or don't configure this security policy for domain
 
 If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
 
+Please be aware that some roles/features (such as Failover Clustering) do not utilize a domain account for its PKU2U authentication and will cease to function properly when disabling this policy.
+
 ## Related topics
 
 - [Security options](security-options.md)

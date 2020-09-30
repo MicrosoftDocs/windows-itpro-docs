@@ -1,6 +1,6 @@
 ---
 title: Enable ADMX-backed policies in MDM
-description: Use this is a step-by-step guide to configuring ADMX-backed policies in MDM.
+description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX-backed policies) in Mobile Device Management (MDM).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

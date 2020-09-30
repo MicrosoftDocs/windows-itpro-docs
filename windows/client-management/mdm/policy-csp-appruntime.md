@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - AppRuntime
-description: Control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in.Policy CSP - AppRuntime.
+description: Learn how the Policy CSP - AppRuntime setting controls whether Microsoft accounts are optional for Windows Store apps that require an account to sign in.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

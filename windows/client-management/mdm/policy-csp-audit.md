@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Audit
-description: Policy CSP - Audit
+description: Learn how the Policy CSP - Audit setting causes an audit event to be generated when an account can't log on to a computer because the account is locked out.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

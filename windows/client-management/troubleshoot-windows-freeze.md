@@ -2,7 +2,7 @@
 title: Advanced troubleshooting for Windows-based computer freeze issues 
 ms.reviewer: 
 manager: dansimp
-description: Learn how to troubleshoot computer freeze issues on Windows-based computers and servers.
+description: Learn how to troubleshoot computer freeze issues on Windows-based computers and servers. Also, you can learn how to diagnose, identify, and fix these issues.
 ms.prod: w10 
 ms.mktglfcycl: 
 ms.sitesec: library 

@@ -6,7 +6,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: d3378058-e4f0-4a11-a888-b550af994bfa
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Use the User Experience page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the User Experience page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **User Experience** page of the Internet Explorer Customization Wizard 11 lets you decide how much you want your employees to interact with the custom package’s Setup process.
 
 **Note**<br>You’ll only see this page if you are running the **Internal** version of the Internet Explorer Customization Wizard 11.<p>The customizations you make on this page only apply to Internet Explorer for the desktop on Windows 7.

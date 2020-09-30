@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Speech
-description: Policy CSP - Speech
+description: Learn how the Policy CSP - Speech setting specifies whether the device will receive updates to the speech recognition and speech synthesis models.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

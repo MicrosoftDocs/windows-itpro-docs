@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Advanced Group Policy Management (AGPM) is an add-on license that available for the Microsoft Desktop Optimization Pack (MDOP). This license gives you change control and a role assignment-model that helps optimize Group Policy management and reduce the risk of widespread failures.
 
 From AGPM you can:

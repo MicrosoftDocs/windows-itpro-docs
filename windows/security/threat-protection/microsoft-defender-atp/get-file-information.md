@@ -1,6 +1,6 @@
 ---
 title: Get file information API
-description: Retrieves a file by identifier Sha1, Sha256, or MD5.
+description: Learn how to use the Get file information API to get a file by Sha1, Sha256, or MD5 identifier in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Get file information API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

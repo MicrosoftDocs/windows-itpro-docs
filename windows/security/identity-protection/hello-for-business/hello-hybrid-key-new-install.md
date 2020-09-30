@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Key Trust New Installation
-description: Learn how to configure a hybrid key trust deployment of Windows Hello for Business, for systems with no previous installations.
+description: Learn how to configure a hybrid key trust deployment of Windows Hello for Business for systems with no previous installations.
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy

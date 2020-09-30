@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Security
-description: Policy CSP - Security
+description: Learn how the Policy CSP - Security setting can specify whether to allow the runtime configuration agent to install provisioning packages.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

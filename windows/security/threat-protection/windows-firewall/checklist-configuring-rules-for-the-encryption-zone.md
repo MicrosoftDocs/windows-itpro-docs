@@ -1,6 +1,6 @@
 ---
 title: Checklist Configuring Rules for the Encryption Zone (Windows 10)
-description: Checklist Configuring Rules for the Encryption Zone
+description: Use these tasks to configure connection security rules and IPsec settings in your GPOs to implement the encryption zone in an isolated domain.
 ms.assetid: 87b1787b-0c70-47a4-ae52-700bff505ea4
 ms.reviewer: 
 ms.author: dansimp

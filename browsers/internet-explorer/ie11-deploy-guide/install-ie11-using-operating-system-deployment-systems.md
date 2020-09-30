@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # Install Internet Explorer 11 (IE11) using Microsoft Deployment Toolkit (MDT) and your Windows images
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 You can install Internet Explorer 11 (IE11) using Microsoft Deployment Toolkit (MDT) and your Windows images.
 
 You'll need to extract the .cab file for each supported operating system and platform combination and the .msu file for each prerequisite update. Download the IE11 update and prerequisites here:

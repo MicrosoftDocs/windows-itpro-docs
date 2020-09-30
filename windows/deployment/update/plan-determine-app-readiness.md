@@ -7,12 +7,12 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+author: jaimeo
 ---
 
 # Determine application readiness

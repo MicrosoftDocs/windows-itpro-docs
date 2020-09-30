@@ -17,6 +17,9 @@ ms.author: dansimp
 
 # Workflow-based processes for employees using the Enterprise Mode Site List Portal
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

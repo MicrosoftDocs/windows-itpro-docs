@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TextInput
-description: Policy CSP - TextInput
+description: The Policy CSP - TextInput setting allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

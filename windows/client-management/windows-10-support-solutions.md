@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Windows 10
-description: Get links to troubleshooting articles for Windows 10 issues
+description: Learn where to find information about troubleshooting Windows 10 issues, for example Bitlocker issues and bugcheck errors.
 ms.reviewer: kaushika
 manager: dansimp
 ms.prod: w10
@@ -131,4 +131,4 @@ This section contains advanced troubleshooting topics and links to help you reso
 
 ## Other Resources
 
-### [Troubleshooting Windows Server components](https://docs.microsoft.com/windows-server/troubleshoot/windows-server-support-solutions)
+- [Troubleshooting Windows Server components](https://docs.microsoft.com/windows-server/troubleshoot/windows-server-troubleshooting)

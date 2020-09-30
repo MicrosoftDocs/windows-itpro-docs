@@ -1,6 +1,6 @@
 ---
 title: Server requirements for using OMA DM to manage Windows devices
-description: Server requirements for using OMA DM to manage Windows devices
+description: Learn about the general server requirements for using OMA DM to manage Windows devices, including the supported versions of OMA DM.
 MS-HAID:
 - 'p\_phDeviceMgmt.server\_requirements\_for\_oma\_dm'
 - 'p\_phDeviceMgmt.server\_requirements\_windows\_mdm'

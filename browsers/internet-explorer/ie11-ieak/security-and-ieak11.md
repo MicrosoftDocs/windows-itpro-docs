@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Security features and IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Use Internet Explorer in conjunction with your new and existing security measures, to make sure the computers in your company aren’t compromised while on the Internet.
 
 ## Enhanced Protection Mode

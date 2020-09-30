@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Bluetooth
-description: Policy CSP - Bluetooth
+description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: 4713(S) Kerberos policy was changed. (Windows 10)
-description: Describes security event 4713(S) Kerberos policy was changed.
+description: Describes security event 4713(S) Kerberos policy was changed. This event is generated when Kerberos policy is changed.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

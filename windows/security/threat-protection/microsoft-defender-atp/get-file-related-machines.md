@@ -1,6 +1,6 @@
 ---
 title: Get file related machines API
-description: Retrieves a collection of devices related to a given file hash.
+description: Learn how to use the Get file related machines API to get a collection of machines related to a file hash in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, devices, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Get file related machines API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

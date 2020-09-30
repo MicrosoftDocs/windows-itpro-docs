@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - InternetExplorer
-description: Policy CSP - InternetExplorer
+description: Use the Policy CSP - InternetExplorer setting to add a specific list of search providers to the user's default list of search providers.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

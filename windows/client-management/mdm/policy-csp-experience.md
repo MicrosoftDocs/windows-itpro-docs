@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Experience
-description: Learn the various Experience policy CSP for Cortana, Sync, Spotlight and more.
+description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

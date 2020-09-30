@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/26/2018
+ms.custom: bitlocker
 ---
 
 # BitLocker

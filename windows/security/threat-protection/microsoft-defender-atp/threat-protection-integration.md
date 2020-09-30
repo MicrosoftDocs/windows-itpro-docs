@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Defender ATP with other Microsoft solutions
 ms.reviewer: 
-description: Learn how Microsoft Defender ATP integrations with other Microsoft solutions 
+description: Learn how Microsoft Defender ATP integrates with other Microsoft solutions, including Azure Advanced Threat Protection and Azure Security Center.
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,6 +19,9 @@ ms.topic: conceptual
 ---
 
 # Microsoft Defender ATP and other Microsoft solutions
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 

@@ -124,6 +124,16 @@ The following [Delivery Optimization](https://docs.microsoft.com/windows/deploym
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 - Update less: Last year, we [changed update installation policies](https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/#l2jH7KMkOkfcWdBs.97) for Windows 10 to only target devices running a feature update version that is nearing end of service. As a result, many devices are only updating once a year. To enable all devices to make the most of this policy change, and to prevent confusion, we have removed deferrals from the Windows Update settings **Advanced Options** page starting on Windows 10, version 2004. If you wish to continue leveraging deferrals, you can use local Group Policy (**Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview builds and Feature Updates are received** or **Select when Quality Updates are received**). For more information about this change, see [Simplified Windows Update settings for end users](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplified-windows-update-settings-for-end-users/ba-p/1497215).
 
+## Networking
+
+### Wi-Fi 6 and WPA3
+
+Windows now supports the latest Wi-Fi standards with [Wi-Fi 6 and WPA3](https://support.microsoft.com/help/4562575/windows-10-faster-more-secure-wifi). Wi-Fi 6 gives you better wireless coverage and performance with added security. WPA3 provides improved Wi-Fi security and secures open networks. 
+
+### TEAP
+
+In this release, Tunnel Extensible Authentication Protocol (TEAP) has been added as an authentication method to allow chaining together multiple credentials into a single EAP transaction. TEAP networks can be configured by [enterprise policy](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/94cf6896-c28e-4865-b12a-d83ee38cd3ea).   
+
 ## Virtualization
 
 ### Windows Sandbox

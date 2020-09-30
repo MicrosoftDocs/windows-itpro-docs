@@ -3,9 +3,7 @@ title: Manage additional Windows Update settings (Windows 10)
 description: Additional settings to control the behavior of Windows Update (WU) in Windows 10
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 author: jaimeo

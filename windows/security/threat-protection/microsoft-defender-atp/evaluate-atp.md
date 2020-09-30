@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Evaluate Microsoft Defender ATP 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
 You can evaluate Microsoft Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
@@ -37,7 +40,7 @@ These capabilities help prevent attacks and exploitations from infecting your or
 - [Evaluate application guard](../microsoft-defender-application-guard/test-scenarios-md-app-guard.md)
 - [Evaluate network firewall](../windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
-## Evaluate next generation protection
+## Evaluate next-generation protection
 
 Next gen protections help detect and block the latest threats.
 

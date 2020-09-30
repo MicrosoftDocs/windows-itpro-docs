@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Resources
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -98,6 +101,9 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration         |Add/remove an antivirus exclusion for a directory       |`mdatp exclusion folder [add|remove] --path [path-to-directory]`       |
 |Configuration         |Add/remove an antivirus exclusion for a process         |`mdatp exclusion process [add|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add|remove] --name [process-name]`   |
 |Configuration         |List all antivirus exclusions                           |`mdatp exclusion list`                                                 |
+|Configuration         |Add a threat name to the allowed list                   |`mdatp threat allowed add --name [threat-name]`                        |
+|Configuration         |Remove a threat name from the allowed list              |`mdatp threat allowed remove --name [threat-name]`                     |
+|Configuration         |List all allowed threat names                           |`mdatp threat allowed list`                                            |
 |Configuration         |Turn on PUA protection                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuration         |Turn off PUA protection                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Turn on audit mode for PUA protection                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
@@ -114,8 +120,8 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management |List all quarantined files                              |`mdatp threat quarantine list`                                         |
 |Quarantine management |Remove all files from the quarantine                    |`mdatp threat quarantine remove-all`                                   |
 |Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id [threat-id]`                         |
-|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine add --id [threat-id]`                         |
-|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine add --id [threat-id]`                         |
+|Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine remove --id [threat-id]`                      |
+|Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine restore --id [threat-id]`                     |
 
 ## Microsoft Defender ATP portal information
 

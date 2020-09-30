@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Desktop
-description: Policy CSP - Desktop
+description: Learn how to use the Policy CSP - Desktop setting to prevent users from changing the path to their profile folders.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

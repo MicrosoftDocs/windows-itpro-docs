@@ -657,7 +657,7 @@ function PrintHardwareReq
 {
     LogAndConsole "###########################################################################"
     LogAndConsole "OS and Hardware requirements for enabling Device Guard and Credential Guard"
-    LogAndConsole " 1. OS SKUs: Available only on these OS Skus - Enterprise, Server, Education, Enterprise IoT, Pro, and Home"
+    LogAndConsole " 1. OS SKUs: Available only on these OS Skus - Enterprise, Server, Education and Enterprise IoT"
     LogAndConsole " 2. Hardware: Recent hardware that supports virtualization extension with SLAT"
     LogAndConsole "To learn more please visit: https://aka.ms/dgwhcr"
     LogAndConsole "########################################################################### `n"
@@ -735,7 +735,7 @@ function CheckOSSKU
     $osname = $((gwmi win32_operatingsystem).Name).ToLower()
     $_SKUSupported = 0
     Log "OSNAME:$osname"
-    $SKUarray = @("Enterprise", "Education", "IoT", "Windows Server", "Pro", "Home")
+    $SKUarray = @("Enterprise", "Education", "IoT", "Windows Server")
     $HLKAllowed = @("microsoft windows 10 pro")
     foreach ($SKUent in $SKUarray)
     {

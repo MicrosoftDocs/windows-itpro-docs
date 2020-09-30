@@ -1,6 +1,6 @@
 ---
 title: Machine resource type
-description: Retrieves top machines
+description: Learn about the methods and properties of the Machine resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # Machine resource type
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

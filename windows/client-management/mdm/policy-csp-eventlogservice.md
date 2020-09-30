@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - EventLogService
-description: Policy CSP - EventLogService
+description: Learn how to use the Policy CSP - EventLogService settting to control Event Log behavior when the log file reaches its maximum size.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

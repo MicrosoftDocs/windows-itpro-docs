@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Power
-description: Learn the ins and outs of various Policy CSP - Power settings, including SyncML, for Windows 10.
+description: Learn how the Policy CSP - Power setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

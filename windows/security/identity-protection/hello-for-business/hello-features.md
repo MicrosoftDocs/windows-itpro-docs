@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Features
-description: Windows Hello for Business Features 
+description: Consider additional features you can use after your organization deploys Windows Hello for Business. 
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
 ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, PIN Reset, Dynamic Lock, Multifactor Unlock, Forgot PIN, Privileged credentials

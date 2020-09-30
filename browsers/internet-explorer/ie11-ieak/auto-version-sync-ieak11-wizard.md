@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Automatic Version Synchronization page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Automatic Version Synchronization** page of the Internet Explorer Customization Wizard 11 runs the synchronization process every time you run the wizard, downloading the Internet Explorer 11 Setup file to your computer. The Setup file includes the required full and express packages.
 
 **Important**<br>

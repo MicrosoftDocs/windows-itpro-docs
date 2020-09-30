@@ -18,6 +18,9 @@ ms.topic: conceptual
 ---
 # Remediation activities and exceptions - threat and vulnerability management
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -26,7 +29,7 @@ ms.topic: conceptual
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
 
-After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), start creating security tasks through the integration with Microsoft Intune where remediation tickets are created.
+After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), start creating security tasks. You can create tasks through the integration with Microsoft Intune where remediation tickets are created.
 
 Lower your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
@@ -39,7 +42,7 @@ You can access the Remediation page a few different ways:
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization.
+Go to the threat and vulnerability management navigation menu and select **Remediation**. It will open the list of remediation activities and exceptions found in your organization.
 
 ### Top remediation activities in the dashboard
 
@@ -49,7 +52,7 @@ View **Top remediation activities** in the [threat and vulnerability management 
 
 ## Remediation activities
 
-When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created which will be tracked in the threat and vulnerability management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
+When you [submit a remediation request](tvm-security-recommendation.md#request-remediation) from the [Security recommendations page](tvm-security-recommendation.md), it kicks-off a remediation activity. A security task is created that can be tracked in the threat and vulnerability management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
 ![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
@@ -66,8 +69,8 @@ The exceptions you've filed will show up in the **Remediation** page, in the **E
 
 You can take the following actions on an exception:
 
-- Cancel - You can cancel the exceptions you've filed any time
-- Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
+- Cancel - You can cancel the exceptions you've filed anytime
+- Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change. It adversely affects the exposure impact associated with a recommendation that had previously been excluded.
 
 The following statuses will be a part of an exception:
 
@@ -89,7 +92,7 @@ The exception impact shows on both the Security recommendations page column and 
 
 ### View exceptions in other places
 
-Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard to open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
+Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. It will open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
 
 ![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard.](images/tvm-exception-dashboard.png)
 

@@ -311,9 +311,9 @@ The following table lists EMET features in relation to Windows 10 features.
 <table>
 <thead>
 <tr class="header">
-<th><strong>Specific EMET features</strong></th>
-<th><strong>How these EMET features map<br />
-to Windows 10 features</strong></th>
+<th><b>Specific EMET features</b></th>
+<th><b>How these EMET features map<br />
+to Windows 10 features</b></th>
 </tr>
 </thead>
 <tbody>

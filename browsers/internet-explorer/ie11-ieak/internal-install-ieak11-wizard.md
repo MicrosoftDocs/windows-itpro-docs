@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Internal Install page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Internal Install** page of the Internet Explorer Customization Wizard 11 lets you customize Setup for the default browser and the latest browser updates, based on your company’s guidelines.
 
 **Note**<br>The customizations made on this page only apply to Internet Explorer for the desktop on Windows 7.

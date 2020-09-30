@@ -1,6 +1,6 @@
 ---
 title: List machines API
-description: Retrieves a collection of recently seen devices.
+description: Learn how to use the List machines API to retrieve a collection of machines that have communicated with Microsoft Defender ATP cloud.
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,6 +17,9 @@ ms.topic: article
 ---
 
 # List machines API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

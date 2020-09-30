@@ -1,6 +1,6 @@
 ---
 title: VPNv2 CSP
-description: VPNv2 CSP
+description: Learn how the VPNv2 configuration service provider (CSP) allows the mobile device management (MDM) server to configure the VPN profile of the device.
 ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
 ms.reviewer: 
 manager: dansimp

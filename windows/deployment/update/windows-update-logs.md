@@ -1,12 +1,10 @@
 ---
 title: Windows Update log files 
-description: Learn about the Windows Update log files
+description: Learn about the Windows Update log files and how to merge and convert WU trace files (.etl files) into a single readable WindowsUpdate.log file.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
 itproauthor: jaimeo
-author: jaimeo
-ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.date: 09/18/2018

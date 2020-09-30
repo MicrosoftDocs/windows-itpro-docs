@@ -13,9 +13,13 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.date: 09/28/2020
 ---
 
 # Microsoft Defender Antivirus compatibility
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -26,7 +30,7 @@ manager: dansimp
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) together with your antivirus protection.
 - If your organization's endpoints and devices are protected with a non-Microsoft antivirus/antimalware solution, and Microsoft Defender ATP is not used, then Microsoft Defender Antivirus automatically goes into disabled mode.
 - If your organization is using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
-- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in private preview) enabled, then Microsoft Defender Antivirus runs in the background and blocks/remediates malicious items that are detected, such as during a post-breach attack.
+- If your organization is using Microsoft Defender ATP together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) (currently in preview) enabled, then whenever a malicious artifact is detected, Microsoft Defender ATP takes action to block and remediate the artifact.
 
 ## Antivirus and Microsoft Defender ATP
 
@@ -90,6 +94,8 @@ If you uninstall the other product, and choose to use Microsoft Defender Antivir
 > [!WARNING]
 > You should not attempt to disable, stop, or modify any of the associated services used by Microsoft Defender Antivirus, Microsoft Defender ATP, or the Windows Security app. This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks. It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
+> [!IMPORTANT]
+> If you are using [Microsoft endpoint data loss prevention (Endpoint DLP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview), Microsoft Defender Antivirus real-time protection is enabled even when Microsoft Defender Antivirus is running in passive mode. Endpoint DLP depends on real-time protection to operate.
 
 ## Related topics
 

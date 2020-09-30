@@ -15,11 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker basic deployment
 
 **Applies to**
+
 -   Windows 10
 
 This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
@@ -30,8 +32,9 @@ BitLocker provides full volume encryption (FVE) for operating system volumes, as
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. BdeHdCfg.exe can create these volumes.
 
-> **Note:**  For more info about using this tool, see [Bdehdcfg](https://technet.microsoft.com/library/ee732026.aspx) in the Command-Line Reference.
- 
+> [!NOTE]
+> For more info about using this tool, see [Bdehdcfg](/windows-server/administration/windows-commands/bdehdcfg) in the Command-Line Reference.
+
 BitLocker encryption can be done using the following methods:
 
 -   BitLocker control panel
@@ -47,52 +50,16 @@ To start encryption for a volume, select **Turn on BitLocker** for the appropria
 ### Operating system volume
 
 Upon launch, the BitLocker Drive Encryption Wizard verifies the computer meets the BitLocker system requirements for encrypting an operating system volume. By default, the system requirements are:
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Requirement</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Hardware configuration</p></td>
-<td align="left"><p>The computer must meet the minimum requirements for the supported Windows versions.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Operating system</p></td>
-<td align="left"><p>BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Hardware TPM</p></td>
-<td align="left"><p>TPM version 1.2 or 2.0</p>
-<p>A TPM is not required for BitLocker; however, only a computer with a TPM can provide the additional security of pre-startup system integrity verification and multifactor authentication.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>BIOS configuration</p></td>
-<td align="left"><ul>
-<li><p>A Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.</p></li>
-<li><p>The boot order must be set to start first from the hard disk, and not the USB or CD drives.</p></li>
-<li><p>The firmware must be able to read from a USB flash drive during startup.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>File system</p></td>
-<td align="left"><p>For computers that boot natively with UEFI firmware, at least one FAT32 partition for the system drive and one NTFS partition for the operating system drive.</p>
-<p>For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive.</p>
-<p>For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Hardware encrypted drive prerequisites (optional)</p></td>
-<td align="left"><p>To use a hardware encrypted drive as the boot drive, the drive must be in the uninitialized state and in the security inactive state. In addition, the system must always boot with native UEFI version 2.3.1 or higher and the CSM (if any) disabled.</p></td>
-</tr>
-</tbody>
-</table>
- 
+
+|Requirement|Description|
+|--- |--- |
+|Hardware configuration|The computer must meet the minimum requirements for the supported Windows versions.|
+|Operating system|BitLocker is an optional feature which can be installed by Server Manager on Windows Server 2012 and later.|
+|Hardware TPM|TPM version 1.2 or 2.0. <p> A TPM is not required for BitLocker; however, only a computer with a TPM can provide the additional security of pre-startup system integrity verification and multifactor authentication.|
+|BIOS configuration|<li> A Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.</li> <li> The boot order must be set to start first from the hard disk, and not the USB or CD drives.</li>  <li> The firmware must be able to read from a USB flash drive during startup.</li>|
+|File system|For computers that boot natively with UEFI firmware, at least one FAT32 partition for the system drive and one NTFS partition for the operating system drive. <br/> For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive. <br/> For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.|
+|Hardware encrypted drive prerequisites (optional)|To use a hardware encrypted drive as the boot drive, the drive must be in the uninitialized state and in the security inactive state. In addition, the system must always boot with native UEFI version 2.3.1 or higher and the CSM (if any) disabled.|
+
 Upon passing the initial configuration, users are required to enter a password for the volume. If the volume does not pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
 Once a strong password has been created for the volume, a recovery key will be generated. The BitLocker Drive Encryption Wizard will prompt for a location to save this key. A BitLocker recovery key is a special key that you can create when you turn on BitLocker Drive Encryption for the first time on each drive that you encrypt. You can use the recovery key to gain access to your computer if the drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption and BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up. A recovery key can also be used to gain access to your files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason you forget the password or your computer cannot access the drive.
 
@@ -105,8 +72,9 @@ When the recovery key has been properly stored, the BitLocker Drive Encryption W
 
 It is recommended that drives with little to no data utilize the **used disk space only** encryption option and that drives with data or an operating system utilize the **encrypt entire drive** option.
 
-> **Note:**  Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
- 
+> [!NOTE]
+> Deleted files appear as free space to the file system, which is not encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
+
 Selecting an encryption type and choosing **Next** will give the user the option of running a BitLocker system check (selected by default) which will ensure that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. It is recommended to run this system check before starting the encryption process. If the system check is not run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
 
 After completing the system check (if selected), the BitLocker Drive Encryption Wizard will restart the computer to begin encryption. Upon reboot, users are required to enter the password chosen to boot into the operating system volume. Users can check encryption status by checking the system notification area or the BitLocker control panel.
@@ -142,52 +110,20 @@ The following table shows the compatibility matrix for systems that have been Bi
 
 Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Encryption Type</p></td>
-<td align="left"><p>Windows 10 and Windows 8.1</p></td>
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Windows 7</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Fully encrypted on Windows 8</p></td>
-<td align="left"><p>Presents as fully encrypted</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Presented as fully encrypted</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Used Disk Space Only encrypted on Windows 8</p></td>
-<td align="left"><p>Presents as encrypt on write</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Presented as fully encrypted</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Fully encrypted volume from Windows 7</p></td>
-<td align="left"><p>Presents as fully encrypted</p></td>
-<td align="left"><p>Presented as fully encrypted</p></td>
-<td align="left"><p>N/A</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Partially encrypted volume from Windows 7</p></td>
-<td align="left"><p>Windows 10 and Windows 8.1 will complete encryption regardless of policy</p></td>
-<td align="left"><p>Windows 8 will complete encryption regardless of policy</p></td>
-<td align="left"><p>N/A</p></td>
-</tr>
-</tbody>
-</table>
-
+|||||
+|--- |--- |--- |--- |
+|Encryption Type|Windows 10 and Windows 8.1|Windows 8|Windows 7|
+|Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
+|Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
+|Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|
+|Partially encrypted volume from Windows 7|Windows 10 and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
 
 ## <a href="" id="bkmk-dep3"></a>Encrypting volumes using the manage-bde command line interface
 
-Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx).
+Manage-bde is a command-line utility that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
+
 Manage-bde offers a multitude of wider options for configuring BitLocker. This means that using the command syntax may require care and possibly later customization by the user. For example, using just the `manage-bde -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected.
+
 Command line users need to determine the appropriate syntax for a given situation. The following section covers general encryption for operating system volumes and data volumes.
 
 ### Operating system volume
@@ -245,6 +181,7 @@ manage-bde -on C:
 ## <a href="" id="bkmk-dep4"></a>Encrypting volumes using the BitLocker Windows PowerShell cmdlets
 
 Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -371,28 +308,38 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 </tr>
 </tbody>
 </table>
- 
-Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
-A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLocker</code> volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
-Occasionally, all protectors may not be shown when using <strong>Get-BitLockerVolume</strong> due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
 
-> **Note:**  In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
- 
-`Get-BitLockerVolume C: | fl`
+Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
+
+A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the `Get-BitLocker` volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
+
+Occasionally, all protectors may not be shown when using **Get-BitLockerVolume** due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
+
+> [!NOTE]
+> In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
+
+```powershell
+Get-BitLockerVolume C: | fl
+```
 
 If you wanted to remove the existing protectors prior to provisioning BitLocker on the volume, you can utilize the `Remove-BitLockerKeyProtector` cmdlet. Accomplishing this requires the GUID associated with the protector to be removed.
 A simple script can pipe the values of each **Get-BitLockerVolume** return out to another variable as seen below:
+
 ```powershell
 $vol = Get-BitLockerVolume
 $keyprotectors = $vol.KeyProtector
 ```
+
 Using this, we can display the information in the **$keyprotectors** variable to determine the GUID for each protector.
 Using this information, we can then remove the key protector for a specific volume using the command:
+
 ```powershell
 Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 ```
-> **Note:**  The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
- 
+
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+
 ### Operating system volume
 
 Using the BitLocker Windows PowerShell cmdlets is similar to working with the manage-bde tool for encrypting operating system volumes. Windows PowerShell offers users a lot of flexibility. For example, users can add the desired protector as part command for encrypting the volume. Below are examples of common user scenarios and steps to accomplish them using the BitLocker cmdlets for Windows PowerShell.
@@ -401,11 +348,13 @@ To enable BitLocker with just the TPM protector. This can be done using the comm
 ```powershell
 Enable-BitLocker C:
 ```
+
 The example below adds one additional protector, the StartupKey protectors, and chooses to skip the BitLocker hardware test. In this example, encryption starts immediately without the need for a reboot.
 
 ```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
+
 ### Data volume
 
 Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a SecureString value to store the user defined password. Last, encryption begins.
@@ -415,33 +364,40 @@ $pw = Read-Host -AsSecureString
 <user inputs password>
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
+
 ### Using a SID based protector in Windows PowerShell
 
 The ADAccountOrGroup protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it does not unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and be unlocked to any member computer of the cluster.
 
->**Warning:**  The SID-based protector requires the use of an additional protector (such as TPM, PIN, recovery key, etc.) when used on operating system volumes.
- 
+> [!WARNING]
+> The SID-based protector requires the use of an additional protector (such as TPM, PIN, recovery key, etc.) when used on operating system volumes.
+
 To add an ADAccountOrGroup protector to a volume requires either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
 
 ```powershell
 Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
 ```
+
 For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
 
 ```powershell
-get-aduser -filter {samaccountname -eq "administrator"}
+Get-ADUser -filter {samaccountname -eq "administrator"}
 ```
-> **Note:**  Use of this command requires the RSAT-AD-PowerShell feature.
-> 
+
+> [!NOTE]
+> Use of this command requires the RSAT-AD-PowerShell feature.
+>
 > **Tip:**  In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
- 
+
 In the example below, the user wishes to add a domain SID based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
 ```powershell
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
-> **Note:**  Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
- 
+
+> [!NOTE]
+> Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
+
 ## <a href="" id="bkmk-dep5"></a> Checking BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, manage-bde command line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We will look at each of the available methods in the following section.
@@ -456,7 +412,7 @@ Checking BitLocker status with the control panel is the most common method used 
 | **Off**| BitLocker is not enabled for the volume |
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
- 
+
 If a drive is pre-provisioned with BitLocker, a status of "Waiting for Activation" displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume is not in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the control panel, manage-bde tool, or WMI APIs to add an appropriate key protector. Once complete, the control panel will update to reflect the new status.
 Using the control panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
 The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
@@ -472,8 +428,10 @@ To check the status of a volume using manage-bde, use the following command:
 ```powershell
 manage-bde -status <volume>
 ```
-> **Note:**  If no volume letter is associated with the -status command, all volumes on the computer display their status.
- 
+
+> [!NOTE]
+> If no volume letter is associated with the -status command, all volumes on the computer display their status.
+
 ### Checking BitLocker status with Windows PowerShell
 
 Windows PowerShell commands offer another way to query BitLocker status for volumes. Like manage-bde, Windows PowerShell includes the advantage of being able to check the status of a volume on a remote computer.
@@ -483,6 +441,7 @@ Using the Get-BitLockerVolume cmdlet, each volume on the system will display its
 ```powershell
 Get-BitLockerVolume <volume> -Verbose | fl
 ```
+
 This command will display information about the encryption method, volume type, key protectors, etc.
 
 ### Provisioning BitLocker during operating system deployment
@@ -509,11 +468,13 @@ Decrypting volumes using manage-bde is very straightforward. Decryption with man
 ```powershell
 manage-bde -off C:
 ```
+
 This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete. If a user wishes to check the status of the decryption, they can use the following command:
 
 ```powershell
 manage-bde -status C:
 ```
+
 ### Decrypting volumes using the BitLocker Windows PowerShell cmdlets
 
 Decryption with Windows PowerShell cmdlets is straightforward, similar to manage-bde. The additional advantage Windows PowerShell offers is the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
@@ -523,16 +484,16 @@ Using the Disable-BitLocker command, they can remove all protectors and encrypti
 ```powershell
 Disable-BitLocker
 ```
+
 If a user did not want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
 
 ```powershell
 Disable-BitLocker -MountPoint E:,F:,G:
 ```
+
 ## See also
 
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker recovery guide](bitlocker-recovery-guide-plan.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [BitLocker overview](bitlocker-overview.md)
- 
- 

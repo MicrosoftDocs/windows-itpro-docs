@@ -1,6 +1,6 @@
 ---
 title: Documenting the Zones (Windows 10)
-description: Documenting the Zones
+description: Learn how to document the zone placement of devices in your design for Windows Defender Firewall with Advanced Security.
 ms.assetid: ebd7a650-4d36-42d4-aac0-428617f5a32d
 ms.reviewer: 
 ms.author: dansimp

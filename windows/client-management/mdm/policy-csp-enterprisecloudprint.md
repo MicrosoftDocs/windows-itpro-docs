@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - EnterpriseCloudPrint
-description: Policy CSP - EnterpriseCloudPrint
+description: Use the Policy CSP - EnterpriseCloudPrint setting to define the maximum number of printers that should be queried from a discovery end point.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -8,7 +8,7 @@
     {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-release-notes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
@@ -28,7 +28,7 @@
     {
       "source_path": "devices/hololens/hololens-setup.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-use-apps.md",
@@ -38,17 +38,17 @@
     {
       "source_path": "devices/hololens/hololens-get-apps.md",
       "redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-spaces-on-hololens.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens1-clicker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
@@ -108,7 +108,7 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-containers-help-protect-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "browsers/edge/enterprise-guidance-using-microsoft-edge-and-ie11.md",
@@ -148,7 +148,7 @@
     {
       "source_path": "windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/top-scoring-industry-tests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/information-protection/bitlocker/protect-bitlocker-from-pre-boot-attacks.md",
@@ -173,12 +173,12 @@
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-add",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
       "redirect_url": "https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-get-started",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/how-hardware-based-containers-help-protect-windows.md",
@@ -857,7 +857,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
       "redirect_document_id": true
     },
     {
@@ -1206,11 +1211,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/threat-protection/windows-defender-atp/configure-conditional-access-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access",
       "redirect_document_id": true
@@ -1429,11 +1429,6 @@
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-custom-ti.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection",
-      "redirect_document_id": true
     },
     {
       "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
@@ -1786,6 +1781,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/enable-secure-score-windows-defender-advanced-threat-protection",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score",
       "redirect_document_id": false
@@ -1796,7 +1806,22 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/configuration-score.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
       "redirect_document_id": false
     },
@@ -1823,6 +1848,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/powerbi-reports",
+      "redirect_document_id": true
+    },
+	{
+      "source_path": "windows/security/threat-protection/windows-defender-atp/powerbi-reports.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi",
       "redirect_document_id": true
     },
     {
@@ -1968,16 +1998,6 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/run-detection-test-windows-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-defender-atp/secure-score-dashboard-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/secure-score-dashboard",
       "redirect_document_id": true
     },
     {
@@ -2511,9 +2531,9 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/threat-protection/wannacrypt-ransomware-worm-targets-out-of-date-systems-wdsi.md",
+      "source_path": "windows/security/threat-protection/wannacrypt-ransomware-worm-targets-out-of-date-systems-wdsi.md",
       "redirect_url": "https://www.microsoft.com/security/blog/2017/05/12/wannacrypt-ransomware-worm-targets-out-of-date-systems/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-defender-application-control.md",
@@ -6213,27 +6233,27 @@
     {
       "source_path": "devices/surface/surface-diagnostic-toolkit.md",
       "redirect_url": "https://docs.microsoft.com/surface/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
       "redirect_url": "https://docs.microsoft.com/surface/indexdevices/surface/update",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
       "redirect_url": "https://docs.microsoft.com/surface-hub/finishing-your-surface-hub-meeting",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-dynamics-365-layout-app.md",
       "redirect_url": "https://docs.microsoft.com/dynamics365/mixed-reality/layout/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "devices/hololens/hololens-microsoft-remote-assist-app.md",
@@ -15513,7 +15533,7 @@
     {
       "source_path": "education/get-started/change-history-ms-edu-get-started.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "education/get-started/get-started-with-microsoft-education.md",
@@ -16419,6 +16439,11 @@
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/hub/windows-10.yml",
+      "redirect_url": "https://docs.microsoft.com/windows/windows-10",
+      "redirect_document_id": false
     }
   ]
 }

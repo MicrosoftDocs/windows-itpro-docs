@@ -24,38 +24,55 @@ ms.date: 04/09/2019
 - Windows 10
 - Windows Server 2016 and above
 
-Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
 
 - addinprocess.exe
 - addinprocess32.exe
 - addinutil.exe
+- aspnet_compiler.exe
 - bash.exe
-- bginfo.exe<sup>[1]</sup> 
+- bginfo.exe<sup>1</sup>
 - cdb.exe
 - csi.exe
 - dbghost.exe
 - dbgsvc.exe
 - dnx.exe
+- dotnet.exe
 - fsi.exe
 - fsiAnyCpu.exe
+- infdefaultinstall.exe
 - kd.exe
-- ntkd.exe
+- kill.exe
 - lxssmanager.dll
-- msbuild.exe<sup>[2]</sup>
+- lxrun.exe
+- Microsoft.Build.dll
+- Microsoft.Build.Framework.dll
+- Microsoft.Workflow.Compiler.exe
+- msbuild.exe<sup>2</sup>
+- msbuild.dll
 - mshta.exe
+- ntkd.exe
 - ntsd.exe
+- powershellcustomhost.exe
 - rcsi.exe
+- runscripthelper.exe
+- texttransform.exe
+- visualuiaverifynative.exe
 - system.management.automation.dll
+- wfc.exe
 - windbg.exe
 - wmic.exe
+- wsl.exe
+- wslconfig.exe
+- wslhost.exe
 
-<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
-<sup>*</sup>Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
+<sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
 <br />
 
@@ -121,44 +138,45 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <!-- File Rules
   --> 
   <FileRules>
+  <Deny ID="ID_DENY_ADDINPROCESS" FriendlyName="AddInProcess.exe" FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_ASPNET" FriendlyName="aspnet_compiler.exe" FileName="aspnet_compiler.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_BASH" FriendlyName="bash.exe" FileName="bash.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0"/> 
-  <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0"/> 
+  <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0"/>
+  <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_NTKD" FriendlyName="ntkd.exe" FileName="ntkd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0"/> 
-  <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0"/> 
-  <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_RCSI" FriendlyName="rcsi.exe" FileName="rcsi.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_NTSD" FriendlyName="ntsd.exe" FileName="ntsd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_BASH" FriendlyName="bash.exe" FileName="bash.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
   <Deny ID="ID_DENY_MSHTA" FriendlyName="mshta.exe" FileName="mshta.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_VISUALUIAVERIFY" FriendlyName="visualuiaverifynative.exe" FileName="visualuiaverifynative.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_NTKD" FriendlyName="ntkd.exe" FileName="ntkd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_NTSD" FriendlyName="ntsd.exe" FileName="ntsd.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_RCSI" FriendlyName="rcsi.exe" FileName="rcsi.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_RUNSCRIPTHELPER" FriendlyName="runscripthelper.exe" FileName="runscripthelper.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_ADDINPROCESS" FriendlyName="AddInProcess.exe" FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_VISUALUIAVERIFY" FriendlyName="visualuiaverifynative.exe" FileName="visualuiaverifynative.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
+  <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
+  <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
-  <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
-  <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
-  <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
-  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />  
-  <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
-  <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
-  <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
-  <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
 
   <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
   <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
@@ -859,48 +877,51 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
   <ProductSigners>
   <FileRulesRef>
+  <FileRuleRef RuleID="ID_DENY_ADDINPROCESS"/> 
+  <FileRuleRef RuleID="ID_DENY_ADDINPROCESS32"/> 
+  <FileRuleRef RuleID="ID_DENY_ADDINUTIL"/> 
+  <FileRuleRef RuleID="ID_DENY_ASPNET"/>
+  <FileRuleRef RuleID="ID_DENY_BASH"/>   
   <FileRuleRef RuleID="ID_DENY_BGINFO"/> 
   <FileRuleRef RuleID="ID_DENY_CBD"/> 
-  <FileRuleRef RuleID="ID_DENY_KD"/> 
-  <FileRuleRef RuleID="ID_DENY_NTKD"/> 
-  <FileRuleRef RuleID="ID_DENY_WINDBG"/> 
-  <FileRuleRef RuleID="ID_DENY_MSBUILD"/> 
   <FileRuleRef RuleID="ID_DENY_CSI"/> 
   <FileRuleRef RuleID="ID_DENY_DBGHOST"/> 
   <FileRuleRef RuleID="ID_DENY_DBGSVC"/> 
   <FileRuleRef RuleID="ID_DENY_DNX"/> 
-  <FileRuleRef RuleID="ID_DENY_RCSI"/> 
-  <FileRuleRef RuleID="ID_DENY_NTSD"/> 
-  <FileRuleRef RuleID="ID_DENY_LXSS"/> 
-  <FileRuleRef RuleID="ID_DENY_BASH"/> 
+  <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
   <FileRuleRef RuleID="ID_DENY_FSI"/> 
   <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU"/> 
+  <FileRuleRef RuleID="ID_DENY_INFINSTALL"/> 
+  <FileRuleRef RuleID="ID_DENY_KD"/> 
+  <FileRuleRef RuleID="ID_DENY_KILL"/>
+  <FileRuleRef RuleID="ID_DENY_LXSS"/> 
+  <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
+  <FileRuleRef RuleID="ID_DENY_MWFC" /> 
+  <FileRuleRef RuleID="ID_DENY_MSBUILD"/>
+  <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
   <FileRuleRef RuleID="ID_DENY_MSHTA"/> 
-  <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY"/> 
+  <FileRuleRef RuleID="ID_DENY_NTKD"/> 
+  <FileRuleRef RuleID="ID_DENY_NTSD"/> 
+  <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/> 
+  <FileRuleRef RuleID="ID_DENY_RCSI"/> 
   <FileRuleRef RuleID="ID_DENY_RUNSCRIPTHELPER"/> 
-  <FileRuleRef RuleID="ID_DENY_ADDINPROCESS"/> 
-  <FileRuleRef RuleID="ID_DENY_ADDINPROCESS32"/> 
-  <FileRuleRef RuleID="ID_DENY_ADDINUTIL"/> 
+  <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM"/> 
+  <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY"/> 
+  <FileRuleRef RuleID="ID_DENY_WFC" /> 
+  <FileRuleRef RuleID="ID_DENY_WINDBG"/> 
+  <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_WSL"/> 
   <FileRuleRef RuleID="ID_DENY_WSLCONFIG"/> 
   <FileRuleRef RuleID="ID_DENY_WSLHOST"/> 
-  <FileRuleRef RuleID="ID_DENY_INFINSTALL"/> 
-  <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
-  <FileRuleRef RuleID="ID_DENY_PWRSHLCUSTOMHOST"/> 
-  <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM"/> 
-  <FileRuleRef RuleID="ID_DENY_KILL"/> 
-  <FileRuleRef RuleID="ID_DENY_WMIC"/>
-  <FileRuleRef RuleID="ID_DENY_MWFC" /> 
-  <FileRuleRef RuleID="ID_DENY_WFC" /> 
+
   <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
   -->
-  <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
-  <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
-  <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
-  <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
+
   <FileRuleRef RuleID="ID_DENY_D_1"/>
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
   <FileRuleRef RuleID="ID_DENY_D_3"/> 

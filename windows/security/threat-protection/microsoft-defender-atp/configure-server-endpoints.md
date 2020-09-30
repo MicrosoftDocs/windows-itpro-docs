@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard Windows servers to the Microsoft Defender ATP service
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows Server 2008 R2 SP1
@@ -140,8 +143,8 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 - [Local script](configure-endpoints-script.md) 
 - [Group Policy](configure-endpoints-gp.md)
-- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md#onboard-windows-10-devices-using-microsoft-endpoint-configuration-manager-current-branch)
-- [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-windows-10-devices-using-earlier-versions-of-system-center-configuration-manager)
+- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
 - [VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md)
 
 > [!NOTE]

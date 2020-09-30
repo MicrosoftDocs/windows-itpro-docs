@@ -1,6 +1,6 @@
 ---
 title: Configure the Windows Defender Firewall Log (Windows 10)
-description: Configure the Windows Defender Firewall Log
+description: Learn how to configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections by using Group Policy Management MMC.
 ms.assetid: f037113d-506b-44d3-b9c0-0b79d03e7d18
 ms.reviewer: 
 ms.author: dansimp

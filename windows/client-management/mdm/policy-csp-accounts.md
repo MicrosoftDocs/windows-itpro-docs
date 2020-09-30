@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Accounts
-description: Policy CSP - Accounts
+description: Learn about the Policy configuration service provider (CSP). This articles describes account policies. 
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article

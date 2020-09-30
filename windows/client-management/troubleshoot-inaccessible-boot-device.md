@@ -1,6 +1,6 @@
 ---
 title: Advanced advice for Stop error 7B, Inaccessible_Boot_Device
-description: Learn how to troubleshoot Stop error 7B or Inaccessible_Boot_Device
+description: Learn how to troubleshoot Stop error 7B or Inaccessible_Boot_Device. This error may occur after some changes are made to the computer,
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library

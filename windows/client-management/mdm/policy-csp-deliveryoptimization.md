@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeliveryOptimization
-description: Policy CSP - DeliveryOptimization
+description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - WindowsLogon
-description: Policy CSP - WindowsLogon
+description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
