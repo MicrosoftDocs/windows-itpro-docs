@@ -84,8 +84,15 @@ All our updates contain:
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-* Improved telemetry for BITS
-* Improved Authenticode code signing certificate validation
+- Admin permissions are required to restore files in quarantine
+- XML formatted events are now supported
+- CSP support for ignoring exclusion merge
+- New management interfaces for: <br/>
+   - UDP Inspection
+   - Network Protection on Server 2019
+   - IP Address exclusions for Network Protection
+- Improved visibility into TPM logs
+- Improved Office VBA script scanning
 
 ### Known Issues
 No known issues  
