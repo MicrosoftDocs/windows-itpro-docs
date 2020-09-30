@@ -39,7 +39,7 @@ You can list all provisioned Windows apps with this PowerShell command:
 Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 ```
 
-Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909 and 2004.
+Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
 
 | Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
