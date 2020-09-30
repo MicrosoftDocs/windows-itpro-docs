@@ -4332,31 +4332,6 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Other events
-
-### GameCoreController.LaunchLifetimeSummary
-
-No content is currently available.
-
-The following fields are available:
-
-- **gameos**  The OS version of the game.
-- **isSuspended**  A flag that indicates if account is suspended.
-- **launchInstanceId**  A launch identification.
-- **msaAppId**  The MSA app identification.
-- **pfn**  Stands for Package Full Name and  includes the package name, version, and publisher identifier.
-- **prevLaunchesOnVm**  The previous launch count on a virtual machine.
-- **suspendCount**  The total launch suspend count.
-- **systemType**  A type of console.
-- **terminateReason**  An error code indicating the reasons for launch termination.
-
-
-### SFR.XvdStreamingStart
-
-No content is currently available.
-
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
