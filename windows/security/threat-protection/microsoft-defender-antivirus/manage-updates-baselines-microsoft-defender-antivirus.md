@@ -73,8 +73,7 @@ All our updates contain:
 - performance improvements
 - serviceability improvements
 - integration improvements (Cloud, MTP)  
-<br/>
-<details>
+<br/><details>
 <summary> September-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.2248.0**  
@@ -86,12 +85,12 @@ All our updates contain:
 ### What's new
 - Admin permissions are required to restore files in quarantine
 - XML formatted events are now supported
-- Provide CSP support to ignore exclusion merge
+- CSP support for ignoring exclusion merge
 - New management interfaces for: <br/>
    - UDP Inspection
    - Network Protection on Server 2019
    - IP Address exclusions for Network Protection
-- Improve visibility into TPM logs
+- Improved visibility into TPM logs
 - Improved Office VBA script scanning
 
 ### Known Issues
