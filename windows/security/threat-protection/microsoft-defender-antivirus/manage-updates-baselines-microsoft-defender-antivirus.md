@@ -75,11 +75,11 @@ All our updates contain:
 - integration improvements (Cloud, MTP)  
 <br/>
 <details>
-<summary> September-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
+<summary> September-2020 (Platform: 4.18.2009.5 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.2254.0**  
 &ensp;Released: **September 30, 2020**  
-&ensp;Platform: **4.18.2008.9**  
+&ensp;Platform: **4.18.2009.5**  
 &ensp;Engine: **1.1.17400.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
