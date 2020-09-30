@@ -20,6 +20,8 @@ ms.topic: conceptual
 
 # App-based deployment for Microsoft Defender ATP for iOS
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
 > 

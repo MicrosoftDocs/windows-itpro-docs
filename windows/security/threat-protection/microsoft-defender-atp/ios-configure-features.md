@@ -20,6 +20,8 @@ ms.topic: conceptual
 
 # Configure Microsoft Defender ATP for iOS features
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 > [!IMPORTANT]
 > **PUBLIC PREVIEW EDITION**
 > 
