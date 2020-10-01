@@ -21,7 +21,7 @@ When the visualizations provided in the default experience don't fulfill your re
 The table below summarizes the different tables that are part of the Update Compliance solution. To learn how to navigate Azure Monitor Logs to find this data, see [Get started with log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries).
 
 > [!NOTE]
-> Data is ingested on a daily cadence. The ingestion time is shown as the TimeGenerated field and is added by Log Analytics when data is ingested. Device data from the past 28 days is ingested, even if no new data has been generated since the last ingestion time. LastScan is a more clear indicator of data freshness (last time the values were updated), while TimeGenerated indicates the freshness of data within Log Analytics.
+> Data is collected daily. The TimeGenerated field shows the time data was collected. It's added by Log Analytics when data is collected. Device data from the past 28 days is collected, even if no new data has been generated since the last time. LastScan is a clearer indicator of data freshness (that is, the last time the values were updated), while TimeGenerated indicates the freshness of data within Log Analytics.
 
 |Table |Category |Description |
 |--|--|--|
