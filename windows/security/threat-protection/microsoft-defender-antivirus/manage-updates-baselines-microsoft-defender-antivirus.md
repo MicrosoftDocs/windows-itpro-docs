@@ -75,12 +75,12 @@ All our updates contain:
 - integration improvements (Cloud, MTP)  
 <br/>
 <details>
-<summary> September-2020 (Platform: 4.18.2009.5 | Engine: 1.1.17500.2)</summary>
+<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.323.2254.0**  
-&ensp;Released: **September 30, 2020**  
-&ensp;Platform: **4.18.2009.5**  
-&ensp;Engine: **1.1.17500.2**  
+&ensp;Released: **October 6, 2020**  
+&ensp;Platform: **4.18.2009.7**  
+&ensp;Engine: **1.1.17500.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
@@ -92,7 +92,7 @@ All our updates contain:
    - Network Protection on Server 2019
    - IP Address exclusions for Network Protection
 - Improved visibility into TPM logs
-- Improved Office VBA script scanning
+- Improved Office VBA module scanning
 
 ### Known Issues
 No known issues  
