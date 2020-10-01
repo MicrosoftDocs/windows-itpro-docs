@@ -19,6 +19,9 @@ ms.topic: article
 
 # Manage automation file uploads
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

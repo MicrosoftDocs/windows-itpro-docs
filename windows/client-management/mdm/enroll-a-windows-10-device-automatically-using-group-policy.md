@@ -170,11 +170,16 @@ Requirements:
 
 1. Download:  
   
-   - 1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880)
+   - 1803 --> [Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880)
      
-   - 1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576)
+   - 1809 --> [Administrative Templates (.admx) for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576)
      
-   - 1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)
+   - 1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495)
+   
+   - 1909 --> [Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)](
+https://www.microsoft.com/download/confirmation.aspx?id=1005915)
+   
+   - 2004 --> [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
      
 2. Install the package on the Domain Controller.
   
@@ -185,6 +190,10 @@ Requirements:
    - 1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**
      
    - 1903 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**
+   
+   - 1909 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2019 Update (1909)**
+    
+   - 2004 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2020 Update (2004)**     
      
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
   

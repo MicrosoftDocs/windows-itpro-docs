@@ -18,6 +18,9 @@ manager: dansimp
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender Advanced Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)

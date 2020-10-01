@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard Windows servers to the Microsoft Defender ATP service
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows Server 2008 R2 SP1

@@ -95,7 +95,7 @@ The server side configuration to enable Network Unlock also requires provisionin
 
 The following steps allow an administrator to configure Network Unlock in a domain where the Domain Functional Level is at least Windows Server 2012.
 
-### <a href="" id="bkmk-installwdsrole"/>Install the WDS Server role
+### <a href="" id="bkmk-installwdsrole"><a/>Install the WDS Server role
 
 The BitLocker Network Unlock feature will install the WDS role if it is not already installed. If you want to install it separately before you install BitLocker Network Unlock you can use Server Manager or Windows PowerShell. To install the role using Server Manager, select the **Windows Deployment Services** role in Server Manager.
 
@@ -107,7 +107,7 @@ Install-WindowsFeature WDS-Deployment
 
 You must configure the WDS server so that it can communicate with DHCP (and optionally Active Directory Domain Services) and the client computer. You can do using the WDS management tool, wdsmgmt.msc, which starts the Windows Deployment Services Configuration Wizard.
 
-### <a href="" id="bkmk-confirmwdsrunning"/>Confirm the WDS Service is running
+### <a href="" id="bkmk-confirmwdsrunning"><a/>Confirm the WDS Service is running
 
 To confirm the WDS service is running, use the Services Management Console or Windows PowerShell. To confirm the service is running in Services Management Console, open the console using **services.msc** and check the status of the Windows Deployment Services service.
 
@@ -116,7 +116,7 @@ To confirm the service is running using Windows PowerShell, use the following co
 ```powershell
 Get-Service WDSServer
 ```
-### <a href="" id="bkmk-installnufeature"/>Install the Network Unlock feature
+### <a href="" id="bkmk-installnufeature"><a/>Install the Network Unlock feature
 
 To install the Network Unlock feature, use Server Manager or Windows PowerShell. To install the feature using Server Manager, select the **BitLocker Network Unlock** feature in the Server Manager console.
 
@@ -125,7 +125,7 @@ To install the feature using Windows PowerShell, use the following command:
 ```powershell
 Install-WindowsFeature BitLocker-NetworkUnlock
 ```
-### <a href="" id="bkmk-createcerttmpl"/>Create the certificate template for Network Unlock
+### <a href="" id="bkmk-createcerttmpl"><a/>Create the certificate template for Network Unlock
 
 A properly configured Active Directory Services Certification Authority can use this certificate template to create and issue Network Unlock certificates.
 
@@ -155,7 +155,7 @@ To add the Network Unlock template to the Certification Authority, open the Cert
 
 After adding the Network Unlock template to the Certification Authority, this certificate can be used to configure BitLocker Network Unlock.
 
-### <a href="" id="bkmk-createcert"/>Create the Network Unlock certificate
+### <a href="" id="bkmk-createcert"><a/>Create the Network Unlock certificate
 
 Network Unlock can use imported certificates from an existing PKI infrastructure, or you can use a self-signed certificate.
 
@@ -218,7 +218,7 @@ Certreq example:
 
 3.  Open an elevated command prompt and use the certreq tool to create a new certificate using the following command, specifying the full path to the file created previously, along with the file name:
 
-    ``` syntax
+    ```cmd
     certreq -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
     ```
 
@@ -226,7 +226,7 @@ Certreq example:
 5.  Launch Certificates - Local Machine by running **certlm.msc**.
 6.  Create a .pfx file by opening the **Certificates – Local Computer\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, then **Export**. Follow through the wizard to create the .pfx file.
 
-### <a href="" id="bkmk-deploycert"/>Deploy the private key and certificate to the WDS server
+### <a href="" id="bkmk-deploycert"><a/>Deploy the private key and certificate to the WDS server
 
 With the certificate and key created, deploy them to the infrastructure to properly unlock systems. To deploy the certificates, do the following:
 
@@ -281,6 +281,7 @@ SUBNET2=10.185.252.200/28
 SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
 SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
 ```
+
 Following the \[SUBNETS\] section, there can be sections for each Network Unlock certificate, identified by the certificate thumbprint formatted without any spaces, which define subnets clients can be unlocked from with that certificate.
 
 > [!NOTE]
@@ -288,8 +289,9 @@ Following the \[SUBNETS\] section, there can be sections for each Network Unlock
 
 Subnet restrictions are defined within each certificate section by denoting the allowed list of permitted subnets. If any subnet is listed in a certificate section, then only those subnets listed are permitted for that certificate. If no subnet is listed in a certificate section, then all subnets are permitted for that certificate. If a certificate does not have a section in the subnet policy configuration file, then no subnet restrictions are applied for unlocking with that certificate. This means for restrictions to apply to every certificate, there must be a certificate section for every Network Unlock certificate on the server, and an explicit allowed list set for each certificate section.
 Subnet lists are created by putting the name of a subnet from the \[SUBNETS\] section on its own line below the certificate section header. Then, the server will only unlock clients with this certificate on the subnet(s) specified as in the list. For troubleshooting, a subnet can be quickly excluded without deleting it from the section by simply commenting it out with a prepended semi-colon.
+
 ```ini
-[‎2158a767e1c14e88e27a4c0aee111d2de2eafe60]
+[2158a767e1c14e88e27a4c0aee111d2de2eafe60]
 ;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
 ;This list shows this cert is only allowed to unlock clients on SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
 SUBNET1
@@ -299,16 +301,19 @@ SUBNET3
 
 To disallow the use of a certificate altogether, its subnet list may contain the line “DISABLED".
 
-## <a href="" id="bkmk-turnoffnetworkunlock"/>Turning off Network Unlock
+## <a href="" id="bkmk-turnoffnetworkunlock"><a/>Turning off Network Unlock
 
 To turn off the unlock server, the PXE provider can be unregistered from the WDS server or uninstalled altogether. However, to stop clients from creating Network Unlock protectors the **Allow Network Unlock at startup** Group Policy setting should be disabled. When this policy setting is updated to disabled on client computers any Network Unlock key protectors on the computer will be deleted. Alternatively, the BitLocker Network Unlock certificate policy can be deleted on the domain controller to accomplish the same task for an entire domain.
 
 > [!NOTE]
 > Removing the FVE_NKP certificate store that contains the Network Unlock certificate and key on the WDS server will also effectively disable the server’s ability to respond to unlock requests for that certificate. However, this is seen as an error condition and is not a supported or recommended method for turning off the Network Unlock server.
  
-## <a href="" id="bkmk-updatecerts"/>Update Network Unlock certificates
+## <a href="" id="bkmk-updatecerts"><a/>Update Network Unlock certificates
 
 To update the certificates used by Network Unlock, administrators need to import or generate the new certificate for the server and then update the Network Unlock certificate Group Policy setting on the domain controller.
+
+> [!NOTE]
+> Servers that do not receive the Group Policy Object (GPO) will require a PIN when booting. In such cases, the reason why the server did not receive the GPO to update the certificate needs to be investigated.
 
 ## <a href="" id="bkmk-troubleshoot"></a>Troubleshoot Network Unlock
 
@@ -336,7 +341,7 @@ Files to gather when troubleshooting BitLocker Network Unlock include:
 
     1.  Start an elevated command prompt and run the following command:
 
-        ``` syntax
+        ```cmd
         wevtutil sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true
         ```
     2.  Open Event Viewer on the WDS server.
