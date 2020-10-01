@@ -48,7 +48,7 @@ Most modern MDM solutions include these features, however, they may call them di
 You can deploy Defender without the last requirement from the preceding list, however:
 
 - You will not be able to collect status in a centralized way
-- If you decide to uninstall Defender, you will need to logon to the client device locally as an administrator
+- If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator
 
 ## Deployment
 
@@ -70,7 +70,7 @@ Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be ext
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 
-Typically, your custom profile has an id, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
+Typically, your custom profile has an ID, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
 MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.
 
 ### Kernel extension policy
