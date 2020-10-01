@@ -159,106 +159,106 @@ You'll need to take the following steps:
     
      For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).
 
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>antivirusEngine</key>
-    <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
-        <key>exclusions</key>
-        <array>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <false/>
-                <key>path</key>
-                <string>/var/log/system.log</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <true/>
-                <key>path</key>
-                <string>/home</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedFileExtension</string>
-                <key>extension</key>
-                <string>pdf</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedFileName</string>
-                <key>name</key>
-                <string>cat</string>
-            </dict>
-        </array>
-        <key>exclusionsMergePolicy</key>
-        <string>merge</string>
-        <key>allowedThreats</key>
-        <array>
-            <string>EICAR-Test-File (not a virus)</string>
-        </array>
-        <key>disallowedThreatActions</key>
-        <array>
-            <string>allow</string>
-            <string>restore</string>
-        </array>
-        <key>threatTypeSettings</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>potentially_unwanted_application</string>
-                <key>value</key>
-                <string>block</string>
-            </dict>
-            <dict>
-                <key>key</key>
-                <string>archive_bomb</string>
-                <key>value</key>
-                <string>audit</string>
-            </dict>
-        </array>
-        <key>threatTypeSettingsMergePolicy</key>
-        <string>merge</string>
-    </dict>
-    <key>cloudService</key>
-    <dict>
-        <key>enabled</key>
-        <true/>
-        <key>diagnosticLevel</key>
-        <string>optional</string>
-        <key>automaticSampleSubmission</key>
-        <true/>
-    </dict>
-    <key>edr</key>
-    <dict>
-        <key>tags</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>GROUP</string>
-                <key>value</key>
-                <string>ExampleTag</string>
-            </dict>
-        </array>
-    </dict>
-    <key>userInterface</key>
-    <dict>
-        <key>hideStatusMenuIcon</key>
-        <false/>
-    </dict>
-</dict>
-</plist>
-```
+     ```XML
+     <?xml version="1.0" encoding="UTF-8"?>
+     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+     <plist version="1.0">
+     <dict>
+         <key>antivirusEngine</key>
+         <dict>
+             <key>enableRealTimeProtection</key>
+             <true/>
+             <key>passiveMode</key>
+             <false/>
+             <key>exclusions</key>
+             <array>
+                 <dict>
+                     <key>$type</key>
+                     <string>excludedPath</string>
+                     <key>isDirectory</key>
+                     <false/>
+                     <key>path</key>
+                     <string>/var/log/system.log</string>
+                 </dict>
+                 <dict>
+                     <key>$type</key>
+                     <string>excludedPath</string>
+                     <key>isDirectory</key>
+                     <true/>
+                     <key>path</key>
+                     <string>/home</string>
+                 </dict>
+                 <dict>
+                     <key>$type</key>
+                     <string>excludedFileExtension</string>
+                     <key>extension</key>
+                     <string>pdf</string>
+                 </dict>
+                 <dict>
+                     <key>$type</key>
+                     <string>excludedFileName</string>
+                     <key>name</key>
+                     <string>cat</string>
+                 </dict>
+             </array>
+             <key>exclusionsMergePolicy</key>
+             <string>merge</string>
+             <key>allowedThreats</key>
+             <array>
+                 <string>EICAR-Test-File (not a virus)</string>
+             </array>
+             <key>disallowedThreatActions</key>
+             <array>
+                 <string>allow</string>
+                 <string>restore</string>
+             </array>
+             <key>threatTypeSettings</key>
+             <array>
+                 <dict>
+                     <key>key</key>
+                     <string>potentially_unwanted_application</string>
+                     <key>value</key>
+                     <string>block</string>
+                 </dict>
+                 <dict>
+                     <key>key</key>
+                     <string>archive_bomb</string>
+                     <key>value</key>
+                     <string>audit</string>
+                 </dict>
+             </array>
+             <key>threatTypeSettingsMergePolicy</key>
+             <string>merge</string>
+         </dict>
+         <key>cloudService</key>
+         <dict>
+             <key>enabled</key>
+             <true/>
+             <key>diagnosticLevel</key>
+             <string>optional</string>
+             <key>automaticSampleSubmission</key>
+             <true/>
+         </dict>
+         <key>edr</key>
+         <dict>
+             <key>tags</key>
+             <array>
+                 <dict>
+                     <key>key</key>
+                     <string>GROUP</string>
+                     <key>value</key>
+                     <string>ExampleTag</string>
+                 </dict>
+             </array>
+         </dict>
+         <key>userInterface</key>
+         <dict>
+             <key>hideStatusMenuIcon</key>
+             <false/>
+         </dict>
+     </dict>
+     </plist>
+     ```
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
@@ -270,11 +270,12 @@ You'll need to take the following steps:
 4. Enter the following details:
 
     **General**
-  - Name: MDATP MDAV configuration settings
-  - Description:\<blank\>
-  - Category: None (default)
-  - Distribution Method: Install Automatically(default)
-  - Level: Computer Level(default)
+    
+    - Name: MDATP MDAV configuration settings
+    - Description:\<blank\>
+    - Category: None (default)
+    - Distribution Method: Install Automatically(default)
+    - Level: Computer Level(default)
 
     ![Image of configuration settings](images/3160906404bc5a2edf84d1d015894e3b.png)
 
@@ -349,11 +350,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 4. Enter the following details:
 
     **General** 
-  - Name: MDATP MDAV Notification settings
-  - Description: macOS 10.15 (Catalina) or newer
-  - Category: None (default)
-  - Distribution Method: Install Automatically(default)
-  - Level: Computer Level(default)
+    
+    - Name: MDATP MDAV Notification settings
+    - Description: macOS 10.15 (Catalina) or newer
+    - Category: None (default)
+    - Distribution Method: Install Automatically(default)
+    - Level: Computer Level(default)
 
     ![Image of configuration settings](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
@@ -399,11 +401,11 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 1. Use the following Microsoft Defender ATP configuration settings:
 
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
+      ```XML
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
 	<key>ChannelName</key>
 	<string>Production</string>
 	<key>HowToCheck</key>
@@ -414,9 +416,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     <false/>
 	<key>SendAllTelemetryEnabled</key>
 	<true/>
-</dict>
-</plist>
-```
+   </dict>
+   </plist>
+   ```
 
 2. Save it as `MDATP_MDAV_MAU_settings.plist`.
 
@@ -427,11 +429,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 4. Enter the following details:
 
     **General** 
-  - Name: MDATP MDAV MAU settings
-  - Description: Microsoft AutoUpdate settings for MDATP for macOS
-  - Category: None (default)
-  - Distribution Method: Install Automatically(default)
-  - Level: Computer Level(default)
+    
+    - Name: MDATP MDAV MAU settings
+    - Description: Microsoft AutoUpdate settings for MDATP for macOS
+    - Category: None (default)
+    - Distribution Method: Install Automatically(default)
+    - Level: Computer Level(default)
 
 5. In **Application & Custom Settings** select **Configure**.
 
@@ -515,10 +518,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/bd93e78b74c2660a0541af4690dd9485.png)
 
+    - Under App or service: Set to **SystemPolicyAllFiles**
 
-  - Under App or service: Set to **SystemPolicyAllFiles**
-
-  - Under "access": Set to **Allow**
+    - Under "access": Set to **Allow**
 
 7. Select **Save** (not the one at the bottom right).
 
@@ -538,9 +540,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration setting](images/tcc-epsext-entry.png)
 
-  - Under App or service: Set to **SystemPolicyAllFiles**
+    - Under App or service: Set to **SystemPolicyAllFiles**
 
-  - Under "access": Set to **Allow**
+    - Under "access": Set to **Allow**
 
 11. Select **Save** (not the one at the bottom right).
 
@@ -578,11 +580,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 2. Enter the following details:
 
     **General** 
-  - Name: MDATP MDAV Kernel Extension
-  - Description: MDATP kernel extension (kext)
-  - Category: None
-  - Distribution Method: Install Automatically
-  - Level: Computer Level
+    
+    - Name: MDATP MDAV Kernel Extension
+    - Description: MDATP kernel extension (kext)
+    - Category: None
+    - Distribution Method: Install Automatically
+    - Level: Computer Level
 
     ![Image of configuration settings](images/24e290f5fc309932cf41f3a280d22c14.png)
 
@@ -591,11 +594,10 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     ![Image of configuration settings](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
    
-
 4. In **Approved Kernel Extensions** Enter the following details:
 
-  - Display Name: Microsoft Corp.
-  - Team ID: UBF8T346G9
+    - Display Name: Microsoft Corp.
+    - Team ID: UBF8T346G9
 
     ![Image of configuration settings](images/39cf120d3ac3652292d8d1b6d057bd60.png)
 
@@ -629,26 +631,27 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 2. Enter the following details:
 
     **General**
-  - Name: MDATP MDAV System Extensions
-  - Description: MDATP system extensions
-  - Category: None
-  - Distribution Method: Install Automatically
-  - Level: Computer Level
+    
+    - Name: MDATP MDAV System Extensions
+    - Description: MDATP system extensions
+    - Category: None
+    - Distribution Method: Install Automatically
+    - Level: Computer Level
 
     ![Image of configuration settings](images/sysext-new-profile.png)
 
 3. In **System Extensions** select **Configure**.
 
-    ![Image of configuration settings](images/sysext-configure.png)
+   ![Image of configuration settings](images/sysext-configure.png)
 
 4. In **System Extensions** enter the following details:
 
-  - Display Name: Microsoft Corp. System Extensions
-  - System Extension Types: Allowed System Extensions
-  - Team Identifier: UBF8T346G9
-  - Allowed System Extensions:
-    - **com.microsoft.wdav.epsext**
-    - **com.microsoft.wdav.netext**
+   - Display Name: Microsoft Corp. System Extensions
+   - System Extension Types: Allowed System Extensions
+   - Team Identifier: UBF8T346G9
+   - Allowed System Extensions:
+     - **com.microsoft.wdav.epsext**
+     - **com.microsoft.wdav.netext**
 
     ![Image of configuration settings](images/sysext-configure2.png)
 
@@ -662,11 +665,11 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 8. Select **+ Add**.
 
-    ![Image of configuration settings](images/0dde8a4c41110dbc398c485433a81359.png)
+   ![Image of configuration settings](images/0dde8a4c41110dbc398c485433a81359.png)
 
 9. Select **Save**.
 
-    ![Image of configuration settings](images/sysext-scope.png)
+   ![Image of configuration settings](images/sysext-scope.png)
 
 10. Select **Done**.
 
@@ -686,31 +689,31 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 3. After the certificate is created and installed to your device, run the following command from the Terminal from a macOS device:
 
-    ```bash
-    $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
-    ```
+   ```bash
+   $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
+   ```
 
-    ![Terminal window with command to create signed configuration](images/netext-create-profile.png)
+   ![Terminal window with command to create signed configuration](images/netext-create-profile.png)
 
 4. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. 
 
-    ![Image of upload window](images/netext-upload-file.png)
+   ![Image of upload window](images/netext-upload-file.png)
 
 5. Select **Choose File** and select `microsoft.network-extension.signed.mobileconfig`.
 
-    ![Image of upload window](images/netext-choose-file.png)
+   ![Image of upload window](images/netext-choose-file.png)
 
 6. Select **Upload**.
 
-    ![Image of upload window](images/netext-upload-file2.png)
+   ![Image of upload window](images/netext-upload-file2.png)
 
 7. After uploading the file, you are redirected to a new page to finalize the creation of this profile.
 
-    ![Image of new configuration profile](images/netext-profile-page.png)
+   ![Image of new configuration profile](images/netext-profile-page.png)
 
 8. Select the **Scope** tab.
 
-    ![Image of configuration settings](images/0df36fc308ba569db204ee32db3fb40a.png)
+   ![Image of configuration settings](images/0df36fc308ba569db204ee32db3fb40a.png)
 
 9. Select **+ Add**.
 
@@ -780,10 +783,12 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
      ![Image of configuration settings](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
 9. Select **Save**. The package is uploaded to Jamf Pro. 
-    ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
-    It can take a few minutes for the package to be available for deployment.
-    ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
+   ![Image of configuration settings](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
+
+   It can take a few minutes for the package to be available for deployment.
+   
+   ![Image of configuration settings](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
 10. Navigate to the **Policies** page.
 
@@ -816,25 +821,31 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
     ![Image of configuration settings](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
 17. Select **Save**.
+
     ![Image of configuration settings](images/9d6e5386e652e00715ff348af72671c6.png)
 
-18. Select the **Scope** tab.   
+18. Select the **Scope** tab.  
+
     ![Image of configuration settings](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
 19. Select the target computers.
 
     ![Image of configuration settings](images/6eda18a64a660fa149575454e54e7156.png)
 
-    **Scope**<br>
+    **Scope**
+    
     Select **Add**.
+    
     ![Image of configuration settings](images/1c08d097829863778d562c10c5f92b67.png)
 
     ![Image of configuration settings](images/216253cbfb6ae738b9f13496b9c799fd.png)
 
-    **Self-Service** <br>
+    **Self-Service**
+    
     ![Image of configuration settings](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
 20. Select **Done**. 
+
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
