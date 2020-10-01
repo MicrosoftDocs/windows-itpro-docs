@@ -28,7 +28,8 @@ ms.topic: conceptual
 
 This topic describes how to deploy Microsoft Defender ATP for macOS manually. A successful deployment requires the completion of all of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Application installation](#application-installation)
+- [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
+- [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
 - [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements

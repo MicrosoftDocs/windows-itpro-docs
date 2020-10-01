@@ -161,4 +161,4 @@ After a successful deployment and onboarding of the correct version, check that 
 
 * Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 
-If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the [manual deployment documentation](mac-install-manually.md#application-installation) and use the “Manual Deployment” section in the [troubleshoot kernel extension documentation](mac-support-kext.md#manual-deployment).
+If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the [manual deployment documentation](mac-install-manually.md#application-installation-macos-1015-and-older-versions) and use the “Manual Deployment” section in the [troubleshoot kernel extension documentation](mac-support-kext.md#manual-deployment).
