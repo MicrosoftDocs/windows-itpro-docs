@@ -104,11 +104,11 @@ You can also specify where the diagnostic .cab file will be created using a Grou
 
     ![Screenshot of local group policy editor](images/GPO1-SupportLogLocationDefender.png)  
         
-     ![Screenshot of local group policy editor](images/GPO2-SupportLogLocationGPPage.png)  
+     ![Screenshot of define path for log files setting](images/GPO2-SupportLogLocationGPPage.png)  
 3. Inside the policy editor, select **Enabled**.
        
 4. Specify the directory path where you want to copy the support log files in the **Options** field.
-     ![Screenshot of local group policy editor](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+     ![Screenshot of Enabled directory path custom setting](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Select **OK** or **Apply**.
 
 ## See also
