@@ -1,6 +1,6 @@
 ---
 title: Set device value API
-description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender Advanced Threat Protection.
+description: Learn how to specify the value of a device using a Microsoft Defender Advanced Threat Protection API.
 keywords: apis, graph api, supported apis, tags, machine tags
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -31,7 +31,7 @@ Adds or remove tag to a specific [Machine](machine.md).
 
 ## Limitations
 
-1. You can post on machines last seen according to your configured retention period.
+1. You can post on devices last seen according to your configured retention period.
 
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
