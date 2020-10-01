@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Use basic permissions to access the portal
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 
 - Azure Active Directory
