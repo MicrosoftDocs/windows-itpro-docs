@@ -48,6 +48,8 @@ WDAC policies can be created on any client edition of Windows 10 build 1903+ or 
 
 WDAC policies can be applied to devices running any edition of Windows 10 or Windows Server 2016 and above via a Mobile Device Management (MDM) solution like Intune, a management interface like Configuration Manager, or a script host like PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above, but cannot deploy policies to devices running non-Enterprise SKUs of Windows 10.
 
+For more information on which individual WDAC features are available on which WDAC builds, see [WDAC feature availability](feature-availability.md).
+
 ## AppLocker
 
 AppLocker was introduced with Windows 7 and allows organizations to control which applications are allowed to run on their Windows clients. AppLocker helps to prevent end users from running unapproved software on their computers, but it does not meet the servicing criteria for being a security feature.
