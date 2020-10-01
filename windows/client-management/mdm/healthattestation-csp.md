@@ -195,10 +195,10 @@ The following diagram shows the Device HealthAttestation configuration service p
 
 <p style="margin-left: 20px">The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
 
--   0 - (HEALTHATTESTATION\_CERT\_RETRI_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
--   1 - (HEALTHATTESTATION\_CERT\_RETRI_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
+-   0 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
+-   1 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
 -   2 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_FAILED): A valid DHA-EncBlob could not be retrieved from the DHA-Service for reasons other than discussed in the DHA error/status codes
--   3 - (HEALTHATTESTATION\_CERT\_RETRI_COMPLETE): DHA-Data is ready for pick up
+-   3 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_COMPLETE): DHA-Data is ready for pick up
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
 <p style="margin-left: 20px">Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
@@ -359,8 +359,8 @@ The following example shows a sample call that triggers collection and verificat
 
 After the client receives the health attestation request, it sends a response. The following list describes the responses, along with a recommended action to take.
 
-- If the response is HEALTHATTESTATION\_CERT_RETRI_COMPLETE (3) then proceed to the next section.
-- If the response is HEALTHATTESTATION_CERT_RETRI_REQUESTED (1) or HEALTHATTESTATION_CERT_RETRI_UNINITIALIZED (0) wait for an alert, then proceed to the next section.
+- If the response is HEALTHATTESTATION\_CERT_RETRIEVAL_COMPLETE (3) then proceed to the next section.
+- If the response is HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED (1) or HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED (0) wait for an alert, then proceed to the next section.
 
 Here is a sample alert that is issued by DHA_CSP:
 
@@ -830,7 +830,7 @@ Each of these are described in further detail in the following sections, along w
     <tr>
         <td style="vertical-align:top">3</td>
         <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
-        <td style="vertical-align:top">This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
+        <td style="vertical-align:top">This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.</td>
     </tr>
     <tr>
         <td style="vertical-align:top">4</td>
