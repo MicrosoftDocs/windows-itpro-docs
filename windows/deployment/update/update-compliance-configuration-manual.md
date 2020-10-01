@@ -48,6 +48,9 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) | 1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether end-users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 
+> [!NOTE]
+> If you use Microsoft Intune, set the **ProviderID** to *MS DM Server*. If you use another MDM product, check with its vendor. See also [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
+
 ### Group Policies
 
 All Group Policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
