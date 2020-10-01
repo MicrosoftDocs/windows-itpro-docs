@@ -72,7 +72,7 @@ For information how to update or how to install the platform update, see [Update
 All our updates contain:
 - performance improvements
 - serviceability improvements
-- integration improvements (Cloud, MTP)  
+- integration improvements (Cloud, Microsoft 365 Defender)  
 <br/>
 <details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
