@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/28/2020
+ms.date: 09/30/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -87,22 +87,7 @@ You can configure the following levels of automation:
 
 
 > [!IMPORTANT]
-> Regarding automation levels and default settings:
-> - If your tenant already has device groups defined, then the automation level settings are not changed for those device groups.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you have not defined a device group, your organization's default setting is **Semi - require approval for any remediation**.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *before* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Semi - require approval for any remediation**. 
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you have not defined a device group, your orgnaization's default setting is **Full - remediate threats automatically**.
-> - If your tenant was onboarded to Microsoft Defender for Endpoint *on or after* August 16, 2020, and you do have a device group defined, you also have an **Ungrouped devices (default)** device group that is set to **Full - remediate threats automatically**.
-> - To change an automation level, **[edit your device groups](configure-automated-investigations-remediation.md#set-up-device-groups)**.
-
-
-### A few points to keep in mind
-
-- Your level of automation is determined by your device group settings. To learn more, see [Set up device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
-
-- If your Microsoft Defender for Endpoint tenant was created before August 16, 2020, then you have a default device group that is configured for semi-automatic remediation. In this case, some or all remediation actions for malicious entities require approval. Such actions are listed on the **Pending actions** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center). You can set your [device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups) to use full automation so that no user approval is needed. 
-
-- If your Microsoft Defender for Endpoint tenant was created on or after August 16, 2020, then you have a default device group that is configured for full automation. In this case, remediation actions are taken automatically for entities that are considered to be malicious. Such actions are listed on the **History** tab in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center#the-action-center).
+> If your tenant already has device groups defined, then the automation level settings are not changed for those device groups.
 
 ## Next steps
 
