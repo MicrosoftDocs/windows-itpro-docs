@@ -74,7 +74,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 <strong>DHA-Enabled MDM (Device HealthAttestation enabled device management solution)</strong>
 <p style="margin-left: 20px">Device HealthAttestation enabled (DHA-Enabled) device management solution is a device management tool that is integrated with the DHA feature.</p>
-<p style="margin-left: 20px">DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromized by advanced security threats or running a malicious (jailbroken) operating system.</p>
+<p style="margin-left: 20px">DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromised by advanced security threats or running a malicious (jailbroken) operating system.</p>
 <p style="margin-left: 20px">The following list of operations are performed by DHA-Enabled-MDM:</p>
 <ul>
 <li>Enables the DHA feature on a DHA-Enabled device</li>
@@ -220,7 +220,7 @@ The following diagram shows the Device HealthAttestation configuration service p
 <a href="" id="correlationid"></a>**CorrelationId** (Required)  
 <p style="margin-left: 20px">Identifies a unique device health attestation session. CorrelationId is used to correlate DHA-Service logs with the MDM server events and Client event logs for debug and troubleshooting.</p>
 
-<p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximun value is 2,147,483,647. The supported operation is Get.</p>
+<p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximum value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
 <p style="margin-left: 20px">Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
