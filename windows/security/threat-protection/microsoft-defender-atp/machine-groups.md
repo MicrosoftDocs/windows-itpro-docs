@@ -19,6 +19,9 @@ ms.topic: article
 
 # Create and manage device groups
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Azure Active Directory

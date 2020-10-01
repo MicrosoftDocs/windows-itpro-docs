@@ -19,6 +19,9 @@ ms.topic: article
 
 # Configure advanced features in Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -198,4 +201,4 @@ After configuring the [Security policy violation indicators](https://docs.micros
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
+

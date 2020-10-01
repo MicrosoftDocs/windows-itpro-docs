@@ -17,6 +17,9 @@ manager: dansimp
 Microsoft Baseline Security Analyzer (MBSA) is used to verify patch compliance. MBSA also performed several other security checks for Windows, IIS, and SQL Server. Unfortunately, the logic behind these additional checks had not been actively maintained since Windows XP and Windows Server 2003. Changes in the products since then rendered many of these security checks obsolete and some of their recommendations counterproductive. 
  
 MBSA was largely used in situations where neither Microsoft Update nor a local WSUS or Configuration Manager server was available, or as a compliance tool to ensure that all security updates were deployed to a managed environment. While MBSA version 2.3 introduced support for Windows Server 2012 R2 and Windows 8.1, it has since been deprecated and no longer developed. MBSA 2.3 is not updated to fully support Windows 10 and Windows Server 2016.
+
+> [!NOTE]
+> In accordance with our [SHA-1 deprecation initiative](https://aka.ms/sha1deprecation), the Wsusscn2.cab file is no longer dual-signed using both SHA-1 and the SHA-2 suite of hash algorithms (specifically SHA-256). This file is now signed using only SHA-256. Administrators who verify digital signatures on this file should now expect only single SHA-256 signatures. Starting with the August 2020 Wsusscn2.cab file, MBSA will return the following error "The catalog file is damaged or an invalid catalog." when attempting to scan using the offline scan file. 
  
 ## The Solution 
 A script can help you with an alternative to MBSA’s patch-compliance checking:

@@ -19,6 +19,9 @@ ms.topic: article
 
 # Web protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Web protection in Microsoft Defender ATP is a capability made up of [Web threat protection](web-threat-protection.md) and [Web content filtering](web-content-filtering.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender Security Center by going to **Reports > Web protection**.

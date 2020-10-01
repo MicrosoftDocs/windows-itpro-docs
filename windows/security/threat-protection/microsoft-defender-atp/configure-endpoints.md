@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Onboarding tools and methods for Windows 10 devices
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
