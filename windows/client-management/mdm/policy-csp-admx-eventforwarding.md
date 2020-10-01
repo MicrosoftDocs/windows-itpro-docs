@@ -49,11 +49,11 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -61,7 +61,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -122,11 +122,11 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -134,7 +134,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

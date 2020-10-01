@@ -19,6 +19,9 @@ ms.topic: article
 
 # Respond to web threats
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Web protection in Microsoft Defender ATP lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.

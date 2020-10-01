@@ -20,6 +20,9 @@ ms.date: 11/28/2018
 
 # Assign user access to Microsoft Defender Security Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Azure Active Directory
 - Office 365

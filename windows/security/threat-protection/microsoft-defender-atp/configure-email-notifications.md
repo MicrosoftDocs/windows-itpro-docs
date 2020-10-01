@@ -19,6 +19,9 @@ ms.topic: article
 
 # Configure alert notifications in Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -95,5 +98,4 @@ This section lists various issues that you may encounter when using email notifi
 
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Configure advanced features](advanced-features.md)

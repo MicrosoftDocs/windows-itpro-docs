@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
@@ -214,6 +217,28 @@ Specifies the merge policy for threat type settings. This can be a combination o
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
+#### Antivirus scan history retention (in days)
+
+Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.
+
+|||
+|:---|:---|
+| **Key** | scanResultsRetentionDays |
+| **Data type** | String |
+| **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
+| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
+
+#### Maximum number of items in the antivirus scan history
+
+Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.
+
+|||
+|:---|:---|
+| **Key** | scanHistoryMaximumItems |
+| **Data type** | String |
+| **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
+| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
 
 ### Cloud-delivered protection preferences
 

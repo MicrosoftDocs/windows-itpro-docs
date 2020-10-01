@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Set preferences for Microsoft Defender ATP for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
@@ -28,7 +31,7 @@ ms.topic: conceptual
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Users in your organization are not able to change preferences that are set through the configuration profile.
+In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
@@ -232,6 +235,30 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
+#### Antivirus scan history retention (in days)
+
+Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | scanResultsRetentionDays |
+| **Data type** | String |
+| **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
+| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
+
+#### Maximum number of items in the antivirus scan history
+
+Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | scanHistoryMaximumItems |
+| **Data type** | String |
+| **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
+| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
 
 ### Cloud-delivered protection preferences
 
