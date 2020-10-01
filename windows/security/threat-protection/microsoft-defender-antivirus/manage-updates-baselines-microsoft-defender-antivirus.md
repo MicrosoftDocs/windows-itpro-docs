@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/10/2020
+ms.date: 09/28/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -40,7 +40,12 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
+Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+
+> [!NOTE]
+> Updates are released under the below KB numbers:  
+> Microsoft Defender Antivirus: KB2267602  
+> System Center Endpoint Protection: KB2461484
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 

@@ -32,9 +32,9 @@ ms.topic: conceptual
 
 
 The public preview of Microsoft Defender ATP for iOS will offer protection
-against phishing and unsafe network connections from websites, emails and apps.
+against phishing and unsafe network connections from websites, emails, and apps.
 All alerts will be available through a single pane of glass in the Microsoft
-Defender Security Center, giving security teams a centralized view of threats on
+Defender Security Center. The portal gives security teams a centralized view of threats on
 iOS devices along with other platforms.
 
 ## Pre-requisites
@@ -72,4 +72,5 @@ iOS devices along with other platforms.
 
 ## Next steps
 
-Microsoft Defender for Endpoint capabilities for iOS will be released into public preview in the coming weeks. At that time, we will publish additional deployment and configuration information. Please check back here in a few weeks.  
+- [Deploy Microsoft Defender ATP for iOS](ios-install.md)
+- [Configure Microsoft Defender ATP for iOS features](ios-configure-features.md)
