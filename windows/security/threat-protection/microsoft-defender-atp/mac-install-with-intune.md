@@ -179,81 +179,78 @@ To approve the system extensions:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-   <plist version="1.0">
-   <dict>
-       <key>PayloadDescription</key>
-       <string>Allows Microsoft Defender to access all files on Catalina+</string>
-       <key>PayloadDisplayName</key>
-       <string>TCC - Microsoft Defender</string>
-       <key>PayloadIdentifier</key>
-       <string>com.microsoft.wdav.tcc</string>
-       <key>PayloadOrganization</key>
-       <string>Microsoft Corp.</string>
-       <key>PayloadRemovalDisallowed</key>
-       <false/>
-       <key>PayloadScope</key>
-       <string>system</string>
-       <key>PayloadType</key>
-       <string>Configuration</string>
-       <key>PayloadUUID</key>
-       <string>C234DF2E-DFF6-11E9-B279-001C4299FB44</string>
-       <key>PayloadVersion</key>
-       <integer>1</integer>
-       <key>PayloadContent</key>
-       <array>
-       <dict>
-           <key>PayloadDescription</key>
-           <string>Allows Microsoft Defender to access all files on Catalina+</string>
-           <key>PayloadDisplayName</key>
-           <string>TCC - Microsoft Defender</string>
-           <key>PayloadIdentifier</key>
-           <string>com.microsoft.wdav.tcc.C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
-           <key>PayloadOrganization</key>
-           <string>Microsoft Corp.</string>
-           <key>PayloadType</key>
-           <string>com.apple.TCC.configuration-profile-policy</string>
-           <key>PayloadUUID</key>
-           <string>C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
-           <key>PayloadVersion</key>
-           <integer>1</integer>
-           <key>Services</key>
-           <dict>
-               <key>SystemPolicyAllFiles</key>
-               <array>
-               <dict>
-                   <key>Allowed</key>
-                   <true/>
-                   <key>CodeRequirement</key>
-                   <string>identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-                   <key>Comment</key>
-                   <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP</string>
-                   <key>Identifier</key>
-                   <string>com.microsoft.wdav</string>
-                   <key>IdentifierType</key>
-                   <string>bundleID</string>
-               </dict>
-               </array>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>PayloadDescription</key>
+        <string>Allows Microsoft Defender to access all files on Catalina+</string>
+        <key>PayloadDisplayName</key>
+        <string>TCC - Microsoft Defender</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav.tcc</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft Corp.</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadScope</key>
+        <string>system</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>C234DF2E-DFF6-11E9-B279-001C4299FB44</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadContent</key>
+        <array>
+        <dict>
+            <key>PayloadDescription</key>
+            <string>Allows Microsoft Defender to access all files on Catalina+</string>
+            <key>PayloadDisplayName</key>
+            <string>TCC - Microsoft Defender</string>
+            <key>PayloadIdentifier</key>
+            <string>com.microsoft.wdav.tcc.C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft Corp.</string>
+            <key>PayloadType</key>
+            <string>com.apple.TCC.configuration-profile-policy</string>
+            <key>PayloadUUID</key>
+            <string>C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Services</key>
+            <dict>
                 <key>SystemPolicyAllFiles</key>
                 <array>
-                    <dict>
-                        <key>Identifier</key>
-                        <string>com.microsoft.wdav.epsext</string>
-                        <key>CodeRequirement</key>
-                        <string>identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-                        <key>IdentifierType</key>
-                        <string>bundleID</string>
-                        <key>StaticCode</key>
-                        <integer>0</integer>
-                        <key>Allowed</key>
-                        <integer>1</integer>
-                    </dict>
+                <dict>
+                    <key>Allowed</key>
+                    <true/>
+                    <key>CodeRequirement</key>
+                    <string>identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                    <key>Comment</key>
+                    <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP</string>
+                    <key>Identifier</key>
+                    <string>com.microsoft.wdav</string>
+                    <key>IdentifierType</key>
+                    <string>bundleID</string>
+                </dict>
+                <dict>
+                    <key>Allowed</key>
+                    <true/>
+                    <key>CodeRequirement</key>
+                    <string>identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                    <key>Comment</key>
+                    <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP Endpoint Security Extension</string>
+                    <key>Identifier</key>
+                    <string>com.microsoft.wdav.epsext</string>
+                    <key>IdentifierType</key>
+                    <string>bundleID</string>
+                </dict>
                 </array>
-           </dict>
-       </dict>
-       </array>
-   </dict>
-   </plist>
+            </dict>
+        </dict>
+        </array>
+    </dict>
+    </plist>
    ```
 
 9. As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality. Save the following content as netext.xml and deploy it using the same steps as in the previous sections. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
