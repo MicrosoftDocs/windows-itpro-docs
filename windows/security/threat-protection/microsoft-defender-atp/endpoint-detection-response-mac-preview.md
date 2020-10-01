@@ -29,104 +29,104 @@ Endpoint detection and response capabilities in Microsoft Defender ATP for Mac a
 
 ## Enable the Insider program with Jamf
 
-a. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile com.microsoft.wdav.plist with the following content:
 
-```XML
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <dict>
-        <key>edr</key>
-        <dict>
-            <key>earlyPreview</key>
-            <true/>
-        </dict>
-    </dict>
-    </plist>
-```
+   ```XML
+       <?xml version="1.0" encoding="UTF-8"?>
+       <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+       <plist version="1.0">
+       <dict>
+           <key>edr</key>
+           <dict>
+               <key>earlyPreview</key>
+               <true/>
+           </dict>
+       </dict>
+       </plist>
+   ```
 
-b. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
+1. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
 
-c. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
+1. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
 
->[!WARNING]
->You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
+   > [!WARNING]
+   > You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
 
 ## Enable the Insider program with Intune
 
-a. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile com.microsoft.wdav.plist with the following content:
 
- ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1">
-        <dict>
-            <key>PayloadUUID</key>
-            <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
-            <key>PayloadType</key>
-            <string>Configuration</string>
-            <key>PayloadOrganization</key>
-            <string>Microsoft</string>
-            <key>PayloadIdentifier</key>
-            <string>com.microsoft.wdav</string>
-            <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP settings</string>
-            <key>PayloadDescription</key>
-            <string>Microsoft Defender ATP configuration settings</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
-            <key>PayloadEnabled</key>
-            <true/>
-            <key>PayloadRemovalDisallowed</key>
-            <true/>
-            <key>PayloadScope</key>
-            <string>System</string>
-            <key>PayloadContent</key>
-            <array>
-                <dict>
-                    <key>PayloadUUID</key>
-                    <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
-                    <key>PayloadType</key>
-                    <string>com.microsoft.wdav</string>
-                    <key>PayloadOrganization</key>
-                    <string>Microsoft</string>
-                    <key>PayloadIdentifier</key>
-                    <string>com.microsoft.wdav</string>
-                    <key>PayloadDisplayName</key>
-                    <string>Microsoft Defender ATP configuration settings</string>
-                    <key>PayloadDescription</key>
-                    <string/>
-                    <key>PayloadVersion</key>
-                    <integer>1</integer>
-                    <key>PayloadEnabled</key>
-                    <true/>
-                    <key>edr</key>
-                    <dict>
-                        <key>earlyPreview</key>
-                        <true/>
-                    </dict>
-                </dict>
-            </array>
-        </dict>
-    </plist>
-```
+    ```XML
+       <?xml version="1.0" encoding="utf-8"?>
+       <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+       <plist version="1">
+           <dict>
+               <key>PayloadUUID</key>
+               <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+               <key>PayloadType</key>
+               <string>Configuration</string>
+               <key>PayloadOrganization</key>
+               <string>Microsoft</string>
+               <key>PayloadIdentifier</key>
+               <string>com.microsoft.wdav</string>
+               <key>PayloadDisplayName</key>
+               <string>Microsoft Defender ATP settings</string>
+               <key>PayloadDescription</key>
+               <string>Microsoft Defender ATP configuration settings</string>
+               <key>PayloadVersion</key>
+               <integer>1</integer>
+               <key>PayloadEnabled</key>
+               <true/>
+               <key>PayloadRemovalDisallowed</key>
+               <true/>
+               <key>PayloadScope</key>
+               <string>System</string>
+               <key>PayloadContent</key>
+               <array>
+                   <dict>
+                       <key>PayloadUUID</key>
+                       <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                       <key>PayloadType</key>
+                       <string>com.microsoft.wdav</string>
+                       <key>PayloadOrganization</key>
+                       <string>Microsoft</string>
+                       <key>PayloadIdentifier</key>
+                       <string>com.microsoft.wdav</string>
+                       <key>PayloadDisplayName</key>
+                       <string>Microsoft Defender ATP configuration settings</string>
+                       <key>PayloadDescription</key>
+                       <string/>
+                       <key>PayloadVersion</key>
+                       <integer>1</integer>
+                       <key>PayloadEnabled</key>
+                       <true/>
+                       <key>edr</key>
+                       <dict>
+                           <key>earlyPreview</key>
+                           <true/>
+                       </dict>
+                   </dict>
+               </array>
+           </dict>
+       </plist>
+   ```
 
-b. Open  **Manage > Device configuration**. Select  **Manage > Profiles > Create Profile**.
+1. Open  **Manage > Device configuration**. Select  **Manage > Profiles > Create Profile**.
 
-c. Choose a name for the profile. Change  **Platform=macOS**  to  **Profile type=Custom**. Select  **Configure**.
+1. Choose a name for the profile. Change  **Platform=macOS**  to  **Profile type=Custom**. Select  **Configure**.
 
-d. Save the .plist created earlier as com.microsoft.wdav.xml.
+1. Save the .plist created earlier as com.microsoft.wdav.xml.
 
-e. Enter com.microsoft.wdav as the custom configuration profile name.
+1. Enter com.microsoft.wdav as the custom configuration profile name.
 
-f. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
+1. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
 
-g. Select  **OK**.
+1. Select  **OK**.
 
-h. Select  **Manage > Assignments**. In the  **Include**  tab, select  **Assign to All Users & All devices**.
+1. Select  **Manage > Assignments**. In the  **Include**  tab, select  **Assign to All Users & All devices**.
 
->[!WARNING]
->You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
+   > [!WARNING]
+   > You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
 
 ## Enable the Insider program manually on a single device
 
@@ -134,7 +134,7 @@ In terminal, run:
 
 ```bash
     mdatp --edr --early-preview true
- ```
+```
 
 For versions earlier than 100.78.0, run:
 
