@@ -77,6 +77,37 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 
 Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.
 
+### System extension policy
+
+Set up a system extension policy. Use team identifier **UBF8T346G9** and approve the following bundle identifiers:
+
+- com.microsoft.wdav.epsext
+- com.microsoft.wdav.netext
+
+### Full disk access policy
+
+Grant Full Disk Access to the following components:
+
+- Microsoft Defender ATP
+    - Identifier: `com.microsoft.wdav`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
+
+- Microsoft Defender ATP Endpoint Security Extension
+    - Identifier: `com.microsoft.wdav.epsext`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+
+### Network extension policy
+
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+
+- Filter type: Plugin
+- Plugin bundle identifier: `com.microsoft.wdav`
+- Filter data provider bundle identifier: `com.microsoft.wdav.netext`
+- Filter data provider designated requirement: identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+- Filter sockets: `true`
+
 ## Check installation status
 
 Run [mdatp](mac-install-with-jamf.md) on a client device to check the onboarding status.
