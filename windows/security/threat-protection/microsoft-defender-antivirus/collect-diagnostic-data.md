@@ -1,7 +1,7 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -78,7 +78,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 Copies the diagnostic data to the specified path. If the path is not specified, the diagnostic data will be copied to the location specified in the Support Log Location Configuration.
 
-When the SupportLogLocation parameter is used, a folder structure as below will be created in the destination path:
+When the SupportLogLocation parameter is used, a folder structure like as follows will be created in the destination path:
 
 ```Dos
 <path>\<MMDD>\MpSupport-<hostname>-<HHMM>.cab
@@ -99,15 +99,17 @@ When the SupportLogLocation parameter is used, a folder structure as below will 
 You can also specify where the diagnostic .cab file will be created using a Group Policy Object (GPO). 
 
 1. Open the Local Group Policy Editor and find the SupportLogLocation GPO at: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
-2. Select **Define the directory path to copy support log files**.
-<br>
-<br>
-    ![Screenshot of local group policy editor](images/GPO-diagpath.png)  
+   
+1. Select **Define the directory path to copy support log files**.
 
-
+    ![Screenshot of local group policy editor](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![Screenshot of local group policy editor](images/GPO2-SupportLogLocationGPPage.png)  
 3. Inside the policy editor, select **Enabled**.
+       
 4. Specify the directory path where you want to copy the support log files in the **Options** field.
-5. Select **Apply**.
+     ![Screenshot of local group policy editor](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+5. Select **OK** or **Apply**.
 
 ## See also
 
