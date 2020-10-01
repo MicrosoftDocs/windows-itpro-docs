@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Update
 
-> [!NOTE]
-> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -1927,7 +1925,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2987,7 +2985,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
@@ -3116,7 +3114,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 

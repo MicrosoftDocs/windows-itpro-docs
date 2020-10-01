@@ -1,10 +1,11 @@
 ---
-title: McAfee to Microsoft Defender ATP - Prepare
+title: McAfee to Microsoft Defender for Endpoint - Prepare
 description: This is phase 1, Prepare, for migrating from McAfee to Microsoft Defender ATP.
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +19,7 @@ ms.collection:
 - m365solution-mcafeemigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 09/03/2020
+ms.date: 09/22/2020
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -32,11 +33,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |*You are here!*| | |
 
 
-**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Welcome to the Prepare phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
-2. [Get Microsoft Defender ATP](#get-microsoft-defender-atp).
+2. [Get Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint).
 3. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
@@ -68,15 +69,15 @@ Need help updating your organization's devices? See the following resources:
 |Android |[Check & update your Android version](https://support.google.com/android/answer/7680439) |
 |Linux | [Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
 
-## Get Microsoft Defender ATP
+## Get Microsoft Defender for Endpoint
 
 Now that you've updated your organization's devices, the next step is to get Microsoft Defender ATP, assign licenses, and make sure the service is provisioned.
 
-1. Buy or try Microsoft Defender ATP today. [Visit Microsoft Defender ATP to start a free trial or request a quote](https://aka.ms/mdatp). 
+1. Buy or try Microsoft Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp). 
 
 2. Verify that your licenses are properly provisioned. [Check your license state](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#check-license-state).
 
-3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender ATP. See [Microsoft Defender ATP setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
+3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender for Endpoint. See [Microsoft Defender ATP setup: Tenant configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#tenant-configuration).
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender ATP setup: Network configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment#network-configuration).
  
@@ -117,6 +118,6 @@ To enable communication between your devices and Microsoft Defender ATP, configu
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [migrating from McAfee to Microsoft Defender ATP](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [migrating from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to set up Microsoft Defender ATP](mcafee-to-microsoft-defender-setup.md).
+- [Proceed to set up Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-setup.md).
