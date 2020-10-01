@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
-ms.reviewer: 
+ms.date: 10/01/2018
+ms.reviewer: ksarens
 manager: dansimp
 ---
 
