@@ -340,89 +340,9 @@ You'll need to take the following steps:
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
-1. Use the following Microsoft Defender ATP notification configuration settings:
+1. Navigate to [this page](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-    <dict>
-        <key>PayloadContent</key>
-            <array>
-                <dict>
-                    <key>NotificationSettings</key>
-                    <array>
-                        <dict>
-                            <key>AlertType</key>
-                            <integer>2</integer>
-                            <key>BadgesEnabled</key>
-                            <true/>
-                            <key>BundleIdentifier</key>
-                            <string>com.microsoft.autoupdate2</string>
-                            <key>CriticalAlertEnabled</key>
-                            <false/><key>GroupingType</key>
-                            <integer>0</integer>
-                            <key>NotificationsEnabled</key>
-                            <true/>
-                            <key>ShowInLockScreen</key>
-                            <false/>
-                            <key>ShowInNotificationCenter</key>
-                            <true/>
-                            <key>SoundsEnabled</key>
-                            <true/>
-                        </dict>
-                        <dict>
-                            <key>AlertType</key>
-                            <integer>2</integer><key>BadgesEnabled</key>
-                            <true/><key>BundleIdentifier</key>
-                            <string>com.microsoft.wdav.tray</string>
-                            <key>CriticalAlertEnabled</key>
-                            <false/><key>GroupingType</key>
-                            <integer>0</integer>
-                            <key>NotificationsEnabled</key>
-                            <true/><key>ShowInLockScreen</key>
-                            <false/><key>ShowInNotificationCenter</key>
-                            <true/><key>SoundsEnabled</key>
-                            <true/>
-                        </dict>
-                    </array>
-                    <key>PayloadDescription</key>
-                    <string/><key>PayloadDisplayName</key>
-                    <string>notifications</string>
-                    <key>PayloadEnabled</key>
-                    <true/><key>PayloadIdentifier</key>
-                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
-                    <key>PayloadOrganization</key>
-                    <string>Microsoft</string>
-                    <key>PayloadType</key>
-                    <string>com.apple.notificationsettings</string>
-                    <key>PayloadUUID</key>
-                    <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
-                    <key>PayloadVersion</key>
-                    <integer>1</integer>
-                </dict>
-            </array>
-            <key>PayloadDescription</key>
-            <string/><key>PayloadDisplayName</key>
-            <string>mdatp - allow notifications</string>
-            <key>PayloadEnabled</key><true/>
-            <key>PayloadIdentifier</key>
-            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
-            <key>PayloadOrganization</key>
-            <string>Microsoft</string>
-            <key>PayloadRemovalDisallowed</key>
-            <false/><key>PayloadScope</key>
-            <string>System</string>
-            <key>PayloadType</key>
-            <string>Configuration</string>
-            <key>PayloadUUID</key>
-            <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
-    </dict>
- </plist>   
-   ```
-
-2.  Save it as `MDATP_MDAV_notification_settings.plist`.
+2. Save it as `MDATP_MDAV_notification_settings.plist`.
 
 3. In the Jamf Pro dashboard, select **General**. 
        
@@ -760,68 +680,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 >JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
-1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig`
-
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1">
-        <dict>
-            <key>PayloadUUID</key>
-            <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
-            <key>PayloadType</key>
-            <string>Configuration</string>
-            <key>PayloadOrganization</key>
-            <string>Microsoft Corporation</string>
-            <key>PayloadIdentifier</key>
-            <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
-            <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
-            <key>PayloadDescription</key>
-            <string/>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
-            <key>PayloadEnabled</key>
-            <true/>
-            <key>PayloadRemovalDisallowed</key>
-            <true/>
-            <key>PayloadScope</key>
-            <string>System</string>
-            <key>PayloadContent</key>
-            <array>
-                <dict>
-                    <key>PayloadUUID</key>
-                    <string>2BA070D9-2233-4827-AFC1-1F44C8C8E527</string>
-                    <key>PayloadType</key>
-                    <string>com.apple.webcontent-filter</string>
-                    <key>PayloadOrganization</key>
-                    <string>Microsoft Corporation</string>
-                    <key>PayloadIdentifier</key>
-                    <string>CEBF7A71-D9A1-48BD-8CCF-BD9D18EC155A</string>
-                    <key>PayloadDisplayName</key>
-                    <string>Approved Network Extension</string>
-                    <key>PayloadDescription</key>
-                    <string/>
-                    <key>PayloadVersion</key>
-                    <integer>1</integer>
-                    <key>PayloadEnabled</key>
-                    <true/>
-                    <key>FilterType</key>
-                    <string>Plugin</string>
-                    <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
-                    <key>PluginBundleID</key>
-                    <string>com.microsoft.wdav</string>
-                    <key>FilterSockets</key>
-                    <true/>
-                    <key>FilterDataProviderBundleIdentifier</key>
-                    <string>com.microsoft.wdav.netext</string>
-                    <key>FilterDataProviderDesignatedRequirement</key>
-                    <string>identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-                </dict>
-            </array>
-        </dict>
-    </plist>
-    ```
+1. Save [this configuration](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) to your device as `com.microsoft.network-extension.mobileconfig`
 
 2. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
 
