@@ -42,7 +42,7 @@ Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
 
 | Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
-|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:----:|:---------------------:|
 | Microsoft.3DBuilder                          | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        |      |      |      |      |      |          Yes          |
 | Microsoft.BingWeather                        | [MSN Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |          Yes          |
 | Microsoft.DesktopAppInstaller                | [App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe)                           |   x  |   x  |   x  |   x  |   x  |    Via Settings App   |
