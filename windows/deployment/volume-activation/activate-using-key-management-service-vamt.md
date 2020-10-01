@@ -49,7 +49,7 @@ To enable KMS functionality, a KMS key is installed on a KMS host; then, the hos
 
 To activate , use the slmgr.vbs command. Open an elevated command prompt and run one of the following commands:
 - To install the KMS key, type `slmgr.vbs /ipk <KmsKey>`.
-- To activate online, type `slmgr.vbs/ato`.
+- To activate online, type `slmgr.vbs /ato`.
 - To activate by telephone , follow these steps:
   1. Run `slmgr.vbs /dti` and confirm the installation ID.
   2. Call [Microsoft Licensing Activation Centers worldwide telephone numbers](https://www.microsoft.com/licensing/existing-customer/activation-centers) and follow the voice prompts to enter the installation ID that you obtained in step 1 on your telephone.

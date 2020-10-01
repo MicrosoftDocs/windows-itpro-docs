@@ -21,7 +21,8 @@ ms.custom:
 # Manage Windows Defender Credential Guard
 
 **Applies to**
--   Windows 10
+-   Windows 10 <=1903 Enterprise and Education SKUs
+-   Windows 10 >=1909
 -   Windows Server 2016
 -   Windows Server 2019
 

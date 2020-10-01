@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard Windows 10 devices using a local script
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
@@ -31,30 +34,32 @@ ms.topic: article
 
 You can also manually onboard individual devices to Microsoft Defender ATP. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
-> [!NOTE]
-> The script has been optimized to be used on a limited number of devices (1-10 devices). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Onboard Window 10 devices](configure-endpoints.md).
+> [!IMPORTANT]
+> This script has been optimized for use on up to 10 devices.
+>
+> To deploy at scale, use [other deployment options](configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).
 
 ## Onboard devices 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a.  In the navigation pane, select **Settings** > **Onboarding**.
+    1. In the navigation pane, select **Settings** > **Onboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c.  In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
   
 2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
-    a.  Go to **Start** and type **cmd**.
+    1.  Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+    1.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
@@ -73,7 +78,7 @@ You can manually configure the sample sharing setting on the device by using *re
 
 The configuration is set through the following registry key entry:
 
-```
+```console
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -95,23 +100,23 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
-    a.  In the navigation pane, select **Settings** > **Offboarding**.
+    1. In the navigation pane, select **Settings** > **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+    1. Select Windows 10 as the operating system.
 
-    c.  In the **Deployment method** field, select **Local Script**.
+    1. In the **Deployment method** field, select **Local Script**.
 
-    d. Click **Download package** and save the .zip file.
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
-    a.  Go to **Start** and type **cmd**.
+    1.  Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+    1.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+        ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

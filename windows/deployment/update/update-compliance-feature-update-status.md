@@ -35,13 +35,21 @@ Refer to the following list for what each state means:
 * Devices that have failed the given feature update installation are counted as **Update failed**.
 * If a device should be, in some way, progressing toward this security update, but its status cannot be inferred, it will count as **Status Unknown**. Devices not using Windows Update are the most likely devices to fall into this category.
 
-## Compatibility holds
+## Safeguard holds
 
-Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *compatibility hold* is generated to delay the device's upgrade and safeguard the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all compatibility holds on the Windows 10 release information page for any given release. 
+Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *safeguard hold* is generated to delay the device's upgrade and protect the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all safeguard holds on the Windows 10 release information page for any given release. 
 
-### Opting out of compatibility hold
+## Queries for safeguard holds
 
-Microsoft will release a device from a compatibility hold when it has determined it can safely and smoothly install a feature update, but you are ultimately in control of your devices and can opt out if desired. 
+Update Compliance reporting offers two queries to help you retrieve data related to safeguard holds. The first query shows the device data for all devices that are affected by safeguard holds. The second query shows data specific to devices running the target build.
+
+![Left pane showing Need Attention, Security update status, feature update status, and Windows Defender AV status, with Need Attention selected. Right pane shows the list of queries relevant to the Need Attention status, with "Devices with a safeguard hold" and "Target build distribution of devices with a safeguard hold" queries highlighted](images/UC_workspace_safeguard_queries.png)
+
+Update Compliance reporting will display the Safeguard IDs for known issues affecting a device in the **DeploymentErrorCode** column. Safeguard IDs for publicly discussed known issues are also included in the Windows Release Health dashboard, where you can easily find information related to publicly available safeguards.
+
+### Opting out of safeguard hold
+
+Microsoft will release a device from a safeguard hold when it has determined it can safely and smoothly install a feature update, but you are ultimately in control of your devices and can opt out if desired. 
 To opt out, set the registry key as follows:
 
 - Registry Key Path :: **Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion**
@@ -50,6 +58,5 @@ To opt out, set the registry key as follows:
 - Type              :: **REG_DWORD**
 - Value             :: **0**
 
-
-Setting this registry key to **0** will force the device to opt out from *all* compatibility holds. Any other value, or deleting the key, will resume compatibility protection on the device.  
+Setting this registry key to **0** will force the device to opt out from *all* safeguard holds. Any other value, or deleting the key, will resume compatibility protection on the device.  
 

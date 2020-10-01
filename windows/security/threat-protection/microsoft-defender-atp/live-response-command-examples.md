@@ -19,6 +19,9 @@ ms.topic: article
 
 # Live response command examples
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
@@ -155,7 +158,7 @@ registry HKEY_CURRENT_USER\Console
 
 ```
 # Show information about a specific registry value
-registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
+registry HKEY_CURRENT_USER\Console\ScreenBufferSize
 ```
 
 

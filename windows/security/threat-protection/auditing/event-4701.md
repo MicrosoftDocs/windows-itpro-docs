@@ -62,6 +62,17 @@ This event generates every time a scheduled task is disabled.
  </Event>
 
 ```
+>[!NOTE]
+> Windows 10 Versions 1903 and above augments the event with these additional properties:
+> Event Version 1.
+>  ***Event XML:***
+>```
+>  <Data Name="ClientProcessStartKey">5066549580796854</Data> 
+>  <Data Name="ClientProcessId">3932</Data> 
+>  <Data Name="ParentProcessId">5304</Data> 
+>  <Data Name="RpcCallClientLocality">0</Data> 
+>  <Data Name="FQDN">DESKTOP-Name</Data> 
+
 
 ***Required Server Roles:*** None.
 

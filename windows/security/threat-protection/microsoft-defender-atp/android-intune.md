@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Deploy Microsoft Defender ATP for Android with Microsoft Intune 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)
@@ -30,8 +33,9 @@ device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-co
 
 
 > [!NOTE]
-> **Microsoft Defender ATP for Android is now available on Google Play.**
-You can connect to Google Play from Intune to deploy app across Device Administrator and Android Enterprise entrollment modes. Updates to the app are automatic via Google Play.
+> **Microsoft Defender ATP for Android is now available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
+> You can connect to Google Play from Intune to deploy Microsoft Defender ATP app across Device Administrator and Android Enterprise entrollment modes.
+  Updates to the app are automatic via Google Play.
 
 ## Deploy on Device Administrator enrolled devices
 
@@ -39,10 +43,6 @@ You can connect to Google Play from Intune to deploy app across Device Administr
 Administrator enrolled devices**
 
 This topic describes how to deploy Microsoft Defender ATP for Android on Intune Company Portal - Device Administrator enrolled devices. 
-
-> [!NOTE]
-> If you have already deployed **Preview APK as "Line of Business (LOB)" app**, you need to redeploy by adding new app as "Android store app" 
-
 
 ### Add as Android store app
 
@@ -58,7 +58,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
    - **Name** 
    - **Description**
    - **Publisher** as Microsoft.
-   - **Appstore URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Microsoft Defender ATP Preview app Google Play Store URL) 
+   - **Appstore URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Microsoft Defender ATP app Google Play Store URL) 
 
    Other fields are optional. Select **Next**.
 
@@ -73,14 +73,14 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
     > ![Image of Microsoft Endpoint Manager Admin Center](images/363bf30f7d69a94db578e8af0ddd044b.png)
 
 
-6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
+4. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
     In a few moments, the Microsoft Defender ATP app would be created successfully, and a notification would show up at the top-right corner of the page.
 
     ![Image of Microsoft Endpoint Manager Admin Center](images/86cbe56f88bb6e93e9c63303397fc24f.png)
 
 
-7. In the app information page that is displayed, in the **Monitor** section,
+5. In the app information page that is displayed, in the **Monitor** section,
 select **Device install status** to verify that the device installation has
 completed successfully.
 
@@ -97,9 +97,6 @@ completed successfully.
 2. Tap the Microsoft Defender ATP app icon and follow the on-screen instructions
 to complete onboarding the app. The details include end-user acceptance of Android permissions required by Microsoft Defender ATP for Android.
 
-   > [!NOTE]
-   > If you already have **preview version of Microsoft Defender ATP app** installed, follow onboarding instruction to replace the existing version of app
-
 3. Upon successful onboarding, the device will start showing up on the Devices
 list in Microsoft Defender Security Center.
 
@@ -115,9 +112,6 @@ Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
 
 Currently only Personal devices with Work Profile enrolled  are supported for deployment. 
 
-
->[!NOTE]
-> If you have already deployed **Preview version of Microsoft Defender for Android app**, you need to redeploy by adding new app as 'managed Google Play App'
 
 
 ## Add Microsoft Defender ATP for Android as a Managed Google Play app

@@ -16,6 +16,9 @@ manager: dansimp
 ---
 
 # Common mistakes to avoid when defining exclusions
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
 
 This topic describes some common mistake that you should avoid when defining exclusions. 
