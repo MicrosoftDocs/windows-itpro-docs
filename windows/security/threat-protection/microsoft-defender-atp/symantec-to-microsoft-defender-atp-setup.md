@@ -1,10 +1,11 @@
 ---
-title: Symantec to Microsoft Defender ATP - Phase 2, Setting Up
-description: This is Phase 2, Setup, of migrating from Symantec to Microsoft Defender ATP
+title: Symantec to Microsoft Defender for Endpoint - Phase 2, Setting Up
+description: This is Phase 2, Setup, of migrating from Symantec to Microsoft Defender for Endpoint
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,26 +18,30 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate 
 ms.topic: article
-ms.date: 09/04/2020
+ms.date: 09/24/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
 
-# Migrate from Symantec - Phase 2: Set up Microsoft Defender ATP
+# Migrate from Symantec - Phase 2: Set up Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 |[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |![Phase 2: Set up](images/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
 
-**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
-3. [Add Microsoft Defender ATP to the exclusion list for Symantec](#add-microsoft-defender-atp-to-the-exclusion-list-for-symantec).
-4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add Symantec to the exclusion list for Microsoft Defender ATP](#add-symantec-to-the-exclusion-list-for-microsoft-defender-atp).
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+3. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+4. [Add Microsoft Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
+5. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
+6. [Add Symantec to the exclusion list for Microsoft Defender for Endpoint](#add-symantec-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
+7. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+8. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)
 
@@ -45,7 +50,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. To learn more, see [Microsoft Defender Antivirus compatibility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
 
-Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
+Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
@@ -71,7 +76,7 @@ Now that you're moving from Symantec to Microsoft Defender ATP, you'll need to e
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender ATP.
+Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Windows Advanced Threat Protection`.
@@ -110,9 +115,19 @@ Microsoft Defender Antivirus can run alongside Symantec if you set Microsoft Def
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
 
-## Add Microsoft Defender ATP to the exclusion list for Symantec
+## Get updates for Microsoft Defender Antivirus
 
-This step of the setup process involves adding Microsoft Defender ATP to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+- Security intelligence updates
+- Product updates
+
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+
+## Add Microsoft Defender for Endpoint to the exclusion list for Symantec
+
+This step of the setup process involves adding Microsoft Defender for Endpoint to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
@@ -142,9 +157,9 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <br/><br/>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <br/>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<br/><br/>3. Specify your path and process exclusions. |
 |Registry key |1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
-## Add Symantec to the exclusion list for Microsoft Defender ATP
+## Add Symantec to the exclusion list for Microsoft Defender for Endpoint
 
-To add exclusions to Microsoft Defender ATP, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
+To add exclusions to Microsoft Defender for Endpoint, you create [indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-files).
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
@@ -210,6 +225,6 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-onboard.md)
+- [Proceed to Phase 3: Onboard to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md)

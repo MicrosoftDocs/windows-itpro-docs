@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Enable Microsoft Defender ATP Insider Device
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 Endpoint detection and response capabilities in Microsoft Defender ATP for Mac are now in preview. To get these and other preview features, you must set up your Mac device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
 >[!IMPORTANT]

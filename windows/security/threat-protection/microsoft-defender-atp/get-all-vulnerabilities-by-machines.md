@@ -18,6 +18,9 @@ ms.topic: article
 
 # List vulnerabilities by machine and software
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).

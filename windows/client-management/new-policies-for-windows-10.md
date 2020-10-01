@@ -5,7 +5,7 @@ ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-keywords: ["MDM", "Group Policy"]
+keywords: ["MDM", "Group Policy", "GP"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,9 +21,12 @@ ms.topic: reference
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
+As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
+
+For example, searching for "Windows 2004" + "Group Policy Settings Reference Spreadsheet" in a web browser will return to you the link to download the Group Policy Settings Reference Spreadsheet for Windows 2004.
+
+The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/download/101451).
 
 ## New Group Policy settings in Windows 10, version 1903
 

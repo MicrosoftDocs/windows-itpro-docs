@@ -20,6 +20,9 @@ ms.date: 04/16/2020
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Virtual desktop infrastructure (VDI) devices
 
@@ -29,6 +32,9 @@ ms.date: 04/16/2020
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 Microsoft Defender ATP supports non-persistent VDI session onboarding. 
 

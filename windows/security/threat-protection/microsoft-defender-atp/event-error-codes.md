@@ -21,6 +21,9 @@ ms.date: 05/21/2018
 
 # Review events and errors using Event Viewer
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Event Viewer
