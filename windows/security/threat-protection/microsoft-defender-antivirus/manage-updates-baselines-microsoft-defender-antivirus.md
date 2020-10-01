@@ -91,7 +91,7 @@ All our updates contain:
    - UDP Inspection
    - Network Protection on Server 2019
    - IP Address exclusions for Network Protection
-- Improved visibility into TPM logs
+- Improved visibility into TPM measurements 
 - Improved Office VBA module scanning
 
 ### Known Issues
