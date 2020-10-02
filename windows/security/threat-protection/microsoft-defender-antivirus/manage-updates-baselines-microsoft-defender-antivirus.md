@@ -108,7 +108,7 @@ No known issues
 * Improved scan event telemetry
 * Improved behavior monitoring for memory scans
 * Improved macro streams scanning
-* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
+* Added "AMRunningMode" to Get-MpComputerStatus PowerShell CmdLet
 
 ### Known Issues
 No known issues  
