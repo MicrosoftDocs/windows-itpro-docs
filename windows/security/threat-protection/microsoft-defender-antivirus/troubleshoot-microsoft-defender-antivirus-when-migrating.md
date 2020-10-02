@@ -56,7 +56,7 @@ On a Windows 10 device, if you are not using Microsoft Defender Advanced Threat 
 
 #### Use Services app to check if Microsoft Defender Antivirus is turned off
 
-To open the Services app, select the **Search** icon from the taskbar and search for *services*.
+To open the Services app, select the **Search** icon from the taskbar and search for *services*. You can also open the app from the command-line by typing *services.msc*.
 
 Information about Microsoft Defender Antivirus will be listed within the Services app under **Windows Defender** > **Operational**. The antivirus service name is *Windows Defender Antivirus Service*.
 
@@ -86,7 +86,7 @@ Turn off Windows Defender Antivirus | Enabled | Win10-Workstations
 
 ###### If security settings are implemented via Group policy preference (GPP)
 
-Under the heading, *Registry item (Key path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsDefender, Value name: DisableAntiSpyware)*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
+Under the heading, *Registry item (Key path: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Value name: DisableAntiSpyware)*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
 DisableAntiSpyware | -
 -|-
@@ -96,7 +96,7 @@ Result: Success |
 Action | Update
 **Properties** | 
 Hive | HKEY_LOCAL_MACHINE
-Key path | SOFTWARE\Microsoft\WindowsDefender
+Key path | SOFTWARE\Policies\Microsoft\Windows Defender
 Value name | DisableAntiSpyware
 Value type | REG_DWORD
 Value data | 0x1 (1)
@@ -121,12 +121,12 @@ Microsoft Defender Antivirus will automatically turn on if no other antivirus is
 > [!WARNING]
 > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
 
-If you want to keep your third-party antivirus active alongside Microsoft Defender Antivirus, and you aren't using Microsoft Defender ATP, you can  turn on [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md). This enables a subset of Microsoft Defender Antivirus features. Limited periodic scanning is only available when Microsoft Defender Antivirus has been automatically disabled.
+Passive mode is available if you start using Microsoft Defender ATP and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](../microsoft-defender-atp/information-protection-in-windows-overview.md) is deployed.
+
+Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a third-party antivirus, using a limited number of detections.
 
 > [!IMPORTANT]
-> Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced.
-
-You can also run Microsoft Defender Antivirus in passive mode if you start using Microsoft Defender ATP and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode has a larger feature-set than limited periodic scanning, although you will not enjoy capabilities such as [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
 
 ### See also
 
