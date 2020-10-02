@@ -7170,6 +7170,2297 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365onenote2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 OneNote 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.OneNote*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Outlook 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.Outlook*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Outlook 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.Outlook*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 PowerPoint 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.PowerPoint*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 PowerPoint 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.PowerPoint*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Project 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.Project*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Project 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.Project*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Publisher 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.Publisher*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Publisher 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.Publisher*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 SharePoint Designer 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.SharePointDesigner*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Visio 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.Visio*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Visio 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.Visio*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Word 2013*
+-   GP name: *MicrosoftOffice2013Office365Win32.Word*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
+
+If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
+
+If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Microsoft Office 365 Word 2016*
+-   GP name: *MicrosoftOffice2016Office365Win32.Word*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-music"></a>**ADMX_UserExperienceVirtualization/Music**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Music app. By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
+
+If you enable this policy setting, Music user settings continue to sync.
+
+If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
+
+If you do not configure this policy setting, any defined values will be deleted.
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Music*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-news"></a>**ADMX_UserExperienceVirtualization/News**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the News app. By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
+
+If you enable this policy setting, News user settings continue to sync.
+
+If you disable this policy setting, News user settings are excluded from synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *News*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-notepad"></a>**ADMX_UserExperienceVirtualization/Notepad**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings of Notepad. By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
+
+If you enable this policy setting, the Notepad user settings continue to synchronize. 
+
+If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Notepad*
+-   GP name: *MicrosoftNotepad6*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-reader"></a>**ADMX_UserExperienceVirtualization/Reader**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Reader app. By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
+
+If you enable this policy setting, Reader user settings continue to sync.
+
+If you disable this policy setting, Reader user settings are excluded from the synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+      
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Reader*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-repositorytimeout"></a>**ADMX_UserExperienceVirtualization/RepositoryTimeout**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location. You can use this setting to override the default value of 2000 milliseconds. 
+
+If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings. 
+
+If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Synchronization timeout*
+-   GP name: *SyncTimeoutInMilliseconds*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-settingsstoragepath"></a>**ADMX_UserExperienceVirtualization/SettingsStoragePath**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures where the settings package files that contain user settings are stored.
+
+If you enable this policy setting, the user settings are stored in the specified location. 
+
+If you disable or do not configure this policy setting, the user settings are stored in the user’s home directory if configured for your environment. 
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Settings storage path*
+-   GP name: *SettingsStoragePath*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-settingstemplatecatalogpath"></a>**ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures where custom settings location templates are stored and if the catalog will be used to replace the default Microsoft templates installed with the UE-V Agent.
+
+If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
+
+If you specify a UNC path and leave the option to replace the default Microsoft templates unchecked, the UE-V Agent will use the default Microsoft templates installed by the UE-V Agent and custom templates in the settings template catalog. If there are custom templates in the settings template catalog which use the same ID as the default Microsoft templates, they will be ignored.
+
+If you specify a UNC path and check the option to replace the default Microsoft templates, all of the default Microsoft templates installed by the UE-V Agent will be deleted from the computer and only the templates located in the settings template catalog will be used.
+
+If you disable this policy setting, the UE-V Agent will not use the custom settings location templates. If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates. 
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Settings template catalog path*
+-   GP name: *SettingsTemplateCatalogPath*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-sports"></a>**ADMX_UserExperienceVirtualization/Sports**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Sports app. By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
+
+If you enable this policy setting, Sports user settings continue to sync.
+
+If you disable this policy setting, Sports user settings are excluded from synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Sports*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-syncenabled"></a>**ADMX_UserExperienceVirtualization/SyncEnabled**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to enable or disable User Experience Virtualization (UE-V). Only applies to Windows 10 or earlier.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Use User Experience Virtualization (UE-V)*
+-   GP name: *SyncEnabled*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-syncovermeterednetwork"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections. By default, the UE-V Agent does not synchronize settings over a metered connection.
+
+With this setting enabled, the UE-V Agent synchronizes settings over a metered connection.
+
+With this setting disabled, the UE-V Agent does not synchronize settings over a metered connection.
+
+If you do not configure this policy setting, any defined values are deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Sync settings over metered connections*
+-   GP name: *SyncOverMeteredNetwork*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection. By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
+
+With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that is roaming.
+
+With this setting disabled, the UE-V Agent will not synchronize settings over a metered connection that is roaming.
+
+If you do not configure this policy setting, any defined values are deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Sync settings over metered connections even when roaming*
+-   GP name: *SyncOverMeteredNetworkWhenRoaming*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-syncproviderpingenabled"></a>**ADMX_UserExperienceVirtualization/SyncProviderPingEnabled**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn’t attempt the synchronization.
+
+If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
+
+If you disable this policy setting, the sync provider doesn’t ping the settings storage location before synchronizing settings packages. 
+
+If you do not configure this policy, any defined values will be deleted.    
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Ping the settings storage location before sync*
+-   GP name: *SyncProviderPingEnabled*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-syncunlistedwindows8apps"></a>**ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List. By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
+
+With this setting enabled, the settings of all Windows apps not expressly disable in the Windows App List are synchronized.
+
+With this setting disabled, only the settings of the Windows apps set to synchronize in the Windows App List are synchronized.
+
+If you do not configure this policy setting, any defined values are deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Sync Unlisted Windows Apps*
+-   GP name: *SyncUnlistedWindows8Apps*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-travel"></a>**ADMX_UserExperienceVirtualization/Travel**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Travel app. By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
+
+If you enable this policy setting, Travel user settings continue to sync.
+
+If you disable this policy setting, Travel user settings are excluded from synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Travel*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-trayiconenabled"></a>**ADMX_UserExperienceVirtualization/TrayIconEnabled**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
+
+With this setting disabled, the tray icon does not appear in the system tray, UE-V never displays notifications, and the user cannot access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
+
+If you do not configure this policy setting, any defined values are deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Tray Icon*
+-   GP name: *TrayIconEnabled*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-video"></a>**ADMX_UserExperienceVirtualization/Video**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Video app. By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
+
+If you enable this policy setting, Video user settings continue to sync.
+
+If you disable this policy setting, Video user settings are excluded from synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Video*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-weather"></a>**ADMX_UserExperienceVirtualization/Weather**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings for the Weather app. By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
+
+If you enable this policy setting, Weather user settings continue to sync.
+
+If you disable this policy setting, Weather user settings are excluded from synchronization.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Weather*
+-   GP name: *SyncSettings*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+<!--Policy-->
+<a href="" id="admx-userexperiencevirtualization-wordpad"></a>**ADMX_UserExperienceVirtualization/Wordpad**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10 Insider Preview Build 20185. This policy setting configures the synchronization of user settings of WordPad. By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
+
+If you enable this policy setting, the WordPad user settings continue to synchronize. 
+
+If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
+
+If you do not configure this policy setting, any defined values will be deleted.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *WordPad*
+-   GP name: *MicrosoftWordpad6*
+-   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
+-   GP ADMX file name: *UserExperienceVirtualization.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
 Footnotes:
 
 - 1 - Available in Windows 10, version 1607.
