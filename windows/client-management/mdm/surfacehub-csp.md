@@ -23,7 +23,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**  
 <p style="margin-left: 20px">The root node for the Surface Hub configuration service provider.
 
-<a href="" id="deviceaccount"></a>**DeviceAccount**  
+## <a href="" id="deviceaccount"></a>**DeviceAccount node**  
 <p style="margin-left: 20px">Node for setting device account information. A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the Surface Hub administrator guide for more information about setting up a device account.
 
 <p style="margin-left: 20px">To use a device account from Azure Active Directory
@@ -206,7 +206,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
  
 <p style="margin-left: 20px">The data type is integer. Supported operation is Get.
 
-<a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
+## <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours node**  
 <p style="margin-left: 20px">Node for maintenance schedule.
 
 <a href="" id="maintenancehourssimple-hours-starttime"></a>**MaintenanceHoursSimple/Hours/StartTime**  
@@ -219,7 +219,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
-<a href="" id="inboxapps"></a>**InBoxApps**  
+## <a href="" id="inboxapps"></a>**InBoxApps node**  
 <p style="margin-left: 20px">Node for the in-box app settings.
 
 <a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**   
@@ -305,7 +305,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
-<a href="" id="properties"></a>**Properties**  
+## <a href="" id="properties"></a>**Properties node**  
 <p style="margin-left: 20px">Node for the device properties.
 
 <a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
@@ -502,7 +502,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
-<a href="" id="momagent"></a>**MOMAgent**  
+## <a href="" id="momagent"></a>**MOMAgent node**  
 <p style="margin-left: 20px">Node for the Microsoft Operations Management Suite.
 
 <a href="" id="momagent-workspaceid"></a>**MOMAgent/WorkspaceID**  
