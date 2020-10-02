@@ -1196,6 +1196,389 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_UserExperienceVirtualization policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-calculator" id="admx-userexperiencevirtualization-calculator">ADMX_UserExperienceVirtualization/Calculator</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-configuresyncmethod" id="admx-userexperiencevirtualization-configuresyncmethod">ADMX_UserExperienceVirtualization/ConfigureSyncMethod</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-configurevdi" id="admx-userexperiencevirtualization-configurevdi">ADMX_UserExperienceVirtualization/ConfigureVdi</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-contactitdescription" id="admx-userexperiencevirtualization-contactitdescription">ADMX_UserExperienceVirtualization/ContactITDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-contactiturl" id="admx-userexperiencevirtualization-contactiturl">ADMX_UserExperienceVirtualization/ContactITUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-disablewin8sync" id="admx-userexperiencevirtualization-disablewin8sync">ADMX_UserExperienceVirtualization/DisableWin8Sync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-disablewindowsossettings" id="admx-userexperiencevirtualization-disablewindowsossettings">ADMX_UserExperienceVirtualization/DisableWindowsOSSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-enableuev" id="admx-userexperiencevirtualization-enableuev">ADMX_UserExperienceVirtualization/EnableUEV</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-finance" id="admx-userexperiencevirtualization-finance">ADMX_UserExperienceVirtualization/Finance</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-firstusenotificationenabled" id="admx-userexperiencevirtualization-firstusenotificationenabled">ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-games" id="admx-userexperiencevirtualization-games">ADMX_UserExperienceVirtualization/Games</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-internetexplorer8" id="admx-userexperiencevirtualization-internetexplorer8">ADMX_UserExperienceVirtualization/InternetExplorer8</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-internetexplorer9" id="admx-userexperiencevirtualization-internetexplorer9">ADMX_UserExperienceVirtualization/InternetExplorer9</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-internetexplorer10" id="admx-userexperiencevirtualization-internetexplorer10">ADMX_UserExperienceVirtualization/InternetExplorer10</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-internetexplorer11" id="admx-userexperiencevirtualization-internetexplorer11">ADMX_UserExperienceVirtualization/InternetExplorer11</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-internetexplorercommon" id="admx-userexperiencevirtualization-internetexplorercommon">ADMX_UserExperienceVirtualization/InternetExplorerCommon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-maps" id="admx-userexperiencevirtualization-maps">ADMX_UserExperienceVirtualization/Maps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-maxpackagesizeinbytes" id="admx-userexperiencevirtualization-maxpackagesizeinbytes">ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010access" id="admx-userexperiencevirtualization-microsoftoffice2010access">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010common" id="admx-userexperiencevirtualization-microsoftoffice2010common">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010excel" id="admx-userexperiencevirtualization-microsoftoffice2010excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010infopath" id="admx-userexperiencevirtualization-microsoftoffice2010infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010lync" id="admx-userexperiencevirtualization-microsoftoffice2010lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010onenote" id="admx-userexperiencevirtualization-microsoftoffice2010onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010outlook" id="admx-userexperiencevirtualization-microsoftoffice2010outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010powerpoint" id="admx-userexperiencevirtualization-microsoftoffice2010powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010project" id="admx-userexperiencevirtualization-microsoftoffice2010project">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010publisher" id="admx-userexperiencevirtualization-microsoftoffice2010publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010visio" id="admx-userexperiencevirtualization-microsoftoffice2010visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2010word" id="admx-userexperiencevirtualization-microsoftoffice2010word">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013access" id="admx-userexperiencevirtualization-microsoftoffice2013access">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013accessbackup" id="admx-userexperiencevirtualization-microsoftoffice2013accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013common" id="admx-userexperiencevirtualization-microsoftoffice2013common">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013commonbackup" id="admx-userexperiencevirtualization-microsoftoffice2013commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013excel" id="admx-userexperiencevirtualization-microsoftoffice2013excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013excelbackup" id="admx-userexperiencevirtualization-microsoftoffice2013excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013infopath" id="admx-userexperiencevirtualization-microsoftoffice2013infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013infopathbackup" id="admx-userexperiencevirtualization-microsoftoffice2013infopathbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013lync" id="admx-userexperiencevirtualization-microsoftoffice2013lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013lyncbackup" id="admx-userexperiencevirtualization-microsoftoffice2013lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness" id="admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013onenote" id="admx-userexperiencevirtualization-microsoftoffice2013onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013onenotebackup" id="admx-userexperiencevirtualization-microsoftoffice2013onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013outlook" id="admx-userexperiencevirtualization-microsoftoffice2013outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013outlookbackup" id="admx-userexperiencevirtualization-microsoftoffice2013outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013powerpoint" id="admx-userexperiencevirtualization-microsoftoffice2013powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup" id="admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013project" id="admx-userexperiencevirtualization-microsoftoffice2013project">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013projectbackup" id="admx-userexperiencevirtualization-microsoftoffice2013projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013publisher" id="admx-userexperiencevirtualization-microsoftoffice2013publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013publisherbackup" id="admx-userexperiencevirtualization-microsoftoffice2013publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013uploadcenter" id="admx-userexperiencevirtualization-microsoftoffice2013uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013visio" id="admx-userexperiencevirtualization-microsoftoffice2013visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013visiobackup" id="admx-userexperiencevirtualization-microsoftoffice2013visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013word" id="admx-userexperiencevirtualization-microsoftoffice2013word">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2013wordbackup" id="admx-userexperiencevirtualization-microsoftoffice2013wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016access" id="admx-userexperiencevirtualization-microsoftoffice2016access">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016accessbackup" id="admx-userexperiencevirtualization-microsoftoffice2016accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016common" id="admx-userexperiencevirtualization-microsoftoffice2016common">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016commonbackup" id="admx-userexperiencevirtualization-microsoftoffice2016commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016excel" id="admx-userexperiencevirtualization-microsoftoffice2016excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016excelbackup" id="admx-userexperiencevirtualization-microsoftoffice2016excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016lync" id="admx-userexperiencevirtualization-microsoftoffice2016lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016lyncbackup" id="admx-userexperiencevirtualization-microsoftoffice2016lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness" id="admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016onenote" id="admx-userexperiencevirtualization-microsoftoffice2016onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016onenotebackup" id="admx-userexperiencevirtualization-microsoftoffice2016onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016outlook" id="admx-userexperiencevirtualization-microsoftoffice2016outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016outlookbackup" id="admx-userexperiencevirtualization-microsoftoffice2016outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016powerpoint" id="admx-userexperiencevirtualization-microsoftoffice2016powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup" id="admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016project" id="admx-userexperiencevirtualization-microsoftoffice2016project">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016projectbackup" id="admx-userexperiencevirtualization-microsoftoffice2016projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016publisher" id="admx-userexperiencevirtualization-microsoftoffice2016publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016publisherbackup" id="admx-userexperiencevirtualization-microsoftoffice2016publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016uploadcenter" id="admx-userexperiencevirtualization-microsoftoffice2016uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016visio" id="admx-userexperiencevirtualization-microsoftoffice2016visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016visiobackup" id="admx-userexperiencevirtualization-microsoftoffice2016visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016word" id="admx-userexperiencevirtualization-microsoftoffice2016word">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice2016wordbackup" id="admx-userexperiencevirtualization-microsoftoffice2016wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365access2013" id="admx-userexperiencevirtualization-microsoftoffice365access2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365access2016" id="admx-userexperiencevirtualization-microsoftoffice365access2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365common2013" id="admx-userexperiencevirtualization-microsoftoffice365common2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365common2016" id="admx-userexperiencevirtualization-microsoftoffice365common2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365excel2013" id="admx-userexperiencevirtualization-microsoftoffice365excel2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365excel2016" id="admx-userexperiencevirtualization-microsoftoffice365excel2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365infopath2013" id="admx-userexperiencevirtualization-microsoftoffice365infopath2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365lync2013" id="admx-userexperiencevirtualization-microsoftoffice365lync2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365lync2016" id="admx-userexperiencevirtualization-microsoftoffice365lync2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365onenote2013" id="admx-userexperiencevirtualization-microsoftoffice365onenote2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365onenote2016" id="admx-userexperiencevirtualization-microsoftoffice365onenote2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365outlook2013" id="admx-userexperiencevirtualization-microsoftoffice365outlook2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365outlook2016" id="admx-userexperiencevirtualization-microsoftoffice365outlook2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365powerpoint2013" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365powerpoint2016" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365project2013" id="admx-userexperiencevirtualization-microsoftoffice365project2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365project2016" id="admx-userexperiencevirtualization-microsoftoffice365project2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365publisher2013" id="admx-userexperiencevirtualization-microsoftoffice365publisher2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365publisher2016" id="admx-userexperiencevirtualization-microsoftoffice365publisher2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013" id="admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365visio2013" id="admx-userexperiencevirtualization-microsoftoffice365visio2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365visio2016" id="admx-userexperiencevirtualization-microsoftoffice365visio2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365word2013" id="admx-userexperiencevirtualization-microsoftoffice365word2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-microsoftoffice365word2016" id="admx-userexperiencevirtualization-microsoftoffice365word2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-music" id="admx-userexperiencevirtualization-music">ADMX_UserExperienceVirtualization/Music</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-news" id="admx-userexperiencevirtualization-news">ADMX_UserExperienceVirtualization/News</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-notepad" id="admx-userexperiencevirtualization-notepad">ADMX_UserExperienceVirtualization/Notepad</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-reader" id="admx-userexperiencevirtualization-reader">ADMX_UserExperienceVirtualization/Reader</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-repositorytimeout" id="admx-userexperiencevirtualization-repositorytimeout">ADMX_UserExperienceVirtualization/RepositoryTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-settingsstoragepath" id="admx-userexperiencevirtualization-settingsstoragepath">ADMX_UserExperienceVirtualization/SettingsStoragePath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-settingstemplatecatalogpath" id="admx-userexperiencevirtualization-settingstemplatecatalogpath">ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-sports" id="admx-userexperiencevirtualization-sports">ADMX_UserExperienceVirtualization/Sports</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-syncenabled" id="admx-userexperiencevirtualization-syncenabled">ADMX_UserExperienceVirtualization/SyncEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-syncovermeterednetwork" id="admx-userexperiencevirtualization-syncovermeterednetwork">ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming" id="admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming">ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-syncproviderpingenabled" id="admx-userexperiencevirtualization-syncproviderpingenabled">ADMX_UserExperienceVirtualization/SyncProviderPingEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-syncunlistedwindows8apps" id="admx-userexperiencevirtualization-syncunlistedwindows8apps">ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-travel" id="admx-userexperiencevirtualization-travel">ADMX_UserExperienceVirtualization/Travel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-trayiconenabled" id="admx-userexperiencevirtualization-trayiconenabled">ADMX_UserExperienceVirtualization/TrayIconEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-video" id="admx-userexperiencevirtualization-video">ADMX_UserExperienceVirtualization/Video</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-weather" id="admx-userexperiencevirtualization-weather">ADMX_UserExperienceVirtualization/Weather</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userexperiencevirtualization.md#admx-userexperiencevirtualization-wordpad" id="admx-userexperiencevirtualization-wordpad">ADMX_UserExperienceVirtualization/Wordpad</a>
+  </dd>
+</dl>
+
 ### ADMX_W32Time policies  
 
 <dl>
