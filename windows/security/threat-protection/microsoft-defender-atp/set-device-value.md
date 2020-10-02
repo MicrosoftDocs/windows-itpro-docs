@@ -27,7 +27,8 @@ ms.topic: article
 
 ## API description
 
-Adds or remove tag to a specific [Machine](machine.md).
+Set the device value of a specific [Machine](machine.md).<br>
+See [threat and vulnerability management scenarios](threat-and-vuln-mgt-scenarios.md) for more information.
 
 ## Limitations
 
@@ -54,7 +55,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.windows.com/api/machines/{machineId}/setDeviceValue
+POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDeviceValue
 ```
 
 ## Request headers
@@ -66,8 +67,10 @@ Content-Type | string | application/json. **Required**.
 
 ## Request body
 
-```http
-"DeviceValue": "{device value}"
+```json
+{
+  "DeviceValue": "{device value}"
+}
 ```
 
 ## Response
