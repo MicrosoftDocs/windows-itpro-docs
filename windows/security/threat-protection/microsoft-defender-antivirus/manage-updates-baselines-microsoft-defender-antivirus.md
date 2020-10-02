@@ -71,6 +71,30 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> September-2020 (Platform: 4.18.2009.X | Engine: 1.1.17500.4)</summary>
+
+&ensp;Security intelligence update version: **1.325.10.0**  
+&ensp;Released: **October 01, 2020**  
+&ensp;Platform: **4.18.2009.X**  
+&ensp;Engine: **1.1.17500.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+*Admin permissions are required to restore files in quarantine
+*XML formatted events are now supported
+*CSP support for ignoring exclusion merge
+*New management interfaces for:
++UDP Inspection
++Network Protection on Server 2019
++IP Address exclusions for Network Protection
+*Improved visibility into TPM measurements
+*Improved Office VBA module scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+<details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.9.0**  
@@ -116,7 +140,7 @@ No known issues
 &ensp;Released: **June 22, 2020**  
 &ensp;Platform: **4.18.2006.10**  
 &ensp;Engine: **1.1.17200.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
