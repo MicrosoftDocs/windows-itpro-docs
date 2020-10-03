@@ -737,7 +737,7 @@ The following list shows the supported values for Windows 8.1:
 
 In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft. The following list shows the supported values for Windows 10:  
 -   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender. 
-    **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+    **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), Hololens 2, and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 -   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
 -   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
 -   3 – (**Full**) Sends the same data as a value of 2, plus all data necessary to identify and fix problems with devices.
