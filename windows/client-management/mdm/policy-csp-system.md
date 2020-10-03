@@ -581,10 +581,10 @@ For example, an app's original Location setting is Off. The administrator then s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off location*
--   GP name: *DisableLocation_2*
--   GP path: *Windows Components/Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+-   GP English name: *Let Windows apps access location*
+-   GP name: *LetAppsAccessLocation*
+-   GP path: *Windows Components/App Privacy*
+-   GP ADMX file name: *Appprivacy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
