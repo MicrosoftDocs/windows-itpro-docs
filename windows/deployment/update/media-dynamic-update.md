@@ -93,7 +93,7 @@ Optional Components, along with the .NET feature, can be installed offline, howe
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
-These examples are for illustration only, and therefore lack error handling. The script assumes that the following packages is stored locally in this folder structure:
+These examples are for illustration only, and therefore lack error handling. The script assumes that the following packages are stored locally in this folder structure:
 
 |Folder  |Description  |
 |---------|---------|
