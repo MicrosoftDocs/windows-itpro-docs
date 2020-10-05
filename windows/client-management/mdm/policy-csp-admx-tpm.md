@@ -118,7 +118,7 @@ If you disable or do not configure this policy setting, only those TPM commands 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure the list of blocked TPM commands*
--   GP name: *Enabled*
+-   GP name: *BlockedCommandsList_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -183,7 +183,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting configu
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure the system to clear the TPM if it is not in a ready state.*
--   GP name: *ClearTPMIfNotReadyGP*
+-   GP name: *ClearTPMIfNotReady_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -254,7 +254,7 @@ If you disable or do not configure this policy setting, Windows will block the T
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Ignore the default list of blocked TPM commands*
--   GP name: *IgnoreDefaultList*
+-   GP name: *IgnoreDefaultList_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -325,7 +325,7 @@ If you disable or do not configure this policy setting, Windows will block the T
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Ignore the local list of blocked TPM commands*
--   GP name: *IgnoreLocalList*
+-   GP name: *IgnoreLocalList_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -403,7 +403,7 @@ Choose the operating system managed TPM authentication setting of "None" for com
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure the level of TPM owner authorization information available to the operating system*
--   GP name: *OSManagedAuthLevel*
+-   GP name: *OSManagedAuth_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -468,7 +468,7 @@ Available in Windows 10 Insider Preview Build 20185. This group policy enables D
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable Device Health Attestation Monitoring and Reporting*
--   GP name: *EnableDeviceHealthAttestationService*
+-   GP name: *OptIntoDSHA_Name*
 -   GP path: *System\Device Health Attestation Service*
 -   GP ADMX file name: *TPM.admx*
 
@@ -549,7 +549,7 @@ If this value is not configured, a default value of 480 minutes (8 hours) is use
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Standard User Lockout Duration*
--   GP name: *StandardUserAuthorizationFailureDuration*
+-   GP name: *StandardUserAuthorizationFailureDuration_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -632,7 +632,7 @@ A value of zero means the OS will not allow standard users to send commands to t
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Standard User Individual Lockout Threshold*
--   GP name: *StandardUserAuthorizationFailureIndividualThreshold*
+-   GP name: *StandardUserAuthorizationFailureIndividualThreshold_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -715,7 +715,7 @@ A value of zero means the OS will not allow standard users to send commands to t
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Standard User Total Lockout Threshold*
--   GP name: *StandardUserAuthorizationFailureTotalThreshold*
+-   GP name: *StandardUserAuthorizationFailureTotalThreshold_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 
@@ -780,7 +780,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting configu
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0.*
--   GP name: *UseLegacyDictionaryAttackParameters*
+-   GP name: *UseLegacyDAP_Name*
 -   GP path: *System\Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*
 

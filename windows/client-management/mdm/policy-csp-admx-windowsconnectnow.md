@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, users can access the wiz
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prohibit access of the Windows Connect Now wizards*
--   GP name: *DisableWcnUi*
+-   GP name: *WCN_DisableWcnUi_1*
 -   GP path: *Network\Windows Connect Now*
 -   GP ADMX file name: *WindowsConnectNow.admx*
 
@@ -166,7 +166,7 @@ If you disable or do not configure this policy setting, users can access the wiz
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prohibit access of the Windows Connect Now wizards*
--   GP name: *DisableWcnUi*
+-   GP name: *WCN_DisableWcnUi_2*
 -   GP path: *Network\Windows Connect Now*
 -   GP ADMX file name: *WindowsConnectNow.admx*
 
@@ -241,7 +241,7 @@ The default for this policy setting allows operations over all media.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configuration of wireless settings using Windows Connect Now*
--   GP name: *EnableRegistrars*
+-   GP name: *WCN_EnableRegistrar*
 -   GP path: *Network\Windows Connect Now*
 -   GP ADMX file name: *WindowsConnectNow.admx*
 

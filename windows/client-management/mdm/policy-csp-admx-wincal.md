@@ -96,7 +96,7 @@ The default is for Windows Calendar to be turned on.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off Windows Calendar*
--   GP name: *TurnOffWinCal*
+-   GP name: *TurnOffWinCal_1*
 -   GP path: *Windows Components\Windows Calendar*
 -   GP ADMX file name: *WinCal.admx*
 
@@ -169,7 +169,7 @@ The default is for Windows Calendar to be turned on.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off Windows Calendar*
--   GP name: *TurnOffWinCal*
+-   GP name: *TurnOffWinCal_2*
 -   GP path: *Windows Components\Windows Calendar*
 -   GP ADMX file name: *WinCal.admx*
 

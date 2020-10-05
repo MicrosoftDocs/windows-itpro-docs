@@ -127,7 +127,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set 6to4 Relay Name*
--   GP name: *6to4_RouterName*
+-   GP name: *6to4_Router_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -196,7 +196,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set 6to4 Relay Name Resolution Interval*
--   GP name: *6to4_RouterNameResolutionInterval*
+-   GP name: *6to4_Router_Name_Resolution_Interval*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -415,7 +415,7 @@ If you disable this policy setting, IP Stateless Autoconfiguration Limits will b
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set IP Stateless Autoconfiguration Limits State*
--   GP name: *EnableIPAutoConfigurationLimits*
+-   GP name: *IP_Stateless_Autoconfiguration_Limits_State*
 -   GP path: *Network\TCPIP Settings\Parameters*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -484,7 +484,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set ISATAP Router Name*
--   GP name: *ISATAP_RouterName*
+-   GP name: *ISATAP_Router_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -628,7 +628,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Teredo Client Port*
--   GP name: *Teredo_ClientPort*
+-   GP name: *Teredo_Client_Port*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -699,7 +699,7 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Teredo Default Qualified*
--   GP name: *Teredo_DefaultQualified*
+-   GP name: *Teredo_Default_Qualified*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -771,7 +771,7 @@ If you disable or do not configure this policy setting, the refresh rate is conf
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Teredo Refresh Rate*
--   GP name: *Teredo_RefreshRate*
+-   GP name: *Teredo_Refresh_Rate*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -840,7 +840,7 @@ If you disable or do not configure this policy setting, the local settings on th
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Teredo Server Name*
--   GP name: *Teredo_ServerName*
+-   GP name: *Teredo_Server_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
 -   GP ADMX file name: *tcpip.admx*
 
@@ -988,7 +988,7 @@ If you disable this policy setting, Window Scaling Heuristics will be disabled a
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set Window Scaling Heuristics State*
--   GP name: *EnableWsd*
+-   GP name: *Windows_Scaling_Heuristics_State*
 -   GP path: *Network\TCPIP Settings\Parameters*
 -   GP ADMX file name: *tcpip.admx*
 

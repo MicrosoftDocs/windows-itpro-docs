@@ -163,7 +163,7 @@ If you do not configure this policy setting, users can configure the HTTP proxy 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure HTTP Proxy*
--   GP name: *ProxyPolicy*
+-   GP name: *ConfigureHTTPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -243,7 +243,7 @@ If you do not configure this policy setting, users can configure the MMS proxy s
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure MMS Proxy*
--   GP name: *ProxyPolicy*
+-   GP name: *ConfigureMMSProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -321,7 +321,7 @@ If you do not configure this policy setting, users can configure the RTSP proxy 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure RTSP Proxy*
--   GP name: *ProxyPolicy*
+-   GP name: *ConfigureRTSPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -461,7 +461,7 @@ If you disable or do not configure this policy setting, the Network tab appears 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Hide Network Tab*
--   GP name: *HideNetworkTab*
+-   GP name: *DisableNetworkSettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -532,7 +532,7 @@ If you do not configure this policy setting, and the "Set and lock skin" policy 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do Not Show First Use Dialog Boxes*
--   GP name: *GroupPrivacyAcceptance*
+-   GP name: *DisableSetupFirstUseConfiguration*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -961,7 +961,7 @@ If you disable or do not configure this policy setting, users can change the buf
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure Network Buffering*
--   GP name: *NetworkBufferingPolicy*
+-   GP name: *NetworkBuffering*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -1032,7 +1032,7 @@ If you do not configure this policy setting, users can change the setting for th
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent Codec Download*
--   GP name: *PreventCodecDownload*
+-   GP name: *PolicyCodecUpdate*
 -   GP path: *Windows Components\Windows Media Player\Playback*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -1308,7 +1308,7 @@ If you disable or do not configure this policy setting, the user can choose whet
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent Quick Launch Toolbar Shortcut Creation*
--   GP name: *QuickLaunchShortcut*
+-   GP name: *PreventQuickLaunchShortcut*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -1445,7 +1445,7 @@ If you disable or do not configure this policy setting, users can choose whether
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent Desktop Shortcut Creation*
--   GP name: *DesktopShortcut*
+-   GP name: *PreventWMPDeskTopShortcut*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -1518,7 +1518,7 @@ If you disable or do not configure this policy setting, users can display the Pl
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Set and Lock Skin*
--   GP name: *SetAndLockSkin*
+-   GP name: *SkinLockDown*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
@@ -1591,7 +1591,7 @@ If you disable this policy setting, the Protocols for MMS URLs and Multicast str
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Streaming Media Protocols*
--   GP name: *WindowsMediaStreamingProtocols*
+-   GP name: *WindowsStreamingMediaProtocols*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 

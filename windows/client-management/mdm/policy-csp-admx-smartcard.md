@@ -422,7 +422,7 @@ If you disable this policy setting, certificate propagation will not occur and t
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on certificate propagation from smart card*
--   GP name: *CertPropEnabled*
+-   GP name: *CertPropEnabledString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
 
@@ -487,7 +487,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting allows 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure root certificate clean up*
--   GP name: *RootCertificateCleanupOption*
+-   GP name: *CertPropRootCleanupString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
 
@@ -559,7 +559,7 @@ If you disable this policy setting then root certificates will not be propagated
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on root certificate propagation from smart card*
--   GP name: *EnableRootCertificatePropagation*
+-   GP name: *CertPropRootEnabledString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
 
@@ -1065,7 +1065,7 @@ If you disable this policy setting, Smart Card Plug and Play will be disabled an
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn on Smart Card Plug and Play service*
--   GP name: *EnableScPnP*
+-   GP name: *SCPnPEnabled*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
 
@@ -1137,7 +1137,7 @@ If you disable this policy setting, a confirmation message will not be displayed
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Notify user of successful smart card driver installation*
--   GP name: *ScPnPNotification*
+-   GP name: *SCPnPNotification*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
 

@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, the system creates the n
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Turn off legacy remote shutdown interface*
--   GP name: *DisableShutdownNamedPipe*
+-   GP name: *DisableNamedPipeShutdownPolicyDescription*
 -   GP path: *Windows Components\Shutdown Options*
 -   GP ADMX file name: *WinInit.admx*
 
@@ -166,7 +166,7 @@ If you disable or do not configure this policy setting, the local setting is use
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Require use of fast startup*
--   GP name: *HiberbootEnabled*
+-   GP name: *Hiberboot*
 -   GP path: *System\Shutdown*
 -   GP ADMX file name: *WinInit.admx*
 
@@ -235,7 +235,7 @@ If you disable or do not configure this policy setting, the default timeout valu
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Timeout for hung logon sessions during shutdown*
--   GP name: *ShutdownSessionTimeout*
+-   GP name: *ShutdownTimeoutHungSessionsDescription*
 -   GP path: *Windows Components\Shutdown Options*
 -   GP ADMX file name: *WinInit.admx*
 
