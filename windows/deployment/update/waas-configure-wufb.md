@@ -48,7 +48,7 @@ With Windows Update for Business, you can set a device to be on either Windows I
 
 **Release branch policies**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\BranchReadinessLevel |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgrade |
@@ -73,7 +73,7 @@ For example, a device on the Semi-Annual Channel with `DeferFeatureUpdatesPeriod
 </br></br>
 **Policy settings for deferring feature updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgradePeriod |
@@ -97,7 +97,7 @@ In cases where the pause policy is first applied after the configured start date
 
 **Policy settings for pausing feature updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | **1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates</br>**1703 and later:** \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdatesStartTime |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
@@ -134,7 +134,7 @@ You can set your system to receive updates for other Microsoft products—known 
 
 **Policy settings for deferring quality updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod |
@@ -157,7 +157,7 @@ In cases where the pause policy is first applied after the configured start date
 
 **Policy settings for pausing quality updates**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** |**1607:** \Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdates</br>**1703:** \Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdatesStartTime  |
 | GPO for Windows 10, version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
@@ -207,7 +207,7 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 
 **Policy settings to exclude drivers**
 
-| Policy | Sets registry key under **HKLM\Software** |
+| Policy | Sets registry key under HKLM\Software |
 | --- | --- |
 | GPO for Windows 10, version 1607 and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
