@@ -42,7 +42,7 @@ You can configure this security setting by opening the appropriate policy under 
 | 4625          | Logon failure. A logon attempt was made with an unknown user name or a known user name with a bad password.                                                                                                     |
 | 4634          | The logoff process was completed for a user.                                                                                                                                                                    |                                                                                                                               
 | 4647          | A user initiated the logoff process.                                                                                                                                                                            |
-| 4648         | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
+| 4648          | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
 | 4779          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
  
 
