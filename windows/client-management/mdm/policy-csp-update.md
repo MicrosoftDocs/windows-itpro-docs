@@ -1925,7 +1925,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2918,7 +2918,7 @@ The following list shows the supported values:
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
-Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
+Added in Windows 10, version 1607. Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2934,7 +2934,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 (default) – Feature Updates are not paused.
--   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
+-   1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2985,7 +2985,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
@@ -3047,7 +3047,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
+Added in Windows 10, version 1607. Allows IT Admins to pause quality updates. For those running Windows 10, version 1703 or later, we recommend that you use *Update/PauseQualityUpdatesStartTime* instead.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3114,7 +3114,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 

@@ -16439,6 +16439,11 @@
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "https://docs.microsoft.com/mem/autopilot/windows-autopilot",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/hub/windows-10.yml",
+      "redirect_url": "https://docs.microsoft.com/windows/windows-10",
+      "redirect_document_id": false
     }
   ]
 }

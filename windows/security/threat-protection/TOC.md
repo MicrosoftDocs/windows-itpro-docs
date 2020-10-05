@@ -256,8 +256,16 @@
 #### [Resources](microsoft-defender-atp/mac-resources.md)
 
 
+
+
 ### [Microsoft Defender Advanced Threat Protection for iOS]()
 #### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
+
+#### [Deploy]()
+##### [App-based deployment](microsoft-defender-atp/ios-install.md)
+
+#### [Configure]()
+##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
@@ -536,6 +544,7 @@
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 ####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
+####### [Set device value](microsoft-defender-atp/set-device-value.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](microsoft-defender-atp/machineaction.md)
