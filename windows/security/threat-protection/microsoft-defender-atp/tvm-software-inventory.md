@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-The software inventory in threat and vulnerability management is a list of all the software in your organization. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
+The software inventory in threat and vulnerability management is a list of all the software in your organization with known vulnerabilities. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
