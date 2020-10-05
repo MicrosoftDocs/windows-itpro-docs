@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/10/2020
+ms.date: 09/28/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -40,7 +40,12 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
+Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+
+> [!NOTE]
+> Updates are released under the below KB numbers:  
+> Microsoft Defender Antivirus: KB2267602  
+> System Center Endpoint Protection: KB2461484
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
@@ -66,6 +71,30 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> September-2020 (Platform: 4.18.2009.X | Engine: 1.1.17500.4)</summary>
+
+&ensp;Security intelligence update version: **1.325.10.0**  
+&ensp;Released: **October 01, 2020**  
+&ensp;Platform: **4.18.2009.X**  
+&ensp;Engine: **1.1.17500.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+*Admin permissions are required to restore files in quarantine
+*XML formatted events are now supported
+*CSP support for ignoring exclusion merge
+*New management interfaces for:
++UDP Inspection
++Network Protection on Server 2019
++IP Address exclusions for Network Protection
+*Improved visibility into TPM measurements
+*Improved Office VBA module scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+<details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.9.0**  
@@ -79,7 +108,7 @@ All our updates contain:
 * Improved scan event telemetry
 * Improved behavior monitoring for memory scans
 * Improved macro streams scanning
-* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
+* Added "AMRunningMode" to Get-MpComputerStatus PowerShell CmdLet
 
 ### Known Issues
 No known issues  
@@ -111,7 +140,7 @@ No known issues
 &ensp;Released: **June 22, 2020**  
 &ensp;Platform: **4.18.2006.10**  
 &ensp;Engine: **1.1.17200.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)

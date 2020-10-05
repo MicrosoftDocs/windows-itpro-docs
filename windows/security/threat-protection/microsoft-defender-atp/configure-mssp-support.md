@@ -66,6 +66,8 @@ This action is taken by the MSSP. It allows MSSPs to fetch alerts in SIEM tools.
 - **Fetch alerts from MSSP customer's tenant using APIs** <br>
 This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
 
+## Multi-tenant access for MSSPs
+For information on how to implement a multi-tenant delegated access, see [Multi-tenant access for Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
 
 
 
