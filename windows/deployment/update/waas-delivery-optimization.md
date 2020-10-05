@@ -136,7 +136,7 @@ If you set up Delivery Optimization to create peer groups that include devices a
 Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
 
-**What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
+**What are the requirements if I use a proxy?**: For Delivery Optimization to successfully use the proxy, you should setup the proxy via Windows Proxy Settings or the Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/delivery-optimization-proxy). Most content downloaded via Delivery Optimization leverages Byte Range requests. Make sure your proxy allows Byte Range Requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
 
 **What hostnames should I allow through my firewall to support Delivery Optimization?**: 
 
