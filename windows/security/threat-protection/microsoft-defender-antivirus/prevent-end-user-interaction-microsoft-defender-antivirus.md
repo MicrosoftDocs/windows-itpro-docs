@@ -65,7 +65,7 @@ See [Prevent users from locally modifying policy settings](configure-local-polic
 You can prevent users from pausing scans, which can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
 
 > [!NOTE]
->This setting is not supported on Windows 10
+> This setting is not supported on Windows 10.
 
 ### Use Group Policy to prevent users from pausing a scan
 
