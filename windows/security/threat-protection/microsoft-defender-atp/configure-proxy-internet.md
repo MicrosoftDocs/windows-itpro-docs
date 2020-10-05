@@ -129,7 +129,7 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
-### Configuring downlevel Windows proxy and firewall - Log analytics agent requirements
+### Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
 The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
@@ -144,6 +144,9 @@ The information below list the proxy and firewall configuration information requ
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
 ## NEW SECTION - INSTRUCTIONS ON HOW TO USE TESTCLOUD.EXE - get instructions from Mark T.
+
+
+![Image of administrator in Windows PowerShell](images/admin-powershell.png)
 
 
 
