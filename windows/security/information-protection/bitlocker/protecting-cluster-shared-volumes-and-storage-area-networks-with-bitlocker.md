@@ -23,7 +23,7 @@ ms.custom: bitlocker
 **Applies to**
 -   Windows Server 2016
 
-This topic describes the procedure to protect CSVs and SANs by using BitLocker.
+This topic describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 
 BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes allows for an additional layer of protection for administrators wishing to protect sensitive, highly available data. By adding additional protectors to the clustered volume, administrators are adding an additional barrier of security to resources within an organization by allowing only certain user accounts access to unlock the BitLocker volume.
 
@@ -31,36 +31,34 @@ BitLocker protects both physical disk resources and cluster shared volumes versi
 
 ### Using BitLocker with clustered volumes
 
-Volumes within a cluster are managed with the help of BitLocker based on how the cluster service "views" the volume to be protected. The volume can be a physical disk resource such as a logical unit number (LUN) on a storage area network (SAN) or network attached storage (NAS).
+Volumes within a cluster are managed with the help of BitLocker based on how the cluster service "views" the volume to be protected. The volume can be a physical disk resource such as a logical unit number (LUN) on a SAN or network attached storage (NAS).
 
 >**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx).
  
-Alternatively, the volume can be a cluster-shared volume, a shared namespace, within the cluster **Question: Can it be rephrased as the volume can be one that is shared within the cluster?**. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume must turn on BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations will complete.
+Alternatively, the volume can be a cluster shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume must turn on BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations are completed.
 
 Windows PowerShell or the manage-bde command line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
 
 >**Note:**  Mount points can be used to support remote mount points on SMB-based network shares. This type of share is not supported for BitLocker encryption.
  
-For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes **Question: Can "on these types of volumes" be removed?**. This is blocked in order to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
+For thinly provisioned storage, such as a dynamic virtual hard disk (VHD), BitLocker runs in **Used Disk Space Only** encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on thinly provisioned storage volumes. This is blocked to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
 ### Active Directory-based protector
 
-You can also use an Active Directory Domain Services (AD DS) protector for protecting clustered volumes held within your AD DS infrastructure. The **ADAccountOrGroup** protector is a domain security identifier (SID)-based protector that can be bound to a user account, machine account or group. When an unlock request is made for a protected volume, the BitLocker service interrupts the request and uses the BitLocker protect/unprotect APIs to unlock or deny the request. BitLocker unlocks protected volumes without user intervention by attempting protectors in the following order:
+You can also use an Active Directory Domain Services (AD DS) protector for protecting clustered volumes held within your AD DS infrastructure. The **ADAccountOrGroup** protector is a domain security identifier (SID)-based protector that can be bound to a user account, machine account, or group. When an unlock request is made for a protected volume, the BitLocker service interrupts the request and uses the BitLocker protect/unprotect APIs to unlock or deny the request. BitLocker unlocks protected volumes without user intervention by attempting protectors in the following order:
 
 1.  Clear key
 2.  Driver-based auto-unlock key
-3.  ADAccountOrGroup protector
-
-    1.  Service context protector
-    2.  User protector
-
+3.  **ADAccountOrGroup** protector
+    a.  Service context protector
+    b.  User protector
 4.  Registry-based auto-unlock key
 
 >**Note:**  A Windows Server 2012 or later version's domain controller is required for this feature to work properly.
  
 ### Turning on BitLocker before adding disks to a cluster using Windows PowerShell
 
-BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require suspending the resource to complete the operation **Question: Can it be rephrased as "the disk resource need not be suspended for the volume encryption to be completed?**. To turn on BitLocker for a disk before adding it to a cluster, do the following:
+BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require to suspend the resource to complete the operation. To turn on BitLocker for a disk before adding it to a cluster, do the following:
 
 1.  Install the BitLocker Drive Encryption feature if it is not already installed.
 2.  Ensure the disk is an NTFS-formatted one and has a drive letter assigned to it.
@@ -69,21 +67,19 @@ BitLocker encryption is available for disks before or after addition to a cluste
     ```powershell
     Get-Cluster
     ```
-
 4.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
-
-    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker-enabled volume either to be shared in a cluster-shared Volume or to fail over properly in a traditional failover cluster.
+    >**Warning:**  You must configure a **ADAccountOrGroup** protector using the cluster CNO for a BitLocker-enabled volume either to be shared in a cluster-shared Volume or to fail over properly in a traditional failover cluster.
      
 5.  Repeat the preceding steps for each disk in the cluster.
 6.  Add the volume(s) to the cluster.
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
 
-When the cluster service owns a disk resource already, the disk resource needs to be set into maintenance mode before BitLocker can be enabled. Use the following steps for turning BitLocker on for a clustered disk:
+When the cluster service owns a disk resource already, the disk resource needs to be set into maintenance mode before BitLocker can be enabled. To turn the Bitlocker on for a clustered disk using Windows PowerShell, do the following:
 
 1.  Install the BitLocker drive encryption feature if it is not already installed.
 2.  Check the status of the cluster disk using Windows PowerShell.
@@ -91,19 +87,16 @@ When the cluster service owns a disk resource already, the disk resource needs t
     ```powershell
     Get-ClusterResource "Cluster Disk 1"
     ```
-
 3.  Put the physical disk resource into maintenance mode using Windows PowerShell.
 
     ```powershell
     Get-ClusterResource "Cluster Disk 1" | Suspend-ClusterResource
     ```
-
 4.  Identify the name of the cluster with Windows PowerShell.
 
     ```powershell
     Get-Cluster
     ```
-
 5.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ```powershell
@@ -116,7 +109,6 @@ When the cluster service owns a disk resource already, the disk resource needs t
     ```powershell
     Get-ClusterResource "Cluster Disk 1" | Resume-ClusterResource
     ```
-
 7.  Repeat the preceding steps for each disk in the cluster.
 
 ### Adding BitLocker-encrypted volumes to a cluster using manage-bde
@@ -268,7 +260,7 @@ In the case where a physical disk resource experiences a failover event during c
 ### Other considerations when using BitLocker on CSV2.0
 
 Some other considerations to take into account for BitLocker on clustered storage include the following:
--   BitLocker volumes have to be initialized and beginning encryption before they are available to add to a CSV2.0 volume **Question: Can it be rephrased as "BitLocker volumes have to be initialized and have encryptions commenced on it?**.
+-   BitLocker volumes have to be initialized and begin encryption before they are available to add to a CSV2.0 volume .
 -   If an administrator needs to decrypt a CSV volume, remove the volume from the cluster or put it into disk maintenance mode. You can add the CSV back to the cluster while waiting for decryption to complete.
 -   If an administrator needs to start encrypting a CSV volume, remove the volume from the cluster or put it into maintenance mode.
 -   If conversion is paused with encryption in progress and the CSV volume is offline from the cluster, the cluster thread (health check) automatically resumes conversion when the volume is online to the cluster.
