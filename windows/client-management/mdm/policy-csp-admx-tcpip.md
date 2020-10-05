@@ -254,7 +254,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
-Policy Default State: 6to4 is enabled if the host has only link-local IPv6 connectivity and a public IPv4 address. If no global IPv6 address is present and no global IPv4 address is present, the host will not have a 6to4 interface. If no global IPv6 address is present and a global IPv4 address is present, the host will have a 6to4 interface.
+Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
 
 Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
 
@@ -542,7 +542,7 @@ If you disable or do not configure this policy setting, the local host setting i
 
 If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
-Policy Default State: If the ISATAP router name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP router name is not resolved successfully, ISATAP connectivity is not available on the host using the corresponding IPv4 address.
+Policy Default State: No ISATAP interfaces are present on the host.
 
 Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
 
