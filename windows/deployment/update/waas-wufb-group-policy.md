@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
+ms.collection: M365initiative-coredeploy
 manager: laurawi
 ms.topic: article
 ---
