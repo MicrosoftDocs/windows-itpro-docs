@@ -59,7 +59,7 @@ Both Windows 10 feature and quality updates are automatically offered to devices
 
 To enable Microsoft Updates use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**.
 
-Drivers are automatically enabled because they are beneficial to device systems. We recommend that you allow the driver policy to allow drivers to updated on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
+Drivers are automatically enabled because they are beneficial to device systems. We recommend that you allow the driver policy to allow drivers to update on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
 
  We also recommend that you allow Microsoft product updates as discussed previously.
 
