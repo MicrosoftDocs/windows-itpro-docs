@@ -60,6 +60,11 @@ Full scale pilot | Phase 2: 100  systems <br> 	Phase 3: 150 systems <br> Phase 4
 Full deployment | Roll out service to the rest of environment in larger increments.
 
 
+### Troubleshoot deployment issues
+You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues. The following links provide detailed steps to troublshoot potential issues.
+
+- [Troubleshoot Microsoft Defender ATP onboarding issues](troubleshoot-onboarding.md)
+- [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
 
 
   
