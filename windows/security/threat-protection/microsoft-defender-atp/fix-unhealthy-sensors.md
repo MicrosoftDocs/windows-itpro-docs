@@ -20,6 +20,9 @@ ms.date: 10/23/2017
 
 # Fix unhealthy sensors in Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
