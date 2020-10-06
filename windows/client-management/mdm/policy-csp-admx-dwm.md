@@ -109,7 +109,7 @@ If you disable or do not configure this policy setting, the default internal col
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify a default color*
--   GP name: *DefaultColorizationColorState*
+-   GP name: *DwmDefaultColorizationColor_1*
 -   GP path: *Windows Components/Desktop Window Manager/Window Frame Coloring*
 -   GP ADMX file name: *DWM.admx*
 
@@ -182,7 +182,7 @@ If you disable or do not configure this policy setting, the default internal col
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify a default color*
--   GP name: *DefaultColorizationColorState*
+-   GP name: *DwmDefaultColorizationColor_2*
 -   GP path: *Windows Components/Desktop Window Manager/Window Frame Coloring*
 -   GP ADMX file name: *DWM.admx*
 
@@ -253,7 +253,7 @@ Changing this policy setting requires a logoff for it to be applied.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow window animations*
--   GP name: *DisallowAnimations*
+-   GP name: *DwmDisallowAnimations_1*
 -   GP path: *Windows Components/Desktop Window Manager*
 -   GP ADMX file name: *DWM.admx*
 
@@ -324,7 +324,7 @@ Changing this policy setting requires a logoff for it to be applied.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow window animations*
--   GP name: *DisallowAnimations*
+-   GP name: *DwmDisallowAnimations_2*
 -   GP path: *Windows Components/Desktop Window Manager*
 -   GP ADMX file name: *DWM.admx*
 
@@ -396,7 +396,7 @@ If you disable or do not configure this policy setting, you allow users to chang
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow color changes*
--   GP name: *DisallowColorizationColorChanges*
+-   GP name: *DwmDisallowColorizationColorChanges_1*
 -   GP path: *Windows Components/Desktop Window Manager/Window Frame Coloring*
 -   GP ADMX file name: *DWM.admx*
 
@@ -468,7 +468,7 @@ If you disable or do not configure this policy setting, you allow users to chang
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow color changes*
--   GP name: *DisallowColorizationColorChanges*
+-   GP name: *DwmDisallowColorizationColorChanges_2*
 -   GP path: *Windows Components/Desktop Window Manager/Window Frame Coloring*
 -   GP ADMX file name: *DWM.admx*
 
