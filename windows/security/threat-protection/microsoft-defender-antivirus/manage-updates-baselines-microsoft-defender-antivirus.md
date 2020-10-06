@@ -111,15 +111,15 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-*Admin permissions are required to restore files in quarantine
-*XML formatted events are now supported
-*CSP support for ignoring exclusion merge
-*New management interfaces for:
-+UDP Inspection
-+Network Protection on Server 2019
-+IP Address exclusions for Network Protection
-*Improved visibility into TPM measurements
-*Improved Office VBA module scanning
+- Admin permissions are required to restore files in quarantine
+- XML formatted events are now supported
+- CSP support for ignoring exclusion merge
+- New management interfaces for:
+   - UDP Inspection
+   - Network Protection on Server 2019
+   - IP Address exclusions for Network Protection
+- Improved visibility into TPM measurements
+- Improved Office VBA module scanning
 
 ### Known Issues
 No known issues  
