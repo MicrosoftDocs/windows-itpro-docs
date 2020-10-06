@@ -19,6 +19,9 @@ ms.topic: conceptual
 ---
 
 # Configure Microsoft Defender ATP for Android features
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)

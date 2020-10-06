@@ -19,6 +19,9 @@ ms.topic: article
 
 # Configure Micro Focus ArcSight to pull Microsoft Defender ATP detections
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

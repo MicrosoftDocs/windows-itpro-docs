@@ -13,10 +13,13 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/10/2020
+ms.date: 09/28/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -37,7 +40,12 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection. 
+Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+
+> [!NOTE]
+> Updates are released under the below KB numbers:  
+> Microsoft Defender Antivirus: KB2267602  
+> System Center Endpoint Protection: KB2461484
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
@@ -63,6 +71,30 @@ All our updates contain:
 * integration improvements (Cloud, MTP)  
 <br/>
 <details>
+<summary> September-2020 (Platform: 4.18.2009.X | Engine: 1.1.17500.4)</summary>
+
+&ensp;Security intelligence update version: **1.325.10.0**  
+&ensp;Released: **October 01, 2020**  
+&ensp;Platform: **4.18.2009.X**  
+&ensp;Engine: **1.1.17500.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+*Admin permissions are required to restore files in quarantine
+*XML formatted events are now supported
+*CSP support for ignoring exclusion merge
+*New management interfaces for:
++UDP Inspection
++Network Protection on Server 2019
++IP Address exclusions for Network Protection
+*Improved visibility into TPM measurements
+*Improved Office VBA module scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+<details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.9.0**  
@@ -76,7 +108,7 @@ All our updates contain:
 * Improved scan event telemetry
 * Improved behavior monitoring for memory scans
 * Improved macro streams scanning
-* Added "AMRunningMode" to Get-MpComputerStatus Powershell CmdLet
+* Added "AMRunningMode" to Get-MpComputerStatus PowerShell CmdLet
 
 ### Known Issues
 No known issues  
@@ -108,7 +140,7 @@ No known issues
 &ensp;Released: **June 22, 2020**  
 &ensp;Platform: **4.18.2006.10**  
 &ensp;Engine: **1.1.17200.2**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
 * Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
@@ -226,7 +258,7 @@ Support phase: **Technical upgrade Support (Only)**
 * Support platform updates when TMP is redirected to network path
 * Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
 * extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-* Fix 4.18.1911.10 hang
+* Fix 4.18.1911.3 hang
    
 ### Known Issues
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
@@ -234,14 +266,17 @@ Support phase: **Technical upgrade Support (Only)**
 > [!IMPORTANT]
 > This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
 <br/>
+> [!IMPORTANT]
+> This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
+<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.2 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
 Security intelligence update version: **1.307.13.0**  
 Released: **December 7, 2019**  
-Platform: **4.18.1911.2**  
+Platform: **4.18.1911.3**  
 Engine: **1.1.17000.7**  
 Support phase: **No support**  
      
@@ -253,7 +288,7 @@ Support phase: **No support**
 * add MRT logs to support files
    
 ### Known Issues
-No known issues
+When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 

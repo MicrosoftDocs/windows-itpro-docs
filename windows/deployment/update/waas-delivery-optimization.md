@@ -1,6 +1,5 @@
 ---
 title: Delivery Optimization for Windows 10 updates
-ms.reviewer: 
 manager: laurawi
 description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
@@ -10,7 +9,9 @@ audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.collection: M365-modern-desktop
+ms.collection:
+- M365-modern-desktop
+- M365initiative-coredeploy
 ms.topic: article
 ---
 
@@ -74,7 +75,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Computers running Windows 10 | 1511 |
 | Computers running Server Core installations of Windows Server | 1709 |
 | IoT devices | 1803 |
-| HoloLens devices | 1803 |
 
 **Types of download packages supported by Delivery Optimization**
 
@@ -112,7 +112,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
 
-**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Reference
 

@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Access the Microsoft Defender Advanced Threat Protection APIs 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 

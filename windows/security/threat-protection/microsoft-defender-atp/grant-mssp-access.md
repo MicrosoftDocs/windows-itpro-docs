@@ -1,4 +1,4 @@
-Ôªø---
+---
 title: Grant access to managed security service provider (MSSP)
 description: Take the necessary steps to configure the MSSP integration with Microsoft Defender ATP 
 keywords: managed security service provider, mssp, configure, integration
@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Grant managed security service provider (MSSP) access (preview)
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -53,7 +56,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     ![Image of MSSP access](images/mssp-access.png)
 
-    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via ‚ÄúAssigned user groups‚Äù.
+    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via ìAssigned user groupsî.
 
     Two possible roles:
 
@@ -117,13 +120,13 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Access requests are managed in the customer My Access, by members of the MSSP Analyst Approvers group.
 
-    To do so, access the customer‚Äôs myaccess using: 
+    To do so, access the customerís myaccess using: 
     `https://myaccess.microsoft.com/@<Customer Domain >`. 
 
     Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-    At this point, analyst access has been provisioned, and each analyst should be able to access the customer‚Äôs Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    At this point, analyst access has been provisioned, and each analyst should be able to access the customerís Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## Related topics
 - [Access the MSSP customer portal](access-mssp-portal.md)
