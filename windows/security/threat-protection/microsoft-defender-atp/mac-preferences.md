@@ -31,7 +31,7 @@ ms.topic: conceptual
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Users in your organization are not able to change preferences that are set through the configuration profile.
+In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
