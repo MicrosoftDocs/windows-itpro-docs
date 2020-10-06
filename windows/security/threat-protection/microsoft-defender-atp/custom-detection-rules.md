@@ -27,13 +27,12 @@ ms.date: 09/20/2020
 
 Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
-Read this article to learn how to create new custom detection rules. Or [see viewing and managing existing rules](custom-detections-manage.md). 
+Read this article to learn how to create new custom detection rules. Or [see viewing and managing existing rules](custom-detections-manage.md).
 
-## 1. Check required permissions
+> [!NOTE]
+> To create or manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
-To create or manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
-
-## 2. Prepare the query
+## 1. Prepare the query.
 
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
@@ -65,7 +64,7 @@ DeviceEvents
 > [!TIP]
 > For better query performance, set a time filter that matches your intended run frequency for the rule. Since the least frequent run is every 24 hours, filtering for the past day will cover all new data.
 
-## 3. Create new rule and provide alert details
+## 2. Create a new rule and provide alert details.
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
@@ -89,15 +88,18 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
+> [!TIP]
+> Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
+
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
-### Choose the impacted entities
+## 3. Choose the impacted entities.
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return both device and user IDs. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
 You can select only one column for each entity type. Columns that are not returned by your query can't be selected.
 
-## 4. Specify actions on files or devices
+## 4. Specify actions.
 
 Your custom detection rule can automatically take actions on files or devices that are returned by the query.
 
@@ -117,7 +119,7 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 - **Allow/Block**—automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
 - **Quarantine file**—deletes the file from its current location and places a copy in quarantine
 
-## 5. Set the rule scope
+## 5. Set the rule scope.
 
 Set the scope to specify which devices are covered by the rule:
 
@@ -126,13 +128,15 @@ Set the scope to specify which devices are covered by the rule:
 
 Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
-## 6. Review and turn on the rule
+## 6. Review and turn on the rule.
 
 After reviewing the rule, select **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
+You can [view and manage custom detection rules](custom-detections-manage.md), check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
+
 ## Related topics
 
-- [View and manage detection rules](custom-detections-manage.md)
+- [View and manage custom detection rules](custom-detections-manage.md)
 - [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
