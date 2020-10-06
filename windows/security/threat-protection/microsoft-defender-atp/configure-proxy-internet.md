@@ -143,12 +143,22 @@ The information below list the proxy and firewall configuration information requ
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
-## NEW SECTION - INSTRUCTIONS ON HOW TO USE TESTCLOUD.EXE - get instructions from Mark T.
+## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
 
+Please see the following guidance to eliminate the wildcard (*) requirement for your specific enviornment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows (Windows 7 SP1, Windows 8.1 and Windows Server 2008 R2 SP1, 2012 R2 and 2016):
+1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Microsoft Defender for Endpoint (please refer to [Onboard previous versions of Windows on Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2010326)).
+
+2.	Ensure the machine is successfully reporting into the Microsoft Defender Security Center portal.
+
+3.	Run the TestCloudConnection.exe tool from “C:\Program Files\Microsoft Monitoring Agent\Agent” to validate the connectivity and to see the required URLs for your specific workspace.
+
+4.	Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)).
 
 ![Image of administrator in Windows PowerShell](images/admin-powershell.png)
 
+The *.ods.opinsights.azure.com, *.oms.opinsights.azure.com and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft Defender Security Center portal
 
+The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the “Firewall Rule: *.blob.core.windows.net” section of the test results. 
 
 ## Verify client connectivity to Microsoft Defender ATP service URLs
 
