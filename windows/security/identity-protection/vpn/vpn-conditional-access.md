@@ -72,8 +72,8 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
->[!NOTE]
->Currently, it is required that certificates be issued from an on-premises CA, and that SSO be enabled in the user’s VPN profile. This will enable the user to obtain Kerberos tickets in order to access resources on-premises. Kerberos currently does not support the use of Azure AD certificates.
+> [!NOTE]
+> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources. 
 
 ## Client connection flow
 The VPN client side connection flow works as follows:
