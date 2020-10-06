@@ -29,7 +29,7 @@ This topic provides a high-level overview of BitLocker, including a list of syst
 
 BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
 
-BitLocker provides the maximum protection when used with a trusted platform module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
+BitLocker provides the maximum protection when used with a Trusted Platform Module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
 
 On computers that do not have a TPM version 1.2 or later versions, you can still use BitLocker to encrypt the Windows operating system drive. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, you can use an operating system volume password to protect the operating system volume on a computer without TPM. Both options do not provide the pre-startup system integrity verification offered by BitLocker with a TPM.
 
@@ -55,9 +55,9 @@ To find out what's new in BitLocker for Windows 10, such as support for the XTS
 
 BitLocker has the following hardware requirements:
 
-For BitLocker to use the system integrity check provided by a trusted platform module (TPM), the computer must have TPM 1.2 or later versions. If your computer does not have a TPM, enabling BitLocker makes it mandatory for you to save a startup key on a removable device, such as a USB flash drive.
+For BitLocker to use the system integrity check provided by a TPM, the computer must have TPM 1.2 or later versions. If your computer does not have a TPM, enabling BitLocker makes it mandatory for you to save a startup key on a removable device, such as a USB flash drive.
 
-A computer with a TPM must also have a trusted computing group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM does not require TCG-compliant firmware.
+A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM does not require TCG-compliant firmware.
 
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
 
