@@ -18,6 +18,9 @@ ms.topic: article
 
 # Machine resource type
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -38,6 +41,7 @@ Method|Return Type |Description
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
+[Set device value](set-device-value.md)| [machine](machine.md) collection | Set the value of a device, See [threat and vulnerability management scenarios](threat-and-vuln-mgt-scenarios.md).
 
 ## Properties
 
@@ -60,3 +64,5 @@ exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evalu
 aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is Aad Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender ATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
+deviceValue | Nullable Enum | The value of the device, See [threat and vulnerability management scenarios](threat-and-vuln-mgt-scenarios.md). Possible values are: 'Normal', 'Low' and 'High'.
+

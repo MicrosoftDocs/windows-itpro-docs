@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Security Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 Microsoft Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
 
 ## In this section

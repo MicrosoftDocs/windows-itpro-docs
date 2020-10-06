@@ -20,6 +20,9 @@ manager: dansimp
 
 # Better together: Microsoft Defender Antivirus and Office 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Microsoft Defender Antivirus

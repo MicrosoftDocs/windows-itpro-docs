@@ -1,10 +1,11 @@
 ---
-title: Phase 3 - Onboard to Microsoft Defender ATP
-description: Make the switch from Symantec to Microsoft Defender ATP
+title: Symantec to Microsoft Defender for Endpoint - Phase 3, Onboarding
+description: This is Phase 3, Onboarding, of migrating from Symantec to Microsoft Defender for Endpoint
 keywords: migration, windows defender advanced threat protection, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
+ms.technology: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,23 +18,29 @@ ms.collection:
 - M365-security-compliance 
 - m365solution-symantecmigrate
 ms.topic: article
+ms.date: 09/24/2020
+ms.custom: migrationguides
+ms.reviewer: depicker, yongrhee, chriggs
 ---
 
-# Migrate from Symantec - Phase 3: Onboard to Microsoft Defender ATP
+# Migrate from Symantec - Phase 3: Onboard to Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 |[![Phase 1: Prepare](images/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md) |[![Phase 2: Set up](images/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
-1. [Onboard devices to Microsoft Defender ATP](#onboard-devices-to-microsoft-defender-atp).
+1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
 3. [Uninstall Symantec](#uninstall-symantec).
-4. [Make sure Microsoft Defender ATP is in active mode](#make-sure-microsoft-defender-atp-is-in-active-mode).
+4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
-## Onboard devices to Microsoft Defender ATP
+## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
@@ -41,7 +48,7 @@ ms.topic: article
 
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
 
-4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods).
+4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
  
@@ -57,7 +64,7 @@ Deployment methods vary, depending on which operating system is selected. Refer 
 
 ## Run a detection test
 
-To verify that your onboarded devices are properly connected to Microsoft Defender ATP, you can run a detection test.
+To verify that your onboarded devices are properly connected to Microsoft Defender for Endpoint, you can run a detection test.
 
 
 |Operating system  |Guidance  |
@@ -68,7 +75,7 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 
 ## Uninstall Symantec
 
-Now that you have onboarded your organization's devices to Microsoft Defender ATP, your next step is to uninstall Symantec.
+Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall Symantec.
 
 1. [Disable Tamper Protection](https://knowledge.broadcom.com/external/article?legacyId=tech192023) in Symantec.
 
@@ -77,24 +84,25 @@ Now that you have onboarded your organization's devices to Microsoft Defender AT
    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Symantec\Symantec Endpoint Protection\SMC`.
    3. Look for an entry named **SmcInstData**. Right-click the item, and then choose **Delete**. 
 
-3. Remove Symantec from your devices. If you need help with this, see the following Broadcom resources: 
+3. Remove Symantec from your devices. If you need help with this, see Broadcom's documentation. Here are a few Broadcom resources: 
    - [Uninstall Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
    - Windows devices: [Manually uninstall Endpoint Protection 14 clients on Windows](https://knowledge.broadcom.com/external/article?articleId=170040)
    - macOS computers: [Remove Symantec software for Mac using RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
    - Linux devices: [Frequently Asked Questions for Endpoint Protection for Linux](https://knowledge.broadcom.com/external/article?articleId=162054)
 
-## Make sure Microsoft Defender ATP is in active mode
+## Make sure Microsoft Defender for Endpoint is in active mode
 
-Now that you have uninstalled Symantec, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
+Now that you have uninstalled Symantec, your next step is to make sure that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are enabled and in active mode.
 
-To do this, visit the Microsoft Defender ATP demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
+To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender ATP](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
-- [Manage Microsoft Defender Advanced Threat Protection, post migration](manage-atp-post-migration.md).
+
+- [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).

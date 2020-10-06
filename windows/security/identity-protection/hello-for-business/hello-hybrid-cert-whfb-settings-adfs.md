@@ -71,7 +71,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > 2. Right click "Scope Descriptions" and select "Add Scope Description".
 > 3. Under name type "ugs" and Click Apply > OK.
 > 4. Launch Powershell as Administrator.
-> 5. Execute the command "Get-AdfsApplicationPermission". Look for the ScopeNames :{openid, aza} that has the ClientRoleIdentifier Make a note of the ObjectIdentifier.
+> 5. Execute the command "Get-AdfsApplicationPermission". Look for the ScopeNames :{openid, aza} that has the ClientRoleIdentifier is equal to 38aa3b87-a06d-4817-b275-7a316988d93b and make a note of the ObjectIdentifier.
 > 6. Execute the command "Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'.
 > 7. Restart the ADFS service.
 > 8. On the client: Restart the client. User should be prompted to provision WHFB.

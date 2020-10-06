@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
@@ -45,7 +48,7 @@ Most modern MDM solutions include these features, however, they may call them di
 You can deploy Defender without the last requirement from the preceding list, however:
 
 - You will not be able to collect status in a centralized way
-- If you decide to uninstall Defender, you will need to logon to the client device locally as an administrator
+- If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator
 
 ## Deployment
 
@@ -53,27 +56,58 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 
 ### Package
 
-Configure deployment of a [required application package](mac-install-with-jamf.md#package), 
-with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
+Configure deployment of a [required application package](mac-install-with-jamf.md), 
+with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
 ### License settings
 
-Set up [a system configuration profile](mac-install-with-jamf.md#configuration-profile). 
+Set up [a system configuration profile](mac-install-with-jamf.md). 
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender ATP for Mac is not part of macOS.
 
-Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
+Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 
-Typically, your custom profile has an id, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
+Typically, your custom profile has an ID, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
 MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.
 
 ### Kernel extension policy
 
 Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.
 
+### System extension policy
+
+Set up a system extension policy. Use team identifier **UBF8T346G9** and approve the following bundle identifiers:
+
+- com.microsoft.wdav.epsext
+- com.microsoft.wdav.netext
+
+### Full disk access policy
+
+Grant Full Disk Access to the following components:
+
+- Microsoft Defender ATP
+    - Identifier: `com.microsoft.wdav`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /\* exists \*/ and certificate leaf[field.1.2.840.113635.100.6.1.13] /\* exists \*/ and certificate leaf[subject.OU] = UBF8T346G9
+
+- Microsoft Defender ATP Endpoint Security Extension
+    - Identifier: `com.microsoft.wdav.epsext`
+    - Identifier Type: Bundle ID
+    - Code Requirement: identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+
+### Network extension policy
+
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+
+- Filter type: Plugin
+- Plugin bundle identifier: `com.microsoft.wdav`
+- Filter data provider bundle identifier: `com.microsoft.wdav.netext`
+- Filter data provider designated requirement: identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+- Filter sockets: `true`
+
 ## Check installation status
 
-Run [mdatp](mac-install-with-jamf.md#check-onboarding-status) on a client device to check the onboarding status.
+Run [mdatp](mac-install-with-jamf.md) on a client device to check the onboarding status.
