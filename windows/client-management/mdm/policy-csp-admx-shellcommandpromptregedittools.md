@@ -174,7 +174,7 @@ To prevent users from using other administrative tools, use the "Run only specif
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prevent access to registry editing tools*
--   GP name: *DisableRegistryTools*
+-   GP name: *DisableRegedit*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
 
@@ -250,7 +250,7 @@ This policy setting only prevents users from running programs that are started b
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Don't run specified Windows applications*
--   GP name: *DisallowRun*
+-   GP name: *DisallowApps*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
 
@@ -325,7 +325,7 @@ This policy setting only prevents users from running programs that are started b
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run only specified Windows applications*
--   GP name: *RestrictRun*
+-   GP name: *RestrictApps*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
 
