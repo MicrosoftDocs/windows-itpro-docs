@@ -32,9 +32,6 @@ manager: dansimp
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
-    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
-  </dd>
-  <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
   </dd>
   <dd>
@@ -263,79 +260,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-headtrackingmode"></a>**MixedReality/HeadTrackingMode**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting configures behavior of HUP to determine which algorithm to use for head tracking. It requires a reboot for the policy to take effect.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-<!--/ADMXBacked-->
-
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 - Feature. Default feature based/SLAM based tracker (Default)
-- 1 - Constellation. LR constellation based tracker
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
 <a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
 
 <!--SupportedSKUs-->
@@ -483,14 +407,6 @@ The following list shows the supported values:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 - 9 - Available in Windows 10, version 2010.
 
 <!--/Policies-->

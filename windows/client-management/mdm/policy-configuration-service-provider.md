@@ -3365,9 +3365,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics" id="mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
-    <a href="./policy-csp-mixedreality.md#mixedreality-headtrackingmode" id="mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-mixedreality.md#mixedreality-microphonedisabled" id="mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
   </dd>
   <dd>
