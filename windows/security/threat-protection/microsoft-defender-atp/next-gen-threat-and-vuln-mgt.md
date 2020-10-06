@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Threat and vulnerability management
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -83,11 +86,7 @@ Watch this video for a comprehensive walk-through of threat and vulnerability ma
 Ensure that your devices:
 
 - Are onboarded to Microsoft Defender Advanced Threat Protection
-- Run with Windows 10 1709 (Fall Creators Update) or later
-
->[!NOTE]
->Threat and vulnerability management can also scan devices that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
-
+- Run [supported operating systems and platforms](tvm-supported-os.md)
 - Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
 
 > Release | Security update KB number and link

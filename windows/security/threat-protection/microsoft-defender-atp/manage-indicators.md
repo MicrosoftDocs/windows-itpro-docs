@@ -20,6 +20,9 @@ ms.topic: article
 
 # Create indicators
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -51,7 +54,7 @@ The current supported actions are:
 You can create an indicator for:
 - [Files](indicator-file.md)
 - [IP addresses, URLs/domains](indicator-ip-domain.md)
-- [Certificates (preview)](indicator-certificates.md)
+- [Certificates](indicator-certificates.md)
 
 
 >[!NOTE]

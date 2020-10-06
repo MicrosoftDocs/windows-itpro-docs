@@ -135,7 +135,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
 - [Exposed APIs](microsoft-defender-atp/apis-intro.md)
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
-- [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
+- [Reporting and trends](microsoft-defender-atp/threat-protection-reports.md)
 
 <a name="integration"></a>
 **[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>
