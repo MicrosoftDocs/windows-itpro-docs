@@ -185,7 +185,7 @@ For additional options, see the "Restrict these programs from being launched fro
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Restrict potentially unsafe HTML Help functions to specified folders*
--   GP name: *HelpQualifiedRootDir*
+-   GP name: *HelpQualifiedRootDir_Comp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
 
@@ -259,7 +259,7 @@ If you disable or do not configure this policy setting, users can run all applic
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Restrict these programs from being launched from Help*
--   GP name: *DisableInHelp*
+-   GP name: *RestrictRunFromHelp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
 
@@ -332,7 +332,7 @@ If you disable or do not configure this policy setting, users can run all applic
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Restrict these programs from being launched from Help*
--   GP name: *DisableInHelp*
+-   GP name: *RestrictRunFromHelp_Comp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
 
