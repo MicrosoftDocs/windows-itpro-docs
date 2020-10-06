@@ -20,6 +20,9 @@ ROBOTS: noindex,nofollow
 
 # Microsoft Defender ATP for Mac - System Extensions (Public Preview)
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
 This functionality is currently in public preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.

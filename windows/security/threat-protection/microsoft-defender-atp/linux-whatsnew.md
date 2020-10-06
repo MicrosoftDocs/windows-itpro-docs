@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Linux
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## 101.04.76
 
 - Bug fixes

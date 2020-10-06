@@ -18,6 +18,9 @@ manager: dansimp
 
 # Configure the cloud block timeout period
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Microsoft Defender Antivirus

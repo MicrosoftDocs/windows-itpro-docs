@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Update
 
-> [!NOTE]
-> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -193,6 +191,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
   </dd>
   <dd> 
     <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
@@ -1924,7 +1925,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2917,7 +2918,7 @@ The following list shows the supported values:
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
-Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
+Added in Windows 10, version 1607. Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2933,7 +2934,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 (default) – Feature Updates are not paused.
--   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
+-   1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2984,7 +2985,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
@@ -3046,7 +3047,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
+Added in Windows 10, version 1607. Allows IT Admins to pause quality updates. For those running Windows 10, version 1703 or later, we recommend that you use *Update/PauseQualityUpdatesStartTime* instead.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3113,7 +3114,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
@@ -4127,6 +4128,78 @@ The following list shows the supported values:
 
 - 0 - not configured
 - 1 - configured
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--Policy-->
+<a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
+
+This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Select the proxy behavior for Windows Update client for detecting updates with non-TLS (HTTP) based service*
+-   GP name: *Select the proxy behavior*
+-   GP element: *Select the proxy behavior*
+-   GP path: *Windows Components/Windows Update/Specify intranet Microsoft update service location*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Allow system proxy only for HTTP scans.
+- 1 - Allow user proxy to be used as a fallback if detection using system proxy fails. 
+> [!NOTE]
+> Configuring this policy setting to 1 exposes your environment to potential security risk and makes scans unsecure.
 
 <!--/SupportedValues-->
 <!--/Policy-->

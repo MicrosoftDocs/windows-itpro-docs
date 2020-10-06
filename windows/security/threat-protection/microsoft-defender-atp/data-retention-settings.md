@@ -18,6 +18,9 @@ ms.topic: conceptual
 ---
 # Verify data storage location and update data retention settings for Microsoft Defender ATP 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

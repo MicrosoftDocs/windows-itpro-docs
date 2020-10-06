@@ -18,6 +18,9 @@ manager: dansimp
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -60,6 +63,9 @@ See [Prevent users from locally modifying policy settings](configure-local-polic
 ## Prevent users from pausing a scan
 
 You can prevent users from pausing scans, which can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
+
+> [!NOTE]
+> This setting is not supported on Windows 10.
 
 ### Use Group Policy to prevent users from pausing a scan
 
