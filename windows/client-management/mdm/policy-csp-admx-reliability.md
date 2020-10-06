@@ -105,7 +105,7 @@ If you do not configure this policy setting, the Persistent System Timestamp is 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable Persistent Time Stamp*
--   GP name: *TimeStampEnabled*
+-   GP name: *EE_EnablePersistentTimeStamp*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
 
@@ -180,7 +180,7 @@ Also see the "Configure Error Reporting" policy setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Report unplanned shutdown events*
--   GP name: *IncludeShutdownErrs*
+-   GP name: *PCH_ReportShutdownEvents*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *Reliability.admx*
 
@@ -258,7 +258,7 @@ If you do not configure this policy setting, the default behavior for the System
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Activate Shutdown Event Tracker System State Data feature*
--   GP name: *SnapShot*
+-   GP name: *ShutdownEventTrackerStateFile*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
 
@@ -338,7 +338,7 @@ If you do not configure this policy setting, the default behavior for the Shutdo
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display Shutdown Event Tracker*
--   GP name: *ShutdownReasonOn*
+-   GP name: *ShutdownReason*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
 
