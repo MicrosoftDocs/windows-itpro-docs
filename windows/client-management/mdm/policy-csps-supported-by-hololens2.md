@@ -95,7 +95,7 @@ ms.date: 05/11/2020
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)
-- [Update/ActiveHoursEnd](#update-activehoursend)
+- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
 - [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
 - [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
