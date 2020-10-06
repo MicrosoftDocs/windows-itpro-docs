@@ -16,6 +16,9 @@ ms.custom: nextgen
 
 # Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Microsoft Defender Antivirus

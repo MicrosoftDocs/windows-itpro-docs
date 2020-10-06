@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Advanced Threat Protection for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Mac.
 
 > [!CAUTION]

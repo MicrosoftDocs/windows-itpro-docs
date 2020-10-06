@@ -18,6 +18,9 @@ ms.custom: nextgen
 
 # Next-generation protection in Windows 10, Windows Server 2016, and Windows Server 2019
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

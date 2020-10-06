@@ -76,10 +76,12 @@ Certificate authorities write CRL distribution points in certificates as they ar
 Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
-- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**. 
+- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
 - Use the **Kerberos Authentication certificate template** instead of any other older template.
 - The domain controller's certificate has the **KDC Authentication** enhanced key usage.
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
+- The domain controller's certificate's signature hash algorithm is **sha256**.
+- The domain controller's certificate's public key is **RSA (2048 Bits)**.
 
 
 > [!Tip]

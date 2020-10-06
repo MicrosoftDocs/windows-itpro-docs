@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Offboard devices from the Microsoft Defender ATP service
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - macOS
 - Linux

@@ -20,6 +20,9 @@ ms.topic: conceptual
 
 # Manage endpoint detection and response capabilities
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 Manage the alerts queue, investigate devices in the devices list, take response actions, and hunt for possible threats in your organization using advanced hunting.
 
 

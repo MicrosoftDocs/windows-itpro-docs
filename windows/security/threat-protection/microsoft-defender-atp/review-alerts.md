@@ -18,6 +18,9 @@ ms.date: 5/1/2020
 
 # Review alerts in Microsoft Defender Advanced Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
