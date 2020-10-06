@@ -75,15 +75,16 @@ All our updates contain:
 - integration improvements (Cloud, Microsoft 365 Defender)  
 <br/>
 <details>
-<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
+<summary> September-2020 (Platform: 4.18.2009.x | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.323.2254.0**  
 &ensp;Released: **October 6, 2020**  
-&ensp;Platform: **4.18.2009.7**  
+&ensp;Platform: **4.18.2009.x**  
 &ensp;Engine: **1.1.17500.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
+
 - Admin permissions are required to restore files in quarantine
 - XML formatted events are now supported
 - CSP support for ignoring exclusion merge
