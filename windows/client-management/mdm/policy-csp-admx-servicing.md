@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, or if the required files
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify settings for optional component installation and component repair*
--   GP name: *RepairContentServerSource*
+-   GP name: *Servicing*
 -   GP path: *System*
 -   GP ADMX file name: *Servicing.admx*
 
