@@ -19,6 +19,9 @@ ms.date: 08/31/2020
 
 # Protect security settings with tamper protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows 10
