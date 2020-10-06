@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
----
+---g
 
 # BitLocker basic deployment
 
@@ -28,7 +28,7 @@ This topic explains how to use BitLocker features to protect your data through d
 
 ## Using BitLocker to encrypt volumes
 
-BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This partition is automatically created during a new installation of both client and server operating systems.
+BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data drives. To support fully encrypted operating system drives, BitLocker uses an unencrypted system partition for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
 
 In the event that the drive was prepared as a single contiguous space, BitLocker requires a new partition to hold the boot files. BdeHdCfg.exe can create these volumes.
 
