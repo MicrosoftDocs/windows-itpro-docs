@@ -124,7 +124,7 @@ If you disable or do not configure this policy setting, user account cross-fores
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Allow logon scripts when NetBIOS or WINS is disabled*
--   GP name: *Allow-LogonScript-NetbiosDisabled*
+-   GP name: *Allow_Logon_Script_NetbiosDisabled*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -199,7 +199,7 @@ If you disable or do not configure this setting the system lets the combined set
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Specify maximum wait time for Group Policy scripts*
--   GP name: *MaxGPOScriptWait*
+-   GP name: *MaxGPOScriptWaitPolicy*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -291,7 +291,7 @@ Within GPO C: C.cmd, C.ps1
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run Windows PowerShell scripts first at computer startup, shutdown*
--   GP name: *RunComputerPSScriptsFirst*
+-   GP name: *Run_Computer_PS_Scripts_First*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -364,7 +364,7 @@ Also, see the "Run Logon Scripts Visible" setting.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run legacy logon scripts hidden*
--   GP name: *HideLegacyLogonScripts*
+-   GP name: *Run_Legacy_Logon_Script_Hidden*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -435,7 +435,7 @@ If you disable or do not configure this policy setting, the instructions are sup
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display instructions in logoff scripts as they run*
--   GP name: *HideLogoffScripts*
+-   GP name: *Run_Logoff_Script_Visible*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -506,7 +506,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run logon scripts synchronously*
--   GP name: *RunLogonScriptSync*
+-   GP name: *Run_Logon_Script_Sync_1*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -577,7 +577,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run logon scripts synchronously*
--   GP name: *RunLogonScriptSync*
+-   GP name: *Run_Logon_Script_Sync_2*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -648,7 +648,7 @@ If you disable or do not configure this policy setting, the instructions are sup
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display instructions in logon scripts as they run*
--   GP name: *HideLogonScripts*
+-   GP name: *Run_Logon_Script_Visible*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -719,7 +719,7 @@ If you disable or do not configure this policy setting, the instructions are sup
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display instructions in shutdown scripts as they run*
--   GP name: *HideShutdownScripts*
+-   GP name: *Run_Shutdown_Script_Visible*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -793,7 +793,7 @@ If you disable or do not configure this policy setting, a startup cannot run unt
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run startup scripts asynchronously*
--   GP name: *RunStartupScriptSync*
+-   GP name: *Run_Startup_Script_Sync*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -867,7 +867,7 @@ If you disable or do not configure this policy setting, the instructions are sup
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Display instructions in startup scripts as they run*
--   GP name: *HideStartupScripts*
+-   GP name: *Run_Startup_Script_Visible*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
@@ -962,7 +962,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Run Windows PowerShell scripts first at user logon, logoff*
--   GP name: *RunUserPSScriptsFirst*
+-   GP name: *Run_User_PS_Scripts_First*
 -   GP path: *System\Scripts*
 -   GP ADMX file name: *Scripts.admx*
 
