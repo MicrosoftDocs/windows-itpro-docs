@@ -215,7 +215,7 @@ To use sigcheck:
             MachineType:    64-bit
 
     ```
-In addition to unsigned drivers, drivers might be signed with an invalid certificate, requiring the driver to be updated or removed so that Windows upgrade can continue.
+In addition to unsigned drivers, drivers might be signed with an invalid certificate, requiring the driver to be updated or removed so that Windows upgrade can continue. Sigcheck will report whether or not the certificate chain is valid.
 
 ### Update Windows
 
