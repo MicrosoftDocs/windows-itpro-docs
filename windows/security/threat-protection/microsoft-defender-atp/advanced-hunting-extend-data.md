@@ -20,7 +20,7 @@ ms.date: 09/20/2020
 
 # Extend advanced hunting coverage with the right settings
 
-## Create custom detection rules
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

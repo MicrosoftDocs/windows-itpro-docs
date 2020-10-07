@@ -20,11 +20,13 @@ ms.date: 09/20/2020
 
 # AssignedIPAddresses()
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device. If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.
+Use the `AssignedIPAddresses()` function in your advanced hunting queries to quickly obtain the latest IP addresses that have been assigned to a device. If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.
 
 This function returns a table with the following columns:
 

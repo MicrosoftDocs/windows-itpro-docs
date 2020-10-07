@@ -134,7 +134,7 @@ Right-click a value in the result set to quickly enhance your query. You can use
 ## Filter the query results
 The filters displayed in the right pane provide a summary of the result set. Every column has its own section in the pane, each of which lists the values found in that column, and the number of instances.
 
-Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude. Then selecting **Run query**.
+Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude. Then select **Run query**.
 
 ![Image of advanced hunting filter](images/advanced-hunting-filter.png)
 
