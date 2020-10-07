@@ -54,7 +54,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016 to Microsoft Defender ATP by using any of the following options:
 
-- **Option 1**: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
+- **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
 - **Option 2**: [Onboard through Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
 - **Option 3**: [Onboard through Microsoft Endpoint Configuration Manager version 2002 and later (only for Windows Server 2012 R2 and Windows Server 2016)](#option-3-onboard-windows-servers-through-microsoft-endpoint-configuration-manager-version-2002-and-later)
 
@@ -72,7 +72,7 @@ You'll need to install and configure MMA for Windows servers to report sensor da
 If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support.
 
 In general, you'll need to take the following steps:
-1. Fulfill the onboarding requirements outlined in **Before you begin section**.
+1. Fulfill the onboarding requirements outlined in **Before you begin** section.
 2. Turn on server monitoring from Microsoft Defender Security center.
 3. Install and configure MMA for the server to report sensor data to Microsoft Defender ATP.
 4. Configure and update System Center Endpoint Protection clients.
