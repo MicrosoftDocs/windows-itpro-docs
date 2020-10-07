@@ -187,7 +187,7 @@ To use sigcheck:
 3. Right-click **Command Prompt** and then left-click **Run as administrator**.
 4. If you are prompted by UAC, click **Yes**.
 5. In the command window, use the **cd** command to switch to the directory where you extracted sigcheck, for example **cd c:\sigcheck**.
-6. Next, generate a list of drivers using driverquery.exe. To do this, type **driverquery /v > c:\sigcheck\drivers.txt** and press ENTER. See the following example:
+6. A list of drivers with their path is displayed in the File Signature Verification tool (step #7 in the previous procedure). Optionally, you can generate a list of drivers using driverquery.exe. To use driverquery, type **driverquery /v > c:\sigcheck\drivers.txt** and press ENTER. See the following example:
 
     ```cmd
     C:\Sigcheck>Driverquery /v > C:\sigcheck\drivers.txt
