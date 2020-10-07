@@ -3,7 +3,7 @@ title: Quick fixes - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
+description: Learn how to quickly resolve many problems, which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 <li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
 <li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
 <li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
-<li>Check for unsigned drivers and update or uninstall them. <a href="#repair-system-files" data-raw-source="[More information](#remove-unsigned-drivers)">More information</a>.</li>
+<li>Check for unsigned drivers and update or remove them. <a href="#repair-system-files" data-raw-source="[More information](#remove-unsigned-drivers)">More information</a>.</li>
 <li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
   <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
@@ -166,6 +166,9 @@ Drivers that are not properly signed can block the upgrade process. To check you
 4. If you are prompted by UAC, click **Yes**.
 5. Type **sigverif** and press ENTER. 
 6. The File Signature Verification tool will open. Click **Start**.
+
+    ![File Signature Verification](../images/sigverif.png)
+
 7. After the scanning process is complete, click **Advanced**, and then click **View Log**.
 8. Locate drivers in the log file that are unsigned and remove or update them using Device Manager.  For more information, see [Using Device Manager to uninstall devices and driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-manager-to-uninstall-devices-and-driver-packages).
 
@@ -212,7 +215,7 @@ To use sigcheck:
             MachineType:    64-bit
 
     ```
-In addition to unsigned drivers, drivers might be signed with an invalid certificate, requring the driver to be updated or removed so that Windows upgrade can continue.
+In addition to unsigned drivers, drivers might be signed with an invalid certificate, requiring the driver to be updated or removed so that Windows upgrade can continue.
 
 ### Update Windows
 
