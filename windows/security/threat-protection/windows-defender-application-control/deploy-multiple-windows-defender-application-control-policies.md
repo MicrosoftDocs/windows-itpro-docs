@@ -85,17 +85,18 @@ When merging, the policy type and ID of the leftmost/first policy specified is u
 
 ## Deploying multiple policies
 
-In order to deploy multiple WDAC policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by MEM Intune's Custom OMA-URI feature. You cannot use the "Deploy Windows Defender Application Control" group policy setting to deploy multiple CI policies.
+In order to deploy multiple WDAC policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by MEM Intune's Custom OMA-URI feature.
+
+Note that WMI and GP do not currently support multiple policies. Instead customers should use the [ApplicationControl CSP via the MDM Bridge WMI Provider.](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance)
 
 ### Deploying multiple policies locally
 
 In order to deploy policies locally using the new multiple policy format you will need to:
 
-1. Ensure policies are copied to the right location
-   - Policies must be copied to this directory: C:\Windows\System32\CodeIntegrity\CiPolicies\Active
-2. Binary policy files must have the correct name which takes the format {PolicyGUID}.cip
-   - Ensure that the name of the binary policy file is exactly the same as the PolicyID in the policy
+1. Ensure binary policy files have the correct naming format of {PolicyGUID}.cip
+   - Ensure that the name of the binary policy file is exactly the same as the PolicyID GUID in the policy
    - For example, if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>` then the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
+2. Copy binary policies to C:\Windows\System32\CodeIntegrity\CiPolicies\Active
 3. Reboot the system
 
 ### Deploying multiple policies via ApplicationControl CSP
