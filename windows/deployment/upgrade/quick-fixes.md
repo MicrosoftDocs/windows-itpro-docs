@@ -38,7 +38,7 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 <li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
 <li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
 <li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
-<li>Check for unsigned drivers and update or remove them. <a href="#repair-system-files" data-raw-source="[More information](#remove-unsigned-drivers)">More information</a>.</li>
+<li>Check for unsigned drivers and update or remove them. <a href="#remove-unsigned-drivers" data-raw-source="[More information](#remove-unsigned-drivers)">More information</a>.</li>
 <li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
   <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
@@ -193,7 +193,7 @@ To use sigcheck:
     C:\Sigcheck>Driverquery /v > C:\sigcheck\drivers.txt
 
     ```
-7. Open the drivers.txt file and locate the problem driver that was reported by sigverif in the procedure above. Copy the path to the driver.
+7. Open the drivers.txt file and locate the problem driver that was reported by sigverif in the [procedure above](#remove-unsigned-drivers). Copy the path to the driver.
 8. To check the driver, type **sigcheck64 -u -e \<driver path\>** and press ENTER.  See the following example:
 
     ```
