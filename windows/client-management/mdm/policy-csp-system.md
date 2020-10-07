@@ -244,7 +244,9 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
 
