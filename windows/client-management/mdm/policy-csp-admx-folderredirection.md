@@ -329,7 +329,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Use localized subfolder names when redirecting Start Menu and My Documents*
--   GP name: *LocalizeXPRelativePaths*
+-   GP name: *LocalizeXPRelativePaths_1*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
 
@@ -401,7 +401,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Use localized subfolder names when redirecting Start Menu and My Documents*
--   GP name: *LocalizeXPRelativePaths*
+-   GP name: *LocalizeXPRelativePaths_2*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
 
@@ -474,7 +474,7 @@ If you disable or do not configure this policy setting and the user has redirect
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Redirect folders on primary computers only*
--   GP name: *PrimaryComputerEnabledFR*
+-   GP name: *PrimaryComputer_FR_1*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
 
@@ -547,7 +547,7 @@ If you disable or do not configure this policy setting and the user has redirect
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Redirect folders on primary computers only*
--   GP name: *PrimaryComputerEnabledFR*
+-   GP name: *PrimaryComputer_FR_2*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
 
