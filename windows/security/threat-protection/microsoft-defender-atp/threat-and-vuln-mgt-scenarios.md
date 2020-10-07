@@ -84,6 +84,12 @@ Examples of devices that should be marked as high value:
 3. A flyout will appear with the current device value and what it means. Review the value of the device and choose the one that best fits your device.
 ![Example of the device value flyout.](images/tvm-device-value-flyout.png)
 
+## Vulnerable devices report
+
+The vulnerable devices report shows graphs and bar charts of 
+
+Access the report by going to **Reports > Vulnerable devices**
+
 
 ## Related topics
 
