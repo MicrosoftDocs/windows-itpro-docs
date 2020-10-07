@@ -38,6 +38,7 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 <li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
 <li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
 <li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
+<li>Check for unsigned drivers and update or uninstall them. <a href="#repair-system-files" data-raw-source="[More information](#remove-unsigned-drivers)">More information</a>.</li>
 <li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
   <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
@@ -152,8 +153,66 @@ To check and repair system files:
 
     ```
     > [!NOTE] 
-    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
+    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image) and [Use the System File Checker tool](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
+
+### Remove unsigned drivers
+
+Drivers that are not properly signed can block the upgrade process. To check your system for unsigned drivers:
+
+1. Click **Start**.
+2. Type **command**.
+3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+4. If you are prompted by UAC, click **Yes**.
+5. Type **sigverif** and press ENTER. 
+6. The File Signature Verification tool will open. Click **Start**.
+7. After the scanning process is complete, click **Advanced**, and then click **View Log**.
+8. Locate drivers in the log file that are unsigned and remove or update them using Device Manager.  For more information, see [Using Device Manager to uninstall devices and driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-manager-to-uninstall-devices-and-driver-packages).
+
+>[!NOTE]
+>If a file is corrupted, it might display as unsigned. Be sure to [repair the system drive](#repair-the-system-drive) and [repair system files](#repair-system-files) before attempting to replace unsigned drivers.
+
+#### Optional: Use sigcheck
+
+[Sigcheck](https://docs.microsoft.com/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. 
+
+To use sigcheck:
+
+1. Download [sigcheck.zip](https://download.sysinternals.com/files/Sigcheck.zip) and extract the tool to a directory on your computer, for example: **C:\sigcheck**.
+2. Click **Start**.
+2. Type **command**.
+3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+4. If you are prompted by UAC, click **Yes**.
+5. In the command window, use the **cd** command to switch to the directory where you extracted sigcheck, for example **cd c:\sigcheck**.
+6. Next, generate a list of drivers using driverquery.exe. To do this, type **driverquery /v > c:\sigcheck\drivers.txt** and press ENTER. See the following example:
+
+    ```cmd
+    C:\Sigcheck>Driverquery /v > C:\sigcheck\drivers.txt
+
+    ```
+7. Open the drivers.txt file and locate the problem driver that was reported by sigverif in the procedure above. Copy the path to the driver.
+8. To check the driver, type **sigcheck64 -u -e \<driver path\>** and press ENTER.  See the following example:
+
+    ```
+    C:\Sigcheck>sigcheck64.exe -i c:\windows\system32\DolbyMATEnc.dll
+    
+    Sigcheck v2.80 - File version and signature viewer
+    Copyright (C) 2004-2020 Mark Russinovich
+    Sysinternals - www.sysinternals.com
+    
+    c:\windows\system32\DolbyMATEnc.dll:
+            Verified:       Unsigned
+            Link date:      6:43 PM 9/20/2028
+            Publisher:      n/a
+            Company:        Microsoft Corporation
+            Description:    Dolby MAT Encoder DLL
+            Product:        Microsoft« Windows« Operating System
+            Prod version:   10.0.18362.1
+            File version:   10.0.18362.1 (WinBuild.160101.0800)
+            MachineType:    64-bit
+
+    ```
+In addition to unsigned drivers, drivers might be signed with an invalid certificate, requring the driver to be updated or removed so that Windows upgrade can continue.
 
 ### Update Windows
 
