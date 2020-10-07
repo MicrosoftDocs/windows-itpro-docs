@@ -21,7 +21,7 @@ ms.topic: article
 
 # Quickly hunt for entity or event information with go hunt
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -29,7 +29,7 @@ With the *go hunt* action, you can quickly investigate events and various entity
 
 The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. When you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a device is selected, showing details about the device as well the option to hunt for more information about the device.
+- In the [incident page](investigate-incidents.md), you can review details about users, devices, and many other entities associated with an incident. When you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a device is selected, showing details about the device as well the option to hunt for more information about the device.
 
     ![Image showing device details with the go hunt option](./images/go-hunt-device.png)
 
