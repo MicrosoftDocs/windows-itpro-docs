@@ -212,14 +212,13 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Microsoft is a processor or controller for Windows diagnostic data collected from devices. 
+This policy setting opts the device into the Windows enterprise data pipeline. 
 
-If you enable this policy and enroll your devices in your Azure AD tenant, your organization becomes the controller and Microsoft is the processor of this data.
+If you enable this setting, data collected from the device will be opted into the Windows enterprise data pipeline.
 
-If you disable or don't configure this policy setting, Microsoft will be the controller for Windows diagnostic data collected from the device.
+If you disable or don't configure this setting, all data from the device will be collected and processed in accordance with our policies for the Windows standard data pipeline.
 
->[!Note]
-> This policy setting only controls if Microsoft is a processor for Windows diagnostic data from this device. Use the [System/AllowTelemetry](#system-allowtelemetry) policy setting to limit the diagnostic data that can be collected from the device.
+Configuring this setting does not change the telemetry collection level or the ability of the user to change the level. This setting only applies to the Windows operating system and apps included with Windows, not third-party apps or services running on Windows 10.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -234,8 +233,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Do not use the Windows Commercial Data Pipeline
--   1 - Use the Windows Commercial Data Pipeline
+-   0 (default) - Disabled.
+-   1 - Enabled.
 
 <!--/SupportedValues-->
 <!--Example-->
