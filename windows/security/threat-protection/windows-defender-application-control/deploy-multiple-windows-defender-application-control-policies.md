@@ -87,8 +87,6 @@ When merging, the policy type and ID of the leftmost/first policy specified is u
 
 In order to deploy multiple WDAC policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by MEM Intune's Custom OMA-URI feature.
 
-Note that WMI and GP do not currently support multiple policies. Instead customers should use the [ApplicationControl CSP via the MDM Bridge WMI Provider.](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance)
-
 ### Deploying multiple policies locally
 
 In order to deploy policies locally using the new multiple policy format you will need to:
@@ -102,3 +100,6 @@ In order to deploy policies locally using the new multiple policy format you wil
 ### Deploying multiple policies via ApplicationControl CSP
 
 Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment. Refer to [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
+
+> [!NOTE]
+> WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format WDAC policies.
