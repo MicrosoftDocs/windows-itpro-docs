@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/18/2020
+ms.date: 10/08/2020
 ---
 
 # ADMX-backed policies in Policy CSP
