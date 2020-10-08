@@ -109,7 +109,7 @@ Perform the following steps to fulfill the onboarding requirements:
 If your servers need to use a proxy to communicate with Microsoft Defender ATP, use one of the following methods to configure the MMA to use the proxy server:
 
 
-- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard).
+- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
 
 - [Configure the Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
