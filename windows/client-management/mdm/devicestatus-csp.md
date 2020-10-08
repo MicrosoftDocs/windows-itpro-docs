@@ -107,7 +107,7 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
 
 -   0 - not encrypted
 -   1 - encrypted
