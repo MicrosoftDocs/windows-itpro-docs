@@ -25,7 +25,7 @@ ms.date: 10/08/2020
 **Applies to:**
 
 - Windows 10
-- Windows Server 2019
+- Windows Server 2019 (if using tenant attach with [Configuation Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
 
 ## Overview
 
@@ -55,6 +55,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 1. Turn tamper protection on <br/>
     - [For an individual machine, use Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine).
     - [For your organization, use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
+    - [Use tenant attach with Configuration Manager, version 2006, for devices running Windows 10 or Windows Server 2019](#manage-tamper-protection-with-configuration-manager-version-2006)
 
 2. [View information about tampering attempts](#view-information-about-tampering-attempts).
 
@@ -129,7 +130,7 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 ## Manage tamper protection with Configuration Manager, version 2006
 
 > [!IMPORTANT]
-> The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Otherwise, tamper protection is supported on Windows 10 only.
+> The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
 
 If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10 and Windows Server 2019 using tenant attach. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
 
