@@ -143,7 +143,11 @@ If you're using [version 2006 of Configuration Manager](https://docs.microsoft.c
 
 Need help? See the following resources:
 
-- 
+- [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+
+- [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy)
+
+- [Antivirus policy for endpoint security in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-antivirus-policy)
 
 ## View information about tampering attempts
 
