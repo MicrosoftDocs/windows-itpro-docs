@@ -257,6 +257,7 @@
 #### [LockDown](policy-csp-lockdown.md)
 #### [Maps](policy-csp-maps.md)
 #### [Messaging](policy-csp-messaging.md)
+#### [MixedReality](policy-csp-mixedreality.md)
 #### [MSSecurityGuide](policy-csp-mssecurityguide.md)
 #### [MSSLegacy](policy-csp-msslegacy.md)
 #### [NetworkIsolation](policy-csp-networkisolation.md)
