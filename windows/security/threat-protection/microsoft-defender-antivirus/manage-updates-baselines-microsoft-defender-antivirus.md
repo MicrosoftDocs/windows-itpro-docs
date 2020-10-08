@@ -116,7 +116,7 @@ No known issues
 - Improved behavior monitoring for memory scans
 - Improved macro streams scanning
 - Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
-- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored
+- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
 
 
 ### Known Issues
