@@ -50,6 +50,8 @@ ms.date: 10/08/2020
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
+- MemoryDump/AllowCrashDump
+- MemoryDump/AllowLiveDump
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)
