@@ -123,7 +123,7 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 
 1. Open the Windows PowerShell app.
 
-2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
+2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
