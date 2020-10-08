@@ -16,7 +16,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-mcafeemigrate 
+- m365solution-mcafeemigrate
+- m365solution-scenario 
 ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/22/2020

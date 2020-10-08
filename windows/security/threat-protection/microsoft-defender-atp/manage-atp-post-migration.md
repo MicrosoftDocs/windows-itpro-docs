@@ -14,7 +14,9 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- m365solution-scenario
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.reviewer: chventou
