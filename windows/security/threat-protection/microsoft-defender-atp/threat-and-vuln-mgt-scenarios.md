@@ -94,6 +94,8 @@ There are two columns:
 - Trends (over time)
 - Today (current information)
 
+You can filter the data by vulnerability severity levels, exploit availability, vulnerability age, operating system platform, Windows 10 version, or device group.
+
 ### Severity levels
 
 Each device is counted only once according to the most severe vulnerability found on that device.
