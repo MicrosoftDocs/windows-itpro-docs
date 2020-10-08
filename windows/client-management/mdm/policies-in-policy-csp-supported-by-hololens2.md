@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 05/11/2020
+ms.date: 10/08/2020
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -50,6 +50,17 @@ ms.date: 05/11/2020
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
+- [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
+- [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)
+- [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)
+- [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled)
+- [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)
+- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
+- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
+- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery)
+- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin)
+- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
+- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#privacy-allowinputpersonalization)
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 - [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
@@ -73,6 +84,8 @@ ms.date: 05/11/2020
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps) <sup>8</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
+- [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage)
+- [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage)
 - [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
@@ -81,6 +94,10 @@ ms.date: 05/11/2020
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
+- [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)
+- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
+- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
+- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
@@ -91,6 +108,7 @@ ms.date: 05/11/2020
 - [Update/PauseQualityUpdates](policy-csp-update.md#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](policy-csp-update.md#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
+- [Update/SetDisablePauseUXAccess](policy-csp-update.md#update-setdisablepauseuxaccess)
 - [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>8</sup>
