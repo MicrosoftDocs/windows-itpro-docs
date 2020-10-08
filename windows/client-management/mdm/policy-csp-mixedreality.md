@@ -79,7 +79,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy setting is set only then cache is used otherwise not. In order for this policy setting to take effect, user must sign-out and sign-in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
+This policy setting controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy setting is set only then cache is used otherwise not. In order for this policy setting to take effect, user must sign out and sign in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
 
 <!--/Description-->
 
