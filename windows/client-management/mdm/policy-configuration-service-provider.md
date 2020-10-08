@@ -3352,6 +3352,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### MixedReality policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays" id="mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled" id="mixedreality-brightnessbuttondisabled">MixedReality/BrightnessButtonDisabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics" id="mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-microphonedisabled" id="mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled" id="mixedreality-volumebuttondisabled">MixedReality/VolumeButtonDisabled</a>
+  </dd>
+</dl>
+
 ### MSSecurityGuide policies
 
 <dl>
