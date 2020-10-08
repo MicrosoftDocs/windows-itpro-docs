@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/20/2020
+ms.date: 10/10/2020
 ---
 
 # Extend advanced hunting coverage with the right settings
@@ -26,7 +26,7 @@ ms.date: 09/20/2020
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[Advanced hunting](advanced-hunting-overview.md) relies on data coming from various sources, including your devices, your Office 365 workspaces, Azure AD, and Azure ATP. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
+[Advanced hunting](advanced-hunting-overview.md) relies on data coming from across your organization. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 
 ## Advanced security auditing on Windows devices
 

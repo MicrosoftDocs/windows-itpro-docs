@@ -73,12 +73,12 @@ You can use *go hunt* after selecting any of these entity types:
 
 ## Query for event information
 
-When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
+When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occurred around the same time period on the same device:
 
 ```kusto
 // List relevant events 30 minutes before and after selected RegistryValueSet event
 let selectedEventTimestamp = datetime(2020-10-06T21:40:25.3466868Z);
-search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents, ResponseEvents)
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
     Timestamp between ((selectedEventTimestamp - 30m) .. (selectedEventTimestamp + 30m))
     and DeviceId == "a305b52049c4658ec63ae8b55becfe5954c654a4"
 | sort by Timestamp desc
