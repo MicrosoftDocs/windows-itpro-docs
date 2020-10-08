@@ -26,7 +26,7 @@ additionalContent:
         # Card
         - title: Office Education Dev center
           summary: Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app
-          url: https://dev.office.com/industry-verticals/edu
+          url: https://developer.microsoft.com/office/edu
         # Card
         - title: Data Streamer
           summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
