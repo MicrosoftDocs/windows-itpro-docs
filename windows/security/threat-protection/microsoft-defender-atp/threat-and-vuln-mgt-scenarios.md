@@ -86,10 +86,43 @@ Examples of devices that should be marked as high value:
 
 ## Vulnerable devices report
 
-The vulnerable devices report shows graphs and bar charts of 
+The report shows graphs and bar charts with vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
 
 Access the report by going to **Reports > Vulnerable devices**
 
+There are two columns:
+- Trends (over time)
+- Today (current information)
+
+### Severity levels
+
+Each device is counted only once according to the most severe vulnerability found on that device.
+
+![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-severity.png)
+
+### Exploit availability
+
+Each device is counted only once based on the highest level of known exploit.
+
+![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-exploit-availability.png)
+
+### Vulnerability age
+
+Each device is counted only once under the oldest vulnerability publication date. Older vulnerabilities have a higher chance of being exploited.
+
+![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-age.png)
+
+### Vulnerable devices by operating system platform
+
+The number of devices on each operating system that are exposed due to software vulnerabilities. 
+
+![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-os.png)
+
+### Vulnerable devices by Windows 10 version
+
+The number of devices on each Windows 10 version that are exposed due to vulnerable applications or OS. 
+
+![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-version.png)
 
 ## Related topics
 
