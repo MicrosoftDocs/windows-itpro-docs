@@ -181,7 +181,7 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-If you are using Configuration Manager, version 2006 with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy)
+If you are using Configuration Manager, version 2006 with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### Will tamper protection have any impact on third party antivirus registration?
 
