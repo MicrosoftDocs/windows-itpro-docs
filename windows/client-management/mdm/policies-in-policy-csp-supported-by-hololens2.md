@@ -1,6 +1,6 @@
 ---
-title: Policy CSPs supported by HoloLens 2
-description: Policy CSPs supported by HoloLens 2
+title: Policies in Policy CSP supported by HoloLens 2
+description: Policies in Policy CSP supported by HoloLens 2
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 05/11/2020
 ---
 
-# Policy CSPs supported by HoloLens 2
+# Policies in Policy CSP supported by HoloLens 2
 
 > [!div class="op_single_selector"]
 >

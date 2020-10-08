@@ -95,6 +95,7 @@ The following methodology was used to derive the network endpoints:
 |wdcp.microsoft.com|HTTPS|Used for Windows Defender when Cloud-based Protection is enabled
 |activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
 |adl.windows.com|HTTP|Used for compatibility database updates for Windows
+|spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
 
 ## Windows 10 Pro
 
@@ -159,6 +160,7 @@ The following methodology was used to derive the network endpoints:
 |windows.policies.live.net|HTTP|OneDrive
 |activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
 |adl.windows.com|HTTP|Used for compatibility database updates for Windows
+|spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
 
 ## Windows 10 Education
 
