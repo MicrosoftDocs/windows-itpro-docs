@@ -122,7 +122,7 @@ You must configure this setting to have complete NCA functionality.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Corporate Resources*
--   GP name: *Probe*
+-   GP name: *CorporateResources*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
 
@@ -187,7 +187,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting specifi
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Custom Commands*
--   GP name: *CustomCommand*
+-   GP name: *CustomCommands*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
 
@@ -258,7 +258,7 @@ You must configure this setting to have complete NCA functionality.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *IPsec Tunnel Endpoints*
--   GP name: *DTE*
+-   GP name: *DTEs*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
 
@@ -401,7 +401,7 @@ If this setting is not configured, users do not have Connect or Disconnect optio
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Prefer Local Names Allowed*
--   GP name: *NamePreferenceAllowed*
+-   GP name: *LocalNamesOn*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
 
