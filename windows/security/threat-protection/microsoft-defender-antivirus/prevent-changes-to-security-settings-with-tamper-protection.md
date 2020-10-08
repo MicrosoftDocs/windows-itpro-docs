@@ -25,6 +25,7 @@ ms.date: 10/08/2020
 **Applies to:**
 
 - Windows 10
+- Windows Server 2019
 
 ## Overview
 
@@ -41,7 +42,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 
 ### How it works
 
- Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
+Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
 
 - Configuring settings in Registry Editor on your Windows machine
 - Changing settings through PowerShell cmdlets
@@ -124,6 +125,25 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+
+## Manage tamper protection with Configuration Manager, version 2006
+
+> [!IMPORTANT]
+> The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Otherwise, tamper protection is supported on Windows 10 only.
+
+If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10 and Windows Server 2019 using tenant attach. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
+
+1. Set up tenant attach. See [Microsoft Endpoint Manager tenant attach: Device sync and device actions](https://docs.microsoft.com/mem/configmgr/tenant-attach/device-sync-actions).
+
+2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**. 
+
+3. Configure tamper protection as part of the new policy.
+
+4. Deploy the policy to your device collection.
+
+Need help? See the following resources:
+
+- 
 
 ## View information about tampering attempts
 
