@@ -36,9 +36,8 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-> **Note**  Multiple SIMs are supported.
-
- 
+>[!NOTE]
+>Multiple SIMs are supported.
 
 <a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
