@@ -79,7 +79,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy setting is set only then cache is used otherwise not. In order for this policy setting to take effect, user must sign out and sign in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
+This policy setting controls for how many days Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy setting is set only then cache is used otherwise not. In order for this policy setting to take effect, user must sign out and sign in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
 
 <!--/Description-->
 
@@ -129,7 +129,7 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls if pressing the brightness button changes the brightness or not. It only impacts brightness on Hololens and not the functionality of the button when it is used with other buttons as combination for other purposes.
+This policy setting controls if pressing the brightness button changes the brightness or not. It only impacts brightness on HoloLens and not the functionality of the button when it is used with other buttons as combination for other purposes.
 
 <!--/Description-->
 
@@ -182,7 +182,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls when and if diagnostic logs can be collected using specific button combination on Hololens.
+This policy setting controls when and if diagnostic logs can be collected using specific button combination on HoloLens.
 
 <!--/Description-->
 
