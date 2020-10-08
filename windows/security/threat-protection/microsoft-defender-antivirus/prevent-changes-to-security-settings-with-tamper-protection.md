@@ -25,7 +25,7 @@ ms.date: 10/08/2020
 **Applies to:**
 
 - Windows 10
-- Windows Server 2019 (if using tenant attach with [Configuation Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
+- Windows Server 2019 (if using tenant attach with [Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
 
 ## Overview
 
