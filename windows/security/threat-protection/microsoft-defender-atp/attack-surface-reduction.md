@@ -11,9 +11,10 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
+ms.date: 10/08/2020
 ---
 
 # Reduce attack surfaces with attack surface reduction rules
