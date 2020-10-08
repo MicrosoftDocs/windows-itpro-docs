@@ -327,10 +327,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### Block untrusted and unsigned processes that run from USB
 
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include:
-
-* Executable files (such as .exe, .dll, or .scr)
-* Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
