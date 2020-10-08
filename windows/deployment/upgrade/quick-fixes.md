@@ -183,7 +183,7 @@ To check your system for unsigned drivers:
     [Sigcheck](https://docs.microsoft.com/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. To use sigcheck:
 
 11. In the command window, use the **cd** command to switch to the directory where you extracted sigcheck, for example **cd c:\sigcheck**.
-12. Using the list of unsigned drivers and their associated paths that you obtained from the File Signature Verification tool, run sigcheck to obtain details about the driver, including the catalog file used for signing. Type **sigcheck64 -u -e \<driver path\>** and press ENTER. See the following example:
+12. Using the list of unsigned drivers and their associated paths that you obtained from the File Signature Verification tool, run sigcheck to obtain details about the driver, including the catalog file used for signing. Type **sigcheck64 -i \<driver path\>** and press ENTER (or sigcheck -i for a 32 bit OS). See the following example:
     ```
     C:\Sigcheck>sigcheck64.exe -i c:\windows\system32\drivers\afd.sys
     
