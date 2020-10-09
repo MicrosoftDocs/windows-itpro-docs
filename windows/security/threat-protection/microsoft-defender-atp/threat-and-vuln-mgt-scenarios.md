@@ -100,31 +100,31 @@ You can filter the data by vulnerability severity levels, exploit availability, 
 
 Each device is counted only once according to the most severe vulnerability found on that device.
 
-![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-severity.png)
+![One graph of current device vulnerability severity levels, and one graph showing levels over time](images/tvm-report-severity.png)
 
 ### Exploit availability
 
 Each device is counted only once based on the highest level of known exploit.
 
-![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-exploit-availability.png)
+![One graph of current device exploit availability, and one graph showing availability over time](images/tvm-report-exploit-availability.png)
 
 ### Vulnerability age
 
 Each device is counted only once under the oldest vulnerability publication date. Older vulnerabilities have a higher chance of being exploited.
 
-![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-age.png)
+![One graph of current device vulnerability age, and one graph showing age over time.](images/tvm-report-age.png)
 
 ### Vulnerable devices by operating system platform
 
-The number of devices on each operating system that are exposed due to software vulnerabilities. 
+The number of devices on each operating system that are exposed due to software vulnerabilities.
 
-![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-os.png)
+![One graph of current vulnerable devices by operating system platform, and one graph showing vulnerable devices by OS platforms over time.](images/tvm-report-os.png)
 
 ### Vulnerable devices by Windows 10 version
 
-The number of devices on each Windows 10 version that are exposed due to vulnerable applications or OS. 
+The number of devices on each Windows 10 version that are exposed due to vulnerable applications or OS.
 
-![Graphs of current device vulnerability severity levels, and over time.](images/tvm-report-version.png)
+![One graph of current vulnerable devices by Windows 10 version, and one graph showing vulnerable devices by Windows 10 version over time.](images/tvm-report-version.png)
 
 ## Related topics
 
