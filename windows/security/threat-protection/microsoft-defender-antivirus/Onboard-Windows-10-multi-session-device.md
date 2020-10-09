@@ -10,8 +10,8 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro 
 ms.topic: article 
-author: v-lsaldanha
-ms.author: v-lsaldanha
+author: Lovina-Saldanha
+ms.author: Lovina-Saldanha
 ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: 
