@@ -1,6 +1,6 @@
 ---
-title: ADMX-backed policy CSPs
-description: ADMX-backed policy CSPs
+title: ADMX-backed policies in Policy CSP
+description: ADMX-backed policies in Policy CSP
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -9,15 +9,15 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/18/2020
+ms.date: 10/08/2020
 ---
 
-# ADMX-backed policy CSPs
+# ADMX-backed policies in Policy CSP
 
 > [!div class="op_single_selector"]
 >
-> - [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
-> - [ADMX-backed policy-CSPs](policy-csps-admx-backed.md)
+> - [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
+> - [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
 >
 
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
