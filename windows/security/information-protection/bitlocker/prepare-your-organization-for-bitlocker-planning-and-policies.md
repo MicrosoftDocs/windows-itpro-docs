@@ -54,6 +54,7 @@ In addition, BitLocker offers the option to lock the normal startup process unti
 On computers that do not have TPM 1.2 or higher versions, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume it from hibernation, and does not provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
 ### BitLocker key protectors
+
 | Key protector | Description |
 | - | - |
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
