@@ -74,7 +74,7 @@ The first piped element is a time filter scoped to the previous seven days. Limi
 ### Check specific processes
 The time range is immediately followed by a search for process file names representing the PowerShell application.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
