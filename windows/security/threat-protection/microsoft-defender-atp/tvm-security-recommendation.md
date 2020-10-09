@@ -134,11 +134,9 @@ If you want to check how the ticket shows up in Intune, see [Use Intune to remed
 
 ## File for exception
 
-As an alternative to a remediation request, you can create exceptions for recommendations. Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md)
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md). If your organization has device groups, you will now be able to scope the exception to specific device groups.
 
-If your organization has device groups, you will now be able to scope the exception to specific groups. If you have global administrator permission (called Microsoft Defender ATP administrator), then you can choose to set the exception for all current and future device groups.  
-
-When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception (by device group)**.
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
 ### How to create an exception
 
@@ -146,7 +144,7 @@ Select a security recommendation you would like create an exception for, and the
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
-Then choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab.
+Choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab.
 
 ### Exception scope
 
@@ -154,13 +152,19 @@ Exceptions can either be created for selected device groups, or for all device g
 
 #### Exception by device group
 
-Apply the exception to all device groups or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.”
+Apply the exception to all device groups or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.” The state will change to “full exception” if you select all the device groups.
 
 ![Showing device group dropdown.](images/tvm-exception-device-group-500.png)
 
 ##### Filtered
 
-If you have filtered by device group, just your filtered device groups will appear as options.
+If you have filtered by device group on any of the threat and vulnerability management pages, only your filtered device groups will appear as options.
+
+Button to filter by device group on any of the threat and vulnerability management pages: 
+
+![Showing selected device groups filter.](images/tvm-selected-device-groups.png)
+
+Exception view with filtered device groups:
 
 ![Showing filtered device group dropdown.](images/tvm-exception-device-filter500.png)
 
@@ -176,13 +180,13 @@ A flyout will appear where you can search and choose device groups you want incl
 
 #### Global exceptions
 
-If you have global administrator permissions (called Microsoft Defender ATP administrator), you will be able to create and cancel a global exception. It affects all current and future device groups in your organization. The recommendation state will change from “active” to “full exception.”
+If you have global administrator permissions (called Microsoft Defender ATP administrator), you will be able to create and cancel a global exception. It affects **all** current and future device groups in your organization, and only a user with similar permission would be able to change it. The recommendation state will change from “active” to “full exception.”
 
 ![Showing global exception option.](images/tvm-exception-global.png)
 
 Some things to keep in mind:
 
-- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired.
+- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired or been cancelled. After that point, the new device group exceptions will go into effect until they expire.
 - If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
 
 ### Justification
@@ -192,21 +196,27 @@ Select your justification for the exception you need to file instead of remediat
 The following list details the justifications behind the exception options:
 
 - **Third party control** - A third party product or software already addresses this recommendation
-        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
 - **Alternate mitigation** - An internal tool already addresses this recommendation
-        - Choosing this justification type will lower your exposure score and increase you secure score because your risk is reduced
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
 - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
 - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+
+### View all exceptions
+
+Navigate to the **Exceptions** tab in the **Remediation** page.
+
+![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
+
+Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can Export. You can also view the related recommendation or cancel the exception.
 
 ### How to cancel an exception
 
 To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
 
-![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
-
 #### Cancel the exception for a specific device group
 
-If the exception is per device group, then you will need to select a specific device group to cancel the exception for.  
+If the exception is per device group, then you will need to select the specific device group to cancel the exception for it. 
 
 ![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
 
@@ -214,7 +224,7 @@ A flyout will appear for the device group, and you can select **Cancel exception
 
 #### Cancel a global exception
 
-If it is a global exception, select an exception from the list and then select Cancel exception from the flyout.
+If it is a global exception, select an exception from the list and then select **Cancel exception** from the flyout.
 
 ![Showing how to cancel the exception for a global exception.](images/tvm-exception-cancel-global-400.png)
 
