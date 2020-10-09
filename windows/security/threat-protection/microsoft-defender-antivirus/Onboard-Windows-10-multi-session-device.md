@@ -1,3 +1,23 @@
+---
+title: "Onboard Windows 10 multi-session devices in Windows Virtual Desktop"
+description: "Read more in this article about Onboarding Windows 10 multi-session devices in Windows Virtual Desktop"
+keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+ms.localizationpriority: medium
+audience: ITPro 
+ms.topic: article 
+author: Lovina-Saldanha
+ms.author: Lovina-Saldanha
+ms.custom: nextgen
+ms.date: 09/10/2020
+ms.reviewer: 
+manager: dansimp
+---
+
 #Onboard Windows 10 multi-session devices in Windows Virtual Desktop 
 6 minutes to read 
 
