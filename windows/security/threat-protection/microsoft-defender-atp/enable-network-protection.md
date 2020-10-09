@@ -33,12 +33,14 @@ Check if network protection has been enabled on a local device by using Registry
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
 1. Choose **HKEY_LOCAL_MACHINE** from the side menu
-1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Policy Manager**
+1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
 1. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
     * 0, or **Off**
     * 1, or **On**
     * 2, or **Audit** mode
+    
+    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
 
 ## Enable network protection
 
@@ -107,7 +109,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 1. Select **Start** and type **regedit** to open **Registry Editor**.
 
-2. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection
+2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
 
 3. Select **EnableNetworkProtection** and confirm the value:
    * 0=Off

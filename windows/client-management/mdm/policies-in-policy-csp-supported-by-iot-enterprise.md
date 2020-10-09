@@ -1,6 +1,6 @@
 ---
-title: Policy CSPs supported by Windows 10 IoT Enterprise
-description: Policy CSPs supported by Windows 10 IoT Enterprise
+title: Policies in Policy CSP supported by Windows 10 IoT Enterprise
+description: Policies in Policy CSP supported by Windows 10 IoT Enterprise
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 07/18/2019
 ---
 
-# Policy CSPs supported by Windows 10 IoT Enterprise
+# Policies in Policy CSP supported by Windows 10 IoT Enterprise
 
 > [!div class="op_single_selector"]
 >
