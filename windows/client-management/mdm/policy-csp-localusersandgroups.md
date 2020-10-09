@@ -116,7 +116,7 @@ where:
 
 **Examples**
 
-The following is an example of the Update action for adding and removing group members:
+The following is an example XML for the Update action to add and remove group members:
 
 ```xml
 <?xml version = "1.0" encoding = "utf-8"?> 
@@ -129,7 +129,7 @@ The following is an example of the Update action for adding and removing group m
 </GroupConfiguration>
 ```
 
-The following is an example of the Replace action for replacing the group membership:
+The following is an example XML for the Replace action to replace the group membership:
 
 ```xml
 <?xml version = "1.0" encoding = "utf-8"?> 
