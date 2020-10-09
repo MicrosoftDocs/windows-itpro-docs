@@ -4035,6 +4035,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### MixedReality policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays" id="mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled" id="mixedreality-brightnessbuttondisabled">MixedReality/BrightnessButtonDisabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics" id="mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-microphonedisabled" id="mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled" id="mixedreality-volumebuttondisabled">MixedReality/VolumeButtonDisabled</a>
+  </dd>
+</dl>
+
 ### MSSecurityGuide policies
 
 <dl>
@@ -5584,27 +5604,27 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## Policy CSPs supported by Group Policy and ADMX-backed policy CSPs
-- [Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)
-- [ADMX-backed policy CSPs](policy-csps-admx-backed.md)
+## Policies in Policy CSP supported by Group Policy and ADMX-backed policies in Policy CSP
+- [Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)
+- [ADMX-backed policies in Policy CSP](policy-csps-admx-backed.md)
 
 > [!NOTE]
-> Not all Policy CSPs supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-## Policy CSPs supported by HoloLens devices
-- [Policy CSPs supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
-- [Policy CSPs supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
-- [Policy CSPs supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+## Policies in Policy CSP supported by HoloLens devices
+- [Policies in Policy CSP supported by HoloLens 2](policy-csps-supported-by-hololens2.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
 
-## Policy CSPs supported by Windows 10 IoT
-- [Policy CSPs supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
-- [Policy CSPs supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
+## Policies in Policy CSP supported by Windows 10 IoT
+- [Policies in Policy CSP supported by Windows 10 IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
+- [Policies in Policy CSP supported by Windows 10 IoT Core](policy-csps-supported-by-iot-core.md)
 
-## Policy CSPs supported by Microsoft Surface Hub
-- [Policy CSPs supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
+## Policies in Policy CSP supported by Microsoft Surface Hub
+- [Policies in Policy CSP supported by Microsoft Surface Hub](policy-csps-supported-by-surface-hub.md)
 
-## Policy CSPs that can be set using Exchange ActiveSync (EAS)
-- [Policy CSPs that can be set using Exchange ActiveSync (EAS)](policy-csps-that-can-be-set-using-eas.md)
+## Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)
+- [Policies in Policy CSP that can be set using Exchange ActiveSync (EAS)](policy-csps-that-can-be-set-using-eas.md)
 
 ## Related topics
 
