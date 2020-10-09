@@ -158,6 +158,6 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
-- 10 - Available in Windows 10, version 2010.
+- 9 - Available in Windows 10, version 2010.
 
 <!--/Policies-->
