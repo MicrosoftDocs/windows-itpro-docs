@@ -80,12 +80,11 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10, version 1607 or later
-  - Windows 10 Enterprise
-  - [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
-  - Windows 10 Education
-  - Windows 10 Pro
-  - Windows 10 Pro Education
+- Windows 10 Enterprise
+- [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows server
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
