@@ -21,13 +21,12 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-reference.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-reference.md). To understand these concepts better, run your first query.
 
 ## Try your first query
 
@@ -52,26 +51,21 @@ union DeviceProcessEvents, DeviceNetworkEvents
 FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
-
-This is how it will look like in advanced hunting.
-
-![Image of Microsoft Defender ATP advanced hunting query](images/advanced-hunting-query-example-2.png)
-
+**[Run this query in advanced hunting](https://securitycenter.windows.com/hunting?query=H4sIAAAAAAAEAI2TT0vDQBDF5yz4HUJPFcTqyZsXqyCIBFvxKNGWtpo_NVlbC8XP7m8mado0K5Zls8nkzdu3b2Z70pNAbmUmqYyk4D2UTJYyllwGMmWNGQHrN_NNvsSBzUBrbMFMiWieAx3xDEBl4GL4AuNd8B0bNgARENcdUmIZ3yM5liPwac3bN-YZPGPU5ET1rWDc7Ox4uod8YDp4MzI-GkjlX4Ne2nly0zEkKzFWh4ZE5sSuTN8Ehq5couvEMnvmUAhez-HsRBMipVa_W_OG6vEfGtT12JRHpqV064e1Kx04NsxFzXxW1aFjp_djXmDRPbfY3XMMcLogTz2bWZ2KqmIJI6q6wKe2WYnrRsa9KVeU9kCBBo2v7BzPxF_Bx2DKiqh63SGoRoc6Njti48z_yL71XHQAcgAur6rXRpcqH3l-4knZF23Utsbq2MircEqmw-G__xR1TdZ1r7zb7XLezmx3etkvGr-ze6NdGdW92azUfpcdluWvr-aqbh_nofnqcWI3aYyOsBV7giduRUO7187LMKTT5rxvHHX80_t8IeeMgLquvL7-Ak3q-kz8BAAA&runQuery=true&timeRangeId=week)**
 
 ### Describe the query and specify the tables to search
-A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization. 
+A short comment has been added to the beginning of the query to describe what it is for. This comment helps if you later decide to save the query and share it with others in your organization.
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
-
-The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by creating a union of two tables,  `DeviceProcessEvents` and `DeviceNetworkEvents`, and add piped elements as needed.
+The query itself will typically start with a table name followed by several elements that start with a pipe (`|`). In this example, we start by creating a union of two tables,  `DeviceProcessEvents` and `DeviceNetworkEvents`, and add piped elements as needed.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### Set the time range
-The first piped element is a time filter scoped to the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
+The first piped element is a time filter scoped to the previous seven days. Limiting the time range helps ensure that queries perform well, return manageable results, and don't time out.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -101,7 +95,7 @@ Afterwards, the query looks for strings in command lines that are typically used
 ```
 
 ### Customize result columns and length 
-Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
+Now that your query clearly identifies the data you want to locate, you can define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -109,7 +103,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results. 
+Select **Run query** to see the results. Use the expand icon at the top right of the query editor to focus on your hunting query and the results. 
 
 ![Image of the Expand control in the advanced hunting query editor](images/advanced-hunting-expand.png)
 
@@ -118,7 +112,7 @@ Click **Run query** to see the results. Select the expand icon at the top right 
 
 ## Learn common query operators for advanced hunting
 
-Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
+You've just run your first query and have a general idea of its components. It's time to backtrack slightly and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
 
 | Operator | Description and usage |
 |--|--|
@@ -137,15 +131,17 @@ To see a live example of these operators, run them from the **Get started** sect
 
 ## Understand data types
 
-Data in advanced hunting tables are generally classified into the following data types.
+Advanced hunting supports Kusto data types, including the following common types:
 
 | Data type | Description and query implications |
 |--|--|
-| `datetime` | Data and time information typically representing event timestamps |
-| `string` | Character string |
-| `bool` | True or false |
-| `int` | 32-bit numeric value  |
-| `long` | 64-bit numeric value |
+| `datetime` | Data and time information typically representing event timestamps. [See supported datetime formats](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Character string in UTF-8 enclosed in single quotes (`'`) or double quotes (`"`). [Read more about strings](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | This data type supports `true` or `false` states. [See supported literals and operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | 32-bit integer  |
+| `long` | 64-bit integer |
+
+To learn more about these data types, [read about Kusto scalar data types](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
@@ -155,7 +151,7 @@ Take advantage of the following functionality to write queries faster:
 - **[Schema reference](advanced-hunting-schema-reference.md#get-schema-information-in-the-security-center)**—in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
 
 ## Work with multiple queries in the editor
-The query editor can serve as your scratch pad for experimenting with multiple queries. To use multiple queries:
+You can use the query editor to experiment with multiple queries. To use multiple queries:
 
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
@@ -171,7 +167,7 @@ The **Get started** section provides a few simple queries using commonly used op
 ![Image of the advanced hunting get started tab](images/atp-advanced-hunting.png)
 
 > [!NOTE]
-> Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
+> Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).
 
 ## Access comprehensive query language reference
 
