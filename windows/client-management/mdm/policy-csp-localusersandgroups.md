@@ -114,7 +114,8 @@ where:
 <!--/SupportedValues-->
 <!--Example-->
 
-**Example: Add and remove group members**
+**Examples**
+The following is an example of the Update action for adding and removing group members:
 
 ```xml
 <?xml version = "1.0" encoding = "utf-8"?> 
@@ -127,7 +128,7 @@ where:
 </GroupConfiguration>
 ```
 
-**Example: Replace group membership**
+The following is an example of the Replace action for replacing the group membership:
 
 ```xml
 <?xml version = "1.0" encoding = "utf-8"?> 
