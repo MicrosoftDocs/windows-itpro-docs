@@ -25,21 +25,52 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-The analyst report is the written section provided by Microsoft security researchers ...
+The analyst report is the written section provided by Microsoft security researchers. Most analyst reports include the following sections:
 
-Most report include the following sections:
+| Report section | Description of contents |
+|--|--|
+| Executive summary | Overview of the threat, including when the threat was first observed, its motivations, notable events, major targets (industries and regions), and distinct tools and techniques. |
+| Analysis | Provides available technical information, including the details of an attack or how a new technique or attack surface might be utilized. | 
+| MITRE ATT&CK techniques observed | Lists the techniques observed using their MITRE ATT&CK technique category and IDs. | 
+| Mitigations | Lists all known methods that might reduce the impact or stop the threat. This section also includes mitigations that are not tracked dynamically as part of the threat analytics report. |
+| Detection details | Lists specific and generic detections provided by Microsoft security solutions that can surface activity or components associated with the threat. | 
+| Advanced hunting | Provides sample advanced hunting queries for proactively identifying possible threat activity. Most queries are provided to supplement detections, especially for locating potentially malicious components or behaviors that could not dynamically assessed to be malicious. | 
+| References | Lists Microsoft and third-party references reviewed by analysts during the creation of the report. Threat analytics reports are based on data validated Microsoft researchers. Information from publicly-available, third-party source are identified clearly as such. | 
+| Change log | Describes significant changes made to the report since the time of publication. |
 
-## Executive summary
+## Track mitigations
+Threat analytics reports dynamically track the status of security updates and secure configurations. These are available as charts and tables under the **Mitigations** tab.
 
-## Analysis
+The analyst report, however, also includes mitigations that are not dynamically tracked. Here are some examples of mitigation guidance that are not tracked dynamically:
 
-## MITRE...
+- Block emails with .lnk attachments or other suspicious file types
+- Randomize local administrator passwords
+- Educate end-users about phishing email and other threat vectors
 
-## Mitigations
+While you can utilize the **Mitigations** tab to assess your security posture against a threat, carefully read through all the mitigation guidance in the analyst report for more tips on how to improve your security posture.
 
-## Detection details
+## Check detections
+The analyst report also provides a list of detections for various security capabilities available with Microsoft Defender for Endpoint, including:
 
-## Advanced hunting queries
+- Antivirus
+- Endpoint detection and response (EDR)
+- Attack surface reduction rules
+
+### Antivirus detections
+These detections are available on devices with Microsoft Defender Antivirus. On devices that are onboarded to Microsoft Defender for Endpoint, these detections automatically fire alerts and will be reflected in the charts provided with the report.
+
+>[!NOTE]
+>There are cases when the report lists some generic detection names that detect a wide-range of threats in addition to the threat components or behaviors associated with the report. These generic detections do NOT reflect in the charts.
+
+ 
+
+| Detection type | Description |
+|--|--|
+| Antivirus | These detections are available on devices 
+
+ 
+
+
 
 
 
