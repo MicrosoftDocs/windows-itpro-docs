@@ -156,9 +156,12 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 ![Image of administrator in Windows PowerShell](images/admin-powershell.png)
 
-The *.ods.opinsights.azure.com, *.oms.opinsights.azure.com and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft Defender Security Center portal
+The wildcards (*) used in *.ods.opinsights.azure.com, *.oms.opinsights.azure.com, and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft Defender Security Center portal.
 
 The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the “Firewall Rule: *.blob.core.windows.net” section of the test results. 
+
+> [!NOTE]
+> In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender ATP service URLs
 
