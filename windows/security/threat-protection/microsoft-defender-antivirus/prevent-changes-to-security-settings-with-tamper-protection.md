@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: 
+ms.reviewer: shwjha
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
@@ -14,7 +14,7 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/31/2020
+ms.date: 10/08/2020
 ---
 
 # Protect security settings with tamper protection
@@ -25,6 +25,7 @@ ms.date: 08/31/2020
 **Applies to:**
 
 - Windows 10
+- Windows Server 2019 (if using tenant attach with [Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006))
 
 ## Overview
 
@@ -41,7 +42,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 
 ### How it works
 
- Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
+Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods such as:
 
 - Configuring settings in Registry Editor on your Windows machine
 - Changing settings through PowerShell cmdlets
@@ -54,6 +55,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 1. Turn tamper protection on <br/>
     - [For an individual machine, use Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine).
     - [For your organization, use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
+    - [Use tenant attach with Configuration Manager, version 2006, for devices running Windows 10 or Windows Server 2019](#manage-tamper-protection-with-configuration-manager-version-2006)
 
 2. [View information about tampering attempts](#view-information-about-tampering-attempts).
 
@@ -121,9 +123,35 @@ If you are using Windows 10 OS [1709](https://docs.microsoft.com/windows/release
 
 1. Open the Windows PowerShell app.
 
-2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
+2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+
+## Manage tamper protection with Configuration Manager, version 2006
+
+> [!IMPORTANT]
+> The procedure can be used to extend tamper protection to devices running Windows 10 and Windows Server 2019. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
+
+If you're using [version 2006 of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10 and Windows Server 2019 using tenant attach. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver your endpoint security configuration policies to your on-premises collections & devices.
+
+1. Set up tenant attach. See [Microsoft Endpoint Manager tenant attach: Device sync and device actions](https://docs.microsoft.com/mem/configmgr/tenant-attach/device-sync-actions).
+
+2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**. 
+
+3. Configure tamper protection as part of the new policy.
+
+4. Deploy the policy to your device collection.
+
+Need help? See the following resources:
+
+- [Antivirus policy for endpoint security in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-antivirus-policy)
+
+- [Settings for the Windows Security experience profile in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/antivirus-security-experience-windows-settings)
+
+- [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+
+- [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy)
+
 
 ## View information about tampering attempts
 
@@ -153,9 +181,7 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 
 Windows 10 OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-### Is configuring tamper protection in Intune supported on servers?
-
-No
+If you are using Configuration Manager, version 2006 with tenant attach, tamper protection can be extended to Windows Server 2019. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](https://docs.microsoft.com/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### Will tamper protection have any impact on third party antivirus registration?
 
@@ -169,7 +195,11 @@ Tamper protection will not have any impact on such devices.
 
 If you are a home user, see [Turn tamper protection on (or off) for an individual machine](#turn-tamper-protection-on-or-off-for-an-individual-machine).
 
-If you are an organization using [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
+If you are an organization using [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See the following sections of this article: 
+
+- [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune)
+
+- [Manage tamper protection with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) 
 
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
@@ -192,7 +222,7 @@ Configuring tamper protection in Intune can be targeted to your entire organizat
 
 ### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
 
-Currently we do not have support to manage Tamper Protection through Microsoft Endpoint Configuration Manager.
+If you are using tenant attach, you can use Microsoft Endpoint Configuration Manager. See [Manage tamper protection with Configuration Manager, version 2006](#manage-tamper-protection-with-configuration-manager-version-2006) and [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin).
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
@@ -220,11 +250,7 @@ In addition, your security operations team can use hunting queries, such as the 
 
 [View information about tampering attempts](#view-information-about-tampering-attempts).
 
-### Will there be a group policy setting for tamper protection?
-
-No.
-
-## Related articles
+## See also
 
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
