@@ -888,7 +888,7 @@ If you disable or do not configure this policy setting, users can configure the 
 ADMX Info:  
 -   GP English name: *Hide Security Tab*
 -   GP name: *HideSecurityTab*
--   GP path: *WWindows Components\Windows Media Player\User Interface*
+-   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
 
 <!--/ADMXBacked-->

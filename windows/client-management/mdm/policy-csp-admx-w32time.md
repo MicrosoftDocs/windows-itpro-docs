@@ -232,7 +232,7 @@ Available in Windows 10 Insider Preview Build 20185. This policy setting specifi
 
 If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
+If you disable or do not configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
 **NtpServer**
 The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings.  The default value is ""time.windows.com,0x09"". 

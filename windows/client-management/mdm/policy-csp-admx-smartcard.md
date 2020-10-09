@@ -474,7 +474,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the clean up behavior of root certificates.  If you enable this policy setting then root certificate cleanup will occur according to the option selected. If you disable or do not configure this setting then root certificate clean up will occur on log off.
+Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to manage the cleanup behavior of root certificates.  If you enable this policy setting then root certificate cleanup will occur according to the option selected. If you disable or do not configure this setting then root certificate cleanup will occur on logoff.
 
 <!--/Description-->
 > [!TIP]
@@ -755,11 +755,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy settings lets you configure if all your valid logon certificates are displayed.
+Available in Windows 10 Insider Preview Build 20185. This policy setting lets you configure if all your valid logon certificates are displayed.
 
 During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template.  This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one has not yet expired. Two certificates are determined to be the same if they are issued from the same template with the same major version and they are for the same user (determined by their UPN).
 
-If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the the certificate with the expiration time furthest in the future will be shown.  
+If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the certificate with the expiration time furthest in the future will be shown.  
 
 > [!NOTE]
 > This setting will be applied after the following policy: "Allow time invalid certificates"
@@ -980,7 +980,7 @@ By default the user principal name (UPN) is displayed in addition to the common 
 
 If you enable this policy setting or do not configure this setting, then the subject name will be reversed.  
 
-If you disable , the subject name will be displayed as it appears in the certificate.
+If you disable, the subject name will be displayed as it appears in the certificate.
 
 <!--/Description-->
 > [!TIP]

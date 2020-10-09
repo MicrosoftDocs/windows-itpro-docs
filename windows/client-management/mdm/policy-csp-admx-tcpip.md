@@ -975,7 +975,7 @@ If you do not configure this policy setting, the local host settings are used.
 
 If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
 
-If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
+If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems caused by Firewalls or other middle boxes.
 
 <!--/Description-->
 > [!TIP]
