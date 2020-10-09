@@ -19,7 +19,7 @@ ms.reviewer:
 # Windows Defender Credential Guard: Requirements
 
 **Applies to**
--   Windows 10
+-   Windows 10 Enterprise and Education SKUs
 -   Windows Server 2016
 
 
@@ -56,11 +56,11 @@ For information about Windows Defender Remote Credential Guard hardware and soft
 
 When Windows Defender Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatibility with the reduced functionality.
 
->[!WARNING]
+> [!WARNING]
 > Enabling Windows Defender Credential Guard on domain controllers is not supported. <br>
 > The domain controller hosts authentication services which integrate with processes isolated when Windows Defender Credential Guard is enabled, causing crashes.
 
->[!NOTE]
+> [!NOTE]
 > Windows Defender Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Windows Defender Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts).
 
 Applications will break if they require:
