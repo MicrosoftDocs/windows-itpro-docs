@@ -13,9 +13,8 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- m365-security-compliance 
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance 
+
 ms.topic: article
 ---
 
