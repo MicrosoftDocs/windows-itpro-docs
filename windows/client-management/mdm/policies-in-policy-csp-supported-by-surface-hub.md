@@ -1,6 +1,6 @@
 ---
-title: Policy CSPs supported by Microsoft Surface Hub
-description: Policy CSPs supported by Microsoft Surface Hub
+title: Policies in Policy CSP supported by Microsoft Surface Hub
+description: Policies in Policy CSP supported by Microsoft Surface Hub
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 07/22/2020
 ---
 
-# Policy CSPs supported by Microsoft Surface Hub
+# Policies in Policy CSP supported by Microsoft Surface Hub
 
 
 - [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
