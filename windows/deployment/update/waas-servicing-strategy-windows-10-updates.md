@@ -9,7 +9,7 @@ ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
-ms.collection: M365initiative-coredeploy
+ms.collection: m365initiative-coredeploy
 ---
 
 # Prepare servicing strategy for Windows 10 updates
