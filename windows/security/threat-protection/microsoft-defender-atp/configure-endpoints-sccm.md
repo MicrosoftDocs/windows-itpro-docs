@@ -37,14 +37,14 @@ Based on the version of Configuration Manager you're running, the following clie
 
 #### Configuration Manager version 1910 and prior
 
-- Clients computers running Windows 10, version 1607 and later
+- Clients computers running Windows 10 
 
 #### Configuration Manager version 2002 and later
 
 Starting in Configuration Manager version 2002, you can onboard the following operating systems:
 
 - Windows 8.1
-- Windows 10, version 1607 or later
+- Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2016, version 1803 or later
