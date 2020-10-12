@@ -74,7 +74,8 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Right-click **Scheduled tasks**, click **New**, and then click **Immediate Task** (At least Windows 7). 
 1. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as. 
 1. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box. 
-1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. Enter the following: 
+1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
+Enter the following: 
 
 Action = "Start a program" 
 
