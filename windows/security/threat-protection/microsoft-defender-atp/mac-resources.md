@@ -45,7 +45,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
 3. Run `sudo mdatp diagnostic create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
   > [!TIP]
-  > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the location where diagnostic logs are saved, pass `--path [path]` to the below command.
+  > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the location where diagnostic logs are saved, pass `--path [path]` to the below command, replacing `[path]` with the desired path.
 
    ```bash
    sudo mdatp diagnostic create
