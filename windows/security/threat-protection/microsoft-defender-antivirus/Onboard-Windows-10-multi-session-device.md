@@ -39,7 +39,7 @@ Familiarize yourself with the [considerations for non-persistent VDI](https://do
 >
 > Microsoft recommends onboarding Windows Virtual Devices as a single entry per virtual device. This ensures that the investigation experience in the MDATP portal is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the MDATP portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
 
-Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. That way, it is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
+Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
 > [!NOTE]
 > The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It is NOT recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
@@ -53,7 +53,7 @@ Use a management tool to run the script.
 #### *Scenario 1: Using local group policy*
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
 
-Use the instructions [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
+Use the instructions in [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
 
 Follow the instructions for a single entry for each device.
 
@@ -72,9 +72,9 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Open the Group Policy Management Console (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 1. In the Group Policy Management Editor, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
 1. Right-click **Scheduled tasks**, click **New**, and then click **Immediate Task** (At least Windows 7). 
-1. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Then click **Check Names** then OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as. 
+1. In the Task window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM. Click **Check Names** and then click OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as. 
 1. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box. 
-1. Go to the **Actions** tab and click**New**. Ensure that **Start a program** is selected in the Action field. Enter the following: 
+1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. Enter the following: 
 
 Action = "Start a program" 
 
@@ -98,16 +98,17 @@ For more information, see: [https://docs.microsoft.com/en-us/windows/security/th
 
 #### Tagging your machines when building your golden image 
 
-As part of your onboarding, you may want to consider setting a machine tag to be able to differentiate WVD machines more easily in the Microsoft Security Center.  
-[https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/machine-tags#add-device-tags-by-setting-a-registry-key-value](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-tags#add-device-tags-by-setting-a-registry-key-value)  
+As part of your onboarding, you may want to consider setting a machine tag to be able to differentiate WVD machines more easily in the Microsoft Security Center. For more information, see 
+[https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/machine-tags#add-device-tags-by-setting-a-registry-key-value](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-tags#add-device-tags-by-setting-a-registry-key-value). 
 
 #### Other recommended configuration settings 
 
 When building your golden image, you may want to configure initial protection settings as well. For more information, see [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp#other-recommended-configuration-settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-gp#other-recommended-configuration-settings). 
 
-In addition, if you’re using FSlogix user profiles, we recommend you exclude the following files from always-on protection: 
+In addition, if you are using FSlogix user profiles, we recommend you exclude the following files from always-on protection: 
 
-Exclude Files:  
+**Exclude Files:** 
+
 %ProgramFiles%\FSLogix\Apps\frxdrv.sys 
 %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys 
 %ProgramFiles%\FSLogix\Apps\frxccd.sys 
@@ -118,7 +119,7 @@ Exclude Files:
 \\storageaccount.file.core.windows.net\share\*\*.VHD 
 \\storageaccount.file.core.windows.net\share\*\*.VHDX 
 
-Exclude Processes: 
+**Exclude Processes:**
 
 %ProgramFiles%\FSLogix\Apps\frxccd.exe 
 %ProgramFiles%\FSLogix\Apps\frxccds.exe 
@@ -126,4 +127,4 @@ Exclude Processes:
 
 #### Licensing requirements 
 
-Windows 10 Multi-session is a client OS. Licensing requirements for Microsoft Defender Advanced Threat Protection can be found at: [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements)
+Windows 10 Multi-session is a client OS. Licensing requirements for Microsoft Defender Advanced Threat Protection can be found at: [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#licensing-requirements).
