@@ -97,7 +97,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuration|Turn on/off passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
 |Diagnostics  |Change the log level                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create`                                                         |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create --path [path]`                                                         |
 |Health       |Check the product's health                 |`mdatp health`                                                                    |
 |Health       |Check for a spefic product attribute       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |Protection   |Scan a path                                |`mdatp scan custom --path [path]`                                                 |
