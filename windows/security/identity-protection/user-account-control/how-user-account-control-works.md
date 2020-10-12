@@ -278,7 +278,7 @@ The slider will never turn UAC completely off. If you set it to <b>Never notify<
 
 > **Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
 > 
-> **Warning:**  Some Universal Windows apps may not work when UAC is disabled.
+> **Warning:**  Some Universal Windows Platform apps may not work when UAC is disabled.
  
 ### Virtualization
 
