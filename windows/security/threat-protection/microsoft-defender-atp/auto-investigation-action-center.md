@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security-compliance 
-- m365-initiative-defender-endpoint
+- m365initiative-defender-endpoint 
 ms.topic: article
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 09/24/2020
