@@ -14,6 +14,8 @@ manager: dansimp
 
 # Policy CSP - RestrictedGroups
 
+> [!IMPORTANT]
+> It is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy to configure members (users or AAD groups) to a Windows 10 local group.
 
 <hr/>
 
