@@ -2515,7 +2515,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </ul>
 <p>Added a new section:</p>
 <ul>
-<li><a href="policy-csps-supported-by-group-policy.md" data-raw-source="[[Policy CSPs supported by Group Policy](policy-csps-supported-by-group-policy.md)">[Policy CSPs supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+<li><a href="policy-csps-supported-by-group-policy.md" data-raw-source="[[Policies in Policy CSP supported by Group Policy](policy-csps-supported-by-group-policy.md)">[Policies in Policy CSP supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
 </ul>
 </td></tr>
 <tr>
