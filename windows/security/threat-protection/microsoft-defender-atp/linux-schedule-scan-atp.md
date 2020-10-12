@@ -19,16 +19,16 @@ ms.topic: conceptual
 
 # Schedule scans with Microsoft Defender ATP for Linux
 
-For the command line to be able to run a scan on MDATP for Linux, see [Supported Commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-resources#supported-commands).
+To run a scan on MDATP for Linux, see [Supported Commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-resources#supported-commands).
 
-Linux (and Unix) have the tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
+Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
 
 ## Pre-requisite
 
 > [!NOTE]
 
-> To get a list of all the time zones, run the following command: 
-`timedatectl list-timezones`
+> To get a list of all the time zones, run the following command:
+> `timedatectl list-timezones`
 
 > Examples for timezones:
 > - `America/Los_Angeles`
@@ -37,6 +37,7 @@ Linux (and Unix) have the tool called **crontab** (similar to Task Scheduler) to
 >- `America/Denver`
 
 ## To set the Cron job
+Use the following commands:
 
 **To backup crontab entries:**
 
@@ -66,7 +67,7 @@ CRON_TZ=America/Los_Angeles
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
 
 > [!NOTE]
-In this example, we are setting it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC –8)
+In this example, we have  set it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC –8).
 
 Press “Esc”
 
@@ -75,33 +76,36 @@ Type “:wq” without the double quotes.
 > [!NOTE]
  w == write, q == quit
 
-To view your cron jobs, type sudo crontab -l
+To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="../../../../images/linux-mdatp.png" alt-text="linux mdatp":::
+:::image type="content" source="..\images\linux-mdatp.png" alt-text="linux mdatp":::
 
-**How to inspect cron job runs:**
+**To inspect cron job runs:**
 
 `sudo grep mdatp /var/log/cron`
 
-**How to inspect the mdatp_cron_job.log**
+**To inspect the mdatp_cron_job.log**
+
 `sudo nano mdatp_cron_job.log`
 
 ## For those who use Ansible, Chef, or Puppet]
-### How to set cron jobs in Ansible:
+
+Use the following commands:
+### To set cron jobs in Ansible:
 
 `cron – Manage cron.d and crontab entries`
 
 See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
-### How to set crontabs in Chef:
+### To set crontabs in Chef:
 `cron resource`
 
 See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.
 
-### How to set cron jobs in Puppet:
+### To set cron jobs in Puppet:
 Resource Type: cron
 
-See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html)
+See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.
 
 Automating with Puppet: Cron jobs and scheduled tasks
 
@@ -110,6 +114,7 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 ## Additional information:
 
 **To get help with crontab**
+
 `man crontab`
 
 **To get a list of crontab file of the current user:**
@@ -161,6 +166,7 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 | | | +——- month (values: 1 – 12) (special characters: ,- * / )
 | | | | +—- day of week (values: 0 – 6) (Sunday=0 or 7) (special characters: , – * / L W C)
 | | | | |
-* * * * * command to be executed
+
+*****command to be executed
 
 
