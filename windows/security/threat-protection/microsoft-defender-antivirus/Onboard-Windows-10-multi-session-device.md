@@ -10,8 +10,8 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro 
 ms.topic: article 
-author: Lovina-Saldanha
-ms.author: Lovina-Saldanha
+author: dansimp
+ms.author: dansimp
 ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: 
