@@ -58,10 +58,10 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
 - Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
   - Set it to **Enabled** and select **Disable Authenticated Proxy usage**:
-  ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
+  ![Image of Group Policy setting1](images/atp-gpo-proxy1.png)
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
   - Configure the proxy:<br>
-    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
+    ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
 
     The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
