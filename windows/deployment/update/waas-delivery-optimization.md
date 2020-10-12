@@ -193,7 +193,7 @@ If you don’t see any bytes coming from peers the cause might be one of the fol
 - Clients aren’t able to reach the Delivery Optimization cloud services.
 - The cloud service doesn’t see other peers on the network. 
 - Clients aren’t able to connect to peers that are offered back from the cloud service.
-- None of the computers on the network are peering.
+- None of the computers on the network are getting updates from peers.
 
 
 ### Clients aren't able to reach the Delivery Optimization cloud services.
@@ -223,14 +223,14 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 
-### None of the computers on the network are peering
+### None of the computers on the network are getting updates from peers
 
-If you suspect this is the problem, check Delivery Optimization settings that could limit participation in Peer Caching. Check whether the following settings in assigned group policies, local group policies, and MDM policies are too restrictive:
+If you suspect this is the problem, check Delivery Optimization settings that could limit participation in peer caching. Check whether the following settings in assigned group policies, local group policies, are MDM policies are too restrictive:
 
-- Minimum RAM (inclusive) allowed to use Peer Caching.
-- Minimum disk size allowed to use Peer Caching.
-- Enable Peer Caching while the device connects via VPN.
-- Allow uploads when the device is on battery while under the set battery level.
+- Minimum RAM (inclusive) allowed to use peer caching
+- Minimum disk size allowed to use peer caching
+- Enable peer caching while the device connects using VPN.
+- Allow uploads when the device is on battery while under the set battery level
 
 
 
