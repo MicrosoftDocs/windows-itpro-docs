@@ -54,14 +54,12 @@ In addition, BitLocker offers the option to lock the normal startup process unti
 On computers that do not have TPM 1.2 or higher versions, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume it from hibernation, and does not provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
 ### BitLocker key protectors
-
 | Key protector | Description |
 | - | - |
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
 | Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
 | Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
-**Question:Is the conjunction with a TPM on TPM-enabled computers? The flow of the sentence requires the mention of the computer type**
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard are not responding, you can always use the function keys (F1-F10) to input the numbers.|
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
 
