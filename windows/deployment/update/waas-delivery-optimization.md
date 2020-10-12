@@ -227,7 +227,7 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 
 If you suspect this is the problem, check Delivery Optimization settings that could limit participation in Peer Caching. Check whether the following settings in assigned group policies, local group policies, and MDM policies are too restrictive:
 
-- Minimum RAM (inclusive) allowed to use Peer Caching
+- Minimum RAM (inclusive) allowed to use Peer Caching.
 - Minimum disk size allowed to use Peer Caching
 - Enable Peer Caching while the device connects via VPN
 - Allow uploads while the device is on battery while under set Battery level
