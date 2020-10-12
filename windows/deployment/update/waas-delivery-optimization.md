@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection:
 - M365-modern-desktop
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.topic: article
 ---
 
