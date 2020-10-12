@@ -225,7 +225,7 @@ If you suspect this is the problem, try a Telnet test between two devices on the
 
 ### None of the computers on the network are peering
 
-If you suspect this is the problem, check Delivery Optimization settings that could limit participation in Peer Caching. Check following settings in assigned group policies, local group policies and MDM policies, whether they are too restrictive:
+If you suspect this is the problem, check Delivery Optimization settings that could limit participation in Peer Caching. Check whether the following settings in assigned group policies, local group policies, and MDM policies are too restrictive:
 
 - Minimum RAM (inclusive) allowed to use Peer Caching
 - Minimum disk size allowed to use Peer Caching
