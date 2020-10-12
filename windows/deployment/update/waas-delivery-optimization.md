@@ -230,7 +230,7 @@ If you suspect this is the problem, check Delivery Optimization settings that co
 - Minimum RAM (inclusive) allowed to use Peer Caching.
 - Minimum disk size allowed to use Peer Caching.
 - Enable Peer Caching while the device connects via VPN
-- Allow uploads while the device is on battery while under set Battery level
+- Allow uploads when the device is on battery while under the set battery level.
 
 
 
