@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/06/2020
+ms.date: 10/08/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -110,11 +110,14 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-* Add more telemetry events
-* Improved scan event telemetry
-* Improved behavior monitoring for memory scans
-* Improved macro streams scanning
-* Added `AMRunningMode` to Get-MpComputerStatus PowerShell CmdLet
+
+- Add more telemetry events
+- Improved scan event telemetry
+- Improved behavior monitoring for memory scans
+- Improved macro streams scanning
+- Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
+- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
+
 
 ### Known Issues
 No known issues  
