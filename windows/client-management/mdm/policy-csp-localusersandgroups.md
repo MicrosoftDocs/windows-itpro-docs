@@ -14,6 +14,8 @@ manager: dansimp
 
 # Policy CSP - LocalUsersAndGroups
 
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -92,7 +94,7 @@ Here's an example of the policy definition XML for group configuration:
 
 where:
 
-- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to look up the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing. 
+- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing. 
 - `<group action>`: Specifies the action to take on the local group, which can be Update and Restrict, represented by U and R: 
     - Update. This action must be used to keep the current group membership intact and add or remove members of the specific group.
     - Restrict. This action must be used to replace current membership with the newly specified groups. This action provides the same functionality as the [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting.
@@ -104,8 +106,8 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 > [!IMPORTANT]
 > - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
-> - Remove member is not valid for the R (Restrict) action and will be ignored if present.
-> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order of presence.
+> - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
+> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
 
 <!--/Description-->
 <!--SupportedValues-->
