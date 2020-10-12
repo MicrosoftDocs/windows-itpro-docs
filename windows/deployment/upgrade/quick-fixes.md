@@ -158,11 +158,11 @@ To check and repair system files:
 
 ### Repair unsigned drivers
 
-Drivers that are not properly signed can block the upgrade process. Drivers might not be properly signed if you:
+[Drivers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/what-is-a-driver-) are files ending in *.dll or *.sys that are used to communicate with hardware components.  Because drivers are so important, they are cryptographically signed to ensure they are genuine. Drivers with a *.sys extension that are not properly signed frequently block the upgrade process. Drivers might not be properly signed if you:
 - Disabled driver signature verification (highly not recommended).
 - A catalog file used to sign a driver is corrupt or missing.
 
-Catalog files are used to sign drivers. If a catalog file is corrupt or missing, the driver will appear to be unsigned, even though it should be signed. This can cause the upgrade process to fail. To restore the catalog file, reinstall the driver or copy the catalog file from another device. You might need to analyze another device to determine the catalog file that is associated with the unsigned driver.  All drivers should be signed to ensure the upgrade process works.
+ Catalog files (files with a *.cat extension) are used to sign drivers. If a catalog file is corrupt or missing, the driver will appear to be unsigned, even though it should be signed. To restore the catalog file, reinstall the driver or copy the catalog file from another device. You might need to analyze another device to determine the catalog file that is associated with the unsigned driver.  All drivers should be signed to ensure the upgrade process works.
 
 To check your system for unsigned drivers:
 
@@ -178,7 +178,7 @@ To check your system for unsigned drivers:
 7. After the scanning process is complete, if you see **Your files have been scanned and verified as digitally signed** then you have no unsigned drivers. Otherwise, you will see **The following files have not been digitally signed** and a list will be provided with name, location, and version of all unsigned drivers.
 8. To view and save a log file, click **Advanced**, and then click **View Log**. Save the log file if desired.
 9. Locate drivers in the log file that are unsigned, write down the location and file names. Also write down the catalog that is associated to the driver if it is provided. If the name of a catalog file is not provided you might need to analyze another device that has the same driver with sigverif and sigcheck (described below).
-10. Download [sigcheck.zip](https://download.sysinternals.com/files/Sigcheck.zip) and extract the tool to a directory on your computer, for example: **C:\sigcheck**.
+10. The next step is to check that the driver reported as unsigned by sigverif.exe has a problem. In some cases, sigverif.exe might not be successful at locating the catalog file used to sign a driver, even though the catalog file exists. To perform a detailed driver check, download [sigcheck.zip](https://download.sysinternals.com/files/Sigcheck.zip) and extract the tool to a directory on your computer, for example: **C:\sigcheck**.
 
     [Sigcheck](https://docs.microsoft.com/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. To use sigcheck:
 
@@ -208,6 +208,8 @@ To check your system for unsigned drivers:
 		    Valid to:	11:46 AM 5/9/2018
             (output truncated)
     ```
+    In the example above, the afd.sys driver is properly signed by the catalog file Package_163_for_KB4054518~31bf3856ad364e35~x86~~6.1.1.2.cat. 
+
 
 13. Optionally, you can generate a list of drivers using driverquery.exe, which is included with Windows. To save a list of signed and unsigned drivers with driverquery, type **driverquery /si > c:\drivers.txt** and press ENTER. See the following example:
 
