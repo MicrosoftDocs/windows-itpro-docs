@@ -55,7 +55,7 @@ On computers that do not have TPM 1.2 or higher versions, you can still use BitL
 
 ### BitLocker key protectors
 
-| Key protector | Description |
+|**Key protector** | **Description** |
 | - | - |
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
