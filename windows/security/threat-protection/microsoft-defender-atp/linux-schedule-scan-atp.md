@@ -27,33 +27,31 @@ Linux (and Unix) have the tool called **crontab** (similar to Task Scheduler) to
 
 > [!NOTE]
 
-To get a list of all the time zones, run the following command: 
-
-timedatectl list-timezones
+> To get a list of all the time zones, run the following command: 
+`timedatectl list-timezones`
 
 > Examples for timezones:
-America/Los_Angeles
-America/New_York
-America/Chicago
-America/Denver
+> - `America/Los_Angeles`
+> - `America/New_York`
+>- `America/Chicago`
+>- `America/Denver`
 
 ## To set the Cron job
 
 **To backup crontab entries:**
 
-sudo crontab -l > /var/tmp/cron_backup_200919.dat
+`sudo crontab -l > /var/tmp/cron_backup_200919.dat`
 
 > [!NOTE]
-
-Where 200919 == YRMMDD
+> Where 200919 == YRMMDD
 
 > TIP: 
 Do this before you edit or remove.
-To edit the crontab and add a new job as a root user:
-sudo crontab -e
+To edit the crontab, and add a new job as a root user:
+`sudo crontab -e`
 
 > [!NOTE]
-> The default editor is VIM
+> The default editor is VIM.
 
 You might see:
 
@@ -72,7 +70,7 @@ In this example, we are setting it to 00 minutes, 2 a.m. (hour in 24 hour format
 
 Press “Esc”
 
-Type “:wq” w/o the double quotes.
+Type “:wq” without the double quotes.
 
 > [!NOTE]
  w == write, q == quit
@@ -83,22 +81,22 @@ To view your cron jobs, type sudo crontab -l
 
 **How to inspect cron job runs:**
 
-sudo grep mdatp /var/log/cron
+`sudo grep mdatp /var/log/cron`
 
 **How to inspect the mdatp_cron_job.log**
-sudo nano mdatp_cron_job.log
+`sudo nano mdatp_cron_job.log`
 
-## For those of you that are using Ansible, Chef, or Puppet]
+## For those who use Ansible, Chef, or Puppet]
 ### How to set cron jobs in Ansible:
 
-cron – Manage cron.d and crontab entries
+`cron – Manage cron.d and crontab entries`
 
-See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html)
+See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
 ### How to set crontabs in Chef:
-cron resource
+`cron resource`
 
-See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/)
+See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.
 
 ### How to set cron jobs in Puppet:
 Resource Type: cron
@@ -107,50 +105,50 @@ See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs
 
 Automating with Puppet: Cron jobs and scheduled tasks
 
-See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)
+See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
 
 ## Additional information:
 
 **To get help with crontab**
-man crontab
+`man crontab`
 
 **To get a list of crontab file of the current user:**
 
-crontab -l
+`crontab -l`
 
 **To get a list of crontab file of another user:**
 
-crontab -u username -l
+`crontab -u username -l`
 
 **To backup crontab entries:**
 
-crontab -l > /var/tmp/cron_backup.dat
+`crontab -l > /var/tmp/cron_backup.dat`
 > [!TIP]
 > Do this before you edit or remove.
 
 **To restore crontab entries:**
 
-crontab /var/tmp/cron_backup.dat
+`crontab /var/tmp/cron_backup.dat`
 
 **To edit the crontab and add a new job as a root user:**
 
-Sudo crontab -e
+`Sudo crontab -e`
 
 **To edit the crontab and add a new job:**
 
-crontab -e
+`crontab -e`
 
 **To edit other user’s crontab entries:**
 
-crontab -u username -e
+`crontab -u username -e`
 
 **To remove all crontab entries:**
 
-crontab -r
+`crontab -r`
 
 **To remove other user’s crontab entries:**
 
-crontab -u username -r
+`crontab -u username -r`
 
 **Explanation**:
 
