@@ -17,7 +17,7 @@ ms.custom:
 - edr
 ms.collection: 
 - m365-security-compliance 
-- m365-initiative-defender-endpoint
+- m365initiative-defender-endpoint 
 ---
 
 # Client behavioral blocking
