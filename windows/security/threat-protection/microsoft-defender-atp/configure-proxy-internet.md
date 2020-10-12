@@ -147,7 +147,7 @@ The information below list the proxy and firewall configuration information requ
 
 ## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
 
-Please see the following guidance to eliminate the wildcard (*) requirement for your specific enviornment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows (Windows 7 SP1, Windows 8.1 and Windows Server 2008 R2 SP1, 2012 R2 and 2016):
+Please see the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows (Windows 7 SP1, Windows 8.1 and Windows Server 2008 R2 SP1, 2012 R2 and 2016):
 1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Microsoft Defender for Endpoint (please refer to [Onboard previous versions of Windows on Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2010326)).
 
 2.	Ensure the machine is successfully reporting into the Microsoft Defender Security Center portal.
