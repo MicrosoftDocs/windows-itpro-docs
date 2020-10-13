@@ -19,6 +19,9 @@ f1.keywords: NOCSH
 
 # Make the switch to Microsoft Defender ATP and Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## Migration guides
 
 If you're considering switching from a non-Microsoft threat protection solution to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) with Microsoft Defender Antivirus, check out our migration guidance.

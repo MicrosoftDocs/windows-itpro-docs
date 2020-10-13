@@ -21,6 +21,9 @@ hideEdit: true
 
 # Microsoft Defender ATP for iOS application license terms
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 ## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER ATP
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or

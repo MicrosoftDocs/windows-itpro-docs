@@ -9,6 +9,7 @@
 ### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
 ### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
+### [Microsoft Defender ATP for non-Windows platforms](microsoft-defender-atp/non-windows.md)
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 
@@ -223,7 +224,13 @@
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
-##### [JAMF-based deployment](microsoft-defender-atp/mac-install-with-jamf.md)
+##### [JAMF Pro-based deployment]()
+###### [Deploying Microsoft Defender ATP for macOS using Jamf Pro](microsoft-defender-atp/mac-install-with-jamf.md)
+###### [Login to Jamf Pro](microsoft-defender-atp/mac-install-jamfpro-login.md)
+###### [Set up device groups](microsoft-defender-atp/mac-jamfpro-device-groups.md)
+###### [Set up policies](microsoft-defender-atp/mac-jamfpro-policies.md)
+###### [Enroll devices](microsoft-defender-atp/mac-jamfpro-enroll-devices.md)
+
 ##### [Deployment with a different Mobile Device Management (MDM) system](microsoft-defender-atp/mac-install-with-other-mdm.md)
 ##### [Manual deployment](microsoft-defender-atp/mac-install-manually.md)
 #### [Update](microsoft-defender-atp/mac-updates.md)
@@ -242,6 +249,10 @@
 
 #### [Privacy](microsoft-defender-atp/mac-privacy.md)
 #### [Resources](microsoft-defender-atp/mac-resources.md)
+
+
+### [Microsoft Defender Advanced Threat Protection for iOS]()
+#### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
@@ -280,6 +291,11 @@
 #### [Configure]()
 ##### [Configure Microsoft Defender ATP for Android features](microsoft-defender-atp/android-configure.md)
 
+#### [Privacy]()
+##### [Microsoft Defender ATP for Android - Privacy information](microsoft-defender-atp/android-privacy.md)
+
+#### [Troubleshoot]()
+##### [Troubleshoot issues](microsoft-defender-atp/android-support-signin.md)
 
 
 ### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)

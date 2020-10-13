@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Configure and validate exclusions for Microsoft Defender ATP for Mac
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)

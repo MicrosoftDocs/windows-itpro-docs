@@ -19,6 +19,9 @@ ms.topic: article
 
 # Onboard Windows 10 devices using a local script
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

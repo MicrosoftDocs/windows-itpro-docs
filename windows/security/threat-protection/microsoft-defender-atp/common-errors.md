@@ -18,6 +18,9 @@ ms.topic: article
 
 # Common REST API error codes
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 * The error codes listed in the following table may be returned by an operation on any of Microsoft Defender ATP APIs.
 * Note that in addition to the error code, every error response contains an error message which can help resolving the problem.
 * Note that the message is a free text that can be changed.

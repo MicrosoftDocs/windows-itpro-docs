@@ -13,7 +13,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -23,6 +23,7 @@ ms.date: 09/22/2020
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows Server 2016 and newer
+- Azure Stack HCI, version 20H2
 
 This article applies to Windows 10, Windows Server, Surface Hub, and Hololens diagnostic data only. It describes the types of diagnostic data that’s sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -219,4 +220,3 @@ For more information about how to limit the diagnostic data to the minimum requi
 You can also change the privacy settings on a server running either the Azure Stack HCI operating system or Windows Server. For more information, see [Change privacy settings on individual servers](https://docs.microsoft.com/azure-stack/hci/manage/change-privacy-settings).
 
 To manage privacy settings in your enterprise as a whole, see [Manage enterprise diagnostic data](#manage-enterprise-diagnostic-data).
-

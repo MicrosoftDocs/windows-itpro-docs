@@ -20,6 +20,9 @@ ms.date: 04/24/2018
 
 # Microsoft Defender Antivirus compatibility with Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 

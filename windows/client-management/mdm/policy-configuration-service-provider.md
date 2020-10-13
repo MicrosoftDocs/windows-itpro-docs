@@ -361,9 +361,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-2" id="admx-dwm-dwmdefaultcolorizationcolor-2">ADMX_DWM/DwmDefaultColorizationColor_2</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisableaccentandgradient" id="admx-dwm-dwmdisableaccentandgradient">ADMX_DWM/DwmDisableAccentAndGradient</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowanimations-1" id="admx-dwm-dwmdisallowanimations-1">ADMX_DWM/DwmDisallowAnimations_1</a>
   </dd>
   <dd>
@@ -374,12 +371,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowcolorizationcolorchanges-2" id="admx-dwm-dwmdisallowcolorizationcolorchanges-2">ADMX_DWM/DwmDisallowColorizationColorChanges_2</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowflip3d-1" id="admx-dwm-dwmdisallowflip3d-1">ADMX_DWM/DwmDisallowFlip3D_1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowflip3d-2" id="admx-dwm-dwmdisallowflip3d-2">ADMX_DWM/DwmDisallowFlip3D_2</a>
   </dd>
 </dl>
 
