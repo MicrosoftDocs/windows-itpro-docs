@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 To run a scan on MDATP for Linux, see [Supported Commands](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-resources#supported-commands).
 
-Linux (and Unix) have a tool called **crontab**(similar to Task Scheduler) to be able to run scheduled tasks.
+Linux(and Unix) have a tool called **crontab**(similar to Task Scheduler) to be able to run scheduled tasks.
 
 ## Pre-requisite
 
