@@ -75,16 +75,18 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
+Available in Windows 10, version 2010. This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
 
 > [!NOTE]
 > The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or AAD groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
+>
+> Starting from Windows 10, version 2010, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
 
 Here's an example of the policy definition XML for group configuration:
 
 ```xml
 <GroupConfiguration>
-    <accessgroup desc = "Backup Operators">
+    <accessgroup desc = "">
         <group action = ""/> 
             <add member = ""/>
             <remove member = ""/>
@@ -101,6 +103,9 @@ where:
 - `<add member>`: Specifies the SID or name of the member to configure.
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
+    > [!NOTE]
+    > When specifying member names of domain accounts, use fully qualified account names where possible (for example, domain_name\user_name) instead of isolated names (for example, group_name). Doing so prevents getting ambiguous results when users or groups with the same name exist in multiple domains and locally. See [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
+
 See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
@@ -116,19 +121,25 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 **Examples**
 
-Example: Update action for adding and removing group members:
+Example: Update action for adding and removing group members.
+
+The following example shows how you can update a local group (**Backup Operators**), add a domain group as a member using its name (**Contoso\ITAdmins**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), add a AAD group by its SID (**S-1-5-32-678909-99338456-74654332**), and remove a local account (**Guest**). 
 
 ```xml
 <GroupConfiguration> 
     <accessgroup desc = "Backup Operators"> 
         <group action = "U" /> 
-        <add member = "S-1-5-544"/> 
+        <add member = "Contoso\ITAdmins"/>
+        <add member = "S-1-5-32-544"/>
+        <add member = "S-1-5-32-678909-99338456-74654332"/>
         <remove member = "Guest"/> 
     </accessgroup> 
 </GroupConfiguration>
 ```
 
-Example: Restrict action for replacing the group membership:
+Example: Restrict action for replacing the group membership.
+
+The following example shows how you can restrict a local group (**Backup Operators**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), and add a local account (**Guest**).
 
 ```xml
 <GroupConfiguration>
@@ -160,15 +171,15 @@ When configuring the built-in Administrators group with the R (Restrict) action,
 
 ### Can I add a member that already exists?
 
-Yes, you can add a member that is already a member of a group.
+Yes, you can add a member that is already a member of a group. This will result in no changes to the group and no error. 
 
 ### Can I remove a member if it isn't a member of the group?
 
-Yes, you can remove a member even if it isn't a member of the group.
+Yes, you can remove a member even if it isn't a member of the group. This will result in no changes to the group and no error.
 
 ### How can I add a domain group as a member to a local group?
 
-To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group.
+To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group. Use fully qualified account names (for example, domain_name\group_name) instead of isolated names (for example, group_name) for the best results. See [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
 
 ### Can I apply more than one LocalUserAndGroups policy/XML to the same device?
 
@@ -214,14 +225,6 @@ To troubleshoot Name/SID lookup APIs:
 
 Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 - 9 - Available in Windows 10, version 2010.
 
 <!--/Policies-->
