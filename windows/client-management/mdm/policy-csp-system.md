@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/12/2020
+ms.date: 10/13/2020
 ms.reviewer: 
 manager: dansimp
 ---
