@@ -161,7 +161,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <thead>
 <tr class="header">
 <th>ErrorContext value</th>
-<th>Stage where error occured</th>
+<th>Stage where error occurred</th>
 <th>Description and suggestions</th>
 </tr>
 </thead>
