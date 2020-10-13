@@ -88,7 +88,7 @@ To view your cron jobs, type `sudo crontab -l`
 
 `sudo nano mdatp_cron_job.log`
 
-## For those who use Ansible, Chef, or Puppet]
+## For those who use Ansible, Chef, or Puppet
 
 Use the following commands:
 ### To set cron jobs in Ansible:
