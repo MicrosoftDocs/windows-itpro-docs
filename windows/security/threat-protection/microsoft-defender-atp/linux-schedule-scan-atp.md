@@ -26,10 +26,8 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 ## Pre-requisite
 
 > [!NOTE]
-
 > To get a list of all the time zones, run the following command:
 > `timedatectl list-timezones`
-
 > Examples for timezones:
 > - `America/Los_Angeles`
 > - `America/New_York`
@@ -67,14 +65,14 @@ CRON_TZ=America/Los_Angeles
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
 
 > [!NOTE]
-In this example, we have  set it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC –8).
+>In this example, we have  set it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC –8).
 
 Press “Esc”
 
 Type “:wq” without the double quotes.
 
 > [!NOTE]
- w == write, q == quit
+> w == write, q == quit
 
 To view your cron jobs, type `sudo crontab -l`
 
