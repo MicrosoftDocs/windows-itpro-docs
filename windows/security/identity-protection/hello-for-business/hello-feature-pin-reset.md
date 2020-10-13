@@ -66,9 +66,6 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 3. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration->Administrative Templates->Windows Components->Windows Hello for Business**.
 4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC.
 
-### Configure Windows devices to use PIN reset using Microsoft Intune
-
-To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/intune/custom-settings-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
 
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
