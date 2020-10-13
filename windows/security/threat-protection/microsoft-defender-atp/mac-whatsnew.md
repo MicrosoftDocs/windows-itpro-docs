@@ -49,7 +49,7 @@ ms.topic: conceptual
   > [!NOTE]
   > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
 
-- Extended `mdatp diagnostic create` with a new parameter (`--path`) that allows the diagnostic logs to be saved to a different location
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
 - Performance improvements & bug fixes
 
 ## 101.09.49
