@@ -80,7 +80,7 @@ Available in Windows 10, version 2010. This policy setting allows IT admins to a
 > [!NOTE]
 > The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or AAD groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
-> Starting from Windows 10, version 2010, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
+> Starting from Windows 10, version 2010, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
 
 Here's an example of the policy definition XML for group configuration:
 
@@ -145,7 +145,7 @@ The following example shows how you can restrict a local group (**Backup Operato
 <GroupConfiguration>
     <accessgroup desc = "Backup Operators">
         <group action = "R" />
-        <add member = "S-1-5-544"/>
+        <add member = "S-1-5-32-544"/>
         <add member = "Guest"/>
     </accessgroup>
 </GroupConfiguration>
