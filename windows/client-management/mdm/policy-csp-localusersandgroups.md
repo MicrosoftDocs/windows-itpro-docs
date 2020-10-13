@@ -159,6 +159,8 @@ The following example shows how you can restrict a local group (**Backup Operato
 
 ## FAQs
 
+This section provides answers to some common questions you might have about the LocalUsersAndGroups policy CSP. 
+
 ### What happens if I accidentally remove the built-in Administrator SID from the Administrators group?
 
 Removing the built-in Administrator account from the built-in Administrators group is blocked at SAM/OS level for security reasons. Attempting to do so will result in failure with the following error: 
