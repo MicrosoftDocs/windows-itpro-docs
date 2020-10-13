@@ -104,7 +104,7 @@ where:
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of domain accounts, use fully qualified account names where possible (for example, domain_name\user_name) instead of isolated names (for example, group_name). Doing so prevents getting ambiguous results when users or groups with the same name exist in multiple domains and locally. See [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
+    > When specifying member names of domain accounts, use fully qualified account names where possible (for example, domain_name\user_name) instead of isolated names (for example, group_name). This way, you can avoid getting ambiguous results when users or groups with the same name exist in multiple domains and locally. See [LookupAccountNameA function](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
 
 See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
