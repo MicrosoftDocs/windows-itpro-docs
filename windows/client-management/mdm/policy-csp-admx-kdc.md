@@ -133,7 +133,7 @@ Impact on domain controller performance when this policy setting is enabled:
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *KDC support for claims, compound authentication and Kerberos armoring*
--   GP name: *EnableCbacAndArmor*
+-   GP name: *CbacAndArmor*
 -   GP path: *System/KDC*
 -   GP ADMX file name: *kdc.admx*
 
@@ -204,7 +204,7 @@ To ensure consistent behavior, this policy setting must be supported and set ide
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Use forest search order*
--   GP name: *UseForestSearch*
+-   GP name: *ForestSearch*
 -   GP path: *System/KDC*
 -   GP ADMX file name: *kdc.admx*
 
@@ -420,7 +420,7 @@ If you disable or do not configure this policy setting, the threshold value defa
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Warning for large Kerberos tickets*
--   GP name: *EnableTicketSizeThreshold*
+-   GP name: *TicketSizeThreshold*
 -   GP path: *System/KDC*
 -   GP ADMX file name: *kdc.admx*
 
@@ -494,7 +494,7 @@ If you disable or do not configure this policy setting, the domain controller do
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Provide information about previous logons to client computers*
--   GP name: *EmitLILI*
+-   GP name: *emitlili*
 -   GP path: *System/KDC*
 -   GP ADMX file name: *kdc.admx*
 
