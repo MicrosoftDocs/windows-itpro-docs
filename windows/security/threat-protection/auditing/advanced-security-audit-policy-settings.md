@@ -42,7 +42,7 @@ Configuring policy settings in this category can help you document attempts to a
 -   [Audit Credential Validation](audit-credential-validation.md)
 -   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 -   [Audit Kerberos Service Ticket Operations](audit-kerberos-service-ticket-operations.md)
--   [Audit Other Logon/Logoff Events](audit-other-logonlogoff-events.md)
+-   [Audit Other Account Logon Events](audit-other-account-logon-events.md)
 
 ## Account Management
 
