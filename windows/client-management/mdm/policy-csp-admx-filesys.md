@@ -106,7 +106,7 @@ Available in Windows 10 Insider Preview Build 20185. Compression can add to the 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow compression on all NTFS volumes*
--   GP name: *NtfsDisableCompression*
+-   GP name: *DisableCompression*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
 
@@ -237,7 +237,7 @@ Available in Windows 10 Insider Preview Build 20185. Encryption can add to the p
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Do not allow encryption on all NTFS volumes*
--   GP name: *NtfsDisableEncryption*
+-   GP name: *DisableEncryption*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
 
@@ -300,7 +300,7 @@ Available in Windows 10 Insider Preview Build 20185. Encrypting the page file pr
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable NTFS pagefile encryption*
--   GP name: *NtfsEncryptPagingFile*
+-   GP name: *EnablePagefileEncryption*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
 
@@ -428,7 +428,7 @@ If you enable short names on all volumes then short names will always be generat
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Short name creation options*
--   GP name: *NtfsDisable8dot3NameCreation*
+-   GP name: *ShortNameCreationSettings*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
 
@@ -502,7 +502,7 @@ For more information, refer to the Windows Help section.
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Selectively allow the evaluation of a symbolic link*
--   GP name: *SymlinkLocalToLocalEvaluation*
+-   GP name: *SymlinkEvaluation*
 -   GP path: *System/Filesystem*
 -   GP ADMX file name: *FileSys.admx*
 
@@ -565,7 +565,7 @@ Available in Windows 10 Insider Preview Build 20185. TXF deprecated features inc
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Enable / disable TXF deprecated features*
--   GP name: *NtfsEnableTxfDeprecatedFunctionality*
+-   GP name: *TxfDeprecatedFunctionality*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
 
