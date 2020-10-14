@@ -240,8 +240,6 @@ No. Local admins cannot change or modify tamper protection settings.
 
 If a devices is offboarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
 
-As an example, suppose that 
-
 ### Will there be an alert about tamper protection status changing in the Microsoft Defender Security Center?
 
 Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) under **Alerts**.
