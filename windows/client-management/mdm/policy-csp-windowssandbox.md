@@ -35,9 +35,6 @@ ms.date: 10/06/2020
     <a href="#windowssandbox-allowprinterredirection">WindowsSandbox/AllowPrinterRedirection</a>
   </dd>
   <dd>
-    <a href="#windowssandbox-allowprotectedclient">WindowsSandbox/AllowProtectedClient</a>
-  </dd>
-  <dd>
     <a href="#windowssandbox-allowvgpu">WindowsSandbox/AllowVGPU</a>
   </dd>
   <dd>
@@ -368,90 +365,6 @@ The following are the supported values:
 
 - 0 - Disabled
 - 1 (default) - Enabled
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowssandbox-allowprotectedclient"></a>**WindowsSandbox/AllowProtectedClient**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enabled increased-security settings on the Sandbox RDP session. These settings decrease the attack surface of the sandbox.
-
-> [!NOTE]
-> Enabling this setting may restrict user's ability to copy and paste files in and out of Windows Sandbox. 
-
-If this policy is not configured, end-users get the default behavior (Sandbox does not run in protected client mode). 
-
-If protected client mode is enabled, a user will not be able to disable protected client mode from their own configuration file. 
-
-If protected client mode is disabled, a user will be able to enable protected client mode from their own configuration file to make the device more secure. 
-
-> [!NOTE]
-> You must restart Windows Sandbox for any changes to this policy setting to take effect.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info: 
-- GP English Name: *Run Windows Sandbox in Protected Client Mode*
-- GP name: *AllowProtectedClient*
-- GP path: *Windows Components/Windows Sandbox*
-- GP ADMX file name: *WindowsSandbox.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:
-
-- 0 (default) - Disabled
-- 1 - Enabled
 
 <!--/SupportedValues-->
 <!--Example-->

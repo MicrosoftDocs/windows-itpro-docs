@@ -4888,9 +4888,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection" id="windowssandbox-allowprinterredirection">WindowsSandbox/AllowPrinterRedirection</a>
   </dd>
   <dd>
-    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowprotectedclient" id="windowssandbox-allowprotectedclient">WindowsSandbox/AllowProtectedClient</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-windowssandbox.md#windowssandbox-allowvgpu" id="windowssandbox-allowvgpu">WindowsSandbox/AllowVGPU</a>
   </dd>
   <dd>
