@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/06/2020
+ms.date: 10/08/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -74,39 +74,14 @@ All our updates contain:
 - serviceability improvements
 - integration improvements (Cloud, Microsoft 365 Defender)  
 <br/>
-<details>
-<summary> September-2020 (Platform: 4.18.2009.x | Engine: 1.1.17500.4)</summary>
-
-&ensp;Security intelligence update version: **1.323.2254.0**  
-&ensp;Released: **October 6, 2020**  
-&ensp;Platform: **4.18.2009.x**  
-&ensp;Engine: **1.1.17500.4**  
-&ensp;Support phase: **Security and Critical Updates**
-    
-### What's new
-
-- Admin permissions are required to restore files in quarantine
-- XML formatted events are now supported
-- CSP support for ignoring exclusion merge
-- New management interfaces for: <br/>
-   - UDP Inspection
-   - Network Protection on Server 2019
-   - IP Address exclusions for Network Protection
-- Improved visibility into TPM measurements 
-- Improved Office VBA module scanning
-
-### Known Issues
-No known issues  
-<br/>
-</details>
 
 
 <details>
-<summary> September-2020 (Platform: 4.18.2009.X | Engine: 1.1.17500.4)</summary>
+<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
 &ensp;Released: **October 01, 2020**  
-&ensp;Platform: **4.18.2009.X**  
+&ensp;Platform: **4.18.2009.7**  
 &ensp;Engine: **1.1.17500.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
@@ -135,11 +110,14 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-* Add more telemetry events
-* Improved scan event telemetry
-* Improved behavior monitoring for memory scans
-* Improved macro streams scanning
-* Added `AMRunningMode` to Get-MpComputerStatus PowerShell CmdLet
+
+- Add more telemetry events
+- Improved scan event telemetry
+- Improved behavior monitoring for memory scans
+- Improved macro streams scanning
+- Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
+- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
+
 
 ### Known Issues
 No known issues  
