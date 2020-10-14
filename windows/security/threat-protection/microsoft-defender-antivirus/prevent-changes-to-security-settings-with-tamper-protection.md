@@ -240,7 +240,7 @@ No. Local admins cannot change or modify tamper protection settings.
 
 ### What happens if my device is onboarded with Microsoft Defender for Endpoint and then goes into an off-boarded state?
 
-If a devices is offboarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
+If a device is off-boarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
 
 ### Will there be an alert about tamper protection status changing in the Microsoft Defender Security Center?
 
