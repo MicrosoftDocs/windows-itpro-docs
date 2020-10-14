@@ -22,12 +22,9 @@ ms.topic: article
 
 - Windows 10
 
-From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-joined-devices-setup).
+From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-joined-devices-setup). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 
 ![Remote Desktop Connection client](images/rdp.png)
-
-> [!TIP]
-> Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session.](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics)
 
 ## Set up
 
@@ -42,7 +39,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
     ![Allow remote connections to this computer](images/allow-rdp.png)
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**.
+  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users or groups to connect to the PC, you must allow remote connections for the specified users or groups. Click **Select Users -> Add** and enter the name of the user or group.
 
     > [!NOTE]
     > You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once, and then running the following PowerShell cmdlet:
@@ -55,12 +52,13 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
     > Otherwise this command throws the below error. For example:
     > - for cloud only user: "There is no such global user or group : *name*"
     > - for synced user: "There is no such global user or group : *name*" </br>
-    >
+    
+    > [!NOTE]
     > In Windows 10, version 1709, the user does not have to sign in to the remote device first.
     >
     > In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
-
-  4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
+   
+  4. Click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   > [!TIP]
   > When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
