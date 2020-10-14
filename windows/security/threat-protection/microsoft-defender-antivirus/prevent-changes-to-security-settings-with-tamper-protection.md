@@ -136,11 +136,16 @@ If you're using [version 2006 of Configuration Manager](https://docs.microsoft.c
 
 1. Set up tenant attach. See [Microsoft Endpoint Manager tenant attach: Device sync and device actions](https://docs.microsoft.com/mem/configmgr/tenant-attach/device-sync-actions).
 
-2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**. 
+2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**.<br/> 
 
-3. Configure tamper protection as part of the new policy.
+   - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)**.   
+   - In the **Profile** list, select **Windows Security experience (preview)**. <br/>
+   
+   The following screenshot illustrates how to create your policy:
 
-4. Deploy the policy to your device collection.
+   
+
+3. Deploy the policy to your device collection.
 
 Need help? See the following resources:
 
