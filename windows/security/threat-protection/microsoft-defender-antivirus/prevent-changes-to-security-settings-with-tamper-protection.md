@@ -218,7 +218,7 @@ Some sample Microsoft Defender Antivirus settings:
 
 ### For Microsoft Defender for Endpoint E5, is configuring tamper protection in Intune targeted to the entire organization only?
 
-Configuring tamper protection in Intune can be targeted to your entire organization as well as to specific devices and user groups.
+Configuring tamper protection in Intune or Microsoft Endpoint Manager can be targeted to your entire organization as well as to specific devices and user groups.
 
 ### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
 
