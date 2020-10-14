@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/08/2020
+ms.date: 10/14/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -123,7 +123,7 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 Example: Update action for adding and removing group members.
 
-The following example shows how you can update a local group (**Backup Operators**), add a domain group as a member using its name (**Contoso\ITAdmins**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), add a AAD group by its SID (**S-1-5-32-678909-99338456-74654332**), and remove a local account (**Guest**). 
+The following example shows how you can update a local group (**Backup Operators**)—add a domain group as a member using its name (**Contoso\ITAdmins**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), add a AAD group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**). 
 
 ```xml
 <GroupConfiguration> 
@@ -131,7 +131,7 @@ The following example shows how you can update a local group (**Backup Operators
         <group action = "U" /> 
         <add member = "Contoso\ITAdmins"/>
         <add member = "S-1-5-32-544"/>
-        <add member = "S-1-5-32-678909-99338456-74654332"/>
+        <add member = "S-1-12-1-111111111-22222222222-3333333333-4444444444"/>
         <remove member = "Guest"/> 
     </accessgroup> 
 </GroupConfiguration>
@@ -139,7 +139,7 @@ The following example shows how you can update a local group (**Backup Operators
 
 Example: Restrict action for replacing the group membership.
 
-The following example shows how you can restrict a local group (**Backup Operators**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), and add a local account (**Guest**).
+The following example shows how you can restrict a local group (**Backup Operators**)—replace its membership with the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids) and add a local account (**Guest**).
 
 ```xml
 <GroupConfiguration>
@@ -173,7 +173,7 @@ When configuring the built-in Administrators group with the R (Restrict) action,
 
 ### Can I add a member that already exists?
 
-Yes, you can add a member that is already a member of a group. This will result in no changes to the group and no error. 
+Yes, you can add a member that is already a member of a group. This will result in no changes to the group and no error.
 
 ### Can I remove a member if it isn't a member of the group?
 
