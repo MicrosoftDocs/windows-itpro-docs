@@ -284,7 +284,7 @@ For 4625(F): An account failed to log on.
 
 -   Monitor for all events with the fields and values in the following table:
 
-    | **Field**                                                                        | Value to monitor for                                                                                                                                                                                |
+    |  Field                                                                         | Value to monitor for                                                                                                                                                                                |
     |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This is typically not a security issue but it can be an infrastructure or availability issue. |
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                             |
