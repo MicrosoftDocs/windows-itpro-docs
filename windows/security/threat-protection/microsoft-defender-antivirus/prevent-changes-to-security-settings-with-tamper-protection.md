@@ -138,12 +138,13 @@ If you're using [version 2006 of Configuration Manager](https://docs.microsoft.c
 
 2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Antivirus**, and choose **+ Create Policy**.<br/> 
 
-   - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)**.   
+   - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)**.  
+     
    - In the **Profile** list, select **Windows Security experience (preview)**. <br/>
    
    The following screenshot illustrates how to create your policy:
 
-   
+   :::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows security experience in Endpoint Manager":::
 
 3. Deploy the policy to your device collection.
 
