@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security-compliance 
-- m365-initiative-defender-endpoint
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
@@ -42,6 +42,17 @@ ms.topic: conceptual
 > 
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+
+## 101.09.50
+
+- This product version has been validated on macOS Big Sur 11 beta 9
+- The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender ATP for Mac](mac-resources.md#configuring-from-the-command-line)
+
+  > [!NOTE]
+  > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
+
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+- Performance improvements & bug fixes
 
 ## 101.09.49
 
