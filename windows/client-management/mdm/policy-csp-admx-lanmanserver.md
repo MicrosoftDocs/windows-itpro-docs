@@ -116,7 +116,7 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Cipher suite order*
--   GP name: *CipherSuiteOrder*
+-   GP name: *Pol_CipherSuiteOrder*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
 
@@ -199,7 +199,7 @@ In circumstances where this policy setting is enabled, you can also select the f
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Hash Publication for BranchCache*
--   GP name: *HashPublicationForPeerCaching*
+-   GP name: *Pol_HashPublication*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
 
@@ -286,7 +286,7 @@ Hash version supported:
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Hash Version support for BranchCache*
--   GP name: *HashSupportVersion*
+-   GP name: *Pol_HashSupportVersion*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
 
@@ -358,7 +358,7 @@ If you disable or do not configure this policy setting, the SMB server will sele
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Honor cipher suite order*
--   GP name: *HonorCipherSuiteOrder*
+-   GP name: *Pol_HonorCipherSuiteOrder*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
 
