@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/06/2020
+ms.date: 10/14/2020
 ---
 
 # Policy CSP - WindowsSandbox
