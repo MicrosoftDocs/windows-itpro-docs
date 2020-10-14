@@ -307,6 +307,7 @@
 #### [WindowsInkWorkspace](policy-csp-windowsinkworkspace.md)
 #### [WindowsLogon](policy-csp-windowslogon.md)
 #### [WindowsPowerShell](policy-csp-windowspowershell.md)
+#### [WindowsSandbox](policy-csp-windowssandbox.md)
 #### [WirelessDisplay](policy-csp-wirelessdisplay.md)
 ### [PolicyManager CSP](policymanager-csp.md)
 ### [Provisioning CSP](provisioning-csp.md)
