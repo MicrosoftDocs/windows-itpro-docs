@@ -71,7 +71,7 @@ You'll use the access token to access the protected resource, which are detectio
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
-```syntax
+```http
 
 POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
@@ -124,14 +124,14 @@ CloudCreatedMachineTags | string | Device tags that were created in Microsoft De
 ### Request example
 The following example demonstrates how to retrieve all the detections in your organization.
 
-```syntax
+```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
 Authorization: Bearer <your access token>
 ```
 
 The following example demonstrates a request to get the last 20 detections since 2016-09-12 00:00:00.
 
-```syntax
+```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
 Authorization: Bearer <your access token>
 ```
