@@ -121,7 +121,7 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 **Examples**
 
-Example: Update action for adding and removing group members.
+Example 1: Update action for adding and removing group members.
 
 The following example shows how you can update a local group (**Backup Operators**)—add a domain group as a member using its name (**Contoso\ITAdmins**), add the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids), add a AAD group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**). 
 
@@ -137,7 +137,7 @@ The following example shows how you can update a local group (**Backup Operators
 </GroupConfiguration>
 ```
 
-Example: Restrict action for replacing the group membership.
+Example 2: Restrict action for replacing the group membership.
 
 The following example shows how you can restrict a local group (**Backup Operators**)—replace its membership with the built-in Administrators group using its [well known SID](https://docs.microsoft.com/windows/win32/secauthz/well-known-sids) and add a local account (**Guest**).
 
