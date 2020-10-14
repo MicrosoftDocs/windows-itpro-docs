@@ -189,7 +189,7 @@ No. Third-party antivirus offerings will continue to register with the Windows S
 
 ### What happens if Microsoft Defender Antivirus is not active on a device?
 
-Tamper protection will not have any impact on such devices.
+Devices that are onboarded to Microsoft Defender for Endpoint will have Microsoft Defender Antivirus running in passive mode. Tamper protection will continue to protect the service and its features. 
 
 ### How can I turn tamper protection on/off?
 
@@ -238,7 +238,7 @@ No. Local admins cannot change or modify tamper protection settings.
 
 ### What happens if my device is onboarded with Microsoft Defender for Endpoint and then goes into an off-boarded state?
 
-If a devices is offboarded from In this case, tamper protection status changes, and this feature is no longer applied.
+If a devices is offboarded from Microsoft Defender for Endpoint, tamper protection is turned on, which is the default state for unmanaged devices. 
 
 ### Will there be an alert about tamper protection status changing in the Microsoft Defender Security Center?
 
