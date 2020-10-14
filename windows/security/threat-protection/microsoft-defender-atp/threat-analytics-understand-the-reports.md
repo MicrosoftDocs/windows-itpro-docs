@@ -66,7 +66,13 @@ These detections are available on devices with Microsoft Defender Antivirus. On 
 
 | Detection type | Description |
 |--|--|
-| Antivirus | These detections are available on devices 
+| Antivirus | These detections are raised on devices running [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) to identify malware components using various anti-malware technologies. |
+| Endpoint detection and response | These detections constitute alerts on Microsoft Defender Security Center and are raised on [devices onboarded to Microsoft Defender for Endpoint](onboard-configure.md). These detections generally rely of security signals collected by the Microsoft Defender for Endpoint sensor, but also incorporates antivirus, network protection, and all other signals available on each device. |
+| Attack surface reduction rules| |
+
+
+
+
 
  
 
