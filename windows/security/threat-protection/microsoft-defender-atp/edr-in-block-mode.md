@@ -16,6 +16,9 @@ ms.custom:
 - next-gen
 - edr
 ms.date: 08/21/2020
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ---
 
 # Endpoint detection and response (EDR) in block mode
