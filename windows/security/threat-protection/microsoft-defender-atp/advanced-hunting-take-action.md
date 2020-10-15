@@ -38,7 +38,7 @@ To be able to take action through advanced hunting, you need a role in Microsoft
 
 ## Take various actions on devices
 
-You can take the following actions on devices identified by the `DeviceId` column in you query results:
+You can take the following actions on devices identified by the `DeviceId` column in your query results:
 
 - Isolate affected devices to contain an infection or prevent attacks from moving laterally
 - Collect investigation package to obtain more forensic information
