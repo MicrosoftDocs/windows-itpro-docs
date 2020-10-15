@@ -43,7 +43,7 @@ You can save a new or existing query so that it is only accessible to you or sha
    ![Image of saving a query](images/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
-    - **Shared queries** — shared to all users in the your organization
+    - **Shared queries** — shared to all users in your organization
     - **My queries** — accessible only to you
     
 5. Select **Save**.
