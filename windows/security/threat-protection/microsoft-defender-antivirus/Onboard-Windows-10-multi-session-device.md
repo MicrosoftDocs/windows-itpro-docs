@@ -37,7 +37,7 @@ Familiarize yourself with the [considerations for non-persistent VDI](https://do
 > - Single entry for each virtual device 
 > - Multiple entries for each virtual device 
 
- Microsoft recommends onboarding Windows Virtual Devices as a single entry per virtual device. This ensures that the investigation experience in the MDATP portal is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the MDATP portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
+Microsoft recommends onboarding Windows Virtual Devices as a single entry per virtual device. This ensures that the investigation experience in the MDATP portal is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the MDATP portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
 
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
@@ -110,7 +110,7 @@ In addition, if you are using FSlogix user profiles, we recommend you exclude th
 
 **Exclude Files:** 
 
-> ProgramFiles%\FSLogix\Apps\frxdrv.sys 
+> %ProgramFiles%\FSLogix\Apps\frxdrv.sys 
 > %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys 
 > %ProgramFiles%\FSLogix\Apps\frxccd.sys 
 > %TEMP%\*.VHD 
