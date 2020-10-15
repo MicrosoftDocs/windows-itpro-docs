@@ -35,6 +35,29 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 - Mobile Device Management tools
 - Local script
 
+| Endpoint     | Versions                                      | Deployment methods                       |
+|--------------|-----------------------------------------------|------------------------------------------|
+| Windows      | Windows 7 SP1 and 8.1                         | Local script (up to 10 devices)          |
+|              | Windows 10                                    | Group Policy                             |
+|              | Windows Server 2008 R2 SP1, 2012 R2, and 2016 | Microsoft Endpoint Manager               |
+|              | Windows Server 1803 and 2019                  | Mobile Device Manager                    |
+|              |                                               | Microsoft Endpoint Configuration Manager |
+|              |                                               | VDI scripts                              |
+|              |                                               |                                          |
+|              |                                               | Microsoft Monitoring Agent               |
+| macOS        |                                               | Microsoft Endpoint Manager               |
+|              |                                               | JAMF Pro                                 |
+|              |                                               | Mobile Device Manager                    |
+|              |                                               |                                          |
+| Linux Server |                                               | Manual                                   |
+|              |                                               | Puppet                                   |
+|              |                                               | Ansible                                  |
+|              |                                               |                                          |
+| iOS          |                                               | App-based                                |
+|              |                                               |                                          |
+| Android      |                                               | Microsoft Endpoint Manager               |
+
+
 
 ## Microsoft Defender ATP deployment strategy
 
