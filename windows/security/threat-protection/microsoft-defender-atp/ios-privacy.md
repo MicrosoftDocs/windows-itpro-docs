@@ -52,7 +52,7 @@ Required data consists of data that is necessary to make Microsoft Defender ATP 
     - Azure Active Directory (AD) Device ID and Azure User ID: Uniquely identifies the device, User respectively at Azure Active directory.
     - Azure tenant ID - GUID that identifies your organization within Azure Active Directory
     - Microsoft Defender ATP org ID - Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted
-    - User Principal Name – Email ID of the user
+    - User Principal Name - Email ID of the user
 
 ### Product and service usage data
 
@@ -72,7 +72,7 @@ Optional diagnostic data includes:
 
 **Feedback Data** is collected through in-app feedback provided by the user.
 
-- The user’s email address, if they choose to provide it
+- The user's email address, if they choose to provide it
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user
 
 [More on Privacy](https://aka.ms/mdatpiosprivacystatement)
