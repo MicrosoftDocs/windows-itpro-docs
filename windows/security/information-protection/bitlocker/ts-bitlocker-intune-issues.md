@@ -210,7 +210,7 @@ To verify the secure boot state, use the System Information application. To do t
    ![System Information app, showing a unsupported Secure Boot State](./images/4509202-en-1.png)
 
 > [!NOTE]
-> You can also use the [Confirm-SecureBootUEFI](https://docs.microsoft.com/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the secure boot state. To do this, open an elevated PowerShell window and run the following command:
+> You can also use the [Confirm-SecureBootUEFI](https://docs.microsoft.com/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps&preserve-view=true) cmdlet to verify the secure boot state. To do this, open an elevated PowerShell window and run the following command:
 > ```ps
 > PS C:\> Confirm-SecureBootUEFI
 > ```
