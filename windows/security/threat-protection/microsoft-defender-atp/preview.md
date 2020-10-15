@@ -13,7 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
@@ -21,6 +23,8 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -54,11 +58,9 @@ The following features are included in the preview release:
 
 - [Microsoft Defender ATP for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender ATP now adds support for Android. Learn how to install, configure, and use Microsoft Defender ATP for Android.
 
- - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019.
+- [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-- [Threat & Vulnerability Management granular exploit details](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) <BR> You can now see a comprehensive set of details on the vulnerabilities found in your device to give you informed decision on your next steps. The threat insights icon now shows more granular details, such as if the exploit is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has associated zero-day exploitation news, disclosures, or related security advisories.
- 
- - [Threat & Vulnerability Management Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy) <BR> You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy), [software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory#report-inaccuracy), and [discovered vulnerabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses#report-inaccuracy).  
+ - [Threat and vulnerability management supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019.
 
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
 
