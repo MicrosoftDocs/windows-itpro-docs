@@ -62,10 +62,10 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 **Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows Defender Security Center**
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)  
-- In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
-- Select Windows 10 as the operating system. 
-- In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
-- Click **Download package** and save the .zip file. 
+    - In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
+    - Select Windows 10 as the operating system. 
+    - In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
+    - Click **Download package** and save the .zip file. 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called **OptionalParamsPolicy** and the files **WindowsDefenderATPOnboardingScript.cmd** and **Onboard-NonPersistentMachine.ps1**.
 
 **Use Group Policy management console to run the script when the virtual machine starts**
@@ -77,11 +77,9 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
 Enter the following: 
 
-Action = "Start a program" 
-
-Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe 
-
-Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+> Action = "Start a program" 
+> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+> Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
 Click **OK** and close any open GPMC windows.
 
