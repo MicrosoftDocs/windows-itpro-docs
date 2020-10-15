@@ -267,6 +267,7 @@
 #### [LanmanWorkstation](policy-csp-lanmanworkstation.md)
 #### [Licensing](policy-csp-licensing.md)
 #### [LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)
+#### [LocalUsersAndGroups](policy-csp-localusersandgroups.md)
 #### [LockDown](policy-csp-lockdown.md)
 #### [Maps](policy-csp-maps.md)
 #### [Messaging](policy-csp-messaging.md)
