@@ -30,6 +30,9 @@ ms.topic: conceptual
 
 Learn how to deploy Microsoft Defender ATP for macOS with Jamf Pro.
 
+> [!NOTE]
+> If you are using macOS Catalina (10.15.4) and newer versions of macOS see [New configuration profiles for macOS Catalina and newer versions of macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-sysext-policies).
+
 This is a multi step process. You'll need to complete all of the following steps:
 
 - [Login to the Jamf Portal](mac-install-jamfpro-login.md)
