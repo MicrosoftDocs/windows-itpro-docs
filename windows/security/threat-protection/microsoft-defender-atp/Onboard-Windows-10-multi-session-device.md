@@ -77,7 +77,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
 Enter the following: 
 
-> Action = "Start a program" 
+> Action = "Start a program" <br>
 > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
 > Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
