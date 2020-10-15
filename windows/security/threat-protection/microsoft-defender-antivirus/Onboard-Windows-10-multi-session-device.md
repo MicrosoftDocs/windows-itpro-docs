@@ -77,13 +77,10 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Go to the **Actions** tab and click **New**. Ensure that **Start a program** is selected in the Action field. 
 Enter the following: 
 
-Action = "Start a program" 
-
-Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe 
-
-Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
-
-Click **OK** and close any open GPMC windows.
+   > Action = "Start a program" <br>
+   > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+   > Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1" <br>
+   > Click **OK** and close any open GPMC windows. <br>
 
 #### *Scenario 3: Onboarding using management tools*
 
@@ -110,21 +107,21 @@ In addition, if you are using FSlogix user profiles, we recommend you exclude th
 
 **Exclude Files:** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys 
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys 
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys 
-> %TEMP%\*.VHD 
-> %TEMP%\*.VHDX 
-> %Windir%\TEMP\*.VHD 
-> %Windir%\TEMP\*.VHDX 
-> \\storageaccount.file.core.windows.net\share\*\*.VHD 
-> \\storageaccount.file.core.windows.net\share\*\*.VHDX 
+> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
+> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
+> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
+> %TEMP%\*.VHD <br>
+> %TEMP%\*.VHDX <br>
+> %Windir%\TEMP\*.VHD <br>
+> %Windir%\TEMP\*.VHDX <br>
+> \\storageaccount.file.core.windows.net\share\*\*.VHD <br>
+> \\storageaccount.file.core.windows.net\share\*\*.VHDX <br>
 
 **Exclude Processes:**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe 
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe 
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe 
+> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
+> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
+> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
 
 #### Licensing requirements 
 
