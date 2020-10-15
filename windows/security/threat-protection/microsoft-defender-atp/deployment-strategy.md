@@ -44,12 +44,11 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 |              |                                               | Microsoft Endpoint Configuration Manager |
 |              |                                               | VDI scripts                              |
 |              |                                               |                                          |
-|              |                                               | Microsoft Monitoring Agent               |
-| macOS        |                                               | Microsoft Endpoint Manager               |
+|              |                                               | Local script                             |
+| macOS        |                                               | Mobile Device Manager / Microsoft Intune |
 |              |                                               | JAMF Pro                                 |
-|              |                                               | Mobile Device Manager                    |
 |              |                                               |                                          |
-| Linux Server |                                               | Manual                                   |
+| Linux Server |                                               | Local script                             |
 |              |                                               | Puppet                                   |
 |              |                                               | Ansible                                  |
 |              |                                               |                                          |
