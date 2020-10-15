@@ -37,7 +37,7 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 
 | Endpoint     | Versions                                      | Deployment methods                       |
 |--------------|-----------------------------------------------|------------------------------------------|
-| Windows      | Windows 7 SP1 and 8.1                         | Local script (up to 10 devices)          |
+| **Windows**      | Windows 7 SP1 and 8.1                         | Local script (up to 10 devices)          |
 |              | Windows 10                                    | Group Policy                             |
 |              | Windows Server 2008 R2 SP1, 2012 R2, and 2016 | Microsoft Endpoint Manager               |
 |              | Windows Server 1803 and 2019                  | Mobile Device Manager                    |
@@ -45,16 +45,16 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 |              |                                               | VDI scripts                              |
 |              |                                               |                                          |
 |              |                                               | Local script                             |
-| macOS        |                                               | Mobile Device Manager / Microsoft Intune |
+| **macOS **       |                                               | Mobile Device Manager / Microsoft Intune |
 |              |                                               | JAMF Pro                                 |
 |              |                                               |                                          |
-| Linux Server |                                               | Local script                             |
+| **Linux Server** |                                               | Local script                             |
 |              |                                               | Puppet                                   |
 |              |                                               | Ansible                                  |
 |              |                                               |                                          |
-| iOS          |                                               | App-based                                |
+|** iOS  **        |                                               | App-based                                |
 |              |                                               |                                          |
-| Android      |                                               | Microsoft Endpoint Manager               |
+| **Android **     |                                               | Microsoft Endpoint Manager               |
 
 
 
