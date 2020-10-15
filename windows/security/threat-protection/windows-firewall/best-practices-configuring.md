@@ -82,7 +82,6 @@ configuration. See the [Windows Firewall with Advanced Security Deployment
 Guide](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)
 for general guidance on policy creation.
 
-
 In many cases, allowing specific types of inbound traffic will be required for
 applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when
 allowing these inbound exceptions.
@@ -98,7 +97,7 @@ Because of 1 and 2, it is important that, when designing a set of policies, you 
 A general security best practice when creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This avoids creation of multiple filters under the hood, reduces complexity, and helps to avoid performance degradation.
 
 > [!NOTE] 
-> Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above.
+> Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above. 
 
 ## Create rules for new applications before first launch
 
@@ -155,16 +154,20 @@ The rule merging settings either allow or prevent local admins from creating the
 
 > [!TIP]
 > In the firewall [configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp), the
-equivalent setting is *AllowLocalPolicyMerge*. This setting can be found under each respective profile node, *DomainProfile*, *PrivateProfile*, and *PublicProfile*.
+equivalent setting is *AllowLocalPolicyMerge*. This setting can be found under each respective profile node, *DomainProfile*, *PrivateProfile*, and *PublicProfile*. 
 
 If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
 
 Admins may disable *LocalPolicyMerge* in high security environments to maintain tighter control over endpoints. This can impact some apps and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
 Management (MDM), or both (for hybrid or co-management environments).
 
+[Firewall CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp) and [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) also have settings that can affect rule merging.
+
 As a best practice, it is important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments, a more thorough analysis may be needed using network packet capture tools. 
 
 In general, to maintain maximum security, admins should only push firewall exceptions for apps and services determined to serve legitimate purposes.
+
+
 
 > [!NOTE]
 > The use of wildcard patterns, such as *C:\*\\teams.exe* is not
