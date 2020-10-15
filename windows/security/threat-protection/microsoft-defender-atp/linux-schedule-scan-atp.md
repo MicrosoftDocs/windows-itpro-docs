@@ -155,16 +155,11 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 
 **Explanation**:
 
-+—————- minute (values: 0 – 59) (special characters: , – * /)
-
-| +————- hour (values: 0 – 23) (special characters: , – * /)
-
-| | +———- day of month (values: 1 – 31) (special characters: , – * / L W C)
-
-| | | +——- month (values: 1 – 12) (special characters: ,- * / )
-| | | | +—- day of week (values: 0 – 6) (Sunday=0 or 7) (special characters: , – * / L W C)
-| | | | |
-
-*****command to be executed
++—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
+| +————- hour (values: 0 – 23) (special characters: , – * /) <br>
+| | +———- day of month (values: 1 – 31) (special characters: , – * / L W C)  <br>
+| | | +——- month (values: 1 – 12) (special characters: ,- * / )  <br>
+| | | | +—- day of week (values: 0 – 6) (Sunday=0 or 7) (special characters: , – * / L W C) <br>
+| | | | |*****command to be executed
 
 
