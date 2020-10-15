@@ -16,6 +16,8 @@ ms.custom:
 - next-gen
 - edr
 ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ---
 
 # Behavioral blocking and containment
