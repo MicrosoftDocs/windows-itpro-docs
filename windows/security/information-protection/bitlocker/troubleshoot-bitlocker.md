@@ -34,7 +34,7 @@ Open Event Viewer and review the following logs under Applications and Services 
 
 Additionally, review the Windows logs\\System log for events that were produced by the TPM and TPM-WMI event sources.
 
-To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
+To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6&preserve-view=true) cmdlet.
 
 For example, to use wevtutil to export the contents of the operational log from the BitLocker-API folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window, and run a command that resembles the following:
 
@@ -87,11 +87,11 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
 |Command |Notes |
 | - | - |
-|[**get-tpm \> C:\\TPM.txt**](https://docs.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's trusted platform module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
+|[**get-tpm \> C:\\TPM.txt**](https://docs.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps&preserve-view=true) |Exports information about the local computer's trusted platform module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
 |[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
 |[**reagentc&nbsp;/info&nbsp;\>&nbsp;C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about an online or offline image about the current status of the Windows Recovery Environment (WindowsRE) and any available recovery image. |
-|[**get-BitLockerVolume \| fl**](https://docs.microsoft.com/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps) |Gets information about volumes that BitLocker drive encryption can protect. |
+|[**get-BitLockerVolume \| fl**](https://docs.microsoft.com/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps&preserve-view=true) |Gets information about volumes that BitLocker drive encryption can protect. |
 
 ## Review the configuration information
 
