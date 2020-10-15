@@ -201,9 +201,9 @@ To reset the PCR settings on the TPM, follow these steps:
 You can avoid this scenario when you install updates to system firmware or TPM firmware by temporarily suspending BitLocker before you apply such updates.
 
 > [!IMPORTANT]
-> TPM and UEFI firmware updates may require multiple restarts while they are being installed. To keep BitLocker suspended during this process, you must use [Suspend-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/suspend-bitlocker?view=winserver2012r2-ps) and set the **Reboot Count** parameter to either of the following values:
+> TPM and UEFI firmware updates may require multiple restarts while they are being installed. To keep BitLocker suspended during this process, you must use [Suspend-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/suspend-bitlocker?view=winserver2012r2-ps&preserve-view=true) and set the **Reboot Count** parameter to either of the following values:
 > - **2** or greater: This value sets the number of times the device can restart before BitLocker device encryption resumes.
-> - **0**: This value suspends BitLocker drive encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps) or another mechanism to resume protection.
+> - **0**: This value suspends BitLocker drive encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps&preserve-view=true) or another mechanism to resume protection.
 
 To suspend BitLocker while you install TPM or UEFI firmware updates:
 
