@@ -161,7 +161,7 @@ If merging of local policies is disabled, centralized deployment of rules is req
 Admins may disable *LocalPolicyMerge* in high security environments to maintain tighter control over endpoints. This can impact some apps and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
 Management (MDM), or both (for hybrid or co-management environments).
 
-[Firewall CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp) and [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) also have settings that can affect rule merging.
+[Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) and [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) also have settings that can affect rule merging.
 
 As a best practice, it is important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments, a more thorough analysis may be needed using network packet capture tools. 
 
