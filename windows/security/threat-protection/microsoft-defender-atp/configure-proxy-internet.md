@@ -127,7 +127,7 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 
 
 > [!NOTE]
-> If you are using Microsoft Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Microsoft Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus
+> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
@@ -147,8 +147,9 @@ The information below list the proxy and firewall configuration information requ
 
 ## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
 
-Please see the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows (Windows 7 SP1, Windows 8.1 and Windows Server 2008 R2 SP1, 2012 R2 and 2016):
-1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Microsoft Defender for Endpoint (please refer to [Onboard previous versions of Windows on Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2010326)).
+Please see the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
+
+1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Microsoft Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
 2.	Ensure the machine is successfully reporting into the Microsoft Defender Security Center portal.
 
