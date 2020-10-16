@@ -35,28 +35,13 @@ You can deploy Microsoft Defender ATP using various management tools. In general
 - Mobile Device Management tools
 - Local script
 
-| Endpoint     | Versions                                      | Deployment methods                       |
-|--------------|-----------------------------------------------|------------------------------------------|
-| **Windows**      | Windows 7 SP1 and 8.1                         | Local script (up to 10 devices)          |
-|              | Windows 10                                    | Group Policy                             |
-|              | Windows Server 2008 R2 SP1, 2012 R2, and 2016 | Microsoft Endpoint Manager               |
-|              | Windows Server 1803 and 2019                  | Mobile Device Manager                    |
-|              |                                               | Microsoft Endpoint Configuration Manager |
-|              |                                               | VDI scripts                              |
-|              |                                               |                                          |
-|              |                                               | Local script                             |
-| **macOS **       |                                               | Mobile Device Manager / Microsoft Intune |
-|              |                                               | JAMF Pro                                 |
-|              |                                               |                                          |
-| **Linux Server** |                                               | Local script                             |
-|              |                                               | Puppet                                   |
-|              |                                               | Ansible                                  |
-|              |                                               |                                          |
-|** iOS  **        |                                               | App-based                                |
-|              |                                               |                                          |
-| **Android **     |                                               | Microsoft Endpoint Manager               |
-
-
+| Endpoint     | Deployment methods                       |
+|--------------|------------------------------------------|
+| **Windows**  |  Local script (up to 10 devices) <br>  Group Policy <br>  Microsoft Endpoint Manager <br>  Mobile Device Manager <br>   Microsoft Endpoint Configuration Manager <br>  Microsoft Endpoint Configuration Manager <br> VDI scripts   |
+| **macOS**    | Local scripts <br> Mobile Device Manager/Microsoft Intune <br> JAMF Pro <br>  |
+| **Linux Server** | Local script <br> Puppet <br> Ansible|
+| **iOS**      | App-based                                |
+| **Android**  | Microsoft Endpoint Manager               |
 
 ## Microsoft Defender ATP deployment strategy
 
