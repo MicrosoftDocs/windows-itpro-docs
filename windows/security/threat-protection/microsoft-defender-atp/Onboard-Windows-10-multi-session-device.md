@@ -23,9 +23,11 @@ manager: dansimp
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
+> [!IMPORTANT]
+> Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender Advanced Threat Protection. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
 
 > [!WARNING]
-> Microsoft Defender ATP support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.
+> Microsoft Defender for Endpoint (MSDE) support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.
 
 Microsoft Defender for Endpoint supports monitoring both VDI as well as Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
@@ -37,7 +39,7 @@ Familiarize yourself with the [considerations for non-persistent VDI](https://do
 > - Single entry for each virtual device 
 > - Multiple entries for each virtual device 
 
-Microsoft recommends onboarding Windows Virtual Devices as a single entry per virtual device. This ensures that the investigation experience in the MDATP portal is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the MDATP portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
+Microsoft recommends onboarding Windows Virtual Devices as a single entry per virtual device. This ensures that the investigation experience in the Microsoft Defender Endpoint portal (MSDE) is in the context of one device based on the machine name. Organizations that frequently delete and re-deploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the MSDE portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently. 
 
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It is executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you are using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy. 
 
