@@ -31,8 +31,8 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 > Examples for timezones:
 > - `America/Los_Angeles`
 > - `America/New_York`
->- `America/Chicago`
->- `America/Denver`
+> - `America/Chicago`
+> - `America/Denver`
 
 ## To set the Cron job
 Use the following commands:
@@ -44,9 +44,10 @@ Use the following commands:
 > [!NOTE]
 > Where 200919 == YRMMDD
 
-> TIP: 
-Do this before you edit or remove.
-To edit the crontab, and add a new job as a root user:
+> [!TIP]
+> Do this before you edit or remove. <br>
+
+To edit the crontab, and add a new job as a root user: <br>
 `sudo crontab -e`
 
 > [!NOTE]
@@ -109,7 +110,7 @@ Automating with Puppet: Cron jobs and scheduled tasks
 
 See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
 
-## Additional information:
+## Additional information
 
 **To get help with crontab**
 
@@ -126,8 +127,9 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 **To backup crontab entries:**
 
 `crontab -l > /var/tmp/cron_backup.dat`
+
 > [!TIP]
-> Do this before you edit or remove.
+> Do this before you edit or remove. <br>
 
 **To restore crontab entries:**
 
