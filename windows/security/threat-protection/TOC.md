@@ -448,7 +448,7 @@
 ##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
  
-#### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
+#### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
 #### [Onboard devices without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](microsoft-defender-atp/run-detection-test.md)
