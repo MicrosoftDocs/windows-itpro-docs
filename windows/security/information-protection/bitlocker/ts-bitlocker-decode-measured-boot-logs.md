@@ -24,12 +24,12 @@ By tracking changes in the PCRs, and identifying when they changed, you can gain
 
 This article describes tools that you can use to decode these logs: TBSLogGenerator and PCPTool.
 
-For more information about measured boot and PCRs, see the following articles:
+For more information about MeasuredBoot and PCRs, see the following articles:
 
-- [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
+- [TPM fundamentals: MeasuredBoot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
 - [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
-## Use TBSLogGenerator to decode measured boot logs
+## Use TBSLogGenerator to decode MeasureBoot logs
 
 Use TBSLogGenerator to decode measured boot logs that you have collected from Windows 10 and earlier versions. You can install this tool on the following systems:
 
@@ -72,7 +72,7 @@ To use TBSLogGenerator, follow these steps:
    - \<*DestinationFolderName*> = The name of the folder for the decoded text file
    - \<*DecodedFileName*> = The name of the decoded text file
 
-   For example, the following figure shows measured boot logs that were collected from a Windows 10 computer and put into the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
+   For example, the following figure shows MeasuredBoot logs that were collected from a Windows 10 computer and put into the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
 
     ```cmd
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
@@ -92,9 +92,9 @@ To find the PCR information, go to the end of the file.
 
    ![View of NotePad that shows the PCR information at the end of the text file](./images/ts-tpm-7.png)
 
-## Use PCPTool to decode measured boot logs
+## Use PCPTool to decode MeasuredBoot logs
 
-PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a measured boot log file and converts it into an XML file.
+PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a MeasuredBoot log file and converts it into an XML file.
 
 To download and install PCPTool, go to the Toolkit page, select **Download**, and follow the instructions.
 
