@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
-ms.date: 08/26/2020
+ms.date: 10/15/2020
 ---
 
 # Turn on block at first sight
