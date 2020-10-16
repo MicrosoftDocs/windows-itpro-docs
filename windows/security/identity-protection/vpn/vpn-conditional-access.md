@@ -48,44 +48,54 @@ The following client-side components are also required:
 - Trusted Platform Module (TPM)
 
 ## VPN device compliance 
+
 At this time, the Azure AD certificates issued to users do not contain a CRL Distribution Point (CDP) and are not suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the &lt;SSO&gt; section.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
-- The VPN server should be configured for certificate authentication
-- The VPN server should trust the tenant-specific Azure AD CA
-- For client access using Kerberos/NTLM, a domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO)
+- The VPN server should be configured for certificate authentication.
+- The VPN server should trust the tenant-specific Azure AD CA.
+- For client access using Kerberos/NTLM, a domain-trusted certificate is deployed to the client device and is configured to be used for single sign-on (SSO).
    
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
 Two client-side configuration service providers are leveraged for VPN device compliance.
 
-- VPNv2 CSP DeviceCompliance settings
+- VPNv2 CSP DeviceCompliance settings:
+
    - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client attempts to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
    - **Sso**: entries under SSO should be used to direct the VPN client to use a certificate other than the VPN authentication certificate when accessing resources that require Kerberos authentication.
    - **Sso/Enabled**: if this field is set to **true**, the VPN client looks for a separate certificate for Kerberos authentication.
    - **Sso/IssuerHash**: hashes for the VPN client to look for the correct certificate for Kerberos authentication.
    - **Sso/Eku**: comma-separated list of Enhanced Key Usage (EKU) extensions for the VPN client to look for the correct certificate for Kerberos authentication.
+   
 - HealthAttestation CSP (not a requirement) - functions performed by the HealthAttestation CSP include:
+
    - Collects TPM data used to verify health states
    - Forwards the data to the Health Attestation Service (HAS)
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
->[!NOTE]
->Currently, it is required that certificates be issued from an on-premises CA, and that SSO be enabled in the user’s VPN profile. This will enable the user to obtain Kerberos tickets in order to access resources on-premises. Kerberos currently does not support the use of Azure AD certificates.
+> [!NOTE]
+> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources. 
 
 ## Client connection flow
+
 The VPN client side connection flow works as follows:
 
-![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
+> [!div class="mx-imgBorder"]
+> ![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
  
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
 1.	 The VPN client calls into Windows 10’s Azure AD Token Broker, identifying itself as a VPN client.
+
 2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
-3.	 If compliant, Azure AD requests a short-lived certificate
+
+3.	 If compliant, Azure AD requests a short-lived certificate.
+
 4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
+
 5. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
 
 ## Configure conditional access

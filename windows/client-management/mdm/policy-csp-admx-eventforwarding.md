@@ -97,7 +97,7 @@ This setting applies across all subscriptions for the forwarder (source computer
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP English name: *Configure forwarder resource usage*
--   GP name: *MaxForwardingRate*
+-   GP name: *ForwarderResourceUsage*
 -   GP path: *Windows Components/Event Forwarding*
 -   GP ADMX file name: *EventForwarding.admx*
 
