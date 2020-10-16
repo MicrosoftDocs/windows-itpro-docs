@@ -59,6 +59,21 @@ To deploy Microsoft Defender ATP, you'll need to onboard devices to the service.
 
 Depending on the architecture of your environment, you'll need to use the appropriate management tool that best suites your requirements. 
 
+
+## Onboarding options and tools
+Understand the various onboarding options and tools that Microsoft Defender ATP provides, so you can decide what is best for your environment.
+
+
+
+It's important to know what onboarding options and tools ae
+
+
+Every enterprise environement is unique and may require different tools and ways to onboard endpoints. 
+ 
+
+
+
+
 After onboarding the devices, you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction. 
 
 
