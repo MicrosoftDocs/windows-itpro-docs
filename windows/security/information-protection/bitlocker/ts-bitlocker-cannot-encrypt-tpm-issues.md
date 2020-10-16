@@ -19,7 +19,7 @@ ms.custom: bitlocker
 
 # BitLocker cannot encrypt a drive: known TPM issues
 
-This article describes common issues that affect the trusted platform module (TPM) and that may prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
+This article describes common issues that affect the Trusted Platform Module (TPM) that might prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
 
 > [!NOTE]
 > If you have determined that your BitLocker issue does not involve the TPM, see [BitLocker cannot encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
@@ -41,8 +41,7 @@ To resolve this issue, follow these steps:
    ```ps
    $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
    ```
-
-2. Restart the computer. If you are prompted at the restart screen, press F12 to agree.
+2. Restart the computer. If you are prompted at the restart screen, press F12 to agree.8
 3. Retry starting BitLocker drive encryption.
 
 ## You cannot prepare the TPM, and you see "The TPM is defending against dictionary attacks and is in a time-out period"
@@ -58,7 +57,7 @@ The TPM is locked out.
 To resolve this issue, disable and re-enable the TPM. To do this, follow these steps:
 
 1. Restart the device, and change the BIOS configuration to disable the TPM.
-2. Restart the device again, and return to the TPM management console. You should receive a message that resembles the following:
+2. Restart the device again, and return to the TPM management console. Following message is displayed:
    > Compatible Trusted Platform Module (TPM) cannot be found on this computer. Verify that this computer has 1.2 TPM and it is turned on in the BIOS.
 
 3. Restart the device, and change the BIOS configuration to enable the TPM.
@@ -94,7 +93,7 @@ To verify that you have correctly identified this issue, use one of the followin
 
    In this command, *ComputerName* is the name of the affected computer.
 
-1. To resolve the issue, use a tool such as dsacls.exe to make sure that the access control list of msTPM-TPMInformationForComputer grants both Read and Write permissions to NTAUTHORITY/SELF.
+1. To resolve the issue, use a tool such as dsacls.exe to ensure that the access control list of msTPM-TPMInformationForComputer grants both Read and Write permissions to NTAUTHORITY/SELF.
 
 ## Cannot prepare the TPM, error 0x80072030: "There is no such object on the server"
 
@@ -108,16 +107,16 @@ You have confirmed that the **ms-TPM-OwnerInformation** and **msTPM-TpmInformati
 
 ### Cause
 
-The domain and forest functional level of the environment may still be set to Windows 2008 R2. Additionally, the permissions in AD DS may not be correctly set.
+The domain and forest functional level of the environment may still be set to Windows 2008 R2. Additionally, the permissions in AD DS might not be correctly set.
 
 ### Resolution
 
 To resolve this issue, follow these steps:
 
 1. Upgrade the functional level of the domain and forest to Windows Server 2012 R2.
-1. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
-1. In the script, modify the value of **strPathToDomain** to your domain name.
-1. Open an elevated PowerShell window, and run the following command:
+2. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
+3. In the script, modify the value of **strPathToDomain** to your domain name.
+4. Open an elevated PowerShell window, and run the following command:
 
    ```ps
    cscript <Path>Add-TPMSelfWriteACE.vbs
