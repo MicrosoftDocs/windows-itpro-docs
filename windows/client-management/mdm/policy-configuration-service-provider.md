@@ -5575,6 +5575,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### WindowsSandbox policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowaudioinput" id="windowssandbox-allowaudioinput">WindowsSandbox/AllowAudioInput</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection" id="windowssandbox-allowclipboardredirection">WindowsSandbox/AllowClipboardRedirection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allownetworking" id="windowssandbox-allownetworking">WindowsSandbox/AllowNetworking</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection" id="windowssandbox-allowprinterredirection">WindowsSandbox/AllowPrinterRedirection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowvgpu" id="windowssandbox-allowvgpu">WindowsSandbox/AllowVGPU</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-windowssandbox.md#windowssandbox-allowvideoinput" id="windowssandbox-allowvideoinput">WindowsSandbox/AllowVideoInput</a>
+  </dd>
+</dl>
+
 ### WirelessDisplay policies
 
 <dl>
