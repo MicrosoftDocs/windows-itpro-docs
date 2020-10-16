@@ -37,7 +37,7 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 ## To set the Cron job
 Use the following commands:
 
-**To backup crontab entries:**
+**To backup crontab entries**
 
 `sudo crontab -l > /var/tmp/cron_backup_200919.dat`
 
@@ -79,7 +79,7 @@ To view your cron jobs, type `sudo crontab -l`
 
 :::image type="content" source="..\images\linux-mdatp-1.png" alt-text="linux mdatp":::
 
-**To inspect cron job runs:**
+**To inspect cron job runs**
 
 `sudo grep mdatp /var/log/cron`
 
@@ -90,18 +90,18 @@ To view your cron jobs, type `sudo crontab -l`
 ## For those who use Ansible, Chef, or Puppet
 
 Use the following commands:
-### To set cron jobs in Ansible:
+### To set cron jobs in Ansible
 
 `cron – Manage cron.d and crontab entries`
 
 See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
-### To set crontabs in Chef:
+### To set crontabs in Chef
 `cron resource`
 
 See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.
 
-### To set cron jobs in Puppet:
+### To set cron jobs in Puppet
 Resource Type: cron
 
 See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.
@@ -116,46 +116,46 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 
 `man crontab`
 
-**To get a list of crontab file of the current user:**
+**To get a list of crontab file of the current user**
 
 `crontab -l`
 
-**To get a list of crontab file of another user:**
+**To get a list of crontab file of another user**
 
 `crontab -u username -l`
 
-**To backup crontab entries:**
+**To backup crontab entries**
 
 `crontab -l > /var/tmp/cron_backup.dat`
 
 > [!TIP]
 > Do this before you edit or remove. <br>
 
-**To restore crontab entries:**
+**To restore crontab entries**
 
 `crontab /var/tmp/cron_backup.dat`
 
-**To edit the crontab and add a new job as a root user:**
+**To edit the crontab and add a new job as a root user**
 
 `Sudo crontab -e`
 
-**To edit the crontab and add a new job:**
+**To edit the crontab and add a new job**
 
 `crontab -e`
 
-**To edit other user’s crontab entries:**
+**To edit other user’s crontab entries**
 
 `crontab -u username -e`
 
-**To remove all crontab entries:**
+**To remove all crontab entries**
 
 `crontab -r`
 
-**To remove other user’s crontab entries:**
+**To remove other user’s crontab entries**
 
 `crontab -u username -r`
 
-**Explanation**:
+**Explanation**
 
 +—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
 | +————- hour (values: 0 – 23) (special characters: , – * /) <br>
