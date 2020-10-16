@@ -1110,8 +1110,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   true - Enable
--   false - Disable (Default)
+-   0  - Disable
+-   1  - Enable
 <!--/SupportedValues-->
 <!--Example-->
 
