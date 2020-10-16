@@ -24,9 +24,16 @@ ms.date: 10/15/2020
 - Windows 10
 - Windows Server 2016 and above
 
-One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Mirosoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they are patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy which is rolled out to HVCI-enabled systems and Windows 10S mode devices. 
+Microsoft has strict requirements for code running in kernel. Consequently, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Mirosoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they are patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy which is applied to the following sets of devices: 
 
-Microsoft has strict requirements for code running in kernel. Malicious actors may exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. Unless your devices explicitly require them, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. As always, it is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
+- Hypervisor-protected code integrity (HVCI) enabled devices 
+- Windows 10S mode devices
+
+Microsoft recommends enabling [HVCI](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or Windows 10S mode to protect your devices against security threats. If this is not possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. 
+
+
+> [!Note]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. As always, it is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
 
 
 
