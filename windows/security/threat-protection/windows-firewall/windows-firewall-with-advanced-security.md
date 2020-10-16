@@ -22,6 +22,7 @@ ms.custom: asr
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
 
 This is an overview of the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 
