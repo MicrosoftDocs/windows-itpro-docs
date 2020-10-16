@@ -1,4 +1,4 @@
-# [Windows 10](index.md)
+# [Windows 10](index.yml)
 ## [What's new](/windows/whats-new)
 ## [Release information](/windows/release-information)
 ## [Deployment](/windows/deployment)

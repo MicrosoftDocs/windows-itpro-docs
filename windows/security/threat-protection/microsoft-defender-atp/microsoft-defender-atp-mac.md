@@ -14,7 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
@@ -69,6 +71,18 @@ The three most recent major releases of macOS are supported.
 Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+
+### Licensing requirements
+
+Microsoft Defender Advanced Threat Protection for Mac requires one of the following Microsoft Volume Licensing offers:
+
+- Microsoft 365 E5 (M365 E5)
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 (M365 A5)
+
+> [!NOTE]
+> Eligible licensed users may use Microsoft Defender Advanced Threat Protection on up to five concurrent devices.
+> Microsoft Defender Advanced Threat Protection is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
 ### Network connections
 

@@ -61,7 +61,7 @@ For detailed licensing information, see the [Product Terms site](https://www.mic
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
-For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
+For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
 
 ## Browser requirements
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
@@ -80,12 +80,11 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10, version 1607 or later
-  - Windows 10 Enterprise
-  - [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
-  - Windows 10 Education
-  - Windows 10 Pro
-  - Windows 10 Pro Education
+- Windows 10 Enterprise
+- [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows server
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
@@ -107,13 +106,12 @@ The hardware requirements for Microsoft Defender ATP on devices are the same for
 
 ### Other supported operating systems
 - Android
-- Linux (currently, Microsoft Defender ATP is only available in the Public Preview Edition for Linux)
+- Linux 
 - macOS
 
 > [!NOTE]
 > You'll need to know the exact Linux distributions and versions of Android and macOS that are compatible with Microsoft Defender ATP for the integration to work.
->
-> Also note that Microsoft Defender ATP is currently only available in the Public Preview Edition for Linux.
+
 
 
 ### Network and data storage and configuration requirements
