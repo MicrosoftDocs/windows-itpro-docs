@@ -81,25 +81,6 @@ Watch this video for a comprehensive walk-through of threat and vulnerability ma
 
 >[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
-## Before you begin
-
-Ensure that your devices:
-
-- Are onboarded to Microsoft Defender Advanced Threat Protection
-- Run [supported operating systems and platforms](tvm-supported-os.md)
-- Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
-
-> Release | Security update KB number and link
-> :---|:---
-> Windows 10 Version 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-> Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-> Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
-
-- Are onboarded to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure). If you're using Configuration Manager, update your console to the latest version.
-- Have at least one security recommendation that can be viewed in the device page
-- Are tagged or marked as co-managed
-
 ## APIs
 
 Run threat and vulnerability management-related API calls to automate vulnerability management workflows. Learn more from this [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
@@ -126,6 +107,5 @@ See the following articles for related APIs:
 - [Weaknesses](tvm-weaknesses.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [BLOG: Microsoft's Threat & Vulnerability Management now helps thousands of customers to discover, prioritize, and remediate vulnerabilities in real time](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

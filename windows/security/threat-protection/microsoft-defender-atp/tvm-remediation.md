@@ -1,5 +1,5 @@
 ---
-title: Remediation activities and exceptions - threat and vulnerability management
+title: Remediate vulnerabilities with threat and vulnerability management
 description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management. 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
-# Remediation activities and exceptions - threat and vulnerability management
+# Remediate vulnerabilities with threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,6 +30,31 @@ ms.topic: conceptual
 
 >[!NOTE]
 >To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+
+## Request remediation
+
+The threat and vulnerability management capability in Microsoft Defender ATP bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+
+### Enable Microsoft Intune connection
+
+To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
+
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+### Remediation request steps
+
+1. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
+
+2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
+
+3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
+
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+>[!NOTE]
+>If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
 
 After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), start creating security tasks. You can create tasks through the integration with Microsoft Intune where remediation tickets are created.
 
@@ -59,44 +84,6 @@ When you [submit a remediation request](tvm-security-recommendation.md#request-r
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
 ![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
 
-## Exceptions
-
-When you [file for an exception](tvm-security-recommendation.md#file-for-exception) from the [Security recommendations page](tvm-security-recommendation.md), you create an exception  for that security recommendation. You can file exceptions to exclude certain recommendation from showing up in reports and affecting your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md).
-
-The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab. You can filter your view based on exception justification, type, and status.  
-
-![Example of the exception page and filter options.](images/tvm-exception-filters.png)
-
-### Exception actions and statuses
-
-You can take the following actions on an exception:
-
-- Cancel - You can cancel the exceptions you've filed anytime
-- Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change. It adversely affects the exposure impact associated with a recommendation that had previously been excluded.
-
-The following statuses will be a part of an exception:
-
-- **Canceled** - The exception has been canceled and is no longer in effect  
-- **Expired** - The exception that you've filed is no longer in effect
-- **In effect** - The exception that you've filed is in progress
-
-### Exception impact on scores
-
-Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Microsoft Secure Score for Devices of your organization in the following manner:
-
-- **No impact** - Removes the recommendation from the lists (which can be reverse through filters), but will not affect the scores.
-- **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
-- **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Microsoft Secure Score for Devices results out of the exception option that you made.
-
-The exception impact shows on both the Security recommendations page column and in the flyout pane.
-
-![Screenshot identifying the impact sections which list score impacts in the full page security recommendations table, and the flyout.](images/tvm-exception-impact.png)
-
-### View exceptions in other places
-
-Select **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. It will open a filtered view in the **Security recommendations** page of recommendations with an "Exception" status.
-
-![Screenshot of Show exceptions link in the Top security recommendations card in the dashboard.](images/tvm-exception-dashboard.png)
 
 ## Related topics
 
