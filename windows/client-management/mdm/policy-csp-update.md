@@ -1110,7 +1110,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   0  - Disable
+-   0  - Disable (Default)
 -   1  - Enable
 <!--/SupportedValues-->
 <!--Example-->
@@ -4525,4 +4525,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
