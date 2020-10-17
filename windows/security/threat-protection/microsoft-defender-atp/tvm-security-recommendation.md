@@ -22,10 +22,10 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -79,7 +79,7 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 ### Icons
 
-Useful icons also quickly call your attention to:  
+Useful icons also quickly call your attention to:
 - ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
 - ![red bug](images/tvm_bug_icon.png) associated public exploits
 - ![light bulb](images/tvm_insight_icon.png) recommendation insights
@@ -94,16 +94,16 @@ From the flyout, you can choose any of the following options:
 
 - **Open software page** - Open the software page to get more context on the software and how it's distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
-- [**Remediation options**](tvm-security-recommendation.md#request-remediation) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
+- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
-- [**Exception options**](tvm-security-recommendation.md#file-for-exception) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
+- [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 >[!NOTE]
 >When a change is made on a device, it typically takes two hours for the data to be reflected in the Microsoft Defender Security Center. However, it may sometimes take longer.
 
-### Investigate changes in machine exposure or impact
+### Investigate changes in device exposure or impact
 
-If there is a large jump in the number of exposed machines, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
 
 1. Select the recommendation and **Open software page**
 2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
@@ -123,17 +123,12 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
+- [Dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
-- [Remediation and exception](tvm-remediation.md)
-- [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
+- [Remediate vulnerabilities](tvm-remediation.md)
+- [Create and view exceptions for security recommendations](tvm-exceptions.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

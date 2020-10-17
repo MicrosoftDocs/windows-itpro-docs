@@ -70,7 +70,7 @@ Remediate the vulnerabilities in exposed devices to reduce the risk to your asse
 
 ### Breach and threat insights
 
-View related breach and threat insights in the **Threat** column when the icons are colored red.
+View any related breach and threat insights in the **Threat** column when the icons are colored red.
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
@@ -78,13 +78,13 @@ View related breach and threat insights in the **Threat** column when the icons 
 The breach insights icon is highlighted if there's a vulnerability found in your organization.
 ![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
 
-The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there is a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there's a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
 
 ![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
 ### Gain vulnerability insights
 
-If you select a CVE, a flyout panel will open with more information, including the vulnerability description, details, threat insights, and exposed devices.
+If you select a CVE, a flyout panel will open with more information such as the vulnerability description, details, threat insights, and exposed devices.
 
 The "OS Feature" category is shown in relevant scenarios.
 
@@ -137,7 +137,7 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 3. Select the inaccuracy category from the drop-down menu and fill in your email address and inaccuracy details.
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)

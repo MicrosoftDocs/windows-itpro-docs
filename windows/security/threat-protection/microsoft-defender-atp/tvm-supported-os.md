@@ -1,6 +1,6 @@
 ---
 title: Supported operating systems and platforms for threat and vulnerability management
-description: Before you begin, ensure that you meet the operating system or platform requisites for threat and vulnerability management so the activities in your all devices are properly accounted for.
+description: Ensure that you meet the operating system or platform requisites for threat and vulnerability management, so the activities in your all devices are properly accounted for.
 keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, mdatp-tvm supported os, mdatp-tvm,
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
@@ -48,7 +48,7 @@ Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product
 macOS 10.13 "High Sierra" and above | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities 
 Linux | Not supported (planned)
 
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Prerequisites & permissions](tvm-prerequisites.md)

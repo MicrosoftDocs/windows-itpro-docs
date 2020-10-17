@@ -22,7 +22,6 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
@@ -86,7 +85,7 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details about the inaccuracy.
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)

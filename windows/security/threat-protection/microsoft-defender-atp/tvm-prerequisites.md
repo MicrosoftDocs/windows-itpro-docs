@@ -1,7 +1,7 @@
 ---
-title: Threat and vulnerability management
-description: This new capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-keywords: threat & vulnerability management, threat and vulnerability management, MDATP TVM, MDATP-TVM, vulnerability management, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, microsoft defender atp, microsoft defender atp, endpoint vulnerabilities, next generation
+title: Prerequisites & permissions - threat and vulnerability management
+description: Before you begin using threat and vulnerability management, make sure you have the relevant configurations and permissions.
+keywords: threat & vulnerability management permissions prerequisites, threat and vulnerability management permissions prerequisites, MDATP TVM permissions prerequisites, vulnerability management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -62,10 +62,12 @@ For more information, see [Create and manage roles for role-based access control
 - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
 - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
-For more information, see [RBAC permission options](user-roles.md##permission-options)
+For more information, see [RBAC permission options](user-roles.md#permission-options)
 
-## See also
+## Related articles
 
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Supported operating systems and platforms](tvm-supported-os.md)
+- [Assign device value](tvm-assign-device-value.md)
 - [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
-- [Exposure score](tvm-exposure-score.md)
+

@@ -1,6 +1,6 @@
 ---
 title: Plan for end-of-support software and software versions
-description: Get actionable security recommendations prioritized by threat, likelihood to be breached, and value, in threat and vulnerability management.
+description: Discover and plan for software and software versions that are no longer supported and won't receive security updates.
 keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

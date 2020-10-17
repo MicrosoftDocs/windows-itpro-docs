@@ -83,14 +83,9 @@ For more information on the icons used throughout the portal, see [Microsoft Def
 ## Related topics
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+

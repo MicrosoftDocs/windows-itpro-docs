@@ -21,7 +21,6 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -99,13 +98,4 @@ See the following articles for related APIs:
 
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
-- [Exposure score](tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
-- [Security recommendations](tvm-security-recommendation.md)
-- [Remediation and exception](tvm-remediation.md)
-- [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
-- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [BLOG: Microsoft's Threat & Vulnerability Management now helps thousands of customers to discover, prioritize, and remediate vulnerabilities in real time](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)
