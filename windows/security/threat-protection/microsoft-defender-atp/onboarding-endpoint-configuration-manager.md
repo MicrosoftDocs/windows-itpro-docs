@@ -30,7 +30,7 @@ This article is part of the Deployment guide and acts as an example onboarding m
 - Onboarding Windows devices to the service 
 - Configuring Microsoft Defender ATP capabilities
 
-This onboarding guidance will walk you through:
+This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:
 - **Creating a collection in Microsoft Endpoint Configuration Manager**
 - **Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Configuration Manager**
 
