@@ -42,9 +42,9 @@ While Microsoft Defender ATP supports onboarding of various endpoints and tools,
 For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
+## Onboard Windows devices using Microsoft Endpoint Configuration Manager
 
-
-## Collection creation
+### Collection creation
 To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the
 deployment can target an existing collection or a new collection can be
 created for testing. 
@@ -103,9 +103,9 @@ After completing this task, you now have a device collection with all the Window
 ## Configure Microsoft Defender ATP capabilities 
 This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
 
-- **Endpoint detection and response**
-- **Next-generation protection**
-- **Attack surface reduction**
+- [**Endpoint detection and response**](#endpoint-detection-and-response)
+- [**Next-generation protection**](#next-generation-protection)
+- [**Attack surface reduction**](#attack-surface-reduction)
 
 
 ### Endpoint detection and response

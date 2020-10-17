@@ -30,15 +30,16 @@ ms.topic: article
 
 
 This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
-- Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM)
+- Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
 - Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Manager
 
-This onboarding guidance will walk you through:
--   Identifying target devices or users
+This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Manager:
+
+-   [Identifying target devices or users](#identify-target-devices-or-users)
 
     -   Creating an Azure Active Directory group (User or Device)
 
--   Creating a Configuration Profile
+-   [Creating a Configuration Profile](#create-configuration-policies-to-configure-microsoft-defender-atp-capabilities)
 
     -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
 
@@ -62,7 +63,8 @@ For more information about Microsoft Endpoint Manager, check out these resources
 - [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
-## Identify target devices or users
+## Onboard devices by creating a group in MEM to assign configurations on
+### Identify target devices or users
 In this section, we will create a test group to assign your configurations on.
 
 >[!NOTE]
@@ -103,6 +105,10 @@ be onboarded to Microsoft Defender ATP.
 
 Then you will continue by creating several
 different types of endpoint security policies.
+
+- [Endpoint detection and response](#endpoint-detection-and-response)
+- [Next-generation protection](#next-generation-protection)
+- [Attack surface reduction](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### Endpoint detection and response
 
