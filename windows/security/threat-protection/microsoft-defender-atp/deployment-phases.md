@@ -39,21 +39,15 @@ There are three phases in deploying Microsoft Defender ATP:
 
 The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
 
-There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard devices to Microsoft Defender ATP](onboard-configure.md).
-
-## Deployment strategy
-The [Plan deployment](deployment-strategy.md) topic provides high-level information on prerequisites, design, and configuration options. 
-
-Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
-
-[![Image of the PDF showing the various deployment paths](images/mdatp-deployment-strategy.png) ](images/deployment-strategy-big.png#lightbox)
-
+If you're unfamiliar with the general deployment planning steps, check out the [Plan deployment](deployment-strategy.md) topic to get a  high-level overview of the general deployment steps and methods.
 
 ## In Scope
 
 The following is in scope for this deployment guide:
 
--   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service
+-   Use of Microsoft Endpoint Configuration Manager and Microsoft Endpoint Manager to onboard endpoints into the service and configure capabilities
+
+-   Enabling Microsoft Defender ATP endpoint detection and response (EDR)  capabilities
 
 -   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
     capabilities
@@ -61,11 +55,6 @@ The following is in scope for this deployment guide:
     -   Next-generation protection
 
     -   Attack surface reduction
-
--   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
-    capabilities including automatic investigation and remediation
-
--   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
 
 
 ## Out of scope

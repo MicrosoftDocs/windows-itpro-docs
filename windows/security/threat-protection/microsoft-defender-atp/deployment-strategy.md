@@ -27,11 +27,13 @@ ms.topic: article
 
 Depending on the requirements of your environment, we've put together material to help guide you through the various options you can adopt to deploy Microsoft Defender ATP. 
 
-This article provides an overview on the general steps you need to take to deploy Microsoft Defender ATP:
+These are the general steps you need to take to deploy Microsoft Defender ATP:
 
 ![Image of deployment flow](images/onboarding-flow-diagram.png)
 
-
+- Identify architecture
+- Select deployment method
+- Configure capabilities
 
 
 ## Step 1: Identify architecture
@@ -49,18 +51,17 @@ Use the following material to select the appropriate Microsoft Defender ATP arch
 
 ## Step 2: Select deployment method
 Microsoft Defender ATP supports a variety of endpoints that you can onboard to the service. 
-Depending on the endpoint or your preferred deployment tool, select the method that best fits your requirements.
-
 
 The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately.
 
-| Endpoint     | Deployment methods                       |
+| Endpoint     | Deployment tool                       |
 |--------------|------------------------------------------|
-| **Windows**  |  Local script (up to 10 devices) <br>  Group Policy <br>  Microsoft Endpoint Manager <br>  Mobile Device Manager <br>   Microsoft Endpoint Configuration Manager <br> VDI scripts   |
-| **macOS**    | Local scripts <br> Mobile Device Manager/Microsoft Intune <br> JAMF Pro <br>  |
-| **Linux Server** | Local script <br> Puppet <br> Ansible|
-| **iOS**      | App-based                                |
-| **Android**  | Microsoft Endpoint Manager               |
+| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)   |
+| **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible)|
+| **iOS**      | [App-based](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+
 
 
 ## Step 3: Configure capabilities
