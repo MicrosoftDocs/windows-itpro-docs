@@ -29,132 +29,60 @@ To download and install Windows 10, version 2004, use Windows Update (**Settings
 
 ## Security
 
-### Windows Hello
+### Microsoft Defender Advanced Threat Protection (ATP) 
 
+This release includes improved support for non-ASCII file paths has been added for Microsoft Defender ATP Auto Incident Response (IR).
 
+The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
 
-### Windows Defender System Guard
+## Device management
 
+Modern Device Management (MDM) policy is extended with new [Local Users and Groups settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localusersandgroups) that match the options available for devices managed through Group Policy.
 
-
-### Windows Defender Application Guard
-
-
+For more information about what's new in MDM, see [What's new in mobile device enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management)
 
 ## Deployment
 
-### Windows Update
-
-For more information, see [What's next for Windows 10 updates](https://blogs.windows.com/windowsexperience/2020/06/16/whats-next-for-windows-10-updates/).
-
-### Windows Setup
-
-
-
-For more information, see Windows Setup enhancements in the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/pilot-new-features-with-the-windows-insider-program-for-business/ba-p/1220464).
-
-### SetupDiag
-
-
-
-### Windows Autopilot
-
-
-
-### Microsoft Endpoint Manager
-
-
-
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-
-
-### Microsoft Deployment Toolkit (MDT)
-
-
+There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
 ## Servicing
 
-### Delivery Optimization
+### Windows Update
 
-
-
-### Windows Update for Business
-
-
-
-## Networking
-
-### Wi-Fi 6 and WPA3
-
- 
-
-### TEAP
-
-   
+There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
 
 ## Virtualization
 
 ### Windows Sandbox
 
-
-
-### Windows Subsystem for Linux (WSL)
-
-
+New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
 
 ### Windows Virtual Desktop (WVD)
 
+Note: WVD is not tied directly to a Windows 10 release, but it is included here as an evolving capability of Windows.
+
+New capabilities are in WVD where announced at Ignite 2020. For more information, see [Announcing new management, security, and monitoring capabilities in Windows Virtual Desktop](https://aka.ms/wvd-ignite2020-blogpost).
+
+In addition [Windows Virtual Desktop is now generally available in the Azure Government cloud](https://azure.microsoft.com/en-us/updates/windows-virtual-desktop-is-now-generally-available-in-the-azure-government-cloud/).
 
 ## Microsoft Edge
 
-
-
-## Application settings
+This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.
 
 ## Windows Shell
 
 Several enhancements to the Windows 10 user interface are implemented in this release:
 
-### Cortana
-
-
-
-
-
-### Windows Search
-
-
-
-### Virtual Desktops
-
-
-
-### Bluetooth pairing
-
-
-
-### Reset this PC
-
-
-
-### Task Manager
-
-
-
-## Graphics & display
-
-### DirectX
-
-
+- With this release, the solid color behind tiles on the Start menu is replaced with a partially transparent background. 
+- You can now change the monitor refresh rate on advanced display settings.
+- Alt+Tab now shows Edge browser tabs by default. You can edit this setting under **Settings** > **System** > **Multitasking**: **Alt+Tab**.
+- The System control panel under System and Security has been updated to the Settings > About page. Links to Device Manager, Remote desktop, System protection, Advanced system settings, and Rename this PC are moved to the About page.
 
 ### 2-in-1 PCs
 
-
-
-### Specialized displays
-
-
+On a 2-in-1 device, Windows will now automatically switch to tablet mode when you detach the screen.
 
 ## Desktop Analytics
 
@@ -164,13 +92,9 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
-[What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.<br>
-[What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.<br>
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
-[Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.<br>
-[What's new for business in Windows 10 Insider Preview Builds](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-whats-new): A preview of new features for businesses.<br>
-[What's new in Windows 10, version 2004 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.<br>
+[Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
 [Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
 [Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
