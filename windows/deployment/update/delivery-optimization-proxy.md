@@ -54,7 +54,7 @@ With NetworkService (if unable to obtain a user token from a signed-in user):
 |---------|---------|
 |Internet Explorer proxy, current user     |  No       |
 |Internet Explorer proxy, device-wide     |   Yes   | 
-|netsh proxy     |  No       |
+|netsh proxy     |  Yes      |
 |Both Internet Explorer proxy (current user) *and* netsh proxy     | Yes, netsh proxy is used        |
 |Both Internet Explorer proxy (device-wide) *and* netsh proxy     | Yes, netsh proxy is used        |
 

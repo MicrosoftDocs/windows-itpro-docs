@@ -166,7 +166,7 @@ This event generates on domain controllers, member servers, and workstations.
     | 0xC0000064              | User logon with misspelled or bad user account                                                       |
     | 0xC000006A              | User logon with misspelled or bad password                                                           |
     | 0XC000006D              | This is either due to a bad username or authentication information                                   |
-    | 0XC000006E              | Unknown user name or bad password.                                                                   |
+    | 0XC000006E              | Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions).     |
     | 0xC000006F              | User logon outside authorized hours                                                                  |
     | 0xC0000070              | User logon from unauthorized workstation                                                             |
     | 0xC0000071              | User logon with expired password                                                                     |
@@ -284,7 +284,7 @@ For 4625(F): An account failed to log on.
 
 -   Monitor for all events with the fields and values in the following table:
 
-    | **Field**                                                                        | Value to monitor for                                                                                                                                                                                |
+    |  Field                                                                         | Value to monitor for                                                                                                                                                                                |
     |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This is typically not a security issue but it can be an infrastructure or availability issue. |
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                             |
