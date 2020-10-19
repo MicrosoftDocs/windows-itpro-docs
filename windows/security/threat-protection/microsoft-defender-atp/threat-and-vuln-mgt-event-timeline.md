@@ -38,7 +38,7 @@ You can access Event timeline mainly through three ways:
 
 - In the threat and vulnerability management navigation menu in the Microsoft Defender Security Center
 - Top events card in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). The highest impact events (for example, affect the most devices or critical vulnerabilities)
-- Hovering over the Exposure Score graph in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md)
+- Hovering over the Exposure Score graph in the threat and vulnerability management dashboard
 
 ### Navigation menu
 
@@ -112,7 +112,7 @@ The arrow below "score trend" helps you determine whether this event potentially
 
 ![Event timeline flyout](images/tvm-event-timeline-flyout500.png)
 
-From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can [submit a remediation request](tvm-security-recommendation.md#request-remediation), and track the request in the [remediation page](tvm-remediation.md).  
+From there, select **Go to related security recommendation** view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). After reading the description and vulnerability details in the security recommendation, you can submit a remediation request, and track the request in the [remediation page](tvm-remediation.md).  
 
 ## View Event timelines in software pages
 
@@ -129,17 +129,9 @@ Navigate to the event timeline tab to view all the events related to that softwa
 ## Related topics
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
+- [Dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation and exception](tvm-remediation.md)
+- [Remediate vulnerabilities](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
-- [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Advanced hunting overview](overview-hunting.md)
-- [All advanced hunting tables](advanced-hunting-reference.md)
+
