@@ -13,7 +13,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
@@ -43,6 +45,9 @@ If you can reproduce a problem, increase the logging level, run the system for s
 2. Reproduce the problem
 
 3. Run `sudo mdatp diagnostic create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+
+  > [!TIP]
+  > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
 
    ```bash
    sudo mdatp diagnostic create
@@ -97,7 +102,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on audit mode for PUA protection      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuration|Turn on/off passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
 |Diagnostics  |Change the log level                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create`                                                         |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp diagnostic create --path [directory]`                                                         |
 |Health       |Check the product's health                 |`mdatp health`                                                                    |
 |Health       |Check for a spefic product attribute       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |Protection   |Scan a path                                |`mdatp scan custom --path [path]`                                                 |
