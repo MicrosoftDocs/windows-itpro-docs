@@ -45,6 +45,32 @@ For more information about what's new in MDM, see [What's new in mobile device e
 
 ## Deployment
 
+New practical, step-by-step guidance is available to help move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. These steps have been broken into plan, prepare, and deploy phases.
+
+**Planning** guidance is available to help you: 
+- Create a [phased deployment plan](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
+- Assign [roles and responsibilities](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#process-manager) within your organization
+- Set [criteria](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) to establish readiness for the upgrade process
+- Evaluate your [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/eval-infra-tools)
+- Determine [readiness](https://docs.microsoft.com/windows/deployment/update/plan-determine-app-readiness) for your business applications
+- Create an effective, schedule-based [servicing strategy](https://docs.microsoft.com/windows/deployment/update/plan-define-strategy)
+
+**Preparing** to deploy means making the changes that are necessary to optimize your devices and their environment for deployment, including:
+- Updating [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-infrastructure-and-environment)
+- Ensure the needed [services](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-applications-and-devices) are available
+- Resolving issues with [unhealthy devices](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
+- Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
+
+**Depoy** Windows 10 to in your organization when you are ready, using:
+- [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
+- [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
+- Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
+
+
+For more information, see:
+
+- 
+
 ### Windows Assessment and Deployment Toolkit (ADK)
 
 There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
@@ -73,9 +99,11 @@ In addition [Windows Virtual Desktop is now generally available in the Azure Gov
 
 ## Windows Shell
 
-Several enhancements to the Windows 10 user interface are implemented in this release:
+Some enhancements to the Windows 10 user interface are implemented in this release:
 
-- With this release, the solid color behind tiles on the Start menu is replaced with a partially transparent background. 
+- With this release, the solid color behind tiles on the Start menu is replaced with a partially transparent background. Tiles are also theme-aware. 
+- Icons on the Start menu no longer have a square outline around each icon.
+- Notifications are slightly updated in appearance.
 - You can now change the monitor refresh rate on advanced display settings.
 - Alt+Tab now shows Edge browser tabs by default. You can edit this setting under **Settings** > **System** > **Multitasking**: **Alt+Tab**.
 - The System control panel under System and Security has been updated to the Settings > About page. Links to Device Manager, Remote desktop, System protection, Advanced system settings, and Rename this PC are moved to the About page.
