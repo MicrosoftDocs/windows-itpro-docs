@@ -56,10 +56,10 @@ You are currently in the onboarding phase.
 
 These are the steps you need to take to deploy Microsoft Defender ATP:
 
-- Onboard endpoints to the service using management tools
-- Configure capabilities 
+- Step 1: Onboard endpoints to the service 
+- Step 2: Configure capabilities 
 
-## Step 1: Onboard endpoints using management tools
+## Step 1: Onboard endpoints using any of the supported management tools
 The [Plan deployment]() topic outlines the general steps you need to take to deploy Microsoft Defender ATP.  
 
 After identifying your architecture, you'll need to decide on the deployment method. The deployment tool you choose dictates how you onboard endpoints to the service. 
