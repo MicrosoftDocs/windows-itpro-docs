@@ -55,9 +55,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 
 |New or updated article | Description|
 |--- | ---|
-| [Policy CSP - LocalUsersandGroups](policy-csp-localusersandgroups.md) | Added new article for the LocalUsersandGroups policy. |
-| [Policy CSP - MixedReality](policy-csp-mixedreality.md) | Added new article for the MixedReality policies. |
-| [Policy CSP - WindowsSandbox](policy-csp-windowssandbox.md) | Added new article for the WindowsSandbox policies. |
+| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 2010:<br>- [LocalUsersAndGroups/Configure](policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [WindowsSandbox/AllowAudioInput](policy-csp-windowssandbox.md#windowssandbox-allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](policy-csp-windowssandbox.md#windowssandbox-allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](/policy-csp-windowssandbox.md#windowssandbox-allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](policy-csp-windowssandbox.md#windowssandbox-allowvideoinput) |
 
 ## September 2020
 
