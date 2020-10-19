@@ -53,7 +53,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 - [Threat & vulnerability management overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 - [Get started](microsoft-defender-atp/tvm-prerequisites.md)
 - [Access your security posture](microsoft-defender-atp/tvm-dashboard-insights.md)
-- [Improve your security posture and reduce risk](microsoft-defender-atp/tvm-security-recommendation)
+- [Improve your security posture and reduce risk](microsoft-defender-atp/tvm-security-recommendation.md)
 - [Understand vulnerabilities on your devices](microsoft-defender-atp/tvm-software-inventory.md)
 
 <a name="asr"></a>
