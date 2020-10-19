@@ -25,7 +25,7 @@ ms.topic: conceptual
 <center><h2>Microsoft Defender ATP</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & vulnerability management</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Threat & vulnerability management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png"> <br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
