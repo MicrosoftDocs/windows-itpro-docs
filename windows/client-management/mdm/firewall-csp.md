@@ -251,7 +251,7 @@ Sample syncxml to provision the firewall settings to evaluate
 <p style="margin-left: 20px">Comma separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:</p>
 <ul>
 <li>"*" indicates any local address. If present, this must be the only token included.</li>
-<li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
+<li>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.</li>
 <li>A valid IPv6 address.</li>
 <li>An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
 <li>An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.</li>
