@@ -42,7 +42,7 @@ While Microsoft Defender ATP supports onboarding of various endpoints and tools,
 For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
-## Onboard Windows devices using Microsoft Endpoint Configuration Manager
+## Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager
 
 ### Collection creation
 To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the
@@ -100,7 +100,7 @@ Follow the steps below to onboard endpoints using Microsoft Endpoint Configurati
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
 
-## Configure Microsoft Defender ATP capabilities 
+## Step 2: Configure Microsoft Defender ATP capabilities 
 This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
 
 - [**Endpoint detection and response**](#endpoint-detection-and-response)

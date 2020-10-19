@@ -63,7 +63,7 @@ For more information about Microsoft Endpoint Manager, check out these resources
 - [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
-## Onboard devices by creating a group in MEM to assign configurations on
+## Step 1: Onboard devices by creating a group in MEM to assign configurations on
 ### Identify target devices or users
 In this section, we will create a test group to assign your configurations on.
 
@@ -97,7 +97,7 @@ needs.<br>
 
 8.  Your testing group now has a member to test.
 
-## Create configuration policies to configure Microsoft Defender ATP capabilities
+## Step 2: Create configuration policies to configure Microsoft Defender ATP capabilities
 In the following section, you'll create a number of configuration policies.
 
 First is a configuration policy to select which groups of users or devices will
