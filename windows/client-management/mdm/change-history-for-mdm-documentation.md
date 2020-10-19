@@ -1,5 +1,5 @@
 ---
-title: Change history in MDM documentation
+title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
 ms.reviewer: 
 manager: dansimp
@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.date: 10/19/2020
 ---
 
-# Change history in Mobile Device Management (MDM) documentation
+# Change history for Mobile Device Management documentation
+
+This article lists new and updated articles in the Mobile Device Management (MDM) documentation. Updated articles are those that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues are not listed.
 
 - [October 2020](#october-2020)
 - [September 2020](#september-2020)
@@ -51,7 +53,7 @@ ms.date: 10/19/2020
 
 ## October 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 | [Policy CSP - LocalUsersandGroups](policy-csp-localusersandgroups.md) | Added new topic for the LocalUsersandGroups policy. |
 | [Policy CSP - MixedReality](policy-csp-mixedreality.md) | Added new topic for the MixedReality policies. |
@@ -59,33 +61,33 @@ ms.date: 10/19/2020
 
 ## September 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[NetworkQoSPolicy CSP](networkqospolicy-csp.md)|Updated support information of the NetworkQoSPolicy CSP.|
 |[Policy CSP - LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)|Removed the following unsupported LocalPoliciesSecurityOptions policy settings from the documentation:<br>- RecoveryConsole_AllowAutomaticAdministrativeLogon <br>- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways<br>- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible<br>- DomainMember_DisableMachineAccountPasswordChanges<br>- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems<br>|
 
 ## August 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - System](policy-csp-system.md)|Removed the following policy settings:<br> - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br>|
 
 ## July 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - System](policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="./policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
 
 ## June 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added SKU support table for **AllowStandardUserEncryption**.|
 |[Policy CSP - NetworkIsolation](policy-csp-networkisolation.md)|Updated the description from Boolean to Integer for the following policy settings:<br>EnterpriseIPRangesAreAuthoritative, EnterpriseProxyServersAreAuthoritative.|
 
 ## May 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
 |[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with additional details. Added policy timeline table. 
@@ -93,33 +95,33 @@ ms.date: 10/19/2020
 
 ## February 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[CertificateStore CSP](certificatestore-csp.md)<br>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)|Added details about SubjectName value.|
 
 ## January 2020
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - Defender](policy-csp-defender.md)|Added descriptions for supported actions for Defender/ThreatSeverityDefaultAction.|
 
 ## November 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - DeliveryOptimization](policy-csp-deliveryoptimization.md)|Added option 5 in the supported values list for DeliveryOptimization/DOGroupIdSource.|
 |[DiagnosticLog CSP](diagnosticlog-csp.md)|Added substantial updates to this CSP doc.|
 
 ## October 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the following new nodes:<br>ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID.|
 |[Defender CSP](defender-csp.md)|Added the following new nodes:<br>Health/TamperProtectionEnabled, Health/IsVirtualMachine, Configuration, Configuration/TamperProtection, Configuration/EnableFileHashComputation.|
 
 ## September 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)|Added the following new node:<br>IsStub.|
 |[Policy CSP - Defender](policy-csp-defender.md)|Updated the supported value list for Defender/ScheduleScanDay policy.|
@@ -127,14 +129,14 @@ ms.date: 10/19/2020
 
 ## August 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[DiagnosticLog CSP](diagnosticlog-csp.md)<br>[DiagnosticLog DDF](diagnosticlog-ddf.md)|Added version 1.4 of the CSP in Windows 10, version 1903. Added the new 1.4 version of the DDF. Added the following new nodes:<br>Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelName/MaximumFileSize, Policy/Channels/ChannelName/SDDL, Policy/Channels/ChannelName/ActionWhenFull, Policy/Channels/ChannelName/Enabled, DiagnosticArchive, DiagnosticArchive/ArchiveDefinition, DiagnosticArchive/ArchiveResults.|
 |[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)|Enhanced the article to include additional reference links and the following two topics:<br>Verify auto-enrollment requirements and settings, Troubleshoot auto-enrollment of devices.|
 
 ## July 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP](policy-configuration-service-provider.md)|Added the following list:<br>Policies supported by HoloLens 2|
 |[ApplicationControl CSP](applicationcontrol-csp.md)|Added new CSP in Windows 10, version 1903.|
@@ -144,14 +146,14 @@ ms.date: 10/19/2020
 
 ## June 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - DeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md)|Added the following new policies:<br>AllowDeviceHealthMonitoring, ConfigDeviceHealthMonitoringScope, ConfigDeviceHealthMonitoringUploadDestination.|
 |[Policy CSP - TimeLanguageSettings](policy-csp-timelanguagesettings.md)|Added the following new policy:<br>ConfigureTimeZone.|
 
 ## May 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[DeviceStatus CSP](devicestatus-csp.md)|Updated description of the following nodes:<br>DeviceStatus/Antivirus/SignatureStatus, DeviceStatus/Antispyware/SignatureStatus.|
 |[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)|Added new CSP in Windows 10, version 1903.|
@@ -168,26 +170,26 @@ ms.date: 10/19/2020
 
 ## April 2019
 
-|                                         New or updated topic                                          |                                                                                                                                                                                                          Description                                                                                                                                                                                                          |
+|                                         New or updated article                                          |                                                                                                                                                                                                          Description                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md) | Added the following warning at the end of the Overview section:<br>Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined. |
 |                          [Policy CSP - UserRights](policy-csp-userrights.md)                          |                                                                                                                                  Added a note stating if you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (<![CDATA[...]]>) to wrap the data fields.                                                                                                                                  |
 
 ## March 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - Storage](policy-csp-storage.md)|Updated ADMX Info of the following policies:<br>AllowStorageSenseGlobal, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseCloudContentDehydrationThreshold, ConfigStorageSenseDownloadsCleanupThreshold, ConfigStorageSenseGlobalCadence, ConfigStorageSenseRecycleBinCleanupThreshold. <br><br>Updated description of ConfigStorageSenseDownloadsCleanupThreshold.|
 
 ## February 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP](policy-configuration-service-provider.md)|Updated supported policies for Holographic.|
 
 ## January 2019
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
 |[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
@@ -195,13 +197,13 @@ ms.date: 10/19/2020
 
 ## December 2018
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Updated AllowWarningForOtherDiskEncryption policy description to describe silent and non-silent encryption scenarios, as well as where and how the recovery key is backed up for each scenario.|
 
 ## September 2018
 
-|New or updated topic | Description|
+|New or updated article | Description|
 |--- | ---|
 |[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
 |[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
@@ -215,7 +217,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -293,7 +295,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -383,7 +385,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -443,7 +445,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -468,7 +470,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -524,7 +526,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -609,7 +611,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -669,7 +671,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -823,7 +825,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -844,7 +846,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -882,7 +884,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -924,7 +926,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -992,7 +994,7 @@ ms.date: 10/19/2020
 </colgroup>
 <thead>
 <tr class="header">
-<th>New or updated topic</th>
+<th>New or updated article</th>
 <th>Description</th>
 </tr>
 </thead>
