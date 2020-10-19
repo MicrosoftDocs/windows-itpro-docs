@@ -197,29 +197,26 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 ### Block installation and usage of removable storage
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**. 
+1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
 
    ![Create device configuration profile](images/create-device-configuration-profile.png)
 
 3. Use the following settings: 
 
-   - Name: Type a name for the profile 
-   - Description: Type a description 
    - Platform: Windows 10 and later 
-   - Profile type: Device restrictions 
+   - Profile type: Device restrictions
 
    ![Create profile](images/create-profile.png)
 
-4. Click **Configure** > **General**.  
+4. Click **Create**.  
 
 5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
 
    ![General settings](images/general-settings.png)
 
-6. Click **OK** to close **General** settings and **Device restrictions**.
+6. Click **OK** to close settings and **Device restrictions**.
 
-7. Click **Create** to save the profile.
 
 ### Only allow installation and usage of specifically approved peripherals
 
