@@ -26,8 +26,8 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Windows Phone Backup | Windows Phone Backup is deprecated. Data backed up by Windows Phone Backup will no longer be available starting January, 2021. | 20H2 |
+| Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Companion Device Framework | The [Companion Device Framework](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-companion-device-framework) is no longer under active development.| 2004 |
 | Microsoft Edge | The legacy version of Microsoft Edge is no longer being developed.| 2004 |
 | Dynamic Disks | The [Dynamic Disks](https://docs.microsoft.com/windows/win32/fileio/basic-and-dynamic-disks#dynamic-disks) feature is no longer being developed. This feature will be fully replaced by [Storage Spaces](https://docs.microsoft.com/windows-server/storage/storage-spaces/overview) in a future release.| 2004 |
