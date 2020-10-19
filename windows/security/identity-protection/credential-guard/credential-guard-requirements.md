@@ -18,7 +18,6 @@ ms.reviewer:
 
 # Windows Defender Credential Guard: Requirements
 
-
 ## Applies to
 
 - Windows 10
