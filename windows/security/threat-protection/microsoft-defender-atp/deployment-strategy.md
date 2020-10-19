@@ -65,9 +65,7 @@ The following table lists the supported endpoints and the corresponding deployme
 
 
 ## Step 3: Configure capabilities
-After onboarding endpoints, configure the security capabilities in Microsoft Defender ATP so that you can maximize the robust security protection available in the suite. 
-
-Maximize the security features of the suite by configuring capabilities such as:
+After onboarding endpoints, configure the security capabilities in Microsoft Defender ATP so that you can maximize the robust security protection available in the suite. Capabilities include:
 
 - Endpoint detection and response
 - Next-generation protection

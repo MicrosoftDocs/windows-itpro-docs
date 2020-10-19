@@ -62,7 +62,7 @@ These are the steps you need to take to deploy Microsoft Defender ATP:
 ## Step 1: Onboard endpoints using any of the supported management tools
 The [Plan deployment]() topic outlines the general steps you need to take to deploy Microsoft Defender ATP.  
 
-After identifying your architecture, you'll need to decide on the deployment method. The deployment tool you choose dictates how you onboard endpoints to the service. 
+After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
 
 ### Onboarding tool options
 
