@@ -36,7 +36,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/en-us/windows/se
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
 
 
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
