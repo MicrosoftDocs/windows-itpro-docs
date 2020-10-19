@@ -14,7 +14,7 @@ ms.date: 10/19/2020
 
 # Change history for Mobile Device Management documentation
 
-This article lists new and updated articles in the Mobile Device Management (MDM) documentation. Updated articles are those that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues are not listed.
+This article lists new and updated articles for the Mobile Device Management (MDM) documentation. Updated articles are those that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues are not listed.
 
 - [October 2020](#october-2020)
 - [September 2020](#september-2020)
@@ -55,9 +55,9 @@ This article lists new and updated articles in the Mobile Device Management (MDM
 
 |New or updated article | Description|
 |--- | ---|
-| [Policy CSP - LocalUsersandGroups](policy-csp-localusersandgroups.md) | Added new topic for the LocalUsersandGroups policy. |
-| [Policy CSP - MixedReality](policy-csp-mixedreality.md) | Added new topic for the MixedReality policies. |
-| [Policy CSP - WindowsSandbox](policy-csp-windowssandbox.md) | Added new topic for the WindowsSandbox policies. |
+| [Policy CSP - LocalUsersandGroups](policy-csp-localusersandgroups.md) | Added new article for the LocalUsersandGroups policy. |
+| [Policy CSP - MixedReality](policy-csp-mixedreality.md) | Added new article for the MixedReality policies. |
+| [Policy CSP - WindowsSandbox](policy-csp-windowssandbox.md) | Added new article for the WindowsSandbox policies. |
 
 ## September 2020
 
@@ -91,7 +91,6 @@ This article lists new and updated articles in the Mobile Device Management (MDM
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
 |[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with additional details. Added policy timeline table. 
-
 
 ## February 2020
 
@@ -434,7 +433,6 @@ This article lists new and updated articles in the Mobile Device Management (MDM
 </td></tr>
 </tbody>
 </table>
-
 
 ## May 2018
 
@@ -915,7 +913,6 @@ This article lists new and updated articles in the Mobile Device Management (MDM
 </td></tr>
 </tbody>
 </table>
-
 
 ## September 2017
 

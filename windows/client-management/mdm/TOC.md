@@ -1,6 +1,6 @@
 # [Mobile device management](index.md)
 ## [What's new in MDM enrollment and management](new-in-windows-mdm-enrollment-management.md)
-### [Change history in MDM documentation](change-history-in-mdm-documentation.md)
+### [Change history for MDM documentation](change-history-for-mdm-documentation.md)
 ## [Mobile device enrollment](mobile-device-enrollment.md)
 ### [MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)
 #### [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md)
