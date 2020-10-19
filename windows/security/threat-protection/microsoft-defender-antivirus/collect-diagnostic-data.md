@@ -1,7 +1,7 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -25,7 +25,7 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender AV.
 
 > [!NOTE]
 > As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -54,7 +54,7 @@ On at least two devices that are experiencing the same issue, obtain the .cab di
 4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
 > [!NOTE]
-> To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
+> To redirect the cab file to a a different path or UNC share, use the following command: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>For more information, see [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 
@@ -78,7 +78,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 Copies the diagnostic data to the specified path. If the path is not specified, the diagnostic data will be copied to the location specified in the Support Log Location Configuration.
 
-When the SupportLogLocation parameter is used, a folder structure as below will be created in the destination path:
+When the SupportLogLocation parameter is used, a folder structure like as follows will be created in the destination path:
 
 ```Dos
 <path>\<MMDD>\MpSupport-<hostname>-<HHMM>.cab
@@ -86,13 +86,30 @@ When the SupportLogLocation parameter is used, a folder structure as below will 
 
 | field  | Description   |
 |:----|:----|
-| path | The path as specified on the commandline or retrieved from configuration
-| MMDD | Month Day when the diagnostic data was collected (eg 0530)
-| hostname | the hostname of the device on which the diagnostic data was collected.
-| HHMM | Hours Minutes when the diagnostic data was collected (eg 1422)
+| path | The path as specified on the command line or retrieved from configuration
+| MMDD | Month and day when the diagnostic data was collected (for example, 0530)
+| hostname | The hostname of the device on which the diagnostic data was collected
+| HHMM | Hours and minutes when the diagnostic data was collected (for example, 1422)
 
 > [!NOTE]
-> When using a File share please make sure that account used to collect the diagnostic package has write access to the share.  
+> When using a file share please make sure that account used to collect the diagnostic package has write access to the share.  
+
+## Specify location where diagnostic data is created
+
+You can also specify where the diagnostic .cab file will be created using a Group Policy Object (GPO). 
+
+1. Open the Local Group Policy Editor and find the SupportLogLocation GPO at: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
+   
+1. Select **Define the directory path to copy support log files**.
+
+    ![Screenshot of local group policy editor](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![Screenshot of define path for log files setting](images/GPO2-SupportLogLocationGPPage.png)  
+3. Inside the policy editor, select **Enabled**.
+       
+4. Specify the directory path where you want to copy the support log files in the **Options** field.
+     ![Screenshot of Enabled directory path custom setting](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+5. Select **OK** or **Apply**.
 
 ## See also
 
