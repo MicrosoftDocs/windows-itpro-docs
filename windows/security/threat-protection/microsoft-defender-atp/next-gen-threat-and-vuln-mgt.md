@@ -41,44 +41,48 @@ Threat and vulnerability management is built in, real time, and cloud powered. I
 
 Vulnerability management is the first solution in the industry to bridge the gap between security administration and IT administration during remediation process. Create a security task or ticket by integrating with Microsoft Intune and Microsoft Endpoint Configuration Manager.
 
-It provides the following solutions to frequently cited gaps across security operations, security administration, and IT administration workflows and communication:
-
-- Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
-- Linked device vulnerability and security configuration assessment data in the context of exposure discovery
-- Built-in remediation processes through Microsoft Intune and Configuration Manager
-
 ### Real-time discovery
 
 To discover endpoint vulnerabilities and misconfiguration, threat and vulnerability management uses the same agentless built-in Microsoft Defender ATP sensors to reduce cumbersome network scans and IT overhead.
 
 It also provides:
 
-- Real-time device inventory. Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
-- Visibility into software and vulnerabilities. Optics into the organization's software inventory, and software changes like installations, uninstalls, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
-- Application runtime context. Visibility on application usage patterns for better prioritization and decision-making.
-- Configuration posture. Visibility into organizational security configuration or misconfigurations. Issues are reported in the dashboard with actionable security recommendations.
+- **Real-time device inventory** - Devices onboarded to Microsoft Defender ATP automatically report and push vulnerability and security configuration data to the dashboard.
+- **Visibility into software and vulnerabilities** - Optics into the organization's software inventory, and software changes like installations, uninstalls, and patches. Newly discovered vulnerabilities are reported with actionable mitigation recommendations for 1st and 3rd party applications.
+- **Application runtime context** - Visibility on application usage patterns for better prioritization and decision-making.
+- **Configuration posture** - Visibility into organizational security configuration or misconfigurations. Issues are reported in the dashboard with actionable security recommendations.
 
 ### Intelligence-driven prioritization
 
-Threat and vulnerability management helps customers prioritize and focus on those weaknesses that pose the most urgent and the highest risk to the organization. Rather than using static prioritization by severity scores, threat and vulnerability management highlights the most critical weaknesses that need attention. It fuses security recommendations with dynamic threat and business context:
+Threat and vulnerability management helps customers prioritize and focus on the weaknesses that pose the most urgent and the highest risk to the organization. It fuses security recommendations with dynamic threat and business context:
 
-- Exposing emerging attacks in the wild. Through its advanced cyber data and threat analytics platform, threat and vulnerability management dynamically aligns the prioritization of its security recommendations. It focuses on vulnerabilities currently being exploited in the wild and emerging threats that pose the highest risk.
-- Pinpointing active breaches. Microsoft Defender ATP correlates threat and vulnerability management and EDR insights to prioritize vulnerabilities being exploited in an active breach within the organization.
-- Protecting high-value assets. Microsoft Defender ATP's integration with Azure Information Protection allows threat and vulnerability management to identify the exposed devices with business-critical applications, confidential data, or high-value users.
+- **Exposing emerging attacks in the wild** - Dynamically aligns the prioritization of security recommendations. Threat and vulnerability management focuses on vulnerabilities currently being exploited in the wild and emerging threats that pose the highest risk.
+- **Pinpointing active breaches** - Correlates threat and vulnerability management and EDR insights to prioritize vulnerabilities being exploited in an active breach within the organization.
+- **Protecting high-value assets** - Identify the exposed devices with business-critical applications, confidential data, or high-value users.
 
 ### Seamless remediation
 
-Microsoft Defender ATP's threat and vulnerability management capability allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
+Threat and vulnerability management allows security administrators and IT administrators to collaborate seamlessly to remediate issues.
 
-- Remediation requests to IT. Through Microsoft Defender ATP's integration with Microsoft Intune and Microsoft Endpoint Configuration Manager, security administrators can create a remediation task in Microsoft Intune from the Security recommendation pages. We plan to expand this capability to other IT security management platforms.
-- Alternate mitigations. Threat and vulnerability management provides insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
-- Real-time remediation status. Microsoft Defender ATP provides real-time monitoring of the status and progress of remediation activities across the organization.
+- **Remediation requests sent to IT** - Create a remediation task in Microsoft Intune from a specific security recommendation. We plan to expand this capability to other IT security management platforms.
+- **Alternate mitigations** - Gain insights on additional mitigations, such as configuration changes that can reduce risk associated with software vulnerabilities.
+- **Real-time remediation status** - Real-time monitoring of the status and progress of remediation activities across the organization.
 
-## Reduce organizational risk with threat and vulnerability management
+## Threat and vulnerability management walk-through
 
 Watch this video for a comprehensive walk-through of threat and vulnerability management.
 
 >[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
+
+## Navigation pane
+
+Area | Description
+:---|:---
+**Dashboard**   | Get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data.
+[**Security recommendations**](tvm-security-recommendation.md) | See the list of security recommendations and related threat information. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Microsoft Defender ATP.
+[**Remediation**](tvm-remediation.md) | See remediation activities you've created and recommendation exceptions.
+[**Software inventory**](tvm-software-inventory.md) | See the list of vulnerable software in your organization, along with weakness and threat information.
+[**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures (CVEs) in your organization.
 
 ## APIs
 

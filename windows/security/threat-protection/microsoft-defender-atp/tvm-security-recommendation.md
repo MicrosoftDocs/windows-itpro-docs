@@ -130,5 +130,5 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
 - [Remediate vulnerabilities](tvm-remediation.md)
-- [Create and view exceptions for security recommendations](tvm-exceptions.md)
+- [Create and view exceptions for security recommendations](tvm-exception.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)

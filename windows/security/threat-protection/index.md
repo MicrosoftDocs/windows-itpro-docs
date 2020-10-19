@@ -25,7 +25,7 @@ ms.topic: conceptual
 <center><h2>Microsoft Defender ATP</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & vulnerability management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png"> <br><b>Attack surface reduction</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
@@ -47,19 +47,14 @@ ms.topic: conceptual
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
+**[Threat & vulnerability management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 
-- [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-- [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
-- [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
-- [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
-- [Remediation](microsoft-defender-atp/tvm-remediation.md)
-- [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
-- [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-- [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+- [Threat & vulnerability management overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+- [Get started](microsoft-defender-atp/tvm-prerequisites.md)
+- [Access your security posture](microsoft-defender-atp/tvm-dashboard-insights.md)
+- [Improve your security posture and reduce risk](microsoft-defender-atp/tvm-security-recommendation)
+- [Understand vulnerabilities on your devices](microsoft-defender-atp/tvm-software-inventory.md)
 
 <a name="asr"></a>
 
@@ -110,15 +105,6 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 - [View and approve remediation actions](microsoft-defender-atp/manage-auto-investigation.md)
 
 <a name="ss"></a>
-
-**[Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)**<br>
-
-Microsoft Defender ATP includes a Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
-
-- [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
-- [Threat analytics](microsoft-defender-atp/threat-analytics.md)
-
-<a name="mte"></a>
 
 **[Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)**<br>
 Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately.

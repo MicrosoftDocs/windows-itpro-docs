@@ -1,7 +1,7 @@
 ---
-title: Scenarios - threat and vulnerability management
-description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate.
-keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls 
+title: Assign device value - threat and vulnerability management
+description: Learn how to assign a low, normal, or high value to a device to help you differentiate between asset priorities.
+keywords: microsoft defender atp device value, threat and vulnerability management device value, high value devices, device value exposure score
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Define a device's value to the organization
+# Assign device value - threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation. Devices marked as “high value” will receive more weight.
+Defining a device’s value helps you differentiate between asset priorities. The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation. Devices assigned as “high value” will receive more weight.
 
 You can also use the [set device value API](set-device-value.md).
 
@@ -42,18 +42,18 @@ Device value options:
 - Normal (Default)
 - High
 
-Examples of devices that should be marked as high value:
+Examples of devices that should be assigned a high value:
 
 - Domain controllers, Active Directory
 - Internet facing devices
 - VIP devices
 - Devices hosting internal/external production services
 
-## Set device value
+## Choose device value
 
 1. Navigate to any device page, the easiest place is from the device inventory.
 
-2. Select **Device Value** from three dots next to the actions bar at the top of the page.
+2. Select **Device value** from three dots next to the actions bar at the top of the page.
     ![Example of the device value dropdown.](images/tvm-device-value-dropdown.png)
 
 <br><br>
