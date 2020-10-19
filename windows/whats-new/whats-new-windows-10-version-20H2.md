@@ -27,13 +27,15 @@ As with previous fall releases, Windows 10, version 20H2 is a scoped set of feat
 
 To download and install Windows 10, version 2004, use Windows Update (**Settings > Update & Security > Windows Update**). 
 
-## Security
+## Microsoft Edge
 
-### Microsoft Defender Advanced Threat Protection (ATP) 
+This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.
 
-This release includes improved support for non-ASCII file paths has been added for Microsoft Defender ATP Auto Incident Response (IR).
+## Servicing
 
-The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
+### Windows Update
+
+There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
 
 ## Device management
 
@@ -47,11 +49,13 @@ For more information about what's new in MDM, see [What's new in mobile device e
 
 There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
 
-## Servicing
+## Security
 
-### Windows Update
+### Microsoft Defender Advanced Threat Protection (ATP) 
 
-There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
+This release includes improved support for non-ASCII file paths has been added for Microsoft Defender ATP Auto Incident Response (IR).
+
+The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
 
 ## Virtualization
 
@@ -66,10 +70,6 @@ Note: WVD is not tied directly to a Windows 10 release, but it is included here 
 New capabilities are in WVD where announced at Ignite 2020. For more information, see [Announcing new management, security, and monitoring capabilities in Windows Virtual Desktop](https://aka.ms/wvd-ignite2020-blogpost).
 
 In addition [Windows Virtual Desktop is now generally available in the Azure Government cloud](https://azure.microsoft.com/en-us/updates/windows-virtual-desktop-is-now-generally-available-in-the-azure-government-cloud/).
-
-## Microsoft Edge
-
-This release automatically includes the new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business) browser instead of the legacy version of Edge.
 
 ## Windows Shell
 
