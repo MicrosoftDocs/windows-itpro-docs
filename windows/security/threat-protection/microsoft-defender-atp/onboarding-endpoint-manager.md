@@ -30,8 +30,8 @@ ms.topic: article
 
 
 This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
-- Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
-- Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Manager
+- Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
+- Step 2: Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Manager
 
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Manager:
 

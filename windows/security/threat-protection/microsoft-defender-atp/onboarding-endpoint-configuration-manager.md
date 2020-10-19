@@ -27,8 +27,8 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
-- Onboarding Windows devices to the service 
-- Configuring Microsoft Defender ATP capabilities
+- Step 1: Onboarding Windows devices to the service 
+- Step 2: Configuring Microsoft Defender ATP capabilities
 
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:
 - **Creating a collection in Microsoft Endpoint Configuration Manager**
