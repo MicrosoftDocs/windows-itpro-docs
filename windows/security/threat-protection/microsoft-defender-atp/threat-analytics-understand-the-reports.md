@@ -27,7 +27,7 @@ ms.topic: article
 
 The analyst report is the written section provided by Microsoft security researchers. Most analyst reports include the following sections:
 
-| Report section | Description of contents |
+| Report section | Description |
 |--|--|
 | Executive summary | Overview of the threat, including when the threat was first observed, its motivations, notable events, major targets (industries and regions), and distinct tools and techniques. |
 | Analysis | Provides available technical information, including the details of an attack or how a new technique or attack surface might be utilized. | 
@@ -38,10 +38,10 @@ The analyst report is the written section provided by Microsoft security researc
 | References | Lists Microsoft and third-party references reviewed by analysts during the creation of the report. Threat analytics reports are based on data validated Microsoft researchers. Information from publicly-available, third-party source are identified clearly as such. | 
 | Change log | Describes significant changes made to the report since the time of publication. |
 
-## Track mitigations
+## Review and apply mitigations
 Threat analytics reports dynamically track the status of security updates and secure configurations. These are available as charts and tables under the **Mitigations** tab.
 
-The analyst report, however, also includes mitigations that are not dynamically tracked. Here are some examples of mitigation guidance that are not tracked dynamically:
+The analyst report, however, also includes mitigations that are _not_ dynamically tracked. Here are some examples of mitigation guidance that are not tracked dynamically:
 
 - Block emails with .lnk attachments or other suspicious file types
 - Randomize local administrator passwords
@@ -57,24 +57,36 @@ The analyst report also provides a list of detections for various security capab
 - Attack surface reduction rules
 
 ### Antivirus detections
-These detections are available on devices with Microsoft Defender Antivirus. On devices that are onboarded to Microsoft Defender for Endpoint, these detections automatically fire alerts and will be reflected in the charts provided with the report.
+These detections are available on devices with [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) turned on. When these detections occur on devices that are onboarded to Microsoft Defender for Endpoint, the same detections trigger alerts that are reflected in the charts provided with the report.
 
 >[!NOTE]
->There are cases when the report lists some generic detection names that detect a wide-range of threats in addition to the threat components or behaviors associated with the report. These generic detections do NOT reflect in the charts.
+>There are cases when the report lists some generic detection names that detect a wide-range of threats in addition to the threat components or behaviors associated with the report. These generic detections do _not_ reflect in the charts.
 
- 
+### Endpoint detection and response (EDR) alerts
+Endpoint detection and response alerts constitute the alerts on Microsoft Defender Security Center and are raised on [devices onboarded to Microsoft Defender for Endpoint](onboard-configure.md). These detections generally rely on security signals collected by the Microsoft Defender for Endpoint sensor and its other capabilities on the endpoint, including antivirus, network protection, tamper protection, and all other signal sources.
 
-| Detection type | Description |
-|--|--|
-| Antivirus | These detections are raised on devices running [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) to identify malware components using various anti-malware technologies. |
-| Endpoint detection and response | These detections constitute alerts on Microsoft Defender Security Center and are raised on [devices onboarded to Microsoft Defender for Endpoint](onboard-configure.md). These detections generally rely of security signals collected by the Microsoft Defender for Endpoint sensor, but also incorporates antivirus, network protection, and all other signals available on each device. |
-| Attack surface reduction rules| |
+Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In this case the alert is clearly identified as generic and will not influence any of the charts in the report. 
+
+### Attack surface reduction rules
+When turned on, [attack surface reduction rules](attack-surface-reduction) can be set to either detect (audit) or block various behaviors commonly associated with threats, such as:
+- An Office application or an email client launching an executable or spawning a child process
+- A script downloads executable content
+
+The analyst report provides a list of attack surface reduction rules that you can use to monitor for or mitigate the tracked threat.   
+
+
+## Proactively locate threats with advanced hunting
+While the detections allow you to automatically identify and stop threat activity by turning on the corresponding capabilities, many attack activities leave very subtle traces that require additional inspection. Most of these activities are generally considered normal, and detecting them dynamically can be disruptive.
+
+[Advanced hunting](advanced-hunting-overview.md) provides a query interface, based on the Kusto Query Language, that simplifies locating indicators suspicious activity. Advanced hunting queries also help collect contextual information that you can use to verify whether suspicious activity is associated with the tracked threat.
+
+To use the advanced hunting queries, open them in the [advanced hunting query editor](https://securitycenter.windows.com/advanced-hunting)...   
 
 
 
+___
 
-
- 
+[BREAK] 
 
 
 
