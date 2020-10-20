@@ -257,7 +257,7 @@ If a user has forgotten the PIN, you must reset the PIN while you are logged on 
 
 1. Unlock the computer using the recovery password.
 2. Reset the PIN:
-    1. Right-click the drive and then click **Change PIN**
+    1. Right-click the drive and then click **Change PIN**.
     2. In the BitLocker Drive Encryption dialog, click **Reset a forgotten PIN**. If you are not logged in with an administrator account you must provide administrative credentials at this time.
     3. In the PIN reset dialog, provide and confirm the new PIN to use and then click **Finish**.
 3. You will use the new PIN the next time you unlock the drive.
