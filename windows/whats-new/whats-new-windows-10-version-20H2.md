@@ -94,7 +94,7 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
 
 ### Microsoft Defender Application Guard for Office
 
-Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/install-app-guard?view=o365-worldwide), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
+Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
 
 ### Windows Hello
 
@@ -131,7 +131,7 @@ On a 2-in-1 device, Windows will now automatically switch to tablet mode when yo
 
 ## Surface
 
-Windows 10 Pro and Enterprise are now [available on Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).  For more information, see [What's new in Surface Hub 2S for IT admins](https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-whats-new).
+Windows 10 Pro and Enterprise are now [available on Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).  For more information, see [What's new in Surface Hub 2S for IT admins](https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new).
 
 ## Desktop Analytics
 
