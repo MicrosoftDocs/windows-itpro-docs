@@ -28,7 +28,7 @@ ms.topic: article
 ## API description
 
 Set the device value of a specific [Machine](machine.md).<br>
-See [threat and vulnerability management scenarios](threat-and-vuln-mgt-scenarios.md) for more information.
+See [assign device values](tvm-assign-device-value.md) for more information.
 
 ## Limitations
 
