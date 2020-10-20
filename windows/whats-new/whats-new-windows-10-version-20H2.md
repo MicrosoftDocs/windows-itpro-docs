@@ -37,12 +37,6 @@ This release automatically includes the new Chromium-based [Microsoft Edge](http
 
 There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
 
-## Device management
-
-Modern Device Management (MDM) policy is extended with new [Local Users and Groups settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localusersandgroups) that match the options available for devices managed through Group Policy.
-
-For more information about what's new in MDM, see [What's new in mobile device enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management)
-
 ## Deployment
 
 New guidance is available to help move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. These steps have been broken into plan, prepare, and deploy phases.
@@ -70,6 +64,12 @@ Finally, **Depoy** and manage Windows 10 to in your organization using strategic
 ### Windows Assessment and Deployment Toolkit (ADK)
 
 There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+
+## Device management
+
+Modern Device Management (MDM) policy is extended with new [Local Users and Groups settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localusersandgroups) that match the options available for devices managed through Group Policy.
+
+For more information about what's new in MDM, see [What's new in mobile device enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management)
 
 ## Security
 
