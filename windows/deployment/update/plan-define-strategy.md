@@ -26,20 +26,22 @@ You can use a calendar approach for either a faster twice-per-year cadence or an
 ### Annual
 Here's a calendar showing an example schedule that applies one Windows 10 feature update per calendar year, aligned with Microsoft Endpoint Configuration Manager and Microsoft 365 Apps release cycles:
 
-![Calendar showing an annual update cadence](images/annual-calendar.png)
+[ ![Calendar showing an annual update cadence](images/annual-calendar.png) ](images/annual-calendar.png#lightbox)
 
 This approach provides approximately 12 months of use from each feature update before the next update is due to be installed. By aligning to the Windows 10, version H2 feature update, each release will be serviced for 30 months from the time of availability, giving you more flexibility when applying future feature updates.
 
 This cadence might be most suitable for you if any of these conditions apply:
 
 - You are just starting your journey with the Windows 10 servicing process. If you are unfamiliar with new processes that support Windows 10 servicing, moving from a project happening once every three to five years to a twice-a-year feature update process can be daunting. This approach gives you time to learn new approaches and tools to reduce effort and cost.
+
 - You want to wait and see how successful other companies are at adopting a Windows 10 feature update.
+
 - You want to go quickly with feature updates, and want the ability to skip a feature update while keeping Windows 10 serviced in case business priorities change. Aligning to the Windows 10 feature update released in the second half of each calendar year, you get additional servicing for Windows 10 (30 months of servicing compared to 18 months).
 
 ### Rapid
 This calendar shows an example schedule that installs each feature update as it is released, twice per year:
 
-![Update calendar showing a faster update cadence](images/rapid-calendar.png)
+[ ![Update calendar showing a faster update cadence](images/rapid-calendar.png) ](images/rapid-calendar.png#lightbox)
 
 This cadence might be best for you if these conditions apply:
 
