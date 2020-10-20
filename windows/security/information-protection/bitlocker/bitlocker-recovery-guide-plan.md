@@ -211,7 +211,7 @@ Because the recovery password is 48 digits long the user may need to record the 
 When a volume is unlocked using a recovery password, an event is written to the event log and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption
 when data is written to the volume, and on-the-fly decryption when data is read from the volume. After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
 
-If you notice that a computer is having repeated recovery password unlocks, you might want to have an administrator can perform post-recovery analysis to determine the root cause of the recovery and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time that the computer starts up. See:
+If you notice that a computer is having repeated recovery password unlocks, you might want to have an administrator perform post-recovery analysis to determine the root cause of the recovery and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time that the computer starts up. See:
 
 - [Determine the root cause of the recovery](#bkmk-determinecause)
 - [Refresh BitLocker protection](#bkmk-refreshprotection)
