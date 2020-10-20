@@ -28,7 +28,7 @@ ms.reviewer: chventou
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), which includes Microsoft Intune (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
 
