@@ -276,7 +276,7 @@ If you have lost the USB flash drive that contains the startup key, then you mus
 
 ### <a href="" id="bkmk-changebootknown"></a>Changes to boot files
 
-This error might occur if you updated the firmware. As a best practice you should suspend BitLocker before making changes the firmware and then resume protection after the update has completed. This prevents the computer from going into recovery mode. However if changes were made when BitLocker protection was on you can simply log on to the computer using the recovery password and the platform validation profile will be updated so that recovery will not occur the next time.
+This error might occur if you updated the firmware. As a best practice you should suspend BitLocker before making changes to the firmware and then resume protection after the update has completed. This prevents the computer from going into recovery mode. However if changes were made when BitLocker protection was on you can simply log on to the computer using the recovery password and the platform validation profile will be updated so that recovery will not occur the next time.
 
 
 ## Windows RE and BitLocker Device Encryption
