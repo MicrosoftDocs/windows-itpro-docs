@@ -23,7 +23,6 @@ ms.date: 10/13/2020
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows Server 2016 and newer
-- Azure Stack HCI, version 20H2
 
 This article applies to Windows 10, Windows Server, Surface Hub, and Hololens diagnostic data only. It describes the types of diagnostic data that’s sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
