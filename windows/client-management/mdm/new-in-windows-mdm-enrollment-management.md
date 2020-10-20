@@ -469,9 +469,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 ```
 
 > [!NOTE]
->The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
-
- 
+> The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
@@ -542,6 +540,6 @@ What is dmwappushsvc? | It is a Windows service that ships in Windows 10 operati
 What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. |
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
-## Related topics
+## Change history for MDM documentation
 
-[Change history for MDM documentation](change-history-for-mdm-documentation.md)
+To know what's changed in MDM documentation, see [Change history for MDM documentation](change-history-for-mdm-documentation.md).
