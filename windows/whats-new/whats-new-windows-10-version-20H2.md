@@ -61,15 +61,11 @@ New practical, step-by-step guidance is available to help move your devices to t
 - Resolving issues with [unhealthy devices](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
 - Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
 
-**Depoy** Windows 10 to in your organization when you are ready, using:
+**Depoy** and manage Windows 10 to in your organization with:
 - [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
 - [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
 - Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
-
-
-For more information, see:
-
-- 
+- Update Compliance to [monitor Windows Upates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
