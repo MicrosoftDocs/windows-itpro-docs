@@ -32,7 +32,7 @@ Now you're ready to actually start making changes in your environment to get rea
 
 Your infrastructure probably includes many different components and tools. You’ll need to ensure your environment isn’t affected by issues due to the changes you make to the various parts of the infrastructure. Follow these steps:
 
-1.	Review all of the infrastructure changes that you’ve identified in your plan. It’s important to understand the changes that need to be made and to detail how to implement them. This prevents problems later on.
+1.	Review all of the infrastructure changes that you’ve identified in your plan. It’s important to understand the changes that need to be made and to detail how to implement them.  This process prevents problems later on.
 2.	Validate your changes. You’ll validate the changes for your infrastructure’s components and tools, to help you understand how your changes could affect your production environment. 
 3.	Implement the changes. Once the changes have been validated, you can implement the changes across the wider infrastructure.
 
@@ -101,7 +101,7 @@ Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network s
 
 In the course of surveying your device population, either with Desktop Analytics or by some other means, you might find devices that have systemic problems that could interfere with update installation. Now is the time to fix those problems.
 
-- **Low disk space:** Quality updates require a minimum of two GB to successfully install. Feature updates require between 8 and 15 GB depending upon the configuration. On Windows 10, version 1903 and later you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve this by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
+- **Low disk space:** Quality updates require a minimum of 2 GB to successfully install. Feature updates require between 8 GB and 15 GB depending upon the configuration. On Windows 10, version 1903 and later you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve the problem by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
 - C:\Windows\temp
 - C:\Windows\cbstemp (though this file might be necessary to investigate update failures)
 - C:\Windows\WindowsUpdate.log (though this file might be necessary to investigate update failures)
@@ -130,7 +130,7 @@ net start msiserver
 
 - **Application and driver updates:** Out-of-date app or driver software can prevent devices from updating successfully. Desktop Analytics will help you identify drivers and applications that need attention. You can also
 check for known issues in order to take any appropriate action. Deploy any updates from the vendor(s) for any problematic application or driver versions to resolve issues.
-- **Corruption:** In rare circumstances, a device that has repeated installation errors might be corrupted in a way that prevents the system from applying a new update. You might have to repair the Component Based Store from another source. You can do this with the [System File Checker](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
+- **Corruption:** In rare circumstances, a device that has repeated installation errors might be corrupted in a way that prevents the system from applying a new update. You might have to repair the Component-Based Store from another source. You can fix the problem with the [System File Checker](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
 
 
@@ -148,7 +148,7 @@ In the plan phase, you determined the specific infrastructure and configuration 
 
 Users often feel like they are forced into updating their devices randomly. They often don't fully understand why an update is needed, and they don't know when updates would be applied to their devices ahead of time. It's best to ensure that upcoming updates are communicated clearly and with adequate warning.
 
-You can employ a variety of measures to achieve this, for example:
+You can employ a variety of measures to achieve this goal, for example:
 
 - Send overview email about the update and how it will be deployed to the entire organization.
 - Send personalized emails to users about the update with specific details.
