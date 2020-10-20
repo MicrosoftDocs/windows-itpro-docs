@@ -29,8 +29,6 @@ ms.date: 5/1/2020
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 The new alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
 
 Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
