@@ -43,8 +43,8 @@ Application Guard has been created to target several types of systems:
 
 ## Related articles
 
-|Article | Description |
-|--------|-------------|
+|Article |Description |
+|------|------------|
 |[System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) |Specifies the prerequisites necessary to install and use Application Guard.|
 |[Prepare and install Microsoft Defender Application Guard](install-md-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
 |[Configure the Group Policy settings for Microsoft Defender Application Guard](configure-md-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
