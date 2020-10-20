@@ -1,7 +1,7 @@
 ---
 title: Evaluate infrastructure and tools
 manager: laurawi
-description: 
+description: Steps to make sure your infrastructure is ready to deploy updates
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
