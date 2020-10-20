@@ -23,7 +23,7 @@ This article lists new and updated features and content that is of interest to I
 > [!NOTE]
 > With this release and future releases, the Windows 10 release nomenclature is changing from a year and month pattern (YYMM) to a year and half-year pattern (YYH1, YYH2).
 
-As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As a [September-targeted release](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
+As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H2-targeted release](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
 To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, including a video, see [How to get the Windows 10 October 2020 Update](https://community.windows.com/videos/how-to-get-the-windows-10-october-2020-update/7c7_mWN0wi8). 
 
