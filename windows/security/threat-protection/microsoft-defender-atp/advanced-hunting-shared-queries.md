@@ -43,7 +43,7 @@ You can save a new or existing query so that it is only accessible to you or sha
    ![Image of saving a query](images/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
-    - **Shared queries** — shared to all users in the your organization
+    - **Shared queries** — shared to all users in your organization
     - **My queries** — accessible only to you
     
 5. Select **Save**.
@@ -67,3 +67,7 @@ Microsoft security researchers regularly share advanced hunting queries in a [de
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](overview-custom-detections.md)
