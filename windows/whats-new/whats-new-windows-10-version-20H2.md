@@ -41,7 +41,7 @@ There are several changes that help improve the security of devices that scan Wi
 
 New guidance is available to help move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. 
 
-These steps have been broken into the following phases: **Plan**, **Prepare**, and **Deploy**:
+These steps have been broken into the following phases: **Plan** > **Prepare** > **Deploy**:
 
 **Plan** your deploykment by evaluating and understanding essential activites: 
 - Create a [phased deployment plan](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
@@ -51,13 +51,13 @@ These steps have been broken into the following phases: **Plan**, **Prepare**, a
 - Determine [readiness](https://docs.microsoft.com/windows/deployment/update/plan-determine-app-readiness) for your business applications
 - Create an effective, schedule-based [servicing strategy](https://docs.microsoft.com/windows/deployment/update/plan-define-strategy)
 
-Next, **prepare** your devices and environment for deployment:
+**Prepare** your devices and environment for deployment by performing necesssary actions:
 - Update [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-infrastructure-and-environment)
 - Ensure the needed [services](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-applications-and-devices) are available
 - Resolve issues with [unhealthy devices](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
 - Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
 
-Finally, **depoy** and manage Windows 10 to in your organization using strategic deployment tools:
+**Depoy** and manage Windows 10 strategically in your organization:
 - [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
 - [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
 - Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
