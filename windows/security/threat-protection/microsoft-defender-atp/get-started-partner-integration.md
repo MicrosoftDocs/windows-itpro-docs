@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 
 **Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 To become a Microsoft Defender ATP solution partner, you'll need to follow and complete the following steps.
 
