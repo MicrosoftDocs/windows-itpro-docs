@@ -18,51 +18,16 @@ ms.date: 08/18/2020
 
 # What's new in mobile device enrollment and management
 
-This article provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
+This article provides information about what's new in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices. This article also provide details about the breaking changes and known issues and frequently asked questions.
 
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
-
-- **What’s new in MDM for Windows 10 versions**
-  - [What’s new in MDM for Windows 10, version 2010](#whats-new-in-mdm-for-windows-10-version-2010)
-  - [What’s new in MDM for Windows 10, version 2004](#whats-new-in-mdm-for-windows-10-version-2004)
-  - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
-  - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
-  - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
-  - [What’s new in MDM for Windows 10, version 1803](#whats-new-in-mdm-for-windows-10-version-1803)
-  - [What’s new in MDM for Windows 10, version 1709](#whats-new-in-mdm-for-windows-10-version-1709)
-  - [What’s new in MDM for Windows 10, version 1703](#whats-new-in-mdm-for-windows-10-version-1703)
-  - [What’s new in MDM for Windows 10, version 1607](#whats-new-in-mdm-for-windows-10-version-1607)
-  - [What’s new in MDM for Windows 10, version 1511](#whats-new-in-mdm-for-windows-10-version-1511)
-
-- **Breaking changes and known issues**
-  - [Get command inside an atomic command is not supported](#get-command-inside-an-atomic-command-is-not-supported)
-  - [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification-channel-uri-not-preserved-during-upgrade-from-windows-81-to-windows-10)
-  - [Apps installed using WMI classes are not removed](#apps-installed-using-wmi-classes-are-not-removed)
-  - [Passing CDATA in SyncML does not work](#passing-cdata-in-syncml-does-not-work)
-  - [SSL settings in IIS server for SCEP must be set to "Ignore"](#ssl-settings-in-iis-server-for-scep-must-be-set-to-ignore)
-  - [MDM enrollment fails on the mobile device when traffic is going through proxy](#mdm-enrollment-fails-on-the-mobile-device-when-traffic-is-going-through-proxy)
-  - [Server-initiated unenrollment failure](#server-initiated-unenrollment-failure)
-  - [Certificates causing issues with Wi-Fi and VPN](#certificates-causing-issues-with-wi-fi-and-vpn)
-  - [Version information for mobile devices](#version-information-for-mobile-devices)
-    - [Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218](#apps-dependent-on-microsoft-frameworks-may-get-blocked-in-phones-prior-to-build-10586218)
-  - [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#multiple-certificates-might-cause-wi-fi-connection-instabilities-in-windows-10-mobile)
-  - [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
-  - [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#mdm-client-will-immediately-check-in-with-the-mdm-server-after-client-renews-wns-channel-uri)
-  - [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning-failure-in-azure-active-directory-joined-windows-10-pc)
-  - [Requirements to note for VPN certificates also used for Kerberos Authentication](#requirements-to-note-for-vpn-certificates-also-used-for-kerberos-authentication)
-  - [Device management agent for the push-button reset is not working](#device-management-agent-for-the-push-button-reset-is-not-working)
-
-- **Frequently Asked Questions**
-  - [Can there be more than one MDM server to enroll and manage devices in Windows 10?](#can-there-be-more-than-one-mdm-server-to-enroll-and-manage-devices-in-windows-10)
-  - [How do I set the maximum number of Azure Active Directory joined devices per user?](#how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user)
-  - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 ## What’s new in MDM for Windows 10, version 2010
 
 |New or updated article|Description|
 |-----|-----|
 | [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 2010:<br>- [LocalUsersAndGroups/Configure](policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [WindowsSandbox/AllowAudioInput](policy-csp-windowssandbox.md#windowssandbox-allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](policy-csp-windowssandbox.md#windowssandbox-allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](/policy-csp-windowssandbox.md#windowssandbox-allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](policy-csp-windowssandbox.md#windowssandbox-allowvideoinput) |
-| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Updated the description of the Settings/AllowWindowsDefenderApplicationGuard node. |
+| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Updated the description of the following node:<br>- Settings/AllowWindowsDefenderApplicationGuard |
 
 ## What’s new in MDM for Windows 10, version 2004
 
@@ -72,7 +37,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 | [DevDetail CSP](devdetail-csp.md) | Added the following new node:<br>- Ext/Microsoft/DNSComputerName |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | Added the following new node:<br>- IsStub |
 | [SUPL CSP](supl-csp.md) | Added the following new node:<br>- FullVersion |
-
 
 ## What’s new in MDM for Windows 10, version 1909
 
@@ -367,7 +331,6 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
 > [!NOTE]
 > For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
-
  
 ```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
