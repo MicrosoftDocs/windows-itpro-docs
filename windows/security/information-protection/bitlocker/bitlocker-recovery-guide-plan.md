@@ -307,7 +307,7 @@ Example of customized recovery screen:
 
 ### BitLocker recovery key hints
 
-BitLocker metadata has been enhanced in Windows 10, version 1903 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where key has been saved. Hints are displayed in both the modern (blue) and legacy (black) recovery screen. This applies to both the bootmanager recovery screen and the WinRE unlock screen.
+BitLocker metadata has been enhanced in Windows 10, version 1903 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed in both the modern (blue) and legacy (black) recovery screen. This applies to both the boot manager recovery screen and the WinRE unlock screen.
 
 ![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
 
