@@ -89,9 +89,9 @@ New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/th
 
 ### Windows Virtual Desktop (WVD)
 
-Note: WVD is not tied directly to a Windows 10 release, but it is included here as an evolving capability of Windows.
+> **Note**: WVD is not tied directly to a Windows 10 release, but it is included here as an evolving capability of Windows.
 
-New capabilities are in WVD where announced at Ignite 2020. For more information, see [Announcing new management, security, and monitoring capabilities in Windows Virtual Desktop](https://aka.ms/wvd-ignite2020-blogpost).
+New capabilities in WVD were announced at Ignite 2020. For more information, see [Announcing new management, security, and monitoring capabilities in Windows Virtual Desktop](https://aka.ms/wvd-ignite2020-blogpost).
 
 In addition [Windows Virtual Desktop is now generally available in the Azure Government cloud](https://azure.microsoft.com/en-us/updates/windows-virtual-desktop-is-now-generally-available-in-the-azure-government-cloud/).
 
