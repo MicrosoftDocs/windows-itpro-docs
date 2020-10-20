@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
-ms.reviewer: 
+ms.date: 10/01/2018
+ms.reviewer: ksarens
 manager: dansimp
 ---
 
@@ -96,7 +96,7 @@ Root | Allow antimalware service to start up with normal priority | [Configure r
 Root | Allow antimalware service to remain running always | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)
 Root | Turn off routine remediation | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)
 Root | Randomize scheduled task times | [Configure scheduled scans for Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+Scan | Allow users to pause scan | [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) (Not supported on Windows 10)
 Scan | Check for the latest virus and spyware definitions before running a scheduled scan | [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 Scan | Define the number of days after which a catch-up scan is forced | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 Scan | Turn on catch up full scan | [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
