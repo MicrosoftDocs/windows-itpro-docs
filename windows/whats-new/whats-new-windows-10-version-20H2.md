@@ -25,7 +25,7 @@ This article lists new and updated features and content that is of interest to I
 
 As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As a [September-targeted release](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). 
+To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, including a video, see [How to get the Windows 10 October 2020 Update](https://community.windows.com/videos/how-to-get-the-windows-10-october-2020-update/7c7_mWN0wi8). 
 
 ## Microsoft Edge
 
@@ -36,6 +36,8 @@ This release automatically includes the new Chromium-based [Microsoft Edge](http
 ### Windows Update
 
 There are several changes that help improve the security of devices that scan Windows Server Update Services (WSUS) for updates. For more information, see [Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547).
+
+Starting with Windows 10, version 20H2, LCUs and SSUs have been combined into a single cumulative monthly update, available via Microsoft Catalog or Windows Server Update Services. For more information, see [Simplifying on-premises deployment of servicing stack updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039).
 
 ## Deployment
 
@@ -65,6 +67,13 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 - Manage bandwidth for updates with [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 - [Monitor Windows Updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) with Update Compliance
 
+### Windows Autopilot
+
+Enhancements to Windows Autopilot since the last release of Windows 10 include:
+- [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
+- [Windows Autopilot with co-management](https://docs.microsoft.com/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
+- Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
+
 ### Windows Assessment and Deployment Toolkit (ADK)
 
 There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
@@ -82,6 +91,14 @@ For more information about what's new in MDM, see [What's new in mobile device e
 This release includes improved support for non-ASCII file paths has been added for Microsoft Defender ATP Auto Incident Response (IR).
 
 The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
+
+### Microsoft Defender Application Guard for Office
+
+Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](https://docs.microsoft.com/microsoft-365/security/office-365-security/install-app-guard?view=o365-worldwide), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
+
+### Windows Hello
+
+With specialized hardware and software components available on devices shipping with Windows 10, version 20H2 configured out of factory, Windows Hello now offers added support for virtualization-based security with supporting fingerprint and face sensors. This feature isolates and secures a user's biometric authentication data.
 
 ## Virtualization
 
@@ -112,6 +129,10 @@ Some enhancements to the Windows 10 user interface are implemented in this relea
 
 On a 2-in-1 device, Windows will now automatically switch to tablet mode when you detach the screen.
 
+## Surface
+
+Windows 10 Pro and Enterprise are now [available on Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).  For more information, see [What's new in Surface Hub 2S for IT admins](https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-whats-new).
+
 ## Desktop Analytics
 
 [Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is a cloud-connected service, integrated with Configuration Manager that provides data-driven insights to the management of Windows endpoints in your organization. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license. 
@@ -120,6 +141,9 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
+[What’s new for IT pros in Windows 10, version 20H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-20h2/ba-p/1800132)<br>
+[Get started with the October 2020 update to Windows 10](https://www.linkedin.com/learning/windows-10-october-2020-update-new-features-2/get-started-with-the-october-2020-update-to-windows-10)<br>
+[Learn Windows 10 with the October 2020 Update](https://www.linkedin.com/learning/windows-10-october-2020-update-essential-training/learn-windows-10-with-the-october-2020-update)<br>
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
