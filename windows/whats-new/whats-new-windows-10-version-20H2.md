@@ -39,7 +39,7 @@ There are several changes that help improve the security of devices that scan Wi
 
 ## Deployment
 
-New guidance is available to help move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. 
+New guidance is available to help prepare a [servicing strategy](https://docs.microsoft.com/windows/deployment/update/waas-servicing-strategy-windows-10-updates) and move your devices to the latest version of Windows 10 quickly and as seamlessly as possible. 
 
 These steps have been broken into the following phases: **Plan** > **Prepare** > **Deploy**:
 
@@ -58,10 +58,12 @@ These steps have been broken into the following phases: **Plan** > **Prepare** >
 - Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
 
 **Deploy** and manage Windows 10 strategically in your organization:
-- [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
-- [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
-- Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
-- Update Compliance to [monitor Windows Updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
+- Use [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
+- Use [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
+- Use [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb) and [customize update settings](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy) for your devices
+- Use Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
+- Use [Delivery Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization) to manage bandwidth for updates
+- Use Update Compliance to [monitor Windows Updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
