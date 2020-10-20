@@ -106,18 +106,21 @@ different types of Endpoint security policies.
 2.  Navigate to **Endpoint security > Endpoint detection and response**. Click
     on **Create Profile**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/58dcd48811147feb4ddc17212b7fe840.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/58dcd48811147feb4ddc17212b7fe840.png)
 
 3.  Under **Platform, select Windows 10 and Later, Profile - Endpoint detection
     and response > Create**.
 
 4.  Enter a name and description, then select  **Next**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
 
 5.  Select settings as required, then select  **Next**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
     > In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
@@ -128,19 +131,23 @@ different types of Endpoint security policies.
 
 6.  Add scope tags if necessary, then select  **Next**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/ef844f52ec2c0d737ce793f68b5e8408.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
 7.  Add test group by clicking on **Select groups to include** and choose your group, then select  **Next**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/fc3525e20752da026ec9f46ab4fec64f.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/fc3525e20752da026ec9f46ab4fec64f.png)
 
 8.  Review and accept, then select  **Create**.
 
-    ![Image of Microsoft Endpoint Manager portal](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/289172dbd7bd34d55d24810d9d4d8158.png)
 
 9.  You can view your completed policy.
 
-    ![Image of Microsoft Endpoint Manager portal](images/5a568b6878be8243ea2b9d82d41ed297.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager portal](images/5a568b6878be8243ea2b9d82d41ed297.png)
 
 ### Next-generation protection
 
@@ -301,22 +308,22 @@ To confirm that the configuration policy has been applied to your test device, f
     steps above. The following example shows the next generation protection settings.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager portal](images/43ab6aa74471ee2977e154a4a5ef2d39.png)
+    > [ ![Image of Microsoft Endpoint Manager portal](images/43ab6aa74471ee2977e154a4a5ef2d39.png) ](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2.  Select  the **Configuration Policy** to view the policy status.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager portal](images/55ecaca0e4a022f0e29d45aeed724e6c.png)
+    > [ ![Image of Microsoft Endpoint Manager portal](images/55ecaca0e4a022f0e29d45aeed724e6c.png) ](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3.  Select  **Device Status** to see the status.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager portal](images/18a50df62cc38749000dbfb48e9a4c9b.png)
+    > [ ![Image of Microsoft Endpoint Manager portal](images/18a50df62cc38749000dbfb48e9a4c9b.png) ](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4.  Select  **User Status** to see the status.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager portal](images/4e965749ff71178af8873bc91f9fe525.png)
+    > [ ![Image of Microsoft Endpoint Manager portal](images/4e965749ff71178af8873bc91f9fe525.png) ](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5.  Select  **Per-setting status** to see the status.
 
@@ -324,7 +331,7 @@ To confirm that the configuration policy has been applied to your test device, f
     >This view is very useful to identify any settings that conflict with another policy.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager portal](images/42acc69d0128ed09804010bdbdf0a43c.png)
+    > [ ![Image of Microsoft Endpoint Manager portal](images/42acc69d0128ed09804010bdbdf0a43c.png) ](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### Endpoint detection and response
 
@@ -333,19 +340,19 @@ To confirm that the configuration policy has been applied to your test device, f
     Protection service should not be started.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Services panel](images/b418a232a12b3d0a65fc98248dbb0e31.png)
+    > [ ![Image of Services panel](images/b418a232a12b3d0a65fc98248dbb0e31.png) ](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2.  After the configuration has been applied, the Microsoft Defender ATP
     Protection Service should be started.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Services panel](images/a621b699899f1b41db211170074ea59e.png)
+    > [ ![Image of Services panel](images/a621b699899f1b41db211170074ea59e.png) ](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3.  After the services are running on the device, the device appears in Microsoft
     Defender Security Center.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Defender Security Center](images/df0c64001b9219cfbd10f8f81a273190.png)
+    > [ ![Image of Microsoft Defender Security Center](images/df0c64001b9219cfbd10f8f81a273190.png) ](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Next-generation protection
 
