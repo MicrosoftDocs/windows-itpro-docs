@@ -95,7 +95,7 @@ The following icons show up next to events:
 - ![bug icon](images/tvm-black-bug-icon.png) New public exploit
 - ![report warning icon](images/report-warning-icon.png) New vulnerability was published
 - ![exploit kit](images/bug-lightning-icon2.png) Exploit found in exploit kit
-- ![bug icon](images/bug-caution-icon2.png) Exploit verified
+- ![bug icon with warning icon](images/bug-caution-icon2.png) Exploit verified
 
 ### Drill down to a specific event
 

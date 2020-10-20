@@ -39,11 +39,11 @@ It's crucial for Security and IT Administrators to work together and ensure that
 1. From the threat and vulnerability management menu, navigate to [**Security recommendations**](tvm-security-recommendation.md).
 2. Go to the **Filters** panel and look for the tags section. Select one or more of the EOS tag options. Then **Apply**.
 
-    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tag.png)
+    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions.](images/tvm-eos-tag.png)
 
 3. You'll see a list of recommendations related to software with ended support, software versions that are end of support, or versions with upcoming end of support. These tags are also visible in the [software inventory](tvm-software-inventory.md) page.
 
-    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
+    ![Recommendations with EOS tag.](images/tvm-eos-tags-column.png)
 
 ## List of versions and dates
 
@@ -51,15 +51,15 @@ To view a list of versions that have reached end of support, or end or support s
 
 1. A message will appear in the security recommendation flyout for software with versions that have reached end of support, or will reach end of support soon.
 
-    ![Screenshot of version distribution link](images/eos-upcoming-eos.png)
+    ![Screenshot of version distribution link.](images/eos-upcoming-eos.png)
 
 2. Select the **version distribution** link to go to the software drill-down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
 
-    ![Screenshot of version distribution link](images/software-drilldown-eos.png)
+    ![Screenshot of software drilldown page with end of support software.](images/software-drilldown-eos.png)
 
 3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
 
-    ![Screenshot of version distribution link](images/version-eos-date.png)
+    ![Screenshot of end of support date.](images/version-eos-date.png)
 
 Once you identify which software and software versions are vulnerable due to their end-of-support status, you must decide whether to update or remove them from your organization. Doing so will lower your organizations exposure to vulnerabilities and advanced persistent threats.
 
