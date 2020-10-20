@@ -117,10 +117,10 @@ different types of Endpoint security policies.
     ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     >[!NOTE]
-    >In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp). <br>
+    >In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp). <br> The following image is an example of what you'll see when Microsoft Defender ATP is NOT integrated with Intune: <br> ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
     
 
-    ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
+    
 
 6.  Add scope tags if necessary, then select  **Next**.
 
