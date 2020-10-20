@@ -1,6 +1,5 @@
 ---
 title: Evaluate infrastructure and tools
-ms.reviewer: 
 manager: laurawi
 description: 
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
@@ -11,7 +10,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-coredeploy
 ---
 
 # Evaluate infrastructure and tools

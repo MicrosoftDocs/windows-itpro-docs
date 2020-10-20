@@ -7,9 +7,9 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.collection: m365initiative-coredeploy
 ---
 
 # Define update strategy with a calendar

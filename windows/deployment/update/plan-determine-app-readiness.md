@@ -1,6 +1,5 @@
 ---
 title: Determine application readiness
-ms.reviewer: 
 manager: laurawi
 description: How to test your apps to know which need attention prior to deploying an update
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
@@ -10,7 +9,7 @@ audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-coredeploy
 ms.author: jaimeo
 author: jaimeo
 ---

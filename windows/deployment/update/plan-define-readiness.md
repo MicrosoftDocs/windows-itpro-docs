@@ -1,6 +1,5 @@
 ---
 title: Define readiness criteria
-ms.reviewer: 
 manager: laurawi
 description: Identify important roles and figure out how to classify apps
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
@@ -11,7 +10,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-coredeploy
 ---
 
 # Define readiness criteria
