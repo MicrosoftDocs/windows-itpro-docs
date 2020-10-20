@@ -83,6 +83,7 @@ Area | Description
 [**Remediation**](tvm-remediation.md) | See remediation activities you've created and recommendation exceptions.
 [**Software inventory**](tvm-software-inventory.md) | See the list of vulnerable software in your organization, along with weakness and threat information.
 [**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures (CVEs) in your organization.
+[**Event timeline**](threat-and-vuln-mgt-event-timeline.md) | View events that may impact your organization's risk.
 
 ## APIs
 
