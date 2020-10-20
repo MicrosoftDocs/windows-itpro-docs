@@ -46,9 +46,8 @@ In the threat and vulnerability management dashboard, hover over the Exposure sc
 
 If there are no events that affect your devices or your score for devices, then none will be shown.
 
-![Exposure score hover](images/tvm-event-timeline-exposure-score350.png)
-
-![Microsoft Secure Score for Devices hover](images/tvm-event-timeline-devices350.png)
+![Exposure score hover](images/tvm-event-timeline-exposure-score350.png) 
+![Microsoft Secure Score for Devices hover](images/tvm-event-timeline-device-hover360.png)
 
 ### Drill down to events from that day
 
