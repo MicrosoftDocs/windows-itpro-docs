@@ -13,7 +13,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/18/2020
+ms.date: 10/20/2020
 ---
 
 # What's new in mobile device enrollment and management
