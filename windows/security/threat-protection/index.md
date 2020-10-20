@@ -17,7 +17,7 @@ ms.topic: conceptual
 ---
 
 # Threat Protection
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats; detects advanced attacks and data breaches, automates security incidents and improves security posture.
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 > [!TIP]
 > Enable your users to access cloud services and on-premises applications with ease and enable modern management capabilities for all devices. For more information, see [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
@@ -98,7 +98,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
+In addition to quickly responding to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale.
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [View details and results of automated investigations](microsoft-defender-atp/auto-investigation-action-center.md)
@@ -107,7 +107,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 <a name="mte"></a>
 
 **[Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)**<br>
-Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization and additional context and insights that further empower Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately.
+Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights. Microsoft Threat Experts further empowers Security Operation Centers (SOCs) to identify and respond to threats quickly and accurately.
 
 - [Targeted attack notification](microsoft-defender-atp/microsoft-threat-experts.md)
 - [Experts-on-demand](microsoft-defender-atp/microsoft-threat-experts.md)
@@ -135,4 +135,4 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 <a name="mtp"></a>
 **[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
- With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.
+ With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
