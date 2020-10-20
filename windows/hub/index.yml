@@ -26,12 +26,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: What's new in Windows 10, version 20H2
+            url: /windows/whats-new/whats-new-windows-10-version-20H2
           - text: What's new in Windows 10, version 2004
             url: /windows/whats-new/whats-new-windows-10-version-2004
           - text: What's new in Windows 10, version 1909
             url: /windows/whats-new/whats-new-windows-10-version-1909
-          - text: What's new in Windows 10, version 1903
-            url: /windows/whats-new/whats-new-windows-10-version-1903
           - text: Windows 10 release information
             url:  https://docs.microsoft.com/windows/release-information/
 
