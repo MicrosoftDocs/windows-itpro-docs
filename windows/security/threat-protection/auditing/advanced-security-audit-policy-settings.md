@@ -42,7 +42,7 @@ Configuring policy settings in this category can help you document attempts to a
 -   [Audit Credential Validation](audit-credential-validation.md)
 -   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 -   [Audit Kerberos Service Ticket Operations](audit-kerberos-service-ticket-operations.md)
--   [Audit Other Logon/Logoff Events](audit-other-logonlogoff-events.md)
+-   [Audit Other Account Logon Events](audit-other-account-logon-events.md)
 
 ## Account Management
 
@@ -150,8 +150,8 @@ Auditors will be able to prove that every resource in the system is protected by
 
 Resource SACLs are also useful for diagnostic scenarios. For example, setting the Global Object Access Auditing policy to log all the activity for a specific user and enabling the policy to track "Access denied" events for the file system or registry can help administrators quickly identify which object in a system is denying a user access.
 
-> **Note:**  If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object 
-Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
+> [!NOTE]
+> If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
  
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
