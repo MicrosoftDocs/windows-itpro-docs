@@ -16,41 +16,6 @@ ms.date: 10/19/2020
 
 This article lists new and updated articles for the Mobile Device Management (MDM) documentation. Updated articles are those that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues are not listed.
 
-- [October 2020](#october-2020)
-- [September 2020](#september-2020)
-- [August 2020](#august-2020)
-- [July 2020](#july-2020)
-- [June 2020](#june-2020)
-- [May 2020](#may-2020)
-- [February 2020](#february-2020)
-- [January 2020](#january-2020)
-- [November 2019](#november-2019)
-- [October 2019](#october-2019)
-- [September 2019](#september-2019)
-- [August 2019](#august-2019)
-- [July 2019](#july-2019)
-- [June 2019](#june-2019)
-- [May 2019](#may-2019)
-- [April 2019](#april-2019)
-- [March 2019](#march-2019)
-- [February 2019](#february-2019)
-- [January 2019](#january-2019)
-- [December 2018](#december-2018)
-- [September 2018](#september-2018)
-- [August 2018](#august-2018)
-- [July 2018](#july-2018)
-- [June 2018](#june-2018)
-- [May 2018](#may-2018)
-- [April 2018](#april-2018)
-- [March 2018](#march-2018)
-- [February 2018](#february-2018)
-- [January 2018](#january-2018)
-- [December 2017](#december-2017)
-- [November 2017](#november-2017)
-- [October 2017](#october-2017)
-- [September 2017](#september-2017)
-- [August 2017](#august-2017)
-
 ## October 2020
 
 |New or updated article | Description|
