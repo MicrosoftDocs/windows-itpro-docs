@@ -20,7 +20,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 
 |New or updated article | Description|
 |--- | ---|
-| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 2010:<br>- [LocalUsersAndGroups/Configure](policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [WindowsSandbox/AllowAudioInput](policy-csp-windowssandbox.md#windowssandbox-allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](policy-csp-windowssandbox.md#windowssandbox-allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](/policy-csp-windowssandbox.md#windowssandbox-allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](policy-csp-windowssandbox.md#windowssandbox-allowvideoinput) |
+| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 20H2:<br>- [LocalUsersAndGroups/Configure](policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [WindowsSandbox/AllowAudioInput](policy-csp-windowssandbox.md#windowssandbox-allowaudioinput)<br>- [WindowsSandbox/AllowClipboardRedirection](policy-csp-windowssandbox.md#windowssandbox-allowclipboardredirection)<br>- [WindowsSandbox/AllowNetworking](policy-csp-windowssandbox.md#windowssandbox-allownetworking)<br>- [WindowsSandbox/AllowPrinterRedirection](policy-csp-windowssandbox.md#windowssandbox-allowprinterredirection)<br>- [WindowsSandbox/AllowVGPU](policy-csp-windowssandbox.md#windowssandbox-allowvgpu)<br>- [WindowsSandbox/AllowVideoInput](policy-csp-windowssandbox.md#windowssandbox-allowvideoinput) |
 
 ## September 2020
 
@@ -197,7 +197,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="\tenantlockdown-csp.md" data-raw-source="[TenantLockdown CSP](\tenantlockdown-csp.md)">TenantLockdown CSP</a></td>
+<td style="vertical-align:top"><a href="tenantlockdown-csp.md" data-raw-source="[TenantLockdown CSP](tenantlockdown-csp.md)">TenantLockdown CSP</a></td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
@@ -456,7 +456,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="https://aka.ms/mmat" data-raw-source="[MDM Migration Analysis Too (MMAT)](https://aka.ms/mmat)">MDM Migration Analysis Too (MMAT)</a></td>
+<td style="vertical-align:top"><a href="https://aka.ms/mmat" data-raw-source="[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)">MDM Migration Analysis Tool (MMAT)</a></td>
 <td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
