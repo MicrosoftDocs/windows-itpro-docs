@@ -18,12 +18,13 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 
 ## In this section
 
+- [What's new in Windows 10, version 20H2](whats-new-windows-10-version-20H2.md)
 - [What's new in Windows 10, version 2004](whats-new-windows-10-version-2004.md)
 - [What's new in Windows 10, version 1909](whats-new-windows-10-version-1909.md)
 - [What's new in Windows 10, version 1903](whats-new-windows-10-version-1903.md)
 - [What's new in Windows 10, version 1809](whats-new-windows-10-version-1809.md)
 - [What's new in Windows 10, version 1803](whats-new-windows-10-version-1803.md)
-- [What's new in Windows 10, version 1709](whats-new-windows-10-version-1709.md)
+
 
 ## Learn more
 
