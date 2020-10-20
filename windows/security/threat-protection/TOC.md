@@ -49,18 +49,27 @@
 #### [PowerShell, WMI, and MPCmdRun.exe](microsoft-defender-atp/manage-atp-post-migration-other-tools.md)
 
 ## [Security administration]()
-### [Threat & Vulnerability Management]()
-#### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-#### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
-#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
-#### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
-#### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
-#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
-#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-#### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
-#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+### [Threat & vulnerability management]()
+#### [Overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Get started]()
+##### [Permissions & prerequisites](microsoft-defender-atp/tvm-prerequisites.md)
+##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
+##### [Assign device value](microsoft-defender-atp/tvm-assign-device-value.md)
+#### [Assess your security posture]()
+##### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
+##### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+##### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
+#### [Improve your security posture & reduce risk]()
+##### [Address security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
+##### [Remediate vulnerabilities](microsoft-defender-atp/tvm-remediation.md)
+##### [Exceptions for security recommendations](microsoft-defender-atp/tvm-exception.md)
+##### [Plan for end-of-support software](microsoft-defender-atp/tvm-end-of-support-software.md)
+#### [Understand vulnerabilities on your devices]()
+##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
+##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
+
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
@@ -448,7 +457,7 @@
 ##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
  
-#### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
+#### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
 #### [Onboard devices without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](microsoft-defender-atp/run-detection-test.md)
@@ -544,6 +553,7 @@
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 ####### [Get missing KBs](microsoft-defender-atp/get-missing-kbs-machine.md)
+####### [Set device value](microsoft-defender-atp/set-device-value.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](microsoft-defender-atp/machineaction.md)
@@ -708,7 +718,7 @@
 ##### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
   
 #### [Troubleshoot next-generation protection](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
-
+#### [Troubleshoot migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
 
