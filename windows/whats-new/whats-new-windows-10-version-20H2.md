@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 20H2
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
+This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
 
 > [!NOTE]
 > With this release and future releases, the Windows 10 release nomenclature is changing from a year and month pattern (YYMM) to a year and half-year pattern (YYH1, YYH2).
@@ -43,7 +43,7 @@ New guidance is available to help move your devices to the latest version of Win
 
 These steps have been broken into the following phases: **Plan** > **Prepare** > **Deploy**:
 
-**Plan** your deploykment by evaluating and understanding essential activites: 
+**Plan** your deployment by evaluating and understanding essential activities: 
 - Create a [phased deployment plan](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
 - Assign [roles and responsibilities](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#process-manager) within your organization
 - Set [criteria](https://docs.microsoft.com/windows/deployment/update/plan-define-readiness#set-criteria-for-rating-apps) to establish readiness for the upgrade process
@@ -51,17 +51,17 @@ These steps have been broken into the following phases: **Plan** > **Prepare** >
 - Determine [readiness](https://docs.microsoft.com/windows/deployment/update/plan-determine-app-readiness) for your business applications
 - Create an effective, schedule-based [servicing strategy](https://docs.microsoft.com/windows/deployment/update/plan-define-strategy)
 
-**Prepare** your devices and environment for deployment by performing necesssary actions:
+**Prepare** your devices and environment for deployment by performing necessary actions:
 - Update [infrastructure and tools](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-infrastructure-and-environment)
 - Ensure the needed [services](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#prepare-applications-and-devices) are available
 - Resolve issues with [unhealthy devices](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows#address-unhealthy-devices)
 - Ensure that [users are ready](https://docs.microsoft.com/windows/deployment/update/prepare-deploy-windows) for updates
 
-**Depoy** and manage Windows 10 strategically in your organization:
+**Deploy** and manage Windows 10 strategically in your organization:
 - [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) to streamline the setup and configuration of new devices
 - [Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) for both new and existing devices
 - Windows Server Update Services (WSUS) to [deploy Windows updates](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus)
-- Update Compliance to [monitor Windows Upates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
+- Update Compliance to [monitor Windows Updates](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
@@ -93,7 +93,7 @@ New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/th
 
 New capabilities in WVD were announced at Ignite 2020. For more information, see [Announcing new management, security, and monitoring capabilities in Windows Virtual Desktop](https://aka.ms/wvd-ignite2020-blogpost).
 
-In addition [Windows Virtual Desktop is now generally available in the Azure Government cloud](https://azure.microsoft.com/en-us/updates/windows-virtual-desktop-is-now-generally-available-in-the-azure-government-cloud/).
+In addition, [Windows Virtual Desktop is now generally available in the Azure Government cloud](https://azure.microsoft.com/en-us/updates/windows-virtual-desktop-is-now-generally-available-in-the-azure-government-cloud/).
 
 ## Windows Shell
 
