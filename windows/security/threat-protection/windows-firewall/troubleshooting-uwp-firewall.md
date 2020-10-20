@@ -10,7 +10,9 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365-initiative-windows-security
 ms.topic: troubleshooting
 ---
 
