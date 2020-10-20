@@ -15,9 +15,9 @@
           href: Microsoft-DiagnosticDataViewer.md
     - name: Required Windows diagnostic data events and fields
       items: 
-        - name: Windows 10, version 2004 required Windows diagnostic data events and fields
+        - name: Windows 10, version 2010 and Windows 10, version 2004 required Windows diagnostic data events and fields
           href: required-windows-diagnostic-data-events-and-fields-2004.md
-        - name: Windows 10, version 1903 and Windows 10, version 1909 required level Windows diagnostic events and fields
+        - name: Windows 10, version 1909 and Windows 10, version 1903 required level Windows diagnostic events and fields
           href: basic-level-windows-diagnostic-events-and-fields-1903.md
         - name: Windows 10, version 1809 required Windows diagnostic events and fields
           href: basic-level-windows-diagnostic-events-and-fields-1809.md
