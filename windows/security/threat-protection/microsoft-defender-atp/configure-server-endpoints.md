@@ -37,14 +37,6 @@ ms.topic: article
 
 Microsoft Defender ATP extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender Security Center console.
 
-The service supports the onboarding of the following Windows servers:
-- Windows Server 2008 R2 SP1
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server (SAC) version 1803 and later
-- Windows Server 2019 and later
-- Windows Server 2019 core edition
-
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
@@ -54,16 +46,36 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016 to Microsoft Defender ATP by using any of the following options:
 
-- **Option 1**: [Onboard through Microsoft Defender Security Center](#option-1-onboard-windows-servers-through-microsoft-defender-security-center)
+- **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
 - **Option 2**: [Onboard through Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
-- **Option 3**: [Onboard through Microsoft Endpoint Configuration Manager version 2002 and later (only for Windows Server 2012 R2 and Windows Server 2016)](#option-3-onboard-windows-servers-through-microsoft-endpoint-configuration-manager-version-2002-and-later)
+- **Option 3**: [Onboard through Microsoft Endpoint Configuration Manager version 2002 and later](#option-3-onboard-windows-servers-through-microsoft-endpoint-configuration-manager-version-2002-and-later)
+
+
+After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
 
 > [!NOTE]
 > Microsoft defender ATP standalone server license is required, per node, in order to onboard a Windows server through Microsoft Defender Security Center (Option 1), or an Azure Security Center Standard license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
 
 
-### Option 1: Onboard Windows servers through Microsoft Defender Security Center
-Perform the following steps to onboard Windows servers through Microsoft Defender Security Center:
+### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
+You'll need to install and configure MMA for Windows servers to report sensor data to Microsoft Defender ATP. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+
+If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support.
+
+In general, you'll need to take the following steps:
+1. Fulfill the onboarding requirements outlined in **Before you begin** section.
+2. Turn on server monitoring from Microsoft Defender Security center.
+3. Install and configure MMA for the server to report sensor data to Microsoft Defender ATP.
+4. Configure and update System Center Endpoint Protection clients.
+
+
+> [!TIP]
+> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
+
+
+#### Before you begin 
+Perform the following steps to fulfill the onboarding requirements:
 
  - For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
     - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -77,32 +89,6 @@ Perform the following steps to onboard Windows servers through Microsoft Defende
     > [!NOTE]
     > This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
- - [Turn on server monitoring from Microsoft Defender Security Center](#turn-on-server-monitoring-from-the-microsoft-defender-security-center-portal).
-
- - If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support.
-
-    Otherwise, [install and configure MMA to report sensor data to Microsoft Defender ATP](#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-atp). For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
-
-> [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](run-detection-test.md).
-
-### Configure and update System Center Endpoint Protection clients
-
-Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
-
-The following steps are required to enable this integration:
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
-
-- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
-
-
-### Turn on Server monitoring from the Microsoft Defender Security Center portal
-
-1. In the navigation pane, select **Settings** > **Device management** > **Onboarding**.
-
-2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
-
-3. Click **Turn on server monitoring** and confirm that you'd like to proceed with the environment setup. When the setup completes, the **Workspace ID** and **Workspace key** fields are populated with unique values. You'll need to use these values to configure the MMA agent.
 
 <span id="server-mma"/>
 
@@ -115,16 +101,21 @@ The following steps are required to enable this integration:
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script).
 
-3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](configure-proxy-internet.md).
 
-Once completed, you should see onboarded Windows servers in the portal within an hour.
 
 <span id="server-proxy"/>
 
-### Configure Windows server proxy and Internet connectivity settings
+### Configure Windows server proxy and Internet connectivity settings if needed
+If your servers need to use a proxy to communicate with Microsoft Defender ATP, use one of the following methods to configure the MMA to use the proxy server:
 
-- Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway" data-raw-source="[OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)">OMS Gateway</a>.
-- If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Microsoft Defender ATP service URLs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+
+- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+
+- [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
+
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender ATP service URLs directly and without SSL interception. For more information, see [enable access to Microsoft Defender ATP service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service. 
+
+Once completed, you should see onboarded Windows servers in the portal within an hour.
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
@@ -135,8 +126,14 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 4. Follow the onboarding instructions in [Microsoft Defender Advanced Threat Protection with Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
+After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
 ### Option 3: Onboard Windows servers through Microsoft Endpoint Configuration Manager version 2002 and later
 You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Configuration Manager version 2002 and later. For more information, see [Microsoft Defender Advanced Threat Protection in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+
+After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
+
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
@@ -199,6 +196,17 @@ Data collected by Microsoft Defender ATP is stored in the geo-location of the te
 > - If you use Microsoft Defender ATP before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+
+
+## Configure and update System Center Endpoint Protection clients
+
+Microsoft Defender ATP integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
+
+The following steps are required to enable this integration:
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
+
+- Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting.
+
 
 
 ## Offboard Windows servers
