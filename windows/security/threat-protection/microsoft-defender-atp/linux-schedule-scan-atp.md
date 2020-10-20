@@ -27,7 +27,7 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 
 > [!NOTE]
 > To get a list of all the time zones, run the following command:
-> `timedatectl list-timezones`
+> `timedatectl list-timezones`<br>
 > Examples for timezones:
 > - `America/Los_Angeles`
 > - `America/New_York`
