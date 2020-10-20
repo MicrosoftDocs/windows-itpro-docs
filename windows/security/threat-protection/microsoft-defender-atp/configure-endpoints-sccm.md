@@ -25,7 +25,7 @@ ms.date: 02/07/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
