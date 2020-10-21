@@ -44,12 +44,11 @@ The following table describes each level of automation and how it works.
 
 ## Important points about automation levels
 
-- New tenants (which include tenants that were created on or after August 16, 2020) with Microsoft Defender for Endpoint are set to full automation by default. 
-
 - Full automation has proven to be reliable, efficient, and safe, and is recommended for all customers. Full automation frees up your critical security resources so they can focus more on your strategic initiatives.
 
-- If your security team has defined device groups that include certain levels of automation, those settings are not changed by new default settings that are rolled out. However, we recommend using full automation wherever possible.
+- New tenants (which include tenants that were created on or after August 16, 2020) with Microsoft Defender for Endpoint are set to full automation by default. 
 
+- If your security team has defined device groups that include certain levels of automation, those settings are not changed by new default settings that are rolled out. However, we recommend using full automation wherever possible.
 
 - You can keep your default automation setting, or change it according to your organizational needs. To change your settings, [set your level of automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-automated-investigations-remediation#set-up-device-groups).
 
