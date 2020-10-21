@@ -18,7 +18,7 @@ ms.date: 10/20/2020
 
 # What's new in mobile device enrollment and management
 
-This article provides information about what's new in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices. This article also provide details about the breaking changes and known issues and frequently asked questions.
+This article provides information about what's new in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
 
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 

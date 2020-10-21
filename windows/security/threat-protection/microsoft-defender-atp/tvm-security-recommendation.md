@@ -75,6 +75,9 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
+>[!NOTE]
+>Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an ‘Inactive’ status.
+
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
