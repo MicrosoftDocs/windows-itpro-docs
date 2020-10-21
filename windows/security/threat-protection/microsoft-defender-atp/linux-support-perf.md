@@ -32,7 +32,7 @@ This article provides some general steps that can be used to narrow down perform
 
 Real-time protection (RTP) is a feature of Microsoft Defender ATP for Linux that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender ATP for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender ATP for Linux.
+Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender ATP for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 
@@ -54,7 +54,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     > [!NOTE]
     > This feature is available in version 100.90.70 or newer.
 
-    This feature is enabled by default on the `Dogfood` and `InsisderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
+    This feature is enabled by default on the `Dogfood` and `InsiderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
  
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -78,8 +78,10 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection_logs
     ```
+    > [!NOTE]
+    > Adding ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
 
     The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
 
@@ -88,6 +90,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 3. Use the `top` command-line tool and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues
+5. Re-enable real-time protection.
 
-    For more details, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
