@@ -61,10 +61,10 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following settings:
+5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Intelligence Updates** and configure the following settings:
 
-    1.  Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
-    2. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
+    1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
+    2. Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
     3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 
@@ -102,9 +102,4 @@ See the following for more information and allowed parameters:
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-
-
-
-
-
 
