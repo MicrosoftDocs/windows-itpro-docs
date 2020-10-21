@@ -45,7 +45,7 @@ Table 1 provides an example of the deployment rings you might use.
 |:-----|:-----|
 Evaluate | Ring 1: Identify 50 systems for pilot testing 
 Pilot | Ring 2: 50-100  systems <br> 	
-Full deployment | Roll out service to the rest of environment in larger increments.
+Full deployment | Ring 3: Roll out service to the rest of environment in larger increments.
 
 
 ## Evaluate
