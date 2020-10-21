@@ -6,14 +6,13 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.collection: m365initiative-coredeploy
 manager: laurawi
 ms.topic: article
 ---
 
 # Opt out of safeguard holds
 
-Safeguard holds prevent a device with a known compatibility issue from being offered a new Windows 10 feature update by using Windows Update. We use safeguard holds to protect the device and user from a failed or poor update experience. We renew the offering once a fix is issued and is verified on an affected device.
+Safeguard holds prevent a device with a known compatibility issue from being offered a new Windows 10 feature update by using Windows Update. We use safeguard holds to protect the device and user from a failed or poor update experience. We renew the offering once a fix is issued and is verified on an affected device. For more information about safeguard holds, see LINK
 
 ## How can I opt out of safeguard holds?
 
