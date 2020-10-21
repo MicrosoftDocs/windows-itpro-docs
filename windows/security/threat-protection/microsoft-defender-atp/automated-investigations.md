@@ -78,6 +78,11 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
+As alerts are triggered, and an automated investigation runs, the investigation can result in one or more remediation actions. 
+
+Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team. 
+
+All remediation actions, whether pending or completed, can be viewed in Action Center. To learn more, see [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
 
 ## Next steps
 
