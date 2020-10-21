@@ -56,7 +56,7 @@ Table 1 provides an example of the deployment rings you might use.
 
 |**Deployment ring**|**Description**|
 |:-----|:-----|
-Pilot and deployment planning | Phase 1: Identify 50 systems for pilot testing - Focus on the security team, IT team and maybe Helpdesk
+Pilot and deployment planning | Phase 1: Identify 50 systems for pilot testing. <br> Focus on the security team, IT team and maybe Helpdesk.
 Full scale pilot | Phase 2: 100  systems <br> 	Phase 3: 150 systems <br> Phase 4: 500 systems <br> Phase 5: 1000 systems <br><br> Review and assess if there required tweaks to deployment. 
 Full deployment | Roll out service to the rest of environment in larger increments.
 
