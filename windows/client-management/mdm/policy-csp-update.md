@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 02/10/2020
+ms.date: 10/21/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -95,6 +95,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
+    <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -2007,6 +2010,85 @@ The following list shows the supported values:
 
 - 0 - allow scan against Windows Update
 - 1 - do not allow update deferral policies to cause scans against Windows Update
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-disablewufbsafeguards"></a>**Update/DisableWUfBSafeguards**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows Update for Business (WUfB) devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a WUfB device should skip safeguards.
+
+Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience.
+
+The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
+
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the “Disable safeguards for Feature Updates” Group Policy. 
+
+> [!NOTE]
+> Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
+>
+> The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
+>
+> Disabling safeguards does not guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you are bypassing the protection given by Microsoft pertaining to known issues.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Disable safeguards for Feature Updates*
+-   GP name: *DisableWUfBSafeguards*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
+- 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
 
 <!--/SupportedValues-->
 <!--/Policy-->
