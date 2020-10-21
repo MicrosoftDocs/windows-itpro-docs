@@ -23,7 +23,46 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-bits-includecmdline">ADMX_Bits/IncludeCmdLine</a>
+    <a href="#admx-bits-bits-disablebranchcache">ADMX_Bits/BITS_DisableBranchCache</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-disablepeercachingclient">ADMX_Bits/BITS_DisablePeercachingClient</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-disablepeercachingserver">ADMX_Bits/BITS_DisablePeercachingServer</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-enablepeercaching">ADMX_Bits/BITS_EnablePeercaching</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxbandwidthservedforpeers">ADMX_Bits/BITS_MaxBandwidthServedForPeers</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxbandwidthv2-maintenance">ADMX_Bits/BITS_MaxBandwidthV2_Maintenance</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxbandwidthv2-work">ADMX_Bits/BITS_MaxBandwidthV2_Work</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxcachesize">ADMX_Bits/BITS_MaxCacheSize</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxcontentage">ADMX_Bits/BITS_MaxContentAge</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxdownloadtime">ADMX_Bits/BITS_MaxDownloadTime</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxfilesperjob">ADMX_Bits/BITS_MaxFilesPerJob</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxjobspermachine">ADMX_Bits/BITS_MaxJobsPerMachine</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxjobsperuser">ADMX_Bits/BITS_MaxJobsPerUser</a>
+  </dd>
+  <dd>
+    <a href="#admx-bits-bits-maxrangesperfile">ADMX_Bits/BITS_MaxRangesPerFile</a>
   </dd>
 </dl>
 
