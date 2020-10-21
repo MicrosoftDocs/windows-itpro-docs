@@ -45,7 +45,7 @@ Most analyst reports include the following sections:
 | Change log | The times of publication and when significant changes were made to the report. |
 
 ## Apply additional mitigations
-Threat analytics reports dynamically track the [status of security updates and secure configurations](threat-analytics,md#review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables under the **Mitigations** tab.
+Threat analytics reports dynamically track the [status of security updates and secure configurations](threat-analytics.md#review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables under the **Mitigations** tab.
 
 In addition to these tracked mitigations, the analyst report also discusses mitigations that are _not_ dynamically monitored. Here are some examples of important mitigations that are not dynamically tracked:
 
@@ -74,7 +74,7 @@ Endpoint detection and response alerts constitute alerts in Microsoft Defender S
 Like the list of antivirus detections, some EDR alerts are designed to generically flag suspicious behavior that might not be associated with the tracked threat. In such cases, the report will clearly identify the alert as generic and that it does not influence any of the charts in the report.
 
 ### Attack surface reduction rules
-When turned on, [attack surface reduction rules](attack-surface-reduction) can be set to either detect (audit) or block various behaviors commonly associated with threats, such as:
+When turned on, [attack surface reduction rules](attack-surface-reduction.md) can be set to either detect (audit) or block various behaviors commonly associated with threats, such as:
 - An Office application spawning a child process
 - An email client launching an executable
 - A script downloading executable content
