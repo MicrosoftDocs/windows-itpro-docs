@@ -23,7 +23,7 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
 You can evaluate Microsoft Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
