@@ -424,16 +424,8 @@
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
-### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
-
-
-
-
-
-
-
-
-
+### [Threat analytics overview](microsoft-defender-atp/threat-analytics.md)
+#### [Read the analyst report](microsoft-defender-atp/threat-analytics.md)
 
 
 ## [How-to]()

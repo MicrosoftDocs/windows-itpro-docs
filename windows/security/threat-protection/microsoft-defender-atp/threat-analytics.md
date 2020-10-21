@@ -80,7 +80,7 @@ Each report includes charts that provide an overview of how resilient your organ
 - **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
 
 ### Get expert insight from the analyst report
-Go to the **Analyst report** section to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
+Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
 ![Image of the analyst report section of a threat analytics report](images/ta-analyst-report.png)
 _Analyst report section of a threat analytics report_
@@ -105,4 +105,5 @@ When using the reports, keep the following in mind:
 
 ## Related topics
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md) 
+- [Understand the analyst report section](threat-analytics-analyst-reports.md)
 - [Assess and resolve security weaknesses and exposures](next-gen-threat-and-vuln-mgt.md)
