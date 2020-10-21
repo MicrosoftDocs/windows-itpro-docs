@@ -81,7 +81,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     mdatp diagnostic real-time-protection-statistics --output json > real_time_protection_logs
     ```
     > [!NOTE]
-    > Adding ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
+    > Using ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
 
     The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
 
