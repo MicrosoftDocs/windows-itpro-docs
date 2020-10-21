@@ -12,6 +12,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.date: 10/21/2020
 ---
 
 # Configure and validate exclusions based on file extension and folder location
