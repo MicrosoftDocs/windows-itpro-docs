@@ -16,6 +16,7 @@
 ## [Plan deployment](microsoft-defender-atp/deployment-strategy.md)
 
 ## [Deployment guide]()
+### [Deployment rings](microsoft-defender-atp/deployment-rings.md)
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
