@@ -4006,7 +4006,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### LocalUsersAndGroups policies
 
+<dl>
+  <dd>
+    <a href="./policy-csp-localusersandgroups.md#localusersandgroups-configure" id="localusersandgroups-configure">LocalUsersAndGroups/Configure</a>
+  </dd>
+</dl>
 
 ### LockDown policies
 
