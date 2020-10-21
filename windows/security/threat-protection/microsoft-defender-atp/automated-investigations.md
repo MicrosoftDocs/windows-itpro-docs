@@ -78,7 +78,9 @@ If an incriminated entity is seen in another device, the automated investigation
 
 ## How threats are remediated
 
-As alerts are triggered, and an automated investigation runs, the investigation can result in one or more remediation actions. 
+As alerts are triggered, and an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be *Malicious*, *Suspicious*, or *No threats found*. 
+
+As verdicts are reached, automated investigations can result in one or more [remediation actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions). Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more.  
 
 Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team. 
 
@@ -86,7 +88,9 @@ All remediation actions, whether pending or completed, can be viewed in Action C
 
 ## Next steps
 
-- [Learn about the automated investigations dashboard](manage-auto-investigation.md)
+- [Get an overview of the automated investigations dashboard](manage-auto-investigation.md)
+
+- [Learn more about automation levels](automation-levels.md)
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
