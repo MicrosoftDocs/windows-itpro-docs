@@ -174,6 +174,7 @@
 #### [ADMX_AddRemovePrograms](policy-csp-admx-addremoveprograms.md)
 #### [ADMX_AppCompat](policy-csp-admx-appcompat.md)
 #### [ADMX_AuditSettings](policy-csp-admx-auditsettings.md)
+#### [ADMX_Bits](policy-csp-admx-bits.md)
 #### [ADMX_CipherSuiteOrder](policy-csp-admx-ciphersuiteorder.md)
 #### [ADMX_COM](policy-csp-admx-com.md)
 #### [ADMX_Cpls](policy-csp-admx-cpls.md)

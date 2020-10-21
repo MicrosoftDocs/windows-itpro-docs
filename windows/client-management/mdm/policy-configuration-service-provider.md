@@ -245,6 +245,54 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Bits policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-disablebranchcache" id="admx-bits-bits-disablebranchcache">ADMX_Bits/BITS_DisableBranchCache</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-disablepeercachingclient" id="admx-bits-bits-disablepeercachingclient">ADMX_Bits/BITS_DisablePeercachingClient</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-disablepeercachingserver" id="admx-bits-bits-disablepeercachingserver">ADMX_Bits/BITS_DisablePeercachingServer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-enablepeercaching" id="admx-bits-bits-enablepeercaching">ADMX_Bits/BITS_EnablePeercaching</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxbandwidthservedforpeers" id="admx-bits-bits-maxbandwidthservedforpeers">ADMX_Bits/BITS_MaxBandwidthServedForPeers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxbandwidthv2-maintenance" id="admx-bits-bits-maxbandwidthv2-maintenance">ADMX_Bits/BITS_MaxBandwidthV2_Maintenance</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxbandwidthv2-work" id="admx-bits-bits-maxbandwidthv2-work">ADMX_Bits/BITS_MaxBandwidthV2_Work</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxcachesize" id="admx-bits-bits-maxcachesize">ADMX_Bits/BITS_MaxCacheSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxcontentage" id="admx-bits-bits-maxcontentage">ADMX_Bits/BITS_MaxContentAge</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxdownloadtime" id="admx-bits-bits-maxdownloadtime">ADMX_Bits/BITS_MaxDownloadTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxfilesperjob" id="admx-bits-bits-maxfilesperjob">ADMX_Bits/BITS_MaxFilesPerJob</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxjobspermachine" id="admx-bits-bits-maxjobspermachine">ADMX_Bits/BITS_MaxJobsPerMachine</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxjobsperuser" id="admx-bits-bits-maxjobsperuser">ADMX_Bits/BITS_MaxJobsPerUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-bits.md#admx-bits-bits-maxrangesperfile" id="admx-bits-bits-maxrangesperfile">ADMX_Bits/BITS_MaxRangesPerFile</a>
+  </dd>
+</dl>
+
+
 ### ADMX_Cpls policies
 
 <dl>
