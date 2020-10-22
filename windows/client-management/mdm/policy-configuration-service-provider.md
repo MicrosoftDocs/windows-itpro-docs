@@ -769,6 +769,92 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_NetworkConnections policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-addremovecomponents" id="admx-networkconnections-nc-addremovecomponents">ADMX_NetworkConnections/NC_AddRemoveComponents</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-advancedsettings" id="admx-networkconnections-nc-advancedsettings">ADMX_NetworkConnections/NC_AdvancedSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-allowadvancedtcpipconfig" id="admx-networkconnections-nc-allowadvancedtcpipconfig">ADMX_NetworkConnections/NC_AllowAdvancedTCPIPConfig</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-changebindstate" id="admx-networkconnections-nc-changebindstate">ADMX_NetworkConnections/NC_ChangeBindState</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-deletealluserconnection" id="admx-networkconnections-nc-deletealluserconnection">ADMX_NetworkConnections/NC_DeleteAllUserConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-deleteconnection" id="admx-networkconnections-nc-deleteconnection">ADMX_NetworkConnections/NC_DeleteConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-dialupprefs" id="admx-networkconnections-nc-dialupprefs">ADMX_NetworkConnections/NC_DialupPrefs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-donotshowlocalonlyicon" id="admx-networkconnections-nc-donotshowlocalonlyicon">ADMX_NetworkConnections/NC_DoNotShowLocalOnlyIcon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-enableadminprohibits" id="admx-networkconnections-nc-enableadminprohibits">ADMX_NetworkConnections/NC_EnableAdminProhibits</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-forcetunneling" id="admx-networkconnections-nc-forcetunneling">ADMX_NetworkConnections/NC_ForceTunneling</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-ipstatechecking" id="admx-networkconnections-nc-ipstatechecking">ADMX_NetworkConnections/NC_IpStateChecking</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-lanchangeproperties" id="admx-networkconnections-nc-lanchangeproperties">ADMX_NetworkConnections/NC_LanChangeProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-lanconnect" id="admx-networkconnections-nc-lanconnect">ADMX_NetworkConnections/NC_LanConnect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-lanproperties" id="admx-networkconnections-nc-lanproperties">ADMX_NetworkConnections/NC_LanProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-newconnectionwizard" id="admx-networkconnections-nc-newconnectionwizard">ADMX_NetworkConnections/NC_NewConnectionWizard</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-personalfirewallconfig" id="admx-networkconnections-nc-personalfirewallconfig">ADMX_NetworkConnections/NC_PersonalFirewallConfig</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-rasalluserproperties" id="admx-networkconnections-nc-rasalluserproperties">ADMX_NetworkConnections/NC_RasAllUserProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-raschangeproperties" id="admx-networkconnections-nc-raschangeproperties">ADMX_NetworkConnections/NC_RasChangeProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-rasconnect" id="admx-networkconnections-nc-rasconnect">ADMX_NetworkConnections/NC_RasConnect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-rasmyproperties" id="admx-networkconnections-nc-rasmyproperties">ADMX_NetworkConnections/NC_RasMyProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-renamealluserrasconnection" id="admx-networkconnections-nc-renamealluserrasconnection">ADMX_NetworkConnections/NC_RenameAllUserRasConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-renameconnection" id="admx-networkconnections-nc-renameconnection">ADMX_NetworkConnections/NC_RenameConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-renamelanconnection" id="admx-networkconnections-nc-renamelanconnection">ADMX_NetworkConnections/NC_RenameLanConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-renamemyrasconnection" id="admx-networkconnections-nc-renamemyrasconnection">ADMX_NetworkConnections/NC_RenameMyRasConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-showsharedaccessui" id="admx-networkconnections-nc-showsharedaccessui">ADMX_NetworkConnections/NC_ShowSharedAccessUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-statistics" id="admx-networkconnections-nc-statistics">ADMX_NetworkConnections/NC_Statistics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-stddomainusersetlocation" id="admx-networkconnections-nc-stddomainusersetlocation">ADMX_NetworkConnections/NC_StdDomainUserSetLocation</a>
+  </dd>
+</dl>
+
 ### ADMX_OfflineFiles policies
 
 <dd>
