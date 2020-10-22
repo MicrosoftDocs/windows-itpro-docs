@@ -4006,7 +4006,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### LocalUsersAndGroups policies
 
+<dl>
+  <dd>
+    <a href="./policy-csp-localusersandgroups.md#localusersandgroups-configure" id="localusersandgroups-configure">LocalUsersAndGroups/Configure</a>
+  </dd>
+</dl>
 
 ### LockDown policies
 
@@ -5218,6 +5224,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-disabledualscan" id="update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-disablewufbsafeguards" id="update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
