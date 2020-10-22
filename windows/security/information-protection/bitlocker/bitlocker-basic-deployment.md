@@ -113,8 +113,6 @@ Selecting an encryption type and choosing **Next** will give the user the option
 
 After completing the system check (if selected), the BitLocker Drive Encryption Wizard restarts the computer to begin encryption. Upon reboot, users are required to enter the password chosen to boot into the operating system volume. Users can check encryption status by checking the system notification area or the BitLocker control panel.
 
-**Question: Can "password chosen to boot into the operating system volume" be rephrased? The rephrase depends on the response for the query "at what stage is the password chosen; is that password only for the purpose of booting into the operating system volume; and are there different passwords for different types of logons?**
-
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning BitLocker off.
 
 ### Data volume
