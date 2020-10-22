@@ -83,14 +83,23 @@ The following steps can be used to troubleshoot and mitigate these issues:
     > [!NOTE]
     > Using ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
 
-    The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    The output of this command will show all processes and their associated scan activity. 
 
+3. You can then run a script to parse the output.
+    
+    To do this, in your Windows system, create a folder in ```C:\temp\High_CPU_util_parser_for_Linux```. 
+
+    Save the output file ```real_time_protection_logs``` from your Linux system to the created folder.
+
+    You can then use this sample Powershell script to parse the```real_time_protection_logs```. Save this script as ```MDATP_Linux_High_CPU_parser.ps1``` in ```C:\temp\High_CPU_util_parser_for_Linux```. 
+
+    Run the Powershell script as admin. The script launches a Microsoft Excel file. The Excel file shows the list of processes with the most activity arranged in descending order. From here you can analyze which processes to exclude. 
+    
     > [!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
-3. Use the `top` command-line tool and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
+4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).    
 
-4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues
 5. Re-enable real-time protection.
 
-    For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+  
