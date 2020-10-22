@@ -96,7 +96,7 @@ In many cases, this process can reduce the response time for new malware from ho
 
 3. In the MAPS section, double-click **Configure the 'Block at First Sight' feature**, and set it to **Enabled**, and then click **OK**.
 
-    > [!WARNING]
+    > [!IMPORTANT]
     > Setting to **Always prompt (0)** will lower the protection state of the device. Setting to **Never send (2)** means block at first sight will not function.
 
 4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then click **OK**.
@@ -118,7 +118,8 @@ Block at first sight is automatically enabled as long as **Cloud-delivered prote
 3. Confirm that **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
 > [!NOTE]
-> If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
+> - If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. 
+> - Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
 ## Validate block at first sight is working
 
