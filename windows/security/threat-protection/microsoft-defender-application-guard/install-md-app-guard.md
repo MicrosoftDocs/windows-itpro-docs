@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 02/19/2019
+ms.date: 10/21/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -17,7 +17,7 @@ ms.custom: asr
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)]https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Review system requirements
  
