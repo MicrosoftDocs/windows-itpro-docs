@@ -476,8 +476,6 @@ This command displays information about the encryption method, volume type, key 
 
 Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation environment. This is done with a randomly generated clear key protector applied to the formatted volume and by encrypting the volume prior to running the Windows setup process. If the encryption uses the **Used Disk Space Only** option described later in this document, this step takes only a few seconds and incorporates well into regular deployment processes.
 
-**Question: Is the clear key protector automatically generated or manually generated?** 
-
 ### Decrypting BitLocker volumes
 
 Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required. BitLocker decryption should not occur as a troubleshooting step. BitLocker can be removed from a volume using the BitLocker control panel applet, manage-bde, or Windows PowerShell cmdlets. We will discuss each method further below.
