@@ -32,8 +32,8 @@ Windows 10 Pro Education builds on the commercial version of Windows 10 Pro and 
 
 For Cortana<sup>[1](#footnote1)</sup>,
 - If you're using version 1607, Cortana is removed.
-- If you're using new devices with version 1703, Cortana is turned on by default.
-- If you're upgrading from version 1607 to version 1703, Cortana will be enabled.
+- If you're using new devices with version 1703 or later, Cortana is turned on by default.
+- If you're upgrading from version 1607 to version 1703 or later, Cortana will be enabled.
 
 You can use the **AllowCortana** policy to turn Cortana off. For more information, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
@@ -51,8 +51,8 @@ Windows 10 Education builds on Windows 10 Enterprise and provides the enterprise
 
 For Cortana<sup>1</sup>,
 - If you're using version 1607, Cortana<sup>1</sup> is removed.
-- If you're using new devices with version 1703, Cortana is turned on by default.
-- If you're upgrading from version 1607 to version 1703, Cortana will be enabled.
+- If you're using new devices with version 1703 or later, Cortana is turned on by default.
+- If you're upgrading from version 1607 to version 1703 or later, Cortana will be enabled.
 
 You can use the **AllowCortana** policy to turn Cortana off. For more information, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
