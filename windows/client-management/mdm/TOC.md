@@ -219,6 +219,7 @@
 #### [ADMX_TPM](policy-csp-admx-tpm.md)
 #### [ADMX_UserExperienceVirtualization](policy-csp-admx-userexperiencevirtualization.md)
 #### [ADMX_W32Time](policy-csp-admx-w32time.md)
+#### [ADMX_WCM](policy-csp-admx-wcm.md)
 #### [ADMX_WinCal](policy-csp-admx-wincal.md)
 #### [ADMX_WindowsAnytimeUpgrade](policy-csp-admx-windowsanytimeupgrade.md)
 #### [ADMX_WindowsConnectNow](policy-csp-admx-windowsconnectnow.md)

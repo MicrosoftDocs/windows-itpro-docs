@@ -1750,6 +1750,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WCM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wcm.md#admx-wcm-wcm-disablepowermanagement" id="admx-wcm-wcm-disablepowermanagement">ADMX_WCM/WCM_DisablePowerManagement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wcm.md#admx-wcm-wcm-enablesoftdisconnect" id="admx-wcm-wcm-enablesoftdisconnect">ADMX_WCM/WCM_EnableSoftDisconnect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wcm.md#admx-wcm-wcm-minimizeconnections" id="admx-wcm-wcm-minimizeconnections">ADMX_WCM/WCM_MinimizeConnections</a>
+  </dd>
+</dl>
+
 ### ADMX_WinCal policies  
 
 <dl>
