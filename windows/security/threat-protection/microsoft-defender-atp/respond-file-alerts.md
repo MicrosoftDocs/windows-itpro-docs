@@ -142,19 +142,21 @@ By default, you will not be able to download files that are in quarantine.
 
 ### Download quarantined files
 
->[!IMPORTANT]
->
->- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
->
->- The Engine version must be 1.1.17300.4 or later.
->- Supported on devices with Windows 10, version 1703 or later, Windows server 2016 and 2019.
->- Microsoft Defender for Endpoint is in active mode
+Turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available.
 
-You can turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available.
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-intune-to-enable-cloud-delivered-protection).
 
-Go to **Settings** > **Advanced features** > **Download quarantined files** and switch the toggle to **On**.
+Go to **Settings** > **Advanced features** > **Download quarantined files** and switch the toggle to **On**. 
 
 [Learn more about advanced features](advanced-features.md)
+
+>[!IMPORTANT]
+>Requirements:
+>- Your organization uses Microsoft Defender Antivirus 
+>- Cloud–based protection is enabled. See [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md)
+>- Microsoft Defender for Endpoint is in active mode
+>- Engine version is 1.1.17300.4 or later
+>- Devices have Windows 10 version 1703 or later, or Windows server 2016 and 2019
 
 ### Collect files
 
