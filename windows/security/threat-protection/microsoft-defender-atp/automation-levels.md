@@ -26,14 +26,12 @@ ms.custom: AIR
 # Automation levels in automated investigation and remediation capabilities
 
 Microsoft Defender for Endpoint offers several levels of automation for automated investigation and remediation (AIR). Automation levels determine whether remediation actions are taken automatically or only upon approval following an automated investigation.  
-- Full automation (this is recommended option) means remediation actions are taken automatically.
-- Semi-automation means some remediation actions are taken automatically, but other remediation actions await approval before being taken.
--  
-
-This article describes the various levels of automation and includes recommendations to consider.
+- *Full automation* (this is recommended option) means remediation actions are taken automatically.
+- *Semi-automation* means some remediation actions are taken automatically, but other remediation actions await approval before being taken. (See the table later in this article for more details.)
+- Remediation actions, whether pending or completed, are tracked in the Action Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
 
 > [!TIP]
-> For best results, we recommend using full automation when you set your level of automation. Data collected and analyzed over the past year shows that customers who are using full automation had 40% more high-confidence malware samples removed than customers who are using lower levels of automation. Full automation can help free up your security operations resources to focus more on your strategic initiatives.
+> For best results, we recommend using full automation with automated investigation and remediation. Data collected and analyzed over the past year shows that customers who are using full automation had 40% more high-confidence malware samples removed than customers who are using lower levels of automation. Full automation can help free up your security operations resources to focus more on your strategic initiatives.
 
 ## Levels of automation
 
@@ -51,7 +49,7 @@ The following table describes each level of automation and how it works.
 
 - Full automation has proven to be reliable, efficient, and safe, and is recommended for all customers. Full automation frees up your critical security resources so they can focus more on your strategic initiatives.
 
-- New tenants (which include tenants that were created on or after August 16, 2020) with Microsoft Defender for Endpoint are set to full automation by default. 
+- New tenants (which include tenants that were created on or after August 16, 2020) with Microsoft Defender for Endpoint are set to full automation by default.
 
 - If your security team has defined device groups that include certain levels of automation, those settings are not changed by new default settings that are rolled out. However, we recommend using full automation wherever possible.
 
