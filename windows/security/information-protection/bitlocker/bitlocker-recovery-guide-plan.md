@@ -92,7 +92,6 @@ For planned scenarios, such as a known hardware or firmware upgrades, you can av
 
 > [!NOTE]
 > If suspended BitLocker will automatically resume protection when the PC is rebooted, unless a reboot count is specified using the manage-bde command line tool.
-**Question: The above sentence looks incomplete. Can more inputs be provided? Or does "if" need to be removed?** 
 
 If software maintenance requires the computer to be restarted and you are using two-factor authentication, you can enable BitLocker network unlock feature to provide the secondary authentication factor when the computers do not have an on-premises user to provide the additional authentication method.
 
