@@ -111,7 +111,7 @@ There are no hardware requirements for Windows Defender Remote Credential Guard.
 
 > [!NOTE]
 > Remote Desktop client devices running earlier versions, at minimum Windows 10 version 1607, only support signed-in credentials, so the client device must also be joined to an Active Directory domain. Both Remote Desktop client and server must either be joined to the same domain, or the Remote Desktop server can be joined to a domain that has a trust relationship to the client device's domain.
-
+>
 > GPO [Remote host allows delegation of non-exportable credentials](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation) should be enabled for delegation of non-exportable credentials.
 
 - For Windows Defender Remote Credential Guard to be supported, the user must authenticate to the remote host using Kerberos authentication.
