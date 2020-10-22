@@ -36,7 +36,7 @@ Your security operations team receives an alert whenever a malicious or suspicio
 
 Watch the following video to see how automated investigation and remediation works:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bOeh]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
 Automated investigation uses various inspection algorithms and processes used by analysts to examine alerts and take immediate action to resolve breaches. These capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives. The [Action center](auto-investigation-action-center.md) keeps track of all the investigations that were initiated automatically, along with details, such as investigation status, detection source, and any pending or completed actions.
 
@@ -84,7 +84,7 @@ As verdicts are reached, automated investigations can result in one or more [rem
 
 Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team. 
 
-All remediation actions, whether pending or completed, can be viewed in Action Center. To learn more, see [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
+All remediation actions, whether pending or completed, can be viewed in Action Center. To learn more, see [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).
 
 ## Next steps
 
