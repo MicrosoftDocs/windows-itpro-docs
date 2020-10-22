@@ -186,7 +186,7 @@ ms.date: 10/08/2020
 - [ADMX_Netlogon/Netlogon_SysvolShareCompatibilityMode](./policy-csp-admx-netlogon.md#admx-netlogon-netlogon-sysvolsharecompatibilitymode)
 - [ADMX_Netlogon/Netlogon_TryNextClosestSite](./policy-csp-admx-netlogon.md#admx-netlogon-netlogon-trynextclosestsite)
 - [ADMX_Netlogon/Netlogon_UseDynamicDns](./policy-csp-admx-netlogon.md#admx-netlogon-netlogon-usedynamicdns)
-- [ADMX_NetworkConnections/NC_AddRemoveComponents](./policy-csp-admx-networkconnections.md./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-addremovecomponents)
+- [ADMX_NetworkConnections/NC_AddRemoveComponents](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-addremovecomponents)
 - [ADMX_NetworkConnections/NC_AdvancedSettings](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-advancedsettings)
 - [ADMX_NetworkConnections/NC_AllowAdvancedTCPIPConfig](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-allowadvancedtcpipconfig)
 - [ADMX_NetworkConnections/NC_ChangeBindState](./policy-csp-admx-networkconnections.md#admx-networkconnections-nc-changebindstate)
