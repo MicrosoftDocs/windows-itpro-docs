@@ -1,5 +1,5 @@
 ---
-title: Enable Block at First Sight to detect malware in seconds
+title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds, and validate that it is configured correctly.
 keywords: scan, BAFS, malware, first seen, first sight, cloud, defender
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
-ms.date: 10/15/2020
+ms.date: 10/22/2020
 ---
 
 # Turn on block at first sight
@@ -24,9 +24,9 @@ ms.date: 10/15/2020
 
 - Microsoft Defender Antivirus
 
-Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are also enabled. In most cases, these prerequisite settings are also enabled by default, so the feature is running without any intervention. 
+Block at first sight provides a way to detect and block new malware within seconds. This protection is enabled by default when certain prerequisite settings are enabled. These settings include cloud-delivered protection, a specified sample submission timeout (usually set to 50), and a file-blocking level of high. In most enterprise organizations, these settings are enabled by default with Microsoft Defender Antivirus deployments. 
 
-You can [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
+You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 >[!TIP]
 >Visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
@@ -46,103 +46,64 @@ If the cloud backend is unable to make a determination, Microsoft Defender Antiv
 
 In many cases, this process can reduce the response time for new malware from hours to seconds.
 
-## Confirm and validate that block at first sight is turned on
+## Turn on block at first sight with Microsoft Intune
 
-Block at first sight requires a number of settings to be configured correctly or it will not work. These settings are enabled by default in most enterprise Microsoft Defender Antivirus deployments.
+> [!TIP]
+> Microsoft Intune is now part of Microsoft Endpoint Manager.
 
-### Confirm block at first sight is turned on with Intune
+1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Devices** > **Configuration profiles**.
 
-1. In Intune, navigate to **Device configuration - Profiles** > *Profile name* > **Device restrictions** > **Microsoft Defender Antivirus**.
+2. Select or create a profile using the **Device restrictions** profile type.
 
-   > [!NOTE]
-   > The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
+3. In the **Configuration settings** for the Device restrictions profile, set or confirm the following settings under **Microsoft Defender Antivirus**:
 
-2. Verify these settings are configured as follows:
-
-   - **Cloud-delivered protection**: **Enable**
-   - **File Blocking Level**: **High**
-   - **Time extension for file scanning by the cloud**: **50**
-   - **Prompt users before sample submission**: **Send all data without prompting**
+   - **Cloud-delivered protection**: Enabled
+   - **File Blocking Level**: High
+   - **Time extension for file scanning by the cloud**: 50
+   - **Prompt users before sample submission**: Send all data without prompting
 
    ![Intune config](images/defender/intune-block-at-first-sight.png)
 
-   > [!WARNING]
-   > Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus).
+4. Save your settings.
 
-For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+> [!TIP]
+> - Setting the file blocking level to **High** applies a strong level of detection. In the unlikely event that file blocking causes a false positive detection of legitimate files, you can [restore quarantined files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/restore-quarantined-files-microsoft-defender-antivirus).
+> - For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+> - For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+## Turn on block at first sight with Microsoft Endpoint Manager
 
-### Turn on block at first sight with Microsoft Endpoint Configuration Manager
+1. In Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security** > **Antivirus**.
 
-1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
+2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type.
 
-2. Click **Home** > **Create Antimalware Policy**.
+3. Set or confirm the following configuration settings:
 
-3. Enter a name and a description, and add these settings:
-   - **Real time protection**
-   - **Advanced**
-   - **Cloud Protection Service**
+   - **Turn on cloud-delivered protection**: Yes
+   - **Cloud-delivered protection level**: High
+   - **Defender Cloud Extended Timeout in Seconds**: 50
 
-4. In the left column, click **Real time protection**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
-   ![Enable real-time protection](images/defender/sccm-real-time-protection.png)
+4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
-5. Click **Advanced**, set **Enable real-time protection** to **Yes**, and set **Scan system files** to **Scan incoming and outgoing files**.
-   ![Enable Advanced settings](images/defender/sccm-advanced-settings.png)
+## Turn on block at first sight Group Policy
 
-6. Click **Cloud Protection Service**, set **Cloud Protection Service membership type** to **Advanced membership**, set **Level for blocking suspicious files** to **High**, and set **Allow extended cloud check to block and scan suspicious files for up to (seconds)** to **50** seconds.
-   ![Enable Cloud Protection Service](images/defender/sccm-cloud-protection-service.png)
-
-7. Click **OK** to create the policy.
-
-### Confirm block at first sight is turned on with Group Policy
+> [!NOTE]
+> We recommend using Intune or Microsoft Endpoint Manager to turn on block at first sight. 
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**. 
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** > **Administrative templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MAPS**. 
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MAPS**, configure the following Group Policies, and then click **OK**:
-
-    1. Double-click **Join Microsoft MAPS** and ensure the option is set to **Enabled**. Click **OK**.
-
-    2. Double-click **Send file samples when further analysis is required** and ensure the option is set to **Enabled** and the additional options are either **Send safe samples (1)** or **Send all samples (3)**.
+3. In the MAPS section, double-click **Configure the 'Block at First Sight' feature**, and set it to **Enabled**, and then click **OK**.
 
     > [!WARNING]
     > Setting to **Always prompt (0)** will lower the protection state of the device. Setting to **Never send (2)** means block at first sight will not function.
 
-4. In the **Group Policy Management Editor**, expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Real-time Protection**:
+4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then click **OK**.
 
-    1. Double-click **Scan all downloaded files and attachments** and ensure the option is set to **Enabled**, and then click **OK**.
+5. If you had to changed any settings, redeploy the Group Policy Object across your network to ensure all endpoints are covered.
 
-    2. Double-click **Turn off real-time protection** and ensure the option is set to **Disabled**, and then click **OK**.
-
-5. In the **Group Policy Management Editor**, expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MpEngine**:
-
-    1. Double-click **Select cloud protection level** and ensure the option is set to **Enabled**. 
-
-    2. Ensure that **Select cloud blocking level** section on the same page is set to **High blocking level**, and then click **OK**.
-    
-If you had to change any of the settings, you should redeploy the Group Policy Object across your network to ensure all endpoints are covered.
-
-### Confirm block at first sight is turned on with Registry editor
-
-1. Start Registry Editor.
-
-2. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Spynet`, and make sure that 
-
-    1. **SpynetReporting** key is set to **1**
-
-    2. **SubmitSamplesConsent** key is set to either **1** (Send safe samples) or **3** (Send all samples)
-
-3. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Real-Time Protection`, and make sure that
-
-    1. **DisableIOAVProtection** key is set to **0**
-
-    2. **DisableRealtimeMonitoring** key is set to **0**
-    
-4. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\MpEngine`, and make sure that the **MpCloudBlockLevel** key is set to **2**
-    
-### Confirm Block at First Sight is enabled on individual clients
+## Confirm Block at First Sight is enabled on individual clients
 
 You can confirm that block at first sight is enabled on individual clients using Windows security settings.
 
@@ -159,16 +120,16 @@ Block at first sight is automatically enabled as long as **Cloud-delivered prote
 > [!NOTE]
 > If the prerequisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-### Validate block at first sight is working
+## Validate block at first sight is working
 
 You can validate that the feature is working by following the steps outlined in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## Turn off block at first sight
 
-> [!WARNING]
-> Turning off block at first sight will lower the protection state of the endpoint and your network.
+> [!CAUTION]
+> Turning off block at first sight will lower the protection state of your device(s) and your network.
 
-You may choose to disable block at first sight if you want to retain the prerequisite settings without using block at first sight protection. You might wish to do this if you are experiencing latency issues or you want to test the feature's impact on your network.
+You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might do this if you are experiencing latency issues or you want to test the feature's impact on your network. We do not recommend disabling block at first sight protection.
 
 ### Turn off block at first sight with Group Policy
 
