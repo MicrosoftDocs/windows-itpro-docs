@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 >[!NOTE] 
 
-> Microsoft Defender ATP for iOS uses a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device. Microsoft or your organization does not see your browsing activity.
+> Microsoft Defender ATP for iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. Microsoft or your organization, does not see your browsing activity.
 
 Microsoft Defender ATP for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Microsoft Defender ATP. 
 
@@ -32,13 +32,15 @@ Information is collected to help keep Microsoft Defender ATP for iOS secure, up-
 
 ## Required Data 
 
-Required data consists of data that is necessary to make Microsoft Defender ATP for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. Here's a list of the types of data being collected: 
+Required data consists of data that is necessary to make Microsoft Defender ATP for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. 
 
-### Web page / Network information 
+Here is a list of the types of data being collected: 
 
-- Connection information only when a malicious connection/web page is detected. 
+### Web page or Network information 
 
-- Protocol type (such as HTTP, HTTPS, etc.) only when a malicious connection/web page is detected. 
+- Connection information only when a malicious connection or web page is detected. 
+
+- Protocol type (such as HTTP, HTTPS, etc.) only when a malicious connection or web page is detected. 
 
 ### Device and account information 
 
@@ -52,7 +54,7 @@ Required data consists of data that is necessary to make Microsoft Defender ATP 
 
 - Tenant, Device and User information 
 
-    - Azure Active Directory (AD) Device ID and Azure User ID: Uniquely identifies the device, User respectively at Azure Active directory. 
+    - Azure Active Directory (AD) Device ID and Azure User ID - Uniquely identifies the device, User respectively at Azure Active directory. 
 
     - Azure tenant ID - GUID that identifies your organization within Azure Active Directory 
 
@@ -60,7 +62,6 @@ Required data consists of data that is necessary to make Microsoft Defender ATP 
 
     - User Principal Name – Email ID of the user 
 
- 
 
 ### Product and service usage data 
 
@@ -92,7 +93,7 @@ Feedback Data is collected through in-app feedback provided by the user.
 
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user. 
 
-[More on Privacy] 
+[More on Privacy](https://aka.ms/mdatpiosprivacystatement)
 
 
 
