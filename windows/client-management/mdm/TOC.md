@@ -207,6 +207,7 @@
 #### [ADMX_Scripts](policy-csp-admx-scripts.md)
 #### [ADMX_sdiageng](policy-csp-admx-sdiageng.md)
 #### [ADMX_Securitycenter](policy-csp-admx-securitycenter.md)
+#### [ADMX_Sensors](policy-csp-admx-sensors.md)
 #### [ADMX_Servicing](policy-csp-admx-servicing.md)
 #### [ADMX_SharedFolders](policy-csp-admx-sharedfolders.md)
 #### [ADMX_Sharing](policy-csp-admx-sharing.md)

@@ -1126,6 +1126,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Sensors policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sensors.md#admx-sensors-disablelocationscripting-1" id="admx-sensors-disablelocationscripting-1">ADMX_Sensors/DisableLocationScripting_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sensors.md#admx-sensors-disablelocationscripting-2" id="admx-sensors-disablelocationscripting-2">ADMX_Sensors/DisableLocationScripting_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sensors.md#admx-sensors-disablelocation-1" id="admx-sensors-disablelocation-1">ADMX_Sensors/DisableLocation_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sensors.md#admx-sensors-disablesensors-1" id="admx-sensors-disablesensors-1">ADMX_Sensors/DisableSensors_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-sensors.md#admx-sensors-disablesensors-2" id="admx-sensors-disablesensors-2">ADMX_Sensors/DisableSensors_2</a>
+  </dd>
+</dl>
+
 ### ADMX_Servicing policies  
 
 <dl>
