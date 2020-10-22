@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP for iOS - Privacy information
 ms.reviewer:
 description: Describes privacy information for Microsoft Defender ATP for iOS
-keywords: microsoft, defender, atp, ios, overview, installation, deploy, uninstallation, intune
+keywords: microsoft, defender, atp, ios, policy, overview
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
