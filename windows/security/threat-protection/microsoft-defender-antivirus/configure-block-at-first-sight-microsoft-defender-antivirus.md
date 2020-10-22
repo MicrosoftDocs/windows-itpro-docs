@@ -101,7 +101,7 @@ In many cases, this process can reduce the response time for new malware from ho
 
 4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then click **OK**.
 
-5. If you had to changed any settings, redeploy the Group Policy Object across your network to ensure all endpoints are covered.
+5. If you changed any settings, redeploy the Group Policy Object across your network to ensure all endpoints are covered.
 
 ## Confirm block at first sight is enabled on individual clients
 
