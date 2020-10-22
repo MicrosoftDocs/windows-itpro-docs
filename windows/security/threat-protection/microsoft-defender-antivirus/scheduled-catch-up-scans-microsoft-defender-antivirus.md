@@ -100,8 +100,10 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
-SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+ScanParameters
+ScanScheduleDay
+ScanScheduleTime
+RandomizeScheduleTaskTimes
 ```
 
 See the following for more information and allowed parameters:
@@ -138,8 +140,7 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
-SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+ScanOnlyIfIdleEnabled
 ```
 
 See the following for more information and allowed parameters:
@@ -173,8 +174,8 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
-SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+RemediationScheduleDay
+RemediationScheduleTime
 ```
 
 See the following for more information and allowed parameters:
@@ -210,8 +211,7 @@ See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](u
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
 ```WMI
-SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+ScanScheduleQuickScanTime
 ```
 
 See the following for more information and allowed parameters:
