@@ -36,9 +36,6 @@ You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/librar
 
 For example, if devices are not appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
 
-> [!NOTE]
-> It can take several days for devices to begin reporting to the Microsoft Defender ATP service.
-
 **Open Event Viewer and find the Microsoft Defender ATP service event log:**
 
 1. Click **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.

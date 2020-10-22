@@ -398,6 +398,7 @@
 
 ### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Automation levels in AIR](microsoft-defender-atp/automation-levels.md)
 #### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
