@@ -20,9 +20,9 @@ ms.custom: bitlocker
 
 # BitLocker recovery guide
 
-**Applies to**
+**Applies to:**
 
--   Windows 10
+- Windows 10
 
 This topic describes how to recover BitLocker keys from AD DS.
 
@@ -31,6 +31,7 @@ Organizations can use BitLocker recovery information saved in Active Directory D
 This article assumes that you understand how to set up AD DS to back up BitLocker recovery information automatically, and what types of recovery information are saved to AD DS.
 
 This article does not detail how to configure AD DS to store the BitLocker recovery information.
+
 
 ## <a href="" id="bkmk-whatisrecovery"></a>What is BitLocker recovery?
 
@@ -43,45 +44,46 @@ BitLocker recovery is the process by which you can restore access to a BitLocker
 ### What causes BitLocker recovery?
 
 The following list provides examples of specific events that will cause BitLocker to enter recovery mode when attempting to start the operating system drive:
--   On PCs that use BitLocker Drive Encryption, or on devices such as tablets or phones that use [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md) only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality Administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor, or use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
--   On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 do not start BitLocker recovery in this case. TPM 2.0 does not consider a firmware change of boot device order as a security threat because the OS Boot Loader is not compromised.
--   Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD.
--   Failing to boot from a network drive before booting from the hard drive.
--   Docking or undocking a portable computer. In some instances (depending on the computer manufacturer and the BIOS), the docking condition of the portable computer is part of the system measurement and must be consistent to validate the system status and unlock BitLocker. This means that if a portable computer is connected to its docking station when BitLocker is turned on, then it might also need to be connected to the docking station when it is unlocked. Conversely, if a portable computer is not connected to its docking station when BitLocker is turned on, then it might need to be disconnected from the docking station when it is unlocked.
--   Changes to the NTFS partition table on the disk including creating, deleting, or resizing a primary partition.
--   Entering the personal identification number (PIN) incorrectly too many times so that the anti-hammering logic of the TPM is activated. Anti-hammering logic is software or hardware methods that increase the difficulty and cost of a brute force attack on a PIN by not accepting PIN entries until after a certain amount of time has passed.
--   Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if you are using USB-based keys instead of a TPM.
--   Turning off, disabling, deactivating, or clearing the TPM.
--   Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade, causing the related boot measurements to change.
--   Forgetting the PIN when PIN authentication has been enabled.
--   Updating option ROM firmware.
--   Upgrading TPM firmware.
--   Adding or removing hardware; for example, inserting a new card in the computer, including some PCMIA wireless cards.
--   Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
--   Changes to the master boot record on the disk.
--   Changes to the boot manager on the disk.
--   Hiding the TPM from the operating system. Some BIOS or UEFI settings can be used to prevent the enumeration of the TPM to the operating system. When implemented, this option makes the TPM hidden from the operating system. When the TPM is hidden, BIOS and UEFI secure startup are disabled, and the TPM does not respond to commands from any software.
--   Using a different keyboard that does not correctly enter the PIN or whose keyboard map does not match the keyboard map assumed by the pre-boot environment. This prevents the entry of enhanced PINs.
--   Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile. For example, including **PCR\[1\]** results in BitLocker measuring most changes to BIOS settings, causing BitLocker to enter recovery mode even when non-boot critical BIOS settings change.
+
+- On PCs that use BitLocker Drive Encryption, or on devices such as tablets or phones that use [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md) only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality Administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor, or use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
+- On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 do not start BitLocker recovery in this case. TPM 2.0 does not consider a firmware change of boot device order as a security threat because the OS Boot Loader is not compromised.
+- Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD.
+- Failing to boot from a network drive before booting from the hard drive.
+- Docking or undocking a portable computer. In some instances (depending on the computer manufacturer and the BIOS), the docking condition of the portable computer is part of the system measurement and must be consistent to validate the system status and unlock BitLocker. This means that if a portable computer is connected to its docking station when BitLocker is turned on, then it might also need to be connected to the docking station when it is unlocked. Conversely, if a portable computer is not connected to its docking station when BitLocker is turned on, then it might need to be disconnected from the docking station when it is unlocked.
+- Changes to the NTFS partition table on the disk including creating, deleting, or resizing a primary partition.
+- Entering the personal identification number (PIN) incorrectly too many times so that the anti-hammering logic of the TPM is activated. Anti-hammering logic is software or hardware methods that increase the difficulty and cost of a brute force attack on a PIN by not accepting PIN entries until after a certain amount of time has passed.
+- Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if you are using USB-based keys instead of a TPM.
+- Turning off, disabling, deactivating, or clearing the TPM.
+- Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade, causing the related boot measurements to change.
+- Forgetting the PIN when PIN authentication has been enabled.
+- Updating option ROM firmware.
+- Upgrading TPM firmware.
+- Adding or removing hardware; for example, inserting a new card in the computer, including some PCMIA wireless cards.
+- Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
+- Changes to the master boot record on the disk.
+- Changes to the boot manager on the disk.
+- Hiding the TPM from the operating system. Some BIOS or UEFI settings can be used to prevent the enumeration of the TPM to the operating system. When implemented, this option can make the TPM hidden from the operating system. When the TPM is hidden, BIOS and UEFI secure startup are disabled, and the TPM does not respond to commands from any software.
+- Using a different keyboard that does not correctly enter the PIN or whose keyboard map does not match the keyboard map assumed by the pre-boot environment. This can prevent the entry of enhanced PINs.
+- Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile. For example, including **PCR\[1\]** would result in BitLocker measuring most changes to BIOS settings, causing BitLocker to enter recovery mode even when non-boot critical BIOS settings change.
 
     > [!NOTE]
-    > Some computers have BIOS settings that skip measurements to certain PCRs such as **PCR\[2\]**. Changing this setting in the BIOS causes BitLocker to enter recovery mode because the PCR measurement will be different.
-     
--   Moving the BitLocker-protected drive into a new computer.
--   Upgrading the motherboard to a new one with a new TPM.
--   Losing the USB flash drive containing the startup key when startup key authentication has been enabled.
--   Failing the TPM self-test.
--   Having a BIOS, UEFI firmware, or an option ROM component that is not compliant with the relevant Trusted Computing Group (TCG) standards for a client computer. For example, a non-compliant implementation records volatile data (such as time) in the TPM measurements, causing different measurements on each startup and causing BitLocker to start in recovery mode.
--   Changing the usage authorization for the storage root key of the TPM to a non-zero value.
+    > Some computers have BIOS settings that skip measurements to certain PCRs, such as **PCR\[2\]**. Changing this setting in the BIOS would cause BitLocker to enter recovery mode because the PCR measurement will be different.
+
+- Moving the BitLocker-protected drive into a new computer.
+- Upgrading the motherboard to a new one with a new TPM.
+- Losing the USB flash drive containing the startup key when startup key authentication has been enabled.
+- Failing the TPM self-test.
+- Having a BIOS, UEFI firmware, or an option ROM component that is not compliant with the relevant Trusted Computing Group standards for a client computer. For example, a non-compliant implementation may record volatile data (such as time) in the TPM measurements, causing different measurements on each startup and causing BitLocker to start in recovery mode.
+- Changing the usage authorization for the storage root key of the TPM to a non-zero value.
 
     > [!NOTE]
     > The BitLocker TPM initialization process sets the usage authorization value to zero, so another user or process must explicitly have changed this value.
-    **Question: Does it imply that another user or process should change this to a non-zero value?**
-     
--   Disabling the code integrity check or enabling test signing on Windows Boot Manager (Bootmgr).
--   Pressing the F8 or F10 key during the boot process.
--   Adding or removing add-in cards (such as video or network cards), or upgrading firmware on add-in cards.
--   Using a BIOS hot key during the boot process to change the boot order to something other than the hard drive.
+
+- Disabling the code integrity check or enabling test signing on Windows Boot Manager (Bootmgr).
+- Pressing the F8 or F10 key during the boot process.
+- Adding or removing add-in cards (such as video or network cards), or upgrading firmware on add-in cards.
+- Using a BIOS hot key during the boot process to change the boot order to something other than the hard drive.
+
 
 > [!NOTE]
 > Before you begin recovery, we recommend that you determine what caused recovery. This might help prevent the problem from occurring again in the future. For instance, if you determine that an attacker has modified your computer by obtaining physical access, you can create new security policies for tracking who has physical presence. After the recovery password has been used to recover access to the PC, BitLocker reseals the encryption key to the current values of the measured components.
@@ -96,18 +98,18 @@ If software maintenance requires the computer to be restarted and you are using 
 
 Recovery has been described within the context of unplanned or undesired behavior, but you can also cause recovery as an intended production scenario, in order to manage access control. For example, when you redeploy desktop or laptop computers to other departments or employees in your enterprise, you can force BitLocker into recovery before the computer is given to a new user.
 
+
 ## <a href="" id="bkmk-testingrecovery"></a>Testing recovery
 
 Before you create a thorough BitLocker recovery process, we recommend that you test how the recovery process works for both end users (people who call your helpdesk for the recovery password) and administrators (people who help the end user get the recovery password). The –forcerecovery command of manage-bde is an easy way for you to step through the recovery process before your users encounter a recovery situation.
 
-**To force a recovery for the local computer**
+**To force a recovery for the local computer:**
 
 1.  Click the **Start** button, type **cmd** in the **Start Search** box, right-click **cmd.exe**, and then click **Run as administrator**.
 2.  At the command prompt, type the following command and then press **ENTER**:
     `manage-bde -forcerecovery <BitLockerVolume>`
 
-
-**To force recovery for a remote computer**
+**To force recovery for a remote computer:**
 
 1.  On the Start screen, type **cmd.exe**, and then click **Run as administrator**.
 
@@ -116,6 +118,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
     > [!NOTE]
     > Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because BitLocker will have to be unlocked and disabled manually from the WinRE environment before the OS can boot up again. For more information, see [BitLocker Troubleshooting: Continuous reboot loop with BitLocker recovery on a slate device](https://social.technet.microsoft.com/wiki/contents/articles/18671.bitlocker-troubleshooting-continuous-reboot-loop-with-bitlocker-recovery-on-a-slate-device.aspx).
+
 
 ## <a href="" id="bkmk-planningrecovery"></a>Planning your recovery process
 
@@ -127,18 +130,20 @@ After a BitLocker recovery has been initiated, users can use a recovery password
 
 When you determine your recovery process, you should:
 
--   Become familiar with how you can retrieve the recovery password. See:
+- Become familiar with how you can retrieve the recovery password. See:
 
-    -   [Self-recovery](#bkmk-selfrecovery)
-    -   [Recovery password retrieval](#bkmk-recoveryretrieval)
+    - [Self-recovery](#bkmk-selfrecovery)
+    - [Recovery password retrieval](#bkmk-recoveryretrieval)
 
--   Determine a series of steps for post-recovery, including analyzing why the recovery occurred and resetting the recovery password. See:
+- Determine a series of steps for post-recovery, including analyzing why the recovery occurred and resetting the recovery password. See:
 
-    -   [Post-recovery analysis](#bkmk-planningpostrecovery)
+    - [Post-recovery analysis](#bkmk-planningpostrecovery)
+
 
 ### <a href="" id="bkmk-selfrecovery"></a>Self-recovery
 
 In some cases, users might have the recovery password in a printout or a USB flash drive and can perform self-recovery. We recommend that your organization creates a policy for self-recovery. If self-recovery includes using a password or recovery key stored on a USB flash drive, the users must be warned not to store the USB flash drive in the same place as the PC, especially during travel. For example, if both the PC and the recovery items are in the same bag it would be very easy for access to be gained to the PC by an unauthorized user. Another policy to consider is having users contact the Helpdesk before or after performing self-recovery so that the root cause can be identified.
+
 
 ### <a href="" id="bkmk-recoveryretrieval"></a>Recovery password retrieval
 
@@ -147,7 +152,7 @@ If the user does not have a recovery password in a printout or on a USB flash dr
 -   **Choose how BitLocker-protected operating system drives can be recovered**
 -   **Choose how BitLocker-protected fixed drives can be recovered**
 -   **Choose how BitLocker-protected removable drives can be recovered**
-In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS, select the **Do not enable BitLocker until recovery information is stored in AD
+In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Select the **Do not enable BitLocker until recovery information is stored in AD
 DS** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
 
 > [!NOTE]
@@ -157,23 +162,27 @@ The BitLocker Recovery Password Viewer for Active Directory Users and Computers 
 
 You can use the following list as a template for creating your own recovery process for recovery password retrieval. This sample process uses the BitLocker Recovery Password Viewer for Active Directory Users and Computers tool.
 
--   [Record the name of the user's computer](#bkmk-recordcomputername)
--   [Verify the user's identity](#bkmk-verifyidentity)
--   [Locate the recovery password in AD DS](#bkmk-locatepassword)
--   [Gather information to determine why recovery occurred](#bkmk-gatherinfo)
--   [Give the user the recovery password](#bkmk-givepassword)
+- [Record the name of the user's computer](#bkmk-recordcomputername)
+- [Verify the user's identity](#bkmk-verifyidentity)
+- [Locate the recovery password in AD DS](#bkmk-locatepassword)
+- [Gather information to determine why recovery occurred](#bkmk-gatherinfo)
+- [Give the user the recovery password](#bkmk-givepassword)
+
 
 ### <a href="" id="bkmk-recordcomputername"></a>Record the name of the user's computer
 
 You can use the name of the user's computer to locate the recovery password in AD DS. If the user does not know the name of the computer, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This is the computer name when BitLocker was enabled and is probably the current name of the computer.
 
+
 ### <a href="" id="bkmk-verifyidentity"></a>Verify the user's identity
 
 You should verify whether the person who is asking for the recovery password is truly the authorized user of that computer. You may also wish to verify whether the computer for which the user provided the name belongs to the user.
 
+
 ### <a href="" id="bkmk-locatepassword"></a>Locate the recovery password in AD DS
 
 Locate the computer object with the matching name in AD DS. Because computer object names are listed in the AD DS global catalog, you should be able to locate the object even if you have a multi-domain forest.
+
 
 ### Multiple recovery passwords
 
@@ -183,9 +192,11 @@ If at any time you are unsure about the password to be provided, or if you think
 
 Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 
+
 ### <a href="" id="bkmk-gatherinfo"></a>Gather information to determine why recovery occurred
 
 Before you give the user the recovery password, you should gather any information that will help determine why the recovery was needed, in order to analyze the root cause during the post-recovery analysis. For more information about post-recovery analysis, see [Post-recovery analysis](#bkmk-planningpostrecovery).
+
 
 ### <a href="" id="bkmk-givepassword"></a>Give the user the recovery password
 
@@ -194,14 +205,15 @@ Because the recovery password is 48 digits long, the user may need to record the
 > [!NOTE]
 > Because the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors.
 
+
 ### <a href="" id="bkmk-planningpostrecovery"></a>Post-recovery analysis
 
 When a volume is unlocked using a recovery password, an event is written to the event log and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption when data is written to the volume, and on-the-fly decryption when data is read from the volume. After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
 
-If you notice that a computer is having repeated recovery password unlocks, you might want to have an administrator perform post-recovery analysis to determine the root cause of the recovery and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time the computer starts up. See:
+If you notice that a computer is having repeated recovery password unlocks, you might want to have an administrator perform post-recovery analysis to determine the root cause of the recovery and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time that the computer starts up. See:
 
--   [Determine the root cause of the recovery](#bkmk-determinecause)
--   [Refresh BitLocker protection](#bkmk-refreshprotection)
+- [Determine the root cause of the recovery](#bkmk-determinecause)
+- [Refresh BitLocker protection](#bkmk-refreshprotection)
 
 ### <a href="" id="bkmk-determinecause"></a>Determine the root cause of the recovery
 
@@ -220,6 +232,7 @@ Review and answer the following questions for your organization:
 
 To help you answer these questions, use the BitLocker command-line tool to view the current configuration and protection mode (for example, **manage-bde -status**). Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred). Both of these capabilities can be performed remotely.
 
+
 ### <a href="" id="bkmk-refreshprotection"></a>Resolve the root cause
 
 After you have identified what caused recovery, you can reset BitLocker protection and avoid recovery on every startup.
@@ -232,7 +245,9 @@ The details of this reset can vary according to the root cause of the recovery. 
 - [Unknown PIN](#bkmk-unknownpin)
 - [Lost startup key](#bkmk-loststartup)
 - [Changes to boot files](#bkmk-changebootknown)
-  ### <a href="" id="bkmk-unknownpin"></a>Unknown PIN
+
+
+### <a href="" id="bkmk-unknownpin"></a>Unknown PIN
 
 If a user has forgotten the PIN, you must reset the PIN while you are logged on to the computer in order to prevent BitLocker from initiating recovery each time the computer is restarted.
 
@@ -243,8 +258,6 @@ If a user has forgotten the PIN, you must reset the PIN while you are logged on 
     1.  Right-click the drive and then click **Change PIN**
     2.  In the BitLocker Drive Encryption dialog, click **Reset a forgotten PIN**. If you are not logged in with an administrator account, you must provide administrative credentials at this time.
     3.  In the PIN reset dialog, provide and confirm the new PIN to be used and then click **Finish**.
-You will use the new PIN the next time you unlock the drive.
-**Question: I am removing the bulleted number for the above phrase because it sounds more like a step result**
 
 ### <a href="" id="bkmk-loststartup"></a>Lost startup key
 
@@ -253,7 +266,6 @@ If you have lost the USB flash drive that contains the startup key, then you mus
 **To prevent continued recovery due to a lost startup key**
 
 1.  Log on as an administrator to the computer that has its startup key lost.
-**Question: Is the above rephrased version implying the intended meaning?**
 2.  Open Manage BitLocker.
 3.  Click **Duplicate start up key**, insert the clean USB drive on which you are going to write the key, and then click **Save**.
 
@@ -264,11 +276,11 @@ This error occurs if you updated the firmware. As a best practice, you should su
 ## Windows RE and BitLocker Device Encryption
 
 Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs, provided that the boot logs or any available crash dump points to a specific corrupted file. In Windows 8.1 and later versions, devices that include firmware to support specific TPM measurements for PCR\[7\] **the TPM** can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair is not able to be run automatically from the PC and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
-**Question: The marked instance of TPM above renders the sentence ambiguous. Need inputs on the same**
 
 ## BitLocker recovery screen
 
 During BitLocker recovery, Windows displays a custom recovery message and a few hints that identify where a key can be retrieved from. These improvements can help a user during BitLocker recovery.
+
 
 ### Custom recovery message
 BitLocker group policy settings in Windows 10, version 1511, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
@@ -284,8 +296,11 @@ Example of customized recovery screen:
 
 ![Customized BitLocker Recovery Screen](./images/bl-password-hint1.png)
 
+
 ### BitLocker recovery key hints
+
 BitLocker metadata has been enhanced in Windows 10, version 1903, to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the bootmanager recovery screen and the WinRE unlock screen.
+
 ![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
 
 > [!IMPORTANT]
@@ -303,6 +318,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” is displayed. 
 9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system asks for a key that has been backed up, even if another key is newer. 
 
+
 #### Example 1 (single recovery key with single backup)
 
 |     Custom URL       |     Yes    |
@@ -318,6 +334,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 ![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
 
+
 #### Example 2 (single recovery key with single backup)
 
 |     Custom URL       |     Yes    |
@@ -332,6 +349,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 ![Example 2 of customized BitLocker recovery screen](./images/rp-example2.PNG)
 
+
 #### Example 3 (single recovery key with multiple backups)
 
 |     Custom URL       |     No     |
@@ -345,6 +363,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 **Result:** Only the Microsoft Account hint is displayed.
 
 ![Example 3 of customized BitLocker recovery screen](./images/rp-example3.PNG)
+
 
 #### Example 4  (multiple recovery passwords)
 
@@ -375,6 +394,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 ![Example 4 of customized BitLocker recovery screen](./images/rp-example4.PNG)
 
+
 #### Example 5  (multiple recovery passwords)
 
 |     Custom URL       |     No          |
@@ -404,9 +424,11 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 ![Example 5 of customized BitLocker recovery screen](./images/rp-example5.PNG)
 
+
 ## <a href="" id="bkmk-usingaddrecovery"></a>Using additional recovery information
 
 Besides the 48-digit BitLocker recovery password, other types of recovery information are stored in Active Directory. This section describes how this additional information can be used.
+
 
 ### BitLocker key package
 
@@ -417,35 +439,33 @@ If the recovery methods discussed earlier in this document do not unlock the vol
 
 The BitLocker key package is not saved by default. To save the package along with the recovery password in AD DS you must select the **Backup recovery password and key package** option in the group policy settings that control the recovery method. You can also export the key package from a working volume. For more details on how to export key packages, see [Retrieving the BitLocker Key Package](#bkmk-appendixc).
 
+
 ## <a href="" id="bkmk-appendixb"></a>Resetting recovery passwords
 
 You must invalidate a recovery password after it has been provided and used, and when you intentionally want to invalidate an existing recovery password for any reason.
 
 You can reset the recovery password in two ways:
 
--   **Use manage-bde**. You can use manage-bde to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
--   **Run a script**. You can run a script to reset the password without decrypting the volume. The sample script in the procedure illustrates this functionality. The sample script creates a new recovery password and invalidates all other passwords.
+- **Use manage-bde** You can use manage-bde to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
+- **Run a script** You can run a script to reset the password without decrypting the volume. The sample script in the procedure illustrates this functionality. The sample script creates a new recovery password and invalidates all other passwords.
 
-**To reset a recovery password using manage-bde**
+**To reset a recovery password using manage-bde:**
 
 1.  Remove the previous recovery password.
 
     ```powershell
     Manage-bde –protectors –delete C: –type RecoveryPassword
     ```
-
 2.  Add the new recovery password.
 
     ```powershell
     Manage-bde –protectors –add C: -RecoveryPassword
     ```
-
 3.  Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
 
     ```powershell
     Manage-bde –protectors –get C: -Type RecoveryPassword
     ```
-
 4.  Backup the new recovery password to AD DS.
 
     ```powershell
@@ -455,10 +475,9 @@ You can reset the recovery password in two ways:
     > [!WARNING]
     > You must include the braces in the ID string.
      
-**To run the sample recovery password script**
+**To run the sample recovery password script:**
 
 1.  Save the following sample script in a VBScript file. For example: ResetPassword.vbs.
-**Question: The sample script seems missing**.
 2.  At the command prompt, type a command similar to the following:
 
     **cscript ResetPassword.vbs**
@@ -469,7 +488,7 @@ You can reset the recovery password in two ways:
 > [!NOTE]
 > To manage a remote computer, you must specify the remote computer name rather than the local computer name.
 
-You can use the following sample script to create a VBScript file to reset the recovery passwords.
+You can use the following sample script to create a VBScript file to reset the recovery passwords:
 
 ```vb
 ' Target drive letter
@@ -542,24 +561,25 @@ WScript.Echo "A new recovery password has been added. Old passwords have been re
 'WScript.Echo "Type ""manage-bde -protectors -get " & strDriveLetter & " -type recoverypassword"" to view existing passwords."
 ```
 
+
 ## <a href="" id="bkmk-appendixc"></a>Retrieving the BitLocker key package
 
 You can use two methods to retrieve the key package, as described in [Using Additional Recovery Information](#bkmk-usingaddrecovery):
 
--   **Export a previously saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
--   **Export a new key package from an unlocked, BitLocker-protected volume.** You must have local administrator access to the working volume, before any damage has occurred.
+- **Export a previously-saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
+- **Export a new key package from an unlocked, BitLocker-protected volume.** You must have local administrator access to the working volume, before any damage has occurred.
+
 
 The following sample script exports all previously saved key packages from AD DS.
-**Question: Sample script seems missing**
 
-**To run the sample key package retrieval script**
+**To run the sample key package retrieval script:**
 
 1.  Save the following sample script in a VBScript file. For example: GetBitLockerKeyPackageADDS.vbs.
 2.  At the command prompt, type a command similar to the following:
 
     **cscript GetBitLockerKeyPackageADDS.vbs -?**
 
-You can use the following sample script to create a VBScript file to retrieve the BitLocker key package from AD DS.
+You can use the following sample script to create a VBScript file to retrieve the BitLocker key package from AD DS:
 
 ```vb
 ' --------------------------------------------------------------------------------
@@ -701,7 +721,7 @@ WScript.Quit
 
 The following sample script exports a new key package from an unlocked, encrypted volume.
 
-**To run the sample key package retrieval script**
+**To run the sample key package retrieval script:**
 
 1. Save the following sample script in a VBScript file. For example: GetBitLockerKeyPackage.vbs
 2. Open an administrator command prompt, type a command similar to the following:
@@ -886,6 +906,7 @@ Function BinaryToString(Binary)
 End Function
 ```
 
+
 ## See also
 
--   [BitLocker overview](bitlocker-overview.md)
+- [BitLocker overview](bitlocker-overview.md)
