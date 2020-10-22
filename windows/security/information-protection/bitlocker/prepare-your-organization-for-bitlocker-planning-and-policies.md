@@ -80,7 +80,6 @@ Determine whether you will support computers that do not have a TPM 1.2 or highe
 **What areas of your organization need a baseline level of data protection?**
 
 The TPM-only authentication method provides the most transparent user experience for organizations that need a baseline level of data protection to meet security policies. It has the lowest total cost of ownership. TPM-only might also be more appropriate for computers that are unattended or that must reboot unattended.
-**Question: Does reboot unattended imply reboot automatically?**
 
 However, TPM-only authentication method offers the lowest level of data protection. This authentication method protects against attacks that modify early boot components, but the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker’s multifactor authentication methods significantly increase the overall level of data protection.
 
@@ -141,7 +140,7 @@ To check the BitLocker status of a particular volume, administrators can look at
 
 When using the Control Panel options, administrators can choose to **Turn on BitLocker** and follow the steps in the wizard to add a protector, such as a PIN for an operating system volume (or a password if no TPM exists), or a password or smart card protector to a data volume. Then, the drive security window is presented prior to changing the volume status.
 
-Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation Environment (WinPE). This is done with a randomly generated clear key protector being applied to the formatted volume and made to encrypt the volume prior to running the Windows setup process (**Question: Is the change made to this sentence complying the intended meaning?**. If the encryption uses the **Used Disk Space Only** option, this step takes only a few seconds, and therefore, incorporates well into regular deployment processes.
+Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation Environment (WinPE). This is done with a randomly generated clear key protector being applied to the formatted volume and made to encrypt the volume prior to running the Windows setup process. If the encryption uses the **Used Disk Space Only** option, this step takes only a few seconds, and therefore, incorporates well into regular deployment processes.
 
 ## Used Disk Space Only encryption
 
@@ -184,7 +183,7 @@ But on computers running these supported systems with BitLocker enabled:
 
 - FIPS-compliant recovery password protectors can be created when Windows is in FIPS mode. These protectors use the FIPS-140 NIST SP800-132 algorithm.
 - Recovery passwords created in FIPS mode on Windows 8.1 can be distinguished from recovery passwords created on other systems.
-- Recovery unlock using the FIPS-compliant algorithm-based recovery password protector works in all cases that currently work for recovery passwords (**Question: Is this edited sentence conveying the intended meaning?**.
+- Recovery unlock using the FIPS-compliant algorithm-based recovery password protector works in all cases that currently work for recovery passwords.
 - When FIPS-compliant recovery passwords unlock volumes, the volume is allowed read/write access even while in FIPS mode.
 - FIPS-compliant recovery password protectors can be exported and stored in AD a while in FIPS mode.
 
