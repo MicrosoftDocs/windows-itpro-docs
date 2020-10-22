@@ -17,7 +17,7 @@ ms.custom: asr
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)]https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Review system requirements
  
