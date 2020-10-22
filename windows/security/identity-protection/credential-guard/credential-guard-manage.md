@@ -118,12 +118,15 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 2.  Enable virtualization-based security:
 
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\DeviceGuard.
+    
     -   Add a new DWORD value named **EnableVirtualizationBasedSecurity**. Set the value of this registry setting to 1 to enable virtualization-based security and set it to 0 to disable it.
+    
     -   Add a new DWORD value named **RequirePlatformSecurityFeatures**. Set the value of this registry setting to 1 to use **Secure Boot** only or set it to 3 to use **Secure Boot and DMA protection**.
 
 3.  Enable Windows Defender Credential Guard:
 
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA.
+    
     -   Add a new DWORD value named **LsaCfgFlags**. Set the value of this registry setting to 1 to enable Windows Defender Credential Guard with UEFI lock, set it to 2 to enable Windows Defender Credential Guard without lock, and set it to 0 to disable it.
 
 4.  Close Registry Editor.
@@ -144,6 +147,7 @@ DG_Readiness_Tool.ps1 -Enable -AutoReboot
 
 > [!IMPORTANT]
 > When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+>
 > This is a known issue.
 
 ### Review Windows Defender Credential Guard performance
@@ -170,6 +174,7 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
 > [!IMPORTANT]
 > When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+>
 > This is a known issue.
 
 > [!NOTE]
