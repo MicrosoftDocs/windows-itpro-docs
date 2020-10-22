@@ -31,7 +31,6 @@ This topic explains how to deploy BitLocker on Windows Server 2012 and later ver
 1.  Open server manager by selecting the server manager icon or running servermanager.exe.
 2.  Select **Manage** from the **Server Manager Navigation** bar and select **Add Roles and Features** to start the **Add Roles and Features Wizard.**
 3.  With the **Add Roles and Features** wizard open, select **Next** at the **Before you begin** pane (if shown).
-**Question: Which is the icon to click if the "Before you begin" pane is not shown?**
 4.  Select **Role-based or feature-based installation** on the **Installation type** pane of the **Add Roles and Features** wizard and select **Next** to continue.
 5.  Select the **Select a server from the server pool** option in the **Server Selection** pane and confirm the server on which the BitLocker feature is to be installed.
 6.  Select **Next** on the **Server Roles** pane of the **Add Roles and Features** wizard to proceed to the **Features** pane.
@@ -88,7 +87,6 @@ Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -
 ### Using the dism module to install BitLocker
 
 The `dism` Windows PowerShell module uses the `Enable-WindowsOptionalFeature` cmdlet to install features. The BitLocker feature name for BitLocker is `BitLocker`. The `dism` module does not support wildcards when searching for feature names. To list feature names for the `dism` module, use the `Get-WindowsOptionalFeatures` cmdlet. The following command will list all of the optional features in an online (running) operating system.
-**Question: The phrase "The Bitlocker feature name for BitLocker is 'BitLocker'" needs clarification. 
 
 ```powershell
 Get-WindowsOptionalFeature -Online | ft
