@@ -91,9 +91,9 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     Save the output file ```real_time_protection_logs``` from your Linux system to the created folder.
 
-    You can then use this sample Powershell script to parse the```real_time_protection_logs```. Save this script as ```MDATP_Linux_High_CPU_parser.ps1``` in ```C:\temp\High_CPU_util_parser_for_Linux```. 
+    You can then use this sample PowerShell script to parse the```real_time_protection_logs```. Save this script as ```MDATP_Linux_High_CPU_parser.ps1``` in ```C:\temp\High_CPU_util_parser_for_Linux```. 
 
-    Run the Powershell script as admin. The script launches a Microsoft Excel file. The Excel file shows the list of processes with the most activity arranged in descending order. From here you can analyze which processes to exclude. 
+    Run the PowerShell script as admin. The script launches a Microsoft Excel file. The Excel file shows the list of processes with the most activity arranged in descending order. From here you can analyze which processes to exclude. 
     
     > [!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
