@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP for iOS - Privacy information
+# Privacy information - Microsoft Defender ATP for iOS
 
 >[!NOTE] 
 
