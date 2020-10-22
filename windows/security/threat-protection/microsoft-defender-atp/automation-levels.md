@@ -25,7 +25,12 @@ ms.custom: AIR
 
 # Automation levels in automated investigation and remediation capabilities
 
-Automation levels determine whether remediation actions are taken automatically or only upon approval following an automated investigation. Microsoft Defender for Endpoint offers several levels of automation. This article describes the various levels of automation and includes recommendations to consider.
+Microsoft Defender for Endpoint offers several levels of automation for automated investigation and remediation (AIR). Automation levels determine whether remediation actions are taken automatically or only upon approval following an automated investigation.  
+- Full automation (this is recommended option) means remediation actions are taken automatically.
+- Semi-automation means some remediation actions are taken automatically, but other remediation actions await approval before being taken.
+-  
+
+This article describes the various levels of automation and includes recommendations to consider.
 
 > [!TIP]
 > For best results, we recommend using full automation when you set your level of automation. Data collected and analyzed over the past year shows that customers who are using full automation had 40% more high-confidence malware samples removed than customers who are using lower levels of automation. Full automation can help free up your security operations resources to focus more on your strategic initiatives.
