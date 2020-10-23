@@ -42,6 +42,8 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 [![Image of the PDF showing onboarding devices to Microsoft Defender ATP using Microsoft Intune](images/onboard-intune.png) ](images/onboard-intune-big.png#lightbox)
 
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
+
 Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
