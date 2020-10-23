@@ -1,6 +1,6 @@
 ---
 title: Onboard to the Microsoft Defender ATP service
-description: 
+description: Learn how to onboard endpoints to Microsoft Defender ATP service
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
