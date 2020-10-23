@@ -13,7 +13,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: article
 ---
 
@@ -28,7 +30,7 @@ ms.topic: article
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Microsoft Defender ATP service.

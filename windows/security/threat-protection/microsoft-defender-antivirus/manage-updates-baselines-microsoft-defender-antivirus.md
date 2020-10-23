@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/28/2020
+ms.date: 10/21/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -33,8 +33,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > This also applies to devices where Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
-
-> [!NOTE]
+> 
 > You can use the below URL to find out what are the current versions:
 > [https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 
@@ -47,48 +46,55 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 > Microsoft Defender Antivirus: KB2267602  
 > System Center Endpoint Protection: KB2461484
 
-The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the security intelligence updates occur on a scheduled cadence (configurable via policy). See the [Utilize Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
+Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
-Engine updates are included with the security intelligence updates and are released on a monthly cadence.
+Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
 
-Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "platform updates"), and will receive major feature updates alongside Windows 10 releases.
+Microsoft Defender Antivirus requires [monthly updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as *platform updates*), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through one of the following methods: 
+
+- [Windows Server Update Service (WSUS)](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction)
+- The usual method you use to deploy Microsoft and Windows updates to endpoints in your network.
+
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> We release these monthly updates in phases. This results in multiple packages showing up in your WSUS server.
+> We release these monthly updates in phases. This results in multiple packages visible in your WSUS server.
 
 ## Monthly platform and engine versions
 
-For information how to update or how to install the platform update, please see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 All our updates contain:
-* performance improvements
-* serviceability improvements
-* integration improvements (Cloud, MTP)  
+- performance improvements
+- serviceability improvements
+- integration improvements (Cloud, Microsoft 365 Defender)  
 <br/>
+
+
 <details>
-<summary> September-2020 (Platform: 4.18.2009.X | Engine: 1.1.17500.4)</summary>
+<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
 &ensp;Released: **October 01, 2020**  
-&ensp;Platform: **4.18.2009.X**  
+&ensp;Platform: **4.18.2009.7**  
 &ensp;Engine: **1.1.17500.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-*Admin permissions are required to restore files in quarantine
-*XML formatted events are now supported
-*CSP support for ignoring exclusion merge
-*New management interfaces for:
-+UDP Inspection
-+Network Protection on Server 2019
-+IP Address exclusions for Network Protection
-*Improved visibility into TPM measurements
-*Improved Office VBA module scanning
+- Admin permissions are required to restore files in quarantine
+- XML formatted events are now supported
+- CSP support for ignoring exclusion merge
+- New management interfaces for:
+   - UDP Inspection
+   - Network Protection on Server 2019
+   - IP Address exclusions for Network Protection
+- Improved visibility into TPM measurements
+- Improved Office VBA module scanning
 
 ### Known Issues
 No known issues  
@@ -104,11 +110,14 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-* Add more telemetry events
-* Improved scan event telemetry
-* Improved behavior monitoring for memory scans
-* Improved macro streams scanning
-* Added "AMRunningMode" to Get-MpComputerStatus PowerShell CmdLet
+
+- Add more telemetry events
+- Improved scan event telemetry
+- Improved behavior monitoring for memory scans
+- Improved macro streams scanning
+- Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
+- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
+
 
 ### Known Issues
 No known issues  
@@ -188,7 +197,7 @@ No known issues
     
 ### What's new
 * WDfilter improvements
-* Add more actionable event data to ASR detection events
+* Add more actionable event data to attack surface reduction detection events
 * Fixed version information in diagnostic data and WMI
 * Fixed incorrect platform version in UI after platform update
 * Dynamic URL intel for Fileless threat protection
@@ -213,7 +222,7 @@ No known issues
 
 * CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
 * Improve diagnostic capability
-* reduce Security intelligence timeout (5min)
+* reduce Security intelligence timeout (5 min)
 * Extend AMSI engine internal log capability
 * Improve notification for process blocking
    
@@ -293,8 +302,7 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 </details>
 
 ## Microsoft Defender Antivirus platform support
-As stated above, platform and engine updates are provided on a monthly cadence.
-Customers must stay current with the latest platform update to be fully supported. Our support structure is now dynamic, evolving into two phases depending on the availability of the latest platform version:
+Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
 
 * **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
@@ -311,6 +319,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |-|-|-|-|
+|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade Support (Only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
 |1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
@@ -322,12 +331,12 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 
-## In this section
+## See also
 
 Article | Description 
 ---|---
 [Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources.
 [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded.
-[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next log on.
+[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next logon.
 [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.
 [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.

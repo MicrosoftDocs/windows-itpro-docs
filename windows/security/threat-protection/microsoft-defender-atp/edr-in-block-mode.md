@@ -16,6 +16,9 @@ ms.custom:
 - next-gen
 - edr
 ms.date: 08/21/2020
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ---
 
 # Endpoint detection and response (EDR) in block mode
@@ -25,7 +28,7 @@ ms.date: 08/21/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## What is EDR in block mode?
 
