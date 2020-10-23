@@ -21,7 +21,7 @@ manager: dansimp
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Set attack surface reduction rules for devices running any of the following editions and versions of Windows:
 

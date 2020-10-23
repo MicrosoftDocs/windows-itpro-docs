@@ -22,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
