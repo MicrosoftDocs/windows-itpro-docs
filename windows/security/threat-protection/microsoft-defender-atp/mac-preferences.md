@@ -638,6 +638,8 @@ The following templates contain entries for all settings described in this docum
     <dict>
         <key>hideStatusMenuIcon</key>
         <false/>
+        <key>userInitiatedFeedback</key>
+		<string>enabled</string>
     </dict>
 </dict>
 </plist>
@@ -778,6 +780,8 @@ The following templates contain entries for all settings described in this docum
                 <dict>
                     <key>hideStatusMenuIcon</key>
                     <false/>
+                    <key>userInitiatedFeedback</key>
+		            <string>enabled</string>
                 </dict>
             </dict>
         </array>
