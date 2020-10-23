@@ -12,7 +12,7 @@ ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/9/2020
+ms.date: 10/22/2020
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 2004
 
@@ -60,9 +60,8 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoints are related to Cortana and Live Tiles. If you turn off traffic for this endpoint, you will block updates to Cortana greetings, tips, and Live Tiles.|TLSv1.2|www.bing.com*|
 |Device metadata|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 ||The following endpoint is used to retrieve device metadata. If you  turn off traffic for this endpoint, metadata will not be updated for the device.|HTTPS|dmd.metaservices.microsoft.com|
-|Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
+|Diagnostic Data|The following endpoints are used by the Windows Diagnostic Data, Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft improve our products and services, will not be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLSv1.2|v10.events.data.microsoft.com|
-|||TLSv1.2|v20.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.|HTTPS|*.telecommand.telemetry.microsoft.com|
 |||TLS v1.2|watson.*.microsoft.com|
 |Font Streaming|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|

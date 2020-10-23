@@ -14,6 +14,7 @@
 #### [Authorize reputable apps with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
+#### [Microsoft recommended driver block rules](microsoft-recommended-driver-block-rules.md)
 ### Create your initial WDAC policy
 #### [Example WDAC base policies](example-wdac-base-policies.md)
 #### [Policy creation for common WDAC usage scenarios](types-of-devices.md)
