@@ -135,7 +135,7 @@ To validate that the feature is working, follow the guidance in [Validate connec
 > [!CAUTION]
 > Turning off block at first sight will lower the protection state of your device(s) and your network.
 
-You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might do this if you are experiencing latency issues or you want to test the feature's impact on your network. We do not recommend disabling block at first sight protection.
+You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might do temporarily turn block at first sight off if you are experiencing latency issues or you want to test the feature's impact on your network. However, we do not recommend disabling block at first sight protection permanently.
 
 ### Turn off block at first sight with Microsoft Endpoint Manager
 
