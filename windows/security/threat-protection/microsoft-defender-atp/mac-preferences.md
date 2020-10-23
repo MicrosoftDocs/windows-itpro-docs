@@ -338,6 +338,18 @@ Specify whether to show or hide the status menu icon in the top-right corner of 
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 
+#### Show / hide option to send feedback
+
+Specify whether users can submit feedback to Microsoft by going to `Help` > `Send Feedback`.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | userInitiatedFeedback |
+| **Data type** | String |
+| **Possible values** | enabled (default) <br/> disabled |
+| **Comments** | Available in Microsoft Defender ATP version 101.19.61 or higher. |
+
 ### Endpoint detection and response preferences
 
 Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
@@ -626,6 +638,8 @@ The following templates contain entries for all settings described in this docum
     <dict>
         <key>hideStatusMenuIcon</key>
         <false/>
+        <key>userInitiatedFeedback</key>
+		<string>enabled</string>
     </dict>
 </dict>
 </plist>
@@ -766,6 +780,8 @@ The following templates contain entries for all settings described in this docum
                 <dict>
                     <key>hideStatusMenuIcon</key>
                     <false/>
+                    <key>userInitiatedFeedback</key>
+		            <string>enabled</string>
                 </dict>
             </dict>
         </array>
