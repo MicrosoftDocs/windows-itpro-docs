@@ -44,7 +44,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Onboard" title="Onboard to the Microsoft Defender ATP service" />
+        <img src="images/onboard.png" alt="Onboard diagram" title="Onboard to the Microsoft Defender ATP service" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 
