@@ -699,9 +699,9 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. This policy only applies to the classic version of the start menu and does not affect the new style start menu.
 
-Adds the "Log Off <username>" item to the Start menu and prevents users from removing it.
+Adds the "Log Off `<username>`" item to the Start menu and prevents users from removing it.
 
-If you enable this setting, the Log Off <username> item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off <username> item from the Start Menu.
+If you enable this setting, the Log Off `<username>` item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off `<username>` item from the Start Menu.
 
 If you disable this setting or do not configure it, users can use the Display Logoff item to add and remove the Log Off item.
 
@@ -2072,7 +2072,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
 
-In Windows XP and Windows Vista, the Internet and email checkboxes are removed from the 'Customize Start Menu' dialog. 
+In Windows XP and Windows Vista, the Internet and email checkboxes are removed from the 'Customize Start Menu' dialog.
 
 If you disable this setting or do not configure it, the "Pinned Programs" list remains on the Start menu. Users can pin and unpin programs in the Start Menu.
 
@@ -2376,11 +2376,11 @@ If you enable this setting, the following changes occur:
 
 3. The user will be blocked from entering the following into the Internet Explorer Address Bar:
 
-- A UNC path: `\\<server>\<share>`
+    - A UNC path: `\\<server>\<share>`
 
-- Accessing local drives:  e.g., C:
+    - Accessing local drives:  e.g., C:
 
-- Accessing local folders: e.g., `\<temp>`
+    - Accessing local folders: e.g., `\<temp>`
 
 Also, users with extended keyboards will no longer be able to display the Run dialog box by pressing the Application key (the key with the Windows logo) + R.
 
@@ -3012,7 +3012,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. If you enable this policy setting the Start menu search box will not search for files.
 
-If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel.  If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel. If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
 
 <!--/Description-->
 > [!TIP]
@@ -4340,7 +4340,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting al
 
 If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
 
-Enabling this policy setting blocks user access to the Windows Update Web site at http://windowsupdate.microsoft.com. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
+Enabling this policy setting blocks user access to the Windows Update Web site at https://windowsupdate.microsoft.com. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
 
 Windows Update, the online extension of Windows, offers software updates to keep a user’s system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
 
@@ -4899,9 +4899,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to removes the "Log Off <username>" item from the Start menu and prevents users from restoring it.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to removes the "Log Off `<username>`" item from the Start menu and prevents users from restoring it.
 
-If you enable this policy setting, the Log Off <username> item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off <username> item to the Start Menu.
+If you enable this policy setting, the Log Off `<username>` item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off `<username>` item to the Start Menu.
 
 If you disable or do not configure this policy setting, users can use the Display Logoff item to add and remove the Log Off item.
 
@@ -5008,4 +5008,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
