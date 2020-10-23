@@ -58,8 +58,6 @@ Here are several telltale signs of a phishing scam:
 
 If in doubt, contact the business by known channels to verify if any suspicious emails are in fact legitimate.
 
-For more information, download and read this Microsoft [e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.
-
 ## Software solutions for organizations
 
 * [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) and [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
@@ -67,8 +65,6 @@ For more information, download and read this Microsoft [e-book on preventing soc
 * [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
 
 * Use [Office 365 Advanced Threat Protection (ATP)](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) to help protect your email, files, and online storage against malware. It offers holistic protection in Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online, and OneDrive for Business. By protecting against unsafe attachments and expanding protection against malicious links, it complements the security features of Exchange Online Protection to provide better zero-day protection.
-
-For more tips and software solutions, see [prevent malware infection](prevent-malware-infection.md).
 
 ## What to do if you've been a victim of a phishing scam
 
@@ -102,3 +98,4 @@ If you feel you've been a victim of a phishing attack:
 
 - [Protect yourself from phishing](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
 - [Phishing trends](phishing-trends.md)
+- [Microsoft e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.
