@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/08/2020
+ms.date: 10/21/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -319,6 +319,7 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |-|-|-|-|
+|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade Support (Only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
 |1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
