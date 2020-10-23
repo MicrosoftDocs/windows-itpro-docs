@@ -1,5 +1,5 @@
 ---
-title: Phishing
+title: How to protect against phishing attacks
 ms.reviewer: 
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
@@ -16,17 +16,15 @@ ms.topic: article
 search.appverid: met150
 ---
 
-# Phishing and how to protect against it
+# How to protect against phishing attacks
 
 Phishing attacks attempt to steal sensitive information through emails, websites, text messages, or other forms of electronic communication. They try to look like official communication from legitimate companies or individuals.
 
 Cybercriminals often attempt to steal usernames, passwords, credit card details, bank account information, or other credentials. They use stolen information for malicious purposes, such as hacking, identity theft, or stealing money directly from bank accounts and credit cards. The information can also be sold in cybercriminal underground markets.
 
-## How to protect against phishing attacks
-
 Social engineering attacks are designed to take advantage of a user's possible lapse in decision-making. Be aware and never provide sensitive or personal information through email or unknown websites, or over the phone. Remember, phishing emails are designed to appear legitimate.
 
-### Awareness
+## Learn the signs of a phishing scam
 
 The best protection is awareness and education. Don’t open attachments or links in unsolicited emails, even if the emails came from a recognized source. If the email is unexpected, be wary about opening the attachment and verify the URL.
 
@@ -62,7 +60,7 @@ If in doubt, contact the business by known channels to verify if any suspicious 
 
 For more information, download and read this Microsoft [e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.
 
-### Software solutions for organizations
+## Software solutions for organizations
 
 * [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) and [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
 
@@ -76,9 +74,9 @@ For more tips and software solutions, see [prevent malware infection](prevent-ma
 
 If you feel you've been a victim of a phishing attack:
 
-1. Contact your IT admin if you are on a work computer. 
-2. Immediately change all passwords associated with the accounts.
-3. Report any fraudulent activity to your bank and credit card company.
+1. Contact your IT admin if you are on a work computer
+2. Immediately change all passwords associated with the accounts
+3. Report any fraudulent activity to your bank and credit card company
 
 ### Reporting spam
 
@@ -94,13 +92,13 @@ If you feel you've been a victim of a phishing attack:
 
 - **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
 
-If you’re on a suspicious website:
+### If you’re on a suspicious website
 
 - **Microsoft Edge**: While you’re on a suspicious site, select the **More (…) icon** > **Help and feedback** > **Report Unsafe site**. Follow the instructions on the webpage that displays to report the website.
 
 - **Internet Explorer**: While you’re on a suspicious site, select the gear icon, point to **Safety**, and then select **Report Unsafe Website**. Follow the instructions on the webpage that displays to report the website.
 
->[!NOTE]
->For more information, see [Protect yourself from phishing](https://support.microsoft.com/en-us/help/4033787/windows-protect-yourself-from-phishing).
+## More information about phishing attacks
 
-
+- [Protect yourself from phishing](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
+- [Phishing trends](phishing-trends.md)
