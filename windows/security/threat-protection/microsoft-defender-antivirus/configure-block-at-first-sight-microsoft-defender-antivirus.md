@@ -73,6 +73,9 @@ In many cases, this process can reduce the response time for new malware from ho
 
 ## Turn on block at first sight with Microsoft Endpoint Manager
 
+> [!TIP]
+> If you're looking for Microsoft Endpoint Configuration Manager, it's now part of Microsoft Endpoint Manager.
+
 1. In Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security** > **Antivirus**.
 
 2. Select an existing policy, or create a new policy using the **Microsoft Defender Antivirus** profile type.
