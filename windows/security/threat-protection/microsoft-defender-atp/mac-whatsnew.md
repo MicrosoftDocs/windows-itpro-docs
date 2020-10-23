@@ -45,7 +45,7 @@ ms.topic: conceptual
 
 ## 101.09.61
 
-- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show-hide-option-to-send-feedback)
+- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback)
 - Status menu icon now shows a healthy state when the product settings are managed. Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator
 - Performance improvements & bug fixes
 
