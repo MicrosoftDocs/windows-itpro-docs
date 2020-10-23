@@ -86,6 +86,8 @@ In many cases, this process can reduce the response time for new malware from ho
    - **Cloud-delivered protection level**: High
    - **Defender Cloud Extended Timeout in Seconds**: 50
 
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager":::
+
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 
 ## Turn on block at first sight with Group Policy
