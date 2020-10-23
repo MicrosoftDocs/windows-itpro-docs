@@ -24,7 +24,7 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
