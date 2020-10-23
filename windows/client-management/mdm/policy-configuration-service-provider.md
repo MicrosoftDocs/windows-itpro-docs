@@ -1173,7 +1173,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-###  ADMX_ShellCommandPromptRegEditTools policies
+##  ADMX_ShellCommandPromptRegEditTools policies
 
 <dl>
   <dd>
@@ -1243,7 +1243,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## ADMX_Snmp policies  
+### ADMX_Snmp policies  
 
 <dl>
   <dd>
@@ -1257,7 +1257,213 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## ADMX_tcpip policies  
+### ADMX_StartMenu policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-addsearchinternetlinkinstartmenu" id="admx-startmenu-addsearchinternetlinkinstartmenu">ADMX_StartMenu/AddSearchInternetLinkInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-clearrecentdocsonexit" id="admx-startmenu-clearrecentdocsonexit">ADMX_StartMenu/ClearRecentDocsOnExit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-clearrecentprogfornewuserinstartmenu" id="admx-startmenu-clearrecentprogfornewuserinstartmenu">ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-cleartilesonexit" id="admx-startmenu-cleartilesonexit">ADMX_StartMenu/ClearTilesOnExit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-desktopappsfirstinappsview" id="admx-startmenu-desktopappsfirstinappsview">ADMX_StartMenu/DesktopAppsFirstInAppsView</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-disableglobalsearchonappsview" id="admx-startmenu-disableglobalsearchonappsview">ADMX_StartMenu/DisableGlobalSearchOnAppsView</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-forcestartmenulogoff" id="admx-startmenu-forcestartmenulogoff">ADMX_StartMenu/ForceStartMenuLogOff</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-gotodesktoponsignin" id="admx-startmenu-gotodesktoponsignin">ADMX_StartMenu/GoToDesktopOnSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-greymsiads" id="admx-startmenu-greymsiads">ADMX_StartMenu/GreyMSIAds</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-hidepoweroptions" id="admx-startmenu-hidepoweroptions">ADMX_StartMenu/HidePowerOptions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-intellimenus" id="admx-startmenu-intellimenus">ADMX_StartMenu/Intellimenus</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-locktaskbar" id="admx-startmenu-locktaskbar">ADMX_StartMenu/LockTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-memcheckboxinrundlg" id="admx-startmenu-memcheckboxinrundlg">ADMX_StartMenu/MemCheckBoxInRunDlg</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noautotraynotify" id="admx-startmenu-noautotraynotify">ADMX_StartMenu/NoAutoTrayNotify</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noballoontip" id="admx-startmenu-noballoontip">ADMX_StartMenu/NoBalloonTip</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nochangestartmenu" id="admx-startmenu-nochangestartmenu">ADMX_StartMenu/NoChangeStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noclose" id="admx-startmenu-noclose">ADMX_StartMenu/NoClose</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nocommongroups" id="admx-startmenu-nocommongroups">ADMX_StartMenu/NoCommonGroups</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nofavoritesmenu" id="admx-startmenu-nofavoritesmenu">ADMX_StartMenu/NoFavoritesMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nofind" id="admx-startmenu-nofind">ADMX_StartMenu/NoFind</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nogamesfolderonstartmenu" id="admx-startmenu-nogamesfolderonstartmenu">ADMX_StartMenu/NoGamesFolderOnStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nohelp" id="admx-startmenu-nohelp">ADMX_StartMenu/NoHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noinstrumentation" id="admx-startmenu-noinstrumentation">ADMX_StartMenu/NoInstrumentation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nomoreprogramslist" id="admx-startmenu-nomoreprogramslist">ADMX_StartMenu/NoMoreProgramsList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nonetanddialupconnect" id="admx-startmenu-nonetanddialupconnect">ADMX_StartMenu/NoNetAndDialupConnect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nopinnedprograms" id="admx-startmenu-nopinnedprograms">ADMX_StartMenu/NoPinnedPrograms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-norecentdocsmenu" id="admx-startmenu-norecentdocsmenu">ADMX_StartMenu/NoRecentDocsMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noresolvesearch" id="admx-startmenu-noresolvesearch">ADMX_StartMenu/NoResolveSearch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-noresolvetrack" id="admx-startmenu-noresolvetrack">ADMX_StartMenu/NoResolveTrack</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-norun" id="admx-startmenu-norun">ADMX_StartMenu/NoRun</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosmconfigureprograms" id="admx-startmenu-nosmconfigureprograms">ADMX_StartMenu/NoSMConfigurePrograms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosmmydocuments" id="admx-startmenu-nosmmydocuments">ADMX_StartMenu/NoSMMyDocuments</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosmmymusic" id="admx-startmenu-nosmmymusic">ADMX_StartMenu/NoSMMyMusic</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosmmynetworkplaces" id="admx-startmenu-nosmmynetworkplaces">ADMX_StartMenu/NoSMMyNetworkPlaces</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosmmypictures" id="admx-startmenu-nosmmypictures">ADMX_StartMenu/NoSMMyPictures</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearchcomminstartmenu" id="admx-startmenu-nosearchcomminstartmenu">ADMX_StartMenu/NoSearchCommInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearchcomputerlinkinstartmenu" id="admx-startmenu-nosearchcomputerlinkinstartmenu">ADMX_StartMenu/NoSearchComputerLinkInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearcheverywherelinkinstartmenu" id="admx-startmenu-nosearcheverywherelinkinstartmenu">ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearchfilesinstartmenu" id="admx-startmenu-nosearchfilesinstartmenu">ADMX_StartMenu/NoSearchFilesInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearchinternetinstartmenu" id="admx-startmenu-nosearchinternetinstartmenu">ADMX_StartMenu/NoSearchInternetInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosearchprogramsinstartmenu" id="admx-startmenu-nosearchprogramsinstartmenu">ADMX_StartMenu/NoSearchProgramsInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosetfolders" id="admx-startmenu-nosetfolders">ADMX_StartMenu/NoSetFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nosettaskbar" id="admx-startmenu-nosettaskbar">ADMX_StartMenu/NoSetTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartmenudownload" id="admx-startmenu-nostartmenudownload">ADMX_StartMenu/NoStartMenuDownload</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartmenuhomegroup" id="admx-startmenu-nostartmenuhomegroup">ADMX_StartMenu/NoStartMenuHomegroup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartmenurecordedtv" id="admx-startmenu-nostartmenurecordedtv">ADMX_StartMenu/NoStartMenuRecordedTV</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartmenusubfolders" id="admx-startmenu-nostartmenusubfolders">ADMX_StartMenu/NoStartMenuSubFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartmenuvideos" id="admx-startmenu-nostartmenuvideos">ADMX_StartMenu/NoStartMenuVideos</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nostartpage" id="admx-startmenu-nostartpage">ADMX_StartMenu/NoStartPage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-notaskbarclock" id="admx-startmenu-notaskbarclock">ADMX_StartMenu/NoTaskBarClock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-notaskgrouping" id="admx-startmenu-notaskgrouping">ADMX_StartMenu/NoTaskGrouping</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-notoolbarsontaskbar" id="admx-startmenu-notoolbarsontaskbar">ADMX_StartMenu/NoToolbarsOnTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-notraycontextmenu" id="admx-startmenu-notraycontextmenu">ADMX_StartMenu/NoTrayContextMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-notrayitemsdisplay" id="admx-startmenu-notrayitemsdisplay">ADMX_StartMenu/NoTrayItemsDisplay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nouninstallfromstart" id="admx-startmenu-nouninstallfromstart">ADMX_StartMenu/NoUninstallFromStart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nouserfolderonstartmenu" id="admx-startmenu-nouserfolderonstartmenu">ADMX_StartMenu/NoUserFolderOnStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nousernameonstartmenu" id="admx-startmenu-nousernameonstartmenu">ADMX_StartMenu/NoUserNameOnStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-nowindowsupdate" id="admx-startmenu-nowindowsupdate">ADMX_StartMenu/NoWindowsUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-powerbuttonaction" id="admx-startmenu-powerbuttonaction">ADMX_StartMenu/PowerButtonAction</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-quicklaunchenabled" id="admx-startmenu-quicklaunchenabled">ADMX_StartMenu/QuickLaunchEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-removeundockpcbutton" id="admx-startmenu-removeundockpcbutton">ADMX_StartMenu/RemoveUnDockPCButton</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-showappsviewonstart" id="admx-startmenu-showappsviewonstart">ADMX_StartMenu/ShowAppsViewOnStart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-showrunasdifferentuserinstart" id="admx-startmenu-showrunasdifferentuserinstart">ADMX_StartMenu/ShowRunAsDifferentUserInStart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-showruninstartmenu" id="admx-startmenu-showruninstartmenu">ADMX_StartMenu/ShowRunInStartMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-showstartondisplaywithforegroundonwinkey" id="admx-startmenu-showstartondisplaywithforegroundonwinkey">ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-startmenulogoff" id="admx-startmenu-startmenulogoff">ADMX_StartMenu/StartMenuLogOff</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-startmenu.md#admx-startmenu-startpinappswheninstalled" id="admx-startmenu-startpinappswheninstalled">ADMX_StartMenu/StartPinAppsWhenInstalled</a>
+  </dd>
+</dl>
+
+### ADMX_tcpip policies  
 
 <dl>
   <dd>
@@ -1301,7 +1507,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## ADMX_Thumbnails policies  
+### ADMX_Thumbnails policies  
 
 <dl>
   <dd>
@@ -1783,7 +1989,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-## ADMX_WindowsConnectNow policies  
+### ADMX_WindowsConnectNow policies  
 
 <dl>
   <dd>
