@@ -135,6 +135,24 @@ You can validate that the feature is working by following the steps outlined in 
 
 You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might do this if you are experiencing latency issues or you want to test the feature's impact on your network. We do not recommend disabling block at first sight protection.
 
+### Turn off block at first sight with Microsoft Endpoint Manager
+
+1. Go to Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+
+2. Go to **Endpoint security** > **Antivirus**, and then select your Microsoft Defender Antivirus policy.
+
+3. Under **Manage**, choose **Properties**.
+
+4. Next to **Configuration settings**, choose **Edit**.
+
+5. Do one or more of the following:
+
+   - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
+   - Set **Cloud-delivered protection level** to **Not configured**.
+   - Clear the **Defender Cloud Extended Timeout In Seconds** box.
+
+6. Review and save your settings.
+
 ### Turn off block at first sight with Group Policy
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and then click **Edit**.
