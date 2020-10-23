@@ -21,7 +21,7 @@ ms.topic: troubleshooting
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 When contacting support, you may be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
 
