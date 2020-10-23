@@ -40,7 +40,7 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-[![Image of the PDF showing onboarding devices to Microsoft Defender ATP using Microsoft Intune](images/onboard-intune.png) ](images/onboard-intune.png#lightbox)
+[![Image of the PDF showing onboarding devices to Microsoft Defender ATP using Microsoft Intune](images/onboard-intune.png) ](images/onboard-intune-big.png#lightbox)
 
 Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
