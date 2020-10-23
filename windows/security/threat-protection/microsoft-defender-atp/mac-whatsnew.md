@@ -46,6 +46,10 @@ ms.topic: conceptual
 ## 101.09.50
 
 - This product version has been validated on macOS Big Sur 11 beta 9
+
+  > [!IMPORTANT]
+  > Extensive testing of MDE (Microsoft Defender for Endpoint) with new macOS system extensions revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue.
+
 - The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender ATP for Mac](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]

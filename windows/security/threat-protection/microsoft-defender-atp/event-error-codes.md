@@ -28,16 +28,13 @@ ms.date: 05/21/2018
 
 - Event Viewer
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
 
 For example, if devices are not appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
-
-> [!NOTE]
-> It can take several days for devices to begin reporting to the Microsoft Defender ATP service.
 
 **Open Event Viewer and find the Microsoft Defender ATP service event log:**
 
