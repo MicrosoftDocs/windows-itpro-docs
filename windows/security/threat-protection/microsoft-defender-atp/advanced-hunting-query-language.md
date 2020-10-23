@@ -22,9 +22,9 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-reference.md). To understand these concepts better, run your first query.
 
@@ -176,7 +176,6 @@ For detailed information about the query language, see [Kusto query language doc
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Work with query results](advanced-hunting-query-results.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
