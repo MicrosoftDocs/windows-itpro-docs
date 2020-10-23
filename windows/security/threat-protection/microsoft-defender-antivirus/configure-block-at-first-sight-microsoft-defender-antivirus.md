@@ -147,7 +147,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 4. Next to **Configuration settings**, choose **Edit**.
 
-5. Do one or more of the following:
+5. Change one or more of the following settings:
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
@@ -159,7 +159,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
 3. Expand the tree through **Windows components** > **Microsoft Defender Antivirus** > **MAPS**.
 
