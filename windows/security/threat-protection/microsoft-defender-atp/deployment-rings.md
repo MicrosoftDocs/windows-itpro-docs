@@ -29,6 +29,12 @@ ms.topic: article
 
 Deploying Microsoft Defender ATP can be done using a ring-based deployment approach. 
 
+The deployment rings can be applied in the following scenarios:
+- New deployments
+- Existing deployments
+
+## New deployments
+
 ![Image of deployment rings](images/deployment-rings.png)
 
 
@@ -49,14 +55,11 @@ Full deployment | Ring 3: Roll out service to the rest of environment in larger 
 
 
 ## Evaluate
-You can use the [evaluation lab](evaluation-lab.md) to gain full access to the capabilities of the suite without the complexities of environment configuration. 
+Identify a small number of test machines in your environment to onboard to the service. Ideally, these machines would be less than 50 endpoints. 
 
-You'll be able to add Windows 10 or Windows Server 2019 devices to the lab environment, install threat simulators, and run scenarios to instantly see how the platform performs.
-
-### Exit criteria?
-- Able to run simulation
-- Able to install threat simulator
-- Results from simulation is displayed in dashboard
+### Exit criteria
+- Devices show up in the device inventory list
+- Alerts appear in dashboard
 
 
 ## Pilot
@@ -66,14 +69,15 @@ The following table shows the supported endpoints and the corresponding tool you
 
 | Endpoint     | Deployment tool                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> NOTE: If you want to deploy more than 10 devices in a production environment, use the Group Policy method instead.<br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)   |
 | **macOS**    | [Local script](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [App-based](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
-### Exit criteria?
+### Exit criteria
+- Devices show up in the device inventory list
 - [Run a detection test](run-detection-test.md)
 - [Run a simulated attack on a device](attack-simulations.md)
 
@@ -90,3 +94,29 @@ Use the following material to select the appropriate Microsoft Defender ATP arch
 
 ### Exit criteria?
 - Devices show up in the device inventory list
+
+
+## Existing deployments
+
+### Windows endpoints
+For Windows and/or Windows Servers you select several machines to test ahead of time (before patch Tuesday) by using the **Security Update Validation program (SUVP)**.
+
+For more information see:
+- [What is the Security Update Validation Program](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
+- [Software Update Validation Program and Microsoft Malware Protection Center Establishment – TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+
+
+### Non-Windows endpoints
+With macOS and Linux, you could take a couple of systems and run in the “InsidersFast” channel.
+
+>[!NOTE]
+>Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the “Production” channel.
+
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in insiders-fast are the first ones to receive updates and new features, followed later by insiders-slow and lastly by prod.
+
+![Image of insider rings](images/insider-rings.png)
+
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either insiders-fast or insiders-slow.
+
+>[!WARNING]
+>Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
