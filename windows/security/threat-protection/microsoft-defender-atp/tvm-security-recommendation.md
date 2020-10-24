@@ -22,10 +22,10 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -75,11 +75,14 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
+>[!NOTE]
+>Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an ‘Inactive’ status.
+
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
 
-Useful icons also quickly call your attention to:  
+Useful icons also quickly call your attention to:
 - ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
 - ![red bug](images/tvm_bug_icon.png) associated public exploits
 - ![light bulb](images/tvm_insight_icon.png) recommendation insights
@@ -94,9 +97,9 @@ From the flyout, you can choose any of the following options:
 
 - **Open software page** - Open the software page to get more context on the software and how it's distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
-- [**Remediation options**](tvm-security-recommendation.md#request-remediation) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
+- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
-- [**Exception options**](tvm-security-recommendation.md#file-for-exception) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
+- [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 >[!NOTE]
 >When a change is made on a device, it typically takes two hours for the data to be reflected in the Microsoft Defender Security Center. However, it may sometimes take longer.
@@ -241,6 +244,11 @@ The exposed devices (after exceptions) column shows the remaining devices that a
 The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
 
 ![Showing the columns in the table.](images/tvm-after-exceptions-table.png)
+If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and Microsoft Secure Score for Devices, then that security recommendation is worth investigating.
+
+1. Select the recommendation and **Open software page**
+2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
+3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request.
 
 ## Report inaccuracy
 
@@ -256,52 +264,12 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
-## Find and remediate software or software versions which have reached end-of-support (EOS)
-
-End-of-support (otherwise known as end-of-life) for software or software versions means that they will no longer be supported or serviced, and will not receive security updates. When you use software or software versions with ended support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
-
-It's crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end-of-support and update versions that are no longer supported. It's best to create and implement a plan **before** the end of support dates.
-
-To find software or software versions that are no longer supported:
-
-1. From the threat and vulnerability management menu, navigate to **Security recommendations**.
-2. Go to the **Filters** panel and look for the tags section. Select one or more of the EOS tag options. Then **Apply**.
-
-    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tag.png)
-
-3. You'll see a list of recommendations related to software with ended support, software versions that are end of support, or versions with upcoming end of support. These tags are also visible in the [software inventory](tvm-software-inventory.md) page.
-
-    ![Screenshot tags that say EOS software, EOS versions, and Upcoming EOS versions](images/tvm-eos-tags-column.png)
-
-### List of versions and dates
-
-To view a list of versions that have reached end of support, or end or support soon, and those dates, follow the below steps:
-
-1. A message will appear in the security recommendation flyout for software with versions that have reached end of support, or will reach end of support soon.
-
-    ![Screenshot of version distribution link](images/eos-upcoming-eos.png)
-
-2. Select the **version distribution** link to go to the software drill-down page. There, you can see a filtered list of versions with tags identifying them as end of support, or upcoming end of support.
-
-    ![Screenshot of version distribution link](images/software-drilldown-eos.png)
-
-3. Select one of the versions in the table to open. For example, version 10.0.18362.1. A flyout will appear with the end of support date.
-
-    ![Screenshot of version distribution link](images/version-eos-date.png)
-
-Once you identify which software and software versions are vulnerable due to their end-of-support status, you must decide whether to update or remove them from your organization. Doing so will lower your organizations exposure to vulnerabilities and advanced persistent threats.
-
-## Related topics
+## Related articles
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Supported operating systems and platforms](tvm-supported-os.md)
-- [Threat and vulnerability management dashboard](tvm-dashboard-insights.md)
+- [Dashboard](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
-- [Remediation and exception](tvm-remediation.md)
-- [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
+- [Remediate vulnerabilities](tvm-remediation.md)
+- [Create and view exceptions for security recommendations](tvm-exception.md)
 - [Event timeline](threat-and-vuln-mgt-event-timeline.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
