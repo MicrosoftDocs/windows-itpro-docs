@@ -54,15 +54,15 @@ Pilot | Ring 2: 50-100  systems <br>
 Full deployment | Ring 3: Roll out service to the rest of environment in larger increments.
 
 
-## Evaluate
+### Evaluate
 Identify a small number of test machines in your environment to onboard to the service. Ideally, these machines would be less than 50 endpoints. 
 
-### Exit criteria
+#### Exit criteria
 - Devices show up in the device inventory list
 - Alerts appear in dashboard
 
 
-## Pilot
+### Pilot
 Microsoft Defender ATP supports a variety of endpoints that you can onboard to the service. In this ring, identify several devices to onboard and based on the exit criteria you define, decide to proceed to the next deployment ring.
 
 The following table shows the supported endpoints and the corresponding tool you can use to onboard devices to the service. 
@@ -76,13 +76,13 @@ The following table shows the supported endpoints and the corresponding tool you
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
-### Exit criteria
+#### Exit criteria
 - Devices show up in the device inventory list
 - [Run a detection test](run-detection-test.md)
 - [Run a simulated attack on a device](attack-simulations.md)
 
 
-## Full deployment
+### Full deployment
 At this stage, you can use the [Plan deployment](deployment-strategy.md) material to help you plan your deployment. 
 
 
@@ -92,7 +92,7 @@ Use the following material to select the appropriate Microsoft Defender ATP arch
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
-### Exit criteria?
+#### Exit criteria?
 - Devices show up in the device inventory list
 
 
@@ -103,14 +103,14 @@ For Windows and/or Windows Servers you select several machines to test ahead of 
 
 For more information see:
 - [What is the Security Update Validation Program](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [Software Update Validation Program and Microsoft Malware Protection Center Establishment – TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [Software Update Validation Program and Microsoft Malware Protection Center Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
 ### Non-Windows endpoints
-With macOS and Linux, you could take a couple of systems and run in the “InsidersFast” channel.
+With macOS and Linux, you could take a couple of systems and run in the "InsidersFast" channel.
 
 >[!NOTE]
->Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the “Production” channel.
+>Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the "Production" channel.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in insiders-fast are the first ones to receive updates and new features, followed later by insiders-slow and lastly by prod.
 
