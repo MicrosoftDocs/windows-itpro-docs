@@ -40,6 +40,10 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
+[![Image of the PDF showing onboarding devices to Microsoft Defender ATP using Microsoft Intune](images/onboard-intune.png) ](images/onboard-intune-big.png#lightbox)
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
+
 Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
@@ -54,6 +58,7 @@ For more information on using Microsoft Defender ATP CSP see, [WindowsAdvancedTh
 > After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
 
 
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
 
 ## Offboard and monitor devices using Mobile Device Management tools
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
