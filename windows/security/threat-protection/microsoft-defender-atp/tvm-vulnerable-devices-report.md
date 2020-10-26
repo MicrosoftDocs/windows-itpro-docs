@@ -1,7 +1,7 @@
 ---
-title: 	Hunt for exposed devices 
-description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate.
-keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls 
+title: Vulnerable devices report- threat and vulnerability management
+description: A report showing vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
+keywords: mdatp-tvm vulnerable devices, mdatp, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -22,6 +22,11 @@ ms.topic: article
 # Vulnerable devices report- threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+> [!IMPORTANT]
+> **Vulnerable devices report is currently in public preview**<br>
+> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+> For more information, see [Microsoft Defender ATP preview features](preview.md).
 
 **Applies to:**
 

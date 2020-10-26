@@ -68,6 +68,7 @@
 ##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
 ##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Vulnerable devices report](microsoft-defender-atp/tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
 
 
