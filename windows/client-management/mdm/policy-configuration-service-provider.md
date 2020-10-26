@@ -2150,6 +2150,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsStore policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsstore.md#admx-windowsstore-disableautodownloadwin8" id="admx-windowsstore-disableautodownloadwin8">ADMX_WindowsStore/DisableAutoDownloadWin8</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsstore.md#admx-windowsstore-disableosupgrade-1" id="admx-windowsstore-disableosupgrade-1">ADMX_WindowsStore/DisableOSUpgrade_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsstore.md#admx-windowsstore-disableosupgrade-2" id="admx-windowsstore-disableosupgrade-2">ADMX_WindowsStore/DisableOSUpgrade_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsstore.md#admx-windowsstore-removewindowsstore-1" id="admx-windowsstore-removewindowsstore-1">ADMX_WindowsStore/RemoveWindowsStore_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsstore.md#admx-windowsstore-removewindowsstore-2" id="admx-windowsstore-removewindowsstore-2">ADMX_WindowsStore/RemoveWindowsStore_2</a>
+  </dd>
+</dl>
+
 ### ADMX_WinInit policies  
 
 <dl>

@@ -227,6 +227,7 @@
 #### [ADMX_WindowsConnectNow](policy-csp-admx-windowsconnectnow.md)
 #### [ADMX_WindowsMediaDRM](policy-csp-admx-windowsmediadrm.md)
 #### [ADMX_WindowsMediaPlayer](policy-csp-admx-windowsmediaplayer.md)
+#### [ADMX_WindowsStore](policy-csp-admx-windowsstore.md)
 #### [ADMX_WinInit](policy-csp-admx-wininit.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
