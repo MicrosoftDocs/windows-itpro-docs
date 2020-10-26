@@ -74,11 +74,11 @@ All our updates contain performance improvements, serviceability improvements, a
 
 
 <details>
-<summary> October-2020 (Platform: - | Engine: 1.1.17500.x)</summary>
+<summary> October-2020 (Platform: 4.18.2010.x | Engine: 1.1.17500.x)</summary>
 
 &ensp;Security intelligence update version: **1.325.x.x**  
 &ensp;Released: **date**  
-&ensp;Platform: **4.xx.xxxx.x**  
+&ensp;Platform: **4.18.2010.x**  
 &ensp;Engine: **1.1.17500.x**  
 &ensp;Support phase: **Security and Critical Updates**
     
