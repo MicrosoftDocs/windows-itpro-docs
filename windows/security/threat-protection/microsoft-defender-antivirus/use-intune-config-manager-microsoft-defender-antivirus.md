@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you are using Microsoft Endpoint Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Microsoft Defender Antivirus scans.
 
