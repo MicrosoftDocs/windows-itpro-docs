@@ -74,6 +74,23 @@ All our updates contain performance improvements, serviceability improvements, a
 
 
 <details>
+<summary> October-2020 (Platform: - | Engine: 1.1.17500.x)</summary>
+
+&ensp;Security intelligence update version: **1.325.x.x**  
+&ensp;Released: **date**  
+&ensp;Platform: **4.xx.xxxx.x**  
+&ensp;Engine: **1.1.17500.x**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- item
+- item
+- item
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
