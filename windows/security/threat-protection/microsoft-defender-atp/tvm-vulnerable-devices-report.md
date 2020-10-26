@@ -36,9 +36,10 @@ ms.topic: article
 
 The report shows graphs and bar charts with vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure. 
 
-Access the report by going to **Reports > Vulnerable devices**
+Access the report in the Microsoft Defender Security Center by going to **Reports > Vulnerable devices**
 
 There are two columns:
+
 - Trends (over time). Can show the past 30 days, 3 months, 6 months, or a custom date range.
 - Today (current information)
 
@@ -80,7 +81,5 @@ The number of devices on each Windows 10 version that are exposed due to vulnera
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Configure data access for threat and vulnerability management roles](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Advanced hunting overview](overview-hunting.md)
-- [All advanced hunting tables](advanced-hunting-reference.md)
+
+
