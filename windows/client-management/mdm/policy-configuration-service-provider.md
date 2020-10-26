@@ -1463,6 +1463,77 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Taskbar policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-disablenotificationcenter" ID="admx-taskbar-disablenotificationcenter">ADMX_Taskbar/DisableNotificationCenter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-enablelegacyballoonnotifications" ID="admx-taskbar-enablelegacyballoonnotifications">ADMX_Taskbar/EnableLegacyBalloonNotifications</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-hidescahealth" ID="admx-taskbar-hidescahealth">ADMX_Taskbar/HideSCAHealth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-hidescanetwork" ID="admx-taskbar-hidescanetwork">ADMX_Taskbar/HideSCANetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-hidescapower" ID="admx-taskbar-hidescapower">ADMX_Taskbar/HideSCAPower</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-hidescavolume" ID="admx-taskbar-hidescavolume">ADMX_Taskbar/HideSCAVolume</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-noballoonfeatureadvertisements" ID="admx-taskbar-noballoonfeatureadvertisements">ADMX_Taskbar/NoBalloonFeatureAdvertisements</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-nopinningstoretotaskbar" ID="admx-taskbar-nopinningstoretotaskbar">ADMX_Taskbar/NoPinningStoreToTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-nopinningtodestinations" ID="admx-taskbar-nopinningtodestinations">ADMX_Taskbar/NoPinningToDestinations</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-nopinningtotaskbar" ID="admx-taskbar-nopinningtotaskbar">ADMX_Taskbar/NoPinningToTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-noremotedestinations" ID="admx-taskbar-noremotedestinations">ADMX_Taskbar/NoRemoteDestinations</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-nosystraysystempromotion" ID="admx-taskbar-nosystraysystempromotion">ADMX_Taskbar/NoSystraySystemPromotion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-showwindowsstoreappsontaskbar" ID="admx-taskbar-showwindowsstoreappsontaskbar">ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarlockall" ID="admx-taskbar-taskbarlockall">ADMX_Taskbar/TaskbarLockAll</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnoaddremovetoolbar" ID="admx-taskbar-taskbarnoaddremovetoolbar">ADMX_Taskbar/TaskbarNoAddRemoveToolbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnodragtoolbar" ID="admx-taskbar-taskbarnodragtoolbar">ADMX_Taskbar/TaskbarNoDragToolbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnomultimon" ID="admx-taskbar-taskbarnomultimon">ADMX_Taskbar/TaskbarNoMultimon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnonotification" ID="admx-taskbar-taskbarnonotification">ADMX_Taskbar/TaskbarNoNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnopinnedlist" ID="admx-taskbar-taskbarnopinnedlist">ADMX_Taskbar/TaskbarNoPinnedList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnoredock" ID="admx-taskbar-taskbarnoredock">ADMX_Taskbar/TaskbarNoRedock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnoresize" ID="admx-taskbar-taskbarnoresize">ADMX_Taskbar/TaskbarNoResize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-taskbar.md#admx-taskbar-taskbarnothumbnail" ID="admx-taskbar-taskbarnothumbnail">ADMX_Taskbar/TaskbarNoThumbnail</a>
+  </dd>
+</dl>
+
 ### ADMX_tcpip policies  
 
 <dl>
