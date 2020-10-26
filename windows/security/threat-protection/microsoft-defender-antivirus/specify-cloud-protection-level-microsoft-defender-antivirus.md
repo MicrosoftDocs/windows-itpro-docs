@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/12/2020
+ms.date: 10/26/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -25,10 +25,12 @@ ms.custom: nextgen
 
 - Microsoft Defender Antivirus
 
-You can specify the level of cloud-protection offered by Microsoft Defender Antivirus with Group Policy and Microsoft Endpoint Configuration Manager.
+You can specify the level of cloud protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
 
->[!NOTE]
->The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+> [!TIP]
+> Cloud protection is not simply protection for files that are stored in the cloud. The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. 
+> Microsoft Intune and Microsoft Endpoint Configuration Manager are now part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview). 
+
 
 ## Use Intune to specify the level of cloud-delivered protection
 
