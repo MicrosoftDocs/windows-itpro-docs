@@ -240,6 +240,16 @@ This is only applicable for App ID based Traffic Filter rules.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-direction"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/Direction**  
+Added in Windows 10, version 2004. Specifies the traffic direction to apply this policy to. Default is Outbound. The value can be one of the following:
+
+-   Outbound - The rule applies to all outbound traffic
+-   Inbound - The rule applies to all inbound traffic
+
+If no inbound filter is provided, then by default all unsolicated inbound traffic will be blocked.
+
+Value type is chr. Supported operations include Get, Add, Replace, and Delete.
+
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
 Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
