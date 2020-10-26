@@ -1046,6 +1046,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_PowerShellExecutionPolicy policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-powershellexecutionpolicy.md#admx-powershellexecutionpolicy-enablemodulelogging" id="admx-powershellexecutionpolicy-enablemodulelogging">ADMX_PowerShellExecutionPolicy/EnableModuleLogging</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-powershellexecutionpolicy.md#admx-powershellexecutionpolicy-enablescripts" id="admx-powershellexecutionpolicy-enablescripts">ADMX_PowerShellExecutionPolicy/EnableScripts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-powershellexecutionpolicy.md#admx-powershellexecutionpolicy-enabletranscripting" id="admx-powershellexecutionpolicy-enabletranscripting">ADMX_PowerShellExecutionPolicy/EnableTranscripting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-powershellexecutionpolicy.md#admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath" id="admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath">ADMX_PowerShellExecutionPolicy/EnableUpdateHelpDefaultSourcePath</a>
+  </dd>
+</dl>
+
 ### ADMX_Reliability policies
 
 <dl>
