@@ -30,8 +30,8 @@ ms.topic: article
 Deploying Microsoft Defender ATP can be done using a ring-based deployment approach. 
 
 The deployment rings can be applied in the following scenarios:
-- New deployments
-- Existing deployments
+- [New deployments](#new-deployments)
+- [Existing deployments](#existing-deployments)
 
 ## New deployments
 
