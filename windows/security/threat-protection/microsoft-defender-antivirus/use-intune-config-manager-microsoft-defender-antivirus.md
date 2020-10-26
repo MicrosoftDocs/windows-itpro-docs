@@ -25,13 +25,23 @@ manager: dansimp
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-If you are using Microsoft Endpoint Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Microsoft Defender Antivirus scans.
+If you were using Microsoft Endpoint Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.
 
-In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Microsoft Defender Antivirus.
+1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Endpoint Security**.
 
-See the [Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
+2. Under **Manage**, choose **Antivirus**.
 
-For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+3. Select your Microsoft Defender Antivirus policy. 
+
+4. Under **Manage**, choose **Properties**.
+
+5. Next to **Configuration settings**, choose **Edit**.
+
+6. Expand the **Scan** section, and review or edit your scanning settings.
+
+7. Choose **Review + save**
+
+Need help? See [Manage endpoint security in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security).
 
 
 ## Related articles
