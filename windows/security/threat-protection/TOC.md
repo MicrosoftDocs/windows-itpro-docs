@@ -19,11 +19,10 @@
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
-### [Phase 3: Onboard]()
-#### [Onboarding overview](microsoft-defender-atp/onboarding.md)
-##### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
-##### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
-
+### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
+#### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
+#### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
+#### [Onboard supported devices](microsoft-defender-atp/onboard-configure.md)
 
 ## [Migration guides](microsoft-defender-atp/migration-guides.md)
 ### [Switch from McAfee to Microsoft Defender for Endpoint]()
@@ -49,18 +48,27 @@
 #### [PowerShell, WMI, and MPCmdRun.exe](microsoft-defender-atp/manage-atp-post-migration-other-tools.md)
 
 ## [Security administration]()
-### [Threat & Vulnerability Management]()
-#### [Overview of Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
-#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
-#### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
-#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
-#### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
-#### [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
-#### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
-#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
-#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
-#### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
-#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+### [Threat & vulnerability management]()
+#### [Overview](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Get started]()
+##### [Permissions & prerequisites](microsoft-defender-atp/tvm-prerequisites.md)
+##### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
+##### [Assign device value](microsoft-defender-atp/tvm-assign-device-value.md)
+#### [Assess your security posture]()
+##### [Dashboard insights](microsoft-defender-atp/tvm-dashboard-insights.md)
+##### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+##### [Microsoft Secure Score for Devices](microsoft-defender-atp/tvm-microsoft-secure-score-devices.md)
+#### [Improve your security posture & reduce risk]()
+##### [Address security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
+##### [Remediate vulnerabilities](microsoft-defender-atp/tvm-remediation.md)
+##### [Exceptions for security recommendations](microsoft-defender-atp/tvm-exception.md)
+##### [Plan for end-of-support software](microsoft-defender-atp/tvm-end-of-support-software.md)
+#### [Understand vulnerabilities on your devices]()
+##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
+##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
+
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)
@@ -388,6 +396,7 @@
 
 ### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Automation levels in AIR](microsoft-defender-atp/automation-levels.md)
 #### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
@@ -449,7 +458,7 @@
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
 ##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](microsoft-defender-atp/Onboard-Windows-10-multi-session-device.md)
  
-#### [Onboard servers](microsoft-defender-atp/configure-server-endpoints.md)
+#### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
 #### [Onboard devices without Internet access](microsoft-defender-atp/onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](microsoft-defender-atp/run-detection-test.md)
@@ -710,7 +719,7 @@
 ##### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
   
 #### [Troubleshoot next-generation protection](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus.md)
-
+#### [Troubleshoot migration issues](microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
 

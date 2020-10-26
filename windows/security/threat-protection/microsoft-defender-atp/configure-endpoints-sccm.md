@@ -25,7 +25,7 @@ ms.date: 02/07/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
@@ -37,20 +37,28 @@ Based on the version of Configuration Manager you're running, the following clie
 
 #### Configuration Manager version 1910 and prior
 
-- Clients computers running Windows 10, version 1607 and later
+- Clients computers running Windows 10 
 
 #### Configuration Manager version 2002 and later
 
 Starting in Configuration Manager version 2002, you can onboard the following operating systems:
 
 - Windows 8.1
-- Windows 10, version 1607 or later
+- Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2016, version 1803 or later
 - Windows Server 2019
 
 ### Onboard devices using System Center Configuration Manager
+
+
+[![Image of the PDF showing the various deployment paths](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender ATP. 
+
+
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 

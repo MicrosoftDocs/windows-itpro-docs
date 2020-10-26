@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can use Group Policy to prevent users on endpoints from seeing the Microsoft Defender Antivirus interface. You can also prevent them from pausing scans.
 
@@ -63,6 +63,9 @@ See [Prevent users from locally modifying policy settings](configure-local-polic
 ## Prevent users from pausing a scan
 
 You can prevent users from pausing scans, which can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
+
+> [!NOTE]
+> This setting is not supported on Windows 10.
 
 ### Use Group Policy to prevent users from pausing a scan
 

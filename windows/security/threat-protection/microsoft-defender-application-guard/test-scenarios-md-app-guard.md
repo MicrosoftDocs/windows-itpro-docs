@@ -18,7 +18,7 @@ ms.custom: asr
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 
