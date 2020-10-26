@@ -49,7 +49,7 @@ Prepare the Active Directory Federation Services deployment by installing and up
 > ```PowerShell
 > (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
 > ```
-> 6. Execute the command "Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'.
+> 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
 > 7. Restart the ADFS service.
 > 8. On the client: Restart the client. User should be prompted to provision WHFB.
 > 9. If the provisioning window does not pop up then need to collect NGC trace logs and further troubleshoot.
