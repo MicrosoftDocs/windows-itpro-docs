@@ -22,7 +22,6 @@ ms.reviewer:
 **Requirements**
 
 - Windows 10
-- Certificate trust deployments
 - Cloud, Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Certificate trust deployments
