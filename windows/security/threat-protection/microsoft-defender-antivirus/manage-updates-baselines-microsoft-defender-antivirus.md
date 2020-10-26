@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/21/2020
+ms.date: 10/26/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -23,7 +23,7 @@ ms.date: 10/21/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
@@ -69,10 +69,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
-All our updates contain:
-- performance improvements
-- serviceability improvements
-- integration improvements (Cloud, Microsoft 365 Defender)  
+All our updates contain performance improvements, serviceability improvements, and integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 
 
