@@ -68,7 +68,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
-1. Sign-in to [Enpoint Manager Admin Center](https://endpoint.microsoft.com/) using a Global administrator account.
+1. Sign-in to [Enpoint Manager admin center](https://endpoint.microsoft.com/) using a Global administrator account.
 2. Click **Endpoint Security**-> **Account Portection**-> **Properties**.
 3. Set **Enable PIN recovery** to **Yes**.
 
