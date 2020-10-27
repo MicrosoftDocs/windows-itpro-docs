@@ -54,7 +54,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
 </table>
 
-You are currently in the set up phase.
+You are currently in the set-up phase.
 
 In this deployment scenario, you'll be guided through the steps on:
 - Licensing validation
@@ -69,13 +69,13 @@ In this deployment scenario, you'll be guided through the steps on:
 
 Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
 
-1. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-    On the screen you will see all the provisioned licenses and their current **Status**.
+    On the screen, you will see all the provisioned licenses and their current **Status**.
 
     ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
@@ -84,9 +84,9 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
 
-1. From the **Partner portal**, click on the **Administer services > Office 365**.
+1. From the **Partner portal**, select **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin center.
+2. Clicking on the **Partner portal** link will open the **Admin on behalf** option and will give you access to the customer admin center.
 
    ![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
 
@@ -94,7 +94,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
+When accessing Microsoft Defender Security Center for the first time, a wizard that will guide you through some initial steps. At the end of the setup wizard, there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -109,9 +109,9 @@ When accessing [Microsoft Defender Security Center](https://securitycenter.windo
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
 
-    **Data retention** - The default is 6 months.
+    **Data retention** - The default is six months.
 
     **Enable preview features** - The default is on, can be changed later.
 
@@ -137,11 +137,11 @@ WinHTTP configuration setting is independent of the Windows Internet (WinINet)
 internet browsing proxy settings and can only discover a proxy server by using
 the following discovery methods:
 
-**Auto-discovery methods:**
+**Autodiscovery methods:**
 
 -   Transparent proxy
 
--   Web Proxy Auto-discovery Protocol (WPAD)
+-   Web Proxy Autodiscovery Protocol (WPAD)
 
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
@@ -155,7 +155,7 @@ Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defe
 
 **Manual static proxy configuration:**
 
--   Registry based configuration
+-   Registry-based configuration
 
 -   WinHTTP configured using netsh command <br> Suitable only for desktops in a
     stable topology (for example: a desktop in a corporate network behind the
@@ -205,7 +205,7 @@ Use netsh to configure a system-wide static proxy.
 > - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
 > - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
-1. Open an elevated command-line:
+1. Open an elevated command line:
 
     1. Go to **Start** and type **cmd**.
 
@@ -223,7 +223,7 @@ Use netsh to configure a system-wide static proxy.
 ###  Proxy Configuration for down-level devices
 
 Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well
-as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
+as Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and
 versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
 systems will have the proxy configured as part of the Microsoft Management Agent
 to handle communication from the endpoint to Azure. Refer to the
@@ -238,7 +238,7 @@ needed if the device is on Windows 10, version 1803 or later.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
