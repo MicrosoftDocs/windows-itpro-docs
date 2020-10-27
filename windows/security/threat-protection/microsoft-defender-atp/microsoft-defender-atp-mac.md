@@ -90,9 +90,9 @@ The following downloadable spreadsheet lists the services and their associated U
 
 
 
-|**Item**|**Description**|
+|**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+|![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
 
 
 
