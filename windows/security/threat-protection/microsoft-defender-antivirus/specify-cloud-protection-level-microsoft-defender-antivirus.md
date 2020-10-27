@@ -1,6 +1,6 @@
 ---
-title: Specify cloud-delivered protection level in Microsoft Defender Antivirus
-description: Set the aggressiveness of cloud-delivered protection in Microsoft Defender Antivirus.
+title: Specify the cloud-delivered protection level for Microsoft Defender Antivirus
+description: Set your level of cloud-delivered protection for Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -25,7 +25,7 @@ ms.custom: nextgen
 
 - Microsoft Defender Antivirus
 
-You can specify the level of cloud protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
+You can specify your level of cloud-delivered protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.
 
 > [!TIP]
 > Cloud protection is not simply protection for files that are stored in the cloud. The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. 
@@ -38,23 +38,22 @@ You can specify the level of cloud protection offered by Microsoft Defender Anti
 
 2. Choose **Endpoint security** > **Antivirus**.
 
-3. Select an antivirus profile. (If you don't have one yet, you can haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
-4. Select **Properties**.
+4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
-5. Next to **Configuration setting**, choose **Edit**.
-
-6. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
+5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
 
     1. **High**: Applies a strong level of detection.
     2. **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
     3. **Zero tolerance**: Blocks all unknown executables.
 
-8. Choose **Review + save**, and then choose **Save**. 
+6. Choose **Review + save**, and then choose **Save**. 
 
-Need some help? See the following resources:
-- [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-- [Add endpoint protection settings in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+> [!TIP]
+> Need some help? See the following resources:
+> - [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Add endpoint protection settings in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
   
 
 ## Use Group Policy to specify the level of cloud-delivered protection
