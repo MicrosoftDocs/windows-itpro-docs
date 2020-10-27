@@ -52,7 +52,12 @@ You must have **Manage security settings** permissions to:
 - Reset password
 - Create simulations 
  
+If you enabled role-based access control (RBAC) and created at least a one machine group, users must have access to All machine groups.
+
 For more information, see [Create and manage roles](user-roles.md).
+
+
+
 
 Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
