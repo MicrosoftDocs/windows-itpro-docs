@@ -2201,6 +2201,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_wlansvc policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wlansvc.md#admx-wlansvc-setcost" id="admx-wlansvc-setcost">ADMX_wlansvc/SetCost</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinenforced" id="admx-wlansvc-setpinenforced">ADMX_wlansvc/SetPINEnforced</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinpreferred" id="admx-wlansvc-setpinpreferred">ADMX_wlansvc/SetPINPreferred</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
