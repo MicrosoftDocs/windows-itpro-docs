@@ -1,5 +1,5 @@
 ---
-title: BitLocker How to enable Network Unlock (Windows 10)
+title: BitLocker - How to enable Network Unlock (Windows 10)
 description: This topic for the IT professional describes how BitLocker Network Unlock works and how to configure it.
 ms.assetid: be45bc28-47db-4931-bfec-3c348151d2e9
 ms.reviewer: 
@@ -23,45 +23,37 @@ ms.custom: bitlocker
 **Applies to**
 -   Windows 10
 
-This topic for the IT professional describes how BitLocker Network Unlock works and how to configure it.
+This article for IT professionals describes how BitLocker Network Unlock works and how to configure it.
 
-Network Unlock was introduced in Windows 8 and Windows Server 2012 as a BitLocker protector option for operating system volumes. Network Unlock enables easier management for BitLocker enabled desktops and servers in a domain environment by providing automatic unlock of operating system volumes at system reboot when connected to a wired corporate network. This feature requires the client hardware to have a DHCP driver implemented in its UEFI firmware.
-Without Network Unlock, operating system volumes protected by TPM+PIN protectors require a PIN to be entered when a computer reboots or resumes from hibernation (for example, by Wake on LAN). This can make it difficult to enterprises to roll out software patches to unattended desktops and remotely administered servers.
+Network Unlock was introduced in Windows 8 and Windows Server 2012 as a BitLocker protector option for operating system volumes. Network Unlock helps you manage BitLocker-enabled desktops and servers in a domain environment by automatically unlocking operating system volumes when the system is rebooted and is connected to a wired corporate network. This feature requires the client hardware to have a DHCP driver implemented in its UEFI firmware.
 
-Network Unlock allows BitLocker-enabled systems with TPM+PIN and that meet the hardware requirements to boot into Windows without user intervention. Network Unlock works in a similar fashion to the TPM+StartupKey at boot. Rather than needing to read the StartupKey from USB media, however, the key for Network Unlock is composed from a key stored in the TPM and an encrypted network key that is sent to the server, decrypted and returned to the client in a secure session.
+Without Network Unlock, operating system volumes that are protected by TPM+PIN protectors require a PIN when a computer reboots or resumes after hibernation (for example, by Wake on LAN). For enterprises, this setup can make software patches difficult to roll out to unattended desktops and remotely administered servers.
 
-This topic contains:
-
--   [Network Unlock core requirements](#bkmk-nunlockcorereqs)
--   [Network Unlock sequence](#bkmk-networkunlockseq)
--   [Configure Network Unlock](#bkmk-configuringnetworkunlock)
--   [Create the certificate template for Network Unlock](#bkmk-createcerttmpl)
--   [Turning off Network Unlock](#bkmk-turnoffnetworkunlock)
--   [Update Network Unlock certificates](#bkmk-updatecerts)
--   [Troubleshoot Network Unlock](#bkmk-troubleshoot)
--   [Configure Network Unlock on unsupported systems](#bkmk-unsupportedsystems)
+Network Unlock allows BitLocker-enabled systems that use TPM+PIN and that meet the hardware requirements to boot into Windows without user intervention. Network Unlock works like the TPM+StartupKey at boot. But the StartupKey doesn't need to be read from USB media. Instead, the key for Network Unlock is composed from a key that's stored in the TPM and an encrypted network key that's sent to the server. It's decrypted and returned to the client in a secure session.
 
 ## <a href="" id="bkmk-nunlockcorereqs"></a>Network Unlock core requirements
 
-Network Unlock must meet mandatory hardware and software requirements before the feature can automatically unlock domain joined systems. These requirements include:
+Network Unlock must meet mandatory hardware and software requirements before the feature can automatically unlock domain-joined systems:
 
 -   You must be running at least Windows 8 or Windows Server 2012.
--   Any supported operating system with UEFI DHCP drivers can be Network Unlock clients.
+-   Any supported operating system that uses UEFI DHCP drivers can be Network Unlock clients.
 -   Network Unlock clients must have a TPM chip and at least one TPM protector.
--   A server running the Windows Deployment Services (WDS) role on any supported server operating system.
--   BitLocker Network Unlock optional feature installed on any supported server operating system.
--   A DHCP server, separate from the WDS server.
--   Properly configured public/private key pairing.
--   Network Unlock Group Policy settings configured.
+-   You must have a server running the Windows Deployment Services (WDS) role on any supported server operating system.
+-   The BitLocker Network Unlock optional feature can be installed on any supported server operating system.
+-   You must have a DHCP server, separate from the WDS server.
+-   You must have a properly configured public/private key pairing.
+-   Network Unlock Group Policy settings must be configured.
 
-The network stack must be enabled to use the Network Unlock feature. Equipment manufacturers deliver their products in various states and with different BIOS menus, so you need to confirm that the network stack has been enabled in the BIOS before starting the computer.
+The network stack must be enabled to use the Network Unlock feature. Equipment manufacturers deliver their products in various states and with different BIOS menus, so you need to confirm that the network stack has been enabled in the BIOS before you start the computer.
 
 > [!NOTE]
-> To properly support DHCP within UEFI, the UEFI-based system should be in native mode without a compatibility support module (CSM) enabled.
+> To properly support DHCP within UEFI, the UEFI-based system should be in native mode and shouldn't have a compatibility support module (CSM) enabled.
 
-For Network Unlock to work reliably on computers running Windows 8 and later, the first network adapter on the computer, usually the onboard adapter, must be configured to support DHCP and used for Network Unlock. This is especially worth noting when you have multiple adapters, and you wish to configure one without DHCP, such as for a lights-out management protocol. This configuration is necessary because Network Unlock will stop enumerating adapters when it reaches one with a DHCP port failure for any reason. Thus, if the first enumerated adapter does not support DHCP, is not plugged into the network, or fails to report availability of the DHCP port for any reason, then Network Unlock will fail.
+On computers running Windows 8 and later, the first network adapter on the computer, usually the onboard adapter, must be configured to support DHCP. This adapter must be used for Network Unlock. 
+
+Use this configuration especially when you have multiple adapters and you want to configure one without DHCP, such as for a lights-out management protocol. The configuration is necessary because Network Unlock stops enumerating adapters when it reaches an adapter that has a DHCP port that has failed for any reason. So if the first enumerated adapter doesn't support DHCP, isn't plugged into the network, or fails to report availability of the DHCP port for any reason, then Network Unlock will fail.
  
-The Network Unlock server component installs on supported versions of Windows Server 2012 and later as a Windows feature using Server Manager or Windows PowerShell cmdlets. The feature name is BitLocker Network Unlock in Server Manager and BitLocker-NetworkUnlock in Windows PowerShell. This feature is a core requirement.
+On supported versions of Windows Server 2012 and later, the Network Unlock server component installs as a Windows feature. It uses Server Manager or Windows PowerShell cmdlets. In Server Manager, the feature name is BitLocker Network Unlock. In Windows PowerShell, the feature name is BitLocker-NetworkUnlock. This feature is a core requirement.
 
 Network Unlock requires Windows Deployment Services (WDS) in the environment where the feature will be utilized. Configuration of the WDS installation is not required; however, the WDS service needs to be running on the server.
 
