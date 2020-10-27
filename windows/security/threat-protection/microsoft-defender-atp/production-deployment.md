@@ -1,7 +1,7 @@
 ---
 title: Set up Microsoft Defender ATP deployment
-description: 
-keywords:
+description: Learn how to setup the deployment for Microsoft Defender ATP
+keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -46,7 +46,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Onboard" title="Onboard" />
+        <img src="images/onboard.png" alt="Onboard image" title="Onboard" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 
@@ -175,13 +175,13 @@ under:
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
 3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
-    ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
+    ![Image of Group Policy configuration](images/atp-gpo-proxy1.png)
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
    
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
-    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
+    ![Image of Group Policy configuration setting](images/atp-gpo-proxy2.png)
 7. Select **Enabled**.
 8. Enter the **Proxy Server Name**.
 
@@ -247,7 +247,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ###  Microsoft Defender ATP service backend IP range
 
-If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+If you network devices don't support the URLs listed in the prior section, you can use the following information.
 
 Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
 
