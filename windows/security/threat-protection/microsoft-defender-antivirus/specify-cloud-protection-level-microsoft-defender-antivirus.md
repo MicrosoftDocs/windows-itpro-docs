@@ -32,26 +32,30 @@ You can specify the level of cloud protection offered by Microsoft Defender Anti
 > Microsoft Intune and Microsoft Endpoint Configuration Manager are now part of [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview). 
 
 
-## Use Intune to specify the level of cloud-delivered protection
+## Use Microsoft Endpoint Manager to specify the level of cloud-delivered protection
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services > Intune**.
-3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
-4. Select **Properties**, select **Settings: Configure**, and then select **Microsoft Defender Antivirus**.
-5. On the **File Blocking Level** switch, select one of the following:
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+
+2. Choose **Endpoint security** > **Antivirus**.
+
+3. Select an antivirus profile. (If you don't have one yet, you can haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+
+4. Select **Properties**.
+
+5. Next to **Configuration setting**, choose **Edit**.
+
+6. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
 
     1. **High**: Applies a strong level of detection.
-    2. **High +**: Uses the **High** level and applies additional protection measures (may impact client performance).
+    2. **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
     3. **Zero tolerance**: Blocks all unknown executables.
 
-8. Click **OK** to exit the **Microsoft Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
+8. Choose **Review + save**, and then choose **Save**. 
 
-For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
+Need some help? See the following resources:
+- [Configure Endpoint Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+- [Add endpoint protection settings in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
   
-
-## Use Configuration Manager to specify the level of cloud-delivered protection
-
-See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ## Use Group Policy to specify the level of cloud-delivered protection
 
@@ -59,24 +63,26 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**. 
+3.  In the **Group Policy Management Editor** go to **Computer Configuration** > **Administrative templates**.
 
-4.  Click **Administrative templates**.
+4.  Expand the tree to **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.
 
-5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > MpEngine**.
-
-6.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
+5.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
     - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **Moderate blocking level** provides moderate only for high confidence detections
-    - **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
-    - **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
+    - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
+    - **High + blocking level** applies additional protection measures (might impact client performance and increase your chance of false positives).
     - **Zero tolerance blocking level** blocks all unknown executables.
     
     > [!WARNING]
     > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 
-7. Click **OK**.
+6. Click **OK**.
 
+7. Deploy your updated Group Policy Object. See [Group Policy Management Console](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
+
+> [!TIP]
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](https://docs.microsoft.com/mem/intune/configuration/group-policy-analytics). 
   
 ## Related articles
 
