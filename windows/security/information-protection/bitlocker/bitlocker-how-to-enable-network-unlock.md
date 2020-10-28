@@ -37,7 +37,7 @@ Network Unlock requires the following mandatory hardware and software configurat
 
 -   You must be running at least Windows 8 or Windows Server 2012.
 -   Any supported operating system that uses UEFI DHCP drivers can be a Network Unlock client.
--   Network Unlock clients must have a TPM chip and at least one TPM protector.
+-   Network Unlock clients must have a TPM (trusted platform module) chip and at least one TPM protector.
 -   You must have a server running the Windows Deployment Services (WDS) role on any supported server operating system.
 -   The BitLocker Network Unlock optional feature can be installed on any supported server operating system.
 -   You must have a DHCP server, separate from the WDS server.
@@ -89,7 +89,7 @@ The Network Unlock process follows these phases:
 
 The following steps allow an administrator to configure Network Unlock in a domain where the functional level is at least Windows Server 2012.
 
-### <a href="" id="bkmk-installwdsrole"><a/>Install the WDS server role
+### <a href="" id="bkmk-installwdsrole"></a>Install the WDS server role
 
 The BitLocker Network Unlock feature installs the WDS role if it's not already installed. If you want to install it separately before you install BitLocker Network Unlock, use Server Manager or Windows PowerShell. To install the role in Server Manager, select the **Windows Deployment Services** role.
 
@@ -101,7 +101,7 @@ Install-WindowsFeature WDS-Deployment
 
 Configure the WDS server so that it can communicate with DHCP (and optionally Active Directory Domain Services) and the client computer. Use the WDS management tool, `wdsmgmt.msc`. This tool starts the Windows Deployment Services Configuration Wizard.
 
-### <a href="" id="bkmk-confirmwdsrunning"><a/>Confirm the WDS service is running
+### <a href="" id="bkmk-confirmwdsrunning"></a>Confirm the WDS service is running
 
 To confirm the WDS service is running, use the Services Management console or Windows PowerShell. To confirm the service is running in the Services Management console, open the console by using `services.msc`. Then check the status of the WDS service.
 
@@ -110,7 +110,7 @@ To confirm the service is running by using Windows PowerShell, use the following
 ```powershell
 Get-Service WDSServer
 ```
-### <a href="" id="bkmk-installnufeature"><a/>Install the Network Unlock feature
+### <a href="" id="bkmk-installnufeature"></a>Install the Network Unlock feature
 
 To install the Network Unlock feature, use Server Manager or Windows PowerShell. To install the feature in the Server Manager console, select **BitLocker Network Unlock**.
 
@@ -119,7 +119,7 @@ To install the feature by using Windows PowerShell, use the following command:
 ```powershell
 Install-WindowsFeature BitLocker-NetworkUnlock
 ```
-### <a href="" id="bkmk-createcerttmpl"><a/>Create the certificate template for Network Unlock
+### <a href="" id="bkmk-createcerttmpl"></a>Create the certificate template for Network Unlock
 
 A properly configured Active Directory Services Certification Authority can use the certificate template to create and issue Network Unlock certificates. To create a certificate template:
 
@@ -149,7 +149,7 @@ To add the Network Unlock template to the certificate authority, open the certif
 
 After you add the Network Unlock template to the certificate authority, you can use this certificate to configure BitLocker Network Unlock.
 
-### <a href="" id="bkmk-createcert"><a/>Create the Network Unlock certificate
+### <a href="" id="bkmk-createcert"></a>Create the Network Unlock certificate
 
 Network Unlock can use imported certificates from an existing public key infrastructure (PKI). Or it can use a self-signed certificate.
 
@@ -216,14 +216,14 @@ Here's a `certreq` example:
 5.  Launch **Certificates - Local Machine** by running `certlm.msc`.
 6.  Create a *.pfx* file by opening the *Certificates – Local Computer\\Personal\\Certificates* path in the navigation pane. Right-click the previously imported certificate, and then select **All Tasks** > **Export**. Follow through the steps to create the *.pfx* file.
 
-### <a href="" id="bkmk-deploycert"><a/>Deploy the private key and certificate to the WDS server
+### <a href="" id="bkmk-deploycert"></a>Deploy the private key and certificate to the WDS server
 
 Now that you've created the certificate and key, deploy them to the infrastructure to properly unlock systems. To deploy the certificates:
 
 1.  On the WDS server, open a new Microsoft Management Console (MMC) and then add the certificates snap-in. When you're prompted, select the computer account and local computer.
 2.  Right-click **Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock** and then choose **All Tasks** > **Import**.
 3.  In the **File to Import** dialog box, choose the *.pfx* file that you created previously.
-4.  Enter the password that you used to create the *.pfx*, and finish the steps.
+4.  Enter the password that you used to create the *.pfx* file, and finish the steps.
 
 ### Configure Group Policy settings for Network Unlock
 
@@ -298,14 +298,14 @@ SUBNET3
 
 To disallow the use of a certificate altogether, add a `DISABLED` line to its subnet list.
 
-## <a href="" id="bkmk-turnoffnetworkunlock"><a/>Turn off Network Unlock
+## <a href="" id="bkmk-turnoffnetworkunlock"></a>Turn off Network Unlock
 
 To turn off the unlock server, you can unregister the PXE provider from the WDS server or uninstall it altogether. However, to stop clients from creating Network Unlock protectors, you should disable the **Allow Network Unlock at startup** Group Policy setting. When you disable this policy setting on client computers, any Network Unlock key protectors on the computer are deleted. Alternatively, you can delete the BitLocker Network Unlock certificate policy on the domain controller to accomplish the same task for an entire domain.
 
 > [!NOTE]
 > Removing the FVE_NKP certificate store that contains the Network Unlock certificate and key on the WDS server will also effectively disable the server's ability to respond to unlock requests for that certificate. However, this condition is seen as an error. It's not a supported or recommended method for turning off the Network Unlock server.
  
-## <a href="" id="bkmk-updatecerts"><a/>Update Network Unlock certificates
+## <a href="" id="bkmk-updatecerts"></a>Update Network Unlock certificates
 
 To update the certificates that Network Unlock uses, administrators need to import or generate the new certificate for the server. Then they must update the Network Unlock certificate Group Policy setting on the domain controller.
 
@@ -341,7 +341,7 @@ Gather the following files to troubleshoot BitLocker Network Unlock.
         ```cmd
         wevtutil sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true
         ```
-    - Open Event Viewer on the WDS server.
+    - Open Event Viewer on the WDS server:
 
     1. In the left pane, select **Applications and Services Logs** > **Microsoft** > **Windows** > **Deployment-Services-Diagnostics** > **Debug**.
     1. In the right pane, select **Enable Log**.
