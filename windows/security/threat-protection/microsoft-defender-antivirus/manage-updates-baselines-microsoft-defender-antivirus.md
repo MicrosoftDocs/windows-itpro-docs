@@ -23,7 +23,7 @@ ms.date: 10/21/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
