@@ -72,7 +72,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 2. Click **Endpoint Security**-> **Account Protection**-> **Properties**.
 3. Set **Enable PIN recovery** to **Yes**.
 
-> [!Note]
+> [!NOTE]
 > You can also setup PIN recovery using configuration profiles.
 > 1. Sign-in to Endpoint Manager
 > 2. Click **Devices** -> **Configuration Profiles** -> Create new profile or edit existing an existing profile using the Identity Protection profile type
