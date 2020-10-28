@@ -86,7 +86,8 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 If you select a CVE, a flyout panel will open with more information such as the vulnerability description, details, threat insights, and exposed devices.
 
-The "OS Feature" category is shown in relevant scenarios.
+- The "OS Feature" category is shown in relevant scenarios
+- You can go to the related security recommendation for every CVE with exposed device
 
  ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
 
