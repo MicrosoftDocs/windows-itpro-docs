@@ -11,8 +11,8 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/30/2020
-ms.reviewer: 
+ms.date: 10/26/2020
+ms.reviewer: pauhijbr
 manager: dansimp
 ---
 
@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > [!NOTE]
 > By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
@@ -32,7 +32,7 @@ In addition to always-on real-time protection and [on-demand](run-scan-microsoft
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
-This article describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+This article describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10).
 
 ## To configure the Group Policy settings described in this article
 
@@ -74,12 +74,12 @@ Scheduled scans will run at the day and time you specify. You can use Group Poli
 
 ### Use Group Policy to schedule scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Specify the scan type to use for a scheduled scan | Quick scan
-Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
-Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled
+| Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Specify the scan type to use for a scheduled scan | Quick scan |
+|Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
+| Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
+| Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled |
 
 ### Use PowerShell cmdlets to schedule scans
 
@@ -119,9 +119,9 @@ You can set the scheduled scan to only occur when the endpoint is turned on but 
 
 ### Use Group Policy to schedule scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled
+|Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled |
 
 ### Use PowerShell cmdlets
 
@@ -152,10 +152,10 @@ Some threats may require a full scan to complete their removal and remediation. 
 
 ### Use Group Policy to schedule remediation-required scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | Specify the day (or never) to run a scan. | Never
-Remediation | Specify the time of day to run a scheduled full scan to complete remediation | Specify the number of minutes after midnight (for example, enter **60** for 1 am) | 2 am
+| Location | Setting | Description | Default setting (if not configured) |
+|---|---|---|---|
+|Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | Specify the day (or never) to run a scan. | Never |
+|Remediation | Specify the time of day to run a scheduled full scan to complete remediation | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.) | 2 a.m. |
 
 ### Use PowerShell cmdlets
 
@@ -190,10 +190,10 @@ You can enable a daily quick scan that can be run in addition to your other sche
 
 ### Use Group Policy to schedule daily scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Specify the interval to run quick scans per day | Specify how many hours should elapse before the next quick scan. For example, to run every two hours, enter **2**, for once a day, enter **24**. Enter **0** to never run a daily quick scan. | Never
-Scan | Specify the time for a daily quick scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am) | 2 am
+| Location | Setting | Description | Default setting (if not configured)| 
+|:---|:---|:---|:---|
+|Scan | Specify the interval to run quick scans per day | Specify how many hours should elapse before the next quick scan. For example, to run every two hours, enter **2**, for once a day, enter **24**. Enter **0** to never run a daily quick scan. | Never |
+|Scan | Specify the time for a daily quick scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.) | 2 a.m. |
 
 ### Use PowerShell cmdlets to schedule daily scans
 

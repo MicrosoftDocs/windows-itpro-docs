@@ -43,6 +43,12 @@ ms.topic: conceptual
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
 
+## 101.09.61
+
+- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback)
+- Status menu icon now shows a healthy state when the product settings are managed. Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator
+- Performance improvements & bug fixes
+
 ## 101.09.50
 
 - This product version has been validated on macOS Big Sur 11 beta 9
