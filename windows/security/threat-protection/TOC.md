@@ -19,11 +19,10 @@
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
-### [Phase 3: Onboard]()
-#### [Onboarding overview](microsoft-defender-atp/onboarding.md)
-##### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
-##### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
-
+### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
+#### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
+#### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
+#### [Onboard supported devices](microsoft-defender-atp/onboard-configure.md)
 
 ## [Migration guides](microsoft-defender-atp/migration-guides.md)
 ### [Switch from McAfee to Microsoft Defender for Endpoint]()
@@ -68,6 +67,7 @@
 ##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
 ##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Vulnerable devices report](microsoft-defender-atp/tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
 
 
@@ -398,6 +398,7 @@
 
 ### [Automated investigation and response (AIR)]()
 #### [Overview of AIR](microsoft-defender-atp/automated-investigations.md)
+#### [Automation levels in AIR](microsoft-defender-atp/automation-levels.md)
 #### [Configure AIR capabilities](microsoft-defender-atp/configure-automated-investigations-remediation.md)
 
 ### [Advanced hunting]()
