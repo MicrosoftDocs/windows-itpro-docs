@@ -458,6 +458,7 @@
 ##### [Onboard devices using Mobile Device Management tools](microsoft-defender-atp/configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
+##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](microsoft-defender-atp/Onboard-Windows-10-multi-session-device.md)
  
 #### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
@@ -1342,3 +1343,5 @@
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
 ## [Change history for Threat protection](change-history-for-threat-protection.md)
+
+
