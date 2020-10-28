@@ -252,15 +252,15 @@ To deploy the required Group Policy setting:
 
 5. Reboot the clients after you deploy the group policy.
    > [!NOTE]
-   > The **Network (Certificate Based)** protector will be added only after a reboot with the policy enabled and a valid certificate present in the FVE_NKP store.
+   > The **Network (Certificate Based)** protector is added only after a reboot. The policy must be enabled, and a valid certificate must be present in the FVE_NKP store.
  
-### Subnet policy configuration files on WDS Server (Optional)
+### Subnet policy configuration files on the WDS server (Optional)
 
-By default, all clients with the correct Network Unlock Certificate and valid Network Unlock protectors that have wired access to a Network Unlock-enabled WDS server via DHCP are unlocked by the server. A subnet policy configuration file on the WDS server can be created to limit which subnet(s) Network Unlock clients can use to unlock.
+By default, clients are unlocked by the server if they have the correct Network Unlock certificate and valid Network Unlock protectors that have wired access to a Network Unlock-enabled WDS server via DHCP. You can create a subnet policy configuration file on the WDS server to limit the subnets that Network Unlock clients can use to unlock.
 
-The configuration file, called bde-network-unlock.ini, must be located in the same directory as the Network Unlock provider DLL (%windir%\System32\Nkpprov.dll) and it applies to both IPv6 and IPv4 DHCP implementations. If the subnet configuration policy becomes corrupted, the provider will fail and stop responding to requests.
+The configuration file, called *bde-network-unlock.ini*, must be located in the same directory as the Network Unlock provider DLL (*%windir%\System32\Nkpprov.dll*). It applies to both IPv6 and IPv4 DHCP implementations. If the subnet configuration policy becomes corrupted, then the provider fails and stops responding to requests.
 
-The subnet policy configuration file must use a “\[SUBNETS\]” section to identify the specific subnets. The named subnets may then be used to specify restrictions in certificate subsections. Subnets are defined as simple name-value pairs, in the common INI format, where each subnet has its own line, with the name on the left of the equals sign, and the subnet identified on the right of the equal sign as a Classless Inter-Domain Routing (CIDR) address or range. The key word “ENABLED” is disallowed for subnet names.
+The subnet policy configuration file must use a `[SUBNETS]` section to identify the specific subnets. The named subnets can then be used to specify restrictions in certificate subsections. Subnets are defined as simple name-value pairs, in the common INI format. In this format, each subnet has its own line. The name is on the left of the equals sign. The subnet that's identified on the right of the equals sign is a Classless Interdomain Routing (CIDR) address or range. The keyword `ENABLED` is disallowed for subnet names.
 
 ```ini
 [SUBNETS]
@@ -270,110 +270,112 @@ SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
 SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
 ```
 
-Following the \[SUBNETS\] section, there can be sections for each Network Unlock certificate, identified by the certificate thumbprint formatted without any spaces, which define subnets clients can be unlocked from with that certificate.
+Following the `[SUBNETS]` section are sections for each Network Unlock certificate. A certificate is identified by the certificate thumbprint, which is formatted without any spaces. These sections define subnet clients that can be unlocked by using that certificate.
 
 > [!NOTE]
-> When specifying the certificate thumbprint, do not include any spaces. If spaces are included in the thumbprint the subnet configuration will fail because the thumbprint will not be recognized as valid.
+> When you specify the certificate thumbprint, don't include spaces. Thumbprints that include spaces aren't recognized as valid. These will cause the subnet configuration to fail.
 
-Subnet restrictions are defined within each certificate section by denoting the allowed list of permitted subnets. If any subnet is listed in a certificate section, then only those subnets listed are permitted for that certificate. If no subnet is listed in a certificate section, then all subnets are permitted for that certificate. If a certificate does not have a section in the subnet policy configuration file, then no subnet restrictions are applied for unlocking with that certificate. This means for restrictions to apply to every certificate, there must be a certificate section for every Network Unlock certificate on the server, and an explicit allowed list set for each certificate section.
-Subnet lists are created by putting the name of a subnet from the \[SUBNETS\] section on its own line below the certificate section header. Then, the server will only unlock clients with this certificate on the subnet(s) specified as in the list. For troubleshooting, a subnet can be quickly excluded without deleting it from the section by simply commenting it out with a prepended semi-colon.
+Each certificate section defines subnet restrictions by denoting the allowed list of permitted subnets. If any subnets are listed in a certificate section, then only those subnets are permitted for that certificate. If no subnet is listed in a certificate section, then all subnets are permitted for that certificate. If a certificate has no section in the subnet policy configuration file, then no subnet unlocking restrictions are applied for that certificate. So to apply restrictions to every certificate, you must add a certificate section for every Network Unlock certificate on the server. And you must add an explicit allow list set for each certificate section.
+
+Create subnet lists by putting the name of a subnet from the `[SUBNETS]` section on its own line below the certificate section header. Then, the server will unlock clients that have this certificate only on the subnets that the list specifies. To troubleshoot, you can quickly exclude a subnet without deleting it from the section by simply commenting it out with a prepended semicolon.
 
 ```ini
 [2158a767e1c14e88e27a4c0aee111d2de2eafe60]
 ;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
-;This list shows this cert is only allowed to unlock clients on SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
+;This list shows this cert is allowed to unlock clients only on the SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
 SUBNET1
 ;SUBNET2
 SUBNET3
 ```
 
-To disallow the use of a certificate altogether, its subnet list may contain the line “DISABLED".
+To disallow the use of a certificate altogether, you can add a `DISABLED` line to its subnet list.
 
-## <a href="" id="bkmk-turnoffnetworkunlock"><a/>Turning off Network Unlock
+## <a href="" id="bkmk-turnoffnetworkunlock"><a/>Turn off Network Unlock
 
-To turn off the unlock server, the PXE provider can be unregistered from the WDS server or uninstalled altogether. However, to stop clients from creating Network Unlock protectors the **Allow Network Unlock at startup** Group Policy setting should be disabled. When this policy setting is updated to disabled on client computers any Network Unlock key protectors on the computer will be deleted. Alternatively, the BitLocker Network Unlock certificate policy can be deleted on the domain controller to accomplish the same task for an entire domain.
+To turn off the unlock server, you can unregister the PXE provider from the WDS server or uninstall it altogether. However, to stop clients from creating Network Unlock protectors, you should disable the **Allow Network Unlock at startup** Group Policy setting. When you disable this policy setting on client computers, any Network Unlock key protectors on the computer are deleted. Alternatively, you can delete the BitLocker Network Unlock certificate policy on the domain controller to accomplish the same task for an entire domain.
 
 > [!NOTE]
-> Removing the FVE_NKP certificate store that contains the Network Unlock certificate and key on the WDS server will also effectively disable the server’s ability to respond to unlock requests for that certificate. However, this is seen as an error condition and is not a supported or recommended method for turning off the Network Unlock server.
+> Removing the FVE_NKP certificate store that contains the Network Unlock certificate and key on the WDS server will also effectively disable the server's ability to respond to unlock requests for that certificate. However, this is seen as an error condition. It's not a supported or recommended method for turning off the Network Unlock server.
  
 ## <a href="" id="bkmk-updatecerts"><a/>Update Network Unlock certificates
 
-To update the certificates used by Network Unlock, administrators need to import or generate the new certificate for the server and then update the Network Unlock certificate Group Policy setting on the domain controller.
+To update the certificates that Network Unlock uses, administrators need to import or generate the new certificate for the server. Then they must update the Network Unlock certificate Group Policy setting on the domain controller.
 
 > [!NOTE]
-> Servers that do not receive the Group Policy Object (GPO) will require a PIN when booting. In such cases, the reason why the server did not receive the GPO to update the certificate needs to be investigated.
+> Servers that don't receive the Group Policy Object (GPO) will require a PIN when they boot. In such cases, find out why the server didn't receive the GPO to update the certificate.
 
 ## <a href="" id="bkmk-troubleshoot"></a>Troubleshoot Network Unlock
 
-Troubleshooting Network Unlock issues begins by verifying the environment. Many times, a small configuration issue will be the root cause of the failure. Items to verify include:
+To troubleshoot Network Unlock issues, begin by verifying the environment. Many times, a small configuration issue is the root cause of the failure. Verify these items:
 
-- Verify client hardware is UEFI-based and is on firmware version is 2.3.1 and that the UEFI firmware is in native mode without a Compatibility Support Module (CSM) for BIOS mode enabled. Do this by checking that the firmware does not have an option enabled such as "Legacy mode" or "Compatibility mode" or that the firmware does not appear to be in a BIOS-like mode.
-- All required roles and services are installed and started
-- Public and private certificates have been published and are in the proper certificate containers. The presence of the Network Unlock certificate can be verified in the Microsoft Management Console (MMC.exe) on the WDS server with the certificate snap-ins for the local computer enabled. The client certificate can be verified by checking the registry key **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP** on the client computer.
-- Group policy for Network Unlock is enabled and linked to the appropriate domains.
-- Verify group policy is reaching the clients properly. This can be done using the GPRESULT.exe or RSOP.msc utilities.
-- Verify the clients were rebooted after applying the policy.
-- Verify the **Network (Certificate Based)** protector is listed on the client. This can be done using either manage-bde or Windows PowerShell cmdlets. For example the following command will list the key protectors currently configured on the C: drive of the local computer:
+- Client hardware is UEFI-based and is using firmware version 2.3.1, and the UEFI firmware is in native mode doesn't have a Compatibility Support Module (CSM) for BIOS mode enabled. Verify this configuration by checking that the firmware has no enabled option such as **Legacy mode** or **Compatibility mode** or that the firmware doesn't appear to be in a BIOS-like mode.
+- All required roles and services are installed and started.
+- Public and private certificates have been published and are in the proper certificate containers. Verify the presence of the Network Unlock certificate by using Microsoft Management Console (*MMC.exe*) on the WDS server. The certificate snap-ins for the local computer should be enabled. Verify the client certificate by checking the registry key *HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP* on the client computer.
+- Group Policy for Network Unlock is enabled and linked to the appropriate domains.
+- Group Policy is reaching the clients properly. Verify this functionality by using the *GPRESULT.exe* utility or *RSOP.msc* utility.
+- The clients were rebooted after the policy was applied.
+- The **Network (Certificate Based)** protector is listed on the client. Check for this protector by using either `manage-bde` or Windows PowerShell cmdlets. For example, the following command lists the key protectors that are currently configured on drive C on the local computer.
 
   ```powershell
   manage-bde -protectors -get C:
   ```
   > [!NOTE]
-  > Use the output of manage-bde along with the WDS debug log to determine if the proper certificate thumbprint is being used for Network Unlock
+  > Use the output of `manage-bde` along with the WDS debug log to determine whether the proper certificate thumbprint is being used for Network Unlock.
  
-Files to gather when troubleshooting BitLocker Network Unlock include:
+Gather the following files to troubleshoot BitLocker Network Unlock.
 
-1.  The Windows event logs. Specifically the BitLocker event logs and the Microsoft-Windows-Deployment-Services-Diagnostics-Debug log
+- The Windows event logs. Specifically, get the BitLocker event logs and the Microsoft-Windows-Deployment-Services-Diagnostics-Debug log.
 
-    Debug logging is turned off by default for the WDS server role, so you will need to enable it first. You can use either of the following two methods to turn on WDS debug logging.
+    Debug logging is turned off by default for the WDS server role, so you need to enable it before you can retrieve it. Use either of the following two methods to turn on WDS debug logging.
 
-    1.  Start an elevated command prompt and run the following command:
+    - Start an elevated command prompt and then run the following command:
 
         ```cmd
         wevtutil sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true
         ```
-    2.  Open Event Viewer on the WDS server.
+    - Open Event Viewer on the WDS server.
 
-        In the left pane, click **Applications and Services Logs**, click **Microsoft**, click **Windows**, click **Deployment-Services-Diagnostics**, and then click **Debug**.
+        In the left pane, select **Applications and Services Logs** > **Microsoft** > **Windows** > **Deployment-Services-Diagnostics** > **Debug**.
 
-        In the right pane, click **Enable Log**.
+        In the right pane, selet **Enable Log**.
 
-2.  The DHCP subnet configuration file (if one exists).
-3.  The output of the BitLocker status on the volume, this can be gathered into a text file using **manage-bde -status** or **Get-BitLockerVolume** in Windows PowerShell.
-4.  Network Monitor capture on the server hosting the WDS role, filtered by client IP address.
+- The DHCP subnet configuration file (if one exists).
+- The output of the BitLocker status on the volume. Gather this output into a text file by using `manage-bde -status`. Or in Windows PowerShell, use `Get-BitLockerVolume`.
+- The Network Monitor capture on the server that hosts the WDS role, filtered by client IP address.
 
 ## <a href="" id="bkmk-unsupportedsystems"></a>Configure Network Unlock Group Policy settings on earlier versions
 
-Network Unlock and the accompanying Group Policy settings were introduced in Windows Server 2012 but can be deployed using operating systems running Windows Server 2008 R2 and Windows Server 2008.
+Network Unlock and the accompanying Group Policy settings were introduced in Windows Server 2012. But you can deploy them by  using operating systems that run Windows Server 2008 R2 and Windows Server 2008.
 
-**Requirements**
+Requirements:
 
--   The server hosting WDS must be running any of the server operating systems designated in the **Applies To** list at the beginning of this topic.
--   Client computers must be running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
+-   The server that hosts WDS must be running a server operating system that's designated in the **Applies to** list at the beginning of this article.
+-   Client computers must be running a client operating system that's designated in the **Applies to** list at the beginning of this article.
 
-The following steps can be used to configure Network Unlock on these older systems.
+Follow these steps to configure Network Unlock on these older systems.
 
-1.  [Install the WDS Server role](#bkmk-installwdsrole)
-2.  [Confirm the WDS Service is running](#bkmk-confirmwdsrunning)
-3.  [Install the Network Unlock feature](#bkmk-installnufeature)
-4.  [Create the Network Unlock certificate](#bkmk-createcert)
-5.  [Deploy the private key and certificate to the WDS server](#bkmk-deploycert)
+1.  [Install the WDS Server role.](#bkmk-installwdsrole)
+2.  [Confirm the WDS service is running.](#bkmk-confirmwdsrunning)
+3.  [Install the Network Unlock feature.](#bkmk-installnufeature)
+4.  [Create the Network Unlock certificate.](#bkmk-createcert)
+5.  [Deploy the private key and certificate to the WDS server.](#bkmk-deploycert)
 6.  Configure registry settings for Network Unlock:
 
-    Apply the registry settings by running the following certutil script (assuming your network unlock certificate file is called **BitLocker-NetworkUnlock.cer**) on each computer running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
-```console
-        certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UsePIN /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMPIN /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPM /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKey /t REG_DWORD /d 2 /f
-        reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
-```
+    Apply the registry settings by running the following `certutil` script (assuming your Network Unlock certificate file is called *BitLocker-NetworkUnlock.cer*) on each computer that runs a client operating system that's designated in the **Applies to** list at the beginning of this article.
 
-7.  Set up a TPM protector on the clients
-8.  Reboot the clients to add the Network (Certificate Based) protector
+    ```console
+            certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UsePIN /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMPIN /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPM /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKey /t REG_DWORD /d 2 /f
+            reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
+    ```
+
+7.  Set up a TPM protector on the clients.
+8.  Reboot the clients to add the **Network (Certificate Based)** protector.
 
 ## See also
 
