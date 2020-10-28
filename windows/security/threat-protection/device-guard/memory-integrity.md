@@ -18,7 +18,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Memory integrity is a feature of Windows that ensures code running in the Windows kernel is securely designed and trustworthy. It uses hardware virtualization and Hyper-V to protect Windows kernel mode processes from the injection and execution of malicious or unverified code. The integrity of code that runs on Windows is validated by memory integrity, making Windows resistant to attacks from malicious software. Memory integrity is a powerful security boundary that helps to block many types of malware from running in Windows 10 and Windows Server 2016 environments.
 

@@ -1,5 +1,5 @@
 ---
-title: Change history for [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+title: Change history for [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 ms.reviewer: 
 ms.author: dansimp
 description: This topic lists new and updated topics in the WWindows Defender ATP content set.
