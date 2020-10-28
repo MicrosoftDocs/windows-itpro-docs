@@ -1,5 +1,5 @@
 ---
-title: Vulnerable devices report- threat and vulnerability management
+title: Vulnerable devices report - threat and vulnerability management
 description: A report showing vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
 keywords: mdatp-tvm vulnerable devices, mdatp, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Vulnerable devices report- threat and vulnerability management
+# Vulnerable devices report - threat and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,6 +31,7 @@ ms.topic: article
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -51,13 +52,13 @@ There are two columns:
 
 Each device is counted only once according to the most severe vulnerability found on that device.
 
-![One graph of current device vulnerability severity levels, and one graph showing levels over time](images/tvm-report-severity.png)
+![One graph of current device vulnerability severity levels, and one graph showing levels over time.](images/tvm-report-severity.png)
 
 ## Exploit availability graphs
 
 Each device is counted only once based on the highest level of known exploit.
 
-![One graph of current device exploit availability, and one graph showing availability over time](images/tvm-report-exploit-availability.png)
+![One graph of current device exploit availability, and one graph showing availability over time.](images/tvm-report-exploit-availability.png)
 
 ## Vulnerability age graphs
 
@@ -81,5 +82,3 @@ The number of devices on each Windows 10 version that are exposed due to vulnera
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)
-
-
