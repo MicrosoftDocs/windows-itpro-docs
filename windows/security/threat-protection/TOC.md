@@ -275,6 +275,7 @@
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
+#### [Privacy](microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
