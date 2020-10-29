@@ -2091,6 +2091,225 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+
+### ADMX_WindowsExplorer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-checksamesourceandtargetforfranddfs" id="admx-windowsexplorer-checksamesourceandtargetforfranddfs">ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-classicshell" id="admx-windowsexplorer-classicshell">ADMX_WindowsExplorer/ClassicShell</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-confirmfiledelete" id="admx-windowsexplorer-confirmfiledelete">ADMX_WindowsExplorer/ConfirmFileDelete</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-defaultlibrarieslocation" id="admx-windowsexplorer-defaultlibrarieslocation">ADMX_WindowsExplorer/DefaultLibrariesLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-disablebinddirectlytopropertysetstorage" id="admx-windowsexplorer-disablebinddirectlytopropertysetstorage">ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-disableindexedlibraryexperience" id="admx-windowsexplorer-disableindexedlibraryexperience">ADMX_WindowsExplorer/DisableIndexedLibraryExperience</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-disableknownfolders" id="admx-windowsexplorer-disableknownfolders">ADMX_WindowsExplorer/DisableKnownFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-disablesearchboxsuggestions" id="admx-windowsexplorer-disablesearchboxsuggestions">ADMX_WindowsExplorer/DisableSearchBoxSuggestions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-enableshellshortcuticonremotepath" id="admx-windowsexplorer-enableshellshortcuticonremotepath">ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-enablesmartscreen" id="admx-windowsexplorer-enablesmartscreen">ADMX_WindowsExplorer/EnableSmartScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-enforceshellextensionsecurity" id="admx-windowsexplorer-enforceshellextensionsecurity">ADMX_WindowsExplorer/EnforceShellExtensionSecurity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-explorerribbonstartsminimized" id="admx-windowsexplorer-explorerribbonstartsminimized">ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-hidecontentviewmodesnippets" id="admx-windowsexplorer-hidecontentviewmodesnippets">ADMX_WindowsExplorer/HideContentViewModeSnippets</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-internet" id="admx-windowsexplorer-iz-policy-opensearchpreview-internet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown" id="admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-intranet" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-localmachine" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachine">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-restricted" id="admx-windowsexplorer-iz-policy-opensearchpreview-restricted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown" id="admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-trusted" id="admx-windowsexplorer-iz-policy-opensearchpreview-trusted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown" id="admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-internet" id="admx-windowsexplorer-iz-policy-opensearchquery-internet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown" id="admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-intranet" id="admx-windowsexplorer-iz-policy-opensearchquery-intranet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown" id="admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-localmachine" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachine">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-restricted" id="admx-windowsexplorer-iz-policy-opensearchquery-restricted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown" id="admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-trusted" id="admx-windowsexplorer-iz-policy-opensearchquery-trusted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown" id="admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-linkresolveignorelinkinfo" id="admx-windowsexplorer-linkresolveignorelinkinfo">ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-maxrecentdocs" id="admx-windowsexplorer-maxrecentdocs">ADMX_WindowsExplorer/MaxRecentDocs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nobackbutton" id="admx-windowsexplorer-nobackbutton">ADMX_WindowsExplorer/NoBackButton</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nocdburning" id="admx-windowsexplorer-nocdburning">ADMX_WindowsExplorer/NoCDBurning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nocachethumbnailpictures" id="admx-windowsexplorer-nocachethumbnailpictures">ADMX_WindowsExplorer/NoCacheThumbNailPictures</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nochangeanimation" id="admx-windowsexplorer-nochangeanimation">ADMX_WindowsExplorer/NoChangeAnimation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nochangekeyboardnavigationindicators" id="admx-windowsexplorer-nochangekeyboardnavigationindicators">ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nodfstab" id="admx-windowsexplorer-nodfstab">ADMX_WindowsExplorer/NoDFSTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nodrives" id="admx-windowsexplorer-nodrives">ADMX_WindowsExplorer/NoDrives</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noentirenetwork" id="admx-windowsexplorer-noentirenetwork">ADMX_WindowsExplorer/NoEntireNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nofilemru" id="admx-windowsexplorer-nofilemru">ADMX_WindowsExplorer/NoFileMRU</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nofilemenu" id="admx-windowsexplorer-nofilemenu">ADMX_WindowsExplorer/NoFileMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nofolderoptions" id="admx-windowsexplorer-nofolderoptions">ADMX_WindowsExplorer/NoFolderOptions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nohardwaretab" id="admx-windowsexplorer-nohardwaretab">ADMX_WindowsExplorer/NoHardwareTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nomanagemycomputerverb" id="admx-windowsexplorer-nomanagemycomputerverb">ADMX_WindowsExplorer/NoManageMyComputerVerb</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nomycomputershareddocuments" id="admx-windowsexplorer-nomycomputershareddocuments">ADMX_WindowsExplorer/NoMyComputerSharedDocuments</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nonetconnectdisconnect" id="admx-windowsexplorer-nonetconnectdisconnect">ADMX_WindowsExplorer/NoNetConnectDisconnect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nonewappalert" id="admx-windowsexplorer-nonewappalert">ADMX_WindowsExplorer/NoNewAppAlert</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noplacesbar" id="admx-windowsexplorer-noplacesbar">ADMX_WindowsExplorer/NoPlacesBar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-norecyclefiles" id="admx-windowsexplorer-norecyclefiles">ADMX_WindowsExplorer/NoRecycleFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-norunasinstallprompt" id="admx-windowsexplorer-norunasinstallprompt">ADMX_WindowsExplorer/NoRunAsInstallPrompt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nosearchinternettryharderbutton" id="admx-windowsexplorer-nosearchinternettryharderbutton">ADMX_WindowsExplorer/NoSearchInternetTryHarderButton</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nosecuritytab" id="admx-windowsexplorer-nosecuritytab">ADMX_WindowsExplorer/NoSecurityTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noshellsearchbutton" id="admx-windowsexplorer-noshellsearchbutton">ADMX_WindowsExplorer/NoShellSearchButton</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nostrcmplogical" id="admx-windowsexplorer-nostrcmplogical">ADMX_WindowsExplorer/NoStrCmpLogical</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noviewcontextmenu" id="admx-windowsexplorer-noviewcontextmenu">ADMX_WindowsExplorer/NoViewContextMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noviewondrive" id="admx-windowsexplorer-noviewondrive">ADMX_WindowsExplorer/NoViewOnDrive</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-nowindowshotkeys" id="admx-windowsexplorer-nowindowshotkeys">ADMX_WindowsExplorer/NoWindowsHotKeys</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-noworkgroupcontents" id="admx-windowsexplorer-noworkgroupcontents">ADMX_WindowsExplorer/NoWorkgroupContents</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-placesbar" id="admx-windowsexplorer-placesbar">ADMX_WindowsExplorer/PlacesBar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-promptrunasinstallnetpath" id="admx-windowsexplorer-promptrunasinstallnetpath">ADMX_WindowsExplorer/PromptRunasInstallNetPath</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-recyclebinsize" id="admx-windowsexplorer-recyclebinsize">ADMX_WindowsExplorer/RecycleBinSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-shellprotocolprotectedmodetitle-1" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-1">ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-shellprotocolprotectedmodetitle-2" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-2">ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-showhibernateoption" id="admx-windowsexplorer-showhibernateoption">ADMX_WindowsExplorer/ShowHibernateOption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-showsleepoption" id="admx-windowsexplorer-showsleepoption">ADMX_WindowsExplorer/ShowSleepOption</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-tryharderpinnedlibrary" id="admx-windowsexplorer-tryharderpinnedlibrary">ADMX_WindowsExplorer/TryHarderPinnedLibrary</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsexplorer.md#admx-windowsexplorer-tryharderpinnedopensearch" id="admx-windowsexplorer-tryharderpinnedopensearch">ADMX_WindowsExplorer/TryHarderPinnedOpenSearch</a>
+  </dd>
+</dl>
+
 ### ADMX_WindowsMediaDRM policies  
 
 <dl>
