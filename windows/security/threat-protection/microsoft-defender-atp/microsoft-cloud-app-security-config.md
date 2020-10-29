@@ -27,8 +27,6 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 To benefit from Microsoft Defender Advanced Threat Protection (ATP) cloud app discovery signals, turn on Microsoft Cloud App Security integration.
 
 >[!NOTE]
