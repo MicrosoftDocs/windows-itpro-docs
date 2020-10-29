@@ -86,7 +86,8 @@ The threat insights icon is highlighted if there are associated exploits in the 
 
 If you select a CVE, a flyout panel will open with more information such as the vulnerability description, details, threat insights, and exposed devices.
 
-The "OS Feature" category is shown in relevant scenarios.
+- The "OS Feature" category is shown in relevant scenarios
+- You can go to the related security recommendation for every CVE with exposed device
 
  ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
 
@@ -111,12 +112,12 @@ View related weaknesses information in the device page.
 1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
 2. In the **Devices list** page, select the device name that you want to investigate.
 
-    ![Screenshot of device list with selected device to investigate](images/tvm_machinetoinvestigate.png)
+    ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)
 
 3. The device page will open with details and response options for the device you want to investigate.
 4. Select **Discovered vulnerabilities**.
 
-    ![Screenshot of the device page with details and response options](images/tvm-discovered-vulnerabilities.png)
+    ![Device page with details and response options.](images/tvm-discovered-vulnerabilities.png)
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -142,4 +143,5 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
 - [Security recommendations](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
+- [Dashboard insights](tvm-dashboard-insights.md)
 - [View and organize the Microsoft Defender ATP Devices list](machines-view-overview.md)
