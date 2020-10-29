@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/26/2020
+ms.date: 10/29/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -69,23 +69,27 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
-All our updates contain performance improvements, serviceability improvements, and integration improvements (Cloud, Microsoft 365 Defender).
+All our updates contain 
+- performance improvements;
+- serviceability improvements; and 
+- integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 
 
 <details>
-<summary> October-2020 (Platform: 4.18.2010.x | Engine: 1.1.17500.x)</summary>
+<summary> October-2020 (Platform: 4.18.2010.x | Engine: 1.1.17600.5)</summary>
 
-&ensp;Security intelligence update version: **1.325.x.x**  
-&ensp;Released: **date**  
+&ensp;Security intelligence update version: **1.32x.x.x**  
+&ensp;Released: **October 29, 2020**  
 &ensp;Platform: **4.18.2010.x**  
-&ensp;Engine: **1.1.17500.x**  
+&ensp;Engine: **1.1.17600.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- item
-- item
-- item
+- New descriptions for special threat categories
+- Improved emulation capabilities
+- Improved host address allow/block capabilities
+- Disallow clearing exclusions using local PowerShell if a no-override policy is active
 
 ### Known Issues
 No known issues  
