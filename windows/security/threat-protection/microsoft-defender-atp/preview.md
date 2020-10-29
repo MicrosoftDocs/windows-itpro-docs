@@ -27,7 +27,7 @@ ms.topic: conceptual
 >The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
@@ -60,8 +60,6 @@ The following features are included in the preview release:
 
 - [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
- - [Threat and vulnerability management supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR> Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019. <BR> <BR> Secure Configuration Assessment (SCA) supports Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, and Windows Server 2019.
-
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
 
 - [Information protection](information-protection-in-windows-overview.md)<BR>
@@ -69,11 +67,6 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 
     >[!NOTE]
     >Partially available from Windows 10, version 1809.
-
-- [Integration with Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md) <BR> Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender ATP monitored devices.
-
-    >[!NOTE]
-    >Available from Windows 10, version 1809 or later.
 
 - [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client devices.
 
