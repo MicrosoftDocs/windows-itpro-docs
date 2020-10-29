@@ -39,7 +39,7 @@ EDR in block mode is also integrated with [threat & vulnerability management](ht
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
-> EDR in block mode is currently in preview, available to organizations who have opted in to receive **[preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)**. To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
+> To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
 
 ## What happens when something is detected?
 
