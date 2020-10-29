@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 # Privacy information - Microsoft Defender ATP for iOS
 
->[!NOTE] 
+> [!NOTE]
 > Microsoft Defender ATP for iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
 
 Microsoft Defender ATP for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Microsoft Defender ATP. The information is collected to help keep Microsoft Defender ATP for iOS secure, up-to-date, performing as expected, and to support the service.
@@ -88,7 +88,6 @@ Feedback Data is collected through in-app feedback provided by the user.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user. 
 
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
-
 
 
 
