@@ -24,20 +24,20 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-There are three phases in deploying Microsoft Defender ATP:
+There are three phases in deploying Defender for Endpoint:
 
 |Phase | Description | 
 |:-------|:-----|
-| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Microsoft Defender ATP: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
+| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
 |  ![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
 |  ![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. 
 
 
 
-The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
+The deployment guide will guide you through the recommended path in deploying Defender for Endpoint. 
 
 If you're unfamiliar with the general deployment planning steps, check out the [Plan deployment](deployment-strategy.md) topic to get a  high-level overview of the general deployment steps and methods.
 
@@ -47,9 +47,9 @@ The following is in scope for this deployment guide:
 
 -   Use of Microsoft Endpoint Configuration Manager and Microsoft Endpoint Manager to onboard endpoints into the service and configure capabilities
 
--   Enabling Microsoft Defender ATP endpoint detection and response (EDR)  capabilities
+-   Enabling Defender for Endpoint endpoint detection and response (EDR)  capabilities
 
--   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
+-   Enabling Defender for Endpoint endpoint protection platform (EPP)
     capabilities
 
     -   Next-generation protection
@@ -61,7 +61,6 @@ The following is in scope for this deployment guide:
 
 The following are out of scope of this deployment guide:
 
--   Configuration of third-party solutions that might integrate with Microsoft
-    Defender ATP
+-   Configuration of third-party solutions that might integrate with Defender for Endpoint
 
 -   Penetration testing in production environment
