@@ -43,7 +43,7 @@ Microsoft Defender ATP currently supports the following specific SIEM solution t
 - IBM QRadar
 - Micro Focus ArcSight
 
-Other SIEM solutions (such as Splunk, RSA NetWitness) are supported through a different integration model based on the new Alert API. For more information, view the [Partner application](https://df.securitycenter.microsoft.com/interoperability/partners) page and select the Security Information and Analytics section for full details.
+Other SIEM solutions (such as Splunk, RSA NetWitness) are supported through a different integration model based on the new Alert API. For more information, view the [Partner application](https://securitycenter.microsoft.com/interoperability/partners) page and select the Security Information and Analytics section for full details.
 
 To use either of these supported SIEM tools you'll need to:
 
