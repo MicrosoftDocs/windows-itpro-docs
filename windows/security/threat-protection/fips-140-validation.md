@@ -27,9 +27,9 @@ Microsoft maintains an active commitment to meeting the requirements of the FIPS
 ## Using Windows in a FIPS 140-2 approved mode of operation
 
 Windows 10 and Windows Server may be configured to run in a FIPS 140-2 approved mode of operation. This is commonly referred to as “FIPS mode.”  When this mode is enabled, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows cryptographic operations are run. These self-tests are run in accordance with FIPS 140-2 Section 4.9 and are utilized to ensure that the modules are functioning properly. The Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library are the only modules affected by this mode of operation. The FIPS 140-2 approved mode of operation will not prevent Windows and its subsystems from using non-FIPS validated cryptographic algorithms. For applications or components beyond the Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library, FIPS mode is merely advisory.
- 
+
 While US government regulations continue to mandate that FIPS mode be enabled on government computers running Windows, our recommendation is that it is each customer’s decision to make when considering enabling FIPS mode. There are many applications and protocols that look to the FIPS mode policy to determine which cryptographic functionality should be utilized in a given solution. We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode. 
- 
+
 Achieving this FIPS 140-2 approved mode of operation of Windows requires administrators to complete all four steps outlined below.
 
 ### Step 1: Ensure FIPS 140-2 validated cryptographic modules are installed
@@ -87,6 +87,76 @@ When Windows is configured to operate in FIPS 140 approved mode on both client a
 The following tables identify the cryptographic modules used in an operating system, organized by release.
 
 ## Modules used by Windows
+
+##### Windows 10 Fall 2018 Update (Version 1809)
+
+Validated Editions: Home, Pro, Enterprise, Education
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><b>Cryptographic Module</b></td>
+<td><b>Version (link to Security Policy)</b></td>
+<td><b>FIPS Certificate #</b></td>
+<td><b>Algorithms</b></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3644.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3644">#3644</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3615.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3615">#3615</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3651.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3651">#3651</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Virtual TPM</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3690.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3690">#3690</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
 
 ##### Windows 10 Spring 2018 Update (Version 1803)
 
@@ -1334,6 +1404,76 @@ Validated Editions: Ultimate Edition
 </table>
 
 ## Modules used by Windows Server
+
+##### Windows Server 2019 (Version 1809)
+
+Validated Editions: Standard, Datacenter
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><b>Cryptographic Module</b></td>
+<td><b>Version (link to Security Policy)</b></td>
+<td><b>FIPS Certificate #</b></td>
+<td><b>Algorithms</b></td>
+</tr>
+<tr class="even">
+<td>Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3197.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3197">#3197</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Kernel Mode Cryptographic Primitives Library</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196">#3196</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3644.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3644">#3644</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Windows OS Loader</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3615.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3615">#3615</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Secure Kernel Code Integrity</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3651.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3651">#3651</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>BitLocker Dump Filter</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092">#3092</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="even">
+<td>Boot Manager</td>
+<td><a href="https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089">#3089</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+<tr class="odd">
+<td>Virtual TPM</td>
+<td><a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3690.pdf">10.0.17763</a></td>
+<td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3690">#3690</a></td>
+<td>See Security Policy and Certificate page for algorithm information</td>
+</tr>
+
+</tbody>
+</table>
 
 ##### Windows Server (Version 1803)
 
