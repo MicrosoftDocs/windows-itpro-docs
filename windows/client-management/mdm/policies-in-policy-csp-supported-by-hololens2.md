@@ -86,7 +86,6 @@ ms.date: 10/08/2020
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
 - [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage)
 - [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage)
-- [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
