@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender ATP in rings
-description: Learn how deploy Microsoft Defender ATP in rings
+description: Learn how to deploy Microsoft Defender ATP in rings
 keywords: deploy, rings, evaluate, pilot, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -50,16 +50,20 @@ Table 1 provides an example of the deployment rings you might use.
 |**Deployment ring**|**Description**|
 |:-----|:-----|
 Evaluate | Ring 1: Identify 50 systems for pilot testing 
-Pilot | Ring 2: 50-100  systems <br> 	
-Full deployment | Ring 3: Roll out service to the rest of environment in larger increments.
+Pilot | Ring 2: Identify the next 50-100  endpoints in production environment <br> 	
+Full deployment | Ring 3: Roll out service to the rest of environment in larger increments
 
 
-### Evaluate
-Identify a small number of test machines in your environment to onboard to the service. Ideally, these machines would be less than 50 endpoints. 
 
-#### Exit criteria
+### Exit criteria
+An example set of exit criteria for these rings can include:
 - Devices show up in the device inventory list
 - Alerts appear in dashboard
+- [Run a detection test](run-detection-test.md)
+- [Run a simulated attack on a device](attack-simulations.md)
+
+### Evaluate
+Identify a small number of test machines in your environment to onboard to the service. Ideally, these machines would be fewer than 50 endpoints. 
 
 
 ### Pilot
@@ -76,10 +80,6 @@ The following table shows the supported endpoints and the corresponding tool you
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
-#### Exit criteria
-- Devices show up in the device inventory list
-- [Run a detection test](run-detection-test.md)
-- [Run a simulated attack on a device](attack-simulations.md)
 
 
 ### Full deployment
@@ -92,16 +92,15 @@ Use the following material to select the appropriate Microsoft Defender ATP arch
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender ATP deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
-#### Exit criteria?
-- Devices show up in the device inventory list
+
 
 
 ## Existing deployments
 
 ### Windows endpoints
-For Windows and/or Windows Servers you select several machines to test ahead of time (before patch Tuesday) by using the **Security Update Validation program (SUVP)**.
+For Windows and/or Windows Servers, you select several machines to test ahead of time (before patch Tuesday) by using the **Security Update Validation program (SUVP)**.
 
-For more information see:
+For more information, see:
 - [What is the Security Update Validation Program](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Microsoft Malware Protection Center Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
