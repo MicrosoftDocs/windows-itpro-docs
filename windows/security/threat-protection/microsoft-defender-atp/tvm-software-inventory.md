@@ -52,24 +52,6 @@ The **Software inventory** page opens with a list of software installed in your 
 
 Select the software that you want to investigate. A flyout panel will open with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
 
-![Flyout example page of "Visual Studio 2017" from the software inventory page.](images/tvm-software-inventory-flyout500.png)
-
-## Software pages
-
-You can view software pages a few different ways:
-
-- Software inventory page > Select a software name > Select **Open software page** in the flyout
-- [Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout
-- [Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout
-
- A full page will appear with all the details of a specific software and the following information:
-
-- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score
-- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices
-- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
-
-    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
-
 ### Software that isn't supported
 
 Software that isn't currently supported by threat & vulnerability management is still present in the Software inventory page. Because it is not supported, only limited data will be available. Sort by unsupported software with the ‘Not available’ filter option in the Weakness section.
@@ -90,11 +72,27 @@ Software with no CPE can show up under this device specific software inventory.
 
 ### Software evidence
 
-See evidence of where we detected a specific software on a device from the registry, disk, or both.
+See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory. 
 
-You can find it on any device in the device software inventory. Select a software name to open the flyout, and look for the section called "Software Evidence."
+Select a software name to open the flyout, and look for the section called "Software Evidence."
 
 ![Software evidence example of Windows 10 from the devices list, showing software evidence registry path.](images/tvm-software-evidence.png)
+
+## Software pages
+
+You can view software pages a few different ways:
+
+- Software inventory page > Select a software name > Select **Open software page** in the flyout
+- [Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout
+- [Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout
+
+ A full page will appear with all the details of a specific software and the following information:
+
+- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score
+- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices
+- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
+
+    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 
 ## Report inaccuracy
 
