@@ -1202,9 +1202,9 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting lets you turn off cloud optimized content in all Windows experiences.
 
-If you enable this policy, Windows experiences that use the cloud optimized content client component will present the default fallback content.
+If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
 
-If you disable or do not configure this policy, Windows experiences will be able to use cloud optimized content.
+If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1571,6 +1571,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 
