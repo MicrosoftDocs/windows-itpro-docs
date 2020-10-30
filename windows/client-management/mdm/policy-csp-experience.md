@@ -74,6 +74,9 @@ manager: dansimp
     <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
   </dd>
   <dd>
+    <a href="#experience-disablecloudoptimizedcontent">Experience/DisableCloudOptimizedContent</a>
+  </dd>
+  <dd>
     <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
@@ -1149,6 +1152,74 @@ The following list shows the supported values:
 -   0 – None.
 -   1 (default) – Windows spotlight enabled.
 -   2 – placeholder only for future extension. Using this value has no effect.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting lets you turn off cloud optimized content in all Windows experiences.
+
+If you enable this policy, Windows experiences that use the cloud optimized content client component will present the default fallback content.
+
+If you disable or do not configure this policy, Windows experiences will be able to use cloud optimized content.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off cloud optimized content*
+-   GP name: *DisableCloudOptimizedContent*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   1 – Enabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
