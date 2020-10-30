@@ -275,6 +275,7 @@
 #### [MixedReality](policy-csp-mixedreality.md)
 #### [MSSecurityGuide](policy-csp-mssecurityguide.md)
 #### [MSSLegacy](policy-csp-msslegacy.md)
+#### [Multitasking](policy-csp-multitasking.md)
 #### [NetworkIsolation](policy-csp-networkisolation.md)
 #### [Notifications](policy-csp-notifications.md)
 #### [Power](policy-csp-power.md)
