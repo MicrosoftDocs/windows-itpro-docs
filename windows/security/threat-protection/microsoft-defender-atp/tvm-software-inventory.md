@@ -28,7 +28,7 @@ ms.topic: conceptual
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-The software inventory in threat and vulnerability management is a list of all the software in your organization with known vulnerabilities. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
+The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don’t have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
@@ -70,12 +70,29 @@ You can view software pages a few different ways:
 
     ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 
-## Software evidence
+### Software that isn't supported
 
-We now show evidence of where we detected a specific software on a device from the registry, disk or both.
-You can find it on any devices found in the [devices list](machines-view-overview.md) in a section called "Software Evidence."
+Software that isn't currently supported by threat & vulnerability management is still present in the Software inventory page. Because it is not supported, only limited data will be available. Sort by unsupported software with the ‘Not available’ filter option in the Weakness section.
 
-From the Microsoft Defender Security Center navigation panel, go to the **Devices list**. Select the name of a device to open the device page (like Computer1) > select the **Software inventory** tab > select the software name to open the flyout and view software evidence.
+The following indicates that a software is not supported:
+
+- Weaknesses field shows "Not available"
+- Exposed devices field shows a dash
+- Informational text added in side panel and in software page
+
+Currently, products without a CPE are not shown in the software inventory page, only in the device level software inventory.
+
+## Software inventory on devices
+
+From the Microsoft Defender Security Center navigation panel, go to the **[Devices list](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1) > select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
+
+Software with no CPE can show up under this device specific software inventory.
+
+### Software evidence
+
+See evidence of where we detected a specific software on a device from the registry, disk, or both.
+
+You can find it on any device in the device software inventory. Select a software name to open the flyout, and look for the section called "Software Evidence."
 
 ![Software evidence example of Windows 10 from the devices list, showing software evidence registry path.](images/tvm-software-evidence.png)
 
