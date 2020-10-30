@@ -41,6 +41,8 @@ The deployment guide will guide you through the recommended path in deploying Mi
 
 If you're unfamiliar with the general deployment planning steps, check out the [Plan deployment](deployment-strategy.md) topic to get a  high-level overview of the general deployment steps and methods.
 
+
+
 ## In Scope
 
 The following is in scope for this deployment guide:
