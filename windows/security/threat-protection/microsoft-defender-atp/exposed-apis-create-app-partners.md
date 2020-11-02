@@ -17,26 +17,26 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Partner access through Microsoft Defender ATP APIs
+# Partner access through Microsoft Defender for Endpoint APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This page describes how to create an AAD application to get programmatic access to Microsoft Defender ATP on behalf of your customers.
+This page describes how to create an AAD application to get programmatic access to Defender for Endpoint on behalf of your customers.
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create a **multi-tenant** AAD application.
-- Get authorized(consent) by your customer administrator for your application to access Microsoft Defender ATP resources it needs.
+- Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft Defender ATP API.
 
-The following steps with guide you how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
+The following steps with guide you how to create an AAD application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
 ## Create the multi-tenant app
 
@@ -57,7 +57,7 @@ The following steps with guide you how to create an AAD application, get an acce
 	![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
 
 
-4. Allow your Application to access Microsoft Defender ATP and assign it with the minimal set of permissions required to complete the integration.
+4. Allow your Application to access Microsoft Defender for Endpoint and assign it with the minimal set of permissions required to complete the integration.
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
@@ -102,7 +102,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 8. Add the application to your customer's tenant.
 
-    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
+    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender for Endpoint application on behalf of your customer.
 
     A user with **Global Administrator** from your customer's tenant need to click the consent link and approve your application.
 
@@ -194,7 +194,7 @@ Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 - Open a command window
 - Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender ATP application
+- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender for Endpoint application
 - Run the below command:
 
 ```
@@ -217,9 +217,9 @@ Sanity check to make sure you got a correct token:
 
 ![Image of token validation](images/webapp-decoded-token.png)
 
-## Use the token to access Microsoft Defender ATP API
+## Use the token to access Microsoft Defender for Endpoint API
 
-- Choose the API you want to use, for more information, see [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- Choose the API you want to use, for more information, see [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
@@ -237,5 +237,5 @@ Sanity check to make sure you got a correct token:
     ```
 
 ## Related topics
-- [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
-- [Access Microsoft Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md)
+- [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+- [Access Microsoft Defender for Endpoint on behalf of a user](exposed-apis-create-app-nativeapp.md)

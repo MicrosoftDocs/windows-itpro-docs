@@ -19,15 +19,15 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Enable Microsoft Defender ATP Insider Device
+# Enable Microsoft Defender for Endpoint Insider Device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-Endpoint detection and response capabilities in Microsoft Defender ATP for Mac are now in preview. To get these and other preview features, you must set up your Mac device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
+Endpoint detection and response capabilities in Defender for Endpoint for Mac are now in preview. To get these and other preview features, you must set up your Mac device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
 >[!IMPORTANT]
->Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
+>Make sure you have enabled [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
 
 ## Enable the Insider program with Jamf
 
@@ -148,7 +148,7 @@ For versions earlier than 100.78.0, run:
 
 ### Verify you are running the correct version
 
-To get the latest version of the Microsoft Defender ATP for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
+To get the latest version of the Microsoft Defender for Endpoint  for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
 To verify you are running the correct version, run ‘mdatp --health’ on the device.
 

@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# OData queries with Microsoft Defender ATP
+# OData queries with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 

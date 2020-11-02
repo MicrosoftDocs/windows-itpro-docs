@@ -17,33 +17,33 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Use Microsoft Defender ATP APIs
+# Use Microsoft Defender for Endpoint APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This page describes how to create an application to get programmatic access to Microsoft Defender ATP on behalf of a user.
+This page describes how to create an application to get programmatic access to Defender for Endpoint on behalf of a user.
 
-If you need programmatic access Microsoft Defender ATP without a user, refer to [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md).
+If you need programmatic access Defender for Endpoint without a user, refer to [Access Defender for Endpoint with application context](exposed-apis-create-app-webapp.md).
 
 If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
 - Get an access token using this application
-- Use the token to access Microsoft Defender ATP API
+- Use the token to access Defender for Endpoint API
 
-This page explains how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
+This page explains how to create an AAD application, get an access token to Defender for Endpoint and validate the token.
 
 >[!NOTE]
-> When accessing Microsoft Defender ATP API on behalf of a user, you will need the correct Application permission and user permission.
-> If you are not familiar with user permissions on Microsoft Defender ATP, see [Manage portal access using role-based access control](rbac.md).
+> When accessing Defender for Endpoint API on behalf of a user, you will need the correct Application permission and user permission.
+> If you are not familiar with user permissions on Defender for Endpoint, see [Manage portal access using role-based access control](rbac.md).
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
@@ -63,7 +63,7 @@ This page explains how to create an AAD application, get an access token to Micr
    - **Name:** -Your application name-
    - **Application type:** Public client
 
-4. Allow your Application to access Microsoft Defender ATP and assign it 'Read alerts' permission:
+4. Allow your Application to access Defender for Endpoint and assign it 'Read alerts' permission:
 
     - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
@@ -152,9 +152,9 @@ Sanity check to make sure you got a correct token:
 
 ![Image of token validation](images/nativeapp-decoded-token.png)
 
-## Use the token to access Microsoft Defender ATP API
+## Use the token to access Microsoft Defender for Endpoint API
 
-- Choose the API you want to use - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- Choose the API you want to use - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
@@ -173,5 +173,5 @@ Sanity check to make sure you got a correct token:
     ```
 
 ## Related topics
-- [Microsoft Defender ATP APIs](exposed-apis-list.md)
-- [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md)
+- [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+- [Access Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)

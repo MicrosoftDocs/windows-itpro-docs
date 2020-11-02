@@ -21,7 +21,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Review attack surface reduction events in Event Viewer to monitor what rules or settings are working. You can also determine if any settings are too "noisy" or impacting your day to day workflow.
 
@@ -29,7 +29,7 @@ Reviewing events is handy when you're evaluating the features. You can enable au
 
 This article lists all the events, their associated feature or setting, and describes how to create custom views to filter to specific events.
 
-Get detailed reporting into events and blocks as part of Windows Security if you have an E5 subscription and use [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
+Get detailed reporting into events and blocks as part of Windows Security if you have an E5 subscription and use [Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 ## Use custom views to review attack surface reduction capabilities
 

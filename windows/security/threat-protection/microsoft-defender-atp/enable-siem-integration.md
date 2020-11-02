@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Enable SIEM integration in Microsoft Defender ATP
+# Enable SIEM integration in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
 Enable security information and event management (SIEM) integration so you can pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API.
 
 >[!NOTE]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
->- The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+>- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
+>- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+>- The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Prerequisites
 - The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is someone with the following roles: Security Administrator and either Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
@@ -71,15 +71,15 @@ Enable security information and event management (SIEM) integration so you can p
    > [!NOTE]
    > You'll need to generate a new Refresh token every 90 days. 
 
-6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
+6. Follow the instructions for [creating an Azure AD app registration for Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
 
 You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft Defender Security Center.
 
-## Integrate Microsoft Defender ATP with IBM QRadar 
+## Integrate Microsoft Defender for Endpoint with IBM QRadar 
 You can configure IBM QRadar to collect detections from Microsoft Defender ATP. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 ## Related topics
-- [Configure HP ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
-- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
+- [Configure HP ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
+- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
