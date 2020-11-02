@@ -79,7 +79,7 @@ All our updates contain
 <details>
 <summary> October-2020 (Platform: 4.18.2010.x | Engine: 1.1.17600.5)</summary>
 
-&ensp;Security intelligence update version: **1.32x.x.x**  
+&ensp;Security intelligence update version: **1.327.7.0**  
 &ensp;Released: **October 29, 2020**  
 &ensp;Platform: **4.18.2010.x**  
 &ensp;Engine: **1.1.17600.5**  
