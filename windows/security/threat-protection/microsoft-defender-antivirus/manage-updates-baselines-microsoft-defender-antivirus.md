@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/29/2020
+ms.date: 11/20/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -89,7 +89,7 @@ All our updates contain
 - New descriptions for special threat categories
 - Improved emulation capabilities
 - Improved host address allow/block capabilities
-- Disallow clearing exclusions using local PowerShell if a no-override policy is active
+- New option in Defender CSP to Ignore merging of local user exclusions
 
 ### Known Issues
 No known issues  
