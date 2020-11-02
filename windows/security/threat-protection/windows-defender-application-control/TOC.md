@@ -22,7 +22,7 @@
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
 ##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Using the WDAC Wizard tool](wdac-wizard.md)
-#### [Create a base WDC policy](wdac-wizard-create-base-policy.md)
+#### [Create a base WDAC policy](wdac-wizard-create-base-policy.md)
 #### [Create a supplemental WDAC policy](wdac-wizard-create-supplemental-policy.md)
 #### [Editing a WDAC policy](wdac-wizard-editing-policy.md)
 #### [Merging multiple WDAC policies](wdac-wizard-merging-policies.md)
