@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-ms.localizationprioauthor: jaimeo
+ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: 
 manager: laurawi
