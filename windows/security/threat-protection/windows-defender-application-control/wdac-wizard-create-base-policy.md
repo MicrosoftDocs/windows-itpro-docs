@@ -49,7 +49,7 @@ Once the base template is selected, give the policy a name and choose where to s
 
 Upon page launch, policy rules will be automatically enabled/disabled depending on the chosen template from the previous page. Choose to enable or disable the desired policy rule options by pressing the slider button next to the policy rule titles. Hovering the mouse over the policy rule title will display a short description of the rule at the bottom of the page. 
 
-**Policy Rules Description**
+### Policy Rules Description
 
 A description of the policy rules, beginning with the left-most column are provided below. 
 
@@ -66,7 +66,7 @@ A description of the policy rules, beginning with the left-most column are provi
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
-**Advanced Policy Rules Description**
+### Advanced Policy Rules Description
 
 Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules. A description of the policy rules are provided below. 
 
@@ -90,7 +90,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 
 File rules in an application control policy will specify the level at which appiations will be identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting the **+ Custom Rules** will open the custom file rule conditions panel to create and customize targeted file rules for your policy. The Wizard supports 4 types of file rules: 
 
-**Publisher**
+### Publisher Rules
 
 The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specifity of the rule.  The table below shows the relationship between the slider placement, the corresponding WDAC rule level and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
 
@@ -104,11 +104,11 @@ The Publisher file rule type uses properties in the code signing certificate cha
 
 ![Custom filepublisher file rule creation](images/wdac-wizard-custom-publisher-rule.png)
 
-**Path**
+### Filepath Rules
 
-Filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. To create a fileopath rule, simply select the file using the *Browse* button. 
+Filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. To create a filepath rule, simply select the file using the *Browse* button. 
 
-**File Attributes**
+### File Attribute Rules
 
 The Wizard supports the creation of [file name rules](select-types-of-rules-to-create#windows-defender-application-control-filename-rules) based on authenticated file attributes. File name rules are useful when an application and its dependencies (eg. DLLs) may all share the same product name, for instance. This allows users to easily create targeted policies based on the Product Name filename rule level. To select the file attribute to create the rule, move the slider on the Wizard to the desired attribute. The table below describes each of the supported file attributes off which to create a rule. 
 
@@ -122,12 +122,12 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 
 ![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
 
-**File Hash**
+### File Hash Rules
 
 Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule cannot be created using the specified file rule level. 
 
 
-#### Deleting Signing Rules ####
+#### Deleting Signing Rules 
   
 The policy signing rules list table on the left of the page will document the allow and deny rules in the template, as well as any custom rules you create. Template signing rules and custom rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you will be prompted for additional confirmation. Select `Yes` to remove the rule from the policy and the rules table. 
 
