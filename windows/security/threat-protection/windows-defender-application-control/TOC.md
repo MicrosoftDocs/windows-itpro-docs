@@ -20,6 +20,12 @@
 ##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
 ##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
+##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
+### [Using the WDAC Wizard tool](wdac-wizard.md)
+#### [Create a base WDAC policy](wdac-wizard-create-base-policy.md)
+#### [Create a supplemental WDAC policy](wdac-wizard-create-supplemental-policy.md)
+#### [Editing a WDAC policy](wdac-wizard-editing-policy.md)
+#### [Merging multiple WDAC policies](wdac-wizard-merging-policies.md)
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
