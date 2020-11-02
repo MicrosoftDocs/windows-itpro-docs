@@ -9,7 +9,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.date: 11/27/2019
 ms.reviewer: 
 manager: dansimp
