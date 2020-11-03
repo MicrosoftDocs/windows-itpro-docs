@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/29/2020
+ms.date: 11/03/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -22,8 +22,8 @@ Answering frequently asked questions about Microsoft Defender Application Guard 
 
 ## Frequently Asked Questions
 
-### Can I enable Application Guard on machines equipped with 4 GB RAM?
-We recommend 8 GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
+### Can I enable Application Guard on machines equipped with 4-GB RAM?
+We recommend 8-GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is four cores.)                                                   
 
@@ -101,7 +101,7 @@ Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudRes
 Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
 For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
@@ -139,23 +139,26 @@ In the Microsoft Defender Firewall user interface go through the following steps
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
-There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to Windows Security-> App and Browser control -> Exploit Protection Setting -> switch CFG to the “use default".
+There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
 
 
 ### How can I have ICS in enabled state yet still use Application Guard?
 
-This is a two-step process.
+ICS is enabled by default in Windows, and it must be enabled in order for Application Guard to function correctly.
 
-Step 1:
+Some enterprise organizations choose to disable ICS for their own security reasons. However, this is not recommended. If ICS is disabled, Application Guard stops working. 
 
-Enable Internet Connection sharing by changing the Group Policy setting *Prohibit use of Internet Connection Sharing on your DNS domain network*, which is part of the MS Security baseline from Enabled to Disabled.
- 
-Step 2:
- 
-1. Disable IpNat.sys from ICS load
-System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1
-2. Configure ICS (SharedAccess) to enabled
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3
-3. Disabling IPNAT (Optional)
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4
-4. Reboot.
+The following procedure describes how to edit registry keys to disable ICS in part.
+
+1. In the Group Policy setting called **Prohibit use of Internet Connection Sharing on your DNS domain network**, set it to **Disabled**. 
+
+2. Disable IpNat.sys from ICS load as follows: <br/> 
+`System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`
+
+3. Configure ICS (SharedAccess) to enabled as follows: <br/>
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3`
+
+4. (This is optional) Disable IPNAT as follows: <br/>
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`
+
+5. Reboot the device.
