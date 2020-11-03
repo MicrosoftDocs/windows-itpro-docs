@@ -90,8 +90,3 @@ Feedback Data is collected through in-app feedback provided by the user.
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
 
 
-
-
-
-
-

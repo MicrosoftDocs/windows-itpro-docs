@@ -53,7 +53,7 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
 
--   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
+-   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/).
 
 -   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
@@ -69,7 +69,7 @@ You can envision user and device management as falling into these two categories
 
 -   **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows 10, your employees can self-provision their devices:
 
-    -   For corporate devices, they can set up corporate access with [Azure AD Join](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-overview/). When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://blogs.technet.microsoft.com/ad/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/), all from the cloud.<br>Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
+    -   For corporate devices, they can set up corporate access with [Azure AD Join](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-overview/). When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.<br>Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
 
     -   Likewise, for personal devices, employees can use a new, simplified [BYOD experience](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-windows10-devices/) to add their work account to Windows, then access work resources on the device.
 
@@ -135,6 +135,6 @@ There are a variety of steps you can take to begin the process of modernizing de
 
 ## Related topics
 
--   [What is Intune?](https://docs.microsoft.com/intune/introduction-intune)
+-   [What is Intune?](https://docs.microsoft.com//mem/intune/fundamentals/what-is-intune)
 -   [Windows 10 Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
 -   [Windows 10 Configuration service Providers](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)

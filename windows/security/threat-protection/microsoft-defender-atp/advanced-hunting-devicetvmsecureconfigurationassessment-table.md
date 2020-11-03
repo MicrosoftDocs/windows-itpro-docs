@@ -45,7 +45,9 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ConfigurationSubcategory` | string |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
 | `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
 | `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
-
+| `IsApplicable` | boolean | Indicates whether the configuration or policy applies to the device |
+| `Context`	| string | Additional contextual information about the configuration or policy |
+| `IsExpectedUserImpactCompliant` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
 ## Related topics
 
