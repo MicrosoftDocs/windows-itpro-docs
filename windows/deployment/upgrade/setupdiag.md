@@ -553,7 +553,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Addreg](./../images/addreg.png)
+![Example of Addreg](./../images/addreg.png)
 
 ## Related topics
 

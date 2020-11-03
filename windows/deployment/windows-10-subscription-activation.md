@@ -40,7 +40,7 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 
 Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise license. For more information, see the [requirements](#windows-10-education-requirements) section.
 
-## In this article
+## Summary
 
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
 - [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
@@ -105,9 +105,9 @@ If the device is running Windows 10, version 1809 or later:
 1. Windows 10, version 1809 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
 2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
 
-![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
-![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
-![Subscription Activation with MFA2](images/sa-mfa3.png)
+![Subscription Activation with MFA example 1](images/sa-mfa1.png)<br>
+![Subscription Activation with MFA example 2](images/sa-mfa2.png)<br>
+![Subscription Activation with MFA example 3](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 

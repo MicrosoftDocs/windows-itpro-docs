@@ -61,7 +61,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 3. Click **Connect** and enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
-    ![Set up a work or school account](images/1-3.png)
+    ![Entering account information when setting up a work or school account](images/1-3.png)
 
 4. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
 
@@ -100,7 +100,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
-    ![Update your password](images/2-3.png)
+    ![Joining device to Azure AD]](images/2-3.png)
 
 4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
@@ -111,7 +111,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     > [!NOTE]
     > Passwords should contain 8-16 characters, including at least one special character or number.
 
-    ![Update your password](images/2-5.png)
+    ![Entering temporary password](images/2-5.png)
 
 6. When asked to make sure this is your organization, verify that the information is correct. If so, click **Join**.
 

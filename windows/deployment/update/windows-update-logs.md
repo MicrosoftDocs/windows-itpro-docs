@@ -29,7 +29,7 @@ The following table describes the log files created by Windows Update.
 |CBS.log|%systemroot%\Logs\CBS|This logs provides insight on the update installation part in the servicing stack.|To troubleshoot the issues related to WU installation.|
 
 ## Generating WindowsUpdate.log 
-To merge and convert WU trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps). 
+To merge and convert WU trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps&preserve-view=tru). 
 
 >[!NOTE]
 >When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpate.log unless you run **Get-WindowsUpdateLog** again. 

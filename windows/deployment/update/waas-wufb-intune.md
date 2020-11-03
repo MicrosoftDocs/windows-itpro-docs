@@ -69,7 +69,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
     >[!NOTE]
     >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
 
-    ![Settings for this policy](images/waas-wufb-intune-step7a.png)
+    ![Settings for the RequireDeferUpgrade policy](images/waas-wufb-intune-step7a.png)
     
 8. For this deployment ring, you're required to enable only CBB, so click **Save Policy**.
 
@@ -156,7 +156,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
     >[!NOTE]
     >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) for the proper syntax.
 
-    ![Settings for this policy](images/waas-wufb-intune-cb2a.png)
+    ![Settings for the BranchReadinessLevel policy](images/waas-wufb-intune-cb2a.png)
     
 8. Because the **Ring 2 Pilot Business Users** deployment ring receives the CB feature updates after 28 days, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
@@ -164,7 +164,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 10. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 11. In the **Value** box, type **28**, and then click **OK**.
 
-    ![Settings for this policy](images/waas-wufb-intune-step11a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-step11a.png)
 
 9. Click **Save Policy**.
 
@@ -205,7 +205,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 11. In the **Value** box, type **0**, and then click **OK**.
 
-    ![Settings for this policy](images/waas-wufb-intune-cbb1a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-cbb1a.png)
 
 12. Click **Save Policy**.
 
@@ -255,7 +255,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 
 15. In the **Value** box, type **14**, and then click **OK**.
 
-    ![Settings for this policy](images/waas-wufb-intune-cbb2a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-cbb2a.png)
 
 16. Click **Save Policy**.
 

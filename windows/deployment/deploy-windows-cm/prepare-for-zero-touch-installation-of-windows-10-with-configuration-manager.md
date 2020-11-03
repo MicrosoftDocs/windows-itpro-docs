@@ -261,7 +261,7 @@ On **CM01**:
     * Require a password when computers use PXE
     * Password and Confirm password: pass@word1
 
-    ![figure 12](../images/mdt-06-fig13.png)
+    ![figure 13](../images/mdt-06-fig13.png)
 
     Configure the CM01 distribution point for PXE.
 

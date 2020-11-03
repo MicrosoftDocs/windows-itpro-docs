@@ -220,12 +220,12 @@ PS C:\autopilot&gt;
 
 Ensure the VM booted from the installation ISO, click **Next** then click **Install now** and complete the Windows installation process. See the following examples:
 
-   ![Windows setup](images/winsetup1.png)
-   ![Windows setup](images/winsetup2.png)
-   ![Windows setup](images/winsetup3.png)
-   ![Windows setup](images/winsetup4.png)
-   ![Windows setup](images/winsetup5.png)
-   ![Windows setup](images/winsetup6.png)
+   ![Windows setup example 1](images/winsetup1.png)
+   ![Windows setup example 2](images/winsetup2.png)
+   ![Windows setup example 3](images/winsetup3.png)
+   ![Windows setup example 4](images/winsetup4.png)
+   ![Windows setup example 5](images/winsetup5.png)
+   ![Windows setup example 6](images/winsetup6.png)
 
 After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
 
@@ -337,7 +337,7 @@ If the configuration blade shown above does not appear, it's likely that you don
 
 To convert your Intune trial account to a free Premium trial account, navigate to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
 
-![Reset this PC final prompt](images/aad-lic1.png)
+![License conversion option](images/aad-lic1.png)
 
 ## Configure company branding
 
@@ -411,7 +411,7 @@ Select **Manage** from the top menu, then click the **Windows Autopilot Deployme
 
 Click the **Add devices** link to upload your CSV file. A message will appear indicating your request is being processed. Wait a few moments before refreshing to see your new device has been added.
 
-![Devices](images/msfb-device.png)
+![Microsoft Store for Business Devices](images/msfb-device.png)
 
 ## Create and assign a Windows Autopilot deployment profile
 
@@ -427,7 +427,7 @@ Pick one:
 > [!NOTE]
 > Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list first:
 
-![Devices](images/intune-devices.png)
+![Intune Devices](images/intune-devices.png)
 
 > The example above lists both a physical device and a VM. Your list should only include only one of these.
 
@@ -519,15 +519,15 @@ To CREATE the profile:
 
 Select your device from the **Devices** list:
 
-![MSfB create](images/msfb-create1.png)
+![MSfB create step 1](images/msfb-create1.png)
 
 On the Autopilot deployment dropdown menu, select **Create new profile**:
 
-![MSfB create](images/msfb-create2.png)
+![MSfB create step 2](images/msfb-create2.png)
 
 Name the profile, choose your desired settings, and then click **Create**:
 
-![MSfB create](images/msfb-create3.png)
+![MSfB create step 3](images/msfb-create3.png)
 
 The new profile is added to the Autopilot deployment list.
 
@@ -535,11 +535,11 @@ To ASSIGN the profile:
 
 To assign (or reassign) the profile to a device, select the checkboxes next to the device you registered for this lab, then select the profile you want to assign from the **Autopilot deployment** dropdown menu as shown:
 
-![MSfB assign](images/msfb-assign1.png)
+![MSfB assign step 1](images/msfb-assign1.png)
 
 Confirm the profile was successfully assigned to the intended device by checking the contents of the **Profile** column:
 
-![MSfB assign](images/msfb-assign2.png)
+![MSfB assign step 2](images/msfb-assign2.png)
 
 > [!IMPORTANT]
 > The new profile will only be applied if the device has not been started, and gone through OOBE. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device.
@@ -577,15 +577,15 @@ To use the device (or VM) for other purposes after completion of this lab, you w
 
 You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into your Intune Azure portal, then navigate to **Intune > Devices > All Devices**.  Select the checkbox next to the device you want to delete, then click the Delete button along the top menu.
 
-![Delete device](images/delete-device1.png)
+![Delete device step 1](images/delete-device1.png)
 
 Click **X** when challenged to complete the operation:
 
-![Delete device](images/delete-device2.png)
+![Delete device step 2](images/delete-device2.png)
 
 This will remove the device from Intune management, and it will disappear from **Intune > Devices > All devices**. But this does not yet deregister the device from Autopilot, so the device should still appear under **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices**.
 
-![Delete device](images/delete-device3.png)
+![Delete device step 3](images/delete-device3.png)
 
 The **Intune > Devices > All Devices** list and the **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices** list mean different things and are two completely separate datastores.  The former (All devices) is the list of devices currently enrolled into Intune.
 
@@ -594,21 +594,21 @@ The **Intune > Devices > All Devices** list and the **Intune > Device Enrollment
 
 To remove the device from the Autopilot program, select the device and click Delete.
 
-![Delete device](images/delete-device4.png)
+![Delete device step 4](images/delete-device4.png)
 
 A warning message appears reminding you to first remove the device from Intune, which we previously did.
 
-![Delete device](images/delete-device5.png)
+![Delete device step 5](images/delete-device5.png)
 
 At this point, your device has been unenrolled from Intune and also deregistered from Autopilot.  After several minutes, click the **Sync** button, followed by the **Refresh** button to confirm the device is no longer listed in the Autopilot program:
 
-![Delete device](images/delete-device6.png)
+![Delete device step 6](images/delete-device6.png)
 
 Once the device no longer appears, you are free to reuse it for other purposes.
 
 If you also (optionally) want to remove your device from AAD, navigate to **Azure Active Directory > Devices > All Devices**, select your device, and click the delete button:
 
-![Delete device](images/delete-device7.png)
+![Delete device step 7](images/delete-device7.png)
 
 ## Appendix A: Verify support for Hyper-V
 
@@ -668,7 +668,7 @@ Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-ms
 
 Run the IntuneWinAppUtil tool, supplying answers to the three questions, for example:
 
-![Add app](images/app01.png)
+![Add app example](images/app01.png)
 
 After the tool finishes running, you should have an .intunewin file in the Output folder, which you can now upload into Intune using the following steps.
 
@@ -678,19 +678,19 @@ Log into the Azure portal and select **Intune**.
 
 Navigate to **Intune > Clients apps > Apps**, and then click the **Add** button to create a new app package.
 
-![Add app](images/app02.png)
+![Add app step 1](images/app02.png)
 
 Under **App Type**, select **Windows app (Win32)**:
 
-![Add app](images/app03.png)
+![Add app step 2](images/app03.png)
 
 On the **App package file** blade, browse to the **npp.7.6.3.installer.x64.intunewin** file in your output folder, open it, then click **OK**:
 
-![Add app](images/app04.png)
+![Add app step 3](images/app04.png)
 
 On the **App Information Configure** blade, provide a friendly name, description, and publisher, such as:
 
-![Add app](images/app05.png)
+![Add app step 4](images/app05.png)
 
 On the **Program Configuration** blade, supply the install and uninstall commands:
 
@@ -700,7 +700,7 @@ Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
 > [!NOTE]
 > Likely, you do not have to write the install and uninstall commands yourself because the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool) automatically generated them when it converted the .msi file into a .intunewin file.
 
-![Add app](images/app06.png)
+![Add app step 5](images/app06.png)
 
 Simply using an install command like "notepad++.exe /S" will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn't actually have an .msi version of their program, but we got an .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
 
@@ -708,21 +708,21 @@ Click **OK** to save your input and activate the **Requirements** blade.
 
 On the **Requirements Configuration** blade, specify the **OS architecture** and the **Minimum OS version**:
 
-![Add app](images/app07.png)
+![Add app step 6](images/app07.png)
 
 Next, configure the **Detection rules**.  For our purposes, we will select manual format:
 
-![Add app](images/app08.png)
+![Add app step 7](images/app08.png)
 
 Click **Add** to define the rule properties.  For **Rule type**, select **MSI**, which will automatically import the right MSI product code into the rule:
 
-![Add app](images/app09.png)
+![Add app step 8](images/app09.png)
 
 Click **OK** twice to save, as you back out to the main **Add app** blade again for the final configuration.
 
 **Return codes**:  For our purposes, leave the return codes at their default values:
 
-![Add app](images/app10.png)
+![Add app step 9](images/app10.png)
 
 Click **OK** to exit.
 
@@ -732,11 +732,11 @@ Click the **Add** button to finalize and save your app package.
 
 Once the indicator message says the addition has completed.
 
-![Add app](images/app11.png)
+![Add app step 10](images/app11.png)
 
 You will be able to find your app in your app list:
 
-![Add app](images/app12.png)
+![Add app step 11](images/app12.png)
 
 #### Assign the app to your Intune profile
 
@@ -745,7 +745,7 @@ You will be able to find your app in your app list:
 
 In the **Intune > Client Apps > Apps** pane, select the app package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
-![Add app](images/app13.png)
+![Assign app step 1](images/app13.png)
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
@@ -755,9 +755,9 @@ For our purposes, select **Required** from the **Assignment type** dropdown menu
 
 Select **Included Groups** and assign the groups you previously created that will use this app:
 
-![Add app](images/app14.png)
+![Assign app step 2](images/app14.png)
 
-![Add app](images/app15.png)
+![Assign app step 3](images/app15.png)
 
 In the **Select groups** pane, click the **Select** button.
 
@@ -767,7 +767,7 @@ In the **Add group** pane, select **OK**.
 
 In the app **Assignments** pane, select **Save**.
 
-![Add app](images/app16.png)
+![Assign app step 4](images/app16.png)
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
@@ -781,15 +781,15 @@ Log into the Azure portal and select **Intune**.
 
 Navigate to **Intune > Clients apps > Apps**, and then click the **Add** button to create a new app package.
 
-![Add app](images/app17.png)
+![Create app step 1](images/app17.png)
 
 Under **App Type**, select **Office 365 Suite > Windows 10**:
 
-![Add app](images/app18.png)
+![Create app step 2](images/app18.png)
 
 Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this labe we have only selected Excel:
 
-![Add app](images/app19.png)
+![Create app step 3](images/app19.png)
 
 Click **OK**.
 
@@ -797,13 +797,13 @@ In the **App Suite Information** pane, enter a <i>unique</i> suite name, and a s
 
 > Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 
-![Add app](images/app20.png)
+![Create app step 4](images/app20.png)
 
 Click **OK**.
 
 In the **App Suite Settings** pane, select **Monthly** for the **Update channel** (any selection would be fine for the purposes of this lab).  Also select **Yes** for **Automatically accept the app end user license agreement**:
 
-![Add app](images/app21.png)
+![Create app step 5](images/app21.png)
 
 Click **OK** and then click **Add**.
 
@@ -814,7 +814,7 @@ Click **OK** and then click **Add**.
 
 In the **Intune > Client Apps > Apps** pane, select the Office package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
-![Add app](images/app22.png)
+![Create app step 6](images/app22.png)
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
@@ -824,9 +824,9 @@ For our purposes, select **Required** from the **Assignment type** dropdown menu
 
 Select **Included Groups** and assign the groups you previously created that will use this app:
 
-![Add app](images/app23.png)
+![Create app step 7](images/app23.png)
 
-![Add app](images/app24.png)
+![Create app step 8](images/app24.png)
 
 In the **Select groups** pane, click the **Select** button.
 
@@ -836,7 +836,7 @@ In the **Add group** pane, select **OK**.
 
 In the app **Assignments** pane, select **Save**.
 
-![Add app](images/app25.png)
+![Create app step 9](images/app25.png)
 
 At this point, you have completed steps to add Office to Intune.
 
@@ -844,7 +844,7 @@ For more information on adding Office apps to Intune, see [Assign Office 365 app
 
 If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
 
-![Add app](images/app26.png)
+![Create app step 10](images/app26.png)
 
 ## Glossary
 

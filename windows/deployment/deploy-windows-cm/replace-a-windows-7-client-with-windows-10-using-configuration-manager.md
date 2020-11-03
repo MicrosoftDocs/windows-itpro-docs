@@ -160,7 +160,7 @@ On **PC0004**:
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
 5.  Allow the Replace Task Sequence to complete. The PC0004 computer will gather user data, boot into Windows PE and gather more data, then boot back to the full OS. The entire process should only take a few minutes.
 
-![pc0004b](../images/pc0004b.png)
+![Task sequence example](../images/pc0004b.png)
 
 Capturing the user state
 
@@ -191,15 +191,15 @@ On **PC0006**:
 
 When the process is complete, you will have a new Windows 10 computer in your domain with user data and settings restored. See the following examples:
 
-![pc0006a](../images/pc0006a.png)<br>
-![pc0006b](../images/pc0006b.png)<br>
-![pc0006c](../images/pc0006c.png)<br>
-![pc0006d](../images/pc0006d.png)<br>
-![pc0006e](../images/pc0006e.png)<br>
-![pc0006f](../images/pc0006f.png)<br>
-![pc0006g](../images/pc0006g.png)<br>
-![pc0006h](../images/pc0006h.png)<br>
-![pc0006i](../images/pc0006i.png)
+![User data and setting restored example 1](../images/pc0006a.png)<br>
+![User data and setting restored example 2](../images/pc0006b.png)<br>
+![User data and setting restored example 3](../images/pc0006c.png)<br>
+![User data and setting restored example 4](../images/pc0006d.png)<br>
+![User data and setting restored example 5](../images/pc0006e.png)<br>
+![User data and setting restored example 6](../images/pc0006f.png)<br>
+![User data and setting restored example 7](../images/pc0006g.png)<br>
+![User data and setting restored example 8](../images/pc0006h.png)<br>
+![User data and setting restored example 9](../images/pc0006i.png)
 
 Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuraton-manager.md).
 
