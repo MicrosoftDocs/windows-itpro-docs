@@ -39,9 +39,9 @@ ms.date: 04/16/2020
 Defender for Endpoint supports non-persistent VDI session onboarding. 
 
 >[!Note]
->To onboard non-persistent VDI sessions, VDI devices must be on Windows 10.
+>To onboard non-persistent VDI sessions, VDI devices must be Windows 10 or Windows Server 2019.
 >
->While other Windows versions might work, only Windows 10 is supported.
+>While other Windows versions might work, only Windows 10 and Windows Server 2019 are supported.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
