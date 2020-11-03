@@ -75,7 +75,7 @@ This feature is currently experimental only and is not functional without an add
 
 ### What is the WDAGUtilityAccount local account? 
 
-This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.
+This account is part of Application Guard beginning with Windows 10, version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.
 
 ### How do I trust a subdomain in my site list?                          
 
@@ -91,17 +91,17 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT").  
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message ("0x80070013 ERROR_WRITE_PROTECT").  
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
-There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy WDAG are different between CSP and GP.
+There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy Application Guard are different between CSP and GP.
 
-Mandatory network isolation GP policy to deploy WDAG: "DomainSubnets or CloudResources"
-Mandatory network isolation CSP policy to deploy WDAG: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
+Mandatory network isolation GP policy to deploy Application Guard: "DomainSubnets or CloudResources"
+Mandatory network isolation CSP policy to deploy Application Guard: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
 For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
@@ -119,8 +119,8 @@ For guidance on how to create a firewall rule by using group policy, see:
 - [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
 
 First rule (DHCP Server):
-1. Program path: %SystemRoot%\System32\svchost.exe
-2. Local Service: Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))
+1. Program path: `%SystemRoot%\System32\svchost.exe`
+2. Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
 3. Protocol UDP
 4. Port 67
 
