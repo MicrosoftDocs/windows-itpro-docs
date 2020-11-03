@@ -400,7 +400,7 @@ Enabling this policy setting requires a connectivity to be established to a doma
 
 This policy setting is used to require, allow, or deny the use of smart cards with removable data drives.
 
-|||
+|**Parameter**|**Description**|
 |--- |--- |
 |Policy description|With this policy setting, you can specify whether smart cards can be used to authenticate user access to BitLocker-protected removable data drives on a computer.|
 |Introduced|Windows Server 2008 R2 and Windows 7|
@@ -1207,7 +1207,7 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 
 This policy setting is used to control whether access to drives is allowed by using the BitLocker To Go Reader, and whether BitLocker To Go Reader can be installed on the drive.
 
-|||
+|**Component of Setting**|**Definition**|
 |--- |--- |
 |Policy description|With this policy setting, you can configure whether fixed data drives that are formatted with the FAT file system can be unlocked and viewed on computers running Windows Vista, Windows XP with Service Pack 3 (SP3), or Windows XP with Service Pack 2 (SP2).|
 |Introduced|Windows Server 2008 R2 and Windows 7|
