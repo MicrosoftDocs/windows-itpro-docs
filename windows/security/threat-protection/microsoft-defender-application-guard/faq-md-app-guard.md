@@ -75,7 +75,7 @@ This feature is currently experimental only and is not functional without an add
 
 ### What is the WDAGUtilityAccount local account? 
 
-This account is part of Application Guard beginning with Windows 10 version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.
+This account is part of Application Guard beginning with Windows 10, version 1709 (Fall Creators Update). This account remains disabled until Application Guard is enabled on your device. This item is integrated to the OS and is not considered as a threat/virus/malware.
 
 ### How do I trust a subdomain in my site list?                          
 
@@ -119,8 +119,8 @@ For guidance on how to create a firewall rule by using group policy, see:
 - [Open Group Policy management console for Microsoft Defender Firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security)
 
 First rule (DHCP Server):
-1. Program path: %SystemRoot%\System32\svchost.exe
-2. Local Service: Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))
+1. Program path: `%SystemRoot%\System32\svchost.exe`
+2. Local Service: `Sid:  S-1-5-80-2009329905-444645132-2728249442-922493431-93864177  (Internet Connection Service (SharedAccess))`
 3. Protocol UDP
 4. Port 67
 
