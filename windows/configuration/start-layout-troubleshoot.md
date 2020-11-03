@@ -19,7 +19,7 @@ Start failures can be organized into these categories:
 - **Deployment/Install issues** - Easiest to identify but difficult to recover. This failure is consistent and usually permanent. Reset, restore from backup, or rollback to recover.
 - **Performance issues** - More common with older hardware, low-powered machines. Symptoms include: High CPU utilization, disk contention, memory resources. This makes Start very slow to respond. Behavior is intermittent depending on available resources.
 - **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](https://docs.microsoft.com/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
-- **Hangs** in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start will not have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
+- **Hangs** - in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start will not have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
 - **Other issues** - Customization, domain policies, deployment issues.
 
 ## Basic troubleshooting
@@ -46,7 +46,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
 
     Failure messages will appear if they aren't installed
 
-- If Start is not installed, then the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there is a choice to save to delete user data), or restoring from backup. There is no supported method to install Start Appx files. The results are often problematic and unreliable.
+- If Start is not installed, then the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there is a choice to save to delete user data), or restoring from backup. No method is supported to install Start Appx files. The results are often problematic and unreliable.
 
 ### Check if Start is running
 
@@ -209,11 +209,11 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 XML files can and should be tested locally on a Hyper-V or other virtual machine before deployment or application by Group Policy
 
-### Symptom: Start menu no longer works after a PC is refreshed using F12 during start up 
+### Symptom: Start menu no longer works after a PC is refreshed using F12 during startup 
 
-**Description**: If a user is having problems with a PC, is can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings. When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at start up. Refreshing the PC finishes, but Start Menu is not accessible.
+**Description**: If a user is having problems with a PC, it can be refreshed, reset, or restored. Refreshing the PC is a beneficial option because it maintains personal files and settings. When users have trouble starting the PC, "Change PC settings" in Settings is not accessible. So, to access the System Refresh, users may use the F12 key at startup. Refreshing the PC finishes, but Start Menu is not accessible.
 
-**Cause**: This is a known issue and has been resolved in a cumulative update released August 30th 2018. 
+**Cause**: This issue is known and was resolved in a cumulative update released August 30, 2018. 
 
 **Resolution**: Install corrective updates; a fix is included in the [September 11, 2018-KB4457142 release](https://support.microsoft.com/help/4457142).
 
@@ -233,7 +233,7 @@ Specifically, behaviors include
 - Applications (apps or icons) pinned to the start menu are missing.
 - Entire tile window disappears.
 - The start button fails to respond.
-- If a new roaming user is created, the first logon appears normal, but on subsequent logons, tiles are missing.
+- If a new roaming user is created, the first sign-in appears normal, but on subsequent sign-ins, tiles are missing.
 
 
 ![Example of a working layout](images/start-ts-3.png)
@@ -262,12 +262,12 @@ After the upgrade the user pinned tiles are missing:
 
   ![Example of Start screen with previously pinned tiles missing](images/start-ts-6.png)
  
-Additionally, users may see blank tiles if logon was attempted without network connectivity.
+Additionally, users may see blank tiles if sign-in was attempted without network connectivity.
 
   ![Example of blank tiles](images/start-ts-7.png)
  
 
-**Resolution**: This is fixed in [October 2017 update](https://support.microsoft.com/en-us/help/4041676).
+**Resolution**: This issue was fixed in the [October 2017 update](https://support.microsoft.com/en-us/help/4041676).
 
 ### Symptom: Tiles are missing after upgrade from Windows 10, version 1607 to version 1709 for users with Roaming User Profiles (RUP) enabled and managed Start Menu layout with partial lockdown
 
@@ -279,13 +279,13 @@ Additionally, users may see blank tiles if logon was attempted without network c
 
 ### Symptom: Start Menu issues with Tile Data Layer corruption 
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)). 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).) 
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
-1. The App or Apps work fine when you click on the tiles.
+1. The App or Apps work fine when you select the tiles.
 2. The tiles are blank, have a generic placeholder icon, have the wrong or strange title information.
-3. The app is missing, but listed as installed via Powershell and works if you launch via URI.
+3. The app is missing, but listed as installed via PowerShell and works if you launch via URI.
    - Example: `windows-feedback://`
 4. In some cases, Start can be blank, and Action Center and Cortana do not launch.
 
@@ -302,9 +302,9 @@ Although a reboot is not required, it may help clear up any residual issues afte
 
 ### Symptoms: Start Menu and Apps cannot start after upgrade to Windows 10 version 1809 when Symantec Endpoint Protection is installed
 
-**Description** Start Menu, Search and Apps do not start after you upgrade a Windows 7-based computer that has Symantec Endpoint Protection installed to Windows 10 version 1809.
+**Description**: Start menu, Search, and Apps do not start after you upgrade a computer running Windows 7 that has Symantec Endpoint Protection installed to Windows 10 version 1809.
 
-**Cause** This occurs because of a failure to load sysfer.dll.  During upgrade, the setup process does not set the privilege group "All Application Packages" on sysfer.dll and other Symantec modules.
+**Cause**: This problem occurs because of a failure to load sysfer.dll.  During upgrade, the setup process does not set the privilege group "All Application Packages" on sysfer.dll and other Symantec modules.
 
 **Resolution** This issue was fixed by the Windows Cumulative Update that were released on December 5, 2018—KB4469342 (OS Build 17763.168).
 
@@ -322,7 +322,7 @@ If you have already encountered this issue, use one of the following two options
 
 4. Confirm that **All Application Packages** group is missing.
 
-5. Click **Edit**, and then click **Add** to add the group.
+5. Select **Edit**, and then select **Add** to add the group.
 
 6. Test Start and other Apps.
 
