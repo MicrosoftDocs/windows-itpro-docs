@@ -229,11 +229,11 @@ Ensure the VM booted from the installation ISO, click **Next** then click **Inst
 
 After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
 
-   ![Windows setup](images/winsetup7.png)
+   ![Windows setup example 7](images/winsetup7.png)
 
 Once the installation is complete, sign in and verify that you are at the Windows 10 desktop, then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state. You will create multiple checkpoints throughout this lab, which can be used later to go through the process again.
 
-   ![Windows setup](images/winsetup8.png)
+   ![Windows setup example 8](images/winsetup8.png)
 
 To create your first checkpoint, open an elevated Windows PowerShell prompt on the computer running Hyper-V (not on the VM) and run the following:
 
@@ -497,7 +497,7 @@ Under **Manage**, click **Assignments**, and then with the **Include** tab highl
 
 Click **Select** and then click **Save**.
 
-![Include group](images/include-group2.png)
+![Include group save](images/include-group2.png)
 
 It's also possible to assign specific users to a profile, but we will not cover this scenario in the lab. For more detailed information, see [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot).
 

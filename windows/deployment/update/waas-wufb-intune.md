@@ -164,7 +164,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 10. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 11. In the **Value** box, type **28**, and then click **OK**.
 
-    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-step11a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy step 11](images/waas-wufb-intune-step11a.png)
 
 9. Click **Save Policy**.
 
@@ -205,7 +205,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 11. In the **Value** box, type **0**, and then click **OK**.
 
-    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-cbb1a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy for broad business](images/waas-wufb-intune-cbb1a.png)
 
 12. Click **Save Policy**.
 
