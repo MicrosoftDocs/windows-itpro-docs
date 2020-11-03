@@ -34,13 +34,13 @@ This offering is currently available to US Office 365 GCC High customers and is 
 The following OS versions are supported:
 
 - Windows 10, version 1903 
-- Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
+- Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/help/4490481))
 - Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
 - Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
-- Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/en-us/help/4490481))
+- Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/help/4490481))
 
 >[!NOTE]
->A patch must be deployed before device onboarding in order to configure Microsoft Defender ATP to the correct environment.
+>The above mentioned patch level must be deployed before device onboarding in order to configure Microsoft Defender ATP to the correct environment.
 
 The following OS versions are supported via Azure Security Center:
 - Windows Server 2008 R2 SP1

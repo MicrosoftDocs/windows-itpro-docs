@@ -100,7 +100,7 @@ Use the following procedure to enable network protection on domain-joined comput
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
     * **Block** - Users can't access malicious IP addresses and domains
     * **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains
-    * **Audit Mode** - If a user visits a malicious IP address or domain, an event won't be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
+    * **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
 > [!IMPORTANT]
 > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
