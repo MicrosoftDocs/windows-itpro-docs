@@ -1,7 +1,6 @@
 ---
 title: Config.xml File (Windows 10)
-description: Learn about the Config.xml, that can be used to customize the store-creation or profile-migration behavior.
-ms.custom: seo-marvel-apr2020
+description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the /genconfig option with the ScanState.exe tool.
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.reviewer: 
 manager: laurawi

@@ -8,7 +8,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
-ms.date: 10/04/2019
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
@@ -23,10 +22,10 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 1. [Discover plug and play connected events for peripherals in Microsoft Defender ATP advanced hunting](#discover-plug-and-play-connected-events). Identify or investigate suspicious usage activity.
 
 2. Configure to allow or block only certain removable devices and prevent threats.
-    1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor IDs, product IDs, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
+    1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by using USB device IDs. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
     2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-           - Windows Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
+           - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
            - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
            - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
 3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
@@ -98,35 +97,37 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers). 
+
+To find the device IDs, see [Look up device ID](#look-up-device-id). 
 
 For example:
 
 1. Remove class USBDevice from the **Allow installation of devices using drivers that match these device setup**.
-2. Add the vendor ID or product ID to allow in the **Allow installation of device that match any of these device IDs**. 
+2. Add the device ID to allow in the **Allow installation of device that match any of these device IDs**. 
 
 
 #### Prevent installation and usage of USB drives and other peripherals
 
 If you want to prevent the installation of a device class or certain devices, you can use the prevent device installation policies:
 
-1. Enable **Prevent installation of devices that match any of these device IDs**.
-2. Enable **Prevent installation of devices that match these device setup classes**.
+1. Enable **Prevent installation of devices that match any of these device IDs** and add these devices to the list.
+2. Enable **Prevent installation of devices using drivers that match these device setup classes**.
 
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
 
-The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of vendor or product IDs for devices that Windows is prevented from installing. 
+The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of devices that Windows is prevented from installing. 
 
 To prevent installation of devices that match any of these device IDs: 
 
-1. [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id) for devices that you want Windows to prevent from installing.
+1. [Look up device ID](#look-up-device-id) for devices that you want Windows to prevent from installing.
 ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
 2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
 ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
 
-#### Look up device vendor ID or product ID
-You can use Device Manager to look up a device vendor or product ID.
+#### Look up device ID
+You can use Device Manager to look up a device ID.
 
 1. Open Device Manager.
 2. Click **View** and select **Devices by connection**.
@@ -135,15 +136,23 @@ You can use Device Manager to look up a device vendor or product ID.
 5. Click the **Property** drop-down list and select **Hardware Ids**.
 6. Right-click the top ID value and select **Copy**.
 
-For information on vendor and product ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers).
+For information about Device ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers).
 
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
-The following is an example for looking up a device vendor ID or product ID using PowerShell: 
+The following is an example for looking up a device vendor ID or product ID (which is part of the device ID) using PowerShell: 
 ``` PowerShell
 Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
+
+The **Prevent installation of devices using drivers that match these device setup classes** policy allows you to specify device setup classes that Windows is prevented from installing. 
+
+To prevent installation of particular classes of devices: 
+
+1. Find the GUID of the device setup class from [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
+![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 
@@ -226,22 +235,22 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 
 | Control  | Description |
 |----------|-------------|
-| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | Enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
+| [Enable Microsoft Defender Antivirus Scanning](#enable-microsoft-defender-antivirus-scanning) | Enable Microsoft Defender Antivirus scanning for real-time protection or scheduled scans.|
 | [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Block USB files that are unsigned or untrusted. |
 | [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against DMA attacks. |
 
 >[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 
-### Enable Windows Defender Antivirus Scanning
+### Enable Microsoft Defender Antivirus Scanning
 
-Protecting authorized removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) or scheduling scans and configuring removable drives for scans.
+Protecting authorized removable storage with Microsoft Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) or scheduling scans and configuring removable drives for scans.
 
-- If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Windows Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
+- If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Microsoft Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
 
 >[!NOTE]
->We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Windows Defender Antivirus** > **Real-time monitoring**.
+>We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Microsoft Defender Antivirus** > **Real-time monitoring**.
 
 <!-- Need to build out point in the preceding note. 
 -->
@@ -255,7 +264,7 @@ This can be done by setting **Untrusted and unsigned processes that run from USB
 With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards.
 Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
 
-These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
@@ -324,7 +333,7 @@ For example, using either approach, you can automatically have the Microsoft Def
 
 ## Related topics
 
-- [Configure real-time protection for Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+- [Configure real-time protection for Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](https://aka.ms/scanusb)

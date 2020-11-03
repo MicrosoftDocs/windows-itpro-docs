@@ -1,6 +1,6 @@
 ---
 title: Configure system failure and recovery options in Windows
-description: Learn about the system failure and recovery options in Windows.
+description: Learn how to configure the actions that Windows takes when a system error occurs and what the recovery options are.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
@@ -8,8 +8,8 @@ author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/22/2019
-ms.reviewer: 
-manager: dcscontentpm
+ms.reviewer: dcscontentpm
+manager: dansimp
 ---
 
 # Configure system failure and recovery options in Windows

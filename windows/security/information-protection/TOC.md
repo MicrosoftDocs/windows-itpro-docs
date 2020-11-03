@@ -38,7 +38,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [Kernel DMA Protection for Thunderbolt&trade; 3](kernel-dma-protection-for-thunderbolt.md)
+## [Kernel DMA Protection](kernel-dma-protection-for-thunderbolt.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a WIP policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
@@ -61,7 +61,6 @@
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with WIP](windows-information-protection\using-owa-with-wip.md)
 ### [Fine-tune WIP Learning](windows-information-protection\wip-learning.md)
-### [How WIP works with sensitivity labels](windows-information-protection\how-wip-works-with-labels.md)
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 

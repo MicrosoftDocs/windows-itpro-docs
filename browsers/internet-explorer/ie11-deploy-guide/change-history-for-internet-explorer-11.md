@@ -8,12 +8,16 @@ ms.sitesec: library
 author: dansimp
 ms.date: 07/27/2017
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 ---
 
 
 # Change history for Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile.
 
 ## April 2017

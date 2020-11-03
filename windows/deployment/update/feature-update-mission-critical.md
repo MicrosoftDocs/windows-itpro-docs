@@ -1,6 +1,6 @@
 ---
 title: Best practices and recommendations for deploying Windows 10 Feature updates to mission-critical devices
-description: In this article, learn about best practices to follow when deploying Windows 10 feature updates to your mission-critical devices.
+description: Learn how to use the Microsoft Endpoint Configuration Manager (current branch) software updates feature to deploy Windows 10 semi-annual feature updates.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro

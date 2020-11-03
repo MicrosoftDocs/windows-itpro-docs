@@ -1,6 +1,6 @@
 ---
 title: Multifactor Unlock
-description: Multifactor Unlock
+description: Learn how Windows 10 offers multifactor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -299,7 +299,7 @@ This example configures the same as example 2 using compounding And elements.  T
 #### Example 4 
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 ```
-<rule version="1.0"> 
+<rule schemaVersion="1.0"> 
   <signal type="wifi"> 
     <ssid>contoso</ssid> 
     <bssid>12-ab-34-ff-e5-46</bssid> 

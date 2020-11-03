@@ -1,6 +1,6 @@
 ---
 title: Delete Indicator API.
-description: Deletes Indicator entity by ID.
+description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,7 +18,10 @@ ms.topic: article
 
 # Delete Indicator API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 

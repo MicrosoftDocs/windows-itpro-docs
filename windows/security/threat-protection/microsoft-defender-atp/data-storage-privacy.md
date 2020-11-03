@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Microsoft Defender ATP data storage and privacy
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
@@ -26,25 +29,25 @@ ms.topic: conceptual
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Microsoft Defender ATP.
 > [!NOTE]
-> This document explains the data storage and privacy details related to Microsoft Defender ATP. For more information related to Microsoft Defender ATP and other products and services like Windows Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
+> This document explains the data storage and privacy details related to Microsoft Defender ATP. For more information related to Microsoft Defender ATP and other products and services like Microsoft Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). For more information, see [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577).
 
 ## What data does Microsoft Defender ATP collect?
 
-Microsoft Defender ATP will collect and store information from your configured machines in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
+Microsoft Defender ATP will collect and store information from your configured devices in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
 
-Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as machine identifiers, names, and the operating system version).
+Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and device details (such as device identifiers, names, and the operating system version).
 
 Microsoft stores this data securely in Microsoft Azure and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://go.microsoft.com/fwlink/?linkid=827578).
 
 This data enables Microsoft Defender ATP to:
 - Proactively identify indicators of attack (IOAs) in your organization
 - Generate alerts if a possible attack was detected
-- Provide your security operations with a view into machines, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
+- Provide your security operations with a view into devices, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
 
 Microsoft does not use your data for advertising.
 
 ## Data protection and encryption
-The Microsoft Defender ATP service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
+The Microsoft Defender ATP service utilizes state-of-the-art data protection technologies, which are based on Microsoft Azure infrastructure. 
 
 There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Microsoft Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
 
@@ -76,20 +79,20 @@ Access to data for services deployed in Microsoft Azure Government data centers 
 
 
 ## Is data shared with other customers?
-No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
+No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer-specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
 **At service onboarding**<br>
-You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of 1 month to six months to meet your company’s regulatory compliance needs.
+You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
 Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
 
 ## Can Microsoft help us maintain regulatory compliance?
-Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Microsoft Defender ATP services against their own legal and regulatory requirements. Microsoft Defender ATP has achieved a number of certifications including ISO, SOC, FedRAMP High, and PCI and continues to pursue additional national, regional and industry-specific certifications.
+Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Microsoft Defender ATP services against their own legal and regulatory requirements. Microsoft Defender ATP has achieved a number of certifications including ISO, SOC, FedRAMP High, and PCI and continues to pursue additional national, regional, and industry-specific certifications.
 
-By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
+By providing customers with compliant, independently verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 
 For more information on the Microsoft Defender ATP certification reports, see [Microsoft Trust Center](https://servicetrust.microsoft.com/). 
 

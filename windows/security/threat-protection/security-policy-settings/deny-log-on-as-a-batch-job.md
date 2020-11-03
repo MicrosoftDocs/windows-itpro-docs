@@ -92,7 +92,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Accounts that have the **Deny log on as a batch job** user right could be used to schedule jobs that could consume excessive computer resources and cause a denial-of-service condition.
+Accounts that have the **Log on as a batch job** user right could be used to schedule jobs that could consume excessive computer resources and cause a denial-of-service condition.
 
 ### Countermeasure
 

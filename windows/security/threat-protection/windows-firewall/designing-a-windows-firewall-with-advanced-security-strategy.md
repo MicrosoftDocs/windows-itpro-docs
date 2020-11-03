@@ -1,6 +1,6 @@
 ---
 title: Designing a Windows Defender Firewall Strategy (Windows 10)
-description: Designing a Windows Defender Firewall with Advanced Security Strategy
+description: Answer the question in this article to design an effective Windows Defender Firewall with Advanced Security Strategy.
 ms.assetid: 6d98b184-33d6-43a5-9418-4f24905cfd71
 ms.reviewer: 
 ms.author: dansimp

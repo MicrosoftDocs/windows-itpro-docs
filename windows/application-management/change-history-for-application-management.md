@@ -1,6 +1,6 @@
 ---
 title: Change history for Application management in Windows 10 (Windows 10)
-description: View changes to documentation for application management in Windows 10.
+description: View new release information and updated topics in the documentation for application management in Windows 10.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage

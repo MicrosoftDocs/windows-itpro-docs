@@ -1,6 +1,6 @@
 ---
 title: Advanced troubleshooting for Windows start-up issues
-description: Learn how to troubleshoot Windows start-up issues.
+description: Learn advanced options for how to troubleshoot common Windows start-up issues, like system crashes and freezes.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting

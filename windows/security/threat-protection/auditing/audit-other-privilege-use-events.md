@@ -1,6 +1,6 @@
 ---
 title: Audit Other Privilege Use Events (Windows 10)
-description: This security policy setting is not used.
+description: Learn about the audit other privilege use events, an auditing subcategory that should not have any events in it but enables generation of event 4985(S).
 ms.assetid: 5f7f5b25-42a6-499f-8aa2-01ac79a2a63c
 ms.reviewer:
 manager: dansimp

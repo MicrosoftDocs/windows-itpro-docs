@@ -5,7 +5,6 @@ ms.prod: w10
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 12/13/2019
-ms.prod: w10
 ms.topic: article
 ms.custom: 
 - CI 111493

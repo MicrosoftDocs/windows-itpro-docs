@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
@@ -126,11 +127,11 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
-<td align="left"><p><strong>Parameters</strong></p></td>
+<td align="left"><p><b>Name</b></p></td>
+<td align="left"><p><b>Parameters</b></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Add-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-ADAccountOrGroup</p>
 <p>-ADAccountOrGroupProtector</p>
 <p>-Confirm</p>
@@ -152,26 +153,26 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Backup-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Backup-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-KeyProtectorId</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Disable-BitLocker</strong></p></td>
+<td align="left"><p><b>Disable-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Disable-BitLockerAutoUnlock</strong></p></td>
+<td align="left"><p><b>Disable-BitLockerAutoUnlock</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Enable-BitLocker</strong></p></td>
+<td align="left"><p><b>Enable-BitLocker</b></p></td>
 <td align="left"><p>-AdAccountOrGroup</p>
 <p>-AdAccountOrGroupProtector</p>
 <p>-Confirm</p>
@@ -196,44 +197,44 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Enable-BitLockerAutoUnlock</strong></p></td>
+<td align="left"><p><b>Enable-BitLockerAutoUnlock</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Get-BitLockerVolume</strong></p></td>
+<td align="left"><p><b>Get-BitLockerVolume</b></p></td>
 <td align="left"><p>-MountPoint</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Lock-BitLocker</strong></p></td>
+<td align="left"><p><b>Lock-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-ForceDismount</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Remove-BitLockerKeyProtector</strong></p></td>
+<td align="left"><p><b>Remove-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-KeyProtectorId</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Resume-BitLocker</strong></p></td>
+<td align="left"><p><b>Resume-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Suspend-BitLocker</strong></p></td>
+<td align="left"><p><b>Suspend-BitLocker</b></p></td>
 <td align="left"><p>-Confirm</p>
 <p>-MountPoint</p>
 <p>-RebootCount</p>
 <p>-WhatIf</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Unlock-BitLocker</strong></p></td>
+<td align="left"><p><b>Unlock-BitLocker</b></p></td>
 <td align="left"><p>-AdAccountOrGroup</p>
 <p>-Confirm</p>
 <p>-MountPoint</p>

@@ -1,6 +1,6 @@
 ---
 title: Enable ADMX-backed policies in MDM
-description: Guide to configuring ADMX-backed policies in MDM
+description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX-backed policies) in Mobile Device Management (MDM).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -17,7 +17,7 @@ manager: dansimp
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-admx-backed) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
 - Find the policy from the list ADMX-backed policies. 
@@ -33,9 +33,9 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 ## Enable a policy
 
 > [!NOTE]
-> See [Understanding ADMX-backed policies](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
+> See [Understanding ADMX-backed policies in Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
 
-1.  Find the policy from the list [ADMX-backed policies](policies-admx-backed.md). You need the following information listed in the policy description.  
+1.  Find the policy from the list [ADMX-backed policies](policy-csps-admx-backed.md). You need the following information listed in the policy description.  
     - GP English name
     - GP name
     - GP ADMX file name
@@ -65,37 +65,37 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
     In this example you configure **Enable App-V Client** to **Enabled**.
 
-> [!NOTE]
-> The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
-     
-```xml
-<SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>
-    <Replace>
-      <CmdID>2</CmdID>
-      <Item>
-        <Meta>
-          <Format>chr</Format>
-          <Type>text/plain</Type>
-        </Meta>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppVClient </LocURI>
-        </Target>
-        <Data><Enabled/></Data>
-      </Item>
-    </Replace>
-    <Final/>
-  </SyncBody>
-</SyncML>
-```
+    > [!NOTE]
+    > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+
+    ```xml
+    <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+        <Replace>
+          <CmdID>2</CmdID>
+          <Item>
+            <Meta>
+              <Format>chr</Format>
+              <Type>text/plain</Type>
+            </Meta>
+            <Target>
+              <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppVClient </LocURI>
+            </Target>
+            <Data><Enabled/></Data>
+          </Item>
+        </Replace>
+        <Final/>
+      </SyncBody>
+    </SyncML>
+    ```
 
 
 ## Enable a policy that requires parameters  
 
 
-1. Create the SyncML to enable the policy that requires parameters.
+   1. Create the SyncML to enable the policy that requires parameters.
 
-    In this example, the policy is in **Administrative Templates >  System > App-V > Publishing**.
+      In this example, the policy is in **Administrative Templates >  System > App-V > Publishing**.
 
    1. Double-click **Publishing Server 2 Settings** to see the parameters you need to configure when you enable this policy.
 
@@ -107,7 +107,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
 
-        ![Publishing server 2 policy description](images/admx-appv-policy-description.png)
+      ![Publishing server 2 policy description](images/admx-appv-policy-description.png)
 
    3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the admx files) and open appv.admx.
 
@@ -227,41 +227,41 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       Here is the example for **AppVirtualization/PublishingAllowServer2**:
         
-> [!NOTE]
-> The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
-    
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-       <SyncML xmlns="SYNCML:SYNCML1.2">
-         <SyncBody>
-           <Replace>
-             <CmdID>2</CmdID>
-             <Item>
-               <Meta>
-                 <Format>chr</Format>
-                 <Type>text/plain</Type>
-               </Meta>
-               <Target>
-                <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
-               </Target>
-               <Data>
-               <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
-                 id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
-                 id="Global_Publishing_Refresh_Options" value="1"/><data 
-                 id="Global_Refresh_OnLogon_Options" value="0"/><data 
-                 id="Global_Refresh_Interval_Prompt" value="15"/><data 
-                 id="Global_Refresh_Unit_Options" value="0"/><data 
-                 id="User_Publishing_Refresh_Options" value="0"/><data 
-                 id="User_Refresh_OnLogon_Options" value="0"/><data 
-                 id="User_Refresh_Interval_Prompt" value="15"/><data 
-                 id="User_Refresh_Unit_Options" value="1"/>]]>
-               </Data>
-             </Item>
-           </Replace>
-           <Final/>
-         </SyncBody>
-       </SyncML>
-    ```
+       > [!NOTE]
+       > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
+
+       ```xml
+       <?xml version="1.0" encoding="utf-8"?>
+          <SyncML xmlns="SYNCML:SYNCML1.2">
+            <SyncBody>
+              <Replace>
+                <CmdID>2</CmdID>
+                <Item>
+                  <Meta>
+                    <Format>chr</Format>
+                    <Type>text/plain</Type>
+                  </Meta>
+                  <Target>
+                   <LocURI>./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2</LocURI>
+                  </Target>
+                  <Data>
+                  <![CDATA[<enabled/><data id="Publishing_Server2_Name_Prompt" value="name prompt"/><data 
+                    id="Publishing_Server_URL_Prompt" value="URL prompt"/><data 
+                    id="Global_Publishing_Refresh_Options" value="1"/><data 
+                    id="Global_Refresh_OnLogon_Options" value="0"/><data 
+                    id="Global_Refresh_Interval_Prompt" value="15"/><data 
+                    id="Global_Refresh_Unit_Options" value="0"/><data 
+                    id="User_Publishing_Refresh_Options" value="0"/><data 
+                    id="User_Refresh_OnLogon_Options" value="0"/><data 
+                    id="User_Refresh_Interval_Prompt" value="15"/><data 
+                    id="User_Refresh_Unit_Options" value="1"/>]]>
+                  </Data>
+                </Item>
+              </Replace>
+              <Final/>
+            </SyncBody>
+          </SyncML>
+       ```
 
 
 ## Disable a policy

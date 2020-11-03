@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/17/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker cannot encrypt a drive: known issues

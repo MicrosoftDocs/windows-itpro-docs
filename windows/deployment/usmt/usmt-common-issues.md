@@ -1,7 +1,6 @@
 ---
 title: Common Issues (Windows 10)
-description: Learn about the common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools.
-ms.custom: seo-marvel-apr2020
+description: Learn about common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools.
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 The following sections discuss common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools. USMT produces log files that describe in further detail any errors that occurred during the migration process. These logs can be used to troubleshoot migration failures.
 
-## In this topic
+## In This Topic
 
 
 [User Account Problems](#user)
@@ -42,7 +41,7 @@ The following sections discuss common issues that you might see when you run the
 
 When you encounter a problem or error message during migration, you can use the following general guidelines to help determine the source of the problem:
 
-- Examine the ScanState, LoadState, and UsmtUtils logs to obtain the exact USMT error messages and Windows&reg; application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return Codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
+- Examine the ScanState, LoadState, and UsmtUtils logs to obtain the exact USMT error messages and Windows® application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return Codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
 
   In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the **/v**<em>:5</em> option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
 
@@ -61,7 +60,7 @@ When you encounter a problem or error message during migration, you can use the 
 
 - Log off after you run the LoadState tool. Some settings—for example, fonts, desktop backgrounds, and screen-saver settings—will not take effect until the next time the end user logs on.
 
-- Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook&reg; is open, USMT might not migrate PST files.
+- Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
 
   **Note**  
   USMT will fail if it cannot migrate a file or setting unless you specify the **/c** option. When you specify the **/c** option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that did not migrate.
@@ -176,9 +175,9 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Resolution:** You can load the XML schema (MigXML.xsd), included with USMT, into your XML authoring tool. For examples, see the [Visual Studio Development Center](https://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there is a syntax error. In addition, see [USMT XML Reference](usmt-xml-reference.md) for more information about using the XML elements.
 
-### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a>I am using a MigXML helper function, but the migration isn't working the way I expected it to.  How do I troubleshoot this issue?
+### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a>I am using a MigXML helper function, but the migration isn’t working the way I expected it to.  How do I troubleshoot this issue?
 
-**Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate did not get collected or applied, or weren't collected or applied in the way you expected.
+**Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate did not get collected or applied, or weren’t collected or applied in the way you expected.
 
 **Resolution:** You should search the ScanState or LoadState log for either the component name which contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
 
@@ -217,7 +216,7 @@ There are three typical causes for this issue.
 
 **Resolution:** To fix this issue, log off, and then log back on to see the migrated desktop background.
 
-**Cause \#2:** If the source computer was running Windows&reg; XP and the desktop background was stored in the *Drive*:\\WINDOWS\\Web\\Wallpaper folder—the default folder where desktop backgrounds are stored in Windows XP—the desktop background will not be migrated. Instead, the destination computer will have the default Windows&reg; desktop background. This will occur even if the desktop background was a custom picture that was added to the \\WINDOWS\\Web\\Wallpaper folder. However, if the end user sets a picture as the desktop background that was saved in another location, for example, My Pictures, then the desktop background will migrate.
+**Cause \#2:** If the source computer was running Windows® XP and the desktop background was stored in the *Drive*:\\WINDOWS\\Web\\Wallpaper folder—the default folder where desktop backgrounds are stored in Windows XP—the desktop background will not be migrated. Instead, the destination computer will have the default Windows® desktop background. This will occur even if the desktop background was a custom picture that was added to the \\WINDOWS\\Web\\Wallpaper folder. However, if the end user sets a picture as the desktop background that was saved in another location, for example, My Pictures, then the desktop background will migrate.
 
 **Resolution:** Ensure that the desktop background images that you want to migrate are not in the \\WINDOWS\\Web\\Wallpaper folder on the source computer.
 
@@ -225,7 +224,7 @@ There are three typical causes for this issue.
 
 **Resolution:** Run the ScanState and LoadState tools from within an account with administrative credentials.
 
-### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a>I included MigApp.xml in the migration, but some PST files aren't migrating.
+### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a>I included MigApp.xml in the migration, but some PST files aren’t migrating.
 
 **Cause:** The MigApp.xml file migrates only the PST files that are linked to Outlook profiles.
 

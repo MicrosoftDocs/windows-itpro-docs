@@ -1,6 +1,6 @@
 ---
 title: DevDetail CSP
-description: DevDetail CSP
+description: Learn how the DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server.
 ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 ms.reviewer: 
 manager: dansimp
@@ -13,9 +13,6 @@ ms.date: 03/27/2020
 ---
 
 # DevDetail CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
@@ -135,7 +132,7 @@ Value type is string.
 Supported operations are Get and Replace.
 
 <a href="" id="ext-microsoft-dnscomputername "></a>**Ext/Microsoft/DNSComputerName**  
-Added in the next major release of Windows 10. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
+Added in Windows 10, version 2004. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
 
 The following are the available naming macros:  
 

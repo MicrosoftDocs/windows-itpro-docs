@@ -1,10 +1,9 @@
 ---
 title: Best practices - deploy feature updates during maintenance windows
-description: In this article, learn how to get ready and then deploy feature updates for Windows 10 during a maintenance window.
+description: Learn how to configure maintenance windows and how to deploy feature updates during a maintenance window.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

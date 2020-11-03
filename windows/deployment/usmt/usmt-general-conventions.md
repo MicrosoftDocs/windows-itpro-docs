@@ -1,7 +1,6 @@
 ---
 title: General Conventions (Windows 10)
-description: In this article, you will learn about the General guidelines for XML files in USMT and XML helper functions. 
-ms.custom: seo-marvel-apr2020
+description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 This topic describes the XML helper functions.
 
-## In this topic
+## In This Topic
 
 
 [General XML Guidelines](#bkmk-general)
@@ -36,7 +35,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
     You can use the User State Migration Tool (USMT) 10.0 XML schema, MigXML.xsd, to write and validate migration .xml files.
 
--   **Conflits**
+-   **Conflicts**
 
     In general, when there are conflicts within the XML schema, the most specific pattern takes precedence. For more information, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 

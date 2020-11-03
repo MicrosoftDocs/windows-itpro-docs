@@ -19,14 +19,17 @@ ms.topic: article
 
 # Check the Microsoft Defender Advanced Threat Protection service health
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
-The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
+**Service health** provides information on the current status of the Microsoft Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see information such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
 You'll also see information on historical issues that have been resolved and details such as the date and time when the issue was resolved. When there are no issues on the service, you'll see a healthy status.
 
@@ -48,7 +51,7 @@ The **Current status** tab shows the current state of the Microsoft Defender ATP
 - Next steps
 - Expected resolution time
 
-Updates on the progress of an issue is reflected on the page as the issue gets resolved. You'll see updates on information such as an updated estimate resolution time or next steps.
+Updates on the progress of an issue are reflected on the page as the issue gets resolved. You'll see updates on information such as an updated estimate resolution time or next steps.
 
 When an issue is resolved, it gets recorded in the **Status history** tab.
 

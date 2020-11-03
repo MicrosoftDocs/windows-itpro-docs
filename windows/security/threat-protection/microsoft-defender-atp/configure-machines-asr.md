@@ -19,9 +19,12 @@ ms.topic: article
 
 # Optimize ASR rule deployment and detections
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink).
 
@@ -48,6 +51,6 @@ For more information about ASR rule deployment in Microsoft 365 security center,
 
 **Related topics**
 
-* [Ensure your machines are configured properly](configure-machines.md)
-* [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
+* [Ensure your devices are configured properly](configure-machines.md)
+* [Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
 * [Monitor compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)

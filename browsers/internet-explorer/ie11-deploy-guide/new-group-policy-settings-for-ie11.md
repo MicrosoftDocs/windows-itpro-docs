@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # New group policy settings for Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer 11 gives you some new Group Policy settings to help you manage your company's web browser configurations, including:
 
 

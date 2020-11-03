@@ -3,9 +3,8 @@ title: Resolve Windows 10 upgrade errors - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: This article contains technical instructions for IT administrators on how diagnose and resolve Windows 10 upgrade errors.
+description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
-ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

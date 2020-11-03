@@ -1,18 +1,18 @@
 ---
 title: Deploy Windows To Go in your organization (Windows 10)
-description: This article provides steps to deploy Windows To Go in your organization, including tips to plan and prepare for the deployment.
+description: Learn how to deploy Windows To Go in your organization through a wizard in the user interface as well as programatically with Windows PowerShell.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
+ms.author: greglin
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -26,8 +26,8 @@ ms.custom: seo-marvel-apr2020
 
 This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](planning/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](planning/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 ## Deployment tips
 

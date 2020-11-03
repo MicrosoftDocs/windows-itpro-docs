@@ -1,6 +1,6 @@
 ---
 title: Manage device restarts after updates (Windows 10)
-description: In this article, you'll learn how to schedule update installation and set policies for restart and configure active hours for when restarts should not occur.
+description: Use Group Policy settings, mobile device management (MDM) or Registry to configure when devices will restart after a Windows 10 update is installed.
 ms.prod: w10
 ms.mktglfcycl: deploy
 author: jaimeo

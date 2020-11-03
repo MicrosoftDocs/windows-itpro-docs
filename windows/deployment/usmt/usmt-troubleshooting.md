@@ -1,7 +1,6 @@
 ---
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
-description: In this article, you'll find a list of topics that address common User State Migration Tool (USMT) 10.0 issues and questions.
-ms.custom: seo-marvel-apr2020
+description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to assist in troubleshooting.
 ms.assetid: 770f45bb-2284-463f-a29c-69c04f437533
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 The following table describes topics that address common User State Migration Tool (USMT) 10.0 issues and questions. These topics describe tools that you can use to troubleshoot issues that arise during your migration.
 
-## In this section
+## In This Section
 
 
 <table>

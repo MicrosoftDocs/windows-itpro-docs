@@ -1,7 +1,6 @@
 ---
 title: Manage Activations (Windows 10)
-description: This article contains a list of topics that can help you with activating a client computer, by using a variety of activation methods.
-ms.custom: seo-marvel-apr2020
+description: Learn how to manage activations and how to activate a client computer by using a variety of activation methods.
 ms.assetid: 53bad9ed-9430-4f64-a8de-80613870862c
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 This section describes how to activate a client computer, by using a variety of activation methods.
 
-## In this section
+## In this Section
 
 |Topic |Description |
 |------|------------|

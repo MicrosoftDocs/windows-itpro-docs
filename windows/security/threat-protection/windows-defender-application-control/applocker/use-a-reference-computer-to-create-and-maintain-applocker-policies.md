@@ -14,7 +14,6 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.assetid: 10c3597f-f44c-4c8e-8fe5-105d4ac016a6
 ms.reviewer: 
 ---
 

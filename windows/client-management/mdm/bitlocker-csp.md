@@ -1,6 +1,6 @@
 ---
 title: BitLocker CSP
-description: BitLocker CSP
+description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -930,12 +930,35 @@ The following list shows the supported values:
 <!--Description-->
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
 <!--/Description-->
+
 > [!NOTE]
 > This policy is only supported in Azure AD accounts.
 
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, silent encryption is enforced.
 
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+<!--/SupportedSKUs-->
 <!--SupportedValues-->
 The expected values for this policy are:
 
@@ -1048,6 +1071,16 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 <!--/SupportedSKUs-->
 
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
+
+> [!TIP]
+> Key rotation feature will only work when:
+>
+> - For Operating system drives:
+>    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
+>    - OSActiveDirectoryBackup_Name is set to true
+> - For Fixed data drives:
+>    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
+>    - FDVActiveDirectoryBackup_Name is set to true
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.

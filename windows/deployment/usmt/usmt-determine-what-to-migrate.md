@@ -1,7 +1,6 @@
 ---
 title: Determine What to Migrate (Windows 10)
-description: In this article, you will find guidelines and resources that can help you determine what items to migrate.
-ms.custom: seo-marvel-apr2020
+description: Determine migration settings for standard or customized for the User State Migration Tool (USMT) 10.0.
 ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
 ms.reviewer: 
 manager: laurawi
@@ -17,15 +16,13 @@ ms.topic: article
 
 # Determine What to Migrate
 
-
 By default, User State Migration Tool (USMT) 10.0 migrates the items listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md), depending on the migration .xml files you specify. These default settings are often enough for a basic migration.
 
 However, when considering what settings to migrate, you should also consider what settings you would like the user to be able to configure, if any, and what settings you would like to standardize. Many organizations use their migration as an opportunity to create and begin enforcing a better-managed environment. Some of the settings that users can configure on unmanaged computers prior to the migration can be locked on the new, managed computers. For example, standard wallpaper, Internet Explorer security settings, and desktop configuration are some of the items you can choose to standardize.
 
-To reduce complexity and increase standardization, your organization should consider creating a *standard operating environment (SOE)*. An SOE is a combination of hardware and software that you distribute to all users. This means selecting a baseline for all computers, including standard hardware drivers; core operating system features; core productivity applications, especially if they are under volume licensing; and core utilities. This environment should also include a standard set of security features, as outlined in the organization's corporate policy. Using a standard operating environment can vastly simplify the migration and reduce overall deployment challenges.
+To reduce complexity and increase standardization, your organization should consider creating a *standard operating environment (SOE)*. An SOE is a combination of hardware and software that you distribute to all users. This means selecting a baseline for all computers, including standard hardware drivers; core operating system features; core productivity applications, especially if they are under volume licensing; and core utilities. This environment should also include a standard set of security features, as outlined in the organization’s corporate policy. Using a standard operating environment can vastly simplify the migration and reduce overall deployment challenges.
 
-## In this section
-
+## In This Section
 
 <table>
 <colgroup>
@@ -52,18 +49,6 @@ To reduce complexity and increase standardization, your organization should cons
 </tbody>
 </table>
 
- 
-
 ## Related topics
 
-
 [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
-
- 
-
- 
-
-
-
-
-

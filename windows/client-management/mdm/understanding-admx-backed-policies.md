@@ -260,7 +260,7 @@ Note that the data payload of the SyncML needs to be encoded so that it does not
 
 The **LocURI** for the above GP policy is:
 
-`.\Device\Vendor\MSFT\Policy\Config\AppVirtualization\PublishingAllowServer2`
+`./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2`
 
 To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the `<Data>` section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
 

@@ -1,6 +1,6 @@
 ---
 title: 4706(S) A new trust was created to a domain. (Windows 10)
-description: Describes security event 4706(S) A new trust was created to a domain.
+description: Describes security event 4706(S) A new trust was created to a domain. This event is generated when a new trust is created for a domain.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

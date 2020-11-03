@@ -1,6 +1,6 @@
 ---
 title: Best practice recommendations for Windows To Go (Windows 10)
-description: This article contains best practice recommendations for Windows To Go, such as using a USB 3.0 port.
+description: Learn about best practice recommendations for using Windows To Go, like using a USB 3.0 port with Windows to Go if it's available.
 ms.assetid: 05e6e0ab-94ed-4c0c-a195-0abd006f0a86
 ms.reviewer: 
 manager: laurawi
@@ -13,7 +13,6 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ---
 
 # Best practice recommendations for Windows To Go
@@ -23,8 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following are the best practice recommendations for using Windows To Go:
 

@@ -13,11 +13,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint  
 ms.topic: conceptual
 ---
 
 # Set preferences for Microsoft Defender ATP for Mac
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -28,7 +33,7 @@ ms.topic: conceptual
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Users in your organization are not able to change preferences that are set through the configuration profile.
+In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
@@ -233,6 +238,30 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
+#### Antivirus scan history retention (in days)
+
+Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | scanResultsRetentionDays |
+| **Data type** | String |
+| **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
+| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
+
+#### Maximum number of items in the antivirus scan history
+
+Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | scanHistoryMaximumItems |
+| **Data type** | String |
+| **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
+| **Comments** | Available in Microsoft Defender ATP version 101.07.23 or higher. |
+
 ### Cloud-delivered protection preferences
 
 Configure the cloud-driven protection features of Microsoft Defender ATP for Mac.
@@ -277,6 +306,16 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+#### Enable / disable automatic security intelligence updates
+
+Determines whether security intelligence updates are installed automatically:
+
+|||
+|:---|:---|
+| **Key** | automaticDefinitionUpdateEnabled |
+| **Data type** | Boolean |
+| **Possible values** | true (default) <br/> false |
+
 ### User interface preferences
 
 Manage the preferences for the user interface of Microsoft Defender ATP for Mac.
@@ -299,6 +338,18 @@ Specify whether to show or hide the status menu icon in the top-right corner of 
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 
+#### Show / hide option to send feedback
+
+Specify whether users can submit feedback to Microsoft by going to `Help` > `Send Feedback`.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | userInitiatedFeedback |
+| **Data type** | String |
+| **Possible values** | enabled (default) <br/> disabled |
+| **Comments** | Available in Microsoft Defender ATP version 101.19.61 or higher. |
+
 ### Endpoint detection and response preferences
 
 Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
@@ -314,7 +365,7 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 Specify a tag name and its value. 
 
-- The GROUP tag, tags the machine with the specified value. The tag is reflected in the portal under the machine page and can be used for filtering and grouping machines.
+- The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 |||
 |:---|:---|
@@ -358,6 +409,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
   - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender ATP logs
+- Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
@@ -393,6 +445,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
         <key>enabled</key>
         <true/>
         <key>automaticSampleSubmission</key>
+        <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
         <true/>
     </dict>
 </dict>
@@ -470,6 +524,8 @@ The following configuration profile (or, in case of JAMF, a property list that c
                     <key>enabled</key>
                     <true/>
                     <key>automaticSampleSubmission</key>
+                    <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
                 </dict>
             </dict>
@@ -563,6 +619,8 @@ The following templates contain entries for all settings described in this docum
         <string>optional</string>
         <key>automaticSampleSubmission</key>
         <true/>
+        <key>automaticDefinitionUpdateEnabled</key>
+        <true/>
     </dict>
     <key>edr</key>
     <dict>
@@ -580,6 +638,8 @@ The following templates contain entries for all settings described in this docum
     <dict>
         <key>hideStatusMenuIcon</key>
         <false/>
+        <key>userInitiatedFeedback</key>
+		<string>enabled</string>
     </dict>
 </dict>
 </plist>
@@ -701,6 +761,8 @@ The following templates contain entries for all settings described in this docum
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                    <key>automaticDefinitionUpdateEnabled</key>
+                    <true/>
                 </dict>
                 <key>edr</key>
                 <dict>
@@ -718,6 +780,8 @@ The following templates contain entries for all settings described in this docum
                 <dict>
                     <key>hideStatusMenuIcon</key>
                     <false/>
+                    <key>userInitiatedFeedback</key>
+		            <string>enabled</string>
                 </dict>
             </dict>
         </array>
@@ -728,7 +792,9 @@ The following templates contain entries for all settings described in this docum
 The property list must be a valid *.plist* file. This can be checked by executing:
 
 ```bash
-$ plutil -lint com.microsoft.wdav.plist
+plutil -lint com.microsoft.wdav.plist
+```
+```Output
 com.microsoft.wdav.plist: OK
 ```
 

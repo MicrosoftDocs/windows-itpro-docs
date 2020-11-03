@@ -1,7 +1,6 @@
 ---
 title: Migration Store Encryption (Windows 10)
-description: Learn about the options available for the migration store encryption in the User State Migration Tool (USMT) 10.0.
-ms.custom: seo-marvel-apr2020
+description:  Learn how the User State Migration Tool (USMT) enables support for stronger encryption algorithms, called Advanced Encryption Standard (AES).
 ms.assetid: b28c2657-b986-4487-bd38-cb81500b831d
 ms.reviewer: 
 manager: laurawi

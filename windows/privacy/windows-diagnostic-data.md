@@ -1,6 +1,6 @@
 ---
-title: Windows 10, version 1709 and newer diagnostic data for the Full level (Windows 10)
-description: Use this article to learn about the types of diagnostic data that is collected at the Full level.
+title: Windows 10, version 1709 and newer optional diagnostic data (Windows 10)
+description: Use this article to learn about the types of optional diagnostic data that is collected.
 keywords: privacy,Windows 10
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,20 +12,21 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/04/2019
 ms.reviewer: 
 ---
 
-# Windows 10, version 1709 and newer diagnostic data for the Full level
+# Windows 10, version 1709 and newer optional diagnostic data
 
 Applies to:
+- Windows 10, version 20H2
+- Windows 10, version 2004
 - Windows 10, version 1909
 - Windows 10, version 1903
 - Windows 10, version 1809
 - Windows 10, version 1803
 - Windows 10, version 1709
 
-Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1903 Basic level diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
+Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 20H2 required diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
 
 In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944:2017 Information technology -- Cloud computing -- Cloud services and devices: Data flow, data categories and data use](https://www.iso.org/standard/66674.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
 
@@ -289,7 +290,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - UI and media performance and glitches versus smoothness -- video playback frame rate, audio glitches, animation glitches (stutter when bringing up Start), graphics score, time to first frame, play/pause/stop/seek responsiveness, time to render PDF, dynamic streaming of video from OneDrive performance
 - Disk footprint -- Free disk space, out of memory conditions, and disk score
 - Excessive resource utilization -- components impacting performance or battery life through high CPU usage during different screen and power states
-- Background task performance -- download times, Windows Update scan duration, Windows Defender Antivirus scan times, disk defrag times, mail fetch times, service startup and state transition times, and time to index on-device files for search results
+- Background task performance -- download times, Windows Update scan duration, Microsoft Defender Antivirus scan times, disk defrag times, mail fetch times, service startup and state transition times, and time to index on-device files for search results
 - Peripheral and devices -- USB device connection times, time to connect to a wireless display, printing times, network availability and connection times (time to connect to Wi-Fi, time to get an IP address from DHCP etc.), smart card authentication times, automatic brightness, and environmental response times
 - Device setup -- first setup experience times (time to install updates, install apps, connect to network, and so on), time to recognize connected devices (printer and monitor), and time to set up a Microsoft Account
 - Power and Battery life -- power draw by component (Process/CPU/GPU/Display), hours of time the screen is off, sleep state transition details, temperature and thermal throttling, battery drain in a power state (screen off or screen on), processes and components requesting power use while the screen is off, auto-brightness details, time device is plugged into AC versus battery, and battery state transitions

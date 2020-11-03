@@ -18,6 +18,9 @@ ms.date: 05/10/2018
 
 # Out-of-date ActiveX control blocking
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -105,7 +108,10 @@ reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVe
 ```
 Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer. Use this configuration option at your own risk.
 
-## Out-of-date ActiveX control blocking on managed devices
+## Out-of-date ActiveX control blocking
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+ on managed devices
 Out-of-date ActiveX control blocking includes four new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
 
 ### Group Policy settings

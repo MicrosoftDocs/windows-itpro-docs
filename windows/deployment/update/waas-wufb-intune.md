@@ -4,15 +4,14 @@ description: In this article, learn how to configure Windows Update for Business
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.author: jaimeo
+author: jaimeo
 ---
 
 # Walkthrough: use Microsoft Intune to configure Windows Update for Business

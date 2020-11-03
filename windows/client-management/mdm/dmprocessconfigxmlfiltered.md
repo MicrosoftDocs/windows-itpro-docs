@@ -1,6 +1,6 @@
 ---
 title: DMProcessConfigXMLFiltered function
-description: Configures phone settings by using OMA Client Provisioning XML.
+description: Learn how the DMProcessConfigXMLFiltered function configures phone settings by using OMA Client Provisioning XML.
 Search.Refinement.TopicID: 184
 ms.assetid: 31D79901-6206-454C-AE78-9B85A3B3487F
 ms.reviewer: 
@@ -24,8 +24,8 @@ ms.date: 06/26/2017
 
 # DMProcessConfigXMLFiltered function
 
-> **Important**  
-The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
+> [!Important]
+> The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
 
 
 Configures phone settings by using OMA Client Provisioning XML. Use of this function is strictly limited to the following scenarios.

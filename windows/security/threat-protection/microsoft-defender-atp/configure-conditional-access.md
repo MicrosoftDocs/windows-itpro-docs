@@ -18,8 +18,11 @@ ms.topic: article
 ---
 
 # Configure Conditional Access in Microsoft Defender ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 

@@ -1,6 +1,6 @@
 ---
 title: IE and Microsoft Edge FAQ for IT Pros
-description: Describes frequently asked questions about Internet Explorer and Microsoft Edge for IT professionals.
+description: Describes frequently asked questions about Internet Explorer and Microsoft Edge for IT professionals. 
 audience: ITPro
 manager: msmets
 author: ramakoni1

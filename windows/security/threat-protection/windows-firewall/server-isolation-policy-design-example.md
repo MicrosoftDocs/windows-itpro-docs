@@ -1,6 +1,6 @@
 ---
 title: Server Isolation Policy Design Example (Windows 10)
-description: Server Isolation Policy Design Example
+description: Learn about server isolation policy design in Windows Defender Firewall with Advanced Security by referring to this example of a fictitious company.
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
 ms.reviewer: 
 ms.author: dansimp

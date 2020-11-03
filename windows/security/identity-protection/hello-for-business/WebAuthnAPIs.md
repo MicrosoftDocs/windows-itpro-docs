@@ -1,6 +1,6 @@
 ---
 title: WebAuthn APIs 
-description: Enabling password-less authentication for your sites and apps
+description: Learn how to use WebAuthn APIs to enable password-less authentication for your sites and apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

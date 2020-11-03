@@ -2,7 +2,7 @@
 title: Advanced Troubleshooting 802.1X Authentication
 ms.reviewer: 
 manager: dansimp
-description: Learn how 802.1X Authentication works
+description: Troubleshoot authentication flow by learning how 802.1X Authentication works for wired and wireless clients.
 keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl: 
@@ -73,7 +73,7 @@ The following article explains how to analyze CAPI2 event logs:
 
 When troubleshooting complex 802.1X authentication issues, it is important to understand the 802.1X authentication process. The following figure is an example of wireless connection process with 802.1X authentication:
 
-![authenticatior flow chart](images/authenticator_flow_chart.png)
+![authenticator flow chart](images/authenticator_flow_chart.png)
  
 If you [collect a network packet capture](troubleshoot-tcpip-netmon.md) on both the client and the server (NPS) side, you can see a flow like the one below. Type **EAPOL** in the Display Filter in for a client side capture, and **EAP** for an NPS side capture. See the following examples:
 

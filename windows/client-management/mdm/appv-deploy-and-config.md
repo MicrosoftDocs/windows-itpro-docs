@@ -1,6 +1,6 @@
 ---
 title: Deploy and configure App-V apps using MDM
-description: Deploy and configure App-V apps using MDM
+description: Configure, deploy, and manage Microsoft Application Virtualization (App-V) apps using Microsoft Endpoint Configuration Manager or App-V server.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

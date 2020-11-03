@@ -81,7 +81,7 @@ To support Azure AD enrollment, MDM vendors must host and expose a Terms of Use 
 <a href="" id="terms-of-use-endpoint-"></a>**Terms of Use endpoint**
 Use this endpoint to inform users of the ways in which their device can be controlled by their organization. The Terms of Use page is responsible for collecting user’s consent before the actual enrollment phase begins.
 
-It’s important to understand that the Terms of Use flow is a "black box" to Windows and Azure AD. The whole web view is redirected to the Terms of Use URL, and the user is expected to be redirected back after approving (or in some cases rejecting) the Terms. This design allows the MDM vendor to customize their Terms of Use for different scenarios (e.g., different levels of control are applied on BYOD vs. company-owned devices) or implement user/group based targeting (e.g., users in certain geographies may be subject to stricter device management policies).
+It’s important to understand that the Terms of Use flow is an "opaque box" to Windows and Azure AD. The whole web view is redirected to the Terms of Use URL, and the user is expected to be redirected back after approving (or in some cases rejecting) the Terms. This design allows the MDM vendor to customize their Terms of Use for different scenarios (e.g., different levels of control are applied on BYOD vs. company-owned devices) or implement user/group based targeting (e.g., users in certain geographies may be subject to stricter device management policies).
 
 The Terms of Use endpoint can be used to implement additional business logic, such as collecting a one-time PIN provided by IT to control device enrollment. However, MDM vendors must not use the Terms of Use flow to collect user credentials, which could lead to a highly degraded user experience. It’s not needed, since part of the MDM integration ensures that the MDM service can understand tokens issued by Azure AD.
 
@@ -165,7 +165,10 @@ The following image illustrates how MDM applications will show up in the Azure a
 
 ### Add cloud-based MDM to the app gallery
 
-You should work with the Azure AD engineering team if your MDM application is cloud-based. The following table shows the required information to create an entry in the Azure AD app gallery.
+> [!NOTE]
+> You should work with the Azure AD engineering team if your MDM application is cloud-based and needs to be enabled as a multi-tenant MDM application 
+
+The following table shows the required information to create an entry in the Azure AD app gallery.
 
 <table>
 <colgroup>

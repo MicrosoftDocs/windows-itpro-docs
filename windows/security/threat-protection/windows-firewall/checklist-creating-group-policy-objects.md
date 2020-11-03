@@ -1,6 +1,6 @@
 ---
 title: Checklist Creating Group Policy Objects (Windows 10)
-description: Checklist Creating Group Policy Objects
+description: Learn to deploy firewall settings, IPsec settings, firewall rules, or connection security rules, by using Group Policy in AD DS.
 ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
 ms.reviewer: 
 ms.author: dansimp

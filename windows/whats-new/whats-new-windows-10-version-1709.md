@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, version 1709
-description: New and updated IT Pro content about new features in Windows 10, version 1709 (also known as the Fall Creators Update).
+description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
 keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1709 IT Pro content
+# What's new in Windows 10, version 1709 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1709
@@ -95,7 +95,8 @@ Windows Defender Application Guard hardens a favorite attacker entry-point by is
 
 ### Window Defender Exploit Guard
 
-Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/exploit-protection), [Attack surface reduction protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction), [Controlled folder access](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folder-access), and [Network protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/network-protection).
+Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection), [Attack surface reduction protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-attack-surface-reduction), [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access), and [Network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).
+
 
 ### Windows Defender Device Guard
 
@@ -129,7 +130,7 @@ Upgrade Readiness provides insights into application and driver compatibility is
 
 ### Update Compliance
 
-New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Windows Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
+New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Microsoft Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
 
 ### Device Health
 
@@ -149,3 +150,7 @@ Several network stack enhancements are available in this release. Some of these 
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
 [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
+[Threat protection on Windows 10](https://docs.microsoft.com/windows/security/threat-protection/):Detects advanced attacks and data breaches, automates security incidents and improves security posture.<br>
+
+
+

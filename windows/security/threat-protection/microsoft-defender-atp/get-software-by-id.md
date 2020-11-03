@@ -1,6 +1,6 @@
 ---
 title: Get software by Id
-description: Retrieves a list of exposure scores by machine group.
+description: Retrieves a list of exposure scores by device group.
 keywords: apis, graph api, supported apis, get, software, mdatp tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,9 +18,12 @@ ms.topic: article
 
 # Get software by Id
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

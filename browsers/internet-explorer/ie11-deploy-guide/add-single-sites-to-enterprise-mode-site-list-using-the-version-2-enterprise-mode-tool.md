@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Add single sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2)
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

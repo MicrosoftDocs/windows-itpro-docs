@@ -2,7 +2,7 @@
 title: Update Compliance - Security Update Status report
 ms.reviewer: 
 manager: laurawi
-description: This article is an overview of the Security Update Status report, providing information about security updates across all devices.
+description: Learn how the Security Update Status section provides information about security updates across all devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy

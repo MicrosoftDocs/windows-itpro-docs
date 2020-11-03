@@ -1,7 +1,6 @@
 ---
 title: UsmtUtils Syntax (Windows 10)
-description: This article describes the syntax for the utilities available in User State Migration Tool (USMT) 10.0 through the command-line interface.
-ms.custom: seo-marvel-apr2020
+description: Learn about the syntax for the utilities available in User State Migration Tool (USMT) 10.0 through the command-line interface.
 ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
 ms.reviewer: 
 manager: laurawi
@@ -28,7 +27,7 @@ This topic describes the syntax for the utilities available in User State Migrat
 
 -   Extract files from the compressed migration store when you migrate files and settings to the destination computer.
 
-## In this topic
+## In This Topic
 
 
 [Usmtutils.exe](#bkmk-usmtutils-exe)
@@ -113,7 +112,7 @@ usmtutils /verify\[:*&lt;reportType&gt;*\] *&lt;filePath&gt;* \[/l:*&lt;logfile&
 <td align="left"><p>Specifies whether to report on all files, corrupted files only, or the status of the catalog.</p>
 <ul>
 <li><p><strong>Summary</strong>. Returns both the number of files that are intact and the number of files that are corrupted in the migration store. If no algorithm is specified, the summary report is displayed as a default.</p></li>
-<li><p><strong>all</strong>. Returns a tab-delimited list of all of the files in the compressed migration store and the status for each file. Each line contains the file name followed by a tab spacing, and either "CORRUPTED" or "OK" depending on the status of the file. The last entry reports the corruption status of the &quot;CATALOG&quot; of the store. A catalog file contains metadata for all files in a migration store. The LoadState tool requires a valid catalog file in order to open the migration store. Returns &quot;OK&quot; if the catalog file is intact and LoadState can open the migration store and &quot;CORRUPTED&quot; if the migration store is corrupted.</p></li>
+<li><p><strong>all</strong>. Returns a tab-delimited list of all of the files in the compressed migration store and the status for each file. Each line contains the file name followed by a tab spacing, and either “CORRUPTED” or “OK” depending on the status of the file. The last entry reports the corruption status of the &quot;CATALOG&quot; of the store. A catalog file contains metadata for all files in a migration store. The LoadState tool requires a valid catalog file in order to open the migration store. Returns &quot;OK&quot; if the catalog file is intact and LoadState can open the migration store and &quot;CORRUPTED&quot; if the migration store is corrupted.</p></li>
 <li><p><strong>failureonly</strong>. Returns a tab-delimited list of only the files that are corrupted in the compressed migration store.</p></li>
 <li><p><strong>Catalog</strong>. Returns only the status of the catalog file.</p></li>
 </ul></td>
@@ -179,7 +178,7 @@ usmtutils /verify\[:*&lt;reportType&gt;*\] *&lt;filePath&gt;* \[/l:*&lt;logfile&
 <tr class="even">
 <td align="left"><p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/</strong>:<em>&lt;KeyString&gt;</em></p>
 <p>or</p>
-<p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/</strong>:<em>&lt;"Key String"&gt;</em></p>
+<p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/</strong>:<em>&lt;“Key String”&gt;</em></p>
 <p>or</p>
 <p><strong>/decrypt:</strong><em>&lt;AlgID&gt;</em><strong>/keyfile</strong>:<em>&lt;FileName&gt;</em></p></td>
 <td align="left"><p>Specifies that the <strong>/encrypt</strong> option was used to create the migration store with the ScanState tool. To decrypt the migration store, specify a <strong>/key</strong> or <strong>/keyfile</strong> option as follows:</p>
@@ -305,7 +304,7 @@ The syntax for **/extract** is:
 <tr class="odd">
 <td align="left"><p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/key</strong>:<em>&lt;KeyString&gt;</em></p>
 <p>or</p>
-<p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/</strong>:<em>&lt;"Key String"&gt;</em></p>
+<p><strong>/decrypt</strong><em>&lt;AlgID&gt;</em><strong>/</strong>:<em>&lt;“Key String”&gt;</em></p>
 <p>or</p>
 <p><strong>/decrypt:</strong><em>&lt;AlgID&gt;</em><strong>/keyfile</strong>:<em>&lt;FileName&gt;</em></p></td>
 <td align="left"><p>Specifies that the <strong>/encrypt</strong> option was used to create the migration store with the ScanState tool. To decrypt the migration store, you must also specify a <strong>/key</strong> or <strong>/keyfile</strong> option as follows:</p>

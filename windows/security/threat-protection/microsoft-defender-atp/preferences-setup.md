@@ -19,8 +19,11 @@ ms.topic: article
 
 # Configure Microsoft Defender Security Center settings
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
@@ -31,7 +34,7 @@ Use the **Settings** menu to modify general settings, advanced features, enable 
 Topic | Description
 :---|:---
 General settings | Modify your general settings that were previously defined as part of the onboarding process.
-Permissions | Manage portal access using RBAC as well as machine groups.
+Permissions | Manage portal access using RBAC as well as device groups.
 APIs | Enable the threat intel and SIEM integration.
 Rules | Configure suppressions rules and automation settings.
-Machine management | Onboard and offboard machines.
+Device management | Onboard and offboard devices.

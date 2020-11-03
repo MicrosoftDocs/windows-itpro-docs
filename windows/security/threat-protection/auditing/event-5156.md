@@ -180,7 +180,7 @@ For 5156(S): The Windows Filtering Platform has permitted a connection.
 
 -   If you know that the computer should never contact or be contacted by certain network IP addresses, monitor for these addresses in “**Destination Address**.**”**
 
--   If you have a “whitelist” of IP addresses that the computer or device is expected to contact or be contacted by, monitor for IP addresses in “**Destination Address”** that are not in the whitelist.
+-   If you have an allow list of IP addresses that the computer or device is expected to contact or be contacted by, monitor for IP addresses in “**Destination Address”** that are not in the allow list.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5156](event-5156.md) events with that “**Source Port**.**”**
 

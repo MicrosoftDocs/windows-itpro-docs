@@ -1,5 +1,5 @@
 ---
-title: Configure machine proxy and Internet connection settings
+title: Configure device proxy and Internet connection settings
 description: Configure the Microsoft Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
@@ -13,15 +13,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: article
 ---
 
-# Configure machine proxy and Internet connectivity settings
+# Configure device proxy and Internet connectivity settings
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -53,10 +58,10 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
 - Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
   - Set it to **Enabled** and select **Disable Authenticated Proxy usage**:
-  ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
+  ![Image of Group Policy setting1](images/atp-gpo-proxy1.png)
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
   - Configure the proxy:<br>
-    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
+    ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
 
     The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
@@ -102,26 +107,32 @@ See [Netsh Command Syntax, Contexts, and Formatting](https://docs.microsoft.com/
 
 ## Enable access to Microsoft Defender ATP service URLs in the proxy server
 
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed below to the allowed domains list.
-If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed below from HTTPS scanning.
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
+
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+
+
+|**Spreadsheet of domains list**|**Description**|
+|:-----|:-----|
+|![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+
+
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 
 > [!NOTE]
-> settings-win.data.microsoft.com is only needed if you have Windows 10 machines running version 1803 or earlier.<br>
-> URLs that include v20 in them are only needed if you have Windows 10 machines running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 machine running version 1803 or later and onboarded to US Data Storage region.
+> settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
 
- Service location | Microsoft.com DNS record
--|-
-Common URLs for all locations | ```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` <br>```automatedirstrprdweu.blob.core.windows.net``` <br>```automatedirstrprdneu.blob.core.windows.net```
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` <br>```automatedirstrprduks.blob.core.windows.net``` <br>```automatedirstrprdukw.blob.core.windows.net```  
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net``` <br> ```automatedirstrprdcus.blob.core.windows.net``` <br> ```automatedirstrprdeus.blob.core.windows.net```
 
 > [!NOTE]
-> If you are using Windows Defender Antivirus in your environment, please refer to the following article for details on allowing connections to the Windows Defender Antivirus cloud service: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus
+> URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, ```us-v20.events.data.microsoft.com``` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
+
+
+> [!NOTE]
+> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
-### Log analytics agent requirements
+### Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
 The information below list the proxy and firewall configuration information required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for the previous versions of Windows such as Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, and Windows Server 2016.
 
@@ -131,24 +142,30 @@ The information below list the proxy and firewall configuration information requ
 |*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
 |*.blob.core.windows.net |Port 443 |Outbound|Yes |  
 
-## Microsoft Defender ATP service backend IP range
-
-If your network devices don't support the URLs added to an "allow" list in the prior section, you can use the following information.
-
-Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
-
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
-
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
+
+## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
+
+Please see the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
+
+1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Microsoft Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
+
+2.	Ensure the machine is successfully reporting into the Microsoft Defender Security Center portal.
+
+3.	Run the TestCloudConnection.exe tool from “C:\Program Files\Microsoft Monitoring Agent\Agent” to validate the connectivity and to see the required URLs for your specific workspace.
+
+4.	Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)).
+
+![Image of administrator in Windows PowerShell](images/admin-powershell.png)
+
+The wildcards (*) used in *.ods.opinsights.azure.com, *.oms.opinsights.azure.com, and *.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft Defender Security Center portal.
+
+The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the “Firewall Rule: *.blob.core.windows.net” section of the test results. 
+
+> [!NOTE]
+> In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender ATP service URLs
 
@@ -156,7 +173,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 1. Download the [MDATP Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
-2. Extract the contents of MDATPClientAnalyzer.zip on the machine.
+2. Extract the contents of MDATPClientAnalyzer.zip on the device.
 
 3. Open an elevated command-line:
 
@@ -196,9 +213,12 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 > [!NOTE]
 > The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+
+
+> [!NOTE]
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
 
 ## Related topics
 
-- [Onboard Windows 10 machines](configure-endpoints.md)
+- [Onboard Windows 10 devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)

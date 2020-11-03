@@ -2,7 +2,7 @@
 title: Access the Microsoft Defender Advanced Threat Protection APIs  
 ms.reviewer: 
 description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender ATP capabilities
-keywords: apis, api, wdatp, open api, windows defender atp api, public api, supported apis, alerts, machine, user, domain, ip, file, advanced hunting, query
+keywords: apis, api, wdatp, open api, microsoft defender atp api, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,8 +19,11 @@ ms.topic: conceptual
 
 # Access the Microsoft Defender Advanced Threat Protection APIs 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 

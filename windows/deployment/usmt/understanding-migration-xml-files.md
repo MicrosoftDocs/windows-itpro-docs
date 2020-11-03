@@ -1,7 +1,6 @@
 ---
 title: Understanding Migration XML Files (Windows 10)
-description: Learn about the Migration XML Files. Migration XML Files provide instructions on where & how the USMT tools should gather & apply files & settings.
-ms.custom: seo-marvel-apr2020
+description: Learn how to modify the behavior of a basic User State Migration Tool (USMT) 10.0 migration by using XML files.
 ms.assetid: d3d1fe89-085c-4da8-9657-fd54b8bfc4b7
 ms.reviewer: 
 manager: laurawi

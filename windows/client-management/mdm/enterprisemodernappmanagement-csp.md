@@ -1,6 +1,6 @@
 ---
 title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
+description: Learn how the EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps.
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 ms.reviewer: 
 manager: dansimp
@@ -13,9 +13,6 @@ ms.date: 09/27/2019
 ---
 
 # EnterpriseModernAppManagement CSP
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
@@ -329,6 +326,7 @@ Required. The value is 0 or 1 that indicates if the app is provisioned on the de
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isstub"></a>**.../*PackageFamilyName*/*PackageFullName*/IsStub**  
+Added in Windows 10, version 2004. 
 Required. This node is used to identify whether the package is a stub package. A stub package is a version of the package with minimal functionality that will reduce the size of the app.
 
 The value is 1 if the package is a stub package and 0 (zero) for all other cases. Value type is int.

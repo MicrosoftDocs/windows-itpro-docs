@@ -1,6 +1,6 @@
 ---
 title: Isolated Domain GPOs (Windows 10)
-description: Isolated Domain GPOs
+description: Learn about GPOs for isolated domains in this example configuration of Windows Defender Firewall with Advanced Security.
 ms.assetid: e254ce4a-18c6-4868-8179-4078d9de215f
 ms.reviewer: 
 ms.author: dansimp

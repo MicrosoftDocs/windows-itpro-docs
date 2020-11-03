@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot TCP/IP connectivity
-description: Learn how to troubleshoot TCP/IP connectivity.
+description: Learn how to troubleshoot TCP/IP connectivity and what you should do if you come across TCP reset in a network capture.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting

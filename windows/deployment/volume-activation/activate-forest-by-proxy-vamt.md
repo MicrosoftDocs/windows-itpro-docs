@@ -1,7 +1,6 @@
 ---
 title: Activate by Proxy an Active Directory Forest (Windows 10)
-description: Learn how to use the active directory-based activation function of the volume activation management tool to activate an active directory (AD) forest by proxy.
-ms.custom: seo-marvel-apr2020
+description: Learn how to use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate by proxy an Active Directory (AD) forest.
 ms.assetid: 6475fc87-a6f7-4fa8-b0aa-de19f2dea7e5
 ms.reviewer: 
 manager: laurawi

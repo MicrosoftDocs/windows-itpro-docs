@@ -180,7 +180,7 @@ For 5152(F): The Windows Filtering Platform blocked a packet.
 
 -   If you know that the computer should never contact or be contacted by certain network IP addresses, monitor for these addresses in “**Destination Address**.”
 
--   If you have a “whitelist” of IP addresses that the computer or device is expected to contact or be contacted by, monitor for IP addresses in **“Destination Address”** that are not in the whitelist.
+-   If you have an allow list of IP addresses that the computer or device is expected to contact or be contacted by, monitor for IP addresses in **“Destination Address”** that are not in the allow list.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5152](event-5152.md) events with that “**Source Port**.**”**
 

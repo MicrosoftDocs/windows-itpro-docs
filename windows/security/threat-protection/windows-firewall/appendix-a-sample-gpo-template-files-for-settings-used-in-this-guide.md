@@ -1,6 +1,6 @@
 ---
 title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows 10)
-description: Appendix A Sample GPO Template Files for Settings Used in this Guide
+description: Use sample template files import an XML file containing customized registry preferences into a Group Policy Object (GPO).
 ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
 ms.reviewer: 
 ms.author: dansimp

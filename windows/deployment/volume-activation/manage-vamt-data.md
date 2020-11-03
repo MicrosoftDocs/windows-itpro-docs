@@ -1,7 +1,6 @@
 ---
 title: Manage VAMT Data (Windows 10)
-description: This article contains a list of topics that can help you with managing data in the Volume Activation Management Tool (VAMT).
-ms.custom: seo-marvel-apr2020
+description: Learn how to save, import, export, and merge a Computer Information List (CILX) file using the Volume Activation Management Tool (VAMT).
 ms.assetid: 233eefa4-3125-4965-a12d-297a67079dc4
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 This section describes how to save, import, export, and merge a Computer Information List (CILX) file using the Volume Activation Management Tool (VAMT).
 
-## In this section
+## In this Section
 |Topic |Description |
 |------|------------|
 |[Import and Export VAMT Data](import-export-vamt-data.md) |Describes how to import and export VAMT data. |

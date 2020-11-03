@@ -1,6 +1,6 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
-description: This article provides information to help you plan and design a new deployment of Windows To Go in your production environment.
+description: Though Windows To Go is no longer being developed, you can find info here about the the “what”, “why”, and “when” of deployment.
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
 ms.reviewer: 
 manager: laurawi
@@ -23,8 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the "what", "why", and "when" questions an IT professional might have when planning to deploy Windows To Go.
 

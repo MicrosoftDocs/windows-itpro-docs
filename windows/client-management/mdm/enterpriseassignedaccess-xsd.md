@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAssignedAccess XSD
-description: EnterpriseAssignedAccess XSD
+description: This XSD can be used to validate that the lockdown XML in the \<Data\> block of the AssignedAccessXML node.
 ms.assetid: BB3B633E-E361-4B95-9D4A-CE6E08D67ADA
 ms.reviewer: 
 manager: dansimp

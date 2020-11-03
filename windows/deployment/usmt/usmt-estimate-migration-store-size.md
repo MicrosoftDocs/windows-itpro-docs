@@ -1,7 +1,6 @@
 ---
 title: Estimate Migration Store Size (Windows 10)
-description: In this article, you will learn how to estimate size of the migration store using the ScanState tool.
-ms.custom: seo-marvel-apr2020
+description: Estimate the disk space requirement for a migration so that you can use User State Migration Tool (USMT).
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. You can estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure. You can also calculate the disk space requirements using the ScanState tool.
 
-## In this topic
+## In This Topic
 
 
 -   [Hard Disk Space Requirements](#bkmk-spacereqs). Describes the disk space requirements for the migration store and other considerations on the source and destination computers.

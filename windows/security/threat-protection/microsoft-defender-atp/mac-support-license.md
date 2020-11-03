@@ -13,11 +13,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
 # Troubleshoot license issues for Microsoft Defender ATP for Mac
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -41,6 +46,6 @@ You deployed and/or installed the MDATP for macOS package ("Download installatio
 
 **Solution:**
 
-Follow the WindowsDefenderATPOnboarding.py instructions documented here:
+Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here:
 [Client configuration](mac-install-manually.md#client-configuration)
 

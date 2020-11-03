@@ -1,7 +1,6 @@
 ---
 title: Install and Configure VAMT (Windows 10)
-description: In this article, you'll learn how to install and configure the Volume Activation Management Tool (VAMT).
-ms.custom: seo-marvel-apr2020
+description: Learn how to install and configure the Volume Activation Management Tool (VAMT), and learn where to find information about the process.
 ms.assetid: 5c7ae9b9-0dbc-4277-bc4f-8b3e4ab0bf50
 ms.reviewer: 
 manager: laurawi
@@ -21,7 +20,7 @@ ms.topic: article
 
 This section describes how to install and configure the Volume Activation Management Tool (VAMT).
 
-## In this section
+## In this Section
 
 |Topic |Description |
 |------|------------|

@@ -1,6 +1,6 @@
 ---
 title: Deployment considerations for Windows To Go (Windows 10)
-description: This article provides information about deployment considerations for Windows To Go, such as boot experience, deployment methods, and tools.
+description: Learn about deployment considerations for Windows To Go, such as the boot experience, deployment methods, and tools that you can use with Windows To Go.
 ms.assetid: dcfc5d96-b96b-44cd-ab65-416b5611c65e
 ms.reviewer: 
 manager: laurawi
@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 - Windows 10
 
 > [!IMPORTANT]
-> Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 From the start, Windows To Go was designed to minimize differences between the user experience of working on a laptop and Windows To Go booted from a USB drive. Given that Windows To Go was designed as an enterprise solution, extra consideration was given to the deployment workflows that enterprises already have in place. Additionally, there has been a focus on minimizing the number of differences in deployment between Windows To Go workspaces and laptop PCs.
 

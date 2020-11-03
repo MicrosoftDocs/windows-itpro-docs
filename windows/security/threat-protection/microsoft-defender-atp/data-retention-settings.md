@@ -18,10 +18,13 @@ ms.topic: conceptual
 ---
 # Verify data storage location and update data retention settings for Microsoft Defender ATP 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
@@ -50,5 +53,4 @@ You can verify the data location by navigating to **Settings** > **Data retentio
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Configure advanced features](advanced-features.md)

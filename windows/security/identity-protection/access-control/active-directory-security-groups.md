@@ -79,8 +79,8 @@ Groups are characterized by a scope that identifies the extent to which the grou
 
 -   Domain Local
 
-**Note**  
-In addition to these three scopes, the default groups in the **Builtin** container have a group scope of Builtin Local. This group scope and group type cannot be changed.
+> [!NOTE]
+> In addition to these three scopes, the default groups in the **Builtin** container have a group scope of Builtin Local. This group scope and group type cannot be changed.
 
  
 
@@ -111,8 +111,8 @@ The following table lists the three group scopes and more information about each
 <td><p>Accounts from any domain in the same forest</p>
 <p>Global groups from any domain in the same forest</p>
 <p>Other Universal groups from any domain in the same forest</p></td>
-<td><p>Can be converted to Domain Local scope</p>
-<p>Can be converted to Global scope if the group is not a member of any other Universal groups</p></td>
+<td><p>Can be converted to Domain Local scope if the group is not a member of any other Universal groups</p>
+<p>Can be converted to Global scope if the group does not contain any other Universal groups</p></td>
 <td><p>On any domain in the same forest or trusting forests</p></td>
 <td><p>Other Universal groups in the same forest</p>
 <p>Domain Local groups in the same forest or trusting forests</p>
@@ -620,8 +620,8 @@ Members of the Account Operators group cannot manage the Administrator user acco
 
 The Account Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-By default, this built-in group has no members, and it can create and manage users and groups in the domain, including its own membership and that of the Server Operators group. This group is considered a service administrator group because it can modify Server Operators, which in turn can modify domain controller settings. As a best practice, leave the membership of this group empty, and do not use it for any delegated administration. This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> By default, this built-in group has no members, and it can create and manage users and groups in the domain, including its own membership and that of the Server Operators group. This group is considered a service administrator group because it can modify Server Operators, which in turn can modify domain controller settings. As a best practice, leave the membership of this group empty, and do not use it for any delegated administration. This group cannot be renamed, deleted, or moved.
 
  
 
@@ -686,8 +686,8 @@ Members of the Administrators group have complete and unrestricted access to the
 
 The Administrators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-The Administrators group has built-in capabilities that give its members full control over the system. This group cannot be renamed, deleted, or moved. This built-in group controls access to all the domain controllers in its domain, and it can change the membership of all administrative groups.
+> [!NOTE]
+> The Administrators group has built-in capabilities that give its members full control over the system. This group cannot be renamed, deleted, or moved. This built-in group controls access to all the domain controllers in its domain, and it can change the membership of all administrative groups.
 
 Membership can be modified by members of the following groups: the default service Administrators, Domain Admins in the domain, or Enterprise Admins. This group has the special privilege to take ownership of any object in the directory or any resource on a domain controller. This account is considered a service administrator group because its members have full access to the domain controllers in the domain.
 
@@ -1345,7 +1345,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of the DnsUpdateProxy group are DNS clients. They are permitted to perform dynamic updates on behalf of other clients (such as DHCP servers). A DNS server can develop stale resource records when a DHCP server is configured to dynamically register host (A) and pointer (PTR) resource records on behalf of DHCP clients by using dynamic update. Adding clients to this security group mitigates this scenario.
 
-However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account.
+However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
 For information, see [DNS Record Ownership and the DnsUpdateProxy Group](https://technet.microsoft.com/library/dd334715.aspx).
 
@@ -1365,7 +1365,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1103</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1406,7 +1406,7 @@ This security group has not changed since Windows Server 2008.
 
 ### <a href="" id="bkmk-dnsadmins"></a>DnsAdmins
 
-Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions.
+Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
 For more information about security and DNS, see [DNSSEC in Windows Server 2012](https://technet.microsoft.com/library/dn593694(v=ws.11).aspx).
 
@@ -1426,7 +1426,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1102</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -2056,8 +2056,8 @@ When a member of the Guests group signs out, the entire profile is deleted. This
 
 Computer Configuration\\Administrative Templates\\System\\User Profiles
 
-**Note**  
-A Guest account is a default member of the Guests security group. People who do not have an actual account in the domain can use the Guest account. A user whose account is disabled (but not deleted) can also use the Guest account.
+> [!NOTE]
+> A Guest account is a default member of the Guests security group. People who do not have an actual account in the domain can use the Guest account. A user whose account is disabled (but not deleted) can also use the Guest account.
 
 The Guest account does not require a password. You can set rights and permissions for the Guest account as in any user account. By default, the Guest account is a member of the built-in Guests group and the Domain Guests global group, which allows a user to sign in to a domain. The Guest account is disabled by default, and we recommend that it stay disabled.
 
@@ -2125,8 +2125,8 @@ This security group has not changed since Windows Server 2008.
 
 Members of the Hyper-V Administrators group have complete and unrestricted access to all the features in Hyper-V. Adding members to this group helps reduce the number of members required in the Administrators group, and further separates access.
 
-**Note**  
-Prior to Windows Server 2012, access to features in Hyper-V was controlled in part by membership in the Administrators group.
+> [!NOTE]
+> Prior to Windows Server 2012, access to features in Hyper-V was controlled in part by membership in the Administrators group.
 
  
 
@@ -2189,7 +2189,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 IIS\_IUSRS is a built-in group that is used by Internet Information Services beginning with IIS 7.0. A built-in account and group are guaranteed by the operating system to always have a unique SID. IIS 7.0 replaces the IUSR\_MachineName account and the IIS\_WPG group with the IIS\_IUSRS group to ensure that the actual names that are used by the new account and group will never be localized. For example, regardless of the language of the Windows operating system that you install, the IIS account name will always be IUSR, and the group name will be IIS\_IUSRS.
 
-For more information, see [Understanding Built-In User and Group Accounts in IIS 7](http://www.iis.net/learn/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
+For more information, see [Understanding Built-In User and Group Accounts in IIS 7](https://docs.microsoft.com/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2252,8 +2252,8 @@ Members of the Incoming Forest Trust Builders group can create incoming, one-way
 
 To make this determination, the Windows security system computes a trust path between the domain controller for the server that receives the request and a domain controller in the domain of the requesting account. A secured channel extends to other Active Directory domains through interdomain trust relationships. This secured channel is used to obtain and verify security information, including security identifiers (SIDs) for users and groups.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
 
@@ -2261,8 +2261,8 @@ For more information, see [How Domain and Forest Trusts Work: Domain and Forest 
 
 The Incoming Forest Trust Builders group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
 
@@ -2359,17 +2359,15 @@ Members of the Network Configuration Operators group can have the following admi
 
 -   Enter the PIN unblock key (PUK) for mobile broadband devices that support a SIM card.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
-
 The Network Configuration Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
- 
 
 This security group has not changed since Windows Server 2008.
 
@@ -2434,26 +2432,23 @@ Members of the Performance Log Users group can manage performance counters, logs
 
 -   Can create and modify Data Collector Sets after the group is assigned the [Log on as a batch job](/windows/device-security/security-policy-settings/log-on-as-a-batch-job) user right.
 
-    **Warning**  
-    If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
+    > [!WARNING]
+    > If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
 
-     
 
 -   Cannot use the Windows Kernel Trace event provider in Data Collector Sets.
 
 For members of the Performance Log Users group to initiate data logging or modify Data Collector Sets, the group must first be assigned the [Log on as a batch job](/windows/device-security/security-policy-settings/log-on-as-a-batch-job) user right. To assign this user right, use the Local Security Policy snap-in in Microsoft Management Console.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
-
 The Performance Log Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This account cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This account cannot be renamed, deleted, or moved.
 
- 
 
 This security group has not changed since Windows Server 2008.
 
@@ -2524,13 +2519,13 @@ Specifically, members of this security group:
 
 -   Cannot create or modify Data Collector Sets.
 
-    **Warning**  
-    You cannot configure a Data Collector Set to run as a member of the Performance Monitor Users group.
+    > [!WARNING]
+    > You cannot configure a Data Collector Set to run as a member of the Performance Monitor Users group.
 
      
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO). This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO). This group cannot be renamed, deleted, or moved.
 
  
 
@@ -2590,15 +2585,13 @@ This security group has not changed since Windows Server 2008.
 </table>
 
  
-
 ### <a href="" id="bkmk-pre-ws2kcompataccess"></a>Pre–Windows 2000 Compatible Access
 
 Members of the Pre–Windows 2000 Compatible Access group have Read access for all users and groups in the domain. This group is provided for backward compatibility for computers running Windows NT 4.0 and earlier. By default, the special identity group, Everyone, is a member of this group. Add users to this group only if they are running Windows NT 4.0 or earlier.
 
-**Warning**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!WARNING]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
- 
 
 The Pre–Windows 2000 Compatible Access group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3243,8 +3236,8 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 Computers that are members of the Replicator group support file replication in a domain. Windows Server operating systems use the File Replication service (FRS) to replicate system policies and logon scripts stored in the System Volume (SYSVOL). Each domain controller keeps a copy of SYSVOL for network clients to access. FRS can also replicate data for the Distributed File System (DFS), synchronizing the content of each member in a replica set as defined by DFS. FRS can copy and maintain shared files and folders on multiple servers simultaneously. When changes occur, content is synchronized immediately within sites and by a schedule between sites.
 
-**Important**  
-In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or custom (non-SYSVOL) data. A Windows Server 2008 R2 domain controller can still use FRS to replicate the contents of a SYSVOL shared resource in a domain that uses FRS for replicating the SYSVOL shared resource between domain controllers.
+> [!WARNING]
+> In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or custom (non-SYSVOL) data. A Windows Server 2008 R2 domain controller can still use FRS to replicate the contents of a SYSVOL shared resource in a domain that uses FRS for replicating the SYSVOL shared resource between domain controllers.
 
 However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see:
 
@@ -3489,8 +3482,8 @@ For more information about this security group, see [Terminal Services License S
 
 The Terminal Server License Servers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
 
@@ -3624,11 +3617,10 @@ Members of this group have access to the computed token GroupsGlobalAndUniversal
 
 The Windows Authorization Access group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
-
 This security group has not changed since Windows Server 2008.
 
 <table>
@@ -3704,8 +3696,8 @@ The WinRMRemoteWMIUsers\_ group applies to versions of the Windows Server operat
 
 In Windows Server 2012, the Access Denied Assistance functionality adds the Authenticated Users group to the local WinRMRemoteWMIUsers\_\_ group. Therefore, when the Access Denied Assistance functionality is enabled, all authenticated users who have Read permissions to the file share can view the file share permissions.
 
-**Note**  
-The WinRMRemoteWMIUsers\_ group allows running Windows PowerShell commands remotely whereas the [Remote Management Users](#bkmk-remotemanagementusers) group is generally used to allow users to manage servers by using the Server Manager console.
+> [!NOTE]
+> The WinRMRemoteWMIUsers\_ group allows running Windows PowerShell commands remotely whereas the [Remote Management Users](#bkmk-remotemanagementusers) group is generally used to allow users to manage servers by using the Server Manager console.
 
  
 

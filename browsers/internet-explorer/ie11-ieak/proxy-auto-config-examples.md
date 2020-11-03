@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use proxy auto-configuration (.pac) files with IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 These are various ways you can use a proxy auto-configuration (.pac) file to specify an automatic proxy URL. We've included some examples here to help guide you, but you'll need to change the proxy names, port numbers, and IP addresses to match your organization's info.
 
 Included examples:

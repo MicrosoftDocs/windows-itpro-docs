@@ -19,8 +19,11 @@ ms.topic: article
 
 # Threat protection report in Microsoft Defender ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
@@ -85,4 +88,4 @@ For example, to show data about high-severity alerts only:
 3. Select **Apply**. 
 
 ## Related topic
-- [Machine health and compliance report](machine-reports.md)
+- [Device health and compliance report](machine-reports.md)

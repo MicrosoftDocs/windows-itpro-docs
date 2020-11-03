@@ -39,7 +39,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. Click the **Users** container in the navigation pane.
 3. Right-click **Key Admins** in the details pane and click **Properties**.
 4. Click the **Members** tab and click **Add**
-5. In the **Enter the object names to select** text box, type the name of the Azure AD Connect service account.  Click **OK**.
+5. In the **Enter the object names to select** text box, type the name of the service account used as an AD DS Connector account and click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
 ### Section Review

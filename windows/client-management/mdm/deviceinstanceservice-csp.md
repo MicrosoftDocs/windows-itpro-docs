@@ -1,6 +1,6 @@
 ---
 title: DeviceInstanceService CSP
-description: DeviceInstanceService CSP
+description: Learn how the DeviceInstanceService configuration service provider (CSP) provides some device inventory information that could be useful for an enterprise.
 ms.assetid: f113b6bb-6ce1-45ad-b725-1b6610721e2d
 ms.reviewer: 
 manager: dansimp

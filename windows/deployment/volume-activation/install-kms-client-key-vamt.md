@@ -1,7 +1,6 @@
 ---
 title: Install a KMS Client Key (Windows 10)
-description: Learn how to use the Volume Activation Management Tool (VAMT) to install Generic Volume License Key (GVLK), or KMS client, product keys.
-ms.custom: seo-marvel-apr2020
+description: Learn to use the Volume Activation Management Tool (VAMT) to install Generic Volume License Key (GVLK), or KMS client, product keys.
 ms.assetid: d234468e-7917-4cf5-b0a8-4968454f7759
 ms.reviewer: 
 manager: laurawi

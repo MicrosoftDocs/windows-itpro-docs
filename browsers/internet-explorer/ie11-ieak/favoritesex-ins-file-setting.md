@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the FavoritesEx .INS file for your Favorites icon and URLs
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about where you store your **Favorites** icon file, whether your **Favorites** are available offline, and the URLs for each **Favorites** site.
 
 |Name            |Value                  |Description                                                               |

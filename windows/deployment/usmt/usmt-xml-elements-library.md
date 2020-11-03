@@ -1,7 +1,6 @@
 ---
 title: XML Elements Library (Windows 10)
 description: Learn about the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT).
-ms.custom: seo-marvel-apr2020
 ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
 ms.reviewer: 
 manager: laurawi

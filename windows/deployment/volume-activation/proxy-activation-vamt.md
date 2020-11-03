@@ -1,7 +1,6 @@
 ---
 title: Perform Proxy Activation (Windows 10)
-description: In this article, you will learn how to use VAMT to perform proxy activation of the client products that do not have internet access.
-ms.custom: seo-marvel-apr2020
+description: Perform proxy activation by using the Volume Activation Management Tool (VAMT) to activate client computers that do not have Internet access.
 ms.assetid: 35a919ed-f1cc-4d10-9c88-9bd634549dc3
 ms.reviewer: 
 manager: laurawi

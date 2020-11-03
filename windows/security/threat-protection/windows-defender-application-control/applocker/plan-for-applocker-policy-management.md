@@ -277,7 +277,7 @@ The following table is an example of what to consider and record.
 </tbody>
 </table>
  
-<strong>Policy maintenance policy</strong>
+<b>Policy maintenance policy</b>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
 <table>

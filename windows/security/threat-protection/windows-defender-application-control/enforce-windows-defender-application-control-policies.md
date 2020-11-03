@@ -1,7 +1,7 @@
 ---
 title: Enforce Windows Defender Application Control (WDAC) policies (Windows 10)
 description: Learn how to test a Windows Defender Application Control (WDAC) policy in enforced mode by following these steps in an elevated Windows PowerShell session.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy

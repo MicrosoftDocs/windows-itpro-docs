@@ -1,6 +1,6 @@
 ---
 title: Create an Authentication Request Rule (Windows 10)
-description: Create an Authentication Request Rule
+description: Create a new rule for Windows Defender Firewall with Advanced Security so devices on the network use IPsec protocols and methods before they can communicate.
 ms.assetid: 1296e048-039f-4d1a-aaf2-8472ad05e359
 ms.reviewer: 
 ms.author: dansimp
@@ -19,7 +19,7 @@ ms.date: 08/17/2017
 
 # Create an Authentication Request Rule
 
-**Applies to**
+**Applies to:**
 -   Windows 10
 -   Windows Server 2016
 
@@ -27,9 +27,9 @@ After you have configured IPsec algorithms and authentication methods, you can c
 
 **Administrative credentials**
 
-To complete this procedure, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
+To complete this procedure, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the (Group Policy Objects) GPOs.
 
-To create the authentication request rule
+To create the authentication request rule:
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
@@ -39,9 +39,10 @@ To create the authentication request rule
 
 4.  On the **Requirements** page, select **Request authentication for inbound and outbound connections**.
 
-    >**Caution:**  Do not configure the rule to require inbound authentication until you have confirmed that all of your devices are receiving the correct GPOs, and are successfully negotiating IPsec and authenticating with each other. Allowing the devices to communicate even when authentication fails prevents any errors in the GPOs or their distribution from breaking communications on your network.
+    > [!CAUTION]
+    > Do not configure the rule to require inbound authentication until you have confirmed that all of your devices are receiving the correct GPOs, and are successfully negotiating IPsec and authenticating with each other. Allowing the devices to communicate even when authentication fails prevents any errors in the GPOs or their distribution from breaking communications on your network.
 
-5.  On the **Authentication Method** page, select the authentication option you want to use on your network. To select multiple methods that are tried in order until one succeeds, click **Advanced**, click **Customize**, and then click **Add** to add methods to the list. Second authentication methods require Authenticated IP (AuthIP).
+5.  On the **Authentication Method** page, select the authentication option you want to use on your network. To select multiple methods that are attempted in order until one succeeds, click **Advanced**, click **Customize**, and then click **Add** to add methods to the list. Second authentication methods require Authenticated IP (AuthIP).
 
     1.  **Default**. Selecting this option tells the device to request authentication by using the method currently defined as the default on the device. This default might have been configured when the operating system was installed or it might have been configured by Group Policy. Selecting this option is appropriate when you have configured system-wide settings by using the [Configure Authentication Methods](configure-authentication-methods.md) procedure.
 
@@ -49,7 +50,9 @@ To create the authentication request rule
 
     3.  **Computer (Kerberos V5)**. Selecting this option tells the device to request authentication of the device by using its domain credentials. This option works with other devices than can use IKE v1, including earlier versions of Windows.
 
-    4.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
+    4.  **Advanced**. Selecting this option enables you to specify a custom combination of authentication methods required for your scenario.
+        
+6.  Optional: If you selected **Advanced** in the previous step, then Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 
         The **First authentication method** can be one of the following:
 
@@ -75,18 +78,19 @@ To create the authentication request rule
 
         If you check **Second authentication is optional**, the connection can succeed even if the authentication attempt specified in this column fails.
 
-        >**Important:**  Make sure that you do not select the boxes to make both first and second authentication optional. Doing so allows plaintext connections whenever authentication fails.
+        > [!IMPORTANT]
+        > Make sure that you do not select the boxes to make both first and second authentication optional. Doing so allows plaintext connections whenever authentication fails.
 
-6.  After you have configured the authentication methods, click **OK** on each dialog box to save your changes and close it, until you return to the **Authentication Method** page in the wizard. Click **Next**.
+7.  After you have configured the authentication methods, click **OK** on each dialog box to save your changes and close it, until you return to the **Authentication Method** page in the wizard. Click **Next**.
 
-7.  On the **Profile** page, select the check boxes for the network location type profiles to which this rule applies.
+8.  On the **Profile** page, select the check boxes for the network location type profiles to which this rule applies.
 
     -   On portable devices, consider clearing the **Private** and **Public** boxes to enable the device to communicate without authentication when it is away from the domain network.
 
-    -   On devices that do not move from network to network, consider selecting all of the profiles. Doing so prevents an unexpected switch in the network location type from disabling the rule.
+    -   On devices that do not move from network to network, consider selecting all the profiles. Doing so prevents an unexpected switch in the network location type from disabling the rule.
 
     Click **Next**.
 
-8.  On the **Name** page, type a name for the connection security rule and a description, and then click **Finish**.
+9.  On the **Name** page, type a name for the connection security rule and a description, and then click **Finish**.
 
     The new rule appears in the list of connection security rules.

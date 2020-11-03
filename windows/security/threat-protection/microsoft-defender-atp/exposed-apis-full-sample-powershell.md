@@ -1,7 +1,7 @@
 ---
-title: Advanced Hunting with Powershell API Guide
+title: Advanced Hunting with PowerShell API Guide
 ms.reviewer: 
-description: Walk through a practice scenario, complete with code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
+description: Use these code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,16 +19,19 @@ ms.date: 09/24/2018
 ---
 
 # Microsoft Defender ATP APIs using PowerShell
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Full scenario using multiple APIs from Microsoft Defender ATP.
 
-In this section we share PowerShell samples to 
+In this section, we share PowerShell samples to 
 - Retrieve a token 
 - Use token to retrieve the latest alerts in Microsoft Defender ATP
-- For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
+- For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.
 
 **Prerequisite**: You first need to [create an app](apis-intro.md).
 
@@ -40,15 +43,15 @@ In this section we share PowerShell samples to
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-For more details, refer to [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
 Run the below:
 
-- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
-- $appSecret: Secret of your AAD app
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
+- $appSecret: Secret of your Azure AD app
 - $suspiciousUrl: The URL
 
 

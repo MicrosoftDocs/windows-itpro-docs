@@ -3,8 +3,9 @@ title: Configure VDA for Windows 10 Subscription Activation
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
-description: In this article, you will learn how to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA.
+description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
 keywords: upgrade, update, task sequence, deploy
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
@@ -13,7 +14,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -67,28 +67,26 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 4. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 5. Click **Add**, type **Authenticated users**, and then click **OK** three times.
 6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
-7. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-8. Open Windows Configuration Designer and click **Provison desktop services**.
-9. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 10.
-
-    1. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
+7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps to use Windows Configuration Designer and inject an activation key. Otherwise, skip to step 20.
+8. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+9. Open Windows Configuration Designer and click **Provison desktop services**.
+10. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
         - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
-    2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
-10. On the Set up network page, choose **Off**.
-11. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
+11. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+12. On the Set up network page, choose **Off**.
+13. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
     - Note: This step is different for [Azure AD-joined VMs](#azure-active-directory-joined-vms).
-12. On the Add applications page, add applications if desired. This step is optional.
-13. On the Add certificates page, add certificates if desired. This step is optional.
-14. On the Finish page, click **Create**.
-15. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 16.
-    1. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
-    2. Type the following at an elevated commnand prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
+14. On the Add applications page, add applications if desired. This step is optional.
+15. On the Add certificates page, add certificates if desired. This step is optional.
+16. On the Finish page, click **Create**.
+17. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
+18. Type the following at an elevated command prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
 
-    ```
+    ```cmd
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
-    3. Right-click the mounted image in file explorer and click **Eject**.
-16. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+19. Right-click the mounted image in file explorer and click **Eject**.
+20. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 

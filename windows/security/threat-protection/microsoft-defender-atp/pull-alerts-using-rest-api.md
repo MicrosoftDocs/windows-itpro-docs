@@ -1,6 +1,6 @@
 ---
 title: Pull Microsoft Defender ATP detections using REST API
-description: Pull detections from Microsoft Defender ATP REST API.
+description: Learn how call an Microsoft Defender ATP endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,16 +19,20 @@ ms.topic: article
 
 # Pull Microsoft Defender ATP detections using SIEM REST API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
->- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+>-The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 Microsoft Defender ATP supports the OAuth 2.0 protocol to pull detections from the API.
 
@@ -67,7 +71,7 @@ You'll use the access token to access the protected resource, which are detectio
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
-```syntax
+```http
 
 POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
@@ -113,21 +117,21 @@ sinceTimeUtc | DateTime | Defines the lower time bound alerts are retrieved from
 untilTimeUtc | DateTime | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
 ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
 limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
-machinegroups | string | Specifies machine groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | Single machine tag from the registry.
-CloudCreatedMachineTags | string | Machine tags that were created in Microsoft Defender Security Center.
+machinegroups | string | Specifies device groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all device groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | string | Single device tag from the registry.
+CloudCreatedMachineTags | string | Device tags that were created in Microsoft Defender Security Center.
 
 ### Request example
 The following example demonstrates how to retrieve all the detections in your organization.
 
-```syntax
+```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
 Authorization: Bearer <your access token>
 ```
 
 The following example demonstrates a request to get the last 20 detections since 2016-09-12 00:00:00.
 
-```syntax
+```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
 Authorization: Bearer <your access token>
 ```
@@ -138,39 +142,60 @@ The return value is an array of alert objects in JSON format.
 Here is an example return value:
 
 ```json 
-{"AlertTime":"2017-01-23T07:32:54.1861171Z",
-"ComputerDnsName":"desktop-bvccckk",
-"AlertTitle":"Suspicious PowerShell commandline",
-"Category":"SuspiciousActivity",
-"Severity":"Medium",
-"AlertId":"636207535742330111_-1114309685",
-"Actor":null,
-"LinkToWDATP":"https://securitycenter.windows.com/alert/636207535742330111_-1114309685",
-"IocName":null,
-"IocValue":null,
-"CreatorIocName":null,
-"CreatorIocValue":null,
-"Sha1":"69484ca722b4285a234896a2e31707cbedc59ef9",
-"FileName":"powershell.exe",
-"FilePath":"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0",
-"IpAddress":null,
-"Url":null,
-"IoaDefinitiondId":"7f1c3609-a3ff-40e2-995b-c01770161d68",
-"UserName":null,
-"AlertPart":0,
-"FullId":"636207535742330111_-1114309685:9DE735BA9FF87725E392C6DFBEB2AF279035CDE229FCC00D28C0F3242C5A50AF",
-"LastProcessedTimeUtc":"2017-01-23T11:33:45.0760449Z",
-"ThreatCategory":null,
-"ThreatFamily":null,
-"ThreatName":null,
-"RemediationAction":null,
-"RemediationIsSuccess":null,
-"Source":"Microsoft Defender ATP",
-"Md5":null,
-"Sha256":null,
-"WasExecutingWhileDetected":null,
-"FileHash":"69484ca722b4285a234896a2e31707cbedc59ef9",
-"IocUniqueId":"9DE735BA9FF87725E392C6DFBEB2AF279035CDE229FCC00D28C0F3242C5A50AF"}
+[
+{        
+        "AlertTime": "2020-09-30T14:09:20.35743Z",
+        "ComputerDnsName": "mymachine1.domain.com",
+        "AlertTitle": "Suspicious File Activity",
+        "Category": "Malware",
+        "Severity": "High",
+        "AlertId": "da637370718981685665_16349121",
+        "Actor": "",
+        "LinkToWDATP": "https://securitycenter.windows.com/alert/da637370718981685665_16349121",
+        "IocName": "",
+        "IocValue": "",
+        "CreatorIocName": "",
+        "CreatorIocValue": "",
+        "Sha1": "aabbccddee1122334455aabbccddee1122334455",
+        "FileName": "cmdParent.exe",
+        "FilePath": "C:\\WINDOWS\\SysWOW64\\boo3\\qwerty",
+        "IpAddress": "",
+        "Url": "",
+        "IoaDefinitionId": "b20af1d2-5990-4672-87f1-acc2a8ff7725",
+        "UserName": "",
+        "AlertPart": 0,
+        "FullId": "da637370718981685665_16349121:R4xEdgAvDb2LQl3BgHoA3NYqKmRSiIAG7dpxAJCYZhY=",
+        "LastProcessedTimeUtc": "2020-09-30T14:11:44.0779765Z",
+        "ThreatCategory": "",
+        "ThreatFamily": "",
+        "ThreatName": "",
+        "RemediationAction": "",
+        "RemediationIsSuccess": null,
+        "Source": "EDR",
+        "Md5": "854b85cbff2752fcb88606bca76f83c6",
+        "Sha256": "",
+        "WasExecutingWhileDetected": null,
+        "UserDomain": "",
+        "LogOnUsers": "",
+        "MachineDomain": "domain.com",
+        "MachineName": "mymachine1",
+        "InternalIPv4List": "",
+        "InternalIPv6List": "",
+        "FileHash": "aabbccddee1122334455aabbccddee1122334455",
+        "DeviceID": "deadbeef000040830ee54503926f556dcaf82bb0",
+        "MachineGroup": "",
+        "Description": "Test Alert",
+        "DeviceCreatedMachineTags": "",
+        "CloudCreatedMachineTags": "",
+        "CommandLine": "",
+        "IncidentLinkToWDATP": "https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM",
+        "ReportID": 1053729833,
+        "LinkToMTP": "https://security.microsoft.com/alert/da637370718981685665_16349121",
+        "IncidentLinkToMTP": "https://security.microsoft.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM",
+        "ExternalId": "31DD0A845DDA4059FDEDE031014645350AECABD3",
+        "IocUniqueId": "R4xEdgAvDb2LQl3BgHoA3NYqKmRSiIAG7dpxAJCYZhY="
+}
+]
 ```
 
 ## Code examples

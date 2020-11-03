@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # File types used or created by IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 A list of the file types used or created by tools in IEAK 11:
 
 |File type |Description              |

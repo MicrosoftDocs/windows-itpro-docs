@@ -44,7 +44,7 @@ You can't distribute offline-licensed apps directly from Microsoft Store. Once y
 -   **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
 
 -   **Mobile device management provider or management server.** You can use a mobile device management (MDM) provider or management server to distribute offline apps. For more information, see these topics:
-    - [Manage apps from Microsoft Store for Business with Microsoft Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+    - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
     - [Manage apps from Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)<br>
 
 For third-party MDM providers or management servers, check your product documentation.

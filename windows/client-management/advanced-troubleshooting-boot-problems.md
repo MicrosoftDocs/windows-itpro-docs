@@ -1,6 +1,6 @@
 ---
 title: Advanced troubleshooting for Windows boot problems
-description: Learn how to troubleshoot when Windows is unable to boot
+description: Learn to troubleshoot when Windows can't boot. This article includes advanced troubleshooting techniques intended for use by support agents and IT professionals.
 ms.prod: w10
 ms.sitesec: library
 author: dansimp
@@ -220,6 +220,9 @@ If Windows cannot load the system registry hive into memory, you must restore th
 
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
+> [!NOTE]
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).
+
 ## Kernel Phase
 
 If the system gets stuck during the kernel phase, you experience multiple symptoms or receive multiple error messages. These include, but are not limited to, the following:
@@ -392,3 +395,6 @@ If the dump file shows an error that is related to a driver (for example, window
         3. Navigate to C:\Windows\System32\Config\.
         4. Rename the all five hives by appending ".old" to the name.
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.
+
+> [!NOTE]
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).

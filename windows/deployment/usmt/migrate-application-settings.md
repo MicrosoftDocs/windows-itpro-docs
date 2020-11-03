@@ -1,7 +1,6 @@
 ---
 title: Migrate Application Settings (Windows 10)
-description: Learn how to author a custom migration .xml file to migrate the settings of an application that is not migrated by default using MigApp.xml.
-ms.custom: seo-marvel-apr2020
+description: Learn how to author a custom migration .xml file that migrates the settings of an application that isn't migrated by default using MigApp.xml.
 ms.assetid: 28f70a83-0a3e-4a6b-968a-2b78ccd3cc07
 ms.reviewer: 
 manager: laurawi
@@ -24,7 +23,7 @@ This topic defines how to author a custom migration .xml file that migrates the 
 
 This topic does not contain information about how to migrate applications that store settings in an application-specific store, only the applications that store the information in files or in the registry. It also does not contain information about how to migrate the data that users create using the application. For example, if the application creates .doc files using a specific template, this topic does not discuss how to migrate the .doc files and templates themselves.
 
-## <a href="" id="createxmlmigappsettings"></a>In this topic
+## <a href="" id="createxmlmigappsettings"></a>In this Topic
 
 
 -   [Before You Begin](#bkmk-beforebegin)
@@ -47,19 +46,19 @@ You should identify a test computer that contains the operating system of your s
 ## <a href="" id="bkmk-step1"></a>Step 1: Verify that the application is installed on the source computer, and that it is the same version as the version to be installed on the destination computer.
 
 
-Before USMT migrates the settings, you need it to check whether the application is installed on the source computer, and that it is the correct version. If the application is not installed on the source computer, you probably do not want USMT to spend time searching for the application's settings. More importantly, if USMT collects settings for an application that is not installed, it may migrate settings that will cause the destination computer to function incorrectly. You should also investigate whether there is more than one version of the application. This is because the new version may not store the settings in the same place, which may lead to unexpected results on the destination computer.
+Before USMT migrates the settings, you need it to check whether the application is installed on the source computer, and that it is the correct version. If the application is not installed on the source computer, you probably do not want USMT to spend time searching for the application’s settings. More importantly, if USMT collects settings for an application that is not installed, it may migrate settings that will cause the destination computer to function incorrectly. You should also investigate whether there is more than one version of the application. This is because the new version may not store the settings in the same place, which may lead to unexpected results on the destination computer.
 
 There are many ways to detect if an application is installed. The best practice is to check for an application uninstall key in the registry, and then search the computer for the executable file that installed the application. It is important that you check for both of these items, because sometimes different versions of the same application share the same uninstall key. So even if the key is there, it may not correspond to the version of the application that you want.
 
 ### Check the registry for an application uninstall key.
 
-When many applications are installed (especially those installed using the Microsoft&reg; Windows&reg; Installer technology), an application uninstall key is created under **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall**. For example, when Adobe Acrobat Reader 7 is installed, it creates a key named **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall \\{AC76BA86-7AD7-1033-7B44-A70000000000}**. Therefore, if a computer contains this key, then Adobe Acrobat Reader 7 is installed on the computer. You can check for the existence of a registry key using the **DoesObjectExist** helper function.
+When many applications are installed (especially those installed using the Microsoft® Windows® Installer technology), an application uninstall key is created under **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall**. For example, when Adobe Acrobat Reader 7 is installed, it creates a key named **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall \\{AC76BA86-7AD7-1033-7B44-A70000000000}**. Therefore, if a computer contains this key, then Adobe Acrobat Reader 7 is installed on the computer. You can check for the existence of a registry key using the **DoesObjectExist** helper function.
 
 Usually, you can find this key by searching under **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall** for the name of the application, the name of the application executable file, or for the name of the company that makes the application. You can use the Registry Editor (**Regedit.exe** located in the %**SystemRoot**%) to search the registry.
 
 ### Check the file system for the application executable file.
 
-You should also check the application binaries for the executable that installed the application. To do this, you will first need to determine where the application is installed and what the name of the executable is. Most applications store the installation location of the application binaries in the registry. You should search the registry for the name of the application, the name of the application executable, or for the name of the company that makes the application, until you find the registry value that contains the installation path. Once you have determined the path to the application executable, you can use the **DoesFileVersionMatch** helper function to check for the correct version of the application executable. For an example of how to do this, see the Windows Live&trade; Messenger section of the MigApp.xml file.
+You should also check the application binaries for the executable that installed the application. To do this, you will first need to determine where the application is installed and what the name of the executable is. Most applications store the installation location of the application binaries in the registry. You should search the registry for the name of the application, the name of the application executable, or for the name of the company that makes the application, until you find the registry value that contains the installation path. Once you have determined the path to the application executable, you can use the **DoesFileVersionMatch** helper function to check for the correct version of the application executable. For an example of how to do this, see the Windows Live™ Messenger section of the MigApp.xml file.
 
 ## <a href="" id="bkmk-step2"></a>Step 2: Identify settings to collect and determine where each setting is stored on the computer.
 

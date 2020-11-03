@@ -1,7 +1,7 @@
 ---
 title: Query Application Control events with Advanced Hunting (Windows 10)
 description: Learn how to query Windows Defender Application Control events across your entire organization by using Advanced Hunting.
-keywords: whitelisting, security, malware
+keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -30,10 +30,10 @@ This capability is supported beginning with Windows version 1607.
 Here is a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender ATP:
 
 ```
-MiscEvents
-| where EventTime > ago(7d) and
+DeviceEvents
+| where Timestamp > ago(7d) and
 ActionType startswith "AppControl"
-| summarize Machines=dcount(ComputerName) by ActionType
+| summarize Machines=dcount(DeviceName) by ActionType
 | order by Machines desc
 ```
 

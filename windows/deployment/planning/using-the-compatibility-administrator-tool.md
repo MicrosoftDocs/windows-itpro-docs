@@ -1,6 +1,6 @@
 ---
 title: Using the Compatibility Administrator Tool (Windows 10)
-description: This article provides information about using the Compatibility Administrator tool, which provides functions like querying your custom-compatibility databases.
+description: This section provides information about using the Compatibility Administrator tool.
 ms.assetid: 57271e47-b9b9-4018-a0b5-7115a533166d
 ms.reviewer: 
 manager: laurawi
@@ -13,7 +13,6 @@ audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ---
 
 # Using the Compatibility Administrator Tool
@@ -63,11 +62,11 @@ This section provides information about using the Compatibility Administrator to
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="creating-a-custom-compatibility-mode-in-compatibility-administrator.md" data-raw-source="[Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)">Creating a Custom Compatibility Mode in Compatibility Administrator</a></p></td>
-<td align="left"><p>Windows&reg; provides several <em>compatibility modes</em>, groups of compatibility fixes found to resolve many common application-compatibility issues. While working with Compatibility Administrator, you might decide to group some of your individual compatibility fixes into a custom-compatibility mode, which you can then deploy and use on any of your compatibility databases.</p></td>
+<td align="left"><p>Windows® provides several <em>compatibility modes</em>, groups of compatibility fixes found to resolve many common application-compatibility issues. While working with Compatibility Administrator, you might decide to group some of your individual compatibility fixes into a custom-compatibility mode, which you can then deploy and use on any of your compatibility databases.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="creating-an-apphelp-message-in-compatibility-administrator.md" data-raw-source="[Creating an AppHelp Message in Compatibility Administrator](creating-an-apphelp-message-in-compatibility-administrator.md)">Creating an AppHelp Message in Compatibility Administrator</a></p></td>
-<td align="left"><p>The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non-blocking message that appears when a user starts an application that you know has major functionality issues on the Windows&reg; operating system.</p></td>
+<td align="left"><p>The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non-blocking message that appears when a user starts an application that you know has major functionality issues on the Windows® operating system.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="viewing-the-events-screen-in-compatibility-administrator.md" data-raw-source="[Viewing the Events Screen in Compatibility Administrator](viewing-the-events-screen-in-compatibility-administrator.md)">Viewing the Events Screen in Compatibility Administrator</a></p></td>

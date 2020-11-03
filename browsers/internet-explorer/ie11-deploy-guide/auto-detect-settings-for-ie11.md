@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Auto detect settings Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Auto detect settings Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 After you specify the specific settings related to automatic detection on your Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) servers, you can set up your users' browser settings from a central location.
 
 Automatic detection works even if the browser wasn't originally set up or installed by the administrator.

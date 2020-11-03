@@ -1,6 +1,6 @@
 ---
 title: VPN connection types (Windows 10)
-description: tbd
+description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

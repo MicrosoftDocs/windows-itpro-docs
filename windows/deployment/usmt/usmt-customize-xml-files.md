@@ -1,7 +1,6 @@
 ---
 title: Customize USMT XML Files (Windows 10)
-description: In this article, you will learn how to customize User State Migration Tool (USMT) XML files to modify migration. 
-ms.custom: seo-marvel-apr2020
+description: Learn how to customize USMT XML files. Also, learn about the migration XML files that are included with USMT.
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.reviewer: 
 manager: laurawi
@@ -18,7 +17,7 @@ ms.topic: article
 # Customize USMT XML Files
 
 
-## In this topic
+## In This Topic
 
 
 [Overview](#bkmk-overview)

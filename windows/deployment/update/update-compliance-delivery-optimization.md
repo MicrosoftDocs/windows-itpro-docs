@@ -2,7 +2,7 @@
 title: Delivery Optimization in Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: Learn how new Delivery Optimization data displays in Update Compliance, including observed bandwidth savings across devices using peer-to-peer distribution.
+description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy

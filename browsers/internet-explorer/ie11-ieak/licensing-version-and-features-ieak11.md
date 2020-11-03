@@ -16,6 +16,9 @@ ms.date: 10/23/2018
 
 
 # Determine the licensing version and features to use in IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 In addition to the Software License Terms for the Internet Explorer Administration Kit 11 (IEAK 11, referred to as the "software"), these Guidelines further define how you may and may not use the software to create versions of Internet Explorer 11 with optional customizations (referred to as the "customized browser") for internal use and distribution in accordance with the IEAK 11 Software License Terms. IEAK 11 is for testing purposes only and is not intended to be used in a production environment.
 
 During installation, you must pick a version of IEAK 11, either **External** or **Internal**, based on your license agreement. Your version selection decides the options you can chose, the steps you follow to deploy your Internet Explorer 11 package, and how you manage the browser after deployment.

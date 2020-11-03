@@ -1,6 +1,6 @@
 ---
 title: Client management (Windows 10)
-description: Windows 10 client management
+description: Learn about the administrative tools, tasks and best practices for managing Windows 10 and Windows 10 Mobile clients across your enterprise.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

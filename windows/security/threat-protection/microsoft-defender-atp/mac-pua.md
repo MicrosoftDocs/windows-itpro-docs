@@ -13,11 +13,16 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
 # Detect and block potentially unwanted applications with Microsoft Defender ATP for Mac
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
@@ -53,7 +58,7 @@ You can configure how PUA files are handled from the command line or from the ma
 In Terminal, execute the following command to configure PUA protection:
 
 ```bash
-$ mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
+mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
 ```
 
 ### Use the management console to configure PUA protection:

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Bluetooth
-description: Policy CSP - Bluetooth
+description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,9 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - Bluetooth
-
-> [!WARNING] 
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -412,19 +409,19 @@ The default value is an empty string. For more information, see [ServicesAllowed
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
 </tr>
 </table>
 
@@ -441,8 +438,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Scope-->
 <!--Description-->
-Added in the next major release of Windows 10.
-There are multiple levels of encryption strength when pairing Bluetooth devices. This policy helps prevent weaker devices cryptographically being used in high security environments.
+Added in Windows 10, version 2004. There are multiple levels of encryption strength when pairing Bluetooth devices. This policy helps prevent weaker devices cryptographically being used in high security environments.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -464,14 +460,14 @@ For more information on allowed key sizes, refer to Bluetooth Core Specification
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in the next major release of Windows 10.
-
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 <!--/Policies-->
 
 <hr/>

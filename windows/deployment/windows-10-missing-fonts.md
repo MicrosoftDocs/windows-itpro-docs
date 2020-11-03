@@ -1,8 +1,7 @@
 ---
 title: How to install fonts missing after upgrading to Windows 10
-description: In this article, you'll learn how to install fonts that are missing after you upgrade to Windows 10.
+description: Some of the fonts are missing from the system after you upgrade to Windows 10.
 keywords: deploy, upgrade, FoD, optional feature
-ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
@@ -10,7 +9,6 @@ ms.localizationpriority: medium
 audience: itpro
 author: greg-lindsay
 ms.audience: itpro
-author: greg-lindsay
 ms.date: 10/31/2017
 ms.reviewer: 
 manager: laurawi

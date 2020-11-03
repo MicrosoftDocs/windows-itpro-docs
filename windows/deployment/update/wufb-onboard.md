@@ -1,13 +1,10 @@
 ---
 title: Onboarding to Windows Update for Business (Windows 10)
-description: Learn how to get started using Windows Update for Business, that helps you manage content you want to receive from Windows Update Service.
-ms.custom: seo-marvel-apr2020
+description: Get started using Windows Update for Business, a tool that enables IT pros and power users to manage content they want to receive from Windows Update Service.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
-author: jaimeo
-ms.localizationprioauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.reviewer: 

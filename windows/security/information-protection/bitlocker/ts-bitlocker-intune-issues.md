@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/18/2019
+ms.custom: bitlocker
 ---
 
 # Enforcing BitLocker policies by using Intune: known issues
@@ -205,7 +206,7 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
 1. Verify that the **Secure Boot State** setting is **On**, as follows:  
    ![System Information app, showing a supported Secure Boot State](./images/4509201-en-1.png)
 1. If the **Secure Boot State** setting is **Unsupported**, you cannot use Silent BitLocker Encryption on this device.  
-   ![System Information app, showing a supported Secure Boot State](./images/4509202-en-1.png)
+   ![System Information app, showing a unsupported Secure Boot State](./images/4509202-en-1.png)
 
 > [!NOTE]
 > You can also use the [Confirm-SecureBootUEFI](https://docs.microsoft.com/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the Secure Boot state. To do this, open an elevated PowerShell window and run the following command:

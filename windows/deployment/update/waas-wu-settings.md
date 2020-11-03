@@ -3,9 +3,7 @@ title: Manage additional Windows Update settings (Windows 10)
 description: In this article, learn about additional settings to control the behavior of Windows Update (WU) in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 audience: itpro
-author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 author: jaimeo
@@ -27,16 +25,13 @@ ms.custom: seo-marvel-apr2020
 
 You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
 
->[!IMPORTANT]
->In Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported on this platform.
-
 ## Summary of Windows Update settings
 
 | Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
 | [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
 | [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
-| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | | All |
+| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
 | [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | All |
 | [Enable client-side targeting](#enable-client-side-targeting) | | All |
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |

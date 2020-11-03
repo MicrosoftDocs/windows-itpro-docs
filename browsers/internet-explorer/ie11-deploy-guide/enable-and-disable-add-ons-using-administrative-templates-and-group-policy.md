@@ -17,6 +17,9 @@ ms.date: 4/12/2018
 
 
 # Enable and disable add-ons using administrative templates and group policy
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Add-ons let your employees personalize Internet Explorer. You can manage IE add-ons using Group Policy and Group Policy templates.
 
 There are four types of add-ons:

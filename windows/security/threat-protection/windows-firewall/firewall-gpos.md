@@ -1,6 +1,6 @@
 ---
 title: Firewall GPOs (Windows 10)
-description: Firewall GPOs
+description: In this example, a Group Policy Object is linked to the domain container because the domain controllers are not part of the isolated domain.
 ms.assetid: 720645fb-a01f-491e-8d05-c9c6d5e28033
 ms.reviewer: 
 ms.author: dansimp

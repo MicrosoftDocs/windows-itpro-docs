@@ -1,6 +1,6 @@
 ---
 title: machineAction resource type
-description: Retrieves top recent machineActions.
+description: Learn about the methods and properties of the MachineAction resource type in Microsoft Defender Advanced Threat Protection.
 keywords: apis, supported apis, get, machineaction, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,11 +18,14 @@ ms.topic: article
 
 # MachineAction resource type
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-- See [Response Actions](respond-machine-alerts.md) for more information
+- For more information, see [Response Actions](respond-machine-alerts.md). 
 
 | Method                                                            | Return Type                        | Description                                                 |
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
@@ -44,17 +47,17 @@ ms.topic: article
 
 | Property            | Type           | Description                                                                                                                                                                                                    |
 |:--------------------|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                  | Guid           | Identity of the [Machine Action](machineaction.md) entity.                                                                                                                                                     |
+| ID                  | Guid           | Identity of the [Machine Action](machineaction.md) entity.                                                                                                                                                     |
 | type                | Enum           | Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution" |
-| scope				  | string         | Scope of the action. "Full" or "Selective" in case of Isolation, "Quick" or "Full" in case of Anti-Virus scan.						                                                                            |
+| scope				  | string         | Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.						                                                                            |
 | requestor           | String         | Identity of the person that executed the action.                                                                                                                                                               |
 | requestorComment    | String         | Comment that was written when issuing the action.                                                                                                                                                              |
-| status              | Enum           | Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Cancelled".                                                                                 |
-| machineId           | String         | Id of the [machine](machine.md) on which the action was executed.                                                                                                                                              |
+| status              | Enum           | Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Canceled".                                                                                 |
+| machineId           | String         | ID of the [machine](machine.md) on which the action was executed.                                                                                                                                              |
 | machineId           | String         | Name of the [machine](machine.md) on which the action was executed.                                                                                                                                            |
 | creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | The last date and time when the action status was updated.                                                                                                                                                     |
-| relatedFileInfo     | Class          | Contains two Properties. string ```fileIdentifier```, Enum ```fileIdentifierType``` with the possible values: "Sha1" ,"Sha256" and "Md5".                                                                         |
+| relatedFileInfo     | Class          | Contains two Properties. string ```fileIdentifier```, Enum ```fileIdentifierType``` with the possible values: "Sha1", "Sha256" and "Md5".                                                                         |
 
 
 ## Json representation

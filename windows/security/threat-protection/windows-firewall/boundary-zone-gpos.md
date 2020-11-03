@@ -1,6 +1,6 @@
 ---
 title: Boundary Zone GPOs (Windows 10)
-description: Boundary Zone GPOs
+description: Learn about GPOs to create that must align with the group you create for the boundary zone in Windows Defender Firewall with Advanced Security.
 ms.assetid: 1ae66088-02c3-47e4-b7e8-74d0b8f8646e
 ms.reviewer: 
 ms.author: dansimp

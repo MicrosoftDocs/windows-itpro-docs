@@ -1,7 +1,6 @@
 ---
 title: Choose a Migration Store Type (Windows 10)
-description: This article guides you through the considerations you need to make when you choose a Migration Store Type.
-ms.custom: seo-marvel-apr2020
+description: Learn how to choose a migration store type and estimate the amount of disk space needed for computers in your organization.
 ms.assetid: 4e163e90-9c57-490b-b849-2ed52ab6765f
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 One of the main considerations for planning your migration is to determine which migration store type best meets your needs. As part of these considerations, determine how much space is required to run the User State Migration Tool (USMT) 10.0 components on your source and destination computers, and how much space is needed to create and host the migration store, whether you are using a local share, network share, or storage device. The final consideration is ensuring that user date integrity is maintained by encrypting the migration store.
 
-## In this section
+## In This Section
 
 
 <table>

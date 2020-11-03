@@ -1,7 +1,6 @@
 ---
 title: Recognized Environment Variables (Windows 10)
-description: Learn about the recognized environment variables that can be used during migration to identify folders that are different across computers.
-ms.custom: seo-marvel-apr2020
+description: Learn how to use environment variables to identify folders that may be different on different computers.
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
 ms.reviewer: 
 manager: laurawi
@@ -20,7 +19,7 @@ ms.topic: article
 
 When using the XML files MigDocs.xml, MigApp.xml, and MigUser.xml, you can use environment variables to identify folders that may be different on different computers. Constant special item ID list (CSIDL) values provide a way to identify folders that applications use frequently but may not have the same name or location on any given computer. For example, the documents folder may be C:\\Users\\&lt;Username&gt;\\My Documents on one computer and C:\\Documents and Settings on another. You can use the asterisk (\*) wildcard character in MigUser.xml, MigApp.xml and MigDoc.xml files. However, you cannot use the asterisk (\*) wildcard characters in the Config.xml file.
 
-## In this topic
+## In This Topic
 
 
 -   [Variables that are processed for the operating system and in the context of each user](#bkmk-1)
@@ -74,7 +73,7 @@ You can use these variables within sections in the .xml files with `context=User
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_COMMON_DESKTOPDIRECTORY</strong></p></td>
-<td align="left"><p>The file-system directory that contains files and folders that appear on the desktop for all users. A typical Windows&reg; XP path is C:\Documents and Settings\All Users\Desktop. A typical path is C:\Users\Public\Desktop.</p></td>
+<td align="left"><p>The file-system directory that contains files and folders that appear on the desktop for all users. A typical Windows® XP path is C:\Documents and Settings\All Users\Desktop. A typical path is C:\Users\Public\Desktop.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_COMMON_DOCUMENTS</strong></p></td>
@@ -296,7 +295,7 @@ You can use these variables in the .xml files within sections with `context=User
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CSIDL_ADMINTOOLS</strong></p></td>
-<td align="left"><p>The file-system directory that is used to store administrative tools for an individual user. The Microsoft&reg; Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.</p></td>
+<td align="left"><p>The file-system directory that is used to store administrative tools for an individual user. The Microsoft® Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>CSIDL_ALTSTARTUP</strong></p></td>

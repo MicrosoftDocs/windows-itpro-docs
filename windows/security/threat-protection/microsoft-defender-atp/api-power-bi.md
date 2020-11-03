@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ATP APIs connection to Power BI
 ms.reviewer: 
-description: Create custom reports using Power BI
+description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,13 +19,16 @@ ms.topic: article
 
 # Create custom reports using Power BI
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
 
-The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs (e.g. Machine Actions, Alerts, etc..)
+The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
 ## Connect Power BI to Advanced Hunting API
 
@@ -123,8 +126,10 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 
 ## Power BI dashboard samples in GitHub
-For more information see the [Power BI report templates](https://github.com/microsoft/MDATP-PowerBI-Templates).
+For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
+## Sample reports
+View the Microsoft Defender ATP Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## Related topic

@@ -1,6 +1,6 @@
 ---
 title: Deploying the App-V Server (Windows 10)
-description: Deploying the App-V Server in App-V for Windows 10
+description: Learn how to deploy the Application Virtualization (App-V) Server in App-V for Windows 10 by using different deployment configurations described in this article.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

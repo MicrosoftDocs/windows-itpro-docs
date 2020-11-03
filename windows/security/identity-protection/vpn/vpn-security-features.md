@@ -1,6 +1,6 @@
 ---
 title: VPN security features (Windows 10)
-description: tbd
+description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

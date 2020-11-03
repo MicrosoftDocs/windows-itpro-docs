@@ -1,11 +1,11 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Windows 10 includes the following new policies for management.
+description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-keywords: ["MDM", "Group Policy"]
+keywords: ["MDM", "Group Policy", "GP"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,10 +21,40 @@ ms.topic: reference
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
+As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
 
+For example, searching for "Windows 2004" + "Group Policy Settings Reference Spreadsheet" in a web browser will return to you the link to download the Group Policy Settings Reference Spreadsheet for Windows 2004.
+
+The latest [group policy reference for Windows 10 version 2004 is available here](https://www.microsoft.com/download/101451).
+
+## New Group Policy settings in Windows 10, version 1903
+
+The following Group Policy settings were added in Windows 10, version 1903:
+
+**System**
+
+- System\Service Control Manager Settings\Security Settings\Enable svchost.exe mitigation options
+- System\Storage Sense\Allow Storage Sense
+- System\Storage Sense\Allow Storage Sense Temporary Files cleanup
+- System\Storage Sense\Configure Storage Sense
+- System\Storage Sense\Configure Storage Sense Cloud content dehydration threshold
+- System\Storage Sense\Configure Storage Sense Recycle Bin cleanup threshold
+- System\Storage Sense\Configure Storage Sense Downloads cleanup threshold
+- System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool\Troubleshooting:Allow users to access recommended troubleshooting for known problems
+
+
+**Windows Components**
+
+- Windows Components\App Privacy\Let Windows apps activate with voice 
+- Windows Components\App Privacy\Let Windows apps activate with voice while the system is locked
+- Windows Components\Data Collection and Preview Builds\Allow commercial data pipeline
+- Windows Components\Data Collection and Preview Builds\Configure collection of browsing data for Desktop Analytics 
+- Windows Components\Data Collection and Preview Builds\Configure diagnostic data upload endpoint for Desktop Analytics
+- Windows Components\Delivery Optimization\Delay background download Cache Server fallback (in seconds)
+- Windows Components\Delivery Optimization\Delay Foreground download Cache Server fallback (in seconds)
+- Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use WDDM graphics display driver for Remote Desktop Connections
+- Windows Components\Windows Logon Options\Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot
 
 ## New Group Policy settings in Windows 10, version 1809
 
@@ -148,8 +178,8 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Remove remote desktop wallpaper
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\Set time limit for logoff of RemoteApp sessions
-- Windows Components\Windows Defender Antivirus\Configure detection for potentially unwanted applications
-- Windows Components\Windows Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
+- Windows Components\Microsoft Defender Antivirus\Configure detection for potentially unwanted applications
+- Windows Components\Microsoft Defender Antivirus\Scan\Configure low CPU priority for scheduled scans
 - Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user’s device
@@ -291,12 +321,12 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Search\Allow Cloud Search
 - Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow auditing events in Windows Defender Application Guard
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
-- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
+- Windows Components\Microsoft Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
 - Windows Components\Windows Defender Exploit Guard\Exploit Protection\Use a common set of exploit protection settings
 - Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Virus and threat protection area
 - Windows Components\Windows Defender Security Center\Firewall and network protection\Hide the Firewall and network protection area
@@ -431,9 +461,9 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Smart Card\Turn on certificate propagation from smart card
 - Windows Components\Tablet PC\Pen UX Behaviors\Prevent flicks
 - Windows Components\BitLocker Drive Encryption\Choose drive encryption method and cipher strength (Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2, Windows 10 [Version 1507])
-- Windows Components\Windows Defender Antivirus\Real-time Protection\Turn on behavior monitoring
-- Windows Components\Windows Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
-- Windows Components\Windows Defender Antivirus\Signature Updates\Turn on scan after signature update
+- Windows Components\Microsoft Defender Antivirus\Real-time Protection\Turn on behavior monitoring
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Define file shares for downloading definition updates
+- Windows Components\Microsoft Defender Antivirus\Signature Updates\Turn on scan after signature update
 - Windows Components\File Explorer\Display confirmation dialog when deleting files
 - Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone\Allow OpenSearch queries in File Explorer
 - Windows Components\Windows Update\Remove access to use all Windows Update features
@@ -493,7 +523,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
 
 
 

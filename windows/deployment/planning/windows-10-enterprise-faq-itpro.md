@@ -6,14 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itpro
 author: greg-lindsay
 ms.date: 08/18/2017
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 

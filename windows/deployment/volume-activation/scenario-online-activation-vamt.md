@@ -1,7 +1,6 @@
 ---
 title: Scenario 1 Online Activation (Windows 10)
-description: This article presents a scenario on how to use Volume Activation Management Tool (VAMT) to perform online activation for multiple activation keys.
-ms.custom: seo-marvel-apr2020
+description: Achieve network access by deploying the Volume Activation Management Tool (VAMT) in a Core Network environment.
 ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
 ms.reviewer: 
 manager: laurawi
@@ -28,7 +27,7 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 ![VAMT firewall configuration for multiple subnets](images/dep-win8-l-vamt-makindependentactivationscenario.jpg)
 
-## In this topic
+## In This Topic
 -   [Install and start VAMT on a networked host computer](#bkmk-partone)
 -   [Configure the Windows Management Instrumentation firewall exception on target computers](#bkmk-parttwo)
 -   [Connect to VAMT database](#bkmk-partthree)
