@@ -148,9 +148,9 @@ ICS is enabled by default in Windows, and it must be enabled in order for Applic
 
 Some enterprise organizations choose to disable ICS for their own security reasons. However, this is not recommended. If ICS is disabled, Application Guard stops working. 
 
-The following procedure describes how to edit registry keys to disable ICS in part.
+The following procedure describes how to edit registry keys to disable ICS in part using a Group Policy.
 
-1. In the Group Policy setting called **Prohibit use of Internet Connection Sharing on your DNS domain network**, set it to **Disabled**. 
+1. In the Group Policy setting called, *Prohibit use of Internet Connection Sharing on your DNS domain network*, set it to **Disabled**. 
 
 2. Disable IpNat.sys from ICS load as follows: <br/> 
 `System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`
@@ -162,3 +162,7 @@ The following procedure describes how to edit registry keys to disable ICS in pa
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`
 
 5. Reboot the device.
+
+## See also
+
+[Configure Microsoft Defender Application Guard policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
