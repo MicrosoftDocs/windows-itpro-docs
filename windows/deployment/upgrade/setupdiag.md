@@ -5,6 +5,7 @@ manager: laurawi
 ms.author: greglin
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -552,7 +553,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Addreg](./../images/addreg.png)
+![Example of Addreg](./../images/addreg.png)
 
 ## Related topics
 
