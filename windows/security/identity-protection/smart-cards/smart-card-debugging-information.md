@@ -109,7 +109,7 @@ To stop a trace:
 
 -   **logman -stop scardsvr -ets**
 
-## Kerberos protocol, KDC and NTLM debugging and tracing
+## Kerberos protocol, KDC, and NTLM debugging and tracing
 
 <!-- It's difficult to find any Kerberos content any more. If they reinstate some content that's more relevant and detailed than what's below, link to it instead. -->
 
@@ -123,7 +123,7 @@ To begin tracing, you can use Tracelog. Different components use different contr
 
 ### NTLM
 
-To enable tracing for NTLM authentication, run the following at the command line:
+To enable tracing for NTLM authentication, run the following command on the command line:
 
  - **tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
 
@@ -143,11 +143,11 @@ To stop tracing for Kerberos authentication, run this command:
 
 ### KDC
 
-To enable tracing for the Key Distribution Center (KDC), run the following at the command line:
+To enable tracing for the Key Distribution Center (KDC), run the following command on the command line:
 
  - **tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
 
-To stop tracing for the KDC, run the following at the command line:
+To stop tracing for the KDC, run the following command on the command line:
 
  - **tracelog.exe -stop kdc**
 
@@ -184,11 +184,11 @@ The smart card resource manager service runs in the context of a local service. 
 
 **To check if Smart Card service is running**
 
-1.  Press CTRL+ALT+DEL, and then click **Start Task Manager**.
+1.  Press CTRL+ALT+DEL, and then select **Start Task Manager**.
 
-2.  In the **Windows Task Manager** dialog box, click the **Services** tab.
+2.  In the **Windows Task Manager** dialog box, select the **Services** tab.
 
-3.  Click the **Name** column to sort the list alphabetically, and then type **s**.
+3.  Select the **Name** column to sort the list alphabetically, and then type **s**.
 
 4.  In the **Name** column, look for **SCardSvr**, and then look under the **Status** column to see if the service is running or stopped.
 
@@ -196,7 +196,7 @@ The smart card resource manager service runs in the context of a local service. 
 
 1.  Run as administrator at the command prompt.
 
-2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
 3.  At the command prompt, type **net stop SCardSvr**.
 
@@ -204,7 +204,7 @@ The smart card resource manager service runs in the context of a local service. 
 
 You can use the following command at the command prompt to check whether the service is running: **sc queryex scardsvr**.
 
-This is an example output from this command:
+The following code sample is an example output from this command:
 
 ```console
 SERVICE_NAME: scardsvr
@@ -228,14 +228,14 @@ As with any device connected to a computer, Device Manager can be used to view p
 
 1.  Navigate to **Computer**.
 
-2.  Right-click **Computer**, and then click **Properties**.
+2.  Right-click **Computer**, and then select **Properties**.
 
-3.  Under **Tasks**, click **Device Manager**.
+3.  Under **Tasks**, select **Device Manager**.
 
-4.  In Device Manager, expand **Smart card readers**, select the name of the smart card reader you want to check, and then click **Properties**.
+4.  In Device Manager, expand **Smart card readers**, select the name of the smart card reader you want to check, and then select **Properties**.
 
 > [!NOTE]
-> If the smart card reader is not listed in Device Manager, in the **Action** menu, click **Scan for hardware changes**.
+> If the smart card reader is not listed in Device Manager, in the **Action** menu, select **Scan for hardware changes**.
 
 ## CryptoAPI 2.0 Diagnostics
 
