@@ -201,7 +201,7 @@ Ensure that you got the correct token:
 1. The expiration time of the token is one hour. You can send more then one request with the same token.
 
 The following is an example of sending a request to get a list of alerts **using C#**: 
-    ```
+```
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
@@ -211,7 +211,7 @@ The following is an example of sending a request to get a list of alerts **using
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
     // Do something useful with the response
-    ```
+```
 
 ## Related topics
 - [Supported Defender for Endpoint APIs](exposed-apis-list.md)
