@@ -124,7 +124,7 @@ Install-WindowsFeature BitLocker-NetworkUnlock
 A properly configured Active Directory Services Certification Authority can use the certificate template to create and issue Network Unlock certificates. To create a certificate template:
 
 1.  Open the certificate template snap-in (`certtmpl.msc`).
-2.  Locate the user template. Right-click the template name and then select **Duplicate Template**.
+2.  Locate the user template. Right-click the template name, and then select **Duplicate Template**.
 3.  On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to **Windows Server 2012** and **Windows 8**, respectively. Ensure **Show resulting changes** is selected.
 4.  Select the **General** tab of the template. The **Template display name** and **Template name** should clearly identify that the template will be used for Network Unlock. Clear the check box for **Publish certificate in Active Directory**.
 5.  Select the **Request Handling** tab. In the **Purpose** drop-down menu, select **Encryption**. Ensure the **Allow private key to be exported** option is selected.
@@ -135,17 +135,17 @@ A properly configured Active Directory Services Certification Authority can use 
 10. Select the **Extensions** tab. Then select **Application Policies** > **Edit**.
 11. In the **Edit Application Policies Extension** dialog box, select **Client Authentication**, **Encrypting File System**, and **Secure Email**. Then choose **Remove**.
 12. In the **Edit Application Policies Extension** dialog box, select **Add**.
-13. In the **Add Application Policy** dialog box, select **New**. In the **New Application Policy** dialog box, enter the following information in the space provided and then select **OK** to create the BitLocker Network Unlock application policy.
+13. In the **Add Application Policy** dialog box, select **New**. In the **New Application Policy** dialog box, enter the following information in the space provided, and then select **OK** to create the BitLocker Network Unlock application policy.
 
     -   **Name**: **BitLocker Network Unlock**
     -   **Object Identifier**: **1.3.6.1.4.1.311.67.1.1**
 
-14. Select the newly created **BitLocker Network Unlock** application policy and then select **OK**.
+14. Select the newly created **BitLocker Network Unlock** application policy, and then select **OK**.
 15. With the **Extensions** tab still open, select **Edit Key Usage Extension**, and then select **Allow key exchange only with key encryption (key encipherment)**. Then select **Make this extension critical**.
 16. Select the **Security** tab. Confirm that the **Domain Admins** group has been granted **Enroll** permission.
 17. Select **OK** to complete configuration of the template.
 
-To add the Network Unlock template to the certificate authority, open the certificate authority snap-in (`certsrv.msc`). Right-click **Certificate Templates** and then choose **New, Certificate Template to issue**. Select the previously created BitLocker Network Unlock certificate.
+To add the Network Unlock template to the certificate authority, open the certificate authority snap-in (`certsrv.msc`). Right-click **Certificate Templates**, and then choose **New, Certificate Template to issue**. Select the previously created BitLocker Network Unlock certificate.
 
 After you add the Network Unlock template to the certificate authority, you can use this certificate to configure BitLocker Network Unlock.
 
@@ -167,7 +167,7 @@ To enroll a certificate from an existing certificate authority:
 
     1.  Create a *.cer* file by right-clicking the previously created certificate and choosing **All Tasks** > **Export**.
     2.  Select **No, do not export the private key**.
-    3.  Select **DER encoded binary X.509** and then finish exporting the certificate to a file.
+    3.  Select **DER encoded binary X.509**, and then finish exporting the certificate to a file.
     4.  Give the file a name, such as *BitLocker-NetworkUnlock.cer*.
 9.  Export the public key with a private key for Network Unlock:
     1.  Create a *.pfx* file by right-clicking the previously created certificate. Then choose **All Tasks** > **Export**.
@@ -220,8 +220,8 @@ Here's a `certreq` example:
 
 Now that you've created the certificate and key, deploy them to the infrastructure to properly unlock systems. To deploy the certificates:
 
-1.  On the WDS server, open a new Microsoft Management Console (MMC) and then add the certificates snap-in. When you're prompted, select the computer account and local computer.
-2.  Right-click **Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock** and then choose **All Tasks** > **Import**.
+1.  On the WDS server, open a new Microsoft Management Console (MMC), and then add the certificates snap-in. When you're prompted, select the computer account and local computer.
+2.  Right-click **Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock**, and then choose **All Tasks** > **Import**.
 3.  In the **File to Import** dialog box, choose the *.pfx* file that you created previously.
 4.  Enter the password that you used to create the *.pfx* file, and finish the steps.
 
@@ -246,7 +246,7 @@ To deploy the required Group Policy setting:
 4.  Deploy the public certificate to clients:
 
     1.  In Group Policy Management Console, go to *Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate*.
-    2.  Right-click the folder and then choose **Add Network Unlock Certificate**.
+    2.  Right-click the folder, and then choose **Add Network Unlock Certificate**.
     3.  Follow the steps and import the *.cer* file that you copied earlier.
 
     > [!NOTE]
@@ -336,7 +336,7 @@ Gather the following files to troubleshoot BitLocker Network Unlock.
 
     Debug logging is turned off by default for the WDS server role, so you need to enable it before you can retrieve it. Use either of the following two methods to turn on WDS debug logging.
 
-    - Start an elevated command prompt and then run the following command:
+    - Start an elevated command prompt, and then run the following command:
 
         ```cmd
         wevtutil sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true
