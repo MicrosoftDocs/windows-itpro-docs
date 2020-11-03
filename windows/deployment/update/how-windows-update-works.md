@@ -1,6 +1,6 @@
 ---
 title: How Windows Update works 
-description: In this article, learn about the process Windows Update uses to download and install updates on a Windows 10 PC.
+description: In this article, learn about the process Windows Update uses to download and install updates on a Windows 10 devices.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -128,7 +128,7 @@ Common update failure is caused due to network issues. To find the root of the i
 
 Once the Windows Update Orchestrator determines which updates apply to your computer, it will begin downloading the updates, if you have selected the option to automatically download updates. It does this in the background without interrupting your normal use of the computer.  
 
-To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses the Delivery Optimization (DO) technology which downloads updates and reduces bandwidth consumption. 
+To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses the Delivery Optimization technology which downloads updates and reduces bandwidth consumption. 
  
 For more information see [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). 
 
