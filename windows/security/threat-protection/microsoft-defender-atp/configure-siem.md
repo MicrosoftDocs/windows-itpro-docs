@@ -37,15 +37,14 @@ ms.topic: article
 
 Defender for Endpoint supports security information and event management (SIEM) tools to pull detections. Defender for Endpoint exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to pull detections from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
 
-
 Defender for Endpoint currently supports the following specific SIEM solution tools through a dedicated SIEM integration model:
 
 - IBM QRadar
 - Micro Focus ArcSight
 
-Other SIEM solutions (such as Splunk, RSA NetWitness) are supported through a different integration model based on the new Alert API. For more information, view the [Partner application](https://df.securitycenter.microsoft.com/interoperability/partners) page and select the Security Information and Analytics section for full details.
+Other SIEM solutions (such as Splunk, RSA NetWitness) are supported through a different integration model based on the new Alert API. For more information, view the [Partner application](https://securitycenter.microsoft.com/interoperability/partners) page and select the Security Information and Analytics section for full details.
 
-To use either of these supported SIEM tools you'll need to:
+To use either of these supported SIEM tools, you'll need to:
 
 - [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
 - Configure the supported SIEM tool:

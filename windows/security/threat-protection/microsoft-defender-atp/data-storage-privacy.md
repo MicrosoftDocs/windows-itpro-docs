@@ -31,6 +31,7 @@ This section covers some of the most frequently asked questions regarding privac
 > [!NOTE]
 > This document explains the data storage and privacy details related to Defender for Endpoint. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
 
+
 ## What data does Microsoft Defender for Endpoint collect?
 
 Microsoft Defender for Endpoint will collect and store information from your configured devices in a customer dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes. 
@@ -79,20 +80,21 @@ Access to data for services deployed in Microsoft Azure Government data centers 
 
 
 ## Is data shared with other customers?
-No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
+No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer-specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
 **At service onboarding**<br>
-You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of 1 month to six months to meet your company’s regulatory compliance needs.
+You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
 Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
 
 ## Can Microsoft help us maintain regulatory compliance?
+
 Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Defender for Endpoint services against their own legal and regulatory requirements. Defender for Endpoint has achieved a number of certifications including ISO, SOC, FedRAMP High, and PCI and continues to pursue additional national, regional and industry-specific certifications.
 
-By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
+By providing customers with compliant, independently verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 
 For more information on the Defender for Endpoint certification reports, see [Microsoft Trust Center](https://servicetrust.microsoft.com/). 
 
