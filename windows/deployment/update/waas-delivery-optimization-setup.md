@@ -2,7 +2,7 @@
 title: Set up Delivery Optimization
 ms.reviewer: 
 manager: laurawi
-description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
+description: In this article, learn how to set up Delivery Optimization, a new peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up Delivery Optimization for Windows 10 updates
@@ -50,7 +51,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
 
 
@@ -103,7 +104,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 
 ## Monitor Delivery Optimization
-[//]: # (How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
+[//]: # (How to tell if it's working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
 
 ### Windows PowerShell cmdlets
 
