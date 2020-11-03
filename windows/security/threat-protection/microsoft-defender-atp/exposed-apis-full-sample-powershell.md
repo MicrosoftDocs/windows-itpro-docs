@@ -1,5 +1,5 @@
 ---
-title: Advanced Hunting with Powershell API Guide
+title: Advanced Hunting with PowerShell API Guide
 ms.reviewer: 
 description: Use these code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, advanced hunting, query
@@ -28,7 +28,7 @@ ms.date: 09/24/2018
 
 Full scenario using multiple APIs from Defender for Endpoint.
 
-In this section we share PowerShell samples to 
+In this section, we share PowerShell samples to 
 - Retrieve a token 
 - Use token to retrieve the latest alerts in Defender for Endpoint
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.
@@ -43,7 +43,7 @@ In this section we share PowerShell samples to
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-For more details, refer to [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
@@ -51,7 +51,8 @@ Run the below:
 
 - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
 - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
-- $appSecret: Secret of your AAD app
+- $appSecret: Secret of your Azure AD app
+
 - $suspiciousUrl: The URL
 
 
