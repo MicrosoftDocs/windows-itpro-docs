@@ -753,7 +753,7 @@
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
 #### [Coordinated malware eradication](intelligence/coordinated-malware-eradication.md)
-### [Information for developers](intelligence/developer-info.md)
+### [Information for developers]()
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
