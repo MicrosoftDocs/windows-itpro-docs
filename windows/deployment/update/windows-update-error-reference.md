@@ -12,6 +12,7 @@ ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Update error codes by component
