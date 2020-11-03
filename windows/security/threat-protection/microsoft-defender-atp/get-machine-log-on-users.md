@@ -1,6 +1,6 @@
 ---
-title: Get machine log on users API
-description: Learn how to use the Get machine log on users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
+title: Get machine logon users API
+description: Learn how to use the Get machine logon users API to retrieve a collection of logged on users on a device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, device, log on, users
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get machine log on users API
+# Get machine logon users API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,8 +45,8 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include users only if the device is visible to the user, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>- The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md) )
+>- Response will include users only if the device is visible to the user, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
 ```http
@@ -64,7 +64,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and device exist - 200 OK with list of [user](user.md) entities in the body. If device was not found - 404 Not Found.
+If successful and device exists - 200 OK with list of [user](user.md) entities in the body. If device was not found - 404 Not Found.
 
 
 ## Example
