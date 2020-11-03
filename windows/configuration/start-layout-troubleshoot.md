@@ -12,7 +12,7 @@ manager: dansimp
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Start Menu errors
+# Troubleshoot Start menu errors
 
 Start failures can be organized into these categories:
 
@@ -24,29 +24,29 @@ Start failures can be organized into these categories:
 
 ## Basic troubleshooting
 	
-When troubleshooting basic Start issues (and for the most part, all other Windows apps), there are a few things to check if they are not working as expected. When experiencing issues where the Start Menu or sub-component are not working, there are some quick tests to narrow down where the issue may reside.
+When troubleshooting basic Start issues (and for the most part, all other Windows apps), there are a few things to check if they are not working as expected. For issues where the Start menu or subcomponent isn't working, you can do some quick tests to narrow down where the issue may reside.
 
 ### Check the OS and update version
 
 - Is the system running the latest Feature and Cumulative Monthly update?
 - Did the issue start immediately after an update? Ways to check:
-  - Powershell:[System.Environment]::OSVersion.Version
+  - PowerShell:[System.Environment]::OSVersion.Version
   - WinVer from CMD.exe
 
 ### Check if Start is installed
 
 - If Start fails immediately after a feature update, on thing to check is if the App package failed to install successfully.
 
-- If Start was working and just fails intermittently, it's likely that Start is installed correctly, but the issue occurs downstream. The way to check for this is to look for output from these two PS commands:
+- If Start was working and just fails intermittently, it's likely that Start is installed correctly, but the issue occurs downstream. The way to check for this problem is to look for output from these two PS commands:
 
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
 
     ![Example of output from cmdlets](images/start-ts-1.png)
 
-    Failure messages will appear if they are not installed
+    Failure messages will appear if they aren't installed
 
-- If Start is not installed the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there is a choice to save to delete user data), or restoring from backup. There is no supported method to install Start Appx files. The results are often problematic and unreliable.
+- If Start is not installed, then the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there is a choice to save to delete user data), or restoring from backup. There is no supported method to install Start Appx files. The results are often problematic and unreliable.
 
 ### Check if Start is running
 
@@ -54,7 +54,7 @@ If either component is failing to start on boot, reviewing the event logs for er
 - `get-process -name shellexperiencehost`
 - `get-process -name searchui`
 
-If it is installed but not running, test booting into safe mode or use MSCONFIG to eliminate 3rd party or additional drivers and applications.
+If it is installed but not running, test booting into safe mode or use MSCONFIG to eliminate third-party or additional drivers and applications.
 
 ### Check whether the system a clean install or upgrade
 
@@ -76,9 +76,9 @@ If these events are found, Start is not activated correctly. Each event will hav
 
 ### Other things to consider
 
-When did this start?
+When did the problem start?
 
-- Top issues for Start Menu failure are triggered
+- Top issues for Start menu failure are triggered
   - After an update
   - After installation of an application
   - After joining a domain or applying a domain policy
@@ -87,7 +87,7 @@ When did this start?
   - Start or related component crashes or hangs
   - Customization failure
 
-To narrow this down further, it's good to note:
+To narrow down the problem further, it's good to note:
 
 - What is the install background?
   - Was this a deployment, install from media, other
@@ -103,7 +103,7 @@ To narrow this down further, it's good to note:
   - Some Group Policies intended for Windows 7 or older have been known to cause issues with Start
   - Untested Start Menu customizations can cause unexpected behavior by typically not complete Start failures. 
   
-- Is this a virtualized environment? 
+- Is the environment virtualized? 
   - VMware
   - Citrix
   - Other
@@ -123,13 +123,13 @@ To narrow this down further, it's good to note:
 - Microsoft-Windows-CloudStore*
 
 
-- Check for crashes that may be related to Start (explorer.exe, taskbar, etc)
+- Check for crashes that may be related to Start (explorer.exe, taskbar, and so on)
   - Application log event 1000, 1001
   - Check WER reports
     - C:\ProgramData\Microsoft\Windows\WER\ReportArchive\
     - C:\ProgramData\Micrt\Windowsosof\WER\ReportQueue\
     
-If there is a component of Start that is consistently crashing, capture a dump which can be reviewed by Microsoft Support.
+If there is a component of Start that is consistently crashing, capture a dump that can be reviewed by Microsoft Support.
 
 ## Common errors and mitigation
 
@@ -169,7 +169,8 @@ The PDC registry key is:
 **Type**=dword:00000001
 
 In addition to the listed dependencies for the service, Background Tasks Infrastructure Service requires the Power Dependency Coordinator Driver to be loaded. If the PDC does not load at boot, Background Tasks Infrastructure Service will fail and affect Start Menu.
-Events for both PDC and Background Tasks Infrastructure Service will be recorded in the event logs. PDC should not be disabled or deleted. BrokerInfrastructure is an automatic service. This Service is required for all these operating Systems as running to have a stable Start Menu.
+
+Events for both PDC and Background Tasks Infrastructure Service will be recorded in the event logs. PDC shouldn't be disabled or deleted. BrokerInfrastructure is an automatic service. This Service is required for all these operating Systems as running to have a stable Start Menu.
 
 >[!NOTE]
 >You cannot stop this automatic service when machine is running (C:\windows\system32\svchost.exe -k DcomLaunch -p).
@@ -179,17 +180,17 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 **Cause**: There was a change in the All Apps list between Windows 10, versions 1511 and 1607. These changes mean the original Group Policy and corresponding registry key no longer apply.
 
-**Resolution**: This issue was resolved in the June 2017 updates. Please update Windows 10, version 1607 to the latest cumulative or feature updates.
+**Resolution**: This issue was resolved in the June 2017 updates. Update Windows 10, version 1607, to the latest cumulative or feature updates.
 
 >[!NOTE]
 >When the Group Policy is enabled, the desired behavior also needs to be selected. By default, it is set to **None**.
 
 
-### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start Menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
+### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
 
 ![Screenshots that show download icons on app tiles and missing app tiles](images/start-ts-2.png)
 
-**Cause**: This is a known issue where the first-time logon experience is not detected and does not trigger the install of some Apps.
+**Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
 
 **Resolution**: This issue has been fixed for Windows 10, version 1709 in [KB 4089848](https://support.microsoft.com/help/4089848) March 22, 2018—KB4089848 (OS Build 16299.334)
 
@@ -202,7 +203,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
   - Event ID 22 is logged when the xml is malformed, meaning the specified file simply isn’t valid xml.
   - When editing the xml file, it should be saved in UTF-8 format.
 
-- Unexpected information: This occurs when possibly trying to add a tile via unexpected or undocumented method.
+- Unexpected information: This occurs when possibly trying to add a tile via an unexpected or undocumented method.
   - **Event ID: 64** is logged when the xml is valid but has unexpected values.
   - For example: The following error occurred while parsing a layout xml file: The attribute 'LayoutCustomizationRestrictiontype' on the element '{http://schemas.microsoft.com/Start/2014/LayoutModification}DefaultLayoutOverride' is not defined in the DTD/Schema.
 
