@@ -144,11 +144,7 @@ There is a known issue such that if you change the Exploit Protection settings f
 
 ### How can I have ICS in enabled state yet still use Application Guard?
 
-ICS is enabled by default in Windows, and it must be enabled in order for Application Guard to function correctly.
-
-Some enterprise organizations choose to disable ICS for their own security reasons. However, this is not recommended. If ICS is disabled, Application Guard stops working. 
-
-The following procedure describes how to edit registry keys to disable ICS in part using a Group Policy.
+ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
 1. In the Group Policy setting called, *Prohibit use of Internet Connection Sharing on your DNS domain network*, set it to **Disabled**. 
 
