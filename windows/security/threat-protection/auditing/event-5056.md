@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-This event generates in CNG Self-Test function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in CNG Self-Test function. This function is a Cryptographic Next Generation (CNG) function.
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
@@ -32,7 +32,7 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is mainly used for CNG troubleshooting.
 
 There is no example of this event in this document.
 
@@ -40,7 +40,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*A cryptographic self test was performed.*
+*A cryptographic self-test was performed.*
 
 *Subject:*
 
