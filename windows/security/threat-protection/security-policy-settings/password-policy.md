@@ -38,7 +38,7 @@ You can configure the password policy settings in the following location by usin
 
 **Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy**
 
-This group policy is applied on domain level. If individual groups require distinct password policies, consider using of fine-grained password policies, as described above.
+This group policy is applied on the domain level. If individual groups require distinct password policies, consider using fine-grained password policies, as described above.
 
 The following topics provide a discussion of password policy implementation and best practices considerations, policy location, default values for the server type or GPO, relevant differences in operating system versions, security considerations (including the possible vulnerabilities of each setting), countermeasures that you can take, and the potential impact for each setting.
 
