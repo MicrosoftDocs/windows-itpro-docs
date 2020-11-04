@@ -17,14 +17,14 @@ search.appverid: met150
 ---
 
 # Troubleshooting malware submission errors caused by administrator block
-In some instances, an administrator block might cause submission issues when you try to submit a potentially infected file to the [Microsoft Security intelligence website](https://www.microsoft.com/wdsi) for analysis. The following process shows how to resolve this.
+In some instances, an administrator block might cause submission issues when you try to submit a potentially infected file to the [Microsoft Security intelligence website](https://www.microsoft.com/wdsi) for analysis. The following process shows how to resolve this problem.
 
 ## Review your settings
 Open your Azure [Enterprise application settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/). Under **Enterprise Applications** >  **Users can consent to apps accessing company data on their behalf**, check whether Yes or No is selected.
 
-- If this is set to **No**,  an AAD administrator for the customer tenant will need to provide consent for the organization. Depending on the configuration with AAD, users might be able to submit a request right from the same dialog box. If there’s no option to ask for admin consent,  users need to request for these permissions to be added to their AAD admin. Go to the following section for more information.
+- If **No** is selected, an Azure AD administrator for the customer tenant will need to provide consent for the organization. Depending on the configuration with Azure AD, users might be able to submit a request right from the same dialog box. If there’s no option to ask for admin consent,  users need to request for these permissions to be added to their Azure AD admin. Go to the following section for more information.
 
-- It this is set to **Yes**, ensure the Windows Defender Security Intelligence app setting **Enabled for users to sign-in?** is set to **Yes** [in Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). If this is set to **No** you'll need to request an AAD admin enable it. 
+- If **Yes** is selected, ensure the Windows Defender Security Intelligence app setting **Enabled for users to sign in?** is set to **Yes** [in Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). If this is set to **No** you'll need to request an Azure AD admin enable it. 
   
 ## Implement Required Enterprise Application permissions 
 This process requires a global or application admin in the tenant.
