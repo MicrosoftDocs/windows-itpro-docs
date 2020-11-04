@@ -14,6 +14,9 @@ manager: dansimp
 
 # Policy CSP - Multitasking
 
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+
 <hr/>
 
 <!--Policies-->
@@ -72,6 +75,10 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
+
+> [!Warning]
+> This policy is currently in preview mode only and will be supported in future releases. It may be used for testing purposes, but should not be used in a production environment at this time.
+
 This policy controls the inclusion of Edge tabs into Alt+Tab.
 
 Enabling this policy restricts the number of Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Edge tabs, only the 5 most recent tabs, only the 3 most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior. 
