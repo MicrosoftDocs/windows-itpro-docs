@@ -1,6 +1,6 @@
 ---
 title: How Windows Update works 
-description: Learn how Windows Update works, including architecture and troubleshooting.
+description: In this article, learn about the process Windows Update uses to download and install updates on a Windows 10 devices.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -12,6 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # How does Windows Update work?
@@ -45,7 +46,7 @@ The Windows Update workflow has four core areas of functionality:
 
 
 ## How updating works 
-During the updating process, the Windows Update Orchestrator operates in the background to scan, download, and install updates. It does this automatically, according to your settings, and in a silent manner that doesn’t disrupt your computer usage. 
+During the updating process, the Windows Update Orchestrator operates in the background to scan, download, and install updates. It does this automatically, according to your settings, and in a silent manner that doesn't disrupt your computer usage. 
 
 ## Scanning updates 
 ![Windows Update scanning step](images/update-scan-step.png)
@@ -127,7 +128,7 @@ Common update failure is caused due to network issues. To find the root of the i
 
 Once the Windows Update Orchestrator determines which updates apply to your computer, it will begin downloading the updates, if you have selected the option to automatically download updates. It does this in the background without interrupting your normal use of the computer.  
 
-To ensure that your other downloads aren’t affected or slowed down because updates are downloading, Windows Update uses the Delivery Optimization (DO) technology which downloads updates and reduces bandwidth consumption. 
+To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses the Delivery Optimization technology which downloads updates and reduces bandwidth consumption. 
  
 For more information see [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). 
 

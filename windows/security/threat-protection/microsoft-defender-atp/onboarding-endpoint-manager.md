@@ -27,24 +27,25 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-In this section, we will be using Microsoft Endpoint Manager (MEM) to deploy
-Microsoft Defender ATP to your endpoints.
-
-For more information about MEM, check out these resources:
-- [Microsoft Endpoint Manager page](https://docs.microsoft.com/mem/)
-- [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
-- [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
 
-This process is a multi-step process, you'll need to:
+This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+- Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
+- Step 2: Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Manager
 
--   Identify target devices or users
+This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Manager:
 
-    -   Create an Azure Active Directory group (User or Device)
+-   [Identifying target devices or users](#identify-target-devices-or-users)
 
--   Create a Configuration Profile
+    -   Creating an Azure Active Directory group (User or Device)
 
-    -   In MEM, we'll guide you in creating a separate policy for each feature
+-   [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-atp-capabilities)
+
+    -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
+
+While Microsoft Defender ATP supports onboarding of various endpoints and tools, this article does not cover them. 
+
+For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 ## Resources
 
@@ -57,7 +58,13 @@ Here are the links you'll need for the rest of the process:
 
 -   [Intune Security baselines](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
-## Identify target devices or users
+For more information about Microsoft Endpoint Manager, check out these resources:
+- [Microsoft Endpoint Manager page](https://docs.microsoft.com/mem/)
+- [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
+- [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
+
+## Step 1: Onboard devices by creating a group in MEM to assign configurations on
+### Identify target devices or users
 In this section, we will create a test group to assign your configurations on.
 
 >[!NOTE]
@@ -93,11 +100,18 @@ needs.<br>
 
 8.  Your testing group now has a member to test.
 
-## Create configuration policies
+## Step 2: Create configuration policies to configure Microsoft Defender ATP capabilities
 In the following section, you'll create a number of configuration policies.
+
 First is a configuration policy to select which groups of users or devices will
-be onboarded to Microsoft Defender ATP. Then you will continue by creating several
-different types of Endpoint security policies.
+be onboarded to Microsoft Defender ATP. 
+
+Then you will continue by creating several
+different types of endpoint security policies.
+
+- [Endpoint detection and response](#endpoint-detection-and-response)
+- [Next-generation protection](#next-generation-protection)
+- [Attack surface reduction](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### Endpoint detection and response
 

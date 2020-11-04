@@ -10,7 +10,9 @@
 
 ### [Macro malware](macro-malware.md)
 
-### [Phishing](phishing.md)
+### [Phishing attacks](phishing.md)
+
+#### [Phishing trends and techniques](phishing-trends.md)
 
 ### [Ransomware](ransomware-malware.md)
 
@@ -46,7 +48,7 @@
 
 ### [Coordinated malware eradication](coordinated-malware-eradication.md)
 
-## [Information for developers](developer-info.md)
+## [Information for developers]()
 
 ### [Software developer FAQ](developer-faq.md)
 
