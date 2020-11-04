@@ -25,7 +25,14 @@ ms.custom: bitlocker
 
 ## What is BitLocker To Go?
 
-BitLocker To Go is BitLocker Drive Encryption on removable data drives. This feature includes the encryption of USB flash drives, SD cards, external hard disk drives, and other drives formatted by using the NTFS, FAT16, FAT32, or exFAT file systems. Drive partitioning must meet the [BitLocker Drive Encryption Partitioning Requirements](https://docs.microsoft.com/windows-hardware/manufacture/desktop/bitlocker-drive-encryption#bitlocker-drive-encryption-partitioning-requirements).
+BitLocker To Go is BitLocker Drive Encryption on removable data drives. This feature includes the encryption of: 
 
-As with BitLocker, drives that are encrypted using BitLocker To Go can be opened with a password or smart card on another computer by using **BitLocker Drive Encryption** in Control Panel. 
+- USB flash drives
+- SD cards
+- External hard disk drives
+- Other drives that are formatted by using the NTFS, FAT16, FAT32, or exFAT file system. 
+ 
+Drive partitioning must meet the [BitLocker Drive Encryption Partitioning Requirements](https://docs.microsoft.com/windows-hardware/manufacture/desktop/bitlocker-drive-encryption#bitlocker-drive-encryption-partitioning-requirements).
+
+As with BitLocker, you can open drives that are encrypted by BitLocker To Go by using a password or smart card on another computer. In Control Panel, use **BitLocker Drive Encryption**. 
 

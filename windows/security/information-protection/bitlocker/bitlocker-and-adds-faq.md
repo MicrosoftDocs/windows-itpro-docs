@@ -30,15 +30,15 @@ Stored information | Description
 -------------------|------------
 Hash of the TPM owner password | Beginning with Windows 10, the password hash is not stored in AD DS by default. The password hash can be stored only if the TPM is owned and the ownership was taken by using components of Windows 8.1 or earlier, such as the BitLocker Setup Wizard or the TPM snap-in.
 BitLocker recovery password | The recovery password allows you to unlock and access the drive after a recovery incident. Domain administrators can view the BitLocker recovery password by using the BitLocker Recovery Password Viewer. For more information about this tool, see [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md).
-BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, Repair-bde. 
+BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, `Repair-bde`. 
 
 ## What if BitLocker is enabled on a computer before the computer has joined the domain?
 
-If BitLocker is enabled on a drive before Group Policy has been applied to enforce backup, the recovery information will not be automatically backed up to AD DS when the computer joins the domain or when Group Policy is subsequently applied. However, you can use the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** Group Policy settings to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in your organization is backed up to AD DS.
+If BitLocker is enabled on a drive before Group Policy has been applied to enforce a backup, the recovery information will not be automatically backed up to AD DS when the computer joins the domain or when Group Policy is subsequently applied. However, you can use the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** Group Policy settings to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in your organization is backed up to AD DS.
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
-The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, you would use the following command script from an elevated command prompt:
+The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The `manage-bde` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, you would use the following command script from an elevated command prompt:
 
 ```PowerShell
 $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
@@ -61,7 +61,7 @@ Ultimately, determining whether a legitimate backup exists in AD DS requires qu
 
 No. By design, BitLocker recovery password entries do not get deleted from AD DS; therefore, you might see multiple passwords for each drive. To identify the latest password, check the date on the object.
 
-## What happens if the backup initially fails? Will BitLocker retry the backup?
+## What happens if the backup initially fails? Will BitLocker retry it?
 
 If the backup initially fails, such as when a domain controller is unreachable at the time when the BitLocker setup wizard is run, BitLocker does not try again to back up the recovery information to AD DS.
 
@@ -69,5 +69,5 @@ When an administrator selects the **Require BitLocker backup to AD DS** check b
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
-When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker will not automatically retry the backup if it fails. Instead, administrators can create a script for the backup, as described earlier in [What if BitLocker is enabled on a computer before the computer has joined the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain) to capture the information after connectivity is restored.
+When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker will not automatically retry the backup if it fails. Instead, administrators can create a backup script, as described earlier in [What if BitLocker is enabled on a computer before the computer has joined the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain) to capture the information after connectivity is restored.
 
