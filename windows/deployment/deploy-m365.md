@@ -14,6 +14,7 @@ audience: itpro
 author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 with Microsoft 365

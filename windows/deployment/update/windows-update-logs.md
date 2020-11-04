@@ -11,6 +11,7 @@ ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Update log files
@@ -28,7 +29,7 @@ The following table describes the log files created by Windows Update.
 |CBS.log|%systemroot%\Logs\CBS|This logs provides insight on the update installation part in the servicing stack.|To troubleshoot the issues related to WU installation.|
 
 ## Generating WindowsUpdate.log 
-To merge and convert WU trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps). 
+To merge and convert WU trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps&preserve-view=tru). 
 
 >[!NOTE]
 >When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpate.log unless you run **Get-WindowsUpdateLog** again. 
@@ -64,7 +65,7 @@ The WU engine has different component names. The following are some of the most 
 - IdleTimer - Tracking active calls, stopping a service 
  
 >[!NOTE]
->Many component log messages are invaluable if you are looking for problems in that specific area. However, they can be useless if you don't filter to exclude irrelevant components so that you can focus on what’s important. 
+>Many component log messages are invaluable if you are looking for problems in that specific area. However, they can be useless if you don't filter to exclude irrelevant components so that you can focus on what's important. 
  
 ### Windows Update log structure 
 The Windows update log structure is separated into four main identities: 
@@ -112,7 +113,7 @@ Search for and identify the components that are associated with the IDs. Differe
 #### Update identifiers  
 
 ##### Update ID and revision number 
-There are different identifiers for the same update in different contexts. It’s important to know the identifier schemes. 
+There are different identifiers for the same update in different contexts. It's important to know the identifier schemes. 
 - Update ID: A GUID (indicated in the previous screen shot) that's assigned to a given update at publication time 
 - Revision number: A number incremented every time that a given update (that has a given update ID) is modified and republished on a service 
 - Revision numbers are reused from one update to another (not a unique identifier). 
@@ -121,8 +122,8 @@ There are different identifiers for the same update in different contexts. It’
 
 
 ##### Revision ID 
-- A Revision ID (do no confuse this with “revision number”) is a serial number that's issued when an update is initially published or revised on a given service. 
-- An existing update that’s revised keeps the same update ID (GUID), has its revision number incremented (for example, from 100 to 101), but gets a completely new revision ID that is not related to the previous ID. 
+- A Revision ID (do no confuse this with "revision number") is a serial number that's issued when an update is initially published or revised on a given service. 
+- An existing update that's revised keeps the same update ID (GUID), has its revision number incremented (for example, from 100 to 101), but gets a completely new revision ID that is not related to the previous ID. 
 - Revision IDs are unique on a given update source, but not across multiple sources. 
 - The same update revision may have completely different revision IDs on WU and WSUS. 
 - The same revision ID may represent different updates on WU and WSUS. 
@@ -131,7 +132,7 @@ There are different identifiers for the same update in different contexts. It’
 - Local ID is a serial number issued when an update is received from a service by a given WU client 
 - Usually seen in debug logs, especially involving the local cache for update info (Datastore) 
 - Different client PCs will assign different Local IDs to the same update 
-- You can find the local IDs that a client is using by getting the client’s %WINDIR%\SoftwareDistribution\Datastore\Datastore.edb file 
+- You can find the local IDs that a client is using by getting the client's %WINDIR%\SoftwareDistribution\Datastore\Datastore.edb file 
 
 ##### Inconsistent terminology 
 - Sometimes the logs use terms inconsistently. For example, the InstalledNonLeafUpdateIDs list actually contains revision IDs, not update IDs. 
