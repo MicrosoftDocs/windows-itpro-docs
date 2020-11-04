@@ -51,8 +51,8 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
-- [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
-- Microsoft Defender ATP for Servers (one per covered Server)
+- [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- Microsoft Defender ATP for Servers (one per covered server)
 
 > [!NOTE]
 > Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Microsoft Defender Advanced Threat Protection, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender ATP for Linux.
