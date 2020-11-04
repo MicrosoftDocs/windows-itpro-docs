@@ -1,5 +1,5 @@
 ---
-title: Schedule regular quick and full scans with Microsoft Defender AV
+title: Schedule regular quick and full scans with Microsoft Defender Antivirus
 description: Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 keywords: quick scan, full scan, quick vs full, schedule scan, daily, weekly, time, scheduled, recurring, regular
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/30/2020
+ms.date: 11/02/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > [!NOTE]
 > By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
@@ -44,7 +44,9 @@ This article describes how to configure scheduled scans with Group Policy, Power
 
 5.  Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
 
-6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
+6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. 
+
+7. Click **OK**, and repeat for any other settings.
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
@@ -74,12 +76,12 @@ Scheduled scans will run at the day and time you specify. You can use Group Poli
 
 ### Use Group Policy to schedule scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Specify the scan type to use for a scheduled scan | Quick scan
-Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never
-Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am). | 2 am
-Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled
+|Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Specify the scan type to use for a scheduled scan | Quick scan |
+|Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
+|Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
+|Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled |
 
 ### Use PowerShell cmdlets to schedule scans
 
@@ -121,9 +123,9 @@ You can set the scheduled scan to only occur when the endpoint is turned on but 
 
 ### Use Group Policy to schedule scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled
+|Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled |
 
 ### Use PowerShell cmdlets
 
@@ -191,10 +193,10 @@ You can enable a daily quick scan that can be run in addition to your other sche
 
 ### Use Group Policy to schedule daily scans
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Specify the interval to run quick scans per day | Specify how many hours should elapse before the next quick scan. For example, to run every two hours, enter **2**, for once a day, enter **24**. Enter **0** to never run a daily quick scan. | Never
-Scan | Specify the time for a daily quick scan | Specify the number of minutes after midnight (for example, enter **60** for 1 am) | 2 am
+|Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Specify the interval to run quick scans per day | Specify how many hours should elapse before the next quick scan. For example, to run every two hours, enter **2**, for once a day, enter **24**. Enter **0** to never run a daily quick scan. | Never |
+|Scan | Specify the time for a daily quick scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.) | 2 a.m. |
 
 ### Use PowerShell cmdlets to schedule daily scans
 
@@ -224,9 +226,9 @@ You can force a scan to occur after every [protection update](manage-protection-
 
 ### Use Group Policy to schedule scans after protection updates
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled
+|Location | Setting | Description | Default setting (if not configured)|
+|:---|:---|:---|:---|
+|Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled |
 
 ## See also
 - [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)
