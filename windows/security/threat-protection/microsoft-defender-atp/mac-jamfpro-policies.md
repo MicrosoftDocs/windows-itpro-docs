@@ -776,8 +776,6 @@ Follow the instructions on [Schedule scans with Microsoft Defender ATP for Mac](
 
 8. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    - Manifest File: Select **Upload Manifest File**. 
-
     **Options tab**<br> Keep default values.
 
     **Limitations tab**<br> Keep default values.
