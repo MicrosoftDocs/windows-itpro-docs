@@ -24,7 +24,7 @@ manager: dansimp
 
 The **Firewall & network protection** section contains information about the firewalls and network connections used by the machine, including the status of Windows Defender Firewall and any other third-party firewalls. IT administrators and IT pros can get configuration guidance from the [Windows Defender Firewall with Advanced Security documentation library](../windows-firewall/windows-firewall-with-advanced-security.md).
 
-In Windows 10, version 1709 and later, the section can be hidden from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+In Windows 10, version 1709 and later, the section can be hidden from users of the machine. This information is useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 
 ## Hide the Firewall & network protection section
