@@ -8,7 +8,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: 
 ms.topic: article
-ms.localizationpriority: 
+ms.localizationpriority: medium
 ms.date: 
 ms.reviewer: 
 ---
