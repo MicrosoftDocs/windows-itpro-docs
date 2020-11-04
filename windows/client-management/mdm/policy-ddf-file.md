@@ -38831,30 +38831,6 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>HeadTrackingMode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>MicrophoneDisabled</NodeName>
           <DFProperties>
             <AccessType>
@@ -71644,30 +71620,6 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>HeadTrackingMode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>MicrophoneDisabled</NodeName>
           <DFProperties>
             <AccessType>
@@ -84692,4 +84644,5 @@ Note: The first sign-in animation will not be shown on Server, so this policy wi
     </Node>
   </Node>
 </MgmtTree>
+
 ```
