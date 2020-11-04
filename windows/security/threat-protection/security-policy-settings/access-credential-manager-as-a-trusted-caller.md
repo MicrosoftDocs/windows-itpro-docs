@@ -22,7 +22,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-This article describes the best practices, location, values, policy management, and security considerations for the **Access Credential Manager as a trusted caller** security policy setting.
+This article describes the recommended practices, location, values, policy management, and security considerations for the **Access Credential Manager as a trusted caller** security policy setting.
 
 ## Reference
 
@@ -44,6 +44,8 @@ Constant: SeTrustedCredManAccessPrivilege
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
 
 ### Default values
+
+The following table shows the default value for the server type or Group Policy Object (GPO).
 
 | Server type or GPO | Default value |
 | - | - |

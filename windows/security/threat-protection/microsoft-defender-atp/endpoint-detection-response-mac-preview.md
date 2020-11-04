@@ -49,7 +49,7 @@ Endpoint detection and response capabilities in Microsoft Defender ATP for Mac a
 
 1. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
 
-1. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
+1. Create an entry with com.microsoft.wdav as the preference domain and upload the `.plist` created earlier.
 
    > [!WARNING]
    > You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
@@ -117,7 +117,7 @@ Endpoint detection and response capabilities in Microsoft Defender ATP for Mac a
 
 1. Choose a name for the profile. Change  **Platform=macOS**  to  **Profile type=Custom**. Select  **Configure**.
 
-1. Save the .plist created earlier as com.microsoft.wdav.xml.
+1. Save the `.plist` created earlier as com.microsoft.wdav.xml.
 
 1. Enter com.microsoft.wdav as the custom configuration profile name.
 
