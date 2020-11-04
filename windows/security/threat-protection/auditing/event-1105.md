@@ -13,7 +13,7 @@ manager: dansimp
 ms.author: dansimp
 ---
 
-# 1105(S): Event log automatic backup.
+# 1105(S): Event log automatic backup
 
 **Applies to**
 -   Windows 10
@@ -71,7 +71,7 @@ This event generates, for example, if the maximum size of Security Event Log fil
 
 ***Field Descriptions:***
 
-**Log** \[Type = UnicodeString\]: the name of the log which was archived (new event log file was created and previous event log was archived). Always “**Security”** for Security Event Logs.
+**Log** \[Type = UnicodeString\]: the name of the log that was archived (new event log file was created and previous event log was archived). Always “**Security”** for Security Event Logs.
 
 **File**: \[Type = FILETIME\]: full path and filename of archived log file.
 
