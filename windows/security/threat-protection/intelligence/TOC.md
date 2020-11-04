@@ -48,7 +48,7 @@
 
 ### [Coordinated malware eradication](coordinated-malware-eradication.md)
 
-## [Information for developers](developer-info.md)
+## [Information for developers]()
 
 ### [Software developer FAQ](developer-faq.md)
 
