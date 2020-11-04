@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/29/2020
+ms.date: 11/03/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -22,8 +22,8 @@ Answering frequently asked questions about Microsoft Defender Application Guard 
 
 ## Frequently Asked Questions
 
-### Can I enable Application Guard on machines equipped with 4 GB RAM?
-We recommend 8 GB RAM for optimal performance but you may use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
+### Can I enable Application Guard on machines equipped with 4-GB RAM?
+We recommend 8-GB RAM for optimal performance but you can use the following registry DWORD values to enable Application Guard on machines that aren't meeting the recommended hardware configuration.
 
 `HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount` (Default is four cores.)                                                   
 
@@ -33,7 +33,7 @@ We recommend 8 GB RAM for optimal performance but you may use the following regi
 
 ### Can employees download documents from the Application Guard Edge session onto host devices? 
 
-In Windows 10 Enterprise edition 1803, users will be able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
+In Windows 10 Enterprise edition 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
 
 In Windows 10 Enterprise edition 1709 or Windows 10 Professional edition 1803, it is not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device. 
 
@@ -71,7 +71,7 @@ The following Input Method Editors (IME) introduced in Windows 10, version 1903 
 
 ### I enabled the hardware acceleration policy on my Windows 10 Enterprise, version 1803 deployment. Why are my users still only getting CPU rendering? 
 
-This feature is currently experimental only and is not functional without an additional regkey provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, contact Microsoft and we’ll work with you to enable the feature.
+This feature is currently experimental only and is not functional without an additional registry key provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, contact Microsoft and we’ll work with you to enable the feature.
 
 ### What is the WDAGUtilityAccount local account? 
 
@@ -79,11 +79,11 @@ This account is part of Application Guard beginning with Windows 10, version 170
 
 ### How do I trust a subdomain in my site list?                          
 
-To trust a subdomain, you must precede your domain with two dots, for example: `..contoso.com` will ensure `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
+To trust a subdomain, you must precede your domain with two dots, for example: `..contoso.com` ensures that `mail.contoso.com` or `news.contoso.com` are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (`contoso.com`). This prevents sites such as `fakesitecontoso.com` from being trusted.
 
 ### Are there differences between using Application Guard on Windows Pro vs Windows Enterprise? 
 
-When using Windows Pro or Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
+When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard). 
 
 ### Is there a size limit to the domain lists that I need to configure?
 
@@ -91,7 +91,7 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Microsoft Defender Application Guard?
 
-Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message ("0x80070013 ERROR_WRITE_PROTECT").  
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`).  
 
 ### Why do the Network Isolation policies in Group Policy and CSP look different?
 
@@ -101,17 +101,17 @@ Mandatory network isolation GP policy to deploy Application Guard: "DomainSubnet
 Mandatory network isolation CSP policy to deploy Application Guard: "EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)"
 For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
 
-Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
+Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (`0x80070013 ERROR_WRITE_PROTECT`). 
 
 ### Why did Application Guard stop working after I turned off hyperthreading?
 
 If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements. 
 
-### Why am I getting the error message ("ERROR_VIRTUAL_DISK_LIMITATION")?
+### Why am I getting the error message "ERROR_VIRTUAL_DISK_LIMITATION"?
 
-Application Guard may not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
+Application Guard might not work correctly on NTFS compressed volumes. If this issue persists, try uncompressing the volume. 
 
-### Why am I getting the error message ("ERR_NAME_NOT_RESOLVED") after not being able to reach PAC file?
+### Why am I getting the error message "ERR_NAME_NOT_RESOLVED" after not being able to reach PAC file?
 
 This is a known issue. To mitigate this you need to create two firewall rules.
 For guidance on how to create a firewall rule by using group policy, see:
@@ -129,7 +129,7 @@ This is the same as the first rule, but scoped to local port 68.
 In the Microsoft Defender Firewall user interface go through the following steps:
 1. Right click on inbound rules, create a new rule.
 2. Choose **custom rule**.
-3. Program path: **%SystemRoot%\System32\svchost.exe**.
+3. Program path: `%SystemRoot%\System32\svchost.exe`.
 4. Protocol Type: UDP, Specific ports: 67, Remote port: any.
 5. Any IP addresses.
 6. Allow the connection.
@@ -139,23 +139,26 @@ In the Microsoft Defender Firewall user interface go through the following steps
 
 ### Why can I not launch Application Guard when Exploit Guard is enabled?
 
-There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to Windows Security-> App and Browser control -> Exploit Protection Setting -> switch CFG to the “use default".
+There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
 
 
 ### How can I have ICS in enabled state yet still use Application Guard?
 
-This is a two-step process.
+ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
 
-Step 1:
+1. In the Group Policy setting called, *Prohibit use of Internet Connection Sharing on your DNS domain network*, set it to **Disabled**. 
 
-Enable Internet Connection sharing by changing the Group Policy setting *Prohibit use of Internet Connection Sharing on your DNS domain network*, which is part of the MS Security baseline from Enabled to Disabled.
- 
-Step 2:
- 
-1. Disable IpNat.sys from ICS load
-System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1
-2. Configure ICS (SharedAccess) to enabled
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3
-3. Disabling IPNAT (Optional)
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4
-4. Reboot.
+2. Disable IpNat.sys from ICS load as follows: <br/> 
+`System\CurrentControlSet\Services\SharedAccess\Parameters\DisableIpNat = 1`
+
+3. Configure ICS (SharedAccess) to enabled as follows: <br/>
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Start = 3`
+
+4. (This is optional) Disable IPNAT as follows: <br/>
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPNat\Start = 4`
+
+5. Reboot the device.
+
+## See also
+
+[Configure Microsoft Defender Application Guard policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
