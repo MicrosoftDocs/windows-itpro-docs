@@ -42,7 +42,7 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td><b>Windows 10, version 1703</td>
-<td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br>This setting does not protect against malicious content from USB devices, network shares or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
+<td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br> This setting does not protect against malicious content from USB devices, network shares, or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
@@ -160,7 +160,7 @@ For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser]
 </table>
 
 ## Recommended Group Policy and MDM settings for your organization
-By default, Microsoft Defender SmartScreen lets employees bypass warnings. Unfortunately, this can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Microsoft Defender SmartScreen to block high-risk interactions instead of providing just a warning.
+By default, Microsoft Defender SmartScreen lets employees bypass warnings. Unfortunately, this feature can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Microsoft Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen Group Policy and MDM settings.
 <table>
