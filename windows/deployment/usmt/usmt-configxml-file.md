@@ -33,7 +33,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
  
 
-## In This Topic
+## In this topic
 
 
 In USMT there are new migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the Config.xml file only.

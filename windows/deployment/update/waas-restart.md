@@ -3,13 +3,14 @@ title: Manage device restarts after updates (Windows 10)
 description: Use Group Policy settings, mobile device management (MDM) or Registry to configure when devices will restart after a Windows 10 update is installed.
 ms.prod: w10
 ms.mktglfcycl: deploy
-
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Manage device restarts after updates

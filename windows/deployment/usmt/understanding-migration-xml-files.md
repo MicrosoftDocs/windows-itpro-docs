@@ -21,7 +21,7 @@ You can modify the behavior of a basic User State Migration Tool (USMT)10.0 migr
 
 This topic provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the MigDocs.xml file. The MigDocs.xml file uses the new **GenerateDocPatterns** function available in USMT to automatically find user documents on a source computer.
 
-## In This Topic
+## In This topic
 
 
 [Overview of the Config.xml file](#bkmk-config)
@@ -435,7 +435,7 @@ In the examples below, the source computer has a .txt file called "new text docu
 
  
 
-To exclude the new text document.txt file as well as any .txt files in “new folder”, you can do the following:
+To exclude the new text document.txt file as well as any .txt files in "new folder", you can do the following:
 
 **Example 1: Exclude all .txt files in a folder**
 
