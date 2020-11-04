@@ -150,17 +150,17 @@ For versions earlier than 100.78.0, run:
 
 To get the latest version of the Microsoft Defender ATP for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
-To verify you are running the correct version, run ‘mdatp --health’ on the device.
+To verify you are running the correct version, run `mdatp --health` on the device.
 
 * The required version is 100.72.15 or later.
-* If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running ‘defaults read com.microsoft.autoupdate2’ from terminal.
-* To change update settings use documentation in [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
+* If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running `defaults read com.microsoft.autoupdate2` from the terminal.
+* To change update settings, see [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
 * If you are not using Office for Mac, download and run the AutoUpdate tool.
 
 ### A device still does not appear on Microsoft Defender Security Center
 
-After a successful deployment and onboarding of the correct version, check that the device has connectivity to the cloud service by running ‘mdatp --connectivity-test’.
+After a successful deployment and onboarding of the correct version, check that the device has connectivity to the cloud service by running `mdatp --connectivity-test`.
 
-* Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
+* Check that you enabled the early preview flag. In the terminal, run `mdatp –health` and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 
 If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the [manual deployment documentation](mac-install-manually.md#application-installation-macos-1015-and-older-versions) and use the “Manual Deployment” section in the [troubleshoot kernel extension documentation](mac-support-kext.md#manual-deployment).
