@@ -59,7 +59,7 @@ Use the following table to develop your own objectives and determine which appli
 <tr class="odd">
 <td align="left"><p>Policy maintenance</p></td>
 <td align="left"><p>SRP policies must be updated by using the Local Security Policy snap-in (if the policies are created locally) or the Group Policy Management Console (GPMC).</p></td>
-<td align="left"><p>AppLocker policies can be updated by using the Local Security Policy snap-in, if the policies are created locally), or the GPMC, or the Windows PowerShell AppLocker cmdlets.</p></td>
+<td align="left"><p>AppLocker policies can be updated by using the Local Security Policy snap-in, if the policies are created locally, or the GPMC, or the Windows PowerShell AppLocker cmdlets.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Policy application</p></td>
@@ -68,7 +68,7 @@ Use the following table to develop your own objectives and determine which appli
 </tr>
 <tr class="odd">
 <td align="left"><p>Enforcement mode</p></td>
-<td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they don't want to allow in this Enterprise, but the rest of the file is allowed to run by default.</p>
+<td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they don't want to allow in this Enterprise, but the rest of the files are allowed to run by default.</p>
 <p>SRP can also be configured in the “allow list mode” such that by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
 <td align="left"><p>By default, AppLocker works in allow list mode. Only those files are allowed to run for which there's a matching allow rule.</p></td>
 </tr>
