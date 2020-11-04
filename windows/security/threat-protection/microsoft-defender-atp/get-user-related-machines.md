@@ -1,6 +1,6 @@
 ---
-title: Get user related machines API
-description: Learn how to use the Get user related machines API to retrieve a collection of devices related to a user ID in Microsoft Defender Advanced Threat Protection.
+title: Get user-related machines API
+description: Learn how to use the Get user-related machines API to retrieve a collection of devices related to a user ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, user, user related alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get user related machines API
+# Get user-related machines API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,15 +46,15 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>- The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md) )
+>- Response will include only devices that the user can access, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
 ```
 GET /api/users/{id}/machines
 ```
 
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve machines for user1@contoso.com use /api/users/user1/machines)**
+**The ID is not the full UPN, but only the user name. (for example, to retrieve machines for user1@contoso.com use /api/users/user1/machines)**
 
 
 ## Request headers

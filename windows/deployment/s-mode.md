@@ -14,6 +14,7 @@ author: greg-lindsay
 ms.author: greglin
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows 10 in S mode - What is it?
