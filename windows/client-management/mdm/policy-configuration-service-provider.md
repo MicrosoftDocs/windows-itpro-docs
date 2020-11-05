@@ -263,6 +263,83 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ControlPanelDisplay policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-display-disable" id="">ADMX_ControlPanelDisplay/CPL_Display_Disable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-display-hidesettings" id="">ADMX_ControlPanelDisplay/CPL_Display_HideSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablecolorschemechoice" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableColorSchemeChoice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablethemechange" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableThemeChange</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablevisualstyle" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableVisualStyle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-enablescreensaver" id="admx-controlpaneldisplay-cpl-personalization-enablescreensaver">ADMX_ControlPanelDisplay/CPL_Personalization_EnableScreenSaver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen" id="admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_ForceDefaultLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-lockfontsize" id="admx-controlpaneldisplay-cpl-personalization-lockfontsize">ADMX_ControlPanelDisplay/CPL_Personalization_LockFontSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen" id="admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground" id="admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground">ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingStartMenuBackground</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui" id="admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui">ADMX_ControlPanelDisplay/CPL_Personalization_NoColorAppearanceUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui" id="admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui">ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopBackgroundUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui" id="admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui">ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopIconsUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nolockscreen" id="admx-controlpaneldisplay-cpl-personalization-nolockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_NoLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nomousepointersui" id="admx-controlpaneldisplay-cpl-personalization-nomousepointersui">ADMX_ControlPanelDisplay/CPL_Personalization_NoMousePointersUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-noscreensaverui" id="admx-controlpaneldisplay-cpl-personalization-noscreensaverui">ADMX_ControlPanelDisplay/CPL_Personalization_NoScreenSaverUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nosoundschemeui" id="admx-controlpaneldisplay-cpl-personalization-nosoundschemeui">ADMX_ControlPanelDisplay/CPL_Personalization_NoSoundSchemeUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-personalcolors" id="admx-controlpaneldisplay-cpl-personalization-personalcolors">ADMX_ControlPanelDisplay/CPL_Personalization_PersonalColors</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-screensaverissecure" id="admx-controlpaneldisplay-cpl-personalization-screensaverissecure">ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverIsSecure</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-screensavertimeout" id="admx-controlpaneldisplay-cpl-personalization-screensavertimeout">ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverTimeOut</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-setscreensaver" id="admx-controlpaneldisplay-cpl-personalization-setscreensaver">ADMX_ControlPanelDisplay/CPL_Personalization_SetScreenSaver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-settheme" id="admx-controlpaneldisplay-cpl-personalization-settheme">ADMX_ControlPanelDisplay/CPL_Personalization_SetTheme</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-setvisualstyle" id="admx-controlpaneldisplay-cpl-personalization-setvisualstyle">ADMX_ControlPanelDisplay/CPL_Personalization_SetVisualStyle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-startbackground" id="admx-controlpaneldisplay-cpl-personalization-startbackground">ADMX_ControlPanelDisplay/CPL_Personalization_StartBackground</a>
+  </dd>
+</dl>
+
 ### ADMX_Cpls policies
 
 <dl>
