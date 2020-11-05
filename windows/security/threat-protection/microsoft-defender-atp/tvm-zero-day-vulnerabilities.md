@@ -32,6 +32,8 @@ ms.topic: article
 
 A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
+Threat and vulnerability management will only display zero-day vulnerabilities it has information about.
+
 ## Find information about zero-day vulnerabilities
 
 Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
@@ -62,7 +64,11 @@ When there is an application with associated zero-day vulnerability and addition
 
 ## Addressing the zero-day vulnerability
 
-Go to the security recommendation page
+Go to the security recommendation page and select the zero-day vulnerability. A flyout will open with information about the zero-day and other vulnerabilities for that software.
+
+There will be a link to mitigation options and workarounds if they are available. Workarounds may help reduce the risk posed by this zero-day vulnerability until a patch or security update can be deployed.
+
+Open remediation options and choose the attention type.
 
 ![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
 
