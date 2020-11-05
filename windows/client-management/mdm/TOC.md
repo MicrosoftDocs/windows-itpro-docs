@@ -177,6 +177,7 @@
 #### [ADMX_AuditSettings](policy-csp-admx-auditsettings.md)
 #### [ADMX_CipherSuiteOrder](policy-csp-admx-ciphersuiteorder.md)
 #### [ADMX_COM](policy-csp-admx-com.md)
+#### [ADMX_ControlPanel](policy-csp-admx-controlpanel.md)
 #### [ADMX_Cpls](policy-csp-admx-cpls.md)
 #### [ADMX_CtrlAltDel](policy-csp-admx-ctrlaltdel.md)
 #### [ADMX_DigitalLocker](policy-csp-admx-digitallocker.md)

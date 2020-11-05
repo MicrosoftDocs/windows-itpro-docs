@@ -245,6 +245,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+
+### ADMX_ControlPanel policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-disallowcpls" id="admx-controlpanel-disallowcpls">ADMX_ControlPanel/DisallowCpls</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-forceclassiccontrolpanel" id="admx-controlpanel-forceclassiccontrolpanel">ADMX_ControlPanel/ForceClassicControlPanel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-nocontrolpanel" id="admx-controlpanel-nocontrolpanel">ADMX_ControlPanel/NoControlPanel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-restrictcpls" id="admx-controlpanel-restrictcpls">ADMX_ControlPanel/RestrictCpls</a>
+  </dd>
+</dl>
+
 ### ADMX_Cpls policies
 
 <dl>
@@ -261,7 +279,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-nologoff" id="#admx-ctrlaltdel-nologoff">ADMX_CtrlAltDel/NoLogoff</a>
   </dd>
 </dl>
-
 
 ###  ADMX_CtrlAltDel policies  
 <dl>
