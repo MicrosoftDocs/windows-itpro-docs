@@ -38,21 +38,29 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 Find recommendations with a zero-day tag in the “Top security recommendation” card.
 
+![Two top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
+
 ## Weaknesses page
 
 Find the named zero-day vulnerability along with a description and details.
 
-- If this vulnerability has a CVE-ID assigned, you’ll see the zero-day label next to the CVE name. 
+- If this vulnerability has a CVE-ID assigned, you’ll see the zero-day label next to the CVE name.
 
 - If this vulnerability has no CVE-ID assigned, you will find it under an internal, temporary name that looks like “TVM-XXXX-XXXX”. The name will be updated once an official CVE-ID has been assigned, but the previous internal name will still be searchable and found in the side-panel.
+
+![Zero day example for CVE-2020-17087 in weaknesses page.](images/tvm-zero-day-weakness-name.png)
 
 ## Software inventory page
 
 Find software with the zero-day tag.
 
+![Zero day example of Windows Server 2016 in the software inventory page.](images/tvm-zero-day-software-inventory.png)
+
 ## Software page
 
 Find a zero-day tag for each software that has been affected by the zero–day vulnerability.
+
+![Zero day example for Windows Server 2016 software page.](images/tvm-zero-day-software-page.png)
 
 ## Security recommendations page
 
@@ -60,9 +68,9 @@ Clear suggestions regarding remediation and mitigation options, including workar
 
 When there is an application with associated zero-day vulnerability and additional vulnerabilities to address , you will get one recommendation regarding both.
 
-When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
+![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
 
-![One graph of current vulnerable devices by Windows 10 version, and one graph showing vulnerable devices by Windows 10 version over time.](images/tvm-report-version.png)
+When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
 
 ## Related topics
 
