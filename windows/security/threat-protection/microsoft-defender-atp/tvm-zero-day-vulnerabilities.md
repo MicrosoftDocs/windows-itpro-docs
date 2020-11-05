@@ -42,11 +42,11 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 Look for recommendations with a zero-day tag in the “Top security recommendations” card.
 
-![Top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
+![Top recommendations with a zero-day tag.](images/tvm-zero-day-top-security-recommendations.png)
 
 Find top software with the zero-day tag in the "Top vulnerable software" card.
 
-![Top vulnerable software with a zero-day tag.](images/tvm-zero-day-top-vulnerable-software.png)
+![Top vulnerable software with a zero-day tag.](images/tvm-zero-day-top-software.png)
 
 ### Weaknesses page
 
