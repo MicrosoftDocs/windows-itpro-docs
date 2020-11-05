@@ -12,6 +12,7 @@ audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # User State Migration Tool (USMT) Technical Reference
@@ -37,12 +38,12 @@ USMT also includes a set of three modifiable .xml files:
 
 Additionally, you can create custom .xml files to support your migration needs. You can also create a Config.xml file to specify files or settings to exclude from the migration.
 
-USMT tools can be used on several versions of Windows operating systems, for more information, see [USMT Requirements](usmt-requirements.md). For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](https://go.microsoft.com/fwlink/p/?LinkId=246564).
+USMT tools can be used on several versions of Windows operating systems, for more information, see [USMT Requirements](usmt-requirements.md). For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User's Guide](https://go.microsoft.com/fwlink/p/?LinkId=246564).
 
-## In This Section
+## In this section
 |Topic |Description|
 |------|-----------|
-|[User State Migration Tool (USMT) Overview Topics](usmt-topics.md)|Describes what’s new in USMT, how to get started with USMT, and the benefits and limitations of using USMT.|
+|[User State Migration Tool (USMT) Overview Topics](usmt-topics.md)|Describes what's new in USMT, how to get started with USMT, and the benefits and limitations of using USMT.|
 |[User State Migration Tool (USMT) How-to topics](usmt-how-to.md)|Includes step-by-step instructions for using USMT, as well as how-to topics for conducting tasks in USMT.|
 |[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)|Provides answers to frequently asked questions and common issues in USMT, as well as a reference for return codes used in USMT.|
 |[User State Migration Toolkit (USMT) Reference](usmt-reference.md)|Includes reference information for migration planning, migration best practices, command-line syntax, using XML, and requirements for using USMT.|

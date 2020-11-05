@@ -19,7 +19,9 @@
 ### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
 ### [Phase 1: Prepare](microsoft-defender-atp/prepare-deployment.md)
 ### [Phase 2: Set up](microsoft-defender-atp/production-deployment.md)
-### [Phase 3: Onboard](microsoft-defender-atp/onboarding.md)
+### [Phase 3: Onboard]()
+#### [Onboarding overview](microsoft-defender-atp/onboarding.md)
+#### [Deployment rings](microsoft-defender-atp/deployment-rings.md)
 #### [Onboarding using Microsoft Endpoint Configuration Manager](microsoft-defender-atp/onboarding-endpoint-configuration-manager.md)
 #### [Onboarding using Microsoft Endpoint Manager](microsoft-defender-atp/onboarding-endpoint-manager.md)
 #### [Onboard supported devices](microsoft-defender-atp/onboard-configure.md)
@@ -67,6 +69,7 @@
 ##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
 ##### [Event timeline](microsoft-defender-atp/threat-and-vuln-mgt-event-timeline.md)
+##### [Vulnerable devices report](microsoft-defender-atp/tvm-vulnerable-devices-report.md)
 ##### [Hunt for exposed devices](microsoft-defender-atp/tvm-hunt-exposed-devices.md)
 
 
@@ -274,6 +277,7 @@
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
+#### [Privacy](microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
@@ -456,6 +460,7 @@
 ##### [Onboard devices using Mobile Device Management tools](microsoft-defender-atp/configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](microsoft-defender-atp/configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](microsoft-defender-atp/configure-endpoints-vdi.md)
+##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](microsoft-defender-atp/Onboard-Windows-10-multi-session-device.md)
  
 #### [Onboard Windows servers](microsoft-defender-atp/configure-server-endpoints.md)
 #### [Onboard non-Windows devices](microsoft-defender-atp/configure-endpoints-non-windows.md)
@@ -748,7 +753,7 @@
 #### [Virus information alliance](intelligence/virus-information-alliance-criteria.md)
 #### [Microsoft virus initiative](intelligence/virus-initiative-criteria.md)
 #### [Coordinated malware eradication](intelligence/coordinated-malware-eradication.md)
-### [Information for developers](intelligence/developer-info.md)
+### [Information for developers]()
 #### [Software developer FAQ](intelligence/developer-faq.md)
 #### [Software developer resources](intelligence/developer-resources.md)
 
@@ -1340,3 +1345,5 @@
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
 ## [Change history for Threat protection](change-history-for-threat-protection.md)
+
+
