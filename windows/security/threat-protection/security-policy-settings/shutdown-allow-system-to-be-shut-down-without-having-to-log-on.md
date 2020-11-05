@@ -46,7 +46,7 @@ condition from a local console by restarting or shutting down the server.
 ### Best practices
 
 1.  On servers, set this policy to **Disabled**. You must sign in to servers to shut down or restart them.
-2.  On client devices, set this policy to **Enabled**. Define the list of user with the right to shut them down or restart them with the User Rights Assignment policy **Shut down the system**.
+2.  On client devices, set this policy to **Enabled**. Define the list of users who have the right to shut them down or restart them with the User Rights Assignment policy **Shut down the system**.
 
 ### Location
 
