@@ -22,7 +22,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -56,7 +56,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3. In the registration from, enter the following information then click **Register**.
+3. In the registration from, enter the following information then select **Register**.
 
    ![Image of Create application window](images/nativeapp-create2.png)
 
@@ -65,45 +65,45 @@ This page explains how to create an AAD application, get an access token to Micr
 
 4. Allow your Application to access Microsoft Defender ATP and assign it 'Read alerts' permission:
 
-    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+    - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
     - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
       ![Image of API access and API selection](images/add-permission.png)
 
-    - Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
+    - Choose **Delegated permissions** > **Alert.Read** > select **Add permissions**
 
       ![Image of API access and API selection](images/application-permissions-public-client.png)
 
-    - **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
+    - **Important note**: Select the relevant permissions. Read alerts is only an example.
 
       For instance,
 
       - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
       - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
-      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+      - To determine which permission you need, view the **Permissions** section in the API you are interested to call.
 
-    - Click **Grant consent**
+    - Select **Grant consent**
 
-      **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+      **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
       ![Image of Grant permissions](images/grant-consent.png)
 
 6. Write down your application ID and your tenant ID:
 
-   - On your application page, go to **Overview** and copy the following:
+   - On your application page, go to **Overview** and copy the following information:
 
    ![Image of created app id](images/app-and-tenant-ids.png)
 
 
 ## Get an access token
 
-For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on AAD token, see [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 
 - Copy/Paste the below class in your application.
-- Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
+- Use **AcquireUserTokenAsync** method with your application ID, tenant ID, user name, and password to acquire a token.
 
     ```csharp
     namespace WindowsDefenderATP
@@ -145,10 +145,10 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 
 ## Validate the token
 
-Sanity check to make sure you got a correct token:
+Verify to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
 - Validate you get a 'scp' claim with the desired app permissions
-- In the screen shot below you can see a decoded token acquired from the app in the tutorial:
+- In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
 ![Image of token validation](images/nativeapp-decoded-token.png)
 
@@ -156,7 +156,7 @@ Sanity check to make sure you got a correct token:
 
 - Choose the API you want to use - [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
-- The Expiration time of the token is 1 hour (you can send more then one request with the same token)
+- The Expiration time of the token is 1 hour (you can send more than one request with the same token)
 
 - Example of sending a request to get a list of alerts **using C#** 
 

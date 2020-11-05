@@ -22,7 +22,7 @@ ms.date: 08/17/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can perform various Microsoft Defender Antivirus functions with the dedicated command-line tool *mpcmdrun.exe*. This utility is useful when you want to automate Microsoft Defender Antivirus use. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. You must run it from a command prompt.
 

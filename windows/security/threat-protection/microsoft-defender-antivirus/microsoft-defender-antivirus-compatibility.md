@@ -23,7 +23,7 @@ ms.date: 09/28/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Overview
 
@@ -50,7 +50,7 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 
 (<a id="fn1">1</a>)  On Windows Server 2016 or 2019, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [consider uninstalling Microsoft Defender Antivirus on Windows Server 2016 or 2019](microsoft-defender-antivirus-on-windows-server-2016.md#need-to-uninstall-microsoft-defender-antivirus) to prevent problems caused by having multiple antivirus products installed on a machine.
 
-If you are Using Windows Server, version 1803 and Windows 2019, you can enable passive mode by setting this registry key:
+If you are using Windows Server, version 1803 or Windows Server 2019, you can enable passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: ForceDefenderPassiveMode
 - Type: REG_DWORD
@@ -78,7 +78,7 @@ The following table summarizes the functionality and features that are available
 
 - In Active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
 - In Passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections which are shared with the Microsoft Defender ATP service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
-- When [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md) (currently in private preview) is turned on, Microsoft Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
+- When [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md) is turned on, Microsoft Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
 - In Automatic disabled mode, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated.
 
 ## Keep the following points in mind

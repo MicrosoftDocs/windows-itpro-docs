@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what required Windows diagnostic data is gathered.
-title: Windows 10, version 2004 required diagnostic events and fields (Windows 10)
+title: Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,11 +13,11 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 08/31/2020
+ms.date: 09/30/2020
 ---
 
 
-# Windows 10, version 2004 required Windows diagnostic events and fields
+# Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -26,6 +26,7 @@ ms.date: 08/31/2020
 
  **Applies to**
 
+- Windows 10, version 20H2
 - Windows 10, version 2004
 
 
@@ -36,7 +37,6 @@ Required diagnostic data helps to identify problems that can occur on a particul
 Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
 
 You can learn more about Windows functional and diagnostic data through these articles:
-
 
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
@@ -1166,14 +1166,6 @@ The following fields are available:
 - **PrefetchWSupport**  Does the processor support PrefetchW?
 
 
-### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWEndSync
-
-Deprecated in RS3. This event indicates that a full set of SystemProcessorPrefetchWAdd events has been sent. The data collected with this event is used to help keep Windows up to date.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-
-
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWStartSync
 
 This event indicates that a new set of SystemProcessorPrefetchWAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
@@ -1255,14 +1247,6 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **IsWimBoot**  Is the current operating system running from a compressed WIM file?
 - **RegistryWimBootValue**  The raw value from the registry that is used to indicate if the device is running from a WIM.
-
-
-### Microsoft.Windows.Appraiser.General.SystemWimEndSync
-
-Deprecated in RS3. This event indicates that a full set of SystemWimAdd events has been sent. The data collected with this event is used to help keep Windows up to date.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
 
 
 ### Microsoft.Windows.Appraiser.General.SystemWimStartSync
@@ -1411,7 +1395,7 @@ The following fields are available:
 
 ### MicArrayGeometry
 
-This event provides information about the layout of the individual microphone elements in the microphone array.
+This event provides information about the layout of the individual microphone elements in the microphone array. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -2005,7 +1989,6 @@ The following fields are available:
 - **ext_app**  Describes the properties of the running application. This extension could be populated by either a client app or a web app. See [Common Data Extensions.app](#common-data-extensionsapp).
 - **ext_container**  Describes the properties of the container for events logged within a container. See [Common Data Extensions.container](#common-data-extensionscontainer).
 - **ext_device**  Describes the device-related fields. See [Common Data Extensions.device](#common-data-extensionsdevice).
-- **ext_m365a**  Describes the Microsoft 365-related fields. See [Common Data Extensions.m365a](#common-data-extensionsm365a).
 - **ext_mscv**  Describes the correlation vector-related fields. See [Common Data Extensions.mscv](#common-data-extensionsmscv).
 - **ext_os**  Describes the operating system properties that would be populated by the client. See [Common Data Extensions.os](#common-data-extensionsos).
 - **ext_sdk**  Describes the fields related to a platform library required for a specific SDK. See [Common Data Extensions.sdk](#common-data-extensionssdk).
@@ -2017,14 +2000,6 @@ The following fields are available:
 - **time**  Represents the event date time in Coordinated Universal Time (UTC) when the event was generated on the client. This should be in ISO 8601 format.
 - **ver**  Represents the major and minor version of the extension.
 
-### Common Data Extensions.m365a
-
-Describes the Microsoft 365-related fields.
-
-The following fields are available:
-
-- **enrolledTenantId**  The enrolled tenant ID.
-- **msp**  A bitmask that lists the active programs.
 
 ### Common Data Extensions.mscv
 
@@ -2123,7 +2098,7 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-## Common Data Fields
+## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
 
@@ -2131,11 +2106,10 @@ Describes the installation state for all hardware and software components availa
 
 The following fields are available:
 
-- **action** The change that was invoked on a device inventory object.
-- **inventoryId** Device ID used for Compatibility testing
-- **objectInstanceId** Object identity which is unique within the device scope.
-- **objectType** Indicates the object type that the event applies to.
-- **syncId** A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
 
 ## Component-based servicing events
 
@@ -3167,6 +3141,7 @@ The following fields are available:
 - **Categories**  A comma separated list of functional categories in which the container belongs.
 - **DiscoveryMethod**  The discovery method for the device container.
 - **FriendlyName**  The name of the device container.
+- **Icon**  Deprecated in RS3. The path or index to the icon file.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsConnected**  For a physically attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
@@ -3851,6 +3826,14 @@ The following fields are available:
 - **IndicatorValue**  The indicator value.
 
 
+### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorRemove
+
+This event indicates that this particular data object represented by the objectInstanceId is no longer present. This event is used to understand the OS indicators installed on the system. The data collected with this event helps ensure the device is current and Windows is up to date and performing properly.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+
+
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorStartSync
 
 This event indicates that this particular data object represented by the objectInstanceId is no longer present. This event is used to understand the OS indicators installed on the system. The data collected with this event helps ensure the device is current and Windows is up to date and performing properly.
@@ -4376,32 +4359,6 @@ The following fields are available:
 - **sessionId**  Identifier for each created session.
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
-
-
-## Windows Admin Center events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **activeNodesByNodeId**  A count of how many active nodes are on this gateway, deduplicated by Node ID.
-- **activeNodesByUuid**  A count of how many active nodes are on this gateway, deduplicated by UUID.
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
-- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installationType**  Identifies if the gateway was installed as a VM extension.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
-- **registeredNodesByNodeId**  A count of how many nodes are registered with this gateway, deduplicated by Node ID.
-- **registeredNodesByUuid**  A count of how many nodes are registered with this gateway, deduplicated by UUID..
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
 
 
 ## Privacy consent logging events
@@ -5238,6 +5195,18 @@ The following fields are available:
 - **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
 
 
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsCachedNotificationRetrieved
+
+This event is sent when a notification is received. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter that indicates ordering of events sent by the user.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsBlobNotificationNotEmpty**  A boolean that is true if the blob notification has valid content.
+
+
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploaded
 
 This event is received when the UpdateHealthTools service uploads device information. The data collected with this event is used to help keep Windows secure and up to date.
@@ -5308,6 +5277,24 @@ The following fields are available:
 - **UpdateHealthToolsPushCurrentStep**  The current step for the push notification
 
 
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlobDocumentDetails
+
+The event indicates the details about the blob used for update health tools. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by the user.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
+- **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
+- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
+- **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
+- **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
+- **UpdateHealthToolsHashedTenantId**  The SHA256 hash of the device tenant id.
+
+
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoAADJoin
 
 This event indicates that the device is not AAD joined so service stops. The data collected with this event is used to help keep Windows secure and up to date.
@@ -5317,6 +5304,17 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of UpdateHealthTools.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
+
+This event is sent when a device has been detected as DSS device. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  The package version of the label.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceStarted
@@ -5953,6 +5951,32 @@ The following fields are available:
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
+
+
+## Windows Admin Center events
+
+### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
+
+A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
+
+The following fields are available:
+
+- **activeNodesByNodeId**  A count of how many active nodes are on this gateway, deduplicated by Node ID.
+- **activeNodesByUuid**  A count of how many active nodes are on this gateway, deduplicated by UUID.
+- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
+- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
+- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
+- **friendlyOsName**  A user-friendly name describing the OS version.
+- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
+- **gatewayVersion**  The version string for this currently running Gateway application.
+- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
+- **installationType**  Identifies if the gateway was installed as a VM extension.
+- **installedDate**  The date on which this gateway was installed.
+- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
+- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
+- **registeredNodesByNodeId**  A count of how many nodes are registered with this gateway, deduplicated by Node ID.
+- **registeredNodesByUuid**  A count of how many nodes are registered with this gateway, deduplicated by UUID.
+- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
 
 
 ## Windows as a Service diagnostic events
@@ -6929,29 +6953,6 @@ The following fields are available:
 - **updateId**  ID of the update that is getting installed with this restart.
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
-### wilActivity
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics.
-
-The following fields are available:
-
-- **callContext**  The function where the failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
 
 ### Microsoft.Windows.Update.Orchestrator.ActivityError
 
@@ -7358,6 +7359,29 @@ The following fields are available:
 - **UpdateId**  Unique ID for each Update.
 - **WuId**  Unique ID for the Windows Update client.
 
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 ## Windows Update Reserve Manager events
 
@@ -7532,8 +7556,6 @@ The following fields are available:
 
 This event signals the completion of the setup process. It happens only once during the first logon.
 
-
-
 ## XDE events
 
 ### Microsoft.Emulator.Xde.RunTime.SystemReady
@@ -7584,3 +7606,6 @@ The following fields are available:
 - **virtualMachineName**  VM name.
 - **waitForClientConnection**  True if we should wait for client connection.
 - **wp81NetworkStackDisabled**  WP 8.1 networking stack disabled.
+
+
+

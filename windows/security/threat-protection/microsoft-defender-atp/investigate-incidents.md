@@ -25,7 +25,7 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
@@ -68,7 +68,8 @@ Select **Investigations** to see all the automatic investigations launched by th
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
-Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
+Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, and more. 
+
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
@@ -81,7 +82,7 @@ The **Graph** tells the story of the cybersecurity attack. For example, it shows
 
 ![Image of the incident graph](images/atp-incident-graph-tab.png)
 
-You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
+You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances have there been worldwide, whether it’s been observed in your organization, if so, how many instances.
 
 ![Image of incident details](images/atp-incident-graph-details.png)
 

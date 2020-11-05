@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,6 +39,20 @@ In general, to onboard devices to the service:
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+
+## Onboarding tool options
+The following table lists the available tools based on the endpoint that you need to onboard.
+
+| Endpoint     | Tool options                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)   |
+| **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [App-based](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+
+
+
 
 ## In this section
 Topic | Description

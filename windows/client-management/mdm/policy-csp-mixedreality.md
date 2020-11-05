@@ -308,7 +308,7 @@ The following list shows the supported values:
 
 Footnotes:
 
-- 9 - Available in the next major release of Windows 10.
+- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 

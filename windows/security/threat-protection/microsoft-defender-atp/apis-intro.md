@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 
 **Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -57,7 +57,7 @@ You can access Microsoft Defender ATP API with **Application Context** or **User
 - **User Context:** <br>
     Used to perform actions in the API on behalf of a user.
 
-	Steps that needs to be taken to access Microsoft Defender ATP API with application context:
+	Steps that need to be taken to access Microsoft Defender ATP API with user context:
   1. Create AAD Native-Application.
   2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
   3. Get token using the application with user credentials.

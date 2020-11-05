@@ -24,15 +24,21 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Microsoft Defender ATP supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
 
 
-The support for third-party solutions help to further streamline, integrate, and orchestrate defenses from other vendors with Microsoft Defender ATP; enabling security teams to effectively respond better to modern threats.
+The support for third-party solutions helps to further streamline, integrate, and orchestrate defenses from other vendors with Microsoft Defender ATP; enabling security teams to effectively respond better to modern threats.
 
-Microsoft Defender ATP seamlessly integrates with existing security solutions — providing out of the box integration with SIEM, ticketing and IT service management solutions, managed security service providers (MSSP), IoC indicators ingestions and matching, automated device investigation and remediation based on external alerts, and integration with Security orchestration and automation response (SOAR) systems. 
+Microsoft Defender ATP seamlessly integrates with existing security solutions. The integration provides integration with the following solutions such as:
+- SIEM
+- Ticketing and IT service management solutions
+- Managed security service providers (MSSP)
+- IoC indicators ingestions and matching
+- Automated device investigation and remediation based on external alerts
+- Integration with Security orchestration and automation response (SOAR) systems
 
 ## Supported applications
 
@@ -49,7 +55,7 @@ Logo |Partner name   | Description
 ![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Use Micro Focus ArcSight to pull Microsoft Defender ATP detections
 ![Image of RSA NetWitness logo](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Microsoft Defender ATP Alerts to RSA NetWitness leveraging Microsoft Graph Security API
 ![Image of SafeBreach logo](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Gain visibility into Microsoft Defender ATP security events that are automatically correlated with SafeBreach simulations
-![Image of Skybox Vulnerability Control logo](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network and threat context to uncover your riskiest vulnerabilities
+![Image of Skybox Vulnerability Control logo](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network, and threat context to uncover your riskiest vulnerabilities
 ![Image of Splunk logo](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | The Microsoft Defender ATP Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
 ![Image of XM Cyber logo](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Prioritize your response to an alert based on risk factors and high value assets
 
@@ -60,7 +66,7 @@ Logo |Partner name   | Description
 :---|:---|:---
 ![Image of CyberSponse CyOps logo](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps integrates with Microsoft Defender ATP to automate customers' high-speed incident response playbooks
 ![Image of Delta Risk ActiveEye logo](images/delta-risk-activeeye-logo.png) | [Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Microsoft Defender ATP with its cloud-native SOAR platform, ActiveEye.
-![Image of Demisto, a Palo Alto Networks Company logo](images/demisto-logo.png) | [Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response
+![Image of Demisto, a Palo Alto Networks Company logo](images/demisto-logo.png) | [Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto integrates with Microsoft Defender ATP to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
 ![Image of Microsoft Flow & Azure Functions logo](images/ms-flow-logo.png) | [Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300) | Use the Microsoft Defender ATP connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
 ![Image of Rapid7 InsightConnect logo](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect integrates with Microsoft Defender ATP to accelerate, streamline, and integrate your time-intensive security processes
 ![Image of ServiceNow logo](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
@@ -93,7 +99,7 @@ Logo |Partner name   | Description
 ![Image of Better Mobile logo](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| AI based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy 
 ![Image of Corrata logo](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobile solution — Protect your mobile devices with granular visibility and control from Corrata 
 ![Image of Lookout logo](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Get Lookout Mobile Threat Protection telemetry for Android and iOS mobile devices
-![Image of Symantec Endpoint Protection Mobile logo](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile helps businesses predict, detect and prevent security threats and vulnerabilities on mobile devices 
+![Image of Symantec Endpoint Protection Mobile logo](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile helps businesses predict, detect, and prevent security threats and vulnerabilities on mobile devices 
 ![Image of Zimperium logo](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Microsoft Defender ATP to iOS and Android with Machine Learning-based Mobile Threat Defense
 
 
@@ -121,7 +127,7 @@ Microsoft Defender ATP offers unique automated investigation and remediation cap
   
 Integrating the automated investigation and response capability with other solutions such as IDS and firewalls help to address alerts and minimize the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.  
 
-External alerts can be pushed into Microsoft Defender ATP and is presented side-by-side with additional device-based alerts from Microsoft Defender ATP. This view provides a full context of the alert — with the real process and the full story of attack.  
+External alerts can be pushed into Microsoft Defender ATP and is presented side by side with additional device-based alerts from Microsoft Defender ATP. This view provides a full context of the alert — with the real process and the full story of attack.  
 
 ## Indicators matching
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
