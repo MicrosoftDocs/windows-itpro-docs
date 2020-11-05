@@ -10,6 +10,7 @@ author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Windows Update troubleshooting

@@ -31,26 +31,27 @@ ms.topic: conceptual
 
 Partners can easily extend their existing security offerings on top of the open framework and a rich and complete set of APIs to build extensions and integrations with Microsoft Defender ATP. 
 
-The APIs span functional areas including detection, management, response, vulnerabilities and intelligence wide range of use cases. Based on the use case and need, partners can either stream or query data from Microsoft Defender ATP. 
+The APIs span functional areas including detection, management, response, vulnerabilities, and intelligence-wide range of use cases. Based on the use case and need, partners can either stream or query data from Microsoft Defender ATP. 
 
 
 ## Scenario 1: External alert correlation and Automated investigation and remediation
 Microsoft Defender ATP offers unique automated investigation and remediation capabilities to drive incident response at scale. 
 
-Integrating the automated investigation and response capability with other solutions such as network security products or other endpoint security products will help to address alerts and minimize the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.
+Integrating the automated investigation and response capability with other solutions such as network security products or other endpoint security products will help to address alerts. The integration also minimizes the complexities surrounding network and device signal correlation, effectively streamlining the investigation and threat remediation actions on devices.
 
 Microsoft Defender ATP adds support for this scenario in the following forms:
-- External alerts can be pushed into Microsoft Defender ATP and presented side-by-side with additional device-based alerts from Microsoft Defender ATP. This view provides the full context of the alert - with the real process and the full story of attack.
+
+- External alerts can be pushed into Microsoft Defender ATP and presented side by side with additional device-based alerts from Microsoft Defender ATP. This view provides the full context of the alert - with the real process and the full story of attack.
 
 - Once an alert is generated, the signal is shared across all Microsoft Defender ATP protected endpoints in the enterprise. Microsoft Defender ATP takes immediate automated or operator-assisted response to address the alert.
 
 ## Scenario 2: Security orchestration and automation response (SOAR) integration
-Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs exposes to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others.
+Orchestration solutions can help build playbooks and integrate the rich data model and actions that Microsoft Defender ATP APIs expose to orchestrate responses, such as query for device data, trigger device isolation, block/allow, resolve alert and others.
 
 ## Scenario 3: Indicators matching 
-Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability is available in Microsoft Defender ATP and gives the ability to set a list of indicators for prevention, detection and exclusion of entities. One can define the action to be taken as well as the duration for when to apply the action.
+Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability is available in Microsoft Defender ATP and gives the ability to set a list of indicators for prevention, detection, and exclusion of entities. One can define the action to be taken as well as the duration for when to apply the action.
 
-The above scenarios serve as examples of the extensibility of the platform. You are not limited to these and we certainly encourage you leverage the open framework to discover and explore other scenarios.
+The above scenarios serve as examples of the extensibility of the platform. You are not limited to the examples and we certainly encourage you to leverage the open framework to discover and explore other scenarios.
 
 Follow the steps in [Become a Microsoft Defender ATP partner](get-started-partner-integration.md) to integrate your solution in Microsoft Defender ATP.
 
