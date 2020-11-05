@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
-# System objects: Strengthen default permissions of internal system objects (for example Symbolic Links)
+# System objects: Strengthen default permissions of internal system objects (for example, Symbolic Links)
 
 **Applies to**
 -   Windows 10
