@@ -72,15 +72,15 @@ Look for a zero-day tag for each software that has been affected by the zero–d
 
 ### Security recommendations page
 
-View clear suggestions regarding remediation and mitigation options, including workarounds if exist. Filter by the "zero day" tag to only see security recommendations addressing zero-day vulnerabilities.
+View clear suggestions regarding remediation and mitigation options, including workarounds if they exist. Filter by the "zero day" tag to only see security recommendations addressing zero-day vulnerabilities.
 
-When there is an application with associated zero-day vulnerability and additional vulnerabilities to address, you will get one recommendation regarding both.
+If there is software with a zero-day vulnerability and additional vulnerabilities to address, you will get one recommendation regarding all vulnerabilities.
 
 ![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
 
-## Addressing the zero-day vulnerability
+## Addressing the zero-day vulnerabilities
 
-Go to the security recommendation page and select the zero-day recommendation. A flyout will open with information about the zero-day and other vulnerabilities for that software.
+Go to the security recommendation page and select a recommendation with a zero-day. A flyout will open with information about the zero-day and other vulnerabilities for that software.
 
 There will be a link to mitigation options and workarounds if they are available. Workarounds may help reduce the risk posed by this zero-day vulnerability until a patch or security update can be deployed.
 
