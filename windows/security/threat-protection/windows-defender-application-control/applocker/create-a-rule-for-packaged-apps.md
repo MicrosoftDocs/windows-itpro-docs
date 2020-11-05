@@ -110,7 +110,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     <tr class="odd">
     <td align="left"><p>Applying custom values to the rule</p></td>
     <td align="left"><p>Selecting the <b>Use custom values</b> check box allows you to adjust the scope fields for your particular circumstance.</p></td>
-    <td align="left"><p>You want to allow users to install all Microsoft.Bing* applications, which includes Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the <b>Use custom values</b> check box and edit the package name field by adding “Microsoft.Bing*” as the Package name.</p></td>
+    <td align="left"><p>You want to allow users to install all Microsoft.Bing* applications, which include Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the <b>Use custom values</b> check box and edit the package name field by adding “Microsoft.Bing*” as the Package name.</p></td>
     </tr>
     </tbody>
     </table>
