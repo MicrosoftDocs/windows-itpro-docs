@@ -1,6 +1,6 @@
 ---
 title: Mitigate zero-day vulnerabilities - threat and vulnerability management
-description: A report showing vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
+description: Learn how to find and mitigate zero-day vulnerabilities in your environment.
 keywords: mdatp-tvm vulnerable devices, mdatp, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,7 +40,7 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 ### Threat and vulnerability management dashboard
 
-Find recommendations with a zero-day tag in the “Top security recommendation” card.
+Look for recommendations with a zero-day tag in the “Top security recommendation” card.
 
 ![Top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
 
@@ -52,7 +52,7 @@ tvm-zero-day-top-vulnerable-software
 
 ### Weaknesses page
 
-Find the named zero-day vulnerability along with a description and details.
+Look for the named zero-day vulnerability along with a description and details.
 
 - If this vulnerability has a CVE-ID assigned, you’ll see the zero-day label next to the CVE name.
 
@@ -60,9 +60,21 @@ Find the named zero-day vulnerability along with a description and details.
 
 ![Zero day example for CVE-2020-17087 in weaknesses page.](images/tvm-zero-day-weakness-name.png)
 
+### Software inventory page
+
+Look for software with the zero-day tag. Filter by the "zero day" tag to only see software with zero-day vulnerabilities.
+
+![Zero day example of Windows Server 2016 in the software inventory page.](images/tvm-zero-day-software-inventory.png)
+
+### Software page
+
+Look for a zero-day tag for each software that has been affected by the zero–day vulnerability.
+
+![Zero day example for Windows Server 2016 software page.](images/tvm-zero-day-software-page.png)
+
 ### Security recommendations page
 
-Clear suggestions regarding remediation and mitigation options, including workarounds if exist.
+View clear suggestions regarding remediation and mitigation options, including workarounds if exist. Filter by the "zero day" tag to only see security recommendations addressing zero-day vulnerabilities.
 
 When there is an application with associated zero-day vulnerability and additional vulnerabilities to address, you will get one recommendation regarding both.
 
@@ -76,27 +88,13 @@ There will be a link to mitigation options and workarounds if they are available
 
 Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
 
-![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
+![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
 
 ## Patching the zero-day vulnerability
 
-When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
+When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.” It will no longer consider as a zero-day, the zero-day tag will be removed from all pages.
 
-![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-patch.jpg)
-
-## Other places to find vulnerable software
-
-### Software inventory page
-
-Find software with the zero-day tag.
-
-![Zero day example of Windows Server 2016 in the software inventory page.](images/tvm-zero-day-software-inventory.png)
-
-### Software page
-
-Find a zero-day tag for each software that has been affected by the zero–day vulnerability.
-
-![Zero day example for Windows Server 2016 software page.](images/tvm-zero-day-software-page.png)
+![Recommendation for "Update Microsoft Windows 10" with new patch label.](images/tvm-zero-day-patch.jpg)
 
 ## Related topics
 
