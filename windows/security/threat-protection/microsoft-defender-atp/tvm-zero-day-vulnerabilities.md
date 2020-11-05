@@ -1,7 +1,7 @@
 ---
 title: Mitigate zero-day vulnerabilities - threat and vulnerability management
 description: Learn how to find and mitigate zero-day vulnerabilities in your environment.
-keywords: mdatp-tvm vulnerable devices, mdatp, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
+keywords: mdatp tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -78,7 +78,7 @@ If there is software with a zero-day vulnerability and additional vulnerabilitie
 
 ![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
 
-## Addressing the zero-day vulnerabilities
+## Addressing zero-day vulnerabilities
 
 Go to the security recommendation page and select a recommendation with a zero-day. A flyout will open with information about the zero-day and other vulnerabilities for that software.
 
@@ -88,7 +88,7 @@ Open remediation options and choose the attention type. An "attention required" 
 
 ![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
 
-## Patching the zero-day vulnerability
+## Patching zero-day vulnerabilities
 
 When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.” It will no longer consider as a zero-day, the zero-day tag will be removed from all pages.
 
