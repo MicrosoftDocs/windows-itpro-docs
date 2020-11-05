@@ -24,39 +24,39 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](rbac.md) in Microsoft Defender ATP and connect with Active Directory (AD) groups.
+1. Enable [role-based access control](rbac.md) in Defender for Endpoint and connect with Active Directory (AD) groups.
 
 2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
 
-## Enable role-based access controls in Microsoft Defender ATP
+## Enable role-based access controls in Microsoft Defender for Endpoint
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Microsoft Defender ATP. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups will be linked to the Roles you create in Defender for Endpoint. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst 
     - Tier 2 Analyst 
     - MSSP Analyst Approvers  
 
 
-2. Create Microsoft Defender ATP roles for appropriate access levels in Customer Microsoft Defender ATP.
+2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
 
     To enable RBAC in the customer Microsoft Defender Security Center, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
     ![Image of MSSP access](images/mssp-access.png)
 
-    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via “Assigned user groups”.
+    Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via ï¿½Assigned user groupsï¿½.
 
     Two possible roles:
 
@@ -120,13 +120,13 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Access requests are managed in the customer My Access, by members of the MSSP Analyst Approvers group.
 
-    To do so, access the customer’s myaccess using: 
+    To do so, access the customerï¿½s myaccess using: 
     `https://myaccess.microsoft.com/@<Customer Domain >`. 
 
     Example:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-    At this point, analyst access has been provisioned, and each analyst should be able to access the customer’s Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    At this point, analyst access has been provisioned, and each analyst should be able to access the customerï¿½s Microsoft Defender Security Center: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## Related topics
 - [Access the MSSP customer portal](access-mssp-portal.md)
