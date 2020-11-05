@@ -1,5 +1,5 @@
 ---
-title: Advanced Hunting with Powershell API Basics
+title: Advanced Hunting with PowerShell API Basics
 ms.reviewer: 
 description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using PowerShell.
 keywords: apis, supported apis, advanced hunting, query
@@ -27,7 +27,7 @@ ms.topic: article
 
 Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
 
-In this section we share PowerShell samples to retrieve a token and use it to run a query.
+In this section, we share PowerShell samples to retrieve a token and use it to run a query.
 
 ## Before you begin
 You first need to [create an app](apis-intro.md).
@@ -40,7 +40,7 @@ You first need to [create an app](apis-intro.md).
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->For more details, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
@@ -64,9 +64,9 @@ $aadToken = $response.access_token
 ```
 
 where
-- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
-- $appSecret: Secret of your AAD app
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
+- $appSecret: Secret of your Azure AD app
 
 ## Run query
 
@@ -88,7 +88,7 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- $results contains the results of your query
+- $results contain the results of your query
 - $schema contains the schema of the results of your query
 
 ### Complex queries
