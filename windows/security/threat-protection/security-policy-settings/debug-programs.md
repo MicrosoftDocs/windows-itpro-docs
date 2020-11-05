@@ -26,7 +26,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-This policy setting determines which users can attach to or open any process, even those they do not own. Developers who are debugging their own applications do not need to be assigned this user right. Developers who are debugging new system components need this user right. This user right provides access to sensitive and critical operating-system components.
+This policy setting determines which users can attach to or open any process, even a process they do not own. Developers who are debugging their own applications do not need this user right. Developers who are debugging new system components need this user right. This user right provides access to sensitive and critical operating-system components.
 
 Constant: SeDebugPrivilege
 

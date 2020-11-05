@@ -28,7 +28,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Enable security information and event management (SIEM) integration so you can pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API.
+Enable security information and event management (SIEM) integration so you can pull detections from Microsoft Defender Security Center. Pull detections using your SIEM solution or by connecting directly to the detections REST API.
 
 >[!NOTE]
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections.
@@ -36,7 +36,14 @@ Enable security information and event management (SIEM) integration so you can p
 >- The Microsoft Defender ATP Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Prerequisites
-- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is someone with the following roles: Security Administrator and either Global Administrator, Cloud Application Administrator, Application Administrator, or owner of the service principal.
+
+- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is someone with the following roles: 
+
+  - Security Administrator and either Global Administrator
+  - Cloud Application Administrator
+  - Application Administrator
+  - Owner of the service principal
+
 - During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
 
 ## Enabling SIEM integration 
@@ -47,7 +54,7 @@ Enable security information and event management (SIEM) integration so you can p
     >[!TIP]
     >If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability. 
 
-2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant.
+2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant.
 
     > [!WARNING]
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
