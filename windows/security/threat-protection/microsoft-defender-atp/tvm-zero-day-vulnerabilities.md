@@ -32,15 +32,17 @@ ms.topic: article
 
 A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
-Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center:
+## Find information about zero-day vulnerabilities
 
-## Threat and vulnerability management dashboard
+Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
+
+### Threat and vulnerability management dashboard
 
 Find recommendations with a zero-day tag in the “Top security recommendation” card.
 
 ![Two top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
 
-## Weaknesses page
+### Weaknesses page
 
 Find the named zero-day vulnerability along with a description and details.
 
@@ -50,27 +52,37 @@ Find the named zero-day vulnerability along with a description and details.
 
 ![Zero day example for CVE-2020-17087 in weaknesses page.](images/tvm-zero-day-weakness-name.png)
 
-## Software inventory page
+### Security recommendations page
+
+Clear suggestions regarding remediation and mitigation options, including workarounds if exist.
+
+When there is an application with associated zero-day vulnerability and additional vulnerabilities to address, you will get one recommendation regarding both.
+
+![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
+
+## Addressing the zero-day vulnerability
+
+Go to the security recommendation page
+
+![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
+
+## Patching the zero-day vulnerability
+
+When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
+
+## Other places to find vulnerable software
+
+### Software inventory page
 
 Find software with the zero-day tag.
 
 ![Zero day example of Windows Server 2016 in the software inventory page.](images/tvm-zero-day-software-inventory.png)
 
-## Software page
+### Software page
 
 Find a zero-day tag for each software that has been affected by the zero–day vulnerability.
 
 ![Zero day example for Windows Server 2016 software page.](images/tvm-zero-day-software-page.png)
-
-## Security recommendations page
-
-Clear suggestions regarding remediation and mitigation options, including workarounds if exist.
-
-When there is an application with associated zero-day vulnerability and additional vulnerabilities to address , you will get one recommendation regarding both.
-
-![Zero day example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-security-recommendation.png)
-
-When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
 
 ## Related topics
 
