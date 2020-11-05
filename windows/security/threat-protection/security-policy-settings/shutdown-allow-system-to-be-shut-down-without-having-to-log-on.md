@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 04/19/2017
 ---
 
-# Shutdown: Allow system to be shut down without having to sign in
+# Shutdown: Allow system to be shut down without having to log on
 
 **Applies to**
 -   Windows 10
