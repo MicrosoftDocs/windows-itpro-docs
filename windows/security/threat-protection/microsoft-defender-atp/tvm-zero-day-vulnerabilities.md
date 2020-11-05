@@ -42,7 +42,13 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 Find recommendations with a zero-day tag in the “Top security recommendation” card.
 
-![Two top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
+![Top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
+
+Find top software with the zero-day tag in the "Top vulnerable software" card.
+
+![Top vulnerable software with a zero-day tag.](images/tvm-zero-day-top-vulnerable-software.png)
+
+tvm-zero-day-top-vulnerable-software
 
 ### Weaknesses page
 
@@ -64,17 +70,19 @@ When there is an application with associated zero-day vulnerability and addition
 
 ## Addressing the zero-day vulnerability
 
-Go to the security recommendation page and select the zero-day vulnerability. A flyout will open with information about the zero-day and other vulnerabilities for that software.
+Go to the security recommendation page and select the zero-day recommendation. A flyout will open with information about the zero-day and other vulnerabilities for that software.
 
 There will be a link to mitigation options and workarounds if they are available. Workarounds may help reduce the risk posed by this zero-day vulnerability until a patch or security update can be deployed.
 
-Open remediation options and choose the attention type.
+Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
 
 ![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
 
 ## Patching the zero-day vulnerability
 
 When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.”
+
+![Zero day example flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-patch.jpg)
 
 ## Other places to find vulnerable software
 
