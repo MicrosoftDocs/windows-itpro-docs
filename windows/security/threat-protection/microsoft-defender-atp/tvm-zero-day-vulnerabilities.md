@@ -40,15 +40,13 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 ### Threat and vulnerability management dashboard
 
-Look for recommendations with a zero-day tag in the “Top security recommendation” card.
+Look for recommendations with a zero-day tag in the “Top security recommendations” card.
 
 ![Top recommendations with a zero-day tag.](images/tvm-zero-day-dashboard.png)
 
 Find top software with the zero-day tag in the "Top vulnerable software" card.
 
 ![Top vulnerable software with a zero-day tag.](images/tvm-zero-day-top-vulnerable-software.png)
-
-tvm-zero-day-top-vulnerable-software
 
 ### Weaknesses page
 
@@ -99,4 +97,7 @@ When a patch is released for the zero-day, the recommendation will be changed to
 ## Related topics
 
 - [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
+- [Dashboard](tvm-dashboard-insights.md)
 - [Security recommendations](tvm-security-recommendation.md)
+- [Software inventory](tvm-software-inventory.md)
+- [Vulnerabilities in my organization](tvm-weaknesses.md)
