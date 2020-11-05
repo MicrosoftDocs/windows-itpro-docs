@@ -47,14 +47,19 @@ View software on specific devices in the individual devices pages from the [devi
 
 ## Software inventory overview
 
-The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags. You can filter the list view based on weaknesses found in the software, threats associated with them, and whether the software or software versions have reached end-of-support.
-![Example of the landing page for software inventory.](images/software_inventory_filter.png)
+The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags.
+
+You can filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.
+
+![Example of the landing page for software inventory.](images/tvm-software-inventory.png)
 
 Select the software that you want to investigate. A flyout panel will open with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
 
 ### Software that isn't supported
 
-Software that isn't currently supported by threat & vulnerability management is still present in the Software inventory page. Because it is not supported, only limited data will be available. Sort by unsupported software with the ‘Not available’ filter option in the Weakness section.
+Software that isn't currently supported by threat & vulnerability management is still present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
+
+![Unsupported software filter.](images/tvm-unsupported-software-filter.png)
 
 The following indicates that a software is not supported:
 
@@ -66,13 +71,15 @@ Currently, products without a CPE are not shown in the software inventory page, 
 
 ## Software inventory on devices
 
-From the Microsoft Defender Security Center navigation panel, go to the **[Devices list](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1) > select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
+From the Microsoft Defender Security Center navigation panel, go to the **[Devices list](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
 
-Software with no CPE can show up under this device specific software inventory.
+Software may be visible at the device level even if it is currently not supported by threat and vulnerability management. However, only limited data will be available. You'll know if software is unsupported because it will say "Not available" in the "Weakness" column.
+
+Software with no CPE can also show up under this device specific software inventory.
 
 ### Software evidence
 
-See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory. 
+See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory.
 
 Select a software name to open the flyout, and look for the section called "Software Evidence."
 
