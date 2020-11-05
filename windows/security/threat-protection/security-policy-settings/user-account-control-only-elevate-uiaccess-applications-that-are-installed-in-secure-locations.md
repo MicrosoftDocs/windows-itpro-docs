@@ -102,7 +102,7 @@ This section describes:
 
 ### Vulnerability
 
-UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that transmit user interfaces to alternative forms. But it is not required by most applications. A process that's started with UIAccess rights has the following abilities:
+UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that transmit user interfaces to alternative forms. But it's not required by most applications. A process that's started with UIAccess rights has the following abilities:
 
 -   Set the foreground window.
 -   Drive any application window by using the SendInput function.
