@@ -1,5 +1,5 @@
 ---
-title: Fix unhealthy sensors in Microsoft Defender ATP
+title: Fix unhealthy sensors in Microsoft Defender for Endpoint
 description: Fix device sensors that are reporting as misconfigured or inactive so that the service receives data from the device.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/23/2017
+ms.date: 11/06/2020
 ---
 
 # Fix unhealthy sensors in Microsoft Defender for Endpoint
@@ -29,8 +29,7 @@ ms.date: 10/23/2017
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Devices that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
 
@@ -38,17 +37,18 @@ Devices that are categorized as misconfigured or inactive can be flagged due to 
 
 An inactive device is not necessarily flagged due to an issue. The following actions taken on a device can cause a device to be categorized as inactive:
 
-**Device is not in use**</br>
+### Device is not in use
+
 If the device has not been in use for more than 7 days for any reason, it will remain in an ‘Inactive’ status in the portal.
 
-**Device was reinstalled or renamed**</br>
+### Device was reinstalled or renamed
 A reinstalled or renamed device will generate a new device entity in Microsoft Defender Security Center. The previous device entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
-**Device was offboarded**</br>
+### Device was offboarded
 If the device was offboarded it will still appear in devices list. After 7 days, the device health state should change to inactive.
 
 
-**Device is not sending signals**
+### Device is not sending signals
 If the device is not sending any signals for more than 7 days to any of the Defender for Endpoint channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
 
 
@@ -65,7 +65,7 @@ This status indicates that there's limited communication between the device and 
 The following suggested actions can help fix issues related to a misconfigured device with impaired communications:
 
 - [Ensure the device has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
+  The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 - [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the  Defender for Endpoint service URLs.
@@ -77,10 +77,10 @@ A misconfigured device with status ‘No sensor data’ has communication with t
 Follow theses actions to correct known issues related to a misconfigured device with status ‘No sensor data’:
 
 - [Ensure the device has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
+  The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 - [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
-  Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
+  Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender for Endpoint service URLs.
 
 - [Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 If the devices aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the endpoint.
@@ -90,5 +90,5 @@ If your devices are running a third-party antimalware client, the Defender for E
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
-## Related topic
-- [Check sensor health state in Defender for Endpoint](check-sensor-status.md)
+## See also
+- [Check sensor health state in Microsoft Defender for Endpoint](check-sensor-status.md)
