@@ -52,11 +52,11 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![add permission](images/add-permission.png)
 
    - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![app permission](images/application-permissions.png)
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -69,7 +69,7 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Image of Grant permissions](images/grant-consent.png)
+    ![Grant permissions](images/grant-consent.png)
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 

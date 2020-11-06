@@ -63,7 +63,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![add permission](images/add-permission.png)
    
    ### Request API permissions
 
@@ -77,7 +77,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    Choose **Application permissions** > **Alert.Read.All** > select on **Add permissions**
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![app permissions](images/application-permissions.png)
 
 
 5. Select **Grant consent**
