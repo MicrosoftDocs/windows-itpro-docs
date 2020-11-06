@@ -36,14 +36,14 @@ To work with these options, the typical method is to create a policy that only a
 For example, to create a WDAC policy that allows **addin1.dll** and **addin2.dll** to run in **ERP1.exe**, your organization's enterprise resource planning (ERP) application, run the following commands. Note that in the second command, **+=** is used to add a second rule to the **$rule** variable:
 
 ```powershell
-$rule = New-CIPolicyRule -DriverFilePath '.\ERP1.exe' -Level FileName -AppID '.\temp\addin1.dll'
-$rule += New-CIPolicyRule -DriverFilePath '.\ERP1.exe' -Level FileName -AppID '.\temp\addin2.dll'
+$rule = New-CIPolicyRule -DriverFilePath '..\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
+$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
 New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
 ```
 
 As another example, to create a WDAC policy that blocks **addin3.dll** from running in Microsoft Word, run the following command. You must include the `-Deny` option to block the specified add-ins in the specified application:
 
 ```powershell
-$rule = New-CIPolicyRule -DriverFilePath '.\winword.exe' -Level FileName -Deny -AppID '.\temp\addin3.dll'
+$rule = New-CIPolicyRule -DriverFilePath '.\temp\addin3.dll' -Level FileName -Deny -AppID '.\winword.exe'
 New-CIPolicy -Rules $rule -FilePath ".\BlockAddins.xml" -UserPEs
 ```
