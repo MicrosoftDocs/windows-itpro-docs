@@ -1,7 +1,7 @@
 ---
-title: Create an Application to access Microsoft Defender ATP without a user
+title: Create an Application to access  Microsoft Defender for Endpoint without a user
 ms.reviewer: 
-description: Learn how to design a web app to get programmatic access to Microsoft Defender ATP without a user.
+description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -24,17 +24,17 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Defender for Endpoint on behalf of your customers.
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
 
-Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create a **multi-tenant** Azure AD application.
 - Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
-- Use the token to access Microsoft Defender ATP API.
+- Use the token to access Microsoft Defender for Endpoint API.
 
 The following steps will guide you how to create an Azure AD application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
@@ -61,9 +61,9 @@ The following steps will guide you how to create an Azure AD application, get an
 
    - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
-   - **Note**: WindowsDefenderATP does not appear in the original list. Start writing its name in the text box to see it appear.
+   - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![add permission](images/add-permission.png)
    
    ### Request API permissions
 
@@ -77,7 +77,7 @@ The following steps will guide you how to create an Azure AD application, get an
 
    Choose **Application permissions** > **Alert.Read.All** > select on **Add permissions**
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![app permissions](images/application-permissions.png)
 
 
 5. Select **Grant consent**
@@ -212,7 +212,7 @@ You will get an answer of the form:
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
+- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to  Microsoft Defender for Endpoint:
 - The "tid" claim is the tenant ID the token belongs to.
 
 ![Image of token validation](images/webapp-decoded-token.png)
@@ -236,6 +236,6 @@ Sanity check to make sure you got a correct token:
     // Do something useful with the response
     ```
 
-## Related topics
+## See also
 - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint on behalf of a user](exposed-apis-create-app-nativeapp.md)

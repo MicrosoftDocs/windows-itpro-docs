@@ -1,6 +1,6 @@
 ---
 title: File resource type
-description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts related to files.
+description: Retrieve recent Microsoft Defender for Endpoint alerts related to files.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Represent a file entity in Defender for Endpoint.
 
@@ -37,24 +37,24 @@ Method|Return Type |Description
 
 
 ## Properties
-Property |	Type	|	Description
-:---|:---|:---
-sha1 | String | Sha1 hash of the file content
-sha256 | String | Sha256 hash of the file content
-globalPrevalence | Nullable long | File prevalence across organization
-globalFirstObserved | DateTimeOffset | First time the file was observed.
-globalLastObserved | DateTimeOffset | Last time the file was observed.
-size | Nullable long | Size of the file.
-fileType | String | Type of the file. 
-isPeFile | Boolean | true if the file is portable executable (e.g. "DLL", "EXE", etc.)
-filePublisher | String | File publisher.
-fileProductName | String | Product name.
-signer | String | File signer.
-issuer | String | File issuer.
-signerHash | String | Hash of the signing certificate.
-isValidCertificate | Boolean | Was signing certificate successfully verified by Defender for Endpoint agent.
-determinationType | String | The determination type of the file.
-determinationValue | String | Determination value.
+|Property |	Type	|	Description |
+|:---|:---|:---|
+|sha1 | String | Sha1 hash of the file content |
+|sha256 | String | Sha256 hash of the file content |
+|globalPrevalence | Nullable long | File prevalence across organization |
+|globalFirstObserved | DateTimeOffset | First time the file was observed |
+|globalLastObserved | DateTimeOffset | Last time the file was observed |
+|size | Nullable long | Size of the file |
+|fileType | String | Type of the file |
+|isPeFile | Boolean | true if the file is portable executable (e.g. "DLL", "EXE", etc.) |
+|filePublisher | String | File publisher |
+|fileProductName | String | Product name |
+|signer | String | File signer |
+|issuer | String | File issuer |
+|signerHash | String | Hash of the signing certificate |
+|isValidCertificate | Boolean | Was signing certificate successfully verified by Microsoft Defender for Endpoint agent |
+|determinationType | String | The determination type of the file |
+|determinationValue | String | Determination value |
 
 
 ## Json representation
