@@ -21,7 +21,7 @@ You use the User State Migration Tool (USMT) 10.0 when hardware and/or operatin
 
 One common scenario when only the operating system, and not the hardware, is being upgraded is referred to as *PC refresh*. A second common scenario is known as *PC replacement*, where one piece of hardware is being replaced, typically by newer hardware and a newer operating system.
 
-## In This Topic
+## In this topic
 
 
 [PC Refresh](#bkmk-pcrefresh)
@@ -59,7 +59,7 @@ A company has just received funds to update the operating system on all of its c
 
 1.  On each computer, the administrator boots the machine into WinPE and runs the ScanState command-line tool, specifying the **/hardlink /nocompress** command-line options. ScanState saves the user state to a hard-link migration store on each computer, improving performance by minimizing network traffic as well as minimizing migration failures on computers with very limited space available on the hard drive.
 
-2.  On each computer, the administrator installs the company’s standard operating environment (SOE) which includes Windows 10 and other company applications.
+2.  On each computer, the administrator installs the company's standard operating environment (SOE) which includes Windows 10 and other company applications.
 
 3.  The administrator runs the LoadState command-line tool on each computer. LoadState restores each user state back to each computer.
 
@@ -89,7 +89,7 @@ A company has decided to update the operating system on all of its computers to 
 
 1.  The administrator clean installs Windows 10 on each computer, making sure that the Windows.old directory is created by installing Windows 10 without formatting or repartitioning and by selecting a partition that contains the previous version of Windows.
 
-2.  On each computer, the administrator installs the company’s SOE which includes company applications.
+2.  On each computer, the administrator installs the company's SOE which includes company applications.
 
 3.  The administrator runs the ScanState and LoadState command-line tools successively on each computer while specifying the **/hardlink /nocompress** command-line options.
 
@@ -118,13 +118,13 @@ A company is allocating 20 new computers to users in the accounting department. 
 
 A company receives 50 new laptops for their managers and needs to reallocate 50 older laptops to new employees. In this scenario, an administrator runs the ScanState tool from the cmd prompt on each computer to collect the user states and save them to a server in a compressed migration store.
 
-1.  The administrator runs the ScanState tool on each of the manager’s old laptops, and saves each user state to a server.
+1.  The administrator runs the ScanState tool on each of the manager's old laptops, and saves each user state to a server.
 
 2.  On the new laptops, the administrator installs the company's SOE, which includes Windows 10 and other company applications.
 
-3.  The administrator runs the LoadState tool on the new laptops to migrate the managers’ user states to the appropriate computer. The new laptops are now ready for the managers to use.
+3.  The administrator runs the LoadState tool on the new laptops to migrate the managers' user states to the appropriate computer. The new laptops are now ready for the managers to use.
 
-4.  On the old computers, the administrator installs the company’s SOE, which includes Windows 10, Microsoft Office, and other company applications. The old computers are now ready for the new employees to use.
+4.  On the old computers, the administrator installs the company's SOE, which includes Windows 10, Microsoft Office, and other company applications. The old computers are now ready for the new employees to use.
 
 ### <a href="" id="bkmk-threepcreplace"></a>Scenario Three: Managed network migration
 

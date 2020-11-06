@@ -4,7 +4,7 @@ ms.assetid: fdfbf02f-c4c4-4739-a400-782204fd3c6c
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: 
+description: Learn about deploying your compatibility fixes as part of an application-installation package or through a centralized compatibility-fix database.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
@@ -13,6 +13,7 @@ audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
+ms.custom: seo-marvel-mar2020
 ---
 
 # Compatibility Fix Database Management Strategies and Deployment
@@ -88,7 +89,7 @@ This approach tends to work best for organizations that have a well-developed de
 
 ### Merging Centralized Compatibility-Fix Databases
 
-If you decide to use the centralized compatibility-fix database deployment strategy, you can merge any of your individual compatibility-fix databases. This enables you to create a single custom compatibility-fix database that can be used to search for and determine whether Windows® should apply a fix to a specific executable (.exe) file. We recommend merging your databases based on the following process.
+If you decide to use the centralized compatibility-fix database deployment strategy, you can merge any of your individual compatibility-fix databases. This enables you to create a single custom compatibility-fix database that can be used to search for and determine whether Windows&reg; should apply a fix to a specific executable (.exe) file. We recommend merging your databases based on the following process.
 
 **To merge your custom-compatibility databases**
 
@@ -113,7 +114,7 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 Deploying your custom compatibility-fix database into your organization requires you to perform the following actions:
 
-1.  Store your custom compatibility-fix database (.sdb file) in a location that is accessible to all of your organization’s computers.
+1.  Store your custom compatibility-fix database (.sdb file) in a location that is accessible to all of your organization's computers.
 
 2.  Use the Sdbinst.exe command-line tool to install the custom compatibility-fix database locally.
 
@@ -124,7 +125,7 @@ In order to meet the two requirements above, we recommend that you use one of th
     You can package your .sdb file and a custom deployment script into an .msi file, and then deploy the .msi file into your organization.
 
     > [!IMPORTANT]
-    > You must ensure that you mark your custom script so that it does not impersonate the calling user. For example, if you use Microsoft® Visual Basic® Scripting Edition (VBScript), the custom action type would be:
+    > You must ensure that you mark your custom script so that it does not impersonate the calling user. For example, if you use Microsoft&reg; Visual Basic&reg; Scripting Edition (VBScript), the custom action type would be:
     >`msidbCustomActionTypeVBScript + msidbCustomActionTypeInScript + msidbCustomActionTypeNoImpersonate = 0x0006 + 0x0400 + 0x0800 = 0x0C06 = 3078 decimal)`
 
 

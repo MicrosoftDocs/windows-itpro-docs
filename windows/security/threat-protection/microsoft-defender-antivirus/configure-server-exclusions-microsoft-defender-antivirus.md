@@ -157,7 +157,7 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 
 - The FRS staging folder. The staging folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
 
-  - `%systemroot%\Sysvol\*\Nntfrs_cmp*\`
+  - `%systemroot%\Sysvol\*\Ntfrs_cmp*\`
 
 - The FRS preinstall folder. This folder is specified by the folder `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
 
