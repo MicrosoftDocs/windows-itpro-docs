@@ -58,11 +58,11 @@ This article explains how to create an Azure AD application, get an access token
 
    ![Image of API access and API selection](images/application-permissions.png)
 
-     Note that you need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
+     You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
      - To [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission.
      - To [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
-     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+     - To determine which permission you need, look at the **Permissions** section in the API you are interested to call.
 
 5. Select **Grant consent**.
 
@@ -105,7 +105,7 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Get an access token
 
-For more details on Azure AD tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Azure AD tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Use PowerShell
 
@@ -133,10 +133,10 @@ return $token
 
 ### Use C#:
 
-The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
 
 1. Create a new console application.
-1. Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 1. Add the following:
 
     ```
@@ -198,7 +198,7 @@ Ensure that you got the correct token:
 
 1. Choose the API you want to use. For more information, see [Supported Defender for Endpoint APIs](exposed-apis-list.md).
 1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
-1. The expiration time of the token is one hour. You can send more then one request with the same token.
+1. The expiration time of the token is one hour. You can send more than one request with the same token.
 
 The following is an example of sending a request to get a list of alerts **using C#**: 
 ```
