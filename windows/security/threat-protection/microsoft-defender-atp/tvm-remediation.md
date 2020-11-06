@@ -69,7 +69,7 @@ Once you are in the Remediation page, select the remediation activity that you w
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
 
-### Completed by
+### Completed by column
 
 Track who closed the remediation activity with the "Completed by" column on the Remediation page.
 
