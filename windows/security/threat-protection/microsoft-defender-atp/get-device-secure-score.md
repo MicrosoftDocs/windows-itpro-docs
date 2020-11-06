@@ -23,7 +23,7 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint(https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Retrieves your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. 
 
@@ -81,6 +81,6 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## See also
 
 - [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
