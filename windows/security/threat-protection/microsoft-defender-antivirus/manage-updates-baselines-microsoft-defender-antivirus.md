@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 11/02/2020
+ms.date: 11/06/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -77,11 +77,11 @@ All our updates contain
 
 
 <details>
-<summary> October-2020 (Platform: 4.18.2010.x | Engine: 1.1.17600.5)</summary>
+<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.7.0**  
 &ensp;Released: **October 29, 2020**  
-&ensp;Platform: **4.18.2010.x**  
+&ensp;Platform: **4.18.2010.7**  
 &ensp;Engine: **1.1.17600.5**  
 &ensp;Support phase: **Security and Critical Updates**
     
