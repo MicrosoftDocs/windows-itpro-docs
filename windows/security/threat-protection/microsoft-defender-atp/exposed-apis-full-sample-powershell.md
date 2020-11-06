@@ -1,7 +1,7 @@
 ---
 title: Advanced Hunting with PowerShell API Guide
 ms.reviewer: 
-description: Use these code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
+description: Use these code samples, querying several Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -26,11 +26,11 @@ ms.date: 09/24/2018
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-Full scenario using multiple APIs from Defender for Endpoint.
+Full scenario using multiple APIs from Microsoft Defender for Endpoint.
 
 In this section, we share PowerShell samples to 
 - Retrieve a token 
-- Use token to retrieve the latest alerts in Defender for Endpoint
+- Use token to retrieve the latest alerts in Microsoft Defender for Endpoint
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.
 
 **Prerequisite**: You first need to [create an app](apis-intro.md).
@@ -117,7 +117,7 @@ $response
 ```
 
 
-## Related topic
+## See also
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
