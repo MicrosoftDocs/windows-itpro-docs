@@ -163,7 +163,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting le
 
 If you enable this policy setting, the scripts selected in the drop-down list are allowed to run.  The "Allow only signed scripts" policy setting allows scripts to execute only if they are signed by a trusted publisher.
 
-The "Allow local scripts and remote signed scripts" policy setting allows any local scrips to run; scripts that originate from the Internet must be signed by a trusted publisher.  The "Allow all scripts" policy setting allows all scripts to run.
+The "Allow local scripts and remote signed scripts" policy setting allows any local scripts to run; scripts that originate from the Internet must be signed by a trusted publisher.  The "Allow all scripts" policy setting allows all scripts to run.
 
 If you disable this policy setting, no scripts are allowed to run.
 

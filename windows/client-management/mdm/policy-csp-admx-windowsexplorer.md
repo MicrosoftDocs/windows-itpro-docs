@@ -2204,7 +2204,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 ADMX Info:  
 -   GP English name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_IntranetLockdown*
--   GP path: *WWindows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
+-   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
 
 <!--/ADMXBacked-->
@@ -3407,7 +3407,7 @@ If you disable this setting or do not configure it, the "File name" field includ
 
 This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
-To see an example of the standard Open dialog box, start Wordpad and, on the File menu, click Open.
+To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
 
 > [!NOTE]
 > In Windows Vista, this policy  setting applies only to applications that are using the Windows XP common dialog box style. This policy setting does not apply to the new Windows Vista common dialog box style. It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
@@ -3965,7 +3965,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Removes the shortcut bar from the Open dialog box. This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
-To see an example of the standard Open dialog box, start Wordpad and, on the File menu, click Open.
+To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
 
 > [!NOTE]
 > In Windows Vista, this policy  setting applies only to applications that are using the Windows XP common dialog box style. This policy setting does not apply to the new Windows Vista common dialog box style. It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
@@ -4037,7 +4037,7 @@ Available in the latest Windows 10 Insider Preview Build. When a file or folder 
 
 If you enable this setting, files and folders that are deleted using File Explorer will not be placed in the Recycle Bin and will therefore be permanently deleted.
 
-If you disable or do not configure this setting, files and folders deleted using File Explorer will be placed in the Recyele Bin.
+If you disable or do not configure this setting, files and folders deleted using File Explorer will be placed in the Recycle Bin.
 
 <!--/Description-->
 > [!TIP]

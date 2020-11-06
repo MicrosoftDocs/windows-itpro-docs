@@ -628,7 +628,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the Remote Acccess Preferences item on the Advanced menu in Network Connections folder is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the Remote Access Preferences item on the Advanced menu in Network Connections folder is enabled.
 
 The Remote Access Preferences item lets users create and change connections before logon and configure automatic dialing and callback features.
 
