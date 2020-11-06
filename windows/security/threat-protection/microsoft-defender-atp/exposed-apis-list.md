@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Supported Microsoft Defender ATP APIs
+# Supported Microsoft Defender for Endpoint APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ## End Point URI and Versioning
 
@@ -66,4 +66,4 @@ Vulnerability | Run API calls such as list devices by vulnerability.
 Recommendation | Run API calls such as Get recommendation by Id.
 
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)
