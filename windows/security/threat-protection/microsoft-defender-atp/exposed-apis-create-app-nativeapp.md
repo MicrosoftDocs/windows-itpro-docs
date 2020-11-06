@@ -69,11 +69,11 @@ This page explains how to create an AAD application, get an access token to Micr
 
     - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-      ![Image of API access and API selection](images/add-permission.png)
+      ![add permission](images/add-permission.png)
 
     - Choose **Delegated permissions** > **Alert.Read** > select **Add permissions**
 
-      ![Image of API access and API selection](images/application-permissions-public-client.png)
+      ![application permissions](images/application-permissions-public-client.png)
 
     - **Important note**: Select the relevant permissions. Read alerts is only an example.
 
