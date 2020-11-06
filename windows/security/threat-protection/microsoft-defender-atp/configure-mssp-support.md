@@ -24,9 +24,9 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -44,7 +44,7 @@ The integration will allow MSSPs to take the following actions:
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 
-Before MSSPs can take these actions, the MSSP customer will need to grant access to their Microsoft Defender ATP tenant so that the MSSP can access the portal. 
+Before MSSPs can take these actions, the MSSP customer will need to grant access to their Defender for Endpoint tenant so that the MSSP can access the portal. 
  
 
 Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
@@ -54,7 +54,7 @@ In general, the following configuration steps need to be taken:
 
 
 - **Grant the MSSP access to Microsoft Defender Security Center** <br>
-This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Microsoft Defender ATP tenant.
+This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Defender for Endpoint tenant.
  
 
 - **Configure alert notifications sent to MSSPs** <br>
