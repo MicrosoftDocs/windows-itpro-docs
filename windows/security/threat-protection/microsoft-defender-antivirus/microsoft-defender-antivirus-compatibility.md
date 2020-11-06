@@ -32,7 +32,7 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 - If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
 - If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/edr-in-block-mode) enabled, then whenever a malicious artifact is detected, Microsoft Defender for Endpoint takes action to block and remediate the artifact.
 
-## Antivirus and Microsoft Defender ATP
+## Antivirus and Microsoft Defender for Endpoint
 
 The following table summarizes what happens with Microsoft Defender Antivirus when third-party antivirus products are used together or without Microsoft Defender for Endpoint.
 
@@ -77,25 +77,25 @@ The following table summarizes the functionality and features that are available
 |Automatic disabled mode  |No |Yes |No |No |No |
 
 - In Active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files are scanned and threats remediated, and detection information are reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the machine itself).
-- In Passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender ATP service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
+- In Passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are not remediated by Microsoft Defender Antivirus. Files are scanned and reports are provided for threat detections that are shared with the Microsoft Defender for Endpoint service. Therefore, you might encounter alerts in the Security Center console with Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in Passive mode.
 - When [EDR in block mode](../microsoft-defender-atp/edr-in-block-mode.md) is turned on, Microsoft Defender Antivirus is not used as the primary antivirus solution, but can still detect and remediate malicious items.
 - In Automatic disabled mode, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated.
 
 ## Keep the following points in mind
 
-If you are enrolled in Microsoft Defender ATP and you are using a third party antimalware product then passive mode is enabled because [the service requires common information sharing from the Microsoft Defender Antivirus service](../microsoft-defender-atp/defender-compatibility.md) in order to properly monitor your devices and network for intrusion attempts and attacks.
+If you are enrolled in Microsoft Defender for Endpoint and you are using a third-party antimalware product, then passive mode is enabled. [The service requires common information sharing from Microsoft Defender Antivirus service](../microsoft-defender-atp/defender-compatibility.md) in order to properly monitor your devices and network for intrusion attempts and attacks.
 
-When Microsoft Defender Antivirus is automatic disabled, it can automatically re-enable if the protection offered by a third-party antivirus product expires or otherwise stops providing real-time protection from viruses, malware or other threats. This is to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
+When Microsoft Defender Antivirus is automatically disabled, it can automatically re-enabled if the protection offered by a third-party antivirus product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. This is to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
 
 In passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
 
 If you uninstall the other product, and choose to use Microsoft Defender Antivirus to provide protection to your endpoints, Microsoft Defender Antivirus will automatically return to its normal active mode.
 
 > [!WARNING]
-> You should not attempt to disable, stop, or modify any of the associated services used by Microsoft Defender Antivirus, Microsoft Defender ATP, or the Windows Security app. This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks. It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+> You should not attempt to disable, stop, or modify any of the associated services used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks. It can also cause problems when using third-party antivirus apps and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 > [!IMPORTANT]
-> If you are using [Microsoft endpoint data loss prevention (Endpoint DLP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview), Microsoft Defender Antivirus real-time protection is enabled even when Microsoft Defender Antivirus is running in passive mode. Endpoint DLP depends on real-time protection to operate.
+> If you are using [Microsoft Endpoint DLP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview), Microsoft Defender Antivirus real-time protection is enabled even when Microsoft Defender Antivirus is running in passive mode. Endpoint DLP depends on real-time protection to operate.
 
 ## Related topics
 
