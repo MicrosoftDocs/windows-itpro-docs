@@ -1,5 +1,5 @@
 ---
-title: Fix unhealthy sensors in Microsoft Defender ATP
+title: Fix unhealthy sensors in Microsoft Defender for Endpoint
 description: Fix device sensors that are reporting as misconfigured or inactive so that the service receives data from the device.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
@@ -15,10 +15,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/23/2017
+ms.date: 11/06/2020
 ---
 
-# Fix unhealthy sensors in Microsoft Defender ATP
+# Fix unhealthy sensors in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -89,5 +89,5 @@ If your devices are running a third-party antimalware client, the Defender for E
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
-## Related topic
+## See also
 - [Check sensor health state in Microsoft Defender for Endpoint](check-sensor-status.md)
