@@ -3699,6 +3699,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-configurewindowsspotlightonlockscreen" id="experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
   </dd>
   <dd>
+    <a href="./policy-csp-experience.md#experience-disablecloudoptimizedcontent" id="experience-disablecloudoptimizedcontent">Experience/DisableCloudOptimizedContent</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
   </dd>
   <dd>
