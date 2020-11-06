@@ -23,7 +23,7 @@ ms.topic: article
 
 **Applies to:**
 
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
