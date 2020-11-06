@@ -21,16 +21,16 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
-Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud.
+Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
-<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+<br>See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
 ## Limitations
@@ -122,4 +122,4 @@ Content-type: application/json
 ```
 
 ## Related topics
-- [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+- [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
