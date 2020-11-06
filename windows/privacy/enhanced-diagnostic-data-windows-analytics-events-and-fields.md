@@ -30,7 +30,7 @@ ms.reviewer:
 
 Desktop Analytics reports are powered by diagnostic data not included in the Basic level.
 
-In Windows 10, version 1709, we introduced a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+In Windows 10, version 1709, we introduced a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to only the events described below. The Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 With the retirement of Windows Analytics, this policy will continue to be supported by Desktop Analytics, but will not include Office related diagnostic data.
 
@@ -48,7 +48,7 @@ The following fields are available:
 - **GhostCount_Sum:** Total number of instances where the application stopped responding
 - **HandleCountAtExit_Sum:** Total handle count for a process when it exits
 - **HangCount_Max:** Maximum number of hangs detected
-- **HangCount_Sum:** Total number of application hangs detected
+- **HangCount_Sum:** Total number of application hangs that are detected
 - **HardFaultCountAtExit_Sum:** Total number of hard page faults detected for a process when it exits
 - **HeartbeatCount:** Heartbeats logged for this summary
 - **HeartbeatSuspendedCount:** Heartbeats logged for this summary where the process was suspended
@@ -68,7 +68,7 @@ The following fields are available:
 - **WriteSizeInKBAtExit_Sum:** Total size of IO writes for a process when it exited          
 
 ## Microsoft.Office.TelemetryEngine.IsPreLaunch
-Applicable for Office UWP applications. This event is fired when an office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a particular session is launch session or not.
+Applicable for Office UWP applications. This event is fired when an Office application is initiated for the first-time post upgrade/install from the store. It's part of basic diagnostic data. It's used to track whether a particular session is a launch session or not.
 
 - **appVersionBuild:** Third part of the version *.*.XXXXX.*
 - **appVersionMajor:** First part of the version X.*.*.*
@@ -77,10 +77,10 @@ Applicable for Office UWP applications. This event is fired when an office appli
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.SessionIdProvider.OfficeProcessSessionStart
-This event sends basic information upon the start of a new Office session. This is used to count the number of unique sessions seen on a given device. This is used as a heartbeat event to ensure that the application is running on a device or not. In addition, it serves as a critical signal for overall application reliability.
+This event sends basic information upon the start of a new Office session. It's used to count the number of unique sessions seen on a given device. The event is used as a heartbeat event to ensure that the application is running on a device. In addition, it serves as a critical signal for overall application reliability.
 
-- **AppSessionGuid:** ID of the session which maps to the process of the application
-- **processSessionId:** ID of the session which maps to the process of the application
+- **AppSessionGuid:** ID of the session that maps to the process of the application
+- **processSessionId:** ID of the session that maps to the process of the application
 
 ## Microsoft.Office.TelemetryEngine.SessionHandOff
 Applicable to Win32 Office applications. This event helps us understand whether there was a new session created to handle a user-initiated file open event. It is a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
@@ -89,7 +89,7 @@ Applicable to Win32 Office applications. This event helps us understand whether 
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **childSessionID:** Id of the session that was created to handle the user initiated file open
+- **childSessionID:** ID of the session that was created to handle the user initiated file open
 - **parentSessionId:** ID of the session that was already running
 
 ## Microsoft.Office.CorrelationMetadata.UTCCorrelationMetadata
@@ -102,15 +102,15 @@ Collects Office metadata through UTC to compare with equivalent data collected t
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRevision:** Fourth part of the version *.*.*.XXXXX
-- **audienceGroup:** Is this part of the insiders or production
+- **audienceGroup:** Is this group part of the insiders or production?
 - **audienceId:** ID of the audience setting
 - **channel:** Are you part of Semi annual channel or Semi annual channel-Targeted?
-- **deviceClass:** Is this a desktop or a mobile?
+- **deviceClass:** Is this device a desktop device or a mobile device?
 - **impressionId:** What features were available to you in this session
 - **languageTag:** Language of the app
 - **officeUserID:** A unique identifier tied to the office installation on a particular device.
 - **osArchitecture:** Is the machine 32 bit or 64 bit?
-- **osEnvironment:** Is this a win32 app or a UWP app?
+- **osEnvironment:** Is this app a win32 app or a UWP app?
 - **osVersionString:** Version of the OS
 - **sessionID:** ID of the session
 
@@ -131,7 +131,7 @@ This event is fired when the telemetry engine within an office application is re
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.FirstProcessed
@@ -141,7 +141,7 @@ This event is fired when the telemetry engine within an office application has p
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.FirstRuleRequest
@@ -151,7 +151,7 @@ This event is fired when the telemetry engine within an office application has r
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.Init
@@ -161,18 +161,18 @@ This event is fired when the telemetry engine within an office application has b
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.Resume
-This event is fired when the application resumes from sleep state. Used for understanding whether there are issues in the application life-cycle.
+This event is fired when the application resumes from sleep state. Used for understanding whether there are issues in the application life cycle.
 
 - **appVersionBuild:** Third part of the version *.*.XXXXX.*
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
 - **maxSequenceIdSeen:** How many events from this session have seen so far?
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
 - **SessionID:** ID of the session
 
@@ -183,7 +183,7 @@ This event is fired when the telemetry engine within an office application fails
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.RuleRequestFailedDueToClientOffline
@@ -193,7 +193,7 @@ This event is fired when the telemetry engine within an office application fails
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.ShutdownComplete
@@ -204,7 +204,7 @@ This event is fired when the telemetry engine within an office application has p
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
 - **maxSequenceIdSeen:** How many events from this session have seen so far?
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
 - **SessionID:** ID of the session
 
@@ -215,7 +215,7 @@ This event is fired when the telemetry engine within an office application been 
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
 - **SessionID:** ID of the session
 
@@ -227,26 +227,26 @@ This event is fired when the telemetry engine within an office application has p
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
 - **maxSequenceIdSeen:** How many events from this session have seen so far?
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
 - **SessionID:** ID of the session
 - **SuspendType:** Type of suspend
 
 ## Microsoft.Office.TelemetryEngine.SuspendStart
-This event is fired when the office application suspends as per app life-cycle change. Used for understanding whether there are issues in the application life-cycle.
+This event is fired when the office application suspends as per app life-cycle change. Used for understanding whether there are issues in the application life cycle.
 
 - **appVersionBuild:** Third part of the version *.*.XXXXX.*
 - **appVersionMajor:** First part of the version X.*.*.*
 - **appVersionMinor:** Second part of the version *.X.*.*
 - **appVersionRev:** Fourth part of the version *.*.*.XXXXX
 - **maxSequenceIdSeen:** How many events from this session have seen so far?
-- **officeUserID:** This is an ID of the installation tied to the device. It does not map to a particular user
+- **officeUserID:** ID of the installation tied to the device. It does not map to a particular user
 - **rulesSubmittedBeforeResume:** How many events were submitted before the process was resumed?
 - **SessionID:** ID of the session
 - **SuspendType:** Type of suspend
 
 ## Microsoft.OSG.OSS.CredProvFramework.ReportResultStop
-This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve logon reliability. Using this event with Desktop Analytics can help organizations monitor and improve logon success for different methods (for example, biometric) on managed devices.
+This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve sign-in reliability. Using this event with Desktop Analytics can help organizations monitor and improve sign-in success for different methods (for example, biometric) on managed devices.
 
 The following fields are available:
 
@@ -262,11 +262,11 @@ The following fields are available:
 - **ReturnCode:** Output of the ReportResult function
 - **SessionId:** Session identifier
 - **Sign-in error status:** The sign-in error status
-- **SubStatus:** Sign-in error sub-status
+- **SubStatus:** Sign-in error substatus
 - **UserTag:** Count of the number of times a user has selected a provider
 
 ## Microsoft.Windows.Kernel.Power.OSStateChange
-This event denotes the transition between operating system states (e.g., On, Off, Sleep, etc.). By using this event with Desktop Analytics, organizations can use this to monitor reliability and performance of managed devices
+This event denotes the transition between operating system states (On, Off, Sleep, etc.). By using this event with Desktop Analytics, organizations can monitor reliability and performance of managed devices.
 
 The following fields are available:
 
@@ -281,10 +281,10 @@ The following fields are available:
 - **EnergyChangeV2Flags:** Flags for disambiguating EnergyChangeV2 context
 - **EventSequence:** A sequential number used to evaluate the completeness of the data
 - **LastStateTransition:** ID of the last operating system state transition
-- **LastStateTransitionSub:** ID of the last operating system sub-state transition
+- **LastStateTransitionSub:** ID of the last operating system substate transition
 - **StateDurationMS:** Number of milliseconds spent in the last operating system state
 - **StateTransition:** ID of the operating system state the system is transitioning to
-- **StateTransitionSub:** ID of the operating system sub-state the system is transitioning to
+- **StateTransitionSub:** ID of the operating system substate the system is transitioning to
 - **TotalDurationMS:** Total time (in milliseconds) spent in all states since the last boot
 - **TotalUptimeMS:** Total time (in milliseconds) the device was in Up or Running states since the last boot
 - **TransitionsToOn:** Number of transitions to the Powered On state since the last boot
@@ -305,7 +305,7 @@ Sends details about any error codes detected during a failed sign-in.
 The following fields are available:
 
 - **ntsStatus:** The NTSTATUS error code status returned from an attempted sign-in
-- **ntsSubstatus:** The NTSTATUS error code sub-status returned from an attempted sign-in 
+- **ntsSubstatus:** The NTSTATUS error code substatus returned from an attempted sign-in 
 
 ## Microsoft.Windows.Security.Biometrics.Service.BioServiceActivityCapture
 Indicates that a biometric capture was compared to known templates
@@ -327,7 +327,7 @@ The following field is available:
 - **ticksSinceBoot:** Duration of boot event (milliseconds)
 
 ## Microsoft.Windows.Shell.Desktop.LogonFramework.AllLogonTasks
-This event summarizes the logon procedure to help Microsoft improve performance and reliability. By using this event with Desktop Analytics organizations can help identify logon problems on managed devices.
+This event summarizes the logon procedure to help Microsoft improve performance and reliability. By using this event with Desktop Analytics, organizations can help identify logon problems on managed devices.
 
 The following fields are available:
 
@@ -341,7 +341,7 @@ The following fields are available:
 - **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.
 
 ## Microsoft.Windows.Shell.Desktop.LogonFramework.LogonTask
-This event describes system tasks which are part of the user logon sequence and helps Microsoft to improve reliability.
+This event describes system tasks that are part of the user logon sequence and helps Microsoft to improve reliability.
 
 The following fields are available:
 
@@ -359,7 +359,7 @@ For a device subject to Windows Information Protection policy, learning events a
 The following fields are available:
 
 - **actiontype:** Indicates what type of resource access the app was attempting (for example, opening a local document vs. a network resource) when it encountered a policy boundary. Useful for Windows Information Protection administrators to tune policy rules.
-- **appIdType:** Based on the type of application, this indicates what type of app rule a Windows Information Protection administrator would need to create for this app.
+- **appIdType:** Based on the type of application, this field indicates what type of app rule a Windows Information Protection administrator would need to create for this app.
 - **appname:** App that triggered the event
 - **status:** Indicates whether errors occurred during WIP learning events
 
@@ -397,11 +397,11 @@ The following fields are available:
 - **MonitorWidth:** Number of horizontal pixels in the application host monitor resolution
 - **MouseInputSec:** Total number of seconds during which there was mouse input
 - **NewProcessCount:** Number of new processes contributing to the aggregate
-- **PartATransform_AppSessionGuidToUserSid:** Flag which influences how other parts of the event are constructed
+- **PartATransform_AppSessionGuidToUserSid:** Flag that influences how other parts of the event are constructed
 - **PenInputSec:** Total number of seconds during which there was pen input
 - **SpeechRecognitionSec:** Total number of seconds of speech recognition
 - **SummaryRound:** Incrementing number indicating the round (batch) being summarized
-- **TargetAsId:** Flag which influences how other parts of the event are constructed
+- **TargetAsId:** Flag that influences how other parts of the event are constructed
 - **TotalUserOrDisplayActiveDurationMS:** Total time the user or the display was active (in milliseconds)
 - **TouchInputSec:** Total number of seconds during which there was touch input
 - **UserActiveDurationMS:** Total time that the user was active including all input methods
@@ -415,7 +415,7 @@ The following fields are available:
 ## Revisions
 
 ### PartA_UserSid removed
-A previous revision of this list stated that a field named PartA_UserSid was a member of the event Microsoft.Windows.LogonController.LogonAndUnlockSubmit. This was incorrect. The list has been updated to reflect that no such field is present in the event.
+A previous revision of this list stated that a field named PartA_UserSid was a member of the event Microsoft.Windows.LogonController.LogonAndUnlockSubmit. This statement was incorrect. The list has been updated to reflect that no such field is present in the event.
 
 ### Office events added
 In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 16 events were added, describing Office app launch and availability. These events were added to improve the precision of Office data in Windows Analytics.
