@@ -292,6 +292,28 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_CipherSuiteOrder policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-ciphersuiteorder.md#admx-ciphersuiteorder-sslciphersuiteorder" id="admx-ciphersuiteorder-sslciphersuiteorder">ADMX_CipherSuiteOrder/SSLCipherSuiteOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-ciphersuiteorder.md#admx-ciphersuiteorder-sslcurveorder" id="admx-ciphersuiteorder-sslcurveorder">ADMX_CipherSuiteOrder/SSLCurveOrder</a>
+  </dd>
+</dl>
+
+### ADMX_COM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-com.md#admx-com-appmgmt-com-searchforclsid-1" id="admx-com-appmgmt-com-searchforclsid-1">ADMX_COM/AppMgmt_COM_SearchForCLSID_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-com.md#admx-com-appmgmt-com-searchforclsid-2" id="admx-com-appmgmt-com-searchforclsid-2">ADMX_COM/AppMgmt_COM_SearchForCLSID_2</a>
+  </dd>
+</dl>
+
 
 ### ADMX_Cpls policies
 
@@ -596,6 +618,323 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-mmc.md#admx-mmc-mmc-restrict-to-permitted-snapins" id="admx-mmc-mmc-restrict-to-permitted-snapins">ADMX_MMC/MMC_Restrict_To_Permitted_Snapins</a>
+  </dd>
+</dl>
+
+### ADMX_MMCSnapins policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-admcomputers-1" id="admx-mmcsnapins-mmc-admcomputers-1">ADMX_MMCSnapins/MMC_ADMComputers_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-admcomputers-2" id="admx-mmcsnapins-mmc-admcomputers-2">ADMX_MMCSnapins/MMC_ADMComputers_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-admusers-1" id="admx-mmcsnapins-mmc-admusers-1">ADMX_MMCSnapins/MMC_ADMUsers_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-admusers-2" id="admx-mmcsnapins-mmc-admusers-2">ADMX_MMCSnapins/MMC_ADMUsers_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-adsi" id="admx-mmcsnapins-mmc-adsi">ADMX_MMCSnapins/MMC_ADSI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-activedirdomtrusts" id="admx-mmcsnapins-mmc-activedirdomtrusts">ADMX_MMCSnapins/MMC_ActiveDirDomTrusts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-activedirsitesservices" id="admx-mmcsnapins-mmc-activedirsitesservices">ADMX_MMCSnapins/MMC_ActiveDirSitesServices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-activediruserscomp" id="admx-mmcsnapins-mmc-activediruserscomp">ADMX_MMCSnapins/MMC_ActiveDirUsersComp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-appletalkrouting" id="admx-mmcsnapins-mmc-appletalkrouting">ADMX_MMCSnapins/MMC_AppleTalkRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-authman" id="admx-mmcsnapins-mmc-authman">ADMX_MMCSnapins/MMC_AuthMan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-certauth" id="admx-mmcsnapins-mmc-certauth">ADMX_MMCSnapins/MMC_CertAuth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-certauthpolset" id="admx-mmcsnapins-mmc-certauthpolset">ADMX_MMCSnapins/MMC_CertAuthPolSet</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-certs" id="admx-mmcsnapins-mmc-certs">ADMX_MMCSnapins/MMC_Certs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-certstemplate" id="admx-mmcsnapins-mmc-certstemplate">ADMX_MMCSnapins/MMC_CertsTemplate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-componentservices" id="admx-mmcsnapins-mmc-componentservices">ADMX_MMCSnapins/MMC_ComponentServices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-computermanagement" id="admx-mmcsnapins-mmc-computermanagement">ADMX_MMCSnapins/MMC_ComputerManagement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-connectionsharingnat" id="admx-mmcsnapins-mmc-connectionsharingnat">ADMX_MMCSnapins/MMC_ConnectionSharingNAT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-dcomcfg" id="admx-mmcsnapins-mmc-dcomcfg">ADMX_MMCSnapins/MMC_DCOMCFG</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-dfs" id="admx-mmcsnapins-mmc-dfs">ADMX_MMCSnapins/MMC_DFS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-dhcprelaymgmt" id="admx-mmcsnapins-mmc-dhcprelaymgmt">ADMX_MMCSnapins/MMC_DHCPRelayMgmt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-devicemanager-1" id="admx-mmcsnapins-mmc-devicemanager-1">ADMX_MMCSnapins/MMC_DeviceManager_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-devicemanager-2" id="admx-mmcsnapins-mmc-devicemanager-2">ADMX_MMCSnapins/MMC_DeviceManager_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-diskdefrag" id="admx-mmcsnapins-mmc-diskdefrag">ADMX_MMCSnapins/MMC_DiskDefrag</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-diskmgmt" id="admx-mmcsnapins-mmc-diskmgmt">ADMX_MMCSnapins/MMC_DiskMgmt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-enterprisepki" id="admx-mmcsnapins-mmc-enterprisepki">ADMX_MMCSnapins/MMC_EnterprisePKI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-eventviewer-1" id="admx-mmcsnapins-mmc-eventviewer-1">ADMX_MMCSnapins/MMC_EventViewer_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-eventviewer-2" id="admx-mmcsnapins-mmc-eventviewer-2">ADMX_MMCSnapins/MMC_EventViewer_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-eventviewer-3" id="admx-mmcsnapins-mmc-eventviewer-3">ADMX_MMCSnapins/MMC_EventViewer_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-eventviewer-4" id="admx-mmcsnapins-mmc-eventviewer-4">ADMX_MMCSnapins/MMC_EventViewer_4</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-faxservice" id="admx-mmcsnapins-mmc-faxservice">ADMX_MMCSnapins/MMC_FAXService</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-failoverclusters" id="admx-mmcsnapins-mmc-failoverclusters">ADMX_MMCSnapins/MMC_FailoverClusters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-folderredirection-1" id="admx-mmcsnapins-mmc-folderredirection-1">ADMX_MMCSnapins/MMC_FolderRedirection_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-folderredirection-2" id="admx-mmcsnapins-mmc-folderredirection-2">ADMX_MMCSnapins/MMC_FolderRedirection_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-frontpageext" id="admx-mmcsnapins-mmc-frontpageext">ADMX_MMCSnapins/MMC_FrontPageExt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-grouppolicymanagementsnapin" id="admx-mmcsnapins-mmc-grouppolicymanagementsnapin">ADMX_MMCSnapins/MMC_GroupPolicyManagementSnapIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-grouppolicysnapin" id="admx-mmcsnapins-mmc-grouppolicysnapin">ADMX_MMCSnapins/MMC_GroupPolicySnapIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-grouppolicytab" id="admx-mmcsnapins-mmc-grouppolicytab">ADMX_MMCSnapins/MMC_GroupPolicyTab</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-hra" id="admx-mmcsnapins-mmc-hra">ADMX_MMCSnapins/MMC_HRA</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ias" id="admx-mmcsnapins-mmc-ias">ADMX_MMCSnapins/MMC_IAS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-iaslogging" id="admx-mmcsnapins-mmc-iaslogging">ADMX_MMCSnapins/MMC_IASLogging</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-iemaintenance-1" id="admx-mmcsnapins-mmc-iemaintenance-1">ADMX_MMCSnapins/MMC_IEMaintenance_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-iemaintenance-2" id="admx-mmcsnapins-mmc-iemaintenance-2">ADMX_MMCSnapins/MMC_IEMaintenance_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-igmprouting" id="admx-mmcsnapins-mmc-igmprouting">ADMX_MMCSnapins/MMC_IGMPRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-iis" id="admx-mmcsnapins-mmc-iis">ADMX_MMCSnapins/MMC_IIS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-iprouting" id="admx-mmcsnapins-mmc-iprouting">ADMX_MMCSnapins/MMC_IPRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipsecmanage-gp" id="admx-mmcsnapins-mmc-ipsecmanage-gp">ADMX_MMCSnapins/MMC_IPSecManage_GP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipxriprouting" id="admx-mmcsnapins-mmc-ipxriprouting">ADMX_MMCSnapins/MMC_IPXRIPRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipxrouting" id="admx-mmcsnapins-mmc-ipxrouting">ADMX_MMCSnapins/MMC_IPXRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipxsaprouting" id="admx-mmcsnapins-mmc-ipxsaprouting">ADMX_MMCSnapins/MMC_IPXSAPRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-indexingservice" id="admx-mmcsnapins-mmc-indexingservice">ADMX_MMCSnapins/MMC_IndexingService</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipsecmanage" id="admx-mmcsnapins-mmc-ipsecmanage">ADMX_MMCSnapins/MMC_IpSecManage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ipsecmonitor" id="admx-mmcsnapins-mmc-ipsecmonitor">ADMX_MMCSnapins/MMC_IpSecMonitor</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-localusersgroups" id="admx-mmcsnapins-mmc-localusersgroups">ADMX_MMCSnapins/MMC_LocalUsersGroups</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-logicalmappeddrives" id="admx-mmcsnapins-mmc-logicalmappeddrives">ADMX_MMCSnapins/MMC_LogicalMappedDrives</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-npsui" id="admx-mmcsnapins-mmc-npsui">ADMX_MMCSnapins/MMC_NPSUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-napsnap" id="admx-mmcsnapins-mmc-napsnap">ADMX_MMCSnapins/MMC_NapSnap</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-napsnap-gp" id="admx-mmcsnapins-mmc-napsnap-gp">ADMX_MMCSnapins/MMC_NapSnap_GP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-net-framework" id="admx-mmcsnapins-mmc-net-framework">ADMX_MMCSnapins/MMC_Net_Framework</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ocsp" id="admx-mmcsnapins-mmc-ocsp">ADMX_MMCSnapins/MMC_OCSP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ospfrouting" id="admx-mmcsnapins-mmc-ospfrouting">ADMX_MMCSnapins/MMC_OSPFRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-perflogsalerts" id="admx-mmcsnapins-mmc-perflogsalerts">ADMX_MMCSnapins/MMC_PerfLogsAlerts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-publickey" id="admx-mmcsnapins-mmc-publickey">ADMX_MMCSnapins/MMC_PublicKey</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-qosadmission" id="admx-mmcsnapins-mmc-qosadmission">ADMX_MMCSnapins/MMC_QoSAdmission</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ras-dialinuser" id="admx-mmcsnapins-mmc-ras-dialinuser">ADMX_MMCSnapins/MMC_RAS_DialinUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-riprouting" id="admx-mmcsnapins-mmc-riprouting">ADMX_MMCSnapins/MMC_RIPRouting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-ris" id="admx-mmcsnapins-mmc-ris">ADMX_MMCSnapins/MMC_RIS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-rra" id="admx-mmcsnapins-mmc-rra">ADMX_MMCSnapins/MMC_RRA</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-rsm" id="admx-mmcsnapins-mmc-rsm">ADMX_MMCSnapins/MMC_RSM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-remstore" id="admx-mmcsnapins-mmc-remstore">ADMX_MMCSnapins/MMC_RemStore</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-remoteaccess" id="admx-mmcsnapins-mmc-remoteaccess">ADMX_MMCSnapins/MMC_RemoteAccess</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-remotedesktop" id="admx-mmcsnapins-mmc-remotedesktop">ADMX_MMCSnapins/MMC_RemoteDesktop</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-resultantsetofpolicysnapin" id="admx-mmcsnapins-mmc-resultantsetofpolicysnapin">ADMX_MMCSnapins/MMC_ResultantSetOfPolicySnapIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-routing" id="admx-mmcsnapins-mmc-routing">ADMX_MMCSnapins/MMC_Routing</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sca" id="admx-mmcsnapins-mmc-sca">ADMX_MMCSnapins/MMC_SCA</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-smtpprotocol" id="admx-mmcsnapins-mmc-smtpprotocol">ADMX_MMCSnapins/MMC_SMTPProtocol</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-snmp" id="admx-mmcsnapins-mmc-snmp">ADMX_MMCSnapins/MMC_SNMP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-scriptsmachine-1" id="admx-mmcsnapins-mmc-scriptsmachine-1">ADMX_MMCSnapins/MMC_ScriptsMachine_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-scriptsmachine-2" id="admx-mmcsnapins-mmc-scriptsmachine-2">ADMX_MMCSnapins/MMC_ScriptsMachine_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-scriptsuser-1" id="admx-mmcsnapins-mmc-scriptsuser-1">ADMX_MMCSnapins/MMC_ScriptsUser_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-scriptsuser-2" id="admx-mmcsnapins-mmc-scriptsuser-2">ADMX_MMCSnapins/MMC_ScriptsUser_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-securitysettings-1" id="admx-mmcsnapins-mmc-securitysettings-1">ADMX_MMCSnapins/MMC_SecuritySettings_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-securitysettings-2" id="admx-mmcsnapins-mmc-securitysettings-2">ADMX_MMCSnapins/MMC_SecuritySettings_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-securitytemplates" id="admx-mmcsnapins-mmc-securitytemplates">ADMX_MMCSnapins/MMC_SecurityTemplates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sendconsolemessage" id="">ADMX_MMCSnapins/MMC_SendConsoleMessage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-servermanager" id="admx-mmcsnapins-mmc-servermanager">ADMX_MMCSnapins/MMC_ServerManager</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-servicedependencies" id="admx-mmcsnapins-mmc-servicedependencies">ADMX_MMCSnapins/MMC_ServiceDependencies</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-services" id="admx-mmcsnapins-mmc-services">ADMX_MMCSnapins/MMC_Services</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sharedfolders" id="admx-mmcsnapins-mmc-sharedfolders">ADMX_MMCSnapins/MMC_SharedFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sharedfolders-ext" id="admx-mmcsnapins-mmc-sharedfolders-ext">ADMX_MMCSnapins/MMC_SharedFolders_Ext</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-softwareinstalationcomputers-1" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-1">ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-softwareinstalationcomputers-2" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-2">ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-softwareinstallationusers-1" id="admx-mmcsnapins-mmc-softwareinstallationusers-1">ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-softwareinstallationusers-2" id="admx-mmcsnapins-mmc-softwareinstallationusers-2">ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sysinfo" id="admx-mmcsnapins-mmc-sysinfo">ADMX_MMCSnapins/MMC_SysInfo</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-sysprop" id="admx-mmcsnapins-mmc-sysprop">ADMX_MMCSnapins/MMC_SysProp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-tpmmanagement" id="admx-mmcsnapins-mmc-tpmmanagement">ADMX_MMCSnapins/MMC_TPMManagement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-telephony" id="admx-mmcsnapins-mmc-telephony">ADMX_MMCSnapins/MMC_Telephony</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-terminalservices" id="admx-mmcsnapins-mmc-terminalservices">ADMX_MMCSnapins/MMC_TerminalServices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wmi" id="admx-mmcsnapins-mmc-wmi">ADMX_MMCSnapins/MMC_WMI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-windowsfirewall" id="admx-mmcsnapins-mmc-windowsfirewall">ADMX_MMCSnapins/MMC_WindowsFirewall</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-windowsfirewall-gp" id="admx-mmcsnapins-mmc-windowsfirewall-gp">ADMX_MMCSnapins/MMC_WindowsFirewall_GP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirednetworkpolicy" id="admx-mmcsnapins-mmc-wirednetworkpolicy">ADMX_MMCSnapins/MMC_WiredNetworkPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirelessmon" id="admx-mmcsnapins-mmc-wirelessmon">ADMX_MMCSnapins/MMC_WirelessMon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirelessnetworkpolicy" id="admx-mmcsnapins-mmc-wirelessnetworkpolicy">ADMX_MMCSnapins/MMC_WirelessNetworkPolicy</a>
   </dd>
 </dl>
 
