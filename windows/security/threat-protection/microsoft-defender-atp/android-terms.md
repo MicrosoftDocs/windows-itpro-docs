@@ -19,15 +19,15 @@ ms.topic: conceptual
 hideEdit: true
 ---
 
-# Microsoft Defender ATP for Android application license terms
+# Microsoft Defender for Endpoint for Android application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)
+- [Microsoft Defender for Endpoint](microsoft-defender-atp-android.md)
 
-## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER ATP
+## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or
 based on where you live, one of its affiliates) and you. Please read them. They
@@ -54,7 +54,7 @@ DO NOT USE THE APPLICATION.**
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on Android enabled device or devices that you own
         or control. You may use this application with your company's valid
-        subscription of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) or
+        subscription of Microsoft Defender for Endpoint or
         an online service that includes MDATP functionalities.
 
     2.  **Updates.** Updates or upgrades to MDATP may be required for full
@@ -139,6 +139,7 @@ DO NOT USE THE APPLICATION.**
     export laws and regulations that apply to the application. These laws
     include restrictions on destinations, end users, and end use. For more
     information,
+
     see [www.microsoft.com/exporting](https://www.microsoft.com/exporting).
 
 7.  **SUPPORT SERVICES.** Because this application is "as is," we may not
