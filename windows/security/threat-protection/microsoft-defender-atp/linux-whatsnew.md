@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# What's new in Microsoft Defender Advanced Threat Protection for Linux
+# What's new in Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
