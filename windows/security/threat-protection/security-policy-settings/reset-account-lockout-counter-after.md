@@ -28,7 +28,7 @@ Describes the best practices, location, values, and security considerations for 
 
 The **Reset account lockout counter after** policy setting determines the number of minutes that must elapse from the time a user fails to log on before the failed logon attempt counter is reset to 0. If [Account lockout threshold](account-lockout-threshold.md) is set to a number greater than zero, this reset time must be less than or equal to the value of [Account lockout duration](account-lockout-duration.md).
 
-A disadvantage to a high setting is that users lock themselves out for an inconveniently long period if they exceed the account lockout threshold through logon errors. Users may make excessive Help Desk calls.
+The disadvantage of a high setting is that users lock themselves out for an inconveniently long period if they exceed the account lockout threshold through logon errors. Users may make excessive Help Desk calls.
 
 ### Possible values
 

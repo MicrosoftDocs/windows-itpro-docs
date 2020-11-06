@@ -38,7 +38,7 @@ The following table lists and explains the allowed encryption types.
 | DES_CBC_CRC | Data Encryption Standard with Cipher Block Chaining using the Cyclic Redundancy Check function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10, Windows Server 2008 R2, and later operating systems don't support DES by default. |
 | DES_CBC_MD5| Data Encryption Standard with Cipher Block Chaining using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10, Windows Server 2008 R2, and later operating systems do not support DES by default. |
 | RC4_HMAC_MD5| Rivest Cipher 4 with Hashed Message Authentication Code using the Message-Digest algorithm 5 checksum function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012 and Windows Server 2012 R2.|
-| AES128_HMAC_SHA1| Advanced Encryption Standard in 128-bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, , Windows Server 2012 R2. |
+| AES128_HMAC_SHA1| Advanced Encryption Standard in 128-bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2. |
 | AES256_HMAC_SHA1| Advanced Encryption Standard in 256-bit cipher block with Hashed Message Authentication Code using the Secure Hash Algorithm (1).<br/>Not supported in Windows 2000 Server, Windows XP, or Windows Server 2003. Supported in Windows Vista, Windows Server 2008, Windows 7, Windows 10, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2. |
 | Future encryption types| Reserved by Microsoft for additional encryption types that might be implemented.|
 
@@ -81,7 +81,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Windows Server 2008 R2, Windows 7, and Windows 10, do not support the DES cryptographic suites because stronger ones are available. To enable Kerberos interoperability with non-Windows versions of the Kerberos protocol, these suites can be enabled. However, doing so might open attack vectors on computers running
+Windows Server 2008 R2, Windows 7, and Windows 10, don't support the DES cryptographic suites because stronger ones are available. To enable Kerberos interoperability with non-Windows versions of the Kerberos protocol, these suites can be enabled. However, doing so might open attack vectors on computers running
 Windows Server 2008 R2, Windows 7 and Windows 10. You can also disable DES for your computers running Windows Vista and Windows Server 2008.
 
 ### Countermeasure
