@@ -1,6 +1,6 @@
 ---
 title: Get alert information by ID API
-description: Learn how to use the Get alert information by ID API to retrieve a specific alert by its ID in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Get alert information by ID API to retrieve a specific alert by its ID in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
