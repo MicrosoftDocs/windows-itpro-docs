@@ -26,7 +26,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-Windows designates a section of the hard drive as virtual memory known as the page file, or more specifically, as pagefile.sys. It is used to supplement the computer’s Random Access Memory (RAM) to improve performance for programs and data that are used frequently. Although the file is hidden from browsing, you can manage it using the system settings.
+Windows designates a section of the hard drive as virtual memory known as the page file, or more specifically, as pagefile.sys. It is used to supplement the computer’s Random Access Memory (RAM) to improve performance for frequently used programs and data. Although the file is hidden from browsing, you can manage it using the system settings.
 
 This policy setting determines which users can create and change the size of a page file. It determines whether users can specify a page file size for a particular drive in the **Performance Options** box located on the **Advanced** tab of the **System Properties** dialog box or through using internal application interfaces (APIs).
 
