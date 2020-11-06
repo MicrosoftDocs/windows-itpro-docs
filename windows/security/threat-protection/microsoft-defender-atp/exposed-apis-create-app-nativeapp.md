@@ -32,18 +32,18 @@ If you need programmatic access Microsoft Defender for Endpoint without a user, 
 
 If you are not sure which access you need, read the [Introduction page](apis-intro.md).
 
-Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 
-This page explains how to create an AAD application, get an access token to Defender for Endpoint and validate the token.
+This page explains how to create an AAD application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
 >[!NOTE]
-> When accessing Defender for Endpoint API on behalf of a user, you will need the correct Application permission and user permission.
-> If you are not familiar with user permissions on Defender for Endpoint, see [Manage portal access using role-based access control](rbac.md).
+> When accessing Microsoft Defender for Endpoint API on behalf of a user, you will need the correct Application permission and user permission.
+> If you are not familiar with user permissions on Microsoft Defender for Endpoint, see [Manage portal access using role-based access control](rbac.md).
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
@@ -63,11 +63,11 @@ This page explains how to create an AAD application, get an access token to Defe
    - **Name:** -Your application name-
    - **Application type:** Public client
 
-4. Allow your Application to access Defender for Endpoint and assign it 'Read alerts' permission:
+4. Allow your Application to access Microsoft Defender for Endpoint and assign it 'Read alerts' permission:
 
     - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
-    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+    - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
       ![Image of API access and API selection](images/add-permission.png)
 
@@ -98,7 +98,7 @@ This page explains how to create an AAD application, get an access token to Defe
 
 ## Get an access token
 
-For more information on AAD token, see [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on AAD tokens, see [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 
@@ -172,6 +172,6 @@ Verify to make sure you got a correct token:
     // Do something useful with the response
     ```
 
-## Related topics
+## See also
 - [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
-- [Access Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
+- [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
