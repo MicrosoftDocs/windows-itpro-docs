@@ -55,7 +55,7 @@ By default, this right is granted to the Administrators, Backup Operators, and S
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-| Server type or GPO | Default value |
+| Server type or Group Policy Object (GPO) | Default value |
 | - | - |
 |Default Domain Policy | |  
 | Default Domain Controller Policy| Administrators<br/>Backup Operators<br/>Server Operators| 
@@ -74,7 +74,7 @@ Any change to the user rights assignment for an account becomes effective the ne
 
 ### Group Policy
 
-Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
+Settings are applied in the following order through a Group Policy Object, which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
 2.  Site policy settings
@@ -99,7 +99,7 @@ Ensure that only the local Administrators group is assigned the **Restore files 
 
 ### Potential impact
 
-If you remove the **Restore files and directories** user right from the Backup Operators group and other accounts, users who are not members of the local Administrators group cannot load data backups. If restoring backups is delegated to a subset of IT staff in your organization, you should verify that this change does not negatively affect the ability of your organization's personnel to do their jobs.
+If you remove the **Restore files and directories** user right from the Backup Operators group and other accounts, users who aren't members of the local Administrators group can't load data backups. If restoring backups is delegated to a subset of IT staff in your organization, you should verify that this change does not negatively affect the ability of your organization's personnel to do their jobs.
 
 ## Related topics
 
