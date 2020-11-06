@@ -26,7 +26,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-This security setting determines which users are allowed to shut down a device from a remote location on the network. This allows members of the Administrators group or specific users to manage computers (for tasks such as a restart) from a remote location.
+This security setting determines which users are allowed to shut down a device from a remote location on the network. This setting allows members of the Administrators group or specific users to manage computers (for tasks such as a restart) from a remote location.
 
 Constant: SeRemoteShutdownPrivilege
 
@@ -37,7 +37,7 @@ Constant: SeRemoteShutdownPrivilege
 
 ### Best practices
 
--   Explicitly restrict this user right to members of the Administrators group or other specifically assigned roles that require this capability, such as non-administrative operations staff.
+-   Explicitly restrict this user right to members of the Administrators group or other assigned roles that require this capability, such as non-administrative operations staff.
 
 ### Location
 
@@ -91,11 +91,11 @@ Any user who can shut down a device could cause a denial-of-service condition to
 
 ### Countermeasure
 
-Restrict the **Force shutdown from a remote system** user right to members of the Administrators group or other specifically assigned roles that require this capability, such as non-administrative operations staff.
+Restrict the **Force shutdown from a remote system** user right to members of the Administrators group or other assigned roles that require this capability, such as non-administrative operations staff.
 
 ### Potential impact
 
-On a domain controller, if you remove the **Force shutdown from a remote system** user right from the Server Operator group, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should confirm that delegated activities are not adversely affected.
+On a domain controller, if you remove the **Force shutdown from a remote system** user right from the Server Operator group, you could limit the abilities of users who are assigned to specific administrative roles in your environment. Confirm that delegated activities are not adversely affected.
 
 ## Related topics
 
