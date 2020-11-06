@@ -13,6 +13,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10

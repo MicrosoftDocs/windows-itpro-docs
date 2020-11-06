@@ -20,15 +20,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshooting issues on Microsoft Defender ATP for Android
+# Troubleshooting issues on Microsoft Defender for Endpoint for Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
--   [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for
-    Android](microsoft-defender-atp-android.md)
+-   [Defender for Endpoint](microsoft-defender-atp-android.md)
 
 During onboarding, you might encounter sign in issues after the app is installed on your device. 
 
@@ -77,7 +76,7 @@ Contact your administrator for help.
 
 -   **Xiaomi**
 
-Phishing and harmful web connection threats detected by Microsoft Defender ATP
+Phishing and harmful web connection threats detected by Defender for Endpoint
 for Android are not blocked on some Xiaomi devices. The following functionality does not work on these devices.
 
 ![Image of site reported unsafe](images/0c04975c74746a5cdb085e1d9386e713.png)
@@ -85,7 +84,7 @@ for Android are not blocked on some Xiaomi devices. The following functionality 
 
 **Cause:**
 
-Xiaomi devices introduced a new permission that prevents Microsoft Defender ATP
+Xiaomi devices introduced a new permission that prevents Defender for Endpoint
 for Android app from displaying pop-up windows while running in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
