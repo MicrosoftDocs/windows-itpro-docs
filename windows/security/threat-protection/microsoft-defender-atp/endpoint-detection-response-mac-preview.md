@@ -1,6 +1,6 @@
 ---
-title: Enable Microsoft Defender ATP Insider Device
-description: Install and use Microsoft Defender ATP for Mac.
+title: Enable Microsoft Defender for Endpoint Insider Device
+description: Install and use Microsoft Defender for Endpoint (Mac).
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,11 +26,11 @@ ms.topic: conceptual
 To get preview features for Mac, you must set up your device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
 > [!IMPORTANT]
-> Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md), and [manual deployment](mac-install-manually.md) instructions.
+> Make sure you have enabled [Microsoft Defender for Endpoint (Mac)](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md), and [manual deployment](mac-install-manually.md) instructions.
 
 ## Enable the Insider program with Jamf
 
-1. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile `com.microsoft.wdav.plist` with the following content:
 
    ```XML
        <?xml version="1.0" encoding="UTF-8"?>
@@ -48,14 +48,14 @@ To get preview features for Mac, you must set up your device to be an "Insider" 
 
 1. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
 
-1. Create an entry with com.microsoft.wdav as the preference domain and upload the `.plist` created earlier.
+1. Create an entry with `com.microsoft.wdav` as the preference domain and upload the `.plist` created earlier.
 
    > [!WARNING]
    > You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
 
 ## Enable the Insider program with Intune
 
-1. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile `com.microsoft.wdav.plist` with the following content:
 
     ```XML
        <?xml version="1.0" encoding="utf-8"?>
@@ -118,9 +118,9 @@ To get preview features for Mac, you must set up your device to be an "Insider" 
 
 1. Save the `.plist` created earlier as com.microsoft.wdav.xml.
 
-1. Enter com.microsoft.wdav as the custom configuration profile name.
+1. Enter `com.microsoft.wdav` as the custom configuration profile name.
 
-1. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
+1. Open the configuration profile and upload `com.microsoft.wdav.xml`. This file was created in step 1.
 
 1. Select  **OK**.
 
@@ -147,7 +147,7 @@ For versions earlier than 100.78.0, run:
 
 ### Verify you are running the correct version
 
-To get the latest version of the Microsoft Defender for Endpoint  for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
+To get the latest version of the Microsoft Defender for Endpoint (Mac), set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
 To verify you are running the correct version, run `mdatp --health` on the device.
 
