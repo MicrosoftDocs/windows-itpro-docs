@@ -23,18 +23,18 @@ hideEdit: true
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for iOS](microsoft-defender-atp-ios.md)
+- [Microsoft Defender for Endpoint](microsoft-defender-atp-ios.md)
 
 >[!NOTE]
-> Microsoft Defender ATP for iOS uses a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device. Microsoft or your organization **does not see your browsing activity**.
+> Defender for Endpoint for iOS uses a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device. Microsoft or your organization **does not see your browsing activity**.
 
-Microsoft Defender ATP for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Microsoft Defender ATP.
+Defender for Endpoint for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint.
 
-Information is collected to help keep Microsoft Defender ATP for iOS secure, up-to-date, performing as expected and to support the service.
+Information is collected to help keep Defender for Endpoint for iOS secure, up-to-date, performing as expected and to support the service.
 
 ## Required data
 
-Required data consists of data that is necessary to make Microsoft Defender ATP for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. Here's a list of the types of data being collected:
+Required data consists of data that is necessary to make Defender for Endpoint for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. Here's a list of the types of data being collected:
 
 ### Web page / Network information
 
