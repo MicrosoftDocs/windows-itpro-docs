@@ -36,7 +36,7 @@ To work with these options, the typical method is to create a policy that only a
 For example, to create a WDAC policy allowing **addin1.dll** and **addin2.dll** to run in **ERP1.exe**, your organization's enterprise resource planning (ERP) application, run the following commands. Note that in the second command, **+=** is used to add a second rule to the **$rule** variable:
 
 ```powershell
-$rule = New-CIPolicyRule -DriverFilePath '..\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
+$rule = New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
 $rule += New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
 New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
 ```
