@@ -33,7 +33,7 @@ As of Windows 10, version 1703, you can use WDAC policies not only to control ap
 
 To work with these options, the typical method is to create a policy that only affects plug-ins, add-ins, and modules, then merge it into your 'master' policy (merging is described in the next section).
 
-For example, to create a WDAC policy that allows **addin1.dll** and **addin2.dll** to run in **ERP1.exe**, your organization's enterprise resource planning (ERP) application, run the following commands. Note that in the second command, **+=** is used to add a second rule to the **$rule** variable:
+For example, to create a WDAC policy allowing **addin1.dll** and **addin2.dll** to run in **ERP1.exe**, your organization's enterprise resource planning (ERP) application, run the following commands. Note that in the second command, **+=** is used to add a second rule to the **$rule** variable:
 
 ```powershell
 $rule = New-CIPolicyRule -DriverFilePath '..\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
