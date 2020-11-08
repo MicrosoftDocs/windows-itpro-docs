@@ -79,7 +79,7 @@ If you enable this policy setting, built-in system services hosted in svchost.ex
 This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, as well as a policy disallowing dynamically-generated code.  
 
 > [!IMPORTANT]
-> Enabling of this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
+> Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
 
 If you disable or do not configure this policy setting, the stricter security settings will not be applied.
 
@@ -125,4 +125,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
