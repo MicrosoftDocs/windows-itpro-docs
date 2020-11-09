@@ -32,27 +32,27 @@ This page will guide you through the steps you need to take to set up macOS poli
 
 You'll need to take the following steps:
 
-1. [Get the Microsoft Defender for Endpoint onboarding package](#step-1-get-the-microsoft-defender-atp-onboarding-package)
+1. [Get the Microsoft Defender for Endpoint onboarding package](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
 2. [Create a configuration profile in Jamf Pro using the onboarding package](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
-3. [Configure Microsoft Defender for Endpoint settings](#step-3-configure-microsoft-defender-atp-settings)
+3. [Configure Microsoft Defender for Endpoint settings](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
 4. [Configure Microsoft Defender for Endpoint notification settings](#step-4-configure-notifications-settings)
 
 5. [Configure Microsoft AutoUpdate (MAU)](#step-5-configure-microsoft-autoupdate-mau)
 
-6. [Grant full disk access to Microsoft Defender for Endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-atp)
+6. [Grant full disk access to Microsoft Defender for Endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
 
-7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-atp)
+7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
 
-8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-atp)
+8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
 
 9. [Configure Network Extension](#step-9-configure-network-extension)
 
 10. [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Deploy Microsoft Defender for Endpoint for macOS](#step-11-deploy-microsoft-defender-atp-for-macos)
+11. [Deploy Microsoft Defender for Endpoint for macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
 
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
