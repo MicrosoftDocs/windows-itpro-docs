@@ -65,6 +65,7 @@
 ##### [Remediate vulnerabilities](microsoft-defender-atp/tvm-remediation.md)
 ##### [Exceptions for security recommendations](microsoft-defender-atp/tvm-exception.md)
 ##### [Plan for end-of-support software](microsoft-defender-atp/tvm-end-of-support-software.md)
+##### [Mitigate zero-day vulnerabilities](microsoft-defender-atp/tvm-zero-day-vulnerabilities.md)
 #### [Understand vulnerabilities on your devices]()
 ##### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 ##### [Vulnerabilities in my organization](microsoft-defender-atp/tvm-weaknesses.md)
