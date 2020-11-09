@@ -23,11 +23,11 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
-Microsoft Defender Antivirus is the next-generation protection component of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). Next-generation protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Next-generation protection services include the following:
+Microsoft Defender Antivirus is the next-generation protection component of Microsoft Defender for Endpoint. Next-generation protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices in your enterprise organization. Next-generation protection services include the following:
 
 - [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-microsoft-defender-antivirus.md). This includes always-on scanning using file and process behavior monitoring and other heuristics (also known as "real-time protection"). It also includes detecting and blocking apps that are deemed unsafe, but may not be detected as malware.
 - [Cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). This includes near-instant detection and blocking of new and emerging threats.
@@ -35,7 +35,7 @@ Microsoft Defender Antivirus is the next-generation protection component of Micr
 
 ## Try a demo!
 
-Visit the [Microsoft Defender ATP demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
+Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
 - Cloud-delivered protection
 - Block at first sight (BAFS) protection
 - Potentially unwanted applications (PUA) protection

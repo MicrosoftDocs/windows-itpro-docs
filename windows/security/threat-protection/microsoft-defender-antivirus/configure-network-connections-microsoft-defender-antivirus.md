@@ -32,7 +32,7 @@ This article lists the connections that must be allowed, such as by using firewa
 See the blog post [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) for some details about network connectivity.
 
 >[!TIP]
->You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+>You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >
 >- Cloud-delivered protection
 >- Fast learning (including block at first sight)
@@ -49,7 +49,7 @@ See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defend
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. 
+Because your protection is a cloud service, computers must have access to the internet and reach the Microsoft Defender for Office 365 machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. 
 
 The table below lists the services and their associated URLs. Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
 
