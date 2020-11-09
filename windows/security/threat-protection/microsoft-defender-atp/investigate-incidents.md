@@ -19,13 +19,13 @@ ms.collection:
 ms.topic: article
 ---
 
-# Investigate incidents in Microsoft Defender ATP
+# Investigate incidents in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
@@ -68,14 +68,14 @@ Select **Investigations** to see all the automatic investigations launched by th
 ![Image of investigations tab in incident details page](images/atp-incident-investigations-tab.png)
 
 ## Going through the evidence
-Microsoft Defender Advanced Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, and more. 
+Microsoft Defender for Endpoint automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, and more. 
 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
 
 ![Image of evidence tab in incident details page](images/atp-incident-evidence-tab.png)
 
 ## Visualizing associated cybersecurity threats 
-Microsoft Defender Advanced Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
+Microsoft Defender for Endpoint aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
 ### Incident graph
 The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on which device. etc.
@@ -88,5 +88,5 @@ You can click the circles on the incident graph to view the details of the malic
 
 ## Related topics
 - [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
-- [Investigate incidents in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-incidents)
-- [Manage Microsoft Defender ATP incidents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-incidents)
+- [Investigate incidents in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-incidents)
+- [Manage Microsoft Defender for Endpoint incidents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-incidents)

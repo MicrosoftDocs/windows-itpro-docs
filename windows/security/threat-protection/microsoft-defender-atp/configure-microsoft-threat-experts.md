@@ -26,20 +26,20 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Before you begin 
 > [!NOTE]
 > Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service.
 
-Ensure that you have Microsoft Defender ATP deployed in your environment with devices enrolled, and not just on a laboratory set-up.
+Ensure that you have Defender for Endpoint deployed in your environment with devices enrolled, and not just on a laboratory set-up.
 
-Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
+Defender for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
 
 If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on-Demand subscription. 
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
-If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
+If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender for Endpoint portal. 
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts**.
 
@@ -59,7 +59,7 @@ If you're already a Microsoft Defender ATP customer, you can apply through the M
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
 You can receive targeted attack notification from Microsoft Threat Experts through the following medium:  
-- The Microsoft Defender ATP portal's **Alerts** dashboard  
+- The Defender for Endpoint portal's **Alerts** dashboard  
 - Your email, if you choose to configure it 
 
 To receive targeted attack notifications through email, create an email notification rule.
@@ -116,7 +116,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 **Alert information**
 - We see a new type of alert for a living-off-the-land binary: [AlertID]. Can you tell us something more about this alert and how we can investigate further?
 - We’ve observed two similar attacks, which try to execute malicious PowerShell scripts but generate different alerts. One is "Suspicious PowerShell command line" and the other is "A malicious file was detected based on indication provided by O365". What is the difference?
-- I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Microsoft Defender ATP see these attempts? What type of sign-ins are being monitored?
+- I receive an odd alert today for abnormal number of failed logins from a high profile user’s device. I cannot find any further evidence around these sign-in attempts. How can Defender for Endpoint see these attempts? What type of sign-ins are being monitored?
 - Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
 **Possible machine compromise**
@@ -125,7 +125,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 **Threat intelligence details**
 - We detected a phishing email that delivered a malicious Word document to a user. The malicious Word document caused a series of suspicious events, which triggered multiple Microsoft Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
-- I recently saw a [social media reference, for example, Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Microsoft Defender ATP provides against this threat actor? 
+- I recently saw a [social media reference, for example, Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Defender for Endpoint provides against this threat actor? 
 
 **Microsoft Threat Experts’ alert communications** 
 - Can your incident response team help us address the targeted attack notification that we got?

@@ -22,7 +22,7 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->

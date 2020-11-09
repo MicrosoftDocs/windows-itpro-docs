@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Microsoft Defender ATP API - Hello World 
+# Microsoft Defender for Endpoint API - Hello World 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## Get Alerts using a simple PowerShell script
@@ -47,7 +47,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
+4. Allow your Application to access Defender for Endpoint and assign it **'Read all alerts'** permission:
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
@@ -177,6 +177,6 @@ You’re all done! You have just successfully:
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](exposed-apis-list.md)
-- [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md)
-- [Access Microsoft Defender ATP with user context](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+- [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
+- [Access Microsoft Defender for Endpoint with user context](exposed-apis-create-app-nativeapp.md)

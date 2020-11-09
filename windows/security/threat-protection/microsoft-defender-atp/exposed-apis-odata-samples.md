@@ -1,7 +1,7 @@
 ---
-title: OData queries with Microsoft Defender ATP
+title: OData queries with Microsoft Defender for Endpoint
 ms.reviewer: 
-description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP.
+description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# OData queries with Microsoft Defender ATP
+# OData queries with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
@@ -320,7 +320,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen g
 
 ### Example 6
 
-Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
+Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint
 
 ```http
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
@@ -364,5 +364,5 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415
 4
 ```
 
-## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+## See also
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)

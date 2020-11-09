@@ -20,18 +20,18 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Privacy information - Microsoft Defender ATP for iOS
+# Privacy information - Microsoft Defender for Endpoint for iOS
 
 > [!NOTE]
-> Microsoft Defender ATP for iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
+> Defender for Endpoint for iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
 
-Microsoft Defender ATP for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Microsoft Defender ATP. The information is collected to help keep Microsoft Defender ATP for iOS secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint for iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for iOS secure, up-to-date, performing as expected, and to support the service.
 
-For more details about data storage, see [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+For more details about data storage, see [Microsoft Defender for Endpoint data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 ## Required data 
 
-Required data consists of data that is necessary to make Microsoft Defender ATP for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. 
+Required data consists of data that is necessary to make Defender for Endpoint for iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. 
 
 Here is a list of the types of data being collected: 
 
@@ -61,7 +61,7 @@ Here is a list of the types of data being collected:
 
 ### Product and service usage data 
 
-The following information is collected only for Microsoft Defender ATP app installed on the device. 
+The following information is collected only for Microsoft Defender for Endpoint app installed on the device. 
 
 - App package info, including name, version, and app upgrade status. 
 
@@ -77,9 +77,9 @@ Optional data includes diagnostic data and feedback data from the client. Option
 
 Optional diagnostic data includes: 
 
-- App, CPU, and network usage for Microsoft Defender ATP. 
+- App, CPU, and network usage for Defender for Endpoint. 
 
-- Features configured by the admin for Microsoft Defender ATP. 
+- Features configured by the admin for Defender for Endpoint. 
 
 Feedback Data is collected through in-app feedback provided by the user. 
 
@@ -88,9 +88,5 @@ Feedback Data is collected through in-app feedback provided by the user.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user. 
 
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
-
-
-
-
 
 

@@ -27,8 +27,6 @@ ms.date: 11/06/2020
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-
-
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Devices that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
@@ -37,19 +35,18 @@ Devices that are categorized as misconfigured or inactive can be flagged due to 
 
 An inactive device is not necessarily flagged due to an issue. The following actions taken on a device can cause a device to be categorized as inactive:
 
-**Device is not in use**</br>
-If the device has not been in use for more than 7 days for any reason, it will remain in an ‘Inactive’ status in the portal.
+### Device is not in use
 
-**Device was reinstalled or renamed**</br>
+If the device has not been in use for more than seven days for any reason, it will remain in an ‘Inactive’ status in the portal.
+
+### Device was reinstalled or renamed
 A reinstalled or renamed device will generate a new device entity in Microsoft Defender Security Center. The previous device entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
-**Device was offboarded**</br>
-If the device was offboarded it will still appear in devices list. After 7 days, the device health state should change to inactive.
+### Device was offboarded
+If the device was offboarded, it will still appear in devices list. After seven days, the device health state should change to inactive.
 
-
-**Device is not sending signals**
-If the device is not sending any signals for more than 7 days to any of the Defender for Endpoint channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
-
+### Device is not sending signals
+If the device is not sending any signals for more than seven days to any of the Microsoft Defender for Endpoint channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
 
 Do you expect a device to be in ‘Active’ status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
