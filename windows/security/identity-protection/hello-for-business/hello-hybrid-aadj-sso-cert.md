@@ -656,7 +656,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 11. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
 12. Select **Custom** from the **Subject name format** list.
 13. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
-14. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value. Use **{{UserPrincipalName}}** format for **User Principal Name (UPN)** value.
+14. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value. Use the **{{UserPrincipalName}}** format for the **User Principal Name (UPN)** value.
 15. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
 16. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
     ![WHFB SCEP certificate profile Trusted Certificate selection](images/aadjcert/intunewhfbscepprofile-01.png)
