@@ -40,7 +40,10 @@ These steps apply only for locally managed devices. If the device has AppLocker 
 2.  Click the appropriate rule collection for which you want to delete the rule.
 3.  In the details pane, right-click the rule to delete, click **Delete**, and then click **Yes**.
 
->**Note:**  When using Group Policy, for the rule deletion to take effect on computers within the domain, the GPO must be distributed or refreshed.
+> [!Note]
+>
+> - When using Group Policy, for the rule deletion to take effect on computers within the domain, the GPO must be distributed or refreshed.
+> - Application Identity service needs to be running for deleting Applocker rules. If you disable Applocker and delete Applocker rules, please stop Application Identity service after deleting Applocker rules. If the Application Identity service was stopped before deleting Applocker rules and if Applocker blocks apps despite being disabled, delete all files under C:\Windows\System32\AppLocker. 
 
 When this procedure is performed on the local device, the AppLocker policy takes effect immediately.
 
