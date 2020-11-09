@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# App-based deployment for Microsoft Defender ATP for iOS
+# App-based deployment for Microsoft Defender for Endpoint for iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.topic: conceptual
 > 
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 
-Microsoft Defender ATP for iOS is currently available as a preview app on TestFlight, Apple's beta testing platform. In GA, it will be available on the Apple App store.
+Defender for Endpoint for iOS is currently available as a preview app on TestFlight, Apple's beta testing platform. In GA, it will be available on the Apple App store.
 
 Deployment devices need to be enrolled on Intune Company portal. Refer to
 [Enroll your
@@ -43,33 +43,32 @@ learn more about Intune device enrollment
 -   Ensure you have access to [Microsoft Endpoint manager admin
     center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
--   Ensure iOS enrollment is done for your users. Users need to have Microsoft Defender ATP
-    license assigned in order to use Microsoft Defender ATP for iOS. Refer [Assign licenses to
+-   Ensure iOS enrollment is done for your users. Users need to have Defender for Endpoint
+    license assigned in order to use Defender for Endpoint for iOS. Refer [Assign licenses to
     users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
     for instructions on how to assign licenses.
 
 
 ## Deployment steps
 
-To install Microsoft Defender ATP for iOS, end-users can visit
+To install Defender for Endpoint for iOS, end-users can visit
 <https://aka.ms/defenderios> on their iOS devices. This link will open the
 TestFlight application on their device or prompt them to install TestFlight. On
-the TestFlight app, follow the onscreen instructions to install Microsoft
-Defender ATP.
+the TestFlight app, follow the onscreen instructions to install Defender for Endpoint.
 
 
 ![Image of deployment steps](images/testflight-get.png)
 
 ## Complete onboarding and check status
 
-1.  Once Microsoft Defender ATP for iOS has been installed on the device, you
+1.  Once Defender for Endpoint for iOS has been installed on the device, you
     will see the app icon.
 
     ![A screen shot of a smart phone Description automatically generated](images/41627a709700c324849bf7e13510c516.png)
 
-2.  Tap the Microsoft Defender ATP app icon and follow the on-screen
+2.  Tap the Defender for Endpoint app icon and follow the on-screen
     instructions to complete the onboarding steps. The details include end-user
-    acceptance of iOS permissions required by Microsoft Defender ATP for iOS.
+    acceptance of iOS permissions required by Defender for Endpoint for iOS.
 
 3.  Upon successful onboarding, the device will start showing up on the Devices
     list in Microsoft Defender Security Center.
@@ -79,4 +78,4 @@ Defender ATP.
 
 ## Next Steps
 
-[Configure Microsoft Defender ATP for iOS features](ios-configure-features.md)
+[Configure Defender for Endpoint for iOS features](ios-configure-features.md)
