@@ -16,6 +16,12 @@ ms.date: 10/19/2020
 
 This article lists new and updated articles for the Mobile Device Management (MDM) documentation. Updated articles are those that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues are not listed.
 
+## November 2020
+
+|New or updated article | Description|
+|--- | ---|
+| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policy:<br>- [Multitasking/BrowserAltTabBlowout](policy-csp-multitasking.md#multitasking-browseralttabblowout) |
+
 ## October 2020
 
 |New or updated article | Description|
