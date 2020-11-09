@@ -30,7 +30,7 @@ ms.topic: article
 Retrieves a collection of [Investigations](investigation.md).
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's ```$filter``` query is supported on: ```startTime```, ```state```, ```machineId``` and ```triggeringAlertId``` properties.
-<br>See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
 ## Limitations
