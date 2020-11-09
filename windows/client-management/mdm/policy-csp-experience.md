@@ -286,7 +286,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows users to turn on/off device discovery UX.
 
-When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
+When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
 
 Most restricted value is 0.
 
@@ -416,7 +416,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g. auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.
@@ -569,7 +569,8 @@ Added in Windows 10, version 1703. This policy allows you to prevent Windows fro
 
 Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
 
-> **Note** This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+> [!NOTE]
+> This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
 
 Most restricted value is 0.
 
