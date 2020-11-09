@@ -21,7 +21,7 @@ manager: dansimp
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [Controlled folder access](controlled-folders.md) is a feature that helps protect your documents and files from modification by suspicious or malicious apps. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
@@ -30,7 +30,7 @@ It is especially useful in helping protect against [ransomware](https://www.micr
 This article helps you evaluate controlled folder access. It explains how to enable audit mode so you can test the feature directly in your organization.
 
 > [!TIP]
-> You can also visit the Microsoft Defender ATP demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+> You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 ## Use audit mode to measure impact
 
@@ -68,5 +68,5 @@ See [Protect important folders with controlled folder access](controlled-folders
 ## See also
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
-* [Evaluate Microsoft Defender ATP]../(microsoft-defender-atp/evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](evaluate-atp.md)
 * [Use audit mode](audit-windows-defender.md)

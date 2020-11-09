@@ -32,7 +32,7 @@ Each ASR rule contains one of three settings:
 - Block: Enable the ASR rule
 - Audit: Evaluate how the ASR rule would impact your organization if enabled
 
-To use ASR rules, you must have either a Windows 10 Enterprise E3 or E5 license. We recommend E5 licenses so you can take advantage of the advanced monitoring and reporting capabilities that are available in [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP). Advanced monitoring and reporting capabilities aren't available with an E3 license, but you can develop your own monitoring and reporting tools to use in conjunction with ASR rules.
+To use ASR rules, you must have either a Windows 10 Enterprise E3 or E5 license. We recommend E5 licenses so you can take advantage of the advanced monitoring and reporting capabilities that are available in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint). Advanced monitoring and reporting capabilities aren't available with an E3 license, but you can develop your own monitoring and reporting tools to use in conjunction with ASR rules.
 
 > [!TIP]
 > To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -51,7 +51,7 @@ Enterprise-level management such as Intune or Microsoft Endpoint Configuration M
 
 You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running. This could potentially allow unsafe files to run and infect your devices.
 
-You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Microsoft Defender ATP file and certificate indicators. (See [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).)
+You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).)
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
