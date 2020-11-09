@@ -263,4 +263,4 @@ Here is an example of the response.
 
 
 ## See also
-- [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
+- [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
