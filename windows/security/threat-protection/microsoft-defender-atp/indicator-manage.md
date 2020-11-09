@@ -65,8 +65,13 @@ expirationTime | DateTimeOffset | The expiration time of the indicator in the fo
 severity | Enum | The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions | String | TI indicator alert recommended actions. **Optional**
 rbacGroupNames | String | Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
+category | String | Category of the alert. 
+mitretechniques| String | MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/).
 
-## Related topics
+For more information, see [Microsoft Defender ATP alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
+
+
+## See also
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
