@@ -28,7 +28,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender for Endpoint for macOS](microsoft-defender-atp-mac.md)
 
-This topic describes how to deploy Defender for Endpoint for macOS manually. A successful deployment requires the completion of all of the following steps:
+This topic describes how to deploy Microsoft Defender for Endpoint for macOS manually. A successful deployment requires the completion of all of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
@@ -75,10 +75,10 @@ To complete this process, you must have admin privileges on the device.
    The installation proceeds.
 
    > [!CAUTION]
-   > If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
+   > If you don't select **Allow**, the installation will proceed after 5 minutes. Microsoft Defender for Endpoint will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
 
 > [!NOTE]
-> macOS may request to reboot the device upon the first installation of Microsoft Defender. Real-time protection will not be available until the device is rebooted.
+> macOS may request to reboot the device upon the first installation of Microsoft Defender for Endpoint. Real-time protection will not be available until the device is rebooted.
 
 ## Application installation (macOS 11 and newer versions)
 
@@ -98,9 +98,9 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences](images/big-sur-install-3.png)
 
-5. Repeat steps 3 & 4 for all system extensions distributed with Defender for Endpoint for Mac.
+5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint for Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Defender for Endpoint permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
     ![System extension security preferences](images/big-sur-install-4.png)
 
@@ -110,7 +110,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Defender for Endpoint for macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
 
     The client device is not associated with orgId. Note that the *orgId* attribute is blank.
 
