@@ -57,7 +57,7 @@ Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML 
       <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
     </AppLockerPolicy>
 
-To use the Set-AppLockerPolicy cmdlet, first import the Applocker modules:
+To use the Set-AppLockerPolicy cmdlet, first import the AppLocker modules:
     
     PS C:\Users\Administrator> import-module AppLocker
 
