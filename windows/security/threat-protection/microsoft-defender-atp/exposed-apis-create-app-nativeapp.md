@@ -50,7 +50,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Create an app
 
-1. Log on to [Azure](https://portal.azure.com) with user account that has **Global Administrator** role.
+1. Log on to [Azure](https://portal.azure.com) with a user account that has the **Global Administrator** role.
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
