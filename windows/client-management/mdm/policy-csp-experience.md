@@ -510,7 +510,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Sync settings is not allowed.
+-   0 – Sync settings are not allowed.
 -   1 (default) – Sync settings allowed.
 
 <!--/SupportedValues-->
