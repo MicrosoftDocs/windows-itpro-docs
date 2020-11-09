@@ -19,16 +19,16 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Manual deployment for Microsoft Defender ATP for macOS
+# Manual deployment for Microsoft Defender for Endpoint for macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for macOS](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for macOS](microsoft-defender-atp-mac.md)
 
-This topic describes how to deploy Microsoft Defender ATP for macOS manually. A successful deployment requires the completion of all of the following steps:
+This topic describes how to deploy Defender for Endpoint for macOS manually. A successful deployment requires the completion of all of the following steps:
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
@@ -36,7 +36,7 @@ This topic describes how to deploy Microsoft Defender ATP for macOS manually. A 
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main Microsoft Defender ATP for macOS page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender for Endpoint for macOS page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
@@ -98,9 +98,9 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences](images/big-sur-install-3.png)
 
-5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender ATP for Mac.
+5. Repeat steps 3 & 4 for all system extensions distributed with Defender for Endpoint for Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Microsoft Defender ATP permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. When prompted to grant Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
     ![System extension security preferences](images/big-sur-install-4.png)
 
@@ -110,7 +110,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender ATP for macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Defender for Endpoint for macOS.
 
     The client device is not associated with orgId. Note that the *orgId* attribute is blank.
 
@@ -138,9 +138,9 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 ## How to Allow Full Disk Access
 
 > [!CAUTION]
-> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
 
-To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender ATP.
+To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
 ## Logging installation issues
 
@@ -148,4 +148,4 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for macOS from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint for macOS from client devices.

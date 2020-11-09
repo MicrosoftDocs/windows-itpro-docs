@@ -25,9 +25,9 @@ ROBOTS: noindex,nofollow
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+In alignment with macOS evolution, we are preparing a Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
-If you have deployed Microsoft Defender ATP for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
+If you have deployed Defender for Endpoint for Mac in a managed environment (through JAMF, Intune, or another MDM solution), you must deploy new configuration profiles. Failure to do these steps will result in users getting approval prompts to run these new components.
 
 ## JAMF
 
@@ -47,7 +47,7 @@ To approve the system extensions, create the following payload:
 
 ### Privacy Preferences Policy Control
 
-Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender ATP Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
+Add the following JAMF payload to grant Full Disk Access to the Defender for Endpoint Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
 
 1. Select **Options** > **Privacy Preferences Policy Control**.
 2. Use `com.microsoft.wdav.epsext` as the **Identifier** and `Bundle ID` as **Bundle type**.
@@ -58,10 +58,10 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
 ### Network Extension Policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender ATP for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
 >[!NOTE]
->JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender ATP for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+>JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Defender for Endpoint for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
 >As such, the following steps provide a workaround that involve signing the configuration profile.
 
 1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:

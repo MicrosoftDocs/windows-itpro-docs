@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
 1. Enter your credentials.
 

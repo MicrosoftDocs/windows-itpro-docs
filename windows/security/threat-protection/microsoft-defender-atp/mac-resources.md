@@ -19,14 +19,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Resources for Microsoft Defender ATP for Mac
+# Resources for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
 ## Collecting diagnostic information
 
@@ -44,7 +44,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
 2. Reproduce the problem
 
-3. Run `sudo mdatp diagnostic create` to back up Microsoft Defender ATP's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp diagnostic create` to back up Defender for Endpoint's logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
   > [!TIP]
   > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
@@ -73,7 +73,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Defender for Endpoint for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
@@ -137,7 +137,7 @@ To enable autocompletion in `zsh`:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following commands to enable autocompletion for Microsoft Defender ATP for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Defender for Endpoint for Mac and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
@@ -146,10 +146,10 @@ To enable autocompletion in `zsh`:
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## Client Microsoft Defender ATP quarantine directory
+## Client Microsoft Defender for Endpoint quarantine directory
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contains the files quarantined by `mdatp`. The files are named after the threat trackingId. The current trackingIds is shown with `mdatp --threat --list --pretty`.
 
-## Microsoft Defender ATP portal information
+## Microsoft Defender for Endpoint portal information
 
 [This blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) provides detailed guidance on what to expect in Microsoft Defender ATP Security Center.
