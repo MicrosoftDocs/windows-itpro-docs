@@ -28,19 +28,19 @@ ms.topic: conceptual
 
 - [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
-This topic provides some general steps that can be used to narrow down performance issues related to Defender for Endpoint for Mac.
+This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint for Mac.
 
-Real-time protection (RTP) is a feature of Defender for Endpoint for Mac that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
+Real-time protection (RTP) is a feature of Microsoft Defender for Endpoint for Mac that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Defender for Endpoint for Mac. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint for Mac.
+Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint for Mac. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint for Mac.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 
-1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Defender for Endpoint for Mac is contributing to the performance issues.
+1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender for Endpoint for Mac is contributing to the performance issues.
 
     If your device is not managed by your organization, real-time protection can be disabled using one of the following options:
 
-    - From the user interface. Open Defender for Endpoint for Mac and navigate to **Manage settings**.
+    - From the user interface. Open Microsoft Defender for Endpoint for Mac and navigate to **Manage settings**.
 
     ![Manage real-time protection screenshot](../microsoft-defender-antivirus/images/mdatp-36-rtp.png)
 
@@ -54,6 +54,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-3. Configure Defender for Endpoint for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+3. Configure Microsoft Defender for Endpoint for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
     See [Configure and validate exclusions for Microsoft Defender for Endpoint for Mac](mac-exclusions.md) for details.
