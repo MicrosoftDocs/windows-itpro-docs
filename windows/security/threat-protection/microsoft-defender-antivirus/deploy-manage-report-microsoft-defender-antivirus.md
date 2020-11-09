@@ -29,7 +29,7 @@ You can deploy, manage, and report on Microsoft Defender Antivirus in a number o
 
 Because the Microsoft Defender Antivirus client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.
 
-However, in most cases you will still need to enable the protection service on your endpoints with Microsoft Intune, Microsoft Endpoint Configuration Manager, Azure Defender*, or Group Policy Objects, which is described in the following table.
+However, in most cases you will still need to enable the protection service on your endpoints with Microsoft Intune, Microsoft Endpoint Configuration Manager, Azure Defender, or Group Policy Objects, which is described in the following table.
 
 You'll also see additional links for:
 
