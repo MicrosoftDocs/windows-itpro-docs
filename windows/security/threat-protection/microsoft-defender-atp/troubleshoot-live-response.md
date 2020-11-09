@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Microsoft Defender Advanced Threat Protection live response issues
+# Troubleshoot Microsoft Defender for Endpoint live response issues
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 This page provides detailed steps to troubleshoot live response issues.
@@ -56,9 +56,9 @@ If while trying to take an action during a live response session, you encounter 
 5. Run the action you wanted to take on the copied file.
 
 ## Slow live response sessions or delays during initial connections
-Live response leverages Microsoft Defender ATP sensor registration with WNS service in Windows. 
+Live response leverages Defender for Endpoint sensor registration with WNS service in Windows. 
 If you are having connectivity issues with live response, confirm the following details:
-1. `notify.windows.com` is not blocked in your environment. For more information, see, [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+1. `notify.windows.com` is not blocked in your environment. For more information, see, [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 2. WpnService (Windows Push Notifications System Service) is not disabled.
 
 Refer to the articles below to fully understand the WpnService service behavior and requirements:

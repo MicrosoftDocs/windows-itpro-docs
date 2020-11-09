@@ -37,7 +37,7 @@ If the value for this policy setting is too high, users might be able to access 
 
 ### Best practices
 
--   It is advisable to set **Maximum lifetime for user ticket** to 10 hours.
+-   We recommend that you set the **Maximum lifetime for user ticket** to 10 hours.
 
 ### Location
 
