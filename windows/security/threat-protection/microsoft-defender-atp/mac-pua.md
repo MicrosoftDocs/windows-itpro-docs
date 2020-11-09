@@ -28,7 +28,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
-The potentially unwanted application (PUA) protection feature in Defender for Endpoint for Mac can detect and block PUA files on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint for Mac can detect and block PUA files on endpoints in your network.
 
 These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have poor reputation.
 
@@ -36,13 +36,13 @@ These applications can increase the risk of your network being infected with mal
 
 ## How it works
 
-Defender for Endpoint for Mac can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
+Microsoft Defender for Endpoint for Mac can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
 
-When a PUA is detected on an endpoint, Defender for Endpoint for Mac presents a notification to the user, unless notifications have been disabled. The threat name will contain the word "Application".
+When a PUA is detected on an endpoint, Microsoft Defender for Endpoint for Mac presents a notification to the user, unless notifications have been disabled. The threat name will contain the word "Application".
 
 ## Configure PUA protection
 
-PUA protection in Defender for Endpoint for Mac can be configured in one of the following ways:
+PUA protection in Microsoft Defender for Endpoint for Mac can be configured in one of the following ways:
 
 - **Off**: PUA protection is disabled.
 - **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No notification is presented to the user and no action is taken by the product.
