@@ -187,11 +187,11 @@ Restricts the actions that the local user of a device can take when threats are 
 | **Key** | disallowedThreatActions |
 | **Data type** | Array of strings |
 | **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
-| **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
 
 #### Threat type settings
 
-Specify how certain threat types are handled by Defender for Endpoint for Mac.
+Specify how certain threat types are handled by Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -236,7 +236,7 @@ Specify the merge policy for threat type settings. This can be a combination of 
 | **Key** | threatTypeSettingsMergePolicy |
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 100.83.73 or higher. |
 
 #### Antivirus scan history retention (in days)
 
@@ -248,7 +248,7 @@ Specify the number of days that results are retained in the scan history on the 
 | **Key** | scanResultsRetentionDays |
 | **Data type** | String |
 | **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
-| **Comments** | Available in Defender for Endpoint version 101.07.23 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
 
 #### Maximum number of items in the antivirus scan history
 
@@ -260,11 +260,11 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Key** | scanHistoryMaximumItems |
 | **Data type** | String |
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
-| **Comments** | Available in Defender for Endpoint version 101.07.23 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.07.23 or higher. |
 
 ### Cloud-delivered protection preferences
 
-Configure the cloud-driven protection features of Defender for Endpoint for Mac.
+Configure the cloud-driven protection features of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -286,7 +286,7 @@ Specify whether to enable cloud-delivered protection the device or not. To impro
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Defender for Endpoint to Microsoft.
+Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender for Endpoint to Microsoft.
 
 |||
 |:---|:---|
@@ -318,7 +318,7 @@ Determines whether security intelligence updates are installed automatically:
 
 ### User interface preferences
 
-Manage the preferences for the user interface of Defender for Endpoint for Mac.
+Manage the preferences for the user interface of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -348,11 +348,11 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 | **Key** | userInitiatedFeedback |
 | **Data type** | String |
 | **Possible values** | enabled (default) <br/> disabled |
-| **Comments** | Available in Defender for Endpoint version 101.19.61 or higher. |
+| **Comments** | Available in Microsoft Defender for Endpoint version 101.19.61 or higher. |
 
 ### Endpoint detection and response preferences
 
-Manage the preferences of the endpoint detection and response (EDR) component of Defender for Endpoint for Mac.
+Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint for Mac.
 
 |||
 |:---|:---|
@@ -402,13 +402,13 @@ Specifies the value of tag
 
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Defender for Endpoint provides.
+To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender for Endpoint provides.
 
 The following configuration profile (or, in case of JAMF, a property list that could be uploaded into the custom settings configuration profile) will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
-  - **Archive bombs** (file with a high compression rate) are audited to Defender for Endpoint logs
+  - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender for Endpoint logs
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission
@@ -809,7 +809,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the *.plist* produced earlier.
 
 >[!CAUTION]
->You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Defender for Endpoint.
+>You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ### Intune deployment
 
@@ -828,7 +828,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
 >[!CAUTION]
->You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Defender for Endpoint.
+>You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender for Endpoint.
 
 ## Resources
 
