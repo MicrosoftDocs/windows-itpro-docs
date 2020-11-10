@@ -177,6 +177,7 @@
 #### [ADMX_AppCompat](policy-csp-admx-appcompat.md)
 #### [ADMX_AppxPackageManager](policy-csp-admx-appxpackagemanager.md)
 #### [ADMX_AppXRuntime](policy-csp-admx-appxruntime.md)
+#### [ADMX_AttachmentManager](policy-csp-admx-attachmentmanager.md)
 #### [ADMX_AuditSettings](policy-csp-admx-auditsettings.md)
 #### [ADMX_Bits](policy-csp-admx-bits.md)
 #### [ADMX_CipherSuiteOrder](policy-csp-admx-ciphersuiteorder.md)

@@ -270,6 +270,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_AttachmentManager policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-estimatefilehandlerrisk" id="admx-attachmentmanager-am-estimatefilehandlerrisk">ADMX_AttachmentManager/AM_EstimateFileHandlerRisk</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setfilerisklevel" id="admx-attachmentmanager-am-setfilerisklevel">ADMX_AttachmentManager/AM_SetFileRiskLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-sethighriskinclusion" id="admx-attachmentmanager-am-sethighriskinclusion">ADMX_AttachmentManager/AM_SetHighRiskInclusion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setlowriskinclusion" id="admx-attachmentmanager-am-setlowriskinclusion">ADMX_AttachmentManager/AM_SetLowRiskInclusion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setmodriskinclusion" id="admx-attachmentmanager-am-setmodriskinclusion">ADMX_AttachmentManager/AM_SetModRiskInclusion</a>
+  </dd>
+</dl>
+
 ### ADMX_AuditSettings policies
 
 <dl>
