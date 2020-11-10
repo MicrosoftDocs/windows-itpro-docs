@@ -345,7 +345,10 @@ Added in Windows 10, version 1607. The XML schema for provisioning all the fiel
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-proxy"></a>**VPNv2/**<em>ProfileName</em>**/Proxy**  
-A collection of configuration objects to enable a post-connect proxy support for VPN. The proxy defined for this profile is applied when this profile is active and connected.
+A collection of configuration objects to enable a post-connect proxy support for VPN Force Tunnel connections. The proxy defined for this profile is applied when this profile is active and connected.
+
+>[Note]
+>VPN proxy settings are only used on Force Tunnel connections. On Split Tunnel connections the general proxy settings are used.
 
 <a href="" id="vpnv2-profilename-proxy-manual"></a>**VPNv2/**<em>ProfileName</em>**/Proxy/Manual**  
 Optional node containing the manual server settings.
