@@ -50,7 +50,6 @@ Whether taken automatically or upon approval, remediation actions following an a
 - Remove a registry key 
 - Kill a process 
 - Stop a service 
-- Remove a registry key 
 - Disable a driver 
 - Remove a scheduled task
 
