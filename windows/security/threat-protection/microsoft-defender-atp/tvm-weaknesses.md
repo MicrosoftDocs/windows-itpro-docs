@@ -91,6 +91,14 @@ If you select a CVE, a flyout panel will open with more information such as the 
 
  ![Weakness flyout example.](images/tvm-weakness-flyout400.png)
 
+### Software that isn't supported
+
+CVEs for software that isn't currently supported by threat & vulnerability management is still present in the Weaknesses page. Because the software is not supported, only limited data will be available.
+
+Exposed device information will not be available for CVEs with unsupported software. Filter by unsupported software by selecting the "Not available" option in the "Exposed devices" section.
+
+ ![Exposed devices filter.](images/tvm-exposed-devices-filter.png)
+
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
 ### Top vulnerable software in the dashboard
