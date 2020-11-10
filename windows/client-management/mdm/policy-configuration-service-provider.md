@@ -168,6 +168,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ActiveXInstallService policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-activexinstallservice.md#admx-activexinstallservice-axisurlzonepolicies" id="admx-activexinstallservice-axisurlzonepolicies">ADMX_ActiveXInstallService/AxISURLZonePolicies</a>
+  </dd>
+</dl>
+
 ### ADMX_AddRemovePrograms policies
 <dl>
   <dd>
@@ -2849,6 +2857,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-wininit.md#admx-wininit-shutdowntimeouthungsessionsdescription" id="admx-wininit-shutdowntimeouthungsessionsdescription">ADMX_WinInit/ShutdownTimeoutHungSessionsDescription</a>
+  </dd>
+</dl>
+
+### ADMX_WinLogon policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-customshell" id="admx-winlogon-customshell">ADMX_WinLogon/CustomShell</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-displaylastlogoninfodescription" id="admx-winlogon-displaylastlogoninfodescription">ADMX_WinLogon/DisplayLastLogonInfoDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-logonhoursnotificationpolicydescription" id="admx-winlogon-logonhoursnotificationpolicydescription">ADMX_WinLogon/LogonHoursNotificationPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-logonhourspolicydescription" id="admx-winlogon-logonhourspolicydescription">ADMX_WinLogon/LogonHoursPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-reportcachedlogonpolicydescription" id="admx-winlogon-reportcachedlogonpolicydescription">ADMX_WinLogon/ReportCachedLogonPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration" id="admx-winlogon-softwaresasgeneration">ADMX_WinLogon/SoftwareSASGeneration</a>
   </dd>
 </dl>
 

@@ -21,7 +21,8 @@ ms.date: 10/08/2020
 >
 
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
-- [ADMX_AddRemovePrograms/DefaultCategory](/policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-defaultcategory)
+- [ADMX_ActiveXInstallService/AxISURLZonePolicies](./policy-csp-admx-activexinstallservice.md#admx-activexinstallservice-axisurlzonepolicies)
+- [ADMX_AddRemovePrograms/DefaultCategory](./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-defaultcategory)
 - [ADMX_AddRemovePrograms/NoAddFromCDorFloppy](./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfromcdorfloppy)
 - [ADMX_AddRemovePrograms/NoAddFromInternet](./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfrominternet)
 - [ADMX_AddRemovePrograms/NoAddFromNetwork](./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-noaddfromnetwork)
@@ -819,6 +820,12 @@ ms.date: 10/08/2020
 - [ADMX_WinInit/DisableNamedPipeShutdownPolicyDescription](./policy-csp-admx-wininit.md#admx-wininit-disablenamedpipeshutdownpolicydescription)
 - [ADMX_WinInit/Hiberboot](./policy-csp-admx-wininit.md#admx-wininit-hiberboot)
 - [ADMX_WinInit/ShutdownTimeoutHungSessionsDescription](./policy-csp-admx-wininit.md#admx-wininit-shutdowntimeouthungsessionsdescription)
+- [ADMX_WinLogon/CustomShell](./policy-csp-admx-winlogon.md#admx-winlogon-customshell)
+- [ADMX_WinLogon/DisplayLastLogonInfoDescription](./policy-csp-admx-winlogon.md#admx-winlogon-displaylastlogoninfodescription)
+- [ADMX_WinLogon/LogonHoursNotificationPolicyDescription](./policy-csp-admx-winlogon.md#admx-winlogon-logonhoursnotificationpolicydescription)
+- [ADMX_WinLogon/LogonHoursPolicyDescription](./policy-csp-admx-winlogon.md#admx-winlogon-logonhourspolicydescription)
+- [ADMX_WinLogon/ReportCachedLogonPolicyDescription](./policy-csp-admx-winlogon.md#admx-winlogon-reportcachedlogonpolicydescription)
+- [ADMX_WinLogon/SoftwareSASGeneration](./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration)
 - [ADMX_wlansvc/SetCost](./policy-csp-admx-wlansvc.md#admx-wlansvc-setcost)
 - [ADMX_wlansvc/SetPINEnforced](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinenforced)
 - [ADMX_wlansvc/SetPINPreferred](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinpreferred) 
