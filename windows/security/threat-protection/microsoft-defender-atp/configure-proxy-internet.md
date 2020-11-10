@@ -140,7 +140,8 @@ The information below list the proxy and firewall configuration information requ
 |------|---------|--------|--------|   
 |*.ods.opinsights.azure.com |Port 443 |Outbound|Yes |  
 |*.oms.opinsights.azure.com |Port 443 |Outbound|Yes |  
-|*.blob.core.windows.net |Port 443 |Outbound|Yes |  
+|*.blob.core.windows.net |Port 443 |Outbound|Yes |
+|*.azure-automation.net |Port 443 |Outbound|Yes |  
 
 
 > [!NOTE]
