@@ -19,14 +19,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshoot installation issues for Microsoft Defender ATP for Mac
+# Troubleshoot installation issues for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
 ## Installation failed
 

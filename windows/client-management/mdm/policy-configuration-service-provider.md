@@ -5158,6 +5158,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Multitasking policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-multitasking.md#multitasking-browseralttabblowout" id="multitasking-browseralttabblowout">Multitasking/BrowserAltTabBlowout</a>
+  </dd>
+ </dl>
+
 ### NetworkIsolation policies
 
 <dl>
