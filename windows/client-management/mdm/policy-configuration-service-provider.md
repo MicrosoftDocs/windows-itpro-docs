@@ -245,6 +245,31 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_AppxPackageManager policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-appxpackagemanager.md#admx-appxpackagemanager-allowdeploymentinspecialprofiles" id="admx-appxpackagemanager-allowdeploymentinspecialprofiles">ADMX_AppxPackageManager/AllowDeploymentInSpecialProfiles</a>
+  </dd>
+</dl>
+
+### ADMX_AppXRuntime policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeapplicationcontenturirules" id="admx-appxruntime-appxruntimeapplicationcontenturirules">ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockfileelevation" id="admx-appxruntime-appxruntimeblockfileelevation">ADMX_AppXRuntime/AppxRuntimeBlockFileElevation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockhostedappaccesswinrt" id="admx-appxruntime-appxruntimeblockhostedappaccesswinrt">ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockprotocolelevation" id="admx-appxruntime-appxruntimeblockprotocolelevation">ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation</a>
+  </dd>
+</dl>
+
 ### ADMX_AuditSettings policies
 
 <dl>

@@ -175,6 +175,8 @@
 #### [ADMX_ActiveXInstallService](policy-csp-admx-activexinstallservice.md)
 #### [ADMX_AddRemovePrograms](policy-csp-admx-addremoveprograms.md)
 #### [ADMX_AppCompat](policy-csp-admx-appcompat.md)
+#### [ADMX_AppxPackageManager](policy-csp-admx-appxpackagemanager.md)
+#### [ADMX_AppXRuntime](policy-csp-admx-appxruntime.md)
 #### [ADMX_AuditSettings](policy-csp-admx-auditsettings.md)
 #### [ADMX_Bits](policy-csp-admx-bits.md)
 #### [ADMX_CipherSuiteOrder](policy-csp-admx-ciphersuiteorder.md)
