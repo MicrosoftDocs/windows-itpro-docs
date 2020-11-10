@@ -6052,7 +6052,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Sense.Client.PerformanceScript.OnboardingScript
 
-This event is triggered whenever WDATP onboarding script is run. The data collected with this event is used to keep Windows performing properly.
+This event is triggered whenever Microsoft Defender for Endpoint onboarding script is run. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
