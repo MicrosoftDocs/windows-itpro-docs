@@ -29,9 +29,11 @@ ms.date: 5/1/2020
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-The new alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
+The alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
 
-Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
+Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location. Learn more in this overview.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Getting started with an alert
 
@@ -89,14 +91,6 @@ If you are experiencing a false alert with a line-of-business application, creat
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
-
-## Transitioning to the new alert page
-
-When making the move to the new alert page you will notice that we have centralized information from the alert process tree, the incident graph, and the artifact timeline into the [alert story](#investigate-using-the-alert-story), with some information available through the [affected assets](#review-affected-assets) section. Any additional information has been consolidated into the details pane for the relevant entities.
-
-## Video overview of the new alert page
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Related topics
 
