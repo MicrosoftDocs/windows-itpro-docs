@@ -23,25 +23,8 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 > [!IMPORTANT]
-> In preparation for macOS 11 Big Sur, we are getting ready to release an update to Microsoft Defender for Endpoint for Mac that will leverage new system extensions instead of kernel extensions. Apple will stop supporting kernel extensions starting macOS 11 Big Sur version. Therefore an update to the Microsoft Defender for Endpoint for Mac agent is required on all eligible macOS devices prior to moving these devices to macOS 11.
-> 
-> The update is applicable to devices running macOS version 10.15.4 or later.
-> 
-> To ensure that the Microsoft Defender for Endpoint for Mac update is delivered and applied seamlessly from an end-user experience perspective, a new remote configuration must be deployed to all eligible macOS devices before Microsoft publishes the new agent version. If the configuration is not deployed prior to the Microsoft Defender for Endpoint for Mac agent update, end-users will be presented with a series of system dialogs asking to grant the agent all necessary permissions associated with the new system extensions.
-> 
-> Timing: 
-> - Organizations that previously opted into Microsoft Defender for Endpoint preview features in Microsoft Defender Security Center, must be ready for Microsoft Defender for Endpoint for Mac agent update **by August 10, 2020**.
-> - Organizations that do not participate in public previews for Microsoft Defender for Endpoint features, must be ready **by September 07, 2020**.
-> 
-> Action is needed by IT administrator. Review the steps below and assess the impact on your organization:
-> 
-> 1. Deploy the specified remote configuration to eligible macOS devices before Microsoft publishes the new agent version. <br/>
-> Even though Microsoft Defender for Endpoint for Mac new implementation based on system extensions is only applicable to devices running macOS version 10.15.4 or later, deploying configuration proactively across the entire macOS fleet will ensure that even down-level devices are prepared for the day when Apple releases macOS 11 Big Sur and will ensure that Microsoft Defender for Endpoint for Mac continues protecting all macOS devices regardless OS version they were running prior to the Big Sur upgrade.
-> 
-> 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
-> 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
+> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
 
 ## 101.10.72
 
@@ -56,9 +39,6 @@ ms.topic: conceptual
 ## 101.09.50
 
 - This product version has been validated on macOS Big Sur 11 beta 9
-
-  > [!IMPORTANT]
-  > Extensive testing of MDE (Microsoft Defender for Endpoint) with new macOS system extensions revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue.
 
 - The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint for Mac](mac-resources.md#configuring-from-the-command-line)
 
