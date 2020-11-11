@@ -2641,7 +2641,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Key Lengths: 128, 192, 256 (bits)</li>
 <li>Plain Text Lengths: 128, 192, 256, 320, 2048 (bits)</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4902">Val#4902</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4902">validation number 4902</a></p></td>
 <td><p>Microsoft Surface Hub Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4900">#4900</a></p>
 <p>Version 10.0.15063.674</p></td>
 </tr>
@@ -2653,7 +2653,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Key Lengths: 128, 192, 256 (bits)</li>
 <li>Plain Text Lengths: 128, 192, 256, 320, 2048 (bits)</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4901">Val#4901</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4901">validation number 4901</a></p></td>
 <td><p>Windows 10 Mobile (version 1709) Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4899">#4899</a></p>
 <p>Version 10.0.15254</p></td>
 </tr>
@@ -2665,7 +2665,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Key Lengths: 128, 192, 256 (bits)</li>
 <li>Plain Text Lengths: 128, 192, 256, 320, 2048 (bits)</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4897">Val#4897</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4897">validation number 4897</a></p></td>
 <td><p>Windows 10 Home, Pro, Enterprise, Education, Windows 10 S Fall Creators Update; Windows Server, Windows Server Datacenter (version 1709); Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4898">#4898</a></p>
 <p>Version 10.0.16299</p></td>
 </tr>
@@ -2678,7 +2678,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Plain Text Length: 0-32</li>
 <li>Additional authenticated data length: 0-65536</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4902">Val#4902</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4902">validation number 4902</a></p></td>
 <td><p>Microsoft Surface Hub BitLocker(R) Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4896">#4896</a></p>
 <p>Version 10.0.15063.674</p></td>
 </tr>
@@ -2691,7 +2691,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Plain Text Length: 0-32</li>
 <li>Additional authenticated data length: 0-65536</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4901">Val#4901</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4901">validation number 4901</a></p></td>
 <td><p>Windows 10 Mobile (version 1709) BitLocker(R) Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4895">#4895</a></p>
 <p>Version 10.0.15254</p></td>
 </tr>
@@ -2704,7 +2704,7 @@ The following tables are organized by cryptographic algorithms with their modes,
 <li>Plain Text Length: 0-32</li>
 <li>Additional authenticated data length: 0-65536</li>
 </ul>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4897">Val#4897</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4897">validation number 4897</a></p></td>
 <td><p>Windows 10 Home, Pro, Enterprise, Education, Windows 10 S Fall Creators Update; Windows Server, Windows Server Datacenter (version 1709); BitLocker(R) Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4894">#4894</a></p>
 <p>Version 10.0.16299</p></td>
 </tr>
@@ -2718,13 +2718,13 @@ The following tables are organized by cryptographic algorithms with their modes,
 </tr>
 <tr class="even">
 <td><p><b>KW</b> (AE, AD, AES-128, AES-192, AES-256, FWD, 128, 256, 192, 320, 2048)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">Val#4624</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">validation number 4624</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4626">#4626</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM</b> (KS: 256) (Assoc. Data Len Range: 0-0, 2^16) (Payload Length Range: 0 - 32 (Nonce Length(s): 12 (Tag Length(s): 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">Val#4624</a></p>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">validation number 4624</a></p>
 <p> </p></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile BitLocker(R) Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4625">#4625</a></p>
 <p>Version 10.0.15063</p></td>
@@ -2801,25 +2801,25 @@ Version 10.0.14393</td>
 </tr>
 <tr class="even">
 <td><p><b>KW</b>  (AE, AD, AES-128, AES-192, AES-256, FWD, 128, 192, 256, 320, 2048)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">Val#4064</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">validation number 4064</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4062">#4062</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM</b> (KS: 256) (Assoc. Data Len Range: 0-0, 2^16) (Payload Length Range: 0 - 32 (Nonce Length(s): 12 (Tag Length(s): 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">Val#4064</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">validation number 4064</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update BitLocker® Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4061">#4061</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="even">
 <td><p><b>KW</b>  (AE, AD, AES-128, AES-192, AES-256, FWD, 128, 256, 192, 320, 2048)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">Val#3629</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">validation number 3629</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3652">#3652</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM</b> (KS: 256) (Assoc. Data Len Range: 0-0, 2^16) (Payload Length Range: 0 - 32 (Nonce Length(s): 12 (Tag Length(s): 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">Val#3629</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">validation number 3629</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” BitLocker® Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3653">#3653</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -2847,13 +2847,13 @@ GMAC supported</p>
 </tr>
 <tr class="even">
 <td><p>KW  (AE, AD, AES-128, AES-192, AES-256, FWD, 128, 256, 192, 320, 2048)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">Val#3497</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">validation number 3497</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3507">#3507</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM</b> (KS: 256) (Assoc. Data Len Range: 0-0, 2^16) (Payload Length Range: 0 - 32 (Nonce Length(s): 12 (Tag Length(s): 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">Val#3497</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">validation number 3497</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 BitLocker® Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3498">#3498</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -2887,7 +2887,7 @@ Version 10.0.10240</td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM (KS: 256)</b> (Assoc. Data Len Range: 0-0, 2^16) (Payload Length Range: 0 - 32 (Nonce Length(s): 12 (Tag Length(s): 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">Val#2832</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">validation number 2832</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 BitLocker Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2848">#2848</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -2904,9 +2904,9 @@ GMAC supported</b></p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CCM (KS: 128, 192, 256</b>) <b>(Assoc. Data Len Range</b>: 0-0, 2^16) <b>(Payload Length Range</b>: 0 - 32 (<b>Nonce Length(s)</b>: 7 8 9 10 11 12 13 <b>(Tag Length(s)</b>: 4 6 8 10 12 14 16)<br />
-AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">Val#2197</a></p>
+AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">validation number 2197</a></p>
 <p><b>CMAC</b> (Generation/Verification) <b>(KS: 128;</b> Block Size(s); <b>Msg Len(s)</b> Min: 0 Max: 2^16; <b>Tag Len(s)</b> Min: 16 Max: 16) <b>(KS: 192</b>; Block Size(s); <b>Msg Len(s)</b> Min: 0 Max: 2^16; <b>Tag Len(s)</b> Min: 16 Max: 16) <b>(KS: 256</b>; Block Size(s); <b>Msg Len(s)</b> Min: 0 Max: 2^16; <b>Tag Len(s)</b> Min: 16 Max: 16)<br />
-AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">Val#2197</a></p>
+AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">validation number 2197</a></p>
 <p><b>GCM(KS: AES_128</b>(e/d) Tag Length(s): 128 120 112 104 96) <b>(KS: AES_192</b>(e/d) Tag Length(s): 128 120 112 104 96)<br />
 <b>(KS: AES_256</b>(e/d) Tag Length(s): 128 120 112 104 96)<br />
 <b>IV Generated:</b> (Externally); <b>PT Lengths Tested:</b> (0, 128, 1024, 8, 1016); <b>Additional authenticated data lengths tested:</b> (0, 128, 1024, 8, 1016); <b>IV Lengths Tested:</b> (8, 1024); <b>96 bit IV supported<br />
@@ -2915,7 +2915,7 @@ GMAC supported</b></p></td>
 </tr>
 <tr class="even">
 <td><p><b>CCM (KS: 256) (Assoc. Data Len Range: </b>0 - 0, 2^16<b>) (Payload Length Range:</b> 0 - 32 (<b>Nonce Length(s)</b>: 12 <b>(Tag Length(s)</b>: 16)</p>
-<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">Val#2196</a></p></td>
+<p>AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2196">validation number 2196</a></p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 BitLocker® Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2198">#2198</a></td>
 </tr>
 <tr class="odd">
@@ -2935,13 +2935,13 @@ GMAC supported</b></p></td>
 </tr>
 <tr class="odd">
 <td><b>CCM (KS: 128, 192, 256) (Assoc. Data Len Range: </b>0 – 0, 2^16<b>) (Payload Length Range:</b> 0 - 32 <b>(Nonce Length(s):</b> 7 8 9 10 11 12 13 <b>(Tag Length(s): </b>4 6 8 10 12 14 16<b>)</b><br />
-AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">Val#1168</a></td>
+AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">validation number 1168</a></td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1187">#1187</a></p>
 <p>Windows 7 Ultimate and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1178">#1178</a></p></td>
 </tr>
 <tr class="even">
 <td><b>CCM (KS: 128, 256) (Assoc. Data Len Range: </b>0 - 8<b>) (Payload Length Range:</b> 4 - 32 <b>(Nonce Length(s):</b> 7 8 12 13 <b>(Tag Length(s): </b>4 6 8 14 16<b>)</b><br />
-AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">Val#1168</a></td>
+AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">validation number 1168</a></td>
 <td>Windows 7 Ultimate and SP1 and Windows Server 2008 R2 and SP1 BitLocker Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1177">#1177</a></td>
 </tr>
 <tr class="odd">
@@ -3080,70 +3080,70 @@ AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <p>Version 10.0.16299</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG:</b> [Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4627">Val#4627</a>)]</td>
+<td><b>CTR_DRBG:</b> [Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4627">validation number 4627</a>)]</td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1556">#1556</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">Val#4624</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">validation number 4624</a>)]</td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">#1555</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4434">Val#4434</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4434">validation number 4434</a>)]</td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1433">#1433</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4433">Val#4433</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4433">validation number 4433</a>)]</td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1432">#1432</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4431">Val#4431</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4431">validation number 4431</a>)]</td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">#1430</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4430">Val#4430</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4430">validation number 4430</a>)]</td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">#1429</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4074">Val#4074</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4074">validation number 4074</a>)]</td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">#1222</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">Val#4064</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">validation number 4064</a>)]</td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">#1217</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">Val#3629</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">validation number 3629</a>)]</td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub and Surface Hub SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">#955</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">Val#3497</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">validation number 3497</a>)]</td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">#868</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">Val#2832</a>)]</td>
+<td><b>CTR_DRBG:</b>[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2832">validation number 2832</a>)]</td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">#489</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">Val#2197</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_Use_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2197">validation number 2197</a>)]</td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Next Generation Symmetric Cryptographic Algorithms Implementations (SYMCRYPT) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a></td>
 </tr>
 <tr class="odd">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2023">Val#2023</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#2023">validation number 2023</a>)]</td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">#193</a></td>
 </tr>
 <tr class="even">
-<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">Val#1168</a>)]</td>
+<td><b>CTR_DRBG</b>:[Prediction Resistance Tested: Not Enabled; BlockCipher_No_df: (AES-256) (AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#1168">validation number 1168</a>)]</td>
 <td>Windows 7 Ultimate and SP1 and Windows Server 2008 R2 and SP1 RNG Library <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">#23</a></td>
 </tr>
 <tr class="odd">
@@ -3289,8 +3289,8 @@ AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <p><b>KeyPairGen</b>:   [(2048,256); (3072,256)]</p>
 <p><b>SIG(gen)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
 <p><b>SIG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p>DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val# 1555</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p>DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number  1555</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1223">#1223</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -3298,7 +3298,7 @@ AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <td><b>FIPS186-4:<br />
 PQG(ver)PARMS TESTED:</b>   [(1024,160) SHA(1)]<br />
 <b>SIG(ver)PARMS TESTED:</b>   [(1024,160) SHA(1)]<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1188">#1188</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
@@ -3306,7 +3306,7 @@ SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><b>FIPS186-4:<br />
 PQG(ver)PARMS TESTED:</b>   [(1024,160) SHA(1)]<br />
 <b>SIG(ver)PARMS TESTED:</b>   [(1024,160) SHA(1)]<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1187">#1187</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
@@ -3319,8 +3319,8 @@ KeyPairGen:    [(2048,256); (3072,256)]<br />
 <b>SIG(gen)</b>PARMS TESTED:   [(2048,256)<br />
 SHA(256); (3072,256) SHA(256)]<br />
 <b>SIG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val# 1217</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number  1217</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">#1098</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -3329,8 +3329,8 @@ DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation
 PQG(gen)</b>PARMS TESTED:   [(2048,256)SHA(256); (3072,256) SHA(256)] <b>PQG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 KeyPairGen:    [(2048,256); (3072,256)] <b>SIG(gen)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 <b>SIG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val# 955</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number  955</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1024">#1024</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -3340,8 +3340,8 @@ PQG(gen)</b>PARMS TESTED:   [(2048,256)SHA(256); (3072,256) SHA(256)]<br />
 <b>PQG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 KeyPairGen:    [(2048,256); (3072,256)]<br />
 <b>SIG(gen)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)] <b>SIG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val# 868</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number  868</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#983">#983</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -3354,8 +3354,8 @@ SHA(256); (3072,256) SHA(256)]<br />
 KeyPairGen:    [(2048,256); (3072,256)]<br />
 <b>SIG(gen)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 <b>SIG(ver)</b>PARMS TESTED:   [(2048,256) SHA(256); (3072,256) SHA(256)]</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val# 2373</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val# 489</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number  2373</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number  489</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#855">#855</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -3372,7 +3372,7 @@ PQG(gen)PARMS TESTED</b>: [(2048,256)SHA(256); (3072,256) SHA(256)]<br />
 <b>SIG(ver)PARMS TESTED</b>: [(2048,256) SHA(256); (3072,256) SHA(256)]<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#687">Historical DSA List Val#687</a>.</p></td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#687">Historical DSA List validation number 687</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">#687</a></td>
 </tr>
 <tr class="odd">
@@ -3381,75 +3381,75 @@ PQG(ver)</b> MOD(1024);<br />
 <b>SIG(ver)</b> MOD(1024);<br />
 SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a><br />
 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#686">Historical DSA List Val#686</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#686">Historical DSA List validation number 686</a>.</td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 DSS and Diffie-Hellman Enhanced Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#686">#686</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val# 1773</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">Val# 193</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#645">Historical DSA List Val#645</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number  1773</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#645">Historical DSA List validation number 645</a>.</td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#645">#645</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val# 1081</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">Val# 23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#391">Historical DSA List Val#391</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#386">Historical DSA List Val#386</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number  1081</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#391">Historical DSA List validation number 391</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#386">Historical DSA List validation number 386</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#391">#391</a></p>
 <p>Windows 7 Ultimate and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#386">#386</a></p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val# 1081</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#649">Val# 649</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#390">Historical DSA List Val#390</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#385">Historical DSA List Val#385</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number  1081</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#649">validation number  649</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#390">Historical DSA List validation number 390</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#385">Historical DSA List validation number 385</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#390">#390</a></p>
 <p>Windows 7 Ultimate and SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#385">#385</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val# 753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#284">Historical DSA List Val#284</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#283">Historical DSA List Val#283</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number  753</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#284">Historical DSA List validation number 284</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#283">Historical DSA List validation number 283</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#284">#284</a></p>
 <p>Windows Vista Ultimate SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#283">#283</a></p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val# 753</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#435">Val# 435</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#282">Historical DSA List Val#282</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#281">Historical DSA List Val#281</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number  753</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#435">validation number  435</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#282">Historical DSA List validation number 282</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#281">Historical DSA List validation number 281</a>.</td>
 <td><p>Windows Server 2008 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#282">#282</a></p>
 <p>Windows Vista Ultimate SP1 Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#281">#281</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val# 618</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">Val# 321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#227">Historical DSA List Val#227</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#226">Historical DSA List Val#226</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number  618</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#227">Historical DSA List validation number 227</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#226">Historical DSA List validation number 226</a>.</td>
 <td><p>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#227">#227</a></p>
 <p>Windows Vista Enhanced DSS (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#226">#226</a></p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#784">Val# 784</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#448">Val# 448</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#292">Historical DSA List Val#292</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#784">validation number  784</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#448">validation number  448</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#292">Historical DSA List validation number 292</a>.</td>
 <td>Windows XP Professional SP3 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#292">#292</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val# 783</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#447">Val# 447</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#291">Historical DSA List Val#291</a>.</td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number  783</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#447">validation number  447</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/dsahistoricalval.htm#291">Historical DSA List validation number 291</a>.</td>
 <td>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#291">#291</a></td>
 </tr>
 <tr class="even">
@@ -3459,8 +3459,8 @@ PQG(gen)</b> MOD(1024);<br />
 <b>KEYGEN(Y)</b> MOD(1024);<br />
 <b>SIG(gen)</b> MOD(1024);<br />
 <b>SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#611">Val# 611</a><br />
-RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#314">Val# 314</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#611">validation number  611</a><br />
+RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#314">validation number  314</a></td>
 <td>Windows 2003 SP2 Enhanced DSS and Diffie-Hellman Cryptographic Provider <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#221">#221</a></td>
 </tr>
 <tr class="odd">
@@ -3470,7 +3470,7 @@ PQG(gen)</b> MOD(1024);<br />
 <b>KEYGEN(Y)</b> MOD(1024);<br />
 <b>SIG(gen)</b> MOD(1024);<br />
 <b>SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#385">Val# 385</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#385">validation number  385</a></td>
 <td>Windows Server 2003 SP1 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#146">#146</a></td>
 </tr>
 <tr class="even">
@@ -3479,7 +3479,7 @@ PQG(ver)</b> MOD(1024);<br />
 <b>KEYGEN(Y)</b> MOD(1024);<br />
 <b>SIG(gen)</b> MOD(1024);<br />
 <b>SIG(ver)</b> MOD(1024);<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#181">Val# 181</a><br />
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#181">validation number  181</a><br />
 <br />
 </td>
 <td>Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#95">#95</a></td>
@@ -3801,8 +3801,8 @@ SHS: SHA-1 (BYTE)</p></td>
 <tr class="odd">
 <td><b>FIPS186-4:<br />
 PKG: CURVES</b>(P-256 P-384 TestingCandidates)<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val# 1555</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number  1555</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1136">#1136</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -3812,8 +3812,8 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>PKV: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val# 1555</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number  1555</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1135">#1135</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -3823,8 +3823,8 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>PKV: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
-SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val# 1555</a></td>
+SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number  1555</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1133">#1133</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -3834,8 +3834,8 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>PKV: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 384) P-521: (SHA-1, 512) <em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 <b>SigVer: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 384) P-521: (SHA-1, 512))<br />
-<b>SHS:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a><br />
-<b>DRBG:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">Val# 1430</a></td>
+<b>SHS:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a><br />
+<b>DRBG:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">validation number  1430</a></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1073">#1073</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
@@ -3845,8 +3845,8 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>PKV: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 384) P-521: (SHA-1, 512) <em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 <b>SigVer: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 384) P-521: (SHA-1, 512))<br />
-<b>SHS:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a><br />
-<b>DRBG:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">Val# 1429</a></td>
+<b>SHS:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a><br />
+<b>DRBG:</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">validation number  1429</a></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1072">#1072</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
@@ -3856,8 +3856,8 @@ PKG: CURVES</b>(P-256 P-384 TestingCandidates)<br />
 <b>PKV: CURVES</b>(P-256 P-384)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 256, 384) SIG(gen) with SHA-1 affirmed for use with protocols only.<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-1, 256) P-384: (SHA-1, 256, 384))</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">Val# 1222</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">validation number  1222</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#920">#920</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -3867,8 +3867,8 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>PKV: CURVES</b>(P-256 P-384 P-521)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val# 1217</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number  1217</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">#911</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -3877,8 +3877,8 @@ DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation
 PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val# 955</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number  955</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#760">#760</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -3887,8 +3887,8 @@ DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation
 PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 SigVer: CURVES(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val# 868</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number  868</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#706">#706</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -3897,8 +3897,8 @@ DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation
 PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))</p>
-<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val# 489</a></p></td>
+<p>SHS: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number  489</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">#505</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -3916,57 +3916,57 @@ PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
 <b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a><br />
 <b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#341">Historical ECDSA List Val#341</a>.</p></td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#341">Historical ECDSA List validation number 341</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">#341</a></td>
 </tr>
 <tr class="even">
 <td><p><b>FIPS186-2:<br />
 PKG: CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a><br />
-<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">Val# 193</a><br />
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a><br />
+<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a><br />
-<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">Val# 193</a></p>
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a><br />
+<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a></p>
 <p><b>FIPS186-4:<br />
 PKG: CURVES</b>(P-256 P-384 P-521 ExtraRandomBits)<br />
 <b>SigGen: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512)<br />
 <b>SigVer: CURVES</b>(P-256: (SHA-256) P-384: (SHA-384) P-521: (SHA-512))<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a><br />
-<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">Val# 193</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#295">Historical ECDSA List Val#295</a>.</p></td>
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a><br />
+<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#295">Historical ECDSA List validation number 295</a>.</p></td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#295">#295</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 PKG: CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a><br />
-<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">Val# 23</a><br />
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
+<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a><br />
-<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">Val# 23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#142">Historical ECDSA List Val#142</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#141">Historical ECDSA List Val#141</a>.</td>
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
+<b>DRBG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#142">Historical ECDSA List validation number 142</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#141">Historical ECDSA List validation number 141</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#142">#142</a></p>
 <p>Windows 7 Ultimate and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#141">#141</a></p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 PKG: CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a><br />
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#83">Historical ECDSA List Val#83</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#82">Historical ECDSA List Val#82</a>.</td>
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#83">Historical ECDSA List validation number 83</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#82">Historical ECDSA List validation number 82</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#83">#83</a></p>
 <p>Windows Vista Ultimate SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#82">#82</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 PKG: CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a><br />
-<b>RNG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val# 321</a><br />
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
+<b>RNG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number  321</a><br />
 <b>SIG(ver): CURVES</b>(P-256 P-384 P-521)<br />
-<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a><br />
-<b>RNG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">Val# 321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#60">Historical ECDSA List Val#60</a>.</td>
+<b>SHS</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
+<b>RNG</b>: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/ecdsahistoricalval.html#60">Historical ECDSA List validation number 60</a>.</td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#60">#60</a></td>
 </tr>
 </tbody>
@@ -4129,111 +4129,111 @@ Some of the previously validated components for this validation have been remove
 <p>Version 10.0.16299</p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3062">#3062</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1(Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></p></td>
+<td><p><b>HMAC-SHA1(Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3061">#3061</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p></td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2946">#2946</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p></td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2945">#2945</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></p></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2943">#2943</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested:</b> KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested:</b> KSBS) SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></p></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2942">#2942</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p>
 <p><b>HMAC-SHA256</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p>
 <p><b>HMAC-SHA384</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2661">#2661</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p>
-<p><b>HMAC-SHA256</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p>
-<p><b>HMAC-SHA384</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p>
-<p><b>HMAC-SHA512</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p></td>
+<td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p>
+<p><b>HMAC-SHA256</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p>
+<p><b>HMAC-SHA384</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p>
+<p><b>HMAC-SHA512</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">#2651</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p>
 <p><b>HMAC-SHA256</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p>
 <p><b>HMAC-SHA384</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p>
 <p><b>HMAC-SHA512</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">#2381</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
 <tr class="even">
 <td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested:  KSBS)<br />
-SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a></p>
+SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a></p>
 <p><b>HMAC-SHA256</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a></p>
+SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a></p>
 <p><b>HMAC-SHA384</b> (Key Size Ranges Tested:  KSBS)<br />
-<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886"> SHSVal# 2886</a></p>
+<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886"> SHSvalidation number  2886</a></p>
 <p><b>HMAC-SHA512</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a></p></td>
+SHS<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">#2233</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p>
 <p><b>HMAC-SHA256</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p>
 <p><b>HMAC-SHA384</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p>
 <p><b>HMAC-SHA512</b> (Key Size Ranges Tested:  KSBS)<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">#1773</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">Val#2764</a></p>
-<p><b>HMAC-SHA256</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">Val#2764</a></p>
-<p><b>HMAC-SHA384</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">Val#2764</a></p>
-<p><b>HMAC-SHA512</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">Val#2764</a></p></td>
+<td><p><b>HMAC-SHA1</b> (Key Sizes Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">validation number 2764</a></p>
+<p><b>HMAC-SHA256</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">validation number 2764</a></p>
+<p><b>HMAC-SHA384</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">validation number 2764</a></p>
+<p><b>HMAC-SHA512</b> (Key Size Ranges Tested: KSBS) SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2764">validation number 2764</a></p></td>
 <td><p>Windows CE and Windows Mobile, and Windows Embedded Handheld Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2122">#2122</a></p>
 <p>Version 5.2.29344</p></td>
 </tr>
@@ -4261,133 +4261,133 @@ SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Next Generation Symmetric Cryptographic Algorithms Implementations (SYMCRYPT) #<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">1345</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a></p>
-<p><b>Tinker HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a></p>
+<p><b>Tinker HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a></p></td>
 <td>Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1364">#1364</a></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a></p></td>
 <td>Windows Embedded Compact 7 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1227">#1227</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p></td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#686">#686</a></p>
 <p>Windows 7 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#677">#677</a></p>
 <p>Windows Server 2008 R2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#687">#687</a></p>
 <p>Windows 7 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#673">#673</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1(Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a></p></td>
+<td><p><b>HMAC-SHA1(Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a></p></td>
 <td>Windows 7 and SP1 and Windows Server 2008 R2 and SP1 BitLocker Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#675">#675</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a></p></td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#452">#452</a></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p></td>
 <td>Windows Vista Ultimate SP1 and Windows Server 2008 BitLocker Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#415">#415</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS)</b>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS)</b>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p></td>
 <td><p>Windows Server 2008 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#408">#408</a></p>
 <p>Windows Vista Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#407">#407</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS)SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS)SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p></td>
 <td>Windows Vista Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#297">#297</a></td>
 </tr>
 <tr class="even">
-<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#785">Val#785</a></td>
+<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#785">validation number 785</a></td>
 <td><p>Windows XP Professional SP3 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#429">#429</a></p>
 <p>Windows XP, vendor-affirmed</p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a></p></td>
 <td>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#428">#428</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a></p></td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#289">#289</a></td>
 </tr>
 <tr class="odd">
-<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#610">Val#610</a></td>
+<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#610">validation number 610</a></td>
 <td>Windows Server 2003 SP2 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#287">#287</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a></p></td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#413">#413</a></p>
 <p>Windows Vista Ultimate SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#412">#412</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#737">Val#737</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#737">Val#737</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#737">validation number 737</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#737">validation number 737</a></p></td>
 <td>Windows Vista Ultimate BitLocker Drive Encryption <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#386">#386</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#618">Val#618</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#618">validation number 618</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a></p></td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#298">#298</a></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS)SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS)SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a></p></td>
 <td>Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#267">#267</a></td>
 </tr>
 <tr class="even">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a></p></td>
 <td>Windows CE and Windows Mobile 6.0 and Windows Mobil 6.5 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#260">#260</a></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#495">Val#495</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#495">Val#495</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#495">validation number 495</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#495">validation number 495</a></p></td>
 <td>Windows Vista BitLocker Drive Encryption <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#199">#199</a></td>
 </tr>
 <tr class="even">
-<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">Val#364</a></td>
+<td><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">validation number 364</a></td>
 <td><p>Windows Server 2003 SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#99">#99</a></p>
 <p>Windows XP, vendor-affirmed</p></td>
 </tr>
 <tr class="odd">
-<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a></p>
-<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a></p>
-<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a></p>
-<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a></p></td>
+<td><p><b>HMAC-SHA1 (Key Sizes Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a></p>
+<p><b>HMAC-SHA256 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a></p>
+<p><b>HMAC-SHA384 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a></p>
+<p><b>HMAC-SHA512 (Key Size Ranges Tested: KSBS) SHS</b><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a></p></td>
 <td>Windows CE 5.00 and Windows CE 5.01 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#31">#31</a></td>
 </tr>
 </tbody>
@@ -4929,9 +4929,9 @@ SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 </tr>
 <tr class="odd">
 <td><p><b>ECC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Full Validation   Key Regeneration) <b>SCHEMES</b> [<b>FullUnified</b> (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1135">Val#1135</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1556">Val#1556</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1135">validation number 1135</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1556">validation number 1556</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#128">#128</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -4939,16 +4939,16 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><p><b>FFC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) <b>SCHEMES</b> [<b>dhEphem</b> (KARole(s): Initiator / Responder)<br />
 (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)]<br />
 [<b>dhOneFlow</b> (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)] [<b>dhStatic</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>FB:</b> SHA256 HMAC) (<b>FC:</b> SHA256   HMAC)]<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1223">Val#1223</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val#1555</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1223">validation number 1223</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number 1555</a></p>
 <p><b>ECC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) <b>SCHEMES</b> [<b>EphemeralUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [<b>OnePassDH</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [<b>StaticUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 <br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1133">Val#1133</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val#1555</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1133">validation number 1133</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number 1555</a></p></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#127">#127</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -4956,9 +4956,9 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><p><b>FFC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) <b>SCHEMES</b> [<b>dhEphem</b> (KARole(s): Initiator / Responder)<br />
 (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)]<br />
 [<b>dhOneFlow</b> (KARole(s): Initiator / Responder) (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)] [<b>dhStatic</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>FB:</b> SHA256 HMAC) (<b>FC:</b> SHA256   HMAC)]<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a><br />
-DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1188">Val#1188</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">Val#1430</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a><br />
+DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1188">validation number 1188</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">validation number 1430</a></p>
 <p><b>ECC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) <b>SCHEMES</b> [<b>EphemeralUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [<b>OnePassDH</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [<b>StaticUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]</p></td>
@@ -4970,23 +4970,23 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)]<br />
 [<b>dhHybridOneFlow</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>FB:</b>SHA256 HMAC) (<b>FC:</b> SHA256   HMAC)]<br />
 [<b>dhStatic</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>FB:</b>SHA256 HMAC) (<b>FC:</b> SHA256   HMAC)]<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a><br />
-DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1187">Val#1187</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">Val#1429</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a><br />
+DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1187">validation number 1187</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">validation number 1429</a></p>
 <p><b>ECC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) <b>SCHEMES</b> [<b>EphemeralUnified</b> (<b>No_KC</b>) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [<b>OnePassDH</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [<b>StaticUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC:</b> P-256   SHA256   HMAC) (<b>ED:</b> P-384   SHA384   HMAC) (<b>EE:</b> P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 <br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a><br />
-ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1072">Val#1072</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">Val#1429</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a><br />
+ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#1072">validation number 1072</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">validation number 1429</a></p></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#114">#114</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>ECC:</b>  (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Full Validation   Key Regeneration)<br />
 <b>SCHEMES  [FullUnified  (No_KC</b>  &amp;lt; KARole(s): Initiator / Responder &amp;gt; &amp;lt; KDF: CONCAT &amp;gt;) (<b>EC:</b>  P-256   SHA256   HMAC) (<b>ED:</b>  P-384   SHA384   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#920">Val#920</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">Val#1222</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#920">validation number 920</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">validation number 1222</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#93">#93</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -4995,11 +4995,11 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <b>SCHEMES</b>  [dhEphem  (KARole(s): Initiator / Responder)<br />
 (<b>FB:</b> SHA256) (<b>FC:</b> SHA256)]<br />
 [dhOneFlow (KARole(s): Initiator / Responder) (<b>FB:</b>  SHA256) (<b>FC:</b>  SHA256)] [<b>dhStatic (No_KC</b>  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (FB:  SHA256 HMAC) (FC:  SHA256   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">Val#1098</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val#1217</a></p>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">validation number 1098</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number 1217</a></p>
 <p><b>ECC:</b>  (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) <b>SCHEMES</b>  [EphemeralUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [OnePassDH  (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [StaticUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">Val#1098</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">Val#911</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val#1217</a> HMAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">Val#2651</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1098">validation number 1098</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#911">validation number 911</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number 1217</a> HMAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">validation number 2651</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">#92</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -5007,11 +5007,11 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><p><b>FFC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) SCHEMES  [dhEphem  (KARole(s): Initiator / Responder)<br />
 (FB: SHA256) (FC: SHA256)]<br />
 [dhOneFlow (KARole(s): Initiator / Responder) (FB:  SHA256) (FC:  SHA256)] [dhStatic (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (FB:  SHA256 HMAC) (FC:  SHA256   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1024">Val#1024</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val#955</a></p>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#1024">validation number 1024</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number 955</a></p>
 <p><b>ECC:</b>  (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) SCHEMES  [EphemeralUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [OnePassDH  (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [StaticUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#760">Val#760</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val#955</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#760">validation number 760</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number 955</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub and Surface Hub Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#72">#72</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -5019,11 +5019,11 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><p><b>FFC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) SCHEMES  [dhEphem  (KARole(s): Initiator / Responder)<br />
 (FB: SHA256) (FC: SHA256)]<br />
 [dhOneFlow (KARole(s): Initiator / Responder) (FB:  SHA256) (FC:  SHA256)] [dhStatic (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (FB:  SHA256 HMAC) (FC:  SHA256   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#983">Val#983</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val#868</a></p>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#983">validation number 983</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number 868</a></p>
 <p><b>ECC:</b>  (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) SCHEMES  [EphemeralUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [OnePassDH  (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [StaticUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#706">Val#706</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val#868</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#706">validation number 706</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number 868</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#64">#64</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -5031,11 +5031,11 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 <td><p><b>FFC:</b> (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation) SCHEMES  [dhEphem  (KARole(s): Initiator / Responder)<br />
 (FB: SHA256) (FC: SHA256)]<br />
 [dhOneFlow (KARole(s): Initiator / Responder) (FB:  SHA256) (FC:  SHA256)] [dhStatic (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (FB:  SHA256 HMAC) (FC:  SHA256   HMAC)]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#855">Val#855</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val#489</a></p>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#855">validation number 855</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number 489</a></p>
 <p><b>ECC:</b>  (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG   DPV   KPG   Partial Validation   Key Regeneration) SCHEMES  [EphemeralUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [OnePassDH  (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]<br />
 [StaticUnified (No_KC  &amp;lt; KARole(s): Initiator / Responder &amp;gt;) (EC:  P-256   SHA256   HMAC) (ED:  P-384   SHA384   HMAC) (EE:  P-521   HMAC (SHA512, HMAC_SHA512))]</p>
-<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">Val#505</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val#489</a></p></td>
+<p>SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#505">validation number 505</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number 489</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 Cryptography Next Generation Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#47">#47</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -5044,12 +5044,12 @@ DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-
 (<b>FA</b>: SHA256) (<b>FB</b>: SHA256) (<b>FC</b>: SHA256)]<br />
 [<b>dhOneFlow</b> (KARole(s): Initiator / Responder) (<b>FA</b>: SHA256) (<b>FB</b>: SHA256) (<b>FC</b>: SHA256)]<br />
 [<b>dhStatic</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>FA</b>: SHA256 HMAC) (<b>FB</b>: SHA256 HMAC) (<b>FC</b>: SHA256 HMAC)]<br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">Val#687</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a></p>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a> DSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#687">validation number 687</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a></p>
 <p><b>ECC</b>: (FUNCTIONS INCLUDED IN IMPLEMENTATION: DPG DPV KPG Partial Validation Key Regeneration) <b>SCHEMES</b> [<b>EphemeralUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (EC: P-256 SHA256 HMAC) (<b>ED</b>: P-384 SHA384 HMAC) (<b>EE</b>: P-521 HMAC (SHA512, HMAC_SHA512)))]<br />
 [<b>OnePassDH(No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC</b>: P-256 SHA256) (<b>ED</b>: P-384 SHA384) (<b>EE</b>: P-521 (SHA512, HMAC_SHA512)))]<br />
 [<b>StaticUnified</b> (<b>No_KC</b> &amp;lt; KARole(s): Initiator / Responder&amp;gt;) (<b>EC</b>: P-256 SHA256 HMAC) (<b>ED</b>: P-384 SHA384 HMAC) (<b>EE</b>: P-521 HMAC (SHA512, HMAC_SHA512))]<br />
 <br />
-SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">Val#341</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a></p></td>
+SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a> ECDSA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/ecdsa#341">validation number 341</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a></p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#36">#36</a></td>
 </tr>
 <tr class="odd">
@@ -5169,55 +5169,55 @@ SP 800-108 Key-Based Key Derivation Functions (KBKDF)
 <tr class="odd">
 <td><b>CTR_Mode:</b> (Llength(Min0 Max0) MACSupported([HMACSHA1] [HMACSHA256] [HMACSHA384]) LocationCounter([BeforeFixedData]) rlength([32]))<br />
 <br />
-KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#128">Val#128</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1556">Val#1556</a><br />
-MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3062">Val#3062</a></td>
+KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#128">validation number 128</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1556">validation number 1556</a><br />
+MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3062">validation number 3062</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#141">#141</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="even">
 <td><b>CTR_Mode:</b> (Llength(Min20 Max64) MACSupported([CMACAES128] [CMACAES192] [CMACAES256] [HMACSHA1] [HMACSHA256] [HMACSHA384] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))<br />
 <br />
-KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#127">Val#127</a><br />
-AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">Val#4624</a><br />
-DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val#1555</a><br />
-MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3061">Val#3061</a></td>
+KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#127">validation number 127</a><br />
+AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4624">validation number 4624</a><br />
+DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number 1555</a><br />
+MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#3061">validation number 3061</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#140">#140</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CTR_Mode:</b>  (Llength(Min20 Max64) MACSupported([HMACSHA1] [HMACSHA256] [HMACSHA384]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#93">Val#93</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">Val#1222</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2661">Val#2661</a></p></td>
+<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#93">validation number 93</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1222">validation number 1222</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2661">validation number 2661</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#102">#102</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="even">
 <td><p><b>CTR_Mode:</b>  (Llength(Min20 Max64) MACSupported([CMACAES128] [CMACAES192] [CMACAES256] [HMACSHA1] [HMACSHA256] [HMACSHA384] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">Val#92</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">Val#4064</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val#1217</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">Val#2651</a></p></td>
+<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#92">validation number 92</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#4064">validation number 4064</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number 1217</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2651">validation number 2651</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#101">#101</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CTR_Mode:</b>  (Llength(Min20 Max64) MACSupported([CMACAES128] [CMACAES192] [CMACAES256] [HMACSHA1] [HMACSHA256] [HMACSHA384] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#72">Val#72</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">Val#3629</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val#955</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">Val#2381</a></p></td>
+<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#72">validation number 72</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3629">validation number 3629</a> DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number 955</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2381">validation number 2381</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#72">#72</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
 <tr class="even">
 <td><p><b>CTR_Mode:</b>  (Llength(Min20 Max64) MACSupported([CMACAES128] [CMACAES192] [CMACAES256] [HMACSHA1] [HMACSHA256] [HMACSHA384] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#64">Val#64</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">Val#3497</a> RBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val#868</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">Val#2233</a></p></td>
+<p>KAS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kas#64">validation number 64</a> AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/aes#3497">validation number 3497</a> RBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number 868</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#2233">validation number 2233</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#66">#66</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>CTR_Mode:</b>  (Llength(Min0 Max0) MACSupported([HMACSHA1] [HMACSHA256] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val#489</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">Val#1773</a></p></td>
+<p>DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number 489</a> MAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1773">validation number 1773</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 Cryptography Next Generation Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/kdf#30">#30</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
 <tr class="even">
 <td><p><b>CTR_Mode</b>: (Llength(Min0 Max4) MACSupported([HMACSHA1] [HMACSHA256] [HMACSHA512]) LocationCounter([BeforeFixedData]) rlength([32]))</p>
-<p>DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> HMAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">Val#1345</a></p></td>
+<p>DRBG <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a> HMAC <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/hmac#1345">validation number 1345</a></p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="http://csrc.nist.gov/groups/stm/cavp/documents/kbkdf800-108/kbkdfval.htm#3">#3</a></td>
 </tr>
 </tbody>
@@ -5862,14 +5862,14 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384)) <b><em>SIG(gen) with
 </b> SIG(Ver) (1024 SHA(1, 256, 384)) (2048 SHA(1, 256, 384))<br />
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48))) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48)))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Pro, Enterprise, Education Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2524">#2524</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile RSA32 Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2523">#2523</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -5881,8 +5881,8 @@ SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(62))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">Val# 1555</a></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1555">validation number  1555</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2522">#2522</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
@@ -5894,65 +5894,65 @@ PGM(ProbRandom:</b> (2048, 3072) <b>PPTT:</b>(C.2)<br />
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(62))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">Val#3790</a></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3790">validation number 3790</a></td>
 <td><p>Windows 10 Creators Update (version 1703) Home, Pro, Enterprise, Education, Windows 10 S, Windows 10 Mobile SymCrypt Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2521">#2521</a></p>
 <p>Version 10.0.15063</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a><br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a><br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p>
 <p><b>FIPS186-4:<br />
 ALG[ANSIX9.31]</b> Sig(Gen): (2048 SHA(1)) (3072 SHA(1))<b><br />
 <em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em></b> Sig(Ver): (1024 SHA(1)) (2048 SHA(1)) (3072 SHA(1))<br />
 <b>ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512)) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">Val#3652</a></p></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3652">validation number 3652</a></p></td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2415">#2415</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
 <td><p><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a><br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a><br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p>
 <p><b>FIPS186-4:<br />
 ALG[ANSIX9.31]</b> Sig(Gen): (2048 SHA(1)) (3072 SHA(1))<b><br />
 <em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em></b> Sig(Ver): (1024 SHA(1)) (2048 SHA(1)) (3072 SHA(1))<br />
 <b>ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512)) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">Val#3651</a></p></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3651">validation number 3651</a></p></td>
 <td><p>Windows Embedded Compact Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2414">#2414</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a><br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a></p>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a><br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a></p>
 <p><b>FIPS186-4:<br />
 186-4KEY(gen):</b> FIPS186-4_Fixed_e (10001);<br />
 <b>PGM(ProbRandom:</b> (2048, 3072) <b>PPTT:</b>(C.2)<br />
 <b>ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512)) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">Val# 3649</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">Val# 1430</a></p></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3649">validation number  3649</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1430">validation number  1430</a></p></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2412">#2412</a></p>
 <p>Version 7.00.2872</p></td>
 </tr>
 <tr class="even">
 <td><p><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a><br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a></p>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a><br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a></p>
 <p><b>FIPS186-4:<br />
 186-4KEY(gen):</b> FIPS186-4_Fixed_e (10001);<br />
 <b>PGM(ProbRandom:</b> (2048, 3072) <b>PPTT:</b>(C.2)<br />
 <b>ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512)) <b><em>SIG(gen) with SHA-1 affirmed for use with protocols only.</em><br />
 </b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))<br />
-SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">Val#3648</a><br />
-DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">Val# 1429</a></p></td>
+SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3648">validation number 3648</a><br />
+DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1429">validation number  1429</a></p></td>
 <td><p>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2411">#2411</a></p>
 <p>Version 8.00.6246</p></td>
 </tr>
@@ -5962,7 +5962,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(1, 256, 384)) SIG(gen) with SHA-1 
 SIG(Ver) (1024 SHA(1, 256, 384)) (2048 SHA(1, 256, 384))<br />
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48))) SIG(gen) with SHA-1 affirmed for use with protocols only.<br />
 Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48)))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, and Surface Pro 3 w/ Windows 10 Anniversary Update Virtual TPM Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2206">#2206</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -5970,14 +5970,14 @@ Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48))) (2048 SHA(
 <td><p><b>FIPS186-4:<br />
 186-4KEY(gen):</b> FIPS186-4_Fixed_e (10001);<br />
 <b>PGM(ProbPrimeCondition):</b> 2048, 3072 PPTT:(C.3)</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val# 1217</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number  1217</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2195">#2195</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3346">Val#3346</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3346">validation number 3346</a></p></td>
 <td><p>soft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update RSA32 Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2194">#2194</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -5985,7 +5985,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 25
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384, 512))<br />
 <b>SIG(Ver)</b> (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val# 1217</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number  1217</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2193">#2193</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -5993,7 +5993,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384
 <td><p><b>FIPS186-4:<br />
 [RSASSA-PSS]: Sig(Gen):</b> (2048 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))</p>
 <p><b>Sig(Ver):</b> (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(62))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">Val# 3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">Val# 1217</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3347">validation number  3347</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#1217">validation number  1217</a></p></td>
 <td><p>Microsoft Windows 10 Anniversary Update, Windows Server 2016, Windows Storage Server 2016; Microsoft Surface Book, Surface Pro 4, Surface Pro 3 and Surface 3 w/ Windows 10 Anniversary Update; Microsoft Lumia 950 and Lumia 650 w/ Windows 10 Mobile Anniversary Update Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#2192">#2192</a></p>
 <p>Version 10.0.14393</p></td>
 </tr>
@@ -6001,14 +6001,14 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384
 <td><p><b>FIPS186-4:<br />
 186-4KEY(gen)</b>:  FIPS186-4_Fixed_e (10001);<br />
 <b>PGM(ProbPrimeCondition</b>): 2048, 3072 PPTT:(C.3)</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">Val# 955</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#955">validation number  955</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub 84” and Surface Hub 55” RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1889">#1889</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">Val#3048</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3048">validation number 3048</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub and Surface Hub RSA32 Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1871">#1871</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -6016,7 +6016,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 25
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384, 512))<br />
 <b>SIG(Ver)</b> (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub and Surface Hub MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1888">#1888</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -6024,7 +6024,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384
 <td><p><b>FIPS186-4:<br />
 [RSASSA-PSS]: Sig(Gen)</b>: (2048 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))<br />
 <b>Sig(Ver):</b> (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(62))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">Val# 3047</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#3047">validation number  3047</a></p></td>
 <td><p>Microsoft Windows 10 November 2015 Update; Microsoft Surface Book, Surface Pro 4, Surface Pro 3, Surface 3, Surface Pro 2, and Surface Pro w/ Windows 10 November 2015 Update; Windows 10 Mobile for Microsoft Lumia 950 and Microsoft Lumia 635; Windows 10 for Microsoft Surface Hub and Surface Hub Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1887">#1887</a></p>
 <p>Version 10.0.10586</p></td>
 </tr>
@@ -6032,21 +6032,21 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384
 <td><p><b>FIPS186-4:<br />
 186-4KEY(gen):</b> FIPS186-4_Fixed_e (10001);<br />
 PGM(ProbPrimeCondition): 2048, 3072 PPTT:(C.3)</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">Val# 868</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#868">validation number  868</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1798">#1798</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">Val#2871</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">validation number 2871</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 RSA32 Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1784">#1784</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
 <tr class="even">
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">Val#2871</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2871">validation number 2871</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1783">#1783</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -6054,7 +6054,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 25
 <td><p><b>FIPS186-4:<br />
 [RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))<br />
 Sig(Ver): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">Val# 2886</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2886">validation number  2886</a></p></td>
 <td><p>Microsoft Windows 10, Microsoft Surface Pro 3 with Windows 10, Microsoft Surface 3 with Windows 10, Microsoft Surface Pro 2 with Windows 10, Microsoft Surface Pro with Windows 10 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1802">#1802</a></p>
 <p>Version 10.0.10240</p></td>
 </tr>
@@ -6062,14 +6062,14 @@ Sig(Ver): (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen
 <td><p><b>FIPS186-4:<br />
 186-4KEY(gen):</b> FIPS186-4_Fixed_e;<br />
 <b>PGM(ProbPrimeCondition):</b> 2048, 3072 PPTT:(C.3)</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">Val# 489</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a> DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#489">validation number  489</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1487">#1487</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
 <tr class="odd">
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry RSA32 Algorithm Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1494">#1494</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -6077,7 +6077,7 @@ ALG[RSASSA-PKCS1_V1_5]</b> SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 25
 <td><p><b>FIPS186-4:<br />
 ALG[RSASSA-PKCS1_V1_5</b>] SIG(gen) (2048 SHA(256, 384, 512)) (3072 SHA(256, 384, 512))<br />
 SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p></td>
 <td><p>Microsoft Windows 8.1, Microsoft Windows Server 2012 R2, Microsoft Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 MsBignum Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1493">#1493</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -6085,7 +6085,7 @@ SIG(Ver) (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 
 <td><p><b>FIPS186-4:<br />
 [RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))<br />
  Sig(Ver): (1024 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(62))) (2048 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64))) (3072 SHA(1 SaltLen(20), 256 SaltLen(32), 384 SaltLen(48), 512 SaltLen(64)))</p>
-<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">Val#2373</a></p></td>
+<p>SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#2373">validation number 2373</a></p></td>
 <td><p>Windows Storage Server 2012 R2, Microsoft Windows RT 8.1, Microsoft Surface with Windows RT 8.1, Microsoft Surface Pro with Windows 8.1, Microsoft Surface 2, Microsoft Surface Pro 2, Microsoft Surface Pro 3, Microsoft Windows Phone 8.1, Microsoft Windows Embedded 8.1 Industry, and Microsoft StorSimple 8100 Cryptography Next Generation Cryptographic Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1519">#1519</a></p>
 <p>Version 6.3.9600</p></td>
 </tr>
@@ -6096,7 +6096,7 @@ SIG(Ver) (1024 SHA(1, 256, 384, 512-256)) (2048 SHA(1, 256, 384, 512-256)) (3072
 <b>[RSASSA-PSS]:</b> Sig(Gen): (2048 SHA(256, 384, 512)) (3072 SHA(256, 384, 512))<br />
 Sig(Ver): (1024 SHA(1, 256, 384, 512)) (2048 SHA(1, 256, 384, 512)) (3072 SHA(1, 256, 384, 512, 512))<br />
 SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1903">#1903</a></p>
-<p>Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1134">Historical RSA List Val#1134</a>.</p></td>
+<p>Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1134">Historical RSA List validation number 1134</a>.</p></td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG) Implementations <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1134">#1134</a></td>
 </tr>
 <tr class="odd">
@@ -6111,161 +6111,161 @@ SHA <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#258">#258</a><br />
 <b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>,<br />
 SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1902">#1902</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1132">Historical RSA List Val#1132</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1132">Historical RSA List validation number 1132</a>.</td>
 <td>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1132">#1132</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">Val#1774</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1052">Historical RSA List Val#1052</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1774">validation number 1774</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1052">Historical RSA List validation number 1052</a>.</td>
 <td>Windows Embedded Compact 7 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1052">#1052</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
-ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">Val# 193</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">Val#1773</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1051">Historical RSA List Val#1051</a>.</td>
+ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#193">validation number  193</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1773">validation number 1773</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#1051">Historical RSA List validation number 1051</a>.</td>
 <td>Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#1051">#1051</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#568">Historical RSA List Val#568</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#568">Historical RSA List validation number 568</a>.</td>
 <td>Windows Server 2008 R2 and SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#568">#568</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#567">Historical RSA List Val#567</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#560">Historical RSA List Val#560</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#567">Historical RSA List validation number 567</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#560">Historical RSA List validation number 560</a>.</td>
 <td><p>Windows Server 2008 R2 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#567">#567</a></p>
 <p>Windows 7 and SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#560">#560</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
-ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">Val# 23</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#559">Historical RSA List Val#559</a>.</td>
+ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 DRBG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/drbg#23">validation number  23</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#559">Historical RSA List validation number 559</a>.</td>
 <td>Windows 7 and SP1 and Server 2008 R2 and SP1 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#559">#559</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">Val#1081</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#557">Historical RSA List Val#557</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">validation number 1081</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#557">Historical RSA List validation number 557</a>.</td>
 <td>Windows 7 and SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#557">#557</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">Val#816</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#395">Historical RSA List Val#395</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816">validation number 816</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#395">Historical RSA List validation number 395</a>.</td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#395">#395</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">Val#783</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#371">Historical RSA List Val#371</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#783">validation number 783</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#371">Historical RSA List validation number 371</a>.</td>
 <td>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#371">#371</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>,<br />
-<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#358">Historical RSA List Val#358</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#357">Historical RSA List Val#357</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
+<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#358">Historical RSA List validation number 358</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#357">Historical RSA List validation number 357</a>.</td>
 <td><p>Windows Server 2008 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#358">#358</a></p>
 <p>Windows Vista SP1 CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#357">#357</a></p></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">Val#753</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#355">Historical RSA List Val#355</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#354">Historical RSA List Val#354</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#753">validation number 753</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#355">Historical RSA List validation number 355</a>. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#354">Historical RSA List validation number 354</a>.</td>
 <td><p>Windows Server 2008 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#355">#355</a></p>
 <p>Windows Vista SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#354">#354</a></p></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#353">Historical RSA List Val#353</a>.</td>
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#353">Historical RSA List validation number 353</a>.</td>
 <td>Windows Vista SP1 and Windows Server 2008 RSA Key Generation Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#353">#353</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
-ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">Val# 321</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#258">Historical RSA List Val#258</a>.</td>
+ALG[ANSIX9.31]:</b> Key(gen)(MOD: 2048, 3072, 4096 PubKey Values: 65537 RNG: <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#321">validation number  321</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#258">Historical RSA List validation number 258</a>.</td>
 <td>Windows Vista RSA key generation implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#258">#258</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>,<br />
-<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#257">Historical RSA List Val#257</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
+<b>ALG[RSASSA-PSS]:</b> SIG(gen); 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#257">Historical RSA List validation number 257</a>.</td>
 <td>Windows Vista CNG algorithms <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#257">#257</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
-ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">Val#618</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#255">Historical RSA List Val#255</a>.</td>
+ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#618">validation number 618</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#255">Historical RSA List validation number 255</a>.</td>
 <td>Windows Vista Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#255">#255</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">Val#613</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#245">Historical RSA List Val#245</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#613">validation number 613</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#245">Historical RSA List validation number 245</a>.</td>
 <td>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#245">#245</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">Val#589</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#230">Historical RSA List Val#230</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#589">validation number 589</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#230">Historical RSA List validation number 230</a>.</td>
 <td>Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#230">#230</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">Val#578</a>, SHA-512<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#578">Val#578</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#222">Historical RSA List Val#222</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#578">validation number 578</a>, SHA-512<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#578">validation number 578</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#222">Historical RSA List validation number 222</a>.</td>
 <td>Windows CE and Windows Mobile 6 and Windows Mobile 6.1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#222">#222</a></td>
 </tr>
 <tr class="even">
 <td><b>FIPS186-2:<br />
 ALG[RSASSA-PKCS1_V1_5]:</b><br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">Val#364</a><br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#81">Historical RSA List Val#81</a>.</td>
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#364">validation number 364</a><br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#81">Historical RSA List validation number 81</a>.</td>
 <td>Windows Server 2003 SP1 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#81">#81</a></td>
 </tr>
 <tr class="odd">
 <td><b>FIPS186-2:<br />
 ALG[ANSIX9.31]:</b><br />
-SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#305">Val#305</a><br />
-<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>,<br />
-SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">Val#305</a>,<br />
-Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#52">Historical RSA List Val#52</a>.</td>
+SIG(ver); 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="http://csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.htm#305">validation number 305</a><br />
+<b>ALG[RSASSA-PKCS1_V1_5]:</b> SIG(gen) 2048, 3072, 4096, SHS: SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>,<br />
+SIG(ver): 1024, 1536, 2048, 3072, 4096, SHS: SHA-1<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-256<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-384<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>, SHA-512<a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#305">validation number 305</a>,<br />
+Some of the previously validated components for this validation have been removed because they're now non-compliant per the SP800-131A transition. See <a href="http://csrc.nist.gov/groups/stm/cavp/documents/dss/rsahistoricalval.html#52">Historical RSA List validation number 52</a>.</td>
 <td>Windows CE 5.00 and Windows CE 5.01 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rsa#52">#52</a></td>
 </tr>
 <tr class="even">
