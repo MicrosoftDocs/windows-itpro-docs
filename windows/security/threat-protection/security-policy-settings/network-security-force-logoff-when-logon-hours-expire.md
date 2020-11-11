@@ -1,6 +1,6 @@
 ---
 title: Network security Force logoff when logon hours expire (Windows 10)
-description: Best practices, location, values, policy management and security considerations for the policy setting, Network security Force logoff when logon hours expire.
+description: Best practices, location, values, policy management, and security considerations for the policy setting, Network security Force logoff when logon hours expire.
 ms.assetid: 64d5dde4-58e4-4217-b2c4-73bd554ec926
 ms.reviewer: 
 ms.author: dansimp
@@ -22,7 +22,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Network security: Force logoff when logon hours expire** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **Network security: Force logoff when logon hours expire** security policy setting.
 
 ## Reference
 
@@ -87,6 +87,6 @@ Enable the **Network security: Force logoff when logon hours expire** setting. T
 
 When a user's logon time expires, SMB sessions terminate. The user cannot log on to the device until the next scheduled access time commences.
 
-## Related topics
+## Related articles
 
 - [Security Options](security-options.md)

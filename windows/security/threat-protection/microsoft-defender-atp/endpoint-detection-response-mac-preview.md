@@ -1,6 +1,6 @@
 ---
-title: Enable Microsoft Defender ATP Insider Device
-description: Install and use Microsoft Defender ATP for Mac.
+title: Enable Microsoft Defender for Endpoint Insider Device
+description: Install and use Microsoft Defender for Endpoint (Mac).
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,19 +19,18 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Enable Microsoft Defender ATP Insider Device
+# Enable Microsoft Defender for Endpoint Insider Device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+To get preview features for Mac, you must set up your device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
-Endpoint detection and response capabilities in Microsoft Defender ATP for Mac are now in preview. To get these and other preview features, you must set up your Mac device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
-
->[!IMPORTANT]
->Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
+> [!IMPORTANT]
+> Make sure you have enabled [Microsoft Defender for Endpoint (Mac)](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md), and [manual deployment](mac-install-manually.md) instructions.
 
 ## Enable the Insider program with Jamf
 
-1. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile `com.microsoft.wdav.plist` with the following content:
 
    ```XML
        <?xml version="1.0" encoding="UTF-8"?>
@@ -49,14 +48,14 @@ Endpoint detection and response capabilities in Microsoft Defender ATP for Mac a
 
 1. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
 
-1. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
+1. Create an entry with `com.microsoft.wdav` as the preference domain and upload the `.plist` created earlier.
 
    > [!WARNING]
    > You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
 
 ## Enable the Insider program with Intune
 
-1. Create configuration profile com.microsoft.wdav.plist with the following content:
+1. Create configuration profile `com.microsoft.wdav.plist` with the following content:
 
     ```XML
        <?xml version="1.0" encoding="utf-8"?>
@@ -117,11 +116,11 @@ Endpoint detection and response capabilities in Microsoft Defender ATP for Mac a
 
 1. Choose a name for the profile. Change  **Platform=macOS**  to  **Profile type=Custom**. Select  **Configure**.
 
-1. Save the .plist created earlier as com.microsoft.wdav.xml.
+1. Save the `.plist` created earlier as com.microsoft.wdav.xml.
 
-1. Enter com.microsoft.wdav as the custom configuration profile name.
+1. Enter `com.microsoft.wdav` as the custom configuration profile name.
 
-1. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
+1. Open the configuration profile and upload `com.microsoft.wdav.xml`. This file was created in step 1.
 
 1. Select  **OK**.
 
@@ -148,19 +147,19 @@ For versions earlier than 100.78.0, run:
 
 ### Verify you are running the correct version
 
-To get the latest version of the Microsoft Defender ATP for Mac, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
+To get the latest version of the Microsoft Defender for Endpoint (Mac), set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
 
-To verify you are running the correct version, run ‘mdatp --health’ on the device.
+To verify you are running the correct version, run `mdatp --health` on the device.
 
 * The required version is 100.72.15 or later.
-* If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running ‘defaults read com.microsoft.autoupdate2’ from terminal.
-* To change update settings use documentation in [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
+* If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running `defaults read com.microsoft.autoupdate2` from the terminal.
+* To change update settings, see [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
 * If you are not using Office for Mac, download and run the AutoUpdate tool.
 
 ### A device still does not appear on Microsoft Defender Security Center
 
-After a successful deployment and onboarding of the correct version, check that the device has connectivity to the cloud service by running ‘mdatp --connectivity-test’.
+After a successful deployment and onboarding of the correct version, check that the device has connectivity to the cloud service by running `mdatp --connectivity-test`.
 
-* Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
+* Check that you enabled the early preview flag. In the terminal, run `mdatp –health` and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 
 If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the [manual deployment documentation](mac-install-manually.md#application-installation-macos-1015-and-older-versions) and use the “Manual Deployment” section in the [troubleshoot kernel extension documentation](mac-support-kext.md#manual-deployment).

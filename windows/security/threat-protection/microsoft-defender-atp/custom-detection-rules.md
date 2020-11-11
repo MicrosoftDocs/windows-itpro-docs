@@ -25,7 +25,7 @@ ms.date: 09/20/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Custom detection rules built from [advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured devices. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
@@ -109,7 +109,7 @@ Your custom detection rule can automatically take actions on files or devices th
 
 These actions are applied to devices in the `DeviceId` column of the query results:
 
-- **Isolate device**—applies full network isolation, preventing the device from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about device isolation](respond-machine-alerts.md#isolate-devices-from-the-network)
+- **Isolate device**—applies full network isolation, preventing the device from connecting to any application or service, except for the Defender for Endpoint service. [Learn more about device isolation](respond-machine-alerts.md#isolate-devices-from-the-network)
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—starts an [automated investigation](automated-investigations.md) on the device

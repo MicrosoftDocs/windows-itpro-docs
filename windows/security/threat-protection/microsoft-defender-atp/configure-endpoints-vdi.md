@@ -27,28 +27,28 @@ ms.date: 04/16/2020
 - Virtual desktop infrastructure (VDI) devices
 
 >[!WARNING]
-> Microsoft Defender ATP support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
+> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-Microsoft Defender ATP supports non-persistent VDI session onboarding. 
+Defender for Endpoint supports non-persistent VDI session onboarding. 
 
 >[!Note]
->To onboard non-persistent VDI sessions, VDI devices must be on Windows 10.
+>To onboard non-persistent VDI sessions, VDI devices must be Windows 10 or Windows Server 2019.
 >
->While other Windows versions might work, only Windows 10 is supported.
+>While other Windows versions might work, only Windows 10 and Windows Server 2019 are supported.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft Defender ATP prior to the actual provisioning.
+- Instant early onboarding of a short-lived sessions, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in Microsoft Defender ATP portal as either:
+VDI devices can appear in Defender for Endpoint portal as either:
 
 - Single entry for each device.  
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
@@ -57,7 +57,7 @@ Note that in this case, the *same* device name must be configured when the sessi
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 >[!WARNING]
-> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding. 
+> For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -126,7 +126,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft Defender ATP sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
@@ -153,4 +153,4 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

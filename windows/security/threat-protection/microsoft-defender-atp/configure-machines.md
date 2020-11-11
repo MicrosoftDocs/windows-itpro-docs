@@ -23,14 +23,14 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint ](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 With properly configured devices, you can boost overall resilience against threats and enhance your capability to detect and respond to attacks. Security configuration management helps ensure that your devices:
 
-- Onboard to Microsoft Defender ATP
-- Meet or exceed the Microsoft Defender ATP security baseline configuration
+- Onboard to Microsoft Defender for Endpoint
+- Meet or exceed the Defender for Endpoint security baseline configuration
 - Have strategic attack surface mitigations in place
 
 Click **Configuration management** from the navigation menu to open the Device configuration management page.
@@ -56,7 +56,7 @@ Before you can ensure your devices are configured properly, enroll them to Intun
 >To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/intune/licenses-assign).
 
 >[!TIP] 
->To optimize device management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>To optimize device management through Intune, [connect Intune to Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## Obtain required permissions
 By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage and assign the device configuration profiles needed for onboarding devices and deploying the security baseline.
@@ -77,8 +77,8 @@ If you have been assigned other roles, ensure you have the necessary permissions
 ## In this section
 Topic | Description
 :---|:---
-[Get devices onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)| Track onboarding status of Intune-managed devices and onboard more devices through Intune. 
-[Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md) | Track baseline compliance and noncompliance. Deploy the security baseline to more Intune-managed devices.
+[Get devices onboarded to Defender for Endpoint](configure-machines-onboarding.md)| Track onboarding status of Intune-managed devices and onboard more devices through Intune. 
+[Increase compliance to the Defender for Endpoint security baseline](configure-machines-security-baseline.md) | Track baseline compliance and noncompliance. Deploy the security baseline to more Intune-managed devices.
 [Optimize ASR rule deployment and detections](configure-machines-asr.md) | Review rule deployment and tweak detections using impact analysis tools in Microsoft 365 security center.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
