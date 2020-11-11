@@ -133,7 +133,7 @@ mdatp --connectivity-test
 
 ## How to update Microsoft Defender for Endpoint for Mac
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md)
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
 
 ## How to configure Microsoft Defender for Endpoint for Mac
 
