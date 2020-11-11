@@ -90,11 +90,11 @@ This event doesn't generate when Firewall rule was modified via Group Policy.
 
 -   **Rule ID** \[Type = UnicodeString\]: the unique identifier for modified firewall rule.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, navigate to the“**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Rule Name** \[Type = UnicodeString\]: the name of the rule which was modified. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Rule Name** \[Type = UnicodeString\]: the name of the rule that was modified. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
@@ -102,5 +102,5 @@ This event doesn't generate when Firewall rule was modified via Group Policy.
 
 For 4947(S): A change has been made to Windows Firewall exception list. A rule was modified.
 
--   This event can be helpful in case you want to monitor all Firewall rules modifications which were done locally.
+-   This event can be helpful in case you want to monitor all Firewall rules modifications that were done locally.
 

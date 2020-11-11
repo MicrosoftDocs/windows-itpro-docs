@@ -36,15 +36,15 @@ If you receive an error message, Microsoft Defender Security Center will provide
 
 ## No subscriptions found
 
-If while accessing Microsoft Defender Security Center you get a **No subscriptions found** message, it means the Azure Active Directory (AAD) used to login the user to the portal, does not have a Microsoft Defender ATP license.
+If while accessing Microsoft Defender Security Center you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender ATP license.
 
 Potential reasons:
 - The Windows E5 and Office E5 licenses are separate licenses.
-- The license was purchased but not provisioned to this AAD instance.
+- The license was purchased but not provisioned to this Azure AD instance.
     - It could be a license provisioning issue.
-    - It could be you inadvertently provisioned the license to a different Microsoft AAD than the one used for authentication into the service.
+    - It could be you inadvertently provisioned the license to a different Microsoft Azure AD than the one used for authentication into the service.
 
-For both cases you should contact Microsoft support at [General Microsoft Defender ATP Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
+For both cases, you should contact Microsoft support at [General Microsoft Defender ATP Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
 ![Image of no subscriptions found](images/atp-no-subscriptions-found.png)
@@ -63,16 +63,16 @@ You can choose to renew or extend the license at any point in time. When accessi
 ## You are not authorized to access the portal
 
 If you receive a **You are not authorized to access the portal**, be aware that Microsoft Defender ATP is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
-For more information see, [**Assign user access to the portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
+For more information, see, [**Assign user access to the portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
 ![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
 
 ## Data currently isn't available on some sections of the portal
-If the portal dashboard, and other sections show an error message such as "Data currently isn't available":
+If the portal dashboard and other sections show an error message such as "Data currently isn't available":
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need to allow the `securitycenter.windows.com` and all sub-domains under it. For example `*.securitycenter.windows.com`.
+You'll need to allow the `securitycenter.windows.com` and all subdomains under it. For example, `*.securitycenter.windows.com`.
 
 
 ## Portal communication issues
