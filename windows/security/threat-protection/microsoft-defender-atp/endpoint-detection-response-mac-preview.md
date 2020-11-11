@@ -26,7 +26,7 @@ ms.topic: conceptual
 To get preview features for Mac, you must set up your device to be an "Insider" device as described in this article. For scale deployment, we recommend using [Jamf](#enable-the-insider-program-with-jamf) or [Intune](#enable-the-insider-program-with-intune).
 
 > [!IMPORTANT]
-> Make sure you have enabled [Microsoft Defender for Endpoint (Mac)](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md), and [manual deployment](mac-install-manually.md) instructions.
+> Make sure you have enabled [Microsoft Defender for Endpoint (Mac)](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-for-endpoint-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md), and [manual deployment](mac-install-manually.md) instructions.
 
 ## Enable the Insider program with Jamf
 
