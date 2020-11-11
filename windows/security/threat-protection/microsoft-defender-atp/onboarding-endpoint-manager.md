@@ -39,7 +39,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 
     -   Creating an Azure Active Directory group (User or Device)
 
--   [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-atp-capabilities)
+-   [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
 
     -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
 
