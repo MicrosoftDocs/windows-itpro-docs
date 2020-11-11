@@ -50,7 +50,6 @@ Whether taken automatically or upon approval, remediation actions following an a
 - Remove a registry key 
 - Kill a process 
 - Stop a service 
-- Remove a registry key 
 - Disable a driver 
 - Remove a scheduled task
 
@@ -70,7 +69,7 @@ The following table summarizes remediation actions following an automated invest
 |Any of the **Full** or **Semi** automation levels |A verdict of *No threats found* is reached for a piece of evidence. <br/><br/>No remediation actions are taken, and no actions are pending approval. |[View details and results of automated investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/auto-investigation-action-center) |
 |**No automated response** (this is not recommended)|No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval. |[Consider setting up or changing your device groups to use **Full** or **Semi** automation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) |
 
-In Microsoft Defender Advanced Threat Protection, all verdicts are [tracked and viewable in the Microsoft Defender Security Center](#review-completed-actions).
+In Microsoft Defender for Endpoint, all verdicts are [tracked and viewable in the Microsoft Defender Security Center](#review-completed-actions).
 
 > [!TIP]
 > To learn more about remediation actions following an automated investigation, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated). 
