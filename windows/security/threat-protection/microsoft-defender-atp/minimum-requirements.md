@@ -27,11 +27,10 @@ ms.topic: conceptual
 
 There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
-
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
 > [!TIP]
-> - Learn about the latest enhancements in Microsoft Defender for Endpoint: [Microsoft Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
@@ -46,8 +45,6 @@ Microsoft Defender for Endpoint requires one of the following Microsoft Volume L
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
-
-
 
 Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
 
@@ -64,7 +61,8 @@ For more information on the array of features in Windows 10 editions, see [Compa
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
 
 ## Browser requirements
-Access to Defender for Endpoint  is done through a browser, supporting the following browsers:
+Access to Defender for Endpoint is done through a browser, supporting the following browsers:
+
 - Microsoft Edge
 - Internet Explorer version 11
 - Google Chrome

@@ -24,7 +24,7 @@ manager: dansimp
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
 > [!IMPORTANT]
-> Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender Advanced Threat Protection. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
+> Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender for Endpoint. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
 
 > [!WARNING]
 > Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.
