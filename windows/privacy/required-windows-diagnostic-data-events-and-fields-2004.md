@@ -1638,7 +1638,7 @@ The following fields are available:
 - **LicenseStateReason**  Retrieves why (or how) a system is licensed or unlicensed.  The HRESULT may indicate an error code that indicates a key blocked error, or it may indicate that we are running an OS License granted by the MS store.
 - **OA3xOriginalProductKey**  Retrieves the License key stamped by the OEM to the machine.
 - **OSEdition**  Retrieves the version of the current OS.
-- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc
+- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc.
 - **OSOOBEDateTime**  Retrieves Out of Box Experience (OOBE) Date in Coordinated Universal Time (UTC).
 - **OSSKU**  Retrieves the Friendly Name of OS Edition.
 - **OSSubscriptionStatus**  Represents the existing status for enterprise subscription feature for PRO machines.
@@ -1786,7 +1786,7 @@ This event sends data about the current user's default preferences for browser a
 The following fields are available:
 
 - **CalendarType**  The calendar identifiers that are used to specify different calendars.
-- **DefaultApp**  The current uer's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
+- **DefaultApp**  The current user's default program selected for the following extension or protocol: .html, .htm, .jpg, .jpeg, .png, .mp3, .mp4, .mov, .pdf.
 - **DefaultBrowserProgId**  The ProgramId of the current user's default browser.
 - **LocaleName**  Name of the current user locale given by LOCALE_SNAME via the GetLocaleInfoEx() function.
 - **LongDateFormat**  The long date format the user has selected.
