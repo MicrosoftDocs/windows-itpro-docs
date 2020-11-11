@@ -45,5 +45,8 @@ To change the policy for an external storage device:
    ![In Disk Management, right-click the device and click Properties.](./images/change-def-rem-policy-1.png)
   
 6. Select **Policies**, and then select the policy you want to use.
+
+> [!NOTE]  
+> In newer Windows versions, you need to first select **Hardware**, choose the USB device under **All disk drives** and then click on **Properties**
   
    ![Policy options for disk management](./images/change-def-rem-policy-2.png)
