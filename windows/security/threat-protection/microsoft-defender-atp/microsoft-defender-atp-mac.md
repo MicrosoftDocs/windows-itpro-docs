@@ -65,10 +65,13 @@ There are several methods and deployment tools that you can use to install and c
 
 The three most recent major releases of macOS are supported.
 
+> [!IMPORTANT]
+> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB
 
-Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
+Beta versions of macOS are not supported.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -130,7 +133,7 @@ mdatp --connectivity-test
 
 ## How to update Microsoft Defender for Endpoint for Mac
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md)
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
 
 ## How to configure Microsoft Defender for Endpoint for Mac
 
