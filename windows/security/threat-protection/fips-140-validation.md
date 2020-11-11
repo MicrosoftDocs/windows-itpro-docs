@@ -7344,5 +7344,5 @@ fips@microsoft.com
 
 * [FIPS 140-2, Security Requirements for Cryptographic Modules](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf))
 * [Cryptographic Module Validation Program (CMVP) FAQ](http://csrc.nist.gov/groups/stm/cmvp/documents/cmvpfaq.pdf)
-* [SP 800-57 - Recommendation for Key Management – Part 1: General (Revised)]((http://csrc.nist.gov/publications/pubssps.html#800-57-part1))
+* [SP 800-57 - Recommendation for Key Management – Part 1: General (Revised)](https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final)
 * [SP 800-131A - Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths](http://csrc.nist.gov/publications/nistpubs/800-131a/sp800-131a.pdf)
