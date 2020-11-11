@@ -94,8 +94,6 @@ The following downloadable spreadsheet lists the services and their associated U
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
 
-
-
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Proxy autoconfig (PAC)
 - Web Proxy Autodiscovery Protocol (WPAD)

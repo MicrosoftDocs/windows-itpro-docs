@@ -29,13 +29,12 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
-
 > [!TIP]
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
-Defender for Endpoint requires one of the following Microsoft Volume Licensing offers:
+Microsoft Defender for Endpoint requires one of the following Microsoft Volume Licensing offers:
 
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
@@ -44,18 +43,16 @@ Defender for Endpoint requires one of the following Microsoft Volume Licensing o
 - Microsoft 365 A5 (M365 A5)
 
 > [!NOTE]
-> Eligible Licensed Users may use Defender for Endpoint on up to five concurrent devices.
-> Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
+> Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.
+> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
-
-
-Defender for Endpoint, on Windows Server, requires one of the following licensing options:
+Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
 
 - [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
 - Defender for Endpoint for Servers (one per covered server)
 
 > [!NOTE]
-> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Defender for Endpoint, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender for Endpoint for Linux.
+> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Defender for Endpoint for Servers (one per covered Server OSE): Microsoft Defender for Endpoint, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Defender for Endpoint for Linux.
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn the detailed terms and conditions for the product.
 
@@ -65,6 +62,7 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 
 ## Browser requirements
 Access to Defender for Endpoint is done through a browser, supporting the following browsers:
+
 - Microsoft Edge
 - Internet Explorer version 11
 - Google Chrome
@@ -115,7 +113,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 
 
 ### Network and data storage and configuration requirements
-When you run the onboarding wizard for the first time, you must choose where your Microsoft Defender Advanced Threat Protection-Defender for Endpoint related information is stored: in the European Union, the United Kingdom, or the United States datacenter.
+When you run the onboarding wizard for the first time, you must choose where your Microsoft Defender for Endpoint-related information is stored: in the European Union, the United Kingdom, or the United States datacenter.
 
 > [!NOTE]
 > - You cannot change your data storage location after the first-time setup.
@@ -125,7 +123,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 ### Diagnostic data settings
 
 > [!NOTE]
-> Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.
+> Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.
 
 Make sure that the diagnostic data service is enabled on all the devices in your organization.
 By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.

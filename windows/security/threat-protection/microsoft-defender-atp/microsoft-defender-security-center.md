@@ -40,4 +40,3 @@ Check service health and sensor state | Verify that the service is running and c
 [Configure Microsoft Defender Security Center settings](preferences-setup.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
 [Access the Microsoft Defender for Endpoint Community Center](community.md) | Access the Microsoft Defender for Endpoint Community Center to learn, collaborate, and share experiences about the product.
 [Troubleshoot service issues](troubleshoot-mdatp.md) | This section addresses issues that might arise as you use the Microsoft Defender for Endpoint service.
-
