@@ -18,7 +18,7 @@ ms.reviewer:
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
 Some applications, including device drivers, may be incompatible with HVCI.

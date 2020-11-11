@@ -23,18 +23,18 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 Security is recognized as a key component in running an enterprise, however some organizations might not have the capacity or expertise to have a dedicated security operations team to manage the security of their endpoints and network, others may want to have a second set of eyes to review alerts in their network.
 
 
-To address this demand, managed security service providers (MSSP) offer to deliver managed detection and response (MDR) services on top of Microsoft Defender ATP. 
+To address this demand, managed security service providers (MSSP) offer to deliver managed detection and response (MDR) services on top of Defender for Endpoint. 
 
 
-Microsoft Defender ATP adds partnership opportunities for this scenario and allows MSSPs to take the following actions:
+Defender for Endpoint adds partnership opportunities for this scenario and allows MSSPs to take the following actions:
 
 - Get access to MSSP customer's Microsoft Defender Security Center portal
 - Get email notifications, and 

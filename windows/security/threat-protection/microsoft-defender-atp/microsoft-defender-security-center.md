@@ -24,7 +24,7 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-Microsoft Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
+Microsoft Defender Security Center is the portal where you can access Microsoft Defender for Endpoint capabilities. It gives enterprise security operations teams a single pane of glass experience to help secure networks.
 
 ## In this section
 
@@ -35,9 +35,8 @@ Get started  |  Learn about the minimum requirements, validate licensing and com
 [Understand the portal](use.md) | Understand the Security operations, Secure Score, and Threat analytics dashboards as well as how to navigate the portal.
 Investigate and remediate threats | Investigate alerts, devices, and take response actions to remediate threats.
 API and SIEM support | Use the supported APIs to pull and create custom alerts, or automate workflows. Use the supported SIEM tools to pull alerts from Microsoft Defender Security Center.
-Reporting | Create and build Power BI reports using Microsoft Defender ATP data.
+Reporting | Create and build Power BI reports using Microsoft Defender for Endpoint data.
 Check service health and sensor state | Verify that the service is running and check the sensor state on devices.
 [Configure Microsoft Defender Security Center settings](preferences-setup.md) | Configure general settings, turn on the preview experience, notifications, and enable other features.
-[Access the Microsoft Defender ATP Community Center](community.md) | Access the Microsoft Defender ATP Community Center to learn, collaborate, and share experiences about the product.
-[Troubleshoot service issues](troubleshoot-mdatp.md) | This section addresses issues that might arise as you use the Microsoft Defender Advanced Threat service.
-
+[Access the Microsoft Defender for Endpoint Community Center](community.md) | Access the Microsoft Defender for Endpoint Community Center to learn, collaborate, and share experiences about the product.
+[Troubleshoot service issues](troubleshoot-mdatp.md) | This section addresses issues that might arise as you use the Microsoft Defender for Endpoint service.
