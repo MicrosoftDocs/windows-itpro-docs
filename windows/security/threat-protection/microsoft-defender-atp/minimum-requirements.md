@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
@@ -51,8 +51,8 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 
 Microsoft Defender Advanced Threat Protection, on Windows Server, requires one of the following licensing options:
 
-- [Azure Security Center Standard plan](https://docs.microsoft.com/azure/security-center/security-center-pricing) (per node)
-- Microsoft Defender ATP for Servers (one per covered Server)
+- [Azure Security Center with Azure Defender enabled](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- Microsoft Defender ATP for Servers (one per covered server)
 
 > [!NOTE]
 > Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Advanced Threat Protection for Servers (one per covered Server OSE): Microsoft Defender Advanced Threat Protection, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Microsoft Defender ATP for Linux.
@@ -61,7 +61,7 @@ For detailed licensing information, see the [Product Terms site](https://www.mic
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
-For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
+For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf).
 
 ## Browser requirements
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
@@ -80,12 +80,11 @@ Access to Microsoft Defender ATP is done through a browser, supporting the follo
 - Windows 7 SP1 Pro
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
-- Windows 10, version 1607 or later
-  - Windows 10 Enterprise
-  - [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
-  - Windows 10 Education
-  - Windows 10 Pro
-  - Windows 10 Pro Education
+- Windows 10 Enterprise
+- [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows server
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
@@ -107,13 +106,12 @@ The hardware requirements for Microsoft Defender ATP on devices are the same for
 
 ### Other supported operating systems
 - Android
-- Linux (currently, Microsoft Defender ATP is only available in the Public Preview Edition for Linux)
+- Linux 
 - macOS
 
 > [!NOTE]
 > You'll need to know the exact Linux distributions and versions of Android and macOS that are compatible with Microsoft Defender ATP for the integration to work.
->
-> Also note that Microsoft Defender ATP is currently only available in the Public Preview Edition for Linux.
+
 
 
 ### Network and data storage and configuration requirements

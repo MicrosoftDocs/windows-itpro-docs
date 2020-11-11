@@ -14,17 +14,19 @@ author: sunasing
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 hideEdit: true
 ---
 
-# Microsoft Defender ATP for iOS application license terms
+# Microsoft Defender for Endpoint for iOS application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER ATP
+## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or
 based on where you live, one of its affiliates) and you. Please read them. They
@@ -51,7 +53,7 @@ DO NOT USE THE APPLICATION.**
     1.  **Installation and Use.** You may install and use any number of copies
         of this application on iOS enabled device or devices which you own
         or control. You may use this application with your company's valid
-        subscription of Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) or
+        subscription of Defender for Endpoint or
         an online service that includes MDATP functionalities.
 
     2.  **Updates.** Updates or upgrades to MDATP may be required for full
@@ -160,7 +162,7 @@ DO NOT USE THE APPLICATION.**
         enforce and rely upon any provision of these Terms that grants them a
         benefit or rights.
 
-9.  **TRADEMARK NOTICES.** Microsoft, Microsoft Defender ATP, MDATP, and
+9.  **TRADEMARK NOTICES.** Microsoft, Microsoft Defender for Endpoint and
     Microsoft 365 are registered or common-law trademarks of Microsoft
     Corporation in the United States and/or other countries.
 

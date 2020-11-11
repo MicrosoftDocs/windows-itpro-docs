@@ -1,7 +1,7 @@
 ---
 title: Set up Microsoft Defender ATP deployment
-description: 
-keywords:
+description: Learn how to setup the deployment for Microsoft Defender ATP
+keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-endpointprotect 
+- m365solution-endpointprotect
+- m365solution-scenario 
 ms.topic: article 
 ---
 
@@ -25,7 +26,7 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Deploying Microsoft Defender ATP is a three-phase process:
@@ -45,7 +46,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Onboard" title="Onboard" />
+        <img src="images/onboard.png" alt="Onboard image" title="Onboard" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 
@@ -53,7 +54,7 @@ Deploying Microsoft Defender ATP is a three-phase process:
   </tr>
 </table>
 
-You are currently in the set up phase.
+You are currently in the set-up phase.
 
 In this deployment scenario, you'll be guided through the steps on:
 - Licensing validation
@@ -68,13 +69,13 @@ In this deployment scenario, you'll be guided through the steps on:
 
 Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
 
-1. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
-    On the screen you will see all the provisioned licenses and their current **Status**.
+    On the screen, you will see all the provisioned licenses and their current **Status**.
 
     ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
@@ -83,9 +84,9 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
 
-1. From the **Partner portal**, click on the **Administer services > Office 365**.
+1. From the **Partner portal**, select **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin center.
+2. Clicking on the **Partner portal** link will open the **Admin on behalf** option and will give you access to the customer admin center.
 
    ![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
 
@@ -93,7 +94,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
+When accessing Microsoft Defender Security Center for the first time, a wizard that will guide you through some initial steps. At the end of the setup wizard, there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client device.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -108,9 +109,9 @@ When accessing [Microsoft Defender Security Center](https://securitycenter.windo
 
 4. Set up preferences.
 
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
+   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
 
-    **Data retention** - The default is 6 months.
+    **Data retention** - The default is six months.
 
     **Enable preview features** - The default is on, can be changed later.
 
@@ -136,11 +137,11 @@ WinHTTP configuration setting is independent of the Windows Internet (WinINet)
 internet browsing proxy settings and can only discover a proxy server by using
 the following discovery methods:
 
-**Auto-discovery methods:**
+**Autodiscovery methods:**
 
 -   Transparent proxy
 
--   Web Proxy Auto-discovery Protocol (WPAD)
+-   Web Proxy Autodiscovery Protocol (WPAD)
 
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
@@ -154,7 +155,7 @@ Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defe
 
 **Manual static proxy configuration:**
 
--   Registry based configuration
+-   Registry-based configuration
 
 -   WinHTTP configured using netsh command <br> Suitable only for desktops in a
     stable topology (for example: a desktop in a corporate network behind the
@@ -174,13 +175,13 @@ under:
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
 3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
-    ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
+    ![Image of Group Policy configuration](images/atp-gpo-proxy1.png)
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
    
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
-    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
+    ![Image of Group Policy configuration setting](images/atp-gpo-proxy2.png)
 7. Select **Enabled**.
 8. Enter the **Proxy Server Name**.
 
@@ -204,7 +205,7 @@ Use netsh to configure a system-wide static proxy.
 > - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
 > - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
-1. Open an elevated command-line:
+1. Open an elevated command line:
 
     1. Go to **Start** and type **cmd**.
 
@@ -222,7 +223,7 @@ Use netsh to configure a system-wide static proxy.
 ###  Proxy Configuration for down-level devices
 
 Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well
-as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
+as Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and
 versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
 systems will have the proxy configured as part of the Microsoft Management Agent
 to handle communication from the endpoint to Azure. Refer to the
@@ -237,15 +238,16 @@ needed if the device is on Windows 10, version 1803 or later.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-|**Item**|**Description**|
+|**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)<br/> [Spreadsheet](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)  | The spreadsheet provides specific DNS records for service locations, geographic locations, and OS. 
+|![Thumb image for Microsoft Defender ATP URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
 
 
 ###  Microsoft Defender ATP service backend IP range
 
-If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+If you network devices don't support the URLs listed in the prior section, you can use the following information.
 
 Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
 

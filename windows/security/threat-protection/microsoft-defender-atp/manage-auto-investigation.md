@@ -13,7 +13,9 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ms.date: 09/15/2020
 ---
@@ -48,7 +50,6 @@ Whether taken automatically or upon approval, remediation actions following an a
 - Remove a registry key 
 - Kill a process 
 - Stop a service 
-- Remove a registry key 
 - Disable a driver 
 - Remove a scheduled task
 
