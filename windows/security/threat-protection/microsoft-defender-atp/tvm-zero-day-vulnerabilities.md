@@ -90,7 +90,7 @@ Open remediation options and choose the attention type. An "attention required" 
 
 ## Track zero-day remediation activities
 
-Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. If you chose the "attention required" remediation option, there will be no progress bar or ticket status since there is no actual action we can monitor.
+Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor. You can filter by remediation type, such as "software update" or "attention required," to see all activity items in the same category.
 
 ## Patching zero-day vulnerabilities
 
