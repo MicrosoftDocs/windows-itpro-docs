@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Microsoft Defender Advanced Threat Protection for iOS
+# Microsoft Defender for Endpoint for iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.topic: conceptual
 > As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
 
 
-The public preview of Microsoft Defender ATP for iOS will offer protection
+The public preview of Defender for Endpoint for iOS will offer protection
 against phishing and unsafe network connections from websites, emails, and apps.
 All alerts will be available through a single pane of glass in the Microsoft
 Defender Security Center. The portal gives security teams a centralized view of threats on
@@ -44,7 +44,7 @@ iOS devices along with other platforms.
 
 **For End Users**
 
--   Microsoft Defender ATP license assigned to the end user(s) of the app. Refer
+-   Defender for Endpoint license assigned to the end user(s) of the app. Refer
     [Assign licenses to
     users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
     for instructions on how to assign licenses.
@@ -74,5 +74,5 @@ iOS devices along with other platforms.
 
 ## Next steps
 
-- [Deploy Microsoft Defender ATP for iOS](ios-install.md)
-- [Configure Microsoft Defender ATP for iOS features](ios-configure-features.md)
+- [Deploy Microsoft Defender for Endpoint for iOS](ios-install.md)
+- [Configure Microsoft Defender for Endpoint for iOS features](ios-configure-features.md)
