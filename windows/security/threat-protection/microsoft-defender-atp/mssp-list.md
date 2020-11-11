@@ -21,12 +21,12 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of BDO Digital logo](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense leverages best practice tools, AI, and in-house security experts for 24/7/365 identity protection
-![Image of BlueVoyant logo](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Microsoft Defender ATP provides support in monitoring, investigating, and mitigating advanced attacks on endpoints
+![Image of BlueVoyant logo](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Defender for Endpoint provides support in monitoring, investigating, and mitigating advanced attacks on endpoints
 ![Image of Cloud Security Center logo](images/cloudsecuritycenter-logo.png)| [Cloud Security Center](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark's Cloud Security Center is a 24x7 managed service that delivers protect, detect & respond capabilities
 ![Image of Cloud SOC logo](images/cloudsoc-logo.png)| [Cloud SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | Cloud SOC provides 24/7 security monitoring services based on Microsoft cloud and helps you to continuously improve your security posture
 ![Image of CSIS Managed Detection & Response logo](images/csis-logo.png)| [CSIS Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7 monitoring and analysis of security alerts giving companies actionable insights into what, when and how security incidents have taken place
@@ -36,8 +36,8 @@ Logo |Partner name   | Description
 ![Image of Red Canary logo](images/redcanary-logo.png)| [Red Canary](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary is a security operations partner for modern teams, MDR deployed in minutes
 ![Image of SecureWorks Managed Detection and Response Powered by Red Cloak logo](images/secureworks-logo.png)| [SecureWorks Managed Detection and Response Powered by Red Cloak](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combines threat intelligence and 20+ years of experience into SaaS and managed security solutions
 ![Image of sepagoSOC logo](images/sepago-logo.png)| [sepagoSOC](https://go.microsoft.com/fwlink/?linkid=2090491) | Ensure holistic security through sophisticated automated workflows in your zero trust environment
-![Image of Trustwave Threat Detection & Response Services logo](images/trustwave-logo.png)| [Trustwave Threat Detection & Response Services](https://go.microsoft.com/fwlink/?linkid=2127542) | Threat Detection and Response services for Azure leveraging integrations with Sentinel and Microsoft Defender ATP
-![Image of Wortell's cloud SOC logo](images/wortell-logo.png)| [Wortell's cloud SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24x7 managed Microsoft Defender ATP service for monitoring & response
+![Image of Trustwave Threat Detection & Response Services logo](images/trustwave-logo.png)| [Trustwave Threat Detection & Response Services](https://go.microsoft.com/fwlink/?linkid=2127542) | Threat Detection and Response services for Azure leveraging integrations with Sentinel and Defender for Endpoint
+![Image of Wortell's cloud SOC logo](images/wortell-logo.png)| [Wortell's cloud SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24x7 managed Defender for Endpoint service for monitoring & response
 ![Image of Zero Trust Analytics Platform (ZTAP) logo](images/ztap-logo.png)| [Zero Trust Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Reduce your alerts by 99% and access a full range of security capabilities from mobile devices
 
 ## Related topics
