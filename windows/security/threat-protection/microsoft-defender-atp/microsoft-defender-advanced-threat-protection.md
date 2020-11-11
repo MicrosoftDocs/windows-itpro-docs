@@ -27,7 +27,7 @@ ms.topic: conceptual
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 <p></p>
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wDob]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
 Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
@@ -69,7 +69,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 <p></p>
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vnC4?rel=0] 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
 > - Learn about the latest enhancements in Defender for Endpoint: [What's new in Microsoft Defender for Endpoint](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
@@ -136,4 +136,4 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 
 ## Related topic
-[Microsoft Defender for Endpoint helps detect sophisticated threats](https://www.microsoft.com/en-us/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)
+[Microsoft Defender for Endpoint helps detect sophisticated threats](https://www.microsoft.com/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)
