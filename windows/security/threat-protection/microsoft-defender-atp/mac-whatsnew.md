@@ -43,6 +43,11 @@ ms.topic: conceptual
 > 2. Refer to this documentation for detailed configuration information and instructions: [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 > 3. Monitor this page for an announcement of the actual release of MDATP for Mac agent update.
 
+## 101.13.75
+
+- Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
+- Bug fixes
+
 ## 101.10.72
 
 - Bug fixes
