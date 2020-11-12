@@ -239,7 +239,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**  
-<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
@@ -333,7 +333,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute</td>
@@ -385,7 +385,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute (default)</td>
@@ -437,7 +437,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute</td>
