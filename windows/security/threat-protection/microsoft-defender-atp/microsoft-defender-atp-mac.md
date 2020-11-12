@@ -37,9 +37,9 @@ This topic describes how to install, configure, update, and use Defender for End
 [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md)
 
 > [!TIP]
-> If you have any feedback that you would like to share, submit it by opening Defender for Endpoint for Mac on your device and navigating to **Help** > **Send feedback**.
+> If you have any feedback that you would like to share, submit it by opening Microsoft Defender for Endpoint for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Defender for Endpoint to be an "Insider" device. See [Enable Microsoft Defender for Endpoint Insider Device](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device. See [Enable Microsoft Defender for Endpoint Insider Device](endpoint-detection-response-mac-preview.md). 
 
 ## How to install Microsoft Defender for Endpoint for Mac
 
@@ -65,10 +65,13 @@ There are several methods and deployment tools that you can use to install and c
 
 The three most recent major releases of macOS are supported.
 
+> [!IMPORTANT]
+> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB
 
-Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
+Beta versions of macOS are not supported.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -81,7 +84,7 @@ Microsoft Defender for Endpoint for Mac requires one of the following Microsoft 
 - Microsoft 365 A5 (M365 A5)
 
 > [!NOTE]
-> Eligible licensed users may use Defender for Endpoint on up to five concurrent devices.
+> Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
 
 ### Network connections
@@ -94,9 +97,7 @@ The following downloadable spreadsheet lists the services and their associated U
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
 
-
-
-Defender for Endpoint can discover a proxy server by using the following discovery methods:
+Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Proxy autoconfig (PAC)
 - Web Proxy Autodiscovery Protocol (WPAD)
 - Manual static proxy configuration
@@ -106,7 +107,7 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 > [!WARNING]
 > Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used.
 >
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) and [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in a browser.
 
@@ -125,14 +126,14 @@ The output from this command should be similar to the following:
 > [!CAUTION]
 > We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client devices. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
-Once Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
+Once Microsoft Defender for Endpoint is installed, connectivity can be validated by running the following command in Terminal:
 ```bash
 mdatp --connectivity-test
 ```
 
 ## How to update Microsoft Defender for Endpoint for Mac
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md)
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
 
 ## How to configure Microsoft Defender for Endpoint for Mac
 
@@ -140,7 +141,7 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## macOS kernel and system extensions
 
-In alignment with macOS evolution, we are preparing a Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md) for relevant details.
+In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md) for relevant details.
 
 ## Resources
 
