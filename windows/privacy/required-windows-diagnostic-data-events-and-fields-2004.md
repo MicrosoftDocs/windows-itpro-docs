@@ -6045,45 +6045,6 @@ The following fields are available:
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
 
-## Windows Admin Center events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **activeNodesByNodeId**  A count of how many active nodes are on this gateway, deduplicated by Node ID.
-- **activeNodesByUuid**  A count of how many active nodes are on this gateway, deduplicated by UUID.
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
-- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installationType**  Identifies if the gateway was installed as a VM extension.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
-- **registeredNodesByNodeId**  A count of how many nodes are registered with this gateway, deduplicated by Node ID.
-- **registeredNodesByUuid**  A count of how many nodes are registered with this gateway, deduplicated by UUID.
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
-
-
-### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
-
-This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
-
-The following fields are available:
-
-- **nodeId**  Constructed from nodeTypeId concatenated with the hostname or IP address that gateway uses to connecting to this node.
-- **nodeOperatingSystem**  A user friendly description of the node's OS version.
-- **nodeOSVersion**  A major or minor build version string for the node's OS.
-- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
-- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
-
-
 ## Windows as a Service diagnostic events
 
 ### Microsoft.Windows.WaaSMedic.DetectionFailed
