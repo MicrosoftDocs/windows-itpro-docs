@@ -23,7 +23,7 @@ ms.topic: troubleshooting
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
@@ -75,11 +75,11 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
-- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
+- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
