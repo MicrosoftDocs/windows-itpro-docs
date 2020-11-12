@@ -241,7 +241,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Added in Windows 10, version 2004. Specifies the traffic direction to apply this policy to. Default is Outbound. The value can be one of the following:
 
 - Outbound - The rule applies to all outbound traffic
-- nbound - The rule applies to all inbound traffic
+- Inbound - The rule applies to all inbound traffic
 
 If no inbound filter is provided, then by default all unsolicated inbound traffic will be blocked.
 
