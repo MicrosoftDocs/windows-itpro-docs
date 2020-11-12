@@ -22,7 +22,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
@@ -65,7 +65,7 @@ $aadToken = $response.access_token
 
 where
 - $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
-- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
+- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Azure AD app
 
 ## Run query
@@ -117,6 +117,6 @@ $results | ConvertTo-Json | Set-Content file1.json
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
