@@ -26,8 +26,6 @@ ms.custom: nextgen
 - Windows 10
 - Windows Server 2016
 - Windows Server 2019
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
