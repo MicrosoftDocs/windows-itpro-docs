@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/30/2020
+ms.date: 11/12/2020
 ---
 
 
@@ -38,7 +38,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 2004 and Windows 10, version 20H2 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -486,11 +486,18 @@ The following fields are available:
 - **DecisionSystemBios_TH1**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessor_RS2**  The count of the number of this particular object type present on this device.
+- **DecisionTest_19H1**  The count of the number of this particular object type present on this device.
 - **DecisionTest_20H1**  The count of the number of this particular object type present on this device.
 - **DecisionTest_20H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionTest_21H1**  The count of the number of this particular object type present on this device.
 - **DecisionTest_21H1Setup**  The count of the number of this particular object type present on this device.
 - **DecisionTest_RS1**  An ID for the system, calculated by hashing hardware identifiers.
+- **DecisionTest_RS2**  The count of the number of this particular object type present on this device.
+- **DecisionTest_RS3**  The count of the number of this particular object type present on this device.
+- **DecisionTest_RS4**  The count of the number of this particular object type present on this device.
+- **DecisionTest_RS5**  The count of the number of this particular object type present on this device.
+- **DecisionTest_TH1**  The count of the number of this particular object type present on this device.
+- **DecisionTest_TH2**  The count of the number of this particular object type present on this device.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
 - **InventoryDeviceContainer**  A count of device container objects in cache.
 - **InventoryDevicePnp**  A count of device Plug and Play objects in cache.
@@ -966,6 +973,17 @@ The following fields are available:
 - **BlockingApplication**  Are there any application issues that interfere with upgrade due to matching info blocks?
 - **DisplayGenericMessageGated**  Indicates whether a generic offer block message will be shown due to matching info blocks.
 - **MigApplication**  Is there a matching info block with a mig for the current mode of upgrade?
+
+
+### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPassiveRemove
+
+This event Indicates that the DecisionMatchingInfoPassive object is no longer present. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPassiveStartSync
@@ -2762,6 +2780,12 @@ This event reports the results of deferring Windows Content to keep Windows up t
 
 ## Diagnostic data events
 
+### Microsoft.Windows.Test.WindowsCoreTelemetryTestProvider.WindowsCoreTelemetryTestEvent
+
+This is an internal-only test event used to validate the utc.app and telemetry.asm-windowsdefault settings and namespaces before publishing. The provider of this event is assigned to the Windows Core Telemetry group provider in order to test. The data collected with this event is used to keep Windows performing properly
+
+
+
 ### TelClientSynthetic.AbnormalShutdown_0
 
 This event sends data about boot IDs for which a normal clean shutdown was not observed. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
@@ -3101,6 +3125,194 @@ This event is a low latency health alert that is part of the 4Nines device healt
 
 ## Direct to update events
 
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCheckApplicabilityGenericFailure
+
+This event indicatse that we have received an unexpected error in the Direct to Update (DTU) Coordinators CheckApplicability call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCleanupGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Cleanup call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run
+- **ClientID**  Client ID being run
+- **CoordinatorVersion**  Coordinator version of DTU
+- **CV**  Correlation vector
+- **hResult**  HRESULT of the failure
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCommitGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Commit call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCommitSuccess
+
+This event indicates that the Coordinator Commit call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator Download call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadIgnoredFailure
+
+This event indicates that we have received an error in the Direct to Update (DTU) Coordinator Download call that will be ignored. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadSuccess
+
+This event indicates that the Coordinator Download call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorHandleShutdownSuccess
+
+This event indicates that the Coordinator HandleShutdown call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInitializeSuccess
+
+This event indicates that the Coordinator Initialize call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallIgnoredFailure
+
+This event indicates that we have received an error in the Direct to Update (DTU) Coordinator Install call that will be ignored. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallSuccess
+
+This event indicates that the Coordinator Install call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorProgressCallBack
+
+This event indicates that the Coordinator's progress callback has been called. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **DeployPhase**  Current Deploy Phase.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorSetCommitReadySuccess
+
+This event indicates that the Coordinator SetCommitReady call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiSelection
+
+This event indicates that the user selected an option on the Reboot UI. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **rebootUiSelection**  Selection on the Reboot UI.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiSuccess
+
+This event indicates that the Coordinator WaitForRebootUi call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
 ### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityGenericFailure
 
 This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler CheckApplicability call. The data collected with this event is used to help keep Windows secure and up to date.
@@ -3113,6 +3325,187 @@ The following fields are available:
 - **CV**  Correlation vector
 - **CV_new**  New correlation vector
 - **hResult**  HRESULT of the failure
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityInternalGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler CheckApplicabilityInternal call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilityInternalSuccess
+
+This event indicates that the Handler CheckApplicabilityInternal call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **ApplicabilityResult**  The result of the applicability check.
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerCheckApplicabilitySuccess
+
+This event indicates that the Handler CheckApplicability call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **ApplicabilityResult**  The result code indicating whether the update is applicable.
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **CV_new**  New correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerCommitGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Commit call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **CV_new**  New correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabAlreadyDownloaded
+
+This event indicates that the Handler Download and Extract cab returned a value indicating that the cab has already been downloaded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run
+- **ClientID**  Client ID being run
+- **CoordinatorVersion**  Coordinator version of DTU
+- **CV**  Correlation vector
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabFailure
+
+This event indicates that the Handler Download and Extract cab call failed. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_failureReason**  Reason why the update download and extract process failed.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadAndExtractCabSuccess
+
+This event indicates that the Handler Download and Extract cab call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Download call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerDownloadSuccess
+
+This event indicates that the Handler Download call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Initialize call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_hResult**  HRESULT of the download and extract.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerInitializeSuccess
+
+This event indicates that the Handler Initialize call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **DownloadAndExtractCabFunction_hResult**  HRESULT of the download and extraction.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Handler Install call. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerInstallSuccess
+
+This event indicates that the Coordinator Install call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the update campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUHandlerSetCommitReadySuccess
+
+This event indicates that the Handler SetCommitReady call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  ID of the campaign being run.
+- **ClientID**  ID of the client receiving the update.
+- **CoordinatorVersion**  Coordinator version of Direct to Update.
+- **CV**  Correlation vector.
 
 
 ## DISM events
@@ -3655,7 +4048,7 @@ The following fields are available:
 
 This event sends basic metadata about an application on the system. The data collected with this event is used to keep Windows performing properly and up to date.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInven|oryChange](#msdevicedeviceinven|orychange).
 
 The following fields are available:
 
@@ -3758,7 +4151,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDevicePnpAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.DmviceInventoryChange](#msdevicedmviceinventorychange).
 
 The following fields are available:
 
@@ -3769,7 +4162,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryApplicationAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange)
+This event includes fields from [Ms.Device,DeviceInventoryChange](#msdevice,deviceinventorychange).
 
 The following fields are available:
 
@@ -3929,7 +4322,7 @@ The following fields are available:
 - **HWID**  The version of the driver loaded for the device.
 - **Inf**  The bus that enumerated the device.
 - **InstallDate**  The date of the most recent installation of the device on the machine.
-- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
+- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  List of hardware ids for the device.
 - **LowerClassFilters**  Lower filter class drivers IDs installed for the device
 - **LowerFilters**  Lower filter drivers IDs installed for the device
@@ -4126,7 +4519,7 @@ The following fields are available:
 - **Manufacturer**  Name of the DRAM manufacturer
 - **Model**  Model and sub-model of the memory
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
-- **Speed**  MHZ the memory is currently configured & used at.
+- **Speed**  The configured memory slot speed in MHz.
 - **Type**  Reports DDR, etc. as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
 - **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration according to the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
 
@@ -4653,6 +5046,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event, where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -4680,6 +5074,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -4708,6 +5103,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -4735,6 +5131,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -4767,6 +5164,8 @@ The following fields are available:
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
 - **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
+- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country code that matches to the country updated binaries are delivered from. E.g.: US.
+- **appPingEventDownloadMetricsCdnCID**  Numeric value used to internally track the origins of the updated binaries. For example, 2.
 - **appPingEventDownloadMetricsDownloadedBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
 - **appPingEventDownloadMetricsDownloader**  A string identifying the download algorithm and/or stack. Example values include: 'bits', 'direct', 'winhttp', 'p2p'. Sent in events that have an event type of '14' only. Default: ''.
 - **appPingEventDownloadMetricsDownloadTimeMs**  For events representing a download, the time elapsed between the start of the download and the end of the download, in milliseconds. For events representing an entire update flow, the sum of all such download times over the course of the update flow. Sent in events that have an event type of '1', '2', '3', and '14' only. Default: '0'.
@@ -4835,6 +5234,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -5065,7 +5465,7 @@ The following fields are available:
 - **SourceOSVersion**  The source version of the operating system.
 
 
-## ONNX runtime events
+## Other events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5092,7 +5492,20 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Surface events
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData**  Hardware level data about battery performance.
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
 
 ### Microsoft.Surface.Health.Binary.Prod.McuHealthLog
 
@@ -5105,7 +5518,6 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
-## Update health events
 
 ### Microsoft.Windows.UpdateHealthTools.ExpediteBlocked
 
@@ -5286,6 +5698,7 @@ The following fields are available:
 
 - **CV**  Correlation vector.
 - **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpediteHoursOfUpTimeSincePolicy**  The number of hours the device has been active since it received a policy.
 - **ExpeditePolicyId**  The policy Id of the expedite request.
 - **ExpediteResult**  Boolean value for success or failure.
 - **ExpediteUpdaterCurrentUbr**  The UBR of the device.
@@ -5345,6 +5758,18 @@ The following fields are available:
 - **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
 - **UnifiedInstallerPlatformType**  The enum indicating the type of platform detected.
 - **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsBlobNotificationRetrieved
+
+This event is sent when a blob notification is received. The data collected with this event is used to help keep Windows up to date and secure.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsBlobNotificationNotEmpty**  True if the blob notification is not empty.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploaded
@@ -5418,6 +5843,24 @@ The following fields are available:
 - **UpdateHealthToolsPushCurrentStep**  The current step for the push notification
 
 
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlobDocumentDetails
+
+The event indicates the details about the blob used for update health tools. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by the user.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
+- **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
+- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
+- **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
+- **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
+- **UpdateHealthToolsHashedTenantId**  The SHA256 hash of the device tenant id.
+
+
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoAADJoin
 
 This event indicates that the device is not AAD joined so service stops. The data collected with this event is used to help keep Windows secure and up to date.
@@ -5427,6 +5870,28 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of UpdateHealthTools.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
+
+The event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  The global event counter counts the total events for the provider.
+- **PackageVersion**  The version for the current package.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
+
+This event is sent when a device has been detected as DSS device. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by this user.
+- **PackageVersion**  The package version of the label.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceStarted
@@ -6315,6 +6780,7 @@ The following fields are available:
 - **ContainsSafeOSDUPackage**  Boolean indicating whether Safe DU packages are part of the payload.
 - **DeletedCorruptFiles**  Boolean indicating whether corrupt payload was deleted.
 - **DownloadComplete**  Indicates if the download is complete.
+- **DownloadedSizeBundle**  Cumulative size (in bytes) of the downloaded bundle content.
 - **DownloadedSizeCanonical**  Cumulative size (in bytes) of downloaded canonical content.
 - **DownloadedSizeDiff**  Cumulative size (in bytes) of downloaded diff content.
 - **DownloadedSizeExpress**  Cumulative size (in bytes) of downloaded express content.
@@ -6324,11 +6790,13 @@ The following fields are available:
 - **ExtensionName**  Indicates whether the payload is related to Operating System content or a plugin.
 - **FlightId**  Unique ID for each flight.
 - **InternalFailureResult**  Indicates a non-fatal error from a plugin.
+- **NumberOfHops**  Number of intermediate packages used to reach target version.
 - **ObjectId**  Unique value for each Update Agent mode (same concept as InstanceId for Setup360).
 - **PackageCategoriesSkipped**  Indicates package categories that were skipped, if applicable.
 - **PackageCountOptional**  Number of optional packages requested.
 - **PackageCountRequired**  Number of required packages requested.
 - **PackageCountTotal**  Total number of packages needed.
+- **PackageCountTotalBundle**  Total number of bundle packages.
 - **PackageCountTotalCanonical**  Total number of canonical packages.
 - **PackageCountTotalDiff**  Total number of diff packages.
 - **PackageCountTotalExpress**  Total number of express packages.
@@ -7533,6 +8001,12 @@ This event indicates that the Quality Rollback process has started. The data col
 
 
 
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualitySucceeded
+
+This event sends basic telemetry on the success of the rollback of the Quality/LCU builds. The data collected with this event is used to help keep Windows secure and up to date.
+
+
+
 ## Windows Update Delivery Optimization events
 
 ### Microsoft.OSG.DU.DeliveryOptClient.DownloadCanceled
@@ -8407,6 +8881,17 @@ The following fields are available:
 - **wuDeviceid**  WU device ID.
 
 
+### Microsoft.Windows.Update.Orchestrator.UniversalOrchestratorScheduleWorkNonSystem
+
+This event ensures that only callers with system or admin privileges are allowed to schedule work through Windows Update Universal Orchestrator. The data collected with this event is used to help keep Windows product and service secure.
+
+The following fields are available:
+
+- **updaterCmdLine**  Updater Command Line.
+- **updaterId**  Updater ID.
+- **wuDeviceid**  Device ID.
+
+
 ### Microsoft.Windows.Update.Orchestrator.UnstickUpdate
 
 This event is sent when the update service orchestrator (USO) indicates that the update can be superseded by a newer update. The data collected with this event is used to help keep Windows secure and up to date.
@@ -8502,6 +8987,19 @@ The following fields are available:
 - **sessionType**  A GUID that refers to the update session type.
 - **updateScenarioType**  A descriptive update session type.
 - **wuDeviceid**  The Windows Update device GUID.
+
+
+### Microsoft.Windows.Update.Orchestrator.UUPFallBack
+
+This event sends data when UUP needs to fall back, to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **EventPublishedTime**  The current event time.
+- **UUPFallBackCause**  The reason for UUP fall back.
+- **UUPFallBackConfigured**  The fall back error code.
+- **UUPFallBackErrorReason**  The reason for fall back error.
+- **wuDeviceid**  A Windows Update device ID.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState

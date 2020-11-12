@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/30/2020
+ms.date: 11/12/2020
 ms.reviewer:
 ---
 
@@ -33,7 +33,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 2004 and Windows 10, version 20H2 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -2551,19 +2551,6 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-## Common Data Fields
-
-### Ms.Device.DeviceInventoryChange
-
-Describes the installation state for all hardware and software components available on a particular device.
-
-The following fields are available:
-
-- **action** The change that was invoked on a device inventory object.
-- **inventoryId** Device ID used for Compatibility testing
-- **objectInstanceId** Object identity which is unique within the device scope.
-- **objectType** Indicates the object type that the event applies to.
-- **syncId** A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Compatibility events
 
@@ -2794,6 +2781,12 @@ The following fields are available:
 
 
 ## Diagnostic data events
+
+### Microsoft.Windows.Test.WindowsCoreTelemetryTestProvider.WindowsCoreTelemetryTestEvent
+
+This is an internal-only test event used to validate the utc.app and telemetry.asm-windowsdefault settings and namespaces before publishing. The provider of this event is assigned to the Windows Core Telemetry group provider in order to test. The data collected with this event is used to keep Windows performing properly.
+
+
 
 ### TelClientSynthetic.AbnormalShutdown_0
 
@@ -3307,6 +3300,19 @@ The following fields are available:
 - **CV**  Correlation vector.
 
 
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiGenericFailure
+
+This event indicates that we have received an unexpected error in the Direct to Update (DTU) Coordinator WaitForRebootUi call.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorWaitForRebootUiNotShown
 
 This event indicates that the Coordinator WaitForRebootUi call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
@@ -3579,81 +3585,148 @@ The following fields are available:
 - **CV**  Correlation vector.
 
 
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXEnteringState
+
+This event indicates that DTUNotificationUX has started processing a workflow state.  The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  The coordinator version of Direct To Update.
+- **CV**  Correlation vector.
+- **State**  State of the workflow.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXEvaluation
+
+This event indicates that Applicability DLL ran a set of applicability tests. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **Action**  The enumeration code of action that was handled.
+- **ActiveTestResults**  The bitmask results of applicability tests.
+- **ActiveTestsRun**  The bitmask of applicability tests that were run.
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  The coordinator version of Direct To Update.
+- **CV**  Correlation vector.
+- **FullTestResults**  The bitmask of results of applicability tests.
+- **FullTestsRun**  The bitmask of applicability tests that were run.
+- **SuppressedTests**  The bitmask of applicability tests that were unable to run due to suppression caused by the configuration settings.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXEvaluationError
+
+This event indicates that Applicability DLL failed on a test. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **FailedTest**  The enumeration code of the test that failed.
+- **HRESULT**  An error (if any) that occurred.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXExit
+
+This event indicates that DTUNotificationUX has finished execution. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **HRESULTCausingExit**  HRESULT Causing an abnormal exit, or S_OK for normal exits.
+- **ProcessExitCode**  The exit code that DTUNotificationUX returns to DTUCoordinator.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXExitingState
+
+This event indicates that DTUNotificationUX has stopped processing a workflow state. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **HRESULT**  Error (if any) that occurred.
+- **NextState**  Next workflow state we will enter.
+- **State**  The state of the workflow.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXFinalAcceptDialogDisplayed
+
+This event indicates that the Final Accept dialog has been shown. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **EnterpriseAttribution**  If true, the user is told that the enterprise managed the reboot.
+- **HRESULT**  Error (if any) that occurred.
+- **UserResponse**  The enumeration code indicating the user response to a dialog.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXFirstAcceptDialogDisplayed
+
+This event indicates that the First Accept dialog has been shown. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **EnterpriseAttribution**  If true, the user is told that the enterprise managed the reboot.
+- **HRESULT**  Error (if any) that occurred.
+- **UserResponse**  Enumeration code indicating the user response to a dialog.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXLaunch
+
+This event indicates that DTUNotificationUX has launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CommandLine**  Command line passed to DTUNotificationUX.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXUserCannotReboot
+
+This event indicates that the user has no restart privilege. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXUserInitatedRestartFailed
+
+This event indicates that the system failed to restart. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+
+
 ## DISM events
-
-### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
-
-This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **DISMInstalledLCUPackageName**  Package name of LCU that's uninstalled by using DISM
-
-
-### Microsoft.Windows.StartRep.DISMPendingInstall
-
-This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **DISMPendingInstallPackageName**  The name of the pending package.
-
-
-### Microsoft.Windows.StartRep.DISMRevertPendingActions
-
-This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The result from the operation to revert pending packages.
-
-
-### Microsoft.Windows.StartRep.DISMUninstallLCU
-
-This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The error code that is being reported by DISM.
-
-
-### Microsoft.Windows.StartRep.SRTRepairActionEnd
-
-This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The error code that is reported.
-- **SRTRepairAction**  The action that was taken by SRT.
-
-
-### Microsoft.Windows.StartRep.SRTRepairActionStart
-
-This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **SRTRepairAction**  The action that is being taken by SRT.
-
-
-### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
-
-This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **ErrorCode**  The final result code for the root cause operation.
-- **SRTRootCauseDiag**  The name of the root cause operation that ran.
-
-
-### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
-
-This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **SRTRootCauseDiag**  The name of a specific diagnostic.
-
 
 ### Microsoft.Windows.StartRepairCore.DISMLatestInstalledLCU
 
@@ -3676,6 +3749,15 @@ The following fields are available:
 ### Microsoft.Windows.StartRepairCore.DISMRevertPendingActions
 
 The DISM Pending Install event sends information to report pending package installation found. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
+
+The following fields are available:
+
+- **errorCode**  The result code returned by the event.
+
+
+### Microsoft.Windows.StartRepairCore.DISMUninstallLCU
+
+The DISM Uninstall LCU sends information to report result of uninstall attempt for found LCU. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
 
 The following fields are available:
 
@@ -4332,7 +4414,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
 
 The following fields are available:
 
@@ -4423,7 +4505,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
 
 The following fields are available:
 
@@ -4573,9 +4655,17 @@ The following fields are available:
 - **Manufacturer**  Name of the DRAM manufacturer
 - **Model**  Model and sub-model of the memory
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
-- **Speed**  MHZ the memory is currently configured & used at.
+- **Speed**  The configured memory slot speed in MHz.
 - **Type**  Reports DDR, etc. as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
 - **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration per DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoRemove
+
+This event indicates that this particular data object represented by the objectInstanceId is no longer present.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoStartSync
@@ -4929,7 +5019,7 @@ The following fields are available:
 
 This event represents the basic metadata about the OS indicators installed on the system. The data collected with this event helps ensure the device is up to date and keeps Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
 
 The following fields are available:
 
@@ -4954,15 +5044,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 
 ## Kernel events
-
-### IO
-
-This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
-
-The following fields are available:
-
-- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
-- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
@@ -5543,7 +5624,7 @@ The following fields are available:
 - **winInetError**  The HResult of the operation.
 
 
-## ONNX runtime events
+## Other events
 
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
@@ -5568,6 +5649,94 @@ The following fields are available:
 - **sessionId**  Identifier for each created session.
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Size of the battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
+
+### Microsoft.Windows.StartRep.DISMLatesInstalledLCU
+
+This event indicates that LCU is being uninstalled by DISM. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMInstalledLCUPackageName**  Package name of LCU that's uninstalled by using DISM
+
+
+### Microsoft.Windows.StartRep.DISMPendingInstall
+
+This event indicates that installation for the package is pending during recovery session. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **DISMPendingInstallPackageName**  The name of the pending package.
+
+
+### Microsoft.Windows.StartRep.DISMRevertPendingActions
+
+This event indicates that the revert pending packages operation has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The result from the operation to revert pending packages.
+
+
+### Microsoft.Windows.StartRep.DISMUninstallLCU
+
+This event indicates the uninstall operation. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is being reported by DISM.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionEnd
+
+This event indicates that the SRT Repair has been completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code that is reported.
+- **SRTRepairAction**  The action that was taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRepairActionStart
+
+This event sends data when SRT repair has started. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRepairAction**  The action that is being taken by SRT.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagEnd
+
+This event sends data when the root cause operation has completed. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The final result code for the root cause operation.
+- **SRTRootCauseDiag**  The name of the root cause operation that ran.
+
+
+### Microsoft.Windows.StartRep.SRTRootCauseDiagStart
+
+This event indicates that a diagnostic in the recovery environment has been initiated. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **SRTRootCauseDiag**  The name of a specific diagnostic.
 
 
 ## Privacy consent logging events
@@ -7601,18 +7770,6 @@ The following fields are available:
 - **IsValidDumpFile**  True if the dump file is valid for the debugger, false otherwise
 - **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
 
-### Value
-
-This event returns data about Mean Time to Failure (MTTF) for Windows devices. It is the primary means of estimating reliability problems in Basic Diagnostic reporting with very strong privacy guarantees. Since Basic Diagnostic reporting does not include system up-time, and since that information is important to ensuring the safe and stable operation of Windows, the data provided by this event provides that data in a manner which does not threaten a user’s privacy.
-
-The following fields are available:
-
-- **Algorithm**  The algorithm used to preserve privacy.
-- **DPRange**  The upper bound of the range being measured.
-- **DPValue**  The randomized response returned by the client.
-- **Epsilon**  The level of privacy to be applied.
-- **HistType**  The histogram type if the algorithm is a histogram algorithm.
-- **PertProb**  The probability the entry will be Perturbed if the algorithm chosen is “heavy-hitters”.
 
 ## Windows Error Reporting MTT events
 
@@ -8013,7 +8170,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCreate
 
-This event sends data when the Windows System Kit is used to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends simple Product and Service usage data when a user is using the Windows System Kit to create new OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate “image” creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -8028,7 +8185,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskImageCustomization
 
-This event sends data when the Windows System Kit is used to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends simple Product and Service usage data when a user is using the Windows System Kit to create/modify configuration files allowing the customization of a new OS image with Apps or Drivers. The data includes the version of the Windows System Kit, the state of the event, the customization type (drivers or apps) and the mode (new or updating) and is used to help investigate configuration file creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -8044,7 +8201,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Kits.WSK.WskWorkspaceCreate
 
-This event sends data when the Windows System Kit is used to create new workspace for generating OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate workspace creation failures. The data collected with this event is used to keep Windows performing properly.
+This event sends simple Product and Service usage data when a user is using the Windows System Kit to create new workspace for generating OS “images”. The data includes the version of the Windows System Kit and the state of the event and is used to help investigate workspace creation failures. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -9075,6 +9232,19 @@ The following fields are available:
 - **sessionType**  A GUID that refers to the update session type.
 - **updateScenarioType**  A descriptive update session type.
 - **wuDeviceid**  The Windows Update device GUID.
+
+
+### Microsoft.Windows.Update.Orchestrator.UUPFallBack
+
+This event sends data when UUP needs to fall back, to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **EventPublishedTime**  The current event time.
+- **UUPFallBackCause**  The reason for UUP fall back.
+- **UUPFallBackConfigured**  The fall back error code.
+- **UUPFallBackErrorReason**  The reason for fall back error.
+- **wuDeviceid**  A Windows Update device ID.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState
