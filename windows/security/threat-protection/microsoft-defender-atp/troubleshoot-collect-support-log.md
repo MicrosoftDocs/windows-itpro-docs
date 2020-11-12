@@ -17,20 +17,20 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Collect support logs in Microsoft Defender ATP using live response 
+# Collect support logs in Microsoft Defender for Endpoint using live response 
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-When contacting support, you may be asked to provide the output package of the Microsoft Defender ATP Client Analyzer tool.
+When contacting support, you may be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
 
 This topic provides instructions on how to run the tool via Live Response.
 
 1. Download the appropriate script
-    * Microsoft Defender ATP client sensor logs only: [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer).
+    * Microsoft Defender for Endpoint client sensor logs only: [LiveAnalyzer.ps1 script](https://aka.ms/MDATPLiveAnalyzer).
       - Result package approximate size: ~100Kb 
-    *  Microsoft Defender ATP client sensor and Antivirus logs: [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDATPLiveAnalyzerAV).
+    *  Microsoft Defender for Endpoint client sensor and Antivirus logs: [LiveAnalyzer+MDAV.ps1 script](https://aka.ms/MDATPLiveAnalyzerAV).
        - Result package approximate size: ~10Mb 
  
 2.	Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
@@ -72,4 +72,4 @@ This topic provides instructions on how to run the tool via Live Response.
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDATPClientAnalyzerResult.zip" -auto
 >   ```
 > 
-> - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender ATP cloud services, or does not appear in MDATP portal as expected, see [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
+> - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender for Endpoint cloud services, or does not appear in MDATP portal as expected, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls).
