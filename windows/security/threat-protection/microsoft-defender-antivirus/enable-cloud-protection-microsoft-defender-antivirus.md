@@ -1,6 +1,6 @@
 ---
-title: Enable cloud-delivered protection in Microsoft Defender Antivirus
-description: Enable cloud-delivered protection to benefit from fast and advanced protection features.
+title: Turn on cloud-delivered protection in Microsoft Defender Antivirus
+description: Turn on cloud-delivered protection to benefit from fast and advanced protection features.
 keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 ms.custom: nextgen
 ---
 
-# Enable cloud-delivered protection
+# Turn on cloud-delivered protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ For more information about the specific network-connectivity requirements to ens
 > [!NOTE]
 > In Windows 10, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
-## Use Intune to enable cloud-delivered protection
+## Use Intune to turn on cloud-delivered protection
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services > Intune**.
@@ -68,13 +68,29 @@ For more information about the specific network-connectivity requirements to ens
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
-## Use Configuration Manager to enable cloud-delivered protection
+## Use Configuration Manager to turn on cloud-delivered protection
 
-See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-## Use Group Policy to enable cloud-delivered protection
+2. Choose **Endpoint security** > **Antivirus**.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+
+4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+
+5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
+
+    1. **High**: Applies a strong level of detection.
+    2. **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
+    3. **Zero tolerance**: Blocks all unknown executables.
+
+6. Choose **Review + save**, and then choose **Save**.
+
+For more information about configuring Microsoft Endpoint Configuration Manager, see [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
+
+## Use Group Policy to turn on cloud-delivered protection
+
+1. On your Group Policy management device, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration**.
 
@@ -82,7 +98,7 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 4. Expand the tree to **Windows components > Microsoft Defender Antivirus > MAPS**
 
-5. Double-click **Join Microsoft MAPS**. Ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
+5. Double-click **Join Microsoft MAPS**. Ensure the option is turned on and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
 
 6. Double-click **Send file samples when further analysis is required**. Ensure that the first option is set to **Enabled** and that the other options are set to either:
 
@@ -97,9 +113,9 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 7. Select **OK**.
 
-## Use PowerShell cmdlets to enable cloud-delivered protection
+## Use PowerShell cmdlets to turn on cloud-delivered protection
 
-Use the following cmdlets to enable cloud-delivered protection:
+The following cmdlets can turn on cloud-delivered protection:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
@@ -114,7 +130,7 @@ For more information on how to use PowerShell with Microsoft Defender Antivirus,
 >[!WARNING]
 > Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
-## Use Windows Management Instruction (WMI) to enable cloud-delivered protection
+## Use Windows Management Instruction (WMI) to turn on cloud-delivered protection
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn439474(v=vs.85).aspx) class for the following properties:
 
@@ -125,7 +141,7 @@ SubmitSamplesConsent
 
 For more information about allowed parameters, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
-## Enable cloud-delivered protection on individual clients with the Windows Security app
+## Turn on cloud-delivered protection on individual clients with the Windows Security app
 
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
@@ -138,8 +154,8 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
->[!NOTE]
->If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
+> [!NOTE]
+> If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
 
 ## Related articles
 
