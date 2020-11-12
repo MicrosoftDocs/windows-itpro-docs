@@ -69,6 +69,16 @@ Once you are in the Remediation page, select the remediation activity that you w
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
 
+### Completed by column
+
+Track who closed the remediation activity with the "Completed by" column on the Remediation page.
+
+- **Email address**: The email of the person who manually completed the task
+- **System confirmation**: The task was automatically completed (all devices remediated)
+- **N/A**: Information is not available because we don't know how this older task was completed
+
+![Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation.](images/tvm-completed-by.png)
+
 ### Top remediation activities in the dashboard
 
 View **Top remediation activities** in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.

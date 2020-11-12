@@ -26,6 +26,11 @@ ms.topic: conceptual
 > [!IMPORTANT]
 > Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
 
+## 101.13.75
+
+- Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
+- Bug fixes
+
 ## 101.10.72
 
 - Bug fixes
