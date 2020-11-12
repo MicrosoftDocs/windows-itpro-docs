@@ -37,13 +37,13 @@ Make sure that `*.securitycenter.windows.com` is included the proxy allow list.
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
 
-## Microsoft Defender ATP service shows event or error logs in the Event Viewer
+## Microsoft Defender for Endpoint service shows event or error logs in the Event Viewer
 
-See the topic [Review events and errors using Event Viewer](event-error-codes.md) for a list of event IDs that are reported by the Microsoft Defender ATP service. The topic also contains troubleshooting steps for event errors.
+See the topic [Review events and errors using Event Viewer](event-error-codes.md) for a list of event IDs that are reported by the Microsoft Defender for Endpoint service. The topic also contains troubleshooting steps for event errors.
 
-## Microsoft Defender ATP service fails to start after a reboot and shows error 577
+## Microsoft Defender for Endpoint service fails to start after a reboot and shows error 577
 
-If onboarding devices successfully completes but Microsoft Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
+If onboarding devices successfully completes but Microsoft Defender for Endpoint does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
 
 For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
@@ -65,15 +65,15 @@ The following date and time formats are currently not supported:
 **Use of comma to indicate thousand**<br>
 Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
-## Microsoft Defender ATP tenant was automatically created in Europe
-When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.
+## Microsoft Defender for Endpoint tenant was automatically created in Europe
+When you use Azure Security Center to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
 
 
 
 
 
 ## Related topics
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Review events and errors using Event Viewer](event-error-codes.md)
