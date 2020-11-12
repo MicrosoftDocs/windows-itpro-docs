@@ -97,7 +97,7 @@ Then rerun step 2.
 4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
-5. If ```/opt``` directory is a symbolic link, create a bind mount for ```/opt/microsoft```. 
+5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`. 
 
 6. Ensure that the daemon has executable permission.
     ```bash
