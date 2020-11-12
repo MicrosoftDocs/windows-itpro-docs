@@ -474,6 +474,16 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 
+<a href="" id="properties-sleepmode"></a>**Properties/SleepMode**
+<p style="margin-left: 20px">Added in Windows 10, version 20H2. Specifies the type of sleep mode for the Surface Hub.
+
+<p style="margin-left: 20px">Valid values:
+
+-   0 - Connected Standby (default)
+-   1 - Hibernate
+
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
+
 <a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the ability to resume a session when the session times out. 
 
