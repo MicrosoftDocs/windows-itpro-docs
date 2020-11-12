@@ -1,6 +1,6 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
-description: The Windows Defender Advanced Threat Protection (WDATP) CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
+description: The Microsoft Defender for Endpoint CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for Microsoft Defender for Endpoint.
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
 ms.reviewer: 
 manager: dansimp
@@ -15,9 +15,9 @@ ms.date: 11/01/2017
 # WindowsAdvancedThreatProtection CSP
 
 
-The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
+The Defender for Endpoint configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for Defender for Endpoint.
 
-The following diagram shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
+The following diagram shows the configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
 
 ![windowsadvancedthreatprotection csp diagram](images/provisioning-csp-watp.png)
 
