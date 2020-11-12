@@ -43,7 +43,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 
 
 
-
 ## Account trace logging provider events
 
 ### Microsoft.Windows.Mitigation.AccountTraceLoggingProvider.General
