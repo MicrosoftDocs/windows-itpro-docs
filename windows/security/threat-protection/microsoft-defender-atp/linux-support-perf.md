@@ -13,28 +13,30 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+mms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
-# Troubleshoot performance issues for Microsoft Defender ATP for Linux
+# Troubleshoot performance issues for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
-This article provides some general steps that can be used to narrow down performance issues related to Microsoft Defender ATP for Linux.
+This article provides some general steps that can be used to narrow down performance issues related to Defender for Endpoint for Linux.
 
-Real-time protection (RTP) is a feature of Microsoft Defender ATP for Linux that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
+Real-time protection (RTP) is a feature of Defender for Endpoint for Linux that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender ATP for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender ATP for Linux.
+Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Defender for Endpoint for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint for Linux.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 
-1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender ATP for Linux is contributing to the performance issues.
+1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Defender for Endpoint for Linux is contributing to the performance issues.
 
     If your device is not managed by your organization, real-time protection can be disabled from the command line:
 
@@ -45,9 +47,9 @@ The following steps can be used to troubleshoot and mitigate these issues:
     Configuration property updated
     ```
 
-    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Linux](linux-preferences.md).
+    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
 
-2. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Microsoft Defender ATP for Linux. 
+2. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Linux. 
 
     > [!NOTE]
     > This feature is available in version 100.90.70 or newer.
@@ -79,13 +81,13 @@ The following steps can be used to troubleshoot and mitigate these issues:
     mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
     ```
 
-    The output of this command will show all processes and their associated scan activity. To improve the performance of Microsoft Defender ATP for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    The output of this command will show all processes and their associated scan activity. To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
 
     > [!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
 3. Use the `top` command-line tool and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+4. Configure Defender for Endpoint for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    For more details, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    For more details, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).

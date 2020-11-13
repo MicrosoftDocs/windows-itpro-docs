@@ -13,24 +13,26 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
-# Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
+# Troubleshoot kernel extension issues in Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
-This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender ATP for Mac.
+This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender for Endpoint for Mac.
 
 Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they are allowed to run on the device.
 
-If you did not approve the kernel extension during the deployment/installation of Microsoft Defender ATP for Mac, the application displays a banner prompting you to enable it:
+If you did not approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint for Mac, the application displays a banner prompting you to enable it:
 
    ![RTP disabled screenshot](../microsoft-defender-antivirus/images/MDATP-32-Main-App-Fix.png)
 
@@ -46,7 +48,7 @@ realTimeProtectionEnabled               : true
 ...
 ```
 
-The following sections provide guidance on how to address this issue, depending on the method that you used to deploy Microsoft Defender ATP for Mac.
+The following sections provide guidance on how to address this issue, depending on the method that you used to deploy Microsoft Defender for Endpoint for Mac.
 
 ## Managed deployment
 

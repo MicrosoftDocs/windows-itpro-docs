@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Defender Antivirus with Group Policy
-description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender ATP.
+description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender for Endpoint.
 keywords: group policy, GPO, configuration, settings
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -22,7 +22,7 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx) to configure and manage Microsoft Defender Antivirus on your endpoints.
 

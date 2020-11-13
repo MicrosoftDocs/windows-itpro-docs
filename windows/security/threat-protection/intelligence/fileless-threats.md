@@ -43,7 +43,7 @@ A fully fileless malware can be considered one that never requires writing a fil
 
 A compromised device may also have malicious code hiding in device firmware (such as a BIOS), a USB peripheral (like the BadUSB attack), or in the firmware of a network card. All these examples don't require a file on the disk to run, and can theoretically live only in memory. The malicious code would survive reboots, disk reformats, and OS reinstalls.
 
-Infections of this type can be extra difficult deal with because antivirus products usually don’t have the capability to inspect firmware. Even if they did, it would be extremely challenging to detect and remediate threats at this level. This type of fileless malware requires high levels of sophistication and often depends on particular hardware or software configuration. It’s not an attack vector that can be exploited easily and reliably. While dangerous, threats of this type are uncommon and not practical for most attacks.
+Infections of this type can be particularly difficult to detect because most antivirus products don’t have the capability to inspect firmware. In cases where a product does have the ability to inspect and detect malicious firmware, there are still significant challenges associated with remediation of threats at this level. This type of fileless malware requires high levels of sophistication and often depends on particular hardware or software configuration. It’s not an attack vector that can be exploited easily and reliably. While dangerous, threats of this type are uncommon and not practical for most attacks.
 
 ## Type II: Indirect file activity
 
@@ -98,6 +98,6 @@ Besides being vulnerable at the firmware level, CPUs could be manufactured with 
 
 ## Defeating fileless malware
 
-At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions to mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender Advanced Threat Protection [(Microsoft Defender ATP)](https://www.microsoft.com/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
+At Microsoft, we actively monitor the security landscape to identify new threat trends and develop solutions to mitigate classes of threats. We instrument durable protections that are effective against a wide range of threats. Through AntiMalware Scan Interface (AMSI), behavior monitoring, memory scanning, and boot sector protection, Microsoft Defender for Endpoint](https://www.microsoft.com/windowsforbusiness?ocid=docs-fileless) can inspect fileless threats even with heavy obfuscation. Machine learning technologies in the cloud allow us to scale these protections against new and emerging threats.
 
 To learn more, read: [Out of sight but not invisible: Defeating fileless malware with behavior monitoring, AMSI, and next-gen AV](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/)

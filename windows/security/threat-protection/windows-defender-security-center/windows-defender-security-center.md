@@ -34,7 +34,7 @@ In Windows 10, version 1803, the app has two new areas, **Account protection** a
 ![Screenshot of the Windows Security app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 > [!NOTE]
-> The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+> The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal console that is used to review and manage [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
 You can't uninstall the Windows Security app, but you can do one of the following:
 

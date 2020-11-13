@@ -96,7 +96,7 @@ This section describes how an attacker might exploit a feature or its configurat
 Anyone with the **Modify an object label** user right can change the integrity level of a file or process so that it becomes elevated or decreased to a point where it can be deleted by lower integrity processes. Either of these states effectively circumvents the protection that is offered by 
 Windows Integrity Controls and makes your system vulnerable to attacks by malicious software.
 
-If malicious software is set with an elevated integrity level such as Trusted Installer or System, administrator accounts do not have sufficient integrity levels to delete the program from the system. In that case, use of the **Modify an object label** right is mandated so that the object can be re-labeled. However, the re-labeling must occur by using a process that is at the same or a higher level of integrity than the object that you are attempting to re-label.
+If malicious software is set with an elevated integrity level such as Trusted Installer or System, administrator accounts do not have sufficient integrity levels to delete the program from the system. In that case, use of the **Modify an object label** right is mandated so that the object can be relabeled. However, the relabeling must occur by using a process that is at the same or a higher level of integrity than the object that you are attempting to relabel.
 
 ### Countermeasure
 
