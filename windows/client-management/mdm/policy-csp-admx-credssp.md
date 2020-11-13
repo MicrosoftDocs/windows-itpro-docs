@@ -277,8 +277,8 @@ If you enable this policy setting, CredSSP version support will be selected base
 
 - Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. 
 
-> [!NOTE]
-> This setting should not be deployed until all remote hosts support the newest version.
+    > [!NOTE]
+    > This setting should not be deployed until all remote hosts support the newest version.
 
 - Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
@@ -363,7 +363,7 @@ If you disable this policy setting, delegation of fresh credentials is not permi
 > The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
 >
 > For Example:
-
+>
 > - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
 > - TERMSRV/* Remote Desktop Session Host running on all machines.
 > - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
