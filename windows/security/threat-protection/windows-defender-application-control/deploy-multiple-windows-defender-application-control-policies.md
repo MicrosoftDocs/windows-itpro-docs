@@ -27,7 +27,7 @@ ms.date: 11/13/2020
 The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 
 1. Enforce and Audit Side-by-Side
-    - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side-by-side with an existing enforcement-mode base policy
+    - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side by side with an existing enforcement-mode base policy
 2. Multiple Base Policies
     - Users can enforce two or more base policies simultaneously in order to allow simpler policy targeting for policies with different scope/intent
     - If two base policies exist on a device, an application has to be allowed by both to run
@@ -54,13 +54,13 @@ In order to allow multiple policies to exist and take effect on a single system,
 New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
 ```
 
-Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
+Optionally, you can choose to make the new base policy allow for supplemental policies.
 
 ```powershell
 Set-RuleOption -FilePath <string> -Option 17
 ```
 
-For signed base policies that are being made supplementable, you need to ensure that supplemental signers are defined. Use the "Supplemental" switch in Add-SignerRule to provide supplemental signers.
+For signed base policies to allow for supplemental policies, make sure that supplemental signers are defined. Use the **Supplemental** switch in **Add-SignerRule** to provide supplemental signers.
 
 ```powershell
 Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]  [<CommonParameters>]
@@ -77,7 +77,8 @@ In order to create a supplemental policy, begin by creating a new policy in the 
 Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
 ```
 
-Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
+> [!NOTE]
+> **ResetPolicyId** reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
 
 ### Merging policies
 
@@ -89,17 +90,17 @@ In order to deploy multiple WDAC policies, you must either deploy them locally b
 
 ### Deploying multiple policies locally
 
-In order to deploy policies locally using the new multiple policy format you will need to:
+To deploy policies locally using the new multiple policy format, follow these steps:
 
 1. Ensure binary policy files have the correct naming format of `{PolicyGUID}.cip`.
    - Ensure that the name of the binary policy file is exactly the same as the PolicyID GUID in the policy
-   - For example, if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>`, then the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
+   - For example, if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>`, then the correct name for the binary policy file would be `{A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip`.
 2. Copy binary policies to `C:\Windows\System32\CodeIntegrity\CiPolicies\Active`.
 3. Reboot the system.
 
 ### Deploying multiple policies via ApplicationControl CSP
 
-Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment. Refer to [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
+Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment. See [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
 
 > [!NOTE]
 > WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format WDAC policies.
