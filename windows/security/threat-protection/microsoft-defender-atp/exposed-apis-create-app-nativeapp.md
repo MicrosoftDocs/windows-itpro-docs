@@ -73,7 +73,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
      To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
 
- When finished, select **Register**.
+     When finished, select **Register**.
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it 'Read alerts' permission:
 
