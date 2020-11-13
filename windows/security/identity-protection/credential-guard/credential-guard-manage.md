@@ -160,7 +160,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 
 2.  Click **System Summary**.
 
-3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Configured**.
+3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Running**.
 
     Here's an example:
 

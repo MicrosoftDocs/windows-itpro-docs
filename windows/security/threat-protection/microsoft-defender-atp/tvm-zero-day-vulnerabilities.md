@@ -25,10 +25,10 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 

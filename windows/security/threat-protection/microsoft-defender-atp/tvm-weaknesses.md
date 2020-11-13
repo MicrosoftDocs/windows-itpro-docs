@@ -23,12 +23,12 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Threat and vulnerability management uses the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
+Threat and vulnerability management uses the same signals in Defender for Endpoint's endpoint protection to scan and detect vulnerabilities.
 
 The **Weaknesses** page lists the software vulnerabilities your devices are exposed to by listing the Common Vulnerabilities and Exposures (CVE) ID. You can also view the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
@@ -152,4 +152,4 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 - [Security recommendations](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Dashboard insights](tvm-dashboard-insights.md)
-- [View and organize the Microsoft Defender ATP Devices list](machines-view-overview.md)
+- [View and organize the Microsoft Defender for Endpoint Devices list](machines-view-overview.md)

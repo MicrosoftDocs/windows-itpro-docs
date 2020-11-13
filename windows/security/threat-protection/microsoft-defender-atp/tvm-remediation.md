@@ -23,20 +23,20 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## Request remediation
 
-The threat and vulnerability management capability in Microsoft Defender ATP bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+The threat and vulnerability management capability in Microsoft Defender for Endpoint bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
 
 ### Enable Microsoft Intune connection
 
 To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
 
-See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 ### Remediation request steps
 
@@ -52,7 +52,7 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender AT
 
 6. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
 
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
 >If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
@@ -72,6 +72,16 @@ Once you are in the Remediation page, select the remediation activity that you w
 
 >[!NOTE]
 > There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
+
+### Completed by column
+
+Track who closed the remediation activity with the "Completed by" column on the Remediation page.
+
+- **Email address**: The email of the person who manually completed the task
+- **System confirmation**: The task was automatically completed (all devices remediated)
+- **N/A**: Information is not available because we don't know how this older task was completed
+
+![Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation.](images/tvm-completed-by.png)
 
 ### Top remediation activities in the dashboard
 
