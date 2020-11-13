@@ -234,6 +234,7 @@
 #### [ADMX_WindowsStore](policy-csp-admx-windowsstore.md)
 #### [ADMX_WinInit](policy-csp-admx-wininit.md)
 #### [ADMX_wlansvc](policy-csp-admx-wlansvc.md)
+#### [ADMX_WPN](policy-csp-admx-wpn.md)
 #### [ApplicationDefaults](policy-csp-applicationdefaults.md)
 #### [ApplicationManagement](policy-csp-applicationmanagement.md)
 #### [AppRuntime](policy-csp-appruntime.md)

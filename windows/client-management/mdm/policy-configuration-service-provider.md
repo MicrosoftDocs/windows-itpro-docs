@@ -2839,6 +2839,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WPN policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-nocallsduringquiethours" id="admx-wpn-nocallsduringquiethours">ADMX_WPN/NoCallsDuringQuietHours</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-nolockscreentoastnotification" id="admx-wpn-nolockscreentoastnotification">ADMX_WPN/NoLockScreenToastNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-noquiethours" id="admx-wpn-noquiethours">ADMX_WPN/NoQuietHours</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-notoastnotification" id="admx-wpn-notoastnotification">ADMX_WPN/NoToastNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-quiethoursdailybeginminute" id="admx-wpn-quiethoursdailybeginminute">ADMX_WPN/QuietHoursDailyBeginMinute</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wpn.md#admx-wpn-quiethoursdailyendminute" id="admx-wpn-quiethoursdailyendminute">ADMX_WPN/QuietHoursDailyEndMinute</a>
+  </dd>
+</dl>
+
 ### ApplicationDefaults policies
 
 <dl>
