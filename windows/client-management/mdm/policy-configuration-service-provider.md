@@ -332,6 +332,43 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_CredSsp policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowdefcredentialswhenntlmonly" id="admx-credssp-allowdefcredentialswhenntlmonly">ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowdefaultcredentials" id="admx-credssp-allowdefaultcredentials">ADMX_CredSsp/AllowDefaultCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowencryptionoracle" id="admx-credssp-allowencryptionoracle">ADMX_CredSsp/AllowEncryptionOracle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowfreshcredentials" id="admx-credssp-allowfreshcredentials">ADMX_CredSsp/AllowFreshCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowfreshcredentialswhenntlmonly" id="admx-credssp-allowfreshcredentialswhenntlmonly">ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowsavedcredentials" id="admx-credssp-allowsavedcredentials">ADMX_CredSsp/AllowSavedCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-allowsavedcredentialswhenntlmonly" id="admx-credssp-allowsavedcredentialswhenntlmonly">ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-denydefaultcredentials" id="admx-credssp-denydefaultcredentials">ADMX_CredSsp/DenyDefaultCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-denyfreshcredentials" id="admx-credssp-denyfreshcredentials">ADMX_CredSsp/DenyFreshCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-denysavedcredentials" id="admx-credssp-denysavedcredentials">ADMX_CredSsp/DenySavedCredentials</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credssp.md#admx-credssp-restrictedremoteadministration" id="admx-credssp-restrictedremoteadministration">ADMX_CredSsp/RestrictedRemoteAdministration</a>
+  </dd>
+</dl>
 
 ###  ADMX_CtrlAltDel policies  
 <dl>
@@ -573,6 +610,35 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-kdc.md#admx-kdc-emitlili" id="admx-kdc-emitlili">ADMX_kdc/emitlili</a>
+  </dd>
+</dl>
+
+### ADMX_Kerberos policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-alwayssendcompoundid" id="admx-kerberos-alwayssendcompoundid">ADMX_Kerberos/AlwaysSendCompoundId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-devicepkinitenabled" id="admx-kerberos-devicepkinitenabled">ADMX_Kerberos/DevicePKInitEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-hosttorealm" id="admx-kerberos-hosttorealm">ADMX_Kerberos/HostToRealm</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-kdcproxydisableserverrevocationcheck" id="admx-kerberos-kdcproxydisableserverrevocationcheck">ADMX_Kerberos/KdcProxyDisableServerRevocationCheck</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-kdcproxyserver" id="admx-kerberos-kdcproxyserver">ADMX_Kerberos/KdcProxyServer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-mitrealms" id="admx-kerberos-mitrealms">ADMX_Kerberos/MitRealms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-serveracceptscompound" id="admx-kerberos-serveracceptscompound">ADMX_Kerberos/ServerAcceptsCompound</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-kerberos.md#admx-kerberos-stricttarget" id="admx-kerberos-stricttarget">ADMX_Kerberos/StrictTarget</a>
   </dd>
 </dl>
 
