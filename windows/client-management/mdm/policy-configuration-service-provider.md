@@ -1885,6 +1885,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_SystemRestore policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-systemrestore.md#admx-systemrestore-sr-disableconfig" ID="admx-systemrestore-sr-disableconfig">ADMX_SystemRestore/SR_DisableConfig</a>
+  </dd>
+</dl>
+
 ### ADMX_Taskbar policies  
 
 <dl>

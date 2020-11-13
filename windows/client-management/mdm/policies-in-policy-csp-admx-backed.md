@@ -522,6 +522,7 @@ ms.date: 10/08/2020
 - [ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey](./policy-csp-admx-startmenu.md#admx-startmenu-showstartondisplaywithforegroundonwinkey)
 - [ADMX_StartMenu/StartMenuLogOff](./policy-csp-admx-startmenu.md#admx-startmenu-startmenulogoff)
 - [ADMX_StartMenu/StartPinAppsWhenInstalled](./policy-csp-admx-startmenu.md#admx-startmenu-startpinappswheninstalled)
+- [ADMX_SystemRestore/SR_DisableConfig](./policy-csp-admx-systemrestore.md#admx-systemrestore-sr-disableconfig)
 - [ADMX_Taskbar/DisableNotificationCenter](./policy-csp-admx-taskbar.md#admx-taskbar-disablenotificationcenter)
 - [ADMX_Taskbar/EnableLegacyBalloonNotifications](./policy-csp-admx-taskbar.md#admx-taskbar-enablelegacyballoonnotifications)
 - [ADMX_Taskbar/HideSCAHealth](./policy-csp-admx-taskbar.md#admx-taskbar-hidescahealth)

@@ -218,6 +218,7 @@
 #### [ADMX_Smartcard](policy-csp-admx-smartcard.md)
 #### [ADMX_Snmp](policy-csp-admx-snmp.md)
 #### [ADMX_StartMenu](policy-csp-admx-startmenu.md)
+#### [ADMX_SystemRestore](policy-csp-admx-systemrestore.md)
 #### [ADMX_Taskbar](policy-csp-admx-taskbar.md)
 #### [ADMX_tcpip](policy-csp-admx-tcpip.md)
 #### [ADMX_Thumbnails](policy-csp-admx-thumbnails.md)
