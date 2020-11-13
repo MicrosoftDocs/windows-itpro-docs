@@ -44,11 +44,13 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
-3. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
+3. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
 
-4. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+4. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
 
-5. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
+5. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+6. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
 
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
@@ -62,6 +64,8 @@ Lower your organization's exposure from vulnerabilities and increase your securi
 ## View your remediation activities
 
 When you submit a remediation request from the Security recommendations page, it kicks-off a remediation activity. A security task is created that can be tracked in the threat and vulnerability management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
+
+If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor.
 
 Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
 ![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
