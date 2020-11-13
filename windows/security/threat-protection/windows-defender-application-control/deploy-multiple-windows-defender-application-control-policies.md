@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 09/16/2020
+ms.date: 11/13/2020
 ---
 
 # Use multiple Windows Defender Application Control Policies
@@ -91,11 +91,11 @@ In order to deploy multiple WDAC policies, you must either deploy them locally b
 
 In order to deploy policies locally using the new multiple policy format you will need to:
 
-1. Ensure binary policy files have the correct naming format of {PolicyGUID}.cip
+1. Ensure binary policy files have the correct naming format of `{PolicyGUID}.cip`.
    - Ensure that the name of the binary policy file is exactly the same as the PolicyID GUID in the policy
-   - For example, if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>` then the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
-2. Copy binary policies to C:\Windows\System32\CodeIntegrity\CiPolicies\Active
-3. Reboot the system
+   - For example, if the policy XML had the ID as `<PolicyID>{A6D7FBBF-9F6B-4072-BF37-693741E1D745}</PolicyID>`, then the correct name for the binary policy file would be {A6D7FBBF-9F6B-4072-BF37-693741E1D745}.cip
+2. Copy binary policies to `C:\Windows\System32\CodeIntegrity\CiPolicies\Active`.
+3. Reboot the system.
 
 ### Deploying multiple policies via ApplicationControl CSP
 
