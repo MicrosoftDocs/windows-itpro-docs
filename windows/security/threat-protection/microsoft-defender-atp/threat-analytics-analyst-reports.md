@@ -35,7 +35,7 @@ Most analyst reports include the following sections:
 
 | Report section | Description |
 |--|--|
-| Executive summary | Overview of the threat, including when it was first seen, its motivations, notable events, major targets, and distinct tools and techniques. |
+| Executive summary | Overview of the threat, including when it was first seen, its motivations, notable events, major targets, and distinct tools and techniques. You can use this information to further assess how to prioritize the threat in the context of your industry, geographic location, and network state. |
 | Analysis | Technical information about the threats, including the details of an attack or how a new technique or attack surface might be used. | 
 | MITRE ATT&CK techniques observed | Lists the techniques and how they map to the techniques in the [MITRE ATT&CK attack framework](https://attack.mitre.org/). | 
 | [Mitigations](#apply-additional-mitigations) | Lists recommendations that can stop or help reduce the impact of the threat. This section also includes mitigations that are not tracked dynamically as part of the threat analytics report. |
