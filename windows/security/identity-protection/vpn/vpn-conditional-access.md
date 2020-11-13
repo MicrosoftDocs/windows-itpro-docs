@@ -74,7 +74,7 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Collects TPM data used to verify health states
    - Forwards the data to the Health Attestation Service (HAS)
    - Provisions the Health Attestation Certificate received from the HAS
-   - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
+   - Upon request, forward the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 > [!NOTE]
 > Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources.
