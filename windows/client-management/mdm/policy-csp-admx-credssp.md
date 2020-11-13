@@ -194,7 +194,7 @@ The policy becomes effective the next time the user signs on to a computer runni
 If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
 
 FWlink for KB:
-http://go.microsoft.com/fwlink/?LinkId=301508
+https://go.microsoft.com/fwlink/?LinkId=301508
 
 Note: The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
