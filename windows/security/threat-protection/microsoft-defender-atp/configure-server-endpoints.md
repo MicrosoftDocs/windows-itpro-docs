@@ -249,12 +249,14 @@ To offboard the Windows server, you can use either of the following methods:
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
     ```powershell
+    $ErrorActionPreference = "SilentlyContinue"
     # Load agent scripting object
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace
-    $AgentCfg.RemoveCloudWorkspace($WorkspaceID)
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
+
     ```
 ## Related topics
 - [Onboard Windows 10 devices](configure-endpoints.md)
