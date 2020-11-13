@@ -47,7 +47,7 @@ The following table lists the VPN settings and whether the setting can be config
 | Proxy settings | yes, by PAC/WPAD file or server and port |
 
 > [!NOTE] 
-> VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections the general proxy settings are used.
+> VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
 
 The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
 
