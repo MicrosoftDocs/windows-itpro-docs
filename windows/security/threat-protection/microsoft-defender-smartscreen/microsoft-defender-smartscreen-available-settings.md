@@ -34,14 +34,13 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p>
-<td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
-<td>At least Windows Server 2012, Windows 8 or Windows RT</td>
+<td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen<br><br>
+<b>At least Windows Server 2012, Windows 8 or Windows RT</b></td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether Microsoft Defender SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
-<td><b>Windows 10, version 1703</td>
 <td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br>This setting does not protect against malicious content from USB devices, network shares or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
 </tr>
 <tr>
