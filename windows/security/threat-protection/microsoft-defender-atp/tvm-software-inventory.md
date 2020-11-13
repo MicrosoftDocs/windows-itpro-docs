@@ -57,7 +57,7 @@ Select the software that you want to investigate. A flyout panel will open with 
 
 ### Software that isn't supported
 
-Software that isn't currently supported by threat & vulnerability management may still be present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
+Software that isn't currently supported by threat & vulnerability management may be present in the Software inventory page. Because it is not supported, only limited data will be available. Filter by unsupported software with the "Not available" option in the "Weakness" section.
 
 ![Unsupported software filter.](images/tvm-unsupported-software-filter.png)
 
