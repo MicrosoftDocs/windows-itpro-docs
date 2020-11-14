@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 11/13/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -22,7 +22,7 @@ ms.author: dansimp
 
 This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
 
-![Intune VPN policy template](images/vpn-intune-policy.png)
+To create a Windows 10 VPN device configuration profile see: [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10).
 
 >[!NOTE]
 >This guide does not explain server deployment.  
@@ -43,7 +43,7 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 
 ## Learn more
 
-- [VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
+- [Create VPN profiles to connect to VPN servers in Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)
 
 
 
