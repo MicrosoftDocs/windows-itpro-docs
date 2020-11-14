@@ -51,6 +51,8 @@ These are the things you'll need to complete this lab:
 
 A summary of the sections and procedures in the lab is provided below. Follow each section in the order it is presented, skipping the sections that do not apply to you. Optional procedures are provided in the appendix.
 
+> If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
+
 [Verify support for Hyper-V](#verify-support-for-hyper-v)
 <br>[Enable Hyper-V](#enable-hyper-v)
 <br>[Create a demo VM](#create-a-demo-vm)
@@ -138,7 +140,7 @@ After we have set the ISO file location and determined the name of the appropria
 You can download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
 - When asked to select a platform, choose **64 bit**.
 
-After you download this file, the name will be extremely long (ex: 17763.107.101029-1455.rs5_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso).
+After you download this file, the name will be extremely long (ex: 19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso).
 
 1. So that it is easier to type and remember, rename the file to **win10-eval.iso**.
 2. Create a directory on your computer named **c:\iso** and move the **win10-eval.iso** file there, so the path to the file is **c:\iso\win10-eval.iso**.
@@ -161,7 +163,7 @@ For example, if the command above displays Ethernet but you wish to use Ethernet
 All VM data will be created under the current path in your PowerShell prompt. Consider navigating into a new folder before running the following commands.
 
 > [!IMPORTANT]
-> **VM switch**: a VM switch is how Hyper-V connects VMs to a network. <br><br>If you have previously enabled Hyper-V and your Internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."<br><br>If you have never created an external VM switch before, then just run the commands below.
+> **VM switch**: a VM switch is how Hyper-V connects VMs to a network. <br><br>If you have previously enabled Hyper-V and your Internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."<br><br>If you have never created an external VM switch before, then just run the commands below.<br><br>If you are not sure if you already have an External VM switch, enter **get-vmswitch** at a Windows PowerShell prompt to display a currently list of the VM switches that are provisioned in Hyper-V. If one of them is of SwitchType **External**, then you already have a VM switch configured on the server that is used to connect to the Internet. In this case, you need to skip the first command below and modify the others to use the name of your VM switch instead of the name "AutopilotExternal" (or change the name of your switch).
 
 ```powershell
 New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
@@ -216,6 +218,9 @@ PS C:\autopilot&gt;
 
 ### Install Windows 10
 
+> [!NOTE]
+> The VM will be booted to gather a hardware ID, then it will be reset. The goal in the next few steps is to get to the desktop quickly so don't worry about how it is configured at this stage. The VM only needs to be connected to the Internet.
+
 Ensure the VM booted from the installation ISO, click **Next** then click **Install now** and complete the Windows installation process. See the following examples:
 
    ![Windows setup](images/winsetup1.png)
@@ -248,7 +253,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 
 Follow these steps to run the PS script:
 
-1. Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
+1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -261,18 +266,20 @@ Follow these steps to run the PS script:
 
 When you are prompted to install the NuGet package, choose **Yes**.
 
-See the sample output below.
+See the sample output below.  A 'dir' command is issued at the end to show the file that was created.
 
 <pre>
 PS C:\> md c:\HWID
 
-    Directory: C:\
+     Directory: C:\
 
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
-d-----        3/14/2019  11:33 AM                HWID
 
-PS C:\> Set-Location c:\HWID
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/13/2020   3:00 PM                HWID
+
+
+PS C:\Windows\system32> Set-Location c:\HWID
 PS C:\HWID> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
 PS C:\HWID> Install-Script -Name Get-WindowsAutopilotInfo -Force
 
@@ -285,13 +292,17 @@ import the NuGet provider now?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 PS C:\HWID> $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
 PS C:\HWID> Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
+Gathered details for device with serial number: 1804-7078-6805-7405-0796-0675-17
 PS C:\HWID> dir
+
 
     Directory: C:\HWID
 
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
--a----        3/14/2019  11:33 AM           8184 AutopilotHWID.csv
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/13/2020   3:01 PM           8184 AutopilotHWID.csv
+
 
 PS C:\HWID>
 </pre>
@@ -303,7 +314,7 @@ Verify that there is an **AutopilotHWID.csv** file in the **c:\HWID** directory 
 
 ![Serial number and hardware hash](images/hwid.png)
 
-You will need to upload this data into Intune to register your device for Autopilot, so it needs to be transferred to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
+You will need to upload this data into Intune to register your device for Autopilot, so the next step is to transfer this file to the computer you will use to access the Azure portal.  If you are using a physical device instead of a VM, you can copy the file to a USB stick.  If you’re using a VM, you can right-click the AutopilotHWID.csv file and copy it, then right-click and paste the file to your desktop (outside the VM).
 
 If you have trouble copying and pasting the file, just view the contents in Notepad on the VM and copy the text into Notepad outside the VM. Do not use another text editor to do this.
 
@@ -315,7 +326,7 @@ If you have trouble copying and pasting the file, just view the contents in Note
 With the hardware ID captured in a file, prepare your Virtual Machine for Windows Autopilot deployment by resetting it back to OOBE.
 
 On the Virtual Machine, go to **Settings > Update & Security > Recovery** and click on **Get started** under **Reset this PC**.
-Select **Remove everything** and **Just remove my files**. Finally, click on **Reset**.
+Select **Remove everything** and **Just remove my files**. If you are asked **How would you like to reinstall Windows**, select Local reinstall. Finally, click on **Reset**.
 
 ![Reset this PC final prompt](images/autopilot-reset-prompt.jpg)
 
@@ -361,7 +372,7 @@ Open [Mobility (MDM and MAM) in Azure Active Directory](https://portal.azure.com
 
 For the purposes of this demo, select **All** under the **MDM user scope** and click **Save**.
 
-![MDM user scope in the Mobility blade](images/autopilot-aad-mdm.png)
+![MDM user scope in the Mobility blade](images/ap-aad-mdm.png)
 
 ## Register your VM
 
