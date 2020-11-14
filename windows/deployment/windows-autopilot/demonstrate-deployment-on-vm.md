@@ -395,9 +395,9 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 3. Click **Import** and wait until the import process completes. This can take up to 15 minutes.
 
-4. Click **Sync** to sync the device you just registered. Wait a few moments before refreshing to verify your VM or device has been added. See the following example.
+4. Click **Refresh** to verify your VM or device has been added. See the following example.
 
-   ![Import HWID](images/import-vm.png)
+   ![Import HWID](images/enroll3.png)
 
 ### Autopilot registration using MSfB
 
