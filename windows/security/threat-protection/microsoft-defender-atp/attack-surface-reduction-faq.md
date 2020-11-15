@@ -77,7 +77,7 @@ Keep the rule in audit mode for about 30 days to get a good baseline for how the
 
 ## I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
 
-In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) (Defender for Endpoint) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
+In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
 
 The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
