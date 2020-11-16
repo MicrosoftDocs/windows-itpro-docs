@@ -31,11 +31,10 @@ ms.topic: conceptual
 
 Defender for Endpoint for iOS enables admins to configure custom indicators on iOS devices as well. Refer to [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) on how to configure custom indicators.
 
->[!NOTE]
+> [!NOTE]
 > Defender for Endpoint for iOS supports creating custom indicators only for IP addresses and URLs/domains.
 
 ## Web Protection
 
 By default, Defender for Endpoint for iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks.
-
 
