@@ -24,8 +24,8 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 
 To create a Windows 10 VPN device configuration profile see: [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10).
 
->[!NOTE]
->This guide does not explain server deployment.  
+> [!NOTE]
+> This guide does not explain server deployment.
 
 ## In this guide
 
@@ -44,5 +44,4 @@ To create a Windows 10 VPN device configuration profile see: [Windows 10 and Win
 ## Learn more
 
 - [Create VPN profiles to connect to VPN servers in Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)
-
 
