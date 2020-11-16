@@ -47,28 +47,16 @@ For more information about the specific network-connectivity requirements to ens
 
 ## Use Intune to turn on cloud-delivered protection
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services > Intune**.
-3. In the **Intune** pane, select **Device configuration > Profiles**. Then select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
-4. Select **Properties**, select **Settings: Configure**, and then select **Microsoft Defender Antivirus**.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+2. On the **Home** pane, select **Device configuration > Profiles**.
+3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+4. Select **Properties** > **Configuration settings: Edit** > **Microsoft Defender Antivirus**.
 5. On the **Cloud-delivered protection** switch, select **Enable**.
-6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**.
-7. In the **Submit samples consent** dropdown, select one of the following options:
-
-    - **Send safe samples automatically**
-    - **Send all samples automatically**
-
-        >[!NOTE]
-        > The **Send safe samples automatically** option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
-
-        > [!WARNING]
-        > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
-
-8. Select **OK** to exit the **Microsoft Defender Antivirus** settings pane, select **OK** to exit the **Device restrictions** pane, and then select **Save** to save the changes to your **Device restrictions** profile.
+6. In the **Prompt users before sample submission** dropdown, select **Send all data automatically**.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
-## Use Configuration Manager to turn on cloud-delivered protection
+## Use Microsoft Endpoint Configuration  Manager to turn on cloud-delivered protection
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.
