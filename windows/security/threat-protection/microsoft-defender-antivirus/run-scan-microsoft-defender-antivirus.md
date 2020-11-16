@@ -49,7 +49,7 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
 4. From the list of actions provided, select **Quick Scan** or **Full Scan**.
 
-![IMAGE](images/mem-antivirus-scan-on-demand.png)
+[ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
 > For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
@@ -58,7 +58,7 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 
 Use the following `-scan` parameter:
 
-```DOS
+```console
 mpcmdrun.exe -scan -scantype 1
 ```
 
