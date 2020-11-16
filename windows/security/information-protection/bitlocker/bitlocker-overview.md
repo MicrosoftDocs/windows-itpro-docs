@@ -62,7 +62,7 @@ A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant B
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
 
 > [!IMPORTANT]
-> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://blogs.technet.microsoft.com/tip_of_the_day/2014/01/22/tip-of-the-day-bitlocker-without-tpm-or-usb/).
+> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://social.technet.microsoft.com/Forums/en-US/eac2cc67-8442-42db-abad-2ed173879751/bitlocker-without-tpm?forum=win10itprosetup).
 
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.

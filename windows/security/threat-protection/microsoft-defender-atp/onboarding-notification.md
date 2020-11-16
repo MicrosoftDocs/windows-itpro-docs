@@ -23,7 +23,7 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
 
@@ -48,7 +48,7 @@ You'll need to have access to:
 
     ![Image of the notification flow](images/build-flow.png)
 
-4. Select the + button to add a new action. The new action will be an HTTP request to the Microsoft Defender ATP security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
+4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
 
     ![Image of recurrence and add action](images/recurrence-add.png)
 
@@ -164,7 +164,7 @@ You'll need to have access to:
 
 10.  Extract the values from the JSON call and check if the onboarded device(s) is / are already registered at the SharePoint list as an example:
 - If yes, no notification will be triggered
-- If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Microsoft Defender ATP admin
+- If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Defender for Endpoint admin
 
     ![Image of apply to each](images/flow-apply.png)
 
