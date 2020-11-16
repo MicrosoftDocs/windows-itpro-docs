@@ -96,7 +96,7 @@ devices. Microsoft Defender for Endpoint is also available for purchase from a C
 Solution Provider (CSP).
 
 Customers can obtain Microsoft Defender for Endpoint for Mac through a standalone
-Microsft Defender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365
+Microsoft Defender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365
 Security.
 
 Recently announced capabilities of Microsoft Defender for Endpoint for Android and iOS 
