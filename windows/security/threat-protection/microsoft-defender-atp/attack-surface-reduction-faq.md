@@ -27,7 +27,7 @@ ms.custom: asr
 
 ## Is attack surface reduction (ASR) part of Windows?
 
-ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10 version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
+ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
 
 ## Do I need to have an enterprise license to run ASR rules?
 
@@ -77,7 +77,7 @@ Keep the rule in audit mode for about 30 days to get a good baseline for how the
 
 ## I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
 
-In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) (Defender for Endpoint) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
+In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs. 
 
 The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
@@ -127,7 +127,7 @@ Because many legitimate processes throughout a typical day will be calling on ls
 
 Enabling this rule will not provide additional protection if you have [LSA protection](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
 
-## Related topics
+## See also
 
 * [Attack surface reduction overview](attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
