@@ -29,13 +29,15 @@ ms.topic: conceptual
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. If your organization has device groups, you will now be able to scope the exception to specific device groups. Exceptions can either be created for selected device groups, or for all device groups past and present.  
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. If your organization has device groups, you will be able to scope the exception to specific device groups. Exceptions can either be created for selected device groups, or for all device groups past and present.  
 
-When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
+When an exception is created for a recommendation, the recommendation will not be active until the end of the exception duration. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
 ## Permissions
 
-Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md).
+Only users with “exceptions handling” permissions can manage exceptions (including creating or canceling). [Learn more about RBAC roles](user-roles.md).
+
+![View of exception handling permission.](images/tvm-exception-permissions.png)
 
 ## Create an exception
 
@@ -45,7 +47,7 @@ Select a security recommendation you would like create an exception for, and the
 
 ### Exception by device group
 
-Apply the exception to all device groups or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.” The state will change to “full exception” if you select all the device groups.
+Apply the exception to all current device groups or choose specific device groups. Future device groups won't be included in the exception. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.” The state will change to “full exception” if you select all the device groups.
 
 ![Showing device group dropdown.](images/tvm-exception-device-group-500.png)
 
@@ -53,7 +55,7 @@ Apply the exception to all device groups or choose specific device groups. Devic
 
 If you have filtered by device group on any of the threat and vulnerability management pages, only your filtered device groups will appear as options.
 
-Button to filter by device group on any of the threat and vulnerability management pages: 
+This is the button to filter by device group on any of the threat and vulnerability management pages: 
 
 ![Showing selected device groups filter.](images/tvm-selected-device-groups.png)
 
@@ -97,23 +99,24 @@ The following list details the justifications behind the exception options:
 
 ## View all exceptions
 
-Navigate to the **Exceptions** tab in the **Remediation** page.
+Navigate to the **Exceptions** tab in the **Remediation** page. You can filter by justification, type, and status.
 
-![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
+ Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can export. You can also view the related recommendation or cancel the exception.
 
-Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can Export. You can also view the related recommendation or cancel the exception.
+
+![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-view.png)
+
 
 ## How to cancel an exception
 
-To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
+To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception. To cancel the exception for all device groups, select the **Cancel exception** button. You can also cancel the exception for a specific device group.
 
 ### Cancel the exception for a specific device group
 
-If the exception is per device group, then you will need to select the specific device group to cancel the exception for it. 
+Select the specific device group to cancel the exception for it. A flyout will appear for the device group, and you can select **Cancel exception**.
 
 ![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
 
-A flyout will appear for the device group, and you can select **Cancel exception**.
 
 ### Cancel a global exception
 
@@ -132,11 +135,6 @@ The exposed devices (after exceptions) column shows the remaining devices that a
 The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
 
 ![Showing the columns in the table.](images/tvm-after-exceptions-table.png)
-If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and Microsoft Secure Score for Devices, then that security recommendation is worth investigating.
-
-1. Select the recommendation and **Open software page**
-2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
-3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request.
 
 ## Related topics
 
