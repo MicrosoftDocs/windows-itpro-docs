@@ -40,18 +40,18 @@ Once the Microsoft Defender for Endpoint team has reviewed and approves the inte
 [Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) is a program specifically for Microsoft security partners to help enrich your security products and improve customer discoverability of your integrations to Microsoft security products.
 
 ## Step 4: Get listed in the Microsoft Defender for Endpoint partner application portal
-Microsoft Defender ATP supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal. 
+Microsoft Defender for Endpoint supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal. 
 
 To have your company listed as a partner in the in-product partner page, you will need to provide the following information:
 
 1. A square logo (SVG).
 2. Name of the product to be presented.
 3. Provide a 15-word product description.
-4. Link to the landing page for the customer to complete the integration or blog post that will include sufficient information for customers. Any press release including the Microsoft Defender ATP product name should be reviewed by the marketing and engineering teams. Wait for at least 10 days for the review process to be done.
+4. Link to the landing page for the customer to complete the integration or blog post that will include sufficient information for customers. Any press release including the Microsoft Defender for Endpoint product name should be reviewed by the marketing and engineering teams. Wait for at least 10 days for the review process to be done.
 5.	If you use a multi-tenant Azure AD approach, we will need the Azure AD application name to track usage of the application.
 6. Include the User-Agent field in each API call made to Microsoft Defender for Endpoint public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
     Follow these steps:
-    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender ATP-integrated product with the version of the product that includes this integration. 
+    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender for Endpoint-integrated product with the version of the product that includes this integration. 
       - ISV Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`
       - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}` 
 
