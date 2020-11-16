@@ -113,7 +113,7 @@ Requirements:
 4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use. 
 
 > [!NOTE]
-> **Device Credential** Credential Type will also work, however, it is not yet supported for MDM solutions (including Intune) yet. It is not recommended to use this option until support is announced.
+> **Device Credential** Credential Type will also work, however, it is not yet supported for MDM solutions (including Intune). We don't recommend using this option until support is announced.
 
     ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
