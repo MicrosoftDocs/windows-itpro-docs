@@ -70,21 +70,15 @@ For more information about Intune device profiles, including how to create and c
 
 ## Use Configuration Manager to turn on cloud-delivered protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.
-
 3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
-
 4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
-
     1. **High**: Applies a strong level of detection.
     2. **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
     3. **Zero tolerance**: Blocks all unknown executables.
-
-6. Choose **Review + save**, and then choose **Save**.
+6. Select **Review + save**, then choose **Save**.
 
 For more information about configuring Microsoft Endpoint Configuration Manager, see [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
 

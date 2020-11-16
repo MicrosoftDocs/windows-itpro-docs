@@ -42,9 +42,17 @@ A full scan can be useful on endpoints that have reported a malware threat. The 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
-## Use Configuration Manager to run a scan
+## Use Microsoft Endpoint Manager to run a scan
 
-For more information about using Microsoft Endpoint Configuration Manager (current branch) to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+2. Choose **Endpoint security** > **Antivirus**.
+3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
+4. From the list of actions provided, select **Quick Scan** or **Full Scan**.
+
+![IMAGE](images/mem-antivirus-scan-on-demand.png)
+
+> [!TIP]
+> For more information about using Microsoft Endpoint Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
 ## Use the mpcmdrun.exe command-line utility to run a scan
 
@@ -78,7 +86,7 @@ For more information on how to use PowerShell with Microsoft Defender Antivirus,
 
 ## Use Windows Management Instruction (WMI) to run a scan
 
-Use the [**Start** method of the **MSFT_MpScan**](https://msdn.microsoft.com/library/dn455324(v=vs.85).aspx#methods) class.
+Use the [**Start** method](https://docs.microsoft.com/previous-versions/windows/desktop/defender/start-msft-mpscan) of the **MSFT_MpScan** class.
 
 For more information about which parameters are allowed, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
