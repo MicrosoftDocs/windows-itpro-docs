@@ -1659,7 +1659,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- Create a new REG_SZ registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** to a value of **1**.
+- Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen
