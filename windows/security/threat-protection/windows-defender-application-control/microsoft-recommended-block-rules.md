@@ -88,6 +88,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Lasse Trolle Borup | Langkjaer Cyber Defence |
 |Jimmy Bayne | @bohops |
 |Philip Tsukerman | @PhilipTsukerman |
+|Brock Mammen| |
 
 <br />
 
@@ -158,6 +159,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
   <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
@@ -896,6 +898,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_KILL"/>
   <FileRuleRef RuleID="ID_DENY_LXSS"/> 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
+  <FileRuleRef RuleID="ID_DENY_MFC40"/>
   <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
   <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
