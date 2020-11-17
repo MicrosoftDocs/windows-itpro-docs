@@ -1,7 +1,7 @@
 ---
 title: "Quarantine"
 description: Quarantine behavior is explained in detail.
-ms.author: Benny-54
+ms.author: v-bshilpa
 author: Benny-54
 manager: dansimp
 ms.assetid: 
