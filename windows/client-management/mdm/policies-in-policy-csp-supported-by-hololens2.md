@@ -89,6 +89,7 @@ ms.date: 10/08/2020
 - [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage) <sup>9</sup>
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
+- [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
