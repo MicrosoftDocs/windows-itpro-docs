@@ -42,7 +42,7 @@ Most analyst reports include the following sections:
 | [Detection details](#understand-how-each-threat-can-be-detected) | Lists specific and generic detections provided by Microsoft security solutions that can surface activity or components associated with the threat. | 
 | [Advanced hunting](#find-subtle-threat-artifacts-using-advanced-hunting) | Provides sample [advanced hunting queries](advanced-hunting-overview.md) for proactively identifying possible threat activity. Most queries are provided to supplement detections, especially for locating potentially malicious components or behaviors that couldn't be dynamically assessed to be malicious. | 
 | References | Lists Microsoft and third-party references reviewed by analysts during the creation of the report. Threat analytics reports are based on data validated by Microsoft researchers. Information from publicly available, third-party source are identified clearly as such. | 
-| Change log | The times of publication and when significant changes were made to the report. |
+| Change log | The time the report was published and and when significant changes were made to the report. |
 
 ## Apply additional mitigations
 Threat analytics reports dynamically track the [status of security updates and secure configurations](threat-analytics.md#review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables under the **Mitigations** tab.

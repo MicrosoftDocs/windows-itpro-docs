@@ -84,11 +84,12 @@ Each report includes charts that provide an overview of how resilient your organ
 ### Get expert insight from the analyst report
 Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
-![Image of the analyst report section of a threat analytics report](images/ta-analyst-report.png)
-_Analyst report section of a threat analytics report_
 
 ### Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes recommended settings and vulnerability patches. It also shows the number of devices that don't have these mitigations in place.
+
+This section currently supports dynamically tracking the following mitigations:
+- 
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
