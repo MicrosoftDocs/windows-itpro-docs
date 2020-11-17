@@ -41,7 +41,7 @@ Threat analytics is a set of reports from expert Microsoft security researchers 
 - Common attack surfaces
 - Prevalent malware
 
-Each report provides a detailed analysis of a threat and extensive guidance on how to defend against the threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable security updates and recommended settings in place.
+Each report provides a detailed analysis of a threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place.
 
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 <p></p>
@@ -54,7 +54,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 - **Latest threats**—lists the most recently published threat reports, along with the number of devices with active and resolved alerts.
 - **High-impact threats**—lists the threats that have had the highest impact to the organization. This section ranks threats by the number of devices that have active alerts.
-- **Threat summary**—shows the overall impact of all the threats reported in threat analytics by showing the number of threats with active and resolved alerts.
+- **Threat summary**—shows the overall impact of tracked threats by showing the number of threats with active and resolved alerts.
 
 Select a threat from the dashboard to view the report for that threat.
 
@@ -84,18 +84,20 @@ Each report includes charts that provide an overview of how resilient your organ
 ### Get expert insight from the analyst report
 Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
-
 ### Review list of mitigations and the status of your devices
-In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes recommended settings and vulnerability patches. It also shows the number of devices that don't have these mitigations in place.
+In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
-This section currently supports dynamically tracking the following mitigations:
-- 
+- **Security updates**—deployment of security updates for Microsoft vulnerabilities on onboarded devices
+- **Microsoft Defender Antivirus settings**
+  - Cloud-delivered protection  
+  - Potentially unwanted application (PUA) protection
+  - Real-time protection
+ 
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
 ![Image of the mitigations section of a threat analytics report](images/ta-mitigations.png)
 _Mitigations section of a threat analytics report_
-
 
 ## Additional report details and limitations
 When using the reports, keep the following in mind: 
