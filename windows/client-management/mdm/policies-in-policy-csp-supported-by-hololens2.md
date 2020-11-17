@@ -96,9 +96,9 @@ ms.date: 10/08/2020
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone) <sup>9</sup>
-- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend) 
-- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
-- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
+- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend) <sup>9</sup>
+- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange) <sup>9</sup>
+- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart) <sup>9</sup>
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
