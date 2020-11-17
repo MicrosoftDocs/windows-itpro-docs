@@ -1,14 +1,13 @@
 ---
 title: Firewall Settings Lost on Upgrade
 description: Firewall Settings Lost on Upgrade
-
 ms.reviewer: 
 ms.author: v-bshilpa
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: v-bshilpa
+author: Benny-54
 manager: dansimp
 ms.collection: 
 - m365-security-compliance
