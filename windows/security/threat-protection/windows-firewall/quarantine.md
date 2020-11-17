@@ -1,5 +1,5 @@
 ---
-title: "Quarantine"
+title: Quarantine Behavior
 description: Quarantine behavior is explained in detail.
 ms.author: v-bshilpa
 author: Benny-54
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 11/17/2020
 ---
 
-# Quarantine
+# Quarantine Behavior
 
 One of the security challenges that network admins face is configuring a machine properly after a network change. 
 
@@ -197,7 +197,7 @@ Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /s
 
 Sample Drop Audit with `filterOrigin` as `Quarantine Default`.
 
-![Quarantine Default](images/quarantine-default-audit.png)
+![Quarantine Default](images/quarantine-default1.png)
 
 Once the drop’s filter origin has been identified as the Quarantine Default Inbound Block filter, the interface should be further investigated. To find the relevant interface, use the `InterfaceIndex` value from the `netEvent` or event audit in the following PowerShell command to generate more information about the interface:
 
