@@ -8,7 +8,7 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: Benny-54
+author: v-bshilpa
 manager: dansimp
 ms.collection: 
 - m365-security-compliance
