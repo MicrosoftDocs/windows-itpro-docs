@@ -74,7 +74,7 @@ The hard disk must be partitioned with at least two drives:
 -   The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
 -   The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker is not enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. We recommend that system drive be approximately 350 MB in size. After BitLocker is turned on it should have approximately 250 MB of free space.
 
-A fixed data volume or removable data volume cannot be marked as an active partition.
+Partition subject to encryption cannot be marked as an active partition (this applies to OS, fixed data and removable data drives).
 
 When installed on a new computer, Windows will automatically create the partitions that are required for BitLocker.
 
