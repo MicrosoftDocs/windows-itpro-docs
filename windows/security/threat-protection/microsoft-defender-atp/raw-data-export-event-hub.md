@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure Microsoft Defender ATP to stream Advanced Hunting events to your Azure Event Hubs
+# Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## Before you begin:
 
@@ -65,7 +65,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 - Each event hub message in Azure Event Hubs contains list of records.
 - Each record contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
-- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
@@ -88,6 +88,6 @@ To get the data types for event properties do the following:
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
-- [Microsoft Defender ATP streaming API](raw-data-export.md)
-- [Stream Microsoft Defender ATP events to your Azure storage account](raw-data-export-storage.md)
+- [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
+- [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)

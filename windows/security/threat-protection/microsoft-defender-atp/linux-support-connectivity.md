@@ -20,18 +20,18 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
+# Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 ## Run the connectivity test
 
-To test if Microsoft Defender ATP for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
+To test if Defender for Endpoint for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```bash
 mdatp connectivity test
@@ -59,7 +59,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
 >
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
@@ -80,7 +80,7 @@ To use a static proxy, the `mdatp.service` file must be modified. Ensure the lea
 
 Also ensure that the correct static proxy address is filled in to replace `address:port`.
 
-If this file is correct, try running the following command in the terminal to reload Microsoft Defender ATP for Linux and propagate the setting:
+If this file is correct, try running the following command in the terminal to reload Defender for Endpoint for Linux and propagate the setting:
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
@@ -96,4 +96,4 @@ If the problem persists, contact customer support.
 
 ## Resources
 
-- For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender ATP for static proxy discovery](linux-static-proxy-configuration.md).
+- For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender for Endpoint for static proxy discovery](linux-static-proxy-configuration.md).

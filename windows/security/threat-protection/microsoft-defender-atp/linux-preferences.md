@@ -20,19 +20,19 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Set preferences for Microsoft Defender ATP for Linux
+# Set preferences for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
+>This topic contains instructions for how to set preferences for Defender for Endpoint for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
 
-In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise environments, Defender for Endpoint for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
 This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
 
@@ -78,7 +78,7 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 | **Key** | passiveMode |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
-| **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
+| **Comments** | Available in Defender for Endpoint version 100.67.60 or higher. |
 
 #### Exclusion merge policy
 
@@ -89,7 +89,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 | **Key** | exclusionsMergePolicy |
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
 
 #### Scan exclusions
 
@@ -173,7 +173,7 @@ Restricts the actions that the local user of a device can take when threats are 
 | **Key** | disallowedThreatActions |
 | **Data type** | Array of strings |
 | **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
 
 #### Threat type settings
 
@@ -218,7 +218,7 @@ Specifies the merge policy for threat type settings. This can be a combination o
 | **Key** | threatTypeSettingsMergePolicy |
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
-| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+| **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
 
 #### Antivirus scan history retention (in days)
 
@@ -229,7 +229,7 @@ Specify the number of days that results are retained in the scan history on the 
 | **Key** | scanResultsRetentionDays |
 | **Data type** | String |
 | **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
-| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
+| **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
 
 #### Maximum number of items in the antivirus scan history
 
@@ -240,7 +240,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Key** | scanHistoryMaximumItems |
 | **Data type** | String |
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
-| **Comments** | Available in Microsoft Defender ATP version 101.04.76 or higher. |
+| **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
 
 ### Cloud-delivered protection preferences
 
@@ -264,7 +264,7 @@ Determines whether cloud-delivered protection is enabled on the device or not. T
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
+Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
 
 |||
 |:---|:---|
@@ -298,7 +298,7 @@ Determines whether security intelligence updates are installed automatically:
 
 ## Recommended configuration profile
 
-To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
+To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Defender for Endpoint provides.
 
 The following configuration profile will:
 
@@ -407,4 +407,4 @@ If the JSON is well-formed, the above command outputs it back to the Terminal an
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft Defender ATP for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.

@@ -44,7 +44,7 @@ What if something gets detected wrongly as malware, or something is missed? We c
 
 ## Create an "Allow" indicator to prevent a false positive from recurring
 
-If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Microsoft Defender Antivirus (and Microsoft Defender Advanced Threat Protection) that the item is safe.
+If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Microsoft Defender Antivirus (and Microsoft Defender for Endpoint) that the item is safe.
 
 To set up your "Allow" indicator, follow the guidance in [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -72,6 +72,6 @@ To learn more, see:
 
 ## Related articles
 
-[What is Microsoft Defender Advanced Threat Protection?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+[What is Microsoft Defender for Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 
-[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)

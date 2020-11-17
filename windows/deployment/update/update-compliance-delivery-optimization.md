@@ -13,6 +13,7 @@ keywords: oms, operations management suite, optimization, downloads, updates, lo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delivery Optimization in Update Compliance
@@ -41,5 +42,5 @@ The table breaks down the number of bytes from each download source into specifi
 
 The download sources that could be included are:
 - LAN Bytes: Bytes downloaded from LAN Peers which are other devices on the same local network
-- Group Bytes: Bytes downloaded from Group Peers which are other devices that belong to the same Group (available when the “Group” download mode is used)
+- Group Bytes: Bytes downloaded from Group Peers which are other devices that belong to the same Group (available when the "Group" download mode is used)
 - HTTP Bytes: Non-peer bytes. The HTTP download source can be Microsoft Servers, Windows Update Servers, a WSUS server or an SCCM Distribution Point for Express Updates. 

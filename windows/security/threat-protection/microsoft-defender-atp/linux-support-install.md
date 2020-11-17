@@ -20,14 +20,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshoot installation issues for Microsoft Defender ATP for Linux
+# Troubleshoot installation issues for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 ## Verify if installation succeeded
 
