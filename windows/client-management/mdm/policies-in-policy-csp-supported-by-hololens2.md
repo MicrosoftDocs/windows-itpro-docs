@@ -50,17 +50,17 @@ ms.date: 10/08/2020
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
-- [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
-- [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)
-- [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)
-- [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled)
-- [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)
-- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
-- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
-- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery)
-- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin)
-- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
-- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
+- [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
+- [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
+- [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
+- [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
+- [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled) <sup>9</sup>
+- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery) <sup>9</sup>
+- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin) <sup>9</sup>
+- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery) <sup>9</sup>
+- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin) <sup>9</sup>
+- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery) <sup>9</sup>
+- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin) <sup>9</sup>
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#privacy-allowinputpersonalization)
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 - [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
@@ -83,20 +83,22 @@ ms.date: 10/08/2020
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps) <sup>8</sup>
+- [RemoteLock/Lock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) <sup>9</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
-- [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage)
-- [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage)
+- [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage) <sup>9</sup>
+- [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage) <sup>9</sup>
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
+- [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
-- [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)
-- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
-- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
-- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
+- [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone) <sup>9</sup>
+- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend) <sup>9</sup>
+- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange) <sup>9</sup>
+- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart) <sup>9</sup>
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
@@ -122,6 +124,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in [Windows Holographic, version 20H2](https://docs.microsoft.com/hololens/hololens-release-notes#windows-holographic-version-20h2)
 
 ## Related topics
 
