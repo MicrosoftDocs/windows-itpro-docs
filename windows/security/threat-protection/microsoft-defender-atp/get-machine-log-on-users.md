@@ -97,8 +97,6 @@ Content-type: application/json
             "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
             "firstSeen": "2019-12-18T08:02:54Z",
             "lastSeen": "2020-01-06T08:01:48Z",
-            "mostPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
-            "leastPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
             "logonTypes": "Interactive",
             "logOnMachinesCount": 8,
             "isDomainAdmin": true,
