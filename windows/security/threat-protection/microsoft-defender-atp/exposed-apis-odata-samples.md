@@ -1,7 +1,7 @@
 ---
-title: OData queries with Microsoft Defender ATP
+title: OData queries with Microsoft Defender for Endpoint
 ms.reviewer: 
-description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP.
+description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# OData queries with Microsoft Defender ATP
+# OData queries with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
@@ -41,7 +41,7 @@ Not all properties are filterable.
 
 Get 10 latest Alerts with related Evidence
 
-```
+```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
@@ -147,9 +147,9 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### Example 2
 
-Get all the alerts last updated after 2019-10-20 00:00:00
+Get all the alerts last updated after 2019-11-22 00:00:00
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
@@ -205,7 +205,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTi
 
 Get all the devices with 'High' 'RiskScore'
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
@@ -244,7 +244,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+
 
 Get top 100 devices with 'HealthStatus' not equals to 'Active'
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
@@ -283,7 +283,7 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStat
 
 Get all the devices that last seen after 2018-10-20
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
@@ -320,9 +320,9 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen g
 
 ### Example 6
 
-Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
+Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
@@ -354,7 +354,7 @@ json{
 
 Get the count of open alerts for a specific device:
 
-```
+```http
 HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
@@ -364,5 +364,5 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415
 4
 ```
 
-## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+## See also
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)

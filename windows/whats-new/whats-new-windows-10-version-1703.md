@@ -96,9 +96,9 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 ## Security
 
-### Windows Defender Advanced Threat Protection
+### Microsoft Defender for Endpoint
 
-New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
+New features in Microsoft Defender for Endpoint for Windows 10, version 1703 include:
 - **Detection**<br>
   Enhancements to the detection capabilities include:
   - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
@@ -107,12 +107,12 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed
 
 - **Investigation**<br>
-  Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
+  Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus detections and Device Guard blocks being surfaced in the Microsoft Defender for Endpoint portal. Other capabilities have been added to help you gain a holistic view on investigations.
 
    Other investigation enhancements include:
    - [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
    - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-   - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
+   - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Microsoft Defender for Endpoint.
 
 - **Response**<br>
   When detecting an attack, security response teams can now take immediate action to contain a breach:
@@ -121,11 +121,11 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
 
 
 - **Other features**
-  - [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
+  - [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Microsoft Defender for Endpoint service and fix known issues.
 
-You can read more about ransomware mitigations and detection capability in Windows Defender Advanced Threat Protection in the blog: [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
+You can read more about ransomware mitigations and detection capability in Microsoft Defender for Endpoint in the blog: [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/windows/mt782787).
+Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10 and the new capabilities in Windows 10, version 1703 see [Microsoft Defender for Endpoint for Windows 10 Creators Update](https://technet.microsoft.com/windows/mt782787).
 
 ### Microsoft Defender Antivirus
 Windows Defender is now called Microsoft Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).

@@ -13,21 +13,23 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ---
 
-# Microsoft Defender ATP for Mac - System Extensions (Public Preview)
+# Microsoft Defender for Endpoint for Mac - System Extensions (Public Preview)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender ATP for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
+In alignment with macOS evolution, we are preparing a Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
 This functionality is currently in public preview. This article contains instructions for enabling this functionality on your device. You can choose to try out this feature locally on your own device or configure it remotely through a management tool.
 
-These steps assume you already have Microsoft Defender ATP running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
+These steps assume you already have Defender for Endpoint running on your device. For more information, see [this page](microsoft-defender-atp-mac.md).
 
 ## Known issues
 
@@ -63,7 +65,7 @@ Select the deployment steps corresponding to your environment and your preferred
 
 Once all deployment prerequisites are met, restart your device to start the system extension approval and activation process.
 
-You will be presented series of system prompts to approve the Microsoft Defender ATP system extensions. You must approve ALL prompts from the series, because macOS requires an explicit approval for each extension that Microsoft Defender ATP for Mac installs on the device.
+You will be presented series of system prompts to approve the Defender for Endpoint system extensions. You must approve ALL prompts from the series, because macOS requires an explicit approval for each extension that Defender for Endpoint for Mac installs on the device.
 
 For each approval, click **Open Security Preferences** and then click **Allow** to allow the system extension to run.
 

@@ -24,11 +24,11 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-Microsoft Defender Security Center is the portal where you can access Microsoft Defender Advanced Threat Protection capabilities.
+Microsoft Defender Security Center is the portal where you can access Microsoft Defender for Endpoint capabilities.
 
 Use the **Security operations** dashboard to gain insight on the various alerts on devices and users in your network.
 
@@ -41,6 +41,6 @@ Use the **Threat analytics** dashboard to continually assess and control risk ex
 Topic | Description
 :---|:---
 [Portal overview](portal-overview.md) | Understand the portal layout and area descriptions.
-[View the Security operations dashboard](security-operations-dashboard.md) | The Microsoft Defender ATP  **Security operations dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the devices on your network, investigate devices, files, and URLs, and see snapshots of threats seen on devices.
+[View the Security operations dashboard](security-operations-dashboard.md) | The Microsoft Defender for Endpoint  **Security operations dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the devices on your network, investigate devices, files, and URLs, and see snapshots of threats seen on devices.
 [View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md) | The **Threat & Vulnerability Management dashboard** lets you view exposure and Microsoft Secure Score for Devices side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed devices.
 [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md) | The **Threat analytics** dashboard helps you continually assess and control risk exposure to threats. Use the charts to quickly identify devices for the presence or absence of mitigations.

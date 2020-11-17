@@ -14,7 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
@@ -25,7 +27,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 ## Collect diagnostic information
 
@@ -42,7 +44,7 @@ If you can reproduce a problem, first increase the logging level, run the system
 
 2. Reproduce the problem.
 
-3. Run the following command to back up Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. 
+3. Run the following command to back up Defender for Endpoint's logs. The files will be stored inside of a .zip archive. 
 
    ```bash
    sudo mdatp diagnostic create
@@ -69,7 +71,7 @@ The detailed log will be saved to `/var/log/microsoft/mdatp_install.log`. If you
 
 ## Uninstall
 
-There are several ways to uninstall Microsoft Defender ATP for Linux. If you are using a configuration tool such as Puppet, follow the package uninstallation instructions for the configuration tool.
+There are several ways to uninstall Defender for Endpoint for Linux. If you are using a configuration tool such as Puppet, follow the package uninstallation instructions for the configuration tool.
 
 ### Manual uninstallation
 
@@ -123,9 +125,9 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine remove --id [threat-id]`                      |
 |Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine restore --id [threat-id]`                     |
 
-## Microsoft Defender ATP portal information
+## Microsoft Defender for Endpoint portal information
 
-In the Microsoft Defender ATP portal, you'll see two categories of information:
+In the Defender for Endpoint portal, you'll see two categories of information:
 
 - Antivirus alerts, including:
   - Severity

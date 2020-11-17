@@ -12,6 +12,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Feature Update Status
@@ -47,16 +48,6 @@ Update Compliance reporting offers two queries to help you retrieve data relat
 
 Update Compliance reporting will display the Safeguard IDs for known issues affecting a device in the **DeploymentErrorCode** column. Safeguard IDs for publicly discussed known issues are also included in the Windows Release Health dashboard, where you can easily find information related to publicly available safeguards.
 
-### Opting out of safeguard hold
+### Opt out of safeguard hold
 
-Microsoft will release a device from a safeguard hold when it has determined it can safely and smoothly install a feature update, but you are ultimately in control of your devices and can opt out if desired. 
-To opt out, set the registry key as follows:
-
-- Registry Key Path :: **Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion**
-- Create New Key    :: **502505fe-762c-4e80-911e-0c3fa4c63fb0**
-- Name              :: **DataRequireGatedScanForFeatureUpdates**
-- Type              :: **REG_DWORD**
-- Value             :: **0**
-
-Setting this registry key to **0** will force the device to opt out from *all* safeguard holds. Any other value, or deleting the key, will resume compatibility protection on the device.  
-
+You can [opt out of safeguard protections](safeguard-opt-out.md) by using the **Disable safeguards for Feature Updates** Group Policy. This policy is available to Windows Update for Business devices running Windows 10, version 1809 or later that have installed the October 2020 security update.  
