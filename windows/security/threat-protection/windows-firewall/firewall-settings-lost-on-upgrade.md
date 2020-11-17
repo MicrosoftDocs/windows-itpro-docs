@@ -30,7 +30,7 @@ Individual built-in firewall rules are categorized within a group. For example, 
 
 - Remote Desktop – User-Mode (UDP-In)
 
-Other examples include the Core Networking, File and Print Sharing, and Network Discovery groups. Administrators can filter on individual categories in the firewall interface (wf.msc) by selecting and right-clicking on ‘Inbound’ or ‘Outbound Rules’ and selecting ‘Filter by Group’; or via PowerShell using the Get-NetFirewallRule cmdlet with the -Group switch.
+Other examples include the Core Networking, File and Print Sharing, and Network Discovery groups. Admins can filter on individual categories in the firewall interface (wf.msc) by selecting and right-clicking on ‘Inbound’ or ‘Outbound Rules’ and selecting ‘Filter by Group’; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
 
 ```Powershell
 Get-NetFirewallRule -Group <groupName>
