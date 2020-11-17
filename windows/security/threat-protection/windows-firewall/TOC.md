@@ -165,7 +165,7 @@
 
 ## [Troubleshooting]()
 ### [Troubleshooting UWP app connectivity issues in Windows Firewall](troubleshooting-uwp-firewall.md)
-### [Filter Origin Documentation](windows/security/threat-protection/windows-firewall/filter-origin-documentation.md)
+### [Filter Origin Documentation](filter-origin-documentation.md)
 ### [Quarantine Behavior](quarantine.md)
 
 
