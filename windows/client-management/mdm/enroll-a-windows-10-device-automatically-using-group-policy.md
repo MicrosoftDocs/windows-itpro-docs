@@ -178,7 +178,7 @@ Requirements:
    - 1903 --> [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495)
    
    - 1909 --> [Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)](
-https://www.microsoft.com/download/confirmation.aspx?id=1005915)
+https://www.microsoft.com/download/confirmation.aspx?id=100591)
    
    - 2004 --> [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
      
