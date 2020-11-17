@@ -98,9 +98,9 @@ After identifying the rule that caused the drop, the network admin can now modif
 
 Network drop events from the AppContainer Loopback block filter origin occur when localhost loopback is not enabled properly for the UWP app.
 
-To enable localhost loopback in a local debugging environment, see [Communicating with localhost](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/loopback).
+To enable localhost loopback in a local debugging environment, see [Communicating with localhost](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback).
 
-To enable localhost loopback for a published app which requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
+To enable localhost loopback for a published app which requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
 
 **Boottime Default**
 
@@ -157,13 +157,13 @@ Set-NetFirewallProfile -NotifyOnListen False
 
 Network drops from Stealth filters are typically made to prevent port scanning.
 
-To disable Stealth-mode, see [Disable stealth mode in Windows](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/disable-stealth-mode).
+To disable Stealth-mode, see [Disable stealth mode in Windows](https://docs.microsoft.com/troubleshoot/windows-server/networking/disable-stealth-mode).
 
 **UWP Default**
 
 Network drops from UWP Default Inbound/Outbound block filters are often caused by the UWP app not being configured correctly (i.e. the UWP app is missing the correct capability tokens or loopback is not enabled) or the private range is configured incorrectly. 
 
-For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/troubleshooting-uwp-firewall).
+For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/troubleshooting-uwp-firewall).
 
 **WSH Default**
 
