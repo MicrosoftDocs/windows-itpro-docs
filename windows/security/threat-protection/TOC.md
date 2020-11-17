@@ -162,7 +162,7 @@
 ###### [Detect and block Potentially Unwanted Applications](microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 ###### [Enable and configure always-on protection and monitoring](microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md)
    
-##### [Antivirus on Windows Server 2016](microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016.md)
+##### [Antivirus on Windows Server](microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016.md)
    
 ##### [Antivirus compatibility]()
 ###### [Compatibility charts](microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
