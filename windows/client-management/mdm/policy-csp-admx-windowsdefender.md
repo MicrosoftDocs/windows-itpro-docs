@@ -346,7 +346,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
 
 <!--SupportedSKUs-->
 <table>
@@ -389,16 +389,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines what information is logged in security audit events when a new process has been created. This setting only applies when the Audit Process Creation policy is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
 
-If you enable this policy setting, the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
 
-If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.  
-
-Default is Not configured.
-
-> [!NOTE]
-> When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information, such as passwords or user data.
+If you disable this setting, the antimalware service will load as a low priority task.
 
 <!--/Description-->
 > [!TIP]
@@ -410,15 +405,2062 @@ Default is Not configured.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
--   GP name: *IncludeCmdLine*
--   GP path: *System/Audit Process Creation*
--   GP ADMX file name: *AuditSettings.admx*
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
+<!--Policy-->
+<a href="" id="admx-windowsdefender-checkforsignaturesbeforerunningscan"></a>**ADMX_WindowsDefender/CheckForSignaturesBeforeRunningScan**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage whether a check for new virus and spyware security intelligence will occur before running a scan. 
+
+This setting applies to scheduled scans as well as the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
+
+If you enable this setting, a check for new security intelligence will occur before running a scan.
+
+If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Check for the latest virus and spyware security intelligence before running a scheduled scan*
+-   GP name: *CheckForSignaturesBeforeRunningScan*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disableantispywaredefender"></a>**ADMX_WindowsDefender/DisableAntiSpywareDefender**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting turns off Microsoft Defender Antivirus.
+
+If you enable this policy setting, Microsoft Defender Antivirus does not run, and will not scan computers for malware or other potentially unwanted software.
+
+If you disable this policy setting, Microsoft Defender Antivirus will run regardless of any other installed antivirus product.
+
+If you do not configure this policy setting, Windows will internally manage Microsoft Defender Antivirus. If you install another antivirus program, Windows automatically disables Microsoft Defender Antivirus. Otherwise, Microsoft Defender Antivirus will scan your computers for malware and other potentially unwanted software.
+
+Enabling or disabling this policy may lead to unexpected or unsupported behavior. It is recommended that you leave this policy setting unconfigured.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off Microsoft Defender Antivirus*
+-   GP name: *DisableAntiSpywareDefender*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disableautoexclusions"></a>**ADMX_WindowsDefender/DisableAutoExclusions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. Allows an administrator to specify if Automatic Exclusions feature for Server SKUs should be turned off.
+
+Disabled (Default):
+Microsoft Defender will exclude pre-defined list of paths from the scan to improve performance.
+
+Enabled:
+Microsoft Defender will not exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
+
+Not configured:
+Same as Disabled.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off Auto Exclusions*
+-   GP name: *DisableAutoExclusions*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disableblockatfirstseen"></a>**ADMX_WindowsDefender/DisableBlockAtFirstSeen**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check will not occur, which will lower the protection state of the device.
+
+Enabled – The Block at First Sight setting is turned on.
+Disabled – The Block at First Sight setting is turned off.
+    
+This feature requires these Group Policy settings to be set as follows:
+
+- MAPS -> The “Join Microsoft MAPS” must be enabled or the “Block at First Sight” feature will not function.
+- MAPS -> The “Send file samples when further analysis is required” should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the “Block at First Sight” feature will not function.
+- Real-time Protection -> The “Scan all downloaded files and attachments” policy must be enabled or the “Block at First Sight” feature will not function.
+- Real-time Protection -> Do not enable the “Turn off real-time protection” policy or the “Block at First Sight” feature will not function.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Configure the 'Block at First Sight' feature*
+-   GP name: *DisableBlockAtFirstSeen*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\MAPS*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disablelocaladminmerge"></a>**ADMX_WindowsDefender/DisableLocalAdminMerge**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether or not complex list settings configured by a local administrator are merged with Group Policy settings. This setting applies to lists such as threats and Exclusions.
+
+If you enable or do not configure this setting, unique items defined in Group Policy and in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, Group policy Settings will override preference settings.
+
+If you disable this setting, only items defined by Group Policy will be used in the resulting effective policy. Group Policy settings will override preference settings configured by the local administrator.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Configure local administrator merge behavior for lists*
+-   GP name: *DisableLocalAdminMerge*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disablerealtimemonitoring"></a>**ADMX_WindowsDefender/DisableRealtimeMonitoring**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting turns off real-time protection prompts for known malware detection.
+
+Microsoft Defender Antivirus alerts you when malware or potentially unwanted software attempts to install itself or to run on your computer.
+
+If you enable this policy setting, Microsoft Defender Antivirus will not prompt users to take actions on malware detections.
+
+If you disable or do not configure this policy setting, Microsoft Defender Antivirus will prompt users to take actions on malware detections.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off real-time protection*
+-   GP name: *DisableRealtimeMonitoring*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-disableroutinelytakingaction"></a>**ADMX_WindowsDefender/DisableRoutinelyTakingAction**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure whether Microsoft Defender Antivirus automatically takes action on all detected threats. The action to be taken on a particular threat is determined by the combination of the policy-defined action, user-defined action, and the signature-defined action.
+
+If you enable this policy setting, Microsoft Defender Antivirus does not automatically take action on the detected threats, but prompts users to choose from the actions available for each threat.
+
+If you disable or do not configure this policy setting, Microsoft Defender Antivirus automatically takes action on all detected threats after a nonconfigurable delay of approximately five seconds.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off routine remediation*
+-   GP name: *DisableRoutinelyTakingAction*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-exclusions-extensions"></a>**ADMX_WindowsDefender/Exclusions_Extensions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you specify a list of file types that should be excluded from scheduled, custom, and real-time scanning. File types should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the file type extension (such as "obj" or "lib"). The value is not used and it is recommended that this be set to 0.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Extension Exclusions*
+-   GP name: *Exclusions_Extensions*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-exclusions-paths"></a>**ADMX_WindowsDefender/Exclusions_Paths**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to disable scheduled and real-time scanning for files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name.
+
+As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe". The value is not used and it is recommended that this be set to 0.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Path Exclusions*
+-   GP name: *Exclusions_Paths*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-exclusions-processes"></a>**ADMX_WindowsDefender/Exclusions_Processes**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to disable scheduled and real-time scanning for any file opened by any of the specified processes. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. Note that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Process Exclusions*
+-   GP name: *Exclusions_Processes*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-exploitguard-asr-asronlyexclusions"></a>**ADMX_WindowsDefender/ExploitGuard_ASR_ASROnlyExclusions**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. Exclude files and paths from Attack Surface Reduction (ASR) rules.
+
+Enabled:
+Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
+Enter each rule on a new line as a name-value pair:
+
+- Name column: Enter a folder path or a fully qualified resource name. For example, ""C:\Windows"" will exclude all files in that directory. ""C:\Windows\App.exe"" will exclude only that specific file in that specific folder
+- Value column: Enter ""0"" for each item
+
+Disabled:
+No exclusions will be applied to the ASR rules.
+
+Not configured:
+Same as Disabled.
+
+You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Exclude files and paths from Attack Surface Reduction Rules*
+-   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-exploitguard-asr-rules"></a>**ADMX_WindowsDefender/ExploitGuard_ASR_Rules**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. Set the state for each Attack Surface Reduction (ASR) rule.
+
+After enabling this setting, you can set each rule to the following in the Options section:
+
+- Block: the rule will be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
+- Off: the rule will not be applied
+
+Enabled:
+Specify the state for each ASR rule under the Options section for this setting.
+Enter each rule on a new line as a name-value pair:
+
+- Name column: Enter a valid ASR rule ID
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule
+
+The following status IDs are permitted under the value column:
+- 1 (Block)
+- 0 (Off)
+- 2 (Audit)
+    
+Example:
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            0
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            1
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            2
+
+Disabled:
+No ASR rules will be configured.
+
+Not configured:
+Same as Disabled.
+
+You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Configure Attack Surface Reduction rules*
+-   GP name: *ExploitGuard_ASR_Rules*
+-   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
+
+If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+
+If you disable this setting, the antimalware service will load as a low priority task.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Allow antimalware service to startup with normal priority*
+-   GP name: *AllowFastServiceStartup*
+-   GP path: *Windows Components\Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
 Footnotes:
 
 - 1 - Available in Windows 10, version 1607.
