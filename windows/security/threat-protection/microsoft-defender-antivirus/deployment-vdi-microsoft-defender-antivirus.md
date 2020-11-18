@@ -63,7 +63,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
-6. Enter `\\<sharedlocation\>\wdav-update` (for what this will be, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
+6. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
 7. Click **OK**.
 
@@ -81,7 +81,7 @@ See the [Download and unpackage](#download-and-unpackage-the-latest-updates) sec
 
 ## Download and unpackage the latest updates
 
-Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those).
+Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
 
 ```PowerShell
 $vdmpathbase = 'c:\wdav-update\{00000000-0000-0000-0000-'
@@ -98,7 +98,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update. 
-We suggest starting with once a day — but you should experiment with increasing or decreasing the frequency to understand the impact. 
+We suggest starting with once a day—but you should experiment with increasing or decreasing the frequency to understand the impact. 
 
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn’t advised because it will increase the network overhead on your management machine for no benefit.
 
@@ -106,13 +106,13 @@ Security intelligence packages are typically published once every three to four 
 
 1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task…** on the side panel.
 
-2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Click **New…** Select **Daily** and click **OK**.
+2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Select **New…** > **Daily**, and select **OK**.
 
-3. Go to the **Actions** tab. Click **New…** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Click **OK**.
+3. Go to the **Actions** tab. Select **New…** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
 4. You can choose to configure additional settings if you wish.
 
-5. Click **OK** to save the scheduled task.
+5. Select **OK** to save the scheduled task.
  
 You can initiate the update manually by right-clicking on the task and clicking **Run**.
 
