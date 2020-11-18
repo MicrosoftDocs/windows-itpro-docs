@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 11/18/2020
-ms.reviewer: 
+ms.reviewer: jesquive
 manager: dansimp
 ---
 
@@ -122,7 +122,9 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 1. Create a new folder on the system root called `wdav_update` to store intelligence updates, for example, create the folder `c:\wdav_update`.
 
-2. Create a subfolder under *wdav_update* with a GUID name, such as `{00000000-0000-0000-0000-000000000000}`; for example `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`.
+2. Create a subfolder under *wdav_update* with a GUID name, such as `{00000000-0000-0000-0000-000000000000}`
+
+Here's an example: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
    > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
@@ -138,32 +140,43 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy — ScheduleDay, ScheduleTime, ScheduleQuickScanTime. Randomization will cause Microsoft Defender AV to start a scan on each machine within a 4 hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a 4-hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
 ## Use quick scans
 
-You can specify the type of scan that should be performed during a scheduled scan.
-Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active.
+You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
 
-1. Expand the tree to **Windows components > Windows Defender > Scan**.
+1. In your Group Policy Editor, go to **Administrative templates** > **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
 
-2. Double-click **Specify the scan type to use for a scheduled scan** and set the option to **Enabled** and **Quick scan**.
+2. Select **Specify the scan type to use for a scheduled scan** and then edit the policy setting.
 
-3. Click **OK**.
+3. Set the policy to **Enabled**, and then under **Options**, select  **Quick scan**.
+
+4. Select **OK**. 
+
+5. Deploy your Group Policy object as you usually do.
 
 ## Prevent notifications
 
-Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can use the lock down the Microsoft Defender Antivirus user interface.
+Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications with Group Policy.
 
-1. Expand the tree to **Windows components > Windows Defender > Client Interface**.
+1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Client Interface**.
 
-2. Double-click **Suppress all notifications** and set the option to **Enabled**.
+2. Select **Suppress all notifications** and then edit the policy settings. 
 
-3. Click **OK**.
+3. Set the policy to **Enabled**, and then select **OK**.
 
-This prevents notifications from Microsoft Defender AV appearing in the action center on Windows 10 when scans or remediation is performed.
+4. Deploy your Group Policy object as you usually do.
+
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+
+> [!TIP]
+> To open the Action Center on Windows 10, take one of the following steps:
+> - On the right end of the taskbar, select the Action Center icon.
+> - Press the Windows logo key button + A.
+> - On a touchscreen device, swipe in from the right edge of the screen.
 
 ## Disable scans after an update
 
