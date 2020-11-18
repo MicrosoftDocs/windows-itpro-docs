@@ -185,7 +185,7 @@ This setting will prevent a scan from occurring after receiving an update. You c
 > [!IMPORTANT]
 > Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-1. Expand the tree to **Windows components > Windows Defender > Signature Updates**.
+1. Expand the tree to **Windows components** > **Windows Defender** > **Signature Updates**.
 
 2. Double-click **Turn on scan after signature update** and set the option to **Disabled**.
 
