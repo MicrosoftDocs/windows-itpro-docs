@@ -36,7 +36,7 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ address situation
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
-You have a Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker driver encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
+You have a Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker drive encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
 
 ### Resolution
 
