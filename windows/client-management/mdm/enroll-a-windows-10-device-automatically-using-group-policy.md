@@ -181,6 +181,8 @@ Requirements:
 https://www.microsoft.com/download/confirmation.aspx?id=1005915)
    
    - 2004 --> [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
+   
+   - 2009 --> [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
      
 2. Install the package on the Domain Controller.
   
@@ -194,7 +196,9 @@ https://www.microsoft.com/download/confirmation.aspx?id=1005915)
    
    - 1909 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2019 Update (1909)**
     
-   - 2004 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2020 Update (2004)**     
+   - 2004 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2020 Update (2004)**  
+   
+   - 2009 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**
      
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
   
@@ -272,6 +276,8 @@ To collect Event Viewer logs:
 
 ### Useful Links
 
+- [Windows 10 Administrative Templates for Windows 10 October 2020 Update 20H2](https://www.microsoft.com/download/details.aspx?id=102157)
 - [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)
 - [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)
 - [Windows 10 Administrative Templates for Windows 10 October 2018 Update 1809](https://www.microsoft.com/download/details.aspx?id=57576)
+
