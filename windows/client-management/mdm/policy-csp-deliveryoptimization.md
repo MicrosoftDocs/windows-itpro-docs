@@ -371,7 +371,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy allows you to to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
+This policy allows you to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
 
 <!--/Description-->
 <!--ADMXMapped-->
