@@ -1,6 +1,6 @@
 ---
-title: Step by step - Deploy Windows 10 using Microsoft Endpoint Configuration Manager
-description: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
+title: Steps to deploy Windows 10 with Microsoft Endpoint Configuration Manager
+description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft endpoint configuration manager.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,6 +14,7 @@ ms.author: greglin
 author: greg-lindsay
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager

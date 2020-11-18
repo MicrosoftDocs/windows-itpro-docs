@@ -22,7 +22,7 @@ ms.date: 09/20/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 

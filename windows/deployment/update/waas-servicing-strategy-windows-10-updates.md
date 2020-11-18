@@ -39,7 +39,7 @@ Windows 10 spreads the traditional deployment effort of a Windows upgrade, which
 > [!NOTE]
 > This strategy is applicable to approaching an environment in which Windows 10 already exists. For information about how to deploy or upgrade to Windows 10 where another version of Windows exists, see [Plan for Windows 10 deployment](../planning/index.md).
 >
-> Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
+> Windows 10 Enterprise LTSC is a separate Long Term Servicing Channel version.
 
 Each time Microsoft releases a Windows 10 feature update, the IT department should use the following high-level process to help ensure that the broad deployment is successful:
 
