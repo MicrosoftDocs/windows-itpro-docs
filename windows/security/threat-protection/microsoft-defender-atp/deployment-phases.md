@@ -27,6 +27,11 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
+Protect your enterprise environment by deploying Microsoft Defender for Endpoint. Microsoft Defender for Endpoint is a unified platform that helps you implement preventative protection, leverage post-breach detection, use automated investigation, and respond to sophisticated threats.
+
+
+
+
 There are three phases in deploying Defender for Endpoint:
 
 |Phase | Description | 
