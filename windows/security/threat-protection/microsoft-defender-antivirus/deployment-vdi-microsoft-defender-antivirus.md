@@ -118,7 +118,7 @@ You can initiate the update manually by right-clicking on the task and clicking 
 
 ### Download and unpackage manually
 
-If you would prefer to do everything manually, this what you would need to do to replicate the script’s behavior:
+If you would prefer to do everything manually, here's what to do to replicate the script’s behavior:
 
 1. Create a new folder on the system root called `wdav_update` to store intelligence updates, for example, create the folder `c:\wdav_update`.
 
