@@ -28,7 +28,7 @@ In addition to standard on-premises or hardware configurations, you can also use
 
 See [Windows Virtual Desktop Documentation](https://docs.microsoft.com/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
 
-For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-install-endpoint-protection) topic.
+For Azure-based virtual machines, see [Install Endpoint Protection in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-install-endpoint-protection).
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
@@ -49,7 +49,7 @@ You can also download the whitepaper [Microsoft Defender Antivirus on Virtual De
 
 ## Set up a dedicated VDI file share
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature. This offloads the unpackaging of downloaded security intelligence updates onto a host machine — thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with a Group Policy, or PowerShell.
+In Windows 10, version 1903, we introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine—thus saving previous CPU, disk, and memory resources on individual machines. You can set this feature with a Group Policy, or PowerShell.
 
 ### Use Group Policy to enable the shared security intelligence feature:
 
