@@ -39,8 +39,7 @@ The following broad categories of features can be configured:
 - Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
 - How end users interact with the client on individual endpoints
 
-The following articles describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each topic includes instructions for the applicable configuration tool (or tools).
-
+The following articles describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each article includes instructions for the applicable configuration tool (or tools).
 
 |Article  |Description  |
 |---------|---------|
