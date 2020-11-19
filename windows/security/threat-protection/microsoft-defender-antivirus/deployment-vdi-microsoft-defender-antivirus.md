@@ -185,23 +185,31 @@ Disabling a scan after an update will prevent a scan from occurring after receiv
 > [!IMPORTANT]
 > Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-1. Expand the tree to **Windows components** > **Windows Defender** > **Signature Updates**.
+1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
 
-2. Double-click **Turn on scan after signature update** and set the option to **Disabled**.
+2. Select **Turn on scan after security intelligence update** and then edit the policy setting.
 
-3. Click **OK**.
+3. Set the policy to **Disabled**.
 
-This prevents a scan from running immediately after an update.
+4. Select **OK**.
+
+5. Deploy your Group Policy object as you usually do.
+
+This policy prevents a scan from running immediately after an update.
 
 ## Scan VMs that have been offline
 
-1. Expand the tree to **Windows components > Windows Defender > Scan**.
+1. In your Group Policy Editor, go to to **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
 
-2. Double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**.
+2. Select **Turn on catch-up quick scan** and then edit the policy setting.
 
-3. Click **OK**.
+3. Set the policy to **Enabled**.
 
-This forces a scan if the VM has missed two or more consecutive scheduled scans.
+4. Select **OK**.
+
+5. Deploy your Group Policy Object as you usually do.
+
+This policy forces a scan if the VM has missed two or more consecutive scheduled scans.
 
 ## Enable headless UI mode
 

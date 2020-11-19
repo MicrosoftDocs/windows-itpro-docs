@@ -73,7 +73,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
     1. Set the option to **Enabled**.
     2. Under the **Options** section, click **Show...**.
-    3. Enter each process on its own line under the **Value name** column. See the [example table](#examples) for the different types of process exclusions.  Enter **0** in the **Value** column for all processes.
+    3. Enter each process on its own line under the **Value name** column. See the example table for the different types of process exclusions.  Enter **0** in the **Value** column for all processes.
 
 5. Click **OK**.
 
