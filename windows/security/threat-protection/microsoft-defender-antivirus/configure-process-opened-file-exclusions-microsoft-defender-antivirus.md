@@ -43,9 +43,9 @@ The exclusions only apply to [always-on real-time protection and monitoring](con
 
 Changes made with Group Policy to the exclusion lists **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md#exclusions). However, changes made in the Windows Security app **will not show** in the Group Policy lists.
 
-You can add, remove, and review the lists for exclusions in [Group Policy](#gp), [Microsoft Endpoint Configuration Manager, Microsoft Intune, and with the Windows Security app](#man-tools), and you can [use wildcards](#wildcards) to further customize the lists.
+You can add, remove, and review the lists for exclusions in Group Policy, Microsoft Endpoint Configuration Manager, Microsoft Intune, and with the Windows Security app, and you can use wildcards to further customize the lists.
 
-You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) your lists.
+You can also use PowerShell cmdlets and WMI to configure the exclusion lists, including reviewing your lists.
 
 By default, local changes made to the lists (by users with administrator privileges; changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts.
 
