@@ -181,6 +181,8 @@
 #### [ADMX_Cpls](policy-csp-admx-cpls.md)
 #### [ADMX_CredSsp](policy-csp-admx-credssp.md)
 #### [ADMX_CtrlAltDel](policy-csp-admx-ctrlaltdel.md)
+#### [ADMX_DeviceInstallation](policy-csp-admx-devicenstallation.md)
+#### [ADMX_DeviceSetup](policy-csp-admx-devicesetup.md)
 #### [ADMX_DigitalLocker](policy-csp-admx-digitallocker.md)
 #### [ADMX_DnsClient](policy-csp-admx-dnsclient.md)
 #### [ADMX_DWM](policy-csp-admx-dwm.md)
