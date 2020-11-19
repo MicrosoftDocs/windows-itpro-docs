@@ -92,6 +92,10 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
+- Audit framework (`auditd`) must be enabled.
+  >[!NOTE]
+  > System events captured by rules added to `audit.logs` will add to audit logs and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endopoint for Linux will be tagged with `mdatp` key.
+
 ### Network connections
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
