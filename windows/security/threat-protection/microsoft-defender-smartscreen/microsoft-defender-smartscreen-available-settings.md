@@ -41,6 +41,10 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
+patch-107
+=======
+<td><b>Windows 10, version 1703</td>
+public
 <td>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.</br></br> This setting does not protect against malicious content from USB devices, network shares, or other non-internet sources.</p><p><b>Important:</b> Using a trustworthy browser helps ensure that these protections work as expected.</p></td>
 </tr>
 <tr>

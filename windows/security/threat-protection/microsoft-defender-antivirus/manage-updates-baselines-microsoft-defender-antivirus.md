@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/21/2020
+ms.date: 11/06/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -69,14 +69,32 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
-All our updates contain:
-- performance improvements
-- serviceability improvements
-- integration improvements (Cloud, Microsoft 365 Defender)  
+All our updates contain 
+- performance improvements;
+- serviceability improvements; and 
+- integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 
 
 <details>
+<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
+
+&ensp;Security intelligence update version: **1.327.7.0**  
+&ensp;Released: **October 29, 2020**  
+&ensp;Platform: **4.18.2010.7**  
+&ensp;Engine: **1.1.17600.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- New descriptions for special threat categories
+- Improved emulation capabilities
+- Improved host address allow/block capabilities
+- New option in Defender CSP to Ignore merging of local user exclusions
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
@@ -88,7 +106,7 @@ All our updates contain:
 ### What's new
 - Admin permissions are required to restore files in quarantine
 - XML formatted events are now supported
-- CSP support for ignoring exclusion merge
+- CSP support for ignoring exclusion merges
 - New management interfaces for:
    - UDP Inspection
    - Network Protection on Server 2019
@@ -318,7 +336,7 @@ During the technical support (only) phase, commercially reasonable support incid
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
-|-|-|-|-|
+|:---|:---|:---|:---|
 |2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade Support (Only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
@@ -333,10 +351,10 @@ Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsof
 
 ## See also
 
-Article | Description 
----|---
-[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources.
-[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded.
-[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next logon.
-[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.
-[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.
+| Article | Description  |
+|:---|:---|
+|[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources. |
+|[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded. |
+|[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in. |
+|[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events. |
+|[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines. |
