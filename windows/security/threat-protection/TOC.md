@@ -8,7 +8,6 @@
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
-### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 ### [Microsoft Defender ATP for non-Windows platforms](microsoft-defender-atp/non-windows.md)
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
