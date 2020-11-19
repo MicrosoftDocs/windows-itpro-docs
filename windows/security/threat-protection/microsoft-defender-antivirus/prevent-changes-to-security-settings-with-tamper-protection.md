@@ -14,7 +14,7 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/12/2020
+ms.date: 11/19/2020
 ---
 
 # Protect security settings with tamper protection
@@ -206,17 +206,6 @@ If you are an organization using [Microsoft Defender for Endpoint](https://www.m
 ### How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus through my group policy?
 
 Your regular group policy doesn’t apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on. 
-
-> [!NOTE]
-> A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Microsoft Defender Antivirus features protected by tamper protection.
-
-To avoid any potential delays, we recommend that you remove settings that control Microsoft Defender Antivirus related behavior using GPO and allow tamper protection to protect your Microsoft Defender Antivirus settings.
-
-Some sample Microsoft Defender Antivirus settings:
-
-- *Turn off real-time protection* <br />
-  Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\Real-time Protection\\<br />
-  Value `DisableRealtimeMonitoring` = 0
 
 ### For Microsoft Defender for Endpoint, is configuring tamper protection in Intune targeted to the entire organization only?
 
