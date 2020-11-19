@@ -561,7 +561,7 @@ Also, make sure to wait at least 30 minutes from the time you've [configured com
 - Turn on the device
 - Verify that the appropriate OOBE screens (with appropriate Company Branding) appear.  You should see the region selection screen, the keyboard selection screen, and the second keyboard selection screen (which you can skip).
 
-![OOBE sign-in page](images/autopilot-oobe.jpg)
+![OOBE sign-in page](images/autopilot-oobe.png)
 
 Soon after reaching the desktop, the device should show up in Intune as an **enabled** Autopilot device.  Go into the Intune Azure portal, and select **Devices > All devices**, then **Refresh** the data to verify that your device has changed from disabled to enabled, and the name of the device is updated.
 
