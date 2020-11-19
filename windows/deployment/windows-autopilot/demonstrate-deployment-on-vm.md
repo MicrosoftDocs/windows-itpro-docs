@@ -434,11 +434,29 @@ Pick one:
 ### Create a Windows Autopilot deployment profile using Intune
 
 > [!NOTE]
-> Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list first:
+> Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list.
 
 ![Devices](images/enroll4.png)
 
-To create a Windows Autopilot profile, scroll back to the left hand pane and then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
+#### Create a device group
+
+The Autopilot deployment profile wizard will ask for a device group, so we must create one first.  To create a device group:
+
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
+2. In the **Group** blade:
+    1. For **Group type**, choose **Security**.
+    2. Type a **Group name** and **Group description** (ex: Autopilot Lab).
+    3. Azure AD roles can be assigned to the group: **No**
+    4. For **Membership type**, choose **Assigned**.
+3. Click **Members** and add the Autopilot VM to the group. See the following example:
+
+  ![add members](images/group1.png)
+
+4. Click **Create**. 
+
+#### Create the deployment profile
+
+To create a Windows Autopilot profile, scroll back to the left hand pane and click **Devices**, then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
 
 ![Deployment profiles](images/dp.png)
 
@@ -471,49 +489,19 @@ Click **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 
 Click **Next** to continue with the **Assignments** settings:
 
+| Setting | Value |
+|---|---|
+| Assign to | Selected groups |
 
-
-See the following example:
+1. Click **Select groups to include**.
+2. Click the **Autopilot Lab** group, and then click **Select**.
+3. Click **Next** to continue and then click **Create**. See the following example:
 
 ![Deployment profile](images/profile.png)
 
 Click on **OK** and then click on **Create**.
 
 > If you want to add an app to your profile via Intune, the OPTIONAL steps for doing so can be found in [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile).
-
-#### Assign the profile
-
-Profiles can only be assigned to Groups, so first you must create a group that contains the devices to which the profile should be applied. This guide will provide simple instructions to assign a profile, for more detailed instructions, see [Create an Autopilot device group](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group) and [Assign an Autopilot deployment profile to a device group](https://docs.microsoft.com/intune/enrollment-autopilot#assign-an-autopilot-deployment-profile-to-a-device-group), as optional reading.
-
-To create a Group, open the Azure portal and select **Azure Active Directory** > **Groups** > **All groups**:
-
-![All groups](images/all-groups.png)
-
-Select New group from the Groups blade to open the new groups UI.  Select the “Security” group type, name the group, and select the “Assigned” membership type:
-
-Before clicking **Create**, expand the **Members** panel, click your device's serial number (it will then appear under **Selected members**) and then click **Select** to add that device to this group.
-
-![New group](images/new-group.png)
-
-Now click **Create** to finish creating the new group.
-
-Click on **All groups** and click **Refresh** to verify that your new group has been successfully created.
-
-With a group created containing your device, you can now go back and assign your profile to that group. Navigate back to the Intune page in the Azure portal (one way is to type **Intune** in the top banner search bar and select **Intune** from the results).
-
-From Intune, select **Device enrollment** > **Windows enrollment** > **Deployment Profiles** to open the profile blade.  Click on the name of the profile you previously created (Autopilot Lab profile) to open the details blade for that profile:
-
-![Lab profile](images/deployment-profiles2.png)
-
-Under **Manage**, click **Assignments**, and then with the **Include** tab highlighted, expand the **Select groups** blade and click **AP Lab Group 1** (the group will appear under **Selected members**).
-
-![Include group](images/include-group.png)
-
-Click **Select** and then click **Save**.
-
-![Include group](images/include-group2.png)
-
-It’s also possible to assign specific users to a profile, but we will not cover this scenario in the lab. For more detailed information, see [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/intune/enrollment-autopilot).
 
 ### Create a Windows Autopilot deployment profile using MSfB
 
