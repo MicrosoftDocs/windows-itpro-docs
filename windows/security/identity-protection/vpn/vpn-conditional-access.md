@@ -74,10 +74,12 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Collects TPM data used to verify health states
    - Forwards the data to the Health Attestation Service (HAS)
    - Provisions the Health Attestation Certificate received from the HAS
-   - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
+   - Upon request, forward the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
    
 > [!NOTE]
-> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources. 
+> Currently, it is required that certificates used for obtaining Kerberos tickets must be issued from an on-premises CA, and that SSO must be enabled in the user’s VPN profile. This will enable the user to access on-premises resources.
+> 
+> In the case of AzureAD-only joined devices (not hybrid joined devices), if the user certificate issued by the on-premises CA has the user UPN from AzureAD in Subject and SAN (Subject Alternative Name), the VPN profile must be modified to ensure that the client does not cache the credentials used for VPN authentication. To do this, after deploying the VPN profile to the client, modify the *Rasphone.pbk* on the client by changing the entry **UseRasCredentials** from 1 (default) to 0 (zero).
 
 ## Client connection flow
 

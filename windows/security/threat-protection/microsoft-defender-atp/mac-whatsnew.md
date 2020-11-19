@@ -24,7 +24,10 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 > [!IMPORTANT]
-> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+
+> [!IMPORTANT]
+> With the agent version 101.13.75+, we released a change that removed conditions when Microsoft Defender for Endpoint was triggering the macOS Big Sur bug that manifests into a kernel panic. With that change Defender code path should no longer directly facilitate the kernel panic.
 
 ## 101.13.75
 

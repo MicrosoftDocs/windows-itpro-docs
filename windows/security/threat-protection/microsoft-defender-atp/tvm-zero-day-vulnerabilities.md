@@ -25,10 +25,10 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
@@ -84,9 +84,13 @@ Go to the security recommendation page and select a recommendation with a zero-d
 
 There will be a link to mitigation options and workarounds if they are available. Workarounds may help reduce the risk posed by this zero-day vulnerability until a patch or security update can be deployed.
 
-Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
+Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. You won't be able to select a due date, since there is no specific action to perform. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
 
 ![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
+
+## Track zero-day remediation activities
+
+Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor. You can filter by remediation type, such as "software update" or "attention required," to see all activity items in the same category.
 
 ## Patching zero-day vulnerabilities
 
