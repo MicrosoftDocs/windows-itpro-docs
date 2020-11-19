@@ -213,20 +213,26 @@ This policy forces a scan if the VM has missed two or more consecutive scheduled
 
 ## Enable headless UI mode
 
-1. Double-click **Enable headless UI mode** and set the option to **Enabled**.
+1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Client Interface**.
 
-2. Click **OK**.
+2. Select **Enable headless UI mode** and edit the policy.
 
-This hides the entire Microsoft Defender AV user interface from users.
+3. Set the policy to **Enabled**.
+
+4. Click **OK**.
+
+5. Deploy your Group Policy Object as you usually do.
+ 
+This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
 
 ## Exclusions
 
 Exclusions can be added, removed, or customized to suit your needs.
 
-For more details, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
+For more information, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 ## Additional resources
 
-- [Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( https://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
+- [Tech Community Blog: Configuring Microsoft Defender Antivirus for non-persistent VDI machines](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
