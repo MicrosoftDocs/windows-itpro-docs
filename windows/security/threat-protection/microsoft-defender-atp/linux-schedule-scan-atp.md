@@ -137,7 +137,7 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 
 **To edit the crontab and add a new job as a root user**
 
-`Sudo crontab -e`
+`sudo crontab -e`
 
 **To edit the crontab and add a new job**
 
