@@ -436,15 +436,13 @@ Pick one:
 > [!NOTE]
 > Even if you registered your device in MSfB, it will still appear in Intune, though you might have to **sync** and then **refresh** your device list first:
 
-![Devices](images/intune-devices.png)
+![Devices](images/enroll4.png)
 
-> The example above lists both a physical device and a VM. Your list should only include only one of these.
+To create a Windows Autopilot profile, scroll back to the left hand pane and then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
 
-To create a Windows Autopilot profile, select **Device enrollment** > **Windows enrollment** > **Deployment profiles**
+![Deployment profiles](images/dp.png)
 
-![Deployment profiles](images/deployment-profiles.png)
-
-Click on **Create profile**.
+Click on **Create profile** and then select **Windows PC**.
 
 ![Create deployment profile](images/create-profile.png)
 
@@ -453,20 +451,27 @@ On the **Create profile** blade, use the following values:
 | Setting | Value |
 |---|---|
 | Name | Autopilot Lab profile |
-| Description | blank |
+| Description | Lab |
 | Convert all targeted devices to Autopilot | No |
-| Deployment mode | User-driven |
-| Join to Azure AD as | Azure AD joined |
 
-Click on **Out-of-box experience (OOBE)** and configure the following settings:
+Click **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 
 | Setting | Value |
 |---|---|
-| EULA | Hide |
+| Deployment mode | User-driven |
+| Join to Azure AD as | Azure AD joined |
+| Microsoft Sofware License Terms | Hide |
 | Privacy Settings | Hide |
 | Hide change account options | Hide |
 | User account type | Standard |
+| Allow White Glove OOBE | No |
+| Language (Region) | Operating system default |
+| Automatically configure keyboard | Yes |
 | Apply device name template | No |
+
+Click **Next** to continue with the **Assignments** settings:
+
+
 
 See the following example:
 
