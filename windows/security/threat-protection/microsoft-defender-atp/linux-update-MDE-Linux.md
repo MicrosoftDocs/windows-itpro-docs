@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # Schedule an update of the Microsoft Defender for Endpoint (Linux)
 
-To run an update on MDE (formerly MDATP) for Linux, see [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/linux-updates).
+To run an update on MDE (formerly MDATP) for Linux, see [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-updates).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
 
@@ -69,15 +69,15 @@ Add the following entries:
 
 CRON_TZ=America/Los_Angeles
 
-#!RHEL and variants (CentOS and Oracle Linux)
+> #!RHEL and variants (CentOS and Oracle Linux)
 
 `06**sun[$(date +\%d) -le 15] sudo yum update mdatp>>~/mdatp_cron_job.log`
 
-#!SLES and variants
+> #!SLES and variants
 
 `06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
 
-#!Ubuntu and Debian systems
+> #!Ubuntu and Debian systems
 
 `06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
@@ -93,7 +93,7 @@ Type “:wq” w/o the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="..\images\update-MDE-linux-4634577.png" alt-text="update MDE linux":::
+:::image type="content" source="../images/update-MDE-linux-4634577.png" alt-text="update MDE linux":::
 
 To inspect cron job runs:
 `sudo grep mdatp /var/log/cron`
