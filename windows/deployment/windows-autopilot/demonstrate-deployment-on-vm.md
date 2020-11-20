@@ -70,7 +70,8 @@ A summary of the sections and procedures in the lab is provided below. Follow ea
 <br>&nbsp;&nbsp;&nbsp; [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
 <br>[Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
 <br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the profile](#assign-the-profile)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create a device group](#create-a-device-group)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create a device group](#create-the-deployment-profile)
 <br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
 <br>[See Windows Autopilot in action](#see-windows-autopilot-in-action)
 <br>[Remove devices from Autopilot](#remove-devices-from-autopilot)
@@ -565,9 +566,12 @@ Also, make sure to wait at least 30 minutes from the time you've [configured com
 
 Soon after reaching the desktop, the device should show up in Intune as an **enabled** Autopilot device.  Go into the Intune Azure portal, and select **Devices > All devices**, then **Refresh** the data to verify that your device has changed from disabled to enabled, and the name of the device is updated.
 
-![Device enabled](images/enabled-device.png)
+![Device enabled](images/devices1.png)
 
 Once you select a language and a keyboard layout, your company branded sign-in screen should appear. Provide your Azure Active Directory credentials and you're all done.
+
+> [!TIP]
+> If you recieve a message that "Something went wrong" and it "Looks like we can't connect to the URL for your organization's MDM terms of use" then verify you have correctly [assigned licenses](https://docs.microsoft.com/mem/intune/fundamentals/licenses-assign) to the current user.
 
 Windows Autopilot will now take over to automatically join your device into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
@@ -577,40 +581,26 @@ To use the device (or VM) for other purposes after completion of this lab, you w
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into your Intune Azure portal, then navigate to **Intune > Devices > All Devices**.  Select the checkbox next to the device you want to delete, then click the Delete button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into the MEM admin center, then navigate to **Intune > Devices > All Devices**.  Select the device you want to delete, then click the Delete button along the top menu.
 
 ![Delete device](images/delete-device1.png)
 
-Click **X** when challenged to complete the operation:
-
-![Delete device](images/delete-device2.png)
-
 This will remove the device from Intune management, and it will disappear from **Intune > Devices > All devices**. But this does not yet deregister the device from Autopilot, so the device should still appear under **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices**.
-
-![Delete device](images/delete-device3.png)
 
 The **Intune > Devices > All Devices** list and the **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices** list mean different things and are two completely separate datastores.  The former (All devices) is the list of devices currently enrolled into Intune.
 
 > [!NOTE]
 > A device will only appear in the All devices list once it has booted.  The latter (Windows Autopilot Deployment Program > Devices) is the list of devices currently registered from that Intune account into the Autopilot program - which may or may not be enrolled to Intune.
 
-To remove the device from the Autopilot program, select the device and click Delete.
+To remove the device from the Autopilot program, select the device and click **Delete**. You will get a popup dialog box to confirm deletion.
 
-![Delete device](images/delete-device4.png)
-
-A warning message appears reminding you to first remove the device from Intune, which we previously did.
-
-![Delete device](images/delete-device5.png)
+![Delete device](images/delete-device2.png)
 
 At this point, your device has been unenrolled from Intune and also deregistered from Autopilot.  After several minutes, click the **Sync** button, followed by the **Refresh** button to confirm the device is no longer listed in the Autopilot program:
-
-![Delete device](images/delete-device6.png)
 
 Once the device no longer appears, you are free to reuse it for other purposes.
 
 If you also (optionally) want to remove your device from AAD, navigate to **Azure Active Directory > Devices > All Devices**, select your device, and click the delete button:
-
-![Delete device](images/delete-device7.png)
 
 ## Appendix A: Verify support for Hyper-V
 
@@ -743,7 +733,7 @@ You will be able to find your app in your app list:
 #### Assign the app to your Intune profile
 
 > [!NOTE]
-> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#assign-the-profile).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
 
 In the **Intune > Client Apps > Apps** pane, select the app package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
@@ -812,7 +802,7 @@ Click **OK** and then click **Add**.
 #### Assign the app to your Intune profile
 
 > [!NOTE]
-> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#assign-the-profile).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
 
 In the **Intune > Client Apps > Apps** pane, select the Office package you already created to reveal its properties blade.  Then click **Assignments** from the menu:
 
