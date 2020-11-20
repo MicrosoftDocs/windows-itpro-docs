@@ -142,7 +142,7 @@ By default, you will not be able to download files that are in quarantine.
 
 ### Download quarantined files
 
-Turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available.
+Turn on a setting to backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. Once this setting is enabled, the **Download file** button will always be available. A quarantined file will only be downloaded once per tenant.
 
 Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-intune-to-enable-cloud-delivered-protection).
 
