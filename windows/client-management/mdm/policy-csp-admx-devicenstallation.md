@@ -23,9 +23,6 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-deviceinstallation-deviceinstall-allsigningequal">ADMX_DeviceInstallation/DeviceInstall_AllSigningEqual</a>
-  </dd>
-  <dd>
     <a href="#admx-deviceinstallation-deviceinstall-allowadmininstall">ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall</a>
   </dd>
   <dd>
@@ -47,86 +44,11 @@ manager: dansimp
     <a href="#admx-deviceinstallation-deviceinstall-systemrestore">ADMX_DeviceInstallation/DeviceInstall_SystemRestore</a>
   </dd>
   <dd>
-    <a href="#admx-devicemanagement-rpcinterface-allow">ADMX_DeviceInstallation/DeviceManagement_RPCInterface_Allow</a>
-  </dd>
-  <dd>
     <a href="#admx-deviceinstallation-deviceinstall-classes-allowuser">ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser</a>
-  </dd>
-  <dd>
-    <a href="#admx-deviceinstallation-driversigning">ADMX_DeviceInstallation/DriverSigning</a>
   </dd>
 </dl>
 
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-allsigningequal"></a>**ADMX_DeviceInstallation/DeviceInstall_AllSigningEqual**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to determine how drivers signed by a Microsoft Windows Publisher certificate are ranked with drivers signed by other valid Authenticode signatures during the driver selection and installation process. Regardless of this policy setting, a signed driver is still preferred over a driver that is not signed at all.
-
-If you enable or do not configure this policy setting, drivers that are signed by a Microsoft Windows Publisher certificate and drivers that are signed by other Authenticode certificates are prioritized equally during the driver selection process. Selection is based on other criteria, such as version number or when the driver was created. 
-
-If you disable this policy setting, drivers that are signed by a Microsoft Windows Publisher certificate are selected for installation over drivers that are signed by other Authenticode certificates.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prioritize all digitally signed drivers equally during the driver ranking and selection process*
--   GP name: *DeviceInstall_AllSigningEqual*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceInstallation.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
 <hr/>
 
 <!--Policy-->
@@ -614,75 +536,6 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-devicemanagement-rpcinterface-allow"></a>**ADMX_DeviceInstallation/DeviceManagement_RPCInterface_Allow**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to allow or deny remote access to the Plug and Play interface. 
-
-If you enable this policy setting, remote connections to the Plug and Play interface are allowed.
-
-If you disable or do not configure this policy setting, remote connections to the Plug and Play interface are not allowed.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow remote access to the Plug and Play interface*
--   GP name: *DeviceManagement_RPCInterface_Allow*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceInstallation.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
 <a href="" id="admx-deviceinstallation-deviceinstall-classes-allowuser"></a>**ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser**  
 
 <!--SupportedSKUs-->
@@ -745,82 +598,6 @@ If you disable or do not configure this policy setting, only members of the Admi
 ADMX Info:  
 -   GP English name: *Allow non-administrators to install drivers for these device setup classes*
 -   GP name: *DriverInstall_Classes_AllowUser*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceInstallation.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-deviceinstallation-driversigning"></a>**ADMX_DeviceInstallation/DriverSigning**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Determines how the system responds when a user tries to install device driver files that are not digitally signed.
-
-This setting establishes the least secure response permitted on the systems of users in the group. Users can use System in Control Panel to select a more secure setting, but when this setting is enabled, the system does not implement any setting less secure than the one the setting established.
-
-When you enable this setting, use the drop-down box to specify the desired response.  
-
-- "Ignore" directs the system to proceed with the installation even if it includes unsigned files.
-- "Warn" notifies the user that files are not digitally signed and lets the user decide whether to stop or to proceed with the installation and whether to permit unsigned files to be installed. "Warn" is the default.
-- "Block" directs the system to refuse to install unsigned files. As a result, the installation stops, and none of the files in the driver package are installed.
-
-To change driver file security without specifying a setting, use System in Control Panel. Right-click My Computer, click Properties, click the Hardware tab, and then click the Driver Signing button.
-
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Code signing for device drivers*
--   GP name: *DriverSigning*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceInstallation.admx*
 

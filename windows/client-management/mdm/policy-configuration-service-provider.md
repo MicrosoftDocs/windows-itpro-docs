@@ -381,9 +381,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-allsigningequal" id="admx-deviceinstallation-deviceinstall-allsigningequal">ADMX_DeviceInstallation/DeviceInstall_AllSigningEqual</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-allowadmininstall" id="admx-deviceinstallation-deviceinstall-allowadmininstall">ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall</a>
   </dd>
   <dd>
@@ -405,13 +402,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-systemrestore" id="admx-deviceinstallation-deviceinstall-systemrestore">ADMX_DeviceInstallation/DeviceInstall_SystemRestore</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-devicemanagement-rpcinterface-allow" id="admx-devicemanagement-rpcinterface-allow">ADMX_DeviceInstallation/DeviceManagement_RPCInterface_Allow</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-classes-allowuser" id="admx-deviceinstallation-deviceinstall-classes-allowuser">ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-driversigning" id="admx-deviceinstallation-driversigning">ADMX_DeviceInstallation/DriverSigning</a>
   </dd>
 </dl>
 
@@ -422,25 +413,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-deviceinstall-balloontips" id="admx-devicesetup-deviceinstall-balloontips">ADMX_DeviceSetup/DeviceInstall_BalloonTips</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-deviceinstall-genericdriversendtower" id="admx-devicesetup-deviceinstall-genericdriversendtower">ADMX_DeviceSetup/DeviceInstall_GenericDriverSendToWER</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-deviceinstall-requestadditionalsoftwaresendtower" id="admx-devicesetup-deviceinstall-requestadditionalsoftwaresendtower">ADMX_DeviceSetup/DeviceInstall_RequestAdditionalSoftwareSendToWER</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces" id="admx-devicesetup-driversearchplaces">ADMX_DeviceSetup/DriverSearchPlaces</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces-dontpromptforwindowsupdate-1" id="admx-devicesetup-driversearchplaces-dontpromptforwindowsupdate-1">ADMX_DeviceSetup/DriverSearchPlaces_DontPromptForWindowsUpdate_1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces-dontpromptforwindowsupdate-2" id="admx-devicesetup-driversearchplaces-dontpromptforwindowsupdate-2">ADMX_DeviceSetup/DriverSearchPlaces_DontPromptForWindowsUpdate_2</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces-searchorderconfiguration" id="admx-devicesetup-driversearchplaces-searchorderconfiguration">ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces-searchserverconfiguration" id="admx-devicesetup-driversearchplaces-searchserverconfiguration">ADMX_DeviceSetup/DriverSearchPlaces_SearchServerConfiguration</a>
   </dd>
 </dl>
 
