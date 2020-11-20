@@ -150,13 +150,13 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 4. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
     ```bash
-    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.apple.webcontent-filter.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
+    $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
     
     For example, if the certificate name is **SigningCertificate** and the signed file is going to be stored in Documents:
     
     ```bash
-    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.apple.webcontent-filter.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
+    $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
 5. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. Select `com.microsoft.network-extension.signed.mobileconfig` when prompted for the file.
