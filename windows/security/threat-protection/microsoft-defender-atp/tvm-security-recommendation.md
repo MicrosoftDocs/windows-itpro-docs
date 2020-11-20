@@ -24,12 +24,10 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
@@ -75,6 +73,9 @@ View recommendations, the number of weaknesses found, related components, threat
 
 The color of the **Exposed devices** graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes into red. If there's a decrease in the number of exposed devices, the color of the graph will change into green.
 
+>[!NOTE]
+>Threat and vulnerability management shows devices that were in use up to **30 days** ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has in an ‘Inactive’ status.
+
 ![Example of the landing page for security recommendations.](images/tvmsecrec-updated.png)
 
 ### Icons
@@ -94,7 +95,7 @@ From the flyout, you can choose any of the following options:
 
 - **Open software page** - Open the software page to get more context on the software and how it's distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
 
-- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
+- [**Remediation options**](tvm-remediation.md) - Submit a remediation request to open a ticket in Microsoft Intune for your IT administrator to pick up and address. Track the remediation activity in the Remediation page.
 
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
@@ -103,6 +104,144 @@ From the flyout, you can choose any of the following options:
 
 ### Investigate changes in device exposure or impact
 
+If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and configuration score, then that security recommendation is worth investigating.
+
+1. Select the recommendation and **Open software page**
+2. Select the **Event timeline** tab to view all the impactful events related to that software, such as new vulnerabilities or new public exploits. [Learn more about event timeline](threat-and-vuln-mgt-event-timeline.md)
+3. Decide how to address the increase or your organization's exposure, such as submitting a remediation request
+
+## Request remediation
+
+The threat and vulnerability management capability in Microsoft Defender ATP bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+
+### Enable Microsoft Intune connection
+
+To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
+
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+### Remediation request steps
+
+1. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
+
+2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
+
+3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
+
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+>[!NOTE]
+>If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
+
+## File for exception
+
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md). If your organization has device groups, you will now be able to scope the exception to specific device groups.
+
+When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
+
+### How to create an exception
+
+Select a security recommendation you would like create an exception for, and then select **Exception options**.  
+
+![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
+
+Choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab.
+
+### Exception scope
+
+Exceptions can either be created for selected device groups, or for all device groups past and present.  
+
+#### Exception by device group
+
+Apply the exception to all device groups or choose specific device groups. Device groups that already have an exception will not be displayed in the list. If you only select certain device groups, the recommendation state will change from “active” to “partial exception.” The state will change to “full exception” if you select all the device groups.
+
+![Showing device group dropdown.](images/tvm-exception-device-group-500.png)
+
+##### Filtered
+
+If you have filtered by device group on any of the threat and vulnerability management pages, only your filtered device groups will appear as options.
+
+Button to filter by device group on any of the threat and vulnerability management pages: 
+
+![Showing selected device groups filter.](images/tvm-selected-device-groups.png)
+
+Exception view with filtered device groups:
+
+![Showing filtered device group dropdown.](images/tvm-exception-device-filter500.png)
+
+##### Large number of device groups
+
+If your organization has more than 20 device groups, select **Edit** next to the filtered device group option.
+
+![Showing how to edit large numbers of groups.](images/tvm-exception-edit-groups.png)
+
+A flyout will appear where you can search and choose device groups you want included. Select the check mark icon below Search to check/uncheck all.
+
+![Showing large device group flyout.](images/tvm-exception-device-group-flyout-400.png)
+
+#### Global exceptions
+
+If you have global administrator permissions (called Microsoft Defender ATP administrator), you will be able to create and cancel a global exception. It affects **all** current and future device groups in your organization, and only a user with similar permission would be able to change it. The recommendation state will change from “active” to “full exception.”
+
+![Showing global exception option.](images/tvm-exception-global.png)
+
+Some things to keep in mind:
+
+- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired or been cancelled. After that point, the new device group exceptions will go into effect until they expire.
+- If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
+
+### Justification
+
+Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+
+The following list details the justifications behind the exception options:
+
+- **Third party control** - A third party product or software already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
+- **Alternate mitigation** - An internal tool already addresses this recommendation
+        - Choosing this justification type will lower your exposure score and increase your secure score because your risk is reduced
+- **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
+- **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+
+### View all exceptions
+
+Navigate to the **Exceptions** tab in the **Remediation** page.
+
+![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
+
+Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can Export. You can also view the related recommendation or cancel the exception.
+
+### How to cancel an exception
+
+To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
+
+#### Cancel the exception for a specific device group
+
+If the exception is per device group, then you will need to select the specific device group to cancel the exception for it. 
+
+![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
+
+A flyout will appear for the device group, and you can select **Cancel exception**.
+
+#### Cancel a global exception
+
+If it is a global exception, select an exception from the list and then select **Cancel exception** from the flyout.
+
+![Showing how to cancel the exception for a global exception.](images/tvm-exception-cancel-global-400.png)
+
+### View impact after exceptions are applied
+
+In the Security Recommendations page, select **Customize columns** and check the boxes for **Exposed devices (after exceptions)** and **Impact (after exceptions)**.
+
+![Showing customize columns options.](images/tvm-after-exceptions.png)
+
+The exposed devices (after exceptions) column shows the remaining devices that are still exposed to vulnerabilities after exceptions are applied. Exception justifications that affect the exposure include ‘third party control’ and ‘alternate mitigation’. Other justifications do not reduce the exposure of a device, and they are still considered exposed.
+
+The impact (after exceptions) shows remaining impact to exposure score or secure score after exceptions are applied. Exception justifications that affect the scores include ‘third party control’ and ‘alternate mitigation.’ Other justifications do not reduce the exposure of a device, and so the exposure score and secure score do not change.
+
+![Showing the columns in the table.](images/tvm-after-exceptions-table.png)
 If there is a large jump in the number of exposed devices, or a sharp increase in the impact on your organization exposure score and Microsoft Secure Score for Devices, then that security recommendation is worth investigating.
 
 1. Select the recommendation and **Open software page**

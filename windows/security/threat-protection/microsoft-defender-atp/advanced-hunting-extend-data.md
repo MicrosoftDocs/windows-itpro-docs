@@ -24,7 +24,7 @@ ms.date: 10/10/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from across your organization. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

@@ -22,12 +22,12 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Your exposure score is visible in the [Threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
 
@@ -40,15 +40,6 @@ The card gives you a high-level view of your exposure score trend over time. Any
 ![Exposure score card](images/tvm_exp_score.png)
 
 ## How it works
-
-Threat and vulnerability management  introduces a new exposure score metric, which visually represents how exposed your devices are to imminent threats.
-
-The exposure score is continuously calculated on each device in the organization. It is influenced by the following factors:
-
-- Weaknesses, such as vulnerabilities discovered on the device
-- External and internal threats such as public exploit code and security alerts
-- Likelihood of the device to get breached given its current security posture
-- Value of the device to the organization given its role and content
 
 The exposure score is broken down into the following levels:
 

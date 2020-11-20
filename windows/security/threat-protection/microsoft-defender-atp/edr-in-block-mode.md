@@ -28,18 +28,18 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## What is EDR in block mode?
 
-When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is turned on, Microsoft Defender ATP blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected, post breach. 
+When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is turned on, Defender for Endpoint blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected, post breach. 
 
 EDR in block mode is also integrated with [threat & vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Your organization's security team will get a [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to turn EDR in block mode on if it isn't already enabled. 
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
-> EDR in block mode is currently in preview, available to organizations who have opted in to receive **[preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)**. To get the best protection, make sure to **[deploy Microsoft Defender ATP baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
+> EDR in block mode is currently in preview, available to organizations who have opted in to receive **[preview features](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)**. To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)**.
 
 ## What happens when something is detected?
 
@@ -70,10 +70,10 @@ The following image shows an instance of unwanted software that was detected and
 |---------|---------|
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
-|Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
+|Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/><br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
-|Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
-|Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
+|Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
+|Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
 > To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your exclusions are defined. 
@@ -87,11 +87,11 @@ No. EDR in block mode does not affect third-party antivirus protection running o
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
-Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and device learning models.
+Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and device learning models.
 
 ## See also
 
@@ -99,5 +99,5 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 [Behavioral blocking and containment](behavioral-blocking-containment.md)
 
-[Better together: Microsoft Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+[Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

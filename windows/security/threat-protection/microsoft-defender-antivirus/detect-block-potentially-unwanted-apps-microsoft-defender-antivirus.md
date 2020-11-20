@@ -23,13 +23,13 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
 
 > [!NOTE]
 > Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices.
 
-Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
+Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
 
 For example:
 
@@ -66,7 +66,7 @@ Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
 [configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
 
-Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
+Although Microsoft Defender for Endpoint has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender for Endpoint portal, Windows Defender SmartScreen will respect the new settings.
 
 ### Microsoft Defender Antivirus
 
@@ -88,7 +88,7 @@ You can enable PUA protection with Microsoft Intune, Microsoft Endpoint Configur
 You can also use the PUA audit mode to detect PUAs without blocking them. The detections will be captured in the Windows event log.
 
 > [!TIP]
-> You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.
+> You can visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.
 
 PUA audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 

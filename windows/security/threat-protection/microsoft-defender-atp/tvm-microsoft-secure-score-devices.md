@@ -22,10 +22,10 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
 >[!NOTE]
 > Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
@@ -42,7 +42,7 @@ Select a category to go to the [**Security recommendations**](tvm-security-recom
 
 ## Turn on the Microsoft Secure Score connector
 
-Forward Microsoft Defender ATP signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
+Forward Microsoft Defender for Endpoint signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
 
 Changes might take up to a few hours to reflect in the dashboard.
 

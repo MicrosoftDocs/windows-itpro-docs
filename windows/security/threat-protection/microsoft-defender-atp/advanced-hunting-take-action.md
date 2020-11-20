@@ -21,9 +21,9 @@ ms.date: 09/20/2020
 # Take action on advanced hunting query results
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 You can quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md) using powerful and comprehensive action options. With these options, you can:
 
@@ -32,7 +32,7 @@ You can quickly contain threats or address compromised assets that you find in [
 
 ## Required permissions
 
-To be able to take action through advanced hunting, you need a role in Microsoft Defender ATP with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
+To be able to take action through advanced hunting, you need a role in Defender for Endpoint with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
@@ -46,7 +46,7 @@ You can take the following actions on devices identified by the `DeviceId` colum
 - Initiate an automated investigation to check and remediate threats on the device and possibly other affected devices
 - Restrict app execution to only Microsoft-signed executable files, preventing subsequent threat activity through malware or other untrusted executables
 
-To learn more about how these response actions are performed through Microsoft Defender ATP, [read about response actions on devices](respond-machine-alerts.md).
+To learn more about how these response actions are performed through Defender for Endpoint, [read about response actions on devices](respond-machine-alerts.md).
 
 ## Quarantine files
 

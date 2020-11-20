@@ -18,24 +18,26 @@ ms.topic: conceptual
 ms.date: 5/1/2020
 ---
 
-# Review alerts in Microsoft Defender Advanced Threat Protection
+# Review alerts in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-The new alert page in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
+The alert page in Microsoft Defender for Endpoint provides full context to the alert, by combining attack signals and alerts related to the selected alert, to construct a detailed alert story.
 
-Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location.
+Quickly triage, investigate, and take effective action on alerts that affect your organization. Understand why they were triggered, and their impact from one location. Learn more in this overview.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Getting started with an alert
 
-Clicking on an alert's name in Microsoft Defender ATP will land you on its alert page. On the alert page, all the information will be shown in context of the selected alert. Each alert page consists of 4 sections:
+Clicking on an alert's name in Defender for Endpoint will land you on its alert page. On the alert page, all the information will be shown in context of the selected alert. Each alert page consists of 4 sections:
 
 1. **The alert title** shows the alert's name and is there to remind you which alert started your current investigation regardless of what you have selected on the page.
 2. [**Affected assets**](#review-affected-assets) lists cards of devices and users affected by this alert that are clickable for further information and actions.
@@ -44,7 +46,7 @@ Clicking on an alert's name in Microsoft Defender ATP will land you on its alert
 
 ![An alert page when you first land on it](images/alert-landing-view.png)
 
-Note the detection status for your alert. Blocked, prevented, or remediated means actions were already taken by Microsoft Defender ATP.
+Note the detection status for your alert. Blocked, prevented, or remediated means actions were already taken by Defender for Endpoint.
 Start by reviewing the *automated investigation details* in your alert's [details pane](#take-action-from-the-details-pane), to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
 ![A snippet of the details pane with the alert description and automatic investigation sections highlighted](images/alert-air-and-alert-description.png)
@@ -89,14 +91,6 @@ If you are experiencing a false alert with a line-of-business application, creat
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
-
-## Transitioning to the new alert page
-
-When making the move to the new alert page you will notice that we have centralized information from the alert process tree, the incident graph, and the artifact timeline into the [alert story](#investigate-using-the-alert-story), with some information available through the [affected assets](#review-affected-assets) section. Any additional information has been consolidated into the details pane for the relevant entities.
-
-## Video overview of the new alert page
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Related topics
 
