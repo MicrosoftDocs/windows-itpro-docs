@@ -26,13 +26,7 @@ manager: dansimp
     <a href="#admx-credentialproviders-allowdomaindelaylock">ADMX_CredentialProviders/AllowDomainDelayLock</a>
   </dd>
   <dd>
-    <a href="#admx-credentialproviders-allowsecuritykeysignin">ADMX_CredentialProviders/AllowSecurityKeySignIn</a>
-  </dd>
-  <dd>
     <a href="#admx-credentialproviders-defaultcredentialprovider">ADMX_CredentialProviders/DefaultCredentialProvider</a>
-  </dd>
-  <dd>
-    <a href="#admx-credentialproviders-defaultlogondomain">ADMX_CredentialProviders/DefaultLogonDomain</a>
   </dd>
   <dd>
     <a href="#admx-credentialproviders-excludedcredentialproviders">ADMX_CredentialProviders/ExcludedCredentialProviders</a>
@@ -116,75 +110,6 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credentialproviders-allowsecuritykeysignin"></a>**ADMX_CredentialProviders/AllowSecurityKeySignIn**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control whether users can sign in using external security keys.
-
-If you enable this policy setting, users can sign in with external security keys.
-
-If you disable or don't configure this policy setting, users can't sign in with external security keys.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on security key sign-in*
--   GP name: *AllowSecurityKeySignIn*
--   GP path: *System\Logon*
--   GP ADMX file name: *CredentialProviders.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
 <a href="" id="admx-credentialproviders-defaultcredentialprovider"></a>**ADMX_CredentialProviders/DefaultCredentialProvider**  
 
 <!--SupportedSKUs-->
@@ -256,74 +181,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<!--Policy-->
-<a href="" id="admx-credentialproviders-defaultlogondomain"></a>**ADMX_CredentialProviders/DefaultLogonDomain**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies a default logon domain, which might be a different domain than the domain to which the computer is joined. Without this policy setting, at logon, if a user does not specify a domain for logon, the domain to which the computer belongs is assumed as the default domain. For example if the computer belongs to the Fabrikam domain, the default domain for user logon is Fabrikam.
-
-If you enable this policy setting, the default logon domain is set to the specified domain, which might be different than the domain to which the computer is joined.
-
-If you disable or do not configure  this policy setting, the default logon domain is always set to the  domain to which the computer is joined.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Assign a default domain for logon*
--   GP name: *DefaultLogonDomain*
--   GP path: *System\Logon*
--   GP ADMX file name: *CredentialProviders.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
 
 <!--Policy-->
 <a href="" id="admx-credentialproviders-excludedcredentialproviders"></a>**ADMX_CredentialProviders/ExcludedCredentialProviders**  

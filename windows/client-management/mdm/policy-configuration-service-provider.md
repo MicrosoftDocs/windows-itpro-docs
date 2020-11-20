@@ -486,13 +486,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-allowdomaindelaylock" id="admx-credentialproviders-allowdomaindelaylock">ADMX_CredentialProviders/AllowDomainDelayLock</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-allowsecuritykeysignin" id="admx-credentialproviders-allowsecuritykeysignin">ADMX_CredentialProviders/AllowSecurityKeySignIn</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-defaultcredentialprovider" id="admx-credentialproviders-defaultcredentialprovider">ADMX_CredentialProviders/DefaultCredentialProvider</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-defaultlogondomain" id="admx-credentialproviders-defaultlogondomain">ADMX_CredentialProviders/DefaultLogonDomain</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-excludedcredentialproviders" id="admx-credentialproviders-excludedcredentialproviders">ADMX_CredentialProviders/ExcludedCredentialProviders</a>
@@ -2547,34 +2541,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-addadmingrouptorup" id="admx-userprofiles-addadmingrouptorup">ADMX_UserProfiles/AddAdminGroupToRUP</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-cleanupprofiles" id="admx-userprofiles-cleanupprofiles">ADMX_UserProfiles/CleanupProfiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-compatiblerupsecurity" id="admx-userprofiles-compatiblerupsecurity">ADMX_UserProfiles/CompatibleRUPSecurity</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-connect-homedir-toroot" id="admx-userprofiles-connect-homedir-toroot">ADMX_UserProfiles/Connect_HomeDir_ToRoot</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-cscsuspenddirectories" id="admx-userprofiles-cscsuspenddirectories">ADMX_UserProfiles/CscSuspendDirectories</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-deleteroamingcachedprofiles" id="admx-userprofiles-deleteroamingcachedprofiles">ADMX_UserProfiles/DeleteRoamingCachedProfiles</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-dontforceunloadhive" id="admx-userprofiles-dontforceunloadhive">ADMX_UserProfiles/DontForceUnloadHive</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-enableslowlinkdetect" id="admx-userprofiles-enableslowlinkdetect">ADMX_UserProfiles/EnableSlowLinkDetect</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-enableslowlinkui" id="admx-userprofiles-enableslowlinkui">ADMX_UserProfiles/EnableSlowLinkUI</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-excludedirectories" id="admx-userprofiles-excludedirectories">ADMX_UserProfiles/ExcludeDirectories</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-leaveappmgmtdata" id="admx-userprofiles-leaveappmgmtdata">ADMX_UserProfiles/LeaveAppMgmtData</a>
@@ -2583,28 +2553,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-limitsize" id="admx-userprofiles-limitsize">ADMX_UserProfiles/LimitSize</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-localprofile" id="admx-userprofiles-localprofile">ADMX_UserProfiles/LocalProfile</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-machineprofilepath" id="admx-userprofiles-machineprofilepath">ADMX_UserProfiles/MachineProfilePath</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-primarycomputer-rup" id="admx-userprofiles-primarycomputer-rup">ADMX_UserProfiles/PrimaryComputer_RUP</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-profiledlgtimeout" id="admx-userprofiles-profiledlgtimeout">ADMX_UserProfiles/ProfileDlgTimeOut</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-profileerroraction" id="admx-userprofiles-profileerroraction">ADMX_UserProfiles/ProfileErrorAction</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-profileunloadtimeout" id="admx-userprofiles-profileunloadtimeout">ADMX_UserProfiles/ProfileUnloadTimeout</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-readonlyuserprofile" id="admx-userprofiles-readonlyuserprofile">ADMX_UserProfiles/Readonlyuserprofile</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-slowlinkdefault" id="admx-userprofiles-slowlinkdefault">ADMX_UserProfiles/SlowLinkDefault</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-slowlinktimeout" id="admx-userprofiles-slowlinktimeout">ADMX_UserProfiles/SlowLinkTimeOut</a>
@@ -2613,13 +2562,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-user-home" id="admx-userprofiles-user-home">ADMX_UserProfiles/USER_HOME</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-uploadhive" id="admx-userprofiles-uploadhive">ADMX_UserProfiles/UploadHive</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-userinfoaccessaction" id="admx-userprofiles-userinfoaccessaction">ADMX_UserProfiles/UserInfoAccessAction</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-waitfornetwork" id="admx-userprofiles-waitfornetwork">ADMX_UserProfiles/WaitForNetwork</a>
   </dd>
 </dl>
 
