@@ -91,3 +91,4 @@ To get the data types for event properties do the following:
 - [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
+- [Troubleshoot connectivity issues - Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide)
