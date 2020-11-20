@@ -23,7 +23,7 @@ One of the security challenges that network admins face is configuring a machine
 
 Network changes can happen frequently. Additionally, the operations required to re-categorize the network after a change and apply the correct security policies on a machine are non-trivial and may require considerable CPU time. This is especially true for machines that are part of the domain. In the past, the delay in applying security policies during network re-categorization has been successfully exploited for vulnerabilities.
 
-To counter this potential exploitation, Windows Firewall will "quarantine" an interface until the system has successfully re-categorized the network and WFP has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
+To counter this potential exploitation, Windows Firewall will "quarantine" an interface until the system has successfully re-categorized the network and Windows Filtering Platform (WFP) has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
 
 While the quarantine feature has long been a part of Windows Firewall, the feature’s behavior has often caused confusion for customers unaware of quarantine and its motivations.
 
@@ -50,7 +50,7 @@ These filters are added in the FWPM_SUBLAYER_MPSSVC_QUARANTINE sublayer and thes
 4.	FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6
 
 >[!NOTE]
-> Any FW rules added by the customers will not affect the filters in the quarantine sublayer as filters from FW rules are added in the FWPM_SUBLAYER_MPSSVC_WF sublayer. In other words, customers cannot add their own exception filters to prevent packets from being evaluated by quarantine filters.
+> Any Firewall rules added by the customers will not affect the filters in the quarantine sublayer as filters from Firewall rules are added in the FWPM_SUBLAYER_MPSSVC_WF sublayer. In other words, customers cannot add their own exception filters to prevent packets from being evaluated by quarantine filters.
 
 For more information about WFP layers and sublayers, see [WFP Operation](https://docs.microsoft.com/windows/win32/fwp/basic-operation).
 
