@@ -93,7 +93,7 @@ Type “:wq” w/o the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="../images/update-MDE-linux-4634577.png" alt-text="update MDE linux":::
+:::image type="content" source="{..\images\update-MDE-linux-4634577.jpg}" alt-text="{update MDE linux}":::
 
 To inspect cron job runs:
 `sudo grep mdatp /var/log/cron`
