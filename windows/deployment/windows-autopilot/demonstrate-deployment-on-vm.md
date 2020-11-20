@@ -71,7 +71,7 @@ A summary of the sections and procedures in the lab is provided below. Follow ea
 <br>[Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
 <br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create a device group](#create-a-device-group)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create a device group](#create-the-deployment-profile)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create the deployment profile](#create-the-deployment-profile)
 <br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
 <br>[See Windows Autopilot in action](#see-windows-autopilot-in-action)
 <br>[Remove devices from Autopilot](#remove-devices-from-autopilot)
