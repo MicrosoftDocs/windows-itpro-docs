@@ -28,7 +28,7 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 > [!NOTE]
 > To get a list of all the time zones, run the following command:
 > `timedatectl list-timezones`<br>
-> Examples for timezones:
+> Examples for timezones: <br>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
@@ -77,7 +77,7 @@ CRON_TZ=America/Los_Angeles
 
 `06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
 
-#! Ubuntu and Debian systems
+#!Ubuntu and Debian systems
 
 `06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
