@@ -42,6 +42,7 @@ Ensure that your devices:
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Are onboarded to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure) to help remediate threats found by threat and vulnerability management. If you're using Configuration Manager, update your console to the latest version.
+    - **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
 - Have at least one security recommendation that can be viewed in the device page
 - Are tagged or marked as co-managed
 
