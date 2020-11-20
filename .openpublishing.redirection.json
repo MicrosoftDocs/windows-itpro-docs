@@ -85,6 +85,11 @@
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-privacy",
       "redirect_document_id": true
     },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ios-privacy",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
@@ -15654,6 +15659,11 @@
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac",
       "redirect_document_id": true
+    },
+	{
+      "source_path": "windows/security/threat-protection/microsoft-defender-atp/endpoint-detection-response-mac-preview.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md",
