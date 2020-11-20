@@ -548,6 +548,47 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_EAIME policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-donotincludenonpublishingstandardglyphinthecandidatelist" id="">ADMX_EAIME/L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-restrictcharactercoderangeofconversion" id="">ADMX_EAIME/L_RestrictCharacterCodeRangeOfConversion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoffcustomdictionary" id="admx-eaime-l-turnoffcustomdictionary">ADMX_EAIME/L_TurnOffCustomDictionary</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoffhistorybasedpredictiveinput" id="admx-eaime-l-turnoffhistorybasedpredictiveinput">ADMX_EAIME/L_TurnOffHistorybasedPredictiveInput</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoffinternetsearchintegration" id="admx-eaime-l-turnoffinternetsearchintegration">ADMX_EAIME/L_TurnOffInternetSearchIntegration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoffopenextendeddictionary" id="admx-eaime-l-turnoffopenextendeddictionary">ADMX_EAIME/L_TurnOffOpenExtendedDictionary</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoffsavingautotuningdatatofile" id="admx-eaime-l-turnoffsavingautotuningdatatofile">ADMX_EAIME/L_TurnOffSavingAutoTuningDataToFile</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoncloudcandidate" id="admx-eaime-l-turnoncloudcandidate">ADMX_EAIME/L_TurnOnCloudCandidate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnoncloudcandidatechs" id="admx-eaime-l-turnoncloudcandidatechs">ADMX_EAIME/L_TurnOnCloudCandidateCHS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnonlexiconupdate" id="admx-eaime-l-turnonlexiconupdate">ADMX_EAIME/L_TurnOnLexiconUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnonlivestickers" id="admx-eaime-l-turnonlivestickers">ADMX_EAIME/L_TurnOnLiveStickers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eaime.md#admx-eaime-l-turnonmisconversionloggingformisconversionreport" id="admx-eaime-l-turnonmisconversionloggingformisconversionreport">ADMX_EAIME/L_TurnOnMisconversionLoggingForMisconversionReport</a>
+  </dd>
+</dl>
+
 ### ADMX_EncryptFilesonMove policies
 <dl>
   <dd>

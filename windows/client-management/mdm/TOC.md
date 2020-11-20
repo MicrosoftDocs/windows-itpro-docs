@@ -186,6 +186,7 @@
 #### [ADMX_DigitalLocker](policy-csp-admx-digitallocker.md)
 #### [ADMX_DnsClient](policy-csp-admx-dnsclient.md)
 #### [ADMX_DWM](policy-csp-admx-dwm.md)
+#### [ADMX_EAIME](policy-csp-admx-eaime.md)
 #### [ADMX_EncryptFilesonMove](policy-csp-admx-encryptfilesonmove.md)
 #### [ADMX_EventForwarding](policy-csp-admx-eventforwarding.md)
 #### [ADMX_FileServerVSSProvider](policy-csp-admx-fileservervssprovider.md)
