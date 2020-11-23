@@ -36,7 +36,7 @@ have committed to building security solutions not just *for* Microsoft, but also
 heterogenous environments. We're listening to customer feedback and partnering
 closely with our customers to build solutions that meet their needs.
 
-With Defender for Endpoint, customers benefit from a unified view of all
+With Microsoft Defender for Endpoint, customers benefit from a unified view of all
 threats and alerts in the Microsoft Defender Security Center, across Windows and
 non-Windows platforms, enabling them to get a full picture of what's happening
 in their environment, which empowers them to more quickly assess and respond to
@@ -44,7 +44,7 @@ threats.
 
 ## Microsoft Defender for Endpoint for Mac 
 
-Microsoft Defender for Endpoint for Mac offers AV and EDR capabilities for the three
+Microsoft Defender for Endpoint for Mac offers antivirus and endpoint detection and response (EDR) capabilities for the three
 latest released versions of macOS. Customers can deploy and manage the solution
 through Microsoft Endpoint Manager and Jamf. Just like with Microsoft Office
 applications on macOS, Microsoft Auto Update is used to manage Microsoft
@@ -96,15 +96,15 @@ devices. Microsoft Defender for Endpoint is also available for purchase from a C
 Solution Provider (CSP).
 
 Customers can obtain Microsoft Defender for Endpoint for Mac through a standalone
-MDefender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365
+Microsoft Defender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365
 Security.
 
-Recently announced capabilities of Microsoft Defender for Endpoint for Android and soon
-iOS are included in the above mentioned offers as part of the five qualified
+Recently announced capabilities of Microsoft Defender for Endpoint for Android and iOS 
+are included in the above mentioned offers as part of the five qualified
 devices for eligible licensed users.
 
- Defender for Endpoint for Linux is available through the Defender for Endpoint
-for Server SKU that is available for both commercial and education customers.
+Defender for Endpoint on Linux is available through the Defender for Endpoint
+Server SKU that is available for both commercial and education customers.
 
 Please contact your account team or CSP for pricing and additional eligibility
 requirements.

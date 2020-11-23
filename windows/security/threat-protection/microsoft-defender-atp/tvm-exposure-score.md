@@ -49,46 +49,6 @@ The exposure score is broken down into the following levels:
 
 You can remediate the issues based on prioritized [security recommendations](tvm-security-recommendation.md) to reduce the exposure score. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
 
-## How the score is calculated
-
-The exposure score is continuously calculated on each device in the organization. It is scored & evaluated based on the following categories:
-
-- **Threats** - external and internal threats such as public exploit code and security alerts
-- **Likelihood** - likelihood of the device to get breached given its current security posture
-- **Value** - value of the device to the organization given its role and content
-
-**Device exposure score** = (Threats + Likelihood) x Value
-
-**Organization exposure score** = Avg (All device exposure scores) taking into account organization value multipliers
-
-### Threats
-
-Points are added based on whether the device has any vulnerabilities or misconfigurations, determined by the Common Vulnerability Scoring System (CVSS) base score.
-
-Further points are added based on:
-
-- Exploits availability and whether the exploit is verified or ranked
-- A threat campaign is linked to the vulnerability or misconfiguration
-
-### Likelihood
-
-Points are added based on whether any of the following factors are true:
-
-- The device is internet facing
-- Specific compensating controls are misconfigured
-- An exploit attempt is linked directly to a threat spotted in the organization
-
-### Value
-
-Points are added based on whether any of the following factors are true for a device:
-
-- Contains high business impact (HBI) data
-- Marked as a High Value Asset (HVA) or serves as an important server role (e.g. AD, DNS)
-- Runs a business critical app (BCA)
-- Used by a marked high value user (HVU) (e.g. domain admin, CEO)
-
-If a device is valuable to your organization, it should increase the total organization exposure score.
-
 ## Reduce your threat and vulnerability exposure
 
 Lower your threat and vulnerability exposure by remediating [security recommendations](tvm-security-recommendation.md). Make the most impact to your exposure score by remediating the top security recommendations, which can be viewed in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md).
