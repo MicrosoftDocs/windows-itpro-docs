@@ -104,13 +104,13 @@ The built-in Windows Hello for Business provisioning experience creates a hardwa
 #### Multifactor authentication
 
 > [!IMPORTANT]
-> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multi-factor authentication for their users should use cloud-based Azure Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
+> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multi-factor authentication for their users should use cloud-based Azure AD Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure AD Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
 
 The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
-Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
+Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure AD Multi-Factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 > [!NOTE]
-> Azure Multi-Factor Authentication is available through:
+> Azure AD Multi-Factor Authentication is available through:
 > * Microsoft Enterprise Agreement
 > * Open Volume License Program
 > * Cloud Solution Providers program

@@ -41,7 +41,7 @@ Windows Hello addresses the following problems with passwords:
 * Windows 10, version 1511 or later
 * Microsoft Azure Account
 * Azure Active Directory
-* Azure Multi-factor authentication
+* Azure AD Multi-Factor Authentication
 * Modern Management (Intune or supported third-party MDM), *optional*
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 

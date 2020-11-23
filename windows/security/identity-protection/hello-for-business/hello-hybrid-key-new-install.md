@@ -110,13 +110,13 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 ## Multifactor Authentication Services
 Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA or a third-party MFA adapter
 
-Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.
+Review the [What is Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.
 
-### Azure Multi-Factor Authentication (MFA) Cloud
+### Azure AD Multi-Factor Authentication (MFA) Cloud
 
 > [!IMPORTANT]
-> As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
-> * Azure Multi-Factor Authentication
+> As long as your users have licenses that include Azure AD Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
+> * Azure AD Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
 > 
@@ -124,7 +124,7 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 
 
 #### Configure Azure MFA Settings
-Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
+Review the [Configure Azure AD Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
 #### Azure MFA User States
 After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.
@@ -135,12 +135,12 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 ### Section Review
 
 > [!div class="checklist"]
-> * Review the overview and uses of Azure Multifactor Authentication.
-> * Review your Azure Active Directory subscription for Azure Multifactor Authentication.
-> * Create an Azure Multifactor Authentication Provider, if necessary.
-> * Configure Azure Multifactor Authentication features and settings.
-> * Understand the different User States and their effect on Azure Multifactor Authentication.
-> * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server Active Directory Federation Services, if necessary.
+> * Review the overview and uses of Azure AD Multi-Factor Authentication.
+> * Review your Azure Active Directory subscription for Azure AD Multi-Factor Authentication.
+> * Create an Azure AD Multi-Factor Authentication Provider, if necessary.
+> * Configure Azure AD Multi-Factor Authentication features and settings.
+> * Understand the different User States and their effect on Azure AD Multi-Factor Authentication.
+> * Consider using Azure AD Multi-Factor Authentication or a third-party multifactor authentication provider with Windows Server Active Directory Federation Services, if necessary.
 
 > [!div class="nextstepaction"]
 > [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
