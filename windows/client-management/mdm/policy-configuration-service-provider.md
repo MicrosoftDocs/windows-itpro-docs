@@ -569,6 +569,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_EnhancedStorage policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-approvedenstordevices" id="admx-enhancedstorage-approvedenstordevices">ADMX_EnhancedStorage/ApprovedEnStorDevices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-approvedsilos" id="admx-enhancedstorage-approvedsilos">ADMX_EnhancedStorage/ApprovedSilos</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-disablepasswordauthentication" id="admx-enhancedstorage-disablepasswordauthentication">ADMX_EnhancedStorage/DisablePasswordAuthentication</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-disallowlegacydiskdevices" id="admx-enhancedstorage-disallowlegacydiskdevices">ADMX_EnhancedStorage/DisallowLegacyDiskDevices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-lockdeviceonmachinelock" id="admx-enhancedstorage-lockdeviceonmachinelock">ADMX_EnhancedStorage/LockDeviceOnMachineLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-roothubconnectedenstordevices" id="admx-enhancedstorage-roothubconnectedenstordevices">ADMX_EnhancedStorage/RootHubConnectedEnStorDevices</a>
+  </dd>
+</dl>
+
 ### ADMX_EventForwarding policies
 
 <dl>
