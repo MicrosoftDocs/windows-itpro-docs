@@ -44,13 +44,11 @@ When you open the Windows Defender Firewall for the first time, you can see the 
 
 *Figure 1: Windows Defender Firewall*
 
-1.  **Domain profile**: Used for networks where there is a system of account authentication against a domain controller (DC), such as an Azure Active Directory DC
+1.  **Domain profile**: Used for networks where there is a system of account authentication against an Active Directory Directory Services domain controller, such as a corporate network.
 
-2.  **Private profile**: Designed for and best used
-    in private networks such as a home network
+2.  **Private profile**: Designed for and best used in private networks such as a home network.
 
-3.  **Public profile**: Designed with higher security in mind
-    for public networks like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
+3.  **Public profile**: Designed with higher security in mind for public networks like Wi-Fi hotspots, coffee shops, airports, hotels, or stores.
 
 View detailed settings for each profile by right-clicking the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then selecting **Properties**.
 
