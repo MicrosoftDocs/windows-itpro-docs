@@ -29,23 +29,29 @@ ms.topic: article
 
 Learn how to deploy Microsoft Defender for Endpoint so that your enterprise can take advantage of preventative protection, post-breach detection, automated investigation, and response. 
 
-This solution provides guidance on the three phases of deployment. The deployment guide will guide you through the recommended path in deploying Defender for Endpoint.
+This solution provides guidance on the three phases of deployment. Each section corresponds to a separate article in this solution.
 
+![Image of deployment phases](images/deployment-phases.png)
 
-|Phase | Description | 
-|:-------|:-----|
-| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint: <br><br>- Stakeholders and approvals <br> - Environment considerations <br>- Access <br> - Adoption order
-|  ![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
-|  ![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. 
-
-
- 
-
-If you're unfamiliar with the general deployment planning steps, check out the [Plan deployment](deployment-strategy.md) guidance to get a  high-level overview of the general deployment steps and methods.
+Regardless of the environment architecture and method of deployment you choose outlined in the [Plan deployment](deployment-strategy.md) guidance, this guide is going to support you in onboarding endpoints. 
 
 
 
-## In Scope
+
+## Prepare
+Learn about what you need to consider when deploying Defender for Endpoint such as stakeholder approvals, environment considerations, access permissions, and adoption order of capabilities. 
+
+## Setup
+Get guidance on the initial steps you need to take so that you can access the portal such as validating licensing, completing the setup wizard, and network configuration. 
+
+## Onboard
+Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities.
+
+
+## Scope
+
+
+### In Scope
 
 The following guidance is in scope for this deployment guide:
 
@@ -61,10 +67,17 @@ The following guidance is in scope for this deployment guide:
     -   Attack surface reduction
 
 
-## Out of scope
+### Out of scope
 
 The following are out of scope of this deployment guide:
 
 -   Configuration of third-party solutions that might integrate with Defender for Endpoint
 
 -   Penetration testing in production environment
+
+
+## See also
+- [Phase 1: Prepare](prepare-deployment.md)
+- [Phase 2: Set up](production-deployment.md)
+- [Phase 3: Onboard](onboarding.md)
+- [Plan deployment](deployment-strategy.md)
