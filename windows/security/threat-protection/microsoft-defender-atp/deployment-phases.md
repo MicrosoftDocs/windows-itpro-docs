@@ -56,10 +56,16 @@ This solution provides the following key capabilities:
 
 Capability | Description 
 :---|:---
+Eliminate risks and reduce your attack surface| Use attack surface reduction to minimize the areas where your organization could be vulnerable to threats.
 Block sophisticated threats and malware | Defend against never-before-seen polymorphic and metamorphic malware and fileless and file-based threats with next-generation protection.
-Quickly go from alert to remediation at scale with automation | Automatically investigate alerts and remediate complex threats in minutes. Apply best practices and intelligent decision-making algorithms to determine whether a threat is active and what action to take.
+Remediation at scale with automation | Automatically investigate alerts and remediate complex threats in minutes. Apply best practices and intelligent decision-making algorithms to determine whether a threat is active and what action to take.
 Discover vulnerabilities and misconfigurations in real time | Bring security and IT together with Microsoft Threat & Vulnerability Management to quickly discover, prioritize, and remediate vulnerabilities and misconfigurations.
 Get expert-level threat monitoring and analysis | Empower your security operations centers with Microsoft Threat Experts. Get deep knowledge, advanced threat monitoring, analysis, and support to identify critical threats in your unique environment.
+Detect and respond to advanced attacks with behavioral monitoring | Spot attacks and zero-day exploits using advanced behavioral analytics and machine learning.
+Cross-platform support | Microsoft Defender for Endpoint provides security for non-Windows platforms including Mac, Linux servers, and Android.
+Evaluate capabilities | Fully evaluate our capabilities with a few simple clicks in the Microsoft Defender for Endpoint evaluation lab.
+Streamline and integrate via APIs | Integrate Microsoft Defender for Endpoint with your security solutions and streamline and automate security workflows with rich APIs.
+Simplify endpoint security management | Use a single pane of glass for all endpoint security actions, such as endpoint configuration, deployment, and management with Microsoft Endpoint Manager.
 
 
 ## Scope
