@@ -85,12 +85,12 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     The output of this command will show all processes and their associated scan activity. 
 
-3. On your Linux system, download the sample Python parser **high_cpu_parser.py** using the following command: 
+3. On your Linux system, download the sample Python parser **high_cpu_parser.py** using the command: 
 
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
-    The output of this command should be something similar to:
+    The output of this command should be similar to the following:
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
