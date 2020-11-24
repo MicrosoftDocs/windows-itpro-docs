@@ -27,15 +27,17 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
+
+Microsoft Defender for Endpoint has the capabilities to effectively protect your enterprise from cyber threats.
+
 Learn how to deploy Microsoft Defender for Endpoint so that your enterprise can take advantage of preventative protection, post-breach detection, automated investigation, and response. 
+
 
 This solution provides guidance on the three phases of deployment. Each section corresponds to a separate article in this solution.
 
 ![Image of deployment phases](images/deployment-phases.png)
 
 Regardless of the environment architecture and method of deployment you choose outlined in the [Plan deployment](deployment-strategy.md) guidance, this guide is going to support you in onboarding endpoints. 
-
-
 
 
 ## Prepare
@@ -48,12 +50,21 @@ Get guidance on the initial steps you need to take so that you can access the po
 Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities.
 
 
+## Key capabilities
+
+This solution provides the following key capabilities:
+
+Capability | Description 
+:---|:---
+Block sophisticated threats and malware | Defend against never-before-seen polymorphic and metamorphic malware and fileless and file-based threats with next-generation protection.
+Quickly go from alert to remediation at scale with automation | Automatically investigate alerts and remediate complex threats in minutes. Apply best practices and intelligent decision-making algorithms to determine whether a threat is active and what action to take.
+Discover vulnerabilities and misconfigurations in real time | Bring security and IT together with Microsoft Threat & Vulnerability Management to quickly discover, prioritize, and remediate vulnerabilities and misconfigurations.
+Get expert-level threat monitoring and analysis | Empower your security operations centers with Microsoft Threat Experts. Get deep knowledge, advanced threat monitoring, analysis, and support to identify critical threats in your unique environment.
+
+
 ## Scope
 
-
-### In Scope
-
-The following guidance is in scope for this deployment guide:
+### In scope
 
 -   Use of Microsoft Endpoint Configuration Manager and Microsoft Endpoint Manager to onboard endpoints into the service and configure capabilities
 
@@ -74,6 +85,13 @@ The following are out of scope of this deployment guide:
 -   Configuration of third-party solutions that might integrate with Defender for Endpoint
 
 -   Penetration testing in production environment
+
+## Key capabilities
+This solution provides the following key capabilities:
+
+- 
+
+
 
 
 ## See also
