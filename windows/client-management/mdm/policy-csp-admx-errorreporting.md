@@ -1159,7 +1159,7 @@ ADMX Info:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
+> * Device
 
 <hr/>
 
