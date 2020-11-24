@@ -52,6 +52,11 @@ Windows 10 version | Microsoft Defender Antivirus
 -|-
 Windows 10 version 1709 or later | [Microsoft Defender AV real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled
 
+After you have enabled the services, you may need to configure your network or firewall to allow the connections between the services and your endpoints.  
+
+- .smartscreen.microsoft.com
+- .smartscreen-prod.microsoft.com
+
 ## Review network protection events in the Microsoft Defender for Endpoint Security Center
 
 Microsoft Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
