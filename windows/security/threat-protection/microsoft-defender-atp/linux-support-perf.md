@@ -78,32 +78,48 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection_logs
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
     > [!NOTE]
     > Using ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
 
     The output of this command will show all processes and their associated scan activity. 
 
-3. You can then run a script to parse the output.
-    
-    To do this, in your Windows system, create a folder in ```C:\temp\High_CPU_util_parser_for_Linux```. 
+3. On your Linux system, download the sample Python parser **high_cpu_parser.py**.
+    ```bash
+    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    ```
+    The output of this command should be something similar to:
 
-    Save the output file ```real_time_protection_logs``` from your Linux system to the created folder.
+    ```Output
+    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.196.133
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.196.133| :443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1020 [text/plain]
+    Saving to: 'high_cpu_parser.py'
 
-    You can then use this sample PowerShell script to parse the```real_time_protection_logs```. Save this script as ```MDATP_Linux_High_CPU_parser.ps1``` in ```C:\temp\High_CPU_util_parser_for_Linux```. 
-    The output of this command will show all processes and their associated scan activity. To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+    100%[===========================================>] 1,020    --.-K/s   in 0s
+    ```
+4. Next, type the following commands:
+    ```bash
+    chmod +x high_cpu_parser.py
+    ```
+    ```bash
+    cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
+    ```
 
-    Run the PowerShell script as admin. The script launches a Microsoft Excel file. The Excel file shows the list of processes with the most activity arranged in descending order. From here you can analyze which processes to exclude. 
+    The output of the above command displays all the processes and their associated scan activity.
+
+    To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+
+  
     
     > [!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
-4. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues. For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).    
+5. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-5. Re-enable real-time protection.
+    For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).    
 
-  
-4. Configure Defender for Endpoint for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    For more details, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
