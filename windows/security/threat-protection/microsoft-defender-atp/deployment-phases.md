@@ -92,11 +92,6 @@ The following are out of scope of this deployment guide:
 
 -   Penetration testing in production environment
 
-## Key capabilities
-This solution provides the following key capabilities:
-
-- 
-
 
 
 
