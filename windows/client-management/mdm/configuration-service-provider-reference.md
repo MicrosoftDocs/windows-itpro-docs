@@ -2747,7 +2747,9 @@ The following list shows the CSPs supported in HoloLens devices:
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
--   [Accounts CSP](accounts-csp.md)<sup>9</sup> **Note:** Support in Surface Hub is limited to **Domain\ComputerName**.
+-   [Accounts CSP](accounts-csp.md)<sup>9</sup> 
+    > [!NOTE]
+    > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
