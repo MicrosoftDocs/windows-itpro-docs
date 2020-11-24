@@ -29,7 +29,7 @@ Depending on the requirements of your environment, we've put together material t
 
 These are the general steps you need to take to deploy Defender for Endpoint:
 
-![Image of deployment flow](images/onboarding-flow-diagram.png)
+![Image of deployment flow](images/plan-deployment.png)
 
 - Identify architecture
 - Select deployment method
