@@ -26,16 +26,13 @@ ms.topic: article
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 
-Plan your Microsoft Defender for Endpoint deployment so that you can effectively select the type of deployment tool that best suits your environment. Effective planning will help you maximize the capabilities of the suite and ensure that your enterprise is protected from cyber threats.
+Plan your Microsoft Defender for Endpoint deployment so that you can maximize the security capabilities within the suite and better protect your enterprise from cyber threats.
 
 
-Depending on the requirements of your environment, we've put together material to help guide you through the various options you can adopt to deploy Defender for Endpoint. 
+This solution provides guidance on how to identify your environment architecture, select the type of deployment tool that best fits your needs, and guidance on how to configure capabilities.
 
-These are the general steps you need to take to deploy Defender for Endpoint:
 
 ![Image of deployment flow](images/plan-deployment.png)
-
-
 
 
 ## Step 1: Identify architecture
