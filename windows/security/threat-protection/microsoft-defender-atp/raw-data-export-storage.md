@@ -31,6 +31,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 ## Before you begin:
 
 1. Create a [Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) in your tenant.
+
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.
 
 ## Enable raw data streaming:
