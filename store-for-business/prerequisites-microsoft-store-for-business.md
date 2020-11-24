@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/13/2017
+ms.date: 
 ---
 
 # Prerequisites for Microsoft Store for Business and Education
@@ -21,6 +21,9 @@ ms.date: 10/13/2017
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
 
 There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 

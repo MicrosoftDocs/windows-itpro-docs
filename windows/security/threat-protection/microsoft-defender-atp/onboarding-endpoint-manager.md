@@ -24,14 +24,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 
 This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
 - Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
-- Step 2: Configuring Microsoft Defender ATP capabilities using Microsoft Endpoint Manager
+- Step 2: Configuring Defender for Endpoint capabilities using Microsoft Endpoint Manager
 
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Manager:
 
@@ -39,11 +39,11 @@ This onboarding guidance will walk you through the following basic steps that yo
 
     -   Creating an Azure Active Directory group (User or Device)
 
--   [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-atp-capabilities)
+-   [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
 
     -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
 
-While Microsoft Defender ATP supports onboarding of various endpoints and tools, this article does not cover them. 
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
 For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
@@ -100,16 +100,17 @@ needs.<br>
 
 8.  Your testing group now has a member to test.
 
-## Step 2: Create configuration policies to configure Microsoft Defender ATP capabilities
+## Step 2: Create configuration policies to configure Microsoft Defender for Endpoint capabilities
 In the following section, you'll create a number of configuration policies.
 
 First is a configuration policy to select which groups of users or devices will
-be onboarded to Microsoft Defender ATP. 
+be onboarded to Defender for Endpoint:
+
+- [Endpoint detection and response](#endpoint-detection-and-response) 
 
 Then you will continue by creating several
-different types of endpoint security policies.
+different types of endpoint security policies:
 
-- [Endpoint detection and response](#endpoint-detection-and-response)
 - [Next-generation protection](#next-generation-protection)
 - [Attack surface reduction](#attack-surface-reduction--attack-surface-reduction-rules)
 
@@ -137,9 +138,9 @@ different types of endpoint security policies.
     > ![Image of Microsoft Endpoint Manager portal](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > In this instance, this has been auto populated as Microsoft Defender ATP has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender ATP in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
+    > In this instance, this has been auto populated as Defender for Endpoint has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
     > 
-    > The following image is an example of what you'll see when Microsoft Defender ATP is NOT integrated with Intune:
+    > The following image is an example of what you'll see when Microsoft Defender for Endpoint is NOT integrated with Intune:
     >
     > ![Image of Microsoft Endpoint Manager portal](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -350,13 +351,13 @@ To confirm that the configuration policy has been applied to your test device, f
 ### Endpoint detection and response
 
 
-1.  Before applying the configuration, the Microsoft Defender ATP
+1.  Before applying the configuration, the Defender for Endpoint
     Protection service should not be started.
 
     > [!div class="mx-imgBorder"]
     > [ ![Image of Services panel](images/b418a232a12b3d0a65fc98248dbb0e31.png) ](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2.  After the configuration has been applied, the Microsoft Defender ATP
+2.  After the configuration has been applied, the Defender for Endpoint
     Protection Service should be started.
 
     > [!div class="mx-imgBorder"]

@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Onboard devices without Internet access to Microsoft Defender ATP 
+# Onboard devices without Internet access to Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,25 +47,25 @@ For more information about onboarding methods, see the following articles:
 
 - Setup Azure Log Analytics (formerly known as OMS Gateway) to act as proxy or hub:
   - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Microsoft Defender ATP Workspace key & ID
+  - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID
 
 - Offline devices in the same network of Azure Log Analytics
   -  Configure MMA to point to:
      - Azure Log Analytics IP as a proxy
-     - Microsoft Defender ATP workspace key & ID
+     - Defender for Endpoint workspace key & ID
 
 ## Azure virtual machines
 - Configure and enable [Azure Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
 
     - Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
       - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Microsoft Defender ATP Workspace key & ID
+      - [Install and configure Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID
     - Offline Azure VMs in the same network of OMS Gateway
       - Configure Azure Log Analytics IP as a proxy
       - Azure Log Analytics Workspace Key & ID
 
     - Azure Security Center (ASC)
       - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Threat Detection \> Allow Microsoft Defender ATP to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [Threat Detection \> Allow Defender for Endpoint to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
         For more information, see [Working with security policies](https://docs.microsoft.com/azure/security-center/tutorial-security-policy).
