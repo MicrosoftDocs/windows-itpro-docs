@@ -592,6 +592,98 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ErrorReporting policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-pch-allornonedef" id="admx-errorreporting-pch-allornonedef">ADMX_ErrorReporting/PCH_AllOrNoneDef</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-pch-allornoneex" id="admx-errorreporting-pch-allornoneex">ADMX_ErrorReporting/PCH_AllOrNoneEx</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-pch-allornoneinc" id="admx-errorreporting-pch-allornoneinc">ADMX_ErrorReporting/PCH_AllOrNoneInc</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-pch-configurereport" id="admx-errorreporting-pch-configurereport">ADMX_ErrorReporting/PCH_ConfigureReport</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-pch-reportoperatingsystemfaults" id="admx-errorreporting-pch-reportoperatingsystemfaults">ADMX_ErrorReporting/PCH_ReportOperatingSystemFaults</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werarchive-1" id="admx-errorreporting-werarchive-1">ADMX_ErrorReporting/WerArchive_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werarchive-2" id="admx-errorreporting-werarchive-2">ADMX_ErrorReporting/WerArchive_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werautoapproveosdumps-1" id="admx-errorreporting-werautoapproveosdumps-1">ADMX_ErrorReporting/WerAutoApproveOSDumps_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werautoapproveosdumps-2" id="admx-errorreporting-werautoapproveosdumps-2">ADMX_ErrorReporting/WerAutoApproveOSDumps_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypassdatathrottling-1" id="admx-errorreporting-werbypassdatathrottling-1">ADMX_ErrorReporting/WerBypassDataThrottling_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypassdatathrottling-2" id="admx-errorreporting-werbypassdatathrottling-2">ADMX_ErrorReporting/WerBypassDataThrottling_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypassnetworkcostthrottling-1" id="admx-errorreporting-werbypassnetworkcostthrottling-1">ADMX_ErrorReporting/WerBypassNetworkCostThrottling_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypassnetworkcostthrottling-2" id="admx-errorreporting-werbypassnetworkcostthrottling-2">ADMX_ErrorReporting/WerBypassNetworkCostThrottling_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypasspowerthrottling-1" id="admx-errorreporting-werbypasspowerthrottling-1">ADMX_ErrorReporting/WerBypassPowerThrottling_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werbypasspowerthrottling-2" id="admx-errorreporting-werbypasspowerthrottling-2">ADMX_ErrorReporting/WerBypassPowerThrottling_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-wercer" id="admx-errorreporting-wercer">ADMX_ErrorReporting/WerCER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werconsentcustomize-1" id="admx-errorreporting-werconsentcustomize-1">ADMX_ErrorReporting/WerConsentCustomize_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werconsentoverride-1" id="admx-errorreporting-werconsentoverride-1">ADMX_ErrorReporting/WerConsentOverride_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werconsentoverride-2" id="admx-errorreporting-werconsentoverride-2">ADMX_ErrorReporting/WerConsentOverride_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werdefaultconsent-1" id="admx-errorreporting-werdefaultconsent-1">ADMX_ErrorReporting/WerDefaultConsent_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werdefaultconsent-2" id="admx-errorreporting-werdefaultconsent-2">ADMX_ErrorReporting/WerDefaultConsent_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werdisable-1" id="admx-errorreporting-werdisable-1">ADMX_ErrorReporting/WerDisable_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werexlusion-1" id="admx-errorreporting-werexlusion-1">ADMX_ErrorReporting/WerExlusion_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werexlusion-2" id="admx-errorreporting-werexlusion-2">ADMX_ErrorReporting/WerExlusion_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-wernologging-1" id="admx-errorreporting-wernologging-1">ADMX_ErrorReporting/WerNoLogging_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-wernologging-2" id="admx-errorreporting-wernologging-2">ADMX_ErrorReporting/WerNoLogging_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-wernosecondleveldata-1" id="admx-errorreporting-wernosecondleveldata-1">ADMX_ErrorReporting/WerNoSecondLevelData_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werqueue-1" id="admx-errorreporting-werqueue-1">ADMX_ErrorReporting/WerQueue_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-errorreporting.md#admx-errorreporting-werqueue-2" id="admx-errorreporting-werqueue-2">ADMX_ErrorReporting/WerQueue_2</a>
+  </dd>
+</dl>
+
 ### ADMX_EventForwarding policies
 
 <dl>

@@ -189,6 +189,7 @@
 #### [ADMX_EAIME](policy-csp-admx-eaime.md)
 #### [ADMX_EncryptFilesonMove](policy-csp-admx-encryptfilesonmove.md)
 #### [ADMX_EnhancedStorage](policy-csp-admx-enhancedstorage.md)
+#### [ADMX_ErrorReporting](policy-csp-admx-errorreporting.md)
 #### [ADMX_EventForwarding](policy-csp-admx-eventforwarding.md)
 #### [ADMX_FileServerVSSProvider](policy-csp-admx-fileservervssprovider.md)
 #### [ADMX_FileSys](policy-csp-admx-filesys.md)
