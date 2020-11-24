@@ -94,8 +94,8 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
-    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.196.133
-    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.196.133| :443... connected.
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 1020 [text/plain]
     Saving to: 'high_cpu_parser.py'
