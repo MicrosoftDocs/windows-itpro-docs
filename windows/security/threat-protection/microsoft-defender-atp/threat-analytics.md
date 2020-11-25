@@ -89,11 +89,11 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 - **Security updates**—deployment of security updates for Microsoft vulnerabilities on onboarded devices
 - **Microsoft Defender Antivirus settings**
+  - Antivirus security intelligence updates
   - Cloud-delivered protection  
   - Potentially unwanted application (PUA) protection
   - Real-time protection
  
-
 Mitigation information in this section incorporates data from [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
 ![Image of the mitigations section of a threat analytics report](images/ta-mitigations.png)
