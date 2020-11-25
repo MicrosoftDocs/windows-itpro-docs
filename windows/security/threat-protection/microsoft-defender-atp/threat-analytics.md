@@ -64,27 +64,27 @@ Select a threat from the dashboard to view the report for that threat.
 
 Each threat analytics report provides information in three sections: **Overview**, **Analyst report**, and **Mitigations**.
 
-### Quickly understand a threat and assess its impact to your network in the overview
+### Overview: Quickly understand the threat, assess its impact, and review defenses
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
 ![Image of the overview section of a threat analytics report](images/ta-overview.png)
 _Overview section of a threat analytics report_
 
-#### Organizational impact
+#### Assess the impact to your organization
 Each report includes charts designed to provide information about the organizational impact of a threat:
 - **Devices with alerts**—shows the current number of distinct devices that have been impacted by the threat. A device is categorized as **Active** if there is at least one alert associated with that threat and **Resolved** if *all* alerts associated with the threat on the device have been resolved.
 - **Devices with alerts over time**—shows the number of distinct devices with **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 
-#### Organizational resilience and exposure
+#### Review security resilience and posture
 Each report includes charts that provide an overview of how resilient your organization is against a given threat:
 - **Security configuration status**—shows the number of devices that have applied the recommended security settings that can help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of devices that have applied security updates or patches that address vulnerabilities exploited by the threat.
 
-### Get expert insight from the analyst report
+### Analyst report: Get expert insight from Microsoft security researchers
 Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to read through the detailed expert write-up. Most reports provide detailed descriptions of attack chains, including tactics and techniques mapped to the MITRE ATT&CK framework, exhaustive lists of recommendations, and powerful [threat hunting](advanced-hunting-overview.md) guidance.
 
-### Review list of mitigations and the status of your devices
+### Mitigations: Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
 - **Security updates**—deployment of security updates or patches for vulnerabilities on onboarded devices
