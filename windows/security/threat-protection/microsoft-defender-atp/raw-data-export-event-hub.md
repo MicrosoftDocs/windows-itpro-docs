@@ -31,19 +31,26 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 ## Before you begin:
 
 1. Create an [event hub](https://docs.microsoft.com/azure/event-hubs/) in your tenant.
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
+
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**.
 
 ## Enable raw data streaming:
 
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) with a Global Admin user.
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
-3. Click on **Add data export settings**.
-4. Choose a name for your new settings.
-5. Choose **Forward events to Azure Event Hubs**.
-6. Type your **Event Hubs name** and your **Event Hubs resource ID**.
-  In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
 
-  ![Image of event hub resource Id](images/event-hub-resource-id.png)
+2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
+
+3. Click on **Add data export settings**.
+
+4. Choose a name for your new settings.
+
+5. Choose **Forward events to Azure Event Hubs**.
+
+6. Type your **Event Hubs name** and your **Event Hubs resource ID**.
+
+   In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
+
+   ![Image of event hub resource Id](images/event-hub-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -64,8 +71,11 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 ```
 
 - Each event hub message in Azure Event Hubs contains list of records.
+
 - Each record contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
+
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
 
 ## Data types mapping:
@@ -73,21 +83,22 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://ww
 To get the data types for event properties do the following:
 
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+
 2. Run the following query to get the data types mapping for each event:
  
-```
-{EventType}
-| getschema
-| project ColumnName, ColumnType 
-
-```
+   ```
+   {EventType}
+   | getschema
+   | project ColumnName, ColumnType 
+   ```
 
 - Here is an example for Device Info event: 
 
-![Image of event hub resource Id](images/machine-info-datatype-example.png)
+  ![Image of event hub resource Id](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
+- [Troubleshoot connectivity issues - Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide)
