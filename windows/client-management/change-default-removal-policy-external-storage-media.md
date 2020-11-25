@@ -4,10 +4,11 @@ description: In Windows 10, version 1809, the default removal policy for externa
 ms.prod: w10
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 12/13/2019
+ms.date: 11/25/2020
 ms.topic: article
 ms.custom: 
 - CI 111493
+- CI 125140
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
