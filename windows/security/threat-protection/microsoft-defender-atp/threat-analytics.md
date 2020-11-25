@@ -87,7 +87,7 @@ Go to the [**Analyst report** section](threat-analytics-analyst-reports.md) to r
 ### Review list of mitigations and the status of your devices
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
-- **Security updates**—deployment of security updates for Microsoft vulnerabilities on onboarded devices
+- **Security updates**—deployment of security updates or patches for vulnerabilities on onboarded devices
 - **Microsoft Defender Antivirus settings**
   - Security intelligence update version
   - Cloud-delivered protection  
