@@ -91,7 +91,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 - **Security updates**—deployment of security updates or patches for vulnerabilities
 - **Microsoft Defender Antivirus settings**
-  - Security intelligence update version
+  - Security intelligence version
   - Cloud-delivered protection  
   - Potentially unwanted application (PUA) protection
   - Real-time protection
