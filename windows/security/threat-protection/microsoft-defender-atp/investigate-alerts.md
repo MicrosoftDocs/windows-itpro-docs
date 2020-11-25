@@ -27,11 +27,11 @@ ms.date: 04/24/2018
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 
@@ -101,12 +101,12 @@ The **Artifact timeline** feature provides an additional view of the evidence th
 Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ## Related topics
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
-- [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
-- [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
-- [Investigate an IP address associated with a Microsoft Defender ATP alert](investigate-ip.md)
-- [Investigate a domain associated with a Microsoft Defender ATP alert](investigate-domain.md)
-- [Investigate a user account in Microsoft Defender ATP](investigate-user.md)
+- [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
+- [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
+- [Investigate a file associated with a Defender for Endpoint alert](investigate-files.md)
+- [Investigate devices in the Defender for Endpoint Devices list](investigate-machines.md)
+- [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
+- [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)
+- [Investigate a user account in Defender for Endpoint](investigate-user.md)
 
 

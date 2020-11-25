@@ -24,7 +24,7 @@ ms.date: 03/16/2020
 - Windows 10
 - Windows Server 2016 and above
 
-After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender Advanced Threat Protection (MDATP) Advanced Hunting feature.
+After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
 ## WDAC Events Overview
 
@@ -42,4 +42,4 @@ WDAC events are generated under two locations:
 | - | - |
 | [Understanding Application Control event IDs](event-id-explanations.md) | This topic explains the meaning of different WDAC event IDs. |
 | [Understanding Application Control event tags](event-tag-explanations.md) | This topic explains the meaning of different WDAC event tags. |
-| [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender ATP. |
+| [Query WDAC events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This topic covers how to view WDAC events centrally from all systems that are connected to Microsoft Defender for Endpoint. |

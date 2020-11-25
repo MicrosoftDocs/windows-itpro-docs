@@ -1,6 +1,6 @@
 ---
 title: List alerts API
-description: Learn how to use the List alerts API to retrieve a collection of alerts in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the List alerts API to retrieve a collection of alerts in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -21,9 +21,9 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
@@ -34,7 +34,7 @@ Retrieves a collection of Alerts.
 <br>```$top``` with max value of 10,000 
 <br>```$skip```
 <br>```$expand``` of ```evidence```
-<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
 ## Limitations
@@ -44,7 +44,7 @@ Retrieves a collection of Alerts.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -262,5 +262,5 @@ Here is an example of the response.
 ```
 
 
-## Related topics
-- [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+## See also
+- [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)

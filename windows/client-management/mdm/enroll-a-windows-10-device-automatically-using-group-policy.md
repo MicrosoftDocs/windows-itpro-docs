@@ -22,7 +22,7 @@ Requirements:
 - The enterprise has configured a mobile device management (MDM) service  
 - The enterprise AD must be [registered with Azure Active Directory (Azure AD)](azure-active-directory-integration-with-mdm.md)
 - The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
-- The minimum Windows Server version requirement is based on the Hybrid AAD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
+- The minimum Windows Server version requirement is based on the Hybrid Azure AD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
 
 > [!TIP]
 > For additional information, see the following topics:
@@ -30,7 +30,7 @@ Requirements:
 > - [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
 > - [Azure Active Directory integration with MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)
 
-The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
+The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD–registered.
 
 > [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/library/mt221945.aspx). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation. 
@@ -106,19 +106,23 @@ Requirements:
 
 2. Under **Best match**, click **Edit group policy** to launch it.
 
-3.  In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
+3. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
 
-    ![MDM policies](images/autoenrollment-mdm-policies.png)
+   ![MDM policies](images/autoenrollment-mdm-policies.png)
 
-4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** (support for Device Credential is coming) as the Selected Credential Type to use. User Credential enrolls Windows 10, version 1709 and later once an Intune licensed user logs into the device. Device Credential will enroll the device and then assign a user later, once support for this is available.
+4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use. 
 
-    ![MDM autoenrollment policy](images/autoenrollment-policy.png)
+   > [!NOTE]
+   > **Device Credential** Credential Type will also work, however, it is not yet supported for MDM solutions (including Intune). We don't recommend using this option until support is announced.
+
+   ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
 5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
 
     > [!NOTE]
     > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. 
-    > The default behavior for older releases is to revert to **User Credential**.
+    > The default behavior for older releases is to revert to **User Credential**. 
+    > **Device Credential** is not supported for enrollment type when you have a ConfigMgr Agent on your device. 
 
     When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
@@ -161,7 +165,7 @@ Requirements:
 
 Requirements:
 - AD-joined PC running Windows 10, version 1709 or later
-- Enterprise has MDM service already configured (with Intune or a third party service provider)
+- Enterprise has MDM service already configured (with Intune or a third-party service provider)
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
 
@@ -256,7 +260,7 @@ To collect Event Viewer logs:
     ![Outdated enrollment entries](images/auto-enrollment-outdated-enrollment-entries.png)
 
     By default, these entries are removed when the device is un-enrolled, but occasionally the registry key remains even after un-enrollment. In this case, `gpupdate /force` fails to initiate the auto-enrollment task and error code 2149056522 is displayed in the **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational** event log file under event ID 7016. 
-    A resolution to this issue is to remove the registry key manually. If you do not know which registry key to remove, go for the key which displays most entries as the screenshot above. All other keys will display less entries as shown in the following screenshot:
+    A resolution to this issue is to remove the registry key manually. If you do not know which registry key to remove, go for the key which displays most entries as the screenshot above. All other keys will display fewer entries as shown in the following screenshot:
 
     ![Manually deleted entries](images/auto-enrollment-activation-verification-less-entries.png)
 

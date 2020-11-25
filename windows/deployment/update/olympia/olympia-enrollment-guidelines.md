@@ -11,6 +11,7 @@ author: jaimeo
 ms.reviewer: 
 manager: laurawi
 keywords: insider, trial, enterprise, lab, corporation, test
+ms.custom: seo-marvel-apr2020
 ---
 
 # Olympia Corp
@@ -21,7 +22,7 @@ Windows Insider Lab for Enterprise is intended for Windows Insiders who want to 
 
 As an Olympia user, you will have an opportunity to: 
 
--   Use various enterprise features like Windows Information Protection (WIP), Advanced Threat Protection (ATP), windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
+-   Use various enterprise features like Windows Information Protection (WIP), Microsoft Defender for Office 365, Windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
 -   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
 -   Validate and test pre-release software in your environment.
 -   Provide feedback.
@@ -60,7 +61,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 3. Click **Connect** and enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
-    ![Set up a work or school account](images/1-3.png)
+    ![Entering account information when setting up a work or school account](images/1-3.png)
 
 4. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
 
@@ -96,10 +97,10 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     ![Settings -> Accounts](images/1-1.png)
 
 2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
-	
+    
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
-    ![Update your password](images/2-3.png)
+    ![Joining device to Azure AD]](images/2-3.png)
 
 4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
@@ -110,7 +111,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     > [!NOTE]
     > Passwords should contain 8-16 characters, including at least one special character or number.
 
-    ![Update your password](images/2-5.png)
+    ![Entering temporary password](images/2-5.png)
 
 6. When asked to make sure this is your organization, verify that the information is correct. If so, click **Join**.
 

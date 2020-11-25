@@ -24,11 +24,11 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
 - Step 1: Onboarding Windows devices to the service 
-- Step 2: Configuring Microsoft Defender ATP capabilities
+- Step 2: Configuring Defender for Endpoint capabilities
 
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:
 - **Creating a collection in Microsoft Endpoint Configuration Manager**
@@ -37,7 +37,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 >[!NOTE]
 >Only Windows devices are covered in this example deployment. 
 
-While Microsoft Defender ATP supports onboarding of various endpoints and tools, this article does not cover them. 
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
 For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
@@ -100,7 +100,7 @@ Follow the steps below to onboard endpoints using Microsoft Endpoint Configurati
 After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
 
 
-## Step 2: Configure Microsoft Defender ATP capabilities 
+## Step 2: Configure Microsoft Defender for Endpoint capabilities 
 This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
 
 - [**Endpoint detection and response**](#endpoint-detection-and-response)
@@ -120,11 +120,11 @@ Manager and deploy that policy to Windows 10 devices.
 
 2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
-    ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
+    ![Image of Microsoft Defender for Endpoint onboarding wizard](images/mdatp-onboarding-wizard.png)
 
 3. Select **Download package**.
 
-    ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
+    ![Image of Microsoft Defender for Endpoint onboarding wizard](images/mdatp-download-package.png)
 
 4. Save the package to an accessible location.
 5. In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
@@ -156,7 +156,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 15. Click **Close** when the Wizard completes.
 
-16.  In the Microsoft Endpoint Configuration Manager console, right-click the Microsoft Defender ATP policy you just created and select **Deploy**.
+16.  In the Microsoft Endpoint Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
 
      ![Image of configuration settings](images/configmgr-deploy.png)
 
@@ -166,7 +166,7 @@ Manager and deploy that policy to Windows 10 devices.
 
 
 #### Previous versions of Windows Client (Windows 7 and Windows 8.1)
-Follow the steps below to identify the Microsoft Defender ATP Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
+Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
 
 1. From a Microsoft Defender Security Center Portal, select **Settings > Onboarding**.
 
@@ -264,7 +264,7 @@ After completing this task, you now have successfully configured Windows
 Defender Antivirus.
 
 ### Attack surface reduction
-The attack surface reduction pillar of Microsoft Defender ATP includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
+The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
 Protection. 
 
 All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft Defender Security Center. The goal with a deployment is to step-by-step move security controls into block mode.

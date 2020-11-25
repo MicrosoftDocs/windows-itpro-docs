@@ -76,6 +76,8 @@ Communicating with Azure Active Directory uses the following URLs:
 - login.microsoftonline.com
 - login.windows.net
 - account.live.com
+- accountalt.azureedge.net
+- secure.aadcdn.microsoftonline-p.com
 
 If your environment uses Microsoft Intune, you need these additional URLs:
 - enrollment.manage.microsoft.com
@@ -144,7 +146,7 @@ Beginning with Windows 10, version 1709, Windows Hello for Business used as a sm
 The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket.  The process does not receive the PIN, but rather the ticket that grants them private key operations.  Windows 10 does not provide any Group Policy settings to adjust this caching.
 
 ## Can I disable the PIN while using Windows Hello for Business?
-No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurrence where you cannot authenticate with biometrics, you need a fall back mechanism that is not a password.  The PIN is the fall back mechanism.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
+No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurrence where you cannot authenticate with biometrics, you need a fallback mechanism that is not a password.  The PIN is the fallback mechanism.  Disabling or hiding the PIN credential provider will disable the use of biometrics.
 
 ## How are keys protected?
 Wherever possible, Windows Hello for Business takes advantage of trusted platform module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business does not require a TPM. Administrators can choose to allow key operations in software.
