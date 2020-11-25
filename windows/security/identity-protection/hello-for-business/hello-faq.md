@@ -76,6 +76,8 @@ Communicating with Azure Active Directory uses the following URLs:
 - login.microsoftonline.com
 - login.windows.net
 - account.live.com
+- accountalt.azureedge.net
+- secure.aadcdn.microsoftonline-p.com
 
 If your environment uses Microsoft Intune, you need these additional URLs:
 - enrollment.manage.microsoft.com

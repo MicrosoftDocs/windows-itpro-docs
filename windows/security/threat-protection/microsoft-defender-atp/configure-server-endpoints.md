@@ -152,7 +152,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 > - The Onboarding package for Windows Server 2019 through Microsoft Endpoint Configuration Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.
 
-Support for Windows Server, provide deeper insight into activities happening on the Windows server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well.
+Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
 1. Configure Defender for Endpoint onboarding settings on the Windows server. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
