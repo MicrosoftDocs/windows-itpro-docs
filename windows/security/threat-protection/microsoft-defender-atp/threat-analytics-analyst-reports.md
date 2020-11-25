@@ -46,7 +46,7 @@ Each section of the analyst report is designed to provide actionable information
 | Change log | The time the report was published and when significant changes were made to the report. |
 
 ## Apply additional mitigations
-Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Mitigations** tab.
+Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Mitigations** tab.
 
 In addition to these tracked mitigations, the analyst report also discusses mitigations that are _not_ dynamically monitored. Here are some examples of important mitigations that are not dynamically tracked:
 
