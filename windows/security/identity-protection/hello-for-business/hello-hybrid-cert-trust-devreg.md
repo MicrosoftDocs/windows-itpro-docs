@@ -136,7 +136,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt. Then, run the following commands:
 
    ```PowerShell
-   Import-module activedirectory`
+   Import-module activedirectory
    Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>"
    ```
 
@@ -178,14 +178,14 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
    ```PowerShell
    $aadAdminCred = Get-Credential
-  ```
+   ```
 
 ![Device Registration](images/hybridct/device7.png)
 
 3. Run the following PowerShell command
 
    ```PowerShell
-   Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred`
+   Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred
    ```
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
@@ -561,7 +561,7 @@ Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAut
 
 #### Check your configuration
 
-For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work
+For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work:
 
 - object of type ms-DS-DeviceContainer at CN=RegisteredDevices,DC=&lt;domain&gt;
     - read access to the AD FS service account
