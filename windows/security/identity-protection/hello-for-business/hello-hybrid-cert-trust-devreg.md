@@ -58,7 +58,7 @@ To do this, follow the **Configure device settings** steps under [Setting up Azu
 
 ## Configure Active Directory to support Azure device synchronization
 
-Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema
+Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema.
 
 ### Upgrading Active Directory to the Windows Server 2016 or later Schema
 
@@ -135,11 +135,11 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt. Then, run the following commands:
 
-   ```powershell
-   Import-module activedirectory
+   ```PowerShell
+   Import-module activedirectory`
    Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>"
    ```
-   
+
 3. On the pop-up window click **Yes**.
 
 > [!NOTE]
@@ -165,7 +165,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 1. Open Windows PowerShell and execute the following:
 
-   ```powershell
+   ```PowerShell
    Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1"
    ```
 
@@ -176,16 +176,16 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 2. Provide your Azure AD global administrator credentials
 
-   ```powershell
-   $aadAdminCred = Get-Credential`
-   ```
+   ```PowerShell
+   $aadAdminCred = Get-Credential
+  ```
 
 ![Device Registration](images/hybridct/device7.png)
 
 3. Run the following PowerShell command
 
-   ```powershell
-   Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred
+   ```PowerShell
+   Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred`
    ```
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
@@ -198,8 +198,8 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
 1. Open Windows PowerShell and execute the following:
 
-   ```powershell
-   Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name]`
+   ```PowerShell
+   Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name]
    ```
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format
@@ -266,6 +266,7 @@ The definition helps you to verify whether the values are present or if you need
 
 **`http://schemas.microsoft.com/ws/2012/01/accounttype`** - This claim must contain a value of **DJ**, which identifies the device as a domain-joined computer. In AD FS, you can add an issuance transform rule that looks like this:
 
+    ```aspx
     @RuleName = "Issue account type for domain-joined computers"
     c:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid",
@@ -276,11 +277,13 @@ The definition helps you to verify whether the values are present or if you need
         Type = "http://schemas.microsoft.com/ws/2012/01/accounttype",
         Value = "DJ"
     );
+    ```
 
 #### Issue objectGUID of the computer account on-premises
 
 **`http://schemas.microsoft.com/identity/claims/onpremobjectguid`** - This claim must contain the **objectGUID** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
+    ```aspx
     @RuleName = "Issue object GUID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid",
@@ -298,11 +301,13 @@ The definition helps you to verify whether the values are present or if you need
         query = ";objectguid;{0}",
         param = c2.Value
     );
+    ```
 
 #### Issue objectSID of the computer account on-premises
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
+    ```aspx
     @RuleName = "Issue objectSID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid",
@@ -315,11 +320,13 @@ The definition helps you to verify whether the values are present or if you need
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);
+    ```
 
 #### Issue issuerID for computer when multiple verified domain names in Azure AD
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
+    ```aspx
     @RuleName = "Issue account type with the value User when it is not a computer"
 
     NOT EXISTS(
@@ -361,6 +368,7 @@ The definition helps you to verify whether the values are present or if you need
         Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid",
         Value = "http://<verified-domain-name>/adfs/services/trust/"
     );
+    ```
 
 
 In the claim above,
@@ -375,6 +383,7 @@ To get a list of your verified company domains, you can use the [Get-MsolDomain]
 
 **`http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
 
+    ```aspx
     @RuleName = "Issue ImmutableID for computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid",
@@ -392,11 +401,13 @@ To get a list of your verified company domains, you can use the [Get-MsolDomain]
         query = ";objectguid;{0}",
         param = c2.Value
     );
+    ```
 
 #### Helper script to create the AD FS issuance transform rules
 
 The following script helps you with the creation of the issuance transform rules described above.
 
+    ```aspx
     $multipleVerifiedDomainNames = $false
     $immutableIDAlreadyIssuedforUsers = $false
     $oneOfVerifiedDomainNames = 'example.com'   # Replace example.com with one of your verified domains
@@ -515,6 +526,7 @@ The following script helps you with the creation of the issuance transform rules
     $crSet = New-ADFSClaimRuleSet -ClaimRule $updatedRules
 
     Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $crSet.ClaimRulesString
+    ```
 
 
 #### Remarks
@@ -523,10 +535,19 @@ The following script helps you with the creation of the issuance transform rules
 
 - If you have multiple verified domain names (as shown in the Azure AD portal or via the Get-MsolDomains cmdlet), set the value of **$multipleVerifiedDomainNames** in the script to **$true**. Also make sure that you remove any existing issuerID claim that might have been created by Azure AD Connect or via other means. Here is an example for this rule:
 
-```
-c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
-=> issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/"));
-```
+    ```aspx
+    c:[
+        Type == "http://schemas.xmlsoap.org/claims/UPN"
+    ]
+    => issue(
+        Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid",
+        Value = regexreplace(
+        c.Value,
+        ".+@(?<domain>.+)",
+        "http://${domain}/adfs/services/trust/"
+        )
+    );
+    ```
 
 - If you have already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.
 
@@ -534,13 +555,13 @@ c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
 
 Using an elevated PowerShell command window, configure AD FS policy by executing the following command
 
-```powershell
+```PowerShell
 Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod SignedToken
 ```
 
 #### Check your configuration
 
-For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work:
+For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work
 
 - object of type ms-DS-DeviceContainer at CN=RegisteredDevices,DC=&lt;domain&gt;
     - read access to the AD FS service account
