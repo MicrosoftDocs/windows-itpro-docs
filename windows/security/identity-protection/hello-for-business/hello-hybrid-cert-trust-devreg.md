@@ -561,7 +561,7 @@ Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAut
 
 #### Check your configuration
 
-For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work:
+For your reference, below is a comprehensive list of the AD DS devices, containers, and permissions required for device write-back and authentication to work:
 
 - object of type ms-DS-DeviceContainer at CN=RegisteredDevices,DC=&lt;domain&gt;
     - read access to the AD FS service account
