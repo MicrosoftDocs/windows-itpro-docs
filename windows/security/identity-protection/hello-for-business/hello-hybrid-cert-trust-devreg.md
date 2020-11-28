@@ -85,7 +85,7 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO. Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
-Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
+Sign in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
 1. Open an elevated command prompt.
 2. Type `cd /d x:\support\adprep` where *x* is the drive letter of the DVD or mounted ISO.
