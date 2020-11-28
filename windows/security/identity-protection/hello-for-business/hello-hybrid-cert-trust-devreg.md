@@ -211,7 +211,7 @@ The above command creates the following objects for device write back to AD DS, 
 
 ### Enable Device Write Back in Azure AD Connect
 
-If you have not done so before, enable device write back in Azure AD Connect by running the wizard a second time and selecting **"Customize Synchronization Options"**, then checking the box for device write back and selecting the forest in which you have run the above cmdlets
+If you have not done so before, enable device write back in Azure AD Connect by running the wizard a second time and selecting **"Customize Synchronization Options"**, then checking the box for device write back and selecting the forest in which you have run the above cmdlets.
 
 ## Configure AD FS to use Azure registered devices
 
