@@ -553,7 +553,7 @@ The following script helps you with the creation of the issuance transform rules
 
 #### Configure Device Authentication in AD FS
 
-Using an elevated PowerShell command window, configure AD FS policy by executing the following command
+Using an elevated PowerShell command window, configure AD FS policy by executing the following command:
 
 ```PowerShell
 Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod SignedToken
