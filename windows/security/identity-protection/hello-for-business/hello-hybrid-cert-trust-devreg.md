@@ -204,7 +204,7 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format.
 
-The above command creates the following objects for device write back to AD DS, if they do not exist already, and allows access to the specified AD connector account name
+The above command creates the following objects for device write back to AD DS, if they do not exist already, and allows access to the specified AD connector account name:
 
 - RegisteredDevices container in the AD domain partition
 - Device Registration Service container and object under Configuration --> Services --> Device Registration Configuration
