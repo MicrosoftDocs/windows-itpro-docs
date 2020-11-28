@@ -182,7 +182,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 ![Device Registration](images/hybridct/device7.png)
 
-3. Run the following PowerShell command
+3. Run the following PowerShell command:
 
    ```PowerShell
    Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred
