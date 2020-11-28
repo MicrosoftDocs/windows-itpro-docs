@@ -143,7 +143,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 3. On the pop-up window click **Yes**.
 
 > [!NOTE]
-> If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
+> If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$".
 
 ![Device Registration](images/hybridct/device3.png)
 
