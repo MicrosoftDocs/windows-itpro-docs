@@ -99,7 +99,7 @@ Sign in to the domain controller hosting the schema master operational role usin
 
 ### Set up Active Directory Federation Services
 
-If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
+If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) prior to designing and deploying your federation service.
 Review the [AD FS Design guide](https://docs.microsoft.com/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
 
 Once you have your AD FS design ready, review [Deploying a Federation Server farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment.
