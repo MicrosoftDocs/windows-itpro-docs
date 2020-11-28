@@ -202,7 +202,7 @@ To ensure AD DS objects and containers are in the correct state for write back o
    Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name]
    ```
 
-Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format
+Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format.
 
 The above command creates the following objects for device write back to AD DS, if they do not exist already, and allows access to the specified AD connector account name
 
