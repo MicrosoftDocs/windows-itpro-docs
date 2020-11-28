@@ -97,7 +97,7 @@ Sign in to the domain controller hosting the schema master operational role usin
 > If you installed Azure AD Connect prior to upgrading the schema, you will need to re-run the Azure AD Connect installation and refresh the on-premises AD schema to ensure the synchronization rule for msDS-KeyCredentialLink is configured.
 
 
-### Setup Active Directory Federation Services
+### Set up Active Directory Federation Services
 
 If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
 Review the [AD FS Design guide](https://docs.microsoft.com/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
