@@ -174,7 +174,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 ![Device Registration](images/hybridct/device6.png)
 
-2. Provide your Azure AD global administrator credentials
+2. Provide your Azure AD global administrator credentials.
 
    ```PowerShell
    $aadAdminCred = Get-Credential
