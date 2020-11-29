@@ -65,6 +65,4 @@ To see the security of the device, select the **Open device page** button on the
 
 ## Reporting delays
 
-The following delay may occur when monitoring device control reports:
-
-- The device control report can have a 12-hour delay from the time a media connection occurs to the time the event is reflected in the card or in the domain list.
+The device control report can have a 12-hour delay from the time a media connection occurs to the time the event is reflected in the card or in the domain list.
