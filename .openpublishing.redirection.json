@@ -16221,11 +16221,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus",
       "redirect_document_id": true
