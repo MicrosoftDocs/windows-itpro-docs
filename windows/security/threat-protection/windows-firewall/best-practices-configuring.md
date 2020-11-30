@@ -1,9 +1,7 @@
 ---
 title: Best practices for configuring Windows Defender Firewall
 description: Learn about best practices for configuring Windows Defender Firewall
-
 keywords: firewall, best practices, security, network security, network, rules, filters,
-
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
