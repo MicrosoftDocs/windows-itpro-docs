@@ -27,6 +27,14 @@ ms.topic: conceptual
 > [!NOTE]
 > Defender for Endpoint for iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
+> [!IMPORTANT]
+> **PUBLIC PREVIEW EDITION**
+> 
+> This documentation is for a pre-release solution. The guidelines and the solution are subject to change between now and its general availability.
+> 
+> As with any pre-release solution, remember to exercise caution when determining the target population for your deployments.
+
+
 ## Configure compliance policy against jailbroken devices
 
 To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you setup the following compliance policy on Intune.
