@@ -2381,7 +2381,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
+      "source_path": "windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-windows-microsoft-antivirus",
       "redirect_document_id": true
     },
@@ -16218,11 +16218,6 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-antivirus/deployment-vdi-windows-defender-antivirus.md",
       "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md",
-      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus",
       "redirect_document_id": true
     },
     {
