@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 10/08/2020
+ms.date: 11/30/2020
 ---
 
 # Reduce attack surfaces with attack surface reduction rules
@@ -26,21 +26,35 @@ ms.date: 10/08/2020
 
 * [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Your attack surface is the total number of places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means offering attackers fewer ways to perform attacks.
+## Overview
 
-Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
+Your attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks.
 
-- Launching executable files and scripts that attempt to download or run files
-- Running obfuscated or otherwise suspicious scripts
-- Performing behaviors that apps don't usually initiate during normal day-to-day work
+Attack surface reduction rules target certain software behaviors that are often abused by attackers. Such behaviors include:
 
-Such behaviors are sometimes seen in legitimate applications; however, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors and help keep your organization safe.
+- Launching executable files and scripts that attempt to download or run files;
+- Running obfuscated or otherwise suspicious scripts; and 
+- Performing behaviors that apps don't usually initiate during normal day-to-day work.
+
+Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+
+For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+
+## Assess rule impact before deployment  
+
+You can assess how an attack surface reduction rule might impact your network by opening the security recommendation for that rule in [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/#tvm). 
+
+:::image type="content" source="images/asrrecommendation.png" alt-text="Security recommendation for ASR rule":::
+
+In the recommendation details pane, check the user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+
+## Audit mode for evaluation
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
+## Notifications when a rule is triggered
 
-For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
 ## Attack surface reduction features across Windows versions
 
@@ -54,7 +68,7 @@ To use the entire feature-set of attack surface reduction rules, you need a [Win
 
 ## Review attack surface reduction events in the Microsoft Defender Security Center
 
-Defender for Endpoint provides detailed reporting for events and blocks, as part of its alert investigation scenarios.
+Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
 You can query Defender for Endpoint data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
