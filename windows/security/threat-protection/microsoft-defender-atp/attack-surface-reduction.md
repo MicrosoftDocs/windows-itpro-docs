@@ -48,11 +48,11 @@ You can assess how an attack surface reduction rule might impact your network by
 
 In the recommendation details pane, check the user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
 
-## Audit mode
+## Audit mode for evaluation
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-## Notifications
+## Notifications when a rule is triggered
 
 Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
