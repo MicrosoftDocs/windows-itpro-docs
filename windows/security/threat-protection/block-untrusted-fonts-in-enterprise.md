@@ -1,6 +1,6 @@
 ---
 title: Block untrusted fonts in an enterprise (Windows 10)
-description: To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature.
+description: To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we've created the Blocking Untrusted Fonts feature.
 ms.assetid: a3354c8e-4208-4be6-bc19-56a572c361b4
 ms.reviewer: 
 manager: dansimp
@@ -31,11 +31,14 @@ Blocking untrusted fonts helps improve your network and employee protection agai
 ## How does this feature work?
 There are 3 ways to use this feature:
 
--   **On.** Helps stop any font processed using GDI from loading outside of the `%windir%/Fonts` directory. It also turns on event logging.
+- **On.** Helps stop any font processed using GDI from loading outside of the `%windir%/Fonts` directory. It also turns on event logging.
 
--   **Audit.** Turns on event logging, but doesn’t block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.<p>**Note**<br>If you aren’t quite ready to deploy this feature into your organization, you can run it in Audit mode to see if not loading untrusted fonts causes any usability or compatibility issues.
+- **Audit.** Turns on event logging, but doesn’t block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.
 
--   **Exclude apps to load untrusted fonts.** You can exclude specific apps, allowing them to load untrusted fonts, even while this feature is turned on. For instructions, see [Fix apps having problems because of blocked fonts](#fix-apps-having-problems-because-of-blocked-fonts).
+  > [!NOTE]
+  > If you aren’t quite ready to deploy this feature into your organization, you can run it in Audit mode to see if not loading untrusted fonts causes any usability or compatibility issues.
+
+- **Exclude apps to load untrusted fonts.** You can exclude specific apps, allowing them to load untrusted fonts, even while this feature is turned on. For instructions, see [Fix apps having problems because of blocked fonts](#fix-apps-having-problems-because-of-blocked-fonts).
 
 ## Potential reductions in functionality
 After you turn this feature on, your employees might experience reduced functionality when:
@@ -56,7 +59,7 @@ Use Group Policy or the registry to turn this feature on, off, or to use audit m
 **To turn on and use the Blocking Untrusted Fonts feature through Group Policy**
 1. Open the Group Policy editor (gpedit.msc) and go to `Computer Configuration\Administrative Templates\System\Mitigation Options\Untrusted Font Blocking`.
 
-2. Click **Enabled** to turn the feature on, and then click one of the following **Migitation Options**:
+2. Click **Enabled** to turn the feature on, and then click one of the following **Mitigation Options**:
 
     - **Block untrusted fonts and log events.** Turns the feature on, blocking untrusted fonts and logging installation attempts to the event log. 
 
@@ -139,7 +142,7 @@ After you figure out the problematic fonts, you can try to fix your apps in 2 wa
 
 1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`.<br><br>For example, if you want to exclude Microsoft Word processes, you’d use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
 
-2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using the steps in the [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature) section of this topic.
+2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using the steps in [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature), earlier in this article.
 
  
 ## Related content
