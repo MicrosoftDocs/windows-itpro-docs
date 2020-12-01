@@ -1740,6 +1740,32 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Programs policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-nodefaultprograms" id="admx-programs-nodefaultprograms">ADMX_Programs/NoDefaultPrograms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-nogetprograms" id="admx-programs-nogetprograms">ADMX_Programs/NoGetPrograms</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-noinstalledupdates" id="admx-programs-noinstalledupdates">ADMX_Programs/NoInstalledUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-noprogramsandfeatures" id="admx-programs-noprogramsandfeatures">ADMX_Programs/NoProgramsAndFeatures</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-noprogramscpl" id="admx-programs-noprogramscpl">ADMX_Programs/NoProgramsCPL</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-nowindowsfeatures" id="admx-programs-nowindowsfeatures">ADMX_Programs/NoWindowsFeatures</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-programs.md#admx-programs-nowindowsmarketplace" id="admx-programs-nowindowsmarketplace">ADMX_Programs/NoWindowsMarketplace</a>
+  </dd>
+</dl>
+
 ### ADMX_Reliability policies
 
 <dl>
@@ -1845,6 +1871,38 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-admx-servicing.md#admx-servicing-servicing" id="admx-servicing-servicing">ADMX_Servicing/Servicing</a>
+  </dd>
+</dl>
+
+### ADMX_SettingSync policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disableappsyncsettingsync" id="admx-settingsync-disableappsyncsettingsync">ADMX_SettingSync/DisableAppSyncSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disableapplicationsettingsync" id="admx-settingsync-disableapplicationsettingsync">ADMX_SettingSync/DisableApplicationSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablecredentialssettingsync" id="admx-settingsync-disablecredentialssettingsync">ADMX_SettingSync/DisableCredentialsSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disabledesktopthemesettingsync" id="admx-settingsync-disabledesktopthemesettingsync">ADMX_SettingSync/DisableDesktopThemeSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablepersonalizationsettingsync" id="admx-settingsync-disablepersonalizationsettingsync">ADMX_SettingSync/DisablePersonalizationSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablesettingsync" id="admx-settingsync-disablesettingsync">ADMX_SettingSync/DisableSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablestartlayoutsettingsync" id="admx-settingsync-disablestartlayoutsettingsync">ADMX_SettingSync/DisableStartLayoutSettingSync</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablesynconpaidnetwork" id="admx-settingsync-disablesynconpaidnetwork">ADMX_SettingSync/DisableSyncOnPaidNetwork</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-settingsync.md#admx-settingsync-disablewindowssettingsync" id="admx-settingsync-disablewindowssettingsync">ADMX_SettingSync/DisableWindowsSettingSync</a>
   </dd>
 </dl>
 
