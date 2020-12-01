@@ -122,7 +122,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 6. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Select **OK**.
 
-7. Deploy your Group Policy object as you normally do.
+7. Deploy your Group Policy object as you usually do.
 
 #### Use PowerShell cmdlets to configure PUA protection
 
@@ -161,7 +161,9 @@ See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for d
 
 ### Allow-listing apps
 
-Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Microsoft Defender Antivirus.
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. 
+
+For more information, see [Recommended antivirus exclusions for Configuration Manager site servers, site systems, and clients](https://docs.microsoft.com/troubleshoot/mem/configmgr/recommended-antivirus-exclusions#exclusions).
 
 ## Related articles
 
