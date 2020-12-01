@@ -14,7 +14,7 @@ ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/1/2020  
+ms.date: 12/1/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
