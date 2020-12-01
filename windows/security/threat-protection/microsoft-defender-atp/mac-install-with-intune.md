@@ -1,6 +1,6 @@
 ---
 title: Intune-based deployment for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac, using Microsoft Intune.
+description: Install Microsoft Defender for Endpoint for Mac, using Microsoft Intune.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -42,7 +42,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint for Mac throu
 
 ## Prerequisites and system requirements
 
-Before you get started, see [the main MIcrosoft Defender for EndpointP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender for Endpoint for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Overview
 
