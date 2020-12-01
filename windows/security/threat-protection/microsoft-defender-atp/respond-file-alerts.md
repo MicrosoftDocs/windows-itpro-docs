@@ -133,6 +133,9 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > 
 > Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
+> [!NOTE]
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically this is a result of a temporary log on to a system or shared folder and the access tokens expired.
+
 ## Add indicator to block or allow a file
 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
