@@ -57,17 +57,17 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 3. Under the **Security** section, turn on **Block potentially unwanted apps**.
 
 > [!TIP]
-> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
+> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our [Microsoft Defender SmartScreen demo pages](https://demo.smartscreen.msft.net/).
 
-### Blocking URLs with Windows Defender SmartScreen
+### Blocking URLs with Microsoft Defender SmartScreen
 
-In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs.
+In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen will protect you from PUA-associated URLs.
 
-Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Windows Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
+Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
-[configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
+[configure Microsoft Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.
 
-Although Microsoft Defender for Endpoint has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender for Endpoint portal, Windows Defender SmartScreen will respect the new settings.
+Although Microsoft Defender for Endpoint has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen will respect the new settings.
 
 ## Microsoft Defender Antivirus
 
