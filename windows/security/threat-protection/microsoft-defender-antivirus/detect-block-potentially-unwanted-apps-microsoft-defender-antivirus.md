@@ -84,7 +84,7 @@ The notification appears in the usual [quarantine list within the Windows Securi
 
 ### Configure PUA protection in Microsoft Defender Antivirus
 
-You can enable PUA protection with [Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps).
+You can enable PUA protection with [Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps&preserve-view=true).
 
 You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them. The detections will be captured in the Windows event log.
 
