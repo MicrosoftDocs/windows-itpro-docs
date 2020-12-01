@@ -128,7 +128,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 	125  CrashPlanService 164
     ```
      
-        To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).                
+    To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).                
     
     >[!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
