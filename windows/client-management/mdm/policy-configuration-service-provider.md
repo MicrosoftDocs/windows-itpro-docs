@@ -377,6 +377,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DataCollection policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-datacollection.md#admx-datacollection-commercialidpolicy" id="admx-datacollection-commercialidpolicy">ADMX_DataCollection/CommercialIdPolicy</a>
+  </dd>
+</dl>
+
 ### ADMX_DeviceInstallation policies  
 
 <dl>
@@ -692,6 +700,74 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-eventforwarding.md#admx_eventforwarding-subscriptionmanager" id="admx_eventforwarding-subscriptionmanager">ADMX_EventForwarding/SubscriptionManager</a>
+  </dd>
+</dl>
+
+### ADMX_EventLog policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logenabled" id="admx-eventlog-channel-logenabled">ADMX_EventLog/Channel_LogEnabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logfilepath-1" id="admx-eventlog-channel-logfilepath-1">ADMX_EventLog/Channel_LogFilePath_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logfilepath-2" id="admx-eventlog-channel-logfilepath-2">ADMX_EventLog/Channel_LogFilePath_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logfilepath-3" id="admx-eventlog-channel-logfilepath-3">ADMX_EventLog/Channel_LogFilePath_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logfilepath-4" id="admx-eventlog-channel-logfilepath-4">ADMX_EventLog/Channel_LogFilePath_4</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-logmaxsize-3" id="admx-eventlog-channel-logmaxsize-3">ADMX_EventLog/Channel_LogMaxSize_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-autobackup-1" id="admx-eventlog-channel-log-autobackup-1">ADMX_EventLog/Channel_Log_AutoBackup_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-autobackup-2" id="admx-eventlog-channel-log-autobackup-2">ADMX_EventLog/Channel_Log_AutoBackup_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-autobackup-3" id="admx-eventlog-channel-log-autobackup-3">ADMX_EventLog/Channel_Log_AutoBackup_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-autobackup-4" id="admx-eventlog-channel-log-autobackup-4">ADMX_EventLog/Channel_Log_AutoBackup_4</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-1" id="admx-eventlog-channel-log-filelogaccess-1">ADMX_EventLog/Channel_Log_FileLogAccess_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-2" id="admx-eventlog-channel-log-filelogaccess-2">ADMX_EventLog/Channel_Log_FileLogAccess_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-3" id="admx-eventlog-channel-log-filelogaccess-3">ADMX_EventLog/Channel_Log_FileLogAccess_3</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-4" id="admx-eventlog-channel-log-filelogaccess-4">ADMX_EventLog/Channel_Log_FileLogAccess_4</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-5" id="admx-eventlog-channel-log-filelogaccess-5">ADMX_EventLog/Channel_Log_FileLogAccess_5</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-6" id="admx-eventlog-channel-log-filelogaccess-6">ADMX_EventLog/Channel_Log_FileLogAccess_6</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-7" id="admx-eventlog-channel-log-filelogaccess-7">ADMX_EventLog/Channel_Log_FileLogAccess_7</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-filelogaccess-8" id="admx-eventlog-channel-log-filelogaccess-8">ADMX_EventLog/Channel_Log_FileLogAccess_8</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-2" id="admx-eventlog-channel-log-retention-2">ADMX_EventLog/Channel_Log_Retention_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-3" id="admx-eventlog-channel-log-retention-3">ADMX_EventLog/Channel_Log_Retention_3</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-4" id="admx-eventlog-channel-log-retention-4">ADMX_EventLog/Channel_Log_Retention_4</a>
   </dd>
 </dl>
 
