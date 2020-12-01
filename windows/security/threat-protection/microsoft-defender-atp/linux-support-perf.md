@@ -110,16 +110,12 @@ The following steps can be used to troubleshoot and mitigate these issues:
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-    The output of the above command displays all the processes and their associated scan activity.
-
-    To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
-    
-    The output is list of the top contributors to the performance issues. The 1st column is the process identifier (PID), the 2nd column is te process name, and the last column is the number of scanned files, sorted by impact.
+      The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is te process name, and the last column is the number of scanned files, sorted by impact.
     
     For example, the output of the command will be something like the below: 
 
     ```Output
-    mavel@mavel-mac:/Users/mavel > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+    ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
 	27432 None 76703
 	73467 actool     1249
 	73914 xcodebuild 1081
@@ -131,11 +127,11 @@ The following steps can be used to troubleshoot and mitigate these issues:
 	4764 None 228
 	125  CrashPlanService 164
     ```
- 
-                
+     
+        To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).                
     
->[!NOTE]
-> The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
+    >[!NOTE]
+    > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
 5. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
