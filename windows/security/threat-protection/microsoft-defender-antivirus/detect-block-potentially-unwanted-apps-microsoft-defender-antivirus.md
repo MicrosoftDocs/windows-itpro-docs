@@ -53,8 +53,8 @@ The [new Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-kno
 Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.
 
 1. Select the ellipses, and then choose **Settings**.
-2. Select **Privacy and services**.
-3. Under the **Services** section, turn on **Block potentially unwanted apps**.
+2. Select **Privacy, search, and services**.
+3. Under the **Security** section, turn on **Block potentially unwanted apps**.
 
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
