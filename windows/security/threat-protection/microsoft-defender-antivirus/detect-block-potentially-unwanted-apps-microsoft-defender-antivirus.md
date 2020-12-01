@@ -37,7 +37,8 @@ Here are some examples:
 - **Bundling software** that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
 - **Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
-For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
+> [!TIP]
+> For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
 
 Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
 
@@ -45,7 +46,7 @@ PUA protection is supported on Windows 10, Windows Server 2019, and Windows Serv
 
 ## Microsoft Edge
 
-The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
+The [new Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea), which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
 
 ### Enable PUA protection in Chromium-based Microsoft Edge
 
