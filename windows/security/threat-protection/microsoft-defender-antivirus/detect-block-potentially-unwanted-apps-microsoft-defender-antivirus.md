@@ -73,7 +73,7 @@ Although Microsoft Defender for Endpoint has its own block list, based upon a da
 The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.
 
 > [!NOTE]
-> This feature is only available in Windows 10.
+> This feature is available in Windows 10, Windows Server 2016 and Windows Server 2019.
 
 Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
