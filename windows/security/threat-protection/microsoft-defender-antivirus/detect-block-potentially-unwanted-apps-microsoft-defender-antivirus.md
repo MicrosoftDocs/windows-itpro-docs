@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date:
+ms.date: 11/30/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -31,23 +31,23 @@ manager: dansimp
 
 Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
 
-For example:
+Here are some examples:
 
-* **Advertising software**: Software that displays advertisements or promotions, including software that inserts advertisements to webpages.
-* **Bundling software**: Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
-* **Evasion software**: Software that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
+- **Advertising software** that displays advertisements or promotions, including software that inserts advertisements to webpages.
+- **Bundling software** that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
+- **Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
 
 Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
 
-## How it works
+PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.
 
-### Microsoft Edge
+## Microsoft Edge
 
 The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
 
-#### Enable PUA protection in Chromium-based Microsoft Edge
+### Enable PUA protection in Chromium-based Microsoft Edge
 
 Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.
 
@@ -58,7 +58,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
 
-#### Blocking URLs with Windows Defender SmartScreen
+### Blocking URLs with Windows Defender SmartScreen
 
 In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs.
 
@@ -68,7 +68,7 @@ Defender SmartScreen available, including [one for blocking PUA](https://docs.mi
 
 Although Microsoft Defender for Endpoint has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md) in the Microsoft Defender for Endpoint portal, Windows Defender SmartScreen will respect the new settings.
 
-### Microsoft Defender Antivirus
+## Microsoft Defender Antivirus
 
 The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.
 
@@ -81,7 +81,7 @@ When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a
 
 The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md#detection-history).
 
-#### Configure PUA protection in Microsoft Defender Antivirus
+### Configure PUA protection in Microsoft Defender Antivirus
 
 You can enable PUA protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
@@ -92,11 +92,11 @@ You can also use the PUA audit mode to detect PUAs without blocking them. The de
 
 PUA audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
-##### Use Intune to configure PUA protection
+#### Use Intune to configure PUA protection
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
-##### Use Configuration Manager to configure PUA protection
+#### Use Configuration Manager to configure PUA protection
 
 PUA protection is enabled by default in the Microsoft Endpoint Configuration Manager (Current Branch).
 
@@ -107,7 +107,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 > [!NOTE]
 > PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
 
-##### Use Group Policy to configure PUA protection
+#### Use Group Policy to configure PUA protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and select **Edit**.
 
@@ -121,23 +121,23 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 6. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Select **OK**.
 
-##### Use PowerShell cmdlets to configure PUA protection
+#### Use PowerShell cmdlets to configure PUA protection
 
-###### To enable PUA protection
+##### To enable PUA protection
 
 ```PowerShell
 Set-MpPreference -PUAProtection enable
 ```
 Setting the value for this cmdlet to `Enabled` will turn the feature on if it has been disabled.
 
-###### To set PUA protection to audit mode
+##### To set PUA protection to audit mode
 
 ```PowerShell
 Set-MpPreference -PUAProtection auditmode
 ```
 Setting `AuditMode` will detect PUAs without blocking them.
 
-###### To disable PUA protection
+##### To disable PUA protection
 
 We recommend keeping PUA protection turned on. However, you can turn it off by using the following cmdlet:
 
@@ -148,7 +148,7 @@ Setting the value for this cmdlet to `Disabled` will turn the feature off if it 
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-#### View PUA events
+### View PUA events
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Configuration Manager or in Intune.
 
@@ -156,7 +156,7 @@ You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-#### Allow-listing apps
+### Allow-listing apps
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Microsoft Defender Antivirus.
 
