@@ -34,7 +34,7 @@ The requirements are separated into different categories:
 Update Compliance has a number of policies that must be appropriately configured in order for devices to be processed by Microsoft and visible in Update Compliance. They are enumerated below, separated by whether the policies will be configured via [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) or Group Policy. For both tables:
 
 - **Policy** corresponds to the location and name of the policy.
-- **Value** Indicates what value the policy must be set to. Update Compliance requires *at least* Basic (or Required) diagnosttic data, but can function off Enhanced or Full (or Optional).
+- **Value** Indicates what value the policy must be set to. Update Compliance requires *at least* Basic (or Required) diagnostic data, but can function off Enhanced or Full (or Optional).
 - **Function** details why the policy is required and what function it serves for Update Compliance. It will also detail a minimum version the policy is required, if any.
 
 ### Mobile Device Management policies

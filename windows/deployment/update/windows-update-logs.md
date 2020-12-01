@@ -113,7 +113,7 @@ Search for and identify the components that are associated with the IDs. Differe
 
 ##### Update ID and revision number 
 There are different identifiers for the same update in different contexts. It's important to know the identifier schemes. 
-- Update ID: A GUID (indicated in the previous screen shot) that's assigned to a given update at publication time 
+- Update ID: A GUID (indicated in the previous screenshot) that's assigned to a given update at publication time 
 - Revision number: A number incremented every time that a given update (that has a given update ID) is modified and republished on a service 
 - Revision numbers are reused from one update to another (not a unique identifier). 
 - The update ID and revision number are often shown together as "{GUID}.revision." 
