@@ -50,14 +50,14 @@ To have your company listed as a partner in the in-product partner page, you wil
 4. Link to the landing page for the customer to complete the integration or blog post that will include sufficient information for customers. Any press release including the Microsoft Defender ATP product name should be reviewed by the marketing and engineering teams. Wait for at least 10 days for the review process to be done.
 5.	If you use a multi-tenant Azure AD approach, we will need the Azure AD application name to track usage of the application.
 6. Include the User-Agent field in each API call made to Microsoft Defender for Endpoint public set of APIs or Graph Security APIs. This will be used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
-    Follow these steps:
-    1.	Identify a name adhering to the following nomenclature that includes your company name and the Microsoft Defender ATP-integrated product with the version of the product that includes this integration. 
-      - ISV Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{Version}`
-      - Security partner Nomenclature: `MdatpPartner-{CompanyName}-{ProductName}/{TenantID}` 
 
-    2.	Set the User-Agent field in each HTTP request header to the name based on the above nomenclature. 
-    For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43). For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
+   	- Set the User-Agent field in each HTTP request header to the name based on the Following nomenclature.
 
+    - `MsdePartner-{CompanyName}-{ProductName}/{Version}`
+    
+    - For example, User-Agent: `MdatpPartner-Contoso-ContosoCognito/1.0.0`
+    
+    - For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 
 Partnerships with Microsoft Defender for Endpoint help our mutual customers to further streamline, integrate, and orchestrate defenses. We are happy that you chose to become a Microsoft Defender for Endpoint partner and to achieve our common goal of effectively protecting customers and their assets by preventing and responding to modern threats together.
 
