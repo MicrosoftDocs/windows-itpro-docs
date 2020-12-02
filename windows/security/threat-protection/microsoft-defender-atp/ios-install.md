@@ -46,7 +46,7 @@ Deploy Defender for Endpoint for iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-1.png)
 
-1. On the Add app page, click on **Search the App Store** and type **Microsoft Defender ATP** in the search bar. On the search results section, click on *Microsoft Defender ATP* and click **Select**.
+1. On the Add app page, click on **Search the App Store** and type **Microsoft Defender ATP** in the search bar. In the search results section, click on *Microsoft Defender ATP* and click **Select**.
 
 1. Select **iOS 11.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
@@ -58,7 +58,7 @@ Deploy Defender for Endpoint for iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-2.png)
 
-1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**. In a few moments, the Defender for Endpoint app would be created successfully, and a notification would show up at the top-right corner of the page.
+1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**. In a few moments, the Defender for Endpoint app should be created successfully, and a notification should show up at the top-right corner of the page.
 
 1. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
@@ -81,11 +81,11 @@ Deploy Defender for Endpoint for iOS via Intune Company Portal.
 
 ## Configure Microsoft Defender for Endpoint for Supervised Mode
 
-The Microsoft Defender for Endpoint for iOS app has specialized ability on supervised iOS/iPadOS devices given the increased management capabilities provided by the platform on these types of devices. To take advantage of these capabilities, Defender for Endpoint app needs to know if a device is in Supervised mode.
+The Microsoft Defender for Endpoint for iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. To take advantage of these capabilities, the Defender for Endpoint app needs to know if a device is in Supervised mode.
 
 ### Configure Supervised Mode via Intune
 
-Intune allows you to configure the Defender for iOS app through a App Configuration policy.
+Intune allows you to configure the Defender for iOS app through an App Configuration policy.
 
     > [!NOTE]
     > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
@@ -105,7 +105,7 @@ Intune allows you to configure the Defender for iOS app through a App Configurat
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
     - Configuration Key: issupervised
-    - Value type: Sting
+    - Value type: String
     - Configuration Value: {{issupervised}}
     
     > [!div class="mx-imgBorder"]
@@ -115,7 +115,7 @@ Intune allows you to configure the Defender for iOS app through a App Configurat
 
 1. On the **Assignments** page, select the groups that will receive this profile. For this scenario, it is best practice to target **All Devices**. For more information on assigning profiles, see [Assign user and device profiles](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
 
-   When deploying to user groups, a user must sign-in on a device before the policy applies.
+   When deploying to user groups, a user must sign in to a device before the policy applies.
 
    Click **Next**.
 
