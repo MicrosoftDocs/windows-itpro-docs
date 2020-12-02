@@ -1424,6 +1424,37 @@ The following fields are available:
 
 ## Audio endpoint events
 
+### MicArrayGeometry
+
+This event provides information about the layout of the individual microphone elements in the microphone array. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **MicCoords**  The location and orientation of the microphone element. See [MicCoords](#miccoords).
+- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
+- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
+- **usMicArrayType**  The type of the microphone array.
+- **usNumberOfMicrophones**  The number of microphones in the array.
+- **usVersion**  The version of the microphone array specification.
+- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
+- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
+- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
+- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
+
+
+### MicCoords
+
+This event provides information about the location and orientation of the microphone element. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **usType**  The type of microphone.
+- **wHorizontalAngle**  The horizontal angle of the microphone (reported as radians times 10,000).
+- **wVerticalAngle**  The vertical angle of the microphone (reported as radians times 10,000).
+- **wXCoord**  The x-coordinate of the microphone.
+- **wYCoord**  The y-coordinate of the microphone.
+- **wZCoord**  The z-coordinate of the microphone.
+
 ### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
 
 This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint. The data collected with this event is used to keep Windows performing properly.
@@ -2112,6 +2143,19 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+## Common Data Fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action** The change that was invoked on a device inventory object.
+- **inventoryId** Device ID used for Compatibility testing
+- **objectInstanceId** Object identity which is unique within the device scope.
+- **objectType** Indicates the object type that the event applies to.
+- **syncId** A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Component-based servicing events
 
@@ -4376,7 +4420,7 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Other events
+## Surface events
 
 ### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
 
@@ -7030,6 +7074,15 @@ The following fields are available:
 
 - **wilActivity**  This struct provides a Windows Internal Library context used for Product and Service diagnostics. See [wilActivity](#wilactivity).
 
+
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hresult**  The HResult of the overall activity.
+- **threadId**  The ID of the thread on which the activity is executing.
 
 ### Microsoft.Windows.Update.Orchestrator.DeferRestart
 
