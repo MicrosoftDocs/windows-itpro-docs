@@ -202,6 +202,7 @@
 #### [ADMX_Kerberos](policy-csp-admx-kerberos.md)
 #### [ADMX_LanmanServer](policy-csp-admx-lanmanserver.md)
 #### [ADMX_LinkLayerTopologyDiscovery](policy-csp-admx-linklayertopologydiscovery.md)
+#### [ADMX_MicrosoftDefenderAntivirus](policy-csp-admx-microsoftdefenderantivirus.md)
 #### [ADMX_MMC](policy-csp-admx-mmc.md)
 #### [ADMX_MMCSnapins](policy-csp-admx-mmcsnapins.md)
 #### [ADMX_MSAPolicy](policy-csp-admx-msapolicy.md)

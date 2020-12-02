@@ -940,6 +940,290 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_MicrosoftDefenderAntivirus policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-allowfastservicestartup" id="admx-microsoftdefenderantivirus-allowfastservicestartup">ADMX_MicrosoftDefenderAntivirus/AllowFastServiceStartup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disableantispywaredefender" id="admx-microsoftdefenderantivirus-disableantispywaredefender">ADMX_MicrosoftDefenderAntivirus/DisableAntiSpywareDefender</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disableautoexclusions" id="admx-microsoftdefenderantivirus-disableautoexclusions">ADMX_MicrosoftDefenderAntivirus/DisableAutoExclusions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disableblockatfirstseen" id="admx-microsoftdefenderantivirus-disableblockatfirstseen">ADMX_MicrosoftDefenderAntivirus/DisableBlockAtFirstSeen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disablelocaladminmerge" id="admx-microsoftdefenderantivirus-disablelocaladminmerge">ADMX_MicrosoftDefenderAntivirus/DisableLocalAdminMerge</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disablerealtimemonitoring" id="admx-microsoftdefenderantivirus-disablerealtimemonitoring">ADMX_MicrosoftDefenderAntivirus/DisableRealtimeMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-disableroutinelytakingaction" id="admx-microsoftdefenderantivirus-disableroutinelytakingaction">ADMX_MicrosoftDefenderAntivirus/DisableRoutinelyTakingAction</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exclusions-extensions" id="admx-microsoftdefenderantivirus-exclusions-extensions">ADMX_MicrosoftDefenderAntivirus/Exclusions_Extensions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exclusions-paths" id="admx-microsoftdefenderantivirus-exclusions-paths">ADMX_MicrosoftDefenderAntivirus/Exclusions_Paths</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exclusions-processes" id="admx-microsoftdefenderantivirus-exclusions-processes">ADMX_MicrosoftDefenderAntivirus/Exclusions_Processes</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions" id="admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_ASROnlyExclusions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exploitguard-asr-rules" id="admx-microsoftdefenderantivirus-exploitguard-asr-rules">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_Rules</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_AllowedApplications</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_ProtectedFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation" id="admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation">ADMX_MicrosoftDefenderAntivirus/MpEngine_EnableFileHashComputation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement" id="admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement">ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_DisableSignatureRetirement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid" id="admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid">ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-nis-disableprotocolrecognition" id="admx-microsoftdefenderantivirus-nis-disableprotocolrecognition">ADMX_MicrosoftDefenderAntivirus/Nis_DisableProtocolRecognition</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-proxybypass" id="admx-microsoftdefenderantivirus-proxybypass">ADMX_MicrosoftDefenderAntivirus/ProxyBypass</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-proxypacurl" id="admx-microsoftdefenderantivirus-proxypacurl">ADMX_MicrosoftDefenderAntivirus/ProxyPacUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-proxyserver" id="admx-microsoftdefenderantivirus-proxyserver">ADMX_MicrosoftDefenderAntivirus/ProxyServer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay" id="admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Quarantine_LocalSettingOverridePurgeItemsAfterDelay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay" id="admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Quarantine_PurgeItemsAfterDelay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-randomizescheduletasktimes" id="admx-microsoftdefenderantivirus-randomizescheduletasktimes">ADMX_MicrosoftDefenderAntivirus/RandomizeScheduleTaskTimes</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring" id="admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableBehaviorMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection" id="admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableIOAVProtection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection" id="admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableOnAccessProtection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification" id="admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableRawWriteNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable" id="admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableScanOnRealtimeEnable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize" id="admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_IOAVMaxSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime" id="admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Remediation_LocalSettingOverrideScan_ScheduleTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-remediation-scan-scheduleday" id="admx-microsoftdefenderantivirus-remediation-scan-scheduleday">ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleDay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-remediation-scan-scheduletime" id="admx-microsoftdefenderantivirus-remediation-scan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-additionalactiontimeout" id="admx-microsoftdefenderantivirus-reporting-additionalactiontimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout" id="admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-disablegenericreports" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-wpptracingcomponents" id="admx-microsoftdefenderantivirus-reporting-wpptracingcomponents">ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-reporting-wpptracinglevel" id="admx-microsoftdefenderantivirus-reporting-wpptracinglevel">ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-allowpause" id="admx-microsoftdefenderantivirus-scan-allowpause">ADMX_MicrosoftDefenderAntivirus/Scan_AllowPause</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-archivemaxdepth" id="admx-microsoftdefenderantivirus-scan-archivemaxdepth">ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxDepth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-archivemaxsize" id="admx-microsoftdefenderantivirus-scan-archivemaxsize">ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablearchivescanning" id="admx-microsoftdefenderantivirus-scan-disablearchivescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableArchiveScanning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disableemailscanning" id="admx-microsoftdefenderantivirus-scan-disableemailscanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableEmailScanning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disableheuristics" id="admx-microsoftdefenderantivirus-scan-disableheuristics">ADMX_MicrosoftDefenderAntivirus/Scan_DisableHeuristics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablepackedexescanning" id="admx-microsoftdefenderantivirus-scan-disablepackedexescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisablePackedExeScanning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning" id="admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableRemovableDriveScanning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablereparsepointscanning" id="admx-microsoftdefenderantivirus-scan-disablereparsepointscanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableReparsePointScanning</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablerestorepoint" id="admx-microsoftdefenderantivirus-scan-disablerestorepoint">ADMX_MicrosoftDefenderAntivirus/Scan_DisableRestorePoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan">ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles" id="admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles">ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningNetworkFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideAvgCPULoadFactor</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScanParameters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleDay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleQuickScantime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-lowcpupriority" id="admx-microsoftdefenderantivirus-scan-lowcpupriority">ADMX_MicrosoftDefenderAntivirus/Scan_LowCpuPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup" id="admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup">ADMX_MicrosoftDefenderAntivirus/Scan_MissedScheduledScanCountBeforeCatchup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay" id="admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Scan_PurgeItemsAfterDelay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-quickscaninterval" id="admx-microsoftdefenderantivirus-scan-quickscaninterval">ADMX_MicrosoftDefenderAntivirus/Scan_QuickScanInterval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-scanonlyifidle" id="admx-microsoftdefenderantivirus-scan-scanonlyifidle">ADMX_MicrosoftDefenderAntivirus/Scan_ScanOnlyIfIdle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-scheduleday" id="admx-microsoftdefenderantivirus-scan-scheduleday">ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleDay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-scan-scheduletime" id="admx-microsoftdefenderantivirus-scan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-servicekeepalive" id="admx-microsoftdefenderantivirus-servicekeepalive">ADMX_MicrosoftDefenderAntivirus/ServiceKeepAlive</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-assignaturedue" id="admx-microsoftdefenderantivirus-signatureupdate-assignaturedue">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ASSignatureDue</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue" id="admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_AVSignatureDue</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources" id="admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DefinitionUpdateFileSharesSources</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate" id="admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScanOnUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery" id="admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScheduledSignatureUpdateonBattery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine" id="admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableUpdateOnStartupWithoutEngine</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-fallbackorder" id="admx-microsoftdefenderantivirus-signatureupdate-fallbackorder">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_FallbackOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu" id="admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ForceUpdateFromMU</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery" id="admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_RealtimeSignatureDelivery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-scheduleday" id="admx-microsoftdefenderantivirus-signatureupdate-scheduleday">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleDay</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-scheduletime" id="admx-microsoftdefenderantivirus-signatureupdate-scheduletime">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleTime</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation" id="admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SharedSignaturesLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval" id="admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureUpdateCatchupInterval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-signatureupdate-updateonstartup" id="admx-microsoftdefenderantivirus-signatureupdate-updateonstartup">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_UpdateOnStartup</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-spynetreporting" id="admx-microsoftdefenderantivirus-spynetreporting">ADMX_MicrosoftDefenderAntivirus/SpynetReporting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting" id="#admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting">ADMX_MicrosoftDefenderAntivirus/Spynet_LocalSettingOverrideSpynetReporting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-threats-threatiddefaultaction" id="admx-microsoftdefenderantivirus-threats-threatiddefaultaction">ADMX_MicrosoftDefenderAntivirus/Threats_ThreatIdDefaultAction</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring" id="admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_CustomDefaultActionToastString</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-ux-configuration-notification-suppress" id="admx-microsoftdefenderantivirus-ux-configuration-notification-suppress">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_Notification_Suppress</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification" id="admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_SuppressRebootNotification</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-microsoftdefenderantivirus.md#admx-microsoftdefenderantivirus-ux-configuration-uilockdown" id="admx-microsoftdefenderantivirus-ux-configuration-uilockdown">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_UILockdown</a>
+  </dd>
+</dl>
+
 ### ADMX_MMC policies
 <dl>
   <dd>

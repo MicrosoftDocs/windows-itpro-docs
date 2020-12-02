@@ -1,344 +1,305 @@
 ---
-title: Policy CSP - ADMX_WindowsDefender
-description: Policy CSP - ADMX_WindowsDefender
+title: Policy CSP - ADMX_MicrosoftDefenderAntivirus
+description: Policy CSP - ADMX_MicrosoftDefenderAntivirus
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/13/2020
+ms.date: 12/02/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_WindowsDefender
+# Policy CSP - ADMX_MicrosoftDefenderAntivirus
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsDefender policies  
+## ADMX_MicrosoftDefenderAntivirus policies  
 
 <dl>
   <dd>
-    <a href="#admx-windowsdefender-allowfastservicestartup">ADMX_WindowsDefender/AllowFastServiceStartup</a>
+    <a href="#admx-microsoftdefenderantivirus-allowfastservicestartup">ADMX_MicrosoftDefenderAntivirus/AllowFastServiceStartup</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-checkforsignaturesbeforerunningscan">ADMX_WindowsDefender/CheckForSignaturesBeforeRunningScan</a>
+    <a href="#admx-microsoftdefenderantivirus-disableantispywaredefender">ADMX_MicrosoftDefenderAntivirus/DisableAntiSpywareDefender</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disableantispywaredefender">ADMX_WindowsDefender/DisableAntiSpywareDefender</a>
+    <a href="#admx-microsoftdefenderantivirus-disableautoexclusions">ADMX_MicrosoftDefenderAntivirus/DisableAutoExclusions</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disableautoexclusions">ADMX_WindowsDefender/DisableAutoExclusions</a>
+    <a href="#admx-microsoftdefenderantivirus-disableblockatfirstseen">ADMX_MicrosoftDefenderAntivirus/DisableBlockAtFirstSeen</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disableblockatfirstseen">ADMX_WindowsDefender/DisableBlockAtFirstSeen</a>
+    <a href="#admx-microsoftdefenderantivirus-disablelocaladminmerge">ADMX_MicrosoftDefenderAntivirus/DisableLocalAdminMerge</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disablelocaladminmerge">ADMX_WindowsDefender/DisableLocalAdminMerge</a>
+    <a href="#admx-microsoftdefenderantivirus-disablerealtimemonitoring">ADMX_MicrosoftDefenderAntivirus/DisableRealtimeMonitoring</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disablerealtimemonitoring">ADMX_WindowsDefender/DisableRealtimeMonitoring</a>
+    <a href="#admx-microsoftdefenderantivirus-disableroutinelytakingaction">ADMX_MicrosoftDefenderAntivirus/DisableRoutinelyTakingAction</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-disableroutinelytakingaction">ADMX_WindowsDefender/DisableRoutinelyTakingAction</a>
+    <a href="#admx-microsoftdefenderantivirus-exclusions-extensions">ADMX_MicrosoftDefenderAntivirus/Exclusions_Extensions</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exclusions-extensions">ADMX_WindowsDefender/Exclusions_Extensions</a>
+    <a href="#admx-microsoftdefenderantivirus-exclusions-paths">ADMX_MicrosoftDefenderAntivirus/Exclusions_Paths</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exclusions-paths">ADMX_WindowsDefender/Exclusions_Paths</a>
+    <a href="#admx-microsoftdefenderantivirus-exclusions-processes">ADMX_MicrosoftDefenderAntivirus/Exclusions_Processes</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exclusions-processes">ADMX_WindowsDefender/Exclusions_Processes</a>
+    <a href="#admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_ASROnlyExclusions</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-asr-asronlyexclusions">ADMX_WindowsDefender/ExploitGuard_ASR_ASROnlyExclusions</a>
+    <a href="#admx-microsoftdefenderantivirus-exploitguard-asr-rules">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_Rules</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-asr-rules">ADMX_WindowsDefender/ExploitGuard_ASR_Rules</a>
+    <a href="#admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_AllowedApplications</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-controlledfolderaccess-allowedapplications">ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_AllowedApplications</a>
+    <a href="#admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders">ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_ProtectedFolders</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-controlledfolderaccess-enablecontrolledfolderaccess">ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess</a>
+    <a href="#admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation">ADMX_MicrosoftDefenderAntivirus/MpEngine_EnableFileHashComputation</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-controlledfolderaccess-protectedfolders">ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_ProtectedFolders</a>
+    <a href="#admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement">ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_DisableSignatureRetirement</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-exploitguard-enablenetworkprotection">ADMX_WindowsDefender/ExploitGuard_EnableNetworkProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid">ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-mpengine-enablefilehashcomputation">ADMX_WindowsDefender/MpEngine_EnableFileHashComputation</a>
+    <a href="#admx-microsoftdefenderantivirus-nis-disableprotocolrecognition">ADMX_MicrosoftDefenderAntivirus/Nis_DisableProtocolRecognition</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-nis-consumers-ips-disablesignatureretirement">ADMX_WindowsDefender/Nis_Consumers_IPS_DisableSignatureRetirement</a>
+    <a href="#admx-microsoftdefenderantivirus-proxybypass">ADMX_MicrosoftDefenderAntivirus/ProxyBypass</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-nis-consumers-ips-sku-differentiation-signature-set-guid">ADMX_WindowsDefender/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid</a>
+    <a href="#admx-microsoftdefenderantivirus-proxypacurl">ADMX_MicrosoftDefenderAntivirus/ProxyPacUrl</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-nis-disableprotocolrecognition">ADMX_WindowsDefender/Nis_DisableProtocolRecognition</a>
+    <a href="#admx-microsoftdefenderantivirus-proxyserver">ADMX_MicrosoftDefenderAntivirus/ProxyServer</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-proxybypass">ADMX_WindowsDefender/ProxyBypass</a>
+    <a href="#admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Quarantine_LocalSettingOverridePurgeItemsAfterDelay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-proxypacurl">ADMX_WindowsDefender/ProxyPacUrl</a>
+    <a href="#admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Quarantine_PurgeItemsAfterDelay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-proxyserver">ADMX_WindowsDefender/ProxyServer</a>
+    <a href="#admx-microsoftdefenderantivirus-randomizescheduletasktimes">ADMX_MicrosoftDefenderAntivirus/RandomizeScheduleTaskTimes</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-quarantine-localsettingoverridepurgeitemsafterdelay">ADMX_WindowsDefender/Quarantine_LocalSettingOverridePurgeItemsAfterDelay</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableBehaviorMonitoring</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-quarantine-purgeitemsafterdelay">ADMX_WindowsDefender/Quarantine_PurgeItemsAfterDelay</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableIOAVProtection</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-randomizescheduletasktimes">ADMX_WindowsDefender/RandomizeScheduleTaskTimes</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableOnAccessProtection</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-disablebehaviormonitoring">ADMX_WindowsDefender/RealtimeProtection_DisableBehaviorMonitoring</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableRawWriteNotification</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-disableioavprotection">ADMX_WindowsDefender/RealtimeProtection_DisableIOAVProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableScanOnRealtimeEnable</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-disableonaccessprotection">ADMX_WindowsDefender/RealtimeProtection_DisableOnAccessProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_IOAVMaxSize</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-disablerawwritenotification">ADMX_WindowsDefender/RealtimeProtection_DisableRawWriteNotification</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-disablescanonrealtimeenable">ADMX_WindowsDefender/RealtimeProtection_DisableScanOnRealtimeEnable</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-ioavmaxsize">ADMX_WindowsDefender/RealtimeProtection_IOAVMaxSize</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-localsettingoverridedisablebehaviormonitoring">ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-localsettingoverridedisableioavprotection">ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection">ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-localsettingoverridedisableonaccessprotection">ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Remediation_LocalSettingOverrideScan_ScheduleTime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-localsettingoverridedisablerealtimemonitoring">ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring</a>
+    <a href="#admx-microsoftdefenderantivirus-remediation-scan-scheduleday">ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleDay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-localsettingoverriderealtimescandirection">ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection</a>
+    <a href="#admx-microsoftdefenderantivirus-remediation-scan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleTime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-realtimeprotection-realtimescandirection">ADMX_WindowsDefender/RealtimeProtection_RealtimeScanDirection</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-additionalactiontimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-remediation-localsettingoverridescan-scheduletime">ADMX_WindowsDefender/Remediation_LocalSettingOverrideScan_ScheduleTime</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-remediation-scan-scheduleday">ADMX_WindowsDefender/Remediation_Scan_ScheduleDay</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-disableenhancednotifications">ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-remediation-scan-scheduletime">ADMX_WindowsDefender/Remediation_Scan_ScheduleTime</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-disablegenericreports">ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-additionalactiontimeout">ADMX_WindowsDefender/Reporting_AdditionalActionTimeout</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-noncriticaltimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-criticalfailuretimeout">ADMX_WindowsDefender/Reporting_CriticalFailureTimeout</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout">ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-disableenhancednotifications">ADMX_WindowsDefender/Reporting_DisableEnhancedNotifications</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-wpptracingcomponents">ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-disablegenericreports">ADMX_WindowsDefender/Reporting_DisablegenericrePorts</a>
+    <a href="#admx-microsoftdefenderantivirus-reporting-wpptracinglevel">ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingLevel</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-noncriticaltimeout">ADMX_WindowsDefender/Reporting_NonCriticalTimeout</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-allowpause">ADMX_MicrosoftDefenderAntivirus/Scan_AllowPause</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-recentlycleanedtimeout">ADMX_WindowsDefender/Reporting_RecentlyCleanedTimeout</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-archivemaxdepth">ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxDepth</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-wpptracingcomponents">ADMX_WindowsDefender/Reporting_WppTracingComponents</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-archivemaxsize">ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxSize</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-reporting-wpptracinglevel">ADMX_WindowsDefender/Reporting_WppTracingLevel</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablearchivescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableArchiveScanning</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-root-puaprotection">ADMX_WindowsDefender/Root_PUAProtection</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disableemailscanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableEmailScanning</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-allowpause">ADMX_WindowsDefender/Scan_AllowPause</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disableheuristics">ADMX_MicrosoftDefenderAntivirus/Scan_DisableHeuristics</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-archivemaxdepth">ADMX_WindowsDefender/Scan_ArchiveMaxDepth</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablepackedexescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisablePackedExeScanning</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-archivemaxsize">ADMX_WindowsDefender/Scan_ArchiveMaxSize</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableRemovableDriveScanning</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-avgcpuloadfactor">ADMX_WindowsDefender/Scan_AvgCPULoadFactor</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablereparsepointscanning">ADMX_MicrosoftDefenderAntivirus/Scan_DisableReparsePointScanning</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablearchivescanning">ADMX_WindowsDefender/Scan_DisableArchiveScanning</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablerestorepoint">ADMX_MicrosoftDefenderAntivirus/Scan_DisableRestorePoint</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablecatchupfullscan">ADMX_WindowsDefender/Scan_DisableCatchupFullScan</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan">ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablecatchupquickscan">ADMX_WindowsDefender/Scan_DisableCatchupQuickScan</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles">ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningNetworkFiles</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disableemailscanning">ADMX_WindowsDefender/Scan_DisableEmailScanning</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideAvgCPULoadFactor</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disableheuristics">ADMX_WindowsDefender/Scan_DisableHeuristics</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScanParameters</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablepackedexescanning">ADMX_WindowsDefender/Scan_DisablePackedExeScanning</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleDay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disableremovabledrivescanning">ADMX_WindowsDefender/Scan_DisableRemovableDriveScanning</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleQuickScantime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablereparsepointscanning">ADMX_WindowsDefender/Scan_DisableReparsePointScanning</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime">ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleTime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablerestorepoint">ADMX_WindowsDefender/Scan_DisableRestorePoint</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-lowcpupriority">ADMX_MicrosoftDefenderAntivirus/Scan_LowCpuPriority</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablescanningmappednetworkdrivesforfullscan">ADMX_WindowsDefender/Scan_DisableScanningMappedNetworkDrivesForFullScan</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup">ADMX_MicrosoftDefenderAntivirus/Scan_MissedScheduledScanCountBeforeCatchup</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-disablescanningnetworkfiles">ADMX_WindowsDefender/Scan_DisableScanningNetworkFiles</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay">ADMX_MicrosoftDefenderAntivirus/Scan_PurgeItemsAfterDelay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-localsettingoverrideavgcpuloadfactor">ADMX_WindowsDefender/Scan_LocalSettingOverrideAvgCPULoadFactor</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-quickscaninterval">ADMX_MicrosoftDefenderAntivirus/Scan_QuickScanInterval</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-localsettingoverridescanparameters">ADMX_WindowsDefender/Scan_LocalSettingOverrideScanParameters</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-scanonlyifidle">ADMX_MicrosoftDefenderAntivirus/Scan_ScanOnlyIfIdle</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-localsettingoverridescheduleday">ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleDay</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-scheduleday">ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleDay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-localsettingoverrideschedulequickscantime">ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleQuickScantime</a>
+    <a href="#admx-microsoftdefenderantivirus-scan-scheduletime">ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleTime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-localsettingoverridescheduletime">ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleTime</a>
+    <a href="#admx-microsoftdefenderantivirus-servicekeepalive">ADMX_MicrosoftDefenderAntivirus/ServiceKeepAlive</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-lowcpupriority">ADMX_WindowsDefender/Scan_LowCpuPriority</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-assignaturedue">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ASSignatureDue</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-missedscheduledscancountbeforecatchup">ADMX_WindowsDefender/Scan_MissedScheduledScanCountBeforeCatchup</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_AVSignatureDue</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-purgeitemsafterdelay">ADMX_WindowsDefender/Scan_PurgeItemsAfterDelay</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DefinitionUpdateFileSharesSources</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-quickscaninterval">ADMX_WindowsDefender/Scan_QuickScanInterval</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScanOnUpdate</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-scanonlyifidle">ADMX_WindowsDefender/Scan_ScanOnlyIfIdle</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScheduledSignatureUpdateonBattery</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-scanparameters">ADMX_WindowsDefender/Scan_ScanParameters</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableUpdateOnStartupWithoutEngine</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-scheduleday">ADMX_WindowsDefender/Scan_ScheduleDay</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-fallbackorder">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_FallbackOrder</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-schedulequickscantime">ADMX_WindowsDefender/Scan_ScheduleQuickScantime</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ForceUpdateFromMU</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-scan-scheduletime">ADMX_WindowsDefender/Scan_ScheduleTime</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_RealtimeSignatureDelivery</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-servicekeepalive">ADMX_WindowsDefender/ServiceKeepAlive</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-scheduleday">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleDay</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-assignaturedue">ADMX_WindowsDefender/SignatureUpdate_ASSignatureDue</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-scheduletime">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleTime</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-avsignaturedue">ADMX_WindowsDefender/SignatureUpdate_AVSignatureDue</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SharedSignaturesLocation</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-definitionupdatefilesharessources">ADMX_WindowsDefender/SignatureUpdate_DefinitionUpdateFileSharesSources</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-disablescanonupdate">ADMX_WindowsDefender/SignatureUpdate_DisableScanOnUpdate</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureUpdateCatchupInterval</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-disablescheduledsignatureupdateonbattery">ADMX_WindowsDefender/SignatureUpdate_DisableScheduledSignatureUpdateonBattery</a>
+    <a href="#admx-microsoftdefenderantivirus-signatureupdate-updateonstartup">ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_UpdateOnStartup</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-disableupdateonstartupwithoutengine">ADMX_WindowsDefender/SignatureUpdate_DisableUpdateOnStartupWithoutEngine</a>
+    <a href="#admx-microsoftdefenderantivirus-spynetreporting">ADMX_MicrosoftDefenderAntivirus/SpynetReporting</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-fallbackorder">ADMX_WindowsDefender/SignatureUpdate_FallbackOrder</a>
+    <a href="#admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting">ADMX_MicrosoftDefenderAntivirus/Spynet_LocalSettingOverrideSpynetReporting</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-forceupdatefrommu">ADMX_WindowsDefender/SignatureUpdate_ForceUpdateFromMU</a>
+    <a href="#admx-microsoftdefenderantivirus-threats-threatiddefaultaction">ADMX_MicrosoftDefenderAntivirus/Threats_ThreatIdDefaultAction</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-realtimesignaturedelivery">ADMX_WindowsDefender/SignatureUpdate_RealtimeSignatureDelivery</a>
+    <a href="#admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_CustomDefaultActionToastString</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-scheduleday">ADMX_WindowsDefender/SignatureUpdate_ScheduleDay</a>
+    <a href="#admx-microsoftdefenderantivirus-ux-configuration-notification-suppress">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_Notification_Suppress</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-scheduletime">ADMX_WindowsDefender/SignatureUpdate_ScheduleTime</a>
+    <a href="#admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_SuppressRebootNotification</a>
   </dd>
   <dd>
-    <a href="#admx-windowsdefender-signatureupdate-sharedsignatureslocation">ADMX_WindowsDefender/SignatureUpdate_SharedSignaturesLocation</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-signatureupdate-signaturedisablenotification">ADMX_WindowsDefender/SignatureUpdate_SignatureDisableNotification</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-signatureupdate-signatureupdatecatchupinterval">ADMX_WindowsDefender/SignatureUpdate_SignatureUpdateCatchupInterval</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-signatureupdate-signatureupdateinterval">ADMX_WindowsDefender/SignatureUpdate_SignatureUpdateInterval</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-signatureupdate-updateonstartup">ADMX_WindowsDefender/SignatureUpdate_UpdateOnStartup</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-spynetreporting">ADMX_WindowsDefender/SpynetReporting</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-spynet-localsettingoverridespynetreporting">ADMX_WindowsDefender/Spynet_LocalSettingOverrideSpynetReporting</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-submitsamplesconsent">ADMX_WindowsDefender/SubmitSamplesConsent</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-threats-threatiddefaultaction">ADMX_WindowsDefender/Threats_ThreatIdDefaultAction</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-threats-threatseveritydefaultaction">ADMX_WindowsDefender/Threats_ThreatSeverityDefaultAction</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-ux-configuration-customdefaultactiontoaststring">ADMX_WindowsDefender/UX_Configuration_CustomDefaultActionToastString</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-ux-configuration-notification-suppress">ADMX_WindowsDefender/UX_Configuration_Notification_Suppress</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-ux-configuration-suppressrebootnotification">ADMX_WindowsDefender/UX_Configuration_SuppressRebootNotification</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsdefender-ux-configuration-uilockdown">ADMX_WindowsDefender/UX_Configuration_UILockdown</a>
+    <a href="#admx-microsoftdefenderantivirus-ux-configuration-uilockdown">ADMX_MicrosoftDefenderAntivirus/UX_Configuration_UILockdown</a>
   </dd>
 </dl>
 
@@ -346,7 +307,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-allowfastservicestartup"></a>**ADMX_WindowsDefender/AllowFastServiceStartup**  
+<a href="" id="admx-microsoftdefenderantivirus-allowfastservicestartup"></a>**ADMX_MicrosoftDefenderAntivirus/AllowFastServiceStartup**  
 
 <!--SupportedSKUs-->
 <table>
@@ -415,78 +376,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-checkforsignaturesbeforerunningscan"></a>**ADMX_WindowsDefender/CheckForSignaturesBeforeRunningScan**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage whether a check for new virus and spyware security intelligence will occur before running a scan. 
-
-This setting applies to scheduled scans as well as the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
-
-If you enable this setting, a check for new security intelligence will occur before running a scan.
-
-If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Check for the latest virus and spyware security intelligence before running a scheduled scan*
--   GP name: *CheckForSignaturesBeforeRunningScan*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-disableantispywaredefender"></a>**ADMX_WindowsDefender/DisableAntiSpywareDefender**  
+<a href="" id="admx-microsoftdefenderantivirus-disableantispywaredefender"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAntiSpywareDefender**  
 
 <!--SupportedSKUs-->
 <table>
@@ -559,7 +449,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-disableautoexclusions"></a>**ADMX_WindowsDefender/DisableAutoExclusions**  
+<a href="" id="admx-microsoftdefenderantivirus-disableautoexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAutoExclusions**  
 
 <!--SupportedSKUs-->
 <table>
@@ -633,7 +523,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-disableblockatfirstseen"></a>**ADMX_WindowsDefender/DisableBlockAtFirstSeen**  
+<a href="" id="admx-microsoftdefenderantivirus-disableblockatfirstseen"></a>**ADMX_MicrosoftDefenderAntivirus/DisableBlockAtFirstSeen**  
 
 <!--SupportedSKUs-->
 <table>
@@ -708,7 +598,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-disablelocaladminmerge"></a>**ADMX_WindowsDefender/DisableLocalAdminMerge**  
+<a href="" id="admx-microsoftdefenderantivirus-disablelocaladminmerge"></a>**ADMX_MicrosoftDefenderAntivirus/DisableLocalAdminMerge**  
 
 <!--SupportedSKUs-->
 <table>
@@ -777,7 +667,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-disablerealtimemonitoring"></a>**ADMX_WindowsDefender/DisableRealtimeMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-disablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRealtimeMonitoring**  
 
 <!--SupportedSKUs-->
 <table>
@@ -848,7 +738,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-disableroutinelytakingaction"></a>**ADMX_WindowsDefender/DisableRoutinelyTakingAction**  
+<a href="" id="admx-microsoftdefenderantivirus-disableroutinelytakingaction"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRoutinelyTakingAction**  
 
 <!--SupportedSKUs-->
 <table>
@@ -917,7 +807,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exclusions-extensions"></a>**ADMX_WindowsDefender/Exclusions_Extensions**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-extensions"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Extensions**  
 
 <!--SupportedSKUs-->
 <table>
@@ -982,7 +872,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exclusions-paths"></a>**ADMX_WindowsDefender/Exclusions_Paths**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-paths"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Paths**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1049,7 +939,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exclusions-processes"></a>**ADMX_WindowsDefender/Exclusions_Processes**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-processes"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Processes**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1114,7 +1004,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-asr-asronlyexclusions"></a>**ADMX_WindowsDefender/ExploitGuard_ASR_ASROnlyExclusions**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_ASROnlyExclusions**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1194,7 +1084,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-asr-rules"></a>**ADMX_WindowsDefender/ExploitGuard_ASR_Rules**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-rules"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_Rules**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1290,7 +1180,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-controlledfolderaccess-allowedapplications"></a>**ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_AllowedApplications**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_AllowedApplications**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1372,127 +1262,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-controlledfolderaccess-enablecontrolledfolderaccess"></a>**ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
-
-- Modify or delete files in protected folders, such as the Documents folder
-- Write to disk sectors
-
-You can also choose to only block or audit writes to disk sectors while still allowing the modification or deletion of files in protected folders.
-
-Microsoft Defender Antivirus automatically determines which applications can be trusted. You can add additional trusted applications in the Configure allowed applications GP setting.
-Default system folders are automatically protected, but you can add folders in the Configure protected folders GP setting.
-
-Block:
-The following will be blocked:
-
-- Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
-
-The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-
-Disabled:
-The following will not be blocked and will be allowed to run:
-
-- Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
-
-These attempts will not be recorded in the Windows event log.
-
-Audit Mode:
-The following will not be blocked and will be allowed to run:
-
-- Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
-
-The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
-
-Block disk modification only:
-The following will be blocked:
-
-- Attempts by untrusted apps to write to disk sectors
-
-The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-
-The following will not be blocked and will be allowed to run:
-
-- Attempts by untrusted apps to modify or delete files in protected folders
-These attempts will not be recorded in the Windows event log.
-
-Audit disk modification only:
-The following will not be blocked and will be allowed to run:
-
-- Attempts by untrusted apps to write to disk sectors
-- Attempts by untrusted apps to modify or delete files in protected folders
-Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124).
-Attempts to modify or delete files in protected folders will not be recorded.
-
-Not configured:
-Same as Disabled.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure Controlled folder access*
--   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-controlledfolderaccess-protectedfolders"></a>**ADMX_WindowsDefender/ExploitGuard_ControlledFolderAccess_ProtectedFolders**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_ProtectedFolders**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1575,84 +1345,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-exploitguard-enablenetworkprotection"></a>**ADMX_WindowsDefender/ExploitGuard_EnableNetworkProtection**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Enable or disable Microsoft Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
-
-Enabled:
-Specify the mode in the Options section:
-
-- Block: Users and applications will not be able to access dangerous domains
-- Audit Mode: Users and applications can connect to dangerous domains, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
-
-Disabled:
-Users and applications will not be blocked from connecting to dangerous domains.
-
-Not configured:
-Same as Disabled.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users and apps from accessing dangerous websites*
--   GP name: *ExploitGuard_EnableNetworkProtection*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Network Protection*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-mpengine-enablefilehashcomputation"></a>**ADMX_WindowsDefender/MpEngine_EnableFileHashComputation**  
+<a href="" id="admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation"></a>**ADMX_MicrosoftDefenderAntivirus/MpEngine_EnableFileHashComputation**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1726,7 +1419,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-nis-consumers-ips-disablesignatureretirement"></a>**ADMX_WindowsDefender/Nis_Consumers_IPS_DisableSignatureRetirement**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_DisableSignatureRetirement**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1795,7 +1488,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-nis-consumers-ips-sku-differentiation-signature-set-guid"></a>**ADMX_WindowsDefender/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1860,7 +1553,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-nis-disableprotocolrecognition"></a>**ADMX_WindowsDefender/Nis_DisableProtocolRecognition**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-disableprotocolrecognition"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_DisableProtocolRecognition**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1929,7 +1622,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-proxybypass"></a>**ADMX_WindowsDefender/ProxyBypass**  
+<a href="" id="admx-microsoftdefenderantivirus-proxybypass"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyBypass**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1998,7 +1691,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-proxypacurl"></a>**ADMX_WindowsDefender/ProxyPacUrl**  
+<a href="" id="admx-microsoftdefenderantivirus-proxypacurl"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyPacUrl**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2073,7 +1766,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-proxyserver"></a>**ADMX_WindowsDefender/ProxyServer**  
+<a href="" id="admx-microsoftdefenderantivirus-proxyserver"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyServer**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2148,7 +1841,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-quarantine-localsettingoverridepurgeitemsafterdelay"></a>**ADMX_WindowsDefender/Quarantine_LocalSettingOverridePurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_LocalSettingOverridePurgeItemsAfterDelay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2217,7 +1910,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-quarantine-purgeitemsafterdelay"></a>**ADMX_WindowsDefender/Quarantine_PurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_PurgeItemsAfterDelay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2286,7 +1979,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-randomizescheduletasktimes"></a>**ADMX_WindowsDefender/RandomizeScheduleTaskTimes**  
+<a href="" id="admx-microsoftdefenderantivirus-randomizescheduletasktimes"></a>**ADMX_MicrosoftDefenderAntivirus/RandomizeScheduleTaskTimes**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2355,7 +2048,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-disablebehaviormonitoring"></a>**ADMX_WindowsDefender/RealtimeProtection_DisableBehaviorMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableBehaviorMonitoring**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2424,7 +2117,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-disableioavprotection"></a>**ADMX_WindowsDefender/RealtimeProtection_DisableIOAVProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableIOAVProtection**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2493,7 +2186,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-disableonaccessprotection"></a>**ADMX_WindowsDefender/RealtimeProtection_DisableOnAccessProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableOnAccessProtection**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2562,7 +2255,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-disablerawwritenotification"></a>**ADMX_WindowsDefender/RealtimeProtection_DisableRawWriteNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableRawWriteNotification**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2631,7 +2324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-disablescanonrealtimeenable"></a>**ADMX_WindowsDefender/RealtimeProtection_DisableScanOnRealtimeEnable**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableScanOnRealtimeEnable**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2700,7 +2393,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-ioavmaxsize"></a>**ADMX_WindowsDefender/RealtimeProtection_IOAVMaxSize**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_IOAVMaxSize**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2769,7 +2462,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-localsettingoverridedisablebehaviormonitoring"></a>**ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2838,7 +2531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-localsettingoverridedisableioavprotection"></a>**ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2907,7 +2600,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-localsettingoverridedisableonaccessprotection"></a>**ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2976,7 +2669,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-localsettingoverridedisablerealtimemonitoring"></a>**ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3045,7 +2738,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-localsettingoverriderealtimescandirection"></a>**ADMX_WindowsDefender/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3114,86 +2807,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-realtimeprotection-realtimescandirection"></a>**ADMX_WindowsDefender/RealtimeProtection_RealtimeScanDirection**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It is recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role. 
-
-Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
-
-The options for this setting are mutually exclusive:
-
-- 0 = Scan incoming and outgoing files (default)
-- 1 = Scan incoming files only
-- 2 = Scan outgoing files only
-
-Any other value, or if the value does not exist, resolves to the default (0).
-
-If you enable this setting, the specified type of monitoring will be enabled.
-
-If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure monitoring for incoming and outgoing file and program activity*
--   GP name: *RealtimeProtection_RealtimeScanDirection*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-remediation-localsettingoverridescan-scheduletime"></a>**ADMX_WindowsDefender/Remediation_LocalSettingOverrideScan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_LocalSettingOverrideScan_ScheduleTime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3262,7 +2876,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-remediation-scan-scheduleday"></a>**ADMX_WindowsDefender/Remediation_Scan_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleDay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3343,7 +2957,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-remediation-scan-scheduletime"></a>**ADMX_WindowsDefender/Remediation_Scan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleTime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3412,7 +3026,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-additionalactiontimeout"></a>**ADMX_WindowsDefender/Reporting_AdditionalActionTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-additionalactiontimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3477,7 +3091,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-criticalfailuretimeout"></a>**ADMX_WindowsDefender/Reporting_CriticalFailureTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3542,7 +3156,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-disableenhancednotifications"></a>**ADMX_WindowsDefender/Reporting_DisableEnhancedNotifications**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3610,7 +3224,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-disablegenericreports"></a>**ADMX_WindowsDefender/Reporting_DisablegenericrePorts**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisablegenericrePorts**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3679,7 +3293,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-noncriticaltimeout"></a>**ADMX_WindowsDefender/Reporting_NonCriticalTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3743,7 +3357,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-recentlycleanedtimeout"></a>**ADMX_WindowsDefender/Reporting_RecentlyCleanedTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3808,7 +3422,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-wpptracingcomponents"></a>**ADMX_WindowsDefender/Reporting_WppTracingComponents**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracingcomponents"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3873,7 +3487,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-reporting-wpptracinglevel"></a>**ADMX_WindowsDefender/Reporting_WppTracingLevel**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracinglevel"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingLevel**  
 
 <!--SupportedSKUs-->
 <table>
@@ -3945,84 +3559,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-root-puaprotection"></a>**ADMX_WindowsDefender/Root_PUAProtection**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
-
-Enabled:
-Specify the mode in the Options section:
-
-- Block: Potentially unwanted software will be blocked.
-- Audit Mode: Potentially unwanted software will not be blocked, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
-
-Disabled:
-Potentially unwanted software will not be blocked.
-
-Not configured:
-Same as Disabled.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure detection for potentially unwanted applications*
--   GP name: *Root_PUAProtection*
--   GP path: *Windows Components\Microsoft Defender Antivirus*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-allowpause"></a>**ADMX_WindowsDefender/Scan_AllowPause**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-allowpause"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_AllowPause**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4091,7 +3628,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-archivemaxdepth"></a>**ADMX_WindowsDefender/Scan_ArchiveMaxDepth**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxdepth"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxDepth**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4160,7 +3697,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-archivemaxsize"></a>**ADMX_WindowsDefender/Scan_ArchiveMaxSize**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxSize**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4228,77 +3765,9 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-avgcpuloadfactor"></a>**ADMX_WindowsDefender/Scan_AvgCPULoadFactor**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the maximum percentage CPU utilization permitted during a scan. Valid values for this setting are a percentage represented by the integers 5 to 100. A value of 0 indicates that there should be no throttling of CPU utilization. The default value is 50.
-
-If you enable this setting, CPU utilization will not exceed the percentage specified.
-
-If you disable or do not configure this setting, CPU utilization will not exceed the default value.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify the maximum percentage of CPU utilization during a scan*
--   GP name: *Scan_AvgCPULoadFactor*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablearchivescanning"></a>**ADMX_WindowsDefender/Scan_DisableArchiveScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablearchivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableArchiveScanning**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4367,145 +3836,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablecatchupfullscan"></a>**ADMX_WindowsDefender/Scan_DisableCatchupFullScan**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
-
-If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run. 
-
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on catch-up full scan*
--   GP name: *Scan_DisableCatchupFullScan*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablecatchupquickscan"></a>**ADMX_WindowsDefender/Scan_DisableCatchupQuickScan**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
-
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
-
-If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on catch-up quick scan*
--   GP name: *Scan_DisableCatchupQuickScan*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disableemailscanning"></a>**ADMX_WindowsDefender/Scan_DisableEmailScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableemailscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableEmailScanning**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4574,7 +3905,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disableheuristics"></a>**ADMX_WindowsDefender/Scan_DisableHeuristics**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableheuristics"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableHeuristics**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4643,7 +3974,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablepackedexescanning"></a>**ADMX_WindowsDefender/Scan_DisablePackedExeScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablepackedexescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisablePackedExeScanning**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4712,7 +4043,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disableremovabledrivescanning"></a>**ADMX_WindowsDefender/Scan_DisableRemovableDriveScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRemovableDriveScanning**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4781,7 +4112,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablereparsepointscanning"></a>**ADMX_WindowsDefender/Scan_DisableReparsePointScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablereparsepointscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableReparsePointScanning**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4850,7 +4181,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablerestorepoint"></a>**ADMX_WindowsDefender/Scan_DisableRestorePoint**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablerestorepoint"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRestorePoint**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4918,7 +4249,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_WindowsDefender/Scan_DisableScanningMappedNetworkDrivesForFullScan**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningmappednetworkdrivesforfullscan"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningMappedNetworkDrivesForFullScan**  
 
 <!--SupportedSKUs-->
 <table>
@@ -4987,7 +4318,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-disablescanningnetworkfiles"></a>**ADMX_WindowsDefender/Scan_DisableScanningNetworkFiles**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningNetworkFiles**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5056,7 +4387,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-localsettingoverrideavgcpuloadfactor"></a>**ADMX_WindowsDefender/Scan_LocalSettingOverrideAvgCPULoadFactor**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideAvgCPULoadFactor**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5125,7 +4456,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-localsettingoverridescanparameters"></a>**ADMX_WindowsDefender/Scan_LocalSettingOverrideScanParameters**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScanParameters**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5194,7 +4525,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-localsettingoverridescheduleday"></a>**ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleDay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5263,7 +4594,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-localsettingoverrideschedulequickscantime"></a>**ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleQuickScantime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleQuickScantime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5332,7 +4663,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-localsettingoverridescheduletime"></a>**ADMX_WindowsDefender/Scan_LocalSettingOverrideScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleTime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5401,7 +4732,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-lowcpupriority"></a>**ADMX_WindowsDefender/Scan_LowCpuPriority**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-lowcpupriority"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LowCpuPriority**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5470,7 +4801,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-missedscheduledscancountbeforecatchup"></a>**ADMX_WindowsDefender/Scan_MissedScheduledScanCountBeforeCatchup**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_MissedScheduledScanCountBeforeCatchup**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5539,7 +4870,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-purgeitemsafterdelay"></a>**ADMX_WindowsDefender/Scan_PurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_PurgeItemsAfterDelay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5608,7 +4939,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-quickscaninterval"></a>**ADMX_WindowsDefender/Scan_QuickScanInterval**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-quickscaninterval"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_QuickScanInterval**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5677,7 +5008,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-scanonlyifidle"></a>**ADMX_WindowsDefender/Scan_ScanOnlyIfIdle**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scanonlyifidle"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScanOnlyIfIdle**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5746,78 +5077,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-scanparameters"></a>**ADMX_WindowsDefender/Scan_ScanParameters**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify the scan type to use during a scheduled scan. Scan type options are:
-
-- 1 = Quick Scan (default)
-- 2 = Full Scan
-
-If you enable this setting, the scan type will be set to the specified value.
-
-If you disable or do not configure this setting, the default scan type will used.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify the scan type to use for a scheduled scan*
--   GP name: *Scan_ScanParameters*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-scheduleday"></a>**ADMX_WindowsDefender/Scan_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleDay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -5896,77 +5156,9 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-<!--Policy-->
-<a href="" id="admx-windowsdefender-scan-schedulequickscantime"></a>**ADMX_WindowsDefender/Scan_ScheduleQuickScantime**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify the time of day at which to perform a daily quick scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to a time value of 2:00 AM. The schedule is based on local time on the computer where the scan is executing.
-
-If you enable this setting, a daily quick scan will run at the time of day specified.
-
-If you disable or do not configure this setting, a daily quick scan will run at a default time.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify the time for a daily quick scan*
--   GP name: *Scan_ScheduleQuickScantime*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-scan-scheduletime"></a>**ADMX_WindowsDefender/Scan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleTime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6035,7 +5227,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-servicekeepalive"></a>**ADMX_WindowsDefender/ServiceKeepAlive**  
+<a href="" id="admx-microsoftdefenderantivirus-servicekeepalive"></a>**ADMX_MicrosoftDefenderAntivirus/ServiceKeepAlive**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6104,7 +5296,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-assignaturedue"></a>**ADMX_WindowsDefender/SignatureUpdate_ASSignatureDue**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-assignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ASSignatureDue**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6173,7 +5365,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-avsignaturedue"></a>**ADMX_WindowsDefender/SignatureUpdate_AVSignatureDue**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_AVSignatureDue**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6242,7 +5434,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-definitionupdatefilesharessources"></a>**ADMX_WindowsDefender/SignatureUpdate_DefinitionUpdateFileSharesSources**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DefinitionUpdateFileSharesSources**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6311,7 +5503,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-disablescanonupdate"></a>**ADMX_WindowsDefender/SignatureUpdate_DisableScanOnUpdate**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScanOnUpdate**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6380,7 +5572,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-disablescheduledsignatureupdateonbattery"></a>**ADMX_WindowsDefender/SignatureUpdate_DisableScheduledSignatureUpdateonBattery**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScheduledSignatureUpdateonBattery**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6449,7 +5641,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-disableupdateonstartupwithoutengine"></a>**ADMX_WindowsDefender/SignatureUpdate_DisableUpdateOnStartupWithoutEngine**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableUpdateOnStartupWithoutEngine**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6518,7 +5710,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-fallbackorder"></a>**ADMX_WindowsDefender/SignatureUpdate_FallbackOrder**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-fallbackorder"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_FallbackOrder**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6589,7 +5781,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-forceupdatefrommu"></a>**ADMX_WindowsDefender/SignatureUpdate_ForceUpdateFromMU**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ForceUpdateFromMU**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6658,7 +5850,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-realtimesignaturedelivery"></a>**ADMX_WindowsDefender/SignatureUpdate_RealtimeSignatureDelivery**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_RealtimeSignatureDelivery**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6727,7 +5919,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-scheduleday"></a>**ADMX_WindowsDefender/SignatureUpdate_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleDay**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6808,7 +6000,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-scheduletime"></a>**ADMX_WindowsDefender/SignatureUpdate_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleTime**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6877,7 +6069,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-sharedsignatureslocation"></a>**ADMX_WindowsDefender/SignatureUpdate_SharedSignaturesLocation**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SharedSignaturesLocation**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6943,7 +6135,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-signaturedisablenotification"></a>**ADMX_WindowsDefender/SignatureUpdate_SignatureDisableNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7012,7 +6204,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-signatureupdatecatchupinterval"></a>**ADMX_WindowsDefender/SignatureUpdate_SignatureUpdateCatchupInterval**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureUpdateCatchupInterval**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7081,76 +6273,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-signatureupdateinterval"></a>**ADMX_WindowsDefender/SignatureUpdate_SignatureUpdateInterval**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify an interval at which to check for security intelligence updates. The time value is represented as the number of hours between update checks. Valid values range from 1 (every hour) to 24 (once per day).
-
-If you enable this setting, checks for security intelligence updates will occur at the interval specified.
-
-If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify the interval to check for security intelligence updates*
--   GP name: *SignatureUpdate_SignatureUpdateInterval*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-signatureupdate-updateonstartup"></a>**ADMX_WindowsDefender/SignatureUpdate_UpdateOnStartup**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-updateonstartup"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_UpdateOnStartup**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7219,7 +6342,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-spynetreporting"></a>**ADMX_WindowsDefender/SpynetReporting**  
+<a href="" id="admx-microsoftdefenderantivirus-spynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/SpynetReporting**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7302,7 +6425,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-spynet-localsettingoverridespynetreporting"></a>**ADMX_WindowsDefender/Spynet_LocalSettingOverrideSpynetReporting**  
+<a href="" id="admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/Spynet_LocalSettingOverrideSpynetReporting**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7368,81 +6491,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-windowsdefender-submitsamplesconsent"></a>**ADMX_WindowsDefender/SubmitSamplesConsent**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures behaviour of samples submission when opt-in for MAPS telemetry is set.
-
-Possible options are:
-
-- (0x0) Always prompt
-- (0x1) Send safe samples automatically
-- (0x2) Never send
-- (0x3) Send all samples automatically
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Send file samples when further analysis is required*
--   GP name: *SubmitSamplesConsent*
--   GP path: *Windows Components\Microsoft Defender Antivirus\MAPS*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-threats-threatiddefaultaction"></a>**ADMX_WindowsDefender/Threats_ThreatIdDefaultAction**  
+<a href="" id="admx-microsoftdefenderantivirus-threats-threatiddefaultaction"></a>**ADMX_MicrosoftDefenderAntivirus/Threats_ThreatIdDefaultAction**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7513,85 +6566,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-threats-threatseveritydefaultaction"></a>**ADMX_WindowsDefender/Threats_ThreatSeverityDefaultAction**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to customize which automatic remediation action will be taken for each threat alert level.Threat alert levels should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a threat alert level. The value contains the action ID for the remediation action that should be taken.
-
-Valid threat alert levels are:
-
-- 1 = Low
-- 2 =  Medium
-- 4 = High
-- 5 = Severe
-
-Valid remediation action values are:
-
-- 2 = Quarantine
-- 3 = Remove
-- 6 = Ignore
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify threat alert levels at which default action should not be taken when detected*
--   GP name: *Threats_ThreatSeverityDefaultAction*
--   GP path: *Windows Components\Microsoft Defender Antivirus\Threats*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsdefender-ux-configuration-customdefaultactiontoaststring"></a>**ADMX_WindowsDefender/UX_Configuration_CustomDefaultActionToastString**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_CustomDefaultActionToastString**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7660,7 +6635,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-ux-configuration-notification-suppress"></a>**ADMX_WindowsDefender/UX_Configuration_Notification_Suppress**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-notification-suppress"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_Notification_Suppress**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7729,7 +6704,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-ux-configuration-suppressrebootnotification"></a>**ADMX_WindowsDefender/UX_Configuration_SuppressRebootNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_SuppressRebootNotification**  
 
 <!--SupportedSKUs-->
 <table>
@@ -7796,7 +6771,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsdefender-ux-configuration-uilockdown"></a>**ADMX_WindowsDefender/UX_Configuration_UILockdown**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-uilockdown"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_UILockdown**  
 
 <!--SupportedSKUs-->
 <table>
