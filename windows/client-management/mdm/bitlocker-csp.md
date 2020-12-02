@@ -282,6 +282,9 @@ If you enable this policy setting, users can configure advanced startup options 
 If you disable or do not configure this setting, users can configure only basic options on computers with a TPM.
 
 > [!NOTE]
+> Devices that pass HSTI validation or Modern Standby devices will not be able to configure Startup PIN using this CSP. Users are required to manually configure the PIN.
+
+> [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
 
 Sample value for this node to enable this policy is:
