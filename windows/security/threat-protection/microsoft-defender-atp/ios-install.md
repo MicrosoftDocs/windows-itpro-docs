@@ -104,12 +104,9 @@ Intune allows you to configure the Defender for iOS app through a App Configurat
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-5.png)
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
-    - Configuration Key: isSupervised
+    - Configuration Key: issupervised
     - Value type: Sting
-    - Configuration Value: {{isSupervised}}
-
-    > [!div class="mx-imgBorder"]
-    ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-6.png)
+    - Configuration Value: {{issupervised}}
 
 1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
 
