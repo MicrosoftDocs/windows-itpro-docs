@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-This topic describes deploying Defender for Endpoint for iOS on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll your device](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)
+This topic describes deploying Defender for Endpoint for iOS on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll your device](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
 
 ## Before you begin
 
@@ -52,8 +52,8 @@ Deploy Defender for Endpoint for iOS via Intune Company Portal.
 
 1. In the *Assignments* section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint for iOS app. Click **Select** and then **Next**.
 
-    >[!NOTE]
-    >The selected user group should consist of Intune enrolled users.
+    > [!NOTE]
+    > The selected user group should consist of Intune enrolled users.
 
     > [!div class="mx-imgBorder"]
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-2.png)
@@ -87,8 +87,8 @@ The Microsoft Defender for Endpoint for iOS app has specialized ability on super
 
 Intune allows you to configure the Defender for iOS app through a App Configuration policy.
 
-    >[!NOTE]
-    >This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
+    > [!NOTE]
+    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add**. Click on **Managed devices**.
 
@@ -104,12 +104,9 @@ Intune allows you to configure the Defender for iOS app through a App Configurat
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-5.png)
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
-    - Configuration Key: isSupervised
+    - Configuration Key: issupervised
     - Value type: Sting
-    - Configuration Value: {{isSupervised}}
-
-    > [!div class="mx-imgBorder"]
-    ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-6.png)
+    - Configuration Value: {{issupervised}}
 
 1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
 
