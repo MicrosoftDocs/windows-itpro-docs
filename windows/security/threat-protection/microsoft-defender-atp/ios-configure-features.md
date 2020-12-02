@@ -68,4 +68,4 @@ By default, Defender for Endpoint for iOS includes and enables the web protectio
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit [report unsafe site](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) if you want to report a website that could be phish.
+Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [report unsafe site](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
