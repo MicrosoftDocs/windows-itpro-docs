@@ -667,7 +667,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Devices**, and then click **Configuration Profiles**.
 3. Click **WHFB Certificate Enrollment**.
-4. Select **Properties**, click **Edit** next to the **Assignments** section.
+4. Select **Properties**, and then click **Edit** next to the **Assignments** section.
 5. In the **Assignments** pane, select **Selected Groups** from the **Assign to** list.  Click **Select groups to include**.
 ![WHFB SCEP Profile Assignment](images/aadjcert/profile04.png)
 6. Select the **AADJ WHFB Certificate Users** group. Click **Select**.
