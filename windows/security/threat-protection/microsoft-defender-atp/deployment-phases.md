@@ -40,10 +40,12 @@ Each section corresponds to a separate article in this solution.
 
 |Phase | Description | 
 |:-------|:-----|
-| [Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
-| [Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
-| [Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. 
+| [Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint such as stakeholder approvals, environment considerations, access permissions, and adoption order of capabilities. 
+| [Phase 2: Setup](production-deployment.md)|  Get guidance on the initial steps you need to take so that you can access the portal such as validating licensing, completing the setup wizard, and network configuration. 
+| [Phase 3: Onboard](onboarding.md) | Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities. 
 
+
+After you've completed this guide, you'll be setup with the right access permissions, your endpoints will be onboarded and reporting sensor data to the service, and capabilities such as next-generation protection and attack surface reduction will be in place.
 
 
 
@@ -54,14 +56,6 @@ Regardless of the environment architecture and method of deployment you choose o
 
 
 
-## Prepare
-Learn about what you need to consider when deploying Defender for Endpoint such as stakeholder approvals, environment considerations, access permissions, and adoption order of capabilities. 
-
-## Setup
-Get guidance on the initial steps you need to take so that you can access the portal such as validating licensing, completing the setup wizard, and network configuration. 
-
-## Onboard
-Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities.
 
 
 ## Key capabilities
