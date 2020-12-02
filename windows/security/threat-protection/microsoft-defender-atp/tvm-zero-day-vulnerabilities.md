@@ -86,7 +86,7 @@ There will be a link to mitigation options and workarounds if they are available
 
 Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. You won't be able to select a due date, since there is no specific action to perform. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
 
-![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-software-flyout-400.png)
+![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-recommendation-flyout400.png)
 
 ## Track zero-day remediation activities
 
