@@ -2550,6 +2550,19 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+## Common Data Fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action** The change that was invoked on a device inventory object.
+- **inventoryId** Device ID used for Compatibility testing
+- **objectInstanceId** Object identity which is unique within the device scope.
+- **objectType** Indicates the object type that the event applies to.
+- **syncId** A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Compatibility events
 
@@ -4413,7 +4426,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4504,7 +4517,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -5018,7 +5031,7 @@ The following fields are available:
 
 This event represents the basic metadata about the OS indicators installed on the system. The data collected with this event helps ensure the device is up to date and keeps Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -5041,8 +5054,16 @@ This event indicates that this particular data object represented by the objectI
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 
-
 ## Kernel events
+
+### IO
+
+This event indicates the number of bytes read from or read by the OS and written to or written by the OS upon system startup.
+
+The following fields are available:
+
+- **BytesRead**  The total number of bytes read from or read by the OS upon system startup.
+- **BytesWritten**  The total number of bytes written to or written by the OS upon system startup.
 
 ### Microsoft.Windows.Kernel.BootEnvironment.OsLaunch
 
