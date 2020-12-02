@@ -1,5 +1,5 @@
 ---
-title: Filter Origin Documentation (Audit Log Improvements)
+title: Filter Origin (Audit Log Improvements)
 description: Filter Origin Documentation (Audit Log Improvements)
 ms.reviewer: 
 ms.author: v-bshilpa
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: troubleshooting
 ---
 
-# Filter Origin Documentation (Audit Log Improvements)
+# Filter Origin (Audit Log Improvements)
 
 Debugging packet drops is a continuous issue to Windows customers. In the past, customers had limited information about packet drops.
 
