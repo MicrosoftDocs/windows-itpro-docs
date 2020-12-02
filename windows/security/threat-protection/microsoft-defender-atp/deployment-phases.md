@@ -27,17 +27,31 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-
-Microsoft Defender for Endpoint has the capabilities to effectively protect your enterprise from cyber threats.
-
 Learn how to deploy Microsoft Defender for Endpoint so that your enterprise can take advantage of preventative protection, post-breach detection, automated investigation, and response. 
 
 
-This solution provides guidance on the three phases of deployment. Each section corresponds to a separate article in this solution.
+This guide helps you work across stakeholders to prepare your environment and then onboard devices in a methodical way, moving from evaluation, to a meaningful pilot, to full deployment.
+
+Each section corresponds to a separate article in this solution.
 
 ![Image of deployment phases](images/deployment-guide-phases.png)
 
+
+
+|Phase | Description | 
+|:-------|:-----|
+| [Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
+| [Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
+| [Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. 
+
+
+
+
 Regardless of the environment architecture and method of deployment you choose outlined in the [Plan deployment](deployment-strategy.md) guidance, this guide is going to support you in onboarding endpoints. 
+
+
+
+
 
 
 ## Prepare
