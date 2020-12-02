@@ -389,7 +389,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. This policy setting will automatically log off a user when Windows cannot load their profile. 
 
-If Windows cannot access the user profile folder or the profile contains errors that prevent it from loading, Windows logs on the user with a temporary profile. This policy setting allows the administrator to disable this behavior, preventing Windows from loggin on the user with a temporary profile.
+If Windows cannot access the user profile folder or the profile contains errors that prevent it from loading, Windows logs on the user with a temporary profile. This policy setting allows the administrator to disable this behavior, preventing Windows from logging on the user with a temporary profile.
 
 If you enable this policy setting, Windows will not log on a user with a temporary profile. Windows logs the user off if their profile cannot be loaded.
 
@@ -462,7 +462,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. This policy setting defines a slow connection for roaming user profiles and establishes thresholds for two tests of network speed. 
 
-To determine the network performance characteristics, a connection is made to the file share storing the user's profile and 64 kilobytes of data is transfered. From that connection and data transfer, the network's latency and connection speed are determined.
+To determine the network performance characteristics, a connection is made to the file share storing the user's profile and 64 kilobytes of data is transferred. From that connection and data transfer, the network's latency and connection speed are determined.
 
 This policy setting and related policy settings in this folder together define the system's response when roaming user profiles are slow to load.
 
