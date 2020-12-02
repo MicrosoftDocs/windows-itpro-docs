@@ -48,8 +48,7 @@ iOS devices along with other platforms.
     > [!NOTE]
     > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint for iOS. Currently only enrolled devices are supported for enforcing Defender for Endpoint for iOS related device compliance policies in Intune.
 
-- Access to [Microsoft Endpoint Manager admin
-    center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization
+- Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization
 
 **System Requirements**
 
