@@ -35,7 +35,7 @@ Learn how to deploy Microsoft Defender for Endpoint so that your enterprise can 
 
 This solution provides guidance on the three phases of deployment. Each section corresponds to a separate article in this solution.
 
-![Image of deployment phases](images/deployment-phases.png)
+![Image of deployment phases](images/deployment-guide-phases.png)
 
 Regardless of the environment architecture and method of deployment you choose outlined in the [Plan deployment](deployment-strategy.md) guidance, this guide is going to support you in onboarding endpoints. 
 
