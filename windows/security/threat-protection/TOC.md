@@ -278,7 +278,7 @@
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
-#### [Privacy](microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md)
+#### [Privacy](microsoft-defender-atp/ios-privacy.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
@@ -297,6 +297,7 @@
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
+##### [Schedule scans with Microsoft Defender ATP for Linux](microsoft-defender-atp/linux-schedule-scan-atp.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
@@ -438,16 +439,8 @@
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
-### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
-
-
-
-
-
-
-
-
-
+### [Threat analytics overview](microsoft-defender-atp/threat-analytics.md)
+#### [Read the analyst report](microsoft-defender-atp/threat-analytics-analyst-reports.md)
 
 
 ## [How-to]()

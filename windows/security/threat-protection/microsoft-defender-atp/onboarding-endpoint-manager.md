@@ -104,12 +104,13 @@ needs.<br>
 In the following section, you'll create a number of configuration policies.
 
 First is a configuration policy to select which groups of users or devices will
-be onboarded to Defender for Endpoint. 
+be onboarded to Defender for Endpoint:
+
+- [Endpoint detection and response](#endpoint-detection-and-response) 
 
 Then you will continue by creating several
-different types of endpoint security policies.
+different types of endpoint security policies:
 
-- [Endpoint detection and response](#endpoint-detection-and-response)
 - [Next-generation protection](#next-generation-protection)
 - [Attack surface reduction](#attack-surface-reduction--attack-surface-reduction-rules)
 
