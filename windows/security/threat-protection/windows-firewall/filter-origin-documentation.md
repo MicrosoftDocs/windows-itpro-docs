@@ -1,6 +1,6 @@
 ---
-title: Filter Origin (Audit Log Improvements)
-description: Filter Origin Documentation (Audit Log Improvements)
+title: Filter origin audit log improvements
+description: Filter origin documentation audit log improvements
 ms.reviewer: 
 ms.author: v-bshilpa
 ms.prod: w10
