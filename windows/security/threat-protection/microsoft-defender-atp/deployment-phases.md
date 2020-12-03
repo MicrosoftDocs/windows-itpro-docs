@@ -63,12 +63,14 @@ Regardless of the environment architecture and method of deployment you choose o
 While Microsoft Defender for Endpoint provides many capabilities, the primary purpose of this deployment guide is to get you started by onboarding devices. In addition to onboarding, this guidance gets you started with the following capabilities.
 
 
+
 Capability | Description 
 :---|:---
 Endpoint detection and response | Endpoint detection and response capabilities are put in place to detect, investigate, and respond to intrusion attempts and active breaches.
 Next-generation protection | To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 Attack surface reduction |  Provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
+All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ## Scope
 
