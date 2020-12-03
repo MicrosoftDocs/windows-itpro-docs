@@ -32,7 +32,7 @@ Plan your Microsoft Defender for Endpoint deployment so that you can maximize th
 This solution provides guidance on how to identify your environment architecture, select the type of deployment tool that best fits your needs, and guidance on how to configure capabilities.
 
 
-![Image of deployment flow](images/plan-deployment.png)
+![Image of deployment flow](images/deployment-guide-plan.png)
 
 
 ## Step 1: Identify architecture
