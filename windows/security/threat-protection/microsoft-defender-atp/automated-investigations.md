@@ -99,7 +99,7 @@ The following table shows the relationship between PUA protection and automation
 |PUA protection setting <br/>(Microsoft Defender Antivirus)  |PUA protection enabled <br/>(AIR)  |PUA protection disabled <br/>(AIR)  |
 |---------|---------|---------|
 |Enabled     |PUA remediated by Microsoft Defender Antivirus and/or AIR        |PUA remediated by Microsoft Defender Antivirus         |
-|Audit mode     |PUA remediated by AIR         |PUA detected but not remediated         |
+|Audit mode     |PUA remediated by AIR         |PUA detected but not remediated if **Allow or block file** is turned on <br/><br/>PUA remediated if **Always remediate PUA** is turned on         |
 |Disabled     |PUA remediated by AIR         |PUA not remediated         |
 
 To configure PUA protection in AIR, go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. Choose **Settings** > **Advanced features**, and then turn on **Always remediate PUA** (or **Allow or block file**).  
