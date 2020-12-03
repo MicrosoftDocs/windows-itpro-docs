@@ -96,7 +96,7 @@ As mentioned earlier, the [level of automation](automation-levels.md) set for yo
 The following table shows the relationship between PUA protection and automation levels:
 
 
-|PUA protection setting  |Column2  |Column3  |
+|PUA protection setting  |Microsoft Defender Antivirus  |Automated investigation and remediation  |
 |---------|---------|---------|
 |Row1     |         |         |
 |Row2     |         |         |
