@@ -83,7 +83,7 @@ As verdicts are reached, automated investigations can result in one or more reme
 Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team.
 
 > [!NOTE]
-> Additional security settings, such as protection from potentially unwanted applications, can also affect whether remediation actions are taken automatically. See section, [PUA protection and automatic remediation](#pua-protection-and-automatic-remediation), for more details.
+> Additional security settings, such as protection from potentially unwanted applications, can also affect whether remediation actions are taken automatically. For more information, see [PUA protection and automatic remediation](#pua-protection-and-automatic-remediation) (in this article).
 
 All remediation actions, whether pending or completed, can be viewed in Action Center. If necessary, your security operations team can undo a remediation action. (See [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).)
 
