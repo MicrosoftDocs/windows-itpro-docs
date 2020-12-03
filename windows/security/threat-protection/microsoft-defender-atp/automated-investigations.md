@@ -32,7 +32,7 @@ ms.custom: AIR
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
 
-Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation capabilities that can help your security operations team address threats more efficiently and effectively. 
+Your security operations team receives an alert whenever a malicious or suspicious artifact is detected by Microsoft Defender for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. 
 
 Watch the following video to see how automated investigation and remediation works:
 
@@ -48,7 +48,7 @@ Automated investigation uses various inspection algorithms and processes used by
 When an alert is triggered, a security playbook goes into effect. Depending on the security playbook, an automated investigation can start. For example, suppose a malicious file resides on a device. When that file is detected, an alert is triggered, and the automated investigation process begins. Microsoft Defender for Endpoint checks to see if the malicious file is present on any other devices in the organization. Details from the investigation, including verdicts (*Malicious*, *Suspicious*, and *No threats found*) are available during and after the automated investigation.
 
 >[!NOTE]
->Currently, automated investigation only supports the following OS versions:
+>Currently, AIR only supports the following OS versions:
 >- Windows Server 2019
 >- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
 >- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
@@ -96,11 +96,15 @@ As mentioned earlier, the [level of automation](automation-levels.md) set for yo
 The following table shows the relationship between PUA protection and automation levels:
 
 
-|PUA protection setting  |Microsoft Defender Antivirus  |Automated investigation and remediation  |
+|PUA protection setting <br/>(Microsoft Defender Antivirus)  |PUA protection enabled <br/>(AIR)  |PUA protection disabled <br/>(AIR)  |
 |---------|---------|---------|
-|Row1     |         |         |
-|Row2     |         |         |
-|Row3     |         |         |
+|Enabled     |PUA remediated by Microsoft Defender Antivirus and/or AIR        |PUA remediated by Microsoft Defender Antivirus         |
+|Audit mode     |PUA remediated by AIR         |PUA detected but not remediated         |
+|Disabled     |PUA remediated by AIR         |PUA not remediated         |
+
+To configure PUA protection in AIR, go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. Choose **Settings** > **Advanced features**, and then turn on **Always remediate PUA** (or **Allow or block file**).  
+
+To configure PUA protection in Microsoft Defender Antivirus, see [Configure PUA protection in Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus#configure-pua-protection-in-microsoft-defender-antivirus). 
 
 
 ## Next steps
