@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 11/15/2017
+ms.date: 11/19/2020
 ---
 
 # MDM enrollment of Windows 10-based devices
@@ -248,33 +248,6 @@ To create a local account and connect the device:
 
    After you complete the flow, your device will be connected to your organization’s MDM.
    
-
-### Connect to MDM on a phone (enroll in device management)
-
-1.  Launch the Settings app, and then select **Accounts**.
-
-    ![phone settings](images/unifiedenrollment-rs1-38.png)
-
-2.  Select **Access work or school**.
-
-    ![phone settings](images/unifiedenrollment-rs1-39.png)
-
-3.  Select the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
-
-    ![access work or school page](images/unifiedenrollment-rs1-40.png)
-
-4.  Enter your work email address.
-
-    ![enter your email address](images/unifiedenrollment-rs1-41.png)
-
-5.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
-
-    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
-
-6.  After you complete the flow, your device will be connected to your organization’s MDM.
-
-    ![completed mdm enrollment](images/unifiedenrollment-rs1-42.png)
-
 ### Help with connecting personally-owned devices
 
 There are a few instances where your device may not be able to connect to work.

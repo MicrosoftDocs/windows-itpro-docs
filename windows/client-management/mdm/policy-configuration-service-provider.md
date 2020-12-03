@@ -168,6 +168,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ActiveXInstallService policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-activexinstallservice.md#admx-activexinstallservice-axisurlzonepolicies" id="admx-activexinstallservice-axisurlzonepolicies">ADMX_ActiveXInstallService/AxISURLZonePolicies</a>
+  </dd>
+</dl>
+
 ### ADMX_AddRemovePrograms policies
 <dl>
   <dd>
@@ -237,6 +245,51 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_AppxPackageManager policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-appxpackagemanager.md#admx-appxpackagemanager-allowdeploymentinspecialprofiles" id="admx-appxpackagemanager-allowdeploymentinspecialprofiles">ADMX_AppxPackageManager/AllowDeploymentInSpecialProfiles</a>
+  </dd>
+</dl>
+
+### ADMX_AppXRuntime policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeapplicationcontenturirules" id="admx-appxruntime-appxruntimeapplicationcontenturirules">ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockfileelevation" id="admx-appxruntime-appxruntimeblockfileelevation">ADMX_AppXRuntime/AppxRuntimeBlockFileElevation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockhostedappaccesswinrt" id="admx-appxruntime-appxruntimeblockhostedappaccesswinrt">ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-appxruntime.md#admx-appxruntime-appxruntimeblockprotocolelevation" id="admx-appxruntime-appxruntimeblockprotocolelevation">ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation</a>
+  </dd>
+</dl>
+
+### ADMX_AttachmentManager policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-estimatefilehandlerrisk" id="admx-attachmentmanager-am-estimatefilehandlerrisk">ADMX_AttachmentManager/AM_EstimateFileHandlerRisk</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setfilerisklevel" id="admx-attachmentmanager-am-setfilerisklevel">ADMX_AttachmentManager/AM_SetFileRiskLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-sethighriskinclusion" id="admx-attachmentmanager-am-sethighriskinclusion">ADMX_AttachmentManager/AM_SetHighRiskInclusion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setlowriskinclusion" id="admx-attachmentmanager-am-setlowriskinclusion">ADMX_AttachmentManager/AM_SetLowRiskInclusion</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-attachmentmanager.md#admx-attachmentmanager-am-setmodriskinclusion" id="admx-attachmentmanager-am-setmodriskinclusion">ADMX_AttachmentManager/AM_SetModRiskInclusion</a>
+  </dd>
+</dl>
+
 ### ADMX_AuditSettings policies
 
 <dl>
@@ -244,6 +297,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-auditsettings.md#admx-auditsettings-includecmdline" id="admx-auditsettings-includecmdline">ADMX_AuditSettings/IncludeCmdLine</a>
   </dd>
 </dl>
+
 
 ### ADMX_Bits policies
 
@@ -314,6 +368,99 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ControlPanel policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-disallowcpls" id="admx-controlpanel-disallowcpls">ADMX_ControlPanel/DisallowCpls</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-forceclassiccontrolpanel" id="admx-controlpanel-forceclassiccontrolpanel">ADMX_ControlPanel/ForceClassicControlPanel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-nocontrolpanel" id="admx-controlpanel-nocontrolpanel">ADMX_ControlPanel/NoControlPanel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpanel.md#admx-controlpanel-restrictcpls" id="admx-controlpanel-restrictcpls">ADMX_ControlPanel/RestrictCpls</a>
+  </dd>
+</dl>
+
+### ADMX_ControlPanelDisplay policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-display-disable" id="">ADMX_ControlPanelDisplay/CPL_Display_Disable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-display-hidesettings" id="">ADMX_ControlPanelDisplay/CPL_Display_HideSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablecolorschemechoice" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableColorSchemeChoice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablethemechange" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableThemeChange</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-disablevisualstyle" id="">ADMX_ControlPanelDisplay/CPL_Personalization_DisableVisualStyle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-enablescreensaver" id="admx-controlpaneldisplay-cpl-personalization-enablescreensaver">ADMX_ControlPanelDisplay/CPL_Personalization_EnableScreenSaver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen" id="admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_ForceDefaultLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-lockfontsize" id="admx-controlpaneldisplay-cpl-personalization-lockfontsize">ADMX_ControlPanelDisplay/CPL_Personalization_LockFontSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen" id="admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground" id="admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground">ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingStartMenuBackground</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui" id="admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui">ADMX_ControlPanelDisplay/CPL_Personalization_NoColorAppearanceUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui" id="admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui">ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopBackgroundUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui" id="admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui">ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopIconsUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nolockscreen" id="admx-controlpaneldisplay-cpl-personalization-nolockscreen">ADMX_ControlPanelDisplay/CPL_Personalization_NoLockScreen</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nomousepointersui" id="admx-controlpaneldisplay-cpl-personalization-nomousepointersui">ADMX_ControlPanelDisplay/CPL_Personalization_NoMousePointersUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-noscreensaverui" id="admx-controlpaneldisplay-cpl-personalization-noscreensaverui">ADMX_ControlPanelDisplay/CPL_Personalization_NoScreenSaverUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-nosoundschemeui" id="admx-controlpaneldisplay-cpl-personalization-nosoundschemeui">ADMX_ControlPanelDisplay/CPL_Personalization_NoSoundSchemeUI</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-personalcolors" id="admx-controlpaneldisplay-cpl-personalization-personalcolors">ADMX_ControlPanelDisplay/CPL_Personalization_PersonalColors</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-screensaverissecure" id="admx-controlpaneldisplay-cpl-personalization-screensaverissecure">ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverIsSecure</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-screensavertimeout" id="admx-controlpaneldisplay-cpl-personalization-screensavertimeout">ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverTimeOut</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-setscreensaver" id="admx-controlpaneldisplay-cpl-personalization-setscreensaver">ADMX_ControlPanelDisplay/CPL_Personalization_SetScreenSaver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-settheme" id="admx-controlpaneldisplay-cpl-personalization-settheme">ADMX_ControlPanelDisplay/CPL_Personalization_SetTheme</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-setvisualstyle" id="admx-controlpaneldisplay-cpl-personalization-setvisualstyle">ADMX_ControlPanelDisplay/CPL_Personalization_SetVisualStyle</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-controlpaneldisplay.md#admx-controlpaneldisplay-cpl-personalization-startbackground" id="admx-controlpaneldisplay-cpl-personalization-startbackground">ADMX_ControlPanelDisplay/CPL_Personalization_StartBackground</a>
+  </dd>
+</dl>
 
 ### ADMX_Cpls policies
 
@@ -332,6 +479,30 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_CredentialProviders policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-allowdomaindelaylock" id="admx-credentialproviders-allowdomaindelaylock">ADMX_CredentialProviders/AllowDomainDelayLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-defaultcredentialprovider" id="admx-credentialproviders-defaultcredentialprovider">ADMX_CredentialProviders/DefaultCredentialProvider</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credentialproviders.md#admx-credentialproviders-excludedcredentialproviders" id="admx-credentialproviders-excludedcredentialproviders">ADMX_CredentialProviders/ExcludedCredentialProviders</a>
+  </dd>
+</dl>
+
+### ADMX_CredUI policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-credui.md#admx-credui-enablesecurecredentialprompting" id="admx-credui-enablesecurecredentialprompting">ADMX_CredUI/EnableSecureCredentialPrompting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-credui.md#admx-credui-nolocalpasswordresetquestions" id="admx-credui-nolocalpasswordresetquestions">ADMX_CredUI/NoLocalPasswordResetQuestions</a>
+  </dd>
+</dl>
 
 ###  ADMX_CtrlAltDel policies  
 <dl>
@@ -2366,6 +2537,35 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_UserProfiles policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-cleanupprofiles" id="admx-userprofiles-cleanupprofiles">ADMX_UserProfiles/CleanupProfiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-dontforceunloadhive" id="admx-userprofiles-dontforceunloadhive">ADMX_UserProfiles/DontForceUnloadHive</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-leaveappmgmtdata" id="admx-userprofiles-leaveappmgmtdata">ADMX_UserProfiles/LeaveAppMgmtData</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-limitsize" id="admx-userprofiles-limitsize">ADMX_UserProfiles/LimitSize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-profileerroraction" id="admx-userprofiles-profileerroraction">ADMX_UserProfiles/ProfileErrorAction</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-slowlinktimeout" id="admx-userprofiles-slowlinktimeout">ADMX_UserProfiles/SlowLinkTimeOut</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-user-home" id="admx-userprofiles-user-home">ADMX_UserProfiles/USER_HOME</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-userprofiles.md#admx-userprofiles-userinfoaccessaction" id="admx-userprofiles-userinfoaccessaction">ADMX_UserProfiles/UserInfoAccessAction</a>
+  </dd>
+</dl>
+
 ### ADMX_W32Time policies  
 
 <dl>
@@ -2756,6 +2956,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-wininit.md#admx-wininit-shutdowntimeouthungsessionsdescription" id="admx-wininit-shutdowntimeouthungsessionsdescription">ADMX_WinInit/ShutdownTimeoutHungSessionsDescription</a>
+  </dd>
+</dl>
+
+### ADMX_WinLogon policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-customshell" id="admx-winlogon-customshell">ADMX_WinLogon/CustomShell</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-displaylastlogoninfodescription" id="admx-winlogon-displaylastlogoninfodescription">ADMX_WinLogon/DisplayLastLogonInfoDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-logonhoursnotificationpolicydescription" id="admx-winlogon-logonhoursnotificationpolicydescription">ADMX_WinLogon/LogonHoursNotificationPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-logonhourspolicydescription" id="admx-winlogon-logonhourspolicydescription">ADMX_WinLogon/LogonHoursPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-reportcachedlogonpolicydescription" id="admx-winlogon-reportcachedlogonpolicydescription">ADMX_WinLogon/ReportCachedLogonPolicyDescription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-winlogon.md#admx-winlogon-softwaresasgeneration" id="admx-winlogon-softwaresasgeneration">ADMX_WinLogon/SoftwareSASGeneration</a>
   </dd>
 </dl>
 

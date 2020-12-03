@@ -54,7 +54,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     > [!NOTE]
     > This feature is available in version 100.90.70 or newer.
 
-    This feature is enabled by default on the `Dogfood` and `InsisderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
+    This feature is enabled by default on the `Dogfood` and `InsiderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
  
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -78,16 +78,63 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real_time_protection_statistics # you can use ‘> stat.log’ to redirect to file
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+    ```
+    > [!NOTE]
+    > Using ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
+
+    The output of this command will show all processes and their associated scan activity. 
+
+3. On your Linux system, download the sample Python parser **high_cpu_parser.py** using the command: 
+
+    ```bash
+    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    ```
+    The output of this command should be similar to the following:
+
+    ```Output
+    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1020 [text/plain]
+    Saving to: 'high_cpu_parser.py'
+
+    100%[===========================================>] 1,020    --.-K/s   in 0s
+    ```
+4. Next, type the following commands:
+    ```bash
+    chmod +x high_cpu_parser.py
+    ```
+    ```bash
+    cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-    The output of this command will show all processes and their associated scan activity. To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+      The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is te process name, and the last column is the number of scanned files, sorted by impact.
+    
+    For example, the output of the command will be something like the below: 
 
-    > [!NOTE]
+    ```Output
+    ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+	27432 None 76703
+	73467 actool     1249
+	73914 xcodebuild 1081
+	73873 bash 1050
+	27475 None 836
+	1    launchd    407
+	73468 ibtool     344
+	549  telemetryd_v1   325
+	4764 None 228
+	125  CrashPlanService 164
+    ```
+     
+    To improve the performance of Defender for Endpoint for Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).                
+    
+    >[!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
-3. Use the `top` command-line tool and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
+5. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-4. Configure Defender for Endpoint for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+    For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).    
 
-    For more details, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+
