@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 10/21/2020
+ms.date: 12/03/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -59,7 +59,7 @@ When an alert is triggered, a security playbook goes into effect. Depending on t
 During and after an automated investigation, you can view details about the investigation. Select a triggering alert to view the investigation details. From there, you can go to the **Investigation graph**, **Alerts**, **Devices**, **Evidence**, **Entities**, and **Log** tabs.
 
 |Tab |Description |
-|--|--|
+|:--|:--|
 |**Alerts**| The alert(s) that started the investigation.|
 |**Devices** |The device(s) where the threat was seen.|
 |**Evidence** |The entities that were found to be malicious during an investigation.|
@@ -82,20 +82,35 @@ As alerts are triggered, and an automated investigation runs, a verdict is gener
 
 As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. (See [Remediation actions](manage-auto-investigation.md#remediation-actions).)  
 
-Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team. 
+Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team.
+
+> [!NOTE]
+> Additional security settings, such as protection from potentially unwanted applications, can also affect whether remediation actions are taken automatically. See section, [PUA protection and automatic remediation](#pua-protection-and-automatic-remediation), for more details.
 
 All remediation actions, whether pending or completed, can be viewed in Action Center. If necessary, your security operations team can undo a remediation action. (See [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).)
+
+## PUA protection and automatic remediation
+
+As mentioned earlier, the [level of automation](automation-levels.md) set for your organization affects whether remediation actions occur automatically or only upon approval. [Protection from potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA protection), included in Microsoft Defender Antivirus, can also affect whether certain remediation actions are taken automatically. 
+
+The following table shows the relationship between PUA protection and automation levels:
+
+
+|PUA protection setting  |Column2  |Column3  |
+|---------|---------|---------|
+|Row1     |         |         |
+|Row2     |         |         |
+|Row3     |         |         |
+
 
 ## Next steps
 
 - [Get an overview of the automated investigations dashboard](manage-auto-investigation.md)
-
 - [Learn more about automation levels](automation-levels.md)
-
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## See also
 
+- [PUA protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Automated investigation and response in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-
 - [Automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
