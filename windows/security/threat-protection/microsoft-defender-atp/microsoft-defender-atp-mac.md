@@ -69,9 +69,9 @@ The three most recent major releases of macOS are supported.
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> With the agent version 101.13.75+, we released a change that removed conditions when Microsoft Defender for Endpoint was triggering the macOS Big Sur bug that manifests into a kernel panic. With that change Defender code path should no longer directly facilitate the kernel panic.
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
-- 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
