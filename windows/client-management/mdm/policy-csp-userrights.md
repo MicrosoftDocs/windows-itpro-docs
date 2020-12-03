@@ -76,9 +76,6 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
   If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
 
 > [!NOTE]
-> There is currently a reporting issue in the Microsoft Endpoint Manager (MEM) console which results in the setting reporting back a 'Remediation failed' (0x87d1fde8) error, even when the setting is successfully applied. To verify whether the setting has applied successfully, check the local Windows 10 device: Event Viewer>Applications and Services Logs<Microsoft>Windows>DeviceManagement-Enterprise-Diagnostics-Provider>Admin>Event ID 814. This issue is the result of the use of the CDATA tags, which are neccesary when more than a single entry is required. If there is only a single entry, the CDATA tags can be omitted - which will resolve the reporting false positive.
-
-> [!NOTE]
 > `&#xF000;` is the entity encoding of 0xF000.
 
 For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
@@ -87,7 +84,7 @@ For example, the following syntax grants user rights to Authenticated Users and 
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
-For example, the following syntax grants user rights to two specific users from Contoso, user1 and user2:
+For example, the following syntax grants user rights to two specific Azure Active Directory (AAD) users from Contoso, user1 and user2:
 
 ```xml
 <![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>
