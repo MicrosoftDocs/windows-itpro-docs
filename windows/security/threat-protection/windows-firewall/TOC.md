@@ -165,7 +165,7 @@
 
 ## [Troubleshooting]()
 ### [Troubleshooting UWP app connectivity issues in Windows Firewall](troubleshooting-uwp-firewall.md)
-### [Firewall Settings Lost on Upgrade](firewall-settings-lost-on-upgrade.md)
+### [Firewall settings lost on upgrade](firewall-settings-lost-on-upgrade.md)
 
 
 
