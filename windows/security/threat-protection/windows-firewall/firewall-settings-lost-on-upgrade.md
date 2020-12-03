@@ -1,6 +1,6 @@
 ---
-title: Firewall Settings Lost on Upgrade
-description: Firewall Settings Lost on Upgrade
+title: Firewall settings lost on upgrade
+description: Firewall settings lost on upgrade
 ms.reviewer: 
 ms.author: v-bshilpa
 ms.prod: w10
@@ -15,13 +15,13 @@ ms.collection:
 ms.topic: troubleshooting
 ---
 
-# Firewall Settings Lost on Upgrade
+# Firewall settings lost on upgrade
 
-This article describes a scenario where previously enabled firewall rules revert to a disabled state after performing a Windows upgrade.
+This article describes a scenario where previously enabled Firewall rules revert to a disabled state after performing a Windows upgrade.
 
-## Rule Groups
+## Rule groups
 
-Individual built-in firewall rules are categorized within a group. For example, the following individual rules form part of the ‘Remote Desktop’ group.
+Individual built-in Firewall rules are categorized within a group. For example, the following individual rules form part of the Remote Desktop group.
 
 - Remote Desktop – Shadow (TCP-In)
 
@@ -29,7 +29,7 @@ Individual built-in firewall rules are categorized within a group. For example, 
 
 - Remote Desktop – User-Mode (UDP-In)
 
-Other examples include the Core Networking, File and Print Sharing, and Network Discovery groups. Admins can filter on individual categories in the firewall interface (wf.msc) by selecting and right-clicking on ‘**Inbound**’ or ‘**Outbound Rules**’ and selecting ‘**Filter by Group**’; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
+Other examples include the core networking, file and print sharing, and network discovery groups. Admins can filter on individual categories in the Firewall interface (wf.msc) by selecting and right-clicking on **Inbound** or **Outbound Rules** and selecting **Filter by Group**; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
 
 ```Powershell
 Get-NetFirewallRule -Group <groupName>
