@@ -182,6 +182,7 @@
 #### [ADMX_CredSsp](policy-csp-admx-credssp.md)
 #### [ADMX_CtrlAltDel](policy-csp-admx-ctrlaltdel.md)
 #### [ADMX_DataCollection](policy-csp-admx-datacollection.md)
+#### [ADMX_Desktop](policy-csp-admx-desktop.md)
 #### [ADMX_DeviceInstallation](policy-csp-admx-devicenstallation.md)
 #### [ADMX_DeviceSetup](policy-csp-admx-devicesetup.md)
 #### [ADMX_DigitalLocker](policy-csp-admx-digitallocker.md)

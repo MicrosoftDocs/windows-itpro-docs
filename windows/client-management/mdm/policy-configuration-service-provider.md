@@ -385,6 +385,98 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Desktop policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-ad-enablefilter" id="admx-desktop-ad-enablefilter">ADMX_Desktop/AD_EnableFilter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-ad-hidedirectoryfolder" id="admx-desktop-ad-hidedirectoryfolder">ADMX_Desktop/AD_HideDirectoryFolder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-ad-querylimit" id="admx-desktop-ad-querylimit">ADMX_Desktop/AD_QueryLimit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-forceactivedesktopon" id="admx-desktop-forceactivedesktopon">ADMX_Desktop/ForceActiveDesktopOn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-noactivedesktop" id="admx-desktop-noactivedesktop">ADMX_Desktop/NoActiveDesktop</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-noactivedesktopchanges" id="admx-desktop-noactivedesktopchanges">ADMX_Desktop/NoActiveDesktopChanges</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nodesktop" id="admx-desktop-nodesktop">ADMX_Desktop/NoDesktop</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nodesktopcleanupwizard" id="admx-desktop-nodesktopcleanupwizard">ADMX_Desktop/NoDesktopCleanupWizard</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nointerneticon" id="admx-desktop-nointerneticon">ADMX_Desktop/NoInternetIcon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nomycomputericon" id="admx-desktop-nomycomputericon">ADMX_Desktop/NoMyComputerIcon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nomydocumentsicon" id="admx-desktop-nomydocumentsicon">ADMX_Desktop/NoMyDocumentsIcon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nonethood" id="admx-desktop-nonethood">ADMX_Desktop/NoNetHood</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nopropertiesmycomputer" id="admx-desktop-nopropertiesmycomputer">ADMX_Desktop/NoPropertiesMyComputer</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nopropertiesmydocuments" id="admx-desktop-nopropertiesmydocuments">ADMX_Desktop/NoPropertiesMyDocuments</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-norecentdocsnethood" id="admx-desktop-norecentdocsnethood">ADMX_Desktop/NoRecentDocsNetHood</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-norecyclebinicon" id="admx-desktop-norecyclebinicon">ADMX_Desktop/NoRecycleBinIcon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-norecyclebinproperties" id="admx-desktop-norecyclebinproperties">ADMX_Desktop/NoRecycleBinProperties</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nosavesettings" id="admx-desktop-nosavesettings">ADMX_Desktop/NoSaveSettings</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-nowindowminimizingshortcuts" id="admx-desktop-nowindowminimizingshortcuts">ADMX_Desktop/NoWindowMinimizingShortcuts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-wallpaper" id="admx-desktop-wallpaper">ADMX_Desktop/Wallpaper</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-atc-disableadd" id="admx-desktop-sz-atc-disableadd">ADMX_Desktop/sz_ATC_DisableAdd</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-atc-disableclose" id="admx-desktop-sz-atc-disableclose">ADMX_Desktop/sz_ATC_DisableClose</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-atc-disabledel" id="admx-desktop-sz-atc-disabledel">ADMX_Desktop/sz_ATC_DisableDel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-atc-disableedit" id="admx-desktop-sz-atc-disableedit">ADMX_Desktop/sz_ATC_DisableEdit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-atc-nocomponents" id="admx-desktop-sz-atc-nocomponents">ADMX_Desktop/sz_ATC_NoComponents</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-admincomponents-title" id="admx-desktop-sz-admincomponents-title">ADMX_Desktop/sz_AdminComponents_Title</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-db-dragdropclose" id="admx-desktop-sz-db-dragdropclose">ADMX_Desktop/sz_DB_DragDropClose</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-db-moving" id="admx-desktop-sz-db-moving">ADMX_Desktop/sz_DB_Moving</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-dwp-nohtmlpaper" id="admx-desktop-sz-dwp-nohtmlpaper">ADMX_Desktop/sz_DWP_NoHTMLPaper</a>
+  </dd>
+</dl>
+
 ### ADMX_DeviceInstallation policies  
 
 <dl>
