@@ -46,13 +46,13 @@ If you can reproduce a problem, increase the logging level, run the system for s
 
 3. Run `sudo mdatp diagnostic create` to back up the Microsoft Defender for Endpoint logs. The files will be stored inside a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
-  > [!TIP]
-  > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
+   > [!TIP]
+   > By default, diagnostic logs are saved to `/Library/Application Support/Microsoft/Defender/wdavdiag/`. To change the directory where diagnostic logs are saved, pass `--path [directory]` to the below command, replacing `[directory]` with the desired directory.
 
    ```bash
    sudo mdatp diagnostic create
    ```
-   ```Output
+   ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
 
@@ -61,7 +61,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
    ```bash
    mdatp log level set --level info
    ```
-   ```Output
+   ```console
    Log level configured successfully
    ```
 
@@ -113,7 +113,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |EDR          |Turn on/off EDR preview for Mac            |`mdatp edr early-preview [enabled/disabled]`                                      |
 |EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |Add Group Id                               |`mdatp edr group-ids --group-id [group]`                                          |
+|EDR          |Add Group ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 
 ### How to enable autocompletion
 
@@ -131,7 +131,7 @@ To enable autocompletion in `zsh`:
    cat ~/.zshrc | grep autoload
    ```
 
-- If the above command does not produce any output, you can enable autocompletion using the following command:
+- If the preceding command does not produce any output, you can enable autocompletion using the following command:
 
    ```zsh
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc

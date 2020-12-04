@@ -150,4 +150,4 @@ In alignment with macOS evolution, we are preparing a Microsoft Defender for End
 
 - For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
 
-- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md)
+- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md).
