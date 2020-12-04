@@ -49,12 +49,10 @@ Microsoft Defender for Endpoint seamlessly integrates with existing security sol
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of AttackIQ logo](images/attackiq-logo.png)| [AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502) | AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
-
 ![Image of Azure Sentinel logo](images/sentinel-logo.png)| [AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705) | Stream alerts from Microsoft Defender for Endpoint into Azure Sentinel 
 ![Image of Cymulate logo](images/cymulate-logo.png) | [Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)| Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Image of Elastic security logo](images/elastic-security-logo.png) | [Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303) | Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Configure IBM QRadar to collect detections from Defender for Endpoint 
-
 ![Image of Micro Focus ArcSight logo](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Use Micro Focus ArcSight to pull Defender for Endpoint detections
 ![Image of RSA NetWitness logo](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness leveraging Microsoft Graph Security API
 ![Image of SafeBreach logo](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
