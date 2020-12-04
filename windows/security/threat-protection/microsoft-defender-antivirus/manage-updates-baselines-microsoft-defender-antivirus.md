@@ -355,10 +355,10 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 <details>
 <summary>1.1.2012.01</summary>
 
-&ensp;Package version: **1.1.2012.01**  
-&ensp;Platform version: **4.18.2010.7** 
-&ensp;Engine version: **1.17600.5**
-&ensp;Signature version: **1.327.1991.0**  
+&ensp;Package version: **1.1.2012.01**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.1991.0**    
     
 ### Fixes
 - None
@@ -369,10 +369,10 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 </details><details>
 <summary>1.1.2011.02</summary>
 
-&ensp;Package version: **1.1.2011.02**  
-&ensp;Platform version: **4.18.2010.7** 
-&ensp;Engine version: **1.17600.5**
-&ensp;Signature version: 1.327.658.0  
+&ensp;Package version: **1.1.2011.02**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.658.0**    
     
 ### Fixes
 - None
@@ -383,10 +383,10 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 </details><details>
 <summary>1.1.2011.01</summary>
 
-&ensp;Package version: **1.1.2011.01**  
-&ensp;Platform version: **4.18.2009.7** 
-&ensp;Engine version: **1.17600.5**
-&ensp;Signature version: 1.327.344.0  
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2009.7**  
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.344.0**    
     
 ### Fixes
 - None
@@ -397,10 +397,10 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 </details><details>
 <summary>1.1.2009.10</summary>
 
-&ensp;Package version: **1.1.2011.01**  
-&ensp;Platform version: **4.18.2008.9** 
-&ensp;Engine version: **1.17400.5**
-&ensp;Signature version: 1.327.2216.0  
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2008.9**   
+&ensp;Engine version: **1.17400.5**  
+&ensp;Signature version: **1.327.2216.0**    
     
 ### Fixes
 - None
