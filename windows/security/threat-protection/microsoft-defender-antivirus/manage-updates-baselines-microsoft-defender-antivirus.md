@@ -353,6 +353,7 @@ Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsof
 
 | Article | Description  |
 |:---|:---|
+|[Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Review antimalware update packages for your OS installation images (WIM and VHD files). This feature supports OS installation images for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016.  |
 |[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources. |
 |[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded. |
 |[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in. |
