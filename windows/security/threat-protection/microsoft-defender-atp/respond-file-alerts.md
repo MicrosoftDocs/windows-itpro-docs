@@ -1,6 +1,6 @@
 ---
 title: Take response actions on a file in Microsoft Defender ATP
-description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
+description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -217,6 +217,7 @@ Results of deep analysis are matched against threat intelligence and any matches
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
 
+<br/>
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0] 
 
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
@@ -243,7 +244,8 @@ When the sample is collected, Defender for Endpoint runs the file in is a secure
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
+    > [!NOTE]
+    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
