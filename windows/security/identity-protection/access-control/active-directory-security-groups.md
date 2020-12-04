@@ -1950,7 +1950,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain local</p></td>
+<td><p>Domain Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
