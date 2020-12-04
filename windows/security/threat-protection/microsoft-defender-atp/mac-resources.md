@@ -117,13 +117,13 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 ### How to enable autocompletion
 
-To enable autocompletion in `Bash`, run the following command and restart the Terminal session:
+To enable autocompletion in bash, run the following command and restart the Terminal session:
 
 ```bash
 echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
-To enable autocompletion in `zsh`:
+To enable autocompletion in zsh:
 
 - Check whether autocompletion is enabled on your device:
 
@@ -152,4 +152,4 @@ To enable autocompletion in `zsh`:
 
 ## Microsoft Defender for Endpoint portal information
 
-[This blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.
+[EDR capabilities for macOS have now arrived](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801), on the Microsoft Defender for Endpoint blog, provides detailed guidance on what to expect in Microsoft Defender for Endpoint Security Center.
