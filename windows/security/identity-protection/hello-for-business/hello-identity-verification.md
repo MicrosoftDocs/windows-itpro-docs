@@ -34,6 +34,18 @@ Windows Hello addresses the following problems with passwords:
 > | :---: | :---: | :---: |
 > | [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
 
+:::row::
+   :::column:::
+   [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md)
+   :::column-end:::
+   :::column:::
+   [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md)
+   :::column-end:::
+   :::column:::
+   [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md)
+   :::column-end:::
+:::row-end:::   
+
 ## Prerequisites
 
 ### Cloud Only Deployment
