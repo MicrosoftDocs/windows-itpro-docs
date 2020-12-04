@@ -91,8 +91,8 @@ Android
 
 Microsoft Defender for Endpoint on iOS is our mobile threat defense solution for devices
 running iOS 11.0 and higher. Both Supervised and Unsupervised devices are supported. 
-On iOS, we offer web protection which includes anti-phishing, blocking of unsafe connections, and 
-setting of custom indicators. For more information about the key features and benefits, 
+On iOS, we offer web protection which includes anti-phishing, blocking unsafe connections, and 
+setting custom indicators. For more information about the key features and benefits, 
 read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint 
