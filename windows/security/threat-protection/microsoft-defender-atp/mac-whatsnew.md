@@ -27,10 +27,17 @@ ms.topic: conceptual
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> With the agent version 101.13.75+, we released a change that removed conditions when Microsoft Defender for Endpoint was triggering the macOS Big Sur bug that manifests into a kernel panic. With that change Defender code path should no longer directly facilitate the kernel panic.
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+
+## 101.15.26
+
+- Improved the reliability of the agent when running on macOS 11 Big Sur
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Performance improvements & bug fixes
 
 ## 101.13.75
 
+- Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic
 - Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
 - Bug fixes
 

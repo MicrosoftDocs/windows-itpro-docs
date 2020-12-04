@@ -66,12 +66,12 @@ There are several methods and deployment tools that you can use to install and c
 The three most recent major releases of macOS are supported.
 
 > [!IMPORTANT]
-> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+> On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> With the agent version 101.13.75+, we released a change that removed conditions when Microsoft Defender for Endpoint was triggering the macOS Big Sur bug that manifests into a kernel panic. With that change Defender code path should no longer directly facilitate the kernel panic.
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
-- 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
@@ -98,7 +98,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>Download the spreadsheet here: [mdatp-urls.xlsx](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx).
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 - Proxy autoconfig (PAC)
@@ -144,10 +144,10 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## macOS kernel and system extensions
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. Visit [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md) for relevant details.
+In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint for Mac update that leverages system extensions instead of kernel extensions. For relevant details, see [What's new in Microsoft Defender for Endpoint for Mac](mac-whatsnew.md).
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint for Mac](mac-resources.md).
 
-- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md)
+- [Privacy for Microsoft Defender for Endpoint for Mac](mac-privacy.md).
