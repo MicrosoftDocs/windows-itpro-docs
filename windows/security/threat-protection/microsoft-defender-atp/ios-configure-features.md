@@ -29,10 +29,10 @@ ms.topic: conceptual
 
 ## Configure compliance policy against jailbroken devices
 
-To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you setup the following compliance policy on Intune.
+To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you set up the following compliance policy on Intune.
 
 > [!NOTE]
-> Currently Defender for Endpoint for iOS does not provide protection against jailbreak scenarios. Some data like your corporate email id and corporate profile picture (if available) will be exposed to the attacker on the jailbroken device.
+> At this time Microsoft Defender for Endpoint for iOS does not provide protection against jailbreak scenarios. If used on a jailbroken device, then in specific scenarios data that is used by the application like your corporate email id and corporate profile picture (if available) can be exposed locally
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 
@@ -68,4 +68,4 @@ By default, Defender for Endpoint for iOS includes and enables the web protectio
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [report unsafe site](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
+Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
