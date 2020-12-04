@@ -77,17 +77,17 @@ All our updates contain
 
 
 <details>
-<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17600.5)</summary>
+<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
-&ensp;Released: **November 30, 2020**  
+&ensp;Released: **December xx, 2020**  
 &ensp;Platform: **4.18.2011.6**  
-&ensp;Engine: **1.1.17600.5**  
+&ensp;Engine: **1.1.17700.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- item1
-- item2
+- Improved SmartScreen status support logging
+- Apply CPU throttling policy to manually initiated scans
 
 ### Known Issues
 No known issues  
