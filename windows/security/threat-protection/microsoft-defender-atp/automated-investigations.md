@@ -104,7 +104,7 @@ The following table shows the relationship between PUA protection and automation
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
 2. Choose **Settings** > **Advanced features**.
-3. Turn on **Always remediate PUA** (or, turn on **Allow or block file**).  
+3. Turn on **Always remediate PUA**. (Alternately, if you don't see the PUA setting, turn on **Allow or block file**.)  
 
 ### To configure PUA protection in Microsoft Defender Antivirus
 
