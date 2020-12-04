@@ -33,6 +33,7 @@ Windows Hello addresses the following problems with passwords:
 > | | | |
 > | :---: | :---: | :---: |
 > | [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
+ 
 
 ## Prerequisites
 
@@ -41,7 +42,7 @@ Windows Hello addresses the following problems with passwords:
 * Windows 10, version 1511 or later
 * Microsoft Azure Account
 * Azure Active Directory
-* Azure Multi-factor authentication
+* Azure AD Multi-Factor Authentication
 * Modern Management (Intune or supported third-party MDM), *optional*
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 

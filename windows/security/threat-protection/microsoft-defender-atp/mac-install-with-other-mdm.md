@@ -112,4 +112,4 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 ## Check installation status
 
-Run [mdatp](mac-install-with-jamf.md) on a client device to check the onboarding status.
+Run [Microsoft Defender for Endpoint](mac-install-with-jamf.md) on a client device to check the onboarding status.
