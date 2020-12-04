@@ -54,7 +54,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 
 The following features are included in the preview release:
-- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender ATP now adds support for iOS. Learn how to install, configure, and use Microsoft Defender ATP for iOS.
+- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, and use Microsoft Defender for Endpoint for iOS.
 
 - [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. Learn how to install, configure, and use Microsoft Defender for Endpoint for Android.
 

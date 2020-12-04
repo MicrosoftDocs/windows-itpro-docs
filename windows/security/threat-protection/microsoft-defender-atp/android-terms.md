@@ -55,9 +55,9 @@ DO NOT USE THE APPLICATION.**
         of this application on Android enabled device or devices that you own
         or control. You may use this application with your company's valid
         subscription of Microsoft Defender for Endpoint or
-        an online service that includes MDATP functionalities.
+        an online service that includes Microsoft Defender for Endpoint functionalities.
 
-    2.  **Updates.** Updates or upgrades to MDATP may be required for full
+    2.  **Updates.** Updates or upgrades to Microsoft Defender for Endpoint may be required for full
         functionality. Some functionality may not be available in all countries.
 
     3.  **Third-Party Programs.** The application may include third-party
