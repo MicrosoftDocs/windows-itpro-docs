@@ -24,16 +24,16 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-This topic describes deploying Defender for Endpoint for iOS on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll your device](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
+This topic describes deploying Defender for Endpoint for iOS on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll iOS/iPadOS devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
 
 ## Before you begin
 
 - Ensure you have access to [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-- Ensure iOS enrollment is done for your users. Users need to have Defender for Endpoint license assigned in order to use Defender for Endpoint for iOS. Refer [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
+- Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint for iOS. Refer to [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender for Endpoint) for iOS is now available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
+> Microsoft Defender ATP (Microsoft Defender for Endpoint) for iOS is now available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
 ## Deployment steps
 
@@ -41,7 +41,7 @@ Deploy Defender for Endpoint for iOS via Intune Company Portal.
 
 ### Add iOS store app
 
-1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** -> **iOS/iPadOS** -> **Add** -> **iOS store app** and click Select.
+1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** -> **iOS/iPadOS** -> **Add** -> **iOS store app** and click **Select**.
 
     > [!div class="mx-imgBorder"]
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-1.png)
@@ -129,7 +129,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
     ![Image of Microsoft Endpoint Manager Admin Center](images/ios-deploy-7.png)
 
     - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
-    - In the **Assignment** section, select the device group you want to apply this profile to. As a best practice, this should be applied for all managed iOS devices. Click **Next**
+    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.
     - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 ## Next Steps
