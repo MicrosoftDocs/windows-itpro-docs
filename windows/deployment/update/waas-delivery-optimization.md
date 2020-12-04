@@ -65,7 +65,7 @@ For information about setting up Delivery Optimization, including tips for the b
     - Office installations and updates
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
-
+    - Edge browser installations and updates
 
 ## Requirements
 
