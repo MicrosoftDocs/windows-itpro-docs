@@ -350,7 +350,7 @@ Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsof
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-Your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images should be regularly updated. Keeping your OS installation images up to date helps avoid vulnerabilities due to a gap in protection. For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection. For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
 <summary>1.1.2012.01</summary>
@@ -358,7 +358,7 @@ Your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and W
 &ensp;Package version: **1.1.2012.01**  
 &ensp;Platform version: **4.18.2010.7** 
 &ensp;Engine version: **1.17600.5**
-&ensp;Signature version: 1.327.1991.0  
+&ensp;Signature version: **1.327.1991.0**  
     
 ### Fixes
 - None
