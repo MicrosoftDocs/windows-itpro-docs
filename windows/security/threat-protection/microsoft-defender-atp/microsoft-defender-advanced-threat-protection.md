@@ -88,7 +88,7 @@ The attack surface reduction set of capabilities provides the first line of defe
 <a name="ngp"></a>
 
 **[Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next-generation protection designed to catch all types of emerging threats.
+To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
 
@@ -98,7 +98,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](automated-investigations.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 <a name="ss"></a>
 
@@ -125,8 +125,8 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 **[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
  Defender for Endpoint directly integrates with various Microsoft solutions, including:
 - Intune
-- Office 365 ATP
-- Azure ATP
+- Microsoft Defender for Office 365 
+- Microsoft Defender for Identity 
 - Azure Security Center
 - Skype for Business 
 - Microsoft Cloud App Security
