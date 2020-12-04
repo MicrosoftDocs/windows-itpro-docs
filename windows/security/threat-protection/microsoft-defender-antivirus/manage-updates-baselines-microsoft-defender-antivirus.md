@@ -27,8 +27,8 @@ ms.date: 11/30/2020
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
- - Security intelligence updates
- - Product updates
+- Security intelligence updates
+- Product updates
 
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
