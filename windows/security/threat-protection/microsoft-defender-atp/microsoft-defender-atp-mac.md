@@ -39,7 +39,7 @@ This topic describes how to install, configure, update, and use Defender for End
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender for Endpoint for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device. See [Enable Microsoft Defender for Endpoint Insider Device](endpoint-detection-response-mac-preview.md). 
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device.
 
 ## How to install Microsoft Defender for Endpoint for Mac
 
@@ -69,7 +69,7 @@ The three most recent major releases of macOS are supported.
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+> With the agent version 101.13.75+, we released a change that removed conditions when Microsoft Defender for Endpoint was triggering the macOS Big Sur bug that manifests into a kernel panic. With that change Defender code path should no longer directly facilitate the kernel panic.
 
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 1GB

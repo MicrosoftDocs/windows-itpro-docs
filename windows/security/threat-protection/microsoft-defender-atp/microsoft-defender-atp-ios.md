@@ -59,7 +59,7 @@ iOS devices along with other platforms.
 
 **System Requirements**
 
--   iOS devices running iOS 11.0 and above
+-   iOS devices running iOS 11.0 and later
 
 -   Device is enrolled with Intune Company Portal
     [app](https://apps.apple.com/us/app/intune-company-portal/id719171358)
