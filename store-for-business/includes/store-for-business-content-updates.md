@@ -2,6 +2,15 @@
 
 
 
+## Week of November 23, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/23/2020 | [Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)](/microsoft-store/microsoft-store-for-business-overview) | modified |
+| 11/23/2020 | [Prerequisites for Microsoft Store for Business and Education (Windows 10)](/microsoft-store/prerequisites-microsoft-store-for-business) | modified |
+
+
 ## Week of October 26, 2020
 
 
