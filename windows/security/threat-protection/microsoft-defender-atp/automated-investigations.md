@@ -100,10 +100,15 @@ The following table shows the relationship between PUA protection and automation
 |Audit mode     |PUA remediated by AIR         |PUA detected but not remediated if **Allow or block file** is turned on <br/><br/>PUA remediated if **Always remediate PUA** is turned on         |
 |Disabled     |PUA remediated by AIR         |PUA not remediated         |
 
-To configure PUA protection in AIR, go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. Choose **Settings** > **Advanced features**, and then turn on **Always remediate PUA** (or **Allow or block file**).  
+### To configure PUA protection in AIR
 
-To configure PUA protection in Microsoft Defender Antivirus, see [Configure PUA protection in Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus#configure-pua-protection-in-microsoft-defender-antivirus). 
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
+2. Choose **Settings** > **Advanced features**.
+3. Turn on **Always remediate PUA** (or, turn on **Allow or block file**).  
 
+### To configure PUA protection in Microsoft Defender Antivirus
+
+See [Configure PUA protection in Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus#configure-pua-protection-in-microsoft-defender-antivirus). 
 
 ## Next steps
 
