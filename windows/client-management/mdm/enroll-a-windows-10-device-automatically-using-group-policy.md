@@ -114,7 +114,6 @@ Requirements:
 
    > [!NOTE]
    > **Device Credential** Credential Type may also work; however, it is not supported by Intune yet. It is not recommended to use this option until support is announced.
-  
    ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
 5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
