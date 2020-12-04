@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # Schedule an update of the Microsoft Defender for Endpoint (Linux)
 
-To run an update on MDE (formerly MDATP) for Linux, see [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-updates).
+To run an update on Microsoft Defender for Endpoint for Linux, see [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-updates).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
 
