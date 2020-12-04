@@ -96,7 +96,7 @@ setting custom indicators. For more information about the key features and benef
 read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint 
-on iOS [documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios).
+on iOS [documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-ios).
 
 ## Licensing requirements 
 
