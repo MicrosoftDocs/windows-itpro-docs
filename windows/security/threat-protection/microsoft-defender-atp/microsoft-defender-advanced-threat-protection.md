@@ -123,10 +123,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 <a name="mtp"></a>
 
 **[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
- Defender for Endpoint directly integrates with various Microsoft solutions, including:
-- Intune
-- Microsoft Defender for Office 365 
-- Microsoft Defender for Identity 
+Defender for Endpoint directly integrates with various Microsoft solutions, including:
 - Azure Security Center
 - Azure Sentinel
 - Intune

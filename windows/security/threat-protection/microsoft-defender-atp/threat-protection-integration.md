@@ -1,15 +1,15 @@
 ---
-title: Integrate Microsoft Defender for Endpoint with other Microsoft solutionsms.reviewer: 
+title: Integrate Microsoft Defender for Endpoint with other Microsoft solutions
 description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Azure Security Center.
+author: mjcaparas
+ms.author: macapara
+ms.prod: w10
 keywords: microsoft 365 defender, conditional access, office, advanced threat protection, microsoft defender for identity, microsoft defender for office, azure security center, microsoft cloud app security, azure sentinel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
