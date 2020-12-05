@@ -34,7 +34,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
 > Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > 
-> To see the most current engine, platform, and signature date, visit the [security encyclopedia packages site](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
+> To see the most current engine, platform, and signature date, visit the [security encyclopedia packages site](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 
 ## Security intelligence updates
 
