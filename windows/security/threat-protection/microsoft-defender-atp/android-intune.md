@@ -112,7 +112,7 @@ For more information on the enrollment options supported by Intune, see
 [Enrollment
 Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
 
-Currently, Personally-owned devices with work profile and Corporate-owned fully managed user device enrolments are supported for deployment.
+**Currently, Personally-owned devices with work profile and Corporate-owned fully managed user device enrolments are supported for deployment.**
 
 
 
