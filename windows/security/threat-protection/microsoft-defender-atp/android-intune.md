@@ -244,6 +244,45 @@ the *Required* section \> **Add group,** selecting the user group and click
 above. Then select **Review + Save** and then **Save** again to commence
 assignment.
 
+### Auto Setup of Always-on VPN 
+Defender for Endpoint supports Device configuration policies for managed devices via Intune. This capability can be leveraged to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user does not need to setup VPN service while onboarding.
+1.	On **Devices** Page go to **Configuration Profiles** > **Create Profile** > **Platform** > **Android Enterprise**
+Select **Device restrictions** under one of the following, based on your device enrollment type 
+- **Fully Managed, Dedicated, and Corporate-Owned Work Profile**
+- **Personally-Owned Work Profile**
+
+Select **Create**
+  
+    > ![Image of devices configuration profile create](images/1autosetupofvpn.png)
+ 
+ 2. **Configuration Settings** 
+  Provide **Name** and **Description** to uniquely identify the configuration profile. 
+
+    > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
+   
+ 3. Select **Connectivity** and configure VPN 
+- Enable **Always-on VPN** 
+Setup a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device. 
+- Select **Custom** in VPN client dropdown list
+Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature. 
+    >[!NOTE]
+    >Microsoft Defender ATP app must be installed on user’s device, in order to functioning of auto setup of this VPN. 
+
+- Enter **Package ID** of the Microsoft Defender ATP app in Google Play store. For the Defender app URL https://play.google.com/store/apps/details?id=com.microsoft.scmx, Package ID is **com.microsoft.scmx**  
+- **Lockdown mode** Not configured (Default) 
+
+      > ![Image of devices configuration profile enable Always-on VPN](images/3autosetupofvpn.png)
+
+4. **Assignment** 
+In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app. 
+
+      > ![Image of devices configuration profile Assignment](images/4autosetupofvpn.png)
+
+5. In the **Review + Create** page that comes up next, review all the information and then select **Create**. 
+The device configuration profile is now assigned to the selected user group.    
+
+    > ![Image of devices configuration profile Review and Create](images/5autosetupofvpn.png)
+
 ## Complete onboarding and check status
 
 1. Confirm the installation status of Microsoft Defender for Endpoint for Android by
