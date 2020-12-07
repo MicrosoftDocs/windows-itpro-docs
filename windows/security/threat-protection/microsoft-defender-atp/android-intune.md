@@ -109,8 +109,7 @@ list in Microsoft Defender Security Center.
 Defender for Endpoint for Android supports Android Enterprise enrolled devices.
 
 For more information on the enrollment options supported by Intune, see 
-[Enrollment
-Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll) .
+[Enrollment Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll).
 
 **Currently, Personally-owned devices with work profile and Corporate-owned fully managed user device enrollments are supported for deployment.**
 
