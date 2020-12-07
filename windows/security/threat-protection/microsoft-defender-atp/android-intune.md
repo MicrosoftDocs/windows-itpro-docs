@@ -251,7 +251,7 @@ Select **Device restrictions** under one of the following, based on your device 
 - **Fully Managed, Dedicated, and Corporate-Owned Work Profile**
 - **Personally-Owned Work Profile**
 
-Select **Create**
+Select **Create**.
   
     > ![Image of devices configuration profile create](images/1autosetupofvpn.png)
  
