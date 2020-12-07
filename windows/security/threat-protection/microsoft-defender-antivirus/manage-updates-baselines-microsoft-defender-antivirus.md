@@ -363,6 +363,67 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
+## Updates for Deployment Image Servicing and Management (DISM)
+
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection. For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+
+<details>
+<summary>1.1.2012.01</summary>
+
+&ensp;Package version: **1.1.2012.01**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.1991.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2011.02</summary>
+
+&ensp;Package version: **1.1.2011.02**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.658.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- Refreshed Microsoft Defender Antivirus signatures  
+<br/>
+</details><details>
+<summary>1.1.2011.01</summary>
+
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2009.7**  
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.344.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2009.10</summary>
+
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2008.9**   
+&ensp;Engine version: **1.17400.5**  
+&ensp;Signature version: **1.327.2216.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- Added support for Windows 10 RS1 or later OS install images.  
+<br/>
+</details>
 
 ## See also
 
