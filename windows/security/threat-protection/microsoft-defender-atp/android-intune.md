@@ -252,10 +252,10 @@ Select **Device restrictions** under one of the following, based on your device 
 - **Personally-Owned Work Profile**
 
 Select **Create**.
-  
-    > ![Image of devices configuration profile create](images/1autosetupofvpn.png)
  
- 2. **Configuration Settings** 
+    > ![Image of devices configuration profile Create](images/1autosetupofvpn.png)
+    
+2. **Configuration Settings** 
   Provide a **Name** and a **Description** to uniquely identify the configuration profile. 
 
     > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
@@ -272,7 +272,7 @@ Custom VPN in this case is Defender for Endpoint VPN which is used to provide th
 - **Lockdown mode** Not configured (Default) 
 
       > ![Image of devices configuration profile enable Always-on VPN](images/3autosetupofvpn.png)
-
+   
 4. **Assignment** 
 In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app. 
 
