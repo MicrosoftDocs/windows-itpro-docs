@@ -47,6 +47,8 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
+For a list of recent security intelligence updates, please visit: [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/definitions/antimalware-definition-release-notes).
+
 Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
 ## Product updates
