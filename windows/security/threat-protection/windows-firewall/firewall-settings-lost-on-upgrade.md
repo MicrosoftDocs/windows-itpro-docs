@@ -21,7 +21,7 @@ This article describes a scenario where previously enabled Firewall rules revert
 
 ## Rule groups
 
-Individual built-in Firewall rules are categorized within a group. For example, the following individual rules form part of the Remote Desktop group.
+For organizational purposes, individual built-in Firewall rules are categorized within a group. For example, the following rules form part of the Remote Desktop group.
 
 - Remote Desktop – Shadow (TCP-In)
 
@@ -29,7 +29,7 @@ Individual built-in Firewall rules are categorized within a group. For example, 
 
 - Remote Desktop – User-Mode (UDP-In)
 
-Other examples include the core networking, file and print sharing, and network discovery groups. Admins can filter on individual categories in the Firewall interface (wf.msc) by selecting and right-clicking on **Inbound** or **Outbound Rules** and selecting **Filter by Group**; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
+Other group examples include the core networking, file and print sharing, and network discovery. Grouping allows admins to manage sets of similar rules by filtering on categories in the Firewall interface (wf.msc). This is acheived by right-clicking on either **Inbound** or **Outbound Rules** and selecting **Filter by Group**; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
 
 ```Powershell
 Get-NetFirewallRule -Group <groupName>
@@ -38,6 +38,6 @@ Get-NetFirewallRule -Group <groupName>
 > [!NOTE] 
 > It is recommended to enable an entire group instead of individual rules if the expectation is that the ruleset is going to be migrated at some point.
 
-It is recommended to enable/disable all rules within a group, as opposed to enabling/disabling just one or two of the individual rules to help avoid unexpected behaviors. For example, while rule groups can be used to organize rules by influence and allows batch rule modifications, they are also used as a way to maintain rule state across a Windows upgrade. Rule groups, as opposed to individual rules, are the unit by which the process determines what should be enabled/disabled when the upgrade is complete.
+To avoid unexpected behaviors it is recommended to enable/disable all of the rules within a group, as opposed to just one or two of the individual rules. This is because while rule groups are used to organize rules and allow batch rule modification by type, they also represents the 'unit' by which rule state is maintained across a Windows upgrade. Rule groups, as opposed to individual rules, are the unit by which the update process determines what should be enabled/disabled when the upgrade is complete.
 
-Take the Remote Desktop group example mentioned earlier. It consists of three rules. To ensure that the ruleset is properly maintained once the upgrade is complete, all three rules must be enabled. If only one rule is enabled, the upgrade process will see that two of three rules are disabled and subsequently disable the entire group to maintain an as pristine out-of-the-box configuration as possible. Obviously, in this scenario, this brings the unintended consequence of being unable to establish RDP (Remote Desktop Protocol) connection to the host.
+Take the Remote Desktop group example shown above. It consists of three rules. To ensure that the ruleset is properly migrated during an upgrade, all three rules must be enabled. If for example only one rule is enabled, the upgrade process will see that two of three rules are disabled and subsequently disable the entire group in an effort to maintain what it sees as the most pristine out-of-the-box configuration possible. Obviously, this scenario brings with it the unintended consequence of breaking RDP (Remote Desktop Protocol) connectivity to the host.
