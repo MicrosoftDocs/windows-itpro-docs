@@ -274,7 +274,7 @@
 #### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
 
 #### [Deploy]()
-##### [App-based deployment](microsoft-defender-atp/ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
