@@ -260,7 +260,7 @@ Select **Create**.
 
     > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
    
- 3. Select **Connectivity** and configure VPN 
+ 3. Select **Connectivity** and configure VPN:
 - Enable **Always-on VPN** 
 Setup a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device. 
 - Select **Custom** in VPN client dropdown list
