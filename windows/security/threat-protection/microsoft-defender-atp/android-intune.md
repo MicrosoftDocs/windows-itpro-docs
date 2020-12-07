@@ -254,7 +254,7 @@ displayed here.
     > ![Image of device installation status](images/900c0197aa59f9b7abd762ab2b32e80c.png)
 
 
-2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to **Personally-owned devices with work profile**.   If you are enrolled to **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
+2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally-owned devices with work profile**.  If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
     ![Image of app in mobile device](images/c2e647fc8fa31c4f2349c76f2497bc0e.png)
 
 3. When the app is installed, open the app and accept the permissions
