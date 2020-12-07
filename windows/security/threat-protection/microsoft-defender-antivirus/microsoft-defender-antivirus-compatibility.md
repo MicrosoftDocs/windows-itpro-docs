@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ---
 
 # Microsoft Defender Antivirus compatibility
