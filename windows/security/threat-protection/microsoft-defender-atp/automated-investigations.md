@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 12/03/2020
+ms.date: 12/07/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -80,35 +80,9 @@ As alerts are triggered, and an automated investigation runs, a verdict is gener
 
 As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. (See [Remediation actions](manage-auto-investigation.md#remediation-actions).)  
 
-Depending on the [level of automation](automation-levels.md) set for your organization, remediation actions can occur automatically or only upon approval by your security operations team.
+Depending on the [level of automation](automation-levels.md) set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Additional security settings that can affect automatic remediation include [protection from potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
 
-> [!NOTE]
-> Additional security settings, such as protection from potentially unwanted applications, can also affect whether remediation actions are taken automatically. For more information, see [PUA protection and automatic remediation](#pua-protection-and-automatic-remediation) (in this article).
-
-All remediation actions, whether pending or completed, can be viewed in Action Center. If necessary, your security operations team can undo a remediation action. (See [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).)
-
-## PUA protection and automatic remediation
-
-As mentioned earlier, the [level of automation](automation-levels.md) set for your organization affects whether remediation actions occur automatically or only upon approval. [Protection from potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA protection), included in Microsoft Defender Antivirus, can also affect whether certain remediation actions are taken automatically. 
-
-The following table shows the relationship between PUA protection and automation levels:
-
-
-|PUA protection setting <br/>(Microsoft Defender Antivirus)  |PUA protection enabled <br/>(AIR)  |PUA protection disabled <br/>(AIR)  |
-|---------|---------|---------|
-|Enabled     |PUA remediated by Microsoft Defender Antivirus and/or AIR        |PUA remediated by Microsoft Defender Antivirus         |
-|Audit mode     |PUA remediated by AIR         |PUA detected but not remediated if **Allow or block file** is turned on <br/><br/>PUA remediated if **Always remediate PUA** is turned on         |
-|Disabled     |PUA remediated by AIR         |PUA not remediated         |
-
-### To configure PUA protection in AIR
-
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
-2. Choose **Settings** > **Advanced features**.
-3. Turn on **Always remediate PUA**. (Alternately, if you don't see the PUA setting, turn on **Allow or block file**.)  
-
-### To configure PUA protection in Microsoft Defender Antivirus
-
-See [Configure PUA protection in Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus#configure-pua-protection-in-microsoft-defender-antivirus). 
+All remediation actions, whether pending or completed, can be viewed in the [Action Center](auto-investigation-action-center.md) ([https://securitycenter.windows.com](https://securitycenter.windows.com)). If necessary, your security operations team can undo a remediation action. (See [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation).)
 
 ## Next steps
 
