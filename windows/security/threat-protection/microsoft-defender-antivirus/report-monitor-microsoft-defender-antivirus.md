@@ -44,5 +44,5 @@ For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, s
 ## Related articles
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-
+- [Microsoft Defender Antivirus on Windows Server 2016 and 2019](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
 - [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
