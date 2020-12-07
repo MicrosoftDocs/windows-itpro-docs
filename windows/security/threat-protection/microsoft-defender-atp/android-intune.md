@@ -256,7 +256,7 @@ Select **Create**.
     > ![Image of devices configuration profile create](images/1autosetupofvpn.png)
  
  2. **Configuration Settings** 
-  Provide **Name** and **Description** to uniquely identify the configuration profile. 
+  Provide a **Name** and a **Description** to uniquely identify the configuration profile. 
 
     > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
    
