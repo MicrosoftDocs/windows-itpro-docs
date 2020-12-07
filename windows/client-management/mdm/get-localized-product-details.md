@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 09/18/2017
+ms.date: 12/07/2020
 ---
 
 # Get localized product details
