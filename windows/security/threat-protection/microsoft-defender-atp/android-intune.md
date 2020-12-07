@@ -265,8 +265,8 @@ Select **Create**.
 Setup a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device. 
 - Select **Custom** in VPN client dropdown list
 Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature. 
-    >[!NOTE]
-    >Microsoft Defender ATP app must be installed on user’s device, in order to functioning of auto setup of this VPN. 
+    > [!NOTE]
+    > Microsoft Defender ATP app must be installed on user’s device, in order to functioning of auto setup of this VPN.
 
 - Enter **Package ID** of the Microsoft Defender ATP app in Google Play store. For the Defender app URL https://play.google.com/store/apps/details?id=com.microsoft.scmx, Package ID is **com.microsoft.scmx**  
 - **Lockdown mode** Not configured (Default) 
