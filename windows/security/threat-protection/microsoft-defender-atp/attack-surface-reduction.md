@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 11/30/2020
+ms.date: 12/08/2020
 ---
 
 # Reduce attack surfaces with attack surface reduction rules
@@ -26,17 +26,17 @@ ms.date: 11/30/2020
 
 * [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-## Overview
+## Why attack surface reduction is important
 
-Your attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks.
+Your organization's attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks. Configuring attack surface reduction rules in Microsoft Defender for Endpoint can help!
 
-Attack surface reduction rules target certain software behaviors that are often abused by attackers. Such behaviors include:
+Attack surface reduction rules target certain software behaviors, such as:
 
 - Launching executable files and scripts that attempt to download or run files;
 - Running obfuscated or otherwise suspicious scripts; and 
 - Performing behaviors that apps don't usually initiate during normal day-to-day work.
 
-Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
 
 For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
