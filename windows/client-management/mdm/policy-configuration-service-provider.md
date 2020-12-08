@@ -633,6 +633,26 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Explorer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-admininfourl" id="admx-explorer-admininfourl">ADMX_Explorer/AdminInfoUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-alwaysshowclassicmenu" id="admx-explorer-alwaysshowclassicmenu">ADMX_Explorer/AlwaysShowClassicMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-disableroamedprofileinit" id="admx-explorer-disableroamedprofileinit">ADMX_Explorer/DisableRoamedProfileInit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-preventitemcreationinusersfilesfolder" id="admx-explorer-preventitemcreationinusersfilesfolder">ADMX_Explorer/PreventItemCreationInUsersFilesFolder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-explorer.md#admx-explorer-turnoffspianimations" id="admx-explorer-turnoffspianimations">ADMX_Explorer/TurnOffSPIAnimations</a>
+  </dd>
+</dl>
+
 ### ADMX_FileServerVSSProvider policies
 <dl>
   <dd>
@@ -1714,6 +1734,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
+  </dd>
+</dl>
+
+### ADMX_SkyDrive policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-skydrive.md#admx-skydrive-preventnetworktrafficpreusersignin" id="admx-skydrive-preventnetworktrafficpreusersignin">ADMX_SkyDrive/PreventNetworkTrafficPreUserSignIn</a>
   </dd>
 </dl>
 
