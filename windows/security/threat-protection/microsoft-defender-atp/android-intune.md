@@ -252,12 +252,12 @@ Select **Device restrictions** under one of the following, based on your device 
 
 Select **Create**.
  
-    > ![Image of devices configuration profile Create](images/1autosetupofvpn.png)
+   > ![Image of devices configuration profile Create](images/1autosetupofvpn.png)
     
 2. **Configuration Settings** 
   Provide a **Name** and a **Description** to uniquely identify the configuration profile. 
 
-    > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
+   > ![Image of devices configuration profile Name and Description](images/2autosetupofvpn.png)
    
  3. Select **Connectivity** and configure VPN:
 - Enable **Always-on VPN** 
@@ -270,17 +270,17 @@ Custom VPN in this case is Defender for Endpoint VPN which is used to provide th
 - Enter **Package ID** of the Microsoft Defender ATP app in Google Play store. For the Defender app URL https://play.google.com/store/apps/details?id=com.microsoft.scmx, Package ID is **com.microsoft.scmx**  
 - **Lockdown mode** Not configured (Default) 
 
-      > ![Image of devices configuration profile enable Always-on VPN](images/3autosetupofvpn.png)
+     ![Image of devices configuration profile enable Always-on VPN](images/3autosetupofvpn.png)
    
 4. **Assignment** 
 In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app. 
 
-      > ![Image of devices configuration profile Assignment](images/4autosetupofvpn.png)
+     ![Image of devices configuration profile Assignment](images/4autosetupofvpn.png)
 
 5. In the **Review + Create** page that comes up next, review all the information and then select **Create**. 
 The device configuration profile is now assigned to the selected user group.    
 
-    > ![Image of devices configuration profile Review and Create](images/5autosetupofvpn.png)
+    ![Image of devices configuration profile Review and Create](images/5autosetupofvpn.png)
 
 ## Complete onboarding and check status
 
@@ -293,6 +293,7 @@ displayed here.
 
 
 2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally-owned devices with work profile**.  If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
+
     ![Image of app in mobile device](images/c2e647fc8fa31c4f2349c76f2497bc0e.png)
 
 3. When the app is installed, open the app and accept the permissions
