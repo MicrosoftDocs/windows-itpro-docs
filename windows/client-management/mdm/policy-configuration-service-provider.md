@@ -783,6 +783,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_LanmanWorkstation policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-ciphersuiteorder" id="admx-lanmanworkstation-pol-ciphersuiteorder">ADMX_LanmanWorkstation/Pol_CipherSuiteOrder</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enablehandlecachingforcafiles" id="admx-lanmanworkstation-pol-enablehandlecachingforcafiles">ADMX_LanmanWorkstation/Pol_EnableHandleCachingForCAFiles</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enableofflinefilesforcashares" id="admx-lanmanworkstation-pol-enableofflinefilesforcashares">ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares</a>
+  </dd>
+</dl>
+
 ### ADMX_LinkLayerTopologyDiscovery policies
 <dl>
   <dd>

@@ -201,6 +201,7 @@
 #### [ADMX_HelpAndSupport](policy-csp-admx-helpandsupport.md)
 #### [ADMX_kdc](policy-csp-admx-kdc.md)
 #### [ADMX_LanmanServer](policy-csp-admx-lanmanserver.md)
+#### [ADMX_LanmanWorkstation](policy-csp-admx-lanmanworkstation.md)
 #### [ADMX_LinkLayerTopologyDiscovery](policy-csp-admx-linklayertopologydiscovery.md)
 #### [ADMX_MMC](policy-csp-admx-mmc.md)
 #### [ADMX_MMCSnapins](policy-csp-admx-mmcsnapins.md)
