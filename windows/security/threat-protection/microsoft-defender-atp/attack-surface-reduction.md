@@ -144,11 +144,48 @@ Configuration Manager name: Not yet available
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-
 ### Block abuse of in-the-wild exploited vulnerable signed drivers
 
 This rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
+### Block all Office applications from creating child processes
+
+This rule blocks Office apps from creating child processes. This includes Word, Excel, PowerPoint, OneNote, and Access.
+
+Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run additional payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
+
+This rule was introduced in: 
+- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: Office apps launching child processes
+
+Configuration Manager name: Block Office application from creating child processes
+
+GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+
+### Block credential stealing from the Windows local security authority subsystem
+
+This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
+
+LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
+
+> [!NOTE]
+> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+
+This rule was introduced in:
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: Flag credential stealing from the Windows local security authority subsystem
+
+Configuration Manager name: Block credential stealing from the Windows local security authority subsystem
+
+GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### Block executable content from email client and webmail
 
@@ -169,23 +206,8 @@ Microsoft Endpoint Configuration Manager name: Block executable content from ema
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
-### Block all Office applications from creating child processes
 
-This rule blocks Office apps from creating child processes. This includes Word, Excel, PowerPoint, OneNote, and Access.
 
-Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run additional payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
-
-This rule was introduced in: 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: Office apps launching child processes
-
-Configuration Manager name: Block Office application from creating child processes
-
-GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### Block Office applications from creating executable content
 
@@ -325,26 +347,6 @@ Configuration Manager name: Use advanced protection against ransomware
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-### Block credential stealing from the Windows local security authority subsystem
-
-This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
-
-LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
-
-> [!NOTE]
-> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
-
-This rule was introduced in:
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: Flag credential stealing from the Windows local security authority subsystem
-
-Configuration Manager name: Block credential stealing from the Windows local security authority subsystem
-
-GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### Block process creations originating from PSExec and WMI commands
 
