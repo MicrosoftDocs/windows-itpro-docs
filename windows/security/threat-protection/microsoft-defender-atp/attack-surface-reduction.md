@@ -206,6 +206,31 @@ Microsoft Endpoint Configuration Manager name: Block executable content from ema
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
+### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+
+This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
+
+- Executable files (such as .exe, .dll, or .scr)
+
+Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
+
+> [!IMPORTANT]
+> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
+>
+>You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
+
+This rule was introduced in: 
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
+
+Configuration Manager name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
+
+GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
+
 
 
 
@@ -302,31 +327,6 @@ Intune name: Win32 imports from Office macro code
 Configuration Manager name: Block Win32 API calls from Office macros
 
 GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
-
-### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
-
-This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
-
-- Executable files (such as .exe, .dll, or .scr)
-
-Launching untrusted or unknown executable files can be risky, as it may not be initially clear if the files are malicious.
-
-> [!IMPORTANT]
-> You must [enable cloud-delivered protection](../microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus.md) to use this rule. <br/><br/> The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
->
->You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
-
-This rule was introduced in: 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
-
-Configuration Manager name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
-
-GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 ### Use advanced protection against ransomware
 
