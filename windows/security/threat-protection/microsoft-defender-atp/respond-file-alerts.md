@@ -1,6 +1,6 @@
 ---
 title: Take response actions on a file in Microsoft Defender ATP
-description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
+description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,13 +19,16 @@ ms.topic: article
 
 # Take response actions on a file
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details in the Action center.
 
@@ -128,7 +131,10 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > [!NOTE]
 > In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
 > 
-> Microsoft Defender ATP will restore all custom blocked files that were quarantined on this device in the last 30 days.
+> Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+
+> [!Important]
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired. 
 
 ## Add indicator to block or allow a file
 
@@ -136,7 +142,7 @@ You can prevent further propagation of an attack in your organization by banning
 
 >[!IMPORTANT]
 >
->- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
+>- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–delivered protection is enabled. For more information, see [Manage cloud–delivered protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 >
 >- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
@@ -174,7 +180,7 @@ When you select this action, a fly-out will appear. From the fly-out, you can re
 
 ![Image of download file fly-out](images/atp-download-file-reason.png)
 
-If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file is not already stored by Defender for Endpoint, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
 
 ## Consult a threat expert
 
@@ -210,10 +216,11 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+<br/>
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0] 
 
-**Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
+**Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
 
 > [!NOTE]
 > Only files from Windows 10 can be automatically collected.
@@ -221,9 +228,9 @@ Use the deep analysis feature to investigate the details of any file, usually du
 You can also manually submit a sample through the [Microsoft Security Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file was not observed on a Windows 10 device, and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Microsoft Defender ATP.
+> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
-When the sample is collected, Microsoft Defender ATP runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
+When the sample is collected, Defender for Endpoint runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
 
 **Submit files for deep analysis:**
 
@@ -237,7 +244,8 @@ When the sample is collected, Microsoft Defender ATP runs the file in is a secur
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
+    > [!NOTE]
+    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
@@ -246,7 +254,7 @@ A progress bar is displayed and provides information on the different stages of 
 
 **View deep analysis reports**
 
-View the deep analysis report that Microsoft Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
+View the deep analysis report that Defender for Endpoint provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
 You can view the comprehensive report that provides details on the following sections:
 

@@ -14,17 +14,22 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
-# Deploy Microsoft Defender ATP for Linux manually
+# Deploy Microsoft Defender for Endpoint for Linux manually
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
-This article describes how to deploy Microsoft Defender ATP for Linux manually. A successful deployment requires the completion of all of the following tasks:
+This article describes how to deploy Microsoft Defender for Endpoint for Linux manually. A successful deployment requires the completion of all of the following tasks:
 
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
 - [Application installation](#application-installation)
@@ -33,11 +38,11 @@ This article describes how to deploy Microsoft Defender ATP for Linux manually. 
 
 ## Prerequisites and system requirements
 
-Before you get started, see [Microsoft Defender ATP for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Configure the Linux software repository
 
-Microsoft Defender ATP for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -47,6 +52,12 @@ In order to preview new features and provide early feedback, it is recommended t
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
 ### RHEL and variants (CentOS and Oracle Linux)
+
+- Install `yum-utils` if it isn't installed yet:
+
+    ```bash
+    sudo yum install yum-utils
+    ```
 
 - Note your distribution and version, and identify the closest entry for it under `https://packages.microsoft.com/config/`.
 
@@ -69,12 +80,6 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
-
-- Install `yum-utils` if it isn't installed yet:
-
-    ```bash
-    sudo yum install yum-utils
     ```
 
 - Download and make usable all the metadata for the currently enabled yum repositories:
@@ -296,7 +301,7 @@ Download the onboarding package from Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Microsoft Defender ATP for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -312,7 +317,7 @@ Download the onboarding package from Microsoft Defender Security Center:
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - The file should have been quarantined by Microsoft Defender ATP for Linux. Use the following command to list all the detected threats:
+    - The file should have been quarantined by Defender for Endpoint for Linux. Use the following command to list all the detected threats:
 
         ```bash
         mdatp threat list
@@ -324,8 +329,8 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Microsoft Defender ATP for Linux, install the upgrade, and finally reconfigure Microsoft Defender ATP for Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
 
 ## Uninstallation
 
-See [Uninstall](linux-resources.md#uninstall) for details on how to remove Microsoft Defender ATP for Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.

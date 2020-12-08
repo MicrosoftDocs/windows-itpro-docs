@@ -1,5 +1,5 @@
 ---
-title: Manage Windows Defender  in your business
+title: Manage Windows Defender in your business
 description: Learn how to use Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the command line to manage Microsoft Defender AV
 keywords: group policy, gpo, config manager, sccm, scep, powershell, wmi, intune, defender, antivirus, antimalware, security, protection
 search.product: eADQiWindows 10XVcnh
@@ -18,18 +18,21 @@ manager: dansimp
 
 # Manage Microsoft Defender Antivirus in your business
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Intune (now part of Microsoft Endpoint Manager)
+- Microsoft Endpoint Configuration Manager (now part of Microsoft Endpoint Manager)
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)
-- The mpcmdrun.exe utility
+- The Microsoft Malware Protection Command Line Utility (referred to as the *mpcmdrun.exe* utility
 
 The articles in this section provide further information, links, and resources for using these tools to manage and configure Microsoft Defender Antivirus.
 

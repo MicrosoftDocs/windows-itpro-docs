@@ -17,6 +17,9 @@ manager: dansimp
 
 # Microsoft Defender Antivirus on Windows Server 2016 and 2019
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Windows Server 2016
@@ -176,7 +179,7 @@ If you are using a third-party antivirus solution and you're running into issues
 
 - See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
 
-- See [Better together: Microsoft Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Microsoft Defender Advanced Threat Protection.
+- See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Defender for Endpoint.
 
 If you determine you do want to uninstall Microsoft Defender Antivirus, follow the steps in the following sections.
 

@@ -18,9 +18,12 @@ manager: dansimp
 
 # Configure remediation for Microsoft Defender Antivirus scans
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 When Microsoft Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Microsoft Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 

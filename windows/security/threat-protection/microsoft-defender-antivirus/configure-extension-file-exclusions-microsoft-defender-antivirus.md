@@ -12,16 +12,20 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.date: 10/21/2020
 ---
 
 # Configure and validate exclusions based on file extension and folder location
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender ATP capabilities, including [endpoint detection and response (EDR)](../microsoft-defender-atp/overview-endpoint-detection-response.md), [attack surface reduction (ASR) rules](../microsoft-defender-atp/attack-surface-reduction.md), and [controlled folder access](../microsoft-defender-atp/controlled-folders.md). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender ATP [custom indicators](../microsoft-defender-atp/manage-indicators.md).
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](../microsoft-defender-atp/overview-endpoint-detection-response.md), [attack surface reduction (ASR) rules](../microsoft-defender-atp/attack-surface-reduction.md), and [controlled folder access](../microsoft-defender-atp/controlled-folders.md). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](../microsoft-defender-atp/manage-indicators.md).
 
 ## Exclusion lists
 
@@ -184,7 +188,7 @@ The following table describes how the wildcards can be used and provides some ex
 |Wildcard  |Examples  |
 |---------|---------|
 |`*` (asterisk) <br/><br/>In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` would include `C:\MyData\notes.txt`<br/><br/>`C:\somepath\*\Data` would include any file in `C:\somepath\Archives\Data and its subfolders` and `C:\somepath\Authorized\Data and its subfolders` <br/><br/>`C:\Serv\*\*\Backup` would include any file in `C:\Serv\Primary\Denied\Backup and its subfolders` and `C:\Serv\Secondary\Allowed\Backup and its subfolders`     |
-|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
+|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my?` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
 |Environment variables <br/><br/>The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
         
 

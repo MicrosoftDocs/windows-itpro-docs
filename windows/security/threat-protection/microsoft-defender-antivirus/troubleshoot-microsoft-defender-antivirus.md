@@ -17,9 +17,12 @@ manager: dansimp
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
@@ -30,7 +33,7 @@ The tables list:
 - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
 > [!TIP]
-> You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+> You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 > 
 > - Cloud-delivered protection
 > - Fast learning (including Block at first sight)
@@ -48,7 +51,7 @@ The table in this section lists the main Microsoft Defender Antivirus event IDs 
 ## To view a Microsoft Defender Antivirus event
 
 1.  Open **Event Viewer**.
-2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Microsoft Defender Antivirus**.
+2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.

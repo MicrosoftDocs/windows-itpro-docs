@@ -18,7 +18,10 @@ ms.topic: article
 
 # List vulnerabilities by machine and software
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).
 - If the vulnerability has a fixing KB, it will appear in the response.
@@ -29,7 +32,7 @@ Retrieves a list of all the vulnerabilities affecting the organization per [mach
 >This is great API for [Power BI integration](api-power-bi.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -100,7 +103,7 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## See also
 
 - [Risk-based threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)

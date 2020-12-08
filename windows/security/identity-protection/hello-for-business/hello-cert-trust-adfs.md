@@ -44,9 +44,12 @@ Prepare the Active Directory Federation Services deployment by installing and up
 > 1. Launch AD FS management console. Brose to "Services > Scope Descriptions".
 > 2. Right click "Scope Descriptions" and select "Add Scope Description".
 > 3. Under name type "ugs" and Click Apply > OK.
-> 4. Launch Powershell as Administrator.
-> 5. Execute the command "Get-AdfsApplicationPermission". Look for the ScopeNames :{openid, aza} that has the ClientRoleIdentifier Make a note of the ObjectIdentifier.
-> 6. Execute the command "Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'.
+> 4. Launch PowerShell as an administrator.
+> 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
+> ```PowerShell
+> (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+> ```
+> 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
 > 7. Restart the ADFS service.
 > 8. On the client: Restart the client. User should be prompted to provision WHFB.
 > 9. If the provisioning window does not pop up then need to collect NGC trace logs and further troubleshoot.
@@ -144,6 +147,9 @@ The service account used for the device registration server depends on the domai
 Windows Server 2012 or later domain controllers support Group Managed Service Accounts—the preferred way to deploy service accounts for services that support them.  Group Managed Service Accounts, or GMSA have security advantages over normal user accounts because Windows handles password management.  This means the password is long, complex, and changes periodically.  The best part of GMSA is all this happens automatically.  AD FS supports GMSA and should be configured using them for additional defense in depth security.
 
 GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
+
+>[!NOTE]
+> If the [default object creation quota for security principles](https://docs.microsoft.com/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
 
 #### Create KDS Root Key
 

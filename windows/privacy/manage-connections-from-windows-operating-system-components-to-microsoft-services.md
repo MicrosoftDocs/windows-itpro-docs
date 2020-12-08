@@ -10,11 +10,11 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: linque1
-ms.author: obezeajo
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/7/2020
+ms.date: 12/1/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -1458,15 +1458,15 @@ To turn this Off in the UI:
 
 -OR-
  
-- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **EnableActivityFeed** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **UploadUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**
     
 ### <a href="" id="bkmk-voice-act"></a>18.23 Voice Activation
 
@@ -1659,7 +1659,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- Create a new REG_SZ registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** to a value of **1**.
+- Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen

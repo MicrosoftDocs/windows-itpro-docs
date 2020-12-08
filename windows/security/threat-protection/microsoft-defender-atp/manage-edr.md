@@ -14,11 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
 # Manage endpoint detection and response capabilities
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 Manage the alerts queue, investigate devices in the devices list, take response actions, and hunt for possible threats in your organization using advanced hunting.
 
