@@ -109,6 +109,35 @@ After following the procedure, you have created a custom view that shows events 
 
 - [Evaluate controlled folder access](evaluate-controlled-folder-access.md). Use a dedicated demo tool to see how controlled folder access works, and what events would typically be created.
 
-- [Enable controlled folder access](enable-controlled-folders.md). Use Group Policy, PowerShell, or mobile device management CSPs to enable and manage controlled folder access in your network
 
-- [Customize controlled folder access](customize-controlled-folders.md). Add additional protected folders, and allow specified apps to access protected folders.
+## Default folders protected by controlled folder access
+Windows system folders are protected by default. In addition, there are several folders that are protected by controlled folder access by default. You can configure additional folders as protected, but cannot remove the default folders from the controlled folder access protection. See [Protect additional folders](customize-controlled-folders.md#protect-additional-folders) for more information.
+
+Here's the list of default protected folders:  
+- %USERPROFILE%\Documents
+- %USERPROFILE%\Favorites
+- %USERPROFILE%\Music
+- %USERPROFILE%\Pictures
+- %USERPROFILE%\Videos
+- %PUBLIC%\Documents
+- %PUBLIC%\Music
+- %PUBLIC%\Pictures
+- %PUBLIC%\Videos
+
+You can use the Windows Security app to view the list of default folders protected by controlled folder access:
+
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then scroll down to the **Ransomware protection** section.
+
+3. Click the **Manage ransomware protection** link to open the **Ransomware protection** pane.
+
+4. Under the **Controlled folder access** section, click the **Protected folders** link.
+
+5. Click **Yes** on the **User Access Control** prompt. 
+
+    The **Protected folders** pane displays the folders that are protected by default.
+
+## In this section
+
+ [Customize controlled folder access](customize-controlled-folders.md). Add additional protected folders, and allow specified apps to access protected folders.
