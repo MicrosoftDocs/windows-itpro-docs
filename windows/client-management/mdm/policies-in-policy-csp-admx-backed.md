@@ -296,6 +296,8 @@ ms.date: 10/08/2020
 - [ADMX_MMCSnapins/MMC_WirelessMon](./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirelessmon)
 - [ADMX_MMCSnapins/MMC_WirelessNetworkPolicy](./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirelessnetworkpolicy)
 - [ADMX_MSAPolicy/IncludeMicrosoftAccount_DisableUserAuthCmdLine](./policy-csp-admx-msapolicy.md#admx-msapolicy-microsoftaccount-disableuserauth)
+- [ADMX_msched/ActivationBoundaryPolicy](./policy-csp-admx-msched.md#admx-msched-activationboundarypolicy)
+- [ADMX_msched/RandomDelayPolicy](./policy-csp-admx-msched.md#admx-msched-randomdelaypolicy)
 - [ADMX_nca/CorporateResources](./policy-csp-admx-nca.md#admx-nca-corporateresources)
 - [ADMX_nca/CustomCommands](./policy-csp-admx-nca.md#admx-nca-customcommands)
 - [ADMX_nca/DTEs](./policy-csp-admx-nca.md#admx-nca-dtes)

@@ -1150,6 +1150,17 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
 
+### ADMX_msched policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msched.md#admx-msched-activationboundarypolicy" id="admx-msched-activationboundarypolicy">ADMX_msched/ActivationBoundaryPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msched.md#admx-msched-randomdelaypolicy" id="admx-msched-randomdelaypolicy">ADMX_msched/RandomDelayPolicy</a>
+  </dd>
+</dl>
+
 ### ADMX_nca policies
 <dl>
   <dd>

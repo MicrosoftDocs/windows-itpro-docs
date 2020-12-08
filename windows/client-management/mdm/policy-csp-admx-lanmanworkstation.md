@@ -90,6 +90,11 @@ SMB 3.11 cipher suites:
 
 - AES_128_GCM
 - AES_128_CCM
+- AES_256_GCM
+- AES_256_CCM
+
+> [!NOTE]
+> AES_256 is not supported on Windows 10 version 20H2 and lower. Additionally, if you enter only AES_256 crypto lines, the older clients will no longer be able to connect.
 
 SMB 3.0 and 3.02 cipher suites:
 
