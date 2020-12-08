@@ -1,6 +1,6 @@
 ---
 title: Sync Methods for UE-V
-description: Sync Methods for UE-V
+description: Learn how User Experience Virtualization (UE-V) service sync methods let you synchronize users’ application and Windows settings with the settings storage location.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

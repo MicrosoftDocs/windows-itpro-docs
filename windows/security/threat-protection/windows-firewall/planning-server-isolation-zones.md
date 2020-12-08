@@ -1,6 +1,6 @@
 ---
 title: Planning Server Isolation Zones (Windows 10)
-description: Planning Server Isolation Zones
+description: Learn how to restrict access to a server to approved users by using a server isolation zone in Windows Defender Firewall with Advanced Security.
 ms.assetid: 5f63c929-589e-4b64-82ea-515d62765b7b
 ms.reviewer: 
 ms.author: dansimp

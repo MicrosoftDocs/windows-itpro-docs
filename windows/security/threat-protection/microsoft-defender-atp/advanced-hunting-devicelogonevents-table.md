@@ -19,13 +19,20 @@ ms.topic: article
 
 # DeviceLogonEvents
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 The `DeviceLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from the table.
+
+> [!NOTE]
+> Collection of DeviceLogonEvents is not supported on Windows 7 or Windows Server 2008 R2.
+> We recommend upgrading to Windows 10 or Windows Server 2019 for optimal visibility into user logon activity.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 

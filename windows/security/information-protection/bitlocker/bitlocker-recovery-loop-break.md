@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: #medium
+ms.localizationpriority: medium
 ms.author: v-maave
 author: martyav
 manager: dansimp
@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/28/2019
+ms.custom: bitlocker
 ---
 
 # Breaking out of a Bitlocker recovery loop

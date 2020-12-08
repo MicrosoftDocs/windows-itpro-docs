@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Browsing Options page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Browsing Options** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you decide how you want to manage items in the **Favorites, Favorites Bar, and Feeds** section, including the Microsoft-provided default items.
 
 The choices that you make on this page affect only the items shown on the **Favorites, Favorites Bar, and Feeds** page.

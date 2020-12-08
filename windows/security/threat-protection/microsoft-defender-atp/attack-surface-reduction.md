@@ -3,7 +3,6 @@ title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,32 +11,50 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: 
+ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
+ms.date: 11/30/2020
 ---
 
 # Reduce attack surfaces with attack surface reduction rules
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Your attack surface is the total number of places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means offering attackers fewer ways to perform attacks.
+## Overview
 
-Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
+Your attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks.
 
-- Launching executable files and scripts that attempt to download or run files
-- Running obfuscated or otherwise suspicious scripts
-- Performing behaviors that apps don't usually initiate during normal day-to-day work
+Attack surface reduction rules target certain software behaviors that are often abused by attackers. Such behaviors include:
 
-These behaviors are sometimes seen in legitimate applications; however, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors and help keep your organization safe.
+- Launching executable files and scripts that attempt to download or run files;
+- Running obfuscated or otherwise suspicious scripts; and 
+- Performing behaviors that apps don't usually initiate during normal day-to-day work.
+
+Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+
+For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+
+## Assess rule impact before deployment  
+
+You can assess how an attack surface reduction rule might impact your network by opening the security recommendation for that rule in [threat and vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/#tvm). 
+
+:::image type="content" source="images/asrrecommendation.png" alt-text="Security recommendation for ASR rule":::
+
+In the recommendation details pane, check the user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+
+## Audit mode for evaluation
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
+## Notifications when a rule is triggered
 
-For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
 ## Attack surface reduction features across Windows versions
 
@@ -47,13 +64,13 @@ You can set attack surface reduction rules for devices running any of the follow
 - Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-To use the entire feature-set of attack surface reduction rules, you need a [Windows 10 Enterprise license](https://www.microsoft.com/licensing/product-licensing/windows10). With a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+To use the entire feature-set of attack surface reduction rules, you need a [Windows 10 Enterprise license](https://www.microsoft.com/licensing/product-licensing/windows10). With a [Windows E5 license](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses), you get advanced management capabilities including monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center). These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 ## Review attack surface reduction events in the Microsoft Defender Security Center
 
-Microsoft Defender ATP provides detailed reporting for events and blocks, as part of its alert investigation scenarios.
+Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Defender for Endpoint data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
@@ -84,7 +101,7 @@ This will create a custom view that filters events to only show the following, a
 |1121 | Event when rule fires in Block-mode |
 |1122 | Event when rule fires in Audit-mode |
 
-The "engine version" listed for attack surface reduction events in the event log, is generated by Microsoft Defender ATP, not by the operating system. Microsoft Defender ATP is integrated with Windows 10, so this feature works on all devices with Windows 10 installed.
+The "engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender for Endpoint is integrated with Windows 10, so this feature works on all devices with Windows 10 installed.
 
 ## Attack surface reduction rules
 
@@ -96,7 +113,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | `3B576869-A4EC-4529-8536-B80A7769E899` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Not supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | `01443614-cd74-433a-b99e-2ecdc07bfc25` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
@@ -113,7 +130,7 @@ The following sections describe each of the 15 attack surface reduction rules. T
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -190,9 +207,6 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet.
 
 Although not common, line-of-business applications sometimes use scripts to download and launch installers.
-
-> [!IMPORTANT]
-> File and folder exclusions don't apply to this attack surface reduction rule.
 
 This rule was introduced in:  
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -293,7 +307,7 @@ This rule helps prevent credential stealing, by locking down Local Security Auth
 LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
-> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 This rule was introduced in:
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -327,10 +341,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### Block untrusted and unsigned processes that run from USB
 
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include:
-
-* Executable files (such as .exe, .dll, or .scr)
-* Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
 
 This rule was introduced in: 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
@@ -346,7 +357,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes, while till allowing legitimate Outlook functions.
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
 This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
@@ -385,13 +396,16 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 This rule prevents malware from abusing WMI to attain persistence on a device.
 
+> [!IMPORTANT]
+> File and folder exclusions don't apply to this attack surface reduction rule.
+
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
 This rule was introduced in: 
 - [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
-Intune name: Block persistence through WMI event subscription
+Intune name: Not yet available
 
 Configuration Manager name: Not yet available
 

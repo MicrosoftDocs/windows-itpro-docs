@@ -20,11 +20,14 @@ ms.date: 01/22/2020
 
 # DeviceAlertEvents
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 The `DeviceAlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts in Microsoft Defender Security Center. Use this reference to construct queries that return information from the table.
 
@@ -43,6 +46,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `RemoteIP` | string | IP address that was being connected to |
+| `AttackTechniques` | string | MITRE ATT&CK techniques associated with the activity that triggered the alert |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the `DeviceName` and `Timestamp` columns |
 | `Table` | string | Table that contains the details of the event |
 

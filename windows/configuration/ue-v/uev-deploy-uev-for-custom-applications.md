@@ -1,6 +1,6 @@
 ---
 title: Use UE-V with custom applications
-description: Use UE-V with custom applications
+description: Use User Experience Virtualization (UE-V) to create your own custom settings location templates with the UE-V template generator.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

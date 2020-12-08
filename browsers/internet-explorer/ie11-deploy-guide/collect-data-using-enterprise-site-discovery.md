@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 # Collect data using Enterprise Site Discovery
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

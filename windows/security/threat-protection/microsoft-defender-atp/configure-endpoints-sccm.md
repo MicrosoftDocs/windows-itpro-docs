@@ -20,27 +20,45 @@ ms.date: 02/07/2020
 
 # Onboard Windows 10 devices using Configuration Manager
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - Microsoft Endpoint Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
-<span id="sccm1606"/>
+## Supported client operating systems
 
-## Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager current branch
+Based on the version of Configuration Manager you're running, the following client operating systems can be onboarded:
 
-Configuration Manager current branch has integrated support to configure and manage Microsoft Defender ATP on managed devices. For more information, see [Microsoft Defender Advanced Threat Protection in Microsoft Endpoint Configuration Manager current branch](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+#### Configuration Manager version 1910 and prior
 
-<span id="sccm1602"/>
+- Clients computers running Windows 10 
 
-## Onboard Windows 10 devices using earlier versions of System Center Configuration Manager
+#### Configuration Manager version 2002 and later
 
-You can use existing Configuration Manager functionality to create a policy to configure your devices. This action is supported in System Center 2012 R2 Configuration Manager.
+Starting in Configuration Manager version 2002, you can onboard the following operating systems:
+
+- Windows 8.1
+- Windows 10
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2016, version 1803 or later
+- Windows Server 2019
 
 ### Onboard devices using System Center Configuration Manager
+
+
+[![Image of the PDF showing the various deployment paths](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
+
+
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -50,7 +68,7 @@ You can use existing Configuration Manager functionality to create a policy to c
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Click **Download package**, and save the .zip file.
+    d. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -59,10 +77,10 @@ You can use existing Configuration Manager functionality to create a policy to c
     a. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
-> Microsoft Defender ATP doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
+> Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
 >[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 >
 > Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
@@ -75,7 +93,11 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
-You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on a device.
+>[!NOTE]
+>These configuration settings are typically done through Configuration Manager. 
+
+You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
+
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they’re complaint.
 
 The configuration is set through the following registry key entry:
@@ -93,13 +115,49 @@ Possible values are:
 
 The default value in case the registry key doesn’t exist is 1.
 
-For more information about System Center Configuration Manager Compliance see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
+
+## Other recommended configuration settings
+After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
+
+### Device collection configuration
+If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
+
+
+### Next generation protection configuration
+The following configuration settings are recommended:
+
+**Scan** <br>
+- Scan removable storage devices such as USB drives: Yes
+
+**Real-time Protection** <br>
+- Enable Behavioral Monitoring: Yes
+- Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes
+
+**Cloud Protection Service**
+- Cloud Protection Service membership type: Advanced membership
+
+**Attack surface reduction**
+Configure all available rules to Audit.
+
+>[!NOTE]
+> Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
+
+
+**Network protection** <br>
+Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
+
+
+**Controlled folder access**<br>
+Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
+
+For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
 
 ## Offboard devices using Configuration Manager
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package, you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
@@ -118,7 +176,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
     c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Click **Download package**, and save the .zip file.
+    d. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -132,25 +190,25 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ## Monitor device configuration
 
-If you're using Microsoft Endpoint Configuration Manager current branch, use the built-in Microsoft Defender ATP dashboard in the Configuration Manager console. For more information, see [Microsoft Defender Advanced Threat Protection - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+If you're using Microsoft Endpoint Configuration Manager current branch, use the built-in Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Defender for Endpoint - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
 If you're using System Center 2012 R2 Configuration Manager, monitoring consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the devices in your network.
 
-2. Checking that the devices are compliant with the Microsoft Defender ATP service (this ensures the device can complete the onboarding process and can continue to report data to the service).
+2. Checking that the devices are compliant with the Defender for Endpoint service (this ensures the device can complete the onboarding process and can continue to report data to the service).
 
 ### Confirm the configuration package has been correctly deployed
 
 1. In the Configuration Manager console, click **Monitoring** at the bottom of the navigation pane.
 
-2. Click **Overview** and then **Deployments**.
+2. Select **Overview** and then **Deployments**.
 
-3. Click on the deployment with the package name.
+3. Select on the deployment with the package name.
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-    If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+    If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
     ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
 
@@ -174,4 +232,4 @@ For more information, see [Introduction to compliance settings in System Center 
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

@@ -1,6 +1,6 @@
 ---
 title: Get machine related alerts API
-description: Retrieves a collection of alerts related to a given device ID.
+description: Learn how to use the Get machine related alerts API to retrieve all alerts related to a specific device in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, devices, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,9 +18,12 @@ ms.topic: article
 
 # Get machine related alerts  API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
@@ -28,7 +31,7 @@ Retrieves all [Alerts](alerts.md) related to a specific device.
 
 
 ## Limitations
-1. You can query on devices last seen in the past 30 days.
+1. You can query on devices last updated according to your configured retention period.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -45,7 +48,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >- User needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}/alerts
 ```
 

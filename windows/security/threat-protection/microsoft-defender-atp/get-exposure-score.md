@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+author: levinec
+ms.author: ellevin
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,24 +18,28 @@ ms.topic: article
 
 # Get exposure score
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves the organizational exposure score.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+
+Permission type | Permission | Permission display name
 :---|:---|:---
-Application |	Score.Read.All |	'Read Threat and Vulnerability Management score'
+Application | Score.Read.All | 'Read Threat and Vulnerability Management score'
 Delegated (work or school account) | Score.Read | 'Read Threat and Vulnerability Management score'
 
-
 ## HTTP request
+
 ```
 GET /api/exposureScore
 ```
@@ -46,17 +50,17 @@ Name | Type | Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
-
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK, with the exposure data in the response body.
 
+If successful, this method returns 200 OK, with the exposure data in the response body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -64,13 +68,12 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/exposureScore
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
 
 >[!NOTE]
 >The response list shown here may be truncated for brevity. 
-
 
 ```json
 {
@@ -81,8 +84,7 @@ Here is an example of the response.
 
 ```
 
-## Related topics
+## See also
+
 - [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability exposure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-exposure-score)
-
-

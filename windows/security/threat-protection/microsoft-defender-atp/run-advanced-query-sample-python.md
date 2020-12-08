@@ -1,7 +1,7 @@
 ---
 title: Advanced Hunting with Python API Guide
 ms.reviewer: 
-description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using Python.
+description: Learn how to query using the Microsoft Defender Advanced Threat Protection API, by using Python, with examples.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,19 +19,22 @@ ms.topic: article
 
 # Advanced Hunting using Python
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
-In this section we share Python samples to retrieve a token and use it to run a query.
+In this section, we share Python samples to retrieve a token and use it to run a query.
 
 >**Prerequisite**: You first need to [create an app](apis-intro.md).
 
 ## Get token
 
-- Run the following:
+- Run the following commands:
 
 ```
 
@@ -64,9 +67,9 @@ aadToken = jsonResponse["access_token"]
 ```
 
 where
-- tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-- appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
-- appSecret: Secret of your AAD app
+- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
+- appSecret: Secret of your Azure AD app
 
 ## Run query
 
@@ -93,7 +96,7 @@ results = jsonResponse["Results"]
 ```
 
 - schema contains the schema of the results of your query
-- results contains the results of your query
+- results contain the results of your query
 
 ### Complex queries
 
@@ -144,6 +147,6 @@ outputFile.close()
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

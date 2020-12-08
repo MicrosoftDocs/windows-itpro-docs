@@ -1,6 +1,6 @@
 ---
 title: Servicing stack updates (Windows 10)
-description: Servicing stack updates improve the code that installs the other updates.
+description: In this article, learn how servicing stack updates improve the code that installs the other updates.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -12,6 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Servicing stack updates
@@ -27,6 +28,8 @@ Servicing stack updates provide fixes to the servicing stack, the component that
 ## Why should servicing stack updates be installed and kept up to date?
   
 Servicing stack updates improve the reliability of the update process to mitigate potential issues while installing the latest quality updates and feature updates. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes.
+
+For information about some changes to servicing stack updates, see [Simplifing Deployment of Servicing Stack Updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-on-premises-deployment-of-servicing-stack-updates/ba-p/1646039) on the Windows IT Pro blog.
 
 ## When are they released?
 

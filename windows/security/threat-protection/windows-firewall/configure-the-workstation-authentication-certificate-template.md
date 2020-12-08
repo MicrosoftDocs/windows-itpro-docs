@@ -1,6 +1,6 @@
 ---
 title: Configure the Workstation Authentication Template (Windows 10)
-description: Configure the Workstation Authentication Certificate Template
+description: Learn how to configure a workstation authentication certificate template, which is used for device certificates that are enrolled and deployed to workstations.
 ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
 ms.reviewer: 
 manager: dansimp

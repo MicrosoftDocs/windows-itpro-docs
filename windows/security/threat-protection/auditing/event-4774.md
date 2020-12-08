@@ -1,6 +1,6 @@
 ---
 title: 4774(S, F) An account was mapped for logon. (Windows 10)
-description: Describes security event 4774(S, F) An account was mapped for logon.
+description: Describes security event 4774(S, F) An account was mapped for logon. This event is generated when an account is mapped for logon.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

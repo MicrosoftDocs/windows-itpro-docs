@@ -18,9 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# View and organize the Microsoft Defender Advanced Threat Protection Incidents queue
+# View and organize the Microsoft Defender for Endpoint Incidents queue
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 The **Incidents queue** shows a collection of incidents that were flagged from devices in your network. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
@@ -49,7 +52,7 @@ Incident severity | Description
 High </br>(Red) | Threats often associated with advanced persistent threats (APT). These incidents indicate a high risk due to the severity of damage they can inflict on devices.
 Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
 Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
-Informational </br>(Grey) | Informational incidents are those that might not be considered harmful to the network but might be good to keep track of.
+Informational </br>(Grey) | Informational incidents might not be considered harmful to the network but might be good to keep track of.
 
 ## Assigned to
 You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.
@@ -63,7 +66,17 @@ You can choose to limit the list of incidents shown based on their status to see
 ### Data sensitivity
 Use this filter to show incidents that contain sensitivity labels.
 
-## Related topics
+## Incident naming
+
+To understand the incident's scope at a glance, incident names are automatically generated based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.
+
+For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+> [!NOTE]
+> Incidents that existed prior the rollout of automatic incident naming will retain their name.
+
+
+## See also
 - [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)

@@ -17,22 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues
+# Troubleshoot Microsoft Defender for Endpoint onboarding issues
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - Windows Server 2012 R2
 - Windows Server 2016
 
-You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
+You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
-
 
 ## Troubleshoot issues with onboarding tools
 
 If you have completed the onboarding process and don't see devices in the [Devices list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
-
 
 ### Troubleshoot onboarding when deploying with Group Policy
 
@@ -41,7 +42,6 @@ Deployment with Group Policy is done by running the onboarding script on the dev
 If you have completed the onboarding process and don't see devices in the [Devices list](investigate-machines.md) after an hour, you can check the output of the script on the devices. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the devices](#troubleshoot-onboarding-issues-on-the-device) for additional errors that might occur.
-
 
 ### Troubleshoot onboarding issues when deploying with Microsoft Endpoint Configuration Manager
 
@@ -57,10 +57,10 @@ If the deployment fails, you can check the output of the script on the devices.
 
 If the onboarding completed successfully but the devices are not showing up in the **Devices list** after an hour, see [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device) for additional errors that might occur.
 
-
 ### Troubleshoot onboarding when deploying with a script
 
 **Check the result of the script on the device:**
+
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
@@ -68,6 +68,7 @@ If the onboarding completed successfully but the devices are not showing up in t
 3. Look for an event from **WDATPOnboarding** event source.
 
 If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
+
 > [!NOTE]
 > The following event IDs are specific to the onboarding script only.
 
@@ -81,7 +82,6 @@ Event ID | Error Type | Resolution steps
 `35` |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 `40` | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 `65` | Insufficient privileges| Run the script again with administrator privileges.
-
 
 ### Troubleshoot onboarding issues using Microsoft Intune
 
@@ -97,18 +97,17 @@ Use the following tables to understand the possible causes of issues while onboa
 
 If none of the event logs and troubleshooting steps work, download the Local script from the **Device management** section of the portal, and run it in an elevated command prompt.
 
-**Microsoft Intune error codes and OMA-URIs**:
+#### Microsoft Intune error codes and OMA-URIs
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---:|:---|:---|:---|:---
 0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> If it doesn't exist, open an elevated command and add the key.
+ | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender for Endpoint Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> If it doesn't exist, open an elevated command and add the key.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
- 0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
+ | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
+ 0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
 
-
-**Known issues with non-compliance**
+#### Known issues with non-compliance
 
 The following table provides information on issues with non-compliance and how you can address the issues.
 
@@ -118,8 +117,7 @@ Case | Symptoms | Possible cause and troubleshooting steps
  `2` |  Device is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  **Possible cause:** Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the device as non-compliant by SenseIsRunning when DM session occurs on system start. <br><br> **Troubleshooting steps:** The issue should automatically be fixed within 24 hours.
  `3` | Device is non-compliant | **Troubleshooting steps:** Ensure that Onboarding and Offboarding policies are not deployed on the same device at same time.
 
-
-**Mobile Device Management (MDM) event logs**
+#### Mobile Device Management (MDM) event logs
 
 View the MDM event logs to troubleshoot issues that might arise during onboarding:
 
@@ -129,18 +127,17 @@ Channel name: Admin
 
 ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
-1819 | Error | Microsoft Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
-
+1819 | Error | Microsoft Defender for Endpoint CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## Troubleshoot onboarding issues on the device
 
-If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender ATP agent:
+If the deployment tools used does not indicate an error in the onboarding process, but devices are still not appearing in the devices list in an hour, go through the following verification topics to check if an error occurred with the Microsoft Defender for Endpoint agent.
+
 - [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log)
 - [Ensure the diagnostic data service is enabled](#ensure-the-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the device has an Internet connection](#ensure-the-device-has-an-internet-connection)
 - [Ensure that Microsoft Defender Antivirus is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
-
 
 ### View agent onboarding errors in the device event log
 
@@ -149,7 +146,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
    > [!NOTE]
-   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
+   > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
 3. Select **Operational** to load the log.
 
@@ -163,36 +160,35 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 Event ID | Message | Resolution steps
 :---:|:---|:---
- `5` | Microsoft Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
- `6` | Microsoft Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script.md).
- `7` | Microsoft Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection), then run the entire onboarding process again.
- `9` | Microsoft Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the event happened during offboarding, contact support.
-`10` | Microsoft Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the problem persists, contact support.
-`15` | Microsoft Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
-`17` | Microsoft Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script.md). If the problem persists, contact support.
-`25` | Microsoft Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
-`27` | Failed to enable Microsoft Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
+ `5` | Microsoft Defender for Endpoint service failed to connect to the server at _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
+ `6` | Microsoft Defender for Endpoint service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-script.md).
+ `7` | Microsoft Defender for Endpoint service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection), then run the entire onboarding process again.
+ `9` | Microsoft Defender for Endpoint service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the event happened during offboarding, contact support.
+`10` | Microsoft Defender for Endpoint service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-script.md). <br><br>If the problem persists, contact support.
+`15` | Microsoft Defender for Endpoint cannot start command channel with URL: _variable_ | [Ensure the device has Internet access](#ensure-the-device-has-an-internet-connection).
+`17` | Microsoft Defender for Endpoint service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-script.md). If the problem persists, contact support.
+`25` | Microsoft Defender for Endpoint service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
+`27` | Failed to enable Microsoft Defender for Endpoint mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
 `29` | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the device has Internet access, then run the entire offboarding process again.
-`30` | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender Advanced Threat Protection. Failure code: %1 | Contact support.
+`30` | Failed to disable $(build.sense.productDisplayName) mode in Microsoft Defender for Endpoint. Failure code: %1 | Contact support.
 `32` | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the device.
 `55` | Failed to create the Secure ETW autologger. Failure code: %1 | Reboot the device.
-`63` | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4	| Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
+`63` | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4 | Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
 `64` | Starting stopped external service. Name: %1, exit code: %2 | Contact support if the event keeps re-appearing.
 `68` | The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3 | Identify what is causing changes in start type. Fix mentioned service start type.
-`69` |	The service is stopped. Service name: %1	| Start the mentioned service. Contact support if persists.
+`69` | The service is stopped. Service name: %1 | Start the mentioned service. Contact support if persists.
 
-<br>
-There are additional components on the device that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
+<br />
+
+There are additional components on the device that the Microsoft Defender for Endpoint agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender for Endpoint agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
-
 
 ### Ensure the diagnostic data service is enabled
 
 If the devices aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
-
 
 ### Ensure the service is set to start
 
@@ -215,7 +211,6 @@ First, you should check that the service is set to start automatically when Wind
    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
-
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
@@ -247,22 +242,26 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the device has an Internet connection
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender ATP service.
+The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender ATP service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
-
 ### Ensure that Microsoft Defender Antivirus is not disabled by a policy
 
-**Problem**: The Microsoft Defender ATP service does not start after onboarding.
+> [!IMPORTANT]
+> The following only applies to devices that have **not** yet received the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
+>
+> The update ensures that Microsoft Defender Antivirus cannot be turned off on client devices via system policy.
+
+**Problem**: The Microsoft Defender for Endpoint service does not start after onboarding.
 
 **Symptom**: Onboarding successfully completes, but you see error 577 or error 1058 when trying to start the service.
 
-**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
+**Solution**: If your devices are running a third-party antimalware client, the Microsoft Defender for Endpoint agent needs the Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not turned off by a system policy.
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
@@ -273,19 +272,21 @@ If the verification fails and your environment is using a proxy to connect to th
 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>`
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
+
+> [!IMPORTANT]
+> The `disableAntiSpyware` setting is discontinued and will be ignored on all client devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
+
 - After clearing the policy, run the onboarding steps again.
 
-- You can also check the following registry key values to verify that the policy is disabled:
-
-  1. Open the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-  2. Ensure that the value `DisableAntiSpyware` is not present.
+- You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
    > In addition, you must ensure that wdfilter.sys and wdboot.sys are set to their default start values of "0".
-   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
-   >  - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   >
+   > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## Troubleshoot onboarding issues on a server
 
@@ -295,9 +296,10 @@ If you encounter issues while onboarding a server, go through the following veri
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
 
 You might also need to check the following:
-- Check that there is a Microsoft Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
 
-    ![Image of process view with Microsoft Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
+- Check that there is a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
+
+    ![Image of process view with Microsoft Defender for Endpoint Service running](images/atp-task-manager.png)
 
 - Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
@@ -311,20 +313,19 @@ You might also need to check the following:
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 
-
 ## Confirming onboarding of newly built devices
 
 There may be instances when onboarding is deployed on a newly built device but not completed.
 
 The steps below provide guidance for the following scenario:
+
 - Onboarding package is deployed to newly built devices
 - Sensor does not start because the Out-of-box experience (OOBE) or first user logon has not been completed
 - Device is turned off or restarted before the end user performs a first logon
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
-
+> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
@@ -444,8 +445,8 @@ The steps below provide guidance for the following scenario:
 
     ![Image of Microsoft Endpoint Configuration Manager configuration](images/mecm-30.png)
 
-
 ## Related topics
-- [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md)
+
+- [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)

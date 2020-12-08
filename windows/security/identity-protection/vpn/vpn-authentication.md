@@ -1,6 +1,6 @@
 ---
 title: VPN authentication options (Windows 10)
-description: tbd
+description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

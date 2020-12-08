@@ -1,6 +1,6 @@
 ---
 title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows 10)
-description: Planning Your Windows Defender Firewall with Advanced Security Design
+description: After you gather the relevant information, select the design or combination of designs for Windows Defender Firewall with Advanced Security in your environment.
 ms.assetid: f3ac3d49-ef4c-4f3c-a16c-e107284e169f
 ms.reviewer: 
 ms.author: dansimp
@@ -37,9 +37,9 @@ To create a domain isolation or server isolation design, you must understand the
 
 ## IPsec performance considerations
 
-Although IPsec is critically important in securing network traffic going to and from your devices, there are costs associated with its use. The mathematically intensive cryptographic algorithms require a significant amount of computing power, which can prevent your device from making use of all of the available bandwidth. For example, an IPsec-enabled device using the AES encryption protocols on a 10 gigabits per second (Gbps) network link might see a throughput of 4.5 Gbps. This is due to the demands placed on the CPU to perform the cryptographic functions required by the IPsec integrity and encryption algorithms.
+Although IPsec is critically important in securing network traffic going to and from your devices, there are costs associated with its use. The mathematically intensive cryptographic algorithms require a significant amount of computing power, which can prevent your device from making use of all of the available bandwidth. For example, an IPsec-enabled device using the AES encryption protocols on a 10 gigabits per second (Gbps) network link might see a throughput of 4.5 Gbps. This reduction is due to the demands placed on the CPU to perform the cryptographic functions required by the IPsec integrity and encryption algorithms.
 
-IPsec task offload is a Windows technology that supports network adapters equipped with dedicated cryptographic processors to perform the computationally intensive work required by IPsec. This frees up a device’s CPU and can dramatically increase network throughput. For the same network link as above, the throughput with IPsec task offload enabled improves to about 9.2 Gbps.
+IPsec task offload is a Windows technology that supports network adapters equipped with dedicated cryptographic processors to perform the computationally intensive work required by IPsec. This configuration frees up a device’s CPU and can dramatically increase network throughput. For the same network link as above, the throughput with IPsec task offload enabled improves to about 9.2 Gbps.
 
 ## Domain isolation design
 

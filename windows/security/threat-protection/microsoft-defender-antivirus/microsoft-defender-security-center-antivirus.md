@@ -3,7 +3,6 @@ title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender AV now included in the Windows Security app, you can review, compare, and perform common tasks.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,9 +17,12 @@ manager: dansimp
 
 # Microsoft Defender Antivirus in the Windows Security app
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
 
@@ -37,7 +39,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 
 See the [Windows Security article](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
-The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
+The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
 ## Review virus and threat protection settings in the Windows Security app
 

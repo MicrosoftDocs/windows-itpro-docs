@@ -1,6 +1,6 @@
 ---
 title: Migrating UE-V settings packages
-description: Migrating UE-V settings packages
+description: Learn to relocate User Experience Virtualization (UE-V) user settings packages either when you migrate to a new server or when you perform backups.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

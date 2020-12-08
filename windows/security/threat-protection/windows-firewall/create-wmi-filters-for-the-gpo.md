@@ -1,6 +1,6 @@
 ---
 title: Create WMI Filters for the GPO (Windows 10)
-description: Create WMI Filters for the GPO
+description: Learn how to use WMI filters on a GPO to make sure that each GPO for a group can only be applied to devices running the correct version of Windows.
 ms.assetid: b1a6d93d-a3c8-4e61-a388-4a3323f0e74e
 ms.reviewer: 
 ms.author: dansimp

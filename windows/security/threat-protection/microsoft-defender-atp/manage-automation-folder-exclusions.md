@@ -19,14 +19,17 @@ ms.topic: article
 
 # Manage automation folder exclusions 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Automation folder exclusions allow you to specify folders that the Automated investigation will skip. 
 
@@ -66,6 +69,9 @@ You can specify the file names that you want to be excluded in a specific direct
     
 
 4. Click **Save**.
+
+>[!NOTE]
+> Live Response commands to collect or examine excluded files will fail with error: "File is excluded". In addition, automated investigations will ignore the excluded items.
 
 ## Edit an automation folder exclusion 
 1. In the navigation pane, select **Settings** > **Automation folder exclusions**. 

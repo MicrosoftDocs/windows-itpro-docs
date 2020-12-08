@@ -1,6 +1,6 @@
 ---
 title: Prepare a UE-V Deployment
-description: Prepare a UE-V Deployment
+description: Learn about the types of User Experience Virtualization (UE-V) deployment you can execute and what preparations you can make beforehand to be successful.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

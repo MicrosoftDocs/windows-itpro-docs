@@ -1,6 +1,6 @@
 ---
 title: Configure Hybrid Windows Hello for Business key trust Settings
-description: Configuring Windows Hello for Business settings in hybrid key trust deployment.
+description: Begin the process of configuring your hybrid key trust environment for Windows Hello for Business. Start with your Active Directory configuration.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy

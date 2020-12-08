@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy, Shortcut Extensions, and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Group Policy includes the Shortcuts preference extension, which lets you configure shortcuts to:
 
 -   **File system objects.** Traditional shortcuts that link to apps, files, folders, drives, shares, or computers. For example, linking a shortcut to an app from the **Start** screen.

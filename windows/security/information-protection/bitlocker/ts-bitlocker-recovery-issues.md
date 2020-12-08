@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/18/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker recovery: known issues

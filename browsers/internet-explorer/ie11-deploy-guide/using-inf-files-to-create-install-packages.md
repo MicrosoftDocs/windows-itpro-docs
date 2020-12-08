@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Using Setup Information (.inf) files to create install packages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](https://go.microsoft.com/fwlink/p/?LinkId=327959).
 
  **To add uninstallation instructions to the .inf files**

@@ -1,6 +1,6 @@
 ---
 title: Sync Trigger Events for UE-V
-description: Sync Trigger Events for UE-V
+description: Learn how User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices.
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

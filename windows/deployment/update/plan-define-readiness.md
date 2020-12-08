@@ -1,6 +1,5 @@
 ---
 title: Define readiness criteria
-ms.reviewer: 
 manager: laurawi
 description: Identify important roles and figure out how to classify apps
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
@@ -10,16 +9,15 @@ audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.topic: article
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-coredeploy
 ---
 
 # Define readiness criteria
 
 ## Figure out roles and personnel
 
-Planning and managing a deployment involves a variety of distinct activies and roles best suited to each. As you plan, it's worth figuring out which roles you'll need to carry out the deployment and who should fill them. Different roles are active at various phases of a deployment. Depending on the size and complexity of your organization, some of the roles could be filled by the same person. However, it's best to have an established *process manager*, who will oversee all of the tasks for the deployment.
+Planning and managing a deployment involves a variety of distinct activities and roles best suited to each. As you plan, it's worth figuring out which roles you'll need to carry out the deployment and who should fill them. Different roles are active at various phases of a deployment. Depending on the size and complexity of your organization, some of the roles could be filled by the same person. However, it's best to have an established *process manager*, who will oversee all of the tasks for the deployment.
 
 ### Process manager
 
@@ -40,7 +38,7 @@ This table sketches out one view of the other roles, with their responsibilities
 
 |Role  |Responsibilities  |Skills  |Active phases  |
 |---------|---------|---------|---------|
-|Process manager     | Manages the process end to end; ensures inputs and outputs are captures; ensures that activities progress        | IT service management        | Plan, prepare, pilot deployment, broad deployment        |
+|Process manager     | Manages the process end to end; ensures inputs and outputs are captures; ensures that activities progress        | IT Service Management        | Plan, prepare, pilot deployment, broad deployment        |
 |Application owner     | Define application test plan; assign user acceptance testers; certify the application         | Knowledge of critical and important applications        | Plan, prepare, pilot deployment        |
 |Application developer     | Ensure apps are developed to stay compatible with current Windows versions        | Application development; application remediation        | Plan, prepare        |
 |End-user computing     | Typically a group including infrastructure engineers or deployment engineers who ensure upgrade tools are compatible with Windows        | Bare-metal deployment; infrastructure management; application delivery; update management        | Plan, prepare, pilot deployment, broad deployment        |
@@ -55,7 +53,7 @@ This table sketches out one view of the other roles, with their responsibilities
 
 ## Set criteria for rating apps
 
-Some apps in your environment are fundamental to your core business activities. Other apps help workers perform their roles, but aren’t critical to your business operations. Before you start inventorying and assessing the apps in your environment, you should establish some criteria for categorizing your apps, and then determine a priority for each. This will help you understand how best to deploy updates and how to resolve any issues that could arise.
+Some apps in your environment are fundamental to your core business activities. Other apps help workers perform their roles, but aren’t critical to your business operations. Before you start inventorying and assessing the apps in your environment, you should establish some criteria for categorizing your apps, and then determine a priority for each. This process will help you understand how best to deploy updates and how to resolve any issues that could arise.
 
 In the Prepare phase, you'll apply the criteria you define now to every app in your organization.
 
@@ -68,9 +66,9 @@ Here's a suggested classification scheme:
 |Important     | Applications that individual staff members need to support their productivity. Downtime here would affect individual users, but would only have a minimal impact on the business.       |
 |Not important   | There is no impact on the business if these apps are not available for a while.        |
 
-Once you have classified your applications, you should agree what each classification means to the organization in terms of priority and severity. This will help ensure that you can triage problems with the right level of urgency. You should assign each app a time-based priority.
+Once you have classified your applications, you should agree what each classification means to the organization in terms of priority and severity. This activity will help ensure that you can triage problems with the right level of urgency. You should assign each app a time-based priority.
 
-Here's an example priority rating system; of course the specifics could vary for your organization:
+Here's an example priority rating system; the specifics could vary for your organization:
 
 
 |Priority  |Definition  |
@@ -102,7 +100,7 @@ Using the suggested scheme, a financial corporation might classify their apps li
 |Credit processing app     | Critical        |
 |Frontline customer service app     |  Critical       |
 |PDF viewer     | Important        |
-|Image processing app     | Not important        |
+|Image-processing app     | Not important        |
 
 Further, they might combine this classification with severity and priority rankings like this:
 

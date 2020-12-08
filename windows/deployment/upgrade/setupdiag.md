@@ -5,6 +5,7 @@ manager: laurawi
 ms.author: greglin
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -48,7 +49,7 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\Setup\SetupDiag\Results**.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.
 
 If the upgrade process proceeds normally, the **Sources** directory including **setupdiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **setupdiag.exe** will also be removed.
 
@@ -552,7 +553,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Addreg](./../images/addreg.png)
+![Example of Addreg](./../images/addreg.png)
 
 ## Related topics
 

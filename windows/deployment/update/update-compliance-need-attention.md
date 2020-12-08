@@ -1,9 +1,7 @@
 ---
 title: Update Compliance - Need Attention! report
-ms.reviewer: 
 manager: laurawi
-description: an overview of the Update Compliance Need Attention! report
-ms.prod: w10
+description: Learn how the Need attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
@@ -12,6 +10,7 @@ author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
+ms.prod: w10
 ---
 
 # Needs attention!

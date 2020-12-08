@@ -3,7 +3,6 @@ title: Enable and configure Microsoft Defender Antivirus protection features
 description: Enable behavior-based, heuristic, and real-time protection in Microsoft Defender AV.
 keywords: heuristic, machine-learning, behavior monitor, real-time protection, always-on, Microsoft Defender Antivirus, antimalware, security, defender
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,9 +18,12 @@ manager: dansimp
 
 # Configure behavioral, heuristic, and real-time protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft Defender Antivirus uses several methods to provide threat protection:
 

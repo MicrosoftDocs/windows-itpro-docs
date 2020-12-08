@@ -20,16 +20,19 @@ ms.date: 04/24/2018
 
 # Onboard Windows 10 devices using Group Policy 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
 - Group Policy
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -38,6 +41,14 @@ ms.date: 04/24/2018
 > For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
 ## Onboard devices using Group Policy
+
+[![Image of the PDF showing the various deployment paths](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
+
+
+Check out the [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
+
+
+
 1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
  
     a.  In the navigation pane, select **Settings** > **Onboarding**.
@@ -65,9 +76,9 @@ ms.date: 04/24/2018
 9. Click **OK** and close any open GPMC windows.
 
 >[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md).
+> After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 
-## Additional Microsoft Defender ATP configuration settings
+## Additional Defender for Endpoint configuration settings
 For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
@@ -99,6 +110,75 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
+
+
+## Other recommended configuration settings
+
+### Update endpoint protection configuration
+
+After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
+
+All policies are located under `Computer Configuration\Policies\Administrative Templates`.
+
+**Policy location:** \Windows Components\Windows Defender ATP
+
+Policy | Setting 
+:---|:---
+Enable\Disable Sample collection|	Enabled - "Enable sample collection on machines" checked
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus
+
+Policy | Setting 
+:---|:---
+Configure detection for potentially unwanted applications | Enabled, Block
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
+
+Policy | Setting 
+:---|:---
+Join Microsoft MAPS | Enabled, Advanced MAPS
+Send file samples when further analysis is required | Enabled, Send safe samples
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
+
+Policy | Setting 
+:---|:---
+Turn off real-time protection|Disabled
+Turn on behavior monitoring|Enabled
+Scan all downloaded files and attachments|Enabled
+Monitor file and program activity on your computer|Enabled
+
+
+**Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
+
+These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
+
+Policy | Setting 
+:---|:---
+Check for the latest virus and spyware security intelligence before running a scheduled scan |Enabled
+
+
+
+**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+
+Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+
+1. Open the **Configure Attack Surface Reduction** policy.
+2. Select **Enabled**.
+3. Select the **Show…** button.
+4. Add each GUID in the **Value Name** field with a Value of 2.
+
+This will set each up for audit only.
+
+![Image of attack surface reduction configuration](images/asr-guid.png)
+
+
+
+Policy | Setting 
+:---|:---
+Configure Controlled folder access|	Enabled, Audit Mode
+
 
 
 ## Offboard devices using Group Policy
@@ -154,5 +234,5 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP devices](run-detection-test.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
+- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

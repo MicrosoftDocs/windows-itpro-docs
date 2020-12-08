@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Security Imports .INS file to import security info
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to import security information from your local device to your custom package.
 
 |Name |Value |Description |

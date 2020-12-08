@@ -1,6 +1,6 @@
 ---
 title: 4705(S) A user right was removed. (Windows 10)
-description: Describes security event 4705(S) A user right was removed.
+description: Describes security event 4705(S) A user right was removed. This event is generated when a user right is removed from an account.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

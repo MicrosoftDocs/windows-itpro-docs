@@ -1,6 +1,6 @@
 ---
 title: Understand WDAC policy rules and file rules (Windows 10)
-description: Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by using policies that specify whether a driver or application is trusted and can be run. A policy includes *policy rules* that control options.
+description: Learn how Windows Defender Application Control provides control over a computer running Windows 10 by using policies that include policy rules and file rules.
 keywords:  security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10

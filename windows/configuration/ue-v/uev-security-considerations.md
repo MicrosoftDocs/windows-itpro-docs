@@ -1,6 +1,6 @@
 ---
 title: Security Considerations for UE-V
-description: Security Considerations for UE-V
+description: Learn about accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V).
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

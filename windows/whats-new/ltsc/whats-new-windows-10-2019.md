@@ -44,11 +44,11 @@ This version of Window 10 includes security improvements for threat protection, 
 
 ### Threat protection
 
-#### Windows Defender ATP
+#### Microsoft Defender for Endpoint
 
-The Windows Defender Advanced Threat Protection ([Windows Defender ATP](/windows/security/threat-protection/index)) platform inludes the security pillars shown in the following diagram. In this version of Windows, Windows Defender ATP includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
+The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Windows Defender ATP](../images/wdatp.png)
+![Microsoft Defender for Endpoint](../images/wdatp.png)
 
 ##### Attack surface reduction 
 
@@ -72,9 +72,9 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 ### Endpoint detection and response 
 
-Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Windows Defender ATP portal. 
+Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal. 
 
-   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
+   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
     
    We've also [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). The new library includes information on:
 - [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
@@ -99,25 +99,25 @@ Endpoint detection and response is improved. Enterprise customers can now take a
   - Upgraded detections of ransomware and other advanced attacks.
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
 
-  **Threat reponse** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
+  **Threat response** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
 - [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
   - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
 Additional capabilities have been added to help you gain a holistic view on **investigations** include:
-- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
-- [Query data using Advanced hunting in Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+- [Query data using Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
 - [Use Automated investigations to investigate and remediate threats](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
 - [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
 - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-- [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
+- [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Microsoft Defender for Endpoint.
 
 Other enhanced security features include:
-- [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
-- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection) - Windows Defender ATP adds support for this scenario by providing MSSP integration. The integration will allow MSSPs to take the following actions: Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
-- [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center) - Windows Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Windows Defender ATP to provide improved threat detection for Windows Servers.
-- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration) - Microsoft Cloud App Security leverages Windows Defender ATP endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Windows Defender ATP monitored machines.
-- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) - Windows Defender ATP now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
-- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection) - Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor.
+- [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Microsoft Defender for Endpoint service and fix known issues.
+- [Managed security service provider (MSSP) support](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection) - Microsoft Defender for Endpoint adds support for this scenario by providing MSSP integration. The integration will allow MSSPs to take the following actions: Get access to MSSP customer's Windows Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
+- [Integration with Azure Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center) - Microsoft Defender for Endpoint integrates with Azure Defender to provide a comprehensive server protection solution. With this integration Azure Defender can leverage the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
+- [Integration with Microsoft Cloud App Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-cloud-app-security-integration) - Microsoft Cloud App Security leverages Microsoft Defender for Endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Defender for Endpoint monitored machines.
+- [Onboard Windows Server 2019](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#windows-server-version-1803-and-windows-server-2019) - Microsoft Defender for Endpoint now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client machines. 
+- [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection) - Onboard supported versions of Windows machines so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
 - [Enable conditional access to better protect users, devices, and data](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
 
 We've also added a new assessment for the Windows time service to the **Device performance & health** section. If we detect that your device’s time is not properly synced with our time servers and the time-syncing service is disabled, we’ll provide the option for you to turn it back on.
@@ -127,15 +127,15 @@ We’re continuing to work on how other security apps you’ve installed show up
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
 
 You can read more about ransomware mitigations and detection capability at:  
-- [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
-- [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf)
+- [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
+- [Ransomware security intelligence](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 - [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/)
 
-Also see [New capabilities of Windows Defender ATP further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
+Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10: [Windows Defender Advanced Threat Protection](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10: [Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
-For more information about features of Windows Defender ATP available in different editions of Windows 10, see the [Windows 10 commercial edition comparison](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
+For more information about features of Microsoft Defender for Endpoint available in different editions of Windows 10, see the [Windows 10 commercial edition comparison](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
 
 ### Information protection 
 
@@ -185,7 +185,7 @@ Improvements have been added are to Windows Hello for Business and Credential Gu
 
 New features in Windows Hello enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when  you are not present.
 
-New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification.md) inlcude: 
+New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification.md) include: 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 - For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
@@ -208,7 +208,7 @@ Windows Defender Credential Guard has always been an optional feature, but Windo
 
 For more information, see [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
-### Other security improvments
+### Other security improvements
 
 #### Windows security baselines
 
@@ -258,17 +258,6 @@ Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Oth
 Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
 
 You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](https://docs.microsoft.com/microsoft-store/add-profile-to-devices).
-
-#### Windows Autopilot self-deploying mode
-
-Windows Autopilot self-deploying mode enables a zero touch device provisioning experience. Simply power on the device, plug it into the Ethernet, and the device is fully configured automatically by Windows Autopilot. 
-
-This self-deploying capability removes the current need to have an end user interact by pressing the “Next” button during the deployment process. 
-
-You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
-
-To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying). 
-
 
 #### Autopilot Reset	
 
@@ -413,7 +402,7 @@ If you wish to take advantage of [Kiosk capabilities in Edge](https://docs.micro
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hyrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -456,7 +445,7 @@ Windows Update for Business now provides greater control over updates, with the 
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](/windows/deployment/update/waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](/windows/deployment/update/waas-configure-wufb#pause-quality-updates).
 
 
-Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
+Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferral periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
 
 WUfB now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
 
@@ -465,7 +454,7 @@ Windows Update for Business now provides greater control over updates, with the 
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](/windows/deployment/update/waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](/windows/deployment/update/waas-configure-wufb#pause-quality-updates).
 
 
-Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
+Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferral periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
 
 WUfB now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
 

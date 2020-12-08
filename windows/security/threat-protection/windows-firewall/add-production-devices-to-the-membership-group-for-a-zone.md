@@ -1,6 +1,6 @@
 ---
 title: Add Production Devices to the Membership Group for a Zone (Windows 10)
-description: Add Production Devices to the Membership Group for a Zone
+description: Learn how to add production devices to the membership group for a zone and refresh the group policy on the devices in the membership group.
 ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
 ms.reviewer: 
 ms.author: dansimp

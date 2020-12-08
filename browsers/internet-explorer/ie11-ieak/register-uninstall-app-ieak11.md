@@ -15,6 +15,9 @@ ms.date: 07/27/2017
 
 
 # Register an uninstall app for custom components using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Register the uninstall apps for any custom components you’ve included in your Internet Explorer 11 package. Registering these apps lets your employees remove the components later, using **Uninstall or change a program** in the Control Panel.
 
 ## Register your uninstallation program

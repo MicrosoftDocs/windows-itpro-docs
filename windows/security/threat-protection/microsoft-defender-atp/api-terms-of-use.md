@@ -16,11 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Microsoft Defender ATP API license and terms of use
+# Microsoft Defender for Endpoint API license and terms of use
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 ## APIs
 
-Microsoft Defender ATP APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+Defender for Endpoint APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### Throttling limits
 

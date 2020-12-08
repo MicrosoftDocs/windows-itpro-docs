@@ -1,16 +1,15 @@
 ---
 title: Windows as a service news & resources
+description: The latest news for Windows as a service with resources to help you learn more about them.
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
-ms.topic: article
 ---
 # Windows as a service - More news
 
@@ -19,8 +18,8 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <ul>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445">Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization  </a> - June 25, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What's new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What's new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update">How to get the Windows 10 May 2019 Update</a> - May 21, 2019</li>
  <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
   <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>

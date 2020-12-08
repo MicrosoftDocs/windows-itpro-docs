@@ -1,6 +1,6 @@
 ---
 title: Get MachineAction object API
-description: Use this API to create calls related to get machineaction object
+description: Learn how to use the Get MachineAction API to retrieve a specific Machine Action by its ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, machineaction object
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,9 +18,12 @@ ms.topic: article
 
 # Get machineAction API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
@@ -32,7 +35,7 @@ Retrieves specific [Machine Action](machineaction.md) by its ID.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

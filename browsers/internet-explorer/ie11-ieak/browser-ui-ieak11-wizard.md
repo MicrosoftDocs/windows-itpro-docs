@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Browser User Interface page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Browser User Interface** page of the Internet Explorer Customization Wizard 11 lets you change the toolbar buttons and the title bar text in IE.
 
 **Note**<br>The customizations you make on this page apply only to Internet Explorer for the desktop.

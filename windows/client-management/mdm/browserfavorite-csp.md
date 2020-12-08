@@ -1,6 +1,6 @@
 ---
 title: BrowserFavorite CSP
-description: BrowserFavorite CSP
+description: Learn how the BrowserFavorite configuration service provider is used to add and remove URLs from the favorites list on a device.
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
 ms.reviewer: 
 manager: dansimp

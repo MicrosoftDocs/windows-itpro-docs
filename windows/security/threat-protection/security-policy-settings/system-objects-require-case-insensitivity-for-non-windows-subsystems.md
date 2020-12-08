@@ -22,7 +22,7 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **System objects: Require case insensitivity for non-Windows subsystems** security policy setting.
+Describes the best practices, location, values, policy management, and security considerations for the **System objects: Require case insensitivity for non-Windows subsystems** security policy setting.
 
 ## Reference
 

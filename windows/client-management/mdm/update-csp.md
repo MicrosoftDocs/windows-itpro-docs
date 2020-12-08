@@ -1,6 +1,6 @@
 ---
 title: Update CSP
-description: Update CSP
+description: Learn how the Update configuration service provider (CSP) enables IT administrators to manage and control the rollout of new updates.
 ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
 ms.reviewer: 
 manager: dansimp
@@ -15,6 +15,9 @@ ms.date: 02/23/2018
 # Update CSP
 
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
+
+> [!Note]
+> The Update CSP functionality of 'AprrovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies. 
 
 The following diagram shows the Update configuration service provider in tree format.
 

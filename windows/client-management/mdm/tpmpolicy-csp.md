@@ -1,6 +1,6 @@
 ---
 title: TPMPolicy CSP
-description: TPMPolicy CSP
+description: The TPMPolicy configuration service provider (CSP) provides a mechanism to enable zero exhaust configuration on a Windows device for TPM software components.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

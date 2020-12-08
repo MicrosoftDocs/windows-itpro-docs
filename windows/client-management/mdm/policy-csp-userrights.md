@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - UserRights
-description: Policy CSP - UserRights
+description: Learn how user rights are assigned for user accounts or groups, and how the name of the policy defines the user right in question.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -82,6 +82,18 @@ For example, the following syntax grants user rights to Authenticated Users and 
 
 ```xml
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
+```
+
+For example, the following syntax grants user rights to two specific Azure Active Directory (AAD) users from Contoso, user1 and user2:
+
+```xml
+<![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>
+```
+
+For example, the following syntax grants user rights to a specific user or group, by using the Security Identifier (SID) of the account or group:
+
+```xml
+<![CDATA[*S-1-12-1-430441778-1204322964-3914475434-3271576427&#xF000;*S-1-12-1-2699785510-1240757380-4153857927-656075536]]>
 ```
 
 <hr/>
@@ -1881,12 +1893,12 @@ GP Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in Windows 10, version 1909.
--   8 - Added in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 <!--/Policies-->

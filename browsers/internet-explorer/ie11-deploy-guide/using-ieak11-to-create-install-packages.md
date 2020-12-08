@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Using Internet Explorer Administration Kit 11 (IEAK 11) to create packages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Internet Explorer Administration Kit 11 (IEAK 11) helps you set up, deploy, and maintain Internet Explorer 11.
 
 **Note**<br>IEAK 11 works in network environments, with or without Microsoft Active Directory.

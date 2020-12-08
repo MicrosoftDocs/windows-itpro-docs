@@ -2,7 +2,7 @@
 title: Using Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: Explains how to begin using Update Compliance.
+description: Learn how to use Update Compliance to monitor your device's Windows updates.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,6 +13,7 @@ ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use Update Compliance
@@ -62,21 +63,19 @@ The following is a breakdown of the different sections available in Update Compl
 
 
 ## Update Compliance data latency
-Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear. The  process that follows is as follows:
+Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear.
 
-Update Compliance is refreshed every 12 hours. This means that every 12 hours all data that has been gathered over the last 12-hour interval is pushed to Log Analytics. However, the rate at which each type of data is sent from the device and how long it takes to be ready for Update Compliance varies, roughly outlined below.
+The data powering Update Compliance is refreshed every 24 hours, and refreshes with the latest data from all devices part of your organization that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be re-ingested even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data.  
 
 | Data Type | Data upload rate from device | Data Latency |
 |--|--|--|
 |WaaSUpdateStatus | Once per day |4 hours |
 |WaaSInsiderStatus| Once per day |4 hours |
 |WaaSDeploymentStatus|Every update event (Download, install, etc.)|24-36 hours |
-|WDAVStatus|On signature update|24 hours |
-|WDAVThreat|On threat detection|24 hours |
 |WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
 |WUDOStatus|Once per day|12 hours |
 
-This means you should generally expect to see new data device data every 24 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours (if it misses the 36th hour refresh, it would be in the 48th, so the data will be present in the 48th hour refresh). 
+This means you should generally expect to see new data device data every 24 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours.
 
 ## Using Log Analytics
 

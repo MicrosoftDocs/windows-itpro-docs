@@ -16,6 +16,9 @@ ms.author: dansimp
 
 # Schedule approved change requests for production using the Enterprise Mode Site List Portal
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10

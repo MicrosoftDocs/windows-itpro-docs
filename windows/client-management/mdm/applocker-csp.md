@@ -1,6 +1,6 @@
 ---
 title: AppLocker CSP
-description: AppLocker CSP
+description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 ms.reviewer: 
 manager: dansimp
@@ -35,7 +35,7 @@ Defines restrictions for applications.
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 > [!NOTE]
-> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
+> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 Additional information:
 
@@ -484,7 +484,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Colour profile</td>
+<td>Color profile</td>
 <td>b08997ca-60ab-4dce-b088-f92e9c7994f3</td>
 <td></td>
 </tr>

@@ -3,7 +3,6 @@ title: Remediate and resolve infections detected by Microsoft Defender Antivirus
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,9 +18,12 @@ manager: dansimp
 
 # Configure remediation for Microsoft Defender Antivirus scans
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 When Microsoft Defender Antivirus runs a scan, it will attempt to remediate or remove threats that it finds. You can configure how Microsoft Defender Antivirus should react to certain threats, whether it should create a restore point before remediating, and when it should remove remediated threats.
 
@@ -54,9 +56,9 @@ Threats | Specify threats upon which default action should not be taken when det
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
-> </p>
+>
 > If you are certain Microsoft Defender Antivirus quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md).
-> </p>
+> 
 > To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
 
 Also see [Configure remediation-required scheduled full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.

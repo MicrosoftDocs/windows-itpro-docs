@@ -1,6 +1,6 @@
 ---
 title: Planning Network Access Groups (Windows 10)
-description: Planning Network Access Groups
+description: Learn how to implement a network access group for users and devices that can access an isolated server in Windows Defender Firewall with Advanced Security.
 ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
 ms.reviewer: 
 ms.author: dansimp

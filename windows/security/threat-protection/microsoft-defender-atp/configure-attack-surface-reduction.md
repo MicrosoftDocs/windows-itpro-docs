@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # Configure attack surface reduction
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 You can configure attack surface reduction with a number of tools, including:
 
 * Microsoft Intune

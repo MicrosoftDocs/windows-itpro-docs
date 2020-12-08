@@ -1,6 +1,6 @@
 ---
 title: VPN name resolution (Windows 10)
-description: tbd
+description: Learn how the name resolution setting in the VPN profile configures how name resolution works when a VPN client connects to a VPN server.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

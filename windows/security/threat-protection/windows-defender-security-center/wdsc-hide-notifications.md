@@ -3,7 +3,6 @@ title: Hide notifications from the Windows Security app
 description: Prevent Windows Security app notifications from appearing on user endpoints
 keywords: defender, security center, app, notifications, av, alerts
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -53,7 +52,7 @@ This can only be done in Group Policy.
 
 >[!IMPORTANT]
 >
-> Requirement: You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> Requirement: You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1. Download the latest [Administrative Templates (.admx) for Windows 10, v2004](https://www.microsoft.com/download/101445).
 
@@ -76,7 +75,7 @@ This can only be done in Group Policy.
 
 >[!IMPORTANT]
 >
-> Requirement: You must have Windows 10, version 1903. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> Requirement: You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -89,17 +88,16 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
 
-7.  Use the following registry key and DWORD value to **Hide all notifications**.
-   
-    **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+
+> [!NOTE]
+> You can use the following registry key and DWORD value to **Hide all notifications**.
+> **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
     **"DisableNotifications"=dword:00000001**
-    
-8.  Use the following registry key and DWORD value to **Hide not-critical notifications**.
-
-     **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
+> You can use the following registry key and DWORD value to **Hide not-critical notifications**.
+>**[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
      **"DisableEnhancedNotifications"=dword:00000001**
-
-9. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+   
 
 
 ## Notifications

@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker frequently asked questions (FAQ)
@@ -36,7 +37,7 @@ Generally it imposes a single-digit percentage performance overhead.
 
 ## How long will initial encryption take when BitLocker is turned on?
 
-Although BitLocker encryption occurs in the background while you continue to work, and the system remains usable, encryption times vary depending on the type of drive that is being encrypted, the size of the drive, and the speed of the drive. If you are encrypting very large drives, you may want to set encryption to occur during times when you will not be using the drive.
+Although BitLocker encryption occurs in the background while you continue to work, and the system remains usable, encryption times vary depending on the type of drive that is being encrypted, the size of the drive, and the speed of the drive. If you are encrypting large drives, you may want to set encryption to occur during times when you will not be using the drive.
 
 You can also choose whether or not BitLocker should encrypt the entire drive or just the used space on the drive when you turn on BitLocker. On a new hard drive, encrypting just the used spaced can be considerably faster than encrypting the entire drive. When this encryption option is selected, BitLocker automatically encrypts data as it is saved, ensuring that no data is stored unencrypted.
 
@@ -81,11 +82,11 @@ The TPM is not involved in any recovery scenarios, so recovery is still possible
 
 ## What can prevent BitLocker from binding to PCR 7?
 
-This happens if a non-Windows OS booted prior to Windows, or if Secure Boot is not available to the device, either because it has been disabled or the hardware does not support it.
+BitLocker can be prevented from binding to PCR 7 if a non-Windows OS booted prior to Windows, or if Secure Boot is not available to the device, either because it has been disabled or the hardware does not support it.
 
 ## Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
 
-Yes, you can swap multiple hard disks on the same computer if BitLocker is enabled, but only if the hard disks were BitLocker-protected on the same computer. The BitLocker keys are unique to the TPM and operating system drive, so if you want to prepare a backup operating system or data drive for use in case of disk failure, you need to make sure that they were matched with the correct TPM. You can also configure different hard drives for different operating systems and then enable BitLocker on each one with different authentication methods (such as one with TPM-only and one with TPM+PIN) without any conflicts.
+Yes, you can swap multiple hard disks on the same computer if BitLocker is enabled, but only if the hard disks were BitLocker-protected on the same computer. The BitLocker keys are unique to the TPM and operating system drive. So if you want to prepare a backup operating system or data drive in case a disk fails, make sure that they were matched with the correct TPM. You can also configure different hard drives for different operating systems and then enable BitLocker on each one with different authentication methods (such as one with TPM-only and one with TPM+PIN) without any conflicts.
 
 ## Can I access my BitLocker-protected drive if I insert the hard disk into a different computer?
 

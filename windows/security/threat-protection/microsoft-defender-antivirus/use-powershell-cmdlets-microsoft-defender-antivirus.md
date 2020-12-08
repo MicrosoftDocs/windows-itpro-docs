@@ -3,7 +3,6 @@ title: Use PowerShell cmdlets to configure and run Microsoft Defender AV
 description: In Windows 10, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Microsoft Defender Antivirus.
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/24/2020
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration. You can read more about it at the [PowerShell hub on MSDN](https://docs.microsoft.com/previous-versions/msdn10/mt173057(v=msdn.10)).
 
@@ -59,3 +61,4 @@ Omit the `-online` parameter to get locally cached help.
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus Cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps)

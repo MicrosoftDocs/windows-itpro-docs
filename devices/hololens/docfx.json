@@ -48,9 +48,7 @@
         }
     },
     "fileMetadata": {},
-    "template": [
-      null
-    ],
+    "template": [],
     "dest": "devices/hololens",
     "markdownEngineName": "markdig"
   },

@@ -5,7 +5,7 @@ obj/
 _site/
 Tools/NuGet/
 .optemp/
-Thumbs.db
+*.db
 .DS_Store
 *.ini
 _themes*/

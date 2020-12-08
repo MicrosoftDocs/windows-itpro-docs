@@ -1,6 +1,6 @@
 ---
 title: Create alert from event API
-description: Creates an alert using event details
+description: Learn how to use the Create alert API to create a new Alert on top of Event in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,14 +18,17 @@ ms.topic: article
 
 # Create alert API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
 Creates new [Alert](alerts.md) on top of **Event**.
-<br>**Microsoft Defender ATP Event** is required for the alert creation.
+<br>**Microsoft Defender for Endpoint Event** is required for the alert creation.
 <br>You will need to supply 3 parameters from the Event in the request: **Event Time**, **Machine ID** and **Report ID**. See example below.
 <br>You can use an event found in Advanced Hunting API or Portal.
 <br>If there existing an open alert on the same Device with the same Title, the new created alert will be merged with it.
@@ -38,7 +41,7 @@ Creates new [Alert](alerts.md) on top of **Event**.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

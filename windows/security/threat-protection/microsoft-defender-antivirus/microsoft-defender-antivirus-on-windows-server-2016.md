@@ -1,13 +1,12 @@
 ---
 title: Microsoft Defender Antivirus on Windows Server 2016 and 2019
-description: Enable and configure Microsoft Defender AV on Windows Server 2016 and 2019 
+description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -18,9 +17,13 @@ manager: dansimp
 
 # Microsoft Defender Antivirus on Windows Server 2016 and 2019
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Windows Server 2016
+- Windows Server 2019
 
 Microsoft Defender Antivirus is available on Windows Server 2016 and Windows Server 2019. In some instances, Microsoft Defender Antivirus is referred to as Endpoint Protection; however, the protection engine is the same.
 
@@ -176,7 +179,7 @@ If you are using a third-party antivirus solution and you're running into issues
 
 - See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
 
-- See [Better together: Microsoft Defender Antivirus and Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Microsoft Defender Advanced Threat Protection.
+- See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Defender for Endpoint.
 
 If you determine you do want to uninstall Microsoft Defender Antivirus, follow the steps in the following sections.
 

@@ -1,6 +1,6 @@
 ---
 title: AssignedAccess DDF
-description: AssignedAccess DDF
+description: Learn how the OMA DM device description framework (DDF) for the AssignedAccess configuration service provider.
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
 ms.reviewer: 
 manager: dansimp

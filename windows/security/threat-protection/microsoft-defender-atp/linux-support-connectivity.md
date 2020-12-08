@@ -14,22 +14,27 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
 ---
 
-# Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
+# Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Linux
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 ## Run the connectivity test
 
-To test if Microsoft Defender ATP for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
+To test if Defender for Endpoint for Linux can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```bash
-$ mdatp connectivity test
+mdatp connectivity test
 ```
 
 If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
@@ -44,7 +49,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
 
 The output from this command should be similar to:
 
-```bash
+```Output
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
@@ -54,12 +59,12 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
 >
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender ATP for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint for Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 If a static proxy is required, add a proxy parameter to the above command, where `proxy_address:port` correspond to the proxy address and port:
 
 ```bash
-$ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 Ensure that you use the same proxy address and port as configured in the `/lib/system/system/mdatp.service` file. Check your proxy configuration if there are errors from the above commands.
@@ -75,20 +80,20 @@ To use a static proxy, the `mdatp.service` file must be modified. Ensure the lea
 
 Also ensure that the correct static proxy address is filled in to replace `address:port`.
 
-If this file is correct, try running the following command in the terminal to reload Microsoft Defender ATP for Linux and propagate the setting:
+If this file is correct, try running the following command in the terminal to reload Defender for Endpoint for Linux and propagate the setting:
 
 ```bash
-$ sudo systemctl daemon-reload; sudo systemctl restart mdatp
+sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 
 Upon success, attempt another connectivity test from the command line:
 
 ```bash
-$ mdatp connectivity test
+mdatp connectivity test
 ```
 
 If the problem persists, contact customer support.
 
 ## Resources
 
-- For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender ATP for static proxy discovery](linux-static-proxy-configuration.md).
+- For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender for Endpoint for static proxy discovery](linux-static-proxy-configuration.md).

@@ -1,6 +1,6 @@
 ---
 title: Link the GPO to the Domain (Windows 10)
-description: Link the GPO to the Domain
+description: Learn how to link a GPO to the Active Directory container for the target devices, after you configure it in Windows Defender Firewall with Advanced Security.
 ms.assetid: 746d4553-b1a6-4954-9770-a948926b1165
 ms.reviewer: 
 ms.author: dansimp

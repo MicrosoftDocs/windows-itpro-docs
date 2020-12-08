@@ -1,6 +1,6 @@
 ---
 title: Best practices for feature updates - conclusion
-description: Final thoughts about how to deploy feature updates
+description: This article includes final thoughts about how to deploy and stay up-to-date with Windows 10 feature updates.
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
@@ -12,6 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Conclusion

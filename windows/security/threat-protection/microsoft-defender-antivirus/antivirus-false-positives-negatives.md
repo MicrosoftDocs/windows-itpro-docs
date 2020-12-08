@@ -3,7 +3,6 @@ title: What to do with false positives/negatives in Microsoft Defender Antivirus
 description: Did Microsoft Defender Antivirus miss or wrongly detect something? Find out what you can do.
 keywords: Microsoft Defender Antivirus, false positives, false negatives, exclusions
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,9 +20,12 @@ ms.topic: article
 
 # What to do with false positives/negatives in Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Microsoft Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware, and spyware across email, apps, the cloud, and the web.
 
@@ -42,7 +44,7 @@ What if something gets detected wrongly as malware, or something is missed? We c
 
 ## Create an "Allow" indicator to prevent a false positive from recurring
 
-If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Microsoft Defender Antivirus (and Microsoft Defender Advanced Threat Protection) that the item is safe.
+If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Microsoft Defender Antivirus (and Microsoft Defender for Endpoint) that the item is safe.
 
 To set up your "Allow" indicator, follow the guidance in [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -70,6 +72,6 @@ To learn more, see:
 
 ## Related articles
 
-[What is Microsoft Defender Advanced Threat Protection?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+[What is Microsoft Defender for Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 
-[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)

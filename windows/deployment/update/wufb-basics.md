@@ -1,14 +1,14 @@
 ---
 title: Configure the Basic group policy for Windows Update for Business
-description: Learn how to get started using the Basic GPO in Windows Update for Business.
+description: In this article, you will learn how to configure the basic group policy for Windows Update for Business.
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-ms.localizationprioauthor: jaimeo
+ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article

@@ -3,7 +3,6 @@ title: Deploy and enable Microsoft Defender Antivirus
 description: Deploy Microsoft Defender Antivirus for protection of your endpoints with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or WMI.
 keywords: deploy, enable, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,9 +18,12 @@ manager: dansimp
 
 # Deploy and enable Microsoft Defender Antivirus
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Depending on the management tool you are using, you may need to specifically enable or configure Microsoft Defender Antivirus protection. 
 

@@ -1,6 +1,6 @@
 ---
 title: Hybrid Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
-description: Prerequisites for hybrid Windows Hello for Business deployments using key trust.
+description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -67,7 +67,7 @@ Key trust deployments do not need client issued certificates for on-premises aut
 
 The minimum required Enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA](https://support.microsoft.com/help/291010/requirements-for-domain-controller-certificates-from-a-third-party-ca).
 
-* The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL.
+* The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL, or an Authority Information Access (AIA) extension that points to an Online Certificate Status Protocol (OCSP) responder.
 * The certificate Subject section should contain the directory path of the server object (the distinguished name).
 * The certificate Key Usage section must contain Digital Signature and Key Encipherment.
 * Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None].

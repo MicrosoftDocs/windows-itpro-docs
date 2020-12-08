@@ -8,10 +8,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: medgarmedgar
+author: robsize
 ms.author: dansimp
 manager: robsize
-ms.date: 3/25/2020
+ms.date: 12/1/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -152,7 +152,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate). Specifies whether automatic update of apps from Microsoft Store are allowed. **Set to 0 (zero)**
 1. **Apps for websites** - [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers). This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
 1. **Windows Update Delivery Optimization** - The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-   1. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode). Let’s you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)**
+   1. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode). Let’s you choose where Delivery Optimization gets or sends updates and apps. **Set to 99 (ninety-nine)**
 1. **Windows Update**
    1. [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Control automatic updates. **Set to 5 (five)**
    1. Windows Update Allow Update Service - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**

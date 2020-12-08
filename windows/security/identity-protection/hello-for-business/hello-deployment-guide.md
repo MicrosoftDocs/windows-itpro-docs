@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business Deployment Guide
-description: A guide to Windows Hello for Business deployment 
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,7 +52,7 @@ The trust model determines how you want users to authenticate to the on-premises
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!NOTE]
-> Remote Desktop Protocol (RDP) does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time. See [Remote Desktop](hello-feature-remote-desktop.md) to learn more.
+> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
 
 Following are the various deployment guides and models included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)

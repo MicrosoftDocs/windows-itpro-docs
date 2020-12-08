@@ -1,6 +1,6 @@
 ---
 title: 4703(S) A user right was adjusted. (Windows 10)
-description: Describes security event 4703(S) A user right was adjusted.
+description: Describes security event 4703(S) A user right was adjusted. This event is generated when token privileges are enabled or disabled for a specific account.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

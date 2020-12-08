@@ -1,6 +1,6 @@
 ---
 title: Remote Desktop
-description: Remote Desktop
+description: Learn how Windows Hello for Business supports using a certificate deployed to a WHFB container to a remote desktop to a server or another device.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 09/09/2019
+ms.date: 09/16/2020
 ms.reviewer: 
 ---
 
@@ -27,9 +27,9 @@ ms.reviewer:
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Certificate trust deployments
 
-Windows Hello for Business supports using a certificate deployed to a WHFB container to a remote desktop to a server or another device. This functionality is not supported for key trust deployments. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.
+Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This functionality is not supported for key trust deployments. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard).
 
-Microsoft continues to investigate supporting this feature for key trust deployments in a future release.
+Microsoft continues to investigate supporting using keys trust for supplied credentials in a future release.
 
 ## Remote Desktop with Biometrics
 

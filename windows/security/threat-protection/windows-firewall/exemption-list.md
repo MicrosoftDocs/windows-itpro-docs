@@ -1,6 +1,6 @@
 ---
 title: Exemption List (Windows 10)
-description: Learn the ins and outs of exemption lists on a secured network using Windows 10.
+description: Learn about reasons to add devices to an exemption list in Windows Defender Firewall with Advanced Security and the trade-offs of having too many exemptions.
 ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
 ms.reviewer: 
 ms.author: dansimp

@@ -3,36 +3,38 @@ title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
+ms.date: 10/21/2020
 ---
 
 # Configure and validate exclusions based on file extension and folder location
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender ATP capabilities, including [endpoint detection and response (EDR)](../microsoft-defender-atp/overview-endpoint-detection-response.md), [attack surface reduction (ASR) rules](../microsoft-defender-atp/attack-surface-reduction.md), and [controlled folder access](../microsoft-defender-atp/controlled-folders.md). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender ATP [custom indicators](../microsoft-defender-atp/manage-indicators.md).
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](../microsoft-defender-atp/overview-endpoint-detection-response.md), [attack surface reduction (ASR) rules](../microsoft-defender-atp/attack-surface-reduction.md), and [controlled folder access](../microsoft-defender-atp/controlled-folders.md). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](../microsoft-defender-atp/manage-indicators.md).
 
 ## Exclusion lists
 
 You can exclude certain files from Microsoft Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Microsoft Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
-> Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
+> Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-This article  describes how to configure exclusion lists for the files and folders.
+This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 Exclusion | Examples | Exclusion list
 ---|---|---
@@ -186,7 +188,7 @@ The following table describes how the wildcards can be used and provides some ex
 |Wildcard  |Examples  |
 |---------|---------|
 |`*` (asterisk) <br/><br/>In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` would include `C:\MyData\notes.txt`<br/><br/>`C:\somepath\*\Data` would include any file in `C:\somepath\Archives\Data and its subfolders` and `C:\somepath\Authorized\Data and its subfolders` <br/><br/>`C:\Serv\*\*\Backup` would include any file in `C:\Serv\Primary\Denied\Backup and its subfolders` and `C:\Serv\Secondary\Allowed\Backup and its subfolders`     |
-|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
+|`?` (question mark)  <br/><br/>In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/>In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   |`C:\MyData\my?` would include `C:\MyData\my1.zip` <br/><br/>`C:\somepath\?\Data` would include any file in `C:\somepath\P\Data` and its subfolders <br/><br/>`C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
 |Environment variables <br/><br/>The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
         
 
@@ -199,9 +201,9 @@ The following table describes how the wildcards can be used and provides some ex
 
 <a id="review"></a>
 
-### System environmental variables
+### System environment variables
 
-The following table lists and describes the system account environmental variables. 
+The following table lists and describes the system account environment variables. 
 
 <table border="0" cellspacing="0" cellpadding="20">
 <thead>
@@ -569,3 +571,4 @@ You can also copy the string into a blank text file and attempt to save it with 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

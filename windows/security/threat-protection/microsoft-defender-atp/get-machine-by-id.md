@@ -1,6 +1,6 @@
 ---
 title: Get machine by ID API
-description: Retrieves a device entity by ID.
+description: Learn how to use the Get machine by ID API to retrieve a machine by its device ID or computer name in Microsoft Defender Advanced Threat Protection.
 keywords: apis, graph api, supported apis, get, devices, entity, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,9 +18,12 @@ ms.topic: article
 
 # Get machine by ID API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
@@ -28,12 +31,12 @@ Retrieves specific [Machine](machine.md) by its device ID or computer name.
 
 
 ## Limitations
-1. You can get devices last seen in the past 30 days.
+1. You can get devices last seen according to your configured retention policy.
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -49,7 +52,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 
 ## HTTP request
-```
+```http
 GET /api/machines/{id}
 ```
 
@@ -65,7 +68,7 @@ Empty
 
 ## Response
 If successful and device exists - 200 OK with the [machine](machine.md) entity in the body.
-If machine with the specified id was not found - 404 Not Found.
+If machine with the specified ID was not found - 404 Not Found.
 
 
 ## Example
@@ -76,7 +79,7 @@ Here is an example of the request.
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-```
+```http
 GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
 ```
 
@@ -85,7 +88,7 @@ GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
