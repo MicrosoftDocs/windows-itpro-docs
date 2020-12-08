@@ -39,7 +39,9 @@ To resolve this issue, follow these steps:
 1. Open an elevated PowerShell window and run the following script:
 
    ```ps
-   $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
+   $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm"
+   $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus
+   if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
    ```
 
 1. Restart the computer. If you are prompted at the restart screen, press F12 to agree.

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Advanced Threat Protection
-description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
+title: Microsoft Defender for Endpoint
+description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
+keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender Advanced Threat Protection
+# Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -88,7 +88,7 @@ The attack surface reduction set of capabilities provides the first line of defe
 <a name="ngp"></a>
 
 **[Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-To further reinforce the security perimeter of your network, Microsoft Defender ATP uses next-generation protection designed to catch all types of emerging threats.
+To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
 <a name="edr"></a>
 
@@ -98,7 +98,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 <a name="ai"></a>
 
 **[Automated investigation and remediation](automated-investigations.md)**<br>
-In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender ATP offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
+In conjunction with being able to quickly respond to advanced attacks, Microsoft Defender for Endpoint offers automatic investigation and remediation capabilities that help reduce the volume of alerts in minutes at scale. 
 
 <a name="ss"></a>
 
@@ -123,16 +123,17 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 <a name="mtp"></a>
 
 **[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
- Defender for Endpoint directly integrates with various Microsoft solutions, including:
-- Intune
-- Office 365 ATP
-- Azure ATP
+Defender for Endpoint directly integrates with various Microsoft solutions, including:
 - Azure Security Center
-- Skype for Business 
+- Azure Sentinel
+- Intune
 - Microsoft Cloud App Security
+- Microsoft Defender for Identity
+- Microsoft Defender for Office
+- Skype for Business
 
-**[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
- With Microsoft Threat Protection, Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
+**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
+With Microsoft 365 Defender, Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 
 
 ## Related topic

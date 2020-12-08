@@ -1,6 +1,6 @@
 ---
 title: Take response actions on a file in Microsoft Defender ATP
-description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
+description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -133,6 +133,9 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > 
 > Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
 
+> [!Important]
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired. 
+
 ## Add indicator to block or allow a file
 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
@@ -213,6 +216,7 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+<br/>
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0] 
 
@@ -240,7 +244,8 @@ When the sample is collected, Defender for Endpoint runs the file in is a secure
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
+    > [!NOTE]
+    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
