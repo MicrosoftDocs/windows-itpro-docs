@@ -123,7 +123,7 @@ The following sections describe each of the 16 attack surface reduction rules (i
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
 |-----|-----|-----|-----|
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-|[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (NEW!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |  |
+|[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (NEW!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |- Windows 10 Pro, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later <br/>- Windows 10 Enterprise, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later <br/>- Windows Server, version [1803](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) (Semi-Annual Channel) or later <br/>- Windows Server 2019  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
@@ -159,6 +159,24 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 ### Block abuse of in-the-wild exploited vulnerable signed drivers
 
 This rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
+
+This rule does not block a driver already existing on the system from being loaded.
+
+> [!TIP]
+> You can submit a driver for analysis at the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi/driversubmission).
+
+This rule is supported on all versions of Windows where attack surface reduction rules are currently supported: 
+- Windows 10 Pro, version 1709 or later
+- Windows 10 Enterprise, version 1709 or later
+- Windows Server, version 1803 (Semi-Annual Channel) or later
+- Windows Server 2019
+
+Intune Name: Block abuse of exploited vulnerable signed drivers
+
+Configuration Manager name: Not Applicable 
+
+Rule guid: `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
 
 ### Block all Office applications from creating child processes
 
