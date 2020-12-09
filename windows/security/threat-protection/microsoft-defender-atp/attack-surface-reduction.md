@@ -231,6 +231,25 @@ Configuration Manager name: Block executable files from running unless they meet
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
+### Block execution of potentially obfuscated scripts
+
+This rule detects suspicious properties within an obfuscated script.
+
+Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
+
+This rule was introduced in:
+- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: Obfuscated js/vbs/ps/macro code
+
+Configuration Manager name: Block execution of potentially obfuscated scripts.
+
+GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+
+
 
 
 
@@ -292,23 +311,6 @@ Configuration Manager name: Block JavaScript or VBScript from launching download
 
 GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
-### Block execution of potentially obfuscated scripts
-
-This rule detects suspicious properties within an obfuscated script.
-
-Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
-
-This rule was introduced in:
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: Obfuscated js/vbs/ps/macro code
-
-Configuration Manager name: Block execution of potentially obfuscated scripts.
-
-GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 ### Block Win32 API calls from Office macros
 
