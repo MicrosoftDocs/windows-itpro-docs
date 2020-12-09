@@ -249,6 +249,26 @@ Configuration Manager name: Block execution of potentially obfuscated scripts.
 
 GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
+### Block JavaScript or VBScript from launching downloaded executable content
+
+This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet.
+
+Although not common, line-of-business applications sometimes use scripts to download and launch installers.
+
+This rule was introduced in:  
+- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
+
+Configuration Manager name: Block JavaScript or VBScript from launching downloaded executable content
+
+GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
+
+
+
 
 
 
@@ -292,24 +312,6 @@ Intune name: Office apps injecting code into other processes (no exceptions)
 Configuration Manager name: Block Office applications from injecting code into other processes
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
-
-### Block JavaScript or VBScript from launching downloaded executable content
-
-This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet.
-
-Although not common, line-of-business applications sometimes use scripts to download and launch installers.
-
-This rule was introduced in:  
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
-
-Configuration Manager name: Block JavaScript or VBScript from launching downloaded executable content
-
-GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 
 ### Block Win32 API calls from Office macros
