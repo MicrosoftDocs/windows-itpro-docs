@@ -116,9 +116,9 @@ The domain and forest functional level of the environment may still be set to Wi
 To resolve this issue, follow these steps:
 
 1. Upgrade the functional level of the domain and forest to Windows Server 2012 R2.
-1. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
-1. In the script, modify the value of **strPathToDomain** to your domain name.
-1. Open an elevated PowerShell window, and run the following command:
+2. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
+3. In the script, modify the value of **strPathToDomain** to your domain name.
+4. Open an elevated PowerShell window, and run the following command:
 
    ```powershell
    cscript <Path>Add-TPMSelfWriteACE.vbs
