@@ -17,7 +17,7 @@ ms.custom: asr
 ms.date: 12/08/2020
 ---
 
-# Protect your devices and network from malware with attack surface reduction rules
+# Use attack surface reduction rules to prevent malware infection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
