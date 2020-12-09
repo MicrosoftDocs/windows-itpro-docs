@@ -59,7 +59,11 @@ Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduc
 Warn mode helps your organization have attack surface reduction rules in place without preventing users from accessing the content they need to perform their tasks. 
 
 > [!IMPORTANT]
-> Warn mode is supported on devices running [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later and [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later.   
+> Warn mode is supported on devices running the following versions of Windows:
+> - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later
+> - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later
+>
+> Attack surface reduction rules that are configured in warn mode will run in block mode on devices that are running older versions of Windows.
 
 ## Notifications when a rule is triggered
 
