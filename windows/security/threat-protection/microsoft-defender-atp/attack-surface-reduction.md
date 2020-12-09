@@ -54,7 +54,7 @@ Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduc
 
 ## Warn mode for users
 
-(NEW!) Prior to warn mode capabilities, attack surface reduction rules that are enabled could be set to either audit mode or block mode. With the new warn mode, whenever content is blocked by an attack surface reduction rule, users see a dialog box that indicates the content is blocked. The dialog box also offers the user an option to unblock the content. The user can then retry their action, and the operation completes. WHen a user unblocks content, the content remains unblocked for 24 hours, and then blocking resumes.
+(**NEW**!) Prior to warn mode capabilities, attack surface reduction rules that are enabled could be set to either audit mode or block mode. With the new warn mode, whenever content is blocked by an attack surface reduction rule, users see a dialog box that indicates the content is blocked. The dialog box also offers the user an option to unblock the content. The user can then retry their action, and the operation completes. WHen a user unblocks content, the content remains unblocked for 24 hours, and then blocking resumes.
 
 Warn mode helps your organization have attack surface reduction rules in place without preventing users from accessing the content they need to perform their tasks. 
 
