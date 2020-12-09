@@ -380,9 +380,6 @@ Configuration Manager name: Block untrusted and unsigned processes that run from
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-
-
-
 ### Block Win32 API calls from Office macros
 
 This rule prevents VBA macros from calling Win32 APIs.
@@ -420,11 +417,7 @@ Configuration Manager name: Use advanced protection against ransomware
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-
-
-
-
-## Related topics
+## See also
 
 - [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
 
