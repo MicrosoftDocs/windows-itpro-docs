@@ -267,12 +267,6 @@ Configuration Manager name: Block JavaScript or VBScript from launching download
 
 GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
-
-
-
-
-
-
 ### Block Office applications from creating executable content
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
@@ -312,6 +306,9 @@ Intune name: Office apps injecting code into other processes (no exceptions)
 Configuration Manager name: Block Office applications from injecting code into other processes
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+
+
+
 
 
 ### Block Win32 API calls from Office macros
