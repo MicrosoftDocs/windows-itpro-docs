@@ -364,6 +364,22 @@ Configuration Manager name: Not applicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
+### Block untrusted and unsigned processes that run from USB
+
+With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
+
+This rule was introduced in: 
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+
+Intune name: Untrusted and unsigned processes that run from USB
+
+Configuration Manager name: Block untrusted and unsigned processes that run from USB
+
+GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
+
 
 
 
@@ -405,22 +421,6 @@ Configuration Manager name: Use advanced protection against ransomware
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 
-
-### Block untrusted and unsigned processes that run from USB
-
-With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
-
-This rule was introduced in: 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
-
-Intune name: Untrusted and unsigned processes that run from USB
-
-Configuration Manager name: Block untrusted and unsigned processes that run from USB
-
-GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 
 
