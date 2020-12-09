@@ -346,6 +346,23 @@ Configuration Manager name: Not yet available
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
+### Block process creations originating from PSExec and WMI commands
+
+This rule blocks processes created through [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) and [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
+
+> [!WARNING]
+> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
+
+This rule was introduced in: 
+- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune name: Process creation from PSExec and WMI commands
+
+Configuration Manager name: Not applicable
+
+GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 
 
@@ -388,23 +405,6 @@ Configuration Manager name: Use advanced protection against ransomware
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 
-### Block process creations originating from PSExec and WMI commands
-
-This rule blocks processes created through [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) and [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
-
-> [!WARNING]
-> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) because this rule blocks WMI commands the Configuration Manager client uses to function correctly.
-
-This rule was introduced in: 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-
-Intune name: Process creation from PSExec and WMI commands
-
-Configuration Manager name: Not applicable
-
-GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### Block untrusted and unsigned processes that run from USB
 
