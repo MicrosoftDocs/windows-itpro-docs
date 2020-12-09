@@ -1635,6 +1635,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>  
 
+### ADMX_RPC policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcextendederrorinformation" id="admx-rpc-rpcextendederrorinformation">ADMX_RPC/RpcExtendedErrorInformation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcignoredelegationfailure" id="admx-rpc-rpcignoredelegationfailure">ADMX_RPC/RpcIgnoreDelegationFailure</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcminimumhttpconnectiontimeout" id="admx-rpc-rpcminimumhttpconnectiontimeout">ADMX_RPC/RpcMinimumHttpConnectionTimeout</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-rpc.md#admx-rpc-rpcstateinformation" id="admx-rpc-rpcstateinformation">ADMX_RPC/RpcStateInformation</a>
+  </dd>
+</dl>
+
 ### ADMX_Scripts policies
 
 <dl>

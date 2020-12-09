@@ -216,6 +216,7 @@
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_PowerShellExecutionPolicy](policy-csp-admx-powershellexecutionpolicy.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)
+#### [ADMX_RPC](policy-csp-admx-rpc.md)
 #### [ADMX_Scripts](policy-csp-admx-scripts.md)
 #### [ADMX_sdiageng](policy-csp-admx-sdiageng.md)
 #### [ADMX_Securitycenter](policy-csp-admx-securitycenter.md)
