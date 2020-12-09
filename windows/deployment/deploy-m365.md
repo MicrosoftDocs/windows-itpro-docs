@@ -21,13 +21,13 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 This topic provides a brief overview of Microsoft 365 and describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). See the [M365 Enterprise poster](#m365-enterprise-poster) for an overview.
 
-For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
+
 
 - Windows Autopilot
 - In-place upgrade
@@ -45,7 +45,7 @@ There are "Start Free Trial" options available for your selection by hovering yo
 
 **If you do not already have a Microsoft services subscription**
 
-You can check out the Microsoft 365 deployment advisor and other resources for free! Just follow the steps below. 
+replace text
 
 >[!NOTE]
 >If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
