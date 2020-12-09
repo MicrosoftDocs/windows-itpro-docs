@@ -106,7 +106,7 @@
 #### [Device control]()
 ##### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-
+##### [Device control report](device-control/device-control-report.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
@@ -274,7 +274,7 @@
 #### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
 
 #### [Deploy]()
-##### [App-based deployment](microsoft-defender-atp/ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
@@ -298,6 +298,7 @@
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
 ##### [Schedule scans with Microsoft Defender ATP for Linux](microsoft-defender-atp/linux-schedule-scan-atp.md)
+##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](microsoft-defender-atp/linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)

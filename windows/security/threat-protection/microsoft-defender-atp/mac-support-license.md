@@ -42,7 +42,7 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the MDATP for macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").
+You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").
 
 **Solution:**
 
