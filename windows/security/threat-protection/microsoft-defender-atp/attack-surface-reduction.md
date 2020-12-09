@@ -307,6 +307,27 @@ Configuration Manager name: Block Office applications from injecting code into o
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
+### Block Office communication application from creating child processes
+
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
+
+This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
+
+> [!NOTE]
+> This rule applies to Outlook and Outlook.com only.
+
+This rule was introduced in: 
+- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune name: Process creation from Office communication products (beta)
+
+Configuration Manager name: Not yet available
+
+GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
+
+
 
 
 
@@ -383,25 +404,6 @@ Configuration Manager name: Block untrusted and unsigned processes that run from
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### Block Office communication application from creating child processes
-
-This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
-
-This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
-
-> [!NOTE]
-> This rule applies to Outlook and Outlook.com only.
-
-This rule was introduced in: 
-- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-
-Intune name: Process creation from Office communication products (beta)
-
-Configuration Manager name: Not yet available
-
-GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### Block persistence through WMI event subscription
 
