@@ -1161,6 +1161,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_MSDT policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-msdtsupportprovider" id="admx-msdt-msdtsupportprovider">ADMX_MSDT/MsdtSupportProvider</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-msdttooldownloadpolicy" id="admx-msdt-msdttooldownloadpolicy">ADMX_MSDT/MsdtToolDownloadPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msdt.md#admx-msdt-wdiscenarioexecutionpolicy" id="admx-msdt-wdiscenarioexecutionpolicy">ADMX_MSDT/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
 ### ADMX_nca policies
 <dl>
   <dd>
