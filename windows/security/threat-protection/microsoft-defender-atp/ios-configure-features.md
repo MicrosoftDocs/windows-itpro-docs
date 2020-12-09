@@ -76,7 +76,7 @@ While enabled by default, there might be some cases that require you to disable 
     > ![VPN config connect on demand](images/ios-vpn-config.png)
 
 > [!NOTE]
-> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open Microsoft Defender for Endpoint app on the device and click on **Start VPN**.
+> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
 
 ### Co-existence of multiple VPN profiles
 
