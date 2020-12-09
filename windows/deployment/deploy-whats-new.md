@@ -41,6 +41,7 @@ The Windows 10 deployment and update [landing page](index.yml) has been redesign
 
 
 
+
 ## Microsoft 365
 
 Microsoft 365 is a new offering from Microsoft that combines 
