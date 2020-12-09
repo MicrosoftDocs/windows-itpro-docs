@@ -327,6 +327,24 @@ Configuration Manager name: Not yet available
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
+### Block persistence through WMI event subscription
+
+This rule prevents malware from abusing WMI to attain persistence on a device.
+
+> [!IMPORTANT]
+> File and folder exclusions don't apply to this attack surface reduction rule.
+
+Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
+
+This rule was introduced in: 
+- [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+
+Intune name: Not yet available
+
+Configuration Manager name: Not yet available
+
+GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 
 
@@ -405,24 +423,6 @@ Configuration Manager name: Block untrusted and unsigned processes that run from
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 
-### Block persistence through WMI event subscription
-
-This rule prevents malware from abusing WMI to attain persistence on a device.
-
-> [!IMPORTANT]
-> File and folder exclusions don't apply to this attack surface reduction rule.
-
-Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
-
-This rule was introduced in: 
-- [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
-
-Intune name: Not yet available
-
-Configuration Manager name: Not yet available
-
-GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ## Related topics
 
