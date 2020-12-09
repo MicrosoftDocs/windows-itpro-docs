@@ -47,8 +47,7 @@ There are "Start Free Trial" options available for your selection by hovering yo
 
 replace text
 
->[!NOTE]
->If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
+
 
 1. [Obtain a free M365 trial](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365).
 2. Check out the [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide).

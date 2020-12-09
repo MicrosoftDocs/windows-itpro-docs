@@ -39,7 +39,7 @@ The Windows 10 deployment and update [landing page](index.yml) has been redesign
 
 ## The Modern Desktop Deployment Center
 
-The [Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) has launched with tons of content to help you with large-scale deployment of Windows 10 and Microsoft 365 Apps for enterprise.
+
 
 ## Microsoft 365
 
