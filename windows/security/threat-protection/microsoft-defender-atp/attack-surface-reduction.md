@@ -68,23 +68,21 @@ In addition, make sure [Microsoft Defender Antivirus and antimalware updates](ht
 - Minimum platform release requirement: `4.18.2008.9`  
 - Minimum engine release requirement: `1.1.17400.5`
 
-For more information, see [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
+For more information and to get your updates, see [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
-### Warn mode is not supported for some attack surface reduction rules
+### Cases where warn mode is not supported
 
-Warn mode is not supported for the following attack surface reduction rules:
-- [Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (GUID `56a863a9-875e-4185-98a7-b882c64b5ce5`)
+Warn mode is not supported for the following four attack surface reduction rules:
+- (NEW!) [Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (GUID `56a863a9-875e-4185-98a7-b882c64b5ce5`)
 - [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
 - [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
-Attack surface reduction rules that are configured in warn mode will run in block mode on devices that are running older versions of Windows.
-
-
+In addition, warn mode is not supported on devices running older versions of Windows. In those cases, attack surface reduction rules that are configured to run in warn mode will run in block mode.
 
 ## Notifications when a rule is triggered
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
+Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## Attack surface reduction features across Windows versions
 
