@@ -88,7 +88,7 @@ For more information about what's new in MDM, see [What's new in mobile device e
 
 ### Microsoft Defender for Endpoint
 
-This release includes improved support for non-ASCII file paths has been added for Microsoft Defender for Endpoint Auto Incident Response (IR).
+This release includes improved support for non-ASCII file paths for Microsoft Defender Advanced Threat Protection (ATP) Auto Incident Response (IR).
 
 The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) parameter is deprecated in this release.
 
