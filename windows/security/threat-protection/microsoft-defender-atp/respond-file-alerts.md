@@ -232,7 +232,7 @@ You can also manually submit a sample through the [Microsoft Security Center Por
 
 When the sample is collected, Defender for Endpoint runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
 
-#### Submit files for deep analysis:
+#### Submit files for deep analysis
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
 
