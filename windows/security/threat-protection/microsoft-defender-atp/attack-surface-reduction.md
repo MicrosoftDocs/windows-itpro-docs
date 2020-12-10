@@ -64,8 +64,11 @@ Warn mode is supported on devices running the following versions of Windows:
 - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later
 
-Minimum CAMP release requirement: 4.18.2008.9
-Minimum Engine release requirement: 17400
+In addition, make sure [Microsoft Defender Antivirus and antimalware updates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) are installed   
+- Minimum platform release requirement: `4.18.2008.9`  
+- Minimum engine release requirement: `1.1.17400.5`
+
+For more information, see [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
 ### Warn mode is not supported for some attack surface reduction rules
 
