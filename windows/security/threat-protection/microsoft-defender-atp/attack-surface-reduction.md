@@ -420,7 +420,7 @@ This rule was introduced in:
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Intune name: Process creation from PSExec and WMI commands
+Intune name: `Process creation from PSExec and WMI commands`
 
 Configuration Manager name: Not applicable
 
@@ -436,9 +436,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Untrusted and unsigned processes that run from USB
+Intune name: `Untrusted and unsigned processes that run from USB`
 
-Configuration Manager name: Block untrusted and unsigned processes that run from USB
+Configuration Manager name: `Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -454,9 +454,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Win32 imports from Office macro code
+Intune name: `Win32 imports from Office macro code`
 
-Configuration Manager name: Block Win32 API calls from Office macros
+Configuration Manager name: `Block Win32 API calls from Office macros`
 
 GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
@@ -473,9 +473,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Advanced ransomware protection
+Intune name: `Advanced ransomware protection`
 
-Configuration Manager name: Use advanced protection against ransomware
+Configuration Manager name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
