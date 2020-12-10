@@ -40,11 +40,20 @@ Controlled folder access works with a list of trusted software. If an app is inc
 
 Apps can also be manually added to the trusted list via Configuration Manager and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
 
+## Why controlled folder access is important
+
 Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
-The protected folders include common system folders (including boot sectors), and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
+The [protected folders](#review-controlled-folder-access-events-in-windows-event-viewer) include common system folders (including boot sectors), and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
-By default, the following Windows system folders are protected:  
+You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+
+Controlled folder access is supported on Windows 10, version 1709 and later and Windows Server 2019.
+
+## Windows system folders are protected by default
+
+Your Windows system folders are protected by default, along with several other folders. These folders include: 
+
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
 - `c:\Users\<username>\Pictures`
@@ -55,13 +64,9 @@ By default, the following Windows system folders are protected:
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> You cannot remove the Windows system folders that are protected by default.
+> You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.
 
-You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
-
-Controlled folder access is supported on Windows 10, version 1709 and later and Windows Server 2019.
-
-## Requirements
+## Requirements for controlled folder access
 
 Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](../microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus.md).
 
@@ -90,19 +95,21 @@ You can review the Windows event log to see events that are created when control
 
 4. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
 
-5. Click **OK**.
+5. Select **OK**.
 
 After following the procedure, you have created a custom view that shows events related to controlled folder access, as listed in the following table:
 
 |Event ID | Description |
-|---|---|
+|:---|:---|
 |5007 | Event when settings are changed |
 |1124 | Audited controlled folder access event | 
 |1123 | Blocked controlled folder access event |
 
 ## View or change the list of protected folders
 
-### Windows 10 security app
+You can use the Windows Security app to view the list of folders that are protected by controlled folder access. 
+
+### View or change the list of protected folders using the Windows Security app
 
 1. On your Windows 10 device, open the Windows Security app.
 
@@ -118,39 +125,11 @@ After following the procedure, you have created a custom view that shows events 
    
    - To remove a folder, select it, and then select **Remove**. 
 
+> [!NOTE]
+> [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list.
+
 ## See also
 
-- [Evaluate controlled folder access](evaluate-controlled-folder-access.md). Use a dedicated demo tool to see how controlled folder access works, and what events would typically be created.
-
-
-## Default folders protected by controlled folder access
-Windows system folders are protected by default. In addition, there are several folders that are protected by controlled folder access by default. You can configure additional folders as protected, but cannot remove the default folders from the controlled folder access protection. See [Protect additional folders](customize-controlled-folders.md#protect-additional-folders) for more information.
-
-Here's the list of default protected folders:  
-- %USERPROFILE%\Documents
-- %USERPROFILE%\Favorites
-- %USERPROFILE%\Music
-- %USERPROFILE%\Pictures
-- %USERPROFILE%\Videos
-- %PUBLIC%\Documents
-- %PUBLIC%\Music
-- %PUBLIC%\Pictures
-- %PUBLIC%\Videos
-
-You can use the Windows Security app to view the list of default folders protected by controlled folder access:
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
-
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then scroll down to the **Ransomware protection** section.
-
-3. Click the **Manage ransomware protection** link to open the **Ransomware protection** pane.
-
-4. Under the **Controlled folder access** section, click the **Protected folders** link.
-
-5. Click **Yes** on the **User Access Control** prompt. 
-
-    The **Protected folders** pane displays the folders that are protected by default.
-
-## In this section
-
- [Customize controlled folder access](customize-controlled-folders.md). Add additional protected folders, and allow specified apps to access protected folders.
+- [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
+- [Customize controlled folder access](customize-controlled-folders.md)
+- [Protect additional folders](customize-controlled-folders.md#protect-additional-folders)
