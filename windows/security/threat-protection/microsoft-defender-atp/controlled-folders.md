@@ -28,7 +28,7 @@ ms.custom: asr
 
 ## What is controlled folder access?
 
-Controlled folder access helps you protect your valuable data from malicious apps and threats, like ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019 and Windows 10 clients, controlled folder access can be turned on using the Windows Security App or in Microsoft Endpoint Configuration Manager and Intune (for managed devices). 
+Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019 and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices). 
 
 Controlled folder access works best with [Microsoft Defender for Endpoint](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
@@ -101,7 +101,7 @@ You can review the Windows event log to see events that are created when control
 
 5. Select **OK**.
 
-After following the procedure, you have created a custom view that shows events related to controlled folder access, as listed in the following table:
+The following table shows events related to controlled folder access:
 
 |Event ID | Description |
 |:---|:---|
