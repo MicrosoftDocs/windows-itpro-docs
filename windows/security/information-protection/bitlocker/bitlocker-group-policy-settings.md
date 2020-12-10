@@ -38,7 +38,7 @@ If multiple changes are necessary to bring the drive into compliance, you must s
 Policy settings are changed to disallow passwords and require smart cards. In this situation, you need to suspend BitLocker protection by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this is complete, BitLocker is compliant with the Group Policy setting and BitLocker protection on the drive can be resumed.
 
 > [!NOTE]
-> For more details about Active Directory configuration related to BitLocker enablement, please check [this article](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
+> For more details about Active Directory configuration related to BitLocker enablement, please see [Set up MDT for BitLocker](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
 
 ## <a href="" id="bkmk-gptop"></a>BitLocker Group Policy settings
 
