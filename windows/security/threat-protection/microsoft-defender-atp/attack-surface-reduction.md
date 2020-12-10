@@ -232,7 +232,7 @@ GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
 
-LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
+LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
@@ -373,7 +373,7 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
 
-This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
+This rule protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
 > This rule applies to Outlook and Outlook.com only.
