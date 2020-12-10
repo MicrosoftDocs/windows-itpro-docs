@@ -36,9 +36,11 @@ Controlled folder access works best with [Microsoft Defender for Endpoint](../mi
 
 Controlled folder access works by only allowing trusted apps to access protected folders. Protected folders are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, downloads, and so on, are included in the list of controlled folders. 
 
-Controlled folder access works with a list of trusted software. If an app is included in the list of trusted software, the app works as expected. If not, the app is blocked from making any changes to files that are inside protected folders. Apps are added to the trusted list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization, and that have never displayed any malicious behavior, are deemed trustworthy and automatically added to the list.
+Controlled folder access works with a list of trusted apps. If an app is included in the list of trusted software, it works as expected. If not, the app is prevented from making any changes to files that are inside protected folders. 
 
-Apps can also be manually added to the trusted list via Configuration Manager and Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for the app, can be performed from the Security Center Console.
+Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
+
+Apps can also be added manually to the trusted list  by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](../microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
 
 ## Why controlled folder access is important
 
@@ -48,7 +50,9 @@ The [protected folders](#review-controlled-folder-access-events-in-windows-event
 
 You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
-Controlled folder access is supported on Windows 10, version 1709 and later and Windows Server 2019.
+Controlled folder access is supported on the following versions of Windows:
+- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) and later
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 ## Windows system folders are protected by default
 
