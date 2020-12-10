@@ -64,11 +64,11 @@ Defender for Endpoint for iOS enables admins to configure custom indicators on i
 
 ## Web Protection and VPN
 
-By default, Defender for Endpoint for iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint for iOS uses a local VPN in order to provide this protection.
+By default, Defender for Endpoint for iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint for iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
 While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
 
-1. On your iOS device, open the **Settings** app and click or tap **General** and then **VPN**.
+1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
 1. Click or tap the "i" button for Microsoft Defender ATP.
 1. Toggle off **Connect On Demand** to disable VPN.
 
