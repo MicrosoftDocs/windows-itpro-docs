@@ -7701,7 +7701,6 @@ The following fields are available:
 This event signals the completion of the setup process. It happens only once during the first logon.
 
 
-
 ## XBOX events
 
 ### Microsoft.Xbox.EraControl.EraVmTerminationReason
@@ -7712,28 +7711,6 @@ The following fields are available:
 
 - **pfn**  A package full name.
 - **reasonNumber**  A number associated with reason.
-
-
-### Microsoft.Xbox.UpdateManager.TaskSuccess
-
-No content is currently available.
-
-The following fields are available:
-
-- **BeginUpdateFlags**  No content is currently available.
-- **CDNIdentifier**  No content is currently available.
-- **CDNInfo**  No content is currently available.
-- **ComboPolicy**  No content is currently available.
-- **ContentId**  No content is currently available.
-- **HighwindInfo**  No content is currently available.
-- **InstallId**  No content is currently available.
-- **LastCheckTime**  No content is currently available.
-- **LastResult**  No content is currently available.
-- **MSEdgeRef**  No content is currently available.
-- **PowerMode**  No content is currently available.
-- **RemoteAddress**  No content is currently available.
-- **SourceVersionId**  No content is currently available.
-- **TargetVersionId**  No content is currently available.
 
 
 ## XDE events
