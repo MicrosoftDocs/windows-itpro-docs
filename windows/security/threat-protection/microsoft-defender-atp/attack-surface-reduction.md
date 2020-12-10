@@ -52,21 +52,6 @@ In the recommendation details pane, check the user impact to determine what perc
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-## Silent auditing
-
-(**NEW**!) To add security value, a sample of attack surface reduction audit events is now collected on devices that do not have attack surface reduction rules enabled in either audit mode or block mode. The collected events are throttled to 100 events per device
-
-By default, attack surface reduction rules are not enabled in audit mode. Silent auditing is a new capability that collects events for the following four attack surface reduction rules:  
-- [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)  
-- [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)  
-- [Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail)  
-- [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes)
-
-The other attack surface reduction rules that are not configured will not have any auditing events collected. And, you can disable silent auditing by disabling the rules.
-
-> [!NOTE]
-> Currently, auditing events are not viewable in advanced hunting.
-
 ## Warn mode for users
 
 (**NEW**!) Prior to warn mode capabilities, attack surface reduction rules that are enabled could be set to either audit mode or block mode. With the new warn mode, whenever content is blocked by an attack surface reduction rule, users see a dialog box that indicates the content is blocked. The dialog box also offers the user an option to unblock the content. The user can then retry their action, and the operation completes. When a user unblocks content, the content remains unblocked for 24 hours, and then blocking resumes.
@@ -87,8 +72,8 @@ For more information and to get your updates, see [Update for Microsoft Defender
 
 ### Cases where warn mode is not supported
 
-Warn mode is not supported for the following four attack surface reduction rules:
-- (NEW!) [Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (GUID `56a863a9-875e-4185-98a7-b882c64b5ce5`)
+Warn mode is not supported for the following attack surface reduction rules:
+
 - [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
 - [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
@@ -148,14 +133,13 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## Attack surface reduction rules
 
-The following table and subsections describe each of the 16 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name. 
+The following table and subsections describe each of the 15 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name. 
 
 If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs.
 
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
 |:-----|:-----:|:-----|:-----|
-|[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (**NEW**!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
@@ -171,27 +155,6 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | `c1db55ab-c21a-4637-bb3f-a12568109d35` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
-
-### Block abuse of in-the-wild exploited vulnerable signed drivers
-
-(**NEW**!) This new rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
-
-This rule does not block a driver already existing on the system from being loaded.
-
-> [!TIP]
-> You can submit a driver for analysis at the [Microsoft Security Intelligence site](https://www.microsoft.com/wdsi/driversubmission).
-
-This rule is supported on all versions of Windows where attack surface reduction rules are currently supported: 
-- Windows 10 Pro, version 1709 or later
-- Windows 10 Enterprise, version 1709 or later
-- Windows Server, version 1803 (Semi-Annual Channel) or later
-- Windows Server 2019
-
-Intune Name: `Block abuse of exploited vulnerable signed drivers`
-
-Configuration Manager name: Not Applicable 
-
-Rule guid: `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 ### Block Adobe Reader from creating child processes
 
