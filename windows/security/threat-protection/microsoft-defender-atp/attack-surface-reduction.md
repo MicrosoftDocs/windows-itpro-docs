@@ -174,7 +174,7 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 ### Block abuse of in-the-wild exploited vulnerable signed drivers
 
-(**NEW**!) This rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
+(**NEW**!) This new rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
 This rule does not block a driver already existing on the system from being loaded.
 
@@ -187,7 +187,7 @@ This rule is supported on all versions of Windows where attack surface reduction
 - Windows Server, version 1803 (Semi-Annual Channel) or later
 - Windows Server 2019
 
-Intune Name: Block abuse of exploited vulnerable signed drivers
+Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager name: Not Applicable 
 
@@ -204,7 +204,7 @@ This rule was introduced in:
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Intune name: Process creation from Adobe Reader (beta)
+Intune name: `Process creation from Adobe Reader (beta)`
 
 Configuration Manager name: Not yet available
 
@@ -222,9 +222,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Office apps launching child processes
+Intune name: `Office apps launching child processes`
 
-Configuration Manager name: Block Office application from creating child processes
+Configuration Manager name: `Block Office application from creating child processes`
 
 GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
@@ -243,9 +243,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Flag credential stealing from the Windows local security authority subsystem
+Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 
-Configuration Manager name: Block credential stealing from the Windows local security authority subsystem
+Configuration Manager name: `Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -262,9 +262,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Microsoft Endpoint Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
+Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Configuration Manager name: Block executable content from email client and webmail
+Microsoft Endpoint Configuration Manager name: `Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
@@ -287,9 +287,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Executables that don't meet a prevalence, age, or trusted list criteria.
+Intune name: `Executables that don't meet a prevalence, age, or trusted list criteria`
 
-Configuration Manager name: Block executable files from running unless they meet a prevalence, age, or trusted list criteria
+Configuration Manager name: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -305,9 +305,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Obfuscated js/vbs/ps/macro code
+Intune name: `Obfuscated js/vbs/ps/macro code`
 
-Configuration Manager name: Block execution of potentially obfuscated scripts.
+Configuration Manager name: `Block execution of potentially obfuscated scripts`
 
 GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
@@ -323,9 +323,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: js/vbs executing payload downloaded from Internet (no exceptions)
+Intune name: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
-Configuration Manager name: Block JavaScript or VBScript from launching downloaded executable content
+Configuration Manager name: `Block JavaScript or VBScript from launching downloaded executable content`
 
 GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
@@ -333,7 +333,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
 
- Malware that abuses Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
+Malware that abuses Office as a vector may attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
 
 This rule was introduced in: 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
@@ -341,9 +341,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM is now Microsoft Endpoint Configuration Manager)
 
-Intune name: Office apps/macros creating executable content
+Intune name: `Office apps/macros creating executable content`
 
-SCCM name: Block Office applications from creating executable content
+SCCM name: `Block Office applications from creating executable content`
 
 GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
@@ -363,9 +363,9 @@ This rule was introduced in:
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
-Intune name: Office apps injecting code into other processes (no exceptions)
+Intune name: `Office apps injecting code into other processes (no exceptions)`
 
-Configuration Manager name: Block Office applications from injecting code into other processes
+Configuration Manager name: `Block Office applications from injecting code into other processes`
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
@@ -383,9 +383,9 @@ This rule was introduced in:
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Intune name: Process creation from Office communication products (beta)
+Intune name: `Process creation from Office communication products (beta)`
 
-Configuration Manager name: Not yet available
+Configuration Manager name: Not available
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -402,9 +402,9 @@ This rule was introduced in:
 - [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
-Intune name: Not yet available
+Intune name: Not available
 
-Configuration Manager name: Not yet available
+Configuration Manager name: Not available
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
