@@ -24,11 +24,11 @@ ms.topic: article
 > [!IMPORTANT]
 > **Web content filtering is currently in public preview**<br>
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender ATP preview features](preview.md).
+> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
+Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
 Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
@@ -37,7 +37,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 Summarizing the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender ATP role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- Conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - Access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
@@ -58,7 +58,7 @@ If Windows Defender SmartScreen isn't turned on, Network Protection will take ov
 
 ## Data handling
 
-We will follow whichever region you have elected to use as part of your [Microsoft Defender ATP data handling settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
+We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
 
 ## Turn on web content filtering
 

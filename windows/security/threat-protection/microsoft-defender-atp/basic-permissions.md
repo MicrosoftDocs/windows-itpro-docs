@@ -24,15 +24,15 @@ ms.topic: article
 **Applies to:**
 
 - Azure Active Directory
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
 Refer to the instructions below to use basic permissions management. 
 
-You can use either of the following:
+You can use either of the following solutions:
 - Azure PowerShell
--  Azure Portal
+-  Azure portal
 
 For granular control over permissions, [switch to role-based access control](rbac.md).
 
@@ -42,21 +42,21 @@ You can assign users with one of the following levels of permissions:
 - Read-only access
 
 ### Before you begin
-- Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
+- Install Azure PowerShell. For more information, see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
     > [!NOTE]
     > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Azure Active Directory. For more information see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
+- Connect to your Azure Active Directory. For more information, see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.
 Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
 
-**Read only access** <br>
-Users with read only access can log in, view all alerts, and related information.
+**Read-only access** <br>
+Users with read-only access can log in, view all alerts, and related information.
 They will not be able to change alert states, submit files for deep analysis or perform any state changing operations.
-Assigning read only access rights requires adding the users to the "Security Reader" AAD built-in role.
+Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
 
 Use the following steps to assign security roles:
 
@@ -64,12 +64,12 @@ Use the following steps to assign security roles:
   ```text
   Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
   ```
-- For **read only** access, assign users to the security reader role by using the following command:
+- For **read-only** access, assign users to the security reader role by using the following command:
   ```text
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-For more information see, [Add or remove group memberships](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
+For more information, see, [Add, or remove group memberships](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
 
 ## Assign user access using the Azure portal
 For more information, see [Assign administrator and non-administrator roles to uses with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).

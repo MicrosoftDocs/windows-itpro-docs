@@ -1,7 +1,7 @@
 ---
 title: Delivery Optimization for Windows 10 updates
 manager: laurawi
-description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
+description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,6 +13,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delivery Optimization for Windows 10 updates
@@ -64,7 +65,7 @@ For information about setting up Delivery Optimization, including tips for the b
     - Office installations and updates
     - Xbox game pass games
     - MSIX apps (HTTP downloads only)
-
+    - Edge browser installations and updates
 
 ## Requirements
 
@@ -120,7 +121,7 @@ For complete list of every possible Delivery Optimization setting, see [Delivery
 
 
 ## How Microsoft uses Delivery Optimization
-At Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
+At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
@@ -188,7 +189,7 @@ This section summarizes common problems and some solutions to try.
 
 ### If you don't see any bytes from peers
 
-If you don’t see any bytes coming from peers the cause might be one of the following issues:
+If you don't see any bytes coming from peers the cause might be one of the following issues:
 
 - Clients aren’t able to reach the Delivery Optimization cloud services.
 - The cloud service doesn’t see other peers on the network. 

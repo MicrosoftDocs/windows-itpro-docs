@@ -25,6 +25,4 @@ ms.date: 04/19/2017
 
 All the devices on Woodgrove Bank's network that run Windows are part of the isolated domain, except domain controllers. To configure firewall rules, the GPO described in this section is linked to the domain container in the Active Directory OU hierarchy, and then filtered by using security group filters and WMI filters.
 
-The GPO created for the example Woodgrove Bank scenario include the following:
-
--   [GPO\_DOMISO\_Firewall](gpo-domiso-firewall.md)
+The GPO created for the example Woodgrove Bank scenario includes [GPO\_DOMISO\_Firewall](gpo-domiso-firewall.md).

@@ -24,10 +24,10 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 You can create indicators for certificates. Some common use cases include:
 
@@ -42,8 +42,8 @@ It's important to understand the following requirements prior to creating indica
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 - The Antimalware client version must be  4.18.1901.x or later.
 - Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
-- The virus and threat protection definitions must be up-to-date.
-- This feature currently supports entering .CER or .PEM file extensions.
+- The virus and threat protection definitions must be up to date.
+- This feature currently supports entering .CER or .PEM (Base64 ASCII) encoding based certificates.
 
 >[!IMPORTANT]
 > - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').

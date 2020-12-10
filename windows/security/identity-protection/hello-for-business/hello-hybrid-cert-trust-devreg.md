@@ -506,7 +506,7 @@ The following script helps you with the creation of the issuance transform rules
 #### Configure Device Authentication in AD FS  
 Using an elevated PowerShell command window, configure AD FS policy by executing the following command  
 
-`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod All` 
+`PS C:>Set-AdfsGlobalAuthenticationPolicy -DeviceAuthenticationEnabled $true -DeviceAuthenticationMethod SignedToken` 
 
 #### Check your configuration  
 For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work

@@ -21,7 +21,7 @@ manager: dansimp
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
 
@@ -100,7 +100,7 @@ Use the following procedure to enable network protection on domain-joined comput
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
     * **Block** - Users can't access malicious IP addresses and domains
     * **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains
-    * **Audit Mode** - If a user visits a malicious IP address or domain, an event won't be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
+    * **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
 > [!IMPORTANT]
 > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
