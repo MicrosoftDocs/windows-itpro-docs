@@ -81,6 +81,10 @@ The following image shows an instance of unwanted software that was detected and
 
 ## Frequently asked questions 
 
+### Do I need to turn EDR in block mode on even when I have Microsoft Defender Antivirus running on devices?
+
+We recommend keeping EDR in block mode on, whether Microsoft Defender Antivirus is running in passive mode or in active mode. EDR in block mode gives you an added layer of defense with Microsoft Defender for Endpoint. It allows Microsoft Defender for Endpoint to take actions, based on EDR detections. 
+
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
 No. EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode kicks in if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
