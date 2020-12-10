@@ -56,7 +56,7 @@ Controlled folder access is supported on the following versions of Windows:
 
 ## Windows system folders are protected by default
 
-Your Windows system folders are protected by default, along with several other folders. These folders include: 
+Windows system folders are protected by default, along with several other folders: 
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -112,8 +112,6 @@ After following the procedure, you have created a custom view that shows events 
 ## View or change the list of protected folders
 
 You can use the Windows Security app to view the list of folders that are protected by controlled folder access. 
-
-### View or change the list of protected folders using the Windows Security app
 
 1. On your Windows 10 device, open the Windows Security app.
 
