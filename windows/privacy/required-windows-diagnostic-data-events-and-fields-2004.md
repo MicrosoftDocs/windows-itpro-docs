@@ -4420,11 +4420,6 @@ The following fields are available:
 - **totalRuns**  Total number of running/evaluation from last time.
 
 
-## Surface events
-
-
-
-
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted

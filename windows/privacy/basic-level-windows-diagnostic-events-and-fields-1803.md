@@ -4763,20 +4763,20 @@ The following fields are available:
 - **PluginName**  Name of the plugin specified for each generic plugin event.
 - **Reload**  True if SIH reload is required.
 - **RemediationNoisyHammerAcLineStatus**  Indicates the AC Line Status of the device.
-- **RemediationNoisyHammerAutoStartCount**  The number of times hammer auto-started.
+- **RemediationNoisyHammerAutoStartCount**  The number of times Auto UA auto-started.
 - **RemediationNoisyHammerCalendarTaskEnabled**  Event that indicates Update Assistant Calendar Task is enabled.
 - **RemediationNoisyHammerCalendarTaskExists**  Event that indicates an Update Assistant Calendar Task exists.
 - **RemediationNoisyHammerCalendarTaskTriggerEnabledCount**  Event that indicates calendar triggers are enabled in the task.
-- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the most recent Noisy Hammer task ran.
+- **RemediationNoisyHammerDaysSinceLastTaskRunTime**  The number of days since the Auto UA ran.
 - **RemediationNoisyHammerGetCurrentSize**  Size in MB of the $GetCurrent folder.
-- **RemediationNoisyHammerIsInstalled**  TRUE if the noisy hammer is installed.
-- **RemediationNoisyHammerLastTaskRunResult**  The result of the last hammer task run.
+- **RemediationNoisyHammerIsInstalled**  TRUE if the Auto UA is installed.
+- **RemediationNoisyHammerLastTaskRunResult**  The result from the last Auto UA task run.
 - **RemediationNoisyHammerMeteredNetwork**  TRUE if the machine is on a metered network.
-- **RemediationNoisyHammerTaskEnabled**  Indicates whether the Update Assistant Task (Noisy Hammer) is enabled.
-- **RemediationNoisyHammerTaskExists**  Indicates whether the Update Assistant Task (Noisy Hammer) exists.
-- **RemediationNoisyHammerTaskTriggerEnabledCount**  Indicates whether counting is enabled for the Update Assistant (Noisy Hammer) task trigger.
-- **RemediationNoisyHammerUAExitCode**  The exit code of the Update Assistant (Noisy Hammer) task.
-- **RemediationNoisyHammerUAExitState**  The code for the exit state of the Update Assistant (Noisy Hammer) task.
+- **RemediationNoisyHammerTaskEnabled**  TRUE if the Auto UA task is enabled.
+- **RemediationNoisyHammerTaskExists**  TRUE if the Auto UA task exists.
+- **RemediationNoisyHammerTaskTriggerEnabledCount**  Indicates whether the task has the count trigger enabled.
+- **RemediationNoisyHammerUAExitCode**  The exit code of the Update Assistant.
+- **RemediationNoisyHammerUAExitState**  TThe exit code of the Update Assistant.
 - **RemediationNoisyHammerUserLoggedIn**  TRUE if there is a user logged in.
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
@@ -4899,7 +4899,7 @@ The following fields are available:
 - **RemediationHibernationMigrationSucceeded**  TRUE if hibernation migration succeeded.
 - **RemediationImpersonateUserSucceeded**  TRUE if the user was successfully impersonated.
 - **RemediationNoisyHammerTaskFixSuccessId**  Indicates whether the Update Assistant task fix was successful.
-- **RemediationNoisyHammerTaskKickOffIsSuccess**  TRUE if the NoisyHammer task started successfully.
+- **RemediationNoisyHammerTaskKickOffIsSuccess**  TRUE if the Auto UA task started successfully.
 - **RemediationQueryTokenSucceeded**  TRUE if the user token was successfully queried.
 - **RemediationRanHibernation**  TRUE if the system entered Hibernation.
 - **RemediationRevertToSystemSucceeded**  TRUE if reversion to the system context succeeded.
