@@ -52,6 +52,21 @@ In the recommendation details pane, check the user impact to determine what perc
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
+## Silent auditing
+
+(**NEW**!) To add security value, a sample of attack surface reduction audit events are now collected on devices that do not have attack surface reduction rules enabled in either audit mode or block mode. 
+
+By default, attack surface reduction rules are not enabled in audit mode. Silent auditing is a new capability that collects events for the following four attack surface reduction rules:  
+- [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)  
+- [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)  
+- [Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail)  
+- [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes)
+
+The other attack surface reduction rules that are not configured will not have any auditing events collected. And, you can disable silent auditing by disabling the rules.
+
+> [!NOTE]
+> Currently, auditing events are not viewable in advanced hunting.
+
 ## Warn mode for users
 
 (**NEW**!) Prior to warn mode capabilities, attack surface reduction rules that are enabled could be set to either audit mode or block mode. With the new warn mode, whenever content is blocked by an attack surface reduction rule, users see a dialog box that indicates the content is blocked. The dialog box also offers the user an option to unblock the content. The user can then retry their action, and the operation completes. WHen a user unblocks content, the content remains unblocked for 24 hours, and then blocking resumes.
@@ -140,7 +155,7 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
 |:-----|:-----:|:-----|:-----|
-|[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (NEW!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater  |
+|[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (**NEW**!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
