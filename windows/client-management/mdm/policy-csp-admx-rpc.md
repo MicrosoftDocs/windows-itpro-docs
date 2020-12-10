@@ -128,8 +128,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<hr/>
-
 <!--Policy-->
 <a href="" id="admx-rpc-rpcignoredelegationfailure"></a>**ADMX_RPC/RpcIgnoreDelegationFailure**  
 
@@ -289,8 +287,6 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
-
 <hr/>
 
 <!--Policy-->
