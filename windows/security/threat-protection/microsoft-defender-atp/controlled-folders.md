@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 11/05/2020
+ms.date: 12/10/2020
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
@@ -43,6 +43,19 @@ Apps can also be manually added to the trusted list via Configuration Manager an
 Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
 The protected folders include common system folders (including boot sectors), and you can [add additional folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
+
+By default, the following Windows system folders are protected:  
+- `c:\Users\<username>\Documents`
+- `c:\Users\Public\Documents`
+- `c:\Users\<username>\Pictures`
+- `c:\Users\Public\Pictures`
+- `c:\Users\Public\Videos`
+- `c:\Users\<username>\Music`
+- `c:\Users\Public\Music`
+- `c:\Users\<username>\Favorites`
+
+> [!NOTE]
+> You cannot remove the Windows system folders that are protected by default.
 
 You can use [audit mode](audit-windows-defender.md) to evaluate how controlled folder access would impact your organization if it were enabled. You can also visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
