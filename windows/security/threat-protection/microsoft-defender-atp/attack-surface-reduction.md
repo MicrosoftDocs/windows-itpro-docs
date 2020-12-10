@@ -58,12 +58,26 @@ Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduc
 
 Warn mode helps your organization have attack surface reduction rules in place without preventing users from accessing the content they need to perform their tasks. 
 
-> [!IMPORTANT]
-> Warn mode is supported on devices running the following versions of Windows:
-> - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later
-> - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later
->
-> Attack surface reduction rules that are configured in warn mode will run in block mode on devices that are running older versions of Windows.
+### Requirements for warn mode to work
+
+Warn mode is supported on devices running the following versions of Windows:
+- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) or later
+- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) or later
+
+Minimum CAMP release requirement: 4.18.2008.9
+Minimum Engine release requirement: 17400
+
+### Warn mode is not supported for some attack surface reduction rules
+
+Warn mode is not supported for the following attack surface reduction rules:
+- [Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (GUID `56a863a9-875e-4185-98a7-b882c64b5ce5`)
+- [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
+- [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
+- [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
+
+Attack surface reduction rules that are configured in warn mode will run in block mode on devices that are running older versions of Windows.
+
+
 
 ## Notifications when a rule is triggered
 
@@ -118,10 +132,13 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## Attack surface reduction rules
 
-The following sections describe each of the 16 attack surface reduction rules (in alphabetical order of rule name). This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs:
+The following table and subsections describe each of the 16 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name. 
+
+If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs.
+
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
-|-----|-----|-----|-----|
+|:-----|:-----:|:-----|:-----|
 |[Block abuse of in-the-wild exploited vulnerable signed drivers](#block-abuse-of-in-the-wild-exploited-vulnerable-signed-drivers) (NEW!) |`56a863a9-875e-4185-98a7-b882c64b5ce5`  |  |[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Supported | [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater |
@@ -141,7 +158,7 @@ The following sections describe each of the 16 attack surface reduction rules (i
 
 ### Block abuse of in-the-wild exploited vulnerable signed drivers
 
-This rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
+(**NEW**!) This rule prevents an application from writing a vulnerable signed driver to disk. Vulnerable signed drivers can be exploited by local applications with sufficient privileges, to gain access to the kernel. It allows attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
 This rule does not block a driver already existing on the system from being loaded.
 
