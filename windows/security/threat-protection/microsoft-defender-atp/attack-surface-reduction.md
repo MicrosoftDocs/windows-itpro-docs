@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 ---
 
 # Use attack surface reduction rules to prevent malware infection
