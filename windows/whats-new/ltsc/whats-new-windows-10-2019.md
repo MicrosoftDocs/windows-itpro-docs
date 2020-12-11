@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10 Enterprise LTSC 2019
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809. 
@@ -487,7 +487,7 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 Starting with Windows 10 Enterprise LTSC 2019, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.
 
-Additionally, apps de-provisioned by admins on Windows 10 Enterprise LTSC 2019 machines will stay de-provisioned after future feature update installations. This will not apply to the update from Windows 10 Enterprise LTSC 2015 (or earlier) to Windows 10 Enterprise LTSC 2019.
+Additionally, apps de-provisioned by admins on Windows 10 Enterprise LTSC 2019 machines will stay de-provisioned after future feature update installations. This will not apply to the update from Windows 10 Enterprise LTSC 2016 (or earlier) to Windows 10 Enterprise LTSC 2019.
 
 ## Management
 
