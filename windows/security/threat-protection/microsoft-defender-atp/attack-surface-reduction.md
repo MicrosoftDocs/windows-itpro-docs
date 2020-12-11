@@ -82,7 +82,7 @@ In addition, warn mode is not supported on devices running older versions of Win
 
 ## Notifications and alerts
 
-Whenever an attack surface reduction rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information.
+Whenever an attack surface reduction rule is triggered, a notification is displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information.
 
 In addition, when certain attack surface reduction rules are triggered, alerts are generated. 
 
