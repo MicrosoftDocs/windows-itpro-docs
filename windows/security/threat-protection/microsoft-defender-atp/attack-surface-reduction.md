@@ -80,9 +80,13 @@ Warn mode is not supported for the following attack surface reduction rules:
 
 In addition, warn mode is not supported on devices running older versions of Windows. In those cases, attack surface reduction rules that are configured to run in warn mode will run in block mode.
 
-## Notifications when a rule is triggered
+## Notifications and alerts
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
+Whenever an attack surface reduction rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information.
+
+In addition, when certain attack surface reduction rules are triggered, alerts are generated. 
+
+Notifications and any alerts that are generated can be viewed in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and in the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## Attack surface reduction features across Windows versions
 
