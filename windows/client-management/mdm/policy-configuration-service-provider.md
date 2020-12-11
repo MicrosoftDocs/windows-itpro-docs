@@ -1649,6 +1649,107 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>  
 
+### ADMX_RemovableStorage policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-1" id="admx-removablestorage-accessrights-reboottime-1">ADMX_RemovableStorage/AccessRights_RebootTime_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-2" id="admx-removablestorage-accessrights-reboottime-2">ADMX_RemovableStorage/AccessRights_RebootTime_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyexecute-access-2" id="admx-removablestorage-cdanddvd-denyexecute-access-2">ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyread-access-1" id="admx-removablestorage-cdanddvd-denyread-access-1">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyread-access-2" id="admx-removablestorage-cdanddvd-denyread-access-2">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denywrite-access-1" id="admx-removablestorage-cdanddvd-denywrite-access-1">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denywrite-access-2" id="admx-removablestorage-cdanddvd-denywrite-access-2">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denyread-access-1" id="admx-removablestorage-customclasses-denyread-access-1">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denyread-access-2" id="admx-removablestorage-customclasses-denyread-access-2">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denywrite-access-1" id="admx-removablestorage-customclasses-denywrite-access-1">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-customclasses-denywrite-access-2" id="admx-removablestorage-customclasses-denywrite-access-2">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyexecute-access-2" id="admx-removablestorage-floppydrives-denyexecute-access-2">ADMX_RemovableStorage/FloppyDrives_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyread-access-1" id="admx-removablestorage-floppydrives-denyread-access-1">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denyread-access-2" id="admx-removablestorage-floppydrives-denyread-access-2">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denywrite-access-1" id="admx-removablestorage-floppydrives-denywrite-access-1">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-floppydrives-denywrite-access-2" id="admx-removablestorage-floppydrives-denywrite-access-2">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyexecute-access-2" id="admx-removablestorage-removabledisks-denyexecute-access-2">ADMX_RemovableStorage/RemovableDisks_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyread-access-1" id="admx-removablestorage-removabledisks-denyread-access-1">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denyread-access-2" id="admx-removablestorage-removabledisks-denyread-access-2">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removabledisks-denywrite-access-1" id="admx-removablestorage-removabledisks-denywrite-access-1">ADMX_RemovableStorage/RemovableDisks_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removablestorageclasses-denyall-access-1" id="admx-removablestorage-removablestorageclasses-denyall-access-1">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removablestorageclasses-denyall-access-2" id="admx-removablestorage-removablestorageclasses-denyall-access-2">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-removable-remote-allow-access" id="admx-removablestorage-removable-remote-allow-access">ADMX_RemovableStorage/Removable_Remote_Allow_Access</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyexecute-access-2" id="admx-removablestorage-tapedrives-denyexecute-access-2">ADMX_RemovableStorage/TapeDrives_DenyExecute_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyread-access-1" id="admx-removablestorage-tapedrives-denyread-access-1">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denyread-access-2" id="admx-removablestorage-tapedrives-denyread-access-2">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denywrite-access-1" id="admx-removablestorage-tapedrives-denywrite-access-1">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-tapedrives-denywrite-access-2" id="admx-removablestorage-tapedrives-denywrite-access-2">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denyread-access-1" id="admx-removablestorage-wpddevices-denyread-access-1">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denyread-access-2" id="admx-removablestorage-wpddevices-denyread-access-2">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denywrite-access-1" id="admx-removablestorage-wpddevices-denywrite-access-1">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-removablestorage.md#admx-removablestorage-wpddevices-denywrite-access-2" id="admx-removablestorage-wpddevices-denywrite-access-2">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_2</a>
+  </dd>
+</dl>
+
 ### ADMX_RPC policies  
 
 <dl>
