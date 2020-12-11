@@ -75,9 +75,9 @@ There are several ways to uninstall Defender for Endpoint for Linux. If you are 
 
 ### Manual uninstallation
 
-- ```sudo yum remove mdatp``` for RHEL and variants(CentOS and Oracle Linux).
-- ```sudo zypper remove mdatp``` for SLES and variants.
-- ```sudo apt-get purge mdatp``` for Ubuntu and Debian systems.
+- `sudo yum remove mdatp` for RHEL and variants(CentOS and Oracle Linux).
+- `sudo zypper remove mdatp` for SLES and variants.
+- `sudo apt-get purge mdatp` for Ubuntu and Debian systems.
 
 ## Configure from the command line
 
@@ -93,15 +93,15 @@ The following table lists commands for some of the most common scenarios. Run `m
 
 |Group                 |Scenario                                                |Command                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|Configuration         |Turn on/off real-time protection                        |`mdatp config real-time-protection --value [enabled|disabled]`         |
-|Configuration         |Turn on/off cloud protection                            |`mdatp config cloud --value [enabled|disabled]`                        |
-|Configuration         |Turn on/off product diagnostics                         |`mdatp config cloud-diagnostic --value [enabled|disabled]`             |
-|Configuration         |Turn on/off automatic sample submission                 |`mdatp config cloud-automatic-sample-submission [enabled|disabled]`    |
-|Configuration         |Turn on/off AV passive mode                             |`mdatp config passive-mode --value [enabled|disabled]`                 |
-|Configuration         |Add/remove an antivirus exclusion for a file extension  |`mdatp exclusion extension [add|remove] --name [extension]`            |
-|Configuration         |Add/remove an antivirus exclusion for a file            |`mdatp exclusion file [add|remove] --path [path-to-file]`              |
-|Configuration         |Add/remove an antivirus exclusion for a directory       |`mdatp exclusion folder [add|remove] --path [path-to-directory]`       |
-|Configuration         |Add/remove an antivirus exclusion for a process         |`mdatp exclusion process [add|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add|remove] --name [process-name]`   |
+|Configuration         |Turn on/off real-time protection                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Configuration         |Turn on/off cloud protection                            |`mdatp config cloud --value [enabled\|disabled]`                       |
+|Configuration         |Turn on/off product diagnostics                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
+|Configuration         |Turn on/off automatic sample submission                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
+|Configuration         |Turn on/off AV passive mode                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
+|Configuration         |Add/remove an antivirus exclusion for a file extension  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
+|Configuration         |Add/remove an antivirus exclusion for a file            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
+|Configuration         |Add/remove an antivirus exclusion for a directory       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
+|Configuration         |Add/remove an antivirus exclusion for a process         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
 |Configuration         |List all antivirus exclusions                           |`mdatp exclusion list`                                                 |
 |Configuration         |Add a threat name to the allowed list                   |`mdatp threat allowed add --name [threat-name]`                        |
 |Configuration         |Remove a threat name from the allowed list              |`mdatp threat allowed remove --name [threat-name]`                     |
@@ -109,7 +109,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration         |Turn on PUA protection                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuration         |Turn off PUA protection                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Turn on audit mode for PUA protection                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnostics           |Change the log level                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|Diagnostics           |Change the log level                                    |`mdatp log level set --level verbose [error\|warning\|info\|verbose]`  |
 |Diagnostics           |Generate diagnostic logs                                |`mdatp diagnostic create`                                              |
 |Health                |Check the product's health                              |`mdatp health`                                                         |
 |Protection            |Scan a path                                             |`mdatp scan custom --path [path]`                                      |
@@ -152,6 +152,6 @@ In the Defender for Endpoint portal, you'll see two categories of information:
 - Logged on users do not appear in the Microsoft Defender Security Center portal.
 - In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
 
-    ```bash
+   ```bash
    sudo SUSEConnect --status-text
-    ```
+   ```
