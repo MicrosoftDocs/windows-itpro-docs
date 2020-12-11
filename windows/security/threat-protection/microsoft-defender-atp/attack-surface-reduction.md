@@ -88,6 +88,14 @@ In addition, when certain attack surface reduction rules are triggered, alerts a
 
 Notifications and any alerts that are generated can be viewed in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and in the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
 
+## Advanced hunting and attack surface reduction events
+
+You can use advanced hunting to view attack surface reduction events. To streamline the volume of incoming data, only unique processes for each hour are viewable with advanced hunting. The time of an attack surface reduction event is the first time that event is seen within the hour.
+
+For example, suppose that an attack surface reduction event occurs on ten devices during the 2:00 PM hour. Suppose that the first event occurred at 2:15, and the last at 2:45. With advanced hunting, you'll see one instance of that event (even though it actually occurred on ten devices), and its timestamp will be 2:15 PM. 
+
+For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+
 ## Attack surface reduction features across Windows versions
 
 You can set attack surface reduction rules for devices running any of the following editions and versions of Windows:
