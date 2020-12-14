@@ -651,28 +651,28 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-allowadmininstall" id="admx-deviceinstallation-deviceinstall-allowadmininstall">ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-allowadmininstall" id="admx-deviceinstallation-deviceinstall-allowadmininstall">ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext" id="admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext">ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_DetailText</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext" id="admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext">ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_DetailText</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext" id="admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext">ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_SimpleText</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext" id="admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext">ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_SimpleText</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-installtimeout" id="admx-deviceinstallation-deviceinstall-installtimeout">ADMX_DeviceInstallation/DeviceInstall_InstallTimeout</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-installtimeout" id="admx-deviceinstallation-deviceinstall-installtimeout">ADMX_DeviceInstallation/DeviceInstall_InstallTimeout</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-policy-reboottime" id="admx-deviceinstallation-deviceinstall-policy-reboottime">ADMX_DeviceInstallation/DeviceInstall_Policy_RebootTime</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-policy-reboottime" id="admx-deviceinstallation-deviceinstall-policy-reboottime">ADMX_DeviceInstallation/DeviceInstall_Policy_RebootTime</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-removable-deny" id="admx-deviceinstallation-deviceinstall-removable-deny">ADMX_DeviceInstallation/DeviceInstall_Removable_Deny</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-removable-deny" id="admx-deviceinstallation-deviceinstall-removable-deny">ADMX_DeviceInstallation/DeviceInstall_Removable_Deny</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-systemrestore" id="admx-deviceinstallation-deviceinstall-systemrestore">ADMX_DeviceInstallation/DeviceInstall_SystemRestore</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-systemrestore" id="admx-deviceinstallation-deviceinstall-systemrestore">ADMX_DeviceInstallation/DeviceInstall_SystemRestore</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-devicenstallation.md#admx-deviceinstallation-deviceinstall-classes-allowuser" id="admx-deviceinstallation-deviceinstall-classes-allowuser">ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser</a>
+    <a href="./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-classes-allowuser" id="admx-deviceinstallation-deviceinstall-classes-allowuser">ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser</a>
   </dd>
 </dl>
 
