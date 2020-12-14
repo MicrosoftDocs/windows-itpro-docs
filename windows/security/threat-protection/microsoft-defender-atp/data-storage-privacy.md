@@ -23,7 +23,8 @@ ms.topic: conceptual
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
