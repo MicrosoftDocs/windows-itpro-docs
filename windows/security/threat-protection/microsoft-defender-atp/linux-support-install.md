@@ -55,7 +55,7 @@ Check if the mdatp service is running:
 systemctl status mdatp
 ```
 ```Output
- ● mdatp.service - Microsoft Defender ATP
+ ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2020-03-26 10:37:30 IST; 23h ago
  Main PID: 1966 (wdavdaemon)
