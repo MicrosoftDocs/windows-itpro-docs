@@ -6747,7 +6747,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows user to supress reboot notifications in UI only mode (for cases where UI can't be in lockdown mode).
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows user to suppress reboot notifications in UI only mode (for cases where UI can't be in lockdown mode).
 
 If you enable this setting AM UI won't show reboot notifications.
 
