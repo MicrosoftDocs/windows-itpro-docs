@@ -34,7 +34,7 @@ Once the Supplemental Policy type is chosen on the New Policy page, policy name 
 
 ![Base policy allows supplemental policies](images/wdac-wizard-supplemental-expandable.png)
 
-If the base policy is not configured for supplemental policies, first edit the base policy to allow supplementals using the [WDAC Wizard edit workflow](edac-wizard-editing-policy.md).
+If the base policy is not configured for supplemental policies, first edit the base policy to allow supplementals using the [WDAC Wizard edit workflow](wdac-wizard-editing-policy.md).
 
 ## Configuring Policy Rules
 
@@ -49,7 +49,7 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
 | **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
-|**[Hypervisor-protected code integrity (HVCI)](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
+|**[Hypervisor-protected code integrity (HVCI)](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
@@ -101,7 +101,7 @@ Filepath rules do not provide the same security guarantees that explicit signer 
 
 ### File Attribute Rules
 
-The Wizard supports the creation of [file name rules](select-types-of-rules-to-create#windows-defender-application-control-filename-rules) based on authenticated file attributes. File name rules are useful when an application and its dependencies (for example, DLLs) may all share the same product name, for instance. This rule level allows users to easily create targeted policies based on the Product Name file name. To select the file attribute to create the rule, move the slider on the Wizard to the desired attribute. The table below describes each of the supported file attributes off which to create a rule. 
+The Wizard supports the creation of [file name rules](select-types-of-rules-to-create.md#windows-defender-application-control-filename-rules) based on authenticated file attributes. File name rules are useful when an application and its dependencies (for example, DLLs) may all share the same product name, for instance. This rule level allows users to easily create targeted policies based on the Product Name file name. To select the file attribute to create the rule, move the slider on the Wizard to the desired attribute. The table below describes each of the supported file attributes off which to create a rule. 
 
 | Rule level | Description |
 |------------ | ----------- |
