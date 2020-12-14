@@ -419,7 +419,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off Internet search integration.
 
-Search integration includes both using Search Provider (Japanese Microsoft IME) and performing bing search from predictive input for Japanese Microsoft IME.
+Search integration includes both using Search Provider (Japanese Microsoft IME) and performing Bing search from predictive input for Japanese Microsoft IME.
 
 If you enable this policy setting, you cannot use search integration.
 
@@ -789,7 +789,7 @@ If you enable this policy setting, the functionality associated with this featur
 
 If you disable this policy setting, the functionality associated with this feature is turned off, and the user won't be able to turn it on.
 
-If you don't configure this policy setting, it will be turned on by default, and the user can turn on and turn off the lexicon udpate feature.
+If you don't configure this policy setting, it will be turned on by default, and the user can turn on and turn off the lexicon update feature.
 
 This Policy setting applies only to Microsoft CHS Pinyin IME.
 
