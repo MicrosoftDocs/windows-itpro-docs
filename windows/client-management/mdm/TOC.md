@@ -197,6 +197,7 @@
 #### [ADMX_FileServerVSSProvider](policy-csp-admx-fileservervssprovider.md)
 #### [ADMX_FileSys](policy-csp-admx-filesys.md)
 #### [ADMX_FolderRedirection](policy-csp-admx-folderredirection.md)
+#### [ADMX_Globalization](policy-csp-admx-globalization.md)
 #### [ADMX_Help](policy-csp-admx-help.md)
 #### [ADMX_HelpAndSupport](policy-csp-admx-helpandsupport.md)
 #### [ADMX_kdc](policy-csp-admx-kdc.md)

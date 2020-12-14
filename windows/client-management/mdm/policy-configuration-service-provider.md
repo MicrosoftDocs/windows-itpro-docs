@@ -713,6 +713,89 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Globalization policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-blockcleanupofunusedpreinstalledlangpacks" id="admx-globalization-blockcleanupofunusedpreinstalledlangpacks">ADMX_Globalization/BlockCleanupOfUnusedPreinstalledLangPacks</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-blockuserinputmethodsforsignin" id="admx-globalization-blockuserinputmethodsforsignin">ADMX_Globalization/BlockUserInputMethodsForSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-1" id="admx-globalization-customlocalesnoselect-1">ADMX_Globalization/CustomLocalesNoSelect_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-2" id="admx-globalization-customlocalesnoselect-2">ADMX_Globalization/CustomLocalesNoSelect_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hideadminoptions" id="admx-globalization-hideadminoptions">ADMX_Globalization/HideAdminOptions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidecurrentlocation" id="admx-globalization-hidecurrentlocation">ADMX_Globalization/HideCurrentLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidelanguageselection" id="admx-globalization-hidelanguageselection">ADMX_Globalization/HideLanguageSelection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-hidelocaleselectandcustomize" id="admx-globalization-hidelocaleselectandcustomize">ADMX_Globalization/HideLocaleSelectAndCustomize</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-implicitdatacollectionoff-1" id="admx-globalization-implicitdatacollectionoff-1">ADMX_Globalization/ImplicitDataCollectionOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-implicitdatacollectionoff-2" id="admx-globalization-implicitdatacollectionoff-2">ADMX_Globalization/ImplicitDataCollectionOff_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localesystemrestrict" id="admx-globalization-localesystemrestrict">ADMX_Globalization/LocaleSystemRestrict</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localeuserrestrict-1" id="admx-globalization-localeuserrestrict-1">ADMX_Globalization/LocaleUserRestrict_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-localeuserrestrict-2" id="admx-globalization-localeuserrestrict-2">ADMX_Globalization/LocaleUserRestrict_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-lockmachineuilanguage" id="admx-globalization-lockmachineuilanguage">ADMX_Globalization/LockMachineUILanguage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-lockuseruilanguage" id="admx-globalization-lockuseruilanguage">ADMX_Globalization/LockUserUILanguage</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-machineuilanguageoverwrite" id="admx-globalization-machineuilanguageoverwrite">ADMX_Globalization/MachineUILanguageOverwrite</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventgeoidchange-1" id="admx-globalization-preventgeoidchange-1">ADMX_Globalization/PreventGeoIdChange_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventgeoidchange-2" id="admx-globalization-preventgeoidchange-2">ADMX_Globalization/PreventGeoIdChange_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventuseroverrides-1" id="admx-globalization-preventuseroverrides-1">ADMX_Globalization/PreventUserOverrides_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-preventuseroverrides-2" id="admx-globalization-preventuseroverrides-2">ADMX_Globalization/PreventUserOverrides_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-restrictuilangselect" id="admx-globalization-restrictuilangselect">ADMX_Globalization/RestrictUILangSelect</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffautocorrectmisspelledwords" id="admx-globalization-turnoffautocorrectmisspelledwords">ADMX_Globalization/TurnOffAutocorrectMisspelledWords</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffhighlightmisspelledwords" id="admx-globalization-turnoffhighlightmisspelledwords">ADMX_Globalization/TurnOffHighlightMisspelledWords</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffinsertspace" id="admx-globalization-turnoffinsertspace">ADMX_Globalization/TurnOffInsertSpace</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-turnoffoffertextpredictions" id="admx-globalization-turnoffoffertextpredictions">ADMX_Globalization/TurnOffOfferTextPredictions</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-globalization.md#admx-globalization-y2k" id="admx-globalization-y2k">ADMX_Globalization/Y2K</a>
+  </dd>
+</dl>
+
 ### ADMX_Help policies
 <dl>
   <dd>
