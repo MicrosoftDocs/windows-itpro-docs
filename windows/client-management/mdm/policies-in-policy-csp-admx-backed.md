@@ -471,6 +471,8 @@ ms.date: 10/08/2020
 - [ADMX_Reliability/PCH_ReportShutdownEvents](./policy-csp-admx-reliability.md#admx-reliability-pch-reportshutdownevents)
 - [ADMX_Reliability/ShutdownEventTrackerStateFile](./policy-csp-admx-reliability.md#admx-reliability-shutdowneventtrackerstatefile)
 - [ADMX_Reliability/ShutdownReason](./policy-csp-admx-reliability.md#admx-reliability-shutdownreason)
+- [ADMX_RemoteAssistance/RA_EncryptedTicketOnly](./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-encryptedticketonly)
+- [ADMX_RemoteAssistance/RA_Optimize_Bandwidth](./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-optimize-bandwidth)
 - [ADMX_RemovableStorage/AccessRights_RebootTime_1](./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-1)
 - [ADMX_RemovableStorage/AccessRights_RebootTime_2](./policy-csp-admx-removablestorage.md#admx-removablestorage-accessrights-reboottime-2)
 - [ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2](./policy-csp-admx-removablestorage.md#admx-removablestorage-cdanddvd-denyexecute-access-2)

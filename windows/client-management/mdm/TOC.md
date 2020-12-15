@@ -218,6 +218,7 @@
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_PowerShellExecutionPolicy](policy-csp-admx-powershellexecutionpolicy.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)
+#### [ADMX_RemoteAssistance](policy-csp-admx-remoteassistance.md)
 #### [ADMX_RemovableStorage](policy-csp-admx-removablestorage.md)
 #### [ADMX_RPC](policy-csp-admx-rpc.md)
 #### [ADMX_Scripts](policy-csp-admx-scripts.md)

@@ -1732,6 +1732,17 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>  
 
+### ADMX_RemoteAssistance policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-encryptedticketonly" id="admx-remoteassistance-ra-encryptedticketonly">ADMX_RemoteAssistance/RA_EncryptedTicketOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-remoteassistance.md#admx-remoteassistance-ra-optimize-bandwidth" id="admx-remoteassistance-ra-optimize-bandwidth">ADMX_RemoteAssistance/RA_Optimize_Bandwidth</a>
+  </dd>
+</dl>
+
 ### ADMX_RemovableStorage policies  
 
 <dl>
