@@ -51,7 +51,7 @@ All server and client computers referenced in this guide are on the same subnet.
 ## Procedures
 
 1. Start the PC0001 computer. At the Pre-Boot Execution Environment (PXE) boot menu, press **Enter** to allow it to PXE boot.
-2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass@word1** and click **Next**.
+2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass\@word1** and click **Next**.
 3. On the **Select a task sequence to run** page, select **Windows 10 Enterprise x64 RTM** and click **Next**.
 4. On the **Edit Task Sequence Variables** page, double-click the **OSDComputerName** variable, and in the **Value** field, type **PC0001** and click **OK**. Then click **Next**.
 5. The operating system deployment will take several minutes to complete. 
