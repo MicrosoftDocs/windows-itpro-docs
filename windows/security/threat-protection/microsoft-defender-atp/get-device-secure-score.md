@@ -21,10 +21,10 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint(https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 >[!NOTE]
->If you are a US Gov customer, please refer to API endpoints listed in [here](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/gov#api). 
+>If you are a US Gov customer, please refer to API endpoints listed in [here](gov#api). 
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
