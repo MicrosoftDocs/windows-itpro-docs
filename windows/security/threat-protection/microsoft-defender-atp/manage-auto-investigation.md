@@ -17,7 +17,7 @@ ms.collection:
 - m365-security-compliance 
 - m365initiative-defender-endpoint 
 ms.topic: conceptual
-ms.date: 09/15/2020
+ms.date: 12/15/2020
 ---
 
 # Review and approve remediation actions following an automated investigation
@@ -98,33 +98,30 @@ In Microsoft Defender for Endpoint, all verdicts are [tracked and viewable in th
 4. Select an item to view more details about that remediation action.
  
 ## Undo completed actions
-You can undo actions that have been completed automatically (or manually) from the 
-Remediation actions that have been taken automatically or manually can be undone from the Action Center History page.  
 
-Supported action sources: 
- - Automated investigation 
- - Microsoft Defender Antivirus 
- - Manual response actions 
- - Supported Actions: 
- - Isolate device 
- - Restrict code execution 
- - Quarantine a file 
- - Remove a registry key 
- - Stop a service 
- - Disable a driver 
- - Remove a scheduled task 
+if you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
 
-if you’ve determined that a machine or a file is clean, you can multi-select a list of actions and undo them all at the same time 
+| Action source | Supported Actions |
+|:---|:---|
+| - Automated investigation <br/>- Microsoft Defender Antivirus <br/>- Manual response actions | - Isolate device <br/>- Restrict code execution <br/>- Quarantine a file <br/>- Remove a registry key <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task |
 
-1. Select the actions you want to cancel. 
+### To undo multiple actions at one time
 
-2. Click Undo at the right-side pane. 
+1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+
+2. On the **History** tab, select the actions that you want to undo.
+
+3. In the pane on the right side of the screen, select **Undo**.
+
+### To remove a file from quarantine  
 
 ![Action center](images/autoir-action-center-1.png)
-For a single file, you can roll back and remove a file from quarantine in all the machines in which it was located.
-1.	Select one of the actions related to this file.
-2.	Check ‘Apply to X more instances of this file’
-3.	Click Undo.
+
+1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+
+2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ![Quarantine file](images/autoir-quarantine-file-1.png)
 
