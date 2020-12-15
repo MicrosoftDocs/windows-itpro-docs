@@ -91,7 +91,7 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3/E5 or A3/A5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
-If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://blogs.windows.com/business/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
+If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://www.microsoft.com/en-us/microsoft-365/blog/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
 
 #### Multi-factor authentication
 
