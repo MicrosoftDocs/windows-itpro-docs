@@ -20,7 +20,7 @@ ms.collection:
 - m365initiative-defender-endpoint 
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree
-ms.custom: AIR
+ms.custom: FPFN
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint
@@ -30,4 +30,6 @@ ms.custom: AIR
 **Applies to**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
+
+Did Microsoft Defender for Endpoint identify an artifact as malicious, even though it wasn't? Are files or processes that are not a threat being stopped in their tracks by Defender for Endpoint? Or, did Defender for Endpoint miss something? Use this article as a guide for addressing false positives or false negatives in Defender for Endpoint.
 
