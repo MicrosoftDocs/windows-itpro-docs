@@ -25,8 +25,8 @@ ms.topic: conceptual
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 This article provides some general steps that can be used to narrow down performance issues related to Defender for Endpoint for Linux.
 

@@ -26,8 +26,8 @@ ms.topic: conceptual
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >[!IMPORTANT]
 >This topic contains instructions for how to set preferences for Defender for Endpoint for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
