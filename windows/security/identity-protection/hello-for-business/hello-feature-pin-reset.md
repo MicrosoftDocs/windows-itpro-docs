@@ -104,7 +104,6 @@ On-premises deployments provide users with the ability to reset forgotten PINs e
 1. Sign-in to Windows 10, version 1703 or later using an alternate credential.
 2. Open **Settings**, click **Accounts**, click **Sign-in options**.
 3. Under **PIN**, click **I forgot my PIN** and follow the instructions.
-![PIN reset option](images/pinreset/pin-reset-option.png)
 
 #### Reset PIN above the Lock Screen
 
