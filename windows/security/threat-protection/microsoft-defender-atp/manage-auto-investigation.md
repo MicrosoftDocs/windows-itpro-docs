@@ -115,15 +115,16 @@ if you’ve determined that a device or a file is not a threat, you can undo rem
 
 ### To remove a file from quarantine  
 
-![Action center](images/autoir-action-center-1.png)
 
 1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
+   ![Action center](images/autoir-action-center-1.png)
+
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
-![Quarantine file](images/autoir-quarantine-file-1.png)
+   ![Quarantine file](images/autoir-quarantine-file-1.png)
 
 ## Next steps
 
