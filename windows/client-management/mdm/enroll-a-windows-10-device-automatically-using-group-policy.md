@@ -113,8 +113,7 @@ Requirements:
 4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use.
 
    > [!NOTE]
-   > **Device Credential** Credential Type will also work, however, it is not yet supported for MDM solutions (including Intune). We don't recommend using this option until support is announced.
-
+   > **Device Credential** Credential Type may work, however, it is not yet supported by Intune. We don't recommend using this option until it's supported. 
    ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
 5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
@@ -183,6 +182,8 @@ Requirements:
    - 1909 --> [Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)](https://www.microsoft.com/download/confirmation.aspx?id=100591)
    
    - 2004 --> [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
+   
+   - 20H2 --> [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
 2. Install the package on the Domain Controller.
 
@@ -197,6 +198,8 @@ Requirements:
    - 1909 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2019 Update (1909)**
 
    - 2004 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2020 Update (2004)**
+   
+   - 20H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**
 
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 
