@@ -33,3 +33,6 @@ ms.custom: FPFN
 
 Did Microsoft Defender for Endpoint identify an artifact as malicious, even though it wasn't? Are files or processes that are not a threat being stopped in their tracks by Defender for Endpoint? Or, did Defender for Endpoint miss something? Use this article as a guide for addressing false positives or false negatives in Defender for Endpoint.
 
+| Step | Description |
+|:---|:---|
+| 1. Identify a false positive/negative |   |
