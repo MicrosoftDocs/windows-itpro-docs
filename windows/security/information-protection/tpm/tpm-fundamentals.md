@@ -151,5 +151,5 @@ The Windows TPM-based smart card, which is a virtual smart card, can be configur
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
 - [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/)
-- [TPM WMI providers](https://docs.microsoft.com/en-gb/windows/win32/secprov/security-wmi-providers-reference)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/en-gb/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#tpm-hardware-configurations)
+- [TPM WMI providers](https://docs.microsoft.com/windows/win32/secprov/security-wmi-providers-reference)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#tpm-hardware-configurations)
