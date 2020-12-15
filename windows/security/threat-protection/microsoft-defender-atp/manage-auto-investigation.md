@@ -107,7 +107,7 @@ if you’ve determined that a device or a file is not a threat, you can undo rem
 
 ### To undo multiple actions at one time
 
-1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -116,7 +116,7 @@ if you’ve determined that a device or a file is not a threat, you can undo rem
 ### To remove a file from quarantine across multiple devices 
 
 
-1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
