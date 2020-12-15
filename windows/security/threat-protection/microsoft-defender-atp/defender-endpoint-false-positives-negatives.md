@@ -36,3 +36,24 @@ Did Microsoft Defender for Endpoint identify an artifact as malicious, even thou
 | Step | Description |
 |:---|:---|
 | 1. Identify a false positive/negative |   |
+| 2. Review/define exclusions for Defender for Endpoint  |  |
+| 3. Review/define indicators for Defender for Endpoint |  |
+| 4. Classify a false positive/negative in Defender for Endpoint |  |
+| 5. Submit a file for analysis |  |
+| 6. Confirm your software uses EV code signing  |  |
+
+## Identify a false positive/negative
+
+*How do we know something is a false positive or negative? What do we want customers to look for?*
+
+## Review or define exclusions
+
+*Exclusions are defined for AutoIR and for MDAV, yes?*
+
+## Review or define indicators
+
+## Classify a false positive or false negative
+
+## Submit a file for analysis
+
+## Confirm your software uses EV code signing
