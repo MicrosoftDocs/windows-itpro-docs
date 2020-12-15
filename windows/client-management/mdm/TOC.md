@@ -228,6 +228,7 @@
 #### [ADMX_PeerToPeerCaching](policy-csp-admx-peertopeercaching.md)
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_PowerShellExecutionPolicy](policy-csp-admx-powershellexecutionpolicy.md)
+#### [ADMX_Printing](policy-csp-admx-printing.md)
 #### [ADMX_Programs](policy-csp-admx-programs.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)
 #### [ADMX_RemoteAssistance](policy-csp-admx-remoteassistance.md)

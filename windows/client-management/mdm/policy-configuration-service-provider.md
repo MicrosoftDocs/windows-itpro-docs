@@ -2428,6 +2428,90 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Printing policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-allowwebprinting" id="admx-printing-allowwebprinting">ADMX_Printing/AllowWebPrinting</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-applicationdriverisolation" id="admx-printing-applicationdriverisolation">ADMX_Printing/ApplicationDriverIsolation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-customizedsupporturl" id="admx-printing-customizedsupporturl">ADMX_Printing/CustomizedSupportUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-donotinstallcompatibledriverfromwindowsupdate" id="admx-printing-donotinstallcompatibledriverfromwindowsupdate">ADMX_Printing/DoNotInstallCompatibleDriverFromWindowsUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-domainprinters" id="admx-printing-domainprinters">ADMX_Printing/DomainPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-downlevelbrowse" id="admx-printing-downlevelbrowse">ADMX_Printing/DownlevelBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-emfdespooling" id="admx-printing-emfdespooling">ADMX_Printing/EMFDespooling</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-forcesoftwarerasterization" id="admx-printing-forcesoftwarerasterization">ADMX_Printing/ForceSoftwareRasterization</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-intranetprintersurl" id="admx-printing-intranetprintersurl">ADMX_Printing/IntranetPrintersUrl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-kmprintersareblocked" id="admx-printing-kmprintersareblocked">ADMX_Printing/KMPrintersAreBlocked</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-legacydefaultprintermode" id="admx-printing-legacydefaultprintermode">ADMX_Printing/LegacyDefaultPrinterMode</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-mxdwuselegacyoutputformatmsxps" id="admx-printing-mxdwuselegacyoutputformatmsxps">ADMX_Printing/MXDWUseLegacyOutputFormatMSXPS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-nodeleteprinter" id="admx-printing-nodeleteprinter">ADMX_Printing/NoDeletePrinter</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-nondomainprinters" id="admx-printing-nondomainprinters">ADMX_Printing/NonDomainPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintonly" id="admx-printing-packagepointandprintonly">ADMX_Printing/PackagePointAndPrintOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintonly-win7" id="admx-printing-packagepointandprintonly-win7">ADMX_Printing/PackagePointAndPrintOnly_Win7</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintserverlist" id="admx-printing-packagepointandprintserverlist">ADMX_Printing/PackagePointAndPrintServerList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-packagepointandprintserverlist-win7" id="admx-printing-packagepointandprintserverlist-win7">ADMX_Printing/PackagePointAndPrintServerList_Win7</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-physicallocation" id="admx-printing-physicallocation">ADMX_Printing/PhysicalLocation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-physicallocationsupport" id="admx-printing-physicallocationsupport">ADMX_Printing/PhysicalLocationSupport</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printdriverisolationexecutionpolicy
+" id="admx-printing-printdriverisolationexecutionpolicy">ADMX_Printing/PrintDriverIsolationExecutionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printdriverisolationoverridecompat" id="admx-printing-printdriverisolationoverridecompat">ADMX_Printing/PrintDriverIsolationOverrideCompat</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printerdirectorysearchscope" id="admx-printing-printerdirectorysearchscope">ADMX_Printing/PrinterDirectorySearchScope</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-printerserverthread" id="admx-printing-printerserverthread">ADMX_Printing/PrinterServerThread</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-showjobtitleineventlogs" id="admx-printing-showjobtitleineventlogs">ADMX_Printing/ShowJobTitleInEventLogs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing.md#admx-printing-v4driverdisallowprinterextension" id="admx-printing-v4driverdisallowprinterextension">ADMX_Printing/V4DriverDisallowPrinterExtension</a>
+  </dd>
+</dl>
+
 ### ADMX_Programs policies  
 
 <dl>
