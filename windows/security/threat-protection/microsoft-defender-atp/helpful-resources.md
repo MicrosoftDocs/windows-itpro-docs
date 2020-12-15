@@ -24,6 +24,7 @@ ms.topic: conceptual
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Access helpful resources such as links to blogs and other resources related to  Microsoft Defender for Endpoint.
 
