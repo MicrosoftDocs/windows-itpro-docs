@@ -97,6 +97,37 @@ In Microsoft Defender for Endpoint, all verdicts are [tracked and viewable in th
 
 4. Select an item to view more details about that remediation action.
  
+## Undo completed actions
+You can undo actions that have been completed automatically (or manually) from the 
+Remediation actions that have been taken automatically or manually can be undone from the Action Center History page.  
+
+Supported action sources: 
+ - Automated investigation 
+ - Microsoft Defender Antivirus 
+ - Manual response actions 
+ - Supported Actions: 
+ - Isolate device 
+ - Restrict code execution 
+ - Quarantine a file 
+ - Remove a registry key 
+ - Stop a service 
+ - Disable a driver 
+ - Remove a scheduled task 
+
+if you’ve determined that a machine or a file is clean, you can multi-select a list of actions and undo them all at the same time 
+
+1. Select the actions you want to cancel. 
+
+2. Click Undo at the right-side pane. 
+
+![Action center](images/autoir-action-center-1.png)
+For a single file, you can roll back and remove a file from quarantine in all the machines in which it was located.
+1.	Select one of the actions related to this file.
+2.	Check ‘Apply to X more instances of this file’
+3.	Click Undo.
+
+![Quarantine file](images/autoir-quarantine-file-1.png)
+
 ## Next steps
 
 - [See the interactive guide: Investigate and remediate threats with Microsoft Defender ATP](https://aka.ms/MDATP-IR-Interactive-Guide)
