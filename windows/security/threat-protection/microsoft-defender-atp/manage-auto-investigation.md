@@ -113,7 +113,7 @@ if you’ve determined that a device or a file is not a threat, you can undo rem
 
 3. In the pane on the right side of the screen, select **Undo**.
 
-### To remove a file from quarantine  
+### To remove a file from quarantine across multiple devices 
 
 
 1. Go to the Action center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
