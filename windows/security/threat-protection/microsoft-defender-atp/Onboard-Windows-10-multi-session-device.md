@@ -23,6 +23,9 @@ manager: dansimp
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 > [!IMPORTANT]
 > Welcome to Microsoft Defender for Endpoint, the new name for Microsoft Defender for Endpoint. Read more about this and other updates here. We'll be updating names in products and in the docs in the near future.
 

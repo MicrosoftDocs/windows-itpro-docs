@@ -23,10 +23,9 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Help reduce your attack surfaces, by minimizing the places where your organization is vulnerable to cyberthreats and attacks. Use the following resources to configure protection for the devices and applications in your organization.
 
