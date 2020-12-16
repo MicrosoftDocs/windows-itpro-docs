@@ -1965,6 +1965,83 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_MSI policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownbrowse" id="admx-msi-allowlockdownbrowse">ADMX_MSI/AllowLockdownBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownmedia" id="admx-msi-allowlockdownmedia">ADMX_MSI/AllowLockdownMedia</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-allowlockdownpatch" id="admx-msi-allowlockdownpatch">ADMX_MSI/AllowLockdownPatch</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableautomaticapplicationshutdown" id="admx-msi-disableautomaticapplicationshutdown">ADMX_MSI/DisableAutomaticApplicationShutdown</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablebrowse" id="admx-msi-disablebrowse">ADMX_MSI/DisableBrowse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableflyweightpatching" id="admx-msi-disableflyweightpatching">ADMX_MSI/DisableFlyweightPatching</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disableloggingfrompackage" id="admx-msi-disableloggingfrompackage">ADMX_MSI/DisableLoggingFromPackage</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablemsi" id="admx-msi-disablemsi">ADMX_MSI/DisableMSI</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablemedia" id="admx-msi-disablemedia">ADMX_MSI/DisableMedia</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablepatch" id="admx-msi-disablepatch">ADMX_MSI/DisablePatch</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablerollback-1" id="admx-msi-disablerollback-1">ADMX_MSI/DisableRollback_1</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablerollback-2" id="admx-msi-disablerollback-2">ADMX_MSI/DisableRollback_2</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-disablesharedcomponent" id="admx-msi-disablesharedcomponent">ADMX_MSI/DisableSharedComponent</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msilogging" id="admx-msi-msilogging">ADMX_MSI/MSILogging</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disableluapatching" id="admx-msi-msi-disableluapatching">ADMX_MSI/MSI_DisableLUAPatching</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disablepatchuninstall" id="admx-msi-msi-disablepatchuninstall">ADMX_MSI/MSI_DisablePatchUninstall</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disablesrcheckpoints" id="admx-msi-msi-disablesrcheckpoints">ADMX_MSI/MSI_DisableSRCheckPoints</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-disableuserinstalls" id="admx-msi-msi-disableuserinstalls">ADMX_MSI/MSI_DisableUserInstalls</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-enforceupgradecomponentrules" id="admx-msi-msi-enforceupgradecomponentrules">ADMX_MSI/MSI_EnforceUpgradeComponentRules</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msi-maxpatchcachesize" id="admx-msi-msi-maxpatchcachesize">ADMX_MSI/MSI_MaxPatchCacheSize</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-msidisableembeddedui" id="admx-msi-msidisableembeddedui">ADMX_MSI/MsiDisableEmbeddedUI</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-safeforscripting" id="admx-msi-safeforscripting">ADMX_MSI/SafeForScripting</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-searchorder" id="admx-msi-searchorder">ADMX_MSI/SearchOrder</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-msi.md#admx-msi-transformssecure" id="admx-msi-transformssecure">ADMX_MSI/TransformsSecure</a>
+  </dd>
+</dl>
+
 ### ADMX_nca policies
 <dl>
   <dd>

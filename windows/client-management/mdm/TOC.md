@@ -220,6 +220,7 @@
 #### [ADMX_MSAPolicy](policy-csp-admx-msapolicy.md)
 #### [ADMX_msched](policy-csp-admx-msched.md)
 #### [ADMX_MSDT](policy-csp-admx-msdt.md)
+#### [ADMX_MSI](policy-csp-admx-msi.md)
 #### [ADMX_nca](policy-csp-admx-nca.md)
 #### [ADMX_NCSI](policy-csp-admx-ncsi.md)
 #### [ADMX_Netlogon](policy-csp-admx-netlogon.md)
