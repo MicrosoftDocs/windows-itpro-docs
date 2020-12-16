@@ -1178,7 +1178,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-disablepatchuninstall"></a>**ADMX_MSI/MSI_DisablePatchUninstall**  
+<a href="" id="admx-msi-msi-disablepatchuninstall"></a>**ADMX_MSI/MSI_DisablePatchUninstall**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1248,7 +1248,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-disablesrcheckpoints"></a>**ADMX_MSI/MSI_DisableSRCheckPoints**  
+<a href="" id="admx-msi-msi-disablesrcheckpoints"></a>**ADMX_MSI/MSI_DisableSRCheckPoints**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1316,7 +1316,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-disableuserinstalls"></a>**ADMX_MSI/MSI_DisableUserInstalls**  
+<a href="" id="admx-msi-msi-disableuserinstalls"></a>**ADMX_MSI/MSI_DisableUserInstalls**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1384,7 +1384,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-enforceupgradecomponentrules"></a>**ADMX_MSI/MSI_EnforceUpgradeComponentRules**  
+<a href="" id="admx-msi-msi-enforceupgradecomponentrules"></a>**ADMX_MSI/MSI_EnforceUpgradeComponentRules**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1458,7 +1458,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-maxpatchcachesize"></a>**ADMX_MSI/MSI_MaxPatchCacheSize**  
+<a href="" id="admx-msi-msi-maxpatchcachesize"></a>**ADMX_MSI/MSI_MaxPatchCacheSize**  
 
 <!--SupportedSKUs-->
 <table>
