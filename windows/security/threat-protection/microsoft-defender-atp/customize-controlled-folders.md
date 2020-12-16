@@ -31,7 +31,7 @@ This article describes how to customize the following settings of the controlled
 - [Add additional folders to be protected](#protect-additional-folders)
 - [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
 
-> [!WARNING]
+> [!IMPORTANT]
 > Controlled folder access monitors apps for activities that are detected as malicious. Sometimes, legitimate apps are blocked from making changes to your files. If controlled folder access impacts your organization's productivity, you might consider running this feature in [audit mode](audit-windows-defender.md) to fully assess the impact.
 
 ## Protect additional folders
