@@ -158,7 +158,7 @@ Microsoft Defender for Endpoint certificate and file indicators can allow signed
 
 For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications).
 
-## Related topics
+## See also
 
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Enable controlled folder access](enable-controlled-folders.md)
