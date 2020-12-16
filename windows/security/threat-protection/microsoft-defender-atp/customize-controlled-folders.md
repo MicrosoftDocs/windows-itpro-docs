@@ -12,6 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
+ms.date: 12/16/2020
 ---
 
 # Customize controlled folder access
@@ -21,14 +22,14 @@ manager: dansimp
 
 **Applies to:**
 
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
 
 This article describes how to customize the following settings of the controlled folder access feature with the Windows Security app, Group Policy, PowerShell, and mobile device management (MDM) configuration service providers (CSPs).
 
-* [Add additional folders to be protected](#protect-additional-folders)
-* [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
+- [Add additional folders to be protected](#protect-additional-folders)
+- [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
 
 > [!WARNING]
 > Controlled folder access monitors apps for activities that may be malicious. Sometimes it might block a legitimate app from making legitimate changes to your files.
@@ -52,7 +53,6 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 ### Use the Windows Security app to protect additional folders
 
 1. Open the Windows Security app by selecting the shield icon in the task bar or searching the start menu for **Defender**.
-
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then scroll down to the **Ransomware protection** section.
 
@@ -78,6 +78,7 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 ### Use PowerShell to protect additional folders
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -161,6 +162,6 @@ For more information about customizing the notification when a rule is triggered
 
 ## Related topics
 
-* [Protect important folders with controlled folder access](controlled-folders.md)
-* [Enable controlled folder access](enable-controlled-folders.md)
-* [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+- [Protect important folders with controlled folder access](controlled-folders.md)
+- [Enable controlled folder access](enable-controlled-folders.md)
+- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
