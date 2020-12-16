@@ -15,7 +15,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Microsoft Defender Antivirus on Windows Server 2016 and 2019
+# Microsoft Defender Antivirus on Windows Server 2019 and Windows Server 2016
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ While the functionality, configuration, and management are largely the same for 
 
 The process of setting up and running Microsoft Defender Antivirus on a server platform includes several steps:
 
-1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
+1. [Enable the interface](#enable-the-user-interface-on-windows-server-2019-or-windows-server-2016)
 
 2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2019-or-windows-server-2016)
 
@@ -48,7 +48,7 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 
 6. (Only if necessary) [Uninstall Microsoft Defender Antivirus](#need-to-uninstall-microsoft-defender-antivirus)
 
-## Enable the user interface on Windows Server 2016 or 2019
+## Enable the user interface on Windows Server 2019 or Windows Server 2016
 
 By default, Microsoft Defender Antivirus is installed and functional on Windows Server 2019 and Windows Server 2016. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Microsoft Defender Antivirus. And if the GUI is not installed on your server, you can add it by using the Add Roles and Features Wizard or by using PowerShell.
 
