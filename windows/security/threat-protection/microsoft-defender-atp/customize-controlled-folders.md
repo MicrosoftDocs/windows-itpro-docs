@@ -151,7 +151,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications]
 
 ## Customize the notification
 
-For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Windows Security](../windows-defender-security-center/windows-defender-security-center.md#customize-notifications-from-the-windows-defender-security-center).
+For more information about customizing the notification when a rule is triggered and blocks an app or file, see [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications).
 
 ## Related topics
 
