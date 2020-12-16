@@ -28,8 +28,9 @@ Controlled folder access helps you protect valuable data from malicious apps and
 
 This article describes how to customize the following settings of the controlled folder access feature with the Windows Security app, Group Policy, PowerShell, and mobile device management (MDM) configuration service providers (CSPs).
 
-- [Add additional folders to be protected](#protect-additional-folders)
+- [Protect additional folders](#protect-additional-folders)
 - [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
+- Allow signed executable to access protected folders
 
 > [!IMPORTANT]
 > Controlled folder access monitors apps for activities that are detected as malicious. Sometimes, legitimate apps are blocked from making changes to your files. If controlled folder access impacts your organization's productivity, you might consider running this feature in [audit mode](audit-windows-defender.md) to fully assess the impact.
@@ -148,6 +149,10 @@ An allowed application or service only has write access to a controlled folder a
 ### Use MDM CSPs to allow specific apps
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) configuration service provider (CSP) to allow apps to make changes to protected folders.
+
+## Allow signed executable files to access protected folders
+
+Microsoft Defender for Endpoint certificate and file indicators can allow signed executable files to access protected folders. For implementation details, see [Create indicators based on certificates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates).
 
 ## Customize the notification
 
