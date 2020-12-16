@@ -35,7 +35,7 @@ Did Microsoft Defender for Endpoint identify an artifact as malicious, even thou
 
 | Step | Description |
 |:---|:---|
-| 1. [Identify a false positive/negative](#identify-a-false-positivenegative) |   |
+| 1. [Identify a false positive/negative](#identify-a-false-positivenegative) | A false positive is something that was detected and identified as malicious, when in fact it does not pose a threat. <br/>A false negative is something that was not detected as a threat even though it is, in fact, malicious. <br/>Both false positives and false negatives can be problematic for your organization.    |
 | 2. [Review/define exclusions for Defender for Endpoint](#review-or-define-exclusions)  |  |
 | 3. [Review/define indicators for Defender for Endpoint](#review-or-define-indicators) |  |
 | 4. [Classify a false positive/negative in Defender for Endpoint](#classify-a-false-positive-or-false-negative) |  |
