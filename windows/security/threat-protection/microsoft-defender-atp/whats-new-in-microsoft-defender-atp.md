@@ -25,8 +25,8 @@ ms.topic: conceptual
 
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 The following features are generally available (GA) in the latest release of Microsoft Defender for Endpoint as well as security features in Windows 10 and Windows Server.
 
