@@ -2512,6 +2512,38 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Printing2 policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-autopublishing" id="admx-printing2-autopublishing">ADMX_Printing2/AutoPublishing</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-immortalprintqueue" id="admx-printing2-immortalprintqueue">ADMX_Printing2/ImmortalPrintQueue</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-prunedownlevel" id="admx-printing2-prunedownlevel">ADMX_Printing2/PruneDownlevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruninginterval" id="admx-printing2-pruninginterval">ADMX_Printing2/PruningInterval</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningpriority" id="admx-printing2-pruningpriority">ADMX_Printing2/PruningPriority</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningretries" id="admx-printing2-pruningretries">ADMX_Printing2/PruningRetries</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-pruningretrylog" id="admx-printing2-pruningretrylog">ADMX_Printing2/PruningRetryLog</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-registerspoolerremoterpcendpoint" id="admx-printing2-registerspoolerremoterpcendpoint">ADMX_Printing2/RegisterSpoolerRemoteRpcEndPoint</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-printing2.md#admx-printing2-verifypublishedstate" id="admx-printing2-verifypublishedstate">ADMX_Printing2/VerifyPublishedState</a>
+  </dd>
+</dl>
+
 ### ADMX_Programs policies  
 
 <dl>

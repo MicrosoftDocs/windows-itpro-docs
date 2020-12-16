@@ -229,6 +229,7 @@
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
 #### [ADMX_PowerShellExecutionPolicy](policy-csp-admx-powershellexecutionpolicy.md)
 #### [ADMX_Printing](policy-csp-admx-printing.md)
+#### [ADMX_Printing2](policy-csp-admx-printing2.md)
 #### [ADMX_Programs](policy-csp-admx-programs.md)
 #### [ADMX_Reliability](policy-csp-admx-reliability.md)
 #### [ADMX_RemoteAssistance](policy-csp-admx-remoteassistance.md)
