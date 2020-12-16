@@ -1149,9 +1149,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-globalization.md#admx-globalization-blockcleanupofunusedpreinstalledlangpacks" id="admx-globalization-blockcleanupofunusedpreinstalledlangpacks">ADMX_Globalization/BlockCleanupOfUnusedPreinstalledLangPacks</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-globalization.md#admx-globalization-blockuserinputmethodsforsignin" id="admx-globalization-blockuserinputmethodsforsignin">ADMX_Globalization/BlockUserInputMethodsForSignIn</a>
   </dd>
   <dd>
@@ -1192,9 +1189,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-globalization.md#admx-globalization-lockuseruilanguage" id="admx-globalization-lockuseruilanguage">ADMX_Globalization/LockUserUILanguage</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-globalization.md#admx-globalization-machineuilanguageoverwrite" id="admx-globalization-machineuilanguageoverwrite">ADMX_Globalization/MachineUILanguageOverwrite</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-globalization.md#admx-globalization-preventgeoidchange-1" id="admx-globalization-preventgeoidchange-1">ADMX_Globalization/PreventGeoIdChange_1</a>

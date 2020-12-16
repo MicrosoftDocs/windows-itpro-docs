@@ -23,9 +23,6 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-globalization-blockcleanupofunusedpreinstalledlangpacks">ADMX_Globalization/BlockCleanupOfUnusedPreinstalledLangPacks</a>
-  </dd>
-  <dd>
     <a href="#admx-globalization-blockuserinputmethodsforsignin">ADMX_Globalization/BlockUserInputMethodsForSignIn</a>
   </dd>
   <dd>
@@ -68,9 +65,6 @@ manager: dansimp
     <a href="#admx-globalization-lockuseruilanguage">ADMX_Globalization/LockUserUILanguage</a>
   </dd>
   <dd>
-    <a href="#admx-globalization-machineuilanguageoverwrite">ADMX_Globalization/MachineUILanguageOverwrite</a>
-  </dd>
-  <dd>
     <a href="#admx-globalization-preventgeoidchange-1">ADMX_Globalization/PreventGeoIdChange_1</a>
   </dd>
   <dd>
@@ -103,75 +97,6 @@ manager: dansimp
 </dl>
 
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-globalization-blockcleanupofunusedpreinstalledlangpacks"></a>**ADMX_Globalization/BlockCleanupOfUnusedPreinstalledLangPacks**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether the LPRemove task will run to clean up language packs installed on a machine but are not used by any users on that machine.
-
-If you enable this policy setting, language packs that are installed as part of the system image will remain installed even if they are not used by any user on that system.
-
-If you disable or do not configure this policy setting, language packs that are installed as part of the system image but are not used by any user on that system will be removed as part of a scheduled clean up task.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Block clean-up of unused language packs*
--   GP name: *BlockCleanupOfUnusedPreinstalledLangPacks*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
 <hr/>
 
 <!--Policy-->
@@ -1216,75 +1141,6 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 ADMX Info:  
 -   GP English name: *Restricts the UI languages Windows should use for the selected user*
 -   GP name: *LockUserUILanguage*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-globalization-machineuilanguageoverwrite"></a>**ADMX_Globalization/MachineUILanguageOverwrite**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls which UI language is used for computers with more than one UI language installed.
-
-If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the local administrator.
-
-If you disable or do not configure this policy setting, there is no restriction of a specific language used for the Windows menus and dialogs.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Force selected system UI language to overwrite the user UI language*
--   GP name: *MachineUILanguageOverwrite*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
 
