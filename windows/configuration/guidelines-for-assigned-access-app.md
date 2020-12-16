@@ -45,6 +45,8 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
+In Windows 10, Version 1909, Assigned access adds support for the new Microsoft Edge kiosk mode support. [Learn how to deploy Microsoft Edge kiosk mode](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-configure-kiosk-mode).
+
 In Windows 10, version 1809, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
 In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
