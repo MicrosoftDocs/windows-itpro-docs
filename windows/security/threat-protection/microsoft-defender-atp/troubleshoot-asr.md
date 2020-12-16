@@ -23,8 +23,8 @@ ms.custom: asr
 
 
 **Applies to:**
-
-* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 When you use [attack surface reduction rules](attack-surface-reduction.md) you may run into issues, such as:
 

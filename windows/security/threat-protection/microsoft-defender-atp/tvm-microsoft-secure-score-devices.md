@@ -26,6 +26,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >[!NOTE]
 > Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
