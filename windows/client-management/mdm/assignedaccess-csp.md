@@ -77,7 +77,7 @@ Added in Windows 10, version 1709. Specifies the settings that you can configure
 
 Supports Microsoft Edge kiosk mode, which allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Create a Windows 10 kiosk that runs Microsoft Edge](https://docs.microsoft.com/windows/configuration/test).
 
-Allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. By default this is set to ctrl+alt+delete. For details on how to customize a breakout sequence, see [Create a custom breakout sequence for a kiosk](https://docs.microsoft.com/windows/configuration/test).
+Allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. By default the breakout sequence is set to ctrl+alt+delete. For details on how to customize a breakout sequence, see [Create a custom breakout sequence for a kiosk](https://docs.microsoft.com/windows/configuration/test).
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -516,6 +516,7 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
 
 ## Example AssignedAccessConfiguration XML
 
+Example XML configuration for a multi app kiosk.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
@@ -562,6 +563,49 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
     <Config>
       <Account>MultiAppKioskUser</Account>
       <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
+Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configure to launch www.bing.com on startup.
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --no-first-run --kiosk www.bing.com"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
+Example XML configuration for setting a breakout sequence to be Shift+Windows on a Microsoft Edge kiosk. Note BreakoutSequence can be applied to any kiosk type not just an Edge kiosk.
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --no-first-run --kiosk www.bing.com"/>
+      <v4:BreakoutSequence Key="Shift+Win"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
