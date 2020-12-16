@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft Volume L
 
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.
-> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
+> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). 
 
 Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
 

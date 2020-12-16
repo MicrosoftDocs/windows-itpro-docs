@@ -1,10 +1,10 @@
 ---
-title: What's new in Windows 10 Enterprise 2016 LTSC
+title: What's new in Windows 10 Enterprise LTSC 2016
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: New and updated IT Pro content about new features in Windows 10 Enterprise 2016 LTSC (also known as Windows 10 Enterprise 2016 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2016 LTSC"]
+description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
+keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2016"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,15 +14,15 @@ ms.localizationpriority: low
 ms.topic: article
 ---
 
-# What's new in Windows 10 Enterprise 2016 LTSC
+# What's new in Windows 10 Enterprise LTSC 2016
 
 **Applies to**
--   Windows 10 Enterprise 2016 LTSC
+-   Windows 10 Enterprise LTSC 2016
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise 2016 LTSC (LTSB), compared to Windows 10 Enterprise 2015 LTSC (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
->Features in Windows 10 Enterprise 2016 LTSC are equivalent to Windows 10, version 1607.
+>Features in Windows 10 Enterprise LTSC 2016 are equivalent to Windows 10, version 1607.
 
 ## Deployment
 
@@ -71,7 +71,7 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in this version of Windows 10. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
-Additional changes for Windows Hello in Windows 10 Enterprise 2016 LTSC:
+Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.

@@ -27,10 +27,17 @@ ms.topic: conceptual
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Extensive testing of MDE (Microsoft Defender for Endpoint) with new system extensions on macOS 11 (Big Sur) revealed an intermittent issue that impacts macOS devices with specific graphic cards models. In rare cases on impacted macOS devices calls into macOS system extensions were seen resulting in kernel panic. Microsoft is actively working with Apple engineering to clarify profile of impacted devices and to address this macOS issue. In the meantime, if you encounter such a kernel panic, please submit a feedback report to Apple through the Feedback Assistant app.
+> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+
+## 101.15.26
+
+- Improved the reliability of the agent when running on macOS 11 Big Sur
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Performance improvements & bug fixes
 
 ## 101.13.75
 
+- Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic
 - Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)
 - Bug fixes
 

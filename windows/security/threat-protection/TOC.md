@@ -106,7 +106,7 @@
 #### [Device control]()
 ##### [Code integrity](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
-
+##### [Device control report](device-control/device-control-report.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](microsoft-defender-atp/exploit-protection.md)
@@ -185,9 +185,7 @@
 ###### [Report on antivirus protection]()
 ###### [Review protection status and alerts](microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus.md)
 ###### [Troubleshoot antivirus reporting in Update Compliance](microsoft-defender-antivirus/troubleshoot-reporting.md)
-   
-###### [Manage updates and apply baselines]()
-###### [Learn about the different kinds of updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
+###### [Learn about the recent updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
 ###### [Manage protection and security intelligence updates](microsoft-defender-antivirus/manage-protection-updates-microsoft-defender-antivirus.md)
 ###### [Manage when protection updates should be downloaded and applied](microsoft-defender-antivirus/manage-protection-update-schedule-microsoft-defender-antivirus.md)
 ###### [Manage updates for endpoints that are out of date](microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus.md)
@@ -274,11 +272,11 @@
 #### [Overview of Microsoft Defender Advanced Threat Protection for iOS](microsoft-defender-atp/microsoft-defender-atp-ios.md)
 
 #### [Deploy]()
-##### [App-based deployment](microsoft-defender-atp/ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](microsoft-defender-atp/ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](microsoft-defender-atp/ios-configure-features.md)
-#### [Privacy](microsoft-defender-atp/microsoft-defender-atp-ios-privacy-information.md)
+#### [Privacy](microsoft-defender-atp/ios-privacy.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Linux]()
@@ -297,6 +295,8 @@
 ##### [Static proxy configuration](microsoft-defender-atp/linux-static-proxy-configuration.md)
 ##### [Set preferences](microsoft-defender-atp/linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/linux-pua.md)
+##### [Schedule scans with Microsoft Defender ATP for Linux](microsoft-defender-atp/linux-schedule-scan-atp.md)
+##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](microsoft-defender-atp/linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
@@ -438,16 +438,8 @@
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
-### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
-
-
-
-
-
-
-
-
-
+### [Threat analytics overview](microsoft-defender-atp/threat-analytics.md)
+#### [Read the analyst report](microsoft-defender-atp/threat-analytics-analyst-reports.md)
 
 
 ## [How-to]()
