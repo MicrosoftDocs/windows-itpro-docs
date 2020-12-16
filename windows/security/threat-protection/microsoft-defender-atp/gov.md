@@ -40,7 +40,7 @@ The following OS versions are supported:
 - Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/help/4490481))
 
 >[!NOTE]
-A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
+>A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
 
 The following OS versions are supported via Azure Security Center:
 - Windows Server 2008 R2 SP1
@@ -107,5 +107,9 @@ Service location | DNS record
 Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
 Defender for Endpoint GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
 
+
+## API
+Login endpoint: ```https://login.microsoftonline.us```
+Microsoft Defender for Endpoint API endpoint: ```https://api-gov.securitycenter.microsoft.us```
 
 
