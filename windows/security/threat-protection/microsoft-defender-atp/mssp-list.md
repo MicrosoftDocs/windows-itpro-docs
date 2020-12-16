@@ -20,8 +20,8 @@ ms.topic: article
 # Supported managed security service providers
 
 **Applies to:**
-
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Logo |Partner name   | Description 
 :---|:---|:---
