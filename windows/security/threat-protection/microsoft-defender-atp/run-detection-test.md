@@ -31,6 +31,7 @@ ms.topic: article
 - Windows Server, version 1803
 - Windows Server, 2019
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
