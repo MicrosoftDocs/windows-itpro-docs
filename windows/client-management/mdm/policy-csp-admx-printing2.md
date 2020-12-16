@@ -180,7 +180,8 @@ If you enable this setting or do not configure it, the domain controller prunes 
 
 If you disable this setting, the domain controller does not prune this computer's printers. This setting is designed to prevent printers from being pruned when the computer is temporarily disconnected from the network.
 
-> [!NOTE] You can use the "Directory Pruning Interval" and "Directory Pruning Retry" settings to adjust the contact interval and number of contact attempts.
+> [!NOTE]
+> You can use the "Directory Pruning Interval" and "Directory Pruning Retry" settings to adjust the contact interval and number of contact attempts.
 
 <!--/Description-->
 > [!TIP]
