@@ -95,8 +95,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](https://docs.m
 You can specify if certain apps are always considered safe and give write access to files in protected folders. Allowing apps can be useful if a particular app you know and trust is being blocked by the controlled folder access feature.
 
 > [!IMPORTANT]
-> By default, Windows adds apps that it considers friendly to the allowed list—apps added automatically by Windows are not recorded in the list shown in the Windows Security app or by using the associated PowerShell cmdlets.
-> You shouldn't need to add most apps. Only add apps if they are being blocked and you can verify their trustworthiness.
+> By default, Windows adds apps that are considered friendly to the allowed list. Such apps that are added automatically are not recorded in the list shown in the Windows Security app or by using the associated PowerShell cmdlets. You shouldn't need to add most apps. Only add apps if they are being blocked and you can verify their trustworthiness.
 
 When you add an app, you have to specify the app's location. Only the app in that location will be permitted access to the protected folders. If the app (with the same name) is in a different location, it will not be added to the allow list and may be blocked by controlled folder access.
 
@@ -104,9 +103,9 @@ An allowed application or service only has write access to a controlled folder a
 
 ### Use the Windows Defender Security app to allow specific apps
 
-1. Open the Windows Security by selecting the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by searching the start menu for **Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then select **Ransomware protection**.
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then select **Manage ransomware protection**.
 
 3. Under the **Controlled folder access** section, select **Allow an app through Controlled folder access**
 
@@ -116,7 +115,7 @@ An allowed application or service only has write access to a controlled folder a
 
 ### Use Group Policy to allow specific apps
 
-1. On your Group Policy management device, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management device, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
