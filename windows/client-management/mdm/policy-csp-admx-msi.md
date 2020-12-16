@@ -169,6 +169,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -242,6 +243,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -312,6 +314,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -387,6 +390,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -462,6 +466,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -531,6 +536,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -604,6 +610,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -679,6 +686,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -752,6 +760,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -826,6 +835,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -896,6 +906,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -967,6 +978,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -1036,7 +1048,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-msilogging"></a>**ADMX_MSI/MSILogging**  
 
@@ -1106,8 +1120,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
+
 <a href="" id="admx-msi-msi-disableluapatching"></a>**ADMX_MSI/MSI_DisableLUAPatching**  
 
 <!--SupportedSKUs-->
@@ -1176,8 +1193,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
+
 <a href="" id="admx-msi-msi-disablepatchuninstall"></a>**ADMX_MSI/MSI_DisablePatchUninstall**  
 
 <!--SupportedSKUs-->
@@ -1246,8 +1266,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
+
 <a href="" id="admx-msi-msi-disablesrcheckpoints"></a>**ADMX_MSI/MSI_DisableSRCheckPoints**  
 
 <!--SupportedSKUs-->
@@ -1314,8 +1337,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
+
 <a href="" id="admx-msi-msi-disableuserinstalls"></a>**ADMX_MSI/MSI_DisableUserInstalls**  
 
 <!--SupportedSKUs-->
@@ -1382,8 +1408,11 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
+
 <a href="" id="admx-msi-msi-enforceupgradecomponentrules"></a>**ADMX_MSI/MSI_EnforceUpgradeComponentRules**  
 
 <!--SupportedSKUs-->
@@ -1456,7 +1485,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-msi-maxpatchcachesize"></a>**ADMX_MSI/MSI_MaxPatchCacheSize**  
 
@@ -1530,7 +1561,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-msidisableembeddedui"></a>**ADMX_MSI/MsiDisableEmbeddedUI**  
 
@@ -1598,7 +1631,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-safeforscripting"></a>**ADMX_MSI/SafeForScripting**  
 
@@ -1668,7 +1703,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-searchorder"></a>**ADMX_MSI/SearchOrder**  
 
@@ -1742,7 +1779,9 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
+
 <!--Policy-->
 <a href="" id="admx-msi-transformssecure"></a>**ADMX_MSI/TransformsSecure**  
 
