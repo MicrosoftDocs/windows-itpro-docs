@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 12/16/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -27,12 +27,12 @@ manager: dansimp
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
-- Microsoft Intune (now part of Microsoft Endpoint Manager)
-- Microsoft Endpoint Configuration Manager (now part of Microsoft Endpoint Manager)
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instrumentation (WMI)
-- The Microsoft Malware Protection Command Line Utility (referred to as the *mpcmdrun.exe* utility
+- [Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-antivirus-policy) (now part of Microsoft Endpoint Manager)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (now part of Microsoft Endpoint Manager)
+- [Group Policy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
+- [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)
+- [Windows Management Instrumentation (WMI)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)
+- The [Microsoft Malware Protection Command Line Utility](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) (referred to as the *mpcmdrun.exe* utility
 
 The articles in this section provide further information, links, and resources for using these tools to manage and configure Microsoft Defender Antivirus.
 
