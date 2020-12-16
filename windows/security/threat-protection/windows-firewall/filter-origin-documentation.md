@@ -45,21 +45,21 @@ The blocking filters can be categorized under these filter origins:
     
     e.	Stealth
     
-    f.	UWP default
+    f.	Universal Windows Platform (UWP) default
     
-    g.	WSH default
+    g.	Windows Service Hardening (WSH) default
 
-The next section describes the improvements made to audits 5157 and 5152 and how the above filter origins are used in these events. These improvements were added in Iron release.
+The next section describes the improvements made to audits 5157 and 5152, and how the above filter origins are used in these events. These improvements were added in Iron release.
  
  ## Improved firewall audit 
  
 The two new fields added to the audit 5157 and 5152 events are `Filter Origin` and `Interface Index`.
  
-The `Filter Origin` field will help identify the cause of the drop. Packet drops from Firewall are explicitly dropped by default block filters created by the Windows Firewall service or a Firewall rule which may be created by users, policies, services, apps, etc.
+The `Filter Origin` field helps identify the cause of the drop. Packet drops from firewall are explicitly dropped by default block filters created by the Windows Firewall service or a firewall rule which may be created by users, policies, services, apps, etc.
 
-`Filter Origin` will either specify the rule ID (a unique identifier of a Firewall rule) or the name of one of the default block filters.
+`Filter Origin` specifies either the rule ID (a unique identifier of a Firewall rule) or the name of one of the default block filters.
 
-The `Interface Index` field will specify the network interface in which the packet was dropped. This field helps to identify which interface was quarantined, if the `Filter Origin` is a `Quarantine Default`.
+The `Interface Index` field specifies the network interface in which the packet was dropped. This field helps to identify which interface was quarantined, if the `Filter Origin` is a `Quarantine Default`.
 
 To enable a specific audit event, run the corresponding command in an administrator command prompt:
 
@@ -74,7 +74,7 @@ As the audit surfaces `Filter Origin` and `Interface Index`, the network admin c
 
 ![Event audit](images/event-audit-5157.png)
 
-The next sections are divided by `Filter Origin` type. The filter origin value will either be a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, **Firewall default block filters**. Otherwise, continue to the section **Firewall rules**.
+The next sections are divided by `Filter Origin` type, the value is either a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, **Firewall default block filters**. Otherwise, continue to the section **Firewall rules**.
 
 ## Firewall rules
 
@@ -90,7 +90,7 @@ Get-NetFirewallRule -Name " {A549B7CF-0542-4B67-93F9-EEBCDD584377} "
 After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule’s `DisplayName`.
 
 >[!NOTE]
-> Firewall rules from Mobile Device Management (MDM) store cannot be searched using the Windows Defender UI. Additionally, the above method will not work when the `Filter Origin` is one of the default block filters, as they do not correspond to any Firewall rules.
+> Firewall rules from Mobile Device Management (MDM) store cannot be searched using the Windows Defender UI. Additionally, the above method will not work when the `Filter Origin` is one of the default block filters, as they do not correspond to any firewall rules.
 
 ## Firewall default block filters
 
@@ -104,11 +104,11 @@ To enable localhost loopback for a published app which requires loopback access 
 
 **Boottime default**
 
-Network drop events from the boottime default block filter origin occur when the computer is booting up and the Firewall service is not yet running. Services will need to create a boottime allow filter to allow the traffic. It should be noted that it is not possible to add boottime filters through Firewall rules.
+Network drop events from the boottime default block filter origin occur when the computer is booting up and the firewall service is not yet running. Services will need to create a boottime allow filter to allow the traffic. It should be noted that it is not possible to add boottime filters through firewall rules.
 
 **Quarantine default**
 
-Network drops from the quarantine default block filter occur when the interface is temporarily quarantined by Firewall service. The Firewall service quarantines an interface when it detects a change on the network, and based on several other factors, the Firewall service may put the interface in quarantine as a safeguard. When an interface is in quarantine, the quarantine default block filter will block any new non-loopback inbound connections. 
+Network drops from the quarantine default block filter occur when the interface is temporarily quarantined by Firewall service. The firewall service quarantines an interface when it detects a change on the network, and based on several other factors, the firewall service may put the interface in quarantine as a safeguard. When an interface is in quarantine, the quarantine default block filter will block any new non-loopback inbound connections. 
 
 Run the following PowerShell command to generate more information about the interface:
 
@@ -128,9 +128,9 @@ To learn more about the quarantine feature, see [Quarantine behavior](quarantine
 
 Network packet drops from query user default block filters occur when there is no explicit rule created to allow an inbound connection for the packet. When an application binds to a socket but does not have a corresponding inbound rule to allow packets on that port, Windows generates a pop up for the user to allow or deny the app to receive packets on the available network categories. If the user clicks to deny the connection in this popup, subsequent inbound packets to the app will be dropped. To resolve the drops: 
 
-1. Create an inbound Firewall rule to allow the packet for this application. This will allow the packet to bypass any query user default block filters.
+1. Create an inbound firewall rule to allow the packet for this application. This will allow the packet to bypass any query user default block filters.
 
-2. Delete any block query user rules which may have been auto generated by the Firewall service.
+2. Delete any block query user rules which may have been auto generated by the firewall service.
 
 To generate a list of all the query user block rules, you can run the following PowerShell command:
 
