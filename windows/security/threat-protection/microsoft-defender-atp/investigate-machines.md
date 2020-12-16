@@ -132,8 +132,6 @@ More details about certain events are provided in the **Additional information**
 - Suspicious script detected - a potentially malicious script was found running
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 
-You can also use the [Artifact timeline](investigate-alerts.md#artifact-timeline) feature to see the correlation between alerts and events on a specific device.
-
 #### Event details
 Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
 
