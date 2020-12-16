@@ -37,7 +37,7 @@ GCC-M | [https://gcc.securitycenter.windows.us](https://gcc.securitycenter.windo
 GCC-H | [https://securitycenter.windows.us](https://securitycenter.windows.us)
 DoD | [https://securitycenter.windows.us](https://securitycenter.windows.us)
 
-If you are unable to login to the portal, you can also open a support case using the [phone](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=phone).
+If you are unable to login to the portal, you can also open a support case using the [phone](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=phone&preserve-view=true).
 
 ## Opening a support case
 For prerequisites and instructions, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
