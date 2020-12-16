@@ -36,7 +36,7 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 
 1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
 
-2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019)
+2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2019-or-windows-server-2016)
 
 2. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running)
 
