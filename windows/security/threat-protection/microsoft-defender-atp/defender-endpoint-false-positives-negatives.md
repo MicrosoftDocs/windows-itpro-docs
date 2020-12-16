@@ -35,12 +35,12 @@ Did Microsoft Defender for Endpoint identify an artifact as malicious, even thou
 
 | Step | Description |
 |:---|:---|
-| 1. Identify a false positive/negative |   |
-| 2. Review/define exclusions for Defender for Endpoint  |  |
-| 3. Review/define indicators for Defender for Endpoint |  |
-| 4. Classify a false positive/negative in Defender for Endpoint |  |
-| 5. Submit a file for analysis |  |
-| 6. Confirm your software uses EV code signing  |  |
+| 1. [Identify a false positive/negative](#identify-a-false-positivenegative) |   |
+| 2. [Review/define exclusions for Defender for Endpoint](#review-or-define-exclusions)  |  |
+| 3. [Review/define indicators for Defender for Endpoint](#review-or-define-indicators) |  |
+| 4. [Classify a false positive/negative in Defender for Endpoint](#classify-a-false-positive-or-false-negative) |  |
+| 5. [Submit a file for analysis](#submit-a-file-for-analysis) |  |
+| 6. [Confirm your software uses EV code signing](#confirm-your-software-uses-ev-code-signing)  |  |
 
 ## Identify a false positive/negative
 
@@ -52,8 +52,16 @@ Did Microsoft Defender for Endpoint identify an artifact as malicious, even thou
 
 ## Review or define indicators
 
+*Allow indicators for false positives; block indicators for false negatives.  https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators*
+
 ## Classify a false positive or false negative
+
+*Need to figure out where/how this is done*
 
 ## Submit a file for analysis
 
+*https://www.microsoft.com/wdsi/filesubmission/*
+
 ## Confirm your software uses EV code signing
+
+*Some info is available here: https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate*
