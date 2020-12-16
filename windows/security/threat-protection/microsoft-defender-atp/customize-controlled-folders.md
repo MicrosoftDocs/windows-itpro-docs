@@ -8,9 +8,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: levinec
-ms.author: ellevin
-ms.reviewer: 
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ---
 
