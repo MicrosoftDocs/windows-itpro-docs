@@ -1108,7 +1108,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-msi-disableluapatching"></a>**ADMX_MSI/MSI_DisableLUAPatching**  
+<a href="" id="admx-msi-msi-disableluapatching"></a>**ADMX_MSI/MSI_DisableLUAPatching**  
 
 <!--SupportedSKUs-->
 <table>
