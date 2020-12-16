@@ -36,11 +36,9 @@ This article describes how to customize the following settings of the controlled
 
 ## Protect additional folders
 
-
 Controlled folder access applies to a number of system folders and default locations, including folders such as Documents, Pictures, and Movies.
 
 You can add additional folders to be protected, but you cannot remove the default folders in the default list.
-
 
 Adding other folders to controlled folder access can be useful. Some use-cases include if you don't store files in the default Windows libraries, or you've changed the location of the libraries away from the defaults.
 
@@ -62,7 +60,6 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 4. Click **Add a protected folder** and follow the prompts to add folders.
 
-
 ### Use Group Policy to protect additional folders
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
@@ -82,10 +79,9 @@ You can use the Windows Security app or Group Policy to add and remove additiona
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
+3. Repeat step 2 until you have added all the folders you want to protect. Folders that are added are visible in the Windows Security app.
 
-Continue to use `Add-MpPreference -ControlledFolderAccessProtectedFolders` to add more folders to the list. Folders added using this cmdlet will appear in the Windows Security app.
-
-![Screenshot of a PowerShell window with the cmdlet above entered](../images/cfa-allow-folder-ps.png)
+   ![Screenshot of a PowerShell window with the cmdlet above entered](../images/cfa-allow-folder-ps.png)
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
