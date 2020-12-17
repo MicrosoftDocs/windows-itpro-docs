@@ -52,7 +52,7 @@ Primary DNS suffix is set using the **VPNv2/*ProfileName*/DnsSuffix** node.
 
 ## Persistent
 
-You can also configure *persistent* name resolution rules. Name resolution for specified items will only  performed over VPN.
+You can also configure *persistent* name resolution rules. Name resolution for specified items will only be performed over the VPN.
 
 Persistent name resolution is set using the **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/Persistent** node.
 
