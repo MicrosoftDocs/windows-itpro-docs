@@ -35,7 +35,7 @@ If you are planning to switch from McAfee Endpoint Security (McAfee) to [Microso
 
 When you switch from McAfee to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
-:::image type="content" source="../../../media/phase-diagrams/migration-phases.png" alt-text="Migration phases - prepare setup onboard":::
+![Migration phases - prepare setup onboard](/windows/media/phase-diagrams/migration-phases.png)
 
 
 |Phase |Description |
