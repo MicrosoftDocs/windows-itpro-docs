@@ -75,7 +75,7 @@ The supported operations are Add, Delete, Get and Replace. When there's no confi
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
-Currently in Windows 10 Insider Preview Build is Microsoft Edge kiosk mode. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Create a Windows 10 kiosk that runs Microsoft Edge](https://docs.microsoft.com/windows/configuration/test). The Windows 10 Insider Preview Build also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. By default the breakout sequence is set to ctrl+alt+delete. For details on how to customize a breakout sequence, see [Create a custom breakout sequence for a kiosk](https://docs.microsoft.com/windows/configuration/test).
+Updated in Windows 10, version 1909. Added Microsoft Edge kiosk mode. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen.
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -247,7 +247,7 @@ KioskModeApp Replace
 
 ## AssignedAccessConfiguration XSD
 
-Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
+Below schema is for AssignedAccess Configuration up to Windows 10 1909 release.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -258,11 +258,13 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
@@ -272,7 +274,13 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 
     <xs:complexType name="kioskmodeapp_t">
         <xs:attribute name="AppUserModelId" type="xs:string"/>
+        <xs:attributeGroup ref="ClassicApp_attributeGroup"/>
     </xs:complexType>
+
+    <xs:attributeGroup name="ClassicApp_attributeGroup">
+        <xs:attribute ref="v4:ClassicAppPath"/>
+        <xs:attribute ref="v4:ClassicAppArguments" use="optional"/>
+    </xs:attributeGroup>
 
     <xs:complexType name="profile_t">
         <xs:choice>
@@ -282,7 +290,19 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
                 <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
             </xs:sequence>
-            <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1"/>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
+                    <xs:key name="mutualExclusionAumidOrClassicAppPath">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppPath"/>
+                    </xs:key>
+                    <xs:unique name="mutualExclusionAumidOrClassicAppArgumentsOptional">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppArguments"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element ref="v4:BreakoutSequence" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
         </xs:choice>
         <xs:attribute name="Id" type="guid_t" use="required"/>
         <xs:attribute name="Name" type="xs:string" use="optional"/>
@@ -383,6 +403,7 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
     <xs:simpleType name="specialGroupType_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Visitor"/>
+            <xs:enumeration value="DeviceOwner"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -421,7 +442,7 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
             </xs:all>
         </xs:complexType>
     </xs:element>
-</xs:schema>
+</xs:schema>);
 ```
 
 Here is the schema for new features introduced in Windows 10 1809 release
@@ -495,6 +516,31 @@ Schema for Windows 10 prerelease
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />
+
+</xs:schema>
+```
+
+Schema for features introduced in Windows 10, version 1909.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    >
+
+    <xs:attribute name="ClassicAppPath" type="xs:string"/>
+    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
+
+    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
+
+    <xs:complexType name="BreakoutSequence_t">
+        <xs:attribute name="Key" type="xs:string" use="required"/>
+    </xs:complexType>
 
 </xs:schema>
 ```
