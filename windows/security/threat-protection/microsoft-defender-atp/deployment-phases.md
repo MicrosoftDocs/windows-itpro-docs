@@ -37,9 +37,6 @@ Each section corresponds to a separate article in this solution.
 ![Image of deployment phases](images/deployment-guide-phases.png)
 
 
-
-![deployment phases - prepare, setup, onboard](/windows/media/phase-diagrams/deployment-phases.png)
-
 |Phase | Description | 
 |:-------|:-----|
 | [Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Defender for Endpoint such as stakeholder approvals, environment considerations, access permissions, and adoption order of capabilities. 
