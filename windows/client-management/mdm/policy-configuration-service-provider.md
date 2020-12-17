@@ -1129,22 +1129,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_HelpAndSupport policies
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-activehelp" id="admx-helpandsupport-activehelp">ADMX_HelpAndSupport/ActiveHelp</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpexplicitfeedback" id="admx-helpandsupport-hpexplicitfeedback">ADMX_HelpAndSupport/HPExplicitFeedback</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpimplicitfeedback" id="admx-helpandsupport-hpimplicitfeedback">ADMX_HelpAndSupport/HPImplicitFeedback</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hponlineassistance" id="admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
-  </dd>
-</dl>
-
 ### ADMX_Globalization policies  
 
 <dl>
@@ -1219,6 +1203,105 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-globalization.md#admx-globalization-y2k" id="admx-globalization-y2k">ADMX_Globalization/Y2K</a>
+  </dd>
+</dl>
+
+### ADMX_HelpAndSupport policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-activehelp" id="admx-helpandsupport-activehelp">ADMX_HelpAndSupport/ActiveHelp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpexplicitfeedback" id="admx-helpandsupport-hpexplicitfeedback">ADMX_HelpAndSupport/HPExplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hpimplicitfeedback" id="admx-helpandsupport-hpimplicitfeedback">ADMX_HelpAndSupport/HPImplicitFeedback</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-helpandsupport.md#admx-helpandsupport-hponlineassistance" id="admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
+  </dd>
+</dl>
+
+## ADMX_ICM policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-ceipenable" id="admx-icm-ceipenable">ADMX_ICM/CEIPEnable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-certmgr-disableautorootupdates" id="admx-icm-certmgr-disableautorootupdates">ADMX_ICM/CertMgr_DisableAutoRootUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-disablehttpprinting-1" id="admx-icm-disablehttpprinting-1">ADMX_ICM/DisableHTTPPrinting_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-disablewebpnpdownload-1" id="admx-icm-disablewebpnpdownload-1">ADMX_ICM/DisableWebPnPDownload_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-driversearchplaces-dontsearchwindowsupdate" id="admx-icm-driversearchplaces-dontsearchwindowsupdate">ADMX_ICM/DriverSearchPlaces_DontSearchWindowsUpdate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-eventviewer-disablelinks" id="admx-icm-eventviewer-disablelinks">ADMX_ICM/EventViewer_DisableLinks</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-hss-headlinespolicy" id="admx-icm-hss-headlinespolicy">ADMX_ICM/HSS_HeadlinesPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-hss-kbsearchpolicy" id="admx-icm-hss-kbsearchpolicy">ADMX_ICM/HSS_KBSearchPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement_restrictcommunication_1" id="admx-icm-internetmanagement_restrictcommunication_1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-2" id="admx-icm-internetmanagement-restrictcommunication-2">ADMX_ICM/InternetManagement_RestrictCommunication_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-nc-exitonisp" id="admx-icm-nc-exitonisp">ADMX_ICM/NC_ExitOnISP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-nc-noregistration" id="admx-icm-nc-noregistration">ADMX_ICM/NC_NoRegistration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-pch-donotreport" id="admx-icm-pch-donotreport">ADMX_ICM/PCH_DoNotReport</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-removewindowsupdate-icm" id="admx-icm-removewindowsupdate-icm">ADMX_ICM/RemoveWindowsUpdate_ICM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-searchcompanion-disablefileupdates" id="admx-icm-searchcompanion-disablefileupdates">ADMX_ICM/SearchCompanion_DisableFileUpdates</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnouseinternetopenwith-1" id="admx-icm-shellnouseinternetopenwith-1">ADMX_ICM/ShellNoUseInternetOpenWith_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnouseinternetopenwith-2" id="admx-icm-shellnouseinternetopenwith-2">ADMX_ICM/ShellNoUseInternetOpenWith_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnousestoreopenwith-1" id="admx-icm-shellnousestoreopenwith-1">ADMX_ICM/ShellNoUseStoreOpenWith_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellnousestoreopenwith-2" id="admx-icm-shellnousestoreopenwith-2">ADMX_ICM/ShellNoUseStoreOpenWith_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellpreventwpwdownload-1" id="admx-icm-shellpreventwpwdownload-1">ADMX_ICM/ShellPreventWPWDownload_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremoveorderprints-1" id="admx-icm-shellremoveorderprints-1">ADMX_ICM/ShellRemoveOrderPrints_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremoveorderprints-2" id="admx-icm-shellremoveorderprints-2">ADMX_ICM/ShellRemoveOrderPrints_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremovepublishtoweb-1" id="admx-icm-shellremovepublishtoweb-1">ADMX_ICM/ShellRemovePublishToWeb_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-shellremovepublishtoweb-2" id="admx-icm-shellremovepublishtoweb-2">ADMX_ICM/ShellRemovePublishToWeb_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-winmsg_noinstrumentation-1" id="admx-icm-winmsg_noinstrumentation-1">ADMX_ICM/WinMSG_NoInstrumentation_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-icm.md#admx-icm-winmsg_noinstrumentation-2" id="admx-icm-winmsg_noinstrumentation-2">ADMX_ICM/WinMSG_NoInstrumentation_2</a>
   </dd>
 </dl>
 

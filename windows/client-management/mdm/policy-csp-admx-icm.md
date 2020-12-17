@@ -1193,7 +1193,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-shellnouseinternetopenwith-1"></a>**ADMX_ICM/ShellNoUseInternetOpenWith_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1230,19 +1230,20 @@ ADMX Info:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows can access the Internet to accomplish tasks that require Internet resources.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether to use the Microsoft Web service for finding an application to open a file with an unhandled file association.
 
-If you enable this setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features cannot access the Internet.
+When a user opens a file that has an extension that is not associated with any applications on the computer, the user is given the choice to select a local application or use the Web service to find an application.
 
-If you disable this policy setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features can access the Internet.
+If you enable this policy setting, the link and the dialog for using the Web service to open an unhandled file association are removed.
 
-If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
+If you disable or do not configure this policy setting, the user is allowed to use the Web service.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1253,9 +1254,9 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
--   GP name: *InternetManagement_RestrictCommunication_2*
--   GP path: *System\Internet Communication Management*
+-   GP English name: *Turn off Internet File Association service*
+-   GP name: *ShellNoUseInternetOpenWith_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
@@ -1263,7 +1264,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-shellnouseinternetopenwith-2"></a>**ADMX_ICM/ShellNoUseInternetOpenWith_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1306,13 +1307,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows can access the Internet to accomplish tasks that require Internet resources.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether to use the Microsoft Web service for finding an application to open a file with an unhandled file association.
 
-If you enable this setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features cannot access the Internet.
+When a user opens a file that has an extension that is not associated with any applications on the computer, the user is given the choice to select a local application or use the Web service to find an application.
 
-If you disable this policy setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features can access the Internet.
+If you enable this policy setting, the link and the dialog for using the Web service to open an unhandled file association are removed.
 
-If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
+If you disable or do not configure this policy setting, the user is allowed to use the Web service.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1323,9 +1325,9 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
--   GP name: *InternetManagement_RestrictCommunication_2*
--   GP path: *System\Internet Communication Management*
+-   GP English name: *Turn off Internet File Association service*
+-   GP name: *ShellNoUseInternetOpenWith_2*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
@@ -1333,7 +1335,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-shellnousestoreopenwith-1"></a>**ADMX_ICM/ShellNoUseStoreOpenWith_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1370,19 +1372,20 @@ ADMX Info:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows can access the Internet to accomplish tasks that require Internet resources.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether to use the Store service for finding an application to open a file with an unhandled file type or protocol association.
 
-If you enable this setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features cannot access the Internet.
+When a user opens a file type or protocol that is not associated with any applications on the computer, the user is given the choice to select a local application or use the Store service to find an application.
 
-If you disable this policy setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features can access the Internet.
+If you enable this policy setting, the "Look for an app in the Store" item in the Open With dialog is removed.
 
-If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
+If you disable or do not configure this policy setting, the user is allowed to use the Store service and the Store item is available in the Open With dialog.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1393,9 +1396,9 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
--   GP name: *InternetManagement_RestrictCommunication_2*
--   GP path: *System\Internet Communication Management*
+-   GP English name: *Turn off access to the Store*
+-   GP name: *ShellNoUseStoreOpenWith_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
@@ -1403,7 +1406,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-shellnousestoreopenwith-2"></a>**ADMX_ICM/ShellNoUseStoreOpenWith_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1446,13 +1449,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows can access the Internet to accomplish tasks that require Internet resources.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether to use the Store service for finding an application to open a file with an unhandled file type or protocol association.
 
-If you enable this setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features cannot access the Internet.
+When a user opens a file type or protocol that is not associated with any applications on the computer, the user is given the choice to select a local application or use the Store service to find an application.
 
-If you disable this policy setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features can access the Internet.
+If you enable this policy setting, the "Look for an app in the Store" item in the Open With dialog is removed.
 
-If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
+If you disable or do not configure this policy setting, the user is allowed to use the Store service and the Store item is available in the Open With dialog.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1463,9 +1467,9 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
--   GP name: *InternetManagement_RestrictCommunication_2*
--   GP path: *System\Internet Communication Management*
+-   GP English name: *Turn off access to the Store*
+-   GP name: *ShellNoUseStoreOpenWith_2*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->
@@ -1473,7 +1477,147 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-shellpreventwpwdownload-1"></a>**ADMX_ICM/ShellPreventWPWDownload_1**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards.  These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
+
+If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+
+If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+
+See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
+-   GP name: *ShellPreventWPWDownload_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-shellremoveorderprints-1"></a>**ADMX_ICM/ShellRemoveOrderPrints_1**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the "Order Prints Online" task is available from Picture Tasks in Windows folders.
+
+The Order Prints Online Wizard is used to download a list of providers and allow users to order prints online.  If you enable this policy setting, the task "Order Prints Online" is removed from Picture Tasks in File Explorer folders.
+
+If you disable or do not configure this policy setting, the task is displayed.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the "Order Prints" picture task*
+-   GP name: *ShellRemoveOrderPrints_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-shellremoveorderprints-2"></a>**ADMX_ICM/ShellRemoveOrderPrints_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1516,13 +1660,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows can access the Internet to accomplish tasks that require Internet resources.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the "Order Prints Online" task is available from Picture Tasks in Windows folders.
 
-If you enable this setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features cannot access the Internet.
+The Order Prints Online Wizard is used to download a list of providers and allow users to order prints online.
 
-If you disable this policy setting, all of the the policy settings listed in the "Internet Communication settings" section are set such that their respective features can access the Internet.
+If you enable this policy setting, the task "Order Prints Online" is removed from Picture Tasks in File Explorer folders.
 
-If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
+If you disable or do not configure this policy setting, the task is displayed.
+
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -1533,9 +1678,297 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
--   GP name: *InternetManagement_RestrictCommunication_2*
--   GP path: *System\Internet Communication Management*
+-   GP English name: *Turn off the "Order Prints" picture task*
+-   GP name: *ShellRemoveOrderPrints_2*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-shellremovepublishtoweb-1"></a>**ADMX_ICM/ShellRemovePublishToWeb_1**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the tasks "Publish this file to the Web," "Publish this folder to the Web," and "Publish the selected items to the Web" are available from File and Folder Tasks in Windows folders.
+
+The Web Publishing Wizard is used to download a list of providers and allow users to publish content to the web.
+
+If you enable this policy setting, these tasks are removed from the File and Folder tasks in Windows folders. If you disable or do not configure this policy setting, the tasks are shown.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the "Publish to Web" task for files and folders*
+-   GP name: *ShellRemovePublishToWeb_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-shellremovepublishtoweb-2"></a>**ADMX_ICM/ShellRemovePublishToWeb_2**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the tasks "Publish this file to the Web," "Publish this folder to the Web," and "Publish the selected items to the Web" are available from File and Folder Tasks in Windows folders.
+
+The Web Publishing Wizard is used to download a list of providers and allow users to publish content to the web.
+
+If you enable this policy setting, these tasks are removed from the File and Folder tasks in Windows folders.
+
+If you disable or do not configure this policy setting, the tasks are shown.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the "Publish to Web" task for files and folders*
+-   GP name: *ShellRemovePublishToWeb_2*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-winmsg_noinstrumentation-1"></a>**ADMX_ICM/WinMSG_NoInstrumentation_1**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows Messenger collects anonymous information about how Windows Messenger software and service is used.
+
+With the Customer Experience Improvement program, users can allow Microsoft to collect anonymous information about how the product is used.
+
+This information is used to improve the product in future releases.
+
+If you enable this policy setting, Windows Messenger does not collect usage information, and the user settings to enable the collection of usage information are not shown.
+
+If you disable this policy setting, Windows Messenger collects anonymous usage information, and the setting is not shown.  If you do not configure this policy setting, users have the choice to opt in and allow information to be collected.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the Windows Messenger Customer Experience Improvement Program*
+-   GP name: *WinMSG_NoInstrumentation_1*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
+-   GP ADMX file name: *ICM.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-icm-winmsg_noinstrumentation-2"></a>**ADMX_ICM/WinMSG_NoInstrumentation_2**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Windows Messenger collects anonymous information about how Windows Messenger software and service is used.
+
+With the Customer Experience Improvement program, users can allow Microsoft to collect anonymous information about how the product is used.
+
+This information is used to improve the product in future releases.
+
+If you enable this policy setting, Windows Messenger does not collect usage information, and the user settings to enable the collection of usage information are not shown.
+
+If you disable this policy setting, Windows Messenger collects anonymous usage information, and the setting is not shown.
+
+If you do not configure this policy setting, users have the choice to opt in and allow information to be collected.
+
+<!--/Description-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP English name: *Turn off the Windows Messenger Customer Experience Improvement Program*
+-   GP name: *WinMSG_NoInstrumentation_2*
+-   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--/ADMXBacked-->

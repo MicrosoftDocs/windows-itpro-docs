@@ -209,6 +209,7 @@
 #### [ADMX_Globalization](policy-csp-admx-globalization.md)
 #### [ADMX_Help](policy-csp-admx-help.md)
 #### [ADMX_HelpAndSupport](policy-csp-admx-helpandsupport.md)
+#### [ADMX_ICM](policy-csp-admx-icm.md)
 #### [ADMX_kdc](policy-csp-admx-kdc.md)
 #### [ADMX_Kerberos](policy-csp-admx-kerberos.md)
 #### [ADMX_LanmanServer](policy-csp-admx-lanmanserver.md)
