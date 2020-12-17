@@ -188,13 +188,13 @@ You'll need to take the following steps:
                      <key>isDirectory</key>
                      <true/>
                      <key>path</key>
-                     <string>/home</string>
+                     <string>/testpath</string>
                  </dict>
                  <dict>
                      <key>$type</key>
                      <string>excludedFileExtension</string>
                      <key>extension</key>
-                     <string>pdf</string>
+                     <string>.abc</string>
                  </dict>
                  <dict>
                      <key>$type</key>
@@ -204,7 +204,7 @@ You'll need to take the following steps:
                  </dict>
              </array>
              <key>exclusionsMergePolicy</key>
-             <string>merge</string>
+             <string>admin</string>
              <key>allowedThreats</key>
              <array>
                  <string>EICAR-Test-File (not a virus)</string>
@@ -249,6 +249,7 @@ You'll need to take the following steps:
                      <key>key</key>
                      <string>GROUP</string>
                      <key>value</key>
+<!-- Make sure you remove this tag when you use the config file in production -->			 
                      <string>ExampleTag</string>
                  </dict>
              </array>
