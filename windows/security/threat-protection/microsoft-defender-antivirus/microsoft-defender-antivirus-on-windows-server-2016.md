@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/16/2020
-ms.reviewer: 
+ms.date: 12/17/2020
+ms.reviewer: pahuijbr
 manager: dansimp
 ---
 
@@ -173,11 +173,11 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 ## Need to uninstall Microsoft Defender Antivirus?
 
-If you are using a non-Microsoft antivirus product as your primary antivirus solution, you can either disable Microsoft Defender Antivirus, or set it to passive mode. 
+If you are using a non-Microsoft antivirus product as your primary antivirus solution, you can either disable Microsoft Defender Antivirus, or set it to passive mode, as described in the following procedures.
 
 ### Set Microsoft Defender Antivirus to passive mode
 
-If you are using Windows Server, version 1803 or Windows Server 2019, you can enable passive mode by setting this registry key:
+If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: `ForceDefenderPassiveMode`
 - Type: `REG_DWORD`

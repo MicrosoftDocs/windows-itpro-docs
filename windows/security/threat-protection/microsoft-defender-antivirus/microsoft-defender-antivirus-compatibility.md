@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 12/11/2020
+ms.date: 12/17/2020
 ---
 
 # Microsoft Defender Antivirus compatibility
@@ -51,11 +51,11 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 
 If you are using Windows Server, version 1803 or Windows Server 2019, you set Microsoft Defender Antivirus to passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Name: ForceDefenderPassiveMode
-- Type: REG_DWORD
-- Value: 1
+- Name: `ForceDefenderPassiveMode`
+- Type: `REG_DWORD`
+- Value: `1`
 
-See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
+See [Microsoft Defender Antivirus on Windows Server 2019 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server-2016.md) for key differences and management options for Windows Server installations.
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus is only available on endpoints running Windows 10, Windows Server 2016, and Windows Server 2019.
