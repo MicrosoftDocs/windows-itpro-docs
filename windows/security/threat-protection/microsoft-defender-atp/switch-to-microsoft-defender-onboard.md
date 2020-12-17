@@ -25,7 +25,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 # Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
 
-|[![Phase 1: Prepare](images/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](images/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard](images/onboard.png)<br/>Phase 3: Onboard |
+|[![Phase 1: Prepare](/windows/media/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |[![Phase 2: Set up](/windows/media/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) |![Phase 3: Onboard](/windows/media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
