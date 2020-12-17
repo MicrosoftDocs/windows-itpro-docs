@@ -34,9 +34,10 @@ This guide helps you work across stakeholders to prepare your environment and th
 
 Each section corresponds to a separate article in this solution.
 
-![Image of deployment phases](images/deployment-guide-phases.png)
+![Image of deployment phases with details from table](images/deployment-guide-phases.png)
 
 
+![Summary of deployment phases: prepare, setup, onboard](/windows/media/phase-diagrams/deployment-phases.png)
 
 |Phase | Description | 
 |:-------|:-----|
