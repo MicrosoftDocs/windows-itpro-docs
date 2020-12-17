@@ -15,29 +15,27 @@ ms.collection:
 ms.topic: troubleshooting
 ---
 
-# Firewall settings lost on upgrade
+# Troubleshooting Windows Firewall settings that are missing after an upgrade
 
-This article describes a scenario where previously enabled firewall rules revert to a disabled state after performing a Windows upgrade.
+This article describes a scenario where previously enabled firewall rules revert to disabled after upgrading to a new version of Windows.
 
 ## Rule groups
 
-For organizational purposes, individual built-in firewall rules are categorized within a group. For example, the following rules form part of the Remote Desktop group.
+To help you organize your list, individual built-in firewall rules are categorized within a group. For example, the following rules form part of the Remote Desktop group.
 
 - Remote Desktop – Shadow (TCP-In)
-
 - Remote Desktop – User Mode (TCP-In)
-
 - Remote Desktop – User-Mode (UDP-In)
 
-Other group examples include core networking, file and print sharing, and network discovery. Grouping allows admins to manage sets of similar rules by filtering on categories in the firewall interface (wf.msc). This is achieved by right-clicking on either **Inbound** or **Outbound Rules** and selecting **Filter by Group**; or via PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
+Other group examples include **core networking**, **file and print sharing**, and **network discovery**. Grouping allows admins to manage sets of similar rules by filtering on categories in the firewall interface (wf.msc). Do this by right-clicking on either **Inbound** or **Outbound Rules** and selecting **Filter by Group**. Optionally, you can use PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
 
 ```Powershell
 Get-NetFirewallRule -Group <groupName>
 ```
 
 > [!NOTE] 
-> It is recommended to enable an entire group instead of individual rules if the expectation is that the ruleset is going to be migrated at some point.
+> We recommend to enable or disable an entire group instead of individual rules.
 
-To avoid unexpected behaviors, it is recommended to enable/disable all of the rules within a group as opposed to just one or two of the individual rules. This is because while groups are used to organize rules and allow batch rule modification by type, they also represent the 'unit' by which rule state is maintained across a Windows upgrade. Rule groups, as opposed to individual rules, are the unit by which the update process determines what should be enabled/disabled when the upgrade is complete.
+We recommended that you enable/disable all of the rules within a group instead of one or two individual rules. This is because groups are not only used to organize rules and allow batch rule modification by type, but they also represent a 'unit' by which rule state is maintained across a Windows upgrade. Rule groups, as opposed to individual rules, are the unit by which the update process determines what should be enabled/disabled when the upgrade is complete.
 
-Take the Remote Desktop group example shown above. It consists of three rules. To ensure that the rule set is properly migrated during an upgrade, all three rules must be enabled. If for example only one rule is enabled, the upgrade process will see that two of three rules are disabled and subsequently disable the entire group in an effort to maintain what it sees as the most pristine out-of-the-box configuration possible. Obviously, this scenario brings with it the unintended consequence of breaking Remote Desktop Protocol (RDP) connectivity to the host.
+For example, using the Remote Desktop group consists of three rules. To ensure that the rule set is properly migrated during an upgrade, all three rules must be enabled. If only one rule is enabled, the upgrade process will see that two of three rules are disabled and subsequently disable the entire group in an effort to maintain a clean out-of-the-box configuration. This scenario brings with it the unintended consequence of breaking Remote Desktop Protocol (RDP) connectivity to the host.
