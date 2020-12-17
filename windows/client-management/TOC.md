@@ -1,5 +1,6 @@
 # [Manage clients in Windows 10](index.md)
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
+### [Use Quick Assist to help users](quick-assist.md)
 ## [Create mandatory user profiles](mandatory-user-profile.md)
 ## [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
