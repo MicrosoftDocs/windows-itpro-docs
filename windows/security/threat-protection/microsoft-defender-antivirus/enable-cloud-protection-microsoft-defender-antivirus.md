@@ -56,7 +56,7 @@ For more information about the specific network-connectivity requirements to ens
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
 
-## Use Microsoft Endpoint Configuration  Manager to turn on cloud-delivered protection
+## Use Microsoft Endpoint Manager to turn on cloud-delivered protection
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.
