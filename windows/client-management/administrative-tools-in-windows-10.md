@@ -15,8 +15,28 @@ ms.topic: article
 ---
 
 # Administrative Tools in Windows 10
-
-
+```
+./Device/Vendor/MSFT
+BitLocker
+----RequireStorageCardEncryption
+----RequireDeviceEncryption
+----EncryptionMethodByDriveType
+----SystemDrivesRequireStartupAuthentication
+----SystemDrivesMinimumPINLength
+----SystemDrivesRecoveryMessage
+----SystemDrivesRecoveryOptions
+----FixedDrivesRecoveryOptions
+----FixedDrivesRequireEncryption
+----RemovableDrivesRequireEncryption
+----AllowWarningForOtherDiskEncryption
+----AllowStandardUserEncryption (Added in Windows 10 version 1809)
+----ConfigureRecoveryPasswordRotation (Added in Windows 10 version 1909)
+----RotateRecoveryPasswords (Added in Windows 10 version 1909)
+----Status (Added in Windows 10 version 1903)
+--------DeviceEncryptionStatus (Added in Windows 10 version 1903)
+--------RotateRecoveryPasswordsStatus (Added in Windows 10 version 1909)
+--------RotateRecoveryPasswordsRequestID (Added in Windows 10 version 1909)
+```
 **Applies to**
 
 -   Windows 10
