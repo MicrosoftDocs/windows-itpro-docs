@@ -47,9 +47,9 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 | Windows Server 2016 or 2019 |                         Microsoft Defender Antivirus                         |                       Yes                       |            Active mode            |
 | Windows Server 2016 or 2019 |                         Microsoft Defender Antivirus                         |                       No                        |            Active mode            |
 
-(<a id="fn1">1</a>)  On Windows Server 2016 or 2019, Microsoft Defender Antivirus will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [consider uninstalling Microsoft Defender Antivirus on Windows Server 2016 or 2019](microsoft-defender-antivirus-on-windows-server-2016.md#need-to-uninstall-microsoft-defender-antivirus) to prevent problems caused by having multiple antivirus products installed on a machine.
+(<a id="fn1">1</a>)  On Windows Server 2019 or 2016, Microsoft Defender Antivirus does not enter passive or disabled mode automatically when you install non-Microsoft antivirus product. In those cases, [disable Microsoft Defender Antivirus, or set it to passive mode](microsoft-defender-antivirus-on-windows-server-2016.md#need-to-uninstall-microsoft-defender-antivirus) to prevent problems caused by having multiple antivirus products installed on a server.
 
-If you are using Windows Server, version 1803 or Windows Server 2019, you can enable passive mode by setting this registry key:
+If you are using Windows Server, version 1803 or Windows Server 2019, you set Microsoft Defender Antivirus to passive mode by setting this registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: ForceDefenderPassiveMode
 - Type: REG_DWORD

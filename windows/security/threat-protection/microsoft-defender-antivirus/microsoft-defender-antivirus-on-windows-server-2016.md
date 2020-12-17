@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus on Windows Server 2016 and 2019
+title: Microsoft Defender Antivirus on Windows Server 2019 and 2016
 description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
@@ -173,17 +173,17 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 ## Need to uninstall Microsoft Defender Antivirus?
 
-If you are using a third-party antivirus solution and you're running into issues with that solution and Microsoft Defender Antivirus, you can consider uninstalling Microsoft Defender Antivirus. Before you do that, review the following resources:
+If you are using a non-Microsoft antivirus product as your primary antivirus solution, you can either disable Microsoft Defender Antivirus, or set it to passive mode. 
 
-- See the question *Should I run Microsoft security software at the same time as other security products?* in the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
+### Set Microsoft Defender Antivirus to passive mode
 
-- See [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you are using Windows Server, version 1803 or Windows Server 2019, you can enable passive mode by setting this registry key:
+- Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+- Name: `ForceDefenderPassiveMode`
+- Type: `REG_DWORD`
+- Value: `1`
 
-- See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Defender for Endpoint.
-
-If you determine you do want to uninstall Microsoft Defender Antivirus, follow the steps in the following sections.
-
-### Uninstall Microsoft Defender Antivirus using the Remove Roles and Features wizard
+### Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard
 
 1. See [Install or Uninstall Roles, Role Services, or Features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. 
 
@@ -193,7 +193,7 @@ If you determine you do want to uninstall Microsoft Defender Antivirus, follow t
     
     Microsoft Defender Antivirus will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
 
-### Uninstall Microsoft Defender Antivirus using PowerShell
+### Disable Microsoft Defender Antivirus using PowerShell
 
 >[!NOTE]
 >You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
@@ -204,7 +204,7 @@ The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windo
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
-### Turn off the GUI using PowerShell
+### Turn off the Microsoft Defender Antivirus user interface using PowerShell
 
 To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell cmdlet:
 
