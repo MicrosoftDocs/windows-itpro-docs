@@ -45,9 +45,9 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 1. Both the helper and the sharer start Quick Assist.
 
-2. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. The helper then provides the code to the sharer.
+2. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established and the helpers Quick Assist instance joins it. The helper then provides the code to the sharer.
 
-3. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session.
+3. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session. The sharer's Quick Assist instance joins the RCC chat session.
 
 4. The helper is prompted to select **View Only** or **Full Control**.
 
@@ -57,7 +57,7 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 7. RDP shares the video to the helper over https (port 443) through RDP relay services to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
 
-<img src="C:\Users\jaimeo\windows-docs-pr\windows\client-management\media\image1.png" style="width:6.49375in;height:3.07153in" alt="Diagram Description automatically generated" />
+:::image type="content" source="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established":::
 
 ### Data and privacy
 
@@ -118,4 +118,4 @@ If for some reason a user doesn't have Quick Assist on their system or it's not 
 
 ## Next steps
 
-If you have any problems, questions, or suggestions for Quick Assist, contact us by using feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md
+If you have any problems, questions, or suggestions for Quick Assist, contact us by using the [Feedback Hub app](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0&rtc=1#activetab=pivot:overviewtab).
