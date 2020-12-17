@@ -264,6 +264,7 @@
 #### [ADMX_WindowsExplorer](policy-csp-admx-windowsexplorer.md)
 #### [ADMX_WindowsMediaDRM](policy-csp-admx-windowsmediadrm.md)
 #### [ADMX_WindowsMediaPlayer](policy-csp-admx-windowsmediaplayer.md)
+#### [ADMX_WindowsRemoteManagement](policy-csp-admx-windowsremotemanagement.md)
 #### [ADMX_WindowsStore](policy-csp-admx-windowsstore.md)
 #### [ADMX_WinInit](policy-csp-admx-wininit.md)
 #### [ADMX_WinLogon](policy-csp-admx-winlogon.md)

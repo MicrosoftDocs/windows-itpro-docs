@@ -4170,6 +4170,17 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_WindowsRemoteManagement policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-1" id="admx-windowsremotemanagement-disallowkerberos-1">ADMX_WindowsRemoteManagement/DisallowKerberos_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-2" id="admx-windowsremotemanagement-disallowkerberos-2">ADMX_WindowsRemoteManagement/DisallowKerberos_2</a>
+  </dd>
+</dl>
+
 ### ADMX_WindowsStore policies  
 
 <dl>

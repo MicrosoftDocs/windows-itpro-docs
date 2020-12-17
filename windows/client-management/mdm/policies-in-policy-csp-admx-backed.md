@@ -1208,6 +1208,8 @@ ms.date: 10/08/2020
 - [ADMX_WindowsMediaPlayer/PreventWMPDeskTopShortcut](./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-preventwmpdesktopshortcut)
 - [ADMX_WindowsMediaPlayer/SkinLockDown](./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-skinlockdown)
 - [ADMX_WindowsMediaPlayer/WindowsStreamingMediaProtocols](./policy-csp-admx-windowsmediaplayer.md#admx-windowsmediaplayer-windowsstreamingmediaprotocols)
+- [ADMX_WindowsRemoteManagement/DisallowKerberos_1](./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-1)
+- [ADMX_WindowsRemoteManagement/DisallowKerberos_2](./policy-csp-admx-windowsremotemanagement.md#admx-windowsremotemanagement-disallowkerberos-2)
 - [ADMX_WindowsStore/DisableAutoDownloadWin8](./policy-csp-admx-windowsstore.md#admx-windowsstore-disableautodownloadwin8)
 - [ADMX_WindowsStore/DisableOSUpgrade_1](./policy-csp-admx-windowsstore.md#admx-windowsstore-disableosupgrade-1)
 - [ADMX_WindowsStore/DisableOSUpgrade_2](./policy-csp-admx-windowsstore.md#admx-windowsstore-disableosupgrade-2)
