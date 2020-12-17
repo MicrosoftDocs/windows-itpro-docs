@@ -21,9 +21,9 @@ ms.date: 11/17/2020
 
 One of the security challenges that network admins face is configuring a machine properly after a network change. 
 
-Network changes can happen frequently. Additionally, the operations required to re-categorize the network after a change and apply the correct security policies on a machine are non-trivial and may require considerable CPU time. This is especially true for machines that are part of the domain. In the past, the delay in applying security policies during network re-categorization has been successfully exploited for vulnerabilities.
+Network changes can happen frequently. Additionally, the operations required to recategorize the network after a change and apply the correct security policies on a machine are non-trivial and may require considerable CPU time. This is especially true for machines that are part of the domain. In the past, the delay in applying security policies during network recategorization has been successfully exploited for vulnerabilities.
 
-To counter this potential exploitation, Windows Firewall will quarantine an interface until the system has successfully re-categorized the network and Windows Filtering Platform (WFP) has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
+To counter this potential exploitation, Windows Firewall will quarantine an interface until the system has successfully recategorized the network and Windows Filtering Platform (WFP) has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
 
 While the quarantine feature has long been a part of Windows Firewall, the feature behavior has often caused confusion for customers unaware of quarantine and its motivations.
 
@@ -31,7 +31,7 @@ Ultimately, the goal of this document is to describe the quarantine feature at a
 
 ## Quarantine filters
 
-The quarantine feature creates filters which can be split into three categories:
+The quarantine feature creates filters that can be split into three categories:
 
 - Quarantine default inbound block filter
 - Quarantine default exception filters
@@ -62,7 +62,7 @@ When the interface is in quarantine state, the quarantine default exception filt
 
 ### Interface un-quarantine filter
 
-The interface un-quarantine filters allows all non-loopback packets if the interface is successfully categorized.
+The interface un-quarantine filters allow all non-loopback packets if the interface is successfully categorized.
 
 ## Quarantine flow
 
@@ -94,7 +94,7 @@ Netsh wfp cap stop
 
 These commands generate a wfpdiag.cab. Inside the .cab exists a wfpdiag.xml, which contains drop `netEvents` and filters that existed during that reproduction.
 
-Inside the wfpdiag.xml, search for `netEvents` which have `FWPM_NET_EVENT_TYPE_CLASSIFY_DROP` as the `netEvent` type. To find the relevant drop events, search for the drop events with matching destination IP address, package SID, or application ID name. 
+Inside the wfpdiag.xml, search for `netEvents` that have `FWPM_NET_EVENT_TYPE_CLASSIFY_DROP` as the `netEvent` type. To find the relevant drop events, search for the drop events with matching destination IP address, package SID, or application ID name. 
 
 The characters in the application ID name will be separated by periods:
 
