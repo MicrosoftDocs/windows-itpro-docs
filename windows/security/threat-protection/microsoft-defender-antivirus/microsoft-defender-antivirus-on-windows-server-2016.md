@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/16/2020
-ms.reviewer: 
+ms.date: 12/17/2020
+ms.reviewer: pahuijbr
 manager: dansimp
 ---
 
-# Microsoft Defender Antivirus on Windows Server 2019 and Windows Server 2016
+# Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -23,9 +23,9 @@ manager: dansimp
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Microsoft Defender Antivirus is available on Windows Server 2019 and Windows Server 2016. In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same.
+Microsoft Defender Antivirus is available on Windows Server 2016 and 2019. In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same.
 
-While the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server 2019 and Windows Server 2016:
+While the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server 2016 and 2019:
 
 - In Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 - In Windows Server, Microsoft Defender Antivirus does not automatically disable itself if you are running another antivirus product.
@@ -34,9 +34,9 @@ While the functionality, configuration, and management are largely the same for 
 
 The process of setting up and running Microsoft Defender Antivirus on a server platform includes several steps:
 
-1. [Enable the interface](#enable-the-user-interface-on-windows-server-2019-or-windows-server-2016)
+1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
 
-2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2019-or-windows-server-2016)
+2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019)
 
 2. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running)
 
@@ -48,9 +48,9 @@ The process of setting up and running Microsoft Defender Antivirus on a server p
 
 6. (Only if necessary) [Uninstall Microsoft Defender Antivirus](#need-to-uninstall-microsoft-defender-antivirus)
 
-## Enable the user interface on Windows Server 2019 or Windows Server 2016
+## Enable the user interface on Windows Server 2016 or 2019
 
-By default, Microsoft Defender Antivirus is installed and functional on Windows Server 2019 and Windows Server 2016. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Microsoft Defender Antivirus. And if the GUI is not installed on your server, you can add it by using the Add Roles and Features Wizard or by using PowerShell.
+By default, Microsoft Defender Antivirus is installed and functional on Windows Server 2016 and 2019. The user interface (GUI) is installed by default on some SKUs, but is not required because you can use PowerShell or other methods to manage Microsoft Defender Antivirus. And if the GUI is not installed on your server, you can add it by using the Add Roles and Features Wizard or by using PowerShell.
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -72,7 +72,7 @@ The following PowerShell cmdlet will enable the interface:
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-## Install Microsoft Defender Antivirus on Windows Server 2019 or Windows Server 2016
+## Install Microsoft Defender Antivirus on Windows Server 2016 or 2019
 
 You can use either the **Add Roles and Features Wizard** or PowerShell to install Microsoft Defender Antivirus.
 
@@ -173,17 +173,17 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 ## Need to uninstall Microsoft Defender Antivirus?
 
-If you are using a third-party antivirus solution and you're running into issues with that solution and Microsoft Defender Antivirus, you can consider uninstalling Microsoft Defender Antivirus. Before you do that, review the following resources:
+If you are using a non-Microsoft antivirus product as your primary antivirus solution, you can either disable Microsoft Defender Antivirus, or set it to passive mode, as described in the following procedures. 
 
-- See the question *Should I run Microsoft security software at the same time as other security products?* in the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
+### Set Microsoft Defender Antivirus to passive mode
 
-- See [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
+- Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+- Name: `ForceDefenderPassiveMode`
+- Type: `REG_DWORD`
+- Value: `1`
 
-- See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus). This article describes 10 advantages to using Microsoft Defender Antivirus together with Defender for Endpoint.
-
-If you determine you do want to uninstall Microsoft Defender Antivirus, follow the steps in the following sections.
-
-### Uninstall Microsoft Defender Antivirus using the Remove Roles and Features wizard
+### Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard
 
 1. See [Install or Uninstall Roles, Role Services, or Features](https://docs.microsoft.com/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. 
 
@@ -193,18 +193,18 @@ If you determine you do want to uninstall Microsoft Defender Antivirus, follow t
     
     Microsoft Defender Antivirus will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
 
-### Uninstall Microsoft Defender Antivirus using PowerShell
+### Disable Microsoft Defender Antivirus using PowerShell
 
 >[!NOTE]
 >You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
 
-The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windows Server 2019 or Windows Server 2016:
+The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windows Server 2016 or 2019:
 
 ```PowerShell
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
-### Turn off the GUI using PowerShell
+### Turn off the Microsoft Defender Antivirus user interface using PowerShell
 
 To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell cmdlet:
 
