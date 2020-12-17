@@ -156,6 +156,12 @@ You can create your own web browser Windows app by using the WebView class. Lear
 
 Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
 
+## Customize your breakout sequence
+
+Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common windows keyboard shortcut. It is recommended that this is set to a non-standard windows shortcut to prevent disruptions in the kiosk experience.
+
+The Breakout Sequence can only be customized at the provision time of the kiosk. There is also no GUI for specifying this currently, so it would need to be specified in a provision method like MDM or WMI which allow the user to specify the configuration in an XML format.
+
 ## App configuration
 
 Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 

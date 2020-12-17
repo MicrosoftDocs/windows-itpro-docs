@@ -254,6 +254,29 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 ```
 
+## Microsoft Edge Kiosk XML Sample
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+        v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.youtube.com"/>
+        <v4:BreakoutSequence Key="Shift+Win"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
 ## [Preview] Global Profile Sample XML
 Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
 
@@ -635,12 +658,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 
 ## XSD for AssignedAccess configuration XML
 
->[!NOTE]
->Updated for Windows 10, version 1903 and Windows 10 Insider Preview (19H2, 20H1 builds).
-Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
-
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -648,11 +666,13 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
@@ -662,7 +682,13 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 
     <xs:complexType name="kioskmodeapp_t">
         <xs:attribute name="AppUserModelId" type="xs:string"/>
+        <xs:attributeGroup ref="ClassicApp_attributeGroup"/>
     </xs:complexType>
+
+    <xs:attributeGroup name="ClassicApp_attributeGroup">
+        <xs:attribute ref="v4:ClassicAppPath"/>
+        <xs:attribute ref="v4:ClassicAppArguments" use="optional"/>
+    </xs:attributeGroup>
 
     <xs:complexType name="profile_t">
         <xs:choice>
@@ -672,7 +698,19 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
                 <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
             </xs:sequence>
-            <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1"/>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
+                    <xs:key name="mutualExclusionAumidOrClassicAppPath">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppPath"/>
+                    </xs:key>
+                    <xs:unique name="mutualExclusionAumidOrClassicAppArgumentsOptional">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppArguments"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element ref="v4:BreakoutSequence" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
         </xs:choice>
         <xs:attribute name="Id" type="guid_t" use="required"/>
         <xs:attribute name="Name" type="xs:string" use="optional"/>
@@ -773,6 +811,7 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
     <xs:simpleType name="specialGroupType_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Visitor"/>
+            <xs:enumeration value="DeviceOwner"/>
         </xs:restriction>
     </xs:simpleType>
 
