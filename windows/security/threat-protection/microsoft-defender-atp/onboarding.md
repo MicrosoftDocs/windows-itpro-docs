@@ -19,15 +19,15 @@ ms.collection:
 ms.topic: article
 ---
 
-# Onboard to the Microsoft Defender ATP service
+# Onboard to the Microsoft Defender for Endpoint service
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-Deploying Microsoft Defender ATP is a three-phase process:
+Deploying Defender for Endpoint is a three-phase process:
 
 | [![deployment phase - prepare](/windows/media/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | [![deployment phase - setup](/windows/media/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | ![deployment phase - onboard](/windows/media/phase-diagrams/onboard.png)<br>Phase 3: Onboard |
 | ----- | ----- | ----- |
@@ -35,13 +35,13 @@ Deploying Microsoft Defender ATP is a three-phase process:
 
 You are currently in the onboarding phase.
 
-These are the steps you need to take to deploy Microsoft Defender ATP:
+These are the steps you need to take to deploy Defender for Endpoint:
 
 - Step 1: Onboard endpoints to the service 
 - Step 2: Configure capabilities 
 
 ## Step 1: Onboard endpoints using any of the supported management tools
-The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Microsoft Defender ATP.  
+The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
 After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
 
@@ -69,7 +69,7 @@ The tools in the example deployments are:
 - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
-Using the mentioned deployment tools above, you'll then be guided in configuring the following Microsoft Defender ATP capabilities:
+Using the mentioned deployment tools above, you'll then be guided in configuring the following Defender for Endpoint capabilities:
 - Endpoint detection and response configuration
 - Next-generation protection configuration
 - Attack surface reduction configuration

@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# View and organize the Microsoft Defender ATP Devices list
+# View and organize the Microsoft Defender for Endpoint Devices list
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days.  
 
@@ -61,7 +61,7 @@ The exposure level reflects the current exposure of the device based on the cumu
 If the exposure level says "No data available," there are a few reasons why this may be the case:
 
 - Device stopped reporting for more than 30 days – in that case it is considered inactive, and the exposure isn't computed
-- Device OS not supported - see [minimum requirements for Microsoft Defender ATP](minimum-requirements.md)
+- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)
 - Device with stale agent (very unlikely)
 
 ### OS Platform
@@ -106,4 +106,4 @@ Filter the list based on the grouping and tagging that you've added to individua
 
 ## Related topics
 
-- [Investigate devices in the Microsoft Defender ATP Devices list](investigate-machines.md)
+- [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)

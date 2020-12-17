@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate 
 ms.topic: article
-ms.date: 09/24/2020
+ms.date: 11/30/2020
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -67,6 +67,12 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 2. Run the following PowerShell cmdlets: <br/>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
+
+> [!NOTE]
+> When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+> Example:<br/>
+> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`

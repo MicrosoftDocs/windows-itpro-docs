@@ -50,6 +50,11 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 - Windows Server 2016, version 1803 or later
 - Windows Server 2019
 
+>[!NOTE]
+>For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
+
+
+
 ### Onboard devices using System Center Configuration Manager
 
 

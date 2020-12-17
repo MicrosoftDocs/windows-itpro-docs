@@ -24,10 +24,10 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Your exposure score is visible in the [Threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft Defender Security Center. It reflects how vulnerable your organization is to cybersecurity threats. Low exposure score means your devices are less vulnerable from exploitation.
 
@@ -48,46 +48,6 @@ The exposure score is broken down into the following levels:
 - 70–100: high exposure score
 
 You can remediate the issues based on prioritized [security recommendations](tvm-security-recommendation.md) to reduce the exposure score. Each software has weaknesses that are transformed into recommendations and prioritized based on risk to the organization.
-
-## How the score is calculated
-
-The exposure score is continuously calculated on each device in the organization. It is scored & evaluated based on the following categories:
-
-- **Threats** - external and internal threats such as public exploit code and security alerts
-- **Likelihood** - likelihood of the device to get breached given its current security posture
-- **Value** - value of the device to the organization given its role and content
-
-**Device exposure score** = (Threats + Likelihood) x Value
-
-**Organization exposure score** = Avg (All device exposure scores) taking into account organization value multipliers
-
-### Threats
-
-Points are added based on whether the device has any vulnerabilities or misconfigurations, determined by the Common Vulnerability Scoring System (CVSS) base score.
-
-Further points are added based on:
-
-- Exploits availability and whether the exploit is verified or ranked
-- A threat campaign is linked to the vulnerability or misconfiguration
-
-### Likelihood
-
-Points are added based on whether any of the following factors are true:
-
-- The device is internet facing
-- Specific compensating controls are misconfigured
-- An exploit attempt is linked directly to a threat spotted in the organization
-
-### Value
-
-Points are added based on whether any of the following factors are true for a device:
-
-- Contains high business impact (HBI) data
-- Marked as a High Value Asset (HVA) or serves as an important server role (e.g. AD, DNS)
-- Runs a business critical app (BCA)
-- Used by a marked high value user (HVU) (e.g. domain admin, CEO)
-
-If a device is valuable to your organization, it should increase the total organization exposure score.
 
 ## Reduce your threat and vulnerability exposure
 
