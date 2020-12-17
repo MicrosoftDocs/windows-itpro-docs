@@ -160,7 +160,7 @@ Avoid selecting Windows apps that may expose the information you don’t want to
 
 Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common windows keyboard shortcut. It is recommended that this is set to a non-standard windows shortcut to prevent disruptions in the kiosk experience.
 
-The Breakout Sequence can only be customized at the provision time of the kiosk. There is also no GUI for specifying this currently, so it would need to be specified in a provision method like MDM or WMI which allow the user to specify the configuration in an XML format.
+There is currently no GUI for customizing the breakout sequence, so it would need to be specified in a provision method where an XML format is used like MDM.
 
 ## App configuration
 
