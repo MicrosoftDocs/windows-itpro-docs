@@ -1358,7 +1358,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
+-  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
 
