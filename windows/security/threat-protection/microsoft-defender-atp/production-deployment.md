@@ -31,28 +31,9 @@ ms.topic: article
 
 Deploying Defender for Endpoint is a three-phase process:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="images/prepare.png" alt="Prepare to deploy Microsoft Defender for Endpoint" title="Prepare" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender for Endpoint service" title="Setup" />
-      <br/>Phase 2: Set up </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Onboard image" title="Onboard" />
-      <br/>Phase 3: Onboard </a><br>
-</td>
-
-
-  </tr>
-</table>
+| [![deployment phase - prepare](/windows/media/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](/windows/media/phase-diagrams/setup.png)<br>Phase 2: Setup | [![deployment phase - onboard](/windows/media/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
+| ----- | ----- | ----- |
+| | *You are here!*||
 
 You are currently in the set-up phase.
 
