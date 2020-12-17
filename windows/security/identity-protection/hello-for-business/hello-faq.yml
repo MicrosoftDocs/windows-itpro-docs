@@ -19,8 +19,7 @@ metadata:
     
 title: Windows Hello for Business Frequently Asked Questions
 summary: |
-  **Applies to**
-  - Windows 10
+  Applies to: Windows 10
   
 
 sections:
@@ -64,7 +63,7 @@ sections:
         answer: |
           No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed. The product group is aware of this and is investigating this topic further.
 
-      - question: Why does authentication fail immediately after provisioning Hybrid Key Trust?
+      - question: Why does authentication fail immediately after provisioning hybrid key trust?
         answer: |
           In a hybrid deployment, a user's public key must sync from Azure AD to AD before it can be used to authenticate against a domain controller. This sync is handled by Azure AD Connect and will occur during a normal sync cycle.
 
@@ -82,7 +81,7 @@ sections:
           
       - question: What happens when a user forgets their PIN?
         answer: |
-          If the user can sign-in with a password, they can reset their PIN by selecting the "I forgot my PIN" link under Settings. Beginning with Windows 10 1709, users can reset their PIN above the lock screen by selecting the "I forgot my PIN" link on the PIN credential provider.
+          If the user can sign-in with a password, they can reset their PIN by selecting the "I forgot my PIN" link in Settings. Beginning with Windows 10 1709, users can reset their PIN above the lock screen by selecting the "I forgot my PIN" link on the PIN credential provider.
           
           [Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
           
@@ -102,7 +101,7 @@ sections:
           - enrollment.manage.microsoft.com
           - portal.manage.microsoft.com
           
-      - question: What is the difference between non-destructive and destructive PIN reset?
+      - question: What's the difference between non-destructive and destructive PIN reset?
         answer: |
           Windows Hello for Business has two types of PIN reset: non-destructive and destructive. Organizations running Windows 10 Enterprise and Azure Active Directory can take advantage of the Microsoft PIN Reset service. Once onboarded to a tenant and deployed to computers, users who have forgotten their PINs can authenticate to Azure, provide a second factor of authentication, and reset their PIN without re-provisioning a new Windows Hello for Business enrollment. This is a non-destructive PIN reset because the user doesn't delete the current credential and obtain a new one. For more information, see [PIN Reset](hello-feature-pin-reset.md).
           
@@ -193,9 +192,9 @@ sections:
         answer: |
           Yes, if you're using federated hybrid deployment, you can use any third-party that provides an Active Directory Federation Services (AD FS) multi-factor authentication adapter. A list of third-party MFA adapters can be found [here](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
           
-      - question: Does Windows Hello for Business work with third party federation servers?
+      - question: Does Windows Hello for Business work with third-party federation servers?
         answer: |
-          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
+          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).<br><br>
           
           | Protocol | Description |
           | :---: | :--- |
