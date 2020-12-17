@@ -37,7 +37,11 @@ This article describes how to customize the following settings of the controlled
 
 ## Protect additional folders
 
-Controlled folder access applies to a number of system folders and default locations, such as Documents, Pictures, Movies, and Desktop. You can add additional folders to be protected, but you can't remove the default folders in the default list.
+
+Controlled folder access applies to a number of system folders and default locations, including folders such as Documents, Pictures, and Movies.
+
+You can add additional folders to be protected, but you cannot remove the default folders in the default list.
+
 
 Adding other folders to controlled folder access can be useful. Some use-cases include if you don't store files in the default Windows libraries, or you've changed the location of the libraries away from the defaults.
 
@@ -49,11 +53,17 @@ You can use the Windows Security app or Group Policy to add and remove additiona
 
 1. Open the Windows Security app by selecting the shield icon in the task bar or searching the start menu for **Defender**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then select **Ransomware protection**.
 
-3. Under the **Controlled folder access** section, select **Protected folders**.
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then scroll down to the **Ransomware protection** section.
 
-4. Select **Add a protected folder** and follow the prompts to add apps.
+3. Click the **Manage ransomware protection** link to open the **Ransomware protection** pane.
+
+4. Under the **Controlled folder access** section, click the **Protected folders** link.
+
+5. Click **Yes** on the **User Access Control** prompt. The **Protected folders** pane displays.
+
+4. Click **Add a protected folder** and follow the prompts to add folders.
+
 
 ### Use Group Policy to protect additional folders
 
