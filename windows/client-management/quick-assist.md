@@ -45,7 +45,7 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 1. Both the helper and the sharer start Quick Assist.
 
-2. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established and the helpers Quick Assist instance joins it. The helper then provides the code to the sharer.
+2. The helper selects **Assist another person**. Quick Assist on the helper's side contacts the Remote Assistance Service to obtain a session code. An RCC chat session is established and the helper's Quick Assist instance joins it. The helper then provides the code to the sharer.
 
 3. After the sharer enters the code in their Quick Assist app, Quick Assist uses that code to contact the Remote Assistance Service and join that specific session. The sharer's Quick Assist instance joins the RCC chat session.
 
@@ -53,9 +53,9 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 5. The sharer is prompted to confirm allowing the helper to share their desktop with the helper.
 
-6. Quick Assist starts RDP control and connects to RDP relay services.
+6. Quick Assist starts RDP control and connects to the RDP Relay service.
 
-7. RDP shares the video to the helper over https (port 443) through RDP relay services to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
+7. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
 
 :::image type="content" source="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established":::
 
