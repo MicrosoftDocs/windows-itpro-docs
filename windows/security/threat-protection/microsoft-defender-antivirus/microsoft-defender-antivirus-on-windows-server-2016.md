@@ -25,7 +25,7 @@ manager: dansimp
 
 Microsoft Defender Antivirus is available on Windows Server 2016 and 2019. In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same.
 
-While the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server 2019 and Windows Server 2016:
+While the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server 2016 and 2019:
 
 - In Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 - In Windows Server, Microsoft Defender Antivirus does not automatically disable itself if you are running another antivirus product.
