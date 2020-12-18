@@ -207,7 +207,7 @@ The following list details the justifications behind the exception options:
 
 ### View and cancel exceptions
 
-Navigate to the **[Exceptions](tvm-exception)** tab in the **Remediation** page.
+Navigate to the **[Exceptions](tvm-exception.md)** tab in the **Remediation** page.
 
 ![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
 
