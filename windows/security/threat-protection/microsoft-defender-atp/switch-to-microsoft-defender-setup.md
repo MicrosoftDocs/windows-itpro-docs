@@ -25,7 +25,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 # Switch to Microsoft Defender for Endpoint - Phase 2: Setup
 
-|[![Phase 1: Prepare](/windows/media/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](/windows/media/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](/windows/media/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
+|[![Phase 1: Prepare](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) |![Phase 2: Set up](images/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*You are here!* | |
 
@@ -87,11 +87,11 @@ The [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/d
    
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
 
-> [!NOTE]
-> When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-> Example:<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   > Example:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    
@@ -227,12 +227,13 @@ To use CMPivot to get your file hash, follow these steps:
 
 6. In the query box, type the following query:<br/>
 
-```kusto
-File(c:\\windows\\notepad.exe)
-| project Hash
-```
-> [!NOTE]
-> In the query above, replace *notepad.exe* with the your third-party security product process name. 
+   ```kusto
+   File(c:\\windows\\notepad.exe)
+   | project Hash
+   ```
+   
+   > [!NOTE]
+   > In the query above, replace *notepad.exe* with the your third-party security product process name. 
 
 ## Set up your device groups, device collections, and organizational units
 
