@@ -192,7 +192,6 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
         </Node>
     </Node>
 </MgmtTree>
-
 ```
 
 ## Related topics

@@ -560,7 +560,7 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
 
 ## Example AssignedAccessConfiguration XML
 
-Example XML configuration for a multi app kiosk.
+Example XML configuration for a multi-app kiosk:
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
@@ -633,7 +633,9 @@ Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configur
 </AssignedAccessConfiguration>
 ```
 
-Example XML configuration for setting a breakout sequence to be Shift+Windows on a Microsoft Edge kiosk. Note BreakoutSequence can be applied to any kiosk type not just an Edge kiosk.
+Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.
+[!Note]
+**BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -642,8 +644,10 @@ Example XML configuration for setting a breakout sequence to be Shift+Windows on
   >
   <Profiles>
     <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --no-first-run --kiosk www.bing.com"/>
-      <v4:BreakoutSequence Key="Shift+Win"/>
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+                                  v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
+
+      <v4:BreakoutSequence Key="Ctrl+A"/>
     </Profile>
   </Profiles>
   <Configs>
