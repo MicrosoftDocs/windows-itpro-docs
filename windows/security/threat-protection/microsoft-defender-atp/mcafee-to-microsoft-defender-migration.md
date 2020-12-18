@@ -35,11 +35,14 @@ If you are planning to switch from McAfee Endpoint Security (McAfee) to [Microso
 
 When you switch from McAfee to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
+![Migration phases - prepare setup onboard](/windows/media/phase-diagrams/migration-phases.png)
+
+
 |Phase |Description |
 |--|--|
-|[![Phase 1: Prepare](images/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Prepare for your migration](mcafee-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](mcafee-to-microsoft-defender-prepare.md), you update your organization's devices, get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
-|[![Phase 2: Set up](images/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Set up Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-setup.md) |During [the **Setup** phase](mcafee-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and McAfee. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
-|[![Phase 3: Onboard](images/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Onboard to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](mcafee-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall McAfee and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender for Endpoint is in active mode. |
+|[Prepare for your migration](mcafee-to-microsoft-defender-prepare.md) |During [the **Prepare** phase](mcafee-to-microsoft-defender-prepare.md), you update your organization's devices, get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
+|[Set up Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-setup.md) |During [the **Setup** phase](mcafee-to-microsoft-defender-setup.md), you enable Microsoft Defender Antivirus and make sure it's in passive mode, and you configure settings & exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and McAfee. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
+|[Onboard to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md) |During [the **Onboard** phase](mcafee-to-microsoft-defender-onboard.md), you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall McAfee and make sure that protection through Microsoft Defender Antivirus & Microsoft Defender for Endpoint is in active mode. |
 
 ## What's included in Microsoft Defender for Endpoint?
 
