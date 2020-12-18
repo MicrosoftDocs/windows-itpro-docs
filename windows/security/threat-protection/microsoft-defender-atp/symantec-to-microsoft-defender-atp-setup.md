@@ -64,15 +64,16 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
-2. Run the following PowerShell cmdlets: <br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
+2. Run the following PowerShell cmdlets:
 
-> [!NOTE]
-> When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-> Example:<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`
+
+   > [!NOTE]
+   > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   > Example:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
@@ -174,10 +175,12 @@ To add exclusions to Microsoft Defender for Endpoint, you create [indicators](ht
 3.  On the **File hashes** tab, choose **Add indicator**.
 
 3. On the **Indicator** tab, specify the following settings:
+
    - File hash (Need help? See [Find a file hash using CMPivot](#find-a-file-hash-using-cmpivot) in this article.)
    - Under **Expires on (UTC)**, choose **Never**.
 
 4. On the **Action** tab, specify the following settings:
+
    - **Response Action**: **Allow**
    - Title and description
 
@@ -203,12 +206,14 @@ To use CMPivot to get your file hash, follow these steps:
 
 6. In the query box, type the following query:<br/>
 
-```kusto
-File(c:\\windows\\notepad.exe)
-| project Hash
-```
-> [!NOTE]
-> In the query above, replace *notepad.exe* with the your third-party security product process name. 
+   ```kusto
+   File(c:\\windows\\notepad.exe)
+   | project Hash
+   ```
+   
+   > [!NOTE]
+   > In the query above, replace *notepad.exe* with the your third-party security product process name. 
+   
 
 ## Set up your device groups, device collections, and organizational units
 
