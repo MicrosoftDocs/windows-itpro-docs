@@ -112,6 +112,10 @@ This page explains how to create an AAD application, get an access token to Micr
 
 For more information on AAD tokens, see [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
 ### Using C#
 
 - Copy/Paste the below class in your application.
@@ -127,9 +131,9 @@ For more information on AAD tokens, see [Azure AD tutorial](https://docs.microso
 
         public static class WindowsDefenderATPUtils
         {
-            private const string Authority = "https://login.windows.net";
+            private const string Authority = "https://login.microsoftonline.com";
 
-            private const string WdatpResourceId = "https://api.securitycenter.windows.com";
+            private const string WdatpResourceId = "https://api.securitycenter.microsoft.com";
 
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
@@ -175,7 +179,7 @@ Verify to make sure you got a correct token:
     ```csharp
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

@@ -26,6 +26,8 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
 
 ## Get Alerts using a simple PowerShell script
 
@@ -95,6 +97,8 @@ Done! You have successfully registered an application!
 -   Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
 -   Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
@@ -103,8 +107,8 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.windows.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -142,7 +146,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
 # The URL contains the type of query and the time filter we create above
 # Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+$url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
 # Set the WebRequest headers
 $headers = @{ 
