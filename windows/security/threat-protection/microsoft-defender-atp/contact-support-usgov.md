@@ -33,9 +33,10 @@ In order to open a support case, you will need to login to your Microsoft Defend
 
 Environment | Portal URL
 :---|:---
-GCC-M | [https://gcc.securitycenter.windows.us](https://gcc.securitycenter.windows.us)
-GCC-H | [https://securitycenter.windows.us](https://securitycenter.windows.us)
-DoD | [https://securitycenter.windows.us](https://securitycenter.windows.us)
+GCC-M on Commercial | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
+GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
+GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
+DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 
 If you are unable to login to the portal, you can also open a support case using the [phone](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=phone&preserve-view=true).
 
