@@ -24,6 +24,8 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
 
 Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
 
@@ -51,8 +53,8 @@ $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID he
 $appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.windows.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $body = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -72,10 +74,12 @@ where
 
 Run the following query:
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here
 
-$url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+$url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'

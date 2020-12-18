@@ -26,6 +26,8 @@ ms.topic: article
 
 - Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
 In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
@@ -44,11 +46,13 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Copy the below and paste it in the editor:
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 ```
 	let 
 		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti'",
 
-		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
+		HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
 
 		Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
 
@@ -114,7 +118,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 		Query = "MachineActions",
 
-		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+		Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
 	in
 		Source
 

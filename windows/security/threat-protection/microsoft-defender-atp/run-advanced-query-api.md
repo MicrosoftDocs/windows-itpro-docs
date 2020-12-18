@@ -26,6 +26,8 @@ ms.topic: article
 
 - Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
 ## Limitations
 1. You can only run a query on data from the last 30 days.
 2. The results will include a maximum of 100,000 rows.
@@ -50,7 +52,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
 ## Request headers
@@ -81,7 +83,7 @@ Here is an example of the request.
 
 
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 Content-type: application/json
 {
 	"Query":"DeviceProcessEvents  
