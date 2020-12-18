@@ -634,7 +634,7 @@ Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configur
 ```
 
 Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.
-[!Note]
+>[!Note]
 **BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -646,7 +646,6 @@ Example XML configuration for setting a breakout sequence to be Ctrl+A on a Micr
     <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
       <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
                                   v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
-
       <v4:BreakoutSequence Key="Ctrl+A"/>
     </Profile>
   </Profiles>
