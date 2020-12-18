@@ -1250,7 +1250,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-icm.md#admx-icm-hss-kbsearchpolicy" id="admx-icm-hss-kbsearchpolicy">ADMX_ICM/HSS_KBSearchPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement_restrictcommunication_1" id="admx-icm-internetmanagement_restrictcommunication_1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
+    <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-1" id="admx-icm-internetmanagement-restrictcommunication-1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-2" id="admx-icm-internetmanagement-restrictcommunication-2">ADMX_ICM/InternetManagement_RestrictCommunication_2</a>

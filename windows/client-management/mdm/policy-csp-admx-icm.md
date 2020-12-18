@@ -47,7 +47,7 @@ manager: dansimp
     <a href="#admx-icm-hss-kbsearchpolicy">ADMX_ICM/HSS_KBSearchPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-icm-internetmanagement_restrictcommunication_1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
+    <a href="#admx-icm-internetmanagement-restrictcommunication-1">ADMX_ICM/InternetManagement_RestrictCommunication_1</a>
   </dd>
   <dd>
     <a href="#admx-icm-internetmanagement-restrictcommunication-2">ADMX_ICM/InternetManagement_RestrictCommunication_2</a>
@@ -762,7 +762,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-icm-internetmanagement-restrictcommunication_2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
+<a href="" id="admx-icm-internetmanagement-restrictcommunication-2"></a>**ADMX_ICM/InternetManagement_RestrictCommunication_2**  
 
 <!--SupportedSKUs-->
 <table>
@@ -1092,7 +1092,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove access to Windows Update.
 
-If you enable this policy setting, all Windows Update features are removed. This includes blocking access to the Windows Update website at http://windowsupdate.microsoft.com, from the Windows Update hyperlink on the Start menu, and also on the Tools menu in Internet Explorer. Windows automatic updating is also disabled; you will neither be notified about nor will you receive critical updates from Windows Update. This policy setting also prevents Device Manager from automatically installing driver updates from the Windows Update website.
+If you enable this policy setting, all Windows Update features are removed. This includes blocking access to the Windows Update website at https://windowsupdate.microsoft.com, from the Windows Update hyperlink on the Start menu, and also on the Tools menu in Internet Explorer. Windows automatic updating is also disabled; you will neither be notified about nor will you receive critical updates from Windows Update. This policy setting also prevents Device Manager from automatically installing driver updates from the Windows Update website.
 
 If you disable or do not configure this policy setting, users can access the Windows Update website and enable automatic updating to receive notifications and critical updates from Windows Update.
 

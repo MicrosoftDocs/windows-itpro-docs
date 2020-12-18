@@ -322,7 +322,7 @@ ms.date: 10/08/2020
 - [ADMX_ICM/EventViewer_DisableLinks](./policy-csp-admx-icm.md#admx-icm-eventviewer-disablelinks)
 - [ADMX_ICM/HSS_HeadlinesPolicy](./policy-csp-admx-icm.md#admx-icm-hss-headlinespolicy)
 - [ADMX_ICM/HSS_KBSearchPolicy](./policy-csp-admx-icm.md#admx-icm-hss-kbsearchpolicy)
-- [ADMX_ICM/InternetManagement_RestrictCommunication_1](./policy-csp-admx-icm.md#admx-icm-internetmanagement_restrictcommunication_1)
+- [ADMX_ICM/InternetManagement_RestrictCommunication_1](./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-1)
 - [ADMX_ICM/InternetManagement_RestrictCommunication_2](./policy-csp-admx-icm.md#admx-icm-internetmanagement-restrictcommunication-2)
 - [ADMX_ICM/NC_ExitOnISP](./policy-csp-admx-icm.md#admx-icm-nc-exitonisp)
 - [ADMX_ICM/NC_NoRegistration](./policy-csp-admx-icm.md#admx-icm-nc-noregistration)
