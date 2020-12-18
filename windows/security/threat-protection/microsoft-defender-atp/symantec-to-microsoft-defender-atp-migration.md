@@ -35,7 +35,7 @@ If you are planning to switch from Symantec Endpoint Protection (Symantec) to [M
 
 When you switch from Symantec to Microsoft Defender for Endpoint, you follow a process that can be divided into three phases, as described in the following table:
 
-![Migration phases - prepare, setup, onboard](/windows/media/phase-diagrams/migration-phases.png)
+![Migration phases - prepare, setup, onboard](images/phase-diagrams/migration-phases.png)
 
 |Phase |Description |
 |--|--|
