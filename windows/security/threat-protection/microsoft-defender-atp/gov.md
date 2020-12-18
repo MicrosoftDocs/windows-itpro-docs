@@ -109,7 +109,8 @@ Defender for Endpoint GCC High specific | ```us4-v20.events.data.microsoft.com``
 
 
 ## API
-Login endpoint: ```https://login.microsoftonline.us```
-Microsoft Defender for Endpoint API endpoint: ```https://api-gov.securitycenter.microsoft.us```
+- Login endpoint: ```https://login.microsoftonline.us```
+
+- Microsoft Defender for Endpoint API endpoint: ```https://api-gov.securitycenter.microsoft.us```
 
 
