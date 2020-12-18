@@ -621,7 +621,8 @@ Example XML configuration for a Microsoft Edge kiosk. This Edge kiosk s configur
   >
   <Profiles>
     <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --no-first-run --kiosk www.bing.com"/>
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+                                  v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
     </Profile>
   </Profiles>
   <Configs>
