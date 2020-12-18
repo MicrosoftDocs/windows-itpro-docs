@@ -37,7 +37,7 @@ Each section corresponds to a separate article in this solution.
 ![Image of deployment phases with details from table](images/deployment-guide-phases.png)
 
 
-![Summary of deployment phases: prepare, setup, onboard](/windows/media/phase-diagrams/deployment-phases.png)
+![Summary of deployment phases: prepare, setup, onboard](images/phase-diagrams/deployment-phases.png)
 
 |Phase | Description | 
 |:-------|:-----|
