@@ -66,7 +66,7 @@ Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll 
 
 2. Run the following PowerShell cmdlets:
 
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`
 
    > [!NOTE]
