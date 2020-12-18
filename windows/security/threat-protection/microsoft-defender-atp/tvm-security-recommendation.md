@@ -205,31 +205,13 @@ The following list details the justifications behind the exception options:
 - **Risk accepted** - Poses low risk and/or implementing the recommendation is too expensive
 - **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
 
-### View all exceptions
+### View and cancel exceptions
 
-Navigate to the **Exceptions** tab in the **Remediation** page.
+Navigate to the **[Exceptions](tvm-exception)** tab in the **Remediation** page.
 
 ![Showing the "Exceptions" tab in the Remediation page.](images/tvm-exception-tab400.png)
 
 Select an exception to open a flyout with more details. Exceptions per devices group will have a list of every device group the exception covers, which you can Export. You can also view the related recommendation or cancel the exception.
-
-### How to cancel an exception
-
-To cancel an exception, navigate to the **Exceptions** tab in the **Remediation** page. Select the exception.
-
-#### Cancel the exception for a specific device group
-
-If the exception is per device group, then you will need to select the specific device group to cancel the exception for it. 
-
-![Showing how to select a specific device group.](images/tvm-exception-device-group-hover.png)
-
-A flyout will appear for the device group, and you can select **Cancel exception**.
-
-#### Cancel a global exception
-
-If it is a global exception, select an exception from the list and then select **Cancel exception** from the flyout.
-
-![Showing how to cancel the exception for a global exception.](images/tvm-exception-cancel-global-400.png)
 
 ### View impact after exceptions are applied
 
