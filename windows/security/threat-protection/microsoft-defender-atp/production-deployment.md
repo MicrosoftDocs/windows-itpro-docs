@@ -31,7 +31,7 @@ ms.topic: article
 
 Deploying Defender for Endpoint is a three-phase process:
 
-| [![deployment phase - prepare](/windows/media/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](/windows/media/phase-diagrams/setup.png)<br>Phase 2: Setup | [![deployment phase - onboard](/windows/media/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
+| [![deployment phase - prepare](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](images/phase-diagrams/setup.png)<br>Phase 2: Setup | [![deployment phase - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md) |
 | ----- | ----- | ----- |
 | | *You are here!*||
 
