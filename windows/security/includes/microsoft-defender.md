@@ -11,4 +11,4 @@ ms.topic: include
 ---
 
 > [!IMPORTANT]
-> Welcome to **Microsoft Defender for Endpoint**, the new name for **Microsoft Defender Advanced Threat Protection**. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813).  We'll be updating names in products and in the docs in the near future.
+> [Learn how Microsoft is helping protect customers from Solorigate](https://aka.ms/solorigate)
