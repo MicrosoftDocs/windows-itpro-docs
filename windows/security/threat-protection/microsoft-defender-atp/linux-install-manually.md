@@ -14,9 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ---
 
@@ -144,10 +144,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     For example, if you chose *insiders-fast* channel:
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
-    ```   
+    ```
 
 - Install the `gpg` package if not already installed:
 
@@ -327,6 +327,8 @@ Download the onboarding package from Microsoft Defender Security Center:
         ```bash
         mdatp threat list
         ```
+
+    If the the test file isn't detected and quarantined it might be labeled as a allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
 
 ## Log installation issues
 
