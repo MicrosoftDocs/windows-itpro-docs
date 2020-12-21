@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -114,5 +114,5 @@ The following table provides links to additional resources that are related to s
 | Content type  | References  |
 |---------------|-------------|
 | **Product evaluation** | [What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)<br>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx) |
-| **Deployment** | [Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](http://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx) |
+| **Deployment** | [Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](https://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx) |
 | **Related technologies** | [Security Principals](security-principals.md)<br>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx) |

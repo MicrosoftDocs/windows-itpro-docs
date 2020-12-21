@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Possible solutions to the problems you might encounter after installing IE11, such as crashing or seeming slow, getting into an unusable state, or problems with adaptive streaming and DRM playback.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: c4b75ad3-9c4a-4dd2-9fed-69f776f542e6
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Problems after installing Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/16/2017
@@ -15,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Problems after installing Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 After you install Internet Explorer 11 in your organization, you might run into the following issues. By following these suggestions, you should be able to fix them.
 
 ## Internet Explorer is in an unusable state

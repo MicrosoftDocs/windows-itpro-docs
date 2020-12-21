@@ -1,6 +1,6 @@
 ---
 title: System cryptography Force strong key protection for user keys stored on the computer (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the System cryptography Force strong key protection for user keys stored on the computer security policy setting.
+description: Best practices, security considerations, and more for the policy setting, System cryptography Force strong key protection for user keys stored on the computer.
 ms.assetid: 8cbff267-881e-4bf6-920d-b583a5ff7de0
 ms.reviewer: 
 ms.author: dansimp

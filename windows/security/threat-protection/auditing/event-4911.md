@@ -26,7 +26,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when [resource attributes](http://blogs.technet.com/b/canitpro/archive/2013/05/07/step-by-step-protecting-your-information-with-dynamic-access-control.aspx) of the file system object were changed.
+This event generates when [resource attributes](https://blogs.technet.com/b/canitpro/archive/2013/05/07/step-by-step-protecting-your-information-with-dynamic-access-control.aspx) of the file system object were changed.
 
 Resource attributes for file or folder can be changed, for example, using Windows File Explorer (object’s Properties-&gt;Classification tab).
 

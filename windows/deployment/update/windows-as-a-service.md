@@ -1,17 +1,19 @@
 ---
 title: Windows as a service  
-ms.prod: windows-10
-layout: LandingPage  
+ms.prod: w10 
 ms.topic: landing-page
-ms.manager: elizapo
-audience: itproauthor: greg-lindsay
-ms.audience: itproauthor: greg-lindsay
-ms.date: 01/24/2019
+ms.manager: laurawi
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
+ms.audience: itpro
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---
+
 # Windows as a service
 
 Find the tools and resources you need to help deploy and support Windows as a service in your organization.
@@ -27,13 +29,16 @@ Everyone wins when transparency is a top priority. We want you to know when upda
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807">How to get Extended Security Updates for eligible Windows devices </a> - October 17, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/End-of-service-reminders-for-Windows-10-versions-1703-and-1803/ba-p/903715">End of service reminders for Windows 10, versions 1703 and 1803  </a> - October 9, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860">Using machine learning to improve the Windows 10 update experience  </a> - September 26, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054
+">Publishing pre-release Windows 10 feature updates to WSUS  </a> - September 24, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-extended-support-dates-for-MDOP-tools/ba-p/837312">New extended support dates for MDOP tools   </a> - September 4, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/FastTrack-for-Windows-10-deployment-and-other-migration/ba-p/800406">FastTrack for Windows 10 deployment and other migration resources   </a> - August 12, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">Tactical considerations for creating Windows deployment rings   </a> - July 10, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Upgrading-Windows-10-devices-with-installation-media-different/ba-p/746126">Upgrading Windows 10 devices with installation media different than the original OS install language</a> - July 9, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Moving-to-the-next-Windows-10-feature-update-for-commercial/ba-p/732968">Moving to the next Windows 10 feature update for commercial customers</a> - July 1, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
-<li><a href="https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update">How to get the Windows 10 May 2019 Update</a> - May 21, 2019</li>
- <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
 </ul>
 
 [See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
@@ -68,7 +73,6 @@ Learn more about Windows as a service and its value to your organization.
 
 <a href="waas-quick-start.md">Quick guide to Windows as a service</a>
 
-<a href="windows-analytics-overview.md">Windows Analytics overview</a>
 
 <a href="../deploy-whats-new.md">What's new in Windows 10 deployment</a>
 
@@ -80,7 +84,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 <img src="images/plan-land.png" alt="" />
 
-<a href="https://www.microsoft.com/en-us/windowsforbusiness/simplified-updates">Simplified updates</a>
+<a href="https://www.microsoft.com/windowsforbusiness/simplified-updates">Simplified updates</a>
 
 <a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10 end user readiness</a>
 
@@ -110,22 +114,4 @@ Secure your organization's deployment investment.
 ## Microsoft Ignite 2018
 <img src="images/ignite-land.jpg" alt="" width="640" height="320"/>
 
-Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service.
-
-[BRK2417: What’s new in Windows Analytics: An Intro to Desktop Analytics](https://myignite.techcommunity.microsoft.com/sessions/64324#ignite-html-anchor)
-
-[BRK3018: Deploying Windows 10 in the enterprise using traditional and modern techniques](https://myignite.techcommunity.microsoft.com/sessions/64509#ignite-html-anchor)
-
-[BRK3019: Delivery Optimization deep dive: How to reduce internet bandwidth impact on your network](https://myignite.techcommunity.microsoft.com/sessions/64510#ignite-html-anchor)
-
-[BRK3020: Using AI to automate Windows and Office update staging with Windows Update for Business](https://myignite.techcommunity.microsoft.com/sessions/64513#ignite-html-anchor)
-
-[BRK3027: Deploying Windows 10: Making the update experience smooth and seamless](https://myignite.techcommunity.microsoft.com/sessions/64612#ignite-html-anchor)
-
-[BRK3039: Windows 10 and Microsoft Office 365 ProPlus lifecycle and servicing update](https://myignite.techcommunity.microsoft.com/sessions/66763#ignite-html-anchor)
-
-[BRK3211: Ask the Experts: Successfully deploying, servicing, managing Windows 10](https://myignite.techcommunity.microsoft.com/sessions/65963#ignite-html-anchor)
-
-[THR2234: Windows servicing and delivery fundamentals](https://myignite.techcommunity.microsoft.com/sessions/66741#ignite-html-anchor)
-
-[THR3006: The pros and cons of LTSC in the enterprise](https://myignite.techcommunity.microsoft.com/sessions/64512#ignite-html-anchor)
+Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).

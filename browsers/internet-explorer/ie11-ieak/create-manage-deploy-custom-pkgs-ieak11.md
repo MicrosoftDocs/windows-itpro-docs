@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review this list of tasks and references before you create and deploy your Internet Explorer 11 custom install packages.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: fe71c603-bf07-41e1-a477-ade5b28c9fb3
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Tasks and references to consider before creating and deploying custom packages using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Tasks and references to consider before creating and deploying custom packages using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Review this list of tasks and references to help you use the Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and manage Internet Explorer 11 in your company.
 
 |Task                                    |References                                                    |

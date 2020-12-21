@@ -1,6 +1,6 @@
 ---
-title: Checklist Creating Rules for Clients of a Standalone Isolated Server Zone (Windows 10)
-description: Checklist Creating Rules for Clients of a Standalone Isolated Server Zone
+title: Create Rules for Standalone Isolated Server Zone Clients (Windows 10)
+description: Checklist for when creating rules for clients of a Standalone Isolated Server Zone
 ms.assetid: 6a5e6478-add3-47e3-8221-972549e013f6
 ms.reviewer: 
 ms.author: dansimp

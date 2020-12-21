@@ -3,17 +3,21 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how an Administrator can view the available Enterprise Mode reports from the Enterprise Mode Site List Portal.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 title: View the available Enterprise Mode reports from the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 ---
 
 # View the available Enterprise Mode reports from the Enterprise Mode Site List Portal
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

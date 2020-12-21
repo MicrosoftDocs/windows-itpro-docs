@@ -39,6 +39,9 @@ The **Maximum password age** policy setting determines the period of time (in da
 
 Set **Maximum password age** to a value between 30 and 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to compromise a user's password and have access to your network resources.
 
+> [!NOTE]
+> The security baseline recommended by Microsoft doesn't contain the password-expiration policy, as it is less effective than modern mitigations. However, companies that didn't implement Azure AD Password Protection, multifactor authentication, or other modern mitigations of password-guessing attacks, should leave this policy in effect.
+
 ### Location
 
 **Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy**
@@ -74,7 +77,7 @@ The longer a password exists, the higher the likelihood that it will be compromi
 
 ### Considerations
 
-Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. See [Microsoft Password Guidance](https://www.microsoft.com/en-us/research/publication/password-guidance/) for further information.
+Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. See [Microsoft Password Guidance](https://www.microsoft.com/research/publication/password-guidance/) for further information.
 
 Configure the **Maximum password age** policy setting to a value that is suitable for your organization's business requirements. For example, many organisations have compliance or insurance mandates requiring a short lifespan on passwords. Where such a requirement exists, the **Maximum password age** policy setting can be used to meet business requirements.
 

@@ -42,7 +42,7 @@ You can use the same management tools to manage all device types running Windows
 
 ## Learn more
 
-[How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx)
+[How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx)
 
 [Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 

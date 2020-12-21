@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the topics in this section to learn about Group Policy and how to use it to manage Internet Explorer.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 50383d3f-9ac9-4a30-8852-354b6eb9434a
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Group Policy and Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy and Internet Explorer 11 (IE11)
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

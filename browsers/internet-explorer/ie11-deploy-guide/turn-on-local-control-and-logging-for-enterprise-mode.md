@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Turn on local user control and logging for Enterprise Mode.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Turn on local control and logging for Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Turn on local control and logging for Enterprise Mode
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

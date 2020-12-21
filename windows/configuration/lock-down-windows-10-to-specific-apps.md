@@ -29,7 +29,7 @@ The following table lists changes to multi-app kiosk in recent updates.
 |                                                                                                                            New features and improvements                                                                                                                             |                                                                                                           In update                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                     - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)                     |                                                                                                   Windows 10, version 1803                                                                                                    |
-| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `http://schemas.microsoft.com/AssignedAccess/201810/config`. |
+| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
 >[!WARNING]
 >The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
@@ -88,8 +88,8 @@ You can start your file by pasting the following XML (or any other examples in t
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
     >
     <Profiles>
         <Profile Id="">
@@ -199,8 +199,8 @@ The following example shows how to allow user access to the Downloads folder in 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
 >     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -219,7 +219,7 @@ The following example shows how to allow user access to the Downloads folder in 
     </Profiles>
 </AssignedAccessConfiguration>
 ```
-FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace http://schemas.microsoft.com/AssignedAccess/201810/config, AllowRemovableDrives and NoRestriction are defined in a new namespace http://schemas.microsoft.com/AssignedAccess/2020/config.
+FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace https://schemas.microsoft.com/AssignedAccess/201810/config, AllowRemovableDrives and NoRestriction are defined in a new namespace https://schemas.microsoft.com/AssignedAccess/2020/config.
 
 * When FileExplorerNamespaceRestrictions node is not used, or used but left empty, user will not be able to access any folder in common dialog (e.g. Save As in Microsoft Edge browser).
 * When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
@@ -244,7 +244,7 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
 
 ```xml
 <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="httsp://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -411,7 +411,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 <span id="add-xml" />
 
 #### [Preview] Global Profile
-Global profile is added in curernt Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
+Global profile is added in current Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
 
 Usage is demonstrated below, by using the new xml namespace and specify GlobalProfile from that namespace. When GlobalProfile is configured, a non-admin account logs in, if this user does not have designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, global profile will be applied for the user.
 
@@ -423,9 +423,9 @@ Note:
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="https://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
@@ -438,7 +438,7 @@ Note:
                 </AllowedApps>
             </AllAppsList>
             <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -591,6 +591,7 @@ To create a multi-app kiosk that can run mixed reality apps, you must include th
 <App AppUserModelId="MixedRealityLearning_cw5n1h2txyewy!MixedRealityLearning" />
 <App AppUserModelId="HoloShell_cw5n1h2txyewy!HoloShell" />
 <App AppUserModelId="Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy!App" />
+<App AppUserModelId="Microsoft.MixedReality.Portal_8wekyb3d8bbwe!App" />
 ```
 
 These are in addition to any mixed reality apps that you allow.

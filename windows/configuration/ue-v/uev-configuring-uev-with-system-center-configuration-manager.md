@@ -1,6 +1,6 @@
 ---
-title: Configuring UE-V with System Center Configuration Manager
-description: Configuring UE-V with System Center Configuration Manager 
+title: Configuring UE-V with Microsoft Endpoint Configuration Manager
+description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Endpoint Configuration Manager. 
 author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ ms.topic: article
 ---
 
 
-# Configuring UE-V with System Center Configuration Manager 
+# Configuring UE-V with Microsoft Endpoint Configuration Manager 
 
 **Applies to**
 -   Windows 10, version 1607
 
-After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager (2012 SP1 or later) to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of Microsoft Endpoint Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 ## UE-V Configuration Pack supported features
 
@@ -228,7 +228,7 @@ To distribute a new Notepad template, you would perform these steps:
 
 ## Get the UE-V Configuration Pack
 
-You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=40913) from the Microsoft Download Center.
+You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913) from the Microsoft Download Center.
 
 
 

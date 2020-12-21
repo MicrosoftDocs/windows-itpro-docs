@@ -1,6 +1,6 @@
 ---
 title: Deploying Microsoft Office 2010 by Using App-V (Windows 10)
-description: Deploying Microsoft Office 2010 by Using App-V
+description: Create Office 2010 packages for Microsoft Application Virtualization (App-V) using the App-V Sequencer or the App-V Package Accelerator.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # Deploying Microsoft Office 2010 by Using App-V
@@ -48,7 +48,7 @@ For detailed instructions on how to create virtual application packages using Ap
 
 You can deploy Office 2010 packages by using any of the following App-V deployment methods:
 
-* System Center Configuration Manager
+* Microsoft Endpoint Configuration Manager
 * App-V server
 * Stand-alone through Windows PowerShell commands
 
@@ -86,7 +86,7 @@ The following table provides a full list of supported integration points for Off
 
 ### Office 2010 App-V Packages
 
-* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=38399)
+* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/download/details.aspx?id=38399)
 * [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/kb/2828619)
 * [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069)
 

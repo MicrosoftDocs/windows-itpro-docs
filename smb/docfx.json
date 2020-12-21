@@ -30,19 +30,30 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "TechNet.smb",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "titleSuffix": "Windows for Small to Midsize Business"
     },
     "fileMetadata": {},
     "template": [],
     "dest": "smb",
     "markdownEngineName": "markdig"
-  }
+    }
 }

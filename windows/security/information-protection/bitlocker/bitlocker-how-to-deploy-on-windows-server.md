@@ -8,13 +8,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker: How to deploy on Windows Server 2012 and later

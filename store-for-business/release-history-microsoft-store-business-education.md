@@ -45,7 +45,7 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Private store collection updates** - We’ve made it easier to find apps when creating private store collections – now you can search and filter results. 
  [Get more info](https://docs.microsoft.com/microsoft-store/manage-private-store-settings#private-store-collections) 
 - **Manage Skype Communication credits** - Office 365 customers that own Skype Communication Credits can now see and manage them in Microsoft Store for Business. You can view your account, add funds to your account, and manage auto-recharge settings.
-- **Upgrade Office 365 trial subscription** - Customers with Office 365 can upgrade their subscription and automatically re-assign their user licenses over to a new target subscription. For example, you could upgrade your Office 365 Business to Office 365 Business Premium. 
+- **Upgrade Microsoft 365 trial subscription** - Customers with Office 365 can upgrade their subscription and automatically re-assign their user licenses over to a new target subscription. For example, you could upgrade your Office 365 for business subscription to a Microsoft 365 for business subscription.
 
 ## January and February 2018
 - **One place for apps, software, and subscriptions** - The new **Products &amp; services** page in Microsoft Store for Business and Education gives customers a single place to manage all products and services.
@@ -61,7 +61,7 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Export list of Minecraft: Education Edition users** - Admins and teachers can now export a list of users who have Minecraft: Education Edition licenses assigned to them. Click **Export users**, and Store for Education creates an Excel spreadsheet for you, and saves it as a .csv file.
 
 ## October 2017
-- Bug fixes and performance improvements.  
+- Bug fixes and performance improvements.
 
 ## September 2017
 

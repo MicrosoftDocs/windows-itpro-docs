@@ -1,6 +1,6 @@
 ---
 title: User Account Control Virtualize file and registry write failures to per-user locations (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Virtualize file and registry write failures to per-user locations security policy setting.
+description: Best practices, security considerations and more for the policy setting, User Account Control Virtualize file and registry write failures to per-user locations.
 ms.assetid: a7b47420-cc41-4b1c-b03e-f67a05221261
 ms.reviewer: 
 ms.author: dansimp

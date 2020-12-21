@@ -9,11 +9,15 @@ title: Add employees to the Enterprise Mode Site List Portal (Internet Explorer 
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 ---
 
 # Add employees to the Enterprise Mode Site List Portal
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

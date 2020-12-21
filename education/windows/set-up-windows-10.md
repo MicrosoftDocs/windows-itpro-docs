@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: mjcaparas
-ms.author: macapara
+author: dansimp
+ms.author: dansimp
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp

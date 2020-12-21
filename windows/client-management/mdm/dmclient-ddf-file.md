@@ -1,6 +1,6 @@
 ---
 title: DMClient DDF file
-description: DMClient DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DMClient configuration service provider (CSP).
 ms.assetid: A21B33AF-DB76-4059-8170-FADF2CB898A0
 ms.reviewer: 
 manager: dansimp
@@ -957,7 +957,7 @@ The XML below is for Windows 10, version 1803.
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Number of days after last sucessful sync to unenroll</Description>
+                <Description>Number of days after last successful sync to unenroll</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>
@@ -1022,7 +1022,6 @@ The XML below is for Windows 10, version 1803.
                 <DFProperties>
                   <AccessType>
                     <Add />
-                    <Delete />
                     <Get />
                     <Replace />
                   </AccessType>

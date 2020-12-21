@@ -1,6 +1,6 @@
 ---
 title: System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing (Windows 10)
-description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.
+description: Best practices, security considerations, and more for the policy setting System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing
 ms.assetid: 83988865-dc0f-45eb-90d1-ee33495eb045
 ms.reviewer: 
 ms.author: dansimp
@@ -56,7 +56,9 @@ Additionally, if a data drive is password-protected, it can be accessed by a FIP
 
 ### Best practices
 
-There are no best practices for this setting. Our previous guidance had recommended a setting of **Enabled**, primarily to align with US Federal government recommendations. [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend this setting be **Not Defined**, meaning that we leave the decision to customers. For a deeper explanation, see [Why We’re Not Recommending “FIPS Mode” Anymore](https://blogs.technet.microsoft.com/secguide/2014/04/07/why-were-not-recommending-fips-mode-anymore/).
+We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode.
+
+For a complete list of Microsoft-recommended configuration settings, see [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines). For more information about Windows and FIPS 140-2, see [FIPS 140 Validation](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation).
 
 ### Location
 

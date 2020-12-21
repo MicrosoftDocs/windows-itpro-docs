@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review the file types that are created and used by tools in the Internet Explorer Administration Kit 11 (IEAK 11).
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: File types used or created by IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # File types used or created by IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 A list of the file types used or created by tools in IEAK 11:
 
 |File type |Description              |

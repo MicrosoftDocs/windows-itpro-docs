@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "None",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.keep-secure",

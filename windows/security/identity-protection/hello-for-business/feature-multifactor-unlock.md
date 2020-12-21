@@ -1,6 +1,6 @@
 ---
 title: Multifactor Unlock
-description: Multifactor Unlock
+description: Learn how Windows 10 offers multifactor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -23,15 +23,13 @@ ms.reviewer:
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
-* Azure AD joined device (Cloud and Hybrid deployments)
-* Hybrid Azure AD joined (Hybrid deployments)
-* Domain Joined (on-premises deployments) 
-* Windows 10, version 1709
+* Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
+* Windows 10, version 1709 or newer
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals, administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
+Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
 
 Which organizations can take advantage of Multi-factor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
@@ -101,7 +99,7 @@ Each rule element has a **signal** element.  All signal elements have a **type**
 | type| "wifi" (Windows 10, version 1803)
 
 #### Bluetooth
-You define the bluetooth signal with additional attribute in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
+You define the bluetooth signal with additional attributes in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
 
 |Attribute|Value|Required|
 |---------|-----|--------|
@@ -117,7 +115,7 @@ Example:
     <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </rule>
 ```
-The **classofDevice** attribute defaults Phones and uses the values from the following table 
+The **classofDevice** attribute defaults to Phone and uses the values from the following table:
 
 |Description|Value|
 |:-------------|:-------:|
@@ -138,7 +136,7 @@ The **rssiMin** attribute value signal indicates the strength needed for the dev
 RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
 
 >[!IMPORTANT]
->Microsoft recommends using the default values for this policy settings.  Measurements are relative, based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.  Use the rssiMIN and rssiMaxDelta values from the XML file created by the Group Policy Management Editor or remove both attributes to use the default values.
+>Microsoft recommends using the default values for this policy setting.  Measurements are relative, based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.  Use the rssiMIN and rssiMaxDelta values from the XML file created by the Group Policy Management Editor or remove both attributes to use the default values.
 
 #### IP Configuration
 You define IP configuration signals using one or more ipConfiguration elements.  Each element has a string value.  IpConfiguration elements do not have attributes or nested elements.
@@ -198,7 +196,7 @@ The IPv6 DNS server represented in Internet standard hexadecimal encoding. An IP
 <ipv6DnsServer>21DA:00D3:0000:2F3B:02AA:00FF:FE28:9C5A%2</ipv6DnsServer>
 ```
 ##### dnsSuffix
-The fully qualified domain name of your organizations internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
+The fully qualified domain name of your organization's internal DNS suffix where any part of the fully qualified domain name in this setting exists in the computer's primary DNS suffix.  The **signal** element may contain one or more **dnsSuffix** elements.<br>
 **Example**
 ```
 <dnsSuffix>corp.contoso.com</dnsSuffix>
@@ -301,7 +299,7 @@ This example configures the same as example 2 using compounding And elements.  T
 #### Example 4 
 This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 ```
-<rule version="1.0"> 
+<rule schemaVersion="1.0"> 
   <signal type="wifi"> 
     <ssid>contoso</ssid> 
     <bssid>12-ab-34-ff-e5-46</bssid> 
@@ -319,7 +317,7 @@ This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 
 ### How to configure Multifactor Unlock policy settings
 
-You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
+You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
@@ -332,6 +330,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 > * PIN **must** be in at least one of the groups
 > * Trusted signals **must** be combined with another credential provider
 > * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
+> * The multifactor unlock feature is also supported via the Passport for Work CSP. See [Passport For Work CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) for more information.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.

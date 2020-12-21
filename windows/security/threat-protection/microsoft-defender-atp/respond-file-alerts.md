@@ -1,6 +1,6 @@
 ---
 title: Take response actions on a file in Microsoft Defender ATP
-description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
+description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,13 +19,16 @@ ms.topic: article
 
 # Take response actions on a file
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details in the Action center.
 
@@ -36,9 +39,22 @@ Response actions run along the top of the file page, and include:
 - Stop and Quarantine File
 - Add Indicator
 - Download file
+- Consult a threat expert
 - Action center
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
+
+Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
+
+Permission | PE files | Non-PE files
+:---|:---|:---
+View data | X | X
+Alerts investigation | &#x2611; | X
+Live response basic | X | X
+Live response advanced | &#x2611; |&#x2611;
+
+For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
+
 
 ## Stop and quarantine files in your network
 
@@ -47,13 +63,13 @@ You can contain an attack in your organization by stopping the malicious process
 >[!IMPORTANT]
 >You can only take this action if:
 >
-> - The machine you're taking the action on is running Windows 10, version 1703 or later
+> - The device you're taking the action on is running Windows 10, version 1703 or later
 > - The file does not belong to trusted third-party publishers or not signed by Microsoft
-> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+> - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data, such as any registry keys.
 
-This action takes effect on machines with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
+This action takes effect on devices with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
 
 >[!NOTE]
 >You’ll be able to restore the file from quarantine at any time.
@@ -64,6 +80,10 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
 
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
     - **Search box** - select **File** from the drop–down menu and enter the file name
+
+
+    >[!NOTE]
+    >The stop and quarantine file action is limited to a maximum of 1000 devices. To stop a file on a larger number of devices, see [Add indicator to block or allow file](#add-indicator-to-block-or-allow-a-file).
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
@@ -77,26 +97,26 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
     ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
     - **Submission time** - Shows when the action was submitted.
-    - **Success** - Shows the number of machines where the file has been stopped and quarantined.
-    - **Failed** - Shows the number of machines where the action failed and details about the failure.
-    - **Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
+    - **Success** - Shows the number of devices where the file has been stopped and quarantined.
+    - **Failed** - Shows the number of devices where the action failed and details about the failure.
+    - **Pending** - Shows the number of devices where the file is yet to be stopped and quarantined from. This can take time for cases when the device is offline or not connected to the network.
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
-**Notification on machine user**:</br>
-When the file is being removed from a machine, the following notification is shown:
+**Notification on device user**:</br>
+When the file is being removed from a device, the following notification is shown:
 
-![Image of notification on machine user](images/atp-notification-file.png)
+![Image of notification on device user](images/atp-notification-file.png)
 
-In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
+In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
 For files that widely used throughout an organization, a warning is shown before an action is implemented, to validate that the operation is intended.
 
 ## Restore file from quarantine
 
-You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
+You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the machine:
+1. Open an elevated command–line prompt on the device:
 
     a. Go to **Start** and type _cmd_.
 
@@ -109,23 +129,28 @@ You can roll back and remove a file from quarantine if you’ve determined that 
    ```
 
 > [!NOTE]
-> Microsoft Defender ATP will restore all files that were quarantined on this machine in the last 30 days.
+> In some scenarios, the **ThreatName** may appear as: EUS:Win32/CustomEnterpriseBlock!cl.
+> 
+> Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+
+> [!Important]
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired. 
 
 ## Add indicator to block or allow a file
 
-You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
 
 >[!IMPORTANT]
 >
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+>- This feature is available if your organization uses Microsoft Defender Antivirus and Cloud–delivered protection is enabled. For more information, see [Manage cloud–delivered protection](../microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus.md).
 >
 >- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
->- This response action is available for machines on Windows 10, version 1703 or later.
+>- This response action is available for devices on Windows 10, version 1703 or later.
 >- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
 
 >[!NOTE]
-> The PE file needs to be in the machine timeline for you to be able to take this action.
+> The PE file needs to be in the device timeline for you to be able to take this action.
 >
 > There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
 
@@ -135,7 +160,7 @@ To start blocking files, you first need to [turn the **Block or allow** feature 
   
 ### Allow or block file
 
-When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a machine in your organization attempts to run it.
+When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
 
 Files automatically blocked by an indicator won't show up in the files's Action center, but the alerts will still be visible in the Alerts queue.
 
@@ -153,9 +178,29 @@ Selecting **Download file** from the response actions allows you to download a l
 
 When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you are downloading the file. You can also set a password to open the file.
 
-![Image of download file fly-out](images/atp-download-file.png)
+![Image of download file fly-out](images/atp-download-file-reason.png)
 
-If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file is not already stored by Defender for Endpoint, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
+
+## Consult a threat expert
+
+You can consult a Microsoft threat expert for more insights regarding a potentially compromised device or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised device, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
+
+See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+
+## Check activity details in Action center
+
+The **Action center** provides information on actions that were taken on a device or file. You’ll be able to view the following details:
+
+- Investigation package collection
+- Antivirus scan
+- App restriction
+- Device isolation
+
+All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
+
+![Image of action center with information](images/action-center-details.png)
+
 
 ## Deep analysis
 
@@ -171,41 +216,45 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+<br/>
 
-**Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection, or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0] 
+
+**Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
 
 > [!NOTE]
 > Only files from Windows 10 can be automatically collected.
 
-You can also manually submit a sample through the [Microsoft Security Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file was not observed on a Windows 10 machine, and wait for **Submit for deep analysis** button to become available.
+You can also manually submit a sample through the [Microsoft Security Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file was not observed on a Windows 10 device, and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Microsoft Defender ATP.
+> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
-When the sample is collected, Microsoft Defender ATP runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on machines, communication to IPs, and registry modifications.
+When the sample is collected, Defender for Endpoint runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
 
 **Submit files for deep analysis:**
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
 
     - Alerts - click the file links from the **Description** or **Details** in the Artifact timeline
-    - **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section
+    - **Devices list** - click the file links from the **Description** or **Details** in the **Device in organization** section
     - Search box - select **File** from the drop–down menu and enter the file name
 
 2. In the **Deep analysis** tab of the file view, click **Submit**.
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
+    > [!NOTE]
+    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
-> Depending on machine availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
+> Depending on device availability, sample collection time can vary. There is a 3–hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device reporting at that time. You can re–submit files for deep analysis to get fresh data on the file.
 
 **View deep analysis reports**
 
-View the deep analysis report that Microsoft Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
+View the deep analysis report that Defender for Endpoint provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
 You can view the comprehensive report that provides details on the following sections:
 
@@ -242,5 +291,5 @@ If you encounter a problem when trying to submit a file, try each of the followi
 
 ## Related topics
 
-- [Take response actions on a machine](respond-machine-alerts.md)
+- [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)

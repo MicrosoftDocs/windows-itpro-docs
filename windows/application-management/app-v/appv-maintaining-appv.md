@@ -1,6 +1,6 @@
 ---
 title: Maintaining App-V (Windows 10)
-description: Maintaining App-V
+description: After you have deployed App-V for Windows 10, you can use the following information to maintain the App-V infrastructure.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # Maintaining App-V

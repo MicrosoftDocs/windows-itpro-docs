@@ -1,26 +1,24 @@
 ---
 title: BitLocker DDF file
-description: BitLocker DDF file
-ms.author: lomayor
+description: Learn about the OMA DM device description framework (DDF) for the BitLocker configuration service provider.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 06/29/2018
+ms.localizationpriority: medium
+ms.date: 09/30/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # BitLocker DDF file
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 This topic shows the OMA DM device description framework (DDF) for the **BitLocker** configuration service provider. 
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version Windows 10, version 1809. 
+The XML below is the current version for this CSP. 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -46,7 +44,7 @@ The XML below is the current version Windows 10, version 1809.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/3.0/MDM/BitLocker</MIME>
+            <MIME>com.microsoft/5.0/MDM/BitLocker</MIME>
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
@@ -735,6 +733,206 @@ The XML below is the current version Windows 10, version 1809.
               <MSFT:SupportedValue value="1" description="RequireDeviceEncryption policy will try to enable encryption on all fixed drives even if a current logged in user is standard user."/>
             </MSFT:SupportedValues>
           </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>ConfigureRecoveryPasswordRotation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
+                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when 
+                          Active Directory back up for recovery password is configured to required.
+                          For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
+                          For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
+                       
+                          Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
+                                            1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
+                                            2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
+                         
+                         If you want to disable this policy use the following SyncML:
+ 
+                         <Replace>
+                         <CmdID>112</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/ConfigureRecoveryPasswordRotation</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">int</Format>
+                             </Meta>
+                             <Data>0</Data>
+                           </Item>
+                         </Replace>
+            </Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="2">
+              <MSFT:SupportedValue value="0" description="Numeric Recovery Passwords Key rotation OFF"/>
+              <MSFT:SupportedValue value="1" description="Default Value. Numeric Recovery Passwords Key Rotation ON for AAD joined devices."/>
+              <MSFT:SupportedValue value="2" description="Numeric Recovery Passwords Key Rotation ON for both AAD and Hybrid devices"/>
+            </MSFT:SupportedValues>
+          </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>RotateRecoveryPasswords</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Exec />
+            </AccessType>
+            <Description> Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
+                          This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
+                          
+The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
+                              * For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
+                              *For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
+                       
+                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes: 
+                              
+* status\RotateRecoveryPasswordsStatus 
+                              * status\RotateRecoveryPasswordsRequestID
+                          
+
+                          
+Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.\
+                         
+                         <Exec>
+                         <CmdID>113</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/RotateRecoveryPasswords</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">chr</Format>
+                             </Meta>
+                             <Data>&lt;RequestID/&gt;</Data>
+                           </Item>
+                         </Exec>
+            </Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+        </DFProperties>
+        </Node>
+
+        <Node>
+          <NodeName>Status</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>DeviceEncryptionStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>This node reports compliance state of device encryption on the system.
+                           Value '0' means the device is compliant. Any other value represents a non-compliant device.
+              </Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+
+          <Node>
+            <NodeName>RotateRecoveryPasswordsStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description> This Node reports the status of RotateRecoveryPasswords request. 
+                              Status code can be one of the following:
+                              NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure 
+ 
+                </Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+
+          <Node>
+            <NodeName>RotateRecoveryPasswordsRequestID</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+                              This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
+                              To ensure the status is correctly matched to the request ID.                        
+                  
+                </Description>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+             </DFProperties>
+          </Node>
         </Node>
       </Node>
 </MgmtTree>

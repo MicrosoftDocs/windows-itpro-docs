@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -88,7 +88,7 @@ Some things that you can check on the device are:
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
-- [Details on the TPM standard](https://www.microsoft.com/en-us/research/project/the-trusted-platform-module-tpm/) (has links to features using TPM)
+- [Details on the TPM standard](https://www.microsoft.com/research/project/the-trusted-platform-module-tpm/) (has links to features using TPM)
 - [TPM Base Services Portal](https://docs.microsoft.com/windows/desktop/TBS/tpm-base-services-portal)
 - [TPM Base Services API](https://docs.microsoft.com/windows/desktop/api/_tbs/)
 - [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule)

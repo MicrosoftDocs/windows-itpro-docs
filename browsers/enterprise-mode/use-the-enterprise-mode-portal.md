@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
-author: eavena
+ms.author: dansimp
+author: dansimp
 ---
 
 # Use the Enterprise Mode Site List Portal

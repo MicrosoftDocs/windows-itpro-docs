@@ -1,6 +1,6 @@
 ---
 title: Log Files (Windows 10)
-description: Log Files
+description: Learn how to use User State Migration Tool (USMT) 10.0 logs to monitor your migration and to troubleshoot errors and failed migrations.
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
 ms.reviewer: 
 manager: laurawi
@@ -251,7 +251,7 @@ The following examples describe common scenarios in which you can use the diagno
 
 **Why is this file not migrating when I authored an "include" rule for it?**
 
-Let’s imagine that we have the following directory structure and that we want the “data” directory to be included in the migration along with the “New Text Document.txt” file in the “New Folder.” The directory of **C:\\data** contains:
+Let's imagine that we have the following directory structure and that we want the "data" directory to be included in the migration along with the "New Text Document.txt" file in the "New Folder." The directory of **C:\\data** contains:
 
 ```
 01/21/2009  10:08 PM    <DIR>          .
@@ -293,7 +293,7 @@ To migrate these files you author the following migration XML:
 </migration>
 ```
 
-However, upon testing the migration you notice that the “New Text Document.txt” file isn’t included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
+However, upon testing the migration you notice that the "New Text Document.txt" file isn't included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
 ``` xml
 <MigUnitList>
@@ -312,7 +312,7 @@ However, upon testing the migration you notice that the “New Text Document.txt
 </Perform>
 ```
 
-Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The &lt;Perform&gt; section details the actual files that were scheduled for gathering and the result of the gathering operation. The “New Text Document.txt” file doesn’t appear in this section, which confirms that the migration rule was not correctly authored.
+Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The &lt;Perform&gt; section details the actual files that were scheduled for gathering and the result of the gathering operation. The "New Text Document.txt" file doesn't appear in this section, which confirms that the migration rule was not correctly authored.
 
 An analysis of the XML elements reference topic reveals that the &lt;pattern&gt; tag needs to be modified as follows:
 
@@ -345,7 +345,7 @@ This diagnostic log confirms that the modified &lt;pattern&gt; value enables the
 
 **Why is this file migrating when I authored an exclude rule excluding it?**
 
-In this scenario, you have the following directory structure and you want all files in the “data” directory to migrate, except for text files. The **C:\\Data** folder contains:
+In this scenario, you have the following directory structure and you want all files in the "data" directory to migrate, except for text files. The **C:\\Data** folder contains:
 
 ```
 Directory of C:\Data
@@ -395,7 +395,7 @@ You author the following migration XML:
 </component>
 ```
 
-However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component “DATA1”, the following XML section is discovered:
+However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
 ``` xml
 <MigUnitList>

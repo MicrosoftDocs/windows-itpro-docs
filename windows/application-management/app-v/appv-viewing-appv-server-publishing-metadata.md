@@ -1,6 +1,6 @@
 ---
 title: Viewing App-V Server Publishing Metadata (Windows 10)
-description: Viewing App-V Server Publishing Metadata
+description: Use this procedure to view App-V Server publishing metadata, which can help you resolve publishing-related issues.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ---
 
 

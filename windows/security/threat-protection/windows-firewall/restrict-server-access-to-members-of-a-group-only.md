@@ -1,6 +1,6 @@
 ---
 title: Restrict Server Access to Members of a Group Only (Windows 10)
-description: Restrict Server Access to Members of a Group Only
+description: Create a firewall rule to access isolated servers running Windows Server 2008 or later and restrict server access to members of a group.
 ms.assetid: ea51c55b-e1ed-44b4-82e3-3c4287a8628b
 ms.reviewer: 
 ms.author: dansimp

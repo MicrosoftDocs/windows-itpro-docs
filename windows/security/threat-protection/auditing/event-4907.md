@@ -285,5 +285,5 @@ For 4907(S): Auditing settings on object were changed.
 
 - If you have critical file or registry objects and you need to monitor all modifications (especially changes in SACL), monitor for specific “**Object\\Object Name”**.
 
-- If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<strong>.</strong>
+- If you have high-value computers for which you need to monitor all changes for all or specific file or registry objects, monitor for all [4907](event-4907.md) events on these computers<b>.</b>
 

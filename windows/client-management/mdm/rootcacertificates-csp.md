@@ -1,6 +1,6 @@
 ---
 title: RootCATrustedCertificates CSP
-description: RootCATrustedCertificates CSP
+description: Learn how the RootCATrustedCertificates configuration service provider (CSP) enables the enterprise to set the Root Certificate Authority (CA) certificates.
 ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
 ms.reviewer: 
 manager: dansimp
@@ -23,7 +23,9 @@ The RootCATrustedCertificates configuration service provider enables the enterpr
  
 The following image shows the RootCATrustedCertificates configuration service provider in tree format.
 
-![roocacertificate](images/provisioning-csp-rootcacertificate.png)
+Detailed specification of the principal root nodes:
+
+![rootcacertificate](images/provisioning-csp-rootcacertificate.png)
 
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use **./Device/Vendor/MSFT** path and for user certificates use **./User/Vendor/MSFT** path.
@@ -37,7 +39,6 @@ Defines the certificate store that contains root, or self-signed certificates, i
 > [!Note]
 > The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
- 
 <a href="" id="rootcatrustedcertificates-ca"></a>**RootCATrustedCertificates/CA**  
 Node for CA certificates.
 
@@ -48,42 +49,30 @@ Node for trusted publisher certificates.
 Node for trusted people certificates.
 
 <a href="" id="rootcatrustedcertificates-untrustedcertificates"></a>**RootCATrustedCertificates/UntrustedCertificates**  
-Addeded in Windows 10, version 1803. Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
+Added in Windows 10, version 1803. Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
 
 <a href="" id="certhash"></a>**_CertHash_**  
-Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.
+Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value. This node is common for all the principal root nodes.  The supported operations are Get and Delete.
 
-The supported operations are Get and Delete.
+The following nodes are all common to the **_CertHash_** node:
 
 <a href="" id="-encodedcertificate"></a>**/EncodedCertificate**  
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
-
-The supported operations are Add, Get, and Replace.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.  The supported operations are Add, Get, and Replace.
 
 <a href="" id="-issuedby"></a>**/IssuedBy**  
-Returns the name of the certificate issuer. This is equivalent to the **Issuer** member in the CERT\_INFO data structure.
-
-The only supported operation is Get.
+Returns the name of the certificate issuer. This is equivalent to the **Issuer** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
 <a href="" id="-issuedto"></a>**/IssuedTo**  
-Returns the name of the certificate subject. This is equivalent to the **Subject** member in the CERT\_INFO data structure.
-
-The only supported operation is Get.
+Returns the name of the certificate subject. This is equivalent to the **Subject** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
 <a href="" id="-validfrom"></a>**/ValidFrom**  
-Returns the starting date of the certificate's validity. This is equivalent to the **NotBefore** member in the CERT\_INFO data structure.
-
-The only supported operation is Get.
+Returns the starting date of the certificate's validity. This is equivalent to the **NotBefore** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
 <a href="" id="-validto"></a>**/ValidTo**  
-Returns the expiration date of the certificate. This is equivalent to the **NotAfter** member in the CERT\_INFO data structure.
-
-The only supported operation is Get.
+Returns the expiration date of the certificate. This is equivalent to the **NotAfter** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
 <a href="" id="-templatename"></a>**/TemplateName**  
-Returns the certificate template name.
-
-The only supported operation is Get.
+Returns the certificate template name.  The only supported operation is Get.
 
 ## Related topics
 

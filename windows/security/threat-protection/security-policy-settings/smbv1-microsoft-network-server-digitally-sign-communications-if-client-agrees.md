@@ -1,6 +1,6 @@
 ---
 title: SMBv1 Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
-description: For SMBv1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (if client agrees) security policy setting.
+description: Best practices, security considerations and more for the security policy setting, Microsoft network server Digitally sign communications (if client agrees).
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
 ms.reviewer: 
 ms.author: dansimp
@@ -57,7 +57,7 @@ There are three other policy settings that relate to packet-signing requirements
 
     -   Disable [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md).
     -   Disable [Microsoft network server: Digitally sign communications (always)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
-    -   Enable [Microsoft network server: Digitally sign communications (always)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
+    -   Enable [Microsoft Network Client: Digitally Sign Communications (If Server Agrees)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
     -   Enable **Microsoft Network Server: Digitally Sign Communications (If Client Agrees)**.
 
 2.  Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.

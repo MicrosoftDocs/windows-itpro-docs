@@ -10,8 +10,8 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu, devices
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 10/13/2017
 ---
 
@@ -457,7 +457,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 <td align="left">X</td>
 </tr>
 <tr class="odd">
-<td align="left">Use System Center 2012 R2 Configuration Manager for management</td>
+<td align="left">Use Microsoft Endpoint Configuration Manager for management</td>
 <td align="left">X</td>
 <td align="left"></td>
 <td align="left">X</td>
@@ -493,7 +493,7 @@ You may ask the question, “Why plan for device, user, and app management befor
 
 Also, planning management before deployment is essential to being ready to support the devices as you deploy them. You want to have your management processes and technology in place when the first teachers, facility, or students start using their new Windows device.
 
-Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, System Center Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
+Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, Microsoft Endpoint Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
 
 Table 6. Device, user, and app management products and technologies
 

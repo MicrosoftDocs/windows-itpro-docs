@@ -1,6 +1,6 @@
 ---
 title: Create an Outbound Port Rule (Windows 10)
-description: Create an Outbound Port Rule
+description: Learn to block outbound traffic on a port by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.assetid: 59062b91-756b-42ea-8f2a-832f05d77ddf
 ms.reviewer: 
 ms.author: dansimp

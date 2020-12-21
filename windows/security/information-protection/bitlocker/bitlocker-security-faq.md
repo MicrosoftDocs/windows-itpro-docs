@@ -1,6 +1,6 @@
 ---
 title: BitLocker Security FAQ (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+description: Learn more about how BitLocker security works. Browse frequently asked questions, such as, "What form of encryption does BitLocker use?"
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
@@ -8,13 +8,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019 
+ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker Security FAQ

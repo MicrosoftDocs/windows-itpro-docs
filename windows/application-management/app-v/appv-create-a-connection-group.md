@@ -1,6 +1,6 @@
 ---
 title: How to create a connection group (Windows 10)
-description: How to create a connection group with the App-V Management Console.
+description: Learn how to create a connection group with the App-V Management Console and where to find information about managing connection groups.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to create a connection group

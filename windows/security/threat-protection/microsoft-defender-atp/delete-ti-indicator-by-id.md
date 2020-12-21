@@ -1,6 +1,6 @@
 ---
 title: Delete Indicator API.
-description: Deletes Indicator entity by ID.
+description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender Advanced Threat Protection.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,15 +18,21 @@ ms.topic: article
 
 # Delete Indicator API
 
-**Applies to:**  
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
->[!Note]
-> Currently this API is only supported for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-- Deletes an Indicator entity by ID.
+## API description
+Deletes an [Indicator](ti-indicator.md) entity by ID.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -42,7 +48,7 @@ Application |	Ti.ReadWrite.All |	'Read and write Indicators'
 Delete https://api.securitycenter.windows.com/api/indicators/{id}
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## Request headers
@@ -66,15 +72,5 @@ If Indicator with the specified id was not found - 404 Not Found.
 Here is an example of the request.
 
 ```
-DELETE https://api.securitycenter.windows.com/api/indicators/220e7d15b0b3d7fac48f2bd61114db1022197f7f
-```
-
-**Response**
-
-Here is an example of the response.
-
-
-```
-HTTP/1.1 204 NO CONTENT
-
+DELETE https://api.securitycenter.windows.com/api/indicators/995
 ```

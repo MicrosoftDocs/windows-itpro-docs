@@ -1,6 +1,6 @@
 ---
 title: Monitor the use of removable storage devices (Windows 10)
-description: This topic for the IT professional describes how to monitor attempts to use removable storage devices to access network resources. It describes how to use advanced security auditing options to monitor dynamic access control objects.
+description: Learn how advanced security auditing options can be used to monitor attempts to use removable storage devices to access network resources.
 ms.assetid: b0a9e4a5-b7ff-41c6-96ff-0228d4ba5da8
 ms.reviewer: 
 ms.author: dansimp
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date:
 ---
 
 # Monitor the use of removable storage devices
@@ -28,7 +28,10 @@ If you configure this policy setting, an audit event is generated each time a us
 
 Use the following procedures to monitor the use of removable storage devices and to verify that the devices are being monitored.
 
->**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
+Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
+
+> [!NOTE] 
+> When a policy to audit removable storage is pushed to a computer, a new [Security Descriptor](https://docs.microsoft.com/windows/win32/secauthz/audit-generation) needs to be applied to all removable storage devices with the audit settings. The [security descriptor for a device](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-access) can be set up either when the device is installed, or by setting up the [device properties in the registry](https://docs.microsoft.com/windows-hardware/drivers/kernel/setting-device-object-registry-properties-after-installation), which is done by calling a [device installation function](https://docs.microsoft.com/previous-versions/ff541299). This may require the device to restart to apply the new security descriptor.
  
 **To configure settings to monitor removable storage devices**
 
@@ -46,7 +49,8 @@ After you configure the settings to monitor removable storage devices, use the f
 
 1.  Sign in to the computer that hosts the resources that you want to monitor. Press the Windows key + R, and then type **cmd** to open a Command Prompt window.
 
-    >**Note:**  If the User Account Control dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+    > [!NOTE]
+    > If the User Account Control dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
      
 2.  Type **gpupdate /force**, and press ENTER.
 3.  Connect a removable storage device to the targeted computer and attempt to copy a file that is protected with the Removable Storage Audit policy.
@@ -56,7 +60,8 @@ After you configure the settings to monitor removable storage devices, use the f
 
     Key information to look for includes the name and account domain of the user who attempted to access the file, the object that the user is attempting to access, resource attributes of the resource, and the type of access that was attempted.
 
-    >**Note:**  We do not recommend that you enable this category on a file server that hosts file shares on a removable storage device. When Removable Storage Auditing is configured, any attempt to access the removable storage device will generate an audit event.
+    > [!NOTE]
+    > We do not recommend that you enable this category on a file server that hosts file shares on a removable storage device. When Removable Storage Auditing is configured, any attempt to access the removable storage device will generate an audit event.
      
 ### Related resource
 

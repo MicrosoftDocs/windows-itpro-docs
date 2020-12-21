@@ -1,66 +1,98 @@
 ---
-title: Remediation
-description: You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations. Threat & Vulnerability Management bridges the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+title: Remediate vulnerabilities with threat and vulnerability management
+description: Remediate security weaknesses discovered through security recommendations, and create exceptions if needed, in threat and vulnerability management. 
+keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: conceptual
-ms.date: 04/11/2019
 ---
-# Remediation
+# Remediate vulnerabilities with threat and vulnerability management
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
+
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+## Request remediation
+
+The threat and vulnerability management capability in Microsoft Defender for Endpoint bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+
+### Enable Microsoft Intune connection
+
+To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
+
+**Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
+
+See [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+### Remediation request steps
+
+1. Go to the threat and vulnerability management navigation menu in the Microsoft Defender Security Center, and select [**Security recommendations**](tvm-security-recommendation.md).
+
+2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
+
+3. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
+
+4. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
+
+5. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
+
+6. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
+
+If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 >[!NOTE]
->To use this capability, enable your Microsoft Intune connections. Navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle on.
+>If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
 
-After your organization's cybersecurity weaknesses are identified and mapped to actionable security recommendations, you can start creating security tasks through the integration with Microsoft Intune where remediation tickets are created.
+After your organization's cybersecurity weaknesses are identified and mapped to actionable [security recommendations](tvm-security-recommendation.md), start creating security tasks. You can create tasks through the integration with Microsoft Intune where remediation tickets are created.
 
-You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
+Lower your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
-## Navigate through your remediation options 
-You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
-1. From the flyout panel, you'll see the security recommendation details including your next steps. Click **Remediation options**.
-2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
+## View your remediation activities
+
+When you submit a remediation request from the Security recommendations page, it kicks-off a remediation activity. A security task is created that can be tracked in the threat and vulnerability management **Remediation** page, and a remediation ticket is created in Microsoft Intune.
+
+If you chose the "attention required" remediation option, there will be no progress bar, ticket status, or due date since there is no actual action we can monitor.
+
+Once you are in the Remediation page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, export to CSV, or mark as complete.
+![Example of the Remediation page, with a selected remediation activity, and that activity's flyout listing the description, IT service and device management tools, and device remediation progress.](images/remediation_flyouteolsw.png)
 
 >[!NOTE]
->If your request involves remediating more than 10,000 machines, we will only send 10,000 machines for remediation to Intune.
+> There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
 
-3. Select a remediation due date.
-4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
+### Completed by column
 
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+Track who closed the remediation activity with the "Completed by" column on the Remediation page.
 
-## How it works
+- **Email address**: The email of the person who manually completed the task
+- **System confirmation**: The task was automatically completed (all devices remediated)
+- **N/A**: Information is not available because we don't know how this older task was completed
 
-When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. 
+![Created by and completed by columns with two rows. One row for completed by has example of an email, the other row says system confirmation.](images/tvm-completed-by.png)
 
-It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation** page, and it also creates a remediation ticket in Microsoft Intune.
+### Top remediation activities in the dashboard
 
-You also have the option to export all remediation activity data to CSV for records, reporting purposes, or if you want to notify your IT administration counterpart that a remediation ticket has been submitted. 
+View **Top remediation activities** in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md). Select any of the entries to go to the **Remediation** page. You can mark the remediation activity as completed after the IT admin team remediates the task.
 
-The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
+![Example of Top remediation activities card with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
 
-However, if the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. The exceptions you've filed will also show up in the **Remediation** page, in the **Exceptions** tab.
+## Related articles
 
-## Related topics
-- [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
-- [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
-- [Exposure score](tvm-exposure-score.md)
-- [Configuration score](configuration-score.md)
-- [Security recommendation](tvm-security-recommendation.md)
-- [Software inventory](tvm-software-inventory.md)
-- [Weaknesses](tvm-weaknesses.md)
-- [Scenarios](threat-and-vuln-mgt-scenarios.md)
-
-
+- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
+- [Dashboard](tvm-dashboard-insights.md)
+- [Security recommendations](tvm-security-recommendation.md)

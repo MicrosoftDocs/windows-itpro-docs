@@ -1,6 +1,6 @@
 ---
 title: RootCATrustedCertificates DDF file
-description: RootCATrustedCertificates DDF file
+description: Learn about the OMA DM device description framework (DDF) for the RootCACertificates configuration service provider (CSP).
 ms.assetid: 06D8787B-D3E1-4D4B-8A21-8045A8F85C1C
 ms.reviewer: 
 manager: dansimp

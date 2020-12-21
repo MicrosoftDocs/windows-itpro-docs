@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,7 +41,7 @@ This policy setting configured which TPM authorization values are stored in the 
 |--------------|---------------|---------|-----------------|-----------------|------------------|
 | OwnerAuthAdmin | StorageOwnerAuth | Create SRK | No      | Yes             | Yes              |
 | OwnerAuthEndorsement | EndorsementAuth | Create or use EK (1.2 only: Create AIK) | No  | Yes  | Yes   |
-| OwnerAuthFull | LockoutAuth  | Reset/change Dictionary Attack Protection | No | No | No   |
+| OwnerAuthFull | LockoutAuth  | Reset/change Dictionary Attack Protection | No | No | Yes   |
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 
@@ -131,16 +131,16 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
-# TPM Group Policy settings in the Windows Security app
+## TPM Group Policy settings in the Windows Security app
 
 You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
 
 **Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
 
-## Disable the Clear TPM button
+### Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
 
-## Hide the TPM Firmware Update recommendation
+### Hide the TPM Firmware Update recommendation
 If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics

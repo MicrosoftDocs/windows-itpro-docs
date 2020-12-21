@@ -6,35 +6,42 @@ keywords: privacy, manage connections to Microsoft, Windows 10
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
-author: medgarmedgar
-ms.author: v-medgar
-ms.date: 7/9/2019
+ms.localizationpriority: high
+audience: ITPro
+author: robsize
+ms.author: dansimp
+manager: robsize
+ms.date: 12/1/2020
 ---
 
-# Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
+# Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
 
 **Applies to**
 
 -   Windows 10 Enterprise 1903 version and newer
 
-You can use Microsoft InTune with MDM CSPs and custom [OMA URIs](https://docs.microsoft.com/intune/custom-settings-windows-10) to minimize connections from Windows to Microsoft services, or to configure particular privacy settings. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
+This article describes the network connections that Windows 10 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](https://docs.microsoft.com/intune/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+>[!IMPORTANT]
+>- The Allowed Traffic endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic)
+>   - CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+>   - There is some traffic which is specifically required for the Microsoft Intune based management of Windows 10 devices. This traffic includes Windows Notifications Service (WNS), Automatic Root Certificates Update (ARCU), and some Windows Update related traffic. The aforementioned traffic comprises the Allowed Traffic for Microsoft Intune MDM Server to manage Windows 10 devices.
+>- For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we do not recommend disabling any of these features.
+>- To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
+>- The **Get Help** and **Give us Feedback** links in Windows may no longer work after applying some or all of the MDM/CSP settings.
 
-Note, there is some traffic which is required (i.e. "whitelisted") for the operation of Windows and the Microsoft InTune based management.  This traffic includes CRL and OCSP network traffic which will show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.  Additional whitelisted traffic specifically for MDM managed devices includes Windows Notification Service related traffic as well as some specific Microsoft InTune and Windows Update related traffic.
+>[!Warning]
+>If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Remove Everything" option the >Windows Restricted Traffic Limited Functionality settings will need to be re-applied in order re-restrict the device's egress traffic. >To do this the client must be re-enrolled to the Microsoft Intune service. Egress traffic may occur during the period prior to the re->application of the Restricted Traffic Limited Functionality settings.  If the user executes a "Reset this PC" with the "Keep my files" >option the Restricted Traffic Limited Functionality settings are retained on the device, and therefore the client will remain in a >Restricted Traffic configuration during and after the "Keep my files" reset, and no re-enrollment is required. 
 
-For more information on Microsoft InTune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
+For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
-For detailed information about managing network connections to Microsoft services using Registries, Group Policies, or UI see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows 10 operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp**@**microsoft.com**. 
 
 
-The endpoints for the MDM “whitelisted” traffic are in the [Whitelisted Traffic](#bkmk-mdm-whitelist). 
-
-
-### Settings for Windows 10 Enterprise edition 1903 and newer
+## Settings for Windows 10 Enterprise edition 1903 and newer
 
 The following table lists management options for each setting.
 
@@ -63,7 +70,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 
 1. **Internet Explorer** The following Microsoft Internet Explorer MDM policies are available in the [Internet Explorer CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer)
    1. MDM Policy: [InternetExplorer/AllowSuggestedSites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-allowsuggestedsites). Recommends websites based on the user’s browsing activity. **Set to Disabled**
-   1. MDM Policy: [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to String** with Value:
+   1. MDM Policy: [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing Windows Defender SmartScreen, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to String** with Value:
       1. **\<enabled/>\<data id=”IE9SafetyFilterOptions” value=”1”/>**
    1. MDM Policy: [InternetExplorer/DisableFlipAheadFeature]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disableflipaheadfeature). Determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website. **Set to Enabled**
    1. MDM Policy: [InternetExplorer/DisableHomePageChange]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablehomepagechange). Determines whether users can change the default Home Page or not. **Set to String** with Value:
@@ -86,7 +93,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. MDM Policy: [Browser/AllowMicrosoftCompatbilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowmicrosoftcompatibilitylist). Specify the Microsoft compatibility list in Microsoft Edge. **Set to 0 (zero)**
    1. MDM Policy: [Browser/AllowPasswordManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowpasswordmanager). Choose whether employees can save passwords locally on their devices. **Set to 0 (zero)**
    1. MDM Policy: [Browser/AllowSearchSuggestionsinAddressBar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchsuggestionsinaddressbar). Choose whether the Address Bar shows search suggestions. **Set to 0  (zero)**
-   1. MDM Policy: [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether SmartScreen is turned on or off.  **Set to 0  (zero)**
+   1. MDM Policy: [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether Windows Defender SmartScreen is turned on or off.  **Set to 0  (zero)**
 
 1. **Network Connection Status Indicator**
    1. [Connectivity/DisallowNetworkConnectivityActiveTests](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests).  Note: After you apply this policy you must restart the device for the policy setting to take effect. **Set to 1 (one)**
@@ -98,7 +105,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **OneDrive**
    1. MDM Policy: [DisableOneDriveFileSync](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync). Allows IT Admins to prevent apps and features from working with files on OneDrive. **Set to 1 (one)** 
    1. Ingest the ADMX - To get the latest OneDrive ADMX file you need an up-to-date Windows 10 client. The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (e.g. "18.162.0812.0001"). There is a folder named "adm" which contains the admx and adml policy definition files. 
-   1. MDM Policy: Prevent Network Traffic before User SignIn. **PreventNetworkTrafficPreUserSignIn**. The OMA-URI value is:  ./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn, **String, \<enabled/>**
+   1. MDM Policy: Prevent Network Traffic before User SignIn. **PreventNetworkTrafficPreUserSignIn**. The OMA-URI value is:  **./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn**, Data type: **String**, Value: **\<enabled/>**
 
 
 1. **Privacy settings** Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
@@ -134,23 +141,25 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **Windows Defender**
    1. [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection). Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
    1. [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent). Stop sending file samples back to Microsoft. **Set to 2 (two)**
-   1. Windows Defender Smartscreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender Smartscreen. **Set to 0 (zero)**
-   1. Windows Defender Smartscreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
-   1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
+   1. [Defender/EnableSmartScreenInShell](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#mdm-settings). Turns off SmartScreen in Windows for app and file execution. **Set to 0 (zero)**
+   1. Windows Defender SmartScreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender SmartScreen. **Set to 0 (zero)**
+   1. Windows Defender SmartScreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
+   1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
+   1. [Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm). Allows you to define the order in which different definition update sources should be contacted. The OMA-URI for this is: **./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder**, Data type: **String**, Value: **FileShares**
 1. **Windows Spotlight** - [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**
 1. **Microsoft Store**
    1. [ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps). Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)**
    1. [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate). Specifies whether automatic update of apps from Microsoft Store are allowed. **Set to 0 (zero)**
 1. **Apps for websites** - [ApplicationDefaults/EnableAppUriHandlers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults#applicationdefaults-enableappurihandlers). This policy setting determines whether Windows supports web-to-app linking with app URI handlers. **Set to 0 (zero)** 
 1. **Windows Update Delivery Optimization** - The following Delivery Optimization MDM policies are available in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-   1. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode). Let’s you choose where Delivery Optimization gets or sends updates and apps. **Set to 100 (one hundred)**
+   1. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode). Let’s you choose where Delivery Optimization gets or sends updates and apps. **Set to 99 (ninety-nine)**
 1. **Windows Update**
    1. [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Control automatic updates. **Set to 5 (five)**
-   1. Windows Update Allow Update Service - [Update/AllowUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
-   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value: 
+   1. Windows Update Allow Update Service - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
+   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value: 
       1. **\<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>**
 
-### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
+### <a href="" id="bkmk-mdm-allowedtraffic"></a> Allowed traffic for Microsoft Intune / MDM configurations
 
 |**Allowed traffic endpoints** | 
 | --- | 
@@ -159,6 +168,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 |client.wns.windows.com|
 |crl.microsoft.com/pki/crl/*|
 |ctldl.windowsupdate.com|
+|*displaycatalog.mp.microsoft.com|
 |dm3p.wns.windows.com|
 |\*microsoft.com/pkiops/\*|
 |ocsp.digicert.com/*|

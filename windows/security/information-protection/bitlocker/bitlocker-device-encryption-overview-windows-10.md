@@ -6,14 +6,15 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.reviewer: 
+ms.custom: bitlocker
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10
@@ -22,7 +23,6 @@ ms.reviewer:
 -   Windows 10
 
 This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
-For an architectural overview about how BitLocker Device Encryption  works with Secure Boot, see [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview). 
 For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
 
 When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and by providing new strategies.
@@ -127,13 +127,13 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
 * Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
-* Provides centralized reporting and hardware management with Microsoft System Center Configuration Manager.
+* Provides centralized reporting and hardware management with Microsoft Microsoft Endpoint Configuration Manager.
 * Reduces the workload on the help desk to assist end users with BitLocker recovery requests.
 * Enables end users to recover encrypted devices independently by using the Self-Service Portal.
 * Enables security officers to easily audit access to recovery key information.
 * Empowers Windows Enterprise users to continue working anywhere with the assurance that their corporate data is protected.
 * Enforces the BitLocker encryption policy options that you set for your enterprise.
-* Integrates with existing management tools, such as System Center Configuration Manager.
+* Integrates with existing management tools, such as Microsoft Endpoint Configuration Manager.
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 

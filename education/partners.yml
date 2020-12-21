@@ -1,0 +1,33 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Education Documentation for partners
+summary: Looking for resources available to Microsoft Education partners? Start here.
+
+metadata:
+  title: Microsoft 365 Education Documentation for partners
+  description: Looking for resources available to Microsoft Education partners? Start here.
+  ms.service: help
+  ms.topic: hub-page
+  author: LaurenMoynihan
+  ms.author: v-lamoyn
+  ms.date: 10/24/2019
+
+additionalContent:
+  sections:
+    - items:
+        # Card
+        - title: Microsoft Partner Network
+          summary: Discover the latest news and resources for Microsoft Education products, solutions, licensing and readiness.
+          url: https://partner.microsoft.com/solutions/education
+        # Card
+        - title: Authorized Education Partner (AEP) program
+          summary: Become authorized to purchase and resell academic priced offers and products to Qualified Educational Users (QEUs).
+          url: https://www.mepn.com/
+        # Card
+        - title: Authorized Education Partner Directory
+          summary: Search through the list of Authorized Education Partners worldwide who can deliver on customer licensing requirements, and provide solutions and services to current and future school needs.
+          url: https://www.mepn.com/MEPN/AEPSearch.aspx
+        # Card
+        - title: Education Partner community Yammer group
+          summary: Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.
+          url: https://www.yammer.com/mepn/

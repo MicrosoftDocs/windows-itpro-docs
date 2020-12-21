@@ -1,6 +1,6 @@
 ---
 title: Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
-description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
+description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -33,6 +33,7 @@ Before adding Azure Active Directory (Azure AD) joined devices to your existing 
 - Certificate Revocation List (CRL) Distribution Point (CDP)
 - 2016 Domain Controllers
 - Domain Controller certificate
+- Network infrastructure in place to reach your on-premises domain controller. If the machines are external, this can be achieved using any VPN solution.
 
 ### Azure Active Directory Connect synchronization
 Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
@@ -44,7 +45,7 @@ If you upgraded your Active Directory schema to the Windows Server 2016 schema a
 A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
 
 You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
-![dsregcmd outpout](images/aadj/dsregcmd.png)
+![dsregcmd output](images/aadj/dsregcmd.png)
 
 ### CRL Distribution Point (CDP)
 
@@ -57,6 +58,9 @@ The preceding domain controller certificate shows a CRL distribution path (CDP) 
 To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
+
+> [!NOTE]
+> If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
 
 ### Windows Server 2016 Domain Controllers
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
@@ -72,10 +76,12 @@ Certificate authorities write CRL distribution points in certificates as they ar
 Windows Hello for Business enforces the strict KDC validation security feature, which imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
-- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**. 
+- The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
 - Use the **Kerberos Authentication certificate template** instead of any other older template.
 - The domain controller's certificate has the **KDC Authentication** enhanced key usage.
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain.
+- The domain controller's certificate's signature hash algorithm is **sha256**.
+- The domain controller's certificate's public key is **RSA (2048 Bits)**.
 
 
 > [!Tip]
@@ -122,7 +128,7 @@ You need to host your new certificate revocation list of a web server so Azure A
 5. Select **CDP** under **Default Web Site** in the navigation pane.  Double-click **Configuration Editor**.
 6. In the **Section** list, navigate to **system.webServer/security/requestFiltering**.
    ![IIS Configuration Editor requestFiltering](images/aadj/iis-config-editor-requestFiltering.png)   
-   In the list of named value-pairs in the content pane, configure **allowDoubleEscapting** to **True**.  Click **Apply** in the actions pane.
+   In the list of named value-pairs in the content pane, configure **allowDoubleEscaping** to **True**.  Click **Apply** in the actions pane.
    ![IIS Configuration Editor double escaping](images/aadj/iis-config-editor-allowDoubleEscaping.png)
 7. Close **Internet Information Services (IIS) Manager**. 
 
@@ -150,6 +156,9 @@ These procedures configure NTFS and share permissions on the web server to allow
 8. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
+
+> [!Tip]
+> Make sure that users can access **\\\Server FQDN\sharename**.
 
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
@@ -180,7 +189,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 1. On the issuing certificate authority, sign-in as a local administrator.  Start the **Certificate Authority** console from **Administrative Tools**. 
 2. In the navigation pane, right-click the name of the certificate authority and click **Properties**
 3. Click **Extensions**.  On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, click **Add**. Type <strong>http://crl.[domainname]/cdp/</strong> in **location**.  For example, *<http://crl.corp.contoso.com/cdp/>* or *<http://crl.contoso.com/cdp/>* (do not forget the trailing forward slash). 
+4. On the **Extensions** tab, click **Add**. Type <b>http://crl.[domainname]/cdp/</b> in **location**.  For example, *<http://crl.corp.contoso.com/cdp/>* or *<http://crl.contoso.com/cdp/>* (do not forget the trailing forward slash). 
    ![CDP New Location dialog box](images/aadj/cdp-extension-new-location.png)
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
@@ -218,7 +227,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 
 Validate your new CRL distribution point is working. 
 
-1. Open a web browser.  Navigate to <strong>http://crl.[yourdomain].com/cdp</strong>.  You should see two files created from publishing your new CRL.
+1. Open a web browser. Navigate to <b>http://crl.[yourdomain].com/cdp</b>.  You should see two files created from publishing your new CRL.
    ![Validate the new CRL](images/aadj/validate-cdp-using-browser.png)
 
 ### Reissue domain controller certificates
@@ -264,7 +273,7 @@ Steps you will perform include:
 1. Sign-in a domain controller using administrative credentials.
 2. Open the **Run** dialog box.  Type **certlm.msc** to open the **Certificate Manager** for the local computer.
 3. In the navigation pane, expand **Personal**.  Click **Certificates**.  In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
-4. Click the **Certification Path** tab.  In the **Certifcation path** view, select the top most node and click **View Certificate**.
+4. Click the **Certification Path** tab.  In the **Certification path** view, select the top most node and click **View Certificate**.
 ![Certificate Path](images/aadj/certlm-cert-path-tab.png)
 5. In the new **Certificate** dialog box, click the **Details** tab. Click **Copy to File**.
 ![Details tab and copy to file](images/aadj/certlm-root-cert-details-tab.png)
@@ -287,40 +296,42 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 5. In the **Enterprise Root Certificate** blade, click **Assignments**.  In the **Include** tab, select **All Devices** from the **Assign to** list.  Click **Save**.
 ![Intune Profile assignment](images/aadj/intune-device-config-enterprise-root-assignment.png)
 6. Sign out of the Microsoft Azure Portal.
+> [!NOTE]
+> After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
 
 ## Configure Windows Hello for Business Device Enrollment
 
 Sign-in a workstation with access equivalent to a _domain user_.
 
-1. Sign-in to the [Azure Portal](https://portal.azure.com/).
-2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
-3. Click **device enrollment**.
-4. Click **Windows enrollment**
-5. Under **Windows enrollment**, click **Windows Hello for Business**.
-   ![Create Intune Windows Hello for Business Policy](images/aadj/IntuneWHFBPolicy-00.png)
-6. Under **Priority**, click **Default**. 
-7. Under **All users and all devices**, click **Settings**.
-8. Select **Enabled** from the **Configure Windows Hello for Business** list.
-9. Select **Required** next to **Use a Trusted Platform Module (TPM)**.  By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software based keys.
-10. Type the desired **Minimum PIN length** and **Maximum PIN length**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+2. Select **Devices**.
+3. Choose **Enroll devices**.
+4. Select **Windows enrollment**.
+5. Under **Windows enrollment**, select **Windows Hello for Business**.
+   ![Create Windows Hello for Business Policy](images/aadj/MEM.png)
+6. Select **Enabled** from the **Configure Windows Hello for Business** list.
+7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software-based keys.
+8. Enter the desired **Minimum PIN length** and **Maximum PIN length**.
     > [!IMPORTANT]
-    > The default minimum PIN length for Windows Hello for Business on Windows 10 is 6.  Microsoft Intune defaults the minimum PIN length to 4, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to 6.
+    > The default minimum PIN length for Windows Hello for Business on Windows 10 is six.  Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to six.
 
-![Intune Windows Hello for Business policy settings](images/aadj/IntuneWHFBPolicy-01.png)
-
-11. Select the appropriate configuration for the following settings.
+9. Select the appropriate configuration for the following settings:
     * **Lowercase letters in PIN**
     * **Uppercase letters in PIN**
     * **Special characters in PIN**
     * **PIN expiration (days)**
     * **Remember PIN history**
+    
     > [!NOTE]
     > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
-12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
-13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.
-14. Click **Save**
-15. Sign-out of the Azure portal.
+10. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device. To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
+11. Select **No** to **Allow phone sign-in**. This feature has been deprecated.
+12. Choose **Save**.
+13. Sign out of the Microsoft Endpoint Manager admin center.
+
+> [!IMPORTANT]
+> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication).
 
 ## Section Review
 > [!div class="checklist"]
@@ -335,6 +346,3 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  
-
-
-

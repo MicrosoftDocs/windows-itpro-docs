@@ -1,6 +1,6 @@
 ---
 title: DevDetail DDF file
-description: DevDetail DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DevDetail configuration service provider.
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
 ms.reviewer: 
 manager: dansimp
@@ -9,19 +9,16 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/11/2018
+ms.date: 06/03/2020
 ---
 
 # DevDetail DDF file
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **DevDetail** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -489,6 +486,28 @@ The XML below is for Windows 10, version 1809.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DNSComputerName</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This node specifies the DNS name for a device. This setting can be managed remotely. A couple of macros can be embedded within the value for dynamic substitution: %RAND:&lt;# of digits&gt;% and %SERIAL%. Examples: (a) "Test%RAND:6%" will generate a name "Test" followed by 6 random digits (e.g., "Test123456").  (b) "Foo%SERIAL%", will generate a name "Foo" followed by the serial number derived from device's ID. If both macros are in the string, the RANDOM macro will take priority over the SERIAL macro (SERIAL will be ignored). The server must explicitly reboot the device for this value to take effect. This value has a maximum allowed length of 63 characters as per DNS standards.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>TotalStorage</NodeName>
           <DFProperties>
             <AccessType>
@@ -702,4 +721,5 @@ The XML below is for Windows 10, version 1809.
     </Node>
   </Node>
 </MgmtTree>
+
 ```

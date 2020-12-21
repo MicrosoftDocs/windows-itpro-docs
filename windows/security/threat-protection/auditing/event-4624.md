@@ -33,55 +33,55 @@ This event generates when a logon session is created (on destination machine). I
 <br clear="all">
 
 ***Event XML:***
-```
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
-- <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>4624</EventID> 
- <Version>2</Version> 
- <Level>0</Level> 
- <Task>12544</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-12T00:24:35.079785200Z" /> 
- <EventRecordID>211</EventRecordID> 
- <Correlation ActivityID="{00D66690-1CDF-0000-AC66-D600DF1CD101}" /> 
- <Execution ProcessID="716" ThreadID="760" /> 
- <Channel>Security</Channel> 
- <Computer>WIN-GG82ULGC9GO</Computer> 
- <Security /> 
- </System>
-- <EventData>
- <Data Name="SubjectUserSid">S-1-5-18</Data> 
- <Data Name="SubjectUserName">WIN-GG82ULGC9GO$</Data> 
- <Data Name="SubjectDomainName">WORKGROUP</Data> 
- <Data Name="SubjectLogonId">0x3e7</Data> 
- <Data Name="TargetUserSid">S-1-5-21-1377283216-344919071-3415362939-500</Data> 
- <Data Name="TargetUserName">Administrator</Data> 
- <Data Name="TargetDomainName">WIN-GG82ULGC9GO</Data> 
- <Data Name="TargetLogonId">0x8dcdc</Data> 
- <Data Name="LogonType">2</Data> 
- <Data Name="LogonProcessName">User32</Data> 
- <Data Name="AuthenticationPackageName">Negotiate</Data> 
- <Data Name="WorkstationName">WIN-GG82ULGC9GO</Data> 
- <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data> 
- <Data Name="TransmittedServices">-</Data> 
- <Data Name="LmPackageName">-</Data> 
- <Data Name="KeyLength">0</Data> 
- <Data Name="ProcessId">0x44c</Data> 
- <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data> 
- <Data Name="IpAddress">127.0.0.1</Data> 
- <Data Name="IpPort">0</Data> 
- <Data Name="ImpersonationLevel">%%1833</Data> 
- <Data Name="RestrictedAdminMode">-</Data> 
- <Data Name="TargetOutboundUserName">-</Data> 
- <Data Name="TargetOutboundDomainName">-</Data> 
- <Data Name="VirtualAccount">%%1843</Data> 
- <Data Name="TargetLinkedLogonId">0x0</Data> 
- <Data Name="ElevatedToken">%%1842</Data> 
- </EventData>
- </Event>
-
+```xml
+<?xml version="1.0"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4624</EventID>
+    <Version>2</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2015-11-12T00:24:35.079785200Z"/>
+    <EventRecordID>211</EventRecordID>
+    <Correlation ActivityID="{00D66690-1CDF-0000-AC66-D600DF1CD101}"/>
+    <Execution ProcessID="716" ThreadID="760"/>
+    <Channel>Security</Channel>
+    <Computer>WIN-GG82ULGC9GO</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">WIN-GG82ULGC9GO$</Data>
+    <Data Name="SubjectDomainName">WORKGROUP</Data>
+    <Data Name="SubjectLogonId">0x3e7</Data>
+    <Data Name="TargetUserSid">S-1-5-21-1377283216-344919071-3415362939-500</Data>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="TargetDomainName">WIN-GG82ULGC9GO</Data>
+    <Data Name="TargetLogonId">0x8dcdc</Data>
+    <Data Name="LogonType">2</Data>
+    <Data Name="LogonProcessName">User32</Data>
+    <Data Name="AuthenticationPackageName">Negotiate</Data>
+    <Data Name="WorkstationName">WIN-GG82ULGC9GO</Data>
+    <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x44c</Data>
+    <Data Name="ProcessName">C:\\Windows\\System32\\svchost.exe</Data>
+    <Data Name="IpAddress">127.0.0.1</Data>
+    <Data Name="IpPort">0</Data>
+    <Data Name="ImpersonationLevel">%%1833</Data>
+    <Data Name="RestrictedAdminMode">-</Data>
+    <Data Name="TargetOutboundUserName">-</Data>
+    <Data Name="TargetOutboundDomainName">-</Data>
+    <Data Name="VirtualAccount">%%1843</Data>
+    <Data Name="TargetLinkedLogonId">0x0</Data>
+    <Data Name="ElevatedToken">%%1842</Data>
+  </EventData>
+</Event>
 ```
 
 ***Required Server Roles:*** None.
@@ -144,21 +144,24 @@ This event generates when a logon session is created (on destination machine). I
 
 ## Logon types and descriptions
 
-| Logon Type | Logon Title       | Description                                                                                                                                                                                                                                                                                                                |
-|------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2          | Interactive       | A user logged on to this computer.                                                                                                                                                                                                                                                                                         |
-| 3          | Network           | A user or computer logged on to this computer from the network.                                                                                                                                                                                                                                                            |
-| 4          | Batch             | Batch logon type is used by batch servers, where processes may be executing on behalf of a user without their direct intervention.                                                                                                                                                                                         |
-| 5          | Service           | A service was started by the Service Control Manager.                                                                                                                                                                                                                                                                      |
-| 7          | Unlock            | This workstation was unlocked.                                                                                                                                                                                                                                                                                             |
-| 8          | NetworkCleartext  | A user logged on to this computer from the network. The user's password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext). |
-| 9          | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
-| 10         | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
-| 11         | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
+| Logon Type | Logon Title         | Description                                                                                                                                                                                                                                                                                                                |
+|:----------:|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  `0`       | `System`            | Used only by the System account, for example at system startup.                                                                                                                                                                                                                                                            |
+|  `2`       | `Interactive`       | A user logged on to this computer.                                                                                                                                                                                                                                                                                         |
+|  `3`       | `Network`           | A user or computer logged on to this computer from the network.                                                                                                                                                                                                                                                            |
+|  `4`       | `Batch`             | Batch logon type is used by batch servers, where processes may be executing on behalf of a user without their direct intervention.                                                                                                                                                                                         |
+|  `5`       | `Service`           | A service was started by the Service Control Manager.                                                                                                                                                                                                                                                                      |
+|  `7`       | `Unlock`            | This workstation was unlocked.                                                                                                                                                                                                                                                                                             |
+|  `8`       | `NetworkCleartext`  | A user logged on to this computer from the network. The user's password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext). |
+|  `9`       | `NewCredentials`    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
+| `10`       | `RemoteInteractive` | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
+| `11`       | `CachedInteractive` | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
+| `12`       | `CashedRemoteInteractive` | Same as RemoteInteractive. This is used for internal auditing.                                                                                                                                                                                                                                                        |
+| `13`       | `CachedUnlock` | Workstation logon.                                                                                                                                                                                                                                                                                                             |
 
 -   **Restricted Admin Mode** \[Version 2\] \[Type = UnicodeString\]**:** Only populated for **RemoteInteractive** logon type sessions. This is a Yes/No flag indicating if the credentials provided were passed using Restricted Admin mode. Restricted Admin mode was added in Win8.1/2012R2 but this flag was added to the event in Win10.
 
-    Reference: <http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx>.
+    Reference: <https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx>.
 
     If not a **RemoteInteractive** logon, then this will be "-" string.
 
@@ -230,7 +233,7 @@ This event generates when a logon session is created (on destination machine). I
 
 **Network Information:**
 
--   **Workstation Name** \[Type = UnicodeString\]**:** machine name from which logon attempt was performed.
+-   **Workstation Name** \[Type = UnicodeString\]**:** machine name to which logon attempt was performed.
 
 -   **Source Network Address** \[Type = UnicodeString\]**:** IP address of machine from which logon attempt was performed.
 
@@ -277,7 +280,7 @@ For 4624(S): An account was successfully logged on.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“New Logon\\Security ID”** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“New Logon\\Security ID”** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“New Logon\\Security ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific whitelist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“New Logon\\Security ID”** for accounts that are outside the whitelist.                                  |
+| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “allow list-only” action, review the **“New Logon\\Security ID”** for accounts that are outside the allow list.                                  |
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **“New Logon\\Security ID”** to see whether the account type is as expected. |
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Subject\\Account Domain”** corresponding to accounts from another domain or “external” accounts.                                                |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **“New Logon\\Security ID”** that you are concerned about.                             |

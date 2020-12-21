@@ -1,13 +1,13 @@
 ---
 title: Local Accounts (Windows 10)
-description: Local Accounts
+description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -73,7 +73,7 @@ The Administrator account has full control of the files, directories, services, 
 
 The default Administrator account cannot be deleted or locked out, but it can be renamed or disabled.
 
-In Windows 10 and Windows Server 20016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
+In Windows 10 and Windows Server 2016, Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group. Members of the Administrators groups can run apps with elevated permissions without using the **Run as Administrator** option. Fast User Switching is more secure than using Runas or different-user elevation.  
 
 **Account group membership**
 
@@ -297,9 +297,9 @@ The following table shows the Group Policy and registry settings that are used t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>No.</strong></p></td>
-<td><p><strong>Setting</strong></p></td>
-<td><p><strong>Detailed Description</strong></p></td>
+<td><p><b>No.</b></p></td>
+<td><p><b>Setting</b></p></td>
+<td><p><b>Detailed Description</b></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -334,7 +334,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="even">
 <td><p>3</p></td>
 <td><p>Registry key</p></td>
-<td><p><strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</strong></p></td>
+<td><p><b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -444,9 +444,9 @@ The following table shows the Group Policy settings that are used to deny networ
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>No.</strong></p></td>
-<td><p><strong>Setting</strong></p></td>
-<td><p><strong>Detailed Description</strong></p></td>
+<td><p><b>No.</b></p></td>
+<td><p><b>Setting</b></p></td>
+<td><p><b>Detailed Description</b></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

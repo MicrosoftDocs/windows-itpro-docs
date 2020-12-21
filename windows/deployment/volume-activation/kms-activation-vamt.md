@@ -1,6 +1,6 @@
 ---
 title: Perform KMS Activation (Windows 10)
-description: Perform KMS Activation
+description: The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS). 
 ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

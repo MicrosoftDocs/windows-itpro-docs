@@ -1,9 +1,8 @@
 ---
-title: Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile (Windows 10)
-description: tbd
+title: Deploy updates to Windows 10 Mobile or Windows 10 IoT Mobile
+description: Deploy updates to devices in your organization that are running Windows 10 Mobile Enterprise or Windows 10 IoT Mobile.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
@@ -18,7 +17,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10 Mobile
-- [Windows 10 IoT Mobile](https://www.microsoft.com/en-us/WindowsForBusiness/windows-iot)
+- [Windows 10 IoT Mobile](https://www.microsoft.com/WindowsForBusiness/windows-iot)
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -71,7 +70,7 @@ Only the following Windows Update for Business policies are supported for Window
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)
 
 

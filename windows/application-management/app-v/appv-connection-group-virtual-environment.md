@@ -1,6 +1,6 @@
 ---
 title: About the connection group virtual environment (Windows 10)
-description: Overview of how the connection group virtual environment works.
+description: Learn how the connection group virtual environment works and how package priority is determined.
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/25/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # About the connection group virtual environment

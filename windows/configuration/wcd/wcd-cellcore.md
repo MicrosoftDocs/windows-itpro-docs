@@ -139,7 +139,7 @@ Select from the following:
 
 ### eSim
 
-Configure **FwUpdate** > **AllowedAppIdList** to whitelist apps that are allowed to update the firmware. Obtain the app IDs from the card vendor.
+Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to update the firmware. Obtain the app IDs from the card vendor.
 
 ### External
 

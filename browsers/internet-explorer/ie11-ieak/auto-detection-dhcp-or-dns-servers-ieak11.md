@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to set up automatic detection for DHCP or DNS servers using IEAK 11 in your organization.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Set up auto detection for DHCP or DNS servers using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Set up auto detection for DHCP or DNS servers using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Set up your network to automatically detect and customize Internet Explorer 11 when it’s first started. Automatic detection is supported on both Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS), letting your servers detect and set up your employee’s browser settings from a central location, using a configuration URL (.ins file) or a JavaScript proxy configuration file (.js, .jvs, or .pac).
 
 Before you can set up your environment to use automatic detection, you need to turn the feature on.

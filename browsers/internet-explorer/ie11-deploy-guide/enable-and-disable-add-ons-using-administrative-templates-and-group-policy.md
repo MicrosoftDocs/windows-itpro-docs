@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Enable and disable add-ons using administrative templates and group policy
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.prod: ie11
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Enable and disable add-ons using administrative templates and group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 4/12/2018
@@ -16,6 +17,9 @@ ms.date: 4/12/2018
 
 
 # Enable and disable add-ons using administrative templates and group policy
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Add-ons let your employees personalize Internet Explorer. You can manage IE add-ons using Group Policy and Group Policy templates.
 
 There are four types of add-ons:
@@ -80,8 +84,8 @@ Every add-on has a Class ID (CLSID) that you use to enable and disable specific 
     
 2.  From the copied information, select and copy just the **Class ID** value.
 
-    >[!NOTE]
-    >You want to copy the curly brackets as well as the CLSID: **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
+    > [!NOTE]
+    > You want to copy the curly brackets as well as the CLSID: **{47833539-D0C5-4125-9FA8-0819E2EAAC93}**.
 
 3.  Open the Group Policy Management Editor and go to: Computer Configuration\Policies\Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management.
 <br>**-OR-**<br>

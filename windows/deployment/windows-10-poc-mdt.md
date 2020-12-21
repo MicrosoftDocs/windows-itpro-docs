@@ -1,6 +1,7 @@
 ---
 title: Step by step - Deploy Windows 10 in a test lab using MDT
-description: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT)
+description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,8 +11,10 @@ ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+ms.author: greglin
+author: greg-lindsay
+audience: itpro
 ms.topic: article
 ---
 
@@ -26,7 +29,7 @@ ms.topic: article
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 
 Please complete all steps in the prerequisite guide before starting this guide. This guide requires about 5 hours to complete, but can require less time or more time depending on the speed of the Hyper-V host. After completing the current guide, also see the companion guide:
-- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -63,8 +66,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch Installation (ZTI), and User-Driven Installation (UDI) deployment methods. 
 - LTI is the deployment method used in the current guide, requiring only MDT and performed with a minimum amount of user interaction.
-- ZTI is fully automated, requiring no user interaction and is performed using MDT and System Center Configuration Manager. After completing the steps in the current guide, see [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) to use the ZTI deployment method in the PoC environment.
-- UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and System Center Configuration Manager. 
+- ZTI is fully automated, requiring no user interaction and is performed using MDT and Microsoft Endpoint Configuration Manager. After completing the steps in the current guide, see [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md) to use the ZTI deployment method in the PoC environment.
+- UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and Microsoft Endpoint Configuration Manager. 
 
 ## Install MDT
 
@@ -75,7 +78,7 @@ MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch 
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
-2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/en-us/download/details.aspx?id=54259) on SRV1 using the default options. As of the writing of this guide, the latest version of MDT was 8443.
+2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/download/details.aspx?id=54259) on SRV1 using the default options. As of the writing of this guide, the latest version of MDT was 8443.
 
 3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.
 
@@ -488,7 +491,7 @@ This section will demonstrate how to export user data from an existing client co
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
-    **Note**: Litetouch.vbs must be able to create the C:\MININT directory on the local computer.
+    **Note**: For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](https://docs.microsoft.com/configmgr/core/support/tools).
 
 5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
@@ -638,7 +641,7 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
-Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=50012)
+Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
 
 Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 

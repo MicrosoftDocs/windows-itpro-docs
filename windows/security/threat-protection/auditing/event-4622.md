@@ -100,5 +100,5 @@ These are some Security Package DLLs loaded by default in Windows 10:
 
 For 4622(S): A security package has been loaded by the Local Security Authority.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the whitelist or not.
+-   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the allow list or not.
 

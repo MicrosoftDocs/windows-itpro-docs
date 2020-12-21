@@ -7,14 +7,19 @@
 ## [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 
 ## [Windows Hello for Business Features](hello-features.md)
+### [Conditional Access](hello-feature-conditional-access.md)
+### [Dual Enrollment](hello-feature-dual-enrollment.md)
+### [Dynamic Lock](hello-feature-dynamic-lock.md)
 ### [Multifactor Unlock](feature-multifactor-unlock.md)
+### [PIN Reset](hello-feature-pin-reset.md)
+### [Remote Desktop](hello-feature-remote-desktop.md)
 
 ## [How Windows Hello for Business works](hello-how-it-works.md)
 ### [Technical Deep Dive](hello-how-it-works.md#technical-deep-dive)
-#### [Technology and Terminology](hello-how-it-works-technology.md)
 #### [Device Registration](hello-how-it-works-device-registration.md)
 #### [Provisioning](hello-how-it-works-provisioning.md)
 #### [Authentication](hello-how-it-works-authentication.md)
+#### [Technology and Terminology](hello-how-it-works-technology.md)
 
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
@@ -53,13 +58,12 @@
 #### [Validate and Configure Public Key Infrastructure](hello-cert-trust-validate-pki.md)
 #### [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-cert-trust-adfs.md)
 #### [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md)
-##### [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md)
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
 
 ## [Windows Hello and password changes](hello-and-password-changes.md)
 ## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 
-## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
+## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.yml)
 ### [Windows Hello for Business Videos](hello-videos.md)
 
 ## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)

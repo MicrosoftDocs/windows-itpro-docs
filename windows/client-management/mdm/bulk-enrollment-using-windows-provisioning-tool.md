@@ -1,13 +1,13 @@
 ---
 title: Bulk enrollment
 description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10.
-MS-HAID:
-- 'p\_phdevicemgmt.bulk\_enrollment'
-- 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
+MS-HAID: 
+  - 'p\_phdevicemgmt.bulk\_enrollment'
+  - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
 ms.assetid: DEB98FF3-CC5C-47A1-9277-9EF939716C87
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -35,9 +35,8 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 > [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
-> -   Bulk enrollment works in System Center Configuration Manager (SCCM) + Intune hybrid environment where the ppkg is generated from the SCCM console.
-
- 
+> -   Bulk enrollment works in Microsoft Endpoint Configuration Manager where the ppkg is generated from the Configuration Manager console.
+> -   To change bulk enrollment settings, login to **AAD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
 
 ## What you need
 
@@ -164,7 +163,6 @@ Here are links to step-by-step provisioning topics in Technet.
 -   [Provision PCs with common settings for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment)
 
  
-
 
 
 

@@ -1,13 +1,14 @@
 ---
-title: Microsoft Edge training and demonstrations  
+title: Microsoft Edge training and demonstrations
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 description: Get access to training and demonstrations for Microsoft Edge.
 ms.prod: edge
 ms.topic: article
-ms.manager: elizapo
-author: msdmaguire
-ms.author: dmaguire
+ms.manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: high
 ---
 

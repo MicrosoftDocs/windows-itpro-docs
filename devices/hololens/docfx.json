@@ -17,7 +17,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -42,14 +43,23 @@
         "./": {
           "depot_name": "Win.itpro-hololens",
           "folder_relative_path_in_docset": "./"
+        } 
+          
         }
-      }
     },
     "fileMetadata": {},
-    "template": [
-      null
-    ],
+    "template": [],
     "dest": "devices/hololens",
     "markdownEngineName": "markdig"
-  }
+  },
+    "contributors_to_exclude": [ 
+    "rjagiewich", 
+    "traya1", 
+    "rmca14", 
+    "claydetels19", 
+    "Kellylorenebaker",
+    "jborsecnik",
+    "tiburd",
+    "garycentric"
+    ]
 }

@@ -108,7 +108,7 @@ For 4611(S): A trusted logon process has been registered with the Local Security
 
 -   Because this event is typically triggered by the SYSTEM account, we recommend that you report it whenever **“Subject\\Security ID”** is not SYSTEM.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the whitelist or not.
+-   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the allow list or not.
 
 -   
 

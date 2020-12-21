@@ -50,17 +50,17 @@ New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{Pare
 Get-CimInstance -Namespace $namespaceName -ClassName $className
 
 # Query instances with matching properties
-Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID=&#39;./Vendor/MSFT/Policy/Config&#39; and InstanceID=&#39;WiFi&#39;"
+Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID='./Vendor/MSFT/Policy/Config' and InstanceID='WiFi'"
 
 # Modify existing instance
-$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID=&#39;./Vendor/MSFT/Policy/Config&#39; and InstanceID=&#39;WiFi&#39;"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID='./Vendor/MSFT/Policy/Config' and InstanceID='WiFi'"
 $obj.WLANScanMode=500
 Set-CimInstance -CimInstance $obj
 
 # Delete existing instance
 try
 {
-    $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID=&#39;./Vendor/MSFT/Policy/Config&#39; and InstanceID=&#39;WiFi&#39;"
+    $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID='./Vendor/MSFT/Policy/Config' and InstanceID='WiFi'"
     Remove-CimInstance -CimInstance $obj
 }
 catch [Exception]
@@ -113,9 +113,9 @@ $session = New-CimSession
 # Create a new instance for MDM_Policy_User_Config01_Authentication02
 ##########################################################################
 $newInstance = New-Object Microsoft.Management.Infrastructure.CimInstance $className, $namespaceName
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", &#39;./Vendor/MSFT/Policy/Config&#39;, "string", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", './Vendor/MSFT/Policy/Config', "string", "Key")
 $newInstance.CimInstanceProperties.Add($property)
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", &#39;Authentication&#39;, "String", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", 'Authentication', "String", "Key")
 $newInstance.CimInstanceProperties.Add($property)
 $property = [Microsoft.Management.Infrastructure.CimProperty]::Create("AllowEAPCertSSO", 1, "Sint32", "Property")
 $newInstance.CimInstanceProperties.Add($property)
@@ -138,9 +138,9 @@ $session.EnumerateInstances($namespaceName, $className, $options)
 # with matching properties
 ##########################################################################
 $getInstance = New-Object Microsoft.Management.Infrastructure.CimInstance $className, $namespaceName
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", &#39;./Vendor/MSFT/Policy/Config&#39;, "string", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", './Vendor/MSFT/Policy/Config', "string", "Key")
 $getInstance.CimInstanceProperties.Add($property)
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", &#39;Authentication&#39;, "String", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", 'Authentication', "String", "Key")
 $getInstance.CimInstanceProperties.Add($property)
 try
 {
@@ -155,9 +155,9 @@ catch [Exception]
 # Modify existing instance for MDM_Policy_User_Config01_Authentication02
 ##########################################################################
 $getInstance = New-Object Microsoft.Management.Infrastructure.CimInstance $className, $namespaceName
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", &#39;./Vendor/MSFT/Policy/Config&#39;, "string", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", './Vendor/MSFT/Policy/Config', "string", "Key")
 $getInstance.CimInstanceProperties.Add($property)
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", &#39;Authentication&#39;, "String", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", 'Authentication', "String", "Key")
 $getInstance.CimInstanceProperties.Add($property)
 try
 {
@@ -174,9 +174,9 @@ catch [Exception]
 # Delete existing instance for MDM_Policy_User_Config01_Authentication02
 ##########################################################################
 $getInstance = New-Object Microsoft.Management.Infrastructure.CimInstance $className, $namespaceName
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", &#39;./Vendor/MSFT/Policy/Config&#39;, "string", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("ParentID", './Vendor/MSFT/Policy/Config', "string", "Key")
 $getInstance.CimInstanceProperties.Add($property)
-$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", &#39;Authentication&#39;, "String", "Key")
+$property = [Microsoft.Management.Infrastructure.CimProperty]::Create("InstanceID", 'Authentication', "String", "Key")
 $getInstance.CimInstanceProperties.Add($property)
 try
 {
@@ -209,7 +209,7 @@ $params.Add($param)
 
 try
 {
-    $instance = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID=&#39;./Vendor/MSFT&#39; and InstanceID=&#39;WindowsLicensing&#39;"
+    $instance = Get-CimInstance -Namespace $namespaceName -ClassName $className -Filter "ParentID='./Vendor/MSFT' and InstanceID='WindowsLicensing'"
     $session.InvokeMethod($namespaceName, $instance, $methodName, $params)
 }
 catch [Exception]

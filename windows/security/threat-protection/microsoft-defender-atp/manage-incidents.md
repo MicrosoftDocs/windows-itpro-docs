@@ -13,15 +13,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security-compliance 
+- m365initiative-defender-endpoint 
 ms.topic: article
-ms.date: 010/08/2018
 ---
 
-# Manage Microsoft Defender ATP incidents
+# Manage Microsoft Defender for Endpoint incidents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. 
 
@@ -29,12 +33,20 @@ Managing incidents is an important part of every cybersecurity operation. You ca
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
 
-![Image of the incidents management pane](images/atp-incidents-mgt-pane.png)
+![Image of the incidents management pane](images/atp-incidents-mgt-pane-updated.png)
 
-You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress. 
+You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress.
 
-![Image of incident detail page](images/atp-incident-details-page.png)
+> [!TIP]
+> For additional visibility at a glance, incident names are automatically generated based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
+>
+> For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+>
+> Incidents that existed prior the rollout of automatic incident naming will retain their names.
+>
 
+
+![Image of incident detail page](images/atp-incident-details-updated.png)
 
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
@@ -60,6 +72,6 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Incidents queue](incidents-queue.md)
+- [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)

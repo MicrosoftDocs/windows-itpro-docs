@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Import your Enterprise Mode site list to the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Import your Enterprise Mode site list to the Enterprise Mode Site List Manager
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

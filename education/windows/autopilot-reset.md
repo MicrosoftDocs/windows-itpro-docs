@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 06/27/2018
 ms.reviewer: 
 manager: dansimp
@@ -36,8 +36,7 @@ You can set the policy using one of these methods:
 
 - MDM provider
 
-    - Autopilot Reset in Intune for Education is coming soon. In a future update of Intune for Education, new tenants will automatically have the Autopilot Reset setting enabled by default on the **All devices** group as part of initial tenant configuration. You will also be able to manage this setting to target different groups in the admin console.
-    - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
+    -Check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
         For example, in Intune, create a new configuration policy and add an OMA-URI. 
         - OMA-URI:  ./Vendor/MSFT/Policy/Config/CredentialProviders/DisableAutomaticReDeploymentCredentials
@@ -65,7 +64,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 **To trigger Autopilot Reset**
 
-1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
+1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**. 
 
     ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
 
@@ -93,6 +92,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
     Once provisioning is complete, the device is again ready for use.
 
 <span id="winre"/>
+
 ## Troubleshoot Autopilot Reset
 
 Autopilot Reset will fail when the [Windows Recovery Environment (WinRE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is not enabled on the device. You will see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.

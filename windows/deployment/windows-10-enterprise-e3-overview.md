@@ -10,8 +10,9 @@ ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
+audience: itpro
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -43,9 +44,9 @@ When you purchase Windows 10 Enterprise E3 via a partner, you get the followin
 
 How does the Windows 10 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
 
--   [Microsoft Volume Licensing](https://www.microsoft.com/en-us/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
+-   [Microsoft Volume Licensing](https://www.microsoft.com/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
 
--   [Software Assurance](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
+-   [Software Assurance](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
 
     -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
 
@@ -103,7 +104,7 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 </tr>
 <tr class="odd">
 <td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device (also known as “whitelisting”). The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
+<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
 <p>For more information, see <a href="https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview" data-raw-source="[AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)">AppLocker</a>.</p></td>
 </tr>
 <tr class="even">
@@ -161,7 +162,7 @@ You can implement Credential Guard on Windows 10 Enterprise devices by turning 
 
     -   Configure Credential Guard registry settings by using the Registry Editor or the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
-    You can automate these manual steps by using a management tool such as System Center Configuration Manager.
+    You can automate these manual steps by using a management tool such as Microsoft Endpoint Configuration Manager.
 
 For more information about implementing Credential Guard, see the following resources:
 

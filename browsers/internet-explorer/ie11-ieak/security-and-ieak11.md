@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Learn about the security features available in Internet Explorer 11 and IEAK 11.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Security features and IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Security features and IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Use Internet Explorer in conjunction with your new and existing security measures, to make sure the computers in your company aren’t compromised while on the Internet.
 
 ## Enhanced Protection Mode

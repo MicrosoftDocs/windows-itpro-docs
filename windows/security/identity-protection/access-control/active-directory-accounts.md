@@ -7,12 +7,12 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 08/23/2019
 ms.reviewer: 
 ---
 
@@ -169,7 +169,7 @@ When Active Directory is installed on the first domain controller in the domain,
 ## <a href="" id="sec-guest"></a>Guest account
 
 
-The Guest account is a default local account has limited access to the computer and is disabled by default. The Guest account cannot be deleted or disabled, and the account name cannot be changed. By default, the Guest account password is left blank. A blank password allows the Guest account to be accessed without requiring the user to enter a password.
+The Guest account is a default local account that has limited access to the computer and is disabled by default. By default, the Guest account password is left blank. A blank password allows the Guest account to be accessed without requiring the user to enter a password.
 
 The Guest account enables occasional or one-time users, who do not have an individual account on the computer, to sign in to the local server or domain with restricted rights and permissions. The Guest account can be enabled, and the password can be set up if needed, but only by a member of the Administrator group on the domain.
 
@@ -330,13 +330,11 @@ Windows Server Kerberos authentication is achieved by the use of a special Kerbe
 
 ### KRBTGT account maintenance considerations
 
-A strong password is assigned to the KRBTGT account automatically. Be sure that you change the password on a regular schedule. The password for the KDC account is used to derive a secret key for encrypting and decrypting the TGT requests that are issued. The password for a domain trust account is used to derive an inter-realm key for encrypting referral tickets.
-
-On occasion, the KRBTGT account password requires a reset, for example, when an attempt to change the password on the KRBTGT account fails. In order to resolve this issue, you reset the KRBTGT user account password twice by using Active Directory Users and Computers. You must reset the password twice because the KRBTGT account stores only two of the most recent passwords in the password history. By resetting the password twice, you effectively clear all passwords from the password history.
+A strong password is assigned to the KRBTGT and trust accounts automatically. Like any privileged service accounts, organizations should change these passwords on a regular schedule. The password for the KDC account is used to derive a secret key for encrypting and decrypting the TGT requests that are issued. The password for a domain trust account is used to derive an inter-realm key for encrypting referral tickets.
 
 Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
 
-After you reset the KRBTGT password, ensure that event ID 6 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
+After you reset the KRBTGT password, ensure that event ID 9 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
 
 ### Security considerations
 
@@ -472,7 +470,7 @@ Each default local account in Active Directory has a number of account settings 
 </tr>
 <tr class="odd">
 <td><p>Account is trusted for delegation</p></td>
-<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <strong>Delegation</strong> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <strong>setspn</strong> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
+<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <b>Delegation</b> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <b>setspn</b> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
 </tr>
 <tr class="even">
 <td><p>Account is sensitive and cannot be delegated</p></td>
@@ -482,7 +480,7 @@ Each default local account in Active Directory has a number of account settings 
 <td><p>Use DES encryption types for this account</p></td>
 <td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
 <div class="alert">
-<strong>Note</strong><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](http://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
+<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
 </div>
 <div>
 
@@ -658,8 +656,8 @@ In this procedure, the workstations are dedicated to domain administrators. By s
         </colgroup>
         <tbody>
         <tr class="odd">
-        <td><p><strong>Windows Update Setting</strong></p></td>
-        <td><p><strong>Configuration</strong></p></td>
+        <td><p><b>Windows Update Setting</b></p></td>
+        <td><p><b>Configuration</b></p></td>
         </tr>
         <tr class="even">
         <td><p>Allow Automatic Updates immediate installation</p></td>

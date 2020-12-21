@@ -1,6 +1,6 @@
 ---
-title: Validate Public Key Infrastructure (Windows Hello for Business)
-description: How to Validate Public Key Infrastructure for Windows Hello for Business
+title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
+description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -69,7 +69,7 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
-6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
+6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8. Close the console.
 
@@ -85,8 +85,8 @@ Sign-in to a certificate authority or management workstations with _Enterprise A
 3. In the **Certificate Templates Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
 4. Click the **Superseded Templates** tab. Click **Add**.
 5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
-6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **Add**.
-7. From the **Add Superseded Template** dialog, select the **Kerberos Authentication** certificate template and click **Add**. 
+6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.  Click **Add**.
+7. From the **Add Superseded Template** dialog, select the **Kerberos Authentication** certificate template and click **OK**.  Click **Add**. 
 8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
 9. Click **OK** and close the **Certificate Templates** console.
 
@@ -104,7 +104,7 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 5. On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
 6. On the **Request Handling** tab, select **Allow private key to be exported**.
-7. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
+7. On the **Subject Name** tab, select the **Supply in the request** button if it is not already selected.
 8. On the **Security** tab, Click **Add**. Type **Domain Computers** in the **Enter the object names to select** box.  Click **OK**. Select the **Allow** check box next to the **Enroll** permission.
 9. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 10. Close the console.
@@ -150,7 +150,7 @@ Domain controllers automatically request a certificate from the domain controlle
 7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
 8. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 9. Select **Enabled** from the **Configuration Model** list.
-10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+10. Select the **Renew expired certificates, update pending certificates, and remove revoked certificates** check box.
 11. Select the **Update certificates that use certificate templates** check box.
 12. Click **OK**. Close the **Group Policy Management Editor**.
 

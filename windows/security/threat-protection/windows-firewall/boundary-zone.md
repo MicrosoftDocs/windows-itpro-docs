@@ -1,6 +1,6 @@
 ---
 title: Boundary Zone (Windows 10)
-description: Boundary Zone
+description: Learn how a boundary zone supports devices that must receive traffic from beyond an isolated domain in Windows Defender Firewall with Advanced Security.
 ms.assetid: ed98b680-fd24-44bd-a7dd-26c522e45a20
 ms.reviewer: 
 ms.author: dansimp

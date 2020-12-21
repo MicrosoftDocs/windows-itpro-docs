@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Auto configuration and auto proxy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Auto configuration and auto proxy problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You might experience some problems using automatic configuration and auto-proxy with Internet Explorer 11.
 
 ## Branding changes aren't distributed using automatic configuration

@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[ConnectionSettings\] .INS file setting to specify the network connection settings needed to install your custom package.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 41410300-6ddd-43b2-b9e2-0108a2221355
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the ConnectionSettings .INS file to review the network connections for install (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the ConnectionSettings .INS file to review the network connections for install
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about the network connection settings used to install your custom package. This section creates a common configuration on all of your employee’s computers.
 
 |Name       |Value                      |Description  |

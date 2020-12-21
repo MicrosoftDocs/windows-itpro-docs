@@ -1,7 +1,7 @@
 ---
 title: Get domain statistics API
-description: Retrieves the prevalence for the given domain.
-keywords: apis, graph api, supported apis, get, domain, domain related machines
+description: Learn how to use the Get domain statistics API to retrieve the statistics on the given domain in Microsoft Defender for Endpoint.
+keywords: apis, graph api, supported apis, get, domain, domain related devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,13 +18,24 @@ ms.topic: article
 
 # Get domain statistics API
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-Retrieves the prevalence for the given domain.
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+## API description
+Retrieves the statistics on the given domain.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -60,7 +71,7 @@ If successful and domain exists - 200 OK, with statistics object in the response
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/domains/example.com/stats

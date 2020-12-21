@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: IEM-configured settings have been deprecated for Internet Explorer 10 and newer. Use this topic to learn where to go to fix the affected settings through Group Policy Preferences, Administrative Templates (.admx), or the IEAK.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 89084e01-4e3f-46a6-b90e-48ee58d6821c
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Missing Internet Explorer Maintenance settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Missing Internet Explorer Maintenance settings for Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

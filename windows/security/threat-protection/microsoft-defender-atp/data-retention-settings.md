@@ -1,6 +1,6 @@
 ---
-title: Update data retention settings for Microsoft Defender Advanced Threat Protection
-description: Update data retention settings by selecting between 30 days to 180 days.
+title: Verify data storage location and update data retention settings 
+description: Verify data storage location and update data retention settings for Microsoft Defender Advanced Threat Protection
 keywords: data, storage, settings, retention, update
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,20 +15,30 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/24/2018
 ---
-# Update data retention settings for Microsoft Defender ATP 
+# Verify data storage location and update data retention settings for Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+During the onboarding process, a wizard takes you through the data storage and retention settings of Defender for Endpoint. 
 
-During the onboarding process, a wizard takes you through the general settings of Microsoft Defender ATP. After onboarding, you might want to update the data retention settings.
+After completing the onboarding, you can verify your selection in the data retention settings page.
+
+## Verify data storage location
+During the [Set up phase](production-deployment.md), you would have selected the location to store your data. 
+
+You can verify the data location by navigating to **Settings** > **Data retention**.
+
+## Update data retention settings
 
 1. In the navigation pane, select **Settings** > **Data retention**.
 
@@ -42,7 +52,5 @@ During the onboarding process, a wizard takes you through the general settings o
 
 ## Related topics
 - [Update data retention settings](data-retention-settings.md)
-- [Configure alert notifications in Microsoft Defender ATP](configure-email-notifications.md)
-- [Enable and create Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Enable Secure Score security controls](enable-secure-score.md)
+- [Configure alert notifications in Defender for Endpoint](configure-email-notifications.md)
 - [Configure advanced features](advanced-features.md)

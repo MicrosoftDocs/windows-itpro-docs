@@ -32,19 +32,19 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "audience": "ITPro",
       "ms.topic": "article",
       "ms.author": "elizapo",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "feedback_system": "None",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-app-management",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Windows Application Management"
     },
     "fileMetadata": {},
     "template": [],

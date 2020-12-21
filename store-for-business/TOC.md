@@ -24,7 +24,7 @@
 ### [Manage Windows device deployment with Windows Autopilot Deployment](add-profile-to-devices.md)
 ### [Microsoft Store for Business and Education PowerShell module - preview](microsoft-store-for-business-education-powershell-module.md)
 ### [Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business](manage-mpsa-software-microsoft-store-for-business.md)
-### [Working with solution providers in Microsoft Store for Business](work-with-partner-microsoft-store-business.md)
+### [Working with solution providers](work-with-partner-microsoft-store-business.md)
 ## [Billing and payments](billing-payments-overview.md)
 ### [Understand your invoice](billing-understand-your-invoice-msfb.md)
 ### [Payment methods](payment-methods.md)

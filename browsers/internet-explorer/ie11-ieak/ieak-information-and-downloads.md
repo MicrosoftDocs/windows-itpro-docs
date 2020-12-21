@@ -3,19 +3,23 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
 description: The Internet Explorer Administration Kit (IEAK) simplifies the creation, deployment, and management of customized Internet Explorer packages. Use the IEAK to configure the out-of-box Internet Explorer experience or to manage user settings after Internet Explorer deployment.
-author: lomayor
-ms.author: lomayor
+author: dansimp
+ms.author: dansimp
 ms.manager: dougkim
 ms.prod: ie11
-ms.assetid:
+ms.assetid: 
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Internet Explorer Administration Kit (IEAK) information and downloads
 ms.sitesec: library
 ms.date: 05/10/2018
 ---
 
 # Internet Explorer Administration Kit (IEAK) information and downloads
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 >Applies to: Windows 10 
 

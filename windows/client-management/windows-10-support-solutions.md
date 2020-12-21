@@ -1,99 +1,134 @@
 ---
-title: Top support solutions for Windows 10
-ms.reviewer: 
+title: Troubleshooting Windows 10
+description: Learn where to find information about troubleshooting Windows 10 issues, for example Bitlocker issues and bugcheck errors.
+ms.reviewer: kaushika
 manager: dansimp
-description: Get links to solutions for Windows 10 issues
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: dansimp
-author: dansimp
+ms.author: kaushika
+author: kaushika-msft
 ms.localizationpriority: medium
 ms.topic: troubleshooting
 ---
 
-# Troubleshoot Windows 10 clients
+# Troubleshoot Windows 10 client
 
-This section contains advanced troubleshooting topics and links to help you resolve issues with Windows 10 clients. Additional topics will be added as they become available.
+Microsoft regularly releases both updates for Windows Server. To ensure your servers can receive future updates, including security updates, it's important to keep your servers updated. Check out - [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/en-us/help/4000825/windows-10-windows-server-2016-update-history) for a complete list of released updates.
 
-## Troubleshooting support topics
+This section contains advanced troubleshooting topics and links to help you resolve issues with Windows 10 in an enterprise or IT pro environment. Additional topics will be added as they become available.
 
-- [Advanced troubleshooting for Windows networking](troubleshoot-networking.md)<br>
-    - [Advanced troubleshooting wireless network connectivity](advanced-troubleshooting-wireless-network-connectivity.md)<br>
-    - [Advanced troubleshooting 802.1X authentication](advanced-troubleshooting-802-authentication.md)<br>
-        - [Data collection for troubleshooting 802.1X authentication](data-collection-for-802-authentication.md)<br>
-    - [Advanced troubleshooting for TCP/IP](troubleshoot-tcpip.md)<br>
-    - [Collect data using Network Monitor](troubleshoot-tcpip-netmon.md)<br>
-    - [Troubleshoot TCP/IP connectivity](troubleshoot-tcpip-connectivity.md)<br>
-    - [Troubleshoot port exhaustion](troubleshoot-tcpip-port-exhaust.md)<br>
-    - [Troubleshoot Remote Procedure Call (RPC) errors](troubleshoot-tcpip-rpc-errors.md)<br>
-- [Advanced troubleshooting for Windows startup](troubleshoot-windows-startup.md)<br>
-    - [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)<br>
-    - [Advanced troubleshooting for Windows-based computer issues](troubleshoot-windows-freeze.md)<br>
-    - [Advanced troubleshooting for stop errors or blue screen errors](troubleshoot-stop-errors.md)<br>
-    - [Advanced troubleshooting for stop error 7B or Inaccessible_Boot_Device](troubleshoot-inaccessible-boot-device.md)<br>
+## Troubleshoot 802.1x Authentication
+- [Advanced Troubleshooting 802.1X Authentication](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)
+- [Data collection for troubleshooting 802.1X authentication](https://docs.microsoft.com/windows/client-management/data-collection-for-802-authentication)
 
-## Windows 10 update history
+## Troubleshoot BitLocker
+- [Guidelines for troubleshooting BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/troubleshoot-bitlocker)
+- [BitLocker cannot encrypt a drive: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues)
+- [Enforcing BitLocker policies by using Intune: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-intune-issues)
+- [BitLocker Network Unlock: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues)
+- [BitLocker recovery: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-recovery-issues)
+- [BitLocker configuration: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-config-issues)
+- [BitLocker cannot encrypt a drive: known TPM issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues)
+- [BitLocker and TPM: other known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-tpm-issues)
+- [Decode Measured Boot logs to track PCR changes](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs)
+- [BitLocker frequently asked questions (FAQ)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
 
-Microsoft regularly releases both updates and solutions for Windows 10. To ensure your computers can receive future updates, including security updates, it's important to keep them updated. Check out the following links for a complete list of released updates:
+## Troubleshoot Bugcheck and Stop errors
+- [Introduction to the page file](https://docs.microsoft.com/windows/client-management/introduction-page-file)
+- [How to determine the appropriate page file size for 64-bit versions of Windows](https://docs.microsoft.com/windows/client-management/determine-appropriate-page-file-size)
+- [Configure system failure and recovery options in Windows](https://docs.microsoft.com/windows/client-management/system-failure-recovery-options)
+- [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump)
+- [Advanced troubleshooting for Stop error or blue screen error issue](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
+- [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
+- [Blue Screen Data - Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/debugger/blue-screen-data)
+- [Bug Check Code Reference - Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2)
 
-- [Windows 10 version 1809 update history](https://support.microsoft.com/help/4464619)
-- [Windows 10 version 1803 update history](https://support.microsoft.com/help/4099479)
-- [Windows 10 version 1709 update history](https://support.microsoft.com/help/4043454)
-- [Windows 10 Version 1703 update history](https://support.microsoft.com/help/4018124)
-- [Windows 10 Version 1607 update history](https://support.microsoft.com/help/4000825)
-- [Windows 10 Version 1511 update history](https://support.microsoft.com/help/4000824)
+## Troubleshoot Credential Guard
+- [Windows Defender Credential Guard - Known issues (Windows 10)](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-known-issues)
+
+## Troubleshoot Disks
+- [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt)
+- [Windows and GPT FAQ](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-and-gpt-faq)
+
+## Troubleshoot Kiosk mode
+- [Troubleshoot kiosk mode issues](https://docs.microsoft.com/windows/configuration/kiosk-troubleshoot)
+
+## Troubleshoot No Boot
+- [Advanced troubleshooting for Windows boot problems](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-boot-problems)
+
+## Troubleshoot Push Button Reset
+- [Push-button reset frequently-asked questions (FAQ)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/pbr-faq)
+- [Push-button reset frequently-asked questions (FAQ)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/pbr-validation)
+- [Recovery components](https://docs.microsoft.com/windows-hardware/manufacture/desktop/recovery-strategy-for-common-customizations)
+
+### Troubleshoot Power Management
+- [Modern Standby FAQs](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-faqs)
 
 
-These are the top Microsoft Support solutions for the most common issues experienced when using Windows 10 in an enterprise or IT pro environment. The links below include links to KB articles, updates, and library articles.
+## Troubleshoot Secure Boot
+- [Secure Boot isn't configured correctly: troubleshooting](https://docs.microsoft.com/windows-hardware/manufacture/desktop/secure-boot-isnt-configured-correctly-troubleshooting)
 
-## Solutions related to installing Windows Updates
 
-- [How does Windows Update work](https://docs.microsoft.com/windows/deployment/update/how-windows-update-works)
+## Troubleshoot Setup and Install
+- [Deployment Troubleshooting and Log Files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files)
+
+
+## Troubleshoot Start Menu
+- [Troubleshoot Start menu errors](https://docs.microsoft.com/windows/configuration/start-layout-troubleshoot)
+
+
+## Troubleshoot Subscription Activation
+- [Deploy Windows 10 Enterprise licenses](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)
+
+## Troubleshoot System Hang
+- [Advanced troubleshooting for Windows-based computer freeze issues](https://docs.microsoft.com/windows/client-management/troubleshoot-windows-freeze)
+
+## Troubleshoot TCP/IP Communication
+- [Collect data using Network Monitor](https://docs.microsoft.com/windows/client-management/troubleshoot-tcpip-netmon)
+- [Troubleshoot TCP/IP connectivity](https://docs.microsoft.com/windows/client-management/troubleshoot-tcpip-connectivity)
+- [Troubleshoot port exhaustion issues](https://docs.microsoft.com/windows/client-management/troubleshoot-tcpip-port-exhaust)
+- [Troubleshoot Remote Procedure Call (RPC) errors](https://docs.microsoft.com/windows/client-management/troubleshoot-tcpip-rpc-errors)
+
+## Troubleshoot User State Migration Toolkit (USMT)
+- [Common Issues](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-issues)
+- [Frequently Asked Questions](https://docs.microsoft.com/windows/deployment/usmt/usmt-faq)
+- [Log Files](https://docs.microsoft.com/windows/deployment/usmt/usmt-log-files)
+- [Return Codes](https://docs.microsoft.com/windows/deployment/usmt/usmt-return-codes)
+
+## Troubleshoot Windows Hello for Business (WHFB)
+- [Windows Hello for Business Frequently Asked Questions](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq)
+- [Windows Hello errors during PIN creation (Windows 10)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation)
+- [Event ID 300 - Windows Hello successfully created (Windows 10)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-event-300)
+
+
+## Troubleshoot Windows Analytics
+- [Frequently asked questions and troubleshooting Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-faq-troubleshooting)
+
+## Troubleshoot Windows Update
+- [How Windows Update works](https://docs.microsoft.com/windows/deployment/update/how-windows-update-works)
 - [Windows Update log files](https://docs.microsoft.com/windows/deployment/update/windows-update-logs)
 - [Windows Update troubleshooting](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting)
 - [Windows Update common errors and mitigation](https://docs.microsoft.com/windows/deployment/update/windows-update-errors)
-- [Windows Update - additional resources](https://docs.microsoft.com/windows/deployment/update/windows-update-resources)
+- [Windows Update - Additional resources](https://docs.microsoft.com/windows/deployment/update/windows-update-resources)
+- [Get started with Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-overview)
+- [Servicing stack updates](https://docs.microsoft.com/windows/deployment/update/servicing-stack-updates)
 
-## Solutions related to installing or upgrading Windows
+## Troubleshoot Windows Upgrade
+- [Quick fixes - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/quick-fixes)
+- [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag)
+- [Troubleshoot Windows 10 upgrade errors - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/troubleshoot-upgrade-errors)
+- [Windows error reporting - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/windows-error-reporting)
+- [Upgrade error codes - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes)
+- [Log files - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/log-files)
+- [Resolution procedures - Windows IT Pro](https://docs.microsoft.com/windows/deployment/upgrade/resolution-procedures)
 
-- [Quick Fixes](https://docs.microsoft.com/windows/deployment/upgrade/quick-fixes)
-- [Troubleshooting upgrade errors](https://docs.microsoft.com/windows/deployment/upgrade/troubleshoot-upgrade-errors)
-- [Resolution procedures](https://docs.microsoft.com/windows/deployment/upgrade/resolution-procedures)
-- [0xc1800118 error when you push Windows 10 Version 1607 by using WSUS](https://support.microsoft.com/en-in/help/3194588/0xc1800118-error-when-you-push-windows-10-version-1607-by-using-wsus)
-- [0xC1900101 error when Windows 10 upgrade fails after the second system restart](https://support.microsoft.com/en-in/help/3208485/0xc1900101-error-when-windows-10-upgrade-fails-after-the-second-system)
+## Troubleshoot Windows Recovery (WinRE)
+- [Windows RE troubleshooting features](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-re-troubleshooting-features)
 
-## Solutions related to BitLocker
+## Troubleshoot Wireless Connection
+- [Advanced Troubleshooting Wireless Network Connectivity](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-wireless-network-connectivity)
 
-- [BitLocker recovery guide](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
-- [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)
-- [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker)
-- [BitLocker Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)
+## Other Resources
 
-## Solutions related to Bugchecks or Stop Errors
-- [Troubleshooting Stop error problems for IT Pros](https://support.microsoft.com/help/3106831/troubleshooting-stop-error-problems-for-it-pros)
-- [How to use Windows Recovery Environment (WinRE) to troubleshoot common startup issues](https://support.microsoft.com/help/4026030/how-to-use-windows-recovery-environment-winre-to-troubleshoot-common-s)
-- [How to troubleshoot Windows-based computer freeze issues](https://support.microsoft.com/help/3118553/how-to-troubleshoot-windows-based-computer-freeze-issues)
-- [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](https://support.microsoft.com/help/4133658)
-
-
-## Solutions related to Windows Boot issues
-- [Troubleshooting Windows boot problems for IT Pros](https://support.microsoft.com/help/4343769)
-- [How to use Windows Recovery Environment (WinRE) to troubleshoot common startup issues](https://support.microsoft.com/help/4026030/how-to-use-windows-recovery-environment-winre-to-troubleshoot-common-s)
-
-
-## Solutions related to configuring or managing the Start menu
-- [Manage Windows 10 Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies)
-- [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout)
-- [Changes to Group Policy settings for Windows 10 Start](/windows/configuration/changes-to-start-policies-in-windows-10)
-- [Preinstalled system applications and Start menu may not work when you upgrade to Windows 10, Version 1511](https://support.microsoft.com/help/3152599)
-- [Start menu shortcuts aren't immediately accessible in Windows Server 2016](https://support.microsoft.com/help/3198613)
-- [Troubleshoot problems opening the Start menu or Cortana](https://support.microsoft.com/help/12385/windows-10-troubleshoot-problems-opening-start-menu-cortana)
-- [Modern apps are blocked by security software when you start the applications on Windows 10 Version 1607](https://support.microsoft.com/help/4016973/modern-apps-are-blocked-by-security-software-when-you-start-the-applic)
-
-## Solutions related to wireless networking and 802.1X authentication
-- [Advanced Troubleshooting Wireless Network](Connectivity]https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-wireless-network-connectivity)
-- [Advanced Troubleshooting 802.1x Authentication](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)
-- [Troubleshooting Windows 802.11 Wireless Connections](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc766215(v=ws.10))
-- [Troubleshooting Windows Secure 802.3 Wired Connections](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749352(v%3dws.10))
-- [Windows 10 devices can't connect to an 802.1X environment](https://support.microsoft.com/kb/3121002)
+- [Troubleshooting Windows Server components](https://docs.microsoft.com/windows-server/troubleshoot/windows-server-troubleshooting)

@@ -1,6 +1,6 @@
 ---
 title: Get started with Windows 10, version 1709
-description: All the information to get you started with Windows 10, version 1709.
+description: Learn about features, review requirements, and plan your deployment of Windows 10, version 1709, including IT Pro content, release information, and history.
 keywords: ["get started", "windows 10", "fall creators update", "1709"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ To view availability dates and servicing options for each version and update of 
 
 ## Windows 10 Roadmap
 
-If you'd like to gain some insight into preview, or in-development features, visit the [Windows 10 Roadmap](https://www.microsoft.com/en-us/WindowsForBusiness/windows-roadmap) page. You'll be able to filter by feature state and product category, to make this information easier to navigate.
+If you'd like to gain some insight into preview, or in-development features, visit the [Windows 10 Roadmap](https://www.microsoft.com/WindowsForBusiness/windows-roadmap) page. You'll be able to filter by feature state and product category, to make this information easier to navigate.
 
 ## Top support solutions for Windows 10
 

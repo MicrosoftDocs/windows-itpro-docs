@@ -1,6 +1,6 @@
 ---
 title: 4912(S) Per User Audit Policy was changed. (Windows 10)
-description: Describes security event 4912(S) Per User Audit Policy was changed.
+description: Describes security event 4912(S) Per User Audit Policy was changed. This event is generated every time Per User Audit Policy is changed.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -126,8 +126,9 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 
 -   **Subcategory** \[Type = UnicodeString\]**:** the name of auditing subcategory which state was changed. Possible values:
 
-| Audit Credential Validation              | Audit Process Termination                    | Audit Other Logon/Logoff Events      |
+| Value              | Value                    | Value      |
 |------------------------------------------|----------------------------------------------|--------------------------------------|
+| Audit Credential Validation              | Audit Process Termination                    | Audit Other Logon/Logoff Events      |
 | Audit Kerberos Authentication Service    | Audit RPC Events                             | Audit Special Logon                  |
 | Audit Kerberos Service Ticket Operations | Audit Detailed Directory Service Replication | Audit Application Generated          |
 | Audit Other Logon/Logoff Events          | Audit Directory Service Access               | Audit Certification Services         |
@@ -145,7 +146,7 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 | Audit Policy Change                      | Audit Non-Sensitive Privilege Use            | Audit System Integrity               |
 | Audit Authentication Policy Change       | Audit Sensitive Privilege Use                | Audit PNP Activity                   |
 | Audit Authorization Policy Change        | Audit Other Privilege Use Events             |                                      |
-| Group Membership                         | Audit Network Policy Server                  |                                      |
+| Audit Group Membership                         | Audit Network Policy Server                  |                                      |
 
 -   **Subcategory GUID** \[Type = GUID\]**:** the unique GUID of changed subcategory.
 

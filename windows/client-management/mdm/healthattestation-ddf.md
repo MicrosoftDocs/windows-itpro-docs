@@ -1,6 +1,6 @@
 ---
 title: HealthAttestation DDF
-description: HealthAttestation DDF
+description: Learn about the OMA DM device description framework (DDF) for the HealthAttestation configuration service provider.
 ms.assetid: D20AC78D-D2D4-434B-B9FD-294BCD9D1DDE
 ms.reviewer: 
 manager: dansimp

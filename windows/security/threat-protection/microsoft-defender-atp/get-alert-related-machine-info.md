@@ -1,7 +1,7 @@
 ---
 title: Get alert related machine information 
-description: Retrieves all machines related to a specific alert.
-keywords: apis, graph api, supported apis, get alert information, alert information, related machine
+description: Retrieve all devices related to a specific alert using Microsoft Defender Advanced Threat Protection (Microsoft Defender for Endpoint).
+keywords: apis, graph api, supported apis, get alert information, alert information, related device
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,14 +18,25 @@ ms.topic: article
 
 # Get alert related machine information API
 
-**Applies to:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves machine that is related to a specific alert.
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+## API description
+Retrieves [Device](machine.md) related to a specific alert.
+
+
+## Limitations
+1. You can query on alerts last updated according to your configured retention period.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -37,7 +48,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine associated with the alert, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -55,7 +66,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and alert and machine exist - 200 OK. If alert not found or machine not found - 404 Not Found.
+If successful and alert and device exist - 200 OK. If alert not found or device not found - 404 Not Found.
 
 ## Example
 
@@ -63,7 +74,7 @@ If successful and alert and machine exist - 200 OK. If alert not found or machin
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ```
@@ -85,15 +96,16 @@ Content-type: application/json
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
 	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
-    "osVersion": "10.0.0.0",
+    "version": "1709",
+	"osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",
     "lastExternalIpAddress": "167.220.196.71",
-    "agentVersion": "10.5830.18209.1001",
     "osBuild": 18209,
     "healthStatus": "Active",
     "rbacGroupId": 140,
 	"rbacGroupName": "The-A-Team",
     "riskScore": "Low",
+	"exposureLevel": "Medium",
 	"isAadJoined": true,
     "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 	"machineTags": [ "test tag 1", "test tag 2" ]

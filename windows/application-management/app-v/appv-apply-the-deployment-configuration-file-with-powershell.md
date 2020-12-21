@@ -1,5 +1,5 @@
 ---
-title: How to apply the deployment configuration file by using Windows PowerShell (Windows 10)
+title: Apply deployment config file via Windows PowerShell (Windows 10)
 description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10.
 author: dansimp
 ms.pagetype: mdop, appcompat, virtualization

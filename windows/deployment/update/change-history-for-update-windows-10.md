@@ -3,10 +3,9 @@ title: Change history for Update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.author: greglin
-ms.date: 09/18/2018
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -22,7 +21,7 @@ This topic lists new and updated topics in the [Update Windows 10](index.md) doc
 
 | New or changed topic | Description |
 | --- | --- |
-| [Get started with Windows Update](windows-update-overview.md) | New | 
+| [Get started with Windows Update](windows-update-overview.md) | New |
 
 
 ## RELEASE: Windows 10, version 1709
@@ -33,7 +32,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 | New or changed topic | Description |
 | --- | --- |
-| [Olympia Corp](olympia/olympia-enrollment-guidelines.md) | New | 
+| [Olympia Corp](olympia/olympia-enrollment-guidelines.md) | New |
 
 ## July 2017
 
@@ -43,7 +42,7 @@ All topics were updated to reflect the new [naming changes](waas-overview.md#nam
 
 | New or changed topic | Description |
 | --- | --- |
-| [Manage additional Windows Update settings](waas-wu-settings.md) | New | 
+| [Manage additional Windows Update settings](waas-wu-settings.md) | New |
 
 ## RELEASE: Windows 10, version 1703
 

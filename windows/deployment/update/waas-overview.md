@@ -1,10 +1,9 @@
 ---
 title: Overview of Windows as a service (Windows 10)
-description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
+description: Windows as a service introduces a new way to build, deploy, and service Windows. Learn how Windows as a service works.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
@@ -47,7 +46,7 @@ Application compatibility testing has historically been a burden when approachin
 
 Most Windows 7–compatible desktop applications will be compatible with Windows 10 straight out of the box. Windows 10 achieved such high compatibility because the changes in the existing Win32 application programming interfaces were minimal.  Combined with valuable feedback via the Windows Insider Program and diagnostic data, this level of compatibility can be maintained through each feature update. As for websites, Windows 10 includes Internet Explorer 11 and its backward-compatibility modes for legacy websites. Finally, UWP apps follow a compatibility story similar to desktop applications, so most of them will be compatible with Windows 10. 
 
-For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. For remaining applications, consider validating them as part of a pilot deployment process to reduce the time spent on compatibility testing. If it’s unclear whether an application is compatible with Windows 10, IT pros can either consult with the ISV or check the supported software directory at [http://www.readyforwindows.com](http://www.readyforwindows.com).
+For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. For remaining applications, consider validating them as part of a pilot deployment process to reduce the time spent on compatibility testing. Desktop Analytics s a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows endpoints, including assessment of your existing applications. For more, see [Ready for modern desktop retirement FAQ](https://docs.microsoft.com/mem/configmgr/desktop-analytics/ready-for-windows).
 
 ### Device compatibility
 
@@ -90,7 +89,7 @@ With Windows 10, Microsoft will package new features into feature updates that c
 
 Monthly updates in previous Windows versions were often overwhelming because of the sheer number of updates available each month. Many organizations selectively chose which updates they wanted to install and which they didn’t, and this created countless scenarios in which organizations deployed essential security updates but picked only a subset of non-security fixes.
 
-In Windows 10, rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators will see one cumulative monthly update that supersedes the previous month’s update, containing both security and non-security fixes. This approach makes patching simpler and ensures that customers’ devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from patching. The left side of Figure 1 provides an example of Windows 7 devices in an enterprise and what their current patch level might look like. On the right is what Microsoft’s test environment devicess contain. This drastic difference is the basis for many compatibility issues and system anomalies related to Windows updates.
+In Windows 10, rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators will see one cumulative monthly update that supersedes the previous month’s update, containing both security and non-security fixes. This approach makes patching simpler and ensures that customers’ devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from patching. The left side of Figure 1 provides an example of Windows 7 devices in an enterprise and what their current patch level might look like. On the right is what Microsoft’s test environment devices contain. This drastic difference is the basis for many compatibility issues and system anomalies related to Windows updates.
 
 **Figure 1**
 
@@ -102,7 +101,7 @@ In Windows 10, rather than receiving several updates each month and trying to fi
 
 To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how frequently their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. 
 
-With that in mind, Windows 10 offers three servicing channels. The [Windows Insider Program](#windows-insider) provides organizations with the opportunity to test and provide feedback on features that will be shipped in the next feature update. The [Semi-Annual Channel](#semi-annual-channel) provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel. The [Long Term Servicing Channel](#long-term-servicing-channel), which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years. For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx).
+With that in mind, Windows 10 offers three servicing channels. The [Windows Insider Program](#windows-insider) provides organizations with the opportunity to test and provide feedback on features that will be shipped in the next feature update. The [Semi-Annual Channel](#semi-annual-channel) provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel. The [Long Term Servicing Channel](#long-term-servicing-channel), which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years. For details about the versions in each servicing channel, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
 
 The concept of servicing channels is new, but organizations can use the same management tools they used to manage updates and upgrades in previous versions of Windows. For more information about the servicing tool options for Windows 10 and their capabilities, see [Servicing tools](#servicing-tools).
 
@@ -113,13 +112,13 @@ The concept of servicing channels is new, but organizations can use the same man
 
 In the Semi-Annual servicing channel, feature updates are available as soon as Microsoft releases them. Windows 10, version 1511, had few servicing tool options to delay feature updates, limiting the use of the Semi-Annual servicing channel. Starting with Windows 10, version 1607, more servicing tools that can delay feature updates for up to 365 days are available. This servicing model is ideal for pilot deployments and testing of Windows 10 feature updates and for users such as developers who need to work with the latest features immediately. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
 
-When Microsoft officially releases a feature update for Windows 10, it is made available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft System Center Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about Windows 10 servicing tools, see [Servicing tools](#servicing-tools).
+When Microsoft officially releases a feature update for Windows 10, it is made available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about Windows 10 servicing tools, see [Servicing tools](#servicing-tools).
 
 
 Organizations are expected to initiate targeted deployment on Semi-Annual Channel releases.  All customers, independent software vendors (ISVs), and partners should use this time for testing and piloting within their environments. After 2-4 months, we will transition to broad deployment and encourage customers and partners to expand and accelerate the deployment of the release. For customers using Windows Update for Business, the Semi-Annual Channel provides three months of additional total deployment time before being required to update to the next release.
 
 > [!NOTE]
-> All releases of Windows 10 have 18 months of servicing for all editions--these updates provide security and feature updates for the release. Customers running Enterprise and Education editions have an additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release. These versions include Enterprise and Education editions for Windows 10, versions 1607 and later. Starting in October 2018, all Semi-Annual Channel releases in the September/October timeframe will also have the additional 12 months of servicing for a total of 30 months from the initial release. The Semi-Annual Channel versions released in March/April timeframe will continue to have an 18-month lifecycle.
+> All releases of Windows 10 have **18 months of servicing for all editions**--these updates provide security and feature updates for the release. However, fall releases of the **Enterprise and Education editions** will have an **additional 12 months of servicing for specific Windows 10 releases, for a total of 30 months from initial release**. This extended servicing window applies to Enterprise and Education editions starting with Windows 10, version 1607.
 > 
 > 
 > [!NOTE]
@@ -132,7 +131,7 @@ Specialized systems—such as devices that control medical equipment, point-of-s
 > [!NOTE]
 > Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 >
->Long-term Servicing channel is not intended for deployment on most or all the devicess in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
+> Long-term Servicing channel is not intended for deployment on most or all the devices in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
@@ -164,9 +163,9 @@ There are many tools with which IT pros can service Windows as a service. Each o
 - **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the Semi-Annual Channel. Organizations can target which devices defer updates by selecting the Defer upgrades check box in Start\Settings\Update & Security\Advanced Options on a Windows 10 device.
 - **Windows Update for Business** is the second option for servicing Windows as a service. This servicing tool includes control over update deferment and provides centralized management using Group Policy. Windows Update for Business can be used to defer updates by up to 365 days, depending on the version. These deployment options are available to clients in the Semi-Annual Channel. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Intune.
 - **Windows Server Update Services (WSUS)** provides extensive control over Windows 10 updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
-- **System Center Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
+- **Microsoft Endpoint Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
 
-With all these options, which an organization chooses depends on the resources, staff, and expertise its IT organization already has. For example, if IT already uses System Center Configuration Manager to manage Windows updates, it can continue to use it. Similarly, if IT is using WSUS, it can continue to use that. For a consolidated look at the benefits of each tool, see Table 1.
+With all these options, which an organization chooses depends on the resources, staff, and expertise its IT organization already has. For example, if IT already uses Microsoft Endpoint Configuration Manager to manage Windows updates, it can continue to use it. Similarly, if IT is using WSUS, it can continue to use that. For a consolidated look at the benefits of each tool, see Table 1.
 
 **Table 1**
 
@@ -175,7 +174,7 @@ With all these options, which an organization chooses depends on the resources, 
 | Windows Update | Yes (manual) | No | Delivery Optimization | None|
 | Windows Update for Business | Yes | No | Delivery Optimization | Other Group Policy objects |
 | WSUS | Yes | Yes | BranchCache or Delivery Optimization | Upstream/downstream server scalability |
-| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache | Distribution points, multiple deployment options |
+| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache, or Delivery Optimization. For the latter, see [peer-to-peer content distribution](https://docs.microsoft.com/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#peer-to-peer-content-distribution) and [Optimize Windows 10 Update Delivery](https://docs.microsoft.com/windows/deployment/update/waas-optimize-windows-10-updates) | Distribution points, multiple deployment options |
 
 >[!NOTE]
 >Due to [naming changes](#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
@@ -191,7 +190,7 @@ With all these options, which an organization chooses depends on the resources, 
 | ![to do](images/checklistbox.gif) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
 
 
 

@@ -1,14 +1,12 @@
 ---
-title: Integrate Windows Update for Business with management solutions (Windows 10)
-description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and System Center Configuration Manager.
+title: Integrate Windows Update for Business (Windows 10)
+description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
-ms.date: 07/27/2017
-ms.reviewer: 
+ms.author: jaimeo
+ms.collection: m365initiative-coredeploy
 manager: laurawi
 ms.topic: article
 ---
@@ -22,7 +20,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) and System Center Configuration Manager.
+You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager.
 
 ## Integrate Windows Update for Business with Windows Server Update Services
 
@@ -70,7 +68,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 - Device is configured to defer Quality Updates using Windows Update for Business and to be managed by WSUS
 - Device is configured to “receive updates for other Microsoft products” along with updates to Windows (**Update/AllowMUUpdateService** = enabled)
-- Admin has also placed Microsoft Update, third-paprty, and locally-published update content on the WSUS server
+- Admin has also placed Microsoft Update, non-Microsoft, and locally published update content on the WSUS server
 
 In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS were not enabled. 
 - In a non-WSUS case, these updates would be deferred just as any update to Windows would be.  
@@ -86,7 +84,7 @@ In this example, the deferral behavior for updates to Office and other non-Windo
 >[!NOTE]
 > Because the admin enabled **Update/AllowMUUpdateService**, placing the content on WSUS was not needed for the particular device, as the device will always receive Microsoft Update content from Microsoft when configured in this manner.
 
-## Integrate Windows Update for Business with System Center Configuration Manager
+## Integrate Windows Update for Business with Microsoft Endpoint Configuration Manager
 
 For Windows 10, version 1607, organizations already managing their systems with a Configuration Manager solution can also have their devices configured for Windows Update for Business (i.e. setting deferral policies on those devices). Such devices will be visible in the Configuration Manager console, however they will appear with a detection state of **Unknown**.
 
@@ -110,6 +108,6 @@ For more information, see [Integration with Windows Update for Business in Windo
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)
 

@@ -1,6 +1,6 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
-description: WindowsAdvancedThreatProtection CSP
+description: The Windows Defender Advanced Threat Protection (WDATP) CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
 ms.reviewer: 
 manager: dansimp

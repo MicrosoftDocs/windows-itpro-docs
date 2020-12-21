@@ -7,8 +7,8 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ---
@@ -88,7 +88,7 @@ Now that you have the plan (blueprint) for your classroom, you’re ready to lea
 
 The primary tool you will use to deploy Windows 10 in your school is MDT, which uses Windows ADK components to make deployment easier. You could just use the Windows ADK to perform your deployment, but MDT simplifies the process by providing an intuitive, wizard-driven user interface (UI).
 
-You can use MDT as a stand-alone tool or integrate it with Microsoft System Center Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with System Center Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as System Center Configuration Manager) but result in fully automated deployments.
+You can use MDT as a stand-alone tool or integrate it with Microsoft Endpoint Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as Configuration Manager) but result in fully automated deployments.
 
 MDT includes the Deployment Workbench—a console from which you can manage the deployment of Windows 10 and your apps. You configure the deployment process in the Deployment Workbench, including the management of operating systems, device drivers, apps and migration of user settings on existing devices. 
 
@@ -164,7 +164,7 @@ In this section, you installed the Windows ADK and MDT on the admin device. You 
 
 Office 365 is one of the core components of your classroom environment. You create and manage student identities in Office 365, and students and teachers use the suite as their email, contacts, and calendar system. Teachers and students use Office 365 collaboration features such as SharePoint, OneNote, and OneDrive for Business.
 
-As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/en-us/education/products/office-365-deployment-resources/default.aspx).
+As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/education/products/office-365-deployment-resources/default.aspx).
 
 ### Select the appropriate Office 365 Education license plan
 
@@ -173,9 +173,9 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <ol>
 <li>Determine the number of faculty members and students who will use the classroom.<br/>Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.
 </li>
-<li>Determine the faculty members and students who need to install Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
+<li>Determine the faculty members and students who need to install Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Microsoft 365 Apps for enterprise plans). Table 1 lists the advantages and disadvantages of standard and Microsoft 365 Apps for enterprise plans.</li>
 <br/>
-<em>Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans</em>
+<em>Table 1. Comparison of standard and Microsoft Microsoft 365 Apps for enterprise plans</em>
 <br/>
 <table>
 <colgroup>
@@ -191,13 +191,13 @@ Complete the following steps to select the appropriate Office 365 Education lice
 </tr>
 </thead>
 <tbody>
-<tr><td>Standard</td><td><ul><li>Less expensive than Office 365 ProPlus</li><li>Can be run from any device</li><li>No installation necessary</li></ul></td><td><ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Office 365 ProPlus</li></ul></td></tr>
+<tr><td>Standard</td><td><ul><li>Less expensive than Microsoft 365 Apps for enterprise</li><li>Can be run from any device</li><li>No installation necessary</li></ul></td><td><ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Microsoft 365 Apps for enterprise</li></ul></td></tr>
 <tr><td>Office ProPlus</td><td><ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports full set of Office features</li></ul></td><td><ul><li>Requires installation</li><li>Can be installed on only five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul></td></tr>
 
 </tbody>
 </table>
 <br/>
-The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
+The best user experience is to run Microsoft 365 Apps for enterprise or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 <br/>
 <li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see <a href="https://technet.microsoft.com/library/jj585024.aspx" data-raw-source="[Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx)">Azure Rights Management</a>.</li>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 2.<br/><br/>
@@ -506,7 +506,7 @@ Assign SharePoint Online resource permissions to Office 365 security groups, not
 
 **Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 
-For information about creating security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
+For information about creating security groups, see [Create and manage Microsoft 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
 You can add and remove users from security groups at any time.
 
@@ -520,7 +520,7 @@ You can create email distribution groups based on job role (such as teachers, ad
 
 **Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
 
-For information about how to create security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
+For information about how to create security groups, see [Create and manage Microsoft 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
 ### Summary
 
@@ -1096,7 +1096,7 @@ As a final quality control step, verify the device configuration to ensure that 
 - The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
 - Windows Update is active and current with software updates.
 - Windows Defender is active and current with malware Security intelligence.
-- The SmartScreen Filter is active.
+- Windows Defender SmartScreen is active.
 - All Microsoft Store apps are properly installed and updated.
 - All Windows desktop apps are properly installed and updated.
 - Printers are properly configured.

@@ -1,15 +1,17 @@
 ---
 title: Policy CSP - Troubleshooting
-description: Policy CSP - Troubleshooting
-ms.author: maricia
+description: The Policy CSP - Troubleshooting setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: MariciaAlforque
-ms.date: 05/21/2019
+ms.localizationpriority: medium
+ms.date: 09/27/2019
 ---
 
 # Policy CSP - Troubleshooting
+
 
 
 <hr/>
@@ -32,26 +34,34 @@ ms.date: 05/21/2019
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    <th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
+    <td>Home</td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-    <td></td>
-    <td></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -65,7 +75,14 @@ ms.date: 05/21/2019
 This policy setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
+-   GP name: *TroubleshootingAllowRecommendations*
+-   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
+-   GP ADMX file name: *MSDT.admx*
 
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 This is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
 
@@ -112,14 +129,6 @@ By default, this policy is not configured and the SKU based defaults are used fo
 </table>
 
 <!--/SupportedValues-->
-<!--ADMXMapped-->
-ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access recommended troubleshooting for known problems</em>
--   GP name: <em>TroubleshootingAllowRecommendations</em>
--   GP path: <em>Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool</em>
--   GP ADMX file name: <em>MSDT.admx</em>
-
-<!--/ADMXMapped-->
-
 <!--Example-->
 
 <!--/Example-->
@@ -127,15 +136,18 @@ ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access r
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
 <hr/>
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
+
+<!--/Policies-->
+

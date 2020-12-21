@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Create packages for multiple operating systems or languages
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Create packages for multiple operating systems or languages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Create packages for multiple operating systems or languages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You'll create multiple versions of your custom browser package if:
 
 - You support more than 1 version of Windows®.

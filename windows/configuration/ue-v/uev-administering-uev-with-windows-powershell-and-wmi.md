@@ -1,6 +1,6 @@
 ---
 title: Administering UE-V with Windows PowerShell and WMI
-description: Administering UE-V with Windows PowerShell and WMI
+description: Learn how User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks.
 author: trudyha
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: trudyha
+ms.author: dansimp
 ms.topic: article
 ---
 

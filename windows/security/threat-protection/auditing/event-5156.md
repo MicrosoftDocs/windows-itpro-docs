@@ -80,7 +80,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
 **Application Information**:
 
--   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process which received the connection. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that received the connection. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -102,7 +102,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   Outbound – for unbound connections.
 
--   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application received the connection.
+-   **Source Address** \[Type = UnicodeString\]**:**  IP address from which the connection was initiated.
 
     -   IPv4 Address
 
@@ -114,9 +114,9 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Source Port** \[Type = UnicodeString\]**:** port number on which application received the connection.
+-   **Source Port** \[Type = UnicodeString\]**:** port number from which the connection was initiated.
 
--   **Destination Address** \[Type = UnicodeString\]**:** IP address ***from*** which connection was received or initiated.
+-   **Destination Address** \[Type = UnicodeString\]**:** IP address where the connection was received.
 
     -   IPv4 Address
 
@@ -128,9 +128,9 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Destination Port** \[Type = UnicodeString\]**:** port number which was used from remote machine to initiate connection.
+-   **Destination Port** \[Type = UnicodeString\]**:** port number where the connection was received.
 
--   **Protocol** \[Type = UInt32\]: number of protocol which was used.
+-   **Protocol** \[Type = UInt32\]: number of the protocol that was used.
 
 | Service                                            | Protocol Number |
 |----------------------------------------------------|-----------------|
@@ -152,15 +152,15 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID which allowed the connection.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allowed the connection.
 
-    To find specific Windows Filtering Platform filter by ID you need to execute the following command: **netsh wfp show filters**. As result of this command **filters.xml** file will be generated. You need to open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
+    To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
 
 <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
 -   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
 
--   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find specific Windows Filtering Platform layer ID you need to execute the following command: **netsh wfp show state**. As result of this command **wfpstate.xml** file will be generated. You need to open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
+-   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 
 <img src="images/wfpstate-xml.png" alt="Wfpstate xml illustration" width="1563" height="780" />
 
@@ -168,7 +168,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
 For 5156(S): The Windows Filtering Platform has permitted a connection.
 
--   If you have a pre-defined application which should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
+-   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
 -   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
@@ -178,13 +178,13 @@ For 5156(S): The Windows Filtering Platform has permitted a connection.
 
 -   If the computer or device should not have access to the Internet, or contains only applications that don’t connect to the Internet, monitor for [5156](event-5156.md) events where “**Destination Address”** is an IP address from the Internet (not from private IP ranges).
 
--   If you know that the computer should never contact or be contacted by certain network IP addresses, monitor for these addresses in “**Destination Address**.**”**
+-   If you know that the computer should never contact or should never be contacted by certain network IP addresses, monitor for these addresses in “**Destination Address**.**”**
 
--   If you have a “whitelist” of IP addresses that the computer or device is expected to contact or be contacted by, monitor for IP addresses in “**Destination Address”** that are not in the whitelist.
+-   If you have an allow list of IP addresses that the computer or device is expected to contact or to be contacted by, monitor for IP addresses in “**Destination Address”** that are not in the allow list.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5156](event-5156.md) events with that “**Source Port**.**”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or compter, for example, anything other than 1, 6, or 17.
+-   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
 

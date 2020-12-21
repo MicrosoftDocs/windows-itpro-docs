@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Credential Guard protection limits (Windows 10)
-description: Scenarios not protected by Windows Defender Credential Guard in Windows 10.
+title: Windows Defender Credential Guard protection limits & mitigations (Windows 10)
+description: Scenarios not protected by Windows Defender Credential Guard in Windows 10, and additional mitigations you can use.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Get CVE-KB map API
-description: Retrieves a map of CVE's to KB's.
+description: Learn how to use the Get CVE-KB map API to retrieve a map of CVE's to KB's and CVE details in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,13 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # Get CVE-KB map API
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Retrieves a map of CVE's to KB's and CVE details.
 

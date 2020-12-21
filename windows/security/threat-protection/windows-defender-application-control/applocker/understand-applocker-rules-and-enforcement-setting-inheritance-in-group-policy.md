@@ -30,7 +30,9 @@ Rule enforcement is applied only to collections of rules, not individual rules. 
 Group Policy merges AppLocker policy in two ways:
 
 -   **Rules.** Group Policy does not overwrite or replace rules that are already present in a linked Group Policy Object (GPO). For example, if the current GPO has 12 rules and a linked GPO has 50 rules, 62 rules are applied to all computers that receive the AppLocker policy.
-    >**Important:**  When determining whether a file is permitted to run, AppLocker processes rules in the following order:
+
+    > [!IMPORTANT]
+    > When determining whether a file is permitted to run, AppLocker processes rules in the following order:
 
     1.  **Explicit deny.** An administrator created a rule to deny a file.
     2.  **Explicit allow.** An administrator created a rule to allow a file.

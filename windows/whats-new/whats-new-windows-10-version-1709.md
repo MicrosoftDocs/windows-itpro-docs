@@ -1,20 +1,19 @@
 ---
 title: What's new in Windows 10, version 1709
-description: New and updated IT Pro content about new features in Windows 10, version 1709 (also known as the Fall Creators Update).
+description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
 keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.date: 01/24/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1709 IT Pro content
+# What's new in Windows 10, version 1709 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1709
@@ -25,7 +24,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
 
 
 ## Deployment
@@ -86,9 +85,9 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 **Windows security baselines** have been updated for Windows 10. A [security baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/windows/device-security/security-compliance-toolkit-10).
 
-### Windows Defender ATP 
+### Microsoft Defender for Endpoint
 
-Windows Defender ATP has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Windows Defender Advanced Threat Protection Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
+Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
 
 ### Windows Defender Application Guard
 
@@ -96,7 +95,8 @@ Windows Defender Application Guard hardens a favorite attacker entry-point by is
 
 ### Window Defender Exploit Guard
 
-Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. For more information, see [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard).
+Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection), [Attack surface reduction protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-attack-surface-reduction), [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access), and [Network protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).
+
 
 ### Windows Defender Device Guard
 
@@ -130,7 +130,7 @@ Upgrade Readiness provides insights into application and driver compatibility is
 
 ### Update Compliance
 
-New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Windows Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
+New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates. For more information, see [Monitor Windows Updates and Microsoft Defender Antivirus with Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor).
 
 ### Device Health
 
@@ -149,4 +149,8 @@ Several network stack enhancements are available in this release. Some of these 
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
-[Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
+[Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Microsoft Defender for Endpoint in Windows 10, version 1709.
+[Threat protection on Windows 10](https://docs.microsoft.com/windows/security/threat-protection/):Detects advanced attacks and data breaches, automates security incidents and improves security posture.<br>
+
+
+

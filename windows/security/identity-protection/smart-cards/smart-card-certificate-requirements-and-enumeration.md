@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -185,7 +185,7 @@ Certificate requirements are listed by versions of the Windows operating system.
 The smart card certificate has specific format requirements when it is used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
 
-|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, and Windows Vista**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
+|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, Windows Vista, and Windows 10**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=<http://server1.contoso.com/CertEnroll/caname.crl>             |
 |              Key usage               |                                                                                            Digital signature                                                                                             |                                                                                                       Digital signature                                                                                                        |

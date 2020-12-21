@@ -3,18 +3,22 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
-author: lomayor
-ms.author: lomayor
+author: dansimp
+ms.author: dansimp
 ms.prod: ie11
 ms.assetid: 
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Tips and tricks to manage Internet Explorer compatibility
 ms.sitesec: library
 ms.date: 05/10/2018
 ---
 
 # Tips and tricks to manage Internet Explorer compatibility
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
 
@@ -84,8 +88,8 @@ To see if the site works in the Internet Explorer 5, Internet Explorer 7, Intern
 
 -   Run the site in each document mode until you find the mode in which the site works.
  
-    >[!NOTE]
-    >You will need to make sure the User agent string dropdown matches the same browser version as the Document mode dropdown. For example, if you were testing to see if the site works in Internet Explorer 10, you should update the Document mode dropdown to 10 and the User agent string dropdown to Internet Explorer 10.
+    > [!NOTE]
+    > You will need to make sure the User agent string dropdown matches the same browser version as the Document mode dropdown. For example, if you were testing to see if the site works in Internet Explorer 10, you should update the Document mode dropdown to 10 and the User agent string dropdown to Internet Explorer 10.
 
 -   If you find a mode in which your site works, you will need to add the site  domain, sub-domain, or URL to the Enterprise Mode Site List for the document mode in which the site works, or ask the IT administrator to do so. You can add the *x-ua-compatible* meta tag or HTTP header as well.
 
@@ -115,8 +119,8 @@ If IE8 Enterprise Mode doesn't work, IE7 Enterprise Mode will give you the Compa
 
 If the site works, inform the IT administrator that the site needs to be added to the IE7 Enterprise Mode section.\
 
->[!NOTE]
->Adding the same Web path to the Enterprise Mode and sections of the Enterprise Mode Site List will not work, but we will address this in a future update.
+> [!NOTE]
+> Adding the same Web path to the Enterprise Mode and sections of the Enterprise Mode Site List will not work, but we will address this in a future update.
 
 ### Update the site for modern web standards
 
@@ -127,7 +131,7 @@ We recommend that enterprise customers focus their new development on establishe
 - [Document modes](https://msdn.microsoft.com/library/dn384051&#040;v=vs.85&#041;.aspx)
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
-- [Enterprise Site Discovery Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=44570)
+- [Enterprise Site Discovery Toolkit](https://www.microsoft.com/download/details.aspx?id=44570)
 - [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)

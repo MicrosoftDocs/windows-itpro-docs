@@ -1,6 +1,6 @@
 ---
 title: Network security LDAP client signing requirements (Windows 10)
-description: This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting.
+description: Best practices, location, values, policy management and security considerations for the policy setting, Network security LDAP client signing requirements.
 ms.assetid: 38b35489-eb5b-4035-bc87-df63de50509c
 ms.reviewer: 
 ms.author: dansimp
@@ -43,7 +43,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 ### Best practices
 
--   Set **Domain controller: LDAP server signing requirements** to **Require signature**. If you set the server to require LDAP signatures, you must also set the client devices to do so. Not setting the client devices will prevent client computers from communicating with the server. This can cause many features to fail, including user authentication, Group Policy, and logon scripts.
+-   Set both the **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings to **Require signing**. To avoid usage of unsigned traffic, set both client and server sides to require signing. Not setting one of the sides will prevent client computers from communicating with the server. This can cause many features to fail, including user authentication, Group Policy, and logon scripts.
 
 ### Location
 
@@ -84,11 +84,11 @@ Unsigned network traffic is susceptible to man-in-the-middle attacks in which an
 
 ### Countermeasure
 
-Configure the **Network security: LDAP server signing requirements** setting to **Require signature**.
+Configure the **Network security: LDAP client signing requirements** setting to **Require signing**.
 
 ### Potential impact
 
-If you configure the server to require LDAP signatures, you must also configure the client computers. If you do not configure the client devices, they cannot communicate with the server, which could cause many features to fail, including user authentication, Group Policy, and logon scripts.
+If you configure the client to require LDAP signatures, it may fail to communicate with the LDAP servers that do not require requests to be signed. To avoid this issue, make sure that both the **Network security: LDAP client signing requirements** and **Domain controller: LDAP server signing requirements** settings are set to **Require signing**.
 
 ## Related topics
 

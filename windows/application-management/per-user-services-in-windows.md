@@ -1,11 +1,11 @@
 ---
-title: Per-user services in Windows 10 and Windows Server 
-description: Learn about per-user services introduced in Windows 10.
+title: Per-user services in Windows 10 and Windows Server
+description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: tracyp
+ms.author: dansimp
 author: msfttracyp
 ms.date: 09/14/2017
 ms.reviewer: 
@@ -92,7 +92,7 @@ Revision=1
 
 If a per-user service can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
-1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
+1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
 2. Create a new Group Policy Object (GPO) or use an existing GPO.  
 

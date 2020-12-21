@@ -1,6 +1,6 @@
 ---
 title: Manage Microsoft Defender Advanced Threat Protection suppression rules
-description: Manage suppression rules 
+description: You might need to prevent alerts from appearing in the portal by using suppression rules. Learn how to manage your suppression rules in Microsoft Defender ATP.
 keywords: manage suppression, rules, rule name, scope, action, alerts, turn on, turn off
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,21 +19,24 @@ ms.topic: article
 
 # Manage suppression rules
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 There might be scenarios where you need to suppress alerts from appearing in the portal. You can create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. For more information on how to suppress alerts, see [Suppress alerts](manage-alerts.md).
 
 You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
 
-## Turn a suppression rule on or off
 
 1. In the navigation pane, select **Settings** > **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
 2. Select a rule by clicking on the check-box beside the rule name.
 
-3. Click **Turn rule on** or **Turn rule off**.
+3. Click **Turn rule on**, **Edit rule**, or  **Delete rule**. When making changes to a rule, you can choose to release alerts that it has already suppressed, regardless whether or not these alerts match the new criteria. 
+
 
 ## View details of a suppression rule
 

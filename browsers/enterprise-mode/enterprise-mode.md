@@ -3,8 +3,8 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use this section to learn about how to turn on Enterprise Mode.
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.assetid: 
 ms.reviewer: 

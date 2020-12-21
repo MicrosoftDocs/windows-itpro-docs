@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: explore
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/16/2017
@@ -15,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Internet Explorer 11 - FAQ for IT Pros
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
 
 ## Frequently Asked Questions

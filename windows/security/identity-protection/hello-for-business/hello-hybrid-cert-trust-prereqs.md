@@ -1,6 +1,6 @@
 ---
-title: Hybrid Windows Hello for Business Prerequisites (Windows Hello for Business)
-description: Prerequisites for Hybrid Windows Hello for Business Deployments
+title: Hybrid Windows Hello for Business Prerequisites
+description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -39,7 +39,7 @@ Hybrid Windows Hello for Business needs two directories: on-premises Active Dire
 
 A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  Different deployment configurations are supported by different Azure subscriptions.  The hybrid-certificate trust deployment needs an Azure Active Directory premium subscription because it uses the device write-back synchronization feature.  Other deployments, such as the hybrid key-trust deployment, may not require Azure Active Directory premium subscription.
 
-Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory schema.
+Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory or later schema.
  
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 
@@ -49,7 +49,7 @@ Review these requirements and those from the Windows Hello for Business planning
 > * Active Directory Domain Functional Level
 > * Active Directory Forest Functional Level
 > * Domain Controller version
-> * Windows Server 2016 Schema 
+> * Windows Server 2016 or later Schema 
 > * Azure Active Directory subscription
 > * Correct subscription for desired features and outcomes  
 
@@ -117,6 +117,11 @@ Hybrid certificate trust deployments need the device write back feature.  Authen
 
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory, and therefore the device writeback is used to update the msDS-KeyCredentialLink on the computer object.
+
+## Provisioning
+
+You need to allow access to the URL account.microsoft.com to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL does not require any authentication and as such, does not collect any user data.
+
 
 ### Section Checklist ###
 > [!div class="checklist"]

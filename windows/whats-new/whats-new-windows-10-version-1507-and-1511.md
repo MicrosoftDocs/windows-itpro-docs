@@ -1,20 +1,19 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
-ms.date: 10/16/2017
 ms.topic: article
 ---
 
-# What's new in Windows 10, versions 1507 and 1511
+# What's new in Windows 10, versions 1507 and 1511 for IT Pros
 
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
@@ -33,9 +32,9 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ## Security
 
-### Applocker
+### AppLocker
 
-#### New Applocker features in Windows 10, version 1507
+#### New AppLocker features in Windows 10, version 1507
 
 -   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
 -   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
@@ -43,17 +42,19 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
-### Bitlocker
+### BitLocker
 
-#### New Bitlocker features in Windows 10, version 1511
+#### New BitLocker features in Windows 10, version 1511
 
 - **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
   It provides the following benefits:
   - The algorithm is FIPS-compliant.
   - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
-#### New Bitlocker features in Windows 10, version 1507
+>[!NOTE]
+>Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+
+#### New BitLocker features in Windows 10, version 1507
 
 <!-- The link in the first bullet below will need to be refreshed Jan/Feb 2017. -->
 
@@ -144,7 +145,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more information about restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
 ##### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -217,7 +218,8 @@ Some things that you can check on the device are:
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
-> **Note**  The device must be running Windows 10 and it must support at least TPM 2.0.
+>[!NOTE]
+>The device must be running Windows 10 and it must support at least TPM 2.0.
 
 [Learn how to deploy and manage TPM within your organization](/windows/device-security/tpm//trusted-platform-module-overview).
 
@@ -225,7 +227,7 @@ Some things that you can check on the device are:
 
 User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better-managed desktop environment.
 
-You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Univeral Windows Platform apps stop working. You must always set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
+You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
 
 For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
 
@@ -278,10 +280,9 @@ Enterprises have the following identity and management choices.
 |---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
-| Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
+| Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
-With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
+**Note:** With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
  
 ### Device lockdown
@@ -325,9 +326,9 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).

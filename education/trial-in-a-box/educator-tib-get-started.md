@@ -9,8 +9,8 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 03/18/2018
 ms.reviewer: 
 manager: dansimp
@@ -339,7 +339,7 @@ For more information about checking for updates, and how to optionally turn on a
 ## Get more info
 * Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>
 * Find out if your school is eligible for a device trial at <a href="https://aka.ms/EDUTrialInABox" target="_blank">aka.ms/EDUTrialInABox</a>
-* <a href="https://www.microsoft.com/en-us/education/devices/default.aspx" target="_blank">Buy Windows 10 devices</a>
+* <a href="https://www.microsoft.com/education/devices/default.aspx" target="_blank">Buy Windows 10 devices</a>
 
 <br/>
 <br/>

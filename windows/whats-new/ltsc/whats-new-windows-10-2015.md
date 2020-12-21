@@ -1,27 +1,28 @@
 ---
-title: What's new in Windows 10 Enterprise 2015 LTSC
+title: What's new in Windows 10 Enterprise LTSC 2015
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: New and updated IT Pro content about new features in Windows 10 Enterprise 2015 LTSC (also known as Windows 10 Enterprise 2015 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2015 LTSC"]
+description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
+keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2015"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---
 
-# What's new in Windows 10 Enterprise 2015 LTSC
+# What's new in Windows 10 Enterprise LTSC 2015
 
 **Applies to**
--   Windows 10 Enterprise 2015 LTSC
+-   Windows 10 Enterprise LTSC 2015
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise 2015 LTSC (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
->Features in Windows 10 Enterprise 2015 LTSC are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
+>Features in Windows 10 Enterprise LTSC 2015 are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
 
 ## Deployment
 
@@ -33,11 +34,11 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ## Security
 
-### Applocker
+### AppLocker
 
-Applocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
 
-Enhancements to Applocker in Windows 10 include:
+Enhancements to AppLocker in Windows 10 include:
 
 -   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
 -   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
@@ -45,9 +46,9 @@ Enhancements to Applocker in Windows 10 include:
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
-### Bitlocker
+### BitLocker
 
-Enhancements to Applocker in Windows 10 include:
+Enhancements to AppLocker in Windows 10 include:
 
 -   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](https://technet.microsoft.com/itpro/windows/keep-secure/windows-10-security-guide#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
@@ -116,7 +117,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more info on restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
 #### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -242,7 +243,7 @@ Enterprises have the following identity and management choices.
 |---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
-| Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
+| Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
  > **Note**  
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
@@ -263,13 +264,13 @@ You can also [configure a lockdown state](https://technet.microsoft.com/itpro/wi
 
 Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/itpro/windows/manage/windows-10-start-layout-options-and-policies).
 
-### Customized Start layout
+### Start layout
 
-A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](/windows/configuration/customize-and-export-start-layout).
+A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](/windows/configuration/customize-and-export-start-layout).
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
-## Updates
+## Updates 
 
 Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 
@@ -279,9 +280,9 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).

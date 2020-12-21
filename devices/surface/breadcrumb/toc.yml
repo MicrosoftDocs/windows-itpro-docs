@@ -1,7 +1,0 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-    - name: Surface
-      tocHref: /surface
-      topicHref: /surface/index

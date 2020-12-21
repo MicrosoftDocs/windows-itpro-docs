@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Info about where features went in the IEAK11, where the Favorites, Command, and Status bars went, and where the search bar went.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # User interface problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Some of the features in both Internet Explorer 11 and IEAK 11 have moved around. Here are some of the more common changes.
 
 ## Where did features go in the Internet Explorer Customization Wizard 11?
@@ -45,14 +49,6 @@ For IE11, the UI has been changed to provide just the controls needed to support
 ## Where did the search box go?
 IE11 uses the **One Box** feature, which lets users type search terms directly into the **Address bar**. Any text entered into the **Address bar** that doesn't appear to be a URL is automatically sent to the currently selected search provider.
 
->[!NOTE]
->Depending on how you've set up your intranet search, the text entry might resolve to an intranet site. For more information about this, see  [Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md).
-
- 
-
- 
-
- 
-
-
+> [!NOTE]
+> Depending on how you've set up your intranet search, the text entry might resolve to an intranet site. For more information about this, see  [Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md).
 

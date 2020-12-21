@@ -1,6 +1,6 @@
 ---
 title: General Conventions (Windows 10)
-description: General Conventions
+description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -34,7 +35,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
     You can use the User State Migration Tool (USMT) 10.0 XML schema, MigXML.xsd, to write and validate migration .xml files.
 
--   **Conflits**
+-   **Conflicts**
 
     In general, when there are conflicts within the XML schema, the most specific pattern takes precedence. For more information, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 
@@ -50,7 +51,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
 -   **File names with brackets**
 
-    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named File.txt, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
+    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named **file].txt**, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
 
 -   **Using quotation marks**
 

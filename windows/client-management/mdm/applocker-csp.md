@@ -1,15 +1,15 @@
 ---
 title: AppLocker CSP
-description: AppLocker CSP
+description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 07/25/2019
+ms.date: 11/19/2019
 ---
 
 # AppLocker CSP
@@ -17,35 +17,157 @@ ms.date: 07/25/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-> **Note**  
-> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
-> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
-
-
 The following diagram shows the AppLocker configuration service provider in tree format.
 
 ![applocker csp](images/provisioning-csp-applocker.png)
 
-<a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**
+<a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
 Defines the root node for the AppLocker configuration service provider.
 
-<a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**
+<a href="" id="applocker-applicationlaunchrestrictions"></a>**AppLocker/ApplicationLaunchRestrictions**  
 Defines restrictions for applications.
 
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+>
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
+
+> [!NOTE]
+> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
-<a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**
+<a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
+Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE**  
+Defines restrictions for launching executable applications.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is string. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/EnforcementMode**  
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+
+The data type is a string. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-noninteractiveprocessenforcement"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/NonInteractiveProcessEnforcement**  
+The data type is a string.
+
+Supported operations are Add, Delete, Get, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI**  
+Defines restrictions for executing Windows Installer files.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is string. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI/EnforcementMode**  
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+
+The data type is a string. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-script"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script**  
+Defines restrictions for running scripts.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-script-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is string. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-script-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script/EnforcementMode**  
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+
+The data type is a string.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps**  
+Defines restrictions for running apps from the Microsoft Store.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is string.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps/EnforcementMode**  
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+
+The data type is a string.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL**  
+Defines restrictions for processing DLL files.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is string.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/EnforcementMode**  
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+
+The data type is a string.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-noninteractiveprocessenforcement"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/NonInteractiveProcessEnforcement**  
+The data type is a string.
+
+Supported operations are Add, Delete, Get, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-codeintegrity"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity**  
+This node is only supported on the desktop. 
+
+Supported operations are Get, Add, Delete, and Replace.
+
+<a href="" id="applocker-applicationlaunchrestrictions-grouping-codeintegrity-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+
+Data type is Base64.
+
+Supported operations are Get, Add, Delete, and Replace.
+
+> [!NOTE]
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+
+<a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
 
 In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
@@ -66,115 +188,35 @@ Additional information:
 
 - [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
-Each of the previously listed nodes contains a **Grouping** node.
+<a href="" id="applocker-enterprisedataprotection-grouping"></a>**AppLocker/EnterpriseDataProtection/_Grouping_**  
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
+Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Grouping</strong></p></td>
-<td><p>Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.</p>
-<p>Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-</tbody>
-</table>
+Supported operations are Get, Add, Delete, and Replace.
 
+<a href="" id="applocker-enterprisedataprotection-grouping-exe"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/EXE**  
+Defines restrictions for launching executable applications.
 
+Supported operations are Get, Add, Delete, and Replace.
 
-In addition, each **Grouping** node contains one or more of the following nodes:
+<a href="" id="applocker-enterprisedataprotection-grouping-exe-policy"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>EXE</strong></p></td>
-<td><p>Defines restrictions for launching executable applications.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>MSI</strong></p></td>
-<td><p>Defines restrictions for executing Windows Installer files.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Script</strong></p></td>
-<td><p>Defines restrictions for running scripts.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>StoreApps</strong></p></td>
-<td><p>Defines restrictions for running apps from the Microsoft Store.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Defines restrictions for processing DLL files.</p>
-<p>Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CodeIntegrity</strong></p></td>
-<td><p>This node is only supported on the desktop. Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-</tbody>
-</table>
+Data type is string. 
 
+Supported operations are Get, Add, Delete, and Replace.
 
+<a href="" id="applocker-enterprisedataprotection-grouping-storeapps"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps**  
+Defines restrictions for running apps from the Microsoft Store.
 
-Each of the previous nodes contains one or more of the following leaf nodes:
+Supported operations are Get, Add, Delete, and Replace.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Policy</strong></p></td>
-<td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
-<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</p>
-<p>For CodeIntegrity/Policy, data type is Base64. Supported operations are Get, Add, Delete, and Replace.</td>
-</tr>
-<tr class="even">
-<td><p><strong>EnforcementMode</strong></p></td>
-<td><p>The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).</p>
-<p>The data type is a string. Supported operations are Get, Add, Delete, and Replace.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>NonInteractiveProcessEnforcement</strong></p></td>
-<td><p>The data type is a string.</p>
-<p>Supported operations are Add, Delete, Get, and Replace.</p></td>
-</tr>
-</tbody>
-</table>
+<a href="" id="applocker-enterprisedataprotection-grouping-exe-storeapps"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps/Policy**  
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
 
-> [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+Data type is string.
 
+Supported operations are Get, Add, Delete, and Replace.
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
 
@@ -242,7 +284,6 @@ The following table show the mapping of information to the AppLocker publisher r
 </tr>
 </tbody>
 </table>
-
 
 
 Here is an example AppLocker publisher rule:
@@ -324,7 +365,7 @@ Result
 <td><p>windowsPhoneLegacyId</p></td>
 <td><p>Same value maps to the ProductName and Publisher name</p>
 <p>This value will only be present if there is a XAP package associated with the app in the Store.</p>
-<p>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and anothe one using the windowsPhoneLegacyId value.</p></td>
+<p>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -363,7 +404,8 @@ The product name is first part of the PackageFullName followed by the version nu
 
 The following list shows the apps that may be included in the inbox.
 
-> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+> [!NOTE]
+> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 
 
 
@@ -442,7 +484,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Colour profile</td>
+<td>Color profile</td>
 <td>b08997ca-60ab-4dce-b088-f92e9c7994f3</td>
 <td></td>
 </tr>
@@ -672,12 +714,12 @@ The following list shows the apps that may be included in the inbox.
 <td>Microsoft.MSPodcast</td>
 </tr>
 <tr class="odd">
-<td>Posdcast downloads</td>
+<td>Podcast downloads</td>
 <td>063773e7-f26f-4a92-81f0-aa71a1161e30</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Powerpoint</td>
+<td>PowerPoint</td>
 <td>b50483c4-8046-4e1b-81ba-590b24935798</td>
 <td>Microsoft.Office.PowerPoint</td>
 </tr>
@@ -826,7 +868,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Whitelist examples
+## <a href="" id="allow-list-examples"></a>Allow list examples
 
 The following example disables the calendar application.
 
@@ -1713,7 +1755,7 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
         <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="WINWORD.EXE">
           <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>	
+      </Exceptions>    
   </FilePublisherRule>
   <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
     <Conditions>

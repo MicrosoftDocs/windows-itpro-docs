@@ -1,20 +1,19 @@
 ---
 title: What's new in Windows 10, version 1803
-description: New and updated IT Pro content about new features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
+description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
 keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.date: 07/07/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
 ms.topic: article
 ---
 
-# What's new in Windows 10, version 1803 IT Pro content
+# What's new in Windows 10, version 1803 for IT Pros
 
 **Applies to**
 -   Windows 10, version 1803
@@ -25,7 +24,7 @@ This article lists new and updated features and content that are of interest to 
 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/RE21ada?autoplay=false]
 
 ## Deployment
 
@@ -66,7 +65,7 @@ With this release you can easily deploy and manage kiosk devices with Microsoft 
 - To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
 For more information, see: 
-- [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
+- [Making IT simpler with a modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
 - [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
 
 ### Windows 10 Subscription Activation
@@ -135,7 +134,7 @@ Portions of the work done during the offline phases of a Windows update have bee
 
 ### Co-management
 
-**Intune** and **System Center Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+**Intune** and **Microsoft Endpoint Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -172,25 +171,25 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 The new [security baseline for Windows 10 version 1803](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) has been published. 
 
-### Windows Defender Antivirus
+### Microsoft Defender Antivirus
 
-Windows Defender Antivirus now shares detection status between M365 services and interoperates with Windows Defender ATP.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
+Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 
 ### Windows Defender Exploit Guard
 
-Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem.  These Exploit Guard features can now be enabled through the Windows Defender Security Center.
+Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem. These Exploit Guard features can now be enabled through the Windows Defender Security Center.
 
-For more information, see [Reduce attack surfaces with Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+For more information, see [Reduce attack surfaces](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction)
 
-### Windows Defender ATP 
+### Microsoft Defender for Endpoint
 
-[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
 
-- [Query data using Advanced hunting in Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+- [Query data using Advanced hunting in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
 - [Use Automated investigations to investigate and remediate threats](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
 - [Enable conditional access to better protect users, devices, and data](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)
 
-Also see [New capabilities of Windows Defender ATP further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
+Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
 ### Windows Defender Application Guard
 
@@ -234,5 +233,5 @@ Support in [Windows Defender Application Guard](#windows-defender-application-gu
 - [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.  
 - [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.
 - [What's new in Windows 10, version 1709](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.
-- [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Windows Defender ATP in Windows 10, version 1709.
+- [Windows 10 Fall Creators Update Next Generation Security](https://www.youtube.com/watch?v=JDGMNFwyUg8): YouTube video about Microsoft Defender for Endpoint in Windows 10, version 1709.
 

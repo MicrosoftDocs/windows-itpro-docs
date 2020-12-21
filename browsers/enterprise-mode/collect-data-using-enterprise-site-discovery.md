@@ -2,12 +2,12 @@
 ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
-author: eavena
+author: dansimp
 ms.prod: ie11
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 title: Collect data using Enterprise Site Discovery
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -48,7 +48,7 @@ Before you start, you need to make sure you have the following:
 
     -   IETelemetry.mof file
 
-    -   Sample System Center 2012 report templates
+    -   Sample Configuration Manager report templates
 
         You must use System Center 2012 R2 Configuration Manager or later for these samples to work.
 

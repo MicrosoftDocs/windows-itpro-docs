@@ -1,6 +1,6 @@
 ---
 title: EnterpriseModernAppManagement DDF
-description: EnterpriseModernAppManagement DDF
+description: Learn about the OMA DM device description framework (DDF) for the EnterpriseModernAppManagement configuration service provider (CSP).
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp
@@ -9,19 +9,16 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/27/2018
+ms.date: 10/01/2019
 ---
 
 # EnterpriseModernAppManagement DDF
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **EnterpriseModernAppManagement** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -395,6 +392,26 @@ The XML below is for Windows 10, version 1809.
                 </DFType>
               </DFProperties>
             </Node>
+            <Node>
+              <NodeName>IsStub</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
           <Node>
             <NodeName>DoNotUpdate</NodeName>
@@ -522,6 +539,7 @@ The XML below is for Windows 10, version 1809.
               <Get />
               <Add />
               <Delete />
+              <Replace />
             </AccessType>
             <DFFormat>
               <node />
@@ -543,6 +561,7 @@ The XML below is for Windows 10, version 1809.
                 <Get />
                 <Add />
                 <Delete />
+                <Replace />
               </AccessType>
               <DFFormat>
                 <node />

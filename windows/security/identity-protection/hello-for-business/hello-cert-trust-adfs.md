@@ -1,6 +1,6 @@
 ---
-title: Prepare and Deploy Windows Server 2016 Active Directory Federation Services (Windows Hello for Business)
-description: How toPrepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business
+title: Prepare & Deploy Windows AD FS certificate trust (Windows Hello for Business)
+description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,10 +19,10 @@ ms.reviewer:
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 
 **Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Certificate trust
 
+- Windows 10, version 1703 or later
+- On-premises deployment
+- Certificate trust
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update.  The on-premises certificate trust deployment uses Active Directory Federation Services roles for key registration, device registration, and as a certificate registration authority.
 
@@ -36,7 +36,23 @@ Ensure you apply the Windows Server 2016 Update to all nodes in the farm after y
 
 A new Active Directory Federation Services farm should have a minimum of two federation servers for proper load balancing, which can be accomplished with an external networking peripherals, or with using the Network Load Balancing Role included in Windows Server.
 
-Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.    
+Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.
+
+> [!NOTE]
+>For AD FS 2019, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
+>
+> 1. Launch AD FS management console. Brose to "Services > Scope Descriptions".
+> 2. Right click "Scope Descriptions" and select "Add Scope Description".
+> 3. Under name type "ugs" and Click Apply > OK.
+> 4. Launch PowerShell as an administrator.
+> 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
+> ```PowerShell
+> (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+> ```
+> 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
+> 7. Restart the ADFS service.
+> 8. On the client: Restart the client. User should be prompted to provision WHFB.
+> 9. If the provisioning window does not pop up then need to collect NGC trace logs and further troubleshoot.
 
 ## Update Windows Server 2016
 
@@ -52,18 +68,21 @@ Sign-in the federation server with _local admin_ equivalent credentials.
 Windows Hello for Business on-premises deployments require a federation server for device registration, key registration, and authentication certificate enrollment.  Typically, a federation service is an edge facing role.  However, the federation services and instance used with the on-premises deployment of Windows Hello for Business does not need Internet connectivity.  
 
 The AD FS role needs a server authentication certificate for the federation services, but you can use a certificate issued by your enterprise (internal) certificate authority.  The server authentication certificate should have the following names included in the certificate if you are requesting an individual certificate for each node in the federation farm:
-* Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
-* Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
+
+- Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
+- Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
+- Subject Alternate Name: Your device registration service name, such as *enterpriseregistration.contoso.com*
 
 You configure your federation service name when you configure the AD FS role. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server **adfs** and the federation service **fs**.  The FQDN of the host is adfs.corp.contoso.com and the FQDN of the federation service is fs.corp.contoso.com.
 
 You can; however, issue one certificate for all hosts in the farm.  If you chose this option, then leave the subject name blank, and include all the names in the subject alternate name when creating the certificate request.  All names should include the FQDN of each host in the farm and the federation service name.  
 
-It’s recommended that you mark the private key as exportable so that the same certificate can be deployed across each federation server and web application proxy within your AD FS farm. Note that the certificate must be trusted (chain to a trusted root CA). Once you have successfully requested and enrolled the server authentication certificate on one node, you can export the certificate and private key to a PFX file using the Certificate Manager console. You can then import the certificate on the remaining nodes in the AD FS farm. 
+It’s recommended that you mark the private key as exportable so that the same certificate can be deployed across each federation server and web application proxy within your AD FS farm. Note that the certificate must be trusted (chain to a trusted root CA). Once you have successfully requested and enrolled the server authentication certificate on one node, you can export the certificate and private key to a PFX file using the Certificate Manager console. You can then import the certificate on the remaining nodes in the AD FS farm.
 
 Be sure to enroll or import the certificate into the AD FS server’s computer certificate store.  Also, ensure all nodes in the farm have the proper TLS server authentication certificate.
 
 ### Internal Web Server Authentication Certificate Enrollment
+
 Sign-in the federation server with domain administrator equivalent credentials.
 
 1. Start the Local Computer **Certificate Manager** (certlm.msc).
@@ -74,17 +93,19 @@ Sign-in the federation server with domain administrator equivalent credentials.
 6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
 7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
     ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link](images/hello-internal-web-server-cert.png)
-8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Click **OK** when finished.
-9. Click **Enroll**.
+8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  
+9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Repeat the same to add device registration service name (*enterpriseregistration.contoso.com*) as another alternative name. Click **OK** when finished.
+10. Click **Enroll**.
 
 A server authentication certificate should appear in the computer’s Personal certificate store.
 
 ## Deploy the Active Directory Federation Service Role
 
-The Active Directory Federation Service (AD FS) role provides the following services to support Windows Hello for Business on-premises deployments.
-* Device registration
-* Key registration 
-* Certificate registration authority (certificate trust deployments)
+The Active Directory Federation Service (AD FS) role provides the following services to support Windows Hello for Business on-premises deployments:
+
+- Device registration
+- Key registration 
+- Certificate registration authority (certificate trust deployments)
 
 >[!IMPORTANT]
 > Finish the entire AD FS configuration on the first server in the farm before adding the second server to the AD FS farm.  Once complete, the second server receives the configuration through the shared configuration database when it is added the AD FS farm. 
@@ -92,6 +113,7 @@ The Active Directory Federation Service (AD FS) role provides the following serv
 Windows Hello for Business depends on proper device registration.  For on-premises deployments, Windows Server 2016 AD FS handles device registration.
 
 Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
+
 1. Start **Server Manager**.  Click **Local Server** in the navigation pane.
 2. Click **Manage** and then click **Add Roles and Features**.
 3. Click **Next** on the **Before you begin** page.
@@ -105,12 +127,13 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 ## Review
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm the AD FS farm uses the correct database configuration.
-* Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load.
-* Confirm **all** AD FS servers in the farm have the latest updates.
-* Confirm all AD FS servers have a valid server authentication certificate    
-    * The subject of the certificate is the common name (FQDN) of the host or a wildcard name.
-    * The alternate name of the certificate contains a wildcard or the FQDN of the federation service
+
+- Confirm the AD FS farm uses the correct database configuration.
+- Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load.
+- Confirm **all** AD FS servers in the farm have the latest updates.
+- Confirm all AD FS servers have a valid server authentication certificate.
+    - The subject of the certificate is the common name (FQDN) of the host or a wildcard name.
+    - The alternate name of the certificate contains a wildcard or the FQDN of the federation service.
 
 ## Device Registration Service Account Prerequisite
 
@@ -125,11 +148,15 @@ Windows Server 2012 or later domain controllers support Group Managed Service Ac
 
 GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
 
+>[!NOTE]
+> If the [default object creation quota for security principles](https://docs.microsoft.com/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
+
 #### Create KDS Root Key
 
 Sign-in a domain controller with _Enterprise Admin_ equivalent credentials.
+
 1. Start an elevated Windows PowerShell console.
-2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`
+2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`.
 
 ### Windows Server 2008 or 2008 R2 Domain Controllers
 
@@ -138,6 +165,7 @@ Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key
 #### Create an AD FS Service Account
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
+
 1. Open **Active Directory Users and Computers**.
 2. Right-click the **Users** container, Click **New**. Click **User**.
 3. In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
@@ -193,6 +221,9 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 ### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
 
+> [!NOTE]
+> If you have a Windows Server 2016 domain controller in your domain, you can use the **Key Admins** group instead of **KeyCredential Administrators** and skip the **Configure Permissions for Key Registration** step.
+
 The **KeyCredential Administrators** global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
@@ -236,12 +267,12 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials. Th
 ## Review
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm you followed the correct procedures based on the domain controllers used in your deployment   
+* Confirm you followed the correct procedures based on the domain controllers used in your deployment. 
     * Windows Server 2012 or Windows Server 2012 R2
     * Windows Server 2008 or Windows Server 2008 R2
 * Confirm you have the correct service account based on your domain controller version.
 * Confirm you properly installed the AD FS role on your Windows Server 2016 based on the proper sizing of your federation, the number of relying parties, and database needs.
-* Confirm you used a certificate with the correct names as the server authentication certificate
+* Confirm you used a certificate with the correct names as the server authentication certificate.
     * Record the expiration date of the certificate and set a renewal reminder at least six weeks before it expires that includes the:
         * Certificate serial number
         * Certificate thumbprint
@@ -277,8 +308,8 @@ Sign-in a certificate authority or management workstations with _domain administ
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
 6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
 
->[!NOTE]
-> The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
+   > [!NOTE]
+   > The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
 
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
 8. On the **Security** tab, click **Add**.
@@ -311,11 +342,12 @@ Sign-in a certificate authority or management workstations with _domain administ
 3. Right-click the **Smartcard Logon** template and choose **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
-    **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the deployment.
+   > [!NOTE]
+   > If you use different template names, you’ll need to remember and substitute these names in different portions of the deployment.
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
 8. On the **Issuance Requirements** tab, select the T**his number of authorized signatures** check box.  Type **1** in the text box.   
-    * Select **Application policy** from the **Policy type required in signature**. Select **Certificate Request Agent** from in the **Application policy** list. Select the **Valid existing certificate** option.
+   Select **Application policy** from the **Policy type required in signature**. Select **Certificate Request Agent** from in the **Application policy** list. Select the **Valid existing certificate** option.
 9. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
 10. On the **Request Handling** tab, select the **Renew with same key** check box.
 11. On the **Security** tab, click **Add**. Type **Window Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
@@ -327,7 +359,7 @@ Sign-in a certificate authority or management workstations with _domain administ
 
 Sign-in to an **AD FS Windows Server 2016** computer with _enterprise administrator_ equivalent credentials.
 1. Open an elevated command prompt.
-2. Run `certutil –dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
+2. Run `certutil –dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`.
 
 >[!NOTE]
 >If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It’s important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
@@ -363,12 +395,15 @@ Active Directory Federation Server used for Windows Hello for Business certifica
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+> [!NOTE]
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN).
+
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
->[!TIP] 
+> [!TIP]
 > Make sure to change the $enrollmentService and $configNC variables before running the script.
 
-```Powershell
+```powershell
 # Replace this with your Device Registration Service endpoint
 $enrollmentService = "enterpriseregistration.contoso.com"
 # Replace this with your Active Directory configuration naming context 
@@ -412,8 +447,8 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 5. On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
 6. On the **Select server roles** page, click **Next**.
 7. Select **Network Load Balancing** on the **Select features** page.
-8. Click **Install** to start the feature installation   
-    ![Feature selection screen with NLB selected](images/hello-nlb-feature-install.png)
+8. Click **Install** to start the feature installation. 
+   ![Feature selection screen with NLB selected](images/hello-nlb-feature-install.png)
 
 ### Configure Network Load Balancing for AD FS
 
@@ -449,7 +484,7 @@ Sign-in the domain controller or administrative workstation with domain administ
 3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.
 4. In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
 5. In the **name** box, type the name of the federation service. In the **IP address** box, type the IP address of your federation server. Click **Add Host**. 
-6. Close the DNS Management console 
+6. Close the DNS Management console.
 
 ## Configure the Intranet Zone to include the federation service
 
@@ -457,10 +492,10 @@ The Windows Hello provisioning presents web pages from the federation service.  
 
 ### Create an Intranet Zone Group Policy
 
-Sign-in the domain controller or administrative workstation with _Domain Admin_ equivalent credentials
-1. Start the **Group Policy Management Console** (gpmc.msc)
+Sign-in the domain controller or administrative workstation with _Domain Admin_ equivalent credentials:
+1. Start the **Group Policy Management Console** (gpmc.msc).
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Right-click **Group Policy object** and select **New**
+3. Right-click **Group Policy object** and select **New**.
 4. Type **Intranet Zone Settings** in the name box and click **OK**.
 5. In the content pane, right-click the **Intranet Zone Settings** Group Policy object and click **Edit**.
 6. In the navigation pane, expand **Policies** under **Computer Configuration**.
@@ -470,7 +505,7 @@ Sign-in the domain controller or administrative workstation with _Domain Admin_ 
 
 ### Deploy the Intranet Zone Group Policy object
 
-1. Start the **Group Policy Management Console** (gpmc.msc)
+1. Start the **Group Policy Management Console** (gpmc.msc).
 2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
 3. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
 
@@ -482,8 +517,8 @@ Before you continue with the deployment, validate your deployment progress by re
 * Consider using an HSM to protect the enrollment agent certificate; however, understand the frequency and quantity of signature operations the enrollment agent server makes and understand the impact it has on overall performance. 
 * Confirm you properly configured the Windows Hello for Business authentication certificate template—to include:   
     * Issuance requirements of an authorized signature from a certificate request agent.
-    * The certificate template was properly marked as a Windows Hello for Business certificate template using certutil.exe
-    * The Windows Hello for Business Users group, or equivalent has the allow enroll and allow auto enroll permissions
+    * The certificate template was properly marked as a Windows Hello for Business certificate template using certutil.exe.
+    * The Windows Hello for Business Users group, or equivalent has the allow enroll permissions.
 * Confirm all certificate templates were properly published to the appropriate issuing certificate authorities.
 * Confirm the AD FS service account has the allow enroll permission for the Windows Hello Business authentication certificate template.
 * Confirm the AD FS certificate registration authority is properly configured using the `Get-AdfsCertificateAuthority` Windows PowerShell cmdlet.
@@ -496,9 +531,14 @@ Before you continue with the deployment, validate your deployment progress by re
 
 You need to verify the AD FS service has properly enrolled for an enrollment agent certificate template.  You can verify this is a variety ways, depending on if your service account is a normal user account or if the service account is a group managed service account.
 
+> [!IMPORTANT]
+> After following the previous steps, if you are unable to validate that the devices are, in fact, being registered automatically, there is a Group Policy at:
+> **Computer Configuration > Policies > Administrative Templates > Windows Components > Device Registration >** "Register Domain Joined Computers As Devices". Set the policy to **Enabled**
+> and the registration will happen automatically.
+
 ### Event Logs
 
-Use the event logs on the AD FS service to confirm the service account enrolled for an enrollment agent certificate.  First, look for the AD FS event ID 443 that confirms certificate enrollment cycle has finished.  Once confirmed the AD FS certificate enrollment cycle completed review the CertificateLifecycle-User event log.  In this event log, look for event ID 1006, which indicates a new certificate was installed.  Details of the event log should show
+Use the event logs on the AD FS service to confirm the service account enrolled for an enrollment agent certificate.  First, look for the AD FS event ID 443 that confirms certificate enrollment cycle has finished.  Once confirmed the AD FS certificate enrollment cycle completed review the CertificateLifecycle-User event log.  In this event log, look for event ID 1006, which indicates a new certificate was installed.  Details of the event log should show:
 
 * The account name under which the certificate was enrolled.
 * The action, which should read enroll.

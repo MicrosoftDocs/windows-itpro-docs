@@ -1,12 +1,12 @@
 ---
 title: Windows 10 application management    
-description: Windows 10 application management
+description: Learn about managing applications in Windows 10 and Windows 10 Mobile clients, including how to remove background task resource restrictions.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+manager: dansimp
+author: dansimp
 ms.localizationpriority: high
-ms.date: 09/26/2017
 ---
 
 # Windows 10 application management

@@ -1,13 +1,13 @@
 ---
 title: Virtual Smart Card Overview (Windows 10)
-description: This topic for IT professional provides an overview of the virtual smart card technology that was developed by Microsoft, and links to additional topics about virtual smart cards.
+description: Learn more about the virtual smart card technology that was developed by Microsoft. Find links to additional topics about virtual smart cards.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
@@ -25,6 +25,9 @@ This topic for IT professional provides an overview of the virtual smart card te
 **Did you mean…**
 
 -   [Smart Cards](../smart-cards/smart-card-windows-smart-card-technical-reference.md)
+
+> [!NOTE]
+> [Windows Hello for Business](../hello-for-business/hello-identity-verification.md) is the modern, two-factor authentication for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date has been set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. We recommend that new Windows 10 deployments use Windows Hello for Business. Virtual smart cards remain supported for Windows 7 and Windows 8.
 
 ## Feature description
 

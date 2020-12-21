@@ -1,5 +1,5 @@
 ---
-title: Creating a Custom Compatibility Mode in Compatibility Administrator (Windows 10)
+title: Create a Custom Compatibility Mode (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
 ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
 ms.reviewer: 
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -38,8 +39,8 @@ A compatibility mode is a group of compatibility fixes. A compatibility fix, pre
 
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new compatibility mode, you can search for an existing application and then copy and paste the known fixes into your custom database.
 
-**Important**  
-Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
+> [!IMPORTANT]
+> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
 
 
@@ -54,8 +55,8 @@ Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version o
 
 If you are unable to find a preloaded compatibility mode for your application, you can create a new one for use by your custom database.
 
-**Important**  
-A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
+> [!IMPORTANT]  
+> A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
 
 
 
@@ -67,14 +68,9 @@ A compatibility mode includes a set of compatibility fixes and must be deployed 
 
 3.  Select each of the available compatibility fixes to include in your custom-compatibility mode and then click **&gt;**.
 
-    **Important**  
-    If you are unsure which compatibility fixes to add, you can click **Copy Mode**. The **Select Compatibility Mode** dialog box appears and enables you to select from the preloaded compatibility modes. After you select a compatibility mode and click **OK**, any compatibility fixes that are included in the preloaded compatibility mode will be automatically added to your custom-compatibility mode.
-
-
-
-~~~
-If you have any compatibility fixes that require additional parameters, you can select the fix, and then click **Parameters**. The **Options for &lt;Compatibility\_Fix\_Name&gt;** dialog box appears, enabling you to update the parameter fields.
-~~~
+    > [!IMPORTANT]  
+    > If you are unsure which compatibility fixes to add, you can click **Copy Mode**. The **Select Compatibility Mode** dialog box appears and enables you to select from the preloaded compatibility modes. After you select a compatibility mode and click **OK**, any compatibility fixes that are included in the preloaded compatibility mode will be automatically added to your custom-compatibility mode.
+    > If you have any compatibility fixes that require additional parameters, you can select the fix, and then click **Parameters**. The **Options for &lt;Compatibility\_Fix\_Name&gt;** dialog box appears, enabling you to update the parameter fields.
 
 4. After you are done selecting the compatibility fixes to include, click **OK**.
 

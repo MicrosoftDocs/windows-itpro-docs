@@ -1,7 +1,7 @@
 ---
 title: AccountManagement CSP
-description: Used to configure settings in the Account Manager service
-ms.author: lomayor
+description: Learn about the AccountManagement CSP, which is used to configure settings in the Account Manager service.
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -31,7 +31,7 @@ Root node for the AccountManagement configuration service provider.
 Interior node. 
 
 <a href="" id="accountmanagement-userprofilemanagement-deletionpolicy"></a>**UserProfileManagement/EnableProfileManager**  
-Enable profile lifetime mangement for shared or communal device scenarios. Default value is false.
+Enable profile lifetime management for shared or communal device scenarios. Default value is false.
 
 Supported operations are Add, Get,Replace, and Delete. Value type is bool.
 

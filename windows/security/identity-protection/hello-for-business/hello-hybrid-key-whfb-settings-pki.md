@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
+title: Configure Hybrid key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI, Windows Hello, key trust, key-trust
 ms.prod: w10
@@ -55,6 +55,9 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8. Close the console.
 
+>[!NOTE]
+>Don't confuse the **Request hash** algorithm with the hash argorithm of the certificate.
+
 #### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
 Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
@@ -77,8 +80,8 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
->[!NOTE]
->The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
+> [!NOTE]
+> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
 
 ### Publish Certificate Templates to a Certificate Authority
 

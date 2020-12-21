@@ -1,6 +1,6 @@
 ---
 title: Defender DDF file
-description: Defender DDF file
+description: Learn how the OMA DM device description framework (DDF) for the Defender configuration service provider is used.
 ms.assetid: 39B9E6CF-4857-4199-B3C3-EC740A439F65
 ms.reviewer: 
 manager: dansimp
@@ -9,17 +9,17 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/12/2018
+ms.localizationpriority: medium
+ms.date: 08/11/2020
 ---
 
 # Defender DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **Defender** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -45,7 +45,7 @@ The XML below is for Windows 10, version 1809.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.2/MDM/Defender</MIME>
+            <MIME>com.microsoft/1.3/MDM/Defender</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -613,6 +613,135 @@ The XML below is for Windows 10, version 1809.
             <DFProperties>
               <AccessType>
                 <Get />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>TamperProtectionEnabled</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>IsVirtualMachine</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Configuration</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>TamperProtection</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>EnableFileHashComputation</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SupportLogLocation</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
               </AccessType>
               <DFFormat>
                 <chr />

@@ -17,24 +17,27 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Threat protection report in Microsoft Defender ATP
+# Threat protection report in Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
 
 The dashboard is structured into two sections:
 
-![Image of the threat protection report](images/atp-threat-protection-reports.png)
+![Image of the threat protection report](images/threat-protection-reports.png)
 
 Section | Description 
 :---|:---
 1 | Alerts trends
 2 | Alert summary
 
-
+## Alert trends
 By default, the alert trends display alert information from the 30-day period ending in the latest full day. To gain better perspective on trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, select a time range from the drop-down options:
 
 - 30 days
@@ -42,16 +45,23 @@ By default, the alert trends display alert information from the 30-day period en
 - 6 months
 - Custom
 
+>[!NOTE]
+>These filters are only applied on the alert trends section. It doesn't affect the alert summary section.
+
+
+## Alert summary
 While the alert trends shows trending alert information, the alert summary shows alert information scoped to the current day.
 
  The alert summary allows you to drill down to a particular alert queue with the corresponding filter applied to it. For example, clicking on the EDR bar in the Detection sources card will bring you the alerts queue with results showing only alerts generated from EDR detections. 
 
-
+>[!NOTE]
+>The data reflected in the summary section is scoped to 180 days prior to the current date. For example if today's date is November 5, 2019, the data on the summary section will reflect numbers starting from May 5, 2019 to November 5, 2019.<br>
+> The filter applied on the trends section is not applied on the summary section. 
 
 ## Alert attributes
 The report is made up of cards that display the following alert attributes:
 
-- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Microsoft Defender ATP to trigger alerts.
+- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Microsoft Defender for Endpoint to trigger alerts.
 
 - **Threat categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 
@@ -78,4 +88,4 @@ For example, to show data about high-severity alerts only:
 3. Select **Apply**. 
 
 ## Related topic
-- [Machine health and compliance report](machine-reports.md)
+- [Device health and compliance report](machine-reports.md)

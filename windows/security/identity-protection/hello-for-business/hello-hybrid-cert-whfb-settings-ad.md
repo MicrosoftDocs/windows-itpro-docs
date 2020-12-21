@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid Windows Hello for Business - Active Directory (AD)
+title: Configure Hybrid Windows Hello for Business - Active Directory (AD)
 description: Discussing the configuration of Active Directory (AD) in a Hybrid deployment of Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport, WHFB, ad
 ms.prod: w10
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Configuring Windows Hello for Business: Active Directory
+# Configure Windows Hello for Business: Active Directory
 
 **Applies to**
 -   Windows 10, version 1703 or later

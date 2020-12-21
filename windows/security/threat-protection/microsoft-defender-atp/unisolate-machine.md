@@ -1,7 +1,7 @@
 ---
-title: Release machine from isolation API
-description: Use this API to create calls related to release a machine from isolation.
-keywords: apis, graph api, supported apis, remove machine from isolation
+title: Release device from isolation API
+description: Use this API to create calls related to release a device from isolation.
+keywords: apis, graph api, supported apis, remove device from isolation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,18 +17,28 @@ ms.topic: article
 
 ---
 
-# Release machine from isolation API
+# Release device from isolation API
 
-**Applies to:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Undo isolation of a machine.
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-[!include[Machine actions note](machineactionsnote.md)]
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+## API description
+Undo isolation of a device.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+
+[!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -38,7 +48,7 @@ Delegated (work or school account) |	Machine.Isolate |	'Isolate machine'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+>- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -70,7 +80,7 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/unisolate 
@@ -80,30 +90,7 @@ Content-type: application/json
 }
 
 ```
-**Response**
 
-Here is an example of the response.
 
->[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-```
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "09a0f91e-a2eb-409d-af33-5577fe9bd558",
-    "type": "Unisolate",
-    "requestor": "Analyst@contoso.com ",
-    "requestorComment": "Unisolate machine since it was clean and validated ",
-    "status": "InProgress",
-    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2018-12-04T12:13:15.0104931Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:13:15.0104931Z",
-	"relatedFileInfo": null
-}
-
-```
-
-To isolate a machine, see [Isolate machine](isolate-machine.md).
+- To isolate a device, see [Isolate device](isolate-machine.md).
 

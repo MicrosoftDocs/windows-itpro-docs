@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to turn Enterprise Mode off temporarily while testing websites and how to turn it off completely if you no longer want to to use it.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Turn off Enterprise Mode
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 **Applies to:**
 

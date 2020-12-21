@@ -1,6 +1,6 @@
 ---
 title: Get offline license
-description: The Get offline license operation retrieves the offline license information of a product from the Micosoft Store for Business.
+description: The Get offline license operation retrieves the offline license information of a product from the Microsoft Store for Business.
 ms.assetid: 08DAD813-CF4D-42D6-A783-994A03AEE051
 ms.reviewer: 
 manager: dansimp
@@ -14,7 +14,7 @@ ms.date: 09/18/2017
 
 # Get offline license
 
-The **Get offline license** operation retrieves the offline license information of a product from the Micosoft Store for Business.
+The **Get offline license** operation retrieves the offline license information of a product from the Microsoft Store for Business.
 
 ## Request
 

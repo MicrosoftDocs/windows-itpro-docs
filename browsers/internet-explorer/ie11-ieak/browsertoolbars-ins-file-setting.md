@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[BrowserToolbars\] .INS file setting to customize your Internet Explorer toolbar and buttons.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 83af0558-9df3-4c2e-9350-44f7788efa6d
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the BrowserToolbars .INS file to customize the Internet Explorer toolbar and buttons (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the BrowserToolbars .INS file to customize the Internet Explorer toolbar and buttons
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to customize the Internet Explorer toolbar.
 
 |Name       |Value                      |Description  |

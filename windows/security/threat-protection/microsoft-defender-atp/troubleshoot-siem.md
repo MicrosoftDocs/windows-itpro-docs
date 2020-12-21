@@ -19,13 +19,16 @@ ms.topic: troubleshooting
 
 # Troubleshoot SIEM tool integration issues
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 
 
-You might need to troubleshoot issues while pulling alerts in your SIEM tools.
+You might need to troubleshoot issues while pulling detections in your SIEM tools.
 
 This page provides detailed steps to troubleshoot issues you might encounter.
 
@@ -39,9 +42,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **App registrations**. Then in the applications list, select the application:
-    - For SIEM: `https://WindowsDefenderATPSiemConnector`
-    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
+4. Click **App registrations**. Then in the applications list, select the application.
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
@@ -59,9 +60,7 @@ If you encounter an error when trying to get a refresh token when using the thre
 
 3. Select your tenant.
 
-4. Click **App Registrations**. Then in the applications list, select the application:
-    - For SIEM: `https://WindowsDefenderATPSiemConnector`
-    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
+4. Click **App Registrations**. Then in the applications list, select the application.
 
 5. Add the following URL:
    - For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
@@ -76,11 +75,11 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
-- [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+- [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender for Endpoint detections](configure-splunk.md)
+- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)

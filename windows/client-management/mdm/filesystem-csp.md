@@ -1,6 +1,6 @@
 ---
 title: FileSystem CSP
-description: FileSystem CSP
+description: Learn how the FileSystem CSP is used to query, add, modify, and delete files, file directories, and file attributes on the mobile device.
 ms.assetid: 9117ee16-ca7a-4efa-9270-c9ac8547e541
 ms.reviewer: 
 manager: dansimp

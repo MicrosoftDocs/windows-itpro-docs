@@ -1,6 +1,6 @@
 ---
 title: Security and data protection considerations for Windows To Go (Windows 10)
-description: One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
+description: Ensure that the data, content, and resources you work with in the Windows To Go workspace are protected and secure.
 ms.assetid: 5f27339f-6761-44f4-8c29-9a25cf8e75fe
 ms.reviewer: 
 manager: laurawi
@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility, security
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -21,8 +22,8 @@ ms.topic: article
 
 -   Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
 
@@ -52,7 +53,7 @@ If you are using a host computer running Windows 7 that has BitLocker enabled, 
 
 We recommend that you use the **NoDefaultDriveLetter** attribute when provisioning the USB drive to help prevent accidental data leakage. **NoDefaultDriveLetter** will prevent the host operating system from assigning a drive letter if a user inserts it into a running computer. This means the drive will not appear in Windows Explorer and an AutoPlay prompt will not be displayed to the user. This reduces the likelihood that an end-user will access the offline Windows To Go disk directly from another computer. If you use the Windows To Go Creator to provision a workspace, this attribute will automatically be set for you.
 
-To prevent accidental data leakage between Windows To Go and the host system Windows 8 has a new SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. The default configuration for Windows To Go has this policy enabled. It is strongly recommended you do not change this policy to allow mounting of internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 operating system, mounting the drive will lead to loss of hibernation state and therefor user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
+To prevent accidental data leakage between Windows To Go and the host system Windows 8 has a new SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. The default configuration for Windows To Go has this policy enabled. It is strongly recommended you do not change this policy to allow mounting of internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 operating system, mounting the drive will lead to loss of hibernation state and, therefore, user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
 
 For more information, see [How to Configure Storage Area Network (SAN) Policy in Windows PE](https://go.microsoft.com/fwlink/p/?LinkId=619103).
 

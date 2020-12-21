@@ -1,6 +1,6 @@
 ---
 title: Create an Inbound Port Rule (Windows 10)
-description: Create an Inbound Port Rule
+description: Learn to allow traffic on specific ports by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.assetid: a7b6c6ca-32fa-46a9-a5df-a4e43147da9f
 ms.reviewer: 
 ms.author: dansimp

@@ -1,23 +1,23 @@
 --- 
-title: Manage connections from Windows operating system components to Microsoft services (Windows 10)
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
+title: Manage connections from Windows 10 operating system components to Microsoft services
+description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer: 
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: linque1
+ms.author: robsize
+manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 05/16/2019
+ms.date: 12/1/2020
 ---
 
-# Manage connections from Windows operating system components to Microsoft services
+# Manage connections from Windows 10 operating system components to Microsoft services
 
 **Applies to** 
 
@@ -25,29 +25,30 @@ ms.date: 05/16/2019
 - Windows Server 2016
 - Windows Server 2019
 
-If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+This article describes the network connections that Windows 10 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Learn about the network connections that Windows components make to Microsoft in addition to the privacy settings that affect the data which is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Windows Defender are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
 
-If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+>[!IMPORTANT]
+> - The downloadable Windows 10, version 1903 scripts/settings can be used on Windows 10, version 1909 devices.
+> - The Allowed Traffic endpoints are listed here: [Allowed Traffic](#bkmk-allowedtraffic)
+>     -   CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+> - For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: Windows Update, Automatic Root Certificates Update, and Windows Defender. Accordingly, we do not recommend disabling any of these features.
+> - It is recommended that you restart a device after making configuration changes to it. 
+> - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
-You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+> [!Warning] 
+> - If a user executes the **Reset this PC** command (Settings -> Update & Security -> Recovery) with the **Keep my files option** (or the **Remove Everything** option) the Windows Restricted Traffic Limited Functionality Baseline settings will need to be re-applied in order to re-restrict the device. Egress traffic may occur prior to the re-application of the Restricted Traffic Limited Functionality Baseline settings.
+> - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode. 
+> - During update or upgrade of Windows, egress traffic may occur.
 
-To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887), but **before application please ensure that Windows and Windows Defender are fully up to date**.  Failure to do so may result in errors. This baseline was created in the same way as the [Windows security baselines](/windows/device-security/windows-security-baselines) that are often used to efficiently configure Windows to a known secure state.
-Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure you've chosen the right settings configuration for your environment before applying.
-You should not extract this package to the windows\\system32 folder because it will not apply correctly.
+To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
-Applying the Windows Restricted Traffic Limited Functionality Baseline is the same as applying each setting covered in this article.
-It is recommended that you restart a device after making configuration changes to it.
-Note that **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
-To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
+## Management options for each setting
 
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
-
-## <a href="" id="bkmk-othersettings"></a>Management options for each setting
-
-The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections
 
 ### Settings for Windows 10 Enterprise edition
 
@@ -57,18 +58,18 @@ The following table lists management options for each setting, beginning with Wi
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: | 
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [8. Internet Explorer](#bkmk-ie) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [9. License Manager](#bkmk-licmgr) | | |  ![Check mark](images/checkmark.png) |
 | [10. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [11. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [12. Microsoft Account](#bkmk-microsoft-account) | | |  ![Check mark](images/checkmark.png) |
-| [13. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [13. Microsoft Edge](#bkmk-edge) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -106,7 +107,7 @@ The following table lists management options for each setting, beginning with Wi
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
+| [28. Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
@@ -117,12 +118,12 @@ See the following table for a summary of the management settings for Windows Ser
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: | 
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [8. Internet Explorer](#bkmk-ie) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [10. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [12. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -168,17 +169,17 @@ See the following table for a summary of the management settings for Windows Ser
 | Setting | UI | Group Policy | Registry | 
 | - | :-: | :-: | :-: |
 | [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [5. Find My Device](#find-my-device) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [6. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [8. Internet Explorer](#bkmk-ie) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [10. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [11. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [12. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) |
-| [13. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [13. Microsoft Edge](#bkmk-edge) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -216,7 +217,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [27. Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |![Check mark](images/checkmark.png) |
-| [28. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [28. Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 ## How to configure each setting
@@ -230,7 +231,7 @@ For more information, see [Automatic Root Certificates Update Configuration](htt
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
-> By not automatically downloading the root certificates, the device might have not been able to connect to some websites.
+> By not automatically downloading the root certificates the device may not be able to connect to some websites.
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
@@ -260,7 +261,7 @@ On Windows Server 2016 Nano Server:
 - Create the registry path **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\SystemCertificates\\AuthRoot** and then add a REG_DWORD registry setting, named **DisableRootAutoUpdate**, with a value of 1.
 
 >[!NOTE]
->CRL and OCSP network traffic is currently whitelisted and will still show up in network traces.  CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+>CRL and OCSP network traffic is currently Allowed Traffic and will still show up in network traces.  CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana and Search
 
@@ -276,7 +277,6 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 | Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.<br/><br/>**Disable** this policy to block access to location information for Cortana. |
 | Do not allow web search                              | Choose whether to search the web from Windows Desktop Search.<br/><br/>**Enable** this policy to remove the option to search the Internet from Cortana. |
 | Don't search the web or display web results in Search| Choose whether to search the web from Cortana.<br/><br/>**Enable** this policy to stop web queries and results from showing in Search. |
-| Set what information is shared in Search             | Control what information is shared with Bing in Search.<br/><br/>If you **enable** this policy and set it to **Anonymous info**, usage information will be shared but not search history, Microsoft Account information, or specific location. |
 
 You can also apply the Group Policies using the following registry keys:
 
@@ -286,7 +286,7 @@ You can also apply the Group Policies using the following registry keys:
 | Allow search and Cortana to use location             | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: AllowSearchToUseLocation <br/>Value: 0 |
 | Do not allow web search                              | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: DisableWebSearch <br/>Value: 1 |
 | Don't search the web or display web results in Search| HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchUseWeb <br/>Value: 0 |
-| Set what information is shared in Search             | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchPrivacy <br/>Value: 3 |
+
 
 >[!IMPORTANT]
 > Using the Group Policy editor these steps are required for all supported versions of Windows 10, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
@@ -390,7 +390,7 @@ Windows Insider Preview builds only apply to Windows 10 and are not available fo
 
 
 > [!NOTE]
-> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the diagnostic data level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -415,7 +415,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 > [!NOTE]
->When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/en-us/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
+>When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:  
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -423,7 +423,7 @@ To turn off Insider Preview builds for Windows 10:
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the Address Bar. <br /> **Set Value to: Disabled**|
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the Address Bar. <br /> **Set Value to: Enabled** </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> **Set Value to: Enabled**|
-| Prevent managing SmartScreen filter | Choose whether employees can manage the SmartScreen Filter in Internet Explorer. <br /> **Set Value to: Enabled** and then set **Select SmartScreen filtering mode** to **Off**.|
+| Prevent managing Windows Defender SmartScreen | Choose whether employees can manage the Windows Defender SmartScreen in Internet Explorer. <br /> **Set Value to: Enabled** and then set **Select Windows Defender SmartScreen mode** to **Off**.|
 
 
 | Registry Key                                         | Registry path                                                                                       |
@@ -432,13 +432,13 @@ To turn off Insider Preview builds for Windows 10:
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br />REG_DWORD: AllowServicePoweredQSA <br />**Set Value to: 0**|
 | Turn off the auto-complete feature for web addresses |HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\CurrentVersion\\Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest <br />Set Value to: **no** |
 | Turn off browser geolocation | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />**Set Value to: 1** |
-| Prevent managing SmartScreen filter | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
+| Prevent managing Windows Defender SmartScreen | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
 
 There are more Group Policy objects that are used by Internet Explorer:
 
 | Path | Policy | Description |
 | - | - | - |
-| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Choose whether employees can configure Compatibility View. | Choose whether an employee can fix website display problems that he or she may encounter while browsing. <br /> **Set to: Enabled** |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Turn off Compatibility View. | Choose whether an employee can fix website display problems that he or she may encounter while browsing. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> **Set to: Enabled** |
 | **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Allow Online Tips** | Allow Online Tips | Enables or disables the retrieval of online tips and help for the Settings app. <br /> **Set to: Disabled** |
@@ -553,7 +553,7 @@ To disable the Microsoft Account Sign-In Assistant:
 
 ### <a href="" id="bkmk-edge"></a>13. Microsoft Edge
 
-Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
+Use Group Policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682) and [Configure Microsoft Edge policy settings on Windows](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge).
 
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
@@ -583,7 +583,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: **1** |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **No** |
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
-| Configure Windows Defender SmartScreen Filter (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
+| Configure Windows Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: **0** |
 | Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **<<about:blank>>**|
 | Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: **1**|
@@ -613,6 +613,10 @@ You can turn off NCSI by doing one of the following:
 ### <a href="" id="bkmk-offlinemaps"></a>15. Offline maps
 
 You can turn off the ability to download and update offline maps.
+
+- Turn **Off** the feature in the UI by going to **Settings -> Apps -> Offline maps -> Map updates**, toggle the **Automatically update maps** switch to **Off**
+
+  -or-
 
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
@@ -881,7 +885,7 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 
 - Create a REG_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
-To turn off **Turn on SmartScreen Filter to check web content (URLs) that Microsoft Store apps use**:
+To turn off **Turn on Windows Defender SmartScreen to check web content (URLs) that Microsoft Store apps use**:
 
 - Turn off the feature in the UI.
 
@@ -929,27 +933,26 @@ To turn off **Location for this device**:
 - Click the **Change** button in the UI.
 
   -or-
-
+  
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
-
-  -or-
-
-- Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
-
-
-To turn off **Location**:
-
-- Turn off the feature in the UI.
-  
-  -or-
-  
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
 - Create a REG_DWORD registry setting named **DisableLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LocationAndSensors** with a value of 1 (one).
 
+To turn off **Allow apps to access your location**:
 
+- Turn off the feature in the UI.
+  
+   -or-
+
+- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
+
+  -or-
+
+- Create a REG_DWORD registry setting named **LetAppsAccessLocation** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**.
+
+ 
 To turn off **Location history**:
 
 - Erase the history using the **Clear** button in the UI.
@@ -1073,7 +1076,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessAccountInfo** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 
 
@@ -1097,7 +1100,7 @@ To turn off **Choose apps that can access contacts**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessContacts** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessContacts** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 ### <a href="" id="bkmk-priv-calendar"></a>18.9 Calendar
 
@@ -1113,7 +1116,7 @@ To turn off **Let apps access my calendar**:
 
   -or-
 
-- Create a REG_DWORD registry setting named **LetAppsAccessCalendar** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
+- Create a REG_DWORD registry setting named **LetAppsAccessCalendar** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy** with a value of 2 (two).
 
 To turn off **Choose apps that can access calendar**:
 
@@ -1260,7 +1263,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
 ### <a href="" id="bkmk-priv-feedback"></a>18.16 Feedback & diagnostics
 
-In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.
+In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.  If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 To change how frequently **Windows should ask for my feedback**:
 
@@ -1413,13 +1416,25 @@ To turn this off:
 
 In the **Inking & Typing** area you can configure the functionality as such: 
 
-To turn off Inking & Typing data collection (note: there is no Group Policy for this setting):
+To turn off Inking & Typing data collection:
 
-- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Inking and typing** and turn **Improve inking & typing** to **Off** 
+- In the UI go to **Settings -> Privacy -> Diagnostics & Feedback -> Improve inking and typing** and turn it to **Off** 
 
-  -or-
+  -OR-
+  
+  **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Text Input > Improve inking and typing recognition**
+  
+  -and-
+  
+  **Disable** the Group Policy: **User Configuration > Administrative Templates  > Control Panel > Regional and Language Options > Handwriting personalization > Turn off automatic learning**
+  
+  -OR-
 
-- Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** to a **value of 1 (one)**
+- Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
+
+  -and-
+ 
+- Set **RestrictImplicitInkCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History
@@ -1463,20 +1478,20 @@ To turn this Off in the UI:
 
 -OR-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice** and set the **Select a setting** box to **Force Deny**
 
      -and-
 
-- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** 
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** >  named **Let Windows apps activate with voice while the system is locked** box to **Force Deny**
 
 
 -OR-
  
-- Create a REG_DWORD registry setting named **LetAppsActivateWithVoice** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**
+- Create a REG_DWORD registry setting named **LetAppsActivateWithVoice** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 2 (two)**
 
      -and-
 
-- Create a REG_DWORD registry setting named **PublishUserActivities** in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy** with a **value of 0 (zero)**
+- Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
 
 
@@ -1535,18 +1550,17 @@ You can control if your settings are synchronized:
 
 To turn off Messaging cloud sync:
 
--   Note: There is no Group Policy corresponding to this registry key.
+> [!NOTE]
+> There is no Group Policy corresponding to this registry key.
 
-  -or-
-
--   Create a REG_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Messaging** and set to a **value of 0 (zero)**.
+-  Create a REG_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Messaging** and set to a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-teredo"></a>22. Teredo
 
 You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](https://technet.microsoft.com/library/cc722030.aspx).
 
 >[!NOTE]
->If you disable Teredo, some XBOX gaming features and Windows Update Delivery Optimization will not work.
+>If you disable Teredo, some XBOX gaming features and Delivery Optimization (with Group or Internet peering) will not work.
 
 - **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
 
@@ -1584,9 +1598,9 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 >[!IMPORTANT]
 >**Required Steps BEFORE setting the Windows Defender Group Policy or RegKey on Windows 10 version 1903**
 >1. Ensure Windows and Windows Defender are fully up to date.
->2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to >the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make >the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link >and then scroll down to the Tamper Protection toggle to set it to **Off**. 
+>2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button.  Then scroll down to the Tamper Protection toggle and turn it **Off**.  This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**. 
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
@@ -1599,7 +1613,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 You can stop sending file samples back to Microsoft.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
 
   -or-
 
@@ -1608,11 +1622,15 @@ You can stop sending file samples back to Microsoft.
 
 You can stop downloading **Definition Updates**:
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+> [!NOTE]
+> The Group Policy path for 1809 and earlier builds is **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates**
+
+
+- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
   -and-
 
-- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
+- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
 
   -or-
 
@@ -1623,11 +1641,12 @@ You can stop downloading **Definition Updates**:
 - **Remove** the **DefinitionUpdateFileSharesSources** reg value if it exists under **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Signature Updates** 
 
 
-You can turn off **Malicious Software Reporting Tool diagnostic data**:
+You can turn off **Malicious Software Reporting Tool (MSRT) diagnostic data**:
 
 - Set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to **1**.
 
-**Note:** There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data. 
+> [!NOTE]
+> There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data. 
 
 
 You can turn off **Enhanced Notifications** as follows:
@@ -1636,16 +1655,16 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Reporting**.  
+- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Reporting**.  
 
   -or-
 
-- Create a new REG_SZ registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** to a value of **1**.
+- Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen
 
-To disable Windows Defender Smartscreen:
+To disable Windows Defender SmartScreen:
 
 In Group Policy, configure: 
 
@@ -1722,15 +1741,15 @@ If you're running Windows 10, version 1607 or later, you need to:
        > This will only take effect if the policy is applied before the first logon. 
        > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, 
        > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** 
-
+       >
        > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** 
        > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in 
        > **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **1 (one)**.
-
+       >
        > The Group Policy for the **LockScreenOverlaysDisabled** regkey is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**. 
 
 
--AND-
+  \-AND-
 
 
   - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips** to **Enabled** 
@@ -1740,7 +1759,7 @@ If you're running Windows 10, version 1607 or later, you need to:
   - Create a new REG_DWORD registry setting named **DisableSoftLanding** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
 
 
--AND-
+  \-AND-
 
 
   - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences** to **Enabled**
@@ -1790,19 +1809,19 @@ You can turn off apps for websites, preventing customers who visit websites that
 
 - Create a new REG_DWORD registry setting named **EnableAppUriHandlers** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\System** with a **value of 0 (zero)**.
 
-### <a href="" id="bkmk-updates"></a>28. Windows Update Delivery Optimization
+### <a href="" id="bkmk-updates"></a>28. Delivery Optimization
 
-Windows Update Delivery Optimization lets you get Windows updates and Microsoft Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Delivery Optimization is the downloader of Windows updates, Microsoft Store apps, Office and other content from Microsoft. Delivery Optimization can also download from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization Peer-to-Peer option turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
-By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
+By default, PCs running Windows 10 will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
 Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
-In Windows 10 version 1607 and above you can stop network traffic related to Windows Update Delivery Optimization by setting **Download Mode** to  **Bypass** (100), as described below.
+In Windows 10 version 1607 and above you can stop network traffic related to Delivery Optimization Cloud Service by setting **Download Mode** to  **Simple Mode** (99), as described below.
 
 ### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
-You can set up Delivery Optimization from the **Settings** UI.
+You can set up Delivery Optimization Peer-to-Peer from the **Settings** UI.
 
 - Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
@@ -1818,16 +1837,22 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
+
+For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimization Reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
+
 ### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
-- **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Bypass"** to prevent traffic.
+- **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Simple Mode (99)"** to prevent traffic between peers as well as traffic back to the Delivery Optimization Cloud Service.
 
 -or-
 
-- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **100 (one hundred)**. 
+- Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**. 
 
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
+
+For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates]
+(https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
 ### <a href="" id="bkmk-wu"></a>29. Windows Update
 
@@ -1881,8 +1906,16 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
 
+  
 
+### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
+
+|Allowed traffic endpoints| 
+| --- | 
+|activation-v2.sls.microsoft.com/*|
+|crl.microsoft.com/pki/crl/*|
+|ocsp.digicert.com/*|
+|www.microsoft.com/pkiops/*|
 
 
 To learn more, see [Device update management](https://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](https://technet.microsoft.com/library/cc720539.aspx).
-

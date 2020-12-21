@@ -1,6 +1,6 @@
 ---
 title: DeviceStatus CSP
-description: The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
+description: The DeviceStatus configuration service provider keeps track of device inventory and queries the compliance state of devices within the enterprise.
 ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
 ms.reviewer: 
 manager: dansimp
@@ -36,9 +36,8 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-> **Note**  Multiple SIMs are supported.
-
- 
+>[!NOTE]
+>Multiple SIMs are supported.
 
 <a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
@@ -107,7 +106,7 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
 
 -   0 - not encrypted
 -   1 - encrypted

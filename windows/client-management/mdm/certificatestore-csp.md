@@ -1,15 +1,15 @@
 ---
 title: CertificateStore CSP
-description: CertificateStore CSP
+description: Use the The CertificateStore configuration service provider (CSP) to add secure socket layers (SSL), intermediate, and self-signed certificates.
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 06/26/2017
+ms.date: 02/28/2020
 ---
 
 # CertificateStore CSP
@@ -17,7 +17,9 @@ ms.date: 06/26/2017
 
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
-> **Note**   The CertificateStore configuration service provider does not support installing client certificates.
+> [!Note]
+> The CertificateStore configuration service provider does not support installing client certificates.
+> The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
  
 
@@ -144,7 +146,13 @@ Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) f
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-subjectname"></a>**My/SCEP/*UniqueID*/Install/SubjectName**  
-Required. Specifies the subject name. Value type is chr.
+Required. Specifies the subject name. 
+
+The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
+
+For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+
+Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -632,7 +640,6 @@ Configure the device to automatically renew an MDM client certificate with the s
  
 
  
-
 
 
 

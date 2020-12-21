@@ -2,13 +2,14 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: A list of steps to follow before you start to create your custom browser installation packages.
-author: lomayor
-ms.author: lomayor
+author: dansimp
+ms.author: dansimp
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Before you start using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 04/24/2018
@@ -16,6 +17,9 @@ ms.date: 04/24/2018
 
 
 # Before you start using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 Before you run IEAK 11 and the Customization Wizard, make sure you have met the following requirements:
 

@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[ExtRegInf\] .INS file setting to specify your Setup information (.inf) files and the installation mode for your custom components.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 53148422-d784-44dc-811d-ef814b86a4c6
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Use the ExtRegInf .INS file to specify your installation files and mode (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -15,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the ExtRegInf .INS file to specify installation files and mode
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to specify your Setup information (.inf) files and the installation mode for your custom components.
 
 |Name       |Value    |Description                                                                                                       |
