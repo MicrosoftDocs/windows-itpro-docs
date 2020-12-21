@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/12/2020
+ms.date: 12/16/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -20,12 +20,9 @@ ms.custom: nextgen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
-- Windows Server 2019
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 ## Microsoft Defender Antivirus: Your next-generation protection
 
@@ -56,8 +53,8 @@ For information on how to configure next-generation protection services, see [Co
 > [!Note]  
 > Configuration and management is largely the same in Windows Server 2016 and Windows Server 2019, while running Microsoft Defender Antivirus; however, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md).
 
-## Related articles
+## See also
 
+- [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server-2016.md)
 - [Microsoft Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
-
 - [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)
