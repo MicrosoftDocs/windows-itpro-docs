@@ -46,7 +46,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ```
 	let 
-		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti'",
+		AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
 		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
 
