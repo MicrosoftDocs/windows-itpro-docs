@@ -1,6 +1,6 @@
 ---
 title: Take response actions on a file in Microsoft Defender ATP
-description: Take response actions on file-related alerts by quarantining or blocking a file and checking activity details.
+description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -161,6 +161,8 @@ Go to **Settings** > **Advanced features** > **Download quarantined files** and 
 ### Collect files
 
 If a file is not already stored by Microsoft Defender ATP, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+> [!Important]
+> A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired. 
 
 ## Add indicator to block or allow a file
 
@@ -256,7 +258,8 @@ When the sample is collected, Defender for Endpoint runs the file in a secure en
 
     ![You can only submit PE files in the file details section](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
+    > [!NOTE]
+    > Only PE files are supported, including _.exe_ and _.dll_ files.
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 

@@ -54,9 +54,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 
 The following features are included in the preview release:
-- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender ATP now adds support for iOS. Learn how to install, configure, and use Microsoft Defender ATP for iOS.
-
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. Learn how to install, configure, and use Microsoft Defender for Endpoint for Android.
 
 - [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
