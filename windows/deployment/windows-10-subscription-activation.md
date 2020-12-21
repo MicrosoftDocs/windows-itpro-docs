@@ -229,6 +229,8 @@ Microsoft Products & Services Agreements (MPSA):
 - Existing MPSA customers will receive service activation emails that allow their customer administrator to assign users to the service.
 - New MPSA customers who purchase the Software Subscription Windows Enterprise E3 and E5 will be enabled for both the traditional key-based and new subscriptions activation method.
 
+** I would like to add a note here that this is only for comercial tenants and not GCC/GCC High tenants.**
+
 ### Deploying licenses
 
 See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
