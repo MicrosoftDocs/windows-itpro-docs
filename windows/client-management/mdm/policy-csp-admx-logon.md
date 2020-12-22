@@ -1026,7 +1026,7 @@ If this configuration is not implemented on the server, this policy setting is i
 If you disable or do not configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically does not wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
 
 > [!NOTE]
-
+>
 > - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy. 
 > - If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 
