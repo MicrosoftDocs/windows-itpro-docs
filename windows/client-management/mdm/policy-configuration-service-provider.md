@@ -1396,6 +1396,56 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_Logon policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-blockuserfromshowingaccountdetailsonsignin" id="admx-logon-blockuserfromshowingaccountdetailsonsignin">ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableacrylicbackgroundonlogon" id="admx-logon-disableacrylicbackgroundonlogon">ADMX_Logon/DisableAcrylicBackgroundOnLogon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunlegacy-1" id="admx-logon-disableexplorerrunlegacy-1">ADMX_Logon/DisableExplorerRunLegacy_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunlegacy-2" id="admx-logon-disableexplorerrunlegacy-2">ADMX_Logon/DisableExplorerRunLegacy_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunoncelegacy-1" id="admx-logon-disableexplorerrunoncelegacy-1">ADMX_Logon/DisableExplorerRunOnceLegacy_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disableexplorerrunoncelegacy-2" id="admx-logon-disableexplorerrunoncelegacy-2">ADMX_Logon/DisableExplorerRunOnceLegacy_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-disablestatusmessages" id="admx-logon-disablestatusmessages">ADMX_Logon/DisableStatusMessages</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-dontenumerateconnectedusers" id="admx-logon-dontenumerateconnectedusers">ADMX_Logon/DontEnumerateConnectedUsers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-nowelcometips-1" id="admx-logon-nowelcometips-1">ADMX_Logon/NoWelcomeTips_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-nowelcometips-2" id="admx-logon-nowelcometips-2">ADMX_Logon/NoWelcomeTips_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-run-1" id="admx-logon-run-1">ADMX_Logon/Run_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-run-2" id="admx-logon-run-2">ADMX_Logon/Run_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-syncforegroundpolicy" id="admx-logon-syncforegroundpolicy">ADMX_Logon/SyncForegroundPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-useoembackground" id="admx-logon-useoembackground">ADMX_Logon/UseOEMBackground</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-logon.md#admx-logon-verbosestatus" id="admx-logon-verbosestatus">ADMX_Logon/VerboseStatus</a>
+  </dd>
+</dl>
+
 ### ADMX_MicrosoftDefenderAntivirus policies  
 
 <dl>
