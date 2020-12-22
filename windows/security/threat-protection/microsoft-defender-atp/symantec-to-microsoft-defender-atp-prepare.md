@@ -28,7 +28,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-|![Phase 1: Prepare](/windows/media/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](/windows/media/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](/windows/media/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|![Phase 1: Prepare](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare |[![Phase 2: Set up](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Phase 2: Set up](symantec-to-microsoft-defender-atp-setup.md) |[![Phase 3: Onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 |*You are here!*| | |
 
