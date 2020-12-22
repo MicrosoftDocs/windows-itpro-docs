@@ -1206,6 +1206,140 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_GroupPolicy policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-allowx-forestpolicy-and-rup" id="admx-grouppolicy-allowx-forestpolicy-and-rup">ADMX_GroupPolicy/AllowX-ForestPolicy-and-RUP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-appmgmt" id="admx-grouppolicy-cse-appmgmt">ADMX_GroupPolicy/CSE_AppMgmt</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-diskquota" id="admx-grouppolicy-cse-diskquota">ADMX_GroupPolicy/CSE_DiskQuota</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-efsrecovery" id="admx-grouppolicy-cse-efsrecovery">ADMX_GroupPolicy/CSE_EFSRecovery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-folderredirection" id="admx-grouppolicy-cse-folderredirection">ADMX_GroupPolicy/CSE_FolderRedirection</a>
+  </dd>
+    <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-iem" id="admx-grouppolicy-cse-iem">ADMX_GroupPolicy/CSE_IEM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-ipsecurity" id="admx-grouppolicy-cse-ipsecurity">ADMX_GroupPolicy/CSE_IPSecurity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-registry" id="admx-grouppolicy-cse-registry">ADMX_GroupPolicy/CSE_Registry</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-scripts" id="admx-grouppolicy-cse-scripts">ADMX_GroupPolicy/CSE_Scripts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-security" id="admx-grouppolicy-cse-security">ADMX_GroupPolicy/CSE_Security</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-wired" id="admx-grouppolicy-cse-wired">ADMX_GroupPolicy/CSE_Wired</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-cse-wireless" id="admx-grouppolicy-cse-wireless">ADMX_GroupPolicy/CSE_Wireless</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-corpconnsyncwaittime" id="admx-grouppolicy-corpconnsyncwaittime">ADMX_GroupPolicy/CorpConnSyncWaitTime</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-denyrsoptointeractiveuser-1" id="admx-grouppolicy-denyrsoptointeractiveuser-1">ADMX_GroupPolicy/DenyRsopToInteractiveUser_1</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-denyrsoptointeractiveuser-2" id="admx-grouppolicy-denyrsoptointeractiveuser-2">ADMX_GroupPolicy/DenyRsopToInteractiveUser_2</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableaoacprocessing" id="admx-grouppolicy-disableaoacprocessing">ADMX_GroupPolicy/DisableAOACProcessing</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableautoadmupdate" id="admx-grouppolicy-disableautoadmupdate">ADMX_GroupPolicy/DisableAutoADMUpdate</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disablebackgroundpolicy" id="admx-grouppolicy-disablebackgroundpolicy">ADMX_GroupPolicy/DisableBackgroundPolicy</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disablelgpoprocessing" id="admx-grouppolicy-disablelgpoprocessing">ADMX_GroupPolicy/DisableLGPOProcessing</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-disableusersfrommachgp" id="admx-grouppolicy-disableusersfrommachgp">ADMX_GroupPolicy/DisableUsersFromMachGP</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablecdp" id="admx-grouppolicy-enablecdp">ADMX_GroupPolicy/EnableCDP</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablelogonoptimization" id="admx-grouppolicy-enablelogonoptimization">ADMX_GroupPolicy/EnableLogonOptimization</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablelogonoptimizationonserversku" id="admx-grouppolicy-enablelogonoptimizationonserversku">ADMX_GroupPolicy/EnableLogonOptimizationOnServerSKU</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enablemmx" id="admx-grouppolicy-enablemmx">ADMX_GroupPolicy/EnableMMX</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-enforcepoliciesonly" id="admx-grouppolicy-enforcepoliciesonly">ADMX_GroupPolicy/EnforcePoliciesOnly</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-fontmitigation" id="admx-grouppolicy-fontmitigation">ADMX_GroupPolicy/FontMitigation</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gpdcoptions" id="admx-grouppolicy-gpdcoptions">ADMX_GroupPolicy/GPDCOptions</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gptransferrate-1" id="admx-grouppolicy-gptransferrate-1">ADMX_GroupPolicy/GPTransferRate_1</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-gptransferrate-2" id="admx-grouppolicy-gptransferrate-2">ADMX_GroupPolicy/GPTransferRate_2</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshrate" id="admx-grouppolicy-grouppolicyrefreshrate">ADMX_GroupPolicy/GroupPolicyRefreshRate</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshratedc" id="admx-grouppolicy-grouppolicyrefreshratedc">ADMX_GroupPolicy/GroupPolicyRefreshRateDC</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-grouppolicyrefreshrateuser" id="admx-grouppolicy-grouppolicyrefreshrateuser">ADMX_GroupPolicy/GroupPolicyRefreshRateUser</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-logonscriptdelay" id="admx-grouppolicy-logonscriptdelay">ADMX_GroupPolicy/LogonScriptDelay</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-newgpodisplayname" id="admx-grouppolicy-newgpodisplayname">ADMX_GroupPolicy/NewGPODisplayName</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-newgpolinksdisabled" id="admx-grouppolicy-newgpolinksdisabled">ADMX_GroupPolicy/NewGPOLinksDisabled</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-onlyuselocaladminfiles" id="admx-grouppolicy-onlyuselocaladminfiles">ADMX_GroupPolicy/OnlyUseLocalAdminFiles</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-processmitigationoptions" id="admx-grouppolicy-processmitigationoptions">ADMX_GroupPolicy/ProcessMitigationOptions</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-rsoplogging" id="admx-grouppolicy-rsoplogging">ADMX_GroupPolicy/RSoPLogging</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy" id="admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy">ADMX_GroupPolicy/ResetDfsClientInfoDuringRefreshPolicy</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-slowlinkdefaultfordirectaccess" id="admx-grouppolicy-slowlinkdefaultfordirectaccess">ADMX_GroupPolicy/SlowLinkDefaultForDirectAccess</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-slowlinkdefaulttoasync" id="admx-grouppolicy-slowlinkdefaulttoasync">ADMX_GroupPolicy/SlowlinkDefaultToAsync</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-syncwaittime" id="admx-grouppolicy-syncwaittime">ADMX_GroupPolicy/SyncWaitTime</a>
+  </dd>
+   <dd>
+    <a href="./policy-csp-admx-grouppolicy.md#admx-grouppolicy-userpolicymode" id="admx-grouppolicy-userpolicymode">ADMX_GroupPolicy/UserPolicyMode</a>
+  </dd>
+</dl>
+
 ### ADMX_HelpAndSupport policies
 <dl>
   <dd>
