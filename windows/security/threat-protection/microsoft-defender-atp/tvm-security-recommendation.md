@@ -112,32 +112,17 @@ If there is a large jump in the number of exposed devices, or a sharp increase i
 
 ## Request remediation
 
-The threat and vulnerability management capability in Microsoft Defender ATP bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** pages to Intune.
+The threat and vulnerability management remediation capability bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the **Security recommendation** page to Intune. [Learn more about remediation options](tvm-remediation.md)
 
-### Enable Microsoft Intune connection
+### How to request remediation
 
-To use this capability, enable your Microsoft Intune connections. In the Microsoft Defender Security Center, navigate to **Settings** > **General** > **Advanced features**. Scroll down and look for **Microsoft Intune connection**. By default, the toggle is turned off. Turn your **Microsoft Intune connection** toggle **On**.
-
-See [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
-
-### Remediation request steps
-
-1. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
-
-2. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
-
-3. Notify your IT Administrator about the new request and have them log into Intune to approve or reject the request and start a package deployment.
-
-4. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request.
-
-If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
-
->[!NOTE]
->If your request involves remediating more than 10,000 devices, we can only send 10,000 devices for remediation to Intune.
+Select a security recommendation you would like to request remediation for, and then select **Remediation options**. Fill out the form and select **Submit request**. Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [Learn more about how to request remediation](tvm-remediation.md#request-remediation)
 
 ## File for exception
 
-As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md). If your organization has device groups, you will now be able to scope the exception to specific device groups.
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. [Learn more about exceptions](tvm-exception.md)
+
+Only users with “exceptions handling” permissions can add exception. [Learn more about RBAC roles](user-roles.md).
 
 When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
@@ -147,9 +132,7 @@ Select a security recommendation you would like create an exception for, and the
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
-Choose the scope and justification, set a date for the exception duration, and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab.
-
-[Learn more about exceptions](tvm-exception.md)
+Fill out the form and submit. To view all your exceptions (current and past), navigate to the [Remediation](tvm-remediation.md) page under the **Threat & Vulnerability Management** menu and select the **Exceptions** tab. [Learn more about how to create an exception](tvm-exception.md#create-an-exception)
 
 ## Report inaccuracy
 
