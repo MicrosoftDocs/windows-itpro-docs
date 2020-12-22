@@ -61,8 +61,6 @@ The following fields are available:
 - **DatasourceApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_20H1**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS1**  An ID for the system, calculated by hashing hardware identifiers.
-- **DatasourceApplicationFile_RS2**  An ID for the system, calculated by hashing hardware identifiers.
 - **DatasourceApplicationFile_RS3**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS4**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_RS5**  The count of the number of this particular object type present on this device.
