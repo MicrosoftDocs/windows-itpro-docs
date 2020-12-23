@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves a collection of devices related to a given user ID.
@@ -77,8 +81,6 @@ If successful and user exists - 200 OK with list of [machine](machine.md) entiti
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/users/user1/machines
+GET https://api.securitycenter.microsoft.com/api/users/user1/machines
 ```

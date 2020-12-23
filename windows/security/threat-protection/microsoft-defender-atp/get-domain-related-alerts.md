@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves a collection of [Alerts](alerts.md) related to a given domain address.
@@ -74,8 +78,6 @@ If successful and domain exists - 200 OK with list of [alert](alerts.md) entitie
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```http
-GET https://api.securitycenter.windows.com/api/domains/client.wns.windows.com/alerts
+GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts
 ```

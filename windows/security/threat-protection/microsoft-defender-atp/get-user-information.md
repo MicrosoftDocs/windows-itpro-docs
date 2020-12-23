@@ -23,6 +23,10 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 Retrieve a User entity by key (user name).
 
@@ -58,10 +62,8 @@ If successful and user exists - 200 OK with [user](user.md) entity in the body. 
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/users/user1
+GET https://api.securitycenter.microsoft.com/api/users/user1
 Content-type: application/json
 ```
 
@@ -74,7 +76,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Users/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
     "id": "user1",
     "firstSeen": "2018-08-02T00:00:00Z",
     "lastSeen": "2018-08-04T00:00:00Z",

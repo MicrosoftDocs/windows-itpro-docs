@@ -25,6 +25,11 @@ ms.topic: article
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a list of your organization's software version distribution. 
@@ -62,7 +67,7 @@ If successful, this method returns 200 OK with a list of software distributions 
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge/distributions
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distributions
 ```
 
 **Response**
@@ -72,7 +77,7 @@ Here is an example of the response.
 ```json
 
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Distributions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Distributions",
     "value": [
         {
             "version": "11.0.17134.1039",

@@ -26,9 +26,9 @@ ms.topic: article
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 

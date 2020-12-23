@@ -26,6 +26,7 @@ ms.topic: article
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
 
@@ -73,8 +74,6 @@ where
 ## Run query
 
 Run the following query:
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 $query = 'RegistryEvents | limit 10' # Paste your own query here

@@ -28,6 +28,8 @@ ms.topic: article
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 ## Limitations
 1. You can only run a query on data from the last 30 days.
 2. The results will include a maximum of 100,000 rows.
@@ -78,9 +80,6 @@ If successful, this method returns 200 OK, and _QueryResponse_ object in the res
 Request
 
 Here is an example of the request.
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ```
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run

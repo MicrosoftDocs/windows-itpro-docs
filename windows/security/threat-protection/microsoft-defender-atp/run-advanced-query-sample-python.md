@@ -28,6 +28,8 @@ ms.topic: article
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).
 
 In this section, we share Python samples to retrieve a token and use it to run a query.
@@ -37,8 +39,6 @@ In this section, we share Python samples to retrieve a token and use it to run a
 ## Get token
 
 - Run the following commands:
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 
