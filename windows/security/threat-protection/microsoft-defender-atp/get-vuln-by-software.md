@@ -25,6 +25,11 @@ ms.topic: article
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieve a list of vulnerabilities in the installed software. 
@@ -62,7 +67,7 @@ If successful, this method returns 200 OK with a a list of vulnerabilities expos
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
 ```
 
 **Response**
@@ -72,7 +77,7 @@ Here is an example of the response.
 ```json
 
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
     "value": [
 			{
 				"id": "CVE-2017-0140",

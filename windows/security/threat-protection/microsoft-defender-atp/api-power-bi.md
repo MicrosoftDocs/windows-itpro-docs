@@ -28,6 +28,8 @@ ms.topic: article
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
@@ -45,8 +47,6 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
     ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
 
 - Copy the below and paste it in the editor:
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 	let 

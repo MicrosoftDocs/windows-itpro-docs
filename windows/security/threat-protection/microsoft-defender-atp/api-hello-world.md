@@ -28,6 +28,8 @@ ms.topic: article
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## Get Alerts using a simple PowerShell script
 
@@ -96,8 +98,6 @@ Done! You have successfully registered an application!
 
 -   Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
 -   Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
