@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft Volume L
 
 > [!NOTE]
 > Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.
-> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). 
+> Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
 
 Microsoft Defender for Endpoint, on Windows Server, requires one of the following licensing options:
 
@@ -52,7 +52,12 @@ Microsoft Defender for Endpoint, on Windows Server, requires one of the followin
 - Defender for Endpoint for Servers (one per covered server)
 
 > [!NOTE]
-> Customers with a combined minimum of 50 licenses for one or more of the following may acquire Server SLs for Microsoft Defender Defender for Endpoint for Servers (one per covered Server OSE): Microsoft Defender for Endpoint, Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User SLs. This license applies to Defender for Endpoint for Linux.
+> Customers may acquire Server Licenses (SLs) (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following User Licenses:
+>
+> * Microsoft Defender for Endpoint
+> * Windows E5/A5
+> * Microsoft 365 E5/A5
+> * Microsoft 365 E5 Security
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn the detailed terms and conditions for the product.
 
@@ -104,7 +109,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 
 ### Other supported operating systems
 - Android
-- Linux 
+- Linux
 - macOS
 
 > [!NOTE]
@@ -186,7 +191,7 @@ The Defender for Endpoint agent depends on the ability of Microsoft Defender Ant
 
 Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](../microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode. 
+When Microsoft Defender Antivirus is not the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
