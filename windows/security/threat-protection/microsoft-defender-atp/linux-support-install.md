@@ -20,14 +20,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshoot installation issues for Microsoft Defender ATP for Linux
+# Troubleshoot installation issues for Microsoft Defender for Endpoint for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
+- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md)
 
 ## Verify if installation succeeded
 
@@ -55,7 +55,7 @@ Check if the mdatp service is running:
 systemctl status mdatp
 ```
 ```Output
- ● mdatp.service - Microsoft Defender ATP
+ ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2020-03-26 10:37:30 IST; 23h ago
  Main PID: 1966 (wdavdaemon)
@@ -97,7 +97,9 @@ Then rerun step 2.
 4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
-5. Ensure that the daemon has executable permission.
+5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`. 
+
+6. Ensure that the daemon has executable permission.
     ```bash
     ls -l /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
@@ -110,7 +112,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     ```
     and retry running step 2.
 
-6. Ensure that the file system containing wdavdaemon isn't mounted with "noexec".
+7. Ensure that the file system containing wdavdaemon isn't mounted with "noexec".
 
 ## If mdatp service is running, but EICAR text file detection doesn't work
 

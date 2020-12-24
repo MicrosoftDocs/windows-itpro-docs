@@ -24,15 +24,15 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Before you begin, ensure that you meet the following operating system or platform requisites for threat and vulnerability management so the activities in your devices are properly accounted for.
 
 >[!NOTE]
->The supported systems and platforms for threat and vulnerability management may be different from the [Minimum requirements for Microsoft Defender ATP](minimum-requirements.md) list.
+>The supported systems and platforms for threat and vulnerability management may be different from the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) list.
 
 Operating system | Security assessment support
 :---|:---

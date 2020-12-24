@@ -1,6 +1,6 @@
 ---
 title: Get domain related machines API
-description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -21,9 +21,9 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint(https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## API description
@@ -36,7 +36,7 @@ Retrieves a collection of [Machines](machine.md) that have communicated to or fr
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

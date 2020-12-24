@@ -1,6 +1,6 @@
 ---
-title: Step by step - Deploy Windows 10 using Microsoft Endpoint Configuration Manager
-description: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
+title: Steps to deploy Windows 10 with Microsoft Endpoint Configuration Manager
+description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft endpoint configuration manager.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,6 +14,7 @@ ms.author: greglin
 author: greg-lindsay
 audience: itpro
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
@@ -282,7 +283,7 @@ This section contains several procedures to support Zero Touch installation with
 3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
 4. Click the yellow starburst and then click **New Account**.
 5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
-6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
+6. Next to **Password** and **Confirm Password**, type **pass\@word1**, and then click **OK** twice.
 
 ### Configure a boundary group
 

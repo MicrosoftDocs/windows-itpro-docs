@@ -17,23 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-#  Microsoft Defender ATP for Android - Privacy information
+#  Microsoft Defender for Endpoint for Android - Privacy information
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Android](microsoft-defender-atp-android.md)
+- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md)
 
 
-Microsoft Defender ATP for Android collects information from your configured
-Android devices and stores it in the same tenant where you have Microsoft
-Defender ATP.
+Defender for Endpoint for Android collects information from your configured
+Android devices and stores it in the same tenant where you have Defender for Endpoint.
 
-Information is collected to help keep Microsoft Defender ATP for Android secure,
+Information is collected to help keep Defender for Endpoint for Android secure,
 up-to-date, performing as expected and to support the service.
 
 ## Required Data 
 
-Required data consists of data that is necessary to make Microsoft Defender ATP
+Required data consists of data that is necessary to make Defender for Endpoint
 for Android work as expected. This data is essential to the operation of the
 service and can include data related to the end user, organization, device, and
 apps. Here's a list of the types of data being collected:

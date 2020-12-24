@@ -63,7 +63,7 @@
 ## [Windows Hello and password changes](hello-and-password-changes.md)
 ## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 
-## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
+## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.yml)
 ### [Windows Hello for Business Videos](hello-videos.md)
 
 ## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
