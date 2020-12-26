@@ -34,7 +34,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
 
 ```
-(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+(Get-CimInstance -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
 If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device does not have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
