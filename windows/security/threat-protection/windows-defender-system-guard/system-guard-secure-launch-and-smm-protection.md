@@ -91,3 +91,6 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |Platform firmware|Platform firmware must carry all code required to perform a launch.|
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+
+> [!NOTE]
+> For more details around AMD processors please check this [link](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/)
