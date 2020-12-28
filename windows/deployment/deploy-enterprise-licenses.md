@@ -33,7 +33,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 
 To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
 
-```
+```PowerShell
 (Get-CimInstance -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
