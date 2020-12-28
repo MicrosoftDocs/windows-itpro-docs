@@ -17,4 +17,4 @@ ms.topic: article
 ---
 
 >[!NOTE]
->If you are a US Government customer, please use the URIs listed in [here](../threat-protection/microsoft-defender-atp/gov.md#api).
+>If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government GCC High customers](../threat-protection/microsoft-defender-atp/gov.md#api).
