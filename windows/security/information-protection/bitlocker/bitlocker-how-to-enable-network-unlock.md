@@ -95,7 +95,7 @@ The server side configuration to enable Network Unlock also requires provisionin
 
 The following steps allow an administrator to configure Network Unlock in a domain where the Domain Functional Level is at least Windows Server 2012.
 
-### <a href="" id="bkmk-installwdsrole"><a/>Install the WDS Server role
+### <a href="" id="bkmk-installwdsrole"></a>Install the WDS Server role
 
 The BitLocker Network Unlock feature will install the WDS role if it is not already installed. If you want to install it separately before you install BitLocker Network Unlock you can use Server Manager or Windows PowerShell. To install the role using Server Manager, select the **Windows Deployment Services** role in Server Manager.
 
