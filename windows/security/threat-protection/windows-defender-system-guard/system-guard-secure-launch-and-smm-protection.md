@@ -93,4 +93,4 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
 
 > [!NOTE]
-> For more details around AMD processors, please read this Microsoft Security blog post: [Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).
+> For more details around AMD processors, see [Microsoft Security Blog: Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).
