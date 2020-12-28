@@ -25,6 +25,11 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
 ## API description
 Retrieves specific [Investigation](investigation.md) by its ID.
 <br> ID can be the investigation ID or the investigation triggering alert ID.
@@ -50,7 +55,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-GET https://api.securitycenter.windows.com/api/investigations/{id}
+GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 ```
 
 ## Request headers
