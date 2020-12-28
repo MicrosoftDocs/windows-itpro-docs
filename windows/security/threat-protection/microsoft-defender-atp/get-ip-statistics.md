@@ -23,7 +23,11 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -71,10 +75,8 @@ If successful and ip exists - 200 OK with statistical data in the body. IP do no
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/ips/10.209.67.177/stats
+GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats
 ```
 
 **Response**
@@ -86,7 +88,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
     "orgPrevalence": "63515",
     "orgFirstSeen": "2017-07-30T13:36:06Z",
