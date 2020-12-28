@@ -21,9 +21,13 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint ](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -72,10 +76,8 @@ If successful and alert and files exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/files
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/files
 ```
 
 **Response**
@@ -87,7 +89,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files",
     "value": [
         {
             "sha1": "f2a00fd2f2de1be0214b8529f1e9f67096c1aa70",

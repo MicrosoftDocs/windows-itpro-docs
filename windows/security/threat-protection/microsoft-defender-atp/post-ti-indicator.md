@@ -21,9 +21,13 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint]https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -47,11 +51,8 @@ Delegated (work or school account) |	Ti.ReadWrite |	'Read and write Indicators'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/indicators
+POST https://api.securitycenter.microsoft.com/api/indicators
 ```
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## Request headers
 
@@ -88,7 +89,7 @@ rbacGroupNames | String | Comma-separated list of RBAC group names the indicator
 Here is an example of the request.
 
 ```
-POST https://api.securitycenter.windows.com/api/indicators
+POST https://api.securitycenter.microsoft.com/api/indicators
 Content-type: application/json
 {
     "indicatorValue": "220e7d15b011d7fac48f2bd61114db1022197f7f",
