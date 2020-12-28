@@ -270,7 +270,7 @@ Run a detection test to verify that the device is properly onboarded and reporti
     mdatp threat list
     ```
 
-If the the test file isn't detected and quarantined it might be labeled as a allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
+If the the test file isn't detected and quarantined, it might be labeled as an allowed threat. See the [allowedThreats](linux-preferences.md#allowed-threats) option and the structure of the configuration profile at [Set preferences for Microsoft Defender for Endpoint for Linux](linux-preferences.md).
 
 ## Log installation issues
 
