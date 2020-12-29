@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.date: 12/16/2020
