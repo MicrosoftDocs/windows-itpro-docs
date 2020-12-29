@@ -1126,12 +1126,12 @@ Supported values:
 |-----|------------|
 | 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
 | 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
-| 2 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
+| 2 |The OS volume is unprotected.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.|
 | 5 |The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.|
 | 6 |The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.|
-| 7 |The OS volume is unprotected.|
+| 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM isn't used.|
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
 | 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|
