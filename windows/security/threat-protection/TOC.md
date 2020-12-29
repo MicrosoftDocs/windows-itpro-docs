@@ -82,6 +82,7 @@
 
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
+##### [Best practices with attack surface reduction rules](microsoft-defender-atp/best-practices-attack-surface-reduction-rules.md)
 ##### [Enable attack surface reduction rules](microsoft-defender-atp/enable-attack-surface-reduction.md)
 ##### [Customize attack surface reduction rules](microsoft-defender-atp/customize-attack-surface-reduction.md)
 ##### [View attack surface reduction events](microsoft-defender-atp/event-views.md)
