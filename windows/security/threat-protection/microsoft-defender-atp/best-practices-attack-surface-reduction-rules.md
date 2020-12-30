@@ -40,12 +40,15 @@ Before you roll out attack surface reduction rules in your organization, select 
 
 ## Use code signing for applications
 
+As a best practice, use code signing for all the applications and scripts that your organization is using. This includes internally developed applications. Using code signing helps avoid false positives with attack surface reduction rules. It can also help avoid issues with attack surface reduction rules for developers and other users within your organization. 
+
 ## Get the Power BI report template
 
-
-https://github.com/microsoft/MDATP-PowerBI-Templates
+<!--The Power BI report templates are here: https://github.com/microsoft/MDATP-PowerBI-Templates-->
 
 ## Avoid policy conflicts
+
+
 
 ## See the demystifying blogs
 
