@@ -113,7 +113,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—starts an [automated investigation](automated-investigations.md) on the device
-- **Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about restricting app execution](respond-machine-alerts.md#restrict-app-execution)
+- **Restrict app execution**—sets restrictions on the device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about restricting app execution](respond-machine-alerts.md#restrict-app-execution)
 
 ### Actions on files
 
