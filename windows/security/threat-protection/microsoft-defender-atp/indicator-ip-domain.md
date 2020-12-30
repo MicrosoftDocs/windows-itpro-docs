@@ -51,8 +51,8 @@ It's important to understand the following prerequisites prior to creating indic
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
 > For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement: <br>
 > NOTE:
->- IP is supported for all three protocols
->- Only single IP addresses are supported (no CIDR blocks or IP ranges)
+> - IP is supported for all three protocols
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges)
 >- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
 >- Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
 >- Full URL path blocks can be applied on the domain level and all unencrypted URLs
