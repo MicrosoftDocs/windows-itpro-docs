@@ -53,9 +53,9 @@ It's important to understand the following prerequisites prior to creating indic
 > NOTE:
 > - IP is supported for all three protocols
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges)
->- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
->- Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
->- Full URL path blocks can be applied on the domain level and all unencrypted URLs
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
+> - Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
+> - Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
 >There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
