@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
-This offering is currently available to US Microsoft 365 GCC and GCC-High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
+This offering is currently available to Microsoft 365 GCC and GCC-High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
 > [!NOTE]
 > If you are a "GCC on Commercial" customer, please refer to the public documentation pages.
@@ -37,7 +37,7 @@ This offering is currently available to US Microsoft 365 GCC and GCC-High custom
 ### Standalone OS versions
 The following OS versions are supported:
 
-OS version | GCC | GCC-H
+OS version | GCC | GCC-High
 :---|:---|:---
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 2004 - 20H1 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
@@ -66,7 +66,7 @@ Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 ### OS versions when using Azure Security Center
 The following OS versions are supported when using [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
-OS version | GCC | GCC-H
+OS version | GCC | GCC-High
 :---|:---|:---
 Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
@@ -90,14 +90,14 @@ Instead of the public URIs listed in our [API documentation](https://docs.micros
 Environment | Login endpoint | Defender for Endpoint API endpoint
 :---|:---|:---
 GCC | ```https://login.microsoftonline.com``` | ```https://api-gcc.securitycenter.microsoft.us```
-GCC-H | ```https://login.microsoftonline.us``` | ```https://api-gov.securitycenter.microsoft.us```
+GCC-High | ```https://login.microsoftonline.us``` | ```https://api-gov.securitycenter.microsoft.us```
 
 
 ## Feature parity with commercial
 Defender for Endpoint do not have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
 These are the known gaps as of January 2021:
 
-Feature | GCC | GCC-H
+Feature | GCC | GCC-High
 :---|:---|:---
 Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
