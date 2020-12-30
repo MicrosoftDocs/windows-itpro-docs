@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for US Government GCC High customers 
-description: Learn about the requirements and the available Microsoft Defender ATP capabilities for US Government CCC High customers
-keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp
+title: Microsoft Defender ATP for US Government customers 
+description: Learn about the requirements and the available Microsoft Defender for Endpoint capabilities for US Government customers
+keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,87 +17,61 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender for Endpoint for US Government GCC High customers
+# Microsoft Defender for Endpoint for US Government customers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Microsoft Defender for Endpoint for US Government Community Cloud High (GCC High) customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
+Microsoft Defender for Endpoint for US Government customers, built in the US Azure Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
-This offering is currently available to US Office 365 GCC High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some key differences in the availability of capabilities for this offering.
+This offering is currently available to US Microsoft 365 GCC and GCC-High customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
+
+> [!NOTE]
+> If you are a "GCC on Commercial" customer, please refer to the public documentation pages.
 
 
 ## Endpoint versions
+
+### Standalone OS versions
 The following OS versions are supported:
 
-- Windows 10, version 1903 
-- Windows 10, version 1809 (OS Build 17763.404 with [KB4490481](https://support.microsoft.com/help/4490481))
-- Windows 10, version 1803 (OS Build 17134.799 with [KB4499183](https://support.microsoft.com/help/4499183))
-- Windows 10, version 1709 (OS Build 16299.1182 with [KB4499147](https://support.microsoft.com/help/4499147)) 
-- Windows Server, 2019 (with [KB4490481](https://support.microsoft.com/help/4490481))
+OS version | GCC | GCC-H
+:---|:---|:---
+Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 2004 - 20H1 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1909 - 19H2 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1903 - 19H1 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1809 - RS5 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1803 - RS4 | ![No](../images/svg/check-no.svg)<br>Coming soon | ![Yes](../images/svg/check-yes.svg)<br>With [KB4499183](https://support.microsoft.com/help/4499183)
+Windows 10, version 1709 - RS3 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg)<br>With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
+Windows 10, version 1703 - RS2 and below | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
+Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)<br>Coming soon
+Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Mac OS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Linux | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+iOS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 
->[!NOTE]
->A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
+> [!NOTE]
+> A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-The following OS versions are supported via Azure Security Center:
-- Windows Server 2008 R2 SP1
-- Windows Server 2012 R2
-- Windows Server 2016
+### OS versions when using Azure Security Center
+The following OS versions are supported when using [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
-The following OS versions are not supported:
-- Windows Server 2008 R2 SP1 (standalone, not via ASC)
-- Windows Server 2012 R2 (standalone, not via ASC)
-- Windows Server 2016 (standalone, not via ASC)
-- Windows Server, version 1803
-- Windows 7 SP1 Enterprise
-- Windows 7 SP1 Pro
-- Windows 8 Pro
-- Windows 8.1 Enterprise
-- macOS
-- Linux
+OS version | GCC | GCC-H
+:---|:---|:---
+Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 
-The initial release of Defender for Endpoint will not have immediate parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government (GCC High) customers, there are some capabilities not yet available that we'd like to highlight. These are the known gaps as of August 2020:
-
-## Threat Analytics
-Not currently available.
-
-## Threat & Vulnerability Management
-Not currently available.
-
-
-## Automated investigation and remediation
-The following capabilities are not currently available:
-- Response to Office 365 alerts 
-- Live response 
-
-
-
-## Management and APIs
-The following capabilities are not currently available:
-
-- Threat protection report
-- Device health and compliance report
-- Integration with third-party products
-
-
-## Email notifications
-Not currently available.
-
-
-## Integrations
-Integrations with the following Microsoft products are not currently available:
-- Azure Advanced Threat Protection
-- Azure Information Protection
-- Defender for Office 365
-- Microsoft Cloud App Security
-- Skype for Business
-- Microsoft Intune (sharing of device information and enhanced policy enforcement)
-
-## Microsoft Threat Experts
-Not currently available.
 
 ## Required connectivity settings
 You'll need to ensure that traffic from the following are allowed:
@@ -105,12 +79,39 @@ You'll need to ensure that traffic from the following are allowed:
 Service location | DNS record
 :---|:---
 Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> NOTE: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
-Defender for Endpoint GCC High specific | ```us4-v20.events.data.microsoft.com``` <br>```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```<br>```*.blob.core.usgovcloudapi.net``` 
+Common URLs for all US Gov customers | ```us4-v20.events.data.microsoft.com``` <br>```*.blob.core.usgovcloudapi.net``` 
+Defender for Endpoint GCC specific | ```winatp-gw-usmt.microsoft.com```<br>```winatp-gw-usmv.microsoft.com```
+Defender for Endpoint GCC-High specific | ```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```
 
 
 ## API
-- Login endpoint: ```https://login.microsoftonline.us```
+Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro), you'll need to use the following URIs:
 
-- Microsoft Defender for Endpoint API endpoint: ```https://api-gov.securitycenter.microsoft.us```
+Environment | Login endpoint | Defender for Endpoint API endpoint
+:---|:---|:---
+GCC | ```https://login.microsoftonline.com``` | ```https://api-gcc.securitycenter.microsoft.us```
+GCC-H | ```https://login.microsoftonline.us``` | ```https://api-gov.securitycenter.microsoft.us```
 
 
+## Feature parity with commercial
+Defender for Endpoint do not have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
+These are the known gaps as of January 2021:
+
+Feature | GCC | GCC-H
+:---|:---|:---
+Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Automated investigation and remediation:<br>Response to Office 365 alerts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Automated investigation and remediation:<br>Live response | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Management and APIs:<br>Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Management and APIs:<br>Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Management and APIs:<br>Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Email notifications | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations:<br>Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Microsoft Threat Experts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
