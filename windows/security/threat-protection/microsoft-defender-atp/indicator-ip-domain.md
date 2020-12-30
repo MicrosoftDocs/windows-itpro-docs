@@ -53,8 +53,8 @@ It's important to understand the following prerequisites prior to creating indic
 > NOTE:
 >- IP is supported for all three protocols
 >- Only single IP addresses are supported (no CIDR blocks or IP ranges)
->- Encrypted URLs (full path) can only be blocked on first party browsers
->- Encrypted URLS (FQDN only) can be blocked outside of first party browsers
+>- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
+>- Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
 >- Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
