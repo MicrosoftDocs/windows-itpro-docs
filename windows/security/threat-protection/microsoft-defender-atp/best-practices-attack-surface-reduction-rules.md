@@ -52,10 +52,12 @@ As a best practice, use code signing for all the applications and scripts that y
 
 ## See the demystifying blogs
 
+The following table lists several blog posts that you might find helpful. All of these blogs are hosted on the [Microsoft Tech Community site](https://techcommunity.microsoft.com), under [Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog).
 
 |Blog  |Description  |
 |---------|---------|
 |[Demystifying attack surface reduction rules - Part 1: Why and What](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420)     | Get a quick overview of the Why and the What through eight questions and answers.          |
 |[Demystifying attack surface reduction rules - Part 2: How](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565)     | See how to configure attack surface reduction rules, how exclusions work, and how to define exclusions.         |
-|[Demystifying attack surface reduction rules - Part 3: Reports and Troubleshooting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)     |         |
-|Row4     |         |
+|[Demystifying attack surface reduction rules - Part 3: Reports and Troubleshooting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)     | Learn how to view reports and information about attack surface reduction rules and their status, and how to troubleshoot issues with rule impact and operations.         |
+|[Demystifying attack surface reduction rules - Part 4: Migrating](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)     | If you're currently using a non-Microsoft host intrusion prevention system (HIPS) and are evaluating or migrating to attack surface reduction capabilities in Microsoft Defender for Endpoint, see this blog. You'll see how custom rules you were using with your HIPS solution can map to attack surface reduction rules in Microsoft Defender for Endpoint.         |
+
