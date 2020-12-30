@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Allows you to disable System Restore configuration through System Protection.
+Available in the latest Windows 10 Insider Preview Build. Allows you to disable System Restore configuration through System Protection.
 
 This policy setting allows you to turn off System Restore configuration through System Protection.
 
