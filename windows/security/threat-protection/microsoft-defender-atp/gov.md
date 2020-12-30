@@ -52,7 +52,7 @@ Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/
 Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)<br>Coming soon
+Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Mac OS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
