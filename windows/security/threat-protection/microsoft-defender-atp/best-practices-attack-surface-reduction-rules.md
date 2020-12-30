@@ -52,3 +52,10 @@ As a best practice, use code signing for all the applications and scripts that y
 
 ## See the demystifying blogs
 
+
+|Blog  |Description  |
+|---------|---------|
+|[Demystifying attack surface reduction rules - Part 1: Why and What](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420)     | Get a quick overview of the Why and the What through eight questions and answers.          |
+|[Demystifying attack surface reduction rules - Part 2: How](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565)     | See how to configure attack surface reduction rules, how exclusions work, and how to define exclusions.         |
+|[Demystifying attack surface reduction rules - Part 3: Reports and Troubleshooting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)     |         |
+|Row4     |         |
