@@ -44,13 +44,24 @@ As a best practice, use code signing for all the applications and scripts that y
 
 ## View reports in the Microsoft 365 security center
 
-In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Reports** > **Devices** > **Attack surface reduction**.
+In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Reports** > **Devices** > **Attack surface reduction**. (MORE TO COME!)
 
 ## Get the Power BI report template
 
 <!--The Power BI report templates are here: https://github.com/microsoft/MDATP-PowerBI-Templates-->
 
 ## Avoid policy conflicts
+
+If a conflicting policy is applied via Mobile Device Management (MDM, using Intune) and Group Policy, the setting applied from MDM will take precedence. See [Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+
+Attack surface reduction rules for MEM managed devices now support new behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:   
+- Attack surface reduction rules from the following profiles are evaluated for each device the rules apply to:  
+    - Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > [Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction).
+    - Endpoint security > Attack surface reduction policy > Attack surface reduction rules.
+    - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > Attack Surface Reduction Rules.
+- Settings that do not have conflicts are added to a superset of policy for the device.
+- When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don’t conflict are added to the superset policy that applies to a device.
+- Only the configurations for conflicting settings are held back.
 
 
 
