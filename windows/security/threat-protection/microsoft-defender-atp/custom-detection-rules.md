@@ -124,7 +124,7 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 
 ### Actions on users
 
-- **Mark user as compromised**-sets the user's risk level to "high" in Azure Active Directory, triggering the corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection#risk-levels).
+- **Mark user as compromised**—sets the user's risk level to "high" in Azure Active Directory, triggering the corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection#risk-levels).
 
 ## 5. Set the rule scope.
 
