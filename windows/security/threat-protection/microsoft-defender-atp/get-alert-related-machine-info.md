@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves [Device](machine.md) related to a specific alert.
@@ -74,11 +78,8 @@ If successful and alert and device exist - 200 OK. If alert not found or device 
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ```
-GET https://api.securitycenter.windows.com/api/alerts/636688558380765161_2136280442/machine
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
 **Response**
@@ -90,7 +91,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines/$entity",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines/$entity",
     "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",

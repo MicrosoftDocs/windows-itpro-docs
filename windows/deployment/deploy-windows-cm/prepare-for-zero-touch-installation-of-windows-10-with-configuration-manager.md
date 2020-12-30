@@ -129,7 +129,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 On **DC01**:
 
-1. Sign in as contoso\administrtor and enter the following at an elevated Windows PowerShell prompt:
+1. Sign in as contoso\administrator and enter the following at an elevated Windows PowerShell prompt:
 
    ``` 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force

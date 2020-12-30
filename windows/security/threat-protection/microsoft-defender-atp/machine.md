@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Methods
@@ -59,7 +63,7 @@ lastExternalIpAddress | String | Last IP through which the [machine](machine.md)
 healthStatus | Enum | [machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData" and "NoSensorDataImpairedCommunication"
 rbacGroupName | String | Machine group Name.
 rbacGroupId | Int | Machine group unique ID.
-riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender ATP. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
+riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
 exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is AAD Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.

@@ -10,11 +10,11 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: linque1
-ms.author: obezeajo
+ms.author: robsize
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/7/2020
+ms.date: 12/1/2020
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -1659,7 +1659,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- Create a new REG_SZ registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** to a value of **1**.
+- Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
 ### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Windows Defender SmartScreen
