@@ -41,13 +41,13 @@ The following OS versions are supported:
 OS version | GCC | GCC High
 :---|:---|:---
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 2004 / 20H1 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1909 / 19H2 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1903 / 19H1 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1809 / RS5 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1803 / RS4 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
-Windows 10, version 1709 / RS3 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
-Windows 10, version 1703 / RS2 and below | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
+Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1803 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
+Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
+Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows Server 2016 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
@@ -64,8 +64,8 @@ Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 > [!NOTE]
 > A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-### OS versions when using Azure Security Center
-The following OS versions are supported when using [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
+### OS versions when using Azure Defender
+The following OS versions are supported when using [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
 OS version | GCC | GCC High
 :---|:---|:---
