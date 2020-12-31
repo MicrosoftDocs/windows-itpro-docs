@@ -41,21 +41,21 @@ The following OS versions are supported:
 OS version | GCC | GCC High
 :---|:---|:---
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 2004 / 20H1 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1909 / 19H2 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1903 / 19H1 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1809 / RS5 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1803 / RS4 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
-Windows 10, version 1709 / RS3 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
-Windows 10, version 1703 / RS2 and below | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
+Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1803 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
+Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
+Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows Server 2016 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 8 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Mac OS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Linux | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 iOS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
@@ -64,14 +64,14 @@ Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 > [!NOTE]
 > A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-### OS versions when using Azure Security Center
-The following OS versions are supported when using [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
+### OS versions when using Azure Defender for Servers
+The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
 OS version | GCC | GCC High
 :---|:---|:---
-Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2016 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
 
 <br>
 
@@ -112,16 +112,18 @@ Automated investigation and remediation: Response to Office 365 alerts | ![No](.
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Email notifications | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Web content filtering | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
-Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations: Microsoft Power Automate & Azure Logic Apps | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Integrations: Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Microsoft Threat Experts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
