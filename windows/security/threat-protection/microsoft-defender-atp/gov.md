@@ -49,13 +49,13 @@ Windows 10, version 1803 / RS4 | ![No](../images/svg/check-no.svg) Coming soon |
 Windows 10, version 1709 / RS3 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: Will be deprecated, please upgrade
 Windows 10, version 1703 / RS2 and below | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Windows Server 2016 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 8 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
+Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Mac OS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Linux | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 iOS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
@@ -69,9 +69,9 @@ The following OS versions are supported when using [Azure Security Center](https
 
 OS version | GCC | GCC High
 :---|:---|:---
-Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2016 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Coming soon | ![Yes](../images/svg/check-yes.svg)
 
 <br>
 
@@ -112,11 +112,11 @@ Automated investigation and remediation: Response to Office 365 alerts | ![No](.
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Management and APIs: Streaming API | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Email notifications | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Web content filtering | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
-Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
