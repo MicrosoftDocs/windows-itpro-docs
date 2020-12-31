@@ -243,6 +243,12 @@ Microsoft Endpoint Configuration Manager name: `Block executable content from em
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
+> [!Note]
+> The rule **Block executable content from email client and webmail** is also reffered as following. 
+> Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
+> Endpoint Manager: Block executable content download from email and webmail clients
+> Group Policy: Block executable content from email client and webmail
+
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
 This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
