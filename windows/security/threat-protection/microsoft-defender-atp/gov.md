@@ -64,8 +64,8 @@ Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 > [!NOTE]
 > A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-### OS versions when using Azure Defender
-The following OS versions are supported when using [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
+### OS versions when using Azure Defender for Servers
+The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
 
 OS version | GCC | GCC High
 :---|:---|:---
