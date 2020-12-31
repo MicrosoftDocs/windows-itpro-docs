@@ -80,10 +80,10 @@ You'll need to ensure that traffic from the following are allowed:
 
 Service location | DNS record
 :---|:---
-Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>```notify.windows.com```<br>```settings-win.data.microsoft.com``` <br><br> Note: ```settings-win.data.microsoft.com``` is only needed on Windows 10 devices running version 1803 or earlier.
-Common URLs for all US Gov customers | ```us4-v20.events.data.microsoft.com``` <br>```*.blob.core.usgovcloudapi.net``` 
-Defender for Endpoint GCC specific | ```winatp-gw-usmt.microsoft.com```<br>```winatp-gw-usmv.microsoft.com```
-Defender for Endpoint GCC High specific | ```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```
+Common URLs for all locations (Global location) | `crl.microsoft.com`<br>`ctldl.windowsupdate.com`<br>`notify.windows.com`<br>`settings-win.data.microsoft.com` <br><br> Note: `settings-win.data.microsoft.com` is only needed on Windows 10 devices running version 1803 or earlier.
+Common URLs for all US Gov customers | `us4-v20.events.data.microsoft.com` <br>`*.blob.core.usgovcloudapi.net` 
+Defender for Endpoint GCC specific | `winatp-gw-usmt.microsoft.com`<br>`winatp-gw-usmv.microsoft.com`
+Defender for Endpoint GCC High specific | `winatp-gw-usgt.microsoft.com`<br>`winatp-gw-usgv.microsoft.com`
 
 <br>
 
@@ -93,8 +93,8 @@ Instead of the public URIs listed in our [API documentation](https://docs.micros
 
 Environment | Login endpoint | Defender for Endpoint API endpoint
 :---|:---|:---
-GCC | ```https://login.microsoftonline.com``` | ```https://api-gcc.securitycenter.microsoft.us```
-GCC High | ```https://login.microsoftonline.us``` | ```https://api-gov.securitycenter.microsoft.us```
+GCC | `https://login.microsoftonline.com` | `https://api-gcc.securitycenter.microsoft.us`
+GCC High | `https://login.microsoftonline.us` | `https://api-gov.securitycenter.microsoft.us`
 
 <br>
 
