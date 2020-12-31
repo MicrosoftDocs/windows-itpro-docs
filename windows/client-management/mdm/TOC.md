@@ -231,6 +231,7 @@
 #### [ADMX_OfflineFiles](policy-csp-admx-offlinefiles.md)
 #### [ADMX_PeerToPeerCaching](policy-csp-admx-peertopeercaching.md)
 #### [ADMX_PerformanceDiagnostics](policy-csp-admx-performancediagnostics.md)
+#### [ADMX_Power](policy-csp-admx-power.md)
 #### [ADMX_PowerShellExecutionPolicy](policy-csp-admx-powershellexecutionpolicy.md)
 #### [ADMX_Printing](policy-csp-admx-printing.md)
 #### [ADMX_Printing2](policy-csp-admx-printing2.md)
