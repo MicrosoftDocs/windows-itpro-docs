@@ -113,7 +113,7 @@ Automated investigation and remediation: Live response | ![Yes](../images/svg/ch
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Email notifications | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Email notifications | ![Yes](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Integrations: Azure Sentinel | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
