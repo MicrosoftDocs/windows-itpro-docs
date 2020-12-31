@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for US Government customers 
+title: Microsoft Defender for Endpoint for US Government customers 
 description: Learn about the requirements and the available Microsoft Defender for Endpoint capabilities for US Government customers
 keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp, endpoint, dod
 search.product: eADQiWindows 10XVcnh
