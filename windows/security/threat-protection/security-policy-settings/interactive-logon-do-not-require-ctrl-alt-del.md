@@ -43,7 +43,7 @@ A malicious user might install malware that looks like the standard logon dialog
 
 ### Best practices
 
-- It is advisable to set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
+- We recommend that you set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
 
 ### Location
 

@@ -77,7 +77,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether Digital Locker can run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 
@@ -148,7 +148,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether Digital Locker can run.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 

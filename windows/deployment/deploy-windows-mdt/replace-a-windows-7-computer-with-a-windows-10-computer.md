@@ -1,6 +1,7 @@
 ---
 title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
-description: Learn how to replace a Windows 7 device with a Windows 10 device. Although the process is similar to performing a refresh, you'll need to backup data externally
+description: In this article, you will learn how to replace a Windows 7 device with a Windows 10 device.
+ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
 manager: laurawi

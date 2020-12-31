@@ -23,7 +23,7 @@ ms.topic: article
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats—in real time. 
@@ -293,6 +293,7 @@ Each command is tracked with full details such as:
 
 - Live response sessions are limited to 10 live response sessions at a time.
 - Large-scale command execution is not supported.
+- Live response session inactive timeout value is 5 minutes. 
 - A user can only initiate one session at a time.
 - A device can only be in one session at a time.
 - The following file size limits apply:
