@@ -44,13 +44,13 @@ As a best practice, use code signing for all the applications and scripts that y
 
 ## View reports from various sources in Microsoft
 
-### From the Microsoft 365 security center**
+### From the Microsoft 365 security center
 
 In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Reports** > **Devices** > **Attack surface reduction**. (MORE TO COME!)
 
 To retrieve and view the reports generated in ([https://security.microsoft.com](https://security.microsoft.com)), ensure that the device for which you seek a report is onboarded on to Microsoft Defender ATP.
 
-### By Microsoft Defender ATP advanced hunting** 
+### By Microsoft Defender ATP advanced hunting
 
 Advanced hunting is a query-based threat-hunting tool of Microsoft Defender ATP. This tool generates reports based on the findings of the threat-hunting process.
 
@@ -64,6 +64,13 @@ DeviceEvents
 | where Timestamp > ago (30d)
 | where ActionType startswith "Asr" 
 | summarize EventCount=count () by ActionType
+
+**Procedure**
+
+1. Navigate to **Advanced hunting** module in the **Microsoft Defender Security Center** portal.
+2. Click **Query**.
+3. Click **+ New** to create a new query.
+4. Click **Run query**. The report based on the query parameters (specified in the **Template of DeviceEvents table** section) is generated.
 
 ### By Microsoft Defender ATP machine timeline
 
