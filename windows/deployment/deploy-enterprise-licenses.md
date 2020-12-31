@@ -198,7 +198,7 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 9**.
 
-<br/><br/><span id="win-10-activated-subscription-active"/>
+<br/><span id="win-10-activated-subscription-active"/>
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 **Figure 9 - Windows 10 Enterprise subscription in Settings** 
@@ -232,19 +232,19 @@ Use the following figures to help you troubleshoot when users experience these c
 
 - [Figure 10](#win-10-not-activated) (below) illustrates a device on which Windows 10 Pro is not activated, but the Windows 10 Enterprise subscription is active.
 
-    <br/><br/><span id="win-10-not-activated"/>
+    <br/><span id="win-10-not-activated"/>
     <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" />
     <br><strong>Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings</strong>
 
 - [Figure 11](#subscription-not-active) (below) illustrates a device on which Windows 10 Pro is activated, but the Windows 10 Enterprise subscription is lapsed or removed.
 
-    <br/><br/><span id="subscription-not-active"/>
+    <br/><span id="subscription-not-active"/>
     <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" />
     <br><strong>Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 - [Figure 12](#win-10-not-activated-subscription-not-active) (below) illustrates a device on which Windows 10 Pro license is not activated and the Windows 10 Enterprise subscription is lapsed or removed.
 
-    <br/><br/><span id="win-10-not-activated-subscription-not-active"/>
+    <br/><span id="win-10-not-activated-subscription-not-active"/>
     <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" />
     <br><strong>Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
