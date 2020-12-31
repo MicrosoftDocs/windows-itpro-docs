@@ -72,6 +72,7 @@ OS version | GCC | GCC High
 Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+
 <br>
 
 ## Required connectivity settings
@@ -83,6 +84,7 @@ Common URLs for all locations (Global location) | ```crl.microsoft.com```<br>```
 Common URLs for all US Gov customers | ```us4-v20.events.data.microsoft.com``` <br>```*.blob.core.usgovcloudapi.net``` 
 Defender for Endpoint GCC specific | ```winatp-gw-usmt.microsoft.com```<br>```winatp-gw-usmv.microsoft.com```
 Defender for Endpoint GCC High specific | ```winatp-gw-usgt.microsoft.com```<br>```winatp-gw-usgv.microsoft.com```
+
 <br>
 
 
@@ -93,6 +95,7 @@ Environment | Login endpoint | Defender for Endpoint API endpoint
 :---|:---|:---
 GCC | ```https://login.microsoftonline.com``` | ```https://api-gcc.securitycenter.microsoft.us```
 GCC High | ```https://login.microsoftonline.us``` | ```https://api-gov.securitycenter.microsoft.us```
+
 <br>
 
 
