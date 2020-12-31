@@ -124,6 +124,6 @@ Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg
 Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
-Integrations: Microsoft Power Automate & Azure Logic Apps | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
+Integrations: Microsoft Power Automate & Azure Logic Apps | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg)
 Integrations: Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg)
 Microsoft Threat Experts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
