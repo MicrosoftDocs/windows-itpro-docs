@@ -248,7 +248,7 @@ The following methodology was used to derive the network endpoints:
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
-|||HTTPS/HTTP|*smartscreen-prod.microsoft.com|
+|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
