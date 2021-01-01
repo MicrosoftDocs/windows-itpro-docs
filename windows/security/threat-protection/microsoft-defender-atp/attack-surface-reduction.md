@@ -245,7 +245,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following separate descriptions, depending on which application you use:
-> Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)
+- > Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
 > Endpoint Manager: Block executable content download from email and webmail clients
 > Group Policy: Block executable content from email client and webmail
 
