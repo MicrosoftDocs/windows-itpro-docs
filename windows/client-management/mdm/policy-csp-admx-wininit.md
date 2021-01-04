@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
 
 If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
 
@@ -149,7 +149,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls the use of fast startup.  
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls the use of fast startup.  
 
 If you enable this policy setting, the system requires hibernate to be enabled.
 
@@ -218,7 +218,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting configures the number of minutes the system waits for the hung logon sessions before proceeding with the system shutdown.
+Available in the latest Windows 10 Insider Preview Build. This policy setting configures the number of minutes the system waits for the hung logon sessions before proceeding with the system shutdown.
 
 If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
 
