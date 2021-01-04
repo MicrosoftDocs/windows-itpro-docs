@@ -57,7 +57,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-linux.md#network-connections) are blocked by a proxy or firewall.
 
-Failures with curl error 35 or 60, indicate certificate pinning rejection. Please check if the connection is under SSL or HTTPS inspection. If so, please whitelist MDE from such inspection.
+Failures with curl error 35 or 60, indicate certificate pinning rejection. Please check if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allow list.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 
