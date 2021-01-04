@@ -95,7 +95,6 @@ Content-type: application/json
 ```
 
 
-
 | Name | Description |
 | :--- | :---------- |
 | Org prevalence | the distinct count of devices that opened network connection to this IP. |
