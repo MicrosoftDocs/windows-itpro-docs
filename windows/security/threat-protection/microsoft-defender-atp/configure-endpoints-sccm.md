@@ -22,7 +22,6 @@ ms.date: 02/07/2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -52,7 +51,6 @@ Starting in Configuration Manager version 2002, you can onboard the following op
 - Windows Server 2019
 
 ### Onboard devices using System Center Configuration Manager
-
 
 [![Image of the PDF showing the various deployment paths](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 

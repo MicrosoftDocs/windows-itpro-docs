@@ -27,7 +27,6 @@ ms.topic: article
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 You'll need to take the following configuration steps to enable the managed security service provider (MSSP) integration.
