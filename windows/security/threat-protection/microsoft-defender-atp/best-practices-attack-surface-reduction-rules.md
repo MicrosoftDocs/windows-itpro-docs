@@ -30,13 +30,40 @@ ms.collection:
 <!--ASR guidance for deploying rules (links to Antonio’s blog, recommendations for deploying rules to small set of devices first, code signing, link to ASR Power BI template, and link to M365 security center reports) and 8.	Policy conflict (details about what happens with conflicting policies, what happens when settings from different policies are merged)
 -->
 
-Whether you're about to enable or have already deployed attack surface reduction rules for your organization, see the information in this article. By using the tips and best practices in this article, you can employ attack surface reduction rules successfully and avoid potential issues.
+The instructions to deploy attack surface reduction (ASR) rules in the most optimal way are available in [Demystifying attack surface reduction rules - Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565).
 
+It is highly recommended to test the ASR rules on a sample-like smaller set of devices. For information on the reasons for this recommendation and on how to deploy the ASR rules on a smaller set of devices, see **Use a phased approach** section, below, in this article.
+
+ > [!NOTE]
+> Whether you're about to enable or have already deployed ASR rules for your organization, see the information in this article. By using the tips and best practices in this article, you can employ attack surface reduction rules successfully and avoid potential issues.
+
+**Results of applying ASR rules**
+
+- The process of applying ASR rules on devices provides scope to query for reports. These queries can be implemented in the form of templates.
+
+<!--Denise, could you clarify as to whether the ASR PowerBI template is anything to do with the templates used to generate/retrieve reports as specified in Blog-3? In other words, does the link to PowerBI template have relevance in this section and context?
+-->
+
+- Once applying ASR rules to devices leads to querying for reports, there are a few sources from which reports can be queried. One of such sources is the [Microsoft 365 security center](https://security.microsoft.com)
+ 
+<!-- Denise, could we discuss as to why only the **Microsoft 365 security center** source is being cited here; Just for better understanding, I am putting forward this query
+-->
+- 
 ## Use a phased approach
 
-Before you roll out attack surface reduction rules in your organization, select a small set of managed devices to start. This approach enables you to see how attack surface reduction rules work in your environment and gives you flexibility in applying exclusions. You can do this with dynamic membership rules.
+Before you roll out attack surface reduction rules in your organization, select a small set of managed devices to start. 
 
-<!--Siddarth, we need to find the info about how to set up dynamic membership rules and add a procedure here.-->
+The reasons for selecting a smaller set of devices as the sample object on which the ASR rules are to be applied are:
+
+- **Better prospects for display of ASR rules impact** - This approach enables you to see how attack surface reduction rules work in your environment. When lesser number of devices are used, the impact becomes more apparent because the ASR rules can sometimes impact a particular device to a larger extent.
+- **Ease in determining ASR rule exclusion** - Testing ASR rules on a smaller device set gives you scope to implement flexibility in exclusions. The flexibility refers to the devising combinations of **applicable-not applicable**  devices for ASR rules applicability. These combinations vary depending on the results of the ASR rules testing on the smaller device set.
+
+> [!IMPORTANT]
+> You can implement the process of applying ASR rules to a smaller device set by utilizing dynamic membership rules.
+
+**How to configure dynamic membership rules**
+
+<!--Denise, we might need Jody's help in acquiring inputs for this procedural section  of setting up dynamic membership rules.-->
 
 ## Use code signing for applications
 
@@ -113,7 +140,6 @@ Attack surface reduction (ASR) rules for MEM (Microsoft Endpoint Manager)-manage
 - When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don’t conflict are added to the superset policy that applies to a device.
 
 - Only the configurations for conflicting settings are held back.
-
 
 
 ## See the demystifying blogs
