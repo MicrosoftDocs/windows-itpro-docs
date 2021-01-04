@@ -46,7 +46,7 @@ Permission type |	Permission	|	Permission display name
 Application |	Ip.Read.All |	'Read IP address profiles'
 Delegated (work or school account) | Ip.Read.All |	'Read IP address profiles'
 
->[!Note]
+>[!NOTE]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 
@@ -95,3 +95,13 @@ Content-type: application/json
     "orgLastSeen": "2017-08-29T13:32:59Z"
 }
 ```
+
+
+| Name | Description |
+| :--- | :---------- |
+| Org prevalence | the distinct count of devices that opened network connection to this IP. |
+| Org first seen | the first connection for this IP in the organization. |
+| Org last seen  | the last connection for this IP in the organization. |
+
+> [!NOTE]
+> This statistic information is based on data from the past 30 days. 
