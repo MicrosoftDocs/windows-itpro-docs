@@ -79,7 +79,7 @@ Specifies the time zone to be applied to the device. This is the standard Window
 <!--/Description-->
 <!--SupportedValues-->
 Value type is String. Supported values:
-- Name of Standard Time Zone - e.g. Pacific Standard Time, Mountain Standard Time 
+- Name of Standard Time Zone - for example, Pacific Standard Time, Mountain Standard Time. 
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -102,4 +102,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-
