@@ -33,6 +33,8 @@ Real-time protection (RTP) is a feature of Defender for Endpoint for Linux that 
 
 Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Defender for Endpoint for Linux. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint for Linux.
 
+Before starting, **please make sure that other security products are not currenly running on the device**. Multilpe security products may conflict and impact the host performance.
+
 The following steps can be used to troubleshoot and mitigate these issues:
 
 1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Defender for Endpoint for Linux is contributing to the performance issues.
@@ -48,6 +50,8 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
+
+    If the performance problem persists while real-time protection is off, the origin of the problem could the EDR component. In this case please contact customer support for further instructions and mitigation.
 
 2. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Linux.
 
