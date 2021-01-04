@@ -28,6 +28,6 @@
 
 ## [Change history for Microsoft Edge](change-history-for-microsoft-edge.md)
 
-## [Microsoft Edge Frequently Asked Questions (FAQs)](microsoft-edge-faq.md)
+## [Microsoft Edge Frequently Asked Questions (FAQ)](microsoft-edge-faq.yml)
 
 

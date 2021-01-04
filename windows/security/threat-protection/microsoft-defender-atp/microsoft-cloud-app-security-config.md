@@ -44,7 +44,7 @@ Once activated, Microsoft Defender for Endpoint will immediately start forwardin
 
 ## View the data collected
 
-To view and access Microsoft Defender for Endpoint data in Microsoft Cloud Apps Security, see [Investigate devices in Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
+To view and access Microsoft Defender for Endpoint data in Microsoft Cloud Apps Security, see [Investigate devices in Cloud App Security](https://docs.microsoft.com/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
 
 
 For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).

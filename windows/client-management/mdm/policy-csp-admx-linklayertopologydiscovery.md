@@ -77,7 +77,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting changes the operational behavior of the Mapper I/O network protocol driver.
+Available in the latest Windows 10 Insider Preview Build. This policy setting changes the operational behavior of the Mapper I/O network protocol driver.
 
 LLTDIO allows a computer to discover the topology of a network it's connected to. It also allows a computer to initiate Quality-of-Service requests such as bandwidth estimation and network health analysis.
 
@@ -148,7 +148,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting changes the operational behavior of the Responder network protocol driver.
+Available in the latest Windows 10 Insider Preview Build. This policy setting changes the operational behavior of the Responder network protocol driver.
 
 The Responder allows a computer to participate in Link Layer Topology Discovery requests so that it can be discovered and located on the network. It also allows a computer to participate in Quality-of-Service activities such as bandwidth estimation and network health analysis.
 
