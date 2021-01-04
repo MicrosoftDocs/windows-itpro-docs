@@ -264,4 +264,3 @@ The following methodology was used to derive the network endpoints:
 |Xbox Live|The following endpoints are used for Xbox Live.|
 |||TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
-|
