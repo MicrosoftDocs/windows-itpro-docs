@@ -78,7 +78,8 @@ Specifies the time zone to be applied to the device. This is the standard Window
 
 <!--/Description-->
 <!--SupportedValues-->
-
+Value type is String. Supported values:
+- Name of Standard Time Zone - e.g. Pacific Standard Time, Mountain Standard Time 
 <!--/SupportedValues-->
 <!--Example-->
 
