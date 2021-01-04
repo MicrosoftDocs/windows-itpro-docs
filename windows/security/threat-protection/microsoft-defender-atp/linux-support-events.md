@@ -85,7 +85,7 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
 
 ## Missing file events
 
-File events are collected with `fanotify` framework. In case some or all file events are missing please make sure fanotify is enabled on the device and that the file system is [supported](microsoft-defender-atp-linux#system-requirements).
+File events are collected with `fanotify` framework. In case some or all file events are missing please make sure fanotify is enabled on the device and that the file system is [supported](microsoft-defender-atp-linux.md#system-requirements).
 
 List the filesystems on the machine with:
 
