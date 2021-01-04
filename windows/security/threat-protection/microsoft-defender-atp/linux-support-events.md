@@ -29,12 +29,12 @@ ms.topic: conceptual
 
 This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.
 
-Once MDE had been installed properly on a device, a device page will be generated in the portal and _File_, _Process_, _Network_ and other events should appear in the timeline and advanced hunting pages.
+Once Microsoft Defender for Endpoint has been installed properly on a device, a device page will be generated in the portal and _File_, _Process_, _Network_ and other events should appear in the timeline and advanced hunting pages.
 In case events are not appearing or some types of events are missing, that could indicate some problem.
 
 ## Missing network and login events
 
-MDE utilized `audit` framework from linux to track network and login activity.
+Microsoft Defender for Endpoint utilized `audit` framework from linux to track network and login activity.
 
 1. Make sure audit framework is working.
 
@@ -75,7 +75,7 @@ MDE utilized `audit` framework from linux to track network and login activity.
     sudo auditctl -l
     ```
 
-    if the following line is present, please remove it or edit it to enable MDE to track specific SYSCALLs.
+    if the following line is present, please remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.
 
     ```output
     -a task, never
