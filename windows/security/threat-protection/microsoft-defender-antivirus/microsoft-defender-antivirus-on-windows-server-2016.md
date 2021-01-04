@@ -34,19 +34,13 @@ While the functionality, configuration, and management are largely the same for 
 
 The process of setting up and running Microsoft Defender Antivirus on a server platform includes several steps:
 
-1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
-
-2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019)
-
-2. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running)
-
-3. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence)
-
-4. (As needed) [Submit samples](#submit-samples)
-
-5. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions)
-
-6. (Only if necessary) [Set Microsoft Defender Antivirus to passive mode](#need-to-uninstall-microsoft-defender-antivirus)
+1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019).
+2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019).
+3. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running).
+4. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence).
+5. (As needed) [Submit samples](#submit-samples).
+6. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions).
+7. (Only if necessary) [Set Microsoft Defender Antivirus to passive mode](#need-to-set-microsoft-defender-antivirus-to-passive-mode).
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
