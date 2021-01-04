@@ -26,6 +26,10 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves a collection of [Investigations](investigation.md).
@@ -55,7 +59,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 ## HTTP request
 ```
-GET https://api.securitycenter.windows.com/api/investigations
+GET https://api.securitycenter.microsoft.com/api/investigations
 ```
 
 ## Request headers
@@ -72,30 +76,25 @@ Empty
 If successful, this method returns 200, Ok response code with a collection of [Investigations](investigation.md) entities.
 
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ## Example
 
 **Request**
 
 Here is an example of a request to get all investigations: 
 
-
 ```
-GET https://api.securitycenter.windows.com/api/investigations
+GET https://api.securitycenter.microsoft.com/api/investigations
 ```
 
 **Response**
 
 Here is an example of the response:
 
-
 ```
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Investigations",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Investigations",
     "value": [
         {
             "id": "63017",

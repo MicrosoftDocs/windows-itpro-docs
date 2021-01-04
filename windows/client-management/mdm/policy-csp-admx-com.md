@@ -78,7 +78,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
+Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
 Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
 
@@ -153,7 +153,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
+Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
 Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
 

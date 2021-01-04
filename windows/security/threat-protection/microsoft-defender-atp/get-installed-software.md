@@ -26,6 +26,11 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a collection of installed software related to a given device ID.
@@ -64,7 +69,7 @@ If successful, this method returns 200 OK with the installed software informatio
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/software
+GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/software
 ```
 
 **Response**
@@ -74,7 +79,7 @@ Here is an example of the response.
 
 ```
 {
-"@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Software",
+"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software",
 "value": [
         {
 "id": "microsoft-_-internet_explorer",
