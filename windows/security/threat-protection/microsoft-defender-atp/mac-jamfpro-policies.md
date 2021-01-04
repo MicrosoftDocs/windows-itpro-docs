@@ -750,7 +750,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     ![Image of configuration settings](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
-4. Select your computer and click the gear icon on the top, select **Computer Management**
+4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
     ![Image of configuration settings](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
@@ -847,7 +847,6 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     ![Image of configuration settings](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![Image of configuration settings](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
 
 
 
