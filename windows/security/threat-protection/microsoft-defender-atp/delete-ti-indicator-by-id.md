@@ -51,7 +51,6 @@ Delete https://api.securitycenter.windows.com/api/indicators/{id}
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## Request headers
 
 Name | Type | Description
