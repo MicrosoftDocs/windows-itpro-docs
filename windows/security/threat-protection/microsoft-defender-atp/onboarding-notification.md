@@ -22,8 +22,14 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
 
@@ -56,7 +62,7 @@ You'll need to have access to:
 5. Enter the following HTTP fields:
 
    - Method: "GET" as a value to get the list of devices.
-   - URI: Enter `https://api.securitycenter.windows.com/api/machines`.
+   - URI: Enter `https://api.securitycenter.microsoft.com/api/machines`.
    - Authentication: Select "Active Directory OAuth".
    - Tenant: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
    - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`

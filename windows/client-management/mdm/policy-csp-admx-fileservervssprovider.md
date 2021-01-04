@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled.
 
 VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares.
 
