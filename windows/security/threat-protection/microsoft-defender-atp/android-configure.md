@@ -28,6 +28,8 @@ ms.topic: conceptual
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
 ## Conditional Access with Defender for Endpoint for Android  
 Microsoft Defender for Endpoint for Android along with Microsoft Intune and Azure Active
 Directory enables enforcing Device compliance and Conditional Access policies
