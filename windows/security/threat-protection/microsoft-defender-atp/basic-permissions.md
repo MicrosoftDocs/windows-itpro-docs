@@ -47,7 +47,7 @@ You can assign users with one of the following levels of permissions:
     > [!NOTE]
     > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Azure Active Directory. For more information, see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
+- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0).
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.
