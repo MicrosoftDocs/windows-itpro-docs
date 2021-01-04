@@ -101,5 +101,5 @@ Content-type: application/json
 | Org first seen | the first connection for this IP in the organization. |
 | Org last seen  | the last connection for this IP in the organization. |
 
-> [!Note]
+> [!NOTE]
 > This statistic information is based on data from the past 30 days. 
