@@ -25,11 +25,6 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Defender for Endpoint with.
