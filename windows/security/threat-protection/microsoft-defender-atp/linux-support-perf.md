@@ -51,7 +51,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
 
-    If the performance problem persists while real-time protection is off, the origin of the problem could the EDR component. In this case please contact customer support for further instructions and mitigation.
+    If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case please contact customer support for further instructions and mitigation.
 
 2. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Linux.
 
