@@ -46,7 +46,8 @@ See [Use Intune to remediate vulnerabilities identified by Microsoft Defender fo
 
 2. Select a security recommendation you would like to request remediation for, and then select **Remediation options**.
 
-3. Fill out the form, including what you are requesting remediation for, priority, due date, and optional notes. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
+3. Fill out the form, including what you are requesting remediation for, applicable device groups, priority, due date, and optional notes.
+    1. If you choose the "attention required" remediation option, selecting a due date will not be available since there is no specific action.
 
 4. Select **Submit request**. Submitting a remediation request creates a remediation activity item within threat and vulnerability management, which can be used for monitoring the remediation progress for this recommendation. This will not trigger a remediation or apply any changes to devices.
 

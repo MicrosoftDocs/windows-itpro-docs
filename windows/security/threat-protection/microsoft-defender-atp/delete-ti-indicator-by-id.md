@@ -24,7 +24,11 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)
 
 
 ## API description
@@ -46,11 +50,8 @@ Application |	Ti.ReadWrite.All |	'Read and write Indicators'
 
 ## HTTP request
 ```
-Delete https://api.securitycenter.windows.com/api/indicators/{id}
+Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## Request headers
 
@@ -73,5 +74,5 @@ If Indicator with the specified id was not found - 404 Not Found.
 Here is an example of the request.
 
 ```
-DELETE https://api.securitycenter.windows.com/api/indicators/995
+DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```

@@ -8,7 +8,7 @@
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](microsoft-defender-atp/use.md)
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
-### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/gov.md)
+### [Microsoft Defender for Endpoint for US Government customers](microsoft-defender-atp/gov.md)
 ### [Microsoft Defender ATP for non-Windows platforms](microsoft-defender-atp/non-windows.md)
 
 ## [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
@@ -185,9 +185,7 @@
 ###### [Report on antivirus protection]()
 ###### [Review protection status and alerts](microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus.md)
 ###### [Troubleshoot antivirus reporting in Update Compliance](microsoft-defender-antivirus/troubleshoot-reporting.md)
-   
-###### [Manage updates and apply baselines]()
-###### [Learn about the different kinds of updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
+###### [Learn about the recent updates](microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)
 ###### [Manage protection and security intelligence updates](microsoft-defender-antivirus/manage-protection-updates-microsoft-defender-antivirus.md)
 ###### [Manage when protection updates should be downloaded and applied](microsoft-defender-antivirus/manage-protection-update-schedule-microsoft-defender-antivirus.md)
 ###### [Manage updates for endpoints that are out of date](microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus.md)
