@@ -165,6 +165,10 @@
 
 ## [Troubleshooting]()
 ### [Troubleshooting UWP app connectivity issues in Windows Firewall](troubleshooting-uwp-firewall.md)
+### [Filter origin audit log improvements](filter-origin-documentation.md)
+### [Quarantine behavior](quarantine.md)
+### [Firewall settings lost on upgrade](firewall-settings-lost-on-upgrade.md)
+
 
 
 

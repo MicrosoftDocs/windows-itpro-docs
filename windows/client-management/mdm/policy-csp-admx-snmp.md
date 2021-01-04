@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting configures a list of the communities defined to the Simple Network Management Protocol (SNMP) service.
+Available in the latest Windows 10 Insider Preview Build. This policy setting configures a list of the communities defined to the Simple Network Management Protocol (SNMP) service.
 
 SNMP is a protocol designed to give a user the capability to remotely manage a computer network, by polling and setting terminal values and monitoring network events.
 
@@ -161,7 +161,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the permitted list of hosts that can submit a query to the Simple Network Management (SNMP) agent running on the client computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the permitted list of hosts that can submit a query to the Simple Network Management (SNMP) agent running on the client computer.
 
 Simple Network Management Protocol is a protocol designed to give a user the capability to remotely manage a computer network by polling and setting terminal values and monitoring network events.
 
@@ -241,7 +241,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows trap configuration for the Simple Network Management Protocol (SNMP) agent.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows trap configuration for the Simple Network Management Protocol (SNMP) agent.
 
 Simple Network Management Protocol is a protocol designed to give a user the capability to remotely manage a computer network by polling and setting terminal values and monitoring network events.
 

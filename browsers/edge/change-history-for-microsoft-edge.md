@@ -60,7 +60,7 @@ We have discontinued the **Configure Favorites** group policy, so use the [Provi
 
 |New or changed topic | Description |
 |---------------------|-------------|
-|[Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros](microsoft-edge-faq.md) | New |
+|[Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros](microsoft-edge-faq.yml) | New |
 
 ## February 2017
 
