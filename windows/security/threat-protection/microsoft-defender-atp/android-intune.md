@@ -29,7 +29,7 @@ ms.topic: conceptual
 
 - [Defender for Endpoint](microsoft-defender-atp-android.md)
 
-This topic describes deploying Defender for Endpoint for Android on Intune
+Learn how to deploy Defender for Endpoint for Android on Intune
 Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
 device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
 
@@ -44,13 +44,13 @@ device](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-co
 **Deploy Defender for Endpoint for Android on Intune Company Portal - Device
 Administrator enrolled devices**
 
-This topic describes how to deploy Defender for Endpoint for Android on Intune Company Portal - Device Administrator enrolled devices. 
+Learn how to deploy Defender for Endpoint for Android on Intune Company Portal - Device Administrator enrolled devices. 
 
 ### Add as Android store app
 
 1. In [Microsoft Endpoint Manager admin
 center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
-**Android Apps** \> **Add \> Android store app** and click **Select**.
+**Android Apps** \> **Add \> Android store app** and choose **Select**.
 
     ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addandroidstoreapp.png)
 
@@ -60,13 +60,13 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
    - **Name** 
    - **Description**
    - **Publisher** as Microsoft.
-   - **Appstore URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play Store URL) 
+   - **App store URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play Store URL) 
 
    Other fields are optional. Select **Next**.
 
    ![Image of Microsoft Endpoint Manager Admin Center](images/mda-addappinfo.png)
 
-3. In the *Assignments* section, go to the **Required** section and select **Add group.** You can then choose the user group(s) that you would like to target Defender for Endpoint for Android app. Click **Select** and then **Next**.
+3. In the *Assignments* section, go to the **Required** section and select **Add group.** You can then choose the user group(s) that you would like to target Defender for Endpoint for Android app. Choose **Select** and then **Next**.
 
     >[!NOTE]
     >The selected user group should consist of Intune enrolled users.
@@ -111,7 +111,7 @@ Defender for Endpoint for Android supports Android Enterprise enrolled devices.
 For more information on the enrollment options supported by Intune, see 
 [Enrollment Options](https://docs.microsoft.com/mem/intune/enrollment/android-enroll).
 
-**Currently, Personally-owned devices with work profile and Corporate-owned fully managed user device enrollments are supported for deployment.**
+**Currently, Personally owned devices with work profile and Corporate-owned fully managed user device enrollments are supported for deployment.**
 
 
 
@@ -141,7 +141,7 @@ select **Approve**.
     > ![A screenshot of a Managed Google Play](images/07e6d4119f265037e3b80a20a73b856f.png)
 
 
-4. You should now be presented with the permissions that Defender for Endpoint
+4. You'll be presented with the permissions that Defender for Endpoint
 obtains for it to work. Review them and then select **Approve**.
 
     ![A screenshot of Defender for Endpoint preview app approval](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
@@ -218,7 +218,7 @@ Defender ATP should be visible in the apps list.
 
      1. In the **Review + Create** page that comes up next, review all the information and then select **Create**. <br>
     
-        The app configuration policy for Defender for Endpoint auto-granting the storage permission is now assigned to the selected user group.
+        The app configuration policy for Defender for Endpoint autogranting the storage permission is now assigned to the selected user group.
 
         > [!div class="mx-imgBorder"]
         > ![Image of create app configuration policy](images/android-review-create.png)
@@ -244,11 +244,11 @@ above. Then select **Review + Save** and then **Save** again to commence
 assignment.
 
 ### Auto Setup of Always-on VPN 
-Defender for Endpoint supports Device configuration policies for managed devices via Intune. This capability can be leveraged to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user does not need to setup VPN service while onboarding.
-1.	On **Devices** Page go to **Configuration Profiles** > **Create Profile** > **Platform** > **Android Enterprise**
+Defender for Endpoint supports Device configuration policies for managed devices via Intune. This capability can be leveraged to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user does not need to set up VPN service while onboarding.
+1.	On **Devices**, select **Configuration Profiles** > **Create Profile** > **Platform** > **Android Enterprise**
 Select **Device restrictions** under one of the following, based on your device enrollment type 
 - **Fully Managed, Dedicated, and Corporate-Owned Work Profile**
-- **Personally-Owned Work Profile**
+- **Personally owned Work Profile**
 
 Select **Create**.
  
@@ -292,7 +292,7 @@ displayed here.
     > ![Image of device installation status](images/900c0197aa59f9b7abd762ab2b32e80c.png)
 
 
-2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally-owned devices with work profile**.  If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
+2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally owned devices with work profile**.  If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
 
     ![Image of app in mobile device](images/c2e647fc8fa31c4f2349c76f2497bc0e.png)
 

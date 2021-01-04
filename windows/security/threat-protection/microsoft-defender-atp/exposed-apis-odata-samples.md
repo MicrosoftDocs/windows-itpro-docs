@@ -21,12 +21,16 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
@@ -152,14 +156,14 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 Get all the alerts last updated after 2019-11-22 00:00:00
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
+HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
     "value": [
         {
             "id": "da637308392288907382_-880718168",
@@ -208,14 +212,14 @@ HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTi
 Get all the devices with 'High' 'RiskScore'
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+eq+'High'
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -247,14 +251,14 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+
 Get top 100 devices with 'HealthStatus' not equals to 'Active'
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -286,14 +290,14 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStat
 Get all the devices that last seen after 2018-10-20
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -325,14 +329,14 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen g
 Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
+HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
 **Response:**
 
 ```json
 json{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions",
     "value": [
         {
             "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
@@ -357,7 +361,7 @@ json{
 Get the count of open alerts for a specific device:
 
 ```http
-HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
 **Response:**

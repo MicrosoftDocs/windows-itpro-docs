@@ -78,7 +78,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
 
 If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
 
@@ -151,7 +151,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
 
 If you enable this policy setting, ECC curves are prioritized in the order specified. Enter one curve name per line.
 

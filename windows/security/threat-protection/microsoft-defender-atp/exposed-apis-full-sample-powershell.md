@@ -26,6 +26,12 @@ ms.date: 09/24/2018
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Full scenario using multiple APIs from Microsoft Defender for Endpoint.
@@ -65,7 +71,7 @@ $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret 
 $suspiciousUrl = 'www.suspiciousUrl.com' # Paste your own URL here
 
 $resourceAppIdUri = 'https://securitycenter.onmicrosoft.com/windowsatpservice'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -77,7 +83,7 @@ $aadToken = $authResponse.access_token
 
 
 #Get latest alert
-$alertUrl = "https://api.securitycenter.windows.com/api/alerts?`$top=10"
+$alertUrl = "https://api.securitycenter.microsoft.com/api/alerts?`$top=10"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'
@@ -110,7 +116,7 @@ $query = "NetworkCommunicationEvents
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
 
-$queryUrl = "https://api.securitycenter.windows.com/api/advancedqueries/run"
+$queryUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 
 $queryBody = ConvertTo-Json -InputObject @{ 'Query' = $query }
 $queryResponse = Invoke-WebRequest -Method Post -Uri $queryUrl -Headers $headers -Body $queryBody -ErrorAction Stop
