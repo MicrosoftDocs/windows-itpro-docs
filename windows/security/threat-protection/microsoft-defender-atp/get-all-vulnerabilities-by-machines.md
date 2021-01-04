@@ -24,6 +24,9 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
 Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).
 - If the vulnerability has a fixing KB, it will appear in the response.
 - Supports [OData V4 queries](https://www.odata.org/documentation/).
