@@ -356,7 +356,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 8. Click **Close** after the configuration completes.
 
 #### Configure Certificate Templates on NDES
-A single NDES server can request a maximum of three certificate template.  The NDES server determines which certificate to issue based on the incoming certificate request that is assigned in the Microsoft Intune SCEP certificate profile.  The Microsoft Intune SCEP certificate profile has three values.
+A single NDES server can request a maximum of three certificate templates.  The NDES server determines which certificate to issue based on the incoming certificate request that is assigned in the Microsoft Intune SCEP certificate profile.  The Microsoft Intune SCEP certificate profile has three values.
 * Digital Signature
 * Key Encipherment
 * Key Encipherment, Digital Signature
