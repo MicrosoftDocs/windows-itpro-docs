@@ -48,7 +48,28 @@ It is highly recommended to test the ASR rules on a sample-like smaller set of d
  
 <!-- Denise, could we discuss as to why only the **Microsoft 365 security center** source is being cited here; Just for better understanding, I am putting forward this query
 -->
-- 
+
+**Applicable to rules' states**
+
+This section describes the best practices with regard to the states which any ASR rule can be set to, irrespective of the method used to configure or deploy the ASR rule.
+
+Prior to describing the best pratices for the ASR rules' states, it is important to know the states which an ASR rule can be set to:
+
+- **Not configured**: This is the state in which the ASR rule has been disabled. The code for this state is 0.
+- **Block**: This is the state in which the ASR rule is enabled. YThe code for this state is 1.
+- **Audit**: This is the state in which the ASR rule is evaluated about its impactive behavior toward the organization or environment in which it is deployed.
+
+**Recommendation**
+
+The recommended practice for a deployed ASR rule is to start it in **audit** mode. The reasons for recommendation of this best pratice are:
+
+1. **Access to logs and reviews**: When an ASR rule is set to **audit** mode, you can get access to the logs and reviews pertaining to it. These logs and reviews are data that helps you to analyze the impact of the ASR rule.
+2. **Rule-related decision**: The analysis findings guided by the logs and reviews help you take a decision whether to deploy or exclude the ASR rule or not. For information on ASR rule exclusion see
+<!--To cite here the topic that describes guidance provided for the process of implementing ASR rules' exclusions-->
+<!--To cite here the topic that describes guidance provided for the process of deploying or configuring ASR rules-->
+
+<!--Denise, if we can seek information about the common built-in features across all the 5 configuration mechanisms, we can specify the best practice regarding which is the best configuration mechanism to use to deploy the ASR rules-->
+
 ## Use a phased approach
 
 Before you roll out attack surface reduction rules in your organization, select a small set of managed devices to start. 
