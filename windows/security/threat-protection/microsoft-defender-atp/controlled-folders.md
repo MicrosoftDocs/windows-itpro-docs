@@ -65,6 +65,7 @@ Windows system folders are protected by default, along with several other folder
 - `c:\Users\<username>\Pictures`
 - `c:\Users\Public\Pictures`
 - `c:\Users\Public\Videos`
+- `c:\Users\<username>\Videos`
 - `c:\Users\<username>\Music`
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
