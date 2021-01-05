@@ -52,7 +52,7 @@ Note: [Application Guard for Office](https://support.office.com/article/applicat
 
 ### Windows Setup
 
-Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language ](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
+Windows Setup [answer files](https://docs.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language handling](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
 
 Improvements in Windows Setup with this release also include:
 - Reduced offline time during feature updates
