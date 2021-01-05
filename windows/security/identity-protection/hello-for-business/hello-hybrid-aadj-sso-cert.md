@@ -66,7 +66,7 @@ Successful authentication to on-premises resources using a certificate requires 
 
 Most environments change the user principal name suffix to match the organization's external domain name (or vanity domain), which prevents the user principal name as a hint to locate a domain controller.  Therefore, the certificate needs the user's on-premises distinguished name in the subject to properly locate a domain controller.
 
-To include the on-premises distinguished name in the certificate's subject, Azure AD Connect must replicate the Active Directory **distinguishedName** attribute to the Azure Active Directory **onPremisesDistinguishedName** attribute.  Azure AD Connect version 1.1.819 includes the proper synchronization rules need to for these attributes.
+To include the on-premises distinguished name in the certificate's subject, Azure AD Connect must replicate the Active Directory **distinguishedName** attribute to the Azure Active Directory **onPremisesDistinguishedName** attribute.  Azure AD Connect version 1.1.819 includes the proper synchronization rules needed for these attributes.
 
 ### Verify AAD Connect version
 Sign-in to computer running Azure AD Connect with access equivalent to _local administrator_.
