@@ -78,7 +78,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
+Available in the latest Windows 10 Insider Preview Build. This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
 
 If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
 
@@ -151,7 +151,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
 
 If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
 
