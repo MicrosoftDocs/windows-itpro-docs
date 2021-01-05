@@ -293,7 +293,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 4. Close the management console.
 
 #### Register a Service Principal Name on the NDES Service account
-Sign-in the NDES server with a access equivalent to _Domain Admins_.
+Sign-in the NDES server with access equivalent to _Domain Admins_.
 
 1. Open an elevated command prompt.
 2. Type the following command to register the service principal name
