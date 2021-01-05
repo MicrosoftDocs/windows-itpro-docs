@@ -139,7 +139,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 11. Close the **Group Policy Management Editor**.
 
 ### Configure security for the NDES Service User Rights Group Policy object
-The best way to deploy the **NDES Service User Rights** Group Policy object is to use security group filtering. This enables you to easily manage the computers that  receive the Group Policy settings by adding them to a group.
+The best way to deploy the **NDES Service User Rights** Group Policy object is to use security group filtering. This enables you to easily manage the computers that receive the Group Policy settings by adding them to a group.
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
