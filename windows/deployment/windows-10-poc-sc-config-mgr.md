@@ -283,7 +283,7 @@ This section contains several procedures to support Zero Touch installation with
 3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
 4. Click the yellow starburst and then click **New Account**.
 5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
-6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
+6. Next to **Password** and **Confirm Password**, type **pass\@word1**, and then click **OK** twice.
 
 ### Configure a boundary group
 
