@@ -23,6 +23,8 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 Logo |Partner name   | Description 
 :---|:---|:---
 ![Image of BDO Digital logo](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense leverages best practice tools, AI, and in-house security experts for 24/7/365 identity protection
