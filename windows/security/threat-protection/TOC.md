@@ -302,6 +302,7 @@
 ##### [Troubleshoot installation issues](microsoft-defender-atp/linux-support-install.md)
 ##### [Troubleshoot cloud connectivity issues](microsoft-defender-atp/linux-support-connectivity.md)
 ##### [Troubleshoot performance issues](microsoft-defender-atp/linux-support-perf.md)
+##### [Troubleshoot missing events issues](microsoft-defender-atp/linux-support-events.md)
 
 
 #### [Privacy](microsoft-defender-atp/linux-privacy.md)
