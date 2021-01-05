@@ -154,7 +154,7 @@ Attack surface reduction (ASR) rules for MEM (Microsoft Endpoint Manager)-manage
 - ASR rules from the following profiles are evaluated for each device the rules apply to:  
     - Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > [Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction).
     - Endpoint security > Attack surface reduction policy > Attack surface reduction rules.
-    - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > Attack Surface Reduction Rules.
+    - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > Profiles >  Profile Name > Properties > Configuration settings > Attack Surface Reduction Rules
 
 - Settings that do not have conflicts are added to a superset of policy for the device.
 
