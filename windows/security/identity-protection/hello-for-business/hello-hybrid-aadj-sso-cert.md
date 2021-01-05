@@ -580,7 +580,7 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
    ![Intune Connector Install 06](images/aadjcert/intunecertconnectorinstall-06.png)
 
    > [!NOTE]
-   > You can review the results of the install using the **SetupMsi.log** file located in the **C:\\NDESConnectorSetupMsi** folder
+   > You can review the results of the install using the **SetupMsi.log** file located in the **C:\\NDESConnectorSetupMsi** folder.
 
 10. When the installation completes, select **Launch Intune Connector** and click Finish. Proceed to the Configure the Intune Certificate Connector task.
     ![Intune Connector install 07](images/aadjcert/intunecertconnectorinstall-07.png)
