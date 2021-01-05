@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/17/2020
-ms.reviewer: pahuijbr
+ms.date: 01/04/2021
+ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ---
 
@@ -34,19 +34,13 @@ While the functionality, configuration, and management are largely the same for 
 
 The process of setting up and running Microsoft Defender Antivirus on a server platform includes several steps:
 
-1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019)
-
-2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019)
-
-2. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running)
-
-3. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence)
-
-4. (As needed) [Submit samples](#submit-samples)
-
-5. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions)
-
-6. (Only if necessary) [Uninstall Microsoft Defender Antivirus](#need-to-uninstall-microsoft-defender-antivirus)
+1. [Enable the interface](#enable-the-user-interface-on-windows-server-2016-or-2019).
+2. [Install Microsoft Defender Antivirus](#install-microsoft-defender-antivirus-on-windows-server-2016-or-2019).
+3. [Verify Microsoft Defender Antivirus is running](#verify-microsoft-defender-antivirus-is-running).
+4. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence).
+5. (As needed) [Submit samples](#submit-samples).
+6. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions).
+7. (Only if necessary) [Set Microsoft Defender Antivirus to passive mode](#need-to-set-microsoft-defender-antivirus-to-passive-mode).
 
 ## Enable the user interface on Windows Server 2016 or 2019
 
@@ -171,11 +165,11 @@ To help ensure security and performance, certain exclusions are automatically ad
 
 See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md). 
 
-## Need to uninstall Microsoft Defender Antivirus?
+## Need to set Microsoft Defender Antivirus to passive mode?
 
-If you are using a non-Microsoft antivirus product as your primary antivirus solution, you can either disable Microsoft Defender Antivirus, or set it to passive mode, as described in the following procedures. 
+If you are using a non-Microsoft antivirus product as your primary antivirus solution, set Microsoft Defender Antivirus to passive mode.  
 
-### Set Microsoft Defender Antivirus to passive mode
+### Set Microsoft Defender Antivirus to passive mode using a registry key
 
 If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -192,17 +186,6 @@ If you are using Windows Server, version 1803 or Windows Server 2019, you can se
     If you clear **Windows Defender** by itself under the **Windows Defender Features** section, you will be prompted to remove the interface option **GUI for Windows Defender**. 
     
     Microsoft Defender Antivirus will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
-
-### Disable Microsoft Defender Antivirus using PowerShell
-
->[!NOTE]
->You can't uninstall the Windows Security app, but you can disable the interface with these instructions.
-
-The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windows Server 2016 or 2019:
-
-```PowerShell
-Uninstall-WindowsFeature -Name Windows-Defender
-```
 
 ### Turn off the Microsoft Defender Antivirus user interface using PowerShell
 
