@@ -621,7 +621,7 @@ Sign-in the certificate authority used by the NDES Connector with access equival
 Sign-in the NDES server with access equivalent to _domain administrator_.
 
 1. Open the **NDES Connector** user interface (**\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**).
-2. Click the **Advanced** tab.  Select **Specify a different account username and password**.  TYpe the NDES service account username and password.  Click **Apply**.  Click **OK** to close the confirmation dialog box.  Click **Close**.
+2. Click the **Advanced** tab.  Select **Specify a different account username and password**.  Type the NDES service account username and password.  Click **Apply**.  Click **OK** to close the confirmation dialog box.  Click **Close**.
    ![Intune Connector cert revocation configuration 04](images/aadjcert/intunecertconnectorconfig-04.png)
 3. Restart the **Intune Connector Service** and the **World Wide Web Publishing Service**.
 
