@@ -286,7 +286,8 @@ foreach( $element in $resultElements )
 Remove-Item -Path $diagnosticArchiveTempUnzippedPath -Force -Recurse
 ```
 That example script produces a set of files similar to the following, which can be a useful view for an administrator interactively browsing the results without needing to navigate any sub-folders or refer to `results.xml` repeatedly. 
-```
+
+```powershell
 PS C:\> dir C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z.zip_formatted | format-table Length,Name
 
   Length Name
