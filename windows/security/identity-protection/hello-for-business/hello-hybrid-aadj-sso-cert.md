@@ -446,7 +446,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
    ![Azure NDES Application Proxy Configuration](images/aadjcert/azureconsole-appproxyconfig.png)
 8. Select **Passthrough** from the **Pre Authentication** list.
 9. Select **NDES WHFB Connectors** from the **Connector Group** list.
-10. Under **Additional Settings**, select **Default** from **Backend Application Timeout**.  Under the **Translate URLLs In** section, select **Yes** next to **Headers** and select **No** next to **Application Body**.
+10. Under **Additional Settings**, select **Default** from **Backend Application Timeout**.  Under the **Translate URLs In** section, select **Yes** next to **Headers** and select **No** next to **Application Body**.
 11. Click **Add**.
 12. Sign-out of the Azure Portal.
 
