@@ -640,7 +640,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
    https://[fqdnHostName]/certsrv/mscep/mscep.dll
    ```
    where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
-   A web page showing a 403 error (similar to the following) should appear in your web browser.  If you do not see similar page, or you get a **503 Service unavailable**, ensure the NDES Service account as the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
+   A web page showing a 403 error (similar to the following) should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
    ![NDES web site test after Intune Certificate Connector](images/aadjcert/ndes-https-website-test-after-intune-connector.png)
 6. Using **Server Manager**, enable **Internet Explorer Enhanced Security Configuration**.
 
