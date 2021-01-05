@@ -40,6 +40,7 @@ Each of the template policies has a unique set of policy allow list rules that w
 
 *Italized content denotes the changes in the current policy with respect to the policy prior.*
 
+More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example WDAC base policies article](example-wdac-base-policies.md). 
 
 ![Selecting a base template for the policy](images/wdac-wizard-template-selection.png)
 
@@ -51,7 +52,7 @@ Upon page launch, policy rules will be automatically enabled/disabled depending 
 
 ### Policy Rules Description
 
-A description of each policy rule, beginning with the left-most column, is provided below. 
+A description of each policy rule, beginning with the left-most column, is provided below. The [Policy rules article](select-types-of-rules-to-create.md#windows-defender-application-control-policy-rules) provides a full description of each policy rule. 
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -66,6 +67,8 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
+![Rule options UI for Windows Allowed mode policy](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
+
 ### Advanced Policy Rules Description
 
 Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules. A description of each policy rule is provided below. 
@@ -79,16 +82,14 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 | **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| 
 | **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. |
 
-
 ![Rule options UI for Windows Allowed mode](images/wdac-wizard-rule-options-UI.png)
-
 
 > [!NOTE]
 > We recommend that you **enable Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
 
 ## Creating custom file rules
 
-File rules in an application control policy will specify the level at which applications will be identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting the **+ Custom Rules** will open the custom file rule conditions panel to create custom file rules for your policy. The Wizard supports four types of file rules: 
+[File rules](select-types-of-rules-to-create.md#windows-defender-application-control-file-rule-levels) in an application control policy will specify the level at which applications will be identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting the **+ Custom Rules** will open the custom file rule conditions panel to create custom file rules for your policy. The Wizard supports four types of file rules: 
 
 ### Publisher Rules
 
