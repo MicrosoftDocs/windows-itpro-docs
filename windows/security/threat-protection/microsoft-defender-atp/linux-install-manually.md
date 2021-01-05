@@ -145,6 +145,11 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+    For example, if you chose *insiders-fast* channel:
+    
+    ```bash
+    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
+    ```   
 
 - Install the `gpg` package if not already installed:
 

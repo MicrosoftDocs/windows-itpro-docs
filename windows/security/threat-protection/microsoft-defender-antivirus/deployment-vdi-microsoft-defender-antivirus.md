@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/18/2020
+ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ---
@@ -84,11 +84,10 @@ See the [Download and unpackage](#download-and-unpackage-the-latest-updates) sec
 Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
 
 ```PowerShell
-$vdmpathbase = 'c:\wdav-update\{00000000-0000-0000-0000-'
+$vdmpathbase = "$env:systemdrive\wdav-update\{00000000-0000-0000-0000-"
 $vdmpathtime = Get-Date -format "yMMddHHmmss"
 $vdmpath = $vdmpathbase + $vdmpathtime + '}'
 $vdmpackage = $vdmpath + '\mpam-fe.exe'
-$args = @("/x")
 
 New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 

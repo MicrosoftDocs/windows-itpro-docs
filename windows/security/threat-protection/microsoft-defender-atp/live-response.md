@@ -294,6 +294,7 @@ Each command is tracked with full details such as:
 
 - Live response sessions are limited to 10 live response sessions at a time.
 - Large-scale command execution is not supported.
+- Live response session inactive timeout value is 5 minutes. 
 - A user can only initiate one session at a time.
 - A device can only be in one session at a time.
 - The following file size limits apply:

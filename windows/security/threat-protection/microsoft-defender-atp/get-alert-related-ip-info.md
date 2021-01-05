@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves all IPs related to a specific alert.
@@ -73,10 +77,8 @@ If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not F
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/alerts/636688558380765161_2136280442/ips
+GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips
 ```
 
 **Response**
@@ -88,7 +90,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/$metadata#Ips",    
+    "@odata.context": "https://api.securitycenter.microsoft.com/$metadata#Ips",    
 	"value": [
 				{
 					"id": "104.80.104.128"
