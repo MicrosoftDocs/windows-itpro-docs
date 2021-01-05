@@ -94,6 +94,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
    ![Image of stop and quarantine file modal window](images/atp-stop-quarantine.png)
 
    The Action center shows the submission information:
+   
    ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
    - **Submission time** - Shows when the action was submitted.
@@ -118,13 +119,13 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 1. Open an elevated command–line prompt on the device:
 
-   a. Go to **Start** and type _cmd_.
+   1. Go to **Start** and type _cmd_.
 
-   b. Right–click **Command prompt** and select **Run as administrator**.
+   1. Right–click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
-   ```Powershell
+   ```powershell
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
@@ -273,11 +274,14 @@ The details provided can help you investigate if there are indications of a pote
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
 1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
+
 1. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
+
 1. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
+
 1. If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-    ```Powershell
+    ```powershell
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -287,6 +291,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
     ```
 
 1. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
+
 1. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Related topics
