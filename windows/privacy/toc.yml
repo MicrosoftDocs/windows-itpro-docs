@@ -41,6 +41,8 @@
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
         - name: Manage connections from Windows operating system components to Microsoft services using MDM
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md
+        - name: Connection endpoints for Windows 10, version 20H2
+          href: manage-windows-20H2-endpoints.md
         - name: Connection endpoints for Windows 10, version 2004
           href: manage-windows-2004-endpoints.md
         - name: Connection endpoints for Windows 10, version 1909
@@ -53,6 +55,8 @@
           href: manage-windows-1803-endpoints.md
         - name: Connection endpoints for Windows 10, version 1709
           href: manage-windows-1709-endpoints.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 20H2
+          href: windows-endpoints-20H2-non-enterprise-editions.md
         - name: Connection endpoints for non-Enterprise editions of Windows 10, version 2004
           href: windows-endpoints-2004-non-enterprise-editions.md
         - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1909

@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from changing their Windows password on demand.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from changing their Windows password on demand.
 
 If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box will not appear when you press Ctrl+Alt+Del.
 
@@ -153,7 +153,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from locking the system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from locking the system.
 
 While locked, the desktop is hidden and the system cannot be used. Only the user who locked the system or the system administrator can unlock it.
 
@@ -226,7 +226,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from starting Task Manager.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from starting Task Manager.
 
 Task Manager (**taskmgr.exe**) lets users start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
 
@@ -297,7 +297,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting disables or removes all menu items and buttons that log the user off the system.
+Available in the latest Windows 10 Insider Preview Build. This policy setting disables or removes all menu items and buttons that log the user off the system.
 
 If you enable this policy setting, users will not see the Log off menu item when they press Ctrl+Alt+Del. This will prevent them from logging off unless they restart or shutdown the computer, or clicking Log off from the Start menu.
 
