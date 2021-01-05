@@ -28,6 +28,10 @@ ms.topic: article
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 Represent an Automated Investigation entity in Defender for Endpoint.
 <br> See [Overview of automated investigations](automated-investigations.md) for more information.
 

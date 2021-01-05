@@ -26,6 +26,10 @@ ms.topic: article
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Start automated investigation on a device.
@@ -79,8 +83,6 @@ If successful, this method returns 201 - Created response code and [Investigatio
 **Request**
 
 Here is an example of the request.
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation

@@ -23,7 +23,11 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -51,7 +55,7 @@ Delegated (work or school account) |	Machine.Scan |	'Scan machine'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/runAntiVirusScan
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 ```
 
 ## Request headers
@@ -87,7 +91,7 @@ If successful, this method returns 201, Created response code and _MachineAction
 Here is an example of the request.
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
 Content-type: application/json
 {
   "Comment": "Check machine for viruses due to alert 3212",
