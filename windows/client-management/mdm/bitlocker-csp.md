@@ -19,7 +19,8 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 > Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
 > You must send all the settings together in a single SyncML to be effective.
 
-> [!NOTE] Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
 > Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
