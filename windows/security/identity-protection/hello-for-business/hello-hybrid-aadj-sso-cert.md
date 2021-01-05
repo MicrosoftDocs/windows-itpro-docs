@@ -277,7 +277,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
    * **Management Tools > IIS 6 Management Compatibility > IIS 6 WMI Compatibility**
    ![Server Manager Web Server Role](images/aadjcert/servermanager-adcs-webserver-role.png)
 9. Click **Install**. When the installation completes, continue with the next procedure.  **Do not click Close**.
-   > [!Important]
+   > [!IMPORTANT]
    > .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Internet, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\
    ![.NET Side by Side](images/aadjcert/dotNet35sidebyside.png)
 
