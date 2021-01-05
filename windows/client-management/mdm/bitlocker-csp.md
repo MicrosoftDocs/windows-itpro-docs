@@ -19,10 +19,6 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 > Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.  
 > You must send all the settings together in a single SyncML to be effective.
 
-> [!NOTE] 
-> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
-> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
-
 A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
 the setting configured by the admin.
 
@@ -303,6 +299,10 @@ If you disable or do not configure this setting, users can configure only basic 
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
+
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
