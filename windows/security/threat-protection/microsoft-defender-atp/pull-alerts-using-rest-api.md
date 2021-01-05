@@ -26,9 +26,7 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 >[!Note]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
@@ -204,7 +202,7 @@ Here is an example return value:
 The following code examples demonstrate how to obtain an access token for calling the Microsoft Defender for Endpoint SIEM API.
 
 ```csharp
-AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}", tenantId));
+AuthenticationContext context = new AuthenticationContext(string.Format("https://login.microsoftonline.com/{0}", tenantId));
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
 AuthenticationResult authenticationResult = context.AcquireTokenAsync(detectionsResource, clientCredentials).GetAwaiter().GetResult();
 ```
@@ -219,7 +217,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
 $resourceAppIdUri = 'https://graph.windows.net'
-$oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$tenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -238,7 +236,7 @@ tenantId='' ### Paste your tenant ID here
 appId='' ### Paste your Application ID here
 appSecret='' ### Paste your Application secret here
 resourceAppIdUri='https://graph.windows.net'
-oAuthUri="https://login.windows.net/$tenantId/oauth2/token"
+oAuthUri="https://login.microsoftonline.com/$tenantId/oauth2/token"
 scriptDir=$(pwd)
 
 apiResponse=$(curl -s X POST "$oAuthUri" -d "resource=$resourceAppIdUri&client_id=$appId&client_secret=$appSecret&\
