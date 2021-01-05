@@ -345,7 +345,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
    ![NDES Installation Credentials](images/aadjcert/ndesconfig01.png)
 3. On the **Role Services** page, select **Network Device Enrollment Service** and then click **Next**
    ![NDES Role Services](images/aadjcert/ndesconfig02.png)
-4. On the **Service Account for NDES** page, select **Specify service account (recommended)**.  Click **Select...** Type the user name and password for the NDES service account in the **Windows Security** dialog box.  Click **Next**.
+4. On the **Service Account for NDES** page, select **Specify service account (recommended)**.  Click **Select...**. Type the user name and password for the NDES service account in the **Windows Security** dialog box.  Click **Next**.
    ![NDES Service Account for NDES](images/aadjcert/ndesconfig03b.png)
 5. On the **CA for NDES** page, select **CA name**. Click **Select...**.  Select the issuing certificate authority from which the NDES server requests certificates.  Click **Next**.
    ![NDES CA selection](images/aadjcert/ndesconfig04.png)
