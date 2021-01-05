@@ -30,6 +30,8 @@ ms.reviewer: chventou
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
 We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem), which includes Microsoft Intune (Intune) to manage your organization's threat protection features for devices (also referred to as endpoints). [Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview).
 
 This article describes how to find your Microsoft Defender for Endpoint settings in Intune, and lists various tasks you can perform.
