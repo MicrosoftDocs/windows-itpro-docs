@@ -361,7 +361,7 @@ A single NDES server can request a maximum of three certificate templates.  The 
 * Key Encipherment
 * Key Encipherment, Digital Signature
 
-Each value maps to a registry value name in the NDES server.  The NDES server translate an incoming SCEP provide value into the correspond certificate template.  The table belows shows the SCEP profile value to the NDES certificate template registry value name
+Each value maps to a registry value name in the NDES server.  The NDES server translates an incoming SCEP provided value into the corresponding certificate template.  The table below shows the SCEP profile values of the NDES certificate template registry value names.
 
 | SCEP Profile Key usage| NDES Registry Value Name |
 | :-------------------: | :----------------------: |
