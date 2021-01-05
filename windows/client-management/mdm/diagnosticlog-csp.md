@@ -216,6 +216,7 @@ la---           12/2/2020  6:27 PM           2701 results.xml
 Each data gathering directive from the original `Collection` XML corresponds to a folder in the output. For example, if the first directive was <RegistryKey HRESULT="0">HKLM\Software\Policies</RegistryKey> then folder `1` will contain the corresponding `export.reg` file.
 
 The `results.xml` file is the authoritative map to the output. It includes a status code for each directive. The order of the directives in the file corresponds to the order of the output folders. Using `results.xml` the administrator can see what data was gathered, what failures may have occurred, and which folders contain which output. For example, the following `results.xml` content indicates that registry export of HKLM\Software\Policies was successful and the data can be found in folder `1`. It also indicates that `netsh.exe wlan show profiles` command failed.
+
 ```xml
 <Collection HRESULT="0">
     <ID>268b3056-8c15-47c6-a1bd-4bc257aef7b2</ID>
