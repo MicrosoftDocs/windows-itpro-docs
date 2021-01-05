@@ -25,6 +25,9 @@ ms.topic: article
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 Retrieves the organization software inventory.
 
@@ -62,7 +65,7 @@ If successful, this method returns 200 OK with the software inventory in the bod
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/Software
+GET https://api.securitycenter.microsoft.com/api/Software
 ```
 
 **Response**
@@ -72,7 +75,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Software",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software",
     "value": [
 			{
 				"id": "microsoft-_-edge",

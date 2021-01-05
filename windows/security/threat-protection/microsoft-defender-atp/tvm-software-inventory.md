@@ -96,9 +96,13 @@ You can view software pages a few different ways:
 
  A full page will appear with all the details of a specific software and the following information:
 
-- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score
-- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices
-- Tabs with lists of the corresponding security recommendations for the weaknesses and vulnerabilities identified, the named CVEs of discovered vulnerabilities, the names of the devices that the software is installed on, and the specific versions of the software with the number of devices that have each version installed and number of vulnerabilities.
+- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.
+- Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices.
+- Tabs showing information such as:
+    - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
+    - Named CVEs of discovered vulnerabilities.
+    - Devices that have the software installed (along with device name, domain, OS, and more).
+    - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
 
     ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
 

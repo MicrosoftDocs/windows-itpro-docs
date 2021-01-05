@@ -30,9 +30,9 @@ ms.topic: article
 
 ### Endpoint URI:
 
-> The service base URI is: https://api.securitycenter.windows.com
+> The service base URI is: https://api.securitycenter.microsoft.com
 > 
-> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
+> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.microsoft.com/api/alerts
 
 ### Versioning:
 
@@ -40,9 +40,14 @@ ms.topic: article
 > 
 > The current version is **V1.0**.
 > 
-> To use a specific version, use this format: `https://api.securitycenter.windows.com/api/{Version}`. For example: `https://api.securitycenter.windows.com/api/v1.0/alerts`
+> To use a specific version, use this format: `https://api.securitycenter.microsoft.com/api/{Version}`. For example: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 > 
-> If you don't specify any version (e.g. https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
+> If you don't specify any version (e.g. https://api.securitycenter.microsoft.com/api/alerts ) you will get to the latest version.
+
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.

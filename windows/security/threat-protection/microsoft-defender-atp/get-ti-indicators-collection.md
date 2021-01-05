@@ -26,6 +26,10 @@ ms.topic: article
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves a collection of all active [Indicators](ti-indicator.md).
@@ -49,10 +53,8 @@ Delegated (work or school account) |	Ti.ReadWrite |	'Read and write Indicators'
 
 ## HTTP request
 ```
-GET https://api.securitycenter.windows.com/api/indicators
+GET https://api.securitycenter.microsoft.com/api/indicators
 ```
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Request headers
 
@@ -77,7 +79,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 Here is an example of a request that gets all Indicators
 
 ```
-GET https://api.securitycenter.windows.com/api/indicators
+GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 **Response**
@@ -88,7 +90,7 @@ Here is an example of the response.
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [
         {
 			"id": "995",
@@ -140,7 +142,7 @@ Content-type: application/json
 Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
 
 ```
-GET https://api.securitycenter.windows.com/api/indicators?$filter=action+eq+'AlertAndBlock'
+GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
 **Response**
@@ -151,7 +153,7 @@ Here is an example of the response.
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Indicators",
     "value": [
         {
 			"id": "997",

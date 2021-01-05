@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves a [File](files.md) by identifier Sha1, or Sha256
@@ -71,10 +75,8 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
+GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
 **Response**
@@ -86,7 +88,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-	"@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files/$entity",
+	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files/$entity",
 	"sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
 	"sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
 	"globalPrevalence": 180022,
