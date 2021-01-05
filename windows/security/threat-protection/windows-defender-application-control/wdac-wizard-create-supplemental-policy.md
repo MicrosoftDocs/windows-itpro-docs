@@ -34,48 +34,32 @@ Once the Supplemental Policy type is chosen on the New Policy page, policy name 
 
 ![Base policy allows supplemental policies](images/wdac-wizard-supplemental-expandable.png)
 
-If the base policy is not configured for supplemental policies, first edit the base policy to allow supplementals using the [WDAC Wizard edit workflow](wdac-wizard-editing-policy.md).
+If the base policy is not configured for supplemental policies, the Wizard will attempt to convert the policy to one that can be supplemented. Once successful, the Wizard will show a dialog demonstrating that the addition of the Allow Supplemental Policy rule was completed.  
+
+![Wizard confirms modification of base policy](images/wdac-wizard-confirm-base-policy-modification.png)
+
+Policies that cannot be supplemented, for instance, a supplemental policy, will be detected by the Wizard and will show the following error. Only a base policy can be supplemented. More information on supplemental policies can be found on our [Multiple Policies article](deploy-multiple-windows-defender-application-control-policies.md).
+
+![Wizard detects a bad base policy](images/wdac-wizard-supplemental-not-base.png)
 
 ## Configuring Policy Rules
 
-Upon page launch, policy rules will be automatically enabled/disabled depending on the chosen template from the previous page. Choose to enable or disable the desired policy rule options by pressing the slider button next to the policy rule titles. A short description of the rule will be shown at the bottom of the page when the cursor is placed on the rule title. 
+Upon page launch, policy rules will be automatically enabled/disabled depending on the chosen base policy from the previous page. Most of the supplemental policy rules must be inherited from the base policy. The Wizard will automatically parse the base policy and set the required supplemental policy rules to match the base policy rules. Inherited policy rules will be grayed out and will not be modifiable in the user interface. 
 
-### Policy Rules Description
+A short description of the rule will be shown at the bottom of the page when the cursor is placed on the rule title. 
 
-A description of each policy rule, beginning with the left-most column, is provided below. 
+### Configurable Supplemental Policy Rules Description
+
+There are only three policy rules that can be configured by the supplemental policy. A description of each policy rule, beginning with the left-most column, is provided below. Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules. 
+
 
 | Rule option | Description |
 |------------ | ----------- |
-| **Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
-| **Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
-| **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
-|**[Hypervisor-protected code integrity (HVCI)](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
-| **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
-| **Update Policy without Rebooting** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
-| **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
-
-### Advanced Policy Rules Description
-
-Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules. A description of each policy rule is provided below. 
-
-| Rule option | Description |
-|------------ | ----------- |
-| **Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **Disable Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This setting should be used in scenarios where organizations only want to run production binaries, not flight/preivew-signed builds. |
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
-| **Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. |
-| **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| 
-| **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. |
 
-
-![Rule options UI for Windows Allowed mode](images/wdac-wizard-rule-options-UI.png)
-
-
-> [!NOTE]
-> We recommend that you **enable Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
+![Rule options UI for Windows Allowed mode](images/wdac-wizard-supplemental-policy-rule-options-UI.png)
 
 ## Creating custom file rules
 
@@ -90,7 +74,7 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **Issuing CA** | PCACertificate | Highest available certificate is added to the signers. This certificate is typically the PCA certificate, one level below the root certificate. Any file signed by this certificate will be affected. |
 | **Publisher** | Publisher | This rule is a combination of the PCACertificate rule and the common name (CN) of the leaf certificate. Any file signed by a major CA but with a leaf from a specific company, for example a device driver publisher, is affected. |
 | **File version** | SignedVersion | This rule is a combination of the PCACertificate and Publisher rule, and a version number. Anything from the specified publisher with a version at or above the one specified is affected. |
-| **File name** | FilePublisher | Most specific. Combination of the file name, publisher and PCA certificate as well as a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
+| **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate and a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
 
 
 ![Custom filepublisher file rule creation](images/wdac-wizard-custom-publisher-rule.png)
@@ -115,12 +99,12 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 
 ### File Hash Rules
 
-Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule cannot be created using the specified file rule level. 
+Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule cannot be created using the specified file rule level. 
 
 
 #### Deleting Signing Rules 
   
-The table on the left of the page will document the allow and deny rules in the template, as well as any custom rules you create. Rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you will be prompted for additional confirmation. Select `Yes` to remove the rule from the policy and the rules table. 
+The table on the left of the page will document the allow and deny rules in the template, and any custom rules you create. Rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you will be prompted for additional confirmation. Select `Yes` to remove the rule from the policy and the rules table. 
 
 ## Up next
 
