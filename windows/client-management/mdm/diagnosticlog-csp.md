@@ -244,6 +244,7 @@ DirectiveNumber DirectiveHRESULT DirectiveInput
 ```
 
 The next example extracts the zip archive into a customized flattened file structure. Each file name includes the directive number, HRESULT, and so on. This example could be customized to make different choices about what information to include in the file names and what formatting choices to make for special characters.
+
 ```powershell
 param( $DiagnosticArchiveZipPath = "C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z.zip" )
 
