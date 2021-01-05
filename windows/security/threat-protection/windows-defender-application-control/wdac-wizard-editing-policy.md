@@ -26,10 +26,9 @@ ms.date: 10/14/2020
 
 The WDAC Wizard makes editing and viewing WDAC policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities: 
 <ul>
-<li>[Configuring policy rules](#Configuring-Policy-Rules)</li>
-<li>[Adding new allow or block file rules to existing policies](#Adding-File-Rules)</li>
-<li>[Removing allow or block file rules on existing policies](#Removing-File-Rules)</li>
-<li></li>
+<li>[Configuring policy rules](#configuring-policy-rules)</li>
+<li>[Adding new allow or block file rules to existing policies](#adding-file-rules)</li>
+<li>[Removing allow or block file rules on existing policies](#removing-file-rules)</li>
 </ul>
 
 ## Configuring Policy Rules
