@@ -122,7 +122,7 @@ Sign-in to a domain controller or management workstation with access equivalent 
 > Configuring the service's account password to **Password never expires** may be more convenient, but it presents a security risk.  Normal service account passwords should expire in accordance with the organizations user password expiration policy.  Create a reminder to change the service account's password two weeks before it will expire.  Share the reminder with others that are allowed to change the password to ensure the password is changed before it expires.
 
 ### Create the NDES Service User Rights Group Policy object
-The Group Policy object ensures the NDES Service account has the proper user right assign all the NDES servers in the **NDES Servers** group.  As you add new NDES servers to your environment and this group, the service account automatically receives the proper user rights through Group Policy.
+The Group Policy object ensures the NDES Service account has the proper user right to assign all the NDES servers in the **NDES Servers** group.  As you add new NDES servers to your environment and this group, the service account automatically receives the proper user rights through the Group Policy.
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
