@@ -369,7 +369,7 @@ Each value maps to a registry value name in the NDES server.  The NDES server tr
 | Key Encipherment | EncryptionTemplate |
 | Key Encipherment<br>Digital Signature | GeneralPurposeTemplate |
 
-Ideally, you should match the certificate request with registry value name to keep the configuration intuitive (encryption certificates use the encryptionTemplate, signature certificates use the signature template, etc.).  A result of this intuitive design is the potential exponential growth in NDES server. Imagine an organization that needs to issue nine unique signature certificates across their enterprise.
+Ideally, you should match the certificate request with the registry value name to keep the configuration intuitive (encryption certificates use the encryption template, signature certificates use the signature template, etc.).  A result of this intuitive design is the potential exponential growth in the NDES server. Imagine an organization that needs to issue nine unique signature certificates across their enterprise.
 
 If the need arises, you can configure a signature certificate in the encryption registry value name or an encryption certificate in the signature registry value to maximize the use of your NDES infrastructure.  This unintuitive design requires current and accurate documentation of the configuration to ensure the SCEP certificate profile is configured to enroll the correct certificate, regardless of the actual purpose. Each organization needs to balance ease of configuration and administration with additional NDES infrastructure and the management overhead that comes with it.
 
