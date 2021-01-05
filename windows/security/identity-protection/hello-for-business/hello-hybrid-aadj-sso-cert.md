@@ -56,7 +56,7 @@ The Network Device Enrollment Service (NDES) server role can issue up to three u
 - Encryption
 - Signature and Encryption
 
-If you need to deploy more than three types of certificates to the Azure AD joined device, you need additional NDES servers.  Alternatively, consider consolidating certificates templates to reduce the number of certificate templates.
+If you need to deploy more than three types of certificates to the Azure AD joined device, you need additional NDES servers.  Alternatively, consider consolidating certificate templates to reduce the number of certificate templates.
 
 ### Network Requirements
 All communication occurs securely over port 443.
