@@ -323,7 +323,7 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 5. Click **Add**.
 6. Click **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Avaiable services** list, select **HOST**.  Click **OK**.
    ![NDES Service delegation to NDES host](images/aadjcert/ndessvcdelegation-host-ndes-spn.png)
-7. Repeat steps 5 and 6 for each NDES server using this service account.8. Click **Add**.
+7. Repeat steps 5 and 6 for each NDES server using this service account. Click **Add**.
 8. Click **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
 9. Repeat steps 8 and 9 for each issuing certificate authority from which one or more NDES servers request certificates.
    ![NDES Service delegation complete](images/aadjcert/ndessvcdelegation-host-ca-spn.png)
