@@ -201,7 +201,8 @@ Each data gathering node is annotated with the HRESULT of the action and the col
 
 ### Making use of the uploaded data
 The zip archive which is created and uploaded by the CSP contains a folder structure like the following:
-```
+
+```powershell
 PS C:\> dir C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z
 
     Directory: C:\DiagArchiveExamples\DiagLogs-MYDEVICE-20201202T182748Z
