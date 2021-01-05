@@ -51,7 +51,8 @@ Delegated (work or school account) | Ip.Read.All |	'Read IP address profiles'
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
-```
+
+```http
 GET /api/ips/{ip}/stats
 ```
 
@@ -75,7 +76,7 @@ If successful and ip exists - 200 OK with statistical data in the body. IP do no
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats
 ```
 
@@ -84,7 +85,7 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats
 Here is an example of the response.
 
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
