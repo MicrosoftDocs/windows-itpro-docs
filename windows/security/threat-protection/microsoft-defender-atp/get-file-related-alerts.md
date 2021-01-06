@@ -1,6 +1,6 @@
 ---
-title: Get file related alerts API
-description: Learn how to use the Get file related alerts API to get a collection of alerts related to a given file hash in Microsoft Defender for Endpoint.
+title: Get file-related alerts API
+description: Learn how to use the Get file-related alerts API to get a collection of alerts related to a given file hash in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get file related alerts API
+# Get file-related alerts API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -69,7 +69,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file do not exist - 404 Not Found.
+If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file does not exist - 404 Not Found.
 
 
 ## Example

@@ -31,7 +31,7 @@ ms.topic: conceptual
 
 During onboarding, you might encounter sign in issues after the app is installed on your device. 
 
-This article provides solutions to address the sign on issues.  
+This article provides solutions to address the sign-on issues.  
 
 ## Sign in failed - unexpected error
 **Sign in failed:** *Unexpected error, try later*
@@ -63,8 +63,7 @@ from Google Play Store and try again
 
 **Cause:**
 
-You do not have Microsoft 365 license assigned, or your organization does not
-have a license for Microsoft 365 Enterprise subscription.
+You do not have Microsoft 365 license assigned, or your organization does not have a license for Microsoft 365 Enterprise subscription.
 
 **Solution:**
 
