@@ -142,64 +142,6 @@ No known issues
 
 
 <details>
-<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
-
-&ensp;Security intelligence update version: **1.327.1854.0**  
-&ensp;Released: **December 03, 2020**  
-&ensp;Platform: **4.18.2011.6**  
-&ensp;Engine: **1.1.17700.4**  
-&ensp;Support phase: **Security and Critical Updates**
-    
-### What's new
-- Improved SmartScreen status support logging
-- Apply CPU throttling policy to manually initiated scans
-
-### Known Issues
-No known issues  
-<br/>
-</details><details>
-<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
-
-&ensp;Security intelligence update version: **1.327.7.0**  
-&ensp;Released: **October 29, 2020**  
-&ensp;Platform: **4.18.2010.7**  
-&ensp;Engine: **1.1.17600.5**  
-&ensp;Support phase: **Security and Critical Updates**
-    
-### What's new
-- New descriptions for special threat categories
-- Improved emulation capabilities
-- Improved host address allow/block capabilities
-- New option in Defender CSP to Ignore merging of local user exclusions
-
-### Known Issues
-No known issues  
-<br/>
-</details><details>
-<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
-
-&ensp;Security intelligence update version: **1.325.10.0**  
-&ensp;Released: **October 01, 2020**  
-&ensp;Platform: **4.18.2009.7**  
-&ensp;Engine: **1.1.17500.4**  
-&ensp;Support phase: **Security and Critical Updates**
-    
-### What's new
-- Admin permissions are required to restore files in quarantine
-- XML formatted events are now supported
-- CSP support for ignoring exclusion merges
-- New management interfaces for:
-   - UDP Inspection
-   - Network Protection on Server 2019
-   - IP Address exclusions for Network Protection
-- Improved visibility into TPM measurements
-- Improved Office VBA module scanning
-
-### Known Issues
-No known issues  
-<br/>
-</details>
-<details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
 &ensp;Security intelligence update version: **1.323.9.0**  
