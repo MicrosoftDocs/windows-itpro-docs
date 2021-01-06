@@ -7,6 +7,7 @@ ms.author: greglin
 author: greg-lindsay
 description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
 keywords: upgrade, update, task sequence, deploy
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium

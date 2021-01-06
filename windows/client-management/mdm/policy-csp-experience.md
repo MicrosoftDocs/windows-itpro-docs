@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 11/02/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -72,6 +72,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
+  </dd>
+  <dd>
+    <a href="#experience-disablecloudoptimizedcontent">Experience/DisableCloudOptimizedContent</a>
   </dd>
   <dd>
     <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
@@ -283,7 +286,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows users to turn on/off device discovery UX.
 
-When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
+When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
 
 Most restricted value is 0.
 
@@ -413,7 +416,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g. auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.
@@ -507,7 +510,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Sync settings is not allowed.
+-   0 – Sync settings are not allowed.
 -   1 (default) – Sync settings allowed.
 
 <!--/SupportedValues-->
@@ -566,7 +569,8 @@ Added in Windows 10, version 1703. This policy allows you to prevent Windows fro
 
 Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
 
-> **Note** This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+> [!NOTE]
+> This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
 
 Most restricted value is 0.
 
@@ -1153,6 +1157,74 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 
+<!--Policy-->
+<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting lets you turn off cloud optimized content in all Windows experiences.
+
+If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
+
+If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Turn off cloud optimized content*
+-   GP name: *DisableCloudOptimizedContent*
+-   GP path: *Windows Components/Cloud Content*
+-   GP ADMX file name: *CloudContent.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   1 – Enabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
@@ -1286,7 +1358,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--  0 (default) - Allowed/turned on. The "browser" group syncs automatically between user’s devices and lets users to make changes.
+-  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
 -  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
 
 
@@ -1500,6 +1572,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 

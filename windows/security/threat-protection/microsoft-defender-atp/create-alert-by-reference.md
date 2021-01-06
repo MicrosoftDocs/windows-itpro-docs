@@ -21,14 +21,18 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
 Creates new [Alert](alerts.md) on top of **Event**.
-<br>**Microsoft Defender ATP Event** is required for the alert creation.
+<br>**Microsoft Defender for Endpoint Event** is required for the alert creation.
 <br>You will need to supply 3 parameters from the Event in the request: **Event Time**, **Machine ID** and **Report ID**. See example below.
 <br>You can use an event found in Advanced Hunting API or Portal.
 <br>If there existing an open alert on the same Device with the same Title, the new created alert will be merged with it.
@@ -41,7 +45,7 @@ Creates new [Alert](alerts.md) on top of **Event**.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -56,7 +60,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 ## HTTP request
 
 ```
-POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
 ## Request headers
@@ -91,10 +95,8 @@ If successful, this method returns 200 OK, and a new [alert](alerts.md) object i
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-POST https://api.securitycenter.windows.com/api/alerts/CreateAlertByReference
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 ```json
 {

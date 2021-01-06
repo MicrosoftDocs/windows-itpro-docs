@@ -17,14 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Microsoft Defender ATP API - Hello World 
+# Microsoft Defender for Endpoint API - Hello World 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## Get Alerts using a simple PowerShell script
@@ -47,7 +51,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
+4. Allow your Application to access Defender for Endpoint and assign it **'Read all alerts'** permission:
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
@@ -103,8 +107,8 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.windows.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
     client_id = "$appId"
@@ -142,7 +146,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
 # The URL contains the type of query and the time filter we create above
 # Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+$url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
 # Set the WebRequest headers
 $headers = @{ 
@@ -177,6 +181,6 @@ You’re all done! You have just successfully:
 
 
 ## Related topic
-- [Microsoft Defender ATP APIs](exposed-apis-list.md)
-- [Access Microsoft Defender ATP with application context](exposed-apis-create-app-webapp.md)
-- [Access Microsoft Defender ATP with user context](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+- [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
+- [Access Microsoft Defender for Endpoint with user context](exposed-apis-create-app-nativeapp.md)

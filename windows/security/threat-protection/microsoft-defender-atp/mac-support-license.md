@@ -19,16 +19,16 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Troubleshoot license issues for Microsoft Defender ATP for Mac
+# Troubleshoot license issues for Microsoft Defender for Endpoint for Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md)
 
-While you are going through [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
+While you are going through [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
 
 ![Image of license error](images/no-license-found.png)
 
@@ -42,7 +42,7 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the MDATP for macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").
+You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").
 
 **Solution:**
 

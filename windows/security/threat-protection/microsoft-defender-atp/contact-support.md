@@ -17,15 +17,15 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Contact Microsoft Defender ATP support
+# Contact Microsoft Defender for Endpoint support
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
+- [Microsoft Defender for Endpoint](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf)
 
-Microsoft Defender ATP has recently upgraded the support process to offer a more modern and advanced support experience. 
+Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience. 
 
 The new widget allows customers to:
 - Find solutions to common problems
@@ -68,7 +68,7 @@ In case the suggested articles are not sufficient, you can open a service reques
 
 ## Open a service request
 
-Learn how to open support tickets by contacting Microsoft Defender ATP support. 
+Learn how to open support tickets by contacting Defender for Endpoint support. 
 
 
 

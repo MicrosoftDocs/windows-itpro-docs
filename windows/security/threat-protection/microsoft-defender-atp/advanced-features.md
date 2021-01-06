@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure advanced features in Microsoft Defender ATP
+# Configure advanced features in Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+>Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
-Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Microsoft Defender ATP with.
+Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Defender for Endpoint with.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 
@@ -88,7 +88,7 @@ To use this feature, devices must be running Windows 10 version 1709 or later. T
 For more information, see [Manage indicators](manage-indicators.md).
 
 >[!NOTE]
->Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Microsoft Defender ATP data.
+>Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
 ## Show user details
 
@@ -116,9 +116,9 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 
 ## Microsoft Secure Score
 
-Forwards Microsoft Defender ATP signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
 
-### Enable the Microsoft Defender ATP integration from the Azure ATP portal
+### Enable the Defender for Endpoint integration from the Azure ATP portal
 
 To receive contextual device integration in Azure ATP, you'll also need to enable the feature in the Azure ATP portal.
 
@@ -139,18 +139,18 @@ When you turn this feature on, you'll be able to incorporate data from Office 36
 >[!NOTE]
 >You'll need to have the appropriate license to enable this feature. 
 
-To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Microsoft Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
 
 ## Microsoft Threat Experts
 
-Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Microsoft Defender ATP portal's alerts dashboard and via email if you configure it.
+Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
 
 >[!NOTE]
->The Microsoft Threat Experts capability in Microsoft Defender ATP is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+>The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
 ## Microsoft Cloud App Security
 
-Enabling this setting forwards Microsoft Defender ATP signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
+Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
 
 >[!NOTE]
 >This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
@@ -161,10 +161,10 @@ Turning on this setting allows signals to be forwarded to Azure Information Prot
 
 ## Microsoft Intune connection
 
-Microsoft Defender ATP can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Microsoft Defender ATP device information with Intune, enhancing policy enforcement.
+Defender for Endpoint can be integrated with [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) to [enable device risk-based conditional access](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). When you [turn on this feature](configure-conditional-access.md), you'll be able to share Defender for Endpoint device information with Intune, enhancing policy enforcement.
 
 >[!IMPORTANT]
->You'll need to enable the integration on both Intune and Microsoft Defender ATP to use this feature. For more information on specific steps, see [Configure Conditional Access in Microsoft Defender ATP](configure-conditional-access.md).
+>You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
 This feature is only available if you have the following:
 
@@ -181,7 +181,7 @@ When you enable Intune integration, Intune will automatically create a classic C
 
 ## Preview features
 
-Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 
@@ -189,7 +189,7 @@ You'll have access to upcoming features, which you can provide feedback on to he
 
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
-After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Microsoft Defender ATP alerts will be shared with insider risk management for applicable users.
+After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 
 ## Enable advanced features
 

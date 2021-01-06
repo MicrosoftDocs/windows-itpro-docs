@@ -22,9 +22,13 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Limitations
 1. You can only run a query on data from the last 30 days.
@@ -36,7 +40,7 @@ ms.topic: article
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. The 429 response body will also indicate the time until the quota is renewed. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -50,7 +54,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
 ## Request headers
@@ -77,11 +81,8 @@ Request
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 Content-type: application/json
 {
 	"Query":"DeviceProcessEvents  
@@ -137,6 +138,6 @@ Here is an example of the response.
 ```
 
 ## Related topic
-- [Microsoft Defender ATP APIs introduction](apis-intro.md)
+- [Microsoft Defender for Endpoint APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

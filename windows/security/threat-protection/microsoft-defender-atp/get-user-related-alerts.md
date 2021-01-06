@@ -1,5 +1,5 @@
 ---
-title: Get user related alerts API
+title: Get user-related alerts API
 description: Retrieve a collection of alerts related to a given user ID using Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: apis, graph api, supported apis, get, user, related, alerts
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get user related alerts API
+# Get user-related alerts API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -35,7 +39,7 @@ Retrieves a collection of alerts related to a given user ID.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -46,7 +50,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+>- The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
 >- Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
@@ -54,7 +58,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 GET /api/users/{id}/alerts
 ```
 
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve alerts for user1@contoso.com use /api/users/user1/alerts)**
+**The ID is not the full UPN, but only the user name. (for example, to retrieve alerts for user1@contoso.com use /api/users/user1/alerts)**
 
 ## Request headers
 
@@ -67,7 +71,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and user exist - 200 OK. If the user do not exist - 404 Not Found. 
+If successful and user exists - 200 OK. If the user does not exist - 404 Not Found. 
 
 
 ## Example
@@ -76,8 +80,6 @@ If successful and user exist - 200 OK. If the user do not exist - 404 Not Found.
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/users/user1/alerts
+GET https://api.securitycenter.microsoft.com/api/users/user1/alerts
 ```

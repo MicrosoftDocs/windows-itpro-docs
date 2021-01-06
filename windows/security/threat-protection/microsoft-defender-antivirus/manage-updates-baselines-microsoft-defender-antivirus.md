@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/08/2020
+ms.date: 12/05/2020
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -23,19 +23,18 @@ ms.date: 10/08/2020
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
- - Security intelligence updates
- - Product updates
+- Security intelligence updates
+- Product updates
 
 > [!IMPORTANT]
 > Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
-> This also applies to devices where Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > 
-> You can use the below URL to find out what are the current versions:
-> [https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
+> To see the most current engine, platform, and signature date, visit the [Microsoft security encyclopedia](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 
 ## Security intelligence updates
 
@@ -47,6 +46,8 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 > System Center Endpoint Protection: KB2461484
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
+
+For a list of recent security intelligence updates, please visit: [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/definitions/antimalware-definition-release-notes).
 
 Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
@@ -69,14 +70,48 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
-All our updates contain:
-- performance improvements
-- serviceability improvements
-- integration improvements (Cloud, Microsoft 365 Defender)  
+All our updates contain 
+- performance improvements;
+- serviceability improvements; and 
+- integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 
 
 <details>
+<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
+
+&ensp;Security intelligence update version: **1.327.1854.0**  
+&ensp;Released: **December 03, 2020**  
+&ensp;Platform: **4.18.2011.6**  
+&ensp;Engine: **1.1.17700.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Improved SmartScreen status support logging
+- Apply CPU throttling policy to manually initiated scans
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
+
+&ensp;Security intelligence update version: **1.327.7.0**  
+&ensp;Released: **October 29, 2020**  
+&ensp;Platform: **4.18.2010.7**  
+&ensp;Engine: **1.1.17600.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- New descriptions for special threat categories
+- Improved emulation capabilities
+- Improved host address allow/block capabilities
+- New option in Defender CSP to Ignore merging of local user exclusions
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
 &ensp;Security intelligence update version: **1.325.10.0**  
@@ -88,7 +123,7 @@ All our updates contain:
 ### What's new
 - Admin permissions are required to restore files in quarantine
 - XML formatted events are now supported
-- CSP support for ignoring exclusion merge
+- CSP support for ignoring exclusion merges
 - New management interfaces for:
    - UDP Inspection
    - Network Protection on Server 2019
@@ -318,7 +353,8 @@ During the technical support (only) phase, commercially reasonable support incid
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:    
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
-|-|-|-|-|
+|:---|:---|:---|:---|
+|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade Support (Only) |
 |1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
 |1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
 |1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
@@ -329,13 +365,75 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
+## Updates for Deployment Image Servicing and Management (DISM)
+
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection. For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+
+<details>
+<summary>1.1.2012.01</summary>
+
+&ensp;Package version: **1.1.2012.01**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.1991.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2011.02</summary>
+
+&ensp;Package version: **1.1.2011.02**    
+&ensp;Platform version: **4.18.2010.7**   
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.658.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- Refreshed Microsoft Defender Antivirus signatures  
+<br/>
+</details><details>
+<summary>1.1.2011.01</summary>
+
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2009.7**  
+&ensp;Engine version: **1.17600.5**  
+&ensp;Signature version: **1.327.344.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
+<summary>1.1.2009.10</summary>
+
+&ensp;Package version: **1.1.2011.01**    
+&ensp;Platform version: **4.18.2008.9**   
+&ensp;Engine version: **1.17400.5**  
+&ensp;Signature version: **1.327.2216.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- Added support for Windows 10 RS1 or later OS install images.  
+<br/>
+</details>
 
 ## See also
 
-Article | Description 
----|---
-[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources.
-[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded.
-[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan at the next logon.
-[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events.
-[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines.
+| Article | Description  |
+|:---|:---|
+|[Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Review antimalware update packages for your OS installation images (WIM and VHD files). Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.  |
+|[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources. |
+|[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded. |
+|[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in. |
+|[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events. |
+|[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines. |

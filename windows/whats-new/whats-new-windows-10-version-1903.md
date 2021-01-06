@@ -66,7 +66,7 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 
 ### Windows Information Protection
 
-With this release, Windows Defender ATP extends discovery and protection of sensitive information with [Auto Labeling](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels#how-wip-protects-automatically-classified-files). 
+With this release, Microsoft Defender for Endpoint extends discovery and protection of sensitive information with [Auto Labeling](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels#how-wip-protects-automatically-classified-files). 
 
 ### Security configuration framework
 
@@ -80,15 +80,15 @@ The draft release of the [security configuration baseline settings](https://blog
 
 [Intune Security Baselines](https://docs.microsoft.com/intune/security-baselines) (Preview): Now includes many settings supported by Intune that you can use to help secure and protect your users and devices. You can automatically set these settings to values recommended by security teams.
 
-### Microsoft Defender Advanced Threat Protection (ATP):
+### Microsoft Defender for Endpoint
 
 - [Attack surface area reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) – IT admins can configure devices with advanced web protection that enables them to define allow and deny lists for specific URL’s and IP addresses.
 - [Next generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) – Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
     - Integrity enforcement capabilities – Enable remote runtime attestation of Windows 10 platform.
-    - Tamper-proofing capabilities – Uses virtualization-based security to isolate critical ATP security capabilities away from the OS and attackers.
-- [Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) – In addition to Windows 10, Windows Defender ATP’s functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
+    - Tamper-proofing capabilities – Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.
+- [Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) – In addition to Windows 10, Microsoft Defender for Endpoint’s functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
 
-### Microsoft Defender ATP next-gen protection technologies:
+### Microsoft Defender for Endpoint next-gen protection technologies:
 
 - **Advanced machine learning**: Improved with advanced machine learning and AI models that enable it to protect against apex attackers using innovative vulnerability exploit techniques, tools and malware.
 - **Emergency outbreak protection**: Provides emergency outbreak protection which will automatically update devices with new intelligence when a new outbreak has been detected.
