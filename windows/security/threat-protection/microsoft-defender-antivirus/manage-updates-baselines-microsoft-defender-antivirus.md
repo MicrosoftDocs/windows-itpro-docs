@@ -74,7 +74,7 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, Microsoft 365 Defender).
-<br/>
+<br/><br/>
 
 
 <details>
