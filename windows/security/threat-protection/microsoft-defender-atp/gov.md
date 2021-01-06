@@ -106,16 +106,16 @@ These are the known gaps as of January 2021:
 
 Feature name | GCC | GCC High
 :---|:---|:---
-Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
-Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Email notifications | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Integration with third-party products | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
+Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Web content filtering | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
