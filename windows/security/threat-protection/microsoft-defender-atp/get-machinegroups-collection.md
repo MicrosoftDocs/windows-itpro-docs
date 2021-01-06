@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/07/2018
 ---
 
-# Get KB collection API
+# Get Machinegroups collection API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
