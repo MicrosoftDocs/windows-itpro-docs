@@ -63,14 +63,17 @@ You can opt in to Microsoft Update on the mobile device in one of the following 
 
 ### Use a VBScript to opt-in to Microsoft Update
 
-1.  Use the instructions in the MSDN article [Opt-In to Microsoft Update](https://msdn.microsoft.com/library/windows/desktop/aa826676.aspx) to create the VBScript.
-2.  Run the VBScript you created on each computer in your network.
+1. Use the instructions in the MSDN article [Opt-In to Microsoft Update](https://msdn.microsoft.com/library/windows/desktop/aa826676.aspx) to create the VBScript.
+
+2. Run the VBScript you created on each computer in your network.
 
 ### Manually opt-in to Microsoft Update
 
-1.  Open **Windows Update** in **Update & security** settings on the computer you want to opt-in.
-2.  Click **Advanced** options.
-3.  Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
+1. Open **Windows Update** in **Update & security** settings on the computer you want to opt-in.
+
+2. Click **Advanced** options.
+
+3. Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
 
 ## Prevent Security intelligence updates when running on battery power
 
@@ -80,15 +83,14 @@ You can configure Microsoft Defender Antivirus to only download protection updat
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+3.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following setting:
+4.  Expand the tree to **Windows components > Microsoft Defender Antivirus > Signature Updates** and configure the following setting:
 
-    1. Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**. 
-    2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
-
+   - Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**. 
+   - Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
 
 ## Related articles
 
