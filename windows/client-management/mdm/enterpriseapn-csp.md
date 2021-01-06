@@ -19,10 +19,25 @@ The EnterpriseAPN configuration service provider (CSP) is used by the enterprise
 > [!Note]
 > Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
-The following image shows the EnterpriseAPN configuration service provider in tree format.
-
-![enterpriseapn csp](images/provisioning-csp-enterpriseapn-rs1.png)
-
+The following shows the EnterpriseAPN configuration service provider in tree format.
+```
+./Vendor/MSFT
+EnterpriseAPN
+----ConnectionName
+--------APNName
+--------IPType
+--------IsAttachAPN
+--------ClassId
+--------AuthType
+--------UserName
+--------Password
+--------IccId
+--------AlwaysOn
+--------Enabled
+----Settings
+--------AllowUserControl
+--------HideView
+```
 <a href="" id="enterpriseapn"></a>**EnterpriseAPN**  
 <p style="margin-left: 20px">The root node for the EnterpriseAPN configuration service provider.</p>
 

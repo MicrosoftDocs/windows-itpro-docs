@@ -21,10 +21,47 @@ The DMSessionActions configuration service provider (CSP) is used to manage:
 
 This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the DMSessionActions configuration service provider in tree format.
+The following shows the DMSessionActions configuration service provider in tree format.
+```
+./User/Vendor/MSFT
+DMSessionActions
+----ProviderID
+--------CheckinAlertConfiguration
+------------Nodes
+----------------NodeID
+--------------------NodeURI
+--------AlertData
+--------PowerSettings
+------------MaxSkippedSessionsInLowPowerState
+------------MaxTimeSessionsSkippedInLowPowerState
 
-![dmsessionactions csp](images/provisioning-csp-dmsessionactions.png)
 
+./Device/Vendor/MSFT
+DMSessionActions
+----ProviderID
+--------CheckinAlertConfiguration
+------------Nodes
+----------------NodeID
+--------------------NodeURI
+--------AlertData
+--------PowerSettings
+------------MaxSkippedSessionsInLowPowerState
+------------MaxTimeSessionsSkippedInLowPowerState
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+DMSessionActions
+----ProviderID
+--------CheckinAlertConfiguration
+------------Nodes
+----------------NodeID
+--------------------NodeURI
+--------AlertData
+--------PowerSettings
+------------MaxSkippedSessionsInLowPowerState
+------------MaxTimeSessionsSkippedInLowPowerState
+```
 <a href="" id="vendor-msft-dmsessionactions"></a>**./Device/Vendor/MSFT/DMSessionActions or ./User/Vendor/MSFT/DMSessionActions**  
 <p style="margin-left: 20px">Defines the root node for the DMSessionActions configuration service provider.</p>
 

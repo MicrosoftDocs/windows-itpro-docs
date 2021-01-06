@@ -17,10 +17,21 @@ Windows 10 allows you to manage devices differently depending on location, netwo
 
 This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the DynamicManagement configuration service provider in tree format.
-
-![dynamicmanagement csp](images/provisioning-csp-dynamicmanagement.png)
-
+The following shows the DynamicManagement configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+DynamicManagement
+----NotificationsEnabled
+----ActiveList
+----Contexts
+--------ContextID
+------------SignalDefinition
+------------SettingsPack
+------------SettingsPackResponse
+------------ContextStatus
+------------Altitude
+----AlertsEnabled
+```
 <a href="" id="dynamicmanagement"></a>**DynamicManagement**  
 <p style="margin-left: 20px">The root node for the DynamicManagement configuration service provider.</p>
 

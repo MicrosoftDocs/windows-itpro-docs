@@ -21,10 +21,14 @@ The Maps configuration service provider (CSP) is used to configure the maps to d
 
  
 
-The following diagram shows the Maps configuration service provider in tree format.
-
-![maps csp diagram](images/provisioning-csp-maps.png)
-
+The following shows the Maps configuration service provider in tree format.
+```
+./Vendor/MSFT
+Maps
+----Packages
+--------Package
+------------Status
+```
 <a href="" id="maps"></a>**Maps**  
 Root node.
 

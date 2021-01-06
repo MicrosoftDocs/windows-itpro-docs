@@ -29,10 +29,22 @@ To learn more about WIP, see the following articles:
 -   [Create a Windows Information Protection (WIP) policy](https://technet.microsoft.com/itpro/windows/keep-secure/overview-create-wip-policy)
 -   [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
 
-The following diagram shows the EnterpriseDataProtection CSP in tree format.
-
-![enterprisedataprotection csp diagram](images/provisioning-csp-enterprisedataprotection.png)
-
+The following shows the EnterpriseDataProtection CSP in tree format.
+```
+./Device/Vendor/MSFT
+EnterpriseDataProtection
+----Settings
+--------EDPEnforcementLevel
+--------EnterpriseProtectedDomainNames
+--------AllowUserDecryption
+--------RequireProtectionUnderLockConfig
+--------DataRecoveryCertificate
+--------RevokeOnUnenroll
+--------RMSTemplateIDForEDP
+--------AllowAzureRMSForEDP
+--------EDPShowIcons
+----Status
+```
 <a href="" id="--device-vendor-msft-enterprisedataprotection"></a>**./Device/Vendor/MSFT/EnterpriseDataProtection**  
 The root node for the CSP.
 

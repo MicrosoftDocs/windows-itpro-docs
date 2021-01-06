@@ -26,9 +26,39 @@ The following are the links to different versions of the DiagnosticLog CSP DDF f
 -   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf.md#version-1-2)
 
 
-The following diagram shows the DiagnosticLog CSP in tree format.
-![diagnosticlog csp diagram](images/provisioning-csp-diagnosticlog.png)
-
+The following shows the DiagnosticLog CSP in tree format.
+```
+./Vendor/MSFT
+DiagnosticLog
+----EtwLog
+--------Collectors
+------------CollectorName
+----------------TraceStatus
+----------------TraceLogFileMode
+----------------TraceControl
+----------------LogFileSizeLimitMB
+----------------Providers
+--------------------ProviderGuid
+------------------------Keywords
+------------------------TraceLevel
+------------------------State
+--------Channels
+------------ChannelName
+----------------Export
+----------------State
+----------------Filter
+----DeviceStateData
+--------MdmConfiguration
+----FileDownload
+--------DMChannel
+------------FileContext
+----------------BlockSizeKB
+----------------BlockCount
+----------------BlockIndexToRead
+----------------BlockData
+----------------DataBlocks
+--------------------BlockNumber
+```
 <a href="" id="--vendor-msft-diagnosticlog"></a>**./Vendor/MSFT/DiagnosticLog**  
 The root node for the DiagnosticLog CSP.
 

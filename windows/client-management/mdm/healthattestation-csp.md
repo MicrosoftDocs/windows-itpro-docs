@@ -176,10 +176,22 @@ The following is a list of functions performed by the Device HealthAttestation C
 ## CSP diagram and node descriptions  
 
 
-The following diagram shows the Device HealthAttestation configuration service provider in tree format.  
-
-![healthattestation csp](images/provisioning-csp-healthattestation.png)
-
+The following shows the Device HealthAttestation configuration service provider in tree format.  
+```
+./Vendor/MSFT
+HealthAttestation
+----VerifyHealth
+----Status
+----ForceRetrieve
+----Certificate
+----Nonce
+----CorrelationID
+----HASEndpoint
+----TpmReadyStatus
+----CurrentProtocolVersion
+----PreferredMaxProtocolVersion
+----MaxSupportedProtocolVersion
+```
 <a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
 <p style="margin-left: 20px">The root node for the device HealthAttestation configuration service provider.</p>
 

@@ -22,10 +22,23 @@ The EnterpriseAssignedAccess configuration service provider allows IT administra
 
 To use an app to create a lockdown XML see [Use the Lockdown Designer app to create a Lockdown XML file](https://docs.microsoft.com/windows/configuration/mobile-devices/mobile-lockdown-designer). For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983).
 
-The following diagram shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
-
-![enterpriseassignedaccess csp](images/provisioning-csp-enterpriseassignedaccess.png)
-
+The following shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
+```
+./Vendor/MSFT
+EnterpriseAssignedAccess
+----AssignedAccess
+--------AssignedAccessXml
+----LockScreenWallpaper
+--------BGFileName
+----Theme
+--------ThemeBackground
+--------ThemeAccentColorID
+--------ThemeAccentColorValue
+----Clock
+--------TimeZone
+----Locale
+--------Language
+```
 The following list shows the characteristics and parameters.
 
 <a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**./Vendor/MSFT/EnterpriseAssignedAccess/**

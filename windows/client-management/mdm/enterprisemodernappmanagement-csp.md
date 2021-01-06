@@ -19,10 +19,51 @@ The EnterpriseModernAppManagement configuration service provider (CSP) is used f
 > [!Note]
 > Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 
-The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
-
-![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
-
+The following shows the EnterpriseModernAppManagement configuration service provider in tree format.
+```
+./Vendor/MSFT
+EnterpriseModernAppManagement
+----AppManagement
+--------EnterpriseID
+------------PackageFamilyName
+----------------PackageFullName
+--------------------Name
+--------------------Version
+--------------------Publisher
+--------------------Architecture
+--------------------InstallLocation
+--------------------IsFramework
+--------------------IsBundle
+--------------------InstallDate
+--------------------ResourceID
+--------------------PackageStatus
+--------------------RequiresReinstall
+--------------------Users
+--------------------IsProvisioned
+----------------DoNotUpdate
+----------------AppSettingPolicy
+--------------------SettingValue
+--------UpdateScan
+--------LastScanError
+--------AppInventoryResults
+--------AppInventoryQuery
+----AppInstallation
+--------PackageFamilyName
+------------StoreInstall
+------------HostedInstall
+------------LastError
+------------LastErrorDesc
+------------Status
+------------ProgressStatus
+----AppLicenses
+--------StoreLicenses
+------------LicenseID
+----------------LicenseCategory
+----------------LicenseUsage
+----------------RequesterID
+----------------AddLicense
+----------------GetLicenseFromStore
+```
 <a href="" id="device-or-user-context"></a>**Device or User context**  
 For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
