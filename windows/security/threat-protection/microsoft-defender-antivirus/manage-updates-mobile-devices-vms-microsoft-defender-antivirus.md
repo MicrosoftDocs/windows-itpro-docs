@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,14 +24,14 @@ manager: dansimp
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-Mobile devices and VMs may require additional configuration to ensure performance is not impacted by updates.
+Mobile devices and VMs may require more configuration to ensure performance is not impacted by updates.
 
-There are two settings that are particularly useful for these devices:
+There are two settings that are useful for these devices:
 
-- Opt-in to Microsoft Update on mobile computers without a WSUS connection
+- Opt in to Microsoft Update on mobile computers without a WSUS connection
 - Prevent Security intelligence updates when running on battery power
 
-The following topics may also be useful in these situations:
+The following articles may also be useful in these situations:
 - [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
