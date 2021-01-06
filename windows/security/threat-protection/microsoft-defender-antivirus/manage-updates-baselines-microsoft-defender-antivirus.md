@@ -174,8 +174,9 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-* Improved telemetry for BITS
-* Improved Authenticode code signing certificate validation
+
+- Improved telemetry for BITS
+- Improved Authenticode code signing certificate validation
 
 ### Known Issues
 No known issues  
@@ -192,12 +193,13 @@ No known issues
 &ensp;Support phase: **Technical upgrade Support (Only)**
     
 ### What's new
-* Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
-* Skipping aggressive catchup scan in Passive mode.
-* Allow Defender to update on metered connections
-* Fixed performance tuning when caching is disabled 
-* Fixed registry query 
-* Fixed scantime randomization in ADMX
+
+- Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+- Skipping aggressive catchup scan in Passive mode.
+- Allow Defender to update on metered connections
+- Fixed performance tuning when caching is disabled 
+- Fixed registry query 
+- Fixed scantime randomization in ADMX
 
 ### Known Issues
 No known issues  
