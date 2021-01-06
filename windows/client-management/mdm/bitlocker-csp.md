@@ -300,6 +300,10 @@ If you disable or do not configure this setting, users can configure only basic 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
 
+> [!NOTE] 
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
+> Standby devices will not be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
+
 Sample value for this node to enable this policy is:
 
 ```xml
