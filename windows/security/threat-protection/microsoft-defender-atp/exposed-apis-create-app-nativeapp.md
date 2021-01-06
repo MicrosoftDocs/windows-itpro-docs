@@ -26,6 +26,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 This page describes how to create an application to get programmatic access to Defender for Endpoint on behalf of a user.
 
 If you need programmatic access Microsoft Defender for Endpoint without a user, refer to [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md).
@@ -127,9 +131,9 @@ For more information on AAD tokens, see [Azure AD tutorial](https://docs.microso
 
         public static class WindowsDefenderATPUtils
         {
-            private const string Authority = "https://login.windows.net";
+            private const string Authority = "https://login.microsoftonline.com";
 
-            private const string WdatpResourceId = "https://api.securitycenter.windows.com";
+            private const string WdatpResourceId = "https://api.securitycenter.microsoft.com";
 
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
@@ -175,7 +179,7 @@ Verify to make sure you got a correct token:
     ```csharp
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
