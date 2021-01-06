@@ -32,13 +32,13 @@ When creating policies for use with Windows Defender Application Control (WDAC),
 Each of the template policies has a unique set of policy allow list rules that will affect the circle-of-trust and security model of the policy. The following table lists the policies in increasing order of trust and freedom. For instance, the Default Windows mode policy trusts fewer application publishers and signers than the Signed and Reputable mode policy. The Default Windows policy will have a smaller circle-of-trust with better security than the Signed and Reputable policy, but at the expense of compatibility.  
 
 
-| **Template Base Policy** | **Description** | 
+| Template Base Policy | Description | 
 |---------------------------------|-------------------------------------------------------------------|
 | **Default Windows Mode**      | Default Windows mode will authorize the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](https://docs.microsoft.com/windows-hardware/drivers/install/whql-release-signature)</li></ul>|
 | **Allow Microsoft Mode**      | Allow mode will authorize the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](https://docs.microsoft.com/windows-hardware/drivers/install/whql-release-signature)</li><li>*All Microsoft-signed software*</li></ul>|
 | **Signed and Reputable Mode** | Signed and Reputable mode will authorize the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](https://docs.microsoft.com/windows-hardware/drivers/install/whql-release-signature)</li><li>All Microsoft-signed software</li><li>*Files with good reputation per [Microsoft Defender's Intelligent Security Graph technology](use-windows-defender-application-control-with-intelligent-security-graph.md)*</li></ul>|
 
-*Italized content denotes the changes in the current policy with respect to the policy prior.*
+*Italicized content denotes the changes in the current policy with respect to the policy prior.*
 
 More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example WDAC base policies article](example-wdac-base-policies.md). 
 
@@ -67,7 +67,8 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
-![Rule options UI for Windows Allowed mode policy](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
+> [!div class="mx-imgBorder"]
+> ![Rule options UI for Windows Allowed mode policy](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
 
 ### Advanced Policy Rules Description
 
@@ -120,8 +121,8 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Product name** | Specifies the name of the product with which the binary ships. |
 | **Internal name** | Specifies the internal name of the binary. |
 
-
-![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
+> [!div class="mx-imgBorder"]
+> ![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 
