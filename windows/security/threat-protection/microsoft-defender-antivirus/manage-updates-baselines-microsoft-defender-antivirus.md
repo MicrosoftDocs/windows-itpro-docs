@@ -148,7 +148,6 @@ Previous version updates are listed below, and are provided for technical upgrad
 &ensp;Released: **August 27, 2020**  
 &ensp;Platform: **4.18.2008.9**  
 &ensp;Engine: **1.1.17400.5**  
-&ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
 
@@ -172,7 +171,7 @@ No known issues
 &ensp;Released: **July 28, 2020**  
 &ensp;Platform: **4.18.2007.8**  
 &ensp;Engine: **1.1.17300.4**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -191,7 +190,7 @@ No known issues
 &ensp;Released: **June 22, 2020**  
 &ensp;Platform: **4.18.2006.10**  
 &ensp;Engine: **1.1.17200.2**  
-&ensp;Support phase: **Technical upgrade Support (Only)**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -214,7 +213,7 @@ No known issues
 &ensp;Released: **May 26, 2020**  
 &ensp;Platform: **4.18.2005.4**  
 &ensp;Engine: **1.1.17100.2**  
-&ensp;Support phase: **Technical upgrade Support (Only)**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 * Improved logging for scan events
@@ -236,7 +235,7 @@ No known issues
 &ensp;Released: **April 30, 2020**  
 &ensp;Platform: **4.18.2004.6**  
 &ensp;Engine: **1.1.17000.2**  
-&ensp;Support phase: **Technical upgrade Support (Only)**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 * WDfilter improvements
@@ -259,7 +258,7 @@ No known issues
 &ensp;Released: **March 24, 2020**  
 &ensp;Platform: **4.18.2003.8**  
 &ensp;Engine: **1.1.16900.4**  
-&ensp;Support phase: **Technical upgrade Support (Only)**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -280,11 +279,11 @@ No known issues
 <summary> February-2020 (Platform: - | Engine: 1.1.16800.2)</summary>
   
 
-  Security intelligence update version: **1.311.4.0**   
-  Released: **February 25, 2020**  
-  Platform/Client: **-**  
-  Engine: **1.1.16800.2**  
-  Support phase: **N/A**
+&ensp;Security intelligence update version: **1.311.4.0**   
+&ensp;Released: **February 25, 2020**  
+&ensp;Platform/Client: **-**  
+&ensp;Engine: **1.1.16800.2**  
+&ensp;Support phase: **Technical upgrade support (only)**
      
 ### What's new
 
@@ -302,7 +301,7 @@ Security intelligence update version: **1.309.32.0**
 Released: **January 30, 2020**  
 Platform/Client: **4.18.2001.10**  
 Engine: **1.1.16700.2**  
-Support phase: **Technical upgrade Support (Only)**
+&ensp;Support phase: **Technical upgrade support (only)**
      
 ### What's new
 
@@ -317,8 +316,7 @@ Support phase: **Technical upgrade Support (Only)**
 <br/>
 > [!IMPORTANT]
 > This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
-<br/>
-> [!IMPORTANT]
+> 
 > This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
 <br/>
 </details>
