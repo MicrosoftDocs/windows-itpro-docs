@@ -170,7 +170,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     MD C:\Temp\TempSigs\x86
     ```
 
-3. Download the Powershell script from [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
+3. Download the PowerShell script from [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
 
 4. Click **Manual Download**.
 
