@@ -87,6 +87,7 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
+
 - Improved SmartScreen status support logging
 - Apply CPU throttling policy to manually initiated scans
 
@@ -103,12 +104,14 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
+
 - New descriptions for special threat categories
 - Improved emulation capabilities
 - Improved host address allow/block capabilities
 - New option in Defender CSP to Ignore merging of local user exclusions
 
 ### Known Issues
+
 No known issues  
 <br/>
 </details><details>
@@ -121,6 +124,7 @@ No known issues
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
+
 - Admin permissions are required to restore files in quarantine
 - XML formatted events are now supported
 - CSP support for ignoring exclusion merges
@@ -132,6 +136,7 @@ No known issues
 - Improved Office VBA module scanning
 
 ### Known Issues
+
 No known issues  
 <br/>
 </details>

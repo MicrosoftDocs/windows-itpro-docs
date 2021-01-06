@@ -81,11 +81,11 @@ You can configure Microsoft Defender Antivirus to only download protection updat
 
 ### Use Group Policy to prevent security intelligence updates on battery power
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), choose the Group Policy Object you want to configure, and open it for editing.
 
 2.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-3.  Click **Policies** then **Administrative templates**.
+3.  Select **Policies** then **Administrative templates**.
 
 4.  Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**, and then set **Allow security intelligence updates when running on battery power** to **Disabled**. Then select **OK**. 
 
