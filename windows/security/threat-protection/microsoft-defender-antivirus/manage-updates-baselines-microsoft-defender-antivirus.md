@@ -68,7 +68,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 ## Monthly platform and engine versions
 
-For information how to update or how to install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+For information how to update or install the platform update, see [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 All our updates contain 
 - performance improvements;
@@ -138,7 +138,8 @@ No known issues
 
 ### Previous version updates: Technical upgrade support only
 
-Previous version updates are listed below, and are provided for technical upgrade support only. <br/>
+Previous version updates are listed below, and are provided for technical upgrade support only. 
+<br/>
 
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
