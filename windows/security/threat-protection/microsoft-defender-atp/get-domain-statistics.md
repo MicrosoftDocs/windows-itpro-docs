@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Retrieves the statistics on the given domain.
@@ -71,10 +75,8 @@ If successful and domain exists - 200 OK, with statistics object in the response
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/domains/example.com/stats
+GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats
 ```
 
 **Response**
@@ -86,7 +88,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-	"@odata.context": "https://api.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
+	"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
 	"host": "example.com",
     "orgPrevalence": "4070",
     "orgFirstSeen": "2017-07-30T13:23:48Z",

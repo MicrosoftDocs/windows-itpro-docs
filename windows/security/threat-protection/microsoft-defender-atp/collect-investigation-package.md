@@ -24,7 +24,12 @@ ms.topic: article
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Collect investigation package from a device.
@@ -49,7 +54,7 @@ Delegated (work or school account) |	Machine.CollectForensics |	'Collect forensi
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/collectInvestigationPackage
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
 ## Request headers
@@ -76,10 +81,8 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
+POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
 Content-type: application/json
 {
   "Comment": "Collect forensics due to alert 1234"
