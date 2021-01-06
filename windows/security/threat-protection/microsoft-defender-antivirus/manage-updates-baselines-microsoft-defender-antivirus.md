@@ -216,12 +216,13 @@ No known issues
 &ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
-* Improved logging for scan events
-* Improved user mode crash handling.
-* Added event tracing for Tamper protection
-* Fixed AMSI Sample submission
-* Fixed AMSI Cloud blocking
-* Fixed Security update install log
+
+- Improved logging for scan events
+- Improved user mode crash handling.
+- Added event tracing for Tamper protection
+- Fixed AMSI Sample submission
+- Fixed AMSI Cloud blocking
+- Fixed Security update install log
 
 ### Known Issues
 No known issues  
@@ -238,13 +239,13 @@ No known issues
 &ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
-* WDfilter improvements
-* Add more actionable event data to attack surface reduction detection events
-* Fixed version information in diagnostic data and WMI
-* Fixed incorrect platform version in UI after platform update
-* Dynamic URL intel for Fileless threat protection
-* UEFI scan capability
-* Extend logging for updates
+- WDfilter improvements
+- Add more actionable event data to attack surface reduction detection events
+- Fixed version information in diagnostic data and WMI
+- Fixed incorrect platform version in UI after platform update
+- Dynamic URL intel for Fileless threat protection
+- UEFI scan capability
+- Extend logging for updates
 
 ### Known Issues
 No known issues  
@@ -262,11 +263,11 @@ No known issues
     
 ### What's new
 
-* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
-* Improve diagnostic capability
-* reduce Security intelligence timeout (5 min)
-* Extend AMSI engine internal log capability
-* Improve notification for process blocking
+- CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
+- Improve diagnostic capability
+- reduce Security intelligence timeout (5 min)
+- Extend AMSI engine internal log capability
+- Improve notification for process blocking
    
 ### Known Issues
 [**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
@@ -335,10 +336,10 @@ Support phase: **No support**
      
 ### What's new
 
-* Fixed MpCmdRun tracing level
-* Fixed WDFilter version info
-* Improve notifications (PUA)
-* add MRT logs to support files
+- Fixed MpCmdRun tracing level
+- Fixed WDFilter version info
+- Improve notifications (PUA)
+- add MRT logs to support files
    
 ### Known Issues
 When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
@@ -350,10 +351,9 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
 
-* **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
+- **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
  
-
-* **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
+- **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
 
 \* Technical support will continue to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
@@ -437,7 +437,7 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 <br/>
 </details>
 
-## See also
+## Additional resources
 
 | Article | Description  |
 |:---|:---|
