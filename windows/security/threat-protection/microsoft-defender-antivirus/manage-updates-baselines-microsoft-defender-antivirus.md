@@ -138,8 +138,7 @@ No known issues
 
 ### Previous version updates: Technical upgrade support only
 
-<br/>
-
+Previous version updates are listed below, and are provided for technical upgrade support only. 
 
 <details>
 <summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
