@@ -25,10 +25,37 @@ This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID
 
 For the PROXY CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the PROXY configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
-
-![proxy csp (dm)](images/provisioning-csp-proxy.png)
-
+The following shows the PROXY configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+```
+./Vendor/MSFT
+Proxy
+----*
+--------ProxyId
+--------Name
+--------AddrType
+--------Addr
+--------AddrFQDN
+--------ConRefs
+------------*
+----------------ConRef
+--------Domains
+------------*
+----------------DomainName
+--------Ports
+------------*
+----------------PortNbr
+----------------Services
+--------------------*
+------------------------ServiceName
+--------ProxyType
+--------ProxyParams
+------------WAP
+----------------Trust
+----------------PushEnabled
+--------Ext
+------------Microsoft
+----------------Guid
+```
 <a href="" id="--vendor-msft-proxy"></a>**./Vendor/MSFT/Proxy**  
 Root node for the proxy connection.
 

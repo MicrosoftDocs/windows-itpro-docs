@@ -17,10 +17,22 @@ ms.date: 06/26/2017
 
 The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
-The following diagram shows the Reporting configuration service provider in tree format.
-
-![reporting csp diagram](images/provisioning-csp-reporting.png)
-
+The following shows the Reporting configuration service provider in tree format.
+```
+./Vendor/MSFT
+Reporting
+----EnterpriseDataProtection
+--------RetrieveByTimeRange
+------------Logs
+------------StartTime
+------------StopTime
+------------Type
+--------RetrieveByCount
+------------Logs
+------------LogCount
+------------StartTime
+------------Type
+```
 <a href="" id="reporting"></a>**Reporting**  
 Root node.
 

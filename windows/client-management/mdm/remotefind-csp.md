@@ -17,10 +17,21 @@ ms.date: 06/26/2017
 
 The RemoteFind configuration service provider retrieves the location information for a particular device.
 
-The following diagram shows the RemoteFind configuration service provider management object in tree format as used by OMA Client Provisioning.
-
-![remotefind csp](images/provisioning-csp-remotefind.png)
-
+The following shows the RemoteFind configuration service provider management object in tree format as used by OMA Client Provisioning.
+```
+./Vendor/MSFT
+RemoteFind
+----DesiredAccuracy
+----MaximumAge
+----Timeout
+----Location
+--------Latitude
+--------Longitude
+--------Altitude
+--------Accuracy
+--------AltitudeAccuracy
+--------Age
+```
 <a href="" id="desiredaccuracy"></a>**DesiredAccuracy**  
 Optional. The node accepts the requested radius value in meters. Valid values for accuracy are any value between 1 and 1000 meters.
 

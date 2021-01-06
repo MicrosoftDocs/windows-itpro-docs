@@ -20,10 +20,32 @@ This CSP was added in Windows 10, version 1703.
 
 For additional information, see [Office DDF](office-ddf.md).
 
-The following diagram shows the Office configuration service provider in tree format.
+The following shows the Office configuration service provider in tree format.
+```
+./Vendor/MSFT
+Office
+----Installation
+--------id
+------------Install
+------------Status
 
-![Office CSP diagram](images/provisioning-csp-office.png)
 
+./Device/Vendor/MSFT
+Office
+----Installation
+--------id
+------------Install
+------------Status
+
+
+./Vendor/MSFT
+./Device/Vendor/MSFT
+Office
+----Installation
+--------id
+------------Install
+------------Status
+```
 <a href="" id="office"></a>**./Device/Vendor/MSFT/Office/ or ./User/Vendor/MSFT/Office**  
 The root node for the Office configuration service provider.</p>
 

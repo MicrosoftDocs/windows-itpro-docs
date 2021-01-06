@@ -21,10 +21,12 @@ The RemoteLock CSP supports the ability to lock a device that has a PIN set on t
 > The RemoteLock CSP is only supported in Windows 10 Mobile.
 
  
-The following diagram shows the RemoteLock configuration service provider in a tree format.
-
-![provisioning\-csp\-remotelock](images/provisioning-csp-remotelock.png)
-
+The following shows the RemoteLock configuration service provider in a tree format.
+```
+./Vendor/MSFT
+RemoteLock
+----Lock
+```
 <a href="" id="--vendor-msft-remotelock"></a>**./Vendor/MSFT/RemoteLock**
 <p style="margin-left: 20px">Defines the root node for the RemoteLock configuration service provider.</p>
 

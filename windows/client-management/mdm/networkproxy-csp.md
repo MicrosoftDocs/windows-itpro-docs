@@ -28,10 +28,18 @@ How the settings work:
 </ol>
 
 
-The following diagram shows the NetworkProxy configuration service provider in tree format.
-
-![networkproxy csp](images/provisioning-csp-networkproxy.png)
-
+The following shows the NetworkProxy configuration service provider in tree format.
+```
+./Vendor/MSFT
+NetworkProxy
+----ProxySettingsPerUser
+----AutoDetect
+----SetupScriptUrl
+----ProxyServer
+--------ProxyAddress
+--------Exceptions
+--------UseProxyForLocalAddresses
+```
 <a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
 The root node for the NetworkProxy configuration service provider..
 

@@ -27,10 +27,19 @@ The following actions are supported:
 > [!NOTE]
 > The NetworkQoSPolicy configuration service provider is officially supported for devices that are Intune managed and Azure AD joined. Currently, this CSP is not supported on Azure AD Hybrid joined devices and for devices using GPO and CSP at the same time. The minimum operating system requirement for this CSP is Windows 10, version 2004. This CSP is supported only in Microsoft Surface Hub prior to Window 10, version 2004.
 
-The following diagram shows the NetworkQoSPolicy configuration service provider in tree format.
-
-![NetworkQoSPolicy CSP diagram](images/provisioning-csp-networkqospolicy.png)
-
+The following shows the NetworkQoSPolicy configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+NetworkQoSPolicy
+----Version
+----Name
+--------IPProtocolMatchCondition
+--------AppPathNameMatchCondition
+--------SourcePortMatchCondition
+--------DestinationPortMatchCondition
+--------PriorityValue8021Action
+--------DSCPAction
+```
 <a href="" id="networkqospolicy"></a>**NetworkQoSPolicy**   
 <p style="margin-left: 20px">The root node for the NetworkQoSPolicy configuration service provider.</p>
 
