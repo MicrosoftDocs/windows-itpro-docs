@@ -336,6 +336,271 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 <br/>
 </details>
 
+### Previous version updates: Technical upgrade support only
+
+<br/>
+
+
+<details>
+<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
+
+&ensp;Security intelligence update version: **1.327.1854.0**  
+&ensp;Released: **December 03, 2020**  
+&ensp;Platform: **4.18.2011.6**  
+&ensp;Engine: **1.1.17700.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Improved SmartScreen status support logging
+- Apply CPU throttling policy to manually initiated scans
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
+
+&ensp;Security intelligence update version: **1.327.7.0**  
+&ensp;Released: **October 29, 2020**  
+&ensp;Platform: **4.18.2010.7**  
+&ensp;Engine: **1.1.17600.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- New descriptions for special threat categories
+- Improved emulation capabilities
+- Improved host address allow/block capabilities
+- New option in Defender CSP to Ignore merging of local user exclusions
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
+<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
+
+&ensp;Security intelligence update version: **1.325.10.0**  
+&ensp;Released: **October 01, 2020**  
+&ensp;Platform: **4.18.2009.7**  
+&ensp;Engine: **1.1.17500.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Admin permissions are required to restore files in quarantine
+- XML formatted events are now supported
+- CSP support for ignoring exclusion merges
+- New management interfaces for:
+   - UDP Inspection
+   - Network Protection on Server 2019
+   - IP Address exclusions for Network Protection
+- Improved visibility into TPM measurements
+- Improved Office VBA module scanning
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+<details>
+<summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
+
+&ensp;Security intelligence update version: **1.323.9.0**  
+&ensp;Released: **August 27, 2020**  
+&ensp;Platform: **4.18.2008.9**  
+&ensp;Engine: **1.1.17400.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+
+- Add more telemetry events
+- Improved scan event telemetry
+- Improved behavior monitoring for memory scans
+- Improved macro streams scanning
+- Added `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
+- [DisableAntiSpyware](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
+
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</summary>
+
+&ensp;Security intelligence update version: **1.321.30.0**  
+&ensp;Released: **July 28, 2020**  
+&ensp;Platform: **4.18.2007.8**  
+&ensp;Engine: **1.1.17300.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+* Improved telemetry for BITS
+* Improved Authenticode code signing certificate validation
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
+
+&ensp;Security intelligence update version: **1.319.20.0**  
+&ensp;Released: **June 22, 2020**  
+&ensp;Platform: **4.18.2006.10**  
+&ensp;Engine: **1.1.17200.2**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
+    
+### What's new
+* Possibility to specify the [location of the support logs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+* Skipping aggressive catchup scan in Passive mode.
+* Allow Defender to update on metered connections
+* Fixed performance tuning when caching is disabled 
+* Fixed registry query 
+* Fixed scantime randomization in ADMX
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
+
+&ensp;Security intelligence update version: **1.317.20.0**  
+&ensp;Released: **May 26, 2020**  
+&ensp;Platform: **4.18.2005.4**  
+&ensp;Engine: **1.1.17100.2**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
+    
+### What's new
+* Improved logging for scan events
+* Improved user mode crash handling.
+* Added event tracing for Tamper protection
+* Fixed AMSI Sample submission
+* Fixed AMSI Cloud blocking
+* Fixed Security update install log
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</summary>
+
+&ensp;Security intelligence update version: **1.315.12.0**  
+&ensp;Released: **April 30, 2020**  
+&ensp;Platform: **4.18.2004.6**  
+&ensp;Engine: **1.1.17000.2**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
+    
+### What's new
+* WDfilter improvements
+* Add more actionable event data to attack surface reduction detection events
+* Fixed version information in diagnostic data and WMI
+* Fixed incorrect platform version in UI after platform update
+* Dynamic URL intel for Fileless threat protection
+* UEFI scan capability
+* Extend logging for updates
+
+### Known Issues
+No known issues  
+<br/>
+</details>
+
+<details>
+<summary> March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</summary>
+
+&ensp;Security intelligence update version: **1.313.8.0**  
+&ensp;Released: **March 24, 2020**  
+&ensp;Platform: **4.18.2003.8**  
+&ensp;Engine: **1.1.16900.4**  
+&ensp;Support phase: **Technical upgrade Support (Only)**
+    
+### What's new
+
+* CPU Throttling option added to [MpCmdRun](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)
+* Improve diagnostic capability
+* reduce Security intelligence timeout (5 min)
+* Extend AMSI engine internal log capability
+* Improve notification for process blocking
+   
+### Known Issues
+[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
+
+<br/>
+</details>
+
+<details>
+
+<summary> February-2020 (Platform: - | Engine: 1.1.16800.2)</summary>
+  
+
+  Security intelligence update version: **1.311.4.0**   
+  Released: **February 25, 2020**  
+  Platform/Client: **-**  
+  Engine: **1.1.16800.2**  
+  Support phase: **N/A**
+     
+### What's new
+
+  
+### Known Issues
+No known issues
+<br/>
+</details>
+
+<details>
+<summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
+  
+
+Security intelligence update version: **1.309.32.0**  
+Released: **January 30, 2020**  
+Platform/Client: **4.18.2001.10**  
+Engine: **1.1.16700.2**  
+Support phase: **Technical upgrade Support (Only)**
+     
+### What's new
+
+* Fixed BSOD on WS2016 with Exchange
+* Support platform updates when TMP is redirected to network path
+* Platform and engine versions are added to [WDSI](https://www.microsoft.com/wdsi/defenderupdates)
+* extend Emergency signature update to [passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* Fix 4.18.1911.3 hang
+   
+### Known Issues
+[**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
+<br/>
+> [!IMPORTANT]
+> This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
+<br/>
+> [!IMPORTANT]
+> This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
+<br/>
+</details>
+
+<details>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
+
+Security intelligence update version: **1.307.13.0**  
+Released: **December 7, 2019**  
+Platform: **4.18.1911.3**  
+Engine: **1.1.17000.7**  
+Support phase: **No support**  
+     
+### What's new
+
+* Fixed MpCmdRun tracing level
+* Fixed WDFilter version info
+* Improve notifications (PUA)
+* add MRT logs to support files
+   
+### Known Issues
+When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
+<br/>
+</details>
+
+
 ## Microsoft Defender Antivirus platform support
 Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
