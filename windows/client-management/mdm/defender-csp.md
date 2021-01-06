@@ -20,10 +20,41 @@ ms.date: 08/11/2020
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following image shows the Windows Defender configuration service provider in tree format.
-
-![defender csp diagram](images/provisioning-csp-defender.png)
-
+The following shows the Windows Defender configuration service provider in tree format.
+```
+./Vendor/MSFT
+Defender
+----Detections
+--------ThreatId
+------------Name
+------------URL
+------------Severity
+------------Category
+------------CurrentStatus
+------------ExecutionStatus
+------------InitialDetectionTime
+------------LastThreatStatusChangeTime
+------------NumberOfDetections
+----Health
+--------ComputerState
+--------DefenderEnabled
+--------RtpEnabled
+--------NisEnabled
+--------QuickScanOverdue
+--------FullScanOverdue
+--------SignatureOutOfDate
+--------RebootRequired
+--------FullScanRequired
+--------EngineVersion
+--------SignatureVersion
+--------DefenderVersion
+--------QuickScanTime
+--------FullScanTime
+--------QuickScanSigVersion
+--------FullScanSigVersion
+----Scan
+----UpdateSignature
+```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
 

@@ -21,10 +21,40 @@ The DevDetail configuration service provider handles the management object which
 
 For the DevDetail CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the DevDetail configuration service provider management object in tree format as used by OMA Device Management. The OMA Client Provisioning protocol is not supported for this configuration service provider.
-
-![devdetail csp (dm)](images/provisioning-csp-devdetail-dm.png)
-
+The following shows the DevDetail configuration service provider management object in tree format as used by OMA Device Management. The OMA Client Provisioning protocol is not supported for this configuration service provider.
+```
+.
+DevDetail
+----URI
+--------MaxDepth
+--------MaxTotLen
+--------MaxSegLen
+----DevTyp
+----OEM
+----FwV
+----SwV
+----HwV
+----LrgObj
+----Ext
+--------Microsoft
+------------MobileID
+------------RadioSwV
+------------Resolution
+------------CommercializationOperator
+------------ProcessorArchitecture
+------------ProcessorType
+------------OSPlatform
+------------LocalTime
+------------DeviceName
+------------TotalStorage
+------------TotalRAM
+--------WLANMACAddress
+--------VoLTEServiceSetting
+--------WlanIPv4Address
+--------WlanIPv6Address
+--------WlanDnsSuffix
+--------WlanSubnetMask
+```
 <a href="" id="devtyp"></a>**DevTyp**  
 Required. Returns the device model name /SystemProductName as a string.
 

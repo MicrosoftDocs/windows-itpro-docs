@@ -25,10 +25,41 @@ The CM\_ProxyEntries configuration service provider is used to configure proxy c
 
  
 
-The following diagram shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
+The following shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
 
-![cm\-proxyentries csp (cp)](images/provisioning-csp-cm-proxyentries-cp.png)
+```
+./Vendor/MSFT
+CM_ProxyEntries
+----Entry
+--------ConnectionName
+--------BypassLocal
+--------Enable
+--------Exception
+--------Password
+--------Port
+--------Server
+--------Type
+--------Username
 
+
+./Device/Vendor/MSFT
+Root
+
+
+./Vendor/MSFT
+./Device/Vendor/MSFT
+CM_ProxyEntries
+----Entry
+--------ConnectionName
+--------BypassLocal
+--------Enable
+--------Exception
+--------Password
+--------Port
+--------Server
+--------Type
+--------Username
+```
 <a href="" id="entryname"></a>**entryname**  
 Defines the name of the connection proxy.
 
