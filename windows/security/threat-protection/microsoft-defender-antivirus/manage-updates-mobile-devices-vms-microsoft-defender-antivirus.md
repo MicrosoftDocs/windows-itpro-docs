@@ -1,6 +1,6 @@
 ---
-title: Define how mobile devices are updated by Microsoft Defender AV
-description: Manage how mobile devices, such as laptops, should be updated with Microsoft Defender AV protection updates.
+title: Define how mobile devices are updated by Microsoft Defender Antivirus
+description: Manage how mobile devices, such as laptops, should be updated with Microsoft Defender Antivirus protection updates.
 keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
