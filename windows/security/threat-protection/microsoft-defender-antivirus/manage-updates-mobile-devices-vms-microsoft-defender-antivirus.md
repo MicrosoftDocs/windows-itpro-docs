@@ -44,21 +44,21 @@ This means that protection updates can be delivered to devices (via Microsoft Up
 
 You can opt in to Microsoft Update on the mobile device in one of the following ways:
 
-1. Change the setting with Group Policy
-2. Use a VBScript to create a script, then run it on each computer in your network.
-3. Manually opt in every computer on your network through the **Settings** menu.
+- Change the setting with Group Policy.
+- Use a VBScript to create a script, then run it on each computer in your network.
+- Manually opt in every computer on your network through the **Settings** menu.
 
 ### Use Group Policy to opt in to Microsoft Update
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+3. Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
 
-6.  Double-click the **Allow security intelligence updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
+5. Double-click the **Allow security intelligence updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
 
 
 ### Use a VBScript to opt-in to Microsoft Update
