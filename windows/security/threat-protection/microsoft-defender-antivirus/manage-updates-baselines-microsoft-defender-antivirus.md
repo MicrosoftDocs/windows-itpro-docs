@@ -47,7 +47,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
 
-For a list of recent security intelligence updates, please visit: [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/definitions/antimalware-definition-release-notes).
+For a list of recent security intelligence updates, see [Antimalware updates change log - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/definitions/antimalware-definition-release-notes).
 
 Engine updates are included with security intelligence updates and are released on a monthly cadence.
 
@@ -315,9 +315,12 @@ Engine: **1.1.16700.2**
 [**Fixed**] devices utilizing [modern standby mode](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.  
 <br/>
 > [!IMPORTANT]
-> This updates is needed by RS1 devices running lower version of the platform to support SHA2. <br/>This update has reboot flag for systems that are experiencing the hang issue.<br/> the This update is re-released in April 2020 and will not be superseded by newer updates to keep future availability.
-> 
-> This update is categorized as an "update" due to its reboot requirement and will only be offered with a [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)
+> This update is:
+> - needed by RS1 devices running lower version of the platform to support SHA2;
+> - has a reboot flag for systems that have hanging issues;
+> - is re-released in April 2020 and will not be superseded by newer updates to keep future availability;  
+> - is categorized as an update due to the reboot requirement; and
+> - is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
 <br/>
 </details>
 
@@ -439,7 +442,7 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 | Article | Description  |
 |:---|:---|
 |[Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Review antimalware update packages for your OS installation images (WIM and VHD files). Get Microsoft Defender Antivirus updates for Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, and Windows Server 2016 installation images.  |
-|[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through a number of sources. |
+|[Manage how protection updates are downloaded and applied](manage-protection-updates-microsoft-defender-antivirus.md) | Protection updates can be delivered through many sources. |
 |[Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) | You can schedule when protection updates should be downloaded. |
 |[Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md) | If an endpoint misses an update or scheduled scan, you can force an update or scan the next time a user signs in. |
 |[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events. |
