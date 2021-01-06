@@ -36,21 +36,21 @@ The following articles may also be useful in these situations:
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
 
-## Opt-in to Microsoft Update on mobile computers without a WSUS connection
+## Opt in to Microsoft Update on mobile computers without a WSUS connection
 
 You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
-You can opt-in to Microsoft Update on the mobile device in one of the following ways:
+You can opt in to Microsoft Update on the mobile device in one of the following ways:
 
 1. Change the setting with Group Policy
 2. Use a VBScript to create a script, then run it on each computer in your network.
-3. Manually opt-in every computer on your network through the **Settings** menu.
+3. Manually opt in every computer on your network through the **Settings** menu.
 
-### Use Group Policy to opt-in to Microsoft Update
+### Use Group Policy to opt in to Microsoft Update
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
