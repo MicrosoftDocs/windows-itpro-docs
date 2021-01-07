@@ -15,10 +15,27 @@ manager: dansimp
 
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
 
-The following diagram shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
-
-![windowsdefenderapplicationguard csp](images/provisioning-csp-windowsdefenderapplicationguard.png)
-
+The following shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+WindowsDefenderApplicationGuard
+----Settings
+--------AllowWindowsDefenderApplicationGuard
+--------ClipboardFileType
+--------ClipboardSettings
+--------PrintingSettings
+--------BlockNonEnterpriseContent
+--------AllowPersistence
+--------AllowVirtualGPU
+--------SaveFilesToHost
+--------CertificateThumbprints
+--------AllowCameraMicrophoneRedirection
+----Status
+----PlatformStatus
+----InstallWindowsDefenderApplicationGuard
+----Audit
+--------AuditApplicationGuard
+```
 <a href="" id="windowsdefenderapplicationguard"></a>**./Device/Vendor/MSFT/WindowsDefenderApplicationGuard**  
 Root node. Supported operation is Get.
 

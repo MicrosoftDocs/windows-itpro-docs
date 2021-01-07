@@ -22,10 +22,33 @@ The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmwa
 > [!NOTE]
 > The production UEFI CSP is present in 1809, but it depends upon the [Device Firmware Configuration Interface (DFCI) and UEFI firmware](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) to comply with this interface.
 
-The following diagram shows the UEFI CSP in tree format.
-
-![Uefi CSP diagram](images/provisioning-csp-uefi.png)
-
+The following shows the UEFI CSP in tree format.
+```
+./Vendor/MSFT
+Uefi
+----DeviceIdentifier
+----Identity
+--------Current
+--------Apply
+--------Result
+----Permissions
+--------Current
+--------Apply
+--------Result
+----Settings
+--------Current
+--------Apply
+--------Result
+----Identity2
+--------Apply
+--------Result
+----Permissions2
+--------Apply
+--------Result
+----Settings2
+--------Apply
+--------Result
+```
 The following list describes the characteristics and parameters.
 
 <a href="" id="uefi"></a>**./Vendor/MSFT/Uefi**  

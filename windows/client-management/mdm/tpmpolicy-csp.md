@@ -18,10 +18,12 @@ The TPMPolicy configuration service provider (CSP) provides a mechanism to enabl
 
 The TPMPolicy CSP was added in Windows 10, version 1703.
 
-The following diagram shows the TPMPolicy configuration service provider in tree format.
-
-![tpmpolicy csp](images/provisioning-csp-tpmpolicy.png)
-
+The following shows the TPMPolicy configuration service provider in tree format.
+```
+./Vendor/MSFT
+TPMPolicy
+----IsActiveZeroExhaust
+```
 <a href="" id="--device-vendor-msft-tpmpolicy"></a>**./Device/Vendor/MSFT/TPMPolicy**  
 <p style="margin-left: 20px">Defines the root node.</p>
 
