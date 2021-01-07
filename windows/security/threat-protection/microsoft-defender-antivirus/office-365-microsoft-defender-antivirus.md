@@ -24,9 +24,9 @@ manager: dansimp
 
 
 **Applies to:**
-
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - Microsoft Defender Antivirus
-- Office 365
+- Microsoft 365
 
 You might already know that:
 

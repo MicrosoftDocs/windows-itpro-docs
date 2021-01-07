@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 01/07/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -355,7 +355,6 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 ## Microsoft Defender Antivirus platform support
 Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
-
 - **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
  
 - **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
@@ -387,6 +386,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2101.02</summary>
+
+&ensp;Package version: **1.1.2101.02**    
+&ensp;Platform version: **4.18.2011.6**   
+&ensp;Engine version: **1.17700.4**  
+&ensp;Signature version: **1.329.1796.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2012.01</summary>
 
 &ensp;Package version: **1.1.2012.01**    
