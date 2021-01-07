@@ -60,7 +60,7 @@ The following properties are supported for file directories:
 
 - `Name`: The file directory name. The Get command is the only supported command.
 
-- `Type`: The MIME type of the file, which an empty string for directories that are not the root node. The Get command is the only supported command.
+- `Type`: The MIME type of the file, which is an empty string for directories that are not the root node. The Get command is the only supported command.
 
 - `Format`: The format, which is `node`. The Get command is the only supported command.
 
