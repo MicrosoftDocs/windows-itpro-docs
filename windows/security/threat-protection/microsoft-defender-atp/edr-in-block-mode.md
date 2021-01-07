@@ -43,7 +43,7 @@ EDR in block mode is also integrated with [threat & vulnerability management](ht
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as **Blocked** or **Prevented** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#check-activity-details-in-action-center).
+When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint blocks and remediates that artifact. You'll see detection status as **Blocked** or **Prevented** as completed actions in the [Action center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#check-activity-details-in-action-center).
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
@@ -111,10 +111,10 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 2. Type `Get-MpComputerStatus`.
 
-3. In the list of results, look for one of the following:   
-   - `AMRunningMode: Normal`
-   - `AMRunningMode: Passive Mode`  
-   - `AMRunningMode: SxS Passive Mode`
+3. In the list of results, in the `AMRunningMode` row, look for one of the following values:   
+   - `Normal`
+   - `Passive Mode`  
+   - `SxS Passive Mode`
 
 To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps).
 
