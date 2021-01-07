@@ -71,7 +71,7 @@ The following image shows an instance of unwanted software that was detected and
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
-|Cloud-delivered protection |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. You can use Microsoft Defender Antivirus alongside another antivirus solution. <br/><br/>In addition, make sure Microsoft Defender Antivirus is configured such that cloud-delivered protection is enabled. See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
+|Cloud-delivered protection |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (If you are using a non-Microsoft antivirus solution, you can still use Microsoft Defender Antivirus. See [How do I confirm Microsoft Defender Antivirus is in active or passive mode?](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).)<br/><br/>In addition, make sure Microsoft Defender Antivirus is configured such that cloud-delivered protection is enabled. See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
 |Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
 |Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
@@ -96,6 +96,35 @@ Because Microsoft Defender Antivirus detects and remediates malicious items, it'
 ### Why do we need cloud protection on? 
 
 Cloud protection is needed to turn on the feature on the device. Cloud protection allows [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) to deliver the latest and greatest protection based on our breadth and depth of security intelligence, along with behavioral and device learning models.
+
+### How do I set Microsoft Defender Antivirus to passive mode?
+
+See [Enable Microsoft Defender Antivirus and confirm it's in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/switch-to-microsoft-defender-setup#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
+
+### How do I confirm Microsoft Defender Antivirus is in active or passive mode?
+
+To confirm whether Microsoft Defender Antivirus is running in active or passive mode, you can use Command Prompt or PowerShell on a device running Windows.
+
+#### Use PowerShell
+
+1. Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results.
+
+2. Type `Get-MpComputerStatus`.
+
+3. In the list of results, look for one of the following:   
+   - `AMRunningMode: Normal`
+   - `AMRunningMode: Passive Mode`  
+   - `AMRunningMode: SxS Passive Mode`
+
+To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps).
+
+#### Use Command Prompt
+
+1. Select the Start menu, begin typing `Command Prompt`, and then open Windows Command Prompt in the results.
+
+2. Type `sc query windefend`.
+
+3. In the list of results, in the `STATE` row, confirm that the service is running.
 
 ## See also
 
