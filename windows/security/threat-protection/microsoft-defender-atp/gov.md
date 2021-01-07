@@ -58,8 +58,8 @@ Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No]
 Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Mac OS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
-iOS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Android | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 
 > [!NOTE]
 > A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
@@ -107,7 +107,7 @@ These are the known gaps as of January 2021:
 Feature name | GCC | GCC High
 :---|:---|:---
 Automated investigation and remediation: Live response | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Automated investigation and remediation: Response to Office 365 alerts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Email notifications | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Evaluation lab | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Management and APIs: Device health and compliance report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
@@ -118,11 +118,11 @@ Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](
 Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Web content filtering | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Integrations: Microsoft Defender for Identity | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Integrations: Microsoft Defender for Office 365 | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 Integrations: Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Power Automate & Azure Logic Apps | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Integrations: Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
