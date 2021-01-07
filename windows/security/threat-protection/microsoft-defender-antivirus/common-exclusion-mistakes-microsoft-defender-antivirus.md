@@ -21,12 +21,12 @@ manager: dansimp
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
 
-This topic describes some common mistake that you should avoid when defining exclusions. 
+This article describes some common mistake that you should avoid when defining exclusions. 
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## Excluding certain trusted items
-There are certain files, file types, folders, or processes that you should not exclude from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.
+Certain files, file types, folders, or processes should not be excluded from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.
 
 **Do not add exclusions for the following folder locations:**
 
@@ -61,44 +61,44 @@ There are certain files, file types, folders, or processes that you should not e
 - C:\Windows\Temp\*
 
 **Do not add exclusions for the following file extensions:**  
-- .7zip
-- .bat
-- .bin
-- .cab
-- .cmd
-- .com
-- .cpl
-- .dll
-- .exe
-- .fla
-- .gif
-- .gz
-- .hta
-- .inf
-- .java
-- .jar
-- .job
-- .jpeg
-- .jpg
-- .js
-- .ko
-- .ko.gz
-- .msi
-- .ocx
-- .png
-- .ps1
-- .py
-- .rar
-- .reg
-- .scr
-- .sys
-- .tar
-- .tmp
-- .url
-- .vbe
-- .vbs
-- .wsf
-- .zip
+- `.7zip`
+- `.bat`
+- `.bin`
+- `.cab`
+- `.cmd`
+- `.com`
+- `.cpl`
+- `.dll`
+- `.exe`
+- `.fla`
+- `.gif`
+- `.gz`
+- `.hta`
+- `.inf`
+- `.java`
+- `.jar`
+- `.job`
+- `.jpeg`
+- `.jpg`
+- `.js`
+- `.ko`
+- `.ko.gz`
+- `.msi`
+- `.ocx`
+- `.png`
+- `.ps1`
+- `.py`
+- `.rar`
+- `.reg`
+- `.scr`
+- `.sys`
+- `.tar`
+- `.tmp`
+- `.url`
+- `.vbe`
+- `.vbs`
+- `.wsf`
+- `.zip`
 
 >[!NOTE]
 > You can chose to exclude file types, such as .gif, .jpg, .jpeg, .png if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
