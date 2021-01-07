@@ -126,4 +126,4 @@ Integrations: Microsoft Endpoint DLP | ![No](../images/svg/check-no.svg) On engi
 Integrations: Microsoft Intune | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Power Automate & Azure Logic Apps | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Integrations: Skype for Business / Teams | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Microsoft Threat Experts | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
+Microsoft Threat Experts | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
