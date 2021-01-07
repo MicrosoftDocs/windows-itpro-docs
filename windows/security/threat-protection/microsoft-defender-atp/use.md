@@ -37,7 +37,7 @@ Use the **Threat & Vulnerability Management** dashboard to expand your visibilit
 Use the **Threat analytics** dashboard to continually assess and control risk exposure to Spectre and Meltdown.
 
 ## Microsoft Defender for Endpoint interactive guide
-In this interactive guide, you'll learn how to investigate threads to your organization with Microsoft Defender for Endpoint. You'll see how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
+In this interactive guide, you'll learn how to investigate threats to your organization with Microsoft Defender for Endpoint. You'll see how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
 
 [!VIDEO https://aka.ms/MSDE-IG]
 
