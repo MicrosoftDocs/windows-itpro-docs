@@ -116,7 +116,7 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
    - `Passive Mode`  
    - `SxS Passive Mode`
 
-To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps).
+To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus).
 
 #### Use Command Prompt
 
