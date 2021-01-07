@@ -76,8 +76,7 @@ The following image shows an instance of unwanted software that was detected and
 |Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
-> To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your exclusions are defined. 
-
+> To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your [exclusions](../microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md) are defined. EDR in block mode respects exclusions that are defined for Microsoft Defender Antivirus.
 
 ## Frequently asked questions 
 
