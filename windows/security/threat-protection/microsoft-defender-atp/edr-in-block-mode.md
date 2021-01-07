@@ -91,7 +91,7 @@ EDR in block mode does not affect third-party antivirus protection running on us
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to use the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date. For EDR in block mode to be effective, it uses the latest device learning models, behavioral detections, and heuristics. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner. To get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
@@ -111,7 +111,7 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 2. Type `Get-MpComputerStatus`.
 
-3. In the list of results, in the `AMRunningMode` row, look for one of the following values:   
+3. In the list of results, in the **AMRunningMode** row, look for one of the following values:   
    - `Normal`
    - `Passive Mode`  
    - `SxS Passive Mode`
@@ -124,7 +124,7 @@ To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/
 
 2. Type `sc query windefend`.
 
-3. In the list of results, in the `STATE` row, confirm that the service is running.
+3. In the list of results, in the **STATE** row, confirm that the service is running.
 
 ## See also
 
