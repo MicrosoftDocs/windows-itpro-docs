@@ -32,7 +32,7 @@ ms.collection:
 
 ## What is EDR in block mode?
 
-When [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode is turned on, Defender for Endpoint blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected, post breach. 
+[Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR) in block mode provides protection from malicious artifacts, even when Microsoft Defender Antivirus is running in passive mode. When turned on, EDR in block mode blocks malicious artifacts or behaviors that are detected on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post breach. 
 
 EDR in block mode is also integrated with [threat & vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Your organization's security team will get a [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to turn EDR in block mode on if it isn't already enabled. 
 
@@ -83,15 +83,15 @@ The following image shows an instance of unwanted software that was detected and
 
 ### Do I need to turn EDR in block mode on even when I have Microsoft Defender Antivirus running on devices?
 
-We recommend keeping EDR in block mode on, whether Microsoft Defender Antivirus is running in passive mode or in active mode. EDR in block mode provides an additional layer of defense with Microsoft Defender for Endpoint. It allows Defender for Endpoint to take actions based on post-breach behavioral EDR detections. 
+We recommend keeping EDR in block mode on, whether Microsoft Defender Antivirus is running in passive mode or in active mode. EDR in block mode provides another layer of defense with Microsoft Defender for Endpoint. It allows Defender for Endpoint to take actions based on post-breach behavioral EDR detections. 
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode works if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), with the additional steps of blocking and remediating malicious artifacts or behaviors that are detected. 
+EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode works if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), except it also blocks and remediates malicious artifacts or behaviors that are detected. 
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to leverage the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to use the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
