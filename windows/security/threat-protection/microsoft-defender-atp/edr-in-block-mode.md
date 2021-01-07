@@ -73,8 +73,8 @@ The following image shows an instance of unwanted software that was detected and
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (You can use Microsoft Defender Antivirus alongside a non-Microsoft antivirus solution.) [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
 |Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that [cloud-delivered protection is enabled](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
-|Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
-|Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
+|Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
+|Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
 > [!IMPORTANT]
 > To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your [exclusions are configured](../microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus.md). EDR in block mode respects exclusions that are defined for Microsoft Defender Antivirus.
@@ -91,7 +91,7 @@ EDR in block mode does not affect third-party antivirus protection running on us
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
-Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date to use the latest device learning models, behavioral detections, and heuristics for EDR in block mode to be most effective. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner, and to get best protection value, you should keep Microsoft Defender Antivirus up to date.  
+Because Microsoft Defender Antivirus detects and remediates malicious items, it's important to keep it up to date. For EDR in block mode to be effective, it uses the latest device learning models, behavioral detections, and heuristics. The [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) stack of capabilities works in an integrated manner. To get best protection value, you should keep Microsoft Defender Antivirus up to date.  
 
 ### Why do we need cloud protection on? 
 
@@ -111,7 +111,7 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 2. Type `Get-MpComputerStatus`.
 
-3. In the list of results, in the `AMRunningMode` row, look for one of the following values:   
+3. In the list of results, in the **AMRunningMode** row, look for one of the following values:   
    - `Normal`
    - `Passive Mode`  
    - `SxS Passive Mode`
@@ -124,7 +124,7 @@ To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/
 
 2. Type `sc query windefend`.
 
-3. In the list of results, in the `STATE` row, confirm that the service is running.
+3. In the list of results, in the **STATE** row, confirm that the service is running.
 
 ## See also
 
