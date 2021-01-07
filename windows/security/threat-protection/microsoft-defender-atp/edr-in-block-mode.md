@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ms.custom: 
 - next-gen
 - edr
-ms.date: 12/14/2020
+ms.date: 01/07/2021
 ms.collection: 
 - m365-security-compliance 
 - m365initiative-defender-endpoint 
@@ -71,7 +71,7 @@ The following image shows an instance of unwanted software that was detected and
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/basic-permissions). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server 2016 or later         |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
-|Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that cloud-delivered protection is enabled. <br/><br/>See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
+|Cloud-delivered protection |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. You can use Microsoft Defender Antivirus alongside another antivirus solution. <br/><br/>In addition, make sure Microsoft Defender Antivirus is configured such that cloud-delivered protection is enabled. See [Enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
 |Microsoft Defender Antivirus antimalware client |Make sure your client is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/>In the **AMProductVersion** line, you should see **4.18.2001.10** or above. |
 |Microsoft Defender Antivirus engine |Make sure your engine is up to date. Using PowerShell, run the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet as an administrator. <br/> In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. |
 
