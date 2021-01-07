@@ -39,7 +39,7 @@ Use the **Threat analytics** dashboard to continually assess and control risk ex
 ## Microsoft Defender for Endpoint interactive guide
 In this interactive guide, you'll learn how to investigate threats to your organization with Microsoft Defender for Endpoint. You'll see how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
 
-[!VIDEO https://aka.ms/MSDE-IG]
+> [!VIDEO https://aka.ms/MSDE-IG]
 
 ### In this section
 
