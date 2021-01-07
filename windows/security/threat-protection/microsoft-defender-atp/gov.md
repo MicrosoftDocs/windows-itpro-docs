@@ -56,8 +56,8 @@ Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](.
 Windows 8 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
-Mac OS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
-Linux | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
+Mac OS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
+Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 iOS | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Android | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 
@@ -116,7 +116,7 @@ Management and APIs: Streaming API | ![No](../images/svg/check-no.svg) Coming so
 Management and APIs: Threat protection report | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat & vulnerability management | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Threat analytics | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
-Web content filtering | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
+Web content filtering | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![No](../images/svg/check-no.svg) Coming soon | ![No](../images/svg/check-no.svg) In development
 Integrations: Microsoft Cloud App Security | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
 Integrations: Microsoft Compliance Center | ![No](../images/svg/check-no.svg) | ![No](../images/svg/check-no.svg)
