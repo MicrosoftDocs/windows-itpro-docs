@@ -87,7 +87,7 @@ The following properties are supported for files:
 
 - `Type`: The MIME type of the file. This value is always set to the generic MIME type: `application/octet-stream`. The Get command is the only supported command.
 
-- `Format`: The format, which is b64 encoded for binary data is sent over XML, and bin format for binary data sent over wbxml. The Get command is the only supported command.
+- `Format`: The format, which is b64 encoded for binary data is sent over XML, and bin format for binary data sent over WBXML. The Get command is the only supported command.
 
 - `TStamp`: A standard OMA property that indicates the last time the file was changed. The value is represented by a string containing a UTC based, ISO 8601 basic format, complete representation of a date and time value, e.g. 20010711T163817Z means July 11, 2001 at 16 hours, 38 minutes and 17 seconds. The Get command is the only supported command.
 
