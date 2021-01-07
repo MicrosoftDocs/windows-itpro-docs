@@ -56,10 +56,10 @@ Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](.
 Windows 8 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
 Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Mac OS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
-iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+Mac OS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Android | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
+iOS | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
 
 > [!NOTE]
 > A patch must be deployed before device onboarding in order to configure Defender for Endpoint to the correct environment.
