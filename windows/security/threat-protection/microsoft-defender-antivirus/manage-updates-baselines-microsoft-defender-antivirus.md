@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 01/07/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -64,7 +64,7 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
-> We release these monthly updates in phases. This results in multiple packages visible in your WSUS server.
+> Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 
 ## Monthly platform and engine versions
 
@@ -143,7 +143,7 @@ No known issues
 
 ### Previous version updates: Technical upgrade support only
 
-Previous version updates are listed below, and are provided for technical upgrade support only. 
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
 <br/><br/>
 
 <details>
@@ -355,7 +355,6 @@ When this update is installed, the device needs the jump package 4.10.2001.10 to
 ## Microsoft Defender Antivirus platform support
 Platform and engine updates are provided on a monthly cadence. To be fully supported, keep current with the latest platform updates. Our support structure is dynamic, evolving into two phases depending on the availability of the latest platform version:
 
-
 - **Security and Critical Updates servicing phase** - When running the latest platform version, you will be eligible to receive both Security and Critical updates to the anti-malware platform.
  
 - **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 will no longer be supported.*
@@ -369,16 +368,16 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |:---|:---|:---|:---|
-|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade Support (Only) |
-|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade Support (Only) |
-|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade Support (Only) |
-|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade Support (Only) |
-|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade Support (Only) |
-|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade Support (Only) |
-|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade Support (Only) |
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade Support (Only) |  
+|2004  (20H1) |4.18.2004.6 |1.1.17000.2 | Technical upgrade support (only) |
+|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade support (only) |
+|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade support (only) |
+|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade support (only) |
+|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade support (only) |
+|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade support (only) |
+|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade support (only) |
+|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade support (only) |  
 
-Windows 10 release info: [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
@@ -387,6 +386,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2101.02</summary>
+
+&ensp;Package version: **1.1.2101.02**    
+&ensp;Platform version: **4.18.2011.6**   
+&ensp;Engine version: **1.17700.4**  
+&ensp;Signature version: **1.329.1796.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2012.01</summary>
 
 &ensp;Package version: **1.1.2012.01**    
