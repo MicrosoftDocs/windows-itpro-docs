@@ -21,12 +21,12 @@ manager: dansimp
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. 
 
-This topic describes some common mistake that you should avoid when defining exclusions. 
+This article describes some common mistake that you should avoid when defining exclusions. 
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## Excluding certain trusted items
-There are certain files, file types, folders, or processes that you should not exclude from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.
+Certain files, file types, folders, or processes should not be excluded from scanning even though you trust them to be not malicious. Refer to the following section for items that you should not exclude from scanning.
 
 **Do not add exclusions for the following folder locations:**
 
@@ -61,44 +61,44 @@ There are certain files, file types, folders, or processes that you should not e
 - C:\Windows\Temp\*
 
 **Do not add exclusions for the following file extensions:**  
-- .7zip
-- .bat
-- .bin
-- .cab
-- .cmd
-- .com
-- .cpl
-- .dll
-- .exe
-- .fla
-- .gif
-- .gz
-- .hta
-- .inf
-- .java
-- .jar
-- .job
-- .jpeg
-- .jpg
-- .js
-- .ko
-- .ko.gz
-- .msi
-- .ocx
-- .png
-- .ps1
-- .py
-- .rar
-- .reg
-- .scr
-- .sys
-- .tar
-- .tmp
-- .url
-- .vbe
-- .vbs
-- .wsf
-- .zip
+- `.7zip`
+- `.bat`
+- `.bin`
+- `.cab`
+- `.cmd`
+- `.com`
+- `.cpl`
+- `.dll`
+- `.exe`
+- `.fla`
+- `.gif`
+- `.gz`
+- `.hta`
+- `.inf`
+- `.java`
+- `.jar`
+- `.job`
+- `.jpeg`
+- `.jpg`
+- `.js`
+- `.ko`
+- `.ko.gz`
+- `.msi`
+- `.ocx`
+- `.png`
+- `.ps1`
+- `.py`
+- `.rar`
+- `.reg`
+- `.scr`
+- `.sys`
+- `.tar`
+- `.tmp`
+- `.url`
+- `.vbe`
+- `.vbs`
+- `.wsf`
+- `.zip`
 
 >[!NOTE]
 > You can chose to exclude file types, such as .gif, .jpg, .jpeg, .png if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
@@ -150,7 +150,7 @@ Do not use a single exclusion list to define exclusions for multiple server work
 Microsoft Defender Antivirus Service runs in system context using the LocalSystem account, which means it gets information from the system environment variable, and not from the user environment variable. Use of environment variables as a wildcard in exclusion lists is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables as wildcards when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system environment variables.
 See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
 
-## Related topics
+## Related articles
 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
