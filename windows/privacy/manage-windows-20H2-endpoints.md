@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/17/2020
 ---
+
 # Manage connection endpoints for Windows 10 Enterprise, version 20H2
 
 **Applies to**
@@ -35,7 +36,7 @@ The following methodology was used to derive these network endpoints:
 
 1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5. The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
 6. All traffic was captured in our lab using a IPV4 network. Therefore, no IPV6 traffic is reported here.
@@ -85,8 +86,7 @@ The following methodology was used to derive these network endpoints:
 |Microsoft Store|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTPS|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way. If you turn off traffic for this endpoint, push notifications will no longer work, including MDM device management, mail synchronization, settings synchronization.|TLSv1.2/HTTPS|*.wns.windows.com|
-||The following endpoints are used to revoke licenses for malicious apps in the Microsoft Store. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft Store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them|TLSv1.2|1storecatalogrevocation.storequality.microsoft.com|
-|||HTTPS/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
+||The following endpoints are used to revoke licenses for malicious apps in the Microsoft Store. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft Store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|HTTPS|manage.devcenter.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps cannot be installed or updated from the Microsoft Store.|TLSv1.2/HTTPS/HTTP|displaycatalog.mp.microsoft.com|
 |||HTTPS|pti.store.microsoft.com|
@@ -130,7 +130,7 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services#26-microsoft-store)|
 |||HTTPS|dlassets-ssl.xboxlive.com|
-|
+
 
 ## Other Windows 10 editions
 
