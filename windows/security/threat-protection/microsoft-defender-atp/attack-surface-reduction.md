@@ -468,4 +468,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+- [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware solutions](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
