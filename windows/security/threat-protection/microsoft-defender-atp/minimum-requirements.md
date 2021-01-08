@@ -39,8 +39,9 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
-- Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Microsoft 365 E5 Security
+- Microsoft 365 A5 Security
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
@@ -57,7 +58,7 @@ Microsoft Defender for Endpoint, on Windows Server, requires one of the followin
 > * Microsoft Defender for Endpoint
 > * Windows E5/A5
 > * Microsoft 365 E5/A5
-> * Microsoft 365 E5 Security
+> * Microsoft 365 E5/A5 Security
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
