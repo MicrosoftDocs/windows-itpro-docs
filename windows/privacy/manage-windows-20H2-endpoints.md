@@ -63,7 +63,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|s-ring.msedge.net|
 |Device authentication|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 ||The following endpoint is used to authenticate a device. If you  turn off traffic for this endpoint, the device will not be authenticated.|HTTPS|login.live.com*|
-|Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata will not be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services#4-device-metadata-retrieval)|
+|Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata will not be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 |||HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
@@ -71,7 +71,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|www.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
-|Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services#6-font-streaming)|
+|Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
 |||HTTPS|fs.microsoft.com|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager)|
 |||TLSv1.2/HTTPS/HTTP|licensing.mp.microsoft.com|
@@ -128,7 +128,7 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
 ||The following endpoint is used for compatibility database updates for Windows.|HTTPS|adl.windows.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
-|Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services#26-microsoft-store)|
+|Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||HTTPS|dlassets-ssl.xboxlive.com|
 
 
