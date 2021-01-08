@@ -1,6 +1,6 @@
 ---
 title: TenantLockdown CSP
-description: 
+description: To lock a device to a tenant to prevent accidental or intentional resets or wipes, use the TenantLockdown configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
