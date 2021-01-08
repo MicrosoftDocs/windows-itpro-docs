@@ -229,7 +229,7 @@ Administrators can apply automation to 'results.xml' to create their own preferr
 ```powershell
 Select-XML -Path results.xml -XPath '//RegistryKey | //Command | //Events | //FoldersFiles' | Foreach-Object -Begin {$i=1} -Process { [pscustomobject]@{DirectiveNumber=$i; DirectiveHRESULT=$_.Node.HRESULT; DirectiveInput=$_.Node.('#text')} ; $i++}
 ```
-This example produces output similar to the following.
+This example produces output similar to the following:
 ```
 DirectiveNumber DirectiveHRESULT DirectiveInput
 --------------- ---------------- --------------
