@@ -225,7 +225,7 @@ The `results.xml` file is the authoritative map to the output. It includes a sta
 </Collection>
 ```
 
-Administrators can apply automation to 'results.xml' to create their own preferred views of the data. For example, the following PowerShell one-liner extracts from the xml an ordered list of the directives with status code and details.
+Administrators can apply automation to 'results.xml' to create their own preferred views of the data. For example, the following PowerShell one-liner extracts from the XML an ordered list of the directives with status code and details.
 ```powershell
 Select-XML -Path results.xml -XPath '//RegistryKey | //Command | //Events | //FoldersFiles' | Foreach-Object -Begin {$i=1} -Process { [pscustomobject]@{DirectiveNumber=$i; DirectiveHRESULT=$_.Node.HRESULT; DirectiveInput=$_.Node.('#text')} ; $i++}
 ```
