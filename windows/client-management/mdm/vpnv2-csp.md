@@ -281,25 +281,6 @@ Valid values:
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/**<em>ProfileName</em>**/LockDown**  (./Device only profile)  
-Lockdown profile.
-
-Valid values:
-
-- False (default) - this is not a LockDown profile.
-- True - this is a LockDown profile.
-
-When the LockDown profile is turned on, it does the following things:
-
-- First, it automatically becomes an "always on" profile.
-- Second, it can never be disconnected.
-- Third, if the profile is not connected, then the user has no network.
-- Fourth, no other profiles may be connected or modified.
-
-A Lockdown profile must be deleted before you can add, remove, or connect other profiles.
-
-Value type is bool. Supported operations include Get, Add, Replace, and Delete.
-
 <a href="" id="vpnv2-profilename-devicetunnel"></a>**VPNv2/**<em>ProfileName</em>**/DeviceTunnel**  (./Device only profile)  
 Device tunnel profile.
 
