@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus compatibility with other security products
-description: Microsoft Defender Antivirus operates in different ways depending on what other security products you have installed, and the operating system you are using.
-keywords: windows defender, atp, advanced threat protection, compatibility, passive mode
+description: Get an overview of what to expect from Microsoft Defender Antivirus with other security products and the operating systems you are using.
+keywords: windows defender, next-generation, atp, advanced threat protection, compatibility, passive mode
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, shwjha
+ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.date: 01/11/2021
 ---
