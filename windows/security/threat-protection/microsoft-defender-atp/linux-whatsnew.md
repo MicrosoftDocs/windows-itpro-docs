@@ -23,6 +23,9 @@ ms.topic: conceptual
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+> [!IMPORTANT]
+> Product versions 101.04.76 and older are nearing end of support. Customers running on version 101.04.76 or older must upgrade to a newer version of Microsoft Defender for Endpoint for Linux by February 1st, 2021.
+
 ## 101.18.53
 
 - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
