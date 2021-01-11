@@ -20,7 +20,7 @@ ms.custom: bitlocker
 
 # BitLocker Group Policy settings
 
-**Applies to**
+**Applies to:**
 
 - Windows 10, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
 
