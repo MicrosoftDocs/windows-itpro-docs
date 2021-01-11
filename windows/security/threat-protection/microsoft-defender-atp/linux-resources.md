@@ -128,6 +128,10 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id [threat-id]`                         |
 |Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine remove --id [threat-id]`                      |
 |Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine restore --id [threat-id]`                     |
+|Endpoint Detection and Response |Set early preview (unused)                    |`mdatp edr early-preview [enable|disable]`                             |
+|Endpoint Detection and Response |Set group-id                                  |`mdatp edr group-ids --group-id [group-id]`                            |
+|Endpoint Detection and Response |Set/Remove tag, only `GROUP` supported        |`mdatp edr tag set --name GROUP --value [tag]`                         |
+|Endpoint Detection and Response |list exclusions (root)                        |`mdatp edr exclusion list [processes|paths|extensions|all]`            |
 
 ## Microsoft Defender for Endpoint portal information
 
