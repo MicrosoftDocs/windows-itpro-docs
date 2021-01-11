@@ -397,7 +397,8 @@ If you disable or do not configure this setting, unique items defined in prefere
 
 If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
 
-**Note:** Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in Get-MpPreference.
+> [!NOTE]
+> Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
 
 Supported OS versions:  Windows 10
 
