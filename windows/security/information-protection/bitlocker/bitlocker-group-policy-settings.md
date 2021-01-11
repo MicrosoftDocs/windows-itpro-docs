@@ -22,7 +22,7 @@ ms.custom: bitlocker
 
 **Applies to**
 
-- Windows 10
+- Windows 10, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
 
 This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 
