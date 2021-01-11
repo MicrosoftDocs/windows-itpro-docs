@@ -36,20 +36,23 @@ If you can reproduce a problem, first increase the logging level, run the system
 1. Increase logging level:
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
+
    ```Output
    Log level configured successfully
    ```
 
 2. Reproduce the problem.
 
-3. Run the following command to back up Defender for Endpoint's logs. The files will be stored inside of a .zip archive. 
+3. Run the following command to back up Defender for Endpoint's logs. The files will be stored inside of a .zip archive.
 
    ```bash
    sudo mdatp diagnostic create
    ```
+
     This command will also print out the file path to the backup after the operation succeeds:
+
    ```Output
    Diagnostic file created: <path to file>
    ```
@@ -59,6 +62,7 @@ If you can reproduce a problem, first increase the logging level, run the system
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
