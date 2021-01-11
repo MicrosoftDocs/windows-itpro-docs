@@ -114,9 +114,9 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration         |Turn off PUA protection                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Turn on audit mode for PUA protection                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
 |Diagnostics           |Change the log level                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |Generate diagnostic logs                                |`mdatp diagnostic create`                                              |
+|Diagnostics           |Generate diagnostic logs                                |`mdatp diagnostic create --path [directory]`                           |
 |Health                |Check the product's health                              |`mdatp health`                                                         |
-|Protection            |Scan a path                                             |`mdatp scan custom --path [path]`                                      |
+|Protection            |Scan a path                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
 |Protection            |Do a quick scan                                         |`mdatp scan quick`                                                     |
 |Protection            |Do a full scan                                          |`mdatp scan full`                                                      |
 |Protection            |Cancel an ongoing on-demand scan                        |`mdatp scan cancel`                                                    |
