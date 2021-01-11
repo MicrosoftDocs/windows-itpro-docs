@@ -93,7 +93,7 @@ You can run the changepk.exe command-line tool to upgrade devices to a supported
 
 `changepk.exe /ProductKey <enter your new product key here>`
 
-You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
+You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/windows-server/get-started/kmsclientkeys).  For example, the following command will upgrade to Windows 10 Enterprise.
 
 `Cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43`
 
