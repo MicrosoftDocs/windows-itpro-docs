@@ -59,7 +59,7 @@ ClientCertificateInstall
 ----------------ContainerName
 ----------------CustomTextToShowInPrompt
 ----------------Enroll
-----------------AADKeyIdentifierList (Added in Windows, version 1703)
+----------------AADKeyIdentifierList (Added in Windows 10, version 1703)
 ------------CertThumbprint
 ------------Status
 ------------ErrorCode
