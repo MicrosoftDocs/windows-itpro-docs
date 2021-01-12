@@ -37,7 +37,7 @@ ClientCertificateInstall
 ------------PFXKeyExportable
 ------------Thumbprint
 ------------Status
-------------PFXCertPasswordEncryptionStore
+------------PFXCertPasswordEncryptionStore (Added in Windows 10, version 1511)
 ----SCEP
 --------UniqueID
 ------------Install
@@ -59,7 +59,7 @@ ClientCertificateInstall
 ----------------ContainerName
 ----------------CustomTextToShowInPrompt
 ----------------Enroll
-----------------AADKeyIdentifierList
+----------------AADKeyIdentifierList (Added in Windows, version 1703)
 ------------CertThumbprint
 ------------Status
 ------------ErrorCode
