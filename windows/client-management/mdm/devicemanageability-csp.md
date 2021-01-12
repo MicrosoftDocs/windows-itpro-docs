@@ -25,10 +25,10 @@ The following shows the DeviceManageability configuration service provider in a 
 DeviceManageability
 ----Capabilities
 --------CSPVersions
-----Provider
---------ProviderID
-------------ConfigInfo
-------------EnrollmentInfo
+----Provider (Added in Windows 10, version 1709)
+--------ProviderID (Added in Windows 10, version 1709)
+------------ConfigInfo (Added in Windows 10, version 1709)
+------------EnrollmentInfo (Added in Windows 10, version 1709)
 ```
 <a href="" id="--device-vendor-msft-devicemanageability"></a>**./Device/Vendor/MSFT/DeviceManageability**  
 Root node to group information about runtime MDM configuration capability on the target device.
