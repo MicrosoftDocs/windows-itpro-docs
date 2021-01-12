@@ -31,17 +31,15 @@ ms.topic: article
 
 This article is part of the Deployment guide and acts as an example onboarding method. 
 
-There are several ways and tools you can use to onboard devices as metioned in the [Planning](deployment-strategy.md) topic. This topic covers the cloud-native architecture. 
+In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture. 
 
 ![Image of cloud-native architecture](images/cloud-native-architecture.png)
+*Diagram of environment architectures*
 
- For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
-## Overview
-As a general overview, the following diagram shows how to onboard devices using Intune. 
 
-![Image of onboarding using Microsoft Intune](images/intune-onboarding.png)
-
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
 
 
 This topic guides users in:
@@ -58,7 +56,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 
     -   In Microsoft Endpoint Manager, we'll guide you in creating a separate policy for each capability.
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
+
 
 
 
