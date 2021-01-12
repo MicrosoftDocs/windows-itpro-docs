@@ -28,7 +28,7 @@ manager: dansimp
 
 ## Exclusion lists
 
-You can exclude certain files from Microsoft Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Microsoft Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+You can exclude certain files from Microsoft Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. These exclusions are not visible in the Windows Security app and in PowerShell.
@@ -81,31 +81,30 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 >[!NOTE]
 >If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder are excluded.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Exclusions**.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
 
-4. Double-click the **Path Exclusions** setting and add the exclusions.
+4. Open the **Path Exclusions** setting for editing, and add your exclusions.
 
     - Set the option to **Enabled**.
     - Under the **Options** section, click **Show...**.
     - Specify each folder on its own line under the **Value name** column.
     - If you are specifying a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
 
-5. Click **OK**.
+5. Choose **OK**.
 
     ![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
 
-6. Double-click the **Extension Exclusions** setting and add the exclusions.
+6. Open the **Extension Exclusions** setting for editing and add your exclusions.
 
     - Set the option to **Enabled**.
-    - Under the **Options** section, click **Show...**.
+    - Under the **Options** section, select **Show...**.
     - Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
-7. Click **OK**.
-
+7. Choose **OK**.
 
 <a id="ps"></a>
 
@@ -277,7 +276,7 @@ You can retrieve the items in the exclusion list using one of the following meth
 
 If you use PowerShell, you can retrieve the list in two ways:
 
-- Retrieve the status of all Microsoft Defender Antivirus preferences. Each of the lists are displayed on separate lines, but the items within each list are combined into the same line.
+- Retrieve the status of all Microsoft Defender Antivirus preferences. Each list is displayed on separate lines, but the items within each list are combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
 ### Validate the exclusion list by using MpCmdRun

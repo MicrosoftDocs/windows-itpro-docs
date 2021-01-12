@@ -164,7 +164,7 @@ Use the following cmdlet:
 Get-MpPreference
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/en-us/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Retrieve a specific exclusions list by using PowerShell
 
