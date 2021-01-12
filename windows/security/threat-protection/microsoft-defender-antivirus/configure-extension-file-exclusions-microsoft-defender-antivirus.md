@@ -36,12 +36,12 @@ You can exclude certain files from Microsoft Defender Antivirus scans by modifyi
 
 This article  describes how to configure exclusion lists for the files and folders. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
-Exclusion | Examples | Exclusion list
----|---|---
-Any file with a specific extension | All files with the specified extension, anywhere on the machine.<br/>Valid syntax: `.test` and `test`  | Extension exclusions
-Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions
-A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions
-A specific process | The executable file `c:\test\process.exe` | File and folder exclusions
+| Exclusion | Examples | Exclusion list |
+|:---|:---|:---|
+|Any file with a specific extension | All files with the specified extension, anywhere on the machine.<br/>Valid syntax: `.test` and `test`  | Extension exclusions |
+|Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions |
+| A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions |
+| A specific process | The executable file `c:\test\process.exe` | File and folder exclusions |
 
 Exclusion lists have the following characteristics:
 
