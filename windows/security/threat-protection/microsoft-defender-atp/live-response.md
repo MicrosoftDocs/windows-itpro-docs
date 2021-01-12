@@ -43,22 +43,27 @@ With live response, analysts can do all of the following tasks:
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows 10**. <br/>
-Devices must be running one of the following versions of Windows 10:
-   - [1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
-   - [1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-   - [1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-   - [1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-   - [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
+- **Verify that you're running a supported version of Windows**. <br/>
+Devices must be running one of the following versions of Windows
 
-- **Make sure to install appropriate security updates**.<br/>
-   - 1903: [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-   - 1809 (RS5): [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-   - 1803 (RS4): [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-   - 1709 (RS3): [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+  - **Windows 10**
+    - [Version 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) or later  
+    - [Version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Version 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+  
+  - **Windows Server 2019 - Only applicable for Public preview**
+    - Version 1903 or (with [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) later 
+    - Version 1809 (with [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
 
-- **Enable live response from the settings page**.<br>
+- **Enable live response from the advanced settings page**.<br>
 You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
+
+    >[!NOTE]
+    >Only users with manage security or global admin roles can edit these settings.
+
+- **Enable live response for servers from the advanced settings page** (recommended).<br>
 
     >[!NOTE]
     >Only users with manage security or global admin roles can edit these settings.
