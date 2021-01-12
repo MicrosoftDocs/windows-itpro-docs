@@ -58,7 +58,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
         - for synced user: "There is no such global user or group : *name*" </br>
 
          > [!NOTE]
-         > For devices running Windows 10, version 1703 or earlier, the user must to sign in to the remote device first before attempting remote connections.
+         > For devices running Windows 10, version 1703 or earlier, the user must sign in to the remote device first before attempting remote connections.
          >
          > Starting Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
 
