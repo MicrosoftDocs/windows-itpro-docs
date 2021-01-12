@@ -36,6 +36,7 @@ Defender
 ------------LastThreatStatusChangeTime
 ------------NumberOfDetections
 ----Health
+--------ProductStatus (Added in Windows 10 version 1809)
 --------ComputerState
 --------DefenderEnabled
 --------RtpEnabled
@@ -52,8 +53,15 @@ Defender
 --------FullScanTime
 --------QuickScanSigVersion
 --------FullScanSigVersion
+--------TamperProtectionEnabled (Added in Windows 10, version 1903)
+--------IsVirtualMachine (Added in Windows 10, version 1903)
+----Configuration (Added in Windows 10, version 1903)
+--------TamperProetection (Added in Windows 10, version 1903)
+--------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------SupportLogLocation (Added in the next major release of Windows 10)
 ----Scan
 ----UpdateSignature
+----OfflineScan (Added in Windows 10 version 1803)
 ```
 <a href="" id="detections"></a>**Detections**  
 An interior node to group all threats detected by Windows Defender.
