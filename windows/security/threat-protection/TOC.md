@@ -1333,7 +1333,6 @@
 #### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
-### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 
