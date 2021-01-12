@@ -46,14 +46,17 @@ DevDetail
 ------------OSPlatform
 ------------LocalTime
 ------------DeviceName
+------------DNSComputerName (Added in Windows 10, version 2004)
 ------------TotalStorage
 ------------TotalRAM
+------------SMBIOSSerialNumber (Added in Windows 10, version 1809)
 --------WLANMACAddress
 --------VoLTEServiceSetting
 --------WlanIPv4Address
 --------WlanIPv6Address
 --------WlanDnsSuffix
 --------WlanSubnetMask
+--------DeviceHardwareData (Added in Windows 10, version 1703)
 ```
 <a href="" id="devtyp"></a>**DevTyp**  
 Required. Returns the device model name /SystemProductName as a string.
