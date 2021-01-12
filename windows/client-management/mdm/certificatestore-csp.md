@@ -88,6 +88,7 @@ CertificateStore
 ----------------ErrorCode
 ----------------LastRenewalAttemptTime (Added in Windows 10, version 1607)
 ----------------RenewNow (Added in Windows 10, version 1607)
+----------------RetryAfterExpiryInterval (Added in Windows 10, version 1703)
 ----CA
 --------*
 ------------EncodedCertificate
