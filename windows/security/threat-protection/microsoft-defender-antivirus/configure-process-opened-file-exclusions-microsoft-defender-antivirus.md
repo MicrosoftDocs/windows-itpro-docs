@@ -108,7 +108,7 @@ For more information on how to use PowerShell with Microsoft Defender Antivirus,
 
 ### Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
 
-Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
 ```WMI
 ExclusionProcess
