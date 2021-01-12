@@ -1,6 +1,6 @@
 ---
-title: Onboarding using Microsoft Endpoint Manager 
-description: Learn how to onboard to Microsoft Defender ATP using Microsoft Endpoint  Manager
+title: Onboarding using Microsoft Intune
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
 keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: article
 ---
 
-# Onboarding using Microsoft Endpoint Manager 
+# Onboarding using Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,22 @@ ms.topic: article
 
 
 
-This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+This article is part of the Deployment guide and acts as an example onboarding method. 
+
+There are several ways and tools you can use to onboard devices as metioned in the [Planning](deployment-strategy.md) topic. This topic covers the cloud-native architecture. 
+
+![Image of cloud-native architecture](images/cloud-native-architecture.png)
+
+ For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+## Overview
+As a general overview, the following diagram shows how to onboard devices using Intune. 
+
+![Image of onboarding using Microsoft Intune](images/intune-onboarding.png)
+
+
+
+This topic guides users in:
 - Step 1: Onboarding devices to the service by creating a group in Microsoft Endpoint Manager (MEM) to assign configurations on
 - Step 2: Configuring Defender for Endpoint capabilities using Microsoft Endpoint Manager
 
@@ -45,7 +60,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
-For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
 
 ## Resources
 
