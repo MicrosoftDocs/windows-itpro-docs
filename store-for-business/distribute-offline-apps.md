@@ -29,7 +29,7 @@ Offline licensing is a new licensing option for Windows 10 with Microsoft Store 
 
 Offline-licensed apps offer an alternative to online apps, and provide additional deployment options. Some reasons to use offline-licensed apps:
 
-- **You don't have access to Microsoft Store services** - If your employees don't have access to the internet and Microsoft Store services, downloading offline-licensed apps and deploying them with imaging is an alternative to online-licensed apps.
+- **You don't have access to Microsoft Store services** - If your employees don't have access to the Internet and Microsoft Store services, downloading offline-licensed apps and deploying them with imaging is an alternative to online-licensed apps.
 
 - **You use imaging to manage devices in your organization** - Offline-licensed apps can be added to images and deployed with Deployment Image Servicing and Management (DISM), or Windows Imaging and Configuration Designer (ICD).
 
