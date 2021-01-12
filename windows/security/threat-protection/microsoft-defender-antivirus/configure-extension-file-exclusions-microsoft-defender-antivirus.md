@@ -199,273 +199,68 @@ The following table describes how the wildcards can be used and provides some ex
 
 The following table lists and describes the system account environment variables. 
 
-<table border="0" cellspacing="0" cellpadding="20">
-<thead>
-<tr>
-<th valign="top">System environment variables</th>
-<th valign="top">Will redirect to:</th>
-</tr>
-</thead><tbody>
-<tr>
-<td valign="top">%APPDATA%</td>
-<td valign="top">C:\Users\UserName.DomainName\AppData\Roaming</td>
-</tr>
-<tr>
-<td valign="top">%APPDATA%\Microsoft\Internet Explorer\Quick Launch</td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch</td>
-</tr>
-<tr>
-<td valign="top">%APPDATA%\Microsoft\Windows\Start Menu</td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu</td>
-</tr>
-<tr>
-<td valign="top">%APPDATA%\Microsoft\Windows\Start Menu\Programs</td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</td>
-</tr>
-<tr>
-<td valign="top">%LOCALAPPDATA% </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local</td>
-</tr>
-<tr>
-<td valign="top">%ProgramData%</td>
-<td valign="top">C:\ProgramData</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles%</td>
-<td valign="top">C:\Program Files</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles%\Common Files </td>
-<td valign="top">C:\Program Files\Common Files</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles%\Windows Sidebar\Gadgets </td>
-<td valign="top">C:\Program Files\Windows Sidebar\Gadgets</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles%\Common Files</td>
-<td valign="top">C:\Program Files\Common Files</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles(x86)% </td>
-<td valign="top">C:\Program Files (x86)</td>
-</tr>
-<tr>
-<td valign="top">%ProgramFiles(x86)%\Common Files </td>
-<td valign="top">C:\Program Files (x86)\Common Files</td>
-</tr>
-<tr>
-<td valign="top">%SystemDrive%</td>
-<td valign="top">C:</td>
-</tr>
-<tr>
-<td valign="top">%SystemDrive%\Program Files</td>
-<td valign="top">C:\Program Files</td>
-</tr>
-<tr>
-<td valign="top">%SystemDrive%\Program Files (x86) </td>
-<td valign="top">C:\Program Files (x86)</td>
-</tr>
-<tr>
-<td valign="top">%SystemDrive%\Users </td>
-<td valign="top">C:\Users</td>
-</tr>
-<tr>
-<td valign="top">%SystemDrive%\Users\Public</td>
-<td valign="top">C:\Users\Public</td>
-</tr>
-<tr>
-<td valign="top">%SystemRoot%</td>
-<td valign="top"> C:\Windows</td>
-</tr>
-<tr>
-<td valign="top">%windir%</td>
-<td valign="top">C:\Windows</td>
-</tr>
-<tr>
-<td valign="top">%windir%\Fonts</td>
-<td valign="top">C:\Windows\Fonts</td>
-</tr>
-<tr>
-<td valign="top">%windir%\Resources </td>
-<td valign="top">C:\Windows\Resources</td>
-</tr>
-<tr>
-<td valign="top">%windir%\resources\0409</td>
-<td valign="top">C:\Windows\resources\0409</td>
-</tr>
-<tr>
-<td valign="top">%windir%\system32</td>
-<td valign="top">C:\Windows\System32</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%</td>
-<td valign="top">C:\ProgramData</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Application Data</td>
-<td valign="top">C:\ProgramData\Application Data</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents</td>
-<td valign="top">C:\ProgramData\Documents</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents\My Music\Sample Music</td>
-<td valign="top">
-<p>C:\ProgramData\Documents\My Music\Sample Music</p>
-<p>.</p>
-</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents\My Music </td>
-<td valign="top">C:\ProgramData\Documents\My Music</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents\My Pictures </td>
-<td valign="top">
-<p>C:\ProgramData\Documents\My Pictures
-</p>
-</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures </td>
-<td valign="top">C:\ProgramData\Documents\My Pictures\Sample Pictures</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Documents\My Videos </td>
-<td valign="top">C:\ProgramData\Documents\My Videos</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\DeviceMetadataStore</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\GameExplorer</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Ringtones</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs </td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Microsoft\Windows\Templates </td>
-<td valign="top">C:\ProgramData\Microsoft\Windows\Templates</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Start Menu </td>
-<td valign="top">C:\ProgramData\Start Menu</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Start Menu\Programs </td>
-<td valign="top">C:\ProgramData\Start Menu\Programs</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools </td>
-<td valign="top">C:\ProgramData\Start Menu\Programs\Administrative Tools</td>
-</tr>
-<tr>
-<td valign="top">%ALLUSERSPROFILE%\Templates </td>
-<td valign="top">C:\ProgramData\Templates</td>
-</tr>
-<tr>
-<td valign="top">%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates</td>
-</tr>
-<tr>
-<td valign="top">%LOCALAPPDATA%\Microsoft\Windows\History </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History</td>
-</tr>
-<tr>
-<td valign="top">
-<p>
-%PUBLIC% </p>
-</td>
-<td valign="top">C:\Users\Public</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\AccountPictures </td>
-<td valign="top">C:\Users\Public\AccountPictures</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Desktop </td>
-<td valign="top">C:\Users\Public\Desktop</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Documents </td>
-<td valign="top">C:\Users\Public\Documents</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Downloads </td>
-<td valign="top">C:\Users\Public\Downloads</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Music\Sample Music </td>
-<td valign="top">
-<p>C:\Users\Public\Music\Sample Music</p>
-<p>.</p>
-</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Music\Sample Playlists </td>
-<td valign="top">
-<p>C:\Users\Public\Music\Sample Playlists</p>
-<p>.</p>
-</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Pictures\Sample Pictures </td>
-<td valign="top">C:\Users\Public\Pictures\Sample Pictures</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\RecordedTV.library-ms</td>
-<td valign="top">C:\Users\Public\RecordedTV.library-ms</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Videos</td>
-<td valign="top">C:\Users\Public\Videos</td>
-</tr>
-<tr>
-<td valign="top">%PUBLIC%\Videos\Sample Videos</td>
-<td valign="top">
-<p>C:\Users\Public\Videos\Sample Videos</p>
-<p>.</p>
-</td>
-</tr>
-<tr>
-<td valign="top">%USERPROFILE% </td>
-<td valign="top">C:\Windows\System32\config\systemprofile</td>
-</tr>
-<tr>
-<td valign="top">%USERPROFILE%\AppData\Local </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Local</td>
-</tr>
-<tr>
-<td valign="top">%USERPROFILE%\AppData\LocalLow </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\LocalLow</td>
-</tr>
-<tr>
-<td valign="top">%USERPROFILE%\AppData\Roaming </td>
-<td valign="top">C:\Windows\System32\config\systemprofile\AppData\Roaming</td>
-</tr>
-</tbody>
-</table>
+| This system environment variable... | Redirects to this |
+|:--|:--|
+| `%APPDATA%`| `C:\Users\UserName.DomainName\AppData\Roaming` |
+| `%APPDATA%\Microsoft\Internet Explorer\Quick Launch` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch` |
+| `%APPDATA%\Microsoft\Windows\Start Menu` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu` |
+| `%APPDATA%\Microsoft\Windows\Start Menu\Programs` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs` |
+| `%LOCALAPPDATA%` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
+| `%ProgramData%` | `C:\ProgramData` |
+| `%ProgramFiles%` | `C:\Program Files` |
+| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
+| `%ProgramFiles%\Windows Sidebar\Gadgets` | `C:\Program Files\Windows Sidebar\Gadgets` |
+| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
+| `%ProgramFiles(x86)%` | `C:\Program Files (x86)` |
+| `%ProgramFiles(x86)%\Common Files` | `C:\Program Files (x86)\Common Files` |
+| `%SystemDrive%` | `C:` |
+| `%SystemDrive%\Program Files` | `C:\Program Files` |
+| `%SystemDrive%\Program Files (x86)` | `C:\Program Files (x86)` |
+| `%SystemDrive%\Users` | `C:\Users` |
+| `%SystemDrive%\Users\Public` | `C:\Users\Public` |
+| `%SystemRoot%` | `C:\Windows` |
+| `%windir%` | `C:\Windows` |
+| `%windir%\Fonts` | `C:\Windows\Fonts` |
+| `%windir%\Resources` | `C:\Windows\Resources` |
+| `%windir%\resources\0409` | `C:\Windows\resources\0409` |
+| `%windir%\system32` | `C:\Windows\System32` |
+| `%ALLUSERSPROFILE%` | `C:\ProgramData` |
+| `%ALLUSERSPROFILE%\Application Data` | `C:\ProgramData\Application Data` |
+| `%ALLUSERSPROFILE%\Documents` | `C:\ProgramData\Documents` |
+| `%ALLUSERSPROFILE%\Documents\My Music\Sample Music` | `C:\ProgramData\Documents\My Music\Sample Music` |
+| `%ALLUSERSPROFILE%\Documents\My Music` | `C:\ProgramData\Documents\My Music` |
+| `%ALLUSERSPROFILE%\Documents\My Pictures` | `C:\ProgramData\Documents\My Pictures` |
+| `%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures` | `C:\ProgramData\Documents\My Pictures\Sample Pictures` |
+| `%ALLUSERSPROFILE%\Documents\My Videos` | `C:\ProgramData\Documents\My Videos` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore` | `C:\ProgramData\Microsoft\Windows\DeviceMetadataStore` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer` | `C:\ProgramData\Microsoft\Windows\GameExplorer` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones` | `C:\ProgramData\Microsoft\Windows\Ringtones` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu` | `C:\ProgramData\Microsoft\Windows\Start Menu` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` |
+| `%ALLUSERSPROFILE%\Microsoft\Windows\Templates` | `C:\ProgramData\Microsoft\Windows\Templates` |
+| `%ALLUSERSPROFILE%\Start Menu` | `C:\ProgramData\Start Menu` |
+| `%ALLUSERSPROFILE%\Start Menu\Programs` | C:\ProgramData\Start Menu\Programs |
+| `%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Start Menu\Programs\Administrative Tools` | 
+| `%ALLUSERSPROFILE%\Templates` | `C:\ProgramData\Templates` |
+| `%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates` |
+| `%LOCALAPPDATA%\Microsoft\Windows\History` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History` |
+| `%PUBLIC%` | `C:\Users\Public` |
+| `%PUBLIC%\AccountPictures` | `C:\Users\Public\AccountPictures` |
+| `%PUBLIC%\Desktop` | `C:\Users\Public\Desktop` |
+| `%PUBLIC%\Documents` | `C:\Users\Public\Documents` |
+| `%PUBLIC%\Downloads` | `C:\Users\Public\Downloads` |
+| `%PUBLIC%\Music\Sample Music` | `C:\Users\Public\Music\Sample Music` |
+| `%PUBLIC%\Music\Sample Playlists` | `C:\Users\Public\Music\Sample Playlists` |
+| `%PUBLIC%\Pictures\Sample Pictures` | `C:\Users\Public\Pictures\Sample Pictures` |
+| `%PUBLIC%\RecordedTV.library-ms` | `C:\Users\Public\RecordedTV.library-ms` |
+| `%PUBLIC%\Videos` | `C:\Users\Public\Videos` |
+| `%PUBLIC%\Videos\Sample Videos` | `C:\Users\Public\Videos\Sample Videos` | 
+| `%USERPROFILE%` | `C:\Windows\System32\config\systemprofile` |
+| `%USERPROFILE%\AppData\Local` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
+| `%USERPROFILE%\AppData\LocalLow` | `C:\Windows\System32\config\systemprofile\AppData\LocalLow` |
+| `%USERPROFILE%\AppData\Roaming` | `C:\Windows\System32\config\systemprofile\AppData\Roaming` |
 
 
 ## Review the list of exclusions
