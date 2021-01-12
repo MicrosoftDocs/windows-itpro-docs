@@ -12,7 +12,6 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.date: 10/21/2020
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -107,7 +106,6 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 7. Click **OK**.
 
-    ![The Group Policy setting for extension exclusions](images/defender/wdav-extension-exclusions.png)
 
 <a id="ps"></a>
 
@@ -123,11 +121,11 @@ The format for the cmdlets is as follows:
 
 The following are allowed as the `<cmdlet>`:
 
-Configuration action | PowerShell cmdlet
----|---
-Create or overwrite the list | `Set-MpPreference`
-Add to the list | `Add-MpPreference`
-Remove item from the list | `Remove-MpPreference`
+| Configuration action | PowerShell cmdlet |
+|:---|:---|
+|Create or overwrite the list | `Set-MpPreference` |
+|Add to the list | `Add-MpPreference` |
+|Remove item from the list | `Remove-MpPreference` |
 
 The following are allowed as the `<exclusion list>`:
 
