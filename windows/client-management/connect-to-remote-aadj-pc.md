@@ -76,7 +76,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
 The table below lists the supported configurations for remotely connecting to an Azure AD-joined PC:
 
-| Criteria | RDP from Azure AD registered device| RDP from Azure AD joined device| RDP from Hybrid Azure AD joined device |
+| Criteria | RDP from Azure AD registered device| RDP from Azure AD joined device| RDP from hybrid Azure AD joined device |
 | - | - | - | - |
 | **Client operating systems**| Windows 10, version 2004 and above| Windows 10, version 1607 and above | Windows 10, version 1607 and above |
 | **Supported credentials**| Password, smartcard| Password, smartcard, Windows Hello for Business certificate trust | Password, smartcard, Windows Hello for Business certificate trust |
