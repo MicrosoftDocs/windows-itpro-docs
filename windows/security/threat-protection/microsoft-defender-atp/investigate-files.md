@@ -1,6 +1,6 @@
 ---
 title: Investigate Microsoft Defender Advanced Threat Protection files
-description: Use the investigation options to get details on files associated with alerts, behaviours, or events.
+description: Use the investigation options to get details on files associated with alerts, behaviors, or events.
 keywords: investigate, investigation, file, malicious activity, attack motivation, deep analysis, deep analysis report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
