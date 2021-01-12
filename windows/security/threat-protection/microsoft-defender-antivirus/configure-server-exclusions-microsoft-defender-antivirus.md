@@ -204,43 +204,11 @@ This section lists the default exclusions for all Windows Server 2016 and 2019 r
 
 #### Hyper-V exclusions
 
-This section lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role
+The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-- File type exclusions:
-
-  - `*.vhd`
-
-  - `*.vhdx`
-
-  - `*.avhd`
-
-  - `*.avhdx`
-
-  - `*.vsv`
-
-  - `*.iso`
-
-  - `*.rct`
-
-  - `*.vmcx`
-
-  - `*.vmrs`
-
-- Folder exclusions:
-
-  - `%ProgramData%\Microsoft\Windows\Hyper-V`
-
-  - `%ProgramFiles%\Hyper-V`
-
-  - `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots`
-
-  - `%Public%\Documents\Hyper-V\Virtual Hard Disks`
-
-- Process exclusions:
-
-  - `%systemroot%\System32\Vmms.exe`
-
-  - `%systemroot%\System32\Vmwp.exe`
+|File type exclusions |Folder exclusions  | Process exclusions |
+|:--|:--|:--|
+| `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` | `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
 
 #### SYSVOL files
 
