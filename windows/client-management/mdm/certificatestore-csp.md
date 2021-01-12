@@ -86,8 +86,8 @@ CertificateStore
 ----------------ROBOSupport
 ----------------Status
 ----------------ErrorCode
-----------------LastRenewalAttemptTime
-----------------RenewNow
+----------------LastRenewalAttemptTime (Added in Windows 10, version 1607)
+----------------RenewNow (Added in Windows 10, version 1607)
 ----CA
 --------*
 ------------EncodedCertificate
