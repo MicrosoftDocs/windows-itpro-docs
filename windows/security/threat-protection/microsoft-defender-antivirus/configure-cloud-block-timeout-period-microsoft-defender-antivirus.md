@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 When Microsoft Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Microsoft Defender Antivirus cloud service](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md).
 

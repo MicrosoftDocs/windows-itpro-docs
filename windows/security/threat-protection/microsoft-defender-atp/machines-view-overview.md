@@ -28,7 +28,7 @@ ms.topic: article
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days.  
+The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.  
 
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
