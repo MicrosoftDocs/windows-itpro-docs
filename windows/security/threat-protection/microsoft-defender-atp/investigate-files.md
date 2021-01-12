@@ -20,7 +20,7 @@ ms.topic: article
 ms.date: 04/24/2018
 ---
 
-# Investigate a file associated with a Microsoft Defender ATP alert
+# Investigate a file associated with a Microsoft Defender for Endpoint alert
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
