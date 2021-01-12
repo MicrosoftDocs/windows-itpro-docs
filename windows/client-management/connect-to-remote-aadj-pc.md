@@ -64,7 +64,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
       - Adding users using policy
      
-         Starting Windows 10 version 2004, you can add users or Azure AD groups to the Remote Desktop Users using MDM policies as described [in this article](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview)
+         Starting in Windows 10, version 2004, you can add users or Azure AD groups to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
          > [!TIP]
          > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
