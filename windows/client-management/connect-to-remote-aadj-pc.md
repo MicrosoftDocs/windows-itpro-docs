@@ -29,7 +29,7 @@ From its release, Windows 10 has supported remote connections to PCs joined to A
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 are not supported.
-- Your local PC (where you are connecting from) must be either Azure AD joined or Hybrid Azure AD joined if using Windows 10 version 1607 and above, or [Azure AD registered](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10 version 2004 and above. Remote connections to an Azure AD joined PC from an unjoined device or a non-Windows 10 device are not supported. 
+- Your local PC (where you are connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device are not supported. 
 - The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests are not supported for Remote desktop. 
 
 Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard), a new feature in Windows 10, version 1607, is turned off on the client PC you are using to connect to the remote PC.
