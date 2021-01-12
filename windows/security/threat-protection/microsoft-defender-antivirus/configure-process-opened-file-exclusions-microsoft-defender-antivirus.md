@@ -104,7 +104,7 @@ For example, the following code snippet would cause Microsoft Defender AV scans 
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-For more information on how to use PowerShell with Microsoft Defender Antivirus, see Manage antivirus with PowerShell cmdlets and [Microsoft Defender Antivirus cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps&preserve=true).
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see Manage antivirus with PowerShell cmdlets and [Microsoft Defender Antivirus cmdlets](https://docs.microsoft.com/powershell/module/defender).
 
 ### Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
 
