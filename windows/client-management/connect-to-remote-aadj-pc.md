@@ -78,7 +78,7 @@ The table below lists the supported configurations for remotely connecting to an
 
 | Criteria | RDP from Azure AD registered device| RDP from Azure AD joined device| RDP from Hybrid Azure AD joined device |
 | - | - | - | - |
-| **Client operating systems**| Windows 10 2004 and above| Windows 10 1607 and above | Windows 10 1607 and above |
+| **Client operating systems**| Windows 10, version 2004 and above| Windows 10, version 1607 and above | Windows 10, version 1607 and above |
 | **Supported credentials**| Password, smartcard| Password, smartcard, Windows Hello for Business certificate trust | Password, smartcard, Windows Hello for Business certificate trust |
 
 
