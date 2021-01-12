@@ -116,7 +116,7 @@ ExclusionProcess
 
 The use of **Set**, **Add**, and **Remove** is analogous to their counterparts in PowerShell: `Set-MpPreference`, `Add-MpPreference`, and `Remove-MpPreference`.
 
-For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
+For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ### Use the Windows Security app to exclude files that have been opened by specified processes from scans
 
