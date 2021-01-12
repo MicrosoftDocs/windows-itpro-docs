@@ -16511,6 +16511,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/security/threat-protection/mbsa-removal-and-guidance.md",
+      "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/hub/windows-10.yml",
       "redirect_url": "https://docs.microsoft.com/windows/windows-10",
       "redirect_document_id": false
