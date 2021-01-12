@@ -35,10 +35,10 @@ The following shows the AssignedAccess configuration service provider in tree fo
 ./Vendor/MSFT
 AssignedAccess
 ----KioskModeApp
-----Configuration
-----Status
-----ShellLauncher
-----StatusConfiguration
+----Configuration (Added in Windows 10, version 1709) 
+----Status (Added in Windows 10, version 1803)
+----ShellLauncher (Added in Windows 10, version 1803)
+----StatusConfiguration (Added in Windows 10, version 1803)
 ```
 <a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**
 Root node for the CSP.
