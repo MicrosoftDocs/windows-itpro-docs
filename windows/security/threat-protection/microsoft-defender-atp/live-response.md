@@ -191,7 +191,7 @@ Here are some examples:
 
 |Command  |What it does  |
 |---------|---------|
-|`"C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
+|`Download "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
 |`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
 
 
