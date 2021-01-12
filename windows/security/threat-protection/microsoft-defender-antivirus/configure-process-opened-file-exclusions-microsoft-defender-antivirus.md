@@ -77,8 +77,6 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 5. Click **OK**.
 
-![The Group Policy setting for specifying process exclusions](images/defender/wdav-process-exclusions.png)
-
 ### Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans
 
 Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess` parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
