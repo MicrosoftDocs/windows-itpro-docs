@@ -90,7 +90,7 @@ You must perform both kinds of tasks because Microsoft Defender Antivirus exclus
 In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using Microsoft Endpoint Manager to define or edit your antivirus exclusions.
 
 > [!TIP]
-> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
 
 #### Use Microsoft Endpoint Manager to manage antivirus exclusions for existing policies
 
@@ -101,6 +101,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 5. Choose **Review + save**, and then choose **Save**.
 
 #### Use Microsoft Endpoint Manager to create an antivirus policy with exclusions
+
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
 3. Select a platform (such as Windows 10 and later, macOS, or Windows 10 and Windows Server).
