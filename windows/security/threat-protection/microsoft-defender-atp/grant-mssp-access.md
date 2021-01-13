@@ -1,6 +1,6 @@
 ---
 title: Grant access to managed security service provider (MSSP)
-description: Take the necessary steps to configure the MSSP integration with Microsoft Defender ATP 
+description: Steps to configure the MSSP integration with Microsoft Defender ATP 
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
