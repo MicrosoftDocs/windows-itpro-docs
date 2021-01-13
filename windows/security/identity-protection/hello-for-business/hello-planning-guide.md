@@ -332,7 +332,7 @@ Windows Hello for Business does not require an Azure AD premium subscription.  H
 
 If box **1a** on your planning worksheet reads **on-premises**, write **No** in box **6c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet.  You can deploy Windows Hello for Business using the free Azure Active Directory account. In this case, you need to have another subscription that includes an Azure AD Multi-Factor Authentication license (like Microsoft 365) or to use a third-party Multi-Factor Authentication provider.
+If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet. You can deploy Windows Hello for Business using the free Azure Active Directory account. In this case, you need to use a third-party Multi-Factor Authentication provider.
 
 If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, an Azure AD Premium feature.
 
