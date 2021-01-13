@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint data storage and privacy
 description: Learn about how Microsoft Defender for Endpoint handles privacy and data that it collects.
-keywords: Microsoft Defender for Endpoint , Microsoft Defender ATP , data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
