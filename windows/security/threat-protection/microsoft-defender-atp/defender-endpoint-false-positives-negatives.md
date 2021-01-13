@@ -53,7 +53,7 @@ Potentially unwanted applications (PUA) are a category of software that can caus
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If this is happening, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
 
 > [!TIP]
-> To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+> To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 #### Use Microsoft Endpoint Manager to edit PUA protection for existing configuration profiles
 
@@ -119,9 +119,9 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 To specify files, IP addresses, URLs, domains, and certificates as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators. "Allow" indicators prevent the following capabilities of Microsoft Defender for Endpoint from taking action on entities:
 
-- [Next-generation protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
-- [Endpoint detection and response](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-- [Automated investigation & remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 
 
