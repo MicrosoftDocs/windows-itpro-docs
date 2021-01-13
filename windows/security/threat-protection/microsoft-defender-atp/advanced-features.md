@@ -42,6 +42,12 @@ Turn on this feature so that users with the appropriate permissions can start a 
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
 
+## Live response for servers
+Turn on this feature so that users with the appropriate permissions can start a live response session on servers.
+
+For more information about role assignments, see [Create and manage roles](user-roles.md).
+
+
 ## Live response unsigned script execution
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
