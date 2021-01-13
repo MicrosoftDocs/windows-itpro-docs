@@ -38,20 +38,23 @@ If you can reproduce a problem, first increase the logging level, run the system
 1. Increase logging level:
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
+
    ```Output
    Log level configured successfully
    ```
 
 2. Reproduce the problem.
 
-3. Run the following command to back up Defender for Endpoint's logs. The files will be stored inside of a .zip archive. 
+3. Run the following command to back up Defender for Endpoint's logs. The files will be stored inside of a .zip archive.
 
    ```bash
    sudo mdatp diagnostic create
    ```
+
     This command will also print out the file path to the backup after the operation succeeds:
+
    ```Output
    Diagnostic file created: <path to file>
    ```
@@ -61,6 +64,7 @@ If you can reproduce a problem, first increase the logging level, run the system
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -112,9 +116,9 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration         |Turn off PUA protection                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Turn on audit mode for PUA protection                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
 |Diagnostics           |Change the log level                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |Generate diagnostic logs                                |`mdatp diagnostic create`                                              |
+|Diagnostics           |Generate diagnostic logs                                |`mdatp diagnostic create --path [directory]`                           |
 |Health                |Check the product's health                              |`mdatp health`                                                         |
-|Protection            |Scan a path                                             |`mdatp scan custom --path [path]`                                      |
+|Protection            |Scan a path                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
 |Protection            |Do a quick scan                                         |`mdatp scan quick`                                                     |
 |Protection            |Do a full scan                                          |`mdatp scan full`                                                      |
 |Protection            |Cancel an ongoing on-demand scan                        |`mdatp scan cancel`                                                    |
@@ -126,6 +130,10 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management |Add a file detected as a threat to the quarantine       |`mdatp threat quarantine add --id [threat-id]`                         |
 |Quarantine management |Remove a file detected as a threat from the quarantine  |`mdatp threat quarantine remove --id [threat-id]`                      |
 |Quarantine management |Restore a file from the quarantine                      |`mdatp threat quarantine restore --id [threat-id]`                     |
+|Endpoint Detection and Response |Set early preview (unused)                    |`mdatp edr early-preview [enable|disable]`                             |
+|Endpoint Detection and Response |Set group-id                                  |`mdatp edr group-ids --group-id [group-id]`                            |
+|Endpoint Detection and Response |Set/Remove tag, only `GROUP` supported        |`mdatp edr tag set --name GROUP --value [tag]`                         |
+|Endpoint Detection and Response |list exclusions (root)                        |`mdatp edr exclusion list [processes|paths|extensions|all]`            |
 
 ## Microsoft Defender for Endpoint portal information
 
