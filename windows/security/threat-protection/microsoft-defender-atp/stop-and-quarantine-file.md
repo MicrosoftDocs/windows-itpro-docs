@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## API description
 Stop execution of a file on a device and delete it.
@@ -51,7 +55,7 @@ Delegated (work or school account) | Machine.StopAndQuarantine | 'Stop And Quara
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/StopAndQuarantineFile
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantineFile
 ```
 
 ## Request headers
@@ -80,7 +84,7 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 Here is an example of the request.
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/StopAndQuarantineFile 
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/StopAndQuarantineFile 
 Content-type: application/json
 {
   "Comment": "Stop and quarantine file on machine due to alert 441688558380765161_2136280442",

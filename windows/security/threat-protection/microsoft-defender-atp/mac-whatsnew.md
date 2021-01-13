@@ -29,6 +29,10 @@ ms.topic: conceptual
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
 
+## 101.19.21
+
+- Bug fixes
+
 ## 101.15.26
 
 - Improved the reliability of the agent when running on macOS 11 Big Sur

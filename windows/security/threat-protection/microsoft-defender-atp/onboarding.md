@@ -29,28 +29,9 @@ ms.topic: article
 
 Deploying Defender for Endpoint is a three-phase process:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="images/prepare.png" alt="Prepare to deploy Defender for Endpoint" title="Prepare" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/setup.png" alt="Setup the Defender for Endpoint service" title="Setup" />
-      <br/>Phase 2: Set up </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Onboard diagram" title="Onboard to the Defender for Endpoint service" />
-      <br/>Phase 3: Onboard </a><br>
-</td>
-
-
-  </tr>
-</table>
+| [![deployment phase - prepare](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | ![deployment phase - onboard](images/phase-diagrams/onboard.png)<br>Phase 3: Onboard |
+| ----- | ----- | ----- |
+| | |*You are here!*|
 
 You are currently in the onboarding phase.
 
@@ -61,6 +42,15 @@ These are the steps you need to take to deploy Defender for Endpoint:
 
 ## Step 1: Onboard endpoints using any of the supported management tools
 The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
+
+
+Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
+<br />
+<br />
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+
+
 
 After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
 

@@ -22,9 +22,9 @@ ms.topic: troubleshooting
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:**
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -78,8 +78,8 @@ You'll need to allow the `securitycenter.windows.com` and all subdomains under i
 ## Portal communication issues
 If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are allowed and open for communication.
 
-- `*.blob.core.windows.net 
-crl.microsoft.com`
+- `*.blob.core.windows.net`
+- `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
 - `https://*.securitycenter.windows.com` 
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
