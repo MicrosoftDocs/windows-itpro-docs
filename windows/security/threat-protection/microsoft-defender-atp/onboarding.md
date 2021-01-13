@@ -45,6 +45,15 @@ These are the steps you need to take to deploy Defender for Endpoint:
 ## Step 1: Onboard endpoints using any of the supported management tools
 The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
+
+Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
+<br />
+<br />
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+
+
+
 After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
 
 ### Onboarding tool options

@@ -81,7 +81,7 @@ The following OU structure is used in this guide. Instructions are provided [bel
 
 These steps assume that you have the MDT01 member server running and configured as a domain member server.
 
-On **MTD01**:
+On **MDT01**:
 
 Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
 - [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
