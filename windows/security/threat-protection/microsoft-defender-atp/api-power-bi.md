@@ -96,13 +96,13 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Select **Organizational account** > **Sign in**
 
-    ![Image of set credentials](images/power-bi-set-credentials-organizational.png)
+    ![Image of set credentials1](images/power-bi-set-credentials-organizational.png)
 
 - Enter your credentials and wait to be signed in
 
 - Click **Connect**
 
-    ![Image of set credentials](images/power-bi-set-credentials-organizational-cont.png)
+    ![Image of set credentials2](images/power-bi-set-credentials-organizational-cont.png)
 
 - Now the results of your query will appear as table and you can start build visualizations on top of it!
 

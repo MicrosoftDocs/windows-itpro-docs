@@ -58,11 +58,11 @@ For the Application registration stage, you must have a **Global administrator**
 
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![Image of API access and API selection1](images/add-permission.png)
 
    - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![Image of API access and API selection2](images/application-permissions.png)
 
    **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
