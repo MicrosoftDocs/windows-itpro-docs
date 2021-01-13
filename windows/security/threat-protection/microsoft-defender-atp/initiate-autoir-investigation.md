@@ -1,4 +1,4 @@
-``---
+---
 title: Start Investigation API
 description: Use this API to start investigation on a device.
 keywords: apis, graph api, supported apis, investigation
@@ -15,7 +15,6 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
-
 # Start Investigation API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
