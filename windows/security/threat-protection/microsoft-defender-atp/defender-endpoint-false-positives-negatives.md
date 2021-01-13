@@ -85,7 +85,7 @@ To define exclusions across Microsoft Defender for Endpoint, you must perform at
 - Define exclusions for Microsoft Defender Antivirus (you do this by editing an existing antivirus policy or by creating a new policy)
 - Create “allow” indicators for Microsoft Defender for Endpoint ()
 
-You must perform both kinds of tasks because Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR), attack surface reduction (ASR) rules, and controlled folder access. Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, use custom indicators.
+You must perform both kinds of tasks because Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR), [attack surface reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, use custom indicators.
 
 
 ## Review or define indicators
