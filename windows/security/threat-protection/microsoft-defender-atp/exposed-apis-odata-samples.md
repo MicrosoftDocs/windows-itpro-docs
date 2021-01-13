@@ -1,7 +1,7 @@
 ---
-title: OData queries with Microsoft Defender ATP
+title: OData queries with Microsoft Defender for Endpoint
 ms.reviewer: 
-description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender ATP.
+description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, odata, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -17,11 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# OData queries with Microsoft Defender ATP
+# OData queries with Microsoft Defender for Endpoint
 
-**Applies to:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
@@ -38,7 +45,7 @@ Not all properties are filterable.
 
 Get 10 latest Alerts with related Evidence
 
-```
+```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
@@ -144,17 +151,17 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### Example 2
 
-Get all the alerts last updated after 2019-10-20 00:00:00
+Get all the alerts last updated after 2019-11-22 00:00:00
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
     "value": [
         {
             "id": "da637308392288907382_-880718168",
@@ -202,15 +209,15 @@ HTTP GET  https://api.securitycenter.windows.com/api/alerts?$filter=lastUpdateTi
 
 Get all the devices with 'High' 'RiskScore'
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+eq+'High'
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -241,15 +248,15 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=riskScore+
 
 Get top 100 devices with 'HealthStatus' not equals to 'Active'
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -280,15 +287,15 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=healthStat
 
 Get all the devices that last seen after 2018-10-20
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen gt 2018-08-01Z
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
 **Response:**
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machines",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
@@ -317,17 +324,17 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines?$filter=lastSeen g
 
 ### Example 6
 
-Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender ATP
+Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
 **Response:**
 
 ```json
 json{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions",
     "value": [
         {
             "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
@@ -351,8 +358,8 @@ json{
 
 Get the count of open alerts for a specific device:
 
-```
-HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
+```http
+HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
 **Response:**
@@ -361,5 +368,5 @@ HTTP GET  https://api.securitycenter.windows.com/api/machines/123321d0c675eaa415
 4
 ```
 
-## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+## See also
+- [Microsoft Defender for Endpoint APIs](apis-intro.md)

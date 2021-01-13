@@ -126,6 +126,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 ### Section Review
 
 > [!div class="checklist"]
+
 > * Review the overview and uses of Azure AD Multi-Factor Authentication Authentication.
 > * Review your Azure Active Directory subscription for Azure AD Multi-Factor Authentication.
 > * Create an Azure AD Multi-Factor Authentication Provider, if necessary.

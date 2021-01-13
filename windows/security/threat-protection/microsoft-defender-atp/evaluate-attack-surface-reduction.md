@@ -16,9 +16,12 @@ manager: dansimp
 
 # Evaluate attack surface reduction rules
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Set attack surface reduction rules for devices running any of the following editions and versions of Windows:
 
@@ -30,7 +33,7 @@ Attack surface reduction rules help prevent actions typically used by malware to
 Learn how to evaluate attack surface reduction rules by enabling audit mode to test the feature directly in your organization.
 
 > [!TIP]
-> You can also visit the Microsoft Defender ATP demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+> You can also visit the Microsoft Defender for Endpoint demo scenario website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 ## Use audit mode to measure impact
 

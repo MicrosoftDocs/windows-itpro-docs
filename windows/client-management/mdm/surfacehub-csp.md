@@ -161,7 +161,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <thead>
 <tr class="header">
 <th>ErrorContext value</th>
-<th>Stage where error occured</th>
+<th>Stage where error occurred</th>
 <th>Description and suggestions</th>
 </tr>
 </thead>
@@ -239,7 +239,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**  
-<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
+<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
@@ -333,7 +333,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute</td>
@@ -385,7 +385,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute (default)</td>
@@ -437,7 +437,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <tbody>
 <tr>
 <td>0</td>
-<td>Never timeout</td></tr>
+<td>Never time out</td></tr>
 <tr>
 <td>1</td>
 <td>1 minute</td>
@@ -471,6 +471,16 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 <td>4 hours</td></tr>
 </tbody>
 </table>
+
+<p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
+
+<a href="" id="properties-sleepmode"></a>**Properties/SleepMode**
+<p style="margin-left: 20px">Added in Windows 10, version 20H2. Specifies the type of sleep mode for the Surface Hub.
+
+<p style="margin-left: 20px">Valid values:
+
+-   0 - Connected Standby (default)
+-   1 - Hibernate
 
 <p style="margin-left: 20px">The data type is integer. Supported operation is Get and Replace.
 

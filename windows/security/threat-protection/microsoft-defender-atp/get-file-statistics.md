@@ -1,6 +1,6 @@
 ---
 title: Get file statistics API
-description: Learn how to use the Get file statistics API to retrieve the statistics for the given file in Microsoft Defender Advanced Threat Protection.
+description: Learn how to use the Get file statistics API to retrieve the statistics for the given file in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, file, statistics
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -18,9 +18,16 @@ ms.topic: article
 
 # Get file statistics API
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## API description
@@ -32,7 +39,7 @@ Retrieves the statistics for the given file.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -68,10 +75,8 @@ If successful and file exists - 200 OK with statistical data in the body. If fil
 
 Here is an example of the request.
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ```
-GET https://api.securitycenter.windows.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats
+GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats
 ```
 
 **Response**
@@ -83,7 +88,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
     "orgPrevalence": "14850",
     "orgFirstSeen": "2019-12-07T13:44:16Z",

@@ -19,10 +19,13 @@ ms.topic: article
 
 # Create and manage roles for role-based access control
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+
+**Applies to:**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -60,21 +63,22 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
     - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
     - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
-- **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags.
+- **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files 
 
-- **Manage portal system settings** - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups.
+- **Manage portal system settings** - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups
 
     > [!NOTE]
-    > This setting is only available in the Microsoft Defender ATP administrator (default) role.
+    > This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
 
-- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab.
+- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
 - **Live response capabilities**
     - **Basic** commands:
         - Start a live response session
         - Perform read only live response commands on remote device (excluding file copy and execution
     - **Advanced** commands:
-        - Download a file from the remote device
+        - Download a file from the remote device via live response
+        - Download PE and non-PE files from the file page
         - Upload a file to the remote device
         - View a script from the files library
         - Execute a script on the remote device from the files library

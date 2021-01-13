@@ -17,15 +17,24 @@ ms.topic: article
 ---
 
 # List vulnerabilities
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a list of all the vulnerabilities affecting the organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -58,7 +67,7 @@ If successful, this method returns 200 OK with the list of vulnerabilities in th
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/Vulnerabilities
+GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
 **Response**
@@ -68,7 +77,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Vulnerabilities",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Vulnerabilities",
     "value": [
         {
             "id": "CVE-2019-0608",
@@ -91,6 +100,6 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## See also
 - [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses)

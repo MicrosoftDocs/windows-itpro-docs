@@ -17,9 +17,12 @@ manager: dansimp
 
 # Enable controlled folder access
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10 and Windows Server 2019.
 
@@ -131,4 +134,4 @@ Use `Disabled` to turn off the feature.
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Customize controlled folder access](customize-controlled-folders.md)
-* [Evaluate Microsoft Defender ATP](../microsoft-defender-atp/evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](../microsoft-defender-atp/evaluate-atp.md)

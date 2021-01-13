@@ -38,11 +38,10 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
       > [!NOTE]
       > You must download the FOD .cab file that matches your operating system version.
 
-   1. Use `Add-Package` to add Windows Mixed Reality FOD to the image.
+   1. Use `Dism` to add Windows Mixed Reality FOD to the image.
 
       ```powershell
-      Add-Package
-      Dism /Online /add-package /packagepath:(path)
+      Dism /Online /Add-Package /PackagePath:(path)
       ```
       
       > [!NOTE]

@@ -2,7 +2,7 @@
 title: Set up Delivery Optimization
 ms.reviewer: 
 manager: laurawi
-description: Delivery Optimization is a new peer-to-peer distribution method in Windows 10
+description: In this article, learn how to set up Delivery Optimization, a new peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up Delivery Optimization for Windows 10 updates
@@ -50,7 +51,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren’t aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
 
 
@@ -95,7 +96,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 In a lab situation, you typically have a large number of devices that are plugged in and have a lot of free disk space. By increasing the content expiration interval, you can take advantage of these devices, using them as excellent upload sources in order to upload much more content over a longer period.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **6048000** (7 days) or more (up to 30 days).
+To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
@@ -103,7 +104,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 
 ## Monitor Delivery Optimization
-[//]: # (How to tell if it’s working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
+[//]: # (How to tell if it's working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
 
 ### Windows PowerShell cmdlets
 
@@ -146,7 +147,7 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download 
 
-**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationPerfSnap` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
@@ -191,7 +192,7 @@ With no options, this cmdlet returns these data:
 - overall efficiency
 - efficiency in the peered files
 
-Using the `-ListConnections` option returns these detauls about peers:
+Using the `-ListConnections` option returns these details about peers:
 
 - destination IP address
 - peer type

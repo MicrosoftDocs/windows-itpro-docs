@@ -17,10 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Threat protection report in Microsoft Defender ATP
+# Threat protection report in Microsoft Defender for Endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
@@ -58,7 +61,7 @@ While the alert trends shows trending alert information, the alert summary shows
 ## Alert attributes
 The report is made up of cards that display the following alert attributes:
 
-- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Microsoft Defender ATP to trigger alerts.
+- **Detection sources**: shows information about the sensors and detection technologies that provide the data used by Microsoft Defender for Endpoint to trigger alerts.
 
 - **Threat categories**: shows the types of threat or attack activity that triggered alerts, indicating possible focus areas for your security operations.
 

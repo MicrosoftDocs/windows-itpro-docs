@@ -93,6 +93,10 @@ The following methodology was used to derive the network endpoints:
 |www.bing.com|HTTPS/TLS v1.2|Cortana and Live Tiles
 |www.msftconnecttest.com|HTTP|Network Connection Status Indicator (NCSI)
 |wdcp.microsoft.com|HTTPS|Used for Windows Defender when Cloud-based Protection is enabled
+|activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
+|adl.windows.com|HTTP|Used for compatibility database updates for Windows
+|spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
+|cs.dds.microsoft.com|TLSV1.2|Used by Device Directory Service to keep track of user-device associations and storing metadata about the devices.
 
 ## Windows 10 Pro
 
@@ -155,6 +159,10 @@ The following methodology was used to derive the network endpoints:
 |storage.live.com|HTTP/TLS v1.2|OneDrive
 |skydrivesync.policies.live.net|TLS v1.2|OneDrive
 |windows.policies.live.net|HTTP|OneDrive
+|activity.windows.com|TLSV1.2|Used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows
+|adl.windows.com|HTTP|Used for compatibility database updates for Windows
+|spclient.wg.spotify.com|TLSV1.2|Used for Spotify Live Tile
+|cs.dds.microsoft.com|TLSV1.2|Used by Device Directory Service to keep track of user-device associations and storing metadata about the devices.
 
 ## Windows 10 Education
 
@@ -203,3 +211,4 @@ The following methodology was used to derive the network endpoints:
 |outlook.office365.com|HTTP|Microsoft Office
 |www.bing.com|TLS v1.2|Used for updates for Cortana, apps, and Live Tiles
 |www.msftconnecttest.com|HTTP|Network Connection (NCSI)
+|adl.windows.com|HTTP|Used for compatibility database updates for Windows

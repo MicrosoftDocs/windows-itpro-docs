@@ -18,9 +18,12 @@ manager: dansimp
 
 # Configure the notifications that appear on endpoints
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 In Windows 10, application notifications about malware detection and remediation are more robust, consistent, and concise.
 
@@ -73,7 +76,7 @@ You can use Group Policy to:
 Hiding notifications can be useful in situations where you can't hide the entire Microsoft Defender Antivirus interface. See [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. 
 
 > [!NOTE]
-> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection). 
+> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection). 
 
 See [Customize the Windows Security app for your organization](../windows-defender-security-center/windows-defender-security-center.md) for instructions to add custom contact information to the notifications that users see on their machines.
 

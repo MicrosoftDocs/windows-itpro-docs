@@ -16,10 +16,10 @@
 
 ## [How Windows Hello for Business works](hello-how-it-works.md)
 ### [Technical Deep Dive](hello-how-it-works.md#technical-deep-dive)
-#### [Technology and Terminology](hello-how-it-works-technology.md)
 #### [Device Registration](hello-how-it-works-device-registration.md)
 #### [Provisioning](hello-how-it-works-provisioning.md)
 #### [Authentication](hello-how-it-works-authentication.md)
+#### [Technology and Terminology](hello-how-it-works-technology.md)
 
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
@@ -63,7 +63,7 @@
 ## [Windows Hello and password changes](hello-and-password-changes.md)
 ## [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 
-## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.md)
+## [Windows Hello for Business Frequently Asked Questions (FAQ)](hello-faq.yml)
 ### [Windows Hello for Business Videos](hello-videos.md)
 
 ## [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
