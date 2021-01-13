@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-ms.date: 12/15/2020
+ms.date: 01/15/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -31,20 +31,29 @@ ms.custom: FPFN
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
-Did Microsoft Defender for Endpoint identify an artifact as malicious, even though it wasn't? Are files or processes that are not a threat being stopped in their tracks by Defender for Endpoint? Or, did Defender for Endpoint miss something? Use this article as a guide for addressing false positives or false negatives in Defender for Endpoint.
+In Microsoft Defender for Endpoint, a false positive is an entity, such as a file or process, that was detected and identified as malicious, when, in fact, the entity does not pose a threat. A false negative is an entity that was not detected as a threat even though it is, in fact, malicious. If you’re seeing false positives or negatives in your Microsoft Defender Security Center, use this article as a guide to take action. 
 
-| Step | Description |
-|:---|:---|
-| 1. [Identify a false positive/negative](#identify-a-false-positivenegative) | A false positive is something that was detected and identified as malicious, when in fact it does not pose a threat. <br/>A false negative is something that was not detected as a threat even though it is, in fact, malicious. <br/>Both false positives and false negatives can be problematic for your organization.    |
-| 2. [Review/define exclusions for Defender for Endpoint](#review-or-define-exclusions)  |  |
-| 3. [Review/define indicators for Defender for Endpoint](#review-or-define-indicators) |  |
-| 4. [Classify a false positive/negative in Defender for Endpoint](#classify-a-false-positive-or-false-negative) |  |
-| 5. [Submit a file for analysis](#submit-a-file-for-analysis) |  |
-| 6. [Confirm your software uses EV code signing](#confirm-your-software-uses-ev-code-signing)  |  |
+Review your threat protection settings
+Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
-## Identify a false positive/negative
+- Cloud-delivered protection
+- Remediation for potentially unwanted apps (PUA)
 
-*How do we know something is a false positive or negative? What do we want customers to look for?*
+### Cloud-delivered protection
+
+Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, this is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
+
+See [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
+
+### Remediation for potentially unwanted applications (PUA)
+
+Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
+ 
+Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If this is happening, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
+
+> [!TIP]
+> To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+
 
 ## Review or define exclusions
 
