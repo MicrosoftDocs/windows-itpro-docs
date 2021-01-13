@@ -181,8 +181,8 @@ You'll need to have access to:
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
     ![Image of apply to each condition](images/apply-to-each-value.png)  
-    ![Image of condition](images/conditions-2.png) 
-    ![Image of condition](images/condition3.png)  
+    ![Image of condition1](images/conditions-2.png) 
+    ![Image of condition2](images/condition3.png)  
     ![Image of send email](images/send-email.png)
 
 ## Alert notification
