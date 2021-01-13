@@ -733,7 +733,7 @@ The following Azure AD Premium features are not in Azure AD Basic:
 
 * Allow designated users to manage group membership
 * Dynamic group membership based on user metadata
-* Azure AD Multi-Factor Authentication authentication (MFA; see [What is Azure AD Multi-Factor Authentication Authentication](https://azure.microsoft.com/documentation/articles/multi-factor-authentication/))
+* Azure AD Multi-Factor Authentication (MFA; see [What is Azure AD Multi-Factor Authentication](https://azure.microsoft.com/documentation/articles/multi-factor-authentication/))
 * Identify cloud apps that your users run
 * Self-service recovery of BitLocker
 * Add local administrator accounts to Windows 10 devices
