@@ -75,17 +75,15 @@ Depending on the apps your organization is using, you might be getting false pos
 8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
 
-
 ## Review or define exclusions for Microsoft Defender for Endpoint
 
 An exclusion is an entity that you specify as an exception to remediation. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
 To define exclusions across Microsoft Defender for Endpoint, you must perform at least two kinds of tasks:
-
 - Define exclusions for Microsoft Defender Antivirus (you do this by editing an existing antivirus policy or by creating a new policy)
 - Create “allow” indicators for Microsoft Defender for Endpoint ()
 
-You must perform both kinds of tasks because Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR), [attack surface reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, use custom indicators.
+You must perform both kinds of tasks because Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR), [attack surface reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 
 ## Review or define indicators
