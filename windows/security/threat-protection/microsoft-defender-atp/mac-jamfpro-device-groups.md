@@ -35,15 +35,15 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 2. Select **New**. 
 
-    ![Image of Jamf Pro](images/jamf-pro-static-group.png)
+    ![Image of Jamf Pro1](images/jamf-pro-static-group.png)
 
 3. Provide a display name and select **Save**.
 
-    ![Image of Jamf Pro](images/jamfpro-machine-group.png)
+    ![Image of Jamf Pro2](images/jamfpro-machine-group.png)
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-    ![Image of Jamf Pro](images/contoso-machine-group.png)
+    ![Image of Jamf Pro3](images/contoso-machine-group.png)
 
 ## Next step
 - [Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro](mac-jamfpro-policies.md)
