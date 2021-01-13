@@ -14,16 +14,15 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ---
 
 # Deploy Microsoft Defender for Endpoint for Linux manually
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -70,10 +69,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running CentOS 7 and wish to deploy MDATP for Linux from the *prod* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -98,10 +97,10 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running SLES 12 and wish to deploy MDATP for Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-insiders-fast https://packages.microsoft.com/config/sles/12/insiders-fast.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -132,10 +131,10 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *insiders-fast* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/insiders-fast.list
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
@@ -143,11 +142,12 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
-    For example, if you chose *insiders-fast* channel:
-    
+
+    For example, if you chose *prod* channel:
+
     ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
-    ```   
+    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
+    ```
 
 - Install the `gpg` package if not already installed:
 
@@ -160,7 +160,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
 - Install the https driver if it's not already present:
@@ -189,12 +189,14 @@ In order to preview new features and provide early feedback, it is recommended t
     # list all repositories
     yum repolist
     ```
+
     ```Output
     ...
     packages-microsoft-com-prod               packages-microsoft-com-prod        316
     packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
     ...
     ```
+
     ```bash
     # install the package from the production repository
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
@@ -219,6 +221,7 @@ In order to preview new features and provide early feedback, it is recommended t
     XX | packages-microsoft-com-prod | microsoft-prod | ...
     ...
     ```
+
     ```bash
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
@@ -234,10 +237,12 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     cat /etc/apt/sources.list.d/*
     ```
+
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
     deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
     ```
+
     ```bash
     sudo apt -t bionic install mdatp
     ```
@@ -267,11 +272,11 @@ Download the onboarding package from Microsoft Defender Security Center:
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-
 
 ## Client configuration
 
