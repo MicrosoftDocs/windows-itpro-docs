@@ -10,7 +10,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/12/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -41,8 +40,11 @@ Defining exclusions lowers the protection offered by Microsoft Defender Antiviru
 The following is a list of recommendations that you should keep in mind when defining exclusions:  
 
 - Exclusions are technically a protection gap—always consider additional mitigations when defining exclusions. Additional mitigations could be as simple as making sure the excluded location has the appropriate access-control lists (ACLs), audit policy, is processed by an up-to-date software, etc.
+
 - Review the exclusions periodically. Re-check and re-enforce the mitigations as part of the review process.
+
 - Ideally, avoid defining proactive exclusions. For instance, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues—mostly around performance, or sometimes around application compatibility that exclusions could mitigate.
+
 - Audit the exclusion list changes. The security admin should preserve enough context around why a certain exclusion was added. You should be able to provide answer with specific reasoning as to why a certain path was excluded.
 
 ## Related articles

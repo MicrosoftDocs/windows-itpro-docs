@@ -21,7 +21,7 @@ ms.custom: nextgen
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft next-generation technologies in Microsoft Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
 

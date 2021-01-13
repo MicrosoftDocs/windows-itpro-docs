@@ -23,7 +23,7 @@ manager: dansimp
 
 **Applies to:**
 
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
