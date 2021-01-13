@@ -95,7 +95,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 #### Use Microsoft Endpoint Manager to manage antivirus exclusions for existing policies
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to the next procedure).
+2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-an-antivirus-policy-with-exclusions)).
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 4. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
 5. Choose **Review + save**, and then choose **Save**.
@@ -108,7 +108,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 4. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
 5. Specify a name and description for the profile, and then choose **Next**.
 6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
-7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags]( Use role-based access control (RBAC) and scope tags for distributed IT in Intune | Microsoft Docs).)
+7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](Assign device profiles in Microsoft Intune - Azure | Microsoft Docs).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.
 
