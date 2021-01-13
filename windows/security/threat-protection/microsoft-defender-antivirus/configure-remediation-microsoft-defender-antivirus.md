@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 01/06/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -39,20 +39,20 @@ To configure these settings:
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
 
-4. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
+4. Select the policy **Setting** as specified in the table below, and set the option to your desired configuration. Select **OK**, and repeat for any other settings.
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Scan | Create a system restore point | A system restore point will be created each day before cleaning or scanning is attempted | Disabled
-Scan | Turn on removal of items from scan history folder | Specify how many days items should be kept in the scan history | 30 days
-Root | Turn off routine remediation | You can specify whether Microsoft Defender Antivirus automatically remediates threats, or if it should ask the endpoint user what to do. | Disabled (threats are remediated automatically)
-Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | Never removed
-Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable
-Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable
+|Location | Setting | Description | Default setting (if not configured) |
+|:---|:---|:---|:---|
+|Scan | Create a system restore point | A system restore point will be created each day before cleaning or scanning is attempted | Disabled|
+|Scan | Turn on removal of items from scan history folder | Specify how many days items should be kept in the scan history | 30 days |
+|Root | Turn off routine remediation | You can specify whether Microsoft Defender Antivirus automatically remediates threats, or if it should ask the endpoint user what to do. | Disabled (threats are remediated automatically) |
+|Quarantine | Configure removal of items from Quarantine folder | Specify how many days items should be kept in quarantine before being removed | Never removed |
+|Threats | Specify threat alert levels at which default action should not be taken when detected | Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored) | Not applicable |
+|Threats | Specify threats upon which default action should not be taken when detected | Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored | Not applicable |
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.

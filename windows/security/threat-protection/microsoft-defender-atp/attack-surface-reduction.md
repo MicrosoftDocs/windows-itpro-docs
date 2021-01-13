@@ -14,7 +14,7 @@ ms.author: deniseb
 ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
-ms.date: 12/10/2020
+ms.date: 01/08/2021
 ---
 
 # Use attack surface reduction rules to prevent malware infection
@@ -243,6 +243,12 @@ Microsoft Endpoint Configuration Manager name: `Block executable content from em
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
+> [!NOTE]
+> The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
+> - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
+> - Endpoint Manager: Block executable content download from email and webmail clients.
+> - Group Policy: Block executable content from email client and webmail.
+
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
 This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
@@ -462,4 +468,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-- [Compatibility of Microsoft Defender with other antivirus/antimalware](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+- [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware solutions](../microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)

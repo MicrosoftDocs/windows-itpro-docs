@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/30/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -34,7 +33,7 @@ Network protection expands the scope of [Microsoft Defender SmartScreen](../micr
 
 Network protection is supported beginning with Windows 10, version 1709. 
 
-For more details about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
+For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
 > [!TIP]
 > You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
@@ -47,7 +46,7 @@ You can also use [audit mode](audit-windows-defender.md) to evaluate how Network
 
 ## Requirements
 
-Network protection requires Windows 10 Pro, Enterprise E3, E5 and Microsoft Defender AV real-time protection.
+Network protection requires Windows 10 Pro, Enterprise E3, E5, and Microsoft Defender AV real-time protection.
 
 Windows 10 version | Microsoft Defender Antivirus
 -|-
@@ -77,7 +76,7 @@ You can review the Windows event log to see events that are created when network
 
 1. [Copy the XML directly](event-views.md).
 
-2. Click **OK**.
+2. Select **OK**.
 
 3. This will create a custom view that filters to only show the following events related to network protection:
 
@@ -89,6 +88,6 @@ You can review the Windows event log to see events that are created when network
 
 ## Related articles
 
-- [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrate how the feature works, and what events would typically be created.
+- [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrates how the feature works, and what events would typically be created.
 
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
