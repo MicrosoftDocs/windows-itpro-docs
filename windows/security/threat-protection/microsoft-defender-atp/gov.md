@@ -100,7 +100,7 @@ GCC High | `https://login.microsoftonline.us` | `https://api-gov.securitycenter.
 
 
 ## Feature parity with commercial
-Defender for Endpoint does not have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
+Defender for Endpoint doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
 
 These are the known gaps as of January 2021:
 
