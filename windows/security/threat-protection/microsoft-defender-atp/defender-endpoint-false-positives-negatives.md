@@ -112,8 +112,6 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](Assign device profiles in Microsoft Intune - Azure | Microsoft Docs).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.
 
-
-
 ## Review or define indicators
 
 *Allow indicators for false positives; block indicators for false negatives.  https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators*
