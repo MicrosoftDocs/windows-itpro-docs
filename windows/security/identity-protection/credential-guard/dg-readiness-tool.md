@@ -732,11 +732,11 @@ function IsDomainController
 
 function CheckOSSKU
 {
-    $osname = $((gwmi win32_operatingsystem).Name).ToLower()
+    $osname = $((Get-ComputerInfo).WindowsProductName).ToLower()
     $_SKUSupported = 0
     Log "OSNAME:$osname"
     $SKUarray = @("Enterprise", "Education", "IoT", "Windows Server")
-    $HLKAllowed = @("microsoft windows 10 pro")
+    $HLKAllowed = @("windows 10 pro")
     foreach ($SKUent in $SKUarray)
     {
         if($osname.ToString().Contains($SKUent.ToLower()))
