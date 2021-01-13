@@ -55,7 +55,7 @@ Property |   Type   |   Description
 id | String | [machine](machine.md) identity.
 computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
-lastSeen | DateTimeOffset | Last date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
+lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
