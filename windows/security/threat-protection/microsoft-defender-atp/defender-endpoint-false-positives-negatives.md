@@ -33,7 +33,8 @@ ms.custom: FPFN
 
 In Microsoft Defender for Endpoint, a false positive is an entity, such as a file or process, that was detected and identified as malicious, when, in fact, the entity does not pose a threat. A false negative is an entity that was not detected as a threat even though it is, in fact, malicious. If you’re seeing false positives or negatives in your Microsoft Defender Security Center, use this article as a guide to take action. 
 
-Review your threat protection settings
+## Review your threat protection settings
+
 Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
 - Cloud-delivered protection
@@ -112,13 +113,17 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](Assign device profiles in Microsoft Intune - Azure | Microsoft Docs).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.
 
-## Review or define indicators
+### Indicators for Microsoft Defender for Endpoint
 
 *Allow indicators for false positives; block indicators for false negatives.  https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators*
 
-## Classify a false positive or false negative
+To specify files, IP addresses, URLs, domains, and certificates as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators. "Allow" indicators prevent the following capabilities of Microsoft Defender for Endpoint from taking action on entities:
 
-*Need to figure out where/how this is done*
+- [Next-generation protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Endpoint detection and response](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
+- [Automated investigation & remediation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+
 
 ## Submit a file for analysis
 
