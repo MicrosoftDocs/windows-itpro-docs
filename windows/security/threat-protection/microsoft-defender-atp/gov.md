@@ -40,12 +40,12 @@ The following OS versions are supported:
 
 OS version | GCC | GCC High
 :---|:---|:---
-Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1803 (with [KB4586839](https://support.microsoft.com/help/4598245)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade
 Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
