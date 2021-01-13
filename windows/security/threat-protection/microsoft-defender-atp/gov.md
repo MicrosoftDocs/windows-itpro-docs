@@ -45,7 +45,7 @@ Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/44
 Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1803 | ![No](../images/svg/check-no.svg) Rolling out | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
+Windows 10, version 1803 (with [KB4586839](https://support.microsoft.com/help/4598245)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade
 Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
