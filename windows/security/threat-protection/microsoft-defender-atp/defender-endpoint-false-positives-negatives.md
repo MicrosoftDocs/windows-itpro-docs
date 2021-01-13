@@ -54,6 +54,16 @@ Depending on the apps your organization is using, you might be getting false pos
 > [!TIP]
 > To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
+#### Use Microsoft Endpoint Manager to edit PUA protection for existing configuration profiles
+
+1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2.	Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to the next procedure).
+3.	Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
+4.	On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
+5.	Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you will be able to see detections.)
+6.	Choose **Review + save**, and then choose **Save**.
+
+
 
 ## Review or define exclusions
 
