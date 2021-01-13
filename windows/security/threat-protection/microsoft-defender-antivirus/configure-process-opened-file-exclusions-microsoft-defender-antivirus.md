@@ -77,8 +77,6 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 5. Click **OK**.
 
-![The Group Policy setting for specifying process exclusions](images/defender/wdav-process-exclusions.png)
-
 ### Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans
 
 Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess` parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
@@ -106,11 +104,11 @@ For example, the following code snippet would cause Microsoft Defender AV scans 
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-For more information on how to use PowerShell with Microsoft Defender Antivirus, see Manage antivirus with PowerShell cmdlets and [Microsoft Defender Antivirus cmdlets](https://docs.microsoft.com/powershell/module/defender/?view=win10-ps&preserve=true).
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see Manage antivirus with PowerShell cmdlets and [Microsoft Defender Antivirus cmdlets](https://docs.microsoft.com/powershell/module/defender).
 
 ### Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
 
-Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
 ```WMI
 ExclusionProcess
@@ -118,7 +116,7 @@ ExclusionProcess
 
 The use of **Set**, **Add**, and **Remove** is analogous to their counterparts in PowerShell: `Set-MpPreference`, `Add-MpPreference`, and `Remove-MpPreference`.
 
-For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
+For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ### Use the Windows Security app to exclude files that have been opened by specified processes from scans
 
@@ -154,8 +152,8 @@ To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
->[!NOTE]
->Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+> [!NOTE]
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
 
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
@@ -166,7 +164,7 @@ Use the following cmdlet:
 Get-MpPreference
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -177,7 +175,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Related articles
 
