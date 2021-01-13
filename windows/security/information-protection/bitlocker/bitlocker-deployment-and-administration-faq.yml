@@ -35,7 +35,7 @@ sections:
         answer: Yes.
 
       - question: Is there a noticeable performance impact when BitLocker is enabled on a computer?
-        answer: Generally speaking, it imposes a low performance reduction, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
+        answer: Typically, there's a small performance overhead, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
 
       - question: How long will initial encryption take when BitLocker is turned on?
         answer: |
