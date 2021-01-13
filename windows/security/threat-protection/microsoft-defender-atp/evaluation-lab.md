@@ -248,10 +248,10 @@ You can conveniently run any available simulation right from the catalog.
 Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
 
 **Examples:**
-![Image of simulation description details](images/simulation-details-aiq.png)
+![Image of simulation description details1](images/simulation-details-aiq.png)
 
 
-![Image of simulation description details](images/simulation-details-sb.png)
+![Image of simulation description details2](images/simulation-details-sb.png)
 
 
 ## Evaluation report
