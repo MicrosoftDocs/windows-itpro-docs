@@ -26,7 +26,21 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-This article is part of the Deployment guide and acts as an example onboarding method that guides users in:
+
+
+This article is part of the Deployment guide and acts as an example onboarding method. 
+
+In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the co-management architecture. 
+
+![Image of cloud-native architecture](images/co-management-architecture.png)
+*Diagram of environment architectures*
+
+
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+
+
+
+This topic guides users in:
 - Step 1: Onboarding Windows devices to the service 
 - Step 2: Configuring Defender for Endpoint capabilities
 
@@ -37,9 +51,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 >[!NOTE]
 >Only Windows devices are covered in this example deployment. 
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. 
 
-For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
 ## Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager
