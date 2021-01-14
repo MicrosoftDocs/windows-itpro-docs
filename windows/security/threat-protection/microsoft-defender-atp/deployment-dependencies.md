@@ -20,7 +20,8 @@ ms.topic: article
 ---
 
 # Deployment dependancies
-When deploying Defender for Endpoints, each operating systems may require the Defender ATP agent, app, or the Microsoft Monitoring Agent (MMA). The following table outlines the requirements for each platform:
+## Table of dependancies
+When deploying Defender for Endpoints, each operating system may require the Defender ATP agent, app, the Microsoft Monitoring Agent (MMA) or some combination of them. The following table outlines the requirements for each platform:
 
 |Operating System | Defender Agent/App | MMA Agent | Onboarding Process | 
 |:-------|:-----|:----|:----|
