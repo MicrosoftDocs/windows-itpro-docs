@@ -132,6 +132,9 @@ You can create indicators for files, IP addresses, URLs, domains, and certificat
 - [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
 - [Create an indicator for an application certificate](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
 
+> [!TIP]
+> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information.
+
 ## Submit a file for analysis
 
 *https://www.microsoft.com/wdsi/filesubmission/*
