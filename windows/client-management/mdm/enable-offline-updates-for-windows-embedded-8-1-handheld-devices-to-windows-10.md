@@ -141,7 +141,8 @@ There are two ways to retrieve this file from the device; one pre-GDR1 and one p
 3.  After the report XML is sent to the device, Microsoft Endpoint Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
 4.  Parse this log for the report XML content.
 
-For a step-by-step walkthrough, see [Retrieve a device update report using Microsoft Endpoint Manager logs](#retrieve-a-device-update-report-using-microsoft-endpoint-configuration-manager-logs).
+For a step-by-step walkthrough, see [Retrieve a device update report using Microsoft Endpoint Manager logs](#retrieve-a-device-update-report-using-microsoft-endpoint-manager-logs).
+
 
 **Post-GDR1: Retrieve the report xml file using an SD card**
 
