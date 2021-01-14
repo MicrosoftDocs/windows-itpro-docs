@@ -35,7 +35,6 @@ When deploying Defender for Endpoints, each operating system may require the Def
 | Android | Yes | N/A | [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/endpoint-manager-overview) |
 
 
-
 ## See also
 - [Phase 3: Onboard](onboarding.md)
 - [Plan deployment](deployment-strategy.md)
