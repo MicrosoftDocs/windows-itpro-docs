@@ -1,7 +1,7 @@
 ---
 title: Deployment dependencies
 description: Learn about Defender ATP deployment dependencies on each platform OS
-keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring, dependancies, dependancy
+keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring, dependencies, dependency
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,8 +19,8 @@ ms.collection:
 ms.topic: article
 ---
 
-# Deployment dependancies
-## Table of dependancies
+# Deployment dependencies
+## Table of dependencies
 When deploying Defender for Endpoints, each operating system may require the Defender ATP agent, app, the Microsoft Monitoring Agent (MMA) or some combination of them. The following table outlines the requirements for each platform:
 
 |Operating System | Defender Agent/App | MMA Agent | Onboarding Process | 
