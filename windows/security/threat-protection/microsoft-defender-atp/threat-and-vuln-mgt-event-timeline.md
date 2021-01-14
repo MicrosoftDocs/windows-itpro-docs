@@ -32,6 +32,9 @@ Event timeline is a risk news feed that helps you interpret how risk is introduc
 
 Event timeline also tells the story of your [exposure score](tvm-exposure-score.md) and [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md) so you can determine the cause of large changes. Events can impact your devices or your score for devices. Reduce you exposure by addressing what needs to be remediated based on the prioritized [security recommendations](tvm-security-recommendation.md).
 
+>[!TIP]
+>To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+
 ## Navigate to the Event timeline page
 
 There are also three entry points from the [threat and vulnerability management dashboard](tvm-dashboard-insights.md):
