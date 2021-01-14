@@ -137,12 +137,17 @@ Your security team can create indicators for files, IP addresses, URLs, domains,
 
 ## Classify a false positive or false negative
 
-### Suppress alerts for a false positive
+### Classify an alert as a false positive
 
-To suppress an alert, you create an alert suppression rule. 
+Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the Alerts queue. 
 
-1. Go to the Microsoft Defender Security Center ()
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. Select **Alerts queue**, and then select an alert that is a false positive.
+3. For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
+4. In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
 
+> [!TIP]
+> For more details about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
 
 ## Submit a file for analysis
 
