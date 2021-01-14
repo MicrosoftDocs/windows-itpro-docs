@@ -26,7 +26,7 @@ ms.date: 02/07/2020
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- Microsoft Endpoint Configuration Manager current branch
+- Microsoft Endpoint Manager current branch
 - System Center 2012 R2 Configuration Manager
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -167,9 +167,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-### Offboard devices using Microsoft Endpoint Configuration Manager current branch
+### Offboard devices using Microsoft Endpoint Manager current branch
 
-If you use Microsoft Endpoint Configuration Manager current branch, see [Create an offboarding configuration file](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+If you use Microsoft Endpoint Manager current branch, see [Create an offboarding configuration file](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
@@ -195,7 +195,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ## Monitor device configuration
 
-If you're using Microsoft Endpoint Configuration Manager current branch, use the built-in Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Defender for Endpoint - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+If you're using Microsoft Endpoint Manager current branch, use the built-in Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Defender for Endpoint - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
 If you're using System Center 2012 R2 Configuration Manager, monitoring consists of two parts:
 
