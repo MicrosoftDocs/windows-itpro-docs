@@ -232,8 +232,8 @@
 #### [Better together: Microsoft Defender Antivirus and Office 365](microsoft-defender-antivirus/office-365-microsoft-defender-antivirus.md)
 
 
-### [Microsoft Defender Advanced Threat Protection for Mac]()
-#### [Overview of Microsoft Defender ATP for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
+### [Microsoft Defender for Endpoint for Mac]()
+#### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
 
 #### [Deploy]()
