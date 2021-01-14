@@ -128,25 +128,14 @@ In order to preview new features and provide early feedback, it is recommended t
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -sSL https://packages.microsoft.com/config/[distro]/[version]/[channel].list | sudo tee /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
     For example, if you are running Ubuntu 18.04 and wish to deploy MDATP for Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-    ```
 
-- Install the repository configuration:
-
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
-    ```
-
-    For example, if you chose *prod* channel:
-
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
+    curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
     ```
 
 - Install the `gpg` package if not already installed:
@@ -160,7 +149,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
     ```
 
 - Install the https driver if it's not already present:
