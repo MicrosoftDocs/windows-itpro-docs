@@ -119,21 +119,30 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 Indicators enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain IP addresses or URLs.
 
-To specify entities as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators. Such "allow" indicators apply to the following capabilities in Microsoft Defender for Endpoint:
+To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators. Such "allow" indicators apply to the following capabilities in Microsoft Defender for Endpoint:
 
 - [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 - [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-You can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
+Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
 
-- [Learn more about indicators](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
-- [Create an indicator for a file, such as an executable](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
-- [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
-- [Create an indicator for an application certificate](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
+- [Learn more about indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+- [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
+- [Create an indicator for an IP address, URL, or domain](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-ip-domain)
+- [Create an indicator for an application certificate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-certificates)
 
 > [!TIP]
-> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information.
+> When you create indicators, you can define them one by one or import multiple items at once. Keep in mind there's a limit of 15,000 indicators you can have in a single tenant. And, you might need to gather certain details first, such as file hash information. Make sure to review the information, including prerequisites, 
+
+## Classify a false positive or false negative
+
+### Suppress alerts for a false positive
+
+To suppress an alert, you create an alert suppression rule. 
+
+1. Go to the Microsoft Defender Security Center ()
+
 
 ## Submit a file for analysis
 
