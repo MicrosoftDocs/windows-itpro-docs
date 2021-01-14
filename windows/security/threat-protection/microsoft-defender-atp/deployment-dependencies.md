@@ -25,15 +25,14 @@ When deploying Defender for Endpoints, each operating system may require the Def
 
 |Operating System | Defender Agent/App | MMA Agent | Onboarding Process | 
 |:-------|:-----|:----|:----|
-Windows 7 SP1 and 8.1 | No | Yes | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-Windows 10 | No | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-Windows Server 2008 R2 SP1, 2012 R2, and 2016 | No | Yes | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-Windows Server 1803 and 2019 | No | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-macOS | Yes | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-Linux Server | Yes | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
-iOS | Yes | N/A | [App](https://apps.apple.com/us/app/microsoft-defender-atp/id1526737990) |
-Android | Yes | N/A | [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/endpoint-manager-overview) |
-
+| Windows 7 SP1 and 8.1 | No | Yes | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| Windows 10 | No | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| Windows Server 2008 R2 SP1, 2012 R2, and 2016 | No | Yes | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| Windows Server 1803 and 2019 | No | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| macOS | Yes | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| Linux Server | Yes | No | [Options](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure#onboarding-tool-options) |
+| iOS | Yes | N/A | [App](https://apps.apple.com/us/app/microsoft-defender-atp/id1526737990) |
+| Android | Yes | N/A | [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/endpoint-manager-overview) |
 
 
 ## See also
