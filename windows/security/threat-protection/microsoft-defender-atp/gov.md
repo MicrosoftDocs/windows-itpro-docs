@@ -91,10 +91,11 @@ Defender for Endpoint GCC High specific | `winatp-gw-usgt.microsoft.com`<br>`win
 ## API
 Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro), you'll need to use the following URIs:
 
-Environment | Login endpoint | Defender for Endpoint API endpoint | SIEM API endpoint
+Endpoint type | GCC | GCC High
 :---|:---|:---
-GCC | `https://login.microsoftonline.com` | `https://api-gcc.securitycenter.microsoft.us` | Rolling out
-GCC High | `https://login.microsoftonline.us` | `https://api-gov.securitycenter.microsoft.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
+Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
+Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
+SIEM | Rolling out | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
 <br>
 
