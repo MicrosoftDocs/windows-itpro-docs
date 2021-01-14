@@ -262,10 +262,6 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     >bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
     >bcdedit /set vsmlaunchtype off
     >```
-
-> [!NOTE]
-> Credential Guard and Device Guard are not currently supported when using Azure IaaS VMs. These options will be made available with future Gen 2 VMs.
-
 For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity
 ).
 
