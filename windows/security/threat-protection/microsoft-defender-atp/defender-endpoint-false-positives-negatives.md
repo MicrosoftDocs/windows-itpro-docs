@@ -117,9 +117,9 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 ### Indicators for Microsoft Defender for Endpoint
 
-*Allow indicators for false positives; block indicators for false negatives.  https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators*
+Indicators enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain IP addresses or URLs.
 
-To specify files, IP addresses, URLs, domains, and certificates as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators. "Allow" indicators prevent the following capabilities of Microsoft Defender for Endpoint from taking action on entities:
+To specify entities, such as files, IP addresses, URLs, domains, and certificates as exclusions for Microsoft Defender for Endpoint, you can create "allow" indicators. Such "allow" indicators apply to the following capabilities in Microsoft Defender for Endpoint:
 
 - [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
