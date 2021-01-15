@@ -64,7 +64,14 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings for a new antivirus policy
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus** and then select an existing policy.
+2. Choose **Endpoint security** > **Antivirus** > **+ Create policy**.
+3. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
+4. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
+5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
+   - Set **Turn on cloud-delivered protection** to **Yes**.
+   - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
+6. On the **Scope tags** tab,  
+
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
@@ -135,7 +142,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 5. Specify a name and description for the profile, and then choose **Next**.
 6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
 7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
-8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](Assign device profiles in Microsoft Intune - Azure | Microsoft Docs).)
+8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.
 
 ### Indicators for Microsoft Defender for Endpoint
