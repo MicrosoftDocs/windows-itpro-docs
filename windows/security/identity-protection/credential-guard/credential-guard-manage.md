@@ -265,7 +265,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 
 For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity).
 
-> [!Note]
+> [!NOTE]
 > Credential Guard and Device Guard are not supported when using Azure Gen 1 VMs. These options are available with Gen 2 VMs only.
 
 <span id="turn-off-with-hardware-readiness-tool"/>
@@ -290,5 +290,4 @@ From the host, you can disable Windows Defender Credential Guard for a virtual m
 ```powershell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
-
 
