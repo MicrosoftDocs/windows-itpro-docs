@@ -162,7 +162,7 @@ Primarily for large enterprise organizations with more complex authentication re
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 - IT departments to manage work-owned devices from a central location.
 - Users to sign in to their devices with their Active Directory work or school accounts. 
-Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use Microsoft Endpoint Configuration Manager or group policy (GP) to manage them.
+Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy (GP) to manage them.
 
 If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These are devices that are both, joined to your on-premises Active Directory and your Azure Active Directory.
 
