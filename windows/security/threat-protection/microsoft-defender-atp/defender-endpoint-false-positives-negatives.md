@@ -179,7 +179,11 @@ You can suppress an alert in the Microsoft Defender Security Center.
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 2. In the navigation pane, select **Alerts queue**. 
 3. Select an alert that you want to suppress to open its **Details** pane.
-4. 
+4. In the **Details** pane, choose the ellipsis (`...`), and then choose **Create a suppression rule**.
+5. Specify all the settings for your suppression rule, and then choose **Save**. 
+
+> [!TIP]
+> Need help with suppression rules? See [Suppress an alert and create a new suppression rule](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
 
 ### Classify an alert as a false positive
 
