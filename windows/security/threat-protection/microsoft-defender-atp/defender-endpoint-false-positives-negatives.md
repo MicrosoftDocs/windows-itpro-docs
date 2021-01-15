@@ -59,7 +59,7 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings (for existing policies)
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-antivirus-policy)).
+2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 4. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
 5. Choose **Review + save**, and then **Save**.
@@ -91,7 +91,7 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 #### Use Microsoft Endpoint Manager to edit PUA protection (for existing configuration profiles)
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)).
+2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 5. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you will be able to see detections.)
