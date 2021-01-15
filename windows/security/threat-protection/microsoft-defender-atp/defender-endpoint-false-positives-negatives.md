@@ -42,7 +42,7 @@ If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/w
 
 ## Review your threat protection settings
 
-Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
+Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
 - Cloud-delivered protection
 - Remediation for potentially unwanted apps (PUA)
@@ -85,13 +85,13 @@ Depending on the apps your organization is using, you might be getting false pos
 
 ## Review or define exclusions for Microsoft Defender for Endpoint
 
-An exclusion is an entity that you specify as an exception to remediation. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
+An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
-To define exclusions across Microsoft Defender for Endpoint, you perform these two tasks:
+To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
 - Define exclusions for Microsoft Defender Antivirus
 - Create “allow” indicators for Microsoft Defender for Endpoint
 
-Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) (EDR), [attack surface reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indcators for Microsoft Defender for Endpoint.
+Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indcators for Microsoft Defender for Endpoint.
 
 The procedures in this section describe how to define exclusions and indicators.
 
