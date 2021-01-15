@@ -44,12 +44,12 @@ This topic provides instructions on how to run the tool via Live Response.
 
 4. Select **Choose file**.
 
-    ![Image of choose file button](images/choose-file.png)
+    ![Image of choose file button1](images/choose-file.png)
 
 5. Select the downloaded file named MDATPLiveAnalyzer.ps1 and then click on **Confirm**
 
 
-   ![Image of choose file button](images/analyzer-file.png)
+   ![Image of choose file button2](images/analyzer-file.png)
 
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
