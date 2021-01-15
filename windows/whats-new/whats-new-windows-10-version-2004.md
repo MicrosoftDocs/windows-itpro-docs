@@ -212,7 +212,7 @@ You can now [rename your virtual desktops](https://docs.microsoft.com/windows-in
 
 ### Bluetooth pairing
 
-Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/at-home/Whats-new-wip-at-home-20h1#improving-your-bluetooth-pairing-experience-build-18985).
+Pairing Bluetooth devices with your computer will occur through notifications, so you won't need to go to the Settings app to finish pairing. Other improvements include faster pairing and device name display. For more information, see [Improving your Bluetooth pairing experience](https://docs.microsoft.com/windows-insider/archive/new-in-20h1#improving-your-bluetooth-pairing-experience-build-18985).
 
 ### Reset this PC
 

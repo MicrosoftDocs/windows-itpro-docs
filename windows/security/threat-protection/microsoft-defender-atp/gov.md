@@ -43,22 +43,22 @@ The following OS versions are supported:
 
 OS version | GCC | GCC High
 :---|:---|:---
-Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4490481)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows 10, version 1803 | ![No](../images/svg/check-no.svg) Rolling out | ![Yes](../images/svg/check-yes.svg) With [KB4499183](https://support.microsoft.com/help/4499183)
-Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade
-Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported | ![No](../images/svg/check-no.svg)<br>Note: Will not be supported
+Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
+Windows 10, version 1709 | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![Yes](../images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade
+Windows 10, version 1703 and earlier | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported | ![No](../images/svg/check-no.svg)<br>Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](../images/svg/check-yes.svg) | ![Yes](../images/svg/check-yes.svg)
-Windows Server 2016 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows Server 2012 R2 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows Server 2008 R2 SP1 | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 8.1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 8 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 7 SP1 Enterprise | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
-Windows 7 SP1 Pro | ![No](../images/svg/check-no.svg) Rolling out | ![No](../images/svg/check-no.svg) In development
+Windows Server 2016 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows Server 2012 R2 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows Server 2008 R2 SP1 | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 8.1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 8 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 7 SP1 Enterprise | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
+Windows 7 SP1 Pro | ![Yes](../images/svg/check-yes.svg) | ![No](../images/svg/check-no.svg) In development
 Linux | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 macOS | ![No](../images/svg/check-no.svg) In development | ![No](../images/svg/check-no.svg) In development
 Android | ![No](../images/svg/check-no.svg) On engineering backlog | ![No](../images/svg/check-no.svg) On engineering backlog
@@ -94,16 +94,17 @@ Defender for Endpoint GCC High specific | `winatp-gw-usgt.microsoft.com`<br>`win
 ## API
 Instead of the public URIs listed in our [API documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro), you'll need to use the following URIs:
 
-Environment | Login endpoint | Defender for Endpoint API endpoint
+Endpoint type | GCC | GCC High
 :---|:---|:---
-GCC | `https://login.microsoftonline.com` | `https://api-gcc.securitycenter.microsoft.us`
-GCC High | `https://login.microsoftonline.us` | `https://api-gov.securitycenter.microsoft.us`
+Login | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
+Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
+SIEM | Rolling out | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
 <br>
 
 
 ## Feature parity with commercial
-Defender for Endpoint do not have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
+Defender for Endpoint doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available that we'd like to highlight.
 
 These are the known gaps as of January 2021:
 

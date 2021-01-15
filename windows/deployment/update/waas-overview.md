@@ -165,7 +165,7 @@ There are many tools with which IT pros can service Windows as a service. Each o
 - **Windows Server Update Services (WSUS)** provides extensive control over Windows 10 updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
 - **Microsoft Endpoint Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
 
-With all these options, which an organization chooses depends on the resources, staff, and expertise its IT organization already has. For example, if IT already uses Microsoft Endpoint Configuration Manager to manage Windows updates, it can continue to use it. Similarly, if IT is using WSUS, it can continue to use that. For a consolidated look at the benefits of each tool, see Table 1.
+With all these options, which an organization chooses depends on the resources, staff, and expertise its IT organization already has. For example, if IT already uses Microsoft Endpoint Manager to manage Windows updates, it can continue to use it. Similarly, if IT is using WSUS, it can continue to use that. For a consolidated look at the benefits of each tool, see Table 1.
 
 **Table 1**
 
