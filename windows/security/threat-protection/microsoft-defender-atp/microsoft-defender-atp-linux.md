@@ -14,9 +14,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- m365-security-compliance 
-- m365initiative-defender-endpoint 
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ---
 
@@ -40,6 +40,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 ### Prerequisites
 
 - Access to the Microsoft Defender Security Center portal
+- Linux distribution using the [systemd](https://systemd.io/) system manager
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -105,12 +106,9 @@ After you've enabled the service, you may need to configure your network or fire
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
-
 |**Spreadsheet of domains list**|**Description**|
 |:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) 
-
-
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
