@@ -208,6 +208,8 @@ You can submit files, such as false positives or false negatives, to Microsoft f
 
 ## Confirm your software uses EV code signing
 
+As explained in the blog, [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives), digital signatures help to ensure the software integrity.
+
 *Some info is available here: https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate*
 
 ## Still need help?
