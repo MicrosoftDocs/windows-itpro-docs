@@ -51,7 +51,20 @@ Microsoft Defender for Endpoint offers a wide variety of options, including the 
 
 Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, this is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
 
-See [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
+We recommend using Microsoft Endpoint Manager to edit your cloud-delivered protection settings.
+
+#### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings
+
+1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2.	Choose Endpoint security > Antivirus and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to the next procedure).
+3.	Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+4.	Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
+5.	Choose **Review + save**, and then **Save**.
+
+
+
+> [!TIP]
+> To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
 ### Remediation for potentially unwanted applications (PUA)
 
