@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP data storage and privacy
-description: Learn about how Microsoft Defender ATP handles privacy and data that it collects.
-keywords: Microsoft Defender ATP data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+title: Microsoft Defender for Endpoint data storage and privacy
+description: Learn about how Microsoft Defender for Endpoint handles privacy and data that it collects.
+keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -84,7 +84,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
 **At service onboarding**<br>
-You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
+You can choose the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
 Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.

@@ -1,5 +1,5 @@
 ---
-title: Onboard devices without Internet access to Microsoft Defender ATP
+title: Onboard devices without Internet access to Microsoft Defender for Endpoint
 ms.reviewer: 
 description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender ATP sensor
 keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
