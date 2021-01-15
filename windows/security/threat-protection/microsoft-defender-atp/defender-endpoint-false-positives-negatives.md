@@ -42,7 +42,7 @@ If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/w
 
 ## Review your threat protection settings
 
-Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
+Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine-tune settings for various features and capabilities. If you’re getting numerous false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
 - [Cloud-delivered protection](#cloud-delivered-protection)
 - [Remediation for potentially unwanted apps](#remediation-for-potentially-unwanted-applications-pua) (PUA)
@@ -73,7 +73,7 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
-6. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
+6. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).)
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.  
 
@@ -138,7 +138,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
-3. Select a platform (such as Windows 10 and later, macOS, or Windows 10 and Windows Server).
+3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 4. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
 5. Specify a name and description for the profile, and then choose **Next**.
 6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
