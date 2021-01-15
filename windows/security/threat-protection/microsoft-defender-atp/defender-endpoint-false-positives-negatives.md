@@ -156,7 +156,7 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, your secu
 - [Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 - [Automated investigation & remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
+Your security team can create indicators for files, IP addresses, URLs, domains, and certificates. Use the following resources to create or manage indicators in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)): 
 
 - [Learn more about indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 - [Create an indicator for a file, such as an executable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/indicator-file)
