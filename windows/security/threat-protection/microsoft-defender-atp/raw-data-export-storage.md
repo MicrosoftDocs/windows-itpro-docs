@@ -48,7 +48,7 @@ ms.topic: article
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
 
-   ![Image of event hub resource ID](images/storage-account-resource-id.png)
+   ![Image of event hub resource ID1](images/storage-account-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -56,7 +56,7 @@ ms.topic: article
 
 - A blob container will be created for each event type: 
 
-  ![Image of event hub resource ID](images/storage-account-event-schema.png)
+  ![Image of event hub resource ID2](images/storage-account-event-schema.png)
 
 - The schema of each row in a blob is the following JSON: 
 
@@ -93,7 +93,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event: 
 
-  ![Image of event hub resource ID](images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3](images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)

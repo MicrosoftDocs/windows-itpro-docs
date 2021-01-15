@@ -1,6 +1,6 @@
 ---
 title: Recommendation methods and properties
-description: Retrieves top recent alerts.
+description: Retrieves the top recent alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
