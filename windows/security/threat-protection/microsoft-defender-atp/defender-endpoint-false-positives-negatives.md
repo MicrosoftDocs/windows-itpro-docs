@@ -137,6 +137,12 @@ Your security team can create indicators for files, IP addresses, URLs, domains,
 
 ## Classify a false positive or false negative
 
+As alerts are triggered, if you see something that was detected as malicious or suspicious that should not be, you can suppress alerts for that entity and classify alerts as false positives. Managing your alerts and classifying false positives helps to train your threat protection solution. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
+
+### Suppress an alert
+
+
+
 ### Classify an alert as a false positive
 
 Your security team can classify an alert as a false positive in the Microsoft Defender Security Center, in the Alerts queue. 
