@@ -77,16 +77,18 @@ We recommend using Microsoft Endpoint Manager to edit or set your cloud-delivere
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 9. On the **Review + create** tab, review the settings, and then choose **Create**.  
 
-### Remediation for potentially unwanted applications (PUA)
+### Remediation for potentially unwanted applications
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
  
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If this is happening, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus. 
 
+We recommend using Microsoft Endpoint Manager to edit or set PUA protection settings. 
+
 > [!TIP]
 > To learn more about PUA, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-#### Use Microsoft Endpoint Manager to edit PUA protection for existing configuration profiles
+#### Use Microsoft Endpoint Manager to edit PUA protection (for existing configuration profiles)
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)).
@@ -95,7 +97,7 @@ Depending on the apps your organization is using, you might be getting false pos
 5. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you will be able to see detections.)
 6. Choose **Review + save**, and then choose **Save**.
 
-#### Use Microsoft Endpoint Manager to set PUA protection for a new configuration profile
+#### Use Microsoft Endpoint Manager to set PUA protection (for a new configuration profile)
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Devices** > **Configuration profiles** > **+ Create profile**.
