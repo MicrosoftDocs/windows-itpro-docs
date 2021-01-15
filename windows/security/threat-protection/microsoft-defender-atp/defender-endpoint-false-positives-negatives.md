@@ -38,7 +38,7 @@ In endpoint protection, a false positive is an entity, such as a file or process
 - [Submitting files for further analysis](#submit-a-file-for-analysis); and
 - [Verifying that the applications your organization is using are properly signed](#confirm-your-software-uses-ev-code-signing).
 
-If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
+If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), and you're seeing false positives/negatives in your [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use), use this article as a guide to take action. This article also includes information about [what to do if you still need help](#still-need-help) after taking the recommended steps to address false positives/negatives in your environment.
 
 ## Review your threat protection settings
 
@@ -63,7 +63,8 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings for a new antivirus policy
 
-
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2. Choose **Endpoint security** > **Antivirus** and then select an existing policy.
 
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
