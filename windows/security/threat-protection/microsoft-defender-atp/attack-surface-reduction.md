@@ -147,7 +147,7 @@ The "engine version" listed for attack surface reduction events in the event log
 
 The following table and subsections describe each of the 15 attack surface reduction rules. The attack surface reduction rules are listed in alphabetical order, by rule name. 
 
-If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs.
+If you are configuring attack surface reduction rules by using Group Policy or PowerShell, you'll need the GUIDs. On the other hand, if you use Microsoft Endpoint Manager or Microsoft Intune, you do not need the GUIDs.
 
 
 | Rule name | GUID | File & folder exclusions | Minimum OS supported |
@@ -235,11 +235,11 @@ This rule was introduced in:
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft Endpoint Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Configuration Manager name: `Block executable content from email client and webmail`
+Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
