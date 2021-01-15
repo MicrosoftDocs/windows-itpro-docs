@@ -200,7 +200,7 @@ Your security team can classify an alert as a false positive in the Microsoft De
 
 ## Submit a file for analysis
 
-You can submit files, such as false positives or false negatives, to Microsoft for analysis. Microsoft security researchers analyze all submissions. 
+You can submit files, such as false positives or false negatives, to Microsoft for analysis. Microsoft security researchers analyze all submissions. After you sign in at the submission site, you can track your submissions.
 
 1. Review the guidelines here: [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide).
 
