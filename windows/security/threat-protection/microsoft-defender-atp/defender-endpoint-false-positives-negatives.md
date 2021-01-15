@@ -102,7 +102,7 @@ Depending on the apps your organization is using, you might be getting false pos
 3. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
 4. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
 5. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn PUA protection off, but by using audit mode, you will be able to see detections.)
+6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you will be able to see detections.)
 7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
@@ -115,7 +115,7 @@ To define exclusions across Microsoft Defender for Endpoint, perform the followi
 - Define exclusions for Microsoft Defender Antivirus
 - Create “allow” indicators for Microsoft Defender for Endpoint
 
-Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indcators for Microsoft Defender for Endpoint.
+Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
 
 The procedures in this section describe how to define exclusions and indicators.
 
@@ -186,7 +186,7 @@ Your security team can classify an alert as a false positive in the Microsoft De
 4. In the **Manage alert** section, select **True alert** or **False alert**. Use **False alert** to classify a false positive.
 
 > [!TIP]
-> For more details about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
+> For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-alerts).
 
 ## Submit a file for analysis
 
