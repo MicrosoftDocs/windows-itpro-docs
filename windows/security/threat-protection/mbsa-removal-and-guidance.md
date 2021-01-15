@@ -6,8 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
-author: dulcemontemayor
-ms.date: 10/05/2018
+author: dansimp
 ms.reviewer: 
 manager: dansimp
 ---

@@ -27,6 +27,8 @@ ms.topic: article
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
+Learn about the various phases of deploying Microsoft Defender for Endpoint and how to configure the capabilities within the solution. 
+
 Deploying Defender for Endpoint is a three-phase process:
 
 | [![deployment phase - prepare](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | [![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2: Setup](production-deployment.md) | ![deployment phase - onboard](images/phase-diagrams/onboard.png)<br>Phase 3: Onboard |
@@ -42,6 +44,15 @@ These are the steps you need to take to deploy Defender for Endpoint:
 
 ## Step 1: Onboard endpoints using any of the supported management tools
 The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
+
+
+Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
+<br />
+<br />
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+
+
 
 After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. 
 
