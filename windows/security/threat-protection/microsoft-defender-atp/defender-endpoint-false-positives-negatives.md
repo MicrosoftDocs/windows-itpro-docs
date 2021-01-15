@@ -114,8 +114,8 @@ We recommend using Microsoft Endpoint Manager to edit or set PUA protection sett
 An exclusion is an entity that you specify as an exception to remediation actions. The excluded entity might still get detected, but no remediation actions are taken on that entity. That is, the detected file or process won’t be stopped, sent to quarantine, removed, or otherwise changed by Microsoft Defender for Endpoint. 
 
 To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
-- Define exclusions for Microsoft Defender Antivirus
-- Create “allow” indicators for Microsoft Defender for Endpoint
+- [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
+- [Create “allow” indicators for Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response), [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction), and [controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). Files that you exclude using the methods described in this article can still trigger alerts and other detections. To exclude files broadly, use [custom indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators), such as "allow" indicators for Microsoft Defender for Endpoint.
 
@@ -128,15 +128,15 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 > [!TIP]
 > Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
 
-#### Use Microsoft Endpoint Manager to manage antivirus exclusions for existing policies
+#### Use Microsoft Endpoint Manager to manage antivirus exclusions (for existing policies)
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-an-antivirus-policy-with-exclusions)).
+2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 4. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
 5. Choose **Review + save**, and then choose **Save**.
 
-#### Use Microsoft Endpoint Manager to create an antivirus policy with exclusions
+#### Use Microsoft Endpoint Manager to create a new antivirus policy with exclusions
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**. 
@@ -150,7 +150,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 ### Indicators for Microsoft Defender for Endpoint
 
-Indicators enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain IP addresses or URLs.
+[Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, your security operations team can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain IP addresses or URLs.
 
 To specify entities as exclusions for Microsoft Defender for Endpoint, your security team can create "allow" indicators. Such "allow" indicators apply to the following capabilities in Microsoft Defender for Endpoint:
 
@@ -176,7 +176,10 @@ As alerts are triggered, if you see something that was detected as malicious or 
 
 You can suppress an alert in the Microsoft Defender Security Center.
 
-
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+2. In the navigation pane, select **Alerts queue**. 
+3. Select an alert that you want to suppress to open its **Details** pane.
+4. 
 
 ### Classify an alert as a false positive
 
