@@ -103,7 +103,7 @@ Depending on the apps your organization is using, you might be getting false pos
 4. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
 5. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn PUA protection off, but by using audit mode, you will be able to see detections.)
-7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](Assign device profiles in Microsoft Intune - Azure | Microsoft Docs).)
+7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).)
 8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
 
