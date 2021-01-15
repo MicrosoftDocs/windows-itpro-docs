@@ -44,8 +44,8 @@ If you’re using [Microsoft Defender for Endpoint](https://docs.microsoft.com/w
 
 Microsoft Defender for Endpoint offers a wide variety of options, including the ability to fine tune settings for various features and capabilities. If you’re getting a lot of false positives, make sure to review your organization’s threat protection settings. You might need to make some adjustments to the following settings in particular:
 
-- Cloud-delivered protection
-- Remediation for potentially unwanted apps (PUA)
+- [Cloud-delivered protection](#cloud-delivered-protection)
+- [Remediation for potentially unwanted apps](#remediation-for-potentially-unwanted-applications-pua) (PUA)
 
 ### Cloud-delivered protection
 
@@ -55,11 +55,11 @@ We recommend using Microsoft Endpoint Manager to edit your cloud-delivered prote
 
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings
 
-1.	Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
-2.	Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-antivirus-policy)).
-3.	Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-4.	Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
-5.	Choose **Review + save**, and then **Save**.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don’t have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-antivirus-policy)).
+3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+4. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting this to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
+5. Choose **Review + save**, and then **Save**.
 
 #### Use Microsoft Endpoint Manager to set cloud-delivered protection settings for a new antivirus policy
 
