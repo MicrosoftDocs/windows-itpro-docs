@@ -104,7 +104,7 @@ With specialized hardware and software components available on devices shipping 
 
 ### Windows Sandbox
 
-New polices for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
+New policies for [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) are available in this release. For more information, see [Policy CSP - WindowsSandbox](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowssandbox).
 
 ### Windows Virtual Desktop (WVD)
 

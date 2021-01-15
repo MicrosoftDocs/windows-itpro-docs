@@ -20,23 +20,6 @@ ms.author: dansimp
 - Windows 10 Mobile
 
 
-## LockDown VPN
-
-A VPN profile configured with LockDown secures the device to only allow network traffic over the VPN interface. It has the following features:
-
-- The system attempts to keep the VPN connected at all times.
-- The user cannot disconnect the VPN connection.
-- The user cannot delete or modify the VPN profile.
-- The VPN LockDown profile uses forced tunnel connection.
-- If the VPN connection is not available, outbound network traffic is blocked.
-- Only one VPN LockDown profile is allowed on a device.
-
-> [!NOTE]
-> For built-in VPN, LockDown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
-
-Deploy this feature with caution, as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
-
-
 ## Windows Information Protection (WIP) integration with VPN
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
@@ -77,6 +60,24 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://docs.m
 The following image shows the interface to configure traffic rules in a VPN Profile configuration policy, using Microsoft Intune.
 
 ![Add a traffic rule](images/vpn-traffic-rules.png)
+
+
+## LockDown VPN
+
+A VPN profile configured with LockDown secures the device to only allow network traffic over the VPN interface. It has the following features:
+
+- The system attempts to keep the VPN connected at all times.
+- The user cannot disconnect the VPN connection.
+- The user cannot delete or modify the VPN profile.
+- The VPN LockDown profile uses forced tunnel connection.
+- If the VPN connection is not available, outbound network traffic is blocked.
+- Only one VPN LockDown profile is allowed on a device.
+
+> [!NOTE]
+> For built-in VPN, LockDown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
+
+Deploy this feature with caution, as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
+
 
 ## Related topics
 

@@ -25,6 +25,10 @@ ms.topic: article
 
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Methods
@@ -50,7 +54,7 @@ Property |   Type   |   Description
 id | String | [machine](machine.md) identity.
 computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
-lastSeen | DateTimeOffset | Last date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
+lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.

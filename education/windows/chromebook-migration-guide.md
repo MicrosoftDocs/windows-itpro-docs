@@ -457,7 +457,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 <td align="left">X</td>
 </tr>
 <tr class="odd">
-<td align="left">Use Microsoft Endpoint Configuration Manager for management</td>
+<td align="left">Use Microsoft Endpoint Manager for management</td>
 <td align="left">X</td>
 <td align="left"></td>
 <td align="left">X</td>
